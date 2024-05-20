@@ -1,0 +1,261 @@
+[
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 24 (R24) HF1",
+    "supported_license_server_version": "5.12.1.1 and later",
+    "build": "10.0.24.16",
+    "release_date": "16 May 2024",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.24.16_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 24 (R24)",
+    "supported_license_server_version": "5.12.1.1 and later",
+    "build": "10.0.24.15",
+    "release_date": "30 April 2024",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.24.15_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 23 (R23)",
+    "supported_license_server_version": "5.12.1.1 and later",
+    "build": "10.0.23.8",
+    "release_date": "29 January 2024",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.23.8_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 22 (R22) HotFix 1 (HF1)",
+    "supported_license_server_version": "5.12.1.1 and later",
+    "build": "10.0.22.11",
+    "release_date": "22 November 2023",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.22.11_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 22 (R22)",
+    "supported_license_server_version": "5.12.1.1 and later",
+    "build": "10.0.22.8",
+    "release_date": "17 October 2023",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.22.8_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 21 (R21) HotFix1 (HF1)",
+    "supported_license_server_version": "5.12.1.1 and later",
+    "build": "10.0.21.9",
+    "release_date": "7 August 2023",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.21.9_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 21 (R21)",
+    "supported_license_server_version": "5.12.1.1 and later",
+    "build": "10.0.21.7",
+    "release_date": "1 August 2023",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.21.7_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 20 (R20) HotFix 2 (HF2)",
+    "supported_license_server_version": "5.12.1.1 and later",
+    "build": "10.0.20.15",
+    "release_date": "27 April 2023",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.20.15_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 20 (R20) HotFix 1 (HF1)",
+    "supported_license_server_version": "5.12.1.1 and later",
+    "build": "10.0.20.13",
+    "release_date": "26 April 2023",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.20.13_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 20 (R20)",
+    "supported_license_server_version": "5.12.1.1 and later",
+    "build": "10.0.20.6",
+    "release_date": "19 April 2023",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.20.6_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 19 (R19) HotFix 1 (HF1)",
+    "supported_license_server_version": "5.12.1.1 and later",
+    "build": "10.0.19.7",
+    "release_date": "16 March 2023",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.19.7_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 19 (R19)",
+    "supported_license_server_version": "5.12.1.1 and later",
+    "build": "10.0.19.6",
+    "release_date": "14 March 2023",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.19.6_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 18 (R18)",
+    "supported_license_server_version": "5.11.0.3 and later",
+    "build": "10.0.18.6",
+    "release_date": "30 January 2023",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.18.6_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 17 (R17)",
+    "supported_license_server_version": "5.11.0.3 and later",
+    "build": "10.0.17.7",
+    "release_date": "22 November 2022",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.17.7_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 16 (R16)",
+    "supported_license_server_version": "5.11.0.3 and later",
+    "build": "10.0.16.6",
+    "release_date": "19 September 2022",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.16.6_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 15 (R15) HotFix1 (HF1)",
+    "supported_license_server_version": "5.11.0.3 and later",
+    "build": "10.0.15.34",
+    "release_date": "2 August 2022",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.15.34_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 15 (R15)",
+    "supported_license_server_version": "5.11.0.3 and later",
+    "build": "10.0.15.17",
+    "release_date": "4 July 2022",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.15.17_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 14 (R14) HotFix1 (HF1)",
+    "supported_license_server_version": "5.11.0.3 and later",
+    "build": "10.0.14.26",
+    "release_date": "16 March 2022",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.14.26_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 14 (R14)",
+    "supported_license_server_version": "5.11.0.3 and later",
+    "build": "10.0.14.10",
+    "release_date": "28 February 2022",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.14.10_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 13 (R13)",
+    "supported_license_server_version": "5.10.2.9 and later",
+    "build": "10.0.13.4",
+    "release_date": "13 December 2021",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.13.4_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 12 (R12)HotFix1 (HF1)",
+    "supported_license_server_version": "5.10.2.9 and later",
+    "build": "10.0.12.15",
+    "release_date": "27 October 2021",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.12.15_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 12 (R12)",
+    "supported_license_server_version": "5.10.2.9 and later",
+    "build": "10.0.12.9",
+    "release_date": "5 October 2021",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.12.9_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 11 (R11)HotFix1 (HF1)",
+    "supported_license_server_version": "5.10.2.9 and later",
+    "build": "10.0.11.7",
+    "release_date": "11 August 2021",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.11.7_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 11 (R11)",
+    "supported_license_server_version": "5.10.2.9 and later",
+    "build": "10.0.11.4",
+    "release_date": "5 August 2021",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.11.4_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 10 (R10)",
+    "supported_license_server_version": "5.10.2.9 and later",
+    "build": "10.0.10.3",
+    "release_date": "31 May 2021",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.10.3_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 9 (R9)",
+    "supported_license_server_version": "5.10.2.9 and later",
+    "build": "10.0.9.6",
+    "release_date": "7 April 2021",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.9.6_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 8 (R8)",
+    "supported_license_server_version": "5.10.2.9 and later",
+    "build": "10.0.8.18",
+    "release_date": "17 March 2021",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.8.18_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 7 (R7) HotFix1 (HF1)",
+    "supported_license_server_version": "5.10.2.9 and later",
+    "build": "10.0.7.12",
+    "release_date": "9 February 2021",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.7.12_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 7 (R7)",
+    "supported_license_server_version": "5.10.2.9 and later",
+    "build": "10.0.7.11",
+    "release_date": "27 January 2021",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.7.11_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 6 (R6) HotFix1 (HF1)",
+    "supported_license_server_version": "5.10.2.9 and later",
+    "build": "10.0.6.23",
+    "release_date": "22 December 2020",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.6.23_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 6 (R6)",
+    "supported_license_server_version": "5.10.2.9 and later",
+    "build": "10.0.6.14",
+    "release_date": "7 December 2020",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.6.14_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 5 (R5) HotFix 1 (HF1)",
+    "supported_license_server_version": "5.10.2.1 and later",
+    "build": "10.0.5.25",
+    "release_date": "6 November 2020",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.5.25_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 5 (R5)",
+    "supported_license_server_version": "5.10.2.1 and later",
+    "build": "10.0.5.22",
+    "release_date": "2 November 2020",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.5.22_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 4 (R4)",
+    "supported_license_server_version": "5.10.2.1 and later",
+    "build": "10.0.4.4",
+    "release_date": "3 September 2020",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.4.4_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 3 (R3)",
+    "supported_license_server_version": "5.10.2.1 and later",
+    "build": "10.0.3.61",
+    "release_date": "29 June 2020",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.3.61_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 2 (R2)",
+    "supported_license_server_version": "5.10.2.1 and later",
+    "build": "10.0.2.88",
+    "release_date": "11 April 2020",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.2.88_LD.zip"
+  },
+  {
+    "release_name": "CompuTec ProcessForce 10.0 Release 1 (R1)",
+    "supported_license_server_version": "5.10.1.1 and later",
+    "build": "10.0.1.16",
+    "release_date": "19 February 2020",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.1.16_LD.zip"
+  }
+]

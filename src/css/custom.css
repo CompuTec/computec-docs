@@ -1,0 +1,105 @@
+:root {
+  --ifm-font-family-base: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --ifm-color-primary: #1565b1;
+  --ifm-color-primary-dark: #135b9f;
+  --ifm-color-primary-darker: #125696;
+  --ifm-color-primary-darkest: #0f477c;
+  --ifm-color-primary-light: #176fc3;
+  --ifm-color-primary-lighter: #1874cc;
+  --ifm-color-primary-lightest: #1d83e4;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --ifm-navbar-height: 5rem;
+
+  --ifm-menu-link-padding-vertical: .35rem;
+  --ifm-menu-link-padding-horizontal: .75rem;
+
+  --ifm-menu-link-sublist-icon: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16px\" height=\"16px\" viewBox=\"0 0 24 24\"><path fill=\"rgba(0,0,0,0.5)\" d=\"m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z\"></path></svg>");
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #62a9ec;
+  --ifm-color-primary-dark: #4499e8;
+  --ifm-color-primary-darker: #3591e7;
+  --ifm-color-primary-darkest: #1978d1;
+  --ifm-color-primary-light: #80b9f0;
+  --ifm-color-primary-lighter: #8fc1f1;
+  --ifm-color-primary-lightest: #bbdaf7;
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #181c22;
+}
+
+.navbar__link {
+  font-weight: var(--ifm-font-weight-normal);
+}
+
+.menu__list .menu__list {
+  margin-top: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 0;
+  margin-left: var(--ifm-menu-link-padding-horizontal);
+}
+
+[data-theme='dark'] .menu__list .menu__list {
+  border-left-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu__list-item {
+  margin-top: 0 !important;
+}
+
+.menu__list-item--collapsed .menu__link--sublist:after, .menu__list-item--collapsed .menu__caret:before {
+  transform: rotateZ(0deg) !important;
+}
+
+.menu__link {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: var(--ifm-menu-color);
+  font-weight: var(--ifm-font-weight-normal);
+}
+
+.menu__link--active {
+  font-weight: 600;
+}
+
+.menu__link:hover {
+  color: inherit;
+}
+
+.menu__link--sublist-caret:after, .menu__caret:before {
+  width: 20px;
+  height: 20px;
+  background-color: var(--ifm-menu-color);
+  mask-image: var(--ifm-menu-link-sublist-icon);
+  mask-position: center;
+  transition: transform var(--ifm-transition-fast) ease-in-out;
+  transform: rotateZ(90deg) !important;
+}
+
+/* Disable Searchbar nav keys */
+.DocSearch-Commands, .DocSearch-Button-Key {
+  display: none !important;
+}
+
+/* Disable sidebar transitions */
+.theme-doc-sidebar-container {
+  transition: none !important;
+}
+
+/* Move "Back to main menu" on mobile devices */
+.navbar-sidebar__back {
+  top: 0 !important;
+}
+
+.DocSearch-Logo .cls-1,
+.DocSearch-Logo .cls-2 {
+  fill: var(--docsearch-logo-color);
+}

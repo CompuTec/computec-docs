@@ -1,0 +1,174 @@
+name: Build and deploy site
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+
+permissions:
+  contents: read
+  deployments: write
+
+jobs:
+  build-and-deploy:
+    name: Build and deploy site
+    runs-on: ubuntu-latest
+    if: ${{
+      github.event_name == 'workflow_dispatch' ||
+      github.event_name == 'push' ||
+      (github.event_name == 'pull_request' && github.event.pull_request.head.repo.fork == false)
+      }}
+    env:
+      CROWDIN_API_TOKEN: ${{ secrets.CROWDIN_API_TOKEN }}
+      CROWDIN_PROJECT_ID: ${{ vars.CROWDIN_PROJECT_ID }}
+      ALGOLIA_PROJECT_ID: ${{ vars.ALGOLIA_PROJECT_ID }}
+      ALGOLIA_INDEX_NAME: ${{ vars.ALGOLIA_INDEX_NAME }}
+      ALGOLIA_PUBLIC_API_TOKEN: ${{ vars.ALGOLIA_PUBLIC_API_TOKEN }}
+      ALGOLIA_API_TOKEN: ${{ secrets.ALGOLIA_API_TOKEN }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_PROJECT_NAME: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
+      PRODUCTION_URL: ${{ vars.PRODUCTION_URL }}
+      SITEMAP_URL: ${{ vars.SITEMAP_URL }}
+    steps:
+      - name: Determine deployment environment
+        id: deployment-env
+        run: |
+          ENV=$([[ "$GITHUB_EVENT_NAME" =~ ^(workflow_dispatch|push)$ ]] && echo "PRODUCTION" || echo "DEVELOPMENT")
+          echo "ENV=$ENV" >> $GITHUB_OUTPUT
+      - name: Checkout the repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.ref }}
+          submodules: true
+      - name: Create GitHub deployment
+        id: github-deployment
+        uses: actions/github-script@v7
+        with:
+          result-encoding: string
+          script: |
+            const [ref, environment] = (() => {
+              if (context.eventName === 'push' || context.eventName == 'workflow_dispatch') {
+                return [context.sha, 'production'];
+              } else if (context.eventName === 'pull_request') {
+                return [context.payload.pull_request.head.sha, `pr${context.payload.number}/${context.payload.pull_request.head.label}`];
+              }
+              
+              throw new Error('Invalid event');
+            })();
+
+            const deployment = await github.rest.repos.createDeployment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: ref,
+              auto_merge: false,
+              required_contexts: [],
+              environment: environment,
+              description: "Cloudflare Pages",
+            });
+
+            return deployment.data.id;
+      - name: Set GitHub 'in_progress' deployment status
+        uses: actions/github-script@v7
+        env:
+          DEPLOYMENT_ID: ${{ steps.github-deployment.outputs.result }}
+        with:
+          script: |
+            await github.rest.repos.createDeploymentStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              deployment_id: process.env.DEPLOYMENT_ID,
+              state: 'in_progress',
+            });
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      # - name: Synchronize Crowdin
+      #   if: ${{ steps.deployment-env.outputs.ENV == 'PRODUCTION' }}
+      #   run: |
+      #     npm run docusaurus write-translations -- --config=docusaurus.multi.production.ts
+      #     npm run crowdin upload
+      #     npm run crowdin download
+      - name: Build production website
+        if: ${{ steps.deployment-env.outputs.ENV == 'PRODUCTION' }}
+        run: npm run build:prod
+      - name: Build development website
+        if: ${{ steps.deployment-env.outputs.ENV == 'DEVELOPMENT' }}
+        run: npm run build:dev
+      - name: Create Cloudflare Pages deployment
+        id: cloudflare-pages-deployment
+        uses: actions/github-script@v7
+        with:
+          result-encoding: string
+          script: |
+            const [branch, commitHash, commitMessage] = (() => {
+              if (context.eventName === 'push') {
+                return ['main', context.sha, context.payload.head_commit.message];
+              } else if (context.eventName == 'workflow_dispatch') {
+                return ['main', context.sha, 'Manual workflow dispatch'];
+              } else if (context.eventName === 'pull_request') {
+                return [`pr${context.payload.number}/${context.payload.pull_request.head.label}`, context.payload.pull_request.head.sha, context.payload.pull_request.title];
+              }
+
+              throw new Error('Invalid event');
+            })();
+
+            await exec.exec(`npx wrangler pages deploy "build" --project-name="${process.env.CLOUDFLARE_PROJECT_NAME}" --branch="${branch}" --commit-hash="${commitHash}" --commit-message="${commitMessage}"`);
+
+            const requestUrl = `https://api.cloudflare.com/client/v4/accounts/${process.env.CLOUDFLARE_ACCOUNT_ID}/pages/projects/${process.env.CLOUDFLARE_PROJECT_NAME}`;
+            const response = await fetch(requestUrl, {
+              headers: { Authorization: `Bearer ${process.env.CLOUDFLARE_API_TOKEN}` },
+            });
+
+            const { result } = await response.json();
+
+            return result.latest_deployment.url;
+      - name: Run DocSearch crawler
+        if: ${{ steps.deployment-env.outputs.ENV == 'PRODUCTION' }}
+        run: |
+          export API_KEY=$ALGOLIA_API_TOKEN
+          export APPLICATION_ID=$ALGOLIA_PROJECT_ID
+          export CONFIG=`cat algolia.config.json | jq -r \
+            --arg ALGOLIA_INDEX_NAME $ALGOLIA_INDEX_NAME \
+            --arg PRODUCTION_URL $PRODUCTION_URL \
+            --arg SITEMAP_URL $SITEMAP_URL \
+            '. + {index_name: $ALGOLIA_INDEX_NAME, start_urls: [$PRODUCTION_URL], sitemap_urls: [$SITEMAP_URL]} | tostring'`
+          docker run -e API_KEY -e APPLICATION_ID -e CONFIG algolia/docsearch-scraper
+      - name: Set GitHub 'success' deployment status
+        uses: actions/github-script@v7
+        env:
+          DEPLOYMENT_ID: ${{ steps.github-deployment.outputs.result }}
+          CLOUDFLARE_DEPLOYMENT_URL: ${{ steps.cloudflare-pages-deployment.outputs.result }}
+        with:
+          script: |
+            await github.rest.repos.createDeploymentStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              deployment_id: process.env.DEPLOYMENT_ID,
+              state: 'success',
+              log_url: `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              environment_url: process.env.CLOUDFLARE_DEPLOYMENT_URL,
+            });
+      - name: Set Github 'error' deployment status if build failed
+        uses: actions/github-script@v7
+        if: ${{ failure() && steps.github-deployment.conclusion == 'success' }}
+        env:
+          DEPLOYMENT_ID: ${{ steps.github-deployment.outputs.result }}
+        with:
+          script: |
+            await github.rest.repos.createDeploymentStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              deployment_id: process.env.DEPLOYMENT_ID,
+              state: 'error',
+            });

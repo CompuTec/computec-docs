@@ -1,0 +1,37 @@
+[
+  {
+    "build": "5.12.1.1",
+    "minimal_pf_version": "10.0 Release 14 (R14)",
+    "download_url": "https://download.computec.one/software/licenseserver/releases/CompuTec_LicenseServer_5.12.1.1_x64.msi"
+  },
+  {
+    "build": "5.11.0.3",
+    "minimal_pf_version": "10.0 Release 14 (R14)",
+    "download_url": "https://download.computec.one/software/licenseserver/releases/CompuTec_LicenseServer_5.11.0.3_x64.msi"
+  },
+  {
+    "build": "5.11.0.2",
+    "minimal_pf_version": "10.0 Release 14 (R14)",
+    "download_url": "https://download.computec.one/software/licenseserver/releases/CompuTec_LicenseServer_5.11.0.2_x64.msi"
+  },
+  {
+    "build": "5.11.0.1",
+    "minimal_pf_version": "10.0 Release 14 (R14)",
+    "download_url": "https://download.computec.one/software/licenseserver/releases/CompuTec_LicenseServer_5.11.0.1_x64.msi"
+  },
+  {
+    "build": "5.10.2.9",
+    "minimal_pf_version": "N/A",
+    "download_url": "https://download.computec.one/software/licenseserver/releases/CompuTec_LicenseServer_5.10.2.9_x64.msi"
+  },
+  {
+    "build": "5.10.2.1",
+    "minimal_pf_version": "N/A",
+    "download_url": "https://download.computec.one/software/licenseserver/releases/CompuTec_LicenseServer_5.10.2.1_x64.msi"
+  },
+  {
+    "build": "5.10.1.1",
+    "minimal_pf_version": "N/A",
+    "download_url": "https://download.computec.one/software/licenseserver/releases/CompuTec_LicenseServer_5.10.1.1_x64.msi"
+  }
+]

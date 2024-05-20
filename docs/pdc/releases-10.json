@@ -1,0 +1,30 @@
+[
+  {
+    "build": "3.10.3.0",
+    "installer_url": "https://download.computec.one/software/pdc/releases/CompuTec_PDC_3.10.3.0_x64.msi",
+    "plugin_url": "https://download.computec.one/software/appengine/plugins/pdc/releases/CompuTec_PDC_3.10.3.0.zip",
+    "related_version": "10.0 R4 and later*",
+    "release_date": "17 November 2020"
+  },
+  {
+    "build": "3.10.2.0",
+    "installer_url": "https://download.computec.one/software/pdc/releases/CompuTec_PDC_3.10.2.0_x64.msi",
+    "plugin_url": "https://download.computec.one/software/appengine/plugins/pdc/releases/CompuTec_PDC_3.10.2.0.zip",
+    "related_version": "10.0 R3 and later*",
+    "release_date": ""
+  },
+  {
+    "build": "3.10.1.0",
+    "installer_url": "https://download.computec.one/software/pdc/releases/CompuTec_PDC_3.10.1.0_x64.msi",
+    "plugin_url": "https://download.computec.one/software/appengine/plugins/pdc/releases/CompuTec_PDC_3.10.1.0.zip",
+    "related_version": "10.0 R1 and later*",
+    "release_date": ""
+  },
+  {
+    "build": "3.10.0.0",
+    "installer_url": "https://download.computec.one/software/pdc/releases/CompuTec_PDC_3.10.0.0_x64.msi",
+    "plugin_url": "https://download.computec.one/software/appengine/plugins/pdc/releases/CompuTec_PDC_3.10.0.0.zip",
+    "related_version": "10.0 R1 and later*",
+    "release_date": ""
+  }
+]
