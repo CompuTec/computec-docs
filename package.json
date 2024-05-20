@@ -1,0 +1,61 @@
+{
+  "name": "docusaurus",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start:dev": "docusaurus start --config=docusaurus.multi.preview.ts",
+    "build:dev": "docusaurus build --config=docusaurus.multi.preview.ts",
+    "start:prod": "docusaurus start --config=docusaurus.multi.production.ts",
+    "build:prod": "docusaurus build --config=docusaurus.multi.production.ts",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "typecheck": "tsc",
+    "crowdin": "crowdin",
+    "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download"
+  },
+  "dependencies": {
+    "@crowdin/cli": "3.19.2",
+    "@docusaurus/core": "3.2.1",
+    "@docusaurus/preset-classic": "3.2.1",
+    "@emotion/react": "11.11.4",
+    "@emotion/styled": "11.11.5",
+    "@giscus/react": "3.0.0",
+    "@mdx-js/react": "3.0.1",
+    "@mui/icons-material": "5.15.15",
+    "@mui/material": "5.15.15",
+    "clsx": "2.1.1",
+    "lodash": "4.17.21",
+    "prism-react-renderer": "2.3.1",
+    "re-resizable": "6.9.14",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "3.2.1",
+    "@docusaurus/tsconfig": "3.2.1",
+    "@docusaurus/types": "3.2.1",
+    "@types/lodash": "4.17.0",
+    "dotenv": "16.4.5",
+    "typescript": "5.4.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0"
+  }
+}

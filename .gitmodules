@@ -1,0 +1,15 @@
+[submodule "docs/pdc"]
+	path = docs/pdc
+	url = ../pdc-docs.git
+[submodule "docs/processforce"]
+	path = docs/processforce
+	url = ../processforce-docs.git
+[submodule "docs/wms"]
+	path = docs/wms
+	url = ../wms-docs.git
+[submodule "docs/labels"]
+	path = docs/labels
+	url = ../labels-docs.git
+[submodule "docs/appengine"]
+	path = docs/appengine
+	url = ../appengine-docs.git

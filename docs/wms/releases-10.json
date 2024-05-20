@@ -1,0 +1,371 @@
+[
+  {
+  "release_date": "27.03.2024",
+  "version": "2.10.22 R1",
+  "build": "2.10.22.1",
+  "license_server": "5.10.2.9",
+  "pf_from": "10.0 R1",
+  "pf_to": "10.0 R15 HF1",
+  "has_new_desktop": true,
+  "has_android": true
+  },
+  {
+    "release_date": "23.11.2023",
+    "version": "2.10.21 R4",
+    "build": "2.10.21.4",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R15 HF1",
+    "has_new_desktop": true,
+    "has_android": true
+  },
+  {
+    "release_date": "27.09.2023",
+    "version": "2.10.21 R3",
+    "build": "2.10.21.3",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R15 HF1",
+    "has_new_desktop": true,
+    "has_android": true
+  },
+  {
+    "release_date": "15.09.2023",
+    "version": "2.10.21 R2",
+    "build": "2.10.21.2",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R15 HF1",
+    "has_new_desktop": true,
+    "has_android": true
+  },
+  {
+    "release_date": "13.09.2023",
+    "version": "2.10.21 R1",
+    "build": "2.10.21.1",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R15 HF1",
+    "has_new_desktop": true,
+    "has_android": true
+  },
+  {
+    "release_date": "27.07.2023",
+    "version": "2.10.20 R3",
+    "build": "2.10.20.3",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R15 HF1",
+    "has_android": true
+  },
+  {
+    "release_date": "26.06.2023",
+    "version": "2.10.20 R2",
+    "build": "2.10.20.2",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R15 HF1",
+    "has_android": true
+  },
+  {
+    "release_date": "24.05.2023",
+    "version": "2.10.20 R1",
+    "build": "2.10.20.1",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R15 HF1",
+    "has_android": true
+  },
+  {
+    "release_date": "24.04.2023",
+    "version": "2.10.19 R5",
+    "build": "2.10.19.6",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R15 HF1",
+    "has_android": true
+  },
+  {
+    "release_date": "12.04.2023",
+    "version": "2.10.19 R4",
+    "build": "2.10.19.5",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R15 HF1",
+    "has_android": true
+  },
+  {
+    "release_date": "21.02.2023",
+    "version": "2.10.19 R3",
+    "build": "2.10.19.4",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R15 HF1",
+    "has_android": true
+  },
+  {
+    "release_date": "24.01.2023",
+    "version": "2.10.19 R2",
+    "build": "2.10.19.3",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R15 HF1",
+    "has_android": true
+  },
+  {
+    "release_date": "24.01.2023",
+    "version": "2.10.19 R1",
+    "build": "2.10.19.2",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R15 HF1"
+  },
+  {
+    "release_date": "26.10.2022",
+    "version": "2.10.18 R2",
+    "build": "2.10.18.3",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R15 HF1"
+  },
+  {
+    "release_date": "22.09.2022",
+    "version": "2.10.18 R1",
+    "build": "2.10.18.2",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R15 HF1"
+  },
+  {
+    "release_date": "23.08.2022",
+    "version": "2.10.17 R1",
+    "build": "2.10.17.3",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R15 HF1"
+  },
+  {
+    "release_date": "12.07.2022",
+    "version": "2.10.17 R1 PRE-RELEASE",
+    "build": "2.10.17.2",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R14"
+  },
+  {
+    "release_date": "",
+    "version": "2.10.16 R1",
+    "build": "2.10.16.2",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R14"
+  },
+  {
+    "release_date": "1.03.2022",
+    "version": "2.10.15 R1",
+    "build": "2.10.15.2",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R14"
+  },
+  {
+    "release_date": "12.10.2021",
+    "version": "2.10.14 R1",
+    "build": "2.10.14.2",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R12 HF1"
+  },
+  {
+    "release_date": "9.08.2021",
+    "version": "2.10.13 R2",
+    "build": "2.10.13.2",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R11"
+  },
+  {
+    "release_date": "15.06.2021",
+    "version": "2.10.13 R1",
+    "build": "2.10.13.1",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R10"
+  },
+  {
+    "release_date": "28.04.2021",
+    "version": "2.10.12 R1",
+    "build": "2.10.12.19",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R7"
+  },
+  {
+    "release_date": "17.03.2021",
+    "version": "2.10.11 R4",
+    "build": "2.10.11.18",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R7"
+  },
+  {
+    "release_date": "3.03.2021",
+    "version": "2.10.11 R3",
+    "build": "2.10.11.15",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R7"
+  },
+  {
+    "release_date": "26.02.2021",
+    "version": "2.10.11 R2",
+    "build": "2.10.11.13",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R7"
+  },
+  {
+    "release_date": "24.02.2021",
+    "version": "2.10.11 R1",
+    "build": "2.10.11.12",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R7"
+  },
+  {
+    "release_date": "17.02.2021",
+    "version": "2.10.10 R2",
+    "build": "2.10.10.39",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R7"
+  },
+  {
+    "release_date": "4.02.2021",
+    "version": "2.10.10 R1",
+    "build": "2.10.10.38",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R7"
+  },
+  {
+    "release_date": "",
+    "version": "2.10.9 R2",
+    "build": "2.10.9.61",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R7"
+  },
+  {
+    "release_date": "11.01.2020",
+    "version": "2.10.9 R1",
+    "build": "2.10.9.58",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R5"
+  },
+  {
+    "release_date": "4.11.2020",
+    "version": "2.10.8 R1",
+    "build": "2.10.8.1",
+    "license_server": "5.10.2.9",
+    "pf_from": "10.0 R1",
+    "pf_to": "10.0 R5"
+  },
+  {
+    "release_date": "21.10.2020",
+    "version": "2.10.7 R1",
+    "build": "2.10.7.1",
+    "license_server": "5.10.2.1",
+    "pf_from": "10.0 R1",
+    "pf_to": ""
+  },
+  {
+    "release_date": "23.09.2020",
+    "version": "2.10.6 R2",
+    "build": "2.10.6.2",
+    "license_server": "5.10.2.1",
+    "pf_from": "10.0 R1",
+    "pf_to": ""
+  },
+  {
+    "release_date": "26.08.2020",
+    "version": "2.10.6 R1",
+    "build": "2.10.6.1",
+    "license_server": "5.10.2.1",
+    "pf_from": "10.0 R1",
+    "pf_to": ""
+  },
+  {
+    "release_date": "29.07.2020",
+    "version": "2.10.5 R2",
+    "build": "2.10.5.2",
+    "license_server": "5.10.2.1",
+    "pf_from": "10.0 R1",
+    "pf_to": ""
+  },
+  {
+    "release_date": "16.07.2020",
+    "version": "2.10.5 R1",
+    "build": "2.10.5.1",
+    "license_server": "5.10.2.1",
+    "pf_from": "10.0 R1",
+    "pf_to": ""
+  },
+  {
+    "release_date": "22.06.2020",
+    "version": "2.10.4 R2",
+    "build": "2.10.4.2",
+    "license_server": "5.10.2.1",
+    "pf_from": "10.0 R1",
+    "pf_to": ""
+  },
+  {
+    "release_date": "18.06.2020",
+    "version": "2.10.4 R1",
+    "build": "2.10.4.1",
+    "license_server": "5.10.2.1",
+    "pf_from": "10.0 R1",
+    "pf_to": ""
+  },
+  {
+    "release_date": "6.05.2020",
+    "version": "2.10.3 R2",
+    "build": "2.10.3.2",
+    "license_server": "5.10.2.1",
+    "pf_from": "10.0 R1",
+    "pf_to": ""
+  },
+  {
+    "release_date": "6.05.2020",
+    "version": "2.10.3 R1",
+    "build": "2.10.3.1",
+    "license_server": "5.10.2.1",
+    "pf_from": "10.0 R1",
+    "pf_to": ""
+  },
+  {
+    "release_date": "27.04.2020",
+    "version": "2.10.3 R1",
+    "build": "2.10.2.2",
+    "license_server": "5.10.2.1",
+    "pf_from": "10.0 R1",
+    "pf_to": ""
+  },
+  {
+    "release_date": "2.04.2020",
+    "version": "2.10.2 R1",
+    "build": "2.10.2.1",
+    "license_server": "5.10.2.1",
+    "pf_from": "10.0 R1",
+    "pf_to": ""
+  },
+  {
+    "release_date": "19.02.2020",
+    "version": "2.10.1 R1",
+    "build": "2.10.1.1",
+    "license_server": "5.10.1.1",
+    "pf_from": "10.0 R1",
+    "pf_to": ""
+  }
+]

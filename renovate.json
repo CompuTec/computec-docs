@@ -1,0 +1,25 @@
+{
+  "extends": [
+    ":dependencyDashboard",
+    ":ignoreModulesAndTests",
+    ":pinVersions",
+    ":pinAllExceptPeerDependencies",
+    ":semanticPrefixChore",
+    ":rebaseStalePrs",
+    ":disableRateLimiting",
+    ":automergeDisabled",
+    ":label(dependencies)",
+    ":enableVulnerabilityAlerts",
+    ":semanticCommits",
+    ":npm",
+    ":docker",
+    "docker:pinDigests",
+    "group:recommended",
+    "group:allNonMajor",
+    "npm:unpublishSafe",
+    "preview:dockerCompose",
+    "preview:dockerVersions",
+    "workarounds:all"
+  ],
+  "baseBranches": ["main"]
+}
