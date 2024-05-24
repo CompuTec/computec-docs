@@ -6,13 +6,13 @@ sidebar_position: 2
 
 ## Overview
 
-Subcontracting can be taken into the production process by creating subcontractor-type Resources, adding to Operation, and adding Operation to Routing.
+Subcontracting can be incorporated into the production process by creating subcontractor-type Resources, adding them to an Operation, and then including that Operation in the Routing.
 
 ## Resources
 
 A resource type may be set as a Subcontractor for a service performed by an external organization.
 
-- Select the resource type Subcontractor. After a selection, several additional fields are displayed.
+- Select the resource type Subcontractor. After selecting, several additional fields are displayed.
 
     ![Resource Subcontracting](./media/subcontractor-type-resource/resource-subcontractor.webp)
 - Select the supplier performing the service (Vendor Code and Vendor Name fields),

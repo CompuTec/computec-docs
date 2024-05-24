@@ -14,7 +14,7 @@ Within the Production Process form > Routings tab, define Resources assigned to 
 
 ![List of Resources](./media/alternative-resources/list-of-resources.webp)
 
-Checking Is Default checkbox causes the chosen Resources to be displayed in the corresponding table on Manufacturing Order.
+Checking if Default checkbox causes the chosen Resources to be displayed in the corresponding table on Manufacturing Order.
 
 ## Manufacturing Order
 
@@ -38,7 +38,7 @@ Click Choose From List button to open the list of alternative resources previous
 ## Highlighting the Alternative
 
 - Hover the mouse over the resource block to be moved.
-- A dotted area under the resource block will indicate there are alternative resources.
+- A dotted area under the resource block will indicate that there are alternative resources.
 - Left mouse click and hold on the dotted area.
 - Gray vertical lines will highlight the alternative resources.
 

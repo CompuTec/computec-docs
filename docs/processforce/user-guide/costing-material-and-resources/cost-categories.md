@@ -4,10 +4,10 @@ sidebar_position: 7
 
 # Cost Categories
 
-Here you can find information on Cost Categories: sets of costing data used to simulate production costs and apply them to production.
+Here, you can find information on Cost Categories, which are sets of costing data used to simulate production costs and apply them to production processes.
 
 :::info
-    Please check the [Configuration section](./configuration.md) before running the Costing functions.
+    Please check the [Configuration](../costing-material-and-resources/configuration/overview.md) section before running the Costing functions.
 :::
 
 ---
@@ -24,7 +24,7 @@ Cost Categories are different sets of cost data (Item Costing) for the same Item
 
 Cost Categories are used for production cost simulation and final production valuation.
 
-You can define many Cost Categories: on adding an Item to the system, Item Costing is created for every Cost Category. Now you can define different data for different Item Costing for the same Item. Similarly, Resource Costing is created by adding a Resource to the system.
+You can define multiple Cost Categories. When an Item is added to the system, Item Costing is generated for each Cost Category, allowing you to specify different data for different Item Costings for the same Item. Similarly, when a Resource is added to the system, Resource Costing is created.
 
 On adding a new Cost Category, Item Costing and Resource Costing records are created for all of the Items and Resources in the system.
 
@@ -34,7 +34,7 @@ On adding a new Cost Category, Item Costing and Resource Costing records are cre
 
 This Cost Category has a specific status: it cannot be deleted or deactivated, and its data cannot be changed on any of the other forms.
 
-Any other Cost Category can be used for a costing simulation. Still, to make it applicable to the system, it is required to load it to the 000 Cost Category by Cost Roll-Over procedure.
+Any other Cost Category can be used for a costing simulation. Still, to make it applicable to the system, it is required to load it to the 000 Cost Category by [Cost Roll-Over](#cost-roll-over) procedure.
 
 ## Cost Roll-Up
 

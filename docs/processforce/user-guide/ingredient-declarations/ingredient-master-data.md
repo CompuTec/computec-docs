@@ -16,14 +16,14 @@ This form allows the user to define and modify information on ingredients that a
 
 ![Ingredient Master Data](./media/ingredient-master-data/ingredient-master-data.webp)
 
-## Form header
+## Form Header
 
 Here the following information can be defined:
 
 - Code - an alphanumeric code assigned to a specific ingredient,
 - Description - a name or a short description of a specific ingredient,
 - UoM - Unit of Measure, e.g., kilogram,
-- Category - ingredient category. To get more information, click here,
+- Category - ingredient category. To get more information, click [here](../ingredient-declarations/ingredient-settings/classifications.md).
 - Alternative code - standard, scientific codes governed by law, e.,g. E number - codes assigned to substances that can be used as additives to food products within the European Union and Switzerland.
 
 ## Tabs
@@ -46,15 +46,15 @@ A possibility to add predefined classifications and set details of certificates 
 
 A possibility to create and modify a vendor or industry specification for an ingredient. The following information can be set:
 
-- BP Code – a code assigned to the specific business partner,
-- BP Name – a business partner name,
-- Specification Number – a number assigned to a specific specification,
-- Specification Date – date of a specification,
+- BP Code – a code assigned to the specific business partner
+- BP Name – a business partner name
+- Specification Number – a number assigned to a specific specification
+- Specification Date – date of a specification
 - Status – one of three options may be set for a specification:
 
   - Not Approved,
   - Pending,
   - Approved,
-- Status Date – a status posting date,
-- Attachment,
-- Remarks.
+- Status Date – a status posting date
+- Attachment
+- Remarks

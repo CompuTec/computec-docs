@@ -4,9 +4,9 @@ sidebar_position: 11
 
 # Quality Control frequency based on Supplier's rating
 
-Here you can find information on the Quality Control process based on the Supplier's rating (an evaluation of the level of trust toward a Supplier based on past collaboration). Quality Control Tests generation can be bound to and defined by the level of trust.
+Here, you can find information on the Quality Control process based on the Supplier's rating (an evaluation of the level of trust toward a Supplier based on past collaboration). Quality Control Tests generation can be bound to and defined by the level of trust.
 
-When running a business, we need to cooperate with others. There is not much we can do on our own. Building relationships based on cooperation in business is the key to effective process management in the company. However, one more important principle that gives excellent benefit is 'trust and control.'. Process Force allows you to combine these two great principles into one, optimizing your company's processes simultaneously – by providing a supplier assessment card within the application.
+When running a business, we need to cooperate with others. There is not much we can do on our own. Building relationships based on cooperation in business is the key to effective process management in the company. However, one more important principle that gives excellent benefit is 'trust and control.'. ProcessForce allows you to combine these two great principles into one, optimizing your company's processes simultaneously – by providing a supplier assessment card within the application.
 
 Suppliers' scorecards are used for tracking and measuring a Supplier's performance. They can vary from simple to complex and contain as many or as few criteria deemed effective to accomplish an organization’s goals. Supplier scorecards can strengthen relationships, improve costs, and mitigate errors when used appropriately and consistently. Scorecards also provide an objective lens for measuring vendor performance.
 
@@ -24,6 +24,11 @@ Quality issues, errors, and mistakes aligned with certified testing lab Internal
     Please note that for the correct operation of the function, the following piece of code has to be added to the PostTransactNotification database.
 
     This procedure is essential to manage at which intervals the Quality Control Test is to be performed based on the predefined Counters.
+
+    | File Type | MS SQL | HANA |
+    | --- | --- | --- | --- |
+    | Procedure | Download | Download |
+    | PostTransact modification | Download | Download |
 :::
 
 :::tip
@@ -121,15 +126,21 @@ Examples of selectable criteria combinations:
 
 In Business Partner Master Data, there is a field called QC Qualification. This field needs to be filled when we want to use QC rating. Available ratings are previously defined in Administration -> Setup -> Quality Control -> BP QC Qualification.
 
+![Business Partner Master Data](./media/quality-control-frequency-based-on-supplier-rating/business-partner-master-data.png)
+
 ## Test Protocol
 
 To use the function, we must also put configuration on Test Protocol.
 
 First, check the use frequency rules in QC Test/QC Test Par.
 
+![Test Protocol](./media/quality-control-frequency-based-on-supplier-rating/test-protocol.png)
+
 Then it is needed to configure the Frequency tab:
 
 Frequency tab:
+
+![Frequency Tab](./media/quality-control-frequency-based-on-supplier-rating/frequency-tab.png)
 
 **Rule Code** – an alphanumeric field that can be named to identify why do use counters easily
 

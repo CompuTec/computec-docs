@@ -2,6 +2,6 @@
 sidebar_position: 12
 ---
 
-# AE tab
+# AppEngine Tab
 
-This tab contains AppEngine-related options. Click here to find out more<!-- TODO: Add Link -->.
+This tab contains AppEngine-related options. Click [here](/docs/appengine) to find out more.

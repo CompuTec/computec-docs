@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Bill of Materials and Manufacturing Orders tab
+# Bill of Materials and Manufacturing Orders Tab
 
 You can define Bill of Materials and Manufacturing Orders settings on this tab, e.g., default formulas for Items.
 
@@ -10,7 +10,7 @@ You can define Bill of Materials and Manufacturing Orders settings on this tab, 
 
 ## Default formula for Bill of Materials
 
-ProcessForce provides a very flexible methodology for defining the relationship between parent Items, Coproducts, Scrap, Phantoms, Scrap Percentages, and Factors.
+ProcessForce provides a flexible methodology for defining the relationship between parent Items, Coproducts, Scrap, Phantoms, Scrap Percentages, and Factors.
 
 When creating a Bill of Material, these default formats are automatically added to each item.
 
@@ -139,7 +139,8 @@ When the checkbox is checked, one Manufacturing Order is created for all the sam
 
 ## Use Resource Balancing
 
-Click here <!-- TODO: Add Link --> to find out more.
+This option allows choosing the most optimal Resource (defined in Production Process / Manufacturing Order Alternative Resources) for a specific task from a Manufacturing Order.
+Click [here](../../scheduling/resource-balancing.md) to find out more.
 
 ## Show Manufacturing Order relations at Gantt
 

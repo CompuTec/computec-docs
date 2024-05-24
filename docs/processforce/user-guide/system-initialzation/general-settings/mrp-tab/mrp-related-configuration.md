@@ -1,10 +1,11 @@
 ---
 sidebar_position: 2
+toc_max_heading_level: 2
 ---
 
-# MRP related configuration
+# MRP Related Configuration
 
-SAP Business One MRP related options.
+This page displays options relevant to SAP Business One's MRP functionality.
 
 **When running SAP Business One MRP please ensure the following:**
 
@@ -12,14 +13,14 @@ SAP Business One MRP related options.
 
 ### Configuration fields
 
-- This fields will ensure that the ProcessForce Bill of Material and Manufacturing Order will sync with SAP Business One
-- If you do not check the sync box, and you enter BOMs into ProcessForce they will not sync with SAP Business One
-- If you have entered Bill of Materials into ProcessForce and then want to sync into SAP Business One, just change a data element within the ProcessForce BOM, press update and the BOM will then sync with SAP
-- Also review the settings in the Coproducts section below, even if you are not using Coproducts
+- These fields will ensure that the ProcessForce Bill of Material and Manufacturing Order will synchronise with SAP Business One
+- If you leave the sync box unchecked, BOMs entered into ProcessForce will not synchronize with SAP Business One.
+- To synchronize Bill of Materials from ProcessForce to SAP Business One, simply change a data element within the ProcessForce BOM, and then click update. This action will trigger the synchronization of the BOM with SAP.
+- Even if you're not utilizing Coproducts, it's advisable to review the settings in the Coproducts section below.
 - This synchronization will allow the supply and demand details from ProcessForce Manufacturing Orders to update and make use of the following SAP Business One forms and processes:
   - Item Master Data -> Inventory Tab -> Committed and Ordered fields
   - Forecasts
-  - MRP wizard
+  - MRP Wizard
   - Order Recommendation
   - Available to Promise
   - BOM Relationship Maps
@@ -39,7 +40,7 @@ On the screenshot below you can check an example of Manufacturing Order - Produc
 
 ![Example](./media/mrp-related-configuration/example.webp)
 
-## Multiple Manufacturing Order - Production Order series synchronization
+## Multiple Manufacturing Order - Production Order Series Synchronization
 
 :::info
     Values are needed only when the company uses branches.
@@ -68,9 +69,9 @@ Click [here](../../document-numbering.md) to check how to create a document seri
 
 ## Coproducts
 
-For those enterprises that produce Coproducts, this form is required to be completed for ProcessForce to take advantage of SAP Business One MRP functions.
+For those enterprises that produce Coproducts, completing this form is necessary for ProcessForce to leverage SAP Business One MRP functions.
 
-SAP Business One does not manage the concept of Coproducts within its Bill of Material function. Therefore, when the Bill of Manufacturing and Manufacturing Order synchronization occurs, a dummy Bill of Material is created, with the parent Item being the Coproduct and component Item number being the Default Component set within this form. Go to the next paragraph to check how to configure Default Component.
+SAP Business One does not manage the concept of Coproducts within its Bill of Material function. Hence, during the synchronization of the Bill of Manufacturing and Manufacturing Order, a dummy Bill of Material is created; with the parent Item being the Coproduct and component Item number being the Default Component set within this form. Refer to the next paragraph for instructions on configuring the Default Component.
 
 ## Default Component
 
@@ -152,6 +153,6 @@ You can set minimum and maximum order quantity in Item Master Data, Planning Dat
 
 ![Min/Max order qty](./media/mrp-related-configuration/item-master-data-min-max.webp)
 
-The result of preferred vendors and minimum and maximum quantity is presented in the table below (click to enlarge).
+The result of preferred vendors, and minimum and maximum quantity is presented in the table below (click to enlarge).
 
 ![Results](./media/mrp-related-configuration/results.webp)

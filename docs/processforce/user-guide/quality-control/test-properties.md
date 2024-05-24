@@ -4,13 +4,13 @@ sidebar_position: 3
 
 # Test Properties
 
-Test properties – the core of the Quality Control Test – can be defined and grouped into similar properties.
+Test properties – the core of the Quality Control Test, can be defined and grouped into similar properties.
 
 :::info Path
     Administration → Setup → Quality Control → Test Properties
 :::
 
-This form allows the user to define Test Properties and is used within the Test Protocol Template, Test Protocol and Quality Control Test forms to determine and record testing results.
+This form allows the user to define Test Properties and is used within the Test Protocol Template, [Test Protocol](./test-protocols/overview.md) and [Quality Control Test](./quality-control-test/overview.md) forms to determine and record testing results.
 
 The Used Count field indicates how often the Test Property has been used and is used for reporting and analysis purposes.
 
