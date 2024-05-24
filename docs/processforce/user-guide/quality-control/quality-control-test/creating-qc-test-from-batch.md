@@ -26,7 +26,7 @@ To create a Quality Control Test for a specific Batch, go to Batch Master Data r
 
 ![List of Test Protocols](./media/creating-qc-test-from-batch/list-of-test-protocols.webp)
 
-If the chosen Test Protocol is of [Quality Control Test Pool](../test-protocols/quality-control-tests-pool.md) type, you can either create a Quality Control Test or a Quality Control Test Pool based on the [General Settings](../../system-initialzation/general-settings/qc-tab.md) option.
+If the chosen Test Protocol is of [Quality Control Test Pool](../test-protocols/quality-control-tests-pool.md) type, you can either create a Quality Control Test or a Quality Control Test Pool based on the [General Settings](../../system-initialization/general-settings/qc-tab.md) option.
 
 Select the Test Protocol, and the Quality Control Test / Quality Control Test Pool document will open.
 

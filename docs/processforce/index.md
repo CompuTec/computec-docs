@@ -34,7 +34,7 @@ ProcessForce contains many functions. You can get to them through the standard S
 
 Here you can define general ProcessForce settings, e.g. set default values or time constraints for many of the add-on features.
 
-To find out more about every tab and options on it, click [here](./user-guide/system-initialzation/general-settings/overview.md).
+To find out more about every tab and options on it, click [here](./user-guide/system-initialization/general-settings/overview.md).
 
 ![General settings](./media/index/general-settings.webp)
 

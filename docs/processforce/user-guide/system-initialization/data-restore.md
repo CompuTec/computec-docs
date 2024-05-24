@@ -50,7 +50,7 @@ Bill of Materials synchronization always flows from ProcessForce to SAP B1 data:
 
 The Restore Bill of Materials function only works if the "Enable Bill of Materials synchronization between ProcessForce and SAP Business One" checkbox is selected in the General Settings form, under the ProcessForce tab, Bill of Materials and Manufacturing Orders section.
 
-Click [here](../system-initialzation/general-settings/overview.md) to find out more about General Settings.
+Click [here](../system-initialization/general-settings/overview.md) to find out more about General Settings.
 
 Only a Bill of Material variant with Is MRP Default check box checked on the Item Details form will be used for synchronization:
 

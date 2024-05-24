@@ -10,7 +10,7 @@ Here you can check the general settings required for the Quality Test: Document 
 
 ## General Settings
 
-Click [here](../../user-guide/system-initialzation/general-settings/qc-tab.md) to find out more.
+Click [here](../../user-guide/system-initialization/general-settings/qc-tab.md) to find out more.
 
 ## Document Series Number
 

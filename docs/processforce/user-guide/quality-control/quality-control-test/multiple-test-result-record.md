@@ -10,7 +10,7 @@ On this page, you can find information on how to set up and record multiple test
 
 ## Setting Up
 
-- Check to [Enable Multiple Test Results](../../system-initialzation/general-settings/qc-tab.md) checkbox in Administration → System Initialization → General Settings → ProcessForce tab → QC tab to allow to perform Multiple QC Test Results. Click [here]((../../system-initialzation/general-settings/qc-tab.md)) to check how to do that.
+- Check to [Enable Multiple Test Results](../../system-initialization/general-settings/qc-tab.md) checkbox in Administration → System Initialization → General Settings → ProcessForce tab → QC tab to allow to perform Multiple QC Test Results. Click [here](../../system-initialization/general-settings/qc-tab.md) to check how to do that.
 - The Quality Control Test form has to be in confirmation or update mode (indicated by the OK or Update button on the lower left corner of the form).
 
 ## The Quality Control Test Form

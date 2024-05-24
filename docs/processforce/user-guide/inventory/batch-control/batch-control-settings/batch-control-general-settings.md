@@ -10,7 +10,7 @@ Batch settings cover different batch-related functions, e.g., default batch stat
 - Item Group
 - Item Details
 
-Click [here](/docs/processforce/user-guide/system-initialzation/general-settings/inventory-tab/) to check detailed information about Batch configuration (based on the example of General Settings).
+Click [here](/docs/processforce/user-guide/system-initialization/general-settings/inventory-tab/) to check detailed information about Batch configuration (based on the example of General Settings).
 
 ![General Settings](./media/batch-control-general-settings/general-settings-batches.png)
 
@@ -18,7 +18,7 @@ Click [here](/docs/processforce/user-guide/system-initialzation/general-settings
 
 ## General Settings
 
-Settings on this level are applied to any new Batches created. Click [here](/docs/processforce/user-guide/system-initialzation/general-settings/inventory-tab/) to find out more about these settings.
+Settings on this level are applied to any new Batches created. Click [here](/docs/processforce/user-guide/system-initialization/general-settings/inventory-tab/) to find out more about these settings.
 
 :::info Path
     Administration → System Initialization → General Settings → ProcessForce tab → Inventory tab

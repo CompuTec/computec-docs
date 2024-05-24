@@ -70,7 +70,7 @@ Here, you can find information about the options available from the Gantt chart 
     </div>
 </details>
 
-You can set a default value for every Gantt chart opening in [General Settings](/docs/processforce/user-guide/system-initialzation/general-settings/general-tab/).
+You can set a default value for every Gantt chart opening in [General Settings](/docs/processforce/user-guide/system-initialization/general-settings/general-tab/).
 
 **Refresh** – updates the view.
 

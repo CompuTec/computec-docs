@@ -54,7 +54,7 @@ If you have added items to the Item Master Data form when ProcessForce is not in
 
 ![Restore Functions](./media/configuration/restore-costing.webp)
 
-Click [here](../system-initialzation/data-restore.md) to find out more about Restore Function.
+Click [here](../system-initialization/data-restore.md) to find out more about Restore Function.
 
 ### Cost Categories
 
