@@ -22,7 +22,7 @@ This option is available for Goods Receipt PO in any Status.
 
 ---
 
-## Vehicle Inspection document
+## Vehicle Inspection Document
 
 ![Vehicle Inspection](./media/overview/vehicle-inspection-2.webp)
 
@@ -38,7 +38,7 @@ You can define Truck License Plate, Trailer Number, and Container Number. Values
 
 In this section, you can record values for different categories (e.g., Chemical Spills, Pest Inspection). You can record inspection pass or fail indicators for every category, from 1 to 3 predefined values and remarks. In the Temperature category, additionally, the temperature can be defined.
 
-Values in the drop-down list are predefined. Click here to find out how to define it.
+Values in the drop-down list are predefined. Click [here](./vehicle-inspection-reason.md) to find out how to define it.
 
 Using a drop-down list does not depend on Pass/Fail checkbox. It allows one to manage the situation when the inspection is passed, but there are some minor defects.
 

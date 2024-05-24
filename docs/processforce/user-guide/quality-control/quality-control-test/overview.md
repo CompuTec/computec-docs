@@ -39,9 +39,9 @@ When the Test is complete, the Test Status can be selected (Pass/Failed), and th
 
 ## Test Properties
 
-The Test Properties tab allows the user to record the results of the Tests.
+The [Test Properties](../../quality-control/test-properties.md) tab allows the user to record the results of the Tests.
 
-Note: The Test and Item Properties are copied from the Test Protocol. Additional Properties can be added and deleted from both tabs.
+Note: The Test and Item Properties are copied from the [Test Protocol](../test-protocols/overview.md). Additional Properties can be added and deleted from both tabs.
 
 Within the Tested Value and Tested Reference Code, the user enters the tested value and selects the Pass/Fail option.
 
@@ -57,7 +57,7 @@ The Item Properties tab allows the user to record the results of the Item Proper
 
 The Defects tab allows the user to view the sample size and enter the test's Passed and Defect quantity results.
 
-Defect codes can be added to categorize the failure and are used for analysis and reporting purposes.
+[Defect codes](../defects.md) can be added to categorize the failure and are used for analysis and reporting purposes.
 
 Note: these codes are copied to the NCMR transaction.
 
@@ -79,22 +79,22 @@ The Transaction tab provides the user with the details of the Transaction Type, 
 
 The user can also record the Batch and Serial number(s).
 
-It is possible to [automatically change assigned Batches' status on passing Quality Control Test](../../../user-guide/system-initialzation/general-settings/qc-tab.md).
+It is possible to [automatically change assigned Batches' status on passing Quality Control Test](../../../user-guide/system-initialization/general-settings/qc-tab.md).
 
 ![Quality Control Test Transaction](./media/overview/quality-control-test-transaction.webp)
 
-## Creating Quality Control Test for an Operation on Manufacturing Order
+### Creating Quality Control Test for an Operation on Manufacturing Order
 
 It is possible to create a Quality Control Test for a specific Operation. In this case, created Quality Control Test document has a Transaction tab filled with data from a chosen Operation line.
 
 ![Quality Control Test for Operation](./media/overview/quality-control-for-operation.webp)
 
-### Prerequisites
+#### Prerequisites
 
-- A Test Protocol defined for a specific Operation.
+- A [Test Protocol](../test-protocols/overview.md#transactions) defined for a specific Operation.
 - A Manufacturing Order is in one of the following statuses: Scheduled, Released, Started, Finished.
 
-### Performance
+#### Performance
 
 Right-click on a line of an Operation (Manufacturing Order → Operations tab) and choose Quality Control → Create Quality Control for Operation option
 
@@ -112,7 +112,7 @@ On the Resources tab, you can add only Items assigned to the Item Group defined 
 
 ## Items
 
-The Items tab allows the user to view and record the Items and quantities used during the Quality Control Testing process, e.g., safety gloves.
+The Items tab allows the user to view and record the Items and quantities used during the Quality Control Testing process. E.g., safety gloves.
 
 ![Quality Control Test](./media/overview/quality-control-test-items.webp)
 
@@ -132,11 +132,11 @@ If required, the user can add additional attachments within this section.
 
 ## Inventory Transfer
 
-You can create Inventory Transfer Requests and Inventory Transfers from and to QC Warehouse (defined in the header) from the You Can Also button.
+You can create Inventory Transfer Requests, and Inventory Transfers from and to QC Warehouse (defined in the header) from the You Can Also button.
 
 ![Quality Control Transfers](./media/overview/quality-control-transfers.webp)
 
-## Duplicate option
+## Duplicate Option
 
 This option allows copying the content of a currently open document to another.
 

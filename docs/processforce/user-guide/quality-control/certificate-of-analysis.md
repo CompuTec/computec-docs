@@ -14,7 +14,7 @@ CoA is typically (but not only) requested by customers in both food and chemical
     Currently, ProcessForce CoA function allows assigning Business Partners to a specific Test Property or Item Property. The function that generates Crystal Report using this kind of data is planned to be implemented in one of the next ProcessForce releases.
 :::
 
-## Test Property assigning
+## Test Property Assigning
 
 You can assign Business Partner to Test Property by choosing Business Partners Relations option from the context menu on the Test Property form (Business Partner will be assigned to a property displayed on the form):
 
@@ -32,7 +32,7 @@ and on Quality Control Test form:
 
 ![Quality Control Test](./media/certificate-of-analysis/quality-control-test-business-partners-relations.webp)
 
-## Item Property assigning
+## Item Property Assigning
 
 You can assign Business Partner to Item Property by choosing Business Partners Relations option from the context menu on the Item Property form (Business Partner will be assigned to a property displayed on the form):
 
@@ -52,9 +52,9 @@ After Clicking Business Partners Relations option, the Certificate of Analysis B
 
 ![Certificate of Analysis](./media/certificate-of-analysis/certificate-of-analysis-business-partners.webp)
 
-You can pick Business Partner and a period during which it will be assigned to a specific Property.
+You can pick Business Partner and a period, during which it will be assigned to a specific Property.
 
 You can also choose values for Property:
 
-- Expression: interval expression of interval in which tested value has to be to pass the test, e.g. Greater than, Equals,
-- Value From, Value To: numeric values of constraints.
+- **Expression**: interval expression of interval in which tested value has to pass the test, e.g. Greater than, Equals.
+- **Value From, Value To**: numeric values of constraints.

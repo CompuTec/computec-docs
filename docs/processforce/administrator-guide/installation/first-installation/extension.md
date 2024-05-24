@@ -148,4 +148,4 @@ If ProcessForce is installed on a database with an existing data (particularly I
 
 ![Restore](./media/extension/restore.webp)
 
-Click [**here**](../../../user-guide/system-initialzation/data-restore.md) to find out more about the Restore function.
+Click [**here**](../../../user-guide/system-initialization/data-restore.md) to find out more about the Restore function.

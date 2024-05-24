@@ -4,23 +4,23 @@ sidebar_position: 1
 
 # Overview
 
-A Test Protocol or testing plan is a method for defining all the information required to conduct a test:
+A Test Protocol or Testing Plan is a method for defining all the information required to conduct a test:
 
-- Who – the Business Partner,
-- What – is the Item to be tested,
-- Where – the transaction,
-- When – the frequency.
+- Who – the Business Partner
+- What – is the Item to be tested
+- Where – the transaction
+- When – the frequency
 
 And contains the following information:
 
-- Header Details – what will be tested,
-- Item/Test Properties – the quality and Item related tests,
-- Frequency of Testing – when testing will occur,
-- Transactions – where testing will occur,
-- Resources – the assets required to conduct the testing,
-- Items – quality-specific materials,
-- Instructions – the documented plan,
-- Attachments – related documentation.
+- Header Details – what will be tested
+- Item/Test Properties – the quality and Item related tests
+- Frequency of Testing – when testing will occur
+- Transactions – where testing will occur
+- Resources – the assets required to conduct the testing
+- Items – quality-specific materials
+- Instructions – the documented plan
+- Attachments – related documentation
 
 ---
 
@@ -34,7 +34,7 @@ And contains the following information:
 
 The left side of the header holds information on Test Protocol: Code (related Name is on the right) and Used Count – a value that indicates how many times the Test Protocol has been used (it is used for reporting and analysis purposes only). On the left side, you can also define Item related data: choose an Item, Revision (if required), default Quality Control Test Warehouse and Bin location, and Project.
 
-The right side holds information on the Test Protocol Template used for this Test Protocol (and Test Protocol name on the top). Template Name, Group, Created Date, and Update Date (the date of the last update of a template) are filled automatically upon choosing a Template Code.
+The right side holds information on the [Test Protocol Template](#templates-for-test-protocols) used for this Test Protocol (and Test Protocol name on the top). Template Name, Group, Created Date, and Update Date (the date of the last update of a template) are filled automatically upon choosing a Template Code.
 
 Valid from and Valid to dates are defined for a specific Test Protocol. If the current date is outside the specified range, adding a Quality Control Test based on this Test Protocol will not be possible.
 
@@ -42,7 +42,7 @@ Valid from and Valid to dates are defined for a specific Test Protocol. If the c
 
 ### Test Properties
 
-Here you can manage Test Properties: data elements representing the tests to be conducted within the Quality Control Test. Test Properties are copied from a Test Protocol Template chosen in the header. After this, you can add or remove the Properties before saving the Test Protocol.
+Here you can manage [Test Properties](../test-properties.md): data elements representing the tests to be conducted within the Quality Control Test. Test Properties are copied from a [Test Protocol Template](#templates-for-test-protocols) chosen in the header. After this, you can add or remove the Properties before saving the Test Protocol.
 
 Note. When the user adds the Item Number to the Header, the Item Properties defined within the Item Details/Properties Tab and have the Quality Control Testing field checked are copied into the Item Property Code (bottom grid).
 
@@ -50,7 +50,7 @@ The user can enter valid from and to date details, the expression, and correspon
 
 ### Item Properties
 
-In this tab, you can define  Item Properties – physical and chemical characteristics of an Item. When the user adds the Item Number to the Header, the Item Properties that are explained within the Item Details > Properties tab of a related Item and have the Quality Control Testing field checked on  the Item Property form are copied into the Item table. You can now add or remove properties and edit their details.
+In this tab, you can define  [Item Properties](../../item-details/item-properties.md) – physical and chemical characteristics of an Item. When the user adds the Item Number to the Header, the Item Properties that are explained within the [Item Details > Properties tab](../../item-details/overview.md#properties) of a related Item and have the Quality Control Testing field checked on  the [Item Property](../../item-details/item-properties.md) form are copied into the Item table. You can now add or remove properties and edit their details.
 
 ![Test Protocol Item Properties](./media/overview/test-protocol-item-properties.webp)
 
@@ -66,7 +66,7 @@ The Frequency tab allows the user to define 'When' a test will occur.
 - **Frequency** only one method can be selected at any one time:
 - **Time Between Tests** – you can define an interval after which another test will be performed; the field uses 'd' to define the number of days, 'h' for the number of hours, and 'm' for minutes, e.g., '14d', '13d23h', '20d22h15m', '15d40m' and this value will calculate the date of the next test.
 - **After No. of Batches** – you can define the number of Batches after the recording of which a test will be performed.
-- **Batch Record Inspection Date** – if checked, the Inspection Date in the Batch Master Data form > Date Details tab is taken under consideration.
+- **Batch Record Inspection Date** – if checked, the Inspection Date in the [Batch Master Data form > Date Details tab](../../inventory/batch-control/batch-master-data/details-tab.md) is taken under consideration.
 - **Specific date** – put a specific date manually.
 - **Date of Last Test** – date of the last test performed.
 - **Date of Next Test** – a date calculated based on the chosen option.
@@ -93,11 +93,11 @@ It is possible to assign one Test Protocol to many transactions.
 
 ![Quality Plan](./media/overview/test-protocol-quality-plan.webp)
 
-Click <!-- TODO: Add Link --> here to find out more.
+Click [here](../test-protocols/quality-plan.md) here to find out more.
 
 ### Resources
 
-This form allows users to add Resources to the Quality Control Test.
+This form allows users to add [Resources](../../routings/resources.md) to the Quality Control Test.
 
 The required quantity can also be added.
 
@@ -107,7 +107,7 @@ Valid from and to dates may be entered, but currently, they are for informationa
 
 ### Items
 
-This form allows users to add Items used for the Quality Control Test.
+This form allows users to add [Items](../../quality-control/quality-control-configuration.md) used for the Quality Control Test.
 
 The quantity required can also be added.
 

@@ -10,10 +10,10 @@ On this page, you can find information on how to set up and record multiple test
 
 ## Setting Up
 
-- Check to <!-- TODO: Add Link --> Enable Multiple Test Results checkbox in Administration → System Initialization → General Settings → ProcessForce tab → QC tab to allow to perform Multiple QC Test Results. Click here to check how to do that.
+- Check to [Enable Multiple Test Results](../../system-initialization/general-settings/qc-tab.md) checkbox in Administration → System Initialization → General Settings → ProcessForce tab → QC tab to allow to perform Multiple QC Test Results. Click [here](../../system-initialization/general-settings/qc-tab.md) to check how to do that.
 - The Quality Control Test form has to be in confirmation or update mode (indicated by the OK or Update button on the lower left corner of the form).
 
-## The quality Control Test form
+## The Quality Control Test Form
 
 If the *Enable Multiple Test Results* is checked, a user can define multiple test results for a particular Test Property or Item Property on a Quality Control Test form.
 
@@ -69,7 +69,7 @@ This statistics section is refreshed when:
 
 If the tested property gives reference name results (e.g., color = red), a check box with the following description is presented:
 
-Transfer the data according to the percentage of passed/failed entries:
+**Transfer the data according to the percentage of passed/failed entries**:
 
 Checking causes loading to the Property field on Quality Control Test, a result that is presented the most often on the Record Multiple Test Results form. The option is available for properties with dictionary values only.
 
@@ -79,10 +79,12 @@ Checking causes loading to the Property field on Quality Control Test, a result 
 
 If the tested property gives a numeric value (e.g., particle size = 5), a check box with the following description is presented:
 
-Transfer the average value from the above test results:
+**Transfer the average value from the above test results**:
 
 Checking it causes loading to the Property field on Quality Control Test, a result that is an average value calculated from the values recorded on the Record Multiple Test Results form. This option is available for properties with numeric values only.
 
 ### Deleting Rows
 
 To delete a row, right-click on it and choose Delete row from the context menu:
+
+![Deleting Rows](./media/multiple-test-result-record/record-multiple-test-results-deleting.png)

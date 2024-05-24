@@ -22,7 +22,7 @@ This form allows the user to define operations, which will be a part of the rout
 
 #### QC Active
 
-This checkbox determines whether a specific Operation is affected by the [Create QC Document for Operation on MOR status change option](/docs/processforce/user-guide/system-initialzation/general-settings/qc-tab).
+This checkbox determines whether a specific Operation is affected by the [Create QC Document for Operation on MOR status change option](/docs/processforce/user-guide/system-initialization/general-settings/qc-tab).
 
 The checkbox is also available from the Manufacturing Order, Production Process, Routing form level.
 

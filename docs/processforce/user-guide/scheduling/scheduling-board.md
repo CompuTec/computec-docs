@@ -4,11 +4,11 @@ sidebar_position: 3
 
 # Scheduling Board
 
-Scheduling Board is a production planning tool that allows scheduling (and rescheduling) several Manufacturing orders (filtered by chosen criteria) quickly. It also allows managing Manufacturing Orders based on a multi-level Bill of Materials, considering the product structure. Due to the usage of product planning-relate-dated dates and times, the system can communicate situations when it is impossible to process a Manufacturing Order on time for the planned Delivery Date and suggest the first date available to do this.
+Scheduling Board is a production planning tool that allows scheduling (and rescheduling) several Manufacturing Orders (filtered by chosen criteria) quickly. It also allows managing Manufacturing Orders based on a multi-level Bill of Materials, considering the product structure. Due to the usage of product planning-relate-dated dates and times, the system can communicate situations when it is impossible to process a Manufacturing Order on time for the planned Delivery Date and suggest the first date available to do this.
 
 ---
 
-## How to open Scheduling Board / Semi-finished Product Scheduling
+## How to Open Scheduling Board / Semi-finished Product Scheduling
 
 This option is available from the following place in the system:
 
@@ -40,8 +40,8 @@ It is possible to create semi-finished Items Manufacturing Orders from a Sales O
 
 Note that there are two similar options:
 
-- Create Manufacturing Orders – leads to Scheduling Board,
-- Create Manufacturing Order – creates a single Manufacturing Order (for the Item from Content tab, clicking on which leads to open the context menu).
+- Create Manufacturing Orders – leads to Scheduling Board
+- Create Manufacturing Order – creates a single Manufacturing Order (for the Item from Content tab, clicking on which leads to open the context menu)
 
 ### Manufacturing Order
 
@@ -67,7 +67,7 @@ You can also reach the for from the Order Recommendation form:
 
 Semi-finished product scheduling is a tool for production planning, considering a product structure.
 
-### Schedule tab
+### Schedule Tab
 
 #### Create
 
@@ -110,13 +110,13 @@ Priority of commission.
 
 #### Schedule Date and Time
 
-#### Date and Time of end of the order
+#### Date and Time of end of the Order
 
 #### Routing
 
 Available routing can be chosen from the Scheduling Board.
 
-#### Filtering option
+#### Filtering Option
 
 The option allows filtering Manufacturing Orders based on the standard SAP Business One option.
 
@@ -190,8 +190,8 @@ Let's consider two possibilities - `Delivery date is possible to realize it` and
 
     ![Not possible](./media/scheduling-board/not-possible.webp)
 
-    On the screen, you can see it is impossible (the row's red color communicates it). The system automatically changed direction to Forward and set to the earliest possible End Date for 08.06 00:00. Now we can change this date to 20.09 at 00:01, direction Backward, and click Reschedule. Now the row is green again, indicating that it is possible to schedule it this way.
+    As displayed on the screen, the task is currently impossible to schedule (the row's red color communicates it). The system automatically changed direction to Forward and set to the earliest possible End Date for 08.06 00:00. Now we can change this date to 20.09 at 00:01, direction Backward, and click Reschedule. Consequently, the row turns green, indicating that it is now possible to schedule it in this manner.
 
-## Sales Order Minimum Order quantity
+## Sales Order Minimum Order Quantity
 
 This option allows considering Sales Order options (Minimum and Maximum Quantity, Order Multiple) when creating Semi Finished Manufacturing Orders suggestions on Scheduling Board. This gives the sales operator a tool to provide an accurate estimated arrival time.
