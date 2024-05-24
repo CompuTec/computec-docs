@@ -6,17 +6,17 @@ sidebar_position: 2
 
 ![General Tab](./media/general-tab/general-settings-general-tab.webp)
 
-**Enable standard functionality of SAP Business One's Production menu** – in enabled status all the SAP Business One menu entries are visible
+**Enable standard functionality of SAP Business One's Production menu** – in Enabled status, all the SAP Business One menu entries are visible
 
-**Enable the standard functionality of the Resources menu** – in enabled status standard SAP Business One Resource menu options are available (apart from ProcessForce Resource option)
+**Enable the standard functionality of the Resources menu** – in Enabled status, standard SAP Business One Resource menu options are available (apart from ProcessForce Resource option)
 
-**Display on the Gantt chart** – a value by default displayed on the Gantt chart. You can choose an option from the drop-down list (available: Related Resource Code, Resource Remarks, Manufacturing Order Number, Item Code, Planned Quantity, Actual Quantity, Required Date and Priority).
+**Display on the Gantt chart** – a value by default is displayed on the Gantt chart. You can choose an option from the drop-down list (available: Related Resource Code, Resource Remarks, Manufacturing Order Number, Item Code, Planned Quantity, Actual Quantity, Required Date and Priority).
 
 :::tip
     You can use the Resource Remarks field to display any text on Gantt work progress bars.
 :::
 
-**Default Revision Code, Default Revision Nam**e – select the default Revision Code and Revision name for the global assignment.
+**Default Revision Code, Default Revision Name** – select the default Revision Code and Revision name for the global assignment.
 
 **Automatically issue materials on Pick Order Add/Update, Automatically receipt materials on Pick Receipt Add/Update** – set up Auto Pick and Auto Receipt.
 
@@ -25,46 +25,36 @@ sidebar_position: 2
     <div>
         The process flow of picking and receiving materials has been simplified by checking one or both options.
 
-        For more details, click here<!-- TODO: Add Link -->.
+        For more details, click [here](../../manufacturing/auto-pick-issue-and-auto-pick-receipt.md)
     
         **Pick Issue**
-
-        Perform the usual steps of picking non-trace and batch-traced Items.
-
-        Click Update on the Pick Issue Form.
-
-        The Issue to Production transaction is automatically created.
-
-        Pick Order is updated and set to Close status.
-
-        Documents are visible within the Manufacturing Order > Document tab.
+        - Perform the usual steps of picking non-trace and batch-traced Items.
+        - Click Update on the Pick Issue Form.
+        - The Issue to Production transaction is automatically created.
+        - Pick Order is updated and set to Close status.
+        - Documents are visible within the Manufacturing Order > Document tab.
 
         **Pick Receipt**
-
-        Record the quantity of the Items received from production.
-
-        Click Update.
-
-        Receipt from Production is automatically created.
-
-        Pick Receipt is closed.
-
-        Documents are visible within the Manufacturing Order Document tab.
+        - Record the quantity of the Items received from production.
+        - Click Update.
+        - Receipt from Production is automatically created.
+        - Pick Receipt is closed.
+        - Documents are visible within the Manufacturing Order Document tab.
     </div>
 </details>
 
-**Add setup time to a new task when rescheduling** – when Task on Manufacturing Order is partially booked, and we want to reschedule the not done part, it has its own setup time again when this option is checked.
+**Add setup time to a new task when rescheduling** – When a Task on a Manufacturing Order is partially booked and we want to reschedule the unfinished portion, it will include setup time again if this option is checked.
 
-**Start with Planning Board in Scheduling** – decide whether Scheduling opens on the Resources or Resource Planning Board tab <!-- TODO: Add Link -->.
+**Start with Planning Board in Scheduling** – decide whether Scheduling opens on the Resources or [Resource Planning Board](../../scheduling/gantt-chart/resource-planning-board.md) tab.
 
-**Default Gantt chart time scale** – self-explanatory. You can choose between Days, Weeks, and Months
+**Default Gantt chart time scale** – You can choose between Days, Weeks, and Months
 
 **Automatically check MORs in lists** – if this checkbox is checked, Manufacturing Order lines are checked by default on forms, e.g., on Scheduling Board:
 
 <details>
     <summary>Click here to find out more</summary>
     <div>
-        ![General Tab](./media/general-tab/scheduling-board-auto-create.webp)
+        ![General Tab](./media/general-tab/scheduling-board-auto-create.jpg)
     </div>
 </details>
 
@@ -90,4 +80,4 @@ sidebar_position: 2
     </div>
 </details>
 
-**HANA Reports limit: Date From, Date To** – the option is related to one of the Data Model reports. It limits the results to the ones within specific time constraints.
+**HANA Reports limit: Date From, Date To** – the option is related to one of the [Data Model](../../../administrator-guide/data-model/overview.md) reports. It limits the results to the ones within specific time constraints.

@@ -44,7 +44,7 @@ Faster Costing is an option that accelerates Costing calculations significantly.
     Calculating actual cost of FG-01 based on SG-01 i RSC-01,  
     Saving changes in Item Costing UDO for FG-01.
 
-Loading, calculating, and saving data took quite a lot of time in some cases.
+Loading, calculating, and saving data can take a lot of time in some cases.
 
 In the latest ProcessForce version, a new costing mechanism has been implemented. It changes the whole procedure significantly.
 

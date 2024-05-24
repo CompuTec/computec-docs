@@ -27,7 +27,7 @@ Distribution Rules and Cost Centers have been also added to Resources and are av
 
 ## Configuration
 
-- SAP Business One is configured as the below settings to determine how many dimension fields and columns should be displayed in the appropriate ProcessForce forms.
+- SAP Business One is set up with the following configurations to determine the number of dimension fields and columns that should be displayed in the corresponding ProcessForce forms.
 
 - The configuration is the same for Items and Resources
 

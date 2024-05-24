@@ -2,6 +2,6 @@
 sidebar_position: 13
 ---
 
-# PM tab
+# Plant Maintenance Tab
 
-This tab contains information related to Plant Maintenance. Click here to find out more<!-- TODO: Add Link -->.
+This tab contains information related to Plant Maintenance. Click [here](../../plant-maintenance/overview.md) to find out more.

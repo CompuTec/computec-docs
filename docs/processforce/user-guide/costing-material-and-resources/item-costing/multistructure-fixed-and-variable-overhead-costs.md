@@ -16,9 +16,9 @@ In ProcessForce, it is possible to define not only simple but also structured Fi
 
 Multi-structure Fixed and Variable Overhead Costs option is available after checking the check box in the General Settings form, ProcessForce tab, Costing tab:
 
-![Multi tructure](./media/multistructure-fixed-and-variable-overhead-costs/multi-structure.webp)
+![Multi structure](./media/multistructure-fixed-and-variable-overhead-costs/multi-structure.webp)
 
-### Overhead Types definition
+### Overhead Types Definition
 
 :::info Path
     Administration → Setup → Financials → Overhead Types
@@ -26,9 +26,9 @@ Multi-structure Fixed and Variable Overhead Costs option is available after chec
 
 In this form, Costs types can be set. After its definition, Cost types can be used in Item Costing and Resource Costing form. You can define:
 
-- Code,
-- Name,
-- Type – Fixed or Variable.
+- Code
+- Name
+- Type – Fixed or Variable
 
 ![Overhead variable](./media/multistructure-fixed-and-variable-overhead-costs/overhead-variable.webp)
 
@@ -40,20 +40,24 @@ In this form, Costs types can be set. After its definition, Cost types can be us
 
 Predefined Overhead Types can be used on the Costing Details tab on the Item Costing form and on Resource Costing in the following columns:
 
-- Fixed O/H,
-- Fixed O/H %,
-- Fixed O/H Other,
-- Variable O/H,
-- Variable O/H %,
-- Variable O/H Other.
+- Fixed O/H
+- Fixed O/H %
+- Fixed O/H Other
+- Variable O/H
+- Variable O/H %
+- Variable O/H Other
 
 ![Item Costing Overhead](./media/multistructure-fixed-and-variable-overhead-costs/item-costing-overheads-2.webp)
+
+:::info
+The option is available for entries related to different than the 000 cost category (changes recorded for any other cost category can be loaded to the 000 cost category by using the [roll-over](../cost-categories.md) procedure).
+:::
 
 After choosing the option, you can select desired costs and set a value for it (only cost marked as fixed are available to choose for fixed costs):
 
 ![Actual Overhead](./media/multistructure-fixed-and-variable-overhead-costs/actual-overheads.webp)
 
-A costs sum will be added to the corresponding grid after clicking the OK button:
+A cost sum will be added to the corresponding grid after clicking the OK button:
 
 ![Added Up](./media/multistructure-fixed-and-variable-overhead-costs/added-up-overheads.webp)
 

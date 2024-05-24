@@ -27,11 +27,11 @@ Distribution Rules can be allocated as follows, and once set at this level will 
 
     ![Bill of Materials](./media/item-distribution-and-cost-dimensions/bill-of-materials-select-distribution-rule.png)
 
-- Using the Form Setting for the form select the dimensions to be displayed
+- Using the Form Setting - Bills of Materials, select the dimensions to be displayed
 
     ![Bill of Materials](./media/item-distribution-and-cost-dimensions/bill-of-materials-form-settings.png)
 
-- For each line select the distribution rule
+- For each line, select the distribution rule
 
     ![Bill of Materials](./media/item-distribution-and-cost-dimensions/bill-of-materials-list-of-distribution-rules.png)
 

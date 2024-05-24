@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # View Planned Resource Capacity
 
-Here you can check how to check Resource capacity.
+Here, you can check how to check Resource capacity.
 
 ---
 
@@ -21,6 +21,6 @@ Here you can check how to check Resource capacity.
 
 ## Manufacturing Orders Tab
 
-Using the same navigation as above.
+Use the same navigation as above.
 
 ![Scheduling marked](./media/view-planned-resource-capacity/scheduling-marked-2.webp)

@@ -6,7 +6,7 @@ sidebar_position: 9
 
 Non-Conforming Materials Report allows the user to add additional Reason Codes and Action plans to remedy or determine the activity associated with a failed Quality Control Test or non-conforming material.
 
-The NCMR transaction is created from a <!-- TODO: Add Link --> Quality Control Test.
+The NCMR transaction is created from a [Quality Control Test](../quality-control/quality-control-test/overview.md).
 
 :::note Path
     Quality Control → NCMR Transaction

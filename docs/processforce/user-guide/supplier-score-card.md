@@ -9,7 +9,7 @@ ProcessForce Supplier Score Card is a reporting function based on a weighted sup
 ---
 
 :::warning
-    - Delivery and Quantity calculations on Supplier Score Card are made based on Purchase Order and Goods Receipt PO documents. A specific Purchase Order and Goods Receipt PO must be linked for the function to work correctly. It can be done by creating a Goods Receipt PO by using Copy To option on a Purchase Order or connecting the Purchase Order by Copy From Option on Goods Receipt PO.
+    - Delivery and Quantity calculations on Supplier Score Card are made based on Purchase Order and Goods Receipt PO documents. A specific Purchase Order and Goods Receipt PO must be linked for the function to work correctly. It can be done by creating a Goods Receipt Purchase Order by using Copy To option on a Purchase Order or connecting the Purchase Order by Copy From Option on Goods Receipt PO.
     - Dates are compared between lines of documents (not document header dates).
 :::
 
@@ -23,7 +23,7 @@ ProcessForce Supplier Score Card is a reporting function based on a weighted sup
 
 ![Supplier Score Card](./media/supplier-score-card/supplier-score-card.webp)
 
-Here you can define a number of values connected to Supplier (which have to add up to 100%), which defines a rank of specific value. These settings are created based on the weighted Supplier scorecard idea.
+Here, you can define a number of values connected to Supplier (which have to add up to 100%), which defines a rank of specific value. These settings are created based on the weighted Supplier scorecard idea.
 
 ## Supplier Score Card
 
@@ -36,7 +36,7 @@ Here you can define a number of values connected to Supplier (which have to add 
 
 ### Header
 
-Here you can define additional settings for a specific Supplier related to delivery and quantity.
+Here, you can define additional settings for a specific Supplier related to delivery and quantity.
 
 - No of Days Early and No of Days Late define a period before and after the order date in which delivery is still acceptable,
 
@@ -59,11 +59,11 @@ Here you can define additional settings for a specific Supplier related to deliv
 
 **Weighted Values** - are defined for each weight in General Settings, e.g., No. Of Complaints, No. of Failed QC Tests, No of Returns, etc.
 
-**Month to Date** - the total of transactions for the current month; e.g., if now is 15th October, transactions from 1st October until 15th October are considered.
+**Month to Date** - the total number of transactions for the current month; e.g., if today is October 15th, transactions from October 1st to October 15th are taken into account.
 
-Month to date relates to the weighted values calculated in the current month.
+Month-to-date refers to the weighted values calculated within the current month.
 
-**The previous month** - the weighted values calculated in the last month.
+**The Previous Month** - the weighted values calculated in the last month.
 
 **Year to Date** - relates to the total of each month's weighted values to the current month, e.g., January to May, where May is the current month.
 
@@ -73,9 +73,9 @@ Month to date relates to the weighted values calculated in the current month.
 
 ![Supplier Score Card Details](./media/supplier-score-card/supplier-score-card-details.webp)
 
-On this tab, three values from the Summary tab are Summary tab broken down into specific weighted scorecard positions.
+On this tab, three values from the Summary tab are broken down into specific weighted scorecard positions.
 
-All the values in the Details tab are displayed only, calculated based on specific settings and transactions, e.g., QC Tests, Returns, etc.
+The values in the Details tab are displayed solely based on specific settings and transactions, e.g., QC Tests, Returns, etc.
 
 #### Details tab Calculation
 

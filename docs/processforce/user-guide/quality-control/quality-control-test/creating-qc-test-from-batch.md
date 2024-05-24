@@ -12,10 +12,10 @@ A Quality Control test can be created from the Batch Master Data form.
 
 Define a Test Protocol with the following parameters:
 
-- Item Code,
-- Item Revision,
-- Warehouse (and Bin, if applicable),
-- Check the Batch Re-Test field within the Transactions tab,
+- Item Code
+- Item Revision
+- Warehouse (and Bin, if applicable)
+- Check the Batch Re-Test field within the Transactions tab
 - QC Test/Pool Par. tab → Create QC Tests Pool – choose this option if you want to create a Quality Control Tests Pool instead of a single Quality Control Test.
 
 ![Test Protocol Batch](./media/creating-qc-test-from-batch/test-protocol-batch.webp)
@@ -26,7 +26,7 @@ To create a Quality Control Test for a specific Batch, go to Batch Master Data r
 
 ![List of Test Protocols](./media/creating-qc-test-from-batch/list-of-test-protocols.webp)
 
-If the chosen Test Protocol is of <!-- TODO: Add Link --> QC Test Pool type, you can either create a Quality Control Test or a Quality Control Test Pool based on <!-- TODO: Add Link --> the General Settings option.
+If the chosen Test Protocol is of [Quality Control Test Pool](../test-protocols/quality-control-tests-pool.md) type, you can either create a Quality Control Test or a Quality Control Test Pool based on the [General Settings](../../system-initialzation/general-settings/qc-tab.md) option.
 
 Select the Test Protocol, and the Quality Control Test / Quality Control Test Pool document will open.
 

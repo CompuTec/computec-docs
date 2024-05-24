@@ -44,7 +44,7 @@ In QC Test/QC Pool Pr. tab you can decide about auto create Test using defined f
 
 ![Quality Control](./media/automatic-creation-of-quality-control-documents/auto-create-use-frequency.jpg)
 
-You can defined transaction/s from which Quality Control Test documents will be created:
+You can define transaction/s from which Quality Control Test documents will be created:
 
 ![Quality Control](./media/automatic-creation-of-quality-control-documents/test-protocol-transactions.jpg)
 
@@ -66,6 +66,6 @@ Then, link it to a Business Partner:
 
 ![Quality Control](./media/automatic-creation-of-quality-control-documents/business-partner-qc-qualifications.jpg)
 
-Then you can link it to test protocol
+Then, you can link it to test protocol
 
 ![Quality Control](./media/automatic-creation-of-quality-control-documents/test-protocol-qc-qualification.jpg)

@@ -20,13 +20,13 @@ You can access Resource Calendar by the path above or by clicking a yellow arrow
 
 ![Resource Calendar Yellow Arrow](./media/resource-calendar/resource-calendar-yellow-arrow.webp)
 
-## Resource Calendar tabs
+## Resource Calendar Tabs
 
 ### Working Hours
 
 ![Resource Calendar Working Hours](./media/resource-calendar/resource-calendar-working-hours.webp)
 
-In this tab, you can define working hours for a specific resource for every day of the week (you can specify many separate periods for each day). After setting From Time and To Time, Total Time is calculated automatically. In the Total Working Time field, a total of set hours for a whole week is displayed.
+In this tab, you can define working hours for a specific resource for every day of the week (you can specify many separate periods for each day). After setting 'From Time and To Time', Total Time is calculated automatically. In the Total Working Time field, a total of set hours for a whole week is displayed.
 
 ### Exceptions
 
@@ -38,7 +38,7 @@ The date and time can be defined along with Remarks describing an exception reas
 
 By clicking the, You Can Also button and the Remove past exceptions option; you can delete previously set Exceptions.
 
-Click the You Can Also button and Create exceptions based on current working days till... you can fill the Exceptions list with work days (and set hours) until the date specified in the Till Date field.
+Clicking the "You Can Also" button and selecting "Create exceptions based on current working days till..." enables you to populate the Exceptions list with workdays (and set hours) until the date specified in the Till Date field.
 
 ### Holidays
 
@@ -46,7 +46,7 @@ Click the You Can Also button and Create exceptions based on current working day
 
 Here you can define one-day time-offs and Remarks connected to them.
 
-By clicking the You Can Also button and then Copying a list of Holidays defined in the system, you can automatically fill in the Holidays list with predefined data.
+By clicking the 'You Can Also' button and then Copying a list of Holidays defined in the system, you can automatically fill in the Holidays list with predefined data.
 
 ![Resource Calendar Holidays Update](./media/resource-calendar/resource-calendar-holidays-update.webp)
 

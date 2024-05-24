@@ -16,7 +16,7 @@ Here you can define Inspectors who can be assigned to perform a Quality Test and
 
 ![Inspector](./media/inspectors/inspector.webp)
 
-This form allows the user to define the Inspectors used to conduct the Quality Control Tests and the Warehouse they are allocated to.
+This form allows the user to define the Inspectors, used to conduct the Quality Control Tests and the Warehouse they are allocated to.
 
 This data is used within the Quality Control Test Form.
 
@@ -40,7 +40,7 @@ For example, Inspectors could be grouped by warehouse or specialization.
 
 ![NCMR Inspector](./media/inspectors/ncmr-inspector.webp)
 
-This form allows the user to define the NCMR Inspectors used to conduct the NCMR process and the Warehouse they are allocated to.
+This form allows the user to define the NCMR Inspectors, used to conduct the NCMR process and the Warehouse they are allocated to.
 
 This data is used within the Quality Control Test > Defect Tab and the NCMR Transaction.
 

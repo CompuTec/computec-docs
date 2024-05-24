@@ -7,10 +7,10 @@ sidebar_position: 5
 Resource Costing is a function that evaluates a Resource's work during production. Combined with Item Costing (which holds materials costs), this option assesses the production based on a given Manufacturing Order.
 
 :::warning
-    Adding UDFs to the Item Costing and Resource Costing form may cause errors and is not recommended.
+    Adding User Defined Fields to the Item Costing and Resource Costing form may cause errors and is not recommended.
 :::
 
-Please check [the Configuration section](./configuration.md) before running the Costing functions.
+Please check the [Configuration](./configuration/overview.md) section before running the Costing functions.
 
 :::info Path
     Costing → Resource Costing

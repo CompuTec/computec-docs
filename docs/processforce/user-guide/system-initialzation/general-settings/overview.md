@@ -6,7 +6,7 @@ sidebar_position: 1
 
 This form allows the user to define the following (among others):
 
-- Default formulas for Materials, Coproducts, Scraps, and phantoms
+- Default formulas for Materials, Coproducts, Scraps, and Phantoms
 - Display or not display the production menu of SAP Business One
 - Batch and Serial Template for global assignment for all item masters
 - MRP configuration
