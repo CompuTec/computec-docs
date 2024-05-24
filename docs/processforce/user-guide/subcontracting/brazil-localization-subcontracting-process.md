@@ -2,9 +2,9 @@
 sidebar_position: 4
 ---
 
-# Brazil localization: subcontracting process
+# Brazil localization: Subcontracting Process
 
-Here you can find a description of the subcontracting process with deliveries used in Brazil.
+Here, you can find a description of the subcontracting process with deliveries used in Brazil.
 
 :::warning
     This workflow (along with the related General Settings option) can only be used in the Brazilian localization.

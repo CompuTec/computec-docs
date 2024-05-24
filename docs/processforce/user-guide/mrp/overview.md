@@ -24,7 +24,7 @@ Schedule Manufacturing Orders based on backward scheduling from the required due
 
 ## Configuration
 
-To see configuration details, visit the [Enable Synchronization](/docs/processforce/user-guide/system-initialzation/general-settings/bom-mor#enable-synchronization) and [MRP-related configuration](/docs/processforce/user-guide/system-initialzation/general-settings/mrp-tab/mrp-related-configuration/) within [General Settings](../../user-guide/system-initialzation/general-settings/general-tab.md).
+To see configuration details, visit the [Enable Synchronization](/docs/processforce/user-guide/system-initialization/general-settings/bom-mor#enable-synchronization) and [MRP-related configuration](/docs/processforce/user-guide/system-initialization/general-settings/mrp-tab/mrp-related-configuration/) within [General Settings](../../user-guide/system-initialization/general-settings/general-tab.md).
 
 ## Operation
 

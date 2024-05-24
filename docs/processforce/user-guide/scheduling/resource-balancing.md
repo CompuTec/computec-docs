@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Resource Balancing
 
-This option allows choosing the most optimal Resource (defined in Production Process / Manufacturing Order / Alternative Resources) for a specific task from a Manufacturing Order.
+This option allows choosing the most optimal Resource (defined in Production Process / Manufacturing Order / [Alternative Resources](./gantt-chart/alternative-resources.md)) for a specific task from a Manufacturing Order.
 
 :::danger
     Testing the option in a test environment before using it in a production environment is recommended.
@@ -14,7 +14,7 @@ This option allows choosing the most optimal Resource (defined in Production Pro
 
 The system considers related times, Operation quantities, Resource availability, and Resource Calendars and chooses the Resource on which work can be completed in the shortest time (instead of selecting a default Resource).
 
-### Example
+**Example**
 
 **Quantity on Manufacturing Order**: 100
 
@@ -42,7 +42,7 @@ The system considers related times, Operation quantities, Resource availability,
 
 ### Run Time
 
-To use this option, it is required Run Time to be greater than 0 for all Resources used in Production Processes and Manufacturing Orders in the system:
+To use this option, all Resources used in Production Processes and Manufacturing Orders within the system must have a Run Time greater than 0.
 
 Production Process:
 
@@ -60,25 +60,25 @@ Manufacturing Order:
 
 Check the Use Resource Balancing check box to use the option.
 
-#### Resource balancing blockage
+#### Resource Balancing Blockage
 
-Suppose any Machine type Resource in the system has Run Time set to zero in any Production Process configuration. In that case, the Resource balancing blockage form is displayed upon attempts to check the Use Resource Balancing checkbox. The form holds information pointing to these Resources. Change their Run Time to activate the option.
+If any Machine-type Resource in the system has a Run Time set to zero in any Production Process configuration, attempting to check the Use Resource Balancing checkbox will prompt the display of the Resource Balancing blockage form. This form contains information indicating these Resources. To activate the option, change their Run Time values.
 
 ![Resource Balancing Blockage](./media/resource-balancing/resource-balancing-blockage.webp)
 
 ## Usage
 
-When the option is checked, the Resource choosing based on Resource Balancing is performed during Manufacturing Order scheduling or re-scheduling, which occurs in the following situations:
+When the option is selected, Resource selection based on Resource Balancing is conducted during Manufacturing Order scheduling or re-scheduling, under the following circumstances:
 
-- on opening the Scheduling Board / Semi-finished Product Scheduling form,
-- by changing the Planned Quantity or Manufacturing Order header's dates.
+- on opening the [Scheduling Board / Semi-finished Product Scheduling form](./scheduling-board.md#how-to-open-scheduling-board--semi-finished-product-scheduling)
+- by changing the Planned Quantity or Manufacturing Order header's dates
 
 ## Log files
 
 A function for saving action logs to files is available specifically for the Resource Balancing function.
 
 :::warning
-    Please remember that this function logs detailed information on every scheduling/rescheduling action regarding Resource Balancing. Therefore it might affect ProccessForce's performance.
+    Please note that this function records detailed information on every scheduling or rescheduling action related to Resource Balancing. Consequently, it may impact the performance of ProcessForce.
 :::
 
 To activate the option perform the following steps:

@@ -4,16 +4,16 @@ sidebar_position: 1
 
 # Overview
 
-A Gantt chart is a kind of bar chart that presents a project schedule. In ProcessForce Gantt chart is used to present and modify the production process.
+A Gantt chart is a kind of bar chart that presents a project schedule. In ProcessForce, Gantt chart is used to present and modify the production process.
 
-Here you can find information about the options available from the Gantt chart level.
+Here, you can find information about the options available from the Gantt chart level.
 
 :::info
     Please remember that on the Gantt chart, it is only possible to schedule forward, not backward (forward and backward scheduling is possible in other places in ProcessForce, e.g., on Manufacturing Order).
 :::
 
 :::caution
-    The Gantt Chart option can be used only when the Direct Data Access mode is enabled.
+    The Gantt Chart option can be used only when the [Direct Data Access](/docs/processforce/administrator-guide/licensing/license-server/direct-access) mode is enabled.
 :::
 
 :::caution
@@ -70,7 +70,7 @@ Here you can find information about the options available from the Gantt chart l
     </div>
 </details>
 
-You can set a default value for every Gantt chart opening in [General Settings](/docs/processforce/user-guide/system-initialzation/general-settings/general-tab/).
+You can set a default value for every Gantt chart opening in [General Settings](/docs/processforce/user-guide/system-initialization/general-settings/general-tab/).
 
 **Refresh** – updates the view.
 
@@ -90,7 +90,7 @@ You can set a default value for every Gantt chart opening in [General Settings](
     </div>
 </details>
 
-**Historical resources** – show historical data.
+**Historical Resources** – show historical data.
 
 **Show Resource Chart** – shows the use of Resources or a Resource Group over a selected period. Click [here](/docs/processforce/user-guide/scheduling/gantt-chart/show-resources-chart/) to find out more.
 <details>

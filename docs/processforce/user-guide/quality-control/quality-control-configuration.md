@@ -6,13 +6,15 @@ sidebar_position: 2
 
 Here you can check the general settings required for the Quality Test: Document Series Number, Resources, and Items information.
 
+---
+
 ## General Settings
 
-Click [here](../../user-guide/system-initialzation/general-settings/qc-tab.md) to find out more.
+Click [here](../../user-guide/system-initialization/general-settings/qc-tab.md) to find out more.
 
 ## Document Series Number
 
-The Quality Control Test form and NCMR Transaction and Quality Control Pool forms use the SAP Business One Document Numbering functions.
+The [Quality Control Test](./quality-control-test/overview.md) form and [NCMR Transaction](./ncmr-non-conforming-materials-report.md) and [Quality Control Pool](./test-protocols/quality-control-tests-pool.md) forms use the SAP Business One Document Numbering functions.
 
 ![Settings](./media/quality-control-configuration/quality-control-numbering.webp)
 

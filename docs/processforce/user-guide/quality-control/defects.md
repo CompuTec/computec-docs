@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Defects
 
-Here you can define defects that can be a result of a Quality Test.
+Here, you can define defects that can be a result of a Quality Test.
 
 ---
 

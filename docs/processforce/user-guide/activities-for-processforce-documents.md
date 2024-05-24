@@ -1,5 +1,6 @@
 ---
 sidebar_position: 16
+toc_max_heading_level: 2
 ---
 
 # Activities for ProcessForce Documents
@@ -40,7 +41,7 @@ All related Activities are displayed within the Activity Report.
 
 ## Complaints
 
-To create an Activities for a Complaint, select the New Activity menu option (to check Activities already related to this Complaint, click Related Activities):
+To create an Activity for a Complaint, select the New Activity menu option (to check Activities already related to this Complaint, click Related Activities):
 
 - The Activity form opens.
 - The BP Code from the Complaint is automatically added.
@@ -60,7 +61,7 @@ To create an Activities for a Complaint, select the New Activity menu option (to
 
 ![Quality Control Business Partner](./media/activities-for-processforce-documents/quality-control-business-partner.webp)
 
-### Non-Conforming Materials Report
+## Non-Conforming Materials Report
 
 - As in previous documents, navigate in the same way to create an Activity.
 - The QC test document number is copied into the Linked Documents Tab.
