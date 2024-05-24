@@ -9,6 +9,16 @@ toc_max_heading_level: 2
 The latest Installer is available to download from [here](/docs/appengine/releases/plugins/mo360/download).
 :::
 
+## MO360 1.10.12
+
+### *Release Date - 23 May 2024*
+
+| Issue Type | Release Note | Related Issue |
+| --- | --- | --- |
+| Bug | MO360 gantt chart weren't displayed on new UI5 version | - |
+
+---
+
 ## MO360 1.10.10
 
 ### *Release Date - 9 November 2023*
