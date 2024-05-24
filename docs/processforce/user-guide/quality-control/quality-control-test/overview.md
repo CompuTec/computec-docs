@@ -79,7 +79,7 @@ The Transaction tab provides the user with the details of the Transaction Type, 
 
 The user can also record the Batch and Serial number(s).
 
-It is possible to [automatically change assigned Batches' status on passing Quality Control Test](../../../user-guide/system-initialzation/general-settings/qc-tab.md).
+It is possible to [automatically change assigned Batches' status on passing Quality Control Test](../../../user-guide/system-initialization/general-settings/qc-tab.md).
 
 ![Quality Control Test Transaction](./media/overview/quality-control-test-transaction.webp)
 

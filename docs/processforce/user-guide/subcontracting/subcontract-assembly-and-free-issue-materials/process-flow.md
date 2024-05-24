@@ -20,7 +20,7 @@ Here you can find a step-by-step guide on how to use subcontracting function by 
 Choose the related option from the Manufacturing Order's context menu.
 ![Purchase Order](./media/process-flow/purchase-order.png)
 
-Note that you can set automatic generation of Purchase Order or Purchase Order Request for subcontracting after posting Manufacturing Order. You can check how to do that [here](../../system-initialzation/general-settings/subcontracting-tab.md)
+Note that you can set automatic generation of Purchase Order or Purchase Order Request for subcontracting after posting Manufacturing Order. You can check how to do that [here](../../system-initialization/general-settings/subcontracting-tab.md)
 
 ### Purchase Order is created
 

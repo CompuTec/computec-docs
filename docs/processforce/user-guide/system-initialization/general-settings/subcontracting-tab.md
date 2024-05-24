@@ -12,7 +12,7 @@ Subcontracting is a method of managing the “purchase of a service.” For exam
 
 **Procurement document type** – Purchase Request or Purchase Order can be picked as a default procurement document for External type Manufacturing Order.
 
-**Default series for procurement documents** – this setting allows setting if Purchase Request or Order and Goods Receipt PO are created with an automatically assigned document numbering series or if this number is given manually. Document series can be chosen from the adrop-down list. Only series previously defined are available in the list. To check how to create a document numbering, click [here](../../system-initialzation/document-numbering.md).
+**Default series for procurement documents** – this setting allows setting if Purchase Request or Order and Goods Receipt PO are created with an automatically assigned document numbering series or if this number is given manually. Document series can be chosen from the adrop-down list. Only series previously defined are available in the list. To check how to create a document numbering, click [here](../../system-initialization/document-numbering.md).
 
 **Create a Goods Receipt PO on Receipt from Production** – self-explanatory.
 

@@ -6,7 +6,7 @@ sidebar_position: 1
 
 The Item Details form is used to define the product master data associated with an item. ProcessForce provides a possibility to set an extended and diverse product definition. Item details make many item-associated activities easier, e.g. creating ingredient and allergen declaration, tracing batches, attaching files.
 
-Item Details record is being created automatically when creating Item Master Data. If an Item Master Data was created before ProcessForce installation, a restore procedure must be performed to obtain Item Details to the Item Master Data. You can check how to do this [here](../system-initialzation/data-restore).
+Item Details record is being created automatically when creating Item Master Data. If an Item Master Data was created before ProcessForce installation, a restore procedure must be performed to obtain Item Details to the Item Master Data. You can check how to do this [here](../system-initialization/data-restore).
 
 :::note Path
     Inventory → Item Details
@@ -40,7 +40,7 @@ In the header, you can find the Item Code, Item Name, Unit of Measurement, and Y
 
 **Accept Lower Qty** – if it is checked on Manufacturing Order Items and this Item has issue type set to backflush, and there are not enough Items on stock, it will issue less than required without any error. On the next issue, the system will issue all previously missing quantities if there is enough in stock.
 
-Please also check the following option to use it: [Issue Residual Quantity on the following Goods Receipt when possible](/docs/processforce/user-guide/system-initialzation/general-settings/inventory-tab/)
+Please also check the following option to use it: [Issue Residual Quantity on the following Goods Receipt when possible](/docs/processforce/user-guide/system-initialization/general-settings/inventory-tab/)
 
 **Ignore Yield** – click [here](/docs/processforce/user-guide/item-details/yield-master-data/) to find out more.
 
