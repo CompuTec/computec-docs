@@ -10,11 +10,11 @@ Management Board is a CompuTec PDC function that allows managing work performed 
     To have access to the Management Board function, a specific privilege must be assigned to an operating employee. You can check how to do that [below](#setting-management-board-privilege).
 :::
 
-## Setting Management Board privilege
+## Setting Management Board Privilege
 
 To have access to the Management Board function, a specific privilege must be assigned to an operating employee. Click [here](../administrator-guide/setting-up-the-application/overview.md#requirements) to find out more.
 
-## Management Board main form
+## Management Board Main Form
 
 Click a specific icon in the main form of PDC to open Management Board.
 
@@ -48,11 +48,11 @@ Click the ok button to confirm a selection. Click the filter icon to process wit
 
 You can filter displayed tasks by:
 
-- Resource,
-- Resource group,
-- Employee,
-- Manufacturing Order,
-- Status.
+- Resource
+- Resource group
+- Employee
+- Manufacturing Order
+- Status
 
 After setting desired values, you can enable or disable filtering by clicking the dedicated value:
 
@@ -78,10 +78,10 @@ You can use an icon highlighted in the screenshot below to maximize and minimize
 
 Tasks can be grouped by:
 
-- Manufacturing Order,
-- Employee,
-- Resource Group,
-- Status.
+- Manufacturing Order
+- Employee
+- Resource Group
+- Status
 
 ## Resource Tile
 
@@ -89,7 +89,7 @@ A task tile within Management Board is a graphic representation of a specific ta
 
 ![Resource Tile](./media/management-board/management-board-resource-tile.webp)
 
-1. Status icon – icon communicates one of the possible statuses of the task: set up, run, downtime. Clicking it leads to a Task Panel of a specific task. You can find more information about it here.
+1. **Status icon** – icon communicates one of the possible statuses of the task: set up, run, downtime. Clicking it leads to a Task Panel of a specific task. You can find more information about it here.
 2. Resource history – clicking it displays the history of use of the specific resource.
 
     ![Resource History](./media/management-board/management-board-resource-history.webp)
@@ -107,10 +107,10 @@ A task tile within Management Board is a graphic representation of a specific ta
 
     ![Management Board Graph](./media/management-board/management-board-graph.webp)
 
-    1. a point of 0% progress, e.g., noon in planned 12:00-14:00 work time,
-    2. a point of 100% progress, e.g., 14:00 in planned 12:00-14:00 work time,
-    3. a bar of real progress,
-    4. a bar of planned progress.
+    1. a point of 0% progress, e.g., noon in planned 12:00-14:00 work time
+    2. a point of 100% progress, e.g., 14:00 in planned 12:00-14:00 work time
+    3. a bar of real progress
+    4. a bar of planned progress
 
     **Example**:
 

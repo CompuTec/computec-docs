@@ -10,7 +10,7 @@ The purpose of this function is to filter tasks by multiple Resources.
 
 ## Requirements
 
-The option requires the use of AppEngine's MO360 plugin. Click here<!-- TODO: Link --> for more information about AppEngine and AppEngine plugin installation.
+The option requires the use of AppEngine's MO360 plugin. Click [here](/docs/appengine/plugins-user-guide/manufacturing-order-360/plugin-installation-and-configuration) for more information about AppEngine and AppEngine plugin installation.
 
 Minimal related versions:
 

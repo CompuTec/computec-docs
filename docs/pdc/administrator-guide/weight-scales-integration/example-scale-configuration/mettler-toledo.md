@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Introduction
 
-To correctly configure a weight scale, it is required to create a Template and assign it to the weight scale. Next, you must choose a work mode for the scales and assign the Template to the scale work mode.
+Creating a template and assigning it to the weight scale is essential for proper configuration. Next, you must choose a work mode for the scales and assign the Template to the scale work mode.
 
 :::note
     This section was created based on the MettlerToledoICS429 model configuration.
@@ -51,15 +51,15 @@ To correctly configure a weight scale, it is required to create a Template and a
 
 ![Mettler](./media/mettler-toledo/mettler-07.webp)
 
-## Assigning the defined Template to the weight scales
+## Assigning the Defined Template to the Weight Scales
 
     - Choose the Application option from the menu
-    - choose Straight weighing option
-    - choose Printout
-    - choose COM2
-    - choose COM2 again
-    - choose the Template name of the Template that was defined in the first step ('Template 1' in this example)
-    - click OK to save the changes.
+    - Choose Straight weighing option
+    - Choose Printout
+    - Choose COM2
+    - Choose COM2 again
+    - Choose the Template name of the Template that was defined in the first step ('Template 1' in this example)
+    - Click OK to save the changes.
 
 ![Mettler](./media/mettler-toledo/mettler-08.webp)
 
@@ -71,8 +71,8 @@ To correctly configure a weight scale, it is required to create a Template and a
 
 ![Mettler](./media/mettler-toledo/mettler-12.webp)
 
-## Set date and time format
+## Set Date and Time Format
 
 ![Mettler](./media/mettler-toledo/mettler-final.webp)
 
-Now, the weight scale is correctly configured and ready to work with CompuTec Gateway and CompuTec PDC.
+Now, the weight scale is correctly configured and is ready to work with CompuTec Gateway and CompuTec PDC.

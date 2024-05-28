@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Quality Control Test/Item Properties
 
-This option allows checking and recording Tests and Item Properties of a related Quality Control Test. To make this option available, choose the QC Test Properties option from the Task. The added button is active if there is any Quality Control Test created in ProcessForce for a specific Manufacturing Order or a specific Operation on a Manufacturing Order (you can check how to check it related ProcessForce documentation entry<!-- TODO: Link -->).
+This option allows checking and recording Tests and Item Properties of a related Quality Control Test. To make this option available, choose the QC Test Properties option from the Task. The added button is active if there is any Quality Control Test created in ProcessForce for a specific Manufacturing Order or a specific Operation on a Manufacturing Order. You can see how to check it in related [ProcessForce documentation entry](/docs/processforce/user-guide/quality-control/quality-control-test/overview#transaction)
 
 ![Quality Control](./media/quality-control-test-item-properties/quality-control.webp)
 
@@ -26,7 +26,7 @@ Related Quality Control Test document number.
 
 **Save icon** – click here after setting up all the required data and checking the lines that will be saved.
 
-**Update As icon** – changes can be saved by an employee differently than logged in. To do this, click this icon (it is required to log in then using a required employee's log in details).
+**Update As icon** – Changes can be saved by a different employee than the one currently logged in. To do this, click this icon (the required employee's login details will need to be entered).
 
 **Print icon** – CompuTec Labels related option
 

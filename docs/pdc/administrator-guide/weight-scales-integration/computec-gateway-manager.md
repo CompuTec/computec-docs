@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # CompuTec Gateway Manager
 
-Here you can find a step-by-step guide on how to configure CompuTec WeightScale manager.
+Here, you can find a step-by-step guide on how to configure CompuTec WeightScale Manager.
 
 ---
 

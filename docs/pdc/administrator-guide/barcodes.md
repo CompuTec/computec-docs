@@ -4,32 +4,32 @@ sidebar_position: 7
 
 # Barcodes
 
-Many of CompuTec PDC functions can be operated by scanning barcodes. Here you can find information on barcode scanning.
+Many of CompuTec PDC functions can be operated by scanning barcodes. Here, you can find information on barcode scanning.
 
-## General information
+## General Information
 
-### Barcodes physical attributes
+### Barcodes Physical Attributes
 
 The minimal and maximal size of supported barcodes depends on scanner attributes.
 
-CompuTec PDC supports every barcode standard as long as it is recognizable for a scanner used with the application.
+CompuTec PDC is compatible with all barcode standards, provided they are identifiable by the scanner used with the application.
 
-### USB scanners
+### USB Scanners
 
 The CompuTec PDC client can be used with USB scanners. Here is a default configuration:
 
 - scanning device adds a start text sign (Ctrl + B),
 - scanning device adds an end text sign (Ctrl + C).
 
-You can set up custom prefixes, suffixes, and group separators here.
+You can set up custom prefixes, suffixes, and group separators [here](./setting-up-the-application/overview.md#ct-labels-settings).
 
-## Barcode simulator
+## Barcode Simulator
 
 PDC Barcode Simulator was created to:
 
-- create barcodes based on the input information,
-- print created barcodes,
-- simulate barcode scanning in CompuTec PDC (for testing purposes).
+- create barcodes based on the input information
+- print created barcodes
+- simulate barcode scanning in CompuTec PDC (for testing purposes)
 
 Click to download Barcode Simulator.<!--TODO: Link -->
 
@@ -52,7 +52,7 @@ In PDC Barcode Simulator, you can scan a ready barcode to check its validity and
 
 Check the information in the next section to get to know how to create barcodes for CompuTec PDC and where in the application to use it.
 
-## Barcodes usage in CompuTec PDC
+## Barcodes Usage in CompuTec PDC
 
 ### Logging in form
 
@@ -167,7 +167,7 @@ Available barcodes:
 - (96)task_code (@CT_PF_OTRT table, Code field) – choosing a Task,
 - (253)manufacturing_order_number(97)operation_code(98)resource_code (respectively: @CT_PF_OMOR table DocNum field; @CT_PF_MOR16 table, fields: U_OprCode and U_RscCode) – adding a new Task; operation and resource codes are optional (if not in a barcode, then they have to be chosen manually).
 
-## The Issue to Production form
+## The Issue to Production Form
 
 ![Barcode](./media/barcodes/barcode.webp)
 
@@ -175,18 +175,18 @@ Available barcode:
 
 - (91)Item_code(99)item_sequence(10)batch_code(92)bin_code(95)quantity – Sequence, Batch, Bin Location, and Quantity are optional – if you do not add them, you will have to add them manually.
 
-## Weight Wizard form
+### Weight Wizard Form
 
-### Item choosing level
+#### Item Choosing Level
 
 ![Weight Wizard](./media/barcodes/weight-wizard.webp)
 
 Available barcodes:
 
-- item_code – choose an Item from the list,
-- (91)item_code(99)item_sequence(10)batch_code) – choose Item and Batch (Sequence and Batch field are optional).
+- item_code – choose an Item from the list
+- (91)item_code(99)item_sequence(10)batch_code – choose Item and Batch (Sequence and Batch field are optional).
 
-### Batch choosing level
+#### Batch Choosing Level
 
 ![Weight Wizard Batch](./media/barcodes/weight-wizard-batch.webp)
 

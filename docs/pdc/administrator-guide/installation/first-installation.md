@@ -2,12 +2,14 @@
 sidebar_position: 2
 ---
 
-# First installation
+# First Installation
 
 This document provides a step-by-step guide on how to install the CompuTec PDC application. If you are looking for information on how to upgrade the application, click [here](./application-upgrade.md).
 
 :::warning
     As of the following releases: **3.10.6.1** (related ProcessForce version: 10.0 Release 6 (R6)), **3.93.15.1** (corresponding ProcessForce version: 9.3 PL14 Release 2 (R2)) **CompuTec PDC is released as an AppEngine plugin only**.
+
+    For the AppEngine plugin configuration manual, click [here](docs/appengine/plugins-user-guide/computec-pdc-plugin)
 :::
 
 :::warning
@@ -34,5 +36,5 @@ This document provides a step-by-step guide on how to install the CompuTec PDC a
 6. The service is ready to run. You can start by clicking the shortcut created on the Windows program list.
 
 :::info
-    Remember that the application needs to be set up correctly after the installation.
+    Remember that the application needs to be [set up](../setting-up-the-application/overview.md) correctly after the installation.
 :::

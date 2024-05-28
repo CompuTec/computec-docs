@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Service Layer (CT AppEngine) installation
+# Service Layer (CT AppEngine) Installation
 
 This document provides a step-by-step guide on how to install the CompuTec Service Layer client.
 
@@ -10,7 +10,7 @@ This document provides a step-by-step guide on how to install the CompuTec Servi
 
 ## Prerequisities
 
-- configure your firewall to make the 8080 port available
+- Configure your firewall to make the 8080 port available
 - .Net Framework 4.7 is required
 
 ## Installation

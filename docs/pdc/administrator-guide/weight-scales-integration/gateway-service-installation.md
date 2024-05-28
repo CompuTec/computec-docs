@@ -10,7 +10,7 @@ This document provides a step-by-step guide on how to install the CompuTec Gatew
 
 ## Prerequisites
 
-- configure your firewall to make the 8080 port available
+- Configure your firewall to make the 8080 port available
 - .Net Framework 4.7.1 is required
 
 ## Installation

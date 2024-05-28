@@ -2,15 +2,15 @@
 sidebar_position: 2
 ---
 
-# CompuTec PDC license request
+# CompuTec PDC License Request
 
-To obtain a license file, please create a support ticket via support.computec.pl (Type: Information, Component: License request) and provide the following information:
+To obtain a license file, please create a support ticket via [support.computec.pl](https://support.computec.pl/) (Type: Information, Component: License request) and provide the following information:
 
 ## License type
 
 The destined environment:
 
-- a customer server,
+- a customer server
 - a partner internal server
 
 and the license purpose:
@@ -22,7 +22,7 @@ and the license purpose:
     By default, we generate CompuTec PDC/WMS demo/test licenses for 2 Terminals/Users.
 :::
 
-## System information
+## System Information
 
 The information needed for generating the license located on PDC/WMS LICENSING window, Import tab:
 

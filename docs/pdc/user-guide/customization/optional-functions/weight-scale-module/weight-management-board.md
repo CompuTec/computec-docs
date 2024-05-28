@@ -26,14 +26,14 @@ Checking the 'Only active documents' checkbox filters the Documents table and le
 
 ![Weighting Management Board](./media/weight-management-board/board.webp)
 
-### Documents table
+### Documents Table
 
 In this table, all weight documents are available. Right-click on a specific line opens a context menu (work only for the document in 'In Progress' status):
 
 **Continue Process** – opens [Weighting Wizard](./overview.md) for this document
 
-**Close Documen**t – closes this document
+**Close Document** – closes this document
 
 ### Document Lines
 
-In this table, the Document Lines (Items) of a document chosen in the Document table are displayed. Here user can remove a specific line or lines from the document.
+In this table, the Document Lines (Items) of a document chosen in the Document table are displayed. Here, user can remove a specific line or lines from the document.

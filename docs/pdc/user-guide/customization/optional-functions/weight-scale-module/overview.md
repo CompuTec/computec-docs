@@ -13,7 +13,7 @@ The icon coloring indicates an approximate level of completion of the issue to p
 ---
 
 :::caution
-    It is required to configure the connection to a weighing device before starting work with this module. You can check how to do this [here](../../../../administrator-guide/weight-scales-integration/overview.md).
+    It is required to configure the connection to a weighing device before starting to work with this module. You can check how to do this [here](../../../../administrator-guide/weight-scales-integration/overview.md).
 :::
 
 ## Step 1: Choosing an Item
@@ -26,7 +26,7 @@ This step displays information about the Manufacturing Order number and its fina
 
 Click Next after choosing an Item.
 
-## Step 2: Quantity window
+## Step 2: Quantity Window
 
 In this window, apart from the information from the previous step, we can also see the following quantities:
 
@@ -50,15 +50,15 @@ The lower right panel holds information on previous issues in this weigh documen
 
 The upper right panel holds information from a specific weighing device:
 
-- Zero – zeroing the scale
-- Tare – weighing a container first and excluding its weight from the final weight
-- Start/Stop – beginning and ending weighing
+- **Zero** – zeroing the scale
+- **Tare** – weighing a container first and excluding its weight from the final weight
+- **Start/Stop** – beginning and ending weighing
 - the result of weighing
-- Gross – (if the Tare option is used) combine the weight of the container and material.
+- **Gross** – (if the Tare option is used) combine the weight of the container and material.
 
 It is impossible to save weighed value if it exceeds the Remaining Quantity. It also changes its color to red in this case.
 
-Batch Available Quantity turns red if the weighed quantity exceeds its value.
+Batch Available Quantity turns red, if the weighed quantity exceeds its value.
 
 Click the Weight button to save the weighted value.
 
@@ -66,6 +66,6 @@ Click the Weight button to save the weighted value.
 
 ## Step 4: Summary
 
-In this window, a summary of the whole process. Click Finish to record an Issue to Production.
+In this window, you will find a summary of the entire process. Click "Finish" to record an issue to production.
 
 ![Step](./media/weight-scale-module/step-4.webp)

@@ -2,9 +2,9 @@
 sidebar_position: 6
 ---
 
-# Working with scales
+# Working with Scales
 
-After the successful configuration the configured devices will be available to choose from and use in Weight Scale module in CompuTec PDC:
+After the successful configuration, the configured devices will be available to choose from and use in Weight Scale module in CompuTec PDC:
 
 ![Scales](./media/working-with-scales/scales.webp)
 
