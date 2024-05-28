@@ -9,6 +9,16 @@ toc_max_heading_level: 2
 The latest Installer is available to download from [here](/docs/appengine/releases/plugins/pfi/download).
 :::
 
+## PFI 1.10.7
+
+### *Release Date - 24 May 2024*
+
+| Issue Type | Release Note | Related issue/s |
+| --- | --- | --- |
+| Bug | Fixed required data type for udf message. | - |
+| Bug | Fixed Loading Sample by key for large amount of data. | - |
+| Improvement | Import report is now available for download after import ends | - |
+
 ## PFI 1.10.6
 
 ### *Release Date - 22 April 2024*

@@ -1,5 +1,13 @@
 [
 	{
+		"version": "1.10.7",
+		"build": "1.10.7.2",
+		"release_date": "23 May 2024",
+		"minimal_pf_version": "ProcessForce 10.0 R22",
+		"minimal_ae_version": "2.10.16.8",
+		"download_url": "https://download.computec.one/software/appengine/plugins/pfi/releases/CompuTec_PFI_1.10.7.2.zip"
+	},
+	{
 		"version": "1.10.6",
 		"build": "1.10.6.2",
 		"release_date": "22 April 2024",
