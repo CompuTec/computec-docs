@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Requirements
 
+This document provides information on a system environment that CompuTec PDC requires to work properly.
+
 :::note
     CompuTec PDC requires .NET Framework to work correctly. **The minimum version of the .NET Framework** supported by CompuTec PDC **is 4.7.1**.
 
@@ -19,7 +21,7 @@ sidebar_position: 1
                 ![Prompt](./media/requirements/net-version-prompt.webp)
             2. The result will show the .NET Framework version:
 
-                ![Result](./media/requirements/net-version-result.webp)
+                ![Result](./media/requirements/net-version-result.webp)     
         </div>
     </details>
 
@@ -28,11 +30,11 @@ sidebar_position: 1
 
 ## Steps required to perform before installation of CompuTec PDC
 
-1. Install AppEngine, the CompuTec ProcessForce plugin, and the CompuTec PDC plugin in corresponding versions. <!-- TODO: Links -->
+1. Install [AppEngine](/docs/appengine/), the [CompuTec ProcessForce plugin](/docs/appengine/releases/download/processforce), and the [CompuTec PDC plugin](/docs/pdc/releases/download) in corresponding versions.
 
 2. Install SAP Crystal Reports runtime engine for .NET Framework 32-bit or 64-bit. You can install it from SAP Business One installation package -> `Client\CRRuntime or Client.x64\CRRuntime`. It is required if the user wants to open Crystal Reports directly from the application.
 
-3. Install CompuTec ProcessForce API 32-bit or 64-bit.
+3. Install CompuTec ProcessForce API 32-bit or 64-bit. You can find it [here](/docs/processforce/releases/download#computec-processforce-api)
 
 ## 2.10.20.1: Crystal Reports
 
@@ -43,7 +45,7 @@ Since this version, you need to perform the following preparation to support Cry
 - Installed SAP APIGateway Service in SLD configuration:
 
   ![SLD configuration](./media/requirements/sld-configuration.webp)
-- define an address in CompuTec PDC Settings. <!-- TODO: Link -->
+- define an address in [CompuTec PDC Settings](../setting-up-the-application/overview.md#ct-labels-settings).
 
   ![SAP B1 API Gateway](./media/requirements/pdc-settings.webp)
 

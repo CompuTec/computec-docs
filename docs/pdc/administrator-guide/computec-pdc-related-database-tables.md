@@ -2,9 +2,9 @@
 sidebar_position: 5
 ---
 
-# CompuTec PDC related database tables
+# CompuTec PDC Related Database Tables
 
-Here you can find a list of main database tables used by CompuTec PDC.
+Here, you can find a list of main database tables used by CompuTec PDC.
 
 |     |  Table name  |                      Description                      |
 | :-: | :----------: | :---------------------------------------------------: |

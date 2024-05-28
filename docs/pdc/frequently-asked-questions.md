@@ -2,15 +2,15 @@
 sidebar_position: 4
 ---
 
-# FAQ
+# Frequently Asked Questions
 
 The frequently Asked Questions section helps deal with minor problems while operating CompuTec PDC.
 
 ---
 
-Many exceptions thrown by CompuTec PDC are caused by incorrect installation or configuration. Please check the following page first: CompuTec PDC Plugin <!-- TODO: Link -->.
+Many exceptions thrown by CompuTec PDC are caused by incorrect installation or configuration. Please check the following page first: [CompuTec PDC Plugin](/docs/appengine/plugins-user-guide/computec-pdc-plugin).
 
-Here you can also find a solution for the following issues:
+Here, you can also find a solution for the following issues:
 
 ## I can not log into the company, and no message is displayed
 
@@ -31,4 +31,4 @@ Please ensure that the installed ProcessForce API is in the same version as on t
 
 ## Databases are not available from the Settings level
 
-If you are using the application with the HANA database type, be sure to meet the requirement described here in the working in the Working on HANA environment section.
+If you are using the application with the HANA database type, ensure that you meet the requirements described in the "Working in the HANA Environment" section.

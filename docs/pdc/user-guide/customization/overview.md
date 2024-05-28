@@ -13,20 +13,20 @@ There are two main ways to customize CompuTec PDC: Form Settings and Task Tile a
 ## Form Settings
 
 :::info
-    To use this option, It is required to activate it for a specific Employee on Employee Master Data. Click here to check how to do this.
+    To use this option, it is required to activate it for a specific Employee on Employee Master Data. Click here to check how to do this.
 :::
 
 Thanks to this option, you can choose which columns are displayed on the following CompuTec PDC forms:
 
 - Task Panel:
 
-  - Details section,
-  - Operation Bind,
-  - Operation Properties,
-  - Resource Properties,
+  - Details section
+  - Operation Bind
+  - Operation Properties
+  - Resource Properties
   - Item Details
-  - Tools,
-- Select Task – By Resource tab.
+  - Tools
+- Select Task – By Resource tab
 
 The option is available from the name bar of the mentioned forms. You can choose which columns are displayed on the form by checking/unchecking the check boxes of specific columns.
 

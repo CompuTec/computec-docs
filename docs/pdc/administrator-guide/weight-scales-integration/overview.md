@@ -8,11 +8,11 @@ In this section, you can check how to configure a connection between CompuTec PD
 
 ---
 
-## Weight scales connection architecture
+## Weight Scales Connection Architecture
 
 ![Architecture](./media/weight-scales-integration/weight-architecture.webp)
 
-## Configuration steps
+## Configuration Steps
 
 1. [Service Layer (CT AppEngine) installation](./service-layer-installation.md)
 2. [CompuTec Gateway Service Installation](./gateway-service-installation.md)

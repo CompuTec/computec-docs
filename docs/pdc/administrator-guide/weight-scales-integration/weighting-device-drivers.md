@@ -2,11 +2,11 @@
 sidebar_position: 7
 ---
 
-# Weighting device drivers
+# Weighting Device Drivers
 
-Here, you can find information on weighting device drivers: the ones available by default and tips on creating your own.
+Here, you can find information on weighting device drivers: the ones available by default, and tips on creating your own.
 
-## Currently supported devices
+## Currently Supported Devices
 
 Precisa:
 
@@ -28,7 +28,7 @@ The devices are available to choose from the CompuTec Gateway Manager:
 
 'CT Test Weight Scale' is a test driver that generates random weighting data for test purposes.
 
-## Custom driver creation and usage
+## Custom Driver Creation and Usage
 
 It is possible to create your driver for a device not listed in the available devices list from the previous point.
 
@@ -36,7 +36,7 @@ It is possible to create your driver for a device not listed in the available de
     If a required device is not on the list in the previous paragraph and you are unwilling or unable to create a driver, the CompuTec team can do it for you for a fee. To order such a service, please create a support ticket at [CompuTec Support](https://support.computec.pl).
 :::
 
-### A driver creation
+### A Driver Creation
 
 The following example is created using Microsoft Visual Studio.
 

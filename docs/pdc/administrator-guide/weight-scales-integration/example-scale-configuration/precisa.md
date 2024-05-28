@@ -6,7 +6,7 @@ sidebar_position: 2
 
 Here, you can find information on the configuration of Precisa devices to work with CompuTec PDC: tested devices, device configuration, Gateway configuration, etc.
 
-## Tested devices
+## Tested Devices
 
 Configuration and work with CompuTec PDC have been tested and confirmed on the following Precisa models:
 
@@ -14,7 +14,7 @@ Configuration and work with CompuTec PDC have been tested and confirmed on the f
 - Precisa BK1200D
 - Precisa XB120A
 
-## Device configuration
+## Device Configuration
 
 ### Print Format
 
@@ -37,7 +37,7 @@ Configuration and work with CompuTec PDC have been tested and confirmed on the f
 
 - Date \[DD.MM.YY\]
 
-## Configuration in CompuTec Gateway Manager
+## Configuration in [CompuTec Gateway Manager](../computec-gateway-manager.md)
 
 - Scale name – for example, “Precisa XB320M”
 - Localization – for example “MG11”
@@ -53,7 +53,7 @@ Configuration and work with CompuTec PDC have been tested and confirmed on the f
 - Data bits – the same as the device
 - Stop bits – the same as the device
 
-### Regular expression
+### Regular Expression
 
 ```regex
 Date\s*(?<DATE>[0-9]{1,2}.[0-9]{1,2}.[0-9]{4})\s*Time\s*(?<TIME>[0-9]{1,2}:[0-9]{1,2}:[0-9]{1,2}).*Serialno\s*:\s*(?<SerialNO>\d*).*N\s*:\s*[a-zA-Z]*\s*(?<minus>[-+]*)\s*[a-zA-Z]*\s*(?<NetWeight>[0-9.]*)\s*(?<Uom>(?![GT])[a-zA-Z]{1,2}).*G\s*:\s*[a-zA-Z]*\s*[-+]*\s*[a-zA-Z]*\s*(?<GrossWeight>[0-9.]*).*T\s*:\s*[a-zA-Z]*\s*[-+]*\s*[a-zA-Z]*\s*(?<Tare>[0-9.]*)

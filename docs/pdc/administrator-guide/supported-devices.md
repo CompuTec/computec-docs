@@ -2,13 +2,13 @@
 sidebar_position: 4
 ---
 
-# Supported devices
+# Supported Devices
 
 PDC can operate on any hardware device that can handle SAP Business One DI API, which includes specific:
 
-- PCs,
-- industrial computers,
-- Windows tablets.
+- PCs
+- industrial computers
+- Windows tablets
 
 Confirmed supported operating systems:
 
@@ -18,7 +18,7 @@ Confirmed supported operating systems:
     PDC does not operate on devices with the Windows RT operating system.
 :::
 
-## Recommended devices
+## Recommended Devices
 
 In this section, we will publish the names of devices on which we tested CompuTec PDC on our side, and we can recommend using it with the application.
 
