@@ -138,7 +138,7 @@ To use Copy multiple rows option, highlight more than one row (by using Shift+le
 
 ![Copy Rows](./media/scheduling-board/copy-multiple-rows.png)
 
-### Load report tab
+### Load Report Tab
 
 This tab summarizes Set Up Time, Run Time Machine, and Labor type Resources for a specific period.
 

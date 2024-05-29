@@ -14,7 +14,7 @@ CompuTec WMS requires a .NET Framework to work correctly.
 
 The minimum version of the .NET Framework supported by CompuTec WMS is 4.7.
 
-### How to check the .NET Framework version
+### How to Check the .NET Framework version
 
 1. Type in the following command in Command Prompt from Windows applications:
 
@@ -34,23 +34,55 @@ We recommend you install the latest version of .NET Framework – you can do it 
 
 ## User Defined Objects
 
-You can check how to install the CompuTec WMS objects to a database [here](./wms-server/overview.md).
+You can check, how to install the CompuTec WMS objects to a database [here](./wms-server/overview.md).
 
-### Custom Batch UDFs
+### Custom Batch User Defined Fields
 
 To correctly handle custom Batch UDFs in CompuTec WMS with ProcessForce installed, it is required to add a specific UDF to the following tables:
 
 - "OBTN" (SAP)
+
+<details>
+<summary>Click here to find out more</summary>
+<div>
+![obtn](./media/prerequisites/obtn.png)
+</div>
+</details>
+
 - "@CT_PF_OABT" (ProcessForce)
+
+<details>
+<summary>Click here to find out more</summary>
+<div>
+![obtn](./media/prerequisites/ct-pf-oabtct.png)
+</div>
+</details>
+
 - "@CT_PF_PRE2" (for picked but not receipted Batches)
+
+<details>
+<summary>Click here to find out more</summary>
+<div>
+![obtn](./media/prerequisites/ct-pf-pre2.png)
+</div>
+</details>
+
+Click [here](/docs/processforce/administrator-guide/udfs) to find out more about working with UDFs in ProcessForce.
 
 ## SAP Business One DI API
 
 CompuTec WMS Server requires SAP Business One DI API 32-bit or 64-bit (depends on CompuTec WMS version) application to work correctly.
 
-## SAP Business One user
+## SAP Business One User
 
 To operate CompuTec WMS with an SAP Business One user, it is required to log in to SAP Business One with the user and accept or decline the SAP Business One Improvement Programme message.
+
+<details>
+<summary>SAP Business One Improvement Programme Message</summary>
+<div>
+![obtn](./media/prerequisites/sap-message.png)
+</div>
+</details>
 
 ### ProcessForce License
 
@@ -58,48 +90,54 @@ When working on CompuTec WMS with ProcessForce, it is required for an SAP Busine
 
 ## Unique Serial Numbers, SAP Business One General Settings
 
-For the application to work correctly and to avoid serial numbers being duplicated, you must select Serial Number in Unique Serial Numbers by combo-box in SAP Business One General Settings, Inventory tab:
+For the application to work correctly and to avoid duplication of serial numbers, you must select "Serial Number" in the "Unique Serial Numbers by" combo box under the Inventory tab in SAP Business One General Settings:
 
 ![General Settings](./media/general-settings-unique.webp)
 
-## The inbound rule in Windows Firewall
+## The Inbound Rule in Windows Firewall
 
-CompuTec WMS Server requires a new inbound rule in Windows Firewall set for a specific port to work correctly. To get more information, see below.
+CompuTec WMS Server requires a new inbound rule in Windows Firewall set for a specific port to work correctly.
 
-1. Open: Control Panel > System and Security > Windows Firewall:
+<details>
+<summary>To get more information, see below.</summary>
+<div>
+    1. Open: Control Panel > System and Security > Windows Firewall:
 
-    ![Firewall](./media/windows-firewall-rule_a.webp)
-2. Click the _Advanced settings_:
+        ![Firewall](./media/windows-firewall-rule_a.webp)
 
-    ![Firewall - settings](./media/windows-firewall-rule_b.webp)
-3. Select _Inbound Rules_ and choose _New Rule..._ in the _Actions_ window - this runs _New Inbound Rule Wizard_:
+    2. Click the _Advanced settings_:
 
-    ![Inbound rule](./media/windows-firewall-inbond-rule.webp)
-4. Choose _Port_ as the rule type:
+        ![Firewall - settings](./media/windows-firewall-rule_b.webp)
+    3. Select _Inbound Rules_ and choose _New Rule..._ in the _Actions_ window - this runs _New Inbound Rule Wizard_:
 
-    ![Port](./media/windows-firewall-port.webp)
-5. Choose _TCP_ protocol and specify _31002_ local port:
+        ![Inbound rule](./media/windows-firewall-inbond-rule.webp)
+    4. Choose _Port_ as the rule type:
 
-    ![TCP](./media/windows-firewall-tcp.webp)
-6. Choose the _Allow the connection_ action:
+        ![Port](./media/windows-firewall-port.webp)
+    5. Choose _TCP_ protocol and specify _31002_ local port:
 
-    ![Allow the connection](./media/windows-firewall-rule_f.webp)
-7. Choose all profiles:
+        ![TCP](./media/windows-firewall-tcp.webp)
+    6. Choose the _Allow the connection_ action:
 
-    ![All Profiles](./media/windows-firewall-rule_g.webp)
-8. Specify the rule name and click "Finish":
+        ![Allow the connection](./media/windows-firewall-rule_f.webp)
+    7. Choose all profiles:
 
-    ![CompuTec License Server](./media/windows-firewall-rule_h.webp)
+        ![All Profiles](./media/windows-firewall-rule_g.webp)
+    8. Specify the rule name and click "Finish":
 
-## Anti-malware software
+        ![CompuTec License Server](./media/windows-firewall-rule_h.webp)
+</div>
+</details>
+
+## Anti-malware Software
 
 In some cases, anti-malware software may block the installation of the application. In cases like this, make a related exception in the software.
 
 ## Data Restore
 
-If CompuTec WMS is set to work on a database with ProcessForce installed and the database has been used before without ProcessForce, be sure to perform the Item Details restore procedure. Operating on Items without Item Details assigned to it, on databases with ProcessForce installed, may cause the creation of some documents impossible (with these Items on it). Click here to find out more.
+If CompuTec WMS is set to operate on a database with ProcessForce installed, and the database was previously used without ProcessForce, ensure you perform the Item Details restore procedure. Operating on items without assigned Item Details in a database with ProcessForce installed may prevent the creation of certain documents involving these items. Click [here](./sap-business-one-settings/item-details-restore.md) to find out more.
 
-## Supported database servers
+## Supported Database Servers
 
 The supported database servers are:
 
@@ -111,12 +149,12 @@ The supported database servers are:
 
 ## CompuTec ProcessForce API
 
-If ProcessForce is installed, CompuTec WMS requires CompuTec ProcessForce API 32-bit or 64-bit (depending on CompuTec WMS version) to work correctly. ProcessForce API has to be in the exact version as ProcessForce installed on the database).
+If ProcessForce is installed, CompuTec WMS requires CompuTec ProcessForce API 32-bit or 64-bit (depending on CompuTec WMS version) to work correctly. ProcessForce API has to be in the exact version as ProcessForce installed on the database.
 
-## Preparing environment: Installation order
+## Preparing Environment: Installation order
 
 :::danger
-    Please remember that installing in order other than presented below may cause problems with operating CompuTec WMS.
+    Please note that installing in an order different from the one presented below may cause issues with the operation of CompuTec WMS.
 :::
 
 ### Microsoft SQL
@@ -146,9 +184,9 @@ It is required to uninstall the CompuTec WMS Server manually (in Programs and Fe
     Both server versions cannot work simultaneously in one environment.
 :::
 
-### Custom Config and CompuTec WMS Server Settings transfer
+### Custom Config and CompuTec WMS Server Settings Transfer
 
-Upon upgrading to the 2.0 version from any lower one, transferring Custom Config and Server Settings manually is required. To do this, go to the old settings folder in the installation folder. By default, it is:
+When upgrading to version 2.0 from any previous version, you need to manually transfer the Custom Config and Server Settings. To do this, navigate to the old settings folder in the installation directory. By default, this folder is located at:
 
 `C:\Program Files\CompuTec\CompuTec WMS Server\WMSSettings_Old`
 
@@ -156,7 +194,7 @@ Go to the respective sub-folders and run old Settings and Custom Config:
 
 ![Custom Config](./media/cc-run.webp)
 
-Move manually data from the old settings to the respective fields in the currently installed ones:
+Move the data manually from the old settings to the respective fields in the currently installed ones:
 
 ![Settings](./media/wms-settings.webp)
 
