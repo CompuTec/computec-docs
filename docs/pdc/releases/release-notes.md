@@ -15,8 +15,20 @@ toc_max_heading_level: 2
 
 | Issue Type | Component/s | Release Note |  Linked issue/s\*\* |
 | --- | --- | --- | --- |
-| Bug | Downtime | PDC crashes on quick receipt | |
-| Bug | PDC | Issues with auto selection of bin location on pick receipt | |
+| Bug | Downtimes | PDC crashes on quick receipt | - |
+| Bug | PDC | Issues with auto selection of bin location on pick receipt | - |
+| Bug | PDC | Spelling mistake in "Bin Loacation" | - |
+| Bug | PDC | Post time booking error - At Least one row must be filled. | - |
+| Improvement | "Select all" and "Unselect all" option is available under close task | - |
+| Bug | PDC | Warehouse quantity is incorrect in pick receipt | - |
+| Bug | PDC | MO crystal report isnt opening in PDC | - |
+| Bug | PDC | Scaling issue in quantity time registration screen in PDC | - |
+| Improvement | Management Board | Allow user to view all the MOs in management board | - |
+| Bug | Object reference not set to an instance of an object" error on selecting substitute | 
+| Bug | PDC | Able to add times when operation is onhold/finished | - |
+| Bug | PDC | Able to start runtime even though there is advanced relation | - |
+| Bug | Downtimes | Adding downtime doesnt automatically end the existing runtime | - |
+| Bug | PDC | date format in quick time registration doesn't follow the general settings | - |
 
 ### *Release date - 11 December 2023*
 
