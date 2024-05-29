@@ -24,7 +24,7 @@ toc_max_heading_level: 2
 | Bug | PDC | MO crystal report isnt opening in PDC | - |
 | Bug | PDC | Scaling issue in quantity time registration screen in PDC | - |
 | Improvement | Management Board | Allow user to view all the MOs in management board | - |
-| Bug | Object reference not set to an instance of an object" error on selecting substitute | 
+| Bug | PDC | Object reference not set to an instance of an object" error on selecting substitute | - |
 | Bug | PDC | Able to add times when operation is onhold/finished | - |
 | Bug | PDC | Able to start runtime even though there is advanced relation | - |
 | Bug | Downtimes | Adding downtime doesnt automatically end the existing runtime | - |
