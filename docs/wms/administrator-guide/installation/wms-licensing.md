@@ -8,7 +8,7 @@ WMS licensing is based on server and terminal licenses. Here, you can find a des
 
 ---
 
-## License loading and assigning
+## License Loading and Assigning
 
 1. Start CompuTec Service Manager by clicking on its shortcut created in the Program list. The CT icon will appear in a tray. Click it to open an application.
 2. CompuTec WMS Server service is running by default after installing the CompuTec WMS Server application; if not – choose it from a drop-down list and click the "Start" button:
@@ -27,9 +27,9 @@ WMS licensing is based on server and terminal licenses. Here, you can find a des
 6. Click the 'Import' button to load a license from the file.
 7. One of the three communications will appear:
 
-    - License appears to be valid – the license is loaded from an appropriate file,
-    - License appears to be invalid – invalid license file loaded,
-    - License not found – the wrong file is loaded for a license.
+    - License appears to be valid – the license is loaded from an appropriate file
+    - License appears to be invalid – invalid license file loaded
+    - License not found – the wrong file is loaded for a license
 8. After receiving the 'License appears to be valid' communication, information about the number of days of license validity left is displayed.
 9. To use WMS, users must be established. A specific terminal user has to be assigned to a particular SAP Business One user. You can do that in the 'WMS Users' tab:
 
@@ -38,12 +38,12 @@ WMS licensing is based on server and terminal licenses. Here, you can find a des
 
     WMS Users tab columns:
 
-    1. Barcode – a barcode for a specific user can be defined here. With a barcode determined, the user will just have to scan it to log in to WMS.
-    2. Employee – a username assigned to a specific terminal user. This name is used to log in to WMS.
-    3. Password – password assigned to a specific terminal user. It is used to log in to WMS.
-    4. SAP User ID – the name of an SAP user to which a specific terminal user is assigned (many terminal users can be assigned to the same SAP User). Changes made and recorded during work with WMS are recorded in the SAP database through this user. A SAP user to which the terminal user is assigned must have at least an Indirect Access license user type.
-    5. Password – corresponding SAP password.
-    6. Is Active check box – The user can log in using data from this row if the check box is checked.
+    1. **Barcode** – a barcode for a specific user can be defined here. With a barcode determined, the user will just have to scan it to log in to WMS.
+    2. **Employee** – a username assigned to a specific terminal user. This name is used to log in to WMS.
+    3. **Password** – password assigned to a specific terminal user. It is used to log in to WMS.
+    4. **SAP User ID** – the name of an SAP user to which a specific terminal user is assigned (many terminal users can be assigned to the same SAP User). Changes made and recorded during work with WMS are recorded in the SAP database through this user. A SAP user to which the terminal user is assigned must have at least an Indirect Access license user type.
+    5. **Password** – corresponding SAP password.
+    6. **Is Active check box** – The user can log in using data from this row if the check box is checked.
 
     Click the Update button to save typed-in data.
 
@@ -60,9 +60,9 @@ WMS licensing is based on server and terminal licenses. Here, you can find a des
     Assign available licenses for newly added terminal accounts automatically. If this option is checked, when a new, not yet registered Terminal is calling, it will be automatically assigned if there is a free (not assigned) license.
 13. Two values are communicated on this tab:
 
-    - Total Number of Licenses – number of licenses loaded from a file,
-    - Available Licenses – number of licenses not assigned to any of terminals.
-14. Choose a desired terminal from the list, check the checkbox to assign a license, and click the "Update" button. Note that the "Number of Available Licenses" decreases after that because of starting to use one of them.
+    - **Total Number of Licenses** – number of licenses loaded from a file
+    - **Available Licenses** – number of licenses not assigned to any of terminals
+14. Choose a desired terminal from the list, check the checkbox to assign a license, and click the "Update" button. Note that the "Number of Available Licenses" decreases after this action, as one of the licenses will be in use.
 
     ![License Management Update](./media/license-management-update.webp)
 15. Go to the Plugins tab and do the same for the newly appeared row there (which represents CompuTec WMS Server):

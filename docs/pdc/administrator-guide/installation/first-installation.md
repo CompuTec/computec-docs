@@ -9,7 +9,7 @@ This document provides a step-by-step guide on how to install the CompuTec PDC a
 :::warning
     As of the following releases: **3.10.6.1** (related ProcessForce version: 10.0 Release 6 (R6)), **3.93.15.1** (corresponding ProcessForce version: 9.3 PL14 Release 2 (R2)) **CompuTec PDC is released as an AppEngine plugin only**.
 
-    For the AppEngine plugin configuration manual, click [here](docs/appengine/plugins-user-guide/computec-pdc-plugin)
+    For the AppEngine plugin configuration manual, click [here](/docs/appengine/plugins-user-guide/computec-pdc-plugin)
 :::
 
 :::warning

@@ -6,7 +6,7 @@ sidebar_position: 2
 
 CompuTec WMS supports the SSL protocol.
 
-SSL (Secure Socket Layer) - a protocol to securely transfer encrypted data. The protocol works in server-client architecture; its primary function is to verify a server to which a client tries to connect.
+SSL (Secure Socket Layer) - is a protocol to securely transfer encrypted data. The protocol works in server-client architecture. Its primary function is to verify a server to which a client tries to connect.
 
 ---
 
@@ -23,7 +23,7 @@ SSL (Secure Socket Layer) - a protocol to securely transfer encrypted data. The 
 
 In CompuTec WMS Client settings, choose the required port:
 
-1. without SSL, HTTP (no changes):
+1. Without SSL, HTTP (no changes):
 
     ![Server Choosing](./media/server-choosing.webp)
 2. With SSL (add HTTPS and change the port):
