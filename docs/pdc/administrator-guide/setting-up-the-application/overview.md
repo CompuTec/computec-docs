@@ -65,7 +65,7 @@ Enter the required data in a new window.
 2. Type in SAP Business One user ID of a chosen database. The user has to have at least an Indirect Access SAP B1 license assigned and a ProcessForce license.
 3. Type in SAP Business One password of a chosen database.
 4. When you type in the server address, the list of available companies (databases) fills itself automatically. Choose a required company from the drop-down list (click the Get all databases button to refresh the list of companies).
-5. Type in the database username and password (needed only to open a preview of Bill of Materials and Manufacturing Orders in Crystal Report form). If these data are not set up, the application asks for authentication to open a preview. [Here](../setting-up-the-application/sap-hana-user-other-than-system.md) you can check how to set up a database user other than SYSTEM.
+5. Type in the database username and password (needed only to open a preview of Bill of Materials and Manufacturing Orders in Crystal Report form). If these data are not set up, the application asks for authentication to open a preview. [Here](./sap-hana-database.md) you can check how to set up a database user other than SYSTEM.
 6. <!-- TODO: Figure out what to do with it -->
 7. You can choose [predefined settings](./pdc-settings/overview.md) from a drop-down list. The Get Settings button fills up the drop-down list with values from the related database.
 8. After filling in all settings fields and clicking Save on every next run, the application will automatically connect with the given data when this check box is checked.
