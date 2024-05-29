@@ -16,6 +16,7 @@ toc_max_heading_level: 2
 | Issue Type | Component/s | Release Note |  Linked issue/s\*\* |
 | --- | --- | --- | --- |
 | Bug | Downtime | PDC crashes on quick receipt | |
+| Bug | PDC | Issues with auto selection of bin location on pick receipt | |
 
 ### *Release date - 11 December 2023*
 
