@@ -9,6 +9,16 @@ toc_max_heading_level: 2
     Installer is ready to download from [here](/docs/pdc/releases/download/).
 :::
 
+## CompuTec PDC 3.10.22.1
+
+### *Release date - 29 May 2024*
+
+| Issue Type | Component/s | Release Note |  Linked issue/s\*\* |
+| --- | --- | --- | --- |
+| Bug | Downtime | PDC crashes on quick receipt | |
+
+### *Release date - 11 December 2023*
+
 ## CompuTec PDC 3.10.21.1
 
 ### *Release date - 11 December 2023*

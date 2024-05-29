@@ -8,7 +8,7 @@ sidebar_position: 4
     The following forms are available after the installation of CompuTec WMS.
 :::
 
-## Storage Unit form
+## Storage Unit Form
 
 :::info Path
     Main Menu → Stock Management → Storage Unit
@@ -16,7 +16,7 @@ sidebar_position: 4
 
 All storage units created using WMS can be viewed in this form, along with their details.
 
-## Inventory Register form
+## Inventory Register Form
 
 :::info Path
     Main Menu → Stock Management → Stock Transactions → Inventory Register

@@ -15,21 +15,21 @@ Here, you can find a manual for installing and configuring the Android version o
 
     `http://[server address]:31002/api/Test/Get`
 
-    Instead of this element: [server address], put a proper CompuTec WMS Server address.
+    Instead of this element: [server address], enter a proper CompuTec WMS Server address.
 
     ![Check](./media/check-server-connection.webp)
 
-    In the picture above, you can see a proper response. If you get any other response, please get in touch with your network administrator to request a change of the server settings / the network settings/firewall settings to provide proper access.
+   In the image above, you can see an appropriate response. If you receive any other response, please contact your network administrator to request adjustments to the server settings, network settings, or firewall settings to ensure proper access.
 - the devices must have enabled an option to install .APK files from external sources. This setting is usually available as a single setting in the security settings or as permission to install applications from external sources for a specific application, e.g., file managers or a browser.
   
     An example permission setting:
 
     ![Permission](./media/permission.webp)
 
-### Tested devices
+### Tested Devices
 
 :::note
-    This is not a complete list of supported devices. All devices that meet the requirements from the previous section should support CompuTec WMS in the Android version. However, the following devices have been tested, and the proper work of the CompuTec WMS Client has been confirmed on them.
+    This is not a complete list of supported devices. Any device that meets the requirements outlined in the previous section should support CompuTec WMS for Android. However, the following devices have been tested and confirmed to work properly with the CompuTec WMS Client.
 :::
 
 The Android version of CompuTec WMS has been tested on the following:

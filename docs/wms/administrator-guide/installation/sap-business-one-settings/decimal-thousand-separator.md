@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# Decimal/Thousand separator
+# Decimal/Thousand Separator
 
-## Desktop client
+## Desktop Client
 
 Decimal/thousands separators in CompuTec WMS, desktop client, are taken from SAP Business One settings (Administration, General Settings, Display tab, Decimal Places (0..6)), except the fields in which the user set quantity (in these cases it is taken from the regional settings of a PC).
 

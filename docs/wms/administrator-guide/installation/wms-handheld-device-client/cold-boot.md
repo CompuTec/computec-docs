@@ -23,34 +23,36 @@ To avoid erasing CompuTec WMS and its configuration from the device on cold boot
 5. Change the installer name to "CompuTecWMSClientWindowsCE_93.CAB".
 
 If installation of .NET Compact Framework is required for a specific device, the following steps have to be performed:
-
+<details>
+    <summary>Click here to find out more</summary>
+    <div>
 :::info
     .NET Compact Framework availability depends on a device specification, e.g., devices with Windows CE 5.0 system must manually install .NET Compact Framework. Devices with CE 7.0 have the functionality installed by default.
 :::
+    </div>
+    </details>
 
 1. Download .NET Compact Framework from here.
 2. Place it in the `\application\` location on the device.
 3. Add the following line to `wms.CPY` file:
-
-    ```text
-    \application\NETCFv35.wce.armv4  > \windows\NETCFv35.wce.armv4
-    ```
+        ```text
+        \application\NETCFv35.wce.armv4  > \windows\NETCFv35.wce.armv4
+        ```
 
 4. Add the following lines to the `wms.reg` file:
-
-    ```text
-    [HKEY_CURRENT_USER\Software\Symbol\Startup\Programs\Prog12]
-    "Name"="\windows\wceload.exe"
-    "Command"="\Windows\NETCFv35.wce.armv4"
-    "Continue"=dword:0
-    "ColdBootOnly"=dword:1
-    ```
+        ```text
+        [HKEY_CURRENT_USER\Software\Symbol\Startup\Programs\Prog12]
+        "Name"="\windows\wceload.exe"
+        "Command"="\Windows\NETCFv35.wce.armv4"
+        "Continue"=dword:0
+        "ColdBootOnly"=dword:1
+        ```
 
 To keep CompuTec WMS configuration available after a cold boot, perform the following steps:
 
 1. After configuring CompuTec WMS, copy the app.config file from the `\Program Files\CompuTec WMS 1.0.0` location to the `\application\` location.
-2. Add the following line to wms.CPY file:
 
-    ```text
-    \application\app.config > \Program Files\CompuTec WMS 1.0.0\app.config
-    ```
+2. Add the following line to wms.CPY file:
+        ```text
+        \application\app.config > \Program Files\CompuTec WMS 1.0.0\app.config
+        ```

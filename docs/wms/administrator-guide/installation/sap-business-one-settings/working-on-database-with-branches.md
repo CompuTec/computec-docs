@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Working on database with branches
+# Working on Database with Branches
 
 To be able to work with CompuTec WMS on a database with branches, the following steps are required to be performed:
 
