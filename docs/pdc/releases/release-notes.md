@@ -6,7 +6,7 @@ toc_max_heading_level: 2
 # Release Notes
 
 :::info
-    Installer is ready to download from [here](/docs/pdc/releases/download/).
+    Installer is ready to download from [here](/docs/appengine/releases/download/pdc).
 :::
 
 ## CompuTec PDC 3.10.22.1
@@ -19,7 +19,7 @@ toc_max_heading_level: 2
 | Bug | PDC | Issues with auto selection of bin location on pick receipt | - |
 | Bug | PDC | Spelling mistake in "Bin Loacation" | - |
 | Bug | PDC | Post time booking error - At Least one row must be filled. | - |
-| Improvement | "Select all" and "Unselect all" option is available under close task | - |
+| Improvement | PDC | "Select all" and "Unselect all" option is available under close task | - |
 | Bug | PDC | Warehouse quantity is incorrect in pick receipt | - |
 | Bug | PDC | MO crystal report isnt opening in PDC | - |
 | Bug | PDC | Scaling issue in quantity time registration screen in PDC | - |
