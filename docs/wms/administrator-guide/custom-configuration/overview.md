@@ -31,3 +31,5 @@ Custom Configuration allows adjusting each transaction's workflow to specific ne
 - Logging in opens the Custom Configuration window:
 
     ![Custom Configuration](./media/custom-configuration-main-form.webp)
+
+- Click [here](./custom-configuration-functions/) to check a description of each option.
