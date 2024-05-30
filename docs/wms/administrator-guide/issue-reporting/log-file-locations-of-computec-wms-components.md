@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Log file locations of CompuTec WMS components
+# Log file locations of CompuTec WMS Components
 
 |            Component             |                                                                  Default path                                                                  |
 | :------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -14,8 +14,14 @@ sidebar_position: 2
 
 You can check Windows Event Viewer logs if you cannot find adequate files in the above locations.
 
-![Event Viewer](./media/event-viewer.webp)
+    <details>
+    <summary>Click here to find out more</summary>
+    <div>
+    You can find information about an error in two locations (highlighted in screenshots below):
+    ![Event Viewer](./media/event-viewer.webp)
 
-If there is an error connecting to the CompuTec application, click its row, copy data from the main window and paste it into the support issue.
+    If there is an error connecting to the CompuTec application, click its row, copy data from the main window and paste it into the support issue.
 
-![Event Viewer](./media/event-viewer-computec.webp)
+    ![Event Viewer](./media/event-viewer-computec.webp)
+    </div>
+    </details>

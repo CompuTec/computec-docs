@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 # Weight Scale Configuration Manager
@@ -25,14 +25,14 @@ This document provides a step-by-step guide on how to configure CompuTec WeightS
     ![Add](./media/gate1.webp)
 4. Available Scales tab columns:
 
-    - Id - Unique identifier of the scale (automatically generated)
-    - Scale name - name of the weight (eg manufacturer)
-    - Localization - location of our device
-    - Barcode - bar code or serial number of weight
-    - Tolerance - weight tolerance
-    - Range From - weighing range (start)
-    - Range To - weighing range (end)
-    - Session Life Time - inactive session time (seconds).
+    - **Id** - Unique identifier of the scale (automatically generated)
+    - **Scale name** - name of the weight (eg manufacturer)
+    - **Localization** - location of our device
+    - **Barcode** - bar code or serial number of weight
+    - **Tolerance** - weight tolerance
+    - **Range From** - weighing range (start)
+    - **Range To** - weighing range (end)
+    - **Session Life Time** - inactive session time (seconds).
 
     ![Labels](./media/gate2.webp)
 5. Now click on the scales identifier. As you can see the setup window opened in the Parameters tab.

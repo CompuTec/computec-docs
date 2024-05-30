@@ -2,16 +2,16 @@
 sidebar_position: 4
 ---
 
-# Supported devices
+# Supported Devices
 
 Here, you can find information on which CompuTec WMS supports operating systems and devices.
 
 ---
 
-## General requirements
+## General Requirements
 
 :::danger
-    Please remember that some models listed on this page are produced in some variants. Currently, CompuTec WMS supports only devices with a touchscreen.
+    Please remember that some models listed on this page are produced in some variants. **Currently, CompuTec WMS supports only devices with a touchscreen**.
 :::
 
 ### CompuTec WMS 2.0
@@ -22,11 +22,11 @@ Here, you can find information on which CompuTec WMS supports operating systems 
 | CPU   | 800Mhz                                                   | more than 800Mhz, multiple cores                         |
 | Sstem | Windows CE 6.0 or higher or Windows Mobile 5.0 or higher | Windows CE 6.0 or higher or Windows Mobile 5.0 or higher |
 
-## Supported screen sizes
+## Supported Screen Sizes
 
 The minimum supported screen size is 240px on the shortest side of the screen.
 
-## Supported operating systems
+## Supported Operating Systems
 
 ### Microsoft Windows
 
@@ -45,7 +45,7 @@ The minimum supported screen size is 240px on the shortest side of the screen.
 
 Click [here](./computec-wms-android-version.md) for more information.
 
-## Barcode scanners connected to the computer
+## Barcode Scanners Connected to the Computer
 
 CompuTec WMS works with most USB and Bluetooth scanners connected to a computer; one crucial requirement is the availability to program the scanner for GS-1 barcode support (recommended) or to program it to add start/end of text sign.
 
@@ -56,14 +56,14 @@ Examples:
 - Honeywell Granit 1981i – Bluetooth scanner
 - Intermec SR61 – Bluetooth scanner
 
-## Supported mobile handheld devices
+## Supported Mobile Handheld Devices
 
-### Motorola / Symbol / Zebra devices
+### Motorola / Symbol / Zebra Devices
 
 - MC9200 family.
 - Motorola MC65 – previously recommended by our consults – is no longer supported by the producer.
 
-### Recommended devices
+### Recommended Devices
 
 Although CompuTec WMS supports a wide range of devices, during several implementations, we developed a reliable model of device-system combination that we usually recommend to our partners and customers.
 

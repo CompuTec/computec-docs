@@ -2,6 +2,10 @@
 sidebar_position: 5
 ---
 
-# Supported network architecture
+# Supported Network Architecture
+
+CompuTec WMS can work in many types of network environment, here you can learn about some of them.
+
+If you have any questions please post them in comments to this page, below page content.
 
 ![CompuTec WMS Architecture](./media/wms-architecture.webp)

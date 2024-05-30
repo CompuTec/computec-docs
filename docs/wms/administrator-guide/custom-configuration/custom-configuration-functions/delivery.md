@@ -7,20 +7,54 @@ sidebar_position: 4
 ![Delivery](./media/cc-delivery.webp)
 
 **Delivery Workflow** allows you to choose one of three workflows for Pick Lists: Default, Customer-Date, or Date-Customer.
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
+    **Main Document Workflow**
+    ![Main Document Workflow](./media/return/main-document-workflow-01.PNG)
+
+    **Item Details Workflow**
+    ![Item Details Workflow](./media/return/item-details-workflow-01.PNG)
+    </div>
+    </details>
 
 **Scanned SU validation** – three options: 'Match selected Warehouse,' 'Match any base document, Line,' 'No validation.'
 
 When "Match selected warehouse" is selected, it will block adding Storage Units with a different warehouse than set on the document - for example, when a new, empty Delivery document is created, and a warehouse needs to be chosen.
 
 However, when a user creates a Delivery document from a base document, for example, Sales Order, there is no warehouse selection. Thus this option will not have any effect.
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
+    Match any base document Line.
+        ![Document Details](./media/document-details-04.png) ![Document Details](./media/document-details-05.png)
+        ![Storage Unit](./media/storage-unit-01.png) ![Storage Unit](./media/storage-unit-02.png)
+
+    Match selected Warehouse
+        ![Document Details](./media/document-details-06.png) ![Document Details](./media/document-details-07.png)
+        ![Storage Unit](./media/storage-unit-03.png) ![Storage Unit](./media/storage-unit-04.png)
+    </div>
+    </details>
 
 **Show Project selection** – Choosing this option causes displaying a window with Project selection before the Remarks window during the transaction.
 
 **Default project** – choose a project that will be assigned to the document by default.
 
 **Enable saving to drafts** – checking this option causes saving transactions as a draft document.
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
+    ![Delivery Remarks](./media/delivery-remarks-01.png)
+    </div>
+    </details>
 
 **Enable saving documents when drafts ON** – checking this option causes saving the transaction as a document or a document draft.
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
+    ![Delivery Remarks](./media/delivery-remarks.png)
+    </div>
+    </details>
 
 **Scan DocNum on Base Document select workflow** – if the option is checked, it is possible to scan DocNum on a Base Document selection form (instead of DocEntry)
 

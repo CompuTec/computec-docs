@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# RDP connection between Android System and WMS Client for ZEBRA MC330K
+# RDP Connection between Android System and WMS Client for ZEBRA MC330K
 
-1. Download [the Bluestacks application](https://www.wikihow.com/Download-Application-from-Google-Play-to-PC)
+1. Download the [Bluestacks application](https://www.wikihow.com/Download-Application-from-Google-Play-to-PC)
 
     ![Bluestacks](./media/bluestacks.webp)
 2. Open [Google Play Store](https://play.google.com/store).

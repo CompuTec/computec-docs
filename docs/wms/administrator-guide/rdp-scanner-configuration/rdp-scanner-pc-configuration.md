@@ -60,9 +60,13 @@ Click the Running Button on YES → STATUS: Ready.
 
 Click Basic Configuration, then Basic Format:
 
+![Basic Format](./media/basic.jpg)
+
 Prefix to data → Set \u0002 → Save
 
 Suffix to data → Set \u0003 → Save
+
+![Prefix and Suffix](./media/pref_suf.jpg)
 
 Save and Close.
 
@@ -90,11 +94,11 @@ Set the User and Password of the PC.
 
 ![IP](./media/ce.webp)
 
-## DataWedge Scanning configuration(PickList Mode)
+## DataWedge Scanning Configuration(PickList Mode)
 
 [Enable Picklist Mode](https://supportcommunity.zebra.com/s/article/Enable-Picklist-mode?language=en_US)
 
-DataWedge for Windows:
+**DataWedge for Windows**:
 
     - Open the DataWedge setting.
     - Tap Basic configuration.

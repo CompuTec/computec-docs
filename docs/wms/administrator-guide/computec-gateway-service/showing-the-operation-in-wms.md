@@ -1,8 +1,8 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 
-# Showing the operation in WMS
+# Showing the Operation in WMS
 
 - We create goods receipt PO
 - We choose a warehouse
