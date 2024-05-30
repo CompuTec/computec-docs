@@ -31,9 +31,9 @@ This document provides a step-by-step guide on configuring the CompuTec WeightSc
     ![Add](./media/lab3.webp)
 5. Available Printers tab columns:
 
-    - Id - Unique identifier of the scale (automatically generated)
-    - Printer name - the name of the printer (e.g., manufacturer)
-    - Localization - location of our device.
+    - **Id** - Unique identifier of the scale (automatically generated)
+    - **Printer name** - the name of the printer (e.g., manufacturer)
+    - **Localization** - location of our device.
 
     ![Numbers](./media/lab4.webp)
 6. Now click on the printer identifier. As you can see, the setup window opened in the Parameters tab.
@@ -54,8 +54,8 @@ This document provides a step-by-step guide on configuring the CompuTec WeightSc
         ![Parameters](./media/lab9.webp)
     4. ZebraDriver - We can set up the Physical Name and CodePage format.
 
-        ![Parameters](./media/lab10.webp)
 8. Now, we can save the configuration and make a test of the printer. Remember to put the Web Address. (We must put the IP address or Machine name where the Service Layer was installed).
+        ![Parameters](./media/lab10.webp)
 
     We can change/set the Port number in C:\Program Files\CompuTec\CompuTec Service Layer\CompuTec.ServiceLayer.Host.WindowsService.exe
 

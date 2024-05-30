@@ -16,19 +16,19 @@ toc_max_heading_level: 2
 | Issue Type | Component/s | Release Note |  Linked issue/s\*\* |
 | --- | --- | --- | --- |
 | Bug | Downtimes | PDC crashes on quick receipt | - |
-| Bug | PDC | Issues with auto selection of bin location on pick receipt | - |
-| Bug | PDC | Spelling mistake in "Bin Loacation" | - |
-| Bug | PDC | Post time booking error - At Least one row must be filled. | - |
-| Improvement | PDC | "Select all" and "Unselect all" option is available under close task | - |
-| Bug | PDC | Warehouse quantity is incorrect in pick receipt | - |
-| Bug | PDC | MO crystal report isnt opening in PDC | - |
-| Bug | PDC | Scaling issue in quantity time registration screen in PDC | - |
-| Improvement | Management Board | Allow user to view all the MOs in management board | - |
-| Bug | PDC | Object reference not set to an instance of an object" error on selecting substitute | - |
-| Bug | PDC | Able to add times when operation is onhold/finished | - |
+| Bug | PDC | Issues with auto selection of bin location on pick receipt | SPDC - 854 |
+| Bug | PDC | Spelling mistake in "Bin Loacation" | SPDC - 869 |
+| Bug | PDC | Post time booking error - At Least one row must be filled. | SPDC - 868 |
+| Improvement | PDC | "Select all" and "Unselect all" option is available under close task | SPDC - 868 |
+| Bug | PDC | Warehouse quantity is incorrect in pick receipt | SPDC - 872 |
+| Bug | PDC | MO crystal report is not opening in PDC | SPDC - 861 |
+| Bug | PDC | Scaling issue in quantity time registration screen in PDC | SPDC - 774 |
+| Improvement | Management Board | Allow user to view all the MOs in management board | SPDC - 851 |
+| Bug | PDC | Object reference not set to an instance of an object" error on selecting substitute | SPDC - 852 |
+| Bug | PDC | Able to add times when operation is onhold/finished | SPDC - 842 |
 | Bug | PDC | Able to start runtime even though there is advanced relation | - |
 | Bug | Downtimes | Adding downtime doesnt automatically end the existing runtime | - |
-| Bug | PDC | date format in quick time registration doesn't follow the general settings | - |
+| Bug | PDC | Date format in quick time registration does not follow the general settings | - |
 
 ### *Release date - 11 December 2023*
 

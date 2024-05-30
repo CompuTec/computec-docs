@@ -22,7 +22,25 @@ sidebar_position: 15
 
 **Set Storage Unit default action and Skip Storage Unit options** – after selecting a line, Storage Unit options are displayed, allowing a user to create storage units or continue packing the last created one. Selecting a default action, "New SU" or "New SU Each Pick," will automatically skip displaying Storage Unit options.
 
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
+    After selecting a line, Storage Unit options allow users to create storage units or continue packing the last created one.
+
+    Selecting a default action, either "New SU" or "New SU Each Pick" will automatically skip displaying Storage Unit options.
+
+        ![Storage Unit](./media/production/storage-unit.png)
+    </div>
+    </details>
+
 **Show extra field on Pick Batch Workflow** – displays an extra field on selecting batch if and only if the SQL query was provided after pressing the "Load" button:
+
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
+    ![Extra Field](./media/production/extra-field.png)
+    </div>
+    </details>
 
 **Copy available quantity to Quantity box** – copies remaining quantity to the quantity box.
 
@@ -42,6 +60,37 @@ sidebar_position: 15
 
 **Return to the Document Details window after item receipt.** When an item is picked/added, instead of staying on the "Quantity" window, the application will redirect back to the main document window.
 
+<details>
+<summary>Do not create Goods Receipt at the end of the transaction</summary>
+<div>
+
+Pressing the Save to DB button on the "Remarks" window will not create a Goods Receipt document – allowing to create such a document from the SAP Business One level.
+    ![Remarks Wndow](./media/production/remarks-window.png)
+
+Enabling this option will disable the possibility of creating Storage Units on the Pick Receipt transaction, as creating the Goods Receipt document in SAP B1 will lead to a loss of information about the Storage Units. The Storage Units Options window will also be skipped.
+</div>
+</details>
+
+<details>
+<summary>Enable Receipt From Production only on data entry level</summary>
+<div>
+
+To create a Receipt From Production, i.e., a Goods Receipt document, the user has to enter the line and then press the right arrow to enter the Remarks window:
+
+    ![Receipt from Production](./media/production/receipt-from-production.PNG)
+</div>
+</details>
+
+<details>
+<summary>Enable select Employee</summary>
+<div>
+
+When the checkbox is checked:
+
+    ![Select Employee](./media/production/select-employee.PNG)
+</div>
+</details>
+
 ## PF Pick Order tab
 
 ![Pick Order](./media/custom-configuration-after-scanning.webp)
@@ -53,6 +102,13 @@ sidebar_position: 15
 **Copy available quantities to the Quantity box in Pick Order** – copies remaining quantity to the quantity box.
 
 **Enable Substitutes Items in Pick Order** – the option allows use in Pick Order. The option can be deactivated when not needed.
+
+    <details>
+    <summary>Block creation of new Pick Orders</summary>
+    <div>
+    ![Pick Order](./media/production/pick-order.PNG)
+    </div>
+    </details>
 
 **Scan DocNum on Base Document** – on selecting a Pick Order or Manufacturing Order window; scanning will work by DocNum instead of DocEntry.
 

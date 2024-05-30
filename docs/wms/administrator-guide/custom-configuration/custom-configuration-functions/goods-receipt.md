@@ -14,13 +14,49 @@ sidebar_position: 2
 
 **Enable saving to drafts** – allows saving documents as document drafts.
 
+    <details>
+    <div>
+    <summary>Click here to expand</summary>
+
+    By default, this option is turned off. In this case, the Remarks windows look like this:
+        ![Draft](./media/goods-receipt/remarks.png)
+
+    
+    When the option is turned on, a new option is added (highlighted in the screenshot below):
+        ![Draft](./media/goods-receipt/remarks-04.png)
+    </div>
+    </details>
+
 **Enable saving documents when drafts ON** – allows deciding on the Remarks form whether to save a transaction as a document or a document draft.
+
+    <details>
+    <div>
+    <summary>Click here to expand</summary>
+
+    When the option is checked, two function buttons are available:
+        ![Draft](./media/goods-receipt/draft.png)
+    </div>
+    </details>
 
 **Force manual quantity confirmation** – with this option checked, it is required to manually confirm previously set up quantity (scanning a barcode does not confirm it automatically)
 
 **Enable adding Items from multiple Warehouses** – if the option is checked, adding Items from different Warehouses is possible, and the Warehouse window will be displayed during the transaction.
 
+    <details>
+    <div>
+    <summary>Click here to expand</summary>
+    ![Document Details](./media/goods-receipt/document-details-02.png) ![Warehouse](./media/goods-receipt/warehouse-02.png)
+    </div>
+    </details>
+
 **Enable adding Items with empty Bin Code field** – it allows to add Items without Bin Code to a Warehouse with Bin Locations. An Item with an empty Bin Code will be assigned to the first available bin if enabled.
+
+    <details>
+    <div>
+    <summary>Click here to expand</summary>
+        ![Warehouse](./media/goods-receipt/warehouse-01.png) ![Supplier Selection](./media/goods-receipt/supplier-selection.png) ![Document Details](./media/goods-receipt/document-details-01.png) ![New Item](./media/goods-receipt/new-item.png) ![Quantity](./media/goods-receipt/quantity-02.png)
+    </div>
+    </details>
 
 **Show Cost Dimensions** – checking this checkbox adds a button (next to the Back button) on the Quantity form that leads to the Cost Dimensions form.
 

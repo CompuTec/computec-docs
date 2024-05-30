@@ -8,11 +8,11 @@ WMS Translator is an IT solution that allows you to translate CompuTec WMS easil
 
 ---
 
-:::note
+:::caution
     If you have created a translation for a specific language, we suggest you send the files to us to incorporate in the next installer. Otherwise, the language will get back to default after an upgrade.
 :::
 
-## WMS Translator address
+## WMS Translator Address
 
 URL address: [https://translate.processforce.eu:4433](https://translate.processforce.eu:4433)
 
@@ -22,7 +22,7 @@ Log in using credentials provided by CompuTec.
 
 ![Log in](./media/wms-translator-log-in.webp)
 
-## Home page
+## Home Page
 
 ![Translator](./media/translator-wms.webp)
 
@@ -40,11 +40,18 @@ You can download the translation for the selected language. You can update your 
 
 To swap downloaded language files with the ones in your WMS Server and Client installation folders, you have to copy translation files to two folders:
 
-- A file with a longer name:
+    <details>
+    <summary>Click here to find out more</summary>
+    <div>
+    - A file with a longer name:
 
-    ![Translation file](./media/server_transl.webp)
+        ![Translation file](./media/server_transl.webp)
 
-    (Or the same path with the Program Files folder, instead of Program Files (x86), in case of using a 64-bit version of the application)
-- A file with a shorter name:
+        (Or the same path with the Program Files folder, instead of Program Files (x86), in case of using a 64-bit version of the application)
 
-    ![Client](./media/client_transl.webp)
+    - A file with a shorter name:
+
+        ![Client](./media/client_transl.webp)
+
+    </div>
+    </details>

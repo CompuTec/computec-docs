@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# SU
+# Storage Unit
 
 ![SU](./media/cc-su.webp)
 

@@ -8,7 +8,7 @@ sidebar_position: 2
 
 First, install a remote desktop application (We recommend using Microsoft Remote Desktop, which is used in this tutorial, but it is possible to use other applications of this kind).
 
-If the device has a default Google Play store application installed, download and install the remote desktop application using Google Play: download.
+If the device has a default Google Play store application installed, download and install the remote desktop application using Google Play: [download](https://play.google.com/store/apps/details?id=com.microsoft.rdc.android).
 
 If the device does not have the Google Play store installed, download it manually and install it. To do this, click this link. Then, put this link on the website: [https://play.google.com/store/apps/details?id=com.microsoft.rdc.android](https://play.google.com/store/apps/details?id=com.microsoft.rdc.android), generate a file, and download the APK file.
 
@@ -32,7 +32,7 @@ Now, it is required to set up a connection to the remote desktop. Click the + ic
 
 ![RD](./media/rd-client-2.webp)
 
-## DataWedge configuration
+## DataWedge Configuration
 
 This section lets you check how to configure DataWedge for Zebra devices. It is required to pass scanned values to the CompuTec WMS Client.
 
@@ -63,9 +63,12 @@ Click the + icon and add a new action. Choose char from the list. Do it again (t
 
 Click each row to set it up. It is recommended to set up 05 for prefixes and 03 for suffixes.
 
+![Prefix](./media/prefix.png)
+![Suffix](./media/suffix.jpg)
+
 Close DataWedge.
 
-## CompuTec WMS Client configuration
+## CompuTec WMS Client Configuration
 
 Run the remote desktop application, log in, and run CompuTec WMS.
 

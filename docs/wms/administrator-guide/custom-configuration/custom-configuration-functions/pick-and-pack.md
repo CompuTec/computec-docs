@@ -7,8 +7,28 @@ sidebar_position: 5
 ![Pick and Pack](./media/cc-pick-and-pack.webp)
 
 **Pick and Pack Workflow** - you can choose the order of data entering. Available options: Default Workflow, Customer-Date Workflow, Date-Customer Workflow.
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
+    **Customer Date Workflow**
+        ![Customer Date Workflow](./media/customer-date-workflow.PNG)
+    **Date-Customer WorkFlow**
+        ![Date-Customer WorkFlow](./media/date-customer-workflow.PNG)
+    **Default Workflow**
+        ![Default Workflow](./media/default-workflow.png)
+    </div>
+    </details>
 
 **Update all picked content on transaction completion** – all chosen during transaction information is saved on saving a transaction (the data selected from during the transaction is not held until clicking the save button at the end of the transaction).
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
+    **Before marked**
+        ![Before Marked](./media/before-marked.png)
+    **After marked**
+        ![After Marked](./media/after-marked.png)
+    </div>
+    </details>
 
 **Enable adding Item Details when Warehouse has Bin Locations** – allows adding Item details when in a Warehouse receipt, Bin locations are defined.
 

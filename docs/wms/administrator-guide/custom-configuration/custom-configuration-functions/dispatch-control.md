@@ -23,12 +23,24 @@ sidebar_position: 6
 **Don't check Item when Package Number Not Filled Up** – when this checkbox is checked, a row is not checked if a number of packaging is incomplete.
 
 **Check Quantity** – checks quantity by scanning a barcode. Moving to another step is impossible if the correct quantity is not scanned. If a user makes a mistake, they must click the x button and start counting again. Putting the amount manually is impossible; it works only by scanning.
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
+    ![Check Quantity](./media/check-quantity.PNG)
+    </div>
+    </details>
 
 **Enable scanning by Item** – allows to scan by Item (applicable if Batches do not manage an Item)
 
 **Use Oddete Scanner BarCode when scanning Business PartNumber** – allows adjusting Batch number scanning if Business Partner is using Odette standard.
 
 **No. of Package numbers scans** – defines several scanning of Catalog numbers, after which the application goes another step.
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
+        ![BP Part Number](./media/bp-part-number.png)
+    </div>
+    </details>
 
 **Extra field for scanning Package Number on confirmation window** – allows defining a user-defined field on the final form of the transaction.
 

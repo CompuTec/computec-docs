@@ -8,7 +8,7 @@ Many of CompuTec WMS functions can be operated by scanning barcodes. Here, you c
 
 ---
 
-## Barcodes physical attributes
+## Barcodes Physical Attributes
 
 The minimal and maximal size of supported barcodes depends on scanner attributes.
 
@@ -16,11 +16,11 @@ CompuTec WMS supports every barcode standard as long as it is recognizable for a
 
 In the case of using USB scanners (with desktop applications, e.g., on PCs or tablets), it is required to configure prefixes additionally.
 
-## GS1 standard - CompuTec Decoder
+## GS1 Standard - CompuTec Decoder
 
-GS1 barcode standard is supported by adjusting it to CompuTec WMS (see the table below). Full implementation of the standard is planned for future releases. To use CompuTec WMS-adapted GS1 standard coding, choose the right option in the Server options.
+GS1 Barcode Standard is supported by adjusting it to CompuTec WMS (see the table below). Full implementation of the standard is planned for future releases. To use CompuTec WMS-adapted GS1 standard coding, choose the right option in the Server options.
 
-### Barcodes creation
+### Barcodes Creation
 
 Barcodes created to be supported by WMS have to have specific prefixes. A particular prefix is recognized only in a corresponding WMS screen; e.g., a barcode with a warehouse prefix will be recognized only when scanned on the WMS warehouse selection screen.
 
@@ -188,11 +188,11 @@ Examples:
 0,025:
 3103000025
 
-## Odette standard
+## Odette Standard
 
-The following prefixes can be used for Odette standard barcode labels creation. To use Odette standard coding, choose the right option in the Server options.
+The following prefixes can be used for Odette standard barcode labels creation. To use Odette standard coding, choose the [right option](../installation/wms-server/overview.md) in the Server options.
 
-| Prefix |                                                                                                           Meaning                                                                                                           |   |
+| **Prefix** |                                                                                                           **Meaning**                                                                                                           |   |
 |:------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|---|
 | P      | Item Code/Business Partner Catalog Number It is possible to add/open an Item on Goods Receipt PO, Delivery, Pick and Pack, and Dispatch Control Item lists by scanning its Business Partner Catalog Number with this prefix |   |
 | V      | Business Partner                                                                                                                                                                                                            |   |
@@ -210,9 +210,9 @@ To input data from a barcode without a prefix to a desired field, it is required
 
 In the future, CompuTec WMS Team plans to implement a configurable prefix interpreter. This will allow the decoder to recognize barcode prefixes used in a specific company.
 
-To use this kind of coding, choose the right option in the Server options.
+To use this kind of coding, choose the [right option](../installation/wms-server/overview.md) in the Server options.
 
-## USB scanners
+## USB Scanners
 
 WMS desktop client can be used with USB scanners. To do that, you should configure this kind of device in the following way:
 
@@ -221,6 +221,6 @@ WMS desktop client can be used with USB scanners. To do that, you should configu
 
 The file contains a full programming barcode for plug-in Motorola scanners guide: Download.
 
-## Barcode scanner simulator
+## Barcode Scanner Simulator
 
 For testing barcode scanning, you can use a dedicated application: [WMS Scanning Symulator](./wms-scanning-simulator.md).
