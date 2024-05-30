@@ -18,7 +18,7 @@ The barcodes used as examples on this page were generated using [this tool](http
 
 #### Document Details, Item lists
 
-We are receiving an Item with its Batch and quantity (and, optionally, with additional information by using [Custom Configuration]((../custom-configuration/overview.md)) -> Workflow Step Settings or [UDF Manager](../custom-configuration/custom-configuration-functions/manager/udf-manager.md)).
+We are receiving an Item with its Batch and quantity (and, optionally, with additional information by using [Custom Configuration](../custom-configuration/overview.md) -> Workflow Step Settings or [UDF Manager](../custom-configuration/custom-configuration-functions/manager/udf-manager.md)).
 
 VIDEO
 
