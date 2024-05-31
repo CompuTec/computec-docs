@@ -28,6 +28,6 @@ export default [
     {
         label: "AppEngine",
         pluginId: "appengine",
-        currentVersion: "1.0"
+        currentVersion: "2.0"
     }
 ] as DocConfig[];

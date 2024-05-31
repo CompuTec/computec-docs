@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 10
 ---
 
 # Custom Decoder
@@ -32,7 +32,7 @@ Choose the option in the main menu:
 
 ![Barcode](./media/wms-barcode-setup.webp)
 
-Decoder definition:
+### Decoder Definition
 
 ![Decoder](./media/wms-barcode-setup-main.webp)
 
@@ -40,7 +40,7 @@ Here, you can find a list of the already defined custom decoders.
 
 Each of the decoders is defined with the following information:
 
-### Columns
+#### Columns
 
 Code – a decoder ID
 
@@ -48,7 +48,7 @@ Name – a decoder name
 
 Enabled – a decoder is enabled/disabled.
 
-### Buttons
+#### Buttons
 
 Edit – a decoder's edition
 
@@ -60,7 +60,7 @@ Create new – creating a new decoder
 
 Close – close the window.
 
-## Decoder Selection rules
+### Decoder Selection Rules
 
 ![Decoder Selection Rules](./media/wms-decoder-rules-main.webp)
 
@@ -80,7 +80,7 @@ Create new – create a decoder assignment
 
 Close – close the window.
 
-## Decoder Definitions
+### Decoder Definitions
 
 ![Code Definition](./media/wms-decoder-definitions.webp)
 
@@ -112,7 +112,7 @@ Add/Update – add/update a decoder
 
 Back – go back to the previous window.
 
-## Variables Definition
+### Variables Definition
 
 ![Input Variables](./media/wms-variables-definition.webp)
 
@@ -128,7 +128,7 @@ Output Variables – you can use them as output parameters for rules.
 
 Use GS1 Decoder – use this option if you use GS1 barcodes and want the decoder to decode GS1 prefixes and pass them to CompuTec WMS automatically. Otherwise, pulling each piece of data from barcodes has to be defined manually.
 
-### Columns [01]
+#### Columns [01]
 
 Name – a name of a variable. It has to be unique.
 
@@ -138,7 +138,7 @@ Pass to output – passing a variable to CompuTec WMS
 
 Description – description of a temporary variable
 
-### Buttons
+#### Buttons
 
 New – a new variable creation
 
@@ -148,9 +148,9 @@ Save – save all the variables
 
 Back – go back to the previous window.
 
-## Rules
+### Rules
 
-### SQL – this rule allows proceeding SQL queries
+**SQL** – this rule allows proceeding SQL queries
 
 ![Edit Rules](./media/wms-decoder-sql-rule.webp)
 
@@ -176,7 +176,7 @@ Save – save the rule.
 
 Back – go back to the previous window.
 
-### Regexp – this rule allows to get data using regular expressions
+**Regexp** – this rule allows to get data using regular expressions
 
 ![Edit Rule](./media/wms-decoder-edit-rule.webp)
 
@@ -202,7 +202,7 @@ Save – save the rule.
 
 Back - go back to the previous window.
 
-### Replace – this rule allows to change a part of the text
+**Replace** – this rule allows to change a part of the text
 
 Using this rule, you can replace some code text or variables.
 
@@ -220,7 +220,7 @@ Save – save the rule.
 
 Back – go back to the previous window.
 
-## Testing decoder
+**Testing Decoder**
 
 Here, you can test a decoder using example barcode values.
 
@@ -240,7 +240,7 @@ Test – test the decoder's behavior for a specific barcode. Clicking results in
 
 Back – go back to the previous window.
 
-## Assigning rule to spot/screen in CompuTec WMS
+**Assigning rule to spot/screen in CompuTec WMS**
 
 ![Edit Assignment](./media/wms-decoder-rule-assigning.webp)
 
@@ -258,7 +258,7 @@ Save – save the assignment.
 
 Back – go back to the previous window.
 
-### Current Form Details – additional information for a specific screen in CompuTec WMS
+**Current Form Details** – additional information for a specific screen in CompuTec WMS
 
 :::note
     This option is available only for the new CompuTec WMS Windows client.
@@ -334,10 +334,9 @@ Back – go back to the previous window.
             1. Set the following input variables: Day, Month, Year.
             2. Set the following output variables: ExpireDate.
             3. For the SQL query, set:
-
-                ```sql
-                SELECT Right('@Year',2) || '@Month' || '@Day' as "ExpireDate" FROM DUMMY
-                ```
+                                ```sql
+                                SELECT Right('@Year',2) || '@Month' || '@Day' as "ExpireDate" FROM DUMMY
+                                ```
 
     4. Save rules and decoder.
     5. Test.
@@ -363,9 +362,9 @@ Back – go back to the previous window.
             2. Set output variables to Quantity.
             3. Set the following SQL query:
 
-                ```sql
-                SELECT CASE WHEN LENGTH('@InputQuantity') > 0 THEN LEFT('@InputQuantity',4) || '.' || RIGHT('@InputQuantity', 2) ELSE '' END AS "Quantity" FROM DUMMY
-                ```
+                        ```sql
+                        SELECT CASE WHEN LENGTH('@InputQuantity') > 0 THEN LEFT('@InputQuantity',4) || '.' || RIGHT('@InputQuantity', 2) ELSE '' END AS "Quantity" FROM DUMMY
+                        ```
 
 3. Save rules and decoder.
 4. Test.

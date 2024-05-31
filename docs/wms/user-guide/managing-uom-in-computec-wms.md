@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 # Managing UoM in CompuTec WMS
@@ -55,7 +55,7 @@ Now CompuTec WMS takes UoM from the Sales Data tab:
 
 ![Document Details](./media/sales-uom-wms.webp)
 
-## Custom queries
+## Custom Queries
 
 Using a custom query, you can choose a line with any UoM. To do it, you have to add a column named UoM. If this column is present in a query, UoM will always be taken from here.
 
