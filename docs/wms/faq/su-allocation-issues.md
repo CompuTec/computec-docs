@@ -2,9 +2,9 @@
 sidebar_position: 2
 ---
 
-# SU Allocation Issues
+# Storage Unit Allocation Issues
 
-Incorrect usage of SUs (e.g., transfer of Items that belong to an SU in SAP Business One) may lead to discrepancies in quantity and Bin Location assignment compared with the actual inventory state.
+Incorrect usage of Storage Units (e.g., transfer of Items that belong to a Storage Unit in SAP Business One) may lead to discrepancies in quantity and Bin Location assignment compared with the actual inventory state.
 
 To identify and fix these problems, we prepared a number of queries.
 
@@ -25,7 +25,26 @@ AND
 (T1."AbsEntry" <> T0."U_BinAbs" OR T1."BinCode" <> T0."U_BinCode")
 ```
 
-## Both discrepancies
+## Error message: 10001153 - Insufficient quantity for item "X" with batch "Y" in warehouse
+
+In case of this error message, you have to find SUs in which the available quantity is different from the related Bin Location.
+
+**Please remember to change X in the second last row to a Batch Name.**
+
+```sql
+SELECT SUM(T2."U_Quantity"), T3."OnHandQty", T2."U_ItemCode", T2."U_DistNumber", T1."BinCode"
+FROM "@CT_WMS_OSTU" T0
+INNER JOIN "OBIN" T1 on T1."BinCode" = T0."U_BinCode"
+INNER JOIN "@CT_WMS_STU1" T2 on T2."Code" = T0."Code"
+INNER JOIN "OIBQ" T3 on T3."ItemCode" = T2."U_ItemCode" AND T3."BinAbs" = T1."AbsEntry"
+WHERE
+T0."U_Status" = 'O'
+AND
+T2."U_DistNumber" = 'X'
+GROUP BY T2."U_ItemCode", T2."U_DistNumber", T3."OnHandQty", T1."BinCode"
+```
+
+## Both Discrepancies
 
 The following query searches for both SU discrepancies. It compares the Quantity and OnHand Qty columns. You should increase the quantity of a specific Item in a Batch given in the Bin Code locations. Next, compare the last two columns - BinAbs (of SU) and AbsEntry (of OBIN). In some cases, updating the BinAbs column after moving the missed quantity is required.
 

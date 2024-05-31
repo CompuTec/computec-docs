@@ -6,13 +6,15 @@ sidebar_position: 1
 
 ## I have installed WMS components, but it still does not work. What should I do?
 
-1. Configuration
+**1. Configuration**
 
-    As well as installing WMS components, you must configure the application, e.g., connection to a database. You can find information about that here.
-2. Windows firewall inbound rule
+    In addition to installing the WMS components, you must configure the application, such as setting up a database connection. You can find more information about this [here](../administrator-guide/installation/wms-server/overview.md).
 
-    Be sure to set a required inbound rule in the Windows firewall. You can check how to do that here.
-3. Server and Client connection addresses
+**2. Windows firewall inbound rule**
+
+    Be sure to set a required inbound rule in the Windows firewall. You can check how to do that [here](../administrator-guide/installation/wms-server/overview.md).
+
+**3. Server and Client connection addresses**
 
     Check server and client connection addresses. If both components are installed on the same machine, an entry of “localhost,” e.g., `http://localhost:31002`, works, but if the server and the client component are installed on different machines, specific addresses should be written in. You can do that in the options tab on the client application.
 
@@ -29,20 +31,22 @@ sidebar_position: 1
         Example:
 
         ![Command](./media/ping-example.webp)
-4. CompuTec WMS API Test
+
+**4. CompuTec WMS API Test**
 
     Please check if the CompuTec WMS API works correctly by going into a web browser to this address:
 
     `http://localhost:31002/API/test/get`
 
     `http://[remote host IP]:31002/API/test/get`
-5. WMS services check
+
+**5. WMS services check**
 
     Check if CompuTec License Server and CompuTec WMS Server services are up. You can check it in Windows Services - Control Panel > Administrative Tools > Services.
 
-## I have installed the WMS application, but the trial period will expire soon. I purchased a license. How can I get the license file?
+## I have installed the WMS application, but the trial period is about to expire. I have purchased a license. How can I obtain the license file?
 
-You should create an issue on the WMS Support page on support.computec to get the license you purchased (here). Providing accurate information to CompuTec Support will shorten the response time; thus, please check what data are required – check (ADD LINK) here.
+You should create an issue on the WMS Support page on support.computec to get the license you purchased [here](https://support.computec.pl/projects/SWMS/welcome-guide). Providing accurate information to CompuTec Support will shorten the response time; thus, please check what data are required – check [here](../administrator-guide/installation/wms-licensing.md).
 
 ## I did not define any bins on any warehouses in my database. Will CompuTec WMS operate properly just in the warehouses?
 
@@ -52,19 +56,19 @@ Yes. CompuTec WMS can operate on bins in the warehouse. However, defining bins i
 
 ![Illegal value entered](./media/Illegal_value_entered.webp)
 
-One reason may be a lack of Item Details defined for a specific Item Master Data. Perform the Restore Item Details procedure to fix it. Click here to find out more.
+One reason may be a lack of Item Details defined for a specific Item Master Data. Perform the Restore Item Details procedure to fix it. Click [here](../administrator-guide/installation/sap-business-one-settings/item-details-restore.md) to find out more.
 
 ## The WMS database is not installed. Please make sure all prerequisites are met in communication
 
-CompuTec WMS User Define Objects are not installed on a specific SAP Business One database. To fix it, please install UDOs. You can check how to do this (ADD LINK) here.
+CompuTec WMS User Define Objects are not installed on a specific SAP Business One database. To fix it, please install UDOs. You can check how to do this [here](../administrator-guide/installation/wms-server/overview.md#computec-wms-server-automatic-restart).
 
 ## Configuration file not found. Please use the settings window for communication
 
-You probably just installed the application, which is still not set up. Please check (ADD LINK) this link to find out more.
+You probably just installed the application, which is still not set up. Please check [this link](../administrator-guide/installation/wms-server/overview.md) to find out more.
 
-I have checked the information in the FAQ section and the rest of this documentation, but I still have no idea why my WMS instance does not work. What should I do?
+## I have checked the information in the FAQ section and the rest of this documentation, but I still have no idea why my WMS instance does not work. What should I do?
 
-You should request CompuTec Support assistance by posting an issue within the Support WMS space at support.computec.pl (here). To shorten the problem-solving time needed by CompuTec consultants, you should follow the rules for creating an issue you can find here.
+You should request CompuTec Support assistance by posting an issue within the Support WMS space at [support.computec.pl](https://support.computec.pl/projects/SWMS/welcome-guide). To shorten the problem-solving time needed by CompuTec consultants, you should follow the rules for creating an issue you can find here.
 
 ## Data is not displayed correctly
 
@@ -78,7 +82,7 @@ If any data record displayed on a screen is too long, it is 'cut' with the rest 
 
 ## Cannot Install CompuTec WMS objects to a database
 
-On an attempt to install CompuTec WMS objects to a database (you can check how to do this here), you get the following system message:
+On an attempt to install CompuTec WMS objects to a database (you can check how to do this [here](../administrator-guide/installation/wms-server/overview.md#computec-wms-server-automatic-restart)), you get the following system message:
 
 :::info
     The installation requires a manually created procedure in the database.
@@ -128,7 +132,7 @@ You can either:
 - install ProcessForce API to the correct version
 - install ProcessForce in the same version as API.
 
-For the mentioned installers, check the [ADD LINK] Download page.
+For the mentioned installers, check the [Download](/docs/processforce/releases/download) page.
 
 ## System.Exception: :Error: Internal error (-10) occurred:Error: Internal error (-10) occurred:Error: Internal error (-10) occurred error in a log file
 
@@ -178,8 +182,8 @@ A proper Exception/Error is shown in the ServiceManager Log when one of the abov
 ### Example
 
 1. In DataWedge Demo, the code is scanned correctly.
-2. With an RDP connection and scanning to a notepad, a part of a code is removed. Originally: (10)21055(95)1(95)C00312, actually scanned: (10)21(95)1(95)C00312. Part of a GS1 code is missed.
+2. With an RDP connection and scanning to a notepad, a part of a code is removed. Originally: (10)**21055**(95)1(95)C00312, actually scanned: (10)**21**(95)1(95)C00312. Part of a GS1 code is missed.
 
 ### Solution
 
-Please note that the Motorola MC65 device is no longer supported by its producer. However, Motorola support suggested (as best effort only) using Interchar Delay (DataWedge option) to slow down RDP data sending to a host.
+**Please note that the Motorola MC65 device is no longer supported by its producer**. However, Motorola support suggested (as best effort only) using Interchar Delay (DataWedge option) to slow down RDP data sending to a host.

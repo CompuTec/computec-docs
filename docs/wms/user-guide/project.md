@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Project
 
-Here you can obtain additional information regarding SAP Business One Projects on documents created using CompuTec WMS.
+Here, you can obtain additional information regarding SAP Business One Projects on documents created using CompuTec WMS.
 
 ---
 

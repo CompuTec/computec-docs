@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 # Empty Serial Numbers
@@ -12,7 +12,7 @@ Here, you can find a description of managing Empty Serial Numbers Items through 
 
 ![Item Master Data](./media/item-master-data.webp)
 
-## Transactions supported in CompuTec WMS
+## Transactions Supported in CompuTec WMS
 
 - GRPO
 - Delivery
