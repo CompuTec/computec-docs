@@ -8,7 +8,7 @@ export function getDocPlugin(doc: DocConfig): PluginConfig {
         "@docusaurus/plugin-content-docs",
         {
             id: doc.pluginId,
-            routeBasePath: path.join("/docs", doc.pluginId),
+            routeBasePath: path.posix.join("/docs", doc.pluginId),
             path: path.join("docs", doc.pluginId),
             versions: {
                 current: {
