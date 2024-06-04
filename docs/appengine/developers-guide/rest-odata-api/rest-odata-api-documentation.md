@@ -31,12 +31,10 @@ API usage examples in Postman:
 - Create pick order for operation requires user to set operation details while creating document using the below request template
 
         ```java
-        {code:java}
         {"IssueType":"Operations","LineNumbers":  {"<MO DocNum>": [
                 <U_LineNum of the operation from @CT_PF_MOR12 table>
             ]
         },"ManufacturingOrderDocEntries":
         [ "<MO DocNum>"]
         }
-        {code}
         ```
