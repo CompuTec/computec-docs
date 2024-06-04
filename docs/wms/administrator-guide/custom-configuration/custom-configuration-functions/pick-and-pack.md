@@ -37,3 +37,18 @@ sidebar_position: 5
 **Force Manual quantity confirmation** – with this option checked, it is required to manually confirm previously set up quantity (scanning a barcode does not confirm it automatically)
 
 **Enable over-picking to base open document quantity** – checking the option allows you to set quantity higher than on the related base document (leaving this checkbox unchecked blocks it).
+
+## Changes
+
+Old view of Pick and Pack tab:
+    ![Pick and Pack](./media/pick-and-pack/pick-and-pack.png)
+Extra field in Pick and Pack query optionhas been removed.
+
+It is possible to use this functionality by creating a specific SQL query in Custom Query Manager > Pick and Pack option:
+    ![Pick and Pack](./media/pick-and-pack/pick-and-pack-01.png)
+
+In this example it is Customer List For Date Pick List:
+    ![Pick and Pack](./media/pick-and-pack/date-pick-list.png)
+
+In this example four fields are available and by default two of them are set up:
+    ![Fields](./media/pick-and-pack/fields.png)

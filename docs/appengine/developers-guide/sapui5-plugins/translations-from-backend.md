@@ -2,11 +2,11 @@
 sidebar_position: 4
 ---
 
-# Translations from backend
+# Translations from Backend
 
 ## Description
 
-When using AppEngine, you can define your translation resource files directly in your project plugin. If you created a plugin with CompuTecthe AppEngine Plugin Template, the translation file is already added and registered. Translations require the following to work:
+When using AppEngine, you can define your translation resource files directly in your project plugin. If you created a plugin with CompuTec AppEngine Plugin Template, the translation file is already added and registered. Translations require the following to work:
 
 1. The translations file is an XML file with the following structure:
 
@@ -29,12 +29,12 @@ When using AppEngine, you can define your translation resource files directly in
     </messageTranslations>
     ```
 
-    - id (translationID) – id that will be used in the UI5 app
-    - lang (language) – a translation element for a given language.
+    - **id (translationID)** – id that will be used in the UI5 app
+    - **lang (language)** – a translation element for a given language.
 
-        List of possible languages
-
-        ```xml
+        <details>
+        <summary>List of possible languages</summary>
+        <div>
         Default
         ln_Polish
         ln_English
@@ -66,7 +66,8 @@ When using AppEngine, you can define your translation resource files directly in
         ln_TrdtnlChinese_Hk
         ln_Turkish_Tr
         ln_Ukrainian
-        ```
+        </div>
+        </details>
 
     - date (Translation adding date) – Date of adding translations in XSD DateTime format `<YYYY-MM-DDThh:mm:ss>`
 2. Definition of TranslationStreamDelegate in PluginInitializer.
@@ -85,7 +86,7 @@ When using AppEngine, you can define your translation resource files directly in
 
         ![Plugin](./media/translations-from-backend/plugin-route-example.webp)
 
-## Using internationalization in UI5 applications
+## Using Internationalization in UI5 Applications
 
 If you created a Plugin Project from the, you can already check translations on Home.view.xml. The following screenshot shows how it works.
 
@@ -94,7 +95,7 @@ If you created a Plugin Project from the, you can already check translations on 
 
 ![Translation](./media/translations-from-backend/translation-ids.webp)
 
-### Example of adding a translation to the Sales Orders list
+### Example of Adding a Translation to the Sales Orders list
 
 In this example, we will add translations to our example from Creating a Custom View.
 

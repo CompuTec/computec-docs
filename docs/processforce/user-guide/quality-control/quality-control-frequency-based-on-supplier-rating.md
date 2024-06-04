@@ -26,7 +26,7 @@ Quality issues, errors, and mistakes aligned with certified testing lab Internal
     This procedure is essential to manage at which intervals the Quality Control Test is to be performed based on the predefined Counters.
 
     | File Type | MS SQL | HANA |
-    | --- | --- | --- | --- |
+    | --- | --- | --- |
     | Procedure | Download | Download |
     | PostTransact modification | Download | Download |
 :::

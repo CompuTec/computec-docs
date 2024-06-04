@@ -14,16 +14,16 @@ CompuTec AppEngine provides a mechanism for encapsulating complex database queri
 - supports OData V4
 - supports SAP HANA and Microsoft SQL Server
 - supports CompuTec AppEngine plugins
-- the CustomViews folder is available in the AppEngine installation directory, and ProgramData/CompuTec/AppEngine.
+- the <i>**CustomViews**</i> folder is available in the AppEngine installation directory, and ProgramData/CompuTec/AppEngine
 
 ## Usage
 
-### Create a custom view
+### Create a Custom View
 
-1. Open a plugin project in Visual Studio.
-2. Create a folder, e.g., CustomView (right-click on a Project → New Folder), and go to it.
-3. Open Terminal (View → Terminal).
-4. Navigate to the created folder.
+1. Open a plugin project in Visual Studio
+2. Create a folder, e.g., CustomView (right-click on a Project → New Folder), and go to it
+3. Open Terminal (View → Terminal)
+4. Navigate to the created folder
 5. Create a new custom view by using the following command in Terminal (named SalesOrderList in the following example):
 
     ```javascript
@@ -59,7 +59,7 @@ CompuTec AppEngine provides a mechanism for encapsulating complex database queri
     }
     ```
 
-### Bind custom view to control in UI5
+### Bind Custom View to Control in UI5
 
 1. To bind a created custom view to our control, we need to use the following syntax:
 
@@ -116,7 +116,7 @@ CompuTec AppEngine provides a mechanism for encapsulating complex database queri
 
     ![Data Type](./media/creating-a-custom-view/data-type.webp)
 
-### Test of created View
+### Test of Created View
 
 1. To test our view, we need to set up a route to it. To do this, open the manifest.json file.
 2. There, you need to add a route and target as shown below:
@@ -159,7 +159,7 @@ CompuTec AppEngine provides a mechanism for encapsulating complex database queri
 
 ##### Results
 
-1. Plugin navigation Tiles.
+1. Plugin Navigation Tiles.
 
     ![Plugin tiles](./media/creating-a-custom-view/plugin-tiles.webp)
 2. Sales Orders view.

@@ -2,24 +2,24 @@
 sidebar_position: 6
 ---
 
-# Using User-Defined Objects in UI5 application
+# Using User-Defined Objects in UI5 Application
 
 ## Prerequisites
 
-Example User Defined Object (UDO) in AppEngine Plugin Project completed.
+Example User [Defined Object (UDO) in AppEngine Plugin Project](./udo-in-appengine-plugin.md) completed.
 
 ## Description
 
-After generating controllers, models, and serializers in User Defined Object (UDO) in AppEngine Plugin Project we will now adjust the ToDo view and controller on the frontend.
+After generating controllers, models, and serializers in [User Defined Object (UDO)](./udo-in-appengine-plugin.md) in AppEngine Plugin Project we will now adjust the ToDo view and controller on the frontend.
 
-### Fixing binding in ToDo.view.xml
+### Fixing Binding in ToDo.view.xml
 
 1. Open ToDo.view.xml
 
     ![Open to-do](./media/udfs-in-ui5-app/open-todo-view.webp)
 2. We need to change table binding:
 
-    - from FirstPlugin>/Todo to FirstPlugin>/ToDo
+    - from **FirstPlugin>/Todo** to **FirstPlugin>/ToDo**
     - we will remove $count and $$updateGroupId
 
     `items="{FirstPlugin>/ToDo}"`
@@ -172,7 +172,7 @@ After generating controllers, models, and serializers in User Defined Object (UD
 
 ### Adjusting Todo.controller.js
 
-1. Beacuse we are using computec.appengine.ui.controls.YesNoBoolType we need to add it to sap.ui.define
+1. Beacuse we are using computec.appengine.ui.controls.YesNoBoolType, we need to add it to sap.ui.define
 
     ```js
     sap.ui.define([
@@ -455,6 +455,6 @@ After generating controllers, models, and serializers in User Defined Object (UD
 
 ## Results
 
-After these changes To Do view will work with our newly generated controllers for To Do User Defined Objects. We can now search, add, delete and change them. All changes are automatically send to backend to be saved.
+After these changes, To Do view will work with our newly generated controllers for To Do User Defined Objects. We can now search, add, delete and change them. All changes are automatically send to backend to be saved.
 
 ![To do list view](./media/udfs-in-ui5-app/todo-list-view.webp)

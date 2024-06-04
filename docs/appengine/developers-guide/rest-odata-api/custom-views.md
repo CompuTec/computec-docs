@@ -14,7 +14,7 @@ CompuTc AppEngine provides a mechanism for encapsulating complex database querie
 - supports OData V4
 - supports SAP HANA and Microsoft SQL Server
 - supports CompuTec AppEngine Plugins
-- The CustomViews folder is available in the AE installation directory, and ProgramData/CompuTec/AppEngine.
+- The <i>**CustomViews**</i> folder is available in the AE installation directory, and ProgramData/CompuTec/AppEngine.
 
 ![Custom View](./media/custom-views/core-odata.webp)
 
@@ -26,8 +26,7 @@ CompuTc AppEngine provides a mechanism for encapsulating complex database querie
 ## Custom View Definition from Plugin Dir
 
 `<file name>.customview.json`
-
-```json
+    ```json
 {
   "Id": "<view identifier>",
   "Description": "<view description>",
@@ -36,16 +35,14 @@ CompuTc AppEngine provides a mechanism for encapsulating complex database querie
     "MsSql": "<MsSQL query>"
   }
 }
-```
+    ```
 
 ## Request
 
 Request URL
-
-```text
-http://{ae_url}/odata/CustomViews/Views.Custom(Id='<plugin identifier>:<view identifier>')
-
-```
+    ```text
+    http://{ae_url}/odata/CustomViews/Views.Custom(Id='<plugin identifier>:<view identifier>')
+    ```
 
 ## Example
 
@@ -53,7 +50,7 @@ http://{ae_url}/odata/CustomViews/Views.Custom(Id='<plugin identifier>:<view ide
 
 File: BusinessPartnerPaymentTerms.customview.json
 
-```json
+    ```json
 {
   "Id": "BusinessPartnerPaymentTerms",
   "Description": "Business Partners and their assigned payment terms",
@@ -72,27 +69,27 @@ File: BusinessPartnerPaymentTerms.customview.json
         "
   }
 }
-```
+    ```
 
 ### Request
 
 Curl
 
-```bash
-curl -X GET --header 'Accept: application/json' 'http://localhost:54000/odata/CustomViews/Views.Custom(Id='MYPLUGIN:BusinessPartnerPaymentTerms')'
-```
+    ```bash
+curl -X GET --header 'Accept: application/json' '<http://localhost:54000/odata/CustomViews/Views.Custom(Id='MYPLUGIN:BusinessPartnerPaymentTerms>')'
+    ```
 
 Request URL
 
-```text
-http://localhost:54000/odata/CustomViews/Views.Custom(Id='MYPLUGIN:BusinessPartnerPaymentTerms')
-```
+    ```text
+    http://localhost:54000/odata/CustomViews/Views.Custom(Id='MYPLUGIN:BusinessPartnerPaymentTerms')
+    ```
 
 Response Body
 
-```json
+    ```json
 {
-  "@odata.context": "http://localhost:54000/odata/$metadata#Custom",
+  "@odata.context": "<http://localhost:54000/odata/$metadata#Custom>",
   "value": [
     {
       "No": 1,
@@ -114,7 +111,7 @@ Response Body
     }
   ]
 }
-```
+    ```
 
 ## Example with parameters
 
@@ -122,36 +119,36 @@ Response Body
 
 File: request.customview.json
 
-```json
+    ```json
 {
   "Id": "RequestView",
   "Description": "Fetch request from database",
   "Source": {
-    "Hana": "SELECT * FROM CTLABEL.CT_LP_REQUESTDETAILS WHERE \"REQUESTID\" = @RequestId",
-    "MsSql": "SELECT * FROM CTLABEL.dbo.CT_LP_REQUESTDETAILS WHERE REQUESTID = @RequestId"
+    "Hana": "SELECT *FROM CTLABEL.CT_LP_REQUESTDETAILS WHERE \"REQUESTID\" = @RequestId",
+    "MsSql": "SELECT* FROM CTLABEL.dbo.CT_LP_REQUESTDETAILS WHERE REQUESTID = @RequestId"
   }
 }
-```
+    ```
 
 ### Request
 
 Curl
 
-```bash
-curl -X GET --header 'Accept: application/json' 'http://localhost:54000/odata/CustomViews/Views.CustomWithParameters(Id='CTLabel%3ARequestView',Parameters=[%22RequestId%3D61%22],paramType=Default.ParamType'Custom')'
-```
+    ```bash
+curl -X GET --header 'Accept: application/json' '<http://localhost:54000/odata/CustomViews/Views.CustomWithParameters(Id='CTLabel%3ARequestView>', Parameters=[%22RequestId%3D61%22],paramType=Default.ParamType'Custom')'
+    ```
 
 Request URL
 
-```bash
-http://localhost:54000/odata/CustomViews/Views.CustomWithParameters(Id='CTLabel%3ARequestView',Parameters=[%22RequestId%3D61%22],paramType=Default.ParamType'Custom')
-```
+    ```bash
+    http://localhost:54000/odata/CustomViews/Views.CustomWithParameters(Id='CTLabel%3ARequestView',Parameters=[%22RequestId%3D61%22],paramType=Default.ParamType'Custom')
+    ```
 
 Response Body
 
-```json
-{
-  "@odata.context": "http://localhost:54000/odata/$metadata#Custom",
+    ```json
+    {
+  "@odata.context": "<http://localhost:54000/odata/$metadata#Custom>",
   "value": [{}]
-}
-```
+    }
+    ```

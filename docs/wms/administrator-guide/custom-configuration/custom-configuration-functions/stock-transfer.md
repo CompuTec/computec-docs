@@ -49,3 +49,53 @@ sidebar_position: 3
 **Use Sales UoM** – click here to find out more.
 
 **Ask to continue scanning when multiple items are over-picked** – when checked: when two lines with the same Item are added to a document, exceeding the required quantity causes the system to display a message with a choice to which of the lines added exceeded the quantity.
+
+## Changes
+
+The old view of Stock Transfer tab. The following options have been removed:
+
+- Inventory Transfer Requests sorting order
+- Filter Inventory Transfer Request for bin
+- Extra fields in Inventory Transfer Request query
+
+    ![Inventory Transfer](./media/stock-transfer/inventory-transfer.png)
+
+It is possible to realize Inventory Transfer Requests sorting order function by creating a specific SQL query in Custom Query Manager. Choose the option and then, choose a required transaction:
+    ![Inventory Transfer](./media/stock-transfer/inventory-transfer-01.png)
+    ![Inventory Transfer](./media/stock-transfer/inventory-transfer-02.png)
+
+The displayed records order can by modify by modifying the default line: `ORDER BY T0."DocEntry"`
+    ![Document Entry](./media/stock-transfer/doc-entry.png)
+
+We have 4 options for change, just like it was possible before. On the left side, the selection options from the old view are described, and on the right side, the appropriate commands that we can currently use.
+
+1. <s>creationdate ascending</s> - "DocDate" ASC
+2. <s>creationdate descending</s> - "DocDate" DESC
+3. <s>duodate ascending</s> - "DocDuoDate" ASC
+4. <s>duodate descending</s> - "DocDuoDate" DESC
+
+We can also create our own filters. Just search and enter the appropriate column name, which we can obtain via SQL Manager.
+    ![Create Own Filters](./media/stock-transfer/create-own-filters.png)
+
+Below is an example in which documents can be sorted by document number from highest to lowest. A column called "DocNum" will be used for this
+    ![Document Number](./media/stock-transfer/doc-number.png)
+
+The Changes look like this:
+
+1. without making any changes (fig.1)
+    ![Inventory Transfer](./media/stock-transfer/inventory-transfer-03.png)
+
+2. sorting by document number (fig.2)
+    ![Inventory Transfer](./media/stock-transfer/inventory-transfer-04.png)
+
+Below is an example for the "Extra field in Inventory Transfer Request query" checkbox. We open SQL Manager and search for the table from which we will retrieve data.
+    ![Inventory Transfer](./media/stock-transfer/inventory-transfer-05.png)
+
+Then, go to Custom config, select the manager tab and the transaction (in this case "Stock Transfer")
+    ![Inventory Transfer](./media/stock-transfer/stock-transfer.png)
+
+There are eight fields available. The standard query contains six of them. There are two more fields ("Field7" and "Field8") available, taken from the "OWTQ" table.
+    ![Fields](./media/stock-transfer/fields-03.png)
+
+Fields marked according to the field layout in Custom Query:
+    ![Inventory Transfer](./media/stock-transfer/stock-transfer-01.png)

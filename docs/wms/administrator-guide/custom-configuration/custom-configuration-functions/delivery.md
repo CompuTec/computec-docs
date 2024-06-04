@@ -95,3 +95,84 @@ However, when a user creates a Delivery document from a base document, for examp
 - **Full freight for first Delivery only** - total Freight cost added only to the first Delivery. The following Deliveries have no freight cost assigned (SAP Business One behavior with Delivery from Sales Order).
 
 - Always charge full freight - total freight cost from the base document.
+
+## Changes
+
+The old Delivery tab view:
+    ![Delivery Tab Old](./media/delivery/delivery-tab.png)
+
+The following checkoboxes have been removed: Show document drafts, Extra field in Order query, Sales Orders sorting order, Issue only Batches from MOR for selected BPs, Show only Pick Lists with Picked status.
+
+To used the previously available option, it is required to create a specific SQL query by using Custom Query Manager:
+    ![Enable Custom Query Manager Delivery](./media/delivery/enable-custom-query-manager-delivery.png)
+
+On the following screenshot you can check were to find replacements for the removed functions (compare the numbers with the first screenshot on this page):
+    ![Custom Query Manager Delivery](./media/delivery/custom-query-manager-delivery.png)
+    ![WMS Custom Configuration](./media/delivery/wms-custom-configuration.png)
+
+**Example for Show document drafts option (1)**
+
+Changing T0."CardName" AS "Field4" line to T0."DocStatus" AS "Field4" (instead of customer name there will be a document status - if it is open or closed).
+    ![Custom Query SQL](./media/delivery/custom-query-sql-form.png)
+    ![SQL Query](./media/delivery/sql-query.png)
+
+**Examples for Sales Orders sorting order and Extra field in Orders query options (2, 3)**
+
+It is possible to use the option in four ways:
+
+    | Previous sorting order options | Related commands |
+    | --- | --- |
+    | creationdate ascending | `"DocDate" ASC` |
+    | creationdate descending | `"DocDate" DESC` |
+    | duodate ascending | `"DocDuoDate" ASC` |
+    | duodate descending | `"DocDuoDate" DESC` |
+
+To change sorting order it is required to make changes in ORDER BY line. In the example below the sorting order was changed from sorting by creation date to sorting by document number (T0."DocDueDate" changed to T0."DocNum"). Here you can check the previous state and result of the change:
+    ![Order Selection](./media/delivery/order-selection.PNG)
+    ![Document Number](./media/delivery/doc-number-desc.png)
+
+**Example for Issue only Batches from MOR for selected BPs option (4)**
+
+In this case it is required to add lines in two places (marked on the screenshot below):
+
+A line that have to be added for filter to work properly:
+
+    ```
+    AND (((@BaseDocEntry <= 0 AND @BaseDocLineNum < 0) AND ''='') OR ((@BaseDocEntry > 0  AND @BaseDocLineNum >= 0) AND (T0."U_MnfDocEntry" = (SELECT "U_DocEntry" FROM RDR1 WHERE "DocEntry" = @BaseDocEntry and "LineNum" = @BaseDocLineNum))))
+    ```
+![Custom Query SQL Form](./media/delivery/custom-query-sql-form.png)
+
+**Example usage scenario**
+
+1. Create a Sales Order.
+2. Create a related Manufacturing Order.
+3. Change the status of Manufacturing Order to Released.
+4. Go to CompuTec WMS, choose Pick Receipt > New Production Receipt and choose the Manufacturing Order.
+5. Generate a Batch and save progress, by this creating a Batch for the Manufacturing Order.
+
+Here you can check the process on screenshots:
+    ![Pick Receipt Batches Setup](./media/delivery/pick-receipt-batches-setup.png)
+    ![Order Selection](./media/delivery/order-selection-01.png)
+    ![Document Details](./media/delivery/document-details.png)
+    ![Batches](./media/delivery/batches.png)
+    ![Batch Quantity](./media/delivery/batch-quantity.PNG)
+
+Going to Delivery > From Sales Order, choosing the required document number (757 in this case). In Item details we add Batches assigned to the Manufacturing Order:
+    ![Batches](./media/delivery/batches-01.png)
+
+The only Batches available are the ones that were generated on receiving from Manufacturing Order.
+
+**Example for Show only Pick Lists with Picked status option (5)**
+
+In the default query it is required to find this line: `T0."Status" <> 'C'  and change it to T0."Status" = 'P'`
+
+The following screenshots present an example query, changes required to be made and the result in CompuTec WMS:
+    ![Delivery](./media/delivery/delivery.png)
+
+`T0."Status" <> 'C' changed to T0."Status" = 'P'`
+    ![Status](./media/delivery/status.png)
+
+The result:
+    ![Pick List](./media/delivery/pick-list.PNG)
+
+Show document drafts checkbox has been removed due to the fact of adding an option to choose document drafts in application.

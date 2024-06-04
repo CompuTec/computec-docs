@@ -16,11 +16,11 @@ AppEngine comes with built-in, handy controllers for managing attachments in SAP
 
 Below is an example of receiving and adding attachments from and to Sales Orders.
 
-## Getting attachments from Sales Order
+## Getting Attachments from Sales Order
 
 We will extend the Sales Orders list example that we have used so far. We will add a button that will display a dialog with attachments for particular Sales Order.
 
-### Adding attachment information to Sales Orders list
+### Adding Attachment Information to Sales Orders list
 
 1. Open SalesOrder.view.xml
 
@@ -33,7 +33,7 @@ We will extend the Sales Orders list example that we have used so far. We will a
     </Column>
     ```
 
-3. Add translation as described here.
+3. Add translation as described [here](translations-from-backend.md).
 
     ```xml
     <Message id="salesOrderAttachmentsColumnLabel" param="0">
@@ -43,16 +43,16 @@ We will extend the Sales Orders list example that we have used so far. We will a
     </Message>
     ```
 
-4. To make it a little bit more interesting, let's add the GenericTag control with ObjectNumber that will display number of attachments for each of orders.
+4. Add the GenericTag control with ObjectNumber to display the number of attachments for each order.
 
     - First, we need to add information about attachments in our custom view that is used to list Sales Orders:
 
         ![Attachment](./media/attachments/attachments-03.webp)
-    - Let's modify this custom view to add NumberOfAttachments to it. More details about Custom Views can be found here: here.
+    - Modify this custom view to add NumberOfAttachments to it. More details about Custom Views can be found [here](creating-a-custom-view.md).
 
         SalesOrderList.customview.json
 
-    - Now we can add control and bind NumberOfAttachments to it like it is shown below. We add custom data app:AtcEntry – this will be needed to get correct attachments in event handler.
+    - Now, we can add the control and bind NumberOfAttachments to it as shown below. We also add custom data app:AtcEntry—this will be needed to retrieve the correct attachments in the event handler.
 
         ```xml
         <GenericTag
@@ -134,7 +134,7 @@ We will extend the Sales Orders list example that we have used so far. We will a
 
 ### Results
 
-For Sales Orders with attachments GenericTag will be visible with numbers of Attachments
+For Sales Orders with attachments, GenericTag will be visible with numbers of Attachments
 
 ![Attachments](./media/attachments/sales-orders-list-preview-with-attachments.webp)
 
@@ -175,7 +175,7 @@ To handle onAttachmentsButtonPress event that will be triggered from GenericTag 
     );
     ```
 
-3. No we need to add controller information into our view.
+3. Now, we need to add controller information into our view.
 
     ```xml
     <mvc:View
@@ -187,7 +187,7 @@ To handle onAttachmentsButtonPress event that will be triggered from GenericTag 
 
 #### Creating view for Attachments Dialog
 
-Here we will create new view fragment that later will be used in our controller.
+Here, we will create new view fragment that later will be used in our controller.
 
 1. Lets create new view fragment with our Attachments Dialog: SalesOrderAttachmentsDialog.fragment.xml. For simplicity we will create it directly in view folder.
 
@@ -238,7 +238,7 @@ Here we will create new view fragment that later will be used in our controller.
     </core:FragmentDefinition>
     ```
 
-#### Adding custom view for Attachments
+#### Adding Custom View for Attachments
 
 We will create parametrized custom view that will return Attachments for selected Sales Order.
 
@@ -257,7 +257,7 @@ We will create parametrized custom view that will return Attachments for selecte
     }
     ```
 
-#### Opening dialog
+#### Opening Dialog
 
 Attachments dialog will be opened after user click on GenericTag. Thus, we need to add implementation in SalesOrders.controller.js. Set in the SalesOrders.view.xml that press event is onAttachmentsButtonPress. Create function in our controller with exactly that name.
 
@@ -482,13 +482,13 @@ onAttachmentsDialogDownloadInNewTab: function (oEvent) {
 },
 ```
 
-As you can see in this method we are preparing URL that consists of 5 parameters:
+This method prepares a URL comprising 5 parameters:
 
-- attachmentSource – table name of our document. In our example ORDR (Sales Order),
-- keyName - table key name. For Sales Order it is DocEntry,
-- key – value of table key. In case of Sales Order it is value of document DocEntry,
-- attachmentField – this field is used if you would like to get Attachment from custom field. In Our case we can set this value to null as we don't need it.
-- lineNum – Line number (Line column in ATC1) value of required attachment.
+- **attachmentSource** – table name of our document. In our example ORDR (Sales Order),
+- **keyName** - table key name. For Sales Order it is DocEntry,
+- **key**– value of table key. In case of Sales Order it is value of document DocEntry,
+- **attachmentField** – this field is used if you would like to get Attachment from custom field. In Our case we can set this value to null as we don't need it.
+- **lineNum** – Line number (Line column in ATC1) value of required attachment.
 
 ## Result
 
@@ -496,11 +496,11 @@ When user click on download button, file will be download using our REST API Att
 
 ![Nog](./media/attachments/nog.webp)
 
-### Adding attachments
+### Adding Attachments
 
 Finally, we can finish the example with possibility to add attachments. Below is a step-by-step description how to achieve this.
 
-#### Adding new File Upload Dialog
+#### Adding New File Upload Dialog
 
 For selection of the file we will add a new Dialog SalesOrderAttachmentsDialogAdd.fragment.xml.
 
@@ -607,7 +607,7 @@ SalesOrderAttachmentsDialog.fragment.xml
 </core:FragmentDefinition>
 ```
 
-#### Adding logic to SalesOrder.controller.js
+#### Adding Logic to SalesOrder.controller.js
 
 1. Having all views ready, we can now implement all the missing parts in the controller.
 2. Open SalesOrder.controller.js.
@@ -846,11 +846,11 @@ Finally, the application not only displays the list of Attachments for the given
 
 ![Attachments](./media/attachments/attachments-path-sap-configuration.webp)
 
-:::note
-In this example we are only adding attachment to the backend. We are not linking this attachment to a Sales Order. This needs to be done in a custom controller. We are adding attachments from this example to Sales Orders in Custom controller tutorial.
+:::caution
+In this example we are only adding attachment to the backend. We are not linking this attachment to a Sales Order. This needs to be done in a custom controller. We are adding attachments from this example to Sales Orders in [Custom controller](custom-controller.md) tutorial.
 :::
 
-#### Final look of application
+#### Final Look of Application
 
 ![Add](./media/attachments/add-attachment-dialog.webp)
 
