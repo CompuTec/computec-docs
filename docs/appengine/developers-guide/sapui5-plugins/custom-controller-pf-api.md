@@ -2,13 +2,13 @@
 sidebar_position: 11
 ---
 
-# Custom controller that uses ProcessForce API
+# Custom Controller that uses ProcessForce API
 
 ## Description
 
 In this example, we will show how to add a custom controller that uses ProcessForce objects and logic. In this example, we will create a controller that is responsible for scheduling Manufacturing Orders.
 
-## Creating custom controller
+## Creating Custom Controller
 
 1. Open your plugin solution in Visual Studio.
 2. Create a new class: PF_SchedulingController.cs inside Controllers/Api.
@@ -81,7 +81,7 @@ In this example, we will show how to add a custom controller that uses ProcessFo
             }
     ```
 
-5. Now you can see the method in Swagger.
+5. Now, you can see the method in Swagger.
 
     ![List](./media/custom-controller-pf-api/cc-pf-api-02.webp)
 6. Calling Controller:

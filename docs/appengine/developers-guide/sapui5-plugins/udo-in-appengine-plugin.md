@@ -8,13 +8,13 @@ sidebar_position: 5
 
 AppEngine offers out-of-the-box support for User Defined Objects. This allows a developer to easily define User Defined Tables, Fields, and Objects. These definitions will be used during the plugin update process on the selected database.
 
-Additionally, you can use CompuTec AppEngine Plugin Code Generator you can generate models, serializes, and controllers (REST API and OData v4) for your business objects. In this document, we are describing this process in detail.
+Additionally, you can use [CompuTec AppEngine Plugin Code Generator](https://www.nuget.org/packages/CompuTec.AppEngine.PluginCodeGenerator/) you can generate models, serializes, and controllers (REST API and OData v4) for your business objects. This document provides a detailed description of the process.
 
 ## Structure Definition
 
-The following steps present examples of the creation of User Defined Tables, Fields, and Objects.
+The following steps illustrate examples of creating User Defined Tables, Fields, and Objects.
 
-### Adding a new Project to the solution
+### Adding a New Project to the Solution
 
 1. Just for the sake of order, let's create a separate project where we will keep UDO definitions.
 2. Right-click on the solution and select Add → New Project...
@@ -34,9 +34,9 @@ The following steps present examples of the creation of User Defined Tables, Fie
 
     ![CPU](./media/udo-in-appengine-plugin/CPU.webp)
 
-### Adding UDO definitions
+### Adding UDO Definitions
 
-#### Defining ToDo and ToDoRequirements User-Defined tables
+#### Defining ToDo and ToDoRequirements User-Defined Tables
 
 1. Add a new folder and name its Tables to create a Setup project.
 2. In this example, we will create a UDO with the Master Data type and in it, we will keep a To Do list. We will also create Master Data Lines for the To Do list with required Items for each To Do entry.
@@ -187,7 +187,7 @@ The following steps present examples of the creation of User Defined Tables, Fie
     ```
 
     :::note
-        Make sure to use only uppercase letters and no spaces as Table Name – currently using lowercase letters will lead to the exception: "This entry already exists in following tables..."
+    Make sure to use only uppercase letters and no spaces as Table Name – currently using lowercase letters will lead to the exception: "This entry already exists in following tables..."
     :::
 
 9. In the same manner, we will add ToDoTableRequirementsTable:
@@ -305,7 +305,7 @@ The following steps present examples of the creation of User Defined Tables, Fie
     }
     ```
 
-#### Preparing setup
+#### Preparing Setup
 
 To allow AppEngine to run this setup, we need to provide a Setup class in our plugin that extends CompuTec.AppEngine.Base.Infrastructure.Plugins.PluginSetup class. If you create a Plugin solution from our CompuTec AppEngine Plugin Template, then in the plugin project, you will already have boiler code that you can use.
 
@@ -390,7 +390,7 @@ To allow AppEngine to run this setup, we need to provide a Setup class in our pl
     }
     ```
 
-4. Setup requires BaseLibInformation to point to the class inheriting from abstract class CompuTec.Core2.CoreInfo. To meet this requirement's we will add a new file FirstPluginInfo.cs in CompuTec.AppEngine.FirstPlugin.API project. In it, we can define Version information and version retrieval methods, declare implemented objects, and bind interfaces to implementations. We will add this information after we prepare the Business Objects implementation in the second part of this tutorial.
+4. Setup requires BaseLibInformation to point to the class inheriting from abstract class CompuTec.Core2.CoreInfo. To meet this requirement, we will add a new file FirstPluginInfo.cs in CompuTec.AppEngine.FirstPlugin.API project. In it, we can define Version information and version retrieval methods, declare implemented objects, and bind interfaces to implementations. We will add this information after we prepare the Business Objects implementation in the second part of this tutorial.
 
     FirstPluginInfo.cs
 
@@ -473,11 +473,11 @@ Now having the definition of User Defined Objects, we can test it by running the
 
     ![Sample To-Do](./media/udo-in-appengine-plugin/sample-to-do.webp)
 
-## Exposing objects in API
+## Exposing Objects in API
 
-CompuTec AppEngine Plugin Code Generator can generate controllers, models, and serializers based on defined interfaces. Below is a step-by-step description of how to achieve this.
+[CompuTec AppEngine Plugin Code Generator](https://www.nuget.org/packages/CompuTec.AppEngine.PluginCodeGenerator/) can generate controllers, models, and serializers based on defined interfaces. Below is a step-by-step description of how to achieve this.
 
-### Adding and configuring generator
+### Adding and Configuring Generator
 
 1. First, we will need to add Code Generator to our Plugin project. We can do this using NuGet Manager.
 2. Search for CompuTec.AppEngine.PluginCodeGenerator and install it.
@@ -559,7 +559,7 @@ CompuTec AppEngine Plugin Code Generator can generate controllers, models, and s
     ```
 
     :::warning
-        Saving T4 file will start generator.
+    Saving T4 file will start generator.
     :::
 
 13. If you created a plugin solution from a wizard, then all this projects are already created, excluding Serializer. We need to add this project the samee way as we did in case of our Setup project.

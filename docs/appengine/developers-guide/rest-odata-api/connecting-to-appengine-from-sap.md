@@ -41,31 +41,31 @@ After that, we can save it to BizStore with parameters:
 - Operation Type: store_op
 - Document: Name of a document in BizStore where we want to save the token.
 
-## Using token in an integration scenario
+## Using Token in an Integration Scenario
 
 Below is an example of sending data to AppEngine. Authentication is done using the token saved in the previous steps.
 
 ![Transformation-atom](./media/connecting-to-appengine-from-sap/step-modeler.webp)
 
-1. GetLux – an atom that prepares data that will be sent to AppEngine.
-2. GetToken – an atom that gets a saved token (Operation Type: access_op).
+1. **GetLux** – an atom that prepares data that will be sent to AppEngine.
+2. **GetToken** – an atom that gets a saved token (Operation Type: access_op).
 
     ![Configuration](./media/connecting-to-appengine-from-sap/configuration.webp)
-3. ToSendVal - prepares JSON structure (according to documentation for a given object - in our example, this is InspectionReading) that will be sent to AppEngine. Atom prepares data in variables, creates \<token\> section and place JSON structure in \<bfa:io\> section.
+3. **ToSendVal** - prepares JSON structure (according to documentation for a given object - in our example, this is InspectionReading) that will be sent to AppEngine. Atom prepares data in variables, creates \<token\> section and place JSON structure in \<bfa:io\> section.
 
     ![To send](./media/connecting-to-appengine-from-sap/to-send-al.webp)
-4. SendValue - HTTA atom sends data to AppEngine.
+4. **SendValue** - HTTA atom sends data to AppEngine.
 
     ![Send to AppEngine](./media/connecting-to-appengine-from-sap/send-to-appengine.webp)
 
     Parameters:
 
-    - destPath - points to a function called API function.
-    - XPath Expression points to JSON data.
-    - Outbound Configuration - in this section, we need to add the following parameters:
+    - **destPath** - points to a function called API function.
+    - **XPath Expression** - points to JSON data.
+    - **Outbound Configuration** - in this section, we need to add the following parameters:
 
-      - httpheader.content-type - application/x-www-form-urlencoded; charset=UTF-8
-      - httpheader.Authorization - points to prepared token
+      - **httpheader.content-type** - application/x-www-form-urlencoded; charset=UTF-8
+      - **httpheader.Authorization** - points to prepared token
 
 ## Summary
 

@@ -12,15 +12,15 @@ Here, you can find information about configuration for using AppEngine plugins w
 
 ### External Host Address
 
-:::note
+:::info Path
     Administration Panel → Settings → General → Hosting → HttpsPorts
 :::
 
-This address points from the Web Client to the AppEngine installation. It has to be an HTTPS address. By default, the address is set to localhost with the default port. If the address differs from the local host, it must be changed accordingly.
+This address directs the Web Client to the AppEngine installation and must be an HTTPS address. By default, the address is set to localhost with the default port. If the address is different from localhost, it must be updated accordingly.
 
 ![External Host](./media/working-with-sap-business-one-web-client/external-host-address.webp)
 
-It is also required to point to the AppEngine installation from the Web client. This address is stored in an AppEngine configuration table in a database. For this address to be updated, it is required to activate a Company or deactivate and activate again if the AppEngine installation was upgraded to the 2.0.7.0 version (SLD Servers → Companies).
+It is also necessary to direct the Web Client to the AppEngine installation. This address is stored in an AppEngine configuration table within a database. To update this address, you need to activate a Company or deactivate and reactivate it if the AppEngine installation has been upgraded to version 2.0.7.0 (SLD Servers → Companies).
 
 ![Activate Database](./media/working-with-sap-business-one-web-client/ae-activate-database.webp)
 

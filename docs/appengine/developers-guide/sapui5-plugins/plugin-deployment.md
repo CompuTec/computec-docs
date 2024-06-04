@@ -6,9 +6,9 @@ sidebar_position: 16
 
 ## Description
 
-Preparing deployment package is straight forward. Release build content should be packed into zip. This zip can be later used to install plugin as described here: Configuration and Administration#Plugins.
+Preparing deployment package is straight forward. Release build content should be packed into zip. This zip can be later used to install plugin as described here: [Configuration and Administration](../../administrators-guide/configuration-and-administration/overview.md#plugins)
 
-### Creating Deployment package
+### Creating Deployment Package
 
 1. Open your solution in Visual Studio.
 
@@ -19,7 +19,7 @@ Preparing deployment package is straight forward. Release build content should b
 3. Rebuild solution.
 
     ![Rebuild](./media/plugin-deployment/rebuild.webp)
-4. Now we need to pack build content of Plugin Project. You can find path of your build in build output (or in your project properties - build - output path).
+4. Now, we need to pack build content of Plugin Project. You can find path of your build in build output (or in your project properties - build - output path).
 
     ![Build](./media/plugin-deployment/build-result-path.webp)
 5. Finally we just need to pack content of build into zip archive.

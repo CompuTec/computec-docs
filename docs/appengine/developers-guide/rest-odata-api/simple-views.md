@@ -6,7 +6,7 @@ sidebar_position: 4
 
 ## What is CompuTec AppEngine Simple View?
 
-Odata v4-based tool providing a unified data consumption method (directly from the database).
+CompuTec AppEngine Simple View is an Odata v4-based tool providing a unified data consumption method (directly from the database).
 
 ### Features
 

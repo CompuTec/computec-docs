@@ -53,3 +53,30 @@ sidebar_position: 9
 **Skip none item allocation quantity** – when the checkbox is checked, quantity of Items managed by neither Batch nor Serial Numbers is not detracted by the already allocated (e.g., on Pick Lists) quantity. To work correctly on, the option required related options to be checked for needed transactions (Delivery – skip SAP Allocation Quantity, Stock Transfer – skip SAP Allocation Quantity).
 
 **Open Telemetry Endpoint URL** – an address to which diagnostic data is sent from the Android application.
+
+## Changes
+
+The old Common tab:
+    ![Common](./media/common/common.png)
+
+Show Items with 0 quantity and Information about Business Partner on Base Document options were removed.
+
+The option can be realized by a specific query in Query Manager.
+    ![Common](./media/common/common-01.png)
+
+**Show Items with 0 quantity on Base Document option**
+
+By default the application displays Items with zero quantity. Adding the following line to a query **AND T1."OnHand" > 0**  results in displaying Items with quantity greater than 0. The following example concerns Delivery transaction.
+    ![Common](./media/common/common-02.png)
+    ![Common](./media/common/common-03.png)
+
+On the left you can see a list before adding the mentioned line. The right screenshot show the same list after adding the line:
+    ![New Item Before](./media/common/new-item-before.png)
+    ![New Item After](./media/common/new-item-after.png)
+
+**Information about Business Partner on Base Document option**
+
+These information are contained in default query with CardCode and CardName values (that holds BP's number and BP's name respectively).
+
+The following example shows a query for Goods Receipt PO transaction:
+    ![Common](./media/common/common-04.png)

@@ -6,13 +6,13 @@ sidebar_position: 12
 
 ## Prerequisites
 
-Configured Background processing. Described here: Configuration and Administration -> Background processing.
+Configured Background processing. Described here: [Configuration and Administration -> Background processing](../../administrators-guide/configuration-and-administration/overview.md).
 
 ## Description
 
 In the following tutorial, we will show you how to create an AppEngine Job. We will create Job that will react to adding Sales Order that is not approved. This job will create a new ToDo task.
 
-## Adding new Job
+## Adding New Job
 
 1. AppEngine Jobs requires CompuTec.AppEngine.EventBus so we need to add it to our Plugin project.
 
@@ -21,7 +21,7 @@ In the following tutorial, we will show you how to create an AppEngine Job. We w
 
     ![Sales](./media/appengine-jobs/sales-order-to-approve-event-job-new-file.webp)
 3. This class needs to inherit from CompuTec.AppEngine.Base.Infrastructure.Jobs.EventBusSecureJob.
-4. As soon as we add this inheritance we will get information in Visual Studio that we need to implement abstract method call() and parametrized constructor. After doing so this class will look like this:
+4. As soon as we add this inheritance, we will get information in Visual Studio that we need to implement abstract method call() and parametrized constructor. After doing so, this class will look like this:
 
     SalesOrderToApproveEventJob.cs
 
@@ -48,14 +48,14 @@ In the following tutorial, we will show you how to create an AppEngine Job. We w
     }
     ```
 
-5. By adding Logger we will be able to log messages that later can be checked directly from AppEngine Administration Panel.
-6. Now there is only one piece missing that will allow this Job to be called from AppEngine. EventBusJob annotations from CompuTec.AppEngine.Base.Infrastructure.Jobs.Annotations namespace. In this annotation, we can provide information about our job as well as on what type and action it should be triggered.
+5. By adding Logger, we will be able to log messages that later can be checked directly from AppEngine Administration Panel.
+6. Now, there is only one piece missing that will allow this Job to be called from AppEngine. EventBusJob annotations from CompuTec.AppEngine.Base.Infrastructure.Jobs.Annotations namespace. In this annotation, we can provide information about our job as well as on what type and action it should be triggered.
 7. Let us add an annotation to our job
 
-    - JobId - Id of this job that will be used by AppEngine. It is visible in AppEngine Administration Panel
-    - Description - Description of the job. Visible in AppEngine Administration Panel
-    - ContentType - ObjectType that we want to react on. This is the same object that is used in variable object_type in SBO_SP_TransactionNotification and SBO_SP_PostTransactionNotice.
-    - ActionType - action type of event for example: A - Add, U - Update, D - Delete
+    - **JobId**- Id of this job that will be used by AppEngine. It is visible in AppEngine Administration Panel
+    - **Description** - Description of the job. Visible in AppEngine Administration Panel
+    - **ContentType** - ObjectType that we want to react on. This is the same object that is used in variable object_type in SBO_SP_TransactionNotification and SBO_SP_PostTransactionNotice.
+    - **ActionType** - action type of event for example: A - Add, U - Update, D - Delete
     - In our example, we want to react to adding Sales Order hence we set ContentType to "17" and ActionType to "A".
 
     ```csharp
@@ -89,18 +89,18 @@ In the following tutorial, we will show you how to create an AppEngine Job. We w
     }
     ```
 
-8. Now after rebuilding, our action is already available in background processing in Administration Panel, and we can activate it. (If you don;t know how to do it then please check Configuration and Administration#Backgroundprocessing) When you open Job configuration you can see ale details from our annotation and also plugin id - from plugin manifest.
+8. Now after rebuilding, our action is already available in background processing in Administration Panel, and we can activate it. (If you don't know how to do it then please check [Configuration and Administration](../../administrators-guide/configuration-and-administration/overview.md#background-processing)). When you open Job configuration, you can see all details from our annotation and also plugin id - from plugin manifest.
 
     ![Event Job](./media/appengine-jobs/event-job-activation.webp)
 9. Now lets add logic to our Job.
-10. First we need to retrieve Sales Order DocEntry from event Message. We can do it by deserializing message
+10. First, we need to retrieve Sales Order DocEntry from event Message. We can do it by deserializing message
 
     ```csharp
     dynamic json = JsonConvert.DeserializeObject(Message.Body);
     int DocEntry = json.DocEntry;
     ```
 
-11. Now we can get derails regarding Sales Order using simple Query. We will create separate method for this
+11. Now, we can get details regarding Sales Order using simple Query. We will create separate method for this.
 
     GetSalesOrderDetails
 
@@ -116,7 +116,7 @@ In the following tutorial, we will show you how to create an AppEngine Job. We w
     }
     ```
 
-12. Finally we can add new To Do task.
+12. Finally, we can add new To Do task.
 
     AddNewToDoTask
 
@@ -132,7 +132,7 @@ In the following tutorial, we will show you how to create an AppEngine Job. We w
     }
     ```
 
-13. At the end SalesOrderToApproveEventJob.cs will be as follows:
+13. At the end, SalesOrderToApproveEventJob.cs will be as follows:
 
     SalesOrderToApproveEventJob.cs
 
@@ -219,7 +219,7 @@ In the following tutorial, we will show you how to create an AppEngine Job. We w
 
 ## Results
 
-To test it we will need to add new Sales Order that is not approved.
+To test it, we will need to add new Sales Order that is not approved.
 
 ### Optional
 

@@ -10,7 +10,7 @@ Here, you can find information on configuring CompuTec AppEngine for HTTPS commu
 
 ## Overview
 
-To configure HTTPS, it's needed to import a valid certificate to the Local Machine store on the server where CompuTec AppEngine service runs and configure its properties in the Administration Panel.
+To configure HTTPS, it is needed to import a valid certificate to the Local Machine store on the server where CompuTec AppEngine service runs and configure its properties in the Administration Panel.
 
 ## Certificate
 
@@ -26,7 +26,11 @@ After importing, copy its Thumbprint property from the certificate Details tab, 
 
 ## Configuration
 
-CompuTec AppEngine port and certificate thumbprint can be defined in the CompuTec AppEngine Administration Panel → Settings → General → Hosting → HttpsPorts:
+CompuTec AppEngine port and certificate thumbprint can be defined in the CompuTec AppEngine
+
+:::info Path
+Administration Panel → Settings → General → Hosting → HttpsPorts
+:::
 
 ![Setting](./media/https-configuration/appengine-https-settings.webp)
 
@@ -34,7 +38,7 @@ In the configuration, set the port and enter your copied thumbprint into the Cer
 
 After making this change, restart the CompuTec AppEngine service.
 
-## How to check if the configuration works
+## How to Check if the Configuration Works
 
 You can open this URL in a web browser and see if the login screen is displayed:
 

@@ -19,3 +19,24 @@ An example view of the documentation:
 API usage examples in Postman:
 
 <!-- TODO: Link -->
+
+## Steps to Create Pick Order or Pick Receipt using webAPI Calls
+
+- Create pick order or pick receipt through webAPI requires 2 steps:
+
+        - Create an empty document by calling the end point
+        /ProcessForce/CreatePickOrderForProductionIssue and /ProcessForce/CreatePickReceiptForProductionReceipt respectively using method "POST"
+        - Update the created document with necessary details using patch
+
+- Create pick order for operation requires user to set operation details while creating document using the below request template
+
+        ```java
+        {code:java}
+        {"IssueType":"Operations","LineNumbers":  {"<MO DocNum>": [
+                <U_LineNum of the operation from @CT_PF_MOR12 table>
+            ]
+        },"ManufacturingOrderDocEntries":
+        [ "<MO DocNum>"]
+        }
+        {code}
+        ```

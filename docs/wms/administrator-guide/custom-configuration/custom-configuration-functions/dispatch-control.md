@@ -49,3 +49,26 @@ sidebar_position: 6
 **Enable checking Package Number for selected BP's only** – this option allows to check Package Number only for some chosen previously Business Partners
 
 **Verify Business Partner part numbers for the first Item in SU** – this option allows you to check U_PackageNumber and Business Partner number only for the first item in SU
+
+## Changes
+
+The old view of Dispatch Control tab. Extra field query checkbox has been removed:
+    ![Dispatch Control](./media/dispatch-control/dispatch-control.png)
+
+To use the functionality, it is required to create a specific SQL query in Custom Query Manager:
+    ![Dispatch Control](./media/dispatch-control/dispatch-control-01.png)
+
+Click Load to choose a window to which we want to make changes.
+    ![Dispatch Control](./media/dispatch-control/dispatch-control-02.png)
+
+On the right side there are the following sections: Required Fields, Available parameters, Filter Parameters and available CompuTec WMS fields.
+    ![WMS CompuTec Fields](./media/dispatch-control/fields.png)
+
+The basic data for the change will be taken from called from SQL Query Manager.
+    ![Basic Data](./media/dispatch-control/basic-data.png)
+
+In this example data from Address and TransId columns will be added to Field5 and Field6 fields respectively.
+    ![Fields](./media/dispatch-control/fields-01.png)
+
+On the screenshots below you can see the CompuTec WMS window before and after the change.
+    ![Delivery Selection](./media/dispatch-control/delivery-selection.PNG)

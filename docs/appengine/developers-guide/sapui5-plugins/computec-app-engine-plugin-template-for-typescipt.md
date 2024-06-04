@@ -8,7 +8,7 @@ sidebar_position: 14
 
 Node.js version 12 or higher.
 
-## Create new plugin project
+## Create New Plugin Project
 
 ### Download
 
@@ -17,7 +17,7 @@ Go to the following address: [https://www.nuget.org/packages?q=computec](https:/
 ### Adding
 
 :::note
-    In the following example we will use a template for AppEngine plugin with UI5 and Javascript on the frontend.
+    In the following example, we will use a template for AppEngine plugin with UI5 and Javascript on the frontend.
 :::
 
 To install the package, go to Windows Terminal and run the following command:
@@ -30,7 +30,7 @@ You will get a message about successful installation, along with the list of ins
 
 ![Template List](./media/computec-app-engine-plugin-template-for-typescipt/template-list.webp)
 
-Once the package is installed you can check the list again using the following command:
+Once the package is installed, you can check the list again using the following command:
 
     ```bash
 dotnet new --list AE
@@ -46,7 +46,7 @@ Use the following command to create a new template to work on it later (ctaeplug
 dotnet new ctaeplugints --RoutePrefix testPlugin --PluginId CompuTec.AppEngine.Plugin.Test
     ```
 
-## Visual Studio – Configure project build and debug
+## Visual Studio – Configure Project Build and Debug
 
 1. It is a good approach to build directly to the AppEngine plugins location, so that you do not need to copy files every time after build.
 
@@ -55,6 +55,6 @@ dotnet new ctaeplugints --RoutePrefix testPlugin --PluginId CompuTec.AppEngine.P
 
     ![Output](./media/computec-app-engine-plugin-template-for-typescipt/output-path.webp)
 
-2. After the build, you can activate plugin in AppEngine Administration Panel. More information about this process can be found here. After that, you will be able to open plugin from the AppEngine launchpad.
+2. After the build, you can activate plugin in AppEngine Administration Panel. More information about this process can be found [here](../../administrators-guide/configuration-and-administration/overview.md). After that, you will be able to open plugin from the AppEngine launchpad.
 
     ![First List](./media/computec-app-engine-plugin-template-for-typescipt/first-list-of-todos.webp)

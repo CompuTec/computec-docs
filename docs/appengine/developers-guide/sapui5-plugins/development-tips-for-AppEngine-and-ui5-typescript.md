@@ -2,20 +2,20 @@
 sidebar_position: 15
 ---
 
-# Development tips for AppEngine and UI5 TypeScript
+# Development Tips for AppEngine and UI5 TypeScript
 
 ## Prerequisites
 
 Node.js version 12 or higher
 
-## Visual Studio Code recommended extensions
+## Visual Studio Code Recommended Extensions
 
 - SAP Fiori tools - Extension Pack
 - UI5 Language Assistant
 - XML Toolkit
 - ESLint
 
-## Recommended configuration for build and debug
+## Recommended Configuration for Build and Debug
 
 1. Set up build path for the Plugin project. Thanks to that, files will be build to the location where AppEngine keeps all plugins.
 
@@ -54,13 +54,13 @@ Node.js version 12 or higher
 
     5. Path mapping example:
 
-        ```json
-        "DevMode": "True",
-            "UIDevMode": "True",
-            "DevUIMapping": {
-                "CompuTec.Demo.TestPlugin": "C:/Users/maciejp/source/repos/CompuTec.Demo.TestPlugin/CompuTec.Demo.TestPlugin/www"
-            },
-        ```
+            ```json
+            "DevMode": "True",
+                "UIDevMode": "True",
+                "DevUIMapping": {
+                    "CompuTec.Demo.TestPlugin": "C:/Users/maciejp/source/repos/CompuTec.Demo.TestPlugin/CompuTec.Demo.TestPlugin/www"
+                },
+            ```
 
     6. Start CompuTec.AppEngine.Host.ConsoleApp.exe and you can verify your settings in the console.
 
@@ -68,9 +68,9 @@ Node.js version 12 or higher
     7. Open your www folder in Visual Studio.
     8. In the terminal, start build script in watch mode:
 
-        ```bash
-        npm run "watch:ts"
-        ```
+            ```bash
+            npm run "watch:ts"
+            ```
 
     9. Go to AppEngine Administration Panel to activate your plugin if it is not activated yet.
     10. Go to AppEngine Launchpad and open your plugin.

@@ -148,3 +148,75 @@ sidebar_position: 1
 
 **Move CatchWeight quantity difference to** - This option saves the differences to the specified field in SAP B1
     ![CatchWeight Quantity](./media/grpo/catchweight-quantity-difference.png)
+
+## Changes
+
+Old view of the tab:  Goods Receipt PO.
+
+The following options have been removed: Extra field in Purchase Orders query (1) and Purchase Orders sorting order (2). Functionalities of both of these options can now be used through Custom Query Manager.
+    ![GRPO](./media/grpo/grpo-tab.png)
+
+To set up the options go to Manager tab, check Enable Custom Query Manager checkbox and log in using SAP Business One credentials.
+    ![Custom Query Manager Checkbox](./media/grpo/custom-query-manager-checkbox.png)
+
+Next, choose Goods Receipt PO option and click Load.
+    ![GRPO](./media/grpo/grpo.png)
+
+**AD.1 Extra field in Purchase Orders query**
+
+Choose Purchase Order List and click Load button next to it:
+    ![Purchase Order List](./media/grpo/po-list.png)
+
+Now you can see the information on:
+
+- required fields
+- available parameters
+- filter parameters
+    ![Fields](./media/grpo/fields-02.png)
+
+You can create your own query, use a default one (by clicking Copy from default button) or modify the default one.
+    ![Create Own Query](./media/grpo/create-own-query.png)
+
+An example query:
+
+In this example it is required to display a currency code in the 4 field. It will be done in Goods Receipt PO --> from Purchase Order window, on choosing a purchase document.
+
+Here, you can check the default query:
+    ![Default Query](./media/grpo/default-query.png)
+
+and a query modified for this example:
+    ![Modified Query](./media/grpo/modified-query.png)
+
+The following lines have been changed:
+
+| Old Line | New Line |
+| --- | --- |
+| `T0."CardName" AS "Filed4"` | `coalesce(cast(T0."DocCur" AS nvarchar(4000)), '')+'//'+coalesce(cast(T0."CardName" AS nvarchar(4000)), '')) AS "Field4"` |
+
+The new line takes the following information from the table: a values of a currency code, a sign that will separate the values and on which field it will be displayed.
+
+The screenshots below presents the difference in results between the default and modified for this example queries:
+    ![Order Selection](./media/grpo/order-selection-02.PNG)
+
+Here you can check from where the data is taken for this example:
+    ![Data](./media/grpo/data.png)
+    ![Data](./media/grpo/data-01.png)
+
+Please also note:
+
+    ```SQL
+    For MS SQL: (coalesce(cast(T0."DocCur" AS nvarchar(4000)), '')+'//'+coalesce(cast(T0."CardName" AS nvarchar(4000)), '')) AS "Field4" (nowa linijka) - Jeśli mamy środowisko SQL
+
+    For HANA: (coalesce(cast(T0."DocCur" AS nvarchar(4000)), '')||'//'||coalesce(cast(T0."CardName" AS nvarchar(4000)), '')) AS "Field4"
+    ```
+**AD.2 Purchase Orders sorting order**
+
+There are four sorting options. On the left side there are options from the old view, on the right side related commands that can be used now:
+    | Old View | New View |
+    | --- | --- |
+    | creationdate ascending | `"DocDate" ASC` |
+    | creationdate descending | `"DocDate" DESC` |
+    | duodate ascending | `"DocDuoDate" ASC` |
+    | duodate descending | `"DocDuoDate" DESC` |
+
+    ![Duo Date](./media/grpo/duo-date.png)
