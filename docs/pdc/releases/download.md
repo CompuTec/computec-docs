@@ -40,7 +40,7 @@ import Releases93 from "../releases-93.json";
 :::danger
     As of the following releases: **3.10.6.1** (related ProcessForce version: 10.0 Release 6 (R6)), **3.93.15.1** (related ProcessForce version: 9.3 PL14 Release 2 (R2)) **CompuTec PDC is released as an AppEngine plugin only**.
 
-    Browse new versions [here](/docs/appengine/releases/download/pdc).
+    Browse new versions [here](/docs/appengine/releases/plugins/pdc/download).
 :::
 
 ### For 10.0
