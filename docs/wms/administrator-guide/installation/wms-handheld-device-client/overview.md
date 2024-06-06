@@ -18,18 +18,9 @@ This document provides a step-by-step guide on installing the WMS Handheld Devic
 
 WMS requires a .NET Compact Framework version respective to an operating system installed on a device to work correctly:
 
-|**For Windows CE**| [Download](./media/windows%20ce.zip) |
-|---|---|
-|**For: Windows Mobile, Handheld Compact**| [**Download**](./media/windows%20mobile%20i%20handheld%20compact.zip) |
-
 ### Device Libraries
 
 Libraries for a specific brand of a device:
-
-| Intermec with Windows CE 5 and Windows Mobile 5 | [Download](./media/win%20ce%205%20i%20wm%205.zip) |
-|---|---|
-| **Intermec with Windows CE 6 and Windows Mobile 6** | [**Download**](./media/win%20ce%206%20i%20wm6.zip) |
-| **Symbol** | [**Download**](./media/symbol.zip) |
 
 ### DataWedge
 
