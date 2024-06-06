@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # General Configuration
 
-All the configuration is done via the manager application shipped with the installation. After launching the app, you can navigate through the menu on the left.
+All the configuration is done via the manager application shipped with the installation. After launching the application, you can navigate through the menu on the left.
 
 ---
 
@@ -14,17 +14,39 @@ Steps required to configure the service (order is not essential):
 
 ## Service Status
 
-Status – it indicates the service status (On/Off). You can change the status by using the icon next to it. Restarting the service by using the icon on changes like adding a printer or rules is recommended.
+- **Status** – it indicates the service status (On/Off). You can change the status by using the icon next to it. It is recommended to restart the service using the icon whenever changes such as adding a printer or modifying rules are made. You can check how to set it up here:
+
+<details>
+<summary>Click here to find out more</summary>
+<div>
+1. Open: Control Panel > System and Security > Windows Firewall:
+  ![Windows Firewall](./media/general-configuration/windows-firewall.png)
+2. Click the Advanced settings:
+  ![Advanced Settings](./media/general-configuration/advanced-settings.png)
+3. Select Inbound Rules and choose New Rule... in the Actions window - this runs New Inbound Rule Wizard:
+  ![Inbound Rules](./media/general-configuration/inbound-rules.png)
+4. Choose Port as the rule type:
+  ![Port](./media/general-configuration/port.png)
+5. Choose TCP protocol and specify 33006 local port:
+  ![Protocol and Ports](./media/general-configuration/protocol-and-ports.png)
+6. Choose Allow the connection action:
+  ![Allow the connection](./media/general-configuration/allow-the-connection.png)
+7. Choose all profiles:
+  ![Profiles](./media/general-configuration/profiles.png)
+8. Specify the rule name and click "Finish.":
+  ![Computec License Server](./media/general-configuration/computec-license-server.png)
+</div>
+</details>
 
 Addresses fields should be filled up automatically after a successful installation. In case of installation on a local server, please change the Web Address and Ct License Server to localhost (keep the ports, like in the screenshot above).
 
 General settings you need to define:
 
-- WebServiceAddres – Computec Label web service address (defines the connection between CompuTec Labels and SAP Business One) – default port value is 33006. **Make sure that the port is open**.
-- Server Address – SAP Server Address – (with a port on HANA).
-- License Server Address – SAP License Server – (with a port on HANA).
-- CT License Server Address – CompuTec License Server connection address – (with a port on HANA).
-- Refresh – refresh rate in seconds indicating how often the service scans for new printing requests.
+- **s** – Computec Label web service address (defines the connection between CompuTec Labels and SAP Business One) – default port value is 33006. **Make sure that the port is open**.
+- **Server Address** – SAP Server Address – (with a port on HANA).
+- **License Server Address** – SAP License Server – (with a port on HANA).
+- **CT License Server Address** – CompuTec License Server connection address – (with a port on HANA).
+- **Refresh** – refresh rate in seconds indicating how often the service scans for new printing requests.
 
 ## Printer Types
 
@@ -32,8 +54,8 @@ General settings you need to define:
 
 There are three printer types available now:
 
-- Label Printers: Bixolon, Zebra
-- Standard Printers: for SAP Crystal Reports.
+- **Label Printers**: Bixolon, Zebra
+- **Standard Printers**: for SAP Crystal Reports.
 
 To use any of these types, it is required to load its drivers (on the screenshot above, the drivers are already assigned: Printer Driver Name column is filled). To load the drivers, click a row of a specific printer and then click Edit Type. Click the icon next to the Driver Location field and choose the driver file corresponding to the Printer Type.
 
@@ -109,7 +131,7 @@ Define Template Code, Template Name, and optionally Description. Click the '+' i
 
 ## Label Reports
 
-After the template definition, assigning it here to specific printers is possible. After application installation, there are already default entries (marked on the screenshot below).
+Once the template is defined, it can be assigned to specific printers here. After installing the application, default entries will already be present (as indicated in the screenshot below).
 
 ![Label Reports](./media/general-configuration/label-reports.webp)
 
@@ -127,16 +149,16 @@ Choose the report file and name and click the + icon. Go back after the Data pub
 
 ![Published](./media/general-configuration/published-file.webp)
 
-Now, the report file is assigned to a template and corresponding printer.
+Now, the report file is assigned to a template and a corresponding printer.
 
 ## Companies
 
-Click the company tab and the Refresh button. Upon finishing, we add all company rows to our database by clicking the Update button.
+Click on the Company tab and then the Refresh button. Once completed, add all company rows to our database by clicking the Update button.
 
 ![Companies](./media/general-configuration/companies-refresh.webp)
 
-If a company is to be processed by our program, you must activate it. To do so, click on a given company and press Activate, then the Update button below the table.
+To process a company with our program, you must activate it. Click on the desired company, press Activate, and then click the Update button below the table.
 
-Click here to find out more about company installation and configuration.
+Click [here](company-installation-and-configuration.md) to find out more about company installation and configuration.
 
 ![Active](./media/general-configuration/activate-company.webp)

@@ -4,13 +4,13 @@ sidebar_position: 1
 
 # Download
 
-## Version compatible to SAP Business One 10.0 and ProcessForce 10.0
+## Version Compatible to SAP Business One 10.0 and ProcessForce 10.0
 
 :::caution
     Since this version CompuTec Labels is released in 64-bit version only. The version works in SAP HANA and Microsoft SQL Server environments.
 :::
 
-These versions require CompuTec License Server in 5.10.1.1 version.
+These versions require [CompuTec License Server in 5.10.1.1 version](/docs/processforce/releases/download).
 
 ### CompuTec Labels
 
@@ -25,7 +25,7 @@ These versions require CompuTec License Server in 5.10.1.1 version.
 |---|---|
 |2.0.289|[Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.289.zip)|
 
-## Version compatible with SAP Business One 9.3 and ProcessForce 9.3
+## Version Compatible with SAP Business One 9.3 and ProcessForce 9.3
 
 :::caution
     Since 4.7.1.72 version CompuTec Labels is released in 32-bit and 64-bit version. Both versions work in SAP HANA and Microsoft SQL Server environments.
@@ -47,3 +47,7 @@ These versions require CompuTec License Server in 5.10.1.1 version.
 ## CompuTec Gateway Service
 
 1.2.0.20 version: [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.0.20.msi)
+
+## AppEngine CompuTec Labels Plugin
+
+The related AppEngine plugin is available [here](/docs/appengine/releases/plugins/labels/download).

@@ -12,7 +12,7 @@ You can find information about two utilities indirectly connected to the applica
 
 ![Log](./media/other-functions/ct-labels-logs.webp)
 
-A log viewer – in the options below, we pick a date and a logging source (service, installation, manager). On the right, we have options for quick export to file.
+A log viewer – Below, we select a date and a logging source (service, installation, manager). On the right, there are options for quickly exporting to a file.
 
 ## Requests Tab
 

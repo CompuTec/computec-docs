@@ -21,7 +21,7 @@ sidebar_position: 1
     </div>
     </details>
 
-**Show Project selection** – choosing this option results in displaying the Project Selection form before the Remarks form when creating a document (to which it is required to add receiving Items).
+**Show Project Selection** – choosing this option results in displaying the Project Selection form before the Remarks form when creating a document (to which it is required to add receiving Items).
 
     <details>
     <summary>Click here to expand</summary>
@@ -80,16 +80,24 @@ sidebar_position: 1
 
 **Enable adding Items with Empty Bin Code field** – it allows to add Items without Bin Code to a Warehouse with Bin Locations. If enabled, an Item with an empty Bin Code will be assigned to the first available Bin.
 
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
+    ![Warehouse](./media/grpo/warehouse-01.png) ![Supplier Selection](./media/grpo/supplier-selection.png) ![Document Details](./media/grpo/document-details-01.png) ![New Item](./media/grpo/new-item.png) ![Quantity](./media/grpo/quantity-02.png)
+    </div>
+    </details>
+
 **Enable negative quantities for Items not managed by batch/serial number** – allows using negative quantities for Items managed neither by Batches nor Serial Numbers.
 
     <details>
-    <div>
     <summary>Click here to expand</summary>
+    <div>
         - This function works only with Items managed neither by Batch, nor Serial Numbers
         - Scanner barcode does not support negative quantity
         - Line with 0 quantity will not be added to the SAP document
         - Draft document with negative quantity is not supported
         - Storage Unit does not support negative quantity. 
+        ![Enable Negative Quantities](./media/grpo/enable-negative-quantities.PNG)
     </div>
     </details>
 
@@ -98,8 +106,8 @@ sidebar_position: 1
 **Enable setting Tax Date** – allows selecting a Tax Date on the Remarks form.
 
     <details>
-    <div>
     <summary>Click here to expand</summary>
+    <div>
     When the option is enabled:
         ![Tax Date](./media/grpo/tax-date.png)
     
@@ -115,13 +123,13 @@ sidebar_position: 1
 **Hide Supplier Ref. No. for GRPO from the base document** – checking this option causes the Supplier Ref. No. field to be hidden in the Remarks form (related to base documents: Purchase Order, A/P Reserve Invoice). (On GRPO transactions, when a user creates a document from a base document, a Supplier Ref. No. on the document is filled in from the base documents. If more than one base document is used for a transaction, then the first non-empty Supplier Ref. No. is used).
 
     <details>
-    <div>
     <summary>Click here to expand</summary>
+    <div>
     ![Supplier Reference No.](./media/grpo/supplier-ref-no.PNG)
     </div>
     </details>
 
-**Use Purchase UoM from Base Document** – checking this option displays quantities in Unit of Measure from the Base Document (while still operating on the actual quantities). Saving as document drafts is not possible when this option is turned on. Click here to find out more.
+**Use Purchase UoM from Base Document** – checking this option displays quantities in Unit of Measure from the Base Document (while still operating on the actual quantities). Saving as document drafts is not possible when this option is turned on. Click [here](../../../user-guide/managing-uom-in-computec-wms.md) to find out more.
 
 **Skip Storage Unit details**
 
@@ -132,8 +140,8 @@ sidebar_position: 1
 **Automatically populate the Quantity field with the value from the base document** – self-explanatory.
 
     <details>
-    <div>
     <summary>Click here to expand</summary>
+    <div>
     ![Auto Quantity](./media/grpo/auto-quantity.png)
     </div>
     </details>
@@ -146,8 +154,19 @@ sidebar_position: 1
 
 **PopUp validation Expiry Date Item** – an application message with a warning about the Item expiration date. It is based on ProcessForce Item Details (Batches tab > Expiry Date) or MS SQL query (in case of using the MS SQL query: if the query is empty, validation is not displayed)
 
-**Move CatchWeight quantity difference to** - This option saves the differences to the specified field in SAP B1
+**Move CatchWeight quantity difference to** - This option saves the differences to the specified field in SAP Business One.
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
     ![CatchWeight Quantity](./media/grpo/catchweight-quantity-difference.png)
+        1. **No action** - No action is performed
+        2. **Quantity** - The difference is recorded in the quantity field
+        (In No. of Packages, the number of packages is an integer)
+        ![Quantity](./media/grpo/quantity-03.png)
+        3. **Inventory Quantity** - The difference is recorded in the Qty(Inventory UoM) field
+        ![Inventory Quantity](./media/grpo/inventory-quantity.png)
+    </div>
+    </details>
 
 ## Changes
 

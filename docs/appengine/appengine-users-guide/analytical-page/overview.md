@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+toc_min_heading_level: 2
+toc_max_heading_level: 6
 ---
 
 # Overview
@@ -10,7 +12,7 @@ In the following manual, the MO360 plugin has been used.
 
 ---
 
-Click [**here**](https://www.youtube.com/watch?v=qXK2dS_9z3g) for a video demonstration.
+Click [here](https://www.youtube.com/watch?v=qXK2dS_9z3g) for a video demonstration.
 
 ---
 
@@ -46,11 +48,11 @@ You can put values in the field to filter all the records by these values. Filte
 
 You can adjust fields that are displayed in the filter by clicking the Adapt Filter button.
 
-<u>In the drop-down list</u> - you can filter all Manufacturing Order fields by the following values: All, Visible, Active, Visible and Active, Mandatory.
+**In the drop-down list** - you can filter all Manufacturing Order fields by the following values: All, Visible, Active, Visible and Active, Mandatory.
 
-<u>Hide/Show Values</u> - in the Adapt Filters view, you can hide/show already chosen values.
+**Hide/Show Values** - in the Adapt Filters view, you can hide/show already chosen values.
 
-<u>List/Group view</u> - the Group view will be implemented in one of the future releases.
+**List/Group view** - the Group view will be implemented in one of the future releases.
 
 The chosen filters can be displayed in the form of micro charts:
 
@@ -62,24 +64,24 @@ The report can be displayed in one of three forms: as a chart, as a table, and b
 
 ![Report](./media/overview/analytical-page-report-modes.png)
 
-#### Chart options
+##### Chart Options
 
-<u>Chart format</u> - you can choose a line chart, a vertical bar chart, a horizontal bar chart, or a pie chart.
+**Chart format** - you can choose a line chart, a vertical bar chart, a horizontal bar chart, or a pie chart.
 
 You can set the following settings for a chart: Dimension, Measure, Function, and Sort Type.
 
-#### Table options
+##### Table Options
 
 You can download the result table as an Excel document (.xlsx) or a CSV file (.csv).
 
 The Table settings:
 
-- Sorting - multi-level sorting, e.g., by Document Date ascending and then by Document Time descending,
+- **Sorting** - multi-level sorting, e.g., by Document Date ascending and then by Document Time descending,
 
-- Visibility - you can choose which columns are displayed
+- **Visibility** - you can choose which columns are displayed
 
-- Column Freezing - the "froze" Columns are displayed on the left side of the table all the time, even when you use the scroll bar to scroll further to the right (three left columns in the screenshot below).
+- **Column Freezing** - the "froze" Columns are displayed on the left side of the table all the time, even when you use the scroll bar to scroll further to the right (three left columns in the screenshot below).
 
-- Column Grouping - choose a column by which rows will be grouped. If you choose more than one, the grouping will be performed in levels. In the example below, there are two levels.
+- **Column Grouping** - choose a column by which rows will be grouped. If you choose more than one, the grouping will be performed in levels. In the example below, there are two levels.
 
 ![Table Options](./media/overview/table-options.png)

@@ -31,14 +31,14 @@ Click each link for the specific component installation manual:
 - [AppEngine installation](../administrators-guide/installation.md)
 - [CompuTec PDC plugin](../administrators-guide/configuration-and-administration/overview.md)
 - [ProcessForce plugin](/docs/appengine/administrators-guide/configuration-and-administration/overview)
-- [ProcessForce API (on the same server as appengine)](/docs/processforce/releases/download/)
+- [ProcessForce API (on the same server as appengine)](/docs/processforce/releases/download#computec-processforce-api)
 - [CompuTec PDC application](/docs/pdc/administrator-guide/installation/first-installation/)
 
 :::caution
 ProcessForce API needs to be installed on the same server as AppEngine.
 :::
 
-## Setting up the application
+## Setting up the Application
 
 After a successful installation choose the AppEngine console which database would you like to bind in :
 
@@ -50,7 +50,7 @@ Filling in the fields marked with the red arrows automatically fills in the fiel
 
 ![Computec PDC Plugin Settings](./media/computec-pdc-plugin/computec-pdc-plugin-settings.png)
 
-## Upgrade of the application
+## Upgrade of the Application
 
 To successfully upgrade the application please follow the steps:
 
@@ -59,7 +59,7 @@ To successfully upgrade the application please follow the steps:
     ![Computec PDC Plugin Update](./media/computec-pdc-plugin/computec-pdc-plugin-4-update.png)
     ![Computec PDC Plugin Update](./media/computec-pdc-plugin/computec-pdc-plugin-5-restart.png)
 
-    2. Install the corresponding CompuTec PDC application (before that you have to remove the already installed CompuTec PDC application)
+    2. Install the corresponding CompuTec PDC application (before that, you have to remove the already installed CompuTec PDC application)
 
 :::caution
 Check if you need to upgrade CompuTec ProcessForce API too (if yes, remove the existing one and install the new, corresponding one once again).
@@ -67,7 +67,7 @@ Check if you need to upgrade CompuTec ProcessForce API too (if yes, remove the e
 
     3. Start CompuTec PDC application.
 
-## Additional info
+## Additional Information
 
 1. CompuTec PDC details information can be found here.
 2. AppEngine for CompuTec PDC is only available from web address, no reference in SAP Business One or ProcessForce functional objects.

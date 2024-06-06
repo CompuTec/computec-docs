@@ -2,13 +2,13 @@
 sidebar_position: 3
 ---
 
-# Current task flow vs. Gantt chart
+# Current Task Flow vs. Gantt Chart
 
-Here you can find information on scenario definition.
+Here, you can find information on scenario definition.
 
 ---
 
-## Add new view
+## Add New View
 
 The 'Add new view' function is used to define scenarios. It It allows to filter elements displayed on the Gantt chart, to display just specific ones. It is possible to divide Resources into Departments, types of machines.
 
@@ -48,16 +48,16 @@ It is possible to change the graph display view. Features are as follows:
 
         - **Synchronize Time Scroll** – the graph returns to the current date after a specified interval in minutes.
 
-        - **Display** ![Current Task Flow vs Gantt Chart](./media/current-task-flow-vs-gantt-chart/image2020-9-14-22-58-46.png)
+- **Display** ![Current Task Flow vs Gantt Chart](./media/current-task-flow-vs-gantt-chart/image2020-9-14-22-58-46.png)
 
-    - **Table and chart**:
-    ![Current Task Flow vs Gantt Chart](./media/current-task-flow-vs-gantt-chart/image2020-9-14-22-59-51.png)
+        - **Table and chart**:
+        ![Current Task Flow vs Gantt Chart](./media/current-task-flow-vs-gantt-chart/image2020-9-14-22-59-51.png)
 
-    - **Chart**:
-    ![Current Task Flow vs Gantt Chart](./media/current-task-flow-vs-gantt-chart/image2020-9-14-23-0-37.png)
-    
-    - **Table**:
-    ![Current Task Flow vs Gantt Chart](./media/current-task-flow-vs-gantt-chart/image2020-9-14-23-1-13.png)
+        - **Chart**:
+        ![Current Task Flow vs Gantt Chart](./media/current-task-flow-vs-gantt-chart/image2020-9-14-23-0-37.png)
+        
+        - **Table**:
+        ![Current Task Flow vs Gantt Chart](./media/current-task-flow-vs-gantt-chart/image2020-9-14-23-1-13.png)
 
 ## Display Details
 
@@ -92,7 +92,7 @@ The side panel shows details of a Task flow on a Resource. The data is presented
     ![Current Task Flow vs Gantt Chart](./media/current-task-flow-vs-gantt-chart/image2020-12-7-14-21-43.png)
     ![Current Task Flow vs Gantt Chart](./media/current-task-flow-vs-gantt-chart/image2020-12-7-14-22-48.png)
 
-### Production process
+### Production Process Flow
 
     - Graphical representation of the manufacturing process for a Manufacturing Order
     ![Current Task Flow vs Gantt Chart](./media/current-task-flow-vs-gantt-chart/image2021-2-10-10-55-5.png)

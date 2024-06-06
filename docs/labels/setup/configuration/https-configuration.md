@@ -10,7 +10,7 @@ Here, you can find information on configuring CompuTec Labels for HTTPS communic
 
 ## Overview
 
-To configure HTTPS, it must import a valid certificate to the Local Machine store on the server where the CompuTec Labels service runs and configure its properties in the CompuTec Labels configuration file.
+To configure HTTPS, you must import a valid certificate into the Local Machine store on the server running the CompuTec Labels service and configure its properties in the CompuTec Labels configuration file.
 
 ## Certificate
 
@@ -28,7 +28,7 @@ After importing, copy its Thumbprint property from the certificate Details tab, 
 
 CompuTec Labels port and certificate thumbprint are defined in the configuration file located at `C:\Program Files\CompuTec\CompuTec LabelPrinting\CompuTec.LabelPrinting.WinService.exe.config`.
 
-Open it in a text editor (e.g., Notepad) running as an Administrator so you can save it. Otherwise, you must copy it from this folder to another location where the user can write and copy files back after editing.
+Open the file in a text editor (e.g., Notepad) running as an Administrator to enable saving changes. If not, you must copy the file to a location where the user has write access, make the necessary edits, and then copy the file back to its original folder.
 
 In the `<configuration> → <appsettings>` section define two keys:
 

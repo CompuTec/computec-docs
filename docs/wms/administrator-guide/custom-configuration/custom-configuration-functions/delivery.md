@@ -65,6 +65,12 @@ However, when a user creates a Delivery document from a base document, for examp
 **Copy the packed Items from the Pick List** – self-explanatory.
 
 **Forbid ordering greater quantities than on Order** – checking this checkbox blocks the possibility of issuing a higher quantity than on a base document.
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
+    ![Delivery Operations](./media/delivery/delivery-operations.png) ![Order Selection](./media/delivery/order-selection.PNG) ![Document Details](./media/delivery/document-details-01.png) ![Storage Info](./media/delivery/storage-info.png) ![Batches](./media/delivery/batches-02.png) ![Quantity](./media/delivery/quantity.png) ![Quantity](./media/delivery/quantity-01.png)
+    </div>
+    </details>
 
 **Hide scanned SU on Item list** – by default, scanning SU adds quantities of Item on it to a specific Item on the Item list and additionally SU as a line on the list. When the checkbox is checked, Item quantities are added to respective Item lines, but SU is not added as a separate line.
 
@@ -88,7 +94,7 @@ However, when a user creates a Delivery document from a base document, for examp
 
 **Skip SAP Allocation Quantity** – allows disabling SAP Business One Batch/Serial Numbers allocation (if needed for some custom changes). The Delivery works within a Warehouse with Bin locations for allocated Batches and Serial Numbers Items.
 
-**Freight (Sales Order field) cost** options:
+**Freight (Sales Order field) cost options**:
 
 - **Partial** - default option for CompuTec WMS and SAP Business One (when created from a Pick List)
 

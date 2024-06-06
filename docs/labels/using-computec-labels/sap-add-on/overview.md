@@ -8,7 +8,7 @@ sidebar_position: 1
     To proceed with the following instructions, the SAP add-on has to be installed. Click [here](../../setup/computec-labels-sap-addon.md) to check how to do this.
 :::
 
-To be able to print, first, you have to define object types that will be marked for this action. You can check here how to do this. These are the only objects on that view that can trigger a print action.
+To be able to print, first, you have to define object types that will be marked for this action. You can check [here](../../setup/configuration/company-installation-and-configuration.md) how to do this. These are the only objects on that view that can trigger a print action.
 
 Summarizing, all objects checked as 'Add' in the event triggers view (CT_LP_ETRG table) in column SAP will print automatically on add an action (provided employee has access to it (see events triggers view))
 
@@ -16,17 +16,17 @@ All objects checked as 'OnChange' in the event triggers view (CT_LP_ETRG table) 
 
 All objects regardless of an action in the event triggers view (CT_LP_ETRG table), will be accessible for manual printing in the SAP add-on.
 
-## Manual printing
+## Manual Printing
 
-To print on your request, open a document (object type has been defined) you wish to print. Navigate to File > Print Labels.
+To print your request, open a document (object type has been defined) you wish to print. Navigate to File > Print Labels.
 
 ![SAP Add-on](./media/sap-add-on/ct-labels-print-labels.webp)
 
-New windows appear. From there, just select a printer and click Print:
+New window will appear. From there, just select a printer and click Print:
 
 ![SAP Add-on](./media/sap-add-on/ct-labels-select-printer.webp)
 
-## Default printers for autonomic printing
+## Default Printers for Autonomic Printing
 
 For automatic printing (add/update printing as mentioned above), you must set up a default printer for the user/employee.
 

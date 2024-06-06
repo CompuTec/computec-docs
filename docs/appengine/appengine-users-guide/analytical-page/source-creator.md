@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Source Creator
 
-This option allows advanced configuration of data presented in [AppEngine User's Guide](../analytical-page/overview.md#usage).
+This option allows advanced configuration of data presented in [custom reports and analytics of the Analytical Page.](../analytical-page/overview.md#usage).
 
 ---
 
@@ -28,7 +28,7 @@ Here you can configure:
 
 - the name of the Variant
 - the source – an MS SQL query that will be a source of data for the Variant
-available fields (for a specific query) – the list is available after clicking the Show - Preview button after entering a query. Here you can modify the Variant by changing values for specific lines. You can set:
+- available fields (for a specific query) – the list is available after clicking the Show - Preview button after entering a query. Here you can modify the Variant by changing values for specific lines. You can set:
 
         - Displayed Column Name
         - Column Description
@@ -73,6 +73,6 @@ Click the + Add Variant to add a Variant:
 Here you can define:
 
 - Basic Settings: Name, View, Default, Accessibility (Public/Private);
-- Table Startup Settings: settings related to the [AppEngine User's Guide](../analytical-page/overview.md#table-options).
-- Chart Startup Settings: settings related to the [AppEngine User's Guide](../analytical-page/overview.md#chart-options).
-- Visual Filter Startup Settings: settings related to the [AppEngine User's Guide](../analytical-page/overview.md#chart-options).
+- Table Startup Settings: settings related to the [Table view](../analytical-page/overview.md#table-options).
+- Chart Startup Settings: settings related to the [Chart view](../analytical-page/overview.md#chart-options).
+- Visual Filter Startup Settings: settings related to the [charts](../analytical-page/overview.md#chart-options).

@@ -1,10 +1,12 @@
 ---
 sidebar_position: 4
+toc_min_heading_level: 2
+toc_max_heading_level: 6
 ---
 
 # Serialization: Fields Description
 
-Here you can find a description of all of the configuration fields that affect the serialization process.
+Here, you can find a description of all of the configuration fields that affect the serialization process.
 
 ---
 
@@ -48,13 +50,13 @@ You can find an example of a clustering case here: [Example usage: clustering](.
 
 ![Serialization - Fields Description](./media/field-description/image2020-1-13-4-39-6.png)
 
-#### Attributes list window
+#### Attributes List Window
 
 List with all defined attributes. Here you can start adding a new one or modify the existing.
 
 ![Serialization - Fields Description](./media/field-description/list-of-attributes-all.png)
 
-#### Single Attribute window add/view/edit
+#### Single Attribute Window add/view/edit
 
 ![Serialization - Fields Description](./media/field-description/iso-country-code.png)
 
@@ -82,28 +84,28 @@ List with all defined attributes. Here you can start adding a new one or modify 
 
 Here you can pin Attribute Templates in one SPT it accordance with used serialization standard. Each component of SPT you have to assign to a Field from the Track & Trace Table according to attribute type.
 
-#### SPT list window
+#### SPT List Window
 
 List with all defined SPT. From this place, you can start to add the new one or to modify the existing one.
 
 ![Serialization - Fields Description](./media/field-description/image2020-1-13-14-45-56.png)
 
-#### Singe SPT window add/view/edit
+#### Singe SPT Window add/view/edit
 
 ![Serialization - Fields Description](./media/field-description/serialization-parameters-templates.png)
 
-#### Header
+##### Header
 
 1. **Template Code** – SPT 's template code
 2. **Template Name** – SPT's template name
 3. **Is Active** – checked by default. If checked can be used in Rules
 4. **Remarks** – some additional remarks
 
-#### Attributes Tab
+##### Attributes Tab
 
 To add Attribute to the list you have to select [+]. In the column Attribute, you have to select Attribute Template and assign it to Attribute in column Field with a type compatible with Attribute's Template type. You are able to modify the Attribute’s parameters. Descriptions of fields are available at: Attribute's list window.
 
-#### Pool Tab
+##### Pool Tab
 
 You can assign a previously defined pool to the SPT (please see chapter Serial Numbers Pulls). One of them you should select as default.
 
@@ -138,15 +140,15 @@ When you define a rule for a particular Item/Revision, it will be as a first cho
 
 ![Serialization - Fields Description](./media/field-description/image2020-1-13-15-45-44.png)
 
-### Serialization Numbers Pools window
+### Serialization Numbers Pools Window
 
 This is a list of all defined Pools. From here you can start to add a new one or modify the existing.
 
 ![Serialization - Fields Description](./media/field-description/image2020-1-13-16-18-33.png)
 
-#### Serialization Numbers Pool definition
+#### Serialization Numbers Pool Definition
 
-Type Allocated – Serial Numbers from CSV file
+##### Type Allocated – Serial Numbers from CSV file
 
 ![Serialization - Fields Description](./media/field-description/image2020-1-13-16-6-58.png)
 
@@ -164,13 +166,13 @@ Type Allocated – Serial Numbers from CSV file
     10. **Free** – a number of free SN
     11. **Serial numbers** – List of serial numbers with statuses
 
-#### SN Pool Type Generated
+##### SN Pool Type Generated
 
 You can create an SQL formula that defines the generation algorithm which will be used to generate SN Pool during the production process:
 
 ![Serialization - Fields Description](./media/field-description/image2020-1-13-16-12-1.png)
 
-## Serialization results
+## Serialization Results
 
 ![Serialization - Fields Description](./media/field-description/image2020-1-13-16-9-27.png)
 
@@ -188,11 +190,11 @@ It is possible to analyze Track & Trace Report for each Serial Number:
 
 From this place, you can check, modify, and finally accept clustering and aggregation documents generated in CompuTec WMS. Editing and acceptance of document is possible for documents with Status = Ready for accepting.
 
-#### List of documents window
+#### List of Documents Window
 
 ![Field Description](./media/field-description/image2020-1-14-17-33-6.png)
 
-#### Single document add/view/edit window
+#### Single Dcument add/view/edit window
 
 ![Field Description](./media/field-description/image2020-1-14-17-34-31.png)
 

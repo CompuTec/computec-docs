@@ -2,13 +2,13 @@
 sidebar_position: 2
 ---
 
-# Scenario 1: Goods Receipt PO printed from SAP Business One
+# Scenario 1: Goods Receipt PO Printed from SAP Business One
 
-In this step-by-step manual, we will manually configure the application to print Goods Receipt PO from SAP Business One. Additionally, we want to save the prints to PDF.
+In this step-by-step manual, we will manually configure the application to print Goods Receipt Purchase Order from SAP Business One. Additionally, we want to save the prints to PDF.
 
 ---
 
-## Printer settings
+## Printer Settings
 
 Only the Crystal printer type allows to save to PDF. Therefore, we will use this option in this scenario.
 
@@ -25,6 +25,8 @@ With the following parameters, define
 - PhysicalName: Send to OneNote 16 (one of the printer's names available on this test server)
 - MaxCapacity: 75.
 
+Click [here](../../setup/configuration/general-configuration.md#printers) to find out more about printer configuration.
+
 ## Label Template
 
 We have to create a Label Template to which settings will be assigned and which itself will be assigned to a specific printer.
@@ -34,7 +36,8 @@ A Label Template used in this scenario:
 | TEMPLATE CODE | TEMPLATE NAME | TEMPLATE DESCRIPTION |
 |:-------------:|:-------------:|:--------------------:|
 | GRPO          | GRPO          | GRPO                 |
-|               |               |                      |
+
+Click [here](../../setup/configuration/general-configuration.md#printers) to find out more about printer configuration.
 
 ## Printing Rules
 
@@ -55,7 +58,7 @@ Crystal report used in this scenario:
 
 In Crystal Reports, different variables are used, e.g., StringPar, and NumericPar. It is possible to attach to each of its specific data in the next step: mapping.
 
-### CompuTec Labels localization
+#### CompuTec Labels Localization
 
 Crystal reports used by CompuTec Labels have to be located in the following locations:
 
@@ -75,6 +78,8 @@ Mapping rules used in this scenario:
 | StringPar1 | Parameter | ItemName (ItemName)           |
 | StringPar4 | Sql       | SELECT @DistNumber FROM DUMMY |
 
+Click [here](../../setup/configuration/company-installation-and-configuration.md#mapping-parameters-view) to find out more about mapping parameters configuration.
+
 ## Event Triggers
 
 The next thing is to define what action printing will occur.
@@ -85,25 +90,29 @@ Event Triggers set up used in this scenario:
 |:--------:|:-------------------:|:----------------:|:--------:|:--------:|:--------:|:--------:|
 | All      | All                 | Goods Receipt PO | OnChange | NoAction | NoAction | NoAction |
 
+Click [here](../../setup/configuration/company-installation-and-configuration.md#event-triggers-view) to find out more about event trigger configuration.
+
 ## Data Update
 
 After setting up all the settings, go to Companies and choose Update Global Data option:
 
 ![Global Settings](./media/scenario1-goods-receipt-po/ct-labels-update-global-settings.webp)
 
-## Template assigning
+## Template Assigning
 
-Next, we have to assign the template, GRPO, in this case, to a specific printer and choose the following:
+Next, we have to assign the template, [GRPO](#label-template), in this case, to a specific printer and choose the following:
 
 | INFO |    NAME   | TEMPLATE CODE | PRINTER CODE |                                               FILE                                              |
 |:----:|:---------:|:-------------:|:------------:|:-----------------------------------------------------------------------------------------------:|
 | OK   | GRPOtest1 | GRPO          | test1        | C:\Program Files (x86)\CompuTec\CompuTec LabelPrinting\Reports\LabelPrintingAyCrystalLayout.rpt |
 
+Click [here](../../setup/configuration/general-configuration.md#label-reports) to find out more about Template and report file assigning.
+
 ## Printing
 
 We defined the printing trigger as OnChange, which means that, in our case, a printing occurs on an updating a Goods Receipt PO document.
 
-We can also print a label manually at any time. To do this in SAP B1, go to the upper menu > File > Print Labels. Choose Crystal printer from a drop-down list and click Print.
+We can also print a label manually at any time. To do this in SAP Business One, go to the upper menu > File > Print Labels. Choose Crystal printer from a drop-down list and click Print.
 
 ![Print Labels](./media/scenario1-goods-receipt-po/print-labels.webp)
 

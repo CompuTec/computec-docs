@@ -16,7 +16,7 @@ Decimal/thousands of separators in CompuTec WMS, desktop client, are taken from 
 
 ### SAP Business One Settings
 
-1. In SAP B1, open General Settings.
+1. In SAP Business One, open General Settings.
 2. Open the Display tab.
 3. Change the Decimal Separator, e.g., to a comma (,) and Thousands Sep. to a full stop (.).
 4. Press Update.

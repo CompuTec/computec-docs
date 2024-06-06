@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Introduction to Labels
+# Overview
 
 Here, you can find basic, first-encounter information about the application. For more detailed information, please check the rest of the documentation.
 

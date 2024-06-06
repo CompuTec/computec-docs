@@ -49,17 +49,17 @@ Clustering rule:
 | --- | --- | --- | --- | --- | --- |
 | Receiver SEC/Serial# GRPO | Y | Y | Y |  | Y |
 
-### Item declaration for serialization
+### Item Declaration for Serialization
 
 For Items (managed by Batch) to be serialized, set UDF: Serialization enabled=Yes in Item Master Data. Thanks to this, all revisions of this Item will be subject to Rules controlling the selection of SPT for a given Item/ Revision.
 
 ![Clustering](./media/clustering/image2020-1-8-13-57-39.png)
 
-### WEB application – log in
+### WEB Application – log in
 
 [Please check this section of the documentation](/docs/appengine/appengine-users-guide/launchpad/).
 
-### Attributes Templates – definition
+### Attributes Templates – Definition
 
 The first step is to define Attribute Templates that can be used to build various variants of the Serialization Parameter Template (SPT). Each UNP member has assigned a separate Attribute. It is also necessary to define Attributes that allow the clustering process to be carried out.
 

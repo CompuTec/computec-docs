@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Prerequisites
+# Requirements
 
 Here, you can find requirements that have to be fulfilled for CompuTec WMS to work correctly.
 
@@ -14,7 +14,7 @@ CompuTec WMS requires a .NET Framework to work correctly.
 
 The minimum version of the .NET Framework supported by CompuTec WMS is 4.7.
 
-### How to Check the .NET Framework version
+**How to Check the .NET Framework version**
 
 1. Type in the following command in Command Prompt from Windows applications:
 
@@ -151,7 +151,7 @@ The supported database servers are:
 
 If ProcessForce is installed, CompuTec WMS requires CompuTec ProcessForce API 32-bit or 64-bit (depending on CompuTec WMS version) to work correctly. ProcessForce API has to be in the exact version as ProcessForce installed on the database.
 
-## Preparing Environment: Installation order
+## Preparing Environment: Installation Order
 
 :::danger
     Please note that installing in an order different from the one presented below may cause issues with the operation of CompuTec WMS.
