@@ -14,7 +14,7 @@ Here you can download all required CompuTec WMS files.
 :::note
     Before installation please be sure that you:
 
-    - Checked and fulfilled [the prerequirements](../administrator-guide/installation/prerequisites.md) before installing CompuTec WMS Server.
+    - Checked and fulfilled [the prerequirements](../administrator-guide/installation/requirements.md) before installing CompuTec WMS Server.
     - You know the [upgrade instructions](../administrator-guide/upgrade.md).
 :::
 
