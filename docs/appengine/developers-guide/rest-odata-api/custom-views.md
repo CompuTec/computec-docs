@@ -23,7 +23,7 @@ CompuTc AppEngine provides a mechanism for encapsulating complex database querie
     `<plugin identifier>:<view identifier>`
 :::
 
-## Custom View Definition from Plugin Dir
+### Custom View Definition from Plugin Dir
 
 `<file name>.customview.json`
     ```json
@@ -37,7 +37,7 @@ CompuTc AppEngine provides a mechanism for encapsulating complex database querie
 }
     ```
 
-## Request
+### Request
 
 Request URL
     ```text
@@ -46,7 +46,7 @@ Request URL
 
 ## Example
 
-### View definition
+### View Definition
 
 File: BusinessPartnerPaymentTerms.customview.json
 
@@ -113,9 +113,9 @@ Response Body
 }
     ```
 
-## Example with parameters
+## Example with Parameters
 
-### View definition
+### View Definition
 
 File: request.customview.json
 

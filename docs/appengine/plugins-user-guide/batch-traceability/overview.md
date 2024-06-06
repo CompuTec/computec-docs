@@ -62,7 +62,7 @@ Select a Batch line and you will be redirected to its Overview.
 
 ## Overview
 
-On this screen you can find some tiles that bring you analytical information. The Selected Batch is a start point for analysis. Prepared information is related to the Batch and products (Batches) affected by the Batch. That means, information is prepared for all nodes on the right from selected node in the trace graph.
+On this screen, you can find some tiles that bring you analytical information. The Selected Batch is a start point for analysis. Prepared information is related to the Batch and products (Batches) affected by the Batch. That means, information is prepared for all nodes on the right from selected node in the trace graph.
 
 ![Batch Traceability 360 Overview](./media/overview/new-overview.jpg)
 
@@ -80,15 +80,15 @@ Select button ![Trace Button](./media/overview/trace-button.png) and you will be
 
 On this graph specific Batches are represented by boxes (nodes) with its details. You can zoom in or zoom out the view by using a mouse roll or ![Zoom In](./media/overview/zoom%20in.png) and ![Zoom Out](./media/overview/zoom-out.png). You can show or hide legend by using ![Hide Legend](./media/overview/hide-legend.png). You can expand view by using ![Expand Legend](./media/overview/expand-legend.png).
 
-### Going forward and backward
+### Going Forward and Backward
 
-The Batch Trace visualization form shows what a specific Item was made of. It looks back on every Batch that was used in production process to the point of a chosen Batch.
+The Batch Trace visualization form shows the composition of a specific item by tracing back through every batch involved in its production process, up to a selected batch.
 
 ![Batch Trace visualization form](./media/overview/going-backward-and-forward.png)
 You can also choose a Batch and go forward to see where the Items from a specific Batch were used. To do that, hold Shift and left-click on a desired Batch:
 ![Going Backward and Forward](./media/overview/going-backward-and-forward-01.png)
 
-In history list you can find your tracing history.You can switch to another batch from the list at any time in any form: Overview, Trace, Action.
+In the history list, you can find your tracing history. You can switch to another batch from the list at any time in any form: Overview, Trace, Action.
 
 ### Transactions
 

@@ -4,9 +4,9 @@ sidebar_position: 3
 
 # Serial Shipping Container Code
 
-Serial Shipping Container Code (SSCC) is widely used to identify logistics units. SSCC has to be predefined in SAP Business One. In CompuTec, WMS SSCC is created automatically for a specific Storage Unit on an SU creation.
+Serial Shipping Container Code (SSCC) is widely used to identify logistics units. SSCC has to be predefined in SAP Business One. In CompuTec, WMS Serial Shipping Container Code is created automatically for a specific Storage Unit on an SU creation.
 
-To set the SSCC definition, open the following directory in the SAP Business One menu (the form is available after installation of CompuTec WMS):
+To set the Serial Shipping Container Code definition, open the following directory in the SAP Business One menu (the form is available after installation of CompuTec WMS):
 
 :::info Path
     Stock Management → SSCC Definition

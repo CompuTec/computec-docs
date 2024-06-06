@@ -95,7 +95,7 @@ If you created a Plugin Project from the, you can already check translations on 
 
 ![Translation](./media/translations-from-backend/translation-ids.webp)
 
-### Example of Adding a Translation to the Sales Orders list
+### Example of Adding a Translation to the Sales Orders List
 
 In this example, we will add translations to our example from Creating a Custom View.
 

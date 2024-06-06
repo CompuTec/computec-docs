@@ -1,5 +1,7 @@
 ---
 sidebar_position: 9
+toc_min_heading_level: 2
+toc_max_heading_level: 5
 ---
 
 # Attachments
@@ -20,7 +22,7 @@ Below is an example of receiving and adding attachments from and to Sales Orders
 
 We will extend the Sales Orders list example that we have used so far. We will add a button that will display a dialog with attachments for particular Sales Order.
 
-### Adding Attachment Information to Sales Orders list
+### Adding Attachment Information to Sales Orders List
 
 1. Open SalesOrder.view.xml
 
@@ -132,7 +134,7 @@ We will extend the Sales Orders list example that we have used so far. We will a
         </mvc:View>
         ```
 
-### Results
+#### Results
 
 For Sales Orders with attachments, GenericTag will be visible with numbers of Attachments
 
@@ -140,7 +142,7 @@ For Sales Orders with attachments, GenericTag will be visible with numbers of At
 
 ### Creating Dialog for Attachments
 
-#### Creating controller for Sales Orders view
+#### Creating Controller for Sales Orders View
 
 To handle onAttachmentsButtonPress event that will be triggered from GenericTag on user click, we need to create controller for Sales Orders view.
 
@@ -185,7 +187,7 @@ To handle onAttachmentsButtonPress event that will be triggered from GenericTag 
             xmlns="sap.m">
     ```
 
-#### Creating view for Attachments Dialog
+#### Creating View for Attachments Dialog
 
 Here, we will create new view fragment that later will be used in our controller.
 
@@ -458,7 +460,7 @@ At this moment we are able to show number of attachments on the sales orders lis
 
 ![Dialog](./media/attachments/sales-orders-attachment-dialog-preview.webp)
 
-#### Downloading Attachment
+### Downloading Attachment
 
 Having a dialog with attachments list in place, it is time to add function that will handle attachment download. To accomplish this, use core APIAttachments controller, precisely this GET method:
 
@@ -490,17 +492,17 @@ This method prepares a URL comprising 5 parameters:
 - **attachmentField** – this field is used if you would like to get Attachment from custom field. In Our case we can set this value to null as we don't need it.
 - **lineNum** – Line number (Line column in ATC1) value of required attachment.
 
-## Result
+#### Result
 
 When user click on download button, file will be download using our REST API Attachment controller.
 
 ![Nog](./media/attachments/nog.webp)
 
-### Adding Attachments
+## Adding Attachments
 
 Finally, we can finish the example with possibility to add attachments. Below is a step-by-step description how to achieve this.
 
-#### Adding New File Upload Dialog
+### Adding New File Upload Dialog
 
 For selection of the file we will add a new Dialog SalesOrderAttachmentsDialogAdd.fragment.xml.
 
@@ -534,7 +536,7 @@ SalesOrderAttachmentsDialogAdd.fragment.xml
 </core:FragmentDefinition>
 ```
 
-#### Extending Attachments Dialog
+### Extending Attachments Dialog
 
 To our Attachments Dialog we need to add button that will simply open newly created File Upload Dialog.
 
@@ -607,7 +609,7 @@ SalesOrderAttachmentsDialog.fragment.xml
 </core:FragmentDefinition>
 ```
 
-#### Adding Logic to SalesOrder.controller.js
+### Adding Logic to SalesOrder.controller.js
 
 1. Having all views ready, we can now implement all the missing parts in the controller.
 2. Open SalesOrder.controller.js.
@@ -840,7 +842,7 @@ SalesOrderAttachmentsDialog.fragment.xml
         });
     ```
 
-#### Results
+### Results
 
 Finally, the application not only displays the list of Attachments for the given Sales Order, but also allows user to add new attachments. Attachments in this example are uploaded to the backend into SAP attachments location:
 

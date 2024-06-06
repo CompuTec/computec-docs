@@ -10,7 +10,7 @@ In this section, you can find descriptions of actions that must be performed bef
 
 1. Install SAP Business One DI API 32-bit on the client machine.
 2. Install SAP Crystal Reports runtime engine for .NET framework 4.7. You can download the 32-bit version from [here](http://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_32bit_13_0_21.msi), and the 64-bit version from [here](http://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_32bit_13_0_21.msi).
-3. To print SAP Crystal reports it is required to install the following components:
+3. To print SAP Crystal reports, it is required to install the following components:
 
     - Crystal Server Integration
     - CR Integration

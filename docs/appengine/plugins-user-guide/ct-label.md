@@ -6,13 +6,13 @@ sidebar_position: 5
 
 CTLabel plugin is related to [CompuTec Labels](/docs/labels/) and allows to use some of its options:
 
-- list all requests,
-- list all requests based on multiple filters,
-- reprint a label,
-- reprint a label on a different printer,
-- show printing details of a request,
-- save filters in the URL,
-- load filters from the URL.
+- list all requests
+- list all requests based on multiple filters
+- reprint a label
+- reprint a label on a different printer
+- show printing details of a request
+- save filters in the URL
+- load filters from the URL
 
 ---
 
@@ -20,7 +20,7 @@ CTLabel plugin is related to [CompuTec Labels](/docs/labels/) and allows to use 
 
 ---
 
-## AppEngine and plug-in installation and configuration
+## AppEngine and Plug-in Installation and Configuration
 
 For the AppEngine installation manual, click [here](../administrators-guide/installation.md).
 
@@ -34,77 +34,59 @@ At the top of the page, there is a filter bar with all possible filters and sort
 
         - **Request Id Filter**
 
-        This filter allows looking for requests with a given Request Id.
-        It is a SearchField filter. You can write anything on it.
-        To search for requests with a given request Id **write request Id and press Enter key**.
+        This filter allows looking for requests with a given Request Id. <br/>It is a SearchField filter. You can write anything on it. <br/>To search for requests with a given request Id **write request Id and press Enter key**.
 
         ![CompuTec Labels](./media/ctlabel/image2020-8-5-14-37-20.png)
     
         - **Company Database Filter**
         
-        This filter allows looking for requests with a given Company Database assigned to it.
-        It is a MultiComboBox filter. You can select one or more companies.
-        The list of companies is based on all the requests (distinct CompanyDatabase values from Requests view).
+        This filter allows looking for requests with a given Company Database assigned to it. <br/>It is a MultiComboBox filter. You can select one or more companies. <br/>The list of companies is based on all the requests (distinct CompanyDatabase values from Requests view).
 
         ![CompuTec Labels](./media/ctlabel/image2020-7-10-11-58-39.png)
 
         - **Requester Filter**
 
-        This filter allows looking for requests from given Requesters.
-        It is a MultiComboBox filter. You can select one or more requesters.
-        The list of requesters is constant. Available values: **SAP, WMS, PDC, PF**.
+        This filter allows looking for requests from given Requesters. <br/>It is a MultiComboBox filter. You can select one or more requesters. <br/>The list of requesters is constant. Available values: **SAP, WMS, PDC, PF**.
         
         ![CompuTec Labels](./media/ctlabel/image2020-7-10-12-8-51.png)
 
         - **Status Filter**
 
-        This filter allows looking for requests with a specific status.
-        It is a MutliComboBox filter. You can select one or more statuses.
-        The list of statuses is constant. Possible values: **Started, Modified, Stopped, Finished, Done, Finished with errors**.    
+        This filter allows looking for requests with a specific status. <br/>It is a MutliComboBox filter. You can select one or more statuses. <br/>The list of statuses is constant. Possible values: **Started, Modified, Stopped, Finished, Done, Finished with errors**.    
         
         ![CompuTec Labels](./media/ctlabel/image2020-7-10-12-12-14.png)
 
         - **Printer Filter**
 
-        This filter allows looking for requests assigned to specific printers.
-        It is a MultiComboBox filter. You can select one or more printers.
-        The list of printers is based on the list of printers from **Computec Label Printing Manager**.
+        This filter allows looking for requests assigned to specific printers. <br/>It is a MultiComboBox filter. You can select one or more printers. <br/>The list of printers is based on the list of printers from **Computec Label Printing Manager**.
 
         ![CompuTec Labels](./media/ctlabel/image2020-7-10-12-16-5.png)
 
         -- **Transaction Type Filter**
 
-        This filter allows looking for requests with specific transaction types.
-        It is a MultiComboBox filter. You can select one or more transaction types.
-        The list of transaction types is based on all the requests (distinct TransactionTypes values from the Requests view).
+        This filter allows looking for requests with specific transaction types. <br/>It is a MultiComboBox filter. You can select one or more transaction types. <br/>The list of transaction types is based on all the requests (distinct TransactionTypes values from the Requests view).
 
         ![CompuTec Labels](./media/ctlabel/image2020-7-10-12-18-13.png)
 
         - **Date Range Filter**
 
-        This filter allows looking for requests from a specific period.
-        It's a DateRange filter. You have to select two dates. They can be the same dates e.g. if you want requests from a specific day you need to select the same day twice.
+        This filter allows looking for requests from a specific period. <br/>It's a DateRange filter. You have to select two dates. They can be the same dates e.g. if you want requests from a specific day you need to select the same day twice.
 
         ![CompuTec Labels](./media/ctlabel/image2020-7-10-12-21-35.png)
 
         - **Adapt Filters**
 
-        At the end of the filter bar, there is an Adapt Filters button.
-        Clicking it will open a new dialogue window with all the filters.
+        At the end of the filter bar, there is **Adapt Filters** button. <br/>Clicking it will open a new dialogue window with all the filters.
 
         ![CompuTec Labels](./media/ctlabel/image2020-7-10-12-24-18.png)
 
-        Changing filters in **Adapt Filters Dialog** will only take effect if you close the dialog with the **Go** button.
-        Closing the dialog with the **Cancel** button will return all the filters to the previous state.
-        The **Clear** button clears all the filters.
-        You can use checkboxes on the right side to hide/show different filters on the filter bar.
+        Changing filters in **Adapt Filters Dialog** will only take effect if you close the dialog with the **Go** button. <br/>Closing the dialog with the **Cancel** button will return all the filters to the previous state. <br/>The **Clear** button clears all the filters. <br/>You can use checkboxes on the right side to hide/show different filters on the filter bar.
 
         - **Sorting**
 
         ![CompuTec Labels](./media/ctlabel/image2020-8-10-14-26-22.png)
 
-        At the end of the filter bar, there is a **Sorting** button.
-        Clicking it will open a new dialog with all sorting options.
+        At the end of the filter bar, there is a **Sorting** button. <br/>Clicking it will open a new dialog with all sorting options.
 
         ![CompuTec Labels](./media/ctlabel/image2020-8-10-14-27-51.png)
 
@@ -120,9 +102,7 @@ It will open the **Reprint** form.
 
 ![CompuTec Labels](./media/ctlabel/image2020-7-10-12-45-17.png)
 
-On the top of the form, you can see the request ID.
-The printer value is set by default to the printer value of the request we want to reprint.
-From the list, we can select the printer we want to reprint on.
+On the top of the form, you can see the request ID. <br/>The printer value is set by default to the printer value of the request we want to reprint. <br/>From the list, we can select the printer we want to reprint on.
 
 ![CompuTec Labels](./media/ctlabel/image2020-7-10-12-48-43.png)
 
@@ -147,16 +127,13 @@ It will open the **Details** form.
 
 ![CompuTec Labels](./media/ctlabel/details-form.png)
 
-On the top of the dialog, you can see the request ID.
-Below you can check all the details for the given request.
+On the top of the dialog, you can see the request ID. <br/>Below you can check all the details for the given request.
 
 If the status of the request is **Finished with errors**, there will be the **Retry** button inside the details form.
 
 ![CompuTec Labels](./media/ctlabel/finished-with-errors.png)
 
-Clicking the **Retry** button will result in sending the request to retry printing the request.
-If the operation is successful we will get a pop-up telling us that a retry operation has been done and the requests list will refresh automatically.
-Retrying sets the status to **Started**.
+Clicking the **Retry** button will result in sending the request to retry printing the request. <br/>If the operation is successful we will get a pop-up telling us that a retry operation has been done and the requests list will refresh automatically. <br/>Retrying sets the status to **Started**.
 
 ![CompuTec Labels](./media/ctlabel/success.png)
 

@@ -4,7 +4,9 @@ sidebar_position: 2
 
 # Case 1 – Routing Changing for Selected Processes
 
-Requirement: <br/>When a routing is changed, it must be possible to replace it in the production process. We can change the following things:
+## Requirement
+
+When a routing is changed, it must be possible to replace it in the production process. We can change the following things:
 
 - Operations
 - Resources for operations

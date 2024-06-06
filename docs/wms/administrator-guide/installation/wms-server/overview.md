@@ -7,7 +7,7 @@ sidebar_position: 1
 This document provides a step-by-step guide on how to install WMS Server and information on system environment requirements.
 
 :::danger
-    Please be sure to fulfill [the prerequisites](../prerequisites.md) before starting the installation.
+    Please be sure to fulfill [the requirements](../../installation/requirements.md) before starting the installation.
 :::
 
 ---
@@ -39,7 +39,7 @@ This document provides a step-by-step guide on how to install WMS Server and inf
 
     ![CompuTec WMS - All Settings](./media/wms-all-settings.webp)
 
-    1. Type in the server name – it must be the same as a server name defined in the SAP Business One System Landscape Directory service! (The default server port number for SAP HANA is 40000).
+    1. Type in the server name – it must be the **same** as a **server name defined in the SAP Business One System Landscape Directory service**! (The default server port number for SAP HANA is 40000).
     2. Type in the license server name/address. (The default license server port number for SAP HANA is 30002).
     3. Cleanup connection pool every (min) – a connection pool is a cache of connections to a database. It is created so that the connections can be reused during future requests to the database.
     4. SAP Business One User Name.
@@ -72,13 +72,13 @@ This document provides a step-by-step guide on how to install WMS Server and inf
     12. CompuTec AppEngine address.
     13. Companies on all servers. **Right-click on a specific company row to get to its context menu**. The following options are available:
 
-        1. **Install WMS Objects**. Click this option to install to the database CompuTec WMS objects (tables, fields) required for the application's good work. **This procedure is necessary to be performed before starting work with CompuTec WMS**. Click the option and put in database credentials to start the procedure. The object installation procedure is slightly different when using a new database in the HANA version. You can check it out [here](../../../).
-        2. Open Custom Config. It leads to [Custom Configuration options](../../custom-configuration/overview.md).
+        1. **Install WMS Objects**. Click this option to install to the database CompuTec WMS objects (tables, fields) required for the application's good work. **This procedure is necessary to be performed before starting work with CompuTec WMS**. Click the option and put in database credentials to start the procedure. The object installation procedure is slightly different when using a new database in the HANA version. You can check it out [here](../../../faq/overview.md#cannot-install-computec-wms-objects-to-a-database)
+        2. **Open Custom Config**. It leads to [Custom Configuration options](../../custom-configuration/overview.md).
         3. **User Settings**. Here, you can enable a user for a specific database and set a language version per user. **Enabling a user here is required to work with CompuTec WMS by this user**.
-        4. Copy CC Settings to. This allows copying the Custom Configuration option setup for one database to another in the same environment.
-        5. Reset CC to default. Choosing this option erases all changes made to Custom Configuration for this database. The settings are reversed to the default state.
-        6. Import CC Settings/Export CC Settings. Use the export option to export the CC Settings to a file. You can then use the import option to import it, e.g., on another server.
-        7. Barcode Decoder - Export/Import Decoder Settings. You can export and import [Barcode Decoder settings](../../../user-guide/custom-decoder.md) the values set in Decoder Definition here.
+        4. **Copy CC Settings to**. This allows copying the Custom Configuration option setup for one database to another in the same environment.
+        5. **Reset CC to default**. Choosing this option erases all changes made to Custom Configuration for this database. The settings are reversed to the default state.
+        6. **Import CC Settings/Export CC Settings**. Use the export option to export the CC Settings to a file. You can then use the import option to import it, e.g., on another server.
+        7. **Barcode Decoder - Export/Import Decoder Settings**. You can export and import [Barcode Decoder settings](../../../user-guide/custom-decoder.md) the values set in Decoder Definition [here](../../../user-guide/custom-decoder.md#decoder-definitions).
     14. Check this option to operate with the SAP Multi-Tenant option. After checking the option, click Register Servers. In the new form, click the last (empty) row, enter the server's IP address in Multi-Tenant, check its checkbox, and click Save.
 9. Click the Update button. Service will be up and running, ready to work with.
 

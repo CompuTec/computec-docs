@@ -8,7 +8,7 @@ sidebar_position: 16
 
 Preparing deployment package is straight forward. Release build content should be packed into zip. This zip can be later used to install plugin as described here: [Configuration and Administration](../../administrators-guide/configuration-and-administration/overview.md#plugins)
 
-### Creating Deployment Package
+## Creating Deployment Package
 
 1. Open your solution in Visual Studio.
 

@@ -10,7 +10,7 @@ sidebar_position: 3
     <details>
     <summary>Click here to expand</summary>
     <div>
-        ![Project selection](./media/project-selection-01.png)
+        ![Document Details](./media/stock-transfer/document-details.png) ![Project selection](./media/project-selection-01.png)
     </div>
     </details>
 
@@ -37,6 +37,16 @@ sidebar_position: 3
     </details>
 
 **Skip destination Warehouse and Bin Location selection** – skip Destination Warehouse/Bin Location selection step (a base document destination is chosen)
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
+    **Before marked**
+    ![Before Marked](./media/stock-transfer/before-marked.png) ![Before Marked](./media/stock-transfer/before-marked-01.png) ![Before Marked](./media/stock-transfer/before-marked-03.png) ![Before Marked](./media/stock-transfer/before-marked-04.png) ![Before Marked](./media/stock-transfer/before-marked-05.png)
+
+    **After marked**
+    ![After Marked](./media/stock-transfer/after-marked.png) ![After Marked](./media/stock-transfer/after-marked-01.png) ![After Marked](./media/stock-transfer/after-marked-02.png)
+    </div>
+    </details>
 
 **Force manual quantity confirmation** – with this option checked, it is required to manually confirm previously set up quantity (scanning a barcode does not confirm it automatically)
 
@@ -46,7 +56,7 @@ sidebar_position: 3
 
 **Skip SAP Allocation Quantity, Skip ProcessForce Allocation Quantity** – allows disabling SAP Business One Batch/Serial Numbers allocation (if needed for some custom changes). The Stock Transfer works within a Warehouse with Bin locations for allocated Batches and Serial Numbers Items.
 
-**Use Sales UoM** – click here to find out more.
+**Use Sales UoM** – click [here](../../../user-guide/managing-uom-in-computec-wms.md) to find out more.
 
 **Ask to continue scanning when multiple items are over-picked** – when checked: when two lines with the same Item are added to a document, exceeding the required quantity causes the system to display a message with a choice to which of the lines added exceeded the quantity.
 

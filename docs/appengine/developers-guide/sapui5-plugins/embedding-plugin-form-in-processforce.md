@@ -8,11 +8,11 @@ sidebar_position: 7
 
 ProcessForce allows starting AppEngine Plugin directly inside SAP. This is done base on the manifest configuration of the Plugin. Base on this configuration new positions related to Plugins will appear inside SAP Menu. Opening such a position will open a new Form with a browser that will open the AppEngine launchpad and inside it navigate to the correct plugin.
 
-### ProcessForce AppEngine Connection Configuration
+## ProcessForce AppEngine Connection Configuration
 
 To make it work, ProcessForce needs to connect to AppEngine. Connection configuration is described in the following article: [SAP Business One settings](../../administrators-guide/configuration-and-administration/overview.md#sap-business-one-settings).
 
-### Plugin Configuration
+## Plugin Configuration
 
 If you want to open the plugin from SAP Business One, add the "**sapForm**" element to the plugin description (manifest.json file inside your plugin project).
 

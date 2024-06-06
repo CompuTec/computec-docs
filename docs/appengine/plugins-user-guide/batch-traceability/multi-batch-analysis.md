@@ -12,33 +12,31 @@ The user can save data used in the graph as a xlsx file. There are three sets of
     - Transactions (documents) for each Batch
     - Links between Batches
 
-And one set of Derived data:
+And one set of derived data:
 
-- (Direct → Indirect Batch) - Transactions. For the Batch (direct) are specified all batches affecting it (indirect) with all transactions for the direct Batch.
+- (Direct → Indirect Batch) - Transactions. For a direct batch, all indirect batches influencing it are specified, along with all transactions associated with the direct batch.
 
-Using this data, users can, using pivot tables prepared by themselves, get information like:
+Using this data, users can create their own pivot tables to obtain information such as:
 
 1. Are there any Batches affected by a raw material Batch with Country of Origin = Pakistan for selected delivery notes?
 2. Display all delivery notes affected by batches from selected GRPO.
 
-In BT360 it is possible to:
+In BT360, it is possible to:
 
 1. Filter Batches associated with the selected transaction - Document Type → Doc entry and switching to Trace Analysis on the list of Batches
 2. Display Transaction Analysis for selected Batches with the following information:
-multi batches graph
-
-    a. grid of batches with attributes <br/>b. grid of transactions <br/>c. grid of links <br/>d. grid of derived data.
+    a. multi batches graph <br/>b. grid of batches with attributes <br/>c. grid of transactions <br/>d. grid of links <br/>e. grid of derived data.
 
 3. Export data from these 4 grids to an xlsx file (each to a separate tab).
 4. Selection of a Batch on multiple Batches graph will redirect the user to the functionality of a single batches graph.
 
 ---
 
-## Batches selection for Trace Analysis
+## Batches Selection for Trace Analysis
 
-You can select many Batches directly from the list of Batches or you can first select documents and this way narrow down Batches to these related to the selected documents.
+You can directly select multiple batches from the batch list, or you can first choose documents to narrow down the batches to those related to the selected documents.
 
-### To narrow down Batches please select the button Select Documents
+### To narrow down batches, click the "Select Documents" button
 
 ![Narrowed Down Documents](./media/multi-batch-analysis/narrowed-down-documents.png)
 

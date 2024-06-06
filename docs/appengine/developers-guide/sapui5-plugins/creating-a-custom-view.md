@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+toc_min_heading_level: 2
+toc_max_heading_level: 5
 ---
 
 # Creating a Custom View
@@ -125,7 +127,7 @@ CompuTec AppEngine provides a mechanism for encapsulating complex database queri
 3. Now you can navigate to this path manually: `http://localhost:54000/webcontent/launchpad/webapp/Index.html#/plugin/computec.appengine.firstplugin&salesorder`
 4. Optionally, you can add a tile to the Home view with navigation, as shown below.
 
-#### Adding navigation to the Sales Orders view
+#### Adding Navigation to the Sales Orders View
 
 1. Edit Home.view.xml.
 2. Add the following Tile inside the Horizontal Layout.
@@ -157,7 +159,7 @@ CompuTec AppEngine provides a mechanism for encapsulating complex database queri
 
     ![Sales](./media/creating-a-custom-view/onSalesOrderPress-function.webp)
 
-##### Results
+#### Results
 
 1. Plugin Navigation Tiles.
 

@@ -16,9 +16,9 @@ For AppEngine installation please follow this link: [Installation](../../adminis
 
 For plug-in installation please follow this link: [Configuration and Administration](../../administrators-guide/configuration-and-administration/overview.md).
 
-### ProcessForce
+## ProcessForce
 
-As an option you can call Bulk Change plug-in from inside the Process Force:
+As an option, you can call Bulk Change plug-in from inside the Process Force:
 
 ![Bulk Change Plugin](./media/bulk-changes-of-bom/image2020-3-25-16-40-30.png)
 

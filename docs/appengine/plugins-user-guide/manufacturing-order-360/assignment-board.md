@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+toc_min_heading_level: 2
+toc_max_heading_level: 5
 ---
 
 # Assignment Board
@@ -38,7 +40,7 @@ On the view, you can find all employees – active and inactive. If you wish to 
 
 ### Tasks
 
-#### My views
+#### My Views
 
 You can create a filter view template. It may differ depending on a group of employees.
 
@@ -68,7 +70,7 @@ Another method to unassign an employee from the task is to check the employee(s)
 
 ![Assignment Board](./media/assignment-board/image2021-3-31-11-20-0.png)
 
-### Manufacturing Order details
+### Manufacturing Order Details
 
 In this section, you can find the following information about the Manufacturing Order:
 

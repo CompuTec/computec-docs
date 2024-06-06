@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Scenario Management View
 
-From this view it is possible to create a new scenario as well as work on previously created ones. You can also filter them by their status.
+From this view, it is possible to create a new scenario as well as work on previously created ones. You can also filter them by their status.
 
 ![Bulk Changes on Bills of Materials Scenario Management View](./media/bulk-changes-of-bom/1.png.jpg)
 

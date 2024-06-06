@@ -12,11 +12,11 @@ To start working with CompuTec Labels on a specific company, the application dat
 
 ![Install](./media/company-installation-and-configuration/labels-install-db-objects.webp)
 
-Upon successful completion, it is necessary to activate the database (please check the context menu on the screenshot above, context menu). Please click Refresh and Update after this.
+Upon successful completion, you need to activate the database (refer to the context menu in the screenshot above). After activation, click Refresh and then Update.
 
-Now, the application is ready to configure settings for the specific company.
+The application is now ready to configure settings for the specific company.
 
-With a right click, we may then navigate to Printing Rules, Mapping Parameters, Event Triggers, Report Rules, and Settings View.
+By right-clicking, you can navigate to Printing Rules, Mapping Parameters, Event Triggers, Report Rules, and Settings View.
 
 :::note
     Note that to change any of the settings, you have to enter database credentials (username and password)
@@ -30,13 +30,13 @@ Here, you can check a list of Object that can be chosen for Transaction. If you 
 
 In the Specific Settings tab, you can enable Usage of Storage Procedures.
 
-This option allows finding templates that are not defined in printing rules. This can be useful when we want to implement custom logic in finding templates. The procedure name for dealing with this is:
+This option allows you to find templates that are not defined in the printing rules. It is useful for implementing custom logic in template identification. The procedure name for this is:
 
-```text
-CT_LP_SELECTPRINTTEMPLATES
-```
+    ```text
+    CT_LP_SELECTPRINTTEMPLATES
+    ```
 
-Please note that the template code returned by this procedure has to match the **TEMPLATENAME** defined on the label [templates tab](./general-configuration.md#printers).
+Please note that the template code returned by this procedure has to match the **TEMPLATENAME** defined on the label [templates tab](./general-configuration.md#label-templates).
 
 ## Printing Rules View
 
@@ -48,23 +48,23 @@ Rules are grouped first by the requester and then by the transaction.
 
 To define a new rule, right-click on the table and choose Add new rule.
 
-- Requester – an application from which printing requests come. It can be SAP, WMS, or PDC.
-- Transaction – transaction on which a specific print occurs. By default, the following transactions are available: Delivery Note, Goods Receipt PO, Stock Transfer, Stock Transfer Request, Goods Return, Return, Item Master Data, Additional Batch Details, Storage Unit, Goods Issue, DraftGRPO.
-- Document – here, you can define whether the rule concerns all of the documents in the chosen transaction or just one (in this case, you must specify its document number).
-- Employee – The employee is defined in SAP B1 for whom this printing rule works. You can set up a specific one or all.
-- User – SAP B1 for whom this printing rule works. You can set up a specific one or all.
-- Item Group – you can choose a specific one or all.
-- Card Group – Business Partner type of a specific document. You can choose either Customers or Suppliers.
-- Branch – if the company has branches, you can choose for which one the printing rule applies
-- WHSCode – code of a Warehouse for which the rule works
+- **Requester** – an application from which printing requests come. It can be SAP, WMS, or PDC.
+- **Transaction** – transaction on which a specific print occurs. By default, the following transactions are available: Delivery Note, Goods Receipt PO, Stock Transfer, Stock Transfer Request, Goods Return, Return, Item Master Data, Additional Batch Details, Storage Unit, Goods Issue, DraftGRPO.
+- **Document** – here, you can define whether the rule concerns all of the documents in the chosen transaction or just one (in this case, you must specify its document number).
+- **Employee** – The employee is defined in SAP B1 for whom this printing rule works. You can set up a specific one or all.
+- **User** – SAP B1 for whom this printing rule works. You can set up a specific one or all.
+- **Item Group** – you can choose a specific one or all.
+- **Card Group** – Business Partner type of a specific document. You can choose either Customers or Suppliers.
+- **Branch** – if the company has branches, you can choose for which one the printing rule applies
+- **WHSCode** – code of a Warehouse for which the rule works
 - Unit of Measure
 - Header
 - Ignore All Others
-- Template – a template assigned for a specific printing rule.
+- **Template** – a template assigned for a specific printing rule.
 
 ## Mapping Parameters View
 
-Here, you can define mapping parameters: what data is assigned to a specific variable from a label layout. A mapping scheme is defined in a particular [template](./general-configuration.md#label-templates). Specific fields on a printing template will be filled with data assigned to parameters.
+Here, you can define mapping parameters, determining which data is assigned to specific variables in a label layout. A mapping scheme is defined in a particular [template](./general-configuration.md#label-templates). Specific fields on a printing template will be filled with data assigned to parameters.
 
 ![CT Labels Mapping](./media/company-installation-and-configuration/ct-labels-mapping.webp)
 
@@ -99,11 +99,11 @@ Click Update to save changes.
 
 In this view, we define the action of which Employee printing will proceed.
 
-These rules are called event triggers. To add a new one, right-click on the table and choose Add. Choose for which employee from which department the rule will be valid (you can choose All for both values). Choose the Object Type for which the rule is set. In columns SAP, PDC, WMS, and PF, you can choose an action for a specific application with which CompuTec Labels is connected. You can choose the following actions:
+These rules are called event triggers. To add a new one, right-click on the table and choose Add. Specify the employee and department for which the rule will be valid (you can select "All" for both values). Choose the Object Type for which the rule is set. In columns SAP, PDC, WMS, and PF, you can choose an action for a specific application with which CompuTec Labels is connected. You can choose the following actions:
 
-- OnChange – printing starts on the update of a document
-- Add – printing starts with the addition of a document
-- NoAction – no action is taken automatically; you have to choose the right option from the application to start printing
+- **OnChange** – printing starts on the update of a document
+- **Add** – printing starts with the addition of a document
+- **NoAction** – no action is taken automatically; you have to choose the right option from the application to start printing
 
 Click Update to save changes.
 
