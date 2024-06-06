@@ -32,4 +32,4 @@ Custom Configuration allows adjusting each transaction's workflow to specific ne
 
     ![Custom Configuration](./media/custom-configuration-main-form.webp)
 
-Click [here]((../custom-configuration/custom-configuration-functions/grpo.md)) to check a description of each option.
+Click [here](../custom-configuration/custom-configuration-functions/grpo.md) to check a description of each option.
