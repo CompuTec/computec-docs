@@ -10,7 +10,7 @@ toc_max_heading_level: 2
 ### *Release Date - 30 January 2023*
 
 :::info
-The installer is available to download from [here](../../../releases/download.md).
+The installer is available to download from [here](../../../releases/download.md#computec-license-service).
 :::
 
 ### Changes and improvements
