@@ -116,7 +116,7 @@ UDFs from a base document are available on the following transactions:
 #### Prerequisites
 
 Choose a base document (one of the bold ones above), for example, **Sales Order**.
-Add a UDF to "Marketing Documents->Rows" in SAP B1 (click [here]((/docs/processforce/administrator-guide/udfs)) to find out more about working with UDFs).
+Add a UDF to "Marketing Documents->Rows" in SAP B1 (click [here](/docs/processforce/administrator-guide/udfs) to find out more about working with UDFs).
 
 ![UDF choosing](./media/udf-choosing.webp)
 
