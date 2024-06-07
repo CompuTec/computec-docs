@@ -8,11 +8,11 @@ Workflow Designer Manager allows the creation of main menu layout templates and 
 
 ---
 
-## Activating the option
+## Activating the Option
 
-To create and assign templates, go to Custom Configuration, Manager tab, and check the Enable Workflow Designer Manager checkbox.
+To create and assign templates, go to [Custom Configuration](../../../custom-configuration/overview.md), Manager tab, and check the Enable Workflow Designer Manager checkbox.
 
-## Creating a template
+## Creating a Template
 
 Clicking Load Designer leads to the Select Template form. Choose a template on the left side of the form and click Delete to delete it or Load to open it.
 
@@ -20,10 +20,10 @@ Clicking Load Designer leads to the Select Template form. Choose a template on t
 
 In the new window on the left, there are available Templates; on the right, actions we can take:
 
-- New Template – create a new Template from scratch
-- Copy template – highlight a Template and click Copy template to create a copy
-- Load – highlight a Template and click Load to start editing it
-- Delete – highlight a Template and click Delete to remove it from the list.
+- **New Template** – create a new Template from scratch
+- **Copy template** – highlight a Template and click Copy template to create a copy
+- **Load**– highlight a Template and click Load to start editing it
+- **Delete** – highlight a Template and click Delete to remove it from the list.
 
 ## Editing
 
@@ -33,11 +33,11 @@ Clicking Load leads to Workflow Designer Manager, where it is possible to create
 
 The form is divided into three panels:
 
-- The one on the left is a mock-up of the application's main menu. Use the right-click context menu to add rows and columns. Doing so creates grids.
-- the center one lists all of the transactions available from the application's main menu. Drag and drop it to the mock-up to fill a specific grid. You can drag and drop it back to the center panel to use it in another place.
+- **The one on the left** is a mock-up of the application's main menu. Use the right-click context menu to add rows and columns. Doing so creates grids.
+- **the center one** lists all of the transactions available from the application's main menu. Drag and drop it to the mock-up to fill a specific grid. You can drag and drop it back to the center panel to use it in another place.
   
     This panel also contains a Container element: it allows storing many transactions in one folder. Clicking a container on a main menu leads to another form with the container's content. It is possible to use container elements multiple times. It is also possible to create a multilevel menu using it. You can change a container's name using a context menu option.
-- the right one contains general options: saving or canceling changes and saving and quitting the manager.
+- **the right one** contains general options: saving or canceling changes and saving and quitting the manager.
 
 After adding some transactions to grids, it is possible to merge rows or columns. You can reach the option from a right-click context menu.
 
@@ -47,11 +47,11 @@ In the following example, we created a main menu template for users using Goods 
 
 ![Example](./media/example.webp)
 
-#### Default template
+### Default Template
 
 Workflow Designer Manager comes with one predefined template. If Interface Design Manager is not used, this template will be used by default. You cannot load it for editing. It can be copied and then edit the copy.
 
-### Assigning a template to a user
+## Assigning a Template to a User
 
 A template must be assigned to a specific SAP Business One user to work on.
 
