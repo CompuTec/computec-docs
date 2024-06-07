@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+toc_min_heading_level:2
+toc_max_heading_level:5
 ---
 
 # UDF Manager
@@ -14,11 +16,11 @@ UDFs are custom fields that can be added to document types to add information to
 
 ### Prerequisites
 
-It would be best to first define UDFs in a database to use during CompuTec WMS transactions. You can check how to add UDFs to document type and manage it here.
+It would be best to first define UDFs in a database to use during CompuTec WMS transactions. You can check how to add UDFs to document type and manage it [here](/docs/processforce/administrator-guide/udfs).
 
 ### Setting up
 
-Go to Custom Configuration options > Manager tab, check the Enable UDF Manager check box, and choose a document type from the drop-down list for which UDFs will be added:
+Go to [Custom Configuration](../../../custom-configuration/overview.md) options > Manager tab, check the Enable UDF Manager check box, and choose a document type from the drop-down list for which UDFs will be added:
 
 ![Custom Configuration](./media/custom-config-option.webp)
 
@@ -30,19 +32,15 @@ After choosing a required document type, click load (doing this requires putting
 
 There are Name and Description fields along with three check boxes; when checked:
 
-- Display: a UDF is displayed in the application
-- Required: a UDF is required to be filled before moving through the workflow.
-- Automatic: a UDF automatically fills the application with a query result. Click Load next to a specific line to go to the query form:
+- **Display**: a UDF is displayed in the application
+- **Required**: a UDF is required to be filled before moving through the workflow.
+- **Automatic**: a UDF automatically fills the application with a query result. Click Load next to a specific line to go to the query form:
 
 ![Query](./media/query.webp)
 
 Now, the chosen UDFs will be displayed on lists during transactions.
 
 You can change the order of the fields by dragging and dropping its line on the UDF Manager list (be sure to click and hold text from the Name or Description column).
-
-Revision and Revision Description fields
-
-For these UDFs, it is required to load an SQL query in Custom Configuration UDF Manager to get the UDFs displayed in CompuTec WMS:
 
 #### Revision and Revision Description fields
 
@@ -100,27 +98,27 @@ The field is available by clicking a UDF icon to set up the details of an item c
 
 ![Example Result](./media/example-result.webp)
 
-## Base document UDFs
+## Base Document UDFs
 
 UDFs from a base document are available on the following transactions:
 
-- Goods Receipt PO From Purchase Order
-- Goods Receipt PO From A/P Invoice
-- Stock Transfer From Transfer Request
-- Return From Delivery
-- Return From Goods Receipt PO
-- Delivery From Sales Order
-- Delivery From Pick Lists (same as Sales Orders)
-- Delivery From A/R Reserve Invoice
-- ProcessForce Pick Order From Pick Order
-- ProcessForce Pick Receipt From Pick Receipt/all Pick Receipts.
+- Goods Receipt PO From **Purchase Order**
+- Goods Receipt PO From **A/P Invoice**
+- Stock Transfer From **Transfer Request**
+- Return From **Delivery**
+- Return From **Goods Receipt PO**
+- Delivery From **Sales Order**
+- Delivery From **Pick Lists** (same as **Sales Orders**)
+- Delivery From **A/R Reserve Invoice**
+- ProcessForce Pick Order From **Pick Order**
+- ProcessForce Pick Receipt From **Pick Receipt**/all Pick Receipts.
 
-### Example usage
+### Example Usage
 
 #### Prerequisites
 
-Choose a base document (one of the bold ones above), for example, Sales Order.
-Add a UDF to "Marketing Documents->Rows" in SAP B1 (click here to find out more about working with UDFs).
+Choose a base document (one of the bold ones above), for example, **Sales Order**.
+Add a UDF to "Marketing Documents->Rows" in SAP B1 (click [here]((/docs/processforce/administrator-guide/udfs)) to find out more about working with UDFs).
 
 ![UDF choosing](./media/udf-choosing.webp)
 
@@ -145,3 +143,7 @@ In Custom Configuration in the Manager tab, check "Enable UDF Manager," and then
 - UDF should be filled in:
 
     ![Delivery Base Document](./media/delivery-base-document-udf.webp)
+
+## SU UDFs
+
+Click [here](../../../../user-guide/storage-units/su-udfs.md) to find out more about SU UDFs.
