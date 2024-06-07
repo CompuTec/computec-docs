@@ -12,7 +12,7 @@ Using the Filter field, you can filter records on the lists in Main and Document
 
 ## Settings
 
-- To activate the option, go to Custom Configuration > Manager tab > and check Extra Fields SQL in Main List Item on Transaction checkbox.
+- To activate the option, go to [Custom Configuration](../../../custom-configuration/overview.md) > Manager tab > and check Extra Fields SQL in Main List Item on Transaction checkbox.
 
     ![Extra SQL](./media/extra-sql.webp)
 - Click the down arrow and a field next to the checkbox to open a drop-down list to choose a required transaction. It is necessary to log in to a database upon this action.
@@ -39,7 +39,7 @@ The result:
 
 ![Query Result](./media/query-result.webp)
 
-## Quantity On Hand
+### Quantity On Hand
 
 In this example, we want to put a total amount (On Hand) to the second field on the Item list on the Delivery transaction:
 
