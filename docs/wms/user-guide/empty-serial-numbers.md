@@ -1,5 +1,7 @@
 ---
 sidebar_position: 8
+toc_min_heading_level: 2
+toc_max_heading_level: 5
 ---
 
 # Empty Serial Numbers
@@ -66,7 +68,7 @@ Here, you can find a description of managing Empty Serial Numbers Items through 
 
 ![Put Away Items](./media/stock-transfer-to-one-bin-2.webp)
 
-#### To different Bin Locations
+#### To Different Bin Locations
 
 ![Destination Warehouse](./media/stock-transfer-to-different-bins-1.webp)
 

@@ -10,12 +10,30 @@ Custom Query Manager allows to put additional information to specific screens in
 
 ---
 
-## Enabling the option
+:::caution
 
-1. Go to Custom Configuration, Manager tab.
+From 2.00 version parameters for database queries should no longer be written between inverted commas/ single quotation marks.
+
+<details>
+<summary>Click here to find out more</summary>
+<div>
+Obsolete usage:
+```text
+'@ItemCode'
+```
+Current usage
+```text
+@ItemCode
+```
+</div>
+</details>
+
+## Enabling the Option
+
+1. Go to[Custom Configuration](../../../../custom-configuration/overview.md), Manager tab.
 2. Check the Enable Custom Query Manager checkbox.
 3. Choose a required transaction from a drop-down list and click Load.
-4. Checking Use default query option blocks the creation/editing of a query and the default query is used:
+4. Checking **Use default query** option blocks the creation/editing of a query and the default query is used:
 
     ![Custom Configuration Query](./media/cc-query.webp)
 

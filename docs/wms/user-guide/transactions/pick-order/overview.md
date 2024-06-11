@@ -4,8 +4,10 @@ sidebar_position: 1
 
 # Overview
 
+The Pick Order transaction allows generating a ProcessForce Production Issue.
+
 :::info
-    The Pick Order transaction allows generating a ProcessForce Production Issue.
+Some forms' order and availability during a document's creation may vary depending on individual settings. Click here to find out more.
 :::
 
 1. To create a Production Issue from a Pick Order, click Pick Order in the main menu.
@@ -46,7 +48,7 @@ Since ProcessForce PL11, users can choose how to _Auto Allocate Batches on the P
 This setting is responsible for whether to display or not preselected on Pick Order, Batches/Serial Numbers (there is no unique option for Serial Numbers; the same setting affects both Serial Numbers and Batches).
 In WMS, Batches/Serial Numbers preallocated on other documents are always omitted; thus, the "On other documents" option will not affect WMS. Suppose a user wants to consider preselected Batches and Serial Numbers on every document in WMS. In that case, one must select either "Allocated" or "Both" to recalculate quantities properly.
 
-Moreover, the quantities will be recalculated for the same Pick Order - this option does not work like preallocation on Pick Lists.
+Moreover, the quantities will be recalculated for the same Pick Order - this option **does not** work like preallocation on Pick Lists.
 This means that if on an original Pick Order document, there were seven serial numbers to be picked and five were already preselected in SAP B1, then in WMS, there will be only two more serials left to choose and the five previously selected won't be displayed in Serial Selection window.
 
 With the SAP B1 PF setting enabled, preselecting batches or serials on Pick Order will affect all other transactions in WMS, i.e., if a specific serial, for example, S0001, is preselected on a pick order in SAP B1, then the same serial S0001 won't be available for example on the Delivery transaction.

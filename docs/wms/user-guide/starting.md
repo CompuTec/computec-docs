@@ -13,7 +13,7 @@ sidebar_position: 1
 
     ![WMS Main Screen](./media/wms-main-screen.webp)
 
-## General Settings overview
+## General Settings Overview
 
 ![General Settings](./media/application-settings-general.webp)
 
@@ -27,13 +27,13 @@ You can check the following information by clicking the 'i' icon:
 - Server Version
 - Client Version
 
-### Configuration of WMS client-server connection
+### Configuration of WMS client-server Connection
 
 The server address has to be the same as the address where the CompuTec WMS Server is installed.
 The port number has to be the same as defined in the server settings (you can check it here).
 Check the Scale checkbox if CompuTec WMS is planned to be used with a scale. A new tab will be displayed in the Application settings form. Clicking it leads to the scale options.
 
-### Other option
+### Other Option
 
 Show buttons focus – highligt the buttons focused on
 
@@ -49,7 +49,7 @@ Full screen for login panel – full screen mode for the login panel (even if th
 
 Checking a specific checkbox displays the Warehouse Selection form of a particular transaction. If you want to use only one default warehouse, uncheck a checkbox for a required transaction and type in a required warehouse. Click here to find out more.
 
-### Saving settings and logging in
+### Saving Settings and logging in
 
 Click Save or Cancel on the General tab to save or discard changes. It leads back to the log in form.
 

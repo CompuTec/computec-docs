@@ -223,4 +223,4 @@ The file contains a full programming barcode for plug-in Motorola scanners guide
 
 ## Barcode Scanner Simulator
 
-For testing barcode scanning, you can use a dedicated application: [WMS Scanning Symulator](./wms-scanning-simulator.md).
+For testing barcode scanning, you can use a dedicated application: [WMS Scanning Simulator](./wms-scanning-simulator.md).

@@ -4,13 +4,13 @@ sidebar_position: 4
 
 # Project
 
-Here, you can obtain additional information regarding SAP Business One Projects on documents created using CompuTec WMS.
+Here, you can obtain additional information regarding [SAP Business One Projects](/docs/processforce/user-guide/costing-material-and-resources/projects) on documents created using CompuTec WMS.
 
 ---
 
 It is impossible to set Enable Dimensions SQL, Proper Line to Project. This setting has a priority over the default Project and a Project picked during a transaction.
 
-Default Project for a specific transaction can be set in related Custom Config tabs (Goods Receipt PO, Goods Receipt, Goods Issue, and Inventory Transfer).
+Default Project for a specific transaction can be set in related [Custom Config tabs](../administrator-guide/custom-configuration/overview.md) (Goods Receipt PO, Goods Receipt, Goods Issue, and Inventory Transfer).
 
 Priority of assigning Project to a document line:
 

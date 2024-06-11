@@ -14,7 +14,7 @@ The CompuTec WMS Catch Weight option addresses two main problems:
 
 ### The Exact Weighting of Pieces with the DUoM set
 
-Example: there is a Purchase order with Uom set to Boxes. A box is set to contain 10 kilograms of an Item:
+Example: There is a Purchase order with Uom set to Boxes. A box is set to contain 10 kilograms of an Item:
 ![Purchase Order](./media/catch-weight/purchase-order.png)
 
 In this example, there are 10 Boxes in the purchase document, which gives 100 kilograms of the Item. But in many cases, the company will get ten boxes with the quantity in each box varying, e.g., from 9.7 kilograms to 10.2. The total will not be 100, then.
@@ -29,7 +29,7 @@ The Labels should be printed (when integrated with CompuTec Labels) as you enter
 
 ## Requirements
 
-:::warning
+:::danger
 Please note that the Catch Weight functionality does not work with different UoM defined in SAP Business One.
 <details>
 <summary>Click here to find out more</summary>
@@ -41,9 +41,9 @@ Please note that the Catch Weight functionality does not work with different UoM
 
 ### Item Master Data
 
-    :::info Path
-    SAP Business One → Inventory → Item Master Data
-    :::
+:::info Path
+SAP Business One → Inventory → Item Master Data
+:::
 
 The option is activated per Item. Go to Item Master Data, find the required Item, and
 
@@ -73,10 +73,10 @@ When the Catch Weight option is enabled, on Quantity, there are two quantity fie
 By default, one is set in the pcs quantity field to select the quantity for KGs.
 
 :::tip
-When recording a number of entries, in this case, it is suggested to check the Keep selected Bin Location after adding an Item in Custom Configuration.
+When recording a number of entries, in this case, it is suggested to check the [Keep selected Bin Location after adding an Item in Custom Configuration](../administrator-guide/custom-configuration/custom-configuration-functions/grpo.md).
 :::
 
-### Recording total Quantity for different DUoMs of different quantity
+### Recording Total Quantity for Different DUoMs of Different Quantity
 
 In the video below, you can see the CompuTec WMS with Catch Weight option on behavior when recording ten packages (pcs) with weights ranging from 9,21 to 11,45 (even though the DUoM is set to 10). The transaction used in this example is Goods Receipt PO from Purchase Order.
 
@@ -89,14 +89,14 @@ As you can see, CompuTec WMS recorded the total quantity and set an average quan
 
 Note that the created packages are just for information purposes – they are not as fixed as Storage Units. In the Batch Number Transactions Report (opened from the context menu on Goods Receipt PO), you can see that one Batch with total quantity was recorded. To check the specific package records, go to CompuTec WMS → Whs. Info → Batch/Serial Info and choose the suitable Batch.
 
-### Using weight scales
+### Using Weight Scales
 
 If CompuTec WMS has weight scales integrated, it is possible to set inventory quantity based on their measurements. To do this, click the IUoM field (Qty KG in our example) and the weight button (highlighted). The IUoM field will be filled with the weighted value:
     ![Weight Scale](./media/catch-weight/weight-scale.png)
 
 The field can be automatically filled in with the actual scale weight measurement upon clicking the Save icon if the [Weight Scale auto-complete quantity](../administrator-guide/custom-configuration/custom-configuration-functions/common.md) option is checked in Custom Configuration.
 
-### Average quantity per DUoM
+### Average Quantity per DUoM
 
 It is possible to set the number of units and total quantity. Saving documents like this will create units with an average quantity per unit.
 
@@ -106,6 +106,6 @@ This option can be used, e.g. when a user is sure about weight of each of the un
 
 If the quantity cannot be divided evenly between DUoMs, the Catch Weight option will add indivisible rest to one of the units. E.g., if there are three boxes and 10 kilograms, the mechanism will create two boxes with 3,333333 kg and one with 3,333334 (when there are six decimal places set in the system).
 
-## A label for Each Box
+### A label for Each Box
 
 If CompuTec WMS is integrated with CompuTec Labels, printing a label automatically upon saving each unit is possible. In our example, a user gets a label after saving each of the ten units (e.g., a box), not ten labels, upon saving the whole document.

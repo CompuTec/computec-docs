@@ -6,6 +6,8 @@ sidebar_position: 7
 
 Here, you can find description of FIFO/FEFO/FMFO queues based on Batches, Serial Numbers and for Items managed neither by Batches, nor Serial Numbers.
 
+---
+
 ## Batch Managed Items
 
 - The queue type is chosen based on ProcessForce:

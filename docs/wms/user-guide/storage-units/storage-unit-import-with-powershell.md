@@ -2,7 +2,7 @@
 sidebar_position: 10
 ---
 
-# Storage Unit import with Powershell
+# Storage Unit Import with Powershell
 
 ## Usage
 
@@ -51,13 +51,13 @@ sidebar_position: 10
     ![Business Objects](./media/business-object.webp)
 8. Run the script.
 
-## CSV files preparation
+## CSV Files Preparation
 
 1. Download the files from here.
 2. Open Microsoft Excel.
 3. Go to Data tab and open From text/CS:
 
-    <!-- ![Data](./media/from-csv.webp) -->
+    ![Data](./media/from-csv.png)
 4. Open SUHeader.csv / SULines.csv.
 5. From the drop-down menu: Data Type Detection select Do not detect data types. Then press:
 

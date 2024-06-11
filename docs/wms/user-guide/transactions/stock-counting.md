@@ -9,6 +9,15 @@ Stock Counting is checking the quantity of Items available in a specific Warehou
 :::warning
     Note that currently, CompuTec WMS supports only Stock Counting documents with Stock Counter set to User.
 :::
+<details>
+<summary>Click here for more information</summary>
+<div>
+:::info Path
+SAP Business One: Stock Management > Stock Transactions > Stock Counting Transactions > Stock Counting
+:::
+![Inventory Counting](./media/inventory-counting.png)
+</div>
+</details>
 
 1. Choose the Stock Counting option from the main menu:
 

@@ -1,3 +1,6 @@
+---
+sidebar_position: 4
+---
 # Stock Transfer from Pick List
 
 ## Generate warehouse transfer from pick list

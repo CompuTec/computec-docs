@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # New Production Receipt
@@ -11,6 +11,16 @@ sidebar_position: 3
 
     ![Manufacturing Order](./media/ManufacturingOrders3.webp)
 3. If the related Custom Configuration option is checked, you can choose an Employee.
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
+    Click the menu icon (1) and then the Employee icon (2):
+    ![Pick Receipt](./media/pick-receipt.png)
+
+    Choose an Employee:
+    ![Select Employee](./media/select-employee.png)
+    </div>
+    </details>
 
 4. You can add Items from other Manufacturing Orders to the list by clicking the '+' icon.
 

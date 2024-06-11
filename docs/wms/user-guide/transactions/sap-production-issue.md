@@ -10,6 +10,8 @@ An SAP Production Issue in CompuTec WMS can be generated from Production Orders 
     The order and availability of some of the forms during a document's creation may vary depending on individual settings. Click here to find out more.
 :::
 
+![SAP Production Order](./media/production-order.png)
+
 1. To create an SAP production issue, click SAP Production Issue in the main menu:
 
     ![SAP Production Issue](./media/SAPProdIssue.webp)
@@ -17,7 +19,16 @@ An SAP Production Issue in CompuTec WMS can be generated from Production Orders 
 
     Choose the desired Warehouse by clicking its row.
 
+    :::caution
+    Searching through the records is available in every window in which a Filter row is displayed by typing in at least a part of a name, e.g., a part of a warehouse name, in the Warehouse Selection window.
+    :::
+
     ![Warehouse](./media/Warehouse.webp)
+
+    :::caution
+    You can skip this step by clicking the right arrow icon. In this case, the Source Warehouse selection window will appear after clicking an item row in the Document Details window.
+    :::
+
 3. The Production Orders window will appear with a list of Production Orders.
 
     If a Warehouse was chosen in the previous step, only Production Orders connected to this Warehouse appear. Choose at least one of the Orders. A blue highlight and a green icon will show the selection. Click the right arrow icon after selecting the Orders.
@@ -65,3 +76,4 @@ An SAP Production Issue in CompuTec WMS can be generated from Production Orders 
 
     ![Remarks](./media/ProdIssueCreated.webp)
 13. The SAP Production Issue is posted and is available in SAP Business One.
+    ![Issue for Production](./media/issue-for-production.png)

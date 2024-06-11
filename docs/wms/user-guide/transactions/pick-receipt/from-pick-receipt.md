@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # From Pick Receipt
@@ -10,6 +10,11 @@ sidebar_position: 2
 2. Choose a document from the Opened Pick Receipt list.
 
     ![Opened Pick Receipts](./media/OpenedPickReceipts2.webp)
+
+    :::caution
+    In every window in which a Filter row is displayed, searching through the records is available by typing in at least a part of a name or a document number.
+    :::
+
 3. Click an Item row to choose it and set its quantity.
 
     ![Items to pick receipt](./media/ItemsToPickReceipt_gray2.webp)

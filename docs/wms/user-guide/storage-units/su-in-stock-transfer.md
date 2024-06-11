@@ -32,6 +32,7 @@ Here, you can describe handling Storage Units in the Stock Transfer transaction.
 6. You can add the next SU and Items to it. You can also go back to the previous SU by scanning its SSCC or SU Code or by moving to it manually and clicking the magnifying glass icon.
 
     ![Document Details](./media/su-doc-details.webp)
+    ![Storage Unit Details](./media/su-doc-details-2.png)
 7. When you go out of the edit mode of an SU and go to its details (the Line details screen), you can see which Batches have been chosen, quantities, and if they are stored in another SU or loose. You can also delete from the list Items without SU or Items in new SUs, but you cannot delete Items in the previously existing SUs.
 
     ![Line Details](./media/line-details.webp)
@@ -41,6 +42,7 @@ Here, you can describe handling Storage Units in the Stock Transfer transaction.
 9. Put Away Items screen: here, you can choose a location for each of the SUs (after clicking it), delete selecting all of the SUs (A), put all of the SUs in the chosen location (B), and go to the document saving (C).
 
     ![Put Away Items](./media/put-away-items-end.webp)
+    ![Put Away Items](./media/destination-warehouse.png)
 10. Once the location is selected, it is marked on its line. After choosing a location for all SUs, you can go to the document summary (the Right Arrow icon).
 
     ![Put Away Items](./media/put-away-items-mark.webp)

@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# Enable base document header remarks
+# Enable Base Document Header Remarks
 
 This option allows to set additional fields for a header.
 

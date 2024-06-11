@@ -7,7 +7,7 @@ sidebar_position: 3
 The Pick Order transaction allows generating a ProcessForce Production Issue.
 
 :::note
-    The order and availability of some of the forms during a document's creation may vary depending on individual settings. Click here to find out more.
+    The order and availability of some of the forms during a document's creation may vary depending on individual settings. Click [here](../../../administrator-guide/custom-configuration/overview.md) to find out more.
 :::
 
 1. To create a Production Issue from a Pick Order, click Pick Order in the main menu.
@@ -106,3 +106,5 @@ The Pick Order transaction allows generating a ProcessForce Production Issue.
 
     ![Created](./media/Created2.webp)
 12. Goods Issue has been created and recorded and can be viewed in SAP Business One.
+
+    ![Goods Issue](./media/goods-issue-01.png)

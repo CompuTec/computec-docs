@@ -11,7 +11,7 @@ The problem will be fixed in one of the future releases. For now, we offer the f
 Update the object in SAP Business One manually for the matrix and header.
 
 1. Go to the upper menu > Tools > Customization Tools > Object Registration Wizard.
-2. Click the Next button.
+2. Click the Next butt  on.
 3. Choose the Update an existing object option and click Next.
 4. Choose the CT_WMS_OSTU object and click the Next button three times.
 5. In the UI Settings window, choose the Matrix Style. Click the Next button.
