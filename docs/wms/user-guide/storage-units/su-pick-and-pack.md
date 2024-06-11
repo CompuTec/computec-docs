@@ -10,7 +10,7 @@ SU Pick and Pack from Sales Order
 
 ![SU Pick and Pack Operations](./media/FromSalesOrder5.webp)
 
-1. After selecting From Sales Order, the Warehouse selection screen opens. You can choose warehouse or just skip that step. Then, the Customer Selection screen opens.
+1. After selecting **From Sales Order**, the Warehouse selection screen opens. You can choose warehouse or just skip that step. Then, the **Customer Selection** screen opens.
 
     ![Customer Selection](./media/CustomerSelection5.webp)
 2. Then, the list of orders appears. Select one or more, then press the blue Next button.

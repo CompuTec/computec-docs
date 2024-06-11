@@ -22,6 +22,7 @@ sidebar_position: 5
 6. Set the quantity for the chosen Item and click the 'Next' icon.
 
     ![Document Details](./media/4NewSU3.webp)
+    ![Quantity](./media/quantity.png)
 7. Similarly, you can add another item and its quantity.
 
     ![Document Details](./media/NewSU-AddToExisting3.webp)
@@ -32,6 +33,6 @@ sidebar_position: 5
 8. Click the 'Save' icon after choosing Items required for SU and its quantity:
 
     ![Document Details](./media/NewSU-All3.webp)
-9. A new SU is created.
+9. A **new SU** is created.
 
     ![Document Details](./media/NewSUCreated3.webp)

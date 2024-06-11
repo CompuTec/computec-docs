@@ -4,7 +4,15 @@ sidebar_position: 1
 
 # Return from Delivery
 
-## Opening Return From Delivery in the application
+Return from Delivery can be generated from the Delivery document posted in SAP Business One System or CompuTec WMS. (An example Delivery Document used in this guide is published below).
+
+Custom Configuration for Return from [Delivery](../../../administrator-guide/custom-configuration/custom-configuration-functions/delivery.md).
+
+![Delivery](./media/delivery.png)
+
+---
+
+## Opening Return From Delivery in the Application
 
 To start creating SAP Business One Return Document, click the Return from Delivery in the Returns sub-menu.
 
@@ -12,13 +20,13 @@ To start creating SAP Business One Return Document, click the Return from Delive
 
 ![Return Delivery Operations](./media/ReturnDelivery1.webp)
 
-## Delivery Selection screen
+## Delivery Selection Screen
 
-On the next screen, a list of opened Deliveries is displayed. A document selection can be done manually or by scanning a barcode that contains a prefix and selected Delivery DocEntry number. This step can be skipped to create a Delivery without a base document.
+On the next screen, a list of opened Deliveries is displayed. A document selection can be done manually or by scanning a barcode that contains a prefix and selected Delivery DocEntry number. This step can be skipped to [create a Delivery without a base document](#use-case-3-creating-a-goods-return-without-a-base-document).
 
 ![Delivery Selection](./media/DeliverySelection.webp)
 
-## Document Details screen
+## Document Details Screen
 
 ![Document Details](./media/DocDet_Delivery.webp)
 
@@ -27,6 +35,22 @@ On the next screen, a list of opened Deliveries is displayed. A document selecti
 On the next screen, a list of opened Deliveries is displayed. A document selection can be done manually or by scanning a barcode that contains a prefix and selected Delivery DocEntry number. This step can be skipped to create a Delivery without a base document.
 
 ![Delivery Selection](./media/DeliverySelection.webp)
+
+<details>
+<summary>Here you can check an example barcode for Delivery</summary>
+<div>
+In this case, a barcode for Delivery 180006 is (253)33 – GS1 prefix with DocEntry.
+
+![Barcode](./media/barcode-01.PNG)
+
+If a related option in WMS Custom Configuration is chosen, then Barcode with Prefix + DocNum can be scanned too.
+
+![Barcode](./media/barcode-02.PNG)
+
+This step contains barcode validation – scanning an incorrect barcode causes an error display.
+
+</div>
+</details>
 
 ## Workflows in CompuTec WMS Items list
 
@@ -92,6 +116,13 @@ Choosing a Warehouse is required to move to the next step; choosing it leads to 
 
 On the Customer selection screen, the user must choose Business Partner, which returns goods to a company. Business Partner selection can be done manually or by scanning the Business Partner code with a prefix.
 
+Here you can check an example barcode for Business Partner in GS1 UCC\EAN barcode standard
+
+A barcode for Business Partner 00002 - Hanks Deliveries
+
+This step contains barcode validation – scanning an incorrect barcode causes an error message display.
+
+![Barcode](./media/barcode-03.PNG)
 ![Customer Selection](./media/CustomerSelection.webp)
 
 Choosing a customer is required to move to the next step; choosing it leads to the Document details form:
@@ -130,7 +161,7 @@ Click the Active-Item-01 row to modify its details (Batches, quantity), plus the
 
 ![Remarks](./media/RemarksReturn.webp)
 
-### Remarks and saving
+### Remarks and Saving
 
 Moving forward leads to the Remarks screen; here, the user can choose Document Series and Add Remarks, which will be visible in SAP Business One after the document posting.
 
@@ -140,6 +171,10 @@ CompuTec WMS will also receive information about the document creation status.
 
 ![Return](./media/Return.webp)
 
+---
+
 ## Posted document in SAP Business One
 
 Return document is available in SAP Business One after saving it in CompuTec WMS. The remarks field also contains standard information about the base document for return.
+
+![SAP Return](./media/sap-return.png)

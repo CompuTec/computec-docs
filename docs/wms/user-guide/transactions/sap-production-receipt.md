@@ -61,3 +61,7 @@ You can add remarks. Click the save button to save the receipt document:
 A note about the creation of a document is displayed. Click 'OK' to finish the transaction:
 
 ![Production](./media/ProdRecCreated.webp)
+
+The SAP Production Issue is posted and is available in SAP Business One:
+
+![Production](./media/receipt-from-production.png)

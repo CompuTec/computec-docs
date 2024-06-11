@@ -17,7 +17,9 @@ Choose the correct option on the main menu to create a Goods Issue document.
 ![Main Menu](./media/main-menu-goods-issue.webp)
 
 The Source Warehouse form will be displayed.
+
 Choose the desired Warehouse by clicking it. This step can be skipped. In this case, the Source Warehouse selection form will be displayed after choosing a specific Item.
+
 You can choose a Warehouse by scanning a code with a Warehouse prefix or without it.
 
 ![Warehouse](./media/goods-issue-warehouses.webp)
@@ -29,6 +31,19 @@ Click the menu icon and then the plus icon to add Items to the document.
 ![Document Details](./media/goods-issue-document-details.webp)
 
 You can scan an Item or SU code in this form, with or without a prefix.
+<details>
+<summary>Click here to expand</summary>
+<div>
+Scanning an Item code of an Item that is not on the list adds the Item to the list.
+Scanning a code without a prefix leads to interpreting it as an Item code and works as described above.
+
+If a code without a prefix is scanned and an Item with this code is not found, the application attempts to validate the code as an SU code.
+![Barcode](./media/barcode.png)
+
+You can scan an Item or SU code in this form, with or without a prefix. Scanning an Item code of an Item that is on the list leads to the quantity.
+![Quantity](./media/quantity.png)
+</div>
+</details>
 
 The list of available Items will be displayed. Click a desired Item to add it to the document.
 
@@ -75,3 +90,5 @@ A communication about the document's creation (with its number) will be displaye
 ![Final message](./media/goods-issue-final.webp)
 
 Click OK. The newly created document is now available in the SAP Business One system.
+
+![Goods Issue](./media/goods-issue.png)

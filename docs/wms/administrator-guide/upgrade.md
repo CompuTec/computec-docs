@@ -20,6 +20,6 @@ To upgrade WMS to a newer version, perform the following steps:
 
     ![Uninstall](./media/uninstall.webp)
 2. Get the latest versions of WMS components installers (WMS Server and WMS Client). You can find it [here](../releases/download.md)
-3. Perform the installation procedure described here using new files.
+3. Perform the installation procedure described [here](../administrator-guide/installation/requirements.md) using new files.
 
     Please fulfill the [requirements](./installation/requirements.md) and install both [WMS Server](./installation/wms-server/overview.md) and [WMS Client](./installation/wms-desktop-client.md) components.

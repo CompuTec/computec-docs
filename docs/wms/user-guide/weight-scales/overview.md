@@ -8,7 +8,7 @@ Here, you can find instructions on configuring and using weight scales with Comp
 
 ---
 
-1. Configure AppEngine and Plugin Gateway Manager from: Weight scales integration.
+1. Configure AppEngine and Plugin Gateway Manager from: [Weight scales integration](/docs/pdc/administrator-guide/weight-scales-integration/overview).
 2. Please remember that address `http://localhost:54000` is the location where you installed your applications f.e. `http://10.0.0.10:54000`
 3. Open CompuTec Gateway Manager (Weight Manager).
 4. Configure your WMS Weight Scale. I configured the WMS Test Weight Scale in this example, but you should use your own.

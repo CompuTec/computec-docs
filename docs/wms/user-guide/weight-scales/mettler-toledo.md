@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Mettler Toledo weight scale configuration to work with CompuTec WMS
+# Mettler Toledo Weight Scale Configuration
 
 To correctly configure a weight scale, it is required to create a Template and assign it to the weight scale. Next, it is required to choose a work Mode for the scales and finally assign the Template to the scale work Mode.
 
@@ -42,14 +42,14 @@ To correctly configure a weight scale, it is required to create a Template and a
 
 ![Mettler Toledo](./media/mettler-07.webp)
 
-## Assigning the defined Template to the weight scales
+## Assigning the Defined Template to the Weight Scales
 
 - Choose the 'Application' option from the menu.
 - choose the 'Straight weighing' option.
 - choose 'Printout;
 - choose 'COM2'
 - choose 'COM2' again
-- choose a Template name of the Template that was defined in the first step ('Template 1' in this example)
+- choose a Template name of the Template that was defined in the [first step](#defining-a-template) ('Template 1' in this example)
 - click OK to save the changes.
 
 ![Mettler Toledo](./media/mettler-08.webp)

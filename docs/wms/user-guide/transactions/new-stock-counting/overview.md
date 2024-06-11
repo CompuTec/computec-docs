@@ -1,4 +1,8 @@
-# New Stock Counting
+---
+sidebar_position: 1
+---
+
+# Overview
 
 New Stock Counting transactions have been available since the WMS 2.10.15_R1 version.
 
@@ -6,11 +10,11 @@ New Stock Counting transactions have been available since the WMS 2.10.15_R1 ver
 
 ### CompuTec WMS database objects installation
 
-<!-- Click [here](../../../administrator-guide/installation/wms-server/wms-server.md/#wms-server) to find out more. -->
+Click [here](../../../administrator-guide/installation/wms-server/overview.md) to find out more.
 
 ### AppEngine plugin installation
 
-Click (ADD LINK) here to download the installation file.
+Click [here](/docs/appengine/releases/plugins/wms-stock-counting/download) to download the installation file.
 
 Click [here](./plugin-installation.md) to find out more about the installation.
 

@@ -22,7 +22,7 @@ Using CompuTec WMS, it is possible to create SUs, browse them, and add them to a
 
 SUs can be used in every CompuTec WMS transaction.
 
-Created SUs can be browsed in SAP Business One. Click here to find out more.
+Created SUs can be browsed in SAP Business One. Click [here](../../administrator-guide/installation/sap-business-one-settings/storage-unit.md) to find out more.
 
 Click the 'SU Operations' option in the main menu to go to related options:
 
