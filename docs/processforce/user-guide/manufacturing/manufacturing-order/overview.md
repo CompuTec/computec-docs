@@ -13,7 +13,7 @@ There are multiple ways to create a Manufacturing Order.
 
 ![You Can Also](./media/overview/you-can-also.webp)
 
-## Manually from the Production menu
+## Manually from the Production Menu
 
 :::note Path
     Production → Manufacturing Order → Manufacturing Order

@@ -12,7 +12,7 @@ When setting up Item Master Data within SAP Business One, the following fields a
 
 - Form header
   - Unit Price – this value within this field is defaulted onto the Bill of Materials and Manufacturing Order and is used for financial transactions
-  - Item Group – to use License plate functions, a specific Item Group code is required and added within the General Settings ProcessForce → License tab
+  - Item Group – to use License plate functions, a specific Item Group code is required and added within the [General Settings](../system-initialization/general-settings/overview.md) ProcessForce → License tab
   - Sales Item, Inventory Item, Purchase Item, Fixed Assets Item - not checked in combination with Phantom Item - not checked for CoProduct production General Settings
 
 :::note
@@ -20,7 +20,7 @@ When setting up Item Master Data within SAP Business One, the following fields a
 :::
 
 - General tab
-  - Serial and Batch Numbers – to utilize Batch Template, Serial Template Definition function
+  - Serial and Batch Numbers – to utilize [Batch Template, Serial Template Definition](batch-serial-template-definition.md) function
 - Planning tab
   - Procurement Method – Make or Buy values are used within the Bill of Materials and Manufacturing Order components
 - Production tab

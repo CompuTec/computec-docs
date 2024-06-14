@@ -17,5 +17,5 @@ It is possible to set a quantity ratio. The current quantity value set for a rep
 ![Mass Item Replace](./media/mass-item-replace/mass-item-replace.webp)
 
 :::info
-    For mass changes in the Bill of Materials, check the dedicated AppEngine plugin: Bulk Change.
+    For mass changes in the Bill of Materials, check the dedicated AppEngine plugin: [Bulk Change](/docs/appengine/plugins-user-guide/bulk-changes-on-bills-of-materials/overview).
 :::

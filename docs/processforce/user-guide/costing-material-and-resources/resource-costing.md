@@ -6,7 +6,7 @@ sidebar_position: 5
 
 Resource Costing is a function that evaluates a Resource's work during production. Combined with Item Costing (which holds materials costs), this option assesses the production based on a given Manufacturing Order.
 
-:::warning
+:::danger
     Adding User Defined Fields to the Item Costing and Resource Costing form may cause errors and is not recommended.
 :::
 
@@ -18,9 +18,9 @@ Please check the [Configuration](./configuration/overview.md) section before run
 
 ![Resource Costing](./media/resource-costing/resource-costing.webp)
 
-## General information
+## General Information
 
-Resource Costing is created automatically upon adding a new Resource to the system. For every Resource, separate Resource Costing is created for each of the Cost Categories in the system (Note that Resource Costing for Cost Category 000 cannot be edited on this form).
+Resource Costing is created automatically upon adding a new Resource to the system. For every Resource, separate Resource Costing is created for each of the [Cost Categories](../costing-material-and-resources/cost-categories.md) in the system (Note that Resource Costing for Cost Category 000 cannot be edited on this form).
 
 During the Item Cost Roll-up for a semi-finished or finished product, these fixed and variable overhead values will be displayed within the Fixed and Variable Overhead columns.
 
@@ -114,4 +114,4 @@ Click [here](../routings/resources.md) to find out more about Resources.
 
 ## Distribution Rules and Cost Dimensions
 
-For details, click Resources - Distribution and Cost Dimensions.
+For details, click [Resources - Distribution and Cost Dimensions](../costing-material-and-resources/distribution-and-cost-dimensions/resources-distribution-and-cost-dimensions.md).

@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Inventory Tab
+# Inventory tab
 
 This tab enables you to configure advanced settings for various inventory parameters, including Batch and Serial Numbers management, Issue Methods, and Quality Control Settings.
 
@@ -59,7 +59,7 @@ Click [here](../../inventory/batch-control/batch-control-settings/configuration-
 
 **Default Quality Control Status for ProcessForce Receipt Documents**
 
-[**Revision Based Picking and Backflushing**](../../manufacturing/revision-based-picking.md)
+[Revision Based Picking and Backflushing](../../manufacturing/revision-based-picking.md)
 
 **Issue Residual Quantity on next Good Receipts when possible** – if the option is checked, then during the following Goods Receipt for the same Manufacturing Order, the system will attempt to reissue all rows with the Backflush issue type where the Residual Quantity is greater than zero and there is a quantity to issue (because it was not available in stock during previous receipts).
 

@@ -8,7 +8,7 @@ When a user adds, changes, or deletes Item Master Data within SAP Business One, 
 
 If data has been added to SAP Business One manually or via DTW while ProcessForce is not installed and running, the Restore functions need to be run.
 
-If the Restore function is not run, your SAP Business One and ProcessForce may run slowly as they try to find the Item Details and Cost data.
+If the Restore function is not running, your SAP Business One and ProcessForce may run slowly as they try to find the Item Details and Cost data.
 
 After installing ProcessForce, the following restore functions need to be run
 

@@ -8,7 +8,7 @@ Here, you can check how to check Resource capacity.
 
 ---
 
-## Resources Tab
+## Resources tab
 
 - Click on the row of the resource to view.
 - The bottom of the Gantt chart displays the consumed capacity.
@@ -19,7 +19,7 @@ Here, you can check how to check Resource capacity.
 
     ![Scheduling Marked](./media/view-planned-resource-capacity/scheduling-marked.webp)
 
-## Manufacturing Orders Tab
+## Manufacturing Orders tab
 
 Use the same navigation as above.
 

@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Scrap Tab
+# Scrap tab
 
 :::note Path
     Production → Bill of Materials → Bill of Materials → Scrap Tab
@@ -12,8 +12,8 @@ sidebar_position: 5
 - Record the Warehouse where the inventory is held. If the Item is backflushed, this is the Warehouse where the inventory will be placed from a Production Receipt.
 - Define a factor and description. This factor is used as a variable to change the quantity.
 - Enter a Quantity of the scrap in relation to the parent product.
-- The Result is a calculated value of the scrap and parent quantity relationship based on the defined Formula.
-- Use the default Formula (defined on the General Settings/ProcessForce Tab) or change the expression format to calculate the scrap quantity (result). See Formula for additional information.
+- The Result is a calculated value of the scrap and parent quantity relationship based on the defined [Formula](../formula.md).
+- Use the default Formula (defined on the General Settings/ProcessForce Tab) or change the expression format to calculate the scrap quantity (result). See [Formula](../formula.md) for additional information.
 - Enter the UoM; the default value is defined within the Item Master Data/Inventory Data Tab
 - Select the scrap Type:
   - The valid options are Scrap and ByProduct.

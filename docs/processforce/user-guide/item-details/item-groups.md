@@ -28,8 +28,14 @@ For example, an item can belong to the group boxes and another grouping packagin
 
 ![Item Group Groups](./media/item-groups/item-group-groups.webp)
 
-## Item Group assigning
+## Item Group Assigning
 
 A once-created item group can be assigned to an item in the Item Details form, Groups tab. By clicking a second column and then a circle displayed within a field, a proper Item Group can be chosen:
 
 ![Assigning](./media/item-groups/groups-assigning-item-groups.webp)
+
+## Item Group Group Assigning
+
+A once-created item group group can be assigned to an Item Group. By clicking a group field and then the Choose From List icon, a required Item Group Group can be set:
+
+![Assigning](./media/item-groups/groups-assigning-item-groups.png)

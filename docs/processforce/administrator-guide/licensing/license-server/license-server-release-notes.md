@@ -13,7 +13,7 @@ toc_max_heading_level: 2
 The installer is available to download from [here](../../../releases/download.md#computec-license-service).
 :::
 
-### Changes and improvements
+### Changes and Improvements
 
 **Server – ProcessForce, Server – PDC/WMS (terminals), Server – Labels, Server – Premium**
 
@@ -55,7 +55,7 @@ This fix was implemented in version 5.10.2.9 but not included in versions 5.11.0
 
 - The address of AppEngine configuration file, which is used when clicking Settings button for CompuTec AppEngine service in CompuTec Service Manager, has been corrected for the one used in AppEngine from 2.0 version.
 
-    **Error Messages**
+    **Error Message**
         - There has been an error accessing the configuration file. The system cannot find the file specified.
 
 - PDC/WMS LICENSING window, WMS Users tab: defined and not displayed records are deleted after updating a displayed record when using a filter
@@ -154,10 +154,10 @@ System.Data.SqlClient.SqlException (0x80131904): There is already an object name
 ### *Release Date - 4 November 2020*
 
 :::info
-The installer is available to download from [here](../../../releases/download.md).
+The installer is available to download from [here](../../../releases/download.md#computec-license-service).
 :::
 
-### Changes and improvements
+### Changes and Improvements
 
 **Server – ProcessForce, Server – PDC/WMS (terminals), Server – Labels, Server – Premium**
 

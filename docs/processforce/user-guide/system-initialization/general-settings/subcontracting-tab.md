@@ -2,7 +2,7 @@
 sidebar_position: 9
 ---
 
-# Subcontracting Tab
+# Subcontracting tab
 
 Subcontracting is a method of managing the “purchase of a service.” For example, items are sent to the subcontractor to perform a service, e.g., painting, heat treatment, or annealing.
 

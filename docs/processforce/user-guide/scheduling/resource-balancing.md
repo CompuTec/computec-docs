@@ -44,7 +44,7 @@ The system considers related times, Operation quantities, Resource availability,
 
 To use this option, all Resources used in Production Processes and Manufacturing Orders within the system must have a Run Time greater than 0.
 
-Production Process:
+[Production Process](../formulations-and-bill-of-materials/production-process/overview.md):
 
 ![Production Process Runtime](./media/resource-balancing/production-process-runtime.webp)
 
@@ -52,7 +52,7 @@ Manufacturing Order:
 
 ![Manufacturing Order Run Time](./media/resource-balancing/manufacturing-order-runtime.webp)
 
-### General Settings option
+### General Settings Option
 
 :::info Path
     Administration → System Initialization → General Settings → ProcessForce tab → Bill of Materials and Manufacturing Orders
@@ -77,7 +77,7 @@ When the option is selected, Resource selection based on Resource Balancing is c
 
 A function for saving action logs to files is available specifically for the Resource Balancing function.
 
-:::warning
+:::danger
     Please note that this function records detailed information on every scheduling or rescheduling action related to Resource Balancing. Consequently, it may impact the performance of ProcessForce.
 :::
 
@@ -87,9 +87,9 @@ To activate the option perform the following steps:
 2. Open ProcessForce.exe.config file with a text editor.
 3. Change the value from "false" to "true" in the following line:
 
-   ```config
-   <add key="SchedulingBalancingEnabled" value="false" />
-   ```
+        ```config
+        <add key="SchedulingBalancingEnabled" value="false" />
+        ```
 
    From now on, the log files will be saved in the following default path: `C:\ProgramData\CompuTec\ProcessForce\ResourceBalancing`.
 

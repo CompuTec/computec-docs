@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Installation Guide
 
-In this page, you can find a step-by-step guide on how to install the ProcessForce Extension.
+On this page, you can find a step-by-step guide on how to install the ProcessForce Extension.
 
 ---
 
@@ -124,7 +124,7 @@ ProcessForce for SAP Business One 10.0 is a lightweight deployment extension. As
 
     ![ProcessForce menu](./media/extension/processforce-menu.webp)
 
-### License assignment
+### License Assignment
 
 :::info
     This step may be skipped only in case of making the extension upgrade.
@@ -132,7 +132,7 @@ ProcessForce for SAP Business One 10.0 is a lightweight deployment extension. As
 
 You can find the License Import and Assignment guide [here](../../licensing/license-import-assignment.md).
 
-### Data preparation
+### Data Preparation
 
 :::note
     Before running restore procedures please determine whether the [**Manage Item Cost per Warehouse**](../../../user-guide/costing-material-and-resources/configuration.md) setting is used. If you alter this setting after restoration, it will necessitate the removal and subsequent restoration of all Item Costing Details.
@@ -148,4 +148,4 @@ If ProcessForce is installed on a database with an existing data (particularly I
 
 ![Restore](./media/extension/restore.webp)
 
-Click [**here**](../../../user-guide/system-initialization/data-restore.md) to find out more about the Restore function.
+Click [here](../../../user-guide/system-initialization/data-restore.md) to find out more about the Restore function.

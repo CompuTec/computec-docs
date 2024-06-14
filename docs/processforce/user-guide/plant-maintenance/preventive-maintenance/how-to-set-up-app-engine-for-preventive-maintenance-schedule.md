@@ -24,7 +24,7 @@ sidebar_position: 8
 
     ![Plugins Configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/image2021-4-27-14-45-43.png)
 
-## Background Processing configuration
+## Background Processing Configuration
 
 Preventive Maintenance Schedule based on **Time** set up:
 

@@ -205,19 +205,19 @@ To share the finding in the list, you have to do as follows:
 
     ![Inspection Readings](./media/overview/inspection-reading.webp)
 
-## Maintenance Order Template definition schema
+## Maintenance Order Template Definition Schema
 
-Check <!-- TODO: Add Link --> here.
+Check [here](../field-description/maintenance-order-template.md).
 
-## Maintenance Order creation schema
+## Maintenance Order Creation Schema
 
-Check <!-- TODO: Add Link --> here.
+Check [here](../field-description/maintenance-order-template.md#maintenance-order-template).
 
 ## MO recording
 
 Recording of MO is possible in MO with the Status set to Started.
 
-The first user has to record checkpoints (check <!-- TODO: Add Link --> here and for definition here). If all checkpoints with Required Entry=Yes have Done=Yes (automatically checked when reading the document is closed), then Task is checked as done. If the Task does not have checkpoints in the checklist, then you report the task in its line by selecting the g Done. If the task has a checkpoint in the list, you are obligated to report each checkpoint. When all the jobs are done, you can change to Finished.
+The first user has to record checkpoints (check [here](#maintenance-order-template-definition-schema) and for definition [here](../field-description/maintenance-order-template.md#checkpoint-template)). If all checkpoints with Required Entry=Yes have Done=Yes (automatically checked when reading the document is closed), then Task is checked as done. If the Task does not have checkpoints in the checklist, then you report the task in its line by selecting the g Done. If the task has a checkpoint in the list, you are obligated to report each checkpoint. When all the jobs are done, you can change to Finished.
 
 Select checkpoint in Checklist and select RMBM option Inspection Reading for checkpoint related to inspections, Type: Inspection, Checklist Item, Quantitative, Qualitative, Question.
 
@@ -230,5 +230,5 @@ Or RMBM option Meter Reading for checkpoint with Type=Meter Reading:
 You can create many Inspection Reading/Meter Reading Documents for each checkpoint line. The last document is visible in the checkpoint line (column: Meter Reading or Inspection Reading). You can create the following document if the previous one is closed. You can review documents – Records History (RMBM option).
 
 :::note
-    Recording of different Types of Checkpoints is described [here]
+    Recording of different Types of Checkpoints is described [here](../field-description/maintainable-item.md#meter-reading)
 :::

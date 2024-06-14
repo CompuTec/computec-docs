@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# CoProducts Tab
+# CoProducts tab
 
 :::note
     Production → Bill of Materials → Bill of Material → CoProducts Tab

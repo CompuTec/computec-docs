@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# Planned Yield percentage
+# Planned Yield Percentage
 
 The concept of planned Yield is to:
 

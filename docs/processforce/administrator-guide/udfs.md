@@ -8,7 +8,7 @@ A possibility to add User-Defined Fields (UDFs) is an SAP Business One option th
 
 Supplementary fields are often added to master data and documents to meet specific customers’ business process requirements.
 
-In this section working on UDFs with ProcessForce is described. Please check the respective SAP Business One documentation the respective [SAP Business One documentation entry](https://help.sap.com/viewer/68a2e87fb29941b5bf959a184d9c6727/10.0/en-US/4510ff7bcf465d7be10000000a11466f.html), to find out more about the SAP Business One UDF option.
+In this section, working on UDFs with ProcessForce is described. Please check the respective SAP Business One documentation the respective [SAP Business One documentation entry](https://help.sap.com/viewer/68a2e87fb29941b5bf959a184d9c6727/10.0/en-US/4510ff7bcf465d7be10000000a11466f.html), to find out more about the SAP Business One UDF option.
 
 ---
 
@@ -50,7 +50,7 @@ In this section working on UDFs with ProcessForce is described. Please check the
 
     ![Add UDF](./media/udfs/udf-add.webp)
 
-- Fill in all desired fields (check [the respective SAP Business One documentation entry](http://help.sap.com/saphelp_sboh92/helpdata/en/45/10ff7bcf465d7be10000000a11466f/content.htm) for more information) and click Add.
+- Fill in all desired fields (check the respective [SAP Business One documentation entry](http://help.sap.com/saphelp_sboh92/helpdata/en/45/10ff7bcf465d7be10000000a11466f/content.htm) for more information) and click Add.
 
     ![Fields](./media/udfs/field-data-add.webp)
 

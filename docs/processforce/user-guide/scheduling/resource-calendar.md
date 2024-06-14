@@ -20,7 +20,7 @@ You can access Resource Calendar by the path above or by clicking a yellow arrow
 
 ![Resource Calendar Yellow Arrow](./media/resource-calendar/resource-calendar-yellow-arrow.webp)
 
-## Resource Calendar Tabs
+## Resource Calendar tabs
 
 ### Working Hours
 
@@ -44,7 +44,7 @@ Clicking the "You Can Also" button and selecting "Create exceptions based on cur
 
 ![Resource Calendar Holidays](./media/resource-calendar/resource-calendar-holidays.webp)
 
-Here you can define one-day time-offs and Remarks connected to them.
+Here, you can define one-day time-offs and Remarks connected to them.
 
 By clicking the 'You Can Also' button and then Copying a list of Holidays defined in the system, you can automatically fill in the Holidays list with predefined data.
 
@@ -65,6 +65,8 @@ You can assign a predefined Resource Calendar Template to a specific Resource, l
 :::info Path
     Administration → Setup → Production → Resource Calendar Template
 :::
+
+![Resource Calendar Template](./media/resource-calendar/resource-calendar-template.png)
 
 You can create a Resource Calendar Template that can later be assigned to a specific Resource. Fill in the required fields (like when creating a Resource Calendar) and click the Add button.
 

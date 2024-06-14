@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Bill of Materials form header
+# Bill of Materials form Header
 
 :::note Path
     Production → Bill Of Materials → Bill of Materials → Header
@@ -10,7 +10,7 @@ sidebar_position: 2
 
 This form allows a user to define a Bill of Materials for a final product or a product to be used as a part of another Bill of Materials.
 
-Multiple Bill of Materials can be defined for a product based on the Revision Code, defined within the Inventory → Item Details → Revision Tab. Click here to find out more.
+Multiple Bill of Materials can be defined for a product based on the Revision Code, defined within the Inventory → Item Details → Revision Tab. Click [here](../../item-details/overview.md) to find out more.
 
 The Quantity and UoM represent the product quantity of the parent item.
 

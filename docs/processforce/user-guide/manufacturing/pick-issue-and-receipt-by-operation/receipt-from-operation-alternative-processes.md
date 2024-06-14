@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Receipt from Operation alternative Processes
+# Receipt from Operation Alternative Processes
 
 You can find information on Receipts from Operation Alternative Processes on this page.
 

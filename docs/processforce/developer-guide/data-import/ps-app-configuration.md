@@ -26,7 +26,7 @@ If you are using Windows Server, here is an example of how you can add Windows P
 
 ## Execution Policy
 
-Set execution policy to RemoteSigned. To check which execution policy is selected, choose the Get-ExecutionPolicy command.
+Set execution policy to RemoteSigned. To check which execution policy is selected, choose the `Get-ExecutionPolicy` command.
 
 ![Get Execution Policy](./media/ps-app-configuration/get-execution-policy.webp)
 

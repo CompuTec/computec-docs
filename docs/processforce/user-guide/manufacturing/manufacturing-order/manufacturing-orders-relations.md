@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+toc_min_heading_level: 2
+toc_max_heading_level: 5
 ---
 
 # Manufacturing Orders Relations
@@ -12,7 +14,7 @@ This option allows you to create advanced Manufacturing Orders relations and rel
 
 ![Advanced Manufacturing Orders Relations](./media/manufacturing-orders-relations/advanced-manufacturing-orders-relations.webp)
 
-## Activating the option
+## Activating the Option
 
 :::info Path
 Production → Manufacturing Order → Manufacturing Order → Others tab
@@ -22,15 +24,15 @@ Production → Manufacturing Order → Manufacturing Order → Others tab
 
 Click the highlighted button to open the Manufacturing Orders Relations form.
 
-## Manufacturing Orders Relations form
+## Manufacturing Orders Relations Form
 
 ![Form](./media/manufacturing-orders-relations/manufacturing-orders-relations-form.webp)
 
 ### Creating relation
 
-#### Assigning already existing Manufacturing Orders
+#### Assigning Already Existing Manufacturing Orders
 
-##### Assigning child Manufacturing Orders
+##### Assigning Child Manufacturing Orders
 
 ![List](./media/manufacturing-orders-relations/list-of-manufacturing-order-child-candidates.webp)
 

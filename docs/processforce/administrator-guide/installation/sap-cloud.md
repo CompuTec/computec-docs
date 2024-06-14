@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # SAP Business One Cloud Environment
 
-Here you can find notes on registering ProcessForce in the SAP Business One Cloud environment.
+Here, you can find notes on registering ProcessForce in the SAP Business One Cloud environment.
 
 ---
 
@@ -12,7 +12,7 @@ Here you can find notes on registering ProcessForce in the SAP Business One Clou
 
 Refer to the Managing Extensions chapter in the [SAP Business One Cloud Administrator's Guide](https://help.sap.com/docs/SAP_BUSINESS_ONE_CLOUD) for instructions on registering add-ons, deploying them to Service Units, and assigning them to Tenants in the Cloud Control Center.
 
-## Error while deploying ProcessForce to Service Unit
+## Error while Deploying ProcessForce to Service Unit
 
 If you encounter difficulties deploying the ProcessForce add-on to a Service Unit with an older version of SAP Business One Cloud or Cloud Control Center, it may be due to an error during the registration of the Microsoft COM DLL file (RegisterActiveX.dll). Should this occur, kindly submit a ticket through our support portal to request a version of the ProcessForce installer that facilitates proper deployment of the add-on.
 

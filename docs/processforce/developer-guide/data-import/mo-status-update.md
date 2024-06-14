@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Tutorial: Manufacturing Order Status Update
 
-Here you can find a complete description of the Manufacturing Order Status Update script.
+Here, you can find a complete description of the Manufacturing Order Status Update script.
 
 ---
 
@@ -78,6 +78,12 @@ Asking the user for confirmation. We are presenting connection information and a
 $pfcCompany = [CompuTec.ProcessForce.API.ProcessForceCompanyInitializator]::CreateCompany()
 ```
 
+Creating Company object using method from ProcessForce API :
+
+```powershell
+$pfcCompany = [CompuTec.ProcessForce.API.ProcessForceCompanyInitializator]::CreateCompany()
+```
+
 Connection properties are assigned from the configuration.xml file to a Company object:
 
 ```powershell
@@ -139,7 +145,7 @@ Starting a try block:
 try {
 ```
 
-This is an SQL query command that is executed to get information from a database. Here you can specify any query you like. Please make sure that this query returns the following columns "DocEntry", "DocNum", "StatusCode" as these are expected by the script:
+This is an SQL query command that is executed to get information from a database. Here, you can specify any query you like. Please make sure that this query returns the following columns "DocEntry", "DocNum", "StatusCode" as these are expected by the script:
 
 ```powershell
 $SQLQuery = "SELECT ""DocEntry"", ""DocNum"", 'CL' AS ""StatusCode"" FROM ""@CT_PF_OMOR"" WHERE ""U_RequiredDate"" < '2018-07-01' AND ""U_Status"" = 'FI' ";
@@ -195,13 +201,13 @@ $DocNum = $recordSet.Fields.Item('DocNum').Value;
 $Status = $recordSet.Fields.Item('StatusCode').Value;
 ```
 
-Creation of Manufacturing Order Object. This is done using CreatePFObject method on a Company object. It is possible to create different ProcessForce objects using this method. To create a different object, you will need to change ManufacturingOrder to desired object code. For example, for ItemDetails it will look like this: $pfcCompany.CreatePFObject([CompuTec.ProcessForce.API.Core.ObjectTypes]::ItemDetails):
+Creation of Manufacturing Order Object is done by using `CreatePFObject` method on a Company object. It is possible to create different ProcessForce objects using this method. To create a different object, you will need to change ManufacturingOrder to desired object code. For example, for ItemDetails it will look like this: $pfcCompany.CreatePFObject([CompuTec.ProcessForce.API.Core.ObjectTypes]::ItemDetails):
 
 ```powershell
 $mo = $pfcCompany.CreatePFObject([CompuTec.ProcessForce.API.Core.ObjectTypes]::ManufacturingOrder)
 ```
 
-Loading of desired Manufacturing Order using GetByKey method on Manufacturing Order object (variable $mo). As a parameter we are passing DocEntry of Manufacturing Order:
+Loading of desired Manufacturing Order using `GetByKey` method on Manufacturing Order object (variable $mo). As a parameter we are passing DocEntry of Manufacturing Order:
 
 ```powershell
 $result = $mo.GetByKey($DocEntry);
@@ -216,7 +222,7 @@ if ($result -ne 0) {
 }
 ```
 
-This is a switch method. It allows us to set a correct status from ProcessForce API to the $MORStatus variable. This way we can check if provided status code is correct. If not, an exception is thrown(140):
+This is a switch method. It allows us to set a correct status from ProcessForce API to the $MORStatus variable. This way, we can check if provided status code is correct. If not, an exception is thrown(140):
 
 ```powershell
 switch ($Status) {
@@ -258,13 +264,13 @@ This is an actual change of status on the Manufacturing Order. Previously determ
 $mo.U_Status = $MORstatus;
 ```
 
-Until now the changes have not been saved. This is done here using the Update method on the Manufacturing Order object. The result of this method is written to $updateResult variable. If it is lower than 0, it means the operation has failed:
+Until now, the changes have not been saved. This is done here using the Update method on the Manufacturing Order object. The result of this method is written to $updateResult variable. If this value is lower than 0, it means the operation has failed:
 
 ```powershell
 $updateResult = $mo.Update();
 ```
 
-Checking the result of the update operation and if it failed, an exception is thrown. It is important to see that we are getting information about what went wrong from the method GetLastErrorDescription on the Company object:
+The result of the update operation is checked, and if it fails, an exception is thrown. It is important to see that we are getting information about what went wrong from the method `GetLastErrorDescription` on the Company object:
 
 ```powershell
 if ($updateResult -lt 0) {   
@@ -284,7 +290,7 @@ catch {
 }
 ```
 
-***This part is very important*** because it is fetching the next record from the RecordSet. It is in the Finally block because it needs to be executed regardless the exception occurred or not:
+***This part is very important*** because because it fetches the next record from the RecordSet. It is in the Finally block because it needs to be executed regardless the exception occurred or not:
 
 ```powershell
 Finally {
@@ -309,7 +315,7 @@ else {
 }
 ```
 
-The Catch block, try block that was opened in line 91. If an exception occurs on this level, it displays information about the exception. In the Finally block we are disconnecting from SAP Business One:
+The Catch block, try block that was opened in line 91. If an exception occurs on this level, it displays information about the exception. In the Final block, we disconnect from SAP Business One:
 
 ```powershell
 }

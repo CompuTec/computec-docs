@@ -12,7 +12,7 @@ To support this process, the associated master data are defined on the Item Deta
     Inventory → Item Details → Origins tab
 :::
 
-## Origins Tab
+## Origins tab
 
 ![Origins Tab](./media/country-of-origin/item-details-origin.webp)
 

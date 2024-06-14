@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Quality Control Configuration
 
-Here you can check the general settings required for the Quality Test: Document Series Number, Resources, and Items information.
+Here, you can check the general settings required for the Quality Test: Document Series Number, Resources, and Items information.
 
 ---
 

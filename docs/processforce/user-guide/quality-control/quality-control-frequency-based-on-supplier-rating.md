@@ -2,7 +2,7 @@
 sidebar_position: 11
 ---
 
-# Quality Control frequency based on Supplier's rating
+# Quality Control Frequency based on Supplier's Rating
 
 Here, you can find information on the Quality Control process based on the Supplier's rating (an evaluation of the level of trust toward a Supplier based on past collaboration). Quality Control Tests generation can be bound to and defined by the level of trust.
 
@@ -14,7 +14,7 @@ Using Quality Control Supplier Scorecards helps with the following:
 
 Quality issues, errors, and mistakes aligned with certified testing lab Internal, pre-ship inspection system in place.
 
-:::warning
+:::danger
     The current implementation allows using this functionality only for one type of transaction: Goods Receipt PO and Counter Type = Occurrences.
 
     It works only for "Enable Create Closed QC Tests from Frequency Rules" = Yes (Administration → System Initialization → General Settings → ProcessForce → QC)
@@ -55,7 +55,7 @@ To start working with Supplier Scorecard, you need to define a dictionary.
 
 The first thing is to fill BP QC Qualification with data – levels that you want to manage suppliers. One next step is assigning QC Qualification to a Business Partner.
 
-Below you have an example of how to use functionality in the company.
+Below, you have an example of how to use functionality in the company.
 
 ![Frequency](./media/quality-control-frequency-based-on-supplier-rating/frequency.webp)
 

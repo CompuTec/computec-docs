@@ -16,6 +16,8 @@ This document provides a step-by-step guide on how to use and configure CompuTec
 
 After the CompuTec License Server installation in the system, you'll find the CompuTec Service Manager shortcut in the Windows program list.
 
+    ![CompuTec Service Manager](./media/direct-access/computec-service-manager.png)
+
 After clicking it, the CT icon appears in the Windows notification area:
 
 ![CT shortcut](./media/direct-access/CT-shortcut.webp)
@@ -115,7 +117,7 @@ You can also specify a logging level and see a disk location where logs are kept
     :::info
         It is possible to set up more than one database server:
         <details>
-        <summary>Click here to expand</summary>
+        <summary>Click here to find out more</summary>
         <div>
         ![Multiple databases](./media/direct-access/license-server-settings_2_db-connection_9.webp)
         </div>

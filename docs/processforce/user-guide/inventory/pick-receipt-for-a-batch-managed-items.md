@@ -62,7 +62,7 @@ For this example we will set up a Batch Template that contains date and counter.
 
     ![Pick Receipt for a Batch Managed Items](./media/pick-receipt-for-a-batch-managed-items/ctrl-tab.png)
 
-- Here we can check generated Batch number or divide receipt goods into different batches:
+- Here, we can check generated Batch number or divide receipt goods into different batches:
 
     ![Pick Receipt for a Batch Managed Items](./media/pick-receipt-for-a-batch-managed-items/pick-receipt-batches-quantity-divided.png)
 

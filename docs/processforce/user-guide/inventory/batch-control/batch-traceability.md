@@ -19,10 +19,15 @@ You can reach ProcessForce Batch Traceability by:
 - Modules Menu (check the path above)
 - Transaction tab on the Complaint form, right-click on a Batch.
   ![Complaint -> Batch Traceability](./media/batch-traceability/complaint-batch-traceability.webp)
+
+Click [here](../../complaint-management/complaint.md) to find out more about the Complaint function.
+
 - Batch Master Data form the context menu.
   ![Batch Master Data -> Batch Traceability](./media/batch-traceability/batch-master-data-batch-traceability.webp)
 
-## Opening Batch Trace Visualization form
+Click [here](../../inventory/batch-control/batch-master-data/) to find out more about Batch Master Data.
+
+## Opening Batch Trace Visualization Form
 
 After opening the Batch Traceability function, Batch Traceability. Selection Criteria will open.
 
@@ -68,7 +73,7 @@ Right-click on a specific box to see all activities and transactions connected t
 
 Click the yellow arrow in a specific document row to get more information about it.
 
-## Going forward
+## Going Forward
 
 In Batch Trace Visualization form shows what a specific Item was made of. It is looking back on every batch used in a production process to the point of a chosen Item.
 

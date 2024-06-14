@@ -28,6 +28,8 @@ The table below charts the combination between Issue Type and Issue Behavior:
 |                |       No       |                    |      :x:       |                      |                    |                    |
 |                |    Display     |                    |                | :information_source: |                    |                    |
 
+![General Settings Issue Type](./media/manual-and-backflush-issue-type-configuration/general-settings-issue-type.png)
+
 ### Locked – Yes
 
 ![Locked - Yes](./media/manual-and-backflush-issue-type-configuration/locked-yes.webp)

@@ -29,7 +29,7 @@ These are copied if Distribution Rule and Project are defined at a Manufacturing
 
 If blank, they can be manually added.
 
-To perform the rest of the Pick Receipt to Production Goods Receipt cycle, visit this page<!-- TODO: Add Link --> Pick Receipt Bin Locations and Allocations.
+To perform the rest of the Pick Receipt to Production Goods Receipt cycle, visit this page [Pick Receipt Bin Locations and Allocations](../inventory/pick-receipt-bin-locations-and-allocations.md).
 
 You can check how to create Pick Receipt for and Production Goods Receipt for Items managed by Batches here.
 
@@ -44,6 +44,6 @@ We do not recommend using this function with a larger amount of Manufacturing Or
 - all documents and entries for Journal Entries are done in one significant transaction; in this time production system can be locked for other users until the trade ends (processing big amount of data with the transaction),
 - if the quantity of Manufacturing Orders lines is larger, the time of execution grows logarithmically; many operations in one transaction cause this, and SAP DI API speed, in this case, is low (SAP DI API speed limitation).
 
-## Suggestion
+### Suggestion
 
 By the above, it is suggested to perform Goods Receipt individually from every Manufacturing Order level.

@@ -65,4 +65,4 @@ Click Choose From List button to open the list of alternative resources previous
 
 ## CompuTec PDC
 
-You can also switch a Task to an Alternative Resource from the CompuTec PDC level.
+You can also switch a [Task to an Alternative Resource from the CompuTec PDC level](/docs/pdc/user-guide/task-activities/overview).

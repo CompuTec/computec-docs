@@ -2,13 +2,13 @@
 sidebar_position: 4
 ---
 
-# Bill of Materials and Manufacturing Orders Tab
+# Bill of Materials and Manufacturing Orders tab
 
 You can define Bill of Materials and Manufacturing Orders settings on this tab, e.g., default formulas for Items.
 
 ![Bill of Materials and MAnufacturing Orders tab](./media/bom-mor/general-settings-bill-of-materials-and-manufacturing-orders.webp)
 
-## Default formula for Bill of Materials
+## Default Formula for Bill of Materials
 
 ProcessForce provides a flexible methodology for defining the relationship between parent Items, Coproducts, Scrap, Phantoms, Scrap Percentages, and Factors.
 
@@ -18,7 +18,7 @@ The formula as displayed is added to this tab during the ProcessForce installati
 
 ![Formulas](./media/bom-mor/general-settings-bill-of-materials-and-manufacturing-orders-formulas.webp)
 
-### Default formulas
+### Default Formulas
 
 Items:
 
@@ -89,7 +89,7 @@ SAP Production Order has a Due Date on it. On ProcessForce Manufacturing Order, 
 
 ![Date Synchronization](./media/bom-mor/manufacturing-order-sync-dates.webp)
 
-## Default priority for production
+## Default Priority for Production
 
 You can set up Manufacturing Order Priority for Scheduling Board. One is the highest and ten lowest.
 

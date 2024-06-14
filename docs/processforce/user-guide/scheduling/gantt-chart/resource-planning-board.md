@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+toc_min_heading_level: 2
+toc_max_heading_level: 4
 ---
 
 # Resource Planning Board
@@ -42,14 +44,14 @@ After choosing a Resource, both Resource Panel and Scheduling Panel are populate
 2. Time constraints of a period for which Resource occupancy is calculated (for the graph below).
 3. Occupancy graph:
 
-    1. **Availability** – is the overall time of Resources being available to work on, aggregated for the given period. It is based on the Resource Calendar: a period of the Resource being available to work on minus Exceptions and Holidays,
+    1. **Availability** – is the overall time of Resources being available to work on, aggregated for the given period. It is based on the [Resource Calendar](../resource-calendar.md): a period of the Resource being available to work on minus Exceptions and Holidays,
 
     2. **Occupied** – is the overall time of a Resource being used and cannot be used in other Operations. It is based on Operations assigned to the Resource,
 
     3. **Free** – is the overall time of a Resource being free to use. Availability - Occupied = Free.
 4. Information about the Operation (in the specific Manufacturing Order) is connected to the Resource. This information is available after choosing an Operation for the Resource from the Scheduling Panel.
 5. Related Resources.
-6. Here you can find a Sales Order connected to the Manufacturing Order for which the current Operation is being worked on.
+6. Here, you can find a Sales Order connected to the Manufacturing Order for which the current Operation is being worked on.
 
 ## Scheduling Panel
 
@@ -57,7 +59,7 @@ After choosing a Resource, both Resource Panel and Scheduling Panel are populate
 
 ### Data Display
 
-Here you can find data on all the Tasks (work on a specific Operation within specific Manufacturing Order) connected to the chosen Resource.
+Here, you can find data on all the Tasks (work on a specific Operation within specific Manufacturing Order) connected to the chosen Resource.
 
 Every row represents a separate Task (four Tasks are displayed in the example above).
 

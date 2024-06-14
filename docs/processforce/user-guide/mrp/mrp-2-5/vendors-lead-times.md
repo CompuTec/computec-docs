@@ -80,6 +80,8 @@ Based on the data defined in BP Master Data, a set of rules for Internal Vendor 
 
 ![Menu](./media/vendors-lead-times/mrp-main-menu-11.webp)
 
+Rules are available from tab Item Selection tab column Custom Vendor Internal Lead Time. There, you can modify Internal Lead Time values. Edited values are obligatory for the current scenario.
+
 ![Menu](./media/vendors-lead-times/mrp-main-menu-12.webp)
 
 Rules are available from the Item Selection tab column Custom Vendor Internal Lead Time. There, you can modify Internal Lead Time values. Edited values are obligatory for the current scenario.

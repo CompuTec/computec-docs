@@ -157,7 +157,7 @@ The create and update fields record the dates when the data was first created an
 
 ![Test Protocol Template](./media/overview/test-protocol-template.webp)
 
-### Test Protocol Template duplication
+### Test Protocol Template Duplication
 
 You can duplicate a Test Protocol Template and use it as a base to create a new one. You can choose this option from the context menu on the Test Protocol Template form.
 

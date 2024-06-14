@@ -146,7 +146,7 @@ This form allows the user to add and delete classification codes for the item ma
 
 The yellow arrow leads to:
 
-- Administration → Setup → Item Details → Item Phrases refer to safety or risk phrases used to create a Material safety data sheet. By checking the required checkbox, phrases can be connected to certain kinds of documents.
+- Administration → Setup → Item Details → Item Phrases refer to [safety or risk phrases](#phrases) used to create a Material safety data sheet. By checking the required checkbox, phrases can be connected to certain kinds of documents.
 
 ![Phrases](./media/item-details-phrases.webp)
 
@@ -154,7 +154,7 @@ The yellow arrow leads to:
 
 Country of Origin is the country of manufacture, production, or growth where the product comes from and is used extensively to support Country of Origin labeling (COOL), traceability, and specific ingredients in a Customers' recipe.
 
-Click [here](/docs/processforce/user-guide/item-details/country-of-origin)to find out more.
+Click [here](/docs/processforce/user-guide/item-details/country-of-origin) to find out more.
 
 ![Origins](./media/overview/item-details-origins.webp)
 
@@ -164,7 +164,7 @@ The yellow arrow leads to:
 
 - Administration → Setup → Item Details → Item Groups
 
-This form allows users to add and delete groups for the item master. Group describes similar products, e.g., acids. By checking the required checkbox, groups can connect to certain documents.
+This form allows users to add and delete groups for the item master. [Group](item-groups.md) describes similar products, e.g., acids. By checking the required checkbox, groups can connect to certain documents.
 
 ![.Groups](./media/overview/item-details-groups.webp)
 
@@ -174,7 +174,7 @@ The yellow arrow leads to:
 
 - Administration → Setup → Item Details → Item Texts
 
-This form allows the user to add and delete item text <!-- TODO: Add Link --> for the item master. Any text, e.g., hazard instructions or safety texts, may be added. Texts can be connected to certain kinds of documents by checking the required checkbox.
+This form allows the user to add and delete [item text](item-texts.md) for the item master. Any text, e.g., hazard instructions or safety texts, may be added. Texts can be connected to certain kinds of documents by checking the required checkbox.
 
 ![Text](./media/overview/item-details-texts.webp)
 

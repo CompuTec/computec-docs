@@ -4,11 +4,13 @@ sidebar_position: 2
 
 # Time Bookings
 
-The time Booking function allows registering the time and cost of a specific Resource work connected to a particular Manufacturing Order.
+The Time Booking function allows registering the time and cost of a specific Resource work connected to a particular Manufacturing Order.
 
 :::info Path
     Production → Time Bookings → Time Bookings
 :::
+
+---
 
 ## Creating Time Booking
 
@@ -28,7 +30,7 @@ Time Booking function is also available from the context menu on Manufacturing O
 
 ![Manufacturing Order Recording Time](./media/time-bookings/manufacturing-order-recording-time-timebookings.webp)
 
-## Working with multiple resources
+## Working with Multiple Resources
 
 It is possible to set multiple resources of the same kind, e.g., two machines. You can do that in the No of Resources column on the Time Bookings form.
 
@@ -36,10 +38,10 @@ Number Of Resources allows defining the default number of resource units to work
 
 ![Time Bookings](./media/time-bookings/time-bookings-no-of-resources.webp)
 
-## The Use Resource Calendar checkbox
+## The Use Resource Calendar Checkbox
 
-By default Time Booking calculates time-based on Start Time / End Time and Start Date / End Date: a result is the number of hours between these values. It subtracts defined non-working hours, Exceptions, and Holidays during the work period. When the Use Resource Calendar checkbox is checked, the calculation considers the related <!-- TODO: Add Link --> Resource Calendar. It subtracts defined non-working hours, Exceptions, and Holidays during the work period.
+By default Time Booking calculates time-based on Start Time / End Time and Start Date / End Date: a result is the number of hours between these values. It subtracts defined non-working hours, Exceptions, and Holidays during the work period. When the Use Resource Calendar checkbox is checked, the calculation considers the related [Resource Calendar](../../scheduling/resource-calendar.md). It subtracts defined non-working hours, Exceptions, and Holidays during the work period.
 
 ## Time Recording Report
 
-Recorded data and its later changes can be checked in <!-- TODO: Add Link --> Time Recording Report.
+Recorded data and its later changes can be checked in [Time Recording Report](time-corrections.md#time-recording-report).

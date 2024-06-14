@@ -71,6 +71,9 @@ You can define MI as a stand-alone or associated object. In the second case, you
 
 **Dependent** – if select, the resource is dependent on the parent asset. If in the MO checkbox, MI Excluded is selected, MO's header MI is not available for production. MO's time is excluded from the scheduling, visible as a grey bar on Gantt Chart - resource view. The MO in status: scheduled, started, released. If the MI is a parent for another MI, and in the child MI definition Dependent = Yes, then excluded time is visible on Gantt for the child MI (Resource). It works this way down the MIs structure.
 
+    Example:
+    ![Maintenance order on Gantt Chart](./media/maintainable-item/maintenance-order-gantt-chart.jpg)
+
 **Assigned Object** – if the checkbox is checked, then an object from the system can be 1 to 1 linked with MI
 
 - **Resource link**
@@ -104,6 +107,7 @@ You can define MI as a stand-alone or associated object. In the second case, you
     **Description** – description from Fixed Asset record
 
     ![MI-EQ](./media/maintainable-item/mi-fa.webp)
+    ![Item Master Data](./media/maintainable-item/item-master-data.png)
 
 #### Classification – Classes and Categories
 
@@ -131,9 +135,11 @@ Main Menu/Administration/Setup/Plant Maintenance/Categories
 
 For a specified class, you can define categories.
 
-Code – category code
+![Categories](./media/maintainable-item/categories.png)
 
-Description – category name
+**Code** – category code
+
+**Description** – category name
 
 **Entity** – the entity for which the category is defined
 
@@ -141,7 +147,9 @@ Description – category name
 
 **Out of Service** – select to prevent the category from being displayed in lookups
 
-## Tab MI Details
+## MI Details tab
+
+![MI Details](./media/maintainable-item/mi-details.png)
 
 **Branch** – you can select a Branch from those defined in the system
 
@@ -155,17 +163,17 @@ Description – category name
 
 **Plant Maintenance Inactive** (only for information purposes)
 
-**Inactive** – you can mark MI as inactive
+    **Inactive** – you can mark MI as inactive
 
-**Inactive Start** – enter the date on which the inactive period starts
+    **Inactive Start** – enter the date on which the inactive period starts
 
-**Inactive End** – enter the date on which the inactive period ends
+    **Inactive End** – enter the date on which the inactive period ends
 
-**Occurrence** – select repetition period
+    **Occurrence** – select repetition period
 
-**Example**: MI is inactive (Inactive=Yes) – reserved for maintenance each month (Occurrence) from 10th (Inactive Start) to 12th (Inactive End)
+    **Example**: MI is inactive (Inactive=Yes) – reserved for maintenance each month (Occurrence) from 10th (Inactive Start) to 12th (Inactive End)
 
-**Meter Characteristics** – fields active if MI is defined as Apparatus Type = Meter. Please see <!-- TODO: Add Link --> here.
+**Meter Characteristics** – fields active if MI is defined as Apparatus Type = Meter. Please see [here](#meter-reading)
 
 **Meter Unit** – a meter unit of measure (Main Menu/Administration/Setup/Stock Management)
 
@@ -189,13 +197,17 @@ Description – category name
 
 **Assigned to EM** – Effective Meter to which the meter is assigned
 
-## TAB Effective Meters
+## Effective Meters tab
 
 Effective Meter is a relationship between a Meter Unit and an Object and is described by Effective Meter Type. This relationship is defined to record the cumulative usage of an object throughout its operational life, regardless of how many times a corresponding physical meter resets or is replaced. This cumulative usage or effective meter reading, updated from readings taken from a physical meter, always increases over time – it never resets (e.g., in physical physical meter, always increases over time – it never resets (e.g., like in a meter that counts up to 999 that resets to 000 after reaching one unit more than 999)). A physical meter can only be linked to one effective meter at a time.
 
 ![Diagram](./media/maintainable-item/mi-diagram-2.webp)
 
-**EM Type** – a type of effective meter here
+Fig. Hierarchy of Maintainable Items with Effective Meters and linked Physical Meters
+
+![Effective Meter](./media/maintainable-item/effective-meter.png)
+
+**EM Type** – a type of effective meter [here](#definition-of-em-type-and-physical-meter)
 
 **Type Name** – the name of EM Type
 
@@ -242,6 +254,8 @@ Difference – user enters the difference between the last reading and the curre
 
 You can define the Effective Meter Type (EM Type), then assign this EM Type to the MI. The same EM Type you can use many times for different MIs.
 
+![EM Types](./media/maintainable-item/em-types.png)
+
 **EM Type** – a type of Effective Meter
 
 **Type Name** – the name of EM Type
@@ -277,6 +291,8 @@ In general, it is possible to open a Meter Reading document as an RMBM option fr
 **Maintenance Order** (RMBM Option in tab Task/Checklist on Checkpoint with Type=Meter Reading)
 
 - Meter Reading
+
+![Meter Readings](./media/maintainable-item/meter-readings.png)
 
 #### Header {#header-01}
 
@@ -355,15 +371,15 @@ Please check the Checkpoint Template definition <!-- TODO: Add Link --> here.
 
 ![Diagram](./media/maintainable-item/meter%20readings-logic.webp)
 
-1. Reading the value of the Meter for EM Type with Inherited=No:  
+1. Reading the value of the Meter for **EM Type with Inherited=No**:  
     Save in Meter Reading header reading value with other information about the Reading.
 
-    1. If Physical Meter is not assigned to EM Type: Calculate: Derived Reading, Total Usage, and Usage Since Install for Effective Meter.  
+    1. **If Physical Meter is not assigned to EM Type**: Calculate: Derived Reading, Total Usage, and Usage Since Install for Effective Meter.  
         Save information about reading and calculated values to Effective Meter Reading History (Report)
 
         1. Save information about reading and calculated values in Meter Readings/tab Reading's Inheritance (0 Level).
         2. Update information in MI Master Data/tab Effective Meters for proper EM Type: Reading, Derived Reading, Total Usage, Usage Since Install, Last Reading Date
-    2. If Physical Meter is assigned to MI-EM Type: Calculate: Derived Reading, Total Usage, and Current Usage for Physical Meter.  
+    2. **If Physical Meter is assigned to MI-EM Type**: Calculate: Derived Reading, Total Usage, and Current Usage for Physical Meter.  
         Save information about reading and calculated values to Physical Meter Reading History (Report)
 
         1. Calculate Derived Reading, Total Usage, and Usage Since Install for Effective Meter.  
@@ -388,7 +404,7 @@ B – Maintainable Item Master Data header's (tab Effective Meters) lines with E
 
 ![Reading Inheritance](./media/maintainable-item/reading-inheritance.webp)
 
-## Inspection Points Tab
+## Inspection Points tab
 
 ### Points tab
 
@@ -398,11 +414,11 @@ B – Maintainable Item Master Data header's (tab Effective Meters) lines with E
 
 **Description** – describe the inspection point.
 
-**Point Type** – inspection point type (please check here) to associate with the MI. The system automatically populates the point type description, Class, and Class Description.
+**Point Type** – inspection point type (please check [here](#point-type)) to associate with the MI. The system automatically populates the point type description, Class, and Class Description.
 
-**Class, Description** – classification, please see here.
+**Class, Description** – classification, please see [here](#classes).
 
-**MES IP Code, MES IP Description, MES IP Class, MES IP Category** – agreed on the ID of the Inspection Point between MES and ProcessForce (during the integration process). Please check here.
+**MES IP Code, MES IP Description, MES IP Class, MES IP Category** – agreed on the ID of the Inspection Point between MES and ProcessForce (during the integration process). Please check [here](#mes-inspection-point).
 
 #### Point Type
 
@@ -418,13 +434,15 @@ Inspection Point Type is a group of similar inspection points. Example: for a ve
 
 **Description** – descriptive information about Inspection Point Type
 
-**Class** – classification, check here.
+**Class** – classification, check [here](#classes).
 
 #### MES Inspection Point
 
 :::info Path
     Main Menu/Administration/Plant Maintenance/Inspection Setup/MES Inspection Points
 :::
+
+![MES](./media/maintainable-item/mes.png)
 
 **MES Inspection Point Code** – agreed on the ID of the Inspection Point between MES and ProcessForce (during the integration process)
 
@@ -462,9 +480,9 @@ NUMERIC [(p[,s])]
 
 ![Aspect](./media/maintainable-item/aspects-tab.webp)
 
-**Aspect** – the Inspection Aspect to associate the monitored data object with. The system automatically populates the aspect's parameters: Description, A. Class, A. Class Description, UoM. Please check here.
+**Aspect** – the Inspection Aspect to associate the monitored data object with. The system automatically populates the aspect's parameters: Description, A. Class, A. Class Description, UoM. Please check [here](#inspection-points-tab).
 
-**Method** – the inspection method for the aspect, as necessary. The system automatically populates the method's parameters: M. Description, M. Class, M. Class Description. Please see here
+**Method** – the inspection method for the aspect, as necessary. The system automatically populates the method's parameters: M. Description, M. Class, M. Class Description. Please see [here](#method)
 
 **Nominal Value** – starting value or normal value and unit of measure for measurements on this aspect. For example, if a new pipe wall thickness is 3 mm, the nominal value is three, and the unit of measure is mm.
 
@@ -508,7 +526,7 @@ NUMERIC [(p[,s])]
 
 **Description** – descriptive information about the aspect
 
-**Class** – classification of aspects, please see here
+**Class** – classification of aspects, please see [here](#classification--classes-and-categories)
 
 **Meter Unit** – a unit of measure for the aspect
 
@@ -536,13 +554,13 @@ NUMERIC [(p[,s])]
 
 **Description** – descriptive information about Aspect-Point
 
-**Aspect** – an inspection aspect for an inspection point. The system automatically populates the aspect definition from the Aspect tab (check here)
+**Aspect** – an inspection aspect for an inspection point. The system automatically populates the aspect definition from the Aspect tab (check [here](#aspects-tab))
 
-**Point** – an inspection point. The system automatically populates the point definition; please (check here)
+**Point** – an inspection point. The system automatically populates the point definition; please (check [here](#inspection-points-tab))
 
-**MES IP Code** – agreed on the ID of the Inspection Point between MES and PM (during the integration process). Please check MES Inspection Point here.
+**MES IP Code** – agreed on the ID of the Inspection Point between MES and PM (during the integration process). Please check MES Inspection Point [here](#mes-inspection-point).
 
-**Method\*** – enter the inspection method for the aspect as necessary; please see here
+**Method\*** – enter the inspection method for the aspect as necessary; please see [here](#method)
 
 **Nominal Value** – enter the starting value or normal value and unit of measure for measurements on this aspect point. For example, if a new pipe’s wall thickness is 3 mm, the nominal value is three, and the unit of measure is mm.
 
@@ -576,11 +594,11 @@ When the inspection is performed, the following logic for Aspect Point's measure
 
 ![Condition](./media/maintainable-item/condition-tab.webp)
 
-**Point** – the inspection point. The system automatically populates the point definition; please see here.
+**Point** – the inspection point. The system automatically populates the point definition; please see [here](#inspection-points-tab).
 
-**Aspect** – the inspection aspect for condition. The system automatically populates the aspect definition from the Aspect tab here.
+**Aspect** – the inspection aspect for condition. The system automatically populates the aspect definition from the Aspect tab [here](#aspects-tab).
 
-**Condition** – the inspection condition. The system automatically populates the condition definition; please see here.
+**Condition** – the inspection condition. The system automatically populates the condition definition; please see [here](#condition).
 
 **Note:** Do not enter an Aspect when the Condition applies to the Point, regardless of the measured aspect.
 

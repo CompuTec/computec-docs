@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+toc_min_heading_level: 2
+toc_max_heading_level: 4
 ---
 
 # Manufacturing Order Menus
@@ -7,8 +9,6 @@ sidebar_position: 2
 Right-click Menus within the Manufacturing Order leads to several Manufacturing Order options.
 
 ## Issues and Receipts
-
-Issues and Receipts
 
 All related inventory issues, receipt, and transfer functions are available from this sub-menu level. To be known, the Manufacturing Order must have Released or Started status to Issues and Receipts.
 
@@ -26,7 +26,7 @@ All related inventory issues, receipt, and transfer functions are available from
 
 This option opens a form containing a table with information on currently started CompuTec PDC tasks.
 
-The option is available when Manufacturing Order is in Released, Started, or Finished status.
+This option is available when Manufacturing Order is in Released, Started, or Finished status.
 
 ## Reports
 
@@ -46,6 +46,6 @@ The chart shows information connected to each of the operations assigned to a pr
 
 Apart from basic information (Operation Name, Sequence, Status), the Tile also holds information on the operation's times: start and end of work (both planned and actual) and period of work.
 
-#### Operation quantity
+#### Operation Quantity
 
 In this application version, information on Operation related quantities has been added.

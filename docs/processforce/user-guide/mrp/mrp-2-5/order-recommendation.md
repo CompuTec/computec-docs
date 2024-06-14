@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Order Recommendation
 
-You can select MRP 2.5 – Order Recommendation from the SAP B1 menu.
+You can select MRP 2.5 – Order Recommendation from the SAP Business One menu.
 
 ![Order Recommendations](./media/order-recommendation/mrp-order-recommendation-01.webp)
 

@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# General Tab
+# General tab
 
 ![General Tab](./media/general-tab/general-settings-general-tab.webp)
 

@@ -20,7 +20,7 @@ Routings are an optional function to be used in conjunction with Bills of Materi
 
 ![Diagram](./media/routing/routes-diagram.webp)
 
-## Adding and Changing Operation data
+## Adding and Changing Operation Data
 
 The top grid within this tab allows the user to select, add and remove operations.
 
@@ -38,13 +38,13 @@ The properties of the selected operation are filled in by default in this tab.
 
 This grid allows the user to select and add additional properties for this operation/routing combination and change or remove the default values.
 
-## Adding and Changing Resource data
+## Adding and Changing Resource Data
 
 The top grid within this tab allows the user to select, add and remove resources.
 
 Drop-down box selection allows the user to choose the resource already defined on the operation.
 
-The details of the selected resources are filled in by default in this tab from the Operations definition.
+The details of the selected resources are filled in by default in this tab from the [Operations](./operations.md) definition.
 
 This grid allows the user to select and add additional resources for this operation/routing combination and remove the defaulted resources.
 
@@ -62,7 +62,7 @@ Production → Technology → Resources → Resources
 
 Data is presented to the user within the grid when the user selects the row within the top grid.
 
-The properties of the selected resource/operation are set by default in this grid based on the Resource definition.
+The properties of the selected resource/operation are set by default in this grid based on the [Resource](resources.md) definition.
 
 This grid allows the user to select and add additional properties for this resource/operation/routing combination and change or remove the default values.
 

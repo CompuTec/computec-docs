@@ -6,6 +6,8 @@ sidebar_position: 6
 
 The Item Phrase form allows the user to define a specific phrase. Safety or Risk Phrases contain information about, e.g., special transport and storage requirements or hazards. Phrases are expressed in particular regulations, e.g., EU Risk and Safety Phrases. ProcessForce Item Phrases functionality is also helpful in creating a Material Safety Data Sheet for a specific Item.
 
+---
+
 ## Item Phrases
 
 :::note Path
