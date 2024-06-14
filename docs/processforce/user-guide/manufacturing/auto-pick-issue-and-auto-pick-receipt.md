@@ -10,7 +10,7 @@ You can find information on Auto Pick Issue & Receipt functions here.
 
 ## Settings
 
-Please check Auto Pick and Auto Receipt options in <!-- TODO: Add Link --> General Settings before proceeding.
+Please check Auto Pick and Auto Receipt options in [General Settings](.././system-initialization/general-settings/general-tab.md) before proceeding.
 
 ## Pick Issue
 

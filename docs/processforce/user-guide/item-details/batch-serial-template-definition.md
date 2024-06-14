@@ -4,13 +4,13 @@ sidebar_position: 3
 
 # Batch Template, Serial Template Definition
 
-Here you can configure the default format of the batch number generator for creating batch and serial numbers during the receipt of Purchase and Production Orders. This information makes traceability and a batch and serial management process much easier. You can set a number generating template that contains important information, e.g. date, time, item number, or prefix.
+Here, you can configure the default format of the batch number generator for creating batch and serial numbers during the receipt of Purchase and Production Orders. This information makes traceability and a batch and serial management process much easier. You can set a number generating template that contains important information, e.g. date, time, item number, or prefix.
 
 :::note Path
     Administration → Setup → Inventory → Batch Template Definition
 :::
 
-Here you can configure the format of the serial number generator for creating serial numbers.
+Here, you can configure the format of the serial number generator for creating serial numbers.
 
 :::note Path
     Administration → Setup → Inventory → Serial Template Definition
@@ -26,9 +26,9 @@ The Batch Template form is used to define the Batch number for products that are
 
 Batch templates (as well as Serial templates) can be set on three different levels:
 
-- general <!-- TODO: Add Link --> for all Batch-traced Items
-- for Item Group <!-- TODO: Add Link -->
-- for a specific Item <!-- TODO: Add Link -->
+- [general](#general-level) for all Batch-traced Items
+- [for Item Group](#item-group-level)
+- [for a specific Item](#item-level)
 
 If a Template is not specified for a specific level, a Template from a level above is used.
 
@@ -43,7 +43,7 @@ If a Template is not specified for a specific level, a Template from a level abo
 You can decide when a Batch number is created considering the Manufacturing Order status. To do this, check the Batch Number generated at the MOR checkbox and choose one of the options. When selecting one of the Status options, the Batch will be generated on the appropriate status change or creation of a Manufacturing Order with the specified status.
 
 :::caution
-    Please remember that when the Batch Number generated at the MOR option is checked, it is impossible to use Classification options on a Batch Template <!-- TODO: Add Link -->.
+    Please remember that when the Batch Number generated at the MOR option is checked, it is impossible to use Classification options on a [Batch Template](#defining-batch-template).
 :::
 
 ## Item Group level
@@ -128,6 +128,8 @@ When adding a new Batch/Serial template, the date and counter fields have the fo
 - Click the Validate Formula button to check the Batch template syntax
 - Press OK.
 
+![Batch Template Date Time](./media/batch-serial-template-definition/batch-template-date-time.png)
+
 ### Example 3: Adding the prefix
 
 - To enter text or other symbols as a prefix to the batch number, use `[value]`, in this example, `PF` to get the PF prefix
@@ -200,7 +202,7 @@ You can use others than specified in the Batch Template form fields to be incorp
     ![Save](./media/batch-serial-template-definition/save-query.webp)
 
 2. Click the Classification field on Goods Receipt PO and go to Tools → Customization Tools → User-Defined Values - Setup:
-
+    ![User Defined Values Setup](./media/batch-serial-template-definition/user-defined-values-setup.png)
     Choose the previously created query, set other values, and click Update.
 
 3. From now on Classification field will be set on the Whse value on every change on the Whse field. Now, if you use Classification in Batch Template, a value for a warehouse will be incorporated in the template.

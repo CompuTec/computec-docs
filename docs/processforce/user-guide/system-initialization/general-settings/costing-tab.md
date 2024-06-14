@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# Costing Tab
+# Costing tab
 
 This tab allows setting details of costing, e.g., costing evaluation type for different kinds of Items.
 

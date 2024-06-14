@@ -18,7 +18,7 @@ Agreeing to use the Quality Control function based on the ISO 2859-1 norm can be
 
 The ISO 2859-1 norm contains tables with statistical data that define several testing samples for a Batch (received from production or bought) based on data like Batch size, inspection severity, or Business Partner rating. E.g., for a Batch of 10000 units, the norm based on statistical data may count ten samples, of which at least eight have to pass the Quality Control Test for the whole Batch to be receipted. The Quality Plan defined in ProcessForce affects Quality Control Test Pools.
 
-## Quality Plan preparation
+## Quality Plan Preparation
 
 :::info Path
     You can find a detailed description of the ISO 2859-1 (methodology, terms, etc.) on the [International Organization for Standardization website](https://www.iso.org/obp/ui/#iso:std:iso:2859:-1:ed-2:v1:en).

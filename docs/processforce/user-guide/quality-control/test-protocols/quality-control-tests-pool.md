@@ -19,7 +19,7 @@ The pass/Failed status of the Quality Control Tests Pool is based on a predefine
 - **Rejection Number (Re)** – the lowest number of nonconforming units or defects in a sample that leads to the rejection of the lot.
 - **Ac. Re Obligatory** – defines if Acceptance number and Rejection number are required to decide about QC order releasing (if not checked, the final result of the test can be changed manually).
 
-Parameters from Quality Plan – click here to find out more about Quality Plan.
+**Parameters from Quality Plan** – click [here](quality-plan.md) to find out more about Quality Plan.
 
 ## Usage
 

@@ -12,7 +12,7 @@ The downtime function allows recording downtime for a specific resource with add
 
 ---
 
-## Downtime creation
+## Downtime Creation
 
 ![Downtime](./media/downtime/downtime.webp)
 

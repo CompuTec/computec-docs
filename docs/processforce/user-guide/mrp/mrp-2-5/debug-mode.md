@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Debug mode
+# Debug Mode
 
 When you have doubts that the scenario results are correct, please report the problem in a ticket on Computer Support. To document tickets, please use debug mode.
 

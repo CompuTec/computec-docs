@@ -39,14 +39,34 @@ Internal Lead Time can be defined in the following format: [1-3 digit number of 
 
 Internal Lead Time can be defined in the following places:
 
-1. `Business Partners → Business Partner Master Data → Addresses tab`
+1.
 
-    If Business Partner has more than one address defined, different Internal Lead Times can be defined for each address.
-2. `Business Partners → Business Partner Master Data → General tab`
-3. `Inventory → Item Details → Revisions tab`
-4. `Inventory → Item Master Data → Planning Data tab`
-5. `Inventory → Warehouses → General tab`
-6. `Administration → System Initialization → Document Settings → Per Document (for Sales Order)`
+:::info Path
+Business Partners → Business Partner Master Data → Addresses tab
+:::
+
+If Business Partner has more than one address defined, different Internal Lead Times can be defined for each address.
+
+2.
+:::info Path
+Business Partners → Business Partner Master Data → General tab
+:::
+3.
+:::info Path
+Inventory → Item Details → Revisions tab
+:::
+4.
+:::info Path
+Inventory → Item Master Data → Planning Data tab
+:::
+5.
+:::info Path
+Inventory → Warehouses → General tab
+:::
+6.
+:::info Path
+Administration → System Initialization → Document Settings → Per Document (for Sales Order)
+:::
 
 Internal Lead Time taken under consideration on specific documents (Manufacturing Orders and Sales Orders) is taken from the above hierarchy: if defined in 1. it is taken from there. If not, it is taken from 2. and so on.
 
@@ -54,24 +74,40 @@ Internal Lead Time taken under consideration on specific documents (Manufacturin
 
 Receive Lead Time can be defined in the following format: [1-3 digit number of days]:[1-2 digit number of hours].
 
-1. `Business Partners → Business Partner Master Data → Addresses tab`
+1.
 
-    If Business Partner has more than one address defined, different Delivery Times can be defined for each address.
-2. `Business Partners → Business Partner Master Data → General tab`
-
-3. `Inventory → Warehouses → General tab`
-4. `Administration → System Initialization → Document Settings → Per Document (for Sales Order)`
-
+:::info Path
+Business Partners → Business Partner Master Data → Addresses tab
+:::
+If Business Partner has more than one address defined, different Delivery Times can be defined for each address.
+2.
+:::info Path
+Business Partners → Business Partner Master Data → General tab
+:::
+3.
+:::info Path
+Inventory → Warehouses → General tab
+:::
+4.
+:::info Path
+Administration → System Initialization → Document Settings → Per Document (for Sales Order)
+:::
 Receive Lead Time taken under consideration on specific documents (Manufacturing Orders and Sales Orders) is taken from the above hierarchy: if defined in 1. it is taken from there. If not, it is taken from 2. and so on.
 
 ### Delivery Time Slot
 
 Delivery Time is filled with a default value on Sales Order when selecting Business Partner on this type of document if it is defined in one of the following places:
 
-1. `Business Partners → Business Partner Master Data → Addresses tab`
+1.
 
-    If Business Partner has more than one address defined, a Different Delivery Time can be defined for each address.
-2. `Business Partners → Business Partner Master Data → General tab`
+:::info Path
+Business Partners → Business Partner Master Data → Addresses tab
+:::
+If Business Partner has more than one address defined, a Different Delivery Time can be defined for each address.
+2.
+:::info Path
+Business Partners → Business Partner Master Data → General tab
+:::
 
 Delivery Time taken under consideration on Sales Orders is taken from the above hierarchy: if defined in 1. it is taken from there. If not, it is taken from 2.
 
@@ -117,12 +153,12 @@ Changing Delivery Date or Time affects Required Date and Time.
 
 Internal Lead Time is predefined (check Configuration section).
 
-#### Original delivery date and time
+#### Original Delivery Date and Time
 
 Data from a specific Manufacturing Order populate this field. When some data are changed on this form (changing Delivery Date or Time, or changing other data which results in changes in Delivery Date and Time), this value turns red and bold, informing users that the current Delivery Date and Time differ from previously planned on Manufacturing Order.
 
-Click here to find out more about Scheduling Board.
+Click [here](../scheduling/scheduling-board.md) to find out more about Scheduling Board.
 
-## Receive date calculation
+## Receive Date Calculation
 
 Sales Order Receive Date is calculated considering holidays defined in SAP Business One → System Initialization → Company Details → Accounting Data tab.

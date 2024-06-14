@@ -62,7 +62,7 @@ A chosen item group can be assigned to a specific type of document by checking a
 
 ![Assign to document](./media/item-properties/item-groups-assigned-to-documents.webp)
 
-## Batch Master Data
+### Batch Master Data
 
 :::note Path
     Inventory → Item Management → Batches → Batch Master Data

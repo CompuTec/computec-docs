@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Attachments and Instructions Tabs
+# Attachments and Instructions tabs
 
 ## Instructions tab
 

@@ -8,4 +8,4 @@ A semi-finished item has its own Bill of Materials but is also a part of a finis
 
 ![Multi-level](./media/multi-level.webp)
 
-Semi-finished Items Manufacturing Orders (linked to final product Manufacturing Orders) can be managed from Semi-finished Product Scheduling Board.
+Semi-finished Items Manufacturing Orders (linked to final product Manufacturing Orders) can be managed from [Semi-finished Product Scheduling Board](../../../scheduling/scheduling-board.md).

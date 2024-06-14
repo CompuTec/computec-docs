@@ -114,7 +114,7 @@
 
 8. When you want to replace an item with child items, for example, routing operations, you do not need to remove all children. That will be done automatically when you replace its code or remove the chosen line.
 
-9. When creating a manufacturing order from a Bill of Materials that has filed a Revision to improve performance, use ItemUtils class:
+9. When creating a manufacturing order from a Bill of Materials that has filed a Revision to improve performance, use `ItemUtils` class:
 
     ```csharp
     IManufacturingOrder mor = company.CreatePFObject(CompuTec.ProcessForce.API.Core.ObjectTypes.ManufacturingOrder);
@@ -128,7 +128,7 @@
 11. User-defined fields on an issue and receipt from productions.
 
     If you want to add extra information on Goods Receipt or Goods Issues from production lines, you can achieve it by adding User Defined Fields.
-    Add User Defined Field on PickOrderRequiredItems or PickReceiptRequiredItems table with the same code, name, and type as on SAP document lines. Then all information will be automatically copied to the production Inventory transaction.
+    Add User Defined Field on `PickOrderRequiredItems` or `PickReceiptRequiredItems` table with the same code, name, and type as on SAP document lines. Then all information will be automatically copied to the production Inventory transaction.
 
 12. Own FIFO LIFO or another type of selecting batches or serials in production transactions (Item backflush).
 

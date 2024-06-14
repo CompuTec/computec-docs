@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+toc_min_heading_level: 2
+toc_max_heading_level: 4
 ---
 
 # Extended Batch Expiry Evaluation
@@ -24,7 +26,7 @@ Expiry Evaluation Type can be chosen from a drop-down list; you can select eithe
 
 **Inspection Interval** – number of days after which Inspection should be performed to check Item quality (periodically), e.g., every ten days after batch record. An alert can be connected to the Inspection date.
 
-## Levels of assignment
+## Levels of Assignment
 
 Expiry Evaluation Type, like other Batch settings, can cover three different levels:
 
@@ -50,38 +52,38 @@ The expiry Evaluation Template allows the definition of advanced Expiry Date Eva
 
 The expiry date Validation form will be displayed after clicking Validate Formula. In this form, you can check a result of a formula on a specific document.
 
-**Example**
+### Example
 
 The following formula allows an Expiry Date of a Finished Item equal to the earliest expiry date of a Child Item batch (in case of different expiry dates on additional Child Items).
 
-_MS SQL_
+#### MS SQL
 
-```sql
-select
- isnull(min(t4.ExpDate ),getdate())
-from
- [@CT_PF_OMOR] t0
- left outer join [@CT_PF_MOR5] t1 on t0."DocEntry"=t1."DocEntry"
- left outer join oitl t2 on t1.U_OperEntry =t2.DocEntry and t1.U_OperType=t2.DocType
- left outer join itl1 t3 on t2.LogEntry=t3.LogEntry
- left outer join obtn t4 on t3.ItemCode=t4.ItemCode and t3.SysNumber=t4.SysNumber
-where
- t0.DocNum = %MORDN% and t4.ExpDate is not null, and t1.U_OperType='60'
-```
+    ```sql
+    select
+     isnull(min(t4.ExpDate ),getdate())
+    from
+     [@CT_PF_OMOR] t0
+     left outer join [@CT_PF_MOR5] t1 on t0."DocEntry"=t1."DocEntry"
+     left outer join oitl t2 on t1.U_OperEntry =t2.DocEntry and t1.U_OperType=t2.DocType
+     left outer join itl1 t3 on t2.LogEntry=t3.LogEntry
+     left outer join obtn t4 on t3.ItemCode=t4.ItemCode and t3.SysNumber=t4.SysNumber
+    where
+     t0.DocNum = %MORDN% and t4.ExpDate is not null, and t1.U_OperType='60'
+    ```
 
-_HANA_
+#### HANA
 
-```sql
-SELECT IFNULL(MIN(T4."ExpDate"), NOW())
- FROM "@CT_PF_OMOR" T0
- LEFT JOIN "@CT_PF_MOR5" T1 on T0."DocEntry" = T1."DocEntry"
- LEFT JOIN OITL T2 ON T1."U_OperEntry" = T2."DocEntry" AND T1."U_OperType" = T2."DocType"
- LEFT JOIN ITL1 T3 ON T2."LogEntry" = T3."LogEntry"
- LEFT JOIN OBTN T4 ON T3."ItemCode" = T4."ItemCode" AND T3."SysNumber" = T4."SysNumber"
- WHERE cast (T0."DocNum" as nvarchar(11)) = %MORDN%
- AND T4."ExpDate" IS NOT NULL
- AND T1."U_OperType" = '60'
-```
+    ```sql
+    SELECT IFNULL(MIN(T4."ExpDate"), NOW())
+     FROM "@CT_PF_OMOR" T0
+     LEFT JOIN "@CT_PF_MOR5" T1 on T0."DocEntry" = T1."DocEntry"
+     LEFT JOIN OITL T2 ON T1."U_OperEntry" = T2."DocEntry" AND T1."U_OperType" = T2."DocType"
+     LEFT JOIN ITL1 T3 ON T2."LogEntry" = T3."LogEntry"
+     LEFT JOIN OBTN T4 ON T3."ItemCode" = T4."ItemCode" AND T3."SysNumber" = T4."SysNumber"
+     WHERE cast (T0."DocNum" as nvarchar(11)) = %MORDN%
+     AND T4."ExpDate" IS NOT NULL
+     AND T1."U_OperType" = '60'
+    ```
 
 An example of the result of using this formula is presented in a screenshot below:
 

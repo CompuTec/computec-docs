@@ -8,7 +8,9 @@ The SAP Business One Batch Details form and the ProcessForce Batch Master Data d
 
 Navigation from all SAP Business One and ProcessForce documents and reports will open this new form.
 
-**Note**: when adding User Defined Fields to the SAP Business One Batch Details Table the same User Defined Fields (name and format etc.) have to be added to the ProcessForce Batch Master Data tables, and Pick Receipt: Picked Items.
+:::note
+when adding User Defined Fields to the SAP Business One Batch Details Table the same User Defined Fields (name and format etc.) have to be added to the ProcessForce Batch Master Data tables, and Pick Receipt: Picked Items.
+:::
 
 ---
 

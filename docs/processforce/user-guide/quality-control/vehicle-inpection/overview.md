@@ -26,6 +26,8 @@ This option is available for Goods Receipt PO in any Status.
 
 ![Vehicle Inspection](./media/overview/vehicle-inspection-2.webp)
 
+A Vehicle Inspection document is divided into three sections:
+
 ### Header
 
 Goods Receipt PO to which this document is referring, Inspection series, number, and date

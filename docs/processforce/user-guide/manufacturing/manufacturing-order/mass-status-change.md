@@ -38,37 +38,39 @@ This function allows to change status of many Manufacturing Orders in the same t
 
 There are three steps in the process of mass Manufacturing Order status change:
 
-### Step 1. Selecting criteria
+## Step 1. Selecting Criteria
 
-#### Manufacturing Order Data
+### Manufacturing Order Data
 
 On the left side of the form, you can choose several options connected to Manufacturing Order data, e.g., document number, date (required date, planned start date, planned end date), distribution rule, project, source Sales Order, and customer.
 
 Options can be combined.
 
-#### Status
+### Status
 
 Check the required checkbox to choose input status. When checkbox/es are checked, information about available status changes is displayed (or a warning if information about checkboxes is not available). Check the table above, column From, for possible checkbox check unavailable.
 
-#### Resources, Items
+### Resources, Items
 
 You can choose a Resource Group and one Resource or a range of Resources (based on Resource number).
 
 You can choose an Item in the same way.
 
-#### Warehouse
+### Warehouse
 
 You can limit chosen records list to those connected to specific Warehouses (Select column check-boxes).
 
 Click the Next button after setting up desired criteria.
 
-### Step 2. Manufacturing Order Selection
+## Step 2. Manufacturing Order Selection
 
 ![Output Status](./media/mass-status-change/output-status.webp)
 
 In the second step, you have a list of Manufacturing Orders filtered using the criteria in the previous step. You can choose which document status will be changed (by checkboxes in the Select column).
 
-#### Filtering
+---
+
+## Filtering
 
 It is possible to additionally filter the results by clicking the Filtering button and setting up filtering criteria to get specific values from chosen fields:
 
@@ -76,11 +78,13 @@ It is possible to additionally filter the results by clicking the Filtering butt
 
 You can define rules (e.g., equal, not equal, contains, is empty) and values that will be affected by the rule. A list of rules.
 
+---
+
 Choose output status (you can find available options in the Possible Status Changes section).
 
 Click the Run button after setting up the above details.
 
-### Step 3. Results
+## Step 3. Results
 
 ![Results](./media/mass-status-change/results.webp)
 

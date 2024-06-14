@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # ProcessForce API Documentation
 
-Here you can download ProcessForce API Documentation. It helps to work on any type of external software that uses ProcessForce API, e.g., PowerShell or a third-party add-on.
+Here. you can download ProcessForce API Documentation. It helps to work on any type of external software that uses ProcessForce API, e.g., PowerShell or a third-party add-on.
 
 :::info
     ProcessForce API documentation file: [Download](https://download.computec.one/media/processforce/CompuTec_ProcessForce_API.chm)
@@ -14,6 +14,7 @@ Here you can download ProcessForce API Documentation. It helps to work on any ty
 
 :::note
     In case the file is blank when opened, please choose Properties from the file context menu and click the Unblock option on the General tab.
+    ![Example](./media/processforce-api-doc/example.png)
 :::
 
 ## Documents

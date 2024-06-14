@@ -10,7 +10,7 @@ Bill of Materials can have a multi-level structure. That means that an Item that
 
 In ProcessForce, there are two ways of dealing with this situation:
 
-- Semi-finished Items:
+- **Semi-finished Items**:
   in this case, Items in the final good structure can have their own Bill of Materials for which another Manufacturing Order has to be created (apart from the final good one). Items like this can also be produced separately (as a final good on a stand-alone Manufacturing Order) and stored.
-- Phantom Item:
+- **Phantom Item**:
   it is also a Bill of Materials in the structure of another Bill of Materials but its production result cannot be stored nor produced separately: it is an element of the production process of a final good. It does not require creating a separate Manufacturing Order; its components and Operations are added to a Manufacturing Order of a final good.

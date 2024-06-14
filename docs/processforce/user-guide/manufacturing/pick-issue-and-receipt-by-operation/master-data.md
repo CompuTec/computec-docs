@@ -26,7 +26,11 @@ Define the Production Process as usual. You can reach this form by Main Menu (Pr
 - Select the Items and link to the Operation,
 - In this example, Active-Item-03 and Non-Active-04 are linked as an Input to the Prep operation.
 
-![Operation Bind](./media/master-data/operation-bind.webp)
+    ![Operation Bind](./media/master-data/operation-bind.png)
+
+- In this example, Items Non-Active-03 and Active-Item-04 are linked as Input to the Mixing Operation
+
+    ![Operation Bind](./media/master-data/operation-bind.webp)
 
 In this example, CoProduct Item Co-Product-01 and Scrap Item Scrap-01 are linked as an Output from the Mixing operation.
 

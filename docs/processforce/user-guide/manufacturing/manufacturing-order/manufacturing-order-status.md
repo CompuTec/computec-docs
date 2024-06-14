@@ -22,10 +22,14 @@ Available statuses:
 
 **Finished** – blocks Manufacturing Order but there is still an option to change the status.
 
-**Closed** – details of the Manufacturing Order with this status cannot be changed anymore. Optionally changing to this status can also make journal entries based on Manufacturing Order variance (when option Post variance on Manufacturing Order closure is set in General Settings).
+**Closed** – details of the Manufacturing Order with this status cannot be changed anymore. Optionally changing to this status can also make journal entries based on Manufacturing Order variance (when option [Post variance on Manufacturing Order closure](../../system-initialization/general-settings/costing-tab.md) is set in General Settings).
 
-You can also use a mass Manufacturing Order status change tool to change the status of many Manufacturing Orders at once.
+:::info
+You can check possible status changes [here](mass-status-change.md).
+:::
 
-## Manufacturing Order status change through CompuTec PDC
+You can also use a [mass Manufacturing Order status change tool](mass-status-change.md) to change the status of many Manufacturing Orders at once.
 
-Starting operation in CompuTec PDC changes Manufacturing Order status to Started on Resource Planning Board, Scheduling (if the status was Released)
+## Manufacturing Order Status Change through CompuTec PDC
+
+Starting operation in [CompuTec PDC](/docs/pdc/) changes Manufacturing Order status to Started on Resource Planning Board, Scheduling (if the status was Released)

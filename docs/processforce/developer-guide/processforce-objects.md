@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# ProcessForce objects (User-Defined Objects)
+# ProcessForce Objects (User-Defined Objects)
 
 Here, you will find SQL queries that retrieve information on all objects (tables and fields) within the ProcessForce solution.
 

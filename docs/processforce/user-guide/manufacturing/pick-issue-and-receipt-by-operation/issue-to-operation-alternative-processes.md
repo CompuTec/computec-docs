@@ -2,15 +2,15 @@
 sidebar_position: 5
 ---
 
-# Issue to Operation alternative Processes
+# Issue to Operation Alternative Processes
 
 You can find information on Issues with Operation Alternative Processes on this page.
 
 ---
 
-## The issue to Operation from the Operations Tab
+## The Issue to Operation from the Operations tab
 
-- Select the Operations Tab,
+- Select the Operations tab,
 - Select the Operation,
 - Select Issue for selected Operation.
 

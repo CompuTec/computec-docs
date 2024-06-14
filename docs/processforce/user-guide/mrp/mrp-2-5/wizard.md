@@ -32,7 +32,7 @@ After selecting the MRP 2.5 Wizard, you will see the MRP Scenarios list. From th
 
 Scenario's data settings.
 
-## Planning horizon tab
+## Planning Horizon tab
 
 ![MRP Wizard](./media/wizard/mrp-wizard-05.webp)
 

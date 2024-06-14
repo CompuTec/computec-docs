@@ -34,7 +34,7 @@ Please follow the instructions on the following screenshots:
 
 ## Summary
 
-After selecting some Resource that will generate the error Form - Bad Value, you can go to Resource definition and try to reselect all values and update resource data.
+After selecting a Resource that triggers the "Form - Bad Value" error, you can go to the Resource definition, reselect all values, and update the resource data.
 
 Most of the time, you will get an error for incorrect data during the update. So if all data is reselected and recourse will be updated, the issue should not occur.
 

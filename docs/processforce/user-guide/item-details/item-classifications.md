@@ -28,7 +28,7 @@ The Item Classification Group function allows the user to create groups of item 
 
 ![Classification Group](./media/item-classifications/item-classification-group.webp)
 
-## Item Classification assigning
+## Item Classification Assigning
 
 Once created, classification can be assigned to an item in the Item Details form, Classifications tab. By clicking a second column and then a circle displayed within a field, a classification may be chosen:
 

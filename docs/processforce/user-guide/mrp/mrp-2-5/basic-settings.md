@@ -31,7 +31,7 @@ In MRP 2.5, these settings are used as default. Consumption Method Days Backward
 
 ![Sales Order](./media/basic-settings/mrp-sales-order.webp)
 
-## Item/Revision planning data
+## Item/Revision Planning Data
 
 Planning data are defined in Item Master Data and separately for Item Revision in Item Details.
 
@@ -55,7 +55,7 @@ Planning data are defined in Item Master Data and separately for Item Revision i
 
 If the lead time is for three days, the MRP will issue the purchase or production order for the child items with a due date three days before the parent item's due date. In other words, we need three days to produce (Procurement Method = Make) or send the item by the supplier (Procurement Method = Buy).
 
-[Example: Holidays, Lead Time, and Order Interval in MRP Calculations](https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/6593f6fb14cb4f188859a2b0e6ba1e70.html?q=lead%20time)
+[**Example: Holidays, Lead Time, and Order Interval in MRP Calculations**](https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/6593f6fb14cb4f188859a2b0e6ba1e70.html?q=lead%20time)
 
 **Internal Lead Time (ILT)** – additional time calculated for documents/recommendations. The calculation depends on the Procurement Method and ILT Scope. For example, internal testing time.
 
@@ -77,22 +77,22 @@ Procurement MethodILT ScopeOutcome1aMakeSaleILT added to Sales document1bMakePur
 
 ### Example {#example-2}
 
-1. Item with Procurement Method = Make, Lead Time = 3, Internal Lead Time = 1,
-    1. ILT Scope = Sale
+1. Item with **Procurement Method = Make**, Lead Time = 3, Internal Lead Time = 1,
+    1. **ILT Scope = Sale**
       If it is an Item ordered by the customer, ILT will be added to the Sales Order. After three days of MOR’s Release Date, the Item will be available in stock (Lead Time=3), and one day of Internal Lead Time will be added before the Item will be ready to send to the Customer (for example, packing time, quality control before packing, etc.). ILT will not be added to the finished MOR.
-    2. ILT Scope = Purch. / Prod.
+    2. **ILT Scope = Purch. / Prod**.
       ILT will be added only to the finished MOR. After three days of MOR’s Release Date, the Item will be available in stock (Lead Time=3), and one day of Internal Lead Time will be added after finishing MOR (for example, quality control activities).
       ILT will not be added to the Sales Order if it is an Item ordered by a customer.
-    3. ILT Scope = Both
+    3. **ILT Scope = Both**
       After three days of MOR’s Release Date, the Item will be available in stock (Lead Time=3), and one day of Internal Lead Time will be added:
         - to Sales Order if it is an Item ordered by the customer, like in 1.1. In such a case, ILT will not be added to MOR.
         - to MOR if it is not an Item ordered by the Customer. For example, it is planned based on demand from the higher BOM level (secondary demand), Like in 1.2.
-2. Item with Procurement Method = Buy, Lead Time = 10, Internal Lead Time = 1
-    1. ILT Scope = Sale
+2. Item with **Procurement Method = Buy**, Lead Time = 10, Internal Lead Time = 1
+    1. **ILT Scope = Sale**
       If it is an Item ordered by the customer, ILT will be added to the Sales Order. After ten days of the Purchase Order Release Date, the Item will be available in stock (Lead Time=10), and one day of Internal Lead Time will be added before the Item will be ready to send to the Customer (for example, packing time, final quality control, etc.). ILT will not be added to the PO.
-    2. ILT Scope = Purch. / Prod.
+    2. **ILT Scope = Purch. / Prod**.
       ILT will be added to the Purchase Order. After ten days from the Purchase Order’s Release Date, the item will be available in stock (Lead Time=10). One day of Internal Lead Time will be added before the item is available for production or sale (for example, quality control activities for the purchased item). ILT will not be added to the Sales Order if it is an Item ordered by a customer.
-    3. ILT Scope = Both.
+    3. **ILT Scope = Both**.
       After ten days of the Purchase Order’s Release Date, the Item will be available in stock (Lead Time=10), and one day of Internal Lead Time will be added:
         - only to Purchase Order If it is an Item not ordered by a customer.
         - Purchase Order and Sales Order If it is an Item ordered by a customer. Thus, Internal Lead Time will be doubled.
@@ -110,26 +110,39 @@ Examples of order Qty calculations:
 
 **Example 1**
 
-Parameters:
+<i>**Parameters**</i>:
+
 Order Quantity = 103
+
 Order Multiple = 3
+
 Minimum Order Qty = 5
+
 Maximum Order Qty = 10
-Outcome:
+
+<i>**Outcome**</i>:
+
 The first ten recommendations with quantity 10
+
 Rest of division = 3 (Order Quantity/Maximum Order Qty)
+
 Last (11) recommendation with quantity 5 (effect of Minimum Oder Quantity, Rest of division < Minimum Order Qty)
 
 **Example 2**
 
-Parameters:
+<i>**Parameters**</i>:
+
 Minimum Order Qty = 2 (other parameters unchanged)
-Outcome:
+
+<i>**Outcome**</i>:
+
 The first ten recommendations with quantity 10
+
 Rest of division = 3 (Order Quantity/Maximum Order Qty)
+
 Last (11) recommendation with quantity 6 (effect of Order Multiply, Rest of division < Minimum Order Qty)
 
-## Item/Revision stock data
+## Item/Revision Stock Data
 
 For Items managed by Batches, Serial Numbers in Item Details are visible stock information with accuracy to revision.
 

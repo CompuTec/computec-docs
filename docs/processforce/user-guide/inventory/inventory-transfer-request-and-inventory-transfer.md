@@ -32,7 +32,7 @@ This kind of document describes wanted inventory movement but does not cause it.
 
 ![Inventory Transfer Request](./media/inventory-transfer-request-and-inventory-transfer/inventory-transfer-request.webp)
 
-## Manufacturing Order based document
+## Manufacturing Order Based Document
 
 Inventory Transfer and Inventory Transfer Requests can be created for a specific Manufacturing Order. You can choose a desired option from the context menu on Manufacturing Order. Inventory Transfer and Inventory Transfer Request can be made either for components or all Items on Manufacturing Order.
 

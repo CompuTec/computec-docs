@@ -15,29 +15,29 @@ A specific view can be also used in a standard SQL query.
 |Name|Description|Type|Data category|
 |:----|:----|:----|:----|
 |ActualMaterialCostOnMorFact|Actual Issues and Receipts for a Manufacturing Order|Reuse Views| |
-|ActualMaterialCostOnMorQuery|Actual Issues and Receipt for a Manufacturing Order – a Query available for analytics tools|Query Views|cube|
+|[ActualMaterialCostOnMorQuery](#actualmaterialcostonmorquery)|Actual Issues and Receipt for a Manufacturing Order – a Query available for analytics tools|Query Views|cube|
 |ActualResourceCostOnMorFact|Actual work time records for Resources|Reuse Views| |
-|ActualResourceCostOnMorQuery|Actual work time records for Resources – a Query available for analytics tools|Query Views|cube|
+|[ActualResourceCostOnMorQuery](#actualmaterialcostonmorquery|Actual work time records for Resources – a Query available for analytics tools|Query Views|cube|
 |DocumentDate|Time table – a copy from SAP Business One model|Reuse Views|dimension|
 |EmpEndDate|Time table – a copy from SAP Business One model|Reuse Views|dimension|
 |EmpFact|Time and registered quantity for an Employee assign to a Resource on a Manufacturing Order (in cases of many log ins, start data is a date of the first log in and end date is a date of the last log in)|Reuse Views| |
 |Employee|Employee dictionary|Reuse Views|dimension|
-|EmpQuery|Time and registered quantity for an Employee assign to a Resource on a Manufacturing Order (in cases of many log ins, start data is a date of the first log in and end date is a date of the last log in) – a Query available for analytics tools|Query Views|cube|
+|[EmpQuery](#empquery)|Time and registered quantity for an Employee assign to a Resource on a Manufacturing Order (in cases of many log ins, start data is a date of the first log in and end date is a date of the last log in) – a Query available for analytics tools|Query Views|cube|
 |EmpStartDate|Time table - a copy from SAP Business One model|Reuse Views|dimension|
 |ItemDetailsRevisions|Item Revisions dictionary|Reuse Views|dimension|
 |MorItem|Item dictionary for Manufacturing Order|Reuse Views|dimension|
 |MorItemAndResource|Item and Resource's dictionary for Manufacturing Order|Reuse Views|dimension|
 |MorResource|Resource dictionary for Manufacturing Order|Reuse Views|dimension|
 |MorResourceOverviewFact|Key Performance Indicators describing Recourse for Manufacturing Order|Reuse Views| |
-|MorResourceOverviewQuery|Key Performance Indicators describing Recourse for Manufacturing Order – a Query, available for analytics tools|Query Views|cube|
+|[MorResourceOverviewQuery](#morresourceoverviewquery)|Key Performance Indicators describing Recourse for Manufacturing Order – a Query, available for analytics tools|Query Views|cube|
 |Operation|Operation dictionary|Reuse Views|dimension|
 |PlannedMaterialCostOnMorFact|Planned Issues and Receipts for Manufacturing Order|Reuse Views| |
-|PlannedMaterialCostOnMorQuery|Planned Issues and Receipts for Manufacturing Order – a Query, available for analytics tools|Query Views|cube|
+|[PlannedMaterialCostOnMorQuery](#plannedmaterialcostonmorquery)|Planned Issues and Receipts for Manufacturing Order – a Query, available for analytics tools|Query Views|cube|
 |PlannedResourceCostOnMorFact|Planned work time for Resources on Manufacturing Order|Reuse Views| |
-|PlannedResourceCostOnMorQuery|Planned work time for Resources on Manufacturing Order – a Query, available for analytics tools|Query Views|cube|
-|PlannedVsActualCostOnMorQuery|Planned vs. actual work time costs for Resources and Issues and Receipts for Manufacturing Order – a Query, available for analytics tools|Query Views|cube|
-|PlannedVsActualMaterialCostOnMorQuery|Planned vs. actual Issues and Receipts for Manufacturing Order – a Query, available for analytics tools|Query Views|cube|
-|PlannedVsActualResourceCostOnMorQuery|Planned vs. actual Resources work time for Manufacturing Order – a Query, available for analytics tools|Query Views|cube|
+|[PlannedResourceCostOnMorQuery](#plannedresourcecostonmorquery)|Planned work time for Resources on Manufacturing Order – a Query, available for analytics tools|Query Views|cube|
+|[PlannedVsActualCostOnMorQuery](#plannedvsactualcostonmorquery)|Planned vs. actual work time costs for Resources and Issues and Receipts for Manufacturing Order – a Query, available for analytics tools|Query Views|cube|
+|[PlannedVsActualMaterialCostOnMorQuery](#plannedvsactualmaterialcostonmorquery)|Planned vs. actual Issues and Receipts for Manufacturing Order – a Query, available for analytics tools|Query Views|cube|
+|[PlannedVsActualResourceCostOnMorQuery](#plannedvsactualresourcecostonmorquery)|Planned vs. actual Resources work time for Manufacturing Order – a Query, available for analytics tools|Query Views|cube|
 |QctBatch|Batches for Quality Control Test dictionary|Reuse Views|dimension|
 |QctClosedDate|Time table – a copy from SAP Business One model|Reuse Views|dimension|
 |QctComplaint|Complaint for Quality Control Test dictionary|Reuse Views|dimension|
@@ -47,7 +47,7 @@ A specific view can be also used in a standard SQL query.
 |QctItemProperty|Item Properties for Quality Control Test dictionary|Reuse Views|dimension|
 |QctNcmr|NCMR Properties for Quality Control Test dictionary|Reuse Views|dimension|
 |QctPool|Pool Properties for Quality Control Test dictionary|Reuse Views|dimension|
-|QctQuery|Counters for Quality Control Test (a number of Tests and related Batches, Complaints, Defects etc.) – a Query available for analytics tools|Query Views|cube|
+|[QctQuery](#qctquery)|Counters for Quality Control Test (a number of Tests and related Batches, Complaints, Defects etc.) – a Query available for analytics tools|Query Views|cube|
 |QctResource|Resource Properties for Quality Control Test dictionary|Reuse Views|dimension|
 |QctSerialNumber|Serial Numbers Properties for Quality Control Test dictionary|Reuse Views|dimension|
 |QctTest|Quality Control Test dictionary|Reuse Views|dimension|

@@ -198,8 +198,8 @@ Issue Whs Code and Receipt Whs Code are CompuTec PDC-related fields. [CompuTec 
 
 ## Resource Groups
 
-::: info Path
-    Administration → Setup → Production → Resource Groups
+:::info Path
+Administration → Setup → Production → Resource Groups
 :::
 
 This form allows the user to define resource groups, for example mixing vessels, blenders, and ovens.
@@ -275,8 +275,6 @@ Resource Calendar is used to define the availability of a Resource for productio
 - On the right upper corner of this form, you can check Total Working Time in a week.
 
   ![Resource Calendar Working Hours](./media/resources/resource-calendar-working-hours.webp)
-- The Exceptions tab is used to mark additional capacity of Resources for a specified date and time.
-
 - The Exceptions tab is used to mark additional capacity of Resources for a specified date and time.
 
   ![Exceptions](./media/resources/resource-calendar-exceptions.webp)

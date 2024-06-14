@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# WIP Items Tab
+# WIP Items tab
 
 :::note Path
     Production → Bill of Materials → Bill of Materials → WIP Items

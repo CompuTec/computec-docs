@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+toc_min_heading_level: 2
+toc_max_heading_level: 5
 ---
 
 # Multiple Test Result Record
@@ -65,7 +67,7 @@ This statistics section is refreshed when:
 
 #### Checkboxes
 
-##### Reference name property
+##### Reference Name Property
 
 If the tested property gives reference name results (e.g., color = red), a check box with the following description is presented:
 
@@ -75,7 +77,7 @@ Checking causes loading to the Property field on Quality Control Test, a result 
 
 ![Multiple Results Copied](./media/multiple-test-result-record/multiple-results-copied.webp)
 
-#### Numeric value property
+##### Numeric Value Property
 
 If the tested property gives a numeric value (e.g., particle size = 5), a check box with the following description is presented:
 
@@ -83,7 +85,7 @@ If the tested property gives a numeric value (e.g., particle size = 5), a check 
 
 Checking it causes loading to the Property field on Quality Control Test, a result that is an average value calculated from the values recorded on the Record Multiple Test Results form. This option is available for properties with numeric values only.
 
-### Deleting Rows
+#### Deleting Rows
 
 To delete a row, right-click on it and choose Delete row from the context menu:
 

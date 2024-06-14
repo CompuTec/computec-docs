@@ -18,7 +18,7 @@ You can use Windows Task Scheduler to run your script automatically.
 
     ![Task Scheduler](./media/scheduling-scripts/task-scheduler.webp)
 
-2. Choose the Create Task option from the context menu (right-click on Task Scheduler (Local)).
+2. Choose the Create Task option from the context menu (right-click on Task Scheduler (Local).
 
     ![Add task](./media/scheduling-scripts/create-task.webp)
 
@@ -52,6 +52,6 @@ You can use Windows Task Scheduler to run your script automatically.
 
     ![Credentials](./media/scheduling-scripts/scheduling-name.webp)
 
-9. When you click on Task Scheduler Library, you can see a list of Tasks. Here you can find your newly created task with status. You can also edit, manually start, disable, check execution history, and so on.
+9. When you click on Task Scheduler Library, you can see a list of Tasks. Here, you can find your newly created task with status. You can also edit, manually start, disable, check execution history, and so on.
 
     ![Ready Task](./media/scheduling-scripts/ready-task.webp)

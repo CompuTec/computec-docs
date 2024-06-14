@@ -19,7 +19,8 @@ A list of Protocols will be displayed:
 ![List of Protocols](./media/qc-test-from-mo/list-of-test-protocols-manufacturing-order.webp)
 
 Select one and click Choose.
-Note that Test Protocol with corresponding data and Manufacturing Order check box checked must be created to be available on this list. Click here to check how to create a Test Protocol.
+
+Note that Test Protocol with corresponding data and Manufacturing Order check box checked must be created to be available on this list. Click [here](../test-protocols/overview.md) to check how to create a Test Protocol.
 
 ![Test Protocol Manufacturing Order](./media/qc-test-from-mo/test-protocol-manufacturing-order.webp)
 

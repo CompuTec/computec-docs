@@ -32,7 +32,7 @@ In this form, Costs types can be set. After its definition, Cost types can be us
 
 ![Overhead variable](./media/multistructure-fixed-and-variable-overhead-costs/overhead-variable.webp)
 
-## Usage of the option
+## Usage of the Option
 
 :::info Path
     Costing → Item Costing

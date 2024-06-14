@@ -11,7 +11,7 @@ A Batch number can be allocated on creation of a manufacturing order or on its s
 ## Configuration
 
 - This is a general setting; therefore, all items that are batch traced within production will be managed this way.
-- Create a batch template using the Batch Template Definition.
+- Create a batch template using the [Batch Template Definition](../../item-details/batch-serial-template-definition.md).
 - Check the Batch Number generated at the MOR checkbox and choose one of the options. When choosing one of the Status options, the batch will be generated on the appropriate status change or upon creating a Manufacturing Order with the specified status.
 
 ![Configuration](./media/preallocation-of-a-batch-number/configuration.webp)

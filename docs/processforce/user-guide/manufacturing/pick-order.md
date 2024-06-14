@@ -20,7 +20,7 @@ If blank, they can be manually added.
 
 ![Pick Order](./media/pick-order/pick-order.webp)
 
-## Employee field
+## Employee Field
 
 An Employee filed is available for assigning an employee to a specific Pick Order.
 

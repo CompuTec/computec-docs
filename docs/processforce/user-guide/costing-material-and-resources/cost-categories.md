@@ -92,6 +92,19 @@ FG-01:
 
 This option defines if the final goods' Batch size also covers semi-goods calculations. Click [here](../costing-material-and-resources/item-costing/batch-size-costing.md) to find out more.
 
+<details>
+<summary>Click here to check what Batch Size is.</summary>
+<div>
+Batch size is an option available on the Bill of Materials header:
+
+![Bill of Materials Batch Size](./media/cost-categories/bill-of-materials-batch-size.png)
+
+It defines the most suitable production quantity, e.g., producing five pieces of a particular Item is an optimal way to produce it (producing less is not profitable).
+
+The batch Size is one by default but can be changed.
+</div>
+</details>
+
 **Example**
 
 We have the following product structure:

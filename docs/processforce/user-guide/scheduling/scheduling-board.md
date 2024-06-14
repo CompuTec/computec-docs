@@ -67,7 +67,7 @@ You can also reach the for from the Order Recommendation form:
 
 Semi-finished product scheduling is a tool for production planning, considering a product structure.
 
-### Schedule Tab
+### Schedule tab
 
 #### Create
 
@@ -138,7 +138,7 @@ To use Copy multiple rows option, highlight more than one row (by using Shift+le
 
 ![Copy Rows](./media/scheduling-board/copy-multiple-rows.png)
 
-### Load Report Tab
+### Load Report tab
 
 This tab summarizes Set Up Time, Run Time Machine, and Labor type Resources for a specific period.
 

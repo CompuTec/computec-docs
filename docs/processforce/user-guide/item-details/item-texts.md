@@ -26,7 +26,7 @@ The Item Text Group function allows the user to define an Item Text Group, which
 
 ![Item Text Group](./media/item-texts/item-text-group.webp)
 
-## Item Text assigning
+## Item Text Assigning
 
 A once-created item text can be assigned to an item in the Item Details form, Texts tab. By clicking a second column and then a Choose From List icon, a required Item text can be chosen:
 

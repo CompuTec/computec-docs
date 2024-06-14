@@ -30,6 +30,8 @@ Go to the upper menu → Within View → Indicator Display, select Translatable 
 
 ![Translatable Fields](./media/msds-labels-documentation/translatable-fields.webp)
 
+## Example
+
 The Phrases form is used to define the EU Phrases lists. The code is the same in all countries, but the name is different in each language. Data source: [Chemical Risk & Safety Phrases](http://schoolscout24.de/cgi-bin/rsp/rspinput.cgi).
 
 *Czech* **R1** Výbušný v suchém stavu.

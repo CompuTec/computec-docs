@@ -34,7 +34,9 @@ sidebar_position: 4
 
 The MO in status: scheduled, started, released. MI Exclude – MO's header MI is unavailable for production if selected. MO's time is excluded from the scheduling, visible as a grey bar on the Gantt Chart - resource view. If the MI is a parent for another MI, and in the child MI definition Dependent = Yes, then excluded time is visible on Gantt for the child MI (Resource). It works this way down the MI structure.
 
-**MO Class** – a Maintenance Order class of the template MO (check here)
+![Maintenance Order Gantt Chart](./media/maintenance-order-template/maintenance-order-gantt-chart.jpg)
+
+**MO Class** – a Maintenance Order class of the template MO (check [here](../field-description/maintainable-item.md#classes))
 
 **MO Category** – a Maintenance Order category in a class
 
@@ -121,13 +123,13 @@ Main Menu/Administration/Plant Maintenance/Work Setup/Task Template
 
 Header
 
-- Task Code – a unique code identifying the task, and then enter a description of the task in the Task Scope field
-- Task Scope – descriptive information of the Task Scope (brief explanation of the problem)
-- Class – a class of the task here
-- Trade – a trade with which to associate the task here
-- Estimated Duration –the number of hours estimated to complete the task
-- People Required – several people are required to complete the task
-- Out of Service – select to indicate the task should not be displayed in lookups, e.g., on Template MO.
+- **Task Code** – a unique code identifying the task, and then enter a description of the task in the Task Scope field
+- **Task Scope** – descriptive information of the Task Scope (brief explanation of the problem)
+- **Class** – a class of the task here
+- **Trade** – a trade with which to associate the task here
+- **Estimated Duration** – the number of hours estimated to complete the task
+- **People Required** – several people are required to complete the task
+- **Out of Service** – select to indicate the task should not be displayed in lookups, e.g., on Template MO.
 
 #### Trade
 
@@ -137,11 +139,11 @@ Trades are codes for the types of employees performing maintenance work. A singl
 
 ![Trade](./media/maintenance-order-template/trade.webp)
 
-Trade – a unique code identifying the trade
+**Trade** – a unique code identifying the trade
 
-Description – descriptive information about the Trade
+**Description** – descriptive information about the Trade
 
-Class – enter the class to further subdivide the trade as necessary, e.g., specify apprentice, journeyman, or master.
+**Class** – enter the class to further subdivide the trade as necessary, e.g., specify apprentice, journeyman, or master.
 
 ##### Rates tab
 
@@ -157,7 +159,7 @@ Rates are defined for Trades. When booking hours, the system checks to see if an
 
 **Start Date and End Date** – beginning and ending dates to which the rate applies
 
-Note: Dates for the same hours/department combination cannot overlap.
+**Note**: Dates for the same hours/department combination cannot overlap.
 
 #### Qualification tab
 
@@ -220,11 +222,11 @@ Note: MI Class/MI Category determines what findings will be visible in the tab F
 
 **Entry Type** – reading value input mode for meter reading: Reading or Difference
 
-**Aspect** – a combination of Aspect/Point Type determines for which Inspection Points from MI inspection results will be recorded (check here)
+**Aspect** – a combination of Aspect/Point Type determines for which Inspection Points from MI inspection results will be recorded (check [here](maintainable-item.md#aspect-points))
 
-**Aspect Name** – an aspect defined for MI, please see here
+**Aspect Name** – an aspect defined for MI, please see [here](maintainable-item.md#aspect)
 
-**Point Type** – the Point related to the Aspect from the MI definition (check here)
+**Point Type** – the Point related to the Aspect from the MI definition (check [here](maintainable-item.md#point-type))
 
 **Point Type Name** – point's name
 
@@ -368,8 +370,9 @@ Main Menu/Administration/Plant Maintenance/Work Setup/Material List
 
 You can assign child MOs using the MO template.
 
-    Sequence – the sequence number in which to perform the route maintenance order,
-    Template Code – select the route maintenance order template to assign to the maintenance work order template (check here). The system automatically populates the MO Template parameters.
+    **Sequence** – the sequence number in which to perform the route maintenance order,
+
+    **Template Code** – select the route maintenance order template to assign to the maintenance work order template (check here). The system automatically populates the MO Template parameters.
 
 Task Checklist
 

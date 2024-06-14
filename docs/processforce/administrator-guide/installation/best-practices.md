@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Best Practices
 
-Here you can find notes on best practices for setting up an SAP Business One environment, which plays a crucial role in CompuTec products' performance.
+Here, you can find notes on best practices for setting up an SAP Business One environment, which plays a crucial role in CompuTec products' performance.
 
 ---
 

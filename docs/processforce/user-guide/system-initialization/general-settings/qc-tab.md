@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Quality Control Tab
+# Quality Control tab
 
 ![Quality Control Tab](./media/qc-tab/general-settings-qc.webp)
 
@@ -22,7 +22,7 @@ Click [here](../../quality-control/quality-control-test/multiple-test-result-rec
 
 **Create Quality Control Document on MOR state** – This option determines if a related Quality Control is to be created upon a Manufacturing Order status change. It is possible to set a shift in one status or turn the option off ('No' on the drop-down list).
 
-**Create QC Document for Operation on MOR state** – This option specifies whether a related Quality Control should be created for an Operation when the status of a Manufacturing Order changes. You can configure a status shift or disable this feature by selecting 'No' from the drop-down list. It is required to check the [QC Active checkbox](../../routings/operations.md)for this option to be available for a specific Operation.
+**Create QC Document for Operation on MOR state** – This option specifies whether a related Quality Control should be created for an Operation when the status of a Manufacturing Order changes. You can configure a status shift or disable this feature by selecting 'No' from the drop-down list. It is required to check the [QC Active checkbox](../../routings/operations.md) for this option to be available for a specific Operation.
 
 **Update Items Properties in QC Test Protocol by updating Item Details Properties** – if this checkbox is checked, Item Properties in the Quality Control Test Protocol are automatically updated when the related Item Details Properties are updated.
 

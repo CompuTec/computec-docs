@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Inspectors
 
-Here you can define Inspectors who can be assigned to perform a Quality Test and groups of Inspectors.
+Here, you can define Inspectors who can be assigned to perform a Quality Test and groups of Inspectors.
 
 ---
 

@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Items Tab
+# Items tab
 
 :::note Path
     Production → Bill of Materials → Bill of Material → Items Tab

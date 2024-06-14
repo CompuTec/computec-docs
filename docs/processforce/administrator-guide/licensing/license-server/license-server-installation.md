@@ -7,7 +7,7 @@ sidebar_position: 2
 This document provides a step-by-step guide on how to install and configure CompuTec License Server.
 
 :::info
-    You can check the available **ProcessForce user license types** [**here**](../license-chart.md).
+    You can check the available **ProcessForce user license types** [here](../license-chart.md).
 :::
 
 ---

@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Implementation Notes
 
-In this page, information vital for the implementation process will be published.
+On this page, information vital for the implementation process will be published.
 
 ---
 

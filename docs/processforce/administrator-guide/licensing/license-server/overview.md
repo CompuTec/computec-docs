@@ -7,5 +7,5 @@ sidebar_position: 1
 In this section:
 
 - [CompuTec License Server Installation](./license-server-installation.md)
-- [Using CompuTec Service Manager and configuring Direct Data Access mode](./direct-access.md)
+- [Using CompuTec Service Manager and Configuring Direct Data Access Mode](./direct-access.md)
 - [CompuTec License Server Release Notes](./license-server-release-notes.md)

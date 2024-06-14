@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Non-Batch Controlled Items
 
-Here you can check how to perform Bin Locations and Allocations on Pick Order for Non-Batch Controlled Items.
+Here, you can check how to perform Bin Locations and Allocations on Pick Order for Non-Batch Controlled Items.
 
 ---
 
