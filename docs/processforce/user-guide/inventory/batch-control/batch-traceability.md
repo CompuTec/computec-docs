@@ -25,7 +25,7 @@ Click [here](../../complaint-management/complaint.md) to find out more about the
 - Batch Master Data form the context menu.
   ![Batch Master Data -> Batch Traceability](./media/batch-traceability/batch-master-data-batch-traceability.webp)
 
-Click [here](../../inventory/batch-control/batch-master-data/) to find out more about Batch Master Data.
+Click [here](../batch-control/batch-master-data/overview.md) to find out more about Batch Master Data.
 
 ## Opening Batch Trace Visualization Form
 
