@@ -6,6 +6,8 @@ sidebar_position: 6
 
 Catch Weight in CompuTec WMS refers to the ability to measure inventory using both inventory Unit of Measurement (IUoM) and document UoM (DUoM).
 
+You can watch an introduction video [here](https://www.youtube.com/watch?v=XGptQ9TQ90U).
+
 ---
 
 ## Overview
@@ -78,7 +80,7 @@ When recording a number of entries, in this case, it is suggested to check the [
 
 ### Recording Total Quantity for Different DUoMs of Different Quantity
 
-In the video below, you can see the CompuTec WMS with Catch Weight option on behavior when recording ten packages (pcs) with weights ranging from 9,21 to 11,45 (even though the DUoM is set to 10). The transaction used in this example is Goods Receipt PO from Purchase Order.
+In the [video](https://www.youtube.com/watch?v=HHxk_J8FX1E), you can see the CompuTec WMS with Catch Weight option on behavior when recording ten packages (pcs) with weights ranging from 9,21 to 11,45 (even though the DUoM is set to 10). The transaction used in this example is Goods Receipt PO from Purchase Order.
 
 Note that the check button on the quantity form does not work with Catch Weight. After setting up the units, click back to Document Details, and choose a required item row, the right arrow, and the Save icon (as shown at the end of the video).
 
@@ -89,6 +91,8 @@ As you can see, CompuTec WMS recorded the total quantity and set an average quan
 
 Note that the created packages are just for information purposes – they are not as fixed as Storage Units. In the Batch Number Transactions Report (opened from the context menu on Goods Receipt PO), you can see that one Batch with total quantity was recorded. To check the specific package records, go to CompuTec WMS → Whs. Info → Batch/Serial Info and choose the suitable Batch.
 
+Click [here](https://www.youtube.com/shorts/lJHc8UuSsT8) to know more.
+
 ### Using Weight Scales
 
 If CompuTec WMS has weight scales integrated, it is possible to set inventory quantity based on their measurements. To do this, click the IUoM field (Qty KG in our example) and the weight button (highlighted). The IUoM field will be filled with the weighted value:
@@ -98,13 +102,13 @@ The field can be automatically filled in with the actual scale weight measuremen
 
 ### Average Quantity per DUoM
 
-It is possible to set the number of units and total quantity. Saving documents like this will create units with an average quantity per unit.
+It is possible to set the number of units and total quantity. Saving documents like this will create units with an [average quantity per unit](https://www.youtube.com/shorts/w_7l1lH6eTs).
 
 This option can be used, e.g. when a user is sure about weight of each of the units but has a different weight per unit than the units set in SAP Business One (in our example, it is set that one pcs has 10 KG).
 
-#### Indivisible rest
+#### Indivisible Rest
 
-If the quantity cannot be divided evenly between DUoMs, the Catch Weight option will add indivisible rest to one of the units. E.g., if there are three boxes and 10 kilograms, the mechanism will create two boxes with 3,333333 kg and one with 3,333334 (when there are six decimal places set in the system).
+If the quantity cannot be divided evenly between DUoMs, the Catch Weight option will add [indivisible rest](https://www.youtube.com/shorts/lSPhoPDpbeQ) to one of the units. E.g., if there are three boxes and 10 kilograms, the mechanism will create two boxes with 3,333333 kg and one with 3,333334 (when there are six decimal places set in the system).
 
 ### A label for Each Box
 

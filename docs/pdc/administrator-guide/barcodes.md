@@ -6,6 +6,8 @@ sidebar_position: 7
 
 Many of CompuTec PDC functions can be operated by scanning barcodes. Here, you can find information on barcode scanning.
 
+---
+
 ## General Information
 
 ### Barcodes Physical Attributes

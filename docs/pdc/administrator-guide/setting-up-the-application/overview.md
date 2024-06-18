@@ -65,8 +65,8 @@ Enter the required data in a new window.
 2. Type in SAP Business One user ID of a chosen database. The user has to have at least an Indirect Access SAP B1 license assigned and a ProcessForce license.
 3. Type in SAP Business One password of a chosen database.
 4. When you type in the server address, the list of available companies (databases) fills itself automatically. Choose a required company from the drop-down list (click the Get all databases button to refresh the list of companies).
-5. Type in the database username and password (needed only to open a preview of Bill of Materials and Manufacturing Orders in Crystal Report form). If these data are not set up, the application asks for authentication to open a preview. [Here](./sap-hana-database.md) you can check how to set up a database user other than SYSTEM.
-6. <!-- TODO: Figure out what to do with it -->
+5. Type in the database username (needed only to open a preview of Bill of Materials and Manufacturing Orders in Crystal Report form). If these data are not set up, the application asks for authentication to open a preview. [Here](./sap-hana-database.md) you can check how to set up a database user other than SYSTEM.
+6. Type in the database password (needed only to open a preview of Bill of Materials and Manufacturing Orders in Crystal Report form). If these data are not set up, the application asks for authentication to open a preview. [Here](./sap-hana-database.md) you can check how to set up a database user other than SYSTEM.
 7. You can choose [predefined settings](./pdc-settings/overview.md) from a drop-down list. The Get Settings button fills up the drop-down list with values from the related database.
 8. After filling in all settings fields and clicking Save on every next run, the application will automatically connect with the given data when this check box is checked.
 
@@ -109,7 +109,10 @@ Click [here](./rfid.md) to find out more about RFID settings.
 ### Connecting
 
 1. Click the Save button after setting up all the required settings. This saves typed-in data and displays the log-in form.
+
 2. Click Connect in the upper menu.
+  ![Connect](./media/setting-up-the-application/connect.png)
+
 3. Now, you can log in using CompuTec PDC login and CompuTec PDC password in the Login and Password fields, respectively. The connection status is communicated in the lower part of the screen.
 
    ![Log In](./media/setting-up-the-application/log-in-connected.webp)
@@ -127,7 +130,9 @@ Click [here](./rfid.md) to find out more about RFID settings.
 
 In SAP Business One with ProcessForce installed, you can find CompuTec PDC Settings:
 
-SAP Business One → Administration → System Initialization → General Settings → ProcessForce tab → PDC tab:
+:::info Path
+SAP Business One → Administration → System Initialization → General Settings → ProcessForce tab → PDC tab
+:::
 
 ![General Settings](./media/setting-up-the-application/general-settings.webp)
 

@@ -6,6 +6,8 @@ sidebar_position: 3
 
 These forms allow the user to define Operations, Properties and Input/Output Properties.
 
+To view related video content, click [here](https://www.youtube.com/playlist?list=PLtT6kgaz5YneralBjyvyCSYXbTT0QRHYx).
+
 ---
 
 ![Operation Diagram](./media/operations/operations-diagram.webp)

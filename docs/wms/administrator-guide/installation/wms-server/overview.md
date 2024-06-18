@@ -98,3 +98,5 @@ You can set up the automatic restart in Windows Task Scheduler:
    2. Trigger set for a specific time every day (15 seconds after the stop).
 
 This requirement is caused by extensive SAP Business One RAM usage.
+
+Click [here](https://www.youtube.com/watch?v=O3K-E4Y0WU4) to check the manual video.

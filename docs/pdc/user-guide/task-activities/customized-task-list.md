@@ -26,7 +26,7 @@ Rules:
 - `"DocEntry"` and `mor16."U_LineNum"` are always obligatory
 
 ```sql title="Example"
-select
+  select
   omor."DocEntry"
   ,mor16."U_LineNum"
   ,omor."DocNum" as "_Nr_dokumentu"
@@ -38,13 +38,13 @@ select
   ,opr."U_OprName" as "_Nazwa_operacji"
   ,mor14."U_ItemCode" as "_Kod_materiału"
   ,oitm."ItemName" as "_Nazwa_materiału"
-from "@CT_PF_OMOR" omor
-inner join "@CT_PF_MOR12" mor12 on omor."DocEntry"=mor12."DocEntry"
-inner join "@CT_PF_MOR16" mor16 on omor."DocEntry"=mor16."DocEntry" and mor12."U_RtgOprCode"=mor16."U_RtgOprCode"
-left join "@CT_PF_MOR14" mor14 on mor12."DocEntry" = mor14."DocEntry" and mor12."U_RtgOprCode"=mor14."U_RtgOprCode"
-inner join "@CT_PF_OOPR" opr on mor12."U_OprCode"=opr."U_OprCode"
-left join "OITM" oitm on mor14."U_ItemCode"=oitm."ItemCode"
-where mor16."U_RscCode" =@RscCode
+  from "@CT_PF_OMOR" omor
+  inner join "@CT_PF_MOR12" mor12 on omor."DocEntry"=mor12."DocEntry"
+  inner join "@CT_PF_MOR16" mor16 on omor."DocEntry"=mor16."DocEntry" and mor12."U_RtgOprCode"=mor16."U_RtgOprCode"
+  left join "@CT_PF_MOR14" mor14 on mor12."DocEntry" = mor14."DocEntry" and mor12."U_RtgOprCode"=mor14."U_RtgOprCode"
+  inner join "@CT_PF_OOPR" opr on mor12."U_OprCode"=opr."U_OprCode"
+  left join "OITM" oitm on mor14."U_ItemCode"=oitm."ItemCode"
+  where mor16."U_RscCode" =@RscCode
   and omor."DocNum" like '21%'
   and mor16."U_Active"='Y'
   and omor."U_Status" in ('ST','RL')

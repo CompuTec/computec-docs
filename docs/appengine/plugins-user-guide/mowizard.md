@@ -51,3 +51,5 @@ Click the plus icon to add a new Job. You can create many of these.
     7. Click Save and Run. The job is now moved to the Running tab. When all planned Manufacturing Orders are created, the job will be moved to the Completed tab. If not all of the Manufacturing Orders were created (e.g. because a child Manufacturing Order was chosen in the edit mode but not a higher level Manufacturing Order), the job will be moved back to the Prepared tab. Here, you can click the job and check which Manufacturing Orders were created, which were not and why (click the Manufacturing Order with the Failure status to get this information).
 
 **Example usage**
+
+Click [here](https://www.youtube.com/watch?v=HdCU7PtdwPA) to know more about Example Usage.

@@ -40,9 +40,13 @@ You can directly select multiple batches from the batch list, or you can first c
 
 ![Narrowed Down Documents](./media/multi-batch-analysis/narrowed-down-documents.png)
 
+Click [here](https://www.youtube.com/watch?v=rr60g-PGttY) to know more about Filtering Batches.
+
 ### Batch selection and run of Trace Analysis
 
 ![Batch selection and Run of Trace Analysis](./media/multi-batch-analysis/batch-selection.png)
+
+Click [here](https://www.youtube.com/watch?v=8Q4GkChEFqw) to know more about Batch Selection
 
 ## Trace Analysis
 
@@ -57,8 +61,12 @@ On a graph, you can:
 
 ![Trace Analysis](./media/multi-batch-analysis/trace-analysis.png)
 
-### Export data
+Click [here](https://www.youtube.com/watch?v=-A73RG9ynzw) to know more about Trace Analysis.
+
+### Export Data
 
 In each grid (Batches, Transactions, Links, Derived Data) you can sort data. All grids are exported to the same file. Each kind of data is exported to a separate sheet.
 
 ![Export Data](./media/multi-batch-analysis/export-data.png)
+
+Click [here](https://www.youtube.com/watch?v=GXQlY4yV2rA) to know more about exporting data.

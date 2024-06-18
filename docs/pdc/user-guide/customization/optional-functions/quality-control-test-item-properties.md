@@ -1,10 +1,10 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Quality Control Test/Item Properties
 
-This option allows checking and recording Tests and Item Properties of a related Quality Control Test. To make this option available, choose the QC Test Properties option from the Task. The added button is active if there is any Quality Control Test created in ProcessForce for a specific Manufacturing Order or a specific Operation on a Manufacturing Order. You can see how to check it in related [ProcessForce documentation entry](/docs/processforce/user-guide/quality-control/quality-control-test/overview#transaction)
+This option allows checking and recording Tests and Item Properties of a related Quality Control Test. To make this option available, choose the QC Test Properties option from the [custom options for Task Panel](../../customization/overview.md#task-tile-and-task-panel-customization). The added button is active if there is any Quality Control Test created in ProcessForce for a specific Manufacturing Order or a specific Operation on a Manufacturing Order. You can see how to check it in related [ProcessForce documentation entry](/docs/processforce/user-guide/quality-control/quality-control-test/overview#transaction)
 
 ![Quality Control](./media/quality-control-test-item-properties/quality-control.webp)
 
