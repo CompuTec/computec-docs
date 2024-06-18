@@ -178,6 +178,8 @@ When adding a new Batch/Serial template, the date and counter fields have the fo
 
 ![Counter Template](./media/batch-serial-template-definition/batch-template-template.webp)
 
+To see related video content click [here](https://www.youtube.com/playlist?list=PLtT6kgaz5YnfAO8B4ux_lXkmQyHmPCuR-).
+
 ### Example 6: Using a specific value from a document in the Batch generation template
 
 You can use others than specified in the Batch Template form fields to be incorporated in a Batch template. In this example, a Warehouse value is used. Batch template generation is unsuitable, but we can set User-Defined Values for the Classification field to incorporate a Warehouse value into a Batch name.

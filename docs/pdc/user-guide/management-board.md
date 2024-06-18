@@ -90,7 +90,7 @@ A task tile within Management Board is a graphic representation of a specific ta
 ![Resource Tile](./media/management-board/management-board-resource-tile.webp)
 
 1. **Status icon** – icon communicates one of the possible statuses of the task: set up, run, downtime. Clicking it leads to a Task Panel of a specific task. You can find more information about it here.
-2. Resource history – clicking it displays the history of use of the specific resource.
+2. **Resource history** – clicking it displays the history of use of the specific resource.
 
     ![Resource History](./media/management-board/management-board-resource-history.webp)
 
@@ -103,7 +103,7 @@ A task tile within Management Board is a graphic representation of a specific ta
     ![Planned Task Icon](./media/management-board/planned-task-icon.webp) - planned task. It is possible to assign an employee to a task with this status. To do that, click the icon and choose an employee from the list.
 
     ![Resource History](./media/management-board/resource-history-employee.webp)
-3. Time graph – a graphic representation of planned and current time:
+3. **Time graph** – a graphic representation of planned and current time:
 
     ![Management Board Graph](./media/management-board/management-board-graph.webp)
 
@@ -115,5 +115,5 @@ A task tile within Management Board is a graphic representation of a specific ta
     **Example**:
 
     An example used on a picture above a bar of planned progress indicates that the end of the scheduled work period has already passed. But a bar of real progress shows that work has stopped halfway through.
-4. Resource code.
-5. Resource name.
+4. **Resource code**.
+5. **Resource name**.

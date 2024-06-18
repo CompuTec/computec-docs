@@ -69,3 +69,7 @@ The application also displays a system message when there is a Material Phantom 
 :::tip
 If a specific Item is required to be used on the Bill of Materials as a regular Item (without its BOM, just as an Inventory Item) in some cases and as a Material Phantom (A BOM that will explode on a master BOM) in other, it is required to create two separate revisions that will differ from each other by Material Phantom check box checked and by the fact that non-Material Phantom revision will not have a BOM assign.
 :::
+
+---
+
+Click [here](https://www.youtube.com/playlist?list=PLtT6kgaz5YncGTk3VHFvmdRqY6O9DE3F5) to see related videos.

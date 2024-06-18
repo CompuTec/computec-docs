@@ -27,14 +27,14 @@ This tile represents downtime – a period of a break in work brought on by acci
 You can check if any Items are set as Input or Output for a specific Operation.
 
 <details>
-    <summary>Click here to expand</summary>
-    <div>
-        Defining Input/Output Items:
-
-        Path: `Production → Bill of Materials → Production Process → Operation Bind tab → Bind Operations`
-
-        ![Production Process](./media/task-activities/pdc-input-output.webp)
-    </div>
+<summary>Click here to expand</summary>
+<div>
+Defining Input/Output Items:
+:::info Path
+Production → Bill of Materials → Production Process → Operation Bind tab → Bind Operations
+:::
+![Production Process](./media/task-activities/pdc-input-output.webp)
+</div>
 </details>
 
 ![Operation Bind](./media/task-activities/pdc-operation-bind.webp)
@@ -53,7 +53,7 @@ Operation properties and related data are displayed here. These properties can b
 
 ![Operation Property](./media/task-activities/operation-property.webp)
 
-#### Operation Property assigning
+#### Operation Property Assigning
 
 :::info Path
     Production → Routings → Operations → Properties tab
@@ -113,7 +113,7 @@ Resource Properties and data connected to them are displayed here. Resource Prop
 
 ![Resource Property](./media/task-activities/resource-property.webp)
 
-#### Resource Property assigning
+#### Resource Property Assigning
 
 :::info Path
     Production → Routings → Resources

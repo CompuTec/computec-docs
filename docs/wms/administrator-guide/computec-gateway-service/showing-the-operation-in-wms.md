@@ -9,6 +9,8 @@ sidebar_position: 6
 - We choose a supplier
 - We choose an index that we will weigh.
 
+Click [here](https://www.youtube.com/watch?v=FgMWdGypw7s) to know more about Weight Scales Operation.
+
 1. The green field displays the net weight and the blue field shows the gross weight.
 
     ![Fields](./media/1.webp)

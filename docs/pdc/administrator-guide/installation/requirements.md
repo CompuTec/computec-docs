@@ -26,6 +26,18 @@ This document provides information on a system environment that CompuTec PDC req
     </details>
 
     We recommend installing the latest version of .NET Framework – you can do it using the dedicated tool Windows Update or manually downloading the required files from the Microsoft site.
+
+    | Microsoft .NET Framework 4.7 (Web Installer) | [Link](https://support.microsoft.com/en-au/topic/the-net-framework-4-7-web-installer-for-windows-54cca588-519d-5e78-ea54-2ce5bd84a2ab) |
+    | --- | --- |
+    | Microsoft .NET Framework 4.7 (Web Installer) | [Link](https://support.microsoft.com/en-us/topic/the-net-framework-4-7-offline-installer-for-windows-f32bcb33-5f94-57ce-6120-62c9526a91f2) | 
+:::
+
+:::info
+CompuTec PDC requires SAP Business One installation on a minimal version required by a specific CompuTec PDC version. You can check this on the Download page in the column Database / ProcessForce API related version.
+
+You have to install the same version of SAP Business One DI API, SAP Crystal Reports runtime engine, CompuTec ProcessForce API, and CompuTec PDC, either 32-bit or 64-bit. 64-bit version is recommended.
+
+CompuTec PDC does not require SAP Business One client.
 :::
 
 ## Steps required to perform before installation of CompuTec PDC

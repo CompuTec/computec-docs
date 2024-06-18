@@ -12,6 +12,8 @@ Here, you can find information on scenario definition.
 
 The 'Add new view' function is used to define scenarios. It It allows to filter elements displayed on the Gantt chart, to display just specific ones. It is possible to divide Resources into Departments, types of machines.
 
+Click[here](https://www.youtube.com/watch?v=bGoJjbKHGg4) to know more.
+
 ## Change Scope Tabs
 
 It is possible to change the graph display view. Features are as follows:
@@ -58,6 +60,7 @@ It is possible to change the graph display view. Features are as follows:
         
         - **Table**:
         ![Current Task Flow vs Gantt Chart](./media/current-task-flow-vs-gantt-chart/image2020-9-14-23-1-13.png)
+        Click [here](https://www.youtube.com/watch?v=ohvXXmDyj5E) to know more.
 
 ## Display Details
 

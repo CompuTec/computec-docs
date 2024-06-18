@@ -25,7 +25,7 @@ Reporting Downtime is performed from a Task Tile (1). It is required to set a Do
 Adding a Downtime creates a Downtime tile available for the [Technician](../../administrator-guide/setting-up-the-application/overview.md#processforce-settings) chosen during creation and to [Supervisors](../../administrator-guide/setting-up-the-application/overview.md#processforce-settings):
 
 The User view:
-    
+
 ![User View](./media/downtime/user-view.webp)
 
 The Technician and Supervisor view:

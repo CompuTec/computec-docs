@@ -31,7 +31,9 @@ If blank, they can be manually added.
 
 To perform the rest of the Pick Receipt to Production Goods Receipt cycle, visit this page [Pick Receipt Bin Locations and Allocations](../inventory/pick-receipt-bin-locations-and-allocations.md).
 
-You can check how to create Pick Receipt for and Production Goods Receipt for Items managed by Batches here.
+You can check how to create Pick Receipt for and Production Goods Receipt for Items managed by Batches [here](../inventory/pick-receipt-for-a-batch-managed-items.md).
+
+To view video content related to this topic, click [here](https://www.youtube.com/playlist?list=PLtT6kgaz5Ync9BW5iceuweMlSu9E2D7Y2).
 
 ## Multiple Manufacturing Orders on Pick Receipt Warning
 
