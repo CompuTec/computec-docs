@@ -10,7 +10,7 @@ Here, you can find information on WMS Scanning Simulator – a simple but valuab
 
 ## Download
 
-<!-- [Download](./media/WMSScannerSymulator.zip) -->
+[WMSScanner 2.0.rar](https://download.computec.one/software/wms/tools/WMS_Scanning_Simulator.exe)
 
 Unzip the file and run it (it does not require installation).
 
@@ -30,3 +30,5 @@ An example usage of multi-part codes:
 Click [here](https://www.youtube.com/watch?v=yOKS1kHo3h0) to know more.
 
 An example usage of single and multi-part codes in GS1 standard:
+
+Click [here](https://www.youtube.com/watch?v=utDZYiQYdoI) to know more.
