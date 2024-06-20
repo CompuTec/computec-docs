@@ -68,7 +68,7 @@ You probably just installed the application, which is still not set up. Please c
 
 ## I have checked the information in the FAQ section and the rest of this documentation, but I still have no idea why my WMS instance does not work. What should I do?
 
-You should request CompuTec Support assistance by posting an issue within the Support WMS space at [support.computec.pl](https://support.computec.pl/projects/SWMS/welcome-guide). To shorten the problem-solving time needed by CompuTec consultants, you should follow the rules for creating an issue you can find here.
+You should request CompuTec Support assistance by posting an issue within the Support WMS space at [support.computec.pl](https://support.computec.pl/projects/SWMS/welcome-guide). To shorten the problem-solving time needed by CompuTec consultants, you should follow the rules for creating an issue you can find [here](../administrator-guide/issue-reporting/overview.md).
 
 ## Data is not displayed correctly
 
@@ -141,6 +141,8 @@ If this error occurs in a log file in this location: C:\ProgramData\CompuTec\Ser
 - CT_WMS_OCCT
 - CT_WMS_OVDA
 - CT_WMS_OWTT
+
+Click [here](https://www.youtube.com/watch?v=-1PYy9W3P3M) to check how to do this.
 
 ## The info icon does not work
 
