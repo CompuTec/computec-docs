@@ -25,10 +25,10 @@ Unzip the file and run it (it does not require installation).
 
     ![Multiple Elements](./media/multi-part.webp)
 
-An example usage of multi-part codes:
+**An example usage of multi-part codes**:
 
 Click [here](https://www.youtube.com/watch?v=yOKS1kHo3h0) to know more.
 
-An example usage of single and multi-part codes in GS1 standard:
+**An example usage of single and multi-part codes in GS1 standard**:
 
 Click [here](https://www.youtube.com/watch?v=utDZYiQYdoI) to know more.
