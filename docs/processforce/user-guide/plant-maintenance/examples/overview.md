@@ -211,7 +211,7 @@ Check [here](../field-description/maintenance-order-template.md).
 
 ## Maintenance Order Creation Schema
 
-Check [here](../field-description/maintenance-order-template.md#maintenance-order-template).
+Check [here](../field-description/maintenance-order-template.md).
 
 ## MO recording
 
