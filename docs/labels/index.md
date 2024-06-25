@@ -37,4 +37,4 @@ The solution is highly customizable and can be tailored to accommodate a wide ra
 
 ## Installation and Usage
 
-Here, you can watch a video with a comprehensive description of the [application's installation and options]((https://www.youtube.com/watch?v=S5urmvsi-M0))
+Here, you can watch a video with a comprehensive description of the [application's installation and options](https://www.youtube.com/watch?v=S5urmvsi-M0)
