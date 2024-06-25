@@ -4,21 +4,25 @@ sidebar_position: 1
 
 # Introduction to Labels
 
-Here, you can find basic, first-encounter information about the application. For more detailed information, please check the rest of the documentation.
+Welcome to the CompuTec Labels documentation space. On this page, you can find basic, first-encounter information about the application. For more detailed information, please check the rest of the documentation.
 
 ---
 
 ## What is it?
 
-CompuTec Labels is an application that efficiently manages printing templates and label printers in the company.
+CompuTec Labels is an multi-faceted solution that efficiently manages printing templates and label printers in the company. CompuTec Labels is an SAP Business One solution that allows you to manage all printing templates and label printers and make sure inventory is labelled exactly as it should be. Using CompuTec Labels, you can print documents from SAP Business One and CompuTec applications: CompuTec ProcessForce, CompuTec WMS and CompuTec PDC. Data included on printed labels can be predefined with a number of settings.
 
-We can manage many kinds of printers simultaneously, no matter what drivers it use: Crystal, Zebra, or Bixolon. You can assign specific templates to a particular printer and define an action that starts printing, e.g., adding/ updating a document or choosing the option manually.
+- Manage many kinds of printers simultaneously, no matter what drivers it use: Crystal, Zebra, or Bixolon.
+- Assign specific templates to a particular printer and define an action that starts printing, e.g., adding/ updating a document or choosing the option manually.
+- Pull real-time data from SAP Business One and other CompuTec solutions to create the labels you need
+- Automate label printing and set up very specific printing rules to define where, when and by whom labels can be printed
+- Ensure labelling consistency throughout the business
 
-Using CompuTec Labels, you can print documents from SAP Business One and CompuTec applications: CompuTec ProcessForce, CompuTec WMS and CompuTec PDC. Data included on printed labels can be predefined with a number of settings.
+The solution is highly customizable and can be tailored to accommodate a wide range of business processes.
 
 ## How does it work?
 
-- Installation and Configuration<!-- TODO: Link -->
+- [Installation and Configuration](./setup/overview.md)
 
 ---
 
@@ -33,8 +37,4 @@ Using CompuTec Labels, you can print documents from SAP Business One and CompuTe
 
 ## Installation and Usage
 
-Here, you can watch a video with a comprehensive description of the application's installation and options:
-
-<!-- TODO: Link -->
-
-You can also download the video. To do this, right-click here<!-- TODO: Link --> and choose `Save Link As...` option.
+Here, you can watch a video with a comprehensive description of the [application's installation and options]((https://www.youtube.com/watch?v=S5urmvsi-M0))

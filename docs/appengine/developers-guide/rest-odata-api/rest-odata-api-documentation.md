@@ -38,3 +38,7 @@ API usage examples in Postman:
         [ "<MO DocNum>"]
         }
         ```
+
+**API usage examples in Postman**
+
+To learn more, click the link [API usage examples in Postman](https://github.com/CompuTec/appengine-examples/tree/main/postman)
