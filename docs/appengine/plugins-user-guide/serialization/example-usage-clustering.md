@@ -125,9 +125,9 @@ If in the Rule you specify only the Item Group, the SPT selected in the Result S
 
 The clustering process is saved in a serialization document. This document is a subject to approval and verification. Serialization documents are visible in the WMS's Packing Hierarchy tile: [here](/docs/appengine/plugins-user-guide/serialization/fields-description#serialization-results).
 
-For testing purposes, you can use the scanner simulator available here: WMSScannerSymulator.exe.
+For testing purposes, you can use the scanner simulator available here: [WMSScannerSimulator.exe](https://download.computec.one/software/wms/tools/WMS_Scanning_Simulator.exe).
 
-For sample test data you can use the attached file: [SEC Clustering Test Case 09.01.2020 - 01.xlsx.]
+For sample test data you can use the attached file: [SEC Clustering Test Case 09.01.2020 - 01.xlsx.](https://download.computec.one/software/wms/tools/SEC_Clustering_Test_Case.xlsx).
 
 Attributes that have a GS1-ID defined must be preceded by it in the simulator, e.g. SEC - Purchase Order must be preceded (99).
 

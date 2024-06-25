@@ -1,3 +1,7 @@
+---
+sidebar_position: 14
+---
+
 # Empty Serial Numbers
 
 Here, you can find a description of managing Empty Serial Numbers Items through CompuTec WMS.

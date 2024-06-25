@@ -1,3 +1,7 @@
+---
+sidebar_position: 15
+---
+
 # FIFO/FEFO/FMFO queues
 
 Here, you can find a description of FIFO/FEFO/FMFO queues based on Batches, Serial Numbers, and Items managed neither by Batches nor Serial Numbers.

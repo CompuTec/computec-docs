@@ -1,3 +1,7 @@
+---
+sidebar_position: 13
+---
+
 # Catch Weight
 
 Catch Weight in CompuTec WMS refers to the ability to measure inventory using both inventory Unit of Measurement (IUoM) and document UoM (DUoM).
