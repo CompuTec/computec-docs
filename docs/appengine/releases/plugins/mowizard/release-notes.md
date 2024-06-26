@@ -4,7 +4,16 @@ sidebar_position: 1
 
 # Release Notes
 
-## MOWizard 1.10.11 - 17 October 2023
+## MOWizard 1.10.11 - 26 june 2024
+
+| Issue Type | Release Note | Related Issue |
+| --- | --- | --- |
+| Bug | Fixed issue with Document Series | - |
+| 
+
+---
+
+## MOWizard 1.10.10 - 17 October 2023
 
 | Issue Type | Release Note | Related Issue |
 | --- | --- | --- |
