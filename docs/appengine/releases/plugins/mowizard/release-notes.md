@@ -4,16 +4,24 @@ sidebar_position: 1
 
 # Release Notes
 
-## MOWizard 1.10.11 - 26 june 2024
+## MOWizard 1.10.12 - 26 june 2024
 
 | Issue Type | Release Note | Related Issue |
 | --- | --- | --- |
 | Bug | Fixed issue with Document Series | - |
-| 
+| Bug | Fixed issue with Progress bar - job is still in status Run: progress bar is not started (not visible) or finished. | - |
+| Bug | Fixed issue with Scheduling: Direction and Status, Scheduling Strategy and Childs non being editable. | - |
+| Improvement | Improved performance of Select All to Create \ Clear All Create Selections actions. | - |
+| Improvement | Item Group and Projects added to tables and filters. | - |
+| Improvement | Projects are now copied to MOR Proposals from source documents. | - |
+| Improvement | Progress bar added to consolidation. | - |
+| Improvement | Added number of selected documents to create in tab bar. Change selection to create | - |
+| Improvement | New Job was added that will recover not finished jobs in case of AppEngine restart | - |
+| Improvement | Percentage in Progress Bar includes also decimal part. | - |
 
 ---
 
-## MOWizard 1.10.10 - 17 October 2023
+## MOWizard 1.10.11 - 17 October 2023
 
 | Issue Type | Release Note | Related Issue |
 | --- | --- | --- |
