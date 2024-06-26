@@ -9,6 +9,16 @@ toc_max_heading_level: 2
 The latest installer is available to download fom [here](/docs/appengine/releases/appengine/download)
 :::
 
+## AppEngine 2.10.17.4 HF1
+
+### *Release Date - 26 June 2024*
+
+| Issue Type | Component/s | Release Note | Related issue/s |
+| - | - | - | - |
+| Bug | AE Launchpad | Fixed issue with choose language that prevented login to launchpad and administration panel. | - |
+
+---
+
 ## AppEngine 2.10.16.6 HF1
 
 ### *Release Date - 30 January 2024*
