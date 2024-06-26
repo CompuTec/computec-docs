@@ -9,6 +9,19 @@ toc_max_heading_level: 2
 The latest Installer is available to download from [here](/docs/appengine/releases/plugins/mrp/download).
 :::
 
+## MRP 1.10.12
+
+### *Release Date - 26 June 2024*
+
+| Issue Type | Release Note | Related issue/s |
+| --- | --- | --- |
+| Bug | Fixed Out of Memory issue that occurred for large results | SPROC-15909 |
+| Bug | Fixed issue: result =tab toggles between results tab and other tab | - |
+| Bug | Fixed issue with busy indicator not showing when loading data | - |
+| Bug | Fixed issue with saving scenario with code containing '/' characters. There is now validation in place that prevents from using this character as scenario code.  | - |
+
+---
+
 ## MRP 1.10.11
 
 ### *Release Date - 6 February 2024*
