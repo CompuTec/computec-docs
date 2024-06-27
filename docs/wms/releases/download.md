@@ -24,7 +24,7 @@ Here you can download all required CompuTec WMS files.
 
 ## Current Releases
 
-Released on 27.06.2024.
+Released on 
 
 :::warning
     Due to changes in the licensing mechanism in the 2.10.19 R3/2.9.19 R3 version, it is required to reassign terminal licenses to terminals after the upgrade.
