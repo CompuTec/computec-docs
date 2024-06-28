@@ -45,7 +45,7 @@ The user can decide whether to view Production Equipment Materials shortages or 
 
 ## Shortages Report
 
-To load the shortage report, the user needs to click on "Load" at the top of the Gantt chart, enter their SAP credentials, and provide the SLD address in the format "License server.port".
+To load the shortage report, the user needs to click on "Load" at the top of the Gantt chart, enter their SAP credentials, and provide the SLD address in the format "License server:port".
 
 ![Shortage Report](./media/material-shortage/shortage-report.png)
 
