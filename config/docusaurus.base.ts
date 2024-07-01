@@ -89,11 +89,6 @@ export default async function createBaseConfigAsync(
           content: "website",
         },
         {
-          name: "og:description",
-          content:
-            "Gain expert-level knowledge about CompuTec solutions for advanced manufacturing and logistics using our documentation and training resources.",
-        },
-        {
           name: "og:image",
           content: new URL(
             "/img/og-image.png",
