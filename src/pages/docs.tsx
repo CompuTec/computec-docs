@@ -8,7 +8,7 @@ export default function Docs(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
 
   return (
-    <Layout title="Documentation Center">
+    <Layout title="Documentation Center" description="Gain expert-level knowledge about CompuTec solutions for advanced manufacturing and logistics using our documentation and training resources.">
       <DocsHeader />
       <main>
         <DocsCards />
