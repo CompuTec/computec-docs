@@ -103,3 +103,9 @@
 .DocSearch-Logo .cls-2 {
   fill: var(--docsearch-logo-color);
 }
+
+img {
+  max-height: 60vh;
+  width: auto;
+  height: auto;
+}
