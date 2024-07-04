@@ -6,6 +6,10 @@ sidebar_position: 1
 
 An Inventory Transfer document in WMS can be generated from manually picked Items or Stock Transfer Requests. (An example Stock Transfer Request used in this guide is posted below).
 
+:::info
+Some forms' order and availability during a document's creation may vary depending on individual settings. Click [here](../../../administrator-guide/custom-configuration/overview.md) to find out more.
+:::
+
 1. To create a Stock Transfer, press the Stock Transfer in the main menu.
 ![Start](./media/WMS-StockTransfer.webp)
 
@@ -108,7 +112,7 @@ An Inventory Transfer document in WMS can be generated from manually picked Item
 
     ![To Bin](./media/ToBin.webp)
 
-    It is possible to set up a default Warehouse. In this case, the Warehouse Selection screen is skipped, and the Warehouse set as default is chosen automatically. It is still possible to go to the Warehouse selection form by clicking a left arrow icon on the Items selection screen.
+    It is possible to [set up a default Warehouse](../../starting.md#documents-tab). In this case, the Warehouse Selection screen is skipped, and the Warehouse set as default is chosen automatically. It is still possible to go to the Warehouse selection form by clicking a left arrow icon on the Items selection screen.
 
 14. The Put Items window will appear.
 
@@ -134,7 +138,7 @@ An Inventory Transfer document in WMS can be generated from manually picked Item
 
     ![Put Items](./media/PutItems.webp)
 
-20. The Remarks form will appear. Set Series and optionally Remarks. Click the Save button to save and post the document. (Click here to check how to set Inventory Transfer Request settings).
+20. The Remarks form will appear. Set Series and optionally Remarks. Click the Save button to save and post the document. (Click [here](../../../administrator-guide/custom-configuration/custom-configuration-functions/stock-transfer.md) to check how to set Inventory Transfer Request settings).
 
     ![Remarks](./media/Remarks_InvTrans.webp)
 

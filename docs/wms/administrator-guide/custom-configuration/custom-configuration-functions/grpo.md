@@ -32,6 +32,13 @@ sidebar_position: 1
 
 **Default Project** – if a default project is chosen, clicking the right arrow icon on the Project selection form is possible. A default project set up here will be selected automatically.
 
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
+    ![Default Project](./media/grpo/default-project.png)
+    </div>
+    </details>
+
 **Enable saving to drafts** – allows saving documents as document drafts.
 
     <details>
@@ -98,6 +105,8 @@ sidebar_position: 1
         - Draft document with negative quantity is not supported
         - Storage Unit does not support negative quantity. 
         ![Enable Negative Quantities](./media/grpo/enable-negative-quantities.PNG)
+        ![Enable Negative Quantities](./media/grpo/negative.png)
+        ![Enable Negative Quantities](./media/grpo/negative-01.png)
     </div>
     </details>
 

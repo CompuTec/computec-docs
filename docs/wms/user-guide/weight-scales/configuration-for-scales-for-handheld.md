@@ -9,7 +9,7 @@ sidebar_position: 3
     1. Open Windows Features
 
         ![Windows Features](./media/msmq.webp)
-2. Install the MSMQ package on the handheld devices with WMS:
+2. Install the [MSMQ package](https://download.computec.one/software/wms/tools/msmq.arm.cab) on the handheld devices with WMS:
 
     1. Connect the scanner to the PC
     2. Copy the package to the Application location along with CompuTec WMS.

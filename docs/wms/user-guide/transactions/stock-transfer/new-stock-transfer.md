@@ -5,7 +5,7 @@ sidebar_position: 3
 # New Stock Transfer
 
 :::info
-Some forms' order and availability during a document's creation may vary depending on individual settings. Click here to find out more.
+Some forms' order and availability during a document's creation may vary depending on individual settings. Click [here](../../../administrator-guide/custom-configuration/overview.md) to find out more about custom configuration.
 :::
 
 1. Click the Stock Transfer in the main menu to create a Stock Transfer.

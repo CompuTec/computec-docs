@@ -45,8 +45,8 @@ The following example is created using Microsoft Visual Studio.
     ![Driver](./media/weighting-device-drivers/new-driver-project.webp)
 2. Add dependencies to the provided libraries:
 
-    - Computec.WeightScale.dll<!-- TODO: Link -->
-    - CompuTec.ProcessForce.WeightScaleBase.dll<!-- TODO: Link -->
+    - [Computec.WeightScale.dll](https://download.computec.one/software/pdc/libraries/CompuTec.WeightScale.dll)
+    - [CompuTec.ProcessForce.WeightScaleBase.dll](https://download.computec.one/software/pdc/libraries/CompuTec.ProcessForce.WeightScaleBase.dll)
 3. Prepare a class of the drive:
 
     ![Class preparation](./media/weighting-device-drivers/class-preparation.webp)

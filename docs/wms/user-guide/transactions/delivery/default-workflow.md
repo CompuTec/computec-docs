@@ -4,10 +4,10 @@ sidebar_position: 4
 
 # Default Workflow
 
-The following description applies to the default Delivery workflow. Click here to check how to set a workflow for the Delivery document.
+The following description applies to the default Delivery workflow. Click [here](../../../administrator-guide/custom-configuration/custom-configuration-functions/delivery.md) to check how to set a workflow for the Delivery document.
 
 :::note
-    Some forms' order and availability during a document's creation may vary depending on individual settings. Click here to find out more.
+    Some forms' order and availability during a document's creation may vary depending on individual settings. Click [here](../../../administrator-guide/custom-configuration/overview.md) to find out more on custom configuration.
 :::
 
 1. Click the Delivery in the main menu to create a Delivery document.
@@ -31,7 +31,7 @@ The following description applies to the default Delivery workflow. Click here t
         This step may be skipped by clicking the right arrow icon. In this case, Source Warehouse will be available to choose from upon setting the Item details.
     :::
 
-    It is possible to set up a default Warehouse. In this case, the Warehouse Selection screen is skipped, and the Warehouse set as default is chosen automatically.
+    It is possible to [set up a default Warehouse](../../starting.md#documents-tab). In this case, the Warehouse Selection screen is skipped, and the Warehouse set as default is chosen automatically.
 3. The Customer Selection window will appear.
 
     Clicking a row of a Customer picks it and leads to another window.

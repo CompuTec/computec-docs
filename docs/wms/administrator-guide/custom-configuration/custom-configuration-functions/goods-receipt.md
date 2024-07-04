@@ -26,6 +26,12 @@ sidebar_position: 2
     </details>
 
 **Default Project** – if a default project is chosen, clicking the right arrow icon on the Project selection form is possible. A default project set up here will be chosen automatically.
+     <details>
+    <summary>Click here to expand</summary>
+    <div>
+    ![Default Project](./media/goods-receipt/default-project.png)
+    </div>
+    </details>
 
 **Enable saving to drafts** – allows saving documents as document drafts.
 

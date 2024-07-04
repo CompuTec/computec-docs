@@ -13,7 +13,7 @@ This document provides a step-by-step guide on how to install WMS Server and inf
 ---
 
 1. To run the CompuTec WMS desktop version, you must install the server and client modules.
-2. To install the server, download and run its installation file.
+2. To install the server, download and run its installation file. You can find it [here](../../../releases/download.md)
 
     :::caution
         If the CompuTec WMS Server is already installed on this computer, you can access the setup by running the CompuTecWMSServer.msi file. This allows you to change, repair, or remove the installation.
