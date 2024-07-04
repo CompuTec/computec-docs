@@ -7,7 +7,7 @@ sidebar_position: 1
 The Pick Order transaction allows generating a ProcessForce Production Issue.
 
 :::info
-Some forms' order and availability during a document's creation may vary depending on individual settings. Click here to find out more.
+Some forms' order and availability during a document's creation may vary depending on individual settings. Click [here](../../../administrator-guide/custom-configuration/overview.md) to find out more about custom configuration
 :::
 
 1. To create a Production Issue from a Pick Order, click Pick Order in the main menu.

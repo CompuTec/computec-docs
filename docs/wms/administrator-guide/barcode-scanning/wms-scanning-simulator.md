@@ -10,14 +10,14 @@ Here, you can find information on WMS Scanning Simulator – a simple but valuab
 
 ## Download
 
-[WMSScanner 2.0.rar](https://download.computec.one/software/wms/tools/WMS_Scanning_Simulator.exe)
+[Download the WMS Scanning Simulator](https://download.computec.one/software/wms/tools/WMS_Scanning_Simulator.exe).
 
 Unzip the file and run it (it does not require installation).
 
 ## Usage
 
 - The simulator can be run through a remote desktop, but only one user at a time can do this (unlike CompuTec WMS, which can be used by many users simultaneously).
-- The simulator can operate on one of the barcode standards supported by CompuTec WMS: GS1, Odette. Click here to find out more.
+- The simulator can operate on one of the barcode standards supported by CompuTec WMS: GS1, Odette. Click [here](../barcode-scanning/overview.md) to find out more.
 - You can scan an Item by its name or barcode.
 
     ![Item Name](./media/item-name-scan.webp)
@@ -27,8 +27,8 @@ Unzip the file and run it (it does not require installation).
 
 **An example usage of multi-part codes**:
 
-Click [here](https://www.youtube.com/watch?v=yOKS1kHo3h0) to know more.
+To learn more, watch the video: [An example usage of multi-part codes](https://www.youtube.com/watch?v=yOKS1kHo3h0).
 
 **An example usage of single and multi-part codes in GS1 standard**:
 
-Click [here](https://www.youtube.com/watch?v=utDZYiQYdoI) to know more.
+To learn more, watch the video:[An example usage of single and multi-part codes in GS1 standard](https://www.youtube.com/watch?v=utDZYiQYdoI).

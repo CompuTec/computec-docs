@@ -19,7 +19,7 @@ To avoid erasing CompuTec WMS and its configuration from the device on cold boot
 1. Download <!--[the file pack](./media/ColdBoot.rar)-->.
 2. Unpack it.
 3. Place the files in the "\application\" location on the device.
-4. Swap the "CompuTecWMSClientWindowsCE_93.CAB" file to a CompuTec WMS installer that you are using (e.g., "CompuTecWMSClientWindowsCE_10.0_2.10.8.1.CAB"). You can download the installers from here.
+4. Swap the "CompuTecWMSClientWindowsCE_93.CAB" file to a CompuTec WMS installer that you are using (e.g., "CompuTecWMSClientWindowsCE_10.0_2.10.8.1.CAB"). You can download the installers from [here](../../../releases/download.md).
 5. Change the installer name to "CompuTecWMSClientWindowsCE_93.CAB".
 
 If installation of .NET Compact Framework is required for a specific device, the following steps have to be performed:

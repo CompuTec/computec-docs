@@ -7,7 +7,7 @@ sidebar_position: 3
 Goods Issue documents the company's internal issue of Items or materials.
 
 :::info
-    Some forms' order and availability during a document's creation may vary depending on individual settings. Click here to find out more.
+    Some forms' order and availability during a document's creation may vary depending on individual settings. Click [here](../../administrator-guide/custom-configuration/overview.md) to find out more about custom configuration.
 :::
 
 ---
@@ -24,7 +24,7 @@ You can choose a Warehouse by scanning a code with a Warehouse prefix or without
 
 ![Warehouse](./media/goods-issue-warehouses.webp)
 
-It is possible to set up a default Warehouse. In this case, the Warehouse Selection screen is skipped, and the Warehouse set as default is chosen automatically.
+It is possible to [set up a default Warehouse](../starting.md#documents-tab). In this case, the Warehouse Selection screen is skipped, and the Warehouse set as default is chosen automatically.
 
 Click the menu icon and then the plus icon to add Items to the document.
 

@@ -15,6 +15,12 @@ sidebar_position: 3
     </details>
 
 **Default Project** – if a default project is chosen, clicking the right arrow icon on the Project selection form is possible. A default project set up here will be chosen automatically.
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
+        ![Default Project](./media/stock-transfer/default-project.png)
+    </div>
+    </details>
 
 **Scan DocNum on the Base Document selection window** – checking this option allows you to scan a document by Docnum, not by DocEntry.
 

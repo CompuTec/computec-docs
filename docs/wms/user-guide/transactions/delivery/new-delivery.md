@@ -25,7 +25,7 @@ Searching through the records is available in every window in which a Filter row
 This step can be skipped by clicking the right arrow icon. In this case, Source Warehouse can choose from setting Item details.
 :::
 
-It is possible to set up a default Warehouse. In this case, the Warehouse Selection screen is skipped, and the Warehouse set as default is chosen automatically.
+It is possible to [set up a default Warehouse](../../starting.md#documents-tab). In this case, the Warehouse Selection screen is skipped, and the Warehouse set as default is chosen automatically.
 
 - The Customer Selection window will appear.
 
