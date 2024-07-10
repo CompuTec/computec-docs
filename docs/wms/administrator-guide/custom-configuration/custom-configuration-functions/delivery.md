@@ -11,10 +11,12 @@ sidebar_position: 4
     <summary>Click here to expand</summary>
     <div>
     **Main Document Workflow**
-    ![Main Document Workflow](./media/return/main-document-workflow-01.PNG)
+
+    ![Main Document Workflow](./media/delivery/document-workflow.png) ![Main Document Workflow](./media/delivery/document-workflow-01.png)
 
     **Item Details Workflow**
-    ![Item Details Workflow](./media/return/item-details-workflow-01.PNG)
+
+    ![Item Details Workflow](./media/delivery/item-details-workflow.png) ![Item Details Workflow](./media/delivery/item-details-workflow-01.png)
     </div>
     </details>
 
@@ -27,10 +29,12 @@ However, when a user creates a Delivery document from a base document, for examp
     <summary>Click here to expand</summary>
     <div>
     Match any base document Line.
+
         ![Document Details](./media/document-details-04.png) ![Document Details](./media/document-details-05.png)
         ![Storage Unit](./media/storage-unit-01.png) ![Storage Unit](./media/storage-unit-02.png)
 
     Match selected Warehouse
+    
         ![Document Details](./media/document-details-06.png) ![Document Details](./media/document-details-07.png)
         ![Storage Unit](./media/storage-unit-03.png) ![Storage Unit](./media/storage-unit-04.png)
     </div>

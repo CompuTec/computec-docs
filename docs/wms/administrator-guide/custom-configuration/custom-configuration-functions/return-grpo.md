@@ -11,9 +11,12 @@ sidebar_position: 14
     <summary>Click here to expand</summary>
     <div>
     **Main Document Workflow**
-        ![Main Document Workflow](./media/return-grpo/main-document-workflow.PNG)
+
+        ![Main Document Workflow](./media/return-grpo/main-document-workflow.png) ![Main Document Workflow](./media/return-grpo/main-document-workflow-01.png)
+
         **Item Details WorkFlow**
-        ![Item Details Workflow](./media/return-grpo/item-details-workflow.PNG)
+
+        ![Item Details Workflow](./media/return-grpo/item-details-workflow.png) ![Item Details Workflow](./media/return-grpo/item-details-workflow-01.png)
     </div>
     </details>
 
@@ -22,8 +25,11 @@ sidebar_position: 14
     <summary>Click here to expand</summary>
     <div>
     By default, the option is switched off, and the Remarks window looks like this:
+
         ![Remarks Window](./media/return-grpo/remarks-window-01.png)
+
     When the option is switched on, the Remarks window looks like this:
+
         ![Remarks Window](./media/return-grpo/remarks-window-02.png)
     </div>
     </details>
@@ -45,7 +51,7 @@ sidebar_position: 14
 
 **Return Items only from the base document** – unchecking this checkbox allows creating a Return document based on any Items added to the list. Checking this option causes the Item list to be populated only by Items from the base document.
     <details>
-    <summary>Click here too expand</summary>
+    <summary>Click here to expand</summary>
     <div>
     ![Returns Operations](./media/return-grpo/returns-operations.png) ![Goods Return Operations](./media/return-grpo/goods-return-operations.png) ![Goods Receipt](./media/return-grpo/goods-receipt.png) ![Document Details](./media/return-grpo/document-details-03.png)
     </div>

@@ -9,9 +9,12 @@ sidebar_position: 13
     <summary>Click here to expand</summary>
     <div>
     **Main Document Workflow**
-        ![Main Document Workflow](./media/return/main-document-workflow-01.PNG)
+
+        ![Main Document Workflow](./media/return/main-document-workflow.png) ![Main Document Workflow](./media/return/main-document-workflow-01.png)
+
     **Item Details Workflow**
-        ![Item Details Workflow](./media/return/item-details-workflow-01.PNG)
+
+        ![Item Details Workflow](./media/return/item-details-workflow.png) ![Item Details Workflow](./media/return/item-details-workflow-01.png)
     </div>
     </details>
 
@@ -23,6 +26,7 @@ sidebar_position: 13
     <div>
     By default, the option is switched off, and the Remarks window looks like this:
         ![Draft](./media/return/draft-02.png)
+
     When the option is switched on, the Remarks window looks like this:
         ![Draft](./media/return/draft-03.png)
     </div>

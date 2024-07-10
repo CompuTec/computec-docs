@@ -28,7 +28,7 @@ sidebar_position: 3
     <details>
     <summary>Click here to expand</summary>
     <div>
-        ![Remarks Window](./media/remarks-window-03.png)
+        ![Remarks Window](./media/stock-transfer/remarks.png) ![Remarks Window](./media/stock-transfer/remarks-01.png)
     </div>
     </details>
 
@@ -38,7 +38,7 @@ sidebar_position: 3
     <details>
     <summary>Click here to expand</summary>
     <div>
-        ![Base Document](./media/document-details-08.png)
+        ![Base Document](./media/stock-transfer/document-details-01.png) ![Base Document](./media/stock-transfer/document-details-02.png)
     </div>
     </details>
 
@@ -47,9 +47,11 @@ sidebar_position: 3
     <summary>Click here to expand</summary>
     <div>
     **Before marked**
+
     ![Before Marked](./media/stock-transfer/before-marked.png) ![Before Marked](./media/stock-transfer/before-marked-01.png) ![Before Marked](./media/stock-transfer/before-marked-03.png) ![Before Marked](./media/stock-transfer/before-marked-04.png) ![Before Marked](./media/stock-transfer/before-marked-05.png)
 
     **After marked**
+
     ![After Marked](./media/stock-transfer/after-marked.png) ![After Marked](./media/stock-transfer/after-marked-01.png) ![After Marked](./media/stock-transfer/after-marked-02.png)
     </div>
     </details>
