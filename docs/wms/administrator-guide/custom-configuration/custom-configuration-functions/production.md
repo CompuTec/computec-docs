@@ -77,7 +77,7 @@ Enabling this option will disable the possibility of creating Storage Units on t
 
 To create a Receipt From Production, i.e., a Goods Receipt document, the user has to enter the line and then press the right arrow to enter the Remarks window:
 
-    ![Receipt from Production](./media/production/receipt-from-production.PNG)
+    ![Receipt from Production](./media/production/items-to-pick-receipt.png) ![Receipt from Production](./media/production/quantity.png)
 </div>
 </details>
 
@@ -106,7 +106,7 @@ When the checkbox is checked:
     <details>
     <summary>Block creation of new Pick Orders</summary>
     <div>
-    ![Pick Order](./media/production/pick-order.PNG)
+    ![Pick Order](./media/production/items-to-pick-order.png)
     </div>
     </details>
 

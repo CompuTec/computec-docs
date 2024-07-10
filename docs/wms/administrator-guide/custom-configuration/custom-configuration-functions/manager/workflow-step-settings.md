@@ -6,13 +6,15 @@ sidebar_position: 2
 
 There are seven transactions to choose from. Choose one from the drop-down list and click Load.
 
-- Delivery.
+1. Delivery.
 
     Three options are available:
       - Bin selection → Batch selection
       - Batch selection → Bin selection
       - Batch with Bin location
-- Goods Receipt PO
+
+2. Goods Receipt PO
+
   <details>
   <summary>Click here to expand</summary>
   <div>
@@ -31,8 +33,8 @@ There are seven transactions to choose from. Choose one from the drop-down list 
   ![GRPO](./media/workflow-step-settings/grpo-13.png)
   </div>
   </details>
+3. Goods Receipt
 
-- Goods Receipt
   <details>
   <summary>Click here to expand</summary>
   <div>
@@ -41,8 +43,7 @@ There are seven transactions to choose from. Choose one from the drop-down list 
   ![GRPO](./media/workflow-step-settings/grpo-14.png) ![GRPO](./media/workflow-step-settings/grpo-15.png) ![GRPO](./media/workflow-step-settings/grpo-16.png) ![GRPO](./media/workflow-step-settings/grpo-17.png)
   </div>
   </details>
-
-- Inventory Transfer
+4. Inventory Transfer
     There are three possible workflows for this transaction:
     1. Bin selection → Batch selection
     2. Batch selection → Bin selection
@@ -52,16 +53,18 @@ There are seven transactions to choose from. Choose one from the drop-down list 
     <summary>Click here to expand</summary>
     <div>
     **Examples**:
-    1. Bin selection → Batch selection
+      1. Bin selection → Batch selection
   
-    ![Bin Batch](./media/workflow-step-settings/bin-batch.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-01.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-02.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-03.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-04.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-05.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-06.png)
-    2. Batch selection → Bin selection
+        ![Bin Batch](./media/workflow-step-settings/bin-batch.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-01.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-02.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-03.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-04.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-05.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-06.png)
+
+      2. Batch selection → Bin selection
   
-    ![Bin Batch](./media/workflow-step-settings/bin-batch-07.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-08.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-09.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-10.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-11.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-12.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-13.png)
+        ![Bin Batch](./media/workflow-step-settings/bin-batch-07.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-08.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-09.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-10.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-11.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-12.png) ![Bin Batch](./media/workflow-step-settings/bin-batch-13.png)
     </div>
     </details>
 
-- Goods Issue
+5.Goods Issue
+
     There are three possible workflows for this transaction:
     1. Bin selection → Batch selection
     2. Batch selection → Bin selection
@@ -71,26 +74,30 @@ There are seven transactions to choose from. Choose one from the drop-down list 
     <summary>Click here to expand</summary>
     <div>
     **Examples**:
-    1. Bin selection → Batch selection.
+        1. Bin selection → Batch selection.
   
-    ![Goods Issue](./media/workflow-step-settings/goods-issue-01.png) ![Goods Issue](./media/workflow-step-settings/goods-issue-02.png) ![Goods Issue](./media/workflow-step-settings/goods-issue-03.png) ![Goods Issue](./media/workflow-step-settings/goods-issue-04.png) ![Goods Issue](./media/workflow-step-settings/goods-issue-05.png) ![Goods Issue](./media/workflow-step-settings/goods-issue-06.png) ![Goods Issue](./media/workflow-step-settings/goods-issue-07.png)
-    2. Batch selection → Bin selection.
+          ![Goods Issue](./media/workflow-step-settings/goods-issue-01.png) ![Goods Issue](./media/workflow-step-settings/goods-issue-02.png) ![Goods Issue](./media/workflow-step-settings/goods-issue-03.png) ![Goods Issue](./media/workflow-step-settings/goods-issue-04.png) ![Goods Issue](./media/workflow-step-settings/goods-issue-05.png) ![Goods Issue](./media/workflow-step-settings/goods-issue-06.png) ![Goods Issue](./media/workflow-step-settings/goods-issue-07.png)
+
+        2. Batch selection → Bin selection.
   
-    ![Batch Selection](./media/workflow-step-settings/batch-selection.png) ![Batch Selection](./media/workflow-step-settings/batch-selection-01.png) ![Batch Selection](./media/workflow-step-settings/batch-selection-02.png) ![Batch Selection](./media/workflow-step-settings/batch-selection-03.png) ![Batch Selection](./media/workflow-step-settings/batch-selection-04.png) ![Batch Selection](./media/workflow-step-settings/batch-selection-05.png) ![Batch Selection](./media/workflow-step-settings/batch-selection-06.png)
-    3. Batch with Bin location.
-    </div>
-    </details>
+          ![Batch Selection](./media/workflow-step-settings/batch-selection.png) ![Batch Selection](./media/workflow-step-settings/batch-selection-01.png) ![Batch Selection](./media/workflow-step-settings/batch-selection-02.png) ![Batch Selection](./media/workflow-step-settings/batch-selection-03.png) ![Batch Selection](./media/workflow-step-settings/batch-selection-04.png) ![Batch Selection](./media/workflow-step-settings/batch-selection-05.png) ![Batch Selection](./media/workflow-step-settings/batch-selection-06.png)
 
-- PF Pick Order
-  There are three possible workflows for this transaction:
-  1. Bin selection → Batch selection
-  2. Batch selection → Bin selection
-  3. Batch with Bin location (Batch number in a specific Bin location)
+        3. Batch with Bin location.
+      </div>
+      </details>
 
-  ![PFPO](./media/workflow-step-settings/pfpo.png)
+6.PF Pick Order
+
   <details>
-  <summary>Click here to Expand</summary>
+  <summary>Click here to expand</summary>
   <div>
+   There are three possible workflows for this transaction:
+      1. Bin selection → Batch selection
+      2. Batch selection → Bin selection
+      3. Batch with Bin location (Batch number in a specific Bin location)
+
+      ![PFPO](./media/workflow-step-settings/pfpo.png)
+  
   **Examples**:
     1. Bin selection → Batch selection.
   

@@ -10,7 +10,8 @@ sidebar_position: 11
     <details>
     <summary>Click here to find out more</summary>
     <div>
-        ![Batches](./media/batches.PNG)
+        ![Batches](./media/batches/warehouse-selection.png) ![Batches](./media/batches/batches-serials-02.png)
+        ![Batches](./media/batches/batches-serials-details.png) ![Batches](./media/batches/batch-details-udf.png)
     </div>
     </details>
 

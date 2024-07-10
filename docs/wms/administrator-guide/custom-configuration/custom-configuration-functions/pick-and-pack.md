@@ -11,10 +11,14 @@ sidebar_position: 5
     <summary>Click here to expand</summary>
     <div>
     **Customer Date Workflow**
-        ![Customer Date Workflow](./media/customer-date-workflow.PNG)
+
+        ![Customer Date Workflow](./media/pick-and-pack/customer-date-workflow.png) ![Customer Date Workflow](./media/pick-and-pack/customer-date-workflow-01.png)
+
     **Date-Customer WorkFlow**
-        ![Date-Customer WorkFlow](./media/date-customer-workflow.PNG)
+        ![Date-Customer WorkFlow](./media/pick-and-pack/date-customer-workflow.png) ![Date-Customer WorkFlow](./media/pick-and-pack/date-customer-workflow.png)
+
     **Default Workflow**
+
         ![Default Workflow](./media/default-workflow.png)
     </div>
     </details>
@@ -24,8 +28,11 @@ sidebar_position: 5
     <summary>Click here to expand</summary>
     <div>
     **Before marked**
+
         ![Before Marked](./media/before-marked.png)
+
     **After marked**
+    
         ![After Marked](./media/after-marked.png)
     </div>
     </details>

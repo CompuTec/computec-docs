@@ -21,10 +21,15 @@ sidebar_position: 1
     <summary>Click here to find out more</summary>
     <div>
     Check the checkbox (1), choose a required transaction from a drop-down list, and click Load (3):
+
     ![Enable SQL Dimensions](./media/enable-sql-dimensions.png)
+
     Choose a required Dimension by clicking the related 'Open SQL':
+
     ![Choose Dimensions](./media/choose-dimensions.png)
+
     Put in your SQL query and click 'Save.'
+    
     ![SQL Query](./media/sql-query.png)
 </div>
 </details>

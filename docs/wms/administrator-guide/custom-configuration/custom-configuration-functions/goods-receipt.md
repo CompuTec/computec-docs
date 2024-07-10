@@ -11,8 +11,11 @@ sidebar_position: 2
     <summary>Click here to expand</summary>
     <div>
     **Main Document Workflow**
+
     ![Quantity](./media/goods-receipt/quantity-03.png) ![Document Details](./media/goods-receipt/document-details-03.png)
+
     **Item Details WorkFlow**
+    
     ![Quantity](./media/goods-receipt/quantity-04.png) ![Storage Info](./media/goods-receipt/storage-info.png)
     </div>
     </details>

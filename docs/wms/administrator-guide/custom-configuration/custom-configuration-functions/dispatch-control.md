@@ -26,7 +26,7 @@ sidebar_position: 6
     <details>
     <summary>Click here to expand</summary>
     <div>
-    ![Check Quantity](./media/check-quantity.PNG)
+    ![Check Quantity](./media/dispatch-control/document-details.png) ![Check Quantity](./media/dispatch-control/bp-part-number.png)
     </div>
     </details>
 
@@ -38,7 +38,7 @@ sidebar_position: 6
     <details>
     <summary>Click here to expand</summary>
     <div>
-        ![BP Part Number](./media/bp-part-number.png)
+        ![BP Part Number](./media/bp-part-number.png) ![BP Part Number](./media/dispatch-control/bp-part-number-01.png)
     </div>
     </details>
 

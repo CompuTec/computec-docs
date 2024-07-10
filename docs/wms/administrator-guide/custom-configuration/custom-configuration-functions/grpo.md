@@ -12,12 +12,12 @@ sidebar_position: 1
     <summary>Click here to expand</summary>
     <div>
     **Main Document Workflow**
-    ![Quantity](./media/grpo/quantity.png)
-    ![Document Details](./media/grpo/document-details.png)
+
+    ![Quantity](./media/grpo/quantity.png) ![Document Details](./media/grpo/document-details.png)    
 
     **Item Details Workflow**
-    ![Quantity](./media/grpo/quantity-01.png)
-    ![Storage Info](./media/grpo/storage-info.png)
+
+    ![Quantity](./media/grpo/quantity-01.png) ![Storage Info](./media/grpo/storage-info.png)
     </div>
     </details>
 
@@ -26,7 +26,7 @@ sidebar_position: 1
     <details>
     <summary>Click here to expand</summary>
     <div>
-    ![Project Selection](./media/grpo/project-selection.PNG)
+    ![Project Selection](./media/grpo/document-details-02.png) ![Project Selection](./media/grpo/project-selection-01.png)
     </div>
     </details>
 
@@ -68,7 +68,10 @@ sidebar_position: 1
     <summary>Click here to expand</summary>
     <div>
     Example
-        ![Example](./media/grpo/example.PNG)
+
+        ![Example](./media/grpo/goods-receipt-po-operations.png) ![Order Selection](./media/grpo/order-selection.png)
+        ![Document Details](./media/grpo/document-details-03.png) ![Document Details](./media/grpo/document-details-04.png)
+        ![Items Document](./media/grpo/items-document.png) ![Items Document](./media/grpo/items-document-01.png)
     </div>
     </details>
 
@@ -81,7 +84,7 @@ sidebar_position: 1
     <details>
     <summary>Click here to expand</summary>
     <div>
-    ![Warehouse](./media/grpo/warehouse.PNG)
+    ![Warehouse](./media/grpo/document-details-05.png) ![Warehouse](./media/grpo/warehouse-02.png)
     </div>
     </details>
 
@@ -104,7 +107,8 @@ sidebar_position: 1
         - Line with 0 quantity will not be added to the SAP document
         - Draft document with negative quantity is not supported
         - Storage Unit does not support negative quantity. 
-        ![Enable Negative Quantities](./media/grpo/enable-negative-quantities.PNG)
+
+        ![Enable Negative Quantities](./media/grpo/document-details-06.png) ![Enable Negative Quantities](./media/grpo/new-item-01.png) ![Enable Negative Quantities](./media/grpo/quantity-04.png) ![Enable Negative Quantities](./media/grpo/quantity-05.png)
         ![Enable Negative Quantities](./media/grpo/negative.png)
         ![Enable Negative Quantities](./media/grpo/negative-01.png)
     </div>
@@ -118,9 +122,11 @@ sidebar_position: 1
     <summary>Click here to expand</summary>
     <div>
     When the option is enabled:
+
         ![Tax Date](./media/grpo/tax-date.png)
     
     The Tax Date is saved to the highlighted field of a document:
+
         ![Document Date](./media/grpo/document-date.jpg)
     </div>
     </details>
@@ -134,7 +140,7 @@ sidebar_position: 1
     <details>
     <summary>Click here to expand</summary>
     <div>
-    ![Supplier Reference No.](./media/grpo/supplier-ref-no.PNG)
+    ![Supplier Reference No.](./media/grpo/supplier-ref.png)
     </div>
     </details>
 
