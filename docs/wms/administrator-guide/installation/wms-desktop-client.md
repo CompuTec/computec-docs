@@ -12,7 +12,7 @@ This document provides a step-by-step guide on how to install the CompuTec WMS d
 
 ---
 
-1. To install the CompuTec WMS desktop client, download and run its installation file – you can find it [here](../../releases/download.md) or download it directly to your end device (click here to find out more).
+1. To install the CompuTec WMS desktop client, download and run its installation file – you can find it [here](../../releases/download.md) or download it directly to your end device (click [here](../../releases/download.md) to find out more).
 2. In the window that appears, click the "Next" button after reading the message about installation preparation:
 
     ![Client Installation](./media/client-installation.webp)

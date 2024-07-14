@@ -44,7 +44,7 @@ Stock Counting: automatically choose Bin Location on Batch scanning – automati
 
 Mark updated rows as counted during Stock Counting – self-explanatory
 
-Hide In Warehouse Quantity Information – hides quantities on the Item lines (click here to learn more).
+Hide In Warehouse Quantity Information – hides quantities on the Item lines (click [here](#information-on-the-item-lines) to learn more).
 
 ## Usage
 

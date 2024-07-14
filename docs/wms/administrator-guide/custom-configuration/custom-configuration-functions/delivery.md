@@ -92,7 +92,7 @@ However, when a user creates a Delivery document from a base document, for examp
 
 **Hide Customer Ref. No. for Delivery from the base document** – checking this option causes the customer Ref. No. field to be hidden in the Remarks form. (On Delivery transactions, when a user creates a document from a base document, a Customer Ref. No. on the document is filled in from the base documents. If more than one base document is used for a transaction, then the first non-empty Customer Ref. No. is used).
 
-**Use Sales UoM from Base Document** – checking this option displays quantities in Unit of Measure from the Base Document (while still operating on the actual quantities). Saving as document drafts is not possible when this option is turned on. Click here to find out more.
+**Use Sales UoM from Base Document** – checking this option displays quantities in Unit of Measure from the Base Document (while still operating on the actual quantities). Saving as document drafts is not possible when this option is turned on. Click [here](../../../user-guide/managing-uom-in-computec-wms.md) to find out more.
 
 **Display SU Only With Item From Base Document** – self-explanatory
 

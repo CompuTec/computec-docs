@@ -46,13 +46,13 @@ This document provides a step-by-step guide on how to install WMS Server and inf
     5. Server Type: HANA or MSSQL 20XX.
     6. Here, you can choose the barcode decoding type:
 
-        - CompuTec – CompuTec WMS adapted GS1 standard. Click here to find out more
-        - Odette – Odette standard. Click here to find out more.
+        - CompuTec – CompuTec WMS adapted GS1 standard. Click [here](../../barcode-scanning/overview.md#gs1-standard---computec-decoder) to find out more
+        - Odette – Odette standard. Click [here](../../barcode-scanning/overview.md#odette-standard) to find out more.
         - Custom – Barcode interpreter without prefixes and with custom ones.  Click [here](../../barcode-scanning/overview.md#gs1-standard---computec-decoder) to find out more.
     7. Close inactive WMS session after (min) Time, after which a user is logged out from CompuTec WMS (in minutes).
     8. SAP Business One Password.
     9. WMS Server Port.
-    10. Related to SSL connection. Click here to find out more.
+    10. Related to SSL connection. Click [here](ssl-connection.md) to find out more about SSL connection.
     11. Checking this option restarts a good service on losing CompuTec WMS to SAP Business One or a database connection. The option requires further setting up to be available to use.
         <details>
         <summary>Click here to find out more</summary>

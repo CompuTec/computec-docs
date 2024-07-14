@@ -143,14 +143,181 @@ After upgrading to this version, user credentials for Background Processing need
 
 | Issue Type | Component/s | Release Note | Related issue/s |
 | - | - | - | - |
-| Improvement | Architecture | AppEngine now allows for managing variants: click here to expand | - |
-| Improvement | Architecture | Companies that require an update are now marked with Button Update Required. This is important, especially after upgrading AppEngine. <br/><br/>This structure allows managing custom VariantQuerySources: <br/>click here to expand| - |
+| Improvement | Architecture | AppEngine now allows for managing variants. Code below [1] | - |
+| Improvement | Architecture | Companies that require an update are now marked with Button Update Required. This is important, especially after upgrading AppEngine. <br/><br/>This structure allows managing custom VariantQuerySources. Code below [2]| - |
 | Improvement | Configuration | It is now possible to define preinstalled Variants and their Sources inside the plugin. | - |
 | Improvement | Plugins | The User Authorizations for build-in standard analytical variants are now added during the plugin database update. | - |
 | Bug | Configuration | The Choose company option is shown while logging in to AppEngine from SAP Business One. | - |
 | Bug | OData | String values in filter parameters are parsed as dates in some cases. | - |
 | Bug | Plugins| An error occurs upon the first installation of a plugin in specific cases. | - |
 
+<details>
+<summary>Click here to view Code [1]</summary>
+<div>
+```text
+### add new variant
+POST http://{{AE_Address}}:{{AE_Port}}/api/Launchpad/Variant
+Content-Type: application/json
+
+{
+    "U_PluginId": "CompuTec.AppEngine.MO360",
+    "U_ViewId": "MORTransactionsReportNew",
+    "U_Name": "Sandard",
+    "U_SourceGuid": "cba8c775-34ce-4a42-b8d6-f6eccdb47ff5",
+    "U_Default": "Yes",
+    "U_IsPublic": "Yes",
+    "U_UserFilter": "string",
+    "U_Definition": {
+        "columns": [
+            {
+                "ColId": "DocNum",
+                "Visible": true,
+                "Name": "documentNumber",
+                "Order": 0
+            },
+            {
+                "ColId": "DocDate",
+                "Visible": true,
+                "Name": "documentDate",
+                "Order": 1
+            },
+            {
+                "ColId": "Quantity",
+                "Visible": true,
+                "Name": "quantity",
+                "Order": 2
+            }
+        ]
+    }
+}
+
+### get variant list for plugin and view id
+
+GET http://{{AE_Address}}:{{AE_Port}}/api/Launchpad/Variants/CompuTec.AppEngine.MO360/MORTransactionsReportNew
+
+### get one variant
+
+GET http://{{AE_Address}}:{{AE_Port}}/api/Launchpad/Variant/79d13aab-3d38-4c02-a85e-12fc6c5fe61c
+
+### update
+
+PUT http://{{AE_Address}}:{{AE_Port}}/api/Launchpad/Variant/79d13aab-3d38-4c02-a85e-12fc6c5fe61c
+Content-Type: application/json
+
+{
+    "U_PluginId": "CompuTec.AppEngine.MO360",
+    "U_ViewId": "MORTransactionsReportNew",
+    "U_Name": "Standard 3",
+    "U_Default": "Yes",
+    "U_IsPublic": "Yes",
+    "U_UserFilter": "string",
+    "U_Definition": {
+        "columns": [
+            {
+                "ColId": "DocNum",
+                "Visible": true,
+                "Name": "documentNumber",
+                "Order": 0
+            },
+            {
+                "ColId": "DocDate",
+                "Visible": true,
+                "Name": "documentDate",
+                "Order": 1
+            },
+            {
+                "ColId": "Quantity",
+                "Visible": true,
+                "Name": "quantity",
+                "Order": 2
+            }
+        ]
+    }
+}
+
+### DELETE http://{{AE_Address}}:{{AE_Port}}/api/Launchpad/Variant/79d13aab-3d38-4c02-a85e-12fc6c5fe61c
+
+    ```
+</div>
+</details>
+
+<details>
+<summary>Click here to view Code [2]</summary>
+<div>
+```text
+POST http://{{AE_Address}}:{{AE_Port}}/api/Launchpad/VariantSource
+Content-Type: application/json
+
+{
+    "U_PluginId": "CompuTec.AppEngine.MO360",
+    "U_Name": "MORTransationcsReport",
+    "U_Type": "View",
+    "U_Definition": {
+        "Fields": [
+            {
+                "fieldId": "DocNum",
+                "displayName": "documentNumber",
+                "type": "number",
+                "generateDatesParts": false,
+                "aggregable": false
+            },
+            {
+                "fieldId": "Quantity",
+                "displayName": "quantity",
+                "type": "number",
+                "generateDatesParts": false,
+                "aggregable": true
+            }
+        ]
+    }
+}
+
+### get variants sources list for plugin
+
+GET http://{{AE_Address}}:{{AE_Port}}/api/Launchpad/VariantsSources/CompuTec.AppEngine.MO360
+
+### Get all variant sources
+
+GET http://{{AE_Address}}:{{AE_Port}}/api/Launchpad/VariantsSources
+
+### get specific variant source
+
+GET http://{{AE_Address}}:{{AE_Port}}/api/Launchpad/VariantSource/375bb92c-062c-417a-9273-f826e5762ea0
+
+### update variant source
+
+PUT http://{{AE_Address}}:{{AE_Port}}/api/Launchpad/VariantSource/375bb92c-062c-417a-9273-f826e5762ea0
+Content-Type: application/json
+
+{
+    "U_PluginId": "CompuTec.AppEngine.MO360",
+    "U_Name": "MORTransationcsReport",
+    "U_Type": "View",
+    "U_Definition": {
+        "Fields": [
+            {
+                "fieldId": "DocNum",
+                "displayName": "documentNumber",
+                "type": "number",
+                "generateDatesParts": false,
+                "aggregable": false
+            },
+            {
+                "fieldId": "Quantity",
+                "displayName": "quantity",
+                "type": "number",
+                "generateDatesParts": false,
+                "aggregable": true
+            }
+        ]
+    }
+}
+
+### DELETE http://{{AE_Address}}:{{AE_Port}}/api/Launchpad/VariantSource/375bb92c-062c-417a-9273-f826e5762ea0
+
+    ```
+</div>
+</details>
 ---
 
 ## AppEngine 2.10.8.2

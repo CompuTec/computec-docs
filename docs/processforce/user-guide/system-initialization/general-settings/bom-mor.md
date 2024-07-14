@@ -57,7 +57,7 @@ Naming:
 
 ![Formulas](./media/bom-mor/bill-of-materials-formulas.webp)
 
-There are no default formulas set up for Yield. Click here to find out more about defining formulas for Yield.
+There are no default formulas set up for Yield. Click [here](../../formulations-and-bill-of-materials/formula.md#using-user-defined-fields-in-formulas) to find out more about defining formulas for Yield.
 
 ## Enable Synchronization
 

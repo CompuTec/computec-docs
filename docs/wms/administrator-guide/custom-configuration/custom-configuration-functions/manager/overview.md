@@ -36,7 +36,7 @@ sidebar_position: 1
 
 **Enable Batch Management Manager** – this option allows to define of FIFO behavior. Click [here](../../../custom-configuration/custom-configuration-functions/manager/batch-management-manager.md) to find out more.
 
-**Enable Semaphore** – this option allows to activation of the Semaphore option in chosen transactions. Click here to find out more.
+**Enable Semaphore** – this option allows to activation of the Semaphore option in chosen transactions. Click [here](semaphore.md) to find out how to activate Semaphore.
 
 **Document reservation time** – period of a document being reserved for a specific user. Click [here](../../../custom-configuration/custom-configuration-functions/manager/semaphore.md#settings) to find out more.
 
