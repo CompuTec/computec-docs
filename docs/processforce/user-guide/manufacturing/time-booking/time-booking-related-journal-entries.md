@@ -10,7 +10,7 @@ To automatically create Journal Entries related to work time of Resources, the f
 
 **Post Resource Confirmation**
 
-'Post resource confirmation' checkbox in General Settings has to be checked. Click here to find out more.
+'Post resource confirmation' checkbox in General Settings has to be checked. Click [here](../../system-initialization/general-settings/costing-tab.md) to find out more.
 
 **Resource Accounting**
 

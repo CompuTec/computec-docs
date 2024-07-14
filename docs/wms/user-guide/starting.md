@@ -47,7 +47,7 @@ Full screen for login panel – full screen mode for the login panel (even if th
 
 ![Document Tab](./media/application-settings-document.webp)
 
-Checking a specific checkbox displays the Warehouse Selection form of a particular transaction. If you want to use only one default warehouse, uncheck a checkbox for a required transaction and type in a required warehouse. Click here to find out more.
+Checking a specific checkbox displays the Warehouse Selection form of a particular transaction. If you want to use only one default warehouse, uncheck a checkbox for a required transaction and type in a required warehouse. Click [here](../administrator-guide/client-settings-warehouses/overview.md) to find out more.
 
 ### Saving Settings and logging in
 
@@ -61,7 +61,7 @@ Click Save or Cancel on the General tab to save or discard changes. It leads bac
 
     ![Login](./media/wms-login.webp)
 2. Type in a terminal username and password or log in by scanning the Employee Badge.
-3. Click here to find out how to create a terminal user. Click a green icon or press Enter. If a terminal user has a barcode assigned, scanning the code logs in the user.
+3. Click [here](../administrator-guide/installation/wms-licensing.md) to find out how to create a terminal user. Click a green icon or press Enter. If a terminal user has a barcode assigned, scanning the code logs in the user.
 4. The main menu window appears.
 
 The desktop version of CompuTec WMS Client is ready to work with.

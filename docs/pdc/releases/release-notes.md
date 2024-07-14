@@ -257,7 +257,7 @@ toc_max_heading_level: 2
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
 | Improvement | Tasks | Add Task by Resource form: a possibility to multiselect  of Tasks | – |
-| Improvement | Weighing Process | New settings: Range from mode, Confirm each weighting, Is precision Weight Enabled for Weighting. Click here to find out more | – |
+| Improvement | Weighing Process | New settings: Range from mode, Confirm each weighting, Is precision Weight Enabled for Weighting. Click [here](../administrator-guide/setting-up-the-application/overview.md#processforce-settings) to find out more | – |
 | Bug | Configuration | Can not open Crystal Report - no connection to SYSTEM | - |
 | Bug | Pick and Pack | It is not possible to issue two or more Items with the same Item Code | – |
 | Bug | Pick and Pack, Weighing Process | ProcessForce Batches Status and logic supported in CompuTec PDC | SPDC-446 |
@@ -354,7 +354,7 @@ toc_max_heading_level: 2
 | Improvement | Pick and Pack | New block barcode prefix supported: Sequence + Operation (for identifying an Operation if there the operation is present on a Manufacturing Order more than once) | 2.93.12.1 (2.10.1.0), <br/>3.93.12.1 (3.10.1.0) | - |
 | Bug | Other | Weight Wizard: when the same Item is present more than one time in a Manufacturing Order, the document line cannot be identified properly (identifying only by Item Code). Now each line is identified by Sequence and Item Code | 2.93.12.1 (2.10.1.0), <br/>3.93.12.1 (3.10.1.0) | SPDC-343 |
 | Improvement | Other | Weight Wizard: more information on an Item when choosing it in the first step. There were: Item Code, Quantity; there is now: Sequence, Item Code, Item Description, Quantity | 2.93.12.1 (2.10.1.0), <br/>3.93.11.1 | SPDC-341 |
-| Improvement | Tasks | Downtime 2.0. Click here to find out more | 2.93.12.1 (2.10.1.0), <br/>3.93.12.1 (3.10.1.0) | - |
+| Improvement | Tasks | Downtime 2.0. Click [here](../user-guide/task-activities/downtime.md) to find out more | 2.93.12.1 (2.10.1.0), <br/>3.93.12.1 (3.10.1.0) | - |
 | Improvement | Time Booking | New main panel (and barcode) option: closing all of the Tasks present on the panel | 3.93.12.1 (3.10.1.0) | - |
 | Improvement | Configuration | AppEngine version: Confirmation Panel, new field: Total Quantity (total of Setup and Run Quantity) | 3.93.12.1 (3.10.1.0) | - |
 

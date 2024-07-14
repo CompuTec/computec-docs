@@ -13,7 +13,7 @@ There are two main ways to customize CompuTec PDC: Form Settings and Task Tile a
 ## Form Settings
 
 :::info
-    To use this option, it is required to activate it for a specific Employee on Employee Master Data. Click here to check how to do this.
+    To use this option, it is required to activate it for a specific Employee on Employee Master Data. Click [here](../../administrator-guide/setting-up-the-application/overview.md#requirements) to check how to do this.
 :::
 
 Thanks to this option, you can choose which columns are displayed on the following CompuTec PDC forms:

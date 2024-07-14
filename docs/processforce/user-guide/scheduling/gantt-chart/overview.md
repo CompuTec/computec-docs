@@ -165,7 +165,7 @@ You can expand or shrink the slider by clicking, holding, and moving its left or
 
 ![Resource Context Menu](./media/overview/resource-context-menu-2.webp)
 
-- Reschedule – allows rescheduling the Task to another Resource. Rescheduling requires an adequately configured Production Process. Define the Resource and its Alternative. Click here to check how to do this.
+- Reschedule – allows rescheduling the Task to another Resource. Rescheduling requires an adequately configured Production Process. Define the Resource and its Alternative. Click [here](../../scheduling/gantt-chart/alternative-resources.md) to check how to do this.
 
 - Divide – you can set to use more Resources to complete a Task.
 

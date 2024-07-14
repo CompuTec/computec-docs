@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Customer-Date Workflow
 
-The following description applies to the Customer-Date workflow. Click here to check how to choose a workflow for the Delivery document.
+The following description applies to the Customer-Date workflow. Click [here](default-workflow.md) to check how to choose a workflow for the Delivery document.
 
 **Customer-Date workflow** allows one to choose Customer first and then a specific date on completing the information on a document. This way, we can easily browse through documents for this Customer any day. This workflow is practical when we want instant access to information on which dates documents are planned for a specific Customer.
 

@@ -24,7 +24,7 @@ sidebar_position: 6
 
 **Check Quantity** – checks quantity by scanning a barcode. Moving to another step is impossible if the correct quantity is not scanned. If a user makes a mistake, they must click the x button and start counting again. Putting the amount manually is impossible; it works only by scanning.
     <details>
-    <summary>Click here to expand</summary>
+    <summary> to expand</summary>
     <div>
     ![Check Quantity](./media/dispatch-control/document-details.png) ![Check Quantity](./media/dispatch-control/bp-part-number.png)
     </div>

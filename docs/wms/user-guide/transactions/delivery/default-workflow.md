@@ -91,7 +91,7 @@ The following description applies to the default Delivery workflow. Click [here]
     Filling in a reference number field and a remarks field is optional. You can choose a document series (if it is set in a database).
 
     ![Remarks](./media/delivery-remarks-3.webp)
-14. You can save the document as a draft. Click here to check how to do that.
+14. You can save the document as a draft.
 15. Click the save icon to generate a delivery document.
 
     ![Saved](./media/delivery-saved.webp)

@@ -220,9 +220,9 @@ Here, you can check plugin performance related events, search the log and filter
 
 This section holds information on the whole AppEngine installation configuration with a possibility to edit some of the values.
 
-**Development** – plugin development-related settings. Click here to find out more
+**Development** – plugin development-related settings. Check AppEngine Developer's Guide to know more about plugin development-related settings.
 
-**SLD Servers** – here you can find settings from the SLD Servers section
+**SLD Servers** – here you can find settings from the [SLD Servers](#sld-servers) section
 
 **General** – here you can change i.a. a default attachment folder, default ports.
 

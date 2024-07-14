@@ -21,8 +21,8 @@ Here the following information can be defined:
 - Inventory UoM – Unit of Measure, e.g., kilogram
 - Alt UoM – alternative Unit of Measure
 - Quantity
-- Ingredient Template – a predefined list of ingredients. To get more information, click here
-- Category – an ingredient category. To get more information, click here
+- Ingredient Template – a predefined list of ingredients. To get more information, click [here](ingredient-and-nutrient-template.md)
+- Category – an ingredient category. To get more information, click [here](./ingredient-settings/ingredients-category.md)
 - Alt Code – alternative code, can be used as standard, scientific codes governed by law, e.,g. E number - codes assigned to substances that can be used as additives to food products within the European Union and Switzerland
 - Energy density – can be set in kCal units, a fixed value is automatically recalculated into kJ units.
 
