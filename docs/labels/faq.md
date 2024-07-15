@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# FAQ
+# FAQs
 
 ## Microsoft Print to PDF Printer Issue
 

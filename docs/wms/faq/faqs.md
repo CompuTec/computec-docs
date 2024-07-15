@@ -1,10 +1,14 @@
 ---
 sidebar_position: 1
+toc_min_heading_level: 2
+toc_max_heading_level: 2
 ---
 
-# Frequently Asked Questions
+# FAQs
 
-## I have installed WMS components, but it still does not work. What should I do?
+## Installed WMS, not working
+
+### <i>**What to do**</i>
 
 **1. Configuration**
 
@@ -44,29 +48,41 @@ sidebar_position: 1
 
     Check if CompuTec License Server and CompuTec WMS Server services are up. You can check it in Windows Services - Control Panel > Administrative Tools > Services.
 
-## I have installed the WMS application, but the trial period is about to expire. I have purchased a license. How can I obtain the license file?
+## Installed WMS, trial expiring
+
+### <i>**I have purchased a license. How can I obtain the license file?**</i>
 
 You should create an issue on the WMS Support page on support.computec to get the license you purchased [here](https://support.computec.pl/projects/SWMS/welcome-guide). Providing accurate information to CompuTec Support will shorten the response time; thus, please check what data are required – check [here](../administrator-guide/installation/wms-licensing.md).
 
-## I did not define any bins on any warehouses in my database. Will CompuTec WMS operate properly just in the warehouses?
+## No bins defined in warehouses
+
+### <i>**Will CompuTec WMS still operate properly?**</i>
 
 Yes. CompuTec WMS can operate on bins in the warehouse. However, defining bins is not required for the proper work of the application.
 
-## Illegal value entered communication on document creation
+## Illegal value error on document creation
+
+### <i>**How do I fix it?**</i>
 
 ![Illegal value entered](./media/Illegal_value_entered.webp)
 
 One reason may be a lack of Item Details defined for a specific Item Master Data. Perform the Restore Item Details procedure to fix it. Click [here](../administrator-guide/installation/sap-business-one-settings/item-details-restore.md) to find out more.
 
-## The WMS database is not installed. Please make sure all prerequisites are met in communication
+## WMS database not installed
+
+### <i>**Ensure all prerequisites are met**</i>
 
 CompuTec WMS User Define Objects are not installed on a specific SAP Business One database. To fix it, please install UDOs. You can check how to do this [here](../administrator-guide/installation/wms-server/overview.md#computec-wms-server-automatic-restart).
 
-## Configuration file not found. Please use the settings window for communication
+## Configuration file not found
+
+### <i>**Please use the settings window for communication**</i>
 
 You probably just installed the application, which is still not set up. Please check [this link](../administrator-guide/installation/wms-server/overview.md) to find out more.
 
-## I have checked the information in the FAQ section and the rest of this documentation, but I still have no idea why my WMS instance does not work. What should I do?
+## Checked FAQ and docs, WMS still not working
+
+### <i>**What should I do?**</i>
 
 You should request CompuTec Support assistance by posting an issue within the Support WMS space at [support.computec.pl](https://support.computec.pl/projects/SWMS/welcome-guide). To shorten the problem-solving time needed by CompuTec consultants, you should follow the rules for creating an issue you can find [here](../administrator-guide/issue-reporting/overview.md).
 
@@ -102,7 +118,9 @@ This system message appears upon attempts to install the CompuTec WMS object on 
 4. Paste the previously copied text and save the configuration.
 5. Retry to Install CompuTec WMS objects (check here how to do this).
 
-## Error message: Error when installing CompuTec WMS objects. Please check the logs for details
+## Error installing CompuTec WMS objects
+
+### <i>**Please check the logs for details**</i>
 
 ### Prerequisites
 
@@ -119,7 +137,9 @@ A CompuTec WMS installation on a “fresh” database (without previous CompuTec
 
 Restart the server or try to install the CompuTec WMS objects again.
 
-## PF Database Version is not supported. Please update the Database or Reinstall the API.Setup
+## PF Database Version not supported
+
+### <i>**Update Database or Reinstall API.Setup**</i>
 
 ### Cause
 
@@ -134,7 +154,7 @@ You can either:
 
 For the mentioned installers, check the [Download](/docs/processforce/releases/download) page.
 
-## System.Exception: :Error: Internal error (-10) occurred:Error: Internal error (-10) occurred:Error: Internal error (-10) occurred error in a log file
+## System.Exception: Error: Internal error (-10) occurred
 
 If this error occurs in a log file in this location: C:\ProgramData\CompuTec\ServiceManager\Logs, it is required to register the following objects in a related database manually:
 
@@ -162,7 +182,7 @@ The error has been fixed in the 2.10.9 version.
 
 In previous versions, please download this file, unpack it, and place (the whole folder) in the following directory: C:\ProgramData.
 
-## Error. Please install SAP HANA ODBC Driver / ODBC 13 for SQL Server first
+## Install SAP HANA ODBC Driver / ODBC 13 for SQL Server first
 
 ### Reproduction
 
@@ -179,7 +199,7 @@ After pressing "Save" or "Refresh" on WMS Server Settings, it is checked whether
 
 A proper Exception/Error is shown in the ServiceManager Log when one of the above drivers is missing.
 
-## Motorola MC65: problem with scanning with RDP and DataWedge
+## Motorola MC65 issue: scanning with RDP and DataWedge
 
 ### Example
 
