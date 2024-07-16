@@ -10,4 +10,4 @@ Be sure to [set up](../setup/overview.md) the application before starting work w
 
 In this section, specific printing scenarios, based on particular examples, are presented.
 
-A video with a few scenarios performed, and a description of each step is available here<!-- TODO: Video link -->.
+A video with a few scenarios performed, and a description of each step is available [here](https://www.youtube.com/watch?v=S5urmvsi-M0).

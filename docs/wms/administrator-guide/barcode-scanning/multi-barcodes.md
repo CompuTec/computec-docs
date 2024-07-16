@@ -20,7 +20,7 @@ The barcodes used as examples on this page were generated using [this tool](http
 
 We are receiving an Item with its Batch and quantity (and, optionally, with additional information by using [Custom Configuration](../custom-configuration/overview.md) -> Workflow Step Settings or [UDF Manager](../custom-configuration/custom-configuration-functions/manager/udf-manager.md)).
 
-VIDEO
+To learn more, watch the video: [Manually installing an Object in SAP Business One](https://www.youtube.com/watch?v=-1PYy9W3P3M)
 
 These are the minimum of the information that has to be contained in a barcode for the Item to be added to the list with one scanning (e.g. on Document Details) without additional opening its row and updating information:
 

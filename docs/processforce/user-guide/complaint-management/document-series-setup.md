@@ -14,4 +14,4 @@ In this example, there are document series for each Compliant Type:
 
 ![Complaint Series Setup](./media/document-series-setup/complaint-series-setup.webp)
 
-To view related video content, click [here](https://www.youtube.com/watch?v=qmcf-uwU_Ok).
+To learn more, watch the video [Complaint Management - Creating a Document Series](https://www.youtube.com/watch?v=qmcf-uwU_Ok).

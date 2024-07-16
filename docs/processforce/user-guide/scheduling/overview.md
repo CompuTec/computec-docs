@@ -14,7 +14,7 @@ ProcessForce scheduling solution allows to manage Manufacturing Orders within th
 
 Click [here](../routings/resources.md) to find out more about resources and how to set them.
 
-To view related videos, click [here](https://www.youtube.com/playlist?list=PLtT6kgaz5YneralBjyvyCSYXbTT0QRHYx).
+To view related videos on Resources, click [here](https://www.youtube.com/playlist?list=PLtT6kgaz5YneralBjyvyCSYXbTT0QRHYx).
 
 ![Resources](./media/overview/resource-main.png)
 

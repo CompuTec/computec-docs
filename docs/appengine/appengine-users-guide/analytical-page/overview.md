@@ -12,7 +12,7 @@ In the following manual, the MO360 plugin has been used.
 
 ---
 
-Click [here](https://www.youtube.com/watch?v=qXK2dS_9z3g) for a video demonstration.
+Click [here](https://www.youtube.com/watch?v=qXK2dS_9z3g) for a video demonstration on Manufacturing Order 360 Analytical Page.
 
 ---
 
