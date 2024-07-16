@@ -10,7 +10,7 @@ In this form, you can set all the details needed to create a Complaint, among ot
     Complaints → Complaint
 :::
 
-To view related video content, click [here](https://www.youtube.com/watch?v=8TnHJo3e7cg)
+To learn more, watch the video [Complaint Management](https://www.youtube.com/watch?v=8TnHJo3e7cg).
 
 ---
 

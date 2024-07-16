@@ -6,7 +6,7 @@ sidebar_position: 6
 
 Catch Weight in CompuTec WMS refers to the ability to measure inventory using both inventory Unit of Measurement (IUoM) and document UoM (DUoM).
 
-You can watch an introduction video [here](https://www.youtube.com/watch?v=XGptQ9TQ90U).
+You can watch an introduction video about Catch Weight [here](https://www.youtube.com/watch?v=XGptQ9TQ90U).
 
 ---
 
@@ -80,7 +80,7 @@ When recording a number of entries, in this case, it is suggested to check the [
 
 ### Recording Total Quantity for Different DUoMs of Different Quantity
 
-In the [video](https://www.youtube.com/watch?v=HHxk_J8FX1E), you can see the CompuTec WMS with Catch Weight option on behavior when recording ten packages (pcs) with weights ranging from 9,21 to 11,45 (even though the DUoM is set to 10). The transaction used in this example is Goods Receipt PO from Purchase Order.
+In this [video](https://www.youtube.com/watch?v=HHxk_J8FX1E), you can see the CompuTec WMS with Catch Weight option on behavior when recording ten packages (pcs) with weights ranging from 9,21 to 11,45 (even though the DUoM is set to 10). The transaction used in this example is Goods Receipt PO from Purchase Order.
 
 Note that the check button on the quantity form does not work with Catch Weight. After setting up the units, click back to Document Details, and choose a required item row, the right arrow, and the Save icon (as shown at the end of the video).
 

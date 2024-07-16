@@ -8,7 +8,7 @@ Welcome to the CompuTec PDC Documentation. PDC stands for Plant Data Capture: th
 
 This is a basic tutorial. You will be installing and starting the application, setting it up, and creating tasks for a specific resource.
 
-Click [here](https://youtu.be/tEq31we9jdo) to check the introduction video.
+Click [here](https://youtu.be/tEq31we9jdo) to check the introduction video on PDC.
 
 ## Getting Started
 

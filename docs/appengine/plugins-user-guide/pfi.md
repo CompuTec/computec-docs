@@ -6,7 +6,7 @@ sidebar_position: 8
 
 PFI (short for ProcessForce Import) is a plugin that allows importing/updating data to ProcessForce objects. The idea behind this plugin is to be a simplifier, swifter, and more adjustable alternative for [PowerShell updates](/docs/processforce/developer-guide/data-import/overview/).
 
-Click [here](https://www.youtube.com/watch?v=MSreLSZC8DU) to know more about CompUtec PFI.
+Click [here](https://www.youtube.com/watch?v=MSreLSZC8DU) to know more about CompuTec PFI.
 
 (The video was recorded on a pre-release version and the interface differs slightly in the released version.)
 

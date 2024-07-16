@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ProcessForce provides a solution that allows managing complaints from customers, suppliers, or internal departments. It allows recording, analyzing, and starting action upon complaints, among other things.
 
-To view related video content, click [here](https://www.youtube.com/watch?v=3oGbHH8YThY).
+To learn more, watch the introduction  on [Complaint Management](https://www.youtube.com/watch?v=3oGbHH8YThY).
 
 :::info Path
     Main Menu → Complaints
