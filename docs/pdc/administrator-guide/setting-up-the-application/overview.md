@@ -88,7 +88,7 @@ Enter the required data in a new window.
 
 ### Other
 
-![Other Settings](./media/setting-up-the-application/other-settings.webp)
+![Other Settings](./media/setting-up-the-application/ctlabel.png)
 
 #### CT Labels Settings
 

@@ -16,6 +16,6 @@ To change the NLog logging level in PDC, follow these steps:
 
     ![Log Files](./media/log-files/log-file-01.png)
 
-PDC all information log:
+Logs from the PDC are collected in these files:
 
 ![Log Files](./media/log-files/log-file.png)
