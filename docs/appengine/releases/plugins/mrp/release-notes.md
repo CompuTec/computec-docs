@@ -9,6 +9,24 @@ toc_max_heading_level: 2
 The latest Installer is available to download from [here](/docs/appengine/releases/plugins/mrp/download).
 :::
 
+## MRP 1.10.13
+
+### *Release Date - 26 June 2024*
+
+| Issue Type | Release Note | Related issue/s |
+| --- | --- | --- |
+| Bug | Unknown document type and incorrect split of demand in results | SPROC-15909 |
+| Bug | Fixed issue that causes very long time of adding document from recommendations list | SPROC-16056 |
+| Bug | Fixed error with inconsistent behavior of "save recommendations" | SPROC-16056 |
+| Bug | Stock qty is wrong in the Results Graph | SPROC-15909 |
+| Bug | Inconsistency in the results tab | SPROC-15909 |
+| Bug | Wrong Initial qty on Results | SPROC-15909 |
+| Bug | Select/unselect all is not working | - |
+| Bug | Scaling issue in Initial Quantity Details pop up | SPROC-15909 |
+| Bug | Pegging information on Demand incorrectly shows purchase request | SPROC-15909 |
+| Bug | Missing full error info for "Not all selected documents have"  | SPROC-15909 |
+---
+
 ## MRP 1.10.12
 
 ### *Release Date - 26 June 2024*

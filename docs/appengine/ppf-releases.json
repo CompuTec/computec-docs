@@ -1,5 +1,12 @@
 [
 	{
+		"version": "1.10.11",
+		"build": "1.10.11.1",
+		"release_date": "22 July 2024",
+		"minimal_pf_version": "ProcessForce 10.0 Release 26 (R26)",
+		"download_url": "https://download.computec.one/software/appengine/plugins/ppf/releases/CompuTec_PPF_1.10.11.1.zip"
+	},
+	{
 		"version": "1.10.10",
 		"build": "1.10.10.1",
 		"release_date": "26 June 2024",
