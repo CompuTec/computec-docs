@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+toc_max_heading_level: 2
 ---
 
 # General Functions
@@ -50,6 +51,8 @@ The problem can be solved in many ways, depending on the system, therefore pleas
 - Close SAP Business One client.
 - Open Windows Programs and Features and remove CompuTec ProcessForce API.
 - Open SAP Business One client, log into the company, and register the add-on again.
+
+## Document Numbering Series Synchronization error
 
 ```text
 Synchronization error. Code: An error occurred during the synchronization with the Production Order document: Production order creating failure: To generate this document, first define the numbering series in the Administration module
