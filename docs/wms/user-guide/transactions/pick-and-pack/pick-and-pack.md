@@ -5,9 +5,17 @@ sidebar_position: 1
 # Pick & Pack
 
 
-### You can see how CompuTec WMS Pick and Pack supports warehousing activities in our CompuTec WMS Pick and Pack Demonstration. In the video, we see an order being moved to the dispatch warehouse and prepared for delivery.
+### Pick and Pack is a fulfilment process during which Items are selected or “picked” from the warehouse and then “packed” into a container for shipping or to be transferred to another internal location such as another warehouse or the production line.
 
-Watch Video Demonstration > [CompuTec WMS Pick and Pack Demonstration](https://www.youtube.com/watch?v=pNzveSz-56w)
+#### The CompuTec WMS Pick and Pack and Production Manager is a tool that supports the pick and pack process by generating Pick Lists based on a variety of SAP Business One documents:
+* Sales Orders;
+* A/R Reserve Invoices;
+* SAP Business One Production Orders;
+* Inventory Transfer Requests.
+
+The warehouse operatives can view these Pick Lists on their CompuTec WMS mobile device and record the picking and subsequent packing of the Items listed there.
+
+You can see how CompuTec WMS Pick and Pack works in our demonstration video. > [CompuTec WMS Pick and Pack Demonstration](https://www.youtube.com/watch?v=pNzveSz-56w)
 
 ## Support of Storage Units
 
