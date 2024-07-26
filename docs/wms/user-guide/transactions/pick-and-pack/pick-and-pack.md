@@ -4,6 +4,11 @@ sidebar_position: 1
 
 # Pick & Pack
 
+
+### You can see how CompuTec WMS Pick and Pack supports warehousing activities in our CompuTec WMS Pick and Pack Demonstration. In the video, we see an order being moved to the dispatch warehouse and prepared for delivery.
+
+Watch Video Demonstration > [CompuTec WMS Pick and Pack Demonstration](https://www.youtube.com/watch?v=pNzveSz-56w)
+
 ## Support of Storage Units
 
 1. New Storage Units
