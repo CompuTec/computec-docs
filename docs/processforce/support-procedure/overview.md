@@ -29,7 +29,7 @@ sidebar_position: 1
 
 ## Step 1: Please check your technical settings
 
-- System Requirements
+- [System Requirements](../administrator-guide/system-requirements.md)
 - CompuTec License Service version  
 - SAP DI API version (32-bit/64-bit)
 - SAP Business One client version
@@ -38,8 +38,8 @@ sidebar_position: 1
 
 ## Step 2: Please check the documentation
 
-- The documentation
-- The Release Notes
+- [The documentation](../user-guide/overview.md)
+- [The Release Notes](../releases/10.0-release-notes.md)
 - General settings and configuration
 - Check with other colleagues
 
@@ -51,8 +51,10 @@ sidebar_position: 1
 
 ## Step 4: Contact the support desk
 
-- Please contact the support desk via the support portal
-- If you need a ProcessForce license, deliver the proper details
+| Contacting the help desk | Suggested Hot Link |
+| --- | --- |
+| Please contact the support desk via the support portal | [https://support.computec.pl/](https://support.computec.pl/) |
+| If you need a ProcessForce license, deliver the proper details | [Request for a license.](../administrator-guide/licensing/license-request.md) |
 
 ## Step 5: Information required for completing a support ticket
 
@@ -60,7 +62,7 @@ sidebar_position: 1
 **Full description** - Full description of the issue, keystrokes, warnings, and error messages.  
 **Attachments** - Screenshots and recorded movie.  
 **SAP Business One logs** - System logs from SAP Business One.  
-**ProcessForce logs** - Please check this documentation section: Logging.  
+**ProcessForce logs** - Please check this documentation section: [Logging](./logging.md).  
 **If a support request the database, please backup and compress it** - Support will provide a link for uploading the database.                                                                               |
 
 ## API Support
