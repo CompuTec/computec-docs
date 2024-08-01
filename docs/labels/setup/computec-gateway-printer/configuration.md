@@ -17,10 +17,8 @@ Both application CompuTec Labels and CompuTec Gateway have to be configured. Com
 
 Configuration should be done on CT Label Manager is adding Gateway type printer and entering AppEngine address as shown below:
 
-CompuTec Gateway application can be download from [here](https://computec-docs.pages.dev/pdc/administrator-guide/weight-scales-integration/gateway-service-installation).
-<!-- TODO: Replacement above Link to path -->
+CompuTec Gateway application can be download from [here](/docs/appengine/releases/plugins/gateway/download).
 
 ## Configuration on CT Gateway Application
 
-CompuTec Gateway application installation guide can be found [here](https://computec-docs.pages.dev/pdc/releases/downloads#computec-gateway-service).
-<!-- TODO: Replacement above Link to path -->
+CompuTec Gateway application installation guide can be found [here](../computec-gateway-printer/configuration.md).
