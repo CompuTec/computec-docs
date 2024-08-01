@@ -30,7 +30,12 @@ All the above forms, except the Item Reference Library, contain tick boxes for p
 
 These relationships not only document within the system where these data elements are intended to be used but also can be used as a reference when building reports and documents.
 
-To view video content to set this up, click [here](https://www.youtube.com/playlist?list=PLtT6kgaz5YnfAO8B4ux_lXkmQyHmPCuR-).
+*To view video content to set these up, please see the following topics:*
+
+- [Revision Control](https://www.youtube.com/watch?v=VyQuaG6O_pc&amp;index=5)
+- [Sales to Manufacturing Order](https://www.youtube.com/watch?v=OKbj2r9jC3s)
+- [Batch Configuration](https://www.youtube.com/playlist?list=PLtT6kgaz5YnfAO8B4ux_lXkmQyHmPCuR-)
+- [MSDS - Properties, Classifications Phrases, Groups, Text](https://www.youtube.com/playlist?list=PLtT6kgaz5YncNO9ZDZissERE9sJdjRKsm)
 
 ![Item Details](./media/overview/item-details-schema.webp)
 
