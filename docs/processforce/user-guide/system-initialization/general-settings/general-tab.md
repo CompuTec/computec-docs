@@ -21,7 +21,7 @@ sidebar_position: 2
 **Automatically issue materials on Pick Order Add/Update, Automatically receipt materials on Pick Receipt Add/Update** – set up Auto Pick and Auto Receipt.
 
 <details>
-    <summary> to find out more</summary>
+    <summary>Click here to find out more</summary>
     <div>
         The process flow of picking and receiving materials has been simplified by checking one or both options.
 

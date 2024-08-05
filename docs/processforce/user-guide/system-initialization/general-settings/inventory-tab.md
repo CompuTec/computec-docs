@@ -20,10 +20,14 @@ This tab enables you to configure advanced settings for various inventory parame
 **Default template for batches, Default templates for serial numbers** – it can be chosen from a list. Click [here](../../item-details/batch-serial-template-definition.md) to check how to create a new Batch or Serial Number template.
 
 **Expiry date settings**:
-Expiry Evaluation Type can be set by a specific date (current, start, required, end, create) or by a template. A template can be chosen from a list or modified (if it is already created). The *Expiry Eval Template* field is active when the *Expiry Eval Template* value is selected in the *Expiry Eval Type* field. Click [here](../../inventory/batch-control/batch-control-settings/extended-batch-expiry-evaluation.md) to find out more about Expiry Evaluation Type Templates.
-A default expiry alert can be set in the *Warning Prior Expiry Days* field. It will be displayed a given number of days before the expiry date. It is only available when the *Expiry Date* check box is checked. Click [here](../../inventory/batch-control/batch-control-settings/extended-batch-expiry-evaluation.md) to find out more.
-A default consumes alert can be set in *Warning Prior Consume Days*. It will be displayed a given number of days before the Consume Date. It is only available when Consume Date check box is checked.
-Note that only one of these options can be active at a time: either Expiry Date or Consume By Date.
+
+- Expiry Evaluation Type can be set by a specific date (current, start, required, end, create) or by a template. A template can be chosen from a list or modified (if it is already created). The *Expiry Eval Template* field is active when the *Expiry Eval Template* value is selected in the *Expiry Eval Type* field. Click [here](../../inventory/batch-control/batch-control-settings/extended-batch-expiry-evaluation.md) to find out more about Expiry Evaluation Type Templates.
+
+- A default expiry alert can be set in the *Warning Prior Expiry Days* field. It will be displayed a given number of days before the expiry date. It is only available when the *Expiry Date* check box is checked. Click [here](../../inventory/batch-control/batch-control-settings/extended-batch-expiry-evaluation.md) to find out more.
+
+- A default consumes alert can be set in *Warning Prior Consume Days*. It will be displayed a given number of days before the Consume Date. It is only available when Consume Date check box is checked.
+
+- Note that only one of these options can be active at a time: either Expiry Date or Consume By Date.
 
 **Shelf Life Interval** – a period used to calculate the expiry date automatically. E.g., if Shelf Life Interval is set to 30 days and a Batch record is made on June 1st, the Expiry date will be automatically charged to June 30th.
 
