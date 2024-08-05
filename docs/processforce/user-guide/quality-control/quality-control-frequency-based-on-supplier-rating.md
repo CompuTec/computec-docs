@@ -23,12 +23,30 @@ Quality issues, errors, and mistakes aligned with certified testing lab Internal
 :::caution
     Please note that for the correct operation of the function, the following piece of code has to be added to the PostTransactNotification database.
 
-    This procedure is essential to manage at which intervals the Quality Control Test is to be performed based on the predefined Counters.
+    <details>
+        <summary>For SQL</summary>
+        <div>
+            ```sql title="Code to be added to Post transact procedure"
+if (@object_type = N'CT_PF_CtScheme' and @transaction_type in (N'A', N'U')) or (@object_type = N'20' and @transaction_type = N'A')
+begin
+	execute CT_PF_QC_FREQ_PROC @object_type, @transaction_type, @list_of_cols_val_tab_del
+end
+            ```
+            ![SQL Modification Example](./media/quality-control-frequency-based-on-supplier-rating/sql-modification.png)
+        </div>
+    </details>
 
-    | File Type | MS SQL | HANA |
-    | --- | --- | --- |
-    | Procedure | Download | Download |
-    | PostTransact modification | Download | Download |
+    <details>
+        <summary>For HANA</summary>
+        <div>
+        ```sql title="Code to be added to Post transact procedure"
+if (:object_type = N'CT_PF_CtScheme' and (:transaction_type = N'A' or :transaction_type = N'U')) or (:object_type = N'20' and :transaction_type = N'A') then
+	call CT_PF_QC_FREQ_PROC (:object_type, :transaction_type, :list_of_cols_val_tab_del);
+end if;
+            ```
+            ![HANA Modification Example](./media/quality-control-frequency-based-on-supplier-rating/hana-modification.png)
+        </div>
+    </details>
 :::
 
 :::tip
