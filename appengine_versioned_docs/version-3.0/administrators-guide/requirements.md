@@ -18,11 +18,7 @@ sidebar_position: 1
     2. The result will show the .NET Framework version
     ![Result](./media/requirements/result-01.png)
 
-    We recommend that you install the latest version of .NET Framework – you can do it using the dedicated tool Windows Update or manually downloading the required files from the Microsoft site.
-
-    | Version | Download |
-    | --- | --- |
-    | Microsoft .NET Framework 8.7 (Web Installer) | [**Link**](https://dotnet.microsoft.com/en-us/download) |
+    We recommend that you install the latest version of .NET Framework – you can do it using the dedicated tool Windows Update or manually downloading the required files from the Microsoft site: [Microsoft .NET Framework 8.7 (Web Installer)](https://dotnet.microsoft.com/en-us/download)
 </div>
 </details>
 :::
