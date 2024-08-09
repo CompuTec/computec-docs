@@ -26,7 +26,7 @@ Here you can download all CompuTec ProcessForce versions for SAP Business One 10
     It was fixed by SAP in FP2108 HF1.
 :::
 
-### Releases
+### Latest Release
 
 <table>
   <tr>
@@ -36,16 +36,36 @@ Here you can download all CompuTec ProcessForce versions for SAP Business One 10
     <th>Release Date</th>
     <th>Installer for<br />Lightweight Deployment</th>
   </tr>
-  {Releases.map((data) => (
-    <tr>
-      <td>{data.release_name}</td>
-      <td>{data.supported_license_server_version}</td>
-      <td>{data.build}</td>
-      <td style={{ whiteSpace: "nowrap" }}>{data.release_date}</td>
-      <td><a href={data.download_url}>Download</a></td>
-    </tr>
-  ))}
+  <tr>
+    <td>{Releases[0].release_name}</td>
+    <td>{Releases[0].supported_license_server_version}</td>
+    <td>{Releases[0].build}</td>
+    <td style={{ whiteSpace: "nowrap" }}>{Releases[0].release_date}</td>
+    <td><a href={Releases[0].download_url}>Download</a></td>
+  </tr>
 </table>
+
+<details>
+  <summary>Previous Releases</summary>
+  <table>
+    <tr>
+      <th>Extension Version</th>
+      <th>Supported CompuTec<br />License Server Version</th>
+      <th>Build</th>
+      <th>Release Date</th>
+      <th>Installer for<br />Lightweight Deployment</th>
+    </tr>
+    {Releases.slice(1).map((data) => (
+      <tr>
+        <td>{data.release_name}</td>
+        <td>{data.supported_license_server_version}</td>
+        <td>{data.build}</td>
+        <td style={{ whiteSpace: "nowrap" }}>{data.release_date}</td>
+        <td><a href={data.download_url}>Download</a></td>
+      </tr>
+    ))}
+  </table>
+</details>
 
 ## CompuTec ProcessForce API
 
@@ -61,7 +81,7 @@ Here you can download CompuTec ProcessForce API installers.
     Please also note that if you use ProcessForce API on the same machine where ProcessForce extension is used, you need to first upgrade ProcessForce API to the same version as the new ProcessForce extension before you start its upgrade. Otherwise, the upgrade will fail.
 :::
 
-### Releases
+### Latest Release
 
 <table>
   <tr>
@@ -70,15 +90,33 @@ Here you can download CompuTec ProcessForce API installers.
     <th>Version number in<br />Windows Apps and<br />Features list</th>
     <th>Installer</th>
   </tr>
-  {ApiReleases.map((data) => (
-    <tr>
-      <td>{data.release_name}</td>
-      <td>{data.build}</td>
-      <td>{data.version_number}</td>
-      <td><a href={data.download_url}>Download</a></td>
-    </tr>
-  ))}
+  <tr>
+    <td>{ApiReleases[0].release_name}</td>
+    <td>{ApiReleases[0].build}</td>
+    <td>{ApiReleases[0].version_number}</td>
+    <td><a href={ApiReleases[0].download_url}>Download</a></td>
+  </tr>
 </table>
+
+<details>
+<summary>Previous Releases</summary>
+  <table>
+    <tr>
+      <th>CompuTec ProcessForce API Version</th>
+      <th>Build</th>
+      <th>Version number in<br />Windows Apps and<br />Features list</th>
+      <th>Installer</th>
+    </tr>
+    {ApiReleases.slice(1).map((data) => (
+      <tr>
+        <td>{data.release_name}</td>
+        <td>{data.build}</td>
+        <td>{data.version_number}</td>
+        <td><a href={data.download_url}>Download</a></td>
+      </tr>
+    ))}
+  </table>
+</details>
 
 ## CompuTec License Service
 
@@ -98,17 +136,35 @@ Here you can download CompuTec License Server for CompuTec ProcessForce.
     You can find a guide on how to set up CompuTec License Server here: [License Server Installation Guide](../administrator-guide/licensing/license-server/license-server-installation.md).
 :::
 
+### Latest Release
+
 <table>
   <tr>
     <th>CompuTec License Server Version</th>
     <th>Minimal Related ProcessForce Version</th>
     <th>Installer</th>
   </tr>
-  {LicenseServerReleases.map((data) => (
-    <tr>
-      <td>{data.build}</td>
-      <td>{data.minimal_pf_version}</td>
-      <td><a href={data.download_url}>Download</a></td>
-    </tr>
-  ))}
+  <tr>
+    <td>{LicenseServerReleases[0].build}</td>
+    <td>{LicenseServerReleases[0].minimal_pf_version}</td>
+    <td><a href={LicenseServerReleases[0].download_url}>Download</a></td>
+  </tr>
 </table>
+
+<details>
+<summary>Previous Releases</summary>
+  <table>
+    <tr>
+      <th>CompuTec License Server Version</th>
+      <th>Minimal Related ProcessForce Version</th>
+      <th>Installer</th>
+    </tr>
+    {LicenseServerReleases.slice(1).map((data) => (
+      <tr>
+        <td>{data.build}</td>
+        <td>{data.minimal_pf_version}</td>
+        <td><a href={data.download_url}>Download</a></td>
+      </tr>
+    ))}
+  </table>
+</details>
