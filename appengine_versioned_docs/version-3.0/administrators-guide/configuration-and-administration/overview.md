@@ -7,28 +7,40 @@ toc_max_heading_level: 5
 # Overview
 
 :::caution
-    After upgrade from any 1.00 version to any 2.00, please use the Empty Cache and Hard Reload option in the browser on which you use AppEngine.
+    After upgrading from version 2.00 to version 3.00, please use the "Empty Cache and Hard Reload" option in the browser where you use AppEngine.
 :::
 <details>
     <summary>Click here to find out more</summary>
         <div>
-        **Here is an example for Google Chrome or Microsoft Edge (Chromium)** <br/>Open Google Chrome or Microsoft Edge (Chromium) browser and click F12 to open Developers Tools (1.). Right-click on the refresh button (2.) and choose the Empty Cach and Hard Reload option (3.):
-        ![Configuration and Administration](../media/overview/empty-cache-and-hard-reload.png)
+        **Here is an example for Google Chrome or Microsoft Edge (Chromium)**
+            1. Open Google Chrome or Microsoft Edge (Chromium) browser
+            2. Click F12 to open Developers Tools (1.)
+            3. Right-click on the refresh button (2.) and,
+            4. Choose the Empty Cach and Hard Reload option (3.):
+
+            ![Configuration and Administration](./media/overview/empty-cache-and-hard-reload.png)
     </div>
 </details>
-Here you can find the description of the Administration section of AppEngine along with instruction on how to configure the application to start to work with it.
 
 ---
 
-Download the installer from [here](../../releases/appengine/download.md) and run it.
+This section provides a description of the Administration features of AppEngine, along with instructions on how to configure the application to begin using it.
 
-Go to any internet browser and go to `localhost:54000` - 54000 is a default port set for connection; it can be changed in the [Settings section](#settings).
+1. Download the installer from [here](../../releases/appengine/download.md) and run it.
 
-After logging in, click the Administration Panel button and log in using the default log in details:
+2. Entering the following web address in a browser `localhost:54000` - 54001 is a default port set for connection; it can be changed in the [Settings section](#settings).
 
-Administrator ID: CTSiteUser
+3. After logging in, click the Administration Panel button
 
-Password: 12qw!@QW
+    ![Admin Panel](./media/overview/browser.png)
+
+4. Log in using the default log in details:
+
+    Administrator ID: CTSiteUser
+
+    Password: 1234
+
+    ![Admin Login](./media/overview/admin-login.png)
 
 The default password can be changed in the [System section](#system)
 
