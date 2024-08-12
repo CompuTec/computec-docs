@@ -373,7 +373,7 @@ Here, you have access to the following information:
 
 ![Barcode Definition](./media/wms-decoder-testing-3.webp)
 
-## Custom Configurations
+### Custom Configurations
 
 You can display messages in WMS using custom configurations by creating your own queries. In the output, choose ErrorMessage from the list.
 
