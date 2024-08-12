@@ -306,7 +306,9 @@ Here, you have access to the following information:
 
 ## Examples
 
-1. The scanned code consists of the following URL address: `https://address.com/ItemCode/BatchNumber/dd-mm-yyyy`.
+### Example 1
+
+The scanned code consists of the following URL address: `https://address.com/ItemCode/BatchNumber/dd-mm-yyyy`.
 
     From this address, we want to get and pass to CompuTec WMS: Item Code, Batch Number, and Expire Date and convert the date to YYMMDD format.
 
@@ -345,7 +347,9 @@ Here, you have access to the following information:
 
     ![Test](./media/wms-decoder-testing-2.webp)
 
-2. The scanned code has the 3202 prefix, which is not supported in CompuTec WMS by default. We want this data to be recognized as quantity with two last singes as decimal places.
+### Example 2
+
+The scanned code has the 3202 prefix, which is not supported in CompuTec WMS by default. We want this data to be recognized as quantity with two last singes as decimal places.
 
     1. Create a decoder.
     2. Create the following variables (check the USE GS1 Decoder option)
@@ -368,12 +372,12 @@ Here, you have access to the following information:
                         SELECT CASE WHEN LENGTH('@InputQuantity') > 0 THEN LEFT('@InputQuantity',4) || '.' || RIGHT('@InputQuantity', 2) ELSE '' END AS "Quantity" FROM DUMMY
                         ```
 
-3. Save rules and decoder.
-4. Test.
+    4. Save rules and decoder.
+    5. Test.
 
 ![Barcode Definition](./media/wms-decoder-testing-3.webp)
 
-### Custom Configurations
+### Example 3
 
 You can display messages in WMS using custom configurations by creating your own queries. In the output, choose ErrorMessage from the list.
 
@@ -388,10 +392,13 @@ SELECT
 FROM DUMMY
 ```
 
-Watch the demonstration video [here](https://www.youtube.com/watch?v=8JUxu5RUcvA).
+Watch the demonstration video [here](https://www.youtube.com/watch?v=8JUxu5RUcvA). In this video demonstration, you can see how to configure and display messages in the CompuTec WMS client using a Barcoder Setup.
 
-You can also use your own query and rules. Here are some examples:
+You can also use your own query and rules. Below are some examples:
+
+**Example A**
 
 ![Example](./media/example-01.jpg)
 
+**Example B**
 ![Example](./media/example-02.jpg)
