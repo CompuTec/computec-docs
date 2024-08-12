@@ -388,7 +388,7 @@ SELECT
 FROM DUMMY
 ```
 
-Check out the demonstration video [here](https://www.youtube.com/watch?v=8JUxu5RUcvA).
+Watch the demonstration video [here](https://www.youtube.com/watch?v=8JUxu5RUcvA).
 
 You can also use your own query and rules. Here are some examples:
 
