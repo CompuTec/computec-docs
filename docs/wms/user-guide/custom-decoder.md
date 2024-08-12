@@ -372,3 +372,26 @@ Here, you have access to the following information:
 4. Test.
 
 ![Barcode Definition](./media/wms-decoder-testing-3.webp)
+
+## Custom Configurations
+
+You can display messages in WMS using custom configurations by creating your own queries. In the output, choose ErrorMessage from the list.
+
+![Error Message](./media/error-message.png)
+
+Here’s an example of a query you can use:
+
+```sql
+SELECT
+ CASE WHEN '@ItemCode' = 'N1' THEN '' ELSE 'bad item [test error msg]' END AS "ErrorMsg"
+,'@ItemCode' AS "ItemCodeOut"
+FROM DUMMY
+```
+
+Check out the demonstration video [here](https://www.youtube.com/watch?v=8JUxu5RUcvA).
+
+You can also use your own query and rules. Here are some examples:
+
+![Example](./media/example-01.jpg)
+
+![Example](./media/example-02.jpg)
