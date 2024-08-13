@@ -12,7 +12,7 @@ Here, you can find information on WMS Scanning Simulator – a simple but valuab
 
 [Download the WMS Scanning Simulator](https://download.computec.one/software/wms/tools/WMS_Scanning_Simulator.exe).
 
-Download the file and run it (it does not require installation).
+Download the file and run it. It does not require installation.
 
 ## Usage
 
