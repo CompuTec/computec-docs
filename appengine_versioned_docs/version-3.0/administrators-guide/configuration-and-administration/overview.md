@@ -28,7 +28,7 @@ This section provides a description of the Administration features of AppEngine,
 
 1. Download the installer from [here](../../releases/appengine/download.md) and run it.
 
-2. Entering the following web address in a browser `localhost:54000` - 54001 is a default port set for connection; it can be changed in the [Settings section](#settings).
+2. Entering the following web address in a browser `https://localhost:54001` - 54001 is a default port set for connection; it can be changed in the [Settings section](#settings).
 
 3. After logging in, click the Administration Panel button
 
@@ -42,9 +42,61 @@ This section provides a description of the Administration features of AppEngine,
 
     ![Admin Login](./media/overview/admin-login.png)
 
-The default password can be changed in the [System section](#system)
+## Configuration
 
-![AppEngine Main View](./media/configuration-and-administration/appengine-main-view.webp)
+System Landscape Directory (SLD) is a service that SAP uses to maintain an inventory of all the companies and systems within the SAP landscape. The SLD helps in managing system configurations, ensuring that the SAP environment is optimized and up-to-date with the necessary settings for each entity. Here are the steps to configure the SLD server and managing associated companies.
+
+1. Begin by configuring the SLD server with the necessary connection details. This involves specifying the **SLD ServerAddress** and **CT License Server**.
+
+    ![Initial Configuration](./media/configuration-and-administration/initial-configuration.png)
+
+2. After entering the details, Click **Save and Discover**
+
+    ![Initial Configuration](./media/configuration-and-administration/initial-configuration-01.png)
+
+3. After connecting to the SLD server, you will be presented with a **list of companies** configured within the SAP landscape. This list helps in identifying and managing the different SAP environments associated with the server.
+
+    ![List of Companies](./media/configuration-and-administration/companies.png)
+
+4. Next, provide the **database user credentials**. These include the username and password for the database, ensuring secure access to the server’s data.
+
+    ![Database User Credentials](./media/configuration-and-administration/database-user-credentials.png)
+
+5. Verify the status of companies listed. Ensure that the companies are active and properly integrated into the SAP system. This step is crucial for ensuring that all necessary companies are available for configuration and use.
+
+    ![Company Status](./media/configuration-and-administration/company-status.png)
+
+6. Choose a user for the installation process. If a suitable user does not already exist, create a new user account. This user will have the necessary permissions to handle installation and configuration tasks.
+
+    ![Assign Default User](./media/configuration-and-administration/assign-default-user-01.png)
+
+7. Log in using **SLD Server user** to activate the company within the SAP system. This step ensures that the selected company is properly activated and integrated with the SLD server.
+
+    ![Activate Company](./media/configuration-and-administration/activate-companies.png)
+
+    This will show the **Activation Progress**.
+
+    ![Activation Progress](./media/configuration-and-administration/activation-progress.png)
+
+8. Assign a **default user** to the company, which will be used for background processing tasks.
+
+    ![Assign Default User](./media/configuration-and-administration/assign-default-user.png)
+
+    If a suitable user does not already exist, create a **new user** account.
+
+9. Set up and configure **background processing** within the SAP environment.
+
+    ![Background Processing](./media/configuration-and-administration/background-processing.png)
+
+10. Finally, assign an AppEngine instance to the configured environment. This step integrates the application engine with the SAP landscape, enabling the necessary application services and functionalities.
+
+After successful configuration, the Administration Panel will appear like this on logging in:
+
+    ![AppEngine Main View](./media/configuration-and-administration/main-view.png)
+
+    The default password can be changed in the System Section
+
+    ![System Password Change](./media/configuration-and-administration/system-password.png)
 
 ## SLD Servers
 
