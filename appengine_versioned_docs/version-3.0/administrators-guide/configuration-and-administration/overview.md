@@ -23,6 +23,7 @@ toc_max_heading_level: 5
 </details>
 
 ---
+
 ## Configuration
 
 This section provides a description of the Administration features of AppEngine, along with instructions on how to configure the application to begin using it.
@@ -118,7 +119,11 @@ Once the configuration is completed, you can log in to the [Launchpad](../.././a
 
 ### Advanced Configuration
 
-Once the initial configuration is complete, the advanced configuration stage allows for deeper customization and fine-tuning of the system. This stage is crucial for tailoring the system to meet specific business needs, ensuring that it operates efficiently and securely within the broader IT landscape.
+Once the initial configuration is complete, the advanced configuration stage allows for deeper customization and fine-tuning of the system. The following system configurations can be edited:
+
+1. **SAP Services** - The user has the option to edit the SLD ServerAddress
+2. **CompuTec Services** - The user has the option to CT License Server
+3. **OpenId Settings** - The user can also edit the AppEngine External Address.
 
 ![Advanced Configuration](./media/configuration-and-administration/advanced-configuration.png)
 
