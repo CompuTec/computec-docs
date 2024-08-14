@@ -23,6 +23,7 @@ toc_max_heading_level: 5
 </details>
 
 ---
+## Configuration
 
 This section provides a description of the Administration features of AppEngine, along with instructions on how to configure the application to begin using it.
 
@@ -42,7 +43,7 @@ This section provides a description of the Administration features of AppEngine,
 
     ![Admin Login](./media/overview/admin-login.png)
 
-## Configuration
+### Initial Configuration
 
 System Landscape Directory (SLD) is a service that SAP uses to maintain an inventory of all the companies and systems within the SAP landscape. The SLD helps in managing system configurations, ensuring that the SAP environment is optimized and up-to-date with the necessary settings for each entity. Here are the steps to configure the SLD server and managing associated companies.
 
@@ -88,15 +89,40 @@ System Landscape Directory (SLD) is a service that SAP uses to maintain an inven
 
     ![Background Processing](./media/configuration-and-administration/background-processing.png)
 
+    Perform the procedure described in the message:
+
+    <details>
+    <summary>Click here to find out more</summary>
+    <div>
+    <u>For HANA</u>
+    - Go to HANA Studio.
+    - Choose the required database.
+    - Find the SBO_SP_POSTTRANSACTIONNOTICE procedure (right-click on the Procedures under the database, choose- Filters... and put SBO_SP_POSTTRANSACTIONNOTICE there).
+    - Right-click on the found procedure and choose Open Definition.
+    - In the right window go to the Create Statement tab.
+    - Copy to clipboard the whole content of the tab.
+    - Click the 'Open SQL console for selected system' icon in the left window.
+    - Paste the content from the clipboard.
+    - Change CREATE to ALTER and add the code under the – ADD YOUR CODE HERE line (if there are other pieces of- code there, please put this piece at the end of the section).
+    - Click the Execute icon in the right window (or click F8).
+    - Click OK in the message window.
+    </div>
+    </details>
+
+    Click the Close button and Switch the Background Processing State switch to ON on the required database again.
+    In the User column, add a user on which the Background Processing will be operating.
+
 10. Finally, assign an AppEngine instance to the configured environment. This step integrates the application engine with the SAP landscape, enabling the necessary application services and functionalities.
 
-After successful configuration, the Administration Panel will appear like this on logging in:
+Once the configuration is completed, you can log in to the [Launchpad](../.././appengine-users-guide/launchpad.md)
 
-    ![AppEngine Main View](./media/configuration-and-administration/main-view.png)
+### Advanced Configuration
 
-    The default password can be changed in the System Section
+Once the initial configuration is complete, the advanced configuration stage allows for deeper customization and fine-tuning of the system. This stage is crucial for tailoring the system to meet specific business needs, ensuring that it operates efficiently and securely within the broader IT landscape.
 
-    ![System Password Change](./media/configuration-and-administration/system-password.png)
+![Advanced Configuration](./media/configuration-and-administration/advanced-configuration.png)
+
+### AppEngine Servers
 
 ## SLD Servers
 
