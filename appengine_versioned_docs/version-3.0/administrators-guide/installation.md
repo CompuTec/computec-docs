@@ -16,14 +16,14 @@ sidebar_position: 2
 
     ![Services](./media/installation/running-status.png)
 
-4. After installation, the browser will automatically open. The AppEngine will launch in either Production Mode or Installation Mode, depending on the current status of your system. The AppEngine will start in Installation Mode in the following scenarios:
+4. After installation, the AppEngine page will automatically open in browser. The AppEngine will launch in either Production Mode or Installation Mode, depending on the current status of your system. The AppEngine will start in Installation Mode in the following scenarios:
     - Unable to establish a connection to the Database Server where the AppEngine configuration is stored.
     - The AppEngine configuration database does not exist.
     - The AppEngine configuration database requires an upgrade.
 
     ![Browser](./media/installation/browser.png)
 
-    If it does not, you can manually open it by entering the following web address in a browser: `https://localhost:54001`.
+    If AppEngine Page won't open automatically you can manually do so by opening web browser and entering default address: `https://localhost:54001`.
 
 5. Setup the AppEngine by configuring the database server connection.
 

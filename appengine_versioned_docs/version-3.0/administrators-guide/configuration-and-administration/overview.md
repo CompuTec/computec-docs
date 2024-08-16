@@ -28,21 +28,24 @@ toc_max_heading_level: 5
 
 This section provides a description of the Administration features of AppEngine, along with instructions on how to configure the application to begin using it.
 
-1. Download the installer from [here](../../releases/appengine/download.md) and run it.
+1. Run installation process described [here](../installation.md).
 
 2. Entering the following web address in a browser `https://localhost:54001` - 54001 is a default port set for connection; it can be changed in the [Settings section](#settings).
 
-3. After logging in, click the Administration Panel button
+3. After page is opened, click the Administration Panel button
 
     ![Admin Panel](./media/overview/browser.png)
 
-4. Log in using the default log in details:
+4. If this is the first insllation log in using the default credentials:
 
     Administrator ID: CTSiteUser
 
     Password: 1234
 
     ![Admin Login](./media/overview/admin-login.png)
+
+	You can change password for CTSiteUser in the [System Details](#system-details) section.
+
 
 ### Initial Configuration
 
@@ -60,15 +63,15 @@ System Landscape Directory (SLD) is a service that SAP uses to maintain an inven
 
     ![List of Companies](./media/configuration-and-administration/companies.png)
 
-4. Next, provide the **database user credentials**. These include the username and password for the database, ensuring secure access to the server’s data.
+4. Next, provide the **database user credentials**. These include the username and password for the database server, ensuring secure access to the server’s data. If needed database user can be specified on company level.
 
     ![Database User Credentials](./media/configuration-and-administration/database-user-credentials.png)
 
-5. Verify the status of companies listed. Ensure that the companies are active and properly integrated into the SAP system. This step is crucial for ensuring that all necessary companies are available for configuration and use.
+5. Verify the status of companies listed. Ensure that the companies are active and properly integrated into the SAP system. This step is crucial for ensuring that all necessary companies are available for configuration and use. To activate company simply click on Active Switch as shown below. 
 
     ![Company Status](./media/configuration-and-administration/company-status.png)
 
-6. Choose a user for the installation process. If a suitable user does not already exist, create a new user account. This user will have the necessary permissions to handle installation and configuration tasks.
+6. Choose a user for the installation process. If a suitable user does not already exist, create a new user account. **This process is not creating user in SAP. It is just creating user in the AppEngine**. This user needs to have the necessary permissions in SAP Business One to handle installation and configuration tasks.
 
     ![Assign Default User](./media/configuration-and-administration/assign-default-user-01.png)
 
