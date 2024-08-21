@@ -44,12 +44,31 @@ This section provides a description of the Administration features of AppEngine,
 
     ![Admin Login](./media/overview/admin-login.png)
 
-	You can change password for CTSiteUser in the [System Details](#system-details) section.
-
+You can change password for CTSiteUser in the [System Details](#system-details) section.
 
 ### Initial Configuration
 
 System Landscape Directory (SLD) is a service that SAP uses to maintain an inventory of all the companies and systems within the SAP landscape. The SLD helps in managing system configurations, ensuring that the SAP environment is optimized and up-to-date with the necessary settings for each entity. Here are the steps to configure the SLD server and managing associated companies.
+
+You can find the SLD Server Address in SAP Business One, License Administration.
+
+    <details>
+        <summary>Click here to find more</summary>
+        <div>
+        ![License Administration](./media/configuration-and-administration/license-administration.webp)  
+        </div>
+    </details>
+
+You can check the CompuTec License Server Address in SAP Business One with ProcessForce installed, ProcesForce License administration form.
+
+<details>
+    <summary>Click here to find more</summary>
+    <div>
+![Administration](./media/configuration-and-administration/processforce-license-administration.webp)
+</div>
+</details>
+
+#### Steps to Perform Initial Configuration
 
 1. Begin by configuring the SLD server with the necessary connection details. This involves specifying the **SLD ServerAddress** and **CT License Server**.
 
@@ -67,7 +86,7 @@ System Landscape Directory (SLD) is a service that SAP uses to maintain an inven
 
     ![Database User Credentials](./media/configuration-and-administration/database-user-credentials.png)
 
-5. Verify the status of companies listed. Ensure that the companies are active and properly integrated into the SAP system. This step is crucial for ensuring that all necessary companies are available for configuration and use. To activate company simply click on Active Switch as shown below. 
+5. Verify the status of companies listed. Ensure that the companies are active and properly integrated into the SAP system. This step is crucial for ensuring that all necessary companies are available for configuration and use. To activate company simply click on Active Switch as shown below.
 
     ![Company Status](./media/configuration-and-administration/company-status.png)
 
@@ -124,53 +143,37 @@ Once the configuration is completed, you can log in to the [Launchpad](../.././a
 
 Once the initial configuration is complete, the advanced configuration stage allows for deeper customization and fine-tuning of the system. The following system configurations can be edited:
 
-1. **SAP Services** - The user has the option to edit the SLD ServerAddress
+1. **SAP Services** - The user has the option to edit the SLD ServerAddress.
 2. **CompuTec Services** - The user has the option to CT License Server
 3. **OpenId Settings** - The user can also edit the AppEngine External Address.
-
-![Advanced Configuration](./media/configuration-and-administration/advanced-configuration.png)
+4. **OIDC** -
+5. **Eventbus** -
+6. **Jobs** -
+7. **Plugin Repository** -
 
 ### AppEngine Servers
 
-## SLD Servers
+![Advanced Configuration](./media/configuration-and-administration/advanced-configuration.png)
 
-Choose this option in the menu on the left to configure a connection to specific companies.
+## Plugins
 
-**SLD Servers** - SAP Business One license server (the ones that have 40000 port)
+When you navigate to the "Plugins" section from the left-hand menu, you're presented with a interface that offers the following options:
 
-**Servers** - Database servers
+- **Downloaded**: View and manage the plugins that are already added in your system.
 
-**Companies** - specific databases
+    ![Downloaded](./media/configuration-and-administration/plugins-downloaded.png)
+
+- **Releases**: Indicates if new versions are available for your added plugins.
+
+    ![Plugins Releases](./media/configuration-and-administration/plugins-releases.png)
+
+- **Store**: Enables you to browse through a catalog of available plugins for installation.
+
+    ![Plugins Store](./media/configuration-and-administration/plugins-store.png)
+
+## Steps to Add Plugins to the AppEngine
 
 ---
-
-Click the plus icon in the upper-right corner to add a new connection.
-
-![SLD Server](./media/configuration-and-administration/adding-sld-server.webp)
-
-**SLD Address** – SLD server address. You can find it in SAP Business One, License Administration.
-
-<details>
-    <summary>Click here to find more</summary>
-    <div>
-      ![License Administration](./media/configuration-and-administration/license-administration.webp)  
-    </div>
-</details>
-
-**Description** – any description of the current configuration
-
-**Environment** – On-Premise or Cloud
-
-**Database Type** – choose your database type (HANA or a specific MS SQL version)
-
-**CT License Server** – CompuTec License Server address. You can check it in SAP Business One with ProcessForce installed, ProcesForce License administration form.
-
-<details>
-    <summary>Click here to find more</summary>
-    <div>
-![Administration](./media/configuration-and-administration/processforce-license-administration.webp)
-</div>
-</details>
 
 **CT License Server Status** – status of the connection to CompuTec License Server
 
@@ -262,7 +265,7 @@ Log files
 
 The preview of all current events from all checked databases.
 
-## Plugins
+## Plugins 1
 
 ![Administration](./media/configuration-and-administration/administration-panel-plugins.webp)
 
@@ -320,7 +323,7 @@ This section holds information on the whole AppEngine installation configuration
 
 **Development** – plugin development-related settings. Check AppEngine Developer's Guide to know more about plugin development-related settings.
 
-**SLD Servers** – here you can find settings from the [SLD Servers](#sld-servers) section
+**SLD Servers** – here you can find settings from the [initial configuration](#initial-configuration) section
 
 **General** – here you can change i.a. a default attachment folder, default ports.
 
