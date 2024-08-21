@@ -6,9 +6,9 @@ sidebar_position: 5
 
 Here are some potential error codes and messages you might encounter from REST API calls:
 
-- **HTTP/1.1 404 Not Found - endpoint not found** - This error indicates that the requested endpoint is missing or incorrect.
+- **HTTP/1.1 404 Not Found** - endpoint not found. This error indicates that the requested endpoint is missing or incorrect.
 
-- **HTTP/1.1 401 Unauthorized - authentication required**
+- **HTTP/1.1 401 Unauthorized** - authentication required. This happens when authentication credentials are either missing or invalid.
 
     Error Response:
 
@@ -21,9 +21,7 @@ Here are some potential error codes and messages you might encounter from REST A
     }
     ```
 
-    This happens when  authentication credentials are either missing or invalid.
-
-- **HTTP/1.1 500 Internal Server Error** - any other error. Details of problem are provided in the error message. the messages align with those found in the SAP Business One Client.
+- **HTTP/1.1 500 Internal Server Error** - any other error. Details of problem are provided in the error message. The message aligns with those found in the SAP Business One Client.
 
     Error Message:
 
