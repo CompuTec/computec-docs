@@ -23,7 +23,7 @@ Here are some potential error codes and messages you might encounter from REST A
 
 - **HTTP/1.1 500 Internal Server Error** - any other error. Details of problem are provided in the error message. The message aligns with those found in the SAP Business One Client with CompuTec ProcessForce extension running.
 
-    Error Message:
+    Error Message
 
     ```json
     {
