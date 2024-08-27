@@ -173,6 +173,8 @@ When you navigate to the "Plugins" section from the left-hand menu, you're prese
 
 ## Steps to Add Plugins to the AppEngine
 
+Below are the steps for adding Plugin (For eg: In this case, BT360) to the AppEngine:
+
 ---
 
 **CT License Server Status** – status of the connection to CompuTec License Server
