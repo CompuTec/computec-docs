@@ -9,6 +9,15 @@ toc_max_heading_level: 2
     Installer is ready to download from [here](/docs/appengine/releases/plugins/pdc/download).
 :::
 
+## CompuTec PDC 3.10.23.1
+
+### *Release Date - 27 August 2024*
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Bug | PDC | Unable to open attachments on PDC |
+| Bug | PDC | The update to the Planned Quantity isn't reflected in the PDC Task. |
+
 ## CompuTec PDC 3.10.22.1
 
 ### *Release date - 29 May 2024*
