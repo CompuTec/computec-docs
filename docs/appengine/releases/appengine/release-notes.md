@@ -11,13 +11,6 @@ The latest installer is available to download fom [here](/docs/appengine/release
 
 ## AppEngine 2.10.17.4 HF1
 
-### *Release Date - 27 August 2024*
-
-| Issue Type | Component/s | Release Note |
-| - | - | - |
-| Bug | PDC | Unable to open attachments on PDC |
-| Bug | PDC | The update to the Planned Quantity isn't reflected in the PDC Task. |
-
 ### *Release Date - 26 June 2024*
 
 | Issue Type | Component/s | Release Note | Related issue/s |
