@@ -146,34 +146,14 @@ Once the initial configuration is complete, the advanced configuration stage all
 1. **SAP Services** - The user has the option to edit the SLD ServerAddress.
 2. **CompuTec Services** - The user has the option to CT License Server
 3. **OpenId Settings** - The user can also edit the AppEngine External Address.
-4. **OIDC** -
-5. **Eventbus** -
-6. **Jobs** -
-7. **Plugin Repository** -
+4. **OIDC** - The OpenID Connect (OIDC) integration ensures secure authentication.
+5. **Eventbus** - Facilitates real-time communication between services.
+6. **Jobs** - Manages scheduled tasks efficiently.
+7. **Plugin Repository** -  Allows for easy installation and management of additional functionalities within the system
 
 ### AppEngine Servers
 
 ![Advanced Configuration](./media/configuration-and-administration/advanced-configuration.png)
-
-## Plugins
-
-When you navigate to the "Plugins" section from the left-hand menu, you're presented with a interface that offers the following options:
-
-- **Downloaded**: View and manage the plugins that are already added in your system.
-
-    ![Downloaded](./media/configuration-and-administration/plugins-downloaded.png)
-
-- **Releases**: Indicates if new versions are available for your added plugins.
-
-    ![Plugins Releases](./media/configuration-and-administration/plugins-releases.png)
-
-- **Store**: Enables you to browse through a catalog of available plugins for installation.
-
-    ![Plugins Store](./media/configuration-and-administration/plugins-store.png)
-
-## Steps to Add Plugins to the AppEngine
-
-Below are the steps for adding Plugin (For eg: In this case, BT360) to the AppEngine:
 
 ---
 
