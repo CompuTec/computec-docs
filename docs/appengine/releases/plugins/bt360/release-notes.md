@@ -13,7 +13,6 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 | Issue Type | Release Note | Related Support Ticket/s |
 | --- | --- | --- |
-| Improvement | | |
 | Bug | Timeout error when opening Batch Analysis | SPROC-15713 |
 | Bug | Errors while opening BT360 from Batch Details in SAP Business One client | SPROC-15826 |
 | Bug | Filter is not working in Multibatch Analysis | - |
@@ -24,7 +23,6 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 | Issue Type | Release Note | Related Support Ticket/s |
 | --- | --- | --- |
-| Improvement | | |
 | Bug | Relationship map not working in MRP 2.5 and error in BT360 | SPROC-15529 <br/>SPROC-15067 |
 | Bug | Error while loading graph data after navigation to Multibatch analysis | SPROC-14329 |
 
