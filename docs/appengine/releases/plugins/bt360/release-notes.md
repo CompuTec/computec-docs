@@ -9,6 +9,17 @@ toc_max_heading_level: 2
 The latest Installer is available to download from [here](/docs/appengine/releases/plugins/bt360/download).
 :::
 
+## BT360 2.10.8
+
+| Issue Type | Release Note | Related Support Ticket/s |
+| --- | --- | --- |
+| Improvement | | |
+| Bug | Timeout error when opening Batch Analysis | SPROC-15713 |
+| Bug | Errors while opening BT360 from Batch Details in SAP Business One client | SPROC-15826 |
+| Bug | Filter is not working in Multibatch Analysis | - |
+
+---
+
 ## BT360 2.10.7
 
 | Issue Type | Release Note | Related Support Ticket/s |
