@@ -4,6 +4,9 @@ sidebar_position: 1
 
 # Pick & Pack
 
+:::caution
+    Pick and Pack are not supported for Items with ‘Issue Primarily by’ (SAP Business One option) set to ‘Bin Locations.'
+:::
 
 ### Pick and Pack is a fulfilment process during which Items are selected or “picked” from the warehouse and then “packed” into a container for shipping or to be transferred to another internal location such as another warehouse or the production line.
 
