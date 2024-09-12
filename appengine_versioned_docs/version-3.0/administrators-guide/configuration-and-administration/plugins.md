@@ -60,40 +60,44 @@ When you navigate to the "Plugins" section from the left-hand menu, you're prese
 
     ![Companies](./media/plugins/plugins-10.png)
 
-9. The installation item details will be displayed. Click on "Perform Installation."
+9. Select AppEngine Instance for Installation.
+
+    ![AppEngine Instance](./media/plugins/plugins-10-01.png)
+
+10. The installation item details will be displayed. Click on "Perform Installation."
 
     ![Installation](./media/plugins/plugins-11.png)
 
-10. Select SAP user that will be used for installation and click "Install".
+11. Select SAP user that will be used for installation and click "Install".
 
     ![Installation](./media/plugins/plugins-12.png)
 
-11. Enter the required credentials and click “Install” again.
+12. Enter the required credentials and click “Install” again.
 
     ![Installation](./media/plugins/plugins-13.png)
 
-12. The installation process will begin, and you can monitor its progress.
+13. The installation process will begin, and you can monitor its progress.
 
     ![Installation Progress](./media/plugins/plugins-14.png)
 
     Once the installation is in progress, click “Close.”
 
-13. AppEngine needs to be restarted in order for all changes to be applied. Click "Yes" to restart.
+14. AppEngine needs to be restarted in order for all changes to be applied. Click "Yes" to restart.
 
     ![Restart Required](./media/plugins/plugins-15.png)
 
     You can now see the assigned company.
 
-14. Click on the "AE Instance" tab. Select the assigned company and assign it to AppEngine.
+15. Click on the "AE Instance" tab. Select the assigned company and assign it to AppEngine.
 
     ![AE Instance](./media/plugins/plugins-16.png)
 
-15. Select the AppEngine Instance for installation. The installation item details will show “Activation in Progress.” Click on "Perform Installation."
+16. Select the AppEngine Instance for installation. The installation item details will show “Activation in Progress.” Click on "Perform Installation."
 
     ![AE Instance](./media/plugins/plugins-18.png)
 
     ![AE Instance](./media/plugins/plugins-19.png)
 
-16. Click *“Yes”* to initiate the AppEngine restart.The AppEngine restart will be in progress, completing the installation.
+17. Click *“Yes”* to initiate the AppEngine restart.The AppEngine restart will be in progress, completing the installation.
 
     ![AE Instance](./media/plugins/plugins-21.png)
