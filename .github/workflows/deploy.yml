@@ -112,15 +112,7 @@ jobs:
           result-encoding: string
           script: |
             const [branch, commitHash, commitMessage] = (() => {
-              if (context.eventName === 'push') {
-                return ['main', context.sha, context.payload.head_commit.message];
-              } else if (context.eventName == 'workflow_dispatch') {
-                return ['main', context.sha, 'Manual workflow dispatch'];
-              } else if (context.eventName === 'pull_request') {
-                return [`pr${context.payload.number}/${context.payload.pull_request.head.label}`, context.payload.pull_request.head.sha, context.payload.pull_request.title];
-              }
-
-              throw new Error('Invalid event');
+              return ['appengine3', context.sha, context.payload.head_commit.message];
             })();
 
             await exec.exec(`npx wrangler pages deploy "build" --project-name="${process.env.CLOUDFLARE_PROJECT_NAME}" --branch="${branch}" --commit-hash="${commitHash}" --commit-message="${commitMessage}"`);
