@@ -101,3 +101,19 @@ When you navigate to the "Plugins" section from the left-hand menu, you're prese
 17. Click *“Yes”* to initiate the AppEngine restart.The AppEngine restart will be in progress, completing the installation.
 
     ![AE Instance](./media/plugins/plugins-21.png)
+
+## SAP Business One Settings
+
+:::info Path
+SAP Business One (with ProcessForce installed) main menu → Administration → System Initialization → General Settings → ProcessForce tab → AE tab
+:::
+
+![SAP Business One Settings](./media/plugins/appengine-sapb1-settings.webp)
+
+After activating a plugin, go to SAP Business One for further configuration.
+
+Check the checkbox, put in the address (by default: `http://localhost:54001`).
+
+Choose From opening mode: in form (within SAP Business One forms), in browser (in the system's default internet browser), or both.
+
+Click the Save button and Restart SAP Business One.

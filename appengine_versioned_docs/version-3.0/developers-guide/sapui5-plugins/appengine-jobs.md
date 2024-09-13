@@ -6,7 +6,7 @@ sidebar_position: 12
 
 ## Prerequisites
 
-Configured Background processing. Described here: [Configuration and Administration -> Background processing](../../administrators-guide/configuration-and-administration/overview.md).
+Configured Background processing. Described here: [Configuration and Administration -> Background processing](../../administrators-guide/configuration-and-administration/background-processing.md)
 
 ## Description
 
@@ -89,7 +89,7 @@ In the following tutorial, we will show you how to create an AppEngine Job. We w
     }
     ```
 
-8. Now after rebuilding, our action is already available in background processing in Administration Panel, and we can activate it. (If you don't know how to do it then please check [Configuration and Administration](../../administrators-guide/configuration-and-administration/overview.md#background-processing)). When you open Job configuration, you can see all details from our annotation and also plugin id - from plugin manifest.
+8. Now after rebuilding, our action is already available in background processing in Administration Panel, and we can activate it. (If you don't know how to do it then please check [Configuration and Administration](../../administrators-guide/configuration-and-administration/background-processing.md). When you open Job configuration, you can see all details from our annotation and also plugin id - from plugin manifest.
 
     ![Event Job](./media/appengine-jobs/event-job-activation.webp)
 9. Now lets add logic to our Job.

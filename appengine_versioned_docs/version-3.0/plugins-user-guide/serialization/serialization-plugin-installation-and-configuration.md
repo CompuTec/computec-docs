@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Serialization Plugin Installation and Configuration
 
-The standard plugin installation and configuration is described in the AppEngine documentation [here](../../administrators-guide/configuration-and-administration/overview.md).
+The standard plugin installation and configuration is described in the AppEngine documentation [here](../../administrators-guide/configuration-and-administration/configuration.md).
 
 Here you can find information about additional action that you have to take on top of the standard plugin installation be able to fully use the Serialization plugin.
 Please remember to install versions of the components according to the version table available [here](../../releases/appengine/download.md).
