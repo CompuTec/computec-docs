@@ -105,8 +105,8 @@
 }
 
 img {
-  max-height: 60vh;
-  max-height: 60lvh;
+  max-height: 40vh;
+  max-height: 40lvh;
   width: auto;
   height: auto;
 }
