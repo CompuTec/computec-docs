@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - appengine3
   pull_request:
     types:
       - opened
@@ -40,7 +40,7 @@ jobs:
       - name: Determine deployment environment
         id: deployment-env
         run: |
-          ENV=$([[ "$GITHUB_EVENT_NAME" =~ ^(workflow_dispatch|push)$ ]] && echo "PRODUCTION" || echo "DEVELOPMENT")
+          ENV="DEVELOPMENT"
           echo "ENV=$ENV" >> $GITHUB_OUTPUT
       - name: Checkout the repository
         uses: actions/checkout@v4
