@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+toc_min_heading_level: 2
+toc_max_heading_level: 2
 ---
 
 # Requirements
@@ -20,13 +22,15 @@ The minimum version of the .NET Framework supported by CompuTec WMS is 4.7.
 
     `reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\full" /v version`
 
-    ![.Net version](./media/prompt-net-version.webp)
+    ![.Net version](./media/dotnet-framework-01.png)
+
     and click enter.
+
 2. The result will show the .NET Framework version:
 
-    ![Result](./media/prompt-net-version-result.webp)
+    ![Result](./media/dotnet-framework.png)
 
-We recommend you install the latest version of .NET Framework – you can do it using the dedicated tool Windows Update or manually downloading the required files from the Microsoft site:
+We recommend you to install the latest version of .NET Framework – you can do it using the dedicated tool Windows Update or by manually downloading the required files from the Microsoft site:
 
 | Microsoft .NET Framework 4.7 (Web Installer)      | [Link](https://www.microsoft.com/en-us/download/details.aspx?id=55170) |
 | ------------------------------------------------ | ---------------------------------------------------------------------- |
@@ -92,7 +96,7 @@ When working on CompuTec WMS with ProcessForce, it is required for an SAP Busine
 
 For the application to work correctly and to avoid duplication of serial numbers, you must select "Serial Number" in the "Unique Serial Numbers by" combo box under the Inventory tab in SAP Business One General Settings:
 
-![General Settings](./media/general-settings-unique.webp)
+![General Settings](./media/general-settings.png)
 
 ## The Inbound Rule in Windows Firewall
 
@@ -101,31 +105,31 @@ CompuTec WMS Server requires a new inbound rule in Windows Firewall set for a sp
 <details>
 <summary>To get more information, see below.</summary>
 <div>
-    1. Open: Control Panel > System and Security > Windows Firewall:
+    1. Open: Control Panel > Windows Defender Firewall:
 
-        ![Firewall](./media/windows-firewall-rule_a.webp)
+        ![Firewall](./media/control-panel.png)
 
     2. Click the _Advanced settings_:
 
-        ![Firewall - settings](./media/windows-firewall-rule_b.webp)
+        ![Firewall - settings](./media/advanced-settings.png)
     3. Select _Inbound Rules_ and choose _New Rule..._ in the _Actions_ window - this runs _New Inbound Rule Wizard_:
 
-        ![Inbound rule](./media/windows-firewall-inbond-rule.webp)
+        ![Inbound rule](./media/inbound-rule.png)
     4. Choose _Port_ as the rule type:
 
-        ![Port](./media/windows-firewall-port.webp)
+        ![Port](./media/port.png)
     5. Choose _TCP_ protocol and specify _31002_ local port:
 
-        ![TCP](./media/windows-firewall-tcp.webp)
+        ![TCP](./media/protocol-port.png)
     6. Choose the _Allow the connection_ action:
 
-        ![Allow the connection](./media/windows-firewall-rule_f.webp)
+        ![Allow the connection](./media/action-allow-connection.png)
     7. Choose all profiles:
 
-        ![All Profiles](./media/windows-firewall-rule_g.webp)
+        ![All Profiles](./media/profiles.png)
     8. Specify the rule name and click "Finish":
 
-        ![CompuTec License Server](./media/windows-firewall-rule_h.webp)
+        ![CompuTec License Server](./media/computec-wms.png)
 </div>
 </details>
 
@@ -145,11 +149,12 @@ The supported database servers are:
 - Microsoft SQL Server 2014
 - Microsoft SQL Server 2016
 - Microsoft SQL Server 2017
+- Microsoft SQL Server 2019
 - SAP HANA
 
 ## CompuTec ProcessForce API
 
-If ProcessForce is installed, CompuTec WMS requires CompuTec ProcessForce API 32-bit or 64-bit (depending on CompuTec WMS version) to work correctly. ProcessForce API has to be in the exact version as ProcessForce installed on the database.
+If ProcessForce is installed, CompuTec WMS requires CompuTec ProcessForce API to work correctly. ProcessForce API has to be in the exact version as ProcessForce installed on the database.
 
 ## Preparing Environment: Installation Order
 
@@ -159,30 +164,24 @@ If ProcessForce is installed, CompuTec WMS requires CompuTec ProcessForce API 32
 
 ### Microsoft SQL
 
-1. Microsoft ODBC Driver.
-2. Microsoft SQL Native Client (version based on SQL version being used).
-3. SAP DI API.
-4. ProcessForce API.
-5. WMS Server.
-6. WMS Client.
+1. Microsoft ODBC Driver
+2. Microsoft SQL Native Client (version based on SQL version being used)
+3. SAP DI API
+4. ProcessForce & ProcessForce API (optional)
+5. WMS Server
+6. WMS Client
 
 ### HANA
 
-1. HANA ODBC Driver.
-2. SAP DI API.
-3. ProcessForce API.
+1. HANA ODBC Driver
+2. SAP DI API
+3. ProcessForce & ProcessForce API.(optional)
 4. WMS Server.
 5. WMS Client.
 
 ## Upgrade
 
 It is required to uninstall the CompuTec WMS Server manually (in Programs and Features functionality in Windows) before installing the CompuTec WMS 2.0 version.
-
-### 32-bit and 64-bit CompuTec WMS Server version
-
-:::danger
-    Both server versions cannot work simultaneously in one environment.
-:::
 
 ### Custom Config and CompuTec WMS Server Settings Transfer
 
