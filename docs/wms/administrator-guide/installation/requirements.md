@@ -175,9 +175,9 @@ If ProcessForce is installed, CompuTec WMS requires CompuTec ProcessForce API to
 
 1. HANA ODBC Driver
 2. SAP DI API
-3. ProcessForce & ProcessForce API.(optional)
-4. WMS Server.
-5. WMS Client.
+3. ProcessForce & ProcessForce API (optional)
+4. WMS Server
+5. WMS Client
 
 ## Upgrade
 
