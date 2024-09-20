@@ -18,13 +18,22 @@ Decimal/thousands of separators in CompuTec WMS, desktop client, are taken from 
 
 1. In SAP Business One, open General Settings.
 2. Open the Display tab.
-3. Change the Decimal Separator, e.g., to a comma (,) and Thousands Sep. to a full stop (.).
+3. Change the Decimal Separator, e.g., to a full stop (.) and Thousands Sep. to a comma (,).
 4. Press Update.
+
+    ![SAP Business One Settings](./media/general-settings.png)
 
 ### Regional Settings
 
 1. Open Control Panel.
+
+    ![Regional Settings](./media/regional-settings.png)
 2. Select Region (and Language).
+
+    ![Regional Settings](./media/regional-settings-01.png)
 3. On the Formats tab, click Additional settings...
-4. On the Numbers tab, change the Decimal symbol.
-5. Press Apply or OK.
+
+    ![Regional Settings](./media/regional-settings-02.png)
+4. On the Numbers tab, change the Decimal symbol and Press 'OK'
+
+    ![Regional Settings](./media/regional-settings-04.png)

@@ -29,6 +29,4 @@ In CompuTec WMS Client settings, choose the required port:
 2. With SSL (add HTTPS and change the port):
 
     ![Server Choosing](./media/server-choosing-2.webp)
-3. The corresponding settings (SSL or non-SSL) must be set. Do the same on the mobile device:
-
-    ![SSL](./media/SSL.webp)
+3. The corresponding settings (SSL or non-SSL) must be set. Repeat the same on the mobile device.

@@ -16,7 +16,7 @@ A cold boot is required to run the device if the warm boot cannot be performed. 
 
 To avoid erasing CompuTec WMS and its configuration from the device on cold boot (intentional or, e.g., caused by a power outage), the following steps have to be performed:
 
-1. Download <!--[the file pack](./media/ColdBoot.rar)-->.
+1. Download the [file pack](https://connect.computec.pl/download/attachments/139691704/ColdBoot.rar?version=1&modificationDate=1607340510133&api=v2)
 2. Unpack it.
 3. Place the files in the "\application\" location on the device.
 4. Swap the "CompuTecWMSClientWindowsCE_93.CAB" file to a CompuTec WMS installer that you are using (e.g., "CompuTecWMSClientWindowsCE_10.0_2.10.8.1.CAB"). You can download the installers from [here](../../../releases/download.md).
@@ -32,7 +32,7 @@ If installation of .NET Compact Framework is required for a specific device, the
     </div>
     </details>
 
-1. Download .NET Compact Framework from here.
+1. Download .NET Compact Framework from [here](https://connect.computec.pl/display/WMS100EN/WMS+Handheld+Device+Client).
 2. Place it in the `\application\` location on the device.
 3. Add the following line to `wms.CPY` file:
         ```text

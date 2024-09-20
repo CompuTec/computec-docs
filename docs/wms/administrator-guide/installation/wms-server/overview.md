@@ -20,10 +20,10 @@ This document provides a step-by-step guide on how to install WMS Server and inf
     :::
 3. In the window that will appear, click the Install button:
 
-    ![Install](./media/wms-server-install.webp)
+    ![Install](../wms-server/media/computec-wms-setup.png)
 4. A window displaying the installation progress will appear. After receiving a system message indicating a successful setup, click the Close button.
 
-    ![Install Close](./media/wms-server-install-close.webp)
+    ![Install Close](../wms-server/media/computec-wms-setup-01.png)
 5. Choose CompuTec Service Manager from the Windows program list. As a result, you will have the CT icon in your system tray. Click it.
 6. In the displayed window, choose the "CompuTec WMS Server" from a service drop-down list:
 
