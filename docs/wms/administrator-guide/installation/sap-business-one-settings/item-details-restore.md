@@ -15,3 +15,5 @@ To perform the Item Details procedure, choose the following path in SAP Business
 :::info Path
     Help → Support Desk → Restore → Restore Item Details
 :::
+
+![Restore Item Details](./media/restore-item-details.png)

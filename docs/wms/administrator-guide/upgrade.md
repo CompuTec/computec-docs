@@ -7,7 +7,7 @@ sidebar_position: 2
 This document provides information on upgrading the WMS application to a newer version.
 
 :::danger
-    It is required to uninstall the CompuTec WMS Server manually (in Programs and Features functionality in Windows) before installing the CompuTec WMS 2.0 version.
+    It is required to uninstall the CompuTec WMS Server manually (in Programs and Features functionality in Windows) before installing the new CompuTec WMS version.
 :::
 
 ---
