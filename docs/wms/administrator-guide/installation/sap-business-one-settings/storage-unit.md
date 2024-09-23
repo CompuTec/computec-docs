@@ -16,6 +16,8 @@ sidebar_position: 4
 
 All storage units created using WMS can be viewed in this form, along with their details.
 
+    ![Storage Unit Form](./media/storage-unit.png)
+
 ## Inventory Register Form
 
 :::info Path
@@ -23,3 +25,5 @@ All storage units created using WMS can be viewed in this form, along with their
 :::
 
 This form allows you to browse through the register of every CompuTec WMS transaction in which storage units were used.
+
+    ![Inventory Register Form](./media/inventory-register.png)
