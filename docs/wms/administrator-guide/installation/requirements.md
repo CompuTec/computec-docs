@@ -145,8 +145,6 @@ If CompuTec WMS is set to operate on a database with ProcessForce installed, and
 
 The supported database servers are:
 
-- Microsoft SQL Server 2012
-- Microsoft SQL Server 2014
 - Microsoft SQL Server 2016
 - Microsoft SQL Server 2017
 - Microsoft SQL Server 2019
