@@ -168,18 +168,19 @@ Barcodes created to be supported by WMS have to have specific prefixes. A partic
 | 8111   | 1 to 8     | Loyalty points of a coupon                                                          | GS1CouponLoyaltyPoints                               | CouponLoyaltyPoints                               |
 | 8200   | 1 to 70    | URL for product extended information                                                | GS1ProductExtendedInfoURL                            | ProductExtendedInfoURL                            |
 
-\* - Scanning decimal numbers have a different prefix (than 37). For QR codes, we recommend using the 310 prefixes.
+\* - Scanning decimal numbers have a different prefix (than 37). For QR codes, we recommend using the 310/320 prefixes.
 
-310XNNNNNN
-95XNNNNNN
+- 310XNNNNNN
+- 320XNNNNNN
+- 95XNNNNNN
 
 Where:
-310, 95 - prefix
+310, 320, 95 - prefix
 X - a number of digits after which there should be a decimal comma (counting from the end)
 N - digits
 
 Examples:
-2,5:
+25:
 3101000025
 
 0,25:
