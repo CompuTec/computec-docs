@@ -16,10 +16,8 @@ To make the whole process easier, you can add the following information to the i
     <summary>How can I check it?</summary>
     <div>
     Run CompuTec WMS Client and choose the options pointed out in the screenshots below:
-    ![Media](./media/main-form.webp)
-    ![Media](./media/info.webp)
-    ![Media](./media/version.webp)
+    ![Media](./media/issue-reporting.png)
     </div>
     </details>
 
-- Application performance log files. The log file is a text file that contains a record of an application's work. The logs folder contains text files that can be opened in Windows Notepad. Names of the files are generated automatically by the current date. Please attach to the support ticket files the date of an error occurrence. For more information, click [here](log-file-locations-of-computec-wms-components.md).
+- **Application performance log file** is a text file that contains a record of an application's work. The logs folder contains text files that can be opened in Windows Notepad. The filenames are automatically generated based on the current date. Please attach to the support ticket files the date of an error occurrence. For more information, click [here](log-file-locations-of-computec-wms-components.md).

@@ -31,4 +31,4 @@ To learn more, watch the video: [An example usage of multi-part codes](https://w
 
 **An example usage of single and multi-part codes in GS1 standard**:
 
-To learn more, watch the video:[An example usage of single and multi-part codes in GS1 standard](https://www.youtube.com/watch?v=utDZYiQYdoI).
+To learn more, watch the video: [An example usage of single and multi-part codes in GS1 standard](https://www.youtube.com/watch?v=utDZYiQYdoI).
