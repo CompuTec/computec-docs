@@ -11,25 +11,25 @@ sidebar_position: 2
     <details>
     <summary>Click to check the effect on the workflow</summary>
     <div>
-    ![Picklists](./media/delivery-settings/picklists.png) ![Document Details](./media/delivery-settings/document-details.png) ![Warehouse](./media/delivery-settings/warehouse.png) ![New Item](./media/delivery-settings/new-item.png) ![Document Details](./media/delivery-settings/document-details-02.png) ![Quantity](./media/delivery-settings/quantity.png) ![Document Details](./media/delivery-settings/document-details-03.png) ![Remarks](./media/delivery-settings/remarks.png)
+    ![Warehouse](./media/delivery-settings/delivery-warehouse.png) ![Customer Selection](./media/delivery-settings/delivery-customer-selection.png) ![Document Details](./media/delivery-settings/delivery-document-details.png) ![New Item](./media/delivery-settings/delivery-new-item.png) ![Document Details](./media/delivery-settings/delivery-document-details-01.png) ![Quantity](./media/delivery-settings/delivery-quantity.png) ![Document Details](./media/delivery-settings/delivery-document-details-02.png) ![Remarks](./media/delivery-settings/delivery-remarks.png)
     </div>
     </details>
 
-2. **Show Warehouse selection and a default Warehouse chosen** – only Pick Lists for a Warehouse set up in settings are displayed; it is required to choose a Warehouse during document creation or adding an Item
+2. **Show Warehouse selection and a default Warehouse chosen** – It is required to choose a Warehouse during document creation or adding an Item
 
     <details>
     <summary>Click to check the effect on the workflow</summary>
     <div>
-    ![Picklists](./media/delivery-settings/picklist-01.png) ![Document Details](./media/delivery-settings/document-details-04.png) ![New Item](./media/delivery-settings/new-item-01.png) ![Document Details](./media/delivery-settings/document-details-05.png) ![Quantity](./media/delivery-settings/quantity-01.png) ![Document Details](./media/delivery-settings/document-details-06.png) ![Remarks](./media/delivery-settings/remarks-01.png)
+    ![Picklists](./media/delivery-settings/delivery-warehouse-01.png) ![Customer Selection](./media/delivery-settings/delivery-customer-selection.png) ![Document Details](./media/delivery-settings/delivery-document-details.png) ![New Item](./media/delivery-settings/delivery-new-item.png) ![Document Details](./media/delivery-settings/delivery-document-details-01.png) ![Quantity](./media/delivery-settings/delivery-quantity.png) ![Document Details](./media/delivery-settings/delivery-document-details-02.png) ![Remarks](./media/delivery-settings/delivery-remarks.png)
     </div>
     </details>
 
-3. **Do not show a Warehouse selection and no default Warehouse chosen** – it is required to choose a Warehouse on adding an Item.
+3. **Do not show a Warehouse selection and no default Warehouse chosen** – It is required to choose a Warehouse on adding an Item.
 
     <details>
     <summary>Click to check the effect on the workflow</summary>
     <div>
-    ![Picklists](./media/delivery-settings/picklist-02.png) ![Document Details](./media/delivery-settings/document-details-07.png) ![Warehouse](./media/delivery-settings/warehouse-01.png) ![New Item](./media/delivery-settings/new-item-02.png) ![Document Details](./media/delivery-settings/document-details-08.png) ![Quantity](./media/delivery-settings/quantity-02.png) ![Document Details](./media/delivery-settings/document-details-09.png) ![Remarks](./media/delivery-settings/remarks-02.png)
+    ![Customer Selection](./media/delivery-settings/delivery-customer-selection.png) ![Document Details](./media/delivery-settings/delivery-document-details.png) ![Warehouse](./media/delivery-settings/delivery-warehouse.png) ![New Item](./media/delivery-settings/delivery-new-item.png) ![Document Details](./media/delivery-settings/delivery-document-details-01.png) ![Quantity](./media/delivery-settings/delivery-quantity.png) ![Document-Details](./media/delivery-settings/delivery-document-details-02.png) ![Remarks](./media/delivery-settings/delivery-remarks.png)
     </div>
     </details>
 
@@ -38,7 +38,7 @@ sidebar_position: 2
     <details>
     <summary>Click to check the effect on the workflow</summary>
     <div>
-    ![Order Selection](./media/delivery-settings/order-selection.png) ![Document Details](./media/delivery-settings/document-details-10.png) ![New Item](./media/delivery-settings/new-item-03.png) ![Document Details](./media/delivery-settings/document-details-11.png) ![Quantity](./media/delivery-settings/quantity-03.png) ![Document Details](./media/delivery-settings/document-details-12.png) ![Remarks](./media/delivery-settings/remarks-03.png)
+    ![Customer Selection](./media/delivery-settings/delivery-customer-selection.png) ![Document Details](./media/delivery-settings/delivery-document-details.png) ![New Item](./media/delivery-settings/delivery-new-item.png) ![Warehouse](./media/delivery-settings/delivery-warehouse.png) ![Document Details](./media/delivery-settings/delivery-document-details-01.png) ![Quantity](./media/delivery-settings/delivery-quantity.png) ![Document-Details](./media/delivery-settings/delivery-document-details-02.png) ![Remarks](./media/delivery-settings/delivery-remarks.png)
     </div>
     </details>
 
