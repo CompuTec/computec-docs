@@ -16,14 +16,14 @@ Download the file and run it. It does not require installation.
 
 ## Usage
 
-- The simulator can be run through a remote desktop, but only one user at a time can do this (unlike CompuTec WMS, which can be used by many users simultaneously).
+- The simulator can be run through a remote desktop, but only one user at a time can run it, unlike CompuTec WMS, which supports simultaneous multi-user access.
 - The simulator can operate on one of the barcode standards supported by CompuTec WMS: GS1, Odette. Click [here](../barcode-scanning/overview.md) to find out more.
 - You can scan an Item by its name or barcode.
 
-    ![Item Name](./media/item-name-scan.webp)
+    ![Item Name](./media/item-name-scan.png)
 - You can scan a single code or use a multi-part barcode by putting each code in a separate line:
 
-    ![Multiple Elements](./media/multi-part.webp)
+    ![Multiple Elements](./media/multi-part.png)
 
 **An example usage of multi-part codes**:
 
