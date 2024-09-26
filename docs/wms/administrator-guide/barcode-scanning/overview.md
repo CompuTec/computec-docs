@@ -180,14 +180,10 @@ X - a number of digits after which there should be a decimal comma (counting fro
 N - digits
 
 Examples:
-25:
-3101000025
 
-0,25:
-3102000025
-
-0,025:
-3103000025
+- 25: 3101000025
+- 0,25: 3102000025
+- 0,025: 3103000025
 
 ## Odette Standard
 
