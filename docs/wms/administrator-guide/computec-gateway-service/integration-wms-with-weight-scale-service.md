@@ -26,15 +26,8 @@ sidebar_position: 2
 
     You can run the application by starting the CustomConfiguration.exe file. It is placed in an installation folder, which is by default in the following location:
 
-    `Local Disk (C:)\Program Files (x86)\CompuTec\CompuTec WMS Server\CustomConfiguration\`
-
-    (the application was installed in a 32-bit version)
-
-    or
-
     `Local Disk (C:)\Program Files\CompuTec\CompuTec WMS Server\CustomConfiguration\`
 
-    (the application was installed in a 64-bit version)
 6. Click the Common tab and click the CT Weight Service web address checkbox to activate.
 7. In the web address field type `http://localhost:8080` or `http://Your IP address:8080` and then click the Save button.
 

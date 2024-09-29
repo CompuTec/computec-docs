@@ -49,7 +49,7 @@ sidebar_position: 2
     <details>
     <summary>Click to check the effect on the workflow</summary>
     <div>
-    ![Picklists](./media/delivery-settings/picklist-03.png) ![Document Details](./media/delivery-settings/document-details-13.png) ![Warehouse](./media/delivery-settings/warehouse-02.png) ![New Item](./media/delivery-settings/new-item-04.png) ![Document Details](./media/delivery-settings/document-details-14.png) ![Quantity](./media/delivery-settings/quantity-04.png) ![Document Details](./media/delivery-settings/document-details-15.png) ![Remarks](./media/delivery-settings/remarks-04.png)
+    ![Picklists](./media/delivery-settings/pick-list.png) ![Document Details](./media/delivery-settings/delivery-document-details-03.png) ![Warehouse](./media/delivery-settings/delivery-warehouse.png) ![New Item](./media/delivery-settings/delivery-new-item.png) ![Document Details](./media/delivery-settings/delivery-document-details-04.png) ![Quantity](./media/delivery-settings/delivery-quantity.png) ![Document Details](./media/delivery-settings/delivery-document-details-05.png) ![Remarks](./media/delivery-settings/delivery-remarks.png)
     </div>
     </details>
 
@@ -58,7 +58,7 @@ sidebar_position: 2
     <details>
     <summary>Click to check the effect on the workflow</summary>
     <div>
-    ![Picklists](./media/delivery-settings/picklist-04.png) ![Document Details](./media/delivery-settings/document-details-16.png) ![New Item](./media/delivery-settings/new-item-05.png) ![Document Details](./media/delivery-settings/document-details-17.png) ![Quantity](./media/delivery-settings/quantity-05.png) ![Document Details](./media/delivery-settings/document-details-18.png) ![Remarks](./media/delivery-settings/remarks-05.png)
+    ![Picklists](./media/delivery-settings/pick-list.png) ![Document Details](./media/delivery-settings/delivery-document-details-03.png) ![Warehouse](./media/delivery-settings/delivery-warehouse-01.png) ![New Item](./media/delivery-settings/delivery-new-item.png) ![Document Details](./media/delivery-settings/delivery-document-details-04.png) ![Quantity](./media/delivery-settings/delivery-quantity.png) ![Document Details](./media/delivery-settings/delivery-document-details-05.png) ![Remarks](./media/delivery-settings/delivery-remarks.png)
     </div>
     </details>
 
@@ -67,7 +67,7 @@ sidebar_position: 2
     <details>
     <summary>Click to check the effect on the workflow</summary>
     <div>
-     ![Picklists](./media/delivery-settings/picklist-05.png) ![Document Details](./media/delivery-settings/document-details-19.png) ![Warehouse](./media/delivery-settings/warehouse-03.png) ![New Item](./media/delivery-settings/new-item-06.png) ![Document Details](./media/delivery-settings/document-details-20.png) ![Quantity](./media/delivery-settings/quantity-06.png) ![Document Details](./media/delivery-settings/document-details-21.png) ![Remarks](./media/delivery-settings/remarks-06.png)
+    ![Picklists](./media/delivery-settings/pick-list.png) ![Document Details](./media/delivery-settings/delivery-document-details-03.png) ![Warehouse](./media/delivery-settings/delivery-warehouse-01.png) ![New Item](./media/delivery-settings/delivery-new-item.png) ![Document Details](./media/delivery-settings/delivery-document-details-04.png) ![Quantity](./media/delivery-settings/delivery-quantity.png) ![Document Details](./media/delivery-settings/delivery-document-details-05.png) ![Remarks](./media/delivery-settings/delivery-remarks.png)
     </div>
     </details>
 
@@ -76,7 +76,7 @@ sidebar_position: 2
     <details>
     <summary>Click to check the effect on the workflow</summary>
     <div>
-     ![Picklists](./media/delivery-settings/picklist-06.png) ![Document Details](./media/delivery-settings/document-details-22.png) ![New Item](./media/delivery-settings/new-item-07.png) ![Document Details](./media/delivery-settings/document-details-23.png) ![Quantity](./media/delivery-settings/quantity-07.png) ![Document Details](./media/delivery-settings/document-details-24.png) ![Remarks](./media/delivery-settings/remarks-07.png)
+    ![Picklists](./media/delivery-settings/pick-list.png) ![Document Details](./media/delivery-settings/delivery-document-details-03.png) ![New Item](./media/delivery-settings/delivery-new-item.png) ![Document Details](./media/delivery-settings/delivery-document-details-04.png) ![Quantity](./media/delivery-settings/delivery-quantity.png) ![Document Details](./media/delivery-settings/delivery-document-details-05.png) ![Remarks](./media/delivery-settings/delivery-remarks.png)
     </div>
     </details>
 
