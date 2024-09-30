@@ -29,7 +29,7 @@ sidebar_position: 2
     <details>
     <summary>Click to check the effect on the workflow</summary>
     <div>
-    ![Customer Selection](./media/delivery-settings/delivery-customer-selection.png) ![Document Details](./media/delivery-settings/delivery-document-details.png) ![Warehouse](./media/delivery-settings/delivery-warehouse.png) ![New Item](./media/delivery-settings/delivery-new-item.png) ![Document Details](./media/delivery-settings/delivery-document-details-01.png) ![Quantity](./media/delivery-settings/delivery-quantity.png) ![Document-Details](./media/delivery-settings/delivery-document-details-02.png) ![Remarks](./media/delivery-settings/delivery-remarks.png)
+    ![Customer Selection](./media/delivery-settings/delivery-customer-selection.png) ![Document Details](./media/delivery-settings/delivery-document-details.png) ![Warehouse](./media/delivery-settings/delivery-warehouse-01.png) ![New Item](./media/delivery-settings/delivery-new-item.png) ![Document Details](./media/delivery-settings/delivery-document-details-01.png) ![Quantity](./media/delivery-settings/delivery-quantity.png) ![Document-Details](./media/delivery-settings/delivery-document-details-02.png) ![Remarks](./media/delivery-settings/delivery-remarks.png)
     </div>
     </details>
 
@@ -67,7 +67,7 @@ sidebar_position: 2
     <details>
     <summary>Click to check the effect on the workflow</summary>
     <div>
-    ![Picklists](./media/delivery-settings/pick-list.png) ![Document Details](./media/delivery-settings/delivery-document-details-03.png) ![Warehouse](./media/delivery-settings/delivery-warehouse-01.png) ![New Item](./media/delivery-settings/delivery-new-item.png) ![Document Details](./media/delivery-settings/delivery-document-details-04.png) ![Quantity](./media/delivery-settings/delivery-quantity.png) ![Document Details](./media/delivery-settings/delivery-document-details-05.png) ![Remarks](./media/delivery-settings/delivery-remarks.png)
+    ![Picklists](./media/delivery-settings/pick-list.png) ![Document Details](./media/delivery-settings/delivery-document-details-03.png) ![Warehouse](./media/delivery-settings/delivery-warehouse.png) ![New Item](./media/delivery-settings/delivery-new-item.png) ![Document Details](./media/delivery-settings/delivery-document-details-04.png) ![Quantity](./media/delivery-settings/delivery-quantity.png) ![Document Details](./media/delivery-settings/delivery-document-details-05.png) ![Remarks](./media/delivery-settings/delivery-remarks.png)
     </div>
     </details>
 
@@ -87,7 +87,7 @@ sidebar_position: 2
     <details>
     <summary>Click to check the effect on the workflow</summary>
     <div>
-     ![Order Selection](./media/delivery-settings/order-selection-01.png) ![Document Details](./media/delivery-settings/document-details-25.png) ![Warehouse](./media/delivery-settings/warehouse-04.png) ![New Item](./media/delivery-settings/new-item-08.png) ![Document Details](./media/delivery-settings/document-details-26.png) ![Quantity](./media/delivery-settings/quantity-08.png) ![Document Details](./media/delivery-settings/document-details-27.png) ![Remarks](./media/delivery-settings/remarks-08.png)
+    ![Order Selection](./media/delivery-settings/order-selection.png) ![Document Details](./media/delivery-settings/delivery-document-details-02.png) ![Quantity](./media/delivery-settings/delivery-quantity.png) ![Document Details](./media/delivery-settings/delivery-document-details-03.png) ![Warehouse](./media/delivery-settings/delivery-warehouse.png) ![New Item](./media/delivery-settings/delivery-new-item.png) ![Document Details](./media/delivery-settings/delivery-document-details-04.png) ![Document Details](./media/delivery-settings/delivery-document-details-05.png)![Remarks](./media/delivery-settings/delivery-remarks.png)
     </div>
     </details>
 
@@ -96,7 +96,7 @@ sidebar_position: 2
     <details>
     <summary>Click to check the effect on the workflow</summary>
     <div>
-     ![Order Selection](./media/delivery-settings/order-selection-02.png) ![Document Details](./media/delivery-settings/document-details-28.png) ![New Item](./media/delivery-settings/new-item-09.png) ![Document Details](./media/delivery-settings/document-details-29.png) ![Quantity](./media/delivery-settings/quantity-09.png) ![Document Details](./media/delivery-settings/document-details-30.png) ![Remarks](./media/delivery-settings/remarks-09.png)
+    ![Order Selection](./media/delivery-settings/order-selection.png) ![Document Details](./media/delivery-settings/delivery-document-details-02.png) ![Quantity](./media/delivery-settings/delivery-quantity.png) ![Document Details](./media/delivery-settings/delivery-document-details-03.png) ![Warehouse](./media/delivery-settings/delivery-warehouse-01.png) ![New Item](./media/delivery-settings/delivery-new-item.png) ![Document Details](./media/delivery-settings/delivery-document-details-04.png) ![Document Details](./media/delivery-settings/delivery-document-details-05.png)![Remarks](./media/delivery-settings/delivery-remarks.png)
     </div>
     </details>
 
@@ -105,7 +105,7 @@ sidebar_position: 2
     <details>
     <summary>Click to check the effect on the workflow</summary>
     <div>
-     ![Order Selection](./media/delivery-settings/order-selection-03.png) ![Document Details](./media/delivery-settings/document-details-31.png) ![Warehouse](./media/delivery-settings/warehouse-05.png) ![New Item](./media/delivery-settings/new-item-10.png) ![Document Details](./media/delivery-settings/document-details-32.png) ![Quantity](./media/delivery-settings/quantity-10.png) ![Document Details](./media/delivery-settings/document-details-33.png) ![Remarks](./media/delivery-settings/remarks-10.png)
+    ![Order Selection](./media/delivery-settings/order-selection.png) ![Document Details](./media/delivery-settings/delivery-document-details-02.png) ![Quantity](./media/delivery-settings/delivery-quantity.png) ![Document Details](./media/delivery-settings/delivery-document-details-03.png) ![Warehouse](./media/delivery-settings/delivery-warehouse.png) ![New Item](./media/delivery-settings/delivery-new-item.png) ![Document Details](./media/delivery-settings/delivery-document-details-04.png) ![Document Details](./media/delivery-settings/delivery-document-details-05.png)![Remarks](./media/delivery-settings/delivery-remarks.png)
     </div>
     </details>
 
@@ -114,7 +114,7 @@ sidebar_position: 2
     <details>
     <summary>Click to check the effect on the workflow</summary>
     <div>
-     ![Order Selection](./media/delivery-settings/order-selection-04.png) ![Document Details](./media/delivery-settings/document-details-34.png) ![New Item](./media/delivery-settings/new-item-11.png) ![Document Details](./media/delivery-settings/document-details-35.png) ![Quantity](./media/delivery-settings/quantity-11.png) ![Document Details](./media/delivery-settings/document-details-36.png) ![Remarks](./media/delivery-settings/remarks-11.png)
+    ![Order Selection](./media/delivery-settings/order-selection.png) ![Document Details](./media/delivery-settings/delivery-document-details-02.png) ![Quantity](./media/delivery-settings/delivery-quantity.png) ![Document Details](./media/delivery-settings/delivery-document-details-03.png) ![New Item](./media/delivery-settings/delivery-new-item.png) ![Document Details](./media/delivery-settings/delivery-document-details-04.png) ![Document Details](./media/delivery-settings/delivery-document-details-05.png)![Remarks](./media/delivery-settings/delivery-remarks.png)
     </div>
     </details>
 
@@ -129,7 +129,7 @@ A Warehouse is already defined in a Draft document.
     <details>
     <summary>Click to check the effect on the workflow</summary>
     <div>
-    ![Reserve Invoice](./media/delivery-settings/reserve-invoice.png) ![Document Details](./media/delivery-settings/document-details-37.png) ![Warehouse](./media/delivery-settings/warehouse-06.png) ![New Item](./media/delivery-settings/new-item-12.png) ![Document Details](./media/delivery-settings/document-details-38.png) ![Quantity](./media/delivery-settings/quantity-12.png) ![Document Details](./media/delivery-settings/document-details-39.png) ![Remarks](./media/delivery-settings/remarks-11.png)
+    ![Reserve Invoice](./media/delivery-settings/reserve-invoice.png) ![Document Details](./media/delivery-settings/document-details-37.png) ![Warehouse](./media/delivery-settings/warehouse-06.png) ![New Item](./media/delivery-settings/new-item-12.png) ![Document Details](./media/delivery-settings/document-details-38.png) ![Quantity](./media/delivery-settings/quantity-12.png) ![Document Details](./media/delivery-settings/document-details-39.png)
     </div>
     </details>
 
