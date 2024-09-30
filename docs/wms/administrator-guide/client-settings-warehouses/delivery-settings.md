@@ -129,7 +129,7 @@ A Warehouse is already defined in a Draft document.
     <details>
     <summary>Click to check the effect on the workflow</summary>
     <div>
-    ![Reserve Invoice](./media/delivery-settings/reserve-invoice.png) ![Document Details](./media/delivery-settings/document-details-37.png) ![Warehouse](./media/delivery-settings/warehouse-06.png) ![New Item](./media/delivery-settings/new-item-12.png) ![Document Details](./media/delivery-settings/document-details-38.png) ![Quantity](./media/delivery-settings/quantity-12.png) ![Document Details](./media/delivery-settings/document-details-39.png)
+    ![Reserve Invoice](./media/delivery-settings/reserve-invoice.png) ![Document Details](./media/delivery-settings/delivery-document-details-02.png) ![Quantity](./media/delivery-settings/delivery-quantity.png) ![Document Details](./media/delivery-settings/delivery-document-details-03.png) ![Warehouse](./media/delivery-settings/delivery-warehouse.png) ![New Item](./media/delivery-settings/delivery-new-item.png) ![Document Details](./media/delivery-settings/delivery-document-details-04.png) ![Document Details](./media/delivery-settings/delivery-document-details-05.png)![Remarks](./media/delivery-settings/delivery-remarks.png)
     </div>
     </details>
 
@@ -138,7 +138,7 @@ A Warehouse is already defined in a Draft document.
     <details>
     <summary>Click to check the effect on the workflow</summary>
     <div>
-    ![Reserve Invoice](./media/delivery-settings/reserve-invoice-01.png) ![Document Details](./media/delivery-settings/document-details-40.png) ![New Item](./media/delivery-settings/new-item-13.png) ![Document Details](./media/delivery-settings/document-details-41.png) ![Quantity](./media/delivery-settings/quantity-13.png) ![Document Details](./media/delivery-settings/document-details-42.png) ![Remarks](./media/delivery-settings/remarks-13.png)
+    ![Reserve Invoice](./media/delivery-settings/reserve-invoice.png) ![Document Details](./media/delivery-settings/delivery-document-details-02.png) ![Quantity](./media/delivery-settings/delivery-quantity.png) ![Document Details](./media/delivery-settings/delivery-document-details-03.png) ![Warehouse](./media/delivery-settings/delivery-warehouse-01.png) ![New Item](./media/delivery-settings/delivery-new-item.png) ![Document Details](./media/delivery-settings/delivery-document-details-04.png) ![Document Details](./media/delivery-settings/delivery-document-details-05.png)![Remarks](./media/delivery-settings/delivery-remarks.png)
     </div>
     </details>
 
@@ -147,7 +147,7 @@ A Warehouse is already defined in a Draft document.
     <details>
     <summary>Click to check the effect on the workflow</summary>
     <div>
-    ![Reserve Invoice](./media/delivery-settings/reserve-invoice-03.png) ![Document Details](./media/delivery-settings/document-details-43.png) ![Warehouse](./media/delivery-settings/warehouse-07.png) ![New Item](./media/delivery-settings/new-item-14.png) ![Document Details](./media/delivery-settings/document-details-44.png) ![Quantity](./media/delivery-settings/quantity-14.png) ![Document Details](./media/delivery-settings/document-details-45.png) ![Remarks](./media/delivery-settings/remarks-14.png)
+    ![Reserve Invoice](./media/delivery-settings/reserve-invoice.png) ![Document Details](./media/delivery-settings/delivery-document-details-02.png) ![Quantity](./media/delivery-settings/delivery-quantity.png) ![Document Details](./media/delivery-settings/delivery-document-details-03.png) ![Warehouse](./media/delivery-settings/delivery-warehouse.png) ![New Item](./media/delivery-settings/delivery-new-item.png) ![Document Details](./media/delivery-settings/delivery-document-details-04.png) ![Document Details](./media/delivery-settings/delivery-document-details-05.png)![Remarks](./media/delivery-settings/delivery-remarks.png)
     </div>
     </details>
 
@@ -156,6 +156,6 @@ A Warehouse is already defined in a Draft document.
     <details>
     <summary>Click to check the effect on the workflow</summary>
     <div>
-    ![Reserve Invoice](./media/delivery-settings/reserve-invoice-04.png) ![Document Details](./media/delivery-settings/document-details-46.png) ![New Item](./media/delivery-settings/new-item-15.png) ![Document Details](./media/delivery-settings/document-details-47.png) ![Quantity](./media/delivery-settings/quantity-15.png) ![Document Details](./media/delivery-settings/document-details-48.png) ![Remarks](./media/delivery-settings/remarks-15.png)
+    ![Reserve Invoice](./media/delivery-settings/reserve-invoice.png) ![Document Details](./media/delivery-settings/delivery-document-details-02.png) ![Quantity](./media/delivery-settings/delivery-quantity.png) ![Document Details](./media/delivery-settings/delivery-document-details-03.png) ![New Item](./media/delivery-settings/delivery-new-item.png) ![Document Details](./media/delivery-settings/delivery-document-details-04.png) ![Document Details](./media/delivery-settings/delivery-document-details-05.png)![Remarks](./media/delivery-settings/delivery-remarks.png)
     </div>
     </details>
