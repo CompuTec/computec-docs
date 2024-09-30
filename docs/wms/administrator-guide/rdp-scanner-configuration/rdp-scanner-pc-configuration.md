@@ -56,17 +56,17 @@ Take your SYMBOL Scanner and click START → Settings → Control Panel → Data
 
 Click the Running Button on YES → STATUS: Ready.
 
-![Status](./media/status.webp)
+![Status](./media/status.png)
 
 Click Basic Configuration, then Basic Format:
 
-![Basic Format](./media/basic.jpg)
+![Basic Format](./media/basic.png)
 
 Prefix to data → Set \u0002 → Save
 
 Suffix to data → Set \u0003 → Save
 
-![Prefix and Suffix](./media/pref_suf.jpg)
+![Prefix and Suffix](./media/pref_suf.png)
 
 Save and Close.
 
@@ -78,7 +78,7 @@ Open RDP on Scanner, then go to Configuration, General tab, and type in your IPv
 
 Now go to the Display tab, Display Configuration → Set Small.
 
-![Small](./media/small.webp)
+![Small](./media/small.png)
 
 Save and Close.
 
@@ -88,11 +88,11 @@ Next, go to the Local Resources tab, Local Resources - Keyboard - Apply Windows 
 
 Set IPv4 Address (it should be filled in automatically).
 
-![IP](./media/c.webp)
+![IP](./media/rdc.png)
 
 Set the User and Password of the PC.
 
-![IP](./media/ce.webp)
+![IP](./media/rdc-01.png)
 
 ## DataWedge Scanning Configuration(PickList Mode)
 
