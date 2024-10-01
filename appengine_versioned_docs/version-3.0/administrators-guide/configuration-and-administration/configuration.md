@@ -34,7 +34,7 @@ This section provides a description of the Administration features of AppEngine,
 
     ![Admin Panel](./media/overview/browser.png)
 
-4. If this is the first insllation log in using the default credentials:
+4. If this is the first installation login using the default credentials:
 
     Administrator ID: CTSiteUser
 
@@ -46,7 +46,7 @@ You can change password for CTSiteUser in the System Details section.
 
 ## Initial Configuration
 
-System Landscape Directory (SLD) is a service that SAP uses to maintain an inventory of all the companies and systems within the SAP landscape. The SLD helps in managing system configurations, ensuring that the SAP environment is optimized and up-to-date with the necessary settings for each entity. Here are the steps to configure the SLD server and managing associated companies.
+System Landscape Directory (SLD) is a service that SAP uses to maintain an inventory of all the companies and systems within the SAP landscape. The SLD helps in managing system configurations, ensuring that the SAP environment is optimized and up-to-date with the necessary settings for each entity. Here are the steps to configure connection to the SLD server and activate associated companies.
 
 You can find the SLD Server Address in SAP Business One, License Administration.
 
@@ -68,7 +68,7 @@ You can check the CompuTec License Server Address in SAP Business One with Proce
 
 ### Steps to Perform Initial Configuration
 
-1. Begin by configuring the SLD server with the necessary connection details. This involves specifying the **SLD ServerAddress** and **CT License Server**.
+1. Begin by configuring connection to the SLD server by specifying the **SLD ServerAddress** and connection to **CompuTec License Server**.
 
     ![Initial Configuration](./media/configuration-and-administration/initial-configuration.png)
 
@@ -76,23 +76,23 @@ You can check the CompuTec License Server Address in SAP Business One with Proce
 
     ![Initial Configuration](./media/configuration-and-administration/initial-configuration-01.png)
 
-3. After connecting to the SLD server, you will be presented with a **list of companies** configured within the SAP landscape. This list helps in identifying and managing the different SAP environments associated with the server.
+3. After connecting to the SLD server, you will be presented with a **list of companies** configured within the SAP landscape. You can run Dicover at any time to refresh the list of avaiable companies.
 
     ![List of Companies](./media/configuration-and-administration/companies.png)
 
-4. Next, provide the **database user credentials**. These include the username and password for the database server, ensuring secure access to the server’s data. If needed database user can be specified on company level.
+4. Each Company that is activated for use in AppEngine needs credentials to Database Server. You can specify credentials for each company separately or provide default Database User in Server Details section.
 
     ![Database User Credentials](./media/configuration-and-administration/database-user-credentials.png)
 
-5. Verify the status of companies listed. Ensure that the companies are active and properly integrated into the SAP system. This step is crucial for ensuring that all necessary companies are available for configuration and use. To activate company simply click on Active Switch as shown below.
+5. In Companies section you can see statuses of companies used within AppEngine. To activate Company simply click on Active Switch as shown below. This process will guide you through the activation process asking for all required information's.
 
     ![Company Status](./media/configuration-and-administration/company-status.png)
 
-6. Choose a user for the installation process. If a suitable user does not already exist, create a new user account. **This process is not creating user in SAP. It is just creating user in the AppEngine**. This user needs to have the necessary permissions in SAP Business One to handle installation and configuration tasks.
+6. Choose a user for the installation process. If a suitable user does not already exist, specify a new SAP B1 user account. **This process do not create user in SAP. It is just creating user in the AppEngine**. This user needs to have the necessary permissions in SAP Business One to handle installation and configuration tasks. This user will be also used as default for future installations and background processing tasks.
 
     ![Assign Default User](./media/configuration-and-administration/assign-default-user-01.png)
 
-7. Log in using **SLD Server user** to activate the company within the SAP system. This step ensures that the selected company is properly activated and integrated with the SLD server.
+7. Log in using **SLD Server user** to activate the company within the SAP system. This step ensures that the selected company is properly activated and integrated with the SLD server. This process also includes installation of the necessary SAP extensions like CompuTec Start. In Case of Cloud Control Center manual installation of CompuTec Start is required.
 
     ![Activate Company](./media/configuration-and-administration/activate-companies.png)
 
@@ -106,7 +106,7 @@ You can check the CompuTec License Server Address in SAP Business One with Proce
 
     If a suitable user does not already exist, create a **new user** account.
 
-9. Set up and configure **background processing** within the SAP environment.
+9. Set up and configure **background processing** within the SAP environment. AppEngine allows to create plugins with jobs that reacts on various event from SAP Business One. To be able to achieve this procedure needs to be added into SBO_SP_POSTTRANSACTIONNOTICE. This procedure is responsible for storing events that will be consumed by AppEngine to trigger jobs.
 
     ![Background Processing](./media/configuration-and-administration/background-processing.png)
 
@@ -130,9 +130,6 @@ You can check the CompuTec License Server Address in SAP Business One with Proce
     </div>
     </details>
 
-    Click the Close button and Switch the Background Processing State switch to ON on the required database again.
-    In the User column, add a user on which the Background Processing will be operating.
-
 10. Finally, assign an AppEngine instance to the configured environment. This step integrates the application engine with the SAP landscape, enabling the necessary application services and functionalities.
 
 Once the configuration is completed, you can log in to the [Launchpad](../.././appengine-users-guide/launchpad.md)
@@ -149,4 +146,8 @@ Once the initial configuration is complete, the advanced configuration stage all
 6. **Jobs** - Manages scheduled tasks efficiently.
 7. **Plugin Repository** -  Allows for easy installation and management of additional functionalities within the system
 
+//TODO: add screenshots from newest appengine version
+
 ### AppEngine Servers
+
+//TODO: finish this with screenshots
