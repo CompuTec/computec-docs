@@ -21,21 +21,21 @@ sidebar_position: 2
     - The AppEngine configuration database does not exist.
     - The AppEngine configuration database requires an upgrade.
 
-    ![Browser](./media/installation/browser.png)
+    ![Browser](./media/installation/step-01.png)
 
     If AppEngine Page won't open automatically you can manually do so by opening web browser and entering default address: `https://localhost:54001`.
 
-5. Setup the AppEngine by configuring the database server connection.
+5. Setup the AppEngine store by configuring the database server connection.
 
-    1. Step 01 - Enter the following details: Database Server Name, User Name & Password, and Database Provider.
+    1. Step 1 - Enter the following connection details to database server where AppEngine configuration schema will be created: Database Server Name, User Name & Password, and Database Provider.
 
         ![Step 01](./media/installation/step-01.png)
 
-    2. Step 02 - Create the Database.
+    2. Step 2 - If AppEngine database doesn't exists there click on button Create Database to create it. If it exists but requires an upgrade, click on Migrate Database button.
 
         ![Step 02](./media/installation/step-02.png)
 
-    3. Step 03 - After creating the database, you must restart the AppEngine
+    3. Step 3 - After creating the database, you must restart the AppEngine. After restarting the AppEngine, the AppEngine will start in Production Mode.
 
         ![Step 03](./media/installation/restart.png)
 
