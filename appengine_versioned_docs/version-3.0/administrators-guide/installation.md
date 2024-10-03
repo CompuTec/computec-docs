@@ -20,7 +20,7 @@ sidebar_position: 2
     - Unable to establish a connection to the Database Server where the AppEngine configuration is stored.
     - The AppEngine configuration database does not exist.
     - The AppEngine configuration database requires an upgrade.
-	//TODO: fix the image because it is strangly stretched
+	<!-- TODO: fix the image because it is strangly stretched -->
     ![Browser](./media/installation/step-01.png)
 
     If AppEngine Page won't open automatically you can manually do so by opening web browser and entering default address: `https://localhost:54001`.

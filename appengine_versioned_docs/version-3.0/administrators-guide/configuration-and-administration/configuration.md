@@ -146,8 +146,8 @@ Once the initial configuration is complete, the advanced configuration stage all
 6. **Jobs** - Manages scheduled tasks efficiently.
 7. **Plugin Repository** -  Allows for easy installation and management of additional functionalities within the system
 
-//TODO: add screenshots from newest appengine version
+<!-- TODO: add screenshots from newest appengine version -->
 
 ### AppEngine Servers
 
-//TODO: finish this with screenshots
+<!-- TODO: finish this with screenshots -->
