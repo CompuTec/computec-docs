@@ -4,7 +4,7 @@ sidebar_position: 13
 
 # Catch Weight
 
-Catch Weight in CompuTec WMS refers to the ability to measure inventory using both inventory Unit of Measurement (IUoM) and document UoM (DUoM).
+Catch Weight in CompuTec WMS refers to the ability to measure inventory using both inventory Unit of Measurement (IUoM) and Document UoM (DUoM).
 
 ---
 
@@ -76,7 +76,7 @@ The option can be used in the following transactions:
 
 ![Without Catch Weight](./media/without-catch-weight-grpo-from-purchase.webp)
 
-When the Catch Weight option is enabled, on Quantity, there are two quantity fields: the top one for a DUoM quantity (a DUoM called pcs in our case) and the lower one for an IUoM (an IUoM called KG in our case).
+When the Catch Weight option is enabled, on Quantity, there are two quantity fields: the top one for a DUoM quantity (a DUoM called pcs in our case) and the lower one for an Inventory UoM (an IUoM called KG in our case).
 
 By default, one is set in the pcs quantity field to select the quantity for KGs.
 
@@ -86,9 +86,9 @@ When recording a number of entries, in this case, it is suggested to check the K
 
 :::
 
-### Recording total Quantity for different DUoMs of different quantity
+### Recording total Quantity for different UoMs of different quantity
 
-In the video below, you can see the CompuTec WMS with Catch Weight option on behavior when recording ten packages (pcs) with weights ranging from 9,21 to 11,45 (even though the DUoM is set to 10). The transaction used in this example is Goods Receipt PO from Purchase Order:
+In the video below, you can see the CompuTec WMS with Catch Weight option on behavior when recording ten packages (pcs) with weights ranging from 9,21 to 11,45 (even though the UoM is set to 10). The transaction used in this example is Goods Receipt PO from Purchase Order:
 
 Note that the check button on the quantity form does not work with Catch Weight. After setting up the units, click back to Document Details, and choose a required item row, the right arrow, and the Save icon (as shown at the end of the video).
 
