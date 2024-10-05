@@ -16,6 +16,7 @@ To make the whole process easier, you can add the following information to the i
     <summary>How can I check it?</summary>
     <div>
     Run CompuTec WMS Client and choose the options pointed out in the screenshots below:
+
     ![Media](./media/issue-reporting.png)
     </div>
     </details>

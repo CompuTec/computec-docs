@@ -16,7 +16,7 @@ The CompuTec WMS Catch Weight option addresses two main problems:
 
 Example: there is a Purchase order with UoM set to Boxes. A box is set to contain 10 kilograms of an Item:
 
-![Without Catch Weight](./media/without-catch-weight-pf1.webp)
+![Without Catch Weight](./media/catch-weight/catch-weight.png)
 
 In this example, there are 10 Boxes in the purchase document, which gives 100 kilograms of the Item. But in many cases, the company will get ten boxes with the quantity in each box varying, e.g., from 9.7 kilograms to 10.2. The total will not be 100, then.
 
@@ -50,7 +50,7 @@ The option is activated per Item. Go to Item Master Data, find the required Item
 
 - Open User-Defined Fields (Ctrl+Shift+U) and set the Catch Weight Enabled field value to Yes.
 
-![Item Master data Settings](./media/item-master-data-settings.webp)
+![Item Master data Settings](./media/catch-weight/item-master-data-settings.png)
 
 The option can be used in the following transactions:
 
@@ -74,7 +74,7 @@ The option can be used in the following transactions:
 
 ## Usage
 
-![Without Catch Weight](./media/without-catch-weight-grpo-from-purchase.webp)
+![Without Catch Weight](./media/catch-weight/grpo-usage.png)
 
 When the Catch Weight option is enabled, on Quantity, there are two quantity fields: the top one for a DUoM quantity (a DUoM called pcs in our case) and the lower one for an Inventory UoM (an IUoM called KG in our case).
 
@@ -94,7 +94,7 @@ Note that the check button on the quantity form does not work with Catch Weight.
 
 Saving the document from our example results in the following Goods Receipt PO:
 
-![Goods Receipt](./media/goods-receipt-po-result.webp)
+![Goods Receipt](./media/catch-weight/grpo-result.png)
 
 As you can see, CompuTec WMS recorded the total quantity and set an average quantity per unit.
 
