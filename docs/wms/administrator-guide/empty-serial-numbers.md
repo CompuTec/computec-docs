@@ -26,25 +26,13 @@ Here, you can find a description of managing Empty Serial Numbers Items through 
 
 ### GRPO from Purchase Order
 
-![GRPO](./media/GRPO-1.webp)
-
-![GRPO](./media/GRPO-2.webp)
-
-![GRPO](./media/GRPO-3.webp)
-
-![GRPO](./media/GRPO-4.webp)
-
-![GRPO](./media/GRPO-5.webp)
-
-![GRPO](./media/GRPO-6.webp)
-
-![GRPO](./media/GRPO-7.webp)
+![GRPO](./media/empty-serial-numbers/grpo-01.png) ![GRPO](./media/empty-serial-numbers/grpo-02.png) ![GRPO](./media/empty-serial-numbers/grpo-03.png) ![GRPO](./media/empty-serial-numbers/grpo-04.png) ![GRPO](./media/empty-serial-numbers/grpo-05.png) ![GRPO](./media/empty-serial-numbers/grpo-05.png)
 
 #### Result in SAP Business One
 
-![GRPO SAP B1](./media/GRPO-SAP.webp)
+![GRPO SAP B1](./media/empty-serial-numbers/grpo-sap.png)
 
-![GRPO SAP B1](./media/GRPO-SAP-2.webp)
+![GRPO SAP B1](./media/empty-serial-numbers/grpo-sap-01.png)
 
 ### Stock Transfer / From Transfer Request
 
