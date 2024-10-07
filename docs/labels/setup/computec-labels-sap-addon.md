@@ -8,7 +8,7 @@ CompuTec Labels SAP add-on is an extension utilizing printing SAP objects from t
 
 ## Installation
 
-Download installation files from the [download](../releases/download.md#computec-labels-sap-addon-1) page.
+Download installation files from the [download](../releases/download.md#computec-labels-sap-addon)  page.
 
 This is a lightweight deployment add-on. As such, install it, log in to your SLD Service, import and assign the add-on from there.
 
