@@ -9,6 +9,19 @@ toc_max_heading_level: 2
 The latest installer is available to download fom [here](/docs/appengine/releases/appengine/download)
 :::
 
+## AppEngine 2.10.18.103
+
+### *Release Date - 04 October 2024*
+
+| Issue Type | Component/s | Release Note | Related issue/s |
+| - | - | - | - |
+| Bug | AE Analytics | Fixed issue with settings permissions for variants. | - |
+| Bug | AE Analytics | Fixed for import. | - |
+| Bug | AE Analytics | Fixed empty list of aggregation functions for chars. | - |
+| Bug | AE Background Processing | Fix for long start of AppEngine Service where there are lots of jobs to process. | - |
+
+---
+
 ## AppEngine 2.10.17.4 HF1
 
 ### *Release Date - 26 June 2024*
