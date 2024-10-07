@@ -34,31 +34,13 @@ These versions require [CompuTec License Server in 5.10.1.1 version](/docs/proce
 
 |Version|Download Link|
 |---|---|
-|2.0.289|[Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.289.zip)|
-
-## Version Compatible with SAP Business One 9.3 and ProcessForce 9.3
-
-:::caution
-    Since 4.7.1.72 version CompuTec Labels is released in 32-bit and 64-bit version. Both versions work in SAP HANA and Microsoft SQL Server environments.
-
-    Previously CompuTec Labels was released in separate versions for SAP HANA and Microsoft SQL Server.
-:::
-
-|Version|Platform|Download Link|
-|---|---|---|
-|4.7.1.113|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.113_x64.msi)|
-|4.7.1.113|x86|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.113_x86.msi)|
-|4.7.1.106|x86|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.106_x86.msi)|
-|4.7.1.101|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.101_x64.msi)|
-|4.7.1.101|x86|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.101_x86.msi)|
-|4.7.1.82|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.82_x64.msi)|
-|4.7.1.82|x86|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.82_x86.msi)|
-
-### CompuTec Labels SAP Addon
-
-|Version|Download Link|
-|---|---|
-|2.0.255|[Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.255.zip)|
+|2.10.289|[Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.289.zip)|
+|2.10.265|[Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.265.zip)|
+|2.10.260|[Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.260.zip)|
+|2.10.258|[Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.258.zip)|
+|2.10.255|[Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.255.zip)|
+|2.10.239|[Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.239.zip)|
+|2.10.1|[Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.1.zip)|
 
 ## CompuTec Gateway Service
 
