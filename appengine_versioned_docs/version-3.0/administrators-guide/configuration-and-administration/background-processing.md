@@ -30,7 +30,7 @@ A cron expression specifies when the job should be executed (e.g., every day at 
 
 The image shows a configuration screen from the CompuTec ProcessForce Plugin in an administration panel. Below is anexplanation of each section of this configuration, focusing on the background processing job that is being displayed. The example given below is related to Manufacturing Order. This job is responsible for updating the status of the MO when the actual quantity produced reaches the planned quantity. The job operates based on certain filters and plugins.
 
-![Job Details](./media/background-processing/job-details.png)
+![Job Details](./media/background-processing/job-details.png)  <!-- TODO: Update screenshot -->
 
 ### Job Details
 
@@ -39,10 +39,6 @@ The image shows a configuration screen from the CompuTec ProcessForce Plugin in 
 **Job ID**: ManufacturingOrderChangeStatusByQuantityEventBusJob. This ID describes the specific job, which focuses on updating the status of manufacturing orders when certain quantity-based events occur.
 
 **Job Type**: Event. This indicates that the job is event-driven, meaning it is triggered when a certain event (in this case, an update to the MO) takes place.
-
-**Job Parameters**: This section is blank in the screenshot. Normally, if specific parameters are set, they would define how the job operates. These might include thresholds or particular conditions under which the job runs.
-
-**Job Schedule**: Not defined in this case, but if present, this would define the periodicity or timing of when the job executes (e.g., every hour, daily, or only when triggered by an event).
 
 ### Filters
 
@@ -72,7 +68,7 @@ The job is executed using a specific plugin within the system:
 
 To manage jobs within the App Engine, follow these steps:
 
-![Enable and Suspend Jobs](./media/background-processing/enable-disable.png)
+![Enable and Suspend Jobs](./media/background-processing/enable-disable.png) <!-- TODO: Update Screenshot-->
 
 **Enabling a Job**:
 
@@ -86,7 +82,7 @@ If you need to stop a job temporarily without disabling it entirely, you can sus
 
 Each job assignment includes details about the company it’s assigned to, the specific job, and related statistics. This information helps administrators understand how and where jobs are running. You can view the execution history of a job by navigating to its assignment.
 
-![Assignments](./media/background-processing/assignments.png)
+![Assignments](./media/background-processing/assignments.png) <!-- TODO: Update Screenshot-->
 
 ### Assign
 
@@ -125,3 +121,5 @@ Each job assignment includes details about the company it’s assigned to, the s
 **Number of exceptions**: This field is meant to capture how many errors or exceptions have occurred during job execution.
 
 **Number of connection errors**: This field would report on any connection failures between the job and the relevant system or database.
+
+<!-- TODO: Add description and screenshot for executions -->

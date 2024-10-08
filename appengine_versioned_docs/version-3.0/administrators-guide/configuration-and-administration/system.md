@@ -6,17 +6,17 @@ sidebar_position: 5
 
 ## System Details
 
-The AppEngine Version shows the current software engine in operation, ensuring that the system is up-to-date with the latest vesrion. This version provides the latest features and security patches for optimal system performance.
+System Details provides information about AppEngine that we are curently logged in. It includes the AppEngine Version and AppEngine GUID. There is also SAP Computec Start Extension for manual download if required. SAP Computec Start Extension is SAP Business One extension that is started inside SAP Business One client. It provides access to plugins and other features of AppEngine.
 
-The AppEngine GUID is a unique identifier assigned to this specific instance, allowing precise tracking and support for system diagnostics and troubleshooting.
-
-![System Details](./media/system/system-details.png)
+![System Details](./media/system/system-details.png) <!-- TODO: Update screenshot -->
 
 ## Profiles
 
-The panel displays various system profiles related to OpenTelemetry and file logging configurations. Each profile contains its name, description, and an editable "Content" field.
+Profiles are used to store different configtionions for the OpenTelemetry Exporter settings (OTLP Exporter). You can define many different configuration and than attach them when needed to AppEngine or Company.
 
-![System Profiles](./media/system/system-profiles.png)
+ This functionality sends logs, metrics and traces to OLTP server based on this configuration. You can copy the standard templates provided with AppEngine (listed below) and set your Endpoint and Header Values. For more please check [Support for Open Telemetry](https://learn.computec.one/docs/Help/OpenTelemetrySupport)
+
+![System Profiles](./media/system/system-profiles.png) <!-- TODO: Update Screenshot-->
 
 | Profile Names | Descriptions |
 | --- | --- |
@@ -31,16 +31,16 @@ The panel displays various system profiles related to OpenTelemetry and file log
 
 From here, you can restart current AppEngine service
 
-![Restart AppEngine](./media/system/restart-appengine.png)
+![Restart AppEngine](./media/system/restart-appengine.png) <!-- TODO: Update Screenshot-->
 
 ## Password
 
-From here, you can reset the administration password:
+From here, you can change the administration password:
 
-![Administration Password](./media/system/admin-password.png)
+![Administration Password](./media/system/admin-password.png) <!-- TODO: Update Screenshot-->
 
 ## Active Connections
 
-A list of currently active sessions are displayed. Click a connection in the Active sessions table to see the Details of it. You can log out any session by clicking the Log Out button.
+In Active Connection you can check current connection to SAP.
 
-![Active Connections](./media/system/active-connections.png)
+![Active Connections](./media/system/active-connections.png) <!-- TODO: Update Screenshot-->
