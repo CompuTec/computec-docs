@@ -14,6 +14,8 @@ Here, you can find description of FIFO/FEFO/FMFO queues based on Batches, Serial
 
         - if it is installed: the queue type is taken from ProcessForce settings,
         - if it is not installed: you can choose the type in [Custom Configuration → Manager → Enable Batch Management Manager → Set Default Settings](../administrator-guide/custom-configuration/custom-configuration-functions/manager/batch-management-manager.md)
+    ![Queue Type](./media/fifi-fefo-fmfo.png)
+
 - FEFO – the queue is based on 'ExpDate' and (if ProcessForce is installed) U_ExpiryTime.
 - FMFO – the queue is based on 'MnfDate'
 - FIFO – "First In" is based on 'InDate'
