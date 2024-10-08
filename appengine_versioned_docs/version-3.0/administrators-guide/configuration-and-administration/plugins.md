@@ -101,16 +101,6 @@ If you didn't perform installation with activation on AppEngine you can do so by
 
 ## SAP Business One Settings
 
-:::info Path
-SAP Business One (with ProcessForce installed) main menu → Administration → System Initialization → General Settings → ProcessForce tab → AE tab
-:::
+<!-- TODO: Replace with company settings: Configuration -> Companies -> Company Details -> Settings Button -->
 
-![SAP Business One Settings](./media/plugins/appengine-sapb1-settings.webp)
-
-After activating a plugin, go to SAP Business One for further configuration.
-
-Check the checkbox, put in the address (by default: `http://localhost:54001`).
-
-Choose From opening mode: in form (within SAP Business One forms), in browser (in the system's default internet browser), or both.
-
-Click the Save button and Restart SAP Business One.
+Choose From opening mode: in form (within SAP Business One forms), in browser (in the system's default internet browser)
