@@ -11,21 +11,24 @@ sidebar_position: 1
 3. CompuTec WMS splash screen overview
     When running the application for the first time, select the Settings button to set up server addresses.
 
-    ![WMS Main Screen](./media/wms-main-screen.webp)
+    ![WMS Main Screen](./media/starting/wms-main-screen.png)
 
-## General Settings Overview
+## Options Overview
 
-![General Settings](./media/application-settings-general.webp)
+![General Settings](./media/starting/applications-general-settings.png)
 
 ### Info icon
 
 You can check the following information by clicking the 'i' icon:
 
+    ![Info Details](./media/starting/info-details.png)
+
 - Server Name
 - Company Name
 - Database Name
 - Server Version
-- Client Version
+- Client Version (tap twice to [overwrite]( https://learn.computec.one/docs/wms/administrator-guide/computec-wms-android-version/#overwriting-a-client-version))
+- Terminal ID
 
 ### Configuration of WMS client-server Connection
 

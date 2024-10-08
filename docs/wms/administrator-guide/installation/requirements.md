@@ -32,9 +32,9 @@ The minimum version of the .NET Framework supported by CompuTec WMS is 4.7.
 
 We recommend you to install the latest version of .NET Framework – you can do it using the dedicated tool Windows Update or by manually downloading the required files from the Microsoft site:
 
-| Microsoft .NET Framework 4.7 (Web Installer)      | [Link](https://www.microsoft.com/en-us/download/details.aspx?id=55170) |
-| ------------------------------------------------ | ---------------------------------------------------------------------- |
-| Microsoft .NET Framework 4.7 (Offline Installer) | [Link](https://www.microsoft.com/en-us/download/details.aspx?id=55167) |
+[**Microsoft .NET Framework 4.7 (Web Installer)**](https://www.microsoft.com/en-us/download/details.aspx?id=55170)
+
+[**Microsoft .NET Framework 4.7 (Offline Installer)**](https://www.microsoft.com/en-us/download/details.aspx?id=55167)
 
 ## User Defined Objects
 
