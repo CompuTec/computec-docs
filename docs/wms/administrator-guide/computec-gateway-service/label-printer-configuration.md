@@ -22,13 +22,13 @@ This document provides a step-by-step guide on configuring the CompuTec WeightSc
 
     It is placed in an installation folder, which is by default in the following location: C:\Program Files (x86)\CompuTec\CompuTec Weight Service\.
 
-    ![Path](./media/lab1.webp)
+    ![Path](./media/label-printers-configuration/22222.png)
 3. Select the "Label Printers" tab.
 
-    ![Label Printers](./media/lab2.webp)
+    ![Label Printers](./media/label-printers-configuration/label-printers.png)
 4. Click "Add" to add a new Printer with a unique identifier.
 
-    ![Add](./media/lab3.webp)
+    ![Add](./media/label-printers-configuration/add-label-printers.png)
 5. Available Printers tab columns:
 
     - **Id** - Unique identifier of the scale (automatically generated)
