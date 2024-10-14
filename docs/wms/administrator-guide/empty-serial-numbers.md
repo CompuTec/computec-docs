@@ -15,13 +15,9 @@ Here, you can find a description of managing Empty Serial Numbers Items through 
 ## Transactions supported in CompuTec WMS
 
 - GRPO
-
 - Delivery
-
 - Pick and Pack
-
 - Stock Transfer (Transfer Request)
-
 - Stock Counting (planned to be supported).
 
 ### GRPO from Purchase Order

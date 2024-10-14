@@ -9,7 +9,7 @@ sidebar_position: 1
 :::
 
 :::warning
-    Important! For the program to work properly, configure your firewall to make the 8080 port available.
+    Important! For the program to work properly, configure your firewall to make the 54001 port available.
 :::
 
 1. To install CompuTec Gateway Service, download and run its installation file - you can find it here

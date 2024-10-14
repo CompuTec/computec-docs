@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # Label Printers Configuration
@@ -9,7 +9,7 @@ This document provides a step-by-step guide on configuring the CompuTec WeightSc
 ---
 
 :::warning
-    For the program to work correctly, configure your firewall to make the 8080 port available.
+    For the program to work correctly, configure your firewall to make the 54001 port available.
 :::
 
 :::note
@@ -38,25 +38,27 @@ This document provides a step-by-step guide on configuring the CompuTec WeightSc
     ![Numbers](./media/lab4.webp)
 6. Now click on the printer identifier. As you can see, the setup window opened in the Parameters tab.
 
-    ![Right-click](./media/lab5.webp)
-7. Expand the driver tab to select an available device. There are four possibilities (drivers) to connect the printers:
+    ![Right-click](./media/label-printers-configuration/printer-identifier.png)
+7. Expand the driver tab to select an available device. There are five possibilities (drivers) to connect the printers:
 
-    ![Parameters](./media/lab6.webp)
+    ![Parameters](./media/label-printers-configuration//drivers.png)
 
     1. BixolonDriver - We can set the Physical Name of the printer.
+
+        ![Bixolon Driver](./media/label-printers-configuration/bixolon-driver.png)
     2. CrystalDriver - We can set up the Physical Name of the printer and whether it should be saved as a PDF file.
 
-        ![Physical Name](./media/lab7.webp)
+        ![Crystal Driver](./media/label-printers-configuration/crystal-driver.png)
 
-        ![Save as PDF](./media/lab8.webp)
     3. MockDriver - We can set a Physical Name and a Mock Parameter.
 
-        ![Parameters](./media/lab9.webp)
-    4. ZebraDriver - We can set up the Physical Name and CodePage format.
+        ![Mock Driver](./media/label-printers-configuration/mock-driver.png)
+    4. PdfDriver - We can set up the Physical Name of the printer.
 
-8. Now, we can save the configuration and make a test of the printer. Remember to put the Web Address. (We must put the IP address or Machine name where the Service Layer was installed).
-        ![Parameters](./media/lab10.webp)
+        ![PDF Driver](./media/label-printers-configuration/pdf-driver.png)
+    5. ZebraDriver - We can set up the Physical Name and CodePage format.
 
-    We can change/set the Port number in C:\Program Files\CompuTec\CompuTec Service Layer\CompuTec.ServiceLayer.Host.WindowsService.exe
+        ![Zebra Driver](./media/label-printers-configuration/zebra-driver.png)
+8. Now, we can save the configuration and make a test of the printer. Remember to put the web address (We must put the IP address or Machine name where AppEngine was installed).
 
-    ![Parameters](./media/lab11.webp)
+    ![Save Configuration](./media/label-printers-configuration/save-configuration.png)

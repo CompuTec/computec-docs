@@ -50,7 +50,7 @@ The option is activated per Item. Go to Item Master Data, find the required Item
 
 - Open User-Defined Fields (Ctrl+Shift+U) and set the Catch Weight Enabled field value to Yes.
 
-![Item Master data Settings](./media/catch-weight/item-master-data-settings.png)
+    ![Item Master data Settings](./media/catch-weight/item-master-data-settings.png)
 
 The option can be used in the following transactions:
 

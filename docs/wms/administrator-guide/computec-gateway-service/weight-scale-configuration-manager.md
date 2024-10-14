@@ -1,8 +1,8 @@
 ---
-sidebar_position: 7
+sidebar_position: 3
 ---
 
-# Weight Scale Configuration Manager
+# Weight Scale Configuration
 
 This document provides a step-by-step guide on how to configure CompuTec WeightScale manager.
 
