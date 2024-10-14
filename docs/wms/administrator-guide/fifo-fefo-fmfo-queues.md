@@ -16,11 +16,13 @@ Here, you can find a description of FIFO/FEFO/FMFO queues based on Batches, Seri
 
   - if it is not installed, you can choose the type in Custom Configuration → Manager → Enable Batch Management Manager → Set Default Settings
 
-- FEFO – the queue is based on 'ExpDate' and (if ProcessForce is installed) U_ExpiryTime.
+- FEFO - the queue is based on 'ExpDate' and (if ProcessForce is installed) U_ExpiryTime.
 
-- FMFO – the queue is based on 'MnfDate'
+- FMFO - the queue is based on 'MnfDate'
 
-- FIFO – "First In" is based on 'InDate'
+- FIFO - "First In" is based on 'InDate'
+
+  ![FIFO FMFO FIFO Queues](./media/fifi-fefo-fmfo.png)
 
 ## Serial Numbers managed Items, Items managed neither by Batches nor Serial Numbers
 
