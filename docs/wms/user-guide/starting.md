@@ -44,7 +44,7 @@ Other options include:
 
 - *Enable Telemetry(not configured on server)*: Activate the feature to collect performance and usage data.
 - *Large Menu Icons*: Increase icon size in the menu, with a layout change to two columns instead of three.
-- *Auto-Focus on Quantity Field*: On the Quantity screen, the cursor will automatically move to the - Quantity field, simplifying the entry process.
+- *Auto-Focus on Quantity Field*: On the Quantity screen, the focus will automatically move to the - Quantity field, simplifying the entry process.
 - *Disable Formatting on Quantity Field*: Remove decimal places and separators from the Quantity field for a cleaner input.
 
     ![other Option](./media/starting/other-options.png)

@@ -20,7 +20,7 @@ Check the highlighted checkbox in Custom Configuration (CC):
 
 An Inventory Transfer document in SAP Business One:
 
-![In SAP B1](./media/document-in-sap.webp)
+![In SAP B1](./media/inventory-transfer-request.png)
 
 A Pick List for this document:
 
