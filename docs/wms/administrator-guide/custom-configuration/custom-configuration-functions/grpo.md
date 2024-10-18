@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # GRPO
 
-![GRPO](./media/grpo.webp)
+![GRPO](./media/grpo/grpo-01.png)
 
 **After picking an item, auto return** – this option allows you to change the window to which the application will go after setting and confirming the quantity for an Item.
 
@@ -13,11 +13,11 @@ sidebar_position: 1
     <div>
     **Main Document Workflow**
 
-    ![Quantity](./media/grpo/quantity.png) ![Document Details](./media/grpo/document-details.png)    
+    ![Quantity](./media/grpo/main-document-workflow.png)   
 
     **Item Details Workflow**
 
-    ![Quantity](./media/grpo/quantity-01.png) ![Storage Info](./media/grpo/storage-info.png)
+    ![Quantity](./media/grpo/item-details-workflow.png)
     </div>
     </details>
 
@@ -26,7 +26,7 @@ sidebar_position: 1
     <details>
     <summary>Click here to expand</summary>
     <div>
-    ![Project Selection](./media/grpo/document-details-02.png) ![Project Selection](./media/grpo/project-selection-01.png)
+    ![Project Selection](./media/grpo/project-selection.png)
     </div>
     </details>
 
@@ -45,10 +45,12 @@ sidebar_position: 1
     <summary>Click here to expand</summary>
     <div>
     By default, the option is switched off, and the Remarks window looks like this:
-        ![Remarks](./media/grpo/remarks.png)
+
+        ![Remarks](./media/grpo/save-draft.png)
     
     When the option is switched on, the Remarks window looks like this:
-        ![Remarks](./media/grpo/remarks-01.png)
+
+        ![Remarks](./media/grpo/save-draft-on.png)
     </div>
     </details>
 
@@ -58,11 +60,14 @@ sidebar_position: 1
     <summary>Click here to expand</summary>
     <div>
     When the option is checked, two options are available in the Remarks field:
-        ![Remarks](./media/grpo/remarks%20-02.png)
+
+        ![Remarks](./media/grpo/drafts-on.png)
     </div>
     </details>
 
 **GRPO SU creator: Allow selection of only one item per SU** – this option prevents the user from picking more than one Item from a base document for an SU when creating it by using SU Creator in Goods Receipt PO transaction. For example, this option can be used, e.g., when we want to create pallets with a single type of Item.
+
+The error message appears when you select more than one in SU Wizard: Only one item per SU is allowed.
 
     <details>
     <summary>Click here to expand</summary>
@@ -89,13 +94,14 @@ sidebar_position: 1
     </details>
 
 **Enable adding Items with Empty Bin Code field** – it allows to add Items without Bin Code to a Warehouse with Bin Locations. If enabled, an Item with an empty Bin Code will be assigned to the first available Bin.
-
+    {/*
     <details>
     <summary>Click here to expand</summary>
     <div>
     ![Warehouse](./media/grpo/warehouse-01.png) ![Supplier Selection](./media/grpo/supplier-selection.png) ![Document Details](./media/grpo/document-details-01.png) ![New Item](./media/grpo/new-item.png) ![Quantity](./media/grpo/quantity-02.png)
     </div>
     </details>
+    */}
 
 **Enable negative quantities for Items not managed by batch/serial number** – allows using negative quantities for Items managed neither by Batches nor Serial Numbers.
 
@@ -108,9 +114,11 @@ sidebar_position: 1
         - Draft document with negative quantity is not supported
         - Storage Unit does not support negative quantity. 
 
+        {/*
         ![Enable Negative Quantities](./media/grpo/document-details-06.png) ![Enable Negative Quantities](./media/grpo/new-item-01.png) ![Enable Negative Quantities](./media/grpo/quantity-04.png) ![Enable Negative Quantities](./media/grpo/quantity-05.png)
         ![Enable Negative Quantities](./media/grpo/negative.png)
         ![Enable Negative Quantities](./media/grpo/negative-01.png)
+        */}
     </div>
     </details>
 
