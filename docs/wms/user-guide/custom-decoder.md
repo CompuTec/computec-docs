@@ -124,7 +124,7 @@ Types of variables:
 
 **Input Variables** – input variables that you can use as input parameters for rules. By default, as a BARCODE input variable, it puts the whole text read from a barcode.
 
-**Internal Variables** – variables you can use as input and output parameters for rules. Temporary variables.
+**Internal Variables** – variables you can use as input and output parameters for rules. Temporary variables. You can use BusinessObject value by inserting '#' before the variable name
 
 **Output Variables** – you can use them as output parameters for rules.
 

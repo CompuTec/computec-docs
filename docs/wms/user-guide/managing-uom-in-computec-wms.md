@@ -24,36 +24,38 @@ An Inventory Transfer document in SAP Business One:
 
 A Pick List for this document:
 
-![Pick List in SAP](./media/pick-list-in-sap.webp)
+![Pick List in SAP](./media/pick-list-in-sap.png)
 
 Without the CC checkbox, the quantities are displayed by Warehouse quantities:
 
-![Document Details](./media/without-checkbox.webp)
+![Document Details](./media/without-checkbox.png)
 
 When the CC checkbox is checked, the quantities are displayed by UoM:
 
-![Document Details](./media/with-checkbox.webp)
+![Document Details](./media/with-checkbox.png)
 
 ## From Transfer Request
 
 CompuTec WMS takes the UoM from a base SAP Business One document:
 
-![Document Details](./media/from-transfer-request-uom.webp)
+![Inventory Transfer Request](./media/inventory-transfer-request.png)
+
+![Document Details](./media/uom-wms-client.png)
 
 ## Stock Transfer / Transfer Request
 
 1. CompuTec WMS takes UoM from the Inventory Data tab.
 
-    ![SAP B1](./media/uom-inventory.webp)
+    ![SAP B1](./media/uom-inventory.png)
 2. Check the highlighted checkbox:
 
-    ![Custom Configuration](./media/cc-stock-transfer-uom.webp)
+    ![Custom Configuration](./media/cc-stock-transfer-uom.png)
 
 Now CompuTec WMS takes UoM from the Sales Data tab:
 
-![Sales UoM](./media/sales-uom.webp)
+![Sales UoM](./media/sales-uom.png)
 
-![Document Details](./media/sales-uom-wms.webp)
+![Document Details](./media/uom-wms-client.png)
 
 ## Custom Queries
 
@@ -65,7 +67,7 @@ Using a custom query, you can choose a line with any UoM. To do it, you have to 
 
 ![Custom Configuration](./media/cc-query-manager-3.webp)
 
-### For MS SQL
+### For SAP without ProcessForce
 
 ```sql
 SELECT TOP 100 PERCENT
@@ -107,7 +109,7 @@ WHERE (('@WhereFilterValue' = '' AND ''='') OR ('@WhereFilterValue' <> '' AND (@
 ORDER BY T0."ItemCode", u."UomCode"
 ```
 
-### For ProcessForce
+### For SAP with ProcessForce
 
 ```sql
 SELECT T0."ItemCode",  T0."UoM", T0."ItemCode" AS "Field1", T0."ItemName" AS "Field3", SUM(T0."Qty") AS "Field2", T0."UoM" AS "Field4" FROM (
@@ -179,9 +181,9 @@ ORDER BY T0."ItemCode", T0."UoM"
 
 CompuTec WMS will show a list of all UoM, and you can choose a required group.
 
-![New Item](./media/cc-query-manager-result.webp)
+![New Item](./media/new-item.png)
 
-![New Item](./media/cc-query-manager-result-2.webp)
+![New Item](./media/cc-query-manager-result.png)
 
 Adding a custom query to one transaction, e.g., Transfer Request, is possible.
 
