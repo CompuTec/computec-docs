@@ -65,10 +65,10 @@ sidebar_position: 1
     </div>
     </details>
 
-**GRPO SU creator: Allow selection of only one item per SU** – this option prevents the user from picking more than one Item from a base document for an SU when creating it by using SU Creator in Goods Receipt PO transaction. For example, this option can be used, e.g., when we want to create pallets with a single type of Item.
+**GRPO SU creator: Allow selection of only one item per SU** - The error message appears when you select more than one in SU Wizard: Only one item per SU is allowed.
 
-The error message appears when you select more than one in SU Wizard: Only one item per SU is allowed.
-
+    ![Error Message](./media/grpo/error-message.png)
+    {/*
     <details>
     <summary>Click here to expand</summary>
     <div>
@@ -79,19 +79,11 @@ The error message appears when you select more than one in SU Wizard: Only one i
         ![Items Document](./media/grpo/items-document.png) ![Items Document](./media/grpo/items-document-01.png)
     </div>
     </details>
+    */}
 
 **Scan DocNum on the Base Document selection window** – checking this option allows you to scan a document by Docm, not by DocEntry.
 
 **Force manual quantity confirmation** – with this option checked, it is required to manually confirm the quantity previously set up (scanning a barcode does not confirm it automatically).
-
-**Enable adding Items from multiple Warehouses** – if the option is checked, adding Items from different Warehouses is possible, and the Warehouse window will be displayed during the transaction.
-
-    <details>
-    <summary>Click here to expand</summary>
-    <div>
-    ![Warehouse](./media/grpo/document-details-05.png) ![Warehouse](./media/grpo/warehouse-02.png)
-    </div>
-    </details>
 
 **Enable adding Items with Empty Bin Code field** – it allows to add Items without Bin Code to a Warehouse with Bin Locations. If enabled, an Item with an empty Bin Code will be assigned to the first available Bin.
     {/*
@@ -148,7 +140,7 @@ The error message appears when you select more than one in SU Wizard: Only one i
     <details>
     <summary>Click here to expand</summary>
     <div>
-    ![Supplier Reference No.](./media/grpo/supplier-ref.png)
+    ![Supplier Reference No.](./media/grpo/supplier-ref-no.png)
     </div>
     </details>
 
@@ -165,7 +157,7 @@ The error message appears when you select more than one in SU Wizard: Only one i
     <details>
     <summary>Click here to expand</summary>
     <div>
-    ![Auto Quantity](./media/grpo/auto-quantity.png)
+    ![Auto Quantity](./media/grpo/grpo-quantity.png)
     </div>
     </details>
 
@@ -185,9 +177,12 @@ The error message appears when you select more than one in SU Wizard: Only one i
         1. **No action** - No action is performed
         2. **Quantity** - The difference is recorded in the quantity field
         (In No. of Packages, the number of packages is an integer)
-        ![Quantity](./media/grpo/quantity-03.png)
+
+            ![Quantity](./media/grpo/quantity-03.png)
+
         3. **Inventory Quantity** - The difference is recorded in the Qty(Inventory UoM) field
-        ![Inventory Quantity](./media/grpo/inventory-quantity.png)
+
+            ![Inventory Quantity](./media/grpo/inventory-quantity.png)
     </div>
     </details>
 
@@ -195,18 +190,27 @@ The error message appears when you select more than one in SU Wizard: Only one i
 
 Old view of the tab:  Goods Receipt PO.
 
-The following options have been removed: Extra field in Purchase Orders query (1) and Purchase Orders sorting order (2). Functionalities of both of these options can now be used through Custom Query Manager.
+The following options have been removed:
+
+1. Extra field in Purchase Orders query, and
+2. Purchase Orders sorting order
+
+Functionalities of both of these options can now be used through Custom Query Manager.
+
     ![GRPO](./media/grpo/grpo-tab.png)
 
-To set up the options go to Manager tab, check Enable Custom Query Manager checkbox and log in using SAP Business One credentials.
-    ![Custom Query Manager Checkbox](./media/grpo/custom-query-manager-checkbox.png)
+To set up the options go to Manager tab,
 
-Next, choose Goods Receipt PO option and click Load.
-    ![GRPO](./media/grpo/grpo.png)
+1. check Enable Custom Query Manager checkbox
+2. choose Goods Receipt PO option
+3. click Load
+
+    ![Custom Query Manager Checkbox](./media/grpo/custom-query-manager-checkbox.png)
 
 **AD.1 Extra field in Purchase Orders query**
 
 Choose Purchase Order List and click Load button next to it:
+
     ![Purchase Order List](./media/grpo/po-list.png)
 
 Now you can see the information on:
@@ -214,9 +218,11 @@ Now you can see the information on:
 - required fields
 - available parameters
 - filter parameters
+
     ![Fields](./media/grpo/fields-02.png)
 
 You can create your own query, use a default one (by clicking Copy from default button) or modify the default one.
+
     ![Create Own Query](./media/grpo/create-own-query.png)
 
 An example query:
@@ -224,23 +230,27 @@ An example query:
 In this example it is required to display a currency code in the 4 field. It will be done in Goods Receipt PO --> from Purchase Order window, on choosing a purchase document.
 
 Here, you can check the default query:
+
     ![Default Query](./media/grpo/default-query.png)
 
 and a query modified for this example:
+
     ![Modified Query](./media/grpo/modified-query.png)
 
 The following lines have been changed:
 
 | Old Line | New Line |
 | --- | --- |
-| `T0."CardName" AS "Filed4"` | `coalesce(cast(T0."DocCur" AS nvarchar(4000)), '')+'//'+coalesce(cast(T0."CardName" AS nvarchar(4000)), '')) AS "Field4"` |
+| `T0."CardName" AS "Filed4"` | `(coalesce(cast(T0."DocCur" AS nvarchar(4000)), '')\|\|'//'\|\|coalesce(cast(T0."CardName" AS nvarchar(4000)), '')) AS "Field4"`|
 
 The new line takes the following information from the table: a values of a currency code, a sign that will separate the values and on which field it will be displayed.
 
 The screenshots below presents the difference in results between the default and modified for this example queries:
-    ![Order Selection](./media/grpo/order-selection-02.PNG)
+
+    ![Order Selection](./media/grpo/order-selection.png) ![Order Selection](./media/grpo/order-selection-01.png)
 
 Here you can check from where the data is taken for this example:
+
     ![Data](./media/grpo/data.png)
     ![Data](./media/grpo/data-01.png)
 
