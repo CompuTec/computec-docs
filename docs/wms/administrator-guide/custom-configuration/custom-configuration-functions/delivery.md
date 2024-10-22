@@ -6,39 +6,25 @@ sidebar_position: 4
 
 ![Delivery](./media/cc-delivery.webp)
 
-**Delivery Workflow** allows you to choose one of three workflows for Pick Lists: Default, Customer-Date, or Date-Customer.
-    <details>
-    <summary>Click here to expand</summary>
-    <div>
-    **Main Document Workflow**
+**Delivery Workflow** allows you to choose one of three workflows for Pick Lists:
 
-    ![Main Document Workflow](./media/delivery/document-workflow.png) ![Main Document Workflow](./media/delivery/document-workflow-01.png)
+1. Default Workflow
 
-    **Item Details Workflow**
+    ![Default Workflow](./media/delivery/default-workflow.png)
 
-    ![Item Details Workflow](./media/delivery/item-details-workflow.png) ![Item Details Workflow](./media/delivery/item-details-workflow-01.png)
-    </div>
-    </details>
+2. Customer-Date Workflow
+
+    ![Customer Date Workflow](./media/delivery/customer-selection.png) ![Customer Date Workflow](./media/delivery/pick-date.png)
+
+3. Date-Customer Workflow
+
+    ![Date Customer Workflow](./media/delivery/pick-date.png) ![Date Customer Workflow](./media/delivery/customer-selection.png)
 
 **Scanned SU validation** – three options: 'Match selected Warehouse,' 'Match any base document, Line,' 'No validation.'
 
 When "Match selected warehouse" is selected, it will block adding Storage Units with a different warehouse than set on the document - for example, when a new, empty Delivery document is created, and a warehouse needs to be chosen.
 
 However, when a user creates a Delivery document from a base document, for example, Sales Order, there is no warehouse selection. Thus this option will not have any effect.
-    <details>
-    <summary>Click here to expand</summary>
-    <div>
-    Match any base document Line.
-
-        ![Document Details](./media/document-details-04.png) ![Document Details](./media/document-details-05.png)
-        ![Storage Unit](./media/storage-unit-01.png) ![Storage Unit](./media/storage-unit-02.png)
-
-    Match selected Warehouse
-    
-        ![Document Details](./media/document-details-06.png) ![Document Details](./media/document-details-07.png)
-        ![Storage Unit](./media/storage-unit-03.png) ![Storage Unit](./media/storage-unit-04.png)
-    </div>
-    </details>
 
 **Show Project selection** – Choosing this option causes displaying a window with Project selection before the Remarks window during the transaction.
 
@@ -48,7 +34,7 @@ However, when a user creates a Delivery document from a base document, for examp
     <details>
     <summary>Click here to expand</summary>
     <div>
-    ![Delivery Remarks](./media/delivery-remarks-01.png)
+    ![Delivery Remarks](./media/delivery/delivery-drafts.png)
     </div>
     </details>
 
@@ -56,7 +42,7 @@ However, when a user creates a Delivery document from a base document, for examp
     <details>
     <summary>Click here to expand</summary>
     <div>
-    ![Delivery Remarks](./media/delivery-remarks.png)
+    ![Delivery Remarks](./media/delivery/delivery-drafts-on.png)
     </div>
     </details>
 
@@ -69,12 +55,8 @@ However, when a user creates a Delivery document from a base document, for examp
 **Copy the packed Items from the Pick List** – self-explanatory.
 
 **Forbid ordering greater quantities than on Order** – checking this checkbox blocks the possibility of issuing a higher quantity than on a base document.
-    <details>
-    <summary>Click here to expand</summary>
-    <div>
-    ![Delivery Operations](./media/delivery/delivery-operations.png) ![Order Selection](./media/delivery/order-selection.PNG) ![Document Details](./media/delivery/document-details-01.png) ![Storage Info](./media/delivery/storage-info.png) ![Batches](./media/delivery/batches-02.png) ![Quantity](./media/delivery/quantity.png) ![Quantity](./media/delivery/quantity-01.png)
-    </div>
-    </details>
+
+    ![Error Message](./media/delivery/error-message.png)
 
 **Hide scanned SU on Item list** – by default, scanning SU adds quantities of Item on it to a specific Item on the Item list and additionally SU as a line on the list. When the checkbox is checked, Item quantities are added to respective Item lines, but SU is not added as a separate line.
 
@@ -109,21 +91,27 @@ However, when a user creates a Delivery document from a base document, for examp
 ## Changes
 
 The old Delivery tab view:
+
     ![Delivery Tab Old](./media/delivery/delivery-tab.png)
 
 The following checkoboxes have been removed: Show document drafts, Extra field in Order query, Sales Orders sorting order, Issue only Batches from MOR for selected BPs, Show only Pick Lists with Picked status.
 
 To used the previously available option, it is required to create a specific SQL query by using Custom Query Manager:
+
     ![Enable Custom Query Manager Delivery](./media/delivery/enable-custom-query-manager-delivery.png)
 
 On the following screenshot you can check were to find replacements for the removed functions (compare the numbers with the first screenshot on this page):
+
     ![Custom Query Manager Delivery](./media/delivery/custom-query-manager-delivery.png)
+
     ![WMS Custom Configuration](./media/delivery/wms-custom-configuration.png)
 
 **Example for Show document drafts option (1)**
 
 Changing T0."CardName" AS "Field4" line to T0."DocStatus" AS "Field4" (instead of customer name there will be a document status - if it is open or closed).
+
     ![Custom Query SQL](./media/delivery/custom-query-sql-form.png)
+
     ![SQL Query](./media/delivery/sql-query.png)
 
 **Examples for Sales Orders sorting order and Extra field in Orders query options (2, 3)**
@@ -138,7 +126,7 @@ It is possible to use the option in four ways:
     | duodate descending | `"DocDuoDate" DESC` |
 
 To change sorting order it is required to make changes in ORDER BY line. In the example below the sorting order was changed from sorting by creation date to sorting by document number (T0."DocDueDate" changed to T0."DocNum"). Here you can check the previous state and result of the change:
-    ![Order Selection](./media/delivery/order-selection.PNG)
+
     ![Document Number](./media/delivery/doc-number-desc.png)
 
 **Example for Issue only Batches from MOR for selected BPs option (4)**
@@ -161,6 +149,7 @@ A line that have to be added for filter to work properly:
 5. Generate a Batch and save progress, by this creating a Batch for the Manufacturing Order.
 
 Here you can check the process on screenshots:
+
     ![Pick Receipt Batches Setup](./media/delivery/pick-receipt-batches-setup.png)
     ![Order Selection](./media/delivery/order-selection-01.png)
     ![Document Details](./media/delivery/document-details.png)
@@ -168,6 +157,7 @@ Here you can check the process on screenshots:
     ![Batch Quantity](./media/delivery/batch-quantity.PNG)
 
 Going to Delivery > From Sales Order, choosing the required document number (757 in this case). In Item details we add Batches assigned to the Manufacturing Order:
+
     ![Batches](./media/delivery/batches-01.png)
 
 The only Batches available are the ones that were generated on receiving from Manufacturing Order.
@@ -177,12 +167,15 @@ The only Batches available are the ones that were generated on receiving from Ma
 In the default query it is required to find this line: `T0."Status" <> 'C'  and change it to T0."Status" = 'P'`
 
 The following screenshots present an example query, changes required to be made and the result in CompuTec WMS:
+
     ![Delivery](./media/delivery/delivery.png)
 
 `T0."Status" <> 'C' changed to T0."Status" = 'P'`
+
     ![Status](./media/delivery/status.png)
 
 The result:
-    ![Pick List](./media/delivery/pick-list.PNG)
+
+![Pick List](./media/delivery/pick-list.PNG)
 
 Show document drafts checkbox has been removed due to the fact of adding an option to choose document drafts in application.

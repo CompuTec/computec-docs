@@ -24,7 +24,7 @@ sidebar_position: 2
     <details>
     <summary>Click here to expand</summary>
     <div>
-    ![Document Details](./media/goods-receipt/document-details-04.png) ![Project Selection](./media/goods-receipt/project-selection-02.png)
+    ![Document Details](./media/goods-receipt/show-project-selection.png)
     </div>
     </details>
 
@@ -43,11 +43,13 @@ sidebar_position: 2
     <div>
 
     By default, this option is turned off. In this case, the Remarks windows look like this:
-        ![Draft](./media/goods-receipt/remarks.png)
+
+        ![Draft](./media/goods-receipt/gr-remarks.png)
 
     
     When the option is turned on, a new option is added (highlighted in the screenshot below):
-        ![Draft](./media/goods-receipt/remarks-04.png)
+
+        ![Draft](./media/goods-receipt/gr-remarks-01.png)
     </div>
     </details>
 
@@ -57,7 +59,8 @@ sidebar_position: 2
     <summary>Click here to expand</summary>
     <div>
         When the option is checked, two function buttons are available:
-        ![Draft](./media/goods-receipt/draft.png)
+
+        ![Draft](./media/goods-receipt/gr-drafts-on.png)
     </div>
     </details>
 

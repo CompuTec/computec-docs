@@ -146,13 +146,13 @@ sidebar_position: 1
 
 **Use Purchase UoM from Base Document** – checking this option displays quantities in Unit of Measure from the Base Document (while still operating on the actual quantities). Saving as document drafts is not possible when this option is turned on. Click [here](../../../user-guide/managing-uom-in-computec-wms.md) to find out more.
 
-**Skip Storage Unit details**
+**Skip Storage Unit details** - The Storage Unit details screen doesn't display if a warehouse has been selected.
 
-**Hide SU**
+**Hide SU** - Options related to the creation of a Storage Unit (SU) are not visible.
 
-**Do not clear batch** – when checked, the application stays in the Quantity screen after adding a Batch.
+**Do not clear batch** – When checked, the application stays in the Quantity screen after adding a Batch.
 
-**Automatically populate the Quantity field with the value from the base document** – self-explanatory.
+**Automatically populate the Quantity field with the value from the base document** – When saving the batch, the system remains on the Quantity screen with the same batch entered.
 
     <details>
     <summary>Click here to expand</summary>
