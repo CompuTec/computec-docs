@@ -24,7 +24,7 @@ Here you can download all required CompuTec WMS files.
 
 ## Current Releases
 
-Released on 13.08.2024
+Released on 24.10.2024
 
 :::warning
     Due to changes in the licensing mechanism in the 2.10.19 R3/2.9.19 R3 version, it is required to reassign terminal licenses to terminals after the upgrade.
@@ -35,7 +35,7 @@ Released on 13.08.2024
     [https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.0-windows-x64-installer?cid=getdotnetcore](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.0-windows-x64-installer?cid=getdotnetcore)
 :::
 
-Click [here](/docs/appengine/releases/plugins/wms-stock-counting/download) to get AppEngine plugin for Stock Counting.
+Click [here](/docs/appengine/releases/plugins/wms-stock-counting/download) to get AppEngine plugin for Stock Counting and Compatibility Tools.
 
 If you use the ProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to install CompuTec License Server in 5.11.0.1 or later version and CompuTec WMS in the latest version.
 
@@ -51,9 +51,9 @@ If you use the ProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to instal
   </tr>
   <tr>
     <td>CompuTec WMS Server</td>
-    <td>2.10.22 R5 64-bit version</td>
-    <td rowspan="5">2.10.22.5</td>
-    <td><a href="https://download.computec.one/software/wms/server/releases/CompuTec_WMS_Server_2.10.22.5_x64.exe">Download</a></td>
+    <td>2.10.22 R6 64-bit version</td>
+    <td rowspan="5">2.10.22.6</td>
+    <td><a href="https://download.computec.one/software/wms/server/releases/CompuTec_WMS_Server_2.10.22.6_x64.exe">Download</a></td>
     <td>
       <ul>
         <li>
@@ -77,25 +77,25 @@ If you use the ProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to instal
   <tr>
     <td>CompuTec WMS Client Windows Desktop</td>
     <td>-</td>
-    <td><a href="https://download.computec.one/software/wms/client/windows/releases/CompuTec_WMS_Client_2.10.22.5.msi">Download</a></td>
+    <td><a href="https://download.computec.one/software/wms/client/windows/releases/CompuTec_WMS_Client_2.10.22.6.msi">Download</a></td>
     <td>-</td>
   </tr>
   <tr>
     <td>CompuTec WMS Client Windows Desktop (legacy)</td>
     <td>-</td>
-    <td><a href="https://download.computec.one/software/wms/client/windows/releases/CompuTec_WMS_Client_Legacy_2.10.22.5.msi">Download</a></td>
+    <td><a href="https://download.computec.one/software/wms/client/windows/releases/CompuTec_WMS_Client_Legacy_2.10.22.6.msi">Download</a></td>
     <td>-</td>
   </tr>
   <tr>
     <td>CompuTec WMS Client Windows CE</td>
     <td>-</td>
-    <td><a href="https://download.computec.one/software/wms/client/ce/releases/CompuTec_WMS_Client_2.10.22.5.cab">Download</a></td>
+    <td><a href="https://download.computec.one/software/wms/client/ce/releases/CompuTec_WMS_Client_2.10.22.6.cab">Download</a></td>
     <td>-</td>
   </tr>
   <tr>
     <td>CompuTec WMS Client Android</td>
     <td>-</td>
-    <td><a href="https://download.computec.one/software/wms/client/android/releases/CompuTec_WMS_Client_2.10.22.5.apk">Download</a></td>
+    <td><a href="https://download.computec.one/software/wms/client/android/releases/CompuTec_WMS_Client_2.10.22.6.apk">Download</a></td>
     <td>-</td>
   </tr>
 </table>
@@ -112,9 +112,9 @@ If you use the ProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to instal
   </tr>
   <tr>
     <td rowspan="2">CompuTec WMS Server</td>
-    <td>2.9.22 R5 32-bit version</td>
-    <td rowspan="5">2.9.22.5</td>
-    <td><a href="https://download.computec.one/software/wms/server/releases/CompuTec_WMS_Server_2.9.22.5_x86.exe">Download</a></td>
+    <td>2.9.22 R6 32-bit version</td>
+    <td rowspan="5">2.9.22.6</td>
+    <td><a href="https://download.computec.one/software/wms/server/releases/CompuTec_WMS_Server_2.9.22.6_x86.exe">Download</a></td>
     <td>
       <ul>
         <li>
@@ -136,8 +136,8 @@ If you use the ProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to instal
     </td>
   </tr>
   <tr>
-    <td>2.9.22 R5 64-bit version</td>
-    <td><a href="https://download.computec.one/software/wms/server/releases/CompuTec_WMS_Server_2.9.22.5_x64.exe">Download</a></td>
+    <td>2.9.22 R6 64-bit version</td>
+    <td><a href="https://download.computec.one/software/wms/server/releases/CompuTec_WMS_Server_2.9.22.6_x64.exe">Download</a></td>
     <td>
       <ul>
         <li>
@@ -161,13 +161,13 @@ If you use the ProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to instal
   <tr>
     <td>CompuTec WMS Client Windows</td>
     <td>-</td>
-    <td><a href="https://download.computec.one/software/wms/client/windows/releases/CompuTec_WMS_Client_2.9.22.5.msi">Download</a></td>
+    <td><a href="https://download.computec.one/software/wms/client/windows/releases/CompuTec_WMS_Client_2.9.22.6.msi">Download</a></td>
     <td>-</td>
   </tr>
   <tr>
     <td>CompuTec WMS Client Windows CE</td>
     <td>-</td>
-    <td><a href="https://download.computec.one/software/wms/client/ce/releases/CompuTec_WMS_Client_2.9.22.5.cab">Download</a></td>
+    <td><a href="https://download.computec.one/software/wms/client/ce/releases/CompuTec_WMS_Client_2.9.22.6.cab">Download</a></td>
     <td>-</td>
   </tr>
 </table>*/}
