@@ -6,6 +6,8 @@ import Releases from "../../../wms-releases.json";
 
 # Download
 
+## WMS Stock Counting
+
 :::caution
     In order to use this plugin, you have to install the CompuTec ProcessForce plugin first.
 :::
