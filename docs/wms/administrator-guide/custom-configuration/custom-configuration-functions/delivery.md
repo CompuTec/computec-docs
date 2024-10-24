@@ -6,19 +6,24 @@ sidebar_position: 4
 
 ![Delivery](./media/cc-delivery.webp)
 
-**Delivery Workflow** allows you to choose one of three workflows for Pick Lists:
+**Delivery Workflow** allows you to choose one of three workflows for Pick Lists:Default Workflow, Customer-Date Workflow, and Date-Customer Workflow.
 
-1. Default Workflow
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
+    1. Default Workflow
 
-    ![Default Workflow](./media/delivery/default-workflow.png)
+        ![Default Workflow](./media/delivery/default-workflow.png)
 
-2. Customer-Date Workflow
+    2. Customer-Date Workflow
 
-    ![Customer Date Workflow](./media/delivery/customer-selection.png) ![Customer Date Workflow](./media/delivery/pick-date.png)
+        ![Customer Date Workflow](./media/delivery/customer-selection.png) ![Customer Date Workflow](./media/delivery/pick-date.png)
 
-3. Date-Customer Workflow
+    3. Date-Customer Workflow
 
-    ![Date Customer Workflow](./media/delivery/pick-date.png) ![Date Customer Workflow](./media/delivery/customer-selection.png)
+        ![Date Customer Workflow](./media/delivery/pick-date.png) ![Date Customer Workflow](./media/delivery/customer-selection.png)
+    </div>
+    </details>
 
 **Scanned SU validation** – three options: 'Match selected Warehouse,' 'Match any base document, Line,' 'No validation.'
 
@@ -164,18 +169,18 @@ The only Batches available are the ones that were generated on receiving from Ma
 
 **Example for Show only Pick Lists with Picked status option (5)**
 
-In the default query it is required to find this line: `T0."Status" <> 'C'  and change it to T0."Status" = 'P'`
+In the default query it is required to find this line: `T0."Status" <> 'C'  and change it to T0."Status" = 'Y'`
 
 The following screenshots present an example query, changes required to be made and the result in CompuTec WMS:
 
     ![Delivery](./media/delivery/delivery.png)
 
-`T0."Status" <> 'C' changed to T0."Status" = 'P'`
+`T0."Status" <> 'C' changed to T0."Status" = 'Y'`
 
     ![Status](./media/delivery/status.png)
 
 The result:
 
-![Pick List](./media/delivery/pick-list.PNG)
+![Pick List](./media/delivery/pick-list.png)
 
 Show document drafts checkbox has been removed due to the fact of adding an option to choose document drafts in application.
