@@ -12,7 +12,7 @@ sidebar_position: 7
     <details>
     <summary>Click here to expand</summary>
     <div>
-    ![Project Selection](./media/project-selection-01.png)
+    ![Project Selection](./media/goods-issue/goods-issue-project-selection.png)
     </div>
     </details>
 

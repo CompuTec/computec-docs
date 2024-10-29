@@ -4,7 +4,21 @@ sidebar_position: 8
 
 # Storage Unit
 
-![SU](./media/cc-su.webp)
+![SU](./media/storage-units/storage-unit.png)
+
+**After scanning an item into new SU, auto return to: Document Details, Quantity** - After scanning an item into New SU, auto return to: Document Details, Quantity - this option allows you to change the window to which the application will go after scanning an item.
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
+    **Document Details**
+
+        ![Document Details](./media/storage-units/doc-details-SU.png)
+
+    **Quantity**
+
+        ![Quantity](./media/storage-units/quantity-su.png)
+    </div>
+    </details>
 
 **Quantity showed on WMS Item Lists** – checking this checkbox results in displaying quantity packed in an SU.
     <details>
@@ -20,55 +34,11 @@ sidebar_position: 8
 
 **SU FIFO authorization** – checking this option enables SU creation authorization. It is possible to set up a mandatory log in on SU creation and to set up for which Warehouse's authorization will be required.
 
-**SU FIFO authorization login** – an option related to the previous one: login details for SU FIFO authorization
-    <details>
-    <summary>Click here to find out more</summary>
-    <div>
-    1. Start WMS
-        1. Stock Transfer
-            1. New Inventory Transfer for all Items.
-            - FIFO does not work in Source Warehouse form:
-            ![SU FIFO Authorization](./media/storage-units/source-warehouse.jpg)
+**SU FIFO authorization login** – This is an option related to the previous one: login details for SU FIFO authorization. If you select the SU outside the FIFO queue(it means that the selected SU is newer than the other one you can choose), you are asking for the confirmation by the login of the selected user in selected warehouses:
 
-            - It works **only** in a Warehouse:
-
-                ![SU FIFO Authorization](./media/storage-units/source-warehouse-01.jpg)
-
-            - Select ALL SU (Sorted by InTime, Code)
-            - This option allows you to see **all** the Storage Units in the specific Warehouse
-
-                ![SU FIFO Authorization](./media/storage-units/source-warehouse-02.jpg)
-                ![SU FIFO Authorization](./media/storage-units/storage-unit.jpg)
-
-            2. New Inventory Transfer Batch Item
-
-                ![SU FIFO Authorization](./media/storage-units/document-details-01.jpg)
-
-            - Select batch item
-
-                ![SU FIFO Authorization](./media/storage-units/document-details-02.jpg)
-
-            - Select SU FIFO
-
-                ![SU FIFO Authorization](./media/storage-units/su-fifo.jpg)
-
-            - Select SU for Batch Item(Sorted By InData, Code)
-            - This option allows you to see all the Storage Units for **one** item(batch)
-
-                ![SU FIFO Authorization](./media/storage-units/storage-unit-01.jpg)
-
-            - SU 90, 91,92 have the same InTime Date **2007-03-26**
-            - Su 94 has a different **InTime Date, 2019-10-30**
-            - **In this case, WMS shows a message if you select SU 94**
-            - **WMS does not show a message if you select 90,91 or 92**
-
-                ![SU FIFO Authorization](./media/storage-units/su-fifo-01.jpg)
-
-            - FIFO Message(for SU 00000000000000000094)
-
-                ![SU FIFO Authorization](./media/storage-units/su-fifo-02.jpg)
-    </div>
-    </details>
+        ![Login](./media/storage-units/su-fifo-authorization.png)
+    
+        ![SU FIFO](./media/storage-units/su-fifo.png)
 
 **SU FIFO authorization only Warehouses** – an option related to the two previous ones: you can choose to which Warehouses authorization applies
 
