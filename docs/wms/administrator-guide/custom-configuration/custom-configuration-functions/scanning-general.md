@@ -30,6 +30,6 @@ On Stock Transfer and Goods Issue, when on the Warehouse selection list, a user 
 
 **GS1 Decoder** - Copy (10) Batch number to Field – when checked, the Batch number is copied to the Supplier Batch, Batch Attribute 1, or Batch Attribute 2.
 
-![Copy Batch](./media/copy-batch.webp)
+![Copy Batch](./media/gs1-decoder.png)
 
-Multi-select orders by scanning – when the option is unchecked, scanning a Sales Order code in the order selection form chooses it and leads to the following form. When the option is checked, you can scan many codes. Going to the following form will occur only after clicking the right arrow.
+**Multi-select orders by scanning** – when the option is unchecked, scanning a Sales Order code in the order selection form chooses it and leads to the following form. When the option is checked, you can scan many codes. Going to the following form will occur only after clicking the right arrow.
