@@ -58,13 +58,13 @@ Otwieramy Custom Query Manager, wybieramy z listy Batch/Serial Info. In this exa
 
     ![Batch Info Detail List](./media/batches/batch-serial-info-01.png)
 
-    1. BatchInfoDetailsList
+    1. Batch Info Details List
 
     There are no additional fields here, but we can add columns that are going to be find based on a specific query put in SQL Manager:
 
         ![Batch Info Details List](./media/batches/batch-info-obtn.png)
 
-    2. SerialInfoDetailsList
+    2. Serial Info Details List
 
     The same situation as in the example above, but this time choose columns from OSRN table:
 
