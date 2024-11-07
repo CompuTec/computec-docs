@@ -10,17 +10,17 @@ The new Stock Counting is created based on an empty document created in CompuTec
 
 ---
 
-**After saving, auto return to:** – choose where to return after saving Item Details on a document; you can select the main menu for this operation or the Item list
+**After saving, auto return to:** – choose where to return after saving Item Details on a document; you can select the Document Details or the Item Details.
 
 **Display message after adding batches** – configure a message displayed on adding a Batch. The message can be based on an SQL query.
 
-**Hide In Warehouse Quantity Information** – hides quantities.
+**Hide In Warehouse Quantity Information** – hides information about the quantity in the warehouse, and therefore, the WMS user cannot see the system quantity.
 
-**Mark updated rows as counted during Stock Counting** – self-explanatory
+**Mark updated rows as counted during Stock Counting** – all rows added in the WMS are set as counted in the SAP.
 
 **Auto add SU content** – checking this checkbox allows you to add a whole Storage Unit (with its content).
 
-**Fill SU content during Saving to SAP** – checking this option, all the Items in the SU are saved only after clicking the Save to SAP button (not during specific lines).
+**Fill SU content during Saving to SAP** – by checking this option, all the Items in the SU are saved only after clicking the "Save to SAP" button (not during specific lines). This can speed up the counting process.
 
 ## Old Stock Counting
 
@@ -28,4 +28,4 @@ The new Stock Counting is created based on an empty document created in CompuTec
 
 **Force manual quantity confirmation** – after scanning required prefixes (Warehouse, Vendor, Item, Quantity, Batch number), the application forces manual confirmation of quantity (instead of confirmation after scanning a barcode with quantity)
 
-**Stock Counting: automatically choose Bin Location on Batch scanning** – automatically chooses Bin Location on Batch scanning.
+**Stock Counting: automatically choose Bin Location on Batch scanning** – automatically chooses Bin Location on Batch scanning (if the batch is on the only one location).
