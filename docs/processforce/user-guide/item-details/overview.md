@@ -66,6 +66,60 @@ Revisions can be entered for the following documents:
 
 Revisions are not visible within Inventory.
 
+### Revisions Overview
+
+Each Revision in CompuTec ProcessForce has a status that reflects its current lifecycle stage. These statuses, defined on the Item Details form, allow for effective control and management of each Revision within the system. The available Revision Statuses include:
+
+- Active (ACT) – Revisions that are fully operational and available for use in Manufacturing Orders.
+- Being Phased Out (OUT) – Revisions that are in the process of being phased out and will soon become obsolete.
+- Engineering (ENG) – Revisions undergoing refinement and testing.
+- Obsolete (OBS) – Retired Revisions that are no longer in active use.
+
+:::note
+The validations and restrictions outlined below are applicable starting from **CompuTec ProcessForce version 10.0 R26**. Please ensure your system is updated to R26 or later to access these features, as earlier versions may not support these functionalities.
+:::
+
+<details>
+<summary>Click here to find out more</summary>
+<div>
+According to the Revision Status, specific restrictions are applied as outlined below:
+1. Active (ACT)
+
+    Status Code: Active = 1
+
+    Restrictions: None. 
+    
+    Revisions marked as Active are fully usable across all system functions.
+2. Being Phased Out (OUT)
+
+    Status Code: BeingPhasedOut = 2
+
+    Restrictions:
+    - As Header in Bill of Materials (BOM): New BOMs cannot be created with this Revision.
+    - As Component in BOM: Cannot be selected in BOM through the Choose From List (CFL) option.
+    - Globally: Not available for use in sales and purchase documents. However, this status is available for Goods Issue, Goods Receipt, and Inventory Transfer documents.
+3. Engineering (ENG)
+
+    Status Code: Engineering = 3
+
+    Restrictions: Similar to the "Being Phased Out" status:
+    - Not available for use in sales and purchase documents.
+    - Available for Goods Issue, Goods Receipt, and Inventory Transfer documents.
+4. Obsolete (OBS)
+
+    Status Code: Obsolete = 4
+
+    Restrictions:
+    - Setting the Status:
+        - The “Obsolete” status can only be applied if there are no active Manufacturing Orders (MORs) for the Revision.
+        - The “Obsolete” status cannot be applied if the Revision is a component in an open Manufacturing Order or exists in a BOM with an Active, Being Phased Out, or Engineering status.
+    - In BOMs and MORs:
+        - Cannot add or update BOMs that include this Revision, either as final goods, components, coproducts, or scrap.
+        - Cannot create or select an MOR if the Revision is used in either the Header or as a component.
+        - Documents: The "Obsolete" status restricts the use of this Revision across all documents, except in some reports.
+</div>
+</details>
+
 ### Default
 
 If more than one Revision is created for an Item, one has to be checked as 'Default.' This revision will be put by default in all revision fields on a document to which a related Item is added.
