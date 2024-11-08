@@ -28,11 +28,7 @@ To fully use the features of the data model and to create own reports based on t
 
 How to work with the features you can find in the [official SAP Business One How-to Guide](https://help.sap.com/http.svc/rc/d70ddaf3fc8341bbb7ea62d0742bdd88/9.3/en-US/How%20to%20Work%20with%20Excel%20Report%20and%20Interactive%20Analysis.pdf).
 
-### Run script.sql
-
-Before importing the data model, it is required to run the script from the HANA Studio level: [script.sql](../data-model/data-model-download.md). Running the script creates some of the views on the database level. These objects are not present in the ProcessForce installer. Since they will be present in the future ProcessForce versions, running the script is required.
-
-### _SYS_BI"."M_TIME_DIMENSION table
+**_SYS_BI"."M_TIME_DIMENSION table**
 
 Some dates were joined with a time dictionary view ("DocumentDate"). This view uses the `_SYS_BI"."M_TIME_DIMENSION` table.
 
