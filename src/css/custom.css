@@ -110,3 +110,8 @@ img {
   width: auto;
   height: auto;
 }
+
+.alert a {
+  text-decoration-color: var(--ifm-breadcrumb-color-active);
+  color: var(--ifm-breadcrumb-color-active);
+  }
