@@ -6,7 +6,21 @@ sidebar_position: 15
 
 ## PF Pick Receipt tab
 
-![Production ProcessForce Pick Receipt](./media/cc-production-pf-pick-receipt.webp)
+![Production ProcessForce Pick Receipt](./media/production/cc-production-pf-pick-receipt.png)
+
+**After picking, auto return to** – defines to which form the application leads after confirming picking quantity for a document line: None, Document Details, Remarks.
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
+    **Document Details Workflow**
+
+        ![Document Details Workflow](./media/return-grpo/document-details-workflow.png)
+
+        **Remarks**
+
+        ![Remarks](./media/production/remarks.png)
+    </div>
+    </details>
 
 **PF Pick Receipt PopUp Timer checkpoint** – None, Select the base document, Select Item on the list, Pick quantity to the first line, Save Document
 
@@ -16,7 +30,7 @@ sidebar_position: 15
 
 **Show only Final Good Item** – narrow the list of displayed items to only the Final Good Item.
 
-**Block creation of new Pick Receipts** – enabling this option disables the following option: "Create new Pick Receipt when a new Manufacturing Order is added."
+**Block creation of new Pick Receipts** –  this option blocks the user from creating new Pick Receipts. WMS users will be able only to work on Pick Receipts created in the SAP. Enabling this option disables the following option: "Create new Pick Receipt when a new Manufacturing Order is added."
 
 **Create a new Pick Receipt when a new Manufacturing Order is added** – creates a new Pick Receipt Instead of adding its content to the currently opened one.
 

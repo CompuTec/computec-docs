@@ -91,7 +91,7 @@ However, when a user creates a Delivery document from a base document, for examp
 
 - **Full freight for first Delivery only** - total Freight cost added only to the first Delivery. The following Deliveries have no freight cost assigned (SAP Business One behavior with Delivery from Sales Order).
 
-- Always charge full freight - total freight cost from the base document.
+- **Always charge full freight** - total freight cost from the base document.
 
 ## Changes
 
