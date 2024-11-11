@@ -85,14 +85,10 @@ The validations and restrictions outlined below are applicable starting from **C
 According to the Revision Status, specific restrictions are applied as outlined below:
 1. Active (ACT)
 
-    Status Code: Active = 1
-
     Restrictions: None. 
     
     Revisions marked as Active are fully usable across all system functions.
 2. Being Phased Out (OUT)
-
-    Status Code: BeingPhasedOut = 2
 
     Restrictions:
     - As Header in Bill of Materials (BOM): New BOMs cannot be created with this Revision.
@@ -100,14 +96,10 @@ According to the Revision Status, specific restrictions are applied as outlined 
     - Globally: Not available for use in sales and purchase documents. However, this status is available for Goods Issue, Goods Receipt, and Inventory Transfer documents.
 3. Engineering (ENG)
 
-    Status Code: Engineering = 3
-
     Restrictions: Similar to the "Being Phased Out" status:
     - Not available for use in sales and purchase documents.
     - Available for Goods Issue, Goods Receipt, and Inventory Transfer documents.
 4. Obsolete (OBS)
-
-    Status Code: Obsolete = 4
 
     Restrictions:
     - Setting the Status:
