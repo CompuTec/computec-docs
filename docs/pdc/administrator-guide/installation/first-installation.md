@@ -16,7 +16,7 @@ This document provides a step-by-step guide on how to install the CompuTec PDC a
     Be sure to fulfill the requirements described [here](./requirements.md) before starting an installation process.
 :::
 
-1. To install the CompuTec PDC application, download and run its installation file <!-- TODO: Link --> – CompuTec.PDC.Setup.x64.msi.
+1. To install the CompuTec PDC application, download and run its [installation file](../../../appengine/releases/plugins/pdc/download.md) – CompuTec.PDC.Setup.x64.msi.
 2. In the window that appears, click the "Next" button after reading the message about installation preparation.
 
     ![PDC nstallation](./media/first-installation/pdc-instalation.webp)

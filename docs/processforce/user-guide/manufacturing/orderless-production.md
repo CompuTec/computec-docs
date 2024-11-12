@@ -16,7 +16,7 @@ Define Document Series for the Orderless Production Document:
 
 ![Document Numbering](./media/orderless-production/orderless-production-numbering.webp)
 
-You can check here how to set up <!-- TODO: Add Link --> a document series.
+You can check [here](../system-initialization/document-numbering.md) how to set up a document series.
 
 ### Bill of Material
 

@@ -355,7 +355,7 @@ In general, it is possible to open a Meter Reading document as an RMBM option fr
 
 **Checkpoint Details**
 
-Please check the Checkpoint Template definition <!-- TODO: Add Link --> here.
+Please check the Checkpoint Template definition [here](../field-description/maintenance-order-template.md#checkpoint-template)
 
 **Buttons**
 

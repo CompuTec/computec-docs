@@ -11,7 +11,7 @@ You can find information on the Pick by Operation function on this page.
 ## Issue to Operation
 
 - Select the Issue to Operations from the context menu on Manufacturing Order,
-- This menu option will only be displayed if there is an Item linked to an Operation (you can check how to do this here <!-- TODO: Add Link -->),
+- This menu option will only be displayed if there is an Item linked to an Operation (you can check how to do this [here](../../formulations-and-bill-of-materials/production-process/overview.md#manufacturing-order-operation-bind),
 - If an Item is not linked to an Operation, this menu will not be displayed.
 
   ![Issue for Operations](./media/pick-by-operation/issue-for-operations.webp)
