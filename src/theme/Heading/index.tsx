@@ -23,7 +23,7 @@ export default function Heading({as: As, id, ...props}: Props): JSX.Element {
   const anchorTitle = translate(
     {
       id: 'theme.common.headingLinkTitle',
-      message: 'Direct link to {heading}',
+      message: 'Direct link to {heading}. Click to copy.',
       description: 'Title for link to heading',
     },
     {
