@@ -14,7 +14,7 @@ The queue type for Batch Managed Items depends on whether **ProcessForce** is in
 
 - **With ProcessForce Installed:** The queue type follows the ProcessForce settings.
 
-- **Without ProcessForce Installed:** You can set the queue type by navigating to: **Custom Configuration → Manager → Enable Batch Management → Set Default Settings.**
+- **Without ProcessForce Installed:** You can set the queue type by navigating to: [Custom Configuration → Manager → Enable Batch Management → Set Default Settings.](../administrator-guide/custom-configuration/custom-configuration-functions/manager/batch-management-manager.md)
 
 *Here's a breakdown of each queue type:*
 
