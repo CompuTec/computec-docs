@@ -11,7 +11,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## PFI 1.10.7
 
-### *Release Date - 24 May 2024*
+**Release Date - 24 May 2024**
 
 | Issue Type | Release Note | Related issue/s |
 | --- | --- | --- |
@@ -21,7 +21,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## PFI 1.10.6
 
-### *Release Date - 22 April 2024*
+**Release Date - 22 April 2024**
 
 | Issue Type | Release Note | Related issue/s |
 | --- | --- | --- |
@@ -32,7 +32,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## PFI 1.10.5
 
-### *Release Date - 5 June 2023*
+**Release Date - 5 June 2023**
 
 | Issue Type | Release Note | Related issue/s |
 | --- | --- | --- |
@@ -42,7 +42,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## PFI 1.10.4
 
-### *Release Date - 15 December 2022*
+**Release Date - 15 December 2022**
 
 | Issue Type | Release Note | Related issue/s |
 | --- | --- | --- |
@@ -56,7 +56,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## PFI 1.10.3
 
-### *Release Date - 10 October 2022*
+**Release Date - 10 October 2022**
 
 | Issue Type | Release Note | Related issue/s |
 | --- | --- | --- |
@@ -69,7 +69,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## PFI 1.10.2, 1.93.2
 
-### *Release Date - 4 July 2022*
+**Release Date - 4 July 2022**
 
 | Issue Type | Release Note | Related issue/s |
 | --- | --- | --- |

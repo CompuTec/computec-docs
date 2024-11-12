@@ -11,7 +11,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## MRP 1.10.13
 
-### *Release Date - 26 June 2024*
+**Release Date - 26 June 2024**
 
 | Issue Type | Release Note | Related issue/s |
 | --- | --- | --- |
@@ -29,7 +29,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## MRP 1.10.12
 
-### *Release Date - 26 June 2024*
+**Release Date - 26 June 2024**
 
 | Issue Type | Release Note | Related issue/s |
 | --- | --- | --- |
@@ -42,7 +42,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## MRP 1.10.11
 
-### *Release Date - 6 February 2024*
+**Release Date - 6 February 2024**
 
 | Issue Type | Release Note | Related issue/s |
 | --- | --- | --- |
@@ -60,7 +60,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## MRP 1.10.10
 
-### *Release Date - 3 August 2023*
+**Release Date - 3 August 2023**
 
 | Issue Type | Release Note | Related issue/s |
 | --- | --- | --- |
@@ -76,7 +76,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## MRP 1.10.9
 
-### *Release Date - 11 May 2023*
+**Release Date - 11 May 2023**
 
 | Issue Type | Custom field (Release Note) | Related issue/s |
 | --- | --- | --- |
@@ -96,7 +96,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## MRP 1.10.7
 
-### *Release Date - 28 September 2022*
+**Release Date - 28 September 2022**
 
 | Issue Type | Release Note | Related issue/s |
 | --- | --- | --- |
@@ -113,7 +113,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## MRP 1.10.6, 1.93.6
 
-### *Release Date - 28 March 2022*
+**Release Date - 28 March 2022**
 
 | Issue Type | Release Note | Related issue/s |
 | --- | --- | --- |

@@ -12,7 +12,7 @@ The barcodes used as examples on this page were generated using [this tool](http
 
 ## Usage of Multi-block Barcodes Scanning on Different Transactions
 
-### **Adding a new Item**: Goods Receipt PO
+****Adding a new Item**: Goods Receipt PO
 
 We are receiving an Item with its Batch and quantity (and, optionally, with additional information by using [Custom Configuration](../custom-configuration/overview.md) -> Workflow Step Settings or [UDF Manager](../custom-configuration/custom-configuration-functions/manager/udf-manager.md)).
 
@@ -39,7 +39,7 @@ A barcode can contain additional information from User-Defined Fields, e.g. Expi
 
 ![Barcode](./media/barcode-02.webp)
 
-### **Finding an Item**: Stock Transfer/Transfer Request/Pick and Pack
+****Finding an Item**: Stock Transfer/Transfer Request/Pick and Pack
 
 To correctly identify an Item and its localization, a related barcode has to contain at least the following prefixes:
 
@@ -62,7 +62,7 @@ It is also possible to scan it on the Warehouse selection form if a unique Batch
 
 ![Barcode](./media/barcode-04.webp)
 
-### **Item issue**: Pick Order, Goods Issue, Delivery
+****Item issue**: Pick Order, Goods Issue, Delivery
 
 **Example 1: Item, Quantity, Batch**
 

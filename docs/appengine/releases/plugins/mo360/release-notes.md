@@ -11,7 +11,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## MO360 1.10.12
 
-### *Release Date - 23 May 2024*
+**Release Date - 23 May 2024**
 
 | Issue Type | Release Note | Related Issue |
 | --- | --- | --- |
@@ -21,7 +21,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## MO360 1.10.10
 
-### *Release Date - 9 November 2023*
+**Release Date - 9 November 2023**
 
 | Issue Type | Release Note | Related Issue |
 | --- | --- | --- |
@@ -32,7 +32,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## MO360 1.10.8
 
-### *Release Date - 1 February 2023*
+**Release Date - 1 February 2023**
 
 | Issue Type | Release Note | Related Issue |
 | --- | --- | --- |
@@ -53,7 +53,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## MO360 1.10.7
 
-### *Release Date - 25 July 2022*
+**Release Date - 25 July 2022**
 
 | Issue Type | Release Note | Related Issue |
 | --- | --- | --- |
@@ -69,7 +69,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## MO360 1.10.6, 1.93.6
 
-### *Release Date - 26 April 2022*
+**Release Date - 26 April 2022**
 
 | Issue Type | Release Note | Related Issue |
 | --- | --- | --- |

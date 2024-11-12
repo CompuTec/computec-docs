@@ -30,7 +30,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## BT360 2.10.6 R1
 
-### *Release Date - 13 June 2023*
+**Release Date - 13 June 2023**
 
 | Issue Type | Release Note | Related Support Ticket/s |
 | --- | --- | --- |
