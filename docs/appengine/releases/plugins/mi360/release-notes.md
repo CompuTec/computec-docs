@@ -11,7 +11,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## MI360 1.2.0
 
-### *Release Date - 25 October 2023*
+**Release Date - 25 October 2023**
 
 | Issue Type | Release Note |
 | --- | --- |

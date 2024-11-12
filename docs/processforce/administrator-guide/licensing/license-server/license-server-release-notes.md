@@ -7,7 +7,7 @@ toc_max_heading_level: 2
 
 ## CompuTec License Server 5.12.1.1
 
-### *Release Date - 30 January 2023*
+**Release Date - 30 January 2023**
 
 :::info
 The installer is available to download from [here](../../../releases/download.md#computec-license-service).
@@ -93,7 +93,7 @@ Related change was implemented in version 5.10.2.9 version but not included in v
 
 ## CompuTec License Server 5.11.0.3
 
-### *Release Date - 8 March 2022*
+**Release Date - 8 March 2022**
 
 ### Fixes
 
@@ -109,7 +109,7 @@ The defect is related to 5.11.0.2 version only.
 
 ## CompuTec License Server 5.11.0.2
 
-### *Release Date - 2 March 2022*
+**Release Date - 2 March 2022**
 
 ### Fixes
 
@@ -125,7 +125,7 @@ The defect is related to 5.11.0.1 version only.
 
 ## CompuTec License Server 5.11.0.1
 
-### *Release Date - 28 February 2022*
+**Release Date - 28 February 2022**
 
 ### Changes and Improvements
 
@@ -151,7 +151,7 @@ System.Data.SqlClient.SqlException (0x80131904): There is already an object name
 
 ## CompuTec License Server 5.10.2.9
 
-### *Release Date - 4 November 2020*
+**Release Date - 4 November 2020**
 
 :::info
 The installer is available to download from [here](../../../releases/download.md#computec-license-service).
@@ -183,7 +183,7 @@ The installer is available to download from [here](../../../releases/download.md
 
 ## CompuTec License Server 5.10.2.1
 
-### *Release Date - 13 March 2020*
+**Release Date - 13 March 2020**
 
 ### Changes and improvements
 
@@ -211,7 +211,7 @@ The installer is available to download from [here](../../../releases/download.md
 
 ## CompuTec License Server 5.10.1.1
 
-### *Release Date - 19 February 2020*
+**Release Date - 19 February 2020**
 
 ### Changes and improvements
 

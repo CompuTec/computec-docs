@@ -11,7 +11,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.10.23.1
 
-### *Release Date - 27 August 2024*
+**Release Date - 27 August 2024**
 
 | Issue Type | Component/s | Release Note |
 | - | - | - |
@@ -20,7 +20,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.10.22.1
 
-### *Release date - 29 May 2024*
+**Release date - 29 May 2024**
 
 | Issue Type | Component/s | Release Note |  Linked issue/s\*\* |
 | --- | --- | --- | --- |
@@ -39,11 +39,11 @@ toc_max_heading_level: 2
 | Bug | Downtimes | Adding downtime doesnt automatically end the existing runtime | - |
 | Bug | PDC | Date format in quick time registration does not follow the general settings | - |
 
-### *Release date - 11 December 2023*
+**Release date - 11 December 2023**
 
 ## CompuTec PDC 3.10.21.1
 
-### *Release date - 11 December 2023*
+**Release date - 11 December 2023**
 
 | Issue Type  | Component/s | Release Note                                                                                                         | Linked issue/s\*\* |
 | ----------- | ----------- | -------------------------------------------------------------------------------------------------------------------- | ------------------ |
@@ -54,7 +54,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.10.20.1
 
-### *Release Date - 18 October 2023*
+**Release Date - 18 October 2023**
 
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
@@ -78,7 +78,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.10.19.1
 
-### *Release Date - 26 May 2023*
+**Release Date - 26 May 2023**
 
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
@@ -95,7 +95,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.10.18.1
 
-### *Release Date - 21 March 2023*
+**Release Date - 21 March 2023**
 
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
@@ -112,7 +112,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.10.17.1
 
-### *Release Date - 31 January 2023*
+**Release Date - 31 January 2023**
 
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
@@ -131,7 +131,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.10.16.1
 
-### *Release Date - 28 September 2022*
+**Release Date - 28 September 2022**
 
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
@@ -151,7 +151,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.10.15.1
 
-### *Release Date - 14 July 2022*
+**Release Date - 14 July 2022**
 
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
@@ -164,7 +164,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.10.14.1
 
-### *Release Date - 12 May 2022*
+**Release Date - 12 May 2022**
 
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
@@ -179,7 +179,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.93.22.1 (3.10.13.1)
 
-### *Release Date - 28 February 2022*
+**Release Date - 28 February 2022**
 
 | Issue Type | Component | Release Note| Linked issue/s\*\* |
 | --- | --- | --- | --- |
@@ -192,7 +192,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.93.21.1 (3.10.12.1)
 
-### *Release Date - 14 December 2021*
+**Release Date - 14 December 2021**
 
 | Issue Type | Component | Release Note| Linked issue/s\*\* |
 | --- | --- | --- | --- |
@@ -204,7 +204,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.93.20.3 (3.10.11.3)
 
-### *Release Date - 17 November 2021*
+**Release Date - 17 November 2021**
 
 | Issue Type | Component | Release Note| Linked issue |
 | --- | --- | --- | --- |
@@ -212,7 +212,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.93.20.2 (3.10.11.2)
 
-### *Release Date - 4 November 2021*
+**Release Date - 4 November 2021**
 
 | Issue Type | Component | Release Note| Linked issue/s\*\* |
 | --- | --- | --- | --- |
@@ -226,7 +226,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.93.19.1 (3.10.10.1)
 
-### *Release Date - 7 July 2021*
+**Release Date - 7 July 2021**
 
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
@@ -242,7 +242,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.93.18.1 (3.10.9.1)
 
-### *Release Date - 11 May 2021*
+**Release Date - 11 May 2021**
 
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
@@ -261,7 +261,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.93.17.1 (3.10.8.1)
 
-### *Release Date - 19 March 2021*
+**Release Date - 19 March 2021**
 
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
@@ -278,7 +278,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.93.16.1 (3.10.7.1)
 
-### *Release Date - 27 January 2021*
+**Release Date - 27 January 2021**
 
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
@@ -294,7 +294,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.93.15.1 (3.10.6.1)
 
-### *Release Date - 15 December 2020*
+**Release Date - 15 December 2020**
 
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
@@ -311,7 +311,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.93.14.1 (3.10.3.0)
 
-### *Release Date - 17 November 2020*
+**Release Date - 17 November 2020**
 
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
@@ -328,7 +328,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.93.13.1 (3.10.2.0), 2.93.13.1 (2.10.2.0)
 
-### *Release Date - 17 September 2020*
+**Release Date - 17 September 2020**
 
 | Issue Type | Component/s | Release Note | Fix Version/s | Linked issue/s\*\* |
 | --- | --- | --- | --- | --- |
@@ -348,7 +348,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.93.12.1 (3.10.1.0), 2.93.12.1 (2.10.1.0)
 
-### *Release Date - 2 July 2020*
+**Release Date - 2 July 2020**
 
 | Issue Type | Component | Release Note| Fix Version/s | Linked issue/s\*\* |
 | --- | --- | --- | --- | --- |
@@ -371,7 +371,7 @@ toc_max_heading_level: 2
 
 ## CompuTec PDC 3.93.11.1
 
-### *Release Date - 23 April 2020*
+**Release Date - 23 April 2020**
 
     - AppEngine version for ProcessForce 9.3 PL11 Release1 (R1)
 
