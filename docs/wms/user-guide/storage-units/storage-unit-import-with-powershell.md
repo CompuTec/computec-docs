@@ -6,7 +6,7 @@ sidebar_position: 10
 
 ## Usage
 
-1. Download the files from [here](https://code.computec.pl).
+1. Download the files from [here](https://github.com/CompuTec/processforce-powershell/tree/main/ImportSU).
 2. Run Powershell ISE (x64 or x86) as Administrator:
 
     ![Powershell](./media/run-powershell.webp)
