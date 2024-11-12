@@ -35,7 +35,7 @@ The Labels should be printed (when integrated with CompuTec Labels) as you enter
 :::danger
 Please note that the Catch Weight functionality does not work with different UoM defined in SAP Business One.
 
-![Different UoMs](./media/different-uoms.webp)
+![Different UoMs](./media/catch-weight/different-uoms.png)
 :::
 
 ### Item Master Data
@@ -98,7 +98,7 @@ Click [here](https://www.youtube.com/shorts/lJHc8UuSsT8) to know more.
 
 If CompuTec WMS has weight scales integrated, it is possible to set inventory quantity based on their measurements. To do this, click the IUoM field (Qty KG in our example) and the weight button (highlighted). The IUoM field will be filled with the weighted value:
 
-![Weight](./media/weight.webp)
+![Weight](./media/catch-weight/weight.webp)
 
 The field can be automatically filled in with the actual scale weight measurement upon clicking the Save icon if the [Weight Scale auto-complete quantity](../administrator-guide/custom-configuration/custom-configuration-functions/common.md) option is checked in Custom Configuration.
 
