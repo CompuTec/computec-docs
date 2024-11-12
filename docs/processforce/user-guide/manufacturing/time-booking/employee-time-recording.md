@@ -4,10 +4,10 @@ sidebar_position: 7
 
 # Employee Time Recording
 
-This option allows recording additional Employee Time to a specific Task on a <!-- TODO: Add Link --> Time Booking document:
+This option allows recording additional Employee Time to a specific Task on a [Time Booking document](time-bookings.md):
 
 :::note
-    It is possible to add Employee Time only when a related Time Bookings document is not yet added. Once added, the option allows only displaying previously set values (it is not editable). Creating a Time Corrections document can add Employee Time to the already posted Time BookingsTime Corrections document.
+    It is possible to add Employee Time only when a related Time Bookings document is not yet added. Once added, the option allows only displaying previously set values (it is not editable). Creating a Time Corrections document can add Employee Time to the already posted [Time Corrections document](time-corrections.md).
 :::
 
 Select the row to record Employee time and choose the Employee Time Recording option from the context menu:
