@@ -60,7 +60,7 @@ sidebar_position: 15
 
 **Force manual quantity confirmation** – blocks the "Fast scan" on the document. For each performed scan, the user has to manually confirm the quantity, i.e., press the save button before adding the item with a scan.
 
-**Overwrite already picked batches** – when a Batch is already picked for a line, for example, in SAP B1, then picking the same batch in WMS will overwrite its quantity rather than adding to what was already picked.
+**Overwrite already picked batches** – when a Batch is already picked for a line, for example, in SAP Business One, then picking the same batch in WMS will overwrite its quantity rather than adding to what was already picked.
 
 **Receipt from production always to default Bin Location** – when receipting to a warehouse with bin locations, the default bin will be automatically chosen. Selecting other bin locations will be blocked.
 
@@ -72,38 +72,34 @@ sidebar_position: 15
 
 **Do not update the Pick Receipt each time an Item is picked** – by default when an item is picked, the Pick Receipt document is updated, and information about it is displayed. Enabling this checkbox will disable this feature. To update the Pick Receipt, a user will have to save the transaction from the "Remarks" window, which will, by default, create a Goods Receipt document.
 
-**Return to the Document Details window after item receipt.** When an item is picked/added, instead of staying on the "Quantity" window, the application will redirect back to the main document window.
-
-<details>
-<summary>Do not create Goods Receipt at the end of the transaction</summary>
-<div>
-
-Pressing the Save to DB button on the "Remarks" window will not create a Goods Receipt document – allowing to create such a document from the SAP Business One level.
-    ![Remarks Wndow](./media/production/remarks-window.png)
-
+**Do not create Goods Receipt at the end of the transaction** - Pressing the Save to DB button on the "Remarks" window will not create a Goods Receipt document – allowing to create such a document from the SAP Business One level.
 Enabling this option will disable the possibility of creating Storage Units on the Pick Receipt transaction, as creating the Goods Receipt document in SAP B1 will lead to a loss of information about the Storage Units. The Storage Units Options window will also be skipped.
-</div>
-</details>
 
 <details>
-<summary>Enable Receipt From Production only on data entry level</summary>
+<summary>Click here to expand</summary>
 <div>
-
-To create a Receipt From Production, i.e., a Goods Receipt document, the user has to enter the line and then press the right arrow to enter the Remarks window:
-
-    ![Receipt from Production](./media/production/items-to-pick-receipt.png) ![Receipt from Production](./media/production/quantity.png)
+    ![Remarks Wndow](./media/production/remarks-window.png)
 </div>
 </details>
+
+**Enable Receipt From Production only on data entry level** - To create a Receipt From Production, i.e., a Goods Receipt document, the user has to enter the line and then press the right arrow to enter the Remarks window:
+<details>
+<summary>Click here to expand</summary>
+<div>
+    ![Receipt from Production](./media/production/receipts-from-production.png)
+</div>
+</details>
+
+**Enable Select Employee** - gives possibility to receipt the quantity as one of the users configured in SAP Business One.
 
 <details>
-<summary>Enable select Employee</summary>
+<summary>Click here to expand</summary>
 <div>
-
-When the checkbox is checked:
-
-    ![Select Employee](./media/production/select-employee.PNG)
+    ![Select Employee](./media/production/enable-select-employee.png)
 </div>
 </details>
+
+**Do not save every scan to the Pick Receipt** - possibility to remain on the Quantity screen and scan labels one by one without updating the Pick Receipt every time, but only after pressing Save.
 
 ## PF Pick Order tab
 
@@ -111,14 +107,15 @@ When the checkbox is checked:
 
 **After scanning the item, auto return to** – choose to go either to the Document Details or stay on the Quantity form after scanning an Item barcode
 
-**PF Pick Order PopUp Timer checkpoint** – None, Select the base document, Select Item on the list, Pick quantity to the first line, Save Document.
+**PF Pick Order PopUp Timer checkpoint** – None, Select the base document, Select Item on the list, Pick quantity to the first line, Save Document. It is possibile to set pop-up timer checkpoint for one of the points.
 
-**Copy available quantities to the Quantity box in Pick Order** – copies remaining quantity to the quantity box.
+**Copy available quantities to the Quantity box in Pick Order** – copies available quantity to the quantity box.
 
 **Enable Substitutes Items in Pick Order** – the option allows use in Pick Order. The option can be deactivated when not needed.
 
+**Block creation of new Pick Orders** - block adding items from different Manufatruing Orders - removes button from the Add tooltip.
     <details>
-    <summary>Block creation of new Pick Orders</summary>
+    <summary>Click here to expand</summary>
     <div>
     ![Pick Order](./media/production/items-to-pick-order.png)
     </div>
