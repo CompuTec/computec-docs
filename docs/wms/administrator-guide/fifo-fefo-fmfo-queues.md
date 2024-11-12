@@ -2,34 +2,36 @@
 sidebar_position: 15
 ---
 
-# FIFO/FEFO/FMFO queues
+# FIFO, FEFO, FMFO Queues
 
-Here, you can find a description of FIFO/FEFO/FMFO queues based on Batches, Serial Numbers, and Items managed neither by Batches nor Serial Numbers.
+In this guide, you'll find descriptions of FIFO, FEFO, and FMFO queue types for handling items managed by **Batches**, **Serial Numbers**, and **Items not managed by Batches or Serial Numbers**.
 
 ---
 
-## Batch managed Items
+## Batch Managed Items
 
-- The queue type is chosen based on ProcessForce:
+The queue type for Batch Managed Items depends on whether **ProcessForce** is installed:
 
-  - if it is installed, the queue type is taken from ProcessForce settings
+- **With ProcessForce Installed:** The queue type follows the ProcessForce settings.
 
-  - if it is not installed, you can choose the type in Custom Configuration → Manager → Enable Batch Management Manager → Set Default Settings
+- **Without ProcessForce Installed:** You can set the queue type by navigating to: **Custom Configuration → Manager → Enable Batch Management → Set Default Settings.**
 
-- FEFO - the queue is based on 'ExpDate' and (if ProcessForce is installed) U_ExpiryTime.
+*Here's a breakdown of each queue type:*
 
-- FMFO - the queue is based on 'MnfDate'
+- **FEFO (First Expiry, First Out):** The queue is determined by `ExpDate` (and `U_ExpiryTime` if ProcessForce is installed). This method ensures items with the earliest expiry are dispatched first.
 
-- FIFO - "First In" is based on 'InDate'
+- **FMFO (First Manufacture, First Out):** The queue relies on the `MnfDate`, sending items produced earlier out first.
+
+- **FIFO (First In, First Out):** The queue is based on `InDate`, releasing the items in the order they arrived.
 
   ![FIFO FMFO FIFO Queues](./media/fifi-fefo-fmfo.png)
 
-## Serial Numbers managed Items, Items managed neither by Batches nor Serial Numbers
+## Managed and Not Managed Items
 
-It is always FIFO. It uses ProcessForce implementation, which takes a document creation date in ILM. It means that an item is transferred after receipt to a warehouse, and the date of the transfer will be considered (because it is the latest).
+For items managed by **Serial Numbers** or neither by **Batches nor Serial Numbers**, **FIFO** is always applied. This is implemented by ProcessForce and takes into account the **document creation date** in the Inventory Location Management (ILM) module.
+
+When items are transferred to a warehouse post-receipt, **the transfer date is considered the latest and used for queue management**.
 
 :::warning
-
-If, with the FEFO queue, there is no 'ExpDate' set for a Batch with this queue, this will be recognized as the earliest date during location search with this queue.
-
+For FEFO-managed items, if there is no `ExpDate` **set for a Batch** using this queue type, the system defaults to recognizing it as the **earliest date** during location-based searches in this queue type. This ensures proper sequence management based on available expiry dates.
 :::
