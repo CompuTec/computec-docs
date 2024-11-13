@@ -43,15 +43,15 @@ Learn how to install the CompuTec WMS UDOs to a database [here](./wms-server/ove
 
 To properly manage custom Batch UDFs in CompuTec WMS with ProcessForce, a specific UDF must be added to these tables:
 
-- **"OBTN" (SAP)**
+- "OBTN" (SAP)
 
     ![obtn](./media/prerequisites/obtn.png)
 
-- **"@CT_PF_OABT" (ProcessForce)**
+- "@CT_PF_OABT" (ProcessForce)
 
     ![obtn](./media/prerequisites/ct-pf-oabtct.png)
 
-- **"@CT_PF_PRE2" (for picked but unreceived batches)**
+- "@CT_PF_PRE2" (for picked but unreceived batches)
 
     ![obtn](./media/prerequisites/ct-pf-pre2.png)
 
@@ -59,13 +59,9 @@ See more information on [working with UDFs in ProcessForce](/docs/processforce/a
 
 ---
 
-## SAP Business One DI API
-
-The CompuTec WMS Server requires the SAP Business One DI API (32-bit or 64-bit, depending on the WMS version).
-
 ## SAP Business One User
 
-When using CompuTec WMS with an SAP Business One user, log in to SAP Business One to accept or decline the **SAP Business One Improvement Programme** message prompt.
+When using CompuTec WMS with an SAP Business One user, log in to SAP Business One to accept or decline the 'SAP Business One Improvement Programme' message prompt.
 
     ![obtn](./media/prerequisites/sap-message.png)
 
@@ -75,7 +71,7 @@ When using ProcessForce, the SAP Business One user must have a ProcessForce lice
 
 ## Unique Serial Numbers in SAP Business One General Settings
 
-To prevent duplicate serial numbers, set the “Serial Number” option in **Unique Serial Numbers** by under **Inventory** in SAP Business One **General Settings**.
+To prevent duplicate serial numbers, set the “Serial Number” option in 'Unique Serial Numbers' under Inventory tab in SAP Business One General Settings.
 
     ![General Settings](./media/general-settings.png)
 
@@ -86,29 +82,29 @@ Create an inbound rule in Windows Firewall for the required port to ensure Compu
 <details>
 <summary>To get more information, see below.</summary>
 <div>
-    1. Open: **Control Panel > Windows Defender Firewall**:
+    1. Open: Control Panel > Windows Defender Firewall:
 
         ![Firewall](./media/control-panel.png)
 
-    2. Click **Advanced settings**:
+    2. Click Advanced settings:
 
         ![Firewall - settings](./media/advanced-settings.png)
-    3. Select **Inbound Rules** and choose **New Rule...** in the **Actions** window - **this runs New Inbound Rule Wizard**:
+    3. Select Inbound Rules and choose New Rule... in the 'Actions' window - this runs New Inbound Rule Wizard:
 
         ![Inbound rule](./media/inbound-rule.png)
-    4. Choose **Port** as the rule type:
+    4. Choose 'Port' as the rule type:
 
         ![Port](./media/port.png)
-    5. Choose **TCP** protocol and specify **31002** as the local port:
+    5. Choose 'TCP' protocol and specify '31002' as the local port:
 
         ![TCP](./media/protocol-port.png)
-    6. Choose the **Allow the connection** action:
+    6. Choose the 'Allow the connection' action:
 
         ![Allow the connection](./media/action-allow-connection.png)
-    7. Choose all **profiles**:
+    7. Choose all profiles:
 
         ![All Profiles](./media/profiles.png)
-    8. Specify the **rule name** and click **"Finish"**:
+    8. Specify the rule name and click "Finish":
 
         ![CompuTec License Server](./media/computec-wms.png)
 </div>
@@ -160,25 +156,19 @@ If ProcessForce is installed, CompuTec WMS requires CompuTec ProcessForce API to
 
 ## Upgrade
 
-Before installing CompuTec WMS 2.0, manually uninstall the previous WMS Server from **Programs and Features**.
-
-### 32-bit and 64-bit CompuTec WMS Server Versions
-
-:::caution
-Both the 32-bit and 64-bit versions of the CompuTec WMS Server cannot operate simultaneously in the same environment.
-:::
+Before installing CompuTec WMS 2.0, manually uninstall the previous WMS Server from Programs and Features.
 
 ### Transferring Custom Configurations and Server Settings
 
 When upgrading to version 2.0 from any previous version, you need to manually transfer the Custom Config and Server Settings. To do this, follow the below steps:
 
-1. Locate your previous settings in the **default directory**:
+1. Locate your previous settings in the default directory:
 
     ```text
     `C:\Program Files\CompuTec\CompuTec WMS Server\WMSSettings_Old`
     ```
 
-2. Go to the respective sub-folders and **run old Settings and Custom Config**:
+2. Go to the respective sub-folders and run old Settings and Custom Config:
 
     ![Custom Config](./media/cc-run.webp)
 
@@ -187,9 +177,9 @@ When upgrading to version 2.0 from any previous version, you need to manually tr
     ![Settings](./media/wms-settings.webp)
 
     :::note
-    Note that there is a **License Server** field in the old settings, and on the new form, there is an **SAP Business One SLD Server** field (these values can be different in some cases).
+    Note that there is a 'License Server' field in the old settings, and on the new form, there is an 'SAP Business One SLD Server' field (these values can be different in some cases).
     :::
 
-4. Repeat these steps for **Custom Config** options to ensure all settings are correctly transferred.
+4. Repeat these steps for 'Custom Config' options to ensure all settings are correctly transferred.
 
     ![Custom Change](./media/custom-change.webp)
