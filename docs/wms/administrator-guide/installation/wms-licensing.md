@@ -4,75 +4,104 @@ sidebar_position: 2
 
 # WMS Licensing
 
-WMS licensing is based on server and terminal licenses. Here, you can find a description of a licensing process required for the legal working of the WMS application.
+WMS (Warehouse Management System) licensing is structured around server and terminal licenses. This guide provides an overview of the necessary licensing processes to ensure the legal operation of the WMS application.
 
 ---
 
 ## License Loading and Assigning
 
-1. Start CompuTec Service Manager by clicking on its shortcut created in the Program list. The CT icon will appear in a tray. Click it to open an application.
-2. The CompuTec WMS Server service is automatically activated upon installing the CompuTec WMS Server application. If it's not running, you can select it from a dropdown menu and then click the "Start" button:
+1. To begin, open the **CompuTec Service Manager** by selecting its shortcut in the Program list. The CompuTec icon will appear in the system tray; click it to open the application.
+
+2. When you install the **CompuTec WMS Server** application, the service is automatically activated. If the service is not running, you can select it from the dropdown menu and click the **Start** button.
 
     ![CompuTec Service Manager](./media/computec-service-manager.webp)
-3. Click 'PDC/WMS Licensing' in the licenses form where you can set details of server/terminal licenses:
+
+3.Click **PDC/WMS Licensing** under the licensing section to configure server/terminal licenses.
 
     ![Licensing](./media/computec-service-manager-licensing.webp)
-4. Click on the 'Import' tab to set license details.
-5. In the 'Browse' field, type in or browse the path to the license file. Create a license request ticket in the CompuTec Support portal to get a license file. Choose 'License request' from the "Component/s" dropdown list. The following information must be enclosed on the ticket:
 
-    - Server Name
-    - Terminal License Key – the number generated automatically (use the "Copy" button to copy the value to the clipboard)
-    - The desired number of terminals
-    - Purpose: customer's license, partner's license (for demo/test purposes).
-6. Click the 'Import' button to load a license from the file.
-7. One of the three communications will appear:
+4. Click on the **Import** tab to set license details.
+5. In the **Browse** field, enter the file path or browse for the license file. To obtain a license file, create a license request ticket via the **CompuTec Support Portal**. Select '**License request**' from the **Component/s** dropdown list. The following information must be enclosed on the ticket:
 
-    - License appears to be valid – the license is loaded from an appropriate file
-    - License appears to be invalid – invalid license file loaded
-    - License not found – the wrong file is loaded for a license
-8. Following the receipt of the 'License appears to be valid' confirmation, details regarding the remaining days of license validity are presented.
-9. To use WMS, users must be established. A specific terminal user has to be assigned to a particular SAP Business One user. You can do that in the 'WMS Users' tab:
+    - **Server Name**
+    - **Terminal License Key** – the number generated automatically (click the "Copy" button to copy the value to your clipboard).
+    - **Desired Number of Terminals**
+    - **Purpose**: Specify whether it’s for customer or partner use (e.g., demo/test purposes).
+6. After submitting the ticket, you will receive a license file, which you can then import by clicking the **Import** button.
+7. Once the license file is imported, you will receive one of the following messages:
+
+    - **License appears to be valid** – The license was successfully loaded.
+    - **License appears to be invalid** – The loaded license file is invalid.
+    - **License not found** – The file does not contain a valid license.
+8. Following the receipt of the '**License appears to be valid**' confirmation, the system will display the remaining days of validity.
+
+---
+
+## Setting Up Users for WMS
+
+To use the WMS system, terminal users must be set up and assigned to SAP Business One users. Follow these steps:
+
+1. Go to the **WMS Users** tab.
 
     ![WMS Users Tab](./media/wms-users-tab.webp)
-10. To create a terminal user, click the Add button. A new row will be displayed.
+2. To add a new terminal user, click the **Add** button. A new row will appear.
 
-    WMS Users tab columns:
+3. In the **WMS Users tab**, you can configure the following columns:
 
-    1. **Barcode** – a barcode for a specific user can be defined here. With a barcode determined, the user will just have to scan it to log in to WMS.
-    2. **Employee** – a username assigned to a specific terminal user. This name is used to log in to WMS.
-    3. **Password** – password assigned to a specific terminal user. It is used to log in to WMS.
-    4. **SAP User ID** – the name of an SAP user to which a specific terminal user is assigned (many terminal users can be assigned to the same SAP User). Changes made and recorded during work with WMS are recorded in the SAP database through this user. **A SAP user to which the terminal user is assigned must have at least an Indirect Access license user type**.
-    5. **Password** – corresponding SAP password.
-    6. **Is Active check box** – The user can log in using data from this row if the check box is checked.
+    1. **Barcode** – Define a barcode for the user. Scanning this barcode will log the user into WMS.
+    2. **Employee** – Username for the terminal user, used to log in to WMS.
+    3. **Password** – Password for the terminal user to log in.
+    4. **SAP User ID** – The SAP user associated with the terminal user (many terminal users can be assigned to the same SAP User). Changes made and recorded during work with WMS are recorded in the SAP database through this user. Ensure the SAP user has at least an **Indirect Access License**.
+    5. **SAP Password** – The corresponding password for the SAP user.
+    6. **Is Active check box** – Check this box to activate the terminal user account.
 
-    Click the Update button to save typed-in data.
+4. Once data is entered, click **Update** to save the new user details.
 
-    You can remove a once-created user by clicking its row and clicking the Remove button.
+5. To remove a user, click the corresponding row and then click **Remove**.
+You can assign multiple terminal users to a single SAP user.
 
-    More than one terminal user can be assigned to one SAP account.
-11. Try to log in to the WMS client using a terminal user. You will receive a communication: Terminal is not licensed. This step is required to connect the WMS Client and a license server.
+6. Attempt to log in to the WMS client using the terminal user credentials. If the license is not yet assigned, you will receive the message: **Terminal is not licensed**.
 
     ![Terminal not licensed](./media/terminal-not-licensed.webp)
-12. Reload CompuTec Service Manager. After this, a terminal will be displayed in the Manage Licenses tab in Terminal Licensing.
+
+---
+
+## Assigning Terminal Licenses
+
+To connect a terminal to the WMS client and license server, follow these steps:
+
+1. Restart CompuTec Service Manager. The terminal will appear under the **Manage Licenses** tab in **Terminal Licensing**.
 
     ![License Management](./media/license-management.webp)
 
-    Assign available licenses for newly added terminal accounts automatically. If this option is checked, when a new, not yet registered Terminal is calling, it will be automatically assigned if there is a free (not assigned) license.
-13. Two values are communicated on this tab:
+2. In the **License Management** section, check the option to **Assign licenses automatically**. This will automatically assign a license to new terminals if a free license is available.
 
-    - **Total Number of Licenses** – number of licenses loaded from a file
-    - **Available Licenses** – number of licenses not assigned to any of terminals
-14. Choose a desired terminal from the list, check the checkbox to assign a license, and click the "Update" button. Note that the "Number of Available Licenses" decreases after this action, as one of the licenses will be in use.
+3. The following information is shown:
+
+    - **Total Number of Licenses** – Total licenses loaded from the file.
+    - **Available Licenses** – Licenses not assigned to any terminal.
+
+4. Select the desired terminal from the list, check the box to assign the license, and click **Update**. Note that the "Number of Available Licenses" decreases after this action, as one of the licenses will be in use/assigned.
 
     ![License Management Update](./media/license-management-update.webp)
-15. Go to the Plugins tab and do the same for the newly appeared row there (which represents CompuTec WMS Server):
+
+---
+
+## Plugin Configuration
+
+1. Go to the Plugins tab and update the new row that represents **CompuTec WMS Server**.
 
     ![Plugins](./media/plugins-list.webp)
-16. Restart CompuTec WMS and CompuTec License Server.
-17. A license is now assigned to the server and terminal, which can work with it.
+2. Restart **CompuTec WMS** and **CompuTec License Server**.
+
+Now, the license is successfully assigned to the server and terminal, allowing the system to function.
 
 ## License Disconnection
 
-License validity is checked every 10 minutes; therefore, in case of losing validity or disconnection deleting the license, the application will still work for up to 10 minutes.
+License validity is checked every 10 minutes. If the license is disconnected or becomes invalid (e.g., due to a network issue with the CompuTec License Server), the application will continue working for up to 10 minutes.
 
-If you lose a license (e.g., because of connection to CompuTec License Server interruption), go to the PDC/WMS Licensing form (see the screenshot above), check a checkbox in the Used column, and click Update. After logging back into the application, you can continue with the previously begun transaction.
+If the license is lost (e.g., because of connection to CompuTec License Server interruption), go to the **PDC/WMS Licensing form** (see the screenshot above), check a checkbox in the **Used** column, and click **Update**. After re-logging into the application, you can continue with the transaction where you left off.
+
+---
+
+This concludes the licensing process for CompuTec WMS. Ensure that all terminals are licensed and assigned properly for smooth operation.
