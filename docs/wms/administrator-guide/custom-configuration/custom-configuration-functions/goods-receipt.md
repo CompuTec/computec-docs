@@ -4,9 +4,13 @@ sidebar_position: 2
 
 # Goods Receipt
 
+This guide explains the settings and options available for configuring the Goods Receipt process. Each configuration point below provides flexibility and is designed to meet various business requirements.
+
+---
+
 ![Goods Receipt](./media/custom-configuration-goods-receipt.webp)
 
-**After picking an Item, auto return to** – the option allows you to choose to which window the application goes after picking an Item.
+1. **After picking an Item, auto return to** – After picking an item, this option lets you choose the window to which the application should return.
     <details>
     <summary>Click here to expand</summary>
     <div>
@@ -15,77 +19,48 @@ sidebar_position: 2
     ![Quantity](./media/goods-receipt/main-document-workflow.png)
 
     **Item Details WorkFlow**
-    
+
     ![Quantity](./media/goods-receipt/item-details-workflow.png)
     </div>
     </details>
 
-**Show Project selection** – choosing this option results in displaying the Project Selection form before the Remarks form when creating a document (to which it is required to add receiving Items).
-    <details>
-    <summary>Click here to expand</summary>
-    <div>
+2. **Show Project selection** – When enabled, this setting displays the Project Selection form before the Remarks form during document creation, required for adding received items to a specific project.
+
     ![Document Details](./media/goods-receipt/show-project-selection.png)
-    </div>
-    </details>
 
-**Default Project** – if a default project is chosen, clicking the right arrow icon on the Project selection form is possible. A default project set up here will be chosen automatically.
-     <details>
-    <summary>Click here to expand</summary>
-    <div>
+3. **Default Project** – Set a default project to automatically appear on the Project Selection form, allowing quick selection by clicking the right arrow icon.
+
     ![Default Project](./media/goods-receipt/goods%20receipt-default-project.png)
-    </div>
-    </details>
 
-**Enable saving to drafts** – allows saving documents as document drafts.
+4. **Enable saving to drafts** – Allows users to save documents as drafts, ideal for partially completed transactions or documents pending final review.
 
     <details>
     <summary>Click here to expand</summary>
     <div>
 
-    By default, this option is turned off. In this case, the Remarks windows look like this:
+    By default, the option is switched off, and the Remarks window looks like this:
 
         ![Draft](./media/goods-receipt/gr-remarks.png)
 
-    
-    When the option is turned on, a new option is added (highlighted in the screenshot below):
+    When the option is enabled, the Remarks window will appear as shown below:
 
         ![Draft](./media/goods-receipt/gr-remarks-01.png)
     </div>
     </details>
 
-**Enable saving documents when drafts ON** – allows deciding on the Remarks form whether to save a transaction as a document or a document draft.
+5. **Enable saving documents when drafts ON** – This option gives users the choice, on the Remarks form, to save a transaction either as a completed document or a draft. When the option is checked, two options are available in the Remarks field:
 
-    <details>
-    <summary>Click here to expand</summary>
-    <div>
-        When the option is checked, two function buttons are available:
+    ![Draft](./media/goods-receipt/gr-drafts-on.png)
 
-        ![Draft](./media/goods-receipt/gr-drafts-on.png)
-    </div>
-    </details>
+6. **Force manual quantity confirmation** – When this setting is enabled, users must manually confirm the quantity even if scanned, ensuring accuracy before finalizing.
 
-**Force manual quantity confirmation** – with this option checked, it is required to manually confirm previously set up quantity (scanning a barcode does not confirm it automatically)
+7. **Enable adding Items from multiple Warehouses** – This option allows the addition of items from various warehouses. If enabled, a warehouse selection window appears during the transaction.
 
-**Enable adding Items from multiple Warehouses** – if the option is checked, adding Items from different Warehouses is possible, and the Warehouse window will be displayed during the transaction.
-    {/*
-    <details>
-    <summary>Click here to expand</summary>
-    <div>
-    ![Document Details](./media/goods-receipt/document-details-02.png) ![Warehouse](./media/goods-receipt/warehouse-02.png)
-    </div>
-    </details>
-    */}
+8. **Enable adding Items with empty Bin Code field** – This option allows adding items without specifying a Bin Code. Such items are assigned to the first available bin within a warehouse using bin locations.it allows to add Items without Bin Code to a Warehouse with Bin Locations. An Item with an empty Bin Code will be assigned to the first available bin if enabled.
 
-**Enable adding Items with empty Bin Code field** – it allows to add Items without Bin Code to a Warehouse with Bin Locations. An Item with an empty Bin Code will be assigned to the first available bin if enabled.
-    {/*
-    <details>
-    <summary>Click here to expand</summary>
-    <div>
-        ![Warehouse](./media/goods-receipt/warehouse-01.png) ![Supplier Selection](./media/goods-receipt/supplier-selection.png) ![Document Details](./media/goods-receipt/document-details-01.png) ![New Item](./media/goods-receipt/new-item.png) ![Quantity](./media/goods-receipt/quantity-02.png)
-    </div>
-    </details>
-    */}
+9. **Show Cost Dimensions** – This option lets you add a button on the Quantity form leading to the Cost Dimensions form, giving visibility and control over item cost details.
 
-**Show Cost Dimensions** – checking this checkbox adds a button (next to the Back button) on the Quantity form that leads to the Cost Dimensions form.
+10. **Keep selected Bin Location after adding an item** – after picking an Item, the Bin Location field will not be cleared (keeping the same Bin Location).
 
-**Keep selected Bin Location after adding an item** – after picking an Item, the Bin Location field will not be cleared (keeping the same Bin Location).
+---
+These Goods Receipt settings provide flexible options to optimize the item intake process. Configuring these options allows users to tailor the experience to specific needs, enhancing control over project allocation, warehouse management, and documentation accuracy.

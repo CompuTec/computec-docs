@@ -4,98 +4,59 @@ sidebar_position: 1
 
 # GRPO
 
+This guide provides an overview of recent updates to the Goods Receipt PO (GRPO) tab in SAP. These enhancements are designed to improve user experience and allow for tailored query and sorting configurations, making purchase order management more efficient.
+
+---
+
 ![GRPO](./media/grpo/grpo-01.png)
 
-**After picking an item, auto return** – this option allows you to change the window to which the application will go after setting and confirming the quantity for an Item.
+1. **After picking an item, auto return** – This option allows the system to redirect to a different window after confirming the quantity of an item during the picking process.
 
     <details>
     <summary>Click here to expand</summary>
     <div>
-    **Main Document Workflow**
+        - Main Document Workflow
 
-    ![Quantity](./media/grpo/main-document-workflow.png)   
+            ![Quantity](./media/grpo/main-document-workflow.png)
 
-    **Item Details Workflow**
+        - Item Details Workflow
 
-    ![Quantity](./media/grpo/item-details-workflow.png)
+            ![Quantity](./media/grpo/item-details-workflow.png)
     </div>
     </details>
 
-**Show Project Selection** – choosing this option results in displaying the Project Selection form before the Remarks form when creating a document (to which it is required to add receiving Items).
+2. **Show Project Selection** – Enabling this option will display the Project Selection form before the Remarks form when creating a document that requires adding receiving items.
 
-    <details>
-    <summary>Click here to expand</summary>
-    <div>
     ![Project Selection](./media/grpo/project-selection.png)
-    </div>
-    </details>
 
-**Default Project** – if a default project is chosen, clicking the right arrow icon on the Project selection form is possible. A default project set up here will be selected automatically.
+3. **Default Project** – If a default project is selected, you can click the right arrow icon on the Project Selection form to automatically select the default project.
 
-    <details>
-    <summary>Click here to expand</summary>
-    <div>
     ![Default Project](./media/grpo/default-project.png)
-    </div>
-    </details>
 
-**Enable saving to drafts** – allows saving documents as document drafts.
-
-    <details>
-    <summary>Click here to expand</summary>
-    <div>
-    By default, the option is switched off, and the Remarks window looks like this:
+4. **Enable saving to drafts** – This option allows you to save documents as drafts before finalizing them.
+    - By default, the option is switched off, and the Remarks window looks like this:
 
         ![Remarks](./media/grpo/save-draft.png)
-    
-    When the option is switched on, the Remarks window looks like this:
+
+    - When the option is enabled, the Remarks window will appear as shown below:
 
         ![Remarks](./media/grpo/save-draft-on.png)
-    </div>
-    </details>
 
-**Enable saving documents when drafts ON** – allows deciding on the Remarks form whether to save a transaction as a document or a document draft.
+5. **Enable saving documents when drafts ON** – With this option, you can choose to save a document as a draft or a finalized document on the Remarks form. When the option is checked, two options are available in the Remarks field:
 
-    <details>
-    <summary>Click here to expand</summary>
-    <div>
-    When the option is checked, two options are available in the Remarks field:
+    ![Remarks](./media/grpo/drafts-on.png)
 
-        ![Remarks](./media/grpo/drafts-on.png)
-    </div>
-    </details>
-
-**GRPO SU creator: Allow selection of only one item per SU** - The error message appears when you select more than one in SU Wizard: Only one item per SU is allowed.
+6. **GRPO SU creator: Allow selection of only one item per SU** - When this option is enabled, selecting more than one item in the SU Wizard will trigger an error message: "Only one item per SU is allowed."
 
     ![Error Message](./media/grpo/error-message.png)
-    {/*
-    <details>
-    <summary>Click here to expand</summary>
-    <div>
-    Example
 
-        ![Example](./media/grpo/goods-receipt-po-operations.png) ![Order Selection](./media/grpo/order-selection.png)
-        ![Document Details](./media/grpo/document-details-03.png) ![Document Details](./media/grpo/document-details-04.png)
-        ![Items Document](./media/grpo/items-document.png) ![Items Document](./media/grpo/items-document-01.png)
-    </div>
-    </details>
-    */}
+7. **Scan DocNum on the Base Document selection window** – Enabling this option allows you to scan a document using the DocNum (document number) instead of DocEntry.
 
-**Scan DocNum on the Base Document selection window** – checking this option allows you to scan a document by Docm, not by DocEntry.
+8. **Force manual quantity confirmation** – With this option checked, you must manually confirm the quantity, even if a barcode is scanned (automatic confirmation is disabled).
 
-**Force manual quantity confirmation** – with this option checked, it is required to manually confirm the quantity previously set up (scanning a barcode does not confirm it automatically).
+9. **Enable adding Items with empty Bin Code field** – This option allows you to add items without a Bin Code to warehouses with Bin Locations. If enabled, items without a Bin Code will be assigned to the first available bin.
 
-**Enable adding Items with Empty Bin Code field** – it allows to add Items without Bin Code to a Warehouse with Bin Locations. If enabled, an Item with an empty Bin Code will be assigned to the first available Bin.
-    {/*
-    <details>
-    <summary>Click here to expand</summary>
-    <div>
-    ![Warehouse](./media/grpo/warehouse-01.png) ![Supplier Selection](./media/grpo/supplier-selection.png) ![Document Details](./media/grpo/document-details-01.png) ![New Item](./media/grpo/new-item.png) ![Quantity](./media/grpo/quantity-02.png)
-    </div>
-    </details>
-    */}
-
-**Enable negative quantities for Items not managed by batch/serial number** – allows using negative quantities for Items managed neither by Batches nor Serial Numbers.
+10. **Enable negative quantities for Items not managed by batch/serial number** – This setting allows using negative quantities for items that are not managed by batch or serial numbers.
 
     <details>
     <summary>Click here to expand</summary>
@@ -104,19 +65,13 @@ sidebar_position: 1
         - Scanner barcode does not support negative quantity
         - Line with 0 quantity will not be added to the SAP document
         - Draft document with negative quantity is not supported
-        - Storage Unit does not support negative quantity. 
-
-        {/*
-        ![Enable Negative Quantities](./media/grpo/document-details-06.png) ![Enable Negative Quantities](./media/grpo/new-item-01.png) ![Enable Negative Quantities](./media/grpo/quantity-04.png) ![Enable Negative Quantities](./media/grpo/quantity-05.png)
-        ![Enable Negative Quantities](./media/grpo/negative.png)
-        ![Enable Negative Quantities](./media/grpo/negative-01.png)
-        */}
-    </div>
+        - Storage Unit does not support negative quantity.
+      </div>
     </details>
 
-**Enable adding attachments** – allows adding attachments to documents. If a scanner device is used, the option automatically turns on a camera to take a picture and add it as an attachment.
+11. **Enable adding attachments** – Allows you to add attachments to documents. If a scanner is used, this option automatically activates the camera to capture and attach a photo.
 
-**Enable setting Tax Date** – allows selecting a Tax Date on the Remarks form.
+12. **Enable setting Tax Date** – This option allows you to select a tax date on the Remarks form.
 
     <details>
     <summary>Click here to expand</summary>
@@ -124,63 +79,53 @@ sidebar_position: 1
     When the option is enabled:
 
         ![Tax Date](./media/grpo/tax-date.png)
-    
+
     The Tax Date is saved to the highlighted field of a document:
 
         ![Document Date](./media/grpo/document-date.jpg)
     </div>
     </details>
 
-**Show Cost Dimensions** – checking this checkbox adds a button (next to the Back button) on the Quantity form that leads to the Cost Dimensions form
+13. **Show Cost Dimensions** – When enabled, a button will appear on the Quantity form (next to the Back button) leading to the Cost Dimensions form.
 
-**Keep selected Bin Location after adding an item** – after picking an Item, the Bin Location field will not be cleared (keeping the same Bin Location)
+14. **Keep selected Bin Location after adding an item** – This option ensures the Bin Location field is not cleared after selecting an item, keeping the same Bin Location.
 
-**Hide Supplier Ref. No. for GRPO from the base document** – checking this option causes the Supplier Ref. No. field to be hidden in the Remarks form (related to base documents: Purchase Order, A/P Reserve Invoice). (On GRPO transactions, when a user creates a document from a base document, a Supplier Ref. No. on the document is filled in from the base documents. If more than one base document is used for a transaction, then the first non-empty Supplier Ref. No. is used).
+15. **Hide Supplier Ref. No. for GRPO from the base document** – This option hides the Supplier Ref. No. field in the Remarks form for GRPO transactions created from a base document (such as Purchase Order or A/P Reserve Invoice). (On GRPO transactions, when a user creates a document from a base document, a Supplier Ref. No. on the document is filled in from the base documents. If more than one base document is used for a transaction, then the first non-empty Supplier Ref. No. is used).
 
-    <details>
-    <summary>Click here to expand</summary>
-    <div>
     ![Supplier Reference No.](./media/grpo/supplier-ref-no.png)
-    </div>
-    </details>
 
-**Use Purchase UoM from Base Document** – checking this option displays quantities in Unit of Measure from the Base Document (while still operating on the actual quantities). Saving as document drafts is not possible when this option is turned on. Click [here](../../../user-guide/managing-uom-in-computec-wms.md) to find out more.
+16. **Use Purchase UoM from Base Document** – When checked, quantities will be displayed in the Unit of Measure from the Base Document, while still using the actual quantities. Drafts cannot be saved if this option is enabled. Click [here](../../../user-guide/managing-uom-in-computec-wms.md) to find out more.
 
-**Skip Storage Unit details** - The Storage Unit details screen doesn't display if a warehouse has been selected.
+17. **Skip Storage unit details** - The Storage Unit details screen will not appear if a warehouse has been selected.
 
-**Hide SU** - Options related to the creation of a Storage Unit (SU) are not visible.
+18. **Hide SU** - This option hides the options related to creating a Storage Unit (SU).
 
-**Do not clear batch** – When checked, the application stays in the Quantity screen after adding a Batch.
+19. **Do not clear batch** – When enabled, the application stays on the Quantity screen after adding a Batch.
 
-**Automatically populate the Quantity field with the value from the base document** – When saving the batch, the system remains on the Quantity screen with the same batch entered.
+20. **Automatically populate the Quantity field with the value from the base document** – When saving the batch, the system will automatically populate the Quantity field with the value from the base document and stay on the Quantity screen.
 
-    <details>
-    <summary>Click here to expand</summary>
-    <div>
     ![Auto Quantity](./media/grpo/grpo-quantity.png)
-    </div>
-    </details>
 
-**PopUp Date from Base Doc with today's date** – an application message with a warning about the receive date of the document being older than today
+21. **PopUp Date from Base Doc with today's date** – A warning message appears if the receive date of the document is older than today's date.
 
-**PopUp adding new Item when using base document** – an application message with a warning about adding an Item to a Base Document.
+22. **PopUp adding new Item when using base document** – A warning message appears if you try to add a new item to a base document.
 
-**Item Quantity PopUp from Base Document** – an application message with a warning about exceeding Up Quantity from the related Purchase Order. It is possible to either display a warning with a continue button or to block the action (please note that for A/P reserve Invoice, it is only possible to block the action)
+23. **Item Quantity PopUp from Base Document** – A warning appears if the item quantity exceeds the ordered quantity in the related Purchase Order. You can either continue or block the action (for A/P Reserve Invoice, the action can only be blocked).
 
-**PopUp validation Expiry Date Item** – an application message with a warning about the Item expiration date. It is based on ProcessForce Item Details (Batches tab > Expiry Date) or MS SQL query (in case of using the MS SQL query: if the query is empty, validation is not displayed)
+24. **PopUp validation Expiry Date Item** – A warning will appear if the item has an expiration date that needs validation. This is based on the ProcessForce Item Details or an MS SQL query.
 
-**Move CatchWeight quantity difference to** - This option saves the differences to the specified field in SAP Business One.
+25. **Move CatchWeight quantity difference to** - This option saves any quantity differences in the specified field in SAP Business One.
     <details>
     <summary>Click here to expand</summary>
     <div>
     ![CatchWeight Quantity](./media/grpo/catchweight-quantity-difference.png)
-        1. **No action** - No action is performed
-        2. **Quantity** - The difference is recorded in the quantity field
+        1. **No action** - No action is performed.
+        2. **Quantity** - The difference is recorded in the quantity field.
         (In No. of Packages, the number of packages is an integer)
 
             ![Quantity](./media/grpo/quantity-03.png)
 
-        3. **Inventory Quantity** - The difference is recorded in the Qty(Inventory UoM) field
+        3. **Inventory Quantity** - The difference is recorded in the Qty(Inventory UoM) field.
 
             ![Inventory Quantity](./media/grpo/inventory-quantity.png)
     </div>
@@ -188,68 +133,70 @@ sidebar_position: 1
 
 ## Changes
 
-Old view of the tab:  Goods Receipt PO.
+Old View of the Goods Receipt PO Tab
 
-The following options have been removed:
+The following options have been removed from the Goods Receipt PO tab:
 
 1. Extra field in Purchase Orders query, and
 2. Purchase Orders sorting order
 
-Functionalities of both of these options can now be used through Custom Query Manager.
+The functionalities of these options can now be managed through the Custom Query Manager.
 
     ![GRPO](./media/grpo/grpo-tab.png)
 
-To set up the options go to Manager tab,
+To configure these options, follow these steps:
 
-1. check Enable Custom Query Manager checkbox
-2. choose Goods Receipt PO option
-3. click Load
+1. Go to the "Manager tab".
+2. Check the "Enable Custom Query Manager" checkbox.
+3. Choose the "Goods Receipt PO" option.
+4. Click "Load".
 
-    ![Custom Query Manager Checkbox](./media/grpo/custom-query-manager-checkbox.png)
+![Custom Query Manager Checkbox](./media/grpo/custom-query-manager-checkbox.png)
 
 **AD.1 Extra field in Purchase Orders query**
 
-Choose Purchase Order List and click Load button next to it:
+To manage the Extra Field in Purchase Orders Query, follow these steps:
+
+1. Choose the "Purchase Order List" and click the "Load" button next to it:
 
     ![Purchase Order List](./media/grpo/po-list.png)
 
-Now you can see the information on:
+2. You will now see details on:
+    - required fields
+    - available parameters
+    - filter parameters
 
-- required fields
-- available parameters
-- filter parameters
+        ![Fields](./media/grpo/fields-02.png)
 
-    ![Fields](./media/grpo/fields-02.png)
-
-You can create your own query, use a default one (by clicking Copy from default button) or modify the default one.
+You can create a custom query, use a default query (by clicking Copy from Default), or modify the default query.
 
     ![Create Own Query](./media/grpo/create-own-query.png)
 
-An example query:
+**Example query:**
 
-In this example it is required to display a currency code in the 4 field. It will be done in Goods Receipt PO --> from Purchase Order window, on choosing a purchase document.
+In this example, you need to display the currency code in the 4th field in the Goods Receipt PO from the Purchase Order window when selecting a purchase document.
 
-Here, you can check the default query:
+Here, you can view the default query:
 
     ![Default Query](./media/grpo/default-query.png)
 
-and a query modified for this example:
+Or, you can use a modified query for this example:
 
     ![Modified Query](./media/grpo/modified-query.png)
 
-The following lines have been changed:
+The following changes were made in the query:
 
 | Old Line | New Line |
 | --- | --- |
 | `T0."CardName" AS "Filed4"` | `(coalesce(cast(T0."DocCur" AS nvarchar(4000)), '')\|\|'//'\|\|coalesce(cast(T0."CardName" AS nvarchar(4000)), '')) AS "Field4"`|
 
-The new line takes the following information from the table: a values of a currency code, a sign that will separate the values and on which field it will be displayed.
+The new line combines the currency code and supplier name, separating them with a double slash, and displays it in the Field4 column.
 
-The screenshots below presents the difference in results between the default and modified for this example queries:
+Here’s the difference in results between the default and modified queries:
 
     ![Order Selection](./media/grpo/order-selection.png) ![Order Selection](./media/grpo/order-selection-01.png)
 
-Here you can check from where the data is taken for this example:
+Here, you can check where the data comes from for this example:
 
     ![Data](./media/grpo/data.png)
     ![Data](./media/grpo/data-01.png)
@@ -263,7 +210,7 @@ Please also note:
     ```
 **AD.2 Purchase Orders sorting order**
 
-There are four sorting options. On the left side there are options from the old view, on the right side related commands that can be used now:
+There are four sorting options. The sorting order for Purchase Orders has changed. Here are the previous and new sorting options:
     | Old View | New View |
     | --- | --- |
     | creationdate ascending | `"DocDate" ASC` |
@@ -272,3 +219,6 @@ There are four sorting options. On the left side there are options from the old 
     | duodate descending | `"DocDuoDate" DESC` |
 
     ![Duo Date](./media/grpo/duo-date.png)
+
+---
+With the improvements outlined in this document, SAP users can now exercise greater control over their purchase order processes in the GRPO tab. By using the Custom Query Manager to set up custom fields and sorting options, users can create more precise data views, enhancing workflow efficiency. These changes support better data access and customization, enabling users to align GRPO functionalities with their unique business requirements.
