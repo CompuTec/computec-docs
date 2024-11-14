@@ -71,7 +71,7 @@ When using ProcessForce, the SAP Business One user must have a ProcessForce lice
 
 ## Unique Serial Numbers in SAP Business One General Settings
 
-To prevent duplicate serial numbers, set the “Serial Number” option in 'Unique Serial Numbers' under Inventory tab in SAP Business One General Settings.
+To prevent duplicate serial numbers, set the “Serial Number” option in "Unique Serial Numbers" under Inventory tab in SAP Business One General Settings.
 
     ![General Settings](./media/general-settings.png)
 
@@ -89,16 +89,16 @@ Create an inbound rule in Windows Firewall for the required port to ensure Compu
     2. Click Advanced settings:
 
         ![Firewall - settings](./media/advanced-settings.png)
-    3. Select Inbound Rules and choose New Rule... in the 'Actions' window - this runs New Inbound Rule Wizard:
+    3. Select Inbound Rules and choose New Rule... in the "Actions" window - this runs New Inbound Rule Wizard:
 
         ![Inbound rule](./media/inbound-rule.png)
-    4. Choose 'Port' as the rule type:
+    4. Choose "Port" as the rule type:
 
         ![Port](./media/port.png)
-    5. Choose 'TCP' protocol and specify '31002' as the local port:
+    5. Choose "TCP" protocol and specify "31002" as the local port:
 
         ![TCP](./media/protocol-port.png)
-    6. Choose the 'Allow the connection' action:
+    6. Choose the "Allow the connection" action:
 
         ![Allow the connection](./media/action-allow-connection.png)
     7. Choose all profiles:
@@ -177,10 +177,10 @@ When upgrading to version 2.0 from any previous version, you need to manually tr
     ![Settings](./media/wms-settings.webp)
 
     :::note
-    Note that there is a 'License Server' field in the old settings, and on the new form, there is an 'SAP Business One SLD Server' field (these values can be different in some cases).
+    Note that there is a "License Server" field in the old settings, and on the new form, there is an "SAP Business One SLD Server" field (these values can be different in some cases).
     :::
 
-4. Repeat these steps for 'Custom Config' options to ensure all settings are correctly transferred.
+4. Repeat these steps for "Custom Config" options to ensure all settings are correctly transferred.
 
     ![Custom Change](./media/custom-change.webp)
 

@@ -4,26 +4,31 @@ sidebar_position: 4
 
 # WMS Desktop Client
 
-This document provides a step-by-step guide on how to install the CompuTec WMS desktop client.
+This guide provides a detailed, step-by-step process to help you install the CompuTec WMS Desktop Client on your computer.
 
-:::danger
-    To run the CompuTec WMS desktop client on your computer, you must first install the CompuTec WMS server.
+:::note
+    Before installing the desktop client, ensure that you have already installed the CompuTec WMS server on your system.
 :::
 
 ---
 
-1. To install the CompuTec WMS desktop client, download and run its installation file – you can find it [here](../../releases/download.md) or download it directly to your end device (click [here](../../releases/download.md) to find out more).
-2. In the window that appears, click the "Next" button after reading the message about installation preparation:
+## Installation Steps
+
+1. To begin the installation, download the CompuTec WMS desktop client installation file. – you can find the download link [here](../../releases/download.md) or or you may download it directly to your end device (click [here](../../releases/download.md) to find out more).
+2. Once the installation file is downloaded, run the file to begin the setup. A window will appear with a message about installation preparation. Click the "Next" button after reading the instructions.
 
     ![Client Installation](./media/wms-desktop-client/client-installation.png)
-3. A window with an installation destination folder path will appear. The default path is "C:\Program Files (x86)\CompuTec\CompuTec WMS Client\". You can change the path by typing in a new one or by browsing existing folders by clicking the "Change…" button. Click the "Next" button:
+3. A new window will prompt you to select an installation destination folder. The default location is: `C:\Program Files (x86)\CompuTec\CompuTec WMS Client`. If you prefer a different location, you can modify the path by typing in a new one or browsing existing folders by clicking the "Change..." button. After choosing the desired location, click "Next".
 
     ![Client](./media/wms-desktop-client/client-installation-01.png)
-4. A new window appears. Click the "Install" button to start the installation.
+4. In the following window, click the "Install" button to begin the installation process.
 
     ![Client - Install](./media/wms-desktop-client/client-installation-02.png)
 
-5. After reading the message, click the "Finish" button to complete the installation:
+5. After the installation is complete, a message will appear confirming the setup. Click the "Finish" button to close the installer.
 
     ![Client - Finish](./media/wms-desktop-client/client-installation-03.png)
-6. Service is ready to run. You can start it by clicking the shortcut created in the Windows program list.
+6. Once the installation is complete, the CompuTec WMS Desktop Client is ready to run. You can now start the application by clicking the shortcut created in your Windows program list.
+
+---
+With the installation complete, you can now easily access and utilize the features of the CompuTec WMS client for efficient Warehouse Management. If you encounter any issues or require further assistance, don't hesitate to reach out to our support team for guidance. Enjoy using your new CompuTec WMS client!
