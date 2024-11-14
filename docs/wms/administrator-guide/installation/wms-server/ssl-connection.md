@@ -4,29 +4,32 @@ sidebar_position: 2
 
 # SSL Connection
 
-CompuTec WMS supports the SSL protocol.
-
-SSL (Secure Socket Layer) - is a protocol to securely transfer encrypted data. The protocol works in server-client architecture. Its primary function is to verify a server to which a client tries to connect.
+CompuTec WMS supports the SSL (Secure Socket Layer) protocol, which ensures secure, encrypted data transfer between clients and servers. SSL operates in a server-client architecture and is designed to verify the server to which the client is connecting, safeguarding the communication channel.
 
 ---
 
 ## Requirements
 
-- CompuTec License Server, 5.10.2.9 version
-- The feature works on SAP Business One 9.3 (MS SQL and HANA) and on SAP Business One 10 (MS SQL and HANA)
-- The feature works on both Windows WMS Client and Windows CE Client
-- Port addresses are defined for both SSL and non-SSL usage (a default port for non-SSL usage is 30002):
+To use SSL with CompuTec WMS, the following are required:
 
-![WMS Server Port SSL](./media/ssl-connection.webp)
+    - **CompuTec License Server** - Version 5.10.2.9
+    - **SAP Business One Versions** - 9.3 (MS SQL and HANA), 10 (MS SQL and HANA)
+    - **Clients Supported** - Windows WMS Client and Windows CE Client
+    - **Port Addresses** - SSL and non-SSL connections (The default port for non-SSL usage is 30002)
+
+    ![WMS Server Port SSL](./media/ssl-connection.webp)
 
 ## Usage
 
 In CompuTec WMS Client settings, choose the required port:
 
-1. Without SSL, HTTP (no changes):
+1. Without SSL, use the default HTTP settings, with no changes required.
 
     ![Server Choosing](./media/server-choosing.webp)
-2. With SSL (add HTTPS and change the port):
+2. With SSL, Add 'HTTPS' to the connection and change the port accordingly.
 
     ![Server Choosing](./media/server-choosing-2.webp)
-3. The corresponding settings (SSL or non-SSL) must be set. Repeat the same on the mobile device.
+3. Ensure that SSL or non-SSL settings are correctly configured on the server. Make the same SSL or non-SSL settings on the mobile device to ensure consistency across devices.
+
+---
+Implementing SSL in CompuTec WMS ensures that your data transfers remain secure and encrypted, protecting sensitive information from unauthorized access. By following the outlined requirements and usage instructions, you can easily configure SSL on both the server and client devices, providing a robust security framework for your WMS operations. Consistency in configuration across all devices, including mobile clients, is key to maintaining a reliable and secure connection.

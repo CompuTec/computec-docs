@@ -97,4 +97,6 @@ Restarting the CompuTec Server WMS service at least once every 24 hours is requi
 2. **Task 2** - Start CompuTec WMS Server
    - Schedule this task to start the WMS server shortly after the stop task (e.g., 15 seconds later). Due to SAP Business One’s RAM usage, a daily restart is recommended.
 
-For more detailed instructions, refer to the[video guide](https://www.youtube.com/watch?v=O3K-E4Y0WU4).
+---
+
+For more detailed instructions, refer to the [video guide](https://www.youtube.com/watch?v=O3K-E4Y0WU4).
