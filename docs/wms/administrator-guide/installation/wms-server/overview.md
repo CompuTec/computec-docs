@@ -24,15 +24,15 @@ If the CompuTec WMS Server is already installed on this computer, you can access
 1. In the setup window, click 'Install'.
 
     ![Install](../wms-server/media/computec-wms-setup.png)
-2. An installation progress screen will appear, followed by a system message confirming successful setup. Click 'Close' to exit the installer.
+2. An installation progress screen will appear, followed by a system message confirming successful setup. Click "Close" to exit the installer.
 
     ![Install Close](../wms-server/media/computec-wms-setup-01.png)
-3. From the Windows Start menu, open 'CompuTec Service Manager'. The CT icon will appear in the system tray.
+3. From the Windows Start menu, open "CompuTec Service Manager". The CT icon will appear in the system tray.
 
 4. In the Service Manager, select CompuTec WMS Server from the service dropdown.
 
     ![CompuTec WMS Server](./media/computec-wms-server.webp)
-5. Click 'Settings' to open the WMS Settings screen. Alternatively, access this screen from the Start Menu.
+5. Click "Settings" to open the WMS Settings screen. Alternatively, access this screen from the Start Menu.
 
     ![CompuTec WMS Settings](./media/start-menu-wms-settings.webp)
 
@@ -90,7 +90,7 @@ If the CompuTec WMS Server is already installed on this computer, you can access
 
 ## CompuTec WMS Server Automatic Restart
 
-Restarting the CompuTec Server WMS service at least once every 24 hours is required to make it work properly. Use 'Windows Task Scheduler' to automate this (it is not a bug; it is just IT system specific).
+Restarting the CompuTec Server WMS service at least once every 24 hours is required to make it work properly. Use "Windows Task Scheduler" to automate this (it is not a bug; it is just IT system specific).
 
 1. **Task 1** - Stop CompuTec WMS Server
     - Trigger set for a specific time every day.

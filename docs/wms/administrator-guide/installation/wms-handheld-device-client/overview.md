@@ -4,19 +4,19 @@ sidebar_position: 1
 
 # Overview
 
-This document provides a step-by-step guide on installing the WMS Handheld Device Client and includes information on system environment requirements.
+This guide provides instructions for installing the CompuTec WMS Handheld Device Client and details on system environment requirements.
 
 ---
 
 ## Requirements
 
-:::danger
-    To run the CompuTec WMS handheld device client, you must first install the CompuTec WMS server. Click [here](../wms-server/overview.md) for further information.
+:::info
+    Before installing the CompuTec WMS Handheld Device Client, you must first have the CompuTec WMS server installed. Click [here](../wms-server/overview.md) for more information on server installation.
 :::
 
 ### .NET Compact Framework
 
-WMS requires a .NET Compact Framework version respective to an operating system installed on a device to work correctly:
+The WMS application requires a specific version of the .NET Compact Framework based on the operating system running on your device:
 
 ### Device Libraries
 

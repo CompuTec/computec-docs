@@ -6,20 +6,25 @@ sidebar_position: 2
 
 This document provides information on upgrading the WMS application to a newer version.
 
-:::danger
-    It is required to uninstall the CompuTec WMS Server manually (in Programs and Features functionality in Windows) before installing the new CompuTec WMS version.
+:::caution
+    You must manually uninstall the CompuTec WMS Server through the Programs and Features section in Windows before installing the new version of CompuTec WMS.
 :::
 
 ---
 
-To upgrade WMS to a newer version, perform the following steps:
+To upgrade to CompuTec WMS 2.0, follow these steps:
 
-1. Uninstall the WMS application currently installed in a system.
-
-    You can do it in Windows by choosing the following path: Control Panel > All Control Panel Items > Programs and Features. Right-click CompuTec WMS Client and select Uninstall. Do the same with the CompuTec WMS Server.
+1. Before installing the new version, uninstall the current CompuTec WMS Server and Client applications from your system:
 
     ![Uninstall](./media/uninstall.webp)
-2. Get the latest versions of WMS components installers (WMS Server and WMS Client). You can find it [here](../releases/download.md)
-3. Perform the installation procedure described [here](../administrator-guide/installation/requirements.md) using new files.
 
-    Please fulfill the [requirements](./installation/requirements.md) and install both [WMS Server](./installation/wms-server/overview.md) and [WMS Client](./installation/wms-desktop-client.md) components.
+    - Open Control Panel.
+    - Navigate to Programs and Features.
+    - Locate CompuTec WMS Client, right-click it, and select Uninstall.
+    - Repeat the same process for CompuTec WMS Server.
+
+2. Ensure you have the latest installers for both the WMS Server and WMS Client components. You can download them from [here](../releases/download.md)
+3. Perform the installation procedure described [here](../administrator-guide/installation/requirements.md) using new files. Please fulfill the [requirements](./installation/requirements.md) and install both [WMS Server](./installation/wms-server/overview.md) and [WMS Client](./installation/wms-desktop-client.md) components.
+
+---
+Thank you for visiting this page. This process will help maintain the performance and functionality of your WMS system, allowing you to take full advantage of the new features and improvements.
