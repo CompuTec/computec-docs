@@ -4,9 +4,13 @@ sidebar_position: 4
 
 # Delivery
 
+The Delivery Workflow in SAP Business One allows businesses to streamline the order fulfillment process by offering various options.
+
+---
+
 ![Delivery](./media/cc-delivery.webp)
 
-**Delivery Workflow** allows you to choose one of three workflows for Pick Lists:Default Workflow, Customer-Date Workflow, and Date-Customer Workflow.
+1. **Delivery workflow** - Allows you to choose one of three workflows for Pick Lists:Default Workflow, Customer-Date Workflow, and Date-Customer Workflow.
 
     <details>
     <summary>Click here to expand</summary>
@@ -25,11 +29,11 @@ sidebar_position: 4
     </div>
     </details>
 
-**Scanned SU validation** – three options: 'Match selected Warehouse,' 'Match any base document, Line,' 'No validation.'
+2. **Scanned SU validation** – There are three options available: 'Match selected Warehouse,' 'Match any base document, Line,' and 'No validation.'
 
-When "Match selected warehouse" is selected, it will block adding Storage Units with a different warehouse than set on the document - for example, when a new, empty Delivery document is created, and a warehouse needs to be chosen.
+When the "Match selected warehouse" option is chosen, it will prevent the addition of Storage Units (SUs) from a different warehouse than the one specified in the document. For instance, if a new Delivery document is created and a warehouse is selected, only SUs from that warehouse will be allowed.
 
-However, when a user creates a Delivery document from a base document, for example, Sales Order, there is no warehouse selection. Thus this option will not have any effect.
+However, when a Delivery document is generated from a base document, such as a Sales Order, there is no warehouse selection, meaning this option will not have any effect in that case.
 
 **Show Project selection** – Choosing this option causes displaying a window with Project selection before the Remarks window during the transaction.
 
