@@ -18,7 +18,7 @@ CompuTec WMS (Warehouse Management System) licensing is structured around server
 
     ![CompuTec Service Manager](./media/computec-service-manager.webp)
 
-3.Click "PDC/WMS Licensing" under the licensing section to configure server/terminal licenses.
+3. Click "PDC/WMS Licensing" under the licensing section to configure server/terminal licenses.
 
     ![Licensing](./media/computec-service-manager-licensing.webp)
 

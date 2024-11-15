@@ -4,25 +4,21 @@ sidebar_position: 1
 
 # Overview
 
-Many of CompuTec WMS functions can be operated by scanning barcodes. Here, you can find information on barcode scanning.
+CompuTec WMS integrates Barcode Scanning into many of its functions, allowing for more efficient workflow operations. Here’s an overview of the main elements of barcode scanning within CompuTec WMS
 
 ---
 
-## Barcodes Physical Attributes
+## Physical Attributes of Barcodes
 
-The minimal and maximal size of supported barcodes depends on scanner attributes.
+The minimum and maximum sizes of supported barcodes are determined by the capabilities of the scanner being used. CompuTec WMS is compatible with all barcode standards, provided the scanner can recognize them. When using USB-connected scanners, such as with desktop PCs or tablets, additional configuration is necessary to set up prefixes to ensure proper data input and recognition.
 
-CompuTec WMS supports every barcode standard as long as it is recognizable for a scanner used with the application.
+## GS1 Barcode Standard - CompuTec Decoder
 
-In the case of using USB scanners (with desktop applications, e.g., on PCs or tablets), it is required to configure prefixes additionally.
-
-## GS1 Standard - CompuTec Decoder
-
-GS1 Barcode Standard is supported by adjusting it to CompuTec WMS (see the table below). Full implementation of the standard is planned for future releases. To use CompuTec WMS-adapted GS1 standard coding, choose the right option in the Server options.
+CompuTec WMS offers limited support for the GS1 Barcode Standard, with adaptations made for compatibility (see the table below). Users can enable these adaptations through server settings, although full support for the GS1 standard will be introduced in future updates. Select the appropriate option in the Server settings to enable the CompuTec WMS-adapted GS1 standard coding.
 
 ### Barcodes Creation
 
-Barcodes created to be supported by WMS have to have specific prefixes. A particular prefix is recognized only in a corresponding WMS screen; e.g., a barcode with a warehouse prefix will be recognized only when scanned on the WMS warehouse selection screen.
+Barcodes created specifically for CompuTec WMS need particular prefixes to function correctly. Each prefix is designed to correspond with specific WMS screens, ensuring that a warehouse-specific barcode, for example, is recognized only in the WMS warehouse selection screen.
 
 |   AI   | Char count |                                     Description                                     |                 GS1BarcodeDecoder AI                 |                    Supported AI                   |
 |:------:|:----------:|:-----------------------------------------------------------------------------------:|:----------------------------------------------------:|:-------------------------------------------------:|
@@ -168,6 +164,8 @@ Barcodes created to be supported by WMS have to have specific prefixes. A partic
 | 8111   | 1 to 8     | Loyalty points of a coupon                                                          | GS1CouponLoyaltyPoints                               | CouponLoyaltyPoints                               |
 | 8200   | 1 to 70    | URL for product extended information                                                | GS1ProductExtendedInfoURL                            | ProductExtendedInfoURL                            |
 
+## Barcode Scanning Details in CompuTec WMS
+
 \* - Scanning decimal numbers have a different prefix (than 37). For QR codes, we recommend using the 310/320 prefixes.
 
 - 310XNNNNNN
@@ -175,8 +173,8 @@ Barcodes created to be supported by WMS have to have specific prefixes. A partic
 - 95XNNNNNN
 
 Where:
-310, 320, 95 - prefix
-X - a number of digits after which there should be a decimal comma (counting from the end)
+310, 320, 95 - Prefix
+X - Number of digits after which there should be a decimal comma (counting from the end)
 N - digits
 
 Examples:
@@ -187,7 +185,7 @@ Examples:
 
 ## Odette Standard
 
-The following prefixes can be used for Odette standard barcode labels creation. To use Odette standard coding, choose the [right option](../installation/wms-server/overview.md) in the Server options.
+Prefixes for creating Odette standard barcode labels are outlined below. To use this standard, configure the [right option](../installation/wms-server/overview.md) in the Server options.
 
 | **Prefix** |                                                                                                           **Meaning**                                                                                                           |   |
 |:------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|---|
@@ -201,17 +199,13 @@ The following prefixes can be used for Odette standard barcode labels creation. 
 
 ## Custom Decoder
 
-CompuTec WMS Custom Decoder offers an interpretation of barcodes without prefixes. This option allows scanning of a barcode that does not have Application Identificators in GS1 or Odette standard.
+The CompuTec WMS Custom Decoder enables the interpretation of barcodes without prefixes, allowing the scanning of barcodes that lack Application Identifiers from the GS1 or Odette standards. Barcodes without GS1 or Odette Application Identifiers can be scanned by focusing on the desired input field. Future updates will include a configurable prefix interpreter for recognizing company-specific prefixes.
 
-To input data from a barcode without a prefix to a desired field, it is required to focus on this field.
-
-In the future, CompuTec WMS Team plans to implement a configurable prefix interpreter. This will allow the decoder to recognize barcode prefixes used in a specific company.
-
-To use this kind of coding, choose the [right option](../installation/wms-server/overview.md) in the Server options.
+To enable this functionality, choose the [right option](../installation/wms-server/overview.md) in the Server options.
 
 ## USB Scanners
 
-WMS desktop client can be used with USB scanners. To do that, you should configure this kind of device in the following way:
+CompuTec WMS desktop clients can work with USB scanners. The scanning device must be configured as follows:
 
 - scanning device adds a start text sign (Ctrl + B)
 - scanning device adds an end text sign (Ctrl + C).
@@ -221,3 +215,6 @@ The file contains a full programming barcode for plug-in Motorola scanners guide
 ## Barcode Scanner Simulator
 
 For testing barcode scanning, you can use a dedicated application: [WMS Scanning Simulator](./wms-scanning-simulator.md).
+
+---
+CompuTec WMS provides robust support for barcode scanning across various standards. CompuTec WMS continues to prioritize adaptability and user convenience in its barcode scanning solutions.

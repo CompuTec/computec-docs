@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction to WMS
 
-CompuTec WMS (Warehouse Management System) is a solution integrated with SAP Business One, designed to streamline and manage warehouse operations directly from mobile devices, including GS1 barcode scanners and Android devices. The CompuTec WMS enables real-time inventory management, tracking items from their arrival to dispatch—whether as standalone items or as components of a final product.
+CompuTec WMS (Warehouse Management System) is a solution integrated with SAP Business One, designed to streamline and manage warehouse operations directly from mobile devices, including GS1 barcode scanners and Android devices. The CompuTec WMS enables real-time inventory management, tracking items from their arrival to dispatch — whether as standalone items or as components of a final product.
 
 ---
 

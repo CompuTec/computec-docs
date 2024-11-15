@@ -4,79 +4,101 @@ sidebar_position: 2
 
 # Multi-barcodes
 
-CompuTec WMS supports multi-block barcodes, allowing multiple types of data to be scanned with a single code. For example, one barcode can capture information such as an Item, its Batch, and Quantity. To ensure proper functionality, it is important to maintain consistency in the use of prefixes within a single code, following the same standard for all prefixes.
+In modern warehouse management, efficiency and accuracy are critical. Multi-block barcodes, supported by CompuTec WMS, simplify complex workflows by embedding multiple types of data - such as Item, Batch, Quantity, and even User-Defined Fields (UDFs) - into a single scan.
 
-The barcodes used as examples on this page were generated using [this tool](https://www.free-barcode-generator.net/ean-128/).
+To ensure smooth functionality, it is crucial to maintain consistency in the use of prefixes within a single barcode. The examples provided in this guide illustrate how to configure and utilize multi-block barcodes for various processes. The examples provided in this guide illustrate how to configure and utilize multi-block barcodes for various processes.
+
+:::note
+The barcodes in this guide were generated using a specialized [barcode generation tool](https://www.free-barcode-generator.net/ean-128/).
+:::
 
 ---
 
-## Usage of Multi-block Barcodes Scanning on Different Transactions
+## Usage of Multi-block Barcodes in Transactions
 
-****Adding a new Item**: Goods Receipt PO
+### Adding a new Item: Goods Receipt PO
 
-We are receiving an Item with its Batch and quantity (and, optionally, with additional information by using [Custom Configuration](../custom-configuration/overview.md) -> Workflow Step Settings or [UDF Manager](../custom-configuration/custom-configuration-functions/manager/udf-manager.md)).
+    When receiving items, you can use a barcode to capture essential details like Item, Batch, and Quantity. This ensures the item is added to the document list with a single scan, eliminating the need to manually open rows and update information.
 
-To learn more, watch the video: [Manually installing an Object in SAP Business One](https://www.youtube.com/watch?v=-1PYy9W3P3M)
+    For further configuration, you can add additional fields via [Custom Configuration](../custom-configuration/overview.md) -> Workflow Step Settings or [UDF Manager](../custom-configuration/custom-configuration-functions/manager/udf-manager.md).
 
-These are the minimum of the information that has to be contained in a barcode for the Item to be added to the list with one scanning (e.g. on Document Details) without additional opening its row and updating information:
+    Learn more by watching the video: [Manually installing an Object in SAP Business One](https://www.youtube.com/watch?v=-1PYy9W3P3M)
 
-**Example 1: Item, quantity, Batch (with related GS1 prefixes)**
+    These are the minimum of the information that has to be contained in a barcode for the Item to be added to the list with one scanning (e.g. on Document Details) without additional opening its row and updating information:
 
-- (91)Product-A
-- (37)20
-- (10)2020-01-01-001
+    - **Example 1: Item, Quantity, Batch (GS1 prefixes)**
 
-![Barcode](./media/barcode-01.webp)
+        ```scss
+        (91)Product-A
+        (37)20
+        (10)2020-01-01-001
+        ```
 
-A barcode can contain additional information from User-Defined Fields, e.g. Expiry Date:
+        ![Barcode](./media/barcode-01.webp)
 
-**Example 2: Item, Quantity, Batch, Expiry Date:**
+        A barcode can contain additional information from User-Defined Fields, e.g. Expiry Date:
 
-- (91)Product-B
-- (37)20
-- (10)2020-01-01-002
-- (17)200501
+    - **Example 2: Item, Quantity, Batch, Expiry Date:**
 
-![Barcode](./media/barcode-02.webp)
+        ```scss
+        (91)Product-B
+        (37)20
+        (10)2020-01-01-002
+        (17)200501
+        ```
 
-****Finding an Item**: Stock Transfer/Transfer Request/Pick and Pack
+        ![Barcode](./media/barcode-02.webp)
 
-To correctly identify an Item and its localization, a related barcode has to contain at least the following prefixes:
+### Finding an Item: Stock Transfer/Transfer Request/Pick and Pack
 
-**Example 1: Item, Quantity, Batch**
+    To accurately identify an item and its location, the corresponding barcode must include at least the following prefixes:
 
-This allows adding an Item to the list with one scanning without additional opening its row and updating information
+    - **Example 1: Item, Quantity, Batch**
+        This enables adding an item to the list with a single scan, without the need to open its row or update any information manually.
 
-- (91)Product-A
-- (37)20
-- (10)2020-01-01-001
+        ```scss
+        (91)Product-A
+        (37)20
+        (10)2020-01-01-001
+        ```
 
-![Barcode](./media/barcode-02.webp)
+        ![Barcode](./media/barcode-02.webp)
 
-**Example 2: Batch and Quantity**
+    - **Example 2: Batch and Quantity**
 
-It is also possible to scan it on the Warehouse selection form if a unique Batch is present only in one localization and this option is enabled: Custom Configuration -> Scanning: general -> Identify/open items by batch/serial scanning)
+        It is also possible to scan it on the Warehouse selection form if the batch is unique to a single location. Enable this option via: Custom Configuration -> Scanning: general -> Identify/open items by batch/serial scanning.
 
-- (10)2019-12-02-002
-- (37)10
+        ```scss
+        (10)2019-12-02-002
+        (37)10
+        ```
 
-![Barcode](./media/barcode-04.webp)
+        ![Barcode](./media/barcode-04.webp)
 
-****Item issue**: Pick Order, Goods Issue, Delivery
+### Item issue: Pick Order, Goods Issue, Delivery
 
-**Example 1: Item, Quantity, Batch**
+    Barcodes simplify the process of issuing items by capturing key details needed for transactions like Pick Orders, Goods Issues, or Deliveries.
 
-- (91)Active-Item-01
-- (10)2012-04-18-4
-- (95)5555600
+    - **Example 1: Item, Quantity, Batch**
 
-![Barcode](./media/barcode-05.webp)
+        ```scss
+        (91)Active-Item-01
+        (10)2012-04-18-4
+        (95)5555600
+        ```
 
-**Example 2: Batch and Quantity**
+        ![Barcode](./media/barcode-05.webp)
 
-You can also scan the barcode on the Warehouse selection form if the unique Batch is available in only one location and the following option is enabled: (Custom Configuration -> Scanning: General -> Identify/Open Items by Batch/Serial Scanning).
+    - **Example 2: Batch and Quantity**
 
-- (10)2019-12-02-002
-- (37)10
+        You can also scan the barcode on the Warehouse selection form if the unique Batch is available in only one location and the following option is enabled: (Custom Configuration -> Scanning: General -> Identify/Open Items by Batch/Serial Scanning).
 
-![Barcode](./media/barcode-06.webp)
+        ```scss
+        (10)2019-12-02-002
+        (37)10
+        ```
+
+        ![Barcode](./media/barcode-06.webp)
+
+---
+Multi-block barcodes are a powerful feature of CompuTec WMS, enabling streamlined data entry, increased accuracy, and operational efficiency. Whether you're optimizing workflows or reducing manual errors, multi-block barcodes are an invaluable tool in your warehouse management arsenal.
