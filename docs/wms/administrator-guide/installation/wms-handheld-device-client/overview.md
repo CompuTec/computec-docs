@@ -16,31 +16,42 @@ This guide provides instructions for installing the CompuTec WMS Handheld Device
 
 ### .NET Compact Framework
 
-The WMS application requires a specific version of the .NET Compact Framework based on the operating system running on your device:
+The WMS client requires a specific version of the .NET Compact Framework depending on the operating system installed on your device:
+
+    - **For Window CE** - Download the appropriate .NET Compact Framework for your version of Windows CE from [here](https://download.computec.one/software/wms/tools/NETCFv35.wce.armv4.cab)
+    - **For Windows Mobile / Handheld Compact** - Download the corresponding .NET Compact Framework [here](https://download.computec.one/software/wms/tools/NETCFv35.wm.armv4i.cab).
 
 ### Device Libraries
 
-Libraries for a specific brand of a device:
-(for operating a barcode scanner)
+Different device brands require specific libraries to support barcode scanning functionality. The following libraries are required for the corresponding devices:
+
+    - **Intermec with Windows CE 5 and Windows Mobile 5** - Download the library [here](https://download.computec.one/software/wms/tools/Intermec_WindowsCE_Mobile_5.cab).
+    - **Intermec with Windows CE 6 and Windows Mobile 6** - Download the library [here](https://download.computec.one/software/wms/tools/Intermec_WindowsCE_Mobile_6.cab).
+    - **Symbol Devices** - Download the library [here](https://download.computec.one/software/wms/tools/Symbol.all.arm.cab)
 
 ### DataWedge
 
-:::info
-DataWedge service has to be turned off on Motorola and Symbol devices for the application to work correctly.
+:::note
+If you are using Motorola or Symbol devices, the DataWedge service must be turned off for the WMS application to function correctly. Ensure that the service is disabled before running the application.
 :::
 
 ## Installation
 
-1. Download the CompuTec WMS Client Windows CE file from [here](../../../releases/download.md) and transfer it to the mobile device or download it directly (click [here](../computec-wms-client-download.md) to learn more about CompuTec WMS Client Download). Open the destination folder on the device and run the file.
+Follow these steps to install the CompuTec WMS Client on your handheld device:
 
-2. Choose a desired installation folder and click OK.
+1. Download the CompuTec WMS Client for Windows CE file from the link provided [here](../../../releases/download.md) and transfer it to the mobile device or directly from the device (click [here](../computec-wms-client-download.md) to learn more about CompuTec WMS Client Download). Open the folder where the file was saved on the device and run the installation file.
 
-3. The "Installing CompuTec WMS" form with a progress bar will be displayed.
+2. Select your desired installation folder and click "OK".
 
-4. The installation is complete when the installation form is gone. Go to the Programs menu and choose the CompuTec WMS icon to start the application.
+3. The "Installing CompuTec WMS" window will appear with a progress bar. Wait for the installation process to complete.
+
+4. Once the installation is complete, the installation window will close. Navigate to the Programs menu and select the CompuTec WMS icon to launch the application.
 
 ## Cold Boot
 
 Click [here](./cold-boot.md) to learn how to keep the application and its configuration in case of a cold boot.
 
 ---
+By following the above instructions, you will be able to successfully install the CompuTec WMS Handheld Device Client on your Windows CE or Windows Mobile device. Ensure that you meet all system requirements and have the necessary libraries installed for smooth operation.
+
+If you encounter any issues during installation or setup, contact technical support for assistance.
