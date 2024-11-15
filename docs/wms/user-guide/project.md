@@ -4,20 +4,23 @@ sidebar_position: 4
 
 # Project
 
-Here, you can obtain additional information regarding [SAP Business One Projects](/docs/processforce/user-guide/costing-material-and-resources/projects) on documents created using CompuTec WMS.
+This guide provides detailed information about [SAP Business One Projects]((/docs/processforce/user-guide/costing-material-and-resources/projects) and their configuration on documents created with CompuTec WMS.
 
 ---
 
-It is impossible to set Enable Dimensions SQL, Proper Line to Project. This setting has a priority over the default Project and a Project picked during a transaction.
+The "Enable Dimensions SQL, Proper Line to Project" setting cannot be configured. This setting has a priority over both the default project and any project selected during a transaction.
 
-Default Project for a specific transaction can be set in related [Custom Config tabs](../administrator-guide/custom-configuration/overview.md) (Goods Receipt PO, Goods Receipt, Delivery, Goods Issue, and Inventory Transfer).
+A default project for a specific transaction type can be defined in the relevant [Custom Config tabs](../administrator-guide/custom-configuration/overview.md) (including Goods Receipt PO, Goods Receipt, Delivery, Goods Issue, and Inventory Transfer).
 
     ![Project Selection](./media/project-selection.png)
 
-Priority of assigning Project to a document line:
+**Priority of Assigning Project to a Document Line**:
 
-1. Project set in Dimensions option, Project Line; if not set, then:
-2. A Project picked in Project Selection form during the transaction; if not picked, then:
-3. A default Project set in Custom Config for a specific transaction.
+    - **Dimensions Option - Project Line**: If a project is set at the Project Line level in the Dimensions option, this project will be used for the document line.
+    - **Project Selection Form**: If no Project Line is specified, the system will use a project selected in the Project Selection form during the transaction.
+    - **Default Project**: If neither of the above are set, the default project from the Custom Config for that specific transaction type will be applied.
 
-    ![Assigning Project](./media/sales-order.png)
+        ![Assigning Project](./media/sales-order.png)
+
+---
+Understanding the hierarchy of project assignment in CompuTec WMS is essential for consistent project tracking and accurate documentation in SAP Business One. By configuring projects within the Custom Config tabs and knowing the priority of project settings, businesses can streamline Project Management processes and ensure accuracy in reporting.
