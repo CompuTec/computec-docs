@@ -42,3 +42,5 @@ DataWedge service has to be turned off on Motorola and Symbol devices for the ap
 ## Cold Boot
 
 Click [here](./cold-boot.md) to learn how to keep the application and its configuration in case of a cold boot.
+
+---
