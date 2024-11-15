@@ -4,12 +4,12 @@ sidebar_position: 7
 
 # WMS Translator
 
-WMS Translator is an IT solution that allows you to translate CompuTec WMS easily from its default (American English) to any other language.
+This guide explains how to use the WMS Translator, an essential IT solution for businesses utilizing CompuTec WMS. The tool enables users to easily translate the default language of CompuTec WMS (American English) into any other language, making the system more accessible to non-English-speaking users. It is particularly useful for international organizations or businesses that need to customize the interface for different regions or languages. Whether you're translating for a specific locale or testing a new language version, WMS Translator offers an intuitive and efficient process.
 
 ---
 
 :::caution
-    If you have created a translation for a specific language, we suggest you send the files to us to incorporate in the next installer. Otherwise, the language will get back to default after an upgrade.
+    If you have created a translation for a specific language, it’s advisable to send these files to CompuTec to be incorporated into the next installer release. Otherwise, the language will revert to the default (American English) after a system upgrade, and your changes will be lost.
 :::
 
 ## WMS Translator Address
@@ -36,9 +36,9 @@ The default language is a source. You cannot change it.
 
 ## Translation Download
 
-You can download the translation for the selected language. You can update your CompuTec WMS installation with the downloaded translation files, e.g., to test it before an official release (please remember that the files will be updated with official versions upon upgrade to the official release).
+If you want to test the translation before an official release, you can download the translation files for the selected language. You can then update your CompuTec WMS installation with the downloaded files. Keep in mind that once you upgrade to an official release, the translation files will be overwritten with the latest version.
 
-To swap downloaded language files with the ones in your WMS Server and Client installation folders, you have to copy translation files to two folders:
+To swap downloaded language files with the ones in your WMS Server and Client installation folders, copy the translation files to both the WMS Server and WMS Client installation folders.
 
     <details>
     <summary>Click here to find out more</summary>
@@ -47,7 +47,7 @@ To swap downloaded language files with the ones in your WMS Server and Client in
 
         ![Translation file](./media/server_transl.webp)
 
-        (Or the same path with the Program Files folder, instead of Program Files (x86), in case of using a 64-bit version of the application)
+        (Alternatively, use the same path with the Program Files folder instead of Program Files (x86) if you're using a 64-bit version of the application.)(Or the same path with the Program Files folder, instead of Program Files (x86), in case of using a 64-bit version of the application)
 
     - A file with a shorter name:
 
@@ -55,3 +55,6 @@ To swap downloaded language files with the ones in your WMS Server and Client in
 
     </div>
     </details>
+
+---
+By following the steps outlined above, you can easily translate and update your WMS installation while keeping track of future upgrades. Make sure to back up your translations and share them with CompuTec for seamless integration into future releases.
