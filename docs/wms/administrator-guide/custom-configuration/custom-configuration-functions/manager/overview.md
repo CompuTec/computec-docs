@@ -4,50 +4,58 @@ sidebar_position: 1
 
 # Overview
 
+Here’s a rundown of the key settings available in the Manager module
+
+---
+
 ![Manager](./media/manager.webp)
 
-**Workflow Step Settings** – allows choosing a workflow for a specific transaction. Click [here](../../../custom-configuration/custom-configuration-functions/manager/workflow-step-settings.md) to find out more.
+1. **Workflow Step Settings** – The Workflow Step Settings allow you to select a specific workflow for different types of transactions, helping to automate and standardize processes across the organization. To know more about "Workflow Step Settings", Click [here](../../../custom-configuration/custom-configuration-functions/manager/workflow-step-settings.md).
 
-**Enable UDF Manager** – UDF Manager allows to manage User Defined Fields during transactions.
+2. **Enable UDF Manager** – This option activates the User Defined Fields (UDF) Manager, which helps to manage custom fields during transactions, enabling greater data flexibility and customization.
 
-**Extra SQL fields on Main List Items** – this option allows the display two additional values on the Item row on specific transactions. Click [here](../../../custom-configuration/custom-configuration-functions/manager/extra-fields-sql-in-main-list.md) to find out more.
+3. **Extra SQL fields on Main List Items** – This setting allows you to display two additional SQL-based values in the item rows of select transactions, offering enhanced visibility for important data at a glance. To know more about "Extra SQL fields on Main List Items", Click [here](../../../custom-configuration/custom-configuration-functions/manager/extra-fields-sql-in-main-list.md).
 
-**Enable SAP line fields** – this option allows the add document line fields to be displayed during transactions. Click [here](../../../custom-configuration/custom-configuration-functions/manager/sap-line-fields.md) to find out more.
+4. **Enable SAP line fields** – This option enables document line fields to be visible during transactions, adding more context and detail to document interactions. To know  more about "SAP Line Fields", Click [here](../../../custom-configuration/custom-configuration-functions/manager/sap-line-fields.md) to find out more.
 
-**Enable Interface Design Manager** – this option allows to customize main menu options. Click [here](../../../custom-configuration/custom-configuration-functions/manager/interface-design-manager.md) to find out more.
+5. **Enable Interface Design Manager** – With the Interface Design Manager, users can customize main menu options, allowing a more personalized navigation experience within the SAP interface. To know more about "Interface Design Manager", click [here](../../../custom-configuration/custom-configuration-functions/manager/interface-design-manager.md).
 
-**Enable SQL Dimensions** – allows for the automatic choice of dimensions in transactions based on an SQL query (instead of choosing it manually during a transaction). The option is available for Goods Receipt PO, Goods Receipt, Return, Return PO, Stock Transfer, Goods Issue, and Delivery.
+6. **Enable SQL Dimensions** – This setting automates the choice of dimensions in transactions based on an SQL query, removing the need for manual dimension selection. It’s available for transactions like Goods Receipt PO, Stock Transfer, and Delivery.
     <details>
     <summary>Click here to find out more</summary>
     <div>
-    Check the checkbox (1), choose a required transaction from a drop-down list, and click Load (3):
+    Check the checkbox (1), Select the desired transaction from the drop-down list, and click "Load" (3):
 
     ![Enable SQL Dimensions](./media/enable-sql-dimensions.png)
 
-    Choose a required Dimension by clicking the related 'Open SQL':
+    Select the required Dimension by clicking the related 'Open SQL':
 
     ![Choose Dimensions](./media/choose-dimensions.png)
 
-    Put in your SQL query and click 'Save.'
-    
+    Enter SQL query and click "Save".
+
     ![SQL Query](./media/sql-query.png)
-</div>
-</details>
 
-**Enable Batch Management Manager** – this option allows to define of FIFO behavior. Click [here](../../../custom-configuration/custom-configuration-functions/manager/batch-management-manager.md) to find out more.
+    </div>
+    </details>
 
-**Enable Semaphore** – this option allows to activation of the Semaphore option in chosen transactions. Click [here](semaphore.md) to find out how to activate Semaphore.
+7. **Enable Batch Management Manager** – This option enables you to define FIFO (First-In-First-Out) behavior for batch management, which helps optimize inventory control and management. To know more about "Batch Management Manager", click [here](../../../custom-configuration/custom-configuration-functions/manager/batch-management-manager.md).
 
-**Document reservation time** – period of a document being reserved for a specific user. Click [here](../../../custom-configuration/custom-configuration-functions/manager/semaphore.md#settings) to find out more.
+8. **Enable Semaphore** – The Semaphore feature allows for concurrent transaction management by activating Semaphore for selected transactions. This helps prevent issues related to data access conflicts during simultaneous usage. Click [here](semaphore.md) to find out how to activate Semaphore.
 
-**Semaphore** – Show only the first free Inventory Transfer Request – if checked, only the first open document will be available on the list of documents in the Inventory Transfer Request transaction (instead of all of the documents)
+9. **Document reservation time** – This option sets a reservation period for documents, ensuring they remain accessible exclusively to a designated user within a specified time frame. Click [here](../../../custom-configuration/custom-configuration-functions/manager/semaphore.md#settings) to find out more.
 
-**Enable base document header remarks** – click [here](../../../custom-configuration/custom-configuration-functions/manager/enable-base-document-header-remarks.md) to find out more.
+10. **Semaphore** – When enabled, only the first open document appears in the list during Inventory Transfer Requests, simplifying selection and reducing clutter.
 
-**Enable Custom Query Manager** – find out more information on this [here](../../../custom-configuration/custom-configuration-functions/manager/custom-query-manager/overview.md)
+11. **Enable base document header remarks** – This option enables remarks in the header of base documents, providing additional commentary or notes for reference. To know more about "Enable base document header remarks", click [here](../../../custom-configuration/custom-configuration-functions/manager/enable-base-document-header-remarks.md).
 
-**Enable Check Point Validation** – find out more about it [here](../../../custom-configuration/custom-configuration-functions/manager/check-point-validation/overview.md).
+12. **Enable Custom Query Manager** – The Custom Query Manager allows the creation of custom SQL queries for specific requirements, enhancing flexibility in reporting and data access. To know more about "Custom Query Manager", click [here](../../../custom-configuration/custom-configuration-functions/manager/custom-query-manager/overview.md).
 
-**Package Instruction Constant Count Layer** - click [here](../../../custom-configuration/custom-configuration-functions/manager/package-instruction-constant-count-layer.md) to find out more.
+13. **Enable Check Point Validation** – This feature provides an added layer of validation to ensure data integrity and compliance with internal requirements. To know more about "Check Point Validation", click [here](../../../custom-configuration/custom-configuration-functions/manager/check-point-validation/overview.md).
 
-**Enable Signing Documents** – find out more information on this [here](enable-signing-document.md).
+14. **Package Instruction Constant Count Layer** - This setting allows the configuration of package instructions with a constant count layer for specific inventory management needs. To know more about "Package Instruction Constant Count Layer", click [here](../../../custom-configuration/custom-configuration-functions/manager/package-instruction-constant-count-layer.md).
+
+15. **Enable Signing Documents** – This option enables document signing within the system, providing a secure way to authorize transactions. To know more about "Enabling Signing Documents", click [here](enable-signing-document.md).
+
+---
+The Manager Settings module offers a comprehensive suite of tools that can be tailored to meet the unique requirements of your organization. By configuring these options, you can streamline workflows, enhance data accuracy, and customize the interface to ensure an efficient, user-friendly experience in SAP.

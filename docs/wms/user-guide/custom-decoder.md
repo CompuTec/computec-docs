@@ -6,17 +6,18 @@ toc_max_heading_level: 4
 
 # Custom Decoder
 
-This tool allows defining custom data to be scanned and recognized in barcodes and places within the CompuTec WMS workflow to use them.
+Custom decoders in CompuTec WMS allow you to define unique data scanning rules and recognize barcode information within specific workflows, streamlining data processing and accuracy in Warehouse Management System transactions. The steps and configuration options detailed here guide users through setting up and testing custom decoders in CompuTec WMS, highlighting the potential for customized, efficient scanning operations.
 
 ---
 
 ## Requirements
 
-- CompuTec WMS Server installed
-- CompuTec WMS objects installed in the database
-- MAUI WMS client installed (Barcoder Setup configuration from the MAUI on Windows level only)
-- The latest scanner simulator (for testing)
-- Correct configuration in the Scanner tab:
+To implement custom decoders, ensure the following setup is complete:
+    - CompuTec WMS Server installed
+    - CompuTec WMS objects installed in the database
+    - MAUI WMS client installed (Barcoder Setup configuration from the MAUI on Windows level only)
+    - The latest scanner simulator (for testing)
+    - Correct configuration in the Scanner tab:
 
     (Prefix, Suffix, Scanner Group Separator).
 
@@ -402,3 +403,6 @@ You can also use your own query and rules. Below are some examples:
 
 **Example B**
 ![Example](./media/example-02.jpg)
+
+---
+CompuTec WMS’s custom decoder functionality enhances data flexibility and accuracy by allowing tailored data processing through barcode rules. With options for defining variables, creating complex rules, and testing configurations, users can adapt WMS workflows to specific operational needs, optimizing scanning and transaction processing.
