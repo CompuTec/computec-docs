@@ -18,16 +18,15 @@ To implement custom decoders, ensure the following setup is complete:
     - MAUI WMS client installed (Barcoder Setup configuration from the MAUI on Windows level only)
     - The latest scanner simulator (for testing)
     - Correct configuration in the Scanner tab:
-
-    (Prefix, Suffix, Scanner Group Separator).
+        (Prefix, Suffix, Scanner Group Separator)
 
     ![WMS](./media/wms-log-in.webp)
 
     ![Scanner](./media/wms-scanner.webp)
 
-    The settings in the scanner simulator and the Scanner tab have to be the same:
+The settings in the scanner simulator and the Scanner tab have to be the same:
 
-    ![Scanner](./media/wms-scanner-symulator.webp)
+![Scanner](./media/wms-scanner-symulator.webp)
 
 ## Usage
 
@@ -39,209 +38,150 @@ Choose the option in the main menu:
 
 ![Decoder](./media/wms-barcode-setup-main.webp)
 
-Here, you can find a list of the already defined custom decoders.
+Here, you can view a list of pre-defined custom decoders.
 
-Each of the decoders is defined with the following information:
+Each decoder includes the following details:
 
 #### Columns
 
-**Code** – a decoder ID
-
-**Name** – a decoder name
-
-**Enabled** – a decoder is enabled/disabled.
+- **Code** – Unique decoder ID.
+- **Name** – Decoder name.
+- **Enabled** – Status of the decoder (enabled/disabled).
 
 #### Buttons
 
-**Edit** – a decoder's edition
-
-**Test** – a decoder's configuration testing
-
-**Delete** – delete the chosen decoder
-
-**Create new** – creating a new decoder
-
-**Close** – close the window.
+- **Edit** – Modify an existing decoder.
+- **Test** – Test the configuration.
+- **Delete** – Delete the chosen decoder
+- **Create new** – Add a new decoder
+- **Close** – Exit/close the window.
 
 ### Decoder Selection Rules
 
+Define which decoders are assigned to specific WMS transactions or forms. You can refresh the list by clicking the filter button.
+
 ![Decoder Selection Rules](./media/wms-decoder-rules-main.webp)
 
-A list of places in CompuTec WMS with the custom decoders assigned.
-
-You can refresh the list by clicking the filter button.
-
-**WMS Transaction** – you can filter the table to display results for all transactions or just a specific one.
-
-**WMS Form Id** – filter the list by a specific Form ID.
-
-**Edit** – edit a decoder assignment
-
-**Delete** – delete a decoder assignment
-
-**Create new** – create a decoder assignment
-
-**Close** – close the window.
+- **WMS Transaction** – Filter the table to show results for either all transactions or a specific one.
+- **WMS Form Id** – Filter the list by a specific Form ID.
+- **Edit** – Edit a decoder assignment.
+- **Delete** – Delete a decoder assignment.
+- **Create new** – Create a decoder assignment.
+- **Close** – Exit/close the window.
 
 ### Decoder Definitions
 
-![Code Definition](./media/wms-decoder-definitions.webp)
+Define how the decoder processes data, including rules and variables.
 
-**Decoder Code** – a decoder's ID, filled in automatically
+    ![Code Definition](./media/wms-decoder-definitions.webp)
 
-**Decoder Name** – a decoder's name
+- **Decoder Code** – Auto-generated Decoder's ID.
+- **Decoder Name** – Name of the decoder.
+- **Enabled** – Toggle decoder on/off.
+- **Variables Definition** – Define variables for decoder rules.
+- **Test** – Test decoder functionality.
 
-**Enabled** – turn a decoder on/off
+The table provides a detailed list of rules for a specific decoder:
 
-**Variables Definition** – self-explanatory
-
-**Test** – test the decoder.
-
-The table contains a list of the rules of the specific decoder:
-
-**Name** – a name of a rule
-
-**Type** – a type of a rule
-
-**Enabled** – turn the rule on/off
-
-**Edit** – edit a rule
-
-**Delete** – delete a rule
-
-**New Rule** – create a new rule (you have to choose a type of a rule from a drop-down list)
-
-**Add/Update** – add/update a decoder
-
-**Back** – go back to the previous window.
+- **Name** – The name of the rule.
+- **Type** – The rule's type.
+- **Enabled** – Enables or disables the rule.
+- **Edit** – Allows modification of the rule.
+- **Delete** – Deletes the rule.
+- **New Rule** – Creates a new rule (requires selecting a rule type from a drop-down menu).
+- **Add/Update** – Saves or updates the decoder.
+- **Back** – Returns to the previous window.
 
 ### Variables Definition
 
 ![Input Variables](./media/wms-variables-definition.webp)
 
-Here, you can define variables that you can then use in the decoder's rules:
+This section allows you to define variables for use in the decoder's rules.
 
-Types of variables:
+**Types of variables**:
 
-**Input Variables** – input variables that you can use as input parameters for rules. By default, as a BARCODE input variable, it puts the whole text read from a barcode.
-
-**Internal Variables** – variables you can use as input and output parameters for rules. Temporary variables. You can use BusinessObject value by inserting '#' before the variable name
-
-**Output Variables** – you can use them as output parameters for rules.
-
-**Use GS1 Decoder** – use this option if you use GS1 barcodes and want the decoder to decode GS1 prefixes and pass them to CompuTec WMS automatically. Otherwise, pulling each piece of data from barcodes has to be defined manually.
+- **Input Variables** – Serve as input parameters for rules. By default, the BARCODE input variable captures the entire text read from a barcode.
+- **Internal Variables** – Temporary variables that function as both input and output parameters. Use a BusinessObject value by prefixing the variable name with '#'.
+- **Output Variables** – Act as output parameters for rules.
+- **Use GS1 Decoder** – Enable this option to automatically decode GS1 prefixes and pass the data to CompuTec WMS when working with GS1 barcodes. If disabled, each data element must be manually defined.
 
 #### Columns [01]
 
-**Name** – a name of a variable. It has to be unique.
-
-**GS1 Code** – a GS1 segment (to be chosen from a list). These variables are to be processed on the input and output of a decoder.
-
-**Pass to output** – passing a variable to CompuTec WMS
-
-**Description** – description of a temporary variable
+- **Name** – Name of the variable. It has to be unique.
+- **GS1 Code** – A GS1 segment selected from a predefined list, processed during the decoder's input and output stages.
+- **Pass to output** – Determines whether the variable is passed to CompuTec WMS.
+- **Description** – A brief description of the temporary variable.
 
 #### Buttons
 
-**New** – a new variable creation
-
-**Delete** – delete a variable
-
-**Save** – save all the variables
-
-**Back** – go back to the previous window.
+- **New** – Create a new variable.
+- **Delete** – Remove an existing variable.
+- **Save** – Save all defined variables.
+- **Back** – Return to the previous window.
 
 ### Rules
 
-**SQL** – this rule allows proceeding SQL queries
+Create and manage rules to define how data is processed.
 
-![Edit Rules](./media/wms-decoder-sql-rule.webp)
+1. **SQL Rules** – this rule allows proceeding SQL queries
 
-This rule allows the assignment of an SQL query result to output variables. You can use input and internal variable values as parameters. Names of input variables should start with @. Columns of the query result should be named the same as output variables. The query should result in one line.
+    ![Edit Rules](./media/wms-decoder-sql-rule.webp)
 
-**Name** – a rule name
+    This rule assigns the result of an SQL query to output variables. Input and internal variable values can be used as parameters, with input variable names starting with @. The column names in the query result must match the output variable names, and the query should return a single row.
 
-**Enabled**– turn a rule on/off.
+    - **Name** – Name of the rule.
+    - **Enabled**– Enable or disable the rule.
+    - **Stop processing more rules on failure** – Prevent further rules from executing if this rule fails.
+    - **Query** – Enter the SQL Query here.
+    - **New** – Add an input or output variable by selecting from a drop-down list.
+    - **Copy** – Copy the variable name to the clipboard.
+    - **Delete** – Delete the variable.
+    - **Test Query** – Test the SQL query by entering input variable values in the Test Value field.
+    - **Save** – Save the rule.
+    - **Back** – Return to the previous window.
 
-**Stop processing more rules on failure** – no more rules will be processed upon failure of a rule.
+2. **Regexp** – This rule allows you to get data using regular expressions.
 
-**Query** – here, you put an SQL query.
+    ![Edit Rule](./media/wms-decoder-edit-rule.webp)
 
-**New** – add an input or output variable. Choose a value from a drop-down list.
+    This rule uses regular expressions to extract data from a barcode or variables. Named groups in the expression must match the output variable names.
 
-**Copy** – copy the name of a variable to the clipboard.
+    - **Name** – The rule's name.
+    - **Enabled** – Enable or disable the rule.
+    - **Stop processing more rules on failure** – No more rules will be processed upon failure of a rule.
+    - **Pattern** – Field for entering the regular expression.
+    - **New** – Add a new output variable by selecting from a drop-down menu.
+    - **Copy** – Copy the name of a variable to the clipboard.
+    - **Delete** – Delete the variable.
+    - **Save** – Save the rule.
+    - **Back** - Return to the previous window.
 
-**Delete** – delete a variable.
+3. **Replace** – This rule allows you to replace a portion of text.
 
-**Test Query** – test the SQL query. Put the input variable values in the Test Value.
+    With this rule, you can modify specific code text or variables.
 
-**Save** – save the rule.
+    ![Edit Rule](./media/wms-decoder-edit-rule-replace.webp)
 
-**Back** – go back to the previous window.
+    - **Name** – The rule's name.
+    - **Enabled** – Enable or disable the rule.
+    - **Old Value** – A searched value.
+    - **New Value** – A new value.
+    - **Save** – Save the rule.
+    - **Back** – Return to the previous window.
 
-**Regexp** – this rule allows to get data using regular expressions
+### **Testing Decoder**
 
-![Edit Rule](./media/wms-decoder-edit-rule.webp)
+    Use the test option to validate decoder behavior with sample barcode values.
 
-In an expression, you have to use named groups, and the names of the groups have to correlate with the output variables.
+    ![Barcode definitions](./media/wms-decoder-testing.webp)
 
-This rule lets us get data from a barcode or variables based on regular expressions.
-
-**Name** – a rule name.
-
-**Enabled** – turn a rule on/off.
-
-**Stop processing more rules on failure** – no more rules will be processed upon failure of a rule.
-
-**Pattern** – a field for a regular expression.
-
-**New** – add new output variable. Choose a variable from a drop-down list.
-
-**Copy** – copy the variable name to the clipboard.
-
-**Delete** – delete a variable.
-
-**Save** – save the rule.
-
-**Back** - go back to the previous window.
-
-**Replace** – this rule allows to change a part of the text
-
-Using this rule, you can replace some code text or variables.
-
-![Edit Rule](./media/wms-decoder-edit-rule-replace.webp)
-
-**Name** – a rule name.,
-
-**Enabled** – turn a rule on/off.
-
-**Old Value** – a searched value.
-
-**New Value** – a new value.
-
-**Save** – save the rule.
-
-**Back** – go back to the previous window.
-
-**Testing Decoder**
-
-Here, you can test a decoder using example barcode values.
-
-![Barcode definitions](./media/wms-decoder-testing.webp)
-
-**Decoder Code** – a decoder ID.
-
-**Decoder Name** – a decoder name.
-
-**Enabled** – turn a decoder on/off.
-
-**Barcode** – a field for barcode.
-
-**GS** – click to insert a GS1 separator in the pointed spot in the Barcode field. The separator has to be defined in CompuTec WMS options (Scanner tab).
-
-**Test** – test the decoder's behavior for a specific barcode. Clicking results in displaying output variables values sent to CompuTec WMS.
-
-**Back** – go back to the previous window.
+    - **Decoder Code** – The unique ID of the decoder.
+    - **Decoder Name** – The name of the decoder.
+    - **Enabled** – Enable or disable the decoder.
+    - **Barcode** – A field to enter the barcode.
+    - **GS** – Click to insert a GS1 separator at the specified location in the Barcode field. The separator must be defined in the CompuTec WMS options (Scanner tab).
+    - **Test** – Test the decoder's functionality with a specific barcode. Clicking will display the output variable values sent to CompuTec WMS.
+    - **Back** – Return to the previous window.
 
 **Assigning rule to spot/screen in CompuTec WMS**
 
@@ -249,61 +189,46 @@ Here, you can test a decoder using example barcode values.
 
 You can assign a specific decoder to a chosen transaction or screen in CompuTec WMS.
 
-**Decoder** – choose a decoder.
+- **Decoder** – Select te decoder to assign.
+- **WMS Transaction** – Choose the relevant CompuTec WMS transaction.
+- **WMS Form Id** – Enter the screen ID for the CompuTec WMS form.
+- **Optional condition** – If assigning multiple decoders to the same screen, you can define an SQL query with conditions to determine which decoder to use.
+- **Save** – Save the assignment.
+- **Back** – Return to the previous window.
 
-**WMS Transaction** – choose a CompuTec WMS transaction.
-
-**WMS Form Id** – CompuTec WMS screen ID.
-
-**Optional condition** – in case of assigning a few decoders to the same screen, you can define an SQL query with conditions for using a specific query.
-
-**Save** – save the assignment.
-
-**Back** – go back to the previous window.
-
-**Current Form Details** – additional information for a specific screen in CompuTec WMS
+**Current Form Details** – Provides additional information for a specific screen in CompuTec WMS.
 
 :::note
-    This option is available only for the new CompuTec WMS Windows client.
+    This option is only available in the new CompuTec WMS Windows client.
 :::
 
-Hold the left CTRL while logging in to CompuTec WMS for this screen to be available. The screen will be available after clicking the highlighted icon:
+Press and hold the left CTRL key while logging into CompuTec WMS to access this screen. The screen will become available once you click the highlighted icon:
 
-![CompuTec WMS Client](./media/wms-decoder-current-document-details.webp)
+    ![CompuTec WMS Client](./media/wms-decoder-current-document-details.webp)
 
-![Current Form Details](./media/wms-decoder-icon.webp)
+    ![Current Form Details](./media/wms-decoder-icon.webp)
 
-Here, you have access to the following information:
+Here, you get access to the following information:
 
-**<i>The Info tab</i>**:
+1. **The Info tab**:
 
-**Transaction** – the name of a transaction.
+    - **Transaction** – the name of a transaction.
+    - **FormId** – a screen name.
+    - **Supported scanning segments** – data that CompuTec WMS reads from barcodes and uses in this screen.
+2. **The Business Object tab** – here, you can preview variable values available in a specific CompuTec WMS screen.
 
-**FormId** – a screen name.
+3. **The Decoder tab** – here is information on a specific decoder.
 
-**Supported scanning segments** – data that CompuTec WMS reads from barcodes and uses in this screen.
+    ![WMS Decoder](./media/wms-decoder-tab.webp)
 
-**The Business Object tab** – here, you can preview variable values available in a specific CompuTec WMS screen.
-
-**The Decoder tab** – here is information on a specific decoder.
-
-![WMS Decoder](./media/wms-decoder-tab.webp)
-
-**Current Decoder Code** – an ID of a decoder assigned to this screen.
-
-**Current Decoder Name** – the name of a decoder assigned to this screen.
-
-**Assign decoder transaction** – assign a decoder to a specific transaction.
-
-**Assign decoder screen** – assign a decoder to the current transaction and screen.
-
-**Enter Barcode** – a field for a barcode.
-
-**GS** – click to put a GS1 separator in the pointed spot in the Barcode field. The separator has to be defined in CompuTec WMS options (Scanner tab).
-
-**Test barcode** – test the decoder's behavior for a specific barcode. Clicking results in displaying output variables values sent to CompuTec WMS.
-
-**Back** – go back to the previous window.
+    - **Current Decoder Code** – The ID of the decoder assigned to this screen.
+    - **Current Decoder Name** – The name of a decoder assigned to this screen.
+    - **Assign decoder transaction** – Assign a decoder to a specific transaction.
+    - **Assign decoder screen** – Assign a decoder to the current transaction and screen.
+    - **Enter Barcode** – a field where barcode can be entered.
+    - **GS** – Click to insert a GS1 separator at the selected position in the Barcode field. The separator must be defined in the CompuTec WMS options under the Scanner tab.
+    - **Test barcode** – Test the decoder’s functionality with a specific barcode. Clicking this will display the output variable values sent to CompuTec WMS.
+    - **Back** – Return to the previous window.
 
 ## Examples
 
@@ -311,7 +236,7 @@ Here, you have access to the following information:
 
 The scanned code consists of the following URL address: `https://address.com/ItemCode/BatchNumber/dd-mm-yyyy`.
 
-    From this address, we want to get and pass to CompuTec WMS: Item Code, Batch Number, and Expire Date and convert the date to YYMMDD format.
+    We want to extract and pass the following information to CompuTec WMS from this address: Item Code, Batch Number, and Expiry Date, with the date converted to the YYMMDD format.
 
     1. Create a new decoder.
     2. Create the following variables:
@@ -332,7 +257,10 @@ The scanned code consists of the following URL address: `https://address.com/Ite
 
             1. Set the input variables to BARCODE.
             2. Set the following output variables: BatchNumber, ItemCode, Day, Month, Year.
-            3. Set the following for the regular expressions: `^https?:\/\/.*?\/(?\<ItemCode>[^\/]+)\/(?\<BatchNumber>[^\/]+)\/(?\<Day>\d{2})-(?\<Month>\d{2})-(?\<Year>\d{4})$`.
+            3. Set the following for the regular expressions:
+                ```ruby
+                ^https?:\/\/.*?\/(?\<ItemCode>[^\/]+)\/(?\<BatchNumber>[^\/]+)\/(?\<Day>\d{2})-(?\<Month>\d{2})-(?\<Year>\d{4})$.
+                ```
 
         2. An SQL-type rule (rule name 2).
 
@@ -346,11 +274,11 @@ The scanned code consists of the following URL address: `https://address.com/Ite
     4. Save rules and decoder.
     5. Test.
 
-    ![Test](./media/wms-decoder-testing-2.webp)
+        ![Test](./media/wms-decoder-testing-2.webp)
 
 ### Example 2
 
-The scanned code has the 3202 prefix, which is not supported in CompuTec WMS by default. We want this data to be recognized as quantity with two last singes as decimal places.
+The scanned code includes the 3202 prefix, which is not natively supported in CompuTec WMS. We want this data to be recognized as a quantity, with the last two digits representing the decimal places.
 
     1. Create a decoder.
     2. Create the following variables (check the USE GS1 Decoder option)
@@ -373,14 +301,14 @@ The scanned code has the 3202 prefix, which is not supported in CompuTec WMS by 
                         SELECT CASE WHEN LENGTH('@InputQuantity') > 0 THEN LEFT('@InputQuantity',4) || '.' || RIGHT('@InputQuantity', 2) ELSE '' END AS "Quantity" FROM DUMMY
                         ```
 
-    4. Save rules and decoder.
-    5. Test.
+    4. Save the rules and decoder.
+    5. Test the decoder to ensure it functions as expected.
 
-![Barcode Definition](./media/wms-decoder-testing-3.webp)
+    ![Barcode Definition](./media/wms-decoder-testing-3.webp)
 
 ### Example 3
 
-You can display messages in WMS using custom configurations by creating your own queries. In the output, choose ErrorMessage from the list.
+You can display messages in WMS by creating custom queries. In the output, select ErrorMessage from the available options.
 
 ![Error Message](./media/error-message.png)
 
@@ -393,7 +321,7 @@ SELECT
 FROM DUMMY
 ```
 
-Watch the demonstration video [here](https://www.youtube.com/watch?v=8JUxu5RUcvA). In this video demonstration, you can see how to configure and display messages in the CompuTec WMS client using a Barcoder Setup.
+Watch the demonstration video [here](https://www.youtube.com/watch?v=8JUxu5RUcvA). This video shows how to configure and display messages in the CompuTec WMS client using Barcoder Setup.
 
 You can also use your own query and rules. Below are some examples:
 
@@ -402,6 +330,7 @@ You can also use your own query and rules. Below are some examples:
 ![Example](./media/example-01.jpg)
 
 **Example B**
+
 ![Example](./media/example-02.jpg)
 
 ---
