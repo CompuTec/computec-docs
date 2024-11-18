@@ -7,16 +7,17 @@ sidebar_position: 10
 ## Usage
 
 1. Download the files from [here](https://github.com/CompuTec/processforce-powershell/tree/main/ImportSU).
-2. Run Powershell ISE (x64 or x86) as Administrator:
+2. Copy the net45 directory to C:\
+3. Run Powershell ISE (x64 or x86) as Administrator:
 
     ![Powershell](./media/run-powershell.webp)
-3. Open the ImportSU file in Notepad, copy and paste it to the **Windows Powershell ISE**:
+4. Open the ImportSU file in Notepad, copy and paste it to the **Windows Powershell ISE**:
 
     ![Copy/Paste](./media/copy-paste.webp)
-4. Enter correct credentials (login and password from CompuTec WMS):
+5. Enter correct credentials (login and password from CompuTec WMS):
 
     ![Login](./media/login-database.webp)
-5. Enter database server type:
+6. Enter database server type:
 
     ![Base](./media/database-server-type.webp)
 
@@ -43,13 +44,13 @@ sidebar_position: 10
     dst_MSSQL2017 = 11,
 
     dst_MSSQL2019 = 15
-6. Enter the proper path to the .csv files:
+7. Enter the proper path to the .csv files:
 
     ![CSV](./media/csv-path.webp)
-7. Copy BusinessObjects folder from CompuTec WMS to C:\Windows\System32\WindowsPowerShell\v1.0:
+8. Copy BusinessObjects folder from CompuTec WMS to C:\Windows\System32\WindowsPowerShell\v1.0:
 
     ![Business Objects](./media/business-object.webp)
-8. Run the script.
+9. Run the script.
 
 ## CSV Files Preparation
 
