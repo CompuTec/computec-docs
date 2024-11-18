@@ -4,15 +4,15 @@ sidebar_position: 2
 
 # Mettler Toledo Weight Scale Configuration
 
-To correctly configure a weight scale, it is required to create a Template and assign it to the weight scale. Next, it is required to choose a work Mode for the scales and finally assign the Template to the scale work Mode.
+This guide outlines the steps to correctly configure a Mettler Toledo weight scale for seamless integration with CompuTec Gateway and CompuTec WMS 2.0. The process involves creating a template, selecting a work mode, and assigning the template to the scale. By following these instructions, you can ensure your weight scale operates efficiently within your system.
 
 ---
 
 ## Defining a Template
 
-- Go to the 'Communication' option in the menu
-- Choose the 'Define Template' option
-- Choose Template 1 and set up what will be pointed/sent by the weight scale. Set up the following details:
+- Go to the "Communication" option in the menu.
+- Select "Define Template".
+- Choose "Template 1" and configure the data points to be sent by the weight scale. Set up the following details:
 
   - Line 1: Date
   - Line 2: Time
@@ -35,22 +35,22 @@ To correctly configure a weight scale, it is required to create a Template and a
 
 ## Choosing a Mode for Weight Scales
 
-- Go to the 'Communication' option in the menu
-- choose 'COM2'
-- choose 'Mode'
-- choose 'Continuous print.'
+- Go to the "Communication" option in the menu.
+- Select "COM2".
+- choose "Mode".
+- Set the mode to "Continuous print".
 
 ![Mettler Toledo](./media/mettler-07.webp)
 
 ## Assigning the Defined Template to the Weight Scales
 
-- Choose the 'Application' option from the menu.
-- choose the 'Straight weighing' option.
-- choose 'Printout;
-- choose 'COM2'
-- choose 'COM2' again
-- choose a Template name of the Template that was defined in the [first step](#defining-a-template) ('Template 1' in this example)
-- click OK to save the changes.
+- Choose the "Application" option from the menu.
+- Select "Straight weighing".
+- Choose "Printout".
+- Select "COM2".
+- Select "COM2" again.
+- Choose a Template name that was defined in the [first step](#defining-a-template) ('Template 1' in this example)
+- Click "OK" to save the changes.
 
 ![Mettler Toledo](./media/mettler-08.webp)
 
@@ -62,4 +62,5 @@ To correctly configure a weight scale, it is required to create a Template and a
 
 ![Mettler Toledo](./media/mettler-12.webp)
 
-The weight scales are correctly configured and ready to work with CompuTec Gateway and CompuTec WMS 2.0.
+---
+By following these steps, your Mettler Toledo weight scale will be correctly configured and ready for use with CompuTec Gateway and CompuTec WMS 2.0. This configuration ensures accurate data communication and efficient operation, streamlining your workflows. For further assistance, consult the official documentation or contact support.

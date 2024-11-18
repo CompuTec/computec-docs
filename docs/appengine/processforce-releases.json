@@ -12,7 +12,7 @@
   },
     {
     "version": "ProcessForce 10.0 Release 27 (R27)",
-    "build": "10.0.22.2",
+    "build": "10.0.27.2",
     "release_date": "07 October 2024",
     "minimal_ae_version": "2.10.10.1",
     "requirements": [
