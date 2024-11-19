@@ -16,7 +16,7 @@ PDC on AppEngine gives you more speed and makes work-time record more effective.
 
 ## Prerequisites
 
-ProcessForce and CompuTec Licence Server is installed and configured. For more information click [here](/docs/processforce/administrator-guide/licensing/license-server/overview/).
+ProcessForce and CompuTec Licence Server is installed and configured. For more information click [here](https://learn.computec.one/docs/processforce/administrator-guide/licensing/license-server/overview))
 
 CompuTec PDC requirements have been fulfilled, for more information click [here](/docs/pdc/administrator-guide/installation/requirements/).
 
@@ -29,10 +29,10 @@ CompuTec PDC plugin works only with CompuTec PDC, 64bit version.
 Click each link for the specific component installation manual:
 
 - [AppEngine installation](../administrators-guide/installation.md)
-- [CompuTec PDC plugin](../administrators-guide/configuration-and-administration/overview.md)
-- [ProcessForce plugin](/docs/appengine/administrators-guide/configuration-and-administration/overview)
-- [ProcessForce API (on the same server as appengine)](/docs/processforce/releases/download#computec-processforce-api)
-- [CompuTec PDC application](/docs/pdc/administrator-guide/installation/first-installation/)
+- [CompuTec PDC plugin](https://learn.computec.one/docs/pdc/administrator-guide/installation/requirements)
+- [ProcessForce plugin](https://learn.computec.one/docs/processforce/releases/download)
+- [ProcessForce API (on the same server as appengine)](https://learn.computec.one/docs/processforce/releases/download#computec-processforce-api)
+- [CompuTec PDC application](https://learn.computec.one/docs/pdc/releases/download)
 
 :::caution
 ProcessForce API needs to be installed on the same server as AppEngine.
