@@ -5,7 +5,7 @@ import type { Config } from "@docusaurus/types";
 import type { NavbarItem } from "@docusaurus/theme-common";
 import type * as Preset from "@docusaurus/preset-classic";
 
-import docsFactory from "../docs"
+import docs from "../docs"
 import { getDocsPlugins } from "./plugins";
 import { getDocsNavbarItems, getDocsVersionDropdownNavbarItems } from "./navbar-items";
 import { getDocsFooterItems, getFooterItems } from "./footer-items";
@@ -33,10 +33,8 @@ const algoliaConfig: Preset.ThemeConfig["algolia"] = {
 };
 
 export default async function createBaseConfigAsync(
-  preview: boolean,
   options: ConfigOptions = {}
 ): Promise<Config> {
-  const docs = docsFactory(preview);
   const docsPlugins = getDocsPlugins(docs);
   const docsNavbarItems = getDocsNavbarItems(docs);
   const docsVersionDropdownNavbarItems =

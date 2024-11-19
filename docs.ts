@@ -5,7 +5,7 @@ export interface DocConfig {
     includeCurrentVersion: boolean;
 }
 
-export default ((preview: boolean) => ([
+export default [
     {
         label: "ProcessForce",
         pluginId: "processforce",
@@ -33,7 +33,7 @@ export default ((preview: boolean) => ([
     {
         label: "AppEngine",
         pluginId: "appengine",
-        currentVersion: preview ? "3.0" : undefined,
-        includeCurrentVersion: preview ? true : false, // Don't publish on production
+        currentVersion: "3.0",
+        includeCurrentVersion: true,
     }
-])) as (preview: boolean) => DocConfig[];
+] as DocConfig[];
