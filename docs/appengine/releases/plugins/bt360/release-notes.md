@@ -9,20 +9,11 @@ toc_max_heading_level: 2
 The latest Installer is available to download from [here](/docs/appengine/releases/plugins/bt360/download).
 :::
 
-## BT360 2.10.8
-
-| Issue Type | Release Note | Related Support Ticket/s |
-| --- | --- | --- |
-| Bug | Timeout error when opening Batch Analysis | SPROC-15713 |
-| Bug | Errors while opening BT360 from Batch Details in SAP Business One client | SPROC-15826 |
-| Bug | Filter is not working in Multibatch Analysis | - |
-
----
-
 ## BT360 2.10.7
 
 | Issue Type | Release Note | Related Support Ticket/s |
 | --- | --- | --- |
+| Improvement | | |
 | Bug | Relationship map not working in MRP 2.5 and error in BT360 | SPROC-15529 <br/>SPROC-15067 |
 | Bug | Error while loading graph data after navigation to Multibatch analysis | SPROC-14329 |
 
@@ -30,7 +21,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## BT360 2.10.6 R1
 
-**Release Date - 13 June 2023**
+### *Release Date - 13 June 2023*
 
 | Issue Type | Release Note | Related Support Ticket/s |
 | --- | --- | --- |

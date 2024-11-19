@@ -6,14 +6,6 @@ import Releases from "../../../wms-releases.json";
 
 # Download
 
-## CompuTec WMS Compatibility Tools
-Once the GRPO document is created, the batch status is set according to the option selected in:
-Item Details > Default Batch Status for SAP Receipt Documents.
-
-[Download](https://download.computec.one/software/appengine/plugins/wms/releases/CompuTec_WMS_CompatibilityTools_2.10.2.92.zip)
-
-## WMS Stock Counting
-
 :::caution
     In order to use this plugin, you have to install the CompuTec ProcessForce plugin first.
 :::

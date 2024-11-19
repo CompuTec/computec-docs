@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# Introduction to CompuTec AppEngine
+# Introduction to CompuTec AppEngine 3.0
 
-CompuTec AppEngine is a web platform that opens up a world of possibilities to CompuTec customers and CompuTec partners. Based on plugin architecture, it allows developers to implement custom solutions for specific and unique business scenarios. CompuTec AppEngine is WebAPI built on core protocols such as HTTP and OData v4 that provide a unified way of exposing data. As a REST-based API, it allows developers to implement applications in multiple programming languages and frameworks such as .Net, Java, JS, PHP, etc.
+CompuTec AppEngine 3.0 is a web platform that opens up a world of possibilities to CompuTec customers and CompuTec partners. Based on plugin architecture, it allows developers to implement custom solutions for specific and unique business scenarios. CompuTec AppEngine is WebAPI built on core protocols such as HTTP and OData v4 that provide a unified way of exposing data. As a REST-based API, it allows developers to implement applications in multiple programming languages and frameworks such as .Net, Java, JS, PHP, etc.
 
 ## Key Features and Functions
 
