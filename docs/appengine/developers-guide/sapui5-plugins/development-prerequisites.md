@@ -8,7 +8,7 @@ sidebar_position: 1
 
 - Visual Studio
 - [AppEngine version 2.x.2.x or higher](../../administrators-guide/installation.md)
-  - [AppEngine SLD Configuration](../../administrators-guide/configuration-and-administration/overview.md#sld-servers)
+  - [AppEngine SLD Configuration](../../administrators-guide/configuration-and-administration/configuration.md#initial-configuration)
 - [AppEngine Visual Studio Templates](https://www.nuget.org/packages?q=computec)
 - Visual Studio Code (optional).
 
