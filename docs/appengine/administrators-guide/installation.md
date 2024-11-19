@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Installation
 
-1. Run the CompuTec ProcessForce AppEngine installation file from the [Download]((../releases/appengine/download.md)) section and click "Install" in the installation wizard that appears.
+1. Run the CompuTec ProcessForce AppEngine installation file from the [Download](../releases/appengine/download.md) section and click "Install" in the installation wizard that appears.
 
     ![AppEngine Install](./media/installation/install.png)
 

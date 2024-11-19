@@ -50,9 +50,9 @@ If the CompuTec WMS Server is already installed on this computer, you can access
     4. SAP Business One User Name - Enter the User Name.
     5. Server Type - Select either HANA or MSSQL 20XX.
     6. Barcode Decoding Type - Here. you can select the barcode decoding type:
-        - **CompuTec** – CompuTec WMS adapted GS1 standard. Click [here](../../barcode-scanning/overview.md#gs1-standard---computec-decoder) to find out more
+        - **CompuTec** – CompuTec WMS adapted GS1 standard. Click [here](../../barcode-scanning/overview.md#gs1-barcode-standard---computec-decoder) to find out more
         - **Odette** – Odette standard. Click [here](../../barcode-scanning/overview.md#odette-standard) to find out more.
-        - **Custom** – Barcode interpreter without prefixes and with custom ones.  Click [here](../../barcode-scanning/overview.md#gs1-standard---computec-decoder) to find out more.
+        - **Custom** – Barcode interpreter without prefixes and with custom ones.  Click [here](../../barcode-scanning/overview.md#gs1-barcode-standard---computec-decoder) to find out more.
     7. Close inactive WMS session after (min) Time, after which a user is logged out from CompuTec WMS (in minutes).
     8. SAP Business One Password - Enter the SAP Business One Password.
     9. WMS Server Port - Enter the server port.
