@@ -12,9 +12,9 @@ This function allows propagating changes made on a particular Bill of Materials 
 
 The option is based on an AppEngine job installed automatically during the [BulkChange plugin installation](../bulk-changes-on-bills-of-materials/installation-and-configuration.md).
 
-Send Events Job has to be active for a specific company. Click [here](/docs/appengine/administrators-guide/configuration-and-administration/overview) to find out more.
+Send Events Job has to be active for a specific company. Click [here](../../administrators-guide/configuration-and-administration/overview.md) to find out more.
 
-Background processing has to be configured for a specific company. Click [here](/docs/appengine/administrators-guide/configuration-and-administration/overview#activation) to find out more.
+Background processing has to be configured for a specific company. Click [here](../../administrators-guide/configuration-and-administration/overview.md#activation) to find out more.
 
 ## Configuration
 

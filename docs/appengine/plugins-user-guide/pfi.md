@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # PFI
 
-PFI (short for ProcessForce Import) is a plugin that allows importing/updating data to ProcessForce objects. The idea behind this plugin is to be a simplifier, swifter, and more adjustable alternative for [PowerShell updates](/docs/processforce/developer-guide/data-import/overview/).
+PFI (short for ProcessForce Import) is a plugin that allows importing/updating data to ProcessForce objects. The idea behind this plugin is to be a simplifier, swifter, and more adjustable alternative for [PowerShell updates](https://learn.computec.one/docs/processforce/developer-guide/data-import/overview).
 
 Click [here](https://www.youtube.com/watch?v=MSreLSZC8DU) to know more about CompuTec PFI.
 
@@ -20,11 +20,11 @@ If a new UDF is added to a ProcessForce object, the AppEngine service has to be 
 
 ### Installation
 
-Click [here](/docs/appengine/administrators-guide/configuration-and-administration/overview#plugins) to get to know more about AppEngine plugin installation.
+Click [here](../administrators-guide/configuration-and-administration/overview.md#plugins) to get to know more about AppEngine plugin installation.
 
 ## Usage
 
-Once the plugin is installed, its tile is available in the [Launchpad](/docs/appengine/appengine-users-guide/launchpad/) Upon opening the plugin you can see a the ProcessForce objects represented by tiles. Choose the one you want to work with (scroll to get to other objects):
+Once the plugin is installed, its tile is available in the [Launchpad](../appengine-users-guide/launchpad.md) Upon opening the plugin you can see a the ProcessForce objects represented by tiles. Choose the one you want to work with (scroll to get to other objects):
 
     ![PFI](./media/pfi/pfi-main.png)
 
