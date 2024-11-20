@@ -3,7 +3,7 @@ sidebar_position: 5
 ---
 
 
-# General Information
+# Database Structure Setup
 
 The `DatabaseVersion` is a double field that is checked during the update procedure. If this version changes, the setup action performed by the AppEngine installation process will update all objects and apply necessary actions.
 
