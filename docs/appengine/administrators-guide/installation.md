@@ -6,7 +6,7 @@ sidebar_position: 2
 
 1. Run the installation file (CompuTec ProcessForce AppEngine) from the [Download](../releases/appengine/download.md) section and click Install in the opened installation Wizard.
 2. Click Close after getting Installation Successfully Completed.
-3. Now, the new service should be running:
+3. Now, the new service should be running:download
 
     ![Services](./media/installation/appengine-service.webp)
 4. Now you can run the platform by using the following web address: `http://{host}:54000 in a browser`.
