@@ -8,7 +8,7 @@ Form translation is a critical step in ensuring applications are accessible and 
 
 ---
 
-Form translations are usually stored in `FormTranslations.xml`. Using the ct tool, you can:
+Form translations are usually stored in `FormTranslations.xml`. Using the [ct tool](../development-tools/ct-tool.md), you can:
 
 - Create or update translation files based on the form XML definitions.
 - Generate translated forms, which is typically part of the build process.
