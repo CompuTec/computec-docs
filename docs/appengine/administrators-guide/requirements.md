@@ -5,10 +5,18 @@ sidebar_position: 1
 # Requirements
 
 :::note
-    CompuTec AppEngine requires **.NET** Framework to work correctly. The version of the .NET Framework supported by AppEngine is **8.0**.
+    CompuTec AppEngine requires **.NET** to work correctly. The version of the .NET supported by AppEngine is **8.0.4**.
+:::
+
+Here are the prerequisites for running AppEngine 3.0:
+
+- **Operating System** - A Windows x64 machine is required.
+- **Database** - If using SAP HANA, ensure that your HANA version is at least HANA Enterprise Edition 2.0 SPS 05, Revision 059.09 (dated 2.17.22).
+- **AppEngine Runtime** - The minimum required version is ASP.NET Core Runtime 8.0.4.
+- **SAP Business One Add-on Runtime** - The minimum required version is .NET Runtime 8.0.4.
 
 <details>
-<summary>Click to see how to check .NET Framework version</summary>
+<summary>Click to see how to check .NET version</summary>
 <div>
     1. Type in the following command in Command Prompt from Windows applications:
     ```dotnet --version```
