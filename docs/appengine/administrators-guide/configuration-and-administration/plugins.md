@@ -29,7 +29,7 @@ To see details of any particular Plugin you can simply click on is name or speci
 2. Click "Show Details" to view additional information about the plugin. Here, you can see the Dependencies and other available versions of the plugin.
 
 	![Show Details](./media/plugins/plugins-02.png)
-    
+
 	When you add a plugin to AppEngine, it might rely on certain versions of other plugins to work properly. In Dependencies Tab you can view these dependencies along with current availability. If some of this plugins are not yet available or required version is higher ten available, AppEngine will automatically add required Plugin in correct versions. 
 
     ![Dependencies](./media/plugins/plugins-03.png)

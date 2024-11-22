@@ -18,7 +18,12 @@ An example view of the documentation:
 
 API usage examples in Postman:
 
-<!-- TODO: Link -->
+<details>
+<summary>Click here to Expand</summary>
+<div>
+
+</div>
+</details>
 
 ## Steps to Create Pick Order or Pick Receipt using webAPI Calls
 
