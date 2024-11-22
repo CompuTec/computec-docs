@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# General Controllers
+# Creating Controllers
 
 There are two types of controllers in AppEngine: controllers with SAP authorization and controllers without authorization. In a secure controller, connection-scoped services are injected. This guide outlines the key differences between these controller types, provides code examples, and highlights Swagger integration to simplify API documentation.
 
