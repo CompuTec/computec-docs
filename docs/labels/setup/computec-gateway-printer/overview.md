@@ -10,10 +10,14 @@ If you need to get print out from printer which CompuTec Labels Application Serv
 
 ## Download
 
-CompuTec Gateway application can be download from [here](https://computec-docs.pages.dev/pdc/administrator-guide/weight-scales-integration/gateway-service-installation).
-<!-- TODO: Replacement above Link to path -->
+CompuTec Gateway application can be downloaded from the below path:
+:::info Path
+PDC --> Administrator Guide --> Weight Scales Integration --> Gateway Service Installation
+:::
 
 ## Installation
 
-CompuTec Gateway application installation guide can be found [here](https://computec-docs.pages.dev/pdc/releases/downloads#computec-gateway-service).
-<!-- TODO: Replacement above Link to path -->
+CompuTec Gateway application installation guide can be found from the path given below:
+:::info Path
+PDC --> Releases --> Downloads --> CompuTec Gateway Service
+:::

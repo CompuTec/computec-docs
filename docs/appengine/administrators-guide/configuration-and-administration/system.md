@@ -8,7 +8,7 @@ sidebar_position: 5
 
 System Details provides information about AppEngine that we are curently logged in. It includes the AppEngine Version and AppEngine GUID. There is also SAP Computec Start Extension for manual download if required. SAP Computec Start Extension is SAP Business One extension that is started inside SAP Business One client. It provides access to plugins and other features of AppEngine.
 
-![System Details](./media/system/system-details.png) <!-- TODO: Update screenshot -->
+![System Details](./media/system/system-details.webp)
 
 ## Profiles
 
@@ -16,7 +16,7 @@ Profiles are used to store different configtionions for the OpenTelemetry Export
 
  This functionality sends logs, metrics and traces to OLTP server based on this configuration. You can copy the standard templates provided with AppEngine (listed below) and set your Endpoint and Header Values. For more please check [Support for Open Telemetry](https://learn.computec.one/docs/Help/OpenTelemetrySupport)
 
-![System Profiles](./media/system/system-profiles.png) <!-- TODO: Update Screenshot-->
+![System Profiles](./media/system/system-profiles.webp)
 
 | Profile Names | Descriptions |
 | --- | --- |
@@ -31,16 +31,22 @@ Profiles are used to store different configtionions for the OpenTelemetry Export
 
 From here, you can restart current AppEngine service
 
-![Restart AppEngine](./media/system/restart-appengine.png) <!-- TODO: Update Screenshot-->
+![Restart AppEngine](./media/system/restart-appengine.webp)
 
 ## Password
 
 From here, you can change the administration password:
 
-![Administration Password](./media/system/admin-password.png) <!-- TODO: Update Screenshot-->
+![Administration Password](./media/system/admin-password.webp)
 
 ## Active Connections
 
 In Active Connection you can check current connection to SAP.
 
-![Active Connections](./media/system/active-connections.png) <!-- TODO: Update Screenshot-->
+![Active Connections](./media/system/active-connections.webp)
+
+## Company Plugin Validation
+
+You can use this page to validate plugins installation on selected company. Select Company to run validation.
+
+![Company Plugin Validation](./media/system/co-plugin-validation.webp)
