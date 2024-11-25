@@ -9,6 +9,22 @@ toc_max_heading_level: 2
     Installer is ready to download from [here](/docs/appengine/releases/plugins/pdc/download).
 :::
 
+## CompuTec PDC 3.10.24.1
+
+**Release Date - 25 November 2024**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Bug | PDC | Item revision is missing in the input and output properties. |
+| Bug | PDC | An error message, "Start may not be called on a task that was already started," was being displayed during the Bill of Materials (BOM) or Manufacturing Order (MO) preview. While the preview continued to open successfully, the error caused unnecessary confusion for users. |
+| Bug | PDC | An error occurred, "Object reference not set to an instance of an object," while attempting to preview Bill of Materials (BOM) or Manufacturing Orders (MO). |
+| Improvement | Configuration | The log file location has been updated to ProgramData\CompuTec\PDC3\Logs for PDC 3 and C:\ProgramData\CompuTec\PDC\Logs for PDC 4 |
+| Bug | PDC | Form Settings Update for Batch Selection in Issue to Production. |
+| Bug | PDC | After performing a Quick Receipt in the PDC system, PDC crashes unexpectedly. |
+| Bug | PDC | The list of Sales Orders (SO) is empty, when PDC is enabled for a specific resource. |
+| Bug | PDC | An error, "Operator '==' cannot be applied to operands of type 'int' and 'string'," was encountered when processing QC records. |
+| Improvement | Configuration | PDC Core was copying settings from the existing PDC, which led to the system considering itself as an update from PDC 3 |
+
 ## CompuTec PDC 3.10.23.1
 
 **Release Date - 27 August 2024**
@@ -38,8 +54,6 @@ toc_max_heading_level: 2
 | Bug | PDC | Able to start runtime even though there is advanced relation | - |
 | Bug | Downtimes | Adding downtime doesnt automatically end the existing runtime | - |
 | Bug | PDC | Date format in quick time registration does not follow the general settings | - |
-
-**Release date - 11 December 2023**
 
 ## CompuTec PDC 3.10.21.1
 
