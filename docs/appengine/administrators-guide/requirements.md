@@ -37,10 +37,7 @@ Here are the prerequisites for running AppEngine 3.0:
 
 ## Steps Required to Perform before CompuTec AppEngine Installation
 
-1. Install SAP Business One DI API 64-bit on the client machine.
-2. Ensure that the following are installed (included with SAP Business One Client):
-    - Microsoft ODBC Driver 17 for SQL Server
-    - Microsoft SQL Server Native Client 11.0
+Install SAP Business One DI API 64-bit on the client machine.
 
 ## Working with SAP B1 on the HANA Database
 
