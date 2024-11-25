@@ -4,19 +4,19 @@ sidebar_position: 5
 
 # BOM to MOR Update
 
-This function allows propagating changes made on a particular Bill of Materials to existing Manufacturing Orders based on criteria given in the configuration.
+This function allows propagating changes made on a particular Bill of Materials to existing Manufacturing Orders based on criteria given in the configuration. This guide outlines the installation, configuration, and usage process, detailing all available options and their effects. Additionally, it highlights the system’s capability to handle updates with flexibility and error management, ensuring uninterrupted production operations.
 
 ---
 
 ## Installation
 
-The option is based on an AppEngine job installed automatically during the [BulkChange plugin installation](../bulk-changes-on-bills-of-materials/installation-and-configuration.md).
-
-Send Events Job has to be active for a specific company. Click [here](/docs/appengine/administrators-guide/configuration-and-administration/overview) to find out more.
-
-Background processing has to be configured for a specific company. Click [here](/docs/appengine/administrators-guide/configuration-and-administration/overview#activation) to find out more.
+This feature is built on an AppEngine job, which is automatically installed during the [BulkChange plugin installation](../bulk-changes-on-bills-of-materials/installation-and-configuration.md). o enable the BOM to MOR update, ensure:
+    - Send Events Job is active for a specific company. Click [here](/docs/appengine/administrators-guide/configuration-and-administration/overview) to find out more.
+    - Background processing is configured for the specific company. Click [here](/docs/appengine/administrators-guide/configuration-and-administration/overview#activation) to find out more.
 
 ## Configuration
+
+To configure the BOM to MOR Update functionality, follow the path:
 
 :::info Path
 AppEngine → Administration Panel → Plugins → CompuTec BulkChange Plugin → Settings
@@ -36,22 +36,29 @@ There are additional settings that allow to filter which related Manufacturing O
 
 ## Usage
 
-Make some changes to the Bill of Materials:
+The BOM to MOR Update functionality allows users to propagate changes made to a Bill of Materials to associated Manufacturing Orders effortlessly. Follow the steps below to initiate and monitor updates, ensuring seamless data synchronization:
 
-:::info Path
-Production → Bill of Materials → Bill of Materials
-:::
+1. Make some changes to the Bill of Materials:
 
-Set the MOR Update Status User-Defined Field to the U - Start Update option:
+    :::info Path
+    Production → Bill of Materials → Bill of Materials
+    :::
 
-:::info Path
-the upper menu → View → User-Defined Fields
-:::
+2. Set the MOR Update Status User-Defined Field to the U - Start Update option:
 
-![Bulk Changes on Bills of Materials](./media/bulk-changes-of-bom/bom-to-mor-udf.png)
+    :::info Path
+    the upper menu → View → User-Defined Fields
+    :::
 
-Click the Update button in the Bill of Materials form. Now the status of the related MOR Update is available in the MOR Update Status UDF:
+    ![Bulk Changes on Bills of Materials](./media/bulk-changes-of-bom/bom-to-mor-udf.png)
 
-**Processing** – While updating (the time of processing depends on the data structure and volume).
+3. Click the Update button in the Bill of Materials form. Now the status of the related MOR Update is available in the MOR Update Status UDF:
 
-**Success** or **Failure** – The result of the update.
+    - **Processing** – Update is in progress (the time of processing depends on the data structure and volume).
+
+    - **Success** or **Failure** – Final result of the update.
+
+---
+The BOM to MOR Update functionality simplifies production management by ensuring that changes to BOMs are reflected in MORs accurately and efficiently. With proper setup and usage, this tool becomes a vital asset for maintaining production data integrity and supporting operational excellence.
+
+For any further assistance or advanced configurations, consult the CompuTec support team or related documentation.
