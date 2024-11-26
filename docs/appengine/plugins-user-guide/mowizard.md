@@ -3,16 +3,21 @@ sidebar_position: 7
 ---
 # MOWizard
 
-The purpose of this plugin is to create Manufacturing Orders based on chosen Sales Orders' lines. It allows managing multilevel, complex product trees swiftly. Creation of this plugin was inspired by cases of companies that have large numbers of Manufacturing Orders related to a single line on a Sales Order.
+The MOWizard plugin is designed to streamline the creation of Manufacturing Orders (MOs) based on selected Sales Order lines, helping manage complex, multi-level product trees efficiently. This plugin is ideal for businesses dealing with large numbers of Manufacturing Orders associated with individual Sales Order lines, enabling swift processing and organization.
+
+---
 
 ## Installation
 
-Get the installation file from [here](/docs/appengine/releases/plugins/mowizard/download).
+Below are the steps to install the MOWizard Plugin for SAP Business One:
 
-Follow the plugin installation instructions from [here](/docs/appengine/administrators-guide/configuration-and-administration/overview#plugins).
+1. Get the installation file from provided source [link](/docs/appengine/releases/plugins/mowizard/download).
 
-After completing the installation, go to Launchpad and choose the MOWizard plugin to start working with it:
-![MOWizard](./media/mowizard/mowizard.png)
+2. Follow the detailed instructions to install the plugin on your SAP Business One system [here](/docs/appengine/administrators-guide/configuration-and-administration/overview#plugins).
+
+3. After completing the installation, go to Launchpad and choose the MOWizard plugin to begin using it.
+
+    ![MOWizard](./media/mowizard/mowizard.png)
 
 If the right option is chosen, the plugin is available from the SAP Business One main menu: Production → MOWizard.
 
@@ -48,8 +53,10 @@ Click the plus icon to add a new Job. You can create many of these.
 
     6. Here, you can see the Manufacturing Orders that are about to be created. <br/>Link child MOR's option is checked by default.
 
-    7. Click Save and Run. The job is now moved to the Running tab. When all planned Manufacturing Orders are created, the job will be moved to the Completed tab. If not all of the Manufacturing Orders were created (e.g. because a child Manufacturing Order was chosen in the edit mode but not a higher level Manufacturing Order), the job will be moved back to the Prepared tab. Here, you can click the job and check which Manufacturing Orders were created, which were not and why (click the Manufacturing Order with the Failure status to get this information).
+    7. Click "Save and Run". The job will move to the Running tab. Once all the planned Manufacturing Orders are successfully created, the job will be moved to the Completed tab. If some Manufacturing Orders fail to be created (for example, if a child order was selected but not a higher-level one), the job will return to the Prepared tab. Here, you can click the job and check which Manufacturing Orders were created, which were not and why (click the Manufacturing Order with the Failure status to get this information).
 
 **Example usage**
 
 Click [here](https://www.youtube.com/watch?v=HdCU7PtdwPA) to know more about Example Usage.
+
+---
