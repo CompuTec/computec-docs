@@ -4,12 +4,45 @@ sidebar_position: 1
 
 # Introduction to CompuTec AppEngine 3.0
 
-CompuTec AppEngine 3.0 is a web platform that opens up a world of possibilities to CompuTec customers and CompuTec partners. Based on plugin architecture, it allows developers to implement custom solutions for specific and unique business scenarios. CompuTec AppEngine is WebAPI built on core protocols such as HTTP and OData v4 that provide a unified way of exposing data. As a REST-based API, it allows developers to implement applications in multiple programming languages and frameworks such as .Net, Java, JS, PHP, etc.
+Welcome to AppEngine, the ultimate solution for managing all applications and business solutions within your organization. AppEngine serves as a central hub, enabling administrators to oversee plugins and manage updates while empowering developers to create and extend functionality through robust extensions. Whether you’re an administrator or a developer, AppEngine simplifies the complex processes of application management and development, providing the tools you need for efficiency, scalability, and innovation
 
-## Key Features and Functions
+## About Framework
 
-- **Background Jobs** - Create custom automation jobs based on SAP Business One events or CRON expressions in .NET.
-- **Integrations** - Create and expose OData v4/REST controllers that can be consumed in integrations with 3rd party tools or in web applications.
-- **Custom Solutions** - Create user-friendly, responsive SAPUI5 applications based on SAP Fiori Design Guidelines. You can embed them into the SAP Business One application or even use them in the SAP Business One Web Client. Yellow arrows are supported making it easy to navigate from the SAPUI5 applications to SAP Business One and CompuTec ProcessForce objects.
-A developer’s kit including templates and example plugins is available. It includes support for multiple programming languages and significiantly speeds up the development process.
-- **Analytical Pages** - The data from CompuTec AppEngine custom SAPUI5 applications can also be used to create Analytical Pages. This makes it easy to create your own custom reports, including charts and graphs, very quickly.
+This guide introduces the **Computec.Core2 Ecosystem**, a comprehensive framework designed to streamline the development and management of extensions for **SAP UI** and **SAP web-based business applications**. Built with an emphasis on unification, scalability, and maintainability, this ecosystem offers advanced analytics, seamless integration, and a structured approach to creating cutting-edge business applications.
+
+## Key Features
+
+Features
+The Computec.Core2 Ecosystem brings a suite of powerful features, specifically crafted to simplify and enhance the management and development of SAP applications.
+
+### For Administrators
+
+- **Unified Logging System** - - Track and debug activities across all extensions with a centralized logging approach.
+
+- **Plugin Delivery & Updates** - Use a centralized store to manage and deliver plugin updates, ensuring that all users have access to the latest features and fixes.
+
+- **Licensing Management** - Secure and manage application access efficiently through ongoing development of a comprehensive licensing module.
+
+- **Job Scheduling & Event-Driven Execution** - Configure scheduled tasks or trigger jobs based on specific events to automate and optimize operations.
+
+- **Single Sign-On (SSO) Support** - Provide a seamless authentication experience across multiple applications for users.
+
+### For Developers
+
+- **Abstracted SAP APIs** - Simplify integration with SAP by abstracting standard DI and SL APIs, allowing a greater focus on business logic.
+
+- **Rapid Development with .NET 8** - Enjoy faster development cycles with a streamlined codebase, boosting productivity without compromising quality.
+
+- **Custom API Development** - Create custom OData/API controllers with built-in authentication features, supporting a flexible and secure development process.
+
+- **Unified Business Logic Access** - Automatically integrate user-defined objects into both .NET Core assemblies and OData/CRUD controllers, enabling compatibility with third-party applications.
+
+- **Complete SAP UI5 Framework Support** - Leverage TypeScript and built-in libraries to develop SAP UI5 applications seamlessly, adhering to modern web standards.
+
+- **Extensions of Extensions** - Build extensions that depend on existing plugins, allowing modular development and fostering a dynamic, interconnected ecosystem.
+
+## Why AppEngine?
+
+AppEngine is more than a tool—it’s a complete ecosystem that bridges the gap between management and development. It ensures that administrators have full control over application and plugin lifecycles while equipping developers with the flexibility to innovate and extend capabilities. With features like unified logging, abstracted SAP APIs, and seamless SSO, AppEngine offers a comprehensive solution tailored for modern business needs.
+
+Embrace the power of **AppEngine** and the **Computec.Core2 Ecosystem** to elevate your organization's application management and development to new heights. Whether you're managing plugins or crafting advanced extensions, AppEngine ensures a unified, scalable, and efficient experience for all.

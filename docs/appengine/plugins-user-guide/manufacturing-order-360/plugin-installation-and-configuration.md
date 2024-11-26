@@ -9,20 +9,25 @@ ProcessForce and CompuTec Licence Server is installed and configured. For more i
 
 ## AppEngine and plugin installation and configuration
 
-For the AppEngine installation manual, please follow this link: [Installation](/docs/appengine/administrators-guide/installation/).
+For the AppEngine installation, follow the step-by-step instructions provided in the  [Installation](/docs/appengine/administrators-guide/installation/) manual.
 
-For the plugin installation manual, please follow this link: [Configuration and Administration](/docs/appengine/administrators-guide/configuration-and-administration/overview).
+Refer to the [Configuration and Administration](/docs/appengine/administrators-guide/configuration-and-administration/overview) Guide for details on installing and configuring the plugin.
 
 Two plugins need to be installed: **MO360** and **PPF**.
 
 ## ProcessForce
 
-Optionally, you can reach MO 360 plugin the Process Force level:
+The MO360 plugin can optionally be accessed directly from the ProcessForce level.
 
-![Manufacturing Order 360](../manufacturing-order-360/media/image2020-9-14-23-18-44.png)
+    ![Manufacturing Order 360](../manufacturing-order-360/media/image2020-9-14-23-18-44.png)
 
-To do this, check the following checkbox:
+To enable this,
 
-![Manufacturing Order 360](../manufacturing-order-360/media/general-settings-enableappengine.png)
+1. Select the checkbox labeled Enable AppEngine
 
-Enter the AppEngine URL, e.g. `http://{host}:54000`, click Update and restart SAP Business One.
+    ![Manufacturing Order 360](../manufacturing-order-360/media/general-settings-enableappengine.png)
+2. Enter the AppEngine URL, e.g., `http://{host}:54000`.
+3. Click Update and restart SAP Business One to apply the changes.
+
+---
+By properly installing and configuring the MO360 plugin, you can unlock a seamless experience for managing manufacturing orders. Implement MO360 to streamline your manufacturing processes and improve operational efficiency.
