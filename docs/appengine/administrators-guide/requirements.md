@@ -24,12 +24,14 @@ Here are the prerequisites for running AppEngine 3.0:
         And click enter
 
     2. The result will show the .NET Framework version
-    ![Result](./media/requirements/result-01.png)
 
-    We recommend that you install the latest version of .NET Framework – you can do it using the dedicated tool Windows Update or manually downloading the required files from the Microsoft site: [Microsoft .NET Framework 8.7 (Web Installer)](https://dotnet.microsoft.com/en-us/download)
+        ![Result](./media/requirements/result-01.png)
+
+    We recommend that you install the latest version of .NET Framework – you can do it using the dedicated tool Windows Update or manually downloading the required files from the Microsoft site: 
+    
+    [Microsoft .NET Framework 8.7 (Web Installer)](https://dotnet.microsoft.com/en-us/download)
 </div>
 </details>
-:::
 
 :::note
     CompuTec AppEngine does not require a SAP Business One application client.
@@ -39,7 +41,7 @@ Here are the prerequisites for running AppEngine 3.0:
 
 Install SAP Business One DI API 64-bit on the client machine.
 
-## Working with SAP B1 on the HANA Database
+## Working with SAP Business One on the HANA Database
 
 It is required to run hdbsetup.exe installation for proper work of CompuTec AppEngine (without this, databases are not available from the application Settings level).
 

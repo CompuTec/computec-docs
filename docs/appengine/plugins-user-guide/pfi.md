@@ -4,29 +4,27 @@ sidebar_position: 8
 
 # PFI
 
-PFI (short for ProcessForce Import) is a plugin that allows importing/updating data to ProcessForce objects. The idea behind this plugin is to be a simplifier, swifter, and more adjustable alternative for [PowerShell updates](/docs/processforce/developer-guide/data-import/overview/).
+CompuTec PFI (ProcessForce Import) is a powerful plugin designed to simplify and accelerate the process of importing and updating data within ProcessForce objects. As a flexible alternative to [PowerShell updates](/docs/processforce/developer-guide/data-import/overview/), PFI offers an intuitive interface and advanced features that cater to the unique needs of users managing ProcessForce data.
 
-Click [here](https://www.youtube.com/watch?v=MSreLSZC8DU) to know more about CompuTec PFI.
+To know more about CompuTec PFI, Click [here](https://www.youtube.com/watch?v=MSreLSZC8DU).
+>**Note**: The video was recorded on a pre-release version and the interface differs slightly in the released version.
 
-(The video was recorded on a pre-release version and the interface differs slightly in the released version.)
+## Prerequisites
 
-## Start
+Before using PFI, ensure the following:
 
-### Prerequisites
-
-The ProcessForce plugin has to be installed and enabled for the company you want to use ProcessForce Import with.
-
-If a new UDF is added to a ProcessForce object, the AppEngine service has to be restarted in order to see UDF as a column in a PFI template.
+1. The ProcessForce plugin is installed and enabled for the relevant company.
+2. If a new UDF (User-Defined Field) is added to a ProcessForce object, restart the AppEngine service to reflect the changes in PFI templates.
 
 ### Installation
 
-Click [here](/docs/appengine/administrators-guide/configuration-and-administration/overview#plugins) to get to know more about AppEngine plugin installation.
+For detailed instructions on installing the AppEngine plugin, click [here](/docs/appengine/administrators-guide/configuration-and-administration/overview#plugins).
 
 ## Usage
 
-Once the plugin is installed, its tile is available in the [Launchpad](/docs/appengine/appengine-users-guide/launchpad/) Upon opening the plugin you can see a the ProcessForce objects represented by tiles. Choose the one you want to work with (scroll to get to other objects):
+Once the plugin is installed, its tile becomes available in the [Launchpad](/docs/appengine/appengine-users-guide/launchpad/). Opening the plugin reveals tiles representing various ProcessForce objects. Scroll to find and select the object you wish to work with.
 
-    ![PFI](./media/pfi/pfi-main.png)
+    ![PFI](./media/pfi/pfi-main.webp)
 
 The example view (Bill of Materials in this case):
 
@@ -34,40 +32,46 @@ The example view (Bill of Materials in this case):
 
 ### Header
 
-Here you can see the object's name (upper-left corner). On the right from it you can find all the objects related to the main one. Click the name (of the main or related objects) to display all the columns of the object (properties of the database table) in the table below. The numbers in the brackets represents object's level, e.g. Bill of Materials 0 > Routing 1 > Routing Operations 2 > Routing Operations Properties 3.
+The Header section provides key details and functionalities related to the selected object. The object's name is displayed in the upper-left corner. On the right, you can find tiles representing all objects related to the main object. Clicking on these names displays the corresponding columns (database table properties) in the table below. The numbers in brackets indicate the object's hierarchy level, e.g., Bill of Materials 0 > Routing 1 > Routing Operations 2 > Routing Operations Properties 3.
 
-**Download Excel** – download the content of the table (with the columns names) displayed after clicking any object as a Microsoft Excel file. If you did not load any sample (check the Load Sample option below), you can download an empty file (just with column names). You can then add or update the content of the file in Microsoft Excel, save it and then upload it to the plugin with the next option (Import from Excel).
+1. **Download Excel** – Export the table's content, including column names, to a Microsoft Excel file. If no sample data is loaded (see the Load Sample option below), this will download an empty file with only column headers. You can edit this file in Excel, save it, and upload it back into the plugin using the Upload Data from Excel option.
 
-**Download with Advanced Settings** – option available from the arrow down next to Download Excel option:
+2. **Download with Advanced Settings** – This option is available from the arrow down next to Download Excel option:
 
     ![PFI](./media/pfi/pfi-advanced-download.png)
 
-Include Error Messages – after importing entries, system returns results. With this setting user can download import results and see error description.
+    - **Include Error Messages**: Generates a downloadable file showing the import results along with error descriptions, if any.
 
-**Upload Data from Excel** – import previously downloaded Microsoft Excel file (see the option above), updated with data. Blank Excel cell in does not update the related property as blank. Use slash (/) to set property to blank. Leaving a cell blank means that the property will not be updated. It will be skipped during import (populated by system if new entry/line or values will stay the same if there were values there already) and marked with the following symbol:  .
+3. **Upload Data from Excel** – Import data from an edited Excel file. Blank cells do not overwrite existing values. To explicitly set a property to blank, use a forward slash (/). Blank cells are otherwise skipped during the import process, retaining current values or allowing the system to populate them for new entries.
 
-**Load Sample** – using this option you can load data from the database to the table, download it (using the Download Excel Template), update it and upload it again to the table (using Import from Excel). This option allows to mass update of records. Usage: click the option, filter by choosing values in fields related to a specific form (optional), choose how many records you want to load, and click Load. A a specific object is loaded with all the lower level objects (e.g. Bill of Materials with Items, CoProducts, Scraps etc.)
+4. **Load Sample** – Load data from the database into the table for mass updates. Steps:
+    - Optionally filter data using specific field values.
+    - Choose the number of records to load.
+    - Click Load to populate the table with the selected object and its lower-level components (e.g., Bill of Materials with Items, CoProducts, Scraps, etc.).
+    - After editing, you can re-upload the data for updates.
 
-**Import to SAP** – this option imports data from the matrix to a database
+5. **Import to SAP** – Transfer the data from the matrix to the SAP database.
 
-**Download Template CSV** – downloads a template for a specific, currently displayed object, e.g. Bill of Materials' Items (unlike the Download with advanced settings, Export data to CSV file which exports templates for the displayed object and all the lower level objects).
+6. **Download Template CSV** – Download a CSV template for the currently displayed object (e.g., Bill of Materials' Items). Unlike the advanced download option, this exports templates for only the displayed object without including its lower-level components.
 
-**Upload Data from CSV** – this option is similar to the Upload data from Excel, but for CSV files use.
+7. **Upload Data from CSV** – Similar to the Excel upload option, this allows importing data from a CSV file.
 
 ### Filters
 
-You can filter the result table by putting values in specific fields. You can also adapt the filters section: choose which fields are displayed to be used.
+The result table can be refined by entering values in specific fields. Additionally, the filter section can be customized to display only the fields you wish to use.
 
-**Read-only fields** – If it is not checked, only fields that can be updated will be displayed. If checkbox is checked, you can see all the objects. Read-only objects are marked with a padlock icon then. Example: ![PFI](./media/pfi/pfi-padlock.png)
+**Read-only fields** – When this option is unchecked, only editable fields are shown. Checking the box will display all fields. Read-only objects are marked with a padlock icon for easy identification. Example: ![PFI](./media/pfi/pfi-padlock.png)
 
 ### Table
 
-Here, you can find a table of data related to an object chosen in the header: all the columns followed by the UDFs (the far right columns of the table). This data can be then import to SAP (using an option in the header). The table has to be populated with data first (by using option in the header).
+The table displays data associated with the object selected in the header, including all columns and User-Defined Fields (UDFs) located at the far-right end of the table. This data can be imported into SAP using the relevant header options. Before importing, the table must first be populated using the appropriate actions in the header.
 
-**Import Key** – the first column in the PFI matrix. It is a link column for the template (e.g. links Bill of Materials with its lower level objects).
+**Key Features of the Table**:
 
-**The key icon** – marks primary field for this object. If you leave this field empty during edition, it will be considered as adding a record. If there is any value here, this record will be updated.
+- **Import Key** – The first column in the PFI matrix, acting as a link for the template. For example, it connects the Bill of Materials to its subordinate components.
+- **The key icon** – Indicates the primary field for the object. Leaving this field empty during editing will add a new record. If a value is present, the existing record will be updated.
+- **Action** – Specifies the type of operation (Add/Update) for each row after uploading an Excel file.
+- **Import Status** – Displays the success or failure of each line's import into SAP Business One.
 
-**Action** – after uploading an Excel, the Action column determines manipulation type: Add/Update.
-
-**Import Status** – indicator of successful/failed import of a specific line to SAP Business One.
+---
+CompuTec PFI bridges the gap between user convenience and complex data management by providing a reliable, customizable, and efficient tool for ProcessForce data handling. Whether you're new to ProcessForce or an experienced user, PFI empowers you to optimize your operations with ease.
