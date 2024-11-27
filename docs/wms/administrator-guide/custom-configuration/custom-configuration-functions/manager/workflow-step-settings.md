@@ -48,6 +48,7 @@ There are seven transactions to choose from. Choose one from the drop-down list 
     1. Bin selection → Batch selection
     2. Batch selection → Bin selection
     3. Batch with Bin location (Batch number for a specific location)
+
     ![Stock Transfer](./media/workflow-step-settings/stock-transfer.png)
     <details>
     <summary>Click here to expand</summary>
@@ -69,6 +70,7 @@ There are seven transactions to choose from. Choose one from the drop-down list 
     1. Bin selection → Batch selection
     2. Batch selection → Bin selection
     3. Batch with Bin location (Batch number in a specific Bin location)
+  
     ![Goods Issue](./media/workflow-step-settings/goods-issue.png)
     <details>
     <summary>Click here to expand</summary>

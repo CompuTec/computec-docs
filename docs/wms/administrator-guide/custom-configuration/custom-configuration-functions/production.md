@@ -113,7 +113,7 @@ Enabling this option will disable the possibility of creating Storage Units on t
 
 **Enable Substitutes Items in Pick Order** – the option allows use in Pick Order. The option can be deactivated when not needed.
 
-**Block creation of new Pick Orders** - block adding items from different Manufatruing Orders - removes button from the Add tooltip.
+**Block creation of new Pick Orders** - block adding items from different Manufacturing Orders - removes button from the Add tooltip.
     <details>
     <summary>Click here to expand</summary>
     <div>
@@ -129,7 +129,7 @@ Enabling this option will disable the possibility of creating Storage Units on t
 
 ![Custom Configuration](./media/custom-configuration-production-sap-production-receipt.webp)
 
-**8After picking, auto return to:** – defines to which form the application goes back after confirmation of receipt on a document line. The available options: Document Details and Item Details
+**After picking, auto return to:** – defines to which form the application goes back after confirmation of receipt on a document line. The available options: Document Details and Item Details
 
 **Force manual quantity confirmation** – checking this checkbox force manual quantity confirmation – scanned quantity will be added to a quantity field but must be confirmed by pressing the–screen button. If the checkbox is not checked, the scanned quantity is automatically approved.
 
