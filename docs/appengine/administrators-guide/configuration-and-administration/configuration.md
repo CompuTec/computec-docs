@@ -32,7 +32,7 @@ This section provides a description of the Administration features of AppEngine,
 
 3. After page is opened, click the Administration Panel button
 
-    ![Admin Panel](./media/overview/browser.png)
+    ![Admin Panel](./media/overview/browser.webp)
 
 4. If this is the first installation login using the default credentials:
 
@@ -40,7 +40,7 @@ This section provides a description of the Administration features of AppEngine,
 
     Password: 1234
 
-    ![Admin Login](./media/overview/admin-login.png)
+    ![Admin Login](./media/overview/admin-login.webp)
 
 You can change password for CTSiteUser in the System Details section.
 
@@ -138,6 +138,8 @@ Once the configuration is completed, you can log in to the [Launchpad](../.././a
 
 Once the initial configuration is complete, the advanced configuration stage allows for deeper customization and fine-tuning of the system. The following system configurations can be edited:
 
+![Advanced Configuration](./media/configuration-and-administration/advanced-configuration.webp)
+
 1. **SAP Services** - The user has the option to edit the SLD ServerAddress.
 2. **CompuTec Services** - The user has the option to CT License Server
 3. **OpenId Settings** - The user can also edit the AppEngine External Address.
@@ -146,8 +148,14 @@ Once the initial configuration is complete, the advanced configuration stage all
 6. **Jobs** - Manages scheduled tasks efficiently.
 7. **Plugin Repository** -  Allows for easy installation and management of additional functionalities within the system
 
-<!-- TODO: add screenshots from newest appengine version -->
-
 ### AppEngine Servers
 
-<!-- TODO: finish this with screenshots -->
+![AppEngine Servers](./media/configuration-and-administration/appengine-servers.webp)
+
+1. **ID** - A unique numeric identifier for each server instance.
+2. **Instance Name** - The name assigned to the server instance (e.g., default).
+3. **GUID** - A globally unique identifier for each server instance.
+4. **Address** - Indicates the network address or hostname of the server.
+5. **Status** - Displays the operational status of the server (e.g., active/inactive).
+6. **Restart Required** - Indicates whether a server restart is necessary to apply any recent changes.
+7. **Profile** - Provides access to server-specific configuration or settings through an editable profile link.

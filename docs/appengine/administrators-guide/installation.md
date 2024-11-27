@@ -6,11 +6,11 @@ sidebar_position: 2
 
 1. Run the CompuTec ProcessForce AppEngine installation file from the [Download](../releases/appengine/download.md) section and click "Install" in the installation wizard that appears.
 
-    ![AppEngine Install](./media/installation/install.png)
+    ![AppEngine Install](./media/installation/ae-install.webp)
 
 2. Click "Finish" after the AppEngine Installation is successfully completed.
 
-    ![Finish Installation](./media/installation/installation-finish.png)
+    ![Finish Installation](./media/installation/ae-finish.webp)
 
 3. Now, the new service should be running:
 
@@ -20,22 +20,21 @@ sidebar_position: 2
     - Unable to establish a connection to the Database Server where the AppEngine configuration is stored.
     - The AppEngine configuration database does not exist.
     - The AppEngine configuration database requires an upgrade.
-	<!-- TODO: fix the image because it is strangly stretched -->
-    ![Browser](./media/installation/step-01.png)
 
     If AppEngine Page won't open automatically you can manually do so by opening web browser and entering default address: `https://localhost:54001`.
 
 5. Setup the AppEngine store by configuring the database server connection.
 
-    1. Step 1 - Enter the following connection details to database server where AppEngine configuration schema will be created: Database Server Name, User Name & Password, and Database Provider.
+    1. **Step 1** - Enter the following connection details to databstep
+    ase server where AppEngine configuration schema will be created: Database Server Name, User Name & Password, and Database Provider.
 
-        ![Step 01](./media/installation/step-01.png)
+        ![Step 01](./media/installation/step-01.webp)
 
-    2. Step 2 - If AppEngine database doesn't exists there click on button Create Database to create it. If it exists but requires an upgrade, click on Migrate Database button.
+    2. **Step 2** - If AppEngine database doesn't exists there click on button Create Database to create it. If it exists but requires an upgrade, click on Migrate Database button.
 
-        ![Step 02](./media/installation/step-02.png)
+        ![Step 02](./media/installation/step-02.webp)
 
-    3. Step 3 - After creating the database, you must restart the AppEngine. After restarting the AppEngine, the AppEngine will start in Production Mode.
+    3. **Step 3** - After creating the database, you must restart the AppEngine. After restarting the AppEngine, the AppEngine will start in Production Mode.
 
         ![Step 03](./media/installation/restart.png)
 
@@ -56,3 +55,6 @@ sidebar_position: 2
     </div>
     </details>
 :::
+
+---
+The installation and setup of the CompuTec ProcessForce AppEngine is a straightforward process that ensures seamless integration and functionality for your system.

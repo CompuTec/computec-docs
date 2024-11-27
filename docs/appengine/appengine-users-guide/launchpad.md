@@ -16,6 +16,6 @@ After logging in, the panel with plugins is displayed (represented by tiles). In
 
 ![Launchpad](./media/launchpad/launchpad-main.png)
 
-You can define what plugins are available for a specific scheme in [Plugin Settings](../administrators-guide/configuration-and-administration/plugins.md)
+You can define what plugins are available for a specific scheme in [Plugin Settings](../administrators-guide/configuration-and-administration/plugins/overview.md)
 
 Click a plugin tile to start working with it. Check the [Plugins User's Guide](../plugins-user-guide/overview.md) for manuals of specific plugins.
