@@ -30,7 +30,7 @@ A cron expression specifies when the job should be executed (e.g., every day at 
 
 The image shows a configuration screen from the CompuTec ProcessForce Plugin in an administration panel. Below is anexplanation of each section of this configuration, focusing on the background processing job that is being displayed. The example given below is related to Manufacturing Order. This job is responsible for updating the status of the MO when the actual quantity produced reaches the planned quantity. The job operates based on certain filters and plugins.
 
-![Job Details](./media/background-processing/job-details.png)  <!-- TODO: Update screenshot -->
+![Job Details](./media/background-processing/job-details.webp)
 
 ### Job Details
 
@@ -68,7 +68,7 @@ The job is executed using a specific plugin within the system:
 
 To manage jobs within the App Engine, follow these steps:
 
-![Enable and Suspend Jobs](./media/background-processing/enable-disable.png) <!-- TODO: Update Screenshot-->
+![Enable and Suspend Jobs](./media/background-processing/enable-disable.webp)
 
 **Enabling a Job**:
 
@@ -82,7 +82,7 @@ If you need to stop a job temporarily without disabling it entirely, you can sus
 
 Each job assignment includes details about the company it’s assigned to, the specific job, and related statistics. This information helps administrators understand how and where jobs are running. You can view the execution history of a job by navigating to its assignment.
 
-![Assignments](./media/background-processing/assignments.png) <!-- TODO: Update Screenshot-->
+![Assignments](./media/background-processing/assignments.webp)
 
 ### Assign
 
@@ -118,6 +118,22 @@ Each job assignment includes details about the company it’s assigned to, the s
 
 **Number of executions**: This field would typically display the total number of times this background job has been executed.
 
+<details>
+<summary>Click here to know more about Executions</summary>
+<div>
+![Executions](./media/background-processing/executions.webp)
+
+The Executions section provides a detailed overview of the background job instances executed within the system.
+
+    - **ID** - A unique identifier for each execution instance.
+    - **Start Time** - Indicates when the job started.
+    - **End Time** - Indicates when the job ended.
+    - **Duration** - Shows how long the job took to execute.
+    - **Finished** - Indicates whether the execution is complete.
+    - **Success** - Indicates whether the job executed successfully.
+    - **Message**
+</div>
+</details>
 **Number of exceptions**: This field is meant to capture how many errors or exceptions have occurred during job execution.
 
 **Number of connection errors**: This field would report on any connection failures between the job and the relevant system or database.
