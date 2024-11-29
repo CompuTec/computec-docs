@@ -10,7 +10,9 @@ This guide outlines the necessary steps for the installation and configuration t
 
 ## Prerequisites
 
+:::note
 Before proceeding, ensure that ProcessForce and CompuTec License Server are installed and properly configured.
+:::
 
 If you need assistance with this setup, please refer to the relevant documentation or click the [link](/docs/processforce/administrator-guide/licensing/license-server/overview/).provided for more details.
 
