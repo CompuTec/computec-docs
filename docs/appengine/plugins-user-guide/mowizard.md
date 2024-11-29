@@ -15,48 +15,63 @@ Below are the steps to install the MOWizard Plugin for SAP Business One:
 
 2. Follow the detailed instructions to install the plugin on your SAP Business One system [here](/docs/appengine/administrators-guide/configuration-and-administration/overview#plugins).
 
-3. After completing the installation, go to Launchpad and choose the MOWizard plugin to begin using it.
+3. Once installed, go to the SAP Business One Launchpad and select the MOWizard plugin to begin using it.
 
     ![MOWizard](./media/mowizard/mowizard.png)
 
-If the right option is chosen, the plugin is available from the SAP Business One main menu: Production → MOWizard.
+Alternatively (If the right option is chosen), you can access it from the SAP Business One main menu under: Production → MOWizard.
 
 ## Usage
 
-Click the plus icon to add a new Job. You can create many of these.
+Start by clicking the plus icon to create a new Job. You can create many of these.
 
 ![MOWizard](./media/mowizard/mowizard-add-job.png)
 
     1. Job Description: choose any name (mandatory) and description (optional) and click the Step 2 icon:
-    ![MOWizard](./media/mowizard/mowizard-job-description.png)
 
-    2. Sales Orders lines selection. Filter the list by desired values (you can skip this step) and choose the required lines from the list:
-    ![MOWizard](./media/mowizard/mowizard-sale-orders-selection.png)
+        ![MOWizard](./media/mowizard/mowizard-job-description.png)
 
-        The Available Sales Orders Positions table holds Sales Orders lines that can be filtered by many conditions (the Filter Available Sales Orders Positions section).
+    2. Sales Orders lines selection - Filter the list by desired values (you can skip this step) and choose the required lines from the list:
 
-        Checking the required checkboxes and clicking Add Selected Positions moves them to the Selected Sales Orders Positions table (click the checkbox in the first row to mark all of the lines in the list). These Sales Orders' lines will be further processed.
+        ![MOWizard](./media/mowizard/mowizard-sale-orders-selection.png)
+
+        The Available Sales Orders Positions table displays Sales Order lines that can be filtered using various criteria (found in the Filter Available Sales Orders Positions section).
+
+        Select the desired lines by checking the appropriate checkboxes and click Add Selected Positions to move them to the Selected Sales Orders Positions table. To select all lines in the list, use the checkbox in the first row. 
+
         Here you can still change quantity:
+
         ![MOWizard](./media/mowizard/mowizard-selected-quantity.png)
+        
         After this, Click Step 3. 
 
-    3. Manufacturing Orders. <br/>Here, click Generate Manufacturing Orders. Click Yes in the system message form:
-    ![MOWizard](./media/mowizard/mowizard-generating-orders.png)
+    3. Manufacturing Orders - Click Generate "Manufacturing Orders". Click "Yes" in the system message form:
 
-        Click the Yes button to continue. The creation is not immediate and some time is needed to complete it, depends on number of Manufacturing Orders and their structure. Started Jobs are displayed in the Running tab (please check the second screenshot on this page).
+        ![MOWizard](./media/mowizard/mowizard-generating-orders.png)
 
-        You can see the prepared manufacturing tree in a map and table form. <br/>At this moment manufacturing trees are generated but no Manufacturing Order is yet created.
+        Click Yes to proceed. The creation process is not instantaneous and may take some time, depending on the number and complexity of the Manufacturing Orders.  Ongoing jobs are displayed in the Running tab (refer to the second screenshot on this page).
 
-    4. Once the manufacturing tree is created, the related job is moved from the Running tab to the Prepared tab. Once the job is generated, it is not possible to change any data in it. Click the required job line in the Prepared tab to see the related data. <br/>Here, you can see the chosen data in form of a manufacturing tree (the Map tab, showing relations between linked Manufacturing Orders) or a table (the Table tab). <br/>The map view shows the manufacturing tree divided by material groups. <br/>This section is for data preview only.
+        You can see the prepared manufacturing tree in both map and table forms. At this stage, the manufacturing trees are prepared, but the Manufacturing Orders have not yet been created.
 
-    5. Click the Step 5 button to go to the Planning section. <br/>Here, you can see information on the planned Manufacturing Orders. <br/>If you want to choose specific Manufacturing Orders, click the Edit button at the top of the form. <br/>You can change numbering series and Manufacturing dates. If you change the dates, click the Reschedule button after that. <br/>Once the editing is finished, click the Summary button.
+    4. After the manufacturing tree is created, the job is moved from the Running tab to the Prepared tab. Once the job reaches this stage, no further changes can be made to its data. To view the related details, select the desired job in the Prepared tab. You can review the data in two formats:
+        - Map tab: Displays the manufacturing tree, showing relationships between linked Manufacturing Orders, organized by material groups.
+        - Table tab: Provides a structured, tabular view of the manufacturing tree. 
+    
+        This section is for data preview only.
 
-    6. Here, you can see the Manufacturing Orders that are about to be created. <br/>Link child MOR's option is checked by default.
+    5. Click the Step 5 button to navigate to the Planning section.
+        - Here, you can review details about the planned Manufacturing Orders.
+        - To select specific Manufacturing Orders, click the Edit button at the top of the form.
+        - You can modify the numbering series and Manufacturing dates. After updating the dates, ensure you click the Reschedule button.
+        - Once you complete the edits, proceed by clicking the Summary button.
 
-    7. Click "Save and Run". The job will move to the Running tab. Once all the planned Manufacturing Orders are successfully created, the job will be moved to the Completed tab. If some Manufacturing Orders fail to be created (for example, if a child order was selected but not a higher-level one), the job will return to the Prepared tab. Here, you can click the job and check which Manufacturing Orders were created, which were not and why (click the Manufacturing Order with the Failure status to get this information).
+    6. At this stage, you can review the Manufacturing Orders scheduled for creation. Make sure the Link child MORs option is selected by default.
+
+    7. Click "Save and Run" to initiate the job. Once the planned Manufacturing Orders are created, the job will move to the Completed tab. If some Manufacturing Orders are not created (e.g., a child Manufacturing Order was selected in edit mode without its corresponding higher-level Manufacturing Order), the job will return to the Prepared tab. From there, you can review the job details to identify which Manufacturing Orders were successfully created and which failed. For any failures, click on the Manufacturing Order with a Failure status to view the specific error details.
 
 **Example usage**
 
 Click [here](https://www.youtube.com/watch?v=HdCU7PtdwPA) to know more about Example Usage.
 
 ---
+The MOWizard plugin for SAP Business One is a powerful tool designed to simplify the creation and management of Manufacturing Orders. By enabling businesses to process large volumes of orders tied to Sales Order lines and view complex manufacturing trees, MOWizard increases efficiency and reduces the potential for errors. With its intuitive interface and structured workflow, this plugin streamlines manufacturing processes, allowing you to plan and execute orders more effectively. Whether you're handling simple or complex production requirements, MOWizard is a valuable addition to your SAP Business One system.
