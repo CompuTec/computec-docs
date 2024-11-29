@@ -137,5 +137,3 @@ The Executions section provides a detailed overview of the background job instan
 **Number of exceptions**: This field is meant to capture how many errors or exceptions have occurred during job execution.
 
 **Number of connection errors**: This field would report on any connection failures between the job and the relevant system or database.
-
-<!-- TODO: Add description and screenshot for executions -->
