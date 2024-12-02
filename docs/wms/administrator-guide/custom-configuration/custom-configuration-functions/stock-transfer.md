@@ -11,6 +11,7 @@ The Stock Transfer module within SAP Business One offers comprehensive options f
 ![Stock Transfer](./media/stock-transfer/stock-transfer.png)
 
 1. **Show Project selection** – Displays the Project Selection form before the Remarks form, aiding in document creation and ensuring the accurate project is selected.
+
     ![Document Details](./media/stock-transfer/show-project-selection.png)
 
 2. **Default Project** – If a default project is chosen, it can be automatically selected by clicking the right arrow on the Project Selection form, streamlining the process..
@@ -118,7 +119,7 @@ The SQL Manager provides access to eight fields for customization within Invento
 
 Fields marked according to the field layout in the Custom Query:
 
-    ![Inventory Transfer](./media/stock-transfer/stock-transfer-01.png)
+    ![Inventory Transfer](./media/stock-transfer/stock-transfer-01.webp)
 
 ---
 The Stock Transfer module in SAP Business One, combined with CompuTec WMS, provides robust tools for effective Warehouse and Inventory Management. The module’s enhanced configuration options, from project selection and document scanning to customized sorting and filters, ensure flexibility and streamlined processes.
