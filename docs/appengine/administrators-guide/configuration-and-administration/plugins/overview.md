@@ -48,11 +48,9 @@ To see details of any particular Plugin you can simply click on is name or speci
 
 5. The Plugins are now added to AppEngine repository.
 
-    ![Get Plugin](./media/plugins/plugins-07.png)
-
 6. Once the plugins are added you can check the Dependencies tab. Now all plugins are available (green statuses), we can proceed with Installation.
 
-    ![Dependencies](./media/plugins/plugins-08.png)
+    ![Dependencies](./media/plugins/plugins-08.webp)
 
 7. When given Plugin is added to AppEngine there are three additional tabs displayed in Plugin Details. These are Companies, A Navigate to Installation Tabs. You should now see the following tabs: Companies, AE Instances and Installation History.
 
@@ -64,7 +62,7 @@ To see details of any particular Plugin you can simply click on is name or speci
 
 9. Select AppEngine Instance for Installation.
 
-    ![AppEngine Instance](./media/plugins/plugins-10-01.png)
+    ![AppEngine Instance](./media/plugins/plugins-10.webp)
 
 10. The installation item details will be displayed. Here you can see what all required plugins that will be performed during installation and activation. Up arrows under AppEngines means Activation and down arrows Deactivation. Up arrows in last column indicates installation of given version on selected company and down arrows indicates removal. If some additional companies will be affected by installation there you can see them in Installation Companies displayed with warning icon. You can see details by clicking on such company and tur on installation on this company by switching "Install on this company" to "Yes"
 
@@ -74,7 +72,7 @@ To see details of any particular Plugin you can simply click on is name or speci
 
     <!-- TODO: add screenshot -->
 
-12. To start installation click on Preform Installation. The installation process will begin, and you can monitor its progress.
+12. To start installation click on Perform Installation. The installation process will begin, and you can monitor its progress.
 
     ![Installation Progress](./media/plugins/plugins-14.webp)
 
@@ -87,7 +85,7 @@ To see details of any particular Plugin you can simply click on is name or speci
     You can now see the assigned company.
 
 If you didn't perform installation with activation on AppEngine you can do so by navigating to AE Instances tab selecting company and clicking on Assign to AppEngine button
-    ![AE Instance](./media/plugins/plugins-16.webp)
+        ![AE Instance](./media/plugins/plugins-16.webp)
 
 ## SAP Business One Settings
 
