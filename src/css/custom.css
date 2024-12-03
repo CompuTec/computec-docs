@@ -18,6 +18,11 @@
   --ifm-menu-link-padding-horizontal: .75rem;
 
   --ifm-menu-link-sublist-icon: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16px\" height=\"16px\" viewBox=\"0 0 24 24\"><path fill=\"rgba(0,0,0,0.5)\" d=\"m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z\"></path></svg>");
+  --docusaurus-announcement-bar-height: auto !important;
+  
+ }
+.close {
+  color: white !important;
 }
 
 [data-theme='dark'] {
