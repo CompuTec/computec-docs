@@ -2,29 +2,28 @@
 sidebar_position: 9
 ---
 
-# ProcessForce
+# ProcessForce Plugin Related Jobs
 
-## ProcessForce plugin related jobs
+ProcessForce plugins provide a suite of automated jobs designed to enhance the efficiency and accuracy of manufacturing, quality control, and data synchronization processes in SAP Business One. Below, we outline the key jobs available and their functionalities, along with their configurable parameters.
+
+---
 
 :::info
-To use these jobs, it is required to activate Background Processing for a specific company.
+To use these jobs, you need to enable Background Processing for the specific company.
 :::
 
-### CostRollUpScheduledRecurringJob_01, CostRollUpScheduledRecurringJob_02, CostRollUpScheduledRecurringJob_03
+## Cost Roll-Up Scheduled Recurring Jobs
 
-<details>
-    <summary>Details</summary>
-    <div>
-       Default Cron Expression = "0 0 1 * * *" – each day at 1 am. Job runs Cost Roll-Up according to CostRollUpScheduledRecurringJob_01 (02, 03) configuration parameters.
-    </div>
-</details>
+Jobs: CostRollUpScheduledRecurringJob_01, 02, 03
+Default Cron Expression: `0 0 1 * * *` (Daily at 1 AM)
 
-Automatically runs Cost Roll-Up upon selected Item/s based on pre-defined parameters in specific time (defined in Cron Expressions)
+These jobs automatically perform Cost Roll-Up operations for selected items based on predefined parameters in specific time (defined in Cron Expressions). Key steps to configure:
 
-Go to Plugins → ProcessForce Plugin → Settings to define parameters (that reflects options available in the Cost Roll-Up form).
+1. Navigate to Plugins → ProcessForce Plugin → Settings to define parameters (that reflects options available in the [Cost Roll-Up form](https://learn.computec.one/docs/processforce/user-guide/costing-material-and-resources/cost-categories#cost-roll-up)).
+2. Use the Perform the roll-up over structure checkbox to enable advanced options like batch-based calculations and BOM data saving.
 
 :::caution
-    Please note that four checkboxes on the Cost Roll-Up form (from “Use final-goods’s batch[…]” to “Calculate and Save Costed BOM data”) are available to use after checking the Perform the roll-up over structure checkbox. They should be used in the same matter in AppEngine, even though they are available even when the Perform the roll-up over structure checkbox is not checked in AppEngine Settings (due to AppEngine limitations).
+The four checkboxes on the Cost Roll-Up form (ranging from “Use final-goods’ batch[…]” to “Calculate and Save Costed BOM data”) become usable only after the Perform the roll-up over structure checkbox is selected. Although these options are visible in AppEngine even without selecting this checkbox in the AppEngine settings, they should still be utilized in alignment with the Perform the roll-up over structure configuration due to AppEngine limitations.
 :::
 
 ![ProcessForce](./media/processforce/pf-jobs.png)
@@ -33,143 +32,105 @@ You can set up the occurance of the automatic Roll-Up by using [Cron Expressions
 
 ![ProcessForce](./media/processforce/pf-cron.png)
 
-You can configure three different automation of this kind by using CostRollUpScheduledRecurringJob_01, CostRollUpScheduledRecurringJob_02, and CostRollUpScheduledRecurringJob_03 job.
+You can configure three different automation of this kind by using these job variatins (CostRollUpScheduledRecurringJob_01, CostRollUpScheduledRecurringJob_02, and CostRollUpScheduledRecurringJob_03 job).
 
-### QCRefillBatchesAndSerialNumbersJob
+## Quality Control-Related Jobs
 
-<details>
-    <summary>Details</summary>
-    <div>
-        ContentType = "59"
-    <br/>ActionType = "A"
-   </div>
-</details>
+1. **QCRefillBatchesAndSerialNumbersJob**
 
-Fills in Batches and Serial Numbers in appropriate Quality Control Tests. After adding a Goods Receipt, Batches and Serial Numbers are created in a database and can be added to Quality Control Tests, which were created when the related Batches and Serial Numbers were still not present in a database.
+    This job automatically populates Batches and Serial Numbers into the appropriate Quality Control Tests. It ensures that when a Goods Receipt is added, the newly created Batches and Serial Numbers are incorporated into any existing Quality Control Tests that were initially created before these data entries were available in the database.
 
-**This job improves ProcessForce performance**.
+    Following are the Details:
 
-### QCTestDocumentsGeneratorJob
+    - ContentType = "59"
+    - ActionType = "A"
 
-<details>
-    <summary>Details</summary>
-    <div>
-ContentType = "*",
-<br/>ActionType = "A",
-<br/>Publisher = "AppEngine",
-<br/>PublisherApp = "SAPB1",
-<br/>EventType = "SAPB1Object"
-</div>
-</details>
+    This job enhances ProcessForce performance by maintaining accurate and up-to-date Quality Control Test data.
 
-Based on specific settings, automatically generates Quality Control Test when adding documents.
+2. **QCTestDocumentsGeneratorJob**
 
-**This job improves ProcessForce performance**.
+    Based on specific settings, this job automatically generates Quality Control Test when adding documents.
+    Following are the Details:
 
-### RestoreAditionalBatchDetails
+    - ContentType = "*",
+    - ActionType = "A",
+    - Publisher = "AppEngine",
+    - PublisherApp = "SAPB1",
+    - EventType = "SAPB1Object"
 
-<details>
-    <summary>Details</summary>
-    <div>
-Every second hour it calls a method that Creates Batch Master Data for all missing Batches in system.
-</div>
-</details>
+    This job optimizes ProcessForce performance by streamlining test generation processes.
 
-    Default Cron Expression Description = "0 */2 * * *"
+## Restore Jobs
 
-Every second hour it calls a method that Creates Batch Master Data for all missing Batches in system.
+1. **RestoreAditionalBatchDetails**
 
-### RestoreItemDetailsJob
+    This job runs every two hours to invoke a method that creates Batch Master Data for any missing batches in the system, ensuring data completeness.
 
-<details>
-    <summary>Details</summary>
-    <div>
-Editable = true,
-<br/>ContentType = "4", // OITM,
-<br/>ActionType = "U".
-</div>
-</details>
+        Default Cron Expression Description = "0 */2 * * *"
 
-This job synchronizes data in ItemDetails object upon updating data in the OITM table.
+2. **RestoreItemDetailsJob**
 
-**This job improves ProcessForce performance**.
+    This job synchronizes the ItemDetails object whenever there are updates in the OITM table, ensuring that item-related data remains consistent. Following are the details:
+        - Editable = true
+        - ContentType = "4", // OITM
+        - ActionType = "U"
 
-### SynchronizeBillOfMaterialsJob
+    This job enhances ProcessForce performance by keeping item data synchronized and up-to-date
 
-<details>
-    <summary>Details</summary>
-    <div>
-Editable = true,
-<br/>ContentType = "CT_PF_OBOMCode",
-<br/>ActionType = "*".
-</div>
-</details>
+## Synchronization Jobs
 
-This job synchronizes data with SAP Business One Bill of Materials upon updating ProcessForce Bill of Materials
+1. SynchronizeBillOfMaterialsJob
 
-**This job improves ProcessForce performance**.
+    This job synchronizes updates made to the ProcessForce Bill of Materials with the corresponding data in SAP Business One.
+    - Editable = true
+    - ContentType = "CT_PF_OBOMCode"
+    - ActionType = "*".
 
-### SynchronizeManufacturingOrderJob
+    This job enhances ProcessForce performance by maintaining accurate and up-to-date Bill of Materials information.
 
-<details>
-    <summary>Details</summary>
-    <div>
-    Editable = true,
-<br/>ContentType = "CT_PF_ManufacOrd",
-<br/>ActionType = "*".
-</div>
-</details>
+2. **SynchronizeManufacturingOrderJob**
 
-This job synchronizes data with Production Order upon updating Manufacturing Order
+    This job ensures that updates made to Manufacturing Orders are synchronized with the corresponding Production Orders. Following are the details:
+        - Editable = true
+        - ContentType = "CT_PF_ManufacOrd"
+        - ActionType = "*"
 
-**This job improves ProcessForce performance**.
+    This job improves ProcessForce performance by maintaining accurate and consistent order data.
 
-### SynchronizeManufacturingOrdersRecursiveJob
+3. **SynchronizeManufacturingOrdersRecursiveJob**
 
-<details>
-    <summary>Details</summary>
-    <div>
-Default Cron Expression = "0 */12 * * *"
-</div>
-</details>
+    This job performs a scheduled synchronization between Manufacturing Orders and Production Orders every twelve hours, ensuring data consistency. Followingare the details:
+        - Default Cron Expression = `"0 */12 * * *"` (Every 12 hours)
 
-This job synchronizes data between Manufacturing Order and Production Order every twelve hours.
+## Additional Batch Details Job
 
-### AdditionalBatchDetailsSynchronizerEB
+1. **AdditionalBatchDetailsSynchronizerEB**
 
-<details>
-    <summary>Details</summary>
-    <div>
-        ContentType = "CT_PF_AdditonalBatch",
-    <br/>ActionType = "U",
-    <br/>Publisher = "AppEngine", PublisherApp = "SAPB1", EventType = "SAPB1Object".
-       </div>
-</details>
+    This job synchronizes updates to Batch Master Data with the Additional Batch details in SAP Business One.
+    Following are the details:
+        - ContentType = "CT_PF_AdditonalBatch",
+        - ActionType = "U",
+        - Publisher = "AppEngine", PublisherApp = "SAPB1", EventType = "SAPB1Object".
+    This job enhances ProcessForce performance by maintaining accurate and consistent batch-related data across systems.
 
-This job synchronizes data to SAP Business One Additional Batch details upon updating Batch Master Data
+2. **AdditionalBatchDetailsCreatorEB**
 
-**This job improves ProcessForce performance**.
+    This job automatically creates related Batch Master Data when a new Batch is created in SAP Business One.
+    Following are the details:
+        - ContentType = "10000044",
+        - ActionType = "*", Publisher = "AppEngine",
+        - PublisherApp = "SAPB1",
+        - EventType = "SAPB1Object"
 
-### AdditionalBatchDetailsCreatorEB
+    If this job is enabled, Batch Synchronization is handled by AppEngine. Otherwise, synchronization is managed by the CompuTec WMS service when using CompuTec WMS.
 
-<details>
-    <summary>Details</summary>
-    <div>
-        ContentType = "10000044",
-    <br/>ActionType = "*", Publisher = "AppEngine",
-    <br/>PublisherApp = "SAPB1",
-    <br/>EventType = "SAPB1Object"
-   </div>
-</details>
+    This job improves the performance and efficiency of both ProcessForce and CompuTec WMS by ensuring seamless and accurate batch data synchronization.
 
-This job creates a related Batch Master Data upon creation of a Batch in SAP Business One.
+## Manufacturing Order Management
 
-to synchronizacja Batch Synchronization jest uruchamiana przez AppEngine, w innym przypadku działa jak wcześniej tzn. synchronizacja wykonywana jest po stronie serwisu WMS
+**ManufacturingOrderWizardRecoverJob**
 
-If this job is turned on, the Batch Synchronization is performed by AppEngine (otherwise, the synchronization is performed by CompuTec WMS service, in contect of using CompuTec WMS).
+On AppEngine startup, this job checks and processes unfinished Manufacturing Order Wizard tasks.
 
-**This job improves ProcessForce and CompuTec WMS performance**.
-
-### ManufacturingOrderWizardRecoverJob
-
-This job is started upon a start of AppEngine and checks if there are any unfinished Manufacturing Order Wizard tasks to process.
+---
+ProcessForce background jobs play a vital role in automating key operational tasks, reducing manual errors, and boosting performance. By activating and fine-tuning these jobs, businesses can streamline operations and focus on strategic priorities.
