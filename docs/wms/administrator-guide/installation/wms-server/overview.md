@@ -40,10 +40,11 @@ If the CompuTec WMS Server is already installed on this computer, you can access
        To access the WMS Settings screen via the Start menu, ensure you run it with Administrator privileges; otherwise, an error may occur when attempting to save changes.
     :::
 6. Enter the required details:
+
+    ![CompuTec WMS - All Settings](./media/wms-all-settings.webp)
     <details>
     <summary>Click here to check the required details</summary>
     <div>
-    ![CompuTec WMS - All Settings](./media/wms-all-settings.webp)
     1. Server Name - This should match the server name defined in the SAP Business One System Landscape Directory. (Default port for SAP HANA: 40000)
     2. License Server Name/Address - Enter the license server name/address. (Default port for SAP HANA: 30002)
     3. Cleanup connection pool every (min) - A connection pool is a cache of connections to a database. Set the interval (in minutes) for clearing the connection pool. It is created so that the connections can be reused during future requests to the database.
