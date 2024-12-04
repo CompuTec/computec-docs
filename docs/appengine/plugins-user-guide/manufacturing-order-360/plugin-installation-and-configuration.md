@@ -23,13 +23,5 @@ The MO360 plugin can optionally be accessed directly from the ProcessForce level
 
     ![Manufacturing Order 360](../manufacturing-order-360/media/image2020-9-14-23-18-44.png)
 
-To enable this,
-
-1. Select the checkbox labeled Enable AppEngine
-
-    ![Manufacturing Order 360](../manufacturing-order-360/media/general-settings-enableappengine.png)
-2. Enter the AppEngine URL, e.g., `http://{host}:54000`.
-3. Click Update and restart SAP Business One to apply the changes.
-
 ---
 By properly installing and configuring the MO360 plugin, you can unlock a seamless experience for managing manufacturing orders. Implement MO360 to streamline your manufacturing processes and improve operational efficiency.
