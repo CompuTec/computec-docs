@@ -10,11 +10,11 @@ In this section, you can find a guide of downloading and installation.
 
 There is one installation to perform and one plugin to upload on AppEngine.
 
-**CompuTec Gateway Application** can be downloaded from [here](https://computec-docs.pages.dev/pdc/administrator-guide/weight-scales-integration/gateway-service-installation).
-<!-- TODO: Replacement above Link to path -->
+**CompuTec Gateway Application** can be downloaded from here:
+<br/>PDC -> Adminstrator Guide -> Weight Scales Integration -> Gateway Service Installation
 
-**CompuTec Gateway Plugin** can be downloaded from [here](https://connect.computec.pl/display/AEEN/CompuTec+AppEngine+Plugins).
-<!-- TODO: Replacement above Link to path -->
+**CompuTec Gateway Plugin** can be downloaded from here:
+<br/>Appengine -> Releases -> Plugins -> Gateway -> Download
 
 ## Installation
 

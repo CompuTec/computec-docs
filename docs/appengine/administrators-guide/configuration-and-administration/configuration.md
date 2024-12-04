@@ -50,21 +50,11 @@ System Landscape Directory (SLD) is a service that SAP uses to maintain an inven
 
 You can find the SLD Server Address in SAP Business One, License Administration.
 
-    <details>
-        <summary>Click here to find more</summary>
-        <div>
-        ![License Administration](./media/configuration-and-administration/license-administration.webp)  
-        </div>
-    </details>
+![License Administration](./media/configuration-and-administration/license-administration.webp)  
 
 You can check the CompuTec License Server Address in SAP Business One with ProcessForce installed, ProcesForce License administration form.
 
-<details>
-    <summary>Click here to find more</summary>
-    <div>
 ![Administration](./media/configuration-and-administration/processforce-license-administration.webp)
-</div>
-</details>
 
 ### Steps to Perform Initial Configuration
 

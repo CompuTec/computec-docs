@@ -28,13 +28,6 @@ Optionally, you can invoke the Serialization plug-in within the ProcessForce app
 
 ![Batch Traceability 360](./media/overview/batch-traceability-360.png)
 
-1. To do this, check the following checkbox:
-
-        ![Batch Traceability 360](./media/overview/bt360-image2020-1-18-8-33-41-720.png)
-
-2. Enter the AppEngine url, e.g. `http://{host}:54000`
-3. Click "Update" and restart SAP Business One for the changes to take effect.
-
 ## Start points for function opening
 
 You can access ProcessForce Batch Traceability 360 by:

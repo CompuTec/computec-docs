@@ -6,7 +6,7 @@ toc_max_heading_level: 5
 
 # Assignment Board
 
-Here you can find information on scenario definition.
+This guide outlines key functionalities for scenario definition, team management, task allocation, and Manufacturing Order (MO) tracking, ensuring a seamless production workflow.
 
 ---
 
@@ -113,3 +113,6 @@ In this section, you can find the following information about the Manufacturing 
         ![Assignment Board](./media/assignment-board/image2020-12-7-14-21-43-1.png)
 
         ![Assignment Board](./media/assignment-board/image2020-12-7-14-22-48-1.png)
+
+---
+By leveraging these tools, businesses can enhance resource utilization and improve overall operational efficiency.
