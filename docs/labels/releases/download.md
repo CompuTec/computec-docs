@@ -14,21 +14,22 @@ These versions require [CompuTec License Server in 5.10.1.1 version](/docs/proce
 
 ### CompuTec Labels
 
-|Version|Platform|Download Link|
-|---|---|---|
-|4.7.1.134|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.134_x64.msi)|
-|4.7.1.131|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.131_x64.msi)|
-|4.7.1.130|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.130_x64.msi)|
-|4.7.1.121|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.121_x64.msi)|
-|4.7.1.117|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.117_x64.msi)|
-|4.7.1.116|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.116_x64.msi)|
-|4.7.1.106|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.106_x64.msi)|
-|4.7.1.82|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.82_x64.msi)|
-|4.7.1.82|x86|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.82_x86.msi)|
-|4.7.1.79|x86|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.79_x86.msi)|
-|4.7.1.78|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.78_x64.msi)|
-|4.7.1.72|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.72_x64.msi)|
-|4.7.1.72|x86|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.72_x86.msi)|
+|Version|Platform|Download Link| Notes |
+|---|---|---| --- |
+| 4.7.1.135 | x64|[Download](https://download/computec.one/software/labels/releases/CompuTec_Labels_4.7.1.135_x64.msi) | This version is fully compatible with .NET Core 3.0. <br/>Maintains full compatibility with previous systems |
+|4.7.1.134|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.134_x64.msi)| - |
+|4.7.1.131|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.131_x64.msi)| - |
+|4.7.1.130|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.130_x64.msi)| - |
+|4.7.1.121|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.121_x64.msi)| - |
+|4.7.1.117|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.117_x64.msi)| - |
+|4.7.1.116|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.116_x64.msi)| - |
+|4.7.1.106|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.106_x64.msi)| - |
+|4.7.1.82|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.82_x64.msi)| - |
+|4.7.1.82|x86|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.82_x86.msi)| - |
+|4.7.1.79|x86|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.79_x86.msi)| - |
+|4.7.1.78|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.78_x64.msi)| - |
+|4.7.1.72|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.72_x64.msi)| - |
+|4.7.1.72|x86|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.72_x86.msi)| - |
 
 ### CompuTec Labels SAP Addon
 
@@ -44,7 +45,10 @@ These versions require [CompuTec License Server in 5.10.1.1 version](/docs/proce
 
 ## CompuTec Gateway Service
 
-1.2.0.20 version: [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.0.20.msi)
+| Version | Download Link |
+| --- | --- |
+| 1.2.0.28 | [Download](https://download/computec.one/software/gateway/releases/CompuTec_Gateway_1.2.0.28.msi) |
+|1.2.0.20 | [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.0.20.msi) |
 
 ## AppEngine CompuTec Labels Plugin
 
