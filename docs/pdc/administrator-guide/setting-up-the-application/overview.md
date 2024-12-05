@@ -219,3 +219,6 @@ For example, **PDC Default View** = PDCVIEW for custom SQL View:
 - **Blocked time type, if the previous operation was not closed** – (values: 'All,' 'Run') if 'All' is chosen, it is impossible to start an Operation if a previous one on this Manufacturing Order is not finished. If the option is set to 'Run,' it is possible to start 'Set up' time on an Operation even when the previous Operation is set to 'Run.'
 - **Force tare between each weighing**– if the option is checked, it is required to click 'Tare' on each weighing (find out more about the [Weighing Module](../../user-guide/customization/optional-functions/weight-scale-module/overview.md)).
 - **Show all Tasks** – this allows access to all of the user's Tasks on all Resources despite using the [Resource Code](./pdc-settings/overview.md#pdc-settings-templates) option. The user cannot add any new Task to Resources other than assigned.
+
+---
+The CompuTec PDC application, with its robust integration into SAP Business One and ProcessForce, serves as a powerful tool for streamlining production processes. By following the detailed setup instructions and leveraging the customizable features, businesses can enhance task management, ensure data accuracy, and optimize manufacturing efficiency. For further assistance or advanced configurations, consult our support team.

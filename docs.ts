@@ -21,7 +21,7 @@ export default [
     {
         label: "WMS",
         pluginId: "wms",
-        currentVersion: "2.0",
+        currentVersion: "3.0",
         includeCurrentVersion: true,
     },
     {
