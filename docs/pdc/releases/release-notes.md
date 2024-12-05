@@ -9,6 +9,14 @@ toc_max_heading_level: 2
     Installer is ready to download from [here](/docs/appengine/releases/plugins/pdc/download).
 :::
 
+## CompuTec PDC 3.10.24.2
+
+**Release Date - 05 December 2024**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Bug | PDC | Error message occured: "Problem with token SESSION" while attempting to preview the Bill of Materials (BOM) or Manufacturing Orders (MO). |
+
 ## CompuTec PDC 3.10.24.1
 
 **Release Date - 25 November 2024**
