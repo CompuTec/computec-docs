@@ -17,14 +17,12 @@ import Releases from "../../releases.json";
     <th>Version</th>
     <th>Release Date</th>
     <th>Installer</th>
-    <th>Minimal required related version</th>
   </tr>
   {Releases.map((data) => (
     <tr>
       <td>{data.version}</td>
       <td>{data.release_date}</td>
       <td><a href={`https://download.computec.one/software/appengine/releases/CompuTec.AppEngine.${data.build}.msi`}>Download</a></td>
-      <td>ProcessForce {data.pf_version}<br />CompuTec License Server {data.license_server_version}</td>
     </tr>
   ))}
 </table>
