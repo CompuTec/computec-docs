@@ -4,16 +4,21 @@ sidebar_position: 4
 
 # AppEngine Configuration
 
-:::warning
-    As of the following releases: **3.10.6.1** (related ProcessForce version: 10.0 Release 6 (R6)), **3.93.15.1** (corresponding ProcessForce version: 9.3 PL14 Release 2 (R2)) **CompuTec PDC is released as an AppEngine plugin only**.
+:::info
+    Starting with the following releases — **3.10.6.1** (compatible with ProcessForce version 10.0 Release 6 (R6)) and **3.93.15.1** (compatible with ProcessForce version 9.3 PL14 Release 2 (R2)) — **CompuTec PDC is exclusively available as an AppEngine plugin**.
 
-    For the AppEngine plugin configuration manual, click [here](/docs/appengine/plugins-user-guide/computec-pdc-plugin).
+    CompuTec PDC is now compatible with AppEngine. For configuration details, please refer to the following link: [AppEngine Plugin Configuration Manual](/docs/appengine/plugins-user-guide/computec-pdc-plugin).
 :::
 
 PDC is now available to work with AppEngine. For details of configuration, please follow this link: [CompuTec PDC Plugin](/docs/appengine/plugins-user-guide/computec-pdc-plugin).
 
-Wondering why to configure PDC with AppEngine? Below are the strengths of this solution:
+**Why Configure PDC with AppEngine?**
 
-- standard benefits from registering work time on PDC
-- high speed and makes the work-time record more effective
-- more straightforward upgrade of the application (no more need to upgrade every single terminal - just do it on the server with AppEngine)
+Configuring PDC with AppEngine enhances productivity and simplifies application management. Below are the key advantages:
+
+- **Improved Work-Time Tracking** - Leverage the standard benefits of PDC for registering work time efficiently
+- **Enhanced Speed and Effectiveness** - Enjoy faster processing and more effective work-time recording
+- **Streamlined Application Upgrades** - Simplify the upgrade process by performing updates directly on the server with AppEngine, eliminating the need to update individual terminals
+
+---
+Integrating CompuTec PDC with AppEngine simplifies application management, enhances performance, and ensures scalability. By leveraging AppEngine, businesses can streamline their production data collection processes and reduce administrative overhead.

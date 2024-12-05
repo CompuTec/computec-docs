@@ -33,3 +33,60 @@ Create a file named `CtNugetConfig.config` with the content provided below, repl
 ```
 
 Please ensure you replace `APIKEY` with the actual API key provided for early access.
+
+## Releases
+
+The table below provides links for downloading various components of the CompuTec WMS 3.0 release. These versions are compatible with SAP Business One and ProcessForce, ensuring seamless integration for your warehouse management needs.
+
+<table>
+  <tr>
+    <th>Component</th>
+    <th>Version</th>
+    <th>Build</th>
+    <th>Installer</th>
+    <th>The version works with (minimal):</th>
+  </tr>
+  <tr>
+    <td>CompuTec WMS Server</td>
+    <td>3.2412.1-rc-05</td>
+    <td rowspan="5">3.2412.1-rc-05</td>
+    <td><a href="https://download.computec.one/software/wms/server/releases/CompuTec.WMS.Server_3.2412.1-rc-05.msi">Download</a></td>
+    <td>
+      <ul>
+        <li>
+          <p>For CompuTec WMS to work with SAP Business One and ProcessForce:</p>
+          <ul>
+            <li>SAP Business One 10.0</li>
+            <li>ProcessForce from 10.0 R1 to 10.0 R15 HF1</li>
+            <li>ProcessForce API in related version</li>
+          </ul>
+        </li>
+        <li>
+          <p>For CompuTec WMS to work with SAP Business One (without ProcessForce):</p>
+          <ul>
+            <li>SAP Business One 10.0</li>
+          </ul>
+        </li>
+      </ul>
+      <p>This version requires CompuTec License Server in 5.10.2.9 or later version.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>CompuTec WMS Client Windows Desktop</td>
+    <td>-</td>
+    <td><a href="https://download.computec.one/software/wms/client/windows/releases/CompuTecWMSClientWindows_3.2412.1-rc-05.msi">Download</a></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>CompuTec WMS Client Windows CE</td>
+    <td>-</td>
+    <td><a href="https://download.computec.one/software/wms/client/ce/releases/CompuTecWMSClientWindowsCE_3.2412.1-rc-05.CAB">Download</a></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>CompuTec WMS Client Android</td>
+    <td>-</td>
+    <td><a href="https://download.computec.one/software/wms/client/android/releases/CompuTec.Client.Net-3.2412.1-rc-05.apk">Download</a></td>
+    <td>-</td>
+  </tr>
+</table>

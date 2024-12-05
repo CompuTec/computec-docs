@@ -10,7 +10,7 @@ To obtain the company ID, navigate to the Administration Panel and hover over th
 
     ![Company Id](./media/troubleshooting/gcid.png)
 
-## Features are disabled after an AppEngine Upgrade
+## Features are Disabled after an AppEngine Upgrade
 
 Ensure all your companies are fully updated by clicking "Update Company" in the Administration Panel for each one. Features may remain unavailable until the update is completed.
 
