@@ -4,10 +4,12 @@ sidebar_position: 8
 
 # Log Files
 
-If the installation is unsuccessful CompuTec Appengine then the logs will be in Windows Event Viewer.
-AppEngine log:
-C:\ProgramData\CompuTec\AppEngine\logs
+If the CompuTec AppEngine installation fails, the logs can be found in the Windows Event Viewer. Additionally, the AppEngine log is located at:
 
-The level of error logging can be set in AppEngine itself.
+:::info Path
+C:\ProgramData\CompuTec\AppEngine\logs
+:::
+
+The error logging level can be configured directly within the AppEngine settings.
 
 ![Log Files](./media/log-files.png)

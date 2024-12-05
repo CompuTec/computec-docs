@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Requirements
 
-This document provides information on a system environment that CompuTec PDC requires to work properly.
+This document outlines the system environment requirements essential for the proper functioning of CompuTec PDC. Ensuring compatibility with these prerequisites is vital for seamless integration and performance.
 
 :::note
     CompuTec PDC requires .NET Framework to work correctly. **The minimum version of the .NET Framework** supported by CompuTec PDC **is 4.7.1**.
@@ -64,3 +64,6 @@ Since this version, you need to perform the following preparation to support Cry
 ## CompuTec Labels
 
 If you use CompuTec Labels along with CompuTec PDC, there is a need to have a connection between the CompuTec PDC terminal and a server where CompuTec Labels are installed.
+
+---
+Proper configuration of the CompuTec PDC environment ensures smooth installation and performance. By following the prerequisites and installation steps outlined in this document, users can effectively implement CompuTec PDC in their production environments. For additional support, contact technical support.
