@@ -9,7 +9,7 @@ toc_max_heading_level: 2
     Installer is ready to download from [here](/docs/appengine/releases/plugins/pdc/download).
 :::
 
-## CompuTec PDC 3.10.24.2
+## CompuTec PDC 3.10.24.2 (Hotfix)
 
 **Release Date - 05 December 2024**
 
