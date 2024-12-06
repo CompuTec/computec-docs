@@ -13,14 +13,14 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ### *Release Date - 23 May 2024*
 
-| Issue Type | Release Note | Related Issue |
+| Issue Type | Component | Release Note |
 | --- | --- | --- |
-| Bug | 
-| Bug | MO360 gantt chart weren't displayed on new UI5 version | - |
+| Bug | MO360 | Users experienced difficulties in managing and viewing resources due to unexpected filtering behavior in both Assignment Board and Gantt Chart. |
+| Bug | MO360 | Gantt chart weren't displayed on new UI5 version |
 
 ---
 
-## MO360 1.10.10
+## MO360 1.10.10.1
 
 ### *Release Date - 9 November 2023*
 
@@ -31,7 +31,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ---
 
-## MO360 1.10.8
+## MO360 1.10.8.3
 
 ### *Release Date - 1 February 2023*
 
@@ -52,7 +52,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ---
 
-## MO360 1.10.7
+## MO360 1.10.7.1
 
 ### *Release Date - 25 July 2022*
 
@@ -68,7 +68,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ---
 
-## MO360 1.10.6, 1.93.6
+## MO360 1.10.6.5, 1.93.6.5
 
 ### *Release Date - 26 April 2022*
 
