@@ -45,19 +45,17 @@ To properly manage custom Batch UDFs in CompuTec WMS with ProcessForce, a specif
 
 - "OBTN" (SAP)
 
-    ![obtn](./media/prerequisites/obtn.png)
+    ![obtn](./media/prerequisites/obtn.webp)
 
 - "@CT_PF_OABT" (ProcessForce)
 
-    ![obtn](./media/prerequisites/ct-pf-oabtct.png)
+    ![obtn](./media/prerequisites/ct-pf-oabt.webp)
 
 - "@CT_PF_PRE2" (for picked but unreceived batches)
 
-    ![obtn](./media/prerequisites/ct-pf-pre2.png)
+    ![obtn](./media/prerequisites/ct-pf-pre2.webp)
 
 See more information on [working with UDFs in ProcessForce](/docs/processforce/administrator-guide/udfs).
-
----
 
 ## SAP Business One User
 

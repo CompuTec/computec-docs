@@ -16,14 +16,14 @@ These forms allow users to define Resources, Properties, and Groups, that will b
 
 ### Resource Types
 
-| Type of Resource | Impact on Scheduling |   Calendar usage   | Visible on Gantt chart? |    Hourly rates    | Required to be connected to |    Time Booking    |                    Times (Setup, Run)                     | Number of resources |
-| :--------------: | :------------------: | :----------------: | :---------------------: | :----------------: | :-------------------------: | :----------------: | :-------------------------------------------------------: | :-----------------: |
-|     Machine      |  :heavy_check_mark:  | :heavy_check_mark: |   :heavy_check_mark:    | :heavy_check_mark: |             N/A             | :heavy_check_mark: |                    :heavy_check_mark:                     |     Changeable      |
-|      Labor       |         :x:          |        :x:         | :heavy_check_mark: [^1] | :heavy_check_mark: |             N/A             | :heavy_check_mark: |                    :heavy_check_mark:                     |     Changeable      |
-|       Tool       |  :heavy_check_mark:  | :heavy_check_mark: |   :heavy_check_mark:    | :heavy_check_mark: |           Machine           | :heavy_check_mark: | :heavy_check_mark: (copied from the related Machine data) |      Always 1       |
-|  Subcontracting  |  :heavy_check_mark:  | :heavy_check_mark: |   :heavy_check_mark:    | :heavy_check_mark: |             N/A             | :heavy_check_mark: |                    :heavy_check_mark:                     |     Changeable      |
+| Type of Resource | Has Calendar? | Visible on Gantt Chart? |    Hourly rates    | Connected with | Time Booking    | Times (Setup, Run) | Number of resources |
+| --- | --- | --- | --- | --- | --- | ---| --- |
+| Machine | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | N/A  | :heavy_check_mark: | :heavy_check_mark: | Changeable |
+| Labor | :x: | :x: | :heavy_check_mark:[^] | N/A | :heavy_check_mark:  | :heavy_check_mark: | Changeable |
+| Tool |  :heavy_check_mark:  | :heavy_check_mark: | :x: | Machine | :x: | :x: | Always 1 |
+|  Subcontracting  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | N/A | :heavy_check_mark: | :heavy_check_mark: | Changeable |
 
-[^1]: Labor can be presented on the Gantt chart but Start and Finish dates (on the Manufacturing Orders tab) in some cases may be empty or has a default value (0001-01-01), as this type of Resource does not affect Manufacturing Order Scheduling.
+[^]Labor can be presented on the Gantt chart but Start and Finish dates (on the Manufacturing Orders tab) in some cases may be empty or has a default value (0001-01-01), as this type of Resource does not affect Manufacturing Order Scheduling.
 
 ### Header
 

@@ -37,8 +37,6 @@ CompuTec WMS (Warehouse Management System) licensing is structured around server
     - **License not found** – The file does not contain a valid license.
 8. Following the receipt of the '**License appears to be valid**' confirmation, the system will display the remaining days of validity.
 
----
-
 ## Setting Up Users for WMS
 
 To use the WMS system, terminal users must be set up and assigned to SAP Business One users. Follow these steps:
@@ -75,8 +73,6 @@ You can assign multiple terminal users to a single SAP user.
   </TabItem>
 </Tabs>
 
----
-
 ## Assigning Terminal Licenses
 
 To connect a terminal to the WMS client and license server, follow these steps:
@@ -95,8 +91,6 @@ To connect a terminal to the WMS client and license server, follow these steps:
 4. Select the desired terminal from the list, check the box to assign the license, and click "Update". Note that the "Number of Available Licenses" decreases after this action, as one of the licenses will be in use/assigned.
 
     ![License Management Update](./media/license-management-update.webp)
-
----
 
 ## Plugin Configuration
 
