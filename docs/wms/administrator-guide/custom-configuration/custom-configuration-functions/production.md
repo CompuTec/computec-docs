@@ -4,11 +4,15 @@ sidebar_position: 15
 
 # Production
 
+Effective management of production processes and inventory is crucial for businesses aiming to optimize their operations and maintain smooth workflows. The configurations available offer a wide range of options to streamline processes, control inventory movements, and enhance data accuracy.
+
+---
+
 ## PF Pick Receipt tab
 
 ![Production ProcessForce Pick Receipt](./media/production/cc-production-pf-pick-receipt.png)
 
-**After picking, auto return to** – defines to which form the application leads after confirming picking quantity for a document line: None, Document Details, Remarks.
+**After picking, auto return to** – Specifies the form the application navigates to after confirming the picking quantity for a document line, with options like None, Document Details, or Remarks.
     <details>
     <summary>Click here to expand</summary>
     <div>
@@ -22,135 +26,115 @@ sidebar_position: 15
     </div>
     </details>
 
-**PF Pick Receipt PopUp Timer checkpoint** – None, Select the base document, Select Item on the list, Pick quantity to the first line, Save Document
+**PF Pick Receipt PopUp Timer checkpoint** – Configures checkpoints during the picking process, such as None, Select the base document, Select Item on the list, Pick quantity to the first line, Save Document
 
-**Scan DocNum on Base Document** – On selecting the Pick Receipt or Manufacturing Order window, scanning will work by DocNum instead of DocEntry.
+**Scan DocNum on Base Document** – Enables scanning using DocNum instead of DocEntry when accessing the Pick Receipt or Manufacturing Order window.
 
-**Show only picked items from all pick receipts** – narrow the list of displayed Items to only those with a picked quantity greater than 0.
+**Show only picked items from all pick receipts** – Filters the list to display only items with a picked quantity greater than zero.
 
-**Show only Final Good Item** – narrow the list of displayed items to only the Final Good Item.
+**Show only Final Good Item** – Limits the displayed items to the Final Good Item only.
 
-**Block creation of new Pick Receipts** –  this option blocks the user from creating new Pick Receipts. WMS users will be able only to work on Pick Receipts created in the SAP. Enabling this option disables the following option: "Create new Pick Receipt when a new Manufacturing Order is added."
+**Block creation of new Pick Receipts** –  Prevents users from creating new Pick Receipts, allowing work only on those generated in SAP. Enabling this option disables the following option: "Create new Pick Receipt when a new Manufacturing Order is added."
 
-**Create a new Pick Receipt when a new Manufacturing Order is added** – creates a new Pick Receipt Instead of adding its content to the currently opened one.
+**Create a new Pick Receipt when a new Manufacturing Order is added** – Automatically generates a new Pick Receipt rather than adding items to an existing one when a new Manufacturing Order is added.
 
-**Set Storage Unit default action and Skip Storage Unit options** – after selecting a line, Storage Unit options are displayed, allowing a user to create storage units or continue packing the last created one. Selecting a default action, "New SU" or "New SU Each Pick," will automatically skip displaying Storage Unit options.
+**Set Storage Unit default action and Skip Storage Unit options** – Provides options to create new storage units or continue with the last created unit after selecting a line. Choosing a default action like "New SU" or "New SU Each Pick" automatically skip displaying Storage Unit options.
 
     <details>
     <summary>Click here to expand</summary>
     <div>
-    After selecting a line, Storage Unit options allow users to create storage units or continue packing the last created one.
+    After selecting a line, users can choose to create new storage units or continue packing the most recently created one.
 
-    Selecting a default action, either "New SU" or "New SU Each Pick" will automatically skip displaying Storage Unit options.
+    Selecting a default action, such as "New SU" or "New SU Each Pick" will automatically skip displaying Storage Unit options.
 
         ![Storage Unit](./media/production/storage-unit.png)
     </div>
     </details>
 
-**Show extra field on Pick Batch Workflow** – displays an extra field on selecting batch if and only if the SQL query was provided after pressing the "Load" button:
+**Show extra field on Pick Batch Workflow** – Shows an additional field during batch selection if an SQL query is provided and the "Load" button is pressed:
 
-    <details>
-    <summary>Click here to expand</summary>
-    <div>
     ![Extra Field](./media/production/extra-field.png)
-    </div>
-    </details>
 
-**Copy available quantity to Quantity box** – copies remaining quantity to the quantity box.
+**Copy available quantity to Quantity box** – Automatically copies the remaining quantity to the quantity box during picking.
 
-**Force manual quantity confirmation** – blocks the "Fast scan" on the document. For each performed scan, the user has to manually confirm the quantity, i.e., press the save button before adding the item with a scan.
+**Force manual quantity confirmation** – Disables the "Fast Scan" feature, requiring manual confirmation (e.g., pressing the save button) before adding scanned items.
 
-**Overwrite already picked batches** – when a Batch is already picked for a line, for example, in SAP Business One, then picking the same batch in WMS will overwrite its quantity rather than adding to what was already picked.
+**Overwrite already picked batches** – When a batch is already picked for a line, selecting it again in WMS replaces the existing quantity instead of adding to it.
 
-**Receipt from production always to default Bin Location** – when receipting to a warehouse with bin locations, the default bin will be automatically chosen. Selecting other bin locations will be blocked.
+**Receipt from production always to default Bin Location** – Automatically assigns the default bin for receipts in warehouses with bin locations, preventing selection of alternate bins.
 
-**Keep selected Bin Location after adding an item** – after picking an Item, the Bin Location field will not be cleared (keeping the same Bin Location)
+**Keep selected Bin Location after adding an item** – Keeps the Bin Location field unchanged after picking an item.
 
-**Do not clear Batch, Serial, and quantity after picking an item** – changed from the old version where those fields were not cleared after picking.
+**Do not clear Batch, Serial, and quantity after picking an item** – Prevents these fields from being cleared after an item is picked, as opposed to previous versions.
 
-**No automatic batch generation on saving Pick Receipt** – by default, when picking a batch item is not required to enter a batch number – it will be generated automatically. This option disables this feature.
+**No automatic batch generation on saving Pick Receipt** – Requires manual entry of batch numbers when picking batch items, instead of generating them automatically.
 
-**Do not update the Pick Receipt each time an Item is picked** – by default when an item is picked, the Pick Receipt document is updated, and information about it is displayed. Enabling this checkbox will disable this feature. To update the Pick Receipt, a user will have to save the transaction from the "Remarks" window, which will, by default, create a Goods Receipt document.
+**Do not update the Pick Receipt each time an Item is picked** – Stops automatic updates of the Pick Receipt document after every pick. Users must manually save the transaction in the Remarks window, which will generate a Goods Receipt document by default.
 
-**Do not create Goods Receipt at the end of the transaction** - Pressing the Save to DB button on the "Remarks" window will not create a Goods Receipt document – allowing to create such a document from the SAP Business One level.
-Enabling this option will disable the possibility of creating Storage Units on the Pick Receipt transaction, as creating the Goods Receipt document in SAP B1 will lead to a loss of information about the Storage Units. The Storage Units Options window will also be skipped.
+**Do not create Goods Receipt at the end of the transaction** - Prevents automatic creation of a Goods Receipt document when pressing the Save to DB button in the Remarks window. Goods Receipts can be created manually in SAP Business One.
+Enabling this option also disables Storage Unit creation during the Pick Receipt transaction, as information about Storage Units would otherwise be lost.
 
-<details>
-<summary>Click here to expand</summary>
-<div>
     ![Remarks Wndow](./media/production/remarks-window.png)
-</div>
-</details>
 
-**Enable Receipt From Production only on data entry level** - To create a Receipt From Production, i.e., a Goods Receipt document, the user has to enter the line and then press the right arrow to enter the Remarks window:
-<details>
-<summary>Click here to expand</summary>
-<div>
+**Enable Receipt From Production only on data entry level** - Requires users to enter a line and navigate to the Remarks window via the right arrow to create a Receipt From Production (Goods Receipt document).
+
     ![Receipt from Production](./media/production/receipts-from-production.png)
-</div>
-</details>
 
-**Enable Select Employee** - gives possibility to receipt the quantity as one of the users configured in SAP Business One.
+**Enable Select Employee** - Allows users to select and receipt quantities as one of the users configured in SAP Business One.
 
-<details>
-<summary>Click here to expand</summary>
-<div>
     ![Select Employee](./media/production/enable-select-employee.png)
-</div>
-</details>
 
-**Do not save every scan to the Pick Receipt** - possibility to remain on the Quantity screen and scan labels one by one without updating the Pick Receipt every time, but only after pressing Save.
+**Do not save every scan to the Pick Receipt** -  Allows scanning multiple labels on the Quantity screen without updating the Pick Receipt each time. Updates are made only when the "Save" button is pressed.
 
 ## PF Pick Order tab
 
 ![Pick Order](./media/custom-configuration-after-scanning.webp)
 
-**After scanning the item, auto return to** – choose to go either to the Document Details or stay on the Quantity form after scanning an Item barcode
+**After scanning the item, auto return to** – Defines whether the application navigates to Document Details or remains on the Quantity Form after scanning an item barcode.
 
-**PF Pick Order PopUp Timer checkpoint** – None, Select the base document, Select Item on the list, Pick quantity to the first line, Save Document. It is possibile to set pop-up timer checkpoint for one of the points.
+**PF Pick Order PopUp Timer checkpoint** – Configures a specific checkpoint, such as selecting the base document, picking an item, or saving the document, with options like None, Select Base Document, or Save Document.
 
-**Copy available quantities to the Quantity box in Pick Order** – copies available quantity to the quantity box.
+**Copy available quantities to the Quantity box in Pick Order** – Automatically fills the quantity box with the available quantity during the Pick Order process.
 
-**Enable Substitutes Items in Pick Order** – the option allows use in Pick Order. The option can be deactivated when not needed.
+**Enable Substitutes Items in Pick Order** – Allows the use of substitute items in Pick Orders; can be disabled if not needed.
 
-**Block creation of new Pick Orders** - block adding items from different Manufacturing Orders - removes button from the Add tooltip.
-    <details>
-    <summary>Click here to expand</summary>
-    <div>
+**Block creation of new Pick Orders** - Prevents adding items from unrelated Manufacturing Orders and removes the "Add" button from the tooltip.
+
     ![Pick Order](./media/production/items-to-pick-order.png)
-    </div>
-    </details>
 
-**Scan DocNum on Base Document** – on selecting a Pick Order or Manufacturing Order window; scanning will work by DocNum instead of DocEntry.
+**Scan DocNum on Base Document** – Enables scanning by DocNum instead of DocEntry when working in the Pick Order or Manufacturing Order window.
 
-**Do not create a Goods Issue at the end of the transaction** – when this option is checked, a Goods Issue document is not created at the end of the transaction. The user then can confirm and create it from ProcessForce → Pick Order level.
+**Do not create a Goods Issue at the end of the transaction** – Prevents automatic creation of a Goods Issue document at the end of the transaction, allowing it to be created manually via ProcessForce → Pick Order.
 
 ## SAP Production Receipt tab
 
 ![Custom Configuration](./media/custom-configuration-production-sap-production-receipt.webp)
 
-**After picking, auto return to:** – defines to which form the application goes back after confirmation of receipt on a document line. The available options: Document Details and Item Details
+**After picking, auto return to:** – Defines the form the application navigates back to after confirming receipt on a document line, with options like Document Details or Item Details.
 
-**Force manual quantity confirmation** – checking this checkbox force manual quantity confirmation – scanned quantity will be added to a quantity field but must be confirmed by pressing the–screen button. If the checkbox is not checked, the scanned quantity is automatically approved.
+**Force manual quantity confirmation** – Requires users to manually confirm scanned quantities by pressing a button; otherwise, scanned quantities are auto-approved if unchecked.
 
-**Enable adding Items with an empty Bin Code field** – this option allows you to add items from bins without indicating a specific location.
+**Enable adding Items with an empty Bin Code field** – Enables the addition of items from bins without specifying a location.
 
-**Scan DocNum on the Base Document selection window** – checking this option allows you to scan a document by Docnum, not by DocEntry, if a base document was chosen.
+**Scan DocNum on the Base Document selection window** – Allows documents to be scanned using DocNum instead of DocEntry when selecting a base document.
 
-**Forbid receipt of greater quantities than defined on the Production Order.** When the option is checked, receiving a quantity larger than it is on the related Manufacturing Order is impossible.
+**Forbid receipt of greater quantities than defined on the Production Order.** - Prevents receiving quantities greater than those specified in the corresponding Manufacturing Order.
 
-**Permit receipt of each Batch only once** – this option allows you to receive a specific batch number only once.
+**Permit receipt of each Batch only once** – This option Ensures that each batch number is receipted only once.
 
-**Keep the selected Bin Location after adding an Item** – self-explanatory.
+**Keep the selected Bin Location after adding an Item** – Keeps the previously selected bin location intact for subsequent entries.
 
 ## SAP Production Issue tab
 
 ![SAP Production Issue](./media/cc-sap-production-issue.webp)
 
-**Skip Warehouse selection** – the warehouse selection screen is not displayed.
+**Skip Warehouse selection** – Eliminates the display of the warehouse selection screen for a streamlined process.
 
-**Forbid ordering greater quantities than on Order** – when the option is checked, it is impossible to set an amount larger than it is on the related Manufacturing Order.
+**Forbid ordering greater quantities than on Order** – When this option is checked, it ensures that the quantity issued does not exceed the amount specified in the related Manufacturing Order.
 
-**Enable temporary data store for SAP Production Issue** – enables to go back to create a document that was not saved yet.
+**Enable temporary data store for SAP Production Issue** – Allows users to save incomplete documents and return to them later for completion.
 
-**Scan DocNum on the Base Document selection window** – checking this option allows you to scan a document by Docnum, not by DocEntry, if a base document was chosen.
+**Scan DocNum on the Base Document selection window** – Enables scanning of documents using DocNum instead of DocEntry when a base document is selected.
+
+---
+Through thoughtful configuration, companies can optimize resource management and achieve greater control over their production and inventory operations, leading to improved productivity and decision-making.

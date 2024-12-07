@@ -54,7 +54,7 @@ sidebar_position: 9
 
 **Open Telemetry Endpoint URL** – an address to which diagnostic data is sent from the Android application.
 
-**SAP Batch/Serial generators SP** - The administrator can define the template for batches/serials for database without ProcessForce
+**SAP Batch/Serial generators SP** - Allows the administrator to define a template for batches or serials in the database without using ProcessForce.
 
     ![SAP Batch](./media/common/sap-batch.png)
 
