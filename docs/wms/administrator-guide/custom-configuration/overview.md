@@ -33,3 +33,6 @@ Custom Configuration allows adjusting each transaction's workflow to specific ne
     ![Custom Configuration](./media/custom-configuration-main-form.png)
 
 Click [here](../custom-configuration/custom-configuration-functions/grpo.md) to check a description of each option.
+
+---
+CompuTec WMS's Custom Configuration tool provides users with the flexibility to tailor each transaction's workflow to meet specific business requirements effectively. By leveraging the intuitive interface accessible through the CompuTec Service Manager, businesses can apply precise configurations at the database level while ensuring security through SAP Business One superuser credentials.

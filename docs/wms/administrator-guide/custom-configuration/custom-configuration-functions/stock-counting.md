@@ -4,28 +4,31 @@ sidebar_position: 12
 
 # Stock Counting
 
-![Stock Counting](./media/cc-stock-counting.webp)
-
 The new Stock Counting is created based on an empty document created in CompuTec WMS. Next, it is sent to SAP Business One. In the old Stock Counting, an SAP Business One user created a document based on which a list was displayed in CompuTec WMS. After enabling the old Stock Counting, you can use all of the checkboxes from this view (both for the old and new option versions).
 
 ---
 
-**After saving, auto return to:** – choose where to return after saving Item Details on a document; you can select the Document Details or the Item Details.
+![Stock Counting](./media/cc-stock-counting.webp)
 
-**Display message after adding batches** – configure a message displayed on adding a Batch. The message can be based on an SQL query.
+**After saving, auto return to:** – Defines the form to return to after saving Item Details on a document. You can choose either the Document Details or the Item Details.
 
-**Hide In Warehouse Quantity Information** – hides information about the quantity in the warehouse, and therefore, the WMS user cannot see the system quantity.
+**Display message after adding batches** – Configures a message that will be displayed after adding a Batch. The message can be based on an SQL query.
 
-**Mark updated rows as counted during Stock Counting** – all rows added in the WMS are set as counted in the SAP.
+**Hide In Warehouse Quantity Information** – Hides the warehouse quantity information, preventing the WMS user from viewing the system quantity
 
-**Auto add SU content** – checking this checkbox allows you to add a whole Storage Unit (with its content).
+**Mark updated rows as counted during Stock Counting** – Marks all rows added in the WMS as counted in SAP.
 
-**Fill SU content during Saving to SAP** – by checking this option, all the Items in the SU are saved only after clicking the "Save to SAP" button (not during specific lines). This can speed up the counting process.
+**Auto add SU content** – Enabling this option allows you to add an entire Storage Unit (along with its contents).
+
+**Fill SU content during Saving to SAP** – When checked, all items in the Storage Unit are saved only after clicking the "Save to SAP" button, rather than during the entry of specific lines. This can help speed up the counting process.
 
 ## Old Stock Counting
 
-**Scan DocNum on the Base Document selection window** – checking this option allows you to scan a document by Docnum, not by DocEntry, if a base document was chosen.
+**Scan DocNum on the Base Document selection window** – When enabled, you can scan a document by DocNum instead of DocEntry if a base document is selected.
 
-**Force manual quantity confirmation** – after scanning required prefixes (Warehouse, Vendor, Item, Quantity, Batch number), the application forces manual confirmation of quantity (instead of confirmation after scanning a barcode with quantity)
+**Force manual quantity confirmation** – After scanning required prefixes (Warehouse, Vendor, Item, Quantity, Batch number), the application forces manual confirmation of the quantity, rather than automatically confirming it after scanning a barcode with the quantity.
 
-**Stock Counting: automatically choose Bin Location on Batch scanning** – automatically chooses Bin Location on Batch scanning (if the batch is on the only one location).
+**Stock Counting: automatically choose Bin Location on Batch scanning** – Automatically selects the Bin Location when scanning a Batch, if the batch is located in only one bin.
+
+---
+The Stock Counting functionality in SAP Business One, integrated with CompuTec WMS, offers flexibility and efficiency in managing stock verification processes. Whether using the new or old Stock Counting methods, these features enable businesses to streamline their operations by automating tasks like batch handling, bin location selection, and quantity confirmation.

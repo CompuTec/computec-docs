@@ -27,7 +27,7 @@ This guide provides an overview of recent updates to the Goods Receipt PO (GRPO)
 
 2. **Show Project Selection** – Enabling this option will display the Project Selection form before the Remarks form when creating a document that requires adding receiving items.
 
-    ![Project Selection](./media/grpo/project-selection.png)
+    ![Project Selection](./media/grpo/project-selection.webp)
 
 3. **Default Project** – If a default project is selected, you can click the right arrow icon on the Project Selection form to automatically select the default project.
 
