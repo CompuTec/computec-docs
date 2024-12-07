@@ -18,8 +18,8 @@ These forms allow users to define Resources, Properties, and Groups, that will b
 
 | Type of Resource | Has Calendar? | Visible on Gantt Chart? |    Hourly rates    | Connected with | Time Booking    | Times (Setup, Run) | Number of resources |
 | --- | --- | --- | --- | --- | --- | ---| --- |
-| Machine | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | N/A  | :heavy_check_mark: | :heavy_check_mark: | Always 1 |
-| Labor | :x: | :x: | :heavy_check_mark: | N/A | :heavy_check_mark:  | :heavy_check_mark: | Changeable |
+| Machine | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | N/A  | :heavy_check_mark: | :heavy_check_mark: | Changeable |
+| Labor | :x: | :x: | :heavy_check_mark: | N/A | :heavy_check_mark:  | :heavy_check_mark: | Always 1 |
 | Tool |  :heavy_check_mark:  | :heavy_check_mark: | :x: | Machine | :x: | :x: | Always 1 |
 |  Subcontracting  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | N/A | :heavy_check_mark: | :heavy_check_mark: | Changeable |
 
