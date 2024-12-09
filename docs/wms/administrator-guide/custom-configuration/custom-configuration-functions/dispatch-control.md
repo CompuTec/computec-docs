@@ -4,25 +4,29 @@ sidebar_position: 6
 
 # Dispatch Control
 
+The Dispatch Control feature enables enhanced management of the dispatch process by allowing the configuration of various settings that control how items and package numbers are validated, scanned, and processed. By customizing the dispatch settings, businesses can ensure smoother, more accurate transactions and better control over inventory movement.
+
+---
+
 ![Dispatch Control](./media/cc-dispatch-control.webp)
 
-**No. of Catalog numbers scans** – defines a number of scanning of Catalogue numbers, after which the application goes another step.
+**No. of Catalog numbers scans** – Defines the number of catalog number scans after which the application moves to the next step.
 
-**Extra field for scanning VDA on confirmation window** – allows defining a user-defined field.
+**Extra field for scanning VDA on confirmation window** – Allows the definition of a user-defined field for VDA scanning during the confirmation process.
 
-**Extra Field for barcode prefix** – this option allows to definition a prefix. Scanning a barcode with this prefix allows one to move to another step in the transaction.
+**Extra Field for barcode prefix** – This option allows defining a prefix. Scanning a barcode with this prefix enables the user to proceed to the next step in the transaction.
 
-**Enable Dispatch Control for Selected BPs only** – this option allows the definition of Dispatch Control only for some previously selected Business Partners.
+**Enable Dispatch Control for Selected BPs only** – This option allows the definition of Dispatch Control exclusively for the selected Business Partners.
 
-**Enable Dispatch Control for all Business Partners** – allows defining Dispatch Control for every Business Partner.
+**Enable Dispatch Control for all Business Partners** – Activates Dispatch Control for every Business Partner.
 
-**Enable DocNum scanning on the Delivery selection window** – allows scanning by document number (by content, if the checkbox is unchecked)
+**Enable DocNum scanning on the Delivery selection window** – Allows scanning by document number (when unchecked, scanning is based on content).
 
-**Check Items by quantity per package** – allows to check Items by quantity by packaging, e.g., if there are four packages, 25 pieces each, a user will not be able to scan 100 parts, but to scan 25 pieces four times.
+**Check Items by quantity per package** – Allows checking items by quantity per package. For example, if there are four packages of 25 pieces each, the user will be required to scan 25 pieces four times, not 100 pieces in one scan.
 
-**Don't check Item when Package Number Not Filled Up** – when this checkbox is checked, a row is not checked if a number of packaging is incomplete.
+**Don't check Item when Package Number Not Filled Up** – When checked, a row is not validated if the package number is incomplete.
 
-**Check Quantity** – checks quantity by scanning a barcode. Moving to another step is impossible if the correct quantity is not scanned. If a user makes a mistake, they must click the x button and start counting again. Putting the amount manually is impossible; it works only by scanning.
+**Check Quantity** – Validates the quantity by scanning a barcode. Moving to the next step is not allowed unless the correct quantity is scanned. If an error occurs, the user must click the "x" button and restart the process. Manual entry of quantity is disabled; it works only through scanning.
     <details>
     <summary> to expand</summary>
     <div>
@@ -30,11 +34,11 @@ sidebar_position: 6
     </div>
     </details>
 
-**Enable scanning by Item** – allows to scan by Item (applicable if Batches do not manage an Item)
+**Enable scanning by Item** – Allows scanning by item (applies when batches do not manage an item).
 
-**Use Oddete Scanner BarCode when scanning Business PartNumber** – allows adjusting Batch number scanning if Business Partner is using Odette standard.
+**Use Oddete Scanner BarCode when scanning Business PartNumber** – Enables adjusting batch number scanning according to the Odette standard for Business Partner part numbers.
 
-**No. of Package numbers scans** – defines several scanning of Catalog numbers, after which the application goes another step.
+**No. of Package numbers scans** – Defines the number of package number scans after which the application moves to the next step
     <details>
     <summary>Click here to expand</summary>
     <div>
@@ -42,33 +46,43 @@ sidebar_position: 6
     </div>
     </details>
 
-**Extra field for scanning Package Number on confirmation window** – allows defining a user-defined field on the final form of the transaction.
+**Extra field for scanning Package Number on confirmation window** – Allows defining a user-defined field for scanning the package number during the final form of the transaction.
 
-**Extra field for Package Number barcode prefix** – this option allows to define of a prefix
+**Extra field for Package Number barcode prefix** – This option allows defining a prefix for the package number barcode.
 
-**Enable checking Package Number for selected BP's only** – this option allows to check Package Number only for some chosen previously Business Partners
+**Enable checking Package Number for selected BP's only** – This option Allows checking the package number only for the selected Business Partners.
 
-**Verify Business Partner part numbers for the first Item in SU** – this option allows you to check U_PackageNumber and Business Partner number only for the first item in SU
+**Verify Business Partner part numbers for the first Item in SU** – This option checks the U_PackageNumber and Business Partner part number only for the first item in the Stock Unit (SU).
 
 ## Changes
 
-The old view of Dispatch Control tab. Extra field query checkbox has been removed:
+The old view of the Dispatch Control tab no longer includes the Extra Field Query checkbox.
+
     ![Dispatch Control](./media/dispatch-control/dispatch-control.png)
 
-To use the functionality, it is required to create a specific SQL query in Custom Query Manager:
+To enable this functionality, a specific SQL query needs to be created in the Custom Query Manager.
+
     ![Dispatch Control](./media/dispatch-control/dispatch-control-01.png)
 
-Click Load to choose a window to which we want to make changes.
+Click Load to select the window you want to modify.
+
     ![Dispatch Control](./media/dispatch-control/dispatch-control-02.png)
 
-On the right side there are the following sections: Required Fields, Available parameters, Filter Parameters and available CompuTec WMS fields.
+On the right side, you'll see the following sections: Required Fields, Available Parameters, Filter Parameters, and available CompuTec WMS fields.
+
     ![WMS CompuTec Fields](./media/dispatch-control/fields.png)
 
-The basic data for the change will be taken from called from SQL Query Manager.
+The basic data for the change will be retrieved from the SQL Query Manager.
+
     ![Basic Data](./media/dispatch-control/basic-data.png)
 
-In this example data from Address and TransId columns will be added to Field5 and Field6 fields respectively.
+In this example, data from the Address and TransId columns will be inserted into the Field5 and Field6 fields, respectively.
+
     ![Fields](./media/dispatch-control/fields-01.png)
 
-On the screenshots below you can see the CompuTec WMS window before and after the change.
+The screenshots below show the CompuTec WMS window before and after the change.
+
     ![Delivery Selection](./media/dispatch-control/delivery-selection.PNG)
+
+---
+The Dispatch Control feature offers businesses a flexible and streamlined way to manage the dispatch process, allowing for customizations that ensure accurate item tracking and package validation. The updates to the Dispatch Control tab simplify the process, making it easier to implement changes and optimize dispatch management.
