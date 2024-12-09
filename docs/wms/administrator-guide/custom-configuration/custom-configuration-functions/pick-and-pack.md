@@ -4,13 +4,17 @@ sidebar_position: 5
 
 # Pick and Pack
 
+This guide highlights the key features and updates in the Pick and Pack workflow from version 2.10.21.4 to 2.10.22.1, showcasing changes in configuration options, new settings, and how to customize the workflow for your needs.
+
+---
+
 ## Old Pick and Pack
 
-For version **2.10.21.4**, the custom configuration for Pick and Pack would look like the screenshot attached below:
+For version **2.10.21.4**, the custom configuration for Pick and Pack would appear as shown in the screenshot below:
 
 ![Pick and Pack](./media/cc-pick-and-pack.webp)
 
-**Pick and Pack Workflow** - you can choose the order of data entering. Available options: Default Workflow, Customer-Date Workflow, Date-Customer Workflow.
+**Pick and Pack Workflow** - You can select the sequence in which data is entered. Available options include: Default Workflow, Customer-Date Workflow, and Date-Customer Workflow.
     <details>
     <summary>Click here to expand</summary>
     <div>
@@ -28,7 +32,7 @@ For version **2.10.21.4**, the custom configuration for Pick and Pack would look
     </div>
     </details>
 
-**Update all picked content on transaction completion** – all chosen during transaction information is saved on saving a transaction (the data selected from during the transaction is not held until clicking the save button at the end of the transaction).
+**Update all picked content on transaction completion** – All selections made during the transaction are saved when the transaction is saved; the data selected during the transaction is not retained until the save button is clicked at the end.
     <details>
     <summary>Click here to expand</summary>
     <div>
@@ -42,21 +46,21 @@ For version **2.10.21.4**, the custom configuration for Pick and Pack would look
     </div>
     </details>
 
-**Enable adding Item Details when Warehouse has Bin Locations** – allows adding Item details when in a Warehouse receipt, Bin locations are defined and quantities are not allocated.
+**Enable adding Item Details when Warehouse has Bin Locations** – This option enables the addition of item details during a warehouse receipt when bin locations are defined, and quantities have not been allocated.
 
-**Pick Items only with scanning** – allows picking an Item only by scanning a barcode (cannot choose an Item manually).
+**Pick Items only with scanning** – This setting restricts item picking to barcode scanning only, preventing manual item selection.
 
-**Force Manual quantity confirmation** – with this option checked, it is required to manually confirm previously set up quantity (scanning a barcode does not confirm it automatically).
+**Force Manual quantity confirmation** – When enabled, this option requires manual confirmation of the quantity, even when a barcode is scanned (automated confirmation is disabled).
 
-**Enable over-picking to base open document quantity** – checking the option allows you to set quantity higher than on the related base document (leaving this checkbox unchecked blocks it).
+**Enable over-picking to base open document quantity** – By enabling this option, you can set a picking quantity higher than that specified in the related base document. If unchecked, it prevents over-picking.
 
 ## New Pick and Pack
 
-From version **2.10.22.1**, the custom configuration for Pick and Pack would look like the screenshot attached below:
+Starting from version **2.10.22.1**, the custom configuration for Pick and Pack will appear as shown in the screenshot below:
 
     ![Pick and Pack](./media/pick-and-pack/cc-pick-and-pack.png)
 
-Pick and Pack Workflow - you can choose the order of data entering. Available options: Default Workflow, Customer-Date Workflow, Date-Customer Workflow.
+**Pick and Pack Workflow** - You can select the sequence in which data is entered. Available options include: Default Workflow, Customer-Date Workflow, and Date-Customer Workflow.
     <details>
     <summary>Click here to expand</summary>
     <div>
@@ -74,7 +78,7 @@ Pick and Pack Workflow - you can choose the order of data entering. Available op
     </div>
     </details>
 
-**After scanning item, auto return to: Storage Info, Quantity and Document Details** - This option allows you to change the window to which the application will go after setting and confirming the quantity for an Item.
+**After scanning item, auto return to: Storage Info, Quantity and Document Details** - This option allows you to change the window to which the application will return to after setting and confirming the quantity for an Item.
 
     <details>
     <summary>Click here to expand</summary>
@@ -93,11 +97,11 @@ Pick and Pack Workflow - you can choose the order of data entering. Available op
     </div>
     </details>
 
-**Hide SU** - Options related to the creation or adding of a Storage Unit (SU) are not visible.
+**Hide SU** - This option hides all settings related to creating or adding a Storage Unit (SU).
 
-**Pick Items only with scanning** – allows picking an Item only by scanning a barcode (cannot choose an Item manually).
+**Pick Items only with scanning** – This option restricts item picking to barcode scanning, preventing manual item selection.
 
-**Force Manual quantity confirmation** – with this option checked, it is required to manually confirm previously set up quantity (scanning a barcode does not confirm it automatically).
+**Force Manual quantity confirmation** – When enabled, this option requires manual confirmation of the quantity set, even if a barcode is scanned (automatic confirmation is disabled).
 
 ## Changes
 
@@ -105,16 +109,19 @@ Old view of Pick and Pack tab:
 
     ![Pick and Pack](./media/pick-and-pack/pick-and-pack.png)
 
-Extra field in Pick and Pack query option has been removed.
+the additional field in Pick and Pack query option has been removed.
 
-It is possible to use this functionality by creating a specific SQL query in Custom Query Manager > Pick and Pack option:
+You can access this functionality by creating a custom SQL query in the Custom Query Manager under the Pick and Pack option.
 
     ![Pick and Pack](./media/pick-and-pack/pick-and-pack-01.png)
 
-In this example it is Customer List For Date Pick List:
+This example shows the Customer List for the Date Pick List:
 
     ![Pick and Pack](./media/pick-and-pack/date-pick-list.png)
 
-In this example four fields are available and by default two of them are set up:
+In this example, four fields are available, with two of them configured by default.
 
     ![Fields](./media/pick-and-pack/fields.png)
+
+---
+The Pick and Pack feature has evolved to provide greater control over the picking and packing process. The updates in version 2.10.22.1 offer more flexibility, allowing users to streamline their workflows, customize data entry sequences, and enhance the scanning process. By leveraging the new configurations and SQL query options, users can tailor the system to their specific needs, improving efficiency and reducing manual errors. Whether you're transitioning from an older version or implementing these features for the first time, the Pick and Pack updates are designed to optimize your warehouse operations.
