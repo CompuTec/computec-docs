@@ -4,9 +4,7 @@ sidebar_position: 3
 
 # UDF Manager
 
-On this page, you can find information on UDF Manager, a tool that allows you to choose which User Defined Field (UDF) will be displayed on the document line in CompuTec WMS.
-
-UDFs are custom fields that can be added to document types to add information to a document.
+This guide provides an overview of the UDF (User-Defined Field) Manager tool in CompuTec WMS. The UDF Manager enables users to select which custom fields will be displayed at the document line level, providing flexibility and customization for specific business needs. UDFs are valuable for tailoring documents with additional information critical to your operations.
 
 ---
 
@@ -14,27 +12,31 @@ UDFs are custom fields that can be added to document types to add information to
 
 ### Prerequisites
 
-It would be best to first define UDFs in a database to use during CompuTec WMS transactions. You can check how to add UDFs to document type and manage it [here](/docs/processforce/administrator-guide/udfs).
+Before utilizing UDF Manager in CompuTec WMS, UDFs must be defined in the database. For guidance on adding and managing UDFs, refer to the [Administrator's Guide](/docs/processforce/administrator-guide/udfs).
 
 ### Setting up
 
-Go to [Custom Configuration](../../../custom-configuration/overview.md) options > Manager tab, check the Enable UDF Manager check box, and choose a document type from the drop-down list for which UDFs will be added:
+To enable and configure the UDF Manager:
 
-![Custom Configuration](./media/custom-config-option.webp)
+1. Go to [Custom Configuration](../../../custom-configuration/overview.md) options > Manager tab
+2. check the Enable UDF Manager check box
+3. Select a document type from the drop-down list for which UDFs will be added:
 
-You can set up values for a header (e.g., Goods Receipt PO Document option) or a document line (e.g., Goods Receipt PO Line).
+    ![Custom Configuration](./media/custom-config-option.webp)
 
-After choosing a required document type, click load (doing this requires putting in SAP Business One database credentials). Now, a list of UDFs defined for the chosen kind of document is displayed:
+4. You can configure values either for a header (e.g., Goods Receipt PO Document) or a document line (e.g., Goods Receipt PO Line).
 
-![UDF Manager Options](./media/udf-manager-options.webp)
+5. Once you've selected the desired document type, click Load. This action requires entering your SAP Business One database credentials. A list of UDFs defined for the selected document type will then be displayed.
+
+    ![UDF Manager Options](./media/udf-manager-options.webp)
 
 There are Name and Description fields along with three check boxes; when checked:
 
-- **Display**: a UDF is displayed in the application
-- **Required**: a UDF is required to be filled before moving through the workflow.
-- **Automatic**: a UDF automatically fills the application with a query result. Click Load next to a specific line to go to the query form:
+- **Display**: shows the UDF in the application
+- **Required**: UDF is required to be filled before moving through the workflow.
+- **Automatic**: UDF automatically fills the application with a query result. Click Load next to a specific line to go to the query form:
 
-![Query](./media/query.webp)
+    ![Query](./media/query.webp)
 
 Now, the chosen UDFs will be displayed on lists during transactions.
 
@@ -98,7 +100,7 @@ The field is available by clicking a UDF icon to set up the details of an item c
 
 ## Base Document UDFs
 
-UDFs from a base document are available on the following transactions:
+UDFs from base documents are available on the following transactions:
 
 - Goods Receipt PO From **Purchase Order**
 - Goods Receipt PO From **A/P Invoice**
@@ -145,3 +147,6 @@ In Custom Configuration in the Manager tab, check "Enable UDF Manager," and then
 ## SU UDFs
 
 Click [here](../../../../user-guide/storage-units/su-udfs.md) to find out more about SU UDFs.
+
+---
+The UDF Manager is a powerful tool in CompuTec WMS, allowing users to tailor documents and workflows to their unique requirements. By defining, displaying, and automating UDFs, businesses can enhance data accuracy and streamline their processes. Use this guide to make the most of the UDF Manager and customize your WMS experience efficiently.
