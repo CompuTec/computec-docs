@@ -35,3 +35,6 @@ When items are transferred to a warehouse post-receipt, the transfer date is con
 :::info
 For FEFO-managed items, if there is no 'ExpDate' set for a Batch using this queue type, the system defaults to recognizing it as the earliest date during location-based searches in this queue type. This ensures proper sequence management based on available expiry dates.
 :::
+
+---
+Understanding and applying the right queue management strategy is vital to streamline inventory operations and minimize waste. Whether your items are managed by Batch, Serial Number, or neither, adopting FIFO, FEFO, or FMFO based on your operational goals ensures efficiency and compliance.
