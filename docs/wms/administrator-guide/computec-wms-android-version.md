@@ -4,23 +4,22 @@ sidebar_position: 12
 
 # CompuTec WMS Android version
 
-Here, you can find a manual for installing and configuring the Android version of CompuTec WMS.
+The CompuTec WMS Android version is a robust solution designed to enhance warehouse operations through seamless integration with Android devices. This guide provides step-by-step instructions for installing, configuring, and utilizing the Android client to streamline warehouse management processes. Whether you're a first-time user or upgrading to the latest version, this manual ensures a smooth setup and operational experience.
 
 ---
 
 ## Requirements
 
-- A device with the Android system, minimally supported version: Android 6 (API 23).
-- The device has access to the network, in which a CompuTec WMS Server is installed. To check the connection between the device and the server, open any browser on the device and enter the following address:
+To run CompuTec WMS on Android, ensure the following prerequisites are met:
 
-    `http://[server address]:31002/api/Test/Get`
-
-    Instead of this element: [server address], enter a proper CompuTec WMS Server address.
+- **Android Device Compatibility** - Requires Android 6 (API 23) or higher.
+- Network Access: The device must connect to the network hosting the CompuTec WMS Server. Test connectivity by entering `http://[server address]:31002/api/Test/Get` in a browser and verifying the response. Replace [server address] with the actual address of the CompuTec WMS Server.
 
     ![Check](./media/check-server-connection.webp)
 
-   In the image above, you can see an appropriate response. If you receive any other response, please contact your network administrator to request adjustments to the server settings, network settings, or firewall settings to ensure proper access.
-- the devices must have enabled an option to install .APK files from external sources. This setting is usually available as a single setting in the security settings or as permission to install applications from external sources for a specific application, e.g., file managers or a browser.
+The image above shows the expected response. If you encounter a different response, consult your network administrator to adjust server settings, network configurations, or firewall rules to enable proper access.
+
+- **App Installation Permissions**: Enable the installation of APK files from external sources in the device’s security settings. This option is typically found as a single setting in the security settings or as a permission to allow specific applications, such as file managers or browsers, to install applications from external sources.
   
     An example permission setting:
 
@@ -28,11 +27,7 @@ Here, you can find a manual for installing and configuring the Android version o
 
 ### Tested Devices
 
-:::note
-    This is not a complete list of supported devices. Any device that meets the requirements outlined in the previous section should support CompuTec WMS for Android. However, the following devices have been tested and confirmed to work properly with the CompuTec WMS Client.
-:::
-
-The Android version of CompuTec WMS has been tested on the following:
+>**Note**: This list is not exhaustive; any device meeting the requirements outlined above should support CompuTec WMS for Android. However, the following devices have been tested and verified to work seamlessly with the CompuTec WMS Client:
 
 - Samsung A202F/DS (barcode scanning using the device's camera)
 - Samsung SM-J415x, Samsung Note 20
@@ -41,94 +36,87 @@ The Android version of CompuTec WMS has been tested on the following:
 
 ## Download and Installation
 
-Download the installation file from [here](../releases/download.md). Unpack it and upload it to the device.
+Download the installation file from [here](../releases/download.md). then extract and transfer it to the device.
 
-Go to the download folder using a file manager app and click it. The installation starts if all the related permissions are set up correctly.
+Using a file manager app, navigate to the download folder and tap the file to begin the installation, provided all necessary permissions are properly configured.
 
 :::note
-    Installing an application from the default download folder is impossible on some devices. In a case like this, please move the installation file to another folder on the device.
+    On some devices, installing an application from the default download folder may not be possible. If this occurs, try moving the installation file to a different folder on the device.
 :::
 
 ## Running and Configuration
 
-After the first run of the installation, it is required to configure it. Start it by clicking the log icon:
+- After the initial installation, configuration is required. Begin by tapping the log icon.
 
-![Main Screen](./media/wms-androin-main-screen.webp)
+    ![Main Screen](./media/wms-androin-main-screen.webp)
 
-Type in a proper CompuTec WMS Server name and save the changes:
+- Enter the correct CompuTec WMS Server name and save the changes
 
-![Server Address Save](./media/server-address-save.webp)
+    ![Server Address Save](./media/server-address-save.webp)
 
-Next, enter the CompuTec WMS user credentials and click the Company Name field. Now, you can see the list of databases. Please choose one of them by clicking it. Now, you can log in:
+- Next, input your CompuTec WMS user credentials and tap the Company Name field. A list of databases will appear; select one by tapping it. You can then log in.
 
-![Choose Database](./media/choose-database.webp)
-
-![Database List](./media/database-list.webp)
-
-![Log In](./media/log-in.webp)
+    ![Choose Database](./media/choose-database.webp) ![Database List](./media/database-list.webp) ![Log In](./media/log-in.webp)
 
 ## Overwriting a Client Version
 
-There is an option for manual change for the client version to simplify the testing procedure. Thank this; you can avoid the problem with a mismatch of different CompuTec server and client versions, which might be problematic when testing the Android client along with different CompuTec server versions.
+A manual option is available to change the client version, making the testing process easier. This helps prevent issues caused by mismatched versions between the CompuTec server and client, which can arise when testing the Android client with different CompuTec server versions.
 
-The version number field is available in the CompuTec WMS client information field. To reach it and change the number, you have to click the information icon in the General tab, double-click the client number, change the number, and click the Save button.
+To modify the version number, go to the CompuTec WMS client information section. Click the information icon in the General tab, double-click the client number, update the version, and click the Save button.
 
-![General Tab](./media/general-tab-info.webp)
-
-![Version](./media/about-ct-client-1.webp)
-
-![Save](./media/about-ct-client-2.webp)
+![General Tab](./media/android-version/general-tab-info.webp) ![Version](./media/android-version/about-ct-client-1.webp) ![Save](./media/android-version/about-ct-client-2.webp)
 
 ## Connection Testing
 
-CompuTec WMS client in Android version, contains tools for testing connection (and its quality) to a server. You can find the tools in the General tab, the Connection test button:
+The Android version of the CompuTec WMS client includes tools to test the connection and its quality to the server. These tools can be found in the General tab, under the Connection Test button.
 
-![Connection Button](./media/connection-button.webp)
+![Connection Button](./media/android-version/connection-button.webp)
 
 Here, you can use one of three tests:
 
 - **Server**
 
-    Choose this option and click Test to test the connection to the CompuTec WMS server. You would get a message if the attempt to connect was successful.
+    Select this option and click Test to check the connection to the CompuTec WMS server. You will receive a message indicating whether the connection attempt was successful.
 
-    ![Test Server](./media/test-server.webp)
+    ![Test Server](./media/android-version/test-server.webp)
 - **Ping**
 
-    Choose this option and click Test to the latency of the connection. You will get a message with the value of the latency. Click Stop to finish the test.
+    Choose this option and click Test to measure the latency of the connection. A message will display the latency value. Click Stop to end the test.
 
-    ![Enabled](./media/test-ping.webp)
+    ![Enabled](./media/android-version/test-ping.webp)
 - **Download**
 
-    Choose this option and click Start to check the Download speed. You will get a message with an approximate download speed. The test stops after some time by itself. You can also click Stop to stop the test.
+    Select this option and click Start to test the download speed. You will receive an approximate download speed message. The test will automatically stop after a short period, or you can click Stop to end the test.
 
-    ![Download Test](./media/test-download.webp)
+    ![Download Test](./media/android-version/test-download.webp)
 
 ## Log Files
 
-There is no direct access to the CompuTec WMS log files directory on Android devices. You can access the log files through the Logs tab.
+Direct access to the CompuTec WMS log files directory is not available on Android devices. However, you can view the log files through the Logs tab.
 
-![Logs](./media/logs-tab.webp)
+![Logs](./media/android-version/logs-tab.webp)
 
-**Share log** – use this option to send a highlighted log file in a text message or save it as a file.
+**Share log** – Use this option to send the selected log file via text message or save it as a file.
 
-**Send to server** – this option sends a highlighted log file to a related server. The default location is c:\programdata\CompuTec\CompuTec WMS\Server\Logs\ClientLogs\XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX.
+**Send to server** – This option allows you to send the selected log file to the associated server. The default location for the server is: c:\programdata\CompuTec\CompuTec WMS\Server\Logs\ClientLogs\XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX.
 
-This section: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX is a device identification number.
+This section XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX refers to the device's unique identification number.
 
 ## Configure Scanning on Android Handheld Decoders
 
-To properly handle scanning barcodes, you must enable **Intent Output** in your device's Scanner options. Then, you must set **Intent Action** and **Intent Extra key Data** (if available).
+To enable proper barcode scanning functionality, you need to activate **Intent Output** in the scanner settings of your device. Following this, configure the **Intent Action** and **Intent Extra Key Data**(if available).
 
-In Intent action set: **barcodescanner.RECVR** - this is an action under which CompuTec WMS receives data from the scanner.
+Set the Intent Action to: **barcodescanner.RECVR** – This action allows CompuTec WMS to receive data from the scanner.
 
-Under Intent Extra key Data set: **com.motorolasolutions.emdk.datawedge.data_string** - this is the default key that CompuTec WMS uses to extract barcodes from Intent data.
+For the Intent Extra Key Data, set it to: **com.motorolasolutions.emdk.datawedge.data_string** – This is the default key used by CompuTec WMS to extract barcode data from the Intent.
 
-![Scanner](./media/android-scanner-01.webp)
+![Scanner](./media/android-scanner-01.webp) ![Scanner](./media/android-scanner-02.webp)
 
-![Scanner](./media/android-scanner-02.webp)
+On certain Zebra devices, such as the MC330K, these settings are automatically configured because CompuTec WMS creates a DataWedge profile.
 
-In some Zebra devices, like MC330K, you don’t need to set these options because CompuTec WMS creates a DataWedge profile and sets this automatically.
+If your device does not provide an option to define the Intent Data key, refer to your device's documentation to identify the key used for sending barcode data. Once identified, enter this key in the CompuTec WMS Scanner settings under **Intent data string**. If you're unable to locate the key, you can enable logging in the CompuTec WMS scanner settings after activating the Intent action. This will allow you to check the log files for the correct barcode data key being sent to WMS.
 
-If your device does not have options to define the Intent Data key, you can check what key barcode data are sent in your device documentation. Then, define this key in CompuTec WMS Scanner options under the **Intent data string**. If you cannot find it, you can enable logging scanner data in the CompuTec WMS scanner options after enabling the Intent action and check the log files for key barcode data sent to WMS.
+![Scanner](./media/android-version/android-scanner-03.webp)
 
-![Scanner](./media/android-scanner-03.webp)
+---
+The CompuTec WMS Android version offers a powerful solution for warehouse management, providing users with an intuitive interface and seamless integration with Android devices. By following the detailed installation, configuration, and testing steps outlined in this guide, users can optimize their warehouse operations, ensuring efficient communication with the CompuTec WMS Server and accurate barcode scanning.
