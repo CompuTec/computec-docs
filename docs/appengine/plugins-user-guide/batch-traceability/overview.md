@@ -86,7 +86,9 @@ Select button ![Trace Button](./media/overview/trace-button.png) and you will be
 The Batch Trace visualization form displays the composition of a specific item by tracing backward through each batch involved in its production process, all the way to the selected batch.
 
 ![Batch Trace visualization form](./media/overview/going-backward-and-forward.png)
+
 You can also select a batch and trace forward to see where the items from that specific batch were used. To do this, hold Shift and left-click on the desired batch.
+
 ![Going Backward and Forward](./media/overview/going-backward-and-forward-01.png)
 
 You can also track your trace history from the list at any point, allowing you to switch between different batches and views, including Overview, Trace, and Action.

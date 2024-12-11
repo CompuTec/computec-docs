@@ -31,7 +31,7 @@ API usage examples in Postman:
 
         - Create an empty document by calling the end point
         /ProcessForce/CreatePickOrderForProductionIssue and /ProcessForce/CreatePickReceiptForProductionReceipt respectively using method "POST"
-        - Update the created document with necessary details using patch "calling the end point /ProcessForce/PickOrder(DocEntry) or /ProcessForce/PickReceipt(DocEntry)"
+        - Update the created document with necessary details using patch calling the end point /ProcessForce/PickOrder(DocEntry) or /ProcessForce/PickReceipt(DocEntry)
 
 - Create pick order for operation requires user to set operation details while creating document using the below request template
 

@@ -54,15 +54,13 @@ To see details of any particular Plugin you can simply click on is name or speci
 
 7. When given Plugin is added to AppEngine there are three additional tabs displayed in Plugin Details. These are Companies, A Navigate to Installation Tabs. You should now see the following tabs: Companies, AE Instances and Installation History.
 
-    ![Installation Tabs](./media/plugins/plugins-09.png)
+    ![Installation Tabs](./media/plugins/plugins-09.webp)
 
 8. Click on the "Companies" tab. Select "Assigning to Company". Choose the company for which the installation will be performed and click "Accept".
 
-    ![Companies](./media/plugins/plugins-10.png)
+    ![Companies](./media/plugins/plugins-co.webp)
 
 9. Select AppEngine Instance for Installation.
-
-    ![AppEngine Instance](./media/plugins/plugins-10.webp)
 
 10. The installation item details will be displayed. Here you can see what all required plugins that will be performed during installation and activation. Up arrows under AppEngines means Activation and down arrows Deactivation. Up arrows in last column indicates installation of given version on selected company and down arrows indicates removal. If some additional companies will be affected by installation there you can see them in Installation Companies displayed with warning icon. You can see details by clicking on such company and tur on installation on this company by switching "Install on this company" to "Yes"
 
