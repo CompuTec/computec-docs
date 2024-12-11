@@ -4,31 +4,41 @@ sidebar_position: 2
 
 # Running CompuTec WMS through Remote Desktop Application for Android
 
+Efficient warehouse management often requires seamless integration between software and hardware tools. This guide demonstrates how to run CompuTec WMS on an Android device using a remote desktop application, with additional configuration steps to ensure smooth barcode scanning via DataWedge for Zebra devices. By following this tutorial, you can streamline your warehouse operations, ensuring accurate and real-time data transfer.
+
 ## Remote Desktop App installation
 
-First, install a remote desktop application (We recommend using Microsoft Remote Desktop, which is used in this tutorial, but it is possible to use other applications of this kind).
+To access CompuTec WMS remotely, a reliable remote desktop application is essential. This guide uses Microsoft Remote Desktop as an example.
 
-If the device has a default Google Play store application installed, download and install the remote desktop application using Google Play: [download](https://play.google.com/store/apps/details?id=com.microsoft.rdc.android).
+**Installing via Google Play Store**
 
-If the device does not have the Google Play store installed, download it manually and install it. To do this, click this link. Then, put this link on the website: [https://play.google.com/store/apps/details?id=com.microsoft.rdc.android](https://play.google.com/store/apps/details?id=com.microsoft.rdc.android), generate a file, and download the APK file.
+1. Open the Google Play Store on your device.
+2. Download and install the Microsoft Remote Desktop app: [download](https://play.google.com/store/apps/details?id=com.microsoft.rdc.android).
 
-![Download](./media/apk-download-click.webp)
+**Manual Installation via APK File**
 
-![Download](./media/apk-download-click-2.webp)
+If your device does not support the Google Play Store, follow these steps to install the app manually:
 
-Next, connect the device via USB and copy the APK file to the chosen folder (ensure the device's USB connection option is set to file transfer: Settings → Connected Device → USB → Transfer File).
+1. Open this link: [https://play.google.com/store/apps/details?id=com.microsoft.rdc.android](https://play.google.com/store/apps/details?id=com.microsoft.rdc.android).
+2. Use the website to generate and download the APK file.
 
-![File](./media/apk-file.webp)
+    ![Download](./media/apk-download-click.webp)
 
-Next, install the app. Go to Menu → Files and find the folder with the APK file.
+    ![Download](./media/apk-download-click-2.webp)
 
-Next, run the application:
+3. Connect your device to a computer via USB. Ensure the USB connection is set to "File Transfer" by navigating to Settings → Connected Device → USB → Transfer File.
 
-![RD Client](./media/rd-client.webp)
+    ![File](./media/apk-file.webp)
+
+4. Install the app. Navigate to Menu → Files and locate the folder with the APK file.
+
+5. Run the application:
+
+    ![RD Client](./media/rd-client.webp)
 
 ## Remote Desktop App Configuration
 
-Now, it is required to set up a connection to the remote desktop. Click the + icon and set up the link. Next, click the added desktop and log in to the remote server.
+To establish a connection to the remote desktop, click the "+" icon to create a new link. Once configured, select the added desktop and log in to the remote server.
 
 ![RD](./media/rd-client-2.webp)
 
@@ -42,54 +52,60 @@ This section lets you check how to configure DataWedge for Zebra devices. It is 
 
 In the default configuration, CompuTec supports prefixes as CTRL + B and suffixes as CTRL + C.
 
-Unfortunately, Zebra devices do not pass CTRL + B correctly. Due to it, in CompuTec WMS 2.9.7_R1 and 2.10.7_R1, the option to assign prefixes and suffixes to a specific CompuTEc WMS client was added.
+However, Zebra devices may not process CTRL + B correctly. To resolve this, CompuTec WMS versions 2.9.7_R1 and 2.10.7_R1 introduced the ability to customize prefixes and suffixes for individual clients.
 [http://www.asciitable.com/](http://www.asciitable.com/) We use the DEC column.
 
-Go to the device, the main menu. Open the DataWedge application and set it up in accordance with the screenshots below,
+**Steps to Configure DataWedge**
 
-![Data Wedge](./media/data-wedge-1.webp)
+1. **Access DataWedge** - Open the DataWedge application from the device's main menu, and set it up in accordance with the screenshots below,
 
-Go to the Keystroke output and click Advanced data formatting.
+    ![Data Wedge](./media/data-wedge-1.webp)
 
-![Keystroke](./media/keystroke.webp)
+2. **Enable Keystroke Output** - Go to the Keystroke output and click Advanced data formatting.
 
-Check if the option is turned on and go to the further settings:
+    ![Keystroke](./media/keystroke.webp)
 
-![Keystroke](./media/keystroke-2.webp)
+3. **Enable and Customize Settings** - Ensure the Advanced Data Formatting option is turned on. Then, proceed to customize further settings.
 
-Click the + icon and add a new action. Choose char from the list. Do it again (to add prefixes and suffixes). Next, use the drag-and-drop method to put the lines in order, like in the screenshot below.
+    ![Keystroke](./media/keystroke-2.webp)
 
-![Keystroke](./media/keystroke-3.webp)
+4. **Add Actions for Prefixes and Suffixes**
+    - Click the "+" icon and add a new action.
+    - Choose "Char" from the list.
+    - Repeat the process to add both the prefix and suffix actions.
+    Use drag-and-drop to arrange the actions in the correct order, as shown:
 
-Click each row to set it up. It is recommended to set up 05 for prefixes and 03 for suffixes.
+        ![Keystroke](./media/keystroke-3.webp)
 
-![Prefix](./media/prefix.png)
-![Suffix](./media/suffix.jpg)
+5. Click each row to set it up. It is recommended to set up 05 for prefixes and 03 for suffixes.
 
-Close DataWedge.
+    ![Prefix](./media/prefix.png) ![Suffix](./media/suffix.jpg)
+
+6. **Save** - Once all settings are configured, save the changes and close the DataWedge application.
 
 ## CompuTec WMS Client Configuration
 
-Run the remote desktop application, log in, and run CompuTec WMS.
+1. Run the remote desktop application, to log in to the server and launch CompuTec WMS.
 
-![WMS Settings](./media/wms-settings.webp)
+    ![WMS Settings](./media/wms-settings.webp)
 
-Next, click Settings and go to the Scanner tab. Prefixes and suffixes will be set up here.
+2. Access the Settings menu and go to the Scanner tab. Configure the prefixes and suffixes as set up in DataWedge.
 
-![WMS Scanner](./media/wms-scanner.webp)
+    ![WMS Scanner](./media/wms-scanner.webp) ![WMS Mark](./media/wms-settings-mark.webp)
 
-![WMS Mark](./media/wms-settings-mark.webp)
+3. Save the changes and log in to CompuTec WMS.
 
-Save and log in to CompuTec WMS.
+    ![Main Menu](./media/wms-main-menu.webp)
 
-![Main Menu](./media/wms-main-menu.webp)
+## Testing Barcode Scanning
 
-Check if the scanner is calling out works. To do this, go to Goods Receipt PO → New Goods Receipt PO.
+1. Navigate to Goods Receipt PO → New Goods Receipt PO in CompuTec WMS.
+2. Scan any barcode (e.g., from everyday products) in the Warehouse window.
+3. the application provides a system message for an unrecognized code, confirming the scanner's functionality.
 
-Scan any barcode (e.g., from everyday products) in the Warehouse window. The application should give a system message about incorrect code. This is a required behavior as it shows that the device called out the scanner action.
+    ![WMS Warehouse](./media/wms-warehouse.webp) ![WMS Confirmation](./media/wms-confirmation.webp)
 
-![WMS Warehouse](./media/wms-warehouse.webp)
+4. Next, test it on barcodes used in your company.
 
-![WMS Confirmation](./media/wms-confirmation.webp)
-
-Next, test it on barcodes used in your company.
+---
+Following these steps ensures that CompuTec WMS is configured to work efficiently on Android devices via a remote desktop application. Proper integration with tools like DataWedge enhances barcode scanning capabilities, helping streamline warehouse operations. By setting up your system correctly, you can improve productivity, accuracy, and operational efficiency.

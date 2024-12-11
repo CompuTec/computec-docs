@@ -4,26 +4,26 @@ sidebar_position: 2
 
 # RDP Scanner PC Configuration
 
-This manual describes configuring the connection between the manual scanner and the PC. This configuration allows CompuTec WMS Client without installing it on a scanner.
+This guide explains how to configure a manual scanner and a PC for use with the CompuTec WMS Client without requiring installation of the client on the scanner. The setup employs a remote desktop (RDP) connection, ensuring seamless operation between the scanner and PC. By following this step-by-step guide, you will successfully connect a SYMBOL MC32N0 scanner running Windows CE 7.0 with a PC.
 
 ---
 
-:::note
-    In this manual, the following environment is used:
+## Requirements
 
-    - System Windows CE 7.0
-    - Scanner SYMBOL MC32N0
-:::
+In this manual, the following environment is used:
+
+- System Windows CE 7.0
+- Scanner SYMBOL MC32N0
 
 ## PC Setup
 
-### Check your IP
+### Check your IP address
 
-Press Win + R, type cmd, and click Enter:
+Press `Win + R`, type `cmd`, and click Enter:
 
 ![Command](./media/cmd.webp)
 
-Type 'ipconfig' and click Enter:
+Type `ipconfig` and click Enter:
 
 ![IP Config](./media/ipconfig.webp)
 
@@ -33,28 +33,25 @@ Write down your IPv4 Address in the format presented on the screenshot, e.g., 19
 
 ### Add WMS Client to Startup
 
-Press button Win and:
+1. Press the Win key.
+2. Search for CompuTec WMS Client.
+3. Right-click on the WMS Client icon and select Open file location (Location 1).
+4. Do not close the window
+5. Press Win+R
+6. Type shell::startup and Enter (Location 2)
+7. This is location 2
+8. Copy the WMS Client icon from Location 1 (client) to Location 2 (start up).
+9. This ensures the WMS Client will start automatically when Windows boots.
 
-- Type CompuTec WMS Client
-- Right Mouse Button (RMB) on Icon and Open file location 1
-- Do not close the window
-
-Press Win+R
-
-- Type shell::startup and Enter
-- This is location 2
-- Copy Computec WMS Client icon from location 1(client) and copy to location 2(startup)
-- WMS Client will start automatically with Windows.
-
-![RDP](./media/RDP.webp)
+    ![RDP](./media/RDP.webp)
 
 ## DataWedge Setup on Scanner
 
-You have to configure DateWedge to use WMS Client on PC with RDP.
+You need to set up DataWedge to enable the WMS Client on the PC through an RDP connection.
 
-Take your SYMBOL Scanner and click START → Settings → Control Panel → DataWedge
+On your SYMBOL scanner, navigate to: Start → Settings → Control Panel → DataWedge.
 
-Click the Running Button on YES → STATUS: Ready.
+Click the Running Button on YES → STATUS:Ready.
 
 ![Status](./media/status.png)
 
@@ -114,11 +111,11 @@ Set the User and Password of the PC.
 
 ## Finish
 
-Once the above configuration is complete, take your scanner and start RDP Connection to use CompuTec WMS Client.
+After completing the above configurations, use the scanner to establish an RDP connection with your PC. The CompuTec WMS Client should now work seamlessly, enabling efficient scanning operations.
 
 ---
 
-If you have problems with connection to System Windows Mobile 6. x, please use the following instructions:
+If you encounter issues connecting to Windows Mobile 6.x systems or require additional troubleshooting, please use the following instructions:
 
 [https://www.zebra.com/us/en/support-downloads/knowledge-articles/evm/remote-desktop-connection-troubleshooting-and-terminal-services-server-common-issues-and-fixes.html](https://www.zebra.com/us/en/support-downloads/knowledge-articles/evm/remote-desktop-connection-troubleshooting-and-terminal-services-server-common-issues-and-fixes.html)
 
@@ -127,3 +124,5 @@ If you have problems with connection to System Windows Mobile 6. x, please use t
 [https://www.zebra.com/us/en/support-downloads/software/operating-system/mc65-operating-system.html](https://www.zebra.com/us/en/support-downloads/software/operating-system/mc65-operating-system.html)
 
 [https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/mc65.html#pageandfilelist_7308](https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/mc65.html#pageandfilelist_7308)
+
+By following this guide, you are now ready to utilize your scanner with the WMS Client efficiently.
