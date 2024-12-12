@@ -192,7 +192,7 @@ Displays default printing layout set up for a specific SAP Business One user (lo
 
             ![BOM Layout](./media/task-activities/bom-layout.webp)
         4. Now, a Bill of Materials preview generated for a specific BOM, based on a default layout, is available from the PDC level > Task Tile > Bill of Materials preview icon.
-        5. It is required to input database credentials to see the BOM preview. To avoid doing it each time, you can input the credentials in the [application settings](../../administrator-guide/setting-up-the-application/overview.md).
+        5. It is required to input database credentials to see the BOM preview. To avoid doing it each time, you can input the credentials in the application settings.
     </div>
 </details>
 

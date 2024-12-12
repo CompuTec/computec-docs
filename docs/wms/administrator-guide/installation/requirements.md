@@ -120,6 +120,7 @@ If your database now has ProcessForce but was previously used without it, make s
 
 CompuTec WMS is compatible with the following database servers:
 
+- Microsoft SQL Server 2022
 - Microsoft SQL Server 2016
 - Microsoft SQL Server 2017
 - Microsoft SQL Server 2019
