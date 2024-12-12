@@ -20,26 +20,21 @@ To use the CompuTec PDC application, the following requirements must be met:
 Main Menu → Human Resources → Employee Master Data
 :::
 
-![Setting Up The Application](./media/setting-up-the-application/employee-master-data-general.webp)
+![Setting Up The Application](./media/setting-up-the-application/employee-master-data-general.png)
 
-In the Administration tab (highlighted in the image), the following fields are visible:
+- **Active Employee Checkbox** - The "Active Employee" checkbox must be checked to use the employee in CompuTec PDC.
+- **Credentials** - PDC Login and Password must be defined.
+- **Management Board** - The "Management Board" checkbox is optional; when checked, it grants access to the [Manager Board](../../user-guide/management-board.md) and [Weight Management Board](../../user-guide/customization/optional-functions/weight-scale-module/weight-management-board.md) within CompuTec PDC.
+- **PDC Form Settings Enabled** - The "PDC Form Settings Enabled" checkbox is optional; when checked, it provides access to [Form Settings](../../user-guide/customization/overview.md#form-settings) for the employee, allowing the customization of columns and their order in PDC forms. Below is an example of Form Settings for Operation Properties:
 
-- **Start Date** - The date when the employee started their employment.
-- **Status** - The current employment status of the employee (e.g., active, on leave, etc.).
-- **Termination Date** - The date the employee's employment ended, if applicable.
-- **Termination Reason** - A field to specify the reason for termination if the employee is no longer with the company.
-
-There are also options related to Name Positioning:
-
-- **Last Name, First Name** - To display the name in a specific format.
-- **Display Comma**- Option to insert a comma between the last name and first name.
-- **First Name, Last Name** - Option to reverse the order of first and last name.
-- **Display Middle Name** - Option to include the middle name in the displayed employee name.
-
-Additionally, the Personal Data Protection section is included, with options like:
-
-- **Natural Person**: To classify the employee's personal information for protection.
-- **Status** - The current data protection status of the employee's information (e.g., none, active).
+  ![Form settings](./media/setting-up-the-application/form-settings.webp)
+- **Labour Code** - Assign a Labour-type Resource (e.g., Press Operator) to track an employee’s work time. An Employee with a Labour Code can be [assigned to a Task](../../user-guide/task-activities/overview.md#adding-a-new-task).
+- **PDC Settings** - A set of individual CompuTec PDC and ProcessForce settings that can be assigned to a specific Employee or CompuTec PDC installation. Click [here](rfid.md) to learn more.
+- **PDC RFID UI** - An RFID identification code is assigned to an employee for logging in using RFID devices. Click here to learn more.
+- **PDC Barcode** - A barcode is assigned to the employee for login (if barcode scanning devices are used).
+- **Is Enabled Move to Other Resource** - This checkbox determines if the employee can move a Task to an [Alternative Resource](https://learn.computec.one/docs/processforce/user-guide/scheduling/gantt-chart/alternative-resources) during time or downtime registration on a Task.
+- **Is Technician** - A user with this checkbox checked can access and modify all unclosed Downtime documents assigned to them, including changing the Downtime Reason and closing the documents.
+- **Is DownTime Supervisor** - A user with this checkbox checked has the same privileges as a Technician but for all Downtime documents in the system. The supervisor can also reassign any Downtime document to a different Technician.
 
 ## Setting up CompuTec PDC Application
 

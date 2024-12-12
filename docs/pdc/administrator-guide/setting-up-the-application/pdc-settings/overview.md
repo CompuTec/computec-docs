@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-Here, you can find information on PDC Settings: details on what can be defined and how to assign a set of settings to a specific employee or a CompuTec PDC installation.
+This section provides comprehensive information on PDC Settings, outlining the options available for configuration and how these settings can be assigned to either specific employees or CompuTec PDC installations. Proper management of these settings ensures that the system operates according to the organization’s unique requirements, improving efficiency and user experience.
 
 ---
 
@@ -46,3 +46,6 @@ A template can be assigned to a specific Employee.
 ![Assign Settings](./media/pdc-settings/pdc-assigning-settings.webp)
 
 Click Choose from List icon to choose one of the predefined PDC Settings.
+
+---
+The ability to define and assign PDC Settings templates offers flexibility in managing employee-specific or installation-specific configurations. By understanding and utilizing the various settings and options provided in this section, administrators can optimize the application’s functionality and tailor the experience to meet specific business needs.
