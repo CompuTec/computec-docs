@@ -4,41 +4,45 @@ sidebar_position: 2
 
 # Resources View
 
-The purpose of this function is to filter tasks by multiple Resources.
+The Resources View feature allows users to filter tasks based on multiple resources. This provides a more organized and efficient way to manage and view tasks specific to different resources within the system.
 
 ---
 
 ## Requirements
 
-The option requires the use of AppEngine's MO360 plugin. Click [here](/docs/appengine/plugins-user-guide/manufacturing-order-360/plugin-installation-and-configuration) for more information about AppEngine and AppEngine plugin installation.
+To use this feature, you need the AppEngine's MO360 plugin. For more details on AppEngine and the plugin installation process, click [here](/docs/appengine/plugins-user-guide/manufacturing-order-360/plugin-installation-and-configuration).
 
-Minimal related versions:
+**Minimal related versions**:
 
 - ProcessForce: 9.30 PL14 R10 or 10.0 RL14,
 - AppEngine: 2.10.3.1, 2.93.3.1 or 2.10.5.1, 2.93.5.1,
-- MO360 - latest.
+- MO360 - latest version.
 
 ## Usage
 
-Go to AppEngine, MO360 to define a view with multiple Resources:
+To define a view with multiple resources in AppEngine MO360, follow these steps:
 
-![Main View](./media/resource-view/mo360-main-view.webp)
+1. Go to AppEngine, then open MO360 to create a new view for multiple resources:
 
-Click Add View:
+    ![Main View](./media/resource-view/mo360-main-view.webp)
 
-![MO360 Add View](./media/resource-view/mo360-add-view.webp)
+2. Click on "Add View "to create a new view.
 
-Define the view details:
+    ![MO360 Add View](./media/resource-view/mo360-add-view.webp)
 
-![View Details](./media/resource-view/view-details.webp)
+3. Define the view details.
 
-Now the view is available in the main MO360 view:
+    ![View Details](./media/resource-view/view-details.webp)
 
-![New View](./media/resource-view/new-view.webp)
+4. The new view will now appear in the main MO360 view.
 
-Open the view and choose the All option for the Resources:
+    ![New View](./media/resource-view/new-view.webp)
 
-![All Resources](./media/resource-view/all-resources.webp)
+5. Open the view and select the "All" option for resources.
 
-After defining this view, you can assign it in [PDC Settings](./overview.md).
-In this example, in CompuTec PDC, you can see only tasks for the following Resources: Rsc01, Rsc02, and Rsc03.
+    ![All Resources](./media/resource-view/all-resources.webp)
+
+After defining the view in MO360, you can assign it in the [PDC Settings](./overview.md). Once assigned, users in CompuTec PDC will only see tasks for the selected resources (e.g., Rsc01, Rsc02, and Rsc03).
+
+---
+The Resources View feature streamlines task management by allowing users to focus on specific resources. Once the view is set up and assigned, users can quickly access and manage tasks relevant to their selected resources, improving efficiency and task organization.
