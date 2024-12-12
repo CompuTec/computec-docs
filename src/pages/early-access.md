@@ -1,7 +1,7 @@
 
 ## CompuTec Early Access Program
 
-The Early Access Program is designed for partners who wish to contribute to pre-release testing of plugins and the CompuTec Framework. To apply for early access, please create a support ticket at `www.support.computec.pl` to obtain an API token for the Early Access Program.
+The Early Access Program is designed for partners who wish to contribute to pre-release testing of plugins and the CompuTec Framework. To apply for early access, please create a support ticket at [https://support.computec.pl](https://support.computec.pl) to obtain an API token for the Early Access Program.
 
 ## Prerequisites
 
