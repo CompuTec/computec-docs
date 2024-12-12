@@ -4,11 +4,11 @@ sidebar_position: 4
 
 # SAP HANA Database
 
-In some cases, a customer would like to use a HANA database user other than SYSTEM, e.g., to avoid giving employees access to all related privileges (as the SYSTEM user has all the privileges needed to set up, manage and update in the system). Here, you can find requirements for setting up another user in the system that can be used to operate on Crystal reports through CompuTec PDC.
+When working with SAP HANA databases, it's often preferable to use a database user other than the default SYSTEM user. This approach helps maintain security by restricting access to only the necessary privileges, rather than granting full administrative control as the SYSTEM user inherently does. This guide outlines the requirements and steps needed to set up an alternative database user for operations such as running Crystal Reports through CompuTec PDC.
 
 ---
 
-The following requirements are described in [SAP Business One note no. 2302616 - Validation - SAP HANA database user privileges](https://connect.computec.pl/download/attachments/233506987/2302616_E_20190607.pdf?version=1&modificationDate=1649077528287&api=v2) have to be met:
+The following requirements as described in [SAP Business One note no. 2302616 - Validation - SAP HANA database user privileges](https://connect.computec.pl/download/attachments/233506987/2302616_E_20190607.pdf?version=1&modificationDate=1649077528287&api=v2) have to be met:
 
 ```text
 Roles:
@@ -27,8 +27,7 @@ System privileges:
     EXPORT
     INIFILE ADMIN
     LOG ADMIN
-    This is needed if this database user is used to run the migration wizard to migrate your company databases from the Microsoft SQL Server to the SAP HANA server.
-
+    >Note: Note: These system privileges are essential if the database user is used for the migration wizard to move company databases from Microsoft SQL Server to the SAP HANA server.
 
 SQL object privileges:
 
@@ -36,14 +35,17 @@ SQL object privileges:
     _SYS_REPO schema: SELECT, EXECUTE, DELETE (all grantable)
 
 
-The SBOCOMMON schema is created during the installation of the SAP Business One Server, and the COMMON schema is created during the installation of the analytics platform. If you use different SAP HANA users for installing various components, you must pay special attention to granting the following object privileges as appropriate:
+The SBOCOMMON schema is established during the installation of the SAP Business One Server, while the COMMON schema is created during the installation of the analytics platform. If different SAP HANA users are employed to install these components, it is crucial to carefully assign the necessary object privileges accordingly.
 
     SBOCOMMON schema: SELECT, INSERT, DELETE, UPDATE, EXECUTE (all grantable)
     COMMON schema: SELECT, INSERT, DELETE, UPDATE, EXECUTE (all grantable)
 ```
 
-Additionally, the required schema has to be added to the user with the following privileges (in the following example; user is B1DBUSER, and the required scheme is PFDEMOGB_CT):
+Furthermore, the required schema must be assigned to the user with the appropriate privileges. In the following example, the user is B1DBUSER, and the required schema is PFDEMOGB_CT.
 
 ![System](./media/sap-hana-user-other-than-system/sys.webp)
 
 ![System](./media/sap-hana-user-other-than-system/sys2.webp)
+
+---
+Setting up a database user with tailored privileges ensures better security and control over database operations while maintaining functionality. By adhering to these requirements, you can enable seamless integration and operation of SAP HANA databases with tools such as Crystal Reports and other components. Always review and validate the privileges granted to ensure compliance with organizational policies and system requirements.
