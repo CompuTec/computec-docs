@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Source Creator
 
-This option allows advanced configuration of data presented in [custom reports and analytics of the Analytical Page.](../analytical-page/overview.md#usage).
+The Source Creator feature provides advanced configuration options for data presented in [custom reports and analytics of the Analytical Page.](../analytical-page/overview.md#usage). This tool allows you to define data sources, customize their structure, and manage variants to optimize data visualization and reporting. With its intuitive interface, users can easily create and configure sources for streamlined analytics.
 
 ---
 
@@ -24,11 +24,11 @@ You can add a new Variant by clicking the Add New Source button:
 
 ![AppEngine User's Guide](./media/source-creator/source-configuration.png)
 
-Here you can configure:
+In the Source tab, you can configure the following settings:
 
-- the name of the Variant
-- the source – an MS SQL query that will be a source of data for the Variant
-- available fields (for a specific query) – the list is available after clicking the Show - Preview button after entering a query. Here you can modify the Variant by changing values for specific lines. You can set:
+- **Variant Name** - the name of the Variant
+- **Source** – An MS SQL query that defines the data source for the variant.
+- **Available fields (for a specific query)** – Once you enter a query, click the Show Preview button to display available fields. Here, you can modify the variant by configuring values for specific fields, including:
 
         - Displayed Column Name
         - Column Description
@@ -38,9 +38,9 @@ Here you can configure:
           <details>
           <summary>Click here to find out more.</summary>
           <div>
-          A collection is a group of vocabulary values available for some fields, e.g., Status - Started, Closed, etc.
-
-          In the context of the Analytical Page, collections are used for filters. In this case, there is a special icon that you can click to open a list of values to choose from:
+          Collections are groups of predefined values (e.g., status options like "Started," "Closed"). In the context of the Analytical Page, collections are often used for filters.
+          
+          In this case, there is a special icon that you can click to open a list of values to choose from:
 
           ![AppEngine User's Guide](./media/source-creator/document-type.png)
 
@@ -62,17 +62,24 @@ Here you can configure:
 
 ## Variants tab
 
-In this tab, you can manage (add, edit, delete) variants for a source:
+In the Variants tab, you can manage the variants associated with a source. Variants allow you to customize how data is presented and accessed. Key actions include:
+
+- **Add** - Create new variants.
+- **Edit** - Modify existing variants.
+- **Delete** - Remove unused variants.
 
 ![AppEngine User's Guide](./media/source-creator/variants.png)
 
-Click the + Add Variant to add a Variant:
+To add a Variant, Click + Add Variant.
 
 ![AppEngine User's Guide](./media/source-creator/variant-basic-settings-1.png)
 
 Here you can define:
 
-- Basic Settings: Name, View, Default, Accessibility (Public/Private);
-- Table Startup Settings: settings related to the [Table view](../analytical-page/overview.md#table-options).
-- Chart Startup Settings: settings related to the [Chart view](../analytical-page/overview.md#chart-options).
-- Visual Filter Startup Settings: settings related to the [charts](../analytical-page/overview.md#chart-options).
+- **Basic Settings** -  Name, View, Default, Accessibility (Public/Private);
+- **Table Startup Settings** - settings related to the [Table view](../analytical-page/overview.md#table-options).
+- **Chart Startup Settings** - settings related to the [Chart view](../analytical-page/overview.md#chart-options).
+- **Visual Filter Startup Settings** - settings related to the [charts](../analytical-page/overview.md#chart-options).
+
+---
+The Source Creator provides a powerful, flexible tool for configuring data sources and variants, enabling tailored analytics and reports. By leveraging its advanced settings, users can effectively structure and customize data for insightful decision-making. Whether adding a new source or managing existing variants, the Source Creator is a key component in optimizing the Analytical Page’s functionality.

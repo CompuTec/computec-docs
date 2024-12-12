@@ -6,9 +6,9 @@ toc_max_heading_level: 6
 
 # Overview
 
-This user-friendly tool allows you to quickly and easily create custom reports and analytics based on data from plugins.
+This user-friendly tool allows you to quickly and easily create custom reports and analytics based on data from plugins. Designed to simplify data visualization, it provides flexibility and efficiency in managing and analyzing complex data sets.
 
-In the following manual, the MO360 plugin has been used.
+In the following manual, the MO360 plugin has been used as an example to illustrate its functionality.
 
 ---
 
@@ -18,11 +18,13 @@ Click [here](https://www.youtube.com/watch?v=qXK2dS_9z3g) for a video demonstrat
 
 ## Access
 
-After logging in to AppEngine, you can reach the option by clicking the icon in the upper-right corner of the window:
+After logging in to AppEngine, you can access the Analytical Page by:
+
+Clicking the icon in the upper-right corner of the window:
 
 ![Access](./media/overview/analytical-page.png)
 
-You can also reach the option from the MO360 view:
+Navigating through the MO360 view:
 
 ![Access](./media/overview/analytical-page-mo360.png)
 
@@ -34,54 +36,54 @@ Variants are preset reports. By installing the plugin, you get one standard Vari
 
 ![Variants](./media/overview/saving-variant.png)
 
-You can set the Variant name, set your Variant as default, and set availability (either Public or Private - available for other users or just for the currently logged-in).
+While saving, you can:
+
+- Assign a name to the Variant.
+- Set the Variant as the default.
+- Define availability as either Public (available for all users) or Private (restricted to the current user).
 
 ### Main View
 
-Choose one of the variants to open a report. The report view is divided into two sections: filter (1.) and report (2.):
+Select a Variant to open a report. The report view consists of two main sections: Filter (1) and Report (2):
 
 ![Report](./media/overview/analytical-page-report-modes.png)
 
 #### Filter
 
-You can put values in the field to filter all the records by these values. Filtered values are displayed in the report.
+Filters allow you to refine the data displayed in your report by entering specific values. You can customize the fields displayed in the filter by clicking the Adapt Filter button.
 
-You can adjust fields that are displayed in the filter by clicking the Adapt Filter button.
+**In the drop-down list** - Filter all Manufacturing Order fields by the following values: All, Visible, Active, Visible and Active, Mandatory.
 
-**In the drop-down list** - you can filter all Manufacturing Order fields by the following values: All, Visible, Active, Visible and Active, Mandatory.
+**Hide/Show Values** - Manage the visibility of selected filter values.
 
-**Hide/Show Values** - in the Adapt Filters view, you can hide/show already chosen values.
+**List/Group view** - While Group View is planned for future releases, you can currently work with List View.
 
-**List/Group view** - the Group view will be implemented in one of the future releases.
-
-The chosen filters can be displayed in the form of micro charts:
+Selected filters can be represented as micro charts for a visual summary:
 
 ![Filters](./media/overview/micro-charts.png)
 
 #### Report
 
-The report can be displayed in one of three forms: as a chart, as a table, and both at the same time. This option is shown in the following screenshot:
+Reports can be displayed in one of three formats: Chart, Table, or both simultaneously. The display format can be toggled using the following options:
 
 ![Report](./media/overview/analytical-page-report-modes.png)
 
 ##### Chart Options
 
-**Chart format** - you can choose a line chart, a vertical bar chart, a horizontal bar chart, or a pie chart.
+**Chart format** - Choose from Line, Vertical Bar, Horizontal Bar, or Pie charts.
 
-You can set the following settings for a chart: Dimension, Measure, Function, and Sort Type.
+**Settings** - Configure dimensions, measures, functions, and sorting options to customize the chart view.
 
 ##### Table Options
 
-You can download the result table as an Excel document (.xlsx) or a CSV file (.csv).
+You can download the table data as an Excel (.xlsx) or CSV (.csv) file. The table includes the following settings:
 
-The Table settings:
-
-- **Sorting** - multi-level sorting, e.g., by Document Date ascending and then by Document Time descending,
-
-- **Visibility** - you can choose which columns are displayed
-
-- **Column Freezing** - the "froze" Columns are displayed on the left side of the table all the time, even when you use the scroll bar to scroll further to the right (three left columns in the screenshot below).
-
-- **Column Grouping** - choose a column by which rows will be grouped. If you choose more than one, the grouping will be performed in levels. In the example below, there are two levels.
+- **Sorting** - Multi-level sorting, e.g., by Document Date (ascending) and then by Document Time (descending).
+- **Visibility** - Select which columns are displayed.
+- **Column Freezing** - The "frozen" columns remain visible on the left side of the table, even when you scroll horizontally to view additional data (as shown with the three left columns in the screenshot below).
+- **Column Grouping** - Choose a column by which the rows will be grouped. If you choose more than one, the grouping will be performed in levels. The below example shows two levels.
 
 ![Table Options](./media/overview/table-options.png)
+
+---
+The Analytical Page's Variants and customization features empower users to create targeted, insightful reports. By leveraging the flexibility of filters, chart formats, and table configurations, users can adapt the tool to meet diverse reporting needs effectively. With these capabilities, the Analytical Page serves as a cornerstone for informed decision-making and streamlined data analysis.
