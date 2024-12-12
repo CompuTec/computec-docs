@@ -4,11 +4,7 @@ sidebar_position: 3
 
 # RFID
 
-Here, you can check how to set up logging in by using RFID cards.
-
-RFID is a way of using radio waves to send data that identifies a specific object. For example, the employee can log in or log out to a system or an application by putting a card with identification data on a dedicated reader.
-
-It is possible to set up CompuTec PDC for using RFID identification to log in or log out of the application.
+Radio Frequency Identification (RFID) technology provides a seamless, contactless method for logging into systems and applications. By using RFID cards, employees can log in and out by simply placing their RFID-enabled cards near a dedicated reader, making the process faster and more efficient. This guide outlines how to configure RFID login for CompuTec PDC, enabling secure and automated employee identification for system access.
 
 ---
 
@@ -16,33 +12,38 @@ It is possible to set up CompuTec PDC for using RFID identification to log in or
 
 ### Settings
 
-Enable – choose whether you want to use an RFID module or not.
+To begin, you need to enable and configure the RFID module:
 
-RFID Controller – a list of defined controllers.
+- **Enable** – Choose whether to use the RFID module for system login or not.
 
-Time interval – a period after which a reader reads an identification. It is set up to 1400 (1,4 seconds) by default.
+- **RFID Controller** – Select from a list of predefined controllers.
 
-![PDC RFID Settings](./media/rfid/settings.webp)
+- **Time interval** – aThis defines the period (up to 1.4 seconds by default) after which the reader will attempt to detect the RFID identification.
+
+    ![PDC RFID Settings](./media/rfid/settings.webp)
 
 ### Test
 
-Here, you can test if the selected controller is configured properly: after clicking Start, the controller attempts to read identification at intervals set up in Settings > Time Interval. If the controller is configured correctly, there will be information for every identification read.
+To ensure your RFID controller is functioning correctly, use the Test function. By clicking "Start," the controller will attempt to read RFID identifiers at the interval defined in the settings. If configured properly, it will display information for each identification read.
 
 ![RFID Test](./media/rfid/test.webp)
 
 ### Assign ID
 
-Click Read ID and place the RFID card on the reader. The field will be filled up with data assigned to the RFID Card:
+To assign an RFID card to an employee:
 
-![RFID Assign Filled](./media/rfid/assign.webp)
+- Click Read ID and place the RFID card near the reader.
+- The field will be filled up with data assigned to the RFID Card:
 
-Click Assign, log in and choose an Employee you want to assign to the card. It can be used if the ID is not assigned to any Employee.
+    ![RFID Assign Filled](./media/rfid/assign.webp)
 
-Click Save – a user is assigned to an RFID identifier and making them ready to use.
+- Once the card's data is displayed, click Assign, then select the employee to associate with the RFID card.If the ID has not been assigned, it will be linked to the selected employee.
+
+- Click Save to assign the user to an RFID identifier and making them ready to use.
 
 #### Employee Master Data
 
-Assigned ID is stored in SAP B1 Employee Master Data:
+The assigned RFID ID is stored in SAP B1 Employee Master Data:
 
 :::info Path
     Human Resources → Employee Master Data
@@ -50,10 +51,13 @@ Assigned ID is stored in SAP B1 Employee Master Data:
 
 ![PDC RFID Settings](./media/rfid/employee-settings.webp)
 
-If the ID is known, it can be assigned to an employee from the SAP B1 level by entering it into the PDC RFID UID field.
+If the RFID ID is known, it can be entered directly into the PDC RFID UID field in SAP Business One to assign the ID to an employee.
 
 ## Usage
 
-When the module is configured properly, we can use an RFID identifier (such as a card) to log in by placing it near the RFID reader on the login screen. This action automatically logs in a specific employee without requiring manual entry of login credentials.
+Once the RFID module is properly configured, employees can use their RFID card to log into the system by simply placing it near the reader on the login screen. This action automatically logs in the associated employee, eliminating the need for manual credentials entry.
 
-Inserting the card again triggers a logout. Inserting another employee's RFID card while logged in initiates a re-login process for that employee.
+Additionally, inserting the card again will log the user out. If another employee's card is inserted while logged in, the system will prompt a re-login for that individual.
+
+---
+In conclusion, using RFID technology for login in CompuTec PDC simplifies the process for employees while enhancing security. It reduces the need for manual password input and improves efficiency, making it a valuable tool for organizations looking to streamline employee access management.
