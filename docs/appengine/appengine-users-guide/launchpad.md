@@ -4,18 +4,21 @@ sidebar_position: 2
 
 # Launchpad
 
-Once the [Launchpad Configuration](../administrators-guide/configuration-and-administration/configuration.md) is completed, you can log in (using an SAP Business One user) to Launchpad to use the plugins on a specific scheme:
+The Launchpad serves as a central hub for accessing and managing plugins in your SAP Business One environment. After completing the necessary [Launchpad Configuration](../administrators-guide/configuration-and-administration/configuration.md), users can log in using their SAP Business One credentials to leverage the platform’s capabilities tailored to a specific scheme
 
-![Launchpad](./media/launchpad/launchpad-log-in.png)
+![Launchpad](./media/launchpad/launchpad-log-in.webp)
 
-If the user has access to more than one scheme, you have to choose one to work with from the list (by clicking the icon in the Choose Company field):
+---
 
-![Launchpad](./media/launchpad/launchpad-companies.png)
+Once configured, you can access the Launchpad interface.
 
-After logging in, the panel with plugins is displayed (represented by tiles). In the following example, three plugins are installed:
+After logging in, the Launchpad displays a panel organized into tiles, each representing an available plugin. For instance, a configuration might include three plugins, as shown below:
 
-![Launchpad](./media/launchpad/launchpad-main.png)
+![Launchpad](./media/launchpad/launchpad-main.webp)
 
-You can define what plugins are available for a specific scheme in [Plugin Settings](../administrators-guide/configuration-and-administration/plugins/overview.md)
+The availability of plugins for specific schemes is defined in the [Plugin Settings](../administrators-guide/configuration-and-administration/plugins/overview.md)
 
-Click a plugin tile to start working with it. Check the [Plugins User's Guide](../plugins-user-guide/overview.md) for manuals of specific plugins.
+Users can click on any plugin tile to start working with it. For detailed guidance on individual plugins, refer to the [Plugins User's Guide](../plugins-user-guide/overview.md).
+
+---
+The Launchpad is designed to streamline access to plugins and enhance user productivity within SAP Business One. With its intuitive interface and customizable configurations, it enables users to focus on their tasks efficiently. For a deeper dive into plugin functionalities, the user guide provides a comprehensive resource.
