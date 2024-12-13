@@ -21,16 +21,15 @@ sidebar_position: 2
     - The AppEngine configuration database does not exist.
     - The AppEngine configuration database requires an upgrade.
 
-    If AppEngine Page won't open automatically you can manually do so by opening web browser and entering default address: `https://localhost:54001`.
+    If AppEngine Page won't open automatically you can manually do so by opening web browser and entering default address: [https://localhost:54001](https://localhost:54001).
 
-5. Setup the AppEngine store by configuring the database server connection.
+5. Setup the AppEngine store by configuring the database server connection:
 
-    1. **Step 1** - Enter the following connection details to databstep
-    ase server where AppEngine configuration schema will be created: Database Server Name, User Name & Password, and Database Provider.
+    1. **Step 1** - Enter the following connection details to database server where AppEngine configuration schema will be created: Database Server Name, User Name & Password, and Database Provider.
 
         ![Step 01](./media/installation/step-01.webp)
 
-    2. **Step 2** - If AppEngine database doesn't exists there click on button Create Database to create it. If it exists but requires an upgrade, click on Migrate Database button.
+    2. **Step 2** - If AppEngine database doesn't exists there, click on "Create Database" button to create it. If it exists but requires an upgrade, click on "Migrate Database" button.
 
         ![Step 02](./media/installation/step-02.webp)
 
@@ -44,10 +43,10 @@ sidebar_position: 2
     <details>
     <summary>Click here to find out more</summary>
     <div>
-    **Here is an example for Google Chrome or Microsoft Edge (Chromium)**
+    **Here is an example for Google Chrome or Microsoft Edge (Chromium)**:
 
-        1. Open Google Chrome or Microsoft Edge (Chromium) browser
-        2. Click F12 to open Developers Tools (1.)
+        1. Open Google Chrome or Microsoft Edge (Chromium) browser,
+        2. Click F12 to open Developers Tools (1.),
         3. Right-click on the refresh button (2.) and,
         4. Choose the Empty Cach and Hard Reload option (3.):
 

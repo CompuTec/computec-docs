@@ -4,6 +4,10 @@ sidebar_position: 4
 
 # Supported Devices
 
+CompuTec PDC is designed to operate on a range of hardware devices that are compatible with the SAP Business One DI API. This includes commonly available PCs, industrial computers, and Windows tablets. Below, you'll find details on supported operating systems and recommended hardware configurations to ensure optimal performance.
+
+---
+
 PDC can operate on any hardware device that can handle SAP Business One DI API, which includes specific:
 
 - PCs
@@ -20,8 +24,18 @@ Confirmed supported operating systems:
 
 ## Recommended Devices
 
-In this section, we will publish the names of devices on which we tested CompuTec PDC on our side, and we can recommend using it with the application.
+For the best experience, we recommend using devices that have been tested and confirmed for compatibility with CompuTec PDC. One such device is:
 
-- **DURABOOK R11 tablet in the following configuration**:
+- **DURABOOK R11 tablet**
+        - Display: 11.6" FHD (1920 x 1080) Display Standard with Touch
+        - Processor: Intel i5-5200U
+        - Memory: 4GB
+        - Storage: 128GB MLC SSD
+        - Connectivity: WLAN+BT Intel 7260
+        - Cameras: 2M Front Camera; 5M Rear Camera
+        - Ports: 2x USB 3.0, SDHC
+        - Other Features: Dock Connector with Pass-Through, TPM 1.2, AC Adapter Power Cord, and a Standard 4130mAh Battery
+        - Durability: IP65 certified, MIL-STD-810G/F compliant
 
-    11.6" FHD (1920 x 1080) Display Standard with Touch; CPU Intel i5-5200U; Memory 4GB; Storage MLC SSD 128GB; WLAN+BT Intel 7260; 2M Front Camera; 5M Rear Camera; 2xUSB3.0; SDHC; TPM1.2; Main Battery Pack x1; Dock Connector w/Pass-Thr; AC Adaptor Power Cord; No OS; Standard battery 4130maH;/ IP65/ MIL-STD810G/ MIL-STD810F.
+---
+To ensure a seamless and reliable experience with CompuTec PDC, it is crucial to use hardware that meets the recommended specifications and is supported by the application. While PDC supports a wide range of devices, choosing a tested and proven device, like the DURABOOK R11, ensures smooth operation and better performance. If you're considering other devices, ensure they meet the compatibility requirements outlined above.
