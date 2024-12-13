@@ -7,20 +7,20 @@ sidebar_position: 1
 The CompuTec AppEngine is a robust solution designed to enhance your SAP Business One environment. To ensure a smooth installation and optimal performance, it is critical to meet specific system requirements and prerequisites. This guide provides an overview of the necessary components and preparatory steps before installing CompuTec AppEngine version 3.0.
 
 :::note
-    CompuTec AppEngine requires **.NET** to work correctly. The version of the .NET supported by AppEngine is **8.0.4 or more**
+    CompuTec AppEngine requires **.NET** to work correctly. The version of the .NET supported by AppEngine is **8.0.4 or higher**.
 :::
 
 ## Prerequisites
 
 ### For AppEngine
 
-- **ASP.NET Core Runtime** - Minimum required version: 8.0.4
-- **Database** - If using SAP HANA, ensure that your HANA version is at least HANA Enterprise Edition 2.0 SPS 05, Revision 059.09 (dated 2.17.22).
+- **ASP.NET Core Runtime** - Minimum required version: 8.0.4.
+- **Database** - If using SAP HANA, ensure that your HANA version is at least HANA Enterprise Edition 2.0 SPS 05, Revision 059.09 (minimal version - 2.17.22).
 - **Operating System** - A Windows x64 machine is required.
 - **SAP Business One DI API** - Ensure SAP Business One DI API is installed and properly configured.
 - **CompuTec License Server** - Verify that the CompuTec License Server is installed and accessible.
 
-### Sap Business One -Users machines
+### Sap Business One - Users Machines
 
 - **.NET Runtime** - the minimum required version is 8.0.4.
 
@@ -28,14 +28,14 @@ The CompuTec AppEngine is a robust solution designed to enhance your SAP Busines
 <summary>Click to see how to check .NET version</summary>
 <div>
     1. Type in the following command in Command Prompt from Windows applications:
-    ```dotnet --version```
-        and click enter
+    ```dotnet --version```,
+        and click enter.
 
-    2. The result will show the .NET Framework version
+    2. The result will show the .NET version:
 
         ![Result](./media/requirements/result-01.png)
 
-    We recommend that you install the latest version of .NET Framework – you can do it using the dedicated tool Windows Update or manually downloading the required files from the Microsoft site: [Microsoft .NET Framework 8.7 (Web Installer)](https://dotnet.microsoft.com/en-us/download)
+    We recommend that you install the latest version of .NET – you can do it using the dedicated tool Windows Update or manually downloading the required files from the Microsoft site: [Microsoft .NET 8.7 (Web Installer)](https://dotnet.microsoft.com/en-us/download).
 </div>
 </details>
 

@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction to CompuTec AppEngine 3.0
 
-Welcome to AppEngine, the ultimate solution for managing all applications and business solutions within your organization. AppEngine serves as a central hub, enabling administrators to oversee plugins and manage updates while empowering developers to create and extend functionality through robust extensions. Whether you’re an administrator or a developer, AppEngine simplifies the complex processes of application management and development, providing the tools you need for efficiency, scalability, and innovation
+Welcome to AppEngine, the ultimate solution for managing all applications and business solutions within your organization. AppEngine serves as a central hub, enabling administrators to oversee plugins and manage updates while empowering developers to create and extend functionality through robust extensions. Whether you’re an administrator or a developer, AppEngine simplifies the complex processes of application management and development, providing the tools you need for efficiency, scalability, and innovation.
 
 ## About Framework
 
@@ -12,7 +12,6 @@ This guide introduces the **Computec.Core2 Ecosystem**, a comprehensive framewor
 
 ## Key Features
 
-Features
 The Computec.Core2 Ecosystem brings a suite of powerful features, specifically crafted to simplify and enhance the management and development of SAP applications.
 
 ### For Administrators
