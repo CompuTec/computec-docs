@@ -46,9 +46,9 @@ sidebar_position: 2
     **Here is an example for Google Chrome or Microsoft Edge (Chromium)**:
 
         1. Open Google Chrome or Microsoft Edge (Chromium) browser,
-        2. Click F12 to open Developers Tools (1.),
-        3. Right-click on the refresh button (2.) and,
-        4. Choose the Empty Cach and Hard Reload option (3.):
+        2. Click F12 to open Developers Tools (1),
+        3. Right-click on the refresh button (2) and,
+        4. Choose the Empty Cach and Hard Reload option (3):
 
         ![Empty Cache and Hard Reload](./media/installation/empty-cache-and-hard-reload.png)
     </div>
