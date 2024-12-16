@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # Barcodes
 
-Many of CompuTec PDC functions can be operated by scanning barcodes. Here, you can find information on barcode scanning.
+CompuTec PDC enables seamless operations through barcode scanning, allowing users to perform various tasks efficiently. This document provides detailed information about barcode scanning capabilities.
 
 ---
 
@@ -12,26 +12,24 @@ Many of CompuTec PDC functions can be operated by scanning barcodes. Here, you c
 
 ### Barcodes Physical Attributes
 
-The minimal and maximal size of supported barcodes depends on scanner attributes.
-
-CompuTec PDC is compatible with all barcode standards, provided they are identifiable by the scanner used with the application.
+The size of barcodes supported by CompuTec PDC depends on the attributes of the scanner used. CompuTec PDC is compatible with all barcode standards, provided the scanner can identify them.
 
 ### USB Scanners
 
-The CompuTec PDC client can be used with USB scanners. Here is a default configuration:
+CompuTec PDC supports USB scanners with the following default configuration:
 
-- scanning device adds a start text sign (Ctrl + B),
-- scanning device adds an end text sign (Ctrl + C).
+- The scanning device adds a start text sign (Ctrl + B).
+- The scanning device adds an end text sign (Ctrl + C).
 
-You can set up custom prefixes, suffixes, and group separators [here](./setting-up-the-application/overview.md#ct-labels-settings).
+Custom prefixes, suffixes, and group separators can be configured in the application. For more information, click [here](./setting-up-the-application/overview.md#ct-labels-settings).
 
 ## Barcode Simulator
 
-PDC Barcode Simulator was created to:
+PDC Barcode Simulator is a tool designed to:
 
-- create barcodes based on the input information
-- print created barcodes
-- simulate barcode scanning in CompuTec PDC (for testing purposes)
+- Create barcodes based on user input.
+- Print generated barcodes.
+- Simulate barcode scanning for testing purposed within CompuTec PDC.
 
 [Click to download Barcode Simulator](https://download.computec.one/software/pdc/tools/PDC_Barcode_Simulator.zip).
 
@@ -173,9 +171,9 @@ Available barcodes:
 
 ![Barcode](./media/barcodes/barcode.webp)
 
-Available barcode:
+**Available barcode:**
 
-- (91)Item_code(99)item_sequence(10)batch_code(92)bin_code(95)quantity – Sequence, Batch, Bin Location, and Quantity are optional – if you do not add them, you will have to add them manually.
+- **(91)Item_code(99)item_sequence(10)batch_code(92)bin_code(95)quantity** – Sequence, Batch, Bin Location, and Quantity are optional – if you do not add them, you will have to add them manually.
 
 ### Weight Wizard Form
 
@@ -183,16 +181,19 @@ Available barcode:
 
 ![Weight Wizard](./media/barcodes/weight-wizard.webp)
 
-Available barcodes:
+**Available barcodes:**
 
-- item_code – choose an Item from the list
-- (91)item_code(99)item_sequence(10)batch_code – choose Item and Batch (Sequence and Batch field are optional).
+- **item_code** – Selects an Item from the list.
+- **(91)item_code(99)item_sequence(10)batch_code** – Selects an Item and Batch (Sequence and Batch field are optional).
 
 #### Batch Choosing Level
 
 ![Weight Wizard Batch](./media/barcodes/weight-wizard-batch.webp)
 
-Available barcodes:
+**Available barcodes:**
 
-- batch_code – chooses a Batch from the list,
-- (10)batch_code – chooses a Batch from the list.
+- **batch_code** – Selects a Batch from the list.
+- **(10)batch_code** – Selects a batch using a prefix.
+
+---
+Barcode scanning in CompuTec PDC enhances efficiency and accuracy in operational processes. From logging in to managing tasks and resources, barcodes simplify complex workflows. Tools like the Barcode Simulator further empower users by enabling them to test and validate configurations before implementation. By leveraging barcode functionality, organizations can streamline their operations and achieve higher productivity.

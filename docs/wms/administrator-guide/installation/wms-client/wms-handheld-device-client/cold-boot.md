@@ -16,7 +16,7 @@ To prevent the loss of CompuTec WMS and its configuration during a cold boot (wh
 
 1. Download the necessary [file pack](https://connect.computec.pl/download/attachments/139691704/ColdBoot.rar?version=1&modificationDate=1607340510133&api=v2) for your device.
 2. Unpack the files and place them in the \application directory on the mobile device.
-3. Swap the existing "CompuTecWMSClientWindowsCE_93.CAB" file with the CompuTec WMS installer version you are using (e.g., "CompuTecWMSClientWindowsCE_10.0_2.10.8.1.CAB"). You can download the installers from [here](../../../releases/download.md).
+3. Swap the existing "CompuTecWMSClientWindowsCE_93.CAB" file with the CompuTec WMS installer version you are using (e.g., "CompuTecWMSClientWindowsCE_10.0_2.10.8.1.CAB"). You can download the installers from [here](https://learn.computec.one/docs/wms/releases/download).
 4. Ensure that the installer is renamed to "CompuTecWMSClientWindowsCE_93.CAB" for compatibility.
 
 If the installation of the .NET Compact Framework is necessary for a particular device, follow these steps:

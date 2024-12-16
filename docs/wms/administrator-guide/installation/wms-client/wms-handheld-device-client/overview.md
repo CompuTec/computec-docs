@@ -11,7 +11,7 @@ This guide provides instructions for installing the CompuTec WMS Handheld Device
 ## Requirements
 
 :::info
-    Before installing the CompuTec WMS Handheld Device Client, you must first have the CompuTec WMS server installed. Click [here](../wms-server/overview.md) for more information on server installation.
+    Before installing the CompuTec WMS Handheld Device Client, you must first have the CompuTec WMS server installed. Click [here](../../wms-server/overview.md) for more information on server installation.
 :::
 
 ### .NET Compact Framework
@@ -39,7 +39,7 @@ If you are using Motorola or Symbol devices, the DataWedge service must be turne
 
 Follow these steps to install the CompuTec WMS Client on your handheld device:
 
-1. Download the CompuTec WMS Client for Windows CE file from the link provided [here](../../../releases/download.md) and transfer it to the mobile device or directly from the device (click [here](../computec-wms-client-download.md) to learn more about CompuTec WMS Client Download). Open the folder where the file was saved on the device and run the installation file.
+1. Download the CompuTec WMS Client for Windows CE file from the link provided [here](https://learn.computec.one/docs/wms/releases/download) and transfer it to the mobile device or directly from the device (click [here](https://learn.computec.one/docs/wms/administrator-guide/installation/computec-wms-client-download) to learn more about CompuTec WMS Client Download). Open the folder where the file was saved on the device and run the installation file.
 
 2. Select your desired installation folder and click "OK".
 
