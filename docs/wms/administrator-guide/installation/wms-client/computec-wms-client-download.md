@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 3
 ---
 
 # CompuTec WMS Client Download
@@ -21,7 +21,7 @@ This will redirect you to the download page where you can easily download the re
     ![Download](./media/download.webp)
 
     :::note
-    You can download a required Client file directly to the device from [here](../../releases/download.md).
+    You can download a required Client file directly to the device from [here](https://learn.computec.one/docs/wms/releases/download).
     :::
 
 ---
