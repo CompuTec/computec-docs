@@ -34,7 +34,7 @@ This section provides a description of the Administration features of AppEngine,
 
     ![Admin Panel](./media/overview/browser.webp)
 
-4. If this is the first installation login using the default credentials:
+4. If this is the first installation, login using the default credentials:
 
     Administrator ID: CTSiteUser
 

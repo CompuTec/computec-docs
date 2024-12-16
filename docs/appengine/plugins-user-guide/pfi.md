@@ -9,6 +9,8 @@ CompuTec PFI (ProcessForce Import) is a powerful plugin designed to simplify and
 To know more about CompuTec PFI, Click [here](https://www.youtube.com/watch?v=MSreLSZC8DU).
 >**Note**: The video was recorded on a pre-release version and the interface differs slightly in the released version.
 
+---
+
 ## Prerequisites
 
 Before using PFI, ensure the following:

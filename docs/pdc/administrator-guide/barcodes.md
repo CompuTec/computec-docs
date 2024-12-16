@@ -31,17 +31,17 @@ PDC Barcode Simulator is a tool designed to:
 - Print generated barcodes.
 - Simulate barcode scanning for testing purposed within CompuTec PDC.
 
-[Click to download Barcode Simulator](https://download.computec.one/software/pdc/tools/PDC_Barcode_Simulator.zip).
+[Click to download the Barcode Simulator](https://download.computec.one/software/pdc/tools/PDC_Barcode_Simulator.zip).
 
 ![Barcode Simulator](./media/barcodes/barcode-simulator.webp)
 
-1. A list of elements in a barcode (two prefixes in this example). If you want to generate a barcode without a prefix, leave the Prefix column empty.
+1. A list of barcode elements (two prefixes in this example). leave the prefix column empty to generate a barcode without a prefix.
 2. A list of all input signs:
 
     - \[STX\] means – CTRL+B
     - \[ETX\] means – CTRL+C
     - \[GroupSeparator\] – a code blocks separator (for codes with more than one prefix)
-3. Adding line (for multi-prefix codes).
+3. Adding line facilitates multi-prefix codes.
 4. A graphic form of the code generated based on input data.
 5. A text form of the code generated based on input data.
 6. Click this button to simulate executing the code in CompuTec PDC.
@@ -58,7 +58,7 @@ Check the information in the next section to get to know how to create barcodes 
 
 ![Logging In](./media/barcodes/pdc-logging-in.webp)
 
-Available barcodes:
+**Available barcodes**:
 
 - Employee code – employee logging in (OHEM table, U_PDC_BARCODE field)
     <details>
@@ -87,7 +87,7 @@ Available barcodes:
 
 ![Main Form](./media/barcodes/pdc-main-form.webp)
 
-Available barcodes:
+**Available barcodes**:
 
 - (99)employee_code – Employee code with 99 prefixes, logging out or logging to another Employee (the OHEM poleU_PDC_BARCODE table),
 - A000 - open-close tasks dialog,
