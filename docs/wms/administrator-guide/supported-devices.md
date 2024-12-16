@@ -44,7 +44,7 @@ CompuTec WMS 2.0 is compatible with the following Operating Systems:
 
 - **Google Android**
 
-    to know more about Android version, click [here](./computec-wms-android-version.md).
+    to know more about Android version, click [here](../administrator-guide/installation/wms-client/computec-wms-android-version.md).
 
 ## Supported Barcode Scanners
 

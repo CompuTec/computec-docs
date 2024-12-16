@@ -1,5 +1,5 @@
 ---
-sidebar_position: 12
+sidebar_position: 4
 ---
 
 # CompuTec WMS Android version
@@ -36,7 +36,7 @@ The image above shows the expected response. If you encounter a different respon
 
 ## Download and Installation
 
-Download the installation file from [here](../releases/download.md). then extract and transfer it to the device.
+Download the installation file from [here](../../../releases/download.md) and then extract and transfer it to the device.
 
 Using a file manager app, navigate to the download folder and tap the file to begin the installation, provided all necessary permissions are properly configured.
 
@@ -64,13 +64,13 @@ A manual option is available to change the client version, making the testing pr
 
 To modify the version number, go to the CompuTec WMS client information section. Click the information icon in the General tab, double-click the client number, update the version, and click the Save button.
 
-![General Tab](./media/android-version/general-tab-info.webp) ![Version](./media/android-version/about-ct-client-1.webp) ![Save](./media/android-version/about-ct-client-2.webp)
+![General Tab](./media/general-tab-info.webp) ![Version](./media/about-ct-client-1.webp) ![Save](./media/about-ct-client-2.webp)
 
 ## Connection Testing
 
 The Android version of the CompuTec WMS client includes tools to test the connection and its quality to the server. These tools can be found in the General tab, under the Connection Test button.
 
-![Connection Button](./media/android-version/connection-button.webp)
+![Connection Button](./media/connection-button.webp)
 
 Here, you can use one of three tests:
 
@@ -78,23 +78,23 @@ Here, you can use one of three tests:
 
     Select this option and click Test to check the connection to the CompuTec WMS server. You will receive a message indicating whether the connection attempt was successful.
 
-    ![Test Server](./media/android-version/test-server.webp)
+    ![Test Server](./media/test-server.webp)
 - **Ping**
 
     Choose this option and click Test to measure the latency of the connection. A message will display the latency value. Click Stop to end the test.
 
-    ![Enabled](./media/android-version/test-ping.webp)
+    ![Enabled](./media/test-ping.webp)
 - **Download**
 
     Select this option and click Start to test the download speed. You will receive an approximate download speed message. The test will automatically stop after a short period, or you can click Stop to end the test.
 
-    ![Download Test](./media/android-version/test-download.webp)
+    ![Download Test](./media/test-download.webp)
 
 ## Log Files
 
 Direct access to the CompuTec WMS log files directory is not available on Android devices. However, you can view the log files through the Logs tab.
 
-![Logs](./media/android-version/logs-tab.webp)
+![Logs](./media/logs-tab.webp)
 
 **Share log** – Use this option to send the selected log file via text message or save it as a file.
 
@@ -116,7 +116,7 @@ On certain Zebra devices, such as the MC330K, these settings are automatically c
 
 If your device does not provide an option to define the Intent Data key, refer to your device's documentation to identify the key used for sending barcode data. Once identified, enter this key in the CompuTec WMS Scanner settings under **Intent data string**. If you're unable to locate the key, you can enable logging in the CompuTec WMS scanner settings after activating the Intent action. This will allow you to check the log files for the correct barcode data key being sent to WMS.
 
-![Scanner](./media/android-version/android-scanner-03.webp)
+![Scanner](./media/android-scanner-03.webp)
 
 ---
 The CompuTec WMS Android version offers a powerful solution for warehouse management, providing users with an intuitive interface and seamless integration with Android devices. By following the detailed installation, configuration, and testing steps outlined in this guide, users can optimize their warehouse operations, ensuring efficient communication with the CompuTec WMS Server and accurate barcode scanning.
