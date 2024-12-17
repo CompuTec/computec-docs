@@ -24,7 +24,7 @@ Event-based jobs react to specific SAP Business One events occurring within the 
 To create an Event-Based Job, use the `EventBusJob` attribute:
 
 ```csharp
-[EventBusJob(JobId = "JobId", Description = "JobName", ActionType = "*", ContentType = "CT_VO_OVMD")]
+[EventBusJob(JobId = "Job Id", JobName = "Job Name", Description = "Job Description", ActionType = "*", ContentType = "CT_VO_OVMD")]
 ```
 
 There are three base classes your job class must implement:
