@@ -154,7 +154,7 @@ To achieve this, create a class derived from `SetupCustomAction` and implement t
 
 1. **Run Once** - Add `[ExecuteInstallAction(true)]`.
 2. **Run on Version Upgrade** - `[ExecuteInstallAction(ProcessForceVersionSettings.PF93.PL13)]`.
-3. **Run Before Object Installation** - Add `[ExecuteActionBeforeInstallObjects]` to the `ExecuteInstallAction` attribute.
+3. **Run Before Object Installation** - Set parameter `RunBeforeInstallingObjects` of the `ExecuteInstallAction` attribute to true.
 
 ## Additional Setup Possibilities
 
