@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # Overview
 
-The weight scale module supports Issue to Production based on weight documents by integrating weight scaling devices.
+The Weight Scale Module facilitates the Issue to Production process based on weight documents, integrating directly with weight scaling devices. This module simplifies material issuance by allowing you to track progress through a color-coded icon system, where the icon gradually fills with color to indicate the completion level of the process.
 
-Clicking the options icon opens the Weighting Wizard that creates a weight-based Issue to Production by a number of steps.
+Clicking the options icon launches the Weighting Wizard, which guides you through several steps to create a weight-based Issue to Production.
 
-The icon coloring indicates an approximate level of completion of the issue to production. The white icon indicates a 0% level and is gradually filled with color throughout the process of issuing materials.
+The color of the icon reflects the progress of the material issuance process. A white icon represents 0% completion, and the color gradually fills as the process moves forward.
 
 ---
 
@@ -18,54 +18,55 @@ The icon coloring indicates an approximate level of completion of the issue to p
 
 ## Step 1: Choosing an Item
 
-This step displays information about the Manufacturing Order number and its final good Item. Also, we choose here which item will be issued for production in this process. An Item row from a drop-down list also shows the quantity still to be issued.
+In this step, you’ll select the Manufacturing Order and the final goods item to be issued for production. The system will display the item row from a drop-down list, which also shows the remaining quantity to be issued.
 
-**Note**: Only Batch-managed Items are currently supported in the PDC weighting module.
+>**Note**: Currently, only Batch-managed Items are supported in the PDC weighting module.
 
 ![Step](./media/weight-scale-module/step-1.webp)
 
-Click Next after choosing an Item.
+Click "Next" after choosing an Item.
 
 ## Step 2: Quantity Window
 
-In this window, apart from the information from the previous step, we can also see the following quantities:
+In this window, apart from the information from the previous step, the following quantity details can be seen:
 
 - Planned (Manufacturing Order's planned quantity),
 - Issued (already issued on other Issues to Production),
 - Picked (the quantity that already is on Pick Orders but is not published yet).
 
-In this window, the Batch from which items of a particular quantity can be selected is mentioned (for Batch-managed Items). The color of a specific Batch indicates its availability (according to Batch status). If a particular Batch is not in a Released status, a user must confirm that the Batch is to be chosen anyway (dialog box).
+For Batch-managed Items, the available batch for selection will be shown. The color of each batch indicates its availability according to batch status. If a batch is not in the Released status, the system will prompt the user to confirm the selection.
 
 ![Step](./media/weight-scale-module/step-2.webp)
 
-Click Next after choosing a Batch.
+Click "Next" after choosing a Batch.
 
 ## Step 3: Weighing
 
-The upper left panel of the window holds information from the previous steps + the quantity available in this Batch, and the quantity still to be weighed.
+The upper left panel of the window displays previous step information, including available and remaining quantities in the selected batch.
 
-The lower left panel holds information on a weighing device: a device is connected automatically by clicking Change and choosing one of the defined devices.
+The lower left panel displays the connected weighing device. You can change the device by selecting from the list of defined devices.
 
-The lower right panel holds information on previous issues in this weigh document. This section is visible and editable only to users with Management Board privileges. A regular user can see the panel but cannot modify it.
+The lower right panel shows details of previous issues within the current weighing document. Only users with Management Board privileges can modify this section.
 
-The upper right panel holds information from a specific weighing device:
+The upper right panel displays the information from the weighing device, including options like
 
-- **Zero** – zeroing the scale
-- **Tare** – weighing a container first and excluding its weight from the final weight
-- **Start/Stop** – beginning and ending weighing
-- the result of weighing
-- **Gross** – (if the Tare option is used) combine the weight of the container and material.
+- **Zero** – Zeroing the scale.
+- **Tare** – Excluding the weight of the container from the final weight.
+- **Start/Stop** – Begin or end the weighing process.
+- **Weight** - The result of weighing.
+- **Gross** – The combined weight of both the container and material (if Tare is used).
 
-It is impossible to save weighed value if it exceeds the Remaining Quantity. It also changes its color to red in this case.
+If the weighed value exceeds the remaining quantity, the field will turn red, and you will be unable to save it. Similarly, the batch available quantity will also turn red if the weighed quantity exceeds the available amount.
 
-Batch Available Quantity turns red, if the weighed quantity exceeds its value.
-
-Click the Weight button to save the weighted value.
+Click the "Weight" button to save the weighted value.
 
 ![Step](./media/weight-scale-module/step-3.webp)
 
 ## Step 4: Summary
 
-In this window, you will find a summary of the entire process. Click "Finish" to record an issue to production.
+In the final step, you’ll see a summary of the entire Issue to Production process. Review the details, and click "Finish" to complete the process and record the issue to production.
 
 ![Step](./media/weight-scale-module/step-4.webp)
+
+---
+The Weight Scale Module offers an efficient, weight-based solution for issuing materials to production. By guiding users through each step with clear instructions and visual cues, it ensures a streamlined process for managing and tracking material issuance based on weight. Whether handling batch-managed items or ensuring the accuracy of weighed quantities, this module simplifies the production workflow and enhances operational efficiency.
