@@ -264,4 +264,4 @@ If you use the ProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to instal
 
 1.2.0.20 version: [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.0.20.msi)
 
-(Click [here](../administrator-guide/computec-gateway-service/computec-gateway-service-installation.md) to find out more)
+Click [here](../administrator-guide/installation/computec-gateway-service/computec-gateway-service-installation.md) to find out more.
