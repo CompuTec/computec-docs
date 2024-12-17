@@ -21,7 +21,7 @@ This guide provides step-by-step instructions for configuring scales for the WMS
     2. Copy the MSMQ package to the application location along with the CompuTec WMS application.
     3. Install the package on the handheld device.
 3. For detailed guidance on integrating Weight Scales with the handheld devices, refer to the relevant [documentation](/docs/pdc/administrator-guide/weight-scales-integration/overview).
-4. For detailed guidance on integrating WMS with the handheld devices, refer to the relevant [documentation](../../administrator-guide/computec-gateway-service/computec-gateway-service-installation.md).
+4. For detailed guidance on integrating WMS with the handheld devices, refer to the relevant [documentation](../../administrator-guide/installation/computec-gateway-service/computec-gateway-service-installation.md).
 
 ---
 Following the steps outlined in this guide ensures reliable operation and efficient warehouse management. For additional resources or technical support, check the WMS integration documentation.
