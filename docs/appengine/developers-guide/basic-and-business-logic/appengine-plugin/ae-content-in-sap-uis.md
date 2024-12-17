@@ -158,5 +158,22 @@ This context menu is displayed on the Item Master Data form if `ItemCode` starts
 }
 ```
 
+#### Example 3: SAP Menu that open plugin
+
+This entry will be added inside SAP Business One Menu. It will appear in Stock Management based on FatherMenuUid = "3072". Parameter InternalUrl is set to true, so the URL will be opened inside the AppEngine Launchpad. Url consists of two parts: "ct.vehone" is the plugin ui.apps.namespace, and "home" is the route inside the plugin. You can also add parameters into this Url like in previous examples.
+
+```json
+{
+	"Type": "Form",
+ "Title": "Vehicle One",
+ "MenuUid": "CT_VEHONE_MAIN",
+ "FatherMenuUid": "3072",
+ "MenuCaption": "Vehicle One",
+ "MenuCaptionTranslationId": "sapMenuTitle",
+ "Url": "ct.vehone,home",
+ "InternalUrl": true
+}
+```
+
 ---
 This document ensures that each JSON configuration complies with SAP Business One requirements for seamless integration with external applications. Properly structured and validated configurations ensure seamless functionality, reducing errors and enhancing user experience.
