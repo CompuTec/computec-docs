@@ -4,32 +4,35 @@ sidebar_position: 3
 
 # Quality Control Test/Item Properties
 
-This option allows checking and recording Tests and Item Properties of a related Quality Control Test. To make this option available, choose the QC Test Properties option from the [custom options for Task Panel](../../customization/overview.md#task-tile-and-task-panel-customization). The added button is active if there is any Quality Control Test created in ProcessForce for a specific Manufacturing Order or a specific Operation on a Manufacturing Order. You can see how to check it in related [ProcessForce documentation entry](/docs/processforce/user-guide/quality-control/quality-control-test/overview#transaction)
+The Quality Control Test/Item Properties feature allows users to check and record tests and item properties associated with a Quality Control Test. To make this option available, simply enable the QC Test Properties from the [custom options for Task Panel](../../customization/overview.md#task-tile-and-task-panel-customization). Once activated, the button becomes active if there is an existing Quality Control Test linked to a specific Manufacturing Order or its associated Operation. For more details on how to verify this, refer to the related [ProcessForce documentation entry](/docs/processforce/user-guide/quality-control/quality-control-test/overview#transaction)
 
 ![Quality Control](./media/quality-control-test-item-properties/quality-control.webp)
 
 ## Header
 
-Related Quality Control Test document number.
+Displays the related Quality Control Test document number.
 
 ## Test/Item Properties table
 
-**From Property to Reason columns** – here, you can find information on Properties copied from a related Quality Control Test (you can switch between Test and Item Properties by clicking one of the options on the top of the table). For each line, you can set either numeric or reference code values. If a specific property has a reference code and a reference name assigned, it is only possible to choose a value from a drop-down list in the Tested Reference column (it is impossible to add any numeric value then). If no Reference value is assigned, it is possible to set a numeric value.
+**From Property to Reason columns** – Here, you will find information on properties copied from the related Quality Control Test. You can switch between Test and Item Properties by selecting one of the options at the top of the table. For each line, either numeric or reference code values can be set. If a reference code and name are assigned to a property, you can only select values from the drop-down list in the Tested Reference column (numeric input is not allowed). If no reference is assigned, you can enter a numeric value.
 
-**Checked column** – click this checkbox after setting a value for a specific line. The checked lines will be saved by clicking the Save icon.
+**Checked column** – After entering a value for a line, check the box to save it. The checked lines will be saved when you click the Save icon.
 
-**Add/Remove column** – If the option for creating multiple test results is checked in ProcessForce, then it is possible to add more than one result by clicking a plus icon in Add column (you can also remove any unwanted additional lines by clicking the minus icon in Remove column).
+**Add/Remove column** –  If multiple test results are enabled in ProcessForce, you can add extra results by clicking the plus icon in the Add column, and remove unwanted lines with the minus icon in the Remove column.
 
-**Remarks column** – you can save any text as remarks for each line.
+**Remarks column** – You can save any text as remarks for each line.
 
 ## Footer
 
-**Save icon** – click here after setting up all the required data and checking the lines that will be saved.
+**Save icon** – After entering all necessary data and selecting the checked lines, click here to save the information.
 
-**Update As icon** – Changes can be saved by a different employee than the one currently logged in. To do this, click this icon (the required employee's login details will need to be entered).
+**Update As icon** – This option allows changes to be saved by a different employee than the one currently logged in. To use it, click the icon and enter the required login details of the other employee.
 
-**Print icon** – CompuTec Labels related option
+**Print icon** – This option is related to CompuTec Labels.
 
-**Left Arrow icon** – closes the window without saving changes
+**Left Arrow icon** – Closes the window without saving changes.
 
-**Remarks field** – you can add general remarks for a Quality Control Test. It will be saved to ProcessForce Quality Control Test > Defects tab > Remarks field.
+**Remarks field** – You can add general remarks for a Quality Control Test. It will be saved in ProcessForce Quality Control Test > Defects tab > Remarks field.
+
+---
+The Quality Control Test/Item Properties functionality provides a comprehensive solution for tracking and recording the details of quality control tests within ProcessForce. By enabling efficient data entry, including numeric or reference code values, as well as providing options for additional remarks and saving functionality, this feature streamlines the quality control process. The ability to modify test results and manage the process flexibly ensures that users can maintain accurate, up-to-date records of quality control activities for Manufacturing Orders and Operations.

@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-CompuTec PDC is an elastic tool that can be customized to meet specific requirements.
+CompuTec PDC (Production Data Capture) is a versatile tool that can be tailored to meet the unique needs of your organization. Customizing the interface helps users interact with the tool in a way that suits their specific requirements, improving productivity and streamlining processes.
 
 ---
 
@@ -13,10 +13,10 @@ There are two main ways to customize CompuTec PDC: Form Settings and Task Tile a
 ## Form Settings
 
 :::info
-    To use this option, it is required to activate it for a specific Employee on Employee Master Data. Click [here](../../administrator-guide/setting-up-the-application/overview.md#requirements) to check how to do this.
+    To use this option, it is required to activate this feature for a specific Employee within the Employee Master Data. For detailed instructions, click [here](../../administrator-guide/setting-up-the-application/overview.md#requirements).
 :::
 
-Thanks to this option, you can choose which columns are displayed on the following CompuTec PDC forms:
+Form settings allow you to choose which columns are displayed on various CompuTec PDC forms. This includes:
 
 - Task Panel:
 
@@ -28,15 +28,15 @@ Thanks to this option, you can choose which columns are displayed on the followi
   - Tools
 - Select Task – By Resource tab
 
-The option is available from the name bar of the mentioned forms. You can choose which columns are displayed on the form by checking/unchecking the check boxes of specific columns.
+The customization option is available via the name bar of the respective forms. By checking or unchecking specific column options, you can determine which columns will appear.
 
 ![Settings](./media/customization/pdc-customization-settings.webp)
 
 ## Task Tile and Task Panel Customization
 
-Click and hold the left Shift + Ctrl + Alt keys and click the Log In on-screen button on the log-in screen to activate the Task Tile and Task Panel customization options.
+To customize the task tile and task panel, press and hold the Shift + Ctrl + Alt keys and click the Log In button on the login screen. This will activate the customization options.
 
-After this, you can choose what values will be displayed in different places on the tile represented by the Change icon: ![Change Icon](./media/customization/change-icon.webp). Uncheck Default check box and choose desired value from a drop-down list. Check the Default check box to get back to the default value:
+Once activated, you can select which values will be displayed on the task tile by clicking the Change Icon: ![Change Icon](./media/customization/change-icon.webp). Uncheck Default check box and select the desired value from the drop-down list. Check the Default check box to return to the default value:
 
 ![Task Customization](./media/customization/task-panel-customization.webp)
 
@@ -44,19 +44,15 @@ The customization option works in the same manner on the Task Panel form:
 
 ![Task Tile Customization](./media/customization/task-tile-customization.webp)
 
-Note that also icons in the lower part of a tile are customizable: you can rearrange them by assigning to them other actions that they actually have.
+The icons in the lower part of a task tile are also customizable. You can rearrange them or assign different actions to them. If needed, you can hide one or more buttons by unchecking the Default and IsVisible checkboxes.
 
-You can hide one or more buttons by unchecking the Default an IsVisible checkboxes.
-
-A Quick Receipt is an option available from the Receipt from the Production panel. You can choose the option from a drop-down list for a required button. Additionally, it is possible to assign the Quick Receipt action to any of the buttons.
-
-Click the save icon (the left one on the screenshot below) to save the setup values, and click the rollback icon (the right one on the screenshot) to get back to the default values:
+For example, you can configure a Quick Receipt action from the Receipt from the Production panel by choosing it from a dropdown list or assigning it to a button. After making adjustments, save the setup by clicking the save icon (the left one on the screenshot below), or revert to defaults by clicking the rollback icon (the right one on the screenshot):
 
 ![Save Icon](./media/customization/save-icon.webp)
 
 ### Default View
 
-You can use SQL views option to add other values to drop-down lists. To do this, define the view in a database and enter its name in the PDC Default View field in ProcessForce.
+To further customize the dropdown lists, you can use SQL views. This allows you to add custom values. Define the view in a database and enter its name in the PDC Default View field within ProcessForce.
 
 :::info Path
     Administration → System Initialization → General Settings → ProcessForce → PDC
@@ -100,3 +96,6 @@ Select "DocEntry" ,"U_LineNum", "U_RscCode", "U_RscType" as "Description" from "
 **Highlight PDC buttons to indicate the availability of additional information, such as drawings or instructions.**
 
 ![Task Panel Customization](./media/customization/pdc-buttons.png)
+
+---
+Customizing CompuTec PDC not only helps tailor the system to your organization's specific needs but also enhances user experience and operational efficiency. By adjusting form settings, task panels, and task tiles, you can ensure that the system displays only the most relevant data, streamlining workflows and improving productivity across the board. Whether through simple column adjustments or more complex SQL views, CompuTec PDC provides the flexibility to adapt to your business's evolving needs.
