@@ -1,5 +1,12 @@
 [
   {
+    "release_name": "CompuTec ProcessForce 10.0 Release 29 (R29)",
+    "supported_license_server_version": "5.12.1.1 and later",
+    "build": "10.0.29.3",
+    "release_date": "18 December 2024",
+    "download_url": "https://download.computec.one/software/processforce/releases/CompuTec_ProcessForce_10.0.29.3_LD.zip"
+  },
+  {
     "release_name": "CompuTec ProcessForce 10.0 Release 28 (R28)",
     "supported_license_server_version": "5.12.1.1 and later",
     "build": "10.0.28.37",

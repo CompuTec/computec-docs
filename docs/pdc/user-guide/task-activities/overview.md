@@ -6,25 +6,25 @@ sidebar_position: 1
 
 ## Functionality Available within the Task Panel
 
-Clicking a status icon on a task tile in the main form leads to the task panel, where you can find and set details about work periods.
+Clicking a status icon on a task tile in the main form leads to the task panel, where you can view and manage details about work periods.
 
 ![Task Tile](./media/task-activities/task-tile.webp)
 
 ### Setup Time Tile
 
-This tile represents set-up time – a period needed to prepare a Resource before starting production. Planned, actual, and booked set-up duration is displayed. Click the icon on the tile to set the start and end times of the set-up time.
+This tile represents setup time—the period needed to prepare a resource before starting production. Planned, actual, and booked setup durations are displayed. Click the icon on the tile to set the start and end times for the setup period.
 
 ### Run Time Tile
 
-This tile represents run time – a work period on a specific Resource. Click the icon on the tile to set the start and end times of the run time. Planned, actual, and booked run duration is displayed. The reported quantity is also shown.
+This tile represents run time—a work period on a specific resource. Click the icon on the tile to set the start and end times for the run time. Planned, actual, and booked run durations are displayed. The reported quantity is also shown.
 
 ### Downtime Tile
 
-This tile represents downtime – a period of a break in work brought on by accident, e.g., a power cut. Click the icon on the tile to set the start and end time of the downtime. Click [here](./downtime.md) to find out more.
+This tile represents downtime—a period of interruption in work caused by an incident, such as a power outage. Click the icon on the tile to set the start and end times for downtime. Learn more about downtime [here](./downtime.md).
 
 ### Input/Output Properties
 
-You can check if any Items are set as Input or Output for a specific Operation.
+You can check if any Items are set as Input or Output for a specific operation.
 
 <details>
 <summary>Click here to expand</summary>
@@ -43,7 +43,7 @@ Production → Bill of Materials → Production Process → Operation Bind tab �
 
 ![Operation](./media/task-activities/main-operation-from.webp)
 
-Operation properties and related data are displayed here. These properties can be defined in SAP Business One with ProcessForce (they cannot be defined from the CompuTec PDC level) and assigned to an operation or to an operation on a specific manufacturing order.
+Operation properties and related data are displayed here. These properties can be defined in SAP Business One with CompuTec ProcessForce and assigned to an operation or to an operation on a specific manufacturing order. Operation properties cannot be defined directly from the CompuTec PDC level.
 
 #### Defining Operation Properties
 
@@ -69,25 +69,25 @@ Operation properties and related data are displayed here. These properties can b
 
 ![Properties for Operation](./media/task-activities/properties-for-operation.webp)
 
-Using form settings, you can define which columns (and in what order) are displayed here. Click [here](../../administrator-guide/setting-up-the-application/overview.md) to find out more.
+Using form settings, you can define which columns (and their order) are displayed here. Click [here](../../administrator-guide/setting-up-the-application/overview.md) to find out more.
 
-Specific Operation Property can have a particular value assigned to it in Manufacturing Order. This value can be numeric (e.,g. more than 10, equal to 10) or word (e.,g. for color: yellow, green, red). In the example below, there is value *advanced* for property *Gluing type*:
+Specific Operation Property can have a predefined value assigned in the Manufacturing Order. This value can be numeric (e.g., more than 10, equal to 10) or in text (e.g., color: yellow, green, red). In the example below, there is value *advanced* for property *Gluing type*:
 
 ![Operation Properties Values](./media/task-activities/operation-properties-values.webp)
 
-On the property form in CompuTec PDC, you have the values assigned in SAP B1 displayed:
+On the property form in CompuTec PDC, values assigned in the SAP Business One are displayed:
 
 ![Operation Properties Form](./media/task-activities/operation-property-form.webp)
 
-Those are predefined planned values. You can confirm that these are correct on production (by checking the Checked checkbox and clicking the Save icon). You can also change the values if real properties differ from planned ones:
+These are predefined planned values. You can confirm their accuracy during production by checking the Checked "checkbox" and clicking the "Save" icon. Alternatively, you can update the values if the actual properties differ from the planned ones:
 
 ![Planned and Current Values](./media/task-activities/planned-and-current-values.webp)
 
-In the example above, current v, values differ from planned: Employee decided to use simple Gluing type instead of a planned advanced one.
+In the example above, the current values differ from the planned ones: the employee opted for a simple gluing type instead of the planned advanc
 
-To record the set value, click the Save icon at the bottom of the Operation Properties form.
+To record the updated value, click the "Save" icon at the bottom of the Operation Properties form.
 
-Operation properties values recorded from CompuTec PDC level for specific Manufacturing Order Operation can be viewed in SAP B1:
+Operation properties values recorded from CompuTec PDC level for specific Manufacturing Order Operation can be viewed in SAP Business One:
 
 :::info Path
     Production → Manufacturing Order → Manufacturing Orders → Operations tab → Operations tab → [Operation context menu]
@@ -135,17 +135,17 @@ Specific Resource Property can have particular values assigned to it on a Manufa
 
 ![Resource Property Manufacturing Order](./media/task-activities/resource-property-manufacturing-order.webp)
 
-On the Resource Property form in CompuTec PDC, you have the values assigned in SAP B1 displayed:
+On the Resource Property form in CompuTec PDC, values assigned in SAP Business One are displayed:
 
 ![Resource Property in PDC](./media/task-activities/resource-property-in-pdc.webp)
 
-Those are predefined planned values. You can confirm that these are correct on production (by checking the Checked checkbox and clicking the Save icon). You can also change the values if real properties differ from planned ones:
+These are predefined planned values. You can confirm their accuracy during production by checking the “Checked” checkbox and clicking the Save icon. Alternatively, you can update the values if the actual properties differ from the planned ones:
 
 ![Planned Current Values](./media/task-activities/planned-current-values.webp)
 
-Note that the above example values differ from the planned: The employee used Low pressure instead of High.
+In the example above, the current values differ from the planned ones: the employee opted for low pressure instead of the planned high pressure.
 
-To record the set value click the Save icon at the bottom of the Resource Properties form.
+To record the updated value, click the "Save" icon at the bottom of the Resource Properties form.
 
 Resource properties values recorded from CompuTec PDC level for specific Manufacturing Order Resources can be viewed in SAP Business One:
 
@@ -155,17 +155,15 @@ Resource properties values recorded from CompuTec PDC level for specific Manufac
 
 ![Recorded Values for Resource](./media/task-activities/recorded-values-for-resource.webp)
 
-In the screenshot below, we can see the recorded value from our example:
+Below is an example of a recorded value:
 
 ![Resource PDC Recorded Value](./media/task-activities/resource-pdc-recorded-value.webp)
 
 ### Item Details
 
-Item Details are displayed here.
+Item Details are displayed here. Current values can be recorded against original values similar to how operation properties or resource properties are recorded.
 
-Current values can be recorded against original values (in a similar way as in Operation Properties or Resource Properties).
-
-You can set the order of the records by desired value (e.g., Property Name).
+You can set the order of the records based on a desired value (e.g., Property Name).
 
 ![Item Details](./media/task-activities/pdc-item-details.webp)
 

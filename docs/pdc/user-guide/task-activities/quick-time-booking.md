@@ -4,31 +4,31 @@ sidebar_position: 2
 
 # Quick Time Booking
 
-This function allows you to record time bookings for multiple Manufacturing Orders in one go by setting all the details in a single panel, eliminating the need to create and open separate task tiles..
+Managing time bookings efficiently is crucial in streamlining manufacturing operations. The Quick Time Booking feature allows you to record time bookings for multiple Manufacturing Orders simultaneously, all from a single panel. This eliminates the need to create and open separate task tiles, saving time and enhancing productivity.
 
 ---
 
-The option is available from the main panel:
+The Quick Time Booking option is accessible from the main panel:
 
 ![List](./media/quick-time-booking/pdc-list.webp)
 
-Clicking the option opens Quick Time Booking panel:
+Clicking the option opens the Quick Time Booking panel:
 
 ![Quick Work Registration](./media/quick-time-booking/quick-work-registration.webp)
 
 ## Header
 
-In the header of the form, you can define filter options to display only required Tasks. The following options are available:
+The header of the Quick Time Booking form enables you to define filter options to display only the required tasks. The available options include:
 
-- **Status** – Manufacturing Order Status; available options: Released, Started, both Released and Started
-- **Operation** – it is possible to choose a specific Operation or all Operations
-- **Resource** – it is possible to choose a specific Resource or all Resources
-- **Doc Number from and Doc Number to** – a range of Manufacturing Order document number
-- **Time Types** – time types of the Tasks. Note that there are two time types, Queue and Stock, which cannot be accessed from the CompuTec PDC level. These can be set up and checked from the SAP Business One level.
-- **Manufacturing Required Date From and Manufacturing Required Date To** – a range of Manufacturing Order required date
-- **Task Start Date from and Task Start Date to** – a time range of starting a Task
-- **Save icon** – if you click it after setting up filter options, the option set is saved and will be available on the next opening of the option.
-- **Restore to default values icon** – click to erase all the changes made to the filters.
+- **Status** – Filter tasks by Manufacturing Order Status (options: Released, Started, or both).
+- **Operation** – Choose a specific Operation or display all Operations.
+- **Resource** – Choose a specific Resource or display all Resources.
+- **Doc Number from and Doc Number to** – Define a range for Manufacturing Order document numbers.
+- **Time Types** – Select time types for the tasks. Note that Queue and Stock time types cannot be accessed from the CompuTec PDC level; they can only be managed in SAP Business One.
+- **Manufacturing Required Date From and Manufacturing Required Date To** – Specify a date range for Manufacturing Order required dates.
+- **Task Start Date from and Task Start Date to** – Filter tasks by their starting time range.
+- **Save icon** – Save the current filter settings for reuse.
+- **Restore to default values icon** – Reset all filters to their default values.
 
 ## Table Section
 
@@ -40,13 +40,16 @@ Click the icon next to the Operation Name to expand the line to Resources. More 
 
 Use the Save column checkbox to choose which lines are to be saved eventually. Click on "Saved Lines" to view only the lines with the Save checkbox checked.
 
-After setting up all the details and checking the Save checkbox, click the confirmation icon on the lower right corner of the form to record Time Bookings.
+After setting up all the details and checking the "Save" checkbox, click the confirmation icon in the lower right corner of the form to record the time bookings.
 
 ## Footer
 
 The footer of the form contains the following display options:
 
-- **Results** – choose how many records are displayed on one page in the table
-- **Total time** – total duration of all times set for all lines (both set up and run)
-- **'+'/'-' icon** – expands/collapses all line by one level (levels: Operation > Resource > Times)
-- **Pages** – navigating table pages
+- **Results** – Define how many records are shown per page in the table.
+- **Total time** – View the cumulative duration of all setup and run times.
+- **'+'/'-' icon** – Expand or collapse all rows to one level (Operation > Resource > Times).
+- **Pages** – Navigate between pages in the table.
+
+---
+The Quick Time Booking feature simplifies the process of recording time for Manufacturing Orders, making it both efficient and user-friendly. By utilizing its powerful filtering, editing, and saving options, you can manage time bookings seamlessly and focus on optimizing your manufacturing operations.
