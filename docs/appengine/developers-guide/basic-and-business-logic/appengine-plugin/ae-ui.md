@@ -298,3 +298,7 @@ Very useful are types based on SAP Business One fields types that handle formati
 In this library you can also find some base classes that you can extends from to easily create new controls, dialogs, services, viewModels etc.
 
 For more information and examples (test/examples) please download this library and check examples and comments in code.
+
+::note
+	Please check [Example code](../examples/examples.md) to learn more about how to use AppEngine UI5 Plugin.
+:::
