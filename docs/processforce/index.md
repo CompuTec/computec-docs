@@ -88,7 +88,7 @@ Click [here](./user-guide/inventory/batch-control/batch-traceability.md) to find
 
 ## Bill of Materials
 
-::info Path
+:::info Path
     Production → Bill of Materials
 :::
 

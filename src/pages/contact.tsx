@@ -2,7 +2,7 @@ import Layout from "@theme/Layout";
 import Translate from "@docusaurus/Translate";
 
 import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
+import Grid from "@mui/material/Grid2";
 import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -63,7 +63,7 @@ export default function Contact() {
         </p>
 
         <Grid container spacing={3} component="div">
-          <Grid item xs={12}>
+          <Grid size={12}>
             <FormControl fullWidth>
               <InputLabel id="topic-label">
                 What can we help you with?
@@ -83,22 +83,22 @@ export default function Contact() {
               </Select>
             </FormControl>
           </Grid>
-          <Grid item xs={6}>
+          <Grid size={6}>
             <TextField label="Your Name" fullWidth required />
           </Grid>
-          <Grid item xs={6}>
+          <Grid size={6}>
             <TextField label="Company Name" fullWidth />
           </Grid>
-          <Grid item xs={6}>
+          <Grid size={6}>
             <TextField label="Email" fullWidth required />
           </Grid>
-          <Grid item xs={6}>
+          <Grid size={6}>
             <TextField label="Phone" fullWidth />
           </Grid>
-          <Grid item xs={12}>
+          <Grid size={12}>
             <TextField label="How can we help?" fullWidth multiline rows={5} />
           </Grid>
-          <Grid item>
+          <Grid>
             <FormControl fullWidth>
               <FormLabel id="contact-method-label" sx={{ mb: 1 }}>
                 Preferred contact method
@@ -110,7 +110,6 @@ export default function Contact() {
             </FormControl>
           </Grid>
           <Grid
-            item
             display="flex"
             flexGrow={1}
             justifyContent="flex-end"

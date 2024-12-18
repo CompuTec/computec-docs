@@ -91,7 +91,7 @@ export default async function createBaseConfigAsync(
           '<p style="font-weight:bold;margin-bottom:.1rem;">We are launching an Early Access Program!</p> The Early Access Program is designed for partners who wish to contribute to pre-release testing of plugins and the CompuTec Framework. Read more at <a href="/early-access">CompuTec Early Access Program</a>.',
         backgroundColor: '#0f477c',
         textColor: '#ffffff',
-        isCloseable: true,
+        isCloseable: false,
       },
       metadata: [
         {

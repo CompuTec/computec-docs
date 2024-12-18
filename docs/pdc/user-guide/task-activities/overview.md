@@ -414,7 +414,7 @@ Click [here](./downtime.md) to find out more.
 
     **Pass to other Resource** – this option allows you to transfer a task to another resource when registering a time booking or downtime. Upon selecting this option, a drop-down list of alternative resources defined for the current resource will appear. You can only switch the task to an alternative resource with the same machine type as the current resource. Click [here](/docs/processforce/user-guide/scheduling/gantt-chart/alternative-resources) to learn more about defining alternative resources in ProcessForce.
 
-    To be able to pass a Task to another Resource it is required to check Is enabled Move to Other Resource in [Employee Master Data](../../administrator-guide/setting-up-the-application/overview.md#setting-up-the-pdc-application).
+    To be able to pass a Task to another Resource it is required to check Is enabled Move to Other Resource in [Employee Master Data](../../administrator-guide/setting-up-the-application/overview.md#setting-up-computec-pdc-application).
 
     Click the confirmation icon to register work.
 3. Number of Resources – in this field, you can specify the number of resources of the same type for which work is to be recorded. For example, if you have a resource called "Oven," you can define how many units of this equipment were used, such as 5 ovens. By default, the value is set to 1. If a higher value is entered, the recorded duration represents the cumulative effort of each piece of equipment.

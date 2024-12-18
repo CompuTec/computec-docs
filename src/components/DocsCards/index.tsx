@@ -2,7 +2,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import Link from "@docusaurus/Link";
 
 import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
+import Grid from "@mui/material/Grid2";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
@@ -16,7 +16,7 @@ export default function DocsCards() {
     <Container>
       <Grid container spacing={3} py={8} alignItems="stretch">
         {docsCards.map((card) => (
-          <Grid key={card.title} item xs={12} sm={6} md={4} display="flex">
+          <Grid key={card.title} size={{ xs: 12, sm: 6, md: 4 }} display="flex">
             <Link
               to={card.link}
               style={{
