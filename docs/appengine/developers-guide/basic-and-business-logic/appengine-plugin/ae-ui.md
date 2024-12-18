@@ -247,3 +247,54 @@ private _applyFilter() {
 }
 ```
 
+### Libraries provided by AppEngine
+
+AppEngine provides set of libraries that can be used in UI5 applications. All of this libraries are already included in appengine so you don't need to add them to build of your plugin. You can install then using npm to get typescript definitions.
+
+### @computec/uicore
+
+`npm i @computec/uicore --save-dev`
+
+Base library that is required for all plugins that run inside AppEngine Launchpad. It provides base classes for building AppEngine UI5 applications. AppEngine UI5 component need to extend from UIComponent provided by this library. Also it provides PluginRouter that should be used in manifest.json for correct navigation inside AppEngine Launchpad. 
+
+It also provides some useful helpers like:
+
+* FormatterHelper with static translation methods
+* ErrorHelper that helps in handling errors
+* CustomViewHelper that helps in binding CustomViews endpoint
+* OdataHelper that helps retrieving binded objects
+
+### @computec/common
+
+`npm i @computec/common --save-dev`
+
+This library contains many and more useful controls, services and helpers that helps to build UI5 applications. It contains common SelectDialog like:
+
+* ItemSelectDialog,
+* WarehouseSelectDialog,
+* UomSelectDialog,
+* BusinessPartnersSelectDialog,
+* DocumentTypeSelectDialog
+* etc.
+
+There are also lots of helpers like:
+
+* FilterHelper,
+* StorageHelper,
+* ValidationHelper,
+* XLSXHelper,
+* etc.
+
+Very useful are types based on SAP Business One fields types that handle formating based on settings in SAP Business One:
+
+* Quantity,
+* Amount,
+* Price,
+* PriceCurrency,
+* DateOnly,
+* TimeOnly,
+* etc.
+
+In this library you can also find some base classes that you can extends from to easily create new controls, dialogs, services, viewModels etc.
+
+For more information and examples (test/examples) please download this library and check examples and comments in code.
