@@ -68,3 +68,4 @@ public class ScheduledJob2 : EventBusSecureJob
 
 ---
 AppEngine Jobs for SAP Business One plugins offer a robust framework to streamline and automate critical processes within your business. This guide serves as a comprehensive introduction to implementing Jobs in AppEngine, empowering you to take full advantage of its automation capabilities.
+
