@@ -1,6 +1,6 @@
 import React from "react";
 
-import Grid, { GridOwnProps } from "@mui/material/Grid";
+import Grid, { Grid2Props } from "@mui/material/Grid2";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
@@ -15,13 +15,13 @@ function ColumnLinkItem({ item }: ColumnLinkItemProps) {
   return <LinkItem item={item} />;
 }
 
-interface ColumnProps extends GridOwnProps {
+interface ColumnProps extends Grid2Props {
   column: MultiColumnFooterLinks[number];
 }
 
 function Column({ column, ...rest }: ColumnProps) {
   return (
-    <Grid key={column.title} item {...rest}>
+    <Grid key={column.title} {...rest}>
       <Stack direction="column" spacing={0} alignItems="flex-start">
         <Typography variant="subtitle2" fontWeight={600}>
           {column.title}
@@ -47,8 +47,7 @@ export default function FooterLinksMultiColumn({
         <Column
           key={column.title}
           column={column}
-          xs={12}
-          md={12 / columns.length}
+          size={{ xs: 12, md: 12 / columns.length }}
         />
       ))}
     </Grid>

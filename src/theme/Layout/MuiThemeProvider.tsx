@@ -1,11 +1,12 @@
 import React from "react";
 
 import {
-  Experimental_CssVarsProvider as CssVarsProvider,
-  experimental_extendTheme as extendTheme,
+  ThemeProvider,
+  createTheme,
 } from "@mui/material/styles";
 
-const theme = extendTheme({
+const theme = createTheme({
+  colorSchemes: { light: true, dark: true },
   typography: {
     fontFamily: `"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif`,
   },
@@ -15,13 +16,13 @@ export default function MuiThemeProvider({
   children,
 }: React.PropsWithChildren) {
   return (
-    <CssVarsProvider
+    <ThemeProvider
       theme={theme}
-      attribute="data-theme"
+      defaultMode="light"
       colorSchemeStorageKey="theme"
       modeStorageKey="theme"
     >
       {children}
-    </CssVarsProvider>
+    </ThemeProvider>
   );
 }
