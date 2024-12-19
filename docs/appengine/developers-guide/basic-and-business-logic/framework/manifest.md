@@ -66,7 +66,7 @@ Conversion between string representations and `ApplicationTypes` enum values ens
 | Business Logic          | BusinessLogic                 | "BusinessLogic", "DiAPI", "Di"    |
 | SAP User Interface      | SapUserInterface              | "SapUserInterface", "SapUI", "UI" |
 | Standalone              | Standalone                    | "Standalone", "exe", "app"        |
-| App Engine Plugin       | AppEnginePlugin               | "AePlugin", "plugin", "AEComponent", "AppEnginePlugin" |
+| AppEngine Plugin        | AppEnginePlugin               | "AePlugin", "plugin", "AEComponent", "AppEnginePlugin" |
 | Other                   | Other                         | "Other"                           |
 
 ## Validation Logic
