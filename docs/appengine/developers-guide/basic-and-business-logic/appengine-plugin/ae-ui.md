@@ -2,11 +2,11 @@
 sidebar_position: 6
 ---
 
+# AppEngine Plugin User Interface
+
 :::note
     [Node.js](https://nodejs.org) version 20.11 or higher is required in development environment.
 :::
-
-# AppEngine Plugin - User Interface
 
 Web User Interface is leveraging [SAP UI5 Framework](https://ui5.sap.com/). It is a modern enterprise ready UI framework. AppEngine provides set of libraries to simplify development of UI5 applications and to manage user authentication, translations.
 
@@ -81,9 +81,9 @@ export default class Component extends UIComponent {
 
 The easiest way to start new AppEngine UI Plugin project is to use CT AppEngine Plugin Project template from [CompuTec.AppEngine.Templates](../framework/before-you-start.md)
 
-<!-- ```bash
+```bash
 dotnet new ctaeaeproject --RoutePrefix CTVehOne
-``` -->
+```
 
  This will create new project with basic structure for AppEngine UI5 Plugin. You can plugin Id is taken from parent folder name but you can specify different one by adding parameter --name. Assuming that this command was run inside CT.VehOne folder below structure will be created:
 
@@ -203,7 +203,7 @@ Because of the fact that CustomViews is odata v4 endpoint you can bind it to UI5
 </Table>
 ```
 
-If we would like to bind to CustomViews.Custom declared in plugin we would need to provide correct Id. It consist of {RoutePrefix}:{CustomViewId}. Below is example of binding database table to UI5 table control using CustomViews.Custom endpoint.:
+If we would like to bind to CustomViews.Custom declared in plugin we would need to provide correct Id. It consist of `{RoutePrefix}:{CustomViewId}`. Below is example of binding database table to UI5 table control using CustomViews.Custom endpoint.:
 
 ```xml
 ...
@@ -299,6 +299,6 @@ In this library you can also find some base classes that you can extends from to
 
 For more information and examples (test/examples) please download this library and check examples and comments in code.
 
-## Example
-
+:::info Examples
 Please check [Example code](../examples/examples.md) to learn more about how to use AppEngine UI5 Plugin.
+:::
