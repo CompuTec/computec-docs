@@ -25,18 +25,18 @@ AppEngine Launchpad can run any UI5 application as long as below requirements ar
 
 ```json
 {
-	...
-	"sap.ui5": {
-		...
-		"dependencies": {
-			...
-			"libs": {
-				"computec.appengine.uicore": {},
-				"computec.appengine.common": {}
-			}
-		}
-	}
-	...
+    ...
+    "sap.ui5": {
+        ...
+        "dependencies": {
+            ...
+            "libs": {
+                "computec.appengine.uicore": {},
+                "computec.appengine.common": {}
+            }
+        }
+    }
+    ...
 }
 ```
 
@@ -49,11 +49,11 @@ import UIComponent from "computec/appengine/uicore/UIComponent";
  * @namespace ct.vehone
  */
 export default class Component extends UIComponent {
-	...
-	public static metadata = {
-		manifest: "json",
-	};
-	...
+    ...
+    public static metadata = {
+        manifest: "json",
+    };
+    ...
 }
 ```
 
@@ -61,19 +61,19 @@ export default class Component extends UIComponent {
 
 ```json
 {
-	...
-	"sap.ui5": {
-		...
-		"routing": {
-			"config": {
-				"routerClass": "computec.appengine.uicore.plugin.m.PluginRouter",
-				"viewType": "XML",
-				...
-			},
-			...
-		}
-	}
-	...
+    ...
+    "sap.ui5": {
+        ...
+        "routing": {
+            "config": {
+                "routerClass": "computec.appengine.uicore.plugin.m.PluginRouter",
+                "viewType": "XML",
+                ...
+            },
+            ...
+        }
+    }
+    ...
 }
 ```
 
@@ -81,9 +81,9 @@ export default class Component extends UIComponent {
 
 The easiest way to start new AppEngine UI Plugin project is to use CT AppEngine Plugin Project template from [CompuTec.AppEngine.Templates](../framework/before-you-start.md)
 
-```bash
+<!-- ```bash
 dotnet new ctaeaeproject --RoutePrefix CTVehOne
-```
+``` -->
 
  This will create new project with basic structure for AppEngine UI5 Plugin. You can plugin Id is taken from parent folder name but you can specify different one by adding parameter --name. Assuming that this command was run inside CT.VehOne folder below structure will be created:
 
@@ -145,7 +145,7 @@ this.attachSLOdataModel("odata/ProcessForce/", "PF");
 ## AppEngine Custom Views endpoint
 
 :::note
-	This binding is only one way binding - it is not possible to update data using this endpoint. Also it does not return metadata at the moment for selected table, view or custom view.
+    This binding is only one way binding - it is not possible to update data using this endpoint. Also it does not return metadata at the moment for selected table, view or custom view.
 :::
 
 There are tow types of CustomViews endpoints:
@@ -188,18 +188,18 @@ Because of the fact that CustomViews is odata v4 endpoint you can bind it to UI5
 ```xml
 ...
 <Table items="{
-	path: 'AE>/CustomViews/Simple(DataSource=\'@CT_VO_OVMD\')'
+    path: 'AE>/CustomViews/Simple(DataSource=\'@CT_VO_OVMD\')'
 }"/>
 ...
-	<items>
-		<ColumnListItem type="Navigation"
-						press="onItemPress">
-			<cells>
-				<Text text="{path: 'AE>U_Type', type: 'sap.ui.model.odata.type.String'}"/>
-				...
-			</cells>
-		</ColumnListItem>
-	</items>
+    <items>
+        <ColumnListItem type="Navigation"
+                        press="onItemPress">
+            <cells>
+                <Text text="{path: 'AE>U_Type', type: 'sap.ui.model.odata.type.String'}"/>
+                ...
+            </cells>
+        </ColumnListItem>
+    </items>
 </Table>
 ```
 
@@ -208,24 +208,24 @@ If we would like to bind to CustomViews.Custom declared in plugin we would need 
 ```xml
 ...
 <Table items="{
-	path: 'AE>/CustomViews/Custom(Id=\'CTVehOne:Vehicles\')'
+    path: 'AE>/CustomViews/Custom(Id=\'CTVehOne:Vehicles\')'
 }"/>
 ...
-	<items>
-		<ColumnListItem type="Navigation"
-						press="onItemPress">
-			<cells>
-				<Text text="{path: 'AE>ItemCode', type: 'sap.ui.model.odata.type.String'}"/>
-				...
-			</cells>
-		</ColumnListItem>
-	</items>
+    <items>
+        <ColumnListItem type="Navigation"
+                        press="onItemPress">
+            <cells>
+                <Text text="{path: 'AE>ItemCode', type: 'sap.ui.model.odata.type.String'}"/>
+                ...
+            </cells>
+        </ColumnListItem>
+    </items>
 </Table>
 ```
 
 CustomViews are very powerfull tool that allows to display data from any source in database without need of creating dedicated controllers on backedn side.
 :::note
-	Because there is no metadata for CustomViews endpoint you need to provide correct path to data in binding declaring expected type. 
+    Because there is no metadata for CustomViews endpoint you need to provide correct path to data in binding declaring expected type. 
 :::
 
 ### Filtering Custom Views
@@ -234,16 +234,16 @@ As mentioned earlier CusomViews endpoint don't have metadata for returned data w
 
 ```typescript
 private _applyFilter() {
-	const filter = new Filter({
-		path: "ItemCode",
-		operator: FilterOperator.EQ,
-		value1: "A00001",
-	});
+    const filter = new Filter({
+        path: "ItemCode",
+        operator: FilterOperator.EQ,
+        value1: "A00001",
+    });
 
-	const filterString = FilterHelper.getODataFilterExpression(filter);
-	this._getVehiclesTableBinding().changeParameters({
-			$filter: filter,
-		});
+    const filterString = FilterHelper.getODataFilterExpression(filter);
+    this._getVehiclesTableBinding().changeParameters({
+            $filter: filter,
+        });
 }
 ```
 
