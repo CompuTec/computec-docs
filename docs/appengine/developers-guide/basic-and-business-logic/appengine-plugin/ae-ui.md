@@ -299,6 +299,6 @@ In this library you can also find some base classes that you can extends from to
 
 For more information and examples (test/examples) please download this library and check examples and comments in code.
 
-::note
-	Please check [Example code](../examples/examples.md) to learn more about how to use AppEngine UI5 Plugin.
-:::
+## Example
+
+Please check [Example code](../examples/examples.md) to learn more about how to use AppEngine UI5 Plugin.
