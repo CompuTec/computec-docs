@@ -19,10 +19,11 @@ public class VehicleWebPluginConfig
     public bool NotifyUserOnVehicleCreated { get; set; }
     public List<string> UsersToNotify { get; set; }
 }
+```
+
 Registering the configuration within a plugin:
 
-csharp
-Copy code
+```csharp
 public class Info : AEPlugin
 {
     public Info()

@@ -30,7 +30,7 @@ public class MyOwnController : AppEngineSecureController
 
 To access services in secure controllers, use `GetService<T>` in the constructor.
 
->**Note**: Only application-scope services are accessible.
+>**Note**: In non-secure controllers, only application-scope services are accessible.
 
 ## Minimal API Controllers
 
