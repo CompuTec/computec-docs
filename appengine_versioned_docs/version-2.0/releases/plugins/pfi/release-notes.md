@@ -9,6 +9,14 @@ toc_max_heading_level: 2
 The latest Installer is available to download from [here](/docs/appengine/releases/plugins/pfi/download).
 :::
 
+## PFI 1.10.8
+
+**Release Date - 20 December 2024**
+
+| Issue Type | Release Note | Related issue/s |
+| --- | --- | --- |
+| Bug | PFI | Users reported an issue in the PFI module where, when loading more than 50 BOMs, the system only processed items, routing, and other related data for the last 50 BOMs. |
+
 ## PFI 1.10.7
 
 **Release Date - 24 May 2024**
