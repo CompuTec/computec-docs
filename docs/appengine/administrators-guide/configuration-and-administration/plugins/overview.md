@@ -4,89 +4,93 @@ sidebar_position: 1
 
 # Overview
 
-In the Plugins page, you can manage Plugins installation and activations on Companies and AppEngines. There are three tabs available. Downloaded, Releases and Store.
+Managing plugins is a crucial part of ensuring your AppEngine and associated companies function smoothly. The Plugins page provides a centralized location to handle plugin installation, updates, and activation. This guide explains the process of managing plugins across three key tabs—Downloaded, Releases, and Store—and provides a step-by-step walkthrough for adding and installing plugins to your AppEngine.
 
-- **Downloaded**: View and manage the plugins that are already added to your AppEngine from Store. You can see the status of the plugins, if they are installed, activated, or need to be updated. When you expand an Pluing you can see versions added to you AppEngine.
+---
+
+## Managing Plugins on the Plugins Page
+
+The Plugins page includes three tabs:
+
+- **Downloaded**: Displays plugins already added to your AppEngine, their status (installed, activated, or requiring updates), and available versions.
 
     ![Downloaded](./media/plugins/plugins-downloaded.webp)
 
-- **Releases**: Shows list of new Plugins versions but only for Plugins that are already added to your AppEngine.
+- **Releases**: Lists new plugin versions available for plugins already in your AppEngine.
 
     ![Plugins Releases](./media/plugins/plugins-releases.webp)
 
-- **Store**: Enables you to browse through a catalog of all plugins and add any of them to your AppEngine.
+- **Store**: Provides a catalog of all available plugins, enabling you to browse, search, and add plugins to your AppEngine.
 
     ![Plugins Store](./media/plugins/plugins-store.webp)
 
-To see details of any particular Plugin you can simply click on is name or specific version. This will open Plugin Details page.
+To view detailed information about any plugin, click its name or version to access the Plugin Details page.
 
 ## Step-by-Step Process for Adding and Installing Plugins to AppEngine
 
-1. If you wish to add new Plugin to your AppEngine, navigate to Store tab. Here you can use search field and or use Plugin Types button to search for Plugin. You can also just browse through the catalog. You can add Plugin to AppEngine by just clickin Get button. You can also do it from Plugins Details page as shown below.
+1. Go to the "Store" tab. Use the search field or Plugin Types filter to locate the desired plugin.
+Click the "Get" button to add the plugin to your AppEngine. You can also do it from Plugins Details page as shown below.
 
-    ![Plugin](./media/plugins/plugins-01.webp)
+    ![Plugin](./media/plugins/ae-plugin-01.webp)
 
-2. Click "Show Details" to view additional information about the plugin. Here, you can see the Dependencies and other available versions of the plugin.
+2. Click "Show Details" for information about dependencies or other available versions. Dependencies will automatically be added to ensure compatibility.
 
-        ![Show Details](./media/plugins/plugins-02.webp)
+        ![Show Details](./media/plugins/ae-plugin-02.webp)
 
-    When you add a plugin to AppEngine, it might rely on certain versions of other plugins to work properly. In Dependencies Tab you can view these dependencies along with current availability. If some of this plugins are not yet available or required version is higher ten available, AppEngine will automatically add required Plugin in correct versions.
+    If some of these plugins are unavailable or the required version is higher than the available one, AppEngine will automatically add the necessary plugins in the appropriate versions.
 
-        ![Dependencies](./media/plugins/plugins-03.webp)
+        ![Dependencies](./media/plugins/ae-plugin-03.webp)
 
-    If you want to install another version of given Plugin you can navigate to its details from Other Versions tab. In this tab you are presented with all versions of given plugin. To open selected version just simply click on version number.
+    To install a different version of a plugin, navigate to its details in the Other Versions tab. This tab displays all available versions of the plugin. Simply click on the desired version number to open it.
 
-       ![Other Versions](./media/plugins/plugins-04.webp)
+       ![Other Versions](./media/plugins/ae-plugin-04.webp)
 
 3. To add Plugin to AppEngine click the "Get" button. Alternatively, you can directly click "Get" from the store list.
 
-    ![Get Plugin](./media/plugins/plugins-05.webp)
+    ![Get Plugin](./media/plugins/ae-plugin-05.webp)
 
-4. Dialog will appear with list of all plugins that will be added to the AppEngine repository. This list constains plugins that are required and are not yet added to AppEngine. Click "Get&Install" to procedd with adding Plugins to AppEngine and opening installation dialog. If you don't want to proceed with installation than chose "Get" option instead. In below example "Get" was clicked.
+4. A dialog will appear listing all plugins to be added to the AppEngine repository. This list includes any required plugins that are not yet part of the AppEngine. To proceed with adding the plugins and opening the installation dialog, click "Get & Install". If you prefer not to proceed with installation at this stage, select the "Get" option instead. In the example below, "Get" was selected.
 
-    ![Get Plugin](./media/plugins/plugins-06.webp)
+    ![Get Plugin](./media/plugins/ae-plugin-06.webp)
 
 5. The Plugins are now added to AppEngine repository.
 
-6. Once the plugins are added you can check the Dependencies tab. Now all plugins are available (green statuses), we can proceed with Installation.
+6. Once plugins are added to the AppEngine repository, ensure all dependencies are available (indicated by green statuses).
 
-    ![Dependencies](./media/plugins/plugins-08.webp)
+    ![Dependencies](./media/plugins/ae-plugin-07-01.webp)
 
-7. When given Plugin is added to AppEngine there are three additional tabs displayed in Plugin Details. These are Companies, A Navigate to Installation Tabs. You should now see the following tabs: Companies, AE Instances and Installation History.
+7. Once a plugin is added to AppEngine, three additional tabs become available in the Plugin Details section: Companies, AE Instances, and Installation History. Navigate to the Installation tabs to access these options.
 
-    ![Installation Tabs](./media/plugins/plugins-09.webp)
-
-8. Click on the "Companies" tab. Select "Assigning to Company". Choose the company for which the installation will be performed and click "Accept".
+8. Go to the "Companies" tab and select "Assigning to Company". Choose the company where the installation will be performed, then click "Accept".
 
     ![Companies](./media/plugins/plugins-co.webp)
 
 9. Select AppEngine Instance for Installation.
 
-10. The installation item details will be displayed. Here you can see what all required plugins that will be performed during installation and activation. Up arrows under AppEngines means Activation and down arrows Deactivation. Up arrows in last column indicates installation of given version on selected company and down arrows indicates removal. If some additional companies will be affected by installation there you can see them in Installation Companies displayed with warning icon. You can see details by clicking on such company and tur on installation on this company by switching "Install on this company" to "Yes"
+10. The installation item details will be displayed, showing all the required plugins involved in the installation and activation process. Up arrows under AppEngines indicate activation, while down arrows indicate deactivation. In the last column, up arrows represent the installation of the specified version for the selected company, and down arrows indicate its removal. If additional companies are impacted by the installation, they will be listed under Installation Companies with a warning icon. You can view details by clicking on the affected company and enable installation for that company by toggling Install on this company to Yes.
 
-    ![Installation](./media/plugins/plugins-11.webp)
+    ![Installation](./media/plugins/ae-plugin-09.webp)
 
 11. You can also see all the details and sequence of operation by clicking on Show Details button in right upper corner of dialog.
 
-    <!-- TODO: add screenshot -->
+12. To initiate the installation, click on "Perform Installation". The installation process will start, and you can monitor its progress.
 
-12. To start installation click on Perform Installation. The installation process will begin, and you can monitor its progress.
+    ![Installation Progress](./media/plugins/ae-plugin-011.webp)
 
-    ![Installation Progress](./media/plugins/plugins-14.webp)
+    Once the installation is completed, click "Close" button.
 
-    Once the installation is completed click "Close" button.
+13. After the installation, the AppEngine must be restarted to apply all changes. Click "Yes" to proceed with the restart.
 
-13. After installation AppEngine needs to be restarted in order for all changes to be applied. Click "Yes" to restart.
-
-    ![Restart Required](./media/plugins/plugins-15.webp)
+    ![Restart Required](./media/plugins/ae-plugin-012.webp)
 
     You can now see the assigned company.
 
-If you didn't perform installation with activation on AppEngine you can do so by navigating to AE Instances tab selecting company and clicking on Assign to AppEngine button
-        ![AE Instance](./media/plugins/plugins-16.webp)
+If the installation was not performed with activation on AppEngine, you can activate it by navigating to the AE Instances tab, selecting the company, and clicking the "Assign to AppEngine" button.
+
+        ![AE Instance](./media/plugins/ae-plugin-013.webp)
 
 ## SAP Business One Settings
 
-<!-- TODO: Replace with company settings: Configuration -> Companies -> Company Details -> Settings Button -->
+![SAP Business One Settings](./media/plugins/ae-plugin-014.webp)
 
 Choose From opening mode: in form (within SAP Business One forms), in browser (in the system's default internet browser)
