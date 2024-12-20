@@ -128,7 +128,7 @@ Once the configuration is completed, you can log in to the [Launchpad](../.././a
 
 Once the initial configuration is complete, the advanced configuration stage allows for deeper customization and fine-tuning of the system. The following system configurations can be edited:
 
-![Advanced Configuration](./media/configuration-and-administration/advanced-configuration.webp)
+    ![Advanced Configuration](./media/configuration-and-administration/advanced-configuration.webp)
 
 1. **SAP Services** - The user has the option to edit the SLD ServerAddress.
 2. **CompuTec Services** - The user has the option to CT License Server
