@@ -8,7 +8,7 @@ sidebar_position: 10
 
 1. Download the files from [here](https://github.com/CompuTec/processforce-powershell/tree/main/ImportSU).
 2. Copy the net45 directory to C:\
-3. Run Powershell ISE (x64) as Administrator:
+3. Run Powershell ISE (x64) or Powershell (only version 7) as Administrator:
 
     ![Powershell](./media/run-powershell.webp)
 4. Open the ImportSU file in Notepad, copy and paste it to the **Windows Powershell ISE**:
