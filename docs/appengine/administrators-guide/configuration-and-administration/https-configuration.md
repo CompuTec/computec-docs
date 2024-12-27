@@ -110,6 +110,7 @@ If the configuration does not work and AppEngine becomes unreachable, add the fo
 
 ## CORS Settings
 
+---
 To specify Cross-Origin Resource Sharing (CORS) policies, use the `AllowedOrigins` element in the `app.config.json` file or the assigned profile configuration. Below is an example:
 
 ```json
