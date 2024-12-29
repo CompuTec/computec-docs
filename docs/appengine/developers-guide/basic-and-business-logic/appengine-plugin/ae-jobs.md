@@ -20,8 +20,10 @@ Event-based jobs react to specific SAP Business One events occurring within the 
 - **KeyName**: Key name
 - **UseCode**: User code
 - **UserId**: User ID
+- **UseRegex**: Boolean inidcator if true then `ContentType` is RegexExpression eg:`^(20|59|60)$'`
 
-To create an Event-Based Job, use the `EventBusJob` attribute:
+To create an Event-Based Job, use the `EventBusJob` attribute: 
+(!) You can use multiple EventBusAttribite on signle implementation
 
 ```csharp
 [EventBusJob(JobId = "Job Id", JobName = "Job Name", Description = "Job Description", ActionType = "*", ContentType = "CT_VO_OVMD")]
