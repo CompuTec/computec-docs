@@ -59,4 +59,4 @@ To configure background processing:
     ![Time](./media/bp-05.png)
 
 ---
-These settings ensure seamless price updates and efficient management of plugin functionalities, and empower businesses to customize workflows and optimize performance for specific needs.
+These settings ensure seamless price updates and efficient management of plugin functionalities, and empower businesses to customize workflows and optimize performance for specific needs.  Proper configuration is key to achieving seamless integrations and smooth operational performance across platforms.
