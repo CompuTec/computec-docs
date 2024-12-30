@@ -38,11 +38,13 @@ Download the installer for the WMS Server application
 
     ![WMS Plugin](./media/overview/wms-plugin.png)
 
-### Install CompuTec.ProcessForce.API**
+### Install CompuTec.ProcessForce.API *
 
 Install CompuTec.ProcessForce.API for customers utilizing ProcessForce. This step is essential for ensuring compatibility with the ProcessForce solution.
-
-    ![CT PF API](./media/overview/ct-pf-api.png)
+:::info
+    Please uninstall the previous version of the ProcessForce API first.
+:::
+   ![CT PF API](./media/overview/ct-pf-api.png)
 
 ### Install WMS Server
 
