@@ -10,9 +10,9 @@ Exporting price lists from SAP Business One is a crucial task for businesses tha
 
 ## Preparing the Dataset for Export
 
-The main screen displays a list of indexes along with their associated price lists, including the index name and the current price from the respective price list. This data can be exported to an Excel file. On this screen, you define the conditions for the dataset to be exported. These criteria determine how the plugin will generate an Excel file and populate it with SAP data.
+The main screen displays a list of Item Master Data along with their associated price lists, including the Item Master Data name and the current price from the respective price list. This data can be exported to an Excel file. On this screen, you define the conditions for the dataset to be exported. These criteria determine how the plugin will generate an Excel file and populate it with SAP data.
 
-The number of indexes visible on the screen at any given time is limited. For example, if the dataset contains 10,000 indexes, only the first few dozen indexes will be displayed initially. Additional indexes will load dynamically as you scroll down.
+The number of Item Master Data visible on the screen at any given time is limited. For example, if the dataset contains 10,000 Item Master Data, only the first few dozen Item Master Data will be displayed initially. Additional Item Master Data will load dynamically as you scroll down.
 
     ![Export Prices](./media/export-prices.png)
 
@@ -24,11 +24,11 @@ You can choose which price lists to edit in the Excel file. This includes select
 
     ![Export Prices](./media/export-prices-02.png)
 
-You can refine the selection to a specific group of indexes or even to individual indexes.
+You can refine the selection to a specific group of Item Master Data or even to individual Item Master Data.
 
     ![Export Prices](./media/export-prices-03.png)
 
-We can also define the price range for which the data of each index will be downloaded.
+We can also define the price range for which the data of each Item Master Data will be downloaded.
 
     ![Export Prices](./media/export-prices-04.png)
 
@@ -76,4 +76,4 @@ After making the necessary changes:
 
 ---
 
-Exporting and editing price lists from SAP Business One in Excel simplifies the management of product pricing, providing a straightforward method to update prices for different price lists. With the ability to filter data, select specific price lists, and edit multiple indexes at once, the process becomes both efficient and effective. Once changes are made, the updated Excel file can be imported back into SAP Business One to reflect the latest pricing updates. This streamlined approach saves time and enhances accuracy, ensuring that your price lists are always up-to-date.
+Exporting and editing price lists from SAP Business One in Excel simplifies the management of product pricing, providing a straightforward method to update prices for different price lists. With the ability to filter data, select specific price lists, and edit multiple Item Master Data at once, the process becomes both efficient and effective. Once changes are made, the updated Excel file can be imported back into SAP Business One to reflect the latest pricing updates. This streamlined approach saves time and enhances accuracy, ensuring that your price lists are always up-to-date.

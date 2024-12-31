@@ -4,13 +4,13 @@ sidebar_position: 4
 
 # Update Price Lists
 
-Managing price updates within SAP Business One can be a complex and time-consuming task, especially when handling multiple indexes and price lists. This guide provides a comprehensive overview of the Update Price Lists plugin, designed to streamline the process of updating prices across multiple price lists. By automating the integration with SAP, businesses can ensure that pricing changes are accurate, timely, and easily managed.
+Managing price updates within SAP Business One can be a complex and time-consuming task, especially when handling multiple Item Master Data price lists. This guide provides a comprehensive overview of the Update Price Lists plugin, designed to streamline the process of updating prices across multiple price lists. By automating the integration with SAP, businesses can ensure that pricing changes are accurate, timely, and easily managed.
 
 ---
 
 ## List of Documents
 
-The main screen displays a list of documents, each representing a collection of prices for individual indexes. These documents serve as processed versions of Excel files, with their data stored in the plugin and presented in a table format. Essentially, each document is a refined copy of an Excel file, prepared for seamless integration with SAP. Data from any document can be sent to SAP Business One to update the prices of the individual indexes it contains.
+The main screen displays a list of documents, each representing a collection of prices for individual Item Master Data. These documents serve as processed versions of Excel files, with their data stored in the plugin and presented in a table format. Essentially, each document is a refined copy of an Excel file, prepared for seamless integration with SAP. Data from any document can be sent to SAP Business One to update the prices of the individual Item Master Data it contains.
 
     ![List of Documnets](./media/list-of-doc.png)
 
@@ -34,7 +34,7 @@ The document list can also be filtered based on the specific price list associat
 
     ![Price List](./media/price-list.png)
 
-Documents can apply to multiple price lists if you intend to update the prices of a given index across several price lists. Alternatively, they can apply to a single price list if the changes are limited to one. The process of selecting one or multiple price lists will be detailed later in this description.
+Documents can apply to multiple price lists if you intend to update the prices of a given Item Master Data across several price lists. Alternatively, they can apply to a single price list if the changes are limited to one. The process of selecting one or multiple price lists will be detailed later in this description.
 
 If a document has been in processing for a while and you suspect the processing might be complete, meaning the document’s status may have changed, you can click Refresh to update the document list and display the most current information.
 
@@ -42,7 +42,7 @@ If a document has been in processing for a while and you suspect the processing 
 
 ## Adding a Document
 
-To update prices for selected indexes using a prepared Excel file, you need to create a new document within the plugin. This can be done by clicking the "Add Price List" button.
+To update prices for selected Item Master Data using a prepared Excel file, you need to create a new document within the plugin. This can be done by clicking the "Add Price List" button.
 
     ![Add Document](./media/add-doc.png)
 
@@ -50,7 +50,7 @@ An additional window will open, allowing you to specify the effective date for t
 
     ![Add Document](./media/add-doc-01.png)
 
-Initially, the newly created document will not contain any index or price data. It will include only some basic information:
+Initially, the newly created document will not contain any Item Master Data or price data. It will include only some basic information:
 
 - A unique code assigned to the document
 - The effective date, which can still be modified if needed
@@ -61,17 +61,17 @@ By default, the new document is assigned the status "In Progress," indicating th
 
     ![Add Document](./media/add-doc-02.png)
 
-## Importing Positions
+## Import
 
-To enrich the document with data on indexes and their prices, begin by retrieving the necessary information from the prepared Excel file. Click the "Import Positions" button.
+To enrich the document with data on Item Master Data and their prices, begin by retrieving the necessary information from the prepared Excel file. Click the "Import" button.
 
-    ![Import Positions](./media/import-positions.png)
+    ![Import](./media/import-positions.png)
 
 Select the appropriate file.
 
-    ![Import Positions](./media/import-positions-01.png)
+    ![Import](./media/import-positions-01.png)
 
-Once the data is loaded, the document becomes more comprehensive as it now includes details on planned price changes. You can view the current prices of individual indexes in specific price lists, as well as the prices intended for entry into SAP.
+Once the data is loaded, the document becomes more comprehensive as it now includes details on planned price changes. You can view the current prices of individual indices in specific price lists, as well as the prices intended for entry into SAP.
 
     ![Import Positions](./media/import-positions-02.png)
 
@@ -81,7 +81,7 @@ When editing a document, we have the option to delete specific rows. To do this,
 
     ![Edit Doc](./media/edit-doc.png)
 
-Additionally, you can add more rows from another Excel file. If this new file contains the same indexes and planned price changes as the original, the plugin will flag these rows with an Error status and provide an explanation for the error. Any invalid rows will not be sent to SAP.
+Additionally, you can add more rows from another Excel file. If this new file contains the same Item Master Data and planned price changes as the original, the plugin will flag these rows with an Error status and provide an explanation for the error. Any invalid rows will not be sent to SAP.
 
     ![Edit Doc](./media/edit-doc-01.png)
 
@@ -147,12 +147,12 @@ The mechanism runs automatically once per day at a scheduled time—for instance
 
 ### Processing Large Documents
 
-If a document contains numerous price changes, such as updates for many indexes, the progress of the process is displayed via a progress bar in the Document List view. However, this bar does not refresh automatically and will only show the latest status upon opening the view.
+If a browser window has been open for an extended period, it's recommended to press the "Refresh" button to view the current status of the process, as the status bar does not refresh automatically. The current status is updated only when you access the Document List view.
 
     ![Background Processing](./media/bp-06.png)
     ![Background Processing](./media/bp-07.png)
 
-To update the status, you must click the "Refresh" button. As the mechanism processes each index, the changes become immediately visible in SAP Business One. For instance, if a document includes updates for 1,000 indexes, and the process has started but not completed, some indexes will already reflect the new prices, while others may not yet.
+Prices for individual Item Master Data are updated sequentially, with changes becoming immediately visible in SAP Business One. If a document includes new prices for 1,000 Item Master Data and the update process has started but is not yet complete, some items may already display the updated prices in SAP Business One, while others may still show the previous prices. This depends on whether the specific Item Master Data in the document has been processed.
 
 ### Document and Item Statuses
 
