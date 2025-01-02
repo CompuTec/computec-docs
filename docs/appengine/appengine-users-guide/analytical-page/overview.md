@@ -62,7 +62,7 @@ Filters are designed to refine datasets based on specific criteria. These filter
 
             ![Collection Filter](./media/overview/collection-filter.png)
 
-- **Date** - Facilitate filtering data based on specific dates or date ranges.
+- **Date** - Facilitate filtering data based on specific dates or date ranges. To select a single day, simply double-click on the desired date.
 
     ![Date Filter](./media/overview/date-filter.png)
 
