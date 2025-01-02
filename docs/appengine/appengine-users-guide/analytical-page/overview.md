@@ -8,7 +8,7 @@ toc_max_heading_level: 4
 
 This user-friendly tool allows you to quickly and easily create custom reports and analytics based on data from plugins. Designed to simplify data visualization, it provides flexibility and efficiency in managing and analyzing complex data sets.
 
-    ![Analytics](./media/overview/analytics.jpg)
+    ![Analytics](./media/overview/analytics.png)
 
 ---
 
@@ -60,7 +60,11 @@ Filters are designed to refine datasets based on specific criteria. These filter
         - Custom Collection: A user-defined list of values.
         - Table Collection: Data fetched directly from a table field. (Example: Selecting the "Status" field from the OITM table.)
 
+            ![Collection Filter](./media/overview/collection-filter.png)
+
 - **Date** - Facilitate filtering data based on specific dates or date ranges.
+
+    ![Date Filter](./media/overview/date-filter.png)
 
 With the "**Adapt Filter**" feature, users can customize which filters are visible in the interface. This feature enhances usability by allowing users to focus only on relevant filters.
 
