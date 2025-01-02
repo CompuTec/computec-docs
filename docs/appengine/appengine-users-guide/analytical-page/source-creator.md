@@ -6,6 +6,12 @@ sidebar_position: 2
 
 The Source Creator feature provides advanced configuration options for data presented in [custom reports and analytics of the Analytical Page](../analytical-page/overview.md#usage). This tool allows you to define data sources, customize their structure, and manage variants to optimize data visualization and reporting. With its intuitive interface, users can easily create and configure sources for streamlined analytics.
 
+Below are key terms used in the Source Creator:
+
+- **Standard Variant** - A variant created by CompuTec, typically one per view.
+- **Source** - Metadata about the analytics, including information about the table, columns, types, aggregability, names, descriptions, etc.
+- **Variant** - UI configurations associated with a source, such as visible columns, filters, grouping, and chart/table settings.
+
 ---
 
 To open the option, click the Analytical Page button (1.) in Launchpad and then the Go To Source Creator button:
@@ -92,19 +98,6 @@ Here you can define:
 If you're unable to complete creating the source, you can save your progress by exporting it.
 
   ![Export Source](./media/source-creator/export-source.png)
-
-## Legend
-
-Below are key terms used in the Source Creator:
-
-- **Standard Variant** - A variant created by CompuTec, typically one per view.
-- **View** -  A group of variants with the same data but different filters, charts, and settings. Appears as a header in the analytics list.
-- **Source** - Metadata about the analytics, including information about the table, columns, types, aggregability, names, descriptions, etc.
-- **Variant** - UI configurations associated with a source, such as visible columns, filters, grouping, and chart/table settings.
-
----
-
-For additional details, refer to the developer documentation: [Analytical Page - AppEngine Internal - CompuTec Connect](https://connect.computec.pl/pages/viewpage.action?spaceKey=SLI&title=Analytical%2BPage)
 
 ---
 The Source Creator provides a powerful, flexible tool for configuring data sources and variants, enabling tailored analytics and reports. By leveraging its advanced settings, users can effectively structure and customize data for insightful decision-making. Whether adding a new source or managing existing variants, the Source Creator is a key component in optimizing the Analytical Page’s functionality.
