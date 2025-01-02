@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Source Creator
 
-The Source Creator feature provides advanced configuration options for data presented in [custom reports and analytics of the Analytical Page.](../analytical-page/overview.md#usage). This tool allows you to define data sources, customize their structure, and manage variants to optimize data visualization and reporting. With its intuitive interface, users can easily create and configure sources for streamlined analytics.
+The Source Creator feature provides advanced configuration options for data presented in [custom reports and analytics of the Analytical Page](../analytical-page/overview.md#usage). This tool allows you to define data sources, customize their structure, and manage variants to optimize data visualization and reporting. With its intuitive interface, users can easily create and configure sources for streamlined analytics.
 
 ---
 
@@ -14,53 +14,56 @@ To open the option, click the Analytical Page button (1.) in Launchpad and then 
 
 This leads to the Source List:
 
-![AppEngine User's Guide](./media/source-creator/source-list.png)
+![AppEngine User's Guide](./media/source-creator/source-list.jpg)
 
-This is a list of sources currently used in the [Variants](/docs/appengine/appengine-users-guide/analytical-page/overview#variants) used in Analytical views.
+The Source List displays all created sources. Users can:
 
-You can add a new Variant by clicking the Add New Source button:
+- **Remove** - Delete an existing source.
+- **Duplicate** - Create a copy of an existing source.
+- **Show** -View the details of a source.
 
-## Source tab
+## Creator
 
-![AppEngine User's Guide](./media/source-creator/source-configuration.png)
+The Creator is divided into two main sections:
 
-In the Source tab, you can configure the following settings:
+1. Source
+2. Variants
 
-- **Variant Name** - the name of the Variant
-- **Source** – An MS SQL query that defines the data source for the variant.
-- **Available fields (for a specific query)** – Once you enter a query, click the Show Preview button to display available fields. Here, you can modify the variant by configuring values for specific fields, including:
+  ![Source Config](./media/source-creator/source-config.png)
 
-        - Displayed Column Name
-        - Column Description
-        - Column Type
-        - Set a Custom Collection (different than in related Table View)
+### Source
 
-          <details>
-          <summary>Click here to find out more.</summary>
-          <div>
-          Collections are groups of predefined values (e.g., status options like "Started," "Closed"). In the context of the Analytical Page, collections are often used for filters.
-          
-          In this case, there is a special icon that you can click to open a list of values to choose from:
+The Source section is further divided into three parts:
 
-          ![AppEngine User's Guide](./media/source-creator/document-type.png)
+1. **Source Name** (Required) - A unique name for the source.
+2. **SQL Statement** (Required) - The SQL query used to retrieve data.
+3. **Table with Columns** - Displays the structure of the data, which is automatically filled upon clicking "Show Preview" after entering the Source Name and SQL Statement. For each column, you can define the following:
 
-          ![AppEngine User's Guide](./media/source-creator/document-type-options.png)
+    - Column Name: The name of the column in the table.
+    - Column Name Displayed: The name shown in analytics.
+    - Column Description: A brief description of the column.
+    - Column Type: The data type of the column.
 
-          You can either take the values from the related table (the Table/View Collection option) or set them manually (the Custom Collection option):
+        ![Column Type](./media/source-creator/column-type.jpg)
+    - Collection: Assign a collection to the column:
 
-          ![AppEngine User's Guide](./media/source-creator/choose-collection-type.png)
+      - Table Collection
 
-          The Table/View Collection:
+          ![Table Collection](./media/source-creator/table-collection.jpg)
 
-          ![AppEngine User's Guide](./media/source-creator/table-view.png)
+      - Custom Collection
 
-          The Custom Collection option:
+          ![Custom Collection](./media/source-creator/custom-collection.png)
 
-          ![AppEngine User's Guide](./media/source-creator/custom-collection.png)
-          </div>
-          </details>
+    - Link to SAP: Link the column to an SAP field (e.g., for ItemCode, select the appropriate SAP field).
 
-## Variants tab
+        ![Item Code](./media/source-creator/item-code.jpg) ![Link Settings](./media/source-creator/link-settings.jpg)
+
+    - Generate Date Parts: Create additional columns for date parts (e.g., week, day of the month).
+    - Aggregable: Enable aggregation for numeric columns, making them usable as measures in charts.
+    - Filter Group: Assign the column to a filter group.
+
+### Variants
 
 In the Variants tab, you can manage the variants associated with a source. Variants allow you to customize how data is presented and accessed. Key actions include:
 
@@ -68,11 +71,14 @@ In the Variants tab, you can manage the variants associated with a source. Varia
 - **Edit** - Modify existing variants.
 - **Delete** - Remove unused variants.
 
-![AppEngine User's Guide](./media/source-creator/variants.png)
+  ![AppEngine User's Guide](./media/source-creator/variants.png)
 
 To add a Variant, Click + Add Variant.
 
-![AppEngine User's Guide](./media/source-creator/variant-basic-settings-1.png)
+  ![Add Variant](./media/source-creator/variants-01.png)
+  ![Add Variant](./media/source-creator/variants-02.png)
+
+You can configure all visualization settings for the source.
 
 Here you can define:
 
@@ -80,6 +86,25 @@ Here you can define:
 - **Table Startup Settings** - settings related to the [Table view](../analytical-page/overview.md#table-options).
 - **Chart Startup Settings** - settings related to the [Chart view](../analytical-page/overview.md#chart-options).
 - **Visual Filter Startup Settings** - settings related to the [charts](../analytical-page/overview.md#chart-options).
+
+### Export Source
+
+If you're unable to complete creating the source, you can save your progress by exporting it.
+
+  ![Export Source](./media/source-creator/export-source.png)
+
+## Legend
+
+Below are key terms used in the Source Creator:
+
+- **Standard Variant** - A variant created by CompuTec, typically one per view.
+- **View** -  A group of variants with the same data but different filters, charts, and settings. Appears as a header in the analytics list.
+- **Source** - Metadata about the analytics, including information about the table, columns, types, aggregability, names, descriptions, etc.
+- **Variant** - UI configurations associated with a source, such as visible columns, filters, grouping, and chart/table settings.
+
+---
+
+For additional details, refer to the developer documentation: [Analytical Page - AppEngine Internal - CompuTec Connect](https://connect.computec.pl/pages/viewpage.action?spaceKey=SLI&title=Analytical%2BPage)
 
 ---
 The Source Creator provides a powerful, flexible tool for configuring data sources and variants, enabling tailored analytics and reports. By leveraging its advanced settings, users can effectively structure and customize data for insightful decision-making. Whether adding a new source or managing existing variants, the Source Creator is a key component in optimizing the Analytical Page’s functionality.
