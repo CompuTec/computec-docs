@@ -1,18 +1,14 @@
 ---
 sidebar_position: 1
 toc_min_heading_level: 2
-toc_max_heading_level: 6
+toc_max_heading_level: 4
 ---
 
 # Overview
 
 This user-friendly tool allows you to quickly and easily create custom reports and analytics based on data from plugins. Designed to simplify data visualization, it provides flexibility and efficiency in managing and analyzing complex data sets.
 
-In the following manual, the MO360 plugin has been used as an example to illustrate its functionality.
-
----
-
-Click [here](https://www.youtube.com/watch?v=qXK2dS_9z3g) for a video demonstration on Manufacturing Order 360 Analytical Page.
+    ![Analytics](./media/overview/analytics.jpg)
 
 ---
 
@@ -24,7 +20,7 @@ Clicking the icon in the upper-right corner of the window:
 
 ![Access](./media/overview/analytical-page.png)
 
-Navigating through the MO360 view:
+Navigating through the plugin (In the below example, MO360 has been taken as a reference for analyzing Manufacturing Order transactions):
 
 ![Access](./media/overview/analytical-page-mo360.png)
 
@@ -42,48 +38,94 @@ While saving, you can:
 - Set the Variant as the default.
 - Define availability as either Public (available for all users) or Private (restricted to the current user).
 
-### Main View
+## Main View
 
 Select a Variant to open a report. The report view consists of two main sections: Filter (1) and Report (2):
 
 ![Report](./media/overview/analytical-page-report-modes.png)
 
-#### Filter
+### Filter
 
-Filters allow you to refine the data displayed in your report by entering specific values. You can customize the fields displayed in the filter by clicking the Adapt Filter button.
+Filters allow you to refine the data displayed in your report by entering specific values.
 
-**In the drop-down list** - Filter all Manufacturing Order fields by the following values: All, Visible, Active, Visible and Active, Mandatory.
+#### Filter Options
 
-**Hide/Show Values** - Manage the visibility of selected filter values.
+Filters are designed to refine datasets based on specific criteria. These filters allow users to input values and apply operators to customize the filtering process. The following filters can be used:
 
-**List/Group view** - While Group View is planned for future releases, you can currently work with List View.
+- **Text** - Accept textual input for filtering data. It is useful for searching specific words, names, or phrases. Operators such as equal, starts with, or between etc. are often available.
 
-Selected filters can be represented as micro charts for a visual summary:
+    ![Text filter](./media/overview/text-filter.png)
 
-![Filters](./media/overview/micro-charts.png)
+- **Number** - Enable filtering based on numeric values. Operators such as greater than, less than, or equal to etc. are often available.
 
-#### Report
+    ![Number Filter](./media/overview/number-filter.png)
+
+- **Collection** - Work with predefined or dynamically sourced data collections:
+        - Custom Collection: A user-defined list of values.
+        - Table Collection: Data fetched directly from a table field. (Example: Selecting the "Status" field from the OITM table.)
+
+- **Date** - Facilitate filtering data based on specific dates or date ranges.
+
+With the "**Adapt Filter**" feature, users can customize which filters are visible in the interface. This feature enhances usability by allowing users to focus only on relevant filters.
+
+    ![Adapt Filter](./media/overview/adapt-filter.png)
+
+Selected filters can be represented as micro charts for a visual summary. **Visualization filters** provide an interactive way to filter data by summarizing key metrics and enabling users to drill down into details.
+
+    ![Visual chart](./media/overview/visual-chart.jpg)
+
+### Report
 
 Reports can be displayed in one of three formats: Chart, Table, or both simultaneously. The display format can be toggled using the following options:
 
 ![Report](./media/overview/analytical-page-report-modes.png)
 
-##### Chart Options
+#### Table
 
-**Chart format** - Choose from Line, Vertical Bar, Horizontal Bar, or Pie charts.
+The table is the primary component of analytics and offers robust features for data interaction.
 
-**Settings** - Configure dimensions, measures, functions, and sorting options to customize the chart view.
+    ![Table](./media/overview/table.jpg)
 
-##### Table Options
+- **Yellow Arrows** - Cells may include yellow arrows, enabling references to SAP Business One documents.
+- **Export Options** - In the browser view of analytics, users can export data to Excel using the "Download Excel" option in the top-right corner.
 
-You can download the table data as an Excel (.xlsx) or CSV (.csv) file. The table includes the following settings:
+**Table Options**
 
-- **Sorting** - Multi-level sorting, e.g., by Document Date (ascending) and then by Document Time (descending).
-- **Visibility** - Select which columns are displayed.
-- **Column Freezing** - The "frozen" columns remain visible on the left side of the table, even when you scroll horizontally to view additional data (as shown with the three left columns in the screenshot below).
-- **Column Grouping** - Choose a column by which the rows will be grouped. If you choose more than one, the grouping will be performed in levels. The below example shows two levels.
+Located in the top-right corner, these options include:
 
-![Table Options](./media/overview/table-options.png)
+    ![Table Options](./media/overview/table-options.png)
+
+- **Sort** - Select columns and define sorting order (ascending or descending).
+- **Visible** - Choose which columns to display.
+- **Freeze** - Lock specific columns for better navigation.
+- **Group** - Organize data by selected columns.
+- **Other**:
+        - **Display Summaries**: View data summaries for numeric columns.
+        - **Auto Row Expand**: Automatically expand grouped data.
+        - **Auto Refresh Data**: Define refresh intervals for real-time updates.
+
+            ![View Settings](./media/overview/view-settings.jpg)
+
+#### Chart
+
+Below is the screenshot of visualization of data in chart:
+
+    ![Data Visualisation in Charts](./media/overview/chart-visualisation.png)
+
+The available chart types include line, bar, column, and pie, offering versatile options for data visualization.
+
+**Chart Options**
+
+These options include:
+
+- **Dimension** - Select any column.
+- **Measure** - Choose columns to measure (requires an aggregable flag in the source creator).
+- **Functions** - Apply operations like count, sum, average, minimum, or maximum (can use multiple functions).
+- **Sort** - Options include no sort, Dimension ASC/DESC, Measures ASC/DESC.
+
+Users can interact with chart data to view summarized information and download selected data in XLSX format.
+
+    ![Download Excel](./media/overview/download-excel.png)
 
 ---
 The Analytical Page's Variants and customization features empower users to create targeted, insightful reports. By leveraging the flexibility of filters, chart formats, and table configurations, users can adapt the tool to meet diverse reporting needs effectively. With these capabilities, the Analytical Page serves as a cornerstone for informed decision-making and streamlined data analysis.
