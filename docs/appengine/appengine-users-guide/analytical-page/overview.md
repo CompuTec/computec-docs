@@ -16,17 +16,13 @@ This user-friendly tool allows you to quickly and easily create custom reports a
 
 After logging in to AppEngine, you can access the Analytical Page by:
 
-Clicking the icon in the upper-right corner of the window:
+Clicking the icon located at the upper-right corner of the window and navigate through the plugin (In the below example, MO360 has been taken as a reference for analyzing Manufacturing Order transactions):
 
 ![Access](./media/overview/analytical-page.png)
 
-Navigating through the plugin (In the below example, MO360 has been taken as a reference for analyzing Manufacturing Order transactions):
-
 ![Access](./media/overview/analytical-page-mo360.png)
 
-## Usage
-
-### Variants
+## Variants
 
 Variants are preset reports. By installing the plugin, you get one standard Variant set as default. You can create and customize the Variants. To create your Variant, open the standard and use the Save As option:
 
