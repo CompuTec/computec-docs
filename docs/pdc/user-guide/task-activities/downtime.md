@@ -4,7 +4,9 @@ sidebar_position: 3
 
 # Downtime
 
-Downtime is a period of a break in work, brought on by accident e.g. power cut. Downtime can be registered through CompuTec PDC.
+Downtime refers to a temporary break in work caused by unforeseen circumstances, such as power outages or equipment failures. Properly tracking and managing downtime is essential for maintaining operational efficiency and minimizing disruptions. CompuTec PDC offers a straightforward method to register and monitor downtime effectively.
+
+---
 
 ## Downtime related settings
 
@@ -12,24 +14,40 @@ Downtime is a period of a break in work, brought on by accident e.g. power cut. 
 
 [Technician / Is downtime Supervisor](../../administrator-guide/setting-up-the-application/overview.md)
 
-### General Settings, ProcessForce tab, PDC tab
+### General Settings, ProcessForce and PDC tab
 
-[Create a new task when Down Register, Pause all tasks when Down Register, Action when Down Register](../../administrator-guide/setting-up-the-application/overview.md#processforce-settings) – these options define additional behaviour during Downtime registration.
+Within the General Settings, several options in the ProcessForce and PDC tabs influence downtime registration behavior:
 
-## Usage
+- create a new task when Downtime Register
+- pause all tasks when Downtime Register
+- action when Downtime Register
 
-Reporting Downtime is performed from a Task Tile (1). It is required to set a Downtime Reason (2) and assign a [Technician](../../administrator-guide/setting-up-the-application/overview.md#processforce-settings) (3).
+To know more, click [here](../../administrator-guide/setting-up-the-application/overview.md#processforce-settings) – these options define additional behaviour during Downtime registration.
 
-![Downtime](./media/downtime/pdc-downtime.webp)
+## Reporting Downtime
+
+The process requires:
+
+1. Downtime is reported using a Task Tile.
+2. Setting a Downtime Reason.
+3. Assigning a [Technician](../../administrator-guide/setting-up-the-application/overview.md#processforce-settings).
+Saving the downtime entry.
+
+    ![Downtime](./media/downtime/pdc-downtime.webp)
+
+## Interface Views
 
 Adding a Downtime creates a Downtime tile available for the [Technician](../../administrator-guide/setting-up-the-application/overview.md#processforce-settings) chosen during creation and to [Supervisors](../../administrator-guide/setting-up-the-application/overview.md#processforce-settings):
 
-The User view:
+**User view**:
 
 ![User View](./media/downtime/user-view.webp)
 
-The Technician and Supervisor view:
+**Technician and Supervisor view**:
 
 ![Technician](./media/downtime/pdc-technician.webp)
 
-The Supervisor can choose another Technician for a Downtime and modify other parameters.
+Supervisors have additional capabilities to reassign technicians and modify downtime parameters.
+
+---
+Effective downtime management is crucial for addressing interruptions and ensuring minimal impact on productivity. CompuTec PDC streamlines this process by providing tools to log, monitor, and manage downtime efficiently. By leveraging these settings and functionalities, organizations can reduce downtime's operational impact and improve response times.
