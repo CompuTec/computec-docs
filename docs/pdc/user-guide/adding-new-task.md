@@ -4,18 +4,24 @@ sidebar_position: 1
 
 # Adding a New Task
 
+Managing tasks efficiently is a crucial part of ensuring smooth operations in the CompuTec PDC application. This guide provides step-by-step instructions for adding new tasks using different methods. Whether you prefer manual input or automated tools, CompuTec PDC offers versatile options to match your workflow needs.
+
+---
+
+## Methods to Add a New Task
+
 A new task can be added to the CompuTec PDC application in three ways:
 
 - by adding a task to the operator through [Management Board](./management-board.md).
 - by choosing desired values from the drop-down lists.
 - by scanning a barcode assigned to a specific value.
 
-## Adding a New Task by Choosing Desired Values from Drop-down Lists
+### Adding a Task Drop-down Lists
 
 1. To add a new task, click the "task adding" icon in the main form:
 
     ![Adding Task](./media/adding-new-task/adding-task.webp)
-2. At the top of the form, you can select tasks either by Resource or by Manufacturing Order. If a specific resource is configured for a device in the [settings](../administrator-guide/setting-up-the-application/overview.md), only the By Resource option will be available, displaying operations assigned to that resource without a search field. The following view illustrates the By Resource selection. To see the workflow for the By Manufacturing Order option, refer to point 4. You can set the default search method in the [settings](../administrator-guide/setting-up-the-application/overview.md).
+2. At the top of the form, select tasks either by Resource or by Manufacturing Order. If a resource is pre-configured for the device in the [settings](../administrator-guide/setting-up-the-application/overview.md), only the By Resource option will be available, displaying operations assigned to that resource without a search field. The following view illustrates the By Resource selection. To see the workflow for the By Manufacturing Order option, refer to point 4. You can set the default search method in the [settings](../administrator-guide/setting-up-the-application/overview.md).
 
     ![By Resource](./media/adding-new-task/by-resource.png)
 3. Choose Resource from the Resource Code drop-down list. All the tasks related to the specific resource will be displayed on the list. You can filter Resources by choosing a particular Resource Group first.
@@ -77,4 +83,7 @@ A new task can be added to the CompuTec PDC application in three ways:
         ![Pause Icon](./media/adding-new-task/pause-icon.webp) - the task is paused.
 
         Clicking it leads to a task panel where you can set details of a specific task.
-11. Click the status icon to set periods for specific tasks. For more information, click [here](./task-activities/overview.md).
+11. Click the status icon to set periods for specific tasks. For more details, click [here](./task-activities/overview.md).
+
+---
+Adding tasks to the CompuTec PDC application is a straightforward process that ensures efficient resource allocation and task management. By following the steps outlined in this guide, users can ensure tasks are created accurately and aligned with their manufacturing workflows.
