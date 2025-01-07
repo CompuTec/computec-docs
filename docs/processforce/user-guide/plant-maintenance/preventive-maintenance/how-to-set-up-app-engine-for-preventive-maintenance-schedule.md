@@ -6,11 +6,11 @@ sidebar_position: 8
 
 ## SLD Servers Configuration
 
-1. Switch the 'Background Processing Date' on SLD Servers for your company to **ON**.
+1. Enable the 'Background Processing Date' on your company's SLD Servers by switching it to **ON**.
 
     ![SLD Servers Configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/sld-server.jpg)
 
-2. When you do it for the first time, you can get an error saying that you must have the following statement in the Post-transaction procedure. After adding the code, you can turn the "Background Processing Date" to **ON**.
+2. If this is your first time setting it up, you may encounter an error requesting that you add a specific statement in the Post-transaction procedure. Once the required code is added, you can proceed to turn the "Background Processing Date" to **ON**.
 
     ![SLD Servers Configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/image2021-4-27-14-37-52.png)
 
@@ -20,7 +20,7 @@ sidebar_position: 8
 
     ![Plugins Configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/Plugins.jpg)
 
-2. Activate **ProcessForce** and **MI360** for your company.
+2. Activate both **ProcessForce** and **MI360** for your company.
 
     ![Plugins Configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/image2021-4-27-14-45-43.png)
 
@@ -36,12 +36,15 @@ Preventive Maintenance Schedule based on **Time** set up:
 
 Preventive Maintenance Schedule based on **Meter** values set up.
 
-    1. Go in to the **PMScheduleMeterBasedJob**, **PMScheduleTimeBasedJob**, and **SEventJob** background processing and activate it for your company.
+    1. Go to the **PMScheduleMeterBasedJob**, **PMScheduleTimeBasedJob**, and **SEventJob** background processing and activate them for your company.
 
         ![Background Processing configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/image2021-4-28-9-41-35.png)
 
 Preventive Maintenance Schedule based on **Time** and **Meter** values set up:
 
-    1. Go in to the **PMScheduleMeterBasedJob**, **PMScheduleTimeBasedJob**, and **SEventJob** background processing and activate it for your company.
+    1. Go to the **PMScheduleMeterBasedJob**, **PMScheduleTimeBasedJob**, and **SEventJob** background processing and activate them for your company.
 
     ![Background Processing configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/image2021-4-28-9-44-34.png)
+
+---
+By following these steps, you will have successfully set up AppEngine for Preventive Maintenance scheduling, with configurations for both time-based and meter-based schedules. With this setup, your preventive maintenance activities will be executed on time and according to the defined parameters, leading to improved equipment reliability and reduced downtime.

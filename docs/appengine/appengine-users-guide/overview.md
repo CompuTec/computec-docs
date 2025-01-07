@@ -6,7 +6,7 @@ sidebar_position: 1
 
 The platform main window allows to go to three main sections:
 
-- [Launchpad](../appengine-users-guide/launchpad.md)
+- [Launchpad](launchpad.md)
 - [Configuration and Administration](../administrators-guide/configuration-and-administration/configuration.md)
 - [REST/OData API Documentation](../developers-guide/rest-odata-api/rest-odata-api-documentation.md)
 

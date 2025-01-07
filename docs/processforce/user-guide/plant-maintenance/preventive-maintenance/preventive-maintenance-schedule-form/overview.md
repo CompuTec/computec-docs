@@ -4,29 +4,31 @@ sidebar_position: 1
 
 # Overview
 
-PM Schedules are defined using the PM Schedule form. This form is a grouping of schedules defined for MI in the grid lines.
+PM Schedules are created and managed using the PM Schedule form, which serves as a structured grouping of schedules defined for Maintainable Items (MI) in the grid lines.
 
-The form header is used to specify schedule parameters (left side) and selection filters that allow you to select serviced MI and template MO (right side).
+The form header is divided into two key sections:
 
-Schedule parameters from the header are copied to the added grid lines, where they can be modified. The selections specified in the filters section for MI and MO templates determine the possible choices in the grid lines.
+1. **Schedule Parameters** (left side): Used to define global scheduling settings.
+2. **Selection Filters** (right side): Used to specify filters for selecting the serviced MI and the corresponding Maintenance Order (MO) templates.
 
-For clarity of the schedules you define, we recommend that you group your schedules according to the characteristics defined in the header.
+Parameters defined in the header are automatically applied to new grid lines but can be customized at the grid line level as needed. The filters for MI and MO templates in the header influence the available options in the grid lines.
 
-![Preventive Maintenance](./media/preventive-maintenance.png)
+For clarity of the schedules you define, it is recommended to group schedules based on shared characteristics defined in the header. This approach ensures consistency and simplifies the management of schedules.
+
+    ![Preventive Maintenance](./media/preventive-maintenance.png)
+
+---
 
 ## Header
 
-**PM Schedule** – global code for PM Schedules grouped in the form
+The header section provides an overview of key parameters and settings for PM Schedules.
 
-**PM Type** – Fixed, Variable, Fixed(Duplicate). The value defined in the header is then available in grid lines that can be changed.
+**PM Schedule** – A global code for PM Schedules grouped within the form.
 
-For the first iteration starting value is used as a base for calculation of trigger.
-
-**Fixed** - a calculation of the next trigger is incremented iteratively with fixed interval.
-
-**Variable** - a calculation of the next trigger is based on value saved on the MO closing.
-
-New MO can be generate if previous MO is finished. It is not valid for Fixed(Duplicated).
+**PM Type** – Defines how the PM Schedule operates. Options include:
+    - **Fixed** – The next trigger is calculated by incrementing a fixed interval iteratively.
+    - **Variable** – The next trigger is based on the value recorded at the time of the last MO closure.
+    - **Fixed (Duplicate)** – Operates like Fixed but allows overlapping MOs. For the first iteration, the starting value is used as the base for trigger calculation. A new MO is generated only if the previous MO is finished (except for Fixed (Duplicate)).
 
 <details>
     <summary>Fixed/Variable</summary>
@@ -35,35 +37,37 @@ New MO can be generate if previous MO is finished. It is not valid for Fixed(Dup
 </div>
 </details>
 
-**PM Class** – a class of PM Schedule.
+**PM Class** – The classification of the PM Schedule.
 
-**Supervisor** – a user responsible for the PM Schedule. The value defined in the header is then available in grid lines that can be changed.
+**Supervisor** – The user responsible for the PM Schedule. The value is defined in the header and can be adjusted in grid lines.
 
-**Created On** – date of creation.
+**Created On** – The creation date of the PM Schedule.
 
-**Created By** – a user who created the PM Schedule.
+**Created By** – The user who created the PM Schedule.
 
-**Deactivation Date** – a date after which the schedule will not be performed. The value defined in the header is then available in grid lines that can be changed. The date specified in the grid line has higher priority. It works together with Starting Date in a grid line. Starting from this date, the PM Schedule is active.
+**Deactivation Date** – Specifies the date beyond which the schedule is inactive. The value defined in the header is then available in grid lines that can be changed. The date specified in the grid line has higher priority.
 
-**Out of Service** – if checked in the header, all PM Schedules from the form will not be active. If not checked in the header but in a grid line, only this PM schedule will not be active. The value defined in the header is then available in grid lines where it can be changed.
+**Out of Service** – If checked in the header, all PM Schedules in the form are inactive. If checked at the grid line level, only that specific PM Schedule is inactive. The value defined in the header is then available in grid lines where it can be changed.
 
-**Time Based** – mode based on the passage of time. The value defined in the header is then available in grid lines where it can be changed.
+**Time Based** – Enables scheduling based on time intervals. The value is adjustable in grid lines.
 
-**Perform Every** – a time interval between the generation of successive MOs. The value defined in the header is then available in grid lines where it can be changed.
+**Perform Every** – Defines the time interval between successive MOs. Adjustable in grid lines.
 
-**Expedite** – an interval that is subtracted from Due Date to expedite MO generation. The value defined in the header is then available in grid lines where it can be changed.
+**Expedite** – Reduces the Due Date by a specified interval to expedite MO generation. Adjustable in grid lines.
 
-**Meter Based** – mode based on meter readings for Effective Meter assigned to MI. The value defined in the header is then available in grid lines where it can be changed.
+**Meter Based** – Enables scheduling based on meter readings for the Effective Meter assigned to the Maintainable Item (MI). Adjustable in grid lines.
 
-**Exclude** – active if both conditions (Time Based, Meter Based) are considered. If checked, when the first is fulfilled, the second is excluded for the current iteration, both are recalculated, and modes are synchronized. If not checked, when the first is fulfilled, the second is not excluded for the current iteration, and only the first is recalculated; modes are not synchronized. The value defined in the header is then available in grid lines where it can be changed.
+**Exclude** – Relevant when both Time-Based and Meter-Based modes are active:
+    - If checked, when one condition is met, the other is excluded, and both are recalculated.
+    - If unchecked, when one condition is met, the other is not excluded, and only the fulfilled condition is recalculated.
 
-**Starting Value** – the schedule is active for a Total Usage (measured by Effective Meter assigned to MI) greater than or equal to this value. The value defined in the header is then available in grid lines where it can be changed.
+**Starting Value** – Activates the schedule when the Effective Meter value is greater than or equal to this value. Adjustable in grid lines.
 
-**Meter Interval** – the interval between the generation of successive MOs. The value defined in the header is then available in grid lines where it can be changed.
+**Meter Interval** – Defines the meter reading interval between successive MOs. Adjustable in grid lines.
 
-**Expedite by Meters Unit** – value in Meter Units is subtracted from Due by Meter Value to expedite MO generation. The value defined in the header is then available in grid lines where it can be changed.
+**Expedite by Meters Unit** – Expedites MO generation by subtracting a specified meter unit value from the Due by Meter Value. Adjustable in grid lines.
 
-**PM Schedule Scope** – descriptive scope of PM Schedules
+**PM Schedule Scope** – A descriptive field outlining the scope of PM Schedules.
 
 **MI Class** – Maintainable Item class. The value defined in the header is then available in grid lines where it can be changed. Limits the choice in grid lines.
 
@@ -71,7 +75,7 @@ New MO can be generate if previous MO is finished. It is not valid for Fixed(Dup
 
 **MI Code** – Maintainable Item code. The value defined in the header is then available in grid lines where it can be changed. Limits the choice in grid lines.
 
-**MI Name** - Maintainable Item name.
+**MI Name** - The name of the Maintainable Item.
 
 **EM Type** – Effective Meter Type. The value defined in the header is then available in grid lines where it can be changed. Limits the choice in grid lines. Limits the choice in grid lines.
 
@@ -83,54 +87,60 @@ New MO can be generate if previous MO is finished. It is not valid for Fixed(Dup
 
 **MO Template** – Maintenance Order template. The value defined in the header is then available in grid lines where it can be changed. Limits the choice in grid lines.
 
-**Manually triggered** – Selecting the checkbox "Manually triggered" means that schedules in this group are not automatically generated via JOB but are started manually by using the "Run" button.
+**Manually triggered** – Selecting the checkbox "Manually triggered" means that schedules in this group are not automatically generated via JOB but must be triggered manually using the "Run" button.
 
-**Skip Time and Meter rules** – If you select the "Skip Time and Meter rules" checkbox with "Manually triggered" selected, the Time Based and Meter Based conditions defined in the schedules in this group are not checked when you choose the "Run" button. Conditions based on Start Date, Out of Service, Deactivation Date, and MO-related restrictions that determine the operation of One active MO/Many active MO are checked.
+**Skip Time and Meter rules** – If you select the "Skip Time and Meter rules" checkbox with "Manually triggered" selected, the Time-Based and Meter-Based conditions are ignored when the Run button is used. Other conditions, such as Starting Date, Out of Service, Deactivation Date, and MO-related restrictions, still apply.
 
 ## Grid Column (not described in the header)
 
-**Code** – PM Schedule code. Unique in the PM Schedule form.
+The grid section provides additional details and controls for defining and managing PM Schedules.
 
-**MO Type** – Maintenance Order type. Value from MO Template. With this type, MO will be generated.
+**Code** – A unique identifier for the PM Schedule in the form.
 
-**MO Status** - Maintenance Order status. Value from MO Template. With this status, MO will be generated.
+**MO Type** – The type of Maintenance Order, based on the selected MO Template. This determines the type of MO that will be generated.
 
-**Priority** - Maintenance Order priority. Value from MO Template. Whit this priority MO will be generated.
+**MO Status** - The status of the Maintenance Order, as defined by the MO Template. This status governs the generation of the corresponding MO.
 
-**MO Duration** - Maintenance Order duration. Value from MO Template. With this priority, MO will be generated.
+**Priority** - The priority assigned to the Maintenance Order, taken from the MO Template. This defines the urgency of the generated MO.
 
-**Hours Per Day** – definition from MO Template. With this value, MO will be generated.
+**MO Duration** - The duration for which the Maintenance Order is expected to last, based on the MO Template.
 
-**Starting Date** – a date that defines starting point for PM Schedule activation.
+**Hours Per Day** –  The number of operational hours per day for the Maintenance Order, as specified in the MO Template.
 
-**Due Date/Time** – due date for the next maintenance
+**Starting Date** – The date when the PM Schedule is activated and starts its execution.
 
-**Current Trigger Date/Time** – trigger date for next MO generation
+**Due Date/Time** – The date and time when the next maintenance task is due.
 
-**Expedite in** – a unit of measure for the expedition.
+**Current Trigger Date/Time** – The calculated date and time when the next Maintenance Order (MO) will be triggered.
 
-**Last Trigger Date/Time** – a trigger date for the last MO generation
+**Expedite in** – A unit of measure for the expedition.
 
-**Last Service End Date/Time** – date of the end of the last MO
+**Last Trigger Date/Time** – The date and time when the last Maintenance Order was triggered.
 
-**Due by Meter Value** – Effective Meter total usage value for the next maintenance
+**Last Service End Date/Time** – The date and time when the last Maintenance Order was completed or closed.
 
-**Current Trigger Value** – Effective Meter total usage value for MO generation
+**Due by Meter Value** –  The total effective meter reading or usage value that indicates when the next maintenance is due.ce
 
-**Last Trigger Value** – Effective Meter total usage value for the last MO generation
+**Current Trigger Value** – The current meter reading or usage value that will trigger the next Maintenance Order.
 
-**Meter Reading** – a number of a document for the last meter reading
+**Last Trigger Value** – The meter reading or usage value at the time the last Maintenance Order was triggered.
 
-**Last Service End Value** – the value of the Effective Meter total usage on MO closing/finishing/canceling
+**Meter Reading** – The document number for the most recent meter reading.
 
-**Last Service End Meter Reading** - a number of a document for the youngest meter reading for MO closing/finishing/canceling
+**Last Service End Value** – The meter reading value at the closure, finish, or cancellation of the last Maintenance Order.
 
-**Triggered By** – the cause of the MO generation from the PM Schedule: Time, Meter, Time, and Meter, Manually forced
+**Last Service End Meter Reading** - The document number for the latest meter reading at the time of MO closure or cancellation.
 
-**Assigned To** – a supervisor, user responsible for the PM Schedule
+**Triggered By** – Specifies the cause for the generation of the Maintenance Order from the PM Schedule: it could be based on time, meter, a combination of both, or a manual trigger.
 
-**Last MO No**. – a number of a document from the last Maintenance Order
+**Assigned To** – The supervisor or user who is responsible for the management and oversight of the PM Schedule.
 
-**Last MO Status** – status of the last MO
+**Last MO No**. – The document number of the most recent Maintenance Order generated.
 
-**Last MO status Date/Time** – date/time for the previous MO status
+**Last MO Status** –  The status of the last Maintenance Order.
+
+**Last MO status Date/Time** – The date and time when the status of the last Maintenance Order was updated.
+
+---
+
+The Preventive Maintenance Schedule form is a powerful tool that helps organizations automate and streamline their maintenance processes, ensuring timely interventions and reducing downtime. By utilizing various scheduling parameters and customizing schedules for each specific MI and MO, businesses can optimize the maintenance lifecycle and improve operational efficiency. With flexibility in defining schedules based on time, meters, or manual triggers, the form provides a comprehensive approach to preventive maintenance management.

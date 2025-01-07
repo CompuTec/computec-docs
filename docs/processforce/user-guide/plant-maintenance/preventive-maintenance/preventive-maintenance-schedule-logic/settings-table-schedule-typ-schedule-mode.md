@@ -6,6 +6,6 @@ sidebar_position: 9
 
 | | Time Based | Meter Based | Time & Meter Based (Exclude) <br/>Synchronization of modes | Time & Meter Based (Not Exclude) <br/>Lack of synchronization of modes |
 | --- | --- | --- | --- | --- |
-| **Fixed** <br/>One active MO | <li>Constant MO generation interval – Time Units</li> | <li>Constant MO generation interval – Meter Units</li> | <li>Variable MO generation interval – Time & Meter Units</li> | <li>Variable MO generation interval – Time & Meter Units</li> |
-| **Variable** <br/>One active MO | <li>Variable MO generation interval – Time Units</li> | <li>Variable MO generation interval – Meter Units</li> | <li>Variable MO generation interval – Time & Meter Units</li> | <li>Variable MO generation interval – Time & Meter Units</li> |
-| **Fixed (Duplicate)** <br/>Many active MOs | <li>Constant MO generation interval – Time Units</li> | <li>Constant MO generation interval – Meter Units</li> | <li>Variable MO generation interval – Time & Meter Units</li> | <li>Variable MO generation interval – Time & Meter Units</li> |
+| **Fixed** <br/>One active MO | Constant MO generation interval – Time Units | Constant MO generation interval – Meter Units | Variable MO generation interval – Time & Meter Units | Variable MO generation interval – Time & Meter Units |
+| **Variable** <br/>One active MO | Variable MO generation interval – Time Units | Variable MO generation interval – Meter Units| Variable MO generation interval – Time & Meter Units | Variable MO generation interval – Time & Meter Units |
+| **Fixed (Duplicate)** <br/>Many active MOs | Constant MO generation interval – Time Units | Constant MO generation interval – Meter Units | Variable MO generation interval – Time & Meter Units | Variable MO generation interval – Time & Meter Units |
