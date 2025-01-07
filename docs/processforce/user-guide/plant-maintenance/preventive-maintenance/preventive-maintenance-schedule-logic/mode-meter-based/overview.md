@@ -4,20 +4,22 @@ sidebar_position: 1
 
 # Overview
 
-This is a mode in which the scheduler refers to Meter Value, which is the Total Usage value that is updated with each reading for the Effective Meter defined for MI.
-The basic condition for generating a new MO in this mode is:
+This mode involves the scheduler referring to the Meter Value, which represents the total usage value updated with each reading for the Effective Meter defined for the Maintenance Item (MI).
+
+A new Maintenance Order (MO) will be generated if the following condition is met:
 
 ```text
             Current Meter Value >= Current Triggered Value
 ```
 
-If this condition is met, i.e., that the latest meter reading is equal to or greater than the counter value for generating MO (Current Triggered Value), a new MO is generated.
-Calculation of value for MO generation:
+This means that when the latest meter reading is equal to or greater than the counter value required for generating the MO (the Current Triggered Value), a new MO will be created.
+
+The Current Triggered Value (n) is calculated as:
 
 ```text
 Current Triggered Value(n)= Due by Meter Value(n) – Expedite by Meter Units
 ```
 
-That is, the user can define in advance (Expedite by Meter Units) will be generated MO (with status Work Request) in relation to the required value of the counter (Due by Meter Value) for the MO(n) run.
+This allows the user to define how much in advance the MO will be generated, based on the required meter value for the MO (n). The Expedite by Meter Units specifies how early the MO (in "Work Request" status) should be triggered in relation to the required value of the counter (Due by Meter Value) for the MO(n) run.
 
-If MO is generated, then the next required meter value (Due by Meter Value(n+1)) is calculated for the MO run based on the value set for Meter Interval. The Due by Meter Value calculation and MO generation rules depend on Schedule Type: Fixed, Variable, Fixed(Duplicate).
+Once an MO is generated, the next required meter value (Due by Meter Value (n+1)) for the next MO run is calculated based on the Meter Interval. The rules for calculating the Due by Meter Value and generating the MO depend on the chosen Schedule Type: Fixed, Variable, Fixed(Duplicate).

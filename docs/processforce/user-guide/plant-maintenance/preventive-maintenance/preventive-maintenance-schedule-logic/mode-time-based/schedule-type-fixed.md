@@ -4,22 +4,34 @@ sidebar_position: 2
 
 # Schedule Type Fixed
 
-This is the type of schedule in which MOs are generated at fixed time intervals. The setting of a new Due Date for the next MO (n+1) is determined when a new MO is generated and refers to the Due Date set in the previous MO pass (n).
+The Fixed schedule type generates Maintenance Orders (MOs) at fixed time intervals. The Due Date for the next MO (n+1) is calculated when the current MO (n) is generated and is based on the Due Date of the previous MO pass (n).
 
-For **Schedule Type = Fixed**, calculations and generating another MO depend on the status of the last MO generated. If the status of the previously generated MO from the schedule is: Finished, Closed, or Cancelled, then MO is generated. The existence of MO generated from the schedule with a status different from those listed blocked, you generate a new MO and calculation of Due Date. As a result, only one MO with a status other than Finished, Closed, or Cancelled (One active MO) can be generated from the PM Schedule.
+---
 
-This is the type of schedule in which MOs are generated at fixed time intervals. The setting of a new Due Date for the next MO(n+1) is determined at the time the MO(n) is generated and refers to the Due Date set for MO(n).
-Calculations of the new Due Date:
+For **Schedule Type = Fixed**, the generation of a new MO depends on the status of the last MO generated from the schedule.
+    - If the status of the previous MO is Finished, Closed, or Cancelled, a new MO will be generated.
+    - If there is an existing MO with a status other than the ones listed (e.g., active or pending), a new MO will not be generated. This ensures that only one active MO exists at any time for the schedule.
+
+This schedule type generates MOs at fixed time intervals. The Due Date for the next MO (n+1) is set when the current MO (n) is generated and is based on the Due Date of the previous MO (n).
+
+When a new MO is generated, the Due Date for the next MO is calculated as follows:
 
 ```text
             Due Date (n+1) = Due Date (n)  + Perform Every
 ```
 
-That is, if the last Due Date(n) = 02.11.2020 (Monday), Every = 7 (week), then the next Due Date(n+1) will fall on the following Monday, 09.11.2020.
-Calculation of the MO generation (trigger) date:
+**Example**
+
+If the last Due Date (n) is 02.11.2020 (Monday) and the interval (Perform Every) is 7 days, the next Due Date (n+1) will be 09.11.2020 (Monday).
+
+To determine when an MO will be generated, the trigger date is calculated as:
 
 ```text
             Current Triggered Date (n+1)= Due Date (n+1) – Expedite
 ```
 
-If the user wants to have the MO generated in advance, e.g., on Friday, it should set Expedite = 3. Then 09.11.2020 – 3 = 06.11.2020, and when Current Date is >= 06.11.2020, MO will be generated.
+**Example**:
+
+If the next Due Date (n+1) is 09.11.2020, and the user wants the MO to be generated 3 days in advance, they should set Expedite = 3.
+    - Trigger Date = 09.11.2020 - 3 = 06.11.2020 (Friday).
+    - When the Current Date is >= 06.11.2020, the MO will be generated.

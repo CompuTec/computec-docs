@@ -4,17 +4,19 @@ sidebar_position: 4
 
 # Schedule Type Fixed(Duplicate)
 
-For **Schedule Type = Fixed(Duplicate)**, the calculation is identical to that for Schedule Type = Fixed. This is the type of schedule in which MOs are generated at fixed time intervals. The difference with Fixed is that the MO is generated regardless of the status of the last MO. That is, as a result, from the PM Schedule can generate multiple MO with a group other than Finished, Closed, or Cancelled (Many active MOs). The consequence of this is to generate a MO each time the condition is met:
+For **Schedule Type = Fixed (Duplicate)**, the calculation is similar to that for **Schedule Type = Fixed**, where MOs are generated at fixed time intervals. However, the key difference is that for Fixed (Duplicate), MOs are created regardless of the status of the previous MO. This means multiple active MOs can exist simultaneously, even if the previous MOs are not in a "Finished," "Closed," or "Cancelled" (Many active MOs) status.
+
+A new MO is generated whenever the following condition is met:
 
 ```text
             Current Date >= Current Triggered Date(n)
 ```
 
-At the same time as generating another MO, calculations are carried out for Fixed:
+When a new MO is generated, the following calculations are performed, as in Fixed scheduling:
 
 ```text
             Due Date(n+1) = Due Date(n) + Perform Every
             Current Triggered Date(n+1) = Due Date(n+1) – Expedite
 ```
 
-That is, for the data from the example for Schedule Type = Fixed, MO will be generated every Friday regardless of what statuses the previously developed MO had.
+That is, for a schedule configured as Fixed (Duplicate), if the MOs are set to be generated every Friday, a new MO will be created each Friday, regardless of the status of the previously generated MOs. This ensures that MOs are consistently generated on schedule, even if earlier MOs are still active or incomplete.

@@ -4,4 +4,4 @@ sidebar_position: 2
 
 # Exclude Mode
 
-Meeting Time Based conditions generate MO, skipping conditions Meter Based on this iteration, and calculating values for both modes. Conversely, meeting Meter Based conditions generates MO and skipping conditions for Time Based and calculating values for both modes. This means the synchronicity of both modes. That is, for an event that meets the conditions of one of the mode, the values for both modes are recalculated.
+When the Time-Based conditions are met, the system generates the MO while skipping the Meter-Based conditions for that iteration, recalculating values for both modes. Conversely, when the Meter-Based conditions are met, the system generates the MO and skips the Time-Based conditions, recalculating values for both modes. This ensures the synchronization of both modes, meaning that when one mode’s conditions are satisfied, values for both modes are recalculated.

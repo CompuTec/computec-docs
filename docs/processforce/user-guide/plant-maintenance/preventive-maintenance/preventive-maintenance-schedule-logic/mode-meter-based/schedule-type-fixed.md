@@ -4,20 +4,28 @@ sidebar_position: 2
 
 # Schedule Type - Fixed
 
-For **Schedule Type = Fixed**, calculations and generating another MO depends on the status of the last MO generated. If the status of the previous generated MO is: Finished, Closed, or Cancelled, then MO is generated. The remaining statuses of the last generated MO block the generation of the new MO and the Due by Meter Value calculation. As a result, only one MO with a status different than Finished, Closed, or Cancelled (One active MO) can be generated from the PM Schedule.
+For **Schedule Type = Fixed**, the generation of a new Maintenance Order (MO) depends on the status of the last generated MO. If the status of the previous MO is Finished, Closed, or Cancelled, a new MO will be generated. However, if the status of the last MO is any other status, it will block the generation of a new MO and prevent the calculation of the Due by Meter Value. As a result, only one active MO can exist at any time, with a status other than Finished, Closed, or Cancelled.
 
-This is the type of schedule in which MOs are generated at fixed intervals of the Meter Value (Total Usage of MI for the Effective Meter). The determination of the new Due by Meter Value for the next MO(n+1) is determined at the time the MO(n) is generated and refers to the Due by Meter Value set for MO(n).
-Calculation of the new required meter value for MO generation:
+This schedule type generates MOs at fixed intervals based on the Meter Value (the total usage for the Effective Meter). The new Due by Meter Value for the next MO (n+1) is determined when the MO (n) is generated and refers to the Due by Meter Value set for MO (n).
+
+The new required meter value for the next MO is calculated as follows:
 
 ```text
         Due by Meter Value(n+1) = Due by Meter Value(n) + Meter Interval
 ```
 
-So, if Due by Meter Value(n) = 2000, Meter Interval = 1000, then the next Due by Meter Value(n+1) will have a value of 3000.
-Calculation of the new meter trigger value for MO generation:
+**Example**
+
+If Due by Meter Value (n) = 2000 and Meter Interval = 1000, then the next Due by Meter Value (n+1) will be 3000.
+
+The Current Triggered Value for the next MO is calculated by:
 
 ```text
 Current Triggered Value(n+1) = Due by Meter Value(n+1) – Expedite by Meter Units
 ```
 
-So, if you want to have a MO generated in advance of 300 units of the measured value, you should set Expedite by Meter Units = 300. Then Current Triggered Value(n+1) = 3000 – 300 = 2700, and when Current Meter Value >= 2700 new MO will be generated.
+**Example**
+
+If the user wants the MO to be generated in advance by 300 units, they would set Expedite by Meter Units = 300.
+        - The new Current Triggered Value (n+1) would be 3000 - 300 = 2700.
+        - When the Current Meter Value reaches >= 2700, the new MO will be generated.

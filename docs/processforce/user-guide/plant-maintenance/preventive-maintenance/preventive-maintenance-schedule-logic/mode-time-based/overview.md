@@ -4,18 +4,24 @@ sidebar_position: 1
 
 # Overview
 
-The basic condition for generating a new MO in this mode is:
+The basic condition for generating a new Maintenance Order (OR) in this mode is:
 
 ```text
             Current Date >= Current Triggered Date = Due Date
 ```
 
-If the condition is met, the new MO must be generated no later than the Due Date. The user can determine if MO will be generated in advance by entering Expedite
-Where:
+If this condition is met, the new MO must be generated no later than the specified Due Date. Users can specify an Expedite value to determine if the MO will be generated in advance.
 
-```text
-            Current Triggered Date (n)= Due Date (n) - Expedite
-```
+## Key Details
 
-That is, the user can define how early (Expedite) will be generated the MO (in the status of Work Request) about the required term (Due Date).
-If the order is generated, the next Due Date for MO is calculated based on the interval (Perform Every). The method of Due Date calculation and rules of MO generation depends on the Schedule Type: Fixed, Variable, Fixed(Duplicate).
+- **Expedite Adjustment**: The Current Triggered Date (n) is calculated as:
+
+    ```text
+                Current Triggered Date (n)= Due Date (n) - Expedite
+    ```
+
+    This allows the user to define how early the MO (in "Work Request" status) should be generated relative to the Due Date.
+
+- **Due Date** - deadline by which the MO must be created.
+
+Once an MO is generated, the next Due Date is calculated based on the specified interval (Perform Every). The method of calculating Due Dates and the rules for MO generation depend on the selected Schedule Type, which can be one of the following: Fixed, Variable, Fixed(Duplicate).

@@ -4,17 +4,32 @@ sidebar_position: 2
 
 # PM Schedule Activation-Deactivation: General Conditions
 
-    1. All PM Schedules from a given form can be disabled by selecting in the form's header the checkbox "Out of Service".
-    2. A given PM Schedule in a line can be disabled by selecting the checkbox "Out of Service".
-    3. The PM Schedule is active if
+Efficient maintenance planning ensures seamless operations in any asset-intensive organization. This guide explores the conditions for enabling or disabling Preventive Maintenance (PM) schedules and the generation of Maintenance Orders (MOs) based on time or meter readings.
 
-    ```text
-                Starting Date < = Current Date < = Deactivated Date
-    ```
-The conditions for generating an order can be based on the passage of time or meter readings assigned to a given MI using EM Type. We have two modes: Time-Based and Meter Based, and two basic types: Fixed and Variable.
+---
 
-In the Fixed type, we have a constant interval in which MOs are generated. In the Variable type, the interval is variable.
+## Activating and Disabling PM Schedules
+
+1. **Disabling All Schedules**: The "Out of Service" checkbox in the form's header disables all PM schedules associated with that form.
+2. **Disabling Individual Schedules**: The "Out of Service" checkbox in a specific line disables the corresponding PM schedule.
+3. **Active Status**: A PM schedule is considered active when the following condition is met:
+Starting Date ≤ Current Date ≤ Deactivated Date
+
+**Conditions for Order Generation**
+
+Order generation relies on either the passage of time or meter readings linked to a Maintenance Item (MI) using its Equipment Management (EM) Type. Two modes and two types define this process:
+
+1. **Modes**
+    - **Time-based**: Orders are generated based on elapsed time intervals.
+    - **Meter-based**: Orders are triggered by predefined meter readings.
+
+2. **Types**
+    - **Fixed**: Orders are generated based on elapsed time intervals.
+    - **Meter-based**: Orders are triggered by predefined meter readings.
+
+**Fixed vs. Variable Intervals**
+
+- In the Fixed type, intervals between Maintenance Orders remain constant, ensuring regular maintenance.
+- In the Variable type, intervals are flexible, adapting to changing operational needs or asset conditions.
 
 ![Fixed-Variable](./media/fixed-variable.png)
-
-In the Fixed type, we have a constant interval in which MOs are generated. In the Variable type, the interval is variable.

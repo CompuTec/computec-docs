@@ -89,9 +89,9 @@ You can configure all visualization settings for the source.
 Here you can define:
 
 - **Basic Settings** -  Name, View, Default, Accessibility (Public/Private);
-- **Table Startup Settings** - settings related to the [Table view](../analytical-page/overview.md#table-options).
-- **Chart Startup Settings** - settings related to the [Chart view](../analytical-page/overview.md#chart-options).
-- **Visual Filter Startup Settings** - settings related to the [charts](../analytical-page/overview.md#chart-options).
+- **Table Startup Settings** - settings related to the [Table view](../analytical-page/overview.md#table).
+- **Chart Startup Settings** - settings related to the [Chart view](../analytical-page/overview.md#chart).
+- **Visual Filter Startup Settings** - settings related to the [charts](../analytical-page/overview.md#chart).
 
 ### Export Source
 
