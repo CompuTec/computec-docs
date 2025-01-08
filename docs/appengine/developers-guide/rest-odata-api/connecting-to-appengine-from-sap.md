@@ -24,7 +24,7 @@ A key challenge in this setup is managing tokens efficiently within B1if, especi
         ![Atom Configuration](./media/connecting-to-appengine-from-sap/htta-atom-configuration.png)
     - Login credentials are prepared using an XSL transformation atom, which structures the data for the API call.
 
-        ![Atom XML](./media/connecting-to-appengine-from-sap/atom-xml.webp)
+        ![Atom XML](./media/connecting-to-appengine-from-sap/atom-xml.png)
 
 2. **Preparing Login Data**
 
