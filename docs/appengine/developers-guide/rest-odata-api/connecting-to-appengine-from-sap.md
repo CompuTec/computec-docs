@@ -2,71 +2,80 @@
 sidebar_position: 2
 ---
 
-# Connecting to AppEngine from SAP Business One Integration Framework (B1if)
+# Connecting to AppEngine from SAP Business One Integration Framework
 
-:::warning
-    Currently, there is an issue while running simultaneous transactions using API. The workaround for this solution is calling Login and Logout separately for each transaction.
-:::
-
-Example of a connection made from B1if (v2.0) to AppEngine using REST API.
-
-There are two methods available to authenticate: using **cookies** or a **token**. In the example below, we use token authentication as it is preferable in such usage.
-
-The token is generated after a successful login operation and has a limited lifespan (20 minutes). After expiration, a new token needs to be generated. There is an additional challenge here to store tokens in B1if as an Integration Package with Scenarios can connect to one AppEngine and many different company databases. The best solution, in this case, is storing tokens in BizStore.
+Efficient integration between SAP Business One Integration Framework (B1if v2.0) and external systems like AppEngine is essential for seamless data exchange. This document demonstrates how to establish such a connection using REST API and token-based authentication.
 
 ---
 
+Example of a connection made from B1if (v2.0) to AppEngine using REST API:
+
+When integrating B1if (v2.0) with AppEngine via REST API, two authentication methods are available: **cookies** and tokens. This example focuses on token-based authentication, which is more secure and suitable for such scenarios.
+
+Tokens are generated upon a successful login and have a limited validity of 20 minutes. Once the token expires, a new one must be obtained to maintain functionality.
+
+A key challenge in this setup is managing tokens efficiently within B1if, especially when integration scenarios involve connecting a single AppEngine instance to multiple company databases. The optimal solution for this challenge is to store tokens in **BizStore**, ensuring secure and streamlined token management across integration scenarios.
+
 ## Login
 
-We will use the HTTA atom configured as shown below:
+1. **Login via HTTA Atom**
+    - The HTTA atom is configured to handle the login process.
 
-![Atom Configuration](./media/connecting-to-appengine-from-sap/htta-atom-configuration.webp)
+        ![Atom Configuration](./media/connecting-to-appengine-from-sap/htta-atom-configuration.png)
+    - Login credentials are prepared using an XSL transformation atom, which structures the data for the API call.
 
-Login data are prepared in the XSL transformation atom. The most crucial part that prepares the structure for API is marked on the screenshot:
+        ![Atom XML](./media/connecting-to-appengine-from-sap/atom-xml.webp)
 
-![Atom XML](./media/connecting-to-appengine-from-sap/atom-xml.webp)
+2. **Preparing Login Data**
+
+    The `CompanyId` parameter, essential for authentication, is retrieved from the AppEngine configuration.
+
+        ![Company ID](./media/connecting-to-appengine-from-sap/co-id-parameter.png)
 
 ## Storing Token
 
-The generated token can be saved using the Persit atom:
+Efficient token management is critical in integration scenarios where multiple company databases are involved. Tokens are stored using the Persist atom, ensuring they can be reused until expiration.
 
-![Persit Atom](./media/connecting-to-appengine-from-sap/persit-atom.webp)
+1. **Preparing Data for Storage**
 
-Data (token) that are selected by XPath expression can be prepared in transformation atom:
+    - Token data is selected using an XPath expression and prepared using a transformation atom.
 
-![Transformation-atom](./media/connecting-to-appengine-from-sap/transformation-atom.webp)
+        ![Persit Atom](./media/connecting-to-appengine-from-sap/persit-atom.png)
 
-After that, we can save it to BizStore with parameters:
+    - Token data is selected using an XPath expression and prepared using a transformation atom.
 
-- Operation Type: store_op
-- Document: Name of a document in BizStore where we want to save the token.
+        ![Transformation-atom](./media/connecting-to-appengine-from-sap/transformation-atom.png)
+
+    - The data is saved in BizStore with the following parameters:
+            - **Operation Type**: store_op
+            - **Document**: Specifies the BizStore document where the token will be saved.
 
 ## Using Token in an Integration Scenario
 
-Below is an example of sending data to AppEngine. Authentication is done using the token saved in the previous steps.
+The following example demonstrates how to retrieve data from AppEngine using the token and CompanyId saved during the previous steps:
 
-![Transformation-atom](./media/connecting-to-appengine-from-sap/step-modeler.webp)
+![Transformation-atom](./media/connecting-to-appengine-from-sap/step-modeler.png)
 
-1. **GetLux** – an atom that prepares data that will be sent to AppEngine.
-2. **GetToken** – an atom that gets a saved token (Operation Type: access_op).
+1. **GetToken** – This atom retrieves the saved token from BizStore using the operation type `access_op`.
 
-    ![Configuration](./media/connecting-to-appengine-from-sap/configuration.webp)
-3. **ToSendVal** - prepares JSON structure (according to documentation for a given object - in our example, this is InspectionReading) that will be sent to AppEngine. Atom prepares data in variables, creates \<token\> section and place JSON structure in \<bfa:io\> section.
+2. **LoginCredentials** - This atom prepares the JSON structure required for the API call. Based on the documentation for the target object (in this example, no content is sent to AppEngine since the GET method is used), the atom:
+    - Creates the `<Token>` and `<CompanyId>` sections.
+    - Places the complete JSON structure into the `<bfa:io>` section.
 
-    ![To send](./media/connecting-to-appengine-from-sap/to-send-al.webp)
-4. **SendValue** - HTTA atom sends data to AppEngine.
+        ![Login Credentials](./media/connecting-to-appengine-from-sap/login-credentials.png)
 
-    ![Send to AppEngine](./media/connecting-to-appengine-from-sap/send-to-appengine.webp)
+3. **GetMO** - The HTTA atom is configured to call the GET method for the endpoint `/api/ProcessForce/ManufacturingOrder/`.
 
-    Parameters:
+    ![Get Method](./media/connecting-to-appengine-from-sap/get-method.png)
 
-    - **destPath** - points to a function called API function.
-    - **XPath Expression** - points to JSON data.
-    - **Outbound Configuration** - in this section, we need to add the following parameters:
+In this process, the following parameters are set:
 
-      - **httpheader.content-type** - application/x-www-form-urlencoded; charset=UTF-8
-      - **httpheader.Authorization** - points to prepared token
+- **destPath** - specifies the target API function.
+- **XPath Expression** - points to the JSON data.
+- **Outbound Configuration** - in this section, the following parameters are to be added:
+        - **httpheader.content-type**: application/x-www-form-urlencoded; charset=UTF-8
+        - **httpheader.Authorization**: points to the prepared token.
+        - **httpheader.CompanyId**: specifies the CompanyId for which the token was generated.
 
-## Summary
-
-As pointed out at the beginning of the integration environment, there can be many connections to AppEngine. The described scenario minimizes the required authentication calls by saving tokens in BizStore. The token's lifetime is limited, and a new token must be obtained after its expiration. This can be done by simply recursively calling the Login and Store token, or a more sophisticated solution would be checking if a token is active and then conditionally calling the Login and Store token. The choice of a solution depends on a given business case. Error handling should also be added to the presented solution.
+---
+As highlighted earlier, integration environments often involve multiple connections to AppEngine. The proposed approach optimizes authentication by storing tokens in BizStore, thereby reducing the need for repeated login requests. Since tokens have a limited lifespan, they must be refreshed upon expiration. This can be achieved through a simple recursive process that repeatedly calls the login and store token operations. Alternatively, a more advanced solution could involve verifying the token's validity before deciding whether to refresh it. The choice between these strategies should be guided by the specific requirements of the business case. Additionally, robust error handling is essential to ensure smooth operation and address potential issues such as token expiration or API errors.
