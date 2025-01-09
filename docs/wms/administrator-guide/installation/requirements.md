@@ -118,7 +118,7 @@ If your database now has ProcessForce but was previously used without it, make s
 
 ## Supported Database Servers
 
-CompuTec WMS supports all database versions compatible with the version of SAP Business One used together with CompuTec WMS. So, these databases are supported:
+CompuTec WMS supports all database versions compatible with the currently supported version of SAP Business One by SAP, which is used together with CompuTec WMS. So, these databases are supported:
 
 - SAP HANA 2.0
 - Microsoft SQL Server 2022
