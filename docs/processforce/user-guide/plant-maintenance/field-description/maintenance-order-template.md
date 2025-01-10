@@ -4,6 +4,10 @@ sidebar_position: 4
 
 # Maintenance Order Template
 
+Maintenance Order Templates are essential tools in Plant Maintenance, enabling systematic and efficient handling of maintenance activities. This guide provides a detailed overview of the elements within Maintenance Order Templates, including their purpose, structure, and related configurations. By understanding and implementing these templates effectively, organizations can streamline their maintenance operations and enhance equipment reliability.
+
+---
+
 :::note Path
         Main Menu → Plant Maintenance → Work Setup → Maintenance Order Template
 :::
@@ -14,96 +18,62 @@ sidebar_position: 4
 
 ## Header
 
-**Template Code** – a unique code identifying the Maintenance Order Template
+The header section defines key attributes of the Maintenance Order Template:
 
-**Job scope** – descriptive information of the Job scope (brief explanation)
+- **Template Code**: a unique code identifying the Maintenance Order Template.
+- **Job scope**: a brief description of the job’s purpose.
+- **Problem Code**: a code identifying a problem from a pre-defined list.
+- **MI Class**: a class of equipment for performing the work.
+- **MI Category**: equipment category to which the standard work order applies, a category inside Class.
+- **MI Code**: the Maintenable Item for which the MO is defined.
+- **MI Name**: the name of the Maintenable Item.
+- **MI's Defaults MO**: indicates if the Maintenance Order template is set as the default for the MI.
+- **MI Excluded** - if selected, the MI is excluded from scheduling during the planned Maintenance Order period.
 
-**Problem Code** – a code identifying a problem from a list defined by the user (check here)
+The Maintenance Order (MO) can be in one of the following statuses: scheduled, started, or released. If MI Exclude is selected, the header MI of the MO becomes unavailable for production. Additionally, the time allocated for the MO is excluded from scheduling and displayed as a grey bar on the Gantt Chart in the resource view.
 
-**MI Class** – a class of equipment for performing the work (check here)
-
-**MI Category** – equipment category to which the standard work order applies, a category inside Class
-
-**MI Code** – MI for which the MO is defined
-
-**MI Name** – MI name
-
-**MI's Defaults MO** – select if the MO template is planned to default for the MI.
-
-**MI Excluded** - if checked, MI is excluded from scheduling in a planned MO period.
-
-The MO in status: scheduled, started, released. MI Exclude – MO's header MI is unavailable for production if selected. MO's time is excluded from the scheduling, visible as a grey bar on the Gantt Chart - resource view. If the MI is a parent for another MI, and in the child MI definition Dependent = Yes, then excluded time is visible on Gantt for the child MI (Resource). It works this way down the MI structure.
+If the MI acts as a parent to another MI and the child MI is marked as Dependent = Yes, the excluded time will also appear on the Gantt Chart for the child MI (resource). This exclusion propagates throughout the MI hierarchy.
 
 ![Maintenance Order Gantt Chart](./media/maintenance-order-template/maintenance-order-gantt-chart.jpg)
 
-**MO Class** – a Maintenance Order class of the template MO (check [here](../field-description/maintainable-item.md#classes))
-
-**MO Category** – a Maintenance Order category in a class
-
-**MO Dependent** – to keep the Maintenance Order open until all its children's work orders are completed
-
-**MO Type** – select a Maintenance Order type of the Maintenance Order Template
-
-**Maintenance Request** – request related to Manufacturing Order
-
-**Setup Request** – request related to Manufacturing Order
-
-**Change Over Request** – request related to Manufacturing Order
-
-**Manual Request** – maintenance request by the end user
-
-**Breakdown** – select to create a maintenance order in response to an equipment breakdown or failure
-
-**PM request** – select to create a preventive maintenance work order
-
-**MO Duration** – the duration of the template maintenance order (including Route’s MO)
-
-**MO Priority** – the priority of the maintenance order, e.g., Low, Medium, High.
+- **MO Class**: defines the Maintenance Order class of the template(check [here](../field-description/maintainable-item.md#classes)).
+- **MO Category**: specifies the Maintenance Order category within a class.
+- **MO Dependent**: ensures the Maintenance Order remains open until all child work orders are completed.
+- **MO Type**: specifies the type of Maintenance Order for the template.
+- **Maintenance Request**: request related to Manufacturing Order
+- **Setup Request**: request related to a Manufacturing Order
+- **Change Over Request**: indicates a changeover request related to a Manufacturing Order
+- **Manual Request**: maintenance request initiated by the end user
+- **Breakdown**: select to create a maintenance order in response to an equipment breakdown or failure
+- **PM request**: select to create a preventive maintenance work order.
+- **MO Duration**: specifies the duration of the template Maintenance Order, including the Route’s Maintenance Order.
+- **MO Priority**: defines the priority level of the Maintenance Order, such as Low, Medium, or High.
 
 ## Closing Codes
 
-Main Menu/Administration/Setup/Plant Maintenance/Closing Codes
+:::info Path
+Main Menu → Administration → Setup → Plant Maintenance → Closing Codes
+:::
 
-The PM contains four types of closing codes – action codes, cause codes, failure codes, and problem codes. Action codes describe the steps necessary to correct the problem (e.g., add lubricant to a pump). Cause codes identify what caused the component or type of component to fail, i.e., the root cause of the problem. Failure codes identify the reason the equipment failed. Finally, problem codes identify the observed equipment failure (e.g., a tap leak or pump overheating).
+The PM system includes four types of closing codes:
+
+1. **Action codes**: describe the actions taken to resolve a problem (e.g., adding lubricant to a pump).
+2. **Cause codes**: identify the root cause of the issue (e.g., inadequate lubrication).
+3. **Failure codes**: explain why the equipment failed (e.g., blocked lubrication pipe).
+4. **Problem codes**: highlight the observed problem (e.g., pump overheating).
 
 ![Closing Codes](./media/maintenance-order-template/closing-codes.webp)
 
-### Closing Codes Types
-
-When an object needs work, you need to know a few things about that work. You can define four types of closing Codes for objects to help in the reporting and fixing of problems:
-
-- Problem codes
-- Failure Codes
-- Cause Codes
-- Action codes
-
-#### Problem Codes
-
-Problem Codes identify the observed problem that requires correction: a leak from a tap, an overheating pump, or a cracked pipe.
-
-##### Failure Codes
-
-Failure Codes identify the actual difficulty with an object that needs work; the Problem Code notes the reason for the problem. If a pump is overheating (Problem Code), the associated Failure Code could be that the pump was not receiving adequate lubrication.
-
-#### Cause Codes
-
-Our pump overheated (Problem) because it received inadequate lubrication (Failure). It received inadequate lubrication because there was a blockage in the lubrication pip (Cause Code). Cause Codes identify where work is required, the ultimate source of the problem noted in the Failure Code, and the root cause for concern.
-
-#### Action Codes
-
-Action Codes describe what measures are taken to fix a problem. In our continuing pump example, the most obvious Action Code is cleaning the lubrication piping.
-
-Note: The use of "Downtime Reason" requires the assumption that the only problem and very general is "Downtime." Combining this with "Reason" forces the cause for "Downtime." It is better to use, e.g., Problem Code = "Power failure," Failure Code = "Downtime," and Cause Code = "Burning collateral." If the Problem Code is unclear, just give Problem Code = "Downtime" and specify the rest in the Closing Details at the end of MO.
-
 ### Priority
 
-Main Menu/Administration/Setup/Plant Maintenance/Priority
+:::info Path
+Main Menu → Administration → Setup → Plant → Maintenance → Priority
+:::
 
 ![Priority](./media/maintenance-order-template/priorities.webp)
 
-**Code** – a unique priority code
-
-**Name** – a priority name
+- **Code**: a unique priority code
+- **Name**: a priority name
 
 ## Tab Task/Checklist
 
@@ -111,256 +81,214 @@ Based on Task Template.
 
 ![MO Template Task](./media/maintenance-order-template/mo-template-task.webp)
 
-**Sequence** – order of tasks execution
-
-**Task Code** – Task's code from Task Template. The system automatically populates the task definition from the Task Template.
+- **Sequence**: order of tasks execution.
+- **Task Code**: Task's code from Task Template. The system automatically populates the task definition from the Task Template.
 
 ### Task Template
 
-Main Menu/Administration/Plant Maintenance/Work Setup/Task Template
+:::info Path
+Main Menu → Administration → Plant Maintenance → Work Setup → Task Template
+:::
 
 ![Task Template](./media/maintenance-order-template/task-template-2.webp)
 
 Header
 
-- **Task Code** – a unique code identifying the task, and then enter a description of the task in the Task Scope field
-- **Task Scope** – descriptive information of the Task Scope (brief explanation of the problem)
-- **Class** – a class of the task here
-- **Trade** – a trade with which to associate the task here
-- **Estimated Duration** – the number of hours estimated to complete the task
-- **People Required** – several people are required to complete the task
-- **Out of Service** – select to indicate the task should not be displayed in lookups, e.g., on Template MO.
+- **Task Code**: a unique code identifying the task. Enter a description of the task in the Task Scope field.
+- **Task Scope**: descriptive information of the Task Scope (brief explanation of the problem)
+- **Class**: categorize the task based on its class/type.
+- **Trade**: specify the trade associated with the task.
+- **Estimated Duration**: the number of hours estimated to complete the task.
+- **People Required**: indicate the number of people necessary to execute the task.
+- **Out of Service**: select this option if the task is inactive and should not appear in lookups,, e.g., on Template MO.
 
 #### Trade
 
-Main Menu/Administration/Setup/Plant Maintenance/Trade
+:::info Path
+Main Menu: Administration → Setup → Plant Maintenance → Trade
+:::
 
-Trades are codes for the types of employees performing maintenance work. A single trade can have multiple rates based on the cost trade type or the department associated with the trade for a specific Maintenance Order. Based on an hourly rate, the system will charge (not implemented in phase I) the trade cost back to the appropriate maintenance order, MI, or project, ensuring correct cost accounting. On the Qualifications tab, you may associate qualifications with trades to establish the minimum qualifications for an employee belonging to a trade to perform the work for which the trade is selected.
+Trades are unique codes that define the types of employees performing maintenance tasks. A single trade may have multiple rates depending on the cost trade type or the department associated with the trade for a specific Maintenance Order. The system, based on an hourly rate, charges the trade costs to the corresponding maintenance order, MI, or project for accurate cost tracking (this feature is not implemented in phase I). On the Qualifications tab, qualifications can be associated with trades to set the minimum qualifications required for an employee in a specific trade to perform tasks related to that trade.
 
 ![Trade](./media/maintenance-order-template/trade.webp)
 
-**Trade** – a unique code identifying the trade
-
-**Description** – descriptive information about the Trade
-
-**Class** – enter the class to further subdivide the trade as necessary, e.g., specify apprentice, journeyman, or master.
+- **Trade**: a unique code identifying the trade.
+- **Description**: descriptive information about the trade.
+- **Class**: enter the class to further subdivide the trade as necessary, e.g., specify apprentice, journeyman, or master.
 
 ##### Rates tab
 
-Rates are defined for Trades. When booking hours, the system checks to see if an Hourly Rate is determined for an Employee. If so, the hours are booked at that rate. However, if you have not defined trade rates for the employee, the system assigns the Hourly Rate defined for the Trade on the Trade Rates tab.
+The Rates tab defines the hourly rates for trades. When booking hours, the system checks if an hourly rate is assigned to the employee. If so, the employee's rate is applied. If not, the system defaults to the hourly rate defined for the trade on the Rates tab.
 
 ![Rates tab](./media/maintenance-order-template/rates-tab.webp)
 
-**Type of Hours** – hour occupation type for this work, e.g., select regular or overtime hours.
-
-**Department** – the department associated with this rate. If the rate applies to all departments, leave empty (Main Menu/Administration/Setup/Stock Management/Departments)
-
-**Hourly Rate** – the hourly rate for this trade
-
-**Start Date and End Date** – beginning and ending dates to which the rate applies
-
-**Note**: Dates for the same hours/department combination cannot overlap.
+- **Type of Hours**: specifies the type of hours worked (e.g., regular or overtime).
+- **Department**: the department associated with this rate. If the rate applies to all departments, leave empty (Main Menu/Administration/Setup/Stock Management/Departments)
+- **Hourly Rate** – the hourly rate for this trade.
+- **Start Date and End Date** – beginning and ending dates to which the rate applies.
+- **Note**: Dates for the same hours and department combination cannot overlap.
 
 #### Qualification tab
 
 ![Qualification tab](./media/maintenance-order-template/qualification-tab.webp)
 
-Qualification Code – the qualification code (based on the template here) to associate with the trade.
+- **Qualification Code**: a unique qualification code associated with the trade, based on the qualification template.
 
 #### Qualification Template
 
-Main Menu/Administration/Setup/Plant Maintenance/Qualification
+:::info Path
+Main Menu: Administration → Setup → Plant Maintenance → Qualification
+:::
 
 ![Qualification](./media/maintenance-order-template/qualification.webp)
 
-**Qualification Code** – a unique code identifying the qualification and then entering a description in the adjacent field.
-
-**Class** – enter the class of the qualification here
-
-**Active** – select to indicate whether the qualification is active. You can also select and unselect Active to temporarily activate and deactivate a qualification.
-
-**Training Record** – by defining a qualification as a training record, the system does not track the qualification for qualification enforcement. The qualification cannot be associated with tasks, trades, and work order activities.
+- **Qualification Code**: a unique code identifying the qualification. Enter a description in the adjacent field.
+- **Class**: enter the class of the qualification here.
+- **Active**: select this option to mark the qualification as active. You can also select and unselect Active to temporarily activate and deactivate a qualification.
+- **Training Record**: mark the qualification as a training record if it does not need to be enforced for qualification tracking. In this case, the qualification cannot be associated with tasks, trades, or work order activities.
 
 ### Instruction tab
 
 ![Task Template](./media/maintenance-order-template/task-template-2.webp)
 
-**Language** – select the language of the instruction
-
-**Instructions** – enter the comments on the screen
+- **Language**: select the language for the instructions.
+- **Instructions** – enter the comments on the screen.
 
 ### Checklist tab
 
 ![Task Template Checklist](./media/maintenance-order-template/task-template-checklist.webp)
 
-**Sequence** – order of the checkpoint execution
-
-**Checkpoint Code** – step in a task defined in the Checkpoint Template
+- **Sequence**: defines the order in which the checkpoint steps should be executed.
+- **Checkpoint Code**: select the specific step in the task, defined in the Checkpoint Template.
 
 ## Checkpoint Template
 
-Main Menu/Administration/Plant Maintenance/Work Setup/Checkpoint Template
+:::info Path
+Main Menu → Administration → Plant Maintenance → Work Setup → Checkpoint Template
+:::
 
 ![Checkpoint Template](./media/maintenance-order-template/checkpoint-template.webp)
 
-**Checkpoint Code** – a unique code for a checkpoint
+- **Checkpoint Code**: a unique code for a checkpoint.
+- **Check Scope**: descriptive information about checkpoint scope.
+- **Type**: specifies the type of checklist item,: Checklist Item, Question, Quantitative, Qualitative, Inspection, or Meter Reading.
 
-**Check Scope** – descriptive information about checkpoint scope
+>Note: Checkpoint Type determines how the checkpoint will be reported in Maintenance Order
 
-**Type** – checklist Item type: Checklist Item, Question, Quantitative, Qualitative, Inspection, or Meter Reading.
-Note: Checkpoint Type determines how the checkpoint will be reported in Maintenance Order
+- **MI Class**: the MI Class for which the checkpoint is designated.
+- **MI Category**: the MI Category applicable to the checkpoint.
 
-**MI Class** – MI Class for which the checkpoint is designated (check here)
+>Note: MI Class/MI Category determines what findings will be visible in the tab Findings (check here)
 
-**MI Category** – The MI Category for which the checkpoint is designated
+- **MI Code**: the MI Code for which the checkpoint is designated.
+- **EM Type**: MI's Effective Meter Type associated with UoM for the meter reading. (Check [here](maintainable-item.md#effective-meters-tab)).
+- **Entry Type**: specifies the meter reading input mode: Reading or Difference.
+- **Aspect**: determines for which Inspection Points from MI inspection results will be recorded, based on Aspect/Point Type. (Check [here](maintainable-item.md#aspect-points)).
+- **Aspect Name**: an aspect defined for MI, please check [here](maintainable-item.md#aspect)
+- **Point Type**: the point related to the aspect in the Maintainable Item definition. (Check [here](maintainable-item.md#point-type)).
+- **Point Type Name**: name of the point.
+- **UoM**: a unit of measure for Aspect Point.
+- **Required Entry**: select this if completing the checkpoint is mandatory to close the associated task in the Maintenance Order.
+- **Follow-up**: enable this to generate a follow-up Maintenance Order (MO) from the template.
 
-Note: MI Class/MI Category determines what findings will be visible in the tab Findings (check here)
+A follow-up MO is created when the Follow-up checkbox is selected. The source for the follow-up MO template can be defined in the From field, with the following options:
 
-**MI Code** – The MI Code for which the checkpoint is designated
+- **Header**: applies to all checkpoint types.
+- **Findings**: applies to all checkpoint types. Uses the MO Template and parameters (Status, Priority, and Memo Follow-up) from the Findings tab.
+- **Values**: are available for Meter Reading, Inspection, and Quantitative checkpoint types. MO Template and parameters (Status, Priority, and Memo Follow-up) are determined from predefined value intervals in the Values tab.
+- **Aspect Point**: is available for Inspection-type checkpoints. MO Template and parameters (Status, Priority) are based on Aspect Points defined in the Maintainable Item. Memo Follow-up is derived from the checkpoint header.
 
-**EM Type** – MI's Effective Meter Type associated with UoM of measure for the meter reading (check here)
+If Follow-up is not selected, no follow-up MO is created, and Memo Follow-up is taken from the header.
 
-**Entry Type** – reading value input mode for meter reading: Reading or Difference
-
-**Aspect** – a combination of Aspect/Point Type determines for which Inspection Points from MI inspection results will be recorded (check [here](maintainable-item.md#aspect-points))
-
-**Aspect Name** – an aspect defined for MI, please see [here](maintainable-item.md#aspect)
-
-**Point Type** – the Point related to the Aspect from the MI definition (check [here](maintainable-item.md#point-type))
-
-**Point Type Name** – point's name
-
-**UoM** – a unit of measure for Aspect Point
-
-**Required Entry** – select if checkpoint completion is needed to close the associated task in the Maintenance Order.
-
-**Follow-up** – select to create follow-up MO from Template MO
-
-A follow-up MO is generated if the checkbox "Follow-up" is selected. In the field "from," you can define the source of the Follow-up MO Template: Header, Findings, Values, Aspect Point
-
-Sources Header and Findings are available for all checkpoint types. For Findings MO Template and its parameters (MO Status, Priority, and Memo Follow-up) are taken from the tab Findings
-
-Source Values are available for checkpoint types: Meter Reading, Inspection, and Quantitative. For Values, the MO Template and its parameters (MO Status, Priority, and Memo Follow-up) are taken from tab Values from defined values intervals.
-
-Source Aspect Point is available for checkpoint type Inspection. MO Template and its parameters (MO Status, Priority) are taken from Aspect Points defined for Maintainable Item in the Inspection Points/Aspect Points tab. Memo follow-up is taken from the checkpoint header.
-
-A follow-up MO is not generated if the checkbox "Follow-up" is not selected. Memo Follow-up is taken from the header.
-
-**Memo Follow-up** – some additional remarks to follow up on MO
-
-**Template MO** – a follow-up Maintenance Order the system will create when checklist Items are selected for follow-up
-
-**MO Status** – follow-up MO Status
-
-**MO Priority** – follow-up MO Priority
+- **Memo Follow-up**: additional remarks to follow up on MO.
+- **Template MO**: a follow-up Maintenance Order the system will create when checklist Items are selected for follow-up.
+- **MO Status**: the status of the follow-up MO.
+- **MO Priority**: the priority of the follow-up MO.
 
 ### Findings tab
 
-In the grid, automatically imported findings are defined and selected in the header MI Class and MI Category here.
+The Findings Tab allows the selection and management of findings relevant to the Maintenance Order's Maintainable Item (MI) Class and Category.
 
-    Select – if the checkbox is selected, the finding will be available when the checkpoint is reported in the Maintenance Order
+Findings are automatically imported and associated with the specified MI Class and MI Category in the header.
+
+- **Select**: if the checkbox is selected, the finding will be available for reporting when the checkpoint is executed in the Maintenance Order.
 
 #### Findings
 
-Main Menu/Plant Maintenance/Inspection Setup/Findings
+:::info Path
+Main Menu → Plant Maintenance → Inspection Setup → Findings
+:::
 
 ![Findings](./media/maintenance-order-template/findings.webp)
 
-**Finding** (predefined descriptive findings that are used during checkpoint recording)
+The Findings section defines predefined descriptive findings used during checkpoint recording in maintenance processes.
 
-**Code** – a unique findings code
-
-**Description** – descriptive information about finding
-
-**General** – if checked, the finding can be used in all checkpoint template definition
-
-Where used (list of MI Classes/MI Categories for which the result can be used)
-
-**MI Class** – Maintainable Class
-
-**MI Category** – Maintainable Category.
+- **Finding**: A predefined description of observations or results recorded during inspections.
+- **Code**: A unique code assigned to each finding.
+- **Description**: detailed information describing the finding.
+- **General**: if selected, the finding can be applied across all checkpoint template definitions.
+- **Where Used**: lists the applicable MI Classes and MI Categories where the finding can be utilized.
+        - **MI Class**: Represents the Maintainable Class where the finding is applicable.
+        - **MI Category**: Maintainable Category.
 
 ## Material List tab
 
 ![MO Template Material list](./media/maintenance-order-template/mo-template-material-list.webp)
 
-**Material List Code** – you can compose the Material List using a predefined Material List here or manually, item by item.
+The Material List Tab enables users to define the materials required for executing a Maintenance Order (MO).
 
-**Item Code** – the Item Code. The system automatically populates Item parameters.
-
-**Revision Code** – Item's revision
-
-**Item Name** – from Item Master Data
-
-**MI Code** – you can select if there is any MI defined as Part (Item with Apparatus Type=Part)
-
-**MI Name** – from MI Master Data
-
-**Equipment Card** – EC No. assigned to the Item managed by serial numbers
-
-**Quantity** – how many Items are needed
-
-**UoM** – from Item Master Data
-
-**Warehouse Code** – default Warehouse
-
-**Issue Type** – Manual by default
-
-**Hours** – the number of hours estimated to use the tool to complete the MO
-
-**Total Hours** – equal to Quantity \* Hours
-
-**Safety** – if checked, special safety conditions are required
+- **Material List Code**: select a predefined Material List or manually compose it by adding items individually.
+- **Item Code**: specifies the code for the item. The system automatically populates associated parameters.
+- **Revision Code**: revision code of the item.
+- **Item Name**: retrieved from the Item Master Data.
+- **MI Code**: select if any Maintainable Item (MI) is defined as a Part (Apparatus Type = Part).
+- **MI Name**: fetched from the MI Master Data.
+- **Equipment Card**: Equipment Card (EC) number assigned to the item managed by serial numbers.
+- **Quantity**:  specifies the required quantity of the item.
+- **UoM**: retrieved from the Item Master Data.
+- **Warehouse Code**: specifies the default Warehouse.
+- **Issue Type**: default is set to "Manual".
+- **Hours**: Estimated time required to use the item for completing the MO.
+- **Total Hours**: equal to Quantity \* Hours
+- **Safety**: indicates if special safety conditions are required. If checked, ensure adherence to relevant safety protocols.
 
 ### Material List Template
 
-Main Menu/Administration/Plant Maintenance/Work Setup/Material List
+:::info Path
+Main Menu → Administration  →Plant Maintenance → Work Setup → Material List
+:::
+
+The Material List Template allows users to define and manage materials required for Maintenance Orders.
 
 ![Material List Template](./media/maintenance-order-template/material-list-template.webp)
 
-**Item Code** – the system automatically populates Item parameters.
-
-**Revision Code** – Item's Revision
-
-**Item Name** – from Item Master Data
-
-**Quantity** – how many Items are needed
-
-**UoM** – from Item Master Data
-
-**Warehouse Code** – default Warehouse
-
-**Issue Type** – default Manual
+- **Item Code**: automatically populates the item's parameters based on the selected code.
+- **Revision Code**: specifies the revision associated with the item.
+- **Item Name**: indicates the number of items required.
+- **Quantity**: how many Items are needed
+- **UoM**: UOM derived from the Item Master Data
+- **Warehouse Code**: specifies the default warehouse.
+- **Issue Type**: default is set to "Manual".
 
 ## Tab MO Tools
 
 ![MO Template Tools](./media/maintenance-order-template/mo-template-tools.webp)
 
-**Item Code** – enter the Item Code to add to the Material List. The system automatically populates Item parameters.
+The MO Tools Tab specifies the tools and equipment required for executing the Maintenance Order.
 
-**Revision Code** – Item's Revision
-
-**Item Name** – description from Item Master Data
-
-**MI Code** – you can select MI with assigned EC No. as a tool
-
-**MI Name** – from MI Master Data
-
-**Equipment Card** – EC No. assigned to the Item managed by serial numbers
-
-**Quantity** – how many Items are needed
-
-**UoM** – from Item Master Data
-
-**Warehouse Code** – default Warehouse
-
-**Issue Type** – default Manual
-
-**Hours** – enter the number of hours estimated to use the tool to complete the MO
-
-**Total Hours** – equal to Quantity \* Hours
-
-**Safety** – if checked, special conditions are required
+- **Item Code**: enter the Item Code to add to the Material List. The system automatically populates Item parameters.
+- **Revision Code**: revision associated with the item.
+- **Item Name**: description retrieved from Item Master Data.
+- **MI Code**: you can select MI with assigned EC No. as a tool.
+- **MI Name**: name retrieved from the MI Master Data.
+- **Equipment Card**: Equipment Card (EC) number assigned to the item, typically managed by serial numbers.
+- **Quantity**: specify the number of items required.
+- **UoM**: UOM retrieved from the Item Master Data
+- **Warehouse Code**: specifies the default warehouse.
+- **Issue Type**: default is set to "Manual".
+- **Hours**: estimated time needed to use the tool for completing the Maintenance Order.
+- **Total Hours**: equal to Quantity \* Hours
+- **Safety**: indicates whether special safety conditions are required. If checked, ensure compliance with the necessary safety protocols.
 
 ## Route’s MO tab
 
@@ -368,72 +296,50 @@ Main Menu/Administration/Plant Maintenance/Work Setup/Material List
 
 ### MO Templates tab
 
-You can assign child MOs using the MO template.
+The MO Templates Tab allows the assignment of child Maintenance Orders (MOs) to the main Maintenance Order template.
 
-    **Sequence** – the sequence number in which to perform the route maintenance order,
+- **Sequence**: the order in which the route Maintenance Orders should be performed.
+- **Template Code**: select the route Maintenance Order template to associate with the primary Maintenance Order template. Check [here](#maintenance-order-template). The system automatically populates the parameters for the selected MO Template.
 
-    **Template Code** – select the route maintenance order template to assign to the maintenance work order template (check here). The system automatically populates the MO Template parameters.
-
-Task Checklist
+For details on the Task Checklist, click [here](#tab-taskchecklist)
 
 #### Materials tab
 
 ![Material Tab](./media/maintenance-order-template/mo-template-routes-mo-material-tab.webp)
 
-**Material List Code** – you can compose the Material List using a predefined Material List here or manually, item by item.
+The Materials Tab defines the materials required for the Maintenance Order, allowing users to either use a predefined list or add materials manually.
 
-**Item Code** – the Item Code. The system automatically populates Item parameters.
-
-**Revision Code** – Item's revision
-
-**Item Name** – from Item Master Data
-
-**MI Code** – you can select if there is any MI defined as Part (Item with Apparatus Type=Part)
-
-**MI Name** – from MI Master Data
-
-**Equipment Card** – EC No. assigned to the Item managed by serial numbers
-
-**Quantity** – how many Items are needed
-
-**UoM** – from Item Master Data
-
-**Warehouse Code** – default Warehouse
-
-**Issue Type** – Manual by default
-
-**Hours** – the number of hours estimated to use the tool to complete the MO
-
-**Total Hours** – equal to Quantity \* Hours
-
-**Safety** – if checked, special safety conditions are required
+- **Material List Code**: select a predefined Material List or compose one manually by adding items individually.
+- **Item Code**: enter the Item Code. Item parameters are automatically populated by the system.
+- **Revision Code**: revision associated with the item.
+- **Item Name**: description retrieved from Item Master Data.
+- **MI Code**: optionally select a Maintainable Item (MI) defined as a Part (Item with Apparatus Type = Part).
+- **MI Name**: name retrieved from the MI Master Data.
+- **Equipment Card**: Equipment Card (EC) number assigned to the Item, typically managed by serial numbers.
+- **Quantity**: specify the quantity of items required.
+- **UoM**: UoM retrieved from the Item Master Data.
+- **Warehouse Code**: Specifies the default warehouse.
+- **Issue Type**: default is set to "Manual".
+- **Hours**: estimated number of hours required to use the material for completing the Maintenance Order.
+- **Total Hours**: equal to Quantity \* Hours
+- **Safety**:  indicates whether special safety conditions are required. If checked, ensure compliance with safety protocols.
 
 #### Tools tab
 
 ![Routes](./media/maintenance-order-template/mo-template-routes-tools.webp)
 
-**Item Code** – enter the Item Code to add to the Material List. The system automatically populates Item parameters.
+The Tools Tab is used to define the materials and tools required for the Maintenance Order.
 
-**Revision Code** – Item's Revision
-
-**Item Name** – description from Item Master Data
-
-**MI Code** – you can select MI with assigned EC No. as a tool
-
-**MI Name** – from MI Master Data
-
-**Equipment Card** – EC No. assigned to the Item managed by serial numbers
-
-**Quantity** – how many Items are needed
-
-**UoM** – from Item Master Data
-
-**Warehouse Code** – default Warehouse
-
-**Issue Type** – default Manual
-
-**Hours** – enter the number of hours estimated to use the tool to complete the MO
-
-**Total Hours** – equal to Quantity \* Hours
-
-**Safety** – if checked, special conditions are required
+- **Item Code**: enter the Item Code to add to the Material List. The system automatically populates Item parameters.
+- **Revision Code**: revision associated with the Item.
+- **Item Name**: description from Item Master Data
+- **MI Code**: select the Maintainable Item (MI) with an assigned Equipment Card (EC) number as a tool.
+- **MI Name**: name retrieved from the MI Master Data.
+- **Equipment Card**: Equipment Card (EC) number assigned to the Item, typically managed by serial numbers.
+- **Quantity**: specify the number of items required.
+- **UoM**: UoM retrieved from the Item Master Data.
+- **Warehouse Code**: Specifies the default warehouse.
+- **Issue Type**: default is set to "Manual".
+- **Hours**: enter the estimated number of hours needed to use the tool for completing the Maintenance Order.
+- **Total Hours**: equal to Quantity \* Hours
+- **Safety**: indicates whether special safety conditions are required. If checked, ensure compliance with safety protocols.
