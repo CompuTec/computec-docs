@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-import Releases from "../../releases.json";
+import ReleaseInfo from '@site/src/components/ReleaseInfo';
 
 # Download
 
@@ -12,7 +12,9 @@ import Releases from "../../releases.json";
 
 ## Releases
 
-<table>
+<ReleaseInfo url="https://download.computec.one/software/appengine/releases.json" />
+
+<!-- <table>
   <tr>
     <th>Version</th>
     <th>Release Date</th>
@@ -25,4 +27,4 @@ import Releases from "../../releases.json";
       <td><a href={`https://download.computec.one/software/appengine/releases/CompuTec.AppEngine.${data.build}.msi`}>Download</a></td>
     </tr>
   ))}
-</table>
+</table> -->
