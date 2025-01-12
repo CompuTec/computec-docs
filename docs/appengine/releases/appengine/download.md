@@ -12,7 +12,7 @@ import ReleaseInfo from '@site/src/components/ReleaseInfo';
 
 ## Releases
 
-<ReleaseInfo url="https://download.computec.one/software/appengine/releases.json" />
+<ReleaseInfo name="CompuTec AppEngine" url="https://download.computec.one/software/appengine/releases.json" />
 
 <!-- <table>
   <tr>
