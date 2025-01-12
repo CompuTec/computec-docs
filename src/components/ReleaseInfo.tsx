@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const ReleaseInfo = ({ url }) => {
+const ReleaseInfo = ({ url, name }) => {
   const [releaseData, setReleaseData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -13,6 +13,7 @@ const ReleaseInfo = ({ url }) => {
           throw new Error('Failed to fetch release data');
         }
         const data = await response.json();
+        console.log(data)
         setReleaseData(data);
       } catch (err) {
         setError(err.message);
@@ -26,20 +27,24 @@ const ReleaseInfo = ({ url }) => {
 
   if (loading) return <p>Loading release information...</p>;
   if (error) {
-    console.error(error)
     return <p>Error: {error}</p>;
   }
 
   return (
-    <div>
-      <ul>
-        {releaseData?.releases.map((release, index) => (
-          <li key={index}>
-            <strong>{release.version}</strong> - {release.release_date}
-          </li>
-        ))}
-      </ul>
-    </div>
+    <table>
+      <tr>
+        <th>Version</th>
+        <th>Release Date</th>
+        <th>Installer</th>
+      </tr>
+      {releaseData.versions.map((data) => (
+        <tr key={data.version}>
+          <td>{data.version}</td>
+          <td>{data.release_date}</td>
+          <td><a href={releaseData.download_template_url.replaceAll("{version}", data.version)}>Download</a></td>
+        </tr>
+      ))}
+    </table>
   );
 };
 
