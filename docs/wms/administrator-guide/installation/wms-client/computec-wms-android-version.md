@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
 ---
 
 # CompuTec WMS Android version
@@ -12,7 +12,7 @@ The CompuTec WMS Android version is a robust solution designed to enhance wareho
 
 To run CompuTec WMS on Android, ensure the following prerequisites are met:
 
-- **Android Device Compatibility** - Requires Android 6 (API 23) or higher.
+- **Android Device Compatibility** - Requires Android 6 (API 23) to 14.
 - Network Access: The device must connect to the network hosting the CompuTec WMS Server. Test connectivity by entering `http://[server address]:31002/api/Test/Get` in a browser and verifying the response. Replace [server address] with the actual address of the CompuTec WMS Server.
 
     ![Check](./media/check-server-connection.webp)
@@ -25,14 +25,6 @@ The image above shows the expected response. If you encounter a different respon
 
     ![Permission](./media/permission.webp)
 
-### Tested Devices
-
->**Note**: This list is not exhaustive; any device meeting the requirements outlined above should support CompuTec WMS for Android. However, the following devices have been tested and verified to work seamlessly with the CompuTec WMS Client:
-
-- Samsung A202F/DS (barcode scanning using the device's camera)
-- Samsung SM-J415x, Samsung Note 20
-- Zebra MC330K (MC330K-GE3HA3RW) with Android 8 (barcode scanning using the built-in barcode scanner)
-- Zebra MC930B.
 
 ## Download and Installation
 
