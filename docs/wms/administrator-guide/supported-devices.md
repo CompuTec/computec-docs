@@ -81,7 +81,7 @@ CompuTec WMS is compatible with most USB and Bluetooth barcode scanners, provide
     - Honeywell Granit 1981i – Bluetooth scanner
     - Intermec SR61 – Bluetooth scanner
 
-## Supported Mobile Handheld Devices (Legacy devices)
+## Supported Mobile Handheld Devices (legacy devices)
 
 CompuTec WMS works with the following mobile handheld devices, with particular focus on Zebra and Motorola/Symbol models:
 
