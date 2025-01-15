@@ -13,3 +13,6 @@ This data is used within [the Ingredient Master Data](../ingredient-master-data.
 :::
 
 ![Ingredient Classification Type](./media/classification-types/ingredient-classification-type.webp)
+
+---
+The Classification Types form is a critical tool for managing the compliance and certification requirements of products and materials. By defining and assigning classifications, businesses can ensure their products meet specific standards and maintain credibility in the market. This functionality enhances transparency and supports regulatory adherence in product labeling and ingredient declarations.

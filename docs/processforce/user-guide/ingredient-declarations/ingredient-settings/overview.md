@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-Some ingredient attributes significant in ingredient declaration creation process can be predefined.
+Certain ingredient attributes that play a crucial role in the ingredient declaration creation process can be predefined.
 
 :::info Path
     Administration → Setup → Ingredients

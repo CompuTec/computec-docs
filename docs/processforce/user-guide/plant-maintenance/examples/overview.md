@@ -4,17 +4,17 @@ sidebar_position: 1
 
 # Overview
 
-In this section, you can find examples of Plant Maintenance usage.
+Plant Maintenance is essential for ensuring the efficiency, reliability, and longevity of assets. This document provides a detailed walkthrough of the key functionalities and usage examples within the Plant Maintenance module. These tools streamline maintenance operations, enhance data accuracy, and improve asset management processes.
 
 ---
 
 ## Maintainable Item definition schema
 
-Please see [here](../field-description/maintainable-item.md).
+The definition schema for Maintainable Items can be accessed [here](../field-description/maintainable-item.md).
 
 ## Assigning an existing object to MI
 
-When you define a new MI, please check the Assigned Object checkbox:
+When defining a new Maintainable Item (MI), ensure that the Assigned Object checkbox is selected.
 
 ![Maintenance](./media/overview/maintenance-item-assigned.webp)
 
@@ -32,7 +32,7 @@ Please select a Resource code from the list:
 
 ### Assigning Apparatus (Meter, Tool, Part)
 
-It is possible to assign an Item to MI with one of the Apparatus Types: Tool, Part, or Meter. Only this kind of Item is selectable in the List of Items. The assigned Item has to be managed by Serial Numbers.
+It is possible to assign an Item to Maintenable Item with one of the Apparatus Types: Tool, Part, or Meter. Only this kind of Item is selectable in the List of Items. The assigned Item has to be managed by Serial Numbers.
 
 First, select an Item from the list:
 
@@ -90,7 +90,7 @@ In the same way, you can correct entered values if Physical Meter is not current
 
 ![MI Diagram](./media/overview/mi-diagram.webp)
 
-To define the above MI structure with Effective Meters and linked Physical Meters:
+Follow these steps to define the Maintenance Item (MI) hierarchy with Effective Meters and linked Physical Meters:
 
 1. MI hierarchy:
 
@@ -98,9 +98,9 @@ To define the above MI structure with Effective Meters and linked Physical Meter
     - Define MI Object 002 and indicate Object 001 as a Parent MI.
     - Define MI Object 003 and indicate Object 001 as a Parent MI.
 
-    - **Note**: You can check the MI hierarchy, please see [here](/docs/processforce/user-guide/plant-maintenance/field-description/reports#mis-structure-report).
+    - **Note**: You can check the MI hierarchy [here](/docs/processforce/user-guide/plant-maintenance/field-description/reports#mis-structure-report).
 
-2. Define Meter Units *(Main Menu/Administration/Setup/Stock Management/Units of Measure*):
+2. Define Meter Units *(Main Menu  → Administration  → Setup  → Stock Management   →Units of Measure*):
 
     - Hours.
     - Pieces.
@@ -163,10 +163,10 @@ To define the above MI structure with Effective Meters and linked Physical Meter
 
 ## Definition of Inspection Points for MI
 
-Let's assume you want to record pressure in bars in your car's right and left front tires, and if the pressure is too low, you want to generate Maintenance Order.
+Let's assume you want to record tire pressure (in bars) for your car's front right and left tires, and if the pressure is too low, automatically generate a Maintenance Order (MO). Follow these steps:
 
 1. Define MI: My Car.
-2. Define UoM *(Main Menu/Administration/Setup/Stock Management/Units of Measure*): Bar.
+2. Define UoM: *(Main Menu/Administration/Setup/Stock Management/Units of Measure*): Bar.
 3. Define Point Type (check here): Tire.
 4. Define Aspect Type (see here): Pressure with UoM=Bar.
 5. For object My Car:
@@ -188,47 +188,57 @@ Let's assume you want to record pressure in bars in your car's right and left fr
 
 ## Findings Usage
 
-Findings are used during MO recording in Task → Checkpoint. You can select the result from a list.
+Findings are utilized during Maintenance Order (MO) recording in Task → Checkpoint, where a result can be selected from a predefined list.
 
-To share the finding in the list, you have to do as follows:
+To share the finding in the list, follow the below steps:
 
-1. Define the finding (check here). You can define the finding as General or share it for MI Class/MI Category.
+1. Define the finding (check [here](#findings-usage)). You can define the finding as General or share it for MI Class/MI Category.
 
     ![Findings](./media/overview/finding-01.webp)
-2. In the Checkpoint Template, select the Import Findings button to update the list in the Findings tab in the contexts of MI Class/MI Category from the checkpoint header.
+2. In the Checkpoint Template, click the Import Findings button to populate the findings list in the Findings tab. The list is updated based on the MI Class/MI Category specified in the checkpoint header.
 
     ![Mi Class](./media/overview/mi-class-category.webp)
-3. Select checkboxes for findings that have to be available in the findings list in Checkpoint:
+3. Use the checkboxes to select the findings that should be available in the findings list during checkpoint recording.
 
     ![Findings System Message](./media/overview/findings-system-message.webp)
-4. Now, the selected findings are available during checkpoint recording.
+4. The selected findings will now appear in the findings list during checkpoint recording.
 
     ![Inspection Readings](./media/overview/inspection-reading.webp)
 
 ## Maintenance Order Template Definition Schema
 
-Check [here](../field-description/maintenance-order-template.md).
+For details on Maintenance Order Template Definition Schema, click [here](../field-description/maintenance-order-template.md).
 
 ## Maintenance Order Creation Schema
 
-Check [here](../field-description/maintenance-order-template.md).
+For additional information on Maintenance Order Creation Schema, click [here](../field-description/maintenance-order-template.md).
 
-## MO recording
+## MO Recording
 
-Recording of MO is possible in MO with the Status set to Started.
+Recording activities within a Maintenance Order (MO) are possible when the MO status is set to "Started".
 
-The first user has to record checkpoints (check [here](#maintenance-order-template-definition-schema) and for definition [here](../field-description/maintenance-order-template.md#checkpoint-template)). If all checkpoints with Required Entry=Yes have Done=Yes (automatically checked when reading the document is closed), then Task is checked as done. If the Task does not have checkpoints in the checklist, then you report the task in its line by selecting the g Done. If the task has a checkpoint in the list, you are obligated to report each checkpoint. When all the jobs are done, you can change to Finished.
+**Recording Checkpoints**:
 
-Select checkpoint in Checklist and select RMBM option Inspection Reading for checkpoint related to inspections, Type: Inspection, Checklist Item, Quantitative, Qualitative, Question.
+1. The first user has to record checkpoints (check [here](#maintenance-order-template-definition-schema) and for definition [here](../field-description/maintenance-order-template.md#checkpoint-template)).
+2. If all checkpoints with Required Entry = Yes have Done = Yes (automatically checked when the document is closed), the Task is marked as completed.
+3. If a task does not include checkpoints, it can be marked as completed directly on its line by selecting "Done".
+4. If a task includes checkpoints, every checkpoint must be reported individually.
+5. Once all jobs are completed, the MO status can be updated to Finished.
 
-![Inspection Reading](./media/overview/inspection-reading-2.webp)
+**Recording Readings**:
 
-Or RMBM option Meter Reading for checkpoint with Type=Meter Reading:
+Select a checkpoint from the checklist and choose one of the following RMBM options:
 
-![Type=Meter Reading](./media/overview/image2020-1-30-13-14-50.png)
+- Inspection Reading: For checkpoints associated with inspections (Type: Inspection, Checklist Item, Quantitative, Qualitative, or Question).
 
-You can create many Inspection Reading/Meter Reading Documents for each checkpoint line. The last document is visible in the checkpoint line (column: Meter Reading or Inspection Reading). You can create the following document if the previous one is closed. You can review documents – Records History (RMBM option).
+    ![Inspection Reading](./media/overview/inspection-reading-2.webp)
+
+- Meter Reading: For checkpoints with Type = Meter Reading.
+
+    ![Type=Meter Reading](./media/overview/image2020-1-30-13-14-50.png)
+
+Multiple Inspection Reading or Meter Reading documents can be created for each checkpoint line. The latest document is displayed in the checkpoint line (column: Meter Reading or Inspection Reading). New documents can only be created after the previous document is closed. Use the Records History option in the RMBM to review past documents.
 
 :::note
-    Recording of different Types of Checkpoints is described [here](../field-description/maintainable-item.md#meter-reading)
+    Recording of different Types of Checkpoints is explained in detail [here](../field-description/maintainable-item.md#meter-reading)
 :::
