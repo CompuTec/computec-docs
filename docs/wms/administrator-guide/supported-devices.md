@@ -20,10 +20,10 @@ CompuTec WMS 2.0 is compatible with the following Operating Systems:
 
 - **Android** (recommended device)
 
-*The CompuTec WMS Android version offers a powerful solution for warehouse management, providing users with an intuitive interface and seamless integration with Android devices.*
+        Android device compatibility (8 to 14). To know more about Android version, click [here](../administrator-guide/installation/wms-client/computec-wms-android-version.md).
 
-        Android device compatibility (8 to 14)
-    to know more about Android version, click [here](../administrator-guide/installation/wms-client/computec-wms-android-version.md).
+        The CompuTec WMS Android version offers a powerful solution for warehouse management, providing users with an intuitive interface and seamless integration with Android devices.
+
 - **Microsoft Windows**
         
         - Windows 11
@@ -40,8 +40,7 @@ CompuTec WMS 2.0 is compatible with the following Operating Systems:
         - Windows Embedded Handheld 6.5
         - Windows Embedded Compact 7
 
-Before setting up CompuTec WMS, ensure that the devices you are using meet the basic system specifications (applies to older devices):
-
+Before setting up CompuTec WMS ensure that the devices you are using meet the basic system specifications. (applies to legacy devices)
 |       | Minimal                                                  | Recommended                                              |
 |-------|----------------------------------------------------------|----------------------------------------------------------|
 | RAM   | 512MB                                                    | 1GB                                                       |
@@ -54,9 +53,7 @@ CompuTec WMS supports devices with touchscreen functionality. It is essential th
 
 ## Supported Android Handheld Devices
 
-:::note
-This list is not exhaustive; any device meeting the requirements outlined above should support CompuTec WMS for Android. However, the following devices have been tested and verified to work seamlessly with the CompuTec WMS Client:
-:::
+This list is not exhaustive. Any device meeting the requirements outlined above should support CompuTec WMS for Android.
 
 - Zebra MC330K (MC330K-GE3HA3RW) with Android 8 (barcode scanning using the built-in barcode scanner)
 - Zebra MC930B
@@ -66,7 +63,7 @@ This list is not exhaustive; any device meeting the requirements outlined above 
 - Samsung A202F/DS (barcode scanning using the device's camera)
 - Samsung SM-J415x, Samsung Note 20
 
- **Recommended devices**:
+ **Recommended devices**
 
 While CompuTec WMS is compatible with a broad variety of devices, our experience from numerous implementations has led us to develop a trusted device-system combination that we commonly recommend to our partners and customers. Based on extensive field experience and successful implementations, we highly recommend the Zebra [MC3300](https://www.zebra.com/us/en/products/spec-sheets/mobile-computers/handheld/mc3300.html) and [MC9300](https://www.zebra.com/us/en/products/spec-sheets/mobile-computers/handheld/mc9300.html) terminals, running Android
 
@@ -85,7 +82,7 @@ CompuTec WMS is compatible with most USB and Bluetooth barcode scanners, provide
 
 CompuTec WMS works with the following mobile handheld devices, with particular focus on Zebra and Motorola/Symbol models:
 
-- **Zebra / Motorola / Symbol Devices**:
+- Zebra / Motorola / Symbol Devices:
         MC9200 family
 
 :::note
