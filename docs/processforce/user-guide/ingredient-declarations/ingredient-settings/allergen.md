@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Allergen
 
-If a company deals with products that contain common allergens, e.g., nuts, a unique option for connecting information about it with items must be provided for safety purposes and to avoid future recalls. Allergens can be defined and assigned to a specific Master Data (Ingredient or Item Ingredient).
+For companies handling products that may contain common allergens, such as nuts, it is crucial to have a dedicated mechanism for associating allergen information with items. This is essential for ensuring consumer safety and mitigating the risk of product recalls. Allergens can be defined and assigned to a specific Master Data (Ingredient or Item Ingredient).
 
 This form allows users to define a valid list of Allergens that can be traced within their products and materials.
 
@@ -13,3 +13,6 @@ This data is used within the [Ingredient Master Data](../ingredient-master-data.
 :::info Path
     Administration → Setup → Ingredients → Allergens
 :::
+
+---
+The Allergen form provides an essential framework for tracking and managing allergen information in products and materials. By utilizing this tool, businesses can enhance product safety, improve transparency, and comply with regulatory standards, thereby fostering consumer trust and reducing liability risks.

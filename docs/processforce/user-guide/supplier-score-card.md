@@ -4,13 +4,13 @@ sidebar_position: 15
 
 # Supplier Score Card
 
-ProcessForce Supplier Score Card is a reporting function based on a weighted supplier scorecard. It helps to evaluate Suppliers' performance based on information about quality, quantity accuracy, and punctuality of deliveries.
+ProcessForce Supplier Score Card is a reporting function based on a weighted supplier scorecard. The ProcessForce Supplier Score Card is a powerful tool that enables businesses to assess and evaluate supplier performance in key areas, including quality, quantity accuracy, and delivery punctuality. By utilizing a weighted scorecard system, this feature allows organizations to track and measure supplier performance through a detailed, easy-to-read report. This process provides actionable insights, helping businesses foster stronger supplier relationships and optimize their procurement strategies.
 
 ---
 
 :::warning
-    - Delivery and Quantity calculations on Supplier Score Card are made based on Purchase Order and Goods Receipt PO documents. A specific Purchase Order and Goods Receipt PO must be linked for the function to work correctly. It can be done by creating a Goods Receipt Purchase Order by using Copy To option on a Purchase Order or connecting the Purchase Order by Copy From Option on Goods Receipt PO.
-    - Dates are compared between lines of documents (not document header dates).
+    - The delivery and quantity calculations on the Supplier Score Card are based on the relationship between Purchase Order and Goods Receipt PO documents. It is crucial that a specific Purchase Order and corresponding Goods Receipt PO are linked correctly for the function to work properly. This can be achieved by creating a Goods Receipt Purchase Order using the "Copy To" option from a Purchase Order, or by linking the Purchase Order using the "Copy From" option in the Goods Receipt PO.
+    - Please note that dates are compared between the individual lines of the documents, not the document header dates.
 :::
 
 ## Settings
@@ -28,17 +28,17 @@ Here, you can define a number of values connected to Supplier (which have to add
 ## Supplier Score Card
 
 :::info Path
-    - Business Partners → Supplier Score Card,
-    - You can also reach the form for a specific Business Partner from the Business Partner form header context menu (available only when the BP type is set to Supplier for this Business Partner).
+    - Business Partners → Supplier Score Card
+    - You can also access the form for a specific Business Partner from the Business Partner form header context menu (available only when the BP type is set to Supplier for this Business Partner).
 :::
 
 ![Supplier Score Card](./media/supplier-score-card/supplier-score-card-card.webp)
 
 ### Header
 
-Here, you can define additional settings for a specific Supplier related to delivery and quantity.
+In this section, you can define additional settings for a specific Supplier related to delivery and quantity.
 
-- No of Days Early and No of Days Late define a period before and after the order date in which delivery is still acceptable,
+- No of Days Early and No of Days Late define a period before and after the order date in which delivery is still acceptable.
 
     **Example**
 
@@ -53,27 +53,25 @@ Here, you can define additional settings for a specific Supplier related to deli
       - The ordered quantity is 100.
       - Quantity Over %: 10
       - Quantity Under %: 10
-      - Everything delivery less than 90 will be deemed too small, and delivery bigger than 110 will be considered too big.
+      - Every delivery less than 90 will be deemed too small, and delivery more than 110 will be considered too big.
 
 ### Summary
 
-**Weighted Values** - are defined for each weight in General Settings, e.g., No. Of Complaints, No. of Failed QC Tests, No of Returns, etc.
+**Weighted Values**: these are predefined in the General Settings and correspond to factors like the number of complaints, failed QC tests, returns, etc.
 
-**Month to Date** - the total number of transactions for the current month; e.g., if today is October 15th, transactions from October 1st to October 15th are taken into account.
-
-Month-to-date refers to the weighted values calculated within the current month.
+**Month to Date** - This refers to the total number of transactions in the current month. For example, if today is October 15, the transactions from October 1 to October 15 are included.
 
 **The Previous Month** - the weighted values calculated in the last month.
 
-**Year to Date** - relates to the total of each month's weighted values to the current month, e.g., January to May, where May is the current month.
+**Year to Date** - The cumulative weighted values for the current year, from January to the current month.
 
-**The previous year** - relates to the total of each month's weighted value for an entire 12-month period, i.e., January to December.
+**The previous year** - the cumulative weighted values for the previous year, from January to December.
 
 ### Details
 
 ![Supplier Score Card Details](./media/supplier-score-card/supplier-score-card-details.webp)
 
-On this tab, three values from the Summary tab are broken down into specific weighted scorecard positions.
+On this tab, the values from the Summary tab are broken down into specific weighted scorecard positions.
 
 The values in the Details tab are displayed solely based on specific settings and transactions, e.g., QC Tests, Returns, etc.
 
@@ -101,17 +99,20 @@ Note Grade = Amount / Total and Weighted Score = Weight x Grade
 
 ### Notes
 
-You can put any written notes connected to Score Card in this form.
+You can add any relevant comments or observations related to the scorecard.
 
 ### Attachment
 
-Here you can add, display or delete files connected to Score Card.
+Here you can add, display or delete files connected to the Score Card.
 
 ## Usage
 
 1. Activate the Supplier Score Card form.
-2. Select a requested Supplier.
-3. Fill in your exceptions like No of Days Late.
-4. Add document.
+2. Select the supplier you wish to assess.
+3. Fill in exceptions like delivery delays or quantity discrepancies.
+4. Add document  as necessary for additional context.
 5. Find/load created Supplier's Score Card.
 6. Review Summary and Details.
+
+---
+The Supplier Score Card is an essential tool for businesses aiming to improve supplier relationships and ensure consistent procurement performance. By offering a transparent and detailed evaluation based on key metrics such as quality, delivery punctuality, and quantity accuracy, it empowers organizations to make data-driven decisions. Whether for improving supplier negotiations or addressing performance gaps, the Supplier Score Card is a strategic asset for efficient supply chain management.

@@ -4,13 +4,17 @@ sidebar_position: 4
 
 # MI Creation Scenario – Connection to Company Structure and Other Master Data
 
+Creating a Maintainable Item (MI) structure aligned with a company’s physical and organizational hierarchy is critical for efficient asset management. In this scenario, we explore the steps to set up an MI structure for a metal processing factory, Company X. The goal is to establish a logical connection between locations, organizational levels, and other master data like Departments, Fixed Assets, Resources, and Equipment Cards. This systematic approach ensures seamless integration across various components, enabling effective monitoring and management of assets.
+
+---
+
 ## Requirement
 
-The user wants to create an MI structure based on the company's physical locations and organization schema. For particular assets, users want to connect to Master Data in other system areas like Departments, Fixed Assets, Resources, and Equipment Cards (Items).
+The objective is to establish a Maintainable Item (MI) structure that reflects the company's physical locations and organizational hierarchy. Additionally, the user aims to link specific assets to Master Data elements from other system areas, such as Departments, Fixed Assets, Resources, and Equipment Cards (Items).
 
-All mentioned Master Data and MI Classes and Categories used in the example must be defined earlier.
+The example assumes that all relevant Master Data, as well as the required MI Classes and Categories, have been predefined.
 
-Company X – metal processing factory is organized as follows:
+The scenario focuses on Company X, a metal processing factory, structured as follows:
 
 | | Steps | Actions | Obligatory | Video |
 |--- | --- | --- | --- | --- |
@@ -20,3 +24,6 @@ Company X – metal processing factory is organized as follows:
 | 4 | Create assets which are created as Resources (machines, production stations, etc.) | **MI Type: Asset Assigned Obj.=Yes (Resource)** <br/>'Lathe BERNARDO FTR980': Class = Machinery, Category = Lathes, <br/>Parent MI Code = Pr_Mach (Machining), <br/>Resource=M03 (Lathe BERNARDO), <br/>Department = PRMA (Production-Machining), <br/>Fixed Asset No. = FA000003 | Yes | [Step 04](https://youtu.be/kNyQFLzX96E?si=RbfDjm008o59MhJx) |
 | 5 | Create assets which are not Resources but are serialized Items (tools, specialist equipment, devices, meters) | **MI Type: Asset Assigned Obj.=Yes (Item)** <br/>'Controller - saw line': <br/>Class = Tools, <br/>Category = Mach_Equipment, <br/>Parent MI Code = MI00004 (CNC Band Saw...), <br/>Item = I000001, <br/>Apparatus Type = Tool, <br/>Equipment Card= S00001 <br/>Department = PRMA (Production-Machining), <br/>Fixed Asset No. = FA000014 | Yes | [Step 05](https://youtu.be/nmplHtImkp4?si=yTeFZorG_lucd1Wm) |
 | 6 | Create assets not defined as Resources or serialized Items but are fixed assets (forklifts, air conditioners, etc.) | **MI Type: Asset Assigned Obj.=Yes (Fixed Asset)** <br/>'Forklift 1': Class = Transport, <br/>Category = Forklifts, <br/>Parent MI Code = B01IN_LOG (B01 Internal Logistic), <br/>Fixed Asset No. = FA000008, <br/>Department = PRMA (Production-Machining), <br/>Fixed Asset No. = FA000008 | Yes | [Step 06](https://www.youtube.com/watch?v=_9-yoXLIqDs) |
+
+---
+The outlined process for creating and connecting MIs to the company's structure and master data facilitates streamlined operations and enhances asset visibility. By meticulously defining relationships between locations, organizational levels, and asset details, Company X can achieve better resource utilization, maintenance tracking, and overall operational efficiency. Leveraging SAP functionality, this structured approach sets the foundation for robust asset and process management within the organization.
