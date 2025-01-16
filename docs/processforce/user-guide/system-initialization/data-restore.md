@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Data Restore
 
-When a user adds, changes, or deletes Item Master Data within SAP Business One, the essential data elements are automatically updated in ProcessForce [Item Details](../item-details/overview.md) (creates a default revision code) and [Item Costing](../costing-material-and-resources/item-costing/overview.md) (creates a cost record for an item, revision, warehouse, [Cost Category](../costing-material-and-resources/configuration.md) objects.
+When a user adds, changes, or deletes Item Master Data within SAP Business One, the essential data elements are automatically updated in ProcessForce [Item Details](../item-details/overview.md) (creates a default revision code) and [Item Costing](../costing-material-and-resources/item-costing/overview.md) (creates a cost record for an item, revision, warehouse), [Cost Category](../costing-material-and-resources/configuration/overview.md) objects.
 
 If data has been added to SAP Business One manually or via DTW while ProcessForce is not installed and running, the Restore functions need to be run.
 
