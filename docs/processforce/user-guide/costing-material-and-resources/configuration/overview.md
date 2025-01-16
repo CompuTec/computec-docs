@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-In this section, you will find all information needed for the costing function to work correctly. Note that both SAP Business One and ProcessForce settings must be set.
+This guide provides comprehensive details to ensure the costing function operates correctly in ProcessForce. Both SAP Business One and ProcessForce settings must be properly configured for accurate and efficient costing calculations. The sections below outline the key configuration steps, paths, and considerations.
 
 ---
 
@@ -16,8 +16,8 @@ In this section, you will find all information needed for the costing function t
     Administration → System Initialization → Company Details
 :::
 
-- Use Perpetual Inventory – This field can be checked or unchecked. For example, in the UK, this field is checked, while in Italy, this field is unchecked.
-- Manage Item Cost per Warehouse – it is optional, but it should be decided before costings recreation.
+- **Use Perpetual Inventory**: this field can be checked or unchecked based on regional practices. For instance, it is checked in the UK and unchecked in Italy.
+- **Manage Item Cost per Warehouse**: it is optional, but should be decided before recreating costings.
 
 ![company Details](./media/overview/company-details.png)
 
@@ -27,16 +27,13 @@ In this section, you will find all information needed for the costing function t
     Administration → System Initialization → Document Settings
 :::
 
-Within a Standard Costing environment, WIP variances will occur when there are differences between planned vs. actual quantities and cost and the cost of the finished product.
-
-The standard production configuration is to check Parent Item WIP Accounts.
+In a Standard Costing environment, WIP (Work-in-Progress) variances arise from differences between planned and actual quantities or costs of finished products. To accommodate this - ensure Parent Item WIP Accounts are checked.
 
 ### Warehouses
 
-- When a new warehouse is added, depending on the SAP Business One configuration, new warehouses are automatically added to the Item Master record.
-- In turn, each warehouse is added to each Item Costing record.
-- If a warehouse is deleted, this warehouse is deleted from each Item Costing record.
-- For Drop Ship warehouses, these are not added to the Item Costing record.
+- **New Warehouses**: automatically added to the Item Master record based on the SAP Business One configuration. In turn, each warehouse is added to each Item Costing record.
+- **Deleted Warehouses**: automatically removed from each Item Costing record.
+- **Drop Ship Warehouses**: excluded from Item Costing records.
 
 ## ProcessForce Settings
 
@@ -46,11 +43,11 @@ The standard production configuration is to check Parent Item WIP Accounts.
 
 ### Costing Price Determination
 
-Click [here](./costing-price-determination.md) to get more information.
+Refer to [Costing Price Determination](./costing-price-determination.md) for more information.
 
 ### Restore Functions
 
-If you have added items to the Item Master Data form when ProcessForce is not installed and running, select Restore Item Costing and Resource Costing to populate the corresponding costing objects.
+If items were added to the Item Master Data form when ProcessForce was not running, select Restore Item Costing and Resource Costing to populate the corresponding costing objects.
 
 ![Restore Functions](./media/overview/restore-costing.png)
 
@@ -62,6 +59,8 @@ Click [here](../../system-initialization/data-restore.md) to find out more about
     Administration → Setup → Financials → Cost Categories
 :::
 
+Define and manage cost categories for streamlined cost calculations.
+
 ![Cost Categories](./media/overview/cost-categories.png)
 
 ### Default Overhead Rates
@@ -70,9 +69,7 @@ Click [here](../../system-initialization/data-restore.md) to find out more about
     Administration → Setup → Inventory → Item Groups
 :::
 
-By Item Group default, fixed and variable overhead rates can be added.
-
-When a new Item is created as part of the Item Group, these values will be automatically added to the corresponding fields within the Item Costing form.
+Assign fixed and variable overhead rates by Item Group. When a new item is created as part of an Item Group, these values will be automatically added to the corresponding fields within the Item Costing form.
 
 ![Overheads](./media/overview/overheads.png)
 
@@ -82,8 +79,11 @@ Default fixed and overhead values are automatically added to the item costing re
 
 ### Changing Default Overhead Values
 
-- Change any of the default values and press Update button.
-- System Message will display.
-- To use these new values on all existing Item Costing records, press OK and then Update.
-- To use these new values for new items being added to the system, press the X in the window and Update.
-- Any new item added to the database will use these new default values.
+- Update the default values and press the "Update" button.
+- A system message will display.
+- To apply new values to all existing Item Costing records, press "OK" and then "Update".
+- To apply new values only to new items, close the window and press "Update".
+- Newly added items will automatically use the updated default values.
+
+---
+By configuring both SAP Business One and ProcessForce settings correctly, you can ensure accurate and efficient costing processes. Each step in this guide is designed to align the system settings with your operational needs, minimizing discrepancies and streamlining production cost management. Follow the outlined paths and tips for a seamless implementation.

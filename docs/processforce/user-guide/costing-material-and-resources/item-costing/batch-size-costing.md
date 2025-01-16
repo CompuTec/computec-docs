@@ -4,6 +4,10 @@ sidebar_position: 2
 
 # Batch Size Costing
 
+Batch Size Costing is a key component in the production order process that enables manufacturers to allocate production costs more accurately. In this guide, we will walk you through the calculation of Batch Size Costing, including examples to illustrate how it works in practice.
+
+---
+
 ## Background
 
 The production order process includes activities with fixed times, such as Setup, Queue, and Stock, as well as fixed periods for Run Time.
@@ -24,20 +28,28 @@ Below is a working example:
 
 ## Run Time
 
-When a Run Time is configured to be Fixed seconds/minutes/hours, the Hourly Rate, Fixed and Variable Overhead values for the resource are divided by the Batch Size on the bill of material.
+When Run Time is set as fixed seconds, minutes, or hours, the resource's Hourly Rate, Fixed Overhead, and Variable Overhead values are divided by the Batch Size specified in the Bill of Material.
 
 ## Cycles and Run Time
 
-If the cycle field on the resource is checked, the Run Time will usually be defined as Fixed seconds/minutes/hours.
-If this is the case, then the time cost will be the Hourly Rate, Fixed and Variable Overhead values for the resource divided by the cycle capacity.
+**Key Considerations**:
+
+- If the Cycle field is enabled on the resource, the Run Time is typically defined as a fixed duration (seconds/minutes/hours).
+In this case, the time cost will be calculated by dividing the resource's Hourly Rate, Fixed Overhead, and Variable Overhead values by the cycle capacity.
 
 ## Example
 
 - On the resource record, the cycle field is checked
-- The cycle capacity = 500
-- Run Time = 2 hours @ fixed hours
+- Cycle Capacity = 500
+- Run Time = 2 hours (fixed hours)
 - Batch Size = 1000
+
+**Cost Breakdown**:
+
 - Setup = 2 hours: Hourly rate = 2 x 60 x 10/1000, Fixed Overhead = 2 x 60 x 10/1000 and Variable Overhead = 2 x 60 x 10/1000
 - Run Time = 2 hours: Hourly rate = 2 x 60 x 10/500, Fixed Overhead = 2 x 60 x 10/500 and Variable Overhead = 2 x 60 x 10/500
 
-Stock and Queue Time are treated the same as Run Time when the time is configured as Fixed seconds/minutes/hours.
+Stock and Queue Time are treated the same as Run Time when the time is configured as Fixed (seconds/minutes/hours).
+
+---
+Implementing batch size costing allows manufacturers to distribute costs accurately across production volumes, leading to more precise pricing strategies and enhanced operational efficiency.
