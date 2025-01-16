@@ -135,7 +135,7 @@ You can find the License Import and Assignment guide [here](../../licensing/lice
 ### Data Preparation
 
 :::note
-    Before running restore procedures please determine whether the [**Manage Item Cost per Warehouse**](../../../user-guide/costing-material-and-resources/configuration.md) setting is used. If you alter this setting after restoration, it will necessitate the removal and subsequent restoration of all Item Costing Details.
+    Before running restore procedures please determine whether the [**Manage Item Cost per Warehouse**](../../../user-guide/costing-material-and-resources/configuration/overview.md) setting is used. If you alter this setting after restoration, it will necessitate the removal and subsequent restoration of all Item Costing Details.
 :::
 
 If ProcessForce is installed on a database with an existing data (particularly Item Master Data entries) for the first time, it is necessary to run the data restoring procedures:
