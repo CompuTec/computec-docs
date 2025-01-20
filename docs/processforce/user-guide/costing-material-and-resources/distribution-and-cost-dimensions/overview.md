@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Introduction
 
-Currently Distribution Rules and Cost Centers can only be added to Items and added on the following ProcessForce master data forms and documents:
+In the current setup, Distribution Rules and Cost Centers are integrated into key elements of the ProcessForce solution, enhancing cost tracking and allocation accuracy. These features can be applied to Items and are available across the following ProcessForce master data forms and documents:
 
 - Bill of Materials
 - Manufacturing Orders
@@ -14,7 +14,7 @@ Currently Distribution Rules and Cost Centers can only be added to Items and add
 - Pick Order
 - Roll Back correction
 
-Distribution Rules and Cost Centers have been also added to Resources and are available on the following master data forms and corresponding documents:
+Additionally, Distribution Rules and Cost Centers have been added to "Resources", allowing their utilization in the following master data forms and corresponding documents:
 
 - Resources
 - Operations
@@ -27,8 +27,9 @@ Distribution Rules and Cost Centers have been also added to Resources and are av
 
 ## Configuration
 
-- SAP Business One is set up with the following configurations to determine the number of dimension fields and columns that should be displayed in the corresponding ProcessForce forms.
-
-- The configuration is the same for Items and Resources
+SAP Business One is configured to determine the number of dimension fields and columns displayed in ProcessForce forms, ensuring flexibility and consistency. This configuration applies uniformly to both Items and Resources, streamlining the setup and management process.
 
 ![Configuration](./media/overview/general-settings-dimension.png)
+
+---
+By incorporating Distribution Rules and Cost Centers into both Items and Resources, ProcessForce provides robust tools for efficient cost management and allocation. The uniform configuration across multiple forms and documents simplifies processes, enhances transparency, and supports precise cost analysis, empowering businesses to make informed decisions and optimize operations.

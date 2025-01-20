@@ -4,7 +4,7 @@ sidebar_position: 11
 
 # Faster Costing Calculation and Restoration Engine
 
-Faster Costing is an option that accelerates Costing calculations significantly.
+In today’s fast-paced business environment, accurate and efficient cost calculations are critical to maintaining profitability and competitiveness. ProcessForce introduces the Faster Costing Calculation and Restoration Engine, a breakthrough solution designed to optimize the Cost Roll-Up process. By leveraging advanced data-handling techniques, this feature reduces the time required for complex costing procedures while improving accuracy. In this guide, we’ll explore how the Faster Costing option works, its benefits, and the steps required to activate it.
 
 :::caution
     To use the option, it is required to set up a Direct Data Access connection to a database. You can check how to do this [here](../../administrator-guide/licensing/license-server/direct-access.md).
@@ -50,6 +50,8 @@ In the latest ProcessForce version, a new costing mechanism has been implemented
 
 ## Faster Costing Calculation and Restoration Engine
 
+The Faster Costing Calculation and Restoration Engine redefines the costing process by improving data handling and calculation efficiency.
+
 ### How does it work?
 
 1. The following data are being loaded to RAM:
@@ -78,9 +80,12 @@ Unchecking the checkbox causes Costing calculations to be performed according to
 ### What do the activation changes?
 
 - ProcessForce Cost Roll-Up procedure is based on the new Faster Costing Calculation and Restoration Engine, significantly speeding up the whole procedure.
-- Two new options are available on the Cost Roll-Up form: Coproducts cost calculation, Scrap cost calculation.
+- Two new options are available on the Cost Roll-Up form: Coproducts cost calculation and Scrap cost calculation.
 - A new form is available: Cost Comparison. It is available from the Bill of Materials context menu. It allows for comparison costs of production of a specific Bill of Materials with different batch size.
 - Update the Costing button on Item Costing works based on Faster Costing.
 - Costed Bill of Materials calculations are based on Faster Costing.
 - Changing the Batch size on the Costed Bill of Materials affects updated costs on all structure levels (in Standard Costing: just on Resource, Operation, and Routing levels). New prices for a specific batch size will be displayed on the form.
 - A new option on Costed Bill of Materials: Bill of Materials cost calculation based on actual Raw Materials costs in SAP Business One system. If the option is disabled, costs are calculated based on the Costing Details configuration of Raw Materials (Item Costing form).
+
+---
+The Faster Costing Calculation and Restoration Engine revolutionizes the costing process by streamlining data management and utilizing advanced bulk operations for seamless and efficient updates. With this new mechanism, businesses can significantly reduce the time required for cost calculations and benefit from enhanced accuracy and flexibility. By enabling this option, organizations gain the ability to respond faster to market demands, make better-informed decisions, and improve overall operational efficiency.

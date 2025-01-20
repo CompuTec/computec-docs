@@ -6,4 +6,4 @@ sidebar_position: 8
 
 The concept of adding SAP Business One Projects to ProcessForce forms and documents operates in the same way as Distribution Rules, and Cost Dimensions are managed.
 
-Check [Distribution and Cost Dimensions](./distribution-and-cost-dimensions/overview.md) for details.
+For more information, refer to [Distribution and Cost Dimensions](./distribution-and-cost-dimensions/overview.md).
