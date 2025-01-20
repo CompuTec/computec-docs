@@ -4,65 +4,69 @@ sidebar_position: 3
 
 # Resources - Distribution and Cost Dimensions
 
-- On the Resource form - Accounting tab, Cost Centers and Projects can be selected
-- The number of dimension fields displayed in the ProcessForce forms within SAP Business One is determined by the number of Cost Centers enabled in the SAP Business One General Settings.
-- Note the Resource Accounting combo-box, has been moved to this tab.
+Managing resources and their associated costs is a crucial aspect of maintaining operational efficiency and financial accuracy in manufacturing and business operations. This document explains how cost centers and projects are distributed and tracked across various forms in SAP Business One ProcessForce, ensuring consistency and flexibility in managing resource-related data.
+
+---
+
+On the Resource form under the Accounting tab, users can select Cost Centers and Projects. The number of dimension fields displayed in the ProcessForce forms within SAP Business One is determined by the number of Cost Centers enabled in the SAP Business One General Settings.
+>Note: The Resource Accounting combo-box, has been moved to this tab for better accessibility
 
     ![Distribution and Cost Dimensions](./media/resources-distribution-and-cost-dimensions/resource-details.png)
 
 ## Operation Form
 
-- On the Operation form in Resources tab the Cost Centers and Project are displayed for each resource
-- Values are defaulting from the Resource form and can be changed if required
+In the Operation form under the Resources tab, the selected Cost Centers and Projects for each resource are displayed. By default, these values are inherited from the Resource form but can be adjusted as needed.
 
     ![Distribution and Cost Dimensions](./media/resources-distribution-and-cost-dimensions/operation.png)
 
 ## Routing Form
 
-- On the Routing form in Resources tab, the Cost Centers and Project are displayed for each resource
-- Values are defaulting from the Operation form and can be changed if required
-- When the operation is selected the default values are copied from the Operation definition, and can be changed if required
-- When the resource is selected the default values are copied from the Resource definition, and can be changed if required
+On the Routing form under the Resources tab, Cost Centers and Projects for each resource are displayed.
+    - Default values are derived from the Operation form but can be modified if required.
+    - When the operation is selected the default values are copied from the Operation definition, and can be changed if required.
+    - When the resource is selected the default values are copied from the Resource definition, and can be changed if required.
 
-    ![Distribution and Cost Dimensions](./media/resources-distribution-and-cost-dimensions/routing.png)
+        ![Distribution and Cost Dimensions](./media/resources-distribution-and-cost-dimensions/routing.png)
 
 ## Production Process Form
 
-- On the Production Process form in Resource section the cost centers and projects are displayed.
-- When the routing is selected, the default values are copied from the Routing definition, and can be changed if required.
-- When the operation is selected, the default values are copied from the Operation definition, and can be changed if required.
-- When the resource is selected, the default values are copied from the Resource definition, and can be changed if required.
+The Production Process form displays Cost Centers and Projects in the Resource section.
+    - When the routing is selected, the default values are copied from the Routing definition, and can be changed if required.
+    - When the operation is selected, the default values are copied from the Operation definition, and can be changed if required.
+    - When the resource is selected, the default values are copied from the Resource definition, and can be changed if required.
 
-    ![Distribution and Cost Dimensions](./media/resources-distribution-and-cost-dimensions/production-process.png)
+        ![Distribution and Cost Dimensions](./media/resources-distribution-and-cost-dimensions/production-process.png)
 
 ## Manufacturing Order Form
 
-- On Manufacturing Order form - Operations tab in Resource section the cost centers and resources are displayed.
-- According to the routing definition for the Bill of Material which was used to create the Manufacturing Order, the default values are copied, and can be changed if required.
-- When an operation is selected and added to the Manufacturing Order, the default values are copied, and can be changed if required.
-- When a resource is selected and added to the Manufacturing Order, the default values are copied, and can be changed if required.
+On the Manufacturing Order form under the Operations tab in the Resource section:
+    - Default values for Cost Centers and Resources are copied from the routing definition of the Bill of Materials used to create the Manufacturing Order. These values can be updated as necessary.
+    - When an operation is selected and added to the Manufacturing Order, the default values are copied, and can be changed if required.
+    - When a resource is selected and added to the Manufacturing Order, the default values are copied, and can be changed if required.
 
-    ![Manufacturing Order Form](./media/resources-distribution-and-cost-dimensions/manufacturing-order-project.png)
+        ![Manufacturing Order Form](./media/resources-distribution-and-cost-dimensions/manufacturing-order-project.png)
 
 ## Time Bookings Form
 
-- On Time Bookings form, the cost centers and resources are displayed.
-- According to Manufacturing Order definition the default values are copied, and can be changed if required.
+The Time Bookings form displays the assigned Cost Centers and Resources based on the Manufacturing Order definition. Default values are copied automatically but can be adjusted as required.
 
     ![Time Bookings Form](./media/resources-distribution-and-cost-dimensions/time-bookings.png)
 
 ## Time Corrections Form
 
-- On Time Corrections form  the cost centers and resources are displayed
-- According to Time Booking record the default values are copied, and can be changed if required
+The Time Corrections form shows the relevant Cost Centers and Resources, with default values inherited from the Time Booking record. These can also be updated if required.
 
     ![Time Corrections Form](./media/resources-distribution-and-cost-dimensions/time-corrections.png)
 
 ## Postings
 
-- When Time Booking or Time Correction document is saved we use set there Cost Centers and Project in created Journal Entry document
-- Each cost center dimension from Time Bookings is saved in its respective counterpart in Journal Entry
-- Cost centers are only saved for Sales and Expenditure type accounts
-- Project is saved for every type account
+When a Time Booking or Time Correction document is saved, the associated Cost Centers and Projects are reflected in the corresponding Journal Entry document. Key considerations include:
+
+- Each cost center dimension from Time Bookings is saved in its respective counterpart in the Journal Entry.
+- Cost centers are applied only to Sales and Expenditure accounts.
+- Projects are applied to all account types.
 
 ![Distribution and Cost Dimensions](./media/resources-distribution-and-cost-dimensions/chart-of-accounts.png)
+
+---
+By integrating cost centers and projects across multiple forms, SAP Business One ProcessForce provides a robust framework for financial tracking and operational transparency. The ability to default, inherit, and adjust these values empowers businesses to maintain control over resource allocation and financial reporting, ensuring both accuracy and adaptability in their operations.

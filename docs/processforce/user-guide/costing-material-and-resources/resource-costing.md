@@ -4,13 +4,13 @@ sidebar_position: 5
 
 # Resource Costing
 
-Resource Costing is a function that evaluates a Resource's work during production. Combined with Item Costing (which holds materials costs), this option assesses the production based on a given Manufacturing Order.
+Resource Costing is a vital function in production management that calculates the cost of a Resource's work during the manufacturing process. When combined with Item Costing (which evaluates material costs), it provides a comprehensive assessment of production costs for a given Manufacturing Order. This enables organizations to monitor and optimize both fixed and variable costs effectively.
 
 :::danger
     Adding User Defined Fields to the Item Costing and Resource Costing form may cause errors and is not recommended.
 :::
 
-Please check the [Configuration](./configuration/overview.md) section before running the Costing functions.
+Before using the Costing functions, ensure all configurations are properly set up as described in the [Configuration](./configuration/overview.md) section.
 
 :::info Path
     Costing → Resource Costing
@@ -18,19 +18,21 @@ Please check the [Configuration](./configuration/overview.md) section before run
 
 ![Resource Costing](./media/resource-costing/resource-costing.webp)
 
+---
+
 ## General Information
 
-Resource Costing is created automatically upon adding a new Resource to the system. For every Resource, separate Resource Costing is created for each of the [Cost Categories](../costing-material-and-resources/cost-categories.md) in the system (Note that Resource Costing for Cost Category 000 cannot be edited on this form).
+Resource Costing entries are created automatically when a new Resource is added to the system. For every Resource, separate Resource Costing is created for each of the [Cost Categories](../costing-material-and-resources/cost-categories.md) in the system. However, Resource Costing for Cost Category 000 cannot be edited directly within this form.
 
-During the Item Cost Roll-up for a semi-finished or finished product, these fixed and variable overhead values will be displayed within the Fixed and Variable Overhead columns.
+During the Item Cost Roll-up process, fixed and variable overhead values are displayed within the respective columns, providing transparency in cost evaluation for semi-finished or finished goods.
 
 ### Resource Cost Calculation
 
 ![Resource Costing](./media/resource-costing/resource-costing-2.webp)
 
-Overall Resource Cost calculation is based on three elements:
+The overall Resource Cost calculation is derived from three primary elements:
 
-1. Resource Cost – in Resource Costing is calculated for 1 hour of work. Resource cost taken under consideration in Item Costing is calculated based on two values: Resource Costing Hourly Rate and Resource Times values (default Resource Times values for a specific Resource are defined in Resource form, but it can be later changed in a particular Operation and specific Production Process):
+1. **Resource Cost** – Calculated for one hour of work, based on the Resource Costing Hourly Rate and Resource Times values. TDefault Resource Times are initially defined in the Resource form but can be modified later for specific Operations or Production Processes:
 
     ![Resource to Resource Costing](./media/resource-costing/resource-resource-costing.webp)
 
@@ -48,37 +50,41 @@ Overall Resource Cost calculation is based on three elements:
     |  8  | Pieces per minute |  1/V/(60 × H)  |
     |  9  |  Pieces per hour  |   1/(T × H)    |
 
-    H - Hourly Rate
+    where, *H* - Hourly Rate, *V* - a value for a given time for a Resource, e.g., in the screenshot above Queue Time value is 30.
 
-    V - a value for a given time for a Resource, e.g., in the screenshot above Queue Time value is 30
-2. Fixed Overhead Cost – fixed overhead is a set of costs that usually do not change with changes in activity, e.g., factory rent. Three values can define it:
+2. **Fixed Overhead Cost** – Includes costs that do not vary with production output, such as rent. Key components include:
 
-    - Fixed O/H – main fixed overhead cost
-    - Fixed O/H % – percent value of an Hourly Rate to be added to fixed overhead
-    - Fixed O/H % Cost – value calculated based on Hourly Rate and Fixed O/X %
-    - Fixed O/H Other – it is possible to define other fixed costs
-    - Fixed O/H SubTotal – overall fixed overhead value: Fixed O/H + Fixed O/H % Cost + Fixed O/H Other
-3. Variable Overhead Cost – costs that may vary significantly in relation to production output changes, e.g., production supplies.
+        - **Fixed O/H**: main fixed overhead cost
+        - **Fixed O/H %**: percent value of an Hourly Rate to be added to fixed overhead
+        - **Fixed O/H % Cost**: value calculated based on Hourly Rate and Fixed O/X %
+        - **Fixed O/H Other**: it is possible to define other fixed costs
+        - **Fixed O/H SubTotal**: overall fixed overhead value: Fixed O/H + Fixed O/H % Cost + Fixed O/H Other
 
-    - Variable O/H – main variable overhead cost
-    - Variable O/H % – percent value of an Hourly Rate to be added to the variable overhead
-    - Variable O/H % Cost – percent value of an Hourly Rate to be added to the variable overhead
-    - Variable O/H Other – it is possible to define other variable costs
-    - Variable O/H Sub-Total – overall variable overhead value: Variable O/H + Variable O/H % Cost + Variable O/H Other
-4. Total
+3. **Variable Overhead Cost** – costs that may vary significantly in relation to production output changes, e.g., production supplies.
 
-    Added up values from the following fields: Hourly Rate, Fixed O/H SubTotal, Variable O/H SubTotal.
+    - **Variable O/H**: main variable overhead cost
+    - **Variable O/H %**: percent value of an Hourly Rate to be added to the variable overhead
+    - **Variable O/H % Cost**: percent value of an Hourly Rate to be added to the variable overhead
+    - **Variable O/H Other**: it is possible to define other variable costs
+    - **Variable O/H Sub-Total**: overall variable overhead value: Variable O/H + Variable O/H % Cost + Variable O/H Other
 
-    It is possible to define structured overhead costs. Click [here](../costing-material-and-resources/item-costing/multistructure-fixed-and-variable-overhead-costs.md) to find out more.
+4. **Total** - Combined total of Hourly Rate, Fixed Overhead SubTotal, and Variable Overhead SubTotal.
+
+    For a detailed breakdown of structured overhead costs, refer to [Multistructure Fixed and Variable Overhead Costs](../costing-material-and-resources/item-costing/multistructure-fixed-and-variable-overhead-costs.md).
 
 ### Labor
 
-Resource Costs are expressed as an Hourly rate, and this Hourly rate may be a combined machine and labor value.
+Resource Costs are calculated as an Hourly Rate, which may combine both machine and labor costs into a single value.
 
-If machine and labor rates are required separately, there are two ways to do it:
+If machine and labor rates need to be separated, you can achieve this using one of the following methods:
 
-Adding the labor rate as fixed overhead (or variable overhead) as a specific value, e.g., 10, or as a % of the Hourly rate, e.g., 10% of 20 = 2 (you can use [Multistructure Fixed and Variable Overhead Costs option](./item-costing/multistructure-fixed-and-variable-overhead-costs.md))
-Create a specific resource called Labor and assign its costs and Resource Accounting codes.
+1. **Add Labor Costs as Overhead**:
+
+    Include the labor rate as a fixed or variable overhead. This can be defined as a specific value (e.g., 10) or as a percentage of the Hourly Rate (e.g., 10% of 20 = 2). For more details, refer to [Multistructure Fixed and Variable Overhead Costs option](./item-costing/multistructure-fixed-and-variable-overhead-costs.md).
+
+2. **Create a Separate Resource for Labor**:
+
+    Define a distinct resource labeled "Labor" and assign appropriate costs and Resource Accounting codes to it.
 
 ## Resource Accounting
 
@@ -88,25 +94,25 @@ Create a specific resource called Labor and assign its costs and Resource Accoun
     Administration → Setup → Financials → Resources Accounting
 :::
 
-Resource Accounting is a set of connections between specific Resource related costs and Accounts. These accounting rules can be later assigned to one or more Resources.
+Resource Accounting establishes links between specific Resource-related costs and their corresponding financial accounts. These accounting rules can then be applied to one or more Resources as needed.
 
-Currently, only the Account, Fixed Overhead, and Variable Overhead accounts are used for financial posting. Variance, Fixed, and Variable Overhead Variance will be used in a later release.
+Currently only the following accounts are utilized for financial postings: Account, Fixed Overhead, and Variable Overhead. accounts are used for financial posting. Variance, Fixed Overhead Variance, and Variable Overhead Variance will be incorporated in a future release.
 
-Currently, all resource-related variances are posted into a single WIP variance posting (this is the same for inventory items)
+At present, all Resource-related variances are consolidated into a single WIP (Work-in-Progress) variance posting, similar to the handling of inventory items.
 
-If using different time types, each type can have a separate account code.
+When different time types are used, each type can be assigned a separate account code.
 
 :::caution
-    Note that each Resource Account (Title column) must have Accounts (Accounts Code) assigned for Resource Costing to work correctly.
+    Each Resource Account (Title column) must have an assigned Account Code for Resource Costing to function properly.
 :::
 
 ![Resource Accounting](./media/resource-costing/resource-accounting-2.webp)
 
 ### Resource Account Definition
 
-Predefined Resource Accounting (see the previous paragraph) can be added to a Resource within the Resource form > Details tab.
+Predefined Resource Accounting, as outlined in the previous section, can be assigned to a Resource through the Details tab of the Resource form.
 
-If financial postings are required, a Resource Accounting code has to be chosen. If financial postings are not needed, then select No Posting.
+To enable financial postings, select an appropriate Resource Accounting code. If financial postings are unnecessary, choose the "No Posting" option.
 
 ![Resource Accounting](./media/resource-costing/resource-accounting-3.webp)
 
@@ -114,4 +120,7 @@ Click [here](../routings/resources.md) to find out more about Resources.
 
 ## Distribution Rules and Cost Dimensions
 
-For details, click [Resources - Distribution and Cost Dimensions](../costing-material-and-resources/distribution-and-cost-dimensions/resources-distribution-and-cost-dimensions.md).
+To learn about Resource Distribution and Cost Dimensions, refer to [Resources - Distribution and Cost Dimensions](../costing-material-and-resources/distribution-and-cost-dimensions/resources-distribution-and-cost-dimensions.md).
+
+---
+Resource Costing is an essential tool for organizations seeking precise cost management in manufacturing. By understanding the interplay between fixed and variable costs, businesses can enhance decision-making, improve financial reporting, and achieve greater efficiency in production processes. Proper configuration and adherence to guidelines ensure the accuracy and reliability of Resource Costing functions.

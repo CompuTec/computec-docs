@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Introduction
 
-Currently Distribution Rules and Cost Centers can only be added to Items and added on the following ProcessForce master data forms and documents:
+In SAP Business One with ProcessForce, managing distribution and cost dimensions is critical for efficient resource allocation and accurate financial reporting. This document outlines the process for associating Distribution Rules and Cost Centers with key forms and documents, ensuring streamlined workflows and consistent data management. These dimensions can be assigned to items and carried forward across various master data forms and documents:Currently Distribution Rules and Cost Centers can only be added to Items and added on the following ProcessForce master data forms and documents:
 
 - Bill of Materials
 - Manufacturing Orders
@@ -23,44 +23,47 @@ Distribution Rules can be allocated as follows, and once set at this level will 
 
 ### Bill of Materials
 
-- Select the Distribution rules for the appropriate dimensions
+- Select the Distribution rules for the appropriate dimensions.
 
     ![Bill of Materials](./media/item-distribution-and-cost-dimensions/bill-of-materials-select-distribution-rule.png)
 
-- Using the Form Setting - Bills of Materials, select the dimensions to be displayed
+- Using the Form Setting in Bills of Materials, select the dimensions to be displayed.
 
     ![Bill of Materials](./media/item-distribution-and-cost-dimensions/bill-of-materials-form-settings.png)
 
-- For each line, select the distribution rule
+- For each line, select the distribution rule.
 
     ![Bill of Materials](./media/item-distribution-and-cost-dimensions/bill-of-materials-list-of-distribution-rules.png)
 
 ### Manufacturing Orders
 
-- Based on the Bill of Materials, the dimensions are copied into the Manufacturing Order
+- Based on the Bill of Materials, the dimensions are copied into the Manufacturing Order.
 
     ![Manufacturing Orders](./media/item-distribution-and-cost-dimensions/bill-of-materials.png)
 
 ### Pick Issues
 
-- Based on the Manufacturing Order, the dimensions are copied into the Pick Issue Document
+- Based on the Manufacturing Order, the dimensions are copied into the Pick Issue Document.
 
     ![Pick Issues](./media/item-distribution-and-cost-dimensions/pick-issues.png)
 
 ### Goods Issues
 
-- Based on the Pick Issue, the dimensions are copied into the SAP Business One Goods Issue Document
+- Based on the Pick Issue, the dimensions are copied into the SAP Business One Goods Issue Document.
 
     ![Goods Issues](./media/item-distribution-and-cost-dimensions/goods-issues.png)
 
 ### Pick Receipt
 
-- Based on the Manufacturing Order header, the dimensions are copied into the Pick Receipt
+- Based on the Manufacturing Order header, the dimensions are copied into the Pick Receipt.
 
     ![Pick Receipt](./media/item-distribution-and-cost-dimensions/pick-receipt.png)
 
 ### Goods Receipt
 
-- Based on the Pick Receipt, the dimensions are copied into the SAP Business One Goods Receipt
+- Based on the Pick Receipt, the dimensions are copied into the SAP Business One Goods Receipt.
 
     ![SAP Business One Goods Receipt](./media/item-distribution-and-cost-dimensions/goods-receipt.png)
+
+---
+By enabling the allocation of Distribution Rules and Cost Centers across master data forms and transactional documents, ProcessForce ensures seamless integration and accurate dimension tracking. This systematic approach enhances operational efficiency and provides a robust framework for financial analysis and reporting. Adopting these practices will empower organizations to make data-driven decisions and optimize resource utilization.
