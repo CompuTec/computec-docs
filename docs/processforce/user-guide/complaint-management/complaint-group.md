@@ -8,8 +8,9 @@ sidebar_position: 4
     Administration → Setup → Complaints → Complaint Groups
 :::
 
-This form allows the user to define and edit Complaint Groups, to categorize [Reason Codes](./complaint-reason.md) for reporting and analysis purposes.
-
-The Group can be used for customer, supplier, and internal purposes. Remarks can be added if needed. The user can pick more than one option simultaneously.
+The Complaint Group form enables users to define and manage Complaint Groups, to categorize [Reason Codes](./complaint-reason.md) for reporting and analysis purposes.These groups can be applied across customer, supplier, and internal complaints, providing better organization and insights. Users can add remarks as needed and select multiple options simultaneously for greater flexibility.
 
 ![Complaint Group](./media/complaint-group/complaint-group.webp)
+
+---
+By effectively utilizing Complaint Groups, businesses can streamline their complaint management process, ensuring that reasons for complaints are categorized accurately for comprehensive analysis and improved decision-making.
