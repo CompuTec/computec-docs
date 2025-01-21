@@ -6,21 +6,24 @@ sidebar_position: 1
 
 ## The 4 W's of Quality Control
 
-ProcessForce Quality Control function covers the 4 Ws of Quality Control:
+The Quality Control function within ProcessForce is designed to ensure thorough testing and inspection by covering the 4 Ws of Quality Control:
 
-- What – Test and Item Properties to be tested,
-- When – The frequency of testing,
-- Where – The transaction the test will be performed,
-- With – The resources and items that are used within the testing process,
+- **What**: identifies the test and item properties to be evaluated.
+- **When**: specifies the frequency of the testing process.
+- **Where**: defines the transactions during which the test will be performed.
+- **With**: details the resources and items that are used within the testing process.
 
-**You can use Quality Control to manage the following processes**:
+**Quality Control can be used to manage the following processes**:
 
-- In-bound – Goods Receipt,
-- In-process – Manufacturing Order and Manufacturing Order operation,
-- Inventory – Inspection, and re-testing.
+- **In-bound**: Goods Receipt,
+- **In-process**: Manufacturing Order and its associated operation,
+- **Inventory**: Inspection, and re-testing.
 
 :::info Path
     Main Menu → Quality Control
 :::
 
 ![Quality Control](./media/overview/quality-control-test.webp)
+
+---
+With this comprehensive approach, businesses can ensure higher standards of quality throughout their operations, leading to more consistent and reliable products and services.
