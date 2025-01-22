@@ -4,11 +4,11 @@ sidebar_position: 5
 
 # Test Protocols for Operation
 
-It is possible to mark a Test Protocol as specific for a specific Operation (Test Protocol → Transactions tab → Operation).
+A Test Protocol can be designated for a specific Operation by navigating to the Transactions tab (Test Protocol → Transactions → Operation).
 
-You can assign a Test Protocol to an Operation on Production Process/Routing/Manufacturing Order (Operations tab).
+Alternatively, a Test Protocol can be linked to an Operation through the Production Process, Routing, or Manufacturing Order in the Operations tab.
 
-Both ways will create a Quality Control Test, but there are some differences:
+While both methods result in the creation of a Quality Control Test, there are key differences between them:
 
 |              Scenario               | Protocol Defined in Routing Based on Operation | General Settings > PF > QC - Create QC Document on MOR state | General Settings > PF > QC - Create QC Document for Operation on MOR state |                                                         Behavior                                                         |
 | ----------------------------------- | :--------------------------------------------: | :----------------------------------------------------------: | :------------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------ |
@@ -26,4 +26,7 @@ Based on Manufacturing Order Operation:
 
 ## Example
 
-If there is a process, a kind of First Check before starting/completing the operation, Test Protocol should be defined in Routing to relate QC with Operation. There would be some requirements like blocking operation to start via PDC if QC - First check is not Passed.
+For processes requiring a quality check before or after an operation (such as a "First Check"), the Test Protocol should be defined in the Routing, associating the QC check directly with the operation. In such cases, requirements like blocking the operation from starting through PDC if the QC check (First check) has not been passed can be enforced.
+
+---
+By linking Test Protocols to specific operations within the production process, ProcessForce enables greater control over quality management. It allows manufacturers to apply quality checks precisely when needed and ensures that operations are carried out only when quality standards are met. This method helps to maintain high-quality standards and prevent operational delays due to non-compliance.

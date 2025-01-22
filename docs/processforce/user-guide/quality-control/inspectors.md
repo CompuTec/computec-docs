@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Inspectors
 
-Here, you can define Inspectors who can be assigned to perform a Quality Test and groups of Inspectors.
+Inspectors are integral to maintaining quality standards, ensuring thorough and accurate testing processes. The Inspectors, Inspector Groups, and NCMR Inspectors setups allow organizations to define, organize, and manage inspectors efficiently. These tools support streamlined task allocation, enhanced reporting, and better overall quality control.
 
 ---
 
@@ -18,7 +18,7 @@ Here, you can define Inspectors who can be assigned to perform a Quality Test an
 
 This form allows the user to define the Inspectors, used to conduct the Quality Control Tests and the Warehouse they are allocated to.
 
-This data is used within the Quality Control Test Form.
+This data is utilized in the Quality Control Test Form to facilitate task assignment and tracking.
 
 ## Inspector Groups
 
@@ -40,8 +40,13 @@ For example, Inspectors could be grouped by warehouse or specialization.
 
 ![NCMR Inspector](./media/inspectors/ncmr-inspector.webp)
 
-This form allows the user to define the NCMR Inspectors, used to conduct the NCMR process and the Warehouse they are allocated to.
+The NCMR Inspectors form is specifically designed for defining inspectors who handle the Non-Conformance Material Report (NCMR) process.
 
-This data is used within the Quality Control Test > Defect Tab and the NCMR Transaction.
+Key functionalities:
 
-It is possible to define NCMR Inspector Group similarly to Inspector Group.
+- **Inspector Allocation**: Assign inspectors for NCMR-related tasks.
+- **Warehouse Allocation**: Designate a warehouse for each NCMR inspector.
+- **NCMR Inspector Groups**: Similar to standard Inspector Groups, these can categorize inspectors for NCMR activities.
+
+---
+Properly managing inspectors is crucial for upholding quality standards and ensuring operational efficiency. The Inspectors, Inspector Groups, and NCMR Inspectors setups provide a robust framework for organizing inspection resources and tasks. By leveraging these tools, organizations can streamline quality control processes, improve reporting accuracy, and maintain a high level of quality assurance.
