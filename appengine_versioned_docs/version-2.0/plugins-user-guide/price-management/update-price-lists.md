@@ -59,13 +59,13 @@ Initially, the newly created document will not contain any Item Master Data or p
 
 By default, the new document is assigned the status "In Progress," indicating that it is currently being worked on.
 
-    ![Add Document](./media/add-doc-02.png)
+    ![Add Document](./media/price-list-details.jpg)
 
 ## Import
 
 To enrich the document with data on Item Master Data and their prices, begin by retrieving the necessary information from the prepared Excel file. Click the "Import" button.
 
-    ![Import](./media/import-positions.png)
+    ![Import](./media/update-import.jpg)
 
 Select the appropriate file.
 
@@ -73,13 +73,13 @@ Select the appropriate file.
 
 Once the data is loaded, the document becomes more comprehensive as it now includes details on planned price changes. You can view the current prices of individual indices in specific price lists, as well as the prices intended for entry into SAP.
 
-    ![Import Positions](./media/import-positions-02.png)
+    ![Import Positions](./media/price-list.jpg)
 
 ## Editing the Document
 
 When editing a document, we have the option to delete specific rows. To do this, simply select the row(s) you wish to remove and click the "Delete Positions" button. Multiple rows can be deleted simultaneously.
 
-    ![Edit Doc](./media/edit-doc.png)
+    ![Edit Doc](./media/edit-doc.jpg)
 
 Additionally, you can add more rows from another Excel file. If this new file contains the same Item Master Data and planned price changes as the original, the plugin will flag these rows with an Error status and provide an explanation for the error. Any invalid rows will not be sent to SAP.
 
@@ -95,9 +95,8 @@ which may be "Pending" or "Error" for document that is in the process of being c
 
 In case the document contains a large number of items (e.g., 10,000) and we cannot view all items on screen, we can filter the list to show only those items with an Error status. This allows us to investigate the cause of the error, delete the affected items, correct them in Excel and then re-import them.
 
-    ![Edit Doc](./media/edit-doc-04.png)
-    ![Edit Doc](./media/edit-doc-05.png)
-
+    ![Error](./media/error.jpg)
+    
 The list can also be sorted based on a selected order:
 
     !![Edit Doc](./media/edit-doc-06.png)
@@ -135,7 +134,7 @@ To delete a document:
 
 This action will permanently remove the document from the system.
 
-    ![Delete Document](./media/delete-doc.png)
+    ![Delete Document](./media/delete-doc.jpg)
 
 ## Background Processing
 
