@@ -14,7 +14,7 @@ The main screen displays a list of Item Master Data along with their associated 
 
 The number of Item Master Data visible on the screen at any given time is limited. For example, if the dataset contains 10,000 Item Master Data, only the first few dozen Item Master Data will be displayed initially. Additional Item Master Data will load dynamically as you scroll down.
 
-    ![Export Prices](./media/export-prices.png)
+    ![Export Prices](./media/export-price-list.jpg)
 
 At the top of the screen there is a set of filters that allow you to define the criteria for selecting the data displayed. Once the filters are configured, clicking the GO button generates a dataset based on the specified criteria, which is then shown on the screen. This dataset can subsequently be exported to an Excel file.
 
@@ -34,17 +34,17 @@ We can also define the price range for which the data of each Item Master Data w
 
 The set of filters visible on the screen can be customized by clicking the Adapt Filters button.
 
-    ![Adapt Filters](./media/adapt-filters.png)
+    ![Adapt Filters](./media/adapt-filters.jpg)
 
 You can reset all filters to start building the dataset from scratch.
 
-    ![Clear Filters](./media/clear-filters.png)
+    ![Clear Filters](./media/clear-filters.jpg)
 
 ## Export Data to Excel file
 
 Once the dataset is prepared it can be exported to an Excel file. Simply click the button and after a moment, a confirmation message will appear in the upper right corner of the browser indicating the file has been downloaded.
 
-    ![Export Data](./media/export-data.png)
+    ![Export Data](./media/export-price-sort.jpg)
     ![Export Data](./media/export-data-01.png)
 
 ## Editing Data in an Excel File
