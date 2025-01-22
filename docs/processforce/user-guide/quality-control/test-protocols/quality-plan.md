@@ -4,9 +4,9 @@ sidebar_position: 4
 
 # Quality Plan
 
-The quality Control function reflects the ISO 2859-1 norm (Sampling procedures for inspection by attributes) in ProcessForce and allows to recreate and adjust to the specific business requirements. Therefore, it allows generating Quality Control Test Pool based on the norm's rules (Business Partners' ratings, Pass/Fail rules).
+The Quality Control function reflects the ISO 2859-1 norm (Sampling procedures for inspection by attributes) in ProcessForce and and offers flexibility to customize it according to specific business needs. Therefore, it allows generating Quality Control Test Pool based on the norm's rules (Business Partners' ratings, Pass/Fail rules).
 
-Agreeing to use the Quality Control function based on the ISO 2859-1 norm can be a valuable tool for quality assurance between your company and a business partner delivering Items to you.
+Adopting the Quality Control function based on the ISO 2859-1 standard can be a valuable asset for ensuring quality between your company and a business partner supplying you with items.
 
 ---
 
@@ -16,7 +16,7 @@ Agreeing to use the Quality Control function based on the ISO 2859-1 norm can be
 
 ## Business Impact
 
-The ISO 2859-1 norm contains tables with statistical data that define several testing samples for a Batch (received from production or bought) based on data like Batch size, inspection severity, or Business Partner rating. E.g., for a Batch of 10000 units, the norm based on statistical data may count ten samples, of which at least eight have to pass the Quality Control Test for the whole Batch to be receipted. The Quality Plan defined in ProcessForce affects Quality Control Test Pools.
+The ISO 2859-1 standard includes tables with statistical data that determine the number of samples to test in a batch (whether received from production or purchased), based on factors such as batch size, inspection severity, and the Business Partner’s rating. For example, for a batch of 10,000 units, the norm may specify ten samples, with at least eight passing the Quality Control Test for the entire batch to be accepted. The Quality Plan set up in ProcessForce directly influences the Quality Control Test Pools.
 
 ## Quality Plan Preparation
 
@@ -28,43 +28,26 @@ The ISO 2859-1 norm contains tables with statistical data that define several te
 
 ### Header
 
-**Quality Plan Code / Description** – set your Code and Name
-
-**Type** – now only the Single option is available. Double and Multiple options (and related functions) are planned to be delivered in future releases
-
-**Inspection Severity** – this term is associated with ISO 2859-1. The measure of a sampling plan's performance capability is calculated based on the discrimination ratio and valuation severity (according to the DGQ - German Society for Quality).
-
-This measure identifies a standard, reduced, or tightened inspection. Sampling schemes referred to sampling plans for inspection severity or inspection severity and accepted quality level (AQL).
-
-By varying the inspection severity, the probability of acceptance and the inspection effort can be flexibly adjusted to respond to different quality situations.
-
-**Sampling Table** – a Sampling table defined based on ISO 2859. You can specify a code and name for this field for information purposes.
-
-**Inspection Level** – levels defined in ISO 2859.
-
-**Acceptance Quality Limit** – the maximum fraction of nonconforming units (as a percentage) or the maximum number of defects per 100 units permitted for a lot to be accepted. The AQL (Acceptable Quality Level) is the quality level that represents the upper limit of a satisfactory average quality level for an acceptance sampling inspection.
-
-The five options above point to a specific column in a table from the norm (2-A – Single sampling plans for routine inspection). The content of the column is presented in the table below.
-
-**Ac Re Obligatory** – defines if the Acceptance number and Rejection number from the table are required to decide about QC order releasing (if not checked, the final result of the test can be changed manually).
+- **Quality Plan Code / Description**: – set your Code and Name
+- **Type**:  Currently, only the "Single" option is available. The "Double" and "Multiple" options, along with related functionalities, are planned for future releases.
+- **Inspection Severity**: this term is associated with ISO 2859-1. The measure of a sampling plan's performance capability is calculated based on the discrimination ratio and valuation severity (according to the DGQ - German Society for Quality). This measure identifies a standard, reduced, or tightened inspection. Sampling schemes referred to sampling plans for inspection severity or inspection severity and accepted quality level (AQL). By adjusting the inspection severity, businesses can balance the probability of acceptance with inspection efforts to suit varying quality conditions.
+- **Sampling Table**: a Sampling table defined based on ISO 2859. Users can define a code and name for reference.
+- **Inspection Level**: the inspection levels as defined in ISO 2859.
+- **Acceptance Quality Limit**: the maximum fraction of nonconforming units (as a percentage) or the maximum number of defects per 100 units permitted for a lot to be accepted. The AQL (Acceptable Quality Level) is the quality level that represents the upper limit of a satisfactory average quality level for an acceptance sampling inspection.
+The parameters above correspond to a specific column within a table from the norm (Table 2-A – Single Sampling Plans for Routine Inspection). The relevant column's data is presented in the table section below.
+- **Ac Re Obligatory**: specifies whether the Acceptance and Rejection numbers from the table are mandatory for deciding the release of a Quality Control (QC) order. If unchecked, the final test results can be manually modified.
 
 ### Table
 
-The content of this table is a recreation of a specific column (as not often the whole table is needed for particular product inspection needs) in a specific table from the norm (check the Header information on this page), and the user should recreate it accordingly. Of course, the bar suggests model settings that can be changed according to the user's business needs.
+This table represents a recreated column from the ISO 2859-1 standard, focusing on specific product inspection requirements. Users can configure it as needed, as the entire table is often unnecessary for most cases. Suggested model settings are provided but can be adjusted to align with individual business needs.
 
-**Code Letter** – sampling size based on Table 1 of ISO 2859-1. Values from A to R.
-
-**From Quantity To Quantity** – defines a lot size (Batch) for which Quality Control Tests are to be performed.
-
-**Sample** – this option is related to Type. Other options will be implemented along with related Double and Multiple Types. For now, only the First option is available.
-
-**Number of Samples** – several samples for a specific Batch size
-
-**Cumulative Number of Samples** – this option defines a cumulative number of samples from double or multiple tests. This option is related to Type. Other options will be implemented along with related Double and Multiple Types. For now, a single type is available. Therefore this field is not used yet.
-
-**Acceptance Number** – defines the highest number of nonconforming units or defects in the sample that still allows the lot to be accepted. The acceptance number in an attributive inspection corresponds to the acceptability constant in a variable inspection.
-
-**Rejection Number** – defines the lowest number of nonconforming units or defects in a sample that leads to the rejection of the lot.
+- **Code Letter**: represents the sampling size based on Table 1 of ISO 2859-1, with values ranging from A to R.
+- **From Quantity To Quantity**: specifies the lot size (batch) for which Quality Control Tests will be conducted.
+- **Sample**: refers to the sampling type. Currently, only the First option is available; additional options for Double and Multiple types are planned for future updates.
+- **Number of Samples**: indicates the number of samples required for a specific batch size.
+- **Cumulative Number of Samples**: reflects the cumulative total of samples in double or multiple tests. This field is currently not in use as it applies to future Double and Multiple types.
+- **Acceptance Number**: defines the highest number of nonconforming units or defects in the sample that still allows the lot to be accepted. The acceptance number in an attributive inspection corresponds to the acceptability constant in a variable inspection.
+- **Rejection Number**: defines the lowest number of nonconforming units or defects in a sample that leads to the rejection of the lot.
 
 ## Usage
 
@@ -74,16 +57,17 @@ The content of this table is a recreation of a specific column (as not often the
 
 Choose a Quality Plan in the Quality Plan tab.
 
-To use the option, check the Create QC Tests Pool checkbox and then the Parameters from Quality Plan in the Test Protocol form, QC Test/QC Pool Par. Tab (the function can be used along with Auto Create QC Test /QC Test Pool option from the same tab).
-
-Then, choose a Quality Plan in the Quality Plan tab.
-
 ![Quality Control Plan Tab](./media/quality-plan/quality-plan-tab.webp)
 
-You can then choose if the Quality Plan is active.
+To use the option:
 
-Use for – defines which value is taken under consideration when choosing Business Partners to be affected by the specific Quality Plan (either QC Qualification Code or QC Rating; values assigned in Business Partner Master Data, General tab)
+1. Navigate to the Quality Plan tab within the Test Protocol form and choose the applicable Quality Plan.
+2. Enable the Create QC Tests Pool checkbox and the Parameters from Quality Plan option in the QC Test/QC Pool Par. tab. These options can also be used alongside the Auto Create QC Test/QC Test Pool feature in the same tab.
+3. Once the Quality Plan is selected, you can specify whether it is active.
+4. Use the "Use for" field to determine whether Business Partners are identified based on their QC Qualification Code or QC Rating. These values are set in the Business Partner Master Data under the General tab.
+5. Specify the range for Business Partner Qualification Code or Rating. Business Partners within this defined range will be subject to the Quality Plan.
 
-You can define BP Qualification Code or BP Qualification Rating range. Business Partners within this range are affected by the specific Quality Plan.
+The configuration shown in the screenshot demonstrates that Quality Plan 01 applies to Item Product-A for Business Partners with QC Qualification Codes ranging from A to C. This plan outlines the required number of samples to be tested for specific batch sizes and the ratio of passed to failed tests necessary for the batch to pass Quality Control.
 
-The screenshot above shows the configuration, meaning that Quality Plan 01 applies to Item Product-A from Business Partners with BP Qualification Code within the range of A to C. This plan defines how many samples of Item Product-A delivered from this Business Partner are to be tested for a specific Batch size and the ratio of pass/failed tests for a Batch to pass.
+---
+The Quality Plan feature is a critical tool for maintaining high standards of quality control. Whether for internal production or supplier quality assurance, this feature empowers businesses to ensure consistent product quality and build trust with partners and customers. With its structured approach and customization options, the Quality Plan functionality is a cornerstone for achieving excellence in quality management.

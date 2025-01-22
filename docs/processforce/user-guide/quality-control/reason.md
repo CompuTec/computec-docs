@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Reason
 
-You can define the Reason why a specific Test Property and Item Property within the Quality Control Test process failed the test and is used for analysis and reporting purposes.
+In quality control, understanding why tests fail is crucial for driving improvements and preventing recurring issues. The Reason, Reason Groups, and NCMR Reason setups enable users to define, categorize, and analyze failure reasons within the quality control process.
 
 ---
 
@@ -14,9 +14,12 @@ You can define the Reason why a specific Test Property and Item Property within 
 
 ![Reason](./media/reason/reason.webp)
 
-This form allows the user to define the Reasons why a specific [Test Property](./test-properties.md) and [Item Property](../item-details/item-properties.md) within the Quality Control Test process failed the test and is used for analysis and reporting purposes.
+The Reason form allows the user to define the Reasons why a specific [Test Property](./test-properties.md) and [Item Property](../item-details/item-properties.md) fail during the Quality Control Test process. These defined reasons are critical for in-depth analysis and reporting.
 
-The Used Count field indicates how many times the Reason Code has been used and is used for reporting and analysis purposes.
+Key features include:
+
+- **Reason Codes**: Unique identifiers for documenting specific failure reasons.
+- **Used Count**: Tracks how often each Reason Code is used, offering insights into recurring issues.
 
 ## Reason Groups
 
@@ -26,9 +29,7 @@ The Used Count field indicates how many times the Reason Code has been used and 
 
 ![Reason Groups](./media/reason/reason-group.webp)
 
-This form allows the user to define Reason Groups used to categorize Reasons for analysis and reporting purposes.
-
-This data is used within the Reason Form.
+The Reason Groups form enables users to categorize individual reasons into broader groups. These groupings simplify analysis and reporting, making it easier to identify patterns and prioritize corrective actions.
 
 ## NCMR Reason
 
@@ -38,8 +39,14 @@ This data is used within the Reason Form.
 
 ![Reason](./media/reason/ncmr-reason.webp)
 
-This form allows the user to define the NCMR Reasons why a Quality Control Test has failed and is used for analysis and reporting purposes.
+The NCMR Reason form is used to define reasons for Non-Conformance Material Reports (NCMR) during the Quality Control Test process and is used for analysis and reporting purposes.
 
-The Used Count field shows the number of times the NCMR Reason Code has been used and serves for reporting and analysis purposes.
+Key features include:
 
-NCMR Reason can be assigned to a specific Reason Group.
+- **Reason Codes**: Specific to NCMR-related test failures.
+- **Used Count**: Tracks the usage frequency of each NCMR Reason Code for better reporting.
+- **Reason Groups**: NCMR Reasons can be assigned to specific groups for more detailed categorization.
+
+---
+
+Effectively managing failure reasons is vital for maintaining quality standards and driving continuous improvement. By leveraging the Reason, Reason Groups, and NCMR Reasons setups, organizations can identify recurring issues, improve reporting accuracy, and implement targeted corrective actions. This structured approach ensures that failure data becomes a valuable resource for enhancing product quality and operational efficiency.

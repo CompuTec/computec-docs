@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Item's Test Protocols
 
-Item's Test Protocols form is an informative function that allows one to look up all the Test Protocols related to a chosen Item/Revision.
+The Item's Test Protocols form serves as a powerful tool for retrieving all Test Protocols associated with a selected Item or its Revision. This feature ensures streamlined access to relevant testing information for quality control purposes.
 
 :::info Path
     Quality Control → Item's Test Protocols
@@ -12,4 +12,7 @@ Item's Test Protocols form is an informative function that allows one to look up
 
 ![Item Test Protocols](./media/item-test-protocol/item-test-protocols.webp)
 
-The header holds Test Protocols filtering options. On choosing Item Code, Item Name is filled in automatically. The revision Code field is filled with a default Revision. You can change it then to a different one (if required). The next step is to check the necessary transaction checkboxes. If no checkboxes are checked, all Protocols related to the chosen Item and Revision will be displayed.
+The form's header provides filtering options for Test Protocols. When an Item Code is selected, the Item Name is auto-populated. The Revision Code defaults to the most recent revision but can be adjusted if needed. To refine the results further, specific transaction checkboxes can be selected. If no checkboxes are checked, the form will display all Test Protocols linked to the chosen Item and its Revision.
+
+---
+This functionality simplifies the process of managing and reviewing Test Protocols, enabling users to efficiently track and analyze quality control data associated with specific Items and Revisions. It supports accurate and organized quality management practices.
