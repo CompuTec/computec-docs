@@ -4,36 +4,39 @@ sidebar_position: 5
 
 # Quality Control Tests from a Manufacturing Order
 
-You can create a Quality Control Test from the Manufacturing Order context menu. From this place, you can also display a list of already created QC Tests.
+The Quality Control Tests creation process can also be initiated directly from the Manufacturing Order context menu. This method allows users to either create new Quality Control Tests or view those that have already been generated for a Manufacturing Order.
 
 ---
 
 ## Creating a Quality Control Test from a Manufacturing Order
 
-Select Create Quality Control Test option from a context menu on the Manufacturing Order form:
+1. To create a Quality Control Test, right-click on the Manufacturing Order form and select the Create Quality Control Test option:
 
-![Manufacturing Order Create](./media/qc-test-from-mo/manufacturing-order-create-quality-control.webp)
+    ![Manufacturing Order Create](./media/qc-test-from-mo/manufacturing-order-create-quality-control.webp)
 
-A list of Protocols will be displayed:
+2. A list of available Test Protocols will be shown:
 
-![List of Protocols](./media/qc-test-from-mo/list-of-test-protocols-manufacturing-order.webp)
+    ![List of Protocols](./media/qc-test-from-mo/list-of-test-protocols-manufacturing-order.webp)
 
-Select one and click Choose.
+3. Select the appropriate Test Protocol and click Choose.
 
-Note that Test Protocol with corresponding data and Manufacturing Order check box checked must be created to be available on this list. Click [here](../test-protocols/overview.md) to check how to create a Test Protocol.
+    >Note: A Test Protocol must be created with the correct data and the Manufacturing Order checkbox checked to appear in this list. Click [here](../test-protocols/overview.md) to check how to create a Test Protocol.
 
-![Test Protocol Manufacturing Order](./media/qc-test-from-mo/test-protocol-manufacturing-order.webp)
+    ![Test Protocol Manufacturing Order](./media/qc-test-from-mo/test-protocol-manufacturing-order.webp)
 
-A Quality Control Test will be created with corresponding data. Click Add button to post it.
+4. A Quality Control Test will be created with corresponding data. Click Add button to post it.
 
-![Quality Control from Manufacturing Order](./media/qc-test-from-mo/quality-control-test-from-manufacturing-order.webp)
+    ![Quality Control from Manufacturing Order](./media/qc-test-from-mo/quality-control-test-from-manufacturing-order.webp)
 
 ## View Existing Quality Control Tests
 
-You can open Quality Control Test for a Final Good or a whole Manufacturing Order:
+1. You can also view Quality Control Tests for a specific Final Good or the entire Manufacturing Order.
 
-![Open Quality Control from Manufacturing Order](./media/qc-test-from-mo/open-quality-control-tests-for-manufacturing-order.webp)
+    ![Open Quality Control from Manufacturing Order](./media/qc-test-from-mo/open-quality-control-tests-for-manufacturing-order.webp)
 
-A list of tests will be displayed:
+2. A list of all associated Quality Control Tests will be displayed:
 
-![List of Quality Control Tests](./media/qc-test-from-mo/list-of-quality-control-test.webp)
+    ![List of Quality Control Tests](./media/qc-test-from-mo/list-of-quality-control-test.webp)
+
+---
+By following these steps, you can efficiently create and access Quality Control Tests directly from the Manufacturing Order, streamlining the quality assurance process within your production workflow.

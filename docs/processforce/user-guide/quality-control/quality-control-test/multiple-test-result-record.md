@@ -6,34 +6,34 @@ toc_max_heading_level: 5
 
 # Multiple Test Result Record
 
-On this page, you can find information on how to set up and record multiple test results for a specific Quality Control Test. This function allows to group and manage many test records for the same Item or Test Property.
+This page provides detailed instructions on how to set up and record multiple test results for a specific Quality Control Test. This feature enables users to group and manage multiple test records associated with the same Item or Test Property, streamlining the process of tracking and analyzing test results.
 
 ---
 
 ## Setting Up
 
 - Check to [Enable Multiple Test Results](../../system-initialization/general-settings/qc-tab.md) checkbox in Administration → System Initialization → General Settings → ProcessForce tab → QC tab to allow to perform Multiple QC Test Results. Click [here](../../system-initialization/general-settings/qc-tab.md) to check how to do that.
-- The Quality Control Test form has to be in confirmation or update mode (indicated by the OK or Update button on the lower left corner of the form).
+- Ensure that the Quality Control Test form is in confirmation or update mode, indicated by the OK or Update button in the lower left corner of the form.
 
 ## The Quality Control Test Form
 
-If the *Enable Multiple Test Results* is checked, a user can define multiple test results for a particular Test Property or Item Property on a Quality Control Test form.
+If the *Enable Multiple Test Results* is checked, users can record multiple test results for a specific Test Property or Item Property within the Quality Control Test form.
 
-To define multiple test results for a Test Property, right-click on a specific Test Property row on the QC Test form and choose Record Multiple Test Results from the context menu:
+To add multiple test results for a Test Property, right-click on the corresponding Test Property row in the QC Test form and select Record Multiple Test Results from the context menu:
 
 ![Multiple Test Result Record](./media/multiple-test-result-record/multiple-test-results.webp)
 
-To define multiple test results for an Item Property, right-click on a specific Item Property row on the QC Test form and choose Record Multiple Test Results:
+Similarly, to add multiple test results for an Item Property, right-click on the respective Item Property row in the QC Test form and choose Record Multiple Test Results.
 
 ## Multiple Test Results form
 
-After one of the activities described in the paragraph above is performed, the Multiple Test Results form displays:
+Once the actions described above are completed, the Multiple Test Results form will appear:
 
 ![Multiple Test](./media/multiple-test-result-record/record-multiple-test-results.webp)
 
 ### Header
 
-The header label on the form indicates for which Test Property or Item Property this form has been opened.
+The header label on the form specifies the Test Property or Item Property for which the form has been opened.
 
 ### Table
 
@@ -49,7 +49,7 @@ The following data can be set:
 
 #### Color Marking
 
-The row colors indicate the entered tested value and the expression along with the initial and closing range values of the Quality Control Test's row, for which the Record Multiple Test Results form was opened. The coloring is the same as the row coloring on the Quality Control Test form.
+Row colors visually represent the entered tested value in relation to the initial and closing range values of the corresponding Quality Control Test row for which the Record Multiple Test Results form was opened. The color scheme matches the row coloring used on the Quality Control Test form.
 
 #### Statistics
 
@@ -69,11 +69,11 @@ This statistics section is refreshed when:
 
 ##### Reference Name Property
 
-If the tested property gives reference name results (e.g., color = red), a check box with the following description is presented:
+For properties that involve numeric values (e.g., particle size = 5), a checkbox with the following description is available:
 
 **Transfer the data according to the percentage of passed/failed entries**:
 
-Checking causes loading to the Property field on Quality Control Test, a result that is presented the most often on the Record Multiple Test Results form. The option is available for properties with dictionary values only.
+When this option is selected, the system calculates the average value from all the entries recorded on the Record Multiple Test Results form and automatically populates the result into the Property field on the Quality Control Test. This feature is applicable exclusively to properties with numeric values.
 
 ![Multiple Results Copied](./media/multiple-test-result-record/multiple-results-copied.webp)
 
@@ -87,6 +87,12 @@ Checking it causes loading to the Property field on Quality Control Test, a resu
 
 #### Deleting Rows
 
-To delete a row, right-click on it and choose Delete row from the context menu:
+To delete a row:
+
+- right-click on the row to be deleted
+- select Delete row from the context menu
 
 ![Deleting Rows](./media/multiple-test-result-record/record-multiple-test-results-deleting.png)
+
+---
+The ability to record multiple test results provides users with a robust mechanism for tracking and analyzing test outcomes. This feature not only simplifies the recording process but also enhances the visibility of test performance through color coding, statistics, and automated calculations. By leveraging these tools, users can ensure that their quality control processes remain comprehensive, accurate, and efficient.
