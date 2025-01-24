@@ -6,11 +6,8 @@ sidebar_position: 1
 
 ## Introduction
 
-The Quality Control Testing process is a fully integrated solution with ProcessForce and SAP Business One data, processes, and technologies.
-
-This function uses business events/triggers and SAP Business One Alert functions to advise users that a Quality Control Test is required to be performed.
-
-The Quality Control Test Form contains all the necessary data to understand the activities that need to take place.
+The Quality Control Testing process is a seamlessly integrated solution that leverages ProcessForce and SAP Business One data, processes, and technologies. This functionality utilizes business events and triggers, along with SAP Business One Alert features, to notify users when a Quality Control Test needs to be conducted.
+The Quality Control Test Form provides all the essential information required to carry out the necessary activities efficiently.
 
 ![Quality Control Test](./media/overview/quality-control-diagram.webp)
 
@@ -24,128 +21,128 @@ The Quality Control Test Form contains all the necessary data to understand the 
 
 This form allows the user to create a Quality Control Test.
 
-1. Select and add a  [Test Protocol](../test-protocols/test-protocol-for-operation.md) Number. All the data defined within the Test Protocol is copied into the Quality Control Test.
+1. Select and add a  [Test Protocol](../test-protocols/test-protocol-for-operation.md) Number. All data defined within the Test Protocol will be copied into the Quality Control Test.
 2. Select and add a Document Series Number.
-3. Select and add the Inspector performing the testing.
-4. Select the required status and date. (Created, Started, On-Hold, Waiting NCMR, Closed).
+3. Select and add the Inspector responsible for conducting the test.
+4. Select the appropriate status and date. (Created, Started, On-Hold, Waiting NCMR, Closed).
 
-Note: when moving the life cycle of the Quality Control Test, the system will require adding a date of the status change.
+>Note: When moving the life cycle of the Quality Control Test, the system will require adding a date of the status change.
 
-The Used Count field indicates how many times the Quality Control Test has been used and is used for reporting and analysis purposes.
+The Used Count field tracks how many times the Quality Control Test has been performed, useful for reporting and analysis.
 
-When the Test is complete, the Test Status can be selected (Pass/Failed), and the date entered.
+Once the Test is complete, the Test Status can be marked as Pass or Fail, with the corresponding date entered.
 
 ![Quality Control Test](./media/overview/quality-control-test-2.webp)
 
 ## Test Properties
 
-The [Test Properties](../../quality-control/test-properties.md) tab allows the user to record the results of the Tests.
+>Note: The Test and Item Properties are copied from the [Test Protocol](../test-protocols/overview.md). Additional Properties can be added and deleted from both tabs.
 
-Note: The Test and Item Properties are copied from the [Test Protocol](../test-protocols/overview.md). Additional Properties can be added and deleted from both tabs.
-
-Within the Tested Value and Tested Reference Code, the user enters the tested value and selects the Pass/Fail option.
-
-A Pass result will be highlighted in Green and a Fail in Red.
-
-If there is a Fail, the user can add a Reason Code and Remarks.
+- The [Test Properties](../../quality-control/test-properties.md) tab allows the user to record the results of the Tests.
+- Within the Tested Value and Tested Reference Code, the user enters the tested value and selects the Pass/Fail option.
+- A Pass result will be highlighted in Green, while a Fail will appear in red.
+- If the result is a Fail, users can enter a Reason Code and add any Remarks.
 
 ## Item Properties
 
-The Item Properties tab allows the user to record the results of the Item Properties tested. It works the same way as the Test Properties tab.
+The Item Properties tab enables users to record the results of the item properties tested. It functions similarly to the Test Properties tab.
 
 ## Defects
 
-The Defects tab allows the user to view the sample size and enter the test's Passed and Defect quantity results.
+The Defects tab allows users to view the sample size and enter the quantities for both Passed and Defective results.
 
-[Defect codes](../defects.md) can be added to categorize the failure and are used for analysis and reporting purposes.
+[Defect codes](../defects.md) can be added to categorize the failure, which aids in analysis and reporting Note that these codes are transferred to the NCMR transaction.
 
-Note: these codes are copied to the NCMR transaction.
-
-When the Quality Control Test is complete, the user can record the type of Inventory Movement that needs to occur. Based on the selection, an Alert is sent to a specific user to conduct the appropriate inventory transaction.
+Once the Quality Control Test is complete, users can specify the type of inventory movement required. An alert will be sent to the designated user to perform the corresponding inventory transaction.
 
 ![Quality Control Test Defects](./media/overview/quality-control-test-defects.webp)
 
 ### Raising Non-Conforming Materials Report - NCMR
 
-If a Quality Control Test has failed, the user can request an NCMR to be created (click [here](../ncmr-non-conforming-materials-report.md) to find out more about NCMR).
+If a Quality Control Test fails, the user can initiate the creation of an NCMR. Click [here](../ncmr-non-conforming-materials-report.md) to find out more about NCMR.
 
-To create an NCMR, the user has to check the NCMR checkbox and choose an NCMR Inspector Code in the Defects tab.
+To create an NCMR, the user must check the NCMR checkbox and select an NCMR Inspector Code in the Defects tab.
 
-Click the You Can Also button and choose the Create NCMRTRansaction option.
+Click the "You Can Also" button and choose the Create NCMRTRansaction option.
 
 ## Transaction
 
-The Transaction tab provides the user with the details of the Transaction Type, i.e., 'Where' the testing should occur, and for 'Who,' i.e., the Supplier or the Customer.
+The Transaction tab provides users with details about the transaction type, including where the testing should take place (i.e., Supplier or Customer).
 
-The user can also record the Batch and Serial number(s).
+Users can also record the associated batch and serial numbers.
 
-It is possible to [automatically change assigned Batches' status on passing Quality Control Test](../../../user-guide/system-initialization/general-settings/qc-tab.md).
+Additionally, it is possible to [automatically change assigned Batches' status on passing Quality Control Test](../../../user-guide/system-initialization/general-settings/qc-tab.md).
 
 ![Quality Control Test Transaction](./media/overview/quality-control-test-transaction.webp)
 
 ### Creating Quality Control Test for an Operation on Manufacturing Order
 
-It is possible to create a Quality Control Test for a specific Operation. In this case, created Quality Control Test document has a Transaction tab filled with data from a chosen Operation line.
+A Quality Control Test can be created for a specific operation, with the resulting Quality Control Test document's Transaction tab automatically populated with data from the selected operation line.
 
 ![Quality Control Test for Operation](./media/overview/quality-control-for-operation.webp)
 
 #### Prerequisites
 
 - A [Test Protocol](../test-protocols/overview.md#transactions) defined for a specific Operation.
-- A Manufacturing Order is in one of the following statuses: Scheduled, Released, Started, Finished.
+- A Manufacturing Order must be in one of the following statuses: Scheduled, Released, Started, Finished.
 
 #### Performance
 
-Right-click on a line of an Operation (Manufacturing Order → Operations tab) and choose Quality Control → Create Quality Control for Operation option
+Right-click on an operation line in the Manufacturing Order → Operations tab and choose Quality Control → Create Quality Control for Operation.
 
-Choose a Test Protocol from a list
+Next, select a Test Protocol from the list provided.
 
-From the context menu on a line of an Operation, you can also choose Quality Control → Open Existing Quality Control Test for Operation to check already created test.
+Alternatively, you can right-click on an operation line and choose Quality Control → Open Existing Quality Control Test for Operation to view previously created tests.
 
 ## Resources
 
-The Resources tab allows users to view and record the resources and quantities used during the Quality Control Testing process. Resources in this situation refer to Items, e.g., tools, used during Quality Control Test.
+The Resources tab allows users to view and record the resources and quantities utilized during the Quality Control Testing process. These resources typically refer to items such as tools used during the test.
 
 ![Resources](./media/overview/quality-control-test-resources.webp)
 
-On the Resources tab, you can add only Items assigned to the Item Group defined for Quality Control Resources, as the default QCResources group is set for this purpose. By default, the QCResources group is set for this purpose. You can check how to set this Item Group here. By default, the QCResources group is set for this purpose.
+On the Resources tab, only items assigned to the QCResources item group can be added, as this group is set by default for Quality Control Resources. You can find instructions on how to configure this Item Group [here](https://learn.computec.one/docs/processforce/user-guide/system-initialization/general-settings/qc-tab). By default, the QCResources group is used for this purpose.
 
 ## Items
 
-The Items tab allows the user to view and record the Items and quantities used during the Quality Control Testing process. E.g., safety gloves.
+The Items tab allows users to view and record the items and quantities used during the Quality Control Testing process, such as safety gloves.
 
 ![Quality Control Test](./media/overview/quality-control-test-items.webp)
 
-On the Items tab, you can add only Items assigned to the Item Group defined for Quality Control Items, as the default QCItems group is set for this purpose. You can check here how to set this Item Group. here is how to set this Item Group. By default, the QCItems group is assigned for this purpose.
+Only items assigned to the QCItems group can be added in this tab. By default, the QCItems group is designated for this purpose. For more details on how to set up this Item Group, refer to the provided instructions.
 
 ## Instructions
 
-The Instructions tab allows the user to view instructions on performing the Quality Control Test.
+The Instructions tab provides guidance on how to perform the Quality Control Test.
 
-If required, the user can add notes within this section.
+Users can also add notes to this section if needed.
 
 ## Attachments
 
-The Attachments tab allows the user to view Attachments of how to perform the Quality Control Test.
+The Attachments tab provides access to documents related to performing the Quality Control Test.
 
-If required, the user can add additional attachments within this section.
+Users can also add additional attachments in this section if necessary.
 
 ## Inventory Transfer
 
-You can create Inventory Transfer Requests, and Inventory Transfers from and to QC Warehouse (defined in the header) from the You Can Also button.
+Using the "You Can Also" button, you can create Inventory Transfer Requests and perform Inventory Transfers to or from the QC Warehouse specified in the header.
 
 ![Quality Control Transfers](./media/overview/quality-control-transfers.webp)
 
 ## Duplicate Option
 
-This option allows copying the content of a currently open document to another.
+The duplicate feature enables users to create a copy of the currently open document.
 
-The copy procedure covers all the tabs' content and header data. The following information is changed on a copy:
+When duplicating, the content from all tabs and header data is copied, with the following modifications:
 
 - The electronic signature field is cleared.
-- The status field value is set to Created.
-- Test Status field value is set to To Be Determined.
+- The status field value is set to "Created".
+- Test Status field value is set to "To Be Determined".
 - Pass/Fail Date field value is cleared.
 - Document Number is changed to the next one in a Series.
 
-The Duplicated document is in adding mode, allowing further changes to its content. Click Add button after setting up all the required data to add the record.
+The duplicated document opens in adding mode, allowing users to make any necessary edits. Once all required details are updated, click the "Add" button to save the new record.
+
+---
+The Quality Control Testing process within ProcessForce and SAP Business One is a robust solution for managing quality assurance activities.
+
+This guide aims to provide a clear understanding of the process, enabling users to maximize the benefits of Quality Control Testing.

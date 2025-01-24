@@ -4,57 +4,56 @@ sidebar_position: 10
 
 # Certificate of Analysis
 
-A Certificate of Analysis (CoA) is a document that confirms that a product meets its specification.
-
-It usually presents the results of tests performed as a part of the quality control of an individual batch of a product.
-
-CoA is typically (but not only) requested by customers in both food and chemicals industries, and for the same product, different customers might request different information on a document. ProcessForce CoA functions allow marking Test Properties and Item Properties important for a specific Business Partner which is crucial for creating individualized certificate documents.
+A Certificate of Analysis (CoA) is a formal document that verifies that a product conforms to its specified standards. It typically includes the results of tests conducted during the quality control process for a particular batch of the product. CoAs are commonly requested by customers in industries such as food and chemicals, although any sector that requires product testing may request them. Different customers may request different information for the same product, depending on their individual requirements. ProcessForce offers a function to associate specific Test Properties and Item Properties with individual Business Partners, enabling the creation of customized CoAs that meet varying customer needs.
 
 :::info
-    Currently, ProcessForce CoA function allows assigning Business Partners to a specific Test Property or Item Property. The function that generates Crystal Report using this kind of data is planned to be implemented in one of the next ProcessForce releases.
+    Currently, ProcessForce allows assigning Business Partners to specific Test Properties or Item Properties. The functionality for generating Crystal Reports based on this data is expected to be released in upcoming versions of ProcessForce.
 :::
 
 ## Test Property Assigning
 
-You can assign Business Partner to Test Property by choosing Business Partners Relations option from the context menu on the Test Property form (Business Partner will be assigned to a property displayed on the form):
+To assign a Business Partner to a Test Property, you can use the Business Partners Relations option in the context menu on the Test Property form. This will associate the selected Business Partner with the property shown on the form:
 
 ![Test Property Business Partners Relations](./media/certificate-of-analysis/test-property-business-partners-relations.webp)
 
-on Test Protocol form, Test Properties tab (by clicking Test Property row) and Item Properties:
+This assignment can also be done on the Test Protocol form, within the Test Properties tab, by selecting a Test Property row:
 
 ![Test Protocol Business Relations](./media/certificate-of-analysis/test-protocol-business-partners-relations.webp)
 
-on Test Protocol Template form:
+Additionally, it can be set on the Test Protocol Template form:
 
 ![Test Protocol Template](./media/certificate-of-analysis/test-property-business-partners-relations.webp)
 
-and on Quality Control Test form:
+You can also assign Business Partners on the Quality Control Test form:
 
 ![Quality Control Test](./media/certificate-of-analysis/quality-control-test-business-partners-relations.webp)
 
 ## Item Property Assigning
 
-You can assign Business Partner to Item Property by choosing Business Partners Relations option from the context menu on the Item Property form (Business Partner will be assigned to a property displayed on the form):
+Similarly, to assign a Business Partner to an Item Property, choose the Business Partners Relations option from the context menu on the Item Property form. This will assign the Business Partner to the selected property:
 
 ![Item Properties](./media/certificate-of-analysis/item-property-business-partners-relations.webp)
 
-on Item Details form, Properties tab (by clicking Item Property row):
+You can also do this on the Item Details form, within the Properties tab, by selecting the Item Property row:
 
 ![Item Details](./media/certificate-of-analysis/item-details-business-partners-relations.webp)
 
-or on Quality Control Test form:
+Alternatively, this can be done from the Quality Control Test form:
 
 ![Quality Control Test](./media/certificate-of-analysis/quality-control-test-item-properties-business-partners-relations.webp)
 
 ## Certificate of Analysis Business Partners
 
-After Clicking Business Partners Relations option, the Certificate of Analysis Business Partners form will be displayed:
+After selecting the Business Partners Relations option, the Certificate of Analysis Business Partners form will appear:
 
 ![Certificate of Analysis](./media/certificate-of-analysis/certificate-of-analysis-business-partners.webp)
 
-You can pick Business Partner and a period, during which it will be assigned to a specific Property.
+In this form, you can choose a Business Partner and specify the period during which the Business Partner is assigned to a particular Property.
 
-You can also choose values for Property:
+You can also set constraints for the Property, including:
 
 - **Expression**: interval expression of interval in which tested value has to pass the test, e.g. Greater than, Equals.
-- **Value From, Value To**: numeric values of constraints.
+- **Value From, Value To**: defines the numeric values of constraints.
+
+---
+By assigning Business Partners to specific Test or Item Properties, ProcessForce allows you to generate customized Certificates of Analysis tailored to each customer's specific requirements. This flexibility helps ensure that the CoAs meet varied industry standards and customer needs, facilitating smoother quality control processes and enhancing customer satisfaction.
