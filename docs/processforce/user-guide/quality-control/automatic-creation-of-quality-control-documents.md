@@ -4,68 +4,81 @@ sidebar_position: 12
 
 # Automatic Creation of Quality Control Documents
 
-This option allows automatic creation of Quality Control documents based on predefined conditions.
+Efficient quality control (QC) processes are essential for maintaining product standards and ensuring compliance. To simplify this, you can automate the creation of Quality Control documents based on predefined conditions. This guide outlines the prerequisites, setup, and usage of the automatic QC document creation feature.
 
 ---
 
 ## Prerequisites
 
-Check the related checkbox in General Settings:
+To enable automatic QC document creation, follow these steps:
 
-:::info Path
-        Administration → System Initialization → General Settings → ProcessForce tab → QC tab → Auto Create QC Test Documents checkbox
-:::
+1. **Check the related checkbox in General Settings**: Navigate to the General Settings and check the option for automatic QC test document creation.
 
-![Automatic Creation of Quality Control Documents](./media/automatic-creation-of-quality-control-documents/auto-create-checkbox.jpg)
+        :::info Path
+                Administration → System Initialization → General Settings → ProcessForce tab → QC tab → Auto Create QC Test Documents checkbox
+        :::
 
-Create a Counter Scheme:
+        ![Automatic Creation of Quality Control Documents](./media/automatic-creation-of-quality-control-documents/auto-create-checkbox.jpg)
 
-:::info Path
-        Administration → Setup → Quality Control → Counter Schemes
-:::
+2. **Create a Counter Scheme**: Define a Counter Scheme to determine the frequency of QC document creation.
 
-![Quality Control](./media/automatic-creation-of-quality-control-documents/counter-scheme.jpg)
+        :::info Path
+                Administration → Setup → Quality Control → Counter Schemes
+        :::
+
+        ![Quality Control](./media/automatic-creation-of-quality-control-documents/counter-scheme.jpg)
 
 ## Usage Example
 
-The Counter Scheme has a Name and a Code defined. It is set to create a Quality Control document every 30 Batches:
+**Setting the Counter Scheme**:
+
+Create a Counter Scheme with a specific name and code. For instance, you can configure the scheme to generate a QC document every 30 batches.
 
     ![Quality Control](./media/automatic-creation-of-quality-control-documents/counter-scheme-01.jpg)
 
-Then, in Test Protocol, Frequency tab you can choose this scheme (1), set it to be active (2) and save the changes (3):
+**Configuring the Test Protocol**:
 
-:::info Path
-        Quality Control → Test Protocol
-:::
+1. Open the Test Protocol section and navigate to the Frequency tab.
 
-![Quality Control](./media/automatic-creation-of-quality-control-documents/choosing-counter-scheme.jpg)
+2. Select the previously created Counter Scheme (1), activate it (2), and save your changes (3).
 
-In QC Test/QC Pool Pr. tab you can decide about auto create Test using defined frequency:
+        :::info Path
+                Quality Control → Test Protocol
+        :::
 
-![Quality Control](./media/automatic-creation-of-quality-control-documents/auto-create-use-frequency.jpg)
+        ![Quality Control](./media/automatic-creation-of-quality-control-documents/choosing-counter-scheme.jpg)
 
-You can define transaction/s from which Quality Control Test documents will be created:
+3. In the QC Test/QC Pool Pr. tab, configure the system to automatically create tests based on the defined frequency:
 
-![Quality Control](./media/automatic-creation-of-quality-control-documents/test-protocol-transactions.jpg)
+        ![Quality Control](./media/automatic-creation-of-quality-control-documents/auto-create-use-frequency.jpg)
 
-You can also create a Quality Control Test per Business Partner:
+4. Specify the transaction types that trigger the creation of QC Test documents:
 
-First, you have to define a BP QC Qualifications:
+        ![Quality Control](./media/automatic-creation-of-quality-control-documents/test-protocol-transactions.jpg)
 
-:::info Path
-        Quality Control → Test Protocol
-:::
+**Creating QC Tests for Business Partners**
 
-![Quality Control](./media/automatic-creation-of-quality-control-documents/qc-qualifications.jpg)
+To tailor QC tests for specific business partners:
 
-Then, link it to a Business Partner:
+1. Create qualifications in the Test Protocol section.
 
-:::info Path
-        Administration → Setup → Quality Control → BP QC Qualifications
-:::
+        :::info Path
+                Quality Control → Test Protocol
+        :::
 
-![Quality Control](./media/automatic-creation-of-quality-control-documents/business-partner-qc-qualifications.jpg)
+        ![Quality Control](./media/automatic-creation-of-quality-control-documents/qc-qualifications.jpg)
 
-Then, you can link it to test protocol
+2. Assign the defined qualifications to specific business partners.
 
-![Quality Control](./media/automatic-creation-of-quality-control-documents/test-protocol-qc-qualification.jpg)
+        :::info Path
+                Administration → Setup → Quality Control → BP QC Qualifications
+        :::
+
+        ![Quality Control](./media/automatic-creation-of-quality-control-documents/business-partner-qc-qualifications.jpg)
+
+3. Connect the business partner qualifications to the relevant test protocols.
+
+        ![Quality Control](./media/automatic-creation-of-quality-control-documents/test-protocol-qc-qualification.jpg)
+
+---
+Automating Quality Control document creation enhances efficiency, minimizes errors, and ensures consistency in maintaining quality standards. Organizations can streamline their QC processes and achieve better control over product quality. Start implementing these steps to unlock the benefits of automated QC management today!

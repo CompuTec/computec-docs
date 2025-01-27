@@ -4,15 +4,15 @@ sidebar_position: 1
 
 # Overview
 
-The Vehicle Inspection function allows you to document the condition of a truck during the Goods Receipt process, specifically when linked to a Goods Receipt PO. This feature helps capture important details regarding the delivery of ordered items, providing a comprehensive record of the truck's condition upon arrival at the warehouse.
+The Vehicle Inspection function is designed to streamline the documentation process of a truck’s condition during the Goods Receipt process, particularly when linked to a Goods Receipt PO. This feature provides a structured way to capture essential details about the delivery of ordered items, ensuring that the condition of the truck and its cargo are thoroughly documented upon arrival at the warehouse. By using this tool, users can ensure that all relevant information is captured and any issues are properly noted.
 
-You can reach the function through the Main Menu:
+You can access the Vehicle Inspection function via the Main Menu:
 
 :::info Path
     Purchasing - AP → Vehicle Inspection
 :::
 
-or from the context menu on Goods Receipt PO (with the already chosen document):
+Alternatively, it is also accessible from the context menu of a Goods Receipt PO (with the relevant document already selected):
 
 ![Goods Receipt PO](./media/overview/vehicle-inspection.webp)
 
@@ -24,20 +24,15 @@ This option is available for Goods Receipt POs in any status.
 
 ![Vehicle Inspection](./media/overview/vehicle-inspection-2.webp)
 
-The Vehicle Inspection document is organized into three main sections:
+The Vehicle Inspection document consists of three main sections:
 
-1. **Header**: Goods Receipt PO to which this document is referring, Inspection series, number, and date.
-2. **Truck Details**: Here, you can manually enter details such as the Truck License Plate, Trailer Number, and Container Number. These fields are open for manual entry, with no predefined values.
+1. **Header**:  this section displays the Goods Receipt PO to which the inspection document is related, along with the inspection series, number, and date.
+2. **Truck Details**: This section allows you to manually enter truck-related information such as the Truck License Plate, Trailer Number, and Container Number. These fields are open for manual entry with no predefined values.
+3. **Visual Inspection**: This section allows you to record inspection results across several categories (e.g., Chemical Spills, Pest Inspection). For each category, you can mark the result as pass/fail, select predefined values (ranging from 1 to 3), and add remarks as necessary. In the Temperature category, the specific temperature can also be documented.
 
-### Visual Inspection
+Values in the drop-down list are predefined. Click [here](./vehicle-inspection-reason.md) to find out how to define these values. The drop-down list is independent of the Pass/Fail checkbox, allowing flexibility in documenting minor defects even if the overall inspection is passed.
 
-This section allows you to document inspection results for various categories (e.g., Chemical Spills, Pest Inspection). Each category offers a pass/fail option, with predefined values ranging from 1 to 3, and space for additional remarks. For the Temperature category, you can also specify the temperature.
-
-Values in the drop-down list are predefined. Click [here](./vehicle-inspection-reason.md) to find out how to define it.
-
-The drop-down list for values is predefined, and the selection does not depend on the Pass/Fail checkbox. This feature enables flexibility, allowing minor defects to be recorded even if the inspection passes overall.
-
-Once all required fields are completed, click OK to post the document. Please note that the Truck License Plate and Trailer Number are mandatory fields for posting.
+Once all necessary fields have been completed, simply click OK to post the document. Please note that the Truck License Plate and Trailer Number are mandatory for posting the document.
 
 ---
-By using this function, you can efficiently document the condition of incoming deliveries, ensuring that any issues are recorded, and that the Goods Receipt process is well-documented for future reference.
+By utilizing the Vehicle Inspection function, you can efficiently document the condition of incoming deliveries, ensuring that the Goods Receipt process is not only thorough but also well-documented for future reference. This feature enables users to capture important inspection details, which helps in maintaining a high standard of quality control and operational efficiency in the warehouse.
