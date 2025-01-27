@@ -4,20 +4,20 @@ sidebar_position: 11
 
 # Quality Control Frequency based on Supplier's Rating
 
-Here, you can find information on the Quality Control process based on the Supplier's rating (an evaluation of the level of trust toward a Supplier based on past collaboration). Quality Control Tests generation can be bound to and defined by the level of trust.
+This section outlines the Quality Control process based on the Supplier's rating, which evaluates the level of trust built through past collaborations. The generation of Quality Control Tests can be tied to and defined by this trust level.
 
-When running a business, we need to cooperate with others. There is not much we can do on our own. Building relationships based on cooperation in business is the key to effective process management in the company. However, one more important principle that gives excellent benefit is 'trust and control.'. ProcessForce allows you to combine these two great principles into one, optimizing your company's processes simultaneously – by providing a supplier assessment card within the application.
+In business, collaboration is essential—very few tasks can be completed alone. Building strong cooperative relationships is key to efficient process management. Another crucial principle that brings immense value is "trust and control." ProcessForce enables you to integrate these principles by offering a supplier assessment card within the application, optimizing your business processes simultaneously.
 
-Suppliers' scorecards are used for tracking and measuring a Supplier's performance. They can vary from simple to complex and contain as many or as few criteria deemed effective to accomplish an organization’s goals. Supplier scorecards can strengthen relationships, improve costs, and mitigate errors when used appropriately and consistently. Scorecards also provide an objective lens for measuring vendor performance.
+Supplier scorecards are instrumental in tracking and evaluating a supplier's performance. These scorecards can range from simple to complex, with as many or as few criteria as necessary to achieve organizational goals. Proper use of supplier scorecards can strengthen relationships, reduce costs, and minimize errors. They also offer an objective method for assessing vendor performance.
 
-Using Quality Control Supplier Scorecards helps with the following:
-
-Quality issues, errors, and mistakes aligned with certified testing lab Internal, pre-ship inspection system in place.
+Leveraging Quality Control Supplier Scorecards helps address the following:
+    - Alignment of quality issues, errors, and mistakes with certified testing labs.
+    - Implementation of an internal pre-shipment inspection system.
 
 :::danger
-    The current implementation allows using this functionality only for one type of transaction: Goods Receipt PO and Counter Type = Occurrences.
+    The current implementation supports this functionality for only one type of transaction: Goods Receipt PO, with the Counter Type set to Occurrences.
 
-    It works only for "Enable Create Closed QC Tests from Frequency Rules" = Yes (Administration → System Initialization → General Settings → ProcessForce → QC)
+    It operates only when the "Enable Create Closed QC Tests from Frequency Rules" option is set to Yes (Administration → System Initialization → General Settings → ProcessForce → QC).
 :::
 
 :::caution
@@ -29,7 +29,7 @@ Quality issues, errors, and mistakes aligned with certified testing lab Internal
             ```sql title="Code to be added to Post transact procedure"
 if (@object_type = N'CT_PF_CtScheme' and @transaction_type in (N'A', N'U')) or (@object_type = N'20' and @transaction_type = N'A')
 begin
-	execute CT_PF_QC_FREQ_PROC @object_type, @transaction_type, @list_of_cols_val_tab_del
+execute CT_PF_QC_FREQ_PROC @object_type, @transaction_type, @list_of_cols_val_tab_del
 end
             ```
             ![SQL Modification Example](./media/quality-control-frequency-based-on-supplier-rating/sql-modification.png)
@@ -41,7 +41,7 @@ end
         <div>
         ```sql title="Code to be added to Post transact procedure"
 if (:object_type = N'CT_PF_CtScheme' and (:transaction_type = N'A' or :transaction_type = N'U')) or (:object_type = N'20' and :transaction_type = N'A') then
-	call CT_PF_QC_FREQ_PROC (:object_type, :transaction_type, :list_of_cols_val_tab_del);
+call CT_PF_QC_FREQ_PROC (:object_type, :transaction_type, :list_of_cols_val_tab_del);
 end if;
             ```
             ![HANA Modification Example](./media/quality-control-frequency-based-on-supplier-rating/hana-modification.png)
@@ -69,11 +69,11 @@ end if;
     Administration → Setup → Quality Control → BP QC Qualifications
 :::
 
-To start working with Supplier Scorecard, you need to define a dictionary.
+To begin working with the Supplier Scorecard, you must first define the dictionary.
 
-The first thing is to fill BP QC Qualification with data – levels that you want to manage suppliers. One next step is assigning QC Qualification to a Business Partner.
+The initial step is to populate the BP QC Qualification with the data that represents the levels used to manage suppliers. The next step is to assign the QC Qualification to a Business Partner.
 
-Below, you have an example of how to use functionality in the company.
+Below is an example of how this functionality can be implemented within the company.
 
 ![Frequency](./media/quality-control-frequency-based-on-supplier-rating/frequency.webp)
 
@@ -83,47 +83,45 @@ Below, you have an example of how to use functionality in the company.
     Administration → Setup → Quality Control → Counter Scheme
 :::
 
+The Counter Scheme defines the framework for managing and controlling quality control processes (Quality Control Tests) at specific user-selected frequencies. Counters, based on the defined scheme, are milestones tied to QC Documents such as QC Tests or QC Pools. These counters are stored in a dedicated table.
+
+    ![Open](./media/quality-control-frequency-based-on-supplier-rating/open-counter-scheme.webp)
+
+The next step is to establish the Counter Scheme dictionary. This Counter is specifically designed to regulate quality control processes (Quality Control Tests) at the user-defined frequency. QC Documents, such as QC Tests and QC Pools, serve as key milestones for these counters.
 The next thing is to define the Counter Scheme dictionary.
 
-The defined Counter is designed to control the quality control processes (Quality Control Test) at the appropriate frequency selected by the user.
+**Key Features of the Counter Scheme**
 
-Milestones for counters are QC Documents: QC Tests, QC Poll.
+The Counter Scheme ensures proper scheduling and execution of quality control activities. Below is a detailed explanation of the fields and functionalities:
 
-A particular Counter is created on the definition described in Counter Scheme. All Counters are stored in a separate table.
+- **Counter Scheme Code**: a unique alphanumeric field used as the key identifier for the scheme.
+- **Counter Schema Name**: a standard alphanumeric field for providing additional descriptive information about the counter.
+- **Counter Type**: there are three main types of Counters:
+        - Occurrences: tracks the number of specific events (e.g., transactions, batches).
+        - Amount of Time: counts down the time until the next event (e.g., deadlines).
+        - Date: tracks events based on specific dates, such as Inspection Dates or Expiry Dates.
+- **Occurrences**: refers to counting units like Transactions, Batches, Serial Numbers, or Inventory UoM. Future options include After Time Period, After Specific Date, Before Expiry Date, and Before Inspection Date.
+- **Counter Value**: determines the threshold value of the defined unit of measure (UoM).
+- **Counting Unit**: specifies the unit to track, such as Transaction, Batch, Serial Number, Inventory UoM, Day, Week, or Month.
+- **Counters counted on Transaction's base**: QC Tests or QC Pools are executed when the counted UoM Type value meets or exceeds the Counter Value after the last QC Test or QC Pool. For Occurrences, the UoM Type could include Transactions, Batches, Serial Numbers, or Inventory UoM.
+- **Penalty QC Tests**: defines the number of QC Tests to be executed as penalties when a QC Test fails (applicable for Counter Types: Occurrences, Time Period).
+- **Penalty Counter Value**: specifies the number of penalty QC Tests to be performed.
+- **QC Document**: represents the types of result documents used as milestones, such as QC Tests.
+- **Business Partner**: when selected, it is included in the generated Counter ID and helps differentiate counters for a specific Frequency Rule.
+- **Transaction Type**: when specified, it is included in the generated Counter ID and helps differentiate counters for a particular Frequency Rule.
+- **Item**: if selected, this will be included in the generated Counter ID and used to differentiate counters for the frequency rule.
+- **Revision**: if specified, it will be included in the generated Counter ID and will determine the distinction of counters for a particular frequency rule.
 
-![Open](./media/quality-control-frequency-based-on-supplier-rating/open-counter-scheme.webp)
+**Variable Components**:
 
-Fields:
+The variable part of the Counter Scheme consists of:
 
-**Counter Scheme Code** – standard, an alphanumeric field that needs to be unique (it’s the key)
-
-**Counter Schema Name** – standard, alphanumeric field to put a bit more information about counter
-
-**Counter Type** – there are three main types of Counters: number of occurrences, amount of time (used to count down a deadline for the next event), and date (specific date, Inspection Date, Expiry Date).
-
-**Occurrences** – refers to the Counting Units: Transaction, Batch, Serial Number, Inventory UoM (in the future, a few more options will be available, e.g., After Time Period, After Specific Date, Before Expiry Date, Before Inspection Date).
-
-**Counter Value** – this value determines the number of UoM Type
-
-**Counting Unit** – Transaction, Batch, Serial Number, Inventory UoM, Day, Week, Month
-
-**Counters counted on Transaction's base**: Next QC Tests/QC Pool will be executed for the transaction when counted value of UoM Type >= Counter Value [UoM Type] after last: QC Test, QC Pool. For Occurrences, UoM Type can be the number of Transactions, Batches, Serial Numbers, Inventory UoM,
-
-~~**Penalty QC Tests** – if the checked number of QC Tests defined in Penalty Counter Value will be executed if QC Test is failed (for Counter Type: Occurrences, Time Period)~~
-
-~~**Penalty Counter Value** – number of penalty QC Tests~~
-
-~~**QC Document** – types of results document (milestones): QC Test,~~
-
-**Business Partner** – if selected, will be included in created Counter ID and will determine the distinction of counters for a given Frequency Rule
-
-~~**Transaction Type** – if specified, will be included in created Counter ID and will determine the distinction of counters for a given Frequency Rule~~
-
-**Item** – if selected, will be included in created Counter ID and will determine the distinction of counters for a given Frequency Rule
-
-**Revision** – if specified, will be included in created Counter ID and will determine the distinction of counters for a given Frequency Rule
-
-Variable part consists of checked: Business Partner (value from the transaction, filtered by range defined in TP's Frequency Rule), ~~Transaction Type (value from the transaction, filtered by setting in TP's Frequency Rule)~~, Item (value from the transaction, filtered by selecting in TP's header), Revision (value from the transaction, filtered by selecting in TP's header), Test Protocol (value from the transaction, filtered by selecting in TP's header), Batch (value from transaction Batch Re-Test), Serial (value from transaction Serial Re-Test)
+- **Business Partner**: derived from the transaction and filtered by the range defined in the Frequency Rule of the Test Protocol.
+- **Item**: derived from the transaction and filtered by the selection in the Test Protocol's header.
+- **Revision**: derived from the transaction and filtered by the selection in the Test Protocol's header.
+- **Test Protocol**: filtered based on the selection in the Test Protocol's header.
+- **Batch**: relevant for Batch Re-Tests.
+- **Serial**: relevant for Serial Re-Tests.
 
 Examples of selectable criteria combinations:
 
@@ -142,85 +140,80 @@ Examples of selectable criteria combinations:
 
 ## Business Partner Master Data
 
-In Business Partner Master Data, there is a field called QC Qualification. This field needs to be filled when we want to use QC rating. Available ratings are previously defined in Administration -> Setup -> Quality Control -> BP QC Qualification.
+The Business Partner Master Data includes a field called QC Qualification, which must be completed to utilize the QC rating functionality. The available ratings are predefined in Administration → Setup → Quality Control → BP QC Qualification.
 
 ![Business Partner Master Data](./media/quality-control-frequency-based-on-supplier-rating/business-partner-master-data.png)
 
 ## Test Protocol
 
-To use the function, we must also put configuration on Test Protocol.
+To utilize the frequency rules functionality, proper configuration is required in the Test Protocol. Follow the steps below to ensure the setup is accurate.
 
-First, check the use frequency rules in QC Test/QC Test Par.
+1. First, ensure the "Use Frequency Rules" option is enabled in the QC Test or QC Test Par section.
 
-![Test Protocol](./media/quality-control-frequency-based-on-supplier-rating/test-protocol.png)
+    ![Test Protocol](./media/quality-control-frequency-based-on-supplier-rating/test-protocol.png)
 
-Then it is needed to configure the Frequency tab:
+2. Next, configure the Frequency Tab within the Test Protocol.
 
-Frequency tab:
+    ![Frequency Tab](./media/quality-control-frequency-based-on-supplier-rating/frequency-tab.png)
 
-![Frequency Tab](./media/quality-control-frequency-based-on-supplier-rating/frequency-tab.png)
+**Key Fields in the Frequency Tab**:
 
-**Rule Code** – an alphanumeric field that can be named to identify why do use counters easily
+- **Rule Code**: an alphanumeric field to identify the frequency rule for counters easily.
+- **Counter Scheme Code**: selected from the pre-defined counter schemes.
+- **Counter Schema Name**: pulled from the Counter Scheme UDS (User-Defined Schema).
+- **Active**: determines if the frequency rule is active (Yes/No).
+- **Use For**: specifies the rule's application based on:
+        - QC Code: applies the rule according to the BP QC Code range.
+        - QC Rating: applies the rule based on the BP QC Rating range.
+        - None: the rule is applied without considering BP QC qualification.
+- **BP QC Code From / BP QC Code To**: defines the range of BP QC qualification codes.
+- **BP QC Rating From / BP QC Rating To**: defines the range of BP QC ratings.
+- **None**: indicates that the rule applies universally, without BP QC considerations.
+- **Counter Type**: specifies the counter type, pulled from the Counter Scheme UDS.
+- **Transaction Type**: the type selected from transactions configured in the TP/Frequency tab UDS.
+- **Counter Value**:  a value defined within the Counter Scheme field.
+- **Counting Unit**: a unit defined within the Counter Scheme UDS.
+- **BP QC Code From / To (Business Partner Qualification)**: specifies the range of qualification codes for the business partner.
 
-**Counter Scheme Code** – selected from defined counter schemes
+**Close QC Tests Configuration**
 
-**Counter Schema Name** – from Counter Scheme UDS
+The Close QC Tests functionality determines how tests are generated based on the frequency rule:
 
-**Active** – determines if the frequency rule is active y/n
+1. **Close QC Test = Yes**:
+        - Tests are generated for all occurrences.
+        - Tests that are not multiples of the Counter Value are automatically closed with Status = Closed and Test Status = Passed.
+2. **Close QC Test = No**:
+        - Tests are generated only for occurrences that are multiples of the Counter Value.
 
-**Use For** – select from QC Code, QC Rating, None. It determines using of the TP according to the frequency rule for BP based on the BP QC Code range or BP QC Rating range.
+**Global Control**:
 
-**QC Code From, BP QC Code To** – range based on BP QC qualification code
+The Enable Create Closed QC Tests from Frequency Rules setting in General Settings globally toggles the above functionality. When enabled, it functions as described in the second configuration.
 
-**BP QC Rating From, BP QC Rating To** – range based on BP QC rating
+By properly configuring the Test Protocol and Frequency Rules, businesses can efficiently automate and manage QC processes, ensuring compliance and consistency in quality control.
 
-**None** – frequency rule is used without consideration of BP QC qualification
+## Counters Grid for Selected Rule
 
-**Counter Type** – from Counter Scheme UDS
+The Counters Grid provides detailed insights into various aspects of quality control tied to a selected rule. Below are the key attributes tracked in the grid:
 
-~~**Transaction Type** – type selected from transaction checked in TP/Frequency tab UDS~~
+- **Counter ID**: a unique identifier in the counters table.
+- **Current Counter**: the calculated count based on the Unit of Measure (UoM) type.
+- **Current Penalty**: the calculated count of penalty QC Tests executed.
+- **Total Counter**: the total count of all QC Tests conducted.
+- **Total Penalty**: the total count of executed penalty QC Tests.
+- **Business Partner**: The specific business partner instance that meets QC qualification ranges and Counter Scheme criteria.
+- **Transaction Type**: the transaction type instance that satisfies the Counter Scheme criteria.
+- **Item**: the item instance that matches the Counter Scheme criteria.
+- **Revision**: the item revision instance that aligns with the Counter Scheme criteria.
+- **Test Protocol**: the test protocol instance that fulfills the Counter Scheme criteria.
+- **Planned Execution**:
+        - For Counter Type = Time Period, it is calculated automatically.
+        - For Counter Type = Specific Date, it is user-defined.
+        - For Counter Type = Expiry Date or Inspection Date (Transaction Re-Test), it is imported from the Batch or Serial Record.
+- **Number of Applications** – the calculated count of QC Tests performed, excluding penalty QC Tests.
+- **First Execution**: the estimated date of the first QC Test.
+- **Last Execution**: the estimated date of the most recent QC Test.
 
-**Counter Value** – from Counter Scheme Field
+This grid provides a comprehensive overview, allowing businesses to monitor and analyze quality control performance effectively. It ensures compliance with the established QC rules and aids in maintaining consistent quality standards.
 
-**Counting Unit** – from Counter Scheme UDS
-
-**BP QC Code From, Business Partner Qualification** – Code value
-
-**BP QC Code To - Business Partner Qualification** – Code value
-
-**Close QC Tests** -
-
-    1. If in Protocol Close QC Test = Yes, then tests are generated for all occurrences. Tests that are not a multiple of the Counter Value are closed with Status = Closed and Test Status = Passed.
-    2. If in Protocol Close QC Test = No, then tests are generated only for occurrences that are a multiple of the Counter Value.
-
-    Enable Create Closed QC Tests from Frequency Rules in GS switch on/off above functionally globally - it works like in 2.
-
-## ~~Counters grid for selected Rule~~
-
-**Counter ID** – key in counters table
-
-**Current Counter** – calculated number of UoM type
-
-**Current Penalty** – calculated, the canter of penalty QC Tests
-
-**Total Counter** – calculated
-
-**Total Penalty** – calculated number of executed Penalty Tests
-
-**Business Partner** – instance for BP fulfill QC qualification range and Counter Scheme criteria
-
-**Transaction Type** – instance for transaction type fulfill Counter Scheme criteria
-
-**Item** – instance for item meet Counter Scheme criteria
-
-**Revision** – instance for item/revision meets Counter Scheme criteria
-
-**Test Protocol** – instance for test protocol fulfill Counter Scheme criteria
-
-**Planned Execution** – is calculated for Counter Type=Time Period. It is defined by the user for Counter Type=Specific Date. Is imported from Batch or Serial Record for Counter Type=Expiry Date or Inspection Date (Transaction Re-Test)
-
-**Number of Applications** – calculated, number of performed QC Tests (without penalty QC tests)
-
-**First Execution** – estimated date
-
-**Last Execution** – estimated date~~
+---
+By integrating supplier performance metrics with quality control processes, ProcessForce enables businesses to maintain high standards while building trust with their suppliers. Implementing these tools is not just about enhancing quality control—it's about ensuring long-term success through strategic trust and control.
