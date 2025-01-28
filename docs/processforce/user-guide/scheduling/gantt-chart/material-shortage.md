@@ -4,11 +4,13 @@ sidebar_position: 7
 
 # Material Shortage
 
+Effective material and tool management is essential for smooth manufacturing operations. The Material Shortage functionality provides comprehensive planning and tracking capabilities to help businesses manage shortages of production equipment and materials.
+
 This functionality aims to:
 
-- plan Tools within the Gantt chart
-- trace Tools and material shortages (defined as traced) within the Gantt chart, along with information about the planned supply (first delivery)
-- trace Tools and material shortages (defined as traced) in the Tools/materials shortages report and information about all the planned supplies
+- plan tools within the Gantt chart
+- trace tools and material shortages (defined as traced) within the Gantt chart, along with information about the planned supply (first delivery)
+- trace tools and material shortages (defined as traced) in the Tools/materials shortages report and information about all the planned supplies
 
 ---
 
@@ -20,21 +22,18 @@ This functionality aims to:
 
 There are two related checkboxes in the Item Master Data form:
 
-![Material shortage Item Master Data](./media/material-shortage/material-shortage-item-master-data.webp)
+    ![Material shortage Item Master Data](./media/material-shortage/material-shortage-item-master-data.webp)
 
-**Production Equipment** (tool, set) – items on the Gantt chart can be filtered according to this qualification. If this checkbox is selected by default, the Shortages Tracking checkbox is selected automatically.
-
-**Shortages Tracking** – if checked, the given item will be calculated in the shortage report and filtered on Gantt according to this qualification.
+- **Production Equipment** (tool, set): items marked as production equipment can be filtered on the Gantt chart. Selecting this checkbox automatically enables Shortages Tracking.
+- **Shortages Tracking**: if checked, the item is included in the shortage report and highlighted on the Gantt chart as part of the shortages tracking functionality.
 
 ### Usage
 
-Check the Shortages checkbox in the header of the Gantt chart.
-
-The user can decide whether to view Production Equipment Materials shortages or both. Manufacturing Orders with shortages are marked with a red line at the bottom of the Gantt Chart. A floating panel with a list of deficiencies also appears. This floating panel is updated as changes are made to the Gantt Chart.
+The Gantt chart includes a Shortages checkbox in its header, allowing users to toggle visibility for production equipment and material shortages. Shortages are visually marked with a red line on Manufacturing Orders within the Gantt chart. Additionally, a dynamic Floating Panel provides real-time updates on shortages as changes occur.
 
 1. The floating Panel is visible if the Shortages checkbox is checked:
 
-    1. By default, the Production Equipment and Materials checkboxes are selected. In the Floating Panel, all shortage items for all Manufacturing Orders are visible with a shortage marker according to the setting in General Settings (Only Items with Shortages Tracking).
+    1. By default, both Production Equipment and Materials checkboxes are selected. In the Floating Panel, all items with shortages for all Manufacturing Orders are shown, marked with a shortage indicator according to the settings in General Settings (Only Items with Shortages Tracking).
     2. If the Production Equipment checkbox is not checked and Materials is selected, Production Equipment will not be visible in Floating Panel.
     3. If the Production Equipment checkbox is selected and Materials is not selected, only Production Equipment will be visible in Floating Panel.
     4. Always one of them (Production Equipment or Materials) has to be selected.
@@ -45,7 +44,7 @@ The user can decide whether to view Production Equipment Materials shortages or 
 
 ## Shortages Report
 
-To load the shortage report, the user needs to click on "Load" at the top of the Gantt chart, enter their SAP credentials, and provide the SLD address in the format "License server:port".
+To access the shortage report, the user must click "Load" at the top of the Gantt chart, enter their SAP credentials, and specify the SLD address in the format "License server:port".
 
 ![Shortage Report](./media/material-shortage/shortage-report.png)
 
@@ -53,14 +52,17 @@ To load the shortage report, the user needs to click on "Load" at the top of the
 
 ![General Settings Shortage Report](./media/material-shortage/general-settings-shortage-report.webp)
 
-**Only Item with Shortage Tracking** – determines whether all Items are visible in both the Gantt chart and the shortage report, or only those marked as Shortage Tracking in the Item Master Data.
+Key settings impacting the Shortages Report include:
 
-**Include Obsolete Supply/Demand Documents** – determines whether available quantities (supply and demand) from documents with a Delivery Date on or before the current date are considered when calculating the Opening Balance Quantity in the Shortage Report.
-
-**Shortage considered separately for each warehouse** - determines whether the report calculation considers Demands and Supplies from the same Warehouse defined for the Item experiencing a shortage (Manufacturing Order, Items tab) or from all Warehouses.
+- **Only Item with Shortage Tracking**: determines whether the report and Gantt chart display all items or only those flagged as "Shortage Tracking" in the Item Master Data.
+- **Include Obsolete Supply/Demand Documents**: determines if quantities from supply and demand documents with a delivery date on or before the current date are factored into the Opening Balance Quantity in the Shortage Report.
+- **Shortage considered separately for each warehouse** - indicates whether the report calculates shortages based on demands and supplies from the same warehouse (as defined in the Manufacturing Order's Items tab) or across all warehouses.
 
 ### Usage
 
-The Gantt Chart also has a new tab called “Shortages Report,” which displays shortages for each Item and Revision along with historical, and current supply and demand transactions. A graph also shows available quantities or scarcity of the Item/Revision.
+The Shortages Report tab in the Gantt chart displays shortages for each item and revision. It includes historical and current supply and demand transactions, along with graphical representations of available quantities versus shortages.
 
 ![Material Shortages Graph](./media/material-shortage/material-shortages-graph.webp)
+
+---
+The Material Shortage functionality streamlines the management of production equipment and material shortages, enhancing visibility and planning efficiency. By leveraging the Gantt chart for real-time tracking and the Shortages Report for actionable insights, businesses can minimize production delays and optimize their supply chain. Together, these tools empower users to proactively address shortages and maintain operational continuity.

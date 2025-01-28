@@ -10,7 +10,7 @@ Scheduling Board is a production planning tool that allows scheduling (and resch
 
 ## How to Open Scheduling Board / Semi-finished Product Scheduling
 
-This option is available from the following place in the system:
+The Scheduling Board can be accessed from the following areas in the system:
 
 ### Scheduling
 
@@ -18,15 +18,16 @@ This option is available from the following place in the system:
     Production → Manufacturing Order → Scheduling
 :::
 
-From here, choosing a single Manufacturing Order or a bigger number is possible.
+Here, you can select a single Manufacturing Order or multiple orders as needed.
 
 ![Scheduling Selection Criteria](./media/scheduling-board/scheduling-selection-criteria.webp)
 
-You can select/deselect all the Warehouses by double-clicking on the top of the Select column.
+- You can select/deselect all the Warehouses by double-clicking on the top of the Select column.
+- To select or deselect all Warehouses, double-click the top of the Select column.
+- Use the Scheduling Selection Criteria to filter the Manufacturing Orders you want to display. After setting the criteria, click OK. If no criteria are specified, all Manufacturing Orders in the system are displayed by default.
+- A list of selected Manufacturing Orders will appear. To proceed, click on the Select button and choose the Scheduling Board option:
 
-Use Scheduling Selection Criteria to choose information about which Manufacturing Orders are to be displayed and click OK (if no criteria are determined, all of the Manufacturing Orders in the system are preferred). This leads you to a list of selected Manufacturing Orders. Choose the Scheduling Board option from the Select button:
-
-![Scheduling Select](./media/scheduling-board/scheduling-select.webp)
+    ![Scheduling Select](./media/scheduling-board/scheduling-select.webp)
 
 ### Sales Order
 
@@ -34,22 +35,23 @@ Use Scheduling Selection Criteria to choose information about which Manufacturin
     Sales A/R → Sales Order
 :::
 
-It is possible to create semi-finished Items Manufacturing Orders from a Sales Order context menu by choosing to Create Manufacturing Orders:
+Semi-finished product Manufacturing Orders can be created from the Sales Order context menu. Simply choose the Create Manufacturing Orders option:
 
-![Scheduling Sales Order](./media/scheduling-board/scheduling-sales-order.webp)
+    ![Scheduling Sales Order](./media/scheduling-board/scheduling-sales-order.webp)
 
-Note that there are two similar options:
+Two options are available in the context menu:
 
-- Create Manufacturing Orders – leads to Scheduling Board
-- Create Manufacturing Order – creates a single Manufacturing Order (for the Item from Content tab, clicking on which leads to open the context menu)
+- **Create Manufacturing Orders**: opens the Scheduling Board
+- **Create Manufacturing Order**: creates a single Manufacturing Order for the item in the Content tab. Clicking this option opens the context menu.
 
 ### Manufacturing Order
 
-You can create semi-finished products from a context menu of a final good Manufacturing Order:
+Semi-finished products can also be created via the context menu of a final goods Manufacturing Order:
 
 ![Manufacturing Order Create Semi-Finished](./media/scheduling-board/manufacturing-order-create-semi-finished.webp)
 
-After creating semi-finished product Manufacturing Orders here, another option is available from the context menu: Scheduling → Recalculate Semi-finished Products Lead Time. This option also leads to Semi-finished Product Scheduling Board and allows changing the Manufacturing Order dates and recalculating the Lead Time.
+- After creating semi-finished product Manufacturing Orders, an additional option becomes available in the context menu: Scheduling → Recalculate Semi-finished Products Lead Time.
+- This opens the Semi-finished Product Scheduling Board, allowing you to adjust Manufacturing Order dates and recalculate Lead Time.
 
 ### Order Recommendation
 
@@ -57,7 +59,7 @@ After creating semi-finished product Manufacturing Orders here, another option i
     MRP → Order Recommendation
 :::
 
-You can also reach the for from the Order Recommendation form:
+The Scheduling Board can also be accessed from the Order Recommendation form:
 
 ![Order Recommendation Scheduling Board](./media/scheduling-board/order-recommendation-scheduling-board.webp)
 
@@ -71,7 +73,7 @@ Semi-finished product scheduling is a tool for production planning, considering 
 
 #### Create
 
-This checkbox determines whether a Manufacturing Order for this Item will be scheduled to be created.
+This checkbox determines whether a Manufacturing Order for the Item will be scheduled for creation.
 
 :::caution
     The checkbox cannot be checked if a higher-level item is disabled.
@@ -79,36 +81,37 @@ This checkbox determines whether a Manufacturing Order for this Item will be sch
 
 #### Level
 
-Levels in a production tree. If a Manufacturing Order has Semi-finished Items, a position in the structure will be indicated here. Click [here](/docs/processforce/user-guide/formulations-and-bill-of-materials/bill-of-materials/multi-level-bill-of-materials/semi-finished-items/) to find out more.
+Indicates the item's position in the production structure. For items with semi-finished components, the hierarchy level is shown here. Learn more about multi-level BOMs and semi-finished items [here](/docs/processforce/user-guide/formulations-and-bill-of-materials/bill-of-materials/multi-level-bill-of-materials/semi-finished-items/).
 
 #### Quantity
 
-The number of planned items. Only item quantity on level 1 can be changed. Quantity on lower levels changes automatically after that.
+Displays the planned item quantity. You can modify quantities at level 1, and changes will automatically cascade to lower levels.
 
 #### Lock Quantity for Semi MORs
 
-If the checkbox is checked, there is the possibility to change the quantity for a particular item. In this case, changing one thing does not affect other items.
+If the checkbox is checked, there is a possibility to change the quantity for a particular item. In this case, changing one thing does not affect other items.
 
 #### Update in Transaction
 
-The listed Manufacturing Orders will be added when you click Update/Add on the Scheduling board. Some of the Manufacturing Orders will not be added because of some errors (synchronization errors, incorrect data set in Manufacturing Orders, etc. – in these cases, an error message is displayed).
+When you click Update/Add on the Scheduling Board, the listed Manufacturing Orders will be processed. However, some Manufacturing Orders may not be added due to issues like synchronization errors or incorrect data configurations. In such cases, an error message will be displayed.
 
-**The checkbox is checked**: none of them will be added if there is at least one Manufacturing Order with an error.
-
-**The checkbox is not checked**: if there are Manufacturing Orders with errors, the correct ones will be added anyway (and the ones with mistakes not).
+- **The checkbox is checked**: none of them will be added if there is at least one Manufacturing Order with an error.
+- **The checkbox is not checked**: if there are Manufacturing Orders with errors, the correct ones will be added anyway (and the ones with mistakes not).
 
 #### Direction
 
 Production can be planned in two ways:
 
-- Forward - the system automatically plans forward the start and end of the day, absolute time, and required date.
-- Backward - the system automatically plans backward start and end day, absolute time, and required date. Sometimes it is impossible to make items to the required delivery date. The text on the scheduling board is red.
+- **Forward**: the system automatically plans forward the start and end of the day, absolute time, and required date.
+- **Backward**: the system automatically plans backward start and end day, absolute time, and required date. Sometimes it is impossible to make items to the required delivery date. The text on the scheduling board is red.
 
 #### Priority
 
-Priority of commission.
+Sets the priority level of the production order.
 
 #### Schedule Date and Time
+
+Specifies the planned schedule's start and end date/time.
 
 #### Date and Time of end of the Order
 
@@ -130,68 +133,80 @@ Clicking this option opens a visual representation of relations between Manufact
 
 #### Copy row, Copy multiple rows
 
-You can copy a row or multiple rows. The option is available from the context menu in the first column.
+Options for copying one or multiple rows are available from the context menu in the first column.
 
 ![Copy Rows](./media/scheduling-board/copy-rows.png)
 
-To use Copy multiple rows option, highlight more than one row (by using Shift+left click or Ctrl+left click) and right-click on <u>any column apart from the first one</u> to reach the option (otherwise, the highlight is lost).
+To copy multiple rows, highlight them using **Shift + Left Click** or **Ctrl + Left Click**, then right-click on any column (except the first one) to access the option:
 
 ![Copy Rows](./media/scheduling-board/copy-multiple-rows.png)
 
 ### Load Report tab
 
-This tab summarizes Set Up Time, Run Time Machine, and Labor type Resources for a specific period.
+The Load Report tab provides a summary of resource usage, including Set Up Time, Run Time Machine, and Labor Resources, for a specific time period.
 
-Load Report considers all data calculated in the Schedule tab (even before saving/creating documents from the Schedule tab).
+This report takes into account all data calculated within the Schedule tab, even if the documents have not yet been saved or created.
 
 ![Load Report](./media/scheduling-board/scheduling-load-report-tab.webp)
 
-Values in the time columns (proper from the Resource Type column), e.g., 1:25 / 168:00, shows aggregated already scheduled time and total availability calculated based on a related Resource Calendar.
+In the time columns (adjacent to the Resource Type column), values such as 1:25 / 168:00 indicate the aggregated scheduled time and the total availability based on the corresponding Resource Calendar.
 
 Filtering options:
 
-- **MO number** – Manufacturing Orders to consider
-- **Item** – Final Good Items to consider
-- **Resource** – Resources that are used in Manufacturing Orders
-- **Resource Group** – filters Manufacturing Orders where at least one Resource from the selected group is used
-- **Planned Start, Planned End, Required Date** – Manufacturing Order dates
-- **Released, Scheduled, Started** – Manufacturing Order statuses
-- **Periods** - aggregate data either in days, weeks, or months (in the columns right from the Resource Type column)
-- **By Resource/ By Group** - displays either a list of Resources (the screenshot above) or Resources grouped by the Resource Group, with a total for each group:
+- **MO number**: filter by specific Manufacturing Orders.
+- **Item**: filter by Final Good Items.
+- **Resource**: filter by specific Resources used in the Manufacturing Orders.
+- **Resource Group**: filter Manufacturing Orders that involve at least one Resource from the selected group.
+- **Planned Start, Planned End, Required Date**: filter based on the Manufacturing Order dates.
+- **Released, Scheduled, Started**: filter by the status of Manufacturing Orders.
+- **Periods**: aggregate data into daily, weekly, or monthly intervals (columns right of the Resource Type column).
+- **By Resource/ By Group**: Display data either as a list of Resources or grouped by Resource Group, including a total for each group:
 
-![Load Report](./media/scheduling-board/scheduling-load-report-by-group.webp)
+    ![Load Report](./media/scheduling-board/scheduling-load-report-by-group.webp)
 
 ## Example
 
-Create a Sales Order and determine its Delivery date (in its header).
+To understand how the Scheduling Board operates, let’s walk through an example of creating a Sales Order and determining its Delivery Date.
 
-:::info Path
-    Sales A/R > Sales Order
-:::
+**Step 1: Create a Sales Order**
 
-![Scheduling Board](./media/scheduling-board/sales-order-delivery-date.png)
+Set up a Sales Order and specify its Delivery Date in the order header.
 
-To check the possibilities to produce the Item, right-click on it and choose to Create Manufacturing Orders.
+    :::info Path
+        Sales A/R > Sales Order
+    :::
 
-The system always considers the Delivery Date, Internal Lead Time, and plans Start Date backward. If Start Date is earlier than today, it changes direction to Forward and plans the earliest possible End Date.
+    ![Scheduling Board](./media/scheduling-board/sales-order-delivery-date.png)
 
-Let's consider two possibilities - `Delivery date is possible to realize it` and `Delivery date is not possible to realize`:
+**Step 2: Evaluate Manufacturing Possibilities**
+
+To assess whether the item can be produced in time, right-click on the item within the Sales Order and select Create Manufacturing Orders.
+
+The system automatically considers the Delivery Date, the Internal Lead Time, and plans the Start Date backward. If the calculated Start Date falls earlier than today, the system switches to Forward scheduling and calculates the earliest possible End Date instead.
+
+Let's consider two scenarios - `Delivery date is possible to realize it` and `Delivery date is not possible to realize`:
 
 1. Delivery date is possible to realize it.
 
-    The delivery date is copied to Scheduling Board. It is checked if it is possible to make this Item on time.
+    If the delivery date can be met, the Scheduling Board copies the delivery date and verifies if production can be completed on time.
 
-    ![Possible](./media/scheduling-board/possible.webp)
+        ![Possible](./media/scheduling-board/possible.webp)
 
-    In this screenshot, we can see that to meet the need for delivery on 30.11.17, 0:00; the production has to be finished on 28.11.17, 12:00. Green row indicates that it is possible. The Manufacturing Orders can be scheduled to be delivered on time.
+    In this example, the system determines that to meet the Delivery Date of 30.11.17, 0:00, production must finish by 28.11.17, 12:00. The green row on the Scheduling Board confirms that the Manufacturing Orders can be scheduled and delivered on time.
+
 2. Delivery date is not possible to realize.
 
-    In the second option, you would like to check if it is possible to produce this item today.
+    If meeting the Delivery Date is not feasible, the system automatically switches to Forward scheduling and calculates the earliest possible End Date.
 
     ![Not possible](./media/scheduling-board/not-possible.webp)
 
-    As displayed on the screen, the task is currently impossible to schedule (the row's red color communicates it). The system automatically changed direction to Forward and set to the earliest possible End Date for 08.06 00:00. Now we can change this date to 20.09 at 00:01, direction Backward, and click Reschedule. Consequently, the row turns green, indicating that it is now possible to schedule it in this manner.
+    As shown above, the system initially determines that production cannot be completed on time (indicated by the red row). It calculates the earliest possible End Date as 08.06, 00:00.
+
+    To reschedule, you can adjust the Delivery Date—for instance, changing it to 20.09 at 00:01—and switch the direction to Backward scheduling. After clicking Reschedule, the system recalculates the production timeline, and the row turns green, indicating that the Manufacturing Order can now be scheduled successfully.
 
 ## Sales Order Minimum Order Quantity
 
 This option allows considering Sales Order options (Minimum and Maximum Quantity, Order Multiple) when creating Semi Finished Manufacturing Orders suggestions on Scheduling Board. This gives the sales operator a tool to provide an accurate estimated arrival time.
+
+---
+The Scheduling Board is a powerful production planning tool that simplifies the management of Manufacturing Orders, even within complex product structures. Whether working with Sales Orders or Manufacturing Orders, the Scheduling Board provides the flexibility and insights needed to meet delivery commitments effectively.

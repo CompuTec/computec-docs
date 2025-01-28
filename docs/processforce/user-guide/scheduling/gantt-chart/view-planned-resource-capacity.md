@@ -4,13 +4,13 @@ sidebar_position: 3
 
 # View Planned Resource Capacity
 
-Here, you can check how to check Resource capacity.
+This section explains how to view and manage the planned capacity of resources. Monitoring resource capacity helps ensure efficient scheduling and prevents overloading, enabling smooth production processes.
 
 ---
 
 ## Resources tab
 
-- Click on the row of the resource to view.
+- Select the desired resource by clicking on its row.
 - The bottom of the Gantt chart displays the consumed capacity.
 
     ![Scheduling](./media/view-planned-resource-capacity/scheduling.webp)
@@ -21,6 +21,9 @@ Here, you can check how to check Resource capacity.
 
 ## Manufacturing Orders tab
 
-Use the same navigation as above.
+Follow the same navigation steps as described above to view resource capacity in the Manufacturing Orders tab.
 
 ![Scheduling marked](./media/view-planned-resource-capacity/scheduling-marked-2.webp)
+
+---
+By utilizing the resource capacity view, you can effectively manage and adjust schedules to optimize resource usage, address overloads, and maintain efficient production planning.
