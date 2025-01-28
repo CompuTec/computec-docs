@@ -299,7 +299,7 @@ The MO Tools Tab specifies the tools and equipment required for executing the Ma
 The MO Templates Tab allows the assignment of child Maintenance Orders (MOs) to the main Maintenance Order template.
 
 - **Sequence**: the order in which the route Maintenance Orders should be performed.
-- **Template Code**: select the route Maintenance Order template to associate with the primary Maintenance Order template. Check [here](#maintenance-order-template). The system automatically populates the parameters for the selected MO Template.
+- **Template Code**: select the route Maintenance Order template to associate with the primary Maintenance Order template. The system automatically populates the parameters for the selected MO Template.
 
 For details on the Task Checklist, click [here](#tab-taskchecklist)
 

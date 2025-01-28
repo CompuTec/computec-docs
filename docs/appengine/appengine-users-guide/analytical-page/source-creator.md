@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Source Creator
 
-The Source Creator feature provides advanced configuration options for data presented in [custom reports and analytics of the Analytical Page](../analytical-page/overview.md#usage). This tool allows you to define data sources, customize their structure, and manage variants to optimize data visualization and reporting. With its intuitive interface, users can easily create and configure sources for streamlined analytics.
+The Source Creator feature provides advanced configuration options for data presented in [custom reports and analytics of the Analytical Page](overview.md)This tool allows you to define data sources, customize their structure, and manage variants to optimize data visualization and reporting. With its intuitive interface, users can easily create and configure sources for streamlined analytics.
 
 Below are key terms used in the Source Creator:
 

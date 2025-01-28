@@ -39,7 +39,7 @@ Click Choose From List button to open the list of alternative resources previous
 
 - Hover the mouse over the resource block to be moved.
 - A dotted area under the resource block will indicate that there are alternative resources.
-- Left mouse click and hold on the dotted area.
+- Left-click and hold on the dotted area.
 - Gray vertical lines will highlight the alternative resources.
 
     ![Gantt Alternative Resource](./media/alternative-resources/gantt-alternative-resources-3.webp)
@@ -47,22 +47,25 @@ Click Choose From List button to open the list of alternative resources previous
 ## Moving to the Alternative
 
 - Continue to Press the right mouse button.
-- Drag the resource block to the required alternative.
+- Drag the resource block to the desired alternative.
 - A red block will display, representing the new time.
 - Drop, Un-Press the right mouse button.
 
     ![Gantt Alternative Resource](./media/alternative-resources/gantt-alternative-resources-4.webp)
-- The resource block is now placed on the alternative.
+- The resource block will now be placed on the selected alternative:
 
     ![GanttAlternative Resource](./media/alternative-resources/gantt-alternative-resources-5.webp)
 - To view these resources alternative, use the same navigation as above.
 
 ## Manufacturing Order Changes
 
-- The update function saves the Gantt changes.
-- Changes the planned resource to the alternative resource (actual).
-- Automatically recalculates the lead time and the start date.
+- The Update function saves the changes made in the Gantt.
+- It updates the planned resource to reflect the selected alternative resource.
+- Lead time and start date are recalculated automatically to account for the changes.
 
 ## CompuTec PDC
 
-You can also switch a [Task to an Alternative Resource from the CompuTec PDC level](/docs/pdc/user-guide/task-activities/overview).
+Additionally, you can switch a [Task to an Alternative Resource from the CompuTec PDC level](/docs/pdc/user-guide/task-activities/overview).
+
+---
+By utilizing Alternative Resources, production processes become more agile and resilient to changes. This feature simplifies resource management, minimizes disruptions, and ensures that operations continue smoothly even when adjustments are required.
