@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # Overview
 
-Subcontracting is a method of managing a “purchase of a service.” For example, items are sent to the subcontractor for service, e.g., painting, heat treatment, or annealing.
+Subcontracting is a method used to manage the "purchase of a service" within the production process. For example, items may be sent to a subcontractor for services such as painting, heat treatment, or annealing.
 
-The service is a part of the production process, and there is no change in the Item Code for the parent.
+In this process, the service is integrated into the production flow without changing the Item Code for the parent product.
 
-Subcontracting in ProcessForce can be performed using one of the following procedures:
+Subcontracting in ProcessForce can be carried out using one of the following methods:
 
-- using Subcontractor type Resource,
-- creating External type Manufacturing Order.
+- **Subcontractor-Type Resource**: utilizing subcontractor-type resources to manage the external service within the production process.
+- **External-Type Manufacturing Order**: creating an external manufacturing order to handle the subcontracting tasks.
