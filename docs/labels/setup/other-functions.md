@@ -45,7 +45,7 @@ By default, PDF files are saved to: `C:\ProgramData\CompuTec\CT Label Printing\R
 
 However, you can customize both the file path and the file name by entering a custom value in the designated field. The application supports parameters (defined in the mapping table) and special placeholders for dynamic customization.
 
-## Supported Special Parameters
+### Supported Special Parameters
 
 You can use the following parameters to define dynamic file paths and names:
 
@@ -57,7 +57,7 @@ You can use the following parameters to define dynamic file paths and names:
 | @PrinterCode | Printer Code |
 | @CCNo | Current number of label |
 
-## Configuration Examples
+### Configuration Examples
 
 You can see the below examples for configuration:
 
