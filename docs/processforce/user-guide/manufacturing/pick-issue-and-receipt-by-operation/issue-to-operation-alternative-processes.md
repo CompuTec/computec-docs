@@ -4,36 +4,41 @@ sidebar_position: 5
 
 # Issue to Operation Alternative Processes
 
-You can find information on Issues with Operation Alternative Processes on this page.
+In manufacturing, handling material issues efficiently is crucial for maintaining smooth operations. This guide outlines two ways to issue materials to operations using alternative processes - directly from the Operations tab or through the Pick Order process.
 
 ---
 
 ## The Issue to Operation from the Operations tab
 
-- Select the Operations tab,
-- Select the Operation,
+To issue materials directly from the Operations tab:
+
+- Select the Operations tab.
+- Select the relevant Operation.
 - Select Issue for selected Operation.
 
 ![Issue for selected Operation](./media/issue-to-operation-alternative-processes/issue-for-selected-operation.webp)
 
 ## Copying Issue to Operation from the Pick Order Process
 
-- Select the Pick Order from within the Manufacturing Order from the Menu,
-- Select Copy From,
-- Select Manufacturing Order Operation,
+Another way to issue materials is through the Pick Order Process, which allows for bulk issuance:
 
-  ![Copy from](./media/issue-to-operation-alternative-processes/copy-from.webp)
+- Open the Manufacturing Order from the Menu.
+- Select the Pick Order linked to the order.
+- Click Copy From and choose Manufacturing Order Operation.
 
-- A list of Manufacturing Orders is displayed,
-- Select one or several Manufacturing Orders,
+    ![Copy from](./media/issue-to-operation-alternative-processes/copy-from.webp)
 
-  ![List of orders](./media/issue-to-operation-alternative-processes/list-of-orders.webp)
+- A list of Manufacturing Orders will be displayed. Select one or multiple orders.
 
-- A list of Operations for the Manufacturing Order or Orders are displayed,
-- Select a single row or multiple rows
+    ![List of orders](./media/issue-to-operation-alternative-processes/list-of-orders.webp)
 
-  ![Order data](./media/issue-to-operation-alternative-processes/order-data.webp)
+- The corresponding Operations for the selected orders will be listed. Choose one or multiple rows.
 
-- Items linked to the Operation are copied into the Pick Order.
+    ![Order data](./media/issue-to-operation-alternative-processes/order-data.webp)
 
-![Pick Order](./media/issue-to-operation-alternative-processes/pick-order.webp)
+- The items linked to the selected operations are copied into the Pick Order.
+
+  ![Pick Order](./media/issue-to-operation-alternative-processes/pick-order.webp)
+
+---
+Both methods offer flexibility depending on the production scenario. The Operations tab provides a quick way to issue materials for a specific operation, while the Pick Order process streamlines bulk material issuance across multiple operations. Choosing the right approach ensures efficient material handling, minimizing production delays and optimizing workflow.

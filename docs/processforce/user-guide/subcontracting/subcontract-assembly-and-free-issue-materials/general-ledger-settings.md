@@ -17,8 +17,10 @@ In managing subcontractor processes, it is essential to ensure accurate accounti
 
 - Following SAP Business One rules, accounts can be set at various levels including Warehouse, Item Group, and Item, or through Advanced G/L Account Determination.
 - For WIP Inventory and Inventory Variance Accounts, account codes for External WIP and WIP Variance need to be defined at the appropriate level (based on the implementation decision).
+
     ![Expense Account](./media/general-ledger-settings/account-settings.png)
 - Expense Account has to be set up for Service Items.
+
     ![Expense Account](./media/general-ledger-settings/account-settings-01.jpg)
 
 ---

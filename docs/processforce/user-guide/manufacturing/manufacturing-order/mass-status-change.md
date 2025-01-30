@@ -4,17 +4,21 @@ sidebar_position: 4
 
 # Mass Manufacturing Order Status Change
 
-This function allows to change status of many Manufacturing Orders in the same time.
+Managing the status of multiple Manufacturing Orders (MOs) efficiently is crucial for streamlined production workflows. The Mass Manufacturing Order Status Change function allows users to update the status of multiple MOs simultaneously, reducing manual effort and improving operational efficiency.
 
 ---
 
-:::note Path
+To access this feature, navigate to:
+
+:::info Path
     Production > Manufacturing Order > Document Status Change Wizard
 :::
 
 ![Mass Status Change](./media/mass-status-change/manufacturing-order-status-change.webp)
 
 ## Possible Status Changes
+
+The table below outlines the valid status transitions:
 
 |                      From                      |                     To                      |
 | :--------------------------------------------: | :-----------------------------------------: |
@@ -42,31 +46,27 @@ There are three steps in the process of mass Manufacturing Order status change:
 
 ### Manufacturing Order Data
 
-On the left side of the form, you can choose several options connected to Manufacturing Order data, e.g., document number, date (required date, planned start date, planned end date), distribution rule, project, source Sales Order, and customer.
-
-Options can be combined.
+On the left side of the form, users can filter MOs by various parameters such as document number, required date, planned start date, planned end date, distribution rule, project, source Sales Order, and customer. These filters can be combined for precise selection.
 
 ### Status
 
-Check the required checkbox to choose input status. When checkbox/es are checked, information about available status changes is displayed (or a warning if information about checkboxes is not available). Check the table above, column From, for possible checkbox check unavailable.
+Check the relevant checkbox(es) to specify the current MO status. If certain statuses cannot be selected, a warning message will be displayed. Refer to the "From" column in the status change table for valid selections.
 
 ### Resources, Items
 
-You can choose a Resource Group and one Resource or a range of Resources (based on Resource number).
-
-You can choose an Item in the same way.
+Users can further filter MOs based on Resource Groups, individual Resources, or a range of Resources, as well as specific Items.
 
 ### Warehouse
 
-You can limit chosen records list to those connected to specific Warehouses (Select column check-boxes).
+To limit records, users can filter by Warehouse by selecting the relevant checkboxes.
 
-Click the Next button after setting up desired criteria.
+After setting the desired criteria, click the "Next" button to proceed.
 
 ## Step 2. Manufacturing Order Selection
 
 ![Output Status](./media/mass-status-change/output-status.webp)
 
-In the second step, you have a list of Manufacturing Orders filtered using the criteria in the previous step. You can choose which document status will be changed (by checkboxes in the Select column).
+In this step, a list of MOs filtered from the previous step is displayed. Users can select specific MOs for status change using checkboxes in the Select column.
 
 ---
 
@@ -78,14 +78,13 @@ It is possible to additionally filter the results by clicking the Filtering butt
 
 You can define rules (e.g., equal, not equal, contains, is empty) and values that will be affected by the rule. A list of rules.
 
----
-
-Choose output status (you can find available options in the Possible Status Changes section).
-
-Click the Run button after setting up the above details.
+Once the output status is chosen (refer to the Possible Status Changes section), click the "Run" button to apply the changes.
 
 ## Step 3. Results
 
 ![Results](./media/mass-status-change/results.webp)
 
-In this step, you can see the mass document status change results. If the status of a specific document cannot be changed, a message will be displayed in the Processed Result column, e.g., Please fill required date first.
+In this step, you can see the mass document status change results. If any MOs cannot be updated, an error message will appear in the Processed Result column, indicating necessary actions (e.g., "Please fill required date first").
+
+---
+The Mass Manufacturing Order Status Change function enhances efficiency by allowing bulk updates to MO statuses. By following the outlined steps, users can streamline their production workflows, minimize manual interventions, and ensure accurate tracking of manufacturing processes.
