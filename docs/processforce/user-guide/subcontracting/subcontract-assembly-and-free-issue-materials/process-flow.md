@@ -58,7 +58,8 @@ Subcontracting is an essential process in manufacturing that involves outsourcin
 
 - If the Item is Batch Traced, have to select the batch to be issued,
 - For items set to Backflush, ProcessForce will automatically backflush batches according to the queue definition specified in the item details, such as FIFO, FEFO, or FMFO.
-![Batch Number Selection](./media/process-flow/batch-number-selection.png)
+
+    ![Batch Number Selection](./media/process-flow/batch-number-selection.png)
 
 ### Subcontracting Materials Report
 

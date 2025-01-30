@@ -4,20 +4,25 @@ sidebar_position: 7
 
 # Manufacturing Order Scheduling
 
-Scheduling production orders is one of the key aspects of operating in a manufacturing environment. Each resource is assigned a specific quantity that is considered during the planning phase.
+Scheduling production orders efficiently is a critical element in a manufacturing environment, where precise coordination of resources ensures smooth operations. By understanding the concepts of "Planned Quantity" and "Resource Quantity," manufacturers can make informed decisions and maximize productivity.
+
+---
 
 ## Planned Quantity
 
-It refers to the predetermined allocation of quantity, which is always distributed among machine resources. If a resource is inactive due to the establishment of a new production line, its allocation is set to zero.
+The "Planned Quantity" refers to the predetermined allocation of a specific quantity that is distributed among machine resources during the planning phase. These allocations are essential for optimizing resource usage. In cases where a resource is inactive (such as during the installation of a new production line), the allocation for that resource is set to zero.
 
 ## Resource Quantity
 
-It represents the current planned quantity following the latest replanning session. This figure incorporates the quantities already registered. For inactive resources, the total registered quantities are summed up.
+"Resource Quantity" represents the updated allocation following the most recent replanning session. It includes quantities that have already been recorded and any adjustments made to reflect changes in the production schedule. For inactive resources, the total registered quantities are summed up to determine the overall resource quantity.
 
 **Example**
 
 ![Resource Quantity](./media/manufacturing-order-scheduling/resource-quantity.png)
 
-After Time Booking for first resource (booked 1 qty)
+After the first time booking for a resource (booked 1 qty):
 
-![Resource Quantity](./media/manufacturing-order-scheduling/resource-quantity-1.png)
+    ![Resource Quantity](./media/manufacturing-order-scheduling/resource-quantity-1.png)
+
+---
+In manufacturing order scheduling, understanding the dynamics between planned and resource quantities is crucial for ensuring the correct allocation of resources. By keeping track of these quantities, manufacturers can optimize production processes, prevent resource underutilization, and adapt to changes in the production environment effectively.

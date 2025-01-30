@@ -6,46 +6,55 @@ toc_max_heading_level: 4
 
 # Manufacturing Order Menus
 
-Right-click Menus within the Manufacturing Order leads to several Manufacturing Order options.
+Manufacturing Order menus provide a range of essential functions to manage production processes efficiently. Right-clicking within a Manufacturing Order opens a context menu with several key options, allowing users to navigate through inventory management, scheduling, time recording, reports, and operation relationships. Below is an overview of the available menu options.
+
+---
 
 ## Issues and Receipts
 
-All related inventory issues, receipt, and transfer functions are available from this sub-menu level. To be known, the Manufacturing Order must have Released or Started status to Issues and Receipts.
+This submenu provides access to all inventory-related functions, including material issues, receipts, and transfers. Note that the Manufacturing Order must be in Released or Started status to use these options.
 
 ![Issues and Receipts](./media/manufacturing-order-menus/issues-and-receipts.webp)
 
 ## Scheduling
 
-![Scheduling](./media/manufacturing-order-menus/scheduling.webp)
+The Scheduling menu offers tools to plan and manage production timelines effectively.
+
+    ![Scheduling](./media/manufacturing-order-menus/scheduling.webp)
 
 ## Recording Time
 
-![Recording Time](./media/manufacturing-order-menus/recording-time.webp)
+The Recording Time option allows users to track time spent on various manufacturing tasks.
+
+    ![Recording Time](./media/manufacturing-order-menus/recording-time.webp)
 
 ### Actual Tasks Progress Report
 
-This option opens a form containing a table with information on currently started CompuTec PDC tasks.
-
-This option is available when Manufacturing Order is in Released, Started, or Finished status.
+This option opens a form displaying active CompuTec PDC tasks, providing real-time insights into ongoing work. It is accessible when the Manufacturing Order is in Released, Started, or Finished status.
 
 ## Reports
 
-![Reports](./media/manufacturing-order-menus/reports.webp)
+Users can generate detailed production-related reports from the Reports menu.
+
+    ![Reports](./media/manufacturing-order-menus/reports.webp)
 
 ## Operation Relation Chart
 
-To get to this option, choose Operation Relation Map from a context menu on Manufacturing Order.
+To access this option, select Operation Relation Map from the Manufacturing Order's context menu.
 
 ![Operation Relation Chart](./media/manufacturing-order-menus/orm.webp)
 
-The chart shows information connected to each of the operations assigned to a production process for a specific Manufacturing Order. Additionally, the chart shows relations between functions that, by default, are sequential (one Operation is finished, and another starts). Operation relations can be more advanced than that.
+This chart provides a visual representation of the operations involved in a specific Manufacturing Order. It illustrates the sequence of tasks within the production process, where operations typically follow a linear progression - one operation completes before the next begins. However, the chart also supports more complex relationships where operations may run in parallel or follow customized dependencies.
 
 ### Operation Tile
 
 ![Operation Tile](./media/manufacturing-order-menus/operation-tile.webp)
 
-Apart from basic information (Operation Name, Sequence, Status), the Tile also holds information on the operation's times: start and end of work (both planned and actual) and period of work.
+Apart from the basic information (Operation Name, Sequence, Status), the Tile also holds information on the operation's times: start and end times of work (both planned and actual) and period of work.
 
 #### Operation Quantity
 
-In this application version, information on Operation related quantities has been added.
+In the latest application version, additional details on operation-related quantities have been included to enhance production tracking.
+
+---
+The Manufacturing Order menu offers a structured way to manage various aspects of production, from material handling and scheduling to tracking progress and analyzing dependencies. By leveraging these features, manufacturers can optimize their workflows, improve efficiency, and ensure seamless production execution.

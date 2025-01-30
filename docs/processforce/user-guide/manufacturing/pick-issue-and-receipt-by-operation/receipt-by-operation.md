@@ -4,24 +4,29 @@ sidebar_position: 4
 
 # Receipt by Operation
 
-You can find information on the Receipt by Operation function on this page.
+Efficiently tracking material receipts during production is essential for maintaining accuracy in manufacturing processes. The Receipt by Operation function allows users to record received materials at different operation stages, ensuring proper documentation of outputs, co-products, and scrap. This guide outlines the process of handling receipts by operation.
 
 ---
 
 ## Receipt for Operation
 
-- Select the Receipt for Operation from te Manufacturing Order's context menu.
+To create a receipt for an operation:
+
+- Select the Receipt for Operation from the Manufacturing Order's context menu.
 
   ![Receipt for Operations](./media/receipt-by-operation/receipt-for-operations.webp)
 
-- List of Operations is displayed with linked CoProduct and Scrap Outputs.
+- A list of Operations will be displayed, along with linked Co-Product and Scrap Outputs.
 
   ![Picked Status](./media/receipt-by-operation/picked-status.webp)
 
 ## Pick Receipt
 
-- Pick Receipt form opens with the Output Items,
-- Operation number and name are referenced,
-- Perform the rest of the Pick Receipt process as normal.
+- The Pick Receipt form opens, displaying the output items.
+- The corresponding Operation number and name are referenced for traceability.
+- Complete the rest of the Pick Receipt process as per standard procedures.
 
-![Pick Receipt](./media/receipt-by-operation/pick-receipt.webp)
+  ![Pick Receipt](./media/receipt-by-operation/pick-receipt.webp)
+
+---
+The Receipt by Operation function streamlines material tracking and ensures all production outputs—including co-products and scrap—are properly recorded. This process enhances traceability, reduces discrepancies, and supports efficient manufacturing operations.

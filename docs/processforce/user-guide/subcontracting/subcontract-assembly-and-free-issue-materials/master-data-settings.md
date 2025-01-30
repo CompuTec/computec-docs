@@ -22,9 +22,11 @@ To successfully manage subcontracting procedures, accurate master data settings 
   - Purchase Item,
   - Preferred Supplier Code,
   - Unit Price or Price List.
+
     ![Service to be Purchased](./media/master-data-settings/sub-contract-service-item.png)
 
 - On the Inventory Data tab, set the Valuation Method to Standard.
+
   ![Service to be Purchased](./media/master-data-settings/sub-contract-service-item-01.png)
 
 ## Bill of Material
@@ -34,10 +36,12 @@ To successfully manage subcontracting procedures, accurate master data settings 
   - Set to "Backflush" if you don’t want to track the confirmed consumption of inventory from the subcontractor.
   - Set to "Manual" if you prefer to confirm consumption either by the production planner or the subcontractor themselves.
 - Select Type = "External" to indicate that the assembly is done externally.
-- Within the Items Tab, add the Item for the Service to be Purchased
-- The Warehouse for the Item represents the subcontractor warehouse where the inventory is moved to and related inventory transactions performed
+- Within the Items Tab, add the Item for the Service to be Purchased.
+- The Warehouse for the Item represents the subcontractor warehouse where the inventory is moved to and related inventory transactions performed.
+
   ![Bill of Material](./media/master-data-settings/bill-of-material.png)
-- For this Item, check the column "Subcontracting Item."
+- For this Item, check the column "Subcontracting Item".
+
   ![Bill of Material](./media/master-data-settings/bill-of-material-01.png)
 
 ## Item Costing
