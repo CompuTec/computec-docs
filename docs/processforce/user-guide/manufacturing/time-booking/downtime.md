@@ -19,22 +19,24 @@ The downtime function allows recording downtime for a specific resource with add
 In the Downtime form header, you can define the following:
 
 - Resource data: Code and Name
-- Manufacturing Order and Operation to which a specific Resource is assigned
-- Start and end date and time
+- Manufacturing Order and Operation: the specific order and task related to the downtime
+- Start and end date and time: duration of the downtime
 - Employees connected to the downtime:
-  - Reporter
-  - Technician – the person responsible for the defect removal. Click [here](/docs/pdc/administrator-guide/setting-up-the-application/overview#requirements) to find out more.
+  - Reporter: who logs the downtime.
+  - Technician: the person responsible for the defect removal. Click [here](/docs/pdc/administrator-guide/setting-up-the-application/overview#requirements) to find out more.
   - Employee who can check and end downtime
 - Document Series
 - Status:
-  - Reported,
-  - In Progress,
-  - Waiting,
-  - Fixed.
+  - Reported: downtime has been logged.
+  - In Progress - issue resolution is underway.
+  - Waiting - awaiting further action.
+  - Fixed - downtime has been resolved.
 
-In the form's main table, Downtime Reason can be chosen.
+Users must select a Downtime Reason from the predefined list.
 
 ## Downtime Reason
+
+To configure downtime reasons, navigate to:
 
 :::info Path
     Administration → Setup → Production → Downtime Reason
@@ -46,10 +48,15 @@ You can define Code, Name, and Remarks for a Down Time Reason. A predefined grou
 
 ## Downtime Reason Group
 
+To categorize downtime reasons, navigate to:
+
 :::info Path
     Administration → Setup → Service → Down Time Groups
 :::
 
 ![Downtime Reason Group](./media/downtime/downtime-reason-group.webp)
 
-You can define Group Code and Name. Downtime Group can be chosen on Downtime Reason.
+Downtime Groups help in organizing and streamlining downtime tracking.
+
+---
+The Downtime function in SAP Business One helps manufacturers log, track, and resolve downtime efficiently. By maintaining detailed records of downtime reasons, assigned employees, and statuses, businesses can reduce operational delays, improve resource management, and enhance overall production efficiency.
