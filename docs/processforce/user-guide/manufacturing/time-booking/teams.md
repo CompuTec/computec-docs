@@ -4,16 +4,26 @@ sidebar_position: 3
 
 # Teams
 
-This option allows defining Teams – groups of employees.
+The Teams feature in SAP Business One allows users to create and manage groups of employees working together on manufacturing tasks. By defining teams and assigning a Team Leader, businesses can enhance production efficiency, streamline time tracking, and improve workforce coordination.
 
 ---
+
+To set up a team, navigate to:
 
 :::info Path
     Production → Time Booking → Teams
 :::
 
-You can define a Team of Employees (along with its Team Leader) by choosing them from the List of Employees.
+To create and manage teams:
 
-![Team](./media/teams/team.webp)
+1. Open the Teams function.
+2. Select employees from the List of Employees to form a team.
+3. Assign a Team Leader to oversee and manage the team.
 
-You can define records for new employees by the SAP B1 Employee Master Data function, which is available in Main Menu → Human Resources → Employee Master Data.
+    ![Team](./media/teams/team.webp)
+
+New employees can be added using the SAP B1 Employee Master Data function:
+Main Menu → Human Resources → Employee Master Data
+
+---
+By leveraging the Teams feature in SAP Business One, businesses can efficiently group employees for manufacturing tasks, ensuring better coordination, streamlined time tracking, and enhanced production management.

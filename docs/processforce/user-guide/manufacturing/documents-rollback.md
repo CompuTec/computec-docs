@@ -4,18 +4,29 @@ sidebar_position: 6
 
 # Documents Rollback
 
-You can use the Rollback Document option to correct Goods Issue or Goods Receipt documents.
+In manufacturing operations, errors in Goods Issue or Goods Receipt documents can impact inventory accuracy and financial records. The Rollback Document feature in SAP Business One allows users to quickly correct such mistakes by reversing the transactions, ensuring data integrity and smooth production processes.
 
-To use this functionality, right-click on the document line (on a Manufacturing Order) you want to correct and choose Rollback Document from the context menu:
+---
+You can use the Rollback Document option to correct Goods Issue or Goods Receipt documents. To perform a rollback, follow these steps:
 
-![Rollback document](./media/documents-rollback/rollback-document.webp)
+1. Open the relevant Manufacturing Order.
+2. Right-click on the document line that needs correction.
+3. Select Rollback Document from the context menu.
 
-Rollback details form will be displayed. You can set up document series, dates, and additional remarks:
+    ![Rollback document](./media/documents-rollback/rollback-document.webp)
 
-![Rollback details](./media/documents-rollback/rollback-details.webp)
+Rollback Details form will appear, where you can adjust the document series, dates, and add remarks before finalizing the rollback.
 
-When you use Rollback Document on Goods Issue, it will create an appropriate Goods Receipt. In the same way, when you use Rollback Document on Goods Receipt, Goods Issue will be created.
+    ![Rollback details](./media/documents-rollback/rollback-details.webp)
 
-![Rolled back document](./media/documents-rollback/rolled-back-document.webp)
+**What Happens During a Rollback?**
 
-When you use Rollback Document on Goods Receipt, and some documents are created using backflush, these documents will also be corrected.
+- **Goods Issue → Goods Receipt**: Rolling back a Goods Issue will automatically generate a corresponding Goods Receipt.
+- **Goods Receipt → Goods Issue**: Rolling back a Goods Receipt will create a related Goods Issue.
+
+    ![Rolled back document](./media/documents-rollback/rolled-back-document.webp)
+
+If the original Goods Receipt was created using backflush, all associated documents will also be corrected accordingly.
+
+---
+The Rollback Document function in SAP Business One helps manufacturing businesses maintain accurate inventory and financial records by allowing seamless correction of document errors. This feature reduces manual effort, improves data accuracy, and ensures smooth operational workflows.
