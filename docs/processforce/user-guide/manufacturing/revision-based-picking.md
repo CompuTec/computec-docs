@@ -4,11 +4,13 @@ sidebar_position: 10
 
 # Revision Based Picking and Backflushing
 
-You can find the Revision Based Picking and Backflushing function information on this page.
+Managing inventory efficiently is critical in manufacturing, and Revision-Based Picking and Backflushing helps streamline material tracking and usage. This functionality ensures that the correct batch of materials is selected based on the Revision Code, improving accuracy in production and inventory transactions. This guide outlines how revision-based picking works and its integration into various processes.
 
 ---
 
 ## General Settings
+
+To enable this functionality, navigate to:
 
 :::info Path
     General Setting → ProcessForce → Inventory → Revision based picking (manual and backflushing)
@@ -16,25 +18,25 @@ You can find the Revision Based Picking and Backflushing function information on
 
 ## Item Details
 
-Revision code for the Item and Batch record:
+Each item and batch record includes a Revision Code, ensuring traceability:
 
-![Item Details](./media/revision-based-picking/item-details-revision.webp)
+    ![Item Details](./media/revision-based-picking/item-details-revision.webp)
 
 ## Batch Master Data
 
-Revision Code is recorded on the batch record.
+The Revision Code is recorded in the batch master data, allowing precise selection during transactions:
 
-![Batch Master Data](./media/revision-based-picking/batch-master-data-revision.webp)
+    ![Batch Master Data](./media/revision-based-picking/batch-master-data-revision.webp)
 
 ## Bill of Material
 
-Revision Code for the Item is displayed in the bill of material form.
+The Revision Code is displayed in the Bill of Materials form, ensuring consistency in production planning:
 
-![Bill of Materials](./media/revision-based-picking/bill-of-materials-revision.webp)
+    ![Bill of Materials](./media/revision-based-picking/bill-of-materials-revision.webp)
 
 ## Pick Issue
 
-When the Revision based picking (Manual) checkbox is checked when creating a document of one of the following types:
+When the Revision-Based Picking (Manual) checkbox is selected while creating certain inventory documents, the system filters batch selection based on the Revision Code. This applies to the following document types:
 
 - Inventory Transfer,
 - Delivery,
@@ -42,8 +44,10 @@ When the Revision based picking (Manual) checkbox is checked when creating a doc
 - Return PO,
 - Pick Order,
 
-Batches will be filtered based on Revision Code from the base document.
-The filtering rules are as follows:
+Batches will be filtered based on Revision Code from the base document. The filtering rules are as follows:
 
-- If the revision code is empty or set to default, display Batches with empty and default revision code.
-- If the revision code differs from the default, display Batches with that revision code only.
+- If the Revision Code is empty or set to default, the system displays batches with an empty or default revision code.
+- If the Revision Code is unique (not default), the system displays only batches with that specific Revision Code.
+
+---
+By incorporating Revision-Based Picking and Backflushing, manufacturers can ensure materials are selected accurately, minimizing errors and maintaining consistency throughout production. This feature enhances inventory control, reduces waste, and improves traceability, leading to a more efficient manufacturing process.

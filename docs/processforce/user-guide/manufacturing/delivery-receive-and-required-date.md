@@ -4,24 +4,24 @@ sidebar_position: 13
 
 # Delivery, Receive and Required Date
 
-Delivery, Receive, and Required Date allows one to calculate the exact date of production beginning required to deliver the product to the customer on time.
+In a dynamic manufacturing environment, accurate scheduling is crucial to ensuring timely product delivery. The Delivery, Receive, and Required Date framework allows businesses to calculate the exact production start date necessary to meet customer delivery commitments. By integrating lead times into Manufacturing Orders and Sales Orders, companies can enhance efficiency, reduce delays, and optimize resource planning.
 
 ---
 
 ## Business Logic
 
-Require, Delivery, and Receive data and Lead Times are connected and used on Manufacturing Orders and Sales Orders according to the following scheme:
+The relationship between Required Date, Delivery Date, Receive Date, and Lead Times follows a structured approach, as illustrated below:
 
-![Shipment Dates](./media/delivery-receive-and-required-date/shipment-dates-copy.webp)
+    ![Shipment Dates](./media/delivery-receive-and-required-date/shipment-dates-copy.webp)
 
 The following data are being used for calculations:
 
-- **Required Date, Time** – a moment on which production of Items from a specific Manufacturing Order has to be completed,
-- **Internal Lead Time\*** – a period needed to prepare production results for shipping (sorting, assembling, packing, moving from a production floor to a shipping area, etc.). Required Date and Time + Internal Lead Time = Delivery Date and Time,
-- **Delivery Date, Time** – a moment of sending output out of the company. Delivery Date and Time + Receive Lead Time = Receive Date and Time,
-- **Receive Lead Time\*** – a period between sending the output and receiving it by Business Partner,
-- **Receive Date, Time** – a moment of receiving the output by the Business Partner,
-- **Delivery Time Slot\*** – preferred Delivery Time of receiving the output by Business Partner, e.g., 5 pm.
+- **Required Date, Time**: the deadline for completing the production of items in a specific Manufacturing Order.
+- **Internal Lead Time\***: the duration required for post-production activities such as sorting, assembling, packing, and transferring goods to the shipping area. Formula: Required Date + Internal Lead Time = Delivery Date.
+- **Delivery Date, Time**: the scheduled moment when the finished goods leave the company. Formula: Delivery Date + Receive Lead Time = Receive Date.
+- **Receive Lead Time\***: the estimated transit time between shipment and receipt by the Business Partner.
+- **Receive Date, Time**: the expected moment when the Business Partner receives the shipment.
+- **Delivery Time Slot\***: the preferred delivery window specified by the Business Partner, e.g., 5 PM.
 
 ---
 
@@ -39,34 +39,15 @@ Internal Lead Time can be defined in the following format: [1-3 digit number of 
 
 Internal Lead Time can be defined in the following places:
 
-1.
+1. Business Partners → Business Partner Master Data → Addresses tab
 
-:::info Path
-Business Partners → Business Partner Master Data → Addresses tab
-:::
+    If Business Partner has more than one address defined, different Internal Lead Times can be defined for each address.
 
-If Business Partner has more than one address defined, different Internal Lead Times can be defined for each address.
-
-2.
-:::info Path
-Business Partners → Business Partner Master Data → General tab
-:::
-3.
-:::info Path
-Inventory → Item Details → Revisions tab
-:::
-4.
-:::info Path
-Inventory → Item Master Data → Planning Data tab
-:::
-5.
-:::info Path
-Inventory → Warehouses → General tab
-:::
-6.
-:::info Path
-Administration → System Initialization → Document Settings → Per Document (for Sales Order)
-:::
+2. Business Partners → Business Partner Master Data → General tab
+3. Inventory → Item Details → Revisions tab
+4. Inventory → Item Master Data → Planning Data tab
+5. Inventory → Warehouses → General tab
+6. Administration → System Initialization → Document Settings → Per Document (for Sales Order)
 
 Internal Lead Time taken under consideration on specific documents (Manufacturing Orders and Sales Orders) is taken from the above hierarchy: if defined in 1. it is taken from there. If not, it is taken from 2. and so on.
 
@@ -74,40 +55,22 @@ Internal Lead Time taken under consideration on specific documents (Manufacturin
 
 Receive Lead Time can be defined in the following format: [1-3 digit number of days]:[1-2 digit number of hours].
 
-1.
+1. Business Partners → Business Partner Master Data → Addresses tab
+    If Business Partner has more than one address defined, different Delivery Times can be defined for each address.
+2. Business Partners → Business Partner Master Data → General tab
+3. Inventory → Warehouses → General tab
+4. Administration → System Initialization → Document Settings → Per Document (for Sales Order)
 
-:::info Path
-Business Partners → Business Partner Master Data → Addresses tab
-:::
-If Business Partner has more than one address defined, different Delivery Times can be defined for each address.
-2.
-:::info Path
-Business Partners → Business Partner Master Data → General tab
-:::
-3.
-:::info Path
-Inventory → Warehouses → General tab
-:::
-4.
-:::info Path
-Administration → System Initialization → Document Settings → Per Document (for Sales Order)
-:::
 Receive Lead Time taken under consideration on specific documents (Manufacturing Orders and Sales Orders) is taken from the above hierarchy: if defined in 1. it is taken from there. If not, it is taken from 2. and so on.
 
 ### Delivery Time Slot
 
 Delivery Time is filled with a default value on Sales Order when selecting Business Partner on this type of document if it is defined in one of the following places:
 
-1.
+1. Business Partners → Business Partner Master Data → Addresses tab
+    If Business Partner has more than one address defined, a Different Delivery Time can be defined for each address.
 
-:::info Path
-Business Partners → Business Partner Master Data → Addresses tab
-:::
-If Business Partner has more than one address defined, a Different Delivery Time can be defined for each address.
-2.
-:::info Path
-Business Partners → Business Partner Master Data → General tab
-:::
+2. Business Partners → Business Partner Master Data → General tab
 
 Delivery Time taken under consideration on Sales Orders is taken from the above hierarchy: if defined in 1. it is taken from there. If not, it is taken from 2.
 
@@ -119,15 +82,14 @@ Delivery Time taken under consideration on Sales Orders is taken from the above 
 
 #### Header
 
-Delivery Time is predefined (check Configuration section).
-
-Delivery Date and Receive Date can be set up manually. When one value is set up, the other is calculated based on it. Changing one of the values changes the other one. Receive Time is calculated using different values (check the Business Logic section).
+- Delivery Time is predefined (check Configuration section).
+- Delivery Date and Receive Date can be set up manually. When one value is set up, the other value is calculated based on it. Changing one of the values changes the other one.
+- Receive Time is calculated using different values (check the Business Logic section).
 
 #### Contents tab
 
-Delivery Time is predefined (check Configuration section).
-
-Receive Date and Time are taken from the document header. It can be changed: different Receive Date and Time can be set up for each document line.
+- Delivery Time is predefined (check Configuration section).
+- Receive Date and Time are taken from the document header. It can be changed: different Receive Date and Time can be set up for each document line.
 
 ### Manufacturing Order
 
@@ -147,11 +109,9 @@ The required Date and Time can be set up manually on the Manufacturing Order hea
 
 ![Scheduling Board](./media/delivery-receive-and-required-date/scheduling-board-times.webp)
 
-Changing the Required Date or Time affects the Delivery Date and Time.
-
-Changing Delivery Date or Time affects Required Date and Time.
-
-Internal Lead Time is predefined (check Configuration section).
+- Changing the Required Date or Time affects the Delivery Date and Time.
+- Changing Delivery Date or Time affects Required Date and Time.
+- Internal Lead Time is predefined (check Configuration section).
 
 #### Original Delivery Date and Time
 
@@ -161,4 +121,7 @@ Click [here](../scheduling/scheduling-board.md) to find out more about Schedulin
 
 ## Receive Date Calculation
 
-Sales Order Receive Date is calculated considering holidays defined in SAP Business One → System Initialization → Company Details → Accounting Data tab.
+Sales Order Receive Dates consider holidays set in SAP Business One → System Initialization → Company Details → Accounting Data tab, ensuring accurate scheduling.
+
+---
+By leveraging the Delivery, Receive, and Required Date framework, businesses can streamline production scheduling, improve on-time delivery, and enhance customer satisfaction. Proper configuration of lead times ensures efficient order management, minimizes delays, and optimizes supply chain processes. Integrating these calculations into SAP Business One simplifies inventory planning and ensures seamless coordination between production and logistics teams.

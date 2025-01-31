@@ -11,7 +11,7 @@ Accurate Master Data setup is essential for efficient material management in man
 - Define the Items, Coproducts, and Scrap within the bill of materials form as normal,
 - The Item Number and Description appear in "Grey", indicating they have been linked to an operation.
 
-![Bill of Materials](./media/master-data/bill-of-materials-2.webp)
+    ![Bill of Materials](./media/master-data/bill-of-materials-2.webp)
 
 ## Production Process
 

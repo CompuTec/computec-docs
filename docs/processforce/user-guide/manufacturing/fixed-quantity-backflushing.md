@@ -4,15 +4,19 @@ sidebar_position: 12
 
 # Fixed Quantity Backflushing
 
+Fixed Quantity Backflushing automates the consumption of materials in production, ensuring efficient inventory tracking and reducing manual effort. This method allows manufacturers to backflush a predetermined quantity of raw materials, regardless of the actual production output. By integrating Fixed Backflush into the Bill of Materials (BOM) and Manufacturing Order (MOR), businesses can enhance accuracy and efficiency in production reporting.
+
+---
+
 ## Bill of Material and Manufacturing Order
 
 To backflush the total quantity of an Item based on a partial or a full quantity production receipt, select the "Fixed Backflush" option:
 
-![Fixed Backflush](./media/fixed-quantity-backflushing/bill-of-materials-backflush.webp)
+    ![Fixed Backflush](./media/fixed-quantity-backflushing/bill-of-materials-backflush.webp)
 
 ## Pick Order – Receipt from Production
 
-Based on the "Backflush Type," the amounts to be posted are calculated based on the following rules:
+Based on the "Backflush Type," the amount to be posted are calculated based on the following rules:
 
 |      Item       | BOM Quantity |   Type    |        Method         | Backflush Type  | MOR Planned Quantity | Planned Quantity | Receipt | Actual Quantity |
 | :-------------: | :----------: | :-------: | :-------------------: | :-------------: | :------------------: | :--------------: | :-----: | :-------------: |
@@ -65,3 +69,6 @@ Over Receipt of 10:
 |     Scrap 1     |     0.1      | Backflushed | Proportional Quantity |    Backflush    |                      |        10        |         |        1        |
 |     Scrap 2     |     0.2      | Backflushed |    Fixed Quantity     | Fixed Backflush |                      |        20        |         |        0        |
 |     Scrap 3     |     0.3      |   Manual    |                       |                 |                      |        30        |         |        0        |
+
+---
+Fixed Quantity Backflushing simplifies inventory management by automatically deducting materials based on predefined backflush settings. This approach reduces errors, improves traceability, and ensures efficient resource utilization in manufacturing. By leveraging this method, companies can optimize production workflows and maintain accurate inventory records.

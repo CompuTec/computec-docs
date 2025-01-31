@@ -4,25 +4,39 @@ sidebar_position: 14
 
 # Rework
 
-There are various ways to handle rework in ProcessForce. Usage of one of the ways depends on what kind of rework it is, at what point in time, what type of document is required, etc.
-In ProcessForce, we have the following functionalities that can be useful:
+Rework is an essential part of manufacturing that ensures product quality and minimizes waste. ProcessForce offers multiple ways to handle rework, depending on the type of issue, the stage in production, and the required documentation. Choosing the right method helps maintain efficiency while ensuring traceability and compliance. Below are three key methods for managing rework in ProcessForce:
 
 ## Rollback
 
-This method creates an opposite document to the one selected. It is easy and useful if the rework is done within the same Manufacturing Order.
-To roll back the document, go to the Documents tab, select the line with the document you want to reverse, and from right-click menu, select 'Issue and Receipts' \ 'Rollback document.'
+The Rollback method creates a reverse document for the selected transaction, making it a simple and effective solution when rework needs to be done within the same Manufacturing Order.
+
+To perform a rollback:
+
+1. Navigate to the Documents tab.
+2. Select the document line you want to reverse.
+3. Right-click and choose 'Issue and Receipts' → 'Rollback Document.'
 
 ## Issue Rework to Production
 
-This method allows the creation of Goods Issue documents using the same ItemCode as the related produced Item. It is used most often with a new Manufacturing Order when the finished product needs to be returned to the production line and repacked or mixed with fresh raw materials to create the same product.
-To use this method, right-click the empty place in Manufacturing Order and select 'Issue and Receipts' \ 'Issue Rework to Production.' ProcessForce will create Pick Order with Finished Good ItemCode where you need to update quantity and Batch numbers (if required).
+This method allows you to create a Goods Issue document using the same ItemCode as the finished product. It is typically used when the finished product needs to be reintroduced into the production process—either for repacking or mixing with fresh raw materials.
 
-![Rework](./media/rework/rework-order-1.PNG)
+To issue rework to production:
 
-## Bill of Materials Revision with special ItemCode (different from Finished Good Item) selected as Coproduct and Raw Material in the Items list
+1. Open the Manufacturing Order screen.
+2. Right-click an empty area and select 'Issue and Receipts' → 'Issue Rework to Production.'
+3. ProcessForce will generate a Pick Order with the Finished Good ItemCode—update the quantity and batch numbers as needed.
 
-Use this setup if you know your produced Item needs to be reworked at some point with the current or new Manufacturing Order.
-With this, you get better visibility of stock in the Warehouse with the quantity of good product ready to ship and the quantity that needs to come back to the production line.
-An example of this method is presented here:
+    ![Rework](./media/rework/rework-order-1.PNG)
 
-![Rework](./media/rework/rework-order.PNG)
+## Bill of Materials Revision with special ItemCode
+
+If rework is a known requirement, you can configure the Bill of Materials (BOM) accordingly. This method involves defining a special ItemCode (different from the Finished Good Item) as both a Coproduct and Raw Material within the BOM.
+
+Using this approach provides better visibility into warehouse stock, distinguishing between finished goods ready for shipment and products requiring rework.
+
+An example of this method is shown below:
+
+    ![Rework](./media/rework/rework-order.PNG)
+
+---
+Managing rework efficiently in ProcessForce helps maintain product quality while minimizing waste and disruptions. Whether you need to roll back a transaction, reintroduce finished goods into production, or account for rework within your Bill of Materials, ProcessForce provides flexible options to streamline the process. By choosing the right method, manufacturers can ensure accurate inventory tracking and smooth operations.

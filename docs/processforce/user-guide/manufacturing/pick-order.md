@@ -4,21 +4,21 @@ sidebar_position: 2
 
 # Pick Order
 
+Efficient inventory management is critical for smooth manufacturing operations, and the Pick Order function in ProcessForce plays a key role in ensuring the right materials are available at the right time. This feature facilitates the picking process by offering both automatic and manual creation options, improving efficiency and accuracy in inventory handling.
+
+---
+
 ## Key Features
 
-The Pick Order function is used to manage the activity of picking inventory Items and contains multiple options:
+The Pick Order function provides several options for managing inventory picking:
 
-- Created automatically from a Manufacturing Order,
-- Created manually, and single or multiple Manufacturing orders copied to the Pick Order,
-- An existing Pick Order can be used with multiple Manufacturing Orders.
+- **Automatic Creation**: a Pick Order is automatically generated from a Manufacturing Order, carrying over item details.
+- **Manual Creation**: users can manually create a Pick Order and copy single or multiple Manufacturing Orders into it.
+- **Existing Pick Orders**: a single Pick Order can be linked to multiple Manufacturing Orders, consolidating requirements for efficient handling.
 
-When creating a Pick Order from a Manufacturing Order, the Items, Planned Quantity, and Source Warehouse are copied from the Manufacturing Order.
+When a Pick Order is created from a Manufacturing Order, the Items, Planned Quantity, and Source Warehouse are copied over. If any Distribution Rules, Cost Dimensions, or Project assignments exist at the item level, they are also transferred. If these fields are left blank, they can be manually updated.
 
-If Distribution Rules or Cost Dimensions and Projects are defined at an Item line level, these are also copied.
-
-If blank, they can be manually added.
-
-![Pick Order](./media/pick-order/pick-order.webp)
+    ![Pick Order](./media/pick-order/pick-order.webp)
 
 ## Employee Field
 
@@ -26,12 +26,15 @@ An Employee filed is available for assigning an employee to a specific Pick Orde
 
 ## Manual Creation of Pick Orders
 
-A Pick Order may be created manually, and using the Copy From button function, the user can select from a list of Manufacturing Orders to be picked simultaneously.
+Pick Orders can be created manually when needed. The Copy From function allows users to select one or more Manufacturing Orders to consolidate picking tasks.
 
-This Copy From function can also be used when a Pick Order has been created for a specific Manufacturing Order.
+Additionally, if a Pick Order has already been created for a Manufacturing Order, users can further refine it by adding multiple Manufacturing Orders, effectively generating a consolidated Pick List.
 
-You can then generate a consolidated Pick List.
+**Important Note**:
 
-Note: If multiple requirements exist for the same item across several Manufacturing orders, the Pick Order will display a separate row for each condition.
+If multiple Manufacturing Orders require the same item, the Pick Order will display a separate row for each requirement, ensuring accurate tracking of materials.
 
-To perform the rest of the Pick Order to Production Goods Issue cycle, visit this page: Pick Order Bin Locations and Allocations.
+To complete the Pick Order to Production Goods Issue cycle, refer to: Pick Order Bin Locations and Allocations.
+
+---
+The Pick Order function in ProcessForce simplifies inventory management by enabling automated and manual picking processes. With the ability to consolidate multiple Manufacturing Orders into a single Pick Order, businesses can enhance efficiency, reduce errors, and ensure a seamless material flow to production.
