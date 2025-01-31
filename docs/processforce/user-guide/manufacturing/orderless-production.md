@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # Orderless Production
 
-You can find information on setting up and using the Orderless Production function on this page.
+Orderless Production is a streamlined manufacturing process that eliminates the need for traditional production orders. This method simplifies and accelerates production by allowing users to record manufacturing activities in a single document while ensuring accurate material and resource tracking. This guide provides an overview of the configuration, usage, and benefits of the Orderless Production function.
 
 ---
 
@@ -12,23 +12,19 @@ You can find information on setting up and using the Orderless Production functi
 
 ### Master Data
 
-Define Document Series for the Orderless Production Document:
+To use Orderless Production, define the document series for the Orderless Production Document.:
 
 ![Document Numbering](./media/orderless-production/orderless-production-numbering.webp)
 
-You can check [here](../system-initialization/document-numbering.md) how to set up a document series.
+For detailed instructions on setting up a document series, check [here](../system-initialization/document-numbering.md).
 
 ### Bill of Material
 
-When performing orderless production, all items and resources within the Bill of Material and Production Process must be set as "Backflushed."
+All items and resources within the Bill of Material and Production Process must be set as "Backflushed" to ensure smooth orderless production.
 
 ### Orderless Production Template
 
-To reduce the time to enter the items to be produced in an orderless method, a template can be created listing all the items to be produced.
-
-This template can be selected in the Orderless Production Document, and all the data is copied into the form.
-
-If an Item has associated CoProducts and Scrap, these are automatically added to the form.
+To simplify data entry, users can create an Orderless Production Template listing all items to be produced. When selected in the Orderless Production Document, the template automatically populates the form with relevant data, including associated CoProducts and Scrap.
 
 ![Orderless Production Template](./media/orderless-production/orderless-production-template.webp)
 
@@ -36,13 +32,9 @@ If an Item has associated CoProducts and Scrap, these are automatically added to
 
 ![Orderless Production Document](./media/orderless-production/orderless-production-document.webp)
 
-The user can select an orderless production template and manually add items to the form to record the items to be produced.
+The Orderless Production Document serves as the central point for recording production activities. Users can select a predefined template or manually enter items to be produced. When an item has associated CoProducts and Scrap, these are automatically included.
 
-If an Item has associated CoProducts and Scrap, these are automatically added to the form.
-
-The user enters the posting date and quantity produced, and press add.
-
-This will create in the background a manufacturing order performing a complete manufacturing order cycle from release to close, including the following transaction:
+The user inputs the posting date and the quantity produced, then confirms the entry. This action triggers a manufacturing order in the background, executing a complete production cycle from release to closure. The following transactions are performed:
 
 |                           |       Items        | Batch Traced Items (set to backflush) Based on FIFO, FEFO & FMFO rules | Non-Inventory Items (set to backflush) | CoProducts (set to backflush) | Scrap (set to backflush) |   Resource Time    | Finished Products  |
 | :-----------------------: | :----------------: | :--------------------------------------------------------------------: | :------------------------------------: | :---------------------------: | :----------------------: | :----------------: | :----------------: |
@@ -52,3 +44,6 @@ This will create in the background a manufacturing order performing a complete m
 | Create Scrap & ByProducts |                    |                                                                        |                                        |                               |    :heavy_check_mark:    |                    |                    |
 |     Create CoProducts     |                    |                                                                        |                                        |      :heavy_check_mark:       |                          |                    |                    |
 | Create Finished Products  |                    |                                                                        |                                        |                               |                          |                    | :heavy_check_mark: |
+
+---
+Orderless Production is an efficient approach to manufacturing that reduces manual processes, improves accuracy, and speeds up production cycles. By leveraging templates and automated backflushing, businesses can achieve seamless production execution with minimal administrative overhead. Implementing this function ensures enhanced traceability, resource management, and overall production efficiency.

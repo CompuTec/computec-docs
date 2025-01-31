@@ -4,6 +4,10 @@ sidebar_position: 3
 
 # Pick Receipt
 
+Managing the receipt of produced items from manufacturing into stock is a critical process in inventory control. The Pick Receipt function streamlines this activity by offering multiple options for handling production receipts, ensuring accuracy and efficiency.
+
+---
+
 ## Key Features
 
 The Pick Receipt function is used to manage the activity of receiving produced items from manufacturing into stock and contains multiple options:
@@ -17,19 +21,15 @@ The Pick Receipt function is used to manage the activity of receiving produced i
 
 ## Creation of Pick Receipt
 
-The Pick Receipt can be created in multiple ways:
+Pick Receipts can be created in multiple ways, offering flexibility to accommodate different manufacturing workflows:
 
-- Created automatically from a Manufacturing Order,
-- Created manually, and single or multiple Manufacturing orders copied to the Pick Receipt,
-- An existing Pick Receipt can be used with multiple Manufacturing Orders.
+- **Automatic Creation**: Generated directly from a Manufacturing Order.
+- **Manual Creation**: Single or multiple Manufacturing Orders can be copied into a Pick Receipt.
+- **Using an Existing Pick Receipt**: Multiple Manufacturing Orders can be included in a single Pick Receipt.
 
-When creating a Pick Receipt, the Items, Planned Quantity, Destination Warehouse, and Receipt Price (depending on the costing method) are copied from the Manufacturing Order.
+When creating a Pick Receipt, key details such as Items, Planned Quantity, Destination Warehouse, and Receipt Price (based on the costing method) are copied from the Manufacturing Order. If the Distribution Rule and Project are defined at the Manufacturing Order header level, they are also copied. Otherwise, they can be manually added.
 
-These are copied if Distribution Rule and Project are defined at a Manufacturing Order header level.
-
-If blank, they can be manually added.
-
-To perform the rest of the Pick Receipt to Production Goods Receipt cycle, visit this page [Pick Receipt Bin Locations and Allocations](../inventory/pick-receipt-bin-locations-and-allocations.md).
+For further details on completing the Pick Receipt to Production Goods Receipt cycle, visit [Pick Receipt Bin Locations and Allocations](../inventory/pick-receipt-bin-locations-and-allocations.md).
 
 You can check how to create Pick Receipt for and Production Goods Receipt for Items managed by Batches [here](../inventory/pick-receipt-for-a-batch-managed-items.md).
 
@@ -37,15 +37,14 @@ To view video content related to this topic, click [here](https://www.youtube.co
 
 ## Multiple Manufacturing Orders on Pick Receipt Warning
 
-Currently, you can create a Pick Receipt that contains 5 Manufacturing Orders.
+Currently, a Pick Receipt can include up to five Manufacturing Orders. While it is possible to extend this number slightly by modifying ProcessForce translations (e.g., changing Based on **Manufacturing Order** to **Based on MOR**), it is not recommended to include more than five Manufacturing Orders due to:
 
-You can extend this number to 2 or 3 more by changing the translation in ProcessForce for the message **Based on Manufacturing Order** to **Based on MOR**.
-
-We do not recommend using this function with a larger amount of Manufacturing Orders than five because:
-
-- all documents and entries for Journal Entries are done in one significant transaction; in this time production system can be locked for other users until the trade ends (processing big amount of data with the transaction),
-- if the quantity of Manufacturing Orders lines is larger, the time of execution grows logarithmically; many operations in one transaction cause this, and SAP DI API speed, in this case, is low (SAP DI API speed limitation).
+- **System Locking**: Large transactions may temporarily lock the production system, affecting other users.
+- **Execution Time**: Processing a high volume of Manufacturing Order lines increases execution time significantly due to SAP DI API speed limitations.
 
 ### Suggestion
 
-By the above, it is suggested to perform Goods Receipt individually from every Manufacturing Order level.
+To optimize performance and prevent system delays, it is recommended to process Goods Receipts individually for each Manufacturing Order. This ensures efficient transaction handling and prevents system bottlenecks.
+
+---
+The Pick Receipt function is a crucial tool for managing the receipt of production items efficiently. By following best practices, such as limiting the number of Manufacturing Orders in a single receipt and processing individual Goods Receipts, organizations can maintain smooth operations while ensuring accurate inventory management. For additional insights, explore the provided resources and video tutorials.
