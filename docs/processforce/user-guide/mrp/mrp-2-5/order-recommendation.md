@@ -4,30 +4,40 @@ sidebar_position: 4
 
 # Order Recommendation
 
-You can select MRP 2.5 – Order Recommendation from the SAP Business One menu.
+Efficient procurement planning is essential for maintaining optimal inventory levels. Order Recommendation in MRP 2.5 helps streamline this process by generating purchase and production suggestions based on demand and supply analysis. Users can access this feature through SAP Business One or the AE platform.
 
-![Order Recommendations](./media/order-recommendation/mrp-order-recommendation-01.webp)
+---
 
-Or, after logging in directly to AE, you should select the Order Recommendation tile.
+## Accessing Order Recommendation
+
+You can open MRP 2.5 – Order Recommendation from the SAP Business One menu:
+
+    ![Order Recommendations](./media/order-recommendation/mrp-order-recommendation-01.webp)
+
+    Alternatively, after logging into AE, select the Order Recommendation tile:
 
 ![Order Recommendations](./media/order-recommendation/mrp-order-recommendation-02.webp)
 
-First, the view with selection criteria for filtering recommendations is visible.
+Upon accessing the feature, a selection criteria screen is displayed for filtering recommendations:
 
-![Order Recommendations](./media/order-recommendation/mrp-order-recommendation-03.webp)
+    ![Order Recommendations](./media/order-recommendation/mrp-order-recommendation-03.webp)
 
-First, you must determine a scenario to filter the recommendation with which you want to work. For selected scenario you can determine additional recommendation's parameters for example related to Vendors and Items to narrow filtering. Then, use the button Apply Filter. Recommendations that meet the criteria appear in the table.
+To refine the recommendations, first select a scenario and apply additional parameters, such as Vendors and Items, to narrow the filtering. Once the criteria are set, click Apply Filter, and relevant recommendations will appear in the table.
 
 ![Order Recommendations](./media/order-recommendation/mrp-order-recommendation-04.webp)
 
-In this view, you can:
+In this view, users can:
 
 - change editable parameters of recommendation in the table, for example, Item Code, Base Quantity, Selected Quantity (1),
-- select recommendations for creating documents (2),
+- select recommendations to generate documents (2),
 - save recommendations (3),
 - view relationship map (4),
 - hide created lines, with 0 in Open Quantity column (5),
 - select series for documents (6).
 
-When all is ready, you should select the button Save Recommendations (3). All recommendation will be saved. For recommendation, selected (2) documents will be created with quantity from the column Selected Quantity.
-To return to the view with filtering criteria, select the icon Change filter (7).
+Once all adjustments are made, clicking Save Recommendations (3) will finalize the recommendations. Selected recommendations (2) will be converted into documents with quantities taken from the Selected Quantity column.
+
+To return to the filtering criteria view, select the Change Filter icon (7).
+
+---
+The Order Recommendation feature in MRP 2.5 provides a structured approach to managing procurement and production planning. By filtering, adjusting, and finalizing recommendations, businesses can optimize order processing, improve supply chain efficiency, and ensure seamless inventory management.

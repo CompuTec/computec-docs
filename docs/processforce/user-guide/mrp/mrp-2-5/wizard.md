@@ -4,108 +4,95 @@ sidebar_position: 3
 
 # MRP 2.5 Wizard
 
-You can select MRP 2.5 - Wizard from the SAP B1 menu.
+To access the MRP 2.5 Wizard, navigate from the SAP B1 menu or directly log in to AppEngine.
 
 ![MRP Wizard](./media/wizard/mrp-wizard-01.webp)
 
-Or, if you log in directly to AppEngine, the following tiles are visible.
+If you log in directly to AppEngine, the following tiles will be visible.
 
 :::caution
-    If you are logged in directly to AppEngine, the yellow arrows don't work.
+    The yellow arrows do not function when logged in directly to AppEngine.
 :::
 
 ![MRP Wizard](./media/wizard/mrp-wizard-02.webp)
 
-After the selection of MRP 2.5, three options are available.
+Once you select MRP 2.5, three options are available.
 
-![MRP Wizard](./media/wizard/mrp-wizard-03.webp)
+  ![MRP Wizard](./media/wizard/mrp-wizard-03.webp)
 
-After selecting the MRP 2.5 Wizard, you will see the MRP Scenarios list. From the MRP scenario list, you can:
+After selecting MRP 2.5 Wizard, the MRP Scenarios list will appear. From this list, you can:
 
-- Filter scenario according to scenario statuses: Not Ran, Processing, Completed, Failure.
+- Filter scenarios by status: Not Ran, Processing, Completed, Failure.
 - Sort Scenarios.
 - Search scenarios (by Name and Description).
 - Add scenario.
-- Select a scenario to work.
+- Select a scenario to work with.
 
-![MRP Wizard](./media/wizard/mrp-wizard-04.webp)
+  ![MRP Wizard](./media/wizard/mrp-wizard-04.webp)
 
-Scenario's data settings.
+## Scenario's Data Settings
 
-## Planning Horizon tab
+### Planning Horizon Tab
 
 ![MRP Wizard](./media/wizard/mrp-wizard-05.webp)
 
-**Scenario Name** – obligatory.
+- **Scenario Name**: required.
+- **Description**: provide a brief description of the scenario.
+- **Start Date**: required, must be equal to or later than today.
+- **End Date**: Required, must be equal to or later than the start date.
+- **Data in Period of**: choose from Days, Weeks, Months, or Hours. Quantities are summarized according to the selected period in the Results tab.
+- **Planning Horizon Length**: this is determined based on the selected period.
+- **Consider Holidays**: Select this checkbox to have MRP account for holidays and weekends defined in the Holiday Dates Window. This automatically adjusts demand and supply based on these dates, extending the lead time where necessary.
+- **Ignore Cumulative Lead Time**: if selected, Cumulative Lead Time (CLT) will not be considered in calculations.
+- **Internal Lead Time**: adds Internal Lead Time (ILT) to documents or recommendations. For more details, refer to the Item’s Planning Data (Internal Lead Time and Scope).
 
-**Description** - scenario description.
+**Display Properties**
 
-**Start Date** – obligatory. Must be >= Today
+- **Sort By**: Choose how to sort the MRP report. Options include:
 
-**End Date** – obligatory. Must be >= Start Date
+  - Assembly Sequence: Sorts the results from the highest level to the lowest level of the production Bill of Materials.
+  - Item Number: Sorts the results by the item number.
+  - Item Description: Sorts the results by the item description.
+  - Item Group: Sorts the results by the item group.
 
-**Data in Period of** - periods: Days, Weeks, Months, Hours. In the Results tab, quantities are summarized according to the selected period.
+- **Display Items with No Requirements**:  items without actual requirements after the MRP run are displayed in the tab Results. If you do not select this checkbox, MRP items without requirements or with incoming orders balancing the requirements are not displayed.
 
-**Planning Horizon Length** – depends on the selected period.
+- **Display Selected Items Only**: only the items selected in the Item Selection tab will be shown in the Results tab. This setting can be modified in the Results tab.
 
-**Consider Holidays** - Select the checkboxes to let MRP consider the holidays and weekends defined in the Holiday Dates Window. Application automatically adjusts demands and supplies that fall into specified holidays or weekends. For items that require a certain period of lead time, considering holidays and weekends increases the lead time interval for MRP calculations.
+- **Future Recommendation Summary**: the Results tab will display a column summarizing future recommendations. This setting can also be changed in the Results tab.
 
-**Ignore Cumulative Lead Time**– CLT is not considered in calculations.
+**Advanced Settings, Processing Method**:
 
-**Internal Lead Time** – ILT is added to documents/recommendations. Please see the description for the Item's Planning Data (Internal Lead Time and Internal Lead Time Scope).
+- **Asynchronous**: processes multiple BOM trees simultaneously, making the process faster. This is the recommended option.
+- **Synchronous**: Bill of Materials trees are processed one after another.
 
-<u>**Display Properties**</u>
+## Item Selection Tab
 
-**Sort By** - Select the sort criteria for the MRP report:
+The Item Selection tab allows you to add items to the scenario and edit their planning parameters. Any changes made to the parameters will not affect the master data; they are only applicable to the current scenario. To edit a parameter, select the checkbox next to its value.
 
-- Assembly Sequence: Sorts the results from the highest level to the lowest level of the production Bill of Materials.
-- Item Number: Sorts the results by the item number.
-- Item Description: Sorts the results by the item description.
-- Item Group: Sorts the results by the item group.
+  ![MRP Wizard](./media/wizard/mrp-wizard-06.webp)
 
-**Display Items with No Requirements** - items without actual requirements after the MRP run are displayed in the tab Results. If you do not select this checkbox, MRP items without requirements or with incoming orders balancing the requirements are not displayed.
+**Options**:
 
-**Display Selected Items Only** – only items selected in the tab Item Selection are displayed in the tab Results. You can change this setting in the tab Results.
+- **All Items**: includes all items that have the Planning Method set to MRP for the MRP run. When this option is selected, the application does not display items from the table below.
+- **Selected Items**: choose this option to select specific items for the MRP run. Click Add Items to open the Items List – Selection Criteria window. You can filter items by item number, group, and properties. If necessary, select the Expanded Selection Criteria checkbox to filter items further by the Preferred Vendor and UDFs defined in the Item Master Data window.
 
-**Future Recommendation Summary** – in tab Results column with future recommendation summary is displayed. You can change this setting in the tab Results.
+  ![MRP Wizard](./media/wizard/mrp-wizard-07.webp)
 
-**Advanced Settings, Processing Method:**
-
-- **Asynchronous** – several Bill of Materials trees can be processed simultaneously (making it faster). This option is recommended.
-- **Synchronous** – Bill of Materials trees are processed one after another.
-
-## Item Selection tab
-
-This tab is designated to add items to the scenario. For added items, it is possible to edit planning parameters. Edited and saved parameters wouldn't modify values in master data. It is obligatory only for the current scenario. To edit parameters, please select the checkbox by the parameter value.
-
-![MRP Wizard](./media/wizard/mrp-wizard-06.webp)
-
-**All Items** – includes all items with the Planning Method of MRP in the MRP run. When you select this radio button, the application does not display items chosen in the table below.
-
-**Selected Items** – Select items to be included in the MRP run. Choose Add Items to open the Items List — Selection Criteria window. You can filter items by item number, group, and properties. If required, select the Expanded Selection criteria checkbox; you can then further filter items by the Preferred Vendor and UDFs defined in the Item Master Data window.
-
-![MRP Wizard](./media/wizard/mrp-wizard-07.webp)
-
-**Include Revision** – if selected, MRP works accurately to Item's revisions. Planning data for revisions are read from Item Details. If not selected, Planning Data are read from Item Master Data.
-
-**Remove Selected Items** - Removes all selected items.
-
-**Remove All Items** - Removes all items.
-
-**Active/Deactivate All** – Active or deactivate all the items displayed in the table.
+- **Include Revision**: if selected, MRP will consider the item's revisions. Planning data for revisions will be taken from the Item Details. If not selected, the planning data will be read from the Item Master Data.
+- **Remove Selected Items**: removes all selected items from the scenario.
+- **Remove All Items**: removes all items from the scenario.
+- **Active/Deactivate All**: activates or deactivates all items displayed in the table.
 
   **Notes:**
-    1. If you have added an item and then deactivated it in an MRP run, the next time you run this scenario, you can still see the deactivated item displayed in the table. You can include this item in the MRP run by activating it. If you removed this item from an MRP run, the next time you run this scenario, you cannot view it in the table of the selected items. If you want to include it in the MRP run, you must add it again.
-    2. It is possible to edit planning parameters for the Item. To do this, please select the checkbox by the parameter. The edited value is valid only for the scenario.
-    3. To plan primary demands for coproducts and scraps, they must have Procurement Method = Make (without BOM) and be listed and active on the item list. MOR recommendations for the produced item will be proposed to cover demands for coproducts and scraps. If there is more than one BOM with the coproduct or scrap, a more effective BOM will be chosen.
+    1. If you add an item and later deactivate it in an MRP run, it will still appear in the table the next time the scenario is run. To include the deactivated item in the next MRP run, simply activate it. However, if you remove the item from the MRP run, it will not appear in the list the next time the scenario is executed. You must add the item again to include it.
+    2. Planning parameters for individual items can be edited by selecting the checkbox next to the respective parameter. The edited values are valid only for the current scenario.
+    3. To plan primary demands for coproducts and scraps, the procurement method must be set to "Make" (without BOM), and the items must be listed and active in the item list. The system will propose MOR recommendations for the produced items to cover the demands for coproducts and scraps. If multiple BOMs exist for coproducts or scraps, the most efficient BOM will be selected.
 
-**Default Vendor** - click [here](/docs/processforce/user-guide/mrp/mrp-2-5/vendors-lead-times/) to find out more.
-
-**Custom Vendor Lead Time** - click [here](/docs/processforce/user-guide/mrp/mrp-2-5/vendors-lead-times/) to find out more.
-
-**Custom Vendor Internal Lead Time** - click [here](/docs/processforce/user-guide/mrp/mrp-2-5/vendors-lead-times/) to find out more.
-
-**Vendor Selection Strategy** - now the Default Vendor strategy is implemented. When a recommendation is preparing all planned quantities are assigned to the default vendor. Also, seeking rules for Lead Time is performed according to the default Vendor selected in the Preferred Vendors list (Item Master Data/Purchasing Data tab).
+- **Default Vendor** - click [here](/docs/processforce/user-guide/mrp/mrp-2-5/vendors-lead-times/) to find out more.
+- **Custom Vendor Lead Time**: click [here](/docs/processforce/user-guide/mrp/mrp-2-5/vendors-lead-times/) to find out more.
+- **Custom Vendor Internal Lead Time**: click [here](/docs/processforce/user-guide/mrp/mrp-2-5/vendors-lead-times/) to find out more.
+- **Vendor Selection Strategy**: the Default Vendor strategy is currently implemented. When preparing a recommendation, all planned quantities are assigned to the default vendor. Additionally, lead time rules are applied based on the default vendor selected in the Preferred Vendors list (Item Master Data > Purchasing Data tab).
 
 ## Inventory Data tab
 
