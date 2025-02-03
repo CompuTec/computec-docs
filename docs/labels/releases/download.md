@@ -16,6 +16,7 @@ These versions require [CompuTec License Server in 5.10.1.1 version](/docs/proce
 
 |Version|Platform|Download Link| Notes |
 |---|---|---| --- |
+| 4.7.1.137 | x64| [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.137_x64.msi)| - |
 | 4.7.1.135 | x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.135_x64.msi) | This version is fully compatible with .NET Core 3.0. <br/>Maintains full compatibility with previous systems |
 |4.7.1.134|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.134_x64.msi)| - |
 |4.7.1.131|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.131_x64.msi)| - |

@@ -4,31 +4,42 @@ sidebar_position: 5
 
 # Debug Mode
 
-When you have doubts that the scenario results are correct, please report the problem in a ticket on Computer Support. To document tickets, please use debug mode.
+When encountering discrepancies in scenario results, it is essential to document and report the issue effectively. Debug mode provides a way to capture detailed information, making it easier for support teams to analyze and resolve problems. By enabling debug mode, users can extract relevant data and attach it to a support ticket for troubleshooting.
 
-To turn on debug mode, please add the address line:
+---
+
+If you suspect that the scenario results are incorrect, please report the issue by submitting a ticket to Computer Support. When documenting tickets, be sure to use debug mode.
+
+To turn on the debug mode, please add the address line:
 `http://localhost:54000/webcontent/launchpad/webapp/Index.html?aedebug=true` and Enter.
 
-You can recognize that you are in debug mode by:
-Load icon over the list of scenarios (designated for CompuTec) and Download icon above the scenario (designated for you):
+Once debug mode is active, you can recognize it through:
+
+- A Load icon over the list of scenarios (for CompuTec).
+- A Download icon above the scenario (for user access).
 
 ![Load](./media/debug-mode/load.webp)
 
-How to use debug mode?
+## Steps to Use Debug Mode
 
 1. Switch the debug mode on.
-2. Run scenario.
-3. Open the Recommendation tab and enter correct data in place of wrong data:
+2. Run the scenario.
+3. Open the Recommendation tab and enter the correct data in place of incorrect data:
 
     ![Connections](./media/debug-mode/corrections.webp)
   
-4. Select the Download icon. JSON is downloaded to your disc.
-5. Attach the file to a ticket on the Computec support website. Add necessary information and optionally, screenshots.
-6. When you finish, exit from debug mode.
+4. Select the Download icon to save the JSON file.
+5. Attach the JSON file to a support ticket on the CompuTec support website. Provide necessary details, including screenshots if applicable.
+6. Exit debug mode once the issue is documented.
 
-To turn off debug mode, replace "true" with "false" in the address line:
+## Diasbling Debug Mode
 
-- Before: `http://localhost:54000/webcontent/launchpad/webapp/Index.html?aedebug=true#/plugin/computec.appengine.MRP&home`
-- After: `http://localhost:54000/webcontent/launchpad/webapp/Index.html?aedebug=false#/plugin/computec.appengine.MRP&home`
+To turn off debug mode, change "true" to "false" in the address line:
+
+- **Before**: `http://localhost:54000/webcontent/launchpad/webapp/Index.html?aedebug=true#/plugin/computec.appengine.MRP&home`
+- **After**: `http://localhost:54000/webcontent/launchpad/webapp/Index.html?aedebug=false#/plugin/computec.appengine.MRP&home`
 
 and approve.
+
+---
+Using debug mode ensures accurate documentation of issues, making it easier for support teams to diagnose and resolve errors efficiently. By following the steps outlined above, users can streamline the troubleshooting process and minimize disruptions in their workflow.
