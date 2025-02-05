@@ -13,6 +13,8 @@ The CompuTec Web Client Start is an essential tool for integrating plugins and e
 To manually install and activate CompuTec Web Client Start, follow these steps:
 
 1. Download the CompuTec Web Client Start Installation Pack from Administration Panel -> System.
+
+    ![CompuTec Web Client Start Installation Pack](./media/working-with-sap-business-one-web-client/ct-web-client-start-install-pack.webp)
 2. Access the Extension Manager by navigating to `https://sqlsap10:40000/ExtensionManager/.`
 3. Install the downloaded Installation Pack into the Extension Manager
 4. Activate CompuTec Web Client Start for the selected company.
@@ -27,8 +29,14 @@ The Plugins Pack is a collection of plugins that can be installed based on the a
 **Steps to install the Plugins Pack**:
 
 1. Log into the AppEngine Administration Panel.
+
+    ![Admin Login](./media/working-with-sap-business-one-web-client/admin-login.webp)
 2. Navigate to configuration, then select Company Details by clicking on the respective company.
+
+    ![Company Details](./media/working-with-sap-business-one-web-client/company-details.webp)
 3. Click "Install WebClient Extension Package".
+
+    ![Install WebClient Extension Package](./media/working-with-sap-business-one-web-client/install-web-client-extn.webp)
 4. After activating a new plugin for a company, remember to repeat this process to install the new plugins pack for that company.
 
 ## Configuring CORS Settings
