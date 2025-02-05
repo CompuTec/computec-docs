@@ -4,52 +4,43 @@ sidebar_position: 8
 
 # Working with SAP Business One Web Client
 
-Here, you can find information about configuration for using AppEngine plugins within SAP Business One Web Client.
+The CompuTec Web Client Start is an essential tool for integrating plugins and extending the functionality of the SAP Business One Web Client. It enables seamless interaction between AppEngine plugins and SAP Business One solutions, offering users enhanced capabilities for managing their ERP system. This tool is installed during company activation.
 
 ---
 
-## Configuration
+## Manual Activation via Extension Manager
 
-### External Host Address
+To manually install and activate CompuTec Web Client Start, follow these steps:
 
-:::info Path
-    Administration Panel → Settings → General → Hosting → HttpsPorts
-:::
+1. Download the CompuTec Web Client Start Installation Pack from Administration Panel -> System.
+2. Access the Extension Manager by navigating to `https://sqlsap10:40000/ExtensionManager/.`
+3. Install the downloaded Installation Pack into the Extension Manager
+4. Activate CompuTec Web Client Start for the selected company.
+5. Follow the on-screen instructions to complete the activation process.
 
-This address directs the Web Client to the AppEngine installation and must be an HTTPS address. By default, the address is set to localhost with the default port. If the address is different from localhost, it must be updated accordingly.
+>**Note**: Ensure you have the necessary permissions to securely access the Extension Manager.
 
-![External Host](./media/working-with-sap-business-one-web-client/external-host-address.webp)
+## Plugins Pack Installation
 
-It is also necessary to direct the Web Client to the AppEngine installation. This address is stored in an AppEngine configuration table within a database. To update this address, you need to activate a Company or deactivate and reactivate it if the AppEngine installation has been upgraded to version 2.0.7.0 (SLD Servers → Companies).
+The Plugins Pack is a collection of plugins that can be installed based on the activated plugins at the company level. This feature ensures centralized management and deployment across desired environments.
 
-![Activate Database](./media/working-with-sap-business-one-web-client/ae-activate-database.webp)
+**Steps to install the Plugins Pack**:
 
-## Installation Package
+1. Log into the AppEngine Administration Panel.
+2. Navigate to configuration, then select Company Details by clicking on the respective company.
+3. Click "Install WebClient Extension Package".
+4. After activating a new plugin for a company, remember to repeat this process to install the new plugins pack for that company.
 
-### Download
+## Configuring CORS Settings
 
-First, you must download an installation package for all the plugins activated for a specific company. To do this, go to Administration Panel → Plugins and click the Download SAP WebClient Extension button in the window's upper-right corner. Now, choose a required company.
+To enable proper functionality of the Web Client, especially for embedded frames and cross-domain requests, you need to configure CORS (Cross-Origin Resource Sharing) settings in SAP Web Client. Correct CORS configuration prevents security issues and ensures smooth integration.
+For detailed guidance, refer to the official SAP Help Portal: [Configuring CORS Settings for SAP Business One Web Client](https://help.sap.com/docs/SAP_BUSINESS_ONE_WEB_CLIENT/e6ac71d18c7543828bd4463f77d67ff7/1acda7a66c434b4e9dbc3b1f8ae21d6e.html)
 
-![Plugins](./media/working-with-sap-business-one-web-client/plugins.webp)
+**Key steps for configuring CORS**:
 
-Clicking it causes an installer to download, in this example: computec_appengine_webclient_plugins_PFDEMOGB_PIOTRK_0_0_1.mtar.
+1. Identify the domains that requires access to the Web Client.
+2. Update the configuration file with the approved domains.
+3. Test the integration to ensure everything functions correctly.
 
-![Plugins](./media/working-with-sap-business-one-web-client/plugins-2.webp)
-
-### Upload
-
-Use SAP Business One Extension Manager to load the installation package:
-
-![Extension Manager](./media/working-with-sap-business-one-web-client/extension-manager.webp)
-
-![Successfull Extension Update](./media/working-with-sap-business-one-web-client/successful-extention-update.webp)
-
-### SAP Business One Extension Manager
-
-Choose one of the extensions:
-
-![Extension](./media/working-with-sap-business-one-web-client/extensions.webp)
-
-Log in using SAP Business User ID. A plugin is now available in SAP Business One Web Client.
-
-![Web Client](./media/working-with-sap-business-one-web-client/web-client.webp)
+---
+By following these guidelines, you can efficiently configure and manage the CompuTec Web Client Start and its associated plugins, ensuring seamless operation of your SAP Business One system. If you need further assistance, feel free to reach out!

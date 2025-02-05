@@ -4,23 +4,23 @@ sidebar_position: 1
 
 # Overview
 
-ProcessForce provides an MRP (Material Requirements Planning) function using its SAP Business One features.
+ProcessForce enhances Material Requirements Planning (MRP) in SAP Business One, leveraging its built-in features for seamless production planning and order management.
 
 :::warning
-    Please set up Direct Data Access mode if you experience a long response time on opening MRP Wizard when ProcessForce is enabled. The problem may occur when there are many Item Master Data records in the system.
+    If you experience delays when opening the MRP Wizard with ProcessForce enabled, consider setting up Direct Data Access mode. This can improve response time, especially in systems with a large number of Item Master Data records.
 
     Click [here](../../administrator-guide/licensing/license-server/direct-access.md) to learn how to set up Direct Access mode for a specific database.
 :::
 
+---
+
 ## Introduction
 
-ProcessForce uses the SAP Business One MRP Wizard and Order Recommendation forms.
+ProcessForce integrates with the SAP Business One MRP Wizard and Order Recommendation forms, maintaining familiar workflows while adding advanced manufacturing functionality.
 
-When running MRP and using the Order Recommendation form, operate them like you would using just SAP Business One.
-
-At the stage of Order Recommendation, when creating Production Orders, the function creates ProcessForce Manufacturing Orders.
-
-Schedule Manufacturing Orders based on backward scheduling from the required due date calculated by MRP.
+- The MRP Wizard runs as it would in SAP Business One.
+- The Order Recommendation form enables the creation of ProcessForce Manufacturing Orders.
+- Manufacturing Orders are scheduled using backward scheduling, ensuring production aligns with required due dates.
 
 ## Configuration
 
@@ -36,10 +36,10 @@ To see configuration details, visit the [Enable Synchronization](/docs/processfo
 
   ![Order Recommendation](./media/overview/order-recommendation.png)
 - Select which Production Order to create
-- Press Update button
+- Press "Update" button
 
   ![Order Recommendation Update](./media/overview/order-recommendation-update.png)
-- System message displays the number of created orders
+- The system displays a confirmation message with the number of orders created.
 
   ![System Message](./media/overview/system-message.png)
 - A report listing all documents created using the Order Recommendation option is displayed at the end of the document creation
@@ -50,3 +50,6 @@ To see configuration details, visit the [Enable Synchronization](/docs/processfo
   - Scheduled Backwards from the Required Date
   
   ![Manufacturing Order](./media/overview/manufacturing-order.png)
+
+---
+By integrating ProcessForce with SAP Business One MRP, businesses can enhance production planning, optimize manufacturing workflows, and improve overall efficiency.
