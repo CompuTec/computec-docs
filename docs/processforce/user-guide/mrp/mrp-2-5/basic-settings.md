@@ -4,22 +4,31 @@ sidebar_position: 1
 
 # Basic Settings
 
-To enable the MRP 2.5 function in the SAP Business One menu, you have to allow AppEngine. It enables integration between the SAP Business One client and AppEngine to see AppEngine plugins inside SAP Business One. The Form and Web Browser option will allow you to work with MRP inside SAP Business One (Form) and in Web Browser. Web browser means the application will open in a separate browser window outside SAP Business One.
-Note: in the Web browser mode, yellow arrows do not work.
+MRP 2.5 in SAP Business One brings enhanced Material Requirements Planning (MRP) capabilities, enabling businesses to optimize procurement, production, and inventory management. This upgraded version introduces advanced forecasting, improved stock visibility, and flexible procurement settings tailored for efficient resource planning.
+This guide covers the essential basic settings required to activate and configure MRP 2.5, ensuring a streamlined approach to demand forecasting, procurement, and production planning.
 
-![Enable](./media/basic-settings/mrp-enable.webp)
+---
 
-Then, you will see the following option in the MRP menu.
+To activate the MRP 2.5 function in the SAP Business One menu, you need to enable AppEngine. This integration allows SAP Business One to display AppEngine plugins within the application.
+
+You can access MRP 2.5 in two modes:
+
+- **Form Mode**: works directly inside SAP Business One.
+- **Web Browser Mode**: opens the application in a separate browser window. (Note: Yellow arrows are not functional in this mode.)
+
+  ![Enable](./media/basic-settings/mrp-enable.webp)
+
+Once enabled, the MRP menu will display additional options:
 
 ![Menus](./media/basic-settings/mrp-menu.webp)
 
 ## Forecasts 2.5
 
-To prepare forecasts for MRP 2.5, use Forecast 2.5. This form is like the old Forecast but with the possibility to define a forecast per Item/Revision.
+To generate forecasts for MRP 2.5, use Forecast 2.5, which allows defining forecasts per Item/Revision.
 
 ![Forecasts](./media/basic-settings/forecasts-1.webp)
 
-You can use the Create Forecast button to add many forecast lines according to the selection criteria.
+Use the Create Forecast button to quickly add multiple forecast lines based on selection criteria.
 
 ![Forecasts](./media/basic-settings/forecasts-2.webp)
 
@@ -27,29 +36,26 @@ You can use the Create Forecast button to add many forecast lines according to t
 
 ![General Settings](./media/basic-settings/mrp-general-settings.webp)
 
-In MRP 2.5, these settings are used as default. Consumption Method Days Backward/Forward can be modified per scenario. Consume Forecast is a global parameter determined by default settings in sales documents lines, column Consume Forecast.
+The General Settings define default parameters for MRP 2.5.
 
-![Sales Order](./media/basic-settings/mrp-sales-order.webp)
+- **Consumption Method**: Days Backward/Forward: Can be adjusted per scenario.
+- **Consume Forecast**: A global setting that determines forecast consumption in sales document lines under the Consume Forecast column.
+
+  ![Sales Order](./media/basic-settings/mrp-sales-order.webp)
 
 ## Item/Revision Planning Data
 
-Planning data are defined in Item Master Data and separately for Item Revision in Item Details.
+Planning data is defined in the Item Master Data and separately for each Item Revision under Item Details.
 
 ![Item Master Data](./media/basic-settings/mrp-item-master-data.webp)
 
-**Planning Method** – MRP works like the standard SAP Business One.
-
-**Procurement Method** – Make, Buy works like the standard SAP Business One.
-
-**Component Warehouse** – From the Bill of Materials Line, From the Parent Item Document Line, it works like in the standard version.
-
-**Order Interval** – Select one of the defined intervals or select Define New to open the Order Interval - Setup window. In MRP calculations, the application automatically groups the recommended orders into interval periods and arranges orders within the same period into the first working day of that period.
-
-**Checking Rule** – not ready for tests.
-
-**Tolerance Days** – not ready for tests
-
-**Lead Time (LT)** – Enter the number of days from when the item is ordered to when the item is received or produced.
+- **Planning Method**: functions similarly to standard SAP Business One MRP.
+- **Procurement Method**: supports both Make and Buy, working as in standard SAP Business One.
+- **Component Warehouse**: Can be determined from the Bill of Materials (BOM) Line or Parent Item Document Line, similar to the standard version.
+- **Order Interval**: choose from predefined intervals or create a custom interval using the Order Interval - Setup window. The system groups recommended orders into defined periods, scheduling them on the first working day within that period.
+- **Checking Rule**: not ready for tests.
+- **Tolerance Days**: not ready for tests
+- **Lead Time (LT)**: enter the number of days from when the item is ordered to when the item is received or produced.
 
 ### Example
 
@@ -97,34 +103,31 @@ Procurement MethodILT ScopeOutcome1aMakeSaleILT added to Sales document1bMakePur
         - only to Purchase Order If it is an Item not ordered by a customer.
         - Purchase Order and Sales Order If it is an Item ordered by a customer. Thus, Internal Lead Time will be doubled.
 
-**Note**: The sum of Lead Time and Internal Lead Time determines when the Item is available for the following activities, such as production or sale.
+>**Note**: The sum of Lead Time and Internal Lead Time determines item availability for subsequent activities like production or sale.
 
-**Order Multiple** – recommendation quantity is rounded up to the multiplication of Order Multiply.
+**Order Quantity Considerations**:
 
-**Minimum Order Qty** – Upgrade the recommendation quantity to the defined quantity. Suppose Minimum Order Qty < Order Quantity Order Multiple is used.
+- **Order Multiple**: order recommendations are rounded up to the nearest multiple of the defined value.
+- **Minimum Order Qty**: if the recommended quantity is below this threshold, it is adjusted accordingly.
+- **Maximum Order Qty**: When demand exceeds the defined maximum, the system creates multiple recommendations equal to the Maximum Order Quantity. The remainder is adjusted using the Minimum Order Quantity.
 
-**Maximum Order Qty** – Demand quantity is divided by the defined Maximum Order Qty to calculate a number of recommendations with quantity equal to Maximum Order Qty. The rest of the division is upgraded to the Minimum Order Quantity. If the rest > Minimum Order Quantity Order Multiple is used.
+>**Note**: Maximum Order Should be used with Minimum Order Quantity.
 
-**Note**: Maximum Order Should be used with Minimum Order Quantity.
-Examples of order Qty calculations:
+<u>**Examples of order Qty calculations**</u>:
 
 **Example 1**
 
 <i>**Parameters**</i>:
 
-Order Quantity = 103
-
-Order Multiple = 3
-
-Minimum Order Qty = 5
-
-Maximum Order Qty = 10
+- Order Quantity = 103
+- Order Multiple = 3
+- Minimum Order Qty = 5
+- Maximum Order Qty = 10
 
 <i>**Outcome**</i>:
 
-The first ten recommendations with quantity 10
-
-Rest of division = 3 (Order Quantity/Maximum Order Qty)
+- 10 recommendations with a quantity of 10 each.
+- Rest of division = 3 (Order Quantity/Maximum Order Qty)
 
 Last (11) recommendation with quantity 5 (effect of Minimum Oder Quantity, Rest of division < Minimum Order Qty)
 
@@ -132,20 +135,20 @@ Last (11) recommendation with quantity 5 (effect of Minimum Oder Quantity, Rest 
 
 <i>**Parameters**</i>:
 
-Minimum Order Qty = 2 (other parameters unchanged)
+- Minimum Order Qty = 2 (other parameters unchanged)
 
 <i>**Outcome**</i>:
 
-The first ten recommendations with quantity 10
-
-Rest of division = 3 (Order Quantity/Maximum Order Qty)
+- The first ten recommendations with quantity 10
+- Rest of division = 3 (Order Quantity/Maximum Order Qty)
 
 Last (11) recommendation with quantity 6 (effect of Order Multiply, Rest of division < Minimum Order Qty)
 
 ## Item/Revision Stock Data
 
-For Items managed by Batches, Serial Numbers in Item Details are visible stock information with accuracy to revision.
-
-In MRP 2.5, you can work with Inventory Level parameters per revision and per Item.
+For batch-managed and serial-numbered items, MRP 2.5 provides enhanced visibility into stock levels. Inventory level parameters can be managed per revision and per item, allowing businesses to maintain precise inventory control.
 
 ![Example](./media/basic-settings/mrp-2-5-example.webp)
+
+---
+MRP 2.5 in SAP Business One introduces significant improvements in procurement and planning management, enabling businesses to optimize their supply chain processes. Proper configuration of MRP 2.5 ensures better demand forecasting, improved inventory management, and streamlined procurement processes, making it an invaluable tool for businesses looking to enhance their resource planning capabilities.
