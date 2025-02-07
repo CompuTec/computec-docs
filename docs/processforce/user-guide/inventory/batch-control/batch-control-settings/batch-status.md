@@ -4,17 +4,24 @@ sidebar_position: 3
 
 # Batch Status
 
+Batch status indicators help users quickly identify the condition of batches within the Pick Order process. By using color-coded records, SAP Business One provides clear visual cues on batch availability, expiry, and accessibility, ensuring efficient inventory management and reducing errors in batch selection.
+
+---
+
 ## Batch Record Colors
 
-Within Pick Order, the Batch records are displayed in different colors to provide their status information:
+In the Pick Order screen, batch records are displayed in different colors based on their status:
 
-- Red – Expiry date has passed.
-- Blue – Warning Expiry Date has passed.
-- Black – both the Expiry date and Warning Date have not been reached.
-- Grey – Locked and Non Accessible Batch set to DISPLAY based on [configuration settings](./manual-and-backflush-issue-type-configuration.md); Batch records are displayed but cannot be picked.
+- **Red**: the expiry date has passed.
+- **Blue**: the warning Expiry Date has passed.
+- **Black**: neither the expiry date nor the warning date has been reached.
+- **Grey**: the batch is locked or non-accessible, set to DISPLAY based on [configuration settings](./manual-and-backflush-issue-type-configuration.md); these records are visible but cannot be picked.
 
 ![Available Batches](./media/batch-status/available-batches.webp)
 
 ## SAP Business One Documents
 
 The Batch color rules (apart from Grey) have been implemented within Delivery, Goods Return, Inventory Transfer, and Goods Issue documents.
+
+---
+The batch status color-coding system in SAP Business One enhances inventory visibility and helps prevent errors in batch selection. By incorporating these status indicators into key documents, businesses can improve traceability, optimize stock utilization, and streamline warehouse operations.

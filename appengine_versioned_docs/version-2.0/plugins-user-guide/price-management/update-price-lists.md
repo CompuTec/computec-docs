@@ -77,7 +77,7 @@ Once the data is loaded, the document becomes more comprehensive as it now inclu
 
 ## Editing the Document
 
-When editing a document, we have the option to delete specific rows. To do this, simply select the row(s) you wish to remove and click the "Delete Positions" button. Multiple rows can be deleted simultaneously.
+When editing a document, we have the option to delete specific rows. To do this, simply select the row(s) you wish to remove and click the "Delete" button. Multiple rows can be deleted simultaneously.
 
     ![Edit Doc](./media/edit-doc.jpg)
 
@@ -89,7 +89,7 @@ At this stage, prices can also be modified, depending on the plugin's configurat
 
     ![Edit Doc](./media/edit-doc-02.png)
 
-which may be "Pending" or "Error" for document that is in the process of being created. Pending items are still being worked on, and errors may arise during the import of individual items. Since the document is still in progress, no items can be sent to SAP at this stage, meaning no item will have a "Done" status.
+which may be "Pending" or "Error" for document that is in the process of being created. Pending items are still being worked on and errors may arise during the import of individual items. Since the document is still in progress, no items can be sent to SAP at this stage, meaning no item will have a "Done" status.
 
     ![Edit Doc](./media/edit-doc-03.png)
 
@@ -109,7 +109,7 @@ The list also shows the percentage difference between the current price and the 
 
 Once editing is complete and the document is ready - meaning the data is finalized and can be sent to SAP Business One - click the "Confirm New Prices" button.
 
-    ![Price Approval](./media/price-approval.png)
+    ![Price Approval](./media/price-approval.jpg)
 
 This action updates the document status to "To Complete" and grays out certain data fields, indicating they are no longer editable.
 
@@ -121,7 +121,7 @@ Data from a document with the "To Complete" status will be transmitted to SAP Bu
 
 To reverse the price changes before processing starts, simply click the "Cancel Changes" button to withdraw the document.
 
-    ![Reverse Price Changes](./media/reverse-price-changes.png)
+    ![Reverse Price Changes](./media/reverse-price-changes.jpg)
 
 ## Deleting the Document
 

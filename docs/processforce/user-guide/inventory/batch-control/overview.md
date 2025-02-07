@@ -4,16 +4,19 @@ sidebar_position: 1
 
 # Overview
 
-Batches are groups of the same products. Batches are a base for traceability – a function that allows tracking down a specific raw material on every level of production and a product in later distribution, which can be used, e.g., in a fast and easy recall process. Batches functionality allows tracing a whole track that a specific product passed.
+Batches are collections of identical products and serve as the foundation for traceability. This functionality enables tracking raw materials at every stage of production and monitoring products during distribution. Traceability is essential for ensuring quality control and facilitating swift recall processes when necessary.
 
 ---
 
-The SAP Business One Batch Details form and the ProcessForce Batch Master Data form have been consolidated into a single form. Navigation from all SAP Business One and ProcessForce documents and reports will open this new form.
+The SAP Business One Batch Details form and the ProcessForce Batch Master Data form have now been merged into a single, unified interface. All relevant SAP Business One and ProcessForce documents and reports will navigate to this consolidated form for improved efficiency.
 
-**Note**: when adding User-Defined Fields to the SAP Business One Batch Details Table, the same User-Defined Fields (name and format, etc.) need to be added to the ProcessForce Additional Batch Tables.
+>**Note**: When adding User-Defined Fields (UDFs) to the SAP Business One Batch Details Table, ensure that the same UDFs (with identical names and formats) are also added to the ProcessForce Additional Batch Tables.
 
 :::info Path
 Inventory → Item Management → Batches
 :::
 
 ![Batch Master Data](./media/overview/batch-master-data-general.webp)
+
+---
+The integration of batch management forms in SAP Business One and ProcessForce streamlines data accessibility, enhances traceability, and ensures consistency in batch-related operations. Proper configuration of User-Defined Fields across both systems will further optimize batch tracking and compliance processes.

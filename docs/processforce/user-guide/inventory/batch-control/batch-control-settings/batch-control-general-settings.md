@@ -4,11 +4,11 @@ sidebar_position: 2
 
 # Batch Control General Settings
 
-Batch settings cover different batch-related functions, e.g., default batch status for different kinds of documents or Batch Templates. The settings can be set for three different levels, depending on the range of influence that a user wants to cover:
+Batch control settings define various batch-related functions, such as default batch statuses for different document types and batch templates. These settings provide flexibility and control over batch management and can be configured at three levels, depending on the scope of influence a user wants to apply:
 
-- General Settings
-- Item Group
-- Item Details
+- **General Settings**: applies system-wide to all new batches.
+- **Item Group Settings**: applies to specific item groups unless overridden.
+- **Item Details Settings**: applies to individual items when customized.
 
 Click [here](/docs/processforce/user-guide/system-initialization/general-settings/inventory-tab/) to check detailed information about Batch configuration (based on the example of General Settings).
 
@@ -18,7 +18,7 @@ Click [here](/docs/processforce/user-guide/system-initialization/general-setting
 
 ## General Settings
 
-Settings on this level are applied to any new Batches created. Click [here](/docs/processforce/user-guide/system-initialization/general-settings/inventory-tab/) to find out more about these settings.
+These settings apply globally to all newly created batches. Click [here](/docs/processforce/user-guide/system-initialization/general-settings/inventory-tab/) to find out more about these settings.
 
 :::info Path
     Administration → System Initialization → General Settings → ProcessForce tab → Inventory tab
@@ -26,7 +26,7 @@ Settings on this level are applied to any new Batches created. Click [here](/doc
 
 ## Item Groups Settings
 
-If the Inherit from General Settings checkbox are unchecked, settings on this level are applied only to a specific Item Group.
+If the Inherit from General Settings checkbox is unchecked, the settings defined at this level will apply only to the specific item group. This allows for more granular control over batch management within different product categories.
 
 :::info Path
     Administration → Setup → Inventory → Item Groups
@@ -34,8 +34,11 @@ If the Inherit from General Settings checkbox are unchecked, settings on this le
 
 ## Item Details Settings
 
-If the Inherit from Item Group checkbox is unchecked, settings on this level are applied only to a specific Item.
+If the Inherit from Item Group checkbox is unchecked, the batch settings will apply only to the individual item. This level provides the highest level of customization, allowing specific batch control rules for selected products.
 
 :::info Path
     Inventory → Item Details → Batches tab
 :::
+
+---
+Batch control settings offer a structured and hierarchical approach to managing batch-related functions in SAP Business One. By configuring these settings at the appropriate level - general, item group, or individual item - users can ensure consistent, efficient, and tailored batch management to meet their business needs. Proper configuration enhances traceability, compliance, and operational efficiency.
