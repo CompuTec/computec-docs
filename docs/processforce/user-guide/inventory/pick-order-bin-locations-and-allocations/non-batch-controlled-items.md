@@ -25,6 +25,12 @@ Select from the context menu, Issues and Receipts, Issue to Production.
 
 ## Production Goods Issue
 
-Select from the context menu: Production Goods Issue. Click add to confirm the Production Goods Issue.
+To complete the transaction:
 
-This will remove the Items from the Warehouse and Issue to Work in Progress and create the corresponding financial journal.
+1. Open the context menu and select Production Goods Issue.
+2. Click add to confirm the Production Goods Issue.
+
+This action removes the items from the warehouse, issues them to Work in Progress (WIP), and generates the corresponding financial journal entry.
+
+---
+Proper bin location allocation for Non-Batch Controlled Items ensures efficient inventory flow in production processes. Using manual selection or automatic allocation optimizes warehouse operations while maintaining accurate stock records.

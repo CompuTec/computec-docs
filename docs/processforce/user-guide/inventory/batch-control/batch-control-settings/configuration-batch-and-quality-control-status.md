@@ -4,9 +4,13 @@ sidebar_position: 4
 
 # Configuration Batch and Quality Control Status
 
+Managing batch and quality control status is crucial in SAP to ensure accurate tracking and compliance across various receipt documents. The configuration allows businesses to define default Batch and Quality Control (QC) statuses during the receipt process, improving efficiency and consistency. While batch statuses impact inventory and operations, QC statuses provide additional insights for informational purposes.
+
+---
+
 ## SAP Receipt Documents
 
-The setting affects the following document types:
+The batch and QC status settings affect the following document types:
 
 - Goods Receipt PO
 - Goods Receipt
@@ -22,18 +26,18 @@ The Quality Control status provides additional details to record the quality sta
 ---
 
 :::info
-    Please note that Batches will take their default status from the setting only when a Batch is generated. The settings do not apply to Batches created manually.
+    Default batch statuses are applied only when a batch is system-generated. These settings do not affect manually created batches.  
 :::
 
 ![General Settings](./media/configuration-batch-and-quality-control-status/general-settings-batch.webp)
 
-The default values are displayed within the Batches Setup and in the Batch Number Transaction Report window (along with QC statuses):
+The predefined batch and quality control statuses are visible in the Batches Setup and the Batch Number Transaction Report:
 
 ![QC Status](./media/configuration-batch-and-quality-control-status/qc-status.webp)
 
-When opening the Batch Number Transaction Report the Batch and QC status are displayed.
+Upon opening the Batch Number Transaction Report, both the batch and QC statuses are displayed.
 
-The yellow arrow in Batch Number Transaction Report navigates to the Batch Master Data form, and the Batch Status is displayed within the header, while the Quality Control Status is shown in the new Quality Control Tab.
+The yellow arrow in the report allows navigation to the Batch Master Data form, where the Batch Status is shown in the header, and the Quality Control Status appears in the new Quality Control tab.
 
 ![Batch status](./media/configuration-batch-and-quality-control-status/batch-status.webp)
 
@@ -46,3 +50,6 @@ The following receipt documents are supported:
 As per the above, the same rules apply.
 
 ![Batch and Quality status](./media/configuration-batch-and-quality-control-status/batch-quality-status.webp)
+
+---
+Configuring batch and quality control statuses streamlines inventory management and enhances transparency across SAP receipt documents. By defining default statuses during batch creation, businesses can ensure compliance, improve traceability, and make informed decisions based on QC insights.

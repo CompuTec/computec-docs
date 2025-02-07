@@ -85,6 +85,9 @@ The following formula allows an Expiry Date of a Finished Item equal to the earl
      AND T1."U_OperType" = '60'
     ```
 
-An example of the result of using this formula is presented in a screenshot below:
+An example result of this formula is shown below:
 
 ![Item Child Expiry Date](./media/extended-batch-expiry-evaluation/item-child-expiry-date.webp)
+
+---
+The Extended Batch Expiry Evaluation feature in SAP helps businesses optimize inventory control by ensuring batches are consumed within their shelf life. By leveraging Expiry Evaluation Templates and predefined expiry rules, organizations can enhance compliance, reduce waste, and maintain product integrity. Implementing automated alerts for expiry and inspection further streamlines quality control and ensures timely action.
