@@ -4,15 +4,17 @@ sidebar_position: 6
 
 # Manual and Backflush Issue type Configuration
 
+In inventory management, configuring issue types correctly ensures smooth material handling in production and warehouse operations. This document outlines the behavior of different issue types—Manual and Backflush—detailing how they impact batch selection and processing. Understanding these settings helps streamline operations and maintain accurate inventory tracking.
+
+---
+
 ## Manual Issue Method
 
-The table below charts the combination between Issue Type and Issue Behavior:
+The table below illustrates the interaction between Issue Type and Issue Behavior:
 
-- Yes = the batch is listed within the Batch Number Selection form,
-
-- No = the batch is not listed within the Batch Number Selection form,
-
-- Display = the batch is displayed and cannot be issued within the Batch Number Selection form.
+- **Yes**: the batch is listed within the Batch Number Selection form.
+- **No**: the batch is not listed within the Batch Number Selection form.
+- **Display**: the batch is visible but cannot be issued within the Batch Number Selection form.
 
 |   Issue Type   | Issue Behavior |   Issue Behavior   | Issue Behavior |    Issue Behavior    |     Issue Type     |     Issue Type     |
 | :------------: | :------------: | :----------------: | :------------: | :------------------: | :----------------: | :----------------: |
@@ -68,4 +70,7 @@ The table below charts the combination between Issue Type and Issue Behavior:
 
 ## Backflush Issue Method
 
-The same principles apply to Batches back-flushing.
+The same principles that apply to manual issue types also apply to batch back-flushing. Ensuring accurate backflush settings prevents material shortages and maintains production efficiency.
+
+---
+Proper configuration of issue types in manual and backflush methods is essential for effective inventory management. By understanding how different issue types behave, businesses can optimize material issuance, improve tracking, and enhance overall operational efficiency.

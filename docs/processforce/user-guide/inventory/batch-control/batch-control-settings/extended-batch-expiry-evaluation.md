@@ -6,7 +6,7 @@ toc_max_heading_level: 4
 
 # Extended Batch Expiry Evaluation
 
-Extended Batch Expiry Date allows setting expiry dates based on different dates or creating and using an expiry Evaluation Template that allows more complicated ways to calculate Expiry Date.
+Proper batch expiry evaluation is essential for maintaining product quality and ensuring compliance with industry regulations. The Extended Batch Expiry Date feature in SAP allows businesses to define expiry dates based on various parameters or use Expiry Evaluation Templates for more complex calculations. This flexibility helps organizations manage inventory effectively by preventing expired batches from being used in production or sales.
 
 ---
 
@@ -16,15 +16,17 @@ Extended Batch Expiry Date allows setting expiry dates based on different dates 
     Administration → System Initialization → General Settings → ProcessForce tab → Inventory tab
 :::
 
-Expiry Evaluation Type can be chosen from a drop-down list; you can select either the Manufacturing Order related date (Start date of Manufacturing Order) or us Expiry Evaluation Template (for Goods Receipt PO current date is used).
+The Expiry Evaluation Type determines how expiry dates are calculated. Options include:
 
-**Expiry Date** and **Consume Date** – the final date for the Item to be safely used. The meaning of these two terms is slightly different, and usage of one of these often depends on the Customer's decision.
+- **Manufacturing Order related date**: uses the Start Date of the Manufacturing Order.
+- **Expiry Evaluation Template**: uses a predefined template (for Goods Receipt PO, the current date is considered).
 
-**Warning Prior Expiry Days** and **Warning Prior Consume Days** – an alert can be set to inform about Batch Expiry Date set up days before it (commonly used by companies to plan using the oldest Batches first).
+**Other key settings include**:
 
-**Shelf Life Interval** – Shelf life is the period during which food keeps its desirable or acceptable characteristics under specified handling and storage conditions. The shelf life interval is the period based on which Expiry/Consume date is automatically calculated. The date chosen in Expiry Eval Type field + Shelf Life Interval = Expiry/Consume date.
-
-**Inspection Interval** – number of days after which Inspection should be performed to check Item quality (periodically), e.g., every ten days after batch record. An alert can be connected to the Inspection date.
+- **Expiry Date** and **Consume Date**: define the final date for safe item usage, with slight differences in meaning depending on customer preferences.
+- **Warning Prior Expiry Days** and **Warning Prior Consume Days**: allow alerts to be set up before a batch expires, ensuring timely usage (commonly used by companies to plan using the oldest Batches first).
+- **Shelf Life Interval**: shelf life is the period during which food keeps its desirable or acceptable characteristics under specified handling and storage conditions. Automatically calculates expiry/consume dates using the formula: (Selected Expiry Eval Type Date) + (Shelf Life Interval) = Expiry/Consume Date
+- **Inspection Interval**: defines how frequently an item should be inspected post-production, triggering alerts when due. e.g., every ten days after batch record.
 
 ## Levels of Assignment
 
@@ -39,22 +41,20 @@ Click [here](./batch-control-general-settings.md) to check how to assign the Exp
 ## Creation of Expiry Evaluation Template
 
 :::caution
-    Please note that Expiry Evaluation Template works only for Items with Manual Issue type, and the Batches must already be issued to production.
+    The Expiry Evaluation Template applies only to items with a **Manual Issue** type. Batches must already be issued to production for it to take effect.  
 :::
 
-If the option Expiry Eval Template is chosen in Expiry Eval Type, the Expiry Evaluation Template field is active, and it is possible to select a predefined Expiry Evaluation Template.
+If Expiry Eval Template is selected as the Expiry Eval Type, the corresponding template field becomes active, allowing users to choose a predefined evaluation method.
 
 :::info Path
     Administration → Setup → Inventory → Expiry Date Evaluation Template
 :::
 
-The expiry Evaluation Template allows the definition of advanced Expiry Date Evaluation types. You can use predefined buttons to add a new element to a formula or type it in.
-
-The expiry date Validation form will be displayed after clicking Validate Formula. In this form, you can check a result of a formula on a specific document.
+This feature enables users to define advanced expiry date calculations using predefined formula elements or manual entry. The Validate Formula option allows users to test the formula on a specific document before applying it.
 
 ### Example
 
-The following formula allows an Expiry Date of a Finished Item equal to the earliest expiry date of a Child Item batch (in case of different expiry dates on additional Child Items).
+The following SQL formula ensures that the expiry date of a Finished Item matches the earliest expiry date of any associated Child Item Batch. This is useful when multiple child items have varying expiry dates.
 
 #### MS SQL
 
