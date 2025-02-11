@@ -28,7 +28,7 @@ The Batch Master Data form comprises several tabs, each serving a specific funct
 - [Inventory](/docs/processforce/user-guide/inventory/batch-control/batch-master-data/batch-inventory-tab/): displays the total quantity of the batch along with all storage locations where items from the batch are stored.
 - Complaints: provides a list of all complaints recorded against the batch, along with pertinent information.
 
-![Batch Master Data](./media/overview/batch-master-data.webp)
+    ![Batch Master Data](./media/overview/batch-master-data.webp)
 
 ---
 This integrated approach enhances efficiency by centralizing batch information, facilitating better data management, and improving overall operational workflows within SAP Business One and ProcessForce.

@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Properties tab
 
-On this tab, predefined Properties can be assigned to a specific Batch.
+The Properties tab allows users to assign predefined properties to a specific batch, enabling better classification and tracking.
 
 ![List of item properties](./media/properties-tab/list-of-item-properties.webp)
 
