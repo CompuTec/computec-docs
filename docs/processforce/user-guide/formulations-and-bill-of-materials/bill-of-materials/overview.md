@@ -4,10 +4,13 @@ sidebar_position: 1
 
 # Overview
 
-Bill of Materials lists all materials used to produce a specific product. ProcessForce also allows us to define other vital values during the production of a product: Coproducts, Scraps, or Work in Progress Items.
+A Bill of Materials (BOM) details all the materials required to produce a specific product. In addition to listing components, ProcessForce enables users to define essential production elements such as Co-Products, Scrap, and Work-in-Progress (WIP) Items.
 
-ProcessForce also allows creating Revisions: different Bills of Materials for one Item.
+Another key feature of ProcessForce is the ability to create Revisions, allowing multiple BOM versions for a single item, ensuring flexibility and adaptability in manufacturing.
 
 :::note Path
     Production → Bill Of Materials
 :::
+
+---
+With these capabilities, ProcessForce enhances production efficiency, improves material tracking, and supports dynamic manufacturing processes.
