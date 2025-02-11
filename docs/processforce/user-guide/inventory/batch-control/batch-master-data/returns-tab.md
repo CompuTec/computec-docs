@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Returns tab
 
-On this tab, all document connected to returns for a specific Batch is displayed.
+The Returns tab in the Batch Master Data form provides a comprehensive view of all return-related documents linked to a specific batch. This ensures efficient tracking of returned items, whether they are purchased or sold, and helps maintain accurate inventory records.
 
 ---
 
@@ -30,5 +30,8 @@ For purchased and delivered Items, the following documents are displayed (if the
 - AR Credit Notes.
 
 :::info
-    In some countries, returns can be managed using Corrective Invoices. Documents of this kind connected to a specific Batch will also be displayed on the tab.
+    Additionally, in some countries, Corrective Invoices are used to manage returns. If applicable, such documents linked to a specific batch will also be displayed.
 :::
+
+---
+The Returns tab is a valuable tool for tracking and managing batch-related returns, ensuring transparency in inventory and financial records. By providing easy access to return documents, businesses can streamline their reverse logistics and maintain accurate batch histories.

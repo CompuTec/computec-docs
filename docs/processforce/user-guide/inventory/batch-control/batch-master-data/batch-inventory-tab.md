@@ -14,8 +14,9 @@ The presence of Items of this Batch across Warehouses is presented on this tab.
 
 You can check Allocated, Available and Existing quantities in each location where the Batch is stored.
 
-**Existing Quantity** – a sum of all quantities of an Item in all of the Warehouses
+- **Existing Quantity**: a sum of all quantities of an Item across all warehouses.
+- **Allocated Quantity**: a sum of all quantities of an Item that has already been used in sales and inventory documents.
+- **Available Quantity**: a sum of all quantities that is available to be used. Existing Quantity - Allocated Quantity = Available Quantity.
 
-**Allocated Quantity** – a sum of all quantities of an Item that has already been used in sales and inventory documents
-
-**Available Quantity** – a sum of all quantities that is available to be used. Existing - Allocated = Available Quantity.
+---
+The Batch Inventory tab plays a vital role in warehouse management by providing real-time insights into batch stock levels. This ensures businesses can efficiently allocate inventory, prevent shortages, and optimize batch usage.
