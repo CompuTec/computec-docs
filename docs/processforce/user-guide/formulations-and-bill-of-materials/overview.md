@@ -4,9 +4,9 @@ sidebar_position: 1
 
 # Overview
 
-The Bill of Materials Form allows users to define the relationship between parent and child Items.
+The Bill of Materials (BOM) Form enables users to define the relationships between parent and child items within a manufacturing structure.
 
-This function supports the following elements:
+This functionality includes support for:
 
 - Items,
 - CoProducts,
@@ -21,4 +21,4 @@ This function supports the following elements:
 - UoM,
 - Formulas.
 
-![Chart](./media/overview/bill-of-materials-chart.webp)
+    ![Chart](./media/overview/bill-of-materials-chart.webp)

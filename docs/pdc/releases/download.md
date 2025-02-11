@@ -86,9 +86,3 @@ These versions require CompuTec License Server in 5.10.1.1 version.
 </table>
 
 \* - until next CompuTec PDC release
-
-## CompuTec Gateway Service
-
-1.2.0.20 version: [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.0.20.msi)
-
-(Click [here](../administrator-guide/weight-scales-integration/gateway-service-installation.md) to find out more)
