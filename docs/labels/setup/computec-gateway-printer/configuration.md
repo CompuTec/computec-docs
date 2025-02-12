@@ -4,21 +4,27 @@ sidebar_position: 3
 
 # Configuration
 
-Both application CompuTec Labels and CompuTec Gateway have to be configured. Communication flow as explained below:
+You can find the configuration steps for the required applications on this page.
 
-1. Label request has been triggered through some application,
-2. Label request has been processed by CompuTec Label Service/Manager,
-3. CompuTec Label Service determines that assigned printer is a gateway printer,
-4. CompuTec Label Service sends detail of request to Gateway Machine through AppEngine address and port(by CompuTec Gateway Plugin),
-5. After CompuTec Gateway Service on targer machine received the request, it processes the request and sends print request into printer queue,
-6. Print out on physical printer.
+---
 
-## Configuration on CT Label Manager
+**Configuration in CompuTec Gateway Manager**
 
-Configuration should be done on CT Label Manager is adding Gateway type printer and entering AppEngine address as shown below:
+You can launch the CompuTec Gateway Manager from the default path: C:\Program Files (x86)\CompuTec\CompuTec Gateway\CompuTec Gateway Manager.exe
 
-CompuTec Gateway application can be download from [here](/docs/appengine/releases/plugins/gateway/download).
+![CGAM Add Printer](./media/cgam-add-printer.png)
 
-## Configuration on CT Gateway Application
+**Configuration in CompuTec Label Printing Manager**
 
-CompuTec Gateway application installation guide can be found [here](../computec-gateway-printer/configuration.md).
+The configuration process in CT Label Printing Manager involves adding a Gateway-type printer and specifying the AppEngine address as illustrated below.
+
+The CompuTec Gateway Manager can be downloaded from the following page. Click here to navigate to the page.
+
+![Add printer](./media/add-printer.png)
+
+![AE Address](./media/ae-address.png)
+
+![Physical Printer](./media/physical-printer.png)
+
+---
+By following these steps, you can successfully configure the CompuTec Gateway Manager and CompuTec Label Printing Manager to ensure seamless integration and functionality. If you encounter any issues, reach out to support for assistance.
