@@ -20,7 +20,7 @@ These applications communicate with **CompuTec Gateway Manager** through the Com
         - The ability to define and configure logical printers, which are linked to physical printing devices.
         - Print jobs can be routed through the CompuTec Gateway Manager if the printer is not directly accessible.
 
-    For more information on printer configuration, please refer to the Printer Integration Guide. [Click here to navigate to the page](https://learn.computec.one/docs/wms/user-guide/weight-scales/overview/).
+    For more information on printer configuration, please refer to the Printer Integration Guide. [Click here to navigate to the page](https://learn.computec.one/docs/labels/setup/computec-gateway-printer/configuration/).
 
 2. **CompuTec WMS**
 
@@ -46,7 +46,7 @@ These applications communicate with **CompuTec Gateway Manager** through the Com
 
 For label printing to function effectively, both the CompuTec Labels Printing Manager and CompuTec Gateway Manager need to be properly configured. The communication process follows these steps:
 
-1.**Label Request Initiation**: A label request is triggered by one of the following applications: SAP B1, CompuTec WMS, or CompuTec PDC.
+1. **Label Request Initiation**: A label request is triggered by one of the following applications: SAP B1, CompuTec WMS, or CompuTec PDC.
 2. **Processing by CompuTec Labels Service/Manager**: The CompuTec Label Service/Manager receives the request and identifies the printer assigned for the task. If the printer is configured as a gateway printer, the service proceeds to forward the request to the CompuTec Gateway Manager.
 3. **Forwarding to Gateway via AppEngine**: The CompuTec Label Service forwards the request details to the gateway machine via the AppEngine address and port, using the CompuTec Gateway Plugin to ensure a secure and reliable connection.
 4. **Processing by CompuTec Gateway Service**: Upon receiving the request, the CompuTec Gateway Service processes the print job and adds it to the printer queue.
