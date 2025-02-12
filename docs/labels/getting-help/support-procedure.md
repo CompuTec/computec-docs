@@ -11,4 +11,4 @@ If you encounter any issues or have questions, you may submit a support ticket. 
 
 These pages may provide insights into similar cases experienced by other users, along with potential root causes and solutions.
 
-If you do not find a resolution in the resources above, please submit a ticket through our support portal: [www.support.computec.pl](www.support.computec.pl)
+If you do not find a resolution in the resources above, please submit a ticket through our support portal: [www.support.computec.pl](https://www.support.computec.pl)
