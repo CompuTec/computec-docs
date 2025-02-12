@@ -20,7 +20,7 @@ This form allows the user to perform the following:
 - **Warehouse Assignment**: specifies where the inventory is stored and, if backflushed, where deductions occur.
 - **Factor & Description**: the Factor acts as a variable to adjust the quantity dynamically
 - **Quantity**: users can set the number of items required per unit of the parent product.
--**Scrap % Inclusion**: accounts for expected material wastage, affecting the total item quantity.
+- **Scrap % Inclusion**: accounts for expected material wastage, affecting the total item quantity.
 - **Result Calculation**: automatically computes the relationship between item and parent product quantity using a predefined or customized Formula See [Formula](../formula.md) for additional information.
   ![Items Tab](./media/bom-items/bill-of-materials-item-tab.webp)
 - **Unit of Measure (UoM)**: defined in the Item Master Data/Inventory Tab, ensuring accurate unit tracking.

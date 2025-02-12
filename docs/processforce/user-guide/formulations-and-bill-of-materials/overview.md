@@ -21,4 +21,4 @@ This functionality includes support for:
 - UoM,
 - Formulas.
 
-    ![Chart](./media/overview/bill-of-materials-chart.webp)
+![Chart](./media/overview/bill-of-materials-chart.webp)
