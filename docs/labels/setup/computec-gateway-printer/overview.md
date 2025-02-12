@@ -9,6 +9,7 @@ CompuTec Gateway Manager serves as a crucial middleware solution, connecting **C
 These applications communicate with **CompuTec Gateway Manager** through the CompuTec AppEngine address and port, ensuring an efficient and secure data exchange process.
 
 ![Architecture](./media/architecture.png)
+
 ---
 
 ## Integrated Applications with CompuTec Gateway Manager
