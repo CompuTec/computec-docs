@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+import Releases from "../gateway-releases.json";
+
 # Download
 
 ## Version Compatible to SAP Business One 10.0 and ProcessForce 10.0
@@ -53,4 +55,23 @@ These versions require [CompuTec License Server in 5.10.1.1 version](/docs/proce
 
 ## AppEngine CompuTec Labels Plugin
 
-The related AppEngine plugin is available [here](/docs/appengine/releases/plugins/labels/download).
+<table>
+  <tr>
+    <th>Version</th>
+    <th>Build</th>
+    <th>Release Date</th>
+    <th>Package</th>
+    <th>Minimal AppEngine Version</th>
+    <th>Related Gateway Manager version</th>
+  </tr>
+  {Releases.map((data) => (
+    <tr>
+      <td>{data.version}</td>
+      <td>{data.build}</td>
+      <td>{data.release_date}</td>
+      {data.download_url ? <td><a href={data.download_url}>Download</a></td> : <td>-</td>}
+      <td>{data.minimal_ae_version}</td>
+      <td>{data.related_version}</td>
+    </tr>
+  ))}
+</table>
