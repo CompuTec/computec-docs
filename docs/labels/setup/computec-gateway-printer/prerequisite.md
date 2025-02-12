@@ -2,36 +2,42 @@
 sidebar_position: 2
 ---
 
-# Prerequisites
+# Installation
 
-In this section, you can find a guide of downloading and installation.
+To ensure the proper functioning of CompuTec Gateway Manager, follow the prerequisites and installation steps outlined below.
 
-## Download
+---
 
-There is one installation to perform and one plugin to upload on AppEngine.
+## Prerequisites
 
-**CompuTec Gateway Application** can be downloaded from here:
-<br/>PDC -> Adminstrator Guide -> Weight Scales Integration -> Gateway Service Installation
+Before installing the required applications, make sure to:
 
-**CompuTec Gateway Plugin** can be downloaded from here:
-<br/>Appengine -> Releases -> Plugins -> Gateway -> Download
+- Configure your firewall to allow traffic on port 8080 in the CompuTec Gateway Server/Machine.
+- Install .NET Framework 4.7.1.
+- Have CompuTec AppEngine installed.
 
-## Installation
-
-**CompuTec Gateway Application** installation guide can be found [here](https://computec-docs.pages.dev/pdc/releases/downloads#computec-gateway-service).
-<!-- TODO: Replacement above Link to path -->
-
-**CompuTec Gateway Plugin** installation guide can be found [here](https://connect.computec.pl/display/AEEN/Configuration+and+Administration#ConfigurationandAdministration-pluginPlugins).
-<!-- TODO: Replacement above Link to path -->
+## Installation Steps
 
 :::info Requirement
     **CompuTec AppEngine** must be installed to be able to use **CompuTec Gateway** and upload **CompuTec Gateway Plugin**.
 :::
 
-## Network Communication
+You need to install the following applications:
 
-Both CompuTec Gateway and CompuTec Labels machines must have access to server where AppEngine has been installed and to port default or one you changed. So that they are enable to communicate.
+1. **CompuTec Gateway Plugin**:
 
-`http(s)://appengineaddress:port`
+    - **For CompuTec AppEngine v2**
+        - Download: [Click here to navigate to the page](https://learn.computec.one/docs/labels/releases/download/#appengine-computec-labels-plugin).
+        - Installation guide: [Click here to navigate to the page](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/overview/#plugins).
 
-E.g: `http://localhost:54000`
+    - **For CompuTec AppEngine v3**
+        - Download and Installation Guide: [Click here to navigate to the page](https://learn.computec.one/docs/appengine/next/administrators-guide/configuration-and-administration/plugins/overview/).
+
+2. **CompuTec Gateway Manager**
+
+    - Download: [Click here to navigate to the page](https://learn.computec.one/docs/labels/releases/download/#computec-gateway-service).
+
+        ![Installation](./media/installation.png)
+
+---
+By following these steps, you can successfully set up CompuTec Gateway Manager, ensuring seamless integration with CompuTec AppEngine. Be sure to verify all prerequisites before installation to avoid any configuration issues.
