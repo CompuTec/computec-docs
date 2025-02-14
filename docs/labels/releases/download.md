@@ -1,25 +1,30 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 import Releases from "../gateway-releases.json";
 
 # Download
 
-## Version Compatible to SAP Business One 10.0 and ProcessForce 10.0
+## CompuTec Labels
 
 :::caution
-    Since this version CompuTec Labels is released in 64-bit version only. The version works in SAP HANA and Microsoft SQL Server environments.
+Below CompuTec Labels Printing Manager and CompuTec Labels SAP Add-on versions are compatible with SAP Business One version 10 and SAP Business One version 10 for HANA.
 :::
 
-These versions require [CompuTec License Server in 5.10.1.1 version](/docs/processforce/releases/download).
+### CompuTec Labels Printing Manager
 
-### CompuTec Labels
+| Version | Release Date | Required CT License Server Version | Download Link | Release Note |
+| --- | --- | --- | --- | --- |
+| 4.8.0 | 14 February 2025 | 5.10.1.1. or greater | [Download] | - |
 
+<details>
+<summary>Previous Releases</summary>
+<div>
 |Version|Platform|Download Link| Notes |
 |---|---|---| --- |
 | 4.7.1.137 | x64| [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.137_x64.msi)| - |
-| 4.7.1.135 | x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.135_x64.msi) | This version is fully compatible with .NET Core 3.0. <br/>Maintains full compatibility with previous systems |
+| 4.7.1.135 | x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.135_x64.msi) | This version is fully compatible with .NET Core 3.0. Maintains full compatibility with previous systems |
 |4.7.1.134|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.134_x64.msi)| - |
 |4.7.1.131|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.131_x64.msi)| - |
 |4.7.1.130|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.130_x64.msi)| - |
@@ -33,45 +38,90 @@ These versions require [CompuTec License Server in 5.10.1.1 version](/docs/proce
 |4.7.1.78|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.78_x64.msi)| - |
 |4.7.1.72|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.72_x64.msi)| - |
 |4.7.1.72|x86|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.72_x86.msi)| - |
+</div>
+</details>
 
 ### CompuTec Labels SAP Addon
 
-|Version|Download Link|
-|---|---|
-|2.10.289|[Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.289.zip)|
-|2.10.265|[Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.265.zip)|
-|2.10.260|[Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.260.zip)|
-|2.10.258|[Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.258.zip)|
-|2.10.255|[Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.255.zip)|
-|2.10.239|[Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.239.zip)|
-|2.10.1|[Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.1.zip)|
+**Latest Release**:
 
-## CompuTec Gateway Service
+| Version | Release Date | Download Link | Release Notes |
+|---|---| ---| --- |
+| 3.0.0 | 14 February 2025 | [Downlaod] | - |
 
-| Version | Download Link |
-| --- | --- |
-| 1.2.0.28 | [Download](https://download/computec.one/software/gateway/releases/CompuTec_Gateway_1.2.0.28.msi) |
-|1.2.0.20 | [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.0.20.msi) |
+<details>
+<summary>Previous Releases</summary>
+<div>
+|Version| Release Date | Download Link| Release Notes |
+|---|---| --- | --- |
+|2.10.289| - | [Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.289.zip)| - |
+|2.10.265| -| [Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.265.zip)| - |
+|2.10.260| - | [Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.260.zip)| - |
+|2.10.258| - | [Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.258.zip)| - |
+|2.10.255| - | [Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.255.zip)| - |
+|2.10.239| - | [Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.239.zip)| - |
+|2.10.1| - | [Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.1.zip)| - |
+</div>
+</details>
 
-## AppEngine CompuTec Labels Plugin
+### CompuTec Labels Plugin
 
-<table>
-  <tr>
-    <th>Version</th>
-    <th>Build</th>
-    <th>Release Date</th>
-    <th>Package</th>
-    <th>Minimal AppEngine Version</th>
-    <th>Related Gateway Manager version</th>
-  </tr>
-  {Releases.map((data) => (
-    <tr>
-      <td>{data.version}</td>
-      <td>{data.build}</td>
-      <td>{data.release_date}</td>
-      {data.download_url ? <td><a href={data.download_url}>Download</a></td> : <td>-</td>}
-      <td>{data.minimal_ae_version}</td>
-      <td>{data.related_version}</td>
-    </tr>
-  ))}
-</table>
+**Latest Release**:
+
+| Version | Build | Release Date | Download Link | Required AppEngine Version | Release Notes |
+| --- | --- | --- | --- | --- | --- |
+| 1.5.7 | 1.10.5.7 | 26 June 2023 | [Download] | 1.10.6.0 or newer | - |
+
+<details>
+<summary>Previous Releases</summary>
+<div>
+| Version | Build | Release Date | Package | Required AppEngine Version | Release Date |
+| --- | --- | --- | --- | --- | --- |
+| 1.4.2 | 1.10.4.2 | 19 April 2023 | [Download](https://download.computec.one/software/appengine/plugins/labels/releases/CompuTec_Labels_1.10.4.2.zip) | 1.10.6.0 or newer | - |
+| 1.4.0 | 1.10.4.1 | 13 April 2023 | [Download](https://download.computec.one/software/appengine/plugins/labels/releases/CompuTec_Labels_1.10.4.1.zip) | 1.10.6.0 or newer | - |
+| 1.3 | 1.10.3.2 | 23 March 2023 | [Download](https://download.computec.one/software/appengine/plugins/labels/releases/CompuTec_Labels_1.10.3.2.zip) | 1.10.6.0 or newer | - |
+| 1.2 | 1.10.2.1 | 06 April 2022 | [Download](https://download.computec.one/software/appengine/plugins/labels/releases/CompuTec_Labels_1.10.2.1.zip) | 1.10.6.0 or newer | - |
+| 1.2 | 1.93.2.1 | 06 April 2021 | [Download](https://download.computec.one/software/appengine/plugins/labels/releases/CompuTec_Labels_1.93.2.1.zip) | 1.10.6.0 or newer | - |
+</div>
+</details>
+
+## CompuTec Gateway
+
+### CompuTec Gateway Manager
+
+**Latest Release**:
+
+| Version | Release Date | Download Link | Release Notes |
+| --- | --- | --- | --- |
+| 1.2.1 | 14 February 2025 | [Download] | - |
+
+<details>
+<summary>Previous Releases</summary>
+<div>
+| Version | Release Date | Download Link | Release Notes |
+| --- | --- | --- | --- |
+| 1.2.0.28 | - | [Download](https://download/computec.one/software/gateway/releases/CompuTec_Gateway_1.2.0.28.msi) | - |
+|1.2.0.20 | - | [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.0.20.msi) | - |
+</div>
+</details>
+
+### CompuTec Gateway Plugin
+
+**Latest Release**:
+
+| Version | Build | Release Date | Package | Required AppEngine Version | Required Gateway Manager Version | Release Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1.10.6.0 R3 | 1.10.6.16 | 05 September 2023 | [Download](https://download.computec.one/software/appengine/plugins/gateway/releases/CompuTec_Gateway_1.10.6.16.zip) | 1.10.6.0 R1 or newer | 1.2.0.11 or newer | - |
+| 1.93.6.0 R3 (64-bit version) | 1.93.6.16 | 5 September 2023 | [Download](https://download.computec.one/software/appengine/plugins/gateway/releases/CompuTec_Gateway_1.93.6.16.zip) | 1.92.6.0 R1 or newer |1.2.0.11 or newer | - |
+
+<details>
+<summary>Previous Releases</summary>
+<div>
+| Version | Build | Release Date | Package | Required AppEngine Version | Required Gateway Manager Version | Release Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1.10.6.0 R2 | 1.10.6.15 | 03 November 2021 | [Download](https://download.computec.one/software/appengine/plugins/gateway/releases/CompuTec_Gateway_1.10.6.15.zip) | 1.10.6.0 R1 or newer | 1.2.0.11 or newer | - |
+| 1.93.6.0 R2 (64-bit version) | 1.93.6.15 | 03 November 2021 | [Download](https://download.computec.one/software/appengine/plugins/gateway/releases/CompuTec_Gateway_1.93.6.15.zip) | 1.92.6.0 R1 or newer |1.2.0.11 or newer | - |
+| 1.10.6.0 R1 | 1.10.6.3| 20 April 2020 | [Download](https://download.computec.one/software/appengine/plugins/gateway/releases/CompuTec_Gateway_1.10.6.3.zip) | 1.10.6.0 R1 or newer |1.2.0.0 or newer| - |
+| 1.93.6.0 R1 (64-bit version) | 1.93.6.3 | 20 April 2020 | [Download](https://download.computec.one/software/appengine/plugins/gateway/releases/CompuTec_Gateway_1.93.6.3.zip) | 1.92.6.0 R1 or newer | 1.2.0.0 or newer | - |
+</div>
+</details>
