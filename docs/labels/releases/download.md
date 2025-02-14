@@ -70,7 +70,7 @@ Below CompuTec Labels Printing Manager and CompuTec Labels SAP Add-on versions a
 
 | Version | Build | Release Date | Download Link | Required AppEngine Version | Release Notes |
 | --- | --- | --- | --- | --- | --- |
-| 1.5.7 | 1.10.5.7 | 26 June 2023 | [Download] | 1.10.6.0 or newer | - |
+| 1.5.7 | 1.10.5.7 | 26 June 2023 | [Download](https://download.computec.one/software/appengine/plugins/labels/releases/CompuTec_Labels_1.10.5.7.zip) | 1.10.6.0 or newer | - |
 
 <details>
 <summary>Previous Releases</summary>
