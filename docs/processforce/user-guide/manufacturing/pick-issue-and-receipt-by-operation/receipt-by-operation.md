@@ -29,4 +29,3 @@ To create a receipt for an operation:
   ![Pick Receipt](./media/receipt-by-operation/pick-receipt.webp)
 
 ---
-The Receipt by Operation function streamlines material tracking and ensures all production outputs—including co-products and scrap—are properly recorded. This process enhances traceability, reduces discrepancies, and supports efficient manufacturing operations.

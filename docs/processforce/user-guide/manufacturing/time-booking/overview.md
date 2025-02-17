@@ -19,4 +19,3 @@ To use the Time Booking function, navigate to:
 ![Time Booking](./media/overview/time-booking.webp)
 
 ---
-This functionality ensures accurate tracking of labor and machine time, leading to improved production planning and cost control.

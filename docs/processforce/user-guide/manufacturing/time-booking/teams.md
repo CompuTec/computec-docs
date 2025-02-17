@@ -26,4 +26,3 @@ New employees can be added using the SAP B1 Employee Master Data function:
 Main Menu → Human Resources → Employee Master Data
 
 ---
-By leveraging the Teams feature in SAP Business One, businesses can efficiently group employees for manufacturing tasks, ensuring better coordination, streamlined time tracking, and enhanced production management.

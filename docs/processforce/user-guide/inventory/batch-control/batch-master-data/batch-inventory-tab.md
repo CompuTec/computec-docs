@@ -19,4 +19,3 @@ You can check Allocated, Available and Existing quantities in each location wher
 - **Available Quantity**: a sum of all quantities that is available to be used. Existing Quantity - Allocated Quantity = Available Quantity.
 
 ---
-The Batch Inventory tab plays a vital role in warehouse management by providing real-time insights into batch stock levels. This ensures businesses can efficiently allocate inventory, prevent shortages, and optimize batch usage.

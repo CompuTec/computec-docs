@@ -77,4 +77,3 @@ For this example we will set up a Batch Template that contains date and counter.
     As observed, the batches allocated in the Pick Receipt Batches setup were successfully recorded in the Production Goods Receipt.
 
 ---
-Implementing batch management in Pick Receipt transactions ensures precise tracking of inventory, improves stock accuracy, and enhances compliance with regulatory requirements. Whether using auto-generated batch numbers or manually allocating batches, these steps help streamline manufacturing and inventory operations. By following this guide, businesses can efficiently manage batch-controlled stock and optimize their warehouse processes.

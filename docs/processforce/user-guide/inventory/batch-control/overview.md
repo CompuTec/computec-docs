@@ -19,4 +19,3 @@ Inventory → Item Management → Batches
 ![Batch Master Data](./media/overview/batch-master-data-general.webp)
 
 ---
-The integration of batch management forms in SAP Business One and ProcessForce streamlines data accessibility, enhances traceability, and ensures consistency in batch-related operations. Proper configuration of User-Defined Fields across both systems will further optimize batch tracking and compliance processes.

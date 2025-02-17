@@ -151,4 +151,3 @@ For batch-managed and serial-numbered items, MRP 2.5 provides enhanced visibilit
 ![Example](./media/basic-settings/mrp-2-5-example.webp)
 
 ---
-MRP 2.5 in SAP Business One introduces significant improvements in procurement and planning management, enabling businesses to optimize their supply chain processes. Proper configuration of MRP 2.5 ensures better demand forecasting, improved inventory management, and streamlined procurement processes, making it an invaluable tool for businesses looking to enhance their resource planning capabilities.

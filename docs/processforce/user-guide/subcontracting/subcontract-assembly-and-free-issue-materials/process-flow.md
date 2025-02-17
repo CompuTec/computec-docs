@@ -126,4 +126,3 @@ Upon completing the receipt from production, a Goods Receipt PO is automatically
     - Creating a journal entry for the service item to ensure financial postings are complete.
 
 ---
-Subcontracting in manufacturing is a streamlined process when managed effectively using SAP Business One. By following the steps outlined above, you can maintain efficient operations, ensure accurate inventory tracking, and seamlessly handle financial postings. Proper execution of subcontracting processes not only saves time but also strengthens supplier collaboration, paving the way for sustained operational success.

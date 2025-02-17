@@ -39,4 +39,3 @@ The batch number assigned to the manufacturing order will be used in the product
 When multiple receipts are performed for the same production order, the same batch number will be reused, ensuring consistency.
 
 ---
-Batch number preallocation helps streamline manufacturing operations by ensuring accurate batch assignment and traceability. Proper configuration of this setting reduces errors, enhances inventory control, and improves production efficiency.

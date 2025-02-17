@@ -40,4 +40,3 @@ Once all adjustments are made, clicking Save Recommendations (3) will finalize t
 To return to the filtering criteria view, select the Change Filter icon (7).
 
 ---
-The Order Recommendation feature in MRP 2.5 provides a structured approach to managing procurement and production planning. By filtering, adjusting, and finalizing recommendations, businesses can optimize order processing, improve supply chain efficiency, and ensure seamless inventory management.

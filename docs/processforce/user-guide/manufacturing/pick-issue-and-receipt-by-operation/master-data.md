@@ -39,4 +39,3 @@ In this example, CoProduct Item Co-Product-01 and Scrap Item Scrap-01 are linked
 ![Operation Bind](./media/master-data/operation-bind-2.webp)
 
 ---
-Proper configuration of Master Data ensures accurate tracking of materials throughout the production process. By linking BOM items to operations, businesses can improve production efficiency, enhance inventory accuracy, and streamline their Pick Issue and Receipt by Operation workflows.

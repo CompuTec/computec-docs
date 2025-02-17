@@ -57,4 +57,3 @@ Apart from the basic information (Operation Name, Sequence, Status), the Tile al
 In the latest application version, additional details on operation-related quantities have been included to enhance production tracking.
 
 ---
-The Manufacturing Order menu offers a structured way to manage various aspects of production, from material handling and scheduling to tracking progress and analyzing dependencies. By leveraging these features, manufacturers can optimize their workflows, improve efficiency, and ensure seamless production execution.

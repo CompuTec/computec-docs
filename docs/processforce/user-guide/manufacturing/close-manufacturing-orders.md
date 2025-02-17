@@ -33,4 +33,3 @@ Once a manufacturing order is marked as closed, the Close Date field is automati
 The function also includes filtering options to help users narrow down the manufacturing orders that need to be closed. These filtering options align with the standard SAP Business One filtering criteria, enabling users to easily identify and manage relevant orders.
 
 ---
-Closing manufacturing orders in SAP Business One ensures that production processes are properly finalized and variances are accounted for in the financial system. By utilizing the multiple selection criteria and automatic date population, this function helps improve the efficiency of closing orders, reducing manual work and ensuring accurate reporting.

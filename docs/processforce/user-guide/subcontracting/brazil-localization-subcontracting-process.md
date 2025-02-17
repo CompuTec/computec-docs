@@ -82,4 +82,3 @@ Example:
     - The price for the Goods Receipt will be calculated based on the cost from Goods Issue transactions (for Inventory Items) and the cost from the Invoice (for Service Items).
 
 ---
-In conclusion, the subcontracting process in Brazil, as detailed in this guide, provides a structured and efficient approach to managing inventory and non-inventory items, ensuring compliance with local regulations. By following the outlined steps - ranging from creating manufacturing orders to handling transfers, goods returns, purchase orders, and invoicing—businesses can maintain accurate records, streamline workflows, and ensure transparency throughout the subcontracting process. This approach not only facilitates smooth operations but also supports batch traceability and regulatory adherence, ultimately enhancing overall operational efficiency.

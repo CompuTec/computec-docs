@@ -56,4 +56,3 @@ Efficient inventory management is crucial in manufacturing, and the Pick by Oper
   ![Planned and Actual Quantities](./media/pick-by-operation/planned-actual-quantity.webp)
 
 ---
-The Pick by Operation function enhances efficiency in Manufacturing Orders by enabling precise tracking of material allocation. By linking items to operations and monitoring pick statuses, businesses can streamline their workflows, reduce errors, and ensure timely production processes.

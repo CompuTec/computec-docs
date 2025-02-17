@@ -33,4 +33,3 @@ After production, recording the receipt of finished goods is just as seamless:
 5. All documents are available under the Documents tab in the Manufacturing Order.
 
 ---
-The Auto Pick Issue and Auto Pick Receipt functions simplify and automate material transactions in the production process. By minimizing manual data entry and ensuring accurate inventory tracking, these features contribute to a more efficient and streamlined manufacturing workflow.

@@ -29,4 +29,3 @@ Rollback Details form will appear, where you can adjust the document series, dat
 If the original Goods Receipt was created using backflush, all associated documents will also be corrected accordingly.
 
 ---
-The Rollback Document function in SAP Business One helps manufacturing businesses maintain accurate inventory and financial records by allowing seamless correction of document errors. This feature reduces manual effort, improves data accuracy, and ensures smooth operational workflows.

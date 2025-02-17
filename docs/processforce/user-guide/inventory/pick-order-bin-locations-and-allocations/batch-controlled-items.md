@@ -25,4 +25,3 @@ However, if the Manual Issue Behavior setting in General Settings is configured 
 ![Manual issue behaviour](./media/batch-controlled-items/manual-issue-behaviour.webp)
 
 ---
-Selecting the right picking method depends on warehouse processes and operational efficiency goals. Manual Picking provides control, while Auto Select Picking enhances efficiency by automating batch selection. Understanding system settings, such as Manual Issue Behavior, ensures seamless inventory management and batch allocation.

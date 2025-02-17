@@ -24,4 +24,3 @@ In the Pick Order screen, batch records are displayed in different colors based 
 The Batch color rules (apart from Grey) have been implemented within Delivery, Goods Return, Inventory Transfer, and Goods Issue documents.
 
 ---
-The batch status color-coding system in SAP Business One enhances inventory visibility and helps prevent errors in batch selection. By incorporating these status indicators into key documents, businesses can improve traceability, optimize stock utilization, and streamline warehouse operations.

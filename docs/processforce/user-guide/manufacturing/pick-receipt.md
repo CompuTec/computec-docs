@@ -47,4 +47,3 @@ Currently, a Pick Receipt can include up to five Manufacturing Orders. While it 
 To optimize performance and prevent system delays, it is recommended to process Goods Receipts individually for each Manufacturing Order. This ensures efficient transaction handling and prevents system bottlenecks.
 
 ---
-The Pick Receipt function is a crucial tool for managing the receipt of production items efficiently. By following best practices, such as limiting the number of Manufacturing Orders in a single receipt and processing individual Goods Receipts, organizations can maintain smooth operations while ensuring accurate inventory management. For additional insights, explore the provided resources and video tutorials.

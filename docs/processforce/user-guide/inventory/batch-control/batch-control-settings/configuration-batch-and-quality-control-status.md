@@ -52,4 +52,3 @@ As per the above, the same rules apply.
 ![Batch and Quality status](./media/configuration-batch-and-quality-control-status/batch-quality-status.webp)
 
 ---
-Configuring batch and quality control statuses streamlines inventory management and enhances transparency across SAP receipt documents. By defining default statuses during batch creation, businesses can ensure compliance, improve traceability, and make informed decisions based on QC insights.

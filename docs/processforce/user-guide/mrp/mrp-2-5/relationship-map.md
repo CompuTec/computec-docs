@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Relationship Map from SAP documents
+# Relationship Map from SAP Documents
 
 In SAP, tracking the connections between supply and demand documents is crucial for efficient inventory and procurement management. The Relationship Map provides a visual representation of these connections, helping users trace document linkages seamlessly.
 
@@ -19,4 +19,3 @@ Once selected, the system generates a map displaying the relationships between d
     ![Map](./media/relationship-map/map.webp)
 
 ---
-The Relationship Map in SAP is a valuable tool for visualizing the flow of documents within the procurement and supply process. By using this feature, businesses can streamline operations, improve traceability, and ensure better decision-making in managing supply and demand.

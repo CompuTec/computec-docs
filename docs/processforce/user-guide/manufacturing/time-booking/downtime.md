@@ -59,4 +59,3 @@ To categorize downtime reasons, navigate to:
 Downtime Groups help in organizing and streamlining downtime tracking.
 
 ---
-The Downtime function in SAP Business One helps manufacturers log, track, and resolve downtime efficiently. By maintaining detailed records of downtime reasons, assigned employees, and statuses, businesses can reduce operational delays, improve resource management, and enhance overall production efficiency.

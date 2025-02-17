@@ -33,4 +33,3 @@ A Quality Control Test can be initiated from the menu if a Test Protocol is assi
 ![Create Quality Control Test](./media/quality-control-tab/create-quality-control-test.webp)
 
 ---
-The Quality Control tab plays a crucial role in ensuring batch quality, regulatory compliance, and process efficiency. By maintaining accurate QC records and actions, businesses can uphold high-quality standards and effectively manage non-conforming batches.

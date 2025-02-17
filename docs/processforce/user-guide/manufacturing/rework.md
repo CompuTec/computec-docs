@@ -39,4 +39,3 @@ An example of this method is shown below:
     ![Rework](./media/rework/rework-order.PNG)
 
 ---
-Managing rework efficiently in ProcessForce helps maintain product quality while minimizing waste and disruptions. Whether you need to roll back a transaction, reintroduce finished goods into production, or account for rework within your Bill of Materials, ProcessForce provides flexible options to streamline the process. By choosing the right method, manufacturers can ensure accurate inventory tracking and smooth operations.
