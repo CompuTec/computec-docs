@@ -31,4 +31,3 @@ The Batch Master Data form comprises several tabs, each serving a specific funct
     ![Batch Master Data](./media/overview/batch-master-data.webp)
 
 ---
-This integrated approach enhances efficiency by centralizing batch information, facilitating better data management, and improving overall operational workflows within SAP Business One and ProcessForce.

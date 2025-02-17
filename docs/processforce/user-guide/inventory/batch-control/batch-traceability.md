@@ -85,4 +85,3 @@ To track where the items from a specific batch have been used, hold Control and 
 ![Forward 2](./media/batch-traceability/forward-2.webp)
 
 ---
-The Batch Traceability function in ProcessForce provides end-to-end visibility into batch movement, ensuring quality control, compliance, and efficient recall management. By enabling both backward and forward tracking, businesses can maintain transparency and quickly address issues related to production, inventory, and customer deliveries.

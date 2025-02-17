@@ -65,4 +65,3 @@ Manufacturing Orders (MOs) are essential for managing production processes effic
     ![MRP Wizard](./media/overview/mrp-wizard.webp)
 
 ---
-SAP Business One provides multiple methods for creating Manufacturing Orders, allowing businesses to choose the most efficient approach based on their operational needs. Whether you prefer manual creation, linking MOs to Sales Orders, or utilizing the MRP Wizard, each method ensures streamlined production planning and execution.

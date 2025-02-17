@@ -17,4 +17,3 @@ Below is the representation of Items managed by batches and serial numbers on Re
     ![Revision](./media/item-not-managed/revision-on-results.webp)
 
 ---
-Understanding the impact of batch and serial number management on inventory tracking is essential for optimizing supply chain operations. While non-batch-managed items offer a simplified approach, they lack the precision needed for revision-level tracking. On the other hand, batch and serial number management provide greater control and accuracy, enhancing inventory visibility and decision-making. Businesses must choose the appropriate method based on their operational needs and inventory complexity.

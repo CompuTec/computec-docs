@@ -41,4 +41,3 @@ This report can be accessed directly from a Resource row in a Manufacturing Orde
 It displays all records from Time Booking and Time Corrections documents, with Status columns indicating which document is the latest (Active). Earlier records remain available for reference but are considered previous versions.
 
 ---
-The Time Corrections feature ensures that time records remain accurate and reflect the actual work done. By properly managing corrections and associated Journal Entries, businesses can maintain financial integrity and precise reporting. Whether adjusting recorded hours or cost allocations, this tool provides a structured and transparent way to track modifications over time.

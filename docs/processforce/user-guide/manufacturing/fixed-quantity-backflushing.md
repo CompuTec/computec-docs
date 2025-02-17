@@ -71,4 +71,3 @@ Over Receipt of 10:
 |     Scrap 3     |     0.3      |   Manual    |                       |                 |                      |        30        |         |        0        |
 
 ---
-Fixed Quantity Backflushing simplifies inventory management by automatically deducting materials based on predefined backflush settings. This approach reduces errors, improves traceability, and ensures efficient resource utilization in manufacturing. By leveraging this method, companies can optimize production workflows and maintain accurate inventory records.

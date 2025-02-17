@@ -101,4 +101,3 @@ When preparing an MRP 2.5 recommendation, the system will identify the most appr
 3. If no valid rule is found, the system will use the Internal Lead Time from Item Master Data (located under Item Details for review).
 
 ---
-Optimizing vendor lead times in MRP 2.5 ensures accurate procurement planning and efficient production schedules. By defining default vendors, leveraging shipping types and addresses, and implementing custom rules, businesses can fine-tune lead times to align with their supply chain needs. Understanding and applying these rules effectively can help minimize delays and enhance overall supply chain efficiency.

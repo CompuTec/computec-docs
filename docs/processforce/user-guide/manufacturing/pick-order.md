@@ -37,4 +37,3 @@ If multiple Manufacturing Orders require the same item, the Pick Order will disp
 To complete the Pick Order to Production Goods Issue cycle, refer to: Pick Order Bin Locations and Allocations.
 
 ---
-The Pick Order function in ProcessForce simplifies inventory management by enabling automated and manual picking processes. With the ability to consolidate multiple Manufacturing Orders into a single Pick Order, businesses can enhance efficiency, reduce errors, and ensure a seamless material flow to production.

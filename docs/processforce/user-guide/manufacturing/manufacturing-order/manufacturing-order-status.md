@@ -30,4 +30,3 @@ You can also use a [mass Manufacturing Order status change tool](mass-status-cha
 When an operation is started in [CompuTec PDC](/docs/pdc/), the Manufacturing Order status is automatically updated to Started on the Resource Planning Board and Scheduling if it was previously in Released status.
 
 ---
-Understanding Manufacturing Order statuses ensures smooth production management by defining what actions can be performed at each stage. Whether manually adjusted or system-triggered, these statuses help streamline scheduling, material handling, and process tracking.

@@ -50,4 +50,3 @@ Batches will be filtered based on Revision Code from the base document. The filt
 - If the Revision Code is unique (not default), the system displays only batches with that specific Revision Code.
 
 ---
-By incorporating Revision-Based Picking and Backflushing, manufacturers can ensure materials are selected accurately, minimizing errors and maintaining consistency throughout production. This feature enhances inventory control, reduces waste, and improves traceability, leading to a more efficient manufacturing process.

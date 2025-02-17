@@ -25,4 +25,3 @@ Journal Entries cannot be posted with a zero-value cost. Therefore, the Resource
 If a Time Correction does not result in a cost difference - whether in Time Cost, Fixed Cost, or Variable Cost - a Journal Entry will not be generated. This applies to corrections made for remarks, documentation updates, or adjustments that do not affect Resource Time.
 
 ---
-If a Time Correction does not result in a cost difference—whether in Time Cost, Fixed Cost, or Variable Cost—a Journal Entry will not be generated. This applies to corrections made for remarks, documentation updates, or adjustments that do not affect Resource Time.

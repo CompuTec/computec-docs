@@ -33,4 +33,3 @@ To complete the transaction:
 This action removes the items from the warehouse, issues them to Work in Progress (WIP), and generates the corresponding financial journal entry.
 
 ---
-Proper bin location allocation for Non-Batch Controlled Items ensures efficient inventory flow in production processes. Using manual selection or automatic allocation optimizes warehouse operations while maintaining accurate stock records.

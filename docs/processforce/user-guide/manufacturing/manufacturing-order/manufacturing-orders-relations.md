@@ -59,4 +59,3 @@ Clicking the "Assign Parent" button ahows a list of all Manufacturing Orders in 
 The Visualize option provides a clear scheme of MO connections, helping users understand dependencies and improve production planning.
 
 ---
-By leveraging Manufacturing Orders Relations, production teams can efficiently manage dependencies between manufacturing processes, optimize resource allocation, and enhance visibility into production workflows. This feature ensures that all linked MOs are effectively tracked and coordinated, contributing to smoother operations and improved efficiency.

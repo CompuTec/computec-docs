@@ -41,4 +41,3 @@ If the Inherit from Item Group checkbox is unchecked, the batch settings will ap
 :::
 
 ---
-Batch control settings offer a structured and hierarchical approach to managing batch-related functions in SAP Business One. By configuring these settings at the appropriate level - general, item group, or individual item - users can ensure consistent, efficient, and tailored batch management to meet their business needs. Proper configuration enhances traceability, compliance, and operational efficiency.

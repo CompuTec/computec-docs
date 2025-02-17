@@ -42,4 +42,3 @@ To turn off debug mode, change "true" to "false" in the address line:
 and approve.
 
 ---
-Using debug mode ensures accurate documentation of issues, making it easier for support teams to diagnose and resolve errors efficiently. By following the steps outlined above, users can streamline the troubleshooting process and minimize disruptions in their workflow.

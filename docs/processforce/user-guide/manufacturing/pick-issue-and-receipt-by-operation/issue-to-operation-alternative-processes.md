@@ -41,4 +41,3 @@ Another way to issue materials is through the Pick Order Process, which allows f
   ![Pick Order](./media/issue-to-operation-alternative-processes/pick-order.webp)
 
 ---
-Both methods offer flexibility depending on the production scenario. The Operations tab provides a quick way to issue materials for a specific operation, while the Pick Order process streamlines bulk material issuance across multiple operations. Choosing the right approach ensures efficient material handling, minimizing production delays and optimizing workflow.

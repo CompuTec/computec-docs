@@ -35,4 +35,3 @@ To set up a subcontractor-type resource for a service performed by an external o
         ![Routing Subcontracting](./media/subcontractor-type-resource/routing-subcontracting.webp)
 
 ---
-By setting up subcontractor-type resources, businesses can streamline outsourcing efforts and ensure efficient collaboration with external vendors. This structured approach enables organizations to enhance operational efficiency while maintaining control over production workflows. Subcontracting, when implemented effectively, becomes a powerful tool to optimize resources and drive productivity.

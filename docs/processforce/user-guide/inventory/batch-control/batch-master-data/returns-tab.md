@@ -34,4 +34,3 @@ For purchased and delivered Items, the following documents are displayed (if the
 :::
 
 ---
-The Returns tab is a valuable tool for tracking and managing batch-related returns, ensuring transparency in inventory and financial records. By providing easy access to return documents, businesses can streamline their reverse logistics and maintain accurate batch histories.

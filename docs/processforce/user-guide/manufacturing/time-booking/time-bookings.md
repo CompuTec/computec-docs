@@ -53,4 +53,3 @@ By default, Time Booking calculates time based on Start Time / End Time and Star
 All recorded time data, along with any modifications, can be reviewed in the  [Time Recording Report](time-corrections.md#time-recording-report). This report helps in auditing and validating production time entries.
 
 ---
-The Time Booking feature in SAP Business One provides an efficient way to track, manage, and adjust resource time and costs associated with manufacturing processes. With options for handling multiple resources, aligning with resource calendars, and generating reports, this functionality ensures accurate production planning, cost control, and operational efficiency.

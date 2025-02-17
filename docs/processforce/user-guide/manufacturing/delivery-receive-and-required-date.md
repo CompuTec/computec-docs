@@ -124,4 +124,3 @@ Click [here](../scheduling/scheduling-board.md) to find out more about Schedulin
 Sales Order Receive Dates consider holidays set in SAP Business One → System Initialization → Company Details → Accounting Data tab, ensuring accurate scheduling.
 
 ---
-By leveraging the Delivery, Receive, and Required Date framework, businesses can streamline production scheduling, improve on-time delivery, and enhance customer satisfaction. Proper configuration of lead times ensures efficient order management, minimizes delays, and optimizes supply chain processes. Integrating these calculations into SAP Business One simplifies inventory planning and ensures seamless coordination between production and logistics teams.

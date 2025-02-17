@@ -73,4 +73,3 @@ The table below illustrates the interaction between Issue Type and Issue Behavio
 The same principles that apply to manual issue types also apply to batch back-flushing. Ensuring accurate backflush settings prevents material shortages and maintains production efficiency.
 
 ---
-Proper configuration of issue types in manual and backflush methods is essential for effective inventory management. By understanding how different issue types behave, businesses can optimize material issuance, improve tracking, and enhance overall operational efficiency.

@@ -87,4 +87,3 @@ Once the output status is chosen (refer to the Possible Status Changes section),
 In this step, you can see the mass document status change results. If any MOs cannot be updated, an error message will appear in the Processed Result column, indicating necessary actions (e.g., "Please fill required date first").
 
 ---
-The Mass Manufacturing Order Status Change function enhances efficiency by allowing bulk updates to MO statuses. By following the outlined steps, users can streamline their production workflows, minimize manual interventions, and ensure accurate tracking of manufacturing processes.

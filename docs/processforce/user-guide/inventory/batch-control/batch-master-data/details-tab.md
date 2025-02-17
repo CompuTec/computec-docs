@@ -18,4 +18,3 @@ On this tab, you can set details about Batch dates, e.g., date of admission, exp
 - **Best Before Date**: indicates the date before which the product retains its highest quality, commonly used in the food industry. This field is manually set.
 
 ---
-The Date Details tab is essential for businesses relying on batch tracking, particularly in industries such as pharmaceuticals, food, and chemicals. By maintaining accurate batch dates, organizations can enhance quality control, regulatory compliance, and overall operational efficiency.

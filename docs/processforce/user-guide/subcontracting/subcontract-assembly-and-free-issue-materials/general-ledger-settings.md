@@ -24,4 +24,3 @@ In managing subcontractor processes, it is essential to ensure accurate accounti
     ![Expense Account](./media/general-ledger-settings/account-settings-01.jpg)
 
 ---
-By setting up the appropriate general ledger accounts, businesses can ensure that their subcontracting processes are accurately reflected in the financial system. This configuration provides a clear view of inventory and production costs, while also maintaining the integrity of financial reporting related to subcontractor activities.

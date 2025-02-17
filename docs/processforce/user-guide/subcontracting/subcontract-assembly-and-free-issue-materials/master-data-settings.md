@@ -53,4 +53,3 @@ To successfully manage subcontracting procedures, accurate master data settings 
 - Perform the cost roll-over.
 
 ---
-By properly configuring master data settings, companies can streamline their subcontracting processes and ensure that inventory and service costs are accurately managed. This setup also provides clear visibility into the production and cost flow of subcontracted items, ensuring efficiency and compliance in manufacturing and purchasing activities.

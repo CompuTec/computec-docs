@@ -37,4 +37,3 @@ If the recorded Employee Time should contribute to Resource Time, enable the ‘
 ![Duration](./media/employee-time-recording/employee-time-recording-duration.webp)
 
 ---
-The Employee Time Recording feature provides a structured way to track additional workforce contributions, ensuring a transparent and comprehensive record of time spent on tasks. By leveraging this functionality, businesses can improve time tracking accuracy, enhance project cost management, and maintain a detailed log of work distribution.

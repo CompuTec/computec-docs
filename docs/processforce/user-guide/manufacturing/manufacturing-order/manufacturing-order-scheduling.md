@@ -25,4 +25,3 @@ After the first time booking for a resource (booked 1 qty):
     ![Resource Quantity](./media/manufacturing-order-scheduling/resource-quantity-1.png)
 
 ---
-In manufacturing order scheduling, understanding the dynamics between planned and resource quantities is crucial for ensuring the correct allocation of resources. By keeping track of these quantities, manufacturers can optimize production processes, prevent resource underutilization, and adapt to changes in the production environment effectively.

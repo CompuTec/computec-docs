@@ -52,4 +52,3 @@ To see configuration details, visit the [Enable Synchronization](/docs/processfo
   ![Manufacturing Order](./media/overview/manufacturing-order.png)
 
 ---
-By integrating ProcessForce with SAP Business One MRP, businesses can enhance production planning, optimize manufacturing workflows, and improve overall efficiency.

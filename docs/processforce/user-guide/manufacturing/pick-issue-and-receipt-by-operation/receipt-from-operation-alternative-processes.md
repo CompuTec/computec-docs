@@ -34,4 +34,3 @@ This approach allows you to copy receipt information across different operations
 ![Manufacturing Order Operations](./media/receipt-from-operation-alternative-processes/manufacturing-order-operations.webp)
 
 ---
-By utilizing these alternative receipt processes, you can streamline operations, reduce errors, and improve the overall efficiency of your manufacturing order management. Whether processing receipts directly from the Operations Tab or copying from the Pick Receipt process, these methods offer flexibility and convenience for your team.
