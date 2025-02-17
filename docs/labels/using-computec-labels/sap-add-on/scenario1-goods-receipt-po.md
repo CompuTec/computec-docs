@@ -77,6 +77,9 @@ Mapping rules used in this scenario:
 | StringPar3 | Parameter | Item Code (Item Code)         |
 | StringPar1 | Parameter | ItemName (ItemName)           |
 | StringPar4 | Sql       | SELECT @DistNumber FROM DUMMY |
+| NumberofCopies | Sql | SELECT 5 FROM DUMMY |
+
+In addition to String Pars, we have added NumberofCopies to always print 5 copies statically. If we need to make this value dynamic based on user input, we can use a field in the database.
 
 Click [here](../../setup/configuration/company-installation-and-configuration.md#mapping-parameters-view) to find out more about mapping parameters configuration.
 
