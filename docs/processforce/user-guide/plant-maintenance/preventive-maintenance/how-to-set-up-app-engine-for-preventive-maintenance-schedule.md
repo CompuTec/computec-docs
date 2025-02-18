@@ -47,4 +47,3 @@ Preventive Maintenance Schedule based on **Time** and **Meter** values set up:
     ![Background Processing configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/image2021-4-28-9-44-34.png)
 
 ---
-By following these steps, you will have successfully set up AppEngine for Preventive Maintenance scheduling, with configurations for both time-based and meter-based schedules. With this setup, your preventive maintenance activities will be executed on time and according to the defined parameters, leading to improved equipment reliability and reduced downtime.

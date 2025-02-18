@@ -58,4 +58,3 @@ This tab provides functionality for creating and modifying vendor or industry sp
 - **Remarks**: additional notes or comments.
 
 ---
-The Ingredient Master Data form plays a critical role in managing detailed information about ingredients, ensuring compliance with industry standards and regulatory requirements. By utilizing this tool, businesses can streamline the management of ingredient-related data, enhance traceability, and maintain high standards of quality and transparency for their products.

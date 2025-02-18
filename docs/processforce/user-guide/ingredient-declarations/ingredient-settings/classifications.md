@@ -15,4 +15,3 @@ This data is used within the [Ingredient Master Data](../ingredient-master-data.
 ![Ingredient Classification](./media/classifications/ingredient-classification.webp)
 
 ---
-The Classifications form plays a vital role in maintaining compliance and ensuring that products meet specific industry and regulatory requirements. By defining and managing classifications effectively, businesses can enhance transparency, ensure proper labeling, and build trust with consumers and regulatory bodies.

@@ -39,4 +39,3 @@ This report provides a hierarchical view of Maintenance Items (MIs). Users can s
 ![MI](./media/reports/MI.webp)
 
 ---
-These reports are powerful tools for effective maintenance management, offering visibility into historical readings, structured data, and quick access to relevant documents. By leveraging these insights, organizations can enhance operational efficiency, ensure data accuracy, and maintain a robust maintenance process.

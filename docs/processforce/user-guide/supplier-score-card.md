@@ -115,4 +115,3 @@ Here you can add, display or delete files connected to the Score Card.
 6. Review Summary and Details.
 
 ---
-The Supplier Score Card is an essential tool for businesses aiming to improve supplier relationships and ensure consistent procurement performance. By offering a transparent and detailed evaluation based on key metrics such as quality, delivery punctuality, and quantity accuracy, it empowers organizations to make data-driven decisions. Whether for improving supplier negotiations or addressing performance gaps, the Supplier Score Card is a strategic asset for efficient supply chain management.

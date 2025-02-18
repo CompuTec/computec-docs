@@ -15,4 +15,3 @@ This data is used within [Ingredient Master Data](../ingredient-master-data.md),
 ![Ingredients Category](./media/ingredients-category/ingredient-category.webp)
 
 ---
-The Ingredients Category form is a valuable tool for systematically managing ingredients and nutrients, streamlining their organization and documentation. By categorizing ingredients, businesses can improve efficiency in data management, enhance product labeling accuracy, and ensure better compliance with industry standards.

@@ -142,5 +142,3 @@ The grid section provides additional details and controls for defining and manag
 **Last MO status Date/Time** – The date and time when the status of the last Maintenance Order was updated.
 
 ---
-
-The Preventive Maintenance Schedule form is a powerful tool that helps organizations automate and streamline their maintenance processes, ensuring timely interventions and reducing downtime. By utilizing various scheduling parameters and customizing schedules for each specific MI and MO, businesses can optimize the maintenance lifecycle and improve operational efficiency. With flexibility in defining schedules based on time, meters, or manual triggers, the form provides a comprehensive approach to preventive maintenance management.

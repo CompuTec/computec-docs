@@ -15,4 +15,3 @@ This data is used within the [Ingredient Master Data](../ingredient-master-data.
 :::
 
 ---
-The Allergen form provides an essential framework for tracking and managing allergen information in products and materials. By utilizing this tool, businesses can enhance product safety, improve transparency, and comply with regulatory standards, thereby fostering consumer trust and reducing liability risks.
