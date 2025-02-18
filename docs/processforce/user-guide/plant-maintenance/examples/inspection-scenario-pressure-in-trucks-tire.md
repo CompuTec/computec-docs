@@ -33,4 +33,3 @@ The user wants to prepare an MO template for cyclic inspection pressure in truck
 | 16 | Reporting of MO | MO has to be in Status = Started <br/>RMBM Option Inspection Reading for each Checkpoint | Yes | [Step 16](https://youtu.be/bHSvfJ8LAtI?si=ab5krw4cHrKQlGu_) |
 
 ---
-This structured approach ensures a thorough inspection of truck tire pressures, enhancing operational safety and vehicle reliability. By following these steps, you can standardize the process, reduce manual effort, and ensure compliance with maintenance requirements. Regularly updating and refining the template as per operational needs will further improve the inspection process.

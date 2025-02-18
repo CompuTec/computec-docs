@@ -81,4 +81,3 @@ To create an Activity for Batch Master Data:
 >Note: The Document Type will be set to Batch Master Data, and the Batch Number will be automatically copied into the Document Number field in the Linked Documents tab.
 
 ---
-Integrating activities with ProcessForce documents in SAP Business One enhances workflow management and ensures that all interactions with business partners are documented and easy to track. By linking activities to critical documents such as Manufacturing Orders, Complaints, and Quality Control reports, businesses can streamline their operations and maintain a clear record of all relevant actions. This functionality not only improves communication within the organization but also helps maintain better accountability and transparency in business processes.

@@ -19,4 +19,3 @@ Data set in this tab are used on [Item Ingredient Master Data](./item-ingredient
 ![Recommended Daily Intake](./media/recommended-daily-intake/recommended-daily-intake.webp)
 
 ---
-By leveraging this form, you can ensure that product labels reflect the correct nutritional information, which is crucial for consumer safety and regulatory adherence. This tool streamlines the process of calculating and tracking nutrient values, contributing to more efficient product management and compliance.

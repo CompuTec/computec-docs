@@ -27,4 +27,3 @@ The following data can be specified:
 - **Category**: the category of ingredients the nutrient falls under. For more information, click [here](../ingredient-declarations/ingredient-settings/ingredients-category.md).
 
 ---
-By effectively utilizing the Nutrient Master Data form, you can maintain accurate and comprehensive nutrient records, ensuring that product labeling and ingredient declarations are precise and meet regulatory standards.

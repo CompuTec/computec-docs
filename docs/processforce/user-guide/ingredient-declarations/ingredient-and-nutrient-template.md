@@ -31,4 +31,3 @@ Similarly, nutrients can be added by selecting the Nutrient Code, where only the
 ![Ingredient Nutrient Nutrients Template](./media/ingredient-and-nutrient-template/ingredient-nutrient-nutrients-template.webp)
 
 ---
-By using the Ingredient and Nutrient Template, users can significantly reduce the time spent on data entry, ensuring consistency and accuracy in ingredient and nutrient management across products. This tool enhances workflow efficiency while maintaining precise data records.

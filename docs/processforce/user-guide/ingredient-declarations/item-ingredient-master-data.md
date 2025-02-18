@@ -83,4 +83,3 @@ This feature allows you to create and modify vendor or industry specifications f
 - **Remarks**: additional notes related to the specification.
 
 ---
-The Item Ingredient Master Data form provides a comprehensive tool for managing and defining ingredient and nutrient details for each item. It helps maintain accurate records of ingredients, allergens, certifications, and specifications, which are vital for regulatory compliance, product management, and ensuring high product quality standards. By efficiently utilizing this form, businesses can streamline data management and improve their product tracking processes.
