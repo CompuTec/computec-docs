@@ -32,4 +32,3 @@ SAP Business One is configured to determine the number of dimension fields and c
 ![Configuration](./media/overview/general-settings-dimension.png)
 
 ---
-By incorporating Distribution Rules and Cost Centers into both Items and Resources, ProcessForce provides robust tools for efficient cost management and allocation. The uniform configuration across multiple forms and documents simplifies processes, enhances transparency, and supports precise cost analysis, empowering businesses to make informed decisions and optimize operations.

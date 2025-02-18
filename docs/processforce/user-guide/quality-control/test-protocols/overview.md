@@ -158,6 +158,3 @@ Test Protocol Template is duplicated with all its content, and the Template code
 Once all required changes are made, click the "Add" button to save the new template. The duplicate template is now ready for use.
 
 ---
-Test Protocols play a vital role in ensuring effective and efficient Quality Control processes. Test Protocols empower businesses to maintain high-quality standards while optimizing workflows.
-
-By integrating these structured plans, organizations can achieve better compliance, transparency, and overall quality assurance.

@@ -43,4 +43,3 @@ The Test Protocol and Quality Control Test forms also allow users to define spec
 ![Item Master QC Item](./media/quality-control-configuration/item-master-qc-item.webp)
 
 ---
-By configuring these settings properly, businesses can ensure that their quality control processes are streamlined and that all necessary resources and items are tracked accurately throughout the testing process.

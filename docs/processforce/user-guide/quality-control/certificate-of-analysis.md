@@ -56,4 +56,3 @@ You can also set constraints for the Property, including:
 - **Value From, Value To**: defines the numeric values of constraints.
 
 ---
-By assigning Business Partners to specific Test or Item Properties, ProcessForce allows you to generate customized Certificates of Analysis tailored to each customer's specific requirements. This flexibility helps ensure that the CoAs meet varied industry standards and customer needs, facilitating smoother quality control processes and enhancing customer satisfaction.

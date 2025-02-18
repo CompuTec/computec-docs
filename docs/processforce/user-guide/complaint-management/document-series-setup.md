@@ -21,4 +21,3 @@ For instance, you can create distinct document series for each Complaint Type, e
 To learn more, watch the video [Complaint Management - Creating a Document Series](https://www.youtube.com/watch?v=qmcf-uwU_Ok).
 
 ---
-By setting up document series effectively, businesses can enhance their ability to manage complaints systematically, ensuring that no issue is overlooked and resolution processes are optimized.

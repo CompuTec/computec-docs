@@ -123,4 +123,3 @@ Click [here](../routings/resources.md) to find out more about Resources.
 To learn about Resource Distribution and Cost Dimensions, refer to [Resources - Distribution and Cost Dimensions](../costing-material-and-resources/distribution-and-cost-dimensions/resources-distribution-and-cost-dimensions.md).
 
 ---
-Resource Costing is an essential tool for organizations seeking precise cost management in manufacturing. By understanding the interplay between fixed and variable costs, businesses can enhance decision-making, improve financial reporting, and achieve greater efficiency in production processes. Proper configuration and adherence to guidelines ensure the accuracy and reliability of Resource Costing functions.

@@ -52,4 +52,3 @@ In this case, the time cost will be calculated by dividing the resource's Hourly
 Stock and Queue Time are treated the same as Run Time when the time is configured as Fixed (seconds/minutes/hours).
 
 ---
-Implementing batch size costing allows manufacturers to distribute costs accurately across production volumes, leading to more precise pricing strategies and enhanced operational efficiency.

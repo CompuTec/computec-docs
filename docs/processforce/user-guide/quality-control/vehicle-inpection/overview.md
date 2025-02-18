@@ -35,4 +35,3 @@ Values in the drop-down list are predefined. Click [here](./vehicle-inspection-r
 Once all necessary fields have been completed, simply click OK to post the document. Please note that the Truck License Plate and Trailer Number are mandatory for posting the document.
 
 ---
-By utilizing the Vehicle Inspection function, you can efficiently document the condition of incoming deliveries, ensuring that the Goods Receipt process is not only thorough but also well-documented for future reference. This feature enables users to capture important inspection details, which helps in maintaining a high standard of quality control and operational efficiency in the warehouse.

@@ -70,4 +70,3 @@ To use the option:
 The configuration shown in the screenshot demonstrates that Quality Plan 01 applies to Item Product-A for Business Partners with QC Qualification Codes ranging from A to C. This plan outlines the required number of samples to be tested for specific batch sizes and the ratio of passed to failed tests necessary for the batch to pass Quality Control.
 
 ---
-The Quality Plan feature is a critical tool for maintaining high standards of quality control. Whether for internal production or supplier quality assurance, this feature empowers businesses to ensure consistent product quality and build trust with partners and customers. With its structured approach and customization options, the Quality Plan functionality is a cornerstone for achieving excellence in quality management.

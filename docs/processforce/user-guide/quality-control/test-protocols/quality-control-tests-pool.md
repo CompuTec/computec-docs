@@ -40,4 +40,3 @@ Item details, along with the Required Acceptance and Rejection Number fields, wi
 Click Add after entering all required fields. You can then review and open each individual Quality Control Test from the pool.
 
 ---
-The Quality Control Tests Pool is a powerful tool for streamlining quality assurance processes, particularly when testing involves multiple samples. By automating the creation and management of individual Quality Control Tests within a pool, it ensures consistency, accuracy, and efficiency in determining pass/fail outcomes. This feature not only saves time but also enhances the reliability of quality control decisions, providing a robust framework for maintaining product standards.

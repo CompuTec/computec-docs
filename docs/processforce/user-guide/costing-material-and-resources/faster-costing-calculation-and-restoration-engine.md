@@ -88,4 +88,3 @@ Unchecking the checkbox causes Costing calculations to be performed according to
 - A new option on Costed Bill of Materials: Bill of Materials cost calculation based on actual Raw Materials costs in SAP Business One system. If the option is disabled, costs are calculated based on the Costing Details configuration of Raw Materials (Item Costing form).
 
 ---
-The Faster Costing Calculation and Restoration Engine revolutionizes the costing process by streamlining data management and utilizing advanced bulk operations for seamless and efficient updates. With this new mechanism, businesses can significantly reduce the time required for cost calculations and benefit from enhanced accuracy and flexibility. By enabling this option, organizations gain the ability to respond faster to market demands, make better-informed decisions, and improve overall operational efficiency.

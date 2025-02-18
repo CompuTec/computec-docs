@@ -33,4 +33,3 @@ You can access the Vehicle Inspection Reason Group setup via this path:
 This feature helps ensure that your inspection reasons are well-organized and easily selectable when completing vehicle inspections
 
 ---
-By utilizing both the Vehicle Inspection Reason and Vehicle Inspection Reason Group, you can streamline the inspection documentation process, ensuring consistency and accuracy in recording inspection results. This functionality helps maintain a high standard of quality control and efficiency during the Goods Receipt process.

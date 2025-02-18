@@ -29,4 +29,3 @@ Based on Manufacturing Order Operation:
 For processes requiring a quality check before or after an operation (such as a "First Check"), the Test Protocol should be defined in the Routing, associating the QC check directly with the operation. In such cases, requirements like blocking the operation from starting through PDC if the QC check (First check) has not been passed can be enforced.
 
 ---
-By linking Test Protocols to specific operations within the production process, ProcessForce enables greater control over quality management. It allows manufacturers to apply quality checks precisely when needed and ensures that operations are carried out only when quality standards are met. This method helps to maintain high-quality standards and prevent operational delays due to non-compliance.

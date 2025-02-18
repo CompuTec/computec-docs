@@ -27,4 +27,3 @@ Proper cost allocation is critical for both Scrap and Co-Products. This ensures 
 ![Scrap](./media/coproduct-and-scrap-costing/scrap-costing-3.webp)
 
 ---
-Co-Product and Scrap Costing are essential for managing production efficiency and controlling expenses. By accurately defining Item Costing records and implementing cost allocation strategies, businesses can enhance their operational insights and maintain financial accuracy.

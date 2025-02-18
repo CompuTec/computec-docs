@@ -41,4 +41,3 @@ To view additional documentation, click [here](./resource-calendar.md).
 ![Resource Tooling](./media/overview/machine-code.png)
 
 ---
-ProcessForce's scheduling solution is a comprehensive tool designed to streamline production processes by leveraging dynamic scheduling features and master data management. Its intuitive interface, advanced filtering capabilities, and detailed resource management ensure efficiency and precision in planning. By utilizing the resources and tutorials provided, manufacturers can enhance their operations and meet production demands with ease.

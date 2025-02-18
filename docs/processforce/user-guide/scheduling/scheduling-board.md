@@ -209,4 +209,3 @@ Let's consider two scenarios - `Delivery date is possible to realize it` and `De
 This option allows considering Sales Order options (Minimum and Maximum Quantity, Order Multiple) when creating Semi Finished Manufacturing Orders suggestions on Scheduling Board. This gives the sales operator a tool to provide an accurate estimated arrival time.
 
 ---
-The Scheduling Board is a powerful production planning tool that simplifies the management of Manufacturing Orders, even within complex product structures. Whether working with Sales Orders or Manufacturing Orders, the Scheduling Board provides the flexibility and insights needed to meet delivery commitments effectively.

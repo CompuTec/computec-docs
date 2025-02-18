@@ -37,4 +37,3 @@ To create a Quality Control Test for a specific batch:
 5. The Batch Number from the Batch Master Data form is automatically populated in the Transaction Tab of the newly created Quality Control Test.
 
 ---
-By integrating the creation of Quality Control Tests with Batch Master Data, this feature simplifies the quality assurance process while maintaining precision. Predefined Test Protocols and batch-specific parameters ensure that quality checks align with operational requirements, promoting efficiency and compliance throughout the testing workflow.

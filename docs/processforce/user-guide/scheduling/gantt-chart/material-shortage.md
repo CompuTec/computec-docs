@@ -65,4 +65,3 @@ The Shortages Report tab in the Gantt chart displays shortages for each item and
 ![Material Shortages Graph](./media/material-shortage/material-shortages-graph.webp)
 
 ---
-The Material Shortage functionality streamlines the management of production equipment and material shortages, enhancing visibility and planning efficiency. By leveraging the Gantt chart for real-time tracking and the Shortages Report for actionable insights, businesses can minimize production delays and optimize their supply chain. Together, these tools empower users to proactively address shortages and maintain operational continuity.

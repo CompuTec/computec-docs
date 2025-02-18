@@ -198,6 +198,3 @@ Right-clicking on a taskbar opens the Resource Context Menu, offering advanced o
 To know more about Resource planning board, click [here](/docs/processforce/user-guide/scheduling/gantt-chart/resource-planning-board/).
 
 ---
-The Gantt chart in ProcessForce is a powerful tool designed to streamline production processes. With its intuitive features and flexibility, the Gantt chart provides a centralized platform to enhance productivity and decision-making.
-
-By familiarizing yourself with its functionalities, you can unlock its full potential and drive efficiency in your production workflows.

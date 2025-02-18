@@ -23,4 +23,3 @@ In this first step, select the document type(s) for which Quality Control Test d
 In the second step, a list of documents is displayed based on the filter conditions applied in the previous step. This list shows documents that have not yet had associated Quality Control Tests created. To select the documents, check or uncheck the boxes in the "Selected" column. Once the desired documents are chosen, click "Run" to create the corresponding Quality Control Test documents.
 
 ---
-By following these steps, you can efficiently create Quality Control Test documents in bulk, ensuring no document is overlooked in the testing process.

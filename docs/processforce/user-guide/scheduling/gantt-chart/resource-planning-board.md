@@ -136,4 +136,3 @@ The work time for the highlighted task on an alternative resource is shown on th
 You can then drag and drop the task to reschedule it between resource.
 
 ---
-The Resource Planning Board provides a comprehensive and intuitive way to manage and optimize resource allocation within a manufacturing environment. By using the Resource Planning Board, you can ensure that tasks are properly allocated, manufacturing orders are tracked accurately, and resources are utilized effectively. Whether it's manually adjusting task order, leveraging alternative resources, or managing time constraints, the board helps streamline production planning and boost overall efficiency.

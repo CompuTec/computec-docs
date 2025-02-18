@@ -70,4 +70,3 @@ Once these prerequisites are fulfilled, users can configure the Frequency Tab to
 ![Frequency Tab](./media/ncmr-non-conforming-materials-report/frequency-tab.webp)
 
 ---
-The Non-Conforming Materials Report (NCMR) provides a structured framework for identifying and addressing quality issues in materials. By integrating seamlessly with the Quality Control Test process, it allows users to efficiently track non-conformance, define corrective actions, and ensure accountability through alerts and documentation. Leveraging NCMR can help organizations reduce defects, improve product quality, and streamline their quality management processes.
