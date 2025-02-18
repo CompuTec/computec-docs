@@ -26,4 +26,3 @@ The Quality Control function within ProcessForce is designed to ensure thorough 
 ![Quality Control](./media/overview/quality-control-test.webp)
 
 ---
-With this comprehensive approach, businesses can ensure higher standards of quality throughout their operations, leading to more consistent and reliable products and services.

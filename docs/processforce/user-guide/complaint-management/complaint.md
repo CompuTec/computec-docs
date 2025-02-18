@@ -91,4 +91,3 @@ Complaint statuses allow tracking the progress of each case:
 - **Closed** – a document is closed; **no further editing can be done**.
 
 ---
-ProcessForce's Complaint form simplifies the management of customer, supplier, and internal complaints by providing a detailed and organized workflow. With features like document numbering, transaction tracking, actionable alerts, and quality control integration, businesses can efficiently address and resolve issues while maintaining high service standards.

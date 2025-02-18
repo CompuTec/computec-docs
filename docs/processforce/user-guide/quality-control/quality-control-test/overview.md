@@ -143,6 +143,3 @@ When duplicating, the content from all tabs and header data is copied, with the 
 The duplicated document opens in adding mode, allowing users to make any necessary edits. Once all required details are updated, click the "Add" button to save the new record.
 
 ---
-The Quality Control Testing process within ProcessForce and SAP Business One is a robust solution for managing quality assurance activities.
-
-This guide aims to provide a clear understanding of the process, enabling users to maximize the benefits of Quality Control Testing.

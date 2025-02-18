@@ -68,4 +68,3 @@ Click Choose From List button to open the list of alternative resources previous
 Additionally, you can switch a [Task to an Alternative Resource from the CompuTec PDC level](/docs/pdc/user-guide/task-activities/overview).
 
 ---
-By utilizing Alternative Resources, production processes become more agile and resilient to changes. This feature simplifies resource management, minimizes disruptions, and ensures that operations continue smoothly even when adjustments are required.

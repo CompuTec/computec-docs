@@ -15,4 +15,3 @@ For a more detailed understanding, watch the [Complaint Management introduction 
 ![Complaint](./media/overview/complaint.webp)
 
 ---
-By leveraging the Complaint Management capabilities of ProcessForce, organizations can ensure continuous improvement and maintain a high standard of service across all departments.

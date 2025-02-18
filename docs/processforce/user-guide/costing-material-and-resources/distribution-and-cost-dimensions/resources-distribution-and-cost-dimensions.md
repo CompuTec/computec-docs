@@ -69,4 +69,3 @@ When a Time Booking or Time Correction document is saved, the associated Cost Ce
 ![Distribution and Cost Dimensions](./media/resources-distribution-and-cost-dimensions/chart-of-accounts.png)
 
 ---
-By integrating cost centers and projects across multiple forms, SAP Business One ProcessForce provides a robust framework for financial tracking and operational transparency. The ability to default, inherit, and adjust these values empowers businesses to maintain control over resource allocation and financial reporting, ensuring both accuracy and adaptability in their operations.

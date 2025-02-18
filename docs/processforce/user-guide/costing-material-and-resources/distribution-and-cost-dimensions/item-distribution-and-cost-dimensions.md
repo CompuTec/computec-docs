@@ -66,4 +66,3 @@ Distribution Rules can be allocated as follows, and once set at this level will 
     ![SAP Business One Goods Receipt](./media/item-distribution-and-cost-dimensions/goods-receipt.png)
 
 ---
-By enabling the allocation of Distribution Rules and Cost Centers across master data forms and transactional documents, ProcessForce ensures seamless integration and accurate dimension tracking. This systematic approach enhances operational efficiency and provides a robust framework for financial analysis and reporting. Adopting these practices will empower organizations to make data-driven decisions and optimize resource utilization.

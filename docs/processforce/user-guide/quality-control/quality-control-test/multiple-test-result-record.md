@@ -95,4 +95,3 @@ To delete a row:
 ![Deleting Rows](./media/multiple-test-result-record/record-multiple-test-results-deleting.png)
 
 ---
-The ability to record multiple test results provides users with a robust mechanism for tracking and analyzing test outcomes. This feature not only simplifies the recording process but also enhances the visibility of test performance through color coding, statistics, and automated calculations. By leveraging these tools, users can ensure that their quality control processes remain comprehensive, accurate, and efficient.

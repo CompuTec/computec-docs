@@ -97,4 +97,3 @@ Finished products are costed by aggregating the costs of all semi-finished produ
 For further details on item distribution and cost dimensions, refer to the [Distribution and Cost Dimensions](../distribution-and-cost-dimensions/item-distribution-and-cost-dimensions.md) guide.
 
 ---
-ProcessForce’s robust costing methodology ensures precision and flexibility, enabling businesses to calculate product costs accurately across various levels of production. Whether managing purchased materials, semi-finished goods, or finished products, this bottom-up approach integrates seamlessly with SAP Business One, supporting informed decision-making and effective cost control

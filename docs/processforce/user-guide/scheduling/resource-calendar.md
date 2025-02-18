@@ -81,4 +81,3 @@ The Resource Calendar Update Tool allows you to assign predefined calendar templ
 ![Resource Calendar Update Tool](./media/resource-calendar/resource-calendar-update-tool-resource.webp)
 
 ---
-The Resource Calendar provides a comprehensive solution for managing resource availability, working hours, exceptions, and holidays. It is an essential tool for businesses looking to optimize resource capacity and ensure smooth and efficient production schedules. By using the Resource Calendar Template and Update Tool, you can automate and standardize resource scheduling, saving time and reducing errors in manual planning.

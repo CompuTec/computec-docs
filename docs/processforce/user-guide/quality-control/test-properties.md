@@ -42,4 +42,3 @@ This form allows the user to define Test Property Groups that are used to group 
 ![Test Property Group](./media/test-properties/test-property-group.webp)
 
 ---
-Test Properties are the backbone of effective Quality Control, ensuring that all measurable attributes and conditions are systematically defined, grouped, and analyzed. By leveraging tools such as the Property Reference Library and Test Property Groups, organizations can enhance their quality assurance practices and gain deeper insights into testing outcomes. Structured data management through these features contributes to higher efficiency, consistency, and reliability in maintaining quality standards.

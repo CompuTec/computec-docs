@@ -86,4 +86,3 @@ Default fixed and overhead values are automatically added to the item costing re
 - Newly added items will automatically use the updated default values.
 
 ---
-By configuring both SAP Business One and ProcessForce settings correctly, you can ensure accurate and efficient costing processes. Each step in this guide is designed to align the system settings with your operational needs, minimizing discrepancies and streamlining production cost management. Follow the outlined paths and tips for a seamless implementation.

@@ -153,4 +153,3 @@ An Inventory Revaluation transaction is automatically generated when there is a 
 This applies to Standard Costing valuation only.
 
 ---
-Cost Categories play a pivotal role in efficient production cost management, allowing for flexibility, simulation, and accurate valuation. By leveraging tools like Cost Roll-Up and Cost Roll-Over, businesses can maintain precise cost data for decision-making and optimize their production processes. Adopting these practices ensures that the system remains aligned with business goals and operational efficiency.

@@ -13,4 +13,3 @@ The Complaint Group form enables users to define and manage Complaint Groups, to
 ![Complaint Group](./media/complaint-group/complaint-group.webp)
 
 ---
-By effectively utilizing Complaint Groups, businesses can streamline their complaint management process, ensuring that reasons for complaints are categorized accurately for comprehensive analysis and improved decision-making.

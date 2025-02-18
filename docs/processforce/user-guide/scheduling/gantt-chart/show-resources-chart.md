@@ -82,4 +82,3 @@ Mixing:
 ![Mixing](./media/show-resources-chart/mixing.webp)
 
 ---
-The Resource Chart is a powerful tool for ensuring efficient resource management in manufacturing processes. By offering real-time insights into resource availability, workload, and capacity, it helps users make informed decisions and optimize their operations. Whether focusing on individual resources or entire resource groups, this functionality provides the clarity needed to prevent overloads and maximize productivity.

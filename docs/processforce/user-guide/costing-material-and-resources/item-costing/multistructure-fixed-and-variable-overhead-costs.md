@@ -68,4 +68,3 @@ Once you click the OK button, the total cost will be added to the corresponding 
 When you choose the Multistructure Overhead Costs option again, previously saved costs and their values will be displayed, giving you the ability to modify them as needed.
 
 ---
-The Multi-Structure Fixed and Variable Overhead Costs feature in ProcessForce allows businesses to manage and track overhead costs with greater flexibility and precision. By categorizing costs into different types and applying them to item and resource costings, companies can ensure more accurate cost roll-ups and improve financial reporting. This feature is a powerful tool for achieving more transparent and reliable costing processes, ultimately leading to better financial decision-making and operational efficiency.

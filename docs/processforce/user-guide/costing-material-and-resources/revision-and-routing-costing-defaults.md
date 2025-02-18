@@ -30,4 +30,3 @@ Click [here](../item-details/overview.md) to find out more about Item Details.
 Click [here](../formulations-and-bill-of-materials/production-process/overview.md) to find out more about Production Process.
 
 ---
-By setting default Revisions and Routings, businesses can ensure precise and consistent cost calculations, supporting better financial and operational decision-making.

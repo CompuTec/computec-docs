@@ -26,4 +26,3 @@ Follow the same navigation steps as described above to view resource capacity in
 ![Scheduling marked](./media/view-planned-resource-capacity/scheduling-marked-2.webp)
 
 ---
-By utilizing the resource capacity view, you can effectively manage and adjust schedules to optimize resource usage, address overloads, and maintain efficient production planning.

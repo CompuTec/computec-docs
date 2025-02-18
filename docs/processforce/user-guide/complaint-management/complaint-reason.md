@@ -13,4 +13,3 @@ The Complaint Reason form allows users to define and manage Reason Codes, which 
 ![Complaint Reason](./media/complaint-reason/complaint-reason.webp)
 
 ---
-By establishing clear and organized Reason Codes, businesses can gain deeper insights into the root causes of complaints, improving their ability to address issues efficiently and enhance overall service quality.

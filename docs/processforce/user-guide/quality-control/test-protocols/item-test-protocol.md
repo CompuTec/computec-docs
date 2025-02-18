@@ -15,4 +15,3 @@ The Item's Test Protocols form serves as a powerful tool for retrieving all Test
 The form's header provides filtering options for Test Protocols. When an Item Code is selected, the Item Name is auto-populated. The Revision Code defaults to the most recent revision but can be adjusted if needed. To refine the results further, specific transaction checkboxes can be selected. If no checkboxes are checked, the form will display all Test Protocols linked to the chosen Item and its Revision.
 
 ---
-This functionality simplifies the process of managing and reviewing Test Protocols, enabling users to efficiently track and analyze quality control data associated with specific Items and Revisions. It supports accurate and organized quality management practices.

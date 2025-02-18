@@ -99,4 +99,3 @@ To activate the option, perform the following steps:
    A separate file is saved for changes made for each Operation.
 
 ---
-Resource Balancing enhances manufacturing efficiency by automatically selecting the most optimal resources for completing tasks. By considering various scheduling and operational parameters, it helps streamline production and ensure timely completion. However, it’s important to test this feature in a test environment before deploying it in production to avoid unexpected issues.

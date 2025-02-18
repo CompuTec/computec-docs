@@ -39,4 +39,3 @@ The Quality Control Tests creation process can also be initiated directly from t
     ![List of Quality Control Tests](./media/qc-test-from-mo/list-of-quality-control-test.webp)
 
 ---
-By following these steps, you can efficiently create and access Quality Control Tests directly from the Manufacturing Order, streamlining the quality assurance process within your production workflow.
