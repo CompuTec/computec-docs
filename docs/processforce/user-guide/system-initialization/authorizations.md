@@ -4,7 +4,11 @@ sidebar_position: 2
 
 # Authorizations
 
-The creation of ProcessForce documents depends on specific user authorizations
+Proper user authorizations are essential for managing ProcessForce documents efficiently. Assigning the right access ensures that users can perform necessary actions while maintaining system security and compliance.
+
+---
+
+The creation of ProcessForce documents depends on specific user authorizations. To manage user authorizations, navigate to:
 
 :::info Path
     Administration → System Initialization → Authorizations → General Authorizations
@@ -12,23 +16,25 @@ The creation of ProcessForce documents depends on specific user authorizations
 
 ![Path](./media/authorizations/authorizations-main.webp)
 
-Click a specific username to see and change authorizations assigned to a specific user.
+Click on a specific username to view and modify the authorizations assigned to that user.
 
-Authorizations connected to ProcessForce specifically can be found in the Authorizations form → Users → ProcessForce.
+ProcessForce-related authorizations are located at:
+
+:::info Path
+Authorizations Form → Users → ProcessForce
+:::
 
 A specific authorization can have one of three values:
 
-- **Full Authorization** – user can create, change and post a specific document
+- **Full Authorization**: Allows users to create, modify, and post a specific document.
+- **Read Only**: grants view access without editing rights.
+- **No Authorization**: restricts access to the document entirely.
 
-- **Read Only** – user can open a document but cannot change it
+    ![Path](./media/authorizations/authorizations-options.webp)
 
-- **No Authorization** – a lack of access to a specific document for a specific user
+If authorization settings appear grayed out, the user has superuser privileges, granting them full access to all functions.
 
-![Path](./media/authorizations/authorizations-options.webp)
-
-If the authorizations for a specific user are grayed out, it indicates that the user has superuser privileges and owns all the authorizations.
-
-You can set up superuser privileges in the Users form:
+To grant superuser privileges, go to:
 
 :::info Path
     Administration → Setup → General → Users
@@ -36,14 +42,13 @@ You can set up superuser privileges in the Users form:
 
 ![Superuser](./media/authorizations/super-user.webp)
 
-Only users with a Professional license assigned can change authorizations.
+>Note: Only users with a Professional license assigned can modify authorizations.
 
 To work with certain ProcessForce documents, specific authorizations are needed. For example, to create, modify, and post Production Goods Receipts and Production Goods Issues, as well as the corresponding Pick Orders and Pick Receipts, you must grant Full Authorization for the following permissions:
 
-- Goods Receipt and Goods Issue: Authorizations form → Inventory → Inventory Transactions → Goods Receipt [and] Goods Issue
+- **Goods Receipt and Goods Issue**: Authorizations form → Inventory → Inventory Transactions → Goods Receipt [and] Goods Issue
+- **Journal Entry**. This setting is required for Goods Receipt and Goods Issue to reflect on financials: Authorizations Form → Financials → Journal Entry
+- **Pick Receipt and Pick Order**: User Authorization → ProcessForce → Production → Inventory Transaction → Pick Receipt [and] Pick Issue
+- **Numbering Series**: This is needed for documents series management: Authorizations form → Administration → Numbering Series.
 
-- Journal Entry. This setting is required for Goods Receipt and Goods Issue to reflect on financials: Authorizations Form → Financials → Journal Entry
-
-- Pick Receipt and Pick Order: User Authorization → ProcessForce → Production → Inventory Transaction → Pick Receipt [and] Pick Issue
-
-- Numbering Series. This is needed for documents series management: Authorizations form → Administration → Numbering Series.
+---
