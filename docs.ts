@@ -35,5 +35,11 @@ export default [
         pluginId: "appengine",
         currentVersion: "3.0",
         includeCurrentVersion: true,
+    },
+    {
+        label: "Premium",
+        pluginId: "premium",
+        currentVersion: "1.0",
+        includeCurrentVersion: true,
     }
 ] as DocConfig[];
