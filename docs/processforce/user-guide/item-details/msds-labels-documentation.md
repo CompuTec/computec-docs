@@ -6,9 +6,9 @@ sidebar_position: 9
 
 ## Compliance Data
 
-Industries that sell their products locally and internationally must provide their customers with documents such as Material Safety Data Sheet (MSDS) in a functional language as supporting shipping documentation.
+In industries that manufacture and distribute products locally and internationally, compliance with safety regulations is crucial. Companies must provide essential documentation, such as Material Safety Data Sheets (MSDS), in the required languages to support shipping and regulatory requirements.
 
-Using a combination of the forms listed below, MSDS master data can be defined.
+By utilizing the following forms, users can configure MSDS master data:
 
 - Classification
 - Phrases
@@ -16,23 +16,27 @@ Using a combination of the forms listed below, MSDS master data can be defined.
 - Groups
 - Properties.
 
+---
+
 ## Configuration
 
 :::note Path
     Administration → System Initialization → Company Details → Basic Initialization Tab
 :::
 
-Check the Multi-Language Support checkbox:
+To ensure documentation is available in multiple languages, follow these steps:
 
-![Company](./media/msds-labels-documentation/company-details-multi-language.webp)
+1. Check the Multi-Language Support checkbox:
 
-Go to the upper menu → Within View → Indicator Display, select Translatable Fields:
+    ![Company](./media/msds-labels-documentation/company-details-multi-language.webp)
+
+2. Navigate to the upper menu → Within View → Indicator Display, select Translatable Fields:
 
 ![Translatable Fields](./media/msds-labels-documentation/translatable-fields.webp)
 
 ## Example
 
-The Phrases form is used to define the EU Phrases lists. The code is the same in all countries, but the name is different in each language. Data source: [Chemical Risk & Safety Phrases](http://schoolscout24.de/cgi-bin/rsp/rspinput.cgi).
+The Phrases form allows users to define regulatory phrases, such as those from EU Safety and Risk Phrases. While the code remains the same across countries, translations ensure accurate documentation in different languages. Data source: [Chemical Risk & Safety Phrases](http://schoolscout24.de/cgi-bin/rsp/rspinput.cgi).
 
 *Czech* **R1** Výbušný v suchém stavu.
 
@@ -41,3 +45,5 @@ The Phrases form is used to define the EU Phrases lists. The code is the same in
 *Dutch* **R1** In droge toestand ontplofbaar.
 
 ![Phrase Translation](./media/msds-labels-documentation/phrase-translation.webp)
+
+---
