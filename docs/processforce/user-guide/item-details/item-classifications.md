@@ -4,34 +4,46 @@ sidebar_position: 5
 
 # Item Classifications
 
-The Item Classification function allows the user to define specific classifications with its name and code, for example, corrosive, toxic, and non-toxic. Classifications can be grouped.
+In inventory management, item classifications help categorize products based on specific attributes such as corrosive, toxic, or non-toxic. This feature enables better organization, compliance, and streamlined processes. Additionally, classifications can be grouped for enhanced management and reporting.
 
 ---
 
 ## Item Classifications
 
+To access Item Classifications, navigate to:
+
 :::note Path
     Administration → Setup → Item Details → Item Classification
 :::
 
-In this form, you can define a specific classification. You can also choose on what kind of documents a specific classification can be used (by checking a corresponding checkbox).
+Item classifications allow users to define unique names and codes for categorizing items. Users can also specify which documents a classification applies to by selecting the corresponding checkbox.
 
 ![Item Classifications](./media/item-classifications/item-classification.webp)
 
 ## Item Classification Groups
 
+To access Item Classification Groups, navigate to:
+
 :::note Path
     Administration → Setup → Item Details → Item Classification Groups
 :::
 
-The Item Classification Group function allows the user to create groups of item classifications, for example, EU Classifications.
+To further streamline inventory organization, users can group related classifications under Item Classification Groups. For example, regulatory frameworks like EU Classifications can be structured into predefined groups for easy reference.
 
 ![Classification Group](./media/item-classifications/item-classification-group.webp)
 
 ## Item Classification Assigning
 
-Once created, classification can be assigned to an item in the Item Details form, Classifications tab. By clicking a second column and then a circle displayed within a field, a classification may be chosen:
+Once created, classification can be assigned to an item in the Item Details form, Classifications tab.
+
+**Steps to Assign a Classification**:
+
+1. Navigate to the second column.
+2. Click the circle icon that appears in the field.
+3. Choose the appropriate classification from the list.
 
 ![Classification Assigning](./media/item-classifications/assigning-classification.webp)
 
-A chosen classification can be assigned to a specific document type by checking a checkbox in a related column.
+Classifications can also be linked to specific document types by selecting the checkbox in the related column, ensuring seamless integration into various workflows.
+
+---

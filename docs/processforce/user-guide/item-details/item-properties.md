@@ -4,17 +4,15 @@ sidebar_position: 4
 
 # Properties
 
-This form allows the user to define a specific property – physical and chemical characteristics, e.g., color.
+Managing item properties effectively is crucial for ensuring consistency and accuracy in inventory management, quality control, and production processes. In SAP, item properties allow users to define specific characteristics - both physical and chemical - such as color, appearance, and scent. A list of valid values may also be defined from the reference library. For example, color has valid values of yellow, blue, red, and green. These properties help categorize items, improve traceability, and streamline operations.
 
-The corresponding groups and subgroups can also be defined, for example, physical and color.
-
-A list of valid values may also be defined from the reference library. For example, color has valid values of yellow, blue, red, and green.
-
-Checking the Quality Control Testing box implies that the Item Property will be used during the QC testing process.
+This guide covers how to set up item properties, organize them into groups, reference valid values, and assign them to items and batches within SAP.
 
 ---
 
 ## Item Properties
+
+To access Item Properties, navigate to:
 
 :::note Path
     Administration → Setup → Item Details → Item Properties
@@ -24,15 +22,13 @@ Checking the Quality Control Testing box implies that the Item Property will be 
 
 ## Item Property Groups
 
+To access Item Property Groups, navigate to:
+
 :::note Path
     Administration → Setup → Item Details → Item Property Groups
 :::
 
-This form allows the user to define a property group and its details.
-
-You can define a name, a code, and remarks for a specific property group.
-
-Many subgroups with their name, code, and remarks can be defined for every group.
+Item properties can be categorized into groups and subgroups for better organization. For example, a "Chemical Properties" group may contain subgroups like "Appearance" and "Scent." Each group and subgroup can be defined with a name, code, and remarks.
 
 For example, chemical properties can be divided into properties related to appearance or scent.
 
@@ -40,13 +36,13 @@ For example, chemical properties can be divided into properties related to appea
 
 ## Property Reference Library
 
+To access Property Reference Library, navigate to:
+
 :::note Path
     Administration → Setup → Item Details → Property Reference Library
 :::
 
-This form allows the user to create a library of valid values to be used in conjunction with properties.
-
-These valid values can be available for a single or several property types relating to items, resources, operations, and operation inputs and outputs.
+To ensure standardization, a Property Reference Library can be created. This library contains valid values that can be used across different property types, such as those related to items, resources, operations, and operation inputs and outputs.
 
 ![Property Reference](./media/item-properties/property-reference-library.webp)
 
@@ -54,7 +50,7 @@ These valid values can be available for a single or several property types relat
 
 ### Item Details
 
-Once created, the property can be assigned to an item in the Item Details form, Properties tab. By clicking a second column and then a circle displayed within a field, a property can be chosen:
+Once item properties are created, they can be assigned to specific items in the Item Details form under the Properties tab. By clicking a second column and then a circle displayed within a field, a property can be chosen:
 
 ![CFL](./media/item-properties/item-details-cfl.webp)
 
@@ -64,10 +60,14 @@ A chosen item group can be assigned to a specific type of document by checking a
 
 ### Batch Master Data
 
+To access Batch Master Data, navigate to:
+
 :::note Path
     Inventory → Item Management → Batches → Batch Master Data
 :::
 
-Predefined properties can be assigned to a specific batch of a product.
+Item properties can also be assigned to specific batches of a product, ensuring batch-level tracking of key attributes.
 
 ![Batch](./media/item-properties/batch-master-data-properties.webp)
+
+---
