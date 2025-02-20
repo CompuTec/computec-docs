@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Batch Template, Serial Template Definition
 
-Here, you can configure the default format of the batch number generator for creating batch and serial numbers during the receipt of Purchase and Production Orders. This information makes traceability and a batch and serial management process much easier. You can set a number generating template that contains important information, e.g. date, time, item number, or prefix.
+You can configure the default format of the batch number generator to create batch and serial numbers during the receipt of Purchase and Production Orders. This setup enhances traceability and simplifies the batch and serial management process. The number-generating template can include essential details such as date, time, item number, or prefix.
 
 :::note Path
     Administration → Setup → Inventory → Batch Template Definition
@@ -40,7 +40,7 @@ If a Template is not specified for a specific level, a Template from a level abo
 
 ![General Settings Template](./media/batch-serial-template-definition/general-settings-templates.webp)
 
-You can decide when a Batch number is created considering the Manufacturing Order status. To do this, check the Batch Number generated at the MOR checkbox and choose one of the options. When selecting one of the Status options, the Batch will be generated on the appropriate status change or creation of a Manufacturing Order with the specified status.
+You can determine when a Batch number is created based on the status of the Manufacturing Order. To do this, check the "Batch Number Generated at MOR" checkbox and select one of the available options. Depending on the chosen status, the Batch will be generated either when the Manufacturing Order is created with the specified status or upon a status change.
 
 :::caution
     Please remember that when the Batch Number generated at the MOR option is checked, it is impossible to use Classification options on a [Batch Template](#defining-batch-template).
@@ -52,9 +52,8 @@ You can decide when a Batch number is created considering the Manufacturing Orde
     Administration → Setup → Inventory → Item Groups → ProcessForce tab
 :::
 
-When checkboxes are unchecked, it is possible to set a Batch or Serial template for an Item Group.
-
-When checkboxes are checked, General Settings Batch or Serial template is used.
+- When checkboxes are unchecked, it is possible to set a Batch or Serial template for an Item Group.
+- When checkboxes are checked, General Settings Batch or Serial template is used.
 
 ![Item Groups](./media/batch-serial-template-definition/item-groups.webp)
 
@@ -64,9 +63,8 @@ When checkboxes are checked, General Settings Batch or Serial template is used.
     Inventory → Item Details → Batch Details tab
 :::
 
-When checkboxes are unchecked, it is possible to set a Batch or Serial template for an Item.
-
-Item Group Settings Batch or Serial template is used when checkboxes are checked.
+- If checkboxes are unchecked, a batch or serial template can be set for an item.
+- Item Group Settings Batch or Serial template is used when checkboxes are checked.
 
 ![Item Group Inherit](./media/batch-serial-template-definition/item-details-batches-inherit.webp)
 
@@ -130,7 +128,7 @@ When adding a new Batch/Serial template, the date and counter fields have the fo
 
 ![Batch Template Date Time](./media/batch-serial-template-definition/batch-template-date-time.png)
 
-### Example 3: Adding the prefix
+### Example 3: Adding a prefix
 
 - To enter text or other symbols as a prefix to the batch number, use `[value]`, in this example, `PF` to get the PF prefix
 - To string another element of data enter the + sign for MS SQL version and || for HANA version
@@ -188,23 +186,22 @@ You can use others than specified in the Batch Template form fields to be incorp
 
     ![Query Generator](./media/batch-serial-template-definition/query-generator.webp)
 
-    <details>
-        <summary>Click here to check how to chech a field name</summary>
-        <div>
-            1. go to Upper Menu → View → System Information and check the option (or click Ctrl + Shift + I):
+    **To check a field name**:
 
-            2. point the field with a cursor – the name of the field will be displayed in System Messages Log:
+    1. navigate to Upper Menu → View → System Information and check the option (or click Ctrl + Shift + I):
 
-            ![Result](./media/batch-serial-template-definition/field-name-check.webp)
-        </div>
-    </details>
+    2. point the field with a cursor – the name of the field will be displayed in System Messages Log:
 
-    Choose the name and Query Category and click Save:
+        ![Result](./media/batch-serial-template-definition/field-name-check.webp)
 
-    ![Save](./media/batch-serial-template-definition/save-query.webp)
+    3. Choose the name and Query Category and click Save:
+
+        ![Save](./media/batch-serial-template-definition/save-query.webp)
 
 2. Click the Classification field on Goods Receipt PO and go to Tools → Customization Tools → User-Defined Values - Setup:
+
     ![User Defined Values Setup](./media/batch-serial-template-definition/user-defined-values-setup.png)
+
     Choose the previously created query, set other values, and click Update.
 
 3. From now on Classification field will be set on the Whse value on every change on the Whse field. Now, if you use Classification in Batch Template, a value for a warehouse will be incorporated in the template.
@@ -251,3 +248,5 @@ Serial Template defining process looks the same as the Batch Template defining p
 "SerialNumber" nvarchar(36) , "LotNumber" nvarchar(36), "ManufacturingSerialNumber" nvarchar(36)
 
 ![Serial Template](./media/batch-serial-template-definition/serial-template.png)
+
+---
