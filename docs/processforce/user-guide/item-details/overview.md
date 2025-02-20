@@ -4,9 +4,9 @@ sidebar_position: 1
 
 # Overview
 
-The Item Details form is used to define the product master data associated with an item. ProcessForce provides a possibility to set an extended and diverse product definition. Item details make many item-associated activities easier, e.g. creating ingredient and allergen declaration, tracing batches, attaching files.
+The Item Details form is used to define and manage the product master data associated with an item. ProcessForce allows for an extended and detailed product definition, making item-related activities more efficient, such as ingredient and allergen declarations, batch tracking, and file attachments.
 
-Item Details record is being created automatically when creating Item Master Data. If an Item Master Data was created before ProcessForce installation, a restore procedure must be performed to obtain Item Details to the Item Master Data. You can check how to do this [here](../system-initialization/data-restore).
+An Item Details record is automatically created when an Item Master Data entry is generated. However, if an Item Master Data was created before installing ProcessForce, a restore procedure must be performed to link the Item Details with the Item Master Data. You can find the restore procedure [here](../system-initialization/data-restore).
 
 :::note Path
     Inventory → Item Details
@@ -16,15 +16,15 @@ Item Details record is being created automatically when creating Item Master Dat
 
 The Item Details form defines the master data associated with an item. These data elements include the following:
 
-- Revisions; to define valid to and from dates
-- Batch Details; to choose a batch template or serial template and define expiry/consume date and shelf life/inspection interval
-- Properties; to define properties, for example, physical, chemical definitions, and nutritional details
-- Classification; to categorize products, for example, toxic, non-toxic, hazard and non-hazard
-- Phrases; to define, for example, EU phrases as part of MSDS, covering, for example, safety, hazard, and clean-up
-- Groups; to group similar products together, for example, acids and solvents
-- Text; to define, for example, hazard instructions, safety text, and cleaning information in case of a product spillage
-- Item Property Reference Library; to define the valid values of a property, for example, color; white, black, blue
-- Attachments, to reference, for example, MSDS, work instructions, safety sheets, production videos.
+- Revisions: to define valid to and from dates
+- Batch Details: to choose a batch template or serial template and define expiry/consume date and shelf life/inspection interval
+- Properties: to define properties, for example, physical, chemical definitions, and nutritional details
+- Classification: to categorize products, for example, toxic, non-toxic, hazard and non-hazard
+- Phrases: to define, for example, EU phrases as part of MSDS, covering, for example, safety, hazard, and clean-up
+- Groups: to group similar products together, for example, acids and solvents
+- Text: to define, for example, hazard instructions, safety text, and cleaning information in case of a product spillage
+- Item Property Reference Library: defines acceptable values for a property (e.g., color options: white, black, blue).
+- Attachments: links essential documents such as MSDS, work instructions, safety sheets, and production videos.
 
 All the above forms, except the Item Reference Library, contain tick boxes for production orders, shipment documentation, pick lists, MSDS, purchase orders, returns, and others.
 
@@ -51,11 +51,11 @@ Please also check the following option to use it: [Issue Residual Quantity on th
 
 ## Revisions
 
-This form allows the user to define and record the revisions of an item.
+The Revisions form enables users to define and track the revisions of an item throughout its lifecycle.
 
-Revisions are used to record the product life cycle of a parent and item within a Bill of Materials. Revisions can be used to vary product structure for the same product.
+Revisions help document changes in a product's structure within a Bill of Materials (BOM), allowing variations in product design for the same item.
 
-Revisions can be entered for the following documents:
+Revisions can be applied to the following documents:
 
 - Sales Orders
 - Manufacturing Orders
@@ -70,10 +70,10 @@ Revisions are not visible within Inventory.
 
 Each Revision in CompuTec ProcessForce has a status that reflects its current lifecycle stage. These statuses, defined on the Item Details form, allow for effective control and management of each Revision within the system. The available Revision Statuses include:
 
-- Active (ACT) – Revisions that are fully operational and available for use in Manufacturing Orders.
-- Being Phased Out (OUT) – Revisions that are in the process of being phased out and will soon become obsolete.
-- Engineering (ENG) – Revisions undergoing refinement and testing.
-- Obsolete (OBS) – Retired Revisions that are no longer in active use.
+- Active (ACT): Revisions that are fully operational and available for use in Manufacturing Orders.
+- Being Phased Out (OUT): Revisions that are in the process of being phased out and will soon become obsolete.
+- Engineering (ENG): Revisions undergoing refinement and testing.
+- Obsolete (OBS): Retired Revisions that are no longer in active use.
 
 :::note
 The validations and restrictions outlined below are applicable starting from **CompuTec ProcessForce version 10.0 R26**. Please ensure your system is updated to R26 or later to access these features, as earlier versions may not support these functionalities.
@@ -114,22 +114,22 @@ According to the Revision Status, specific restrictions are applied as outlined 
 
 ### Default
 
-If more than one Revision is created for an Item, one has to be checked as 'Default.' This revision will be put by default in all revision fields on a document to which a related Item is added.
+When multiple Revisions exist for an Item, one must be marked as "Default." This default Revision will automatically populate all Revision fields in documents where the related Item is added.
 
 ### Default for MRP
 
-The field 'Default for MRP' is defined within the Bill of Materials form to determine which revision is the default for MRP planning purposes.
+The "Default for MRP" field is set within the Bill of Materials form to designate the primary Revision used for MRP planning.
 
-If 'Default for MRP' is grayed out, please create a Bill of Materials with a required Item Code and Revision. Reload the Item Details form.
+If the "Default for MRP" field is grayed out, ensure that a Bill of Materials exists for the required Item Code and Revision. Then, reload the Item Details form.
 
-ProcessForce revisions behave in the same manner as SAP:
+ProcessForce Revisions follow the same behavior as SAP:
 
 - if both dates are empty – revision is valid all the time,
 - if Valid From date is set up – revision is valid from this data,
 - if Valid To date is set up – revision is valid to this date,
 - if both dates are set up – revision is valid between these dates.
 
-Four different statuses may be assigned to one revision:
+Revisions can have one of four statuses:
 
 - Active – revision is set and ready to work with
 - Being Phased Out – is being prepared and is not ready to be used
@@ -140,22 +140,22 @@ Four different statuses may be assigned to one revision:
 
 This setting is relevant only for Items with the Standard Valuation method and is used for Cost Roll-Over. When you perform Cost Roll-Over on an Item with the Standard Valuation method on Revision that has the 'Default for Costing' checkbox checked, [Inventory Revaluation](http://localhost:3000/docs/processforce/user-guide/costing-material-and-resources/cost-categories#inventory-revaluation--standard-costing/) is created on a price change.
 
-This field applies only to items with the Standard valuation method. For these Items, Inventory Items Cost is synchronized with the Item Costing of the selected Revision. If multiple Routings are defined for this Revision, then Routing selected as "Roll-up default" in Production Process will be selected for synchronization.
+For these items, the Inventory Item Cost is automatically synchronized with the Item Costing of the selected Revision. If multiple Routings exist for this Revision, the Routing marked as "Roll-up default" in the Production Process will be used for synchronization.
 
 Suppose the Inventory Item Cost differs from the one in the "Default for Costing" Revision and "Roll-up default" Routing. In that case, the Inventory Revaluation document will be created during Roll-over to category 000.
 
-On the other hand, if an Inventory Revaluation document is created manually, then a new Item Cost is updated for such a Revision and Routing.
+On the other hand,  if an Inventory Revaluation document is manually created, the new Item Cost will be updated accordingly for the specified Revision and Routing.
 
 ## Batch Details
 
-The yellow arrow leads to:
+The yellow arrow navigates to:
 
 - Administration → Setup → Inventory → Batch Template Definition
 - Administration → Setup → Inventory → Serial Template Definition
 
 This form allows the user to choose [a batch or serial template for an item](/docs/processforce/user-guide/item-details/batch-serial-template-definition/). Users can select a template from the list or inherit it from the Item Group.
 
-The user can also define the [expiry date or consume by date (or inherit from the item group)](/docs/processforce/user-guide/inventory/batch-control/batch-control-settings/extended-batch-expiry-evaluation/). If a user establishes an expiry date or consume-by date, it can specify the number of days prior warning. This initial warning data is used within an Alert query to notify those batches arriving at their expiry date.
+The user can also define the [expiry date or consume by date (or inherit from the item group)](/docs/processforce/user-guide/inventory/batch-control/batch-control-settings/extended-batch-expiry-evaluation/). If an expiry or consume-by date is set, a warning period (in days) can be specified. This warning data is used within an alert query to notify users of batches approaching their expiry date.
 
 When creating a batch record, the expiry date is auto-calculated based on the shelf life interval.
 
@@ -171,39 +171,40 @@ To get more information on this subject, click [here](/docs/processforce/user-gu
 
 ## Properties
 
-The yellow arrow leads to:
+The yellow arrow navigates to:
 
 - Administration → Setup → Item Details → Item Property Groups
-
 - Administration → Setup → Item Details → Property Reference Library
 
-This form allows the user to add and remove properties for the item master. Properties define physical and chemical characteristics.
+This form enables users to add and remove properties for the item master. Properties define the physical and chemical characteristics of an item.
 
-The user can select from many expressions to record, for example, a specific value or a from/to value, dependent upon the expression.
+Users can select from multiple expressions to record values, such as specific values or a range (from/to), depending on the selected expression.
 
 ![Item Details Properties](./media/overview/item-details-properties.webp)
 
 ## Classifications
 
-The yellow arrow leads to:
+The yellow arrow navigates to:
 
 - Administration → Setup → Item Details → Item Classifications
 
-This form allows the user to add and delete classification codes for the item master. Classifications categorize products, e.g., as toxic or non-toxic. By checking the required checkbox, classification can be connected to certain kinds of documents.
+This form allows users to add and delete classification codes for the item master. Classifications categorize products (e.g., toxic or non-toxic). By selecting the required checkbox, classifications can be linked to specific document types.
 
 ![Classifications](./media/overview/item-details-classifications.webp)
 
 ## Phrases
 
-The yellow arrow leads to:
+The yellow arrow navigates to:
 
-- Administration → Setup → Item Details → Item Phrases refer to [safety or risk phrases](#phrases) used to create a Material safety data sheet. By checking the required checkbox, phrases can be connected to certain kinds of documents.
+- Administration → Setup → Item Details → Item Phrases
+
+Item Phrases refer to [safety or risk phrases](#phrases) used to generate a Material Safety Data Sheet. By selecting the required checkbox, phrases can be linked to specific documents.
 
 ![Phrases](./media/item-details-phrases.webp)
 
 ## Origins
 
-Country of Origin is the country of manufacture, production, or growth where the product comes from and is used extensively to support Country of Origin labeling (COOL), traceability, and specific ingredients in a Customers' recipe.
+The Country of Origin refers to the country where a product is manufactured, produced, or grown. This information is critical for Country of Origin Labeling (COOL), traceability, and determining specific ingredients in a customer’s rec
 
 Click [here](/docs/processforce/user-guide/item-details/country-of-origin) to find out more.
 
@@ -211,26 +212,28 @@ Click [here](/docs/processforce/user-guide/item-details/country-of-origin) to f
 
 ## Groups
 
-The yellow arrow leads to:
+The yellow arrow navigates to:
 
 - Administration → Setup → Item Details → Item Groups
 
-This form allows users to add and delete groups for the item master. [Group](item-groups.md) describes similar products, e.g., acids. By checking the required checkbox, groups can connect to certain documents.
+This form allows users to add and delete groups for the item master. [Group](item-groups.md) describes similar products, e.g., acids.  By selecting the required checkbox, groups can be linked to specific documents.
 
 ![.Groups](./media/overview/item-details-groups.webp)
 
 ## Texts
 
-The yellow arrow leads to:
+The yellow arrow navigates to:
 
 - Administration → Setup → Item Details → Item Texts
 
-This form allows the user to add and delete [item text](item-texts.md) for the item master. Any text, e.g., hazard instructions or safety texts, may be added. Texts can be connected to certain kinds of documents by checking the required checkbox.
+This form allows the user to add and delete [item text](item-texts.md) for the item master. Users can add any text, such as hazard instructions or safety texts. Texts can be linked to specific documents by selecting the required checkbox.
 
 ![Text](./media/overview/item-details-texts.webp)
 
 ## Attachments
 
-This form allows the user to attach documents to the item master.
+This form enables users to attach documents to the item master.
 
-This operates in the same way as SAP Business One.
+Attachments function similarly to those in SAP Business One.
+
+---
