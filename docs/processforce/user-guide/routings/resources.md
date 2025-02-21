@@ -16,6 +16,8 @@ To access Resources, navigate to:
 
 ## Resources
 
+![Resource](./media/resources/resource.webp)
+
 ### Resource Types
 
 | Type of Resource | Has Calendar? | Visible on Gantt Chart? |    Hourly rates    | Connected with | Time Booking    | Times (Setup, Run) | Number of resources |
@@ -53,60 +55,60 @@ To access Resources, navigate to:
   - Pieces per minute
   - Pieces per second
 
-  When using cycles, only Fixed Rates can be used for Run Time.
-- Define the fixed and variable time elements of the resource.
-- This also includes the unit of rate for each time element.
-- Piece equates to the unit of measure of the item number being produced.
-- The valid rates for Queue, Setup and Stock time are fixed seconds, minutes, and hours.
-- Run Time can use any of the unit rates.
-- Cycles can be checked to define the resource has a cycle capacity.
-- Cycle capacity is the number of production units processed per cycle.
-- Number Of Resources allows defining the default number of units of resources to work on. Note that setting a Number Of Resources affects run time.
-  - Example: If the Run Time is 10 hours and only 1 resource is assigned, the Planned Run Time remains 10 hours. If the resource count increases to 2, the Planned Run Time adjusts to 5 hours.
-  - While the production process is affected by this change, cost calculations consider the total work performed. For instance, if 10 hours of work is completed in 5 hours using 2 resources, the cost is calculated based on each resource working 5 hours (totaling 10 hours).
-
-![Resource](./media/resources/resource.webp)
+- When using cycles, only Fixed Rates can be used for Run Time.
+  - Define the fixed and variable time elements of the resource.
+  - This also includes the unit of rate for each time element.
+  - Piece equates to the unit of measure of the item number being produced.
+  - The valid rates for Queue, Setup and Stock time are fixed seconds, minutes, and hours.
+  - Run Time can use any of the unit rates.
+  - Cycles can be checked to define the resource has a cycle capacity.
+  - Cycle capacity is the number of production units processed per cycle.
+  - Number Of Resources allows defining the default number of units of resources to work on. Note that setting a Number Of Resources affects run time.
+    - Example: If the Run Time is 10 hours and only 1 resource is assigned, the Planned Run Time remains 10 hours. If the resource count increases to 2, the Planned Run Time adjusts to 5 hours.
+    - While the production process is affected by this change, cost calculations consider the total work performed. For instance, if 10 hours of work is completed in 5 hours using 2 resources, the cost is calculated based on each resource working 5 hours (totaling 10 hours).
 
 #### Infinite checkbox
 
-Checking the checkbox results in ignoring the related Resource Calendar (it allows to overload a Resource) – a Resource with this option checked will be available all the time then.
+Enabling this checkbox allows the Resource to bypass its associated Resource Calendar, effectively making it available at all times by permitting overloads.
 
-The primary business purpose of this option is to assign it to Subcontracting types of Resources, but it can also be assigned to any Resource (Machine, Tool) that does not have a capacity limit.
+This feature is primarily intended for Subcontracting Resources but can also be applied to other Resources, such as Machines or Tools, that do not have capacity constraints.
 
 #### Resource Status
 
-It is possible to set up either Active or Inactive status for a Resource.
+Each Resource can be set to either Active or Inactive status:
 
-A Resource with Inactive status cannot be added to the Manufacturing Order or Bill of Materials.
+- **Active**: the Resource is available for use in Manufacturing Orders and Bills of Materials.
+- **Inactive**: the Resource cannot be added to Manufacturing Orders or Bills of Materials.
 
-**Example usage**: the option can be used to set Inactive status to mark Resources that were used in the company's production processes but currently are not (e.g., were sold or scraped).
+Example Usage: Marking a Resource as Inactive can be useful for tracking equipment that was once used in production but is no longer in operation, such as assets that have been sold or scrapped.
 
 ### Properties
 
-- This form allows you can add and remove Resource Properties.
-- Properties can be used to define additional data relating to the resource, for example, machine set-up details and consumables.
-- You can set a numeric value with conditions, e.g., Temperature to be between 10 and 20.
-- You can set a Reference Code, e.g., Property Colour = White.
-- You can add Remarks.
+The Properties section allows for adding and removing attributes related to a Resource. These properties provide additional details such as:
+
+- Machine setup configurations and consumable requirements.
+- Numeric values with conditions (e.g., setting Temperature limits between 10 and 20).
+- Reference codes (e.g., Property Color = White).
+- Custom remarks for documentation.
 
 Click [here](/docs/processforce/user-guide/routings/resources#resource-properties) to find out more about Resource Properties.
 
 ![Resource Properties](./media/resources/resource-properties.webp)
 
-### Linked Tools Tab
+### Linked Tools tab
 
 ![Linked Tools](./media/resources/resource-linked-tools.webp)
 
-A Linked Tool is a Resource with a Tool type assigned to the header Resource. The Linked Tools are taken under consideration during production if the parent Resource is included in the related Production Process (as an alternative Resource). The default Resource of the Operation (in the Production Process) is replaced by a Resource with a Linked Tool on Manufacturing Order based on the [Resource Balancing option](/docs/processforce/user-guide/scheduling/resource-balancing/) (it has to be checked).
+A Linked Tool is a Tool-type Resource that is associated with a primary Resource. These tools are considered during production when the parent Resource is included in the relevant Production Process as an alternative Resource. The default Resource of the Operation (in the Production Process) is replaced by a Resource with a Linked Tool on Manufacturing Order based on the [Resource Balancing option](/docs/processforce/user-guide/scheduling/resource-balancing/) (it has to be checked).
 
 Linked Tools are also on the Gantt chart (under the parent Resource).
 
-### Planning Information Tab
+### Planning Information tab
 
 :::caution
-    If you update Planning Information when Scheduling Board is opened, it is required to reopen it to have the changes on it.
+    If you update Planning Information while the Scheduling Board is open, you must reopen it to reflect the changes.
 
-    A Resource sets up Planning Information: you can set up different settings for each of the Resources in the system.
+  A Resource configures Planning Information, allowing different settings to be defined for each Resource in the system.
 :::
 
 ![Resource Planning Data](./media/resources/resource-planning-data.webp)
@@ -171,70 +173,75 @@ If the settings here return any result, a warning icon will appear on Scheduling
 
 ### Accounting Panel
 
-**Resource Accounting** – choosing the 'No Posting' option means that the related Resource times will not be considered during financial transactions (e.g., while recording a Time Booking). Choosing a predefined Resource Accounting scheme causes recording the financial aspect of recording Resource times to the account defined in the scheme.
+**Resource Accounting** – Selecting the 'No Posting' option ensures that the associated Resource times are not considered in financial transactions (e.g., when recording a Time Booking). Choosing a predefined Resource Accounting scheme enables financial tracking of Resource times, with postings directed to the account specified in the scheme.
 
-**Relevant for Cost Accounting Project and Dimensions** can be set. According to how many cost centers are enabled within SAP Business One General Settings, one or more dimensions fields are displayed
+**Relevant for Cost Accounting Project and Dimensions** - This setting can be configured based on the number of cost centers enabled in SAP Business One General Settings. Depending on the configuration, one or more dimension fields will be displayed.
 
 ### Additional Details Panel
 
-Issue Whs Code and Receipt Whs Code are CompuTec PDC-related fields. [CompuTec PDC Production Issue/Receipt](/docs/pdc/user-guide/task-activities/overview#resource-properties) options are not available if Issue/Receipt Warehouses are not assigned to a specific Resource. For a Production Issue, a Bin Location is not required (just a Warehouse has to be assigned) but **for a Production Issue, it is mandatory to choose a Bin Location**.
+Issue Whs Code and Receipt Whs Code are fields specific to CompuTec PDC. [CompuTec PDC Production Issue/Receipt](/docs/pdc/user-guide/task-activities/overview#resource-properties) options are not available unless Issue/Receipt Warehouses are assigned to a specific Resource. For a Production Issue, a Bin Location is not required - only a Warehouse must be assigned. However, **for a Production Issue, it is mandatory to choose a Bin Location**.
 
-<details>
-    <summary>Click here to find out how to enable Bin Locations</summary>
-    <div>
-        ![Resource Details](./media/resources/resource-details.webp)
+To enable Bin Locations, navigate to:
 
-        Path: `SAP B1 → Administration → Setup → Inventory → Warehouses → General tab`
-
-        ![Warehouse Bins](./media/resources/warehouse-bins.webp)
-    </div>
-</details>
+:::info Path
+  Administration → Setup → Inventory → Warehouses → General tab`
+:::
 
 ### Resource Calendar
 
-- Resource Calendar is created automatically when Resource is added
-- The yellow arrow next to the Resource Calendar field leads to its definition
+- A Resource Calendar is automatically created when a Resource is added.
+- Clicking the yellow arrow next to the Resource Calendar field navigates to its definition.
 - Click [here](/docs/processforce/user-guide/scheduling/resource-calendar/) to find out more about Calendars.
 
 ![Resource Calendar](./media/resources/resource-resource-calendar.webp)
 
 ## Resource Groups
 
+To access Resource Groups, navigate to:
+
 :::info Path
 Administration → Setup → Production → Resource Groups
 :::
 
-This form allows the user to define resource groups, for example mixing vessels, blenders, and ovens.
+This form allows users to define resource groups, such as mixing vessels, blenders, and ovens.
 
 ![Resource Group](./media/resources/resource-group.webp)
 
 ## Resource Properties
 
+![Resource Properties](./media/resources/resource-property.webp)
+
+To access Resource Properties, navigate to:
+
 :::info Path
     Administration → Setup → Production → Resource Properties
 :::
 
-This form allows the user to define properties for a Resource, for example, pressure, temperature, and machine speed. A Property can have reference values assigned, e.g. White, Red for Colour, or numeric values, e.g. Temperature can be 20. Reference values can be chosen in Resource form, Properties tab from the once set up in Resource Properties form. Numeric values can be set from the Resource form, Properties tab.
+This form enables users to define resource properties, such as pressure, temperature, and machine speed.
 
-![Resource Properties](./media/resources/resource-property.webp)
+- A property can have reference values assigned, e.g., White, Red for Color, or numeric values, e.g., Temperature = 20.
+- Reference values set in the Resource Properties form can be selected in the Properties tab of the Resource form.
+- Numeric values can also be defined in the Properties tab of the Resource form.
 
 ### Property Reference Library
+
+To access Property Reference Library, navigate to:
 
 :::info Path
     Administration → Setup → Item Details → Property Reference Library
 :::
 
-This form allows you to create a library of valid values to be used as Reference values for Properties.
+The Property Reference Library allows you to define a set of valid reference values for properties.
 
-These valid values can be available for a single property type or several property types, relating to items, resources, operations, and operation inputs and outputs.
+These values can be assigned to a single property type or multiple property types, including items, resources, operations, and operation inputs and outputs.
 
-For value to be available as a reference value for Resource Property, the right checkbox has to be checked (Resource Property
-
-Check the Resource Property checkbox for a value to be available as a reference value for Resource Property:
+To enable a value as a reference for a Resource Property, select the Resource Property checkbox.
 
 ![Resource Property Reference Library](./media/resources/resource-property-reference-library.webp)
 
 ## Resources Accounting
+
+To access Resource Accounting, navigate to:
 
 :::info Path
     Administration → Setup → Financials → Resources Accounting
@@ -256,9 +263,8 @@ Further, for every resource time type, you can select accounts for the type of t
 - Variable Overhead
 
 :::caution Time Variance Accounts
-    Please note that all **Time Variance Accounts** cannot be configured.
-
-    We plan to provide functionality that will leverage them during the posting of Manufacturing Order closure in future versions.
+    Time Variance Accounts
+  Time Variance Accounts are currently not configurable but will be utilized in future updates for Manufacturing Order closure postings.
 :::
 
 The Work In Progress Account can be added here or is based on the WIP account defined for the Document type – Production Order.
@@ -266,6 +272,8 @@ The Work In Progress Account can be added here or is based on the WIP account de
 ![Resource Accounting](./media/resources/resource-accounting.webp)
 
 ## Resource Calendar
+
+To access Resource Calendar, navigate to:
 
 :::info Path
     Production → Routings → Resource Calendar
@@ -281,7 +289,7 @@ Resource Calendar is used to define the availability of a Resource for productio
 
   ![Exceptions](./media/resources/resource-calendar-exceptions.webp)
   
-- In the Holidays tab you can define days on which resource is not available.
+- The Holidays tab you define days on which resource is not available.
 
   ![Holidays](./media/resources/resource-calendar-holidays.webp)
 - You Can Also button let you perform the following tasks automatically:
@@ -299,4 +307,6 @@ Resource Calendar is used to define the availability of a Resource for productio
 
 ## Alternative Resource
 
-A Resource can have assigned a number of other Resources, to which a Manufacturing Order task can be switched, e.g. in case of downtime of an original Resource. Click [here](/docs/processforce/user-guide/scheduling/gantt-chart/alternative-resources/) to find out more.
+A Resource can have assigned a number of other Resources, to which a Manufacturing Order task can be switched, e.g. in case of downtime of an original Resource. Click [here](/docs/processforce/user-guide/scheduling/gantt-chart/alternative-resources/) to find out more on Alternative Resources.
+
+---
