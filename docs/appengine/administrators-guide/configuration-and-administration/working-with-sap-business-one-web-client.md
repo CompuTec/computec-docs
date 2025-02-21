@@ -41,7 +41,7 @@ To manually install and activate CompuTec Web Client Start, follow these steps:
 
 >**Note**: Ensure you have the necessary permissions to securely access the Extension Manager.
 
-## Configuring CORS Settings
+## Configuring Content Security Policy (CSP) Settings
 
 To enable proper functionality of the Web Client, especially for embedded frames and cross-domain requests, you need to configure CORS (Cross-Origin Resource Sharing) settings in SAP Web Client. Correct CORS configuration prevents security issues and ensures smooth integration.
 For detailed guidance, refer to the official SAP Help Portal: [Configuring CORS Settings for SAP Business One Web Client](https://help.sap.com/docs/SAP_BUSINESS_ONE_WEB_CLIENT/e6ac71d18c7543828bd4463f77d67ff7/1acda7a66c434b4e9dbc3b1f8ae21d6e.html)
