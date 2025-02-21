@@ -6,7 +6,9 @@ sidebar_position: 1
 
 The following pages contain information on working with Routings.
 
-Routing is a sequence of specific operations performed on particular Resources while manufacturing an Item. Routing and Bill of Materials constitute a production process for an Item.
+A Routing defines the sequence of specific operations carried out on designated Resources during the manufacturing of an Item. Together with the Bill of Materials, Routing forms the foundation of the production process for an Item.
+
+To access Routings, navigate to:
 
 :::info Path
   Production → Routings

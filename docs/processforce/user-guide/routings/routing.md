@@ -4,15 +4,13 @@ sidebar_position: 4
 
 # Routing
 
-Routing consists of Operations and Resources. You can set the required values for both of them.
+Routing is a crucial aspect of production management, consisting of operations and resources that define the manufacturing process. It helps in structuring workflows, scheduling tasks, and allocating resources effectively. By configuring routing correctly, businesses can optimize production efficiency and ensure seamless execution of manufacturing orders.
 
-You can define Multiple Routings for a product, but you have to set one of them as a default in the related Bill of Material.
-
-Routes may be active or non-active by checking the active checkbox within the form header.
-
-Routings are an optional function to be used in conjunction with Bills of Materials and Manufacturing Orders.
+You can define multiple routings for a product, but one must be set as the default within the corresponding Bill of Material (BOM). Additionally, routings can be activated or deactivated by checking the active checkbox in the form header. While optional, routings are highly beneficial when used alongside Bills of Materials and Manufacturing Orders.
 
 ---
+
+To access Routing, navigate to:
 
 :::info Path
     Production → Routings → Routing
@@ -22,29 +20,19 @@ Routings are an optional function to be used in conjunction with Bills of Materi
 
 ## Adding and Changing Operation Data
 
-The top grid within this tab allows the user to select, add and remove operations.
-
-The user can also define the operation which overlays or operates parallelly to the base one and specify the overlay percentage.
-
-This data will be used for scheduling purposes.
+The Operations section allows users to select, add, or remove operations within a routing. Additionally, users can define overlay operations that run parallel to base operations and set overlay percentages. This data is essential for scheduling and optimizing production workflows.
 
 ![Routing](./media/routing/routing-operations.webp)
 
 ## Operation Properties
 
-Data is presented to the user within the grid when the user selects the row within the top grid.
-
-The properties of the selected operation are filled in by default in this tab.
-
-This grid allows the user to select and add additional properties for this operation/routing combination and change or remove the default values.
+When a user selects an operation from the top grid, the corresponding properties are displayed in the lower grid. These properties are pre-filled by default but can be modified as needed. Additional operation properties can also be added or removed, ensuring flexibility in defining process parameters.
 
 ## Adding and Changing Resource Data
 
-The top grid within this tab allows the user to select, add and remove resources.
+The Resources section allows users to manage resources associated with operations. Users can select, add, or remove resources and configure their details.
 
-Drop-down box selection allows the user to choose the resource already defined on the operation.
-
-The details of the selected resources are filled in by default in this tab from the [Operations](./operations.md) definition.
+A drop-down selection enables users to choose pre-defined resources linked to an operation, pulling default information from the [Operations](./operations.md) definition.
 
 This grid allows the user to select and add additional resources for this operation/routing combination and remove the defaulted resources.
 
@@ -52,20 +40,20 @@ The fixed and variable time elements values and unit of rates of the selected re
 
 The user can change these default values if required for this specific route/operation/resource combination.
 
-The yellow arrow navigation to:
+The yellow arrow navigates to:
 
+:::info Path
 Production → Technology → Resources → Resources
+:::
 
 ![Routing](./media/routing.webp)
 
 ## Resource Properties
 
-Data is presented to the user within the grid when the user selects the row within the top grid.
-
-The properties of the selected resource/operation are set by default in this grid based on the [Resource](resources.md) definition.
-
-This grid allows the user to select and add additional properties for this resource/operation/routing combination and change or remove the default values.
+Data is presented to the user within the grid when the user selects the row within the top grid. The properties of the selected resource/operation are set by default in this grid based on the [Resource](resources.md) definition. This grid allows the user to select and add additional properties for this resource/operation/routing combination and change or remove the default values.
 
 ## Instructions tab
 
-This tab contains an editable text area that can hold related text information, e.g., instructions and additional notes.
+The Instructions tab provides an editable text area for entering relevant information such as production guidelines, notes, and additional instructions. This ensures that all essential details related to a routing process are documented for easy reference.
+
+---
