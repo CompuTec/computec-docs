@@ -43,10 +43,10 @@ To manually install and activate CompuTec Web Client Start, follow these steps:
 
 ## Configuring Content Security Policy (CSP) Settings
 
-To enable proper functionality of the Web Client, especially for embedded frames and cross-domain requests, you need to configure CORS (Cross-Origin Resource Sharing) settings in SAP Web Client. Correct CORS configuration prevents security issues and ensures smooth integration.
-For detailed guidance, refer to the official SAP Help Portal: [Configuring CORS Settings for SAP Business One Web Client](https://help.sap.com/docs/SAP_BUSINESS_ONE_WEB_CLIENT/e6ac71d18c7543828bd4463f77d67ff7/1acda7a66c434b4e9dbc3b1f8ae21d6e.html)
+To enable proper functionality of the Web Client, especially for embedded frames and cross-domain requests, you need to configure Content Security Policy (CSP) settings in SAP Web Client. Correct CSP configuration prevents security issues and ensures smooth integration.
+For detailed guidance, refer to the official SAP Help Portal: [Configuring CSP Settings for SAP Business One Web Client](https://help.sap.com/docs/SAP_BUSINESS_ONE_WEB_CLIENT/e6ac71d18c7543828bd4463f77d67ff7/1acda7a66c434b4e9dbc3b1f8ae21d6e.html)
 
-**Key steps for configuring CORS**:
+**Key steps for configuring CSP**:
 
 1. Identify the domains that requires access to the Web Client.
 2. Update the configuration file with the approved domains.
