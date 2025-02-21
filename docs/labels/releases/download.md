@@ -47,7 +47,7 @@ Below CompuTec Labels Printing Manager and CompuTec Labels SAP Add-on versions a
 
 | Version | Release Date | Download Link | Release Notes |
 |---|---| ---| --- |
-| 3.0.0 | 21 February 2025 | [Downlaod](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.300.zip) | - |
+| 3.0.0 | 21 February 2025 | [Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.300.zip) | - |
 
 <details>
 <summary>Previous Releases</summary>

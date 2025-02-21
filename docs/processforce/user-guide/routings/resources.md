@@ -4,7 +4,9 @@ sidebar_position: 2
 
 # Resources
 
-These forms allow users to define Resources, Properties, and Groups, that will be used to create Operations.
+Effective production planning requires managing various resources efficiently. Resources in manufacturing include machines, labor, tools, and subcontracting services, each playing a crucial role in the production process. This document outlines the different resource types, their attributes, and how they interact with planning and scheduling in a manufacturing environment.
+
+To access Resources, navigate to:
 
 :::info Path
     Production → Routings → Resources
@@ -29,10 +31,10 @@ These forms allow users to define Resources, Properties, and Groups, that will b
 
 ##### Types of Time
 
-- Queue Time – an initial time before setup. In calculations, it does not have a calendar and does not consume resource
-- Setup Time – time for setting up a machine, uses a calendar, and occupies a resource
-- Run Time – time of resource run
-- Stock Time – the last time, after the run. In calculations, it does not have a calendar and does not consume resource
+- **Queue Time**: an initial time before setup. In calculations, it does not use a calendar or consume resources.
+- **Setup Time**: time for setting up a machine, uses a calendar, and occupies a resource.
+- **Run Time**: active usage time of the resource.
+- **Stock Time**: the last time, after the run. In calculations, In calculations, it does not use a calendar or consume resources.
 
 ##### Rates
 
@@ -59,7 +61,9 @@ These forms allow users to define Resources, Properties, and Groups, that will b
 - Run Time can use any of the unit rates.
 - Cycles can be checked to define the resource has a cycle capacity.
 - Cycle capacity is the number of production units processed per cycle.
-- Number Of Resources allows defining the default number of units of resources to work on. Note that setting a Number Of Resources affects run time. E.g., if Run Time is 10 h and Number of Resources 1, Planned Run Time is 10 h. If the Number of Resources changes to 2, the planned time automatically changes to 5 h. Changing a Number of Resources affects the production process, however during cost calculation, only added-up time will be considered - in accordance with the example: 10 h work is done after 5 h using 2 resources, the cost is calculated as a cost of work of 2 resources for 5 h each (10 h).
+- Number Of Resources allows defining the default number of units of resources to work on. Note that setting a Number Of Resources affects run time.
+  - Example: If the Run Time is 10 hours and only 1 resource is assigned, the Planned Run Time remains 10 hours. If the resource count increases to 2, the Planned Run Time adjusts to 5 hours.
+  - While the production process is affected by this change, cost calculations consider the total work performed. For instance, if 10 hours of work is completed in 5 hours using 2 resources, the cost is calculated based on each resource working 5 hours (totaling 10 hours).
 
 ![Resource](./media/resources/resource.webp)
 
