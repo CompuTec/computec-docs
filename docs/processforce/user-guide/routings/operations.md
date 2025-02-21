@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Operations
 
-These forms allow the user to define Operations, Properties and Input/Output Properties.
+In manufacturing, defining and managing operations is crucial for ensuring efficiency and consistency in the production process. This guide provides an overview of how to set up and configure operations, including properties, input/output specifications, and resource allocation.
 
 To view related video content, click [here](https://www.youtube.com/playlist?list=PLtT6kgaz5YneralBjyvyCSYXbTT0QRHYx).
 
@@ -14,29 +14,27 @@ To view related video content, click [here](https://www.youtube.com/playlist?lis
 
 ## Operations
 
+To access Operations, navigate to:
+
 :::info Path
 Production → Routings → Operations
 :::
 
-This form allows the user to define operations, which will be a part of the routing for making the product.
+Operations are key components of routings used in manufacturing products. This section explains how to define operations and configure their properties to optimize production processes.
 
 ### Header
 
 #### QC Active
 
-This checkbox determines whether a specific Operation is affected by the [Create QC Document for Operation on MOR status change option](/docs/processforce/user-guide/system-initialization/general-settings/qc-tab).
-
-The checkbox is also available from the Manufacturing Order, Production Process, Routing form level.
+This checkbox determines whether a specific operation is subject to quality control (QC) based on the [Create QC Document for Operation on MOR status change option](/docs/processforce/user-guide/system-initialization/general-settings/qc-tab). It is also available at the Manufacturing Order, Production Process, and Routing form levels.
 
 #### Force Order
 
-Checking this checkbox blocks starting this Operation on any Manufacturing Order (booking time in either ProcessForce or CompuTec PDC) before the previous Operation is not finished.
-
-The checkbox is also available from the Manufacturing Order, Production Process, Routing form level.
+Enabling this option ensures that an operation cannot start until the previous operation is completed. This restriction applies to bookings made in both ProcessForce and CompuTec PDC. It is also available at the Manufacturing Order, Production Process, and Routing form levels.
 
 #### Rounding
 
-When this checkbox is checked, the system rounds a number of Item pieces to an integer.
+When selected, this checkbox rounds the number of item pieces assigned to each resource to an integer.
 
 **Example**
 
@@ -49,7 +47,7 @@ If the Rounding checkbox is checked, the system will act the following way: 5 pc
 - 3rd Resource: 1 pc x 8 h,
 - 4th Resource: 2 pcs x 8 h.
 
-Other examples:
+Other distribution examples:
 
 - 3 pcs : 4 Resources = 3 Resources, 1 pc each, the last Resource 0 pcs,
 - 11 pcs : 4 Resources = 3 Resources, 3 pcs each, the last Resource 2 pcs.
@@ -75,11 +73,13 @@ The checkbox is also available from the Manufacturing Order, Production Process,
 ### Resource Properties
 
 - The properties of the selected resource are set as default in this tab.
-- This tab allows the user to select and add additional properties for this resource/operation combination and remove the defaulted values.
+- This tab allows the user to select and add additional properties for this resource-operation combination and remove the defaulted values.
 
 ![Operation Resource Properties](./media/operations/operation-resource-properties.webp)
 
 ## Properties for Operations
+
+To access Operation Properties, navigate to:
 
 :::info Path
     Administration → Setup → Production → Operation Properties
@@ -91,12 +91,12 @@ This form allows the user to define properties for the operation, for example, c
 
 ## I/O Properties for Operations
 
+To access I/O Operation Properties, navigate to:
+
 :::info Path
     Administration → Setup → Production → I/O Operation Properties
 :::
 
-This form allows the user to define an operation's input and output properties.
-
-This is additional data to describe the production process, for example, input viscosity and output viscosity.
+Users can define an operation's input and output properties to provide additional details about the production process, such as input and output viscosity levels.
 
 ![I/O Properties for Operations](./media/operations/i-o-property.webp)
