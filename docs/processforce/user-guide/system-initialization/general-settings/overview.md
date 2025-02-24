@@ -18,3 +18,5 @@ This form allows the user to define the following (among others):
 :::
 
 ![General Tab](./media/general-tab/general-settings-general-tab.webp)
+
+---

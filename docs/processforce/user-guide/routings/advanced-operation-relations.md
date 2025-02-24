@@ -4,11 +4,11 @@ sidebar_position: 5
 
 # Advanced Operation Relations
 
-In previous versions, it was possible to set up Operations in a consecutive sequence only. This option allows the setup of more complicated Operation relations.
+In earlier versions, operations could only be set up in a strict sequential order. However, with the introduction of Advanced Operation Relations, it is now possible to establish more complex dependencies between operations, allowing for greater flexibility and efficiency in production planning.
 
 ---
 
-You can reach the option by right-clicking on Operation in the following locations:
+You can configure operation relations by right-clicking on an operation in the following locations:
 
 :::note Path
     - Production → Routing → Routings → Operations tab
@@ -19,6 +19,8 @@ You can reach the option by right-clicking on Operation in the following locatio
 ![Operation Advanced Relations](./media/advanced-operation-relations/operation-advanced-relations.webp)
 
 ## Operation Relations
+
+Advanced Operation Relations enable different types of dependencies between operations. This ensures better workflow management, improved scheduling, and reduced production bottlenecks.
 
 ![Operation Relations form](./media/advanced-operation-relations/operation-relations-form.webp)
 
@@ -34,8 +36,8 @@ Available options:
 
 **Relation Type**:
 
-- None – the option not used
-- First Operation Finish – a specified operation starts when the first chosen on Relation Operation form Operation is finished.
+- **None**: the option is not used.
+- **First Operation Finish**: a specified operation starts when the first chosen on Relation Operation form Operation is finished.
 
 Example: Settings for Operation 04:
 
@@ -43,37 +45,37 @@ Example: Settings for Operation 04:
 
 Result: Operation 04 starts when Operation 01 is finished
 
-- Last Operation Finish – a specified operation starts when the last of the chosen Relation Operation form Operation is finished
+- **Last Operation Finish**: a specified operation starts when the last of the chosen Relation Operation form Operation is finished.
 
 ![Example](./media/advanced-operation-relations/advanced-relations-example-2.webp)
 
 Result: Operation 04 starts when Operation 02 is finished.
 
-**Is Starting Operation** – choosing this option for a specific Operation makes it start operation. This creates two parallel sequences.
+**Is Starting Operation**: by selecting this option, an operation is designated as a starting operation, creating parallel sequences in the production process.
 
 Example: for Operation 03 **Is Starting Operation** checkbox is checked:
 
 ![Is Starting Operation](./media/advanced-operation-relations/is-starting-operation.webp)
 
-**Overloading** – a specified Operation starts when the chosen on Operation Relation form Operation produces a specified quantity
+**Overloading**: a specified Operation starts when the chosen on Operation Relation form Operation produces a specified quantity
 
 ### Advance Operation Relations Indicator
 
-You can check if Operations has advanced relations assigned by checking the values in the following columns:
+To check if an operation has advanced relations assigned, review the values in the following columns:
 
 ![Advance indication](./media/advanced-operation-relations/advance-relation-indication.webp)
 
-Advance Relation Types:
+**Advance Relation Types**:
 
-- SO – Is Starting Operation
-- FF – First Operation Finish
-- LF – Last Operation Finish
+- **SO** – Is Starting Operation
+- **FF** – First Operation Finish
+- **LF** – Last Operation Finish
 
 ## Operation Relation Map
 
-By visualizing Operations connections, you can check the overall sequence (and all its advanced operations relations).
+To better understand operation dependencies, you can visualize the connections through an Operation Relation Map.
 
-You can reach the option by right-clicking on Routing in the following locations:
+You can reach this feature by right-clicking on Routing in the following locations
 
 :::info Path
     Production → Manufacturing Order → Manufacturing Orders → Operations tab → Operations tab
@@ -86,3 +88,5 @@ You can reach the option by right-clicking on Routing in the following locations
 Example Operations relations chart:
 
 ![Operation Relation Chart](./media/advanced-operation-relations/operation-relation-map.webp)
+
+---
