@@ -6,6 +6,7 @@ toc_max_heading_level: 2
 # MRP Related Configuration
 
 SAP Business One provides robust Material Requirements Planning (MRP) functionality to streamline manufacturing and supply chain processes. Proper configuration ensures seamless synchronization between ProcessForce and SAP Business One, allowing businesses to optimize inventory management, production planning, and order fulfillment.
+
 This page displays options relevant to SAP Business One's MRP functionality.
 
 ---
