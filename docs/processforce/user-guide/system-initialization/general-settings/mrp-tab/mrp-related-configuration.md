@@ -5,19 +5,22 @@ toc_max_heading_level: 2
 
 # MRP Related Configuration
 
+SAP Business One provides robust Material Requirements Planning (MRP) functionality to streamline manufacturing and supply chain processes. Proper configuration ensures seamless synchronization between ProcessForce and SAP Business One, allowing businesses to optimize inventory management, production planning, and order fulfillment.
 This page displays options relevant to SAP Business One's MRP functionality.
 
-**When running SAP Business One MRP please ensure the following:**
+---
 
 ## Configuration
 
-### Configuration fields
+### Configuration Fields
 
-- These fields will ensure that the ProcessForce Bill of Material and Manufacturing Order will synchronise with SAP Business One
-- If you leave the sync box unchecked, BOMs entered into ProcessForce will not synchronize with SAP Business One.
-- To synchronize Bill of Materials from ProcessForce to SAP Business One, simply change a data element within the ProcessForce BOM, and then click update. This action will trigger the synchronization of the BOM with SAP.
-- Even if you're not utilizing Coproducts, it's advisable to review the settings in the Coproducts section below.
-- This synchronization will allow the supply and demand details from ProcessForce Manufacturing Orders to update and make use of the following SAP Business One forms and processes:
+**When running SAP Business One MRP please ensure the following**
+
+- Ensure synchronization between the ProcessForce Bill of Material (BOM) and Manufacturing Order with SAP Business One.
+- If the sync box is left unchecked, Bill of Materials created in ProcessForce will not synchronize with SAP Business One.
+- To synchronize a Bill of Material from ProcessForce to SAP Business One, simply modify any data element within the ProcessForce BOM and click update. This action triggers the synchronization.
+- Even if Coproducts are not being used, reviewing the Coproducts section below is still recommended.
+- Synchronization enables supply and demand details from ProcessForce Manufacturing Orders to update and integrate with SAP Business One features, including::
   - Item Master Data -> Inventory Tab -> Committed and Ordered fields
   - Forecasts
   - MRP Wizard
@@ -29,36 +32,42 @@ This page displays options relevant to SAP Business One's MRP functionality.
 
 ## Documents Series
 
-- Create an SAP Production Order and ProcessForce Manufacturing Order with the same starting and ending number:
+- Ensure that the SAP Production Order and ProcessForce Manufacturing Order share the same starting and ending number for proper synchronization.
+
     ![Documents Series 1](./media/mrp-related-configuration/numbering-pomo.webp)
     ![Documents Series 2](./media/mrp-related-configuration/mor-num.webp)
 
 ### Example
 
-On the screenshot below you can check an example of Manufacturing Order - Production Order series synchronization:
-2017PF series (Manufacturing Order series) is synchronized with 2017SAP series (Production Order series).
+The screenshot below illustrates an example of Manufacturing Order - Production Order series synchronization:
+
+- 2017PF series (Manufacturing Order series) is synchronized with 2017SAP series (Production Order series).
 
 ![Example](./media/mrp-related-configuration/example.webp)
 
 ## Multiple Manufacturing Order - Production Order Series Synchronization
 
 :::info
-    Values are needed only when the company uses branches.
+    Values are required **only** when the company operates with branches. 
 :::
 
 The option is available from:
 
 - General Settings form:
-    ![General settings form](./media/mrp-related-configuration/mor-por-sync.webp)
-- Main Menu: Administration → System Initialization → Configuration of Series Synchronization
 
-The following form will be displayed:
+    ![General settings form](./media/mrp-related-configuration/mor-por-sync.webp)
+
+:::info Path
+    Main Menu: Administration → System Initialization → Configuration of Series Synchronization
+:::
+
+Upon accessing this option, the following form will be displayed:
 
 ![Series configuration](./media/mrp-related-configuration/series-configuration-mor-por.webp)
 
-In this form you can assign predefined Production Order document series to specific Manufacturing Order document series.
+Within this form, you can assign predefined Production Order document series to corresponding Manufacturing Order document series.
 
-Click [here](../../document-numbering.md) to check how to create a document series.
+For instructions on creating a document series, click [here](../../document-numbering.md).
 
 ## Transactions
 
@@ -69,28 +78,36 @@ Click [here](../../document-numbering.md) to check how to create a document seri
 
 ## Coproducts
 
-For those enterprises that produce Coproducts, completing this form is necessary for ProcessForce to leverage SAP Business One MRP functions.
+For businesses that manufacture Coproducts, completing this configuration is essential for ProcessForce to integrate with SAP Business One MRP functions.
 
-SAP Business One does not manage the concept of Coproducts within its Bill of Material function. Hence, during the synchronization of the Bill of Manufacturing and Manufacturing Order, a dummy Bill of Material is created; with the parent Item being the Coproduct and component Item number being the Default Component set within this form. Refer to the next paragraph for instructions on configuring the Default Component.
+SAP Business One does not inherently support Coproducts within its Bill of Material (BOM) functionality. To address this, during the synchronization of the Bill of Manufacturing and Manufacturing Order, a dummy BOM is created. In this setup:
+
+- The Coproduct serves as the parent item.
+- The Default Component, as defined in this configuration, is set as the component item.
+
+Refer to the next section for detailed instructions on configuring the Default Component.
 
 ## Default Component
 
-The default component should have the following settings:
+A Default Component should be configured with the following settings:
 
-- Item Master Data Header – Sales Item, Inventory Item, Purchase Item, Fixed Asset Item set to 'unchecked'
+- Item Master Data Header: ensure that Sales Item, Inventory Item, Purchase Item, and Fixed Asset Item are all "unchecked".
 
     ![Header](./media/mrp-related-configuration/header.webp)
-- Item Master Data → General Tab – Serial and Batch numbers, manage by item set to 'None'
+
+- Item Master Data → General Tab – Serial and Batch numbers, manage by item set to "None".
 
     ![Managed By](./media/mrp-related-configuration/managed-by.webp)
-- Item Master Data → Production Data tab – Phantom item set to unchecked
+
+- Item Master Data → Production Data tab – Phantom item is "unchecked".
 
     ![Phantom](./media/mrp-related-configuration/phantom.webp)
-- Item Master Data → Inventory Data tab – Valuation Method set to Standard, Item Cost set to 1, mark one of the warehouses as default
+
+- Item Master Data → Inventory Data tab: configure the Valuation Method as Standard, set Item Cost to 1, and designate a default warehouse.
 
     ![Valuation method](./media/mrp-related-configuration/stock-data.webp)
 
-You can mark a warehouse as default by clicking the first column of its row and then clicking Set Default Whse button:
+To mark a warehouse as the default, select the first column of its row and click the Set Default Whse button:
 
 ![Default warehouse](./media/mrp-related-configuration/default-warehouse.webp)
 
@@ -98,61 +115,61 @@ You can mark a warehouse as default by clicking the first column of its row and 
 
 Item set up as a Default Final Component is excluded from MRP runs.
 
-This option is available from [General Settings > ProcessForce tab > MRP tab](./mrp-tab.md):
+This option can be accessed via [General Settings > ProcessForce tab > MRP tab](./mrp-tab.md):
 
 ![Default Final Component](./media/mrp-related-configuration/default-final-component.webp)
 
 ### Settings
 
-An Item to be chosen as a Default Final Component has to be set up in the following way:
+An Item to be chosen as a Default Final Component,  ensure the following configurations:
 
-- Inventory Item option checked,
-- Sales/Purchase/Fixed Asset - unchecked,
-- cannot be managed by Serial or Batch numbers,
-- a default Warehouse chosen
-- a Valuation method is set to Standard
+- Inventory Item option checked.
+- Sales, Purchase, and Fixed Asset options are disabled.
+- The item must not be managed by Serial or Batch numbers.
+- A default Warehouse is assigned.
+- The Valuation Method is set to Standard.
 
 :::note
     Please go to the [Coproducts section](#coproducts) to check where to set up the aforementioned settings
 :::
 
-## 10.0 R3: Multiple Branches management of Default Component and Default Final Component
+## 10.0 R3: Multiple Branches Management of Default Component and Default Final Component
 
-From this version it is possible to configure Default Component and Default Final Component differently for different SAP Business one Company Branches.
+Starting from this version, SAP Business One allows configuring the Default Component and Default Final Component separately for different company branches.
 
-The following steps have to be performed to use the option:
+To enable this option, follow these steps:
 
-1. In SAP Business One form Branches - Setup each Branch has to have a default Warehouse set.
-2. For each Branch a separate Default Component has to be created.
-3. In each Default Component per Branch, a related Branch Warehouses have to be set with at least one of them set as default in Item Master Data.
-4. In ProcessForce Branches: Components Configuration (available from General Settings > ProcessForce tab > MRP tab > components configuration for branches) set a default Warehouse – make sure to assign proper Warehouse keep attention on warehouse assignment to the branch.
+1. In the SAP Business One Branches - Setup, ensure each branch has a designated default warehouse.
+2. Create a separate Default Component for each branch.
+3. Within each branch's Default Component, assign the relevant branch warehouses, ensuring at least one is set as default in the Item Master Data.
+4. In ProcessForce Branches: Components Configuration (accessible via General Settings > ProcessForce tab > MRP tab > Components Configuration for Branches), set a default warehouse. Carefully assign the appropriate warehouse to each branch.
 
-The same procedure applies to Default Final Component. Please keep in mind that it is important to define a Default Component for a specific Branch and then Default Final Component.
+The same process applies to the Default Final Component. It is crucial to first define a Default Component for a specific branch before configuring the Default Final Component.
 
 ![Multiple branches](./media/mrp-related-configuration/multiple-branches.webp)
 
-## Settings significant for MRP
+## Key MRP Settings
 
-### Split purchase documents between vendors
+### Split Purchase Documents between Vendors
 
 ![Split purchase](./media/mrp-related-configuration/mrp-split-purchase.webp)
 
-By choosing this option it is possible to split purchases between preferred vendors.
+- Choosing this option enables automatic distribution of purchases among preferred vendors.
+- Checking the checkbox results in accessing the following form from Item Master Data form, Planning Data tab:
 
-Checking the checkbox results in access to the following form from Item Master Data form, Planning Data tab:
+    ![Preferred vendors](./media/mrp-related-configuration/preferred.webp)
 
-![Preferred vendors](./media/mrp-related-configuration/preferred.webp)
+- On this form, you can assign a preferred vendor and specify a percentage. If percentages are set for vendors, the quantity in a purchase document for the specific item will be distributed proportionally.
+- Additionally, please refer to the table at the bottom of this page.
 
-On this form you can set a preferred vendor and percentage. If percentage is set for vendors, quantity from a purchase document for the specific Item will be divided proportionally according to it.
+### Minimum and Maximum Manufacturing Order Planned Quantity
 
-Also, please check the table at the bottom of this page.
+- You can configure minimum and maximum order quantity in Item Master Data, Planning Data tab:
 
-### Minimum and Maximum Manufacturing Order planned quantity
+    ![Min/Max order qty](./media/mrp-related-configuration/item-master-data-min-max.webp)
 
-You can set minimum and maximum order quantity in Item Master Data, Planning Data tab:
+The table below displays the preferred vendors along with the minimum and maximum quantities (click to enlarge).
 
-![Min/Max order qty](./media/mrp-related-configuration/item-master-data-min-max.webp)
+    ![Results](./media/mrp-related-configuration/results.webp)
 
-The result of preferred vendors, and minimum and maximum quantity is presented in the table below (click to enlarge).
-
-![Results](./media/mrp-related-configuration/results.webp)
+---

@@ -1,8 +1,16 @@
 ---
 sidebar_position: 4
+toc_min_heading_level: 2
+toc_max_heading_level: 2
 ---
 
 # Bill of Materials and Manufacturing Orders tab
+
+Managing Bill of Materials (BOM) and Manufacturing Orders efficiently is crucial for streamlined production processes. The Bill of Materials and Manufacturing Orders tab in ProcessForce provides various configurable settings to optimize these workflows. These settings include defining default formulas for items, enabling synchronization with SAP Business One, setting priority levels for production, and configuring options for semi-finished goods.
+
+This document outlines the key features and functionalities available in this tab to help users better understand and configure their manufacturing operations effectively.
+
+---
 
 You can define Bill of Materials and Manufacturing Orders settings on this tab, e.g., default formulas for Items.
 
@@ -10,11 +18,9 @@ You can define Bill of Materials and Manufacturing Orders settings on this tab, 
 
 ## Default Formula for Bill of Materials
 
-ProcessForce provides a flexible methodology for defining the relationship between parent Items, Coproducts, Scrap, Phantoms, Scrap Percentages, and Factors.
+ProcessForce offers a versatile approach for defining the relationships between parent items, coproducts, scrap, phantoms, scrap percentages, and factors.
 
-When creating a Bill of Material, these default formats are automatically added to each item.
-
-The formula as displayed is added to this tab during the ProcessForce installation process.
+When a Bill of Material is created, these default formats are automatically assigned to each item. The formula, as shown, is included in this tab during the installation of ProcessForce.
 
 ![Formulas](./media/bom-mor/general-settings-bill-of-materials-and-manufacturing-orders-formulas.webp)
 
@@ -61,14 +67,14 @@ There are no default formulas set up for Yield. Click [here](../../formulations-
 
 ## Enable Synchronization
 
-- SAP Business One uses information from the Item Master Data Inventory Data tab to calculate MRP make and buy recommendations requirements.
-- ProcessForce uses the SAP Business One MRP Wizard, and this synchronization method allows this integration to occur.
-- Additional details are also covered in the MRP Tab
+- SAP Business One utilizes data from the Item Master Data Inventory Data tab to determine MRP make-or-buy recommendations.
+- ProcessForce integrates with SAP Business One using the MRP Wizard, enabling seamless synchronization.
+- Further details can be found in the MRP Tab.
 
 ### Bill of Materials
 
-- Check this box to have the ProcessForce Bill of Material data sync with the SAP Business One Bill of Material object
-- The key data sync to SAP Business One is the values from the Result Column.
+- Enabling this option allows ProcessForce BOM data to sync with SAP Business One BOM objects.
+- The key data synchronized includes values from the Result Column.
 
 ![Result](./media/bom-mor/bill-of-materials-result.webp)
 
@@ -78,34 +84,35 @@ There are no default formulas set up for Yield. Click [here](../../formulations-
     To enable synchronization, the same document numbering series must be set for SAP Production Orders and ProcessForce ManufacturingOrdersr. You can check here how to do that.
 :::
 
-- Check this box to have the ProcessForce Manufacturing Order sync with the SAP Business One Production Order object
-- The key data sync to SAP Business One is the values from the planned and Actual Quantity
+- Synchronizes ProcessForce Manufacturing Orders with SAP Business One Production Orders.
+- The key data synchronized includes planned and actual quantities.
+- Ensure that SAP Production Orders and ProcessForce Manufacturing Orders have the same document numbering series.
 
 ![Synchronization](./media/bom-mor/manufacturing-order-synchronization.webp)
 
 ### Due Date Synchronization
 
-SAP Production Order has a Due Date on it. On ProcessForce Manufacturing Order, you can set the Required Date and Planned Start Date. You can choose which ProcessForce Manufacturing Order date synchronizes SAP Production Order Due Date.
+- SAP Production Orders have a Due Date, while ProcessForce Manufacturing Orders have Required Date and Planned Start Date.
+- Users can configure which date should sync with the SAP Production Order Due Date.
 
 ![Date Synchronization](./media/bom-mor/manufacturing-order-sync-dates.webp)
 
 ## Default Priority for Production
 
-You can set up Manufacturing Order Priority for Scheduling Board. One is the highest and ten lowest.
-
-In General Settings, you can set up a default priority for all newly created Manufacturing Orders.
+- You can configure Manufacturing Order Priority for the Scheduling Board, with one being the highest and ten the lowest.
+- In General Settings, you can define a default priority for all newly created Manufacturing Orders.
 
 ### Priority Level
 
-Suppose Default Priority is set on Business Partner Master Data level (considered when creating Manufacturing Order from Sales Order by Scheduling Board). In that case, it is taken from there for every newly created Manufacturing Order for this partner:
+If the Default Priority is set at the Business Partner Master Data level, it will be applied to every newly created Manufacturing Order for that partner when generated from a Sales Order via the Scheduling Board.
 
 :::info Path
-    Suppose Default Priority is set on Business Partner Master Data level (considered when creating Manufacturing Order from Sales Order by Scheduling Board). In that case, it is taken from there for every newly created Manufacturing Order for this partner:
+    Business Partner Master Data > Business Partner Master Data > General tab
 :::
 
 ![Priority](./media/bom-mor/business-partner-master-data-priority.webp)
 
-If Default Priority is set up to "0" on Business Partner Master Data, it is taken from General Settings.
+If the Default Priority is set to "0" in the Business Partner Master Data, the system will use the priority defined in General Settings.
 
 ### Manufacturing Order
 
@@ -119,35 +126,41 @@ You can check (and change – if it is in any other than Finished status) Prior
 
 ## Use MRP Minimum Quantity and Order Multiple for Semi Manufacturing Order Quantities checkbox
 
-This option allows us to take Sales Order options (Minimum and Maximum Quantity, Order Multiple) under consideration when creating Semi Finished Manufacturing Orders suggestions on Scheduling Board. This gives the sales operator a tool to accurately estimate arrival time.
+- This option considers Minimum and Maximum Quantity and Order Multiple when generating Manufacturing Orders.
+- Helps sales operators estimate arrival times more accurately.
 
 ## Sum Semi Finished checkbox
 
-A new checkbox has been added to the tab: Sum Semi Finished
-
-By default, a separate Manufacturing Order is created for the same Semi Finished Item used more than once on a Manufacturing Order.
+- By default, separate Manufacturing Orders are created for the same Semi-Finished Item used multiple times.
+- If checked, a single Manufacturing Order sums up all occurrences of the same Semi-Finished Item.
 
 **Example:**
 
-When the same semi-finished material is listed as two sequence steps on a Manufacturing Order to allow binding to different operation steps, two Manufacturing Orders are created for the semi-finished product.
-
-When the checkbox is unchecked, the default behavior is realized.
-
-When the checkbox is checked, one Manufacturing Order is created for all the same Items. It sums the quantity from all of the entries.
+- When the same semi-finished material appears in two sequence steps within a Manufacturing Order to link different operation steps, two separate Manufacturing Orders are generated for the semi-finished product.
+- If the checkbox is unchecked, the default behavior applies.
+- If the checkbox is checked, a single Manufacturing Order is created for all identical items, combining the total quantity from all entries.
 
 ## Use MRP Maximum Quantity for Semi Manufacturing Orders
 
+- Enables visualization of Manufacturing Order dependencies within a Gantt chart.
+
 ## Use Resource Balancing
 
-This option allows choosing the most optimal Resource (defined in Production Process / Manufacturing Order Alternative Resources) for a specific task from a Manufacturing Order.
-Click [here](../../scheduling/resource-balancing.md) to find out more.
+- This option allows choosing the most optimal Resource (defined in Production Process / Manufacturing Order Alternative Resources) for a specific task from a Manufacturing Order.
+- Click [here](../../scheduling/resource-balancing.md) to find out more on Resource Balancing.
 
 ## Show Manufacturing Order relations at Gantt
 
+- Enables visualization of Manufacturing Order dependencies within a Gantt chart.
+
 ## Copy classification code from Manufacturing Order during the Pick Receipt creation
+
+- Automatically transfers classification codes when generating Pick Receipts.
 
 ## Automatically Calculate Ratio on Operations
 
-You have the option to enable the "Automatically Calculate Ratio on Operations" feature in the General Settings, under the ProcessForce, Bill of Materials, and Manufacturing Orders tab. When activated, this feature automatically computes the Ratio (and Quantity). For instance, if you add an Item to two Operations, the ratio will be set to 0.5, and the Binding Quantity will be calculated based on the balance and the corresponding Bill of Materials quantity.
+You can enable the "Automatically Calculate Ratio on Operations" feature in General Settings under the ProcessForce, Bill of Materials, and Manufacturing Orders tab. When this feature is activated, the system automatically determines the Ratio and Quantity. For example, if an Item is assigned to two Operations, the ratio will be set to 0.5, and the Binding Quantity will be calculated based on the remaining balance and the corresponding Bill of Materials quantity.
 
 For more details, click [here](../../formulations-and-bill-of-materials/production-process/overview.md#operation-bind-ratio)
+
+---
