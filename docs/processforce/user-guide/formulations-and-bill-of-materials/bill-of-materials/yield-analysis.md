@@ -4,11 +4,13 @@ sidebar_position: 9
 
 # Yield Analysis
 
-## Introduction
+Yield Analysis is a crucial aspect of production monitoring in ProcessForce, helping manufacturers assess efficiency by comparing planned and actual production outcomes. The analysis can be simple, such as a basic Planned vs. Actual quantity comparison, or detailed, evaluating specific material usage across Parent Items, CoProducts, ByProducts, and Scrap.
 
-The yield analysis can be very elementary, e.g., a comparison of Planned vs. Actual quantity, or complex, based on the comparison between the amount of a specific item used in production and a breakdown into Parent, Coproduct, Byproduct, and Scrap actual quantity.
+---
 
-Below is a table illustrating some yield analysis examples:
+## Yield Analysis Examples
+
+The table below provides examples of different yield calculation methods, illustrating how various components contribute to yield efficiency.
 
 |  Yield Basis  |        Yield Calculation         |                                                          Example                                                          |
 | ------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
@@ -44,23 +46,21 @@ Within the General Settings form → ProcessForce tab → Bill of Materials and 
 - ByProduct Yield,
 - Scrap Yield.
 
-When a default yield formula is added, this is copied to the corresponding yield formula field within the Bill of Materials form:
+Once configured, these formulas are applied automatically within the Bill of Materials (BOM) and Manufacturing Orders (MO).
 
 ![Bill of Materials Formulas](./media/yield-analysis/bill-of-materials-formulas-2.webp)
 
-To view, create and edit the Yield Formula, click on the yellow button to open the Yield Formula Form:
+To view, create, or modify a Yield Formula, click the yellow button in the BOM form to open the Yield Formula Form:
 
 ![Yield Formula](./media/yield-analysis/bill-of-materials-yield-formula.webp)
 
-The Yield Formulas defined within the Bill of Material form are also copied to the Manufacturing Order form and displayed by clicking on the yellow button.
-
-If required, the Yield Formulas can be edited.
+The Yield Formulas defined within the Bill of Material form are also copied to the Manufacturing Order form and displayed by clicking on the yellow button.If required, the Yield Formulas can be edited.
 
 ![Manufacturing Order](./media/yield-analysis/manufacturing-order-yield-formula.webp)
 
 ## Yield Formula Formats
 
-Below is an example of different Yield analysis formulas:
+Below are examples of different yield analysis formulas:
 
 | Yield Type |                            Default Description                            |                                                                                    Default Formula                                                                                    |
 | ---------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -68,3 +68,5 @@ Below is an example of different Yield analysis formulas:
 | CoProduct  | Total CoProduct Actual Quantity / Total CoProduct Planned Quantity \* 100 |                                            =Coproducts.U_ActualQty.Sum()/if(Coproducts.U_Result.Sum()=0;1;Coproducts.U_Result.Sum())\*100                                             |
 | ByProduct  | Total ByProduct Actual Quantity / Total ByProduct Planned Quantity \* 100 | =Scraps.U_ActualQty.Sum(equals(Scraps.U_Type();"Usefull"))/if(Scraps.U_Result.Sum(equals(Scraps.U_Type();"Usefull"))=0;1;Scraps.U_Result.Sum(equals(Scraps.U_Type();"Usefull")))\*100 |
 |   Scrap    |     Total Scrap Actual Quantity / Total Scrap Planned Quantity \* 100     |                                                  =Scraps.U_ActualQty.Sum()/if(Scraps.U_Result.Sum()=0;1;Scraps.U_Result.Sum())\*100                                                   |
+
+---

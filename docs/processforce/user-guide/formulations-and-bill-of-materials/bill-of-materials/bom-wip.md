@@ -4,7 +4,11 @@ sidebar_position: 6
 
 # WIP Items tab
 
-:::note Path
+The WIP Items tab (Work in Process Items) in ProcessForce provides insights into the Phantom Items used in a specific Bill of Materials (BOM) or Manufacturing Order (MO). This tab helps manufacturers track intermediate products and their relationships with the parent product, ensuring accurate material usage and calculations.
+
+To access WIP Items, navigate to:
+
+:::info Path
     Production → Bill of Materials → Bill of Materials → WIP Items
 
     Production → Manufacturing Order → Manufacturing Order WIP Items
@@ -19,3 +23,5 @@ You can also:
 - Use the default Formula (as defined on the General Settings → ProcessForce tab) or change the expression format to calculate the Coproduct quantity (result). See [Formula](../formula.md) for additional information.
 
 ![WIP Tab](./media/bom-wip/bill-of-materials-wip-tab.webp)
+
+---

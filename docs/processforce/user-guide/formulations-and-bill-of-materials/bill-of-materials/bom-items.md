@@ -6,6 +6,8 @@ sidebar_position: 3
 
 In the Bill of Materials (BOM) module, the Items tab plays a crucial role in defining the components required to produce a parent product. This section allows users to manage and configure the materials, quantities, and related settings essential for the manufacturing process.
 
+To access Items tab, navigate to:
+
 :::note Path
     Production → Bill of Materials → Bill of Material → Items Tab
 :::
@@ -29,4 +31,3 @@ This form allows the user to perform the following:
 - **Project Codes**: allows users to assign project-specific codes to each line item for tracking purposes.
 
 ---
-By leveraging the Items tab, users can streamline material planning, ensure precise inventory control, and optimize the production process. Proper configuration of these fields enhances efficiency, reduces waste, and improves overall manufacturing accuracy.

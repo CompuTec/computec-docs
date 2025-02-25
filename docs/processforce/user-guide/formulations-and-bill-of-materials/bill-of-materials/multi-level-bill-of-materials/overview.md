@@ -4,13 +4,22 @@ sidebar_position: 1
 
 # Overview
 
-Bill of Materials can have a multi-level structure. That means that an Item that is a part of the Bill of Materials can have its own Bill of Materials too. In the example below, Product 1 is a final good. Its Bill of Materials consists of Product 1.1. and Product 1.2. Product 1.2 also has its Bill of Materials (in this case, it contains two Items: 1.2.1, 1.2.2):
+In manufacturing, a Bill of Materials (BOM) can have a multi-level structure, meaning that an item within a BOM may have its own BOM. This hierarchical structure helps define how components and subassemblies come together to create a final product.
+
+For example, in the diagram below:
+
+- Product 1 is the final good.
+- Its BOM consists of Product 1.1 and Product 1.2.
+- Product 1.2 has its own BOM, which includes Item 1.2.1 and Item 1.2.2.
 
 ![Multi-level](./media/multi-level.webp)
 
 In ProcessForce, there are two ways of dealing with this situation:
 
-- **Semi-finished Items**:
-  in this case, Items in the final good structure can have their own Bill of Materials for which another Manufacturing Order has to be created (apart from the final good one). Items like this can also be produced separately (as a final good on a stand-alone Manufacturing Order) and stored.
-- **Phantom Item**:
-  it is also a Bill of Materials in the structure of another Bill of Materials but its production result cannot be stored nor produced separately: it is an element of the production process of a final good. It does not require creating a separate Manufacturing Order; its components and Operations are added to a Manufacturing Order of a final good.
+1. **Semi-finished Items**:
+  A semi-finished item is a component in the BOM that has its own Bill of Material and requires a separate Manufacturing Order (MO) before being used in the production of the final good. These items can also be produced independently and stored as inventory for future use.
+
+2. **Phantom Item**:
+  A phantom item exists within a BOM structure but is not manufactured or stored separately. Instead, its components and operations are directly incorporated into the Manufacturing Order of the final good, eliminating the need for a separate MO. Phantom items streamline the production process by simplifying BOM management.
+
+---

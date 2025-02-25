@@ -28,4 +28,3 @@ This form allows the user to perform the following:
 - Enter the Project code to categorize CoProducts for reporting and analytical purposes.
 
 ---
-By utilizing the CoProducts tab effectively, businesses can enhance their production planning and inventory management. This feature ensures accurate tracking of additional materials, optimizes resource allocation, and provides greater control over the manufacturing process.
