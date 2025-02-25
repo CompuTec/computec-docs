@@ -33,3 +33,5 @@ Order generation relies on either the passage of time or meter readings linked t
 - In the Variable type, intervals are flexible, adapting to changing operational needs or asset conditions.
 
 ![Fixed-Variable](./media/fixed-variable.png)
+
+---

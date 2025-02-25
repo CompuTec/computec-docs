@@ -29,3 +29,5 @@ Current Triggered Value(n+1) = Due by Meter Value(n+1) – Expedite by Meter Uni
 If the user wants the MO to be generated in advance by 300 units, they would set Expedite by Meter Units = 300.
         - The new Current Triggered Value (n+1) would be 3000 - 300 = 2700.
         - When the Current Meter Value reaches >= 2700, the new MO will be generated.
+
+---

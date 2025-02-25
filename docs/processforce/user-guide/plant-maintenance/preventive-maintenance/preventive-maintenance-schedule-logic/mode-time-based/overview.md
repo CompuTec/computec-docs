@@ -25,3 +25,5 @@ If this condition is met, the new MO must be generated no later than the specifi
 - **Due Date** - deadline by which the MO must be created.
 
 Once an MO is generated, the next Due Date is calculated based on the specified interval (Perform Every). The method of calculating Due Dates and the rules for MO generation depend on the selected Schedule Type, which can be one of the following: Fixed, Variable, Fixed(Duplicate).
+
+---
