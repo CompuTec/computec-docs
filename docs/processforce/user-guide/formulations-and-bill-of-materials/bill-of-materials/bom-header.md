@@ -6,6 +6,8 @@ sidebar_position: 2
 
 The Bill of Materials (BOM) Header form enables users to define the structure of a Bill of Material for a final product or a component used in another Bill of Material. This feature ensures precise material management and production planning.
 
+To access Bill of Materials form Header, navigate to:
+
 :::note Path
     Production → Bill Of Materials → Bill of Materials → Header
 :::
@@ -27,4 +29,3 @@ The Quantity and UoM represent the product quantity of the parent item.
 - **Batch Size**: defines production batch sizes to calculate costs, considering setup time, fixed runtime, stock, and queue time.
 
 ---
-The Bill of Materials Header provides a structured approach to defining production components, ensuring efficiency, traceability, and seamless integration with SAP Business One.

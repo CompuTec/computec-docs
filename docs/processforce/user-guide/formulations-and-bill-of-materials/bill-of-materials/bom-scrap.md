@@ -36,4 +36,3 @@ The Scrap tab enables users to:
 - Add remarks to specify details about the scrap.
 
 ---
-By effectively utilizing the Scrap tab, businesses can minimize material waste, improve cost allocation, and optimize inventory handling. Tracking scrap types and quantities ensures better resource utilization and enhances overall production efficiency.
