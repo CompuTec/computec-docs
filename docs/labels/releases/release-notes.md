@@ -9,7 +9,7 @@ sidebar_position: 1
 **Release Date – 21 February 2025**
 
 | Issue Type | Component/s |Reference Support Ticket | Release Note |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | Bug | Printing Manager Application | SLABE-979 | Card Type filter parameter is not considered by the application while picking Reports to print. |
 | Bug | Printing Manager Application | - | The application does not account for the printer statically defined in the object query. |
 | Bug | Printing Service | - |Goods Receipt created based on Pick Receipt doesn't create request in the application |
