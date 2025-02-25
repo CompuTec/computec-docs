@@ -1,10 +1,16 @@
 ---
 sidebar_position: 1
+toc_min_heading_level: 2
+toc_max_heading_level: 4
 ---
 
 # Release Notes
 
-## CompuTec Labels Printing Manager 4.8.0
+## CompuTec Labels Printing Manager
+
+Below are the release notes for CompuTec Labels Printing Manager, highlighting new features, improvements, and bug fixes in this release.
+
+### CompuTec Labels Printing Manager 4.8.0
 
 **Release Date – 21 February 2025**
 
@@ -15,7 +21,11 @@ sidebar_position: 1
 | Bug | Printing Service | - |Goods Receipt created based on Pick Receipt doesn't create request in the application |
 | Bug | Printing Service | SLABE-972 |CT Labels report printing doesn't support using query parameters in the custom rule. |
 
-## CompuTec Labels SAP Addon 2.10.300
+## CompuTec Labels SAP Addon
+
+Below are the release notes for CompuTec Labels SAP Addon, highlighting new features, improvements, and bug fixes in this release.
+
+### CompuTec Labels SAP Addon 2.10.300
 
 **Release Date – 21 February 2025**
 
