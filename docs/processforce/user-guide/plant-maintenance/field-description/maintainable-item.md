@@ -133,14 +133,12 @@ For a specified class, you can define categories.
 - **Assigned To**: a name of an employee responsible for it
 - **Fixed Asset No.**: ProcessForce Fixed Asset Code to which the MI is assigned, select from the list
 - **Plant Maintenance Inactive** (only for information purposes)
-
         - **Inactive** – you can mark MI as inactive
         - **Inactive Start** – enter the date on which the inactive period starts
         - **Inactive End** – enter the date on which the inactive period ends
         - **Occurrence** – select repetition period
 
-            **Example**: MI is inactive (Inactive=Yes) – reserved for maintenance each month (Occurrence) from 10th (Inactive Start) to 12th (Inactive End)
-
+        **Example**: MI is inactive (Inactive=Yes) – reserved for maintenance each month (Occurrence) from 10th (Inactive Start) to 12th (Inactive End)
 - **Meter Characteristics**: fields active if MI is defined as Apparatus Type = Meter. Please see [here](#meter-reading)
         - **Meter Unit**: a meter unit of measure (Main Menu/Administration/Setup/Stock Management)
         - **Maximum Value**: the meter can reach maximum value before it exceeds its physical count limit and resets to zero. Enter 0 if the meter does not have a maximum limit.
