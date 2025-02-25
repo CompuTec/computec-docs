@@ -30,3 +30,5 @@ Current Triggered Date(n+1) = Due by Meter Value(n+1) – Expedite by Meter Unit
 If the user wants the MO to be generated 300 units in advance, they should set Expedite by Meter Units = 300.
     - The new Current Triggered Value (n+1) will be 4400 - 300 = 4100.
     - When the Current Meter Value reaches >= 4100, the new MO will be generated.
+
+---

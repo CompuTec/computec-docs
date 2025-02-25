@@ -20,3 +20,5 @@ When a new MO is generated, the following calculations are performed, as in Fixe
 ```
 
 That is, for a schedule configured as Fixed (Duplicate), if the MOs are set to be generated every Friday, a new MO will be created each Friday, regardless of the status of the previously generated MOs. This ensures that MOs are consistently generated on schedule, even if earlier MOs are still active or incomplete.
+
+---

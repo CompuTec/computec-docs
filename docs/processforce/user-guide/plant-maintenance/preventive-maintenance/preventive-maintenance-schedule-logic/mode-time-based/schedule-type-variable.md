@@ -27,3 +27,5 @@ The date when the MO is generated is determined by the following calculation:
 If the user wants the MO to be generated 3 days in advance, they should set Expedite = 3.
     - Trigger Date = 10.11.2020 - 3 = 07.11.2020.
     - When the Current Date is >= 07.11.2020, the MO will be generated.
+
+---

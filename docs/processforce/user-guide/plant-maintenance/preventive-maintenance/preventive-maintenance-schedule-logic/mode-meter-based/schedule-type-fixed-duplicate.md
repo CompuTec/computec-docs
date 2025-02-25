@@ -18,3 +18,5 @@ Current Triggered Value(n+1) = Due by Meter Value (n+1) – Expedite by Meter Un
 ```
 
 For subsequent meter readings, the same example, MO generation occurs each time the Meter Value surpasses a specified interval (e.g., when the total usage reaches a multiple of 1000), regardless of the status of the previously generated MOs.
+
+---
