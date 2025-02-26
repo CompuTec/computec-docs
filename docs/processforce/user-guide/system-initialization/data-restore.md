@@ -4,11 +4,13 @@ sidebar_position: 3
 
 # Data Restore
 
+![Item Details](./media/data-restore/item-master-data-costing.webp)
+
 Data synchronization between SAP Business One and ProcessForce is crucial for maintaining system performance and data integrity. When users add, modify, or delete Item Master Data in SAP Business One, key data elements are automatically updated in ProcessForce, including:
 
-- [Item Details](../item-details/overview.md): A default revision code is created.
-- [Item Costing](../costing-material-and-resources/item-costing/overview.md): A cost record is generated for an item, revision, and warehouse.
-- [Cost Category](../costing-material-and-resources/configuration/overview.md)– Cost classification is updated accordingly.
+- [Item Details](../item-details/overview.md): a default revision code is created.
+- [Item Costing](../costing-material-and-resources/item-costing/overview.md): a cost record is generated for an item, revision, and warehouse.
+- [Cost Category](../costing-material-and-resources/configuration/overview.md): cost classification is updated accordingly.
 
 However, if data is added manually or via Data Transfer Workbench (DTW) while ProcessForce is not installed or running, Restore functions must be executed. Failing to run these functions may result in slow system performance and inconsistencies between SAP Business One and ProcessForce.
 
@@ -16,8 +18,6 @@ After installing ProcessForce, ensure that the following restore functions are r
 
 - Batch Details
 - Bill of Materials
-
-        ![Item Details](./media/data-restore/item-master-data-costing.webp)
 
 ---
 
@@ -31,13 +31,10 @@ After installing ProcessForce, ensure that the following restore functions are r
     Help → Support Desk → Restore → Restore Batch Master Data
 :::
 
-To simplify batch information, the SAP Batch Details and ProcessForce Batch Master Data form have been consolidated into a single form.
-
-Run the restore function to populate the combined data object.
-
-If you add User-Defined Fields to the SAP Business One Batch Details tables, the same User Defined Fields need to be added to the ProcessForce Batch Master Data tables.
-
-If, for any reason, SAP and ProcessForce Batch Master Data for a specific Batch become inconsistent, using the Restore function will will update the SAP Batch Details with the ProcessForce Batch Master Data.
+- To simplify batch information, the SAP Batch Details and ProcessForce Batch Master Data form have been consolidated into a single form.
+- Run the restore function to populate the combined data object.
+- If you add User-Defined Fields to the SAP Business One Batch Details tables, the same User Defined Fields need to be added to the ProcessForce Batch Master Data tables.
+- If, for any reason, SAP and ProcessForce Batch Master Data for a specific Batch become inconsistent, using the Restore function will will update the SAP Batch Details with the ProcessForce Batch Master Data.
 
 ## Restore Bill of Materials
 

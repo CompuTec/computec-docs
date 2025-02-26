@@ -60,6 +60,6 @@ The General Tab in SAP Business One's production settings provides various confi
 
     ![ProcessForce Fields](./media/general-tab/resource-information.webp)
 
-**HANA Reports limit: Date From, Date To**: the option is related to one of the [Data Model](../../../administrator-guide/data-model/overview.md) reports. It limits the results to the ones within specific time constraints.
+- **HANA Reports limit: Date From, Date To**: the option is related to one of the [Data Model](../../../administrator-guide/data-model/overview.md) reports. It limits the results to the ones within specific time constraints.
 
 ---

@@ -4,25 +4,17 @@ sidebar_position: 5
 
 # Formula
 
-## Overview
+Formulas are a powerful yet straightforward method for calculating quantity relationships between an item and its parent in manufacturing processes. They are primarily used within the Bill of Materials (BOM) and Manufacturing Order (MO) to ensure precise material usage and production efficiency.
 
-Formulas are a very flexible but straightforward method of calculating the quantity relationship between an item and its parent.
+A default formula is pre-installed in the General Settings under the ProcessForce/Bill of Materials and Manufacturing Tab. Users can modify this default formula to align with specific operational needs. These formulas support calculations involving standard fields, user-defined fields, and values from other tabs, enhancing flexibility and accuracy in production planning.
 
-A default formula is installed within the General Settings/ProcessForce/Bill of Materials and Manufacturing Tab.
-
-This default formula can be changed to meet the user's needs and will be used when entering the Bill of Materials.
-
-If user-defined fields are added to the form, these can also be used within the formula.
-
-All the expressions as per Microsoft Excel formulas can be used.
-
-Values from other Tabs can be used within a formula to calculate a value. For example, a specific Item within the Bill of Materials has a 10% Scrap Percentage. A Scrap item master is added to the Scraps Tab. The amount of scrap produced will be the difference between the Item Result and the Item Quantity.
+Furthermore, all expressions that follow Microsoft Excel formula syntax can be used within these formulas, making them highly adaptable for various manufacturing requirements.
 
 ---
 
 ![General Settings](./media/formula/general-settings-formula.webp)
 
-### Default formulas
+## Default formulas
 
 Items:
 
@@ -91,15 +83,12 @@ The following functions can be used within formulas:
 
 ## Using User-Defined Fields in Formulas
 
-It is possible to incorporate [User-Defined Fields (UDFs)](../../administrator-guide/udfs.md) into formulas.
-
-We can use either header or row UDFs in formulas.
+It is possible to incorporate [User-Defined Fields (UDFs)](../../administrator-guide/udfs.md) into formulas, using both header or row UDFs.
 
 :::note
 
-- Note that the formula result is a numeric value. Therefore [User-Defined Fields](../../administrator-guide/udfs.md) used in it have to be created with a Type set to Numeric.
-
-- Bill of Materials structure is copied to a specific Manufacturing Order created from this Bill of Materials. Therefore to use UDFs in formulas, it is required to create the same UDFs in the Bill of Materials and Manufacturing Order in the corresponding places, e.g., the same UDFs in headers, the same UDFs in related tables.
+- The formula result is a numeric value. Therefore any [User-Defined Fields](../../administrator-guide/udfs.md) used in the formula should be created with a Numeric data type.
+- When a Bill of Materials is used to generate a Manufacturing Order, its structure is replicated in the order. To ensure UDFs function properly within formulas, identical UDFs must be created in both the Bill of Materials and the Manufacturing Order, maintaining consistency in headers and corresponding tables.
 
 :::
 
@@ -131,21 +120,23 @@ To be able to calculate Yield in the Bill Of Material and Manufacturing Order, y
   =U_Quantity()*U_Factor()*Phantoms.U_Factor(<sequence>)*Phantoms.U_Quantity(<sequence>)
   ```
 
-Four new formula fields have been added to calculate the actual yield within the Manufacturing Order:
+Four new formula fields have been introduced to calculate the actual yield within a Manufacturing Order:
 
-- Yield – this relates to the actual yield of the parent item.
-- CoProduct – this relates to the yield of the coproducts (Coproduct Tab) produced in production.
-- ByProduct – this relates to the yield of the ByProducts (Scrap Tab) produced in production.
-- Scrap – this relates to the yield of the Scrap (Scrap Tab) produced in production.
+- **Yield**: represents the actual yield of the parent item.
+- **CoProduct**: represents the yield of coproducts (Coproduct Tab) generated during production.
+- **ByProduct**: represents the yield of byproducts (Scrap Tab) produced during production.
+- **Scrap**: represents the yield of scrap (Scrap Tab) generated during production.
 
 ![Yield](./media/formula/general-settings-formula-yield.webp)
 
-As with standard formula behavior, the standard formula is copied to the Bills of Materials form and can be displayed by clicking the yellow button.
+Following standard formula behavior, the predefined formula is automatically copied to the Bills of Materials form. You can view it by clicking the yellow button.
 
-The formula can be modified for a specific Bill of Materials if required.
+If needed, the formula can be customized for a specific Bill of Materials.
 
 ![Bill of Materials - Formula](./media/formula/bill-of-materials-formula.webp)
 
-The formulas from the Yield Formula form are also copied to the Manufacturing Order and can be modified if required.
+Additionally, the formulas from the Yield Formula form are copied to the Manufacturing Order, where they can be modified as required.
 
 ![Manufacturing Order - Formula](./media/formula/manufacturing-order-formula.webp)
+
+---

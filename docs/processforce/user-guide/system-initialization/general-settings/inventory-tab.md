@@ -29,25 +29,25 @@ Below is a detailed breakdown of the key settings available in this tab.
 - **Shelf Life Interval**: a period used to calculate the expiry date automatically. E.g., if Shelf Life Interval is set to 30 days and a Batch record is made on June 1st, the Expiry date will be automatically charged to June 30th.
 - **Inspection interval**: a period between consecutive inspections. After each period, an alert about the Inspection is activated.
 - **Manual Issue Type, Backflush Issue Type**: consumption rules during manual picking and backflushing when the Batch status is locked and/or non-accessible. You can find information about it [here](../../inventory/batch-control/batch-control-settings/manual-and-backflush-issue-type-configuration.md).
-- **Default Batch Status for SAP Business One and ProcessForce receipt documents**: Sets batch status when items are received in SAP Business One or ProcessForce. Available statuses: Released, Locked, or Not Accessible
+- **Default Batch Status for SAP Business One and ProcessForce receipt documents**: sets batch status when items are received in SAP Business One or ProcessForce. Available statuses: Released, Locked, or Not Accessible
         - If the status for a Batch is set to Not Accessible or Locked, a system message about this will be displayed before issuing this batch for production.
         - Click [here](../../inventory/batch-control/batch-control-settings/configuration-batch-and-quality-control-status.md) to find out more.
-- **Default Quality Control Status for SAP Business One ProcessForce receipt-based documents**: Defines the quality status assigned upon receipt in SAP Business One and ProcessForce. Options include: Failed, On Hold, Inspection, Passed, and Quality Control Testing. Click [here](../../inventory/batch-control/batch-control-settings/configuration-batch-and-quality-control-status.md) to find out more.
+- **Default Quality Control Status for SAP Business One ProcessForce receipt-based documents**: defines the quality status assigned upon receipt in SAP Business One and ProcessForce. Options include: Failed, On Hold, Inspection, Passed, and Quality Control Testing. Click [here](../../inventory/batch-control/batch-control-settings/configuration-batch-and-quality-control-status.md) to find out more.
 - **Batch Queue Type** – a type of queue used by default with batches:
 
         - FIFO – First In, First Out
         - FEFO – First Expired First Out
         - FMFO – First Manufactured First Out.
 
-- **Manual Issue Behavior**
-- **Backflush Issue Behavior**
-- **Default Quality Control Status for SAP Receipt Documents**
-- **Default Quality Control Status for ProcessForce Receipt Documents**
+- **Manual Issue Behavior**: defines how materials are manually issued during production.
+- **Backflush Issue Behavior**: determines how materials are automatically issued based on production consumption.
+- **Default Quality Control Status for SAP Receipt Documents**: sets the default quality control status for received items in SAP.
+- **Default Quality Control Status for ProcessForce Receipt Documents**: specifies the default quality control status for received items in ProcessForce.
 
     [Revision Based Picking and Backflushing](../../manufacturing/revision-based-picking.md)
 
-- **Issue Residual Quantity on next Good Receipts when possible** – if the option is checked, then during the following Goods Receipt for the same Manufacturing Order, the system will attempt to reissue all rows with the Backflush issue type where the Residual Quantity is greater than zero and there is a quantity to issue (because it was not available in stock during previous receipts).
-- **AutoAllocate Batches on Pick Order Include**: Specifies which documents should be analyzed for Batch Allocation when using the Auto Select and Auto Select All actions.
+- **Issue Residual Quantity on next Good Receipts when possible**: if the option is checked, then during the following Goods Receipt for the same Manufacturing Order, the system will attempt to reissue all rows with the Backflush issue type where the Residual Quantity is greater than zero and there is a quantity to issue (because it was not available in stock during previous receipts).
+- **AutoAllocate Batches on Pick Order Include**: specifies which documents should be analyzed for Batch Allocation when using the Auto Select and Auto Select All actions.
         - **None**: no documents are taken under consideration.
         - **On other document**: allocations from Pick Orders are considered.
         - **Allocated**: allocations from Sales Orders are considered.
