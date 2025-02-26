@@ -116,7 +116,7 @@ To mark a warehouse as the default, select the first column of its row and click
 
 Item set up as a Default Final Component is excluded from MRP runs.
 
-This option can be accessed via [General Settings > ProcessForce tab > MRP tab](./mrp-tab.md):
+This option can be accessed via [General Settings > ProcessForce tab > MRP tab](./overview.md):
 
 ![Default Final Component](./media/mrp-related-configuration/default-final-component.webp)
 
