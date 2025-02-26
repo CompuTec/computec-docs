@@ -10,6 +10,15 @@ toc_max_heading_level: 4
 
 Below are the release notes for CompuTec Labels Printing Manager, highlighting new features, improvements, and bug fixes in this release.
 
+### CompuTec Labels Printing Manager 4.8.1
+
+**Release Date – 26 February 2025**
+
+| Issue Type | Component/s |Reference Support Ticket | Release Note |
+| --- | --- | --- | --- |
+| Improvement | Printing Service | SLABE-898 | Occasional misordering of request processing may occur. |
+| Improvement | Printing Service | SLABE-984 | The printing service seldom encounters the following error message: HRESULT: 0x8007045A. |
+
 ### CompuTec Labels Printing Manager 4.8.0
 
 **Release Date – 21 February 2025**
