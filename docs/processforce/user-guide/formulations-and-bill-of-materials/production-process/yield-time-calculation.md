@@ -4,12 +4,19 @@ sidebar_position: 2
 
 # Yield – Time calculation
 
-Depending on the production process, the yield may impact the production time.
+In certain production processes, yield can impact production time.
 
-The yield value from the Bill of Materials header is default included in the planned resource quantity calculation. If the Ignore Yield checkbox is checked, ProcessForce uses the default Yield = 100 % for the scheduled resource quantity calculation. For example, if Yield = 80%, the planned resource quantity increases by 1.25 to meet the production output quantity (1/Yield% = 1/0.8 = 1.25).
+- The yield value from the Bill of Materials (BOM) header is automatically factored into the planned resource quantity calculation.
+- If the Ignore Yield checkbox is selected, ProcessForce will assume a default yield of 100%, ignoring the actual yield value.
 
-The default setting will be copied to the manufacturing order.
+Example Calculation:
+
+If Yield = 80%, the system adjusts the planned resource quantity by 1.25 to meet the required output: (1/Yield% = 1/0.8 = 1.25). This ensures that additional resources are allocated to compensate for yield loss.
+
+The default yield setting is copied to the manufacturing order.
 
 ![Ignore Yield](./media/yield-time-calculation/production-process-ignore-yield.webp)
 
 ![Yield Checkbox](./media/yield-time-calculation/manufacturing-order-yield-checkbox.webp)
+
+---
