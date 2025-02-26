@@ -4,11 +4,13 @@ sidebar_position: 1
 
 # Overview
 
-Production Process allows assigning a specific [Routing](../../routings/overview.md) to a production Item and Routing to production Item and binding specific Items to Operations on a Routing.
+The production process in manufacturing involves assigning a specific [Routing](../../routings/overview.md) to a production item and linking specific items to operations within that routing. This ensures a structured workflow, allowing for efficient management of resources, tooling, and operation bindings.
 
 ---
 
 ## Adding a Routing
+
+To access Production Process, navigate to:
 
 :::info Path
     Production → Bill of Materials → Production Process
@@ -16,23 +18,22 @@ Production Process allows assigning a specific [Routing](../../routings/overview
 
 To reach the Routing form:
 
-- open it through the main menu (the path in the frame above),
-- go to the Bill of Material form, right-click on the header and select the Production Process from the context menu,
-- go to the Item Details form, right-click on any revision line (in the Revisions tab) and select the Production Process from the context menu.
+- Navigate through the main menu: Production → Bill of Materials → Production Process.
+- From the Bill of Materials form, right-click on the header and select Production Process from the context menu.
+- From the Item Details form, right-click on any revision line in the Revisions tab and select Production Process from the context menu.
 
 ## Default Routing and Alternatives
 
-Select and enter a Routing Code in the second column to add a Routing or multiple alternative Routings.
+Enter a Routing Code in the second column to define a primary or alternative Routing.
 
-If the Routing is the default Routing to be used with Manufacturing Orders, check the box in the "Default" column.
-
-If the Routing is the default Routing used for Product Costing, check the box.
+- To set a Routing as the default for Manufacturing Orders, check the box in the "Default" column.
+- To designate a Routing as the default for Product Costing, check the corresponding box.
 
 ![Production Process defaults](./media/overview/production-process-defaults.webp)
 
 ## Operation Overlay
 
-If the production process allows overlapping operations, the user can enter an Operation Overlay Code (Operation Code) and a Quantity, after which the next operation starts.
+If the production process supports overlapping operations, enter an Operation Overlay Code (Operation Code) and a Quantity to define when the next operation begins.
 
 ![Production Overlay](./media/overview/production-process-overlay-operation.webp)
 
@@ -40,62 +41,77 @@ If the production process allows overlapping operations, the user can enter an O
 
 Clicking on the Operation Code column displays the Resources within the Operation within the third section.
 
-If required, for this specific combination of Item Code, Revision, Routing, Operation, and Resource, the Time and Rate values can be changed, additional Resources added, or existing Resources removed.
+For a specific combination of Item Code, Revision, Routing, Operation, and Resource, users can:
 
-If there are alternative resources for the Operation, you can add several Resources and select one as the 'Default.'
+- Adjust Time and Rate values.
+- Add or remove Resources as needed.
+- Assign a Default Resource if multiple alternatives exist.
 
 ![Production Process Default Resource](./media/overview/production-process-default-resource.webp)
 
 ## Tooling
 
-To add Tool, select the related 'Machine Code.'
+To add a Tool, select the corresponding Machine Code.
 
-This example shows which machine the tool can be used for making the specific product.
+This setup indicates which machine the tool is associated with for manufacturing a specific product.
 
 ![Tool](./media/overview/production-process-tool.webp)
 
 ## Operation Bind
 
-Operation Bind allows users to link Items from the related Bill of Materials to Operations.
+Operation Bind enables users to link Items from the related Bill of Materials (BOM) to specific Operations in the production process.
 
-The window is divided into four parts:
+The window is divided into four sections:
 
 ![Operation Bind](./media/overview/production-process-operation-bind.webp)
 
-1. Items that are available to be linked with the selected operation as an input to this operation.
+1. Items that can be linked as inputs for the selected operation.
 2. Items that are already selected as input for operation.
-3. Items that are available to be linked with the selected operation as an output of this operation.
-4. Items that are already selected as an output of this operation.
+3. Items that can be linked as outputs for the selected operation.
+4. Items that have already been assigned as outputs.
 
-To bind an Item to an Operation, choose a Routing and then Operation within it:
+To bind an Item to an Operation, first select a Routing and then choose the corresponding Operation:
 
 ![Production Routing](./media/overview/production-process-bind-routing.webp)
 
-In Operation Binding, you can specify that you want to change the quantity used to calculate the selected operation time. In ProcessForce, an operation's time is calculated based on a planned quantity of a final product. The resulting quantity of the selected Item is taken under consideration during Operation time calculation. You can change the item chosen for considered by selecting the Time Calc checkbox.
+In Operation Binding, users can modify the quantity used to calculate operation time. In ProcessForce, operation time is determined based on the planned quantity of the final product. The resulting quantity of the selected item is considered in this calculation.
+
+- To change the item used for time calculation, select the Time Calc checkbox.
 
 ![Production Process Bind Time](./media/overview/production-process-bind-time.webp)
 
-To bind Items to a specific Operation, click the Item row and use the arrow to move it from the upper to the lower part of the form:
+To bind Items to a specific Operation, click on the Item row and use the arrow to transfer it from the upper to the lower section of the form:
 
 ![Example](./media/overview/production-process-bind-example.webp)
 
 ### Operation Bind Ratio
 
-If you choose to bind an Item to more than one operation, its quantity has to be divided between the Operations. You can set the Binding Quantity (1) or Ratio on all related Operations. Please remember that the ratio has to sum to 1 to proceed.
+When binding an Item to multiple Operations, its quantity must be distributed among them. You can define this distribution using either:
 
-You can check the Automatically Calculate Ratio on Operations checkbox (General Settings, ProcessForce, Bill of Materials, and Manufacturing Orders tab) to calculate the Ratio (and Quantity) automatically, e.g., add an Item to two Operations, and the ratio will be set to 0.5, and the Binding Quantity will be calculated based on the balance and the related Bill of Materials quantity.
+- **Binding Quantity**: Specifies the exact amount allocated to each operation.
+- **Ratio**: Represents the proportion of the total quantity assigned to each operation. The sum of all ratios must equal 1 to proceed.
 
-Suppose you uncheck the Automatically Calculate Ratio on Operations checkbox. You bind an Item to multiple Operations. In that case, you have to manually set Quantity or Ratio for Ratio to sum up to 1.
+To automate ratio and quantity distribution:
+
+- Enable Automatically Calculate Ratio on Operations under General Settings > ProcessForce > Bill of Materials & Manufacturing Orders.
+- When an item is assigned to two operations, the system automatically sets the ratio to 0.5 and calculates the Binding Quantity accordingly.
+
+If the Automatically Calculate Ratio on Operations setting is disabled:
+
+- You must manually set either Quantity or Ratio so that the total ratio sums to 1.
 
 ![Ratio](./media/overview/production-process-ratio.webp)
 
-You can check all the Operations bound to a Component and set the values by right-clicking on a Ratio field and choosing the Show all operations for component option:
+To review and adjust all Operations linked to a Component:
+
+- Right-click on the Ratio field.
+- Select Show all operations for component.
 
 ![All Operations Bind to Component](./media/overview/all-operations-bind-to-component.webp)
 
 ### Manufacturing Order Operation Bind
 
-Operation Bind can be defined or changed individually for a specific Manufacturing Order. To do that, click Operation Binding on the context menu on the Manufacturing Order header.
+Operation Bind can be modified for a specific Manufacturing Order by selecting Operation Binding from the context menu on the order header. Items and operations can be linked using arrows.
 
 Click an Operation row and Item row and use arrows to bind both elements:
 
@@ -103,14 +119,16 @@ Click an Operation row and Item row and use arrows to bind both elements:
 
 ## Instructions tab
 
-Instructions tab is available from the Production Process form, Routing tab. It is an editable text area that can hold any related text documentation.
+The Instructions tab is available from the Production Process form under the Routing tab. This editable text area can store any related documentation.
 
 ## Validity Period
 
-It is possible to set a period of validity for a Routing on a Production Process:
+A validity period can be set for a routing within the production process. This allows for flexible manufacturing processes based on seasonal changes, environmental factors, or evolving production requirements.
 
 ![Production Process Validity](./media/overview/production-process-validity.webp)
 
 ### Example usage
 
-A specific company in the food industry for a particular Item has defined a single Bill of Materials but different Routings based on the period of the year (which can be connected to temperature, humidity, etc.).
+A food industry company may define a single Bill of Materials but apply different Routings based on seasonal variations such as temperature and humidity, ensuring optimal production efficiency year-round.
+
+---
