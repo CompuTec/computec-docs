@@ -4,15 +4,15 @@ sidebar_position: 4
 
 # Example 3 Working with Technology
 
-How to add a hierarchical object such as Operation Routing or Bill Of Material using ProcessForce API
+This section explains how to add and manage hierarchical objects such as Operation Routing or Bill of Materials (BOM) using the ProcessForce API. Hierarchical data in ProcessForce follows a structured approach where objects like Operations, Resources, and Routing are interdependent.
 
 ---
 
 **Short Information about Hierarchical Data in ProcessForce Technology**
 
-When adding Operations to a Resource, you have to:
+When adding Operations to a Resource, follow these steps:
 
-1. Make sure that you are in an empty operation row:
+1. Make sure that you are on an empty operation row:
 
     ```csharp
     //Set current row to last position
@@ -28,26 +28,25 @@ When adding Operations to a Resource, you have to:
     rtg.Operations.U_OprCode = "Planing";
     ```
 
-3. when you want to add something at a second or more level (for example, Routing-Operation-Resources), you must first set the parent information:
+3. If you want to add something at a second or more level (for example, Routing-Operation-Resources), you must first set the parent information:
 
     ```csharp
     rtg.OperationResources.U_RtgOprCode = 1;
     ```
 
-    and after that, you can set up a new Resource for this Operation. Off course, all his child's and default Values will be added automatically:
+    Once the parent is set, you can assign a new resource to the operation. All child elements and default values will be populated automatically:
 
     ```csharp
     rtg.OperationResources.U_RscCode = "plane01";
     ```
 
-4. When you want to replace any Resources, you only need to change its U_RscCode. The API will then remove all previous data and update it with the new information.
+4. To replace an existing resource, simply update its U_RscCode. The API will automatically remove the previous data and update it with the new information.
 
-    - **Creating New Routing**
-
-        - Create a routing object using the CreatePFObject method
-        - Set Mandatory header Information
-        - Set Child Data
-        - Add an object to the database
+    - **Create a New Routing**
+        - Create a routing object using the `CreatePFObject` method.
+        - Set Mandatory header Information.
+        - Set Child Data.
+        - Add an object to the database.
 
             ```csharp
             IRouting rtg = company.CreatePFObject(CompuTec.ProcessForce.API.Core.ObjectTypes.Routing);
@@ -75,11 +74,10 @@ When adding Operations to a Resource, you have to:
             rtg.Add();
             ```
 
-    - **Updating BillOfMaterial setting**
-
-        - Create BillOfMaterialObject
-        - Load data from the database using the GetByItemCodeAndRevision method
-        - Add new Routing (note that setting bom.Routing.U_RtgCode will cause loading of all data to bom object)
+    - **Updating BillOfMaterial Setting**
+        - Create `BillOfMaterialObject`
+        - Load data from the database using the `GetByItemCodeAndRevision` method
+        - Add new Routing (note that setting `bom.Routing.U_RtgCode` will cause loading of all data to Bill of Material object)
         - Update Object
 
             ```csharp
@@ -96,3 +94,5 @@ When adding Operations to a Resource, you have to:
             else
                 Console.WriteLine("Bill of material was not found.");
             ```
+
+---

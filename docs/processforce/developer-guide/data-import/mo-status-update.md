@@ -4,11 +4,13 @@ sidebar_position: 3
 
 # Tutorial: Manufacturing Order Status Update
 
-Here, you can find a complete description of the Manufacturing Order Status Update script.
+In this tutorial, we’ll walk through a PowerShell script designed to update the status of Manufacturing Orders (MOs) in CompuTec ProcessForce, an advanced manufacturing solution integrated with SAP Business One. The script fetches Manufacturing Orders based on an SQL query and updates their status accordingly.
+
+This guide explains each section of the script in detail, ensuring that users can modify and execute it confidently. The script leverages the ProcessForce API to connect to SAP Business One, retrieve MO data, and apply updates efficiently.
 
 ---
 
-Clear-Host is clearing console output. The rest are comments regarding the script and the script version:
+Clear-Host is a clearing console output. The rest are comments regarding the script and the script version:
 
 ```powershell showLineNumbers
 #region #Script info
@@ -38,13 +40,13 @@ Write-Host -backgroundcolor Yellow -foregroundcolor DarkBlue ("Script Version:" 
 #     SAP Client x86 + PF x86 installed on DB/Company => PF API x86 => Windows PowerShell ISE x86
 ```
 
-Loading ProcessForce API library. This library is used to connect to SAP Business One and perform tasks on ProcessForce objects:
+To interact with SAP Business One and ProcessForce, the script loads the necessary API library:
 
 ```powershell
 [System.Reflection.Assembly]::LoadWithPartialName("CompuTec.ProcessForce.API")
 ```
 
-Defining directory where configuration.xml file is presented. This file contains connection details like server address, username etc.:
+The script defines the directory where the configuration.xml file is stored. This file contains crucial connection details like the database server, username, and password:
 
 ```powershell
 #region #Datbase/Company connection settings
@@ -72,7 +74,7 @@ Loading connection details from the configuration.xml file:
 $xmlConnection = $configurationXml.SelectSingleNode("/configuration/connection");
 ```
 
-Asking the user for confirmation. We are presenting connection information and asking if the user wants to continue. The purpose of this step is to prevent running the script on the wrong database:
+Prompting the user for confirmation by displaying connection details and verifying whether they wish to proceed. This step helps prevent executing the script on an incorrect database.
 
 ```powershell
 $pfcCompany = [CompuTec.ProcessForce.API.ProcessForceCompanyInitializator]::CreateCompany()
@@ -145,7 +147,7 @@ Starting a try block:
 try {
 ```
 
-This is an SQL query command that is executed to get information from a database. Here, you can specify any query you like. Please make sure that this query returns the following columns "DocEntry", "DocNum", "StatusCode" as these are expected by the script:
+This SQL query command is executed to retrieve information from the database. You can customize the query as needed, but ensure that it returns the columns "DocEntry," "DocNum," and "StatusCode," as these are required by the script:
 
 ```powershell
 $SQLQuery = "SELECT ""DocEntry"", ""DocNum"", 'CL' AS ""StatusCode"" FROM ""@CT_PF_OMOR"" WHERE ""U_RequiredDate"" < '2018-07-01' AND ""U_Status"" = 'FI' ";
@@ -307,7 +309,7 @@ Closing loop:
 }
 ```
 
-Displaying information that there were no records returned from the SQL query:
+If no records were returned by the SQL query, a message is displayed:
 
 ```powershell
 else {
@@ -315,7 +317,7 @@ else {
 }
 ```
 
-The Catch block, try block that was opened in line 91. If an exception occurs on this level, it displays information about the exception. In the Final block, we disconnect from SAP Business One:
+The Catch block corresponds to the Try block opened in line 91. If an exception occurs at this level, it captures and displays details about the error. In the Finally block, the script ensures disconnection from SAP Business One.
 
 ```powershell
 }
@@ -334,3 +336,5 @@ Finally {
     #endregion
 }
 ```
+
+---

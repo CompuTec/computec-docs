@@ -1,20 +1,24 @@
+---
+sidebar_position: 2
+---
+
 # ProcessForce API Performance Tips & Tricks
 
-Since objects like Manufacturing Orders or Bill of Materials can be massive, keeping smooth performance when operating on them can be challenging. Here, you'll find several recommendations for enhancing performance when utilizing the ProcessForce API.
+Working with large objects like Manufacturing Orders or Bills of Materials (BOM) in ProcessForce can be challenging, especially when maintaining optimal performance. To help you get the most out of the ProcessForce API, we've compiled a set of best practices and performance-enhancing techniques. These strategies will help speed up data retrieval, optimize synchronization, and improve efficiency when handling bulk operations.
+
+---
 
 ## Class QueryManager
 
-Consider utilizing our QueryManager class instead of the one offered by SAP. When there's no ongoing transaction, employing our QueryManager should yield faster retrieval of information from the database. In cases where a transaction is active during the QueryManager function call, it will automatically revert to the SAP version, often expediting the process without any associated risks.
+Instead of relying on SAP’s default QueryManager, consider using the ProcessForce QueryManager class for better performance. When no active transaction is running, our QueryManager provides faster database queries. If a transaction is active, it automatically switches to the SAP version, ensuring optimal speed while maintaining system stability.
 
 ## Manufacturing Order and Bill of Materials Synchronization
 
-A synchronization mechanism is implemented for objects like Manufacturing Order or Bill Of Materials. When you create or update our Manufacturing Order object, the Production Order object (SAP) is created with the same data. In the same way, when you add or update our Bill of Materials object, the SAP Business One version of this object is created. This synchronization plays a vital role in the proceeding of our objects, so you might consider turning this option off. You can find the settings responsible for that in General Settings.
-
-But first, please try to determine if the mechanism is needed in business logic in your case.
+ProcessForce synchronizes Manufacturing Orders and Bill of Materials with their SAP Business One counterparts by default. While this ensures data consistency, it can slow down performance. If synchronization is not essential for your business logic, consider disabling it in General Settings to improve efficiency. However, evaluate the impact before making changes to avoid disruptions in your workflow.
 
 ## Direct Data Access
 
-For now, direct data access works only for reading data from the database. You must configure your license server properly to use direct data access. Refer to the detailed instructions available here for guidance on its usage. Implementing this should boost performance. If you cannot access the mentioned website, please reach out to your CompuTec solutions provider for assistance.
+For read operations, Direct Data Access allows you to fetch data directly from the database, bypassing certain API layers for better speed. However, this feature requires proper configuration of your license server. Follow the detailed setup instructions, or contact your CompuTec solutions provider if you need assistance.
 
 ## Bulk Functionality
 
@@ -79,4 +83,6 @@ for (int i = 0; i < howManyRows; i++)
 
 As you can see above, there is no need to set U_itemCode or U_Revision field. Because setting U_ItemCode is slow, we want to avoid it by setting up BOMCode and ReferenceDictionary.
 
-Please note that this issue is not as stable as the standard way. It's advisable to wrap this code in a try-catch block and also verify if there's a BOMCode in the generated list. If BOMCode is absent, then set U_ItemCode. If BOMCode is present, then set BOMCode.
+Please note that this issue is not as stable as the standard way. It is advisable to wrap this code in a try-catch block and also verify if there is a BOMCode in the generated list. If BOMCode is absent, then set U_ItemCode. If BOMCode is present, then set BOMCode.
+
+---

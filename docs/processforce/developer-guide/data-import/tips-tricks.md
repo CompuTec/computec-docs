@@ -4,12 +4,18 @@ sidebar_position: 6
 
 # Tips & Tricks
 
+When integrating ProcessForce API with SAP Business One, there are a few key considerations to ensure smooth operation. This guide highlights useful tips for accessing SAP Business One objects and managing PowerShell script execution after ProcessForce API updates.
+
+---
+
 **SAP Business One Objects Access from ProcessForce API**
 
-You can easily use ProcesForce API to connect to SAP Business One and get the Company to object to working on SAP Business One objects.
+By leveraging this API, you can interact with SAP Business One data directly from your scripts, simplifying automation and integration tasks.
 
 **Visual Studio Code / PowerShell ISE Session Restart**
 
-If you are testing or using the PowerShell script on a specific version of ProcessForce API and later upgrade ProcessForce and ProcessForce API, you'll need to restart Visual Studio Code PowerShell terminal or PowerShell ISE.
+If you are running a PowerShell script on a specific version of the ProcessForce API and later upgrade ProcessForce and its API, you must restart your applications like: Visual Studio Code PowerShell terminal or PowerShell ISE.
 
-These applications retain ProcessForce API files in memory throughout the user's session, continuing to use them even after the ProcessForce API version has been updated.
+These applications retain ProcessForce API files in memory throughout the session. Even after an update, they continue using the old version unless restarted. To avoid issues, always restart your session after upgrading ProcessForce API.
+
+---

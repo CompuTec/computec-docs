@@ -1,6 +1,10 @@
 # General
 
-1. ProcessForce Objects & LINQ – all child objects are fully compatible with LINQ syntax. It is beneficial when you need to find specific data. E.g., finding all Resources from the Bill of Materials that are used in a specific operation and a specific Routing:
+ProcessForce provides a powerful API for managing manufacturing operations within SAP Business One. This guide outlines key best practices and techniques for working with ProcessForce objects using LINQ, handling data efficiently, managing exceptions, and optimizing manufacturing processes. Whether you are dealing with Bill of Materials (BOM), Manufacturing Orders (MOR), routing operations, or backflushing, these best practices will help ensure accuracy and performance in your implementations.
+
+---
+
+1. **ProcessForce Objects & LINQ**: all child objects in ProcessForce are fully compatible with LINQ syntax, making it easy to find specific data. For example, to retrieve all resources from a Bill of Materials used in a specific operation and routing:
 
     ```csharp
     IBillOfMaterial bom = company.CreatePFObject(CompuTec.ProcessForce.API.Core.ObjectTypes.BillOfMaterial);
@@ -8,7 +12,7 @@
     var resources = bom.RoutingOperationResources.Where(p => p.U_OprCode == "Cutting" && p.U_RtgOprCode == 1 && p.U_RtgCode == "DIRtg1");
     ```
 
-2. Automatic updating relative resources – when objects such as BOM, MOR, Routing, or Operation are used and properly set, it should get some data. For example, when we set U_RtgCode filed on MOR, all routing data is automatically copied from BOM to MOR:
+2. **Automatic Updating Relative Resources**: when objects such as BOM, MOR, Routing, or Operation are used and properly set, certain data is automatically copied. For example, setting the U_RtgCode field on MOR will copy all routing data from BOM to MOR:
 
     ```csharp
     IBillOfMaterial bom = company.CreatePFObject(CompuTec.ProcessForce.API.Core.ObjectTypes.BillOfMaterial);
@@ -23,7 +27,7 @@
     }
     ```
 
-3. A good practice is to make SetCurrentLine(Count-1) after setting the field that updates an object. It will prevent unexpected row changes:
+3. **Preventing Unexpected Row Changes**: a best practice is to use SetCurrentLine(Count-1) after updating a field to prevent unexpected row changes:
 
     ```csharp
     rtg.OperationResources.SetCurrentLine(rtg.OperationResources.Count - 1);
@@ -31,7 +35,7 @@
         rtg.OperationResources.Add();
     ```
 
-4. Every item has to have correspondent item details object. Please remember it when importing items from DTW or using other tools based on SAP DI API. To achieve this, please use the following PowerShell script:
+4. **Ensuring Item Details Exist**: every item must have a corresponding Item Details object. When importing items using DTW or other SAP DI API tools, use the following PowerShell script to ensure all items have a corresponding Item Details object:
 
     ```csharp
     clear
@@ -95,11 +99,11 @@
     }
     ```
 
-5. Every exception from ProcessForce is saved in Event Viewer under CompuTec log as CompuTec ProcessForce source:
+5. **Exception Handling**: every exception from ProcessForce is saved in Event Viewer under CompuTec log as CompuTec ProcessForce source:
 
     ![Event Viewer](./media/general/pf-api-tt-event-viewer.webp)
 
-6. Be very careful when using backflushing. Use it only when it is necessary. This is the equation for calculating the issue quantity for the backflush item.
+6. **Caution when Using Backflushing**: be very careful when using backflushing. Backflushing should only be used when necessary. Below is the equation for calculating the issue quantity for the backflush item.
 
     ```csharp
     ((item.U_Result / moruo.U_Quantity) * (moruo.U_ActualQty + finalgoodRow.U_PickedQty) - (item.U_ActualQty+item.U_ResidualQty))
@@ -110,11 +114,11 @@
     item.U_ActualQty- Actual Quantity of backflush Itemitem.U_ResidualQty-Residual Quantity of backflush Item
     ```
 
-7. ProcessForce creates exceptions when something is wrong. It is strongly recommended to use a try-catch block.
+7. **Using Try-Catch Blocks**: ProcessForce creates exceptions when something is wrong. It is strongly recommended to use a try-catch block to handle these exceptions.
 
-8. When you want to replace an item with child items, for example, routing operations, you do not need to remove all children. That will be done automatically when you replace its code or remove the chosen line.
+8. **Replacing Items in Routing Operations**: when replacing an item with child items (e.g., routing operations), there is no need to manually remove all children; this is handled automatically when replacing the item code or removing the chosen line.
 
-9. When creating a manufacturing order from a Bill of Materials that has filed a Revision to improve performance, use `ItemUtils` class:
+9. **Optimizing Manufacturing Orders from BOM**: when creating a manufacturing order from a Bill of Materials that has filed a Revision to improve performance, use `ItemUtils` class:
 
     ```csharp
     IManufacturingOrder mor = company.CreatePFObject(CompuTec.ProcessForce.API.Core.ObjectTypes.ManufacturingOrder);
@@ -123,17 +127,16 @@
     mor.U_BOMCode = rec.Fields.Item(0).Value;
     ```
 
-10. When working with formulas on IBillOfMaterial Or IManufacturingOrder, use RecalcFormulas() method. If there is an error in the formula, it will throw an exception. Every time you Add or Update an object, this method is automatically executed.
+10. **Working with Formulas**: when working with formulas on IBillOfMaterial Or IManufacturingOrder, use RecalcFormulas() method. If there is an error in the formula, it will throw an exception. Every time you Add or Update an object, this method is automatically executed.
 
-11. User-defined fields on an issue and receipt from productions.
+11. **User-Defined Fields in Production Transactions**: to include extra information in Goods Receipt or Goods Issues from production, add a User-Defined Field (UDF) to PickOrderRequiredItems or PickReceiptRequiredItems with the same code, name, and type as the SAP document lines. This ensures the data is automatically copied.
 
-    If you want to add extra information on Goods Receipt or Goods Issues from production lines, you can achieve it by adding User Defined Fields.
-    Add User Defined Field on `PickOrderRequiredItems` or `PickReceiptRequiredItems` table with the same code, name, and type as on SAP document lines. Then all information will be automatically copied to the production Inventory transaction.
+12. **Custom Batch or Serial Selection in Backflushing**:  implementing FIFO, LIFO, or Other Selection Methods
 
-12. Own FIFO LIFO or another type of selecting batches or serials in production transactions (Item backflush).
+    To customize material selection in backflushing transactions, you need to manually modify the SQL functions CT_PF_GetFreeSerials and/or CT_PF_GetFreeBatches by adjusting the ORDER BY clause in the SQL code.
 
-    To achieve another type of material selection in back-flush Items, you have to manually edit SQL functions CT_PF_GetFreeSerials and/or CT_PF_GetFreeBatches. You have to amend Order By in this SQL code.
+        :::caution
+            Keep in mind that after every ProcessForce upgrade, these functions will be automatically overwritten by the installer, requiring you to reapply your changes.
+        :::
 
-    :::caution
-        Remember that you have to edit this function after each ProcessForce upgrade, as our installer overrides these functions automatically.
-    :::
+---

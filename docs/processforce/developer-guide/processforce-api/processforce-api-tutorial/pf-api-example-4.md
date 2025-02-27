@@ -4,7 +4,9 @@ sidebar_position: 5
 
 # Example 4: Working with Manufacturing Orders
 
-How to work with Manufacturing Orders using ProcessForce API
+The ProcessForce API allows you to efficiently create and update manufacturing orders (MOs) within your system. This section provides step-by-step guidance on how to work with manufacturing orders using the API.
+
+---
 
 ## Adding New Manufacturing Order
 
@@ -14,7 +16,7 @@ How to work with Manufacturing Orders using ProcessForce API
     IManufacturingOrder mor = company.CreatePFObject(CompuTec.ProcessForce.API.Core.ObjectTypes.ManufacturingOrder);
     ```
 
-2. Set which BOM object you want to copy from:
+2. Set which Bill of Material object you want to copy from:
 
     ```csharp
     //Set ItemCode if BillOfmaterial does not have a Revision 
@@ -25,14 +27,14 @@ How to work with Manufacturing Orders using ProcessForce API
           mor.U_BOMCode = rec.Fields.Item(0).Value;
     ```
 
-3. Set quantity and required date:
+3. Set the quantity and the required date:
 
     ```csharp
     mor.U_Quantity = 100; 
     mor.U_RequiredDate = DateTime.Today.AddDays(20);
     ```
 
-4. Add a document to a database:
+4. Add the document to the database:
 
     ```csharp
     mor.Add();
@@ -74,3 +76,5 @@ How to work with Manufacturing Orders using ProcessForce API
     ```csharp
     mor.Update()
     ```
+
+---

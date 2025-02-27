@@ -4,15 +4,13 @@ sidebar_position: 2
 
 # Example 2: Creating Simple Objects
 
-How to add a simple object using the ProcessForce API
+To create and manage simple objects in ProcessForce, follow these key principles:
 
 - All ProcessForce documents must be created using the factory method in IProcessForceCompanyObject called CreatePFObject.
-
-- All objects contain methods Add, Update, and GetByKey that can be used for adding, updating, or retrieving objects from the database.
-
+- All objects contain methods such as Add, Update and GetByKey that can be used for adding, updating, or retrieving objects from the database.
 - All document objects can be found in CompuTec.ProcessForce.API.Documents namespace.
 
-The example below illustrates how to create a Resource Group object
+The example below illustrates how to create a Resource Group object using the ProcessForce API:
 
 ```csharp
 try
@@ -33,3 +31,5 @@ try
                 Console.WriteLine(string.Format("Error while adding", e.Message));
             }
 ```
+
+---
