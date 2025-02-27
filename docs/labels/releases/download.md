@@ -24,6 +24,7 @@ Below CompuTec Labels Printing Manager and CompuTec Labels SAP Add-on versions a
 <div>
 |Version|Platform|Download Link| Notes |
 |---|---|---| --- |
+| 4.8.0 | x64 | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.0.1_x64.msi) | [Navigate to the page](./release-notes.md#computec-labels-printing-manager-480) |
 | 4.7.1.137 | x64| [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.137_x64.msi)| - |
 | 4.7.1.135 | x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.135_x64.msi) | This version is fully compatible with .NET Core 3.0. Maintains full compatibility with previous systems |
 |4.7.1.134|x64|[Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.134_x64.msi)| - |

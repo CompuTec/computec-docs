@@ -4,22 +4,21 @@ sidebar_position: 1
 
 # ProcessForce API Documentation
 
-Here. you can download ProcessForce API Documentation. It helps to work on any type of external software that uses ProcessForce API, e.g., PowerShell or a third-party add-on.
+The ProcessForce API enables seamless integration with external software such as PowerShell scripts and third-party add-ons. This documentation provides essential details on available objects, their properties, and methods to facilitate smooth API usage.
 
 :::info
-    ProcessForce API documentation file: [Download](https://download.computec.one/media/processforce/CompuTec_ProcessForce_API.chm)
+    Download the ProcessForce API documentation file here: [Download](https://download.computec.one/media/processforce/CompuTec_ProcessForce_API.chm)
 :::
 
 ---
 
-:::note
-    In case the file is blank when opened, please choose Properties from the file context menu and click the Unblock option on the General tab.
+>Note: If the file appears blank when opened, please choose Properties from the file context menu and click the Unblock option on the General tab.
+
     ![Example](./media/processforce-api-doc/example.png)
-:::
 
 ## Documents
 
-All objects available through ProcessForce API are listed in the Documents section, along with their properties and methods (descriptions of which will be added consecutively). In the example below, a path to a list of Cost Category properties and methods is shown (paths to other objects lists are generated analogically):
+The Documents section contains a comprehensive list of all objects available through the ProcessForce API, including their properties and methods. Descriptions will be added progressively. The example below illustrates the path to a list of Cost Category properties and methods, with similar paths generated for other objects:
 
 ![Documents](./media/processforce-api-doc/documents.webp)
 
@@ -29,6 +28,8 @@ The documentation file contains table names specified for objects:
 
 ![Table Name](./media/processforce-api-doc/table-name.webp)
 
-It is also possible to check what kind of data is stored in a specific table:
+Additionally, you can verify what type of data is stored in a specific table:
 
 ![Table Search](./media/processforce-api-doc/table-search.webp)
+
+---

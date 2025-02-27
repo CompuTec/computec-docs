@@ -4,13 +4,19 @@ sidebar_position: 6
 
 # Example 5 Creating Actions
 
+The ProcessForce API provides a streamlined way to manage manufacturing actions, including pick orders, pick receipts, and production issues/receipts. Actions allow you to automate processes such as issuing and receiving materials, reducing manual effort, and improving production efficiency.
+
+This guide covers how to create different types of actions using the API.
+
+---
+
 ## How to work with Actions using ProcessForce API
 
 An action is an object which gives you the possibility to:
 
-- Create Pick Orders for one or more Manufacturing Orders
-- Create Pick Receipts for one or more Manufacturing Orders
-- Create Production Receipts/Issues on assigned Pick Order
+- Create Pick Orders for one or more Manufacturing Orders.
+- Create Pick Receipts for one or more Manufacturing Orders.
+- Create Production Receipts/Issues on assigned Pick Order.
 - Create Correction of Production Issues/Receipts.
 
 1. **Create Pick Receipt for Manufacturing Order**:
@@ -65,4 +71,6 @@ An action is an object which gives you the possibility to:
     prodeceipt.DoAction(out goodsreceiptDocentry);
     ```
 
-    For Production Goods Issue and Receipt, you can also specify documents series, memos, and other information, if you do not wish to use default values.
+    For Production Goods Issue and Receipt, you can also specify additional details such as: documents series, memos, and other information. If not explicitly defined, default values will be applied.
+
+---

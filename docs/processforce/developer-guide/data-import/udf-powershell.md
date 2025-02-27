@@ -4,13 +4,13 @@ sidebar_position: 5
 
 # User Defined Fields in PowerShell Scripts
 
-On this page, you can check how to set the value for a User Defined Field (UDF) that was added to a ProcessForce object.
+When working with ProcessForce objects in PowerShell scripts, you may need to assign values to User Defined Fields (UDFs). This guide explains the correct syntax and best practices for setting UDF values, ensuring proper data handling and script execution.
 
 ---
 
 ## General Rule
 
-When you want to set a value on User Defined Field that was added to the ProcessForce object, you need to use the following syntax:
+To assign a value to a User Defined Field in a ProcessForce object, use the following syntax:
 
 ```powershell
 $PFObject.UDFItems.Item("U_UDF1").Value =  'some value';
@@ -28,12 +28,16 @@ It should be:
 $mo.UDFItems.Item("U_LineNo").Value = $csvItem.LineNo
 ```
 
-The same pattern applies to other User Defined Fields (UDFs).
+The same pattern applies to all the other User Defined Fields (UDFs).
 
 ## Hour Type User Defined Fields
 
-For User Defined Field (UDF) with Hour type, you need to explicitly cast value from the .csv file the o type DateTime. For example, in the .csv file, there is a value in the format HH:MM. An example piece of code for this is:
+If a UDF represents time values (Hour type), you must explicitly convert the value from the .csv file to DateTime format.
+
+For example, if the .csv file contains a time value in the HH:MM format, you should cast it as follows:
 
 ```powershell
 $mo.UDFItems.Item("U_PlannedHours").Value = [datetime] $csvItem.PlannedHours
 ```
+
+---

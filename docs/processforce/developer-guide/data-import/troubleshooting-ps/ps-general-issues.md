@@ -4,27 +4,27 @@ sidebar_position: 1
 
 # General Issues
 
-The most common issues concerning PowerShell script management will be published on this page.
+When working with PowerShell scripts for SAP Business One and ProcessForce API, you may encounter various issues related to connectivity, API compatibility, and database access. This guide outlines the most common problems and provides troubleshooting steps to help resolve them.
 
 ---
 
 ## Connection Issues
 
-Please review the provided login data on the machine you tried connecting from PowerShell with the DITool from SAP to check if the provided login data are valid. This tool is available from the SAP Note:
+Verify the login credentials on the machine where you attempted the PowerShell connection using SAP's DITool to ensure they are correct. You can find this tool in the SAP Note:
 
-[2057143 - DI API_How to Prepare and Debug an XML Payload](https://launchpad.support.sap.com/#/notes/2057143)
+- [2057143 - DI API_How to Prepare and Debug an XML Payload](https://launchpad.support.sap.com/#/notes/2057143)
 
-Please also use this SAP Note to diagnose the problem with the connection:
+Additionally, refer to this SAP Note to troubleshoot and diagnose connection issues:
 
-[2029714 - Troubleshooting Integration Framework SLD DI Connection](https://launchpad.support.sap.com/#/notes/2029714)
+- [2029714 - Troubleshooting Integration Framework SLD DI Connection](https://launchpad.support.sap.com/#/notes/2029714)
 
 :::note
-    Despite this SAP Note relating to Integration Framework, many DI connection issues are common, regardless of the application that uses DI API.
+    Despite this SAP Note relating to Integration Framework, many DI connection issues are similar across different applications that use the DI API.
 :::
 
 ## Exception: Unable to find type
 
-[CompuTec.ProcessForce.API.ProcessForceCompanyInitializator]: make sure that the assembly that contains this type is loaded
+`CompuTec.ProcessForce.API.ProcessForceCompanyInitializator`: make sure that the assembly that contains this type is loaded
 
 **Reason**
 
@@ -42,13 +42,12 @@ $PSVersionTable
 
 **Solution steps - 01 (Example for PowerShell ISE x86)**
 
-- Change CLRVersion to 4.0 (need installed .NET Framework 4.5/4.6 Full) by adding a configuration file to PowerShell ISE
-
-- See **the Configuration files** section in [the PowerShell application configuration](../../data-import/ps-app-configuration.md).
+1. Upgrade CLRVersion to 4.0 (Requires .NET Framework 4.5/4.6 Full).
+2. Add a configuration file to PowerShell ISE.
+3. Refer to the Configuration Files section in [the PowerShell application configuration](../../data-import/ps-app-configuration.md).
 
     ![Version compare](./media/ps-general-issues/clr-version-compare.webp)
-
-- Restart PowerShell ISE and check CRLVersion
+4. Restart PowerShell ISE and verify the updated CLRVersion.
 
     ![Restart](./media/ps-general-issues/restart.webp)
 
@@ -56,7 +55,7 @@ $PSVersionTable
 
 - Use PowerShell 5.1
 
-- [Check the installation part of the documentation](../ps-app-configuration.md#installation)
+- [Refer to the installation part of the documentation](../ps-app-configuration.md#installation)
 
 ## Exception: PF Database Version is not supported
 
@@ -72,15 +71,15 @@ ProcessForce, PowerShell ISE, and PF.API versions vary.
 
 ![Different Version](./media/ps-general-issues/ps-bit-versions.webp)
 
-- Check the ProcessForce version and platform. You can do this in SAP Client > Administration > Add-On Manager (see a screenshot above).
+- Verify the ProcessForce version and platform in SAP Client. To do this, navigate to: SAP Client → Administration → Add-On Manager (see a screenshot above).
 
-- Check what architecture PowerShell ISE is working on (on example screenshot is x86 = 32-bits) and check if this platform is the same as ProcessForce one.
+- Check the PowerShell ISE architecture: if running in 32-bit mode (x86), ensure if this platform is the same as ProcessForce one.
 
-- Check In Windows > Programs & Features installed PF.API version and compare it to SAP Client > Add-on Manager – ProcessForce version & platform.
+- Check In Windows → Programs & Features and match the installed PF.API version with the ProcessForce version and platform in SAP Add-On Manager.
 
     ![Final](./media/ps-general-issues/pc-corresponding-versions.webp)
 
-- Check if PowerShell ISE is using the correct PF API library version.
+- Confirm the correct PF API library version is being used in PowerShell ISE:
 
     ```powershell
     # Check PF.API version used by current PowerShell ISE
@@ -93,9 +92,8 @@ ProcessForce, PowerShell ISE, and PF.API versions vary.
 
 **Solution**
 
-Use PowerShell ISE 64-bit if ProcessForce add-on x64 is installed on your database.
-
-Use PowerShell ISE 32-bit if ProcessForce add-on x86 is installed on your database.
+- Use PowerShell ISE 64-bit if ProcessForce add-on x64 is installed on your database.
+- Use PowerShell ISE 32-bit if ProcessForce add-on x86 is installed on your database.
 
 ## Exception: Unable to Access SBO-Common Database
 
@@ -120,9 +118,8 @@ Mismatch of DBServerType.
 
 **Solution**
 
-Check SQL/HANA server name in the credentials configuration. Sometimes, a database server can be visible only by its name or IP address.
-
-It should be the same as in the SAP Client Choose Company form/window.
+- Check SQL/HANA server name in the credentials configuration. Sometimes, a database server can be visible only by its name or IP address.
+- It should be the same as in the SAP Client Choose Company form/window.
 
 ## Exception: Login SLD Failed
 
@@ -135,4 +132,6 @@ Make sure the server, company, and user credentials are correct
 - Check SQLServer & LicenceServer IP address or name.
 - Check SQLServer & LicenceServer port numbers (they should be used only for HANA connection).
 - Be sure about lower & upper cases in login or password.
-- Check if SLD is working - try to log in using SAP B1 Client to the target database.
+- Check if SLD is working - try to log in using SAP Business One Client to the target database.
+
+---

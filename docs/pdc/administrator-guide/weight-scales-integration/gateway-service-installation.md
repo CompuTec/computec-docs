@@ -26,4 +26,3 @@ This document provides a step-by-step guide on how to install the CompuTec Gatew
 4. Proceed to the [Weight Configuration Manager](./computec-gateway-manager.md) to complete the setup.
 
 ---
-Installing the CompuTec Gateway Service is a straightforward process when all prerequisites are met. By following these steps, you can ensure proper integration with the Service Layer and readiness for advanced configurations. For further assistance, refer to the Weight Configuration Manager documentation linked above.
