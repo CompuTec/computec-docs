@@ -4,11 +4,15 @@ sidebar_position: 4
 
 # ProcessForce Objects (User-Defined Objects)
 
-Here, you will find SQL queries that retrieve information on all objects (tables and fields) within the ProcessForce solution.
+ProcessForce uses user-defined objects (UDOs) to manage various business processes, including master data and transactional documents. Understanding the underlying tables and fields within these objects is essential for reporting, customization, and data validation. Below are SQL queries that retrieve detailed information about ProcessForce objects, including header fields and matrix row fields.
 
 ---
 
-To display all header fields of Master Data / Document in ProcessForce, use the following SQL query:
+To list all header fields from master data or documents within ProcessForce, use the following SQL query:
+
+sql
+Copy
+Edit
 
 ```sql
 -- Object title (header) fields
@@ -22,7 +26,7 @@ WHERE UTB."TableName" LIKE 'CT_PF_%'
 ORDER BY U."Code", F."FieldID";
 ```
 
-To display all fields of matrix rows in ProcessForce, use the following SQL query:
+To extract all fields belonging to matrix rows within ProcessForce documents, use the query below:
 
 ```sql
 -- Object row fields

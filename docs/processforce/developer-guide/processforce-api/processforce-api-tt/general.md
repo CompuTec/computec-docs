@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # General
 
 ProcessForce provides a powerful API for managing manufacturing operations within SAP Business One. This guide outlines key best practices and techniques for working with ProcessForce objects using LINQ, handling data efficiently, managing exceptions, and optimizing manufacturing processes. Whether you are dealing with Bill of Materials (BOM), Manufacturing Orders (MOR), routing operations, or backflushing, these best practices will help ensure accuracy and performance in your implementations.
