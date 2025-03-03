@@ -86,3 +86,9 @@ These versions require CompuTec License Server in 5.10.1.1 version.
 </table>
 
 \* - until next CompuTec PDC release
+
+## CompuTec Gateway Manager
+
+To download the latest version of CompuTec Gateway Manager, click [here](https://learn.computec.one/docs/labels/releases/download/#computec-gateway-manager).
+
+---
