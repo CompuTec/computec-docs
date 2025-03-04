@@ -6,12 +6,12 @@ sidebar_position: 2
 
 ## Installation Guide
 
-On this page, you can find a step-by-step guide on how to install the ProcessForce Extension.
+The ProcessForce Extension is a powerful tool that enhances the functionality of SAP Business One. This guide provides a step-by-step approach to installing the ProcessForce Extension efficiently. Ensure that you meet all system requirements before proceeding with the installation.
 
 ---
 
 :::note
-    If you only need to upgrade ProcessForce, please check the [**ProcessForce Upgrade Guide**](../upgrade).
+    If you only need to upgrade ProcessForce, please check the [**ProcessForce Upgrade Guide**](../upgrade) here.
 :::
 
 :::caution
@@ -79,20 +79,20 @@ ProcessForce for SAP Business One 10.0 is a lightweight deployment extension. As
 
     ![Import add-on](./media/extension/import-add-on.webp)
 
-4. Go to the Company Assignment tab, choose the required database from the Company List and click the Assign button:
+4. Navigate to the Company Assignment tab, choose the required database from the Company List and click the "Assign" button:
 
     ![Assing a database](./media/extension/assign-database.webp)
 
-5. Choose the ProcessForce option and go through the installation by clicking Next.
+5. Choose the ProcessForce option and go through the installation by clicking "Next".
 
     ![Assign ProcessForce](./media/extension/assign-processforce.webp)
 
 6. It is recommended to set up the Startup Mode as manual on the first run of the application. It can be changed later to Mandatory. After that click Next.
 
-7. Once it is done, re-log your company, run the extension manually and wait until the installation is finished.
+7. Once done, re-login to the company database, run the extension manually and wait until the installation is finished.
 
     :::caution
-        Note that the first ProcessForce installation on a company where it was not previously installed may take several dozen minutes up to a few hours (depending on the system environment).
+        The first-time installation may take anywhere from several minutes to a few hours, depending on system performance.
     :::
 
 8. When installing the ProcessForce extension for SAP HANA, you'll need to manually create a specific SQL procedure during the installation process. To do this, click the "Copy to Clipboard" button in the System Message window, then paste the query into SAP HANA Studio and execute it on the appropriate schema (company database):
