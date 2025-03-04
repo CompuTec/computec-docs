@@ -11,34 +11,25 @@ The ProcessForce Extension is a powerful tool that enhances the functionality of
 ---
 
 :::note
-    If you only need to upgrade ProcessForce, please check the [**ProcessForce Upgrade Guide**](../upgrade) here.
+    If you only need to upgrade ProcessForce, refer to the [**ProcessForce Upgrade Guide**](../upgrade) here.
 :::
 
 :::caution
-    Be sure to acquaint yourself with the [ProcessForce System Requirements](../../system-requirements.md) before starting the installation.
-:::
-
-:::caution
-    It is recommended to install [CompuTec License Server](./license-server) first.
-:::
-
-:::caution
-    It is recommended to restart the SAP Business One client before the installation of the ProcessForce Extension.
-:::
-
-:::caution
-    Due to technical limitations, it is required to execute a specific SQL query on the company database during the first installation of the Extension in the SAP HANA version. Additional information can be found in the eighth step of the installation description.
+    - Be sure to acquaint yourself with the [ProcessForce System Requirements](../../system-requirements.md) before starting the installation.
+    - It is recommended to install [CompuTec License Server](./license-server) first.
+    - It is recommended to restart the SAP Business One client before the installation of the ProcessForce Extension.
+    - Due to technical limitations, it is required to execute a specific SQL query on the company database during the first installation of the Extension in the SAP HANA version. Additional information can be found in the eighth step of the installation description.
 :::
 
 :::danger
-    Prior to upgrading the ProcessForce Extension, ensure that the following SAP Business One stored procedures are in their default state, without any custom queries:
+    Before upgrading the ProcessForce Extension, verify that the following SAP Business One stored procedures are in their default state and do not contain any custom queries:
 
     - SP_TransactionNotification
     - SP_PostTransactionNotice
 :::
 
 :::danger
-    Before starting the installation, ensure that Serial Numbers and Batches, Production, and Units of Measure boxes are **unchecked** in General Settings → **Hide functions** (the way it is on the screenshot provided below).
+    Before beginning the installation, ensure that the Serial Numbers and Batches, Production, and Units of Measure options are unchecked in General Settings → Hide Functions, as shown in the screenshot below.
 
     <details>
       <summary>Click here to expand</summary>
@@ -51,21 +42,20 @@ The ProcessForce Extension is a powerful tool that enhances the functionality of
 
     <details>
         <summary>Click here to find out more</summary>
-        <p>When a new ProcessForce database is created by using Copy Express, or with the option Copy User-Defined Fields and Tables/Copy User-Defined Objects in the Create New Company wizard, the SAP Business One mechanism does not set a proper value for EditType fields in Processforce structures (it is set to NULL). It is a result of an SAP Business One bug: new fields with DateTime type are not properly created in a new database.</p>
+        <p>When a new ProcessForce database is created using Copy Express or the Copy User-Defined Fields and Tables/Copy User-Defined Objects option in the Create New Company wizard, SAP Business One does not properly assign values to the EditType fields in ProcessForce structures, leaving them as NULL. This issue arises due to an SAP Business One bug where newly created DateTime fields are not correctly initialized in the new database.</p>
     </details>
 
-    To avoid this situation, you can create a new database, install ProcessForce and move the required data through ProcessForce API with [PowerShell scripts](../../../developer-guide/data-import/overview.md).
+    To prevent this issue, create a new database, install ProcessForce, and transfer the required data using the ProcessForce API with [PowerShell scripts](../../../developer-guide/data-import/overview.md).
 :::
 
 ### Installation
 
 :::danger
     Please note that ProcessForce in 10.0 version is provided as a **Lightweight Deployment Extension only**. Please use **SAP Business One Extension Manager** to install it.
+    Download installation files for it [here](../../../releases/download.md).
 :::
 
-Download installation files for it [here](../../../releases/download.md).
-
-ProcessForce for SAP Business One 10.0 is a lightweight deployment extension. As such to install it, log in to your SLD Extension service and import and assign the ProcessForce extension from there.
+ProcessForce is a lightweight deployment extension for SAP Business One 10.0. Follow these steps to install it:
 
 1. You can access it directly by using a default URL `HTTPS://<SERVER_NAME>:40000/ExtensionManager` or by opening it from your SAP Business One client. Choose the highlighted option in SAP Business One:
 
@@ -75,7 +65,7 @@ ProcessForce for SAP Business One 10.0 is a lightweight deployment extension. As
 
     ![Login](./media/extension/login.webp)
 
-3. Click the Import button and browse to the path with the extension installation file:
+3. Click the "Import" button and browse to the path with the extension installation file:
 
     ![Import add-on](./media/extension/import-add-on.webp)
 
@@ -83,19 +73,19 @@ ProcessForce for SAP Business One 10.0 is a lightweight deployment extension. As
 
     ![Assing a database](./media/extension/assign-database.webp)
 
-5. Choose the ProcessForce option and go through the installation by clicking "Next".
+5. Select the ProcessForce option and click "Next" to proceed with the Installation.
 
     ![Assign ProcessForce](./media/extension/assign-processforce.webp)
 
-6. It is recommended to set up the Startup Mode as manual on the first run of the application. It can be changed later to Mandatory. After that click Next.
+6. It is recommended to set up the Startup Mode as manual for the first run of the application (this can be changed later to Mandatory). Click "Next" to continue.
 
-7. Once done, re-login to the company database, run the extension manually and wait until the installation is finished.
+7. Once done, re-login to the company database, run the extension manually and wait for the installation to finish.
 
     :::caution
         The first-time installation may take anywhere from several minutes to a few hours, depending on system performance.
     :::
 
-8. When installing the ProcessForce extension for SAP HANA, you'll need to manually create a specific SQL procedure during the installation process. To do this, click the "Copy to Clipboard" button in the System Message window, then paste the query into SAP HANA Studio and execute it on the appropriate schema (company database):
+8. If installing on SAP HANA, you must manually create a required SQL procedure. Click "Copy to Clipboard" in the System Message window, then paste and execute the query in SAP HANA Studio under the appropriate schema.
 
     ![System Message - Procedure](./media/extension/system-message-procedure.webp)
 
@@ -104,9 +94,9 @@ ProcessForce for SAP Business One 10.0 is a lightweight deployment extension. As
     <details>
         <summary>Click here to expand</summary>
         <div>
-            When you do not select a schema by opening SQL Console from the root tree schema selection, the query window is set to the default selected schema, e.g. SYSTEM schema. The first execution of a query creates a procedure in the SYSTEM schema and not in the proper company schema where ProcessForce is installed.
+            If a schema is not selected when opening the SQL Console from the root tree, the query window defaults to the SYSTEM schema. As a result, executing a query for the first time may create a procedure in the SYSTEM schema instead of the correct company schema where ProcessForce is installed.
 
-        To install the copied SQL procedure to the proper company schema, please open SQL Console and use the below command before the copied query to switch to the proper schema:
+        To ensure the SQL procedure is installed in the correct company schema, open the SQL Console and run the following command before executing the copied query:
 
         ```sql
         SET SCHEMA "<COMPANY-DATABASE-SCHEMA-NAME>";
@@ -116,29 +106,29 @@ ProcessForce for SAP Business One 10.0 is a lightweight deployment extension. As
     </div>
     </details>
     :::
-9. After the installation is completed, the message about the database structure modification is displayed – click Yes.
+9. After the installation is completed, a prompt will appear regarding database structure modifications - click "Yes" to proceed.
 
-10. Additional message – recommending the SAP Business One client restart – is displayed: click OK.
+10. A message recommending a restart of SAP Business One will be displayed: click OK.
 
-11. At the end of the installation process, the ProcessForce main menu positions appear:
+11. After installation, the ProcessForce main menu positions appear:
 
     ![ProcessForce menu](./media/extension/processforce-menu.webp)
 
 ### License Assignment
 
 :::info
-    This step may be skipped only in case of making the extension upgrade.
+    This step is only required for new installations, not for upgrades.
 :::
 
 You can find the License Import and Assignment guide [here](../../licensing/license-import-assignment.md).
 
 ### Data Preparation
 
-:::note
-    Before running restore procedures please determine whether the [**Manage Item Cost per Warehouse**](../../../user-guide/costing-material-and-resources/configuration/overview.md) setting is used. If you alter this setting after restoration, it will necessitate the removal and subsequent restoration of all Item Costing Details.
+:::caution
+    Before running restore procedures please determine whether the [**Manage Item Cost per Warehouse**](../../../user-guide/costing-material-and-resources/configuration/overview.md) setting is used. If you alter this setting after restoration, it will necessitate the removal and subsequent restoration of all Item Costing Details.
 :::
 
-If ProcessForce is installed on a database with an existing data (particularly Item Master Data entries) for the first time, it is necessary to run the data restoring procedures:
+If installing ProcessForce on a database with existing data (especially Item Master Data), run the following data restoration procedures:
 
 - Restore Item Details
 - Restore Item Costing
@@ -149,3 +139,5 @@ If ProcessForce is installed on a database with an existing data (particularly I
 ![Restore](./media/extension/restore.webp)
 
 Click [here](../../../user-guide/system-initialization/data-restore.md) to find out more about the Restore function.
+
+---
