@@ -1,5 +1,60 @@
 [
   {
+    "version": "ProcessForce 10.0 Release 30",
+    "build": "10.0.29.4",
+    "release_date": "04 March 2025",
+    "minimal_ae_version": "2.10.30.3",
+    "requirements": [
+      "SAP Business One 10.0",
+      "ProcessForce API 10.0 RL30"
+    ],
+    "download_url": "https://download.computec.one/software/appengine/plugins/processforce/releases/CompuTec_ProcessForce_10.0.10.3.zip"
+  },
+  {
+    "version": "ProcessForce 10.0 Release 29 (R29) HF1",
+    "build": "10.0.29.4",
+    "release_date": "20 December 2024",
+    "minimal_ae_version": "2.10.10.1",
+    "requirements": [
+      "SAP Business One 10.0",
+      "ProcessForce API 10.0 RL29"
+    ],
+    "download_url": "https://download.computec.one/software/appengine/plugins/processforce/releases/CompuTec_ProcessForce_10.0.29.4.zip"
+  },
+  {
+    "version": "ProcessForce 10.0 Release 29 (R29)",
+    "build": "10.0.29.3",
+    "release_date": "18 December 2024",
+    "minimal_ae_version": "2.10.10.1",
+    "requirements": [
+      "SAP Business One 10.0",
+      "ProcessForce API 10.0 RL29"
+    ],
+    "download_url": "https://download.computec.one/software/appengine/plugins/processforce/releases/CompuTec_ProcessForce_10.0.29.3.zip"
+  },
+  {
+    "version": "ProcessForce 10.0 Release 28 (R28)",
+    "build": "10.0.28.37",
+    "release_date": "14 November 2024",
+    "minimal_ae_version": "2.10.10.1",
+    "requirements": [
+      "SAP Business One 10.0",
+      "ProcessForce API 10.0 RL28"
+    ],
+    "download_url": "https://download.computec.one/software/appengine/plugins/processforce/releases/CompuTec_ProcessForce_10.0.28.37.zip"
+  },
+  {
+    "version": "ProcessForce 10.0 Release 27 (R27)",
+    "build": "10.0.27.2",
+    "release_date": "07 October 2024",
+    "minimal_ae_version": "2.10.10.1",
+    "requirements": [
+      "SAP Business One 10.0",
+      "ProcessForce API 10.0 RL27"
+    ],
+    "download_url": "https://download.computec.one/software/appengine/plugins/processforce/releases/CompuTec_ProcessForce_10.0.27.2.zip"
+  },
+  {
     "version": "ProcessForce 10.0 Release 26 (R26)",
     "build": "10.0.26.1",
     "release_date": "24 July 2024",
