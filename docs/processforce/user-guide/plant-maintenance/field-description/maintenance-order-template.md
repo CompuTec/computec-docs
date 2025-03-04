@@ -184,7 +184,7 @@ Main Menu → Administration → Plant Maintenance → Work Setup → Checkpoint
 - **EM Type**: MI's Effective Meter Type associated with UoM for the meter reading. (Check [here](maintainable-item.md#effective-meters-tab)).
 - **Entry Type**: specifies the meter reading input mode: Reading or Difference.
 - **Aspect**: determines for which Inspection Points from MI inspection results will be recorded, based on Aspect/Point Type. (Check [here](maintainable-item.md#aspect-points)).
-- **Aspect Name**: an aspect defined for MI, please check [here](maintainable-item.md#aspect)
+- **Aspect Name**: an aspect defined for MI, please check [here](maintainable-item.md#aspects)
 - **Point Type**: the point related to the aspect in the Maintainable Item definition. (Check [here](maintainable-item.md#point-type)).
 - **Point Type Name**: name of the point.
 - **UoM**: a unit of measure for Aspect Point.
