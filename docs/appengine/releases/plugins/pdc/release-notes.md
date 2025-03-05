@@ -9,6 +9,18 @@ toc_max_heading_level: 2
     Installer is ready to download from [here](/docs/appengine/releases/plugins/pdc/download).
 :::
 
+## CompuTec PDC 3.10.25.1
+
+**Release Date – 04 March 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Story | PDC | Spanish Language Support in PDC Settings |
+| Bug | PDC | No message displayed when selecting a locked batch using a barcode scanner. |
+| Bug | PDC | Incorrect quantity notation in PDC. |
+| Improvement | PDC | PDC experiencing performance issues. |
+| Bug | PDC | Error "Sequence contains no matching element" encountered in MO list. |
+
 ## CompuTec PDC 3.10.24.2 (Hotfix)
 
 **Release Date - 05 December 2024**
