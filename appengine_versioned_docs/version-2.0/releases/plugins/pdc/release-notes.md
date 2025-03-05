@@ -14,6 +14,7 @@ toc_max_heading_level: 2
 **Release Date – 04 March 2025**
 
 | Issue Type | Component/s | Release Note |
+| --- | --- | --- |
 | Story | PDC | Spanish Language Support in PDC Settings |
 | Bug | PDC | No message displayed when selecting a locked batch using a barcode scanner. |
 | Bug | PDC | Incorrect quantity notation in PDC. |
