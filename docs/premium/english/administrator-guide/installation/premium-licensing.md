@@ -27,13 +27,15 @@ A license file is provided to customers who have paid an annual maintenance fee.
 - Customers with an active annual maintenance payment receive a license file automatically.
 - Customers without an active maintenance plan (or those using other CompuTec products) must request an individual license offer based on the number of users.
 
-### How to Request a License
+### How to Request a License?
 
 To obtain a license file, send the following details to the CompuTec Support Team:
 
 - Company Name
 - Premium Key (found in the Manager Premium License window – right-click, copy, and send as text, not as a screenshot)
 - Major SAP Business One Version (e.g., 9.2, 9.3)
+
+    ![Premium Licensing](./media/premium-license.png)
 
 Once the request is processed, CompuTec will provide the license file.
 

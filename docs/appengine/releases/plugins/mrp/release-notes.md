@@ -9,9 +9,21 @@ toc_max_heading_level: 2
 The latest Installer is available to download from [here](/docs/appengine/releases/plugins/mrp/download).
 :::
 
+## CompuTec MRP 1.14.0
+
+**Release Date – 07 March 2025**
+
+| Issue Type | Release Note | Related issue/s |
+| --- | --- | --- |
+| Bug | Users were unable to select items in the Item Selection screen. | - |
+| Bug | In the Order Recommendation screen for Manufacturing Orders (MO) and Purchase Quotations, the Numbering Series dropdown was empty. | SPROC-16293 |
+| Bug | Inconsistency in MRP 2.5 when the Scenario Code contained a "+" (plus) symbol. | - |
+| Bug | Consumed Forecast field in MRP 2.5 was empty. | SPROC-16269 |
+| Bug | "Display Selected Items Only" option under the Results tab in MRP 2.5 was not functioning | - |
+
 ## MRP 1.10.13
 
-### *Release Date - 26 June 2024*
+**Release Date - 26 June 2024**
 
 | Issue Type | Release Note | Related issue/s |
 | --- | --- | --- |
@@ -24,12 +36,13 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 | Bug | Select/unselect all is not working | - |
 | Bug | Scaling issue in Initial Quantity Details pop up | SPROC-15909 |
 | Bug | Pegging information on Demand incorrectly shows purchase request | SPROC-15909 |
-| Bug | Missing full error info for "Not all selected documents have"  | SPROC-15909 |
+| Bug | Missing full error info for "Not all selected documents have" | SPROC-15909 |
+
 ---
 
 ## MRP 1.10.12
 
-### *Release Date - 26 June 2024*
+**Release Date - 26 June 2024**
 
 | Issue Type | Release Note | Related issue/s |
 | --- | --- | --- |
@@ -42,7 +55,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## MRP 1.10.11
 
-### *Release Date - 6 February 2024*
+**Release Date - 6 February 2024**
 
 | Issue Type | Release Note | Related issue/s |
 | --- | --- | --- |
@@ -60,7 +73,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## MRP 1.10.10
 
-### *Release Date - 3 August 2023*
+**Release Date - 3 August 2023**
 
 | Issue Type | Release Note | Related issue/s |
 | --- | --- | --- |
@@ -76,7 +89,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## MRP 1.10.9
 
-### *Release Date - 11 May 2023*
+**Release Date - 11 May 2023**
 
 | Issue Type | Custom field (Release Note) | Related issue/s |
 | --- | --- | --- |
@@ -96,7 +109,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## MRP 1.10.7
 
-### *Release Date - 28 September 2022*
+**Release Date - 28 September 2022**
 
 | Issue Type | Release Note | Related issue/s |
 | --- | --- | --- |
@@ -113,7 +126,7 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 
 ## MRP 1.10.6, 1.93.6
 
-### *Release Date - 28 March 2022*
+**Release Date - 28 March 2022**
 
 | Issue Type | Release Note | Related issue/s |
 | --- | --- | --- |
@@ -132,3 +145,5 @@ The latest Installer is available to download from [here](/docs/appengine/releas
 | Bug | Order Recommendation: the Relation Map is now opened in a new window due to precious problems with the unstable display of it in the Order Recommendation. | - |
 | Bug | Results: scrolling does not work (works after clicking Expand and then Collapse All). | - |
 | Improvement | The calling of Relationship Map on Order Recommendation (while working in the browser) requires re-login. | - |
+
+---

@@ -4,22 +4,24 @@ sidebar_position: 5
 
 # SAP Business One Cloud Environment
 
-Here, you can find notes on registering ProcessForce in the SAP Business One Cloud environment.
+ProcessForce is a powerful extension for SAP Business One, designed to enhance manufacturing and process management. If you’re working in the SAP Business One Cloud environment, you’ll need to ensure that ProcessForce is properly registered, deployed, and maintained. This guide provides key information on setting up ProcessForce, resolving deployment issues, and handling known client behavior in the cloud environment.
 
 ---
 
 ## Registering ProcessForce
 
-Refer to the Managing Extensions chapter in the [SAP Business One Cloud Administrator's Guide](https://help.sap.com/docs/SAP_BUSINESS_ONE_CLOUD) for instructions on registering add-ons, deploying them to Service Units, and assigning them to Tenants in the Cloud Control Center.
+To register ProcessForce in SAP Business One Cloud, refer to the Managing Extensions chapter in the  [SAP Business One Cloud Administrator's Guide](https://help.sap.com/docs/SAP_BUSINESS_ONE_CLOUD). This section outlines the process for registering add-ons, deploying them to Service Units, and assigning them to Tenants using the Cloud Control Center.
 
 ## Error while Deploying ProcessForce to Service Unit
 
-If you encounter difficulties deploying the ProcessForce add-on to a Service Unit with an older version of SAP Business One Cloud or Cloud Control Center, it may be due to an error during the registration of the Microsoft COM DLL file (RegisterActiveX.dll). Should this occur, kindly submit a ticket through our support portal to request a version of the ProcessForce installer that facilitates proper deployment of the add-on.
+If you encounter errors while deploying ProcessForce to a Service Unit, particularly with older versions of SAP Business One Cloud or the Cloud Control Center, the issue may be related to the registration of the Microsoft COM DLL file (RegisterActiveX.dll). If this occurs, submit a ticket through our support portal to request a compatible version of the ProcessForce installer that supports proper deployment.
 
 ## Closure of the SAP Business One Client
 
-When logged in as Partner Support User (_PSU_1 or _PSU_2) and conducting tasks in ProcessForce, please close the SAP Business One client. There is a known defect causing the closure of the SAP Business One client without any message when performing activities in ProcessForce in the SAP Business One Cloud environment. It may cover several aspects, including:
+There is a known issue in the SAP Business One Cloud environment where the SAP Business One client may close unexpectedly when working with ProcessForce, especially when logged in as a Partner Support User (PSU_1 or PSU_2). This can occur in the following scenarios:
 
-- Trying to assign a user a ProcessForce license – please visit the [Licensing Issues](../../troubleshooting/licensing-issues.md) page for more information.
+- **Assigning ProcessForce Licenses**: The system may close unexpectedly while assigning user licenses. For more details, refer to the[Licensing Issues](../../troubleshooting/licensing-issues.md) page.
 
-- Opening a ProcessForce window after at least 15 minutes of inactivity or after re-logging into the company database – please visit the [General Functions](../../troubleshooting/general-functions.md) page for more information.
+- **Opening a ProcessForce Window**: If the client remains inactive for 15 minutes or after re-logging into the company database, ProcessForce windows may not open correctly. Visit the [General Functions](../../troubleshooting/general-functions.md) page for more information.
+
+---
