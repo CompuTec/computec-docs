@@ -19,14 +19,20 @@ Since CompuTec Premium is a lightweight deployment extension, it must be added a
     - In SAP Business One, navigate to Main Menu → Administration → Add-Ons → Add-On Administration.
     - Click Manage Extensions for Lightweight Deployment at the bottom of the Add-On Administration window.
 
+        ![Manage Extensions](./media/manage-extensions.png)
+
 2. **Log in to the System Landscape Directory (SLD)**
 
     - Open the System Landscape Directory and log in.
+
+        ![SLD Login](./media/sld-login.png)
 
 3. **Import the Installation Files**
 
     - Select Import, then click Browse to locate the installation package.
     - Click Upload to begin the installation.
+
+        ![Import Installation](./media/import-installation.png)
 
 4. **Configure Installation Parameters**
 
@@ -36,19 +42,31 @@ Since CompuTec Premium is a lightweight deployment extension, it must be added a
 5. **Assign the Extension to a Company**
 
     - Select the CompuTec Premium extension and go to the Company Assignment tab.
+
+        ![Company Assignment](./media/co-assignment-tab.png)
+
     - Choose the required company and click Assign.
+
+        ![Assign](./media/assign.png)
 
 6. **Finalizing the Setup**
 
     - Check the field in the first column and click Next.
     - Set up the necessary parameters and proceed by clicking Next again.
+
+        ![Parameters](./media/parameters.png)
     - Choose the starting method, which is automatically assigned to all users. This default setting can be adjusted per customer requirements.
     - Click Finish, log out of the System Landscape Directory, and re-log into the assigned company.
 
 7. **Running the Extension**
 
     - If the starting method was set to manual, you must manually launch the extension.
+
+         ![Running Extension](./media/running-extension.png)
+
     - Once the system displays the message "Dodatek CompuTec Premium - Włączony", the extension is successfully installed and ready for use.
+
+        ![Running Extension](./media/running-extension-1.png)
 
 ## Firewall Configuration
 

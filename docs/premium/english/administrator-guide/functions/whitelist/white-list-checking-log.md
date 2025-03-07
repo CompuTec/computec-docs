@@ -20,6 +20,8 @@ Upper menu → Tools → Default Forms → CT_WL_LOG - CT_WL_LOG
 
 ## Checking Form
 
+![Checking Form](./media/checking-form.png)
+
 The form provides detailed information on past white list verifications, including:
 
 - User who performed the check
@@ -38,6 +40,9 @@ In Journal Entry and A/P Invoice forms, users can review details of the last whi
 
     Navigate to: Upper menu → View → User Defined Fields
 2. Once enabled, a panel displaying the relevant fields will appear.
+
+    ![Last Checking](./media/last-checking.png)
+
 3. Highlighted fields indicate the last verification details.
 4. Click the yellow arrow to view complete checking details in the CT_WL_LOG form.
 
