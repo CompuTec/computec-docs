@@ -9,18 +9,6 @@ toc_max_heading_level: 2
 The latest Installer is available to download from [here](/docs/appengine/releases/plugins/mrp/download).
 :::
 
-## CompuTec MRP 1.14.0
-
-**Release Date – 07 March 2025**
-
-| Issue Type | Release Note | Related issue/s |
-| --- | --- | --- |
-| Bug | Users were unable to select items in the Item Selection screen. | - |
-| Bug | In the Order Recommendation screen for Manufacturing Orders (MO) and Purchase Quotations, the Numbering Series dropdown was empty. | SPROC-16293 |
-| Bug | Inconsistency in MRP 2.5 when the Scenario Code contained a "+" (plus) symbol. | - |
-| Bug | Consumed Forecast field in MRP 2.5 was empty. | SPROC-16269 |
-| Bug | "Display Selected Items Only" option under the Results tab in MRP 2.5 was not functioning | - |
-
 ## MRP 1.10.13
 
 **Release Date - 26 June 2024**
