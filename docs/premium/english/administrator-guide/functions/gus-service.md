@@ -16,14 +16,14 @@ The first-two options ("Check NIP if Business Partner is active VAT payer" and "
 - A/P Invoice
 - A/R Invoice
 
-![Purchase Invoice](./media/purchase-invoice.png)
+    ![Purchase Invoice](./media/purchase-invoice.png)
 
 Additionally, users can retrieve Business Partner details from the GUS database using the following options, available in the Business Partner Master Data form:
 
 - Get REGON data from GUS
 - Get NIP data from GUS
 
-![GUS](./media/gus.png)
+    ![GUS](./media/gus.png)
 
 For the REGON data retrieval, a CAPTCHA code must be entered to proceed.
 
@@ -52,7 +52,7 @@ In this form, users can:
 - Click Verify to refresh the VAT status of listed Business Partners.
 - View a Remarks summary displaying the number of checked partners, inactive entities, and any status discrepancies.
 
-![After Verification](./media/after-verification.png)
+    ![After Verification](./media/after-verification.png)
 
 ## Automatic VIES Checking on Delivery Documents
 
@@ -69,6 +69,7 @@ This feature automatically verifies and displays a Business Partner's VIES statu
     ![WZ Checking](./media/wz-checking.png)
 
 - The verification record can be accessed via:
+
     :::info Path
     Tools → Default Forms → CT_VIES_LOG
     :::

@@ -35,6 +35,8 @@ Aby uzyskać plik licencyjny, należy przesłać następujące informacje do Zes
 - Premium Key (znajdujący się w oknie Manager Premium License – kliknij prawym przyciskiem myszy, skopiuj i prześlij jako tekst, nie jako zrzut ekranu)
 - Główna wersja SAP Business One (np. 9.2, 9.3)
 
+    ![Premium Licensing](./media/premium-license.png)
+
 Po przetworzeniu zgłoszenia CompuTec dostarczy plik licencyjny.
 
 ## Przypisanie licencji
