@@ -1,16 +1,5 @@
 [
 	{
-		"version": "1.10.14",
-		"build": "1.10.14.2",
-		"release_date": "07 March 2025",
-		"requirements": [
-			"AppEngine 2.10.18.103",
-			"CompuTec ProcessForce 10.0 Release 26 (R26)",
-			"Production Process Flow Plugin 1.10.11"
-		],
-		"download_url": "https://download.computec.one/software/appengine/plugins/mrp/releases/CompuTec_MRP_1.10.14.2.zip"
-	},
-	{
 		"version": "1.10.13",
 		"build": "1.10.13.1",
 		"release_date": "22 July 2024",
