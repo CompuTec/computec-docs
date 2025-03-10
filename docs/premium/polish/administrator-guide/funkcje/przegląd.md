@@ -24,4 +24,6 @@ Dostępność tych funkcji można kontrolować na poziomie Ustawień Ogólnych, 
 Administracja > Inicjalizacja systemu > Ustawienia ogólne > zakładka Premium
 :::
 
+![General Settings](./media/general-settings.png)
+
 ---
