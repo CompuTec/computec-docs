@@ -8,7 +8,7 @@ CompuTec Premium is a lightweight deployment extension for SAP Business One that
 
 ---
 
-You can download installation files from here.
+You can download installation files from [here](../../administrator-guide/download.md).
 
 ## Extension Installation in SAP Business One
 

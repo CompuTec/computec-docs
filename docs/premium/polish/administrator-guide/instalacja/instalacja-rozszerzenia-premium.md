@@ -8,7 +8,7 @@ CompuTec Premium to lekkie rozszerzenie dla SAP Business One, które zwiększa f
 
 ---
 
-Możesz pobrać pliki instalacyjne tutaj.
+Możesz pobrać pliki instalacyjne [tutaj](../../administrator-guide/pliki-do-pobrania.md).
 
 ## Instalacja rozszerzenia w SAP Business One
 

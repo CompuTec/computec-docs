@@ -11,7 +11,7 @@ CompuTec Premium rozszerza funkcjonalność SAP Business One, oferując zaawanso
 ## Kluczowe funkcje
 
 - **Weryfikacja podatnika**: automatycznie sprawdza numer NIP w bazach danych Polskiego Urzędu Skarbowego oraz VIES, aby potwierdzić, czy kontrahent jest czynnym podatnikiem.
-- **Integracja z usługą GUS**: umożliwia automatyczne pobieranie danych z Głównego Urzędu Statystycznego (GUS) dla kontrahentów za pomocą usługi WCF.
+- **Integracja z usługą GUS**: umożliwia automatyczne pobieranie danych z Głównego Urzędu Statystycznego [(GUS)](./usługa-gus.md) dla kontrahentów za pomocą usługi WCF.
 - **Zarządzanie serią numeracji**: pozwala użytkownikom edytować i tworzyć nowe serie numeracyjne oraz przypisywać domyślnych użytkowników.
 - **Usługa linii UDO**: automatycznie dodaje nową linię w Obiektach Zdefiniowanych przez Użytkownika (UDO) po wypełnieniu bieżącej linii.
 - **Drukowanie Crystal dla UDO**: obsługuje drukowanie dokumentów związanych z UDO za pomocą Crystal Reports.
