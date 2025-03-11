@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Prerequisites and Installation
 
-Here, you can check the prerequisites and installation notes.
+This section provides essential prerequisites and installation guidelines for setting up and utilizing the data model effectively. Follow these steps to ensure a seamless configuration and integration with SAP Business One and analytics tools.
 
 ---
 
@@ -12,7 +12,7 @@ Here, you can check the prerequisites and installation notes.
 
 ### Initialize Analytics
 
-It is required to initialize analytics for a specific database. You can check if the administrator console does it: `https://<Server Address>:<Port>/Enablement` (swap `<Server Address>` and `<Port>` for your data). Follow the steps in the screenshot below:
+To enable analytics for a specific database, ensure that initialization is completed through the administrator console. You can verify this by accessing the following URL: `https://<Server Address>:<Port>/Enablement` (swap `<Server Address>` and `<Port>` for your data). Follow the steps in the screenshot below:
 
 ![Prerequisites 1](./media/prerequisites-installation/prerequisites-1.webp)
 
