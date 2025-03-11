@@ -25,7 +25,6 @@ The image above shows the expected response. If you encounter a different respon
 
     ![Permission](./media/permission.webp)
 
-
 ## Download and Installation
 
 Download the installation file from [here](../../../releases/download.md) and then extract and transfer it to the device.
@@ -109,6 +108,20 @@ On certain Zebra devices, such as the MC330K, these settings are automatically c
 If your device does not provide an option to define the Intent Data key, refer to your device's documentation to identify the key used for sending barcode data. Once identified, enter this key in the CompuTec WMS Scanner settings under **Intent data string**. If you're unable to locate the key, you can enable logging in the CompuTec WMS scanner settings after activating the Intent action. This will allow you to check the log files for the correct barcode data key being sent to WMS.
 
 ![Scanner](./media/android-scanner-03.webp)
+
+## Configuration (Barcode Scanner Settings) for Denso Android Device
+
+![Barcode Scanner Settings](./media/screenshot-1.png) ![Single Symbol Scan](./media/screenshot-2.png) ![Notification Settings](./media/screenshot-3.png)
+
+![Barcode Scanner Settings](./media/screenshot-4.png) ![Output Settings](./media/screenshot-5.png) ![Method](./media/screenshot-6.png)
+
+Enter `barcodescanner.RECVR` in Intent Action Name:
+
+![Output Settings](./media/screenshot-7.png)
+
+Enter `com.densowave.bhtsdk.barcode.outp` in Intent data string
+
+![Intent data string](./media/screenshot-8.png)
 
 ---
 The CompuTec WMS Android version offers a powerful solution for warehouse management, providing users with an intuitive interface and seamless integration with Android devices. By following the detailed installation, configuration, and testing steps outlined in this guide, users can optimize their warehouse operations, ensuring efficient communication with the CompuTec WMS Server and accurate barcode scanning.

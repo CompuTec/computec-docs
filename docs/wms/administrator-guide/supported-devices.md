@@ -25,7 +25,7 @@ CompuTec WMS 2.0 is compatible with the following Operating Systems:
         The CompuTec WMS Android version offers a powerful solution for warehouse management, providing users with an intuitive interface and seamless integration with Android devices.
 
 - **Microsoft Windows**
-        
+
         - Windows 11
         - Windows 10
         - Windows 8
@@ -62,12 +62,12 @@ This list is not exhaustive. Any device meeting the requirements outlined above 
 - Zebra WCMTB-T27B8CBD8-A6
 - Samsung A202F/DS (barcode scanning using the device's camera)
 - Samsung SM-J415x, Samsung Note 20
+- Denso - densowave.bht-m70-qw-a10
+- Denso - densowave.bht-m60-qw-a10
 
  **Recommended devices**
 
 While CompuTec WMS is compatible with a broad variety of devices, our experience from numerous implementations has led us to develop a trusted device-system combination that we commonly recommend to our partners and customers. Based on extensive field experience and successful implementations, we highly recommend the Zebra [MC3300](https://www.zebra.com/us/en/products/spec-sheets/mobile-computers/handheld/mc3300.html) and [MC9300](https://www.zebra.com/us/en/products/spec-sheets/mobile-computers/handheld/mc9300.html) terminals, running Android
-
-
 
 ## Supported Barcode Scanners
 
