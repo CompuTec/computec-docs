@@ -41,3 +41,16 @@ Below are the release notes for CompuTec Labels SAP Addon, highlighting new feat
 | Issue Type | Reference Support | Release Note |
 | --- | --- | --- |
 | Improvement | - | New option has been added in the printer list in the Printer Preview window of CT Labels Add-on. It is now possible to send request to printers which are set in the query. |
+
+## CompuTec Gateway
+
+Below are the release notes for CompuTec Gateway, highlighting new features, improvements, and bug fixes in this release.
+
+### CompuTec Gateway Manager 1.2.1
+
+**Release Date – 11 March 2025**
+
+| Issue Type | Component/s | Reference Support Ticket | Release Note |
+| --- | --- | --- | --- |
+| Improvement | Gateway | - | New versioning (semver) system has been applied. |
+| Improvement | Gateway | - | Gateway Manager executable file name has been updated. |

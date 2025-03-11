@@ -6,6 +6,8 @@ sidebar_position: 1
 
 Here, you can find information on the data model.
 
-The model contains 40 calculation views, 10 of which are views that can be a direct source for analytics tools (like Dashboards, KPIs, SAP Cloud Analytics, or Microsoft Excel). The rest of the views are of the indirect type.
+The data model includes 40 calculation views, with 10 designed as direct sources for analytics tools such as Dashboards, KPIs, SAP Analytics Cloud, or Microsoft Excel. The remaining views serve as indirect sources.
 
-A specific view can also be used in a standard SQL query.
+Additionally, a specific view can be utilized in a standard SQL query
+
+---
