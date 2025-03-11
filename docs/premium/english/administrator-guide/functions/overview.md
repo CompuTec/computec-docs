@@ -11,7 +11,7 @@ CompuTec Premium extends the functionality of SAP Business One by offering advan
 ## Key functions include
 
 - **Taxpayer Verification**: automatically checks the NIP (Taxpayer Identification Number) in the Polish Tax Office and VIES databases to confirm if a business partner is an active taxpayer.
-- **GUS Service Integration**: enables automatic data retrieval from the Central Statistical Office (GUS) for business partners using a WCF service.
+- **GUS Service Integration**: enables automatic data retrieval from the Central Statistical Office [(GUS)](gus-service.md) for business partners using a WCF service.
 - **Numbering Series Management**: allows users to edit and create new numbering series while reassigning default users.
 - **UDO Line Service**: automatically adds a new line when a current line is filled in User Defined Objects (UDOs).
 - **Crystal Printing for UDOs**: supports printing documents related to UDOs using Crystal Reports.
