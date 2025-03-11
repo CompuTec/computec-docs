@@ -260,8 +260,6 @@ If you use the ProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to instal
   </TabItem>
 </Tabs>
 
-## CompuTec Gateway Service
+## CompuTec Gateway Manager
 
-1.2.0.20 version: [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.0.20.msi)
-
-Click [here](../administrator-guide/installation/computec-gateway-service/computec-gateway-service-installation.md) to find out more.
+To download the latest version of CompuTec Gateway Manager, click [here](https://learn.computec.one/docs/labels/releases/download/#computec-gateway-manager).
