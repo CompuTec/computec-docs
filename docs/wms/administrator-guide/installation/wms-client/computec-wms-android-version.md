@@ -119,7 +119,7 @@ Enter `barcodescanner.RECVR` in Intent Action Name:
 
 ![Output Settings](./media/screenshot-7.png)
 
-Enter `com.densowave.bhtsdk.barcode.outp` in Intent data string
+Enter `com.densowave.bhtsdk.barcode.outputsettings.intent.extra.BARCODE_DATA` in Intent data string
 
 ![Intent data string](./media/screenshot-8.png)
 
