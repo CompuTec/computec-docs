@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# SS0 Connection
+# SSO Configuration
 
 Single Sign-On (SSO) simplifies the login process by allowing users to access multiple systems with a single set of credentials, enhancing security and user convenience. To ensure seamless integration with CompuTec WMS, specific conditions must be met for WMS databases to be displayed when SSO is enabled.
 
