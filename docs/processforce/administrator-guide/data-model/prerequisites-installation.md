@@ -68,3 +68,5 @@ From the Excel level:
 ![Prerequisites 8](./media/prerequisites-installation/prerequisites-8.webp)
 
 ![Prerequisites 9](./media/prerequisites-installation/prerequisites-9.webp)
+
+---

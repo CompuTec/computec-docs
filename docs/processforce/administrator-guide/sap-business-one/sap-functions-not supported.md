@@ -4,25 +4,23 @@ sidebar_position: 2
 
 # SAP Functions not Supported by ProcessForce
 
-In this page, you can find SAP functions not supported by ProcessForce, e.g. because of a similar function present in the ProcessForce system.
+ProcessForce is designed to enhance SAP Business One with advanced manufacturing capabilities. However, certain SAP functions are not supported within ProcessForce, often because similar functionalities are already available in the system. Below is a list of SAP functions that are either not integrated with ProcessForce or have alternative solutions within the platform.
 
 ---
 
 ## SAP Procurement Confirmation Wizard
 
-SAP Procurement Confirmation Wizard is not supported and does not create ProcessForce Manufacturing Orders.
-
-ProcessForce Manufacturing Orders can be created directly from Sales Orders (from its context menu).
+The SAP Procurement Confirmation Wizard is not supported in ProcessForce, meaning it does not generate ProcessForce Manufacturing Orders. Instead, Manufacturing Orders can be created directly from Sales Orders via the context menu, providing a streamlined workflow.
 
 ## Browser Access
 
-As only SAP Business One UI API code can run in Browser Access, we removed functionalities based on ActiveX from ProcessForce when it runs in Browser Access mode:
+Since SAP Business One UI API code is the only supported method for Browser Access, functionalities that rely on ActiveX have been removed from ProcessForce when running in this mode:
 
 - Stock Management → Item Management → Batch Traceability
 - Production → Manufacturing Order → Scheduling, but only scheduling on the Gantt chart as Scheduling Board is available
 - Production → Bill of Materials → Production Process → Operation Relation Map from right-click context menu
 - Production → Manufacturing Order → Manufacturing Order → Operation Relation Map from right-click context menu
 
-This is only a Browser Access limitation.
+These limitations apply only to Browser Access mode. If you need these functionalities, please use the standard SAP Business One client.
 
-Please use the standard SAP Business One client if you need to use these functionalities.
+---
