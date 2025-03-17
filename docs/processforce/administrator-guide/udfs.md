@@ -68,7 +68,7 @@ In this section, working on UDFs with ProcessForce is described. Please check th
 
 ### Header User Defined Fields
 
-UDFs added to a header are not displayed on it. You can check it on a side panel (you can reach it by using the *View → User-Defined Fields* menu or pressing Ctrl+Shift+U):
+UDFs added to a header are not displayed on it. You can check it on the side panel (you can reach it by using the *View → User-Defined Fields* menu or pressing Ctrl+Shift+U):
 
 ![Header UDFs](./media/udfs/udfs-header.webp)
 
@@ -80,13 +80,13 @@ User Defined Fields added to a row are displayed as another column in the row ta
 
 ### Flat Forms
 
-Some forms do not have tables (rows), e.g., Downtime Reason. In this case, you can add UDF only in the same manner as [header UDFs](#header-user-defined-fields): it will not be available on a form. It will be available on a side panel:
+Some forms do not have tables (rows), e.g., Downtime Reason. In this case, you can add UDF only in the same manner as [header UDFs](#header-user-defined-fields): it will not be available on a form. It will be available on the side panel:
 
 ![Downtime Reson UDFs](./media/udfs/udfs-downtime-reason.webp)
 
 ### Form Settings
 
-You can manage the visibility and activity of a UDF by standard SAP Business One option: Form Settings, chosen on a specific form. Newly created UDFs are visible and active by default.
+You can manage the visibility and activity of a UDF by standard SAP Business One option: Form Settings, chosen on a specific form. By default, newly created UDFs are visible and active.
 
 Note that only row UDFs are available in Form Settings.
 
@@ -98,4 +98,6 @@ Installing ProcessForce causes adding ProcessForce UDFs to some of the SAP Busin
 
 ![Sales Order UDF](./media/udfs/udfs-sales-order.webp)
 
-Keeping ProcessForce UDFs placed on SAP Business One Forms visible in Form Settings is recommended. Turning off the option leads to a blockage of the fields update during transactions and may lead to data inconsistency.
+Keeping ProcessForce UDFs placed on SAP Business One Forms visible in Form Settings is recommended. Disabling ProcessForce UDFs in Form Settings may disrupt field updates and cause data inconsistencies.
+
+---

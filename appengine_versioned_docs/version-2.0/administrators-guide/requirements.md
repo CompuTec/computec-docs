@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # Requirements
 
+:::warning
+AppEngine 2.0 does not support Identity Provider (IdP) setup.
+:::
+
 :::note
     CompuTec AppEngine requires **.NET** Framework to work correctly. The version of the .NET Framework supported by AppEngine is **4.7**.
 

@@ -124,4 +124,3 @@ Enter `com.densowave.bhtsdk.barcode.outputsettings.intent.extra.BARCODE_DATA` in
 ![Intent data string](./media/screenshot-8.png)
 
 ---
-The CompuTec WMS Android version offers a powerful solution for warehouse management, providing users with an intuitive interface and seamless integration with Android devices. By following the detailed installation, configuration, and testing steps outlined in this guide, users can optimize their warehouse operations, ensuring efficient communication with the CompuTec WMS Server and accurate barcode scanning.

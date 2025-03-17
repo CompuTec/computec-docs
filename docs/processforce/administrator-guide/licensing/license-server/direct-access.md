@@ -4,25 +4,25 @@ sidebar_position: 3
 
 # Configure CompuTec Service Manager
 
-This document provides a step-by-step guide on how to use and configure CompuTec Service Manager.
+CompuTec Service Manager is a crucial component of the CompuTec License Server suite, allowing users to manage and configure various CompuTec services efficiently. This guide provides step-by-step instructions for setting up and using the CompuTec Service Manager to ensure seamless operation and optimal performance.
 
 :::info
-    CompuTec Service Manager is a part of CompuTec License Server, and you can locate its installation guide at [the CompuTec License Server Installation page](./license-server-installation.md).
+    CompuTec Service Manager is a part of CompuTec License Server. For installation details, please refer to  [the CompuTec License Server Installation Guide](./license-server-installation.md).
 :::
 
 ---
 
 ## Starting CompuTec Service Manager
 
-After the CompuTec License Server installation in the system, you'll find the CompuTec Service Manager shortcut in the Windows program list.
+Once the CompuTec License Server is installed, the CompuTec Service Manager can be accessed from the Windows program list.
 
     ![CompuTec Service Manager](./media/direct-access/computec-service-manager.png)
 
-After clicking it, the CT icon appears in the Windows notification area:
+Clicking the shortcut will place the CT icon in the Windows notification area:
 
 ![CT shortcut](./media/direct-access/CT-shortcut.webp)
 
-After opening the Manager, the COMPUTEC SERVICE MANAGER window appears. Here you can start/stop/restart a chosen CompuTec service:
+Opening the Manager displays the COMPUTEC SERVICE MANAGER window, where you can start, stop, or restart a selected CompuTec service:To configure a specific service, click the Settings button. The Terminal Licensing section allows you to manage licenses for CompuTec PDC and CompuTec WMS products.
 
 ![CT Service Manager](./media/direct-access/CT-Service-Manager_1.webp)
 
@@ -32,7 +32,7 @@ Terminal Licensing is a section for managing the license of CompuTec PDC / Compu
 
 ## CompuTec License Server Settings
 
-You can change Server Name and Port Number in the Server Settings tab. You do not have to change the default values:
+The Server Settings tab allows users to modify server configurations such as the Server Name and Port Number. You do not have to change the default values:
 
 ![CT Server Settings](./media/direct-access/CT-License-Server-Settings_1_Server-Settings1.webp)
 
@@ -40,11 +40,13 @@ You can also specify a logging level and see a disk location where logs are kept
 
 ## Configuring CompuTec License Server Database Connection
 
+To establish a connection between the CompuTec License Server and the SAP Business One database, follow these steps:
+
 1. In the COMPUTEC LICENSE SERVER SETTINGS window, switch to the Database Connection tab:
 
     ![Database settings](./media/direct-access/CT-License-Server-Settings_2_Db-Connection_1.webp)
 
-2. Specify the SAP Business One database server name/address. You can take it from here:
+2. Retrieve the database server details from the SAP Business One interface:
 
     :::info Path
         SAP Business One → Administration → Choose Company
@@ -52,7 +54,7 @@ You can also specify a logging level and see a disk location where logs are kept
 
     ![Choose company server](./media/direct-access/choose-company-server2.webp)
 
-    Click the Add button after setting the server name:
+    Click "Add" after setting the server name:
 
     ![Connection](./media/direct-access/CT-License-Server-Settings_2_Db-Connection_2.webp)
 
@@ -66,29 +68,23 @@ You can also specify a logging level and see a disk location where logs are kept
         | SAP HANA                               | ServerName:Port         | 10.0.0.199:30015       |
     :::
 
-    You can check the Microsoft SQL Server server/instance name using the Microsoft SQL Server Management Studio tool:
+    For Microsoft SQL Server/instance name, use the SQL Server Management Studio to verify the server instance.
 
-    <details>
-        <summary>Click here to find out more</summary>
-        <div>![SQL Server](./media/direct-access/sql-server-management-studio.webp)</div>
-    </details>
+   ![SQL Server](./media/direct-access/sql-server-management-studio.webp)
 
     You can read the SAP Business One HANA server and port in the SAP Business One installation:
 
-    <details>
-        <summary>Click here to find out more</summary>
-        <div>![HANA](./media/direct-access/hana-address.webp)</div>
-    </details>
+    ![HANA](./media/direct-access/hana-address.webp)
 
 3. Set a database server type of added server:
   
     ![License Server](./media/direct-access/license-server-settings_2_db-connection_3.webp)
 
-4. Specify a database user name and password, and click Save:
+4. Specify the database user name and password, and click "Save":
 
     ![License Server](./media/direct-access/license-server-settings_2_db-connection_4.webp)
 
-5. If inserted data are correct, then the 'Data has been saved' message appears, and the company database number is displayed next to the server position:
+5. If the inserted data are correct, then the 'Data has been saved' message appears, and the company database number is displayed next to the server position:
 
     :::caution
         Please note that the application does not show a newly restored/imported company database until Choose Company list in the SAP Business One client is refreshed.
@@ -97,10 +93,10 @@ You can also specify a logging level and see a disk location where logs are kept
     ![Caution](./media/direct-access/license-server-settings_2_db-connection_5.webp)
 
     :::info
-        After this step, the message: `Direct Data Access mode is disabled.` will not appear anymore while starting ProcessForce provided that the connection to CompuTec License Server is configured correctly in ProcessForce License Administration (see [Extension → License assignment section](../../installation/first-installation/extension)).
+        After this step, the warning: `Direct Data Access mode is disabled.` will no longer appear when launching ProcessForce, provided that the connection to CompuTec License Server is configured correctly in ProcessForce License Administration (see [Extension → License assignment section](../../installation/first-installation/extension)).
     :::
 
-6. You can also expand the list of existing company databases to make sure that a particular SAP Business One company uses Direct Data Access:
+6. Expand the database list to confirm that a particular SAP Business One company is using Direct Data Access:
 
     ![Expand List](./media/direct-access/license-server-settings_2_db-connection_6.webp)
 
@@ -114,12 +110,8 @@ You can also specify a logging level and see a disk location where logs are kept
 
     ![Mask](./media/direct-access/license-server-settings_2_db-connection_8.webp)
 
-    :::info
-        It is possible to set up more than one database server:
-        <details>
-        <summary>Click here to find out more</summary>
-        <div>
-        ![Multiple databases](./media/direct-access/license-server-settings_2_db-connection_9.webp)
-        </div>
-        </details>
-    :::
+    >**info**: It is possible to set up more than one database server:
+
+    ![Multiple databases](./media/direct-access/license-server-settings_2_db-connection_9.webp)
+
+---

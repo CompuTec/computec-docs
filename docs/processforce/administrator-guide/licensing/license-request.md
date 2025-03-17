@@ -68,3 +68,6 @@ The information needed for generating the license placed on:
 
         :::info
         Click [here](../licensing/license-import-assignment.md) to check how to load a license file after getting it from the CompuTec support.
+
+---
+  
