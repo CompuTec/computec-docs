@@ -78,3 +78,5 @@ For high availability (HA), SAP HANA offers three replication modes: SYNC, SYNCM
 ## Final Thoughts
 
 To achieve optimal SAP Business One performance, carefully review and implement all the recommended configurations. Ensuring the correct hardware, network setup, OS tuning, and replication methods will lead to a more stable and efficient system that enhances business operations.
+
+---

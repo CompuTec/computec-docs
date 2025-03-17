@@ -4,22 +4,22 @@ sidebar_position: 8
 
 # Print Layouts
 
-On this page, you can find corrected ProcessForce print layout files.
+This section provides access to corrected ProcessForce print layout files.
 
 ---
 
 Apart from bug fixes and visual adjustment of the files, versions destined for SAP Business One HANA have been added too.
 
 :::info
-    Subsequent print layout files and updates of the current ones will be posted in this page until they are incorporated into the ProcessForce installer.
+    Subsequent print layout files and updates of the current ones will be published here until they are integrated into the ProcessForce installer.
 :::
 
 :::info
-    If you notice that any report from the list below should be corrected, do not hesitate to create an issue in the [http://support.computec.pl](http://support.computec.pl/) portal (Support ProcessForce project) with the Print Layouts or Reports component.
+    If you identify any issues with the reports listed below, please report them via the [http://support.computec.pl](http://support.computec.pl/) portal (Support ProcessForce project) using the Print Layouts or Reports component.
 :::
 
 :::danger
-    If you want to adjust any of the layout and report files, please make sure to make a copy of it. The default ones (with ProcessForce in their names) may be overwritten during future updates, and changes in them may be lost.
+    If you plan to modify any layout or report file, make a backup copy. Default files (those with ProcessForce in their names) may be overwritten in future updates, leading to loss of custom changes.
 :::
 
 All reports are in the English version.
@@ -32,5 +32,5 @@ All reports are in the English version.
 | Bill of Materials | Print Layout | 2.13 | Bill of Materials: <li>header details</li> <li>Revision details</li> <li>Items (table)</li> <li>Coproducts (table)</li> <li>Scraps (table)</li> <li>WIP Items (table)</li> <li>Routing details</li> <li>Routing Operation details</li> <li>Routing Operation Properties (table)</li> <li>Routing Operation Resource details</li> <li>Routing Operation Resource times (table)</li> <li>Routing Operation Resource Properties (table)</li> | - | <li>Displaying / not displaying inactive Routings (parameter) </li> <li>Displaying / not displaying not default Resources (parameter)</li> | [Download](https://download.computec.one/media/processforce/CR_Bill_of_Materials_Layout_SQL_Server_EN_2.13.rpt) | [Download](https://download.computec.one/media/processforce/CR_Bill_of_Materials_Layout_SAP_HANA_EN_2.13.rpt)|
 
 :::warning Reports in version for SAP HANA
-    To run a report in SAP Business One, a version for SAP HANA, there is a need to execute the attached SQL procedure/s on the applicable database.
+    To run reports in SAP Business One for SAP HANA, the included SQL procedures must be executed on the appropriate database.
 :::
