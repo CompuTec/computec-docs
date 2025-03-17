@@ -28,11 +28,8 @@ Before proceeding, ensure that your SAP Business One environment meets the prere
 :::
 
 1. Uninstall ProcessForce API from Program and Features.
-
 2. Remove the previous version of the Lightweight Deployment extension.
-
 3. Install the Lightweight Deployment extension.
-
 4. Restart SAP Business One. If the ProcessForce extension is already assigned to a database, the installation and upgrade process will start automatically after the restart.
 
 ## Upgrade from MSI to Lightweight Deployment versions

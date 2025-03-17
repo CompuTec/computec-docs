@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Implementation Notes
 
-On this page, information vital for the implementation process will be published.
+This page provides essential information for a smooth and effective implementation process. Adhering to these guidelines ensures consistency and prevents conflicts during customization.
 
 ---
 
@@ -17,3 +17,5 @@ This is required to omit any name conflicts in the future.
 ### Example
 
 If your chosen shortcut is **AB** and you would like to add a new field **weight**, you should add a field named **AB_weight**. Therefore in your company database, you will have **the U_AB_weight** database field.
+
+---

@@ -4,13 +4,19 @@ sidebar_position: 4
 
 # License Import and Assignment
 
+Setting up ProcessForce for the first time requires importing and assigning the appropriate license. This process ensures that the add-on functions correctly within SAP Business One.
+
 :::info
-    Performing the following steps are required when you install ProcessForce for the first time on a server and may be skipped in case of making the add-on upgrade only.
+    If you are upgrading ProcessForce rather than performing a fresh installation, you may skip these steps.
 :::
 
 :::info
     Assigning the ProcessForce license works similarly to the SAP Business One license assignment.
 :::
+
+---
+
+Follow the steps below to import and assign a ProcessForce license successfully.
 
 1. After successful installation, the system message appears:
 
@@ -26,7 +32,7 @@ sidebar_position: 4
 
     ![License Administration](./media/license-import-assignment/license-administration.webp)
 
-4. To test whether CompuTec License Service is up and running, click the Test button:
+4. To test whether CompuTec License Service is up and running, click the "Test" button:
 
     ![License connection](./media/license-import-assignment/license-connection-test.webp)
 
@@ -36,7 +42,7 @@ sidebar_position: 4
         Note that a license file should have a .xml extension. In some cases, a file downloaded from a license request issue ([support.computec.pl](https://support.computec.pl)) can have changed its type (e.g., on downloading the file by Safari browser), which may cause an error when trying to load it.
     :::
 
-6. After the successful importation of a license, the message `ProcessForce license has been imported` appears:
+6. After the successful importation of a license, the message `ProcessForce license has been imported` will appear:
 
     ![System Message](./media/license-import-assignment/license-assignment-message.webp)
 
@@ -44,6 +50,8 @@ sidebar_position: 4
 
     ![License change](./media/license-import-assignment/license-assignment.webp)
 
-8. Assign users to the appropriate license type and click the Update button to save the changes:
+8. Assign users to the appropriate license type and click Update to finalize the process:
 
     ![License assignment](./media/license-import-assignment/license-user-assign.webp)
+
+---
