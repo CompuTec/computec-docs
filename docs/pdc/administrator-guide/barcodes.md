@@ -27,26 +27,26 @@ Custom prefixes, suffixes, and group separators can be configured in the applica
 
 PDC Barcode Simulator is a tool designed to:
 
-- Create barcodes based on user input.
-- Print generated barcodes.
-- Simulate barcode scanning for testing purposed within CompuTec PDC.
+- create barcodes based on user input.
+- print generated barcodes.
+- simulate barcode scanning for testing purposed within CompuTec PDC.
 
 [Click to download the Barcode Simulator](https://download.computec.one/software/pdc/tools/PDC_Barcode_Simulator.zip).
 
 ![Barcode Simulator](./media/barcodes/barcode-simulator.webp)
 
-1. A list of barcode elements (two prefixes in this example). leave the prefix column empty to generate a barcode without a prefix.
+1. A list of barcode elements, including prefixes (two prefixes in this example). Leave the prefix column empty to generate a barcode without a prefix.
 2. A list of all input signs:
 
-    - \[STX\] means – CTRL+B
-    - \[ETX\] means – CTRL+C
-    - \[GroupSeparator\] – a code blocks separator (for codes with more than one prefix)
-3. Adding line facilitates multi-prefix codes.
-4. A graphic form of the code generated based on input data.
-5. A text form of the code generated based on input data.
+    - \[STX\]: represents CTRL+B
+    - \[ETX\]: represents CTRL+C
+    - \[GroupSeparator\]: serves as a code block separator (for codes with more than one prefix)
+3. Adding a new line allows the creation of multi-prefix codes.
+4. A graphic form of the code is generated based on input data.
+5. A text form of the code is generated based on input data.
 6. Click this button to simulate executing the code in CompuTec PDC.
 7. Print the generated barcode.
-8. Click here to save the code as a file in .webp format.
+8. Save the barcode as a .webp file by clicking the save button.
 
 In PDC Barcode Simulator, you can scan a ready barcode to check its validity and elements (in case it is a multi-prefix code) or to check if the scanning device works correctly.
 
@@ -89,28 +89,28 @@ Check the information in the next section to get to know how to create barcodes 
 
 **Available barcodes**:
 
-- (99)employee_code – Employee code with 99 prefixes, logging out or logging to another Employee (the OHEM poleU_PDC_BARCODE table),
-- A000 - open-close tasks dialog,
-- Y000 – pauses all of the Tasks,
-- Y111 – run all of the Tasks,
-- Y222 – sets up all of the Tasks,
-- Z000 – changes the status of the selected task to setup,
-- Z111 – changes the status of the selected task to run,
-- Z222 – changes the status of the selected task to Downtime,
-- T000 – starts the Time Booking process for the chosen Task,
-- (99)A000 - open-close tasks dialog,
-- (99)Y000 – pauses all of the Tasks,
-- (99)Y111 – changes status for all of the Tasks to run,
-- (99)Y222 – sets up all of the Tasks,
-- (99)A000(98)resource_code - open-close tasks dialog on Resource,
-- (99)Y000(98)resource_code – pauses all of the Tasks on Resource,
-- (99)Y111(98)resource_code – changes the status of all of the Tasks to run on a Resource,
-- (99)Y222(98)resource_code – sets up all of the Tasks on resource,
-- (99)Z000 – changes the status of the selected Task to Setup,
-- (99)Z111 – changes the status of the selected Task to Run,
-- (99)Z222 – changes the status of the selected Task to Downtime,
-- (99)T000 – starts the Time Booking process,
-- Sign code (a Task code) – choosing a Task (@CT_PF_OTRT table, Code field),
+- (99)employee_code: Employee code with 99 prefixes, logging out or logging to another Employee (the OHEM poleU_PDC_BARCODE table),
+- A000: open-close tasks dialog,
+- Y000: pauses all of the Tasks,
+- Y111: run all of the Tasks,
+- Y222: sets up all of the Tasks,
+- Z000: changes the status of the selected task to setup,
+- Z111: changes the status of the selected task to run,
+- Z222: changes the status of the selected task to Downtime,
+- T000: starts the Time Booking process for the chosen Task,
+- (99)A000: open-close tasks dialog,
+- (99)Y000: pauses all of the Tasks,
+- (99)Y111: changes status for all of the Tasks to run,
+- (99)Y222: sets up all of the Tasks,
+- (99)A000(98)resource_code: open-close tasks dialog on Resource,
+- (99)Y000(98)resource_code: pauses all of the Tasks on Resource,
+- (99)Y111(98)resource_code: changes the status of all of the Tasks to run on a Resource,
+- (99)Y222(98)resource_code: sets up all of the Tasks on resource,
+- (99)Z000: changes the status of the selected Task to Setup,
+- (99)Z111: changes the status of the selected Task to Run,
+- (99)Z222: changes the status of the selected Task to Downtime,
+- (99)T000: starts the Time Booking process,
+- Sign code (a Task code): choosing a Task (@CT_PF_OTRT table, Code field),
     <details>
         <summary>Click to check an example code</summary>
         <table>
@@ -164,7 +164,7 @@ Check the information in the next section to get to know how to create barcodes 
             </tbody>
         </table>
     </details>
-- (96)task_code (@CT_PF_OTRT table, Code field) – choosing a Task,
+- (96)task_code (@CT_PF_OTRT table, Code field): choosing a Task,
 - (253)manufacturing_order_number(97)operation_code(98)resource_code (respectively: @CT_PF_OMOR table DocNum field; @CT_PF_MOR16 table, fields: U_OprCode and U_RscCode) – adding a new Task; operation and resource codes are optional (if not in a barcode, then they have to be chosen manually).
 
 ## The Issue to Production Form
@@ -173,7 +173,7 @@ Check the information in the next section to get to know how to create barcodes 
 
 **Available barcode:**
 
-- **(91)Item_code(99)item_sequence(10)batch_code(92)bin_code(95)quantity** – Sequence, Batch, Bin Location, and Quantity are optional – if you do not add them, you will have to add them manually.
+- **(91)Item_code(99)item_sequence(10)batch_code(92)bin_code(95)quantity**: Sequence, Batch, Bin Location, and Quantity are optional – if you do not add them, you will have to add them manually.
 
 ### Weight Wizard Form
 
@@ -183,8 +183,8 @@ Check the information in the next section to get to know how to create barcodes 
 
 **Available barcodes:**
 
-- **item_code** – Selects an Item from the list.
-- **(91)item_code(99)item_sequence(10)batch_code** – Selects an Item and Batch (Sequence and Batch field are optional).
+- **item_code**: selects an Item from the list.
+- **(91)item_code(99)item_sequence(10)batch_code**: selects an Item and Batch (Sequence and Batch field are optional).
 
 #### Batch Choosing Level
 
@@ -192,8 +192,7 @@ Check the information in the next section to get to know how to create barcodes 
 
 **Available barcodes:**
 
-- **batch_code** – Selects a Batch from the list.
-- **(10)batch_code** – Selects a batch using a prefix.
+- **batch_code**: selects a Batch from the list.
+- **(10)batch_code**: selects a batch using a prefix.
 
 ---
-Barcode scanning in CompuTec PDC enhances efficiency and accuracy in operational processes. From logging in to managing tasks and resources, barcodes simplify complex workflows. Tools like the Barcode Simulator further empower users by enabling them to test and validate configurations before implementation. By leveraging barcode functionality, organizations can streamline their operations and achieve higher productivity.

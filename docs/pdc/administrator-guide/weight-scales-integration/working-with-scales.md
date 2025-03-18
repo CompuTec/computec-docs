@@ -4,8 +4,10 @@ sidebar_position: 6
 
 # Working with Scales
 
-After the successful configuration, the configured devices will be available to choose from and use in Weight Scale module in CompuTec PDC:
+Once the configuration is complete, the connected weighing devices will be available for use within the Weight Scale module in CompuTec PDC.
 
 ![Scales](./media/working-with-scales/scales.webp)
 
-Click [here](../../user-guide/customization/optional-functions/weight-scale-module/overview.md) to get more information on how to use the CompuTec PDC weighting module.
+For detailed instructions on how to operate the CompuTec PDC Weighing Module, click [here](../../user-guide/customization/optional-functions/weight-scale-module/overview.md).
+
+---
