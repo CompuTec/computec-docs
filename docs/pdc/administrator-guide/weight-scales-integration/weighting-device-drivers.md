@@ -30,10 +30,10 @@ The devices are available to choose from the CompuTec Gateway Manager:
 
 ## Custom Driver Creation and Usage
 
-It is possible to create your driver for a device not listed in the available devices list from the previous point.
+You can develop a driver for a device that is not included in the available devices list from the previous point.
 
 :::note
-    If a required device is not on the list in the previous paragraph and you are unwilling or unable to create a driver, the CompuTec team can do it for you for a fee. To order such a service, please create a support ticket at [CompuTec Support](https://support.computec.pl).
+    If the required device is not listed in the previous paragraph and you are unable or unwilling to create a driver, the CompuTec team can develop it for you for a fee. To request this service, please submit a support ticket at [CompuTec Support](https://support.computec.pl).
 :::
 
 ### A Driver Creation
@@ -54,7 +54,7 @@ The following example is created using Microsoft Visual Studio.
 
     ![Method implementation](./media/weighting-device-drivers/method-implementation.webp)
 
-You can check the class in the example driver (CT Test Weight Scale).
+You can review the class in the example driver (CT Test Weight Scale).
 
 <details>
 <summary>TestDevice.cs Source Code</summary>
@@ -226,8 +226,10 @@ namespace Computec.TestWeightScale
 
 ### Usage
 
-Once the driver is created, place it in the following directory (this is the default installation directory):
+After creating the driver, place it in the following directory (the default installation directory):
 
 ![Driver directory](./media/weighting-device-drivers/driver-directory.webp)
 
-Now, the driver should be available in the list in CompuTec Gateway Manager (please check the top screenshot on this page).
+Now, the driver should appear in the list within CompuTec Gateway Manager (refer to the top screenshot on this page).
+
+---

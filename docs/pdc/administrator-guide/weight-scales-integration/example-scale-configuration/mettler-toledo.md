@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Introduction
 
-Creating a template and assigning it to the weight scale is essential for proper configuration. Next, you must choose a work mode for the scales and assign the Template to the scale work mode.
+Proper configuration of your Mettler Toledo weighing scale ensures accurate weight readings and seamless integration with CompuTec Gateway and CompuTec PDC. This guide walks you through setting up a template, selecting a work mode, and assigning the template to your device.
 
 :::note
     This section was created based on the MettlerToledoICS429 model configuration.
@@ -18,29 +18,24 @@ Creating a template and assigning it to the weight scale is essential for proper
 - Choose the Define Template option.
 - Choose Template 1 and set up what will be pointed/sent by the weight scale. Set up the following details:
 
-  Line 1: Date
+  - Line 1: Date
+  - Line 2: Time
+  - Line 3: Gross
+  - Line 4: Net
+  - Line 5: Tare
+  - Line 6: SNo. Terminal.
 
-  Line 2: Time
+    ![Mettler](./media/mettler-toledo/mettler-01.webp)
 
-  Line 3: Gross
+    ![Mettler](./media/mettler-toledo/mettler-02.webp)
 
-  Line 4: Net
+    ![Mettler](./media/mettler-toledo/mettler-03.webp)
 
-  Line 5: Tare
+    ![Mettler](./media/mettler-toledo/mettler-04.webp)
 
-  Line 6: SNo. Terminal.
+    ![Mettler](./media/mettler-toledo/mettler-05.webp)
 
-  ![Mettler](./media/mettler-toledo/mettler-01.webp)
-
-  ![Mettler](./media/mettler-toledo/mettler-02.webp)
-
-  ![Mettler](./media/mettler-toledo/mettler-03.webp)
-
-  ![Mettler](./media/mettler-toledo/mettler-04.webp)
-
-  ![Mettler](./media/mettler-toledo/mettler-05.webp)
-
-  ![Mettler](./media/mettler-toledo/mettler-06.webp)
+    ![Mettler](./media/mettler-toledo/mettler-06.webp)
 
 ## Choosing Mode for Weight Scales
 
@@ -76,3 +71,5 @@ Creating a template and assigning it to the weight scale is essential for proper
 ![Mettler](./media/mettler-toledo/mettler-final.webp)
 
 Now, the weight scale is correctly configured and is ready to work with CompuTec Gateway and CompuTec PDC.
+
+---

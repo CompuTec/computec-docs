@@ -4,11 +4,13 @@ sidebar_position: 3
 
 # CompuTec Gateway Service Installation
 
-This document provides a step-by-step guide on how to install the CompuTec Gateway service.
+The CompuTec Gateway Service acts as a bridge between CompuTec PDC and connected devices, enabling seamless data exchange. This guide provides step-by-step instructions for installing and setting up the service.
 
 ---
 
 ## Prerequisites
+
+Before installing the CompuTec Gateway Service, ensure the following requirements are met:
 
 - Configure your firewall to make the 8080 port available
 - .Net Framework 4.7.1 is required
@@ -16,7 +18,7 @@ This document provides a step-by-step guide on how to install the CompuTec Gatew
 
 ## Installation
 
-1. To install CompuTec Gateway Service, download and run its installation file. For version 1.2.0.14 version, you can download it [here]Download.<!-- TODO: Link -->.
+1. To install CompuTec Gateway Service, download and run its installation file. For version 1.2.0.14 version, you can download it [here](https://learn.computec.one/docs/labels/releases/download#computec-gateway).
 2. Once the installation is complete, the Gateway Service service will start automatically.
 
     ![Proxy setup](./media/gateway-service-installation/proxy-setup.webp)
