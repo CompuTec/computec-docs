@@ -77,4 +77,3 @@ Starting with this version, you need to perform the following preparation to sup
 If you use CompuTec Labels alongside CompuTec PDC, ensure a connection is established between the CompuTec PDC terminal and the server hosting CompuTec Labels.
 
 ---
-Proper configuration of the CompuTec PDC environment ensures smooth installation and performance. By following the prerequisites and installation steps outlined in this document, users can effectively implement CompuTec PDC in their production environments. For additional support, contact technical support.

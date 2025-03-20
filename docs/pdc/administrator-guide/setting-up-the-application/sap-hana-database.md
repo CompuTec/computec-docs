@@ -8,7 +8,7 @@ When working with SAP HANA databases, it's often preferable to use a database us
 
 ---
 
-The following requirements as described in [SAP Business One note no. 2302616 - Validation - SAP HANA database user privileges](https://connect.computec.pl/download/attachments/233506987/2302616_E_20190607.pdf?version=1&modificationDate=1649077528287&api=v2) have to be met:
+The following requirements, as described in [SAP Business One note no. 2302616 - Validation - SAP HANA database user privileges](https://connect.computec.pl/download/attachments/233506987/2302616_E_20190607.pdf?version=1&modificationDate=1649077528287&api=v2) have to be met:
 
 ```text
 Roles:
@@ -48,4 +48,3 @@ Furthermore, the required schema must be assigned to the user with the appropria
 ![System](./media/sap-hana-user-other-than-system/sys2.webp)
 
 ---
-Setting up a database user with tailored privileges ensures better security and control over database operations while maintaining functionality. By adhering to these requirements, you can enable seamless integration and operation of SAP HANA databases with tools such as Crystal Reports and other components. Always review and validate the privileges granted to ensure compliance with organizational policies and system requirements.

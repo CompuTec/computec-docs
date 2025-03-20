@@ -14,17 +14,17 @@ Radio Frequency Identification (RFID) technology provides a seamless, contactles
 
 To begin, you need to enable and configure the RFID module:
 
-- **Enable** – Choose whether to use the RFID module for system login or not.
+- **Enable**: choose whether to use the RFID module for system login or not.
 
-- **RFID Controller** – Select from a list of predefined controllers.
+- **RFID Controller**: select from a list of predefined controllers.
 
-- **Time interval** – aThis defines the period (up to 1.4 seconds by default) after which the reader will attempt to detect the RFID identification.
+- **Time interval**: this defines the period (up to 1.4 seconds by default) after which the reader will attempt to detect the RFID identification.
 
     ![PDC RFID Settings](./media/rfid/settings.webp)
 
 ### Test
 
-To ensure your RFID controller is functioning correctly, use the Test function. By clicking "Start," the controller will attempt to read RFID identifiers at the interval defined in the settings. If configured properly, it will display information for each identification read.
+To verify that your RFID controller is working correctly, use the Test function. Click "Start" and the controller will attempt to read RFID identifiers at the interval specified in the settings. If configured correctly, it will display information for each detected ID.
 
 ![RFID Test](./media/rfid/test.webp)
 
@@ -33,17 +33,17 @@ To ensure your RFID controller is functioning correctly, use the Test function. 
 To assign an RFID card to an employee:
 
 - Click Read ID and place the RFID card near the reader.
-- The field will be filled up with data assigned to the RFID Card:
+- The field will be populated with the data assigned to the RFID card.
 
     ![RFID Assign Filled](./media/rfid/assign.webp)
 
-- Once the card's data is displayed, click Assign, then select the employee to associate with the RFID card.If the ID has not been assigned, it will be linked to the selected employee.
+- Once the card's data appears, click Assign, then choose the employee to associate with the RFID card. If the ID is unassigned, it will be linked to the selected employee.
 
 - Click Save to assign the user to an RFID identifier and making them ready to use.
 
 #### Employee Master Data
 
-The assigned RFID ID is stored in SAP B1 Employee Master Data:
+The assigned RFID ID is stored in SAP Business One Employee Master Data:
 
 :::info Path
     Human Resources → Employee Master Data
@@ -55,9 +55,8 @@ If the RFID ID is known, it can be entered directly into the PDC RFID UID field 
 
 ## Usage
 
-Once the RFID module is properly configured, employees can use their RFID card to log into the system by simply placing it near the reader on the login screen. This action automatically logs in the associated employee, eliminating the need for manual credentials entry.
+Once the RFID module is correctly configured, employees can log into the system by simply placing their RFID card near the reader on the login screen. This action automatically authenticates the associated employee, removing the need for manual credential entry.
 
-Additionally, inserting the card again will log the user out. If another employee's card is inserted while logged in, the system will prompt a re-login for that individual.
+Additionally, tapping the card again will log the user out. If another employee's card is used while someone is logged in, the system will prompt a re-login for the new user.
 
 ---
-In conclusion, using RFID technology for login in CompuTec PDC simplifies the process for employees while enhancing security. It reduces the need for manual password input and improves efficiency, making it a valuable tool for organizations looking to streamline employee access management.

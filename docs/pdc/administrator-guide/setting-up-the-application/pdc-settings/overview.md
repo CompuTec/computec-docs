@@ -26,14 +26,14 @@ Most options are available at either the [ProcessForce](../overview.md#processfo
 
 The following options are specific to the PDC Settings form:
 
-- **Resource Code** – When filled in, users assigned to these PDC Settings will only be able to view tasks related to the specified resource.
-- **Notification after login** –  The text entered here will be displayed in a form after the user logs in to the application.
-- **Show Date Picker** – This option allows you to set a duration in minutes (e.g., 67 minutes) for time registration instead of a specific date and time:
+- **Resource Code**: when filled in, users assigned to these PDC Settings will only be able to view tasks related to the specified resource.
+- **Notification after login**: the text entered here will be displayed in a form after the user logs in to the application.
+- **Show Date Picker**: this option allows you to set a duration in minutes (e.g., 67 minutes) for time registration instead of a specific date and time:
 
   ![Show Date Picker](./media/pdc-settings/show-date-picker.webp)
-- **Localizations** – This is a weighting module-related option. Only devices from the localizations listed here will appear in the [Weighting Wizard](../../weight-scales-integration/working-with-scales.md). The weighting device, along with its localization, can be configured in [CompuTec Gateway Manager](../../weight-scales-integration/computec-gateway-manager.md). If this field is left blank, all devices will be available.
-- **Resources view** – The purpose of this function is to filter tasks by multiple Resources. Click [here](./resource-view.md) to find out more.
-- **Delay of closing dialogs(s)** – Here, you can specify the time (in seconds) for displaying dialog windows.
+- **Localizations**: this is a weighting module-related option. Only devices from the localizations listed here will appear in the [Weighting Wizard](../../weight-scales-integration/working-with-scales.md). The weighting device, along with its localization, can be configured in [CompuTec Gateway Manager](../../weight-scales-integration/computec-gateway-manager.md). If this field is left blank, all devices will be available.
+- **Resources view**: the purpose of this function is to filter tasks by multiple Resources. Click [here](./resource-view.md) to find out more.
+- **Delay of closing dialogs(s)**: here, you can specify the time (in seconds) for displaying dialog windows.
 
 ## Assigning PDC Settings Templates
 
@@ -48,4 +48,3 @@ A template can be assigned to a specific Employee.
 Click "Choose" from the List icon to select one of the predefined PDC Settings.
 
 ---
-The ability to define and assign PDC Settings templates offers flexibility in managing employee-specific or installation-specific configurations. By understanding and utilizing the various settings and options provided in this section, administrators can optimize the application’s functionality and tailor the experience to meet specific business needs.

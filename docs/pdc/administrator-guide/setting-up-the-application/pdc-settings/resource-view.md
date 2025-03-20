@@ -22,7 +22,7 @@ To use this feature, you need the AppEngine's MO360 plugin. For more details on 
 
 To define a view with multiple resources in AppEngine MO360, follow these steps:
 
-1. Go to AppEngine, then open MO360 to create a new view for multiple resources:
+1. Navigate to AppEngine, then access MO360 to create a new view for multiple resources.
 
     ![Main View](./media/resource-view/mo360-main-view.webp)
 
@@ -34,7 +34,7 @@ To define a view with multiple resources in AppEngine MO360, follow these steps:
 
     ![View Details](./media/resource-view/view-details.webp)
 
-4. The new view will now appear in the main MO360 view.
+4. The newly created view will now be displayed in the main MO360 view.
 
     ![New View](./media/resource-view/new-view.webp)
 
@@ -42,7 +42,6 @@ To define a view with multiple resources in AppEngine MO360, follow these steps:
 
     ![All Resources](./media/resource-view/all-resources.webp)
 
-After defining the view in MO360, you can assign it in the [PDC Settings](./overview.md). Once assigned, users in CompuTec PDC will only see tasks for the selected resources (e.g., Rsc01, Rsc02, and Rsc03).
+After defining the view in MO360, you can assign it in the [PDC Settings](./overview.md). Once assigned, users in CompuTec PDC will only have access to tasks for the selected resources (e.g., Rsc01, Rsc02, and Rsc03).
 
 ---
-The Resources View feature streamlines task management by allowing users to focus on specific resources. Once the view is set up and assigned, users can quickly access and manage tasks relevant to their selected resources, improving efficiency and task organization.
