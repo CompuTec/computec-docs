@@ -1,7 +1,8 @@
 export interface DocConfig {
     label: string;
     pluginId: string;
-    currentVersion?: string;
+	currentVersion?: string;
+	lastVersion?: string;
     includeCurrentVersion: boolean;
 }
 
@@ -34,7 +35,8 @@ export default [
         label: "AppEngine",
         pluginId: "appengine",
         currentVersion: "3.0",
-        includeCurrentVersion: true,
+		includeCurrentVersion: true,
+		lastVersion: "current",
     },
     {
         label: "Premium",
