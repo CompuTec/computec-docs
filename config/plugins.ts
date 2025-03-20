@@ -18,7 +18,8 @@ export function getDocPlugin(doc: DocConfig): PluginConfig {
             routeBasePath: path.posix.join("/docs", doc.pluginId),
             path: path.join("docs", doc.pluginId),
             versions,
-            includeCurrentVersion: doc.includeCurrentVersion,
+			includeCurrentVersion: doc.includeCurrentVersion,
+			lastVersion: doc.lastVersion,
         },
     ];
 
