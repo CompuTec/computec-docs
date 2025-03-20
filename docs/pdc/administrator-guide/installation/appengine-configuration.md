@@ -16,9 +16,8 @@ PDC is now available to work with AppEngine. For details of configuration, pleas
 
 Configuring PDC with AppEngine enhances productivity and simplifies application management. Below are the key advantages:
 
-- **Improved Work-Time Tracking** - Leverage the standard benefits of PDC for registering work time efficiently
-- **Enhanced Speed and Effectiveness** - Enjoy faster processing and more effective work-time recording
-- **Streamlined Application Upgrades** - Simplify the upgrade process by performing updates directly on the server with AppEngine, eliminating the need to update individual terminals
+- **Improved Work-Time Tracking**: leverage the standard benefits of PDC for registering work time efficiently
+- **Enhanced Speed and Effectiveness**: enjoy faster processing and more effective work-time recording
+- **Streamlined Application Upgrades**: simplify the upgrade process by performing updates directly on the server with AppEngine, eliminating the need to update individual terminals
 
 ---
-Integrating CompuTec PDC with AppEngine simplifies application management, enhances performance, and ensures scalability. By leveraging AppEngine, businesses can streamline their production data collection processes and reduce administrative overhead.

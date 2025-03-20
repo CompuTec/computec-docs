@@ -16,25 +16,27 @@ To use the CompuTec PDC application, the following requirements must be met:
 - A ProcessForce license must be assigned to the SAP Business One user,
 - Employee Master Data must be defined for a specific employee, including CompuTec PDC information.
 
+To access Employee Master Data, navigate to:
+
 :::info Path
 Main Menu → Human Resources → Employee Master Data
 :::
 
 ![Setting Up The Application](./media/setting-up-the-application/employee-master-data-general.png)
 
-- **Active Employee Checkbox** - The "Active Employee" checkbox must be checked to use the employee in CompuTec PDC.
-- **Credentials** - PDC Login and Password must be defined.
-- **Management Board** - The "Management Board" checkbox is optional; when checked, it grants access to the [Manager Board](../../user-guide/management-board.md) and [Weight Management Board](../../user-guide/customization/optional-functions/weight-scale-module/weight-management-board.md) within CompuTec PDC.
-- **PDC Form Settings Enabled** - The "PDC Form Settings Enabled" checkbox is optional; when checked, it provides access to [Form Settings](../../user-guide/customization/overview.md#form-settings) for the employee, allowing the customization of columns and their order in PDC forms. Below is an example of Form Settings for Operation Properties:
+- **Active Employee Checkbox**: the "Active Employee" checkbox must be checked to use the employee in CompuTec PDC.
+- **Credentials**: PDC Login and Password must be defined.
+- **Management Board**: the "Management Board" checkbox is optional; when checked, it grants access to the [Manager Board](../../user-guide/management-board.md) and [Weight Management Board](../../user-guide/customization/optional-functions/weight-scale-module/weight-management-board.md) within CompuTec PDC.
+- **PDC Form Settings Enabled**: the "PDC Form Settings Enabled" checkbox is optional; when checked, it provides access to [Form Settings](../../user-guide/customization/overview.md#form-settings) for the employee, allowing the customization of columns and their order in PDC forms. Below is an example of Form Settings for Operation Properties:
 
   ![Form settings](./media/setting-up-the-application/form-settings.webp)
-- **Labour Code** - Assign a Labour-type Resource (e.g., Press Operator) to track an employee’s work time. An Employee with a Labour Code can be [assigned to a Task](../../user-guide/task-activities/overview.md#adding-a-new-task).
-- **PDC Settings** - A set of individual CompuTec PDC and ProcessForce settings that can be assigned to a specific Employee or CompuTec PDC installation. Click [here](rfid.md) to learn more.
-- **PDC RFID UI** - An RFID identification code is assigned to an employee for logging in using RFID devices. Click here to learn more.
-- **PDC Barcode** - A barcode is assigned to the employee for login (if barcode scanning devices are used).
-- **Is Enabled Move to Other Resource** - This checkbox determines if the employee can move a Task to an [Alternative Resource](https://learn.computec.one/docs/processforce/user-guide/scheduling/gantt-chart/alternative-resources) during time or downtime registration on a Task.
-- **Is Technician** - A user with this checkbox checked can access and modify all unclosed Downtime documents assigned to them, including changing the Downtime Reason and closing the documents.
-- **Is DownTime Supervisor** - A user with this checkbox checked has the same privileges as a Technician but for all Downtime documents in the system. The supervisor can also reassign any Downtime document to a different Technician.
+- **Labour Code**: assign a Labour-type Resource (e.g., Press Operator) to track an employee’s work time. An Employee with a Labour Code can be [assigned to a Task](../../user-guide/task-activities/overview.md#adding-a-new-task).
+- **PDC Settings**: a set of individual CompuTec PDC and ProcessForce settings that can be assigned to a specific Employee or CompuTec PDC installation. Click [here](rfid.md) to learn more.
+- **PDC RFID UI**: an RFID identification code is assigned to an employee for logging in using RFID devices. Click here to learn more.
+- **PDC Barcode**: a barcode is assigned to the employee for login (if barcode scanning devices are used).
+- **Is Enabled Move to Other Resource**: this checkbox determines if the employee can move a Task to an [Alternative Resource](https://learn.computec.one/docs/processforce/user-guide/scheduling/gantt-chart/alternative-resources) during time or downtime registration on a Task.
+- **Is Technician**: a user with this checkbox checked can access and modify all unclosed Downtime documents assigned to them, including changing the Downtime Reason and closing the documents.
+- **Is DownTime Supervisor**: a user with this checkbox checked has the same privileges as a Technician but for all Downtime documents in the system. The supervisor can also reassign any Downtime document to a different Technician.
 
 ## Setting up CompuTec PDC Application
 
@@ -52,7 +54,7 @@ The Connection section allows you to configure the necessary settings to connect
 
 ![PDC Connection](./media/setting-up-the-application/pdc-connection.webp)
 
-In this section, you will enter the necessary information to establish a connection with SAP Business One.
+In this section, enter the necessary information to establish a connection with SAP Business One.
 
 Fill in the required details in the provided window:
 
@@ -71,17 +73,17 @@ The Interface section allows you to customize the appearance and functionality o
 
 ![Interface](./media/setting-up-the-application/pdc-interface.webp)
 
-1. Theme – Choose between a light or dark color scheme for the application.
-2. Color – Select from a range of color options for the application (the screenshots in the documentation were taken using the Blue setting).
-3. Language – Choose the language for the application interface. Available languages include English, Polish, and French.
-4. Enable Keep Visible Default – When this option is checked, the [Quick Receipt](../../user-guide/customization/optional-functions/quick-receipt.md) form remains open after a receipt, allowing users to quickly process additional receipts without reopening the form.
-5. Show on-screen keyboard – When checked, an on-screen keyboard will appear upon clicking any data entry field. The keyboard can be minimized or closed and will reappear when another data entry field is selected. This feature is particularly useful for touchscreen devices, such as tablets.
-6. Show Date Picker – this option allows to set amount of time in minutes (e.g., 67 minutes) instead of date and time on time registration. Click [here](../../administrator-guide/setting-up-the-application/pdc-settings/overview.md).
-7. Show WMS Switch Button – If using the [CompuTec WMS](/docs/wms/) application, enable this option to display a switch button in CompuTec PDC, allowing you to toggle between the two applications. The default path will be selected, but you can choose a different path if CompuTec WMS is installed elsewhere by clicking the button next to the path field.
-8. PDC Mode – specific / all Resource indicator – This option controls whether an employee can add tasks to any resource from the database or just a specific resource assigned to the device. If a specific resource is chosen, a new field will appear to specify the resource name.
-9. Default Search by – Set the default task search method to either Manufacturing Order or Resource (this setting is configured individually for each terminal).
-10. Barcodes – Define your prefix, suffix, and group separators for barcodes here.
-11. Is KeyDown Barcode Mode Enabled – This option determines whether CompuTec PDC uses KeyDown Barcode Mode for scanning. It is intended for use with older devices, such as tablets running Windows systems.
+1. **Theme**: choose between a light or dark color scheme for the application.
+2. **Color**: select from a range of color options for the application (the screenshots in the documentation were taken using the Blue setting).
+3. **Language**: choose the language for the application interface. Available languages include English, Polish, and French.
+4. **Enable Keep Visible Default**: when this option is checked, the [Quick Receipt](../../user-guide/customization/optional-functions/quick-receipt.md) form remains open after a receipt, allowing users to quickly process additional receipts without reopening the form.
+5. **Show on-screen keyboard**: when checked, an on-screen keyboard will appear upon clicking any data entry field. The keyboard can be minimized or closed and will reappear when another data entry field is selected. This feature is particularly useful for touchscreen devices, such as tablets.
+6. **Show Date Picker**: this option allows to set amount of time in minutes (e.g., 67 minutes) instead of date and time on time registration. Click [here](../../administrator-guide/setting-up-the-application/pdc-settings/overview.md).
+7. **Show WMS Switch Button**: If using the [CompuTec WMS](/docs/wms/) application, enable this option to display a switch button in CompuTec PDC, allowing you to toggle between the two applications. The default path will be selected, but you can choose a different path if CompuTec WMS is installed elsewhere by clicking the button next to the path field.
+8. **PDC Mode**: specific / all Resource indicator – This option controls whether an employee can add tasks to any resource from the database or just a specific resource assigned to the device. If a specific resource is chosen, a new field will appear to specify the resource name.
+9. **Default Search by**: Set the default task search method to either Manufacturing Order or Resource (this setting is configured individually for each terminal).
+10. **Barcodes**: define your prefix, suffix, and group separators for barcodes here.
+11. **Is KeyDown Barcode Mode Enabled**: this option determines whether CompuTec PDC uses KeyDown Barcode Mode for scanning. It is intended for use with older devices, such as tablets running Windows systems.
 
 ### Other
 
@@ -133,24 +135,24 @@ SAP Business One → Administration → System Initialization → General Settin
 
 ![General Settings](./media/setting-up-the-application/general-settings.webp)
 
-- **Automatically use left quantity as picked** –  This option applies to Production Issue and Receipt within the application, enabling the automatic assignment of planned quantities for Pick Order, Pick Receipt, both, or neither. If not configured for automatic use, the quantity will default to zero.
-- **Activity** – A standard SAP Business One feature that can be created from the CompuTec PDC level. Here, you can specify the type of activity that will be automatically assigned upon creation from the CompuTec PDC level.
-- **Activity Type** – This setting allows you to define the activity type that will be automatically assigned upon creation from the CompuTec PDC level.here, you can determine the activity type that will be automatically assigned to it on creation from the CompuTec PDC level.
-- **Show not closed Task in future section** – When this option is enabled and the "Close Task" checkbox on the Confirmation Panel is unchecked, the task tile will remain on the main panel after registering a document.
+- **Automatically use left quantity as picked**: this option applies to Production Issue and Receipt within the application, enabling the automatic assignment of planned quantities for Pick Order, Pick Receipt, both, or neither. If not configured for automatic use, the quantity will default to zero.
+- **Activity**: a standard SAP Business One feature that can be created from the CompuTec PDC level. Here, you can specify the type of activity that will be automatically assigned upon creation from the CompuTec PDC level.
+- **Activity Type**: this setting allows you to define the activity type that will be automatically assigned upon creation from the CompuTec PDC level.here, you can determine the activity type that will be automatically assigned to it on creation from the CompuTec PDC level.
+- **Show not closed Task in future section**: when this option is enabled and the "Close Task" checkbox on the Confirmation Panel is unchecked, the task tile will remain on the main panel after registering a document.
 
   ![Confirmation Panel](./media/setting-up-the-application/confirmation-panel.webp)
 - **Create a new task when Down Register**:
   - set to 'Yes': A new time booking is created, and a new task tile appears in the main window.
   - Set to 'No': The action will be determined by Action when Down Registration option (see below).
-- **Pause all tasks when Down Register** – Defines whether all tasks are paused during downtime registration, especially when multiple employees are working on the resource.
+- **Pause all tasks when Down Register**: defines whether all tasks are paused during downtime registration, especially when multiple employees are working on the resource.
 - **Action when Down Register** options:
 
-  - **Ask** – When downtime is registered, the user will be prompted to decide whether to register a time booking or just the quantity.
-  - **Create Time Booking** – A time booking will be created upon registering downtime.
-  - **Only Quantity Registration** – Only the quantity will be registered upon downtime registration.
-- **Close All Labour when Closing Task** – This option defines whether the labor associated with the task is automatically marked as completed when the task is closed.
-- **Lock assigned and registered Manufacturing Orders on the Gantt chart** – This option determines whether assigned and registered manufacturing orders can be rescheduled on the Gantt chart.
-- **PDC Default View** – A predefined default SQL view required for personalization options.
+  - **Ask**: when downtime is registered, the user will be prompted to decide whether to register a time booking or just the quantity.
+  - **Create Time Booking**: a time booking will be created upon registering downtime.
+  - **Only Quantity Registration**: only the quantity will be registered upon downtime registration.
+- **Close All Labour when Closing Task**: this option defines whether the labor associated with the task is automatically marked as completed when the task is closed.
+- **Lock assigned and registered Manufacturing Orders on the Gantt chart**: this option determines whether assigned and registered manufacturing orders can be rescheduled on the Gantt chart.
+- **PDC Default View**: a predefined default SQL view required for personalization options.
 
   For example, **PDC Default View** = PDCVIEW for custom SQL View:
 
@@ -196,27 +198,26 @@ SAP Business One → Administration → System Initialization → General Settin
     ![Weighting Message](./media/setting-up-the-application/weighting-message.webp)
 - **Range from Mode**:
 
-  - Batch available (default) – The range specified in the weight scale parameter cannot exceed the available batch quantity (as shown in 1 in the image). For example, if the Range From is 1000 KG, the weight scale cannot be selected.
-  - Planned Item Quantity – The range specified in the weight scale parameter cannot exceed the planned quantity (as shown in 2 in the image). For instance, if the Range From is 110 KG, the weight scale cannot be selected.
-  - Remaining Quantity – The range specified in the weight scale parameter cannot exceed the remaining quantity (as shown in 3 in the image). For example, if the Range From is 100 KG, the weight scale cannot be selected.
+  - **Batch available (default)**: the range specified in the weight scale parameter cannot exceed the available batch quantity (as shown in 1 in the image). For example, if the Range From is 1000 KG, the weight scale cannot be selected.
+  - **Planned Item Quantity**: the range specified in the weight scale parameter cannot exceed the planned quantity (as shown in 2 in the image). For instance, if the Range From is 110 KG, the weight scale cannot be selected.
+  - **Remaining Quantity**: the range specified in the weight scale parameter cannot exceed the remaining quantity (as shown in 3 in the image). For example, if the Range From is 100 KG, the weight scale cannot be selected.
 
     ![Weight Range](./media/setting-up-the-application/weight-range.webp)
 
-- **Show Not Finished Weight Documents** – If this option is selected, upon the next login by a user, a window displaying unfinished weight documents will appear:
+- **Show Not Finished Weight Documents**: if this option is selected, upon the next login by a user, a window displaying unfinished weight documents will appear:
 
   ![Select Weight Document](./media/setting-up-the-application/select-weight-document.webp)
 
   From this interface, users can resume work on specific documents, close them, or access them later via the [Weight Management Board](../../user-guide/customization/optional-functions/weight-scale-module/weight-management-board.md).
 
-- **Is Force Order Enabled for Weight Documents** – If enabled, this option enforces weighing in the sequence defined in [Operation Bind](/docs/processforce/user-guide/formulations-and-bill-of-materials/production-process/overview#operation-bind) for a related Manufacturing Order.
-- **Is Precision Weight Enabled for Weight Documents** –  When activated, it ensures that you cannot issue more [weight](../../user-guide/customization/optional-functions/weight-scale-module/overview.md) than the Planned Quantity (within the weight scale precision range).
-- **Auto Logout Delay(s)** – Define the number of seconds of inactivity before the system automatically logs out the user. A value of '0' disables this feature.
-- **Synchronize team works** – This is a [Team Log](../../user-guide/task-activities/overview.md) related option. This option syncs task times among team members. For example, when a Team Leader starts a task, the start time is applied to all related employees. Similarly, closing the task (booking time) synchronizes for the entire team.
-- **Blocked time type, if the previous operation was not closed** – Choose between 'All' and 'Run':
+- **Is Force Order Enabled for Weight Documents**: if enabled, this option enforces weighing in the sequence defined in [Operation Bind](/docs/processforce/user-guide/formulations-and-bill-of-materials/production-process/overview#operation-bind) for a related Manufacturing Order.
+- **Is Precision Weight Enabled for Weight Documents**: when activated, it ensures that you cannot issue more [weight](../../user-guide/customization/optional-functions/weight-scale-module/overview.md) than the Planned Quantity (within the weight scale precision range).
+- **Auto Logout Delay(s)**: define the number of seconds of inactivity before the system automatically logs out the user. A value of '0' disables this feature.
+- **Synchronize team works**: this is a [Team Log](../../user-guide/task-activities/overview.md) related option. This option syncs task times among team members. For example, when a Team Leader starts a task, the start time is applied to all related employees. Similarly, closing the task (booking time) synchronizes for the entire team.
+- **Blocked time type, if the previous operation was not closed**: choose between 'All' and 'Run':
   -'All' -  Prevents starting a new operation unless the previous one is completed.
   -'Run' - Allows starting 'Set Up' time even if the previous operation is still running.
-- **Force tare between each weighing**– When checked, Requires users to click 'Tare' before each weighing to ensure accuracy. Find out more about the [Weighing Module](../../user-guide/customization/optional-functions/weight-scale-module/overview.md).
-- **Show all Tasks** – This allows access to all of the users' Tasks on all Resources despite using the [Resource Code](./pdc-settings/overview.md#pdc-settings-templates) option. The user cannot add any new Task to Resources other than assigned.
+- **Force tare between each weighing**: when checked, Requires users to click 'Tare' before each weighing to ensure accuracy. Find out more about the [Weighing Module](../../user-guide/customization/optional-functions/weight-scale-module/overview.md).
+- **Show all Tasks**: this allows access to all of the users' Tasks on all Resources despite using the [Resource Code](./pdc-settings/overview.md#pdc-settings-templates) option. The user cannot add any new Task to Resources other than assigned.
 
 ---
-By following this guide, you can effectively configure CompuTec PDC to meet your organization’s production and operational requirements. This setup not only ensures smooth integration with SAP Business One but also enhances productivity, accuracy, and workflow efficiency. Should you encounter challenges during the process, consult the support documentation or reach out to CompuTec’s technical team for assistance.

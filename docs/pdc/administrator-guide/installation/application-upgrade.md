@@ -19,15 +19,14 @@ This document outlines the steps necessary to upgrade the CompuTec PDC applicati
 
 To upgrade CompuTec PDC to a newer version, perform the following steps:
 
-1. **Uninstall the Current Version** - To begin the upgrade, uninstall the existing CompuTec PDC application on your system. Follow these steps in Windows:
+1. **Uninstall the Current Version**: to begin the upgrade, uninstall the existing CompuTec PDC application on your system. Follow these steps in Windows:
    - Navigate to Control Panel > All Control Panel Items > Programs and Features.
    - Locate CompuTec PDC (64-bit), right-click on it, and select "Uninstall".
 
       ![PDC Uninstall](./media/application-upgrade/pdc-uninstall.webp)
-2. **Obtain the Latest Installer** - Download the latest version of the CompuTec PDC installer file. You can find the updated installer [here](first-installation.md).
-3. **Install the New Version** - Once you've obtained the latest installer, follow the installation instructions provided [here](./first-installation.md).
+2. **Obtain the Latest Installer**: download the latest version of the CompuTec PDC installer file. You can find the updated installer [here](first-installation.md).
+3. **Install the New Version**: once you've obtained the latest installer, follow the installation instructions provided [here](./first-installation.md).
 
    Make sure to fulfill all system [requirements](./requirements.md) before proceeding with the installation.
 
 ---
-By following the steps outlined above, you will be able to smoothly transition to the new version and take full advantage of the AppEngine plugin's enhanced features.
