@@ -44,7 +44,7 @@ Steps for configuring serialization are as follows:
 
 First, define Attributes Template. Then from these templates, you are able to define Serialization Parameters Templates. The next obligatory step is to set up Rules. Step 4 is not required for clustering. It useful if you produce serialized products and you received SN pools from a customer or you have to generate SN pools according to determined schemes.
 
-You can find an example of a clustering case here: [Example usage: clustering](../serialization/example-usage-clustering.md).
+You can find an example of a clustering case here: [Example usage: clustering](example-usage-clustering.md).
 
 ### Attribute Templates
 

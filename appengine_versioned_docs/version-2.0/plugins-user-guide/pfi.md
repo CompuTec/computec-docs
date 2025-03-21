@@ -20,7 +20,7 @@ If a new UDF is added to a ProcessForce object, the AppEngine service has to be 
 
 ### Installation
 
-Click [here](/docs/appengine/administrators-guide/configuration-and-administration/overview#plugins) to get to know more about AppEngine plugin installation.
+Click [here](../administrators-guide/configuration-and-administration/overview.md#plugins) to get to know more about AppEngine plugin installation.
 
 ## Usage
 
