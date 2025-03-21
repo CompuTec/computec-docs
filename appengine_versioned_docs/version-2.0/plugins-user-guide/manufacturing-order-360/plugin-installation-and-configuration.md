@@ -11,7 +11,7 @@ ProcessForce and CompuTec Licence Server is installed and configured. For more i
 
 For the AppEngine installation manual, please follow this link: [Installation](/docs/appengine/administrators-guide/installation/).
 
-For the plugin installation manual, please follow this link: [Configuration and Administration](/docs/appengine/administrators-guide/configuration-and-administration/overview).
+For the plugin installation manual, please follow this link: [Configuration and Administration](../../administrators-guide/configuration-and-administration/overview.md).
 
 Two plugins need to be installed: **MO360** and **PPF**.
 

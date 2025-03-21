@@ -20,7 +20,7 @@ Before using PFI, ensure the following:
 
 ### Installation
 
-For detailed instructions on installing the AppEngine plugin, click [here](/docs/appengine/administrators-guide/configuration-and-administration/overview#plugins).
+For detailed instructions on installing the AppEngine plugin, click [here](../administrators-guide/configuration-and-administration/plugins/overview.md).
 
 ## Usage
 

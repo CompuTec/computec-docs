@@ -94,7 +94,7 @@ Clustering is sensitive to Item changes by default. The rest of the parameters t
 
 ---
 
-For field description please check [here](/docs/appengine/plugins-user-guide/serialization/fields-description#attribute-templates)
+For field description please check [here](../serialization/fields-description.md#attribute-templates).
 
 ### Serialization Parameters Templates – definition
 
@@ -123,7 +123,7 @@ If in the Rule you specify only the Item Group, the SPT selected in the Result S
 
 ### Start the clustering process
 
-The clustering process is saved in a serialization document. This document is a subject to approval and verification. Serialization documents are visible in the WMS's Packing Hierarchy tile: [here](/docs/appengine/plugins-user-guide/serialization/fields-description#serialization-results).
+The clustering process is saved in a serialization document. This document is a subject to approval and verification. Serialization documents are visible in the WMS's Packing Hierarchy tile: [here](../serialization/fields-description.md#serialization-results)
 
 For testing purposes, you can use the scanner simulator available here: [WMSScannerSimulator.exe](https://download.computec.one/software/wms/tools/WMS_Scanning_Simulator.exe).
 
@@ -133,7 +133,7 @@ Attributes that have a GS1-ID defined must be preceded by it in the simulator, e
 
 ![Clustering](./media/clustering/image2020-1-9-14-58-21.png)
 
-Enable Serialization in CompuTec WMS (check [here](/docs/appengine/plugins-user-guide/serialization/serialization-plugin-installation-and-configuration#computec-wms)). Log in to CompuTec WMS (check [here](/docs/wms/user-guide/starting/)).
+Enable Serialization in CompuTec WMS (check [here](../serialization/serialization-plugin-installation-and-configuration.md#computec-wms). Log in to CompuTec WMS (check [here](/docs/wms/user-guide/starting/)).
 
 Start Serialisation Document:
 ![Clustering](./media/clustering/image2020-1-15-12-19-29.png)![Clustering](./media/clustering/image2020-1-9-15-38-42.png)

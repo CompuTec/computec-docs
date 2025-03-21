@@ -91,7 +91,7 @@ The latest installer is available to download fom [here](/docs/appengine/release
 | - | - | - | - |
 | Improvement | AE Analaytics | New option: [Analytical Page Source Creator](/docs/appengine/appengine-users-guide/analytical-page/source-creator/). | - |
 | Improvement | AE Analaytics | The String and Number filters now have buttons to change operators like equal, not equal, greater than, and more complicated operators like: between, in (you can choose more than one value), not in. | - |
-| Improvement | Launchpad | Possibility to log out any session from the Administration Panel level [the Active Connections tab](/docs/appengine/administrators-guide/configuration-and-administration/overview#active-connections). | - |
+| Improvement | Launchpad | Possibility to log out any session from the Administration Panel level [the Active Connections tab](../../administrators-guide/configuration-and-administration/overview.md#active-connections). | - |
 | Bug | Launchpad | The SAP Business One User's password change is not reflected in AppEngine. | SPROC-12383 |
 
 ---

@@ -25,9 +25,9 @@ For configuration please follow this link: [Custom Configuration](/docs/wms/admi
 
 ## AppEngine and serialization plugin installation and configuration
 
-For AppEngine installation please follow this link: [Installation](/docs/appengine/administrators-guide/installation/).
+For AppEngine installation please follow this link: [Installation](../../administrators-guide/installation.md).
 
-For plugin installation please follow this link: [Configuration and Administration](/docs/appengine/administrators-guide/configuration-and-administration/overview/).
+For plugin installation please follow this link: [Configuration and Administration](../../administrators-guide/configuration-and-administration/overview.md).
 
 Please note: after updating the Serialization plugin and restarting the App Engine, remember to update the schema as per the procedure here.
 

@@ -9,6 +9,16 @@ toc_max_heading_level: 2
 The latest Installer is available to download from [here](/docs/appengine/releases/plugins/mo360/download).
 :::
 
+## MO360 1.10.13.1
+
+### *Release Date - 21 March 2025*
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Improvement  | MO360 | Planned Start and End Date/Time in MO360 Assignment Board |
+| Bug | MO360 | Issues with filter in Assignment Board and Gantt Charts |
+| Bug | MO360 | Incorrect Start and End date formatting in MO360 |
+
 ## MO360 1.10.12.1
 
 ### *Release Date - 23 May 2024*
