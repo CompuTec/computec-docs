@@ -11,8 +11,8 @@ This function allows propagating changes made on a particular Bill of Materials 
 ## Installation
 
 This feature is built on an AppEngine job, which is automatically installed during the [BulkChange plugin installation](../bulk-changes-on-bills-of-materials/installation-and-configuration.md). o enable the BOM to MOR update, ensure:
-    - Send Events Job is active for a specific company. Click [here](/docs/appengine/administrators-guide/configuration-and-administration/overview) to find out more.
-    - Background processing is configured for the specific company. Click [here](/docs/appengine/administrators-guide/configuration-and-administration/overview#activation) to find out more.
+    - Send Events Job is active for a specific company. Click [here](../../administrators-guide/configuration-and-administration/configuration.md) to find out more.
+    - Background processing is configured for the specific company.
 
 ## Configuration
 

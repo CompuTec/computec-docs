@@ -6,7 +6,7 @@ sidebar_position: 2
 ## Prerequisites
 
 :::note
-Ensure that ProcessForce and CompuTec Licence Server is installed and configured. For more information, click [here](/docs/processforce/administrator-guide/licensing/license-server/overview/).
+Ensure that ProcessForce and CompuTec Licence Server is installed and configured. For more information, click [here](../../../processforce/administrator-guide/licensing/license-server/overview.md).
 :::
 
 ## AppEngine and plugin installation and configuration
