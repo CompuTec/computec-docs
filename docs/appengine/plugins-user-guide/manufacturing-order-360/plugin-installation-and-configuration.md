@@ -6,14 +6,14 @@ sidebar_position: 2
 ## Prerequisites
 
 :::note
-Ensure that ProcessForce and CompuTec Licence Server is installed and configured. For more information, click [here](../../../processforce/administrator-guide/licensing/license-server/overview.md).
+Ensure that ProcessForce and CompuTec Licence Server is installed and configured.
 :::
 
 ## AppEngine and plugin installation and configuration
 
-For the AppEngine installation, follow the step-by-step instructions provided in the  [Installation](/docs/appengine/administrators-guide/installation/) manual.
+For the AppEngine installation, follow the step-by-step instructions provided in the  [Installation](../../administrators-guide/installation.md) manual.
 
-Refer to the [Configuration and Administration](/docs/appengine/administrators-guide/configuration-and-administration/overview) Guide for details on installing and configuring the plugin.
+Refer to the [Configuration and Administration](../../administrators-guide/configuration-and-administration/configuration.md). Guide for details on installing and configuring the plugin.
 
 Two plugins need to be installed: **MO360** and **PPF**.
 
