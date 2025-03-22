@@ -128,4 +128,3 @@ Users can interact with chart data to view summarized information and download s
     ![Download Excel](./media/overview/download-excel.png)
 
 ---
-The Analytical Page's Variants and customization features empower users to create targeted, insightful reports. By leveraging the flexibility of filters, chart formats, and table configurations, users can adapt the tool to meet diverse reporting needs effectively. With these capabilities, the Analytical Page serves as a cornerstone for informed decision-making and streamlined data analysis.
