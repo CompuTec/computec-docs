@@ -7,7 +7,7 @@ sidebar_position: 4
 This function allows creating a customized table view when adding a task by Resource. This means that based on a few mandatory fields, it is possible to give information from other objects in SAP Business One or ProcessForce by creating an SQL code.
 
 :::caution
-    Please note that when using this function, all interactive icons are unavailable.
+    Please be aware that all interactive icons will be unavailable when using this function.
 :::
 
 ---
@@ -20,10 +20,10 @@ To create a view, perform the following steps:
 
 Rules:
 
-- The code has to have a condition written like `where mor16."U_RscCode" =@RscCode`
-- The code has to be based on CT_PF tables like `OMOR and/or MOR12 and/or MOR16`
-- Columns' aliases need to be written with a floor like `1THWORD_2THWORD`
-- `"DocEntry"` and `mor16."U_LineNum"` are always obligatory
+- The query must include a condition formatted as: `where mor16."U_RscCode" =@RscCode`
+- The query should be based on CT_PF tables such as `OMOR and/or MOR12 and/or MOR16`
+- Column aliases must follow the format:`1THWORD_2THWORD`
+- `"DocEntry"` and `mor16."U_LineNum"` are mandatory.
 
 ```sql title="Example"
   select
@@ -52,22 +52,24 @@ Rules:
 
 ## Query Manager
 
-The code needs to be saved in **Query Manager**:
+The SQL query must be saved in **Query Manager**:
 
 ![Query Manager](./media/customized-task-list/query-manager.webp)
 
 ## PDC Settings
 
-It is needed to create a PDC Setting view and select created view/query in the **Task List** field.
+Create a PDC Setting view and select the saved query in the **Task List** field.
 
 ![Task List](./media/customized-task-list/task-list.webp)
 
 ## Employee Master Data
 
-The last step to use the customized task list is to assign the created PDC Setting to Employee at Employee Master Data window:
+The final step is to assign the created PDC Setting to an employee in the Employee Master Data window.
 
 ![Employee Master Data](./media/customized-task-list/employee-master-data.webp)
 
 Example of the result in CompuTec PDC:
 
 ![Customization](./media/customized-task-list/customization-example.webp)
+
+---

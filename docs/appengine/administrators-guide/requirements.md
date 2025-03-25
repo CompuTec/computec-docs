@@ -17,7 +17,7 @@ The CompuTec AppEngine is a robust solution designed to enhance your SAP Busines
 - **ASP.NET Core Runtime** - Minimum required version: 8.0.4.
 - **Database** - If using SAP HANA, ensure that your HANA version is at least HANA Enterprise Edition 2.0 SPS 05, Revision 059.09 (minimal version - 2.17.22).
 - **Operating System** - A Windows x64 machine is required.
-- **SAP Business One** - The minimal required version of SAP is 2408 and the minimal recommended is SAP 2502.
+- **SAP Business One** - The minimal required version is SAP Business One 10.0 FP 2408 and the minimal recommended is SAP Business One 10.0 FP 2502.
 - **SAP Business One DI API** - Ensure SAP Business One DI API is installed and properly configured.
 - **Supported Database Server** - SQL Server 2012 and higher.
 - **CompuTec License Server** - Verify that the CompuTec License Server is installed and accessible.
