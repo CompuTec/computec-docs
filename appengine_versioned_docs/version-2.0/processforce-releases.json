@@ -3,7 +3,7 @@
     "version": "ProcessForce 10.0 Release 30",
     "build": "10.0.30.3",
     "release_date": "04 March 2025",
-    "minimal_ae_version": "2.10.30.3",
+    "minimal_ae_version": "2.10.10.1",
     "requirements": [
       "SAP Business One 10.0",
       "ProcessForce API 10.0 RL30"

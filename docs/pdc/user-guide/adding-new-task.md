@@ -21,7 +21,7 @@ A new task can be added to the CompuTec PDC application in three ways:
 1. To add a new task, click the "task adding" icon in the main form:
 
     ![Adding Task](./media/adding-new-task/adding-task.webp)
-2. At the top of the form, select tasks either by Resource or by Manufacturing Order. If a resource is pre-configured for the device in the [settings](../administrator-guide/setting-up-the-application/overview.md), only the By Resource option will be available, displaying operations assigned to that resource without a search field. The following view illustrates the By Resource selection. To see the workflow for the By Manufacturing Order option, refer to point 4. You can set the default search method in the [settings](../administrator-guide/setting-up-the-application/overview.md).
+2. Select tasks either by Resource or by Manufacturing Order at the top of the form. If a resource is pre-configured for the device in the [settings](../administrator-guide/setting-up-the-application/overview.md), only the By Resource option will be available, displaying operations assigned to that resource without a search field. The following view illustrates the By Resource selection. To see the workflow for the By Manufacturing Order option, refer to point 4. You can set the default search method in the [settings](../administrator-guide/setting-up-the-application/overview.md).
 
     ![By Resource](./media/adding-new-task/by-resource.png)
 3. Choose Resource from the Resource Code drop-down list. All the tasks related to the specific resource will be displayed on the list. You can filter Resources by choosing a particular Resource Group first.
@@ -30,13 +30,13 @@ A new task can be added to the CompuTec PDC application in three ways:
 
     Task on the list can have one of the following statuses:
 
-    ![In Progress Icon](./media/adding-new-task/in-progress-icon.webp) - in progress
+    ![In Progress Icon](./media/adding-new-task/in-progress-icon.webp): in progress
 
-    ![Assigned Icon](./media/adding-new-task/assigned-icon.webp) - assigned. A specified task is already assigned to a specific employee (check the "Assign to" column for details)
+    ![Assigned Icon](./media/adding-new-task/assigned-icon.webp): assigned. A specified task is already assigned to a specific employee (check the "Assign to" column for details)
 
-    ![Not Assigned Icon](./media/adding-new-task/not-assigned-icon.webp) - task not assigned to any of the employee
+    ![Not Assigned Icon](./media/adding-new-task/not-assigned-icon.webp): task not assigned to any of the employee
 
-    ![Saved Icon](./media/adding-new-task/saved-icon.webp) - saved, not closed. You can determine in [the general settings](../administrator-guide/setting-up-the-application/overview.md#processforce-settings) if tasks with this status will be available from the list.
+    ![Saved Icon](./media/adding-new-task/saved-icon.webp): saved, not closed. You can determine in [the general settings](../administrator-guide/setting-up-the-application/overview.md#processforce-settings) if tasks with this status will be available from the list.
 
     Click the required row and click the + icon or the 'Start Run' icon (Clicking the icon in the Start Run column automatically adds Tasks to the main panel with the status Run) to add the task:
 
@@ -67,23 +67,22 @@ A new task can be added to the CompuTec PDC application in three ways:
         :::warning
             The color of the setup date and time, and the run date and time, may be different:
 
-            - black – planned date and period,
-            - green – time type is running currently,
-            - blue – time type recorded in CompuTec PDC application (changes the record in a database after clicking the confirmation icon on the confirmation tab).
+            - black: planned date and period,
+            - green: time type is running currently,
+            - blue: time type recorded in CompuTec PDC application (changes the record in a database after clicking the confirmation icon on the confirmation tab).
         :::
     7. Item code and item description.
     8. This icon communicates an operation status:
 
-        ![Set up Icon](./media/adding-new-task/setup-icon.webp) - set up time,
+        ![Set up Icon](./media/adding-new-task/setup-icon.webp): set up time,
 
-        ![Run time Icon](./media/adding-new-task/runtime-icon.webp) - run time,
+        ![Run time Icon](./media/adding-new-task/runtime-icon.webp): run time,
 
-        ![Downtime Icon](./media/adding-new-task/downtime-icon.webp) - downtime,
+        ![Downtime Icon](./media/adding-new-task/downtime-icon.webp): downtime,
 
-        ![Pause Icon](./media/adding-new-task/pause-icon.webp) - the task is paused.
+        ![Pause Icon](./media/adding-new-task/pause-icon.webp): the task is paused.
 
-        Clicking it leads to a task panel where you can set details of a specific task.
-11. Click the status icon to set periods for specific tasks. For more details, click [here](./task-activities/overview.md).
+        Clicking an icon leads to the task panel where you can set details of a specific task.
+11. Click the status icon to define specific task periods. For further details, refer to [here](./task-activities/overview.md).
 
 ---
-Adding tasks to the CompuTec PDC application is a straightforward process that ensures efficient resource allocation and task management. By following the steps outlined in this guide, users can ensure tasks are created accurately and aligned with their manufacturing workflows.

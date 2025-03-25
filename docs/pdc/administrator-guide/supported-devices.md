@@ -19,7 +19,7 @@ Confirmed supported operating systems:
 - Windows 7, 8, 10.
 
 :::caution
-    PDC does not operate on devices with the Windows RT operating system.
+    PDC does not operate on devices with Windows RT operating system.
 :::
 
 ## Recommended Devices
@@ -38,4 +38,3 @@ For the best experience, we recommend using devices that have been tested and co
         - Durability: IP65 certified, MIL-STD-810G/F compliant
 
 ---
-To ensure a seamless and reliable experience with CompuTec PDC, it is crucial to use hardware that meets the recommended specifications and is supported by the application. While PDC supports a wide range of devices, choosing a tested and proven device, like the DURABOOK R11, ensures smooth operation and better performance. If you're considering other devices, ensure they meet the compatibility requirements outlined above.
