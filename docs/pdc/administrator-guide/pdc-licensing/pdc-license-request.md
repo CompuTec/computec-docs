@@ -57,4 +57,3 @@ To provide system information:
     ![PDC Licensing](./media/pdc-licensing-request/pdc-wms-licensing-import.webp)
 
 ---
-By following these instructions, you can ensure a seamless license request process for CompuTec PDC. For any additional questions or assistance, feel free to contact our technical support.
