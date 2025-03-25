@@ -18,9 +18,9 @@ Downtime refers to a temporary break in work caused by unforeseen circumstances,
 
 Within the General Settings, several options in the ProcessForce and PDC tabs influence downtime registration behavior:
 
-- create a new task when Downtime Register
-- pause all tasks when Downtime Register
-- action when Downtime Register
+- create a new task when downtime is registered.
+- pause all tasks when downtime is registered.
+- action when downtime is registered.
 
 To know more, click [here](../../administrator-guide/setting-up-the-application/overview.md#processforce-settings) – these options define additional behaviour during Downtime registration.
 
@@ -50,4 +50,3 @@ Adding a Downtime creates a Downtime tile available for the [Technician](../../a
 Supervisors have additional capabilities to reassign technicians and modify downtime parameters.
 
 ---
-Effective downtime management is crucial for addressing interruptions and ensuring minimal impact on productivity. CompuTec PDC streamlines this process by providing tools to log, monitor, and manage downtime efficiently. By leveraging these settings and functionalities, organizations can reduce downtime's operational impact and improve response times.

@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Release Notes
 
-## MOWizard 1.10.12 - 26 june 2024
+## MOWizard 1.10.12 - 26 June 2024
 
 | Issue Type | Release Note | Related Issue |
 | --- | --- | --- |
