@@ -9,4 +9,3 @@ The Input/Output Properties feature allows users to view and manage the data sav
 ![Input Output](./media/input-output-properties/input-output-properties.webp)
 
 ---
-By offering the ability to view saved information and compare it with actual values, users can ensure greater accuracy in tracking operations and make informed decisions based on up-to-date data.
