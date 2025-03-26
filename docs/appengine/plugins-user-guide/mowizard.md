@@ -11,7 +11,7 @@ The MOWizard plugin is designed to streamline the creation of Manufacturing Orde
 
 Below are the steps to install the MOWizard Plugin for SAP Business One:
 
-1. Get the installation file from provided source [link](../releases/plugins/mowizard/download.md).
+1. Get the installation done.
 2. Follow the detailed instructions to install the plugin on your SAP Business One system [here](../administrators-guide/configuration-and-administration/plugins/plugin-installation-process.md)
 
 3. Once installed, go to the SAP Business One Launchpad and select the MOWizard plugin to begin using it.
