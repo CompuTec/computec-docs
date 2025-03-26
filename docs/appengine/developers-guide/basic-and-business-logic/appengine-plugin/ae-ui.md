@@ -79,7 +79,7 @@ AppEngine Launchpad can run any UI5 application as long as below requirements ar
 
 ## Crating Simple Ui5 Application for AppEngine
 
-The easiest way to start new AppEngine UI Plugin project is by using the CT AppEngine Plugin Project template from [CompuTec.AppEngine.Templates](../framework/before-you-start.md).
+The easiest way to start new AppEngine UI Plugin project is by using the CT AppEngine Plugin Project template from [CompuTec.AppEngine.Templates](../../basic-and-business-logic/framework/before-you-start.md)
 
 ```bash
 dotnet new ctaeaeproject --RoutePrefix CTVehOne
@@ -91,9 +91,9 @@ dotnet new ctaeaeproject --RoutePrefix CTVehOne
 
 **CT.VehOne**
     -**CustomViews** - folder for custom views
-    - [Jobs](./ae-jobs.md) - folder for background jobs
+    - [**Jobs**](../appengine-plugin/ae-jobs.md) - folder for background jobs
     - **Properties** - folder for configuration files
-    - [**Translations**](../framework/message-translations.md) - folder for translations
+    - [**Translations**](../../basic-and-business-logic/framework/message-translations.md) - folder for translations
     - **www**
         - **src** - source code of UI5 application
             - **assets** - additional file like css, images etc.
@@ -300,5 +300,5 @@ This library also includes several base classes that can be extended to simplify
 For detailed information and examples, download the library and explore the example code and comments within.
 
 :::info Examples
-Refer to the [Example code](../examples/examples.md) for guidance on using the AppEngine UI5 Plugin.
+Refer to the [Example code](../../basic-and-business-logic/examples/examples.md) for guidance on using the AppEngine UI5 Plugin.
 :::

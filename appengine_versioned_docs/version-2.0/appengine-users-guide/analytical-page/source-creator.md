@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Source Creator
 
-This option allows advanced configuration of data presented in [custom reports and analytics of the Analytical Page.](../analytical-page/overview.md#usage).
+This option allows advanced configuration of data presented in [custom reports and analytics of the Analytical Page.](../../../version-2.0/appengine-users-guide/analytical-page/overview.md#usage).
 
 ---
 
@@ -73,6 +73,6 @@ Click the + Add Variant to add a Variant:
 Here you can define:
 
 - Basic Settings: Name, View, Default, Accessibility (Public/Private);
-- Table Startup Settings: settings related to the [Table view](../analytical-page/overview.md#table-options).
-- Chart Startup Settings: settings related to the [Chart view](../analytical-page/overview.md#chart-options).
-- Visual Filter Startup Settings: settings related to the [charts](../analytical-page/overview.md#chart-options).
+- Table Startup Settings: settings related to the [Table view](../../../version-2.0/appengine-users-guide/analytical-page/overview.md#table-options).
+- Chart Startup Settings: settings related to the [Chart view](../../../version-2.0/appengine-users-guide/analytical-page/overview.md#chart-options).
+- Visual Filter Startup Settings: settings related to the [charts](../../../version-2.0/appengine-users-guide/analytical-page/overview.md#chart-options).

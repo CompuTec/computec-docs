@@ -34,7 +34,7 @@ The document list can also be filtered based on the specific price list associat
 
     ![Price List](./media/price-list.png)
 
-Documents can apply to multiple price lists if you intend to update the prices of a given Item Master Data across several price lists. Alternatively, they can apply to a single price list if the changes are limited to one. Selecting one or many price lists is explained in [Preparing the Dataset for Export](export-price-list-from-sapb1.md#preparing-the-dataset-for-export). Enable Multi Price List setting is explained in [Configuration](configuration.md).
+Documents can apply to multiple price lists if you intend to update the prices of a given Item Master Data across several price lists. Alternatively, they can apply to a single price list if the changes are limited to one. Selecting one or many price lists is explained in [Preparing the Dataset for Export](./export-price-list-from-sapb1.md#preparing-the-dataset-for-export). Enable Multi Price List setting is explained in [Configuration](configuration.md).
 
 If a document has been in processing for a while and you suspect the processing might be complete, meaning the document’s status may have changed, you can click Refresh to update the document list and display the most current information.
 
@@ -85,7 +85,7 @@ Additionally, you can add more rows from another Excel file. If this new file co
 
     ![Edit Doc](./media/edit-doc-01.png)
 
-At this stage, prices can also be modified, depending on the plugin's configuration settings, which is explained in [Configuration](configuration.md).
+At this stage, prices can also be modified, depending on the plugin's configuration settings, which is explained in [Configuration](./configuration.md).
 
     ![Edit Doc](./media/edit-doc-02.png)
 

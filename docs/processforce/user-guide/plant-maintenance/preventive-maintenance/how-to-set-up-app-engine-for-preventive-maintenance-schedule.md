@@ -16,7 +16,7 @@ sidebar_position: 8
 
 ## Plugins Configuration
 
-1. Install **ProcessForce** and the [MI360 plugin](/docs/appengine/releases/plugins/mi360/download).
+1. Install **ProcessForce** and the [MI360 plugin](/docs/appengine/2.0/releases/plugins/mi360/download).
 
     ![Plugins Configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/Plugins.jpg)
 

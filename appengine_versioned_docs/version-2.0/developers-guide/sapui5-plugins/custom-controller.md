@@ -6,7 +6,7 @@ sidebar_position: 10
 
 ## Description
 
-In this example, we will show how to add a custom controller. Example in this tutorial base on previous tutorial - [Attachments](attachments.md). In this example, we used AppEngine build in Attachments controller to upload Attachment. In this example, we will add a custom controller, and in it, we will add an uploaded attachment to the selected Sales Order.
+In this example, we will show how to add a custom controller. Example in this tutorial base on previous tutorial - [Attachments](./attachments.md). In this example, we used AppEngine build in Attachments controller to upload Attachment. In this example, we will add a custom controller, and in it, we will add an uploaded attachment to the selected Sales Order.
 
 ## Creating Custom Controller
 

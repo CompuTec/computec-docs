@@ -14,7 +14,7 @@ Click [here](../../../administrator-guide/installation/wms-server/overview.md) t
 
 ### AppEngine plugin installation
 
-Click [here](/docs/appengine/releases/plugins/wms-stock-counting/download) to download the installation file.
+Click [here](/docs/appengine/2.0/releases/plugins/wms-stock-counting/download) to download the installation file.
 
 Click [here](./plugin-installation.md) to find out more about the installation.
 

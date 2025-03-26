@@ -6,7 +6,7 @@ toc_max_heading_level: 2
 # Release Notes
 
 :::info
-The latest Installer is available to download from [here](/docs/appengine/releases/plugins/mi360/download).
+The latest Installer is available to download from [here](../../plugins/mi360/download.md).
 :::
 
 ## MI360 1.2.0

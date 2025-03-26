@@ -6,7 +6,7 @@ toc_max_heading_level: 2
 # Release Notes
 
 :::info
-The latest Installer is available to download from [here](/docs/appengine/releases/plugins/mo360/download).
+The latest Installer is available to download from [here](../../plugins/mo360/download.md).
 :::
 
 ## MO360 1.10.13.1

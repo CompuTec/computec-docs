@@ -148,7 +148,7 @@ Custom UDO object forms allow you to extend functionality by linking UDO Beans t
     ```
 
 4. Override methods like `OnItemPressedBefore`, `OnItemPressedAfter`, `OnChooseFromListBefore`, etc.
-5. Built-in mechanisms allow direct UDO handling in events. See [more info](business-logic-ui-model.md).
+5. Built-in mechanisms allow direct UDO handling in events. See [more info](./business-logic-ui-model.md).
 
 #### Data Event
 

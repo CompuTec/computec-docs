@@ -22,7 +22,7 @@ Event-based jobs react to specific SAP Business One events occurring within the 
 - **UserId**: User ID
 - **UseRegex**: Boolean inidcator if true then `ContentType` is RegexExpression eg:`^(20|59|60)$'`
 
-To create an Event-Based Job, use the `EventBusJob` attribute: 
+To create an Event-Based Job, use the `EventBusJob` attribute:
 (!) You can use multiple EventBusAttribite on signle implementation
 
 ```csharp
@@ -54,7 +54,7 @@ To configure the job as one-time or recursive, add the appropriate attribute:
 
 ## Job Configuration
 
-You can add configuration to `Secure` and `Database` type jobs by using the `AdditionalJobConfiguration` attribute with a specified configuration type. In your job class, access the configuration by using the `Configuration` property. For more details on configurations, see [Configurations](../development-tools/Configuration/dev-config-json.md)
+You can add configuration to `Secure` and `Database` type jobs by using the `AdditionalJobConfiguration` attribute with a specified configuration type. In your job class, access the configuration by using the `Configuration` property. For more details on configurations, see [Configurations](../../basic-and-business-logic/development-tools/Configuration/dev-config-json.md)
 
 ```csharp
 [AdditionalJobConfiguration(Type = typeof(Adv))]
@@ -70,4 +70,3 @@ public class ScheduledJob2 : EventBusSecureJob
 
 ---
 AppEngine Jobs for SAP Business One plugins offer a robust framework to streamline and automate critical processes within your business. This guide serves as a comprehensive introduction to implementing Jobs in AppEngine, empowering you to take full advantage of its automation capabilities.
-

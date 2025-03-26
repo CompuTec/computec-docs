@@ -6,7 +6,7 @@ sidebar_position: 4
 
 ## Description
 
-When using AppEngine, you can define your translation resource files directly in your project plugin. If you created a plugin with [CompuTec AppEngine Plugin Template](plugin-templates.md), the translation file is already added and registered. Translations require the following to work:
+When using AppEngine, you can define your translation resource files directly in your project plugin. If you created a plugin with [CompuTec AppEngine Plugin Template](./plugin-templates.md), the translation file is already added and registered. Translations require the following to work:
 
 1. The translations file is an XML file with the following structure:
 

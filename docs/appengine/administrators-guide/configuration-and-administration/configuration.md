@@ -26,7 +26,7 @@ toc_max_heading_level: 5
 
 This section provides a description of the Administration features of AppEngine, along with instructions on how to configure the application to begin using it.
 
-1. Run installation process described [here](../installation.md).
+1. Run installation process.
 
 2. Entering the following web address in a browser `https://localhost:54001` - 54001 is a default port set for connection; it can be changed in the [Settings section]
 
@@ -122,7 +122,7 @@ You can check the CompuTec License Server Address in SAP Business One with Proce
 
 10. Finally, assign an AppEngine instance to the configured environment. This step integrates the application engine with the SAP landscape, enabling the necessary application services and functionalities.
 
-Once the configuration is completed, you can log in to the [Launchpad](../.././appengine-users-guide/launchpad.md)
+Once the configuration is completed, you can log in to the [Launchpad](../../appengine-users-guide/launchpad.md).
 
 ### Advanced Configuration
 

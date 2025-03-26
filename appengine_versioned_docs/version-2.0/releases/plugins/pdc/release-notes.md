@@ -6,7 +6,7 @@ toc_max_heading_level: 2
 # Release Notes
 
 :::info
-    Installer is ready to download from [here](/docs/appengine/releases/plugins/pdc/download).
+    Installer is ready to download from [here](../../plugins/pdc/download.md).
 :::
 
 ## CompuTec PDC 3.10.25.1

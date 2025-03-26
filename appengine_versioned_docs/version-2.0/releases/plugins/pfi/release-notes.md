@@ -6,7 +6,7 @@ toc_max_heading_level: 2
 # Release Notes
 
 :::info
-The latest Installer is available to download from [here](/docs/appengine/releases/plugins/pfi/download).
+The latest Installer is available to download from [here](../../plugins/pfi/download.md).
 :::
 
 ## PFI 1.10.8
