@@ -6,7 +6,7 @@ toc_max_heading_level: 2
 # Release Notes
 
 :::info
-The latest Installer is available to download from [here](/docs/appengine/releases/plugins/bt360/download).
+The latest Installer is available to download from [here](../../plugins/bt360/download.md).
 :::
 
 ## BT360 2.10.8

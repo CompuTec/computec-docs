@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Installation
 
-1. Run the installation file (CompuTec ProcessForce AppEngine) from the [Download](../releases/plugins/processforce/download.md) section and click Install in the opened installation Wizard.
+1. Run the installation file (CompuTec ProcessForce AppEngine) from the [Download](../../version-2.0/releases/plugins/processforce/download.md) section and click Install in the opened installation Wizard.
 2. Click Close after getting Installation Successfully Completed.
 3. Now, the new service should be running:
 

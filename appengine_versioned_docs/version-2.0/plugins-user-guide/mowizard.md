@@ -7,7 +7,7 @@ The purpose of this plugin is to create Manufacturing Orders based on chosen Sal
 
 ## Installation
 
-Get the installation file from [here](/docs/appengine/releases/plugins/mowizard/download).
+Get the installation file from [here](../releases/plugins/mowizard/download.md).
 
 Follow the plugin installation instructions from [here](../administrators-guide/configuration-and-administration/overview.md#plugins).
 

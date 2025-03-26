@@ -35,7 +35,7 @@ We will extend the Sales Orders list example that we have used so far. We will a
     </Column>
     ```
 
-3. Add translation as described [here](translations-from-backend.md).
+3. Add translation as described [here](./translations-from-backend.md).
 
     ```xml
     <Message id="salesOrderAttachmentsColumnLabel" param="0">
@@ -50,7 +50,7 @@ We will extend the Sales Orders list example that we have used so far. We will a
     - First, we need to add information about attachments in our custom view that is used to list Sales Orders:
 
         ![Attachment](./media/attachments/attachments-03.webp)
-    - Modify this custom view to add NumberOfAttachments to it. More details about Custom Views can be found [here](creating-a-custom-view.md).
+    - Modify this custom view to add NumberOfAttachments to it. More details about Custom Views can be found [here](./creating-a-custom-view.md).
 
         SalesOrderList.customview.json
 
@@ -849,7 +849,7 @@ Finally, the application not only displays the list of Attachments for the given
 ![Attachments](./media/attachments/attachments-path-sap-configuration.webp)
 
 :::caution
-In this example we are only adding attachment to the backend. We are not linking this attachment to a Sales Order. This needs to be done in a custom controller. We are adding attachments from this example to Sales Orders in [Custom controller](custom-controller.md) tutorial.
+In this example we are only adding attachment to the backend. We are not linking this attachment to a Sales Order. This needs to be done in a custom controller. We are adding attachments from this example to Sales Orders in [Custom controller](./custom-controller.md) tutorial.
 :::
 
 #### Final Look of Application

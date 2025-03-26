@@ -14,7 +14,7 @@ For more information click [here](/docs/processforce/administrator-guide/licensi
 
 For AppEngine installation please follow this link: [Installation](../../administrators-guide/installation.md).
 
-For plug-in installation please follow this link: [Configuration and Administration](../../administrators-guide/configuration-and-administration/overview.md).
+For plug-in installation please follow this link: [Configuration and Administration](../../../version-2.0/administrators-guide/configuration-and-administration/overview.md).
 
 ## ProcessForce
 

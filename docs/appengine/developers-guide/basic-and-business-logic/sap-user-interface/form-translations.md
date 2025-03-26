@@ -8,7 +8,7 @@ Form translation is a critical step in ensuring applications are accessible and 
 
 ---
 
-Form translations are usually stored in `FormTranslations.xml`. Using the [ct tool](../development-tools/ct-tool.md), you can:
+Form translations are usually stored in `FormTranslations.xml`. Using the [ct tool](../../basic-and-business-logic/development-tools/ct-tool.md), you can:
 
 - Create or update translation files based on the form XML definitions.
 - Generate translated forms, which is typically part of the build process.
@@ -41,7 +41,7 @@ It is recommended to include this step in the SAP UI project to automatically tr
 ```
 
 :::tip
-When working with forms, add `FORMCachingDisabled` in the [connectionProperties](connection-properties.md) configuration. This ensures that files in `computec.start` are not cached, allowing the default form from the output directory to load in the UI every time.
+When working with forms, add `FORMCachingDisabled` in the [connectionProperties](./connection-properties.md) configuration. This ensures that files in `computec.start` are not cached, allowing the default form from the output directory to load in the UI every time.
 :::
 
 ---

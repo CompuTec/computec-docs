@@ -10,7 +10,7 @@ ProcessForce allows starting AppEngine Plugin directly inside SAP. This is done 
 
 ## ProcessForce AppEngine Connection Configuration
 
-To make it work, ProcessForce needs to connect to AppEngine. Connection configuration is described in the following article: [SAP Business One settings](../../administrators-guide/configuration-and-administration/overview.md#sap-business-one-settings).
+To make it work, ProcessForce needs to connect to AppEngine. Connection configuration is described in the following article: [SAP Business One settings](../../../version-2.0/administrators-guide/configuration-and-administration/overview.md#sap-business-one-settings).
 
 ## Plugin Configuration
 

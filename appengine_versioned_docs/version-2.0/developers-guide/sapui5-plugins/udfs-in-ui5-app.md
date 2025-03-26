@@ -10,7 +10,7 @@ Example User [Defined Object (UDO) in AppEngine Plugin Project](./udo-in-appengi
 
 ## Description
 
-After generating controllers, models, and serializers in [User Defined Object (UDO)](./udo-in-appengine-plugin.md) in AppEngine Plugin Project we will now adjust the ToDo view and controller on the frontend.
+After generating controllers, models, and serializers in User Defined Object (UDO) in AppEngine Plugin Project we will now adjust the ToDo view and controller on the frontend.
 
 ### Fixing Binding in ToDo.view.xml
 

@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Implementing User-Defined Objects
 
-This guide provides a comprehensive overview of implementing User-Defined Objects (UDOs) in SAP. It covers essential aspects such as database structure preparation, UDO types, class definitions, field management, collections, events, validations, formulas, and attributes. By following this structured approach, developers can efficiently create and manage custom objects tailored to business requirements. To begin implementing user-defined objects (UDOs), first prepare the [Database Structure](database-structure-setup.md).
+This guide provides a comprehensive overview of implementing User-Defined Objects (UDOs) in SAP. It covers essential aspects such as database structure preparation, UDO types, class definitions, field management, collections, events, validations, formulas, and attributes. By following this structured approach, developers can efficiently create and manage custom objects tailored to business requirements. To begin implementing user-defined objects (UDOs), first prepare the [Database Structure](./database-structure-setup.md).
 
 ## Class Inheritance Table
 

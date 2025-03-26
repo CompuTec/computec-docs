@@ -44,7 +44,7 @@ The best practice is to set up the generator task in the project file so that re
         - `m`: Models
 - **-n**: AE plugin root namespace.
 
-For more information, see more about [dotnet ct](../development-tools/ct-tool.md).
+For more information, see more about [dotnet ct](../../basic-and-business-logic/development-tools/ct-tool.md).
 
 ## UDO Bean Required Attributes
 

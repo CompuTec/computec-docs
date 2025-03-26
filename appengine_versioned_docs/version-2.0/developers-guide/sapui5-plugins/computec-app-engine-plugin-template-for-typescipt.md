@@ -55,6 +55,6 @@ dotnet new ctaeplugints --RoutePrefix testPlugin --PluginId CompuTec.AppEngine.P
 
     ![Output](./media/computec-app-engine-plugin-template-for-typescipt/output-path.webp)
 
-2. After the build, you can activate plugin in AppEngine Administration Panel. More information about this process can be found [here](../../administrators-guide/configuration-and-administration/overview.md). After that, you will be able to open plugin from the AppEngine launchpad.
+2. After the build, you can activate plugin in AppEngine Administration Panel. More information about this process can be found [here](../../../version-2.0/administrators-guide/configuration-and-administration/overview.md). After that, you will be able to open plugin from the AppEngine launchpad.
 
     ![First List](./media/computec-app-engine-plugin-template-for-typescipt/first-list-of-todos.webp)

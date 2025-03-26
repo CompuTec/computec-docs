@@ -6,7 +6,7 @@ sidebar_position: 16
 
 ## Description
 
-Preparing deployment package is straight forward. Release build content should be packed into zip. This zip can be later used to install plugin as described here: [Configuration and Administration](../../administrators-guide/configuration-and-administration/overview.md#plugins)
+Preparing deployment package is straight forward. Release build content should be packed into zip. This zip can be later used to install plugin as described here: [Configuration and Administration](../../../version-2.0/administrators-guide/configuration-and-administration/overview.md#plugins)
 
 ## Creating Deployment Package
 
