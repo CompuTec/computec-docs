@@ -8,7 +8,7 @@ The Early Access Program is designed for partners who wish to contribute to pre-
 Before enabling the Early Access configuration, ensure the following:
 
 - Download and install the latest [AppEngine](https://learn.computec.one/docs/appengine/releases/appengine/download).
-- Follow the installation steps provided in the [AppEngine Installation Guide](https://learn.computec.one/docs/appengine/administrators-guide/installation).
+- Follow the installation steps provided in the [AppEngine Installation Guide](https://learn.computec.one/docs/appengine/2.0/administrators-guide/installation).
 - The installation steps for the WMS server can be found [here](https://learn.computec.one/docs/wms/administrator-guide/installation/overview).
 
 ### How to Enable Early Access Plugins in AppEngine Store
