@@ -4,15 +4,13 @@ sidebar_position: 2
 
 # Scenario 1: Goods Receipt PO Printed from SAP Business One
 
-In this step-by-step manual, we will manually configure the application to print Goods Receipt Purchase Order from SAP Business One. Additionally, we want to save the prints to PDF.
+Printing a Goods Receipt Purchase Order (GRPO) in SAP Business One requires proper configuration of printer settings, templates, and mapping parameters. In this guide, we will walk through the step-by-step process to configure the system for printing GRPOs, ensuring that they are also saved as PDF files.
 
 ---
 
 ## Printer Settings
 
-Only the Crystal printer type allows to save to PDF. Therefore, we will use this option in this scenario.
-
-We will use the following printer configuration:
+SAP Business One allows saving prints as PDFs only when using the Crystal printer type. In this scenario, we will configure the following printer settings:
 
 - Printer Code: test1
 - Printer Type: Crystal
@@ -29,9 +27,7 @@ Click [here](../../setup/configuration/general-configuration.md#printers) to fin
 
 ## Label Template
 
-We have to create a Label Template to which settings will be assigned and which itself will be assigned to a specific printer.
-
-A Label Template used in this scenario:
+To print GRPO labels, we need to define and assign a Label Template. The template used in this scenario is as follows:
 
 | TEMPLATE CODE | TEMPLATE NAME | TEMPLATE DESCRIPTION |
 |:-------------:|:-------------:|:--------------------:|
@@ -40,6 +36,8 @@ A Label Template used in this scenario:
 Click [here](../../setup/configuration/general-configuration.md#printers) to find out more about printer configuration.
 
 ## Printing Rules
+
+The following rules apply to GRPO printing:
 
 - Requester: SAP
 - Transaction: Goods Receipt PO
@@ -52,15 +50,15 @@ Click [here](../../setup/configuration/general-configuration.md#printers) to fin
 
 ### Crystal Report
 
-Crystal report used in this scenario:
+The Crystal Report file used in this scenario is as follows:
 
 ![Crystal Report](./media/scenario1-goods-receipt-po/crystal-report.webp)
 
-In Crystal Reports, different variables are used, e.g., StringPar, and NumericPar. It is possible to attach to each of its specific data in the next step: mapping.
+Crystal Reports use different variables, such as StringPar and NumericPar, which need to be mapped in the next step.
 
 #### CompuTec Labels Localization
 
-Crystal reports used by CompuTec Labels have to be located in the following locations:
+Crystal reports for CompuTec Labels must be stored in the following location:
 
 `C:\ProgramData\CompuTec\CT Label Printing\Reports\`
 
@@ -68,9 +66,7 @@ Crystal reports used by CompuTec Labels have to be located in the following loca
 
 ## Mapping
 
-Next, we must define mapping parameters: what data is assigned to a specific variable from a label layout.
-
-Mapping rules used in this scenario:
+Next, we must define mapping parameters: Mapping rules define how data is assigned to specific variables within the label layout. The mappings for this scenario are:
 
 |    Name    |    Type   |             Value             |
 |:----------:|:---------:|:-----------------------------:|
@@ -79,7 +75,7 @@ Mapping rules used in this scenario:
 | StringPar4 | Sql       | SELECT @DistNumber FROM DUMMY |
 | NumberofCopies | Sql | SELECT 5 FROM DUMMY |
 
-In addition to String Pars, we have added NumberofCopies to always print 5 copies statically. If we need to make this value dynamic based on user input, we can use a field in the database.
+In addition to String Pars, The NumberofCopies parameter ensures that five copies are printed. If required, this value can be made dynamic by retrieving it from a database field.
 
 Click [here](../../setup/configuration/company-installation-and-configuration.md#mapping-parameters-view) to find out more about mapping parameters configuration.
 
@@ -97,13 +93,13 @@ Click [here](../../setup/configuration/company-installation-and-configuration.md
 
 ## Data Update
 
-After setting up all the settings, go to Companies and choose Update Global Data option:
+After configuring the settings, update the global data by navigating to Companies and selecting the Update Global Data option.
 
 ![Global Settings](./media/scenario1-goods-receipt-po/ct-labels-update-global-settings.webp)
 
 ## Template Assigning
 
-Next, we have to assign the template, [GRPO](#label-template), in this case, to a specific printer and choose the following:
+To complete the setup, assign the [GRPO](#label-template) to a specific printer with the following configuration:
 
 | INFO |    NAME   | TEMPLATE CODE | PRINTER CODE |                                               FILE                                              |
 |:----:|:---------:|:-------------:|:------------:|:-----------------------------------------------------------------------------------------------:|
@@ -113,16 +109,23 @@ Click [here](../../setup/configuration/general-configuration.md#label-reports) t
 
 ## Printing
 
-We defined the printing trigger as OnChange, which means that, in our case, a printing occurs on an updating a Goods Receipt PO document.
+Since we configured the OnChange trigger, labels will print automatically when a Goods Receipt Purchase Order (GRPO) is updated.
 
-We can also print a label manually at any time. To do this in SAP Business One, go to the upper menu > File > Print Labels. Choose Crystal printer from a drop-down list and click Print.
+We can also print a label manually at any time. To print labels manually:
 
-![Print Labels](./media/scenario1-goods-receipt-po/print-labels.webp)
+1. Open SAP Business One.
+2. Navigate to File > Print Labels in the upper menu.
+3. Select Crystal printer from the drop-down list.
+4. Click Print.
 
-A system message will appear:
+    ![Print Labels](./media/scenario1-goods-receipt-po/print-labels.webp)
+
+Upon printing, the following message appears:
 
 ![System Message](./media/scenario1-goods-receipt-po/system-message.webp)
 
-A label is printed and saved as a PDF file in the default location: `Local Disk (C:)\ProgramData\CompuTec\CT Label Printing\Reports\Crystal`:
+The label is printed and saved as a PDF in the default location: `Local Disk (C:)\ProgramData\CompuTec\CT Label Printing\Reports\Crystal`:
 
 ![Printed Label](./media/scenario1-goods-receipt-po/printed-label.webp)
+
+---

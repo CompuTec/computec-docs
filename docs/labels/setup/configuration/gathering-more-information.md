@@ -4,27 +4,29 @@ sidebar_position: 4
 
 # Gathering more Information from Database to Label
 
-There are two ways to get more information into the label from the database: using attributes and using query parameters. You have the choice to use either method independently or combine them.
+There are two primary ways to retrieve additional information from the database for labeling purposes: using attributes and query parameters. You can implement either method independently or combine them for greater flexibility.
 
 ---
 
 ## Using Attributes
 
-Attributes are the additional columns that are gathered by the application when sending the print request from the device (ProcessForce, CompuTec WMS, SAP Business One, etc.). These pieces of information are calculated before the print request is sent to the Label Manager.
+Attributes refer to additional columns collected by the application when initiating a print request from systems such as ProcessForce, CompuTec WMS, or SAP Business One. These attributes are determined before the print request is sent to the Label Manager.
 
-Each document type that is configured in Label Manager has embedded two queries that are responsible for preparing printing requests. Each row in the result of that query is then sent to CT Label for additional service. The user can change those queries to manipulate label data and numbers. To find those queries, please go to:
+Each document type configured in Label Manager has two embedded queries responsible for preparing printing requests. The queries’ results dictate the data sent to CT Label for processing. You can modify these queries to include additional information.
 
-![Edit Settings](./media/gathering-more-information/edit-settings.webp)
+To access and modify these queries:
 
-Select the document you want to expand with new information and press the edit Queries option:
+1. Navigate to the Edit Settings section.
 
-![Edit Queries](./media/gathering-more-information/edit-queries.webp)
+    ![Edit Settings](./media/gathering-more-information/edit-settings.webp)
+2. Select the desired document type and click on Edit Queries.
 
-You can see two tabs on the screen that contains add and update query.
+    ![Edit Queries](./media/gathering-more-information/edit-queries.webp)
 
-Add query is executed when the document is added to the system.
+You will find two query types:
 
-An update query is executed when the document is updated in the system.
+- **Add Query**: executes when a document is initially added to the system.
+- **Update Query**: executes when a document is updated in the system.
 
 :::warning
     We recommend adding this new column in both queries.
@@ -53,7 +55,10 @@ An update query is executed when the document is updated in the system.
             where t0."DocEntry"=@list_of_cols_val_tab_del
     ```
 
-The above query is a concatenation of two queries. The first one is responsible for sending the information to the CompuTec Labels about the header and the second for rows.
+This query is divided into two parts:
+
+1. The first part sends header-level information to CompuTec Labels.
+2. The second part processes individual batch and serial number details.
 
 In the example below, the system creates a label request for the header object and each Batch and Serial number separately. By changing these queries, you can manipulate the number of requests sent to the Printer.
 
@@ -96,13 +101,13 @@ You can see all calculated Attributes of specific requests just by selecting Det
 
 ## Using Query Parameters
 
-Query parameters are executed by the label manager when preparing a set of information to be transferred to the printer driver.
+Query parameters allow the Label Manager to dynamically gather data when preparing label information for the printer driver.
 
 The Query parameters are specified in the Mappings table settings.
 
 ![Mapping](./media/gathering-more-information/mapping-table.webp)
 
-Please select a template for which you want to map the query to the output parameter.
+Select a template for which you want to map the query to the output parameter.
 
 ![Strings](./media/gathering-more-information/strings.webp)
 
@@ -110,9 +115,8 @@ Please select a template for which you want to map the query to the output param
 
 In the Type column, you have two options to choose from:
 
-**Parameter** – hardcoded values
-
-**SQL** – custom queries.
+- **Parameter**: hardcoded values
+- **SQL**: custom queries
 
 In the Value column for SQL type, you must enter the query that is executed to obtain the value, then pass it to the print parameter.
 
@@ -131,3 +135,5 @@ The list of the input parameters is a column in the template query from point no
 The calculated values for custom queries are in the request details.
 
 ![Name](./media/gathering-more-information/name.webp)
+
+---

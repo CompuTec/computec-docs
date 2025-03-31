@@ -40,4 +40,3 @@ You need to install the following applications:
         ![Installation](./media/installation.png)
 
 ---
-By following these steps, you can successfully set up CompuTec Gateway Manager, ensuring seamless integration with CompuTec AppEngine. Be sure to verify all prerequisites before installation to avoid any configuration issues.
