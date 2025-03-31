@@ -12,7 +12,7 @@ This section provides an overview of additional utilities that enhance the appli
 
 ![Log](./media/other-functions/ct-labels-logs.webp)
 
-The Logs Tab provides a log viewer for tracking system events. Users can select a specific date and logging source (service, installation, or manager) to review relevant logs. On the right side, there are quick options for exporting logs to a file for further analysis.
+The Logs Tab provides a log viewer for tracking system events. Users can select a specific date and logging source (service, installaxtion, or manager) to review relevant logs. On the right side, there are quick options for exporting logs to a file for further analysis.
 
 ## Requests Tab
 
@@ -22,8 +22,8 @@ The Requests Tab displays database requests from `CT_LP_Requests`. Users can fil
 
 Right-clicking on a request provides additional options:
 
-- **Resend Request** – Creates a new request.
-- **Retry Request** – Attempts to rerun the exact request, changing its status to "C."
+- **Resend Request**: creates a new request.
+- **Retry Request**: attempts to re-run the exact request, changing its status to "C."
 
     ![Retry](./media/other-functions/ct-labels-retry.webp)
 
@@ -70,10 +70,9 @@ You can see the below examples for configuration:
 
 **Important Notes**
 
-- When using dynamic file names, you must explicitly include the .pdf extension. Example: `@RequestId_@CCNo.pdf` is valid, but @RequestId_@CCNo is not.
+- When using dynamic file names, you must explicitly include the .pdf extension. Example: `@RequestId_@CCNo.pdf` is valid, but `@RequestId_@CCNo` is not.
 - If a file name conflict occurs (duplicate names), the system will automatically append a suffix in the format: "_@CCNo" (e.g., 450_1.pdf).
 - The default save path is: C:\ProgramData\CompuTec\CT Label Printing\Reports\Crystal
 - This feature is available in CT Labels version 4.7.1.37 or newer.
 
 ---
-These features collectively contribute to a more seamless and efficient document-handling process within the application.

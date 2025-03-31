@@ -48,11 +48,10 @@ These applications communicate with **CompuTec Gateway Manager** through the Com
 
 For label printing to function effectively, both the CompuTec Labels Printing Manager and CompuTec Gateway Manager need to be properly configured. The communication process follows these steps:
 
-1. **Label Request Initiation**: A label request is triggered by one of the following applications: SAP B1, CompuTec WMS, or CompuTec PDC.
-2. **Processing by CompuTec Labels Service/Manager**: The CompuTec Label Service/Manager receives the request and identifies the printer assigned for the task. If the printer is configured as a gateway printer, the service proceeds to forward the request to the CompuTec Gateway Manager.
-3. **Forwarding to Gateway via AppEngine**: The CompuTec Label Service forwards the request details to the gateway machine via the AppEngine address and port, using the CompuTec Gateway Plugin to ensure a secure and reliable connection.
-4. **Processing by CompuTec Gateway Service**: Upon receiving the request, the CompuTec Gateway Service processes the print job and adds it to the printer queue.
-5. **Label Printing**: The print job is sent to the physical printer, where the label is printed according to the specifications outlined in the request.
+1. **Label Request Initiation**: a label request is triggered by one of the following applications: SAP B1, CompuTec WMS, or CompuTec PDC.
+2. **Processing by CompuTec Labels Service/Manager**: the CompuTec Label Service/Manager receives the request and identifies the printer assigned for the task. If the printer is configured as a gateway printer, the service proceeds to forward the request to the CompuTec Gateway Manager.
+3. **Forwarding to Gateway via AppEngine**: the CompuTec Label Service forwards the request details to the gateway machine via the AppEngine address and port, using the CompuTec Gateway Plugin to ensure a secure and reliable connection.
+4. **Processing by CompuTec Gateway Service**: upon receiving the request, the CompuTec Gateway Service processes the print job and adds it to the printer queue.
+5. **Label Printing**: the print job is sent to the physical printer, where the label is printed according to the specifications outlined in the request.
 
 ---
-By integrating with CompuTec Gateway Manager, businesses can ensure smooth, efficient, and reliable communication between critical applications and peripheral devices, optimizing workflow operations and minimizing disruptions.

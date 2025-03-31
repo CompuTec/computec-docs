@@ -4,57 +4,76 @@ sidebar_position: 4
 
 # Licensing
 
-Here, you can find a description of a licensing process required for the legal working of CompuTec Labels.
+This document provides a step-by-step guide on the licensing process required for the legal operation of CompuTec Labels.
 
 ---
 
 ## CompuTec Service Manager
 
-CompuTec License Server is required in version 5.5 or above to work with CompuTec Labels. You can download it from [here](/docs/processforce/releases/download#computec-license-service).
+To use CompuTec Labels, you must have CompuTec License Server version 5.5 or above. You can download it from [here](/docs/processforce/releases/download#computec-license-service).
 
-Run the installation file. When the installation is complete, run CompuTec Service Manager and choose CompuTec Label Service from a drop-down list:
+## Installation and Setup
 
 :::note
     CompuTec Service Manager is a tool available within CompuTec License Server.
 :::
 
-![Service](./media/licensing/computec-label-service.webp)
+1. Run the installation file.
+2. Once the installation is complete, launch CompuTec Service Manager.
+3. From the drop-down list, select CompuTec Label Service:
+4. Click Settings to open the configuration form:
 
-Choose Settings. The following form will be displayed:
+    ![Service](./media/licensing/computec-label-service.webp)
 
-![Settings](./media/licensing/computec-label-settings.webp)
+5. Choose Settings. The following form will be displayed:
+
+    ![Settings](./media/licensing/computec-label-settings.webp)
+
+## Obtaining a License File
 
 To obtain a license file, please send the following information to CompuTec Support:
 
-1. CompuTec Labels Key – a number from CTLabel Keys from a screenshot above.
+1. **CompuTec Labels Key**: number from CTLabel Keys from a screenshot above.
 
     :::note
         To make the support procedure easier, please copy the from the field (do not send a screenshot)
     :::
-2. Number of required printer licenses (for partner's demo/test purposes: 1 printer license; for client's production system: a number of licenses bought for a client).
+2. **Required Printer Licenses**: Specify the number of printer licenses:
 
-The license file obtained from CompuTec support is a .xml file.
+    - For partner demo/test purposes: 1 printer license
+    - For a client’s production system: The number of purchased licenses
+
+CompuTec Support will provide a license file in .xml format.
 
 ## License Assignment
 
 ### Main License Assignment
 
-License file assignment is done through Settings in CompuTec Service Manager.
+To assign the main license file:
 
-On CT Labels Settings form, click Change and browse to the license file path (the license file obtained from CompuTec Support):
+1. Open Settings in CompuTec Service Manager.
+2. In the CT Labels Settings form, click Change and browse to the license file obtained from CompuTec Support:
 
-![Change License](./media/licensing/change-license.webp)
+    ![Change License](./media/licensing/change-license.webp)
 
-After license import, CompuTec License Server and CompuTec Label Service restart is required – you can do that with the button highlighted on the screenshot below:
+3. After importing the license, restart both CompuTec License Server and CompuTec Label Service by clicking the highlighted button:
 
-![Restart](./media/licensing/computec-label-service-restart.webp)
+    ![Restart](./media/licensing/computec-label-service-restart.webp)
 
 ### Printer License Assignment
 
-Go to CompuTec Label Printing Manager > Printers. You get a message indicating whether we have a connection with the license server or not.
+To assign printer licenses:
 
-![Labels license](./media/licensing/labels-license.webp)
+1. Navigate to CompuTec Label Printing Manager > Printers.
+2. A message will indicate whether the system is connected to the license server.
 
-If the license is accurate, at the top, you'll find the remaining number of printer license assignments available. For instance, in the screenshot within the primary license assignment section, there are two printer licenses, both already assigned to printers. To allocate a license to a printer, simply right-click on it, select "Assign a license," and then click "Update."
+    ![Labels license](./media/licensing/labels-license.webp)
+3. If the license is valid, you will see the number of available printer license assignments. For example, in the screenshot above, two printer licenses are fully assigned.
+4. To allocate a license to a printer:
+    - simply right-click on it
+    - select "Assign a license"
+    - click "Update"
 
-![Assign License](./media/licensing/assign-license.webp)
+    ![Assign License](./media/licensing/assign-license.webp)
+
+---

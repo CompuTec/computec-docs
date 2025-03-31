@@ -4,49 +4,57 @@ sidebar_position: 1
 
 # General Configuration
 
-All the configuration is done via the manager application shipped with the installation. After launching the application, you can navigate through the menu on the left.
+All configuration settings are managed via the Manager application included with the installation. After launching the application, navigate through the menu on the left to access different settings.
 
 ---
 
-Steps required to configure the service (order is not essential):
+The following steps outline how to configure the service. The order of execution is not essential:
 
 ![General](./media/general-configuration/ct-labels-general.webp)
 
 ## Service Status
 
-- **Status** – it indicates the service status (On/Off). You can change the status by using the icon next to it. It is recommended to restart the service using the icon whenever changes such as adding a printer or modifying rules are made. You can check how to set it up here:
+- **Status**: displays whether the service is On or Off. Use the adjacent icon to toggle the status. Restarting the service is recommended after making changes such as adding a printer or modifying rules.
 
 <details>
 <summary>Click here to find out more</summary>
 <div>
 1. Open: Control Panel > System and Security > Windows Firewall:
+
   ![Windows Firewall](./media/general-configuration/windows-firewall.png)
 2. Click the Advanced settings:
+
   ![Advanced Settings](./media/general-configuration/advanced-settings.png)
 3. Select Inbound Rules and choose New Rule... in the Actions window - this runs New Inbound Rule Wizard:
+
   ![Inbound Rules](./media/general-configuration/inbound-rules.png)
 4. Choose Port as the rule type:
+
   ![Port](./media/general-configuration/port.png)
 5. Choose TCP protocol and specify 33006 local port:
+
   ![Protocol and Ports](./media/general-configuration/protocol-and-ports.png)
 6. Choose Allow the connection action:
+
   ![Allow the connection](./media/general-configuration/allow-the-connection.png)
 7. Choose all profiles:
+
   ![Profiles](./media/general-configuration/profiles.png)
 8. Specify the rule name and click "Finish.":
+
   ![Computec License Server](./media/general-configuration/computec-license-server.png)
 </div>
 </details>
 
-Addresses fields should be filled up automatically after a successful installation. In case of installation on a local server, please change the Web Address and Ct License Server to localhost (keep the ports, like in the screenshot above).
+Addresses should auto-populate after a successful installation. If installed on a local server, update the Web Address and CT License Server to localhost, keeping the ports unchanged (like in the screenshot above).
 
 General settings you need to define:
 
-- **s** – Computec Label web service address (defines the connection between CompuTec Labels and SAP Business One) – default port value is 33006. **Make sure that the port is open**.
-- **Server Address** – SAP Server Address – (with a port on HANA).
-- **License Server Address** – SAP License Server – (with a port on HANA).
-- **CT License Server Address** – CompuTec License Server connection address – (with a port on HANA).
-- **Refresh** – refresh rate in seconds indicating how often the service scans for new printing requests.
+- **Computec Label Web Service Address**: Computec Label web service address (defines the connection between CompuTec Labels and SAP Business One) – default port value is 33006. **Make sure that the port is open**.
+- **Server Address**:  The SAP Server Address (including the port for HANA).
+- **License Server Address**: SAP License Server address (including port for HANA).
+- **CT License Server Address**: CompuTec License Server address (including port for HANA).
+- **Refresh**: refresh rate in seconds indicating how often the service scans for new printing requests.
 
 ## Printer Types
 
@@ -71,13 +79,12 @@ Define the Printer Type Code, Printer Type Name, and a path to the printer drive
 
 ![Printers](./media/general-configuration/printers.webp)
 
-Click a row of a specific printer to edit its details or remove it from the list.
+- Click a row to edit or remove an existing printer.
+- Click Add New Printer to define the details of the new printer:
 
-Clicking Add New Printer leads to the form in which you can define the details of the new printer:
-
-- Printer Code, Printer Name – printer identification,
-- Printer Type can only be chosen from the predefined drop-down list,
-- Localization – information field not connected to the application logic, e.g., Warehouse Click the '+' icon to add the printer to the list from the previous form.
+  - Printer Code, Printer Name – printer identification,
+  - Printer Type can only be chosen from the predefined drop-down list,
+  - Localization – information field not connected to the application logic, e.g., Warehouse Click the '+' icon to add the printer to the list from the previous form.
 
 Please note that every field must be filled up to save the settings.
 
@@ -95,19 +102,19 @@ You can set properties accordingly by clicking on a property (the left box) and 
 
 Crystal printers have the following options:
 
-- SaveAsPdf – when this parameter is set to True, every print will also be saved as a PDF file (the option can be active simultaneously with the printing option)
-- Physical Name – all printers available on the server
+- **SaveAsPdf**: when this parameter is set to True, every print will also be saved as a PDF file (the option can be active simultaneously with the printing option)
+- **Physical Name**: all printers available on the server
 
   ![Printers](./media/general-configuration/windows-printers.webp)
 
 Zebra printers have the following options:
 
-- Physical Name – all printers available on the server
-- CodePage – code page declaration
+- **Physical Name**: all printers available on the server
+- **CodePage**: code page declaration
 
 Bixolon printers have the following options:
 
-- Physical Name – all printers available on the server.
+- **Physical Name**: all printers available on the server.
 
 The '+' button saves printer properties. In this view, we are also able to launch a test print. You can do this by clicking the icon highlighted in the screenshot below:
 
@@ -153,12 +160,21 @@ Now, the report file is assigned to a template and a corresponding printer.
 
 ## Companies
 
-Click on the Company tab and then the Refresh button. Once completed, add all company rows to our database by clicking the Update button.
+To configure companies:
 
-![Companies](./media/general-configuration/companies-refresh.webp)
+1. Click the Company tab.
+2. Click Refresh to load company data.
+3. Click Update to save the entries.
 
-To process a company with our program, you must activate it. Click on the desired company, press Activate, and then click the Update button below the table.
+  ![Companies](./media/general-configuration/companies-refresh.webp)
+
+To process a company with our program:
+
+1. Click on the desired company and press Activate
+2. Click the Update button below the table.
 
 Click [here](company-installation-and-configuration.md) to find out more about company installation and configuration.
 
 ![Active](./media/general-configuration/activate-company.webp)
+
+---

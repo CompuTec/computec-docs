@@ -27,4 +27,3 @@ The CompuTec Gateway Manager can be downloaded from the following page. [Click h
 ![Physical Printer](./media/physical-printer.png)
 
 ---
-By following these steps, you can successfully configure the CompuTec Gateway Manager and CompuTec Label Printing Manager to ensure seamless integration and functionality. If you encounter any issues, reach out to support for assistance.

@@ -4,10 +4,12 @@ sidebar_position: 1
 
 # Overview
 
-In this section, you can find information on how to use CompuTec Labels.
+This section provides guidance on using CompuTec Labels effectively.
 
-Be sure to [set up](../setup/overview.md) the application before starting work with it based on the instructions in this section.
+Before getting started, ensure the application is properly [set up](../setup/overview.md) by following the provided instructions.
 
-In this section, specific printing scenarios, based on particular examples, are presented.
+Here, you will find specific printing scenarios illustrated with particular examples.
 
-A video with a few scenarios performed, and a description of each step is available [here](https://www.youtube.com/watch?v=S5urmvsi-M0).
+Additionally, you can watch a demonstration [video](https://www.youtube.com/watch?v=S5urmvsi-M0) covering various scenarios, along with step-by-step descriptions, here.
+
+---
