@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Requirements
 
+CompuTec AppEngine is a powerful tool designed to enhance SAP Business One functionality. To ensure a smooth installation and optimal performance, it's essential to meet specific system requirements and complete necessary pre-installation steps.
+
 :::warning
 AppEngine 2.0 does not support Identity Provider (IdP) setup.
 :::
@@ -18,12 +20,13 @@ AppEngine 2.0 does not support Identity Provider (IdP) setup.
     ```reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\full" /v version```
     ![Prompt](./media/requirements/prompt.png)
 
-    And click enter
+        And click enter
 
     2. The result will show the .NET Framework version
-    ![Result](./media/requirements/result.png)
 
-    We recommend that you install the latest version of .NET Framework – you can do it using the dedicated tool Windows Update or manually downloading the required files from the Microsoft site.
+        ![Result](./media/requirements/result.png)
+
+    We recommend installing the latest version of the .NET Framework. You can do this using Windows Update or by manually downloading the necessary files from the Microsoft website.
 
     | Microsoft .NET Framework 4.7 (Web Installer) | [Link](https://support.microsoft.com/en-au/topic/the-net-framework-4-7-web-installer-for-windows-54cca588-519d-5e78-ea54-2ce5bd84a2ab) |
     | --- | --- |
@@ -36,17 +39,21 @@ AppEngine 2.0 does not support Identity Provider (IdP) setup.
     CompuTec AppEngine does not require a SAP Business One application client.
 :::
 
-## Steps Required to Perform before CompuTec AppEngine Installation
+## Pre-Installation Steps for CompuTec AppEngine
+
+Before installing CompuTec AppEngine, ensure the following components are installed:
 
 1. Install SAP Business One DI API 64-bit on the client machine.
-2. Install CompuTec ProcessForce API 64-bit, which selected plugins may require. You can find it [here](/docs/processforce/releases/download#computec-processforce-api).
+2. Install CompuTec ProcessForce API 64-bit (required for certain plugins). Download it [here](/docs/processforce/releases/download#computec-processforce-api).
 3. Microsoft ODBC Driver 17 for SQL Server (installed with SAP Business One Client).
 4. Microsoft SQL Server Native Client 11.0 (installed with SAP Business One Client).
 
-## Working with SAP B1 on the HANA Database
+## Working with SAP Business One on the HANA Database
 
-It is required to run hdbsetup.exe installation for proper work of CompuTec AppEngine (without this, databases are not available from the application Settings level).
+For SAP Business One installations using HANA, you must install hdbsetup.exe to enable database access within CompuTec AppEngine (without this, databases are not available from the application Settings level).
 
 The file is available in the b1_shf\SAP_HANA_CLIENT_x64 folder on a machine where SAP Business One is installed:
 
 ![Setup](./media/requirements/hdbsetup.webp)
+
+---
