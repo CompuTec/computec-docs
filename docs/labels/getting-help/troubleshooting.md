@@ -8,7 +8,7 @@ This section outlines identified issues, potential root causes, and recommended 
 
 Please visit [Log Files page](log-files.md) when you need to review logs of your issue.
 
-## Printer wasn't Found
+## 1 - Printer wasn't Found
 
 **Symptom**
 
