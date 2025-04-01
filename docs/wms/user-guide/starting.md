@@ -19,11 +19,13 @@ CompuTec WMS Client offers various startup options, including server configurati
 
 ### Configuration of WMS client-server Connection
 
-The server address has to be the same as the address where the CompuTec WMS Server is installed.
-The port number has to be the same as defined in the server settings (you can check it here).
-Check the Scale checkbox if CompuTec WMS is planned to be used with a scale.
+ ![WMS Client Server Connection](./media/starting/wms-client-server.png)
 
-    ![WMS Client Server Connection](./media/starting/wms-client-server.png)
+To ensure seamless communication between the CompuTec WMS Client and Server, follow the steps below:
+
+1. **Server Address & Port**: Ensure that the server address matches the location where the CompuTec WMS Server is installed. The port number must align with the one specified in the server settings. You can verify this in the server configuration.
+2. **Printer Setup**: Define the printer that will handle CompuTec Labels whenever WMS sends a new request. The printer's IP address can be configured in Custom Configuration under the Common tab. For more details, click [here](../administrator-guide/custom-configuration/custom-configuration-functions/common.md).
+3. **Scale Integration**: If the CompuTec WMS is intended for use with a scale, enable the Scale checkbox to activate this functionality.
 
 ### Info icon
 
@@ -86,3 +88,5 @@ Note that opening the Settings form and clicking Save (even without changing any
 
 5. The main menu window appears.
 The desktop version of CompuTec WMS Client is ready to work with.
+
+---
