@@ -4,6 +4,10 @@ sidebar_position: 2
 
 # Installation
 
+This guide will walk you through the installation process for CompuTec ProcessForce AppEngine, ensuring a smooth setup and proper configuration. Follow the steps below to get started.
+
+---
+
 1. Run the installation file (CompuTec ProcessForce AppEngine) from the [Download](../../version-2.0/releases/plugins/processforce/download.md) section and click Install in the opened installation Wizard.
 2. Click Close after getting Installation Successfully Completed.
 3. Now, the new service should be running:
@@ -20,7 +24,10 @@ sidebar_position: 2
     **Here is an example for Google Chrome or Microsoft Edge (Chromium)**
 
     Open Google Chrome or Microsoft Edge (Chromium) browser and click F12 to open Developers Tools (1.). Right-click on the refresh button (2.) and choose the Empty Cach and Hard Reload option (3.):
+    
     ![Empty Cache and Hard Reload](./media/installation/empty-cache-and-hard-reload.png)
     </div>
     </details>
 :::
+
+---
