@@ -7,84 +7,69 @@ toc_max_heading_level: 5
 # Overview
 
 :::caution
-    After upgrade from any 1.00 version to any 2.00, please use the Empty Cache and Hard Reload option in the browser on which you use AppEngine.
+    After upgrading from any 1.00 version to any 2.00 version, clear your browser cache using the Empty Cache and Hard Reload option to ensure optimal performance in AppEngine.
 :::
 <details>
-    <summary>Click here to find out more</summary>
-        <div>
-        **Here is an example for Google Chrome or Microsoft Edge (Chromium)** <br/>Open Google Chrome or Microsoft Edge (Chromium) browser and click F12 to open Developers Tools (1.). Right-click on the refresh button (2.) and choose the Empty Cach and Hard Reload option (3.):
-        ![Configuration and Administration](../media/overview/empty-cache-and-hard-reload.png)
-    </div>
+<summary>Click here to find out more</summary>
+<div>
+**Example on How to Clear Cache in Google Chrome or Microsoft Edge (Chromium)**
+
+1. Open Google Chrome or Microsoft Edge (Chromium) browser and click F12 to open Developers Tools,
+2. Right-click on the refresh button,
+3. Select Empty Cach and Hard Reload option:
+
+    ![Configuration and Administration](../media/overview/empty-cache-and-hard-reload.png)
+
+</div>
 </details>
-Here you can find the description of the Administration section of AppEngine along with instruction on how to configure the application to start to work with it.
+
+This section provides an overview of AppEngine’s Administration Panel and step-by-step instructions for configuring the application.
 
 ---
 
-Download the installer from [here](../../releases/appengine/download.md) and run it.
+1. Download the installer from [here](../../releases/appengine/download.md) and run it.
+2. Open a web browser and go to `localhost:54000` - 54000 is the default connection port; you can change it in the [Settings section](#settings).
+3. After logging in, click the Administration Panel button and log in using the default log in details:
 
-Go to any internet browser and go to `localhost:54000` - 54000 is a default port set for connection; it can be changed in the [Settings section](#settings).
+        - Administrator ID: CTSiteUser
+        - Password: 12qw!@QW
 
-After logging in, click the Administration Panel button and log in using the default log in details:
-
-Administrator ID: CTSiteUser
-
-Password: 12qw!@QW
-
-The default password can be changed in the [System section](#system)
+    The default password can be changed in the [System section](#system)
 
 ![AppEngine Main View](./media/configuration-and-administration/appengine-main-view.webp)
 
 ## SLD Servers
 
-Choose this option in the menu on the left to configure a connection to specific companies.
+To configure connections to specific companies, navigate to the SLD Servers section from the left-hand menu.
 
-**SLD Servers** - SAP Business One license server (the ones that have 40000 port)
+- **SLD Servers**: SAP Business One license servers (default port: 40000)
+- **Servers**: database servers
+- **Companies**: specific databases
 
-**Servers** - Database servers
+Click the plus (+) icon in the upper-right corner to add a new connection.
 
-**Companies** - specific databases
-
----
-
-Click the plus icon in the upper-right corner to add a new connection.
+**Required Fields**:
 
 ![SLD Server](./media/configuration-and-administration/adding-sld-server.webp)
 
-**SLD Address** – SLD server address. You can find it in SAP Business One, License Administration.
+- **SLD Address**: enter the SAP Business One SLD server address (found in SAP Business One under License Administration).
 
-<details>
-    <summary>Click here to find more</summary>
-    <div>
       ![License Administration](./media/configuration-and-administration/license-administration.webp)  
-    </div>
-</details>
+- **Description**: provide a descriptive name for the current configuration.
+- **Environment**: select either On-Premise or Cloud.
+- **Database Type**: choose your database type (HANA or a specific MS SQL version)
+- **CT License Server**: Enter the CompuTec License Server address (found in ProcessForce License Administration in SAP Business One).
 
-**Description** – any description of the current configuration
+    ![Administration](./media/configuration-and-administration/processforce-license-administration.webp)
+- **CT License Server Status**: displays the connection status to the CompuTec License Server.
+- **Active**: a switch to mark if the current settings are active and ready to use or not
+- **Discover**: enabling this checkbox adds two fields: **SAP Business One username and password**. After filling in the fields, the companies (on the given servers) to which the user has access will be displayed (the same option is available in the main form, upper-right corner, and can be used later to refresh the list).
 
-**Environment** – On-Premise or Cloud
-
-**Database Type** – choose your database type (HANA or a specific MS SQL version)
-
-**CT License Server** – CompuTec License Server address. You can check it in SAP Business One with ProcessForce installed, ProcesForce License administration form.
-
-<details>
-    <summary>Click here to find more</summary>
-    <div>
-![Administration](./media/configuration-and-administration/processforce-license-administration.webp)
-</div>
-</details>
-
-**CT License Server Status** – status of the connection to CompuTec License Server
-
-**Active** – a switch to mark if the current settings are active and ready to use or not
-
-**Discover** – checking this checkbox adds two fields: **SAP Business One username and password**. After filling in the fields, the companies (on the given servers) to which the user has access will be displayed (the same option is available in the main form, upper-right corner, and can be used later to refresh the list).
-
-Click the save button to save the settings. Click the added line in the SLD Servers section to display related servers. Click any server line in the Servers section to display related companies:
+Click "Save" to store the settings. Click the added line in the SLD Servers section to display related servers. Click any server line in the Servers section to display related companies:
 
 ![AppEngine Main View](./media/configuration-and-administration/appengine-main-view.webp)
 
-Once the configuration is finished, you can log in to the [Launchpad](../../appengine-users-guide/launchpad.md)
+Once the configuration is completed, log in to the [Launchpad](../../appengine-users-guide/launchpad.md)
 
 ## Background Processing
 
@@ -92,7 +77,7 @@ AppEngine plugins are designed to be used on users' actions: e.g. a user opens i
 
 ### Activation
 
-Switch the switch in the Background Processing State column in the [SLD Servers tab](#sld-servers) (please check the previous screenshot on this page) and log in using SAP Business One credentials. The following message will be displayed upon the first activation:
+To enable background processing, toggle the switch in the Background Processing State column on the [SLD Servers tab](#sld-servers) (refer to the previous screenshot) and log in using SAP Business One credentials. Upon first activation, the following message will appear:
 
 ![Background](./media/configuration-and-administration/background-processing-message.webp)
 
@@ -109,28 +94,28 @@ Perform the procedure described in the message.
 - In the right window go to the Create Statement tab.
 - Copy to clipboard the whole content of the tab.
 - Click the 'Open SQL console for selected system' icon in the left window.
-- Paste the content from the clipboard.
+- Paste the copied content from the clipboard.
 - Change CREATE to ALTER and add the code under the – ADD YOUR CODE HERE line (if there are other pieces of- code there, please put this piece at the end of the section).
-- Click the Execute icon in the right window (or click F8).
-- Click OK in the message window.
+- Click the "Execute "icon in the right window (or click F8).
+- Confirm by clicking "OK" in the message window.
 </div>
 </details>
 
-Click the Close button and Switch the Background Processing State switch to ON on the required database again.
+Click the Close button and switch the Background Processing State back to ON for the required database.
 
-In the User column, add a user on which the Background Processing will be operating.
+In the User column, specify the user responsible for running background processing.
 
 ### Configuration
 
 ![Plugins](./media/configuration-and-administration/plugins-configuration.webp)
 
-**Send Events Job** – this job is always present, it is installed with AppEngine (the other jobs from the example screenshot above comes from the installed plugins). It checks the designated table in a database every 10 seconds for new events and sends them to the right plugin-related jobs.
+**Send Events Job**: The Send Events Job is pre-installed with AppEngine and continuously monitors the designated database table every 10 seconds for new events, forwarding them to the appropriate plugin-related jobs.
 
-Clicking a job tile leads to its details. Here you can check:
+Clicking on a job tile provides detailed insights, including:
 
-- information on the recent calls: start/end date and time, company and user, exceptions (if there are any). Jobs other than SEventJob have an additional column: EventBus message. It holds information on what was sent to the specific job (what event).
-- companies: databases for which the job is active with a user (by default it is the user set in the [SLD Servers tab](overview.md#sld-servers), it can be changed here just for the specific job)
-- logs: log files, also available in the [Trace tab](#trace-1).
+- **Recent calls**: start/end date and time, company and user, exceptions (if there are any). Jobs other than SEventJob have an additional column: EventBus message. It holds information on what was sent to the specific job (what event).
+- **Companies**: lists databases where the job is active, along with the associated user (default is the user set in the [SLD Servers tab](overview.md#sld-servers)), but this can be customized per job.
+- **Logs**: log files, also available in the [Trace tab](#trace-1).
 
 ![Send Events Job](./media/configuration-and-administration/send-events-job.webp)
 
@@ -162,33 +147,35 @@ Log files
 
 ### EventBus Live Preview
 
-The preview of all current events from all checked databases.
+The EventBus Live Preview displays real-time events from all connected databases.
 
 ## Plugins
 
 ![Administration](./media/configuration-and-administration/administration-panel-plugins.webp)
 
-To install a new plugin, click the Install plugin button in the upper-right corner of the form and load a plugin file. E.g. any from the [Plugins page](../../releases/appengine/download.md). Note that the plugin files are always delivered as zip files – load them in this form, do not unzip them before loading.
+To install a new plugin, click the Install Plugin button in the upper-right corner and upload the plugin file. You can explore available plugins on the [Plugins page](../../releases/appengine/download.md).
+>Note: Plugin files are provided in ZIP format—upload them as-is without extracting.
 
-After loading a file you will get a system message about restarting AppEngine. You can decide whether to do it now or later (note that the loaded plugin will be available after the restart).
+- After uploading, a system message will prompt you to restart AppEngine. You can restart immediately or later, but the plugin will only become available after a restart.
+- Once installed, click the plugin tile to configure it as needed.
 
-After the installation, click the required plugin's tile for further configuration.
-
-For the Download SAP WebClient Extension function description, click [here](working-with-sap-business-one-web-client.md)
+For more details on the Download SAP WebClient Extension function, click [here](working-with-sap-business-one-web-client.md)
 
 ### Companies
 
-Clicking one of the tiles in the Plugins section leads to the following view:
+Clicking a plugin tile in the Plugins section opens the following view:
 
 ![Active Plugin](./media/configuration-and-administration/activate-plugin.webp)
 
-To activate the plugin for a specific database, toggle the switch in the Activate column. If the plugin requires the installation of objects on the database (such as user-defined objects or tables), an Update button will appear after switching it on for a database. Click the Update button to complete the installation, which will require logging in with SAP Business One database credentials.
+To activate a plugin for a specific database, toggle the switch in the "Activate" column. If the plugin requires additional database objects (such as user-defined objects or tables), an Update button will appear after activation. Click "Update" to complete the installation, which will require SAP Business One database credentials.
 
-Now the plugin is available in the Launchpad:
+Once activated, the plugin becomes accessible in the Launchpad:
 
 ![Installed Plugins](./media/configuration-and-administration/installed-plugin.webp)
 
 ### SAP Business One Settings
+
+Navigate to the following path to configure settings in SAP Business One with ProcessForce installed:
 
 :::info Path
     SAP Business One (with ProcessForce installed) main menu → Administration → System Initialization → General Settings → ProcessForce tab → AE tab
@@ -196,39 +183,42 @@ Now the plugin is available in the Launchpad:
 
 ![SAP B1 Settings](./media/configuration-and-administration/appengine-sapb1-settings.webp)
 
-After activating a plugin, go to SAP Business One for further configuration.
+After activating a plugin, further configuration is required in SAP Business One:
 
-Check the checkbox, put in the address (by default: `http://localhost:54000`).
+1. Check the configuration checkbox.
+2. Enter the server address (default: `http://localhost:54000`).
+3. Select the opening mode:
 
-Choose From opening mode: in form (within SAP Business One forms), in browser (in the system's default internet browser), or both.
-
-Click the Save button and Restart SAP Business One.
+        - **In Form**: within SAP Business One forms.
+        - **In Browser**: in the system's default web browser.
+        - **Both**: accessible in both forms and browser.
+4. Click Save and restart SAP Business One.
 
 ### Settings
 
 ![Plugin Settings](./media/configuration-and-administration/plugins-settings.webp)
 
-On a plugin development level, it is possible to create a set of settings for it. If it was created during plugin development, they are available here
+Plugins may have dedicated settings defined during their development. If available, these settings can be configured in this section.
 
 ### Logs
 
-Here, you can check plugin performance related events, search the log and filter it by error, warning and info message type.
+This section allows you to:
+
+- Monitor plugin-related events.
+- Search logs.
+- Filter messages by type: Error, Warning, or Info.
 
 ## Settings
 
 ![AppEngine Settings](./media/configuration-and-administration/app-engine-settings.webp)
 
-This section holds information on the whole AppEngine installation configuration with a possibility to edit some of the values.
+This section provides configuration options for the entire AppEngine installation, allowing users to edit specific values.
 
-**Development** – plugin development-related settings. Check AppEngine Developer's Guide to know more about plugin development-related settings.
-
-**SLD Servers** – here you can find settings from the [SLD Servers](#sld-servers) section
-
-**General** – here you can change i.a. a default attachment folder, default ports.
-
-**Administration** – here you can check the AppEngine username and password
-
-**Components** – here you can check settings related to the installed plugins.
+- **Development**: plugin development-related settings. Check AppEngine Developer's Guide to know more about plugin development-related settings.
+- **SLD Servers**: includes settings from the [SLD Servers](#sld-servers) section.
+- **General**: here, you can modify settings such as the default attachment folder and default ports.
+- **Administration**: here, you can check the credentials: AppEngine username and password
+- **Components**: manage installed plugins and their settings.
 
 ## Trace
 
@@ -236,32 +226,45 @@ Here, you can find a log of exceptions regarding AppEngine performance.
 
 ### Trace Configuration
 
-Here, you can set other then the default error logging level. The levels are as follows (from the one of the broadest range): Trace, Debug, Info, Warn, Error, Fatal, Off. By default, this setting is set to Error. Please note that any change made here is valid per an AppEngine session – after the application restart the setting will go back to the default value.
+Users can modify the error logging level from the default Error level.  The levels are as follows (from the one of the broadest range): Trace, Debug, Info, Warn, Error, Fatal, Off. By default, this setting is set to Error.
+
+>Note: Any changes made here are only valid for the duration of an AppEngine session. After the application restarts, the setting will revert to its default value.
 
 ### Trace
 
 ![AppEngine Trace](./media/configuration-and-administration/appengine-trace.webp)
 
-Here, you can find the exceptions log. You can filter it by a time range and by type:
+Users can filter the exception logs by time range and by type:
 
-- **AppEngine** – general events, also related to plugins
-- **Plugin** – events related to plugins' initializations
-- **BackgroundProcessing** – events related to jobs.
+- **AppEngine**: general events, also related to plugins
+- **Plugin**: events related to plugins' initializations
+- **BackgroundProcessing**: events related to jobs.
 
-Click a required log file to check its content. Then you can filter it by message type – Errors, Warnings, or Info – (1) and download the log file (2):
+Click a required log file to check its content;
 
-![Download trace](./media/configuration-and-administration/trace-download.webp)
+1. Filter messages by type: Error, Warning, or Info.
+2. Download log files if needed:
+
+    ![Download trace](./media/configuration-and-administration/trace-download.webp)
 
 ## System
 
 ### System Details
 
-Here, you can restart the AppEngine installation and change the AppEngine password.
+1. Restart the AppEngine installation.
+2. Update the AppEngine password.
+3. Generate and download a configuration file containing installation details such as: AppEngine version and Installed plugins and versions
 
-You can also generate and download a configuration file – a log file with a lot of information about AppEngine installation, e.g. its version, installed plugins with their versions. The file can be then attached to a support ticket related to this installation for a faster solution.
+This configuration file can be attached to support tickets for faster issue resolution.
 
 ### Active Connections
 
 ![Active Connections](./media/configuration-and-administration/active-connections.webp)
 
-A list of currently active sessions are displayed. Click a connection in the Active sessions table to see the Details of it. You can log out any session by clicking the Log Out button.
+A list of active sessions is displayed in this section. To manage active connections:
+
+1. Select a session from the Active Sessions table.
+2. View session details.
+3. Click Log Out to terminate the session if necessary.
+
+---
