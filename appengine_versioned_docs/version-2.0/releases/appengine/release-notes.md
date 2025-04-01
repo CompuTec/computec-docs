@@ -9,6 +9,14 @@ toc_max_heading_level: 2
 The latest installer is available to download fom [here](/docs/appengine/releases/appengine/download)
 :::
 
+## AppEngine 2.10.19.2
+
+**Release Date - 01 April 2025**
+
+| Issue Type | Component/s | Release Note | Related issue/s |
+| - | - | - | - |
+| Improvement | AE Core | Modification to Plugin Upgrade Mechanism |
+
 ## AppEngine 2.10.18.103
 
 **Release Date - 04 October 2024**

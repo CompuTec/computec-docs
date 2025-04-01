@@ -8,24 +8,26 @@ This guide will walk you through the installation process for CompuTec ProcessFo
 
 ---
 
-1. Run the installation file (CompuTec ProcessForce AppEngine) from the [Download](../../version-2.0/releases/plugins/processforce/download.md) section and click Install in the opened installation Wizard.
-2. Click Close after getting Installation Successfully Completed.
-3. Now, the new service should be running:
+1. Run the installation file (CompuTec ProcessForce AppEngine) from the [Download](../../version-2.0/releases/plugins/processforce/download.md) section and click "Install" in the opened installation Wizard.
+2. Click "Close" after getting Installation Successfully Completed.
+3. The new service should now be running:
 
     ![Services](./media/installation/appengine-service.webp)
-4. Now you can run the platform by using the following web address: `http://{host}:54000 in a browser`.
+4. Access the platform using the following web address in your browser: `http://{host}:54000`.
 
 :::warning
-    After upgrading from any 1.00 version to any 2.00, please use the Empty Cache and Hard Reload option in the browser on which you use AppEngine.
+    After upgrading from any 1.00 version to any 2.00, please use the Empty Cache and Hard Reload option in the browser on which you use AppEngine, to clear your browser cache to ensure smooth operation.
 
     <details>
     <summary>Click here to find out more</summary>
     <div>
-    **Here is an example for Google Chrome or Microsoft Edge (Chromium)**
+    **Example on How to Clear Cache in Google Chrome or Microsoft Edge (Chromium)**
 
-    Open Google Chrome or Microsoft Edge (Chromium) browser and click F12 to open Developers Tools (1.). Right-click on the refresh button (2.) and choose the Empty Cach and Hard Reload option (3.):
+    1. Open Google Chrome or Microsoft Edge (Chromium) browser and click F12 to open Developers Tools,
+    2. Right-click on the refresh button,
+    3. Select Empty Cach and Hard Reload option:
     
-    ![Empty Cache and Hard Reload](./media/installation/empty-cache-and-hard-reload.png)
+        ![Empty Cache and Hard Reload](./media/installation/empty-cache-and-hard-reload.png)
     </div>
     </details>
 :::
