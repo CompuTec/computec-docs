@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Working with SAP Business One Web Client
 
-Here, you can find information about configuration for using AppEngine plugins within SAP Business One Web Client.
+SAP Business One Web Client provides a modern, browser-based interface that enhances the user experience and streamlines business operations. This guide outlines the configuration steps necessary to integrate AppEngine plugins within the Web Client, ensuring seamless functionality and performance.
 
 ---
 
@@ -12,15 +12,17 @@ Here, you can find information about configuration for using AppEngine plugins w
 
 ### External Host Address
 
+To establish communication between the Web Client and the AppEngine installation, the external host address must be configured correctly.
+
 :::info Path
     Administration Panel → Settings → General → Hosting → HttpsPorts
 :::
 
-This address directs the Web Client to the AppEngine installation and must be an HTTPS address. By default, the address is set to localhost with the default port. If the address is different from localhost, it must be updated accordingly.
+The Web Client relies on an HTTPS address to connect to the AppEngine. By default, it is set to localhost with a predefined port. If a different address is used, it must be updated accordingly.
 
 ![External Host](./media/working-with-sap-business-one-web-client/external-host-address.webp)
 
-It is also necessary to direct the Web Client to the AppEngine installation. This address is stored in an AppEngine configuration table within a database. To update this address, you need to activate a Company or deactivate and reactivate it if the AppEngine installation has been upgraded to version 2.0.7.0 (SLD Servers → Companies).
+Additionally, the Web Client stores this address in an AppEngine configuration table within the database. If the AppEngine installation is upgraded to version 2.0.7.0, you must activate a Company or deactivate and reactivate it via SLD Servers → Companies.
 
 ![Activate Database](./media/working-with-sap-business-one-web-client/ae-activate-database.webp)
 
@@ -28,17 +30,21 @@ It is also necessary to direct the Web Client to the AppEngine installation. Thi
 
 ### Download
 
-First, you must download an installation package for all the plugins activated for a specific company. To do this, go to Administration Panel → Plugins and click the Download SAP WebClient Extension button in the window's upper-right corner. Now, choose a required company.
+To install plugins for a specific company, download the installation package:
+
+1. Navigate to Administration Panel → Plugins.
+2. Click the Download SAP WebClient Extension button in the upper-right corner.
+3. Select the required company.
 
 ![Plugins](./media/working-with-sap-business-one-web-client/plugins.webp)
 
-Clicking it causes an installer to download, in this example: computec_appengine_webclient_plugins_PFDEMOGB_PIOTRK_0_0_1.mtar.
+Clicking it causes an installer to download. For example: computec_appengine_webclient_plugins_PFDEMOGB_PIOTRK_0_0_1.mtar.
 
 ![Plugins](./media/working-with-sap-business-one-web-client/plugins-2.webp)
 
 ### Upload
 
-Use SAP Business One Extension Manager to load the installation package:
+Use the SAP Business One Extension Manager to load the installation package:
 
 ![Extension Manager](./media/working-with-sap-business-one-web-client/extension-manager.webp)
 
@@ -53,3 +59,5 @@ Choose one of the extensions:
 Log in using SAP Business User ID. A plugin is now available in SAP Business One Web Client.
 
 ![Web Client](./media/working-with-sap-business-one-web-client/web-client.webp)
+
+---

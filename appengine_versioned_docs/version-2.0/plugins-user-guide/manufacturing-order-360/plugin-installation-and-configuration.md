@@ -9,7 +9,7 @@ ProcessForce and CompuTec Licence Server is installed and configured. For more i
 
 ## AppEngine and plugin installation and configuration
 
-For the AppEngine installation manual, please follow this link: [Installation](/docs/appengine/administrators-guide/installation/).
+For the AppEngine installation manual, please follow this link: [Installation](/docs/appengine/administrators-guide/configuration-and-administration/installation/).
 
 For the plugin installation manual, please follow this link: [Configuration and Administration](../../administrators-guide/configuration-and-administration/overview.md).
 
