@@ -21,7 +21,7 @@ CTLabel plugin is related to [CompuTec Labels](/docs/labels/) and provides a ran
 
 ## AppEngine and Plug-in Installation and Configuration
 
-For detailed installatin steps,  refer to the the [AppEngine installation manual](../administrators-guide/installation.md) and [Plugin installation manual](../administrators-guide/configuration-and-administration/configuration.md).
+For detailed installatin steps,  refer to the the [AppEngine installation manual](../administrators-guide/configuration-and-administration/installation.md) and [Plugin installation manual](../administrators-guide/configuration-and-administration/configuration.md).
 
 Once installed, the plugin integrates seamlessly into your environment, providing an intuitive user interface for managing labels.
 

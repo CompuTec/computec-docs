@@ -18,7 +18,7 @@ If you need assistance with this setup, please refer to the relevant documentati
 
 ## AppEngine and Plugin Installation and Configuration
 
-To install AppEngine, follow the step-by-step instructions outlined in the [Installation Guide](docs/appengine/administrators-guide/installation.md).
+To install AppEngine, follow the step-by-step instructions outlined in the [Installation Guide](../../administrators-guide/configuration-and-administration/installation.md).
 
 For the full configuration and administrative steps, refer to the [Configuration and Administration](docs/appengine/administrators-guide/configuration-and-administration/configuration.md) guide.
 
