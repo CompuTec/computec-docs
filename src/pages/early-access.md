@@ -15,7 +15,7 @@ Before enabling the Early Access configuration, ensure the following:
 
 In the Administration Panel, navigate to Configuration -> Advanced Configuration. In the Plugin Repository Tab, enable the repository with the address: `https://pkgs.dev.azure.com/computec-one/development/_packaging/dev/nuget/v3/index.json`.
 
-Create a file named `CtNugetConfig.config` with the content provided below, replacing APIKEY with your API key. Save this file in the AppEngine Installation Directory at C:\Program Files\CompuTec AppEngine\.
+Create a file named `CtNugetConfig.config` with the content provided below, replacing APIKEY with your API key. Save this file in the AppEngine Installation Directory at C:\Program Files\CompuTec\AppEngine\.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
