@@ -28,7 +28,7 @@ public class MyOwnController : AppEngineSecureController
 }
 ```
 
-To access services in secure controllers, use `GetService<T>` in the constructor.
+To access services in secure controllers, use `GetService<T>` in the method body or inject them in costructor.
 
 >**Note**: In non-secure controllers, only application-scope services are accessible.
 
@@ -48,12 +48,13 @@ public class MyOpenApiBuilder : AeSecureMinimalApiEndpointBuilder
         endpointRouteBuilder.MapGet("/Test", Test);
     }
 
-    private IResult Test([FromServices] SecureScopeService<ITranslationService> translationService)
+    private IResult Test([FromServices] ITranslationService translationService)
         => Results.Ok(translationService.Value.GetTranslatedMessage("VehOne.VinIsMissing"));
 }
 ```
 
-To access services, use `SecureScopeService<T>`.
+To access connection or company Scope  services you can get them simply by referencing them in the action declaration with `[FromServices]` attribute
+>**Note** `SecureScopeService<T>` is obsolete.
 
 ## Swagger Integration
 
