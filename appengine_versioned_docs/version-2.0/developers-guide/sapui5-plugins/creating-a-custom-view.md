@@ -22,10 +22,10 @@ CompuTec AppEngine provides a mechanism for encapsulating complex database queri
 
 ### Create a Custom View
 
-1. Open a plugin project in Visual Studio
-2. Create a folder, e.g., CustomView (right-click on a Project → New Folder), and go to it
-3. Open Terminal (View → Terminal)
-4. Navigate to the created folder
+1. Open your plugin project in Visual Studio.
+2. Create a new folder (e.g., CustomView) by right-clicking on the project and selecting New Folder, then navigate into it.
+3. Open the Terminal via View → Terminal.
+4. Navigate to the newly created folder.
 5. Create a new custom view by using the following command in Terminal (named SalesOrderList in the following example):
 
     ```javascript
@@ -41,12 +41,12 @@ CompuTec AppEngine provides a mechanism for encapsulating complex database queri
     ![Build Settings](./media/creating-a-custom-view/build-settings.webp)
 7. Open the created file and define queries for HANA and MSSQL in the following structure:
 
-   - Id – Id of a CustomView. This ID will be used to retrieve data from this view
-   - Description – meaningful description of this view for developer reference
-   - Source
-   - Hana – SQL Query for HANA server type
-   - MsSql – SQL Query for MSSQL server type
-8. Example of a defined view:
+   - **ID**: A unique identifier for the Custom View. This will be used to fetch data from the view.
+   - **Description**: A meaningful description to help developers understand the purpose of the view.
+   - **Source**:
+        - **Hana**: SQL Query for HANA server type.
+        - **MsSql**: SQL Query for MSSQL server type.
+8. Below is an example of how a view is defined:
 
     SalesOrderList.customview.json
 
@@ -63,14 +63,14 @@ CompuTec AppEngine provides a mechanism for encapsulating complex database queri
 
 ### Bind Custom View to Control in UI5
 
-1. To bind a created custom view to our control, we need to use the following syntax:
+1. To bind the custom view we created to our control, use the following syntax:
 
     ```text
     AE>/CustomViews/Views.Custom(Id='<PluginId>:<ViewId>')
     ```
 
-2. Open the www folder in the preferred IDE. In the below examples, we use Visual Studio Code.
-3. Now, in the view folder, let's create a new file, SalesOrder.view.xml.
+2. Open the www folder in your preferred IDE. In the examples below, we’ll be using Visual Studio Code.
+3. Navigate to the view folder and create a new file named SalesOrder.view.xml.
 
     ![Sales Order](./media/creating-a-custom-view/sales-order-view-xml.webp)
 4. Add View definition and table definition in it:
@@ -111,20 +111,22 @@ CompuTec AppEngine provides a mechanism for encapsulating complex database queri
     </mvc:View>
     ```
 
-5. As you can notice, we bind our custom view to Table control items aggregation. AE is a model alias available when you run your plugin inside Launchpad (your plugin Component needs to extend Computec.AppEngine.ui.core.Component). Please note that you must change ":" in Custom View ID to its URL encoded version %3A, as shown below.
+5. As you can see, we bind our custom view to the items aggregation of the Table control. The alias AE refers to the model available when your plugin runs inside the Launchpad environment (ensure your plugin’s Component extends Computec.AppEngine.ui.core.Component).
+
+    Important: When specifying the Custom View ID, replace the colon (:) with its URL-encoded equivalent %3A, as shown below:
 
     ![Custom View](./media/creating-a-custom-view/custom-view-id.webp)
-6. To bind controls inside our table, we must provide data type. This is required in the case of Custom Views because we don't have the $metadata definition of our custom view.
+6. When binding controls within the table, you must define a data type. This step is essential for Custom Views, as they do not have a $metadata definition available.
 
     ![Data Type](./media/creating-a-custom-view/data-type.webp)
 
 ### Test of Created View
 
-1. To test our view, we need to set up a route to it. To do this, open the manifest.json file.
-2. There, you need to add a route and target as shown below:
+1. To test our view, set up a route to it. To do this, open the manifest.json file.
+2. Add a route and target as shown below:
 
     ![Route](./media/creating-a-custom-view/route.webp)
-3. Now you can navigate to this path manually: `http://localhost:54000/webcontent/launchpad/webapp/Index.html#/plugin/computec.appengine.firstplugin&salesorder`
+3. Now, navigate to this path manually: `http://localhost:54000/webcontent/launchpad/webapp/Index.html#/plugin/computec.appengine.firstplugin&salesorder`
 4. Optionally, you can add a tile to the Home view with navigation, as shown below.
 
 #### Adding Navigation to the Sales Orders View
@@ -146,7 +148,7 @@ CompuTec AppEngine provides a mechanism for encapsulating complex database queri
     ```
 
     ![Navigation](./media/creating-a-custom-view/navigation.webp)
-3. Now, we need to add the "onSalesOrderPress" function to Home.controller.js.
+3. Now, add the "onSalesOrderPress" function to Home.controller.js.
 
     Home.controller.js
 
@@ -167,3 +169,5 @@ CompuTec AppEngine provides a mechanism for encapsulating complex database queri
 2. Sales Orders view.
 
     ![Sales Order](./media/creating-a-custom-view/sales-orders-view.webp)
+
+---

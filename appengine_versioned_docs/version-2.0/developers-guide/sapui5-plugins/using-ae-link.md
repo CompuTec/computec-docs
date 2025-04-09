@@ -4,12 +4,16 @@ sidebar_position: 8
 
 # Using ae:Link's
 
+This guide walks you through how to integrate the ae:Link control into your AppEngine plugin for navigating between Sales Orders and Business Partners.
+
+---
+
 ## Description
 
-AppEngine includes a custom control called computec.appengine.ui.controls.link, which functions like the "yellow arrows" in SAP Business One. This control enables users to easily navigate to referenced Master Data or Documents. Below is an example of how to use this control.
+AppEngine enhances this experience by providing a custom control - computec.appengine.ui.controls.link - which replicates the functionality of the familiar "yellow arrow" links. These links allow users to directly open related documents or master data records, saving time and simplifying workflows.
 
 :::warning
-    AppEngine Link Control works only when plugin is started from SAP Business One.
+    The AppEngine Link control only functions when the plugin is launched from within SAP Business One.
 :::
 
 ## Adding Link to Sales Orders and Business Partners
@@ -22,14 +26,14 @@ AppEngine includes a custom control called computec.appengine.ui.controls.link, 
     `xmlns:ae="computec.appengine.ui.controls"`
 
     ![AppEngine](./media/using-ae-link/appengine-controls-namespace.webp)
-3. Add a Link to the Document Number column. Change ObjectIdentifier to AppEngine Link.
+3. Add a Link control to the Document Number column by replacing the ObjectIdentifier with the AppEngine ae:Link. Configure it with the following properties:
 
-    - **text** – text that will be displayed. Use DocNum and in curly brackets DocEntry
-    - **objectType** – in case of SAP object, this needs to be BoFormObjectEnum (or ObjectType). BoFormObjectEnum can be found in SAP Business ne SDK. In this case this will be fo_Order:
+    - **text**: The value to be displayed. Use DocNum, and include DocEntry in parentheses using curly brackets.
+    - **objectType**: For SAP object, this needs to be BoFormObjectEnum (or ObjectType). BoFormObjectEnum can be found in SAP Business ne SDK. In this case this will be fo_Order:
 
         ![Order](./media/using-ae-link/fo-Order.webp)
-    - **objectSubType** – only needed when opening ProcessForce objects. In this example, leave it empty
-    - **key** – a key of an object we would like to open. In this case this will be Sales Order DocEntry.
+    - **objectSubType**: Required only for ProcessForce objects. Leave it empty in this case.
+    - **key**: The unique identifier of the object to open. Here, use the DocEntry of the Sales Order.
 
             ```xml
             <ae:Link
@@ -39,7 +43,7 @@ AppEngine includes a custom control called computec.appengine.ui.controls.link, 
             key="{path: 'AE>DocEntry', type: 'sap.ui.model.odata.type.Int32'}"/>
             ```
 
-4. Do the same thing for a Business Partner. This time, instead of replacing the ObjectIdentifier, add a link next to it using the HBox control. Link text property is left empty.
+4. For the Business Partner field, instead of replacing the existing ObjectIdentifier, wrap it inside an HBox and place the ae:Link control alongside it. In this case, leave the text property of the link blank.
 
         ```xml
         <HBox>
@@ -106,6 +110,8 @@ AppEngine includes a custom control called computec.appengine.ui.controls.link, 
 
 ## Results
 
-After restarting SAP Business One, you will see the changes and be able to use the links as demonstrated below.
+After restarting SAP Business One and reloading your plugin, the links will be active. Users can click the document number or business partner link to jump directly to the relevant form, enhancing workflow efficiency.
 
 ![AE Link](./media/using-ae-link/aelink-results.webp)
+
+---
