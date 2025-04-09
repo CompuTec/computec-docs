@@ -25,7 +25,7 @@ To ensure seamless communication between the CompuTec WMS Client and Server, fol
 
 1. **Server Address & Port**: Ensure that the server address matches the location where the CompuTec WMS Server is installed. The port number must align with the one specified in the server settings. You can verify this in the server configuration.
 2. **Printer Setup**: Define the printer that will handle CompuTec Labels whenever WMS sends a new request. The printer's IP address can be configured in Custom Configuration under the Common tab. For more details, click [here](../administrator-guide/custom-configuration/custom-configuration-functions/common.md).
-3. **Scale Integration**: If the CompuTec WMS is intended for use with a scale, enable the Scale checkbox to activate this functionality.
+3. **Scale Integration**: If the CompuTec WMS is intended for use with a scale, enable the Scale checkbox to activate this functionality. Please refer to [weight scale](../user-guide/weight-scales/overview.md) for more information.
 
 ### Info icon
 

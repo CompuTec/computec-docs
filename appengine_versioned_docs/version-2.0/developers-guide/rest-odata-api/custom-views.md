@@ -4,11 +4,9 @@ sidebar_position: 3
 
 # Custom Views
 
-## What is CompuTec AppEngine Custom View?
+CompuTec AppEngine Custom Views are a powerful feature designed to simplify data access for both developers and users.
 
-CompuTc AppEngine provides a mechanism for encapsulating complex database queries as simple structures.
-
-### Features
+## Key Features
 
 - simplified data consumption in Web API client or UI
 - supports OData V4
@@ -19,11 +17,11 @@ CompuTc AppEngine provides a mechanism for encapsulating complex database querie
 ![Custom View](./media/custom-views/core-odata.webp)
 
 :::note
-    Note that the Custom View ID will be extended with the plugin ID during plugin initialization
+    Custom View identifiers are extended with the plugin ID during initialization, using the format:
     `<plugin identifier>:<view identifier>`
 :::
 
-### Custom View Definition from Plugin Dir
+### Custom View Definition from Plugin Directory
 
 `<file name>.customview.json`
     ```json
@@ -152,3 +150,5 @@ Response Body
   "value": [{}]
     }
     ```
+
+---

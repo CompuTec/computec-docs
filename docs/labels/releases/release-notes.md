@@ -60,6 +60,10 @@ Below are the release notes for CompuTec Gateway, highlighting new features, imp
 
 ### CompuTec Gateway Manager 1.2.1
 
+| Issue Type | Component/s | Reference Support Ticket | Release Note |
+| --- | --- | --- | --- |
+| Bug | Gateway | SRIVL-149 | Export path of report file wasn't correct in Gateway machine. |
+
 **Release Date – 11 March 2025**
 
 | Issue Type | Component/s | Reference Support Ticket | Release Note |

@@ -4,7 +4,15 @@ sidebar_position: 14
 
 # CompuTec AppEngine Plugin Template for TypeScript
 
+CompuTec AppEngine is a powerful extension framework designed to help developers build custom plugins for SAP Business One. With the TypeScript plugin template, you can create scalable and maintainable plugins using modern technologies like TypeScript and UI5.
+
+This guide walks you through the steps to set up your development environment, create a new plugin using the CompuTec AppEngine template, and configure your project for a streamlined development workflow.
+
+---
+
 ## Prerequisites
+
+Before you begin, ensure the following software is installed on your machine:
 
 Node.js version 12 or higher.
 
@@ -36,11 +44,11 @@ Once the package is installed, you can check the list again using the following 
 dotnet new --list AE
     ```
 
-Create a new folder – named FirstPlugin in this example (mkdir FirstPlugin).
+Create a new folder for your plugin project (e.g., FirstPlugin):
 
 Go to the folder (cd .\FirstPlugin).
 
-Use the following command to create a new template to work on it later (ctaepluginjs in this example). It has to be created along with two mandatory parameters: RoutePrefix (testPlugin in this example) and PluginID (Compu:Tec.AppEngine.Plugin.Test in this example:
+Use the following command to create a new template to work on it later (ctaepluginjs in this example). It has to be created along with two mandatory parameters: RoutePrefix (testPlugin in this example) and PluginID (Compu:Tec.AppEngine.Plugin.Test in this example):
 
     ```bash
 dotnet new ctaeplugints --RoutePrefix testPlugin --PluginId CompuTec.AppEngine.Plugin.Test
@@ -55,6 +63,8 @@ dotnet new ctaeplugints --RoutePrefix testPlugin --PluginId CompuTec.AppEngine.P
 
     ![Output](./media/computec-app-engine-plugin-template-for-typescipt/output-path.webp)
 
-2. After the build, you can activate plugin in AppEngine Administration Panel. More information about this process can be found [here](../../../version-2.0/administrators-guide/configuration-and-administration/overview.md). After that, you will be able to open plugin from the AppEngine launchpad.
+2. After the build, you can activate plugin in AppEngine Administration Panel. More information about this process can be found [here](../../../version-2.0/administrators-guide/configuration-and-administration/overview.md). Your plugin will now be accessible from the AppEngine Launchpad
 
     ![First List](./media/computec-app-engine-plugin-template-for-typescipt/first-list-of-todos.webp)
+
+---

@@ -4,6 +4,10 @@ sidebar_position: 2
 
 # Connecting to AppEngine from SAP Business One Integration Framework (B1if)
 
+Integrating SAP Business One Integration Framework (B1if) with AppEngine via REST API enables seamless data exchange between the two systems
+
+---
+
 :::warning
     Currently, there is an issue while running simultaneous transactions using API. The workaround for this solution is calling Login and Logout separately for each transaction.
 :::
@@ -54,18 +58,18 @@ Below is an example of sending data to AppEngine. Authentication is done using t
 3. **ToSendVal** - prepares JSON structure (according to documentation for a given object - in our example, this is InspectionReading) that will be sent to AppEngine. Atom prepares data in variables, creates \<token\> section and place JSON structure in \<bfa:io\> section.
 
     ![To send](./media/connecting-to-appengine-from-sap/to-send-al.webp)
-4. **SendValue** - HTTA atom sends data to AppEngine.
+4. **SendValue**: HTTA atom sends data to AppEngine.
 
     ![Send to AppEngine](./media/connecting-to-appengine-from-sap/send-to-appengine.webp)
 
     Parameters:
 
-    - **destPath** - points to a function called API function.
-    - **XPath Expression** - points to JSON data.
+    - **destPath**: specifies the API function.
+    - **XPath Expression**: points to JSON data.
     - **Outbound Configuration** - in this section, we need to add the following parameters:
 
-      - **httpheader.content-type** - application/x-www-form-urlencoded; charset=UTF-8
-      - **httpheader.Authorization** - points to prepared token
+      - **httpheader.content-type**: application/x-www-form-urlencoded; charset=UTF-8
+      - **httpheader.Authorization**: points to prepared token
 
 ## Summary
 

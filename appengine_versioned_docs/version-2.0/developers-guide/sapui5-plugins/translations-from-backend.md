@@ -4,11 +4,17 @@ sidebar_position: 4
 
 # Translations from Backend
 
+CompuTec AppEngine allows developers to build plugins with internationalization support, making applications accessible in multiple languages. This is particularly useful when deploying plugins in global environments.
+
+---
+
 ## Description
 
-When using AppEngine, you can define your translation resource files directly in your project plugin. If you created a plugin with [CompuTec AppEngine Plugin Template](./plugin-templates.md), the translation file is already added and registered. Translations require the following to work:
+AppEngine allows you to manage translation resources directly within your plugin. If you’ve created your plugin using the [CompuTec AppEngine Plugin Template](./plugin-templates.md), a translation file is already included and registered by default.
 
-1. The translations file is an XML file with the following structure:
+To implement translations in your AppEngine plugin, follow the steps below:
+
+1. Translations are stored in an XML file with the following structure:
 
     Translations file structure
 
@@ -29,8 +35,8 @@ When using AppEngine, you can define your translation resource files directly in
     </messageTranslations>
     ```
 
-    - **id (translationID)** – id that will be used in the UI5 app
-    - **lang (language)** – a translation element for a given language.
+    - **id (translationID)**: Id that will be used in the UI5 app.
+    - **lang (language)**: A translation element for a given language.
 
         <details>
         <summary>List of possible languages</summary>
@@ -69,7 +75,7 @@ When using AppEngine, you can define your translation resource files directly in
         </div>
         </details>
 
-    - date (Translation adding date) – Date of adding translations in XSD DateTime format `<YYYY-MM-DDThh:mm:ss>`
+    - **date (Translation adding date)**: Date when the translation was added in XSD DateTime format: `<YYYY-MM-DDThh:mm:ss>`
 2. Definition of TranslationStreamDelegate in PluginInitializer.
 
     ![Translation](./media/translations-from-backend/translationstreamdelegate-definition.webp)
@@ -79,7 +85,7 @@ When using AppEngine, you can define your translation resource files directly in
     "i18n": "plugins/<Plugin Route>/I18n/i18n.properties"
     ```
 
-    - Plugin Route - The Plugin Route is defined when creating a Plugin from the wizard. You can find this value in the AppEngine plugin manifest.json.
+    - **Plugin Route**: The Plugin Route is defined when creating a Plugin from the wizard. You can find this value in the AppEngine plugin manifest.json.
 
         ![Plugin Route](./media/translations-from-backend/plugin-route.webp)
     - Example
@@ -88,22 +94,22 @@ When using AppEngine, you can define your translation resource files directly in
 
 ## Using Internationalization in UI5 Applications
 
-If you created a Plugin Project from the, you can already check translations on Home.view.xml. The following screenshot shows how it works.
+If you created a Plugin Project using the template, you can already see how translations work in the Home.view.xml file. The screenshot below illustrates this.
 
-- In Home.view.xml file we defined binding for header of Generic Tile to `{i18n>todoTileHeader}` and subheder o `{i18n>todoTileSubheader}`. This is the standard way of defining translations in UI5.
-- Translations IDs (todoTileHeader, todoTileSubheader) can be found in messages.xml. Based on the selected language (English in this example), the correct text is returned by AppEngine.
+- In Home.view.xml file, we’ve defined the binding for the Generic Tile header as `{i18n>todoTileHeader}` and subheder o `{i18n>todoTileSubheader}`. This is the standard way of defining translations in UI5.
+- Translations IDs (todoTileHeader, todoTileSubheader) are defined in messages.xml. Based on the selected language (English, in this case), AppEngine retrieves and displays the appropriate text.
 
 ![Translation](./media/translations-from-backend/translation-ids.webp)
 
 ### Example of Adding a Translation to the Sales Orders List
 
-In this example, we will add translations to our example from Creating a Custom View.
+In this example, we’ll add translations to the custom view we created in the Creating a Custom View tutorial.
 
-1. Let open SalesOrder.view.xml.
-2. Now we will change Table Title text and column Texts to use translations:
+1. Open SalesOrder.view.xml.
+2. Change the Table Title text and column Texts to use translations:
 
     ![Title Text](./media/translations-from-backend/title-text.webp)
-3. To do this we just need to bind this properties to i18n and provide id. We will change
+3. To do this, simply bind the properties to i18n and assign the corresponding translation IDs.
 
     - `<Title text="Sales Orders List"/>` to `<Title text="{i18n>salesOrderTableTitle}"/>`
     - `<Text text="Document Number"/>` to `<Text text="{i18n>salesOrderDocumentNumberColumnLabel}"/>`
@@ -111,7 +117,7 @@ In this example, we will add translations to our example from Creating a Custom 
 
     ![Bind Properties](./media/translations-from-backend/bind-properties.webp)
 
-4. Now, we need to add translations for the added translations ID to the messages.xml file.
+4. Now, we need to add translations for the newly added translation IDs in the messages.xml file.
 
     messages.xml
 
@@ -133,6 +139,8 @@ In this example, we will add translations to our example from Creating a Custom 
     </Message>
     ```
 
-5. Now, we need to rebuild the plugin project. Start AppEngine and refresh the plugin to see the changes. (Restart is needed only to refresh messages.xml file).
+5. Now, rebuild the plugin project. Then, start AppEngine and refresh the plugin to apply the changes. (A restart is only required if you've made changes to the messages.xml file.)
 
     ![Translation](./media/translations-from-backend/translation-change.webp)
+
+---

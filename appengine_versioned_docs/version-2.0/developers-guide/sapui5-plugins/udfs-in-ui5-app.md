@@ -4,6 +4,10 @@ sidebar_position: 6
 
 # Using User-Defined Objects in UI5 Application
 
+In this section, we’ll focus on enhancing the frontend of our UI5 application by integrating the previously defined User-Defined Objects (UDOs).
+
+---
+
 ## Prerequisites
 
 Example User [Defined Object (UDO) in AppEngine Plugin Project](./udo-in-appengine-plugin.md) completed.
@@ -189,7 +193,7 @@ After generating controllers, models, and serializers in User Defined Object (UD
             Sorter, Filter, FilterOperator, FilterType, YesNoBoolType) {
     ```
 
-2. We need to fix the onCreate function. We will change the object definition in the oBinding.create method.
+2. We need to update the onCreate function by modifying the object definition passed to the oBinding.create method.
 
     ```js
     onCreate: function () {
@@ -210,7 +214,7 @@ After generating controllers, models, and serializers in User Defined Object (UD
     },
     ```
 
-3. Also, the onSearch function can be expanded to search by Task Name and Description
+3. Additionally, the onSearch function can be improved to support searching by both Task Name and Description, providing more flexible and comprehensive filtering.
 
     ```js
     onSearch: function () {
@@ -240,8 +244,8 @@ After generating controllers, models, and serializers in User Defined Object (UD
     },
     ```
 
-4. We will remove the onSave, onInputChange, and \_setUIChanges methods because we are now working in $auto submit mode.
-5. We can also simplify the onInit method as we no longer need a view model.
+4. We will remove the onSave, onInputChange, and \_setUIChanges methods since we are now working in $auto submit mode.
+5. Additionally, the onInit method can be simplified, as the view model is no longer required.
 
     ```js
     onInit: function () {
@@ -251,7 +255,7 @@ After generating controllers, models, and serializers in User Defined Object (UD
     },
     ```
 
-6. Our formatter functions for Priority ObjectStatus control are shown below
+6. Below are our formatter functions used for the Priority ObjectStatus control:
 
     - getIconForPriority
 
@@ -297,7 +301,7 @@ After generating controllers, models, and serializers in User Defined Object (UD
         }
         ```
 
-7. In result Todo.controller.js should look like this.
+7. As a result, the Todo.controller.js file should now look like this.
 
     Todo.controller.js
 
@@ -455,6 +459,8 @@ After generating controllers, models, and serializers in User Defined Object (UD
 
 ## Results
 
-After these changes, To Do view will work with our newly generated controllers for To Do User Defined Objects. We can now search, add, delete and change them. All changes are automatically send to backend to be saved.
+With these changes in place, the To Do view is now fully integrated with the newly generated controllers for the To Do User Defined Objects. You can search, add, delete, and update To Do items, and all changes are automatically sent to the backend for persistence.
 
 ![To do list view](./media/udfs-in-ui5-app/todo-list-view.webp)
+
+---

@@ -4,8 +4,6 @@ sidebar_position: 7
 
 # Embedding Plugin Form in ProcessForce
 
-## Description
-
 ProcessForce allows starting AppEngine Plugin directly inside SAP. This is done base on the manifest configuration of the Plugin. Base on this configuration new positions related to Plugins will appear inside SAP Menu. Opening such a position will open a new Form with a browser that will open the AppEngine launchpad and inside it navigate to the correct plugin.
 
 ## ProcessForce AppEngine Connection Configuration
@@ -108,3 +106,5 @@ After rebuilding the solution and restarting AppEngine, it is necessary to resta
 Now, the menu entry is visible in SAP Menu:
 
 ![Results](./media/embedding-plugin-form-in-processforce/results.webp)
+
+---
