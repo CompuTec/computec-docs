@@ -58,11 +58,15 @@ Below are the release notes for CompuTec Labels SAP Addon, highlighting new feat
 
 Below are the release notes for CompuTec Gateway, highlighting new features, improvements, and bug fixes in this release.
 
-### CompuTec Gateway Manager 1.2.1
+### CompuTec Gateway Manager 1.2.1 HF1
+
+**Release Date – 10 April 2025**
 
 | Issue Type | Component/s | Reference Support Ticket | Release Note |
 | --- | --- | --- | --- |
 | Bug | Gateway | SRIVL-149 | Export path of report file wasn't correct in Gateway machine. |
+
+### CompuTec Gateway Manager 1.2.1
 
 **Release Date – 11 March 2025**
 

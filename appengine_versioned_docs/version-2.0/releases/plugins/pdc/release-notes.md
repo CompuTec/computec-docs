@@ -9,6 +9,16 @@ toc_max_heading_level: 2
     Installer is ready to download from [here](../../plugins/pdc/download.md).
 :::
 
+## CompuTec PDC 3.10.25.2
+
+**Release Date – 10 April 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Bug | PDC | SAP username and password is displayed under message log. |
+| Bug | PDC | Issues with pick order with serial managed items. <br/>An error message occurred: "Value cannot be null. Parameter name: source" |
+| Bug | Tasks | Duplicate labor tasks could be created for a single team leader. |
+
 ## CompuTec PDC 3.10.25.1
 
 **Release Date – 04 March 2025**
