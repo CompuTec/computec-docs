@@ -1,5 +1,16 @@
 [
   {
+    "version": "3.10.25.3",
+    "build": "3.10.25.3",
+    "related_release": "-",
+    "release_date": "10 April 2025",
+    "minimal_ae_version": "2.10.18.103",
+    "requirements": [
+      "ProcessForce Plugin Release 30 (R30)"
+    ],
+    "download_url": "https://download.computec.one/software/appengine/plugins/pdc/releases/CompuTec_PDC_3.10.25.3.zip"
+  },
+    {
     "version": "3.10.25.2",
     "build": "3.10.25.2",
     "related_release": "-",
