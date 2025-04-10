@@ -9,7 +9,7 @@ toc_max_heading_level: 2
     Installer is ready to download from [here](../../plugins/pdc/download.md).
 :::
 
-## CompuTec PDC 3.10.25.2
+## CompuTec PDC 3.10.25.3
 
 **Release Date – 10 April 2025**
 
