@@ -103,8 +103,8 @@ Below CompuTec Labels Printing Manager and CompuTec Labels SAP Add-on versions a
 | Version |  Build | Release Date | Download Link | Release Notes |
 | --- | --- | --- | --- | --- |
 | 1.2.1 | 1.2.1.0 | 11 March 2025 | [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.1.0.msi) | [Navigate to the page](release-notes.md#computec-gateway) |
-| 1.2.0.28 | - | [Download](https://download/computec.one/software/gateway/releases/CompuTec_Gateway_1.2.0.28.msi) | - |
-|1.2.0.20 | - | [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.0.20.msi) | - |
+| 1.2.0.28 | 1.2.0.28| [Download](https://download/computec.one/software/gateway/releases/CompuTec_Gateway_1.2.0.28.msi) | - |
+|1.2.0.20 | 1.2.0.20 | [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.0.20.msi) | - |
 </div>
 </details>
 
