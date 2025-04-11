@@ -4,10 +4,10 @@ sidebar_position: 18
 
 # Using External Libraries in AppEngine
 
-The following example shows how to consume the external library in an AppEngine plugin (TypeScript). We will use the SheetJS library.
+This guide demonstrates how to integrate and use an external Node.js library—SheetJS (xlsx)—within an AppEngine plugin written in TypeScript. SheetJS allows you to read, write, and manipulate Excel files directly in the browser or Node.js environments.
 
 :::warning
-    To include an external library in production code only, you need to complete 1 to 5 points.
+    To include an external library in production-ready code, make sure to complete Steps 1 to 5 in the instructions below.
 :::
 
 ## Requirements
@@ -142,12 +142,12 @@ The following example shows how to consume the external library in an AppEngine 
         npm run build
         ```
 
-6. Copy the resources folder from the dist folder to the webapp folder.
+6. Copy the resources folder from the dist directory to the webapp directory.
 
     :::warning
-    This needs to be done only once during the development phase. Thanks to this and mapping from point 7, you can test your plugin that consumes external library from the webapp folder just after TypeScript transpilation – without a need to build each time.
+    This step is required only once during the development phase. By doing this, and with the path mapping configured in Step 7, you’ll be able to test your plugin using the external library directly from the webapp folder right after TypeScript transpilation - without needing to rebuild each time.
 
-    It is possible that you will need to rebuild your solution after this step in order to copy this file to plugins folder.
+    However, in some cases, you may still need to perform a full rebuild to ensure the files are correctly copied into the plugins folder.
     :::
 
 7. Add mapping to Component.ts:
@@ -162,7 +162,7 @@ The following example shows how to consume the external library in an AppEngine 
                 );
         ```
 
-    Finally, Comonent.ts should look similar to this:
+    Finally, here’s how your Component.ts might look:
 
     Component.ts
 
@@ -194,3 +194,5 @@ The following example shows how to consume the external library in an AppEngine 
             }
         }
         ```
+
+---

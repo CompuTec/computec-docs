@@ -8,6 +8,12 @@ toc_max_heading_level: 2
 
 To ensure CompuTec WMS functions properly, certain requirements must be met. Below are the prerequisites and setup steps for optimal performance.
 
+:::warning
+    The WMS Server should not be installed on an RDP server or any server that hosts other applications accessing the SAP Business One DI API.
+
+    Since the DI API is single-threaded, simultaneous access by multiple applications can lead to instability. For instance, the SAP Business One desktop client is one such application that uses the DI API. Therefore, it is strongly recommended to avoid installing the WMS Server on the same machine as the SAP Business One desktop client.
+:::
+
 ---
 
 ## .NET Framework
@@ -32,30 +38,6 @@ For best results, update to the latest version of .NET Framework using Windows U
 
 - [Microsoft .NET Framework 4.7 (Web Installer)](https://www.microsoft.com/en-us/download/details.aspx?id=55170)
 - [Microsoft .NET Framework 4.7 (Offline Installer)](https://www.microsoft.com/en-us/download/details.aspx?id=55167)
-
----
-
-## User Defined Objects
-
-Learn how to install the CompuTec WMS UDOs to a database [here](./wms-server/overview.md).
-
-### Custom Batch User Defined Fields
-
-To properly manage custom Batch UDFs in CompuTec WMS with ProcessForce, a specific UDF must be added to these tables:
-
-- "OBTN" (SAP)
-
-    ![obtn](./media/prerequisites/obtn.webp)
-
-- "@CT_PF_OABT" (ProcessForce)
-
-    ![obtn](./media/prerequisites/ct-pf-oabt.webp)
-
-- "@CT_PF_PRE2" (for picked but unreceived batches)
-
-    ![obtn](./media/prerequisites/ct-pf-pre2.webp)
-
-See more information on [working with UDFs in ProcessForce](/docs/processforce/administrator-guide/udfs).
 
 ## SAP Business One User
 
