@@ -4,17 +4,18 @@ sidebar_position: 5
 
 # BOM to MOR Update
 
-This function allows propagating changes made on a particular Bill of Materials to existing Manufacturing Orders based on criteria given in the configuration.
+Managing consistency between your Bill of Materials (BOM) and Manufacturing Orders (MOR) is crucial in manufacturing environments. The BOM to MOR Update function ensures that changes made to a BOM can be automatically and selectively propagated to existing Manufacturing Orders based on your configuration settings. This helps maintain data accuracy and reduces the risk of production issues caused by outdated BOMs.
 
 ---
 
 ## Installation
 
-The option is based on an AppEngine job installed automatically during the [BulkChange plugin installation](../bulk-changes-on-bills-of-materials/installation-and-configuration.md).
+This feature is available through an AppEngine job that is automatically installed during the [BulkChange plugin installation](../bulk-changes-on-bills-of-materials/installation-and-configuration.md).
 
-Send Events Job has to be active for a specific company. Click [here](../../administrators-guide/configuration-and-administration/overview.md) to find out more.
+To function properly:
 
-Background processing has to be configured for a specific company. Click [here](../../administrators-guide/configuration-and-administration/overview.md#activation) to find out more.
+- The Send Events Job must be active for the target company. Learn how to activate it [here](../../administrators-guide/configuration-and-administration/overview.md).
+- Background processing must also be configured for the same company. Setup details are available [here](../../administrators-guide/configuration-and-administration/overview.md#activation).
 
 ## Configuration
 
@@ -50,8 +51,10 @@ the upper menu → View → User-Defined Fields
 
 ![Bulk Changes on Bills of Materials](./media/bulk-changes-of-bom/bom-to-mor-udf.png)
 
-Click the Update button in the Bill of Materials form. Now the status of the related MOR Update is available in the MOR Update Status UDF:
+Click the Update button in the Bill of Materials form. The status of the update will be reflected in the MOR Update Status Field:
 
-**Processing** – While updating (the time of processing depends on the data structure and volume).
+- **Processing**: While updating (the time of processing depends on the data structure and volume).
+- **Success**: Update completed successfully.
+- **Failure** – Update encountered an issue.
 
-**Success** or **Failure** – The result of the update.
+---

@@ -4,17 +4,15 @@ sidebar_position: 11
 
 # Custom Controller that uses ProcessForce API
 
-## Description
-
-In this example, we will show how to add a custom controller that uses ProcessForce objects and logic. In this example, we will create a controller that is responsible for scheduling Manufacturing Orders.
+This guide demonstrates how to create a custom API controller within your plugin that interacts with ProcessForce objects and logic. Specifically, we'll build a controller that schedules multiple Manufacturing Orders (MOs) using the ProcessForce API.
 
 ## Creating Custom Controller
 
-1. Open your plugin solution in Visual Studio.
-2. Create a new class: PF_SchedulingController.cs inside Controllers/Api.
+1. Launch your plugin project in Visual Studio.
+2. Add a new class named PF_SchedulingController.cs within the Controllers/Api directory.
 
     ![List](./media/custom-controller-pf-api/cc-pf-api-01.webp)
-3. This controller needs to inherit from CompuTec.AppEngine.Base.Infrastructure.Controllers.API.AppEngineSecureController, because we need to authenticate a user to work on SAP document.
+3. This controller should inherit from CompuTec.AppEngine.Base.Infrastructure.Controllers.API.AppEngineSecureController to ensure user authentication, which is required when working with SAP documents.
 
     SalesOrderController.cs
 
@@ -30,7 +28,7 @@ In this example, we will show how to add a custom controller that uses ProcessFo
     }
     ```
 
-4. Add a Post Method, which as a parameter will require a list of integers that represents a Manufacturing order DocEntrys.
+4. Add a POST method that accepts a list of integers as a parameter. These integers represent the DocEntry values of the Manufacturing Orders to be scheduled.
 
     GetSalesOrder
 
@@ -81,7 +79,7 @@ In this example, we will show how to add a custom controller that uses ProcessFo
             }
     ```
 
-5. Now, you can see the method in Swagger.
+5. The method will now be visible and accessible in the Swagger UI for testing and documentation purposes.
 
     ![List](./media/custom-controller-pf-api/cc-pf-api-02.webp)
 6. Calling Controller:
@@ -96,7 +94,9 @@ In this example, we will show how to add a custom controller that uses ProcessFo
     ```
 
 :::note
-If you want to use the IProcessForceCompany object, get it from the session object.
+To use the IProcessForceCompany object, retrieve it from the session using the following line:
 
 `var pfCompany = Session.GetCompany<IProcessForceCompany>();`
 :::
+
+---
