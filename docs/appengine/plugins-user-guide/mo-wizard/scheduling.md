@@ -16,6 +16,8 @@ To maintain simplicity and scheduling focus, MOWizard enforces a strict rule kno
 
 By isolating a single, critical operation for optimization, the system enables more accurate resource planning, reduces scheduling conflicts, and improves overall production efficiency.
 
+    ![Schema](./media/scheduling/2025-04-17_16-15-35.PNG)
+
 ---
 
 ## Steps to Create a Scheduling Scenario
