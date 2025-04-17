@@ -4,18 +4,20 @@ sidebar_position: 13
 
 # Plugin Configuration
 
-## Description
+AppEngine provides a powerful and flexible way to extend its capabilities using plugins. One essential feature of plugins is the ability to expose configurable settings that can be managed directly through the AppEngine Administration Panel. These settings allow developers and administrators to dynamically control the behavior of their plugins without altering the codebase.
 
-AppEngine allows plugins to expose additional configuration. This configuration can be changed when you navigate to Plugin inside AppEngine Administration Panel. In this tutorial, we will add configuration for our FirstPlugin and use it inside SalesOrderToApproveEventJob Job that we created in the previous tutorial.
+In this tutorial, we’ll walk through how to add custom configuration settings to a plugin - FirstPlugin and utilize those settings in a job called SalesOrderToApproveEventJob that we created in the previous tutorial.
 
 ![Plugin](./media/plugin-configuration/first-plugin-empty-settings.webp)
+
+---
 
 ## Adding Configuration to Plugin
 
 1. Create new class PluginSettings.cs that implement abstract class `CompuTec.AppEngine.Base.Infrastructure.Configuration.SettingsCollection<IPluginConfiguration>`
 
     ![Plugin](./media/plugin-configuration/add-file-plugin-settings.webp)
-2. You are required to implement GetSettings method - this method should return configuration of out plugin.
+2. You need to implement the GetSettings method, which is responsible for returning the configuration settings of the plugin.
 
     PluginSettings.cs
 
@@ -37,7 +39,7 @@ AppEngine allows plugins to expose additional configuration. This configuration 
     }
     ```
 
-3. Lets add simple configuration that will allow as to choose priority for Task created inside SalesOrderToApproveEventJob Job
+3. Let's add a simple configuration that allows us to set the priority for the Task created within the SalesOrderToApproveEventJob job.
 
     - Create new SettingDefinition lists
 
@@ -72,7 +74,7 @@ AppEngine allows plugins to expose additional configuration. This configuration 
         }
         ```
 
-4. Finally PluginSettings.cs will have the following form
+4. Finally, the PluginSettings.cs file should look like this:
 
     PluginSettings.cs
 
@@ -121,11 +123,11 @@ AppEngine allows plugins to expose additional configuration. This configuration 
 
 ### Results
 
-Now, after you rebuild and start AppEngine your configuration will be added to AppEngine configuration (appengine.config or respectively dev_appengine.config). This can be seen in Administration Panel in Plugin Settings.
+Once you rebuild and launch AppEngine, your plugin configuration will be incorporated into the AppEngine configuration files (appengine.config or dev_appengine.config, depending on your environment). You can verify this by navigating to the Plugin Settings section in the Administration Panel.
 
 ![Added Settings](./media/plugin-configuration/added-setings-for-plugin.webp)
 
-This is also visible in global AppEngine Settings.
+The configuration is also reflected in the global AppEngine settings:
 
 ![AppEngine Settins](./media/plugin-configuration/appengine-settings.webp)
 
@@ -135,13 +137,13 @@ You can check if validation works by trying to set incorrect value.
 
 ## Using Configuration Value Inside Job
 
-Having plugin configuration added, now it's time to use it. We will retrieve value from configuration and use it inside SalesOrderToApproveEventJob Job.
+Now that the plugin configuration has been added, it’s time to put it to use. We'll retrieve the configured value and apply it within the SalesOrderToApproveEventJob job.
 
-1. Open configuration in Administration Pane and set Priority to Huge
+1. Open configuration in Administration Panel and set Priority to Huge
 
     ![Priority Huge](./media/plugin-configuration/priority-huge.webp)
 
-2. Open SalesOrderToApproveEventJob.cs file in Visual Studio and add method GetDefaultPriority. To retrieve value, we need to use method Get on configuration with appropriate key (same key as in configuration definition). After that we are returning enumerator value.
+2. Open the SalesOrderToApproveEventJob.cs file in Visual Studio and add a method named GetDefaultPriority. To retrieve the configured value, use the Get method on the configuration object with the appropriate key (the same key defined in the plugin configuration).  Then return the corresponding enumerator value.
 
     ```csharp
     private ToDoPriority GetDefaultPriority()
@@ -152,13 +154,13 @@ Having plugin configuration added, now it's time to use it. We will retrieve val
     }
     ```
 
-3. Then, we just need to replace line where we set Task priority to
+3. Next, simply replace the line where the Task priority is set with the following:
 
     ```csharp
     toDoTask.U_Priority = GetDefaultPriority();
     ```
 
-4. Finally after Job class should be same as below
+4. Finally after Job class should look like the following:
 
     SalesOrderToApproveEventJob.cs
 
@@ -254,8 +256,10 @@ Having plugin configuration added, now it's time to use it. We will retrieve val
 
 ## Results
 
-Now, when we add new Sales Order that is unapproved, we should see new task with Huge priority:
+Now, when a new unapproved Sales Order is added, a corresponding task with the priority set to Huge should be created.
 
 ![Add Logistic](./media/plugin-configuration/so-add-unapproved-logistic.webp)
 
 ![Add Huge Task](./media/plugin-configuration/added-huge-task.webp)
+
+---

@@ -167,4 +167,3 @@ Until all items are processed, the entire document retains the "In Progress" sta
 If an item encounters an issue during processing, it is assigned the "Error" status. These exceptions will not affect the status progression of successfully updated items. It may be worth further investigating these errors and updating the prices of these indexes accordingly.
 
 ---
-The Update Price Lists plugin for SAP Business One simplifies the process of managing price updates. By leveraging this plugin, companies can enhance their pricing management processes, reduce manual errors, and improve overall operational efficiency. Whether handling small adjustments or large-scale updates, this tool provides the necessary functionality for successful price management within SAP Business One.

@@ -4,52 +4,56 @@ sidebar_position: 2
 
 # Serialization Plugin Installation and Configuration
 
-The standard plugin installation and configuration is described in the AppEngine documentation [here](../../administrators-guide/configuration-and-administration/overview.md).
+The Serialization Plugin is a powerful extension that enhances traceability and compliance by enabling detailed serialization workflows within CompuTec WMS and ProcessForce. To ensure a successful deployment and seamless functionality, follow this guide, which outlines both the standard installation process and additional steps specific to Serialization Plugin setup.
 
-Here you can find information about additional action that you have to take on top of the standard plugin installation be able to fully use the Serialization plugin.
-Please remember to install versions of the components according to the version table available [here](../../releases/appengine/download.md).
+:::info
+The standard plugin installation and configuration is described in the AppEngine documentation [here](../../administrators-guide/configuration-and-administration/overview.md).
+:::
+
+>**Note**: Please remember to install versions of the components according to the version table available [here](../../releases/appengine/download.md).
 
 ---
 
 ## Prerequisites
 
-### ProcessForce and CompuTec License Server is installed and configured
+Before configuring the Serialization Plugin, make sure the following components are properly installed and configured:
 
-For more information click [here](/docs/processforce/administrator-guide/licensing/license-server/overview).
+- Ensure that ProcessForce and the CompuTec License Server are installed and configured correctly.
+For details, click [here](/docs/processforce/administrator-guide/licensing/license-server/overview).
+- Ensure that CompuTec WMS is installed and configured
 
-### CompuTec WMS is installed and configured
+        - For installation please follow this link: [Installation](/docs/wms/administrator-guide/installation/overview/).
+        - For configuration please follow this link: [Custom Configuration](/docs/wms/administrator-guide/custom-configuration/overview/).
 
-For installation please follow this link: Installation.
-
-For configuration please follow this link: [Custom Configuration](/docs/wms/administrator-guide/custom-configuration/overview/).
-
-## AppEngine and serialization plugin installation and configuration
+## AppEngine and Serialization Plugin Installation and Configuration
 
 For AppEngine installation please follow this link: [Installation](../../administrators-guide/installation.md).
 
 For plugin installation please follow this link: [Configuration and Administration](../../administrators-guide/configuration-and-administration/overview.md).
 
-Please note: after updating the Serialization plugin and restarting the App Engine, remember to update the schema as per the procedure here.
+>**Important**: After updating the Serialization Plugin and restarting AppEngine, make sure to update the schema according to the documented procedure to apply changes correctly.
 
 ## Enabling Serialization
+
+Once the core components are set up, follow these steps to enable Serialization features in both CompuTec WMS and ProcessForce.
 
 ### CompuTec WMS
 
     1. Enter (10) Computec AppEngine address in [WMS Server](/docs/wms/administrator-guide/installation/wms-server/overview/) settings:
 
-    ![CompuTec AppEngine Address (in WMS server settings)](./media/serialization/wms-settings.png)
+        ![CompuTec AppEngine Address (in WMS server settings)](./media/serialization/wms-settings.png)
 
     2. Enable Serialization in [Custom Configuration](/docs/wms/administrator-guide/custom-configuration/overview/):
 
-    ![Serialization](./media/serialization/image2020-1-14-16-40-22.png)
+        ![Serialization](./media/serialization/image2020-1-14-16-40-22.png)
 
     3. Remember to customize main menu options to prepare and set menu with Serialization workflow. For this purpose please follow Custom Config Function: [Manager](/docs/wms/administrator-guide/custom-configuration/custom-configuration-functions/manager/overview/) and sub-function: [Interface Design Manager](/docs/wms/administrator-guide/custom-configuration/custom-configuration-functions/manager/interface-design-manager):
 
-    ![Serialization](./media/serialization/image2020-1-14-16-51-11.png)
+        ![Serialization](./media/serialization/image2020-1-14-16-51-11.png)
 
 ### ProcessForce
 
-As an option you can call Serialization plugin from inside the Process Force:
+Serialization Plugin can also be accessed directly from within ProcessForce.
 
 ![Serialization Plugin (from inside the ProcessForce)](./media/serialization/image2020-1-18-8-44-13.png)
 
@@ -57,4 +61,6 @@ To do this, check the following checkbox:
 
 ![Serialization Plugin (from inside the ProcessForce)](./media/serialization/image2020-1-18-8-33-41.png)
 
-Enter AppEngine URL, e.g. `http://{host}:54000`, click Update and restart SAP Business One.
+Enter AppEngine URL, e.g. `http://{host}:54000`, click "Update" and restart SAP Business One to apply the changes.
+
+---

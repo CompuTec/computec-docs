@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # Overview
 
-The purpose of Bulk Change plugin is to swiftly mass change Production Process on Bill of Materials (BoM) created by ProcessForce. The plugin allows to edit already existing BoMs, as well as creating new ones based on source BoMs for a new Revision. The changes can be related to Items, Coproducts or Scraps, along with Routings, Operations and Resources. Each of these elements can be replaced, add or removed.
+The Bulk Change plugin for CompuTec ProcessForce is designed to efficiently perform mass updates to the Production Process within Bills of Materials (BoMs). It enables users to quickly modify existing BoMs or create new ones based on a source BoM for a new revision.
 
-Click [here](https://www.youtube.com/watch?v=LWqdyGwXCBI&t=3s) for CompuTec ProcessForce BulkChange Demonstration.
+With this tool, changes can be applied across various components, including Items, Co-products, and Scrap, as well as Routings, Operations, and Resources. Each of these elements can be replaced, added, or removed as needed—streamlining the BoM management process.
+
+Click [here](https://www.youtube.com/watch?v=LWqdyGwXCBI&t=3s) to view the CompuTec ProcessForce BulkChange Demonstration.
+
+---

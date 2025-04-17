@@ -32,10 +32,10 @@ To configure plugin functionalities:
 
 ### Available Plugin Settings
 
-- **Disable Price Change** - Prevents editing the price in the document via the plugin. Prices imported from an Excel file will be displayed but cannot be modified.
-- **Disable User Change** - Prevents users from editing the name of the document creator.
-- **Enable Multi Price List** - Allows price updates across multiple price lists simultaneously. If disabled, exporting prices from SAP Business One to an Excel file will only be possible for one selected price list at a time. Similarly, new prices can only be added for a single price list when creating a document.
-- **Multi Price Column Separator** - Defines the character used in the Excel file to separate the price list name and the "NewPrice" value in the first row of the column for entering new prices. For example, if the price list is named "Base Prices 2024" and the separator is set to "_", the column header in the Excel file will appear as "Base Prices 2024_NewPrice" for clarity.
+- **Disable Price Change**: Prevents editing the price in the document via the plugin. Prices imported from an Excel file will be displayed but cannot be modified.
+- **Disable User Change**: Prevents users from editing the name of the document creator.
+- **Enable Multi Price List**: Allows price updates across multiple price lists simultaneously. If disabled, exporting prices from SAP Business One to an Excel file will only be possible for one selected price list at a time. Similarly, new prices can only be added for a single price list when creating a document.
+- **Multi Price Column Separator**: Defines the character used in the Excel file to separate the price list name and the "NewPrice" value in the first row of the column for entering new prices. For example, if the price list is named "Base Prices 2024" and the separator is set to "_", the column header in the Excel file will appear as "Base Prices 2024_NewPrice" for clarity.
 
 ## Background Processing Settings
 
@@ -59,4 +59,3 @@ To configure background processing:
     ![Time](./media/bp-05.png)
 
 ---
-These settings ensure seamless price updates and efficient management of plugin functionalities, empower businesses to customize workflows and optimize performance for specific needs.  Proper configuration is key to achieving seamless integrations and smooth operational performance across platforms.

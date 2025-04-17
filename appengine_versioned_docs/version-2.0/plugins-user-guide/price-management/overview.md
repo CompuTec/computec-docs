@@ -14,10 +14,10 @@ The plugin is a comprehensive solution for changing and updating Item Master Dat
 
 ## Key Benefits
 
-1. **Bulk Price Management** - Easily change prices for numerous Item Master Data across multiple price lists simultaneously.
-2. **Planned Updates** - Prepare and schedule price changes in advance for seamless implementation.
-3. **Error Resilience** - Automatically continues the update process even if errors occur for specific Item Master Data.
-4. **Data Integration** - Instant data imports and exports between SAP Business One and Excel.
+1. **Bulk Price Management**: Easily change prices for numerous Item Master Data across multiple price lists simultaneously.
+2. **Planned Updates**: Prepare and schedule price changes in advance for seamless implementation.
+3. **Error Resilience**: Automatically continues the update process even if errors occur for specific Item Master Data.
+4. **Data Integration**: Instant data imports and exports between SAP Business One and Excel.
 
 ## Core Features
 
@@ -31,4 +31,3 @@ Below are the features that make the PriceManagement Plugin indispensable for SA
 - Customize filters and settings for precise data management.
 
 ---
-This plugin's robust functionality makes it an indispensable tool for businesses aiming to streamline their price management processes within SAP Business One.

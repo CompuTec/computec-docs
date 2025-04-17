@@ -4,17 +4,17 @@ sidebar_position: 10
 
 # Custom Controller
 
-## Description
+In this example, we will demonstrate how to add a custom controller. This tutorial builds upon the previous [Attachments](./attachments.md tutorial. In the previous example, we used the built-in AppEngine Attachments controller to upload attachments. In this new example, we will create a custom controller that handles the task of adding an uploaded attachment to a selected Sales Order.
 
-In this example, we will show how to add a custom controller. Example in this tutorial base on previous tutorial - [Attachments](./attachments.md). In this example, we used AppEngine build in Attachments controller to upload Attachment. In this example, we will add a custom controller, and in it, we will add an uploaded attachment to the selected Sales Order.
+---
 
 ## Creating Custom Controller
 
 1. Open your Plugin solution in Visual Studio.
-2. Create a new class SalesOrderController.cs inside Controllers/Api.
+2. Create a new class SalesOrderController.cs inside the Controllers/Api folder.
 
     ![Solution](./media/custom-controller/sales-order-custom-controller.webp)
-3. This controller needs to inherit from CompuTec.AppEngine.Base.Infrastructure.Controllers.API.AppEngineSecureController, because we need to authenticate a user to work on SAP document.
+3. This controller should inherit from CompuTec.AppEngine.Base.Infrastructure.Controllers.API.AppEngineSecureController, as user authentication is required to work with SAP documents.
 
     SalesOrderController.cs
 
@@ -30,8 +30,8 @@ In this example, we will show how to add a custom controller. Example in this tu
     }
     ```
 
-4. Now, we will add a simple model to pass parameters. First, let's create a new folder in our plugin model project called SalesOrder.
-5. Inside add new file SalesOrderAttachment.cs defined as below:
+4. Now, we will add a simple model to pass parameters. First, create a new folder in your plugin model project called SalesOrder.
+5. Inside this folder, add a new file named SalesOrderAttachment.cs and define it as follows:
 
     ![Sales Order](./media/custom-controller/sales-order-attachement-model.webp)
 
@@ -65,7 +65,7 @@ In this example, we will show how to add a custom controller. Example in this tu
                 }
         ```
 
-    - **GetAttachment** – this method will create new Attachments object and load it from DB if it exists for given Sales Order.
+    - **GetAttachment** – This method will create a new Attachments object and load it from the database if it already exists for the given Sales Order.
 
         ```csharp
         private Attachments2 GetAttachment(int AtcEntry)
@@ -82,7 +82,7 @@ In this example, we will show how to add a custom controller. Example in this tu
                 }
         ```
 
-    - **GetAttachmentsPath** – this method will return attachments path base on SAP configuration. We will need this path as the source of our attachment and this is the path where the AppEngine Attachments controller will upload attachments.
+    - **GetAttachmentsPath** – This method will return the attachment path based on the SAP configuration. We will need this path as the source for our attachment, and it will also be the location where the AppEngine Attachments controller will upload the attachments.
 
         ```chsarp
         public string GetAttachmentsPath()
@@ -102,9 +102,9 @@ In this example, we will show how to add a custom controller. Example in this tu
         ```
 
     - **AddAttachment** – this is controller method that will add attachment information to Sales Order
-    - HttpPost annotation stands for POST method
-    - the route is defining the path to our method
-    - As the input parameter, we are using a simple model created earlier – SalesOrderAttachment
+    - The HttpPost annotation signifies that this is a POST method.
+    - The route specifies the path to our method.
+    - For the input parameter, we are using a simple model created earlie – SalesOrderAttachment
 
         AddAttachment
 
@@ -258,9 +258,9 @@ Having our custom controller in place, we cannot use it in our UI5 application. 
 
 1. First, we will modify our AttachmentsDialog view to include SalesOrder DocEntry and AtcEntry that we will use later. Open SalesOrder.controller.js and change method onAttachmentsButtonPress:
 
-   - DocEntry is retrieved from GenericTag
-   - Model for our view is changed to include AtcEntry, DocEntry
-   - Attachments array is now in Attachments field.
+    - Retrieve the DocEntry from the GenericTag.
+    - Update the model for the view to include AtcEntry and DocEntry.
+    - Ensure the attachments array is now stored in the Attachments field.
 
     onAttachmentsButtonPress
 
@@ -435,7 +435,7 @@ Having our custom controller in place, we cannot use it in our UI5 application. 
         },
         ```
 
-    - \_addAttachmentToSalesOrder – this function adds information about uploaded attachment to the given Sales Order. Here, we need to provide Sales Order DocEntry and uploaded afile name. Inside, prepare parameters model that match SalesOrderAttachment model on backend. Finaly, we call api/FirstPlugin/SalesOrder/AddAttachment POST method and wait for it completition.
+    - \_addAttachmentToSalesOrder – This function adds the information about the uploaded attachment to the specified Sales Order. To do this, we need to provide the Sales Order's DocEntry and the name of the uploaded file. Inside the function, we prepare a parameters model that matches the SalesOrderAttachment model on the backend. Finally, we call the api/FirstPlugin/SalesOrder/AddAttachment POST method and wait for its completion.
 
         ```js
         _addAttachmentToSalesOrder: async function (nSalesOrderDocEntry, sFileName) {
@@ -476,7 +476,7 @@ Having our custom controller in place, we cannot use it in our UI5 application. 
         },
         ```
 
-    - onSalesOrderRefresh – this function simply refresh data in the sales orders table – we need this to update attachments count.
+    - onSalesOrderRefresh – This function is responsible for refreshing the data in the Sales Orders table. It's essential to call this after adding an attachment to ensure the updated attachment count is accurately reflected in the table.
 
         ```js
         onSalesOrderRefresh: function () {
@@ -484,7 +484,7 @@ Having our custom controller in place, we cannot use it in our UI5 application. 
         },
         ```
 
-    - Finally, we can call all of our new logic by changing onAddAttachmentSubmit function. We will replace:
+    - Finally, we can trigger our newly implemented logic by updating the onAddAttachmentSubmit function. To do this, we will replace the existing code with our custom logic.
 
         old:
 
@@ -722,18 +722,20 @@ Having our custom controller in place, we cannot use it in our UI5 application. 
 
 ## Results
 
-We will test our solution by adding attachment to Sales Order number 4, which has two attachments.
+To validate our solution, we tested it by adding an attachment to Sales Order number 4, which already had two existing attachments.
 
 ![Sales](./media/custom-controller/sales-orders-list-add-attachment.webp)
 
-Lets select new Attachment, add confirm our choice with Add Attachment Button.
+We selected a new file and confirmed our selection by clicking the Add Attachment button.
 
 ![Sales](./media/custom-controller/ds9-add-attachment.webp)
 
-Afer uploading attachment and attaching it to Sales Order, Add Attachment dialog model and Sales Orders list is refreshed. We can see newly added attachment in Attachments dialog and download it. Also number of attachments seen in background is increased.
+Once the attachment was uploaded and linked to the Sales Order, the Add Attachment dialog closed and the Sales Orders list refreshed automatically. The newly added attachment appeared in the Attachments dialog, where it could be downloaded. The attachment count in the background list also updated accordingly.
 
 ![Sale Order](./media/custom-controller/sales-orders-lilst-after-attachment-add.webp)
 
-Lastly, we can check Sales Order document directly in SAP. New attachment is visible in Attachments tab.
+Finally, we verified the changes directly in SAP. The new attachment was successfully visible under the Attachments tab of the Sales Order document.
 
 ![Sale Order](./media/custom-controller/sap-sales-orders-after-attachment-add.webp)
+
+---

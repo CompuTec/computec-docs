@@ -75,5 +75,3 @@ After making the necessary changes:
 - Proceed to the second step (Update Price Lists) of the plugin to apply the changes.
 
 ---
-
-Exporting and editing price lists from SAP Business One in Excel simplifies the management of product pricing, providing a straightforward method to update prices for different price lists. With the ability to filter data, select specific price lists and edit multiple Item Master Data at once, the process becomes both efficient and effective. Once changes are made, the updated Excel file can be imported back into SAP Business One to reflect the latest pricing updates. This streamlined approach saves time and enhances accuracy, ensuring that your price lists are always up-to-date.
