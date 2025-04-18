@@ -297,6 +297,11 @@ Materials issued to production are automatically deducted from the warehouse, el
 - Receipt from production has to be confirmed from SAP Business One level by going to Production → Inventory Transactions → Pick Receipts. Pick the required document, click the right mouse button, and choose Receipt from production.
     Check also the [Quick Receipt](../customization/optional-functions/quick-receipt.md) option.
 
+**Auto Select All**: The "Auto Select All" button has been added at the top of the PDC Receipt/Issue window.
+This button automatically assigns quantities for all items in the Pick and Pack window.
+
+    ![Auto All Select](./media/task-activities/image-2025-04-17-15-18-15-502.png)
+
 ### Team Log in
 
 ![Assign Task](./media/task-activities/assign-task.webp)
