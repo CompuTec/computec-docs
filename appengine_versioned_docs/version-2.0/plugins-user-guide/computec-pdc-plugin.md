@@ -40,11 +40,11 @@ ProcessForce API needs to be installed on the same server as AppEngine.
 
 ## Setting up the Application
 
-After a successful installation choose the AppEngine console which database would you like to bind in :
+After installation, launch the AppEngine Console and bind the desired database:
 
 ![Computec PDC Plugin Database](./media/computec-pdc-plugin/computec-pdc-plugin-database.png)
 
-Then open the CompuTec PDC application and fill in Settings with data (default AppEngine server is `https://localhost:54000`. It is required to fill in the fields in the order marked on the following screenshot to refresh the application and download the data.
+Then open the CompuTec PDC application and fill in Settings with data (default AppEngine server is `https://localhost:54000`). Complete the fields in the sequence shown in the screenshot below. This will refresh the application and fetch necessary data.
 
 Filling in the fields marked with the red arrows automatically fills in the fields marked with the purple arrows (then, choose one option from the drop-down list).
 
@@ -52,30 +52,42 @@ Filling in the fields marked with the red arrows automatically fills in the fiel
 
 ## Upgrade of the Application
 
-To successfully upgrade the application please follow the steps:
+To successfully upgrade the application, follow the steps:
 
     1. Update plugin in the AppEngine console (you can do it by choosing the plugin package) and restart the plugin.
-    ![Computec PDC Plugin Update](./media/computec-pdc-plugin/computec-pdc-plugin-3-update.png)
-    ![Computec PDC Plugin Update](./media/computec-pdc-plugin/computec-pdc-plugin-4-update.png)
-    ![Computec PDC Plugin Update](./media/computec-pdc-plugin/computec-pdc-plugin-5-restart.png)
+
+        ![Computec PDC Plugin Update](./media/computec-pdc-plugin/computec-pdc-plugin-3-update.png)
+
+        ![Computec PDC Plugin Update](./media/computec-pdc-plugin/computec-pdc-plugin-4-update.png)
+
+        ![Computec PDC Plugin Update](./media/computec-pdc-plugin/computec-pdc-plugin-5-restart.png)
 
     2. Install the corresponding CompuTec PDC application (before that, you have to remove the already installed CompuTec PDC application)
 
 :::caution
-Check if you need to upgrade CompuTec ProcessForce API too (if yes, remove the existing one and install the new, corresponding one once again).
+Verify whether the CompuTec ProcessForce API also requires an upgrade. If so, uninstall the existing version and install the updated corresponding version.
 :::
 
     3. Start CompuTec PDC application.
 
 ## Additional Information
 
-1. CompuTec PDC details information can be found here.
-2. AppEngine for CompuTec PDC is only available from web address, no reference in SAP Business One or ProcessForce functional objects.
-3.Relevant CompuTec PDC installer to installed CompuTec PDC Plugin can be reached from AppEngine Console level. Instruction below:
+1. For more details about the CompuTec PDC system, refer [here](/docs/pdc/).
+2. AppEngine for PDC is accessed via a web browser. There are no direct links from SAP Business One or ProcessForce functional objects.
+3.To install the correct CompuTec PDC application version that matches your plugin, follow the instructions below:
+
     a. Open Launchpad in Appengine Console:
-    ![Computec PDC Plugin Launchpad](./media/computec-pdc-plugin/computec-pdc-plugin-launchpad.png)
-    b. Fill the login data (remember that here the user ID and password are the same as your SAP Business One login).
-    ![Computec PDC Plugin User ID](./media/computec-pdc-plugin/computec-pdc-plugin-user-id.png)
-    c. Open CompuTec PDC, download the file and go through the installation.
-    ![Computec PDC Plugin](./media/computec-pdc-plugin/computec-pdc-plugin-opening.png)
-    ![Computec PDC Plugin](./media/computec-pdc-plugin/computec-pdc-plugin.png)
+
+        ![Computec PDC Plugin Launchpad](./media/computec-pdc-plugin/computec-pdc-plugin-launchpad.png)
+
+    b. Enter login credentials (same as SAP Business One credentials).
+
+        ![Computec PDC Plugin User ID](./media/computec-pdc-plugin/computec-pdc-plugin-user-id.png)
+
+    c. Open CompuTec PDC, download the file and complete the installation process.
+
+        ![Computec PDC Plugin](./media/computec-pdc-plugin/computec-pdc-plugin-opening.png)
+
+        ![Computec PDC Plugin](./media/computec-pdc-plugin/computec-pdc-plugin.png)
+
+---
