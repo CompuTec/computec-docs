@@ -40,7 +40,7 @@ You can access the Put Away module via the AppEngine launchpad.
 
     ![AppEngine Launchpad](./media/put-away/screenshot-1.png)
     ![AppEngine Launchpad](./media/put-away/screenshot-2.png)
-    ![AppEngine Launchpad](./media/put-away/screenshot-3.png)
+    ![AppEngine Launchpad](./media/put-away/image.png)
     ![AppEngine Launchpad](./media/put-away/screenshot-4.png)
 
 To add a new rule, press the plus icon.
