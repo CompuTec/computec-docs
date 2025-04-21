@@ -48,7 +48,8 @@ Install CompuTec.ProcessForce.API for customers utilizing ProcessForce. This ste
 
 ### Install WMS Server
 
-Execute the installation process for the WMS Server
+Execute the installation process for the WMS Server.
+Learn how to install the WMS Client [here](../../administrator-guide/installation/wms-client/computec-wms-client-download.md)
 
 ### Configuration
 

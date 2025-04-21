@@ -24,5 +24,10 @@ This will redirect you to the download page where you can easily download the re
     You can download a required Client file directly to the device from [here](https://learn.computec.one/docs/wms/releases/download).
     :::
 
+3. Alternatively locate the installation files directly on the machine where the CompuTec WMS Server is installed.
+
+    :::Path
+        C:\Program Files\CompuTec\WMS Server\wwwroot\Builds
+    :::
+
 ---
-The new download method introduced with CompuTec WMS 2.10.8 R1 provides a more convenient way to access WMS Client files. Ensure that your WMS Server is correctly configured and enjoy the enhanced accessibility.
