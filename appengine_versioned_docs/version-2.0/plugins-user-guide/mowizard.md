@@ -3,53 +3,69 @@ sidebar_position: 7
 ---
 # MOWizard
 
-The purpose of this plugin is to create Manufacturing Orders based on chosen Sales Orders' lines. It allows managing multilevel, complex product trees swiftly. Creation of this plugin was inspired by cases of companies that have large numbers of Manufacturing Orders related to a single line on a Sales Order.
+MOWizard is a powerful plugin designed to streamline the creation of Manufacturing Orders (MOs) based on selected Sales Order lines. It is especially useful for businesses managing complex, multi-level product structures, complex product trees swiftly. Creation of this plugin was inspired by cases of companies that have large numbers of Manufacturing Orders related to a single line on a Sales Order. This tool enables faster processing and better visibility, reducing manual work and improving production efficiency.
+
+---
 
 ## Installation
 
-Get the installation file from [here](../releases/plugins/mowizard/download.md).
+1. Get the installation file from [here](../releases/plugins/mowizard/download.md).
+2. Follow the plugin installation instructions from [here](../administrators-guide/configuration-and-administration/overview.md#plugins).
+3. Once installed, go to Launchpad and select the MOWizard plugin to begin.
 
-Follow the plugin installation instructions from [here](../administrators-guide/configuration-and-administration/overview.md#plugins).
-
-After completing the installation, go to Launchpad and choose the MOWizard plugin to start working with it:
-![MOWizard](./media/mowizard/mowizard.png)
-
-If the right option is chosen, the plugin is available from the SAP Business One main menu: Production → MOWizard.
+    ![MOWizard](./media/mowizard/mowizard.png)
+4. Alternatively, access it via the SAP Business One main menu: Production → MOWizard.
 
 ## Usage
 
-Click the plus icon to add a new Job. You can create many of these.
+Click the plus (+) icon to create a new job. You can create multiple jobs as needed.
 
 ![MOWizard](./media/mowizard/mowizard-add-job.png)
 
-    1. Job Description: choose any name (mandatory) and description (optional) and click the Step 2 icon:
-    ![MOWizard](./media/mowizard/mowizard-job-description.png)
+    1. Job Description: Choose any name (mandatory) and description (optional) and then proceed to the next step by clicking the Step 2 icon:
 
-    2. Sales Orders lines selection. Filter the list by desired values (you can skip this step) and choose the required lines from the list:
-    ![MOWizard](./media/mowizard/mowizard-sale-orders-selection.png)
+        ![MOWizard](./media/mowizard/mowizard-job-description.png)
+
+    2. Sales Orders lines selection: Use filters as needed to narrow down the Sales Order lines, or skip filtering to view all available lines.
+
+        ![MOWizard](./media/mowizard/mowizard-sale-orders-selection.png)
 
         The Available Sales Orders Positions table holds Sales Orders lines that can be filtered by many conditions (the Filter Available Sales Orders Positions section).
 
         Checking the required checkboxes and clicking Add Selected Positions moves them to the Selected Sales Orders Positions table (click the checkbox in the first row to mark all of the lines in the list). These Sales Orders' lines will be further processed.
-        Here you can still change quantity:
+        You can modify quantities if needed.
+
         ![MOWizard](./media/mowizard/mowizard-selected-quantity.png)
-        After this, Click Step 3. 
+        Click Step 3. to continue.
 
-    3. Manufacturing Orders. <br/>Here, click Generate Manufacturing Orders. Click Yes in the system message form:
-    ![MOWizard](./media/mowizard/mowizard-generating-orders.png)
+    3. Manufacturing Orders: Click "Generate Manufacturing Orders". Click "Yes" in the system message form:
 
-        Click the Yes button to continue. The creation is not immediate and some time is needed to complete it, depends on number of Manufacturing Orders and their structure. Started Jobs are displayed in the Running tab (please check the second screenshot on this page).
+        ![MOWizard](./media/mowizard/mowizard-generating-orders.png)
 
-        You can see the prepared manufacturing tree in a map and table form. <br/>At this moment manufacturing trees are generated but no Manufacturing Order is yet created.
+        Click Yes to proceed. Please note that the creation process is not instantaneous - it may take some time to complete, depending on the number and complexity of the Manufacturing Orders involved. Once initiated, the job appears under the Running tab (refer to the second screenshot on this page).
 
-    4. Once the manufacturing tree is created, the related job is moved from the Running tab to the Prepared tab. Once the job is generated, it is not possible to change any data in it. Click the required job line in the Prepared tab to see the related data. <br/>Here, you can see the chosen data in form of a manufacturing tree (the Map tab, showing relations between linked Manufacturing Orders) or a table (the Table tab). <br/>The map view shows the manufacturing tree divided by material groups. <br/>This section is for data preview only.
+        At this stage, the system generates the manufacturing tree, which you can view in both map and table formats. However, no Manufacturing Orders have been created yet - this step is purely for structure generation and review.
 
-    5. Click the Step 5 button to go to the Planning section. <br/>Here, you can see information on the planned Manufacturing Orders. <br/>If you want to choose specific Manufacturing Orders, click the Edit button at the top of the form. <br/>You can change numbering series and Manufacturing dates. If you change the dates, click the Reschedule button after that. <br/>Once the editing is finished, click the Summary button.
+    4. Once the manufacturing tree is created, the related job is moved from the Running tab to the Prepared tab. Once the job is generated, it is not possible to change any data in it. Click the required job line in the Prepared tab to see the related data.
+        - Here, you can see the chosen data in form of a manufacturing tree (the Map tab, showing relations between linked Manufacturing Orders) or a table (the Table tab).
+        - The map view shows the manufacturing tree divided by material groups.
+        - This section is for data preview only.
 
-    6. Here, you can see the Manufacturing Orders that are about to be created. <br/>Link child MOR's option is checked by default.
+    5. Click Step 5 to enter the Planning section. Here, you can see information on the planned Manufacturing Orders. If you want to choose specific Manufacturing Orders, click the Edit button at the top of the form. 
+        - You may change the numbering series or manufacturing dates.
+            - Click Reschedule if you change any dates.
+            - Click Summary to proceed.
 
-    7. Click Save and Run. The job is now moved to the Running tab. When all planned Manufacturing Orders are created, the job will be moved to the Completed tab. If not all of the Manufacturing Orders were created (e.g. because a child Manufacturing Order was chosen in the edit mode but not a higher level Manufacturing Order), the job will be moved back to the Prepared tab. Here, you can click the job and check which Manufacturing Orders were created, which were not and why (click the Manufacturing Order with the Failure status to get this information).
+    6. Here, you can see the Manufacturing Orders that are about to be created. The Link child MOR's option is checked by default.
+
+    7. Click Save and Run to initiate the job.
+        - The job is moved back to the Running tab.
+        - Once all Manufacturing Orders are successfully created, the job moves to the Completed tab.
+        - If some Manufacturing Orders are not created (e.g., due to parent-child dependency issues), the job returns to the Prepared tab.
+        - Click the job to view details. For failed Manufacturing Orders, select the line with Failure status to see the reason.
 
 **Example usage**
 
 Click [here](https://www.youtube.com/watch?v=HdCU7PtdwPA) to know more about Example Usage.
+
+---
