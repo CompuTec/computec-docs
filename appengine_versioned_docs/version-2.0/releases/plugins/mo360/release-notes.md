@@ -9,9 +9,17 @@ toc_max_heading_level: 2
 The latest Installer is available to download from [here](../../plugins/mo360/download.md).
 :::
 
+## MO360 1.10.14.1
+
+### Release Date - 23 April 2025
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Bug | MO360 | Incorrect formatting of the Resource Name, Operation Name, and Dates |
+
 ## MO360 1.10.13.1
 
-### *Release Date - 21 March 2025*
+### Release Date - 21 March 2025
 
 | Issue Type | Component | Release Note |
 | --- | --- | --- |
@@ -21,7 +29,7 @@ The latest Installer is available to download from [here](../../plugins/mo360/do
 
 ## MO360 1.10.12.1
 
-### *Release Date - 23 May 2024*
+### Release Date - 23 May 2024
 
 | Issue Type | Component | Release Note |
 | --- | --- | --- |
@@ -32,7 +40,7 @@ The latest Installer is available to download from [here](../../plugins/mo360/do
 
 ## MO360 1.10.10.1
 
-### *Release Date - 9 November 2023*
+### Release Date - 9 November 2023
 
 | Issue Type | Release Note | Related Issue |
 | --- | --- | --- |
@@ -43,7 +51,7 @@ The latest Installer is available to download from [here](../../plugins/mo360/do
 
 ## MO360 1.10.8.3
 
-### *Release Date - 1 February 2023*
+### Release Date - 1 February 2023
 
 | Issue Type | Release Note | Related Issue |
 | --- | --- | --- |
@@ -64,7 +72,7 @@ The latest Installer is available to download from [here](../../plugins/mo360/do
 
 ## MO360 1.10.7.1
 
-### *Release Date - 25 July 2022*
+### Release Date - 25 July 2022
 
 | Issue Type | Release Note | Related Issue |
 | --- | --- | --- |
@@ -80,7 +88,7 @@ The latest Installer is available to download from [here](../../plugins/mo360/do
 
 ## MO360 1.10.6.5, 1.93.6.5
 
-### *Release Date - 26 April 2022*
+### Release Date - 26 April 2022
 
 | Issue Type | Release Note | Related Issue |
 | --- | --- | --- |
