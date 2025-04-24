@@ -164,8 +164,6 @@ This job synchronizes data to SAP Business One Additional Batch details upon upd
 
 This job creates a related Batch Master Data upon creation of a Batch in SAP Business One.
 
-to synchronizacja Batch Synchronization jest uruchamiana przez AppEngine, w innym przypadku działa jak wcześniej tzn. synchronizacja wykonywana jest po stronie serwisu WMS
-
 If this job is turned on, the Batch Synchronization is performed by AppEngine (otherwise, the synchronization is performed by CompuTec WMS service, in contect of using CompuTec WMS).
 
 **This job improves ProcessForce and CompuTec WMS performance**.
@@ -173,3 +171,5 @@ If this job is turned on, the Batch Synchronization is performed by AppEngine (o
 ### ManufacturingOrderWizardRecoverJob
 
 This job is started upon a start of AppEngine and checks if there are any unfinished Manufacturing Order Wizard tasks to process.
+
+---
