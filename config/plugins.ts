@@ -16,7 +16,8 @@ export function getDocPlugin(doc: DocConfig): PluginConfig {
         {
             id: doc.pluginId,
             routeBasePath: path.posix.join("/docs", doc.pluginId),
-            path: path.join("docs", doc.pluginId),
+			path: path.join("docs", doc.pluginId),
+			editUrl: "https://github.com/CompuTec/computec-docs/edit/main/",
             versions,
 			includeCurrentVersion: doc.includeCurrentVersion,
 			lastVersion: doc.lastVersion,
