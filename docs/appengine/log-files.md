@@ -10,6 +10,4 @@ If the CompuTec AppEngine installation fails, the logs can be found in the Windo
 C:\ProgramData\CompuTec\AppEngine\logs
 :::
 
-The error logging level can be configured directly within the AppEngine settings.
 
-![Log Files](./media/log-files.png)
