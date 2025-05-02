@@ -36,3 +36,5 @@ Click [here](https://www.youtube.com/watch?v=FgMWdGypw7s) to know more about Wei
 7. The weight of the product has been saved and successfully supplied.
 
     ![Document Details](./media/7.webp)
+
+---

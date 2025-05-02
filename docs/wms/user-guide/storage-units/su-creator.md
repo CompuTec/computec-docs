@@ -46,3 +46,5 @@ Using this option, it is possible to create a number of SUs with the same conten
 
     ![SU Content](./media/SUCont-42.webp)
 14. The Save icon saves the defined Storage Units and leads back to the SU Operations form. New Storage Units are created and can be used in other transactions.
+
+---

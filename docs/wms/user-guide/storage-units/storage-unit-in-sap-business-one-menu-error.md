@@ -18,3 +18,5 @@ Update the object in SAP Business One manually for the matrix and header.
 6. Modifying the fields for the default form: check the Name, DocEntry, CreateDate, U_Code, U_WhsCode, UBinCode, U_Status, and U_SSCC checkboxes and click the Next button twice.
 7. Modifying fields for a child table default form: choose the CT_WMS_STU1 from the drop-down list. Check the Code, U-LineNum, U_ItemCode, U_Quantity, U_ManageType, U_SnOrBtnAbs, U_ItemType, and U-DistNumber and click the Next button and then the Finish button.
 8. Repeat the procedure for the Header Line Style.
+
+---

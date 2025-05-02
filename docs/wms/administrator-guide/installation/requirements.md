@@ -166,4 +166,3 @@ When upgrading to version 2.0 from any previous version, you need to manually tr
     ![Custom Change](./media/custom-change.webp)
 
 ---
-By carefully following these requirements and installation steps, you can ensure CompuTec WMS is set up correctly and operates smoothly. Each configuration plays a crucial role in preventing issues and optimizing system performance

@@ -27,4 +27,3 @@ To upgrade to CompuTec WMS 2.0, follow these steps:
 3. Perform the installation procedure described [here](././installation/requirements.md) using new files. Please fulfill the [requirements](./installation/requirements.md) and install both [WMS Server](../administrator-guide/installation/wms-server/overview.md) and [WMS Client](../administrator-guide/installation/wms-client/wms-desktop-client.md) components.
 
 ---
-Thank you for visiting this page. This process will help maintain the performance and functionality of your WMS system, allowing you to take full advantage of the new features and improvements.

@@ -107,3 +107,5 @@ Here, you can describe handling Storage Units in the Stock Transfer transaction.
 9. You can then add remarks (optional) and save the document:
 
     ![Remarks](./media/su-remarks.webp)
+
+---

@@ -194,4 +194,3 @@ You can also add custom queries to specific transactions, such as the Transfer R
 To use Sales UoM for new Inventory Transfers, check the Use Sales UoM option. If unchecked, the system will use the UoM from the Inventory.
 
 ---
-By configuring these options, you can tailor UoM management in CompuTec WMS to suit your business processes and improve inventory handling efficiency.

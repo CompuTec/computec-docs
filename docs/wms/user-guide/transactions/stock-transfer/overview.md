@@ -146,3 +146,5 @@ Some forms' order and availability during a document's creation may vary dependi
     ![Remarks](./media/Saved.webp)
 
 22. An Inventory Transfer is posted and is available in SAP Business One.
+
+---

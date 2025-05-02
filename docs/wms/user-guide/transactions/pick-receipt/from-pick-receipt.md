@@ -39,3 +39,5 @@ sidebar_position: 3
 10. You can click the 'Left Arrow' icon to go back and change the transaction details, choose Numbering Series (if applies), put remarks, or click the 'Save' icon to save all the changes
 
     ![Remarks](./media/ProductionReceiptRemarks2.webp)
+
+---

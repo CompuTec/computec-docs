@@ -72,3 +72,5 @@ B. Adding an SU without a previously chosen Warehouse:
 16. Now you can check the Remarks and Save the document (the lower right icon):
 
     ![Details](./media/new-grpo-document-remarks.webp)
+
+---

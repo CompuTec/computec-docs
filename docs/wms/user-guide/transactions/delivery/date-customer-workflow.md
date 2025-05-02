@@ -29,3 +29,5 @@ The date-customer workflow allows one to choose a date and then specify the Cust
 
     ![Delivery Remarks](./media/delivery-remarks-2.webp)
 7. Click the Save icon to save the document.
+
+---

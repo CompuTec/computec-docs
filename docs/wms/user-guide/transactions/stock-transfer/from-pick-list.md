@@ -28,3 +28,5 @@ sidebar_position: 4
 5. In the last step, saves the document
 
     ![Pick List](./media/ST9.png)
+
+---

@@ -35,3 +35,5 @@ Goods Receipt PO
 - Fill in previously added UDF
 - Save SU to document
 - Press next and Save the transaction.
+
+---

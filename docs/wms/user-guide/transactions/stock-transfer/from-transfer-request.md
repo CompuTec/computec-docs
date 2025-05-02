@@ -139,3 +139,5 @@ sidebar_position: 2
     ![Saved](./media/Saved3.webp)
 
 15. An Inventory Transfer is posted and is available in SAP Business One.
+
+---

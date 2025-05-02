@@ -111,4 +111,3 @@ In cases where the total quantity cannot be evenly divided between units, CompuT
 If CompuTec WMS is integrated with CompuTec Labels, a label can be automatically printed each time a unit is saved. In this example, the user receives a label for each of the ten units (e.g., a box) upon saving them individually, rather than receiving all ten labels when the entire document is saved.
 
 ---
-The Catch Weight functionality in CompuTec WMS offers a practical solution for managing inventory where weight discrepancies exist, ensuring accurate tracking and management of inventory based on both DUoM and IUoM. Whether you're managing goods receipt, stock transfer, or deliveries, Catch Weight can improve the accuracy and reliability of your warehouse operations.

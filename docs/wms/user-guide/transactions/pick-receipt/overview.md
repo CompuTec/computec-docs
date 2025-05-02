@@ -396,3 +396,5 @@ The **New SU Each Qty** option creates a new SU upon every new pick in the Quant
 Creation of a Goods Receipt at the end of the transaction or with picking using PF Auto Receipt option, changes status of the SU to **O – Open**. SUs with this status are already available in the SU Info transaction are ready to work with.
 
 The Automatic Creation option does not work with the Update each pick option due to the application performance (saving to a database so many entries slow down the performance).
+
+---

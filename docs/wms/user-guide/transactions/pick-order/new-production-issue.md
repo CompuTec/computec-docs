@@ -108,3 +108,5 @@ The Pick Order transaction allows generating a ProcessForce Production Issue.
 12. Goods Issue has been created and recorded and can be viewed in SAP Business One.
 
     ![Goods Issue](./media/goods-issue-01.png)
+
+---

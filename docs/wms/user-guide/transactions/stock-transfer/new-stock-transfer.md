@@ -97,3 +97,5 @@ Some forms' order and availability during a document's creation may vary dependi
 12. The Inventory Transfer is posted and is available in SAP Business One.
 
     ![New Inventory Transfer](./media/new-inventory-transfer.png)
+
+---

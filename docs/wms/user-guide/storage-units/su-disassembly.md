@@ -46,3 +46,5 @@ This function allows the disassembled Storage Unit to take Items from it and put
 9. Info message appears:
 
     ![Picked Items](./media/9_SUDisSuc.webp)
+
+---

@@ -35,3 +35,5 @@ sidebar_position: 4
 
     ![Settings](./media/settings-22.webp)
 10. Your WMS is ready to proceed with the weight scale.
+
+---

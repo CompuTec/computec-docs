@@ -163,3 +163,5 @@ This leads to Document details. Items and quantities. Click the right arrow to m
 You can put remarks, add UDFs, move to the previous screen, or save the document.
 
 ![Remarks](./media/Remarks3.webp)
+
+---

@@ -31,4 +31,3 @@ The Inventory Register form offers an extensive view of all CompuTec WMS transac
     ![Inventory Register Form](./media/inventory-register.png)
 
 ---
-By leveraging the Storage Unit and Inventory Register forms, businesses can enhance operational efficiency, ensure stock accuracy, and maintain better control over their Warehouse Management processes.

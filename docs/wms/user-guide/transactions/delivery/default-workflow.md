@@ -97,3 +97,5 @@ The following description applies to the default Delivery workflow. Click [here]
     ![Saved](./media/delivery-saved.webp)
 16. A note about the creation of a document is displayed. Click "OK" to finish the transaction.
 17. The delivery is posted and is available in SAP Business One.
+
+---

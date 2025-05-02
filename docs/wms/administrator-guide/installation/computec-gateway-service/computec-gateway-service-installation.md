@@ -19,3 +19,5 @@ sidebar_position: 1
 3. The CompuTec Gateway Service was successfully started and connected to Service Layer. Now you can go to the Weight Configuration Manager.
 
     ![Services](./media/services.webp)
+
+---

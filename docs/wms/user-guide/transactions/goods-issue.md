@@ -92,3 +92,5 @@ A communication about the document's creation (with its number) will be displaye
 Click OK. The newly created document is now available in the SAP Business One system.
 
 ![Goods Issue](./media/goods-issue.png)
+
+---

@@ -63,4 +63,3 @@ This guide outlines the steps to correctly configure a Mettler Toledo weight sca
 ![Mettler Toledo](./media/mettler-12.webp)
 
 ---
-By following these steps, your Mettler Toledo weight scale will be correctly configured and ready for use with CompuTec Gateway and CompuTec WMS 2.0. This configuration ensures accurate data communication and efficient operation, streamlining your workflows. For further assistance, consult the official documentation or contact support.

@@ -32,4 +32,3 @@ In CompuTec WMS Client settings, choose the required port:
 3. Ensure that SSL or non-SSL settings are correctly configured on the server. Make the same SSL or non-SSL settings on the mobile device to ensure consistency across devices.
 
 ---
-Implementing SSL in CompuTec WMS ensures that your data transfers remain secure and encrypted, protecting sensitive information from unauthorized access. By following the outlined requirements and usage instructions, you can easily configure SSL on both the server and client devices, providing a robust security framework for your WMS operations. Consistency in configuration across all devices, including mobile clients, is key to maintaining a reliable and secure connection.

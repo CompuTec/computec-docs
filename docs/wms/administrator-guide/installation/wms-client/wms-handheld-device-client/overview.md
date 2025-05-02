@@ -52,6 +52,3 @@ Follow these steps to install the CompuTec WMS Client on your handheld device:
 Click [here](./cold-boot.md) to learn how to keep the application and its configuration in case of a cold boot.
 
 ---
-By following the above instructions, you will be able to successfully install the CompuTec WMS Handheld Device Client on your Windows CE or Windows Mobile device. Ensure that you meet all system requirements and have the necessary libraries installed for smooth operation.
-
-If you encounter any issues during installation or setup, contact technical support for assistance.

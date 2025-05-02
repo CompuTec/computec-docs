@@ -30,3 +30,5 @@ The following description applies to the Customer-Date workflow. Click [here](de
     ![Remarks](./media/delivery-remarks.webp)
 
 Click the Save icon to save the document.
+
+---

@@ -48,4 +48,3 @@ This guide provides detailed instructions for configuring and using weight scale
     ![Barcode](./media/barcode.webp)
 
 ---
-By following this guide, you can efficiently configure and utilize weight scales within CompuTec WMS, enabling precise weight management and enhancing operational productivity. Whether you're using gross, net weights, or barcode integration, these steps will help you streamline the process and achieve consistent results.

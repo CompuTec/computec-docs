@@ -18,4 +18,3 @@ When SSO is enabled, the WMS databases in the WMS Settings and WMS Client will o
     ![SSO Connection](./media/sso-connection.png)
 
 ---
-Proper configuration of SSO ensures a secure and efficient user experience, allowing seamless access to WMS databases. By adhering to these prerequisites, administrators can maximize the benefits of SSO while maintaining system integrity and accessibility.

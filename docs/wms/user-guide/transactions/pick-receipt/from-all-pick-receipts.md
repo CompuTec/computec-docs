@@ -25,3 +25,5 @@ sidebar_position: 2
 7. Remarks window: you can add Remarks, change numbering Series, or put values to User-Defined Fields.
 
     ![Remarks](./media/Remarks.webp)
+
+---

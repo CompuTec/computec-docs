@@ -70,3 +70,5 @@ The items and their quantities are successfully added to the document:
 ### Delivery is Posted in SAP Business One
 
     ![SAP Delivery](./media/sap-delivery.png)
+
+---

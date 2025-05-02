@@ -108,5 +108,3 @@ License validity is checked every 10 minutes. If the license is disconnected or 
 If the license is lost (e.g., because of connection to CompuTec License Server interruption), go to the 'PDC/WMS Licensing form' (see the screenshot above), check a checkbox in the Used column, and click Update. After re-logging into the application, you can continue with the transaction where you left off.
 
 ---
-
-This concludes the licensing process for CompuTec WMS. Ensure that all terminals are licensed and assigned properly for smooth operation.

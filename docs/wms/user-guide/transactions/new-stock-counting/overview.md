@@ -393,3 +393,5 @@ Only Serial Number in the Serial Numbers form and when adding a new one:
 ![Serials](./media/stock-counting-scan-serial.webp)
 
 ![Serials](./media/stock-counting-scan-serial2.webp)
+
+---

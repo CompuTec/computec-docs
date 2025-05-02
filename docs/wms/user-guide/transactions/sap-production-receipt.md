@@ -65,3 +65,5 @@ A note about the creation of a document is displayed. Click 'OK' to finish the t
 The SAP Production Issue is posted and is available in SAP Business One:
 
 ![Production](./media/receipt-from-production.png)
+
+---

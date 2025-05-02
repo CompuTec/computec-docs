@@ -93,3 +93,5 @@ The AppEngine plugin is required to use the New Stock Counting either with SAP B
 If the plugin is unavailable, there will be information about it in CompuTec WMS.
 
 ![Not Enabled](./media/plugin-not-enabled.webp)
+
+---

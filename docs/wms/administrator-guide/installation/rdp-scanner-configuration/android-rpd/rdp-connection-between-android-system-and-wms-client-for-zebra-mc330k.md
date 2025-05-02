@@ -36,4 +36,3 @@ In this guide, we'll walk you through the process of setting up a Remote Desktop
 16. **Connect** - Select the "Connection" to begin using the WMS Client from your Zebra MC330K device.
 
 ---
-By following these simple steps, you'll have successfully set up an RDP connection between your Zebra MC330K device and your WMS Client on the PC. This will enable you to efficiently access and manage your WMS client remotely from your Zebra device, enhancing productivity and streamlining your workflow.

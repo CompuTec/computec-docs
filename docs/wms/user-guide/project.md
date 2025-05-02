@@ -23,4 +23,3 @@ A default project for a specific transaction type can be defined in the relevant
         ![Assigning Project](./media/sales-order.png)
 
 ---
-Understanding the hierarchy of project assignment in CompuTec WMS is essential for consistent project tracking and accurate documentation in SAP Business One. By configuring projects within the Custom Config tabs and knowing the priority of project settings, businesses can streamline Project Management processes and ensure accuracy in reporting.

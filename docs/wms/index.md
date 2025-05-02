@@ -27,4 +27,3 @@ CompuTec WMS focuses on generating documents within the SAP Business One databas
     ![WMS](./media/index/wmsmenu.webp)
 
 ---
-CompuTec WMS provides a robust, mobile-enabled solution that enhances productivity and supports growth. By automating and simplifying complex warehouse tasks, businesses can improve their overall Supply Chain Management, reduce errors, and deliver superior service to customers.

@@ -152,4 +152,3 @@ Learn how to install the WMS Client [here](../../administrator-guide/installatio
     ![WMS Business Logic](./media/overview/wms-business-logic.png)
 
 ---
-By following this comprehensive guide, you will successfully set up and configure CompuTec WMS to integrate seamlessly with SAP Business One. Regular validations and updates are essential to maintain compatibility and enhance system performance. For additional assistance or advanced configurations, consult the CompuTec support team.

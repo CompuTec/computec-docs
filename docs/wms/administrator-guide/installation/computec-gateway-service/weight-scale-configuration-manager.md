@@ -54,3 +54,5 @@ This document provides a step-by-step guide on how to configure CompuTec WeightS
     ![Save](./media/weight-scale-configuration-manager/save-configuration.png)
 
     ![Test Drivers](./media/weight-scale-configuration-manager/image-6.png)
+
+---

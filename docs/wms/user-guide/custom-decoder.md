@@ -334,4 +334,3 @@ You can also use your own query and rules. Below are some examples:
 ![Example](./media/example-02.jpg)
 
 ---
-CompuTec WMS’s custom decoder functionality enhances data flexibility and accuracy by allowing tailored data processing through barcode rules. With options for defining variables, creating complex rules, and testing configurations, users can adapt WMS workflows to specific operational needs, optimizing scanning and transaction processing.

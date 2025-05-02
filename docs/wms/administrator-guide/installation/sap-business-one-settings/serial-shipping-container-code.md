@@ -29,4 +29,3 @@ To define and configure the Serial Shipping Container Code in SAP Business One, 
 5. To manage the SSCC numbers systematically, set a "Serial Reference Number". For instance, if you enter 000000001, the SSCC numbering will begin at this point, and subsequent numbers will automatically be assigned (e.g., 000000002, 000000003, etc.). You can also set a higher number to adjust the starting point to align with previous SSCC series used by your company.
 
 ---
-Properly setting up SSCC definitions not only facilitates better inventory control but also ensures compliance with global logistics standards.

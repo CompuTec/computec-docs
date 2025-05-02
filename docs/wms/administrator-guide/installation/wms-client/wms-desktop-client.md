@@ -31,4 +31,3 @@ This guide provides a detailed, step-by-step process to help you install the Com
 6. Once the installation is complete, the CompuTec WMS Desktop Client is ready to run. You can now start the application by clicking the shortcut created in your Windows program list.
 
 ---
-With the installation complete, you can now easily access and utilize the features of the CompuTec WMS client for efficient Warehouse Management. If you encounter any issues or require further assistance, don't hesitate to reach out to our support team for guidance. Enjoy using your new CompuTec WMS client!

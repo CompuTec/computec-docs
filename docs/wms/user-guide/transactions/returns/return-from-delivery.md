@@ -178,3 +178,5 @@ CompuTec WMS will also receive information about the document creation status.
 Return document is available in SAP Business One after saving it in CompuTec WMS. The remarks field also contains standard information about the base document for return.
 
 ![SAP Return](./media/sap-return.png)
+
+---

@@ -251,3 +251,5 @@ Items displayed the way they are on the Pick List, not like on the Sales Order. 
 
         After scanning a location, only Items with quantity picked from this location are displayed (or just present in this location if they were not assigned).
     4. Adding Storage Unit.
+
+---

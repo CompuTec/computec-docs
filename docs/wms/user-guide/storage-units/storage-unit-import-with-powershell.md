@@ -83,3 +83,5 @@ sidebar_position: 10
 10. Open the files in Notepad and remove the first row:
 
     ![Notepad](./media/notepad.webp)
+
+---

@@ -47,4 +47,3 @@ For the CompuTec WMS CE (Client Edition) Client, the decimal and thousand separa
     ![Regional Settings](./media/regional-settings-04.png)
 
 ---
-Configuring the correct decimal and thousand separators is crucial for ensuring accurate data representation in CompuTec WMS, whether you're using the Desktop Client or the CE Client. Following the steps outlined above, you can easily set up and customize the separators to suit your business needs.

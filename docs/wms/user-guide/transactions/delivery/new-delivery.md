@@ -76,3 +76,5 @@ You can add remarks, change document series, or set the supplier ref no on the r
 - The Delivery document is posted in SAP Business One.
 
     ![SAP Delivery](./media/sap-delivery-01.png)
+
+---

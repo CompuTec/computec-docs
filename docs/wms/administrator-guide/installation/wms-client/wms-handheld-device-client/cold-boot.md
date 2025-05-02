@@ -57,4 +57,3 @@ To keep CompuTec WMS configuration available after a cold boot, perform the foll
 This ensures that even after a cold boot, the WMS configuration will be preserved and automatically reapplied, preventing the loss of critical settings and data.
 
 ---
-By following these steps, you can ensure that the CompuTec WMS configuration remains intact after a cold boot, safeguarding against unintentional data loss due to device resets or power issues. Regularly backing up and managing your device’s software setup will help maintain business continuity and improve system reliability.

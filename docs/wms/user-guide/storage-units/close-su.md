@@ -31,4 +31,5 @@ This option allows you to close a specific SU. Closed SU are not displayed on SU
     ![Storage Unit Details](./media/5_CloseSU4.webp)
 
     The SU is now closed.
-  
+
+---

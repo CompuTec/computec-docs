@@ -27,3 +27,5 @@ Created SUs can be browsed in SAP Business One. Click [here](../../administrator
 Click the 'SU Operations' option in the main menu to go to related options:
 
 ![SU](./media/SUOperations.webp)
+
+---

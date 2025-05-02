@@ -25,4 +25,3 @@ To perform the Item Details procedure, choose the following path in SAP Business
     ![Restore Item Details](./media/restore-item-details.png)
 
 ---
-Using the "Restore Item Details" functionality ensures that your system remains integrated and up-to-date, allowing for proper data management and inventory control.

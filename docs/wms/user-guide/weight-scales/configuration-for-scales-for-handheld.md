@@ -24,4 +24,3 @@ This guide provides step-by-step instructions for configuring scales for the WMS
 4. For detailed guidance on integrating WMS with the handheld devices, refer to the relevant [documentation](../../administrator-guide/installation/computec-gateway-service/computec-gateway-service-installation.md).
 
 ---
-Following the steps outlined in this guide ensures reliable operation and efficient warehouse management. For additional resources or technical support, check the WMS integration documentation.

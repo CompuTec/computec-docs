@@ -34,3 +34,5 @@ sidebar_position: 2
 
     ![Document Details](./media/DocDet_oneadded.webp)
 6. You can check the document being posted in SAP Business One.
+
+---

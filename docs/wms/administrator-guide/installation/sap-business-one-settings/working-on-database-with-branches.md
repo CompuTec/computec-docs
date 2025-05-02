@@ -23,4 +23,3 @@ To configure and work with CompuTec WMS on a database that includes multiple bra
 - A user can only be assigned to one branch at a time. Therefore, make sure that each user is correctly configured for the branch they will be working with.
 
 ---
-By assigning users to individual branches and creating appropriate user defaults files, you can streamline processes and maintain accurate records across different branches of your organization. This setup will help facilitate seamless operations, ensure correct data handling, and improve overall efficiency in your Warehouse Management Processes.

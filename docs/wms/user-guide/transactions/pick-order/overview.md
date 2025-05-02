@@ -54,3 +54,5 @@ This means that if on an original Pick Order document, there were seven serial n
 With the SAP B1 PF setting enabled, preselecting batches or serials on Pick Order will affect all other transactions in WMS, i.e., if a specific serial, for example, S0001, is preselected on a pick order in SAP B1, then the same serial S0001 won't be available for example on the Delivery transaction.
 
 The preselected quantities will also be considered when displaying available quantities in bin locations.
+
+---

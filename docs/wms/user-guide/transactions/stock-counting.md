@@ -94,3 +94,5 @@ SAP Business One: Stock Management > Stock Transactions > Stock Counting Transac
 10. Unlike most of the CompuTec WMS transactions, you do not save the document after completing work. Values are being saved at the moment of adding quantity. Click the 'x' icon to go back to the main menu:
 
     ![Document Details](./media/st-Finish.webp)
+
+---

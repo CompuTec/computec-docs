@@ -214,3 +214,5 @@ In the next step, it is possible to go to Delivery from the Pick List and create
 The result Delivery in SAP Business One:
 
 ![Serial Number Transaction Report](./media/result-delivery-in-sapb1.webp)
+
+---

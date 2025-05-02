@@ -45,3 +45,5 @@ sidebar_position: 4
 
     ![Items to pick receipt](./media/Picked-ItemsToPickReceipt3.webp)
 11. Click the 'Right Arrow' icon after completing picking to go to the Remarks form. You can set Document Numbering series, remarks, or dd a User-Defined Field. The document is saved upon clicking the 'Save' icon.
+
+---

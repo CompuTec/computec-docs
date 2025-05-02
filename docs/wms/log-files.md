@@ -67,3 +67,5 @@ Here is the detailed information on the locations of logs for CompuTec WMS:
 **5. Additionally, you can view the log from Microsoft Event Viewer**
 
 Logs can also be viewed using the Microsoft Event Viewer for more detailed system logs and diagnostics
+
+---
