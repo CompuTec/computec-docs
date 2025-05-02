@@ -4,11 +4,11 @@ sidebar_position: 2
 
 # Source Creator
 
-This option allows advanced configuration of data presented in [custom reports and analytics of the Analytical Page.](../../../version-2.0/appengine-users-guide/analytical-page/overview.md#usage).
+The Source Creator allows advanced configuration of data used in [custom reports and analytics of the Analytical Page.](../../../version-2.0/appengine-users-guide/analytical-page/overview.md#usage).
 
 ---
 
-To open the option, click the Analytical Page button (1.) in Launchpad and then the Go To Source Creator button:
+To access it, click on the Analytical Page button (1.) in the Launchpad, then select Go To Source Creator:
 
 ![AppEngine User's Guide](./media/source-creator/source-creator-button.png)
 
@@ -38,41 +38,44 @@ Here you can configure:
           <details>
           <summary>Click here to find out more.</summary>
           <div>
-          A collection is a group of vocabulary values available for some fields, e.g., Status - Started, Closed, etc.
-
-          In the context of the Analytical Page, collections are used for filters. In this case, there is a special icon that you can click to open a list of values to choose from:
+          A Collection is a predefined set of values for a field - such as "Started", "Closed", etc., used in filters on the Analytical Page. You’ll see a special icon to open the list of available values:
 
           ![AppEngine User's Guide](./media/source-creator/document-type.png)
 
           ![AppEngine User's Guide](./media/source-creator/document-type-options.png)
 
-          You can either take the values from the related table (the Table/View Collection option) or set them manually (the Custom Collection option):
+          You can choose between:
 
-          ![AppEngine User's Guide](./media/source-creator/choose-collection-type.png)
+            - **Table/View Collection**: Pulls values directly from the related table or view.
+            - **Custom Collection**: Allows you to manually define the list.
 
-          The Table/View Collection:
+              ![AppEngine User's Guide](./media/source-creator/choose-collection-type.png)
 
-          ![AppEngine User's Guide](./media/source-creator/table-view.png)
+              The Table/View Collection:
 
-          The Custom Collection option:
+              ![AppEngine User's Guide](./media/source-creator/table-view.png)
 
-          ![AppEngine User's Guide](./media/source-creator/custom-collection.png)
-          </div>
-          </details>
+              The Custom Collection option:
+
+              ![AppEngine User's Guide](./media/source-creator/custom-collection.png)
+            </div>
+            </details>
 
 ## Variants tab
 
-In this tab, you can manage (add, edit, delete) variants for a source:
+In this tab, you can manage all Variants associated with a source - add, edit, or delete them.
 
 ![AppEngine User's Guide](./media/source-creator/variants.png)
 
-Click the + Add Variant to add a Variant:
+To create a new Variant, click + Add Variant:
 
 ![AppEngine User's Guide](./media/source-creator/variant-basic-settings-1.png)
 
 Here you can define:
 
-- Basic Settings: Name, View, Default, Accessibility (Public/Private);
-- Table Startup Settings: settings related to the [Table view](../../../version-2.0/appengine-users-guide/analytical-page/overview.md#table-options).
-- Chart Startup Settings: settings related to the [Chart view](../../../version-2.0/appengine-users-guide/analytical-page/overview.md#chart-options).
-- Visual Filter Startup Settings: settings related to the [charts](../../../version-2.0/appengine-users-guide/analytical-page/overview.md#chart-options).
+- **Basic Settings**: Name, View, Default, Accessibility (Public/Private);
+- **Table Startup Settings**: Settings related to the [Table view](../../../version-2.0/appengine-users-guide/analytical-page/overview.md#table-options).
+- **Chart Startup Settings**: Settings related to the [Chart view](../../../version-2.0/appengine-users-guide/analytical-page/overview.md#chart-options).
+- **Visual Filter Startup Settings**: Settings related to the [charts](../../../version-2.0/appengine-users-guide/analytical-page/overview.md#chart-options).
+
+---

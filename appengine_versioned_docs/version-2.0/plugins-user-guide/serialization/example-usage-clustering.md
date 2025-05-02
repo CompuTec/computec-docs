@@ -4,42 +4,52 @@ sidebar_position: 3
 
 # Example Usage: Clustering
 
-The example on this page is for a clustering process using the SEC Unique Numbered Product (UNP) standard.
+This example illustrates a clustering process based on the SEC Unique Numbered Product (UNP) standard.
 
 ---
 
 ## SEC Standard
 
-SEC is short for Single European Coding and it is a unique identifier standard for marking human tissues and cells distributed in the European Union. The SEC is a mandatory requirement for all tissue establishments in the EU effective 29 April 2017.
+SEC stands for Single European Coding, a unique identifier system mandated for marking human tissues and cells distributed across the European Union. The SEC has been compulsory for all tissue establishments (TEs) in the EU since 29 April 2017.
 
-The SEC consists of a donation identification number (SEC-DI, 21 characters) and a product identification sequence (SEC-PI, 19 characters).
+The SEC is composed of two parts:
 
-![Single European Coding](./media/clustering/image2020-1-8-13-19-3.png)
+- Donation Identification Number (SEC-DI) – 21 characters
+- Product Identification Sequence (SEC-PI) – 19 characters
 
-    - ISO Country Identifier: identifies the country of the TE issuing the SEC. The code used is the ISO 3166-1 alpha-2 country identifier
-    - TE Code: Tissue Establishment code of the manufacturer creating products out of the received human tissue. TEs are listed in the EU Tissue Establishment Compendium
-    - Unique Donation Number: identifies an individual donor
-    - Coding System Identifier: identifies a system which the Product Code is derived from. So far in the EU the following 3 coding systems are used:
+    ![Single European Coding](./media/clustering/image2020-1-8-13-19-3.png)
 
-        | ***Coding System*** | ***Identifier*** |
-        | --- | --- |
-        | ISBT 128 | A|
-        | Eurocode | B | 
-        | EUTC | E | 
+**Key Components of SEC**:
 
-    - Product Code: identifies the product created out of the donated tissue
-    - Split number: used to uniquely identify each produced product, unique within each Donation Identification/Product Code combination
-    - Expiry Date: Expiry date of the created/produced product in YYYYMMDD format.
+- **ISO Country Identifier**: Indicates the country of the tissue establishment issuing the SEC, following the ISO 3166-1 alpha-2 code format.
+- **TE Code**: Tissue Establishment code of the manufacturer creating products out of the received human tissue. TEs are listed in the EU Tissue Establishment Compendium.
+- **Unique Donation Number**: Identifies a specific donor.
+- **Coding System Identifier**: Points to the coding system from which the Product Code is derived. Recognized systems within the EU are:
+
+    | ***Coding System*** | ***Identifier*** |
+    | --- | --- |
+    | ISBT 128 | A|
+    | Eurocode | B |
+    | EUTC | E |
+
+- **Product Code**: Identifies the product created from the donor tissue.
+- **Split Number**: Used to uniquely identify each produced product, unique within each Donation Identification/Product Code combination
+- **Expiry Date**: Specifies the product’s expiry in the format YYYYMMDD.
 
 ## Clustering
 
-On Goods Receipt PO, Supplier Batch AND Supplier Serial Numbers are recorded and Internal Batch numbers generated. The Receiver requires different scenario groups for Internal Batch number generation. The received items are clustered into Internal Batch numbers based on scenario group identifiers such as: same Item, same PO, same supplier DN/PL, same Supplier Batch, same Expiry Date.
+On Goods Receipt PO, Supplier Batch and Supplier Serial Numbers are recorded and Internal Batch numbers generated. The Receiver requires different scenario groups for Internal Batch number generation. The received items are clustered into Internal Batch numbers based on scenario group identifiers such as: same Item, same PO, same supplier DN/PL, same Supplier Batch, same Expiry Date.
 
-It is required to define identifiers for clustering per organisation/Item group/Item. E.g. for Receiver 1 the scenario of clustering of a received product into one Internal Batch number has to be based on unique Item/PO/PackList/Supplier Batch combination, for Receiver 2 a scenario of clustering should be based on Item/PO/PackList/Expirydate. If these are all identical the same Internal Batch number can be assigned to the received product.
+Each organization, item group, or item may define its own clustering rules. For example:
 
-Because Supplier Serial numbers are only unique within the UDI Lot number, and multiple Lots can be received on one single PO-line, the serial number registration should not only have a link to the Internal Batch, but also a link to the Supplier Batch.
+- Receiver 1: Clustering is based on a unique combination of Item/PO/PackList/Supplier Batch.
+- Receiver 2: Clustering is based on Item/PO/PackList/Expiry Date.
 
-Below you can find an example of how Internal Batches from one company (Supplier) are received by the other company (Receiver) and what identifies the clustering into one single Internal Batch.
+When all relevant criteria match, the same Internal Batch number is assigned to the received items.
+
+Since Supplier Serial Numbers are only unique within a UDI Lot Number - and multiple lots may exist on a single PO line - the serial number registration must be linked both to the Internal Batch and the Supplier Batch.
+
+The example below shows how a supplier’s internal batches are received by the receiver and how clustering into a single internal batch is identified:
 
 ![Batch Clustering](./media/clustering/batch-clustering.jpg)
 
@@ -51,32 +61,36 @@ Clustering rule:
 
 ### Item Declaration for Serialization
 
-For Items (managed by Batch) to be serialized, set UDF: Serialization enabled=Yes in Item Master Data. Thanks to this, all revisions of this Item will be subject to Rules controlling the selection of SPT for a given Item/ Revision.
+For items managed by batches that require serialization, you must enable the Serialization option. In the Item Master Data, set the User-Defined Field (UDF) Serialization Enabled = Yes. Once enabled, all revisions of the item will follow the rules governing the selection of the Serialization Parameter Template (SPT) for that particular Item/Revision.
 
 ![Clustering](./media/clustering/image2020-1-8-13-57-39.png)
 
 ### WEB Application – log in
 
-[Please check this section of the documentation](/docs/appengine/appengine-users-guide/launchpad/).
+[Please check this section of the documentation](/docs/appengine/appengine-users-guide/launchpad/) for instructions on how to access the web application.
 
 ### Attributes Templates – Definition
 
-The first step is to define Attribute Templates that can be used to build various variants of the Serialization Parameter Template (SPT). Each UNP member has assigned a separate Attribute. It is also necessary to define Attributes that allow the clustering process to be carried out.
+The first step in setting up serialization and clustering is to define Attribute Templates. These templates are used to create various versions of the Serialization Parameter Template (SPT). Each UNP (Unique Numbered Product) component must be assigned a distinct attribute. Additional attributes also need to be defined to enable the clustering process.
 
 ![Clustering - Attribute Templates](./media/clustering/image2020-1-9-10-13-41.png)
+
 ![Clustering - Attribute Templates](./media/clustering/attribute-templates-h.png)
 
-Below you can check the list of attributes in accordance to the SEC standard and other attributes required for the clustering process. For clustering to work according to a defined rule, you have to define attributes according to the following list:
+Below is the list of attributes aligned with the SEC standard and other required attributes necessary for the clustering process. To ensure clustering functions according to the defined rules, attributes must be created as per this list:
 
 ![Clustering - Attributes Definition](./media/clustering/list-of-attributes.png)
 
-SEC Standard – donation identification:
+SEC Standard – Donation Identification:
+
+The attributes related to the Donation Identification section of the SEC standard are shown below:
 
 ![SEC Standard – Donation Identification](./media/clustering/sec-standard-donation-identification.png)
 
-SEC Standard – product identification:
+SEC Standard – Product Identification:
 
 ![SEC Standard – Product Identification](./media/clustering/2020-11-13-11-49-00.png)
+
 ![SEC Standard – Product Identification](./media/clustering/Batch.png)
 
 Clustering components:
@@ -262,53 +276,55 @@ Items confirmation and transfer document confirmation
 
 ### Goods Issue
 
-Warehouse selection
+#### Warehouse Selection
 
 ![Clustering - Warehouse Selection](./media/clustering/warehouse-1.png)![Clustering - Warehouse Selection](./media/clustering/warehouse-2.png)
 
-#### Item selection
+#### Item Selection
 
 ![Clustering - Item Selection](./media/clustering/document-details-4.png)![Clustering - Item Selection](./media/clustering/new-item-4.png)
 
-#### Batch and quantity selection
+#### Batch and Quantity Selection
 
 ![Clustering - Batch and Quantity Selection](./media/clustering/document-details-2.png)![Clustering - Batch and Quantity Selection](./media/clustering/batches-1.png)
 ![Clustering - Batch and Quantity Selection](./media/clustering/quantity-2.png)
 
-#### Serial numbers selection
+#### Serial Numbers Selection
 
 ![Clustering - Serial Numbers Selection](./media/clustering/image2020-1-13-11-9-2.png)![Clustering - Serial Numbers Selection](./media/clustering/image2020-1-13-11-43-57.png)
 ![Clustering - Serial Numbers Selection](./media/clustering/image2020-1-13-11-22-38.png)
 
-#### Issue document confirmation
+#### Issue Document Confirmation
 
 ![Clustering - Issue Document Confirmation](./media/clustering/document-details-1.png)![Clustering - Issue Document Confirmation](./media/clustering/remarks.png)
 
 ### Delivery
 
-#### Warehouse selection
+#### Warehouse Selection
 
 ![Clustering - Warehouse Selection](./media/clustering/delivery.png)![Clustering](./media/clustering/delivery-1.png)
 ![Clustering - Warehouse Selection](./media/clustering/warehouse.png)
 
-#### Customer selection
+#### Customer Selection
 
 ![Clustering - Customer Selection](./media/clustering/customer-selection.png)
 
-#### Item selection
+#### Item Selection
 
 ![Clustering - Item Selection](./media/clustering/document-details.png)![Clustering - Item Selection](./media/clustering/new-item.png)
 
-#### Batch and quantity selection
+#### Batch and Quantity Selection
 
 ![Clustering - Batch and Quantity Selection](./media/clustering/image2020-1-13-11-2-10.png)![Clustering - Batch and Quantity Selection](./media/clustering/image2020-1-13-12-8-18.png)
 ![Clustering - Batch and Quantity Selection](./media/clustering/batches.png)![Clustering - Batch and Quantity Selection](./media/clustering/quantity-1.png)
 
-#### Serial number selection
+#### Serial Number Selection
 
 ![Clustering - Serial Number Selection](./media/clustering/search-serialization.png)![Clustering - Serial Number Selection](./media/clustering/search-serialization-1.png)
-![Clustering - Serial Number Selection](./media/clustering/quantity.png)![Clustering - Serial Number Selection](./media/clustering/storage-info.png)
+![Clustering - Serial Number Selection](./media/clustering/quantity.png) ![Clustering - Serial Number Selection](./media/clustering/storage-info.png)
 
-#### Delivery document confirmation
+#### Delivery Document Confirmation
 
 ![Clustering - Delivery Document Confirmation](./media/clustering/document-details-3.png)![Clustering - Delivery Document Confirmation](./media/clustering/image2020-1-13-12-27-46.png)
+
+---

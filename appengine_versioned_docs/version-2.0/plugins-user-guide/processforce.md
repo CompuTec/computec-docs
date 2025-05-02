@@ -4,7 +4,11 @@ sidebar_position: 9
 
 # ProcessForce
 
-## ProcessForce plugin related jobs
+This document provides an overview of the most commonly used ProcessForce plugin jobs, their configurations, scheduling details, and the performance benefits they bring to your system operations.
+
+---
+
+## ProcessForce Plugin Related Jobs
 
 :::info
 To use these jobs, it is required to activate Background Processing for a specific company.
@@ -45,7 +49,7 @@ You can configure three different automation of this kind by using CostRollUpSch
    </div>
 </details>
 
-Fills in Batches and Serial Numbers in appropriate Quality Control Tests. After adding a Goods Receipt, Batches and Serial Numbers are created in a database and can be added to Quality Control Tests, which were created when the related Batches and Serial Numbers were still not present in a database.
+This job populates Batches and Serial Numbers into the relevant Quality Control Tests. After a Goods Receipt is added, Batches and Serial Numbers are created in the database and can be assigned to Quality Control Tests that were previously created before the related Batches and Serial Numbers were available in the database.
 
 **This job improves ProcessForce performance**.
 
@@ -72,12 +76,9 @@ Based on specific settings, automatically generates Quality Control Test when ad
     <summary>Details</summary>
     <div>
 Every second hour it calls a method that Creates Batch Master Data for all missing Batches in system.
+ Default Cron Expression Description = "0 */2 * * *"
 </div>
 </details>
-
-    Default Cron Expression Description = "0 */2 * * *"
-
-Every second hour it calls a method that Creates Batch Master Data for all missing Batches in system.
 
 ### RestoreItemDetailsJob
 
@@ -146,7 +147,7 @@ This job synchronizes data between Manufacturing Order and Production Order ever
        </div>
 </details>
 
-This job synchronizes data to SAP Business One Additional Batch details upon updating Batch Master Data
+This job synchronizes data to SAP Business One Additional Batch details upon updating Batch Master Data.
 
 **This job improves ProcessForce performance**.
 
@@ -162,9 +163,9 @@ This job synchronizes data to SAP Business One Additional Batch details upon upd
    </div>
 </details>
 
-This job creates a related Batch Master Data upon creation of a Batch in SAP Business One.
+This job generates the corresponding Batch Master Data whenever a new Batch is created in SAP Business One.
 
-If this job is turned on, the Batch Synchronization is performed by AppEngine (otherwise, the synchronization is performed by CompuTec WMS service, in contect of using CompuTec WMS).
+When enabled, the batch synchronization is handled by AppEngine. If not, the synchronization is managed by the CompuTec WMS service (applicable when using CompuTec WMS).
 
 **This job improves ProcessForce and CompuTec WMS performance**.
 
