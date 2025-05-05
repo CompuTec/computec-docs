@@ -13,7 +13,7 @@ This document provides detailed instructions on configuring CompuTec AppEngine f
 To enable HTTPS for CompuTec AppEngine, you must:
 
 1. Import a valid certificate into the Local Machine store.
-2. Configure HTTPS settings through the Administration Panel or the `app.config.json` file.
+2. Configure HTTPS settings through the Administration Panel or the `App.config.json` file.
 
 ## Configuring Certificates
 
@@ -53,9 +53,9 @@ To enable HTTPS for CompuTec AppEngine, you must:
 2. Provide an absolute or relative path to the certificate file from the AppEngine installation directory.
 3. Save the configuration and restart the AppEngine instance.
 
-## Configuring HTTPS in `app.config.json`
+## Configuring HTTPS in `App.config.json`
 
-You can define SSL settings directly in the `app.config.json` file. Below is an example configuration:
+You can define SSL settings directly in the `App.config.json` file. Below is an example configuration:
 
 ```json
 {
@@ -94,7 +94,7 @@ You can define SSL settings directly in the `app.config.json` file. Below is an 
 
 ### Rescue Configuration
 
-If the configuration does not work and AppEngine becomes unreachable, add the following minimal `Hosting` configuration to your `app.config.json` file:
+If the configuration does not work and AppEngine becomes unreachable, add the following minimal `Hosting` configuration to your `App.config.json` file:
 
 ```json
 {
@@ -111,7 +111,7 @@ If the configuration does not work and AppEngine becomes unreachable, add the fo
 ## CORS Settings
 
 ---
-To specify Cross-Origin Resource Sharing (CORS) policies, use the `AllowedOrigins` element in the `app.config.json` file or the assigned profile configuration. Below is an example:
+To specify Cross-Origin Resource Sharing (CORS) policies, use the `AllowedOrigins` element in the `App.config.json` file or the assigned profile configuration. Below is an example:
 
 ```json
 {
