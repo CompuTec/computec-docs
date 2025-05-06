@@ -52,7 +52,7 @@ W tym formularzu użytkownicy mogą:
 - Kliknąć Sprawdź, aby zaktualizować status VAT dla wybranych kontrahentów.
 - Przejrzeć podsumowanie w polu Uwagi, które wyświetla liczbę sprawdzonych kontrahentów, nieaktywnych podmiotów i wszelkie rozbieżności statusu.
 
-    ![After Verification](./media/after-verification.png)
+    ![After Verification](./media/2025-05-06_12-24-51.webp)
 
 ## Automatyczna weryfikacja VIES na dokumentach dostawy
 
