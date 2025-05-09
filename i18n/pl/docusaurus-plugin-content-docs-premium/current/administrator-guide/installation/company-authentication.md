@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-## Uwierzytelnianie firmy
+# Uwierzytelnianie firmy
 
 Aby pobierać dane kontrahentów z zewnętrznych usług, wymagane jest uwierzytelnienie firmy. Proces ten zapewnia, że poprawne dane firmy są powiązane z bazą danych, w której zainstalowano CompuTec Premium.
 
