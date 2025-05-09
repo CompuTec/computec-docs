@@ -9,7 +9,7 @@
 .cache-loader
 
 # i18n files
-/i18n
+# /i18n
 
 # Misc
 .DS_Store

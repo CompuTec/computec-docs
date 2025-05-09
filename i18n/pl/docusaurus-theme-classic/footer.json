@@ -1,0 +1,62 @@
+{
+  "link.title.FIND US ONLINE": {
+    "message": "ZNAJDŹ NAS ONLINE",
+    "description": "The title of the footer links column with title=FIND US ONLINE in the footer"
+  },
+  "link.title.OUR PRODUCTS": {
+    "message": "NASZE PRODUKTY",
+    "description": "The title of the footer links column with title=OUR PRODUCTS in the footer"
+  },
+  "link.title.GET ASSISTANCE": {
+    "message": "UZYSKAJ WSPARCIE",
+    "description": "The title of the footer links column with title=GET ASSISTANCE in the footer"
+  },
+  "link.item.label.Visit our website": {
+    "message": "Odwiedź naszą stronę",
+    "description": "The label of footer link with label=Visit our website linking to https://processforce.world"
+  },
+  "link.item.label.Roadmap": {
+    "message": "Roadmap",
+    "description": "The label of footer link with label=Roadmap linking to https://trello.com/b/fNecAXeP/computec-roadmap"
+  },
+  "link.item.label.CompuTec ProcessForce": {
+    "message": "CompuTec ProcessForce",
+    "description": "The label of footer link with label=CompuTec ProcessForce linking to docs/processforce"
+  },
+  "link.item.label.CompuTec PDC": {
+    "message": "CompuTec PDC",
+    "description": "The label of footer link with label=CompuTec PDC linking to docs/pdc"
+  },
+  "link.item.label.CompuTec WMS": {
+    "message": "CompuTec WMS",
+    "description": "The label of footer link with label=CompuTec WMS linking to docs/wms"
+  },
+  "link.item.label.CompuTec Labels": {
+    "message": "CompuTec Labels",
+    "description": "The label of footer link with label=CompuTec Labels linking to docs/labels"
+  },
+  "link.item.label.CompuTec AppEngine": {
+    "message": "CompuTec AppEngine",
+    "description": "The label of footer link with label=CompuTec AppEngine linking to docs/appengine"
+  },
+  "link.item.label.CompuTec Premium": {
+    "message": "CompuTec Premium",
+    "description": "The label of footer link with label=CompuTec Premium linking to docs/premium"
+  },
+  "link.item.label.Support": {
+    "message": "Wsparcie",
+    "description": "The label of footer link with label=Support linking to https://support.computec.pl"
+  },
+  "link.item.label.Privacy & Cookie Policy": {
+    "message": "Polityka prywatności i plików cookie",
+    "description": "The label of footer link with label=Privacy & Cookie Policy linking to /policy"
+  },
+  "link.item.label.Contact": {
+    "message": "Kontakt",
+    "description": "The label of footer link with label=Contact linking to /contact"
+  },
+  "copyright": {
+    "message": "Treść serwisu prawnie chroniona © 2025 CompuTec S.A.",
+    "description": "The footer copyright"
+  }
+}

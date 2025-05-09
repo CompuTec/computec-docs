@@ -1,0 +1,126 @@
+{
+  "version.label": {
+    "message": "2.0",
+    "description": "The label for version 2.0"
+  },
+  "sidebar.defaultSidebar.category.Administrator's Guide": {
+    "message": "Administrator's Guide",
+    "description": "The label for category Administrator's Guide in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Configuration and Administration": {
+    "message": "Configuration and Administration",
+    "description": "The label for category Configuration and Administration in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Developer's Guide": {
+    "message": "Developer's Guide",
+    "description": "The label for category Developer's Guide in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.REST/OData API": {
+    "message": "REST/OData API",
+    "description": "The label for category REST/OData API in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.SAPUI5 Plugins": {
+    "message": "SAPUI5 Plugins",
+    "description": "The label for category SAPUI5 Plugins in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.User's Guide": {
+    "message": "User's Guide",
+    "description": "The label for category User's Guide in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Analytical Page": {
+    "message": "Analytical Page",
+    "description": "The label for category Analytical Page in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Plugins User's Guide": {
+    "message": "Plugins User's Guide",
+    "description": "The label for category Plugins User's Guide in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Batch Traceability 360": {
+    "message": "Batch Traceability 360",
+    "description": "The label for category Batch Traceability 360 in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Bulk Changes on Bills of Materials": {
+    "message": "Bulk Changes on Bills of Materials",
+    "description": "The label for category Bulk Changes on Bills of Materials in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Example Usage": {
+    "message": "Example Usage",
+    "description": "The label for category Example Usage in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Manufacturing Order 360": {
+    "message": "Manufacturing Order 360",
+    "description": "The label for category Manufacturing Order 360 in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Serialization": {
+    "message": "Serialization",
+    "description": "The label for category Serialization in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Price Management": {
+    "message": "Price Management",
+    "description": "The label for category Price Management in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Releases": {
+    "message": "Releases",
+    "description": "The label for category Releases in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.AppEngine": {
+    "message": "AppEngine",
+    "description": "The label for category AppEngine in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Plugins": {
+    "message": "Plugins",
+    "description": "The label for category Plugins in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.ProcessForce": {
+    "message": "ProcessForce",
+    "description": "The label for category ProcessForce in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.BT360": {
+    "message": "BT360",
+    "description": "The label for category BT360 in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Bulk Change": {
+    "message": "Bulk Change",
+    "description": "The label for category Bulk Change in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Labels": {
+    "message": "Labels",
+    "description": "The label for category Labels in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.PDC": {
+    "message": "PDC",
+    "description": "The label for category PDC in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.WMS": {
+    "message": "WMS",
+    "description": "The label for category WMS in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Gateway": {
+    "message": "Gateway",
+    "description": "The label for category Gateway in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.MI360": {
+    "message": "MI360",
+    "description": "The label for category MI360 in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.MO360": {
+    "message": "MO360",
+    "description": "The label for category MO360 in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.MOWizard": {
+    "message": "MOWizard",
+    "description": "The label for category MOWizard in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.MRP": {
+    "message": "MRP",
+    "description": "The label for category MRP in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.PFI": {
+    "message": "PFI",
+    "description": "The label for category PFI in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Production Process Flow": {
+    "message": "Production Process Flow",
+    "description": "The label for category Production Process Flow in sidebar defaultSidebar"
+  }
+}

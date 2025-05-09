@@ -1,0 +1,58 @@
+{
+  "version.label": {
+    "message": "3.0",
+    "description": "The label for version current"
+  },
+  "sidebar.defaultSidebar.category.Administrator's Guide": {
+    "message": "Administrator's Guide",
+    "description": "The label for category Administrator's Guide in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Installation": {
+    "message": "Installation",
+    "description": "The label for category Installation in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Setting up the Application": {
+    "message": "Setting up the Application",
+    "description": "The label for category Setting up the Application in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.PDC Settings": {
+    "message": "PDC Settings",
+    "description": "The label for category PDC Settings in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.CompuTec PDC Licensing": {
+    "message": "CompuTec PDC Licensing",
+    "description": "The label for category CompuTec PDC Licensing in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Weight Scales Integration": {
+    "message": "Weight Scales Integration",
+    "description": "The label for category Weight Scales Integration in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Example Scale Configuration": {
+    "message": "Example Scale Configuration",
+    "description": "The label for category Example Scale Configuration in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.User's Guide": {
+    "message": "User's Guide",
+    "description": "The label for category User's Guide in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Task Activities": {
+    "message": "Task Activities",
+    "description": "The label for category Task Activities in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Customization": {
+    "message": "Customization",
+    "description": "The label for category Customization in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Optional functions": {
+    "message": "Optional functions",
+    "description": "The label for category Optional functions in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Weight Scale Module": {
+    "message": "Weight Scale Module",
+    "description": "The label for category Weight Scale Module in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Releases": {
+    "message": "Releases",
+    "description": "The label for category Releases in sidebar defaultSidebar"
+  }
+}

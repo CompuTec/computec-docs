@@ -1,0 +1,30 @@
+{
+  "logo.alt": {
+    "message": "CompuTec",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.ProcessForce": {
+    "message": "ProcessForce",
+    "description": "Navbar item with label ProcessForce"
+  },
+  "item.label.PDC": {
+    "message": "PDC",
+    "description": "Navbar item with label PDC"
+  },
+  "item.label.WMS": {
+    "message": "WMS",
+    "description": "Navbar item with label WMS"
+  },
+  "item.label.Labels": {
+    "message": "Labels",
+    "description": "Navbar item with label Labels"
+  },
+  "item.label.AppEngine": {
+    "message": "AppEngine",
+    "description": "Navbar item with label AppEngine"
+  },
+  "item.label.Premium": {
+    "message": "Premium",
+    "description": "Navbar item with label Premium"
+  }
+}
