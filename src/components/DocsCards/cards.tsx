@@ -1,13 +1,8 @@
 import Translate from "@docusaurus/Translate";
 
-export type DocsCard = {
-  title: string;
-  description: string | React.ReactElement;
-  image: string;
-  link: string;
-};
+import { DocCardProps } from "./DocsCard";
 
-const docsCards: DocsCard[] = [
+const docsCards: DocCardProps[] = [
   {
     title: "CompuTec ProcessForce",
     description: (
@@ -21,7 +16,7 @@ const docsCards: DocsCard[] = [
       </Translate>
     ),
     image: "/img/cards/ProcessForce.svg",
-    link: "/docs/processforce",
+    pluginId: "processforce",
   },
   {
     title: "CompuTec PDC",
@@ -37,7 +32,7 @@ const docsCards: DocsCard[] = [
       </Translate>
     ),
     image: "/img/cards/PDC.svg",
-    link: "/docs/pdc",
+    pluginId: "pdc",
   },
   {
     title: "CompuTec WMS",
@@ -53,7 +48,7 @@ const docsCards: DocsCard[] = [
       </Translate>
     ),
     image: "/img/cards/WMS.svg",
-    link: "/docs/wms",
+    pluginId: "wms",
   },
   {
     title: "CompuTec Labels",
@@ -69,7 +64,7 @@ const docsCards: DocsCard[] = [
       </Translate>
     ),
     image: "/img/cards/Labels.svg",
-    link: "/docs/labels",
+    pluginId: "labels",
   },
   {
     title: "CompuTec AppEngine",
@@ -84,23 +79,23 @@ const docsCards: DocsCard[] = [
       </Translate>
     ),
     image: "/img/cards/AppEngine.svg",
-    link: "/docs/appengine",
+    pluginId: "appengine",
   },
-  // {
-  //   title: "CompuTec Premium",
-  //   description: (
-  //     <Translate
-  //       description="Homepage card description"
-  //       id="homepage.cards.premium.description"
-  //     >
-  //       CompuTec Premium is a localization solution for Poland. It helps
-  //       businesses comply with a number of fiscal, tax and other regulations
-  //       required by Polish law.
-  //     </Translate>
-  //   ),
-  //   image: "/img/cards/Premium.svg",
-  //   link: "/docs/",
-  // },
+  {
+    title: "CompuTec Premium",
+    description: (
+      <Translate
+        description="Homepage card description"
+        id="homepage.cards.premium.description"
+      >
+        CompuTec Premium is a localization solution for Poland. It helps
+        businesses comply with a number of fiscal, tax and other regulations
+        required by Polish law.
+      </Translate>
+    ),
+    image: "/img/cards/Premium.svg",
+    pluginId: "premium",
+  },
   // {
   //   title: "CompuTec Fiscal Server",
   //   description: (

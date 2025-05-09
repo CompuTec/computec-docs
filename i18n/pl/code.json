@@ -399,5 +399,9 @@
   "docsHeader.documentation_center": {
     "message": "Centrum Dokumentacji",
     "description": "DocsHeader -> Documentation Center"
+  },
+  "homepage.cards.premium.description": {
+    "message": "CompuTec Premium to rozwiązanie lokalizacyjne dla Polski. Pomaga firmom w przestrzeganiu szeregu przepisów fiskalnych, podatkowych i innych wymaganych przez polskie prawo.",
+    "description": "Homepage card description"
   }
 }
