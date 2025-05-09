@@ -4,7 +4,7 @@ import createBaseConfigAsync from "./config/docusaurus.base";
 
 export default async function createMultiProductionConfigAsync(): Promise<Config> {
   return createBaseConfigAsync({
-    // enableI18n: true,
+    enableI18n: true,
     enableAlgolia: true,
   });
 }
