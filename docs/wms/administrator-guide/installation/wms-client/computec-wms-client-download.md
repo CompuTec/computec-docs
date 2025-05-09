@@ -26,7 +26,7 @@ This will redirect you to the download page where you can easily download the re
 
 3. Alternatively locate the installation files directly on the machine where the CompuTec WMS Server is installed.
 
-    :::path
+    :::note Path
         C:\Program Files\CompuTec\WMS Server\wwwroot\Builds
     :::
 
