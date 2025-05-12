@@ -65,6 +65,8 @@ You can check the CompuTec License Server Address in SAP Business One with Proce
 2. After entering the details, Click **Save and Discover**
 
     ![Initial Configuration](./media/configuration-and-administration/initial-configuration-01.png)
+You will be prompted for the B1SiteUser password. 
+[How to create an oprator account for Clound Control Center](CreateOperatorForCCC.md)
 
 3. After connecting to the SLD server, you will be presented with a **list of companies** configured within the SAP landscape. You can run Dicover at any time to refresh the list of avaiable companies.
 
