@@ -2,9 +2,10 @@
 sidebar_position: 1
 toc_min_heading_level: 2
 toc_max_heading_level: 5
+unlisted: true
 ---
 
-# Create Cloud COntrol Center Operator and Assign to IAM Server
+# Create Cloud Control Center Operator and Assign to IAM Server
 To enable the discovery of SAP companies and other required SAP environment settings, the system needs Cloud Control Center (CCC) operator credentials. These credentials allow AppEngine to retrieve all necessary information. Follow the steps below to create a CCC operator and assign them a password.
 ## Create an Operator
 1. Login To CCC portal.
@@ -19,5 +20,5 @@ To enable the discovery of SAP companies and other required SAP environment sett
 ![Ceeate Auth User](./media/configuration-and-administration/CCC/SetPassword.png)
 ![Add  Auth User](./media/configuration-and-administration/CCC/SetPassword_Add.png)
 ## AppEngine Discovery
-Now you can use this acount in AppEngine to discover servers and in the company Activation Process.
+Now you can use this acount in AppEngine for  discovery and company Activation Process.
 ![Discover](./media/configuration-and-administration/CCC/Discover.png)
