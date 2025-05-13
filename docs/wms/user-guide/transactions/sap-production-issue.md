@@ -10,7 +10,7 @@ An SAP Production Issue in CompuTec WMS can be generated from Production Orders 
     The order and availability of some of the forms during a document's creation may vary depending on individual settings. Click here to find out more.
 :::
 
-![SAP Production Order](./media/production-order.png)
+![SAP Production Order](./media/production-order.webp)
 
 1. To create an SAP production issue, click SAP Production Issue in the main menu:
 

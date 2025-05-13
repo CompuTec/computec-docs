@@ -195,4 +195,10 @@ Check the information in the next section to get to know how to create barcodes 
 - **batch_code**: selects a Batch from the list.
 - **(10)batch_code**: selects a batch using a prefix.
 
+Here is an example of barcode and effect in window Issue To Production:
+
+![example](./media/barcodes/image.png)
+
+![example](./media/barcodes/image%20(1).png)
+
 ---
