@@ -119,7 +119,33 @@ To specify Cross-Origin Resource Sharing (CORS) policies, use the `AllowedOrigin
   ...rest of the configuration
 }
 ```
+## Regenerate Default Certificate 
+You can generate a new self-signed certificate when the certificate is corrupted or expired.
+1. Remove/rename `C:\Program Files\CompuTec\AppEngine\CompuTec.AppEngine.DefaultCert.pfx` file
+2. Run script below
+```powershell
+# Define the parameters for the certificate and export
+$dnsName    = "CompuTec.AppEngine.DefaultCertificate"                     # Replace with your desired DNS name
+$outputPath = "C:\Program Files\CompuTec\AppEngine\CompuTec.AppEngine.DefaultCert.pfx"  # Replace with your desired file path and name
+$password   = "1q2w3e4r"             # Replace with a strong password
 
+if (Test-Path $outputPath) {
+    Write-Output "Certificate file already exists at $outputPath. No new certificate generated."
+    return
+}else{
+Write-Output "Certificate Creating $outputPath"
+# Convert the plain text password to a secure string
+$securePassword = ConvertTo-SecureString -String $password -Force -AsPlainText
+
+# Create the self-signed certificate in the CurrentUser's Personal store
+$cert = New-SelfSignedCertificate -DnsName $dnsName -CertStoreLocation "cert:\CurrentUser\My"
+
+# Export the certificate with the private key to a .pfx file
+Export-PfxCertificate -Cert $cert -FilePath $outputPath -Password $securePassword
+
+Write-Output "Certificate created and exported successfully to $outputPath"
+}
+```
 ### Key Points
 
 - **`AllowedOrigins`**: A list of domains allowed for CORS requests.
