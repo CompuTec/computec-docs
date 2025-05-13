@@ -175,6 +175,12 @@ Check the information in the next section to get to know how to create barcodes 
 
 - **(91)Item_code(99)item_sequence(10)batch_code(92)bin_code(95)quantity**: Sequence, Batch, Bin Location, and Quantity are optional – if you do not add them, you will have to add them manually.
 
+Here is an example of barcode and effect in window Issue To Production:
+
+![example](./media/barcodes/image.png)
+
+![example](./media/barcodes/image%20(1).png)
+
 ### Weight Wizard Form
 
 #### Item Choosing Level
@@ -194,11 +200,5 @@ Check the information in the next section to get to know how to create barcodes 
 
 - **batch_code**: selects a Batch from the list.
 - **(10)batch_code**: selects a batch using a prefix.
-
-Here is an example of barcode and effect in window Issue To Production:
-
-![example](./media/barcodes/image.png)
-
-![example](./media/barcodes/image%20(1).png)
 
 ---
