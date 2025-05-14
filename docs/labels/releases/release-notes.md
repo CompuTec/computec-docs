@@ -10,6 +10,18 @@ toc_max_heading_level: 4
 
 Below are the release notes for CompuTec Labels Printing Manager, highlighting new features, improvements, and bug fixes in this release.
 
+### CompuTec Labels Printing Manager 4.8.3
+
+**Release Date – 14 May 2025**
+
+| Issue Type | Component/s |Reference Support Ticket | Release Note |
+| --- | --- | --- | --- |
+| Improvement | Printing Manager Application | - | The following object has been added to print serial label through WMS application: CT_WMS_SERIALINFOSAP. |
+| Improvement | Printing Manager Application | SLABE-522 | Label printing for catch weight operations is now supported through the WMS. |
+| Bug | Printing Manager Application | SLABE-1014 | It is now possible to conditionally set the NumberofCopies value in Mapping Table to zero. |
+| Bug | Printing Manager Application | - | Output File Name wasn't supporting network path. |
+| Bug | Printing Manager Application | - | The report rule could not be transferred using the Copy to Company function. |
+
 ### CompuTec Labels Printing Manager 4.8.2
 
 **Release Date – 24 March 2025**
