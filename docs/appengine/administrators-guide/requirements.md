@@ -21,6 +21,7 @@ The CompuTec AppEngine is a robust solution designed to enhance your SAP Busines
 - **SAP Business One DI API** - Ensure SAP Business One DI API is installed and properly configured.
 - **Supported Database Server** - SQL Server 2012 and higher.
 - **CompuTec License Server** - Verify that the CompuTec License Server is installed and accessible.
+[Download License Server](https://learn.computec.one/docs/processforce/releases/download#computec-license-service)
 
 ### Sap Business One - Users Machines
 
