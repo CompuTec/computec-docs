@@ -4,11 +4,11 @@ sidebar_position: 9
 
 # Managing UoM in CompuTec WMS
 
-This guide provides a comprehensive overview of how to manage Units of Measurement (UoM) in CompuTec Warehouse Management System (WMS) for various transactions. Proper management of UoM is essential for accurate inventory control and seamless transaction processing across different modules in SAP Business One (SAP B1). The guide covers key features for managing UoM in the following transactions:
+This guide provides a comprehensive overview of how to manage Units of Measurement (UoM) in CompuTec Warehouse Management System (WMS) for various transactions. Proper management of UoM is essential for accurate inventory control and seamless transaction processing across different modules in SAP Business One. The guide covers key features for managing UoM in the following transactions:
 
-- Pick Lists from Transfer Request,
-- Transfer Request (apart from MOR Transfer Request),
-- Stock Transfer.
+- Pick Lists from Transfer Request
+- Transfer Request (apart from MOR Transfer Request)
+- Stock Transfer
 
 By following this guide, you will learn how to configure and customize the UoM handling process in CompuTec WMS to suit your business needs.
 
@@ -26,7 +26,7 @@ To manage UoM for Pick Lists created from Transfer Requests, follow these steps:
 
         ![In SAP B1](./media/inventory-transfer-request.png)
 
-3. A Pick List for this document - The Pick List document in CompuTec WMS allows you to manage quantities either by warehouse stock or by Units of Measurement (UoM), depending on the configuration of the Custom Configuration (CC) checkbox.
+3. The Pick List document in CompuTec WMS allows you to manage quantities either by warehouse stock or by Units of Measurement (UoM), depending on the configuration of the Custom Configuration (CC) checkbox.
 
         ![Pick List in SAP](./media/pick-list-in-sap.png)
 
@@ -53,6 +53,7 @@ This feature in CompuTec WMS allows you to configure how Units of Measurement (U
 1. By default, CompuTec WMS retrieves the UoM from the Inventory Data tab in SAP Business One.
 
     ![SAP B1](./media/uom-inventory.png)
+
 2. To modify the UoM source, check the highlighted checkbox in Custom Configuration:
 
     ![Custom Configuration](./media/cc-stock-transfer-uom.png)
