@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # SU Disassembly
 
-**Storage Unit (SU) Disassembly** is a feature in CompuTec WMS that allows users to break down an existing Storage Unit and transfer its contents - either fully or partially into a warehouse or another Storage Unit. This is particularly useful when you need to reorganize inventory, repack items or make specific items available for new operations.
+Storage Unit (SU) Disassembly is a feature in CompuTec WMS that allows users to break down an existing Storage Unit and transfer its contents - either fully or partially into a warehouse or another Storage Unit. This is particularly useful when you need to reorganize inventory, repack items or make specific items available for new operations.
 
 This guide walks you through the step-by-step process of disassembling a Storage Unit within the CompuTec WMS system.
 

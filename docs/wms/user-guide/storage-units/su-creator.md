@@ -2,49 +2,64 @@
 sidebar_position: 4
 ---
 
-# SU Creator
+# SU Creation
 
-Using this option, it is possible to create a number of SUs with the same content.
+The SU Creation function in CompuTec WMS enables users to manually create multiple Storage Units (SUs), each with a defined set of items and quantities. Unlike the SU Wizard, which generates multiple SUs with identical content, SU Creator offers more flexibility - allowing users to review and set item-specific details such as batches and serial numbers for each SU.
 
-1. Choose SU Operations from the Main Menu.
+This option is ideal when the same item set is packaged repeatedly but requires batch-level or serial-level tracking for each unit.
 
+---
 
-2. Choose SU Creator.
+## Steps to Create Storage Units Using SU Creator
 
-    ![Su Operations](./media/SUCreator2.webp)
-3. Choose a Warehouse in which a Storage Unit will be created.
+1. Choose "SU Operations" from the Main Menu. Choose "SU Creation".
 
-    ![Warehouse](./media/1Creator-WhseSel2.webp)
-4. Select SU content form will be opened. You can add Items that must be included in the created Storage Unit. Click the '+' icon to add Items.
+    ![Su Operations](./media/su-creation.jpg)
 
-    ![Select SU Content](./media/2Creator2.webp)
-5. The Item Selection form will be opened. Choose the Item required to be included in the created Storage Unit.
+2. Choose the warehouse where the Storage Units will be created.
 
-    ![New Item](./media/3Creator-NewItem2.webp)
-6. Set the Quantity for the chosen Item and click the 'Save' icon.
+    ![Warehouse](./media/su-warehouse.jpg)
 
-    ![Quantity](./media/4Creator-Quantity2.webp)
-7. Click the 'Next' icon after choosing Items required for SU and its quantity.
+3. Select SU content. You can add Items that must be included in the created Storage Unit. Click the '+' icon to add Items.
 
-    ![Select SU content](./media/5Creator-SuCont2.webp)
-8. Define how many SUs with a defined set of Items will be created and click the 'Next' icon.
+    ![Select SU Content](./media/su-content-select.jpg)
 
-    ![SU Count](./media/7Creator-SuCount2.webp)
-9. A list of creating SUs will be displayed. Click a specific SU row to display its content.
+4. Choose the item you want to include in the Storage Unit from the list.
 
-    ![SU list](./media/Creator-SUList2.webp)
-10. Click a row of specific Items to set its details (Batch, Serial).
+    ![New Item](./media/su-new-item-1.jpg)
 
-    ![SU Content](./media/SUCont-12.webp)
-11. Select Batch (if Batches manage the Item) or Serial Number (for every Item, if Serial Numbers manage the Item).
+5. Set the Quantity for the chosen Item and click the "Save" icon.
 
-    ![Batches](./media/SUCont-22.webp)
-12. Set Quantity (Items can be chosen from different Batches) and click the 'Next" arrow.
+    ![Quantity](./media/su-quantity-1.jpg)
 
-    ![Quantity](./media/SUCont-32.webp)
-13. Click the 'Save' arrow after setting details for every Item.
+6. Click the 'Next' icon after choosing Items required for SU and its quantity.
 
-    ![SU Content](./media/SUCont-42.webp)
-14. The Save icon saves the defined Storage Units and leads back to the SU Operations form. New Storage Units are created and can be used in other transactions.
+    ![Select SU content](./media/select-su-content-1.jpg)
+
+7. Define how many SUs with a defined set of Items will be created and click the "Next" icon.
+
+    ![SU Count](./media/enter-quantity.jpg)
+
+8. A list of creating SUs will be displayed. Click a specific SU row to display its content.
+
+    ![SU list](./media/su-creation-list.jpg)
+
+9. Click a row of specific Items to set its details (Batch, Serial).
+
+    ![SU Content](./media/batch-serial.jpg)
+
+10. If items are **batch-managed** or **serial-managed**, assign the appropriate values.
+
+    ![Batches](./media/batches-su.jpg)
+
+11. Define the quantity for each batch or serial. Items can be pulled from different batches.Click the 'Next" arrow.
+
+    ![Quantity](./media/set-quantity.jpg)
+
+12. Click the "Save" arrow after setting details for every Item.
+
+    ![SU Content](./media/save-su-content.jpg)
+
+13. The Save icon saves the defined Storage Units and leads back to the SU Operations form. New Storage Units are created and can be used in other transactions.
 
 ---

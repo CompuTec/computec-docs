@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # SU Wizard
 
-The **SU Wizard** in CompuTec WMS provides a convenient way to create multiple **Storage Units (SUs)** with identical item content and quantities. This function is especially useful for repetitive packaging, batch production, or organizing items into pallets or containers with uniform structure. Instead of creating each SU manually, the wizard streamlines the process, saving time and reducing the chance of manual entry errors.
+The SU Wizard in CompuTec WMS provides a convenient way to create multiple Storage Units (SUs) with identical item content and quantities. This function is especially useful for repetitive packaging, batch production, or organizing items into pallets or containers with uniform structure. Instead of creating each SU manually, the wizard streamlines the process, saving time and reducing the chance of manual entry errors.
 
 Follow the steps below to create multiple SUs quickly using the SU Wizard.
 
