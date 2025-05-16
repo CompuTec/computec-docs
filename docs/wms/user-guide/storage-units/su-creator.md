@@ -8,7 +8,7 @@ Using this option, it is possible to create a number of SUs with the same conten
 
 1. Choose SU Operations from the Main Menu.
 
-    ![Start](./media/SUOperations0.webp)
+
 2. Choose SU Creator.
 
     ![Su Operations](./media/SUCreator2.webp)

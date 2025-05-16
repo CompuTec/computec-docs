@@ -4,37 +4,51 @@ sidebar_position: 3
 
 # SU Wizard
 
-This option allows the creation of any number of SUs, all with the same content (Items and quantities). To do this, perform the following steps:
+The **SU Wizard** in CompuTec WMS provides a convenient way to create multiple **Storage Units (SUs)** with identical item content and quantities. This function is especially useful for repetitive packaging, batch production, or organizing items into pallets or containers with uniform structure. Instead of creating each SU manually, the wizard streamlines the process, saving time and reducing the chance of manual entry errors.
 
-1. Select **SU Operations** from the main menu.
+Follow the steps below to create multiple SUs quickly using the SU Wizard.
 
-    ![SU Operations](./media/SUOperations0.webp)
-2. Select **SU Wizard**.
+---
 
-    ![Su Operations](./media/SUWizard.webp)
-3. Select a Warehouse in which SUs are going to be created. If the chosen Warehouse has Bin locations, you can choose it in the next step.
+1. Select "SU Operations" from the main menu.
 
-    ![Warehouse Selection](./media/1Wizard-WhseSel.webp)
-4. Set a number of SUs you want to create and click the right arrow icon.
+    ![SU Operations](./media/su-operations.webp)
 
-    ![SU Count](./media/2Wizard-Count.webp)
+2. Click on the "SU Wizard "option:
+
+    ![Su Operations](./media/su-wizard.webp)
+
+3. Choose the warehouse where the Storage Units will be created.  
+    > If the warehouse uses bin locations, you’ll be able to assign bins in the next step.
+
+    ![Warehouse Selection](./media/warehouse-selection.webp)
+
+4. Enter how many identical Storage Units you want to create and click the Right Arrow icon to proceed.
+
+    ![SU Count](./media/quantity-su-count.webp)
+
 5. Set up a single SU content by adding Items using the '+' icon.
 
-    ![Single SU Content](./media/3Wizard-Cont.webp)
+    ![Single SU Content](./media/single-su-content.webp)
 
-    ![New Item](./media/4Wizard-NewItem.webp)
+    ![New Item](./media/su-new-item.webp)
+
 6. If the chosen Item is managed by Batch, choose it from the list in the next step.
 
-    ![Batches](./media/SUBatch.webp)
-7. Set the Quantity for the chosen Item and click the 'Save' icon.
+    ![Batches](./media/batches-su.webp)
 
-    ![Quantity](./media/5Wizard-Quantity.webp)
-8. Click the 'Right Arrow' icon after choosing Items required for SUs and their Quantity.
+7. Enter the quantity for the selected item and click the "Save" icon.
 
-    ![Single SU Content](./media/Wizard-SingleSUContent.webp)
+    ![Quantity](./media/qty-su-count.webp)
+
+8. Click the "Right Arrow" icon after choosing the required items and quantities.
+
+    ![Single SU Content](./media/green-su.webp)
+
 9. A list of created SUs is displayed.
 
-    ![SU List](./media/Wizard-SUList.webp)
-10. Click the save icon to save or the left arrow to get back to any of the previous steps.
+    ![SU List](./media/list-su.webp)
+
+10. Click the "Save" icon to complete the process. Click the "Left Arrow" to return to a previous step and make changes if needed.
 
 ---

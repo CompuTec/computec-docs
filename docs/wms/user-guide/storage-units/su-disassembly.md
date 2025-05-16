@@ -58,9 +58,8 @@ This guide walks you through the step-by-step process of disassembling a Storage
 
 8. Click the "Save" icon in the Picked or Source SU Content form to save the changes.
 
+9. Info message appears: "SU disassembly completed successfully".
 
-9. Info message appears:
-
-    ![Picked Items](./media/info-su.webp)
+    ![Picked Items](./media/info-su.png)
 
 ---
