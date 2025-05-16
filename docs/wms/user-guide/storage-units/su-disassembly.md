@@ -4,47 +4,63 @@ sidebar_position: 2
 
 # SU Disassembly
 
-This function allows the disassembled Storage Unit to take Items from it and put them into a Warehouse or another Storage Unit.
+**Storage Unit (SU) Disassembly** is a feature in CompuTec WMS that allows users to break down an existing Storage Unit and transfer its contents - either fully or partially into a warehouse or another Storage Unit. This is particularly useful when you need to reorganize inventory, repack items or make specific items available for new operations.
+
+This guide walks you through the step-by-step process of disassembling a Storage Unit within the CompuTec WMS system.
 
 ---
 
-1. To disassemble a Storage unit, choose the right option in the main menu:
+## Steps to Disassemble a Storage Unit
 
-    ![SU Operations](./media/1_SUDisassembly.webp)
-2. Choose where you want to move Items to. If you choose:
+1. From the main menu, navigate to and select the **SU Disassembly** function:
 
-    1. Storage Unit – a new Storage Unit will be created with picked Items in it,
-    2. Warehouse – picked Items will be moved to the Warehouse of the source Storage Unit (without assignment to it).
+    ![SU Operations](./media/su-disassembly.webp)
 
-    Click a required button:
+2. Choose where the disassembled items should go:
 
-    ![SU Disassembly](./media/2_SUDis.webp)
-3. Choose Storage Unit, the content you want to use. Click a required Storage Unit row:
+    1. **Storage Unit**: A new Storage Unit will be created with picked Items in it,
+    2. **Warehouse**: Items will be moved to the **warehouse** of the source SU, without being assigned to any SU.
 
-    ![Storage Unit](./media/3_SUDis.webp)
+        Click the desired option:
 
-    A storage unit can be chosen by scanning a barcode with a storage unit prefix or SSCC prefix. When watching a barcode without a prefix, a code will be interpreted as a storage unit code.
-4. Click an Item row to set its quantity.
+        ![SU Disassembly](./media/move-items-su.webp)
 
-    ![Source SU Content](./media/4_SUDisSource.webp)
+3. Select the Source Storage Unit. Click the row of the SU you want to disassemble:
 
-    You can choose an option in this form by scanning a barcode with an Item, Batch, or Serial Number prefix. A code without a prefix will be interpreted as an Item code. If items from different Batches are on the list, scanning an Item code will lead to the list of Batches for the item.
-5. Set the required quantity (by typing it in or by setting it by clicking the + and - icons) and click the save icon. Note that it is possible to pick just some of the Items and quantities from SU (and leave the rest in it):
+    ![Storage Unit](./media/choose-su.webp)
 
-    ![Quantity](./media/5_SUDis.webp)
-6. You can see the list of already picked Items by clicking the right icon:
+    >Tip: You can also scan a barcode with a **Storage Unit** or **SSCC** prefix to select the SU. Scanning a code **without a prefix** will be interpreted as a standard SU code.
 
-    ![Source SU Content](./media/6_SUShowPickedItems.webp)
-7. The Picked form will be displayed:
+4. Select Items to Move. Click on an item row to set the quantity to move:
 
-    ![Picked Items](./media/7_SUPickedItems.webp)
+    ![Source SU Content](./media/picked-items.webp)
 
-    Click Show SU Items to go back to the Source SU Content form.
-8. Click the Save icon in the Picked or Source SU Content form to save the changes.
+    You can use barcodes here too:  
+    - With an **Item**, **Batch**, or **Serial Number** prefix  
+    - Without a prefix (interpreted as an Item code)  
+    - If multiple batches exist for the same item, you’ll be prompted to select the appropriate batch.
 
-    ![Picket Items](./media/8_SUSave.webp)
+5. Set the required Quantity. Use the `+` or `-` buttons or type in the quantity manually, then click the **Save** icon.
+
+    ![Quantity](./media/su-quantity.webp)
+
+    >Note: You don’t have to move all items—you can disassemble only part of the SU’s contents.
+
+6. Click the icon to view the list of already picked items:
+
+    ![Source SU Content](./media/source-su.webp)
+
+7. The list of Picked items will be displayed:
+
+    ![Picked Items](./media/show-su-items.webp)
+
+    Click "Show SU Items" to return to the original SU content view.
+
+8. Click the "Save" icon in the Picked or Source SU Content form to save the changes.
+
+
 9. Info message appears:
 
-    ![Picked Items](./media/9_SUDisSuc.webp)
+    ![Picked Items](./media/info-su.webp)
 
 ---

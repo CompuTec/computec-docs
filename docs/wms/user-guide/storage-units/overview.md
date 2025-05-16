@@ -4,28 +4,35 @@ sidebar_position: 1
 
 # Overview
 
+Storage Units (SUs) are an essential feature in warehouse operations, providing a streamlined way to group multiple items for efficient handling, tracking, and documentation. In the context of CompuTec WMS integrated with SAP Business One, Storage Units help optimize logistics by enabling users to manage collections of items - such as those placed on a pallet - as a single manageable entity. This not only simplifies warehouse processes but also ensures consistency and accuracy across inventory transactions.
+
 :::warning
     **Known Limitation**
 
-    Currently, there is no Storage Unit element in the SAP Business One after installing CompuTec WMS. For a workaround, click [here](./storage-unit-in-sap-business-one-menu-error.md).
+    Currently, there is no Storage Unit element in SAP Business One after installing CompuTec WMS. For a workaround, click [here](./storage-unit-in-sap-business-one-menu-error.md).
 :::
 
 :::warning
-    Goods packed in Storage Units by CompuTec WMS should not be moved in SAP Business One as it may result in data inconsistency between Storage Unit content and SAP Stock Reports.
+    Goods packed into Storage Units using CompuTec WMS should not be moved directly within SAP Business One. Doing so may cause data inconsistencies between Storage Unit contents and SAP stock reports.
 :::
 
-Storage Unit (SU) allows to group of Items (and their quantities) and use this group during document creation, e.g., adding an SU to a document adds all its Items.
+## What is a Storage Unit?
 
-Physically, SU can be a pallet on which Items are stored and transported.
+A Storage Unit (SU) is a group of items (with their quantities) that can be treated as a single entity during document processing. For example, adding an SU to a document will automatically include all items contained within it.
 
-Using CompuTec WMS, it is possible to create SUs, browse them, and add them to a document.
+Physically, an SU often represents a pallet or other logistics container used to store and transport items.
 
-SUs can be used in every CompuTec WMS transaction.
+### Key Features
+
+- **SU Creation**: You can create Storage Units using CompuTec WMS.
+- **SU Browsing**: SUs can be viewed both in CompuTec WMS and SAP Business One.
+- **Document Integration**: SUs can be added directly to warehouse and inventory documents.
+- **Transaction Support**: SUs are supported across all CompuTec WMS transaction types.
 
 Created SUs can be browsed in SAP Business One. Click [here](../../administrator-guide/installation/sap-business-one-settings/storage-unit.md) to find out more.
 
 Click the 'SU Operations' option in the main menu to go to related options:
 
-![SU](./media/SUOperations.webp)
+![SU](./media/storage-unit.webp)
 
 ---
