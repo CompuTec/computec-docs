@@ -8,17 +8,20 @@ sidebar_position: 7
 
 SU Pick and Pack from Sales Order
 
-![SU Pick and Pack Operations](./media/FromSalesOrder5.webp)
+![SU Pick and Pack Operations](./media/from-sales-order.webp)
 
 1. After selecting **From Sales Order**, the Warehouse selection screen opens. You can choose warehouse or just skip that step. Then, the **Customer Selection** screen opens.
 
-    ![Customer Selection](./media/CustomerSelection5.webp)
+    ![Customer Selection](./media/customer-selection.webp)
+
 2. Then, the list of orders appears. Select one or more, then press the blue Next button.
 
-    ![Order Selection](./media/OrderSelection5.webp)
+    ![Order Selection](./media/order-selection.webp)
+
 3. Document Details form appears.
 
-    ![Document Details](./media/DocumentDetails5.webp)
+    ![Document Details](./media/document-details.webp)
+
 4. Here you can
 
     1) add a new Item
@@ -29,24 +32,28 @@ SU Pick and Pack from Sales Order
 
     Upon choosing the assemble option, the Items Document form is displayed:
 
-    ![Items Document](./media/ItemsDocument5.webp)
+    ![Items Document](./media/new-item.webp)
+
 5. Here, choose Items that will be assembled into an SU. Next, click the right arrow icon. It leads to the Storage Unit details form. Here, you can add a new Item or SU or set the required quantity and Batch / Serial Numbers for those already on the list.
 
     ![Storage Unit Details](./media/StorageUnitDetails5.webp)
 6. Batch form appears. Clicking the plus icon leads to the list of available Batches with quantities.
 
-    ![Batches](./media/Batches5.webp)
+    ![Batches](./media/sales-order-batches.webp)
+
 7. The Item row turns green After choosing a Batch and setting the whole quantity.
 
     If the whole quantity is set, the row stays grey, and in the upper right corner, there is an indication of the picked/total quantity. Click the save button after selecting the whole quantity.
 
-    ![Storage Unit Details](./media/StorageUnitDetails_Selected5.webp)
+        ![Quantity](./media/sales-order-quantity.webp)
+
 8. Saving Batch and quantity for the SU leads to the Document Details form. You can see the completed Items (marked with green color, with a note that the whole quantities are on the SU) and the added SU:
 
-    ![Document Details](./media/DocDet_Selected5.webp)
+    ![Document Details](./media/document-details-1.webp)
+
 9. Click the save icon. A system message about successful save will be displayed:
 
-    ![Document Saved](./media/DocumentSaved5.webp)
+    ![Document Saved](./media/pick-pack-info.webp)
 
 ## From Inventory Transfer
 
