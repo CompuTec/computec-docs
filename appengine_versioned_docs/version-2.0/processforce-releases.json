@@ -1,7 +1,7 @@
 [
   {
     "version": "ProcessForce 10.0 Release 31 (R31)",
-    "build": "10.0.31.3",
+    "build": "10.0.31.28",
     "release_date": "19 May2025",
     "minimal_ae_version": "2.10.10.1",
     "requirements": [
