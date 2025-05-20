@@ -36,19 +36,16 @@ Unlike SU Wizard or SU Creator, this feature focuses on building just one SU at 
 
     ![Document Details](./media/doc-details-1.webp)
 
-    ![Quantity](./media/quantity.png)
+    ![Quantity](./media/7-quantity.webp)
+
 7. Similarly, you can add another item and its quantity.
 
-    ![Document Details](./media/NewSU-AddToExisting3.webp)
-
-    ![New Item](./media/new-su-new-item.webp)
-
-    ![Quantity](./media/NewSU-Q3.webp)
 8. Click the 'Save' icon after choosing Items required for SU and its quantity:
 
-    ![Document Details](./media/NewSU-All3.webp)
+    ![Document Details](./media/8-doc-details.webp)
+
 9. A **new SU** is created.
 
-    ![Document Details](./media/NewSUCreated3.webp)
+    ![Document Details](./media/9-su-created.png)
 
 ---

@@ -1,5 +1,16 @@
 [
   {
+    "version": "ProcessForce 10.0 Release 31 (R31)",
+    "build": "10.0.31.3",
+    "release_date": "19 May2025",
+    "minimal_ae_version": "2.10.10.1",
+    "requirements": [
+      "SAP Business One 10.0",
+      "ProcessForce API 10.0 RL31"
+    ],
+    "download_url": "https://download.computec.one/software/appengine/plugins/processforce/releases/CompuTec_ProcessForce_10.0.31.28.zip"
+  },
+  {
     "version": "ProcessForce 10.0 Release 30 (R30)",
     "build": "10.0.30.3",
     "release_date": "04 March 2025",
