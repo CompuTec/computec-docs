@@ -8,9 +8,10 @@ sidebar_position: 1
     Pick and Pack are not supported for Items with ‘Issue Primarily by’ (SAP Business One option) set to ‘Bin Locations.'
 :::
 
-### Pick and Pack is a fulfilment process during which Items are selected or “picked” from the warehouse and then “packed” into a container for shipping or to be transferred to another internal location such as another warehouse or the production line.
+Pick and Pack is a fulfilment process during which Items are selected or “picked” from the warehouse and then “packed” into a container for shipping or to be transferred to another internal location such as another warehouse or the production line.
 
-#### The CompuTec WMS Pick and Pack and Production Manager is a tool that supports the pick and pack process by generating Pick Lists based on a variety of SAP Business One documents:
+The CompuTec WMS Pick and Pack and Production Manager is a tool that supports the pick and pack process by generating Pick Lists based on a variety of SAP Business One documents:
+
 * Sales Orders;
 * A/R Reserve Invoices;
 * SAP Business One Production Orders;
@@ -68,15 +69,16 @@ The list will be displayed based on Custom Configuration settings
 
 Buttons:
 
-- Cancel – going back to the main menu.
-- More – a dropdown list
-- Info – base document header remarks.
-- Accept – finishing a Pick List (no the floppy disk button anymore)
-- Add Storage Unit – adding a Storage Unit
+    - Cancel – going back to the main menu.
+    - More – a dropdown list
+    - Info – base document header remarks.
+    - Accept – finishing a Pick List (no the floppy disk button anymore)
+    - Add Storage Unit – adding a Storage Unit
 
-    1. New Storage Unit
-    2. Existing Storage Unit
-- Back – going back to the document list.
+        1. New Storage Unit
+        2. Existing Storage Unit
+
+    - Back – going back to the document list.
 
 :::info
     Using Pick List supported.
@@ -121,10 +123,10 @@ Choosing a new Storage Unit leads to the form.
 
 Buttons:
 
-- Back – canceling an Storage Unit – it should be Cancel
-- Select all – checking a target Warehouse/Bin for an Storage Unit
-- Forward – Document Details creation of an Storage Unit and move to the Document Details form
-- Attachment – move to the UDF for the Storage Unit form
+    - Back – canceling an Storage Unit – it should be Cancel
+    - Select all – checking a target Warehouse/Bin for an Storage Unit
+    - Forward – Document Details creation of an Storage Unit and move to the Document Details form
+    - Attachment – move to the UDF for the Storage Unit form
 
 ![Storage Unit](./media/p8.webp)
 
@@ -140,11 +142,11 @@ To choose the Storage Unit again, you can scan a code (e.g., Storage Unit Code) 
 
 Buttons:
 
-- Return – Document Details return to the Document Details form
-- Search Storage Unit – an Storage Unit again (it will be displayed in the top bar)
-- Storage Unit Info – Storage Unit information
-- Back – go back to the Document Details form
-- Remove – removing from the Storage Unit list.
+    - Return – Document Details return to the Document Details form
+    - Search Storage Unit – an Storage Unit again (it will be displayed in the top bar)
+    - Storage Unit Info – Storage Unit information
+    - Back – go back to the Document Details form
+    - Remove – removing from the Storage Unit list.
 
 ![Storage Unit](./media/p11.webp)
 
@@ -154,11 +156,11 @@ Items available in the Storage Unit are displayed here. You can also edit them f
 
 Buttons:
 
-- Return – go back to the Document Details form
-- SU Warehouse – change the target location for the Storage Unit
-- SU Info – Storage Unit information
-- Back – go back to the Document Details form
-- Remove – remove from the SU list
+    - Return – go back to the Document Details form
+    - SU Warehouse – change the target location for the Storage Unit
+    - SU Info – Storage Unit information
+    - Back – go back to the Document Details form
+    - Remove – remove from the SU list
 
 ![Storage Unit](./media/p12.webp)
 
@@ -244,9 +246,10 @@ Items displayed the way they are on the Pick List, not like on the Sales Order. 
     1. Item Code, Barcode, Batch / Serial Number, Item + Batch / Serial Numbers,\
     2. Storage Unit/SSCC:
 
-        - new (not assigned to any of the locations)
-        - existing, containing only Items from the Pick List
-        - existing, containing only Items and Batches / Serial Numbers, locations from Pick Lists (if allocated before in SAP Business One).
+            - new (not assigned to any of the locations)
+            - existing, containing only Items from the Pick List
+            - existing, containing only Items and Batches / Serial Numbers, locations from Pick Lists (if allocated before in SAP Business One).
+
     3. Location.
 
         After scanning a location, only Items with quantity picked from this location are displayed (or just present in this location if they were not assigned).

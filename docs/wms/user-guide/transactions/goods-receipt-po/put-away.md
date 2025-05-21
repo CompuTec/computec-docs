@@ -12,10 +12,10 @@ The Put Away process begins after the physical receipt of goods into the warehou
 
 **Key features include**:
 
-- identification of goods (e.g., via barcode scanning),
-- suggestions of storage locations,
-- registration of movement to the selected location,
-- verification of correct storage (e.g., compliance with location, item type, quantity, or Storage Unit).
+- identification of goods (e.g., via barcode scanning)
+- suggestions of storage locations
+- registration of movement to the selected location
+- verification of correct storage (e.g., compliance with location, item type, quantity, or Storage Unit)
 
 ---
 
@@ -49,10 +49,10 @@ To add a new rule, press the plus icon.
 
 You can customize a rule by setting the appropriate values in the fields, which are grouped into four sections:
 
-1. Items, including: Item Code, Item Code Group, Revision, UoM Group Code, UoM Code;
-2. Warehouse, including: Warehouse Code, SU Mandatory and ABC Class (that can be set in the UDF on the Item Master Data in SAP);
-3. Other, including: Rule name, Status, Remarks;
-4. Target, including: Storage Category (more details: ), Sublevels, Bin location.
+1. Items, including: Item Code, Item Code Group, Revision, UoM Group Code, UoM Code
+2. Warehouse, including: Warehouse Code, SU Mandatory and ABC Class (that can be set in the UDF on the Item Master Data in SAP)
+3. Other, including: Rule name, Status, Remarks
+4. Target, including: Storage Category (more details: ), Sublevels, Bin location
 
 ## Storage Category
 
