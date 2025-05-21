@@ -6,6 +6,8 @@ sidebar_position: 1
 
 CompuTec WMS Client offers various startup options, including server configuration, logging level, and user interface settings, to customize and optimize warehouse management workflows.
 
+---
+
 ## Starting CompuTec WMS Settings
 
 1. To run the desktop version of the CompuTec WMS Client, an installation and configuration of the CompuTec WMS Server is required. For further information, click [here](../administrator-guide/installation/wms-server/overview.md).
@@ -44,12 +46,12 @@ You can check the following information by clicking the 'i' icon:
 
 Other options include:
 
-- *Enable Telemetry(not configured on server)*: Activate the feature to collect performance and usage data.
-- *Large Menu Icons*: Increase icon size in the menu, with a layout change to two columns instead of three.
-- *Auto-Focus on Quantity Field*: On the Quantity screen, the focus will automatically move to the - Quantity field, simplifying the entry process.
-- *Disable Formatting on Quantity Field*: Remove decimal places and separators from the Quantity field for a cleaner input.
+![other Option](./media/starting/other-options.png)
 
-    ![other Option](./media/starting/other-options.png)
+- **Enable Telemetry(not configured on server)**: Activate the feature to collect performance and usage data.
+- **Large Menu Icons**: Increase icon size in the menu, with a layout change to two columns instead of three.
+- **Auto-Focus on Quantity Field**: On the Quantity screen, the focus will automatically move to the - Quantity field, simplifying the entry process.
+- **Disable Formatting on Quantity Field**: Remove decimal places and separators from the Quantity field for a cleaner input.
 
 {/*
 Show buttons focus – highlight the buttons focused on
