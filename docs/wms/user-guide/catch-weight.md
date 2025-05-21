@@ -92,7 +92,7 @@ Click [here](https://www.youtube.com/shorts/lJHc8UuSsT8) to know more.
 
 When CompuTec WMS is integrated with weight scales, inventory quantities can be set based on the weight measurements. To do this, click the IUoM field (e.g., Qty KG in this example) and press the highlighted weight button. The IUoM field will automatically populate with the measured weight:
 
-    ![Weight](./media/catch-weight/weight.webp)
+    ![Weight](./media/catch-weight/weight.png)
 
 If the [Weight Scale auto-complete quantity](../administrator-guide/custom-configuration/custom-configuration-functions/common.md) option is enabled in Custom Configuration, the IUoM field will be automatically filled with the scale's weight measurement when you click the Save icon.
 

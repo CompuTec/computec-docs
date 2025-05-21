@@ -32,11 +32,11 @@ This option is ideal when the same item set is packaged repeatedly but requires 
 
     ![Quantity](./media/su-quantity-1.jpg)
 
-6. Click the 'Next' icon after choosing Items required for SU and its quantity.
+6. Click the "Forward" icon after choosing Items required for SU and its quantity.
 
     ![Select SU content](./media/select-su-content-1.jpg)
 
-7. Define how many SUs with a defined set of Items will be created and click the "Next" icon.
+7. Define how many SUs with a defined set of Items will be created and click the "Forward" icon.
 
     ![SU Count](./media/enter-quantity.jpg)
 
@@ -52,7 +52,7 @@ This option is ideal when the same item set is packaged repeatedly but requires 
 
     ![Batches](./media/batches-su.jpg)
 
-11. Define the quantity for each batch or serial. Items can be pulled from different batches.Click the 'Next" arrow.
+11. Define the quantity for each batch or serial. Items can be pulled from different batches.
 
     ![Quantity](./media/set-quantity.jpg)
 

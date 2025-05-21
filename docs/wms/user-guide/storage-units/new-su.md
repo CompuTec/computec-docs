@@ -32,11 +32,9 @@ Unlike SU Wizard or SU Creator, this feature focuses on building just one SU at 
 
     ![New Item](./media/new-su-new-item.webp)
 
-6. Set the quantity for the chosen Item and click the 'Next' icon.
+6. Set the quantity for the chosen Item.
 
-    ![Document Details](./media/doc-details-1.webp)
-
-    ![Quantity](./media/7-quantity.webp)
+    ![Document Details](./media/doc-details-1.webp) ![Quantity](./media/7-quantity.webp)
 
 7. Similarly, you can add another item and its quantity.
 

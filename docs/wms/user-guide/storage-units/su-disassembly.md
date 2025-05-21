@@ -44,9 +44,9 @@ This guide walks you through the step-by-step process of disassembling a Storage
 
     ![Quantity](./media/su-quantity.webp)
 
-    >Note: You don’t have to move all items—you can disassemble only part of the SU’s contents.
+    >Note: You don’t have to move all items - you can disassemble only part of the SU’s contents.
 
-6. Click the icon to view the list of already picked items:
+6. Click on "Show Picked Items" view the list of already picked items:
 
     ![Source SU Content](./media/source-su.webp)
 

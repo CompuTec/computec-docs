@@ -29,26 +29,20 @@ Follow the steps below to create multiple SUs quickly using the SU Wizard.
 
 5. Set up a single SU content by adding Items using the '+' icon.
 
-    ![Single SU Content](./media/single-su-content.webp)
-
-    ![New Item](./media/su-new-item.webp)
+    ![Single SU Content](./media/single-su-content.webp) ![New Item](./media/su-new-item.webp)
 
 6. If the chosen Item is managed by Batch, choose it from the list in the next step.
 
     ![Batches](./media/batches-su.webp)
 
-7. Enter the quantity for the selected item and click the "Save" icon.
+7. Enter the quantity for the selected item. Click the "Right Arrow" icon after choosing the required items and quantities.
 
-    ![Quantity](./media/qty-su-count.webp)
+    ![Quantity](./media/qty-su-count.webp) ![Single SU Content](./media/green-su.webp)
 
-8. Click the "Right Arrow" icon after choosing the required items and quantities.
-
-    ![Single SU Content](./media/green-su.webp)
-
-9. A list of created SUs is displayed.
+8. A list of created SUs is displayed.
 
     ![SU List](./media/list-su.webp)
 
-10. Click the "Save" icon to complete the process. Click the "Left Arrow" to return to a previous step and make changes if needed.
+9. Click the "Save" icon to complete the process. Click the "Left Arrow" to return to a previous step and make changes if needed.
 
 ---
