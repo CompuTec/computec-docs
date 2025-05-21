@@ -9,6 +9,19 @@ toc_max_heading_level: 2
     Installer is ready to download from [here](../../plugins/pdc/download.md).
 :::
 
+## CompuTec PDC 3.10.26.1
+
+**Release Date – 21 May 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Bug | Configuration | SQL password is visible in the user configuration file |
+| Bug | PDC | A bin allocation error occurs during issue to production |
+| Bug | PDC | Scanning by batch does not auto-fill the Item Code, Batch Number, or Bin Location. <br/>System does not validate locked batches |
+| Bug | PDC | In Quick Receipt, the system incorrectly handles the number of batches |
+| Bug | Labels | Duplicate label print requests are generated in CT Labels after a Pick Receipt is created in PDC |
+| Improvement | Pick and Pack | Add an "Auto Select All" button at the top of the PDC Receipt/Issue window |
+
 ## CompuTec PDC 3.10.25.3
 
 **Release Date – 10 April 2025**
