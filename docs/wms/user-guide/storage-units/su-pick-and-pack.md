@@ -7,92 +7,54 @@ sidebar_position: 7
 This guide walks you through the SU (Storage Unit) Pick & Pack process in your warehouse operations using two workflows:
 
 - From Sales Order
-- From Inventory Transfer
+- From Transfer Request
 
 Each method allows warehouse operators to efficiently assemble and pack items into Storage Units (SUs) for dispatch or movement, while tracking batches and quantities at every step. Let’s go through both processes in detail.
 
+:::info
+The process remains the same for both Sales Orders and Transfer Requests.
+:::
+
 ---
 
-## From Sales Order
+## From Transfer Request
 
-Begin the Pick & Pack process directly from a Sales Order.
+![From Transfer Request](./media/01-from-transfer-request.jpg)
 
-![SU Pick and Pack Operations](./media/from-sales-order.webp)
+![Warehouse](./media/02-whs.jpg)
 
-1. Choose the From Sales Order option. The system will prompt for warehouse selection - you can either pick a warehouse or skip this step. Next, the Customer Selection screen appears.
+![Inventory Transfer](./media/03-inventory-transfer.jpg)
 
-    ![Customer Selection](./media/customer-selection.webp)
+![Document Details](./media/04-doc-details.jpg)
 
-2. The list of sales orders for the selected customer is displayed. Select one or more orders, then click forward.
+![From Bin](./media/05-from-bin.jpg)
 
-    ![Order Selection](./media/order-selection.webp)
+![Document Details](./media/06-doc-details.jpg)
 
-3. The Document Details form will appear.
+![Document Details](./media/07-doc-details.jpg)
 
-    ![Document Details](./media/document-details.webp)
+![New Item](./media/08-new-item.jpg)
 
-4. Here you can:
+![List of SUs](./media/09-list-of-su.jpg)
 
-    1) add a new Item
-    2) add a new SU
-    3) assemble an SU from the Items on the list.
+![SU Details](./media/10-su-details.jpg)
 
-    Alternatively, manually enter item quantities and select Batch/Serial Numbers. Selecting the assemble option opens the Items Document form:
+![Document Details](./media/11-doc-details.jpg)
 
-    ![Items Document](./media/new-item.webp)
+![Document Details](./media/12-doc-details.jpg)
 
-5. Clicking any of the row will lead to the list of available Batches with quantities.
+![Bin](./media/13-bin.jpg)
 
-    ![Batches](./media/sales-order-batches.webp)
+![Items Doc](./media/14-items-doc.jpg)
 
-6. The Item row turns green After choosing a Batch and setting the whole quantity.
+![SU Details](./media/15-su-details.jpg)
 
-    If the whole quantity is set, the row stays grey, and in the upper right corner, there is an indication of the picked/total quantity. Click the save button after selecting the whole quantity.
+![Serials](./media/16-serials.jpg)
 
-        ![Quantity](./media/sales-order-quantity.webp)
+![SU Details](./media/17-su-details.jpg)
 
-7. Saving Batch and quantity for the SU leads to the Document Details form. You can see the completed Items (marked with green color, with a note that the whole quantities are on the SU) and the added SU:
+![Document Details](./media/18-doc-details.jpg)
 
-    ![Document Details](./media/document-details-1.webp)
-
-8. Click the save icon. A system message about successful save will be displayed:
-
-    ![Document Saved](./media/pick-pack-info.webp)
-
-## From Inventory Transfer
-
-SU Pick and pack from Inventory Transfer
-
-![SU Pick And Pack Operations](./media/from-transfer-request.webp)
-
-After selecting **From Inventory Transfer**, the Warehouse selection screen opens. You can skip this screen, but you will ask for it when adding items.
-
-![Warehouse](./media/tr-warehouse.webp)
-
-The list of Inventory Transfers for this warehouse opens - select one of the documents.
-
-![Inventory Transfer](./media/inventory-transfer.webp)
-
-Document Details screen opens - selecting one of the listed items leads to the Storage Info screen.
-
-![Document Details](./media/tr-doc-details.webp)
-
-When you select an item managed by none, the Quantity screen opens. You can enter the required quantity of this item.
-
-![Quantity](./media/tr-quantity.webp)
-
-After entering the required quantity and pressing the right arrow button, we return to the Document Details. Non-Active-01 is marked green because all quantity was selected.
-
-![Document Details](./media/DocDet_OneGreen5.webp)
-
-We can add:
-
-1. the item not listed
-
-2. SU not listed
-
-3. SU details.
-
-![Document Details](./media/DotDet_Add5.webp)
+![SU Info](./media/19-info.jpg)
 
 ---
