@@ -10,7 +10,7 @@ When experiencing performance issues with the CompuTec WMS application, it's ess
 
 If you have a problem with WMS application performance, please contact CompuTec support.
 
-You can create an issue in the WMS Support space on [support.computec.pl](support.computec.pl). Click [here](https://support.computec.pl/projects/SWMS/welcome-guide) to visit this page. To shorten the process of WMS support, please be sure to describe a problem closely.
+You can create an issue in the WMS Support space on support.computec.pl. Click [here](https://support.computec.pl/projects/SWMS/welcome-guide) to visit this page. To shorten the process of WMS support, please be sure to describe a problem closely.
 
 To make the whole process easier, you can add the following information to the issue:
 
