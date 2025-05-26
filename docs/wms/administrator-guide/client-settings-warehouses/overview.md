@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Overview
 
-In this section, you can check CompuTec WMS client options. In each section you can find description of behaviour of the application with specific options checked.
+This section provides an overview of the available CompuTec WMS Client options. Each subsection includes a description of the application's behavior when specific options are enabled.
 
 ![Default Warehouses](./media/overview/default-warehouse.png)
+
+---

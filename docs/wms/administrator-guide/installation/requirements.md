@@ -137,7 +137,9 @@ If ProcessForce is installed, CompuTec WMS requires CompuTec ProcessForce API to
 
 ## Upgrade
 
+:::caution
 Before installing CompuTec WMS 2.0, manually uninstall the previous WMS Server from Programs and Features.
+:::
 
 ### Transferring Custom Configurations and Server Settings
 
@@ -158,7 +160,7 @@ When upgrading to version 2.0 from any previous version, you need to manually tr
     ![Settings](./media/wms-settings.webp)
 
     :::note
-    Note that there is a "License Server" field in the old settings, and on the new form, there is an "SAP Business One SLD Server" field (these values can be different in some cases).
+    There is a "License Server" field in the old settings, and on the new form, there is an "SAP Business One SLD Server" field (these values can be different in some cases).
     :::
 
 4. Repeat these steps for "Custom Config" options to ensure all settings are correctly transferred.

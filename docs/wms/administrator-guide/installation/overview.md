@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-CompuTec WMS is a robust Warehouse Management System designed to streamline warehouse operations and ensure seamless integration with SAP Business One. This guide outlines the step-by-step process for installing, configuring, and validating the core components of the WMS solution. The instructions provided here are crucial for ensuring optimal performance and compatibility of WMS with your business processes.
+CompuTec WMS is a robust Warehouse Management System designed to streamline warehouse operations and ensure seamless integration with SAP Business One. This guide outlines the step-by-step process for installing, configuring and validating the core components of the WMS solution. The instructions provided here are crucial for ensuring optimal performance and compatibility of WMS with your business processes.
 
 ---
 

@@ -4,6 +4,17 @@ sidebar_position: 1
 
 # CompuTec ProcessForce Plugin
 
+## CompuTec.ProcessForce 3.2505.2
+
+**Release Date - 23 May 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Bug | Common functions | Error message occurred: “It is not possible to delete rows in update mode” on SO Update |
+| Bug | MRP 2.5 | Issue with Demand Quantity calculation for Finished Goods (FG) with Lead Time |
+| Bug | Bill of Materials | Incorrect Operation Start after overlay in Advanced Operation Relationships |
+| Bug MRP 2.5 Issues Identified in Standard and Custom Lead Time Logic |
+
 ## CompuTec.ProcessForce 3.2505.1
 
 **Release Date - 19 May 2025**
