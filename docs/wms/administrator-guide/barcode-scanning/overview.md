@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-CompuTec WMS integrates Barcode Scanning into many of its functions, allowing for more efficient workflow operations. Here’s an overview of the main elements of barcode scanning within CompuTec WMS
+CompuTec WMS integrates Barcode Scanning into many of its functions, allowing for more efficient workflow operations. Here’s an overview of the main elements of barcode scanning within CompuTec WMS.
 
 ---
 
@@ -217,4 +217,3 @@ The file contains a full programming barcode for plug-in Motorola scanners guide
 For testing barcode scanning, you can use a dedicated application: [WMS Scanning Simulator](./wms-scanning-simulator.md).
 
 ---
-CompuTec WMS provides robust support for barcode scanning across various standards. CompuTec WMS continues to prioritize adaptability and user convenience in its barcode scanning solutions.

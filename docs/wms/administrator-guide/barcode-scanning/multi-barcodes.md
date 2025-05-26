@@ -101,4 +101,3 @@ The barcodes in this guide were generated using a specialized [barcode generatio
         ![Barcode](./media/barcode-06.webp)
 
 ---
-Multi-block barcodes are a powerful feature of CompuTec WMS, enabling streamlined data entry, increased accuracy, and operational efficiency. Whether you're optimizing workflows or reducing manual errors, multi-block barcodes are an invaluable tool in your warehouse management arsenal.
