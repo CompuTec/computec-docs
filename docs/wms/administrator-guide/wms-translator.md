@@ -14,7 +14,7 @@ This guide explains how to use the WMS Translator, an essential IT solution for 
 
 ## WMS Translator Address
 
-URL address: [https://translate.processforce.eu:4433](https://translate.processforce.eu:4433)
+You can access the WMS Translator by navigating to [https://translate.processforce.eu:4433](https://translate.processforce.eu:4433) in your web browser.
 
 ## Logging in
 
@@ -26,30 +26,33 @@ Log in using credentials provided by CompuTec.
 
 ![Translator](./media/translator-wms.webp)
 
-Use the switch at the top of the window to access WMS Client and Server translation.
+**Key Features**:
 
-Choose the language which you want to translate (Select language). After that, you can also browse the chosen language version by specific text. Click Load data to load the desired language.
-
-When you implement changes, you can send them to the server (by clicking Save Changes). They will be stored there and added to the following official CompuTec WMS release.
-
-The default language is a source. You cannot change it.
+- Use the switch at the top of the window to access WMS Client and Server translation.
+- Choose the target language from the dropdown menu. Use the search function to find specific strings. Click Load data to display the content.
+- When you implement changes, you can send them to the server (by clicking "Save Changes"). They will be stored there and added to the following official CompuTec WMS release.
+- The default language is a source. You cannot change it.
 
 ## Translation Download
 
-If you want to test the translation before an official release, you can download the translation files for the selected language. You can then update your CompuTec WMS installation with the downloaded files. Keep in mind that once you upgrade to an official release, the translation files will be overwritten with the latest version.
+If you want to test the translation before an official release, you can download the translation files for the selected language. You can then update your CompuTec WMS installation with the downloaded files.
+
+:::caution
+Keep in mind that once you upgrade to an official release, the translation files will be overwritten with the latest version.
+:::
 
 To swap downloaded language files with the ones in your WMS Server and Client installation folders, copy the translation files to both the WMS Server and WMS Client installation folders.
 
     <details>
     <summary>Click here to find out more</summary>
     <div>
-    - A file with a longer name:
+    - **A file with a longer name**:
 
         ![Translation file](./media/server_transl.webp)
 
         (Alternatively, use the same path with the Program Files folder instead of Program Files (x86) if you're using a 64-bit version of the application.)(Or the same path with the Program Files folder, instead of Program Files (x86), in case of using a 64-bit version of the application)
 
-    - A file with a shorter name:
+    - **A file with a shorter name**:
 
         ![Client](./media/client_transl.webp)
 
@@ -57,4 +60,3 @@ To swap downloaded language files with the ones in your WMS Server and Client in
     </details>
 
 ---
-By following the steps outlined above, you can easily translate and update your WMS installation while keeping track of future upgrades. Make sure to back up your translations and share them with CompuTec for seamless integration into future releases.

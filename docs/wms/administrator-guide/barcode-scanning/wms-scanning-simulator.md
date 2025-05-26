@@ -34,4 +34,3 @@ You can easily download and run the WMS Scanning Simulator on your system. It’
     To learn more, watch the video: [An example usage of single and multi-part codes in GS1 standard](https://www.youtube.com/watch?v=utDZYiQYdoI).
 
 ---
-The WMS Scanning Simulator offers a convenient and efficient way to simulate barcode scanning and test your WMS setup. While it is intended for individual use at a time, it remains an excellent tool for ensuring your system operates smoothly, especially when preparing for a system rollout or performing quality assurance checks. Whether you're working with GS1 or Odette barcode standards, the simulator helps ensure that your CompuTec WMS performs as expected, making it an essential tool for your testing phase.

@@ -4,6 +4,14 @@ sidebar_position: 1
 
 # CompuTec ProcessForce Plugin
 
+## CompuTec.ProcessForce 3.2505.3
+
+**Release Date - 26 May 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Bug | Installer | Missing Field "U_Message" in Installer for MOWizard Bottleneck |
+
 ## CompuTec.ProcessForce 3.2505.2
 
 **Release Date - 23 May 2025**

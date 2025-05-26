@@ -4,6 +4,10 @@ sidebar_position: 2
 
 # Log file locations of CompuTec WMS Components
 
+To help diagnose and resolve issues effectively, CompuTec WMS generates log files for its various components. These logs contain detailed records of application activity and errors. When reporting a problem to CompuTec Support, it's helpful to include the relevant log files based on the component involved.
+
+The table below lists the default file paths for each component’s logs:
+
 |            Component             |                                                                  Default path                                                                  |
 | :------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------: |
 |     CompuTec WMS Server logs     |                                                C:\ProgramData\CompuTec\CompuTec WMS\Server\Logs                                                |
@@ -18,9 +22,10 @@ You can check Windows Event Viewer logs if you cannot find adequate files in the
     <summary>Click here to find out more</summary>
     <div>
     You can find information about an error in two locations (highlighted in screenshots below):
+
     ![Event Viewer](./media/event-viewer.png)
 
-    If there is an error connecting to the CompuTec application, click its row, copy data from the main window and paste it into the support issue.
+    If there is an error connecting to the CompuTec application, click its row, copy the contents and include them in your support ticket.
 
     ![Event Viewer](./media/event-viewer-computec.png)
     </div>
