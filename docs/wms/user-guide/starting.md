@@ -39,7 +39,7 @@ You can check the following information by clicking the 'i' icon:
 - Company Name
 - Database Name
 - Server Version
-- Client Version (tap twice to [overwrite]( https://learn.computec.one/docs/wms/administrator-guide/computec-wms-android-version/#overwriting-a-client-version))
+- Client Version (tap twice to [overwrite](../administrator-guide/installation/wms-client/computec-wms-android-version.md#overwriting-a-client-version))
 - Terminal ID
 
 ### Other Options
