@@ -65,7 +65,7 @@ Full screen for login panel – full screen mode for the login panel (even if th
 
 ## Documents tab
 
-Checking a specific checkbox displays the Warehouse Selection form of a particular transaction. If you want to use only one default warehouse, uncheck a checkbox for a required transaction and type in a required warehouse. Click [here](../administrator-guide/client-settings-warehouses/overview.md) to find out more.
+Checking a specific checkbox displays the Warehouse Selection form of a particular transaction. If you want to use only one default warehouse, uncheck a checkbox for a required transaction and type in a required warehouse. Click [here](../user-guide/client-settings-warehouses/overview.md)
 
 ![Document Tab](./media/starting/documents-tab.png)
 
