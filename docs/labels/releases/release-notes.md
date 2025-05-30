@@ -10,6 +10,8 @@ toc_max_heading_level: 4
 
 Below are the release notes for CompuTec Labels Printing Manager, highlighting new features, improvements, and bug fixes in this release.
 
+{/*
+
 ### CompuTec Labels Printing Manager 4.8.3 HF1
 
 **Release Date – 29 May 2025**
@@ -18,6 +20,8 @@ Below are the release notes for CompuTec Labels Printing Manager, highlighting n
 | --- | --- | --- | --- |
 | Bug | Printing Manager Application | - | The performance of the PDF attachment process to SAP documents has been improved. |
 | Bug | Printing Manager Application | - | An error occurs during the installation of database objects. |
+
+*/}
 
 ### CompuTec Labels Printing Manager 4.8.3
 

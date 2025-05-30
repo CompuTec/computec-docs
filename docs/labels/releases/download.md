@@ -14,9 +14,13 @@ Below CompuTec Labels Printing Manager and CompuTec Labels SAP Add-on versions a
 
 ### CompuTec Labels Printing Manager
 
+{/*
+
 | Version | Build | Release Date | Required CT License Server Version | Download Link | Release Note |
 | --- | --- | --- | --- | --- | --- |
 | 4.8.3 HF1 | 4.8.3.2 | 29 May 2025 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.3.1_x64.msi) | [Navigate to the page](./release-notes.md#computec-labels-printing-manager-483-hf1) |
+
+*/}
 
 <details>
 <summary>Previous Releases</summary>
