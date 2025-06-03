@@ -36,23 +36,23 @@ Go to Custom Configuration and select the "Turn on Dispatch Control for all Busi
 
 Click on the Dispatch Control button:
 
-![Main Menu](./media/wms-main-menu.webp)
+![Main Menu](./media/dispatch-control.webp)
 
 Select a row from the Delivery list:
 
-![Delivery Selection](./media/delivery-selection.webp)
+![Delivery Selection](./media/dispatch-ctrl-deliivery-list.webp)
 
 After selecting the row, the Document Details screen appears. Select one of the Items:
 
-![Details](./media/details-grayed.webp)
+![Details](./media/dispatch-ctrl-doc-details.webp)
 
 If batches manage Items, you have to select Batch:
 
-![Batches](./media/delivery-batches-2.webp)
+![Batches](./media/dispatch-ctrl-batches.webp)
 
 Now you have to enter the BP Part Number for this specific Item:
 
-![Enter Numbers](./media/delivery-enter-number.webp)
+![Enter Numbers](./media/bp-part-no.webp)
 
 If you enter a wrong number, the error message appears:
 

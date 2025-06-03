@@ -4,30 +4,39 @@ sidebar_position: 3
 
 # Date-Customer Workflow
 
-The following description applies to the Date-Customer workflow. Click [here](default-workflow.md) to check how to set a workflow for the Delivery document.
+The **Date-Customer Workflow** enables you to select a date first, followed by choosing the corresponding Customer. This approach allows for quick and easy navigation through documents associated with a specific date for any given Customer. It is particularly useful when you need immediate access to documents where Customers have scheduled activities for a certain date.
 
-The date-customer workflow allows one to choose a date and then specify the Customer on completing the information on a document. This way, we can easily browse through documents for particular dates for any Customer. This workflow is practical when we want instant access to information about documents for which Customers are planning for a specific date.
+For instructions on setting up a workflow for Delivery documents, click [here](default-workflow.md).
 
 ---
 
 ## From Pick List
 
-1. Press From Pick List.
-2. Pick Lists with dates are displayed. Select one of them.
+1. Click "From Pick List".
+2. A list of Pick Lists with assigned dates is displayed. Select the relevant Pick List.
 
-    ![Pick Date](./media/delivery-pick-date.webp)
-3. The Customer Selection screen opens. Only Customers that have a Pick List generated for this date are displayed.
+    ![Pick Date](./media/delivery-pick-date.jpg)
 
-    ![Customer Selection](./media/delivey-customer-selection-pick-list.webp)
-4. When you select the Customer, the Document Details screen opens.
+3. The Customer Selection screen appears, showing only those Customers who have a Pick List generated for the selected date.
 
-    ![Document Details](./media/delivery-document-details.webp)
-5. Add another Item or SU, confirm the quantities and select Batches and Serial Numbers.
+    ![Customer Selection](./media/delivey-customer-selection-pick-list.jpg)
 
-    ![Document Details Highlight](./media/delivery-document-details-higlight.webp)
-6. Press the Next button that leads to the Remarks screen.
+4. Choose the desired Customer to open the Document Details screen.
 
-    ![Delivery Remarks](./media/delivery-remarks-2.webp)
-7. Click the Save icon to save the document.
+    ![Document Details](./media/delivery-document-details.jpg)
+
+5. In the Document Details screen:
+
+    - Add additional Items or Storage Units (SUs)
+    - Confirm quantities
+    - Select appropriate Batches and Serial Numbers
+
+    ![Document Details Highlight](./media/delivery-document-details-higlight.jpg)
+
+6. Click Next to proceed to the Remarks screen.
+
+    ![Delivery Remarks](./media/delivery-remarks-2.jpg)
+
+7. Click the "Save" icon to save the document.
 
 ---

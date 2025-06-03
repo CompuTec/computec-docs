@@ -43,8 +43,7 @@ Below are the release notes for CompuTec Labels Printing Manager, highlighting n
 | --- | --- | --- | --- |
 | Bug | Printing Manager Application | SLABE-987 | The document attached via the report rule does not appear in the SAP UI in certain instances. |
 | Bug | Printing Manager Application | SVILL-52 |Default query of Goods Receipt object isn't correct. |
-| Bug | Printing Manager Application | - | A button has been added on Setup Wizard to auto-fill 
- credential. |
+| Bug | Printing Manager Application | - | A button has been added on Setup Wizard to auto-fill credential. |
 | Improvement | Printing Manager Application | - | Saving button in Printer Properties has been replaced. |
 | Improvement | Printing Manager Application | SLABE-992 | Dash char ![dash](./media/dash.png) in database name causes error exception. |
 

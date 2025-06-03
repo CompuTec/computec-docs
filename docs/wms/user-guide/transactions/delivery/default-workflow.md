@@ -4,98 +4,83 @@ sidebar_position: 4
 
 # Default Workflow
 
-The following description applies to the default Delivery workflow. Click [here](../../../administrator-guide/custom-configuration/custom-configuration-functions/delivery.md) to check how to set a workflow for the Delivery document.
+Managing deliveries efficiently is essential to streamlined warehouse operations. This guide walks you through the default Delivery workflow in the system, ensuring every step is covered - from selecting a customer to posting the final delivery document in SAP Business One.
+
+Click [here](../../../administrator-guide/custom-configuration/custom-configuration-functions/delivery.md) to check how to set a workflow for the Delivery document.
 
 :::note
     Some forms' order and availability during a document's creation may vary depending on individual settings. Click [here](../../../administrator-guide/custom-configuration/overview.md) to find out more on custom configuration.
 :::
 
-1. Click the Delivery in the main menu to create a Delivery document.
+1. Click "Delivery" from the main menu to initiate a new Delivery document.
 
-    ![Main Menu](./media/wms-delivery.webp)
+    ![Main Menu](./media/1-wms-delivery.jpg) ![Delivery Operations](./media/2-delivery-operations.jpg)
 
-    ![Delivery Operations](./media/delivery-operations.webp)
-2. The Source Warehouse window appears.
-
-    Choose the desired Warehouse by clicking its row.
-
-    ![Warehouse filter](./media/warehouse-filter.webp)
-
-    :::note
-        Filtering the records is available in every window where a Filter row is present. You can start it by typing in at least a part of a name, e.g., a part of a warehouse name, in the Warehouse Selection window.
-    :::
-
-    ![Warehouse](./media/delivery-warehouse.webp)
-
-    :::note
-        This step may be skipped by clicking the right arrow icon. In this case, Source Warehouse will be available to choose from upon setting the Item details.
-    :::
-
+    :::info
     It is possible to [set up a default Warehouse](../../starting.md#documents-tab). In this case, the Warehouse Selection screen is skipped, and the Warehouse set as default is chosen automatically.
-3. The Customer Selection window will appear.
+    :::
+
+2. The Customer Selection window will appear.
 
     Clicking a row of a Customer picks it and leads to another window.
 
-    ![Customer](./media/customer-selection.webp)
-4. The Pick Lists window will appear with a list of Pick Lists available for this Warehouse.
+    ![Customer](./media/3-customer-selection.jpg)
 
-    Only Pick Lists with a status different from Closed are displayed. Choose the desired list by clicking its row. You can filter the list by scanning the item code – only Pick Lists with this Item will be displayed.
+3. You will now see a list of active Pick Lists (excluding those with status “Closed”) for the selected warehouse. You can filter these by scanning an item code.
 
-    ![Delivery - Pick Lists](./media/delivery-pick-lists.webp)
-5. The Document Details window will appear.
+    ![Delivery - Pick Lists](./media/4-pick-list.jpg)
 
-    Click a row or scan an Item code to choose the correct quantity.
+4. The Document Details window will appear. Select items from the Pick List by clicking a row or scanning the item code to set quantities.
 
-    ![Document Details](./media/doc-det-so.webp)
-6. If a Warehouse has not been chosen in step no. 2, the Source Warehouse form will be displayed now.
-7. A From Bin form will appear if Bin Locations manage a Warehouse.
+    ![Document Details](./media/5-doc-details.jpg)
 
-    Click a required Bin row or scan its code.
+5. A "From Bin form" will appear if Bin Locations manage a Warehouse. Click a required Bin row or scan its code.
 
-    ![From Bin](./media/delivery-from-bin.webp)
-8. The Quantity Window will appear.
+    ![From Bin](./media/6-from-bin.jpg)
 
-    You can change the quantity by scanning it, typing it in, or using the '+' and '-' icon buttons. Click the right arrow icon after choosing the correct quantity to return to the Document Details window.
+6. Adjust the quantity manually, by scanning, or using the '+' and '-' buttons. Confirm with the right arrow icon. Click the "Save" icon after choosing the correct quantity to return to the Document Details window.
 
-    ![Quantity](./media/delivery-quantity-A00001.webp)
-9. If serial numbers manage an item, the Serial Number window appears after clicking an item row.
+    ![Quantity](./media/7-quantity.jpg)
 
-    Clicking a Serial number row picks it and adds it to the Document Details window. This step should be repeated until obtaining the desired quantity.
+7. If serial numbers manage an item, the Serial Number window appears after clicking an item row. Clicking a Serial number row picks it and adds it to the Document Details window. This step should be repeated until obtaining the desired quantity.
 
-    ![Serials](./media/delivery-serials-2.webp)
-10. If Batches manages an Item, the Batch window will appear after clicking an item in the Document Details window.
+    ![Serials](./media/8-serials.jpg)
 
-    The Quantity window appears after clicking the desired batch (see no. 8 of this guide).
+8. For items managed by Batches, the batch selection screen appears after clicking an item in the Document Details window. The Quantity window appears after clicking the desired batch (see no. 6 of this guide).
 
-    ![Batches](./media/delivery-batches.webp)
-11. Click the menu icon and '+' in the Document details window to add (if necessary) items not included on the pick list (or any of the Sales Orders).
+    ![Batches](./media/9-batches.jpg)
 
-    After that, click an item row and do as follows in point 5 and following this guide (if a source Warehouse was not picked in no 2 of this guide, it is available now).
+9. Click the menu icon → '+' to manually add items not on the Pick List. Then follow the process from step 4 onward for the new item.
 
-    ![Document Details](./media/doc-det-empty.webp)
+    >Note: If a source Warehouse was not picked in no 2 of this guide, it is available now.
+
+    ![Document Details](./media/11-doc-dettails.jpg)
 
     Click the menu icon and then add the storage unit icon (B) to add a new storage unit to the document:
 
-    Storage Unit form will be displayed; click the SU row to add it to the document:
+    ![SU Options](./media/11-su-options.jpg)
 
-    ![Storage](./media/delivery-batches.webp)
+    Storage Unit form will be displayed; click the SU row to add it to the document:
 
     Click the highlighted icon to see information on a Storage Unit added to the document.
 
-    ![Storage Unit Details](./media/delivery-storage-unit-details.webp)
-12. Click the right arrow icon after setting document details.
+    ![Storage Unit Details](./media/12-storage-unit-details.jpg)
 
-    ![Document Details Highlight](./media/delivery-document-details-highlight-2.webp)
-13. The Remarks window will appear.
+10. Click the "Forward" icon after setting document details.
 
-    Filling in a reference number field and a remarks field is optional. You can choose a document series (if it is set in a database).
+    ![Document Details Highlight](./media/13-doc-details.jpg)
 
-    ![Remarks](./media/delivery-remarks-3.webp)
-14. You can save the document as a draft.
-15. Click the save icon to generate a delivery document.
+11. The Remarks window will appear. Filling in a reference number field and a remarks field is optional. You can choose a document series (if it is set in a database).
 
-    ![Saved](./media/delivery-saved.webp)
-16. A note about the creation of a document is displayed. Click "OK" to finish the transaction.
-17. The delivery is posted and is available in SAP Business One.
+    ![Remarks](./media/14-remarks.jpg)
+
+12. You can save the document as a draft.
+13. Click the "Save" icon to generate a delivery document.
+
+14. A confirmation message will appear. Click OK to complete the process.
+
+    ![Saved](./media/15-delivery-saved.jpg)
+
+15. Your delivery document is now posted and available in SAP Business One.
 
 ---
