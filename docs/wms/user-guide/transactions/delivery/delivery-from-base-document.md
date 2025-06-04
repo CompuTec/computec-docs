@@ -104,6 +104,6 @@ The system validates the information and confirms a successful save.
 
 ### Delivery is Posted in SAP Business One
 
-    ![SAP Delivery](./media/36-sap-delivery.jpg)
+    ![SAP Delivery](./media/sap-delivery-01.png)
 
 ---

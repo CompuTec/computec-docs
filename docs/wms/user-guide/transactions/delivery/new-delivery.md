@@ -4,77 +4,82 @@ sidebar_position: 6
 
 # New Delivery
 
+This guide explains how to create a new Delivery Document in the system. A delivery document is used to record the dispatch of goods to a customer and is often based on a Sales Order or Pick List. Depending on your system’s configuration, some steps or screens may vary.
+
 :::info
-Some forms' order and availability during document creation may vary depending on individual settings. Click here to find out more.
+Some forms' order and availability during document creation may vary depending on individual settings.
 :::
 
-- Press the Delivery in the main menu to create a delivery document.
-![Delivery](./media/delivery.png)
-![Delivery](./media/delivery-operations-01.png)
+---
 
-- The Source Warehouse window will appear.
-Choose the desired warehouse by clicking its row.
-![Warehouse Filter](./media/warehouse-filter.png)
+1. Press the Delivery in the main menu to create a delivery document.
 
-:::caution
-Searching through the records is available in every window in which a Filter row is displayed by typing in at least a part of a name, e.g., a part of a Warehouse name, in the Warehouse Selection window.
-:::
-    ![Warehouse](./media/warehouse.png)
+    ![Delivery](./media/1-delivery.jpg) ![Delivery](./media/2-delivery-operations.jpg)
 
-:::caution
-This step can be skipped by clicking the right arrow icon. In this case, Source Warehouse can choose from setting Item details.
-:::
+    :::info
+        It is possible to [set up a default Warehouse](../../starting.md#documents-tab). In this case, the Warehouse Selection screen is skipped, and the Warehouse set as default is chosen automatically.
+    :::
 
-It is possible to [set up a default Warehouse](../../starting.md#documents-tab). In this case, the Warehouse Selection screen is skipped, and the Warehouse set as default is chosen automatically.
+2. The Customer Selection window appears. Click a row to choose a customer and move to the next screen.
 
-- The Customer Selection window will appear.
+    ![Customer Selection](./media/3-cust-selection.jpg)
 
-Clicking a row of a Customer picks it and leads to another window.
+    The Document Details screen appears.
 
-![Customer Selection](./media/customer-selection.png)
+    ![Document Details](./media/4-doc-details.jpg)
 
-- The Document Details screen appears.
+3. After selecting the customer, the Document Details screen opens. Here, you can add items to the delivery using multiple methods.
 
-You can add an Item to the list in different ways.
-![Document Details](./media/doc-details-01.png)
-<details>
-<summary>A. Add new Item from the Item's list.</summary>
-<div>
-Add an item manually:
-![New Item List](./media/new-item-list.png)
+    <details>
+    <summary>A. Add new Item from the Item's list.</summary>
+    <div>
+    Select an item from the list and input its quantity.
 
-Add an item by scanning its barcode:
-You can scan an Item's barcode, which leads you directly to the quantity screen.
-This is the barcode of non-managed item A00001.
-![Barcode](./media/barcode.png)
+    ![New Item List](./media/5-new-item.jpg) ![Doc Details](./media/6-doc-det.jpg) ![Line Details](./media/7-line-detail.jpg) ![Quantity](./media/8-quantity.jpg)
 
-Scanning the barcode leads directly to the quantity screen.
-![Quantity Screen](./media/quantity-screen.png)
-</div>
-</details>
+    Scan the item’s barcode to be taken directly to the quantity screen. Example shown for non-managed item A00001.
 
-<details>
-<summary>B. Add a SU to the item's list.</summary>
-<div>
-You can create a New SU or add an existing SU.
-![Add SU](./media/add-su.png)
-</div>
-</details>
+    ![Barcode](./media/barcode.png)
 
-- There are items added in the Document Details screen:
-![Document Details Added](./media/doc-det-added.png)
+    Scanning the barcode leads directly to the quantity screen.
 
-**Remarks screen**
+    ![Quantity Screen](./media/9-quantity.jpg)
+    </div>
+    </details>
 
-You can add remarks, change document series, or set the supplier ref no on the remarks screen. Add a UDF to the previous screen or save the document.
-    ![Remarks](./media/remarks-01.png)
+    <details>
+    <summary>B. Add a new item in new SU</summary>
+    <div>
+    Use this option to create a new SU and add an item into it.
 
-- Message info about the created delivery no appears.
+    ![Add SU](./media/10-su-options.jpg) ![New SU](./media/10a-new-su.jpg) ![Doc Details](./media/10b-doc-det.jpg)
+    </div>
+    </details>
 
-    ![Created Delivery](./media/delivery-created.png)
+    <details>
+    <summary>C. Add a new item in existing SU</summary>
+    <div>
+    Use this option to place an item into an already existing SU.
 
-- The Delivery document is posted in SAP Business One.
+    ![List of SU](./media/11-list-of-su.jpg) ![Doc Det](./media/12-doc-det.jpg) ![SU Details](./media/12a-su-det.jpg) ![SU Details](./media/12b-su-det.jpg) ![Batches](./media/12c-batches.jpg) ![Quantity](./media/12d-quantity.jpg) ![SU Details](./media/12e-su-det.jpg)
+    </div>
+    </details>
 
-    ![SAP Delivery](./media/sap-delivery-01.png)
+4. In the Remarks screen, you can:
+
+    - Add comments
+    - Change the document series
+    - Enter supplier reference numbers
+    - Include UDF (User Defined Fields), if required
+
+        ![Remarks](./media/13-remarks-screen.jpg)
+
+5. Message info about the created delivery no appears.
+
+    ![Created Delivery](./media/14-delivery-created.jpg)
+
+6. The Delivery document is posted in SAP Business One.
+
+    ![SAP Delivery](./media/15-sap-delivery.jpg)
 
 ---
