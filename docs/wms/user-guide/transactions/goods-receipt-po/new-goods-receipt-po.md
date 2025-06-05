@@ -6,32 +6,37 @@ sidebar_position: 1
 
 1. Choose the Goods Receipt PO option from the main menu:
 
-    ![Main Menu](./media/grpo-main-menu.webp)
+    ![Main Menu](./media/1-grpo-main-menu.jpg)
+
 2. Choose the corresponding option from the Goods Receipt PO Operations menu.
 
-    ![Main Menu](./media/new-grpo-main.webp)
+    ![Main Menu](./media/2-new-grpo-main.jpg)
+
 3. Choose a Supplier (the Warehouse choosing is skipped now).
 
-    ![Supplier](./media/new-grop-new-supplier.webp)
+    ![Supplier](./media/3-grpo-new-supplier.jpg)
+
 4. A blank Document Details form is open (along with the Warehouse not selected information):
 
-    ![Blank](./media/new-grpo-document-details.webp)
+    ![Blank](./media/4-doc-det.jpg)
+
 5. Choose a Warehouse by scanning a barcode (with the 92 prefix) or by choosing it manually (to do it, click the Warehouse not selected info).
 
-    ![Warehouse and Bin](./media/new-grpo-warehouse-bin.webp)
+    ![Warehouse and Bin](./media/5-warehouse-bin.jpg)
+
 6. You can also skip the previous step and add a Warehouse for each Item/SU:
-A. Adding an Item without a previously chosen Warehouse:
 
-    ![Details](./media/new-grpo-document-details-add-2.webp)
+    A. Adding an Item without a previously chosen Warehouse:
 
-    ![Details](./media/new-grpo-document-details-warehouse.webp)
-B. Adding an SU without a previously chosen Warehouse:
+        ![Details](./media/6-whs.jpg) ![Warehouse](./media/7-whs.jpg)
 
-    ![Details](./media/new-grpo-document-details-add-3.webp)
+    B. Adding an SU without a previously chosen Warehouse:
 
-    ![Details](./media/new-grpo-su-details.webp)
+        ![Details](./media/new-grpo-document-details-add-3.webp)
 
-    ![Details](./media/new-grpo-su-details-warehouse.webp)
+        ![Details](./media/new-grpo-su-details.webp)
+
+        ![Details](./media/new-grpo-su-details-warehouse.webp)
 7. An SU has been added to the document. Now you can add Items to it (manually or by scanning a barcode).
 
     ![Document details](./media/new-grpo-document-details-ready.webp)
