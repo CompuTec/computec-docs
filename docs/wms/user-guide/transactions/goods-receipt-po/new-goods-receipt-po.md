@@ -32,11 +32,8 @@ sidebar_position: 1
 
     B. Adding an SU without a previously chosen Warehouse:
 
-        ![Details](./media/new-grpo-document-details-add-3.webp)
+        ![Details](./media/8-doc-det.jpg) ![Details](./media/9-su-det.jpg) ![Details](./media/10-whs.jpg)
 
-        ![Details](./media/new-grpo-su-details.webp)
-
-        ![Details](./media/new-grpo-su-details-warehouse.webp)
 7. An SU has been added to the document. Now you can add Items to it (manually or by scanning a barcode).
 
     ![Document details](./media/new-grpo-document-details-ready.webp)
@@ -44,7 +41,8 @@ sidebar_position: 1
 
     ![Document details](./media/new-grpo-document-details-add-4.webp)
 
-    ![Document details](./media/new-grpo-document-details-add-5.webp)
+    ![Document details](./media/14-new-su.jpg)
+
 9. The child a slight dent marks SU:
 
     ![Dent](./media/new-grpo-document-details-dent.webp)
@@ -76,6 +74,6 @@ sidebar_position: 1
 
 16. Now you can check the Remarks and Save the document (the lower right icon):
 
-    ![Details](./media/new-grpo-document-remarks.webp)
+    ![Details](./media/27-remarks.jpg)
 
 ---
