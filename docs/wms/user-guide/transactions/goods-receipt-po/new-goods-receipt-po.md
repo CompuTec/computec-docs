@@ -32,16 +32,14 @@ sidebar_position: 1
 
     B. Adding an SU without a previously chosen Warehouse:
 
-        ![Details](./media/8-doc-det.jpg) ![Details](./media/9-su-det.jpg) ![Details](./media/10-whs.jpg)
+        ![Details](./media/8-doc-det.jpg) ![Details](./media/9-su-det.jpg) ![Details](./media/10-whs.jpg) ![SU Details](./media/11-su-details.jpg)
 
 7. An SU has been added to the document. Now you can add Items to it (manually or by scanning a barcode).
 
     ![Document details](./media/new-grpo-document-details-ready.webp)
 8. To this SU, you can add a child SU:
 
-    ![Document details](./media/new-grpo-document-details-add-4.webp)
-
-    ![Document details](./media/14-new-su.jpg)
+   ![Document details](./media/13-doc-det.jpg) ![Document details](./media/14-new-su.jpg) ![SU Details](./media/15-su-det.jpg)
 
 9. The child a slight dent marks SU:
 
@@ -57,9 +55,9 @@ sidebar_position: 1
     ![Document Details](./media/new-grpo-document-details-green-highlight.webp)
 13. After leaving the SU adding mode (the Warehouse number displayed on the top of the form), you can check the line details (Quantity, SU, or lack of SU).
 
-    ![Document Details](./media/new-grpo-document-details-green-highlight-2.webp)
+    ![Document Details](./media/20-doc-det.jpg)
 
-    ![Document Details](./media/new-grpo-document-line-details.webp)
+    ![Document Details](./media/21-line-details.jpg)
 14. Click the SU to check what elements (Items, SUs) have already been added to the document. In the previously existing SU, you can see only Items added within the current document - not the whole content of the SU.
 
     A. An SU with Items:
