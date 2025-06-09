@@ -4,93 +4,96 @@ sidebar_position: 3
 
 # Goods Issue
 
+The Goods Issue document in SAP Business One records the internal movement of items or materials out of a warehouse. It’s typically used when goods are consumed internally, issued for production, or sent for other non-sales purposes.
+
 Goods Issue documents the company's internal issue of Items or materials.
 
 :::info
-    Some forms' order and availability during a document's creation may vary depending on individual settings. Click [here](../../administrator-guide/custom-configuration/overview.md) to find out more about custom configuration.
+    The order and availability of forms during document creation may vary depending on your system's settings. Click [here](../../administrator-guide/custom-configuration/overview.md) to find out more about custom configuration.
 :::
 
 ---
 
-Choose the correct option on the main menu to create a Goods Issue document.
+## Step-by-Step Process to Create a Goods Issue Document
 
-![Main Menu](./media/main-menu-goods-issue.webp)
+- From the main menu, select Goods Issue to begin the process.
 
-The Source Warehouse form will be displayed.
+    ![Main Menu](./media/goods-issue/1-goods-issue.jpg)
 
-Choose the desired Warehouse by clicking it. This step can be skipped. In this case, the Source Warehouse selection form will be displayed after choosing a specific Item.
+- You’ll now be prompted to choose the Source Warehouse.
 
-You can choose a Warehouse by scanning a code with a Warehouse prefix or without it.
+        - If a [default warehouse](../starting.md#documents-tab) is already set in your system, this step may be skipped.
+        - You can also scan a warehouse code (with or without a prefix) to make a selection.
 
-![Warehouse](./media/goods-issue-warehouses.webp)
+            ![Warehouse](./media/goods-issue/2-whs.jpg)
 
-It is possible to [set up a default Warehouse](../starting.md#documents-tab). In this case, the Warehouse Selection screen is skipped, and the Warehouse set as default is chosen automatically.
+- Click the menu icon, then the plus icon (+) to begin adding items.
 
-Click the menu icon and then the plus icon to add Items to the document.
+    ![Document Details](./media/goods-issue/3-doc-details.jpg)
 
-![Document Details](./media/goods-issue-document-details.webp)
+    You can:
 
-You can scan an Item or SU code in this form, with or without a prefix.
-<details>
-<summary>Click here to expand</summary>
-<div>
-Scanning an Item code of an Item that is not on the list adds the Item to the list.
-Scanning a code without a prefix leads to interpreting it as an Item code and works as described above.
+        - Scan an Item or Storage Unit (SU) code, with or without a prefix.
+        - Manually select items from the list shown.
 
-If a code without a prefix is scanned and an Item with this code is not found, the application attempts to validate the code as an SU code.
-![Barcode](./media/barcode.png)
+    <details>
+    <summary>Click here to expand</summary>
+    <div>
+    Scanning an Item code of an Item that is not on the list adds the Item to the list.
+    Scanning a code without a prefix leads to interpreting it as an Item code and works as described above.
 
-You can scan an Item or SU code in this form, with or without a prefix. Scanning an Item code of an Item that is on the list leads to the quantity.
-![Quantity](./media/quantity.png)
-</div>
-</details>
+    If a code without a prefix is scanned and an Item with this code is not found, the application attempts to validate the code as an SU code.
 
-The list of available Items will be displayed. Click a desired Item to add it to the document.
+    ![Barcode](./media/barcode.png)
 
-![List of Items](./media/goods-issue-list-of-items.webp)
+    You can scan an Item or SU code in this form, with or without a prefix. Scanning an Item code of an Item that is on the list leads to the quantity.
 
-![List of Items](./media/goods-issue-list-of-items-new.webp)
+    ![Quantity](./media/goods-issue/4-quantity.jpg)
+    </div>
+    </details>
 
-Click the Item row to set its details.
+- The list of available Items will be displayed. Click a desired Item to add it to the document.
 
-![Highlight](./media/goods-issue-list-of-items-highlight.webp)
+    ![List of Items](./media/goods-issue/5-list-of-items.jpg) ![List of Items](./media/goods-issue/6-doc-det.jpg)
 
-If the Item is managed by serial numbers, a form for choosing it will be displayed.
+- Then, click on the item row to set its details.
 
-![Serials](./media/goods-issue-serials.webp)
+    ![Highlight](./media/goods-issue/7-doc-det.jpg)
 
-If the Item is managed by Batches, a form for choosing it will be displayed. Click a desired batch to choose from it.
+- If the Item is managed by serial numbers, a form for choosing it will be displayed.
 
-![Batch](./media/goods-issue-batch.webp)
+    ![Serials](./media/goods-issue/11-serials.jpg) ![Doc Details](./media/goods-issue/12-doc-det.jpg)
 
-A form for setting quantity will be displayed.
-Type in a desired value or set it using the plus and minus buttons and click the right arrow to approve changes.
+- If the Item is managed by Batches, a form for choosing it will be displayed. Click a desired batch from the list.
 
-![Quantity](./media/goods-issue-quantity.webp)
+    ![Batch](./media/goods-issue/13-batches.jpg) ![Quantity](./media/goods-issue/14-quantity.jpg)
 
-Click the menu icon and then the Storage Unit icon to add a Storage Unit.
+- A form for setting quantity will be displayed. Type in a desired value or set it using the plus and minus buttons and click the "Save" icon.
 
-![Add](./media/goods-issue-add.webp)
+    ![Quantity](./media/goods-issue/15-quantity.jpg)
 
-The form for choosing Storage Units will be displayed.
-Click a desired Storage Unit to add it to the document.
+- Click "More" and then the Storage Unit icon to add a Storage Unit.
 
-![SU](./media/goods-issue-storage-info.webp)
+    ![Add](./media/goods-issue/16-doc-det.jpg)
 
-Click the right arrow icon after setting all the details.
+- The form for choosing Storage Units will be displayed. Click a desired Storage Unit to add it to the document. Set the desired quantity.
 
-![Ready](./media/goods-issue-details-ready.webp)
+    ![SU](./media/goods-issue/17-list-of-su.jpg) ![SU](./media/goods-issue/18-su-details.jpg) ![SU](./media/goods-issue/19-su-det.jpg) ![SU](./media/goods-issue/18-su-details.jpg) ![SU](./media/goods-issue/20-quantity.jpg)
 
-Set the series (if it is preset and required), add Remarks (if needed), and click the save icon.
+- Click the "Forward" icon after setting all the details.
 
-![Remarks](./media/goods-issue-remarks.webp)
+    ![Ready](./media/goods-issue/21-doc-details.jpg)
 
-A communication about the document's creation (with its number) will be displayed.
+- Set the series (if it is preset and required), add Remarks (if needed), and click the "Save" icon.
 
-![Final message](./media/goods-issue-final.webp)
+    ![Remarks](./media/goods-issue/22-remarks.jpg)
 
-Click OK. The newly created document is now available in the SAP Business One system.
+- A confirmation message with the document number will appear.
 
-![Goods Issue](./media/goods-issue.png)
+    ![Final message](./media/goods-issue/23-info-msg.jpg)
+
+- The Goods Issue document is now saved and available in the SAP Business One system.
+
+    ![Goods Issue](./media/goods-issue/24-goods-issue.jpg)
 
 ---
