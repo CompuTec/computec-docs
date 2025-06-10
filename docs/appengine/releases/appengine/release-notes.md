@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## AppEngine 3.2506.1
 
-**Release Date - 10 June 2025**
+**Release Date - 9 June 2025**
 
 | Issue Type | Component/s | Release Note |
 | --- | --- | --- |
@@ -14,7 +14,7 @@ sidebar_position: 1
 | Bug | Manufacturing Order | [POLCOM] Error "Cannot update. Empty formula in Items." occurs during PFI import |
 | Bug | Common Functions | Selection combo in UDF is not working. User is not able to select any values |
 | Bug | WebAPI | Issues with item details PATCH call - missing or unclear error message |
-| Bug | .netCore | Issue occurs in PDC when OIDC is disabled |
+| Bug | AE WebClient | Issue occurs in PDC when OIDC is disabled |
 | Bug | AE Core | Delete option next to server is not functional |
 | Bug | AE Core | Issues with plugin upgrade in AppEngine - no error is displayed in the UI despite failure |
 | Bug | WebAPI | Incorrect error message during API calls – receiving 500 response with "Object reference not set to an instance of an object." |

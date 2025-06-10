@@ -4,6 +4,34 @@ sidebar_position: 1
 
 # CompuTec ProcessForce Plugin
 
+## CompuTec.ProcessForce 3.2506.1
+
+**Release Date - 9 June 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Bug | MRP 2.5 | MRP Relations Map not functioning correctly - Code (Guid) in OMRC and MRC1 tables is incorrectly replaced by DataContext |
+| Bug | API, AppEngine | Missing API call "api/ProcessForce/CreateAdjustment" for rolling back Goods Issue; SAP also fails with "Object reference not set to an instance of an object" error. |
+| Bug | Bin Locations | Pick Receipt fails with error "Bin allocation is not completed for Item Code: '4155046212544AA' and Row Number: '1'". |
+| Bug | Manufacturing Order | Time taken to load the list of items in Manufacturing Order - add mode is more |
+| Improvement | Performance, Production Costing | Improved performance of CT_PF_CostingDataForItemProc by optimizing query execution and reducing load time |
+| Bug | Production Costing | Update Costing returns error when Last Purchase Price or Last Evaluated Price are selected. <br/>Query:SELECT "Price" FROM "ITM1" WHERE "ItemCode" = N'Item01-ma' AND "PriceList" = N'PP'   Conversion failed when converting the nvarchar value 'PP' to data type smallint. <br/>Query:SELECT "Price" FROM "ITM1" WHERE "ItemCode" = N'Item01-ma' AND "PriceList" = N'EP'   Conversion failed when converting the nvarchar value 'EP' to data type smallint. |
+| Bug | MRP | Error while running MRP 2.5: "Nullable object must have a value..." |
+| Bug | Common functions | Selection combo in UDF was not working; users were unable to select any values |
+| Bug | Common functions | Encountered issues when using the "Support" user to perform operations in ProcessForce |
+| Bug | Manufacturing Order | [POLCOM] PFI import failed with error "Cannot update. Empty formula in Items." when item formulas were missing or not initialized |
+| Bug | PFI | Missing translation for the new column label addDefaultLinesLabel in PFI. |
+| Bug | AE WebClient | Issue occurs in PDC when OIDC is disabled |
+| Bug | AE Core | Delete option next to server is not functional |
+| Bug | MRP | Due Date Filter in Order Recommendation is not functioning; Error Message: "this. DueDateForm.setHours is not a function." |
+| Bug | AE Core | Issues with plugin upgrade in AppEngine - no error is displayed in the UI despite failure |
+| Bug | WebAPI | Incorrect error message during API calls – receiving 500 response with "Object reference not set to an instance of an object." |
+| Bug | AE Core | Incorrect order of deactivating and deleting plugins for MRP |
+| Bug | AE WebClient | SAP OIDC missing under "Required CSP Entries for WebClient" |
+| Bug | AE Installer | SAP OIDC was not listed under the "Required CSP Entries for WebClient" |
+| Bug | AE Installer | Setup fails when external address is not accessible from the AppEngine server itself |
+| Improvement | WMS Plugin | Enable matching of Storage Category to the corresponding rule for better accuracy and control |
+
 ## CompuTec.ProcessForce 3.2505.3
 
 **Release Date - 26 May 2025**
