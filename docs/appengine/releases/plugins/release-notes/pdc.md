@@ -3,3 +3,20 @@ sidebar_position: 3
 ---
 
 # PDC
+
+## PDC 4.2506.1
+
+**Release Date - 9 June 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Bug | Tasks | Issue with duplicated date-time picker components appearing in the UI |
+| Bug | PDC | Quick receipt process failed with error "Nullable object must have a value"  |
+| Bug | Barcodes | Barcode Simulator is not available in .netCore |
+| Bug | PDC |  Error "Problem with token SESSION" occurred during Bill of Materials/Manufacturing Order |
+| Bug | Tasks | PDC failed to load or display pictures correctly due to image handling issues |
+| Improvement | PDC | Sort Items based on sequence during issue and receipt processes |
+| Bug | PDC | Error "Sequence contains no matching element" when loading MO list |
+| Bug | PDC | Scanning by batch did not auto-fill item code, batch number, bin location, or allow quantity entry; also added validation for locked batches. |
+| Improvement | Pick and Pack | Added "Auto Select All" button at the top of the PDC Receipt/Issue window |
+| Improvement | WMS Plugin |  Refresh token mechanism to support seamless re-login |
