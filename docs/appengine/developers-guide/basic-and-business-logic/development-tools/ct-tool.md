@@ -119,6 +119,28 @@ ERROR(S):
   A required value not bound to option name is missing.
   Directory (pos. 0)    Required. Directory to pack or unpack.
 ```
+## Installing Plugin DatabaseStructure
+To start the database Structure installation  on the company for the given plugin DLL, use 
+
+```batch
+dotnet ct install
+```
+Options:
+
+- **-s** - Sld Server : Required.
+- **-c** - Company Name.
+- **-i** - Company Id.
+- **-u** - User Name : Required.
+- **-p** - Password : Required.
+- **-d** - Database Server : Required.
+- **-t** - ServerType dst_HANADB,dst_MSSQL2016,dst_MSSQL2019,dst_MSSQL2022,etc : Required.
+** path for the dll** 
+
+Use:
+
+```batch
+dotnet ct install -v hanadev:40000 -c SBO_DB  -u manager -p "password" -d"DEV@hanadev:30013" -t dst_HANADB "CT.VehOne\bin\Debug\net8.0\CT.VehOne.dll"
+```
 
 ## Creating NuGet Package for Plugin Repository
 
