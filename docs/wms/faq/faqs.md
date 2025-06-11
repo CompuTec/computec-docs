@@ -192,10 +192,9 @@ Click "Save" or "Refresh" on WMS Server Settings
 
 After pressing "Save" or "Refresh" on WMS Server Settings, it is checked whether SAP Business One DI API and ODBC Driver - respective to the selected server type, are installed.
 
-| Server Type                  | ODBC Driver REquired          | Download Link                                                                                                |
-| ---------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| MSSQL (through 2008 to 2017) | ODBC Driver 13 for SQL Server | [https://go.microsoft.com/fwlink/?linkid=2121020](https://go.microsoft.com/fwlink/?linkid=2121020)                                               |
-| SAP HANA                     | SAP HANA ODBC Driver          | [https://help.sap.com/viewer/e9146b36040844d0b1f309bc8c1ba6ab/3.2/en-US/734759c0c1c9440c857da0d366e47dda.html](https://help.sap.com/viewer/e9146b36040844d0b1f309bc8c1ba6ab/3.2/en-US/734759c0c1c9440c857da0d366e47dda.html) |
+| ODBC Driver REquired | Download Link |
+| --- | ---|
+| ODBC Driver 13 for SQL Server | [https://go.microsoft.com/fwlink/?linkid=2121020](https://go.microsoft.com/fwlink/?linkid=2121020) |
 
 A proper Exception/Error is shown in the ServiceManager Log when one of the above drivers is missing.
 
