@@ -192,7 +192,7 @@ Click "Save" or "Refresh" on WMS Server Settings
 
 After pressing "Save" or "Refresh" on WMS Server Settings, it is checked whether SAP Business One DI API and ODBC Driver - respective to the selected server type, are installed.
 
-| ODBC Driver REquired | Download Link |
+| ODBC Driver Required | Download Link |
 | --- | ---|
 | ODBC Driver 13 for SQL Server | [https://go.microsoft.com/fwlink/?linkid=2121020](https://go.microsoft.com/fwlink/?linkid=2121020) |
 
