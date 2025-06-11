@@ -194,7 +194,7 @@ After pressing "Save" or "Refresh" on WMS Server Settings, it is checked whether
 
 | Server Type                  | ODBC Driver REquired          | Download Link                                                                                                |
 | ---------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| MSSQL (through 2008 to 2017) | ODBC Driver 13 for SQL Server | [https://www.microsoft.com/en-us/download/details.aspx?id=50420](https://www.microsoft.com/en-us/download/details.aspx?id=50420)                                               |
+| MSSQL (through 2008 to 2017) | ODBC Driver 13 for SQL Server | [https://go.microsoft.com/fwlink/?linkid=2121020](https://go.microsoft.com/fwlink/?linkid=2121020)                                               |
 | SAP HANA                     | SAP HANA ODBC Driver          | [https://help.sap.com/viewer/e9146b36040844d0b1f309bc8c1ba6ab/3.2/en-US/734759c0c1c9440c857da0d366e47dda.html](https://help.sap.com/viewer/e9146b36040844d0b1f309bc8c1ba6ab/3.2/en-US/734759c0c1c9440c857da0d366e47dda.html) |
 
 A proper Exception/Error is shown in the ServiceManager Log when one of the above drivers is missing.
