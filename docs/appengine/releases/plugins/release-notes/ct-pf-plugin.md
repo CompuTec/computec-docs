@@ -4,6 +4,14 @@ sidebar_position: 1
 
 # CompuTec ProcessForce Plugin
 
+## CompuTec.ProcessForce 3.2506.2
+
+**Release Date - 11 June 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Bug | Cost Accounting | Users encountered the error message: "An error occurred while the form was initializing: {0}." when attempting to open the Cost Roll-Up form. |
+
 ## CompuTec.ProcessForce 3.2506.1
 
 **Release Date - 9 June 2025**
