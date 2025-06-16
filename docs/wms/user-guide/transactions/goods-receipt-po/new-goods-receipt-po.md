@@ -68,9 +68,7 @@ The Goods Receipt PO (GRPO) process allows users to document the receipt of good
 
     ![Details](./media/25-doc-det.jpg)
 
-14. Select the Project related to the GRPO. Click the Forward icon. Add any Remarks, and finally, click the "Save" icon.
-
-A confirmation message will appear indicating successful GRPO creation.
+14. Select the Project related to the GRPO. Click the Forward icon. Add any Remarks, and finally, click the "Save" icon. A confirmation message will appear indicating successful GRPO creation.
 
     ![Project Selection](./media/26-project-selection.jpg) ![Details](./media/27-remarks.jpg) ![Info](./media/28-info.jpg)
 

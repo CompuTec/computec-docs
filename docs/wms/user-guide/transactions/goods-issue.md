@@ -16,18 +16,18 @@ Goods Issue documents the company's internal issue of Items or materials.
 
 ## Step-by-Step Process to Create a Goods Issue Document
 
-- From the main menu, select Goods Issue to begin the process.
+1. From the main menu, select Goods Issue to begin the process.
 
     ![Main Menu](./media/goods-issue/1-goods-issue.jpg)
 
-- You’ll now be prompted to choose the Source Warehouse.
+2. You’ll now be prompted to choose the Source Warehouse.
 
         - If a [default warehouse](../starting.md#documents-tab) is already set in your system, this step may be skipped.
         - You can also scan a warehouse code (with or without a prefix) to make a selection.
 
             ![Warehouse](./media/goods-issue/2-whs.jpg)
 
-- Click the menu icon, then the plus icon (+) to begin adding items.
+3. Click the menu icon, then the plus icon (+) to begin adding items.
 
     ![Document Details](./media/goods-issue/3-doc-details.jpg)
 
@@ -52,47 +52,59 @@ Goods Issue documents the company's internal issue of Items or materials.
     </div>
     </details>
 
-- The list of available Items will be displayed. Click a desired Item to add it to the document.
+4. The list of available Items will be displayed. Click a desired Item to add it to the document.
 
     ![List of Items](./media/goods-issue/5-list-of-items.jpg) ![List of Items](./media/goods-issue/6-doc-det.jpg)
 
-- Then, click on the item row to set its details.
+5. Then, click on the item row to set its details.
 
     ![Highlight](./media/goods-issue/7-doc-det.jpg)
 
-- If the Item is managed by serial numbers, a form for choosing it will be displayed.
+6. If the Item is managed by serial numbers, a form for choosing it will be displayed.
 
     ![Serials](./media/goods-issue/11-serials.jpg) ![Doc Details](./media/goods-issue/12-doc-det.jpg)
 
-- If the Item is managed by Batches, a form for choosing it will be displayed. Click a desired batch from the list.
+7. If the Item is managed by Batches, a form for choosing it will be displayed. Click a desired batch from the list.
 
     ![Batch](./media/goods-issue/13-batches.jpg) ![Quantity](./media/goods-issue/14-quantity.jpg)
 
-- A form for setting quantity will be displayed. Type in a desired value or set it using the plus and minus buttons and click the "Save" icon.
+8. A form for setting quantity will be displayed. Type in a desired value or set it using the plus and minus buttons and click the "Save" icon.
 
     ![Quantity](./media/goods-issue/15-quantity.jpg)
 
-- Click "More" and then the Storage Unit icon to add a Storage Unit.
+9. Click "More" and then the Storage Unit icon to add a Storage Unit.
 
     ![Add](./media/goods-issue/16-doc-det.jpg)
 
-- The form for choosing Storage Units will be displayed. Click a desired Storage Unit to add it to the document. Set the desired quantity.
+10. There are two available scanning options:
 
-    ![SU](./media/goods-issue/17-list-of-su.jpg) ![SU](./media/goods-issue/18-su-details.jpg) ![SU](./media/goods-issue/19-su-det.jpg) ![SU](./media/goods-issue/18-su-details.jpg) ![SU](./media/goods-issue/20-quantity.jpg)
+        1. Scan the SU Code or SSCC directly in the Document Details window.
 
-- Click the "Forward" icon after setting all the details.
+            ![Scan SU](./media/goods-issue/1-scan-doc-det.jpg) ![Scan SU](./media/goods-issue/2-doc-det.jpg)
+        
+        2. Scan within the SU List window, with two behaviors:
+
+            a. **Select All**: functions the same as scanning in the Document Details window.
+
+                ![Scan SU](./media/goods-issue/1-scan-simulator.jpg) ![SU Details](./media/goods-issue/2-su-details.jpg) ![Quantity](./media/goods-issue/3-quantity.jpg) ![SU Details](./media/goods-issue/4-su-det.jpg) ![Doc Details](./media/goods-issue/5-doc-det.jpg)
+
+            b. **Individual Selection**: allows quantities to be taken separately from each SU unit.
+
+                ![List of SU](./media/goods-issue/1-list-of-su.jpg) ![SU Details](./media/goods-issue/2-su-det.jpg) ![Doc Details](./media/goods-issue/3-doc-det.jpg)
+
+11. Click the "Forward" icon after setting all the details.
 
     ![Ready](./media/goods-issue/21-doc-details.jpg)
 
-- Set the series (if it is preset and required), add Remarks (if needed), and click the "Save" icon.
+12. Set the series (if it is preset and required), add Remarks (if needed), and click the "Save" icon.
 
     ![Remarks](./media/goods-issue/22-remarks.jpg)
 
-- A confirmation message with the document number will appear.
+13. A confirmation message with the document number will appear.
 
     ![Final message](./media/goods-issue/23-info-msg.jpg)
 
-- The Goods Issue document is now saved and available in the SAP Business One system.
+14. The Goods Issue document is now saved and available in the SAP Business One system.
 
     ![Goods Issue](./media/goods-issue/24-goods-issue.jpg)
 
