@@ -2,13 +2,13 @@
 sidebar_position: 13
 ---
 
-# PFI
+# CompuTec PFI
 
-Below are the release notes for CompuTec Labels Printing Manager, highlighting new features, improvements, and bug fixes in this release.
+Below are the release notes for CompuTec PFI Plugin, highlighting new features, improvements, and bug fixes in this release.
 
 ---
 
-## PFI 3.2506.1
+## CompuTec PFI 3.2506.1
 
 **Release Date - 12 June 2025**
 
@@ -19,7 +19,7 @@ Below are the release notes for CompuTec Labels Printing Manager, highlighting n
 | Improvement | PFI | Provide possibility to explicitly mention "Withdefaults" in PFI |
 | Bug | PFI | Missing translation for the new column label addDefaultLinesLabel in PFI |
 
-## PFI 3.2504.2
+## CompuTec PFI 3.2504.2
 
 **Release Date - 24 April 2025**
 

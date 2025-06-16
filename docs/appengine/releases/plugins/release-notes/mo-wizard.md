@@ -2,9 +2,13 @@
 sidebar_position: 11
 ---
 
-# MO Wizard
+# CompuTec MO Wizard
 
-## MOWizard 3.2506.1
+Below are the release notes for CompuTec MOWizard, highlighting new features, improvements, and bug fixes in this release.
+
+---
+
+## CompuTec MOWizard 3.2506.1
 
 **Release Date - 9 June 2025**
 

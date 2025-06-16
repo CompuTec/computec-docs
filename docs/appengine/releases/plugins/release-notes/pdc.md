@@ -2,9 +2,11 @@
 sidebar_position: 3
 ---
 
-# PDC
+# CompuTec PDC
 
-## PDC 4.2506.1
+Below are the release notes for CompuTec PDC Plugin, highlighting new features, improvements, and bug fixes in this release.
+
+## CompuTec PDC 4.2506.1
 
 **Release Date - 9 June 2025**
 

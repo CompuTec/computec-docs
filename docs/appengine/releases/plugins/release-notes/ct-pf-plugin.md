@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # CompuTec ProcessForce Plugin
 
+Below are the release notes for CompuTec ProcessForce Plugin, highlighting new features, improvements, and bug fixes in this release.
+
+---
+
 ## CompuTec.ProcessForce 3.2506.2
 
 **Release Date - 11 June 2025**
