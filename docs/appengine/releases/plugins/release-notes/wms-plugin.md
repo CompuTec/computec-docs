@@ -23,3 +23,11 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 | Bug | Server | (VIANDES SEFICLO) In Delivery, Catch Weight quantities are incorrectly split based on the line number from the WMS window rather than the selected batches. |
 | Bug | Server | In Inventory Register, for Stock Transfer transactions, the LineNum and LplLine fields are either incorrect or not aligned. |
 | Improvement | WMS Plugin | Enable matching of Storage Category to the corresponding rule for better accuracy and control |
+
+## CompuTec WMS Plugin 3.2506.2
+
+**Release Date - 13 June 2025**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Bug | Server|  In some cases the quantity on the pick list was not picked by scanning. After re-entering the pick list in WMS the quantity was picked partially. |
