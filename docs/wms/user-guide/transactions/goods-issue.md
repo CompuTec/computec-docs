@@ -86,11 +86,11 @@ Goods Issue documents the company's internal issue of Items or materials.
 
             a. **Select All**: functions the same as scanning in the Document Details window.
 
-                ![Scan SU](./media/goods-issue/1-scan-simulator.jpg) ![SU Details](./media/goods-issue/2-su-details.jpg) ![Quantity](./media/goods-issue/3-quantity.jpg) ![SU Details](./media/goods-issue/4-su-det.jpg) ![Doc Details](./media/goods-issue/5-doc-det.jpg)
+                ![List of SU](./media/goods-issue/1-list-of-su.jpg) ![SU Details](./media/goods-issue/2-su-det.jpg) ![Doc Details](./media/goods-issue/3-doc-det.jpg)
 
             b. **Individual Selection**: allows quantities to be taken separately from each SU unit.
 
-                ![List of SU](./media/goods-issue/1-list-of-su.jpg) ![SU Details](./media/goods-issue/2-su-det.jpg) ![Doc Details](./media/goods-issue/3-doc-det.jpg)
+                ![Scan SU](./media/goods-issue/1-scan-simulator.jpg) ![SU Details](./media/goods-issue/2-su-details.jpg) ![Quantity](./media/goods-issue/3-quantity.jpg) ![SU Details](./media/goods-issue/4-su-det.jpg) ![Doc Details](./media/goods-issue/5-doc-det.jpg)
 
 11. Click the "Forward" icon after setting all the details.
 
