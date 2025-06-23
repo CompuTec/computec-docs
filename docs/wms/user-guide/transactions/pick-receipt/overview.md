@@ -56,7 +56,7 @@ Click an Item row to set its quantity. You can also do this by scanning a barcod
 <details>
 <summary>Click here to expand workflow description...</summary>
 <div>
-CompuTec WMS allows a user to receive Items directly on quantity inputting. In this workflow, a user can receive the quantity of an Item to a Warehouse just after inputting the quantity or quantity and distribution number – it is required to check the option for Auto Receipt turned on in CompuTec Processforce settings. This solution is suitable for environments where production is a continuous process, and users prefer to pick quantities one after another rather than going to document remarks and then saving.
+CompuTec WMS allows a user to receive Items directly on quantity inputting. In this workflow, a user can receive the quantity of an Item to a Warehouse just after inputting the quantity or quantity and distribution number – it is required to check the option for Auto Receipt turned on in CompuTec ProcessForce settings. This solution is suitable for environments where production is a continuous process, and users prefer to pick quantities one after another rather than going to document remarks and then saving.
 
 1. The user starts the process from Items to the pick screen with the Pick Receipt document contents as rows. Item is opened by manual selection or barcode scanning.
 
@@ -97,7 +97,7 @@ Both for Serial and Batch managed Items, there is a button for automatic Serial 
 <details>
 <summary>Click here to expand workflow description...</summary>
 <div>
-CompuTec WMS user can allocate Items to picked status during pick receipt process and optionally receipt them on document saving – requirement is option for Auto Receipt turned off in CompuTec Processforce settings.
+CompuTec WMS user can allocate Items to picked status during pick receipt process and optionally receipt them on document saving – requirement is option for Auto Receipt turned off in CompuTec ProcessForce settings.
 
 1. User is starting process from Items to pick screen with Pick Receipt document contents as rows. Item is opened by manual selection or barcode scanning.
 

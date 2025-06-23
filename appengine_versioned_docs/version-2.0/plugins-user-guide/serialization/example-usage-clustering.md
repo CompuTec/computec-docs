@@ -137,7 +137,7 @@ If in the Rule you specify only the Item Group, the SPT selected in the Result S
 
 ### Start the clustering process
 
-The clustering process is saved in a serialization document. This document is a subject to approval and verification. Serialization documents are visible in the WMS's Packing Hierarchy tile: [here](../serialization/fields-description.md#serialization-results)
+The clustering process is saved in a serialization document. This document is a subject to approval and verification. Serialization documents are visible in the CompuTec WMS's Packing Hierarchy tile: [here](../serialization/fields-description.md#serialization-results)
 
 For testing purposes, you can use the scanner simulator available here: [WMSScannerSimulator.exe](https://download.computec.one/software/wms/tools/WMS_Scanning_Simulator.exe).
 

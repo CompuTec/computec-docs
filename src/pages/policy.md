@@ -40,7 +40,7 @@ Please note that in Poland GDPR is referred to as RODO.
 
 2. Cookie files (so-called "cookies") are sets of IT data, in particular text files, which are stored on the Website User’s end device and enable you to use the Website. Cookies usually contain the name of their original website, storage time on the end device and a unique identification number.
 
-3. The entity placing cookies on the Website User's end device and accessing them is the website operator Computec S.A.
+3. The entity placing cookies on the Website User's end device and accessing them is the website operator CompuTec S.A.
 
 4. Cookies are used to:
 

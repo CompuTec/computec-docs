@@ -39,9 +39,9 @@ Some forms' order and availability during a document's creation may vary dependi
 
     ![Remarks](./media/GoodsIssue.webp)
 
-## ProcessForce option for Auto Allocation Serial Numbers and Batches (with bin locations)
+## CompuTec ProcessForce option for Auto Allocation Serial Numbers and Batches (with bin locations)
 
-Since ProcessForce PL11, users can choose how to _Auto Allocate Batches on the Pick Order_ option:
+Since CompuTec ProcessForce PL11, users can choose how to _Auto Allocate Batches on the Pick Order_ option:
 
 ![General Settings](./media/General%20Settings%20option.webp)
 

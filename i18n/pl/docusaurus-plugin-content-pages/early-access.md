@@ -8,7 +8,7 @@ Przed włączeniem konfiguracji wczesnego dostępu należy wykonać następując
 
 - Pobierz i zainstaluj najnowszą wersję [AppEngine](https://learn.computec.one/docs/appengine/releases/appengine/download).
 - Postępuj zgodnie z krokami instalacji podanymi w [AppEngine Installation Guide](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation).
-- Kroki instalacji serwera WMS można znaleźć [tutaj](https://learn.computec.one/docs/wms/administrator-guide/installation/overview).
+- Kroki instalacji serwera CompuTec WMS można znaleźć [tutaj](https://learn.computec.one/docs/wms/administrator-guide/installation/overview).
 
 ### Jak włączyć wtyczki wczesnego dostępu w AppEngine Store
 

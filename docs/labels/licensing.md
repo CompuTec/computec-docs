@@ -52,7 +52,7 @@ CompuTec Support will provide a license file in .xml format.
 To assign the main license file:
 
 1. Open Settings in CompuTec Service Manager.
-2. In the CT Labels Settings form, click Change and browse to the license file obtained from CompuTec Support:
+2. In the CompuTec Labels Settings form, click Change and browse to the license file obtained from CompuTec Support:
 
     ![Change License](./media/licensing/change-license.webp)
 

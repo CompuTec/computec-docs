@@ -167,7 +167,7 @@ This job generates the corresponding Batch Master Data whenever a new Batch is c
 
 When enabled, the batch synchronization is handled by AppEngine. If not, the synchronization is managed by the CompuTec WMS service (applicable when using CompuTec WMS).
 
-**This job improves ProcessForce and CompuTec WMS performance**.
+**This job improves CompuTec ProcessForce and CompuTec WMS performance**.
 
 ### ManufacturingOrderWizardRecoverJob
 

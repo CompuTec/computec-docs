@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # Log Files
 
-If the installation is unsuccessful CompuTec Appengine then the logs will be in Windows Event Viewer.
+If the installation is unsuccessful CompuTec AppEngine then the logs will be in Windows Event Viewer.
 AppEngine log:
 C:\ProgramData\CompuTec\AppEngine\logs
 

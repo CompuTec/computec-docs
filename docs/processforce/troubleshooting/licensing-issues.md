@@ -5,13 +5,13 @@ toc_max_heading_level: 2
 
 # Licensing Issues
 
-The most common issue connected to ProcessForce licensing will be noted on this page.
+The most common issue connected to CompuTec ProcessForce licensing will be noted on this page.
 
 ---
 
 ## The data needed to generate a license file is not available
 
-The following data is required to generate a ProcessForce license file: Installation Number, CompuTec Key, and SAP Business One version. In some cases, the data can be missed in the About ProcessForce form.
+The following data is required to generate a CompuTec ProcessForce license file: Installation Number, CompuTec Key, and SAP Business One version. In some cases, the data can be missed in the About ProcessForce form.
 
 ### The installation Number key field is empty
 
@@ -43,12 +43,12 @@ Response status code does not indicate success: 500 (The given key was not prese
 
 ### Solution {#solution_1}
 
-1. Stop Computec Licence Server service.
+1. Stop CompuTec License Server service.
 2. Perform a backup and remove the content of the following folders:
 
     - `C:\ProgramData\CompuTec\License Server\CacheFolder\`
     - `C:\ProgramData\CompuTec\License Server\Licenses\`
-3. Start Computec Licence Server service.
+3. Start CompuTec License Server service.
 4. Import ProcessForce license in SAP Business One client again.
 
 ## Error message: Not authorized license assignment

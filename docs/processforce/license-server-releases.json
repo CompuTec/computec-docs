@@ -1,5 +1,10 @@
 [
   {
+    "build": "5.14.1.1",
+    "minimal_pf_version": "10.0 Release 14 (R14)",
+    "download_url": "https://download.computec.one/software/licenseserver/releases/CompuTec_LicenseServer_5.14.1.1_x64.msi"
+  },
+  {
     "build": "5.13.1.1",
     "minimal_pf_version": "10.0 Release 14 (R14)",
     "download_url": "https://download.computec.one/software/licenseserver/releases/CompuTec_LicenseServer_5.13.1.1_x64.msi"

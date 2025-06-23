@@ -6,13 +6,13 @@ sidebar_position: 7
 
 ## System Details
 
-System Details provides information about AppEngine that we are curently logged in. It includes the AppEngine Version and AppEngine GUID. There is also SAP Computec Start Extension for manual download if required. SAP Computec Start Extension is SAP Business One extension that is started inside SAP Business One client. It provides access to plugins and other features of AppEngine.
+System Details provides information about AppEngine that we are currently logged in. It includes the AppEngine Version and AppEngine GUID. There is also SAP CompuTec Start Extension for manual download if required. SAP CompuTec Start Extension is SAP Business One extension that is started inside SAP Business One client. It provides access to plugins and other features of AppEngine.
 
 ![System Details](./media/system/system-details.webp)
 
 ## Profiles
 
-Profiles are used to store different configtionions for the OpenTelemetry Exporter settings (OTLP Exporter). You can define many different configuration and than attach them when needed to AppEngine or Company.
+Profiles are used to store different configurations for the OpenTelemetry Exporter settings (OTLP Exporter). You can define many different configuration and than attach them when needed to AppEngine or Company.
 
  This functionality sends logs, metrics and traces to OLTP server based on this configuration. You can copy the standard templates provided with AppEngine (listed below) and set your Endpoint and Header Values. For more please check [Support for Open Telemetry](https://learn.computec.one/docs/Help/OpenTelemetrySupport)
 
@@ -50,3 +50,5 @@ In Active Connection you can check current connection to SAP.
 You can use this page to validate plugins installation on selected company. Select Company to run validation.
 
 ![Company Plugin Validation](./media/system/co-plugin-validation.webp)
+
+---

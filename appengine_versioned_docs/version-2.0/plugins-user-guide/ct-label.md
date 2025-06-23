@@ -72,7 +72,7 @@ The filter bar at the top of the CTLabel screen enables dynamic filtering and so
 
                 - This filter enables you to search for requests assigned to specific printers.
                 - It uses a MultiComboBox, allowing you to select one or more printers.
-                - The list of printers is derived from the **Computec Label Printing Manager**.
+                - The list of printers is derived from the **CompuTec Label Printing Manager**.
 
         -- **Transaction Type Filter**
 
@@ -127,7 +127,7 @@ The filter bar at the top of the CTLabel screen enables dynamic filtering and so
 
         ![CompuTec Labels](./media/ctlabel/image2020-7-10-12-48-43.png)
 
-4. The available printer list is retrieved from the **Computec Label Printing Manager**.
+4. The available printer list is retrieved from the **CompuTec Label Printing Manager**.
 
 5. Clicking the "Reprint" button will send a new request to print the label using the selected printer. If successful, a confirmation pop-up will appear stating that a new request has been created, and the request list will automatically refresh.
 
@@ -147,7 +147,7 @@ The filter bar at the top of the CTLabel screen enables dynamic filtering and so
 
         ![CompuTec Labels](./media/ctlabel/details-form.png)
 
-3. At the top of the dialog, the request ID is displayed. Below, you can review all relevant information associated with the selected request. If the status of the request is F"inished with errors", a "Retry" button will be available within the details form.
+3. At the top of the dialog, the request ID is displayed. Below, you can review all relevant information associated with the selected request. If the status of the request is "Finished with errors", a "Retry" button will be available within the details form.
 
         ![CompuTec Labels](./media/ctlabel/finished-with-errors.png)
 

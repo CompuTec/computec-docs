@@ -52,7 +52,7 @@ You can find the SLD Server Address in SAP Business One, License Administration.
 
 ![License Administration](./media/configuration-and-administration/license-administration.webp)  
 
-You can check the CompuTec License Server Address in SAP Business One with ProcessForce installed, ProcesForce License administration form.
+You can check the CompuTec License Server Address in SAP Business One with ProcessForce installed, ProcessForce License administration form.
 
 ![Administration](./media/configuration-and-administration/processforce-license-administration.webp)
 
