@@ -29,12 +29,9 @@ The ProcessForce Extension is a powerful tool that enhances the functionality of
 :::
 
 :::danger
-    Before beginning the installation, ensure that the Serial Numbers and Batches, Production, and Units of Measure options are unchecked in General Settings → Hide Functions, as shown in the screenshot below.
+    Before beginning the installation, ensure that the Serial Numbers and Batches, Production, and Units of Measure options are unchecked in General Settings → Hide Functions, as shown in the screenshot below:
 
-    <details>
-      <summary>Click here to expand</summary>
-      <div>![Checkboxes](./media/extension/general-settings-unchecked.webp)</div>
-    </details>
+        ![Checkboxes](./media/extension/general-settings-unchecked.webp)
 :::
 
 :::danger

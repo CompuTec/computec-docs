@@ -8,22 +8,22 @@ This section provides an overview of additional utilities that enhance the appli
 
 ---
 
-## Logs Tab
+## Logs tab
 
 ![Log](./media/other-functions/ct-labels-logs.webp)
 
-The Logs Tab provides a log viewer for tracking system events. Users can select a specific date and logging source (service, installaxtion, or manager) to review relevant logs. On the right side, there are quick options for exporting logs to a file for further analysis.
+The Logs tab provides a log viewer for tracking system events. Users can select a specific date and logging source (service, installation, or manager) to review relevant logs. On the right side, there are quick options for exporting logs to a file for further analysis.
 
-## Requests Tab
+## Requests tab
 
 ![Requests](./media/other-functions/ct-labels-requests.webp)
 
-The Requests Tab displays database requests from `CT_LP_Requests`. Users can filter requests by date (up to 100 entries), company, requester, status, transaction type, and printer.
+The Requests tab displays database requests from `CT_LP_Requests`. Users can filter requests by date (up to 100 entries), company, requester, status, transaction type, and printer.
 
 Right-clicking on a request provides additional options:
 
-- **Resend Request**: creates a new request.
-- **Retry Request**: attempts to re-run the exact request, changing its status to "C."
+- **Resend Request**: Creates a new request.
+- **Retry Request**: Attempts to re-run the exact request, changing its status to "C."
 
     ![Retry](./media/other-functions/ct-labels-retry.webp)
 
@@ -31,7 +31,7 @@ Users can also view detailed request parameters, information, and error logs by 
 
     ![Request Details](./media/other-functions/ct-labels-request-details.webp)
 
-## Customising Output Path and File Name
+## Customizing Output Path and File Name
 
 Crystal Printer offers a flexible way to generate and save print outputs as PDF files. By leveraging dynamic parameters and customizable paths, users can streamline their label printing process, ensuring efficient organization and easy retrieval of files.
 

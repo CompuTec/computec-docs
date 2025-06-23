@@ -21,28 +21,35 @@ The following steps outline how to configure the service. The order of execution
 <div>
 1. Open: Control Panel > System and Security > Windows Firewall:
 
-  ![Windows Firewall](./media/general-configuration/windows-firewall.png)
+    ![Windows Firewall](./media/general-configuration/windows-firewall.png)
+
 2. Click the Advanced settings:
 
-  ![Advanced Settings](./media/general-configuration/advanced-settings.png)
+    ![Advanced Settings](./media/general-configuration/advanced-settings.png)
+
 3. Select Inbound Rules and choose New Rule... in the Actions window - this runs New Inbound Rule Wizard:
 
-  ![Inbound Rules](./media/general-configuration/inbound-rules.png)
+    ![Inbound Rules](./media/general-configuration/inbound-rules.png)
+
 4. Choose Port as the rule type:
 
-  ![Port](./media/general-configuration/port.png)
+    ![Port](./media/general-configuration/port.png)
+
 5. Choose TCP protocol and specify 33006 local port:
 
-  ![Protocol and Ports](./media/general-configuration/protocol-and-ports.png)
+    ![Protocol and Ports](./media/general-configuration/protocol-and-ports.png)
+
 6. Choose Allow the connection action:
 
-  ![Allow the connection](./media/general-configuration/allow-the-connection.png)
+    ![Allow the connection](./media/general-configuration/allow-the-connection.png)
+
 7. Choose all profiles:
 
-  ![Profiles](./media/general-configuration/profiles.png)
+    ![Profiles](./media/general-configuration/profiles.png)
+
 8. Specify the rule name and click "Finish.":
 
-  ![Computec License Server](./media/general-configuration/computec-license-server.png)
+    ![Computec License Server](./media/general-configuration/computec-license-server.png)
 </div>
 </details>
 

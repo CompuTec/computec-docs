@@ -55,18 +55,18 @@ In this view, we define new printing rules. The printing rule defines an action 
 To define a new rule, right-click on the table and choose Add new rule.
 
 - **Requester**: The application requesting printing (SAP, WMS, or PDC).
-- **Transaction**: transaction on which a specific print occurs. By default, the following transactions are available: Delivery Note, Goods Receipt PO, Stock Transfer, Stock Transfer Request, Goods Return, Return, Item Master Data, Additional Batch Details, Storage Unit, Goods Issue, DraftGRPO.
-- **Document**: define whether the rule concerns all of the documents in the chosen transaction or just one (in this case, you must specify its document number).
-- **Employee**: the employee is defined in SAP Business One for whom this printing rule works. You can set up a specific one or all.
+- **Transaction**: Transaction on which a specific print occurs. By default, the following transactions are available: Delivery Note, Goods Receipt PO, Stock Transfer, Stock Transfer Request, Goods Return, Return, Item Master Data, Additional Batch Details, Storage Unit, Goods Issue, DraftGRPO.
+- **Document**: Define whether the rule concerns all of the documents in the chosen transaction or just one (in this case, you must specify its document number).
+- **Employee**: The employee is defined in SAP Business One for whom this printing rule works. You can set up a specific one or all.
 - **User**: SAP Business One for whom this printing rule works. You can set up a specific one or all.
-- **Item Group**: specify a particular item group or all.
-- **Card Group** – Business Partner type of a specific document. You can choose either Customers or Suppliers.
-- **Branch**: define which company branch the rule applies to.
-- **WHSCode**: code of a Warehouse for which the rule works
+- **Item Group**: Specify a particular item group or all.
+- **Card Group**: Business Partner type of a specific document. You can choose either Customers or Suppliers.
+- **Branch**: Define which company branch the rule applies to.
+- **WHSCode**: Code of a Warehouse for which the rule works:
         - Unit of Measure
         - Header
         - Ignore All Others
-- **Template** – assign a printing template to the rule.
+- **Template**: Assign a printing template to the rule.
 
 ## Mapping Parameters View
 
@@ -107,16 +107,16 @@ In this view, we define the action of which Employee printing will proceed.
 
 These rules are called event triggers. To add a new one:
 
-1. Right-click on the table and choose Add.
+1. Right-click on the table and choose "Add".
 2. Specify the employee and department for which the rule will be valid (you can select "All" for both values).
 3. Choose the Object Type for which the rule is set.
 4. In columns SAP, PDC, WMS, and PF, you can choose an action for a specific application with which CompuTec Labels is connected. You can choose the following actions:
 
-    - **OnChange**: printing starts on the update of a document
-    - **Add**: printing starts with the addition of a document
-    - **NoAction**: no action is taken automatically; you have to choose the right option from the application to start printing
+    - **OnChange**: Printing starts on the update of a document.
+    - **Add**: Printing starts with the addition of a document.
+    - **NoAction**: No action is taken automatically; you have to choose the right option from the application to start printing.
 
-5. Click Update to save changes.
+5. Click "Update" to save changes.
 
 :::note
     Event Triggers are considered in CompuTec products: SAP CompuTec Labels add-on, CompuTec WMS, CompuTec PDC, and ProcessForce. You can print only from objects defined in this table in these products.

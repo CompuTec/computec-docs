@@ -25,8 +25,8 @@ To access and modify these queries:
 
 You will find two query types:
 
-- **Add Query**: executes when a document is initially added to the system.
-- **Update Query**: executes when a document is updated in the system.
+- **Add Query**: Executes when a document is initially added to the system.
+- **Update Query**: Executes when a document is updated in the system.
 
 :::warning
     We recommend adding this new column in both queries.
