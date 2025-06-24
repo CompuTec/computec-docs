@@ -7,9 +7,9 @@ unlisted: true
 
 # Create Cloud Control Center Operator and Assign to IAM Server
 
-To enable seamless discovery of SAP companies and access essential SAP environment configurations, it is necessary to configure operator credentials within the Cloud Control Center (CCC). These credentials authorize AppEngine to retrieve key system information during the company activation and discovery process.
+To enable seamless discovery of SAP companies and access essential SAP environment configurations, it is necessary to configure operator credentials within the Cloud Control Center (CCC). These credentials authorize CompuTec AppEngine to retrieve key system information during the company activation and discovery process.
 
-This guide walks you through the steps to create a CCC operator, configure corresponding credentials in the IAM (Keycloak) server, and use the account in AppEngine.
+This guide walks you through the steps to create a CCC operator, configure corresponding credentials in the IAM (Keycloak) server, and use the account in CompuTec AppEngine.
 
 ## Create an Operator
 
@@ -34,9 +34,9 @@ This guide walks you through the steps to create a CCC operator, configure corre
 
     ![Add  Auth User](./media/configuration-and-administration/CCC/SetPassword_Add.png)
 
-## AppEngine Discovery
+## CompuTecAppEngine Discovery
 
-With the operator and IAM user configured, you can now use these credentials in AppEngine for SAP company discovery and activation.
+With the operator and IAM user configured, you can now use these credentials in CompuTec AppEngine for SAP company discovery and activation.
 
 ![Discover](./media/configuration-and-administration/CCC/Discover.png)
 

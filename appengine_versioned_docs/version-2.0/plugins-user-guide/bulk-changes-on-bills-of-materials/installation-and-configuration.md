@@ -17,11 +17,11 @@ Before proceeding, ensure the following components are installed and properly co
 
 For detailed guidance on licensing setup, refer [here](/docs/processforce/administrator-guide/licensing/license-server/overview/).
 
-## AppEngine and Plugin Installation and Configuration
+## CompuTec AppEngine and Plugin Installation and Configuration
 
-To use the Bulk Change plugin, you’ll need to install both the AppEngine and the plugin itself.
+To use the Bulk Change plugin, you’ll need to install both the CompuTec AppEngine and the plugin itself.
 
-- AppEngine Installation: Follow the instructions available [here](../../administrators-guide/installation.md).
+- CompuTec AppEngine Installation: Follow the instructions available [here](../../administrators-guide/installation.md).
 - Plugin Installation and Configuration: Detailed steps can be found [here](../../../version-2.0/administrators-guide/configuration-and-administration/overview.md).
 
 ## ProcessForce
@@ -34,6 +34,6 @@ To do this, check the following checkbox:
 
 ![Bulk Change](./media/bulk-changes-of-bom/image2020-1-18-8-33-41.png)
 
-Enter AppEngine url, e.g. `http://{host}:54000`, click "Update" and restart SAP Business One.
+Enter CompuTec AppEngine url, e.g. `http://{host}:54000`, click "Update" and restart SAP Business One.
 
 ---

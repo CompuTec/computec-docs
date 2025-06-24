@@ -4,16 +4,16 @@ sidebar_position: 8
 
 # Using ae:Link's
 
-This guide walks you through how to integrate the ae:Link control into your AppEngine plugin for navigating between Sales Orders and Business Partners.
+This guide walks you through how to integrate the ae:Link control into your CompuTec AppEngine plugin for navigating between Sales Orders and Business Partners.
 
 ---
 
 ## Description
 
-AppEngine enhances this experience by providing a custom control - computec.appengine.ui.controls.link - which replicates the functionality of the familiar "yellow arrow" links. These links allow users to directly open related documents or master data records, saving time and simplifying workflows.
+CompuTec AppEngine enhances this experience by providing a custom control - computec.appengine.ui.controls.link - which replicates the functionality of the familiar "yellow arrow" links. These links allow users to directly open related documents or master data records, saving time and simplifying workflows.
 
 :::warning
-    The AppEngine Link control only functions when the plugin is launched from within SAP Business One.
+    The CompuTec AppEngine Link control only functions when the plugin is launched from within SAP Business One.
 :::
 
 ## Adding Link to Sales Orders and Business Partners
@@ -21,12 +21,12 @@ AppEngine enhances this experience by providing a custom control - computec.appe
 1. Open SalesOrder.view.xml:
 
     ![Sales Order](./media/using-ae-link/salesorder-view-xml.webp)
-2. Add a namespace for AppEngine controls:
+2. Add a namespace for CompuTec AppEngine controls:
 
     `xmlns:ae="computec.appengine.ui.controls"`
 
     ![AppEngine](./media/using-ae-link/appengine-controls-namespace.webp)
-3. Add a Link control to the Document Number column by replacing the ObjectIdentifier with the AppEngine ae:Link. Configure it with the following properties:
+3. Add a Link control to the Document Number column by replacing the ObjectIdentifier with CompuTec CompuTec AppEngine ae:Link. Configure it with the following properties:
 
     - **text**: The value to be displayed. Use DocNum, and include DocEntry in parentheses using curly brackets.
     - **objectType**: For SAP object, this needs to be BoFormObjectEnum (or ObjectType). BoFormObjectEnum can be found in SAP Business ne SDK. In this case this will be fo_Order:

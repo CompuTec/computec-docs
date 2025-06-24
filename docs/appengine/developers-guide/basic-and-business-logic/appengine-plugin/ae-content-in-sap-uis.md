@@ -34,7 +34,7 @@ Defines a UI element like a form, context menu, or analysis item. Here’s an ex
 - **MenuUid** (required) - Unique identifier for the UI element.
 - **FatherMenuUid** - Specifies the parent element; required if `Type` is `"Form"`.
 - **Url** - (required): URL associated with the UI element.
-- **InternalUrl** - Internal URL for a Plugin hosted in AppEngine.
+- **InternalUrl** - Internal URL for a Plugin hosted in CompuTec AppEngine.
 - **MenuCaption** - Display text in the menu; required for `"ContextMenu"` and `"Form"`.
 - **Title** - UI element title; required for all types.
 - **Condition** - Specifies visibility conditions for `"ContextMenu"`.
@@ -160,7 +160,7 @@ This context menu is displayed on the Item Master Data form if `ItemCode` starts
 
 #### Example 3: SAP Menu that Opens Plugin
 
-This entry will be added to the SAP Business One menu and will appear under Stock Management with FatherMenuUid = "3072". The InternalUrl parameter is set to true, ensuring that the URL opens within the AppEngine Launchpad. The URL consists of two parts: "ct.vehone" represents the ui.apps.namespace of the plugin, and "home" is the route within the plugin. Additional parameters can be appended to the URL, as demonstrated in previous examples.
+This entry will be added to the SAP Business One menu and will appear under Stock Management with FatherMenuUid = "3072". The InternalUrl parameter is set to true, ensuring that the URL opens within the CompuTec AppEngine Launchpad. The URL consists of two parts: "ct.vehone" represents the ui.apps.namespace of the plugin, and "home" is the route within the plugin. Additional parameters can be appended to the URL, as demonstrated in previous examples.
 
 ```json
 {

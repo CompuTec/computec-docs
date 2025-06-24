@@ -9,7 +9,7 @@ This guide covers the essential basic settings required to activate and configur
 
 ---
 
-To activate the MRP 2.5 function in the SAP Business One menu, you need to enable AppEngine. This integration allows SAP Business One to display AppEngine plugins within the application.
+To activate the MRP 2.5 function in the SAP Business One menu, you need to enable CompuTec AppEngine. This integration allows SAP Business One to display CompuTec AppEngine plugins within the application.
 
 You can access MRP 2.5 in two modes:
 

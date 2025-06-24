@@ -2,9 +2,9 @@
 sidebar_position: 2
 ---
 
-# Connecting to AppEngine from SAP Business One Integration Framework (B1if)
+# Connecting to CompuTec AppEngine from SAP Business One Integration Framework (B1if)
 
-Integrating SAP Business One Integration Framework (B1if) with AppEngine via REST API enables seamless data exchange between the two systems
+Integrating SAP Business One Integration Framework (B1if) with CompuTec AppEngine via REST API enables seamless data exchange between the two systems
 
 ---
 
@@ -12,11 +12,11 @@ Integrating SAP Business One Integration Framework (B1if) with AppEngine via RES
     Currently, there is an issue while running simultaneous transactions using API. The workaround for this solution is calling Login and Logout separately for each transaction.
 :::
 
-Example of a connection made from B1if (v2.0) to AppEngine using REST API.
+Example of a connection made from B1if (v2.0) to CompuTec AppEngine using REST API.
 
 There are two methods available to authenticate: using **cookies** or a **token**. In the example below, we use token authentication as it is preferable in such usage.
 
-The token is generated after a successful login operation and has a limited lifespan (20 minutes). After expiration, a new token needs to be generated. There is an additional challenge here to store tokens in B1if as an Integration Package with Scenarios can connect to one AppEngine and many different company databases. The best solution, in this case, is storing tokens in BizStore.
+The token is generated after a successful login operation and has a limited lifespan (20 minutes). After expiration, a new token needs to be generated. There is an additional challenge here to store tokens in B1if as an Integration Package with Scenarios can connect to one CompuTec AppEngine and many different company databases. The best solution, in this case, is storing tokens in BizStore.
 
 ---
 
@@ -47,18 +47,18 @@ After that, we can save it to BizStore with parameters:
 
 ## Using Token in an Integration Scenario
 
-Below is an example of sending data to AppEngine. Authentication is done using the token saved in the previous steps.
+Below is an example of sending data to CompuTec AppEngine. Authentication is done using the token saved in the previous steps.
 
 ![Transformation-atom](./media/connecting-to-appengine-from-sap/step-modeler.webp)
 
-1. **GetLux** – an atom that prepares data that will be sent to AppEngine.
+1. **GetLux** – an atom that prepares data that will be sent to CompuTec AppEngine.
 2. **GetToken** – an atom that gets a saved token (Operation Type: access_op).
 
     ![Configuration](./media/connecting-to-appengine-from-sap/configuration.webp)
-3. **ToSendVal** - prepares JSON structure (according to documentation for a given object - in our example, this is InspectionReading) that will be sent to AppEngine. Atom prepares data in variables, creates \<token\> section and place JSON structure in \<bfa:io\> section.
+3. **ToSendVal** - prepares JSON structure (according to documentation for a given object - in our example, this is InspectionReading) that will be sent to CompuTec AppEngine. Atom prepares data in variables, creates \<token\> section and place JSON structure in \<bfa:io\> section.
 
     ![To send](./media/connecting-to-appengine-from-sap/to-send-al.webp)
-4. **SendValue**: HTTA atom sends data to AppEngine.
+4. **SendValue**: HTTA atom sends data to CompuTec AppEngine.
 
     ![Send to AppEngine](./media/connecting-to-appengine-from-sap/send-to-appengine.webp)
 
@@ -73,4 +73,6 @@ Below is an example of sending data to AppEngine. Authentication is done using t
 
 ## Summary
 
-As pointed out at the beginning of the integration environment, there can be many connections to AppEngine. The described scenario minimizes the required authentication calls by saving tokens in BizStore. The token's lifetime is limited, and a new token must be obtained after its expiration. This can be done by simply recursively calling the Login and Store token, or a more sophisticated solution would be checking if a token is active and then conditionally calling the Login and Store token. The choice of a solution depends on a given business case. Error handling should also be added to the presented solution.
+As pointed out at the beginning of the integration environment, there can be many connections to CompuTec AppEngine. The described scenario minimizes the required authentication calls by saving tokens in BizStore. The token's lifetime is limited, and a new token must be obtained after its expiration. This can be done by simply recursively calling the Login and Store token, or a more sophisticated solution would be checking if a token is active and then conditionally calling the Login and Store token. The choice of a solution depends on a given business case. Error handling should also be added to the presented solution.
+
+---

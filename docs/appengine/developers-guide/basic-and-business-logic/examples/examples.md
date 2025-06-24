@@ -27,7 +27,7 @@ This demo project showcases the key components of the **Computec.AppEngine** fra
 - Event Handling
 - Yellow Arrows
 
-### 3. AppEngine Web Plugin (CT.VehOne)
+### 3. CompuTec AppEngine Web Plugin (CT.VehOne)
 
 - Models
 - Serializers

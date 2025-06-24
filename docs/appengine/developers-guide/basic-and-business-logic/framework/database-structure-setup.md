@@ -5,7 +5,7 @@ sidebar_position: 5
 
 # Database Structure Setup
 
-The `DatabaseVersion` is a double field that is checked during the update procedure. If this version changes, the setup action performed by the AppEngine installation process will update all objects and apply necessary actions.
+The `DatabaseVersion` is a double field that is checked during the update procedure. If this version changes, the setup action performed by the CompuTec AppEngine installation process will update all objects and apply necessary actions.
 
 The database structure will be installed if:
 

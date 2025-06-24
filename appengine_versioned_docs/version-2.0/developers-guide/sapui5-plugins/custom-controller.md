@@ -4,7 +4,7 @@ sidebar_position: 10
 
 # Custom Controller
 
-In this example, we will demonstrate how to add a custom controller. This tutorial builds upon the previous [Attachments](./attachments.md tutorial. In the previous example, we used the built-in AppEngine Attachments controller to upload attachments. In this new example, we will create a custom controller that handles the task of adding an uploaded attachment to a selected Sales Order.
+In this example, we will demonstrate how to add a custom controller. This tutorial builds upon the previous [Attachments](./attachments.md tutorial. In the previous example, we used the built-in CompuTec AppEngine Attachments controller to upload attachments. In this new example, we will create a custom controller that handles the task of adding an uploaded attachment to a selected Sales Order.
 
 ---
 
@@ -82,7 +82,7 @@ In this example, we will demonstrate how to add a custom controller. This tutori
                 }
         ```
 
-    - **GetAttachmentsPath** – This method will return the attachment path based on the SAP configuration. We will need this path as the source for our attachment, and it will also be the location where the AppEngine Attachments controller will upload the attachments.
+    - **GetAttachmentsPath** – This method will return the attachment path based on the SAP configuration. We will need this path as the source for our attachment, and it will also be the location where the CompuTec AppEngine Attachments controller will upload the attachments.
 
         ```chsarp
         public string GetAttachmentsPath()
@@ -254,7 +254,7 @@ In this example, we will demonstrate how to add a custom controller. This tutori
 
 ## Using Custom Controller on Frontend
 
-Having our custom controller in place, we cannot use it in our UI5 application. After uploading files using the AppEngine Attachments controller, we will call the newly created api/FirstPlugin/SalesOrder/AddAttachment method to add an attachment to Sales Order. After that, we will refresh the attachment's information on our dialog and list.
+Having our custom controller in place, we cannot use it in our UI5 application. After uploading files using the CompuTec AppEngine Attachments controller, we will call the newly created api/FirstPlugin/SalesOrder/AddAttachment method to add an attachment to Sales Order. After that, we will refresh the attachment's information on our dialog and list.
 
 1. First, we will modify our AttachmentsDialog view to include SalesOrder DocEntry and AtcEntry that we will use later. Open SalesOrder.controller.js and change method onAttachmentsButtonPress:
 

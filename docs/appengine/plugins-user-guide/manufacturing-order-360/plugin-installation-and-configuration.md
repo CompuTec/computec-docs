@@ -9,9 +9,9 @@ sidebar_position: 2
 Ensure that ProcessForce and CompuTec Licence Server is installed and configured.
 :::
 
-## AppEngine and plugin installation and configuration
+## CompuTec AppEngine and plugin installation and configuration
 
-For the AppEngine installation, follow the step-by-step instructions provided in the  [Installation](../../administrators-guide/configuration-and-administration/installation.md) manual.
+For CompuTec AppEngine installation, follow the step-by-step instructions provided in the  [Installation](../../administrators-guide/configuration-and-administration/installation.md) manual.
 
 Refer to the [Configuration and Administration](../../administrators-guide/configuration-and-administration/configuration.md). Guide for details on installing and configuring the plugin.
 

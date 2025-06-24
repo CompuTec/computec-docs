@@ -10,9 +10,9 @@ CompuTec AppEngine allows developers to build plugins with internationalization 
 
 ## Description
 
-AppEngine allows you to manage translation resources directly within your plugin. If you’ve created your plugin using the [CompuTec AppEngine Plugin Template](./plugin-templates.md), a translation file is already included and registered by default.
+CompuTec AppEngine allows you to manage translation resources directly within your plugin. If you’ve created your plugin using the [CompuTec AppEngine Plugin Template](./plugin-templates.md), a translation file is already included and registered by default.
 
-To implement translations in your AppEngine plugin, follow the steps below:
+To implement translations in your CompuTec AppEngine plugin, follow the steps below:
 
 1. Translations are stored in an XML file with the following structure:
 
@@ -85,7 +85,7 @@ To implement translations in your AppEngine plugin, follow the steps below:
     "i18n": "plugins/<Plugin Route>/I18n/i18n.properties"
     ```
 
-    - **Plugin Route**: The Plugin Route is defined when creating a Plugin from the wizard. You can find this value in the AppEngine plugin manifest.json.
+    - **Plugin Route**: The Plugin Route is defined when creating a Plugin from the wizard. You can find this value in the CompuTec AppEngine plugin manifest.json.
 
         ![Plugin Route](./media/translations-from-backend/plugin-route.webp)
     - Example
@@ -97,7 +97,7 @@ To implement translations in your AppEngine plugin, follow the steps below:
 If you created a Plugin Project using the template, you can already see how translations work in the Home.view.xml file. The screenshot below illustrates this.
 
 - In Home.view.xml file, we’ve defined the binding for the Generic Tile header as `{i18n>todoTileHeader}` and subheder o `{i18n>todoTileSubheader}`. This is the standard way of defining translations in UI5.
-- Translations IDs (todoTileHeader, todoTileSubheader) are defined in messages.xml. Based on the selected language (English, in this case), AppEngine retrieves and displays the appropriate text.
+- Translations IDs (todoTileHeader, todoTileSubheader) are defined in messages.xml. Based on the selected language (English, in this case), CompuTec AppEngine retrieves and displays the appropriate text.
 
 ![Translation](./media/translations-from-backend/translation-ids.webp)
 
@@ -139,7 +139,7 @@ In this example, we’ll add translations to the custom view we created in the C
     </Message>
     ```
 
-5. Now, rebuild the plugin project. Then, start AppEngine and refresh the plugin to apply the changes. (A restart is only required if you've made changes to the messages.xml file.)
+5. Now, rebuild the plugin project. Then, start CompuTec AppEngine and refresh the plugin to apply the changes. (A restart is only required if you've made changes to the messages.xml file.)
 
     ![Translation](./media/translations-from-backend/translation-change.webp)
 

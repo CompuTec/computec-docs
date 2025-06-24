@@ -7,10 +7,10 @@ import Releases from "../../releases.json";
 # Download
 
 :::caution
-    After upgrade from any 1.00 version to any 2.00, please use the Empty Cache and Hard Reload option in the browser on which you use AppEngine.
+    After upgrade from any 1.00 version to any 2.00, please use the Empty Cache and Hard Reload option in the browser on which you use CompuTec AppEngine.
 :::
 :::caution
-     If you plan to use plugins from inside SAP client then from AppEngine version 2.10.16 you need to have minimal SAP Business One ver 10 SP 2308
+     If you plan to use plugins from inside SAP client then from CompuTec AppEngine version 2.10.16 you need to have minimal SAP Business One ver 10 SP 2308
 :::
 
 ## Releases

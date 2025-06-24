@@ -29,7 +29,7 @@ Follow these steps to prepare your plugin for deployment:
 5. Finally we just need to pack content of build into zip archive.
 
     ![Build Content](./media/plugin-deployment/build-content-explorer.webp)
-6. Only the created zip file is required to install plugin into AppEngine.
+6. Only the created zip file is required to install plugin into CompuTec AppEngine.
 
     ![Zip file](./media/plugin-deployment/zip-file.webp)
 

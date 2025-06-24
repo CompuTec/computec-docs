@@ -16,7 +16,7 @@ sidebar_position: 1
 | Improvement | Projects are now copied to MOR Proposals from source documents. | - |
 | Improvement | Progress bar added to consolidation. | - |
 | Improvement | Added number of selected documents to create in tab bar. Change selection to create | - |
-| Improvement | New Job was added that will recover not finished jobs in case of AppEngine restart | - |
+| Improvement | New Job was added that will recover not finished jobs in case of CompuTec AppEngine restart | - |
 | Improvement | Percentage in Progress Bar includes also decimal part. | - |
 
 ---

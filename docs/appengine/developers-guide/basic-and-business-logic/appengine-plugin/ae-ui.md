@@ -2,24 +2,24 @@
 sidebar_position: 6
 ---
 
-# AppEngine Plugin User Interface
+# CompuTec AppEngine Plugin User Interface
 
 :::note
     [Node.js](https://nodejs.org) version 20.11 or higher is required in development environment.
 :::
 
-Web User Interface is built using the [SAP UI5 Framework](https://ui5.sap.com/). It is a modern enterprise-ready UI framework. AppEngine offers a set of libraries to simplify development of UI5 applications and to manage user authentication, translations.
+Web User Interface is built using the [SAP UI5 Framework](https://ui5.sap.com/). It is a modern enterprise-ready UI framework. CompuTec AppEngine offers a set of libraries to simplify development of UI5 applications and to manage user authentication, translations.
 
-## Parts of AppEngine UI5 Application
+## Parts of CompuTec AppEngine UI5 Application
 
-- **Launchpad** - A UI5 application that displays all applications available to the user. It serves as a container for running all plugins within AppEngine.
-- **@computec/uicore** - Provides foundational classes for developing AppEngine UI5 applications, essential for plugins operating within the AppEngine Launchpad.
+- **Launchpad** - A UI5 application that displays all applications available to the user. It serves as a container for running all plugins within CompuTec AppEngine.
+- **@computec/uicore** - Provides foundational classes for developing CompuTec AppEngine UI5 applications, essential for plugins operating within the CompuTec AppEngine Launchpad.
 - **@computec/common** - A set of common controls, services and helpers that helps to build UI5 applications.
 - **@computec/templating** - A set of controls designed to simplify view generation.
 
-## Requirements for AppEngine UI5 Plugin
+## Requirements for CompuTec AppEngine UI5 Plugin
 
-AppEngine Launchpad can run any UI5 application as long as below requirements are met:
+CompuTec AppEngine Launchpad can run any UI5 application as long as below requirements are met:
 
 1. The `computec.appengine.uicore` library is required (with `computec.appengine.common` as an optional addition). These libraries can be included in the manifest.json file.
 
@@ -40,7 +40,7 @@ AppEngine Launchpad can run any UI5 application as long as below requirements ar
     }
     ```
 
-2. The plugin must extend `computec.appengine.uicore.UIComponent`, which serves as the foundation for AppEngine UI5 applications. This component ensures user authentication, facilitates access to AppEngine UI services, manages translations, and more. UIComponent itself is an extension of `sap.ui.core.UIComponent`.
+2. The plugin must extend `computec.appengine.uicore.UIComponent`, which serves as the foundation for CompuTec AppEngine UI5 applications. This component ensures user authentication, facilitates access to CompuTec AppEngine UI services, manages translations, and more. UIComponent itself is an extension of `sap.ui.core.UIComponent`.
 
     ```typescript
     import UIComponent from "computec/appengine/uicore/UIComponent";
@@ -57,7 +57,7 @@ AppEngine Launchpad can run any UI5 application as long as below requirements ar
     }
     ```
 
-3. To enable proper navigation within the AppEngine Launchpad, the plugin must utilize either `computec.appengine.uicore.plugin.m.PluginRouter` or `computec.appengine.uicore.plugin.f.PluginRouter`. These extend `sap.m.routing.Router` and `sap.f.routing.Router`, respectively. The desired router can be specified in the manifest.json file.
+3. To enable proper navigation within the CompuTec AppEngine Launchpad, the plugin must utilize either `computec.appengine.uicore.plugin.m.PluginRouter` or `computec.appengine.uicore.plugin.f.PluginRouter`. These extend `sap.m.routing.Router` and `sap.f.routing.Router`, respectively. The desired router can be specified in the manifest.json file.
 
     ```json
     {
@@ -77,15 +77,15 @@ AppEngine Launchpad can run any UI5 application as long as below requirements ar
     }
     ```
 
-## Crating Simple Ui5 Application for AppEngine
+## Crating Simple Ui5 Application for CompuTec AppEngine
 
-The easiest way to start new AppEngine UI Plugin project is by using the CT AppEngine Plugin Project template from [CompuTec.AppEngine.Templates](../../basic-and-business-logic/framework/before-you-start.md)
+The easiest way to start new CompuTec AppEngine UI Plugin project is by using the CompuTec AppEngine Plugin Project template from [CompuTec.AppEngine.Templates](../../basic-and-business-logic/framework/before-you-start.md)
 
 ```bash
 dotnet new ctaeaeproject --RoutePrefix CTVehOne
 ```
 
- This command will create a new project with the basic structure for the AppEngine UI5 Plugin. The plugin ID will be derived from the parent folder name, but you can specify a different one using the --name parameter. If the command is executed inside the CT.VehOne folder, the following structure will be created:
+ This command will create a new project with the basic structure for the CompuTec AppEngine UI5 Plugin. The plugin ID will be derived from the parent folder name, but you can specify a different one using the --name parameter. If the command is executed inside the CT.VehOne folder, the following structure will be created:
 
 ### Structure
 
@@ -100,7 +100,7 @@ dotnet new ctaeaeproject --RoutePrefix CTVehOne
             - **controller** - folder for controllers
             - **view** - folder for views
             - **Component.ts** - UI5 Component extending computec.appengine.uicore.UIComponent
-            - **manifest.json** - UI5 manifest already configured for AppEngine
+            - **manifest.json** - UI5 manifest already configured for CompuTec AppEngine
         - **additional configuration** - files like .eslintrc, etc.
         - **package.json** - npm configuration file
         - **ui5.yaml** - UI5 configuration file
@@ -120,7 +120,7 @@ If in your dev.config.json file you have set `MapWwwAppFolder` to true then each
 
 ## Translations
 
-In order to use [Message Translations](../framework/message-translations.md) that are defined in backed you need to specify source of translations in manifest.json. This way ui5 will use this enpoint as translation provider. You can find this endpoint in openAPI documentation in swagger. Patter for this enpoint is as follows: `plugins/{RoutePrefix}/I18n/i18n.properties`. RoutePrefix can be found in manifest.json
+In order to use [Message Translations](../framework/message-translations.md) that are defined in backed you need to specify source of translations in manifest.json. This way ui5 will use this endpoint as translation provider. You can find this endpoint in openAPI documentation in swagger. Patter for this endpoint is as follows: `plugins/{RoutePrefix}/I18n/i18n.properties`. RoutePrefix can be found in manifest.json
 
 ```json
 {
@@ -134,15 +134,15 @@ In order to use [Message Translations](../framework/message-translations.md) tha
 }
 ```
 
-## Attaching Odata Endpoints to AppEngine
+## Attaching Odata Endpoints to CompuTec AppEngine
 
-Adding an OData model to a plugin is straightforward. You can do this within the component by calling the attachSLOdataModel function. In the example below, we are attaching the OData ProcessForce endpoint with the alias PF. From this point on, you can bind controls using the path `PF>/.....` Multiple endpoints can be defined with different aliases. Note that the alias "AE" is reserved for the AppEngine OData endpoint, which is already included in the application.
+Adding an OData model to a plugin is straightforward. You can do this within the component by calling the attachSLOdataModel function. In the example below, we are attaching the OData ProcessForce endpoint with the alias PF. From this point on, you can bind controls using the path `PF>/.....` Multiple endpoints can be defined with different aliases. Note that the alias "AE" is reserved for the CompuTec AppEngine OData endpoint, which is already included in the application.
 
 ```typescript
 this.attachSLOdataModel("odata/ProcessForce/", "PF");
 ```
 
-## AppEngine Custom Views endpoint
+## CompuTec AppEngine Custom Views endpoint
 
 :::note
 This binding is one-way only; it is not possible to update data using this endpoint. Additionally, it does not currently return metadata for the selected table, view, or custom view.
@@ -247,15 +247,15 @@ private _applyFilter() {
 }
 ```
 
-### Libraries provided by AppEngine
+### Libraries provided by CompuTec AppEngine
 
-AppEngine offers a set of libraries for use in UI5 applications. These libraries are already included in AppEngine, so there's no need to add them to the build of your plugin. However, you can install them via npm to obtain the TypeScript definitions.
+CompuTec AppEngine offers a set of libraries for use in UI5 applications. These libraries are already included in CompuTec AppEngine, so there's no need to add them to the build of your plugin. However, you can install them via npm to obtain the TypeScript definitions.
 
 ### @computec/uicore
 
 `npm i @computec/uicore --save-dev`
 
-This base library is essential for all plugins running within the AppEngine Launchpad. It provides fundamental classes for building AppEngine UI5 applications, with the AppEngine UI5 component needing to extend the UIComponent class from this library. Additionally, it includes the PluginRouter, which should be specified in the manifest.json for proper navigation within the AppEngine Launchpad.
+This base library is essential for all plugins running within the CompuTec AppEngine Launchpad. It provides fundamental classes for building CompuTec AppEngine UI5 applications, with the CompuTec AppEngine UI5 component needing to extend the UIComponent class from this library. Additionally, it includes the PluginRouter, which should be specified in the manifest.json for proper navigation within the CompuTec AppEngine Launchpad.
 
 The library also offers several useful helpers, including:
 
@@ -300,5 +300,5 @@ This library also includes several base classes that can be extended to simplify
 For detailed information and examples, download the library and explore the example code and comments within.
 
 :::info Examples
-Refer to the [Example code](../../basic-and-business-logic/examples/examples.md) for guidance on using the AppEngine UI5 Plugin.
+Refer to the [Example code](../../basic-and-business-logic/examples/examples.md) for guidance on using the CompuTec AppEngine UI5 Plugin.
 :::

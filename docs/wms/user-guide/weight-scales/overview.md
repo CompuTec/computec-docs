@@ -10,7 +10,7 @@ This guide provides detailed instructions for configuring and using weight scale
 
 ## Configuration Steps
 
-1. Configure AppEngine and Plugin Gateway Manager from: [Weight scales integration](/docs/pdc/administrator-guide/weight-scales-integration/overview).
+1. Configure CompuTec AppEngine and Plugin Gateway Manager from: [Weight scales integration](/docs/pdc/administrator-guide/weight-scales-integration/overview).
 2. Ensure the application address is correct, such as `http://localhost:54000` or a designated IP address like `http://10.0.0.10:54000`.
 3. Open the "CompuTec Gateway Manager" (Weight Manager).
 4. Configure your specific CompuTec WMS weight scale. For example, in this guide, the CompuTec WMS Test Weight Scale is used as a reference, but you should select the scale relevant to your setup.
@@ -18,7 +18,7 @@ This guide provides detailed instructions for configuring and using weight scale
 
     ![Weight](./media/weight.webp)
 6. Open "Custom Configuration" and navigate to the "Common" tab.
-7. Set your AppEngine address:
+7. Set your CompuTec AppEngine address:
 
     ![AppEnngine](./media/appengine-address.png)
 8. Ensure the CT Weight Service web address option is selected.

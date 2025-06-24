@@ -2,9 +2,9 @@
 sidebar_position: 18
 ---
 
-# Using External Libraries in AppEngine
+# Using External Libraries in CompuTec AppEngine
 
-This guide demonstrates how to integrate and use an external Node.js library—SheetJS (xlsx)—within an AppEngine plugin written in TypeScript. SheetJS allows you to read, write, and manipulate Excel files directly in the browser or Node.js environments.
+This guide demonstrates how to integrate and use an external Node.js library—SheetJS (xlsx)—within CompuTec AppEngine plugin written in TypeScript. SheetJS allows you to read, write, and manipulate Excel files directly in the browser or Node.js environments.
 
 :::warning
     To include an external library in production-ready code, make sure to complete Steps 1 to 5 in the instructions below.

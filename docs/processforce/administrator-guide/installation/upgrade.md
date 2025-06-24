@@ -43,7 +43,7 @@ Any ProcessForce 10.0 version is provided as a Lightweight Deployment extension 
 3. Uninstall CompuTec ProcessForce API from Program and Features.
 
     - It is essential not to have any older CompuTec ProcessForce API installed in Apps and Features, even if the LD extension is upgraded.
-    - When the user is not using any other software (CompuTec WMS Server, AppEngine, or any custom code) on the same machine, there is no need to have the CompuTec ProcessForce API installed.
+    - When the user is not using any other software (CompuTec WMS Server, CompuTec AppEngine, or any custom code) on the same machine, there is no need to have the CompuTec ProcessForce API installed.
     - However, if it is installed, it takes precedence (due to how the GAC works) on the API we deploy in the Lightweight Deployment package. If they are in different versions, ProcessForce will not work.
 
 4. Install the CompuTec ProcessForce LD extension (click [here](./first-installation/extension.md) to see how to do it).

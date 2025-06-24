@@ -4,13 +4,13 @@ sidebar_position: 8
 
 # Configurations
 
-This guide provides a comprehensive overview of configuring plugins in AppEngine, covering custom configurations, additional configurations, and advanced configuration scenarios. By following these steps, you can effectively manage plugin settings at the company level through the AppEngine administration panel.
+This guide provides a comprehensive overview of configuring plugins in CompuTec AppEngine, covering custom configurations, additional configurations, and advanced configuration scenarios. By following these steps, you can effectively manage plugin settings at the company level through the CompuTec AppEngine administration panel.
 
 ---
 
 ## Plugin Configuration
 
-Each plugin can include one custom configuration object. This object is defined and managed at the company level using the AppEngine administration panel. The configuration is then injected as a service for plugin operations.
+Each plugin can include one custom configuration object. This object is defined and managed at the company level using the CompuTec AppEngine administration panel. The configuration is then injected as a service for plugin operations.
 
 ```csharp
 public class VehicleWebPluginConfig
@@ -61,7 +61,7 @@ public interface IAdditionalConfiguration
 
 ## UI Supported Types
 
-AppEngine supports simple data types and collections for both job and plugin configurations. These types are easily managed through the administration panel, enabling streamlined configuration processes for administrators.
+CompuTec AppEngine supports simple data types and collections for both job and plugin configurations. These types are easily managed through the administration panel, enabling streamlined configuration processes for administrators.
 
 ---
-By leveraging the plugin configuration capabilities of AppEngine, you can efficiently manage custom settings, extend functionality with additional configurations, and ensure robust handling of version updates through advanced configurations. This structured approach empowers you to tailor plugins to meet your organization's needs while maintaining consistency and ease of use.
+By leveraging the plugin configuration capabilities of CompuTec AppEngine, you can efficiently manage custom settings, extend functionality with additional configurations, and ensure robust handling of version updates through advanced configurations. This structured approach empowers you to tailor plugins to meet your organization's needs while maintaining consistency and ease of use.

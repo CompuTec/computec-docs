@@ -10,15 +10,15 @@ To obtain the company ID, navigate to the Administration Panel and hover over th
 
     ![Company Id](./media/troubleshooting/gcid.png)
 
-## Features are Disabled after an AppEngine Upgrade
+## Features are Disabled after CompuTec AppEngine Upgrade
 
 Ensure all your companies are fully updated by clicking "Update Company" in the Administration Panel for each one. Features may remain unavailable until the update is completed.
 
     ![Update Company](./media/troubleshooting/update-company.png)
 
-## Appengine not Connecting to the Database
+## CompuTec AppEngine not Connecting to the Database
 
-AppEngine fails to connect to the SAP HANA database, and the following error is displayed:
+CompuTec AppEngine fails to connect to the SAP HANA database, and the following error is displayed:
 
 >**Error Message**: Could not load file or assembly 'Sap.Data.Hana.Core.v2.1, Version=2.7.26.0, Culture=neutral, PublicKeyToken=0326b8ea63db4bc4'. Could not find or load a specific file. (0x80131621).
 
@@ -26,7 +26,7 @@ AppEngine fails to connect to the SAP HANA database, and the following error is 
 
 To resolve the issue, follow these steps:
 
-1. Ensure that the SAP HANA Database (HDB) client installed on the system where AppEngine runs matches the SAP HANA server revision.
+1. Ensure that the SAP HANA Database (HDB) client installed on the system where CompuTec AppEngine runs matches the SAP HANA server revision.
 2. Make sure that the environment variable path are correctly pointing to the installation directory.
 
 **How to check it**:

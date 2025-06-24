@@ -84,7 +84,7 @@ This guide demonstrates how to create a custom API controller within your plugin
     ![List](./media/custom-controller-pf-api/cc-pf-api-02.webp)
 6. Calling Controller:
 
-    - Address: URL of the AppEngine and controller
+    - Address: URL of the CompuTec AppEngine and controller
     - HTTP method: POST
     - Content-Type: json
     - Body content:

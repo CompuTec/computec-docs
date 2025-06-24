@@ -2,9 +2,9 @@
 sidebar_position: 5
 ---
 
-# User-Defined Object (UDO) in AppEngine Plugin Project
+# User-Defined Object (UDO) in CompuTec AppEngine Plugin Project
 
-AppEngine offers out-of-the-box support for User Defined Objects. This allows a developer to easily define User Defined Tables, Fields, and Objects. These definitions will be used during the plugin update process on the selected database.
+CompuTec AppEngine offers out-of-the-box support for User Defined Objects. This allows a developer to easily define User Defined Tables, Fields, and Objects. These definitions will be used during the plugin update process on the selected database.
 
 To streamline development further, you can use the [CompuTec AppEngine Plugin Code Generator](https://www.nuget.org/packages/CompuTec.AppEngine.PluginCodeGenerator/) to generate models, serializers and controllers (REST API and OData v4) for your UDOs. This guide walks you through the steps to define and implement UDOs.
 
@@ -307,7 +307,7 @@ The following steps illustrate examples of creating User Defined Tables, Fields,
 
 #### Preparing Setup
 
-To allow AppEngine to run this setup, we need to provide a Setup class in our plugin that extends CompuTec.AppEngine.Base.Infrastructure.Plugins.PluginSetup class. If you create a Plugin solution from our CompuTec AppEngine Plugin Template, then in the plugin project, you will already have boiler code that you can use.
+To allow CompuTec AppEngine to run this setup, we need to provide a Setup class in our plugin that extends CompuTec.AppEngine.Base.Infrastructure.Plugins.PluginSetup class. If you create a Plugin solution from our CompuTec AppEngine Plugin Template, then in the plugin project, you will already have boiler code that you can use.
 
 ![Setup CS](./media/udo-in-appengine-plugin/setup-cs.webp)
 

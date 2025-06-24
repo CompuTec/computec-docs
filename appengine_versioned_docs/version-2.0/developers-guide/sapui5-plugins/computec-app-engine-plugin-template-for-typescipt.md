@@ -23,7 +23,7 @@ Navigate to the following address: [https://www.nuget.org/packages?q=computec](h
 ### Adding
 
 :::note
-    In the following example, we’ll be using a template designed for an AppEngine plugin that features a UI5 and JavaScript frontend.
+    In the following example, we’ll be using a template designed for an CompuTec AppEngine plugin that features a UI5 and JavaScript frontend.
 :::
 
 To install the template package, open Windows Terminal and run the following command:
@@ -52,14 +52,14 @@ dotnet new --list AE
 
 ## Visual Studio – Configure Project Build and Debug
 
-1. It's recommended to configure your project to build directly into the AppEngine plugins directory, eliminating the need to manually copy files after each build.
+1. It's recommended to configure your project to build directly into the CompuTec AppEngine plugins directory, eliminating the need to manually copy files after each build.
 
     1. To do this, right-click on the plugin project and select properties.
-    2. Open the Build tab, set up the Output path as shown below. AppEngine stores all plugins in ProgramData/Computec/AppEngine/Plugins. Within this location, create a new folder named exactly as your plugin’s RoutePrefix (defined in the manifest.json file).
+    2. Open the Build tab, set up the Output path as shown below. CompuTec AppEngine stores all plugins in ProgramData/Computec/AppEngine/Plugins. Within this location, create a new folder named exactly as your plugin’s RoutePrefix (defined in the manifest.json file).
 
     ![Output](./media/computec-app-engine-plugin-template-for-typescipt/output-path.webp)
 
-2. Once the build is complete, you can activate your plugin through the AppEngine Administration Panel. For detailed instructions on this process, refer to the official documentation [here](../../../version-2.0/administrators-guide/configuration-and-administration/overview.md). After activation, your plugin will be available and accessible via the AppEngine Launchpad.
+2. Once the build is complete, you can activate your plugin through the CompuTec AppEngine Administration Panel. For detailed instructions on this process, refer to the official documentation [here](../../../version-2.0/administrators-guide/configuration-and-administration/overview.md). After activation, your plugin will be available and accessible via the CompuTec AppEngine Launchpad.
 
     ![First List](./media/computec-app-engine-plugin-template-for-typescipt/first-list-of-todos.webp)
 

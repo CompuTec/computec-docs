@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-The PriceManagement Plugin is a browser-based application designed to enhance the functionality of SAP Business One by enabling bulk price change for Item Master Data. This powerful tool operates seamlessly via the AppEngine and allows authorized users to log in using their SAP Business One credentials.
+The PriceManagement Plugin is a browser-based application designed to enhance the functionality of SAP Business One by enabling bulk price change for Item Master Data. This powerful tool operates seamlessly via CompuTec AppEngine and allows authorized users to log in using their SAP Business One credentials.
 
     ![Launchpad](./media/pm-01.png)
 

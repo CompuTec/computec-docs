@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Creating Controllers
 
-There are two types of controllers in AppEngine: controllers with SAP authorization and controllers without authorization. In a secure controller, connection-scoped services are injected. This guide outlines the key differences between these controller types, provides code examples, and highlights Swagger integration to simplify API documentation.
+There are two types of controllers in CompuTec AppEngine: controllers with SAP authorization and controllers without authorization. In a secure controller, connection-scoped services are injected. This guide outlines the key differences between these controller types, provides code examples, and highlights Swagger integration to simplify API documentation.
 
 ## Classic Controllers
 
@@ -63,4 +63,3 @@ All controllers, including minimal API controllers, are visible in Swagger. This
 ![Swagger Integration](./media/swagger-integration.png)
 
 ---
-AppEngine's flexible controller architecture empowers developers to create secure and non-secure endpoints efficiently. Whether using classic or minimal API controllers, the platform's robust support for service injection and route configuration ensures a seamless development experience.

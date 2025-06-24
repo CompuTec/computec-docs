@@ -16,9 +16,9 @@ Before using the Batch Traceability 360 plug-in, ensure that the prerequisites a
 
 ProcessForce and CompuTec Licence Server is installed and configured. For more details, refer to the installation documentation [here](/docs/processforce/administrator-guide/licensing/license-server/overview/)
 
-### AppEngine and Plug-in Installation and Configuration
+### CompuTec AppEngine and Plug-in Installation and Configuration
 
-For AppEngine installation, follow the instructions outlined in the [Installation](../../administrators-guide/configuration-and-administration/installation.md) Guide.
+For CompuTec AppEngine installation, follow the instructions outlined in the [Installation](../../administrators-guide/configuration-and-administration/installation.md) Guide.
 
 For configuring the plug-in, refer to the [Configuration and Administration](../../administrators-guide/configuration-and-administration/configuration.md) Guide.
 

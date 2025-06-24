@@ -4,7 +4,7 @@ sidebar_position: 13
 
 # Plugin Configuration
 
-AppEngine provides a powerful and flexible way to extend its capabilities using plugins. One essential feature of plugins is the ability to expose configurable settings that can be managed directly through the AppEngine Administration Panel. These settings allow developers and administrators to dynamically control the behavior of their plugins without altering the codebase.
+CompuTec AppEngine provides a powerful and flexible way to extend its capabilities using plugins. One essential feature of plugins is the ability to expose configurable settings that can be managed directly through the CompuTec AppEngine Administration Panel. These settings allow developers and administrators to dynamically control the behavior of their plugins without altering the codebase.
 
 In this tutorial, we’ll walk through how to add custom configuration settings to a plugin - FirstPlugin and utilize those settings in a job called SalesOrderToApproveEventJob that we created in the previous tutorial.
 
@@ -123,17 +123,17 @@ In this tutorial, we’ll walk through how to add custom configuration settings 
 
 ### Results
 
-Once you rebuild and launch AppEngine, your plugin configuration will be incorporated into the AppEngine configuration files (appengine.config or dev_appengine.config, depending on your environment). You can verify this by navigating to the Plugin Settings section in the Administration Panel.
+Once you rebuild and launch CompuTec AppEngine, your plugin configuration will be incorporated into CompuTec AppEngine configuration files (appengine.config or dev_appengine.config, depending on your environment). You can verify this by navigating to the Plugin Settings section in the Administration Panel.
 
 ![Added Settings](./media/plugin-configuration/added-setings-for-plugin.webp)
 
-The configuration is also reflected in the global AppEngine settings:
+The configuration is also reflected in the global CompuTec AppEngine settings:
 
-![AppEngine Settins](./media/plugin-configuration/appengine-settings.webp)
+![AppEngine Settings](./media/plugin-configuration/appengine-settings.webp)
 
 You can check if validation works by trying to set incorrect value.
 
-![Incoreect Priority](./media/plugin-configuration/incorrect-priority.webp)
+![Incorrect Priority](./media/plugin-configuration/incorrect-priority.webp)
 
 ## Using Configuration Value Inside Job
 

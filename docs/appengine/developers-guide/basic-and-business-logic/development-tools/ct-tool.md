@@ -197,7 +197,7 @@ Generate translated forms on release.
 </Target>
 ```
 
-### For AppEngine Plugin
+### For CompuTec AppEngine Plugin
 
 Generate plugin zip file and NuGet package on release.
 

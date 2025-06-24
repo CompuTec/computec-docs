@@ -49,7 +49,7 @@ After launching the application, click the first icon in the top menu and select
 The Connection section allows you to configure the necessary settings to connect CompuTec PDC with SAP Business One and other related services.
 
 :::caution
-    For a detailed description of the configuration for the AppEngine plugin version, click [here](/docs/appengine/plugins-user-guide/computec-pdc-plugin).
+    For a detailed description of the configuration for the CompuTec AppEngine plugin version, click [here](/docs/appengine/plugins-user-guide/computec-pdc-plugin).
 :::
 
 ![PDC Connection](./media/setting-up-the-application/pdc-connection.webp)
@@ -58,7 +58,7 @@ In this section, enter the necessary information to establish a connection with 
 
 Fill in the required details in the provided window:
 
-1. Enter the AppEngine server address to connect to AppEngine. This address includes the server IP or machine name (or simply 'localhost' if CompuTec PDC and CT Engine are installed on the same machine) and the port number. By default, port 8080 is used, but it can be changed if needed. Click [here](../weight-scales-integration/computec-gateway-manager.md) for instructions on how to do this.
+1. Enter the CompuTec AppEngine server address to connect to CompuTec AppEngine. This address includes the server IP or machine name (or simply 'localhost' if CompuTec PDC and CT Engine are installed on the same machine) and the port number. By default, port 8080 is used, but it can be changed if needed. Click [here](../weight-scales-integration/computec-gateway-manager.md) for instructions on how to do this.
 2. Enter the SAP Business One user ID for the selected database. The user must have at least an Indirect Access SAP B1 license and a ProcessForce license.
 3. Enter the SAP Business One password for the selected database.
 4. After entering the server address, the list of available companies (databases) will automatically populate. Select the required company from the drop-down list (click the Get All Databases button to refresh the list).

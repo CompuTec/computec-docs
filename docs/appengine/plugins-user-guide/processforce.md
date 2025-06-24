@@ -23,7 +23,7 @@ These jobs automatically perform Cost Roll-Up operations for selected items base
 2. Use the Perform the roll-up over structure checkbox to enable advanced options like batch-based calculations and BOM data saving.
 
 :::caution
-The four checkboxes on the Cost Roll-Up form (ranging from “Use final-goods’ batch[…]” to “Calculate and Save Costed BOM data”) become usable only after the Perform the roll-up over structure checkbox is selected. Although these options are visible in AppEngine even without selecting this checkbox in the AppEngine settings, they should still be utilized in alignment with the Perform the roll-up over structure configuration due to AppEngine limitations.
+The four checkboxes on the Cost Roll-Up form (ranging from “Use final-goods’ batch[…]” to “Calculate and Save Costed BOM data”) become usable only after the Perform the roll-up over structure checkbox is selected. Although these options are visible in CompuTec AppEngine even without selecting this checkbox in the CompuTec AppEngine settings, they should still be utilized in alignment with the Perform the roll-up over structure configuration due to CompuTec AppEngine limitations.
 :::
 
 ![ProcessForce](./media/processforce/pf-jobs.png)
@@ -122,7 +122,7 @@ You can configure three different automation of this kind by using these job var
         - PublisherApp = "SAPB1",
         - EventType = "SAPB1Object"
 
-    If this job is enabled, Batch Synchronization is handled by AppEngine. Otherwise, synchronization is managed by the CompuTec WMS service when using CompuTec WMS.
+    If this job is enabled, Batch Synchronization is handled by CompuTec AppEngine. Otherwise, synchronization is managed by the CompuTec WMS service when using CompuTec WMS.
 
     This job improves the performance and efficiency of both ProcessForce and CompuTec WMS by ensuring seamless and accurate batch data synchronization.
 
@@ -130,7 +130,7 @@ You can configure three different automation of this kind by using these job var
 
 **ManufacturingOrderWizardRecoverJob**
 
-On AppEngine startup, this job checks and processes unfinished Manufacturing Order Wizard tasks.
+On CompuTec AppEngine startup, this job checks and processes unfinished Manufacturing Order Wizard tasks.
 
 ---
 ProcessForce background jobs play a vital role in automating key operational tasks, reducing manual errors, and boosting performance. By activating and fine-tuning these jobs, businesses can streamline operations and focus on strategic priorities.

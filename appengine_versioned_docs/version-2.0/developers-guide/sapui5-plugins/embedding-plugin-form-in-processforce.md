@@ -4,11 +4,11 @@ sidebar_position: 7
 
 # Embedding Plugin Form in ProcessForce
 
-ProcessForce allows starting AppEngine Plugin directly inside SAP. This is done base on the manifest configuration of the Plugin. Base on this configuration new positions related to Plugins will appear inside SAP Menu. Opening such a position will open a new Form with a browser that will open the AppEngine launchpad and inside it navigate to the correct plugin.
+ProcessForce allows starting CompuTec AppEngine Plugin directly inside SAP. This is done base on the manifest configuration of the Plugin. Base on this configuration new positions related to Plugins will appear inside SAP Menu. Opening such a position will open a new Form with a browser that will open the CompuTec AppEngine launchpad and inside it navigate to the correct plugin.
 
-## ProcessForce AppEngine Connection Configuration
+## ProcessForce CompuTec AppEngine Connection Configuration
 
-To make it work, ProcessForce needs to connect to AppEngine. Connection configuration is described in the following article: [SAP Business One settings](../../../version-2.0/administrators-guide/configuration-and-administration/overview.md#sap-business-one-settings).
+To make it work, ProcessForce needs to connect to CompuTec AppEngine. Connection configuration is described in the following article: [SAP Business One settings](../../../version-2.0/administrators-guide/configuration-and-administration/overview.md#sap-business-one-settings).
 
 ## Plugin Configuration
 
@@ -22,7 +22,7 @@ Here, add a menu entry that leads to the Sales Orders list created in previous t
 2. Add new sapForm entry into ui.apps.sapForms array:
 
     - **uniqueId** – a unique form id, set this to firstplugin_salesorder
-    - **formMode** – a boolean, which says to open as rootView or as redirection. When opening a plugin inside a SAP Business One form, you should always set this to "false". This setting impacts the behavior of the AppEngine launchpad.
+    - **formMode** – a boolean, which says to open as rootView or as redirection. When opening a plugin inside a SAP Business One form, you should always set this to "false". This setting impacts the behavior of the CompuTec AppEngine launchpad.
     - **URL** – here, you can define the path pattern. It should match pattern inside our UI5 manifest.json sap.ui5.routing.routes configuration. In our example, we are using salesorders.
 
         ![Pattern Sales Order](./media/embedding-plugin-form-in-processforce/patern-salesorder.webp)
@@ -101,7 +101,7 @@ Here, add a menu entry that leads to the Sales Orders list created in previous t
 
 ## Results
 
-After rebuilding the solution and restarting AppEngine, it is necessary to restart SAP Business One. Ensure that your plugin is activated for the correct company.
+After rebuilding the solution and restarting CompuTec AppEngine, it is necessary to restart SAP Business One. Ensure that your plugin is activated for the correct company.
 
 Now, the menu entry is visible in SAP Menu:
 

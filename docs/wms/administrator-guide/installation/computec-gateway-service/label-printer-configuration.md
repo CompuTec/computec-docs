@@ -68,7 +68,7 @@ This document provides a step-by-step guide on configuring the CompuTec WeightSc
 
         ![Zebra Driver](./media/label-printers-configuration/zebra-driver.png)
 
-8. Now, we can save the configuration and make a test of the printer. Remember to put the web address (We must put the IP address or Machine name where AppEngine was installed).
+8. Now, we can save the configuration and make a test of the printer. Remember to put the web address (We must put the IP address or Machine name where CompuTec AppEngine was installed).
 
     ![Save Configuration](./media/label-printers-configuration/save-configuration.png)
 

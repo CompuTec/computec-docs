@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # SAPUI5 Plugin from Template Step-by-Step
 
-CompuTec AppEngine offers ready-to-use Visual Studio templates that make it easy to build plugins with a modern SAPUI5 front end and JavaScript logic. These templates accelerate development by providing a scaffolded solution tailored to the AppEngine ecosystem. This step-by-step guide walks you through the entire process - from installing the template and generating your plugin project, to configuring development mode for live UI changes and testing it on the AppEngine launchpad.
+CompuTec AppEngine offers ready-to-use Visual Studio templates that make it easy to build plugins with a modern SAPUI5 front end and JavaScript logic. These templates accelerate development by providing a scaffolded solution tailored to the CompuTec AppEngine ecosystem. This step-by-step guide walks you through the entire process - from installing the template and generating your plugin project, to configuring development mode for live UI changes and testing it on the CompuTec AppEngine launchpad.
 
 ---
 
@@ -17,7 +17,7 @@ Go to the following address: [https://www.nuget.org/packages?q=computec](https:/
 ### Adding
 
 :::note
-    The following example will use a template for the AppEngine plugin with UI5 and Javascript on the front end.
+    The following example will use a template for the CompuTec AppEngine plugin with UI5 and JavaScript on the front end.
 :::
 
 To install the package, go to Windows Terminal and run the following command:
@@ -49,7 +49,7 @@ Once the package is successfully installed, you can verify the list of available
 ## Visual Studio – Configure Project Build and Debug
 
 :::note
-    To run your plugin without completing the full installation process, AppEngine must be launched in DevMode. The configuration of AppEngine is described in the next steps of this tutorial.
+    To run your plugin without completing the full installation process, CompuTec AppEngine must be launched in DevMode. The configuration of CompuTec AppEngine is described in the next steps of this tutorial.
 :::
 
 1. To run your plugin, follow these steps:
@@ -60,16 +60,16 @@ Once the package is successfully installed, you can verify the list of available
     4. Under Start Action, select Start External Program and set up the path to CompuTec.AppEngine.Host.ConsoleApp.exe in the installation directory. In case of the default install, this file will be located in Program Files\CompuTec\CompuTec AppEngine\CompuTec.AppEngine.Host.ConsoleApp.exe
 
         ![Launch Profiles](./media/sapui5/launch-profiles.webp)
-    5. Make sure that AppEngine service is stopped. You can check this in System Services.
+    5. Make sure that CompuTec AppEngine service is stopped. You can check this in System Services.
 
         ![Services](./media/sapui5/app-engine-services.webp)
-    6. To prevent AppEngine from auto-starting with Windows, open its service properties and set the Startup type to Manual or Disabled.
+    6. To prevent CompuTec AppEngine from auto-starting with Windows, open its service properties and set the Startup type to Manual or Disabled.
 
         ![Start up](./media/sapui5/startup-type.webp)
 
 ## Configure UI5 Application File Mapping
 
-1. To make developers work more efficiently, AppEngine offers a Development Mode that allows you to set up a path to frontend files in the Plugins project. This enables instant visibility of changes made to frontend files without needing to rebuild the project. The required steps to achieve this are outlined below:
+1. To make developers work more efficiently, CompuTec AppEngine offers a Development Mode that allows you to set up a path to frontend files in the Plugins project. This enables instant visibility of changes made to frontend files without needing to rebuild the project. The required steps to achieve this are outlined below:
 
     1. Start CompuTec.AppEngine.Host.ConsoleApp.exe by debugging your plugin or from the command line. This first run will create separate configuration files for debug mode (in ProgramData\Computec\AppEngine):
 
@@ -81,7 +81,7 @@ Once the package is successfully installed, you can verify the list of available
 
         1. DevMode to True.
         2. UIDevMode to True.
-        3. In DevUIMapping, specify the path to the source code of your UI5 Application files as the following key-value pair: \<PluginId\>:\<PluginPath\>. Frontend files from this path will be used instead of files from the AppEngine plugins directory.
+        3. In DevUIMapping, specify the path to the source code of your UI5 Application files as the following key-value pair: \<PluginId\>:\<PluginPath\>. Frontend files from this path will be used instead of files from the CompuTec AppEngine plugins directory.
     5. A path mapping example:
 
             ```javascript
@@ -98,7 +98,7 @@ Once the package is successfully installed, you can verify the list of available
 
 ## Results
 
-1. After performing all these steps, your plugin should now be visible in the AppEngine Administration Panel.
+1. After performing all these steps, your plugin should now be visible in the CompuTec AppEngine Administration Panel.
 2. Open a browser and navigate to `http://localhost:54000/`. Click Administration Panel:
 
     ![Administration Panel](./media/sapui5/administration-panel.webp)

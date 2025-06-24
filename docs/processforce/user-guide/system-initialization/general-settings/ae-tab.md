@@ -2,6 +2,6 @@
 sidebar_position: 12
 ---
 
-# AppEngine tab
+# CompuTec AppEngine tab
 
-This tab contains AppEngine-related options. Click [here](/docs/appengine) to find out more.
+This tab contains CompuTec AppEngine-related options. Click [here](/docs/appengine) to find out more.

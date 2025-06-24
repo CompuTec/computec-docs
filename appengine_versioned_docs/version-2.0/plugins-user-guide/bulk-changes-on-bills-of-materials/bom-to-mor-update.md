@@ -10,7 +10,7 @@ Managing consistency between your Bill of Materials (BOM) and Manufacturing Orde
 
 ## Installation
 
-This feature is available through an AppEngine job that is automatically installed during the [BulkChange plugin installation](../bulk-changes-on-bills-of-materials/installation-and-configuration.md).
+This feature is available through an CompuTec AppEngine job that is automatically installed during the [BulkChange plugin installation](../bulk-changes-on-bills-of-materials/installation-and-configuration.md).
 
 To function properly:
 
@@ -20,7 +20,7 @@ To function properly:
 ## Configuration
 
 :::info Path
-AppEngine → Administration Panel → Plugins → CompuTec BulkChange Plugin → Settings
+CompuTec AppEngine → Administration Panel → Plugins → CompuTec BulkChange Plugin → Settings
 :::
 
 There are additional settings that allow to filter which related Manufacturing Order are to be updated. Set a true or false value to activate or deactivate any option. The default values are used when no System values are set by a user.

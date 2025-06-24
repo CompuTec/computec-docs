@@ -14,10 +14,10 @@ Plugin Installation is a process that associates a plugin with a specific compan
 
 ## Plugin Activation
 
-Plugin Activation involves associating a plugin with a company and an AppEngine instance. This association loads the plugin on the AppEngine server instance, allowing controllers and jobs to be hosted on this instance.
+Plugin Activation involves associating a plugin with a company and CompuTec AppEngine instance. This association loads the plugin on the CompuTec AppEngine server instance, allowing controllers and jobs to be hosted on this instance.
 
 :::note
-Only one version of a plugin can be activated on a single AppEngine instance at any given time.
+Only one version of a plugin can be activated on a single CompuTec AppEngine instance at any given time.
 :::
 
 The installation process, based on plugin dependencies, installed plugins, and activations, calculates the steps required to install the requested plugins. In the Installation screen, you can see a list of:
@@ -25,7 +25,7 @@ The installation process, based on plugin dependencies, installed plugins, and a
 ![Installation Screen](./media/plugins/update-install-plugin.png)
 
 - **Affected Companies** - A list of companies that are affected by the upgrade.
-- **Affected Plugins** - A list of plugins and versions that are installed or removed from a company, and/or activated or deactivated in the AppEngine.
+- **Affected Plugins** - A list of plugins and versions that are installed or removed from a company, and/or activated or deactivated in the CompuTec AppEngine.
 - **Install on this company** - By checking this checkbox, system will also install new version on the selected company .
 
 **When a plugin is shared across multiple companies**:

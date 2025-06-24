@@ -255,7 +255,7 @@ toc_max_heading_level: 2
 | --- | --- | --- | --- |
 | Improvement | Management Board | Item Code available when assigning Tasks in Management Board | – |
 | Bug | Configuration | CompuTec PDC Settings: all of the Resource are available to use in CompuTec PDC despite the fact of narrowing it down to one by Resource Code setting | – |
-| Bug | General | Cannot create any Time Booking after logging in using a barcode (without connection to AppEngine) | – |
+| Bug | General | Cannot create any Time Booking after logging in using a barcode (without connection to CompuTec AppEngine) | – |
 
 ---
 
@@ -291,7 +291,7 @@ toc_max_heading_level: 2
 | Improvement | Configuration | Japanese language version introduced | – |
 | Improvement | Tasks | Teams: Employees have a line with Run Time added on a Task when Team Leader adds a Team to a Task | – |
 | Bug | Tasks | I/O Bind Properties not supported | – |
-| Bug | Configuration | The application crashes upon AppEngine reconnection (based on the session expiration setting) | – |
+| Bug | Configuration | The application crashes upon CompuTec AppEngine reconnection (based on the session expiration setting) | – |
 | Bug | SAP | Time is booked for a Machine-type Resource instead of a Labor-type Resource when the Time Booking is performed by a Team Leader in specific cases | – |
 | Bug | Tasks, Time Booking | Time is booked for a Machine-type Resource instead of a Labor-type Resource in specific cases | - |
 
@@ -339,10 +339,10 @@ toc_max_heading_level: 2
 
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
-| Improvement | Install | Changes in the Settings form based on a new way of connecting to AppEngine | – |
+| Improvement | Install | Changes in the Settings form based on a new way of connecting to CompuTec AppEngine | – |
 | Bug | Barcodes | Log in to CompuTec PDC by using a barcode does not work | – |
 | Bug | Install | incorrect display of the elements on About CompuTec PDC form (lack of some of the information) | – |
-| Bug | Install | No compatibility of the CompuTec PDC plugin with older AppEngine version (1.93.7.131) | – |
+| Bug | Install | No compatibility of the CompuTec PDC plugin with older CompuTec AppEngine version (1.93.7.131) | – |
 | Bug | Pick and Pack | Incorrect Items displayed as Substitute Items in CompuTec PDC | SPDC-442 |
 | Bug | Pick and Pack | An error occurs upon attempts to perform Issue to production in specific cases | – |
 | Bug | Tasks | Issue to Production: an error occurs upon attempts to perform an Issue when one of the field in 'Selected Quantity' column is set to 0 and 'Auto Select' option chosen | - |
@@ -394,7 +394,7 @@ toc_max_heading_level: 2
 | Bug | Labels | Label Print error upon performing Pick Receipt in CompuTec PDC. | 3.93.13.1 <br/>(3.10.2.0) | SPDC-397 |
 | Bug | Other | Auto log out option: some actions are not registered on touchscreen devices which leads to auto log out regardless of activity. | 3.93.13.1 (3.10.2.0), <br/>2.93.13.1 (2.10.2.0) | SPDC-393 |
 | Improvement | Pick and Pack | Weight Wizard: choosing Items by sequence number added. | 3.93.13.1 (3.10.2.0), <br/>2.93.13.1 (2.10.2.0) | SPDC-343 |
-| Bug | Configuration | An error occurs upon changing Windows Language Preferences and running CompuTec PDC Plug-in application (the error also occurs when AppEngine is installed on server other than CompuTec PDC and the servers have different Language Preferences set). <br/>Error message: <blockquote>Not Connected Current version of CompuTec PDC is to low</blockquote> | 3.93.13.1 (3.10.2.0) | SPDC-389 |
+| Bug | Configuration | An error occurs upon changing Windows Language Preferences and running CompuTec PDC Plug-in application (the error also occurs when CompuTec AppEngine is installed on server other than CompuTec PDC and the servers have different Language Preferences set). <br/>Error message: <blockquote>Not Connected Current version of CompuTec PDC is to low</blockquote> | 3.93.13.1 (3.10.2.0) | SPDC-389 |
 | Bug | Tasks | Application settings: turning on Single Resource option causes an error upon adding a Task and clicking By Resource tab. Also, all Resources are available anyway. | 3.93.13.1 (3.10.2.0) | SPDC-390 |
 | Bug | SAP | Cannot record Down Time without choosing a Technician. | 3.93.13.1 (3.10.2.0) | SKEAD-2513 |
 | Bug | Tasks | Task Panel: clicking one of the lines (Set up, Run, Down Time) not always opens a related Confirmation Panel on the line. | 3.93.13.1 (3.10.2.0) | |
@@ -414,7 +414,7 @@ toc_max_heading_level: 2
 | Bug | Configuration | Cannot save Customization changes in CompuTec AppEngine plugin version | 3.93.12.1 (3.10.1.0) | SPDC-373 |
 | Bug | Configuration, Tasks | Resources with specific characters in its name, e.g. '/', '(', not supported | 3.93.12.1 (3.10.1.0) | - |
 | Improvement | Pick and Pack | Items managed by Serial Numbers are now supported in Pick Receipt and Pick Order | 3.93.12.1 (3.10.1.0) | - |
-| Improvement | Management Board | Management Board: performance improvements in AppEngine plug-in version (previously opening of the Board took a long time and took longer with every next opening) | 3.93.12.1 (3.10.1.0) | - |
+| Improvement | Management Board | Management Board: performance improvements in CompuTec AppEngine plug-in version (previously opening of the Board took a long time and took longer with every next opening) | 3.93.12.1 (3.10.1.0) | - |
 | Bug | Pick and Pack | Cannot create Goods Receipt for Items that is not managed either by Serial Numbers, or Batches | 2.93.12.1 (2.10.1.0), <br/>3.93.12.1 (3.10.1.0) | - |
 | Bug | Configuration | CompuTec PDC Settings: all of the Resource are available to use in CompuTec PDC despite the fact of narrowing it down to one by Resource Code setting | 2.93.12.1 (2.10.1.0), <br/>3.93.12.1 (3.10.1.0) | SPDC-278 |
 | Improvement | Pick and Pack | New block barcode prefix supported: Sequence + Operation (for identifying an Operation if there the operation is present on a Manufacturing Order more than once) | 2.93.12.1 (2.10.1.0), <br/>3.93.12.1 (3.10.1.0) | - |

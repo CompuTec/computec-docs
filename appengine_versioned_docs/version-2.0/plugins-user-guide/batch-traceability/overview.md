@@ -14,9 +14,9 @@ Watch the Guided Tour of [Batch Traceability](https://youtu.be/ZHUswSIKTu0)
 
 Ensure that ProcessForce and the CompuTec License Server are properly installed and configured. For guidance, refer to the [overview](https://learn.computec.one/docs/processforce/administrator-guide/licensing/license-server/overview).
 
-### AppEngine and Plug-in Installation and Configuration
+### CompuTec AppEngine and Plug-in Installation and Configuration
 
-- For AppEngine installation please follow this link: [Installation](../../administrators-guide/installation.md)
+- For CompuTec AppEngine installation please follow this link: [Installation](../../administrators-guide/installation.md)
 - For Plug-in installation please follow this link: [Configuration and Administration](../../administrators-guide/configuration-and-administration/overview.md).
 
 ### ProcessForce
@@ -29,13 +29,13 @@ To do this, check the following checkbox:
 
 ![Batch Traceability 360](./media/overview/bt360-image2020-1-18-8-33-41-720.png)
 
-Enter AppEngine url, e.g. `http://{host}:54000`, click "Update" and restart SAP Business One.
+Enter CompuTec AppEngine url, e.g. `http://{host}:54000`, click "Update" and restart SAP Business One.
 
 ## Start Points for Function Opening
 
 You can reach ProcessForce Batch Traceability 360 by:
 
-- AppEngine launchpad
+- CompuTec AppEngine launchpad
 - Modules Menu (check the path below)
 
 :::info Path

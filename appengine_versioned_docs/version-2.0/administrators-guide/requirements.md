@@ -7,11 +7,11 @@ sidebar_position: 1
 CompuTec AppEngine is a powerful tool designed to enhance SAP Business One functionality. To ensure a smooth installation and optimal performance, it's essential to meet specific system requirements and complete necessary pre-installation steps.
 
 :::warning
-AppEngine 2.0 does not support Identity Provider (IdP) setup.
+CompuTec AppEngine 2.0 does not support Identity Provider (IdP) setup.
 :::
 
 :::note
-    CompuTec AppEngine requires **.NET** Framework to work correctly. The version of the .NET Framework supported by AppEngine is **4.7**.
+    CompuTec AppEngine requires **.NET** Framework to work correctly. The version of the .NET Framework supported by CompuTec AppEngine is **4.7**.
 
 <details>
 <summary>Click to see how to check .NET Framework version</summary>

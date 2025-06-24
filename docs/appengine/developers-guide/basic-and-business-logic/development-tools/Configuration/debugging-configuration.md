@@ -49,7 +49,7 @@ The `DevelopmentConfiguration` section is crucial for debugging plugins. When en
 
 ### Requirements
 
-- Ensure the company is activated in AppEngine.
+- Ensure the company is activated in CompuTec AppEngine.
 - Install the `CompuTec.Start` add-on. By default, it is located at:
   `C:\Program Files\sap\SAP Business One\AddOns\CT\CompuTec.Start\X64Client\`
 
@@ -97,12 +97,12 @@ The `DevelopmentConfiguration` section is crucial for debugging plugins. When en
 
 ---
 
-## Debugging AppEngine
+## Debugging CompuTec AppEngine
 
-### Steps to Prepare AppEngine for Debugging
+### Steps to Prepare CompuTec AppEngine for Debugging
 
-1. Stop the AppEngine service.
-2. Navigate to the AppEngine directory:
+1. Stop the CompuTec AppEngine service.
+2. Navigate to the CompuTec AppEngine directory:
    `C:\Program Files\CompuTec AppEngine`
 3. Edit the `DevApp.template` file:
     - Specify the database connection string.
@@ -133,7 +133,7 @@ The `DevelopmentConfiguration` section is crucial for debugging plugins. When en
 
 ---
 
-## Debugging Web Plugins with AppEngine
+## Debugging Web Plugins with CompuTec AppEngine
 
 Prepare a `launchSettings.json` file for debugging web plugins.
 
@@ -181,4 +181,4 @@ Prepare a `launchSettings.json` file for debugging web plugins.
 ```
 
 ---
-The Dev.config file in the CompuTec.Core framework is a powerful tool for customizing and debugging SAP Business One plugins. By correctly configuring logging, enabling development mode, and preparing AppEngine for debugging, developers can streamline their workflows and ensure smooth plugin integration. With this guide, you are equipped to configure, debug, and deploy your solutions efficiently.
+The Dev.config file in the CompuTec.Core framework is a powerful tool for customizing and debugging SAP Business One plugins. By correctly configuring logging, enabling development mode, and preparing CompuTec AppEngine for debugging, developers can streamline their workflows and ensure smooth plugin integration. With this guide, you are equipped to configure, debug, and deploy your solutions efficiently.

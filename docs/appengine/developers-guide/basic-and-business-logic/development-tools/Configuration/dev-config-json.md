@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Plugin Development Configuration
 
-This file descripe the plugin development configuration and its dependent plugins. so for example when we want to debug the plugin in AppEngine we prepare a AE dev.configuration  file that will list all paths to plugins that must be loaded this path must lead to the  dev.config.json.
+This file describe the plugin development configuration and its dependent plugins. so for example when we want to debug the plugin in CompuTec AppEngine we prepare a AE dev.configuration  file that will list all paths to plugins that must be loaded this path must lead to the  dev.config.json.
 
 ---
 

@@ -7,12 +7,12 @@ sidebar_position: 1
 The CompuTec AppEngine is a robust solution designed to enhance your SAP Business One environment. To ensure a smooth installation and optimal performance, it is critical to meet specific system requirements and prerequisites. This guide provides an overview of the necessary components and preparatory steps before installing CompuTec AppEngine version 3.0.
 
 :::note
-    CompuTec AppEngine requires **.NET** to work correctly. The version of the .NET supported by AppEngine is **8.0.4 or higher**.
+    CompuTec AppEngine requires **.NET** to work correctly. The version of the .NET supported by CompuTec AppEngine is **8.0.4 or higher**.
 :::
 
 ## Prerequisites
 
-### For AppEngine
+### For CompuTec AppEngine
 
 - **ASP.NET Core Runtime** - Minimum required version: 8.0.4.
 - **Database** - If using SAP HANA, ensure that your HANA version is at least HANA Enterprise Edition 2.0 SPS 05, Revision 059.09 (minimal version - 2.17.22).

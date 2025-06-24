@@ -23,7 +23,7 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 | Issue Type | Component/s | Release Note |
 | --- | --- | --- |
 | Bug | MRP 2.5 | MRP Relations Map not functioning correctly - Code (Guid) in OMRC and MRC1 tables is incorrectly replaced by DataContext |
-| Bug | API, AppEngine | Missing API call "api/ProcessForce/CreateAdjustment" for rolling back Goods Issue; SAP also fails with "Object reference not set to an instance of an object" error. |
+| Bug | API, CompuTec AppEngine | Missing API call "api/ProcessForce/CreateAdjustment" for rolling back Goods Issue; SAP also fails with "Object reference not set to an instance of an object" error. |
 | Bug | Bin Locations | Pick Receipt fails with error "Bin allocation is not completed for Item Code: '4155046212544AA' and Row Number: '1'". |
 | Bug | Manufacturing Order | Time taken to load the list of items in Manufacturing Order - add mode is more |
 | Improvement | Performance, Production Costing | Improved performance of CT_PF_CostingDataForItemProc by optimizing query execution and reducing load time |
@@ -36,12 +36,12 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 | Bug | AE WebClient | Issue occurs in PDC when OIDC is disabled |
 | Bug | AE Core | Delete option next to server is not functional |
 | Bug | MRP | Due Date Filter in Order Recommendation is not functioning; Error Message: "this. DueDateForm.setHours is not a function." |
-| Bug | AE Core | Issues with plugin upgrade in AppEngine - no error is displayed in the UI despite failure |
+| Bug | AE Core | Issues with plugin upgrade in CompuTec AppEngine - no error is displayed in the UI despite failure |
 | Bug | WebAPI | Incorrect error message during API calls – receiving 500 response with "Object reference not set to an instance of an object." |
 | Bug | AE Core | Incorrect order of deactivating and deleting plugins for MRP |
 | Bug | AE WebClient | SAP OIDC missing under "Required CSP Entries for WebClient" |
 | Bug | AE Installer | SAP OIDC was not listed under the "Required CSP Entries for WebClient" |
-| Bug | AE Installer | Setup fails when external address is not accessible from the AppEngine server itself |
+| Bug | AE Installer | Setup fails when external address is not accessible from the CompuTec AppEngine server itself |
 | Improvement | WMS Plugin | Enable matching of Storage Category to the corresponding rule for better accuracy and control |
 
 ## CompuTec.ProcessForce 3.2505.3
@@ -72,11 +72,11 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 | Bug | PFI | Missing Translation of addDefaultLinesLabel in PFI |
 | Bug | Synchronization | Users encounter the error message "Cannot release lock for key UI_Token, current key is" during operations. Additionally, many MOs (Manufacturing Orders) show a status of "Error" without any accompanying error message, despite successful synchronization |
 | Improvement | PFI | Provide possibility to explicitly mention "Withdefaults" in PFI |
-| Bug | MRP 2.5 | Forecast Changes require AppEngine Restart to reflect Updates |
+| Bug | MRP 2.5 | Forecast Changes require CompuTec AppEngine Restart to reflect Updates |
 | Bug | Bill of Materials | BOM Component UoM (BOM1.Uom) Not Updated After Base Item (OITM) UoM Change |
 | Bug | MRP 2.5 | When using Forecast version 2.5, the system occasionally encounters a critical error which causes SAP to become unresponsive/inactive |
 | Bug | PDC | When performing an Issue for Production transaction, users are encountering a Bin Allocation error |
-| Bug | MRP 2.5 |  isues reported with the calculation of cumulative lead times |
+| Bug | MRP 2.5 |  issues reported with the calculation of cumulative lead times |
 | Bug | AE Administration Panel, AE Installer | Empty Administrator Panel in CompuTec.AppEngine 3.2505.1-rc-01 |
 | Bug | Cost Accounting | Error message occurred when executing a rollup operation: "Object reference not set to an instance of an object." |
 | Bug | Scheduling | "+" and "−" Buttons not working in Divide Function – Resource Planning Panel |
@@ -117,5 +117,5 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 | Bug | API | Installation fails with the error "InstallException: Installing Procedure named CT_LogMorSynchronizationError failed" |
 | Bug | Quality Control | ItemName is not copied to the duplicated test protocol during add mode |
 | Improvement | Synchronization | Add a window displaying the list of Manufacturing Orders (MORs) to be synchronized during the Restore → Synchronize Manufacturing Orders process |
-| Bug | AppEngine | Forecast import through PFI fails with the error "Revision for row 1 is not assigned." due to missing or invalid revision assignment during validation |
+| Bug | CompuTec AppEngine | Forecast import through PFI fails with the error "Revision for row 1 is not assigned." due to missing or invalid revision assignment during validation |
 | Improvement | UI | Add MO DocNum as a visible column in the 'Available to Promise' form for all listed entries to improve traceability and reference |

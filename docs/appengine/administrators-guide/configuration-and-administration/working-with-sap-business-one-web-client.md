@@ -4,7 +4,7 @@ sidebar_position: 9
 
 # Working with SAP Business One Web Client
 
-The CompuTec Web Client Start is an essential tool for integrating plugins and extending the functionality of the SAP Business One Web Client. It enables seamless interaction between AppEngine plugins and SAP Business One solutions, offering users enhanced capabilities for managing their ERP system. The CompuTec Web Client Start is installed during company activation.
+The CompuTec Web Client Start is an essential tool for integrating plugins and extending the functionality of the SAP Business One Web Client. It enables seamless interaction between CompuTec AppEngine plugins and SAP Business One solutions, offering users enhanced capabilities for managing their ERP system. The CompuTec Web Client Start is installed during company activation.
 
 ---
 
@@ -14,7 +14,7 @@ The Plugins Pack is a WebClientExtension with the collection of plugins that are
 
 **Steps to install the Plugins Pack**:
 
-1. Log into the AppEngine Administration Panel.
+1. Log into the CompuTec AppEngine Administration Panel.
 
     ![Admin Login](./media/working-with-sap-business-one-web-client/admin-login.webp)
 2. Navigate to configuration, then select Company Details by clicking on the respective company.

@@ -4,17 +4,17 @@ sidebar_position: 5
 
 # Background Processing
 
-Background processing in AppEngine is a crucial mechanism that automates tasks and processes, ensuring that critical operations are executed efficiently without manual intervention. This process is driven by a series of triggers and tasks, which can range from simple data updates to complex workflows involving external systems.
+Background processing in CompuTec AppEngine is a crucial mechanism that automates tasks and processes, ensuring that critical operations are executed efficiently without manual intervention. This process is driven by a series of triggers and tasks, which can range from simple data updates to complex workflows involving external systems.
 
 ## The Role of Jobs and Logic
 
-At the core of background processing are jobs, each of which is governed by specific logic. These jobs can perform a variety of functions, such as adding data within SAP Business One, interacting with external systems, or executing predefined workflows. The flexibility of this system is immense — essentially, the only limit to what these tasks can accomplish is the code written to define them. A single plugin within AppEngine can contain numerous jobs, each designed to handle different aspects of the background process.
+At the core of background processing are jobs, each of which is governed by specific logic. These jobs can perform a variety of functions, such as adding data within SAP Business One, interacting with external systems, or executing predefined workflows. The flexibility of this system is immense — essentially, the only limit to what these tasks can accomplish is the code written to define them. A single plugin within CompuTec AppEngine can contain numerous jobs, each designed to handle different aspects of the background process.
 
 ![Background Processing](./media/background-processing/background-processing.png)
 
 ## Trigger Types
 
-To initiate these jobs, the AppEngine relies on three primary types of triggers: event, time, and manual.
+To initiate these jobs, CompuTec AppEngine relies on three primary types of triggers: event, time, and manual.
 
 ![Trigger Types](./media/background-processing/trigger-types.png)
 

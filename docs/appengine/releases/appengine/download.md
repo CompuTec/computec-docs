@@ -7,7 +7,7 @@ import ReleaseInfo from '@site/src/components/ReleaseInfo';
 # Download
 
 :::caution
-    After upgrade from any 1.00/2.00 version, please use the Empty Cache and Hard Reload option in the browser on which you use AppEngine.
+    After upgrade from any 1.00/2.00 version, please use the Empty Cache and Hard Reload option in the browser on which you use CompuTec AppEngine.
 :::
 
 <ReleaseInfo name="CompuTec AppEngine" url="https://download.computec.one/software/appengine/releases.json" />

@@ -16,11 +16,11 @@ To know more about CompuTec PFI, Click [here](https://www.youtube.com/watch?v=MS
 Before using PFI, ensure the following:
 
 1. The ProcessForce plugin is installed and enabled for the relevant company.
-2. If a new UDF (User-Defined Field) is added to a ProcessForce object, restart the AppEngine service to reflect the changes in PFI templates.
+2. If a new UDF (User-Defined Field) is added to a ProcessForce object, restart the CompuTec AppEngine service to reflect the changes in PFI templates.
 
 ### Installation
 
-For detailed instructions on installing the AppEngine plugin, click [here](../administrators-guide/configuration-and-administration/plugins/overview.md).
+For detailed instructions on installing the CompuTec AppEngine plugin, click [here](../administrators-guide/configuration-and-administration/plugins/overview.md).
 
 ## Usage
 

@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Working with SAP Business One Web Client
 
-SAP Business One Web Client provides a modern, browser-based interface that enhances the user experience and streamlines business operations. This guide outlines the configuration steps necessary to integrate AppEngine plugins within the Web Client, ensuring seamless functionality and performance.
+SAP Business One Web Client provides a modern, browser-based interface that enhances the user experience and streamlines business operations. This guide outlines the configuration steps necessary to integrate CompuTec AppEngine plugins within the Web Client, ensuring seamless functionality and performance.
 
 ---
 
@@ -12,17 +12,17 @@ SAP Business One Web Client provides a modern, browser-based interface that enha
 
 ### External Host Address
 
-To establish communication between the Web Client and the AppEngine installation, the external host address must be configured correctly.
+To establish communication between the Web Client and the CompuTec AppEngine installation, the external host address must be configured correctly.
 
 :::info Path
     Administration Panel → Settings → General → Hosting → HttpsPorts
 :::
 
-The Web Client relies on an HTTPS address to connect to the AppEngine. By default, it is set to localhost with a predefined port. If a different address is used, it must be updated accordingly.
+The Web Client relies on an HTTPS address to connect to the CompuTec AppEngine. By default, it is set to localhost with a predefined port. If a different address is used, it must be updated accordingly.
 
 ![External Host](./media/working-with-sap-business-one-web-client/external-host-address.webp)
 
-Additionally, the Web Client stores this address in an AppEngine configuration table within the database. If the AppEngine installation is upgraded to version 2.0.7.0, you must activate a Company or deactivate and reactivate it via SLD Servers → Companies.
+Additionally, the Web Client stores this address in an CompuTec AppEngine configuration table within the database. If the CompuTec AppEngine installation is upgraded to version 2.0.7.0, you must activate a Company or deactivate and reactivate it via SLD Servers → Companies.
 
 ![Activate Database](./media/working-with-sap-business-one-web-client/ae-activate-database.webp)
 

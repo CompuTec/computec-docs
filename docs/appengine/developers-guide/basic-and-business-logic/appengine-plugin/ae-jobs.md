@@ -2,13 +2,13 @@
 sidebar_position: 4
 ---
 
-# AppEngine Jobs
+# CompuTec AppEngine Jobs
 
-Jobs are tasks that execute within the AppEngine environment, designed to automate processes within SAP Business One plugins. They may connect to a company's SAP database, a customer database (via ADO), or operate without a connection. This guide provides an overview of creating, configuring, and executing Jobs within the AppEngine.
+Jobs are tasks that execute within the CompuTec AppEngine environment, designed to automate processes within SAP Business One plugins. They may connect to a company's SAP database, a customer database (via ADO), or operate without a connection. This guide provides an overview of creating, configuring, and executing Jobs within CompuTec AppEngine.
 
 ---
 
-## Types of Jobs in AppEngine
+## Types of Jobs in CompuTec AppEngine
 
 ### Event-Based Jobs
 
@@ -69,4 +69,3 @@ public class ScheduledJob2 : EventBusSecureJob
 ```
 
 ---
-AppEngine Jobs for SAP Business One plugins offer a robust framework to streamline and automate critical processes within your business. This guide serves as a comprehensive introduction to implementing Jobs in AppEngine, empowering you to take full advantage of its automation capabilities.

@@ -4,7 +4,7 @@ sidebar_position: 17
 
 # Plugin Templates
 
-AppEngine plugin templates help streamline the development of custom plugins by providing pre-configured, ready-to-use project structures. Whether you're building a backend-only plugin or one with a UI5-based frontend, these templates act as a solid starting point—saving time and enforcing consistency.
+CompuTec AppEngine plugin templates help streamline the development of custom plugins by providing pre-configured, ready-to-use project structures. Whether you're building a backend-only plugin or one with a UI5-based frontend, these templates act as a solid starting point—saving time and enforcing consistency.
 
 ---
 
@@ -14,7 +14,7 @@ Navigate to the following address: [https://www.nuget.org/packages?q=computec](h
 
 ## Usage
 
-In this example, we'll use a template designed for an AppEngine plugin that includes a UI5 frontend with JavaScript.
+In this example, we'll use a template designed for an CompuTec AppEngine plugin that includes a UI5 frontend with JavaScript.
 
 Open Windows Terminal and run the following command to install the templates:
 

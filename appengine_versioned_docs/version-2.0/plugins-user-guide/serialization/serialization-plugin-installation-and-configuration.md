@@ -7,7 +7,7 @@ sidebar_position: 2
 The Serialization Plugin is a powerful extension that enhances traceability and compliance by enabling detailed serialization workflows within CompuTec WMS and ProcessForce. To ensure a successful deployment and seamless functionality, follow this guide, which outlines both the standard installation process and additional steps specific to Serialization Plugin setup.
 
 :::info
-The standard plugin installation and configuration is described in the AppEngine documentation [here](../../administrators-guide/configuration-and-administration/overview.md).
+The standard plugin installation and configuration is described in the CompuTec AppEngine documentation [here](../../administrators-guide/configuration-and-administration/overview.md).
 :::
 
 >**Note**: Please remember to install versions of the components according to the version table available [here](../../releases/appengine/download.md).
@@ -25,13 +25,13 @@ For details, click [here](/docs/processforce/administrator-guide/licensing/licen
         - For installation please follow this link: [Installation](/docs/wms/administrator-guide/installation/overview/).
         - For configuration please follow this link: [Custom Configuration](/docs/wms/administrator-guide/custom-configuration/overview/).
 
-## AppEngine and Serialization Plugin Installation and Configuration
+## CompuTec AppEngine and Serialization Plugin Installation and Configuration
 
-For AppEngine installation please follow this link: [Installation](../../administrators-guide/installation.md).
+For CompuTec AppEngine installation please follow this link: [Installation](../../administrators-guide/installation.md).
 
 For plugin installation please follow this link: [Configuration and Administration](../../administrators-guide/configuration-and-administration/overview.md).
 
->**Important**: After updating the Serialization Plugin and restarting AppEngine, make sure to update the schema according to the documented procedure to apply changes correctly.
+>**Important**: After updating the Serialization Plugin and restarting CompuTec AppEngine, make sure to update the schema according to the documented procedure to apply changes correctly.
 
 ## Enabling Serialization
 
@@ -61,6 +61,6 @@ To do this, check the following checkbox:
 
 ![Serialization Plugin (from inside the ProcessForce)](./media/serialization/image2020-1-18-8-33-41.png)
 
-Enter AppEngine URL, e.g. `http://{host}:54000`, click "Update" and restart SAP Business One to apply the changes.
+Enter CompuTec AppEngine URL, e.g. `http://{host}:54000`, click "Update" and restart SAP Business One to apply the changes.
 
 ---

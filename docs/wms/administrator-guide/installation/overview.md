@@ -67,7 +67,7 @@ Learn how to install the WMS Client [here](../../administrator-guide/installatio
 
 **b. WMS Server**
 
-    - Enter the address of the AppEngine server, and provide the username and password for the SAP Business One system.
+    - Enter the address of the CompuTec AppEngine server, and provide the username and password for the SAP Business One system.
 
         ![WMS Settings](./media/overview/wms-settings.png)
     
@@ -117,13 +117,13 @@ Learn how to install the WMS Client [here](../../administrator-guide/installatio
 
     ![WMS Server](./media/overview/service-manager.webp)
 
-- Only databases configured in AppEngine will be visible.
+- Only databases configured in CompuTec AppEngine will be visible.
 
     ![Data Config](./media/overview/data-config.png)
 
     ![Database Name](./media/overview/database-name.png)
 
-- Installation of WMS objects has now been moved to AppEngine under WMS.BusinessLogic.
+- Installation of WMS objects has now been moved to CompuTec AppEngine under WMS.BusinessLogic.
 
     ![WMS Business Logic](./media/overview/wms-business-logic-01.png)
 
@@ -135,7 +135,7 @@ Learn how to install the WMS Client [here](../../administrator-guide/installatio
 
     ![Login](./media/overview/login.png)
 
-- Verify AppEngine connection by checking the connectivity to the AppEngine server and confirm the accuracy of the data entered in the WMS Server configuration.
+- Verify CompuTec AppEngine connection by checking the connectivity to the CompuTec AppEngine server and confirm the accuracy of the data entered in the WMS Server configuration.
 
     ![Connection](./media/overview/connection.png)
 
@@ -143,11 +143,11 @@ Learn how to install the WMS Client [here](../../administrator-guide/installatio
 
     ![PF API](./media/overview/pf-api-version.png)
 
-- Verify that the installed WMS version is compatible or update it directly via AppEngine.
+- Verify that the installed WMS version is compatible or update it directly via CompuTec AppEngine.
 
     ![WMS Version](./media/overview/install-wms.png)
 
-- If WMS.BusinessLogic is not linked to the selected database, assign it and ensure the correct AppEngine instance is chosen.
+- If WMS.BusinessLogic is not linked to the selected database, assign it and ensure the correct CompuTec AppEngine instance is chosen.
 
     ![WMS Business Logic](./media/overview/wms-business-logic.png)
 

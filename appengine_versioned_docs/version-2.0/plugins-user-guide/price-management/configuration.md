@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Configuration
 
-Configuration settings are accessible in the Administration Panel, which is available to selected users through the AppEngine. These settings enable you to define specific functionalities for the plugin.
+Configuration settings are accessible in the Administration Panel, which is available to selected users through CompuTec AppEngine. These settings enable you to define specific functionalities for the plugin.
 
     ![Configuration](./media/pm-02.png)
 

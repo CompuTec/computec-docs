@@ -18,7 +18,7 @@ Click [here](https://www.youtube.com/watch?v=qXK2dS_9z3g) for a video demonstrat
 
 ## Access
 
-After logging in to AppEngine, you can reach the option by clicking the icon in the upper-right corner of the window:
+After logging in to CompuTec AppEngine, you can reach the option by clicking the icon in the upper-right corner of the window:
 
 ![Access](./media/overview/analytical-page.png)
 

@@ -53,7 +53,7 @@ This fix was implemented in version 5.10.2.9 but not included in versions 5.11.0
         - Time out has expired and the operation has not been completed. Error while restarting a service.
         - Cannot start service CompuTec AppEngine on computer. Error while starting a service.
 
-- The address of AppEngine configuration file, which is used when clicking Settings button for CompuTec AppEngine service in CompuTec Service Manager, has been corrected for the one used in AppEngine from 2.0 version.
+- The address of CompuTec AppEngine configuration file, which is used when clicking Settings button for CompuTec AppEngine service in CompuTec Service Manager, has been corrected for the one used in CompuTec AppEngine from 2.0 version.
 
     **Error Message**
         - There has been an error accessing the configuration file. The system cannot find the file specified.

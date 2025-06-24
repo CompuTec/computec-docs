@@ -6,15 +6,15 @@ The Early Access Program is designed for partners who wish to contribute to pre-
 
 Before enabling the Early Access configuration, ensure the following:
 
-- Download and install the latest [AppEngine](https://learn.computec.one/docs/appengine/releases/appengine/download).
-- Follow the installation steps provided in the [AppEngine Installation Guide](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation).
+- Download and install the latest [CompuTec AppEngine](https://learn.computec.one/docs/appengine/releases/appengine/download).
+- Follow the installation steps provided in the [CompuTec AppEngine Installation Guide](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation).
 - The installation steps for the CompuTec WMS server can be found [here](https://learn.computec.one/docs/wms/administrator-guide/installation/overview).
 
-### How to Enable Early Access Plugins in AppEngine Store
+### How to Enable Early Access Plugins in CompuTec AppEngine Store
 
 In the Administration Panel, navigate to Configuration -> Advanced Configuration. In the Plugin Repository Tab, enable the repository with the address: `https://pkgs.dev.azure.com/computec-one/development/_packaging/dev/nuget/v3/index.json`.
 
-Create a file named `CtNugetConfig.config` with the content provided below, replacing APIKEY with your API key. Save this file in the AppEngine Installation Directory at C:\Program Files\CompuTec\AppEngine\.
+Create a file named `CtNugetConfig.config` with the content provided below, replacing APIKEY with your API key. Save this file in CompuTec AppEngine Installation Directory at C:\Program Files\CompuTec\AppEngine\.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

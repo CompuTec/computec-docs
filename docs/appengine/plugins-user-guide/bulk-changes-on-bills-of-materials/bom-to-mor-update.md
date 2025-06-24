@@ -10,7 +10,7 @@ This function allows propagating changes made on a particular Bill of Materials 
 
 ## Installation
 
-This feature is built on an AppEngine job, which is automatically installed during the [BulkChange plugin installation](../bulk-changes-on-bills-of-materials/installation-and-configuration.md). o enable the BOM to MOR update, ensure:
+This feature is built on CompuTec AppEngine job, which is automatically installed during the [BulkChange plugin installation](../bulk-changes-on-bills-of-materials/installation-and-configuration.md). o enable the BOM to MOR update, ensure:
     - Send Events Job is active for a specific company. Click [here](../../administrators-guide/configuration-and-administration/configuration.md) to find out more.
     - Background processing is configured for the specific company.
 
@@ -19,7 +19,7 @@ This feature is built on an AppEngine job, which is automatically installed duri
 To configure the BOM to MOR Update functionality, follow the path:
 
 :::info Path
-AppEngine → Administration Panel → Plugins → CompuTec BulkChange Plugin → Settings
+CompuTec AppEngine → Administration Panel → Plugins → CompuTec BulkChange Plugin → Settings
 :::
 
 There are additional settings that allow to filter which related Manufacturing Order are to be updated. Set a true or false value to activate or deactivate any option. The default values are used when no System values are set by a user.

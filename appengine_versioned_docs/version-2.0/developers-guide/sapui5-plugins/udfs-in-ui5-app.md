@@ -10,11 +10,11 @@ In this section, we’ll focus on enhancing the frontend of our UI5 application 
 
 ## Prerequisites
 
-Example User [Defined Object (UDO) in AppEngine Plugin Project](./udo-in-appengine-plugin.md) completed.
+Example User [Defined Object (UDO) in CompuTec AppEngine Plugin Project](./udo-in-appengine-plugin.md) completed.
 
 ## Description
 
-After generating controllers, models, and serializers in User Defined Object (UDO) in AppEngine Plugin Project we will now adjust the ToDo view and controller on the frontend.
+After generating controllers, models, and serializers in User Defined Object (UDO) in CompuTec AppEngine Plugin Project we will now adjust the ToDo view and controller on the frontend.
 
 ### Fixing Binding in ToDo.view.xml
 

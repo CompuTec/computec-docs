@@ -6,15 +6,15 @@ Program wczesnego dostępu jest przeznaczony dla partnerów, którzy chcą przyc
 
 Przed włączeniem konfiguracji wczesnego dostępu należy wykonać następujące czynności:
 
-- Pobierz i zainstaluj najnowszą wersję [AppEngine](https://learn.computec.one/docs/appengine/releases/appengine/download).
-- Postępuj zgodnie z krokami instalacji podanymi w [AppEngine Installation Guide](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation).
+- Pobierz i zainstaluj najnowszą wersję [CompuTec AppEngine](https://learn.computec.one/docs/appengine/releases/appengine/download).
+- Postępuj zgodnie z krokami instalacji podanymi w [CompuTec AppEngine Installation Guide](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation).
 - Kroki instalacji serwera CompuTec WMS można znaleźć [tutaj](https://learn.computec.one/docs/wms/administrator-guide/installation/overview).
 
-### Jak włączyć wtyczki wczesnego dostępu w AppEngine Store
+### Jak włączyć wtyczki wczesnego dostępu w CompuTec AppEngine Store
 
 W panelu administracyjnym przejdź do Konfiguracja -> Konfiguracja zaawansowana. W zakładce Repozytorium pluginów, włącz repozytorium o adresie: `https://pkgs.dev.azure.com/computec-one/development/_packaging/dev/nuget/v3/index.json`.
 
-Utwórz plik o nazwie `CtNugetConfig.config` z zawartością podaną poniżej, zastępując APIKEY kluczem API. Zapisz ten plik w katalogu instalacyjnym AppEngine w C:\Program Files\CompuTec\AppEngine\.
+Utwórz plik o nazwie `CtNugetConfig.config` z zawartością podaną poniżej, zastępując APIKEY kluczem API. Zapisz ten plik w katalogu instalacyjnym CompuTec AppEngine w C:\Program Files\CompuTec\AppEngine\.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

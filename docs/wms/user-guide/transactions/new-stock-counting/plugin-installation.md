@@ -6,11 +6,11 @@ Here, you can find information about the New Stock Counting plugin installation.
 
 ## CompuTec WMS Server setting
 
-Please ensure the AppEngine server name address is set in the [CompuTec WMS Server settings](../../../administrator-guide/installation/wms-server/overview.md).
+Please ensure the CompuTec AppEngine server name address is set in the [CompuTec WMS Server settings](../../../administrator-guide/installation/wms-server/overview.md).
 
-## AppEngine
+## CompuTec AppEngine
 
-Turn on AppEngine on a database with ProcessForce:
+Turn on CompuTec AppEngine on a database with ProcessForce:
 
 ![General Settings](./media/general-settings.webp)
 
@@ -18,7 +18,7 @@ Type in the address and click Save:
 
 ![AE](./media/general-settings-ae.webp)
 
-Log in to the AppEngine Administration panel using the following address: `http://localhost:54000/webcontent/uaa/webapp/Index.html`.
+Log in to the CompuTec AppEngine Administration panel using the following address: `http://localhost:54000/webcontent/uaa/webapp/Index.html`.
 
 ![AE](./media/app-engine-administration-panel.webp)
 
@@ -64,7 +64,7 @@ Mark all three of them and click the highlighted icon:
 
 ![Choose Jobs](./media/jobs-choosing.webp)
 
-### Jobs available in the CompuTec WMS plugin in AppEngine
+### Jobs available in the CompuTec WMS plugin in CompuTec AppEngine
 
 Each of them has to be activated to work correctly.
 
@@ -88,7 +88,7 @@ This job is responsible for creating Storage Units and their edition during Inve
 
 ### The Result
 
-The AppEngine plugin is required to use the New Stock Counting either with SAP Business One or ProcessForce.
+The CompuTec AppEngine plugin is required to use the New Stock Counting either with SAP Business One or ProcessForce.
 
 If the plugin is unavailable, there will be information about it in CompuTec WMS.
 

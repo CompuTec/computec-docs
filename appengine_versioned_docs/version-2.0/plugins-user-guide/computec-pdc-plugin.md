@@ -5,12 +5,10 @@ sidebar_position: 4
 # CompuTec PDC Plugin
 
 :::info
-This manual presents how to work with CompuTec PDC and AppEngine. It is not a manual for CompuTec PDC application (which is available [here](/docs/pdc/)).
+This manual presents how to work with CompuTec PDC and CompuTec AppEngine. It is not a manual for CompuTec PDC application (which is available [here](/docs/pdc/)).
 :::
 
 PDC stands for Plant Data Capture: the application allows to record production task by using ProcessForce Time Bookings documents directly from production floor via mobile touchscreen devices. It records time spent on specific tasks or operations, allows you to oversee the precise details about any given operation such as machine data, features, operational history and item details and using the management panel you can supervise your entire machine park and its operations as well as check resource status.
-
-PDC on AppEngine gives you more speed and makes work-time record more effective.
 
 ---
 
@@ -24,27 +22,27 @@ CompuTec PDC requirements have been fulfilled, for more information click [here]
 CompuTec PDC plugin works only with CompuTec PDC, 64bit version.
 :::
 
-## AppEngine and Plugin Installation and Configuration
+## CompuTec AppEngine and Plugin Installation and Configuration
 
 Click each link for the specific component installation manual:
 
-- [AppEngine installation](../administrators-guide/installation.md)
+- [CompuTec AppEngine installation](../administrators-guide/installation.md)
 - [CompuTec PDC plugin](/docs/pdc/administrator-guide/installation/overview)
-- [ProcessForce plugin](../releases/plugins/processforce/download.md)
-- [ProcessForce API (on the same server as appengine)](/docs/processforce/releases/download#computec-processforce-api)
+- [CompuTec ProcessForce plugin](../releases/plugins/processforce/download.md)
+- [CompuTec ProcessForce API (on the same server as appengine)](/docs/processforce/releases/download#computec-processforce-api)
 - [CompuTec PDC application](/docs/pdc/administrator-guide/installation/overview)
 
 :::caution
-ProcessForce API needs to be installed on the same server as AppEngine.
+ProcessForce API needs to be installed on the same server as CompuTec AppEngine.
 :::
 
 ## Setting up the Application
 
-After installation, launch the AppEngine Console and bind the desired database:
+After installation, launch the CompuTec AppEngine Console and bind the desired database:
 
 ![Computec PDC Plugin Database](./media/computec-pdc-plugin/computec-pdc-plugin-database.png)
 
-Then open the CompuTec PDC application and fill in Settings with data (default AppEngine server is `https://localhost:54000`). Complete the fields in the sequence shown in the screenshot below. This will refresh the application and fetch necessary data.
+Then open the CompuTec PDC application and fill in Settings with data (default CompuTec AppEngine server is `https://localhost:54000`). Complete the fields in the sequence shown in the screenshot below. This will refresh the application and fetch necessary data.
 
 Filling in the fields marked with the red arrows automatically fills in the fields marked with the purple arrows (then, choose one option from the drop-down list).
 
@@ -54,7 +52,7 @@ Filling in the fields marked with the red arrows automatically fills in the fiel
 
 To successfully upgrade the application, follow the steps:
 
-    1. Update plugin in the AppEngine console (you can do it by choosing the plugin package) and restart the plugin.
+    1. Update plugin in the CompuTec AppEngine console (you can do it by choosing the plugin package) and restart the plugin.
 
         ![Computec PDC Plugin Update](./media/computec-pdc-plugin/computec-pdc-plugin-3-update.png)
 
@@ -73,7 +71,7 @@ Verify whether the CompuTec ProcessForce API also requires an upgrade. If so, un
 ## Additional Information
 
 1. For more details about the CompuTec PDC system, refer [here](/docs/pdc/).
-2. AppEngine for PDC is accessed via a web browser. There are no direct links from SAP Business One or ProcessForce functional objects.
+2. CompuTec AppEngine for PDC is accessed via a web browser. There are no direct links from SAP Business One or ProcessForce functional objects.
 3.To install the correct CompuTec PDC application version that matches your plugin, follow the instructions below:
 
     a. Open Launchpad in Appengine Console:

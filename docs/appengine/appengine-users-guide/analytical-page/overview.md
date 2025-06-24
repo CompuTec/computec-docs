@@ -14,7 +14,7 @@ This user-friendly tool allows you to quickly and easily create custom reports a
 
 ## Access
 
-After logging in to AppEngine, you can access the Analytical Page by:
+After logging in to CompuTec AppEngine, you can access the Analytical Page by:
 
 Clicking the icon located at the upper-right corner of the window and navigate through the plugin (In the below example, MO360 has been taken as a reference for analyzing Manufacturing Order transactions):
 

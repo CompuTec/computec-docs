@@ -50,7 +50,7 @@ For label printing to function effectively, both the CompuTec Labels Printing Ma
 
 1. **Label Request Initiation**: a label request is triggered by one of the following applications: SAP B1, CompuTec WMS, or CompuTec PDC.
 2. **Processing by CompuTec Labels Service/Manager**: the CompuTec Label Service/Manager receives the request and identifies the printer assigned for the task. If the printer is configured as a gateway printer, the service proceeds to forward the request to the CompuTec Gateway Manager.
-3. **Forwarding to Gateway via AppEngine**: the CompuTec Label Service forwards the request details to the gateway machine via the AppEngine address and port, using the CompuTec Gateway Plugin to ensure a secure and reliable connection.
+3. **Forwarding to CompuTec Gateway via CompuTec AppEngine**: the CompuTec Label Service forwards the request details to the gateway machine via the CompuTec AppEngine address and port, using the CompuTec Gateway Plugin to ensure a secure and reliable connection.
 4. **Processing by CompuTec Gateway Service**: upon receiving the request, the CompuTec Gateway Service processes the print job and adds it to the printer queue.
 5. **Label Printing**: the print job is sent to the physical printer, where the label is printed according to the specifications outlined in the request.
 

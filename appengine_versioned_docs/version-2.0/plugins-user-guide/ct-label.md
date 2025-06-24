@@ -22,9 +22,9 @@ The CTLabel plugin allows users to:
 
 ---
 
-## AppEngine and Plug-in Installation and Configuration
+## CompuTec AppEngine and Plug-in Installation and Configuration
 
-For the AppEngine installation manual, click [here](../administrators-guide/installation.md).
+For the CompuTec AppEngine installation manual, click [here](../administrators-guide/installation.md).
 
 For the plugin installation manual, click [here](../../version-2.0/administrators-guide/configuration-and-administration/overview.md).
 
@@ -177,7 +177,7 @@ To view the errors of a given request, click on the **selected** button on the s
 
 ## URL Parameters
 
-The CTLabel plugin offers functionality to save and load filters directly through the URL.
+The CompuTec Labels plugin offers functionality to save and load filters directly through the URL.
 Whenever a filter is changed, the URL is dynamically updated, and the corresponding data is reloaded automatically.
 
 To add parameters manually, add **?** sign at the end of the URL and then list all parameters like **parameterName=parameterValue1,parameterValue2**.

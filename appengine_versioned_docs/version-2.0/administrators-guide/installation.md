@@ -4,11 +4,11 @@ sidebar_position: 2
 
 # Installation
 
-This guide will walk you through the installation process for CompuTec ProcessForce AppEngine, ensuring a smooth setup and proper configuration. Follow the steps below to get started.
+This guide will walk you through the installation process for CompuTec AppEngine, ensuring a smooth setup and proper configuration. Follow the steps below to get started.
 
 ---
 
-1. Run the installation file (CompuTec ProcessForce AppEngine) from the [Download](../../version-2.0/releases/plugins/processforce/download.md) section and click "Install" in the opened installation Wizard.
+1. Run the installation file (CompuTec AppEngine) from the [Download](../../version-2.0/releases/plugins/processforce/download.md) section and click "Install" in the opened installation Wizard.
 2. Click "Close" after getting Installation Successfully Completed.
 3. The new service should now be running:
 
@@ -16,7 +16,7 @@ This guide will walk you through the installation process for CompuTec ProcessFo
 4. Access the platform using the following web address in your browser: `http://{host}:54000`.
 
 :::warning
-    After upgrading from any 1.00 version to any 2.00, please use the Empty Cache and Hard Reload option in the browser on which you use AppEngine, to clear your browser cache to ensure smooth operation.
+    After upgrading from any 1.00 version to any 2.00, please use the Empty Cache and Hard Reload option in the browser on which you use CompuTec AppEngine, to clear your browser cache to ensure smooth operation.
 
     <details>
     <summary>Click here to find out more</summary>

@@ -7,11 +7,11 @@ sidebar_position: 4
 This document outlines the steps necessary to upgrade the CompuTec PDC application to a newer version.
 
 :::info
-   As of the releases **3.10.6.1** (associated with ProcessForce version 10.0 Release 6) and **3.93.15.1** (corresponding to ProcessForce version 9.3 PL14 Release 2), **CompuTec PDC is now provided exclusively as an AppEngine plugin**. Upgrading to the latest version ensures you benefit from improved functionality, performance enhancements, and compatibility with newer releases.
+   As of the releases **3.10.6.1** (associated with ProcessForce version 10.0 Release 6) and **3.93.15.1** (corresponding to ProcessForce version 9.3 PL14 Release 2), **CompuTec PDC is now provided exclusively as an CompuTec AppEngine plugin**. Upgrading to the latest version ensures you benefit from improved functionality, performance enhancements, and compatibility with newer releases.
 
    For detailed guidance, refer to:
-      - [AppEngine plugin configuration manual](/docs/appengine/plugins-user-guide/computec-pdc-plugin)
-      - [AppEngine plugin upgrade manual](/docs/appengine/plugins-user-guide/computec-pdc-plugin#upgrade-of-the-application).
+      - [CompuTec AppEngine Plugin Configuration Manual](/docs/appengine/plugins-user-guide/computec-pdc-plugin)
+      - [CompuTec AppEngine Plugin Upgrade Manual](/docs/appengine/plugins-user-guide/computec-pdc-plugin#upgrade-of-the-application).
 
 :::
 

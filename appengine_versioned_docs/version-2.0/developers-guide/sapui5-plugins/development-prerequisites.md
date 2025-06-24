@@ -10,12 +10,12 @@ Before diving into custom development with CompuTec AppEngine, it’s important 
 
 ## Requirements
 
-To begin developing with AppEngine, ensure the following components are installed:
+To begin developing with CompuTec AppEngine, ensure the following components are installed:
 
-- Visual Studio: Your primary development environment for building and debugging AppEngine plugins.
-- [AppEngine version 2.x.2.x or higher](../../administrators-guide/installation.md)
-  - [AppEngine SLD Configuration](../../../version-2.0/administrators-guide/configuration-and-administration/overview.md#sld-servers)
-- [AppEngine Visual Studio Templates](https://www.nuget.org/packages?q=computec)
+- Visual Studio: Your primary development environment for building and debugging CompuTec AppEngine plugins.
+- [CompuTec AppEngine version 2.x.2.x or higher](../../administrators-guide/installation.md)
+  - [CompuTec AppEngine SLD Configuration](../../../version-2.0/administrators-guide/configuration-and-administration/overview.md#sld-servers)
+- [CompuTec AppEngine Visual Studio Templates](https://www.nuget.org/packages?q=computec)
 - Visual Studio Code (optional):  A lightweight alternative or companion for editing configuration files, JSON views, or quick scripting.
 
 ## Source Code

@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# How to set up AppEngine for Preventive Maintenance Schedule
+# How to set up CompuTec AppEngine for Preventive Maintenance Schedule
 
 ## SLD Servers Configuration
 

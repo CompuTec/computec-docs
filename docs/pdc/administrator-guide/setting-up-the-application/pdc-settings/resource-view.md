@@ -10,19 +10,19 @@ The Resources View feature allows users to filter tasks based on multiple resour
 
 ## Requirements
 
-To use this feature, you need the AppEngine's MO360 plugin. For more details on AppEngine and the plugin installation process, click [here](/docs/appengine/plugins-user-guide/manufacturing-order-360/plugin-installation-and-configuration).
+To use this feature, you need the CompuTec AppEngine's MO360 plugin. For more details on CompuTec AppEngine and the plugin installation process, click [here](/docs/appengine/plugins-user-guide/manufacturing-order-360/plugin-installation-and-configuration).
 
 **Minimal related versions**:
 
-- ProcessForce: 9.30 PL14 R10 or 10.0 RL14,
-- AppEngine: 2.10.3.1, 2.93.3.1 or 2.10.5.1, 2.93.5.1,
+- CompuTec ProcessForce: 9.30 PL14 R10 or 10.0 RL14,
+- CompuTec AppEngine: 2.10.3.1, 2.93.3.1 or 2.10.5.1, 2.93.5.1,
 - MO360 - latest version.
 
 ## Usage
 
-To define a view with multiple resources in AppEngine MO360, follow these steps:
+To define a view with multiple resources in CompuTec AppEngine MO360, follow these steps:
 
-1. Navigate to AppEngine, then access MO360 to create a new view for multiple resources.
+1. Navigate to CompuTec AppEngine, then access MO360 to create a new view for multiple resources.
 
     ![Main View](./media/resource-view/mo360-main-view.webp)
 

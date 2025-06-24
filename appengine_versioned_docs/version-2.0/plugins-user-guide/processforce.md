@@ -28,7 +28,7 @@ Automatically runs Cost Roll-Up upon selected Item/s based on pre-defined parame
 Go to Plugins → ProcessForce Plugin → Settings to define parameters (that reflects options available in the Cost Roll-Up form).
 
 :::caution
-    Please note that four checkboxes on the Cost Roll-Up form (from “Use final-goods’s batch[…]” to “Calculate and Save Costed BOM data”) are available to use after checking the Perform the roll-up over structure checkbox. They should be used in the same matter in AppEngine, even though they are available even when the Perform the roll-up over structure checkbox is not checked in AppEngine Settings (due to AppEngine limitations).
+    Please note that four checkboxes on the Cost Roll-Up form (from “Use final-goods’s batch[…]” to “Calculate and Save Costed BOM data”) are available to use after checking the Perform the roll-up over structure checkbox. They should be used in the same matter in CompuTec AppEngine, even though they are available even when the Perform the roll-up over structure checkbox is not checked in CompuTec AppEngine Settings (due to CompuTec AppEngine limitations).
 :::
 
 ![ProcessForce](./media/processforce/pf-jobs.png)
@@ -165,12 +165,12 @@ This job synchronizes data to SAP Business One Additional Batch details upon upd
 
 This job generates the corresponding Batch Master Data whenever a new Batch is created in SAP Business One.
 
-When enabled, the batch synchronization is handled by AppEngine. If not, the synchronization is managed by the CompuTec WMS service (applicable when using CompuTec WMS).
+When enabled, the batch synchronization is handled by CompuTec AppEngine. If not, the synchronization is managed by the CompuTec WMS service (applicable when using CompuTec WMS).
 
 **This job improves CompuTec ProcessForce and CompuTec WMS performance**.
 
 ### ManufacturingOrderWizardRecoverJob
 
-This job is started upon a start of AppEngine and checks if there are any unfinished Manufacturing Order Wizard tasks to process.
+This job is started upon a start of CompuTec AppEngine and checks if there are any unfinished Manufacturing Order Wizard tasks to process.
 
 ---

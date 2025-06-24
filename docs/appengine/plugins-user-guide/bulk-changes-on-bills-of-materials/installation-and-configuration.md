@@ -16,9 +16,9 @@ Before proceeding, ensure that ProcessForce and CompuTec License Server are inst
 
 If you need assistance with this setup, please refer to the relevant documentation or click the [link](/docs/processforce/administrator-guide/licensing/license-server/overview/).provided for more details.
 
-## AppEngine and Plugin Installation and Configuration
+## CompuTec AppEngine and Plugin Installation and Configuration
 
-To install AppEngine, follow the step-by-step instructions outlined in the [Installation Guide](../../administrators-guide/configuration-and-administration/installation.md).
+To install CompuTec AppEngine, follow the step-by-step instructions outlined in the [Installation Guide](../../administrators-guide/configuration-and-administration/installation.md).
 
 For the full configuration and administrative steps, refer to the [Configuration and Administration](docs/appengine/administrators-guide/configuration-and-administration/configuration.md) guide.
 

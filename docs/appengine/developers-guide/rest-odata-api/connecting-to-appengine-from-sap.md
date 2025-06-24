@@ -2,19 +2,19 @@
 sidebar_position: 2
 ---
 
-# Connecting to AppEngine from SAP Business One Integration Framework
+# Connecting to CompuTec AppEngine from SAP Business One Integration Framework
 
-Efficient integration between SAP Business One Integration Framework (B1if v2.0) and external systems like AppEngine is essential for seamless data exchange. This document demonstrates how to establish such a connection using REST API and token-based authentication.
+Efficient integration between SAP Business One Integration Framework (B1if v2.0) and external systems like CompuTec CompuTec AppEngine is essential for seamless data exchange. This document demonstrates how to establish such a connection using REST API and token-based authentication.
 
 ---
 
-Example of a connection made from B1if (v2.0) to AppEngine using REST API:
+Example of a connection made from B1if (v2.0) to CompuTec AppEngine using REST API:
 
-When integrating B1if (v2.0) with AppEngine via REST API, two authentication methods are available: **cookies** and tokens. This example focuses on token-based authentication, which is more secure and suitable for such scenarios.
+When integrating B1if (v2.0) with CompuTec AppEngine via REST API, two authentication methods are available: **cookies** and tokens. This example focuses on token-based authentication, which is more secure and suitable for such scenarios.
 
 Tokens are generated upon a successful login and have a limited validity of 20 minutes. Once the token expires, a new one must be obtained to maintain functionality.
 
-A key challenge in this setup is managing tokens efficiently within B1if, especially when integration scenarios involve connecting a single AppEngine instance to multiple company databases. The optimal solution for this challenge is to store tokens in **BizStore**, ensuring secure and streamlined token management across integration scenarios.
+A key challenge in this setup is managing tokens efficiently within B1if, especially when integration scenarios involve connecting a single CompuTec AppEngine instance to multiple company databases. The optimal solution for this challenge is to store tokens in **BizStore**, ensuring secure and streamlined token management across integration scenarios.
 
 ## Login
 
@@ -28,7 +28,7 @@ A key challenge in this setup is managing tokens efficiently within B1if, especi
 
 2. **Preparing Login Data**
 
-    The `CompanyId` parameter, essential for authentication, is retrieved from the AppEngine configuration.
+    The `CompanyId` parameter, essential for authentication, is retrieved from the CompuTec AppEngine configuration.
 
         ![Company ID](./media/connecting-to-appengine-from-sap/co-id-parameter.png)
 
@@ -52,13 +52,13 @@ Efficient token management is critical in integration scenarios where multiple c
 
 ## Using Token in an Integration Scenario
 
-The following example demonstrates how to retrieve data from AppEngine using the token and CompanyId saved during the previous steps:
+The following example demonstrates how to retrieve data from CompuTec AppEngine using the token and CompanyId saved during the previous steps:
 
 ![Transformation-atom](./media/connecting-to-appengine-from-sap/step-modeler.png)
 
 1. **GetToken** – This atom retrieves the saved token from BizStore using the operation type `access_op`.
 
-2. **LoginCredentials** - This atom prepares the JSON structure required for the API call. Based on the documentation for the target object (in this example, no content is sent to AppEngine since the GET method is used), the atom:
+2. **LoginCredentials** - This atom prepares the JSON structure required for the API call. Based on the documentation for the target object (in this example, no content is sent to CompuTec AppEngine since the GET method is used), the atom:
     - Creates the `<Token>` and `<CompanyId>` sections.
     - Places the complete JSON structure into the `<bfa:io>` section.
 
@@ -78,4 +78,4 @@ In this process, the following parameters are set:
         - **httpheader.CompanyId**: specifies the CompanyId for which the token was generated.
 
 ---
-As highlighted earlier, integration environments often involve multiple connections to AppEngine. The proposed approach optimizes authentication by storing tokens in BizStore, thereby reducing the need for repeated login requests. Since tokens have a limited lifespan, they must be refreshed upon expiration. This can be achieved through a simple recursive process that repeatedly calls the login and store token operations. Alternatively, a more advanced solution could involve verifying the token's validity before deciding whether to refresh it. The choice between these strategies should be guided by the specific requirements of the business case. Additionally, robust error handling is essential to ensure smooth operation and address potential issues such as token expiration or API errors.
+As highlighted earlier, integration environments often involve multiple connections to CompuTec AppEngine. The proposed approach optimizes authentication by storing tokens in BizStore, thereby reducing the need for repeated login requests. Since tokens have a limited lifespan, they must be refreshed upon expiration. This can be achieved through a simple recursive process that repeatedly calls the login and store token operations. Alternatively, a more advanced solution could involve verifying the token's validity before deciding whether to refresh it. The choice between these strategies should be guided by the specific requirements of the business case. Additionally, robust error handling is essential to ensure smooth operation and address potential issues such as token expiration or API errors.

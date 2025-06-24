@@ -34,24 +34,24 @@ To enable HTTPS for CompuTec AppEngine, you must:
 
 ## Configuration
 
-### Configuring the Certificate in AppEngine
+### Configuring the Certificate in CompuTec AppEngine
 
 #### Using the Certificate Store
 
-1. In the AppEngine Configuration for the selected AppEngine instance:
+1. In the CompuTec AppEngine Configuration for the selected CompuTec AppEngine instance:
    - Enable the **Use Certificate Store** option.
    - Set the store name to `My` (Personal).
    - Paste the Thumbprint into the **Find Value** field.
    - Ensure the **Find Type** is set to `FindByThumbprint`.
-2. Save the configuration and restart the AppEngine instance.
+2. Save the configuration and restart the CompuTec AppEngine instance.
 
 ![AppEngine SSL Configuration](./media/https-configuration/AE_configuration_ssl.png)
 
 #### Using a Certificate File
 
 1. Specify the `.pfx` certificate file in the **Certificate File** section of the configuration.
-2. Provide an absolute or relative path to the certificate file from the AppEngine installation directory.
-3. Save the configuration and restart the AppEngine instance.
+2. Provide an absolute or relative path to the certificate file from the CompuTec AppEngine installation directory.
+3. Save the configuration and restart the CompuTec AppEngine instance.
 
 ## Configuring HTTPS in `App.config.json`
 
@@ -75,8 +75,8 @@ You can define SSL settings directly in the `App.config.json` file. Below is an 
 
 ### Key Properties
 
-- **`OwnUrls`**: Indicates if this section overrides the AppEngine instance configuration. Setting this to `true` applies these settings during Kestrel initialization.
-- **`Urls`**: Specifies the ports that AppEngine will listen on.
+- **`OwnUrls`**: Indicates if this section overrides the CompuTec AppEngine instance configuration. Setting this to `true` applies these settings during Kestrel initialization.
+- **`Urls`**: Specifies the ports that CompuTec AppEngine will listen on.
 - **`PfxCertFilePath`**: Path to the `.pfx` certificate file.
 - **`CertPassword`**: Password for the `.pfx` certificate file.
 - **`UseCertificateStore`**: Boolean indicating whether to use the certificate store.
@@ -94,7 +94,7 @@ You can define SSL settings directly in the `App.config.json` file. Below is an 
 
 ### Rescue Configuration
 
-If the configuration does not work and AppEngine becomes unreachable, add the following minimal `Hosting` configuration to your `App.config.json` file:
+If the configuration does not work and CompuTec AppEngine becomes unreachable, add the following minimal `Hosting` configuration to your `App.config.json` file:
 
 ```json
 {
@@ -119,37 +119,43 @@ To specify Cross-Origin Resource Sharing (CORS) policies, use the `AllowedOrigin
   ...rest of the configuration
 }
 ```
+
 ### Key Points
 
 - **`AllowedOrigins`**: A list of domains allowed for CORS requests.
 - Ensure this setting aligns with your web application’s requirements to prevent unauthorized cross-origin requests.
 
 By following these steps and configurations, you can ensure secure HTTPS communication and proper CORS handling for your CompuTec AppEngine setup.
-## Regenerate Default Certificate 
+
+## Regenerate Default Certificate
+
 You can generate a new self-signed certificate when the certificate is corrupted or expired.
+
 1. Remove/rename `C:\Program Files\CompuTec\AppEngine\CompuTec.AppEngine.DefaultCert.pfx` file
 2. Run the script below
-```powershell
-# Define the parameters for the certificate and export
-$dnsName    = "CompuTec.AppEngine.DefaultCertificate"                     # Replace with your desired DNS name
-$outputPath = "C:\Program Files\CompuTec\AppEngine\CompuTec.AppEngine.DefaultCert.pfx"  # Replace with your desired file path and name
-$password   = "1q2w3e4r"             
 
-if (Test-Path $outputPath) {
-    Write-Output "Certificate file already exists at $outputPath. No new certificate generated."
-    return
-}else{
-Write-Output "Certificate Creating $outputPath"
-# Convert the plain text password to a secure string
-$securePassword = ConvertTo-SecureString -String $password -Force -AsPlainText
+  ```powershell
+  # Define the parameters for the certificate and export
+  $dnsName    = "CompuTec.AppEngine.DefaultCertificate"                     # Replace with your desired DNS name
+  $outputPath = "C:\Program Files\CompuTec\AppEngine\CompuTec.AppEngine.DefaultCert.pfx"  # Replace with your desired file path and name
+  $password   = "1q2w3e4r"             
 
-# Create the self-signed certificate in the CurrentUser's Personal store
-$cert = New-SelfSignedCertificate -DnsName $dnsName -CertStoreLocation "cert:\CurrentUser\My"
+  if (Test-Path $outputPath) {
+      Write-Output "Certificate file already exists at $outputPath. No new certificate generated."
+      return
+  }else{
+  Write-Output "Certificate Creating $outputPath"
+  # Convert the plain text password to a secure string
+  $securePassword = ConvertTo-SecureString -String $password -Force -AsPlainText
 
-# Export the certificate with the private key to a .pfx file
-Export-PfxCertificate -Cert $cert -FilePath $outputPath -Password $securePassword
+  # Create the self-signed certificate in the CurrentUser's Personal store
+  $cert = New-SelfSignedCertificate -DnsName $dnsName -CertStoreLocation "cert:\CurrentUser\My"
 
-Write-Output "Certificate created and exported successfully to $outputPath"
-}
+  # Export the certificate with the private key to a .pfx file
+  Export-PfxCertificate -Cert $cert -FilePath $outputPath -Password $securePassword
+
+  Write-Output "Certificate created and exported successfully to $outputPath"
+  }
 ```
 
+---

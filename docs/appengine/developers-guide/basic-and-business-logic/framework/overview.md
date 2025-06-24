@@ -34,32 +34,32 @@ The Computec.Core2 ecosystem empowers developers to create robust extensions wit
 
 ## Environment Overview
 
-At the heart of the Computec.Core2 Ecosystem is the AppEngine server, which serves as the central management hub for the SAP installation (SAP SLD) along with all associated databases and servers. This robust architecture enables administrators to efficiently manage all plugins across multiple companies within the ecosystem, ensuring streamlined operations and enhanced performance.
+At the heart of the Computec.Core2 Ecosystem is the CompuTec AppEngine server, which serves as the central management hub for the SAP installation (SAP SLD) along with all associated databases and servers. This robust architecture enables administrators to efficiently manage all plugins across multiple companies within the ecosystem, ensuring streamlined operations and enhanced performance.
 
-## AppEngine Server Responsibilities
+## CompuTec AppEngine Server Responsibilities
 
-The AppEngine Server serves as the backbone of the Computec.Core2 Ecosystem, providing centralized management and orchestration for SAP installations and associated components. It plays a pivotal role in ensuring seamless integration, streamlined operations, and efficient communication across the ecosystem. Below is an overview of the key responsibilities of the AppEngine Server:
+The CompuTec AppEngine Server serves as the backbone of the Computec.Core2 Ecosystem, providing centralized management and orchestration for SAP installations and associated components. It plays a pivotal role in ensuring seamless integration, streamlined operations, and efficient communication across the ecosystem. Below is an overview of the key responsibilities of the CompuTec AppEngine Server:
 
     - **Central Administration of SAP Companies Ecosystem**:
         - Facilitate the activation of multiple SAP companies within the ecosystem, ensuring seamless integration and management.
         - Efficiently manage the installation and updates of plugins for specific companies, ensuring that all applications are up-to-date and functioning optimally.
 
     - **Event Bus Management**: 
-        - The AppEngine server is responsible for hosting and managing the Event Bus, enabling asynchronous communication between different components of the ecosystem. This architecture promotes responsiveness and dynamic interactions across applications.
+        - The CompuTec AppEngine server is responsible for hosting and managing the Event Bus, enabling asynchronous communication between different components of the ecosystem. This architecture promotes responsiveness and dynamic interactions across applications.
         - The Event Bus can be configured to utilize external message queue services such as Microsoft Event Bus or RabbitMQ, providing flexibility and scalability in communication.
     
     - **Hosting AE Plugins**:
         - The server hosts AE plugins, including controllers and web applications, allowing for modular development and enhancing the overall functionality of the ecosystem.
         
     - **Job Execution**: 
-        - The AppEngine server executes scheduled and event-driven jobs, ensuring timely execution of tasks critical to the operation of the ecosystem.
+        - The CompuTec AppEngine server executes scheduled and event-driven jobs, ensuring timely execution of tasks critical to the operation of the ecosystem.
         
     - **Connection Logging and OpenTelemetry Management**: 
         - Manages connection logging and OpenTelemetry settings, providing comprehensive insights into application performance and facilitating effective monitoring and troubleshooting.
 
 ## Load Balancing Capabilities
 
-The architecture of the AppEngine server allows for the deployment of multiple instances to load balance the tasks handled by each server. While this capability is currently in progress and not fully supported yet, plans are in place to enhance scalability and reliability, ensuring optimal performance as demands increase.
+The architecture of the CompuTec AppEngine server allows for the deployment of multiple instances to load balance the tasks handled by each server. While this capability is currently in progress and not fully supported yet, plans are in place to enhance scalability and reliability, ensuring optimal performance as demands increase.
 
 ---
-The Computec.Core2 Ecosystem is a game-changer for SAP application development. By offering an intuitive and scalable framework, it empowers developers to build, extend, and manage business applications efficiently. With its centralized AppEngine Server, powerful feature set, and support for modern development standards, it empowers organizations to streamline operations, enhance scalability, and drive innovation.
+The Computec.Core2 Ecosystem is a game-changer for SAP application development. By offering an intuitive and scalable framework, it empowers developers to build, extend, and manage business applications efficiently. With its centralized CompuTec AppEngine Server, powerful feature set, and support for modern development standards, it empowers organizations to streamline operations, enhance scalability, and drive innovation.

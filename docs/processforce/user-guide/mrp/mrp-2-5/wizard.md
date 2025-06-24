@@ -4,14 +4,14 @@ sidebar_position: 3
 
 # MRP 2.5 Wizard
 
-To access the MRP 2.5 Wizard, navigate from the SAP B1 menu or directly log in to AppEngine.
+To access the MRP 2.5 Wizard, navigate from the SAP B1 menu or directly log in to CompuTec AppEngine.
 
 ![MRP Wizard](./media/wizard/mrp-wizard-01.webp)
 
-If you log in directly to AppEngine, the following tiles will be visible.
+If you log in directly to CompuTec AppEngine, the following tiles will be visible.
 
 :::caution
-    The yellow arrows do not function when logged in directly to AppEngine.
+    The yellow arrows do not function when logged in directly to CompuTec AppEngine.
 :::
 
 ![MRP Wizard](./media/wizard/mrp-wizard-02.webp)

@@ -21,7 +21,7 @@ The following steps detail how to prepare and implement modified routings. Each 
 | Step | Action | Obilgatory |  |
 | --- | --- | --- | --- |
 | 1 | In B1/PF prepare modified Routing's template (define new Code by adding e.g. Revision ID) with changes in: Operations, Resources, times, etc. It is recommended to put some additional information in Remarks (the scope of changes). | Yes | ![Routing changing for selected processes](./media/routings.png) |
-| 2 | Open Bulk Changes from AppEngine or directly from B1/PF, create new scenario and Select Change Scope = Routings | Yes | [Scenario Creation](https://www.youtube.com/watch?v=bT3bN-AoVSY) |
+| 2 | Open Bulk Changes from CompuTec AppEngine or directly from B1/PF, create new scenario and Select Change Scope = Routings | Yes | [Scenario Creation](https://www.youtube.com/watch?v=bT3bN-AoVSY) |
 | 3 | In Selected BOMs tab select BOMs (processes) for which the routing have to be changed | Yes | [Bill of Material Selection](https://www.youtube.com/watch?v=ZdTlC4Nwt3I) |
 | 4 | In Routings tab filter and select routing which has to be replaced. Choose mode Replace and select routing (prepared in step 1) as a Replacement. At the end you can unselect some processes. The change will not affect them. | Yes | [Routing Replacement](https://www.youtube.com/watch?v=cvlO5G3b2Wo) |
 | 5 | Add Scenario | Yes | - |

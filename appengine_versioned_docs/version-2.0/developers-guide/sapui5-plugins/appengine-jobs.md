@@ -2,11 +2,11 @@
 sidebar_position: 12
 ---
 
-# AppEngine Jobs
+# CompuTec AppEngine Jobs
 
 ## Prerequisites
 
-AppEngine Jobs are a powerful feature in the CompuTec AppEngine framework that allow developers to execute background logic in response to specific events in SAP Business One. This tutorial demonstrates how to build a custom job that listens for the creation of a new, unapproved Sales Order and automatically generates a To-Do task for follow-up. This kind of automation enhances operational efficiency and ensures timely review of business documents.
+CompuTec AppEngine Jobs are a powerful feature in the CompuTec AppEngine framework that allow developers to execute background logic in response to specific events in SAP Business One. This tutorial demonstrates how to build a custom job that listens for the creation of a new, unapproved Sales Order and automatically generates a To-Do task for follow-up. This kind of automation enhances operational efficiency and ensures timely review of business documents.
 
 Before you begin, ensure background processing is properly configured in your environment. You can refer to the setup guide here: [Configuration and Administration → Background processing](../../../version-2.0/administrators-guide/configuration-and-administration/overview.md).
 
@@ -14,7 +14,7 @@ Before you begin, ensure background processing is properly configured in your en
 
 ## Adding New Job
 
-1. AppEngine Jobs requires CompuTec.AppEngine.EventBus, so we need to add it to our Plugin project.
+1. CompuTec AppEngine Jobs requires CompuTec.AppEngine.EventBus, so we need to add it to our Plugin project.
 
     ![Nuget Event](./media/appengine-jobs/nuget-event-bus.webp)
 2. IIn the Plugin project, create a new folder named Jobs and a new class within it called SalesOrderToApproveEventJob.cs.
@@ -48,12 +48,12 @@ Before you begin, ensure background processing is properly configured in your en
     }
     ```
 
-5. By adding the Logger, we will be able to log messages that can later be reviewed directly from the AppEngine Administration Panel.
+5. By adding the Logger, we will be able to log messages that can later be reviewed directly from the CompuTec AppEngine Administration Panel.
 6. The final piece we need is the EventBusJob annotation from the CompuTec.AppEngine.Base.Infrastructure.Jobs.Annotations namespace. This annotation will allow us to specify information about our job, including the type of event and action that will trigger it.
 7. Let's add an annotation to our job:
 
-    - **JobId**: The unique ID for this job, which will be used by AppEngine. It will be visible in the AppEngine Administration Panel.
-    - **Description**: A brief description of the job, visible in the AppEngine Administration Panel.
+    - **JobId**: The unique ID for this job, which will be used by CompuTec AppEngine. It will be visible in the CompuTec AppEngine Administration Panel.
+    - **Description**: A brief description of the job, visible in the CompuTec AppEngine Administration Panel.
     - **ContentType**: The ObjectType that the job will react to. This corresponds to the variable object_type used in SBO_SP_TransactionNotification and SBO_SP_PostTransactionNotice.
     - **ActionType**: The action type for the event. For example, "A" for Add, "U" for Update, or "D" for Delete.
     - In our example, since we want the job to react to adding a Sales Order, we set ContentType to "17" and ActionType to "A".
@@ -234,7 +234,7 @@ There is a setting in SAP that determines whether a newly added Sales Order shou
 
     ![SO](./media/appengine-jobs/so-add-unapproved-logistic.webp)
 
-2. This action will trigger our job, and its current status can be monitored under Recent Calls in the AppEngine Administration Panel.
+2. This action will trigger our job, and its current status can be monitored under Recent Calls in the CompuTec AppEngine Administration Panel.
 
     ![Recent Call](./media/appengine-jobs/recent-calls.webp)
 

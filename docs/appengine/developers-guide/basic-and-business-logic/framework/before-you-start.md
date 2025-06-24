@@ -13,7 +13,7 @@ This guide walks you through the process of setting up and debugging a project u
 1. **Prepare Your Environment** - Before diving into development, ensure the following prerequisites are in place:
 
     - Install **CompuTec AppEngine** and configure it on your development company database.
-    - Activate the target company within the AppEngine interface.
+    - Activate the target company within the CompuTec AppEngine interface.
     - Run the SAP Business One application on the same database and confirm that the **CompuTec.Start** add-on is installed.
     - Set the CompuTec.Start add-on to manual start mode (Development Mode).
 2. **Install CompuTec Templates** - CompuTec provides predefined templates to streamline your development process. To install these templates:

@@ -7,7 +7,7 @@ toc_max_heading_level: 5
 # Configuration
 
 :::caution
-    After upgrading from version 2.00 to version 3.00, please use the "Empty Cache and Hard Reload" option in the browser where you use AppEngine.
+    After upgrading from version 2.00 to version 3.00, please use the "Empty Cache and Hard Reload" option in the browser where you use CompuTec AppEngine.
 :::
 <details>
     <summary>Click here to find out more</summary>
@@ -16,7 +16,7 @@ toc_max_heading_level: 5
             1. Open Google Chrome or Microsoft Edge (Chromium) browser
             2. Click F12 to open Developers Tools (1.)
             3. Right-click on the refresh button (2.) and,
-            4. Choose the Empty Cach and Hard Reload option (3.):
+            4. Choose the Empty Cache and Hard Reload option (3.):
 
             ![Configuration and Administration](./media/overview/empty-cache-and-hard-reload.png)
     </div>
@@ -24,7 +24,7 @@ toc_max_heading_level: 5
 
 ---
 
-This section provides a description of the Administration features of AppEngine, along with instructions on how to configure the application to begin using it.
+This section provides a description of the Administration features of CompuTec AppEngine, along with instructions on how to configure the application to begin using it.
 
 1. Run installation process.
 
@@ -65,22 +65,22 @@ You can check the CompuTec License Server Address in SAP Business One with Proce
 2. After entering the details, Click **Save and Discover**
 
     ![Initial Configuration](./media/configuration-and-administration/initial-configuration-01.png)
-You will be prompted for the B1SiteUser password. 
-[How to create an oprator account for Clound Control Center](CreateOperatorForCCC.md)
+You will be prompted for the B1SiteUser password.
+[How to create an operator account for Cloud Control Center](CreateOperatorForCCC.md)
 
-3. After connecting to the SLD server, you will be presented with a **list of companies** configured within the SAP landscape. You can run Dicover at any time to refresh the list of avaiable companies.
+3. After connecting to the SLD server, you will be presented with a **list of companies** configured within the SAP landscape. You can run Discover at any time to refresh the list of available companies.
 
     ![List of Companies](./media/configuration-and-administration/companies.png)
 
-4. Each Company that is activated for use in AppEngine needs credentials to Database Server. You can specify credentials for each company separately or provide default Database User in Server Details section.
+4. Each Company that is activated for use in CompuTec AppEngine needs credentials to Database Server. You can specify credentials for each company separately or provide default Database User in Server Details section.
 
     ![Database User Credentials](./media/configuration-and-administration/database-user-credentials.png)
 
-5. In Companies section you can see statuses of companies used within AppEngine. To activate Company simply click on Active Switch as shown below. This process will guide you through the activation process asking for all required information's.
+5. In Companies section you can see statuses of companies used within CompuTec AppEngine. To activate Company simply click on Active Switch as shown below. This process will guide you through the activation process asking for all required information's.
 
     ![Company Status](./media/configuration-and-administration/company-status.png)
 
-6. Choose a user for the installation process. If a suitable user does not already exist, specify a new SAP B1 user account. **This process do not create user in SAP. It is just creating user in the AppEngine**. This user needs to have the necessary permissions in SAP Business One to handle installation and configuration tasks. This user will be also used as default for future installations and background processing tasks.
+6. Choose a user for the installation process. If a suitable user does not already exist, specify a new SAP B1 user account. **This process do not create user in SAP. It is just creating user in CompuTec AppEngine**. This user needs to have the necessary permissions in SAP Business One to handle installation and configuration tasks. This user will be also used as default for future installations and background processing tasks.
 
     ![Assign Default User](./media/configuration-and-administration/assign-default-user-01.png)
 
@@ -98,7 +98,7 @@ You will be prompted for the B1SiteUser password.
 
     If a suitable user does not already exist, create a **new user** account.
 
-9. Set up and configure **background processing** within the SAP environment. AppEngine allows to create plugins with jobs that reacts on various event from SAP Business One. To be able to achieve this procedure needs to be added into SBO_SP_POSTTRANSACTIONNOTICE. This procedure is responsible for storing events that will be consumed by AppEngine to trigger jobs.
+9. Set up and configure **background processing** within the SAP environment. CompuTec AppEngine allows to create plugins with jobs that reacts on various event from SAP Business One. To be able to achieve this procedure needs to be added into SBO_SP_POSTTRANSACTIONNOTICE. This procedure is responsible for storing events that will be consumed by CompuTec AppEngine to trigger jobs.
 
     ![Background Processing](./media/configuration-and-administration/background-processing.png)
 
@@ -122,7 +122,7 @@ You will be prompted for the B1SiteUser password.
     </div>
     </details>
 
-10. Finally, assign an AppEngine instance to the configured environment. This step integrates the application engine with the SAP landscape, enabling the necessary application services and functionalities.
+10. Finally, assign an CompuTec AppEngine instance to the configured environment. This step integrates the application engine with the SAP landscape, enabling the necessary application services and functionalities.
 
 Once the configuration is completed, you can log in to the [Launchpad](../../appengine-users-guide/launchpad.md).
 
@@ -134,13 +134,13 @@ Once the initial configuration is complete, the advanced configuration stage all
 
 1. **SAP Services** - The user has the option to edit the SLD ServerAddress.
 2. **CompuTec Services** - The user has the option to CT License Server
-3. **OpenId Settings** - The user can also edit the AppEngine External Address.
+3. **OpenId Settings** - The user can also edit CompuTec AppEngine External Address.
 4. **OIDC** - The OpenID Connect (OIDC) integration ensures secure authentication.
 5. **Eventbus** - Facilitates real-time communication between services.
 6. **Jobs** - Manages scheduled tasks efficiently.
 7. **Plugin Repository** -  Allows for easy installation and management of additional functionalities within the system
 
-### AppEngine Servers
+### CompuTec AppEngine Servers
 
 ![AppEngine Servers](./media/configuration-and-administration/appengine-servers.webp)
 

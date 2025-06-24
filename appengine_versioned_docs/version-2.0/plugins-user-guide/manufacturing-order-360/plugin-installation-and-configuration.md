@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Plugin Installation and Configuration
 
-This guide provides step-by-step instructions for installing and configuring the necessary plugins to extend the capabilities of ProcessForce and AppEngine. By following this guide, you will ensure that the MO360 and PPF plugins are correctly deployed and integrated with your SAP Business One environment. Additionally, this document outlines how to optionally enable MO360 directly within ProcessForce for streamlined manufacturing order management.
+This guide provides step-by-step instructions for installing and configuring the necessary plugins to extend the capabilities of ProcessForce and CompuTec AppEngine. By following this guide, you will ensure that the MO360 and PPF plugins are correctly deployed and integrated with your SAP Business One environment. Additionally, this document outlines how to optionally enable MO360 directly within ProcessForce for streamlined manufacturing order management.
 
 ---
 
@@ -12,11 +12,11 @@ This guide provides step-by-step instructions for installing and configuring the
 
 ProcessForce and CompuTec Licence Server is installed and configured. For more information, click [here](/docs/processforce/administrator-guide/licensing/license-server/overview/).
 
-## AppEngine and Plugin Installation and Configuration
+## CompuTec AppEngine and Plugin Installation and Configuration
 
-Follow the respective guides below for installing and configuring AppEngine and the required plugins:
+Follow the respective guides below for installing and configuring CompuTec AppEngine and the required plugins:
 
-- AppEngine [Installation](/docs/appengine/administrators-guide/configuration-and-administration/installation/).
+- CompuTec AppEngine [Installation](/docs/appengine/administrators-guide/configuration-and-administration/installation/).
 - Plugin [Configuration and Administration](../../administrators-guide/configuration-and-administration/overview.md).
 
 Two plugins need to be installed: **MO360** and **PPF**.
@@ -31,6 +31,6 @@ To do this, check the following checkbox:
 
 ![Manufacturing Order 360](../manufacturing-order-360/media/general-settings-enableappengine.png)
 
-Enter the AppEngine URL, e.g. `http://{host}:54000`, click "Update" and restart SAP Business One.
+Enter the CompuTec AppEngine URL, e.g. `http://{host}:54000`, click "Update" and restart SAP Business One.
 
 ---

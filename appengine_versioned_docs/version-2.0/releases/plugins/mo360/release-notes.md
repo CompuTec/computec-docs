@@ -55,7 +55,7 @@ The latest Installer is available to download from [here](../../plugins/mo360/do
 
 | Issue Type | Release Note | Related Issue |
 | --- | --- | --- |
-| Improvement | A new optional setting: 'hidden'. Setting it to 'true' hides this plugin in AppEngine Launchpad. | - |
+| Improvement | A new optional setting: 'hidden'. Setting it to 'true' hides this plugin in CompuTec AppEngine Launchpad. | - |
 | Improvement | Adapt Filters: two new filters added - Operation Status, and Manufacturing Status. | - |
 | Improvement | Assignment Board, Task List: fixed responsiveness upon the resizing of the form. | - |
 | Improvement | Assignment Board: overall optimization of the form. | - |

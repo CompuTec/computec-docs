@@ -17,11 +17,11 @@ Click [here](https://www.youtube.com/watch?v=MSreLSZC8DU) to know more about Com
 ### Prerequisites
 
 - The ProcessForce plugin has to be installed and enabled for the company you want to use ProcessForce Import with.
-- If new UDFs (User Defined Fields) are added to ProcessForce objects, restart the AppEngine service to ensure they appear in the PFI template.
+- If new UDFs (User Defined Fields) are added to ProcessForce objects, restart the CompuTec AppEngine service to ensure they appear in the PFI template.
 
 ### Installation
 
-Click [here](../administrators-guide/configuration-and-administration/overview.md#plugins) to get to know more about AppEngine Plugin Installation.
+Click [here](../administrators-guide/configuration-and-administration/overview.md#plugins) to get to know more about CompuTec AppEngine Plugin Installation.
 
 ## Usage
 

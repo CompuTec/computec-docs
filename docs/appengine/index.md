@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction to CompuTec AppEngine 3.0
 
-Welcome to AppEngine, the ultimate solution for managing all applications and business solutions within your organization. AppEngine serves as a central hub, enabling administrators to oversee plugins and manage updates while empowering developers to create and extend functionality through robust extensions. Whether you’re an administrator or a developer, AppEngine simplifies the complex processes of application management and development, providing the tools you need for efficiency, scalability, and innovation.
+Welcome to CompuTec AppEngine, the ultimate solution for managing all applications and business solutions within your organization. CompuTec AppEngine serves as a central hub, enabling administrators to oversee plugins and manage updates while empowering developers to create and extend functionality through robust extensions. Whether you’re an administrator or a developer, CompuTec AppEngine simplifies the complex processes of application management and development, providing the tools you need for efficiency, scalability, and innovation.
 
 ## About Framework
 
@@ -40,8 +40,10 @@ The Computec.Core2 Ecosystem brings a suite of powerful features, specifically c
 
 - **Extensions of Extensions** - Build extensions that depend on existing plugins, allowing modular development and fostering a dynamic, interconnected ecosystem.
 
-## Why AppEngine?
+## Why CompuTec AppEngine?
 
-AppEngine is more than a tool—it’s a complete ecosystem that bridges the gap between management and development. It ensures that administrators have full control over application and plugin lifecycles while equipping developers with the flexibility to innovate and extend capabilities. With features like unified logging, abstracted SAP APIs, and seamless SSO, AppEngine offers a comprehensive solution tailored for modern business needs.
+CompuTec AppEngine is more than a tool—it’s a complete ecosystem that bridges the gap between management and development. It ensures that administrators have full control over application and plugin lifecycles while equipping developers with the flexibility to innovate and extend capabilities. With features like unified logging, abstracted SAP APIs, and seamless SSO, CompuTec AppEngine offers a comprehensive solution tailored for modern business needs.
 
-Embrace the power of **AppEngine** and the **Computec.Core2 Ecosystem** to elevate your organization's application management and development to new heights. Whether you're managing plugins or crafting advanced extensions, AppEngine ensures a unified, scalable, and efficient experience for all.
+Embrace the power of **CompuTec AppEngine** and the **Computec.Core2 Ecosystem** to elevate your organization's application management and development to new heights. Whether you're managing plugins or crafting advanced extensions, CompuTec AppEngine ensures a unified, scalable, and efficient experience for all.
+
+---

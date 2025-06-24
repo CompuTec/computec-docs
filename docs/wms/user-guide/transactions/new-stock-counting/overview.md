@@ -12,7 +12,7 @@ New Stock Counting transactions have been available since the WMS 2.10.15_R1 ver
 
 Click [here](../../../administrator-guide/installation/wms-server/overview.md) to find out more.
 
-### AppEngine plugin installation
+### CompuTec AppEngine plugin installation
 
 Click [here](/docs/appengine/2.0/releases/plugins/wms-stock-counting/download) to download the installation file.
 
@@ -94,7 +94,7 @@ You can browse the list or use the filter option to find a specific document:
 
 Leaving the document does not delete already set quantities.
 
-Saving to SAP Business One is planned to be performed through the AppEngine plugin. Now, to do this, use the save icon:
+Saving to SAP Business One is planned to be performed through the CompuTec AppEngine plugin. Now, to do this, use the save icon:
 
 ![Document Details](./media/document-details-save.webp)
 

@@ -9,7 +9,7 @@ toc_max_heading_level: 2
 The latest installer is available to download fom [here](/docs/appengine/releases/appengine/download)
 :::
 
-## AppEngine 2.10.17.4 HF1
+## CompuTec AppEngine 2.10.17.4 HF1
 
 ### *Release Date - 26 June 2024*
 
@@ -19,7 +19,7 @@ The latest installer is available to download fom [here](/docs/appengine/release
 
 ---
 
-## AppEngine 2.10.16.6 HF1
+## CompuTec AppEngine 2.10.16.6 HF1
 
 ### *Release Date - 30 January 2024*
 
@@ -29,35 +29,35 @@ The latest installer is available to download fom [here](/docs/appengine/release
 
 ---
 
-## AppEngine 2.10.16.4
+## CompuTec AppEngine 2.10.16.4
 
 ### *Release Date - 24 January 2024*
 
 | Issue Type | Component/s | Release Note | Related issue/s |
 | - | - | - | - |
 | Improvement | SAP UI5 | UI5 version is now upgraded to 1.120.2 | - |
-| Improvement | Plugins | Plugins with setup are now added to SAP B1 Additional Authorizations. To enable them for user permission need to be set either to Read-Only or Full Authorization. | - |
+| Improvement | Plugins | Plugins with setup are now added to SAP Business One Additional Authorizations. To enable them for user permission need to be set either to Read-Only or Full Authorization. | - |
 | Bug | Plugins | Fixed issue with plugin installation "Uploaded package needs to be a zip file". | SPROC-15050 |
-| Bug | AE Configuration | Fixed issue with log level. Now log level changes back to "Trace" after AppEngine restart. | - |
+| Bug | AE Configuration | Fixed issue with log level. Now log level changes back to "Trace" after CompuTec AppEngine restart. | - |
 | Bug | AE Core | Log related to given job should now be visible under log tab on job definition page. | - |
 | Bug | AE Configuration | It is now possible to set Database Type in case of Cloud environment. | - |
 
 ---
 
-## AppEngine 2.10.15.2
+## CompuTec AppEngine 2.10.15.2
 
 ### *Release Date - 17 October 2023*
 
 | Issue Type | Component/s | Release Note | Related issue/s |
 | - | - | - | - |
 | Improvement | AE Analytics | The Select All option is added to all the collection lists. | - |
-| Bug | AE Configuration | It is necessary to re-enter database credentials while logging in to AppEngine from SAP Business One. | - |
+| Bug | AE Configuration | It is necessary to re-enter database credentials while logging in to CompuTec AppEngine from SAP Business One. | - |
 | Bug | AE Core, MRP | An error occurs upon attempts to run a scenario in MRP 2.5 and then open Relationship Map in some cases. | - |
 | Bug | SAP UI5 | When a plugin is launched through SAP UI, each time it asks for credentials. | - |
 
 ---
 
-## AppEngine 2.10.14.3
+## CompuTec AppEngine 2.10.14.3
 
 ### *Release Date - 27 September 2023*
 
@@ -70,35 +70,35 @@ The latest installer is available to download fom [here](/docs/appengine/release
 
 ---
 
-## AppEngine 2.10.13.1
+## CompuTec AppEngine 2.10.13.1
 
 ### *Release Date - 10 August 2023*
 
 | Issue Type | Component/s | Release Note | Related issue/s |
 | - | - | - | - |
-| Improvement | AE Analaytics | New option: [Analytical Page Source Creator](/docs/appengine/appengine-users-guide/analytical-page/source-creator/). | - |
-| Improvement | AE Analaytics | The String and Number filters now have buttons to change operators like equal, not equal, greater than, and more complicated operators like: between, in (you can choose more than one value), not in. | - |
+| Improvement | AE Analytics | New option: [Analytical Page Source Creator](/docs/appengine/appengine-users-guide/analytical-page/source-creator/). | - |
+| Improvement | AE Analytics | The String and Number filters now have buttons to change operators like equal, not equal, greater than, and more complicated operators like: between, in (you can choose more than one value), not in. | - |
 | Improvement | Launchpad | Possibility to log out any session from the Administration Panel level the Active Connections tab| - |
-| Bug | Launchpad | The SAP Business One User's password change is not reflected in AppEngine. | SPROC-12383 |
+| Bug | Launchpad | The SAP Business One User's password change is not reflected in CompuTec AppEngine. | SPROC-12383 |
 
 ---
 
-## AppEngine 2.10.12.1
+## CompuTec AppEngine 2.10.12.1
 
 ### *Release Date - 26 June 2023*
 
 | Issue Type | Component/s | Release Note |
 | - | - | - |
-| Improvement | AE Analaytics | A new option in the table settings: auto-expand rows in a table tree (grouping). |
-| Improvement | AE Analaytics | A new table setting: auto-refresh - it is possible to set a period for refreshing Tables, Table Trees, and Charts. Also possible to add a refresh timer. |
+| Improvement | AE Analytics | A new option in the table settings: auto-expand rows in a table tree (grouping). |
+| Improvement | AE Analytics | A new table setting: auto-refresh - it is possible to set a period for refreshing Tables, Table Trees, and Charts. Also possible to add a refresh timer. |
 | Bug | AE Administration Panel | Trace: the Sort button does not work. |
 | Bug | AE Analytics | A change of the name template of file when exporting variant to Excel: "name of variant_2023-01-01T12:00:00". |
 | Bug | AE Analytics | Reports are not visible for users who previously had no assigned Groups. |
-| Bug | AE Configuration | Job configuration: a change of Cron Expression is not always saved after an AppEngine restart. |
+| Bug | AE Configuration | Job configuration: a change of Cron Expression is not always saved after an CompuTec AppEngine restart. |
 
 ---
 
-## AppEngine 2.10.11.5
+## CompuTec AppEngine 2.10.11.5
 
 ### *Release Date - 24 May 2023*
 
@@ -117,7 +117,7 @@ The latest installer is available to download fom [here](/docs/appengine/release
 
 ---
 
-## AppEngine 2.10.10.1
+## CompuTec AppEngine 2.10.10.1
 
 ### *Release Date - 19 April 2023*
 
@@ -127,7 +127,7 @@ After upgrading to this version, user credentials for Background Processing need
 
 | Issue Type | Component/s | Release Note |
 | - | - | - |
-| Improvement | Plugins | A validation of a minimal AppEngine version during plugin installation. |
+| Improvement | Plugins | A validation of a minimal CompuTec AppEngine version during plugin installation. |
 | Bug | Administration Panel | No action and information upon attempts to uninstall a plugin that is required for another plugin. Now, there is a system message about it. |
 | Bug | Administration Panel | Cannot enter credentials for SAP User in the Background Jobs configuration (Companies tab). |
 | Bug | Architecture | The LineNum and IsImage parameters are now available as optional in the Attachment Controller. |
@@ -143,11 +143,11 @@ After upgrading to this version, user credentials for Background Processing need
 
 | Issue Type | Component/s | Release Note | Related issue/s |
 | - | - | - | - |
-| Improvement | Architecture | AppEngine now allows for managing variants. Code below [1] | - |
-| Improvement | Architecture | Companies that require an update are now marked with Button Update Required. This is important, especially after upgrading AppEngine. <br/><br/>This structure allows managing custom VariantQuerySources. Code below [2]| - |
+| Improvement | Architecture | CompuTec AppEngine now allows for managing variants. Code below [1] | - |
+| Improvement | Architecture | Companies that require an update are now marked with Button Update Required. This is important, especially after upgrading CompuTec AppEngine. <br/><br/>This structure allows managing custom VariantQuerySources. Code below [2]| - |
 | Improvement | Configuration | It is now possible to define preinstalled Variants and their Sources inside the plugin. | - |
 | Improvement | Plugins | The User Authorizations for build-in standard analytical variants are now added during the plugin database update. | - |
-| Bug | Configuration | The Choose company option is shown while logging in to AppEngine from SAP Business One. | - |
+| Bug | Configuration | The Choose company option is shown while logging in to CompuTec AppEngine from SAP Business One. | - |
 | Bug | OData | String values in filter parameters are parsed as dates in some cases. | - |
 | Bug | Plugins| An error occurs upon the first installation of a plugin in specific cases. | - |
 
@@ -320,16 +320,16 @@ Content-Type: application/json
 </details>
 ---
 
-## AppEngine 2.10.8.2
+## CompuTec AppEngine 2.10.8.2
 
 ### *Release Date - 19 September 2022*
 
 | Issue Type | Component/s | Release Note | Related issue/s |
 | - | - | - | - |
 | Improvement | Configuration | CompuTec License Server address is now validated in Administration Panel, SLD Servers list and when adding an SLD Server. | - |
-| Improvement | Configuration | It is now possible to download a file with the AppEngine and plugin installation information (e.g. installed versions) for improving the product support procedure. | - |
+| Improvement | Configuration | It is now possible to download a file with the CompuTec AppEngine and plugin installation information (e.g. installed versions) for improving the product support procedure. | - |
 | Improvement | Configuration | Now job can react to more than one event. | - |
-| Improvement | Plugins | A new optional setting: 'hidden'. Setting it to true hides the related plugin in AppEngine Launchpad. | - |
+| Improvement | Plugins | A new optional setting: 'hidden'. Setting it to true hides the related plugin in CompuTec AppEngine Launchpad. | - |
 | Improvement | Plugins | Layout improvements (e.g. removing unnecessary scrollbars in some of the forms). | - |
 | Improvement | Plugins | UI5 Horizon theme of SAP Fiori applied (you can find out more on the [SAP website](https://community.sap.com/t5/technology-blogs-by-sap/horizon-theme-of-sap-fiori-update-on-productive-usage-for-web-applications/ba-p/13531459)). | - |
 | Bug | Administration Panel | No scroll on Administration Panel, Plugins view. | - |
@@ -344,19 +344,19 @@ Content-Type: application/json
 
 ---
 
-## AppEngine 2.10.7.5, 2.93.7.5
+## CompuTec AppEngine 2.10.7.5, 2.93.7.5
 
 ### *Release Date - 13 June 2022*
 
 | Issue Type | Component/s | Release Note | Related issue/s |
 | - | - | - | - |
-| Improvement | Architecture | The AppEngine plugins are now available for SAP Business One Web Client. | - |
-| Improvement | Architecture | A minimal required AppEngine version of required version is now checked (if specified inside plugin manifest). <br/><br/>Example manifest entry: <br/><blockquote>AEVersion:  minVersion: 2.0.7.0.</blockquote> | - |
+| Improvement | Architecture | The CompuTec AppEngine plugins are now available for SAP Business One Web Client. | - |
+| Improvement | Architecture | A minimal required CompuTec AppEngine version of required version is now checked (if specified inside plugin manifest). <br/><br/>Example manifest entry: <br/><blockquote>AEVersion:  minVersion: 2.0.7.0.</blockquote> | - |
 | Improvement | Configuration | Plugins, Companies: now a related database name is displayed in the table, along with a company name. | - |
-| Bug | Architecture | Restarting AppEngine from the Administrator panel does not always work (the AppEngine service cannot be stopped in specific cases).| - |
-| Bug | Background Processing | Batch Background Processes (AdditionalBatchDetailsCreatorEB, RestoreAditionalBatchDetails) cannot be activated. <br/><br/>Error message: Hours: <br/><blockquote>Value must be a number between 1 and 23 (all inclusive).</blockquote> | SPROC-13253 |
+| Bug | Architecture | Restarting CompuTec AppEngine from the Administrator panel does not always work (the CompuTec AppEngine service cannot be stopped in specific cases).| - |
+| Bug | Background Processing | Batch Background Processes (AdditionalBatchDetailsCreatorEB, RestoreAdditionalBatchDetails) cannot be activated. <br/><br/>Error message: Hours: <br/><blockquote>Value must be a number between 1 and 23 (all inclusive).</blockquote> | SPROC-13253 |
 | Bug | Configuration | Unassigned plugins are still available in Launchpad in some cases. | - |
 | Bug | Configuration | Upon deleting a database in configuration (Administration Panel) related dummy entries are not deleted from the assigned plugins in some cases. | - |
 | Bug | EventBus | Trace: messages are incomplete in specific cases (part of them replaced with ellipsis). | - |
-| Bug | Plugins | Turning off a plugin for a company does not work: <br/><li>Related menu entries are present in the SAP Business One menu, even though a plugin was not activated for a company. Clicking these options leads to an empty form.</li> <br/><li>A plugin that was turned on and then turned off is still available for a company after the AppEngine restart.</li> | - |
+| Bug | Plugins | Turning off a plugin for a company does not work: <br/><li>Related menu entries are present in the SAP Business One menu, even though a plugin was not activated for a company. Clicking these options leads to an empty form.</li> <br/><li>A plugin that was turned on and then turned off is still available for a company after the CompuTec AppEngine restart.</li> | - |
 | Bug | SAPUI | Filtering in the Select form is case sensitive. | - |
