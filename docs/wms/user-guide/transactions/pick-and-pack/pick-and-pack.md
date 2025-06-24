@@ -89,7 +89,7 @@ Buttons:
 
     1. if the picker field is filled, then the pick list is visible only for this picker.
 
-    2. if the picker field is empty in SAP B1, the pick list is visible for everyone + the CC setting.
+    2. if the picker field is empty in SAP Business One, the pick list is visible for everyone + the CC setting.
 
     The picker is saved, and now only this picker can picker can continue the Pick List.
     Or the picker field stays blank.

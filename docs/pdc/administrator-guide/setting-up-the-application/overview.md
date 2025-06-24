@@ -59,7 +59,7 @@ In this section, enter the necessary information to establish a connection with 
 Fill in the required details in the provided window:
 
 1. Enter the CompuTec AppEngine server address to connect to CompuTec AppEngine. This address includes the server IP or machine name (or simply 'localhost' if CompuTec PDC and CT Engine are installed on the same machine) and the port number. By default, port 8080 is used, but it can be changed if needed. Click [here](../weight-scales-integration/computec-gateway-manager.md) for instructions on how to do this.
-2. Enter the SAP Business One user ID for the selected database. The user must have at least an Indirect Access SAP B1 license and a ProcessForce license.
+2. Enter the SAP Business One user ID for the selected database. The user must have at least an Indirect Access SAP Business One license and a ProcessForce license.
 3. Enter the SAP Business One password for the selected database.
 4. After entering the server address, the list of available companies (databases) will automatically populate. Select the required company from the drop-down list (click the Get All Databases button to refresh the list).
 5. Enter the database username (required only to view the Bill of Materials and Manufacturing Orders in the Crystal Report preview). If this information is not configured, the application will prompt for authentication to open the preview. Click [here](./sap-hana-database.md) for instructions on setting up a database user other than SYSTEM.

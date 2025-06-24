@@ -29,9 +29,9 @@ Command: `tcping -t IP port`
   - from the workstations/server to the SAP HANA database (default port: 30015),
   - from the workstations/server to SAP License Server (default port: 40000),
   - from the workstations/server to CompuTec License Server (default port: 30002),
-  - use proper settings IP / Server name, which is currently configured in SAP B1 Client.
+  - use proper settings IP / Server name, which is currently configured in SAP Business One Client.
 
-- use proper settings IP / Server name, which is currently configured in SAP B1 Client
+- use proper settings IP / Server name, which is currently configured in SAP Business One Client
 
   ![Choose Company](./media/performance-issues/choose-company.png)
 

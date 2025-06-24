@@ -46,7 +46,7 @@ When changes are made to Item Descriptions—for example, through DTW or PowerSh
 
 **Key Considerations for BOM Synchronization**:
 
-- Synchronization always flows from ProcessForce to SAP Business One. Creating or updating a ProcessForce BOM will overwrite the corresponding SAP B1 BOM.
+- Synchronization always flows from ProcessForce to SAP Business One. Creating or updating a ProcessForce BOM will overwrite the corresponding SAP Business One Bill of Material.
 - The "Enable Bill of Materials synchronization between ProcessForce and SAP Business One" option must be enabled in General Settings (under ProcessForce → Bill of Materials and Manufacturing Orders section).
 - Only Bill of Material variants with the "Is MRP Default" checkbox selected will be used for synchronization:
 

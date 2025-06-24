@@ -57,7 +57,7 @@ The latest installer is available to download fom [here](/docs/appengine/release
 | Issue Type | Component/s | Release Note | Related issue/s |
 | - | - | - | - |
 | Improvement | SAP UI5 | UI5 version is now upgraded to 1.120.2 | - |
-| Improvement | Plugins | Plugins with setup are now added to SAP B1 Additional Authorizations. To enable them for user permission need to be set either to Read-Only or Full Authorization. | - |
+| Improvement | Plugins | Plugins with setup are now added to SAP Business One Additional Authorizations. To enable them for user permission need to be set either to Read-Only or Full Authorization. | - |
 | Bug | Plugins | Fixed issue with plugin installation "Uploaded package needs to be a zip file". | SPROC-15050 |
 | Bug | AE Configuration | Fixed issue with log level. Now log level changes back to "Trace" after CompuTec AppEngine restart. | - |
 | Bug | AE Core | Log related to given job should now be visible under log tab on job definition page. | - |

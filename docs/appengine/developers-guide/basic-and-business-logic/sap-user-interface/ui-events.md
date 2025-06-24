@@ -189,6 +189,6 @@ Custom UDO object forms allow you to extend functionality by linking UDO Beans t
 2. Add the **[EnableEvent(FormTypeEx)]** attribute.
 
 ---
-SAP Business One's event framework is a powerful tool for developers to create dynamic and user-friendly solutions. By understanding the standard events, implementing the appropriate base classes, and following best practices, you can extend SAP B1's functionality while maintaining system stability and performance.
+SAP Business One's event framework is a powerful tool for developers to create dynamic and user-friendly solutions. By understanding the standard events, implementing the appropriate base classes, and following best practices, you can extend SAP Business One's functionality while maintaining system stability and performance.
 
 With this guide, you are equipped to design and implement event-driven logic, making SAP Business One a more robust tool for your business processes.

@@ -16,7 +16,7 @@ You can check the Custom Configuration options [here](../../administrator-guide/
 
 ### SAP Business One
 
-It is required to define Business Partner Catalog Numbers to use the Dispatch Control option. Business Partner Catalog Numbers are numbers assigned to an Item on the BPs side, e.g., on the screenshot below, Active-Item-01 has the following number on the SAP B1 side: Active-Item-01. On the BP side, it is 4.
+It is required to define Business Partner Catalog Numbers to use the Dispatch Control option. Business Partner Catalog Numbers are numbers assigned to an Item on the BPs side, e.g., on the screenshot below, Active-Item-01 has the following number on the SAP Business One side: Active-Item-01. On the BP side, it is 4.
 
 :::info
     Inventory → Item Management → Business Partner Catalog Numbers

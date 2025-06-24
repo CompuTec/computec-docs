@@ -44,7 +44,7 @@ You can set/change the assigned employee for the MO.
 ![Plant Maintenance Mobile - Assignments](./media/plant-maintenance-mobile/assignments.png)
 
 :::info Caution
-It is required that the employee is assigned to the SAP B1 user.
+It is required that the employee is assigned to the SAP Business One user.
 :::
 
 ## Attachments

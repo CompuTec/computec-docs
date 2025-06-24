@@ -25,9 +25,9 @@ The Plugins Pack is a WebClientExtension with the collection of plugins that are
     ![Install WebClient Extension Package](./media/working-with-sap-business-one-web-client/install-web-client-extn.webp)
 4. After activation/deactivation a new plugin for a company, remember to repeat this process to install the new plugins pack for that company.
 
-## Manual Activation via Extension Manager 
+## Manual Activation via Extension Manager
 
-The manual activation is mainly provided for SAP B1 Cloud Control Center (CCC).
+The manual activation is mainly provided for SAP Business One Cloud Control Center (CCC).
 
 To manually install and activate CompuTec Web Client Start, follow these steps:
 

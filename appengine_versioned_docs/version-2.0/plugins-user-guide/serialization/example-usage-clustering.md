@@ -224,12 +224,12 @@ The document status changes to Closed which is visible in the WEB application in
 
 ### Receipt Document
 
-Go to Receipt Document and enter Vendor, Warehouse and Bin Location (if applicable) and optionally Remarks, and then select ![Clustering - Receipt Document](./media/clustering/image2020-1-9-15-25-44.png). The GRPO document is saved and is now visible in SAP B1.
+Go to Receipt Document and enter Vendor, Warehouse and Bin Location (if applicable) and optionally Remarks, and then select ![Clustering - Receipt Document](./media/clustering/image2020-1-9-15-25-44.png). The GRPO document is saved and is now visible in SAP Business One.
 
 ![Clustering](./media/clustering/image2020-1-9-17-21-28.png)![Clustering](./media/clustering/image2020-1-15-12-51-44-1.png)
 ![Clustering](./media/clustering/image2020-1-9-17-25-51.png)
 
-Goods Receipt PO in SAP B1:
+Goods Receipt PO in SAP Business One:
 
 ![Clustering](./media/clustering/goods-receipt-po-in-sapb1.png)
 

@@ -22,7 +22,7 @@ To create and manage teams:
 
     ![Team](./media/teams/team.webp)
 
-New employees can be added using the SAP B1 Employee Master Data function:
+New employees can be added using the SAP Business One Employee Master Data function:
 Main Menu → Human Resources → Employee Master Data
 
 ---

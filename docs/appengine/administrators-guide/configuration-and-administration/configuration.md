@@ -80,7 +80,7 @@ You will be prompted for the B1SiteUser password.
 
     ![Company Status](./media/configuration-and-administration/company-status.png)
 
-6. Choose a user for the installation process. If a suitable user does not already exist, specify a new SAP B1 user account. **This process do not create user in SAP. It is just creating user in CompuTec AppEngine**. This user needs to have the necessary permissions in SAP Business One to handle installation and configuration tasks. This user will be also used as default for future installations and background processing tasks.
+6. Choose a user for the installation process. If a suitable user does not already exist, specify a new SAP Business One user account. **This process do not create user in SAP. It is just creating user in CompuTec AppEngine**. This user needs to have the necessary permissions in SAP Business One to handle installation and configuration tasks. This user will be also used as default for future installations and background processing tasks.
 
     ![Assign Default User](./media/configuration-and-administration/assign-default-user-01.png)
 

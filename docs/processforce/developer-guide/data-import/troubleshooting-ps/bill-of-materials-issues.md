@@ -62,7 +62,7 @@ None of the Items in Bill of Material of type external is marked as Subcontracti
 
 1. Open BOM_Items.csv and locate the BOM items for Item SubFG and Revision Code 00.
 2. Identify which items are marked as SubcontractingItem = Y.
-3. Open SAP B1 Client and check the Item Master Data for each subcontracting item.
+3. Open SAP Business One Client and check the Item Master Data for each subcontracting item.
 4. Verify that the Stock Item field is "unchecked".
 
 **Resolution**

@@ -17,12 +17,12 @@ To start working with CompuTec PDC you must:
 - [download](./releases/download.md) the CompuTec PDC installation file and install it according to the instructions. Be sure to fulfill the requirements
 - obtain a license file from CompuTec support and install it via CompuTec License Server. You can check how to do this here
 - run the application by clicking its icon on a program list or a shortcut and set it up.
-- log in using ProcessForce employee username and password (defined in SAP B1 with ProcessForce: Human Resources > Employee Master Data)
+- log in using ProcessForce employee username and password (defined in SAP Business One with ProcessForce: Human Resources > Employee Master Data)
 - CompuTec PDC is ready to work.
 
 ### Adding a New Task
 
-The main purpose of CompuTec PDC is to register work time (which is performed by creating Time Bookings documents in SAP B1 databases). It is counted for a specific task performed on a specific resource. To start work with CompuTec PDC, click Add New Task icon and set the details of a task.
+The main purpose of CompuTec PDC is to register work time (which is performed by creating Time Bookings documents in SAP Business One databases). It is counted for a specific task performed on a specific resource. To start work with CompuTec PDC, click Add New Task icon and set the details of a task.
 
 ![Add New Task icon](./media/index/add-new-task-icon.webp)
 
