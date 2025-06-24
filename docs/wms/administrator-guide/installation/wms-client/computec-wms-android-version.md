@@ -65,19 +65,15 @@ The Android version of the CompuTec WMS client includes tools to test the connec
 
 Here, you can use one of three tests:
 
-- **Server**
-
-    Select this option and click Test to check the connection to the CompuTec WMS server. You will receive a message indicating whether the connection attempt was successful.
+- **Server**: Select this option and click Test to check the connection to the CompuTec WMS server. You will receive a message indicating whether the connection attempt was successful.
 
     ![Test Server](./media/test-server.webp)
-- **Ping**
 
-    Choose this option and click Test to measure the latency of the connection. A message will display the latency value. Click Stop to end the test.
+- **Ping**: Choose this option and click Test to measure the latency of the connection. A message will display the latency value. Click Stop to end the test.
 
     ![Enabled](./media/test-ping.webp)
-- **Download**
 
-    Select this option and click Start to test the download speed. You will receive an approximate download speed message. The test will automatically stop after a short period, or you can click Stop to end the test.
+- **Download**: Select this option and click Start to test the download speed. You will receive an approximate download speed message. The test will automatically stop after a short period, or you can click Stop to end the test.
 
     ![Download Test](./media/test-download.webp)
 
@@ -105,9 +101,63 @@ For the Intent Extra Key Data, set it to: **com.motorolasolutions.emdk.datawedge
 
 On certain Zebra devices, such as the MC330K, these settings are automatically configured because CompuTec WMS creates a DataWedge profile.
 
-If your device does not provide an option to define the Intent Data key, refer to your device's documentation to identify the key used for sending barcode data. Once identified, enter this key in the CompuTec WMS Scanner settings under **Intent data string**. If you're unable to locate the key, you can enable logging in the CompuTec WMS scanner settings after activating the Intent action. This will allow you to check the log files for the correct barcode data key being sent to WMS.
+If your device does not provide an option to define the Intent Data key, refer to your device's documentation to identify the key used for sending barcode data. Once identified, enter this key in the CompuTec WMS Scanner settings under **Intent data string**. If you're unable to locate the key, you can enable logging in the CompuTec WMS scanner settings after activating the Intent action. This will allow you to check the log files for the correct barcode data key being sent to CompuTec WMS.
 
 ![Scanner](./media/android-scanner-03.webp)
+
+## CipherLab  RS38 Scanner Configuration
+
+After reinstalling the CompuTec WMS Client, the DataWedge (ReaderConfig) profile was not created automatically. To resolve this, a new profile was configured manually with the correct settings to ensure smooth barcode scanning integration.
+
+### Step-by-Step Configuration Process
+
+1. Create a New DataWedge Profile:
+
+    - Open the DataWedge application on the CipherLab device.
+    - Tap the “+” (Add) icon to create a new profile.
+    - Name the profile: ReaderConfig
+    - In the Associated Apps section, link the profile to your CompuTec WMS Client app.
+    - Ensure the profile is enabled.
+
+2. Configure CompuTec WMS Client Settings:
+
+    - Navigate to CompuTec WMS Options → Scanner Tab
+    - Set Intent Data String to: Decoder_Data
+
+        ![CompuTec WMS Client](./media/wms-client.png)
+
+3. Configure ReaderConfig in DataWedge:
+
+        ![CompuTec Data Wedge](./media/reader-config.png)
+
+    1. Scanner Preferences:
+        Scan Mode: Select Release Scan Mode
+
+            ![Scanner Preferences](./media/scanner-preferences.png)
+
+    2. Data Output Settings:
+
+            ![Data Output](./media/data-output.png) ![Data Output](./media/data-output-1.png)  
+
+        1. Default Mode: Set to Intent
+
+            1. Under Related Settings:
+                1. Intent Action: barcodescanner.RECVR
+                2. Intent Decode Data / Prefix / Suffix: Leave all fields empty
+
+                    ![Intent Decode Data](./media/intent.png)
+
+        2. Auto Enter Settings: Set to Disable
+
+        3. Auto Enter Character: Select None
+
+            ![Auto Enter](./media/auto-enter.png)
+
+4. Final Verification:
+
+    - Save the DataWedge profile.
+    - Relaunch or restart the CompuTec WMS Client app.
+    - Perform a test scan to ensure barcode data is received correctly in the app via the Decoder_Data intent.
 
 ## Configuration (Barcode Scanner Settings) for Denso Android Device
 
@@ -115,12 +165,12 @@ If your device does not provide an option to define the Intent Data key, refer t
 
 ![Barcode Scanner Settings](./media/screenshot-4.png) ![Output Settings](./media/screenshot-5.png) ![Method](./media/screenshot-6.png)
 
-Enter `barcodescanner.RECVR` in Intent Action Name:
+Enter `barcodescanner.RECVR` in Intent Action Name.
 
-![Output Settings](./media/screenshot-7.png)
+    ![Output Settings](./media/screenshot-7.png)
 
 Enter `com.densowave.bhtsdk.barcode.outputsettings.intent.extra.BARCODE_DATA` in Intent data string
 
-![Intent data string](./media/screenshot-8.png)
+    ![Intent data string](./media/screenshot-8.png)
 
 ---

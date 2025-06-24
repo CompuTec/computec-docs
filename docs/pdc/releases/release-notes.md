@@ -15,12 +15,12 @@ toc_max_heading_level: 2
 
 | Issue Type | Component/s | Release Note |
 | --- | --- | --- |
-| Bug | Configuration | SQL password is visible in the user configuration file |
-| Bug | PDC | A bin allocation error occurs during issue to production |
-| Bug | PDC | Scanning by batch does not auto-fill the Item Code, Batch Number, or Bin Location. <br/>System does not validate locked batches |
-| Bug | PDC | In Quick Receipt, the system incorrectly handles the number of batches |
-| Bug | Labels | Duplicate label print requests are generated in CT Labels after a Pick Receipt is created in PDC |
-| Improvement | Pick and Pack | Add an "Auto Select All" button at the top of the PDC Receipt/Issue window |
+| Bug | Configuration | SQL password is visible in the user configuration file. |
+| Bug | CompuTec PDC | A bin allocation error occurs during issue to production. |
+| Bug | CompuTec PDC | Scanning by batch does not auto-fill the Item Code, Batch Number, or Bin Location. <br/>System does not validate locked batches. |
+| Bug | CompuTec PDC | In Quick Receipt, the system incorrectly handles the number of batches. |
+| Bug | Labels | Duplicate label print requests are generated in CT Labels after a Pick Receipt is created in CompuTec PDC. |
+| Improvement | Pick and Pack | Add an "Auto Select All" button at the top of CompuTec PDC Receipt/Issue window. |
 
 ## CompuTec PDC 3.10.25.2
 
@@ -28,8 +28,8 @@ toc_max_heading_level: 2
 
 | Issue Type | Component/s | Release Note |
 | --- | --- | --- |
-| Bug | PDC | SAP username and password is displayed under message log. |
-| Bug | PDC | Issues with pick order with serial managed items. <br/>An error message occurred: "Value cannot be null. Parameter name: source" |
+| Bug | CompuTec PDC | SAP username and password is displayed under message log. |
+| Bug | CompuTec PDC | Issues with pick order with serial managed items. <br/>An error message occurred: "Value cannot be null. Parameter name: source" |
 | Bug | Tasks | Duplicate labor tasks could be created for a single team leader. |
 
 ## CompuTec PDC 3.10.25.1
@@ -38,11 +38,11 @@ toc_max_heading_level: 2
 
 | Issue Type | Component/s | Release Note |
 | --- | --- | --- |
-| Story | PDC | Spanish Language Support in PDC Settings |
-| Bug | PDC | No message displayed when selecting a locked batch using a barcode scanner. |
-| Bug | PDC | Incorrect quantity notation in PDC. |
-| Improvement | PDC | PDC experiencing performance issues. |
-| Bug | PDC | Error "Sequence contains no matching element" encountered in MO list. |
+| Story | CompuTec PDC | Spanish Language Support in CompuTec PDC Settings. |
+| Bug | CompuTec PDC | No message displayed when selecting a locked batch using a barcode scanner. |
+| Bug | CompuTec PDC | Incorrect quantity notation in CompuTec PDC. |
+| Improvement | PDC | CompuTec PDC experiencing performance issues. |
+| Bug | CompuTec PDC | Error "Sequence contains no matching element" encountered in MO list. |
 
 ## CompuTec PDC 3.10.24.2 (Hotfix)
 
@@ -50,23 +50,23 @@ toc_max_heading_level: 2
 
 | Issue Type | Component/s | Release Note |
 | - | - | - |
-| Bug | PDC | Error message occured: "Problem with token SESSION" while attempting to preview the Bill of Materials (BOM) or Manufacturing Orders (MO). |
+| Bug | CompuTec PDC | Error message occurred: "Problem with token SESSION" while attempting to preview the Bill of Materials (BOM) or Manufacturing Orders (MO). |
 
-## CompuTec PDC 3.10.24.1
+## CompuTec CompuTec PDC 3.10.24.1
 
 **Release Date - 25 November 2024**
 
 | Issue Type | Component/s | Release Note |
 | - | - | - |
-| Bug | PDC | Item revision is missing in the input and output properties. |
-| Bug | PDC | An error message, "Start may not be called on a task that was already started," was being displayed during the Bill of Materials (BOM) or Manufacturing Order (MO) preview. While the preview continued to open successfully, the error caused unnecessary confusion for users. |
-| Bug | PDC | An error occurred, "Object reference not set to an instance of an object," while attempting to preview Bill of Materials (BOM) or Manufacturing Orders (MO). |
+| Bug | CompuTec PDC | Item revision is missing in the input and output properties. |
+| Bug | CompuTec PDC | An error message, "Start may not be called on a task that was already started," was being displayed during the Bill of Materials (BOM) or Manufacturing Order (MO) preview. While the preview continued to open successfully, the error caused unnecessary confusion for users. |
+| Bug | CompuTec PDC | An error occurred, "Object reference not set to an instance of an object," while attempting to preview Bill of Materials (BOM) or Manufacturing Orders (MO). |
 | Improvement | Configuration | The log file location has been updated to ProgramData\CompuTec\PDC3\Logs for PDC 3 and C:\ProgramData\CompuTec\PDC\Logs for PDC 4 |
-| Bug | PDC | Form Settings Update for Batch Selection in Issue to Production. |
-| Bug | PDC | After performing a Quick Receipt in the PDC system, PDC crashes unexpectedly. |
-| Bug | PDC | The list of Sales Orders (SO) is empty, when PDC is enabled for a specific resource. |
-| Bug | PDC | An error, "Operator '==' cannot be applied to operands of type 'int' and 'string'," was encountered when processing QC records. |
-| Improvement | Configuration | PDC Core was copying settings from the existing PDC, which led to the system considering itself as an update from PDC 3 |
+| Bug | CompuTec PDC | Form Settings Update for Batch Selection in Issue to Production. |
+| Bug | CompuTec PDC | After performing a Quick Receipt in the CompuTec PDC system, CompuTec PDC crashes unexpectedly. |
+| Bug | CompuTec PDC | The list of Sales Orders (SO) is empty, when PDC is enabled for a specific resource. |
+| Bug | CompuTec PDC | An error, "Operator '==' cannot be applied to operands of type 'int' and 'string'," was encountered when processing QC records. |
+| Improvement | Configuration | CompuTec PDC Core was copying settings from the existing CompuTec PDC, which led to the system considering itself as an update from CompuTec PDC 3. |
 
 ## CompuTec PDC 3.10.23.1
 
@@ -74,8 +74,8 @@ toc_max_heading_level: 2
 
 | Issue Type | Component/s | Release Note |
 | - | - | - |
-| Bug | PDC | Unable to open attachments on PDC |
-| Bug | PDC | The update to the Planned Quantity isn't reflected in the PDC Task. |
+| Bug | CompuTec PDC | Unable to open attachments on CompuTec PDC. |
+| Bug | CompuTec PDC | The update to the Planned Quantity isn't reflected in CompuTec PDC Task. |
 
 ## CompuTec PDC 3.10.22.1
 
@@ -83,20 +83,20 @@ toc_max_heading_level: 2
 
 | Issue Type | Component/s | Release Note |  Linked issue/s\*\* |
 | --- | --- | --- | --- |
-| Bug | Downtimes | PDC crashes on quick receipt | - |
-| Bug | PDC | Issues with auto selection of bin location on pick receipt | SPDC - 854 |
-| Bug | PDC | Spelling mistake in "Bin Loacation" | SPDC - 869 |
-| Bug | PDC | Post time booking error - At Least one row must be filled. | SPDC - 868 |
-| Improvement | PDC | "Select all" and "Unselect all" option is available under close task | SPDC - 868 |
-| Bug | PDC | Warehouse quantity is incorrect in pick receipt | SPDC - 872 |
-| Bug | PDC | MO crystal report is not opening in PDC | SPDC - 861 |
-| Bug | PDC | Scaling issue in quantity time registration screen in PDC | SPDC - 774 |
-| Improvement | Management Board | Allow user to view all the MOs in management board | SPDC - 851 |
-| Bug | PDC | Object reference not set to an instance of an object" error on selecting substitute | SPDC - 852 |
-| Bug | PDC | Able to add times when operation is onhold/finished | SPDC - 842 |
-| Bug | PDC | Able to start runtime even though there is advanced relation | - |
-| Bug | Downtimes | Adding downtime doesnt automatically end the existing runtime | - |
-| Bug | PDC | Date format in quick time registration does not follow the general settings | - |
+| Bug | Downtimes | CompuTec PDC crashes on quick receipt. | - |
+| Bug | CompuTec PDC | Issues with auto selection of bin location on pick receipt. | SPDC - 854 |
+| Bug | CompuTec PDC | Spelling mistake in "Bin Location" | SPDC - 869 |
+| Bug | CompuTec PDC | Post time booking error - At Least one row must be filled. | SPDC - 868 |
+| Improvement | CompuTec PDC | "Select all" and "Unselect all" option is available under close task. | SPDC - 868 |
+| Bug | CompuTec PDC | Warehouse quantity is incorrect in pick receipt. | SPDC - 872 |
+| Bug | CompuTec PDC | MO crystal report is not opening in CompuTec PDC. | SPDC - 861 |
+| Bug | CompuTec PDC | Scaling issue in quantity time registration screen in CompuTec PDC. | SPDC - 774 |
+| Improvement | Management Board | Allow user to view all the MOs in Management Board. | SPDC - 851 |
+| Bug | CompuTec PDC | Object reference not set to an instance of an object" error on selecting substitute. | SPDC - 852 |
+| Bug | CompuTec PDC | Able to add times when operation is on hold/finished. | SPDC - 842 |
+| Bug | CompuTec PDC | Able to start runtime even though there is advanced relation. | - |
+| Bug | Downtimes | Adding downtime doesn't automatically end the existing runtime. | - |
+| Bug | CompuTec PDC | Date format in quick time registration does not follow the general settings. | - |
 
 ## CompuTec PDC 3.10.21.1
 
@@ -104,7 +104,7 @@ toc_max_heading_level: 2
 
 | Issue Type  | Component/s | Release Note                                                                                                         | Linked issue/s\*\* |
 | ----------- | ----------- | -------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| Improvement | General     | A warning message is displayed upon attempts pt to start another Task on a Resource that already has a started Task. | –                  |
+| Improvement | General     | A warning message is displayed upon attempt to start another Task on a Resource that already has a started Task. | –                  |
 | Bug         | Downtime    | An 'Object reference not set to an instance of an object error occurs upon recording a Downtime in specific cases.   | SPROC-15212        |
 
 ---
@@ -117,19 +117,19 @@ toc_max_heading_level: 2
 | --- | --- | --- | --- |
 | Improvement | Barcodes | Scanning a MODocEntry + RscLineNum barcode adds a new Task (or opens a Task – when it is already added). | - |
 | Improvement | Labels | New Crystal Reports mechanism. Please check the related [SAP website](https://help.sap.com/docs/SAP_BUSINESS_ONE_VERSION_FOR_SAP_HANA/686100cb1bc34346b2bc6642685bab43/b1bbebd32ff940c786c76315a8dfa270.html). | SPDC-748|
-| Improvement | PDC | Pick Receipt, number of Batches set to more than one: a lack of warning message about the "Batch generated when Manufacturing Order is" is selected and hence cannot create multiple Batches. | - |
-| Improvement | Tasks | - More space for user-specific buttons that were added in the PDC. <br/>- Additional space in the tile for custom fields. <br/>- Highlighting of the PDC buttons when additional information is available, for example, a drawing or instructions. | - |
+| Improvement | CompuTec PDC | Pick Receipt, number of Batches set to more than one: a lack of warning message about the "Batch generated when Manufacturing Order is" is selected and hence cannot create multiple Batches. | - |
+| Improvement | Tasks | - More space for user-specific buttons that were added in CompuTec PDC. <br/>- Additional space in the tile for custom fields. <br/>- Highlighting of the CompuTec PDC buttons when additional information is available, for example, a drawing or instructions. | - |
 | Bug | Barcodes | Scanning a 22-sign barcode causes a crash of the application. | - |
-| Bug | PDC | A Task in Time Booking that is closed and then reopened by correction is still displayed as closed in the application. | - |
-| Bug | PDC | Crystal Runtime: the application crashes upon clicking on Goods Receipt or Goods Issue. <br/>The error message: <br/><blockquote>EXCEPTION OCCURRED:System.Windows.Markup.XamlParseException</blockquote> | - |
-| Bug | PDC | In some cases, double display of Quality Tests in the Select Quality Control test drop-down list. | - |
-| Bug | PDC | Incorrect system message upon creating Pick Receipt / Pick Order for a Finished Manufacturing Order: "Cannot receipt from production. Manufacturing Order no. [...] is closed." | - |
-| Bug | PDC | It is possible to add a Pick Receipt to a Finished Manufacturing Orders. | SPDC-641, <br/>SPDC-729, <br/>SPDC-679 |
-| Bug | PDC | Management Board, filters: unselected Resources are not available after re-logging. | SPDC-733 |
-| Bug | PDC | Pick Receipt: an error occurs upon creating a task for a Manufacturing Order with a Resource that has "Receipt Whs Code" in the "Resource" form with the Bin location <br/>the error message: <br/><blockquote>You cannot allocate bin locations.</blockquote> | - |
-| Bug | PDC | Scrap Quantity is doubled when shown in the  Quantity Registration screen. | SPDC-774 |
-| Bug | PDC | The Bin Location management is not supported in Pick Receipt / Pick Order. | SPDC-641, <br/>SPDC-542, <br/>SPDC-679, <br/>SPDC-729 |
-| Bug | PDC | When Team Sync is enabled, the system creates a single line for a machine on a Time Booking and only books time for the Team Leader. | - |
+| Bug | CompuTec PDC | A Task in Time Booking that is closed and then reopened by correction is still displayed as closed in the application. | - |
+| Bug | CompuTec PDC | Crystal Runtime: the application crashes upon clicking on Goods Receipt or Goods Issue. <br/>The error message: <br/><blockquote>EXCEPTION OCCURRED:System.Windows.Markup.XamlParseException</blockquote> | - |
+| Bug | CompuTec PDC | In some cases, double display of Quality Tests in the Select Quality Control test drop-down list. | - |
+| Bug | CompuTec PDC | Incorrect system message upon creating Pick Receipt / Pick Order for a Finished Manufacturing Order: "Cannot receipt from production. Manufacturing Order no. [...] is closed." | - |
+| Bug | CompuTec PDC | It is possible to add a Pick Receipt to a Finished Manufacturing Orders. | SPDC-641, <br/>SPDC-729, <br/>SPDC-679 |
+| Bug | CompuTec PDC | Management Board, filters: unselected Resources are not available after re-logging. | SPDC-733 |
+| Bug | CompuTec PDC | Pick Receipt: an error occurs upon creating a task for a Manufacturing Order with a Resource that has "Receipt Whs Code" in the "Resource" form with the Bin location <br/>the error message: <br/><blockquote>You cannot allocate bin locations.</blockquote> | - |
+| Bug | CompuTec PDC | Scrap Quantity is doubled when shown in the  Quantity Registration screen. | SPDC-774 |
+| Bug | CompuTec PDC | The Bin Location management is not supported in Pick Receipt / Pick Order. | SPDC-641, <br/>SPDC-542, <br/>SPDC-679, <br/>SPDC-729 |
+| Bug | CompuTec PDC | When Team Sync is enabled, the system creates a single line for a machine on a Time Booking and only books time for the Team Leader. | - |
 
 ---
 
@@ -139,13 +139,13 @@ toc_max_heading_level: 2
 
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
-| Improvement | PDC | It is now possible to Issue/Receipt from multiple warehouses from the Resource Tile level. | SPDC-641 |
-| Improvement | PDC | Pick Issue: now, adding Bind Materials to Pick Issue is optional. | - |
-| Bug | PDC | Downtime Reasons are duplicated in SAP Business One when registered from CompuTec PDC in specific cases. | SPDC-740 |
-| Bug | PDC | Inactive Resources are still visible in CompuTec PDC. | SPDC-735 |
-| Bug | PDC | Management Board, filters: un-selected Resources are not available after re-logging. | SPDC-733 |
-| Bug | PDC | Receipt From Production: clicking the Generate icon causes an error in specific cases. | – |
-| Bug | PDC | Receipt from production: no Generate button for lines. | SPDC-739 |
+| Improvement | CompuTec PDC | It is now possible to Issue/Receipt from multiple warehouses from the Resource Tile level. | SPDC-641 |
+| Improvement | CompuTec PDC | Pick Issue: now, adding Bind Materials to Pick Issue is optional. | - |
+| Bug | CompuTec PDC | Downtime Reasons are duplicated in SAP Business One when registered from CompuTec PDC in specific cases. | SPDC-740 |
+| Bug | CompuTec PDC | Inactive Resources are still visible in CompuTec PDC. | SPDC-735 |
+| Bug | CompuTec PDC | Management Board, filters: un-selected Resources are not available after re-logging. | SPDC-733 |
+| Bug | CompuTec PDC | Receipt From Production: clicking the Generate icon causes an error in specific cases. | – |
+| Bug | CompuTec PDC | Receipt from production: no Generate button for lines. | SPDC-739 |
 | Bug | Tasks | The quantity mentioned in the Quick Issue screen is not copied to the issue line and Batch. | - |
 
 ---
@@ -156,14 +156,14 @@ toc_max_heading_level: 2
 
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
-| Improvement | Barcodes | Scanning a MODocEntry + RscLineNum barcode adds a new Task (or opens a Task - when it is already added) | – |
-| Improvement | PDC | Goods Issue and Goods Receipt: UoM code and Exp. Date fields added | SPDC-709 |
-| Improvement | PDC | PDC Settings: a possibility to define the time after dialog windows are closed automatically. | – |
-| Improvement | PDC | Pick Order and Pick Receipt: Select all and Unselect all options added | SPDC-710 |
-| Improvement | PDC | Pick Receipt: the Generate Batches option added - it is possible to define a number of Batches | SPDC-622 |
-| Bug | PDC | An error occurs upon adding a Task for a Resource, recording time, adding Downtime, clicking the Pass to another resource option, and clicking the Thumbs up icon. Error message: End Date wrong. | – |
-| Bug | PDC | Pick Order: if an Item is bound to an Operation, it is not selected for all the Resources. | SPDC-710 |
-| Bug | PDC | The Manufacturing Order and Bill of Materials Crystal previews do not work | SPDC-635 |
+| Improvement | Barcodes | Scanning a MODocEntry + RscLineNum barcode adds a new Task (or opens a Task - when it is already added). | – |
+| Improvement | CompuTec PDC | Goods Issue and Goods Receipt: UoM code and Exp. Date fields added | SPDC-709 |
+| Improvement | CompuTec PDC | CompuTec PDC Settings: a possibility to define the time after dialog windows are closed automatically. | – |
+| Improvement | CompuTec PDC | Pick Order and Pick Receipt: Select all and Unselect all options added. | SPDC-710 |
+| Improvement | CompuTec PDC | Pick Receipt: the Generate Batches option added - it is possible to define a number of Batches. | SPDC-622 |
+| Bug | CompuTec PDC | An error occurs upon adding a Task for a Resource, recording time, adding Downtime, clicking the Pass to another resource option, and clicking the Thumbs up icon. Error message: End Date wrong. | – |
+| Bug | CompuTec PDC | Pick Order: if an Item is bound to an Operation, it is not selected for all the Resources. | SPDC-710 |
+| Bug | CompuTec PDC | The Manufacturing Order and Bill of Materials Crystal previews do not work. | SPDC-635 |
 
 ---
 
@@ -173,16 +173,16 @@ toc_max_heading_level: 2
 
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
-| Improvement | PDC | Change of generating Terminal ID regarding working of CompuTec PDC/WMS on the terminal server or not. | - |
+| Improvement | CompuTec PDC | Change of generating Terminal ID regarding working of CompuTec PDC/WMS on the terminal server or not. | - |
 | Improvement | Barcodes | Possibility to set custom prefix, suffix, and group separator in the barcode mechanism. | – |
-| Improvement | PDC | Improvements related to managing Batches and time types in Quick Time Booking: <br/>- Batch number column, <br/>- filtering records by Batch number, <br/>- automatic expand option, <br/>- option to display only lines with any values in Times. | - |
+| Improvement | CompuTec PDC | Improvements related to managing Batches and time types in Quick Time Booking: <br/>- Batch number column, <br/>- filtering records by Batch number, <br/>- automatic expand option, <br/>- option to display only lines with any values in Times. | - |
 | Improvement | Tasks | A possibility for a Team Leaders to create their own Labor Task. | SPDC-699 |
-| Bug | PDC | Issue to Production: no Batches listed in some cases. | CT-5289 |
-| Bug | PDC | Issue to Production: Warehouse Quantity incorrectly displayed as 0 is some cases. | SPDC-707 |
-| Bug | PDC | Not able to download CompuTec PDC installer from AppEngine. | – |
-| Bug | PDC | QC Test Properties details are not updated properly in SAP Business One, e.g. the Pass/Failed column value is not updated. | SPDC-689 |
-| Bug | PDC | The Automatically use left quantity as picked option does not work. | – |
-| Bug | PDC | Tool Properties are not displayed in CompuTec PDC. | SPDC-695 |
+| Bug | CompuTec PDC | Issue to Production: no Batches listed in some cases. | CT-5289 |
+| Bug | CompuTec PDC | Issue to Production: Warehouse Quantity incorrectly displayed as 0 is some cases. | SPDC-707 |
+| Bug | CompuTec PDC | Not able to download CompuTec PDC installer from CompuTec AppEngine. | – |
+| Bug | CompuTec PDC | QC Test Properties details are not updated properly in SAP Business One, e.g. the Pass/Failed column value is not updated. | SPDC-689 |
+| Bug | CompuTec PDC | The Automatically use left quantity as picked option does not work. | – |
+| Bug | CompuTec PDC | Tool Properties are not displayed in CompuTec PDC. | SPDC-695 |
 
 ---
 
@@ -193,7 +193,7 @@ toc_max_heading_level: 2
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
 | Improvement | Configuration | Chinese language version added. | - |
-| Improvement | Configuration | Support for SSL/TLS connection between CompuTec PDC and AppEngine added. | - |
+| Improvement | Configuration | Support for SSL/TLS connection between CompuTec PDC and CompuTec AppEngine added. | - |
 | Improvement | Pick Receipt, UDFs | Now UDFs in Pick Receipt for all Items are editable (not only for Batch or Serial managed Items). | – |
 | Improvement | Management Board | Possibility to save Management Board filter settings added. | SPDC-245 |
 | Improvement | Other | The Customization options are now available for Confirmation Panel. | - |
@@ -212,9 +212,9 @@ toc_max_heading_level: 2
 
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
-| Bug | Barcodes | When a user clicks some of the UI elements, sometimes the application loses keyboard focus which causes problems with recognizing barcode characters. <br/>Error message: <br/><blockquote>Barcode toParse can not be empty</blockquote> | - |
-| Bug | PDC | Quality Control form issues: <li>It is not possible to update columns Current Value and Tested Reference on the parent line when the Enable multiple test results parameter in General Settings > PF > QC is checked.</li><li>The Pass/Fail column is not populated by the system when a user enters Current Value or Tested Reference</li><li>Clicking Update does not accept the correct PDC user name and password</li><li>The Tested Reference column: not all of the related references are listed in the drop-down list.</li><li>Test Properties (loaded from SAP Business One) in CompuTec PDC is set to PASS (without the Current Value column filled in) even though in SAP Business One they are set to To Be Determined</li><li>The Test Results (Pass/Fail) determined in CompuTec PDC are not copied to SAP Business One, even though the Tested Values are</li><li>There is no system message about a result upon clicking the Update button, which may lead to setting the same line more than once.</li> | SPDC-624 |
-| Bug | PDC | Quick Work Registration: if there is more than one same Operation with Resource in a Manufacturing Order, only one Operation is displayed | SPDC-621 |
+| Bug | Barcodes | When a user clicks some of the UI elements, sometimes the application loses keyboard focus which causes problems with recognizing barcode characters. <br/>Error message: <br/><blockquote>Barcode toParse can not be empty.</blockquote> | - |
+| Bug | CompuTec PDC | Quality Control form issues: <li>It is not possible to update columns Current Value and Tested Reference on the parent line when the Enable multiple test results parameter in General Settings > PF > QC is checked.</li><li>The Pass/Fail column is not populated by the system when a user enters Current Value or Tested Reference</li><li>Clicking Update does not accept the correct CompuTec PDC user name and password</li><li>The Tested Reference column: not all of the related references are listed in the drop-down list.</li><li>Test Properties (loaded from SAP Business One) in CompuTec PDC is set to PASS (without the Current Value column filled in) even though in SAP Business One they are set to To Be Determined</li><li>The Test Results (Pass/Fail) determined in CompuTec PDC are not copied to SAP Business One, even though the Tested Values are</li><li>There is no system message about a result upon clicking the Update button, which may lead to setting the same line more than once.</li> | SPDC-624 |
+| Bug | CompuTec PDC | Quick Work Registration: if there is more than one same Operation with Resource in a Manufacturing Order, only one Operation is displayed | SPDC-621 |
 | Bug | Pick and Pack | Issue for Production: once a Substitute Item is added, it is not possible to add the original Item | - |
 
 ---
@@ -254,7 +254,7 @@ toc_max_heading_level: 2
 | Issue Type | Component | Release Note| Linked issue/s\*\* |
 | --- | --- | --- | --- |
 | Improvement | Management Board | Item Code available when assigning Tasks in Management Board | – |
-| Bug | Configuration | PDC Settings: all of the Resource are available to use in CompuTec PDC despite the fact of narrowing it down to one by Resource Code setting | – |
+| Bug | Configuration | CompuTec PDC Settings: all of the Resource are available to use in CompuTec PDC despite the fact of narrowing it down to one by Resource Code setting | – |
 | Bug | General | Cannot create any Time Booking after logging in using a barcode (without connection to AppEngine) | – |
 
 ---
@@ -312,7 +312,7 @@ toc_max_heading_level: 2
 | Bug | Pick and Pack | A Batch Status upon Receipt from Production made in CompuTec PDC is not updated in SAP Business One | SPDC-449 |
 | Bug | Pick and Pack  | The accounting columns are not filled in in ProcessForce upon Pick Receipt / Pick Order creation in CompuTec PDC | SPDC-462 |
 | Bug | SAP | Manufacturing Order Layout does not work | – |
-| Bug | Tasks, Time Booking | A Labour code is not filled for a Team Time Booking | – |
+| Bug | Tasks, Time Booking | A Labor code is not filled for a Team Time Booking | – |
 
 ---
 
@@ -394,7 +394,7 @@ toc_max_heading_level: 2
 | Bug | Labels | Label Print error upon performing Pick Receipt in CompuTec PDC. | 3.93.13.1 <br/>(3.10.2.0) | SPDC-397 |
 | Bug | Other | Auto log out option: some actions are not registered on touchscreen devices which leads to auto log out regardless of activity. | 3.93.13.1 (3.10.2.0), <br/>2.93.13.1 (2.10.2.0) | SPDC-393 |
 | Improvement | Pick and Pack | Weight Wizard: choosing Items by sequence number added. | 3.93.13.1 (3.10.2.0), <br/>2.93.13.1 (2.10.2.0) | SPDC-343 |
-| Bug | Configuration | An error occurs upon changing Windows Language Preferences and running CompuTec PDC Plug-in application (the error also occurs when AppEngine is installed on server other than PDC and the servers have different Language Preferences set). <br/>Error message: <blockquote>Not Connected Current version of PDC is to low</blockquote> | 3.93.13.1 (3.10.2.0) | SPDC-389 |
+| Bug | Configuration | An error occurs upon changing Windows Language Preferences and running CompuTec PDC Plug-in application (the error also occurs when AppEngine is installed on server other than CompuTec PDC and the servers have different Language Preferences set). <br/>Error message: <blockquote>Not Connected Current version of CompuTec PDC is to low</blockquote> | 3.93.13.1 (3.10.2.0) | SPDC-389 |
 | Bug | Tasks | Application settings: turning on Single Resource option causes an error upon adding a Task and clicking By Resource tab. Also, all Resources are available anyway. | 3.93.13.1 (3.10.2.0) | SPDC-390 |
 | Bug | SAP | Cannot record Down Time without choosing a Technician. | 3.93.13.1 (3.10.2.0) | SKEAD-2513 |
 | Bug | Tasks | Task Panel: clicking one of the lines (Set up, Run, Down Time) not always opens a related Confirmation Panel on the line. | 3.93.13.1 (3.10.2.0) | |
@@ -411,12 +411,12 @@ toc_max_heading_level: 2
 | --- | --- | --- | --- | --- |
 | Bug | Pick and Pack | Weight Wizard do not fill in some of the fields, which leads to inability to create related Pick Order | 3.93.12.1 (3.10.1.0) | SPDC-381 |
 | Story | Configuration | Cannot open Weight Wizard in some cases | 3.93.12.1 (3.10.1.0) | SPDC-374 |
-| Bug | Configuration | Cannot save Customization changes in AppEnging plug-in version | 3.93.12.1 (3.10.1.0) | SPDC-373 |
+| Bug | Configuration | Cannot save Customization changes in CompuTec AppEngine plugin version | 3.93.12.1 (3.10.1.0) | SPDC-373 |
 | Bug | Configuration, Tasks | Resources with specific characters in its name, e.g. '/', '(', not supported | 3.93.12.1 (3.10.1.0) | - |
 | Improvement | Pick and Pack | Items managed by Serial Numbers are now supported in Pick Receipt and Pick Order | 3.93.12.1 (3.10.1.0) | - |
 | Improvement | Management Board | Management Board: performance improvements in AppEngine plug-in version (previously opening of the Board took a long time and took longer with every next opening) | 3.93.12.1 (3.10.1.0) | - |
 | Bug | Pick and Pack | Cannot create Goods Receipt for Items that is not managed either by Serial Numbers, or Batches | 2.93.12.1 (2.10.1.0), <br/>3.93.12.1 (3.10.1.0) | - |
-| Bug | Configuration | PDC Settings: all of the Resource are available to use in CompuTec PDC despite the fact of narrowing it down to one by Resource Code setting | 2.93.12.1 (2.10.1.0), <br/>3.93.12.1 (3.10.1.0) | SPDC-278 |
+| Bug | Configuration | CompuTec PDC Settings: all of the Resource are available to use in CompuTec PDC despite the fact of narrowing it down to one by Resource Code setting | 2.93.12.1 (2.10.1.0), <br/>3.93.12.1 (3.10.1.0) | SPDC-278 |
 | Improvement | Pick and Pack | New block barcode prefix supported: Sequence + Operation (for identifying an Operation if there the operation is present on a Manufacturing Order more than once) | 2.93.12.1 (2.10.1.0), <br/>3.93.12.1 (3.10.1.0) | - |
 | Bug | Other | Weight Wizard: when the same Item is present more than one time in a Manufacturing Order, the document line cannot be identified properly (identifying only by Item Code). Now each line is identified by Sequence and Item Code | 2.93.12.1 (2.10.1.0), <br/>3.93.12.1 (3.10.1.0) | SPDC-343 |
 | Improvement | Other | Weight Wizard: more information on an Item when choosing it in the first step. There were: Item Code, Quantity; there is now: Sequence, Item Code, Item Description, Quantity | 2.93.12.1 (2.10.1.0), <br/>3.93.11.1 | SPDC-341 |
@@ -430,6 +430,6 @@ toc_max_heading_level: 2
 
 **Release Date - 23 April 2020**
 
-    - AppEngine version for ProcessForce 9.3 PL11 Release1 (R1)
+    - CompuTec AppEngine version for CompuTec ProcessForce 9.3 PL11 Release1 (R1)
 
 ---

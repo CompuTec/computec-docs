@@ -53,7 +53,7 @@ For optimal performance, the 64-bit version is recommended.
 
 Before installing CompuTec PDC, the following components must be installed:
 
-1. Install [AppEngine](/docs/appengine/2.0/administrators-guide/requirements), [CompuTec ProcessForce plugin](https://learn.computec.one/docs/appengine/2.0/releases/plugins/processforce/download), and [CompuTec PDC plugin](https://learn.computec.one/docs/appengine/2.0/releases/plugins/pdc/download) in corresponding versions.
+1. Install [CompuTec AppEngine](/docs/appengine/2.0/administrators-guide/requirements), [CompuTec ProcessForce plugin](https://learn.computec.one/docs/appengine/2.0/releases/plugins/processforce/download), and [CompuTec PDC plugin](https://learn.computec.one/docs/appengine/2.0/releases/plugins/pdc/download) in corresponding versions.
 
 2. Install SAP Crystal Reports runtime engine for .NET Framework for either the 32-bit or 64-bit version, depending on your system architecture. You can install it from SAP Business One installation package -> `Client\CRRuntime or Client.x64\CRRuntime`. It is required if users wish to open Crystal Reports directly from the application.
 
