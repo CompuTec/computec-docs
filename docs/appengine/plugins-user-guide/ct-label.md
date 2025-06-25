@@ -1,8 +1,8 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 
-# CompuTec Label
+# CompuTec Labels
 
 The CompuTec Labels (CTLabel) plugin is a powerful tool designed to enhance the functionality of CompuTec Labels, allowing users to manage and reprint labels efficiently. By following this guide, users can optimize their experience with the CTLabel plugin, streamlining label management processes and resolving printing errors with ease.
 
@@ -62,7 +62,7 @@ The plugin offers a comprehensive filter bar at the top of the page. Users can c
 5. **Printer Filter**
         - This filter enables you to search for requests associated with specific printers.
         - It is a MultiComboBox filter, allowing the selection of one or more printers.
-        - The available printers are derived from the list managed in the **Computec Label Printing Manager**.
+        - The available printers are derived from the list managed in the **CompuTec Label Printing Manager**.
 
         ![CompuTec Labels](./media/ctlabel/image2020-7-10-12-16-5.png)
 
@@ -114,7 +114,7 @@ The following steps outline the process for reprinting:
 
         ![CompuTec Labels](./media/ctlabel/image2020-7-10-12-48-43.png)
 
->**Note**: The list of printers is based on the list of printers from **Computec Label Printing Manager**.
+>**Note**: The list of printers is based on the list of printers from **CompuTec Label Printing Manager**.
 
 - Clicking the "Reprint" button will result in sending the request to reprint the label of the selected printer. If the operation is successful we will get a pop-up telling us that a new request has been added and the requests list will refresh automatically.
 
