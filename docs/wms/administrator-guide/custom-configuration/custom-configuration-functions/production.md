@@ -8,7 +8,7 @@ Effective management of production processes and inventory is crucial for busine
 
 ---
 
-## PF Pick Receipt tab
+## ProcessForce Pick Receipt tab
 
 ![Production ProcessForce Pick Receipt](./media/production/cc-production-pf-pick-receipt.png)
 
@@ -26,7 +26,7 @@ Effective management of production processes and inventory is crucial for busine
     </div>
     </details>
 
-**PF Pick Receipt PopUp Timer checkpoint** – Configures checkpoints during the picking process, such as None, Select the base document, Select Item on the list, Pick quantity to the first line, Save Document
+**ProcessForce Pick Receipt PopUp Timer checkpoint** – Configures checkpoints during the picking process, such as None, Select the base document, Select Item on the list, Pick quantity to the first line, Save Document
 
 **Scan DocNum on Base Document** – Enables scanning using DocNum instead of DocEntry when accessing the Pick Receipt or Manufacturing Order window.
 
@@ -86,13 +86,13 @@ Enabling this option also disables Storage Unit creation during the Pick Receipt
 
 **Do not save every scan to the Pick Receipt** -  Allows scanning multiple labels on the Quantity screen without updating the Pick Receipt each time. Updates are made only when the "Save" button is pressed.
 
-## PF Pick Order tab
+## ProcessForce Pick Order tab
 
 ![Pick Order](./media/custom-configuration-after-scanning.webp)
 
 **After scanning the item, auto return to** – Defines whether the application navigates to Document Details or remains on the Quantity Form after scanning an item barcode.
 
-**PF Pick Order PopUp Timer checkpoint** – Configures a specific checkpoint, such as selecting the base document, picking an item, or saving the document, with options like None, Select Base Document, or Save Document.
+**ProcessForce Pick Order PopUp Timer checkpoint** – Configures a specific checkpoint, such as selecting the base document, picking an item, or saving the document, with options like None, Select Base Document, or Save Document.
 
 **Copy available quantities to the Quantity box in Pick Order** – Automatically fills the quantity box with the available quantity during the Pick Order process.
 

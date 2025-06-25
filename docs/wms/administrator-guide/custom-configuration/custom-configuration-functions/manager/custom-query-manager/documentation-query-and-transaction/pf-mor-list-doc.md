@@ -37,9 +37,9 @@ sidebar_position: 25
 - **Guid** - Unique number for transaction
 - **UserId** - User Id from OUSR
 - **UserNameWMS** - User name WMS
-- **DeviceId** - Requester device Id adress
+- **DeviceId** - Requester device Id address
 
-### PF Pick Order , PF Pick Receipt, Transafer Request MOR
+### ProcessForce Pick Order , ProcessForce Pick Receipt, Transfer Request MOR
 
 - **DocumentSeries** - Document Series
 

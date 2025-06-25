@@ -25,9 +25,9 @@ The Put Away process begins after the physical receipt of goods into the warehou
 
 Before using the Put Away functionality, ensure the following prerequisites are installed and configured.
 
-- AppEngine 3.0
-- WMS 3.0
-- AE Plug-ins: WMS and BusinessLogic
+- CompuTec AppEngine 3.0
+- CompuTec WMS 3.0
+- CompuTec AppEngine Plugins: WMS and BusinessLogic
 
 ### AppEngine and Plug-in Installation and Configuration
 

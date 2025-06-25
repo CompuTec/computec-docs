@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Order Recommendation
 
-Efficient procurement planning is essential for maintaining optimal inventory levels. Order Recommendation in MRP 2.5 helps streamline this process by generating purchase and production suggestions based on demand and supply analysis. Users can access this feature through SAP Business One or the AE platform.
+Efficient procurement planning is essential for maintaining optimal inventory levels. Order Recommendation in MRP 2.5 helps streamline this process by generating purchase and production suggestions based on demand and supply analysis. Users can access this feature through SAP Business One or the  platform.
 
 ---
 
@@ -14,7 +14,7 @@ You can open MRP 2.5 – Order Recommendation from the SAP Business One menu:
 
     ![Order Recommendations](./media/order-recommendation/mrp-order-recommendation-01.webp)
 
-    Alternatively, after logging into AE, select the Order Recommendation tile:
+    Alternatively, after logging into CompuTec AppEngine, select the Order Recommendation tile:
 
 ![Order Recommendations](./media/order-recommendation/mrp-order-recommendation-02.webp)
 

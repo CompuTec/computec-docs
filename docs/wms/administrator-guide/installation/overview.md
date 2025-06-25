@@ -139,9 +139,9 @@ Learn how to install the WMS Client [here](../../administrator-guide/installatio
 
     ![Connection](./media/overview/connection.png)
 
-- Ensure that the PF API is updated to the latest version for compatibility.
+- Ensure that the ProcessForce API is updated to the latest version for compatibility.
 
-    ![PF API](./media/overview/pf-api-version.png)
+    ![ProcessForce API](./media/overview/pf-api-version.png)
 
 - Verify that the installed WMS version is compatible or update it directly via CompuTec AppEngine.
 

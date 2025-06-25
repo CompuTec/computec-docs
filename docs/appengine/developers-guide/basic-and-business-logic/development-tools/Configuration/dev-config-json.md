@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Plugin Development Configuration
 
-This file describe the plugin development configuration and its dependent plugins. so for example when we want to debug the plugin in CompuTec AppEngine we prepare a AE dev.configuration  file that will list all paths to plugins that must be loaded this path must lead to the  dev.config.json.
+This file describe the plugin development configuration and its dependent plugins. so for example when we want to debug the plugin in CompuTec AppEngine we prepare CompuTec AppEngine dev.configuration file that will list all paths to plugins that must be loaded this path must lead to the  dev.config.json.
 
 ---
 
@@ -16,7 +16,7 @@ This file describe the plugin development configuration and its dependent plugin
 
 - **Dependencies** - Lists other plugins that the current plugin depends on. Each dependency is represented by a relative path (from the SourceDirectory) pointing to the dependent plugin’s dev.config.json file.
 
-- **MapWwwAppFolder** - This field is specific to AE plugins. It indicates whether web application resources (e.g., HTML, JavaScript, CSS) should be loaded from the plugin's resources or directly from the source directory.
+- **MapWwwAppFolder** - This field is specific to CompuTec AppEngine plugins. It indicates whether web application resources (e.g., HTML, JavaScript, CSS) should be loaded from the plugin's resources or directly from the source directory.
 
 ## Examples
 
@@ -43,7 +43,7 @@ This file describe the plugin development configuration and its dependent plugin
 }
 ```
 
-### AE Plugin Example
+### CompuTec AppEngine Plugin Example
 
 ```json
 {

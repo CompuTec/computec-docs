@@ -243,7 +243,7 @@ toc_max_heading_level: 2
 | Improvement | Configuration | The Dutch language version is now available | SPDC-520 |
 | Bug | Management Board | Planned Qty and Reported Quantity in the Management Board do not match values in the related Task form. | SPDC-578 |
 | Bug | General | The application crashes upon attempts to assign a Task (in the Task form), running the Task and closing it. The issue is caused by Transaction Notification. | - |
-| Bug | General | The application crashes upon attempts to Run an added Task in specific cases. Error message: AE Request Exception: `http://localhost:54000/api/PDC/PDCTile/RemoveTimeTempEntryLine` - Code - 500, Object with specified Key was not found in database Key | – |
+| Bug | General | The application crashes upon attempts to Run an added Task in specific cases. Error message: CompuTec AppEngine Request Exception: `http://localhost:54000/api/PDC/PDCTile/RemoveTimeTempEntryLine` - Code - 500, Object with specified Key was not found in database Key | – |
 
 ---
 

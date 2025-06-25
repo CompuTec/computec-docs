@@ -13,7 +13,7 @@ The `ct` content tool, based on business logic defined in the BL plugin and addi
 - CRUD Controllers CTGeneratedCode\Controllers
 - OData Controllers CTGeneratedCode\Controllers
 
-The best practice is to set up the generator task in the project file so that required components are generated in the AE plugin after the BL build.
+The best practice is to set up the generator task in the project file so that required components are generated in the CompuTec AppEngine plugin after the BL build.
 
 ---
 
@@ -42,7 +42,7 @@ The best practice is to set up the generator task in the project file so that re
         - `c`: CRUD Controllers
         - `o`: OData Controllers
         - `m`: Models
-- **-n**: AE plugin root namespace.
+- **-n**: CompuTec AppEngine plugin root namespace.
 
 For more information, see more about [dotnet ct](../../basic-and-business-logic/development-tools/ct-tool.md).
 

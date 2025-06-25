@@ -29,7 +29,7 @@ Follow the individual installation guides for each required component:
 - [CompuTec AppEngine installation](../administrators-guide/configuration-and-administration/installation.md)
 - [CompuTec PDC plugin](../administrators-guide/configuration-and-administration/configuration.md)
 - [CompuTec ProcessForce plugin](../plugins-user-guide/processforce.md)
-- [CompuTec ProcessForce API (on the same server as appengine)](/docs/processforce/releases/download#computec-processforce-api)
+- [CompuTec ProcessForce API (on the same server as CompuTec AppEngine)](/docs/processforce/releases/download#computec-processforce-api)
 - [CompuTec PDC application](/docs/pdc/administrator-guide/installation/first-installation/)
 
 :::caution

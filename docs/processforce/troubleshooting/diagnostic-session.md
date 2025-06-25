@@ -81,7 +81,7 @@ Profiles
 |         Detailed          |                    Capture detailed report of all processes                     | Extreme Please do not use it unless requested by the CompuTec Support Team |
 |    Detailed Scheduling    |                 Captures detailed information about scheduling                  |                                    High                                    |
 |   Detailed Transactions   |                Capture information about Inventory transactions                 |                                    High                                    |
-|          Startup          | Capture information about PF starting and Database structure installation high. |                                    High                                    |
+|          Startup          | Capture information about ProcessForce starting and Database structure installation high. |                                    High                                    |
 
 :::info Performance
     Please be aware that debugging session is slowing down ProcessForce execution time.

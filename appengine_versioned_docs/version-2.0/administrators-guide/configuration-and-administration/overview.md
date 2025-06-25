@@ -178,7 +178,7 @@ Once activated, the plugin becomes accessible in the Launchpad:
 Navigate to the following path to configure settings in SAP Business One with ProcessForce installed:
 
 :::info Path
-    SAP Business One (with ProcessForce installed) main menu → Administration → System Initialization → General Settings → ProcessForce tab → AE tab
+    SAP Business One (with ProcessForce installed) main menu → Administration → System Initialization → General Settings → ProcessForce tab → AppEngine tab
 :::
 
 ![SAP B1 Settings](./media/configuration-and-administration/appengine-sapb1-settings.webp)

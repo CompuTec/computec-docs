@@ -15,7 +15,7 @@ Below are the release notes for CompuTec PFI Plugin, highlighting new features, 
 | Issue Type | Component/s | Release Note |
 | - | - | - |
 | Bug | .netCore | Deleting a specific key in PFI Import Keys does not work |
-| Bug | AE Core, PFI | Failure message does not appear in red color |
+| Bug | CompuTec AppEngine Core, PFI | Failure message does not appear in red color |
 | Improvement | PFI | Provide possibility to explicitly mention "Withdefaults" in PFI |
 | Bug | PFI | Missing translation for the new column label addDefaultLinesLabel in PFI |
 

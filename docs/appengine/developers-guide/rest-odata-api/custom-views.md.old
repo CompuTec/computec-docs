@@ -14,7 +14,7 @@ CompuTc AppEngine provides a mechanism for encapsulating complex database querie
 - supports OData V4
 - supports SAP HANA and Microsoft SQL Server
 - supports CompuTec AppEngine Plugins
-- The <i>**CustomViews**</i> folder is available in the AE installation directory, and ProgramData/CompuTec/AppEngine.
+- The <i>**CustomViews**</i> folder is available in CompuTec AppEngine installation directory, and ProgramData/CompuTec/AppEngine.
 
 ![Custom View](./media/custom-views/core-odata.webp)
 

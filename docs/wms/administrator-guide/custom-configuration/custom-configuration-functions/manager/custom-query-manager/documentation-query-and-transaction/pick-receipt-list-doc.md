@@ -31,7 +31,7 @@ sidebar_position: 28
 - **UserNameWMS** - User name WMS
 - **DeviceId** - Requester device Id address
 
-### PF Pick Order , PF Pick Receipt
+### ProcessForce Pick Order , ProcessForce Pick Receipt
 
 - **DocumentSeries** - Document Series
 

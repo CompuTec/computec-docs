@@ -85,7 +85,7 @@ The next thing is to define what action printing will occur.
 
 Event Triggers set up used in this scenario:
 
-| Employee | Employee Department |    Object Type   |    SAP   |    PDC   |    WMS   |    PF    |
+| Employee | Employee Department |    Object Type   |    SAP   |    PDC   |    WMS   |    ProcessForce    |
 |:--------:|:-------------------:|:----------------:|:--------:|:--------:|:--------:|:--------:|
 | All      | All                 | Goods Receipt PO | OnChange | NoAction | NoAction | NoAction |
 

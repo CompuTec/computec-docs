@@ -19,7 +19,7 @@ Clear-Host
 # CompuTec PowerShell Script - Manufacturing Order Status Update - tutorial
 ########################################################################
 $SCRIPT_VERSION = "3.0"
-# Last tested PF version: ProcessForce 9.3 (9.30.140) PL: 04 R1 HF1 (64-bit)
+# Last tested ProcessForce version: ProcessForce 9.3 (9.30.140) PL: 04 R1 HF1 (64-bit)
 # Description:
 #      Base on SQL Query this script will update Manufacturing Order Status.
 #      SQL Query can be easily changed - it must return three columns:
@@ -32,12 +32,12 @@ $SCRIPT_VERSION = "3.0"
 Write-Host -backgroundcolor Yellow -foregroundcolor DarkBlue ("Script Version:" + $SCRIPT_VERSION)
 #endregion
  
-#region #PF API library usage
+#region #ProcessForce API library usage
 # You need to check in what architecture PowerShell ISE is running (x64 or x86),
-# you need run PowerShell ISE in the same architecture like PF API is installed (check in Windows -> Programs & Features)
+# you need run PowerShell ISE in the same architecture like ProcessForce API is installed (check in Windows -> Programs & Features)
 # Examples:
-#     SAP Client x64 + PF x64 installed on DB/Company => PF API x64 => Windows PowerShell ISE
-#     SAP Client x86 + PF x86 installed on DB/Company => PF API x86 => Windows PowerShell ISE x86
+#     SAP Client x64 + ProcessForce x64 installed on DB/Company => ProcessForce API x64 => Windows PowerShell ISE
+#     SAP Client x86 + ProcessForce x86 installed on DB/Company => ProcessForce API x86 => Windows PowerShell ISE x86
 ```
 
 To interact with SAP Business One and ProcessForce, the script loads the necessary API library:

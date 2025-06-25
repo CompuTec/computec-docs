@@ -15,7 +15,7 @@ The latest installer is available to download fom [here](/docs/appengine/release
 
 | Issue Type | Component/s | Release Note | Related issue/s |
 | - | - | - | - |
-| Improvement | AE Core | Modification to Plugin Upgrade Mechanism |
+| Improvement | CompuTec AppEngine Core | Modification to Plugin Upgrade Mechanism |
 
 ## CompuTec AppEngine 2.10.18.103
 
@@ -23,10 +23,10 @@ The latest installer is available to download fom [here](/docs/appengine/release
 
 | Issue Type | Component/s | Release Note | Related issue/s |
 | - | - | - | - |
-| Bug | AE Analytics | Fixed issue with settings permissions for variants. | - |
-| Bug | AE Analytics | Fixed for import. | - |
-| Bug | AE Analytics | Fixed empty list of aggregation functions for chars. | - |
-| Bug | AE Background Processing | Fix for long start of AppEngine Service where there are lots of jobs to process. | - |
+| Bug |  Analytics | Fixed issue with settings permissions for variants. | - |
+| Bug | CompuTec AppEngine Analytics | Fixed for import. | - |
+| Bug | CompuTec AppEngine Analytics | Fixed empty list of aggregation functions for chars. | - |
+| Bug | CompuTec AppEngine Background Processing | Fix for long start of AppEngine Service where there are lots of jobs to process. | - |
 
 ---
 
@@ -36,7 +36,7 @@ The latest installer is available to download fom [here](/docs/appengine/release
 
 | Issue Type | Component/s | Release Note | Related issue/s |
 | - | - | - | - |
-| Bug | AE Launchpad | Fixed issue with choose language that prevented login to launchpad and administration panel. | - |
+| Bug | CompuTec AppEngine Launchpad | Fixed issue with choose language that prevented login to launchpad and administration panel. | - |
 
 ---
 
@@ -46,7 +46,7 @@ The latest installer is available to download fom [here](/docs/appengine/release
 
 | Issue Type | Component/s | Release Note | Related issue/s |
 | - | - | - | - |
-| Bug | Plugins | For backward compatibility with previous AE versions permissions for users are not required to be set up until next plugin setup. | - |
+| Bug | Plugins | For backward compatibility with previous CompuTec AppEngine versions permissions for users are not required to be set up until next plugin setup. | - |
 
 ---
 
@@ -59,9 +59,9 @@ The latest installer is available to download fom [here](/docs/appengine/release
 | Improvement | SAP UI5 | UI5 version is now upgraded to 1.120.2 | - |
 | Improvement | Plugins | Plugins with setup are now added to SAP Business One Additional Authorizations. To enable them for user permission need to be set either to Read-Only or Full Authorization. | - |
 | Bug | Plugins | Fixed issue with plugin installation "Uploaded package needs to be a zip file". | SPROC-15050 |
-| Bug | AE Configuration | Fixed issue with log level. Now log level changes back to "Trace" after CompuTec AppEngine restart. | - |
-| Bug | AE Core | Log related to given job should now be visible under log tab on job definition page. | - |
-| Bug | AE Configuration | It is now possible to set Database Type in case of Cloud environment. | - |
+| Bug | CompuTec AppEngine Configuration | Fixed issue with log level. Now log level changes back to "Trace" after CompuTec AppEngine restart. | - |
+| Bug | CompuTec AppEngine Core | Log related to given job should now be visible under log tab on job definition page. | - |
+| Bug | CompuTec AppEngine Configuration | It is now possible to set Database Type in case of Cloud environment. | - |
 
 ---
 
@@ -71,9 +71,9 @@ The latest installer is available to download fom [here](/docs/appengine/release
 
 | Issue Type | Component/s | Release Note | Related issue/s |
 | - | - | - | - |
-| Improvement | AE Analytics | The Select All option is added to all the collection lists. | - |
-| Bug | AE Configuration | It is necessary to re-enter database credentials while logging in to CompuTec AppEngine from SAP Business One. | - |
-| Bug | AE Core, MRP | An error occurs upon attempts to run a scenario in MRP 2.5 and then open Relationship Map in some cases. | - |
+| Improvement | CompuTec AppEngine Analytics | The Select All option is added to all the collection lists. | - |
+| Bug | CompuTec AppEngine Configuration | It is necessary to re-enter database credentials while logging in to CompuTec AppEngine from SAP Business One. | - |
+| Bug | CompuTec AppEngine Core, MRP | An error occurs upon attempts to run a scenario in MRP 2.5 and then open Relationship Map in some cases. | - |
 | Bug | SAP UI5 | When a plugin is launched through SAP UI, each time it asks for credentials. | - |
 
 ---
@@ -84,10 +84,10 @@ The latest installer is available to download fom [here](/docs/appengine/release
 
 | Issue Type | Component/s | Release Note | Related issue/s |
 | - | - | - | - |
-| Improvement | AE Analytics | Graph: sorting by the x or y axis is now possible. | - |
-| Improvement | AE PWA | The icon of the application has been updated. | - |
-| Improvement | AE UAA | (PWA) It is not possible to go to the administration panel. We redirect to login to Launchpad. | - |
-| Improvement | AE Architecture | An error occurs upon attempts to generate a System configuration File in specific cases. <br/>Error message: <br/>Exception has been thrown by the target of an invocation. | - |
+| Improvement | CompuTec AppEngine Analytics | Graph: sorting by the x or y axis is now possible. | - |
+| Improvement | CompuTec AppEngine PWA | The icon of the application has been updated. | - |
+| Improvement | CompuTec AppEngine UAA | (PWA) It is not possible to go to the administration panel. We redirect to login to Launchpad. | - |
+| Improvement | CompuTec AppEngine Architecture | An error occurs upon attempts to generate a System configuration File in specific cases. <br/>Error message: <br/>Exception has been thrown by the target of an invocation. | - |
 
 ---
 
@@ -97,8 +97,8 @@ The latest installer is available to download fom [here](/docs/appengine/release
 
 | Issue Type | Component/s | Release Note | Related issue/s |
 | - | - | - | - |
-| Improvement | AE Analaytics | New option: [Analytical Page Source Creator](/docs/appengine/appengine-users-guide/analytical-page/source-creator/). | - |
-| Improvement | AE Analaytics | The String and Number filters now have buttons to change operators like equal, not equal, greater than, and more complicated operators like: between, in (you can choose more than one value), not in. | - |
+| Improvement | CompuTec AppEngine Analytics | New option: [Analytical Page Source Creator](/docs/appengine/appengine-users-guide/analytical-page/source-creator/). | - |
+| Improvement | CompuTec AppEngine Analytics | The String and Number filters now have buttons to change operators like equal, not equal, greater than, and more complicated operators like: between, in (you can choose more than one value), not in. | - |
 | Improvement | Launchpad | Possibility to log out any session from the Administration Panel level [the Active Connections tab](../../administrators-guide/configuration-and-administration/overview.md#active-connections). | - |
 | Bug | Launchpad | The SAP Business One User's password change is not reflected in CompuTec AppEngine. | SPROC-12383 |
 
@@ -110,12 +110,12 @@ The latest installer is available to download fom [here](/docs/appengine/release
 
 | Issue Type | Component/s | Release Note |
 | - | - | - |
-| Improvement | AE Analaytics | A new option in the table settings: auto-expand rows in a table tree (grouping). |
-| Improvement | AE Analaytics | A new table setting: auto-refresh - it is possible to set a period for refreshing Tables, Table Trees, and Charts. Also possible to add a refresh timer. |
-| Bug | AE Administration Panel | Trace: the Sort button does not work. |
-| Bug | AE Analytics | A change of the name template of file when exporting variant to Excel: "name of variant_2023-01-01T12:00:00". |
-| Bug | AE Analytics | Reports are not visible for users who previously had no assigned Groups. |
-| Bug | AE Configuration | Job configuration: a change of Cron Expression is not always saved after an CompuTec AppEngine restart. |
+| Improvement | CompuTec AppEngine Analytics | A new option in the table settings: auto-expand rows in a table tree (grouping). |
+| Improvement | CompuTec AppEngine Analytics | A new table setting: auto-refresh - it is possible to set a period for refreshing Tables, Table Trees, and Charts. Also possible to add a refresh timer. |
+| Bug | CompuTec AppEngine Administration Panel | Trace: the Sort button does not work. |
+| Bug |  Analytics | A change of the name template of file when exporting variant to Excel: "name of variant_20CompuTec AppEngine23-01-01T12:00:00". |
+| Bug | CompuTec AppEngine Analytics | Reports are not visible for users who previously had no assigned Groups. |
+| Bug | CompuTec AppEngine Configuration | Job configuration: a change of Cron Expression is not always saved after an CompuTec AppEngine restart. |
 
 ---
 
@@ -361,7 +361,7 @@ Content-Type: application/json
 | Bug | Configuration | Administration Panel, SLD Servers: SLD Addresses disappear after clicking the Discover button when a server is not working. | - |
 | Bug | Configuration | Errors occur after removing a company with plugins that have dependent plugins assigned. | - |
 | Bug | OData | The following OData expressions do not work: $top, $skip, $expand. | SPROC-13658 |
-| Bug | PF Plugin | It is impossible to upgrade plugins by clicking the Install plugin button. | SPROC-13050 |
+| Bug | ProcessForce Plugin | It is impossible to upgrade plugins by clicking the Install plugin button. | SPROC-13050 |
 
 ---
 

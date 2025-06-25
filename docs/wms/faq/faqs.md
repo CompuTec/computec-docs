@@ -137,7 +137,7 @@ A CompuTec WMS installation on a “fresh” database (without previous CompuTec
 
 Restart the server or try to install the CompuTec WMS objects again.
 
-## PF Database Version not supported
+## ProcessForce Database Version not supported
 
 ### <i>**Update Database or Reinstall API.Setup**</i>
 

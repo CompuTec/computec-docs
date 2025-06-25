@@ -33,15 +33,15 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 | Bug | Common functions | Encountered issues when using the "Support" user to perform operations in ProcessForce |
 | Bug | Manufacturing Order | [POLCOM] PFI import failed with error "Cannot update. Empty formula in Items." when item formulas were missing or not initialized |
 | Bug | PFI | Missing translation for the new column label addDefaultLinesLabel in PFI. |
-| Bug | AE WebClient | Issue occurs in PDC when OIDC is disabled |
-| Bug | AE Core | Delete option next to server is not functional |
+| Bug | CompuTec AppEngine WebClient | Issue occurs in PDC when OIDC is disabled |
+| Bug | CompuTec AppEngine Core | Delete option next to server is not functional |
 | Bug | MRP | Due Date Filter in Order Recommendation is not functioning; Error Message: "this. DueDateForm.setHours is not a function." |
-| Bug | AE Core | Issues with plugin upgrade in CompuTec AppEngine - no error is displayed in the UI despite failure |
+| Bug | CompuTec AppEngine Core | Issues with plugin upgrade in CompuTec AppEngine - no error is displayed in the UI despite failure |
 | Bug | WebAPI | Incorrect error message during API calls – receiving 500 response with "Object reference not set to an instance of an object." |
-| Bug | AE Core | Incorrect order of deactivating and deleting plugins for MRP |
-| Bug | AE WebClient | SAP OIDC missing under "Required CSP Entries for WebClient" |
-| Bug | AE Installer | SAP OIDC was not listed under the "Required CSP Entries for WebClient" |
-| Bug | AE Installer | Setup fails when external address is not accessible from the CompuTec AppEngine server itself |
+| Bug | CompuTec AppEngine Core | Incorrect order of deactivating and deleting plugins for MRP |
+| Bug | CompuTec AppEngine WebClient | SAP OIDC missing under "Required CSP Entries for WebClient" |
+| Bug | CompuTec AppEngine Installer | SAP OIDC was not listed under the "Required CSP Entries for WebClient" |
+| Bug | CompuTec AppEngine Installer | Setup fails when external address is not accessible from the CompuTec AppEngine server itself |
 | Improvement | WMS Plugin | Enable matching of Storage Category to the corresponding rule for better accuracy and control |
 
 ## CompuTec.ProcessForce 3.2505.3
@@ -77,7 +77,7 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 | Bug | MRP 2.5 | When using Forecast version 2.5, the system occasionally encounters a critical error which causes SAP to become unresponsive/inactive |
 | Bug | PDC | When performing an Issue for Production transaction, users are encountering a Bin Allocation error |
 | Bug | MRP 2.5 |  issues reported with the calculation of cumulative lead times |
-| Bug | AE Administration Panel, AE Installer | Empty Administrator Panel in CompuTec.AppEngine 3.2505.1-rc-01 |
+| Bug | CompuTec AppEngine Administration Panel, CompuTec AppEngine Installer | Empty Administrator Panel in CompuTec.AppEngine 3.2505.1-rc-01 |
 | Bug | Cost Accounting | Error message occurred when executing a rollup operation: "Object reference not set to an instance of an object." |
 | Bug | Scheduling | "+" and "−" Buttons not working in Divide Function – Resource Planning Panel |
 | Bug | Scheduling | Started MORs are not visible on the Gantt chart and are incorrectly treated as unscheduled |
@@ -95,7 +95,7 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 | Improvement | Manufacturing Order, Scheduling | Add Type: Internal or External MOR as a filter option in the Selection Criteria |
 | Bug | Production Costing | Routing line is not displayed in the Static Costed BOM when Cost Category CC000 has a different routing recorded in the ITC7 table |
 | Bug | Pick and Pack | Incorrect Quantity on Second Line: After changing the quantity, the second line always displays -1 <br/>Error message should be displayed on object reference error |
-| Story | Bill of Materials | mplement a time-based service in AE BG Service for the Bill of Material Syncer |
+| Story | Bill of Materials | Implement a time-based service in CompuTec AppEngine Background Service for the Bill of Material Syncer |
 | Improvement | Bill of Materials | Display 'U_Price' field from '@CT_PF_BOM1' table under form settings in BOM form |
 | Bug | Scheduling | The Manufacturing Order status is changed back to "Scheduled" ignoring the changes done in Manufacturing Order form earlier |
 | Bug | Bill of Materials | Automatically unbind operation bindings when deleting an operation or routing to prevent ratio mismatch errors such as: "The ratio in all rows corresponding to component with name Bottle-01 (type: Item and line: 1) is not equal to 1. Please correct this." |
@@ -103,12 +103,12 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 | Bug | PM - Maintenance Order | Maintenance Orders remain editable even after being marked as closed |
 | Improvement | Planning | Scheduling - implement Bulk insert |
 | Bug | Production Costing |  Costed MOR header details do not display when the company has enabled the option "Permit More than One Document Type per Series." |
-| Bug | Production Costing | AE Roll-up job fails to start the roll-over task when all warehouses are selected in the parameters |
-| Bug | Items, Manufactuuring Order | Updating item details for item results in error: Cannot set revision 'xx' as Active there are Components in the BillOfMaterial that are obsolete 'xx' <br/>The error message does not specify the actual problematic item revision |
-| Bug | Items, Manufactuuring Order | Restoring item details fails with error in logs: Could not find stored procedure 'call' related to "CT_PF_ItemDetailsRestoreHeaderFromHistory" procedure call |
+| Bug | Production Costing | CompuTec AppEngine Roll-up job fails to start the roll-over task when all warehouses are selected in the parameters |
+| Bug | Items, Manufacturing Order | Updating item details for item results in error: Cannot set revision 'xx' as Active there are Components in the BillOfMaterial that are obsolete 'xx' <br/>The error message does not specify the actual problematic item revision |
+| Bug | Items, Manufacturing Order | Restoring item details fails with error in logs: Could not find stored procedure 'call' related to "CT_PF_ItemDetailsRestoreHeaderFromHistory" procedure call |
 | Bug | Quality Control | Auto-assign the Quality Control Protocol when new Item Code is Created based on Item Group |
 | Bug | Production Costing | Item Costing details becomes disabled after using green arrows to switch between costing entries |
-| Bug | Production Costing | Setup default values in AE Rollup jobs to be the same as in Roll-up selection criteria form |
+| Bug | Production Costing | Setup default values in CompuTec AppEngine Rollup jobs to be the same as in Roll-up selection criteria form |
 | Improvement | Manufacturing Order | Automatically generate pick receipt or pick order immediately after the user clicks the "Add" button to streamline the workflow |
 | Improvement | Pick and Pack | Enable creation of pick receipts exclusively for the selected co-product |
 | Improvement | Manufacturing Order | Block the creation of empty pick orders |

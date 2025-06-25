@@ -48,8 +48,8 @@ The CompuTec AppEngine Server serves as the backbone of the Computec.Core2 Ecosy
         - The CompuTec AppEngine server is responsible for hosting and managing the Event Bus, enabling asynchronous communication between different components of the ecosystem. This architecture promotes responsiveness and dynamic interactions across applications.
         - The Event Bus can be configured to utilize external message queue services such as Microsoft Event Bus or RabbitMQ, providing flexibility and scalability in communication.
     
-    - **Hosting AE Plugins**:
-        - The server hosts AE plugins, including controllers and web applications, allowing for modular development and enhancing the overall functionality of the ecosystem.
+    - **Hosting CompuTec AppEngine Plugins**:
+        - The server hosts CompuTec AppEngine plugins, including controllers and web applications, allowing for modular development and enhancing the overall functionality of the ecosystem.
         
     - **Job Execution**: 
         - The CompuTec AppEngine server executes scheduled and event-driven jobs, ensuring timely execution of tasks critical to the operation of the ecosystem.

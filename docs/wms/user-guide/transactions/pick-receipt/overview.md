@@ -87,7 +87,7 @@ GS1 Barcode that contains Product-01 Item code with CompuTec Prefix, Batch numbe
 4. On the next screen user has to enter quantity and details for the receipted Item. Note that when Auto receipt option is turned on materials are available to be moved elsewhere around the Warehouse just after clicking save button. After pressing it in each transaction receipted quantity will increase by receipted amount and screen be ready for a next receipt. For Batch managed Items we can turn on in Custom Configuration cleaning Batch and quantity boxes to force user to input right data when screen is used without leaving.
 ![Item Batches Serials](./media/items-batches-serials.png)
 
-Both for Serial and Batch managed Items, there is a button for automatic Serial Numbers / Batch generation. Each iteration of generating Serial Numbers or Batch, counts as a Pick. That means, by default, generating 3 Batches will causes 3 updates to the Pick Receipt document. Taking into account the possibility of "PF Auto Receipt" option enabled, 3 Goods Receipt documents will be created from those 3 updates.
+Both for Serial and Batch managed Items, there is a button for automatic Serial Numbers / Batch generation. Each iteration of generating Serial Numbers or Batch, counts as a Pick. That means, by default, generating 3 Batches will causes 3 updates to the Pick Receipt document. Taking into account the possibility of "ProcessForce Auto Receipt" option enabled, 3 Goods Receipt documents will be created from those 3 updates.
 5. After required quantity is receipted we can push red exit button to go back to the Items list. All Items received during the previous actions are already in the Warehouse.
 </div>
 </details>
@@ -393,7 +393,7 @@ The **New SU** option creates a new SU in the document upon saving a pick (the S
 
 The **New SU Each Qty** option creates a new SU upon every new pick in the Quantity form (clicking the Save icon) or as many SUs, as many Serial Numbers / Batches are generated using the Automatic Creation option, e.g. 5 Batches, 5 Items each will generate 5 SUs1. If you create 5 SUs, 4 of them will be with the PR status and the fifth one will be with the CR status (which allows you to pack it with other Items).
 
-Creation of a Goods Receipt at the end of the transaction or with picking using PF Auto Receipt option, changes status of the SU to **O – Open**. SUs with this status are already available in the SU Info transaction are ready to work with.
+Creation of a Goods Receipt at the end of the transaction or with picking using ProcessForce Auto Receipt option, changes status of the SU to **O – Open**. SUs with this status are already available in the SU Info transaction are ready to work with.
 
 The Automatic Creation option does not work with the Update each pick option due to the application performance (saving to a database so many entries slow down the performance).
 

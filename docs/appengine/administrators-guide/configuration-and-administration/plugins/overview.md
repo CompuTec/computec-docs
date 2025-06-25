@@ -59,7 +59,7 @@ Click the "Get" button to add the plugin to your CompuTec AppEngine. You can als
 
     ![Dependencies](./media/plugins/ae-plugin-07-01.webp)
 
-7. Once a plugin is added to CompuTec AppEngine, three additional tabs become available in the Plugin Details section: Companies, AE Instances, and Installation History. Navigate to the Installation tabs to access these options.
+7. Once a plugin is added to CompuTec AppEngine, three additional tabs become available in the Plugin Details section: Companies, CompuTec AppEngine Instances, and Installation History. Navigate to the Installation tabs to access these options.
 
 8. Go to the "Companies" tab and select "Assigning to Company". Choose the company where the installation will be performed, then click "Accept".
 
@@ -85,7 +85,7 @@ Click the "Get" button to add the plugin to your CompuTec AppEngine. You can als
 
     You can now see the assigned company.
 
-If the installation was not performed with activation on CompuTec AppEngine, you can activate it by navigating to the AE Instances tab, selecting the company, and clicking the "Assign to AppEngine" button.
+If the installation was not performed with activation on CompuTec AppEngine, you can activate it by navigating to CompuTec AppEngine Instances tab, selecting the company, and clicking the "Assign to AppEngine" button.
 
         ![AE Instance](./media/plugins/ae-plugin-013.webp)
 

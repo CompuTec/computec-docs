@@ -51,7 +51,7 @@ In WMS, Batches/Serial Numbers preallocated on other documents are always omitte
 Moreover, the quantities will be recalculated for the same Pick Order - this option **does not** work like preallocation on Pick Lists.
 This means that if on an original Pick Order document, there were seven serial numbers to be picked and five were already preselected in SAP Business One, then in WMS, there will be only two more serials left to choose and the five previously selected won't be displayed in Serial Selection window.
 
-With the SAP  PF setting enabled, preselecting batches or serials on Pick Order will affect all other transactions in WMS, i.e., if a specific serial, for example, S0001, is preselected on a pick order in SAP Business One, then the same serial S0001 won't be available for example on the Delivery transaction.
+With the SAP ProcessForce setting enabled, preselecting batches or serials on Pick Order will affect all other transactions in WMS, i.e., if a specific serial, for example, S0001, is preselected on a pick order in SAP Business One, then the same serial S0001 won't be available for example on the Delivery transaction.
 
 The preselected quantities will also be considered when displaying available quantities in bin locations.
 

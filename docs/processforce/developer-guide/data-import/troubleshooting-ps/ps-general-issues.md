@@ -57,7 +57,7 @@ $PSVersionTable
 
 - [Refer to the installation part of the documentation](../ps-app-configuration.md#installation)
 
-## Exception: PF Database Version is not supported
+## Exception: ProcessForce Database Version is not supported
 
 Please update the Database or Reinstall API.Setup
 
@@ -75,11 +75,11 @@ ProcessForce, PowerShell ISE, and PF.API versions vary.
 
 - Check the PowerShell ISE architecture: if running in 32-bit mode (x86), ensure if this platform is the same as ProcessForce one.
 
-- Check In Windows → Programs & Features and match the installed PF.API version with the ProcessForce version and platform in SAP Add-On Manager.
+- Check In Windows → Programs & Features and match the installed  ProcessForce API version with the ProcessForce version and platform in SAP Add-On Manager.
 
     ![Final](./media/ps-general-issues/pc-corresponding-versions.webp)
 
-- Confirm the correct PF API library version is being used in PowerShell ISE:
+- Confirm the correct ProcessForce API library version is being used in PowerShell ISE:
 
     ```powershell
     # Check PF.API version used by current PowerShell ISE

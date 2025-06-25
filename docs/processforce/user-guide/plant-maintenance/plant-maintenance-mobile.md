@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ### Prerequisites
 
-    1. MI360 (an AE plugin) has to be installed and available on the CompuTec AppEngine host.
+    1. MI360 (CompuTec AppEngine plugin) has to be installed and available on the CompuTec AppEngine host.
 
     2. Mobile devices and servers have to be in the same Wi-Fi network.
 
