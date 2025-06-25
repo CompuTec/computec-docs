@@ -15,10 +15,12 @@ With the release of CompuTec WMS 2.10.8 R1 and later versions, downloading Compu
 To begin, ensure that you have CompuTec WMS Server installed on your system, version 2.10.8 R1 or later. Once installed, follow these simple steps:
 
 1. On the end device (e.g., PC, handheld device, Android device), open an internet browser.
-2. Enter the following URL in the address bar: `http://[CompuTec WMS server address]:31002`. Make sure to replace [CompuTec WMS server address] with the actual address of your CompuTec WMS Server.
+2. Enter the following URL in the address bar: `https://[CompuTec WMS server address]:56001`. Make sure to replace [CompuTec WMS server address] with the actual address of your CompuTec WMS Server.
 This will redirect you to the download page where you can easily download the required client files directly to your device.
 
-    ![Download](./media/download.webp)
+    >**Note**: We recommend using HTTPS Protocol.
+
+        ![Download](./media/download.png)
 
     :::note
     You can download a required Client file directly to the device from [here](https://learn.computec.one/docs/wms/releases/download).
