@@ -2,27 +2,28 @@
 sidebar_position: 1
 ---
 
-# Introduction to ProcessForce
+# Introduction to CompuTec ProcessForce
 
-Welcome to the ProcessForce 10.0 Documentation. On this page you can find a quick introduction to the application. You will be installing and starting the application, setting it up, and getting to know the opportunities that the application gives.
+Welcome to the CompuTec ProcessForce 10.0 Documentation. On this page, you can find a quick introduction to the application. You will be installing and starting the application, setting it up and getting to know the opportunities that the application gives.
 
 :::info
-    This page contains a compilation of basic pieces of information on how to start working with the ProcessForce solution. To get more detailed instructions, check other sections of the documentation.
+    This page contains a compilation of basic pieces of information on how to start working with the CompuTec ProcessForce solution. To get more detailed instructions, check other sections of the documentation.
 :::
 
 ## Getting Started
 
-To start using ProcessForce add-on you must:
+To start using CompuTec ProcessForce add-on you must:
 
-1. Adjust system which ProcessForce will be working on to the add-on requirements. You can find it [here](./administrator-guide/system-requirements.md).
+1. Ensure that the system where CompuTec ProcessForce will be installed meets all required specifications. You can review the system requirements [here](./administrator-guide/system-requirements.md).
 2. Download files required for installation of CompuTec License Server and Add-on components. You can download it from [here](./releases/download.md).
-3. Install both components. You can find detailed information on how to do this [here](./administrator-guide/installation/first-installation/license-server.md). ProcessForce will work in trial mode for 14 days since the first installation of CompuTec License Server.
-4. After the expiration of the trial mode, ProcessForce requires a valid license file to be used. You can obtain it from your ProcessForce provider – check [here](./administrator-guide/licensing/license-request.md) how to do this.
-5. ProcessForce is up and ready to work with. You can manage it, e.g. turn off, upgrade, by a standard SAP Business One add-on administration functionality: `Main Menu → Administration → Add-ons`.
+3. Proceed with the installation of both the License Server and the add-on. Detailed installation instructions are available [here](./administrator-guide/installation/first-installation/license-server.md).
+    >Note: The add-on will run in **trial mode for 14 days** from the initial installation of the CompuTec License Server.
+4. After the trial period expires, a valid license file is required to continue using CompuTec ProcessForce. You can request this license from your CompuTec ProcessForce provider. Learn how to obtain it [here](./administrator-guide/licensing/license-request.md).
+5. Once installed and licensed, CompuTec ProcessForce is ready to use. You can manage functions such as disabling or upgrading the add-on through SAP Business One’s standard add-on administration path: `Main Menu → Administration → Add-ons`.
 
 ## Main Menu and Functions
 
-ProcessForce contains many functions. You can get to them through the standard SAP Business One menu. The main ProcessForce functions are presented below with the Main Menu path required to reach it.
+CompuTec ProcessForce offers a wide range of functionalities, all accessible through the standard SAP Business One menu. Below is a list of key CompuTec ProcessForce features along with their respective navigation paths within the SAP Business One Main Menu.
 
 ![Main menu modules](./media/index/modules.webp)
 
@@ -32,7 +33,7 @@ ProcessForce contains many functions. You can get to them through the standard S
     Administration → System Initialization → General Settings → ProcessForce tab
 :::
 
-Here you can define general ProcessForce settings, e.g. set default values or time constraints for many of the add-on features.
+Here you can define general CompuTec ProcessForce settings, e.g. set default values or time constraints for many of the add-on features.
 
 To find out more about every tab and options on it, click [here](./user-guide/system-initialization/general-settings/overview.md).
 
@@ -56,7 +57,7 @@ Click [here](./user-guide/item-details/overview.md) to find out more.
     Inventory → Ingredients
 :::
 
-ProcessForce provides an extension to product master data. Nutrient and ingredient information can be used to create complex ingredient listings and declaration statements, thus are useful in the creation of product labels.
+CompuTec ProcessForce provides an extension to product master data. Nutrient and ingredient information can be used to create complex ingredient listings and declaration statements, thus are useful in the creation of product labels.
 
 Click [here](./user-guide/ingredient-declarations/overview.md) to find out more.
 
@@ -104,7 +105,7 @@ Click [here](./user-guide/formulations-and-bill-of-materials/bill-of-materials/o
     Production → Routings
 :::
 
-Routing determines the steps that are performed in the manufacturing process for a specific product. Resources required for production and Operations performed on it can be defined within Routing. ProcessForce solution allows defining of many settings for Routing, Operation, and Resource.
+Routing determines the steps that are performed in the manufacturing process for a specific product. Resources required for production and Operations performed on it can be defined within Routing. CompuTec ProcessForce solution allows defining of many settings for Routing, Operation, and Resource.
 
 Click [here](./user-guide/routings/overview.md) to find out more.
 
@@ -116,7 +117,7 @@ Click [here](./user-guide/routings/overview.md) to find out more.
     Main Menu → Production → Manufacturing Order
 :::
 
-ProcessForce Manufacturing Orders are used to plan, execute and record production activities.
+CompuTec ProcessForce Manufacturing Orders are used to plan, execute and record production activities.
 
 Click [here](./user-guide/manufacturing/manufacturing-order/overview.md) to find out more.
 
@@ -128,7 +129,7 @@ Click [here](./user-guide/manufacturing/manufacturing-order/overview.md) to find
     Production → Manufacturing Order → Scheduling
 :::
 
-Based upon many resources and time constraints, ProcessForce provides a simple but powerful scheduling solution to manage the Manufacturing Orders within the plant and to manually re-schedule via "drag and drop" means.
+Based upon many resources and time constraints, CompuTec ProcessForce provides a simple but powerful scheduling solution to manage the Manufacturing Orders within the plant and to manually re-schedule via "drag and drop" means.
 
 Click [here](./user-guide/scheduling/overview.md) to find out more.
 
@@ -140,7 +141,7 @@ Click [here](./user-guide/scheduling/overview.md) to find out more.
     Main Menu → Costing
 :::
 
-ProcessForce Product Costing has been built to take advantage of all the costing methods provided by SAP Business One. Thus providing a solution that supports the costing, analysis, and finance controlling operations.
+CompuTec ProcessForce Product Costing has been built to take advantage of all the costing methods provided by SAP Business One. Thus providing a solution that supports the costing, analysis, and finance controlling operations.
 
 Click [here](./user-guide/costing-material-and-resources/item-costing/overview.md) to find out more.
 
@@ -169,3 +170,5 @@ You can create and manage complaints from customers, suppliers, or internal depa
 Click [here](./user-guide/complaint-management/complaint.md) to find out more.
 
 ![Complaint](./media/index/complaint.webp)
+
+---

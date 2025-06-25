@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Introduction
 
-In the current setup, Distribution Rules and Cost Centers are integrated into key elements of the ProcessForce solution, enhancing cost tracking and allocation accuracy. These features can be applied to Items and are available across the following ProcessForce master data forms and documents:
+In the current setup, Distribution Rules and Cost Centers are integrated into key elements of the CompuTec ProcessForce solution, enhancing cost tracking and allocation accuracy. These features can be applied to Items and are available across the following CompuTec ProcessForce master data forms and documents:
 
 - Bill of Materials
 - Manufacturing Orders
@@ -27,7 +27,7 @@ Additionally, Distribution Rules and Cost Centers have been added to "Resources"
 
 ## Configuration
 
-SAP Business One is configured to determine the number of dimension fields and columns displayed in ProcessForce forms, ensuring flexibility and consistency. This configuration applies uniformly to both Items and Resources, streamlining the setup and management process.
+SAP Business One is configured to determine the number of dimension fields and columns displayed in CompuTec ProcessForce forms, ensuring flexibility and consistency. This configuration applies uniformly to both Items and Resources, streamlining the setup and management process.
 
 ![Configuration](./media/overview/general-settings-dimension.png)
 

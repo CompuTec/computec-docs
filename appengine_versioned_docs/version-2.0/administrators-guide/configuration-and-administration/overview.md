@@ -58,7 +58,7 @@ Click the plus (+) icon in the upper-right corner to add a new connection.
 - **Description**: provide a descriptive name for the current configuration.
 - **Environment**: select either On-Premise or Cloud.
 - **Database Type**: choose your database type (HANA or a specific MS SQL version)
-- **CT License Server**: Enter the CompuTec License Server address (found in ProcessForce License Administration in SAP Business One).
+- **CT License Server**: Enter the CompuTec License Server address (found in CompuTec ProcessForce License Administration in SAP Business One).
 
     ![Administration](./media/configuration-and-administration/processforce-license-administration.webp)
 - **CT License Server Status**: displays the connection status to the CompuTec License Server.

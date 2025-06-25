@@ -43,9 +43,9 @@ Released on 12.05.2025
 
 Click [here](/docs/appengine/2.0/releases/plugins/wms-stock-counting/download) to get CompuTec AppEngine plugin for Stock Counting and Compatibility Tools.
 
-If you use the ProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to install CompuTec License Server in 5.11.0.1 or later version and CompuTec WMS in the latest version.
+If you use Comp uTecProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to install CompuTec License Server in 5.11.0.1 or later version and CompuTec WMS in the latest version.
 
-### Version compatible with SAP Business One 10.0 and ProcessForce 10.0
+### Version compatible with SAP Business One 10.0 and CompuTec ProcessForce 10.0
 
 <table>
   <tr>
@@ -63,15 +63,15 @@ If you use the ProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to instal
     <td>
       <ul>
         <li>
-          <p>For CompuTec WMS to work with SAP Business One and ProcessForce:</p>
+          <p>For CompuTec WMS to work with SAP Business One and CompuTec ProcessForce:</p>
           <ul>
             <li>SAP Business One 10.0</li>
-            <li>ProcessForce from 10.0 R1 to 10.0 (R30) </li>
-            <li>ProcessForce API in related version</li>
+            <li>CompuTec ProcessForce from 10.0 R1 to 10.0 (R30) </li>
+            <li>CompuTec ProcessForce API in related version</li>
           </ul>
         </li>
         <li>
-          <p>For CompuTec WMS to work with SAP Business One (without ProcessForce):</p>
+          <p>For CompuTec WMS to work with SAP Business One (without CompuTec ProcessForce):</p>
           <ul>
             <li>SAP Business One 10.0</li>
           </ul>
@@ -106,7 +106,7 @@ If you use the ProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to instal
   </tr>
 </table>
 
-{/*### Version compatible with SAP Business One 9.30 and ProcessForce 9.30
+{/*### Version compatible with SAP Business One 9.30 and CompuTec ProcessForce 9.30
 
 <table>
   <tr>
@@ -124,15 +124,15 @@ If you use the ProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to instal
     <td>
       <ul>
         <li>
-          <p>For CompuTec WMS to work with SAP Business One and ProcessForce:</p>
+          <p>For CompuTec WMS to work with SAP Business One and CompuTec ProcessForce:</p>
           <ul>
             <li>SAP Business One 9.3</li>
-            <li>ProcessForce 9.3 PL12 R1 (x86) to 9.3 PL14 R10 (x86)</li>
-            <li>ProcessForce API in related version</li>
+            <li>CompuTec ProcessForce 9.3 PL12 R1 (x86) to 9.3 PL14 R10 (x86)</li>
+            <li>CompuTec ProcessForce API in related version</li>
           </ul>
         </li>
         <li>
-          <p>For CompuTec WMS to work with SAP Business One (without ProcessForce):</p>
+          <p>For CompuTec WMS to work with SAP Business One (without CompuTec ProcessForce):</p>
           <ul>
             <li>SAP Business One 9.3</li>
           </ul>
@@ -147,15 +147,15 @@ If you use the ProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to instal
     <td>
       <ul>
         <li>
-          <p>For CompuTec WMS to work with SAP Business One and ProcessForce:</p>
+          <p>For CompuTec WMS to work with SAP Business One and CompuTec ProcessForce:</p>
           <ul>
             <li>SAP Business One 9.3</li>
-            <li>ProcessForce 9.3 PL12 R1 (x64) to 9.3 PL14 R10 (x64)</li>
-            <li>ProcessForce API in related version</li>
+            <li>CompuTec ProcessForce 9.3 PL12 R1 (x64) to 9.3 PL14 R10 (x64)</li>
+            <li>CompuTec ProcessForce API in related version</li>
           </ul>
         </li>
         <li>
-          <p>For CompuTec WMS to work with SAP Business One (without ProcessForce):</p>
+          <p>For CompuTec WMS to work with SAP Business One (without CompuTec ProcessForce):</p>
           <ul>
             <li>SAP Business One 9.3</li>
           </ul>
@@ -203,15 +203,15 @@ If you use the ProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to instal
               <td>
                 <ul>
                   <li>
-                    <p>For CompuTec WMS to work with SAP Business One and ProcessForce:</p>
+                    <p>For CompuTec WMS to work with SAP Business One and CompuTec ProcessForce:</p>
                     <ul>
                       <li>SAP Business One 10.0</li>
-                      <li>ProcessForce from {data.pf_from} {data.pf_to ? `to ${data.pf_to}` : "or newer"}</li>
-                      <li>ProcessForce API in related version</li>
+                      <li>CompuTec ProcessForce from {data.pf_from} {data.pf_to ? `to ${data.pf_to}` : "or newer"}</li>
+                      <li>CompuTec ProcessForce API in related version</li>
                     </ul>
                   </li>
                   <li>
-                    <p>For CompuTec WMS to work with SAP Business One (without ProcessForce):</p>
+                    <p>For CompuTec WMS to work with SAP Business One (without CompuTec ProcessForce):</p>
                     <ul>
                       <li>SAP Business One 10.0</li>
                     </ul>
@@ -269,3 +269,5 @@ If you use the ProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to instal
 ## CompuTec Gateway Manager
 
 To download the latest version of CompuTec Gateway Manager, click [here](https://learn.computec.one/docs/labels/releases/download/#computec-gateway-manager).
+
+---

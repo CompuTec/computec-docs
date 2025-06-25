@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Introduction
 
-In SAP Business One with ProcessForce, managing distribution and cost dimensions is critical for efficient resource allocation and accurate financial reporting. This document outlines the process for associating Distribution Rules and Cost Centers with key forms and documents, ensuring streamlined workflows and consistent data management. These dimensions can be assigned to items and carried forward across various master data forms and documents:Currently Distribution Rules and Cost Centers can only be added to Items and added on the following ProcessForce master data forms and documents:
+In SAP Business One with CompuTec ProcessForce, managing distribution and cost dimensions is critical for efficient resource allocation and accurate financial reporting. This document outlines the process for associating Distribution Rules and Cost Centers with key forms and documents, ensuring streamlined workflows and consistent data management. These dimensions can be assigned to items and carried forward across various master data forms and documents:Currently Distribution Rules and Cost Centers can only be added to Items and added on the following CompuTec ProcessForce master data forms and documents:
 
 - Bill of Materials
 - Manufacturing Orders

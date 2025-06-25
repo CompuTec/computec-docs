@@ -5,7 +5,7 @@ sidebar_position: 10
 # SAP Production Receipt
 
 :::info
-    The SAP Production Issue function is unavailable if ProcessForce is installed on a database that CompuTec WMS operates on.
+    The SAP Production Issue function is unavailable if CompuTec ProcessForce is installed on a database that CompuTec WMS operates on.
 :::
 
 To create an SAP Production Receipt, click SAP Production Receipt in the main menu:

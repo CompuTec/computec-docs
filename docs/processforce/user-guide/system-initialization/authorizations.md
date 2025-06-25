@@ -4,11 +4,11 @@ sidebar_position: 2
 
 # Authorizations
 
-Proper user authorizations are essential for managing ProcessForce documents efficiently. Assigning the right access ensures that users can perform necessary actions while maintaining system security and compliance.
+Proper user authorizations are essential for managing CompuTec ProcessForce documents efficiently. Assigning the right access ensures that users can perform necessary actions while maintaining system security and compliance.
 
 ---
 
-The creation of ProcessForce documents depends on specific user authorizations. To manage user authorizations, navigate to:
+The creation of CompuTec ProcessForce documents depends on specific user authorizations. To manage user authorizations, navigate to:
 
 :::info Path
     Administration → System Initialization → Authorizations → General Authorizations

@@ -10,15 +10,15 @@ In this guide, you'll find descriptions of FIFO, FEFO, and FMFO queue types for 
 
 ## Batch Managed Items
 
-The queue type for Batch Managed Items depends on whether ProcessForce is installed:
+The queue type for Batch Managed Items depends on whether CompuTec ProcessForce is installed:
 
-- **With ProcessForce Installed**: The queue type follows the ProcessForce settings.
+- **With CompuTec ProcessForce Installed**: The queue type follows the CompuTec ProcessForce settings.
 
-- **Without ProcessForce Installed**: You can set the queue type by navigating to: [Custom Configuration → Manager → Enable Batch Management → Set Default Settings.](../administrator-guide/custom-configuration/custom-configuration-functions/manager/batch-management-manager.md)
+- **Without CompuTec ProcessForce Installed**: You can set the queue type by navigating to: [Custom Configuration → Manager → Enable Batch Management → Set Default Settings.](../administrator-guide/custom-configuration/custom-configuration-functions/manager/batch-management-manager.md)
 
 Here's a breakdown of each queue type:
 
-- **FEFO** (First Expiry, First Out): The queue is determined by 'ExpDate' (and 'U_ExpiryTime 'if ProcessForce is installed). This method ensures items with the earliest expiry are dispatched first.
+- **FEFO** (First Expiry, First Out): The queue is determined by 'ExpDate' (and 'U_ExpiryTime 'if CompuTec ProcessForce is installed). This method ensures items with the earliest expiry are dispatched first.
 
 - **FMFO** (First Manufacture, First Out): The queue relies on the 'MnfDate', sending items produced earlier out first.
 
@@ -28,7 +28,7 @@ Here's a breakdown of each queue type:
 
 ## Managed and Not Managed Items
 
-For items managed by Serial Numbers or neither by Batches nor Serial Numbers, FIFO is always applied. This is implemented by ProcessForce and takes into account the document creation date in ILM.
+For items managed by Serial Numbers or neither by Batches nor Serial Numbers, FIFO is always applied. This is implemented by CompuTec ProcessForce and takes into account the document creation date in ILM.
 
 When items are transferred to a warehouse post-receipt, the transfer date is considered the latest and used for queue management.
 

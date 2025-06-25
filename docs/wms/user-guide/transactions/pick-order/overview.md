@@ -48,7 +48,7 @@ Since CompuTec ProcessForce PL11, users can choose how to _Auto Allocate Batches
 This setting is responsible for whether to display or not preselected on Pick Order, Batches/Serial Numbers (there is no unique option for Serial Numbers; the same setting affects both Serial Numbers and Batches).
 In WMS, Batches/Serial Numbers preallocated on other documents are always omitted; thus, the "On other documents" option will not affect WMS. Suppose a user wants to consider preselected Batches and Serial Numbers on every document in WMS. In that case, one must select either "Allocated" or "Both" to recalculate quantities properly.
 
-Moreover, the quantities will be recalculated for the same Pick Order - this option **does not** work like preallocation on Pick Lists.
+Moreover, the quantities will be recalculated for the same Pick Order - this option **does not** work like pre-allocation on Pick Lists.
 This means that if on an original Pick Order document, there were seven serial numbers to be picked and five were already preselected in SAP Business One, then in WMS, there will be only two more serials left to choose and the five previously selected won't be displayed in Serial Selection window.
 
 With the SAP ProcessForce setting enabled, preselecting batches or serials on Pick Order will affect all other transactions in WMS, i.e., if a specific serial, for example, S0001, is preselected on a pick order in SAP Business One, then the same serial S0001 won't be available for example on the Delivery transaction.

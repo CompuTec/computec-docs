@@ -8,9 +8,9 @@ Effective management of production processes and inventory is crucial for busine
 
 ---
 
-## ProcessForce Pick Receipt tab
+## CompuTec ProcessForce Pick Receipt tab
 
-![Production ProcessForce Pick Receipt](./media/production/cc-production-pf-pick-receipt.png)
+![Production CompuTec ProcessForce Pick Receipt](./media/production/cc-production-pf-pick-receipt.png)
 
 **After picking, auto return to** – Specifies the form the application navigates to after confirming the picking quantity for a document line, with options like None, Document Details, or Remarks.
     <details>
@@ -26,7 +26,7 @@ Effective management of production processes and inventory is crucial for busine
     </div>
     </details>
 
-**ProcessForce Pick Receipt PopUp Timer checkpoint** – Configures checkpoints during the picking process, such as None, Select the base document, Select Item on the list, Pick quantity to the first line, Save Document
+**CompuTec ProcessForce Pick Receipt PopUp Timer checkpoint** – Configures checkpoints during the picking process, such as None, Select the base document, Select Item on the list, Pick quantity to the first line, Save Document
 
 **Scan DocNum on Base Document** – Enables scanning using DocNum instead of DocEntry when accessing the Pick Receipt or Manufacturing Order window.
 
@@ -86,7 +86,7 @@ Enabling this option also disables Storage Unit creation during the Pick Receipt
 
 **Do not save every scan to the Pick Receipt** -  Allows scanning multiple labels on the Quantity screen without updating the Pick Receipt each time. Updates are made only when the "Save" button is pressed.
 
-## ProcessForce Pick Order tab
+## CompuTec ProcessForce Pick Order tab
 
 ![Pick Order](./media/custom-configuration-after-scanning.webp)
 
@@ -104,7 +104,7 @@ Enabling this option also disables Storage Unit creation during the Pick Receipt
 
 **Scan DocNum on Base Document** – Enables scanning by DocNum instead of DocEntry when working in the Pick Order or Manufacturing Order window.
 
-**Do not create a Goods Issue at the end of the transaction** – Prevents automatic creation of a Goods Issue document at the end of the transaction, allowing it to be created manually via ProcessForce → Pick Order.
+**Do not create a Goods Issue at the end of the transaction** – Prevents automatic creation of a Goods Issue document at the end of the transaction, allowing it to be created manually via CompuTec ProcessForce → Pick Order.
 
 ## SAP Production Receipt tab
 

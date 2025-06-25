@@ -8,9 +8,9 @@ Batches are collections of identical products and serve as the foundation for tr
 
 ---
 
-The SAP Business One Batch Details form and the ProcessForce Batch Master Data form have now been merged into a single, unified interface. All relevant SAP Business One and ProcessForce documents and reports will navigate to this consolidated form for improved efficiency.
+The SAP Business One Batch Details form and the CompuTec ProcessForce Batch Master Data form have now been merged into a single, unified interface. All relevant SAP Business One and CompuTec ProcessForce documents and reports will navigate to this consolidated form for improved efficiency.
 
->**Note**: When adding User-Defined Fields (UDFs) to the SAP Business One Batch Details Table, ensure that the same UDFs (with identical names and formats) are also added to the ProcessForce Additional Batch Tables.
+>**Note**: When adding User-Defined Fields (UDFs) to the SAP Business One Batch Details Table, ensure that the same UDFs (with identical names and formats) are also added to the CompuTec ProcessForce Additional Batch Tables.
 
 :::info Path
 Inventory → Item Management → Batches

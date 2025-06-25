@@ -137,20 +137,20 @@ A CompuTec WMS installation on a “fresh” database (without previous CompuTec
 
 Restart the server or try to install the CompuTec WMS objects again.
 
-## ProcessForce Database Version not supported
+## CompuTec ProcessForce Database Version not supported
 
 ### <i>**Update Database or Reinstall API.Setup**</i>
 
 ### Cause
 
-ProcessForce version installed on the database differs from the ProcessForce API version.
+CompuTec ProcessForce version installed on the database differs from the CompuTec ProcessForce API version.
 
 ### Fix
 
 You can either:
 
-- install ProcessForce API to the correct version
-- install ProcessForce in the same version as API.
+- install CompuTec ProcessForce API to the correct version
+- install CompuTec ProcessForce in the same version as API.
 
 For the mentioned installers, check the [Download](/docs/processforce/releases/download) page.
 

@@ -2,7 +2,7 @@
 sidebar_position: 11
 ---
 
-# ProcessForce Pick Order (Example)
+# CompuTec ProcessForce Pick Order (Example)
 
 ## Change
 

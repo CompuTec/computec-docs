@@ -39,7 +39,7 @@ sidebar_position: 25
 - **UserNameWMS** - User name WMS
 - **DeviceId** - Requester device Id address
 
-### ProcessForce Pick Order , ProcessForce Pick Receipt, Transfer Request MOR
+### CompuTec ProcessForce Pick Order/Pick Receipt, Transfer Request MOR
 
 - **DocumentSeries** - Document Series
 

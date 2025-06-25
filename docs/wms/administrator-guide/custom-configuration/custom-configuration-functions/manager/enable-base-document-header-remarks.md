@@ -14,11 +14,11 @@ This option allows to set additional fields for a header.
 
     The option is available for the following transactions:
 
-    - Goods Receipt PO
+    - Goods Receipt Purchase Order
     - Inventory Transfer
     - Delivery
-    - ProcessForce Pick Order
-    - ProcessForce Pick Receipt
+    - CompuTec ProcessForce Pick Order
+    - CompuTec ProcessForce Pick Receipt
     - Goods Receipt
     - Stock Counting
     - Dispatch Control

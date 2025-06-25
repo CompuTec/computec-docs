@@ -45,9 +45,9 @@ When using CompuTec WMS with an SAP Business One user, log in to SAP Business On
 
     ![obtn](./media/prerequisites/sap-message.png)
 
-### ProcessForce License Requirements
+### CompuTec ProcessForce License Requirements
 
-When using ProcessForce, the SAP Business One user must have a ProcessForce license matching their SAP Business One license (e.g., Limited Logistics or Indirect Access for both SAP Business One and ProcessForce).
+When using CompuTec ProcessForce, the SAP Business One user must have a CompuTec ProcessForce license matching their SAP Business One license (e.g., Limited Logistics or Indirect Access for both SAP Business One and CompuTec ProcessForce).
 
 ## Unique Serial Numbers in SAP Business One General Settings
 
@@ -96,7 +96,7 @@ Some anti-malware software may block the installation. In such cases, add an exc
 
 ## Data Restore
 
-If your database now has ProcessForce but was previously used without it, make sure to run the Item Details restoration. Without this step, documents involving items without assigned Item Details may fail to create. See more information on [Item Details Restore](./sap-business-one-settings/item-details-restore.md) to find out more.
+If your database now has CompuTec ProcessForce but was previously used without it, make sure to run the Item Details restoration. Without this step, documents involving items without assigned Item Details may fail to create. See more information on [Item Details Restore](./sap-business-one-settings/item-details-restore.md) to find out more.
 
 ## Supported Database Servers
 
@@ -110,7 +110,7 @@ CompuTec WMS supports all database versions compatible with the currently suppor
 
 ## CompuTec ProcessForce API
 
-If ProcessForce is installed, CompuTec WMS requires CompuTec ProcessForce API to work correctly. ProcessForce API has to be in the exact version as ProcessForce installed on the database.
+If CompuTec ProcessForce is installed, CompuTec WMS requires CompuTec ProcessForce API to work correctly. ProcessForce API has to be in the exact version as CompuTec ProcessForce installed on the database.
 
 ## Preparing the Environment: Installation Order
 
@@ -123,17 +123,17 @@ If ProcessForce is installed, CompuTec WMS requires CompuTec ProcessForce API to
 1. Microsoft ODBC Driver
 2. Microsoft SQL Native Client (version based on SQL version being used)
 3. SAP DI API
-4. ProcessForce & ProcessForce API (optional)
-5. WMS Server
-6. WMS Client
+4. CompuTec ProcessForce & CompuTec ProcessForce API (optional)
+5. CompuTec WMS Server
+6. CompuTec WMS Client
 
 ### For HANA Environments
 
 1. HANA ODBC Driver
 2. SAP DI API
-3. ProcessForce & ProcessForce API (optional)
-4. WMS Server
-5. WMS Client
+3. CompuTec ProcessForce & CompuTec ProcessForce API (optional)
+4. CompuTec WMS Server
+5. CompuTec WMS Client
 
 ## Upgrade
 

@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-To efficiently manage the Subcontract Assembly and Free Issue materials process, ProcessForce utilizes the following key functions:
+To efficiently manage the Subcontract Assembly and Free Issue materials process, CompuTec ProcessForce utilizes the following key functions:
 
 - **Bill of Materials (BOM)**: defines the items to be assembled, categorized as External.
 - **Manufacturing Order**: manages inventory issues, receipts, external work-in-progress (WIP), and WIP variance journals.

@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Best Practices
 
-Setting up an optimized SAP Business One environment is crucial for ensuring smooth performance, particularly when integrated with CompuTec products. This guide outlines best practices for hardware, virtualization, operating system configuration, and SAP HANA replication to maximize system efficiency and reliability.
+Setting up an optimized SAP Business One environment is crucial for ensuring smooth performance, particularly when integrated with CompuTec solutions. This guide outlines best practices for hardware, virtualization, operating system configuration, and SAP HANA replication to maximize system efficiency and reliability.
 
 ---
 
@@ -14,10 +14,10 @@ SAP Business One's performance heavily depends on the underlying hardware. Selec
 
 ### CPU
 
-For optimal performance, always use the latest available hardware platform.
+For optimal performance, it is recommended to use the most up-to-date hardware platform available.
 
 - SAP HANA is compatible only with Intel CPUs. Supported hardware configurations can be found in the  [Certified and Supported SAP HANA Hardware Directory](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=appliance;v:at4).
-- Due to certification delays from hardware vendors, it is common practice to choose the latest hardware that matches certified specifications, particularly CPUs with equal or higher specifications in terms of cores, frequency, and cache.
+- Hardware vendors may experience delays in certification. Therefore, it is a common and acceptable practice to select the latest hardware that meets or exceeds the specifications of certified models - particularly regarding CPU cores, clock frequency and cache size.
 
 ### Disks
 
@@ -29,17 +29,17 @@ Storage performance is critical for SAP Business One operations.
 - SAP HANA data and log volumes should be placed on separate disks.
 
 :::note
-For detailed information on SAP HANA storage requirements, please consult the following documents: [**SAP HANA TDI-Storage Requirements**](https://download.computec.one/media/sap/SAP_HANA_Storage_Requirements.pdf) and [**SAP HANA Tailored Data Center Integration (TDI) Overview**](https://download.computec.one/media/sap/SAP_HANA_Tailored_Data_Center_Integration_Overview.pdf).
+For detailed information on SAP HANA storage requirements, please refer to the following documents: [**SAP HANA TDI-Storage Requirements**](https://download.computec.one/media/sap/SAP_HANA_Storage_Requirements.pdf) and [**SAP HANA Tailored Data Center Integration (TDI) Overview**](https://download.computec.one/media/sap/SAP_HANA_Tailored_Data_Center_Integration_Overview.pdf).
 :::
 
-In virtualized environments, LVM can be used, but for physical installations, it is best to avoid it to ensure optimal disk performance.
+In virtualized environments, LVM can be used. However, for physical installations, it is best to avoid it to ensure optimal disk performance.
 
 ### Network
 
 A low-latency network is essential for seamless SAP Business One operations.
 
 - SAP does not support networks with latency higher than 1 ms.
-- Wi-Fi and WAN connections are not recommended, as they do not provide the required responsiveness.
+- Wi-Fi and WAN connections are not recommended as they do not provide the required responsiveness.
 
 ## Virtualization
 
@@ -50,16 +50,18 @@ SAP Business One can be virtualized using VMware, provided specific prerequisite
 
 ## OS Configuration
 
-Since our practical experience is limited to SUSE, all the provided links are for it.
+Our practical experience is primarily with SUSE Linux Enterprise Server (SLES), so the references provided below are specific to this platform.
 
-Most settings can be automatically applied by using sapconf in SUSE or saptune in the case of SUSE for the SAP Applications version.
+- Most necessary system settings can be applied automatically using the `sapconf` tool on standard SUSE systems, or `saptune` on SUSE for SAP Applications versions.
+- These tools are described in the SAP Note [1275776 - Linux: Preparing SLES for SAP environments](https://launchpad.support.sap.com/#/notes/1275776).
+- Additional guidance is available in the following resources:
 
-These tools are described in the SAP Note [1275776 - Linux: Preparing SLES for SAP environments](https://launchpad.support.sap.com/#/notes/1275776), and also here:
+        - [SAP blog: `sapconf` – A way to prepare a SLES system for SAP workload – Part 1](https://blogs.sap.com/2018/06/13/sapconf-a-way-to-prepare-a-sles-system-for-sap-workload-part-1)
+        - [Recommended SUSE SLES for SAP Settings](https://www.suse.com/support/kb/doc/?id=000019526).
 
-- [SAP blog: sapconf – A way to prepare a SLES system for SAP workload – Part 1](https://blogs.sap.com/2018/06/13/sapconf-a-way-to-prepare-a-sles-system-for-sap-workload-part-1)
-- [Recommended SUSE SLES 4 SAP Settings](https://www.suse.com/support/kb/doc/?id=000019526).
-
-Please verify your OS settings with all the SAP Notes even after running them, as not every setting is applied.
+:::caution
+Even after using these tools, it is strongly recommended to manually verify your OS configuration against all relevant SAP Notes. Some settings may not be automatically applied and require manual adjustment.
+:::
 
 Here are the most important SAP Notes:
 

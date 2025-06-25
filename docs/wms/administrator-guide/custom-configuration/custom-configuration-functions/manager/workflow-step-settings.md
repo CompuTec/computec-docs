@@ -64,7 +64,7 @@ There are seven transactions available for configuration, each with a set of pos
   
     ![Goods Issue](./media/workflow-step-settings/goods-issue.png)
 
-6. ProcessForce Pick Order
+6. CompuTec ProcessForce Pick Order
 
   There are three possible workflows for this transaction:
     1. Bin selection → Batch selection
@@ -73,7 +73,7 @@ There are seven transactions available for configuration, each with a set of pos
 
     ![PFPO](./media/workflow-step-settings/pfpo.png)
 
-7. ProcessForce Pick Receipt
+7. CompuTec ProcessForce Pick Receipt
 
   For Goods Receipt transactions, it is possible to add a custom field that will be displayed for Items managed by Batches or Serial Numbers. The fields can be set as required, and it will not be possible to go to the next step without filling them out.
 

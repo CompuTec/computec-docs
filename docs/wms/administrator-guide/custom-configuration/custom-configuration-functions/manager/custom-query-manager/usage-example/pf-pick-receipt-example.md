@@ -2,7 +2,7 @@
 sidebar_position: 12
 ---
 
-# ProcessForce Pick Receipt (Example)
+# CompuTec ProcessForce Pick Receipt (Example)
 
 ## Change
 

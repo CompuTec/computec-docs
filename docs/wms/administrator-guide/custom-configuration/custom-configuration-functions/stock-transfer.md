@@ -50,7 +50,7 @@ The Stock Transfer module within SAP Business One offers comprehensive options f
 
 10. **Show Cost Dimensions** – Enabling this checkbox adds a Cost Dimensions button on the Quantity form for users who need to assign additional cost dimensions.
 
-11. **Skip SAP Allocation Quantity, Skip ProcessForce Allocation Quantity** – Disables batch and serial number allocations in SAP Business One if custom allocations are required.
+11. **Skip SAP Allocation Quantity, Skip CompuTec ProcessForce Allocation Quantity** – Disables batch and serial number allocations in SAP Business One if custom allocations are required.
 
 12. **Use Sales UoM** – Click [here](../../../user-guide/managing-uom-in-computec-wms.md) to find out more on Managimg UoM in CompuTec WMS.
 

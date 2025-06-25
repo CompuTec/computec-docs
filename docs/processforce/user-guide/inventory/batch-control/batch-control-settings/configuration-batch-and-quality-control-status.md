@@ -41,7 +41,7 @@ The yellow arrow in the report allows navigation to the Batch Master Data form, 
 
 ![Batch status](./media/configuration-batch-and-quality-control-status/batch-status.webp)
 
-## ProcessForce Receipt Documents
+## CompuTec ProcessForce Receipt Documents
 
 The following receipt documents are supported:
 

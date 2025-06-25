@@ -74,7 +74,7 @@ By using a custom query, you can specify a line with any desired UoM. To do this
 
 ![Custom Configuration](./media/cc-query-manager-3.webp)
 
-### For SAP without ProcessForce
+### For SAP without CompuTec ProcessForce
 
 ```sql
 SELECT TOP 100 PERCENT
@@ -116,7 +116,7 @@ WHERE (('@WhereFilterValue' = '' AND ''='') OR ('@WhereFilterValue' <> '' AND (@
 ORDER BY T0."ItemCode", u."UomCode"
 ```
 
-### For SAP with ProcessForce
+### For SAP with CompuTec ProcessForce
 
 ```sql
 SELECT T0."ItemCode",  T0."UoM", T0."ItemCode" AS "Field1", T0."ItemName" AS "Field3", SUM(T0."Qty") AS "Field2", T0."UoM" AS "Field4" FROM (

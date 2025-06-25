@@ -110,8 +110,8 @@ UDFs from base documents are available on the following transactions:
 - Delivery From **Sales Order**
 - Delivery From **Pick Lists** (same as **Sales Orders**)
 - Delivery From **A/R Reserve Invoice**
-- ProcessForce Pick Order From **Pick Order**
-- ProcessForce Pick Receipt From **Pick Receipt**/all Pick Receipts.
+- CompuTec ProcessForce Pick Order From **Pick Order**
+- CompuTec ProcessForce Pick Receipt From **Pick Receipt**/all Pick Receipts.
 
 ### Example Usage
 
