@@ -2,102 +2,153 @@
 sidebar_position: 7
 ---
 
-# Working with User-Defined Fields
+# Working with User-Defined Fields (UDFs)
 
-A possibility to add User-Defined Fields (UDFs) is an SAP Business One option that can also be used with ProcessForce objects.
+SAP Business One allows the creation of **User-Defined Fields (UDFs)**, which are custom fields added to forms and tables to meet specific business needs. CompuTec ProcessForce fully supports this functionality, with a few limitations.
 
-Supplementary fields are often added to master data and documents to meet specific customers’ business process requirements.
-
-In this section, working on UDFs with ProcessForce is described. Please check the respective SAP Business One documentation the respective [SAP Business One documentation entry](https://help.sap.com/viewer/68a2e87fb29941b5bf959a184d9c6727/10.0/en-US/4510ff7bcf465d7be10000000a11466f.html), to find out more about the SAP Business One UDF option.
+This guide shows you how to add UDFs to CompuTec ProcessForce forms, along with notes on recommended settings and constraints.
 
 ---
 
-## Adding User Defined Fields
+## What You Need to Know Before You Start
 
-:::danger
-    It is impossible to add UDFs to the Costed Bill of Materials form.
+- UDFs can be added to CompuTec ProcessForce tables using the standard SAP Business One customization tools.
+- Some CompuTec ProcessForce forms **do not support UDFs** or may encounter **errors** if UDFs are added.
+- Always **ensure all other users are disconnected** from the company database before making UDF changes.
+
+---
+
+## ⚠️ Limitations
+
+| Form or Area | UDF Support |
+|--------------|-------------|
+| Costed Bill of Materials | ❌ Not Supported |
+| Item Costing & Resource Costing | ⚠️ May cause errors - avoid adding UDFs |
+| Downtime Reason (Flat Forms) | ✅ Supported but not displayed on the form - visible only via side panel |
+
+---
+
+## ✅ Prerequisites
+
+Ensure you have the following authorization in SAP Business One:
+
+**`Customization Tools → User-Defined Fields - Management`**
+
+Navigate to:
+
+:::info Path
+Administration → System Initialization → Authorizations → General Authorizations
 :::
 
-:::danger
-    Adding UDFs to Item Costing and Resource Costing forms may cause errors and is not recommended.
-:::
+---
 
-:::caution
-    Only users with the following SAP Business One authorization assigned can add UDFs: *Customization Tools → User-Defined Fields - Management*.
+## 🛠️ How to Add UDFs to CompuTec ProcessForce Forms
 
-    You can reach this option in the Authorizations form:
-    *Administration → System Initialization → Authorizations → General Authorizations*.
-:::
+1. Go to:
 
-:::info
-    In the examples used in this section, adding UDF to the Bill of Materials is used.
-:::
+        :::info Path
+        Tools → Customization Tools → User-Defined Fields - Management
+        :::
 
-- To add a UDF, go to the upper menu *Tools → Customization Tools → User-Defined Fields - Management*. You can reach ProcessForce tables in User Tables:
+2. Navigate to the relevant **User Table** under the *User Tables* section. CompuTec ProcessForce tables appear here:
 
     ![User Tables](./media/udfs/udf-tables.webp)
 
-    UDF can be added either to a form's header or a row.
+        - Header tables (e.g., `BOM`)
+        - Row tables (e.g., `BOM: Items`, `BOM: Scrap`)
 
-    <details>
-        <summary>Header and Row</summary>
-        <div>![Header and rows](./media/udfs/bom-header-rows.webp)</div>
-    </details>
+3. Select the section (header or row) where you want to add a UDF and click **Add**.
 
-    ProcessForce headers have simple names, e.g., BOM. ProcessForce rows have names combined from a form name and a row name, e.g., BOM: Items, BOM: Scrap.
+        ![Add UDF](./media/udfs/udf-add.webp)
 
-- Choose the place that you want to add UDF to and click Add (Bill of Materials, Items in this example):
+4. Fill in required UDF details like:
 
-    ![Add UDF](./media/udfs/udf-add.webp)
+    - Title
+    - Description
+    - Data type
+    - Field structure
 
-- Fill in all desired fields (check the respective [SAP Business One documentation entry](http://help.sap.com/saphelp_sboh92/helpdata/en/45/10ff7bcf465d7be10000000a11466f/content.htm) for more information) and click Add.
+    >Note: Title, Type, and Structure cannot be edited once the field is added. You must delete and recreate the UDF if needed.
 
     ![Fields](./media/udfs/field-data-add.webp)
 
-    Note that Title, Type, and Structure fields cannot be edited once the field is added. You can remove UDF and add it again.
+5. Accept the prompt indicating a **database structure change**.
 
-- Information about a database structure change will be displayed. Accept it.
-
-- Information about other workstations connected to the company with a list of workstations will be displayed. You can either ignore it, try again after disconnecting it, or cancel.
+6. Review the list of active users. If others are logged in, disconnect them or try again later.
 
     :::caution
-        Adding UDFs changes the database structure, therefore, it is recommended to disconnect all the other users logged in to the SAP Business One database on which the change is to be performed.
+    Adding UDFs modifies the database structure. It is strongly recommended to **disconnect all users** before proceeding.
     :::
 
-- Restart SAP Business One client.
+7. Restart the SAP Business One client to reflect the changes.
 
-### Header User Defined Fields
+---
 
-UDFs added to a header are not displayed on it. You can check it on the side panel (you can reach it by using the *View → User-Defined Fields* menu or pressing Ctrl+Shift+U):
+## 🧩 Viewing and Using UDFs
 
-![Header UDFs](./media/udfs/udfs-header.webp)
+### Header UDFs
 
-### Row User Defined Fields
+- These are not shown directly on the form.
+- Access them via:
+    :::info Path
+    View → User-Defined Fields
+    :::
 
-User Defined Fields added to a row are displayed as another column in the row table:
+    or shortcut **Ctrl+Shift+U**
 
-![Row UDF](./media/udfs/udf-row-test.webp)
+    ![Header UDFs](./media/udfs/udfs-header.webp)
 
-### Flat Forms
+---
 
-Some forms do not have tables (rows), e.g., Downtime Reason. In this case, you can add UDF only in the same manner as [header UDFs](#header-user-defined-fields): it will not be available on a form. It will be available on the side panel:
+### Row UDFs
 
-![Downtime Reson UDFs](./media/udfs/udfs-downtime-reason.webp)
+- Displayed as additional **columns** in the table grid on the form.
 
-### Form Settings
+    ![Row UDF](./media/udfs/udf-row-test.webp)
 
-You can manage the visibility and activity of a UDF by standard SAP Business One option: Form Settings, chosen on a specific form. By default, newly created UDFs are visible and active.
+---
 
-Note that only row UDFs are available in Form Settings.
+### Flat Forms (e.g., Downtime Reason)
 
-![Form Settings](./media/udfs/udfs-form-settings.webp)
+- These do not support row structures.
+- UDFs added will behave like **header UDFs**, viewable in the **side panel** only.
 
-## Recommended Form Settings
+    ![Downtime Reson UDFs](./media/udfs/udfs-downtime-reason.webp)
 
-Installing ProcessForce causes adding ProcessForce UDFs to some of the SAP Business One forms, e.g., Revision on Sales Order:
+---
 
-![Sales Order UDF](./media/udfs/udfs-sales-order.webp)
+## ⚙️ Managing Visibility with Form Settings
 
-Keeping ProcessForce UDFs placed on SAP Business One Forms visible in Form Settings is recommended. Disabling ProcessForce UDFs in Form Settings may disrupt field updates and cause data inconsistencies.
+You can control the visibility and activity of row UDFs using: Form Settings → Table Columns
+
+> Note: Only **row UDFs** appear in the Form Settings window.
+
+  ![Form Settings](./media/udfs/udfs-form-settings.webp)
+
+---
+
+## 📌 Recommended Settings
+
+After installing CompuTec ProcessForce, some UDFs are automatically added to core SAP Business One forms (e.g., `Revision` on Sales Order).
+
+- **Keep these fields visible and active** to ensure proper behavior.
+- Hiding these UDFs may result in **data inconsistencies or failed field updates**.
+
+  ![Sales Order UDF](./media/udfs/udfs-sales-order.webp)
+
+---
+
+## Summary
+
+| Task | Where | Notes |
+|------|-------|-------|
+| Add Header UDFs | `Tools → Customization Tools` | Access via side panel |
+| Add Row UDFs | In table section | Visible as columns |
+| Manage Visibility | `Form Settings` | For row UDFs only |
+| Avoid Errors | Item Costing, Resource Costing, BOM Costed | May break functionality |
+
+---
+
+By following these best practices and constraints, you can safely extend CompuTec ProcessForce functionality with custom fields aligned to your unique business needs.
 
 ---

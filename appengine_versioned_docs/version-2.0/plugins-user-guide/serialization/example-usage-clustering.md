@@ -211,7 +211,7 @@ Once accepted, the status of the document changes to Verification.
 
 ### Verification Document
 
-The accepted serialization document is subject to verification in WMS:
+The accepted serialization document is subject to verification in CompuTec WMS:
 
 ![Clustering](./media/clustering/image2020-1-9-17-13-43.png)![Clustering](./media/clustering/image2020-1-15-12-51-44.png)
 ![Clustering](./media/clustering/image2020-1-9-17-14-54.png)
@@ -246,7 +246,7 @@ By selecting Track & Trace Report in the WEB application it is possible to trace
 ![Clustering](./media/clustering/serial-no.png)
 ![Clustering](./media/clustering/serial-no-1.png)
 
-## Example transactions in WMS using SN
+## Example transactions in CompuTec WMS using SN
 
 ### Stock Transfer
 

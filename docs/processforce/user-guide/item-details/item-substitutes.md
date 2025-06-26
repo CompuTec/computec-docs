@@ -4,85 +4,127 @@ sidebar_position: 12
 
 # Item Substitutes
 
-Item substitution is a crucial feature in inventory management, allowing businesses to maintain seamless operations even when specific items are unavailable. By defining substitutes, organizations can ensure that production and order fulfillment processes continue without disruption. This guide provides a detailed overview of how to configure and manage item substitutes within the system.
+Item Substitute is an important function in inventory and production management. It helps ensure continuity in operations when an item is unavailable by allowing predefined substitutes to be used automatically or manually in documents like Manufacturing Orders and Pick Orders.
+
+This guide walks you through how to configure and use **Item Substitutes** in CompuTec ProcessForce.
 
 ---
 
-## Overview
+## Step 1: Open the Substitutes Form
 
-To access Substitutes, navigate to:
+To manage item substitutes:
 
 :::note Path
-    Main Menu → Inventory → Substitutes
+Main Menu → Inventory → Substitutes
 :::
 
-Item substitutes allow for the assignment of a replacement for any item. If a specific item is unavailable in warehouses, it can be replaced on a Pick Order by a predefined substitute.
+This form contains two main areas:
 
-The following settings can be configured for a substitute:
+- **Upper Table**: Configure general substitute rules per item and revision.
+- **Lower Table**: Override or exclude substitute rules for specific Bills of Materials (BOMs).
 
-**Upper table: Item's revisions and their substitutes**:
+---
 
-- Item Revision
-- Substitute Code
-- Substitute Name
-- Substitute Revision
-- For all Bill of Materials (1)
-- Valid From; Valid To – time range of a Substitute validity
-- Ratio – value expressed in decimal setting a ratio of replacement, e.g.:
-  - 1.00 = 100%,
-  - 0.5 = 50%,
-  - 1.50 = 150%.
-- Replace with Items/Coproducts/Scraps – determines whether a specific Substitute Item can be used to replace Items/Coproducts/Scraps
+## Step 2: Define a Substitute in the Upper Table
 
-By default, a substitute is available for all BOMs where the substituted item or revision is used. The checkbox For all Bill of Materials (1) is selected by default.
+In the upper table, you can define substitutes for a specific item revision.
 
-![Item Substitutes](./media/item-substitutes/substitutes-general.webp)
+### Fields to Configure
 
-Suppose you want to exclude substitution for a specific Bill of Materials or use different parameters than in the upper table only for a specific Bill of Materials. In that case, exclude substitution for a particular Bill of Materials or use other parameters than in the upper table only for specific Bill of Materials; it is possible in the bottom one – List of Bill of Materials where the substitution is excluded or parameters are changed.
+- **Item Revision** - the source item to be substituted
+- **Substitute Code** - the replacement item code
+- **Substitute Name** - automatically filled
+- **Substitute Revision** - revision of the substitute item
+- **For all Bill of Materials** - checked by default to apply the substitution across all BOMs
+- **Valid From / Valid To** - date range for which substitution is valid
+- **Ratio** - quantity ratio (e.g. 1.00 = 100%, 0.5 = 50%)
+- **Replace With** - choose if the substitute can replace:
+  - Items
+  - Coproducts
+  - Scrap
 
-1. Unselect checkbox (1).
-2. Choose a Bill of Material from the list (2) – appears list with all BOMs where the substituted Item is used.
-3. To exclude substitution for the Bill of Material, select the checkbox Disable Substitution.
-4. To use different substitution parameters for selected Bill of Material, leave the checkbox (3) not selected.
+  ![Item Substitutes](./media/item-substitutes/substitutes-general.webp)
 
-![Bill of Materials](./media/item-substitutes/substitutes-bill-of-materials.webp)
+---
 
-## Item Master Data
+## Step 3: Customize Substitution Per Bill of Materials (Optional)
 
-Substitutes can be accessed from the Item Master Data context menu:
+If you need different rules for a specific BOM:
 
-![Item Master Data option](./media/item-substitutes/substitutes-item-master-data-options.webp)
+1. **Uncheck** "For all Bill of Materials".
+2. In the lower table, choose the BOM(s) where the item is used.
+3. Configure one of the following:
+   - **Disable Substitution** - to exclude the substitute for this BOM.
+   - **Custom Parameters** - define specific ratio, validity, or replacement rules for this BOM.
 
-## Bill of Materials
+![Substitutes for BOM](./media/item-substitutes/substitutes-bill-of-materials.webp)
 
-To edit substitutes for a Bill of Material, right-click on the first column of a selected item and choose Edit Substitutes:
+---
 
-![Substitutes Edit](./media/item-substitutes/substitutes-edit.webp)
+## Step 4: Access Substitutes from Item Master Data
 
-## Manufacturing Order
+To open substitutes directly from an item:
 
-There are two options available from the Manufacturing Order context menu. Right-click on a selected item's first column and choose "Substitutes":
+1. Go to **Item Master Data**
+2. Use the **right-click context menu**
+3. Select **Substitutes**
 
-- **Edit Substitutes**: functions similarly to the BOM substitute editing option.
-- **Substitute Report**: displays available quantities of substitutes.
+![Item Master Data Substitutes](./media/item-substitutes/substitutes-item-master-data-options.webp)
 
-![Manufacturing Order options](./media/item-substitutes/substitutes-manufacturing-order-options.webp)
+---
+
+## Step 5: Edit Substitutes from Bill of Materials
+
+To modify substitutes within a Bill of Materials:
+
+1. Open a BOM
+2. Right-click on the first column of the item row
+3. Choose **Edit Substitutes**
+
+![Edit Substitutes from BOM](./media/item-substitutes/substitutes-edit.webp)
+
+---
+
+## Step 6: Use Substitutes in Manufacturing Orders
+
+In a **Manufacturing Order**, right-click on a component item to:
+
+- **Edit Substitutes** - same as in BOM
+- **View Substitute Report** - lists available substitute items and their quantities
+
+![Manufacturing Order Substitute Options](./media/item-substitutes/substitutes-manufacturing-order-options.webp)
 
 ### Substitute Report
 
+Use this to check substitute stock and availability.
+
+:::info
+The following substitutes are **not shown** in the report:
+
+- Substitutes with zero stock in the relevant warehouse
+- Substitutes with expired or future validity dates
+- Substitutes not defined for the warehouse
+- Substitutes excluded from the BOM used for this Manufacturing Order
+
+:::
+
 ![Substitutes Report](./media/item-substitutes/substitutes-report.webp)
 
-Please note that the following Substitutes are not listed in the Report:
+---
 
-- Substitutes out of stock for a given Warehouse,
-- Substitutes invalid for a current day,
-- Substitutes not defined for a given Warehouse,
-- Substitutes excluded from a _BOM \_used for creating a \_Manufacturing Order_.
+## Step 7: Replace an Item in a Pick Order
 
-## Usage
+You can apply item substitutes in **Pick Orders**:
 
-A specific item can be substituted in a Pick Order by selecting Choose From List:
+1. In a Pick Order, locate the unavailable item
+2. Use **Choose From List** to select a valid substitute
 
-  ![Substitutes Pick Order](./media/item-substitutes/substitutes-pick-order.webp)
+![Pick Order Substitution](./media/item-substitutes/substitutes-pick-order.webp)
+
+---
+
+## Summary
+
+Substitutes allow operations to continue smoothly in the event of item unavailability. Configure global or BOM-specific substitutes, access them easily from various master forms, and apply them during production or picking workflows to maintain continuity and flexibility.
 
 ---

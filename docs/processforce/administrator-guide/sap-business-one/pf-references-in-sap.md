@@ -2,7 +2,13 @@
 sidebar_position: 3
 ---
 
-# ProcessForce References on SAP Business One Documents
+# CompuTec ProcessForce References on SAP Business One Documents
+
+This page serves as a **reference** guide to understand how CompuTec ProcessForce integrates with standard SAP Business One documents.
+
+Each section below lists the fields populated by ProcessForce in the respective documents, covering both **header** and **child** (line-level) details. These fields support traceability, automation, and audit requirements in manufacturing scenarios.
+
+---
 
 ## Receipt from Production
 
@@ -27,7 +33,7 @@ sidebar_position: 3
 |:----------------:|:------------------------------------------:|:-------------------------------------------------:|
 | Reference 2      | Mor Doc Num                                | Filled if issue is for one Manufacturing Document |
 | Remarks          | Based on Manufacturing Order 7197,7253     |                                                   |
-| Jourmal Memo     | Based on Manufacturing Order 7197,7253     |                                                   |
+| Journal Memo     | Based on Manufacturing Order 7197,7253     |                                                   |
 | U_FromProduction | 'Y'                                        |                                                   |
 | CHILDS -IGE1     |                                            |                                                   |
 | U_DocEntry       | MOR Doc Entry                              |                                                   |

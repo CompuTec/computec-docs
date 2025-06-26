@@ -4,81 +4,105 @@ sidebar_position: 1
 
 # Best Practices
 
-Setting up an optimized SAP Business One environment is crucial for ensuring smooth performance, particularly when integrated with CompuTec solutions. This guide outlines best practices for hardware, virtualization, operating system configuration, and SAP HANA replication to maximize system efficiency and reliability.
+Creating an efficient and stable SAP Business One environment is critical for business performance, especially when integrating with **CompuTec ProcessForce** and other CompuTec solutions. This page explains the architectural and configuration principles that help maximize performance, reliability, and system longevity.
 
 ---
 
-## Hardware Requirements
+## Hardware Considerations
 
-SAP Business One's performance heavily depends on the underlying hardware. Selecting the right components can significantly enhance efficiency and system responsiveness.
+SAP Business One performance is closely tied to the underlying hardware. Selecting modern, certified hardware ensures optimal responsiveness and compatibility.
 
 ### CPU
 
-For optimal performance, it is recommended to use the most up-to-date hardware platform available.
+- **Intel CPUs only** are supported for SAP HANA environments.
+- The most recent hardware is recommended, even if not yet listed in SAP’s certification directory, as long as it matches or exceeds certified configurations in core count, clock speed, and cache.
+- SAP-certified configurations are available in the [SAP HANA Hardware Directory](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=appliance;v:at4).
 
-- SAP HANA is compatible only with Intel CPUs. Supported hardware configurations can be found in the  [Certified and Supported SAP HANA Hardware Directory](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=appliance;v:at4).
-- Hardware vendors may experience delays in certification. Therefore, it is a common and acceptable practice to select the latest hardware that meets or exceeds the specifications of certified models - particularly regarding CPU cores, clock frequency and cache size.
+### Storage
 
-### Disks
+Disk performance significantly affects application responsiveness:
 
-Storage performance is critical for SAP Business One operations.
+- Avoid **spinning disks** and **SATA SSDs** due to slower and half-duplex performance.
+- Prefer **NVMe** or **SAS SSDs** for higher throughput and reliability.
+- For optimal SAP HANA deployment:
+  - Use **separate disks** for data and log volumes.
+  - Employ **Intel VROC** or an **external all-flash array** for physical systems with RAID support.
 
-- Avoid spinning disks and SATA SSDs due to their slower performance and half-duplex operation.
-- Use SAS SSDs or, preferably, NVMe disks for superior speed and reliability.
-- NVMe disks connect via PCI slots, and older systems may only support software RAID at the OS level. For better performance, hardware platforms supporting Intel Virtual RAID on CPU (Intel VROC) or an external all-flash storage array are recommended.
-- SAP HANA data and log volumes should be placed on separate disks.
+> 📘 For SAP HANA storage guidelines, see:  
+> [SAP HANA TDI Storage Requirements (PDF)](https://download.computec.one/media/sap/SAP_HANA_Storage_Requirements.pdf)  
+> [SAP HANA Tailored Data Center Integration Overview (PDF)](https://download.computec.one/media/sap/SAP_HANA_Tailored_Data_Center_Integration_Overview.pdf)
 
-:::note
-For detailed information on SAP HANA storage requirements, please refer to the following documents: [**SAP HANA TDI-Storage Requirements**](https://download.computec.one/media/sap/SAP_HANA_Storage_Requirements.pdf) and [**SAP HANA Tailored Data Center Integration (TDI) Overview**](https://download.computec.one/media/sap/SAP_HANA_Tailored_Data_Center_Integration_Overview.pdf).
-:::
+> ℹ️ In virtual environments, **LVM** can be used. For physical installations, avoid LVM to maintain performance.
 
-In virtualized environments, LVM can be used. However, for physical installations, it is best to avoid it to ensure optimal disk performance.
+---
 
-### Network
+## Network Configuration
 
-A low-latency network is essential for seamless SAP Business One operations.
+Low network latency is essential for smooth SAP Business One operations.
 
-- SAP does not support networks with latency higher than 1 ms.
-- Wi-Fi and WAN connections are not recommended as they do not provide the required responsiveness.
+- SAP recommends latency below **1 ms**.
+- Avoid **Wi-Fi** or **WAN connections** in production environments.
+- A wired, local, low-latency setup is strongly preferred.
+
+---
 
 ## Virtualization
 
-SAP Business One can be virtualized using VMware, provided specific prerequisites are met.
+SAP Business One supports virtualization (e.g., via **VMware**) but requires strict adherence to SAP guidelines:
 
-- Detailed requirements are available in the [SAP Notes](https://wiki.scn.sap.com/wiki/display/VIRTUALIZATION/SAP+HANA+on+VMware+vSphere).
-- Additional information is also available on [VMware site](https://blogs.vmware.com/apps/2018/01/hyper-threading-impact-virtual-sap-sizing-performance-part-1-2.html).
+- Virtualization is viable when hardware sizing, CPU reservations, and network performance are well-aligned.
+- Refer to SAP’s official [HANA on VMware documentation](https://wiki.scn.sap.com/wiki/display/VIRTUALIZATION/SAP+HANA+on+VMware+vSphere) and [VMware performance blog](https://blogs.vmware.com/apps/2018/01/hyper-threading-impact-virtual-sap-sizing-performance-part-1-2.html) for specifics.
 
-## OS Configuration
+---
 
-Our practical experience is primarily with SUSE Linux Enterprise Server (SLES), so the references provided below are specific to this platform.
+## Operating System Configuration
 
-- Most necessary system settings can be applied automatically using the `sapconf` tool on standard SUSE systems, or `saptune` on SUSE for SAP Applications versions.
-- These tools are described in the SAP Note [1275776 - Linux: Preparing SLES for SAP environments](https://launchpad.support.sap.com/#/notes/1275776).
-- Additional guidance is available in the following resources:
+Our recommendations are based on real-world experience with **SUSE Linux Enterprise Server (SLES)**.
 
-        - [SAP blog: `sapconf` – A way to prepare a SLES system for SAP workload – Part 1](https://blogs.sap.com/2018/06/13/sapconf-a-way-to-prepare-a-sles-system-for-sap-workload-part-1)
-        - [Recommended SUSE SLES for SAP Settings](https://www.suse.com/support/kb/doc/?id=000019526).
+- Tools like **`sapconf`** and **`saptune`** help automate SAP-compliant OS configurations.
+- Use `sapconf` on standard SLES systems and `saptune` on **SLES for SAP Applications**.
+- These tools are explained in [SAP Note 1275776](https://launchpad.support.sap.com/#/notes/1275776).
 
-:::caution
-Even after using these tools, it is strongly recommended to manually verify your OS configuration against all relevant SAP Notes. Some settings may not be automatically applied and require manual adjustment.
-:::
+> Additional resources:
+> - [SAP Blog: Preparing SLES using sapconf (Part 1)](https://blogs.sap.com/2018/06/13/sapconf-a-way-to-prepare-a-sles-system-for-sap-workload-part-1)  
+> - [SUSE: Recommended SLES for SAP Settings](https://www.suse.com/support/kb/doc/?id=000019526)
 
-Here are the most important SAP Notes:
+> ⚠️ Even after applying these tools, verify your OS settings manually against SAP Notes. Not all configurations are applied automatically.
 
-- [2235581 - SAP HANA: Supported Operating Systems](https://launchpad.support.sap.com/#/notes/2235581)
-- [1944799 - SAP HANA Guidelines for SLES Operating System Installation](https://launchpad.support.sap.com/#/notes/1944799)
-- [2684254 - SAP HANA DB: Recommended OS settings for SLES 15 / SLES for SAP Applications 15](https://launchpad.support.sap.com/#/notes/2684254)
-- [2382421 - Optimizing the Network Configuration on HANA- and OS-Level](https://launchpad.support.sap.com/#/notes/2382421).
+### Key SAP Notes for OS Configuration
 
-## SAP HANA Replication
+- [2235581 – Supported Operating Systems](https://launchpad.support.sap.com/#/notes/2235581)
+- [1944799 – Guidelines for SLES Installation](https://launchpad.support.sap.com/#/notes/1944799)
+- [2684254 – Recommended Settings for SLES 15](https://launchpad.support.sap.com/#/notes/2684254)
+- [2382421 – Optimizing Network Config for SAP HANA](https://launchpad.support.sap.com/#/notes/2382421)
 
-For high availability (HA), SAP HANA offers three replication modes: SYNC, SYNCMEM, and ASYNC.
+---
 
-- SYNC and SYNCMEM introduce additional latency as transactions require confirmation from the secondary server.
-- Details are available in the [Replication Modes for SAP HANA System Replication](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/2.0.05/en-US/c039a1a5b8824ecfa754b55e0caffc01.html).
+## SAP HANA Replication: High Availability Considerations
 
-## Final Thoughts
+For high availability (HA), SAP HANA supports three replication modes:
 
-To achieve optimal SAP Business One performance, carefully review and implement all the recommended configurations. Ensuring the correct hardware, network setup, OS tuning, and replication methods will lead to a more stable and efficient system that enhances business operations.
+| Mode     | Description |
+|----------|-------------|
+| **SYNC**     | Primary waits for acknowledgment from the secondary system before committing a transaction. |
+| **SYNCMEM** | Similar to SYNC but with in-memory acknowledgment (faster, less durable). |
+| **ASYNC**    | Primary does not wait; best for geographically distributed systems. |
+
+Each mode affects **latency** and **performance**. Choose based on your business continuity needs.
+
+> Learn more: [SAP Help - Replication Modes for SAP HANA System Replication](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/2.0.05/en-US/c039a1a5b8824ecfa754b55e0caffc01.html)
+
+---
+
+## Conclusion
+
+Optimal system performance for SAP Business One - especially when extended with CompuTec solutions - requires careful attention to:
+
+- Certified and performance-capable hardware
+- Fast and reliable storage and network infrastructure
+- Correct virtualization and OS-level tuning
+- Thoughtful selection of SAP HANA replication strategy
+
+Following these principles results in a more stable, scalable, and performant business system environment.
 
 ---

@@ -56,7 +56,7 @@ The filter bar at the top of the CTLabel screen enables dynamic filtering and so
 
                 - This filter enables you to search for requests submitted by specific Requesters.
                 - It uses a MultiComboBox, allowing you to select one or more requesters.
-                - The list of requesters is fixed, with the available options being: **SAP, WMS, PDC, PF**.
+                - The list of requesters is fixed, with the available options being: **SAP, CompuTec WMS, CompuTec PDC, CompuTec ProcessForce**.
 
         - **Status Filter**
 

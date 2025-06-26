@@ -20,7 +20,7 @@ Only for Items (managed by Batches) with Serialization enabled = Yes are availab
 
 **Serialization enabled = Yes**, Item with all revisions enabled for serialization, is selectable for Rule definition.
 
-## WMS - Custom Configuration
+## CompuTec WMS - Custom Configuration
 
 ![Serialization - Fields Description](./media/field-description/image2020-1-19-10-16-23.png)
 

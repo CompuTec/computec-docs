@@ -2,10 +2,36 @@
 sidebar_position: 4
 ---
 
-# ProcessForce Data Model Download
+# CompuTec ProcessForce Data Model Download
+
+This guide explains how to download the latest version of the **CompuTec ProcessForce Data Model**, a required component during system setup or update procedures.
+
+---
+
+## ✅ Prerequisites
+
+Before downloading or installing the Data Model, ensure that **all required prerequisites** are in place.  
+Refer to the guide here:  
+👉 [Installation Prerequisites](./prerequisites-installation.md)
 
 :::danger
-    Please make sure that all the [prerequisites](./prerequisites-installation.md) are met before installing the data model.
+Do not proceed with installation unless all prerequisites are fulfilled. Skipping prerequisite checks can lead to installation failures or system instability.
 :::
 
-To download the latest version of ProcessForce Data Model, please click [here](https://download.computec.one/software/processforce/model/CompuTec_ProcessForce_Data_Model_10.0.13.zip).
+---
+
+## ⬇️ Download the Data Model
+
+To download the latest official version of the ProcessForce Data Model, click the link below:
+
+👉 [Download CompuTec ProcessForce Data Model (v10.0.13)](https://download.computec.one/software/processforce/model/CompuTec_ProcessForce_Data_Model_10.0.13.zip)
+
+This zip file contains the files necessary to load the ProcessForce data model into your SAP Business One environment.
+
+---
+
+## 📌 What’s Next?
+
+After downloading the data model, follow the [Installation Guide](./prerequisites-installation.md) to complete the setup.
+
+---

@@ -4,6 +4,12 @@ sidebar_position: 1
 
 # License Server
 
-:::info
-    You can find CompuTec License Service Installation Guide [here](../../licensing/license-server/license-server-installation.md)
-:::
+👉 Please refer to the updated guide here: [License Server Installation](../../licensing/license-server/license-server-installation.md)
+
+This updated page includes:
+
+- Step-by-step instructions for initial installation
+- Setting Windows Firewall rule
+- For instructions on using CompuTec Service Manager and configuring Direct Data Access mode
+
+---
