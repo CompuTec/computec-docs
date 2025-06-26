@@ -18,7 +18,7 @@ This guide shows you how to add UDFs to CompuTec ProcessForce forms, along with 
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 | Form or Area | UDF Support |
 |--------------|-------------|
@@ -28,7 +28,7 @@ This guide shows you how to add UDFs to CompuTec ProcessForce forms, along with 
 
 ---
 
-## ✅ Prerequisites
+## Prerequisites
 
 Ensure you have the following authorization in SAP Business One:
 
@@ -42,7 +42,7 @@ Administration → System Initialization → Authorizations → General Authoriz
 
 ---
 
-## 🛠️ How to Add UDFs to CompuTec ProcessForce Forms
+## How to Add UDFs to CompuTec ProcessForce Forms
 
 1. Go to:
 
@@ -84,7 +84,7 @@ Administration → System Initialization → Authorizations → General Authoriz
 
 ---
 
-## 🧩 Viewing and Using UDFs
+## Viewing and Using UDFs
 
 ### Header UDFs
 
@@ -117,7 +117,7 @@ Administration → System Initialization → Authorizations → General Authoriz
 
 ---
 
-## ⚙️ Managing Visibility with Form Settings
+## Managing Visibility with Form Settings
 
 You can control the visibility and activity of row UDFs using: Form Settings → Table Columns
 
@@ -127,7 +127,7 @@ You can control the visibility and activity of row UDFs using: Form Settings →
 
 ---
 
-## 📌 Recommended Settings
+## Recommended Settings
 
 After installing CompuTec ProcessForce, some UDFs are automatically added to core SAP Business One forms (e.g., `Revision` on Sales Order).
 
