@@ -4,36 +4,60 @@ sidebar_position: 1
 
 # Introduction to CompuTec Labels
 
-Welcome to the CompuTec Labels documentation space. On this page, you can find basic, first-encounter information about the application. For more detailed information, please check the rest of the documentation.
+Welcome to the CompuTec Labels documentation space. This page provides an overview of the application, including what it does, how it works, and where to go next depending on your needs.
+
+Whether you're getting started for the first time or configuring advanced printing rules, this documentation is organized to support every stage of your journey.
 
 ---
 
-## What is it?
+## What is CompuTec Labels?
 
-CompuTec Labels is an multi-faceted solution that efficiently manages printing templates and label printers in the company. CompuTec Labels is an SAP Business One solution that allows you to manage all printing templates and label printers and make sure inventory is labelled exactly as it should be. Using CompuTec Labels, you can print documents from SAP Business One and CompuTec applications: CompuTec ProcessForce, CompuTec WMS and CompuTec PDC. Data included on printed labels can be predefined with a number of settings.
+CompuTec Labels is a powerful SAP Business One add-on designed to manage label printing across your organization. It allows you to centrally control printing templates, configure printer settings, and automate label generation from within SAP Business One and other CompuTec solutions, including:
 
-- Manage many kinds of printers simultaneously, no matter what drivers it use: Crystal, Zebra, or Bixolon.
-- Assign specific templates to a particular printer and define an action that starts printing, e.g., adding/ updating a document or choosing the option manually.
-- Pull real-time data from SAP Business One and other CompuTec solutions to create the labels you need
-- Automate label printing and set up very specific printing rules to define where, when and by whom labels can be printed
-- Ensure labelling consistency throughout the business
+- **CompuTec ProcessForce**
+- **CompuTec WMS**
+- **CompuTec PDC**
 
-The solution is highly customizable and can be tailored to accommodate a wide range of business processes.
+CompuTec Labels helps ensure every item is accurately labeled according to your business requirements.
 
-## How does it work?
+### Key Capabilities
 
-- [Installation and Configuration](./setup/overview.md)
+- Manage multiple printer types (Crystal, Zebra, Bixolon)
+- Assign templates to specific printers and printing triggers
+- Print labels manually or automatically (e.g., on document add/update)
+- Pull real-time data from SAP Business One and CompuTec applications
+- Set detailed rules for where, when, and by whom labels are printed
+- Maintain consistent labeling standards across the organization
+
+Highly customizable, CompuTec Labels adapts to your specific industry processes.
 
 ---
 
-- **Choose a company**: All SAP Business One installation companies are available. The application settings are set up for a specific database.
-- **Create a printing rule (template is assigned to it)**: Here, you can define in which situations it is possible to print a label. A number of settings are available.
-- **Setting up trigger events**: Printing can be run using a proper option from a requester application (manual printing). We can also set up a trigger event, e.g., printing on a document add or update
-- **Mapping table**: What information would we like to have on a print.
-- **Logs and Requests**: You can check logs of every operation performed on the application from its level. You can also contain a list of all the requests to the application.
+## How It Works (Conceptual Overview)
 
-## Installation and Usage
+Here’s a simplified breakdown of how the system operates:
 
-Here, you can watch a video with a comprehensive description of the [application's installation and options](https://www.youtube.com/watch?v=S5urmvsi-M0)
+- **Choose a Company**: Configure settings per SAP Business One company database.
+- **Define Printing Rules**: Specify when and how labels should be printed.
+- **Assign Templates**: Link templates to rules and printer types.
+- **Set Trigger Events**: Choose to print manually or on system events like document updates.
+- **Map Label Content**: Use mapping tables to define what data appears on each label.
+- **Track and Audit**: Monitor operations via logs and print request history.
+
+👉 Learn more about the setup: [Installation and Configuration](./setup/overview.md)
+
+---
+
+## Quick Start (Tutorial)
+
+New to CompuTec Labels? Start here:
+
+🎥 [Watch a video overview of installation and setup](https://www.youtube.com/watch?v=S5urmvsi-M0)
+
+This is the best place to begin your journey with the application, especially if you're installing or configuring it for the first time.
+
+---
+
+Need help or something missing? Reach out to your system administrator or CompuTec Support for further assistance.
 
 ---

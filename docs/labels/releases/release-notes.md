@@ -10,6 +10,14 @@ toc_max_heading_level: 4
 
 Below are the release notes for CompuTec Labels Printing Manager, highlighting new features, improvements, and bug fixes in this release.
 
+### CompuTec Labels Printing Manager 4.8.4
+
+**Release Date – 26 June 2025**
+
+| Issue Type | Component/s |Reference Support Ticket | Release Note |
+| --- | --- | --- | --- |
+| Improvement | Printing Manager Application | - | Printing Rules and Mapping Tables windows have been significantly optimized for improved performance. |
+
 ### CompuTec Labels Printing Manager 4.8.3 HF1
 
 **Release Date – 05 June 2025**

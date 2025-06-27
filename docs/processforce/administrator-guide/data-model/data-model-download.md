@@ -8,7 +8,7 @@ This guide explains how to download the latest version of the **CompuTec Process
 
 ---
 
-## ✅ Prerequisites
+## Prerequisites
 
 Before downloading or installing the Data Model, ensure that **all required prerequisites** are in place.  
 Refer to the guide here:  
@@ -20,7 +20,7 @@ Do not proceed with installation unless all prerequisites are fulfilled. Skippin
 
 ---
 
-## ⬇️ Download the Data Model
+## Download the Data Model
 
 To download the latest official version of the ProcessForce Data Model, click the link below:
 
@@ -30,7 +30,7 @@ This zip file contains the files necessary to load the ProcessForce data model i
 
 ---
 
-## 📌 What’s Next?
+## What’s Next?
 
 After downloading the data model, follow the [Installation Guide](./prerequisites-installation.md) to complete the setup.
 

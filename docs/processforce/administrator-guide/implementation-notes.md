@@ -8,7 +8,7 @@ When customizing CompuTec ProcessForce during implementation, it's important to 
 
 ---
 
-## ✅ Why Use a Prefix?
+## Why Use a Prefix?
 
 Adding a unique **prefix** to the UDF name - typically based on the partner or customer company code ensures:
 
@@ -18,7 +18,7 @@ Adding a unique **prefix** to the UDF name - typically based on the partner or c
 
 ---
 
-## 🛠️ Step-by-Step: Naming UDFs with a Prefix
+## Step-by-Step: Naming UDFs with a Prefix
 
 1. **Choose a Prefix**  
    Use a 2-3 character identifier derived from your company or customer name.  
@@ -48,7 +48,7 @@ This naming pattern will help future developers, support teams, and upgrade tool
 
 ---
 
-## ✅ Summary
+## Summary
 
 | Step | Action |
 | --- | --- |
