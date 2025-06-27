@@ -112,3 +112,5 @@ This function restores all Goods Issue and Goods Receipt references within Manuf
 The purpose of this option is to address scenarios where a Goods Issue or Goods Receipt document has been deleted, yet the reference remains in the Manufacturing Order's Document tab. This situation can lead to errors when attempting to update the Manufacturing Order.
 
 ---
+
+If issues persist after restoring, consult your system administrator or contact [CompuTec Support](https://support.computec.pl)

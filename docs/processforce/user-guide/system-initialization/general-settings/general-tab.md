@@ -4,7 +4,13 @@ sidebar_position: 2
 
 # General tab
 
-The General Tab in SAP Business One's production settings provides various configuration options to customize system behavior, enhance usability, and streamline manufacturing processes. These settings control visibility, automation, scheduling, and data display preferences within the production and resource management modules. Below is a breakdown of the key settings available in this tab.
+The **General tab** provides configuration options that control core behaviors in production and resource-related processes within **SAP Business One** enhanced by **CompuTec ProcessForce**. These settings define defaults for visibility, automation, scheduling behavior, and data display preferences—impacting how production and resource information is managed and visualized.
+
+To access General tab, navigate to:
+
+:::info Path
+Administration → System Initialization → General Settings → ProcessForce tab → General tab
+:::
 
 ![General Tab](./media/general-tab/general-settings-general-tab.webp)
 
@@ -12,14 +18,16 @@ The General Tab in SAP Business One's production settings provides various confi
 
 ## Key Settings
 
-- **Enable standard functionality of SAP Business One's Production menu**: when enabled, all default SAP Business One production menu entries are visible.
-- **Enable the standard functionality of the Resources menu**: when enabled, allows access to SAP Business One’s standard resource menu options, excluding the ProcessForce Resource menu.in Enabled status, standard SAP Business One Resource menu options are available (apart from ProcessForce Resource option)
-- **Display on the Gantt chart**: a default value is displayed on the Gantt chart. Options include Related Resource Code, Resource Remarks, Manufacturing Order Number, Item Code, Planned Quantity, Actual Quantity, Required Date, and Priority.
+The following options are available in the General tab of the CompuTec ProcessForce General Settings. These settings control system behavior related to production, scheduling, automation, and user interface visibility within SAP Business One.
+
+- **Enable standard functionality of SAP Business One's Production menu**: Displays all default SAP Business One production menu entries alongside ProcessForce menus.
+- **Enable the standard functionality of the Resources menu**: When enabled, standard SAP Business One resource menu options are visible (excluding the ProcessForce-specific Resource menu).
+- **Display on the Gantt chart**: Defines what information appears by default on the Gantt chart task bars. Options include Related Resource Code, Resource Remarks, Manufacturing Order Number, Item Code, Planned Quantity, Actual Quantity, Required Date, and Priority.
     :::tip
-        You can use the Resource Remarks field to display custom text on Gantt work progress bars.
+        Use the Resource Remarks field to add custom text labels to Gantt chart progress bars.
     :::
-- **Default Revision Code, Default Revision Name**: assign a default Revision Code and Revision Name for global settings.
-- **Automatically issue materials on Pick Order Add/Update, Automatically receipt materials on Pick Receipt Add/Update**: set up Auto Pick and Auto Receipt.
+- **Default Revision Code, Default Revision Name**: Specifies default values to be used system-wide for Revision Code and Revision Name fields.
+- **Automatically issue materials on Pick Order Add/Update, Automatically receipt materials on Pick Receipt Add/Update**: Set up Auto Pick and Auto Receipt.
     <details>
         <summary>Click here to find out more</summary>
         <div>
@@ -28,7 +36,7 @@ The General Tab in SAP Business One's production settings provides various confi
             For more details, click [here](../../manufacturing/auto-pick-issue-and-auto-pick-receipt.md)
         
             **Pick Issue**
-            - Perform the usual steps of picking non-trace and batch-traced Items.
+            - Pick non-trace and batch-traced Items.
             - Click "Update "on the Pick Issue Form.
             - The system automatically creates an **Issue to Production** transaction. 
             - Pick Order is updated and set to "Close" status.
@@ -43,23 +51,32 @@ The General Tab in SAP Business One's production settings provides various confi
         </div>
     </details>
 
-- **Add setup time to a new task when rescheduling**: if a partially booked Manufacturing Order Task is rescheduled, setup time is included again if this option is enabled.
-- **Start with Planning Board in Scheduling**: choose whether Scheduling opens with the Resources tab or the  [Resource Planning Board](../../scheduling/gantt-chart/resource-planning-board.md) tab.
-- **Default Gantt chart time scale**: you can choose the time scale for Gantt charts Days, Weeks, and Months
-- **Automatically check MORs in lists**: if this checkbox is checked, Manufacturing Order lines are checked by default on forms, e.g., on Scheduling Board:
+- **Add setup time to a new task when rescheduling**: When enabled, if a partially booked manufacturing task is rescheduled, the system re-applies the full setup time to the new task block.
+- **Start with Planning Board in Scheduling**: Selects whether the Scheduling module opens on the [Resource Planning Board](../../scheduling/gantt-chart/resource-planning-board.md).
+- **Default Gantt chart time scale**: Sets the default time scale used in Gantt views: Days, Weeks, or Months.
+- **Automatically check MORs in lists**: Enables automatic selection (checkbox) of Manufacturing Order Requests (MORs) in lists—such as on the Scheduling Board.
 
     ![General Tab](./media/general-tab/scheduling-board-auto-create.jpg)
 
-- **Automatically select linked children of MORs**: when this checkbox is checked, the Link ChildMors checkbox is enabled on the Scheduling Board form (Create Manufacturing Orders option from the context menu on the Sales Order form).
-- **Disable copying of the revisions after duplicating the item**: prevents related Revisions from being copied when duplicating an Item Master Data record.
-- **Hide ProcessForce-related controls on the Sales Order form**: removes ProcessForce-related fields from the Sales Order Header if enabled.
+- **Automatically select linked children of MORs**: Automatically enables the Link Child MORs checkbox when creating manufacturing orders from Sales Orders.
+- **Disable copying of the revisions after duplicating the item**: Prevents associated revisions from being copied when duplicating an Item Master Data record.
+- **Hide ProcessForce-related controls on the Sales Order form**: Hides ProcessForce-specific fields from the Sales Order header area.
 
     ![ProcessForce Fields](./media/general-tab/sales-order-processforce-fields.webp)
 
-- **Hide Resource Information on Resource Planning Board**: when enabled, the Resource Information panel is hidden on the Resource Planning Board.
+- **Hide Resource Information on Resource Planning Board**: Hides the Resource Information panel in the Resource Planning Board to simplify the view.
 
     ![ProcessForce Fields](./media/general-tab/resource-information.webp)
 
-- **HANA Reports limit: Date From, Date To**: the option is related to one of the [Data Model](../../../administrator-guide/data-model/overview.md) reports. It limits the results to the ones within specific time constraints.
+- **HANA Reports limit: Date From, Date To**: Applies a global date filter to limit the output of specific reports based on the [Data Model](../../../administrator-guide/data-model/overview.md). Only records within the selected date range will be included in report results.
+
+---
+
+## Tips & Best Practices
+
+- **Use Gantt chart labels wisely**: Choose the display field most relevant to your planners (e.g., MO Number for order-based production).
+- **Avoid clutter**: Hide ProcessForce fields on Sales Orders if not used regularly by your team.
+- **Default Gantt scale**: Set to Weeks or Months for long-term planning; use Days for short-run or batch-intensive operations.
+- **Enable auto transactions**: Reduces clicks for production operators and streamlines document generation.
 
 ---

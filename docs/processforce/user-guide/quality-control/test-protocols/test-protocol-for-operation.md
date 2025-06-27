@@ -26,6 +26,6 @@ Based on Manufacturing Order Operation:
 
 ## Example
 
-For processes requiring a quality check before or after an operation (such as a "First Check"), the Test Protocol should be defined in the Routing, associating the QC check directly with the operation. In such cases, requirements like blocking the operation from starting through PDC if the QC check (First check) has not been passed can be enforced.
+For processes requiring a quality check before or after an operation (such as a "First Check"), the Test Protocol should be defined in the Routing, associating the QC check directly with the operation. In such cases, requirements like blocking the operation from starting through CompuTec PDC if the QC check (First check) has not been passed can be enforced.
 
 ---

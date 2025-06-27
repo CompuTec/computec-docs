@@ -4,51 +4,85 @@ sidebar_position: 2
 
 # Authorizations
 
-Proper user authorizations are essential for managing CompuTec ProcessForce documents efficiently. Assigning the right access ensures that users can perform necessary actions while maintaining system security and compliance.
+User authorizations in **CompuTec ProcessForce** determine who can access, view, and perform operations on various documents and functions. Properly configuring authorizations ensures operational control, data security, and compliance with company policies.
 
 ---
 
-The creation of CompuTec ProcessForce documents depends on specific user authorizations. To manage user authorizations, navigate to:
+## Setting Authorizations for Users
 
-:::info Path
-    Administration → System Initialization → Authorizations → General Authorizations
-:::
+To manage user permissions:
 
-![Path](./media/authorizations/authorizations-main.webp)
+1. Go to:
+    :::info Path
+   Administration → System Initialization → Authorizations → General Authorizations
+   :::
 
-Click on a specific username to view and modify the authorizations assigned to that user.
+   ![Authorizations Navigation](./media/authorizations/authorizations-main.webp)
 
-ProcessForce-related authorizations are located at:
+2. Click a username to open the authorization settings for that user.
 
-:::info Path
-Authorizations Form → Users → ProcessForce
-:::
+3. Navigate to:
+    :::info Path
+   Authorizations Form → Users → ProcessForce
+   :::
 
-A specific authorization can have one of three values:
+---
 
-- **Full Authorization**: Allows users to create, modify, and post a specific document.
-- **Read Only**: grants view access without editing rights.
-- **No Authorization**: restricts access to the document entirely.
+## Authorization Levels
 
-    ![Path](./media/authorizations/authorizations-options.webp)
+Each ProcessForce-related function can be assigned one of the following access levels:
 
-If authorization settings appear grayed out, the user has superuser privileges, granting them full access to all functions.
+- **Full Authorization**: Create, modify, and post documents.
+- **Read Only**: View content without making changes.
+- **No Authorization**: Access is completely restricted.
 
-To grant superuser privileges, go to:
+    ![Authorization Options](./media/authorizations/authorizations-options.webp)
 
-:::info Path
+    > If options are grayed out, the user has **superuser privileges**.
+
+To assign superuser status:
+
+- Navigate to:
+    :::info Path
     Administration → Setup → General → Users
-:::
+    :::
 
-![Superuser](./media/authorizations/super-user.webp)
+    ![Superuser Setting](./media/authorizations/super-user.webp)
 
->Note: Only users with a Professional license assigned can modify authorizations.
+> ⚠️ Only users with a **Professional license** can modify authorizations.
 
-To work with certain ProcessForce documents, specific authorizations are needed. For example, to create, modify, and post Production Goods Receipts and Production Goods Issues, as well as the corresponding Pick Orders and Pick Receipts, you must grant Full Authorization for the following permissions:
+---
+
+## Required Authorizations for Key Transactions
+
+To work with specific ProcessForce documents (e.g., production-related inventory transactions), users need the following permissions:
 
 - **Goods Receipt and Goods Issue**: Authorizations form → Inventory → Inventory Transactions → Goods Receipt [and] Goods Issue
-- **Journal Entry**. This setting is required for Goods Receipt and Goods Issue to reflect on financials: Authorizations Form → Financials → Journal Entry
+- **Journal Entry**: This setting is required for Goods Receipt and Goods Issue to reflect on financials: Authorizations Form → Financials → Journal Entry
 - **Pick Receipt and Pick Order**: User Authorization → ProcessForce → Production → Inventory Transaction → Pick Receipt [and] Pick Issue
 - **Numbering Series**: This is needed for documents series management: Authorizations form → Administration → Numbering Series.
+
+---
+
+## Understanding User Authorization Behavior
+
+- **Granular Control**: Authorizations are assigned per user and per feature, offering precise control over system access.
+- **Superuser Override**: Users with superuser status automatically have full access to all forms and transactions.
+- **Dependency on License Type**: Only users with a **Professional license** can be granted or edit authorizations.
+- **Integration with SAP Business One**: CompuTec ProcessForce leverages SAP's built-in authorization framework to control access uniformly across modules.
+
+---
+
+## Troubleshooting Access Issues
+
+If a user:
+
+- Cannot access or modify a document: Ensure they have **Full Authorization** for the relevant transaction type.
+- Can’t see any CompuTec ProcessForce options: Verify the user has been assigned CompuTec ProcessForce authorizations under their user profile.
+- Sees all settings grayed out: Check if they are set as a **superuser** (which overrides manual configuration).
+
+---
+
+For additional guidance, contact CompuTec Support.
 
 ---

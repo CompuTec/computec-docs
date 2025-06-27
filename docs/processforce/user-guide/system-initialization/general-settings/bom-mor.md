@@ -6,19 +6,23 @@ toc_max_heading_level: 2
 
 # Bill of Materials and Manufacturing Orders tab
 
-Managing Bill of Materials (BOM) and Manufacturing Orders efficiently is crucial for streamlined production processes. The Bill of Materials and Manufacturing Orders tab in ProcessForce provides various configurable settings to optimize these workflows. These settings include defining default formulas for items, enabling synchronization with SAP Business One, setting priority levels for production, and configuring options for semi-finished goods.
+This section provides detailed configuration options for managing Bills of Materials (BOM) and Manufacturing Orders (MOR) within ProcessForce. The tab allows users to define default calculation formulas, manage SAP synchronization, set manufacturing priorities, and optimize planning for semi-finished products.
 
 This document outlines the key features and functionalities available in this tab to help users better understand and configure their manufacturing operations effectively.
 
+To access Bill of Materials and Manufacturing Orders tab, navigate to:
+
+:::info Path
+Administration → System Initialization → General Settings → ProcessForce tab → Bill of Materials and Manufacturing Orders tab
+:::
+
+![Bill of Materials and Manufacturing Orders tab](./media/bom-mor/general-settings-bill-of-materials-and-manufacturing-orders.webp)
+
 ---
-
-You can define Bill of Materials and Manufacturing Orders settings on this tab, e.g., default formulas for Items.
-
-![Bill of Materials and MAnufacturing Orders tab](./media/bom-mor/general-settings-bill-of-materials-and-manufacturing-orders.webp)
 
 ## Default Formula for Bill of Materials
 
-ProcessForce offers a versatile approach for defining the relationships between parent items, coproducts, scrap, phantoms, scrap percentages, and factors.
+CompuTec ProcessForce offers a versatile approach for defining the relationships between parent items, coproducts, scrap, phantoms, scrap percentages, and factors.
 
 When a Bill of Material is created, these default formats are automatically assigned to each item. The formula, as shown, is included in this tab during the installation of ProcessForce.
 
@@ -73,7 +77,7 @@ There are no default formulas set up for Yield. Click [here](../../formulations-
 
 ### Bill of Materials
 
-- Enabling this option allows ProcessForce BOM data to sync with SAP Business One BOM objects.
+- Enabling this option allows CompuTec ProcessForce's BOM data to sync with SAP Business One BOM objects.
 - The key data synchronized includes values from the Result Column.
 
 ![Result](./media/bom-mor/bill-of-materials-result.webp)
@@ -81,18 +85,18 @@ There are no default formulas set up for Yield. Click [here](../../formulations-
 ### Manufacturing Orders
 
 :::caution
-    To enable synchronization, the same document numbering series must be set for SAP Production Orders and ProcessForce ManufacturingOrdersr. You can check here how to do that.
+    To enable synchronization, the same document numbering series must be set for SAP Production Orders and CompuTec ProcessForce Manufacturing Orders. You can check here how to do that.
 :::
 
-- Synchronizes ProcessForce Manufacturing Orders with SAP Business One Production Orders.
+- Synchronizes CompuTec ProcessForce Manufacturing Orders with SAP Business One Production Orders.
 - The key data synchronized includes planned and actual quantities.
-- Ensure that SAP Production Orders and ProcessForce Manufacturing Orders have the same document numbering series.
+- Ensure that SAP Production Orders and CompuTec ProcessForce Manufacturing Orders have the same document numbering series.
 
 ![Synchronization](./media/bom-mor/manufacturing-order-synchronization.webp)
 
 ### Due Date Synchronization
 
-- SAP Production Orders have a Due Date, while ProcessForce Manufacturing Orders have Required Date and Planned Start Date.
+- SAP Production Orders have a Due Date, while CompuTec ProcessForce Manufacturing Orders have Required Date and Planned Start Date.
 - Users can configure which date should sync with the SAP Production Order Due Date.
 
 ![Date Synchronization](./media/bom-mor/manufacturing-order-sync-dates.webp)
