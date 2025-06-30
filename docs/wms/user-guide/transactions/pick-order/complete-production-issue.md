@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-## Complete Production Issue
+# Complete Production Issue
 
 The Complete Production Issue option enables warehouse users to manually release goods for production directly from CompuTec WMS interface. This is especially useful in scenarios where the Auto Issue setting is not enabled in SAP Business One.
 
