@@ -10,7 +10,7 @@ Printing a Goods Receipt Purchase Order (GRPO) in SAP Business One requires prop
 
 ## How-to: Step-by-Step Configuration
 
-1. Configure Printer
+### 1. Configure Printer
 
     SAP Business One supports saving labels as PDFs when using a **Crystal** printer type.
 
@@ -29,7 +29,7 @@ Printing a Goods Receipt Purchase Order (GRPO) in SAP Business One requires prop
 
     ➡️ For more details, refer to the [Printer Configuration documentation](../../setup/configuration/general-configuration.md#printers).
 
-2. Define Label Template
+### 2. Define Label Template
 
     To print GRPO labels, we need to define and assign a Label Template. The template used in this scenario is as follows:
 
@@ -39,7 +39,7 @@ Printing a Goods Receipt Purchase Order (GRPO) in SAP Business One requires prop
 
     ➡️ For more information, see [Printer Configuration](../../setup/configuration/general-configuration.md#printers).
 
-3. Set Printing Rules
+### 3. Set Printing Rules
 
     The following rules apply to GRPO printing:
 
@@ -50,7 +50,7 @@ Printing a Goods Receipt Purchase Order (GRPO) in SAP Business One requires prop
     - Header: Not checked
     - Template: GRPO
 
-4. Place Label Report
+### 4. Place Label Report
 
     Crystal Reports must be saved in the following directory:
 
@@ -66,7 +66,7 @@ Printing a Goods Receipt Purchase Order (GRPO) in SAP Business One requires prop
 
     Crystal Reports use parameters (e.g., StringPar, NumericPar) which are configured through Mapping.
 
-5. Define Mapping Parameters
+### 5. Define Mapping Parameters
 
     Mapping rules define how data is assigned to specific variables within the label layout. The mappings for this scenario are:
 
@@ -81,7 +81,7 @@ Printing a Goods Receipt Purchase Order (GRPO) in SAP Business One requires prop
 
     ➡️ More more about mappings: [Mapping Parameters Configuration](../../setup/configuration/company-installation-and-configuration.md#mapping-parameters-view).
 
-6. Set Event Triggers
+### 6. Set Event Triggers
 
     Set up when the printing will occur using the Event Triggers View.
 
@@ -93,13 +93,13 @@ Printing a Goods Receipt Purchase Order (GRPO) in SAP Business One requires prop
 
     ➡️ Learn more about(../../setup/configuration/company-installation-and-configuration.md#event-triggers-view).
 
-7. Update Global Data
+### 7. Update Global Data
 
     After configuring the settings, update the global data by navigating to Companies and selecting the Update Global Data option.
 
     ![Global Settings](./media/scenario1-goods-receipt-po/ct-labels-update-global-settings.webp)
 
-8. Assign Template to Printer
+### 8. Assign Template to Printer
 
     To complete the setup, assign GRPO to a specific printer with the following configuration:
 
@@ -109,7 +109,7 @@ Printing a Goods Receipt Purchase Order (GRPO) in SAP Business One requires prop
 
     ➡️ For assigning reports, refer to [Label Reports Configuration](../../setup/configuration/general-configuration.md#label-reports).
 
-9. Print the Label
+### 9. Print the Label
 
     Due to the `OnChange` trigger, the GRPO label will print automatically upon update.
 
