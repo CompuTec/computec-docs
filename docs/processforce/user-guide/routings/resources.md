@@ -12,13 +12,11 @@ To access Resources, navigate to:
     Production → Routings → Resources
 :::
 
+![Resource](./media/resources/resources.png)
+
 ---
 
-## Resources
-
-![Resource](./media/resources/resource.webp)
-
-### Resource Types
+## Resource Types
 
 | Type of Resource | Has Calendar? | Visible on Gantt Chart? |    Hourly rates    | Connected with | Time Booking    | Times (Setup, Run) | Number of resources |
 | --- | --- | --- | --- | --- | --- | ---| --- |
@@ -307,6 +305,8 @@ Resource Calendar is used to define the availability of a Resource for productio
 
 ## Alternative Resource
 
-A Resource can have assigned a number of other Resources, to which a Manufacturing Order task can be switched, e.g. in case of downtime of an original Resource. Click [here](/docs/processforce/user-guide/scheduling/gantt-chart/alternative-resources/) to find out more on Alternative Resources.
+A Resource can have assigned a number of other Resources, to which a Manufacturing Order task can be switched, e.g. in case of downtime of an original Resource. 
+
+➡️ Learn more: About [Alternative Resources](/docs/processforce/user-guide/scheduling/gantt-chart/alternative-resources/).
 
 ---

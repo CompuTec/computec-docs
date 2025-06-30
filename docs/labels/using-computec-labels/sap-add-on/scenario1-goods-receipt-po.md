@@ -91,7 +91,7 @@ Printing a Goods Receipt Purchase Order (GRPO) in SAP Business One requires prop
     |:--------:|:-------------------:|:----------------:|:--------:|:--------:|:--------:|:--------:|
     | All      | All                 | Goods Receipt PO | OnChange | NoAction | NoAction | NoAction |
 
-    ➡️ Learn more about(../../setup/configuration/company-installation-and-configuration.md#event-triggers-view).
+    ➡️ Learn more about [Event Triggers](../../setup/configuration/company-installation-and-configuration.md#event-triggers-view).
 
 ### 7. Update Global Data
 
