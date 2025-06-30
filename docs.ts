@@ -10,8 +10,9 @@ export default [
     {
         label: "ProcessForce",
         pluginId: "processforce",
-        currentVersion: "10.0",
+        currentVersion: "3.0",
         includeCurrentVersion: true,
+        lastVersion: "current",
     },
     {
         label: "PDC",

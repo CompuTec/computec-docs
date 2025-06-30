@@ -1,0 +1,254 @@
+{
+  "version.label": {
+    "message": "2.0",
+    "description": "The label for version 2.0"
+  },
+  "sidebar.defaultSidebar.category.Administration's Guide": {
+    "message": "Administration's Guide",
+    "description": "The label for category Administration's Guide in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Installation": {
+    "message": "Installation",
+    "description": "The label for category Installation in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.First Installation": {
+    "message": "First Installation",
+    "description": "The label for category First Installation in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Licensing": {
+    "message": "Licensing",
+    "description": "The label for category Licensing in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.CompuTec License Server": {
+    "message": "CompuTec License Server",
+    "description": "The label for category CompuTec License Server in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.ProcessForce Data Model": {
+    "message": "ProcessForce Data Model",
+    "description": "The label for category ProcessForce Data Model in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.SAP Business One": {
+    "message": "SAP Business One",
+    "description": "The label for category SAP Business One in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Developers's Guide": {
+    "message": "Developers's Guide",
+    "description": "The label for category Developers's Guide in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Data Import and Update using PowerShell's Scripts": {
+    "message": "Data Import and Update using PowerShell's Scripts",
+    "description": "The label for category Data Import and Update using PowerShell's Scripts in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.PowerShell Troubleshooting": {
+    "message": "PowerShell Troubleshooting",
+    "description": "The label for category PowerShell Troubleshooting in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.ProcessForce API": {
+    "message": "ProcessForce API",
+    "description": "The label for category ProcessForce API in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.ProcessForce API Tutorial": {
+    "message": "ProcessForce API Tutorial",
+    "description": "The label for category ProcessForce API Tutorial in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.ProcessForce API Tips & Tricks": {
+    "message": "ProcessForce API Tips & Tricks",
+    "description": "The label for category ProcessForce API Tips & Tricks in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Transaction Notification": {
+    "message": "Transaction Notification",
+    "description": "The label for category Transaction Notification in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.User's Guide": {
+    "message": "User's Guide",
+    "description": "The label for category User's Guide in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.System Initialization": {
+    "message": "System Initialization",
+    "description": "The label for category System Initialization in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.General Settings": {
+    "message": "General Settings",
+    "description": "The label for category General Settings in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.MRP tab": {
+    "message": "MRP tab",
+    "description": "The label for category MRP tab in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Item Details": {
+    "message": "Item Details",
+    "description": "The label for category Item Details in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Routings": {
+    "message": "Routings",
+    "description": "The label for category Routings in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Formulations and Bill of Materials": {
+    "message": "Formulations and Bill of Materials",
+    "description": "The label for category Formulations and Bill of Materials in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Bill of Materials": {
+    "message": "Bill of Materials",
+    "description": "The label for category Bill of Materials in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Multi-level Bill of Materials": {
+    "message": "Multi-level Bill of Materials",
+    "description": "The label for category Multi-level Bill of Materials in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Production Process": {
+    "message": "Production Process",
+    "description": "The label for category Production Process in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Inventory": {
+    "message": "Inventory",
+    "description": "The label for category Inventory in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Pick Order Bin Locations and Allocations": {
+    "message": "Pick Order Bin Locations and Allocations",
+    "description": "The label for category Pick Order Bin Locations and Allocations in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Batch Control": {
+    "message": "Batch Control",
+    "description": "The label for category Batch Control in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Batch Control Settings": {
+    "message": "Batch Control Settings",
+    "description": "The label for category Batch Control Settings in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Batch Master Data": {
+    "message": "Batch Master Data",
+    "description": "The label for category Batch Master Data in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.MRP": {
+    "message": "MRP",
+    "description": "The label for category MRP in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.MRP 2.5": {
+    "message": "MRP 2.5",
+    "description": "The label for category MRP 2.5 in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Manufacturing": {
+    "message": "Manufacturing",
+    "description": "The label for category Manufacturing in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Manufacturing Order": {
+    "message": "Manufacturing Order",
+    "description": "The label for category Manufacturing Order in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Pick Issue and Receipt by Operation": {
+    "message": "Pick Issue and Receipt by Operation",
+    "description": "The label for category Pick Issue and Receipt by Operation in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Time Booking": {
+    "message": "Time Booking",
+    "description": "The label for category Time Booking in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Subcontracting": {
+    "message": "Subcontracting",
+    "description": "The label for category Subcontracting in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Subcontract Assembly and Free Issue Materials": {
+    "message": "Subcontract Assembly and Free Issue Materials",
+    "description": "The label for category Subcontract Assembly and Free Issue Materials in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Scheduling": {
+    "message": "Scheduling",
+    "description": "The label for category Scheduling in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Gantt Chart": {
+    "message": "Gantt Chart",
+    "description": "The label for category Gantt Chart in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Quality Control": {
+    "message": "Quality Control",
+    "description": "The label for category Quality Control in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Test Protocols": {
+    "message": "Test Protocols",
+    "description": "The label for category Test Protocols in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Quality Control Test": {
+    "message": "Quality Control Test",
+    "description": "The label for category Quality Control Test in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Vehicle Inspection": {
+    "message": "Vehicle Inspection",
+    "description": "The label for category Vehicle Inspection in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Complaint Management": {
+    "message": "Complaint Management",
+    "description": "The label for category Complaint Management in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Costing - Material and Resources": {
+    "message": "Costing - Material and Resources",
+    "description": "The label for category Costing - Material and Resources in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Configuration": {
+    "message": "Configuration",
+    "description": "The label for category Configuration in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Item Costing": {
+    "message": "Item Costing",
+    "description": "The label for category Item Costing in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Distribution and Cost Items": {
+    "message": "Distribution and Cost Items",
+    "description": "The label for category Distribution and Cost Items in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Ingredient Declaration": {
+    "message": "Ingredient Declaration",
+    "description": "The label for category Ingredient Declaration in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Ingredient Settings": {
+    "message": "Ingredient Settings",
+    "description": "The label for category Ingredient Settings in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Plant Maintenance": {
+    "message": "Plant Maintenance",
+    "description": "The label for category Plant Maintenance in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Examples": {
+    "message": "Examples",
+    "description": "The label for category Examples in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Field Description": {
+    "message": "Field Description",
+    "description": "The label for category Field Description in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Preventive Maintenance": {
+    "message": "Preventive Maintenance",
+    "description": "The label for category Preventive Maintenance in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Preventive Maintenance Schedule Form": {
+    "message": "Preventive Maintenance Schedule Form",
+    "description": "The label for category Preventive Maintenance Schedule Form in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Preventive Maintenance Schedule - Logic": {
+    "message": "Preventive Maintenance Schedule - Logic",
+    "description": "The label for category Preventive Maintenance Schedule - Logic in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Mode Time Based": {
+    "message": "Mode Time Based",
+    "description": "The label for category Mode Time Based in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Mode Meter Based": {
+    "message": "Mode Meter Based",
+    "description": "The label for category Mode Meter Based in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Mode Time and Meter Based": {
+    "message": "Mode Time and Meter Based",
+    "description": "The label for category Mode Time and Meter Based in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Releases": {
+    "message": "Releases",
+    "description": "The label for category Releases in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Support Procedure": {
+    "message": "Support Procedure",
+    "description": "The label for category Support Procedure in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Troubleshooting": {
+    "message": "Troubleshooting",
+    "description": "The label for category Troubleshooting in sidebar defaultSidebar"
+  }
+}
