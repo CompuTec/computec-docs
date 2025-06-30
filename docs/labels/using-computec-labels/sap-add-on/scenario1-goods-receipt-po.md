@@ -8,124 +8,126 @@ Printing a Goods Receipt Purchase Order (GRPO) in SAP Business One requires prop
 
 ---
 
-## Printer Settings
+## How-to: Step-by-Step Configuration
 
-SAP Business One allows saving prints as PDFs only when using the Crystal printer type. In this scenario, we will configure the following printer settings:
+1. Configure Printer
 
-- Printer Code: test1
-- Printer Type: Crystal
-- Printer Name: test1
-- Localization: CT
+    SAP Business One supports saving labels as PDFs when using a **Crystal** printer type.
 
-With the following parameters, define
+    **Sample Printer Configuration:**
 
-- SaveAsPdf: True
-- PhysicalName: Send to OneNote 16 (one of the printer's names available on this test server)
-- MaxCapacity: 75.
+    - Printer Code: test1
+    - Printer Type: Crystal
+    - Printer Name: test1
+    - Localization: CT
 
-Click [here](../../setup/configuration/general-configuration.md#printers) to find out more about printer configuration.
+    With the following parameters, define
 
-## Label Template
+    - SaveAsPdf: True
+    - PhysicalName: Send to OneNote 16 (one of the printer's names available on this test server)
+    - MaxCapacity: 75.
 
-To print GRPO labels, we need to define and assign a Label Template. The template used in this scenario is as follows:
+    ➡️ For more details, refer to the [Printer Configuration documentation](../../setup/configuration/general-configuration.md#printers).
 
-| TEMPLATE CODE | TEMPLATE NAME | TEMPLATE DESCRIPTION |
-|:-------------:|:-------------:|:--------------------:|
-| GRPO          | GRPO          | GRPO                 |
+2. Define Label Template
 
-Click [here](../../setup/configuration/general-configuration.md#printers) to find out more about printer configuration.
+    To print GRPO labels, we need to define and assign a Label Template. The template used in this scenario is as follows:
 
-## Printing Rules
+    | TEMPLATE CODE | TEMPLATE NAME | TEMPLATE DESCRIPTION |
+    |:-------------:|:-------------:|:--------------------:|
+    | GRPO          | GRPO          | GRPO                 |
 
-The following rules apply to GRPO printing:
+    ➡️ For more information, see [Printer Configuration](../../setup/configuration/general-configuration.md#printers).
 
-- Requester: SAP
-- Transaction: Goods Receipt PO
-- Employee/User/ItemGroup/Warehouse: All
-- Unit of Measurement – not checked
-- Header – not checked
-- Template: GRPO
+3. Set Printing Rules
 
-## Label Report
+    The following rules apply to GRPO printing:
 
-### Crystal Report
+    - Requester: SAP
+    - Transaction: Goods Receipt PO
+    - Employee/User/ItemGroup/Warehouse: All
+    - Unit of Measurement: not checked
+    - Header: Not checked
+    - Template: GRPO
 
-The Crystal Report file used in this scenario is as follows:
+4. Place Label Report
 
-![Crystal Report](./media/scenario1-goods-receipt-po/crystal-report.webp)
+    Crystal Reports must be saved in the following directory:
 
-Crystal Reports use different variables, such as StringPar and NumericPar, which need to be mapped in the next step.
+    ```plaintext
+    C:\ProgramData\CompuTec\CT Label Printing\Reports\
+    ```
 
-#### CompuTec Labels Localization
+    >Note: (Use the installation-specific path if the default wasn't selected.)
 
-Crystal reports for CompuTec Labels must be stored in the following location:
+    The Crystal Report file used in this scenario is as follows:
 
-`C:\ProgramData\CompuTec\CT Label Printing\Reports\`
+    ![Crystal Report](./media/scenario1-goods-receipt-po/crystal-report.webp)
 
-(or the corresponding installation directory if the default one was not chosen).
+    Crystal Reports use parameters (e.g., StringPar, NumericPar) which are configured through Mapping.
 
-## Mapping
+5. Define Mapping Parameters
 
-Next, we must define mapping parameters: Mapping rules define how data is assigned to specific variables within the label layout. The mappings for this scenario are:
+    Mapping rules define how data is assigned to specific variables within the label layout. The mappings for this scenario are:
 
-|    Name    |    Type   |             Value             |
-|:----------:|:---------:|:-----------------------------:|
-| StringPar3 | Parameter | Item Code (Item Code)         |
-| StringPar1 | Parameter | ItemName (ItemName)           |
-| StringPar4 | Sql       | SELECT @DistNumber FROM DUMMY |
-| NumberofCopies | Sql | SELECT 5 FROM DUMMY |
+    |    Name    |    Type   |             Value             |
+    |:----------:|:---------:|:-----------------------------:|
+    | StringPar3 | Parameter | Item Code (Item Code)         |
+    | StringPar1 | Parameter | ItemName (ItemName)           |
+    | StringPar4 | Sql       | SELECT @DistNumber FROM DUMMY |
+    | NumberofCopies | Sql | SELECT 5 FROM DUMMY |
 
-In addition to String Pars, The NumberofCopies parameter ensures that five copies are printed. If required, this value can be made dynamic by retrieving it from a database field.
+    ℹ️ NumberofCopies controls how many labels are printed. Make this dynamic by linking to a database field if needed.
 
-Click [here](../../setup/configuration/company-installation-and-configuration.md#mapping-parameters-view) to find out more about mapping parameters configuration.
+    ➡️ More more about mappings: [Mapping Parameters Configuration](../../setup/configuration/company-installation-and-configuration.md#mapping-parameters-view).
 
-## Event Triggers
+6. Set Event Triggers
 
-The next thing is to define what action printing will occur.
+    Set up when the printing will occur using the Event Triggers View.
 
-Event Triggers set up used in this scenario:
+    Event Triggers set up used in this scenario:
 
-| Employee | Employee Department |    Object Type   |    SAP   |    PDC   |    WMS   |    ProcessForce    |
-|:--------:|:-------------------:|:----------------:|:--------:|:--------:|:--------:|:--------:|
-| All      | All                 | Goods Receipt PO | OnChange | NoAction | NoAction | NoAction |
+    | Employee | Employee Department |    Object Type   |    SAP   |    PDC   |    WMS   |    ProcessForce    |
+    |:--------:|:-------------------:|:----------------:|:--------:|:--------:|:--------:|:--------:|
+    | All      | All                 | Goods Receipt PO | OnChange | NoAction | NoAction | NoAction |
 
-Click [here](../../setup/configuration/company-installation-and-configuration.md#event-triggers-view) to find out more about event trigger configuration.
+    ➡️ Learn more about(../../setup/configuration/company-installation-and-configuration.md#event-triggers-view).
 
-## Data Update
+7. Update Global Data
 
-After configuring the settings, update the global data by navigating to Companies and selecting the Update Global Data option.
+    After configuring the settings, update the global data by navigating to Companies and selecting the Update Global Data option.
 
-![Global Settings](./media/scenario1-goods-receipt-po/ct-labels-update-global-settings.webp)
+    ![Global Settings](./media/scenario1-goods-receipt-po/ct-labels-update-global-settings.webp)
 
-## Template Assigning
+8. Assign Template to Printer
 
-To complete the setup, assign the [GRPO](#label-template) to a specific printer with the following configuration:
+    To complete the setup, assign GRPO to a specific printer with the following configuration:
 
-| INFO |    NAME   | TEMPLATE CODE | PRINTER CODE |                                               FILE                                              |
-|:----:|:---------:|:-------------:|:------------:|:-----------------------------------------------------------------------------------------------:|
-| OK   | GRPOtest1 | GRPO          | test1        | C:\Program Files (x86)\CompuTec\CompuTec LabelPrinting\Reports\LabelPrintingAyCrystalLayout.rpt |
+    | INFO |    NAME   | TEMPLATE CODE | PRINTER CODE |                                               FILE                                              |
+    |:----:|:---------:|:-------------:|:------------:|:-----------------------------------------------------------------------------------------------:|
+    | OK   | GRPOtest1 | GRPO          | test1        | C:\Program Files (x86)\CompuTec\CompuTec LabelPrinting\Reports\LabelPrintingAyCrystalLayout.rpt |
 
-Click [here](../../setup/configuration/general-configuration.md#label-reports) to find out more about Template and report file assigning.
+    ➡️ For assigning reports, refer to [Label Reports Configuration](../../setup/configuration/general-configuration.md#label-reports).
 
-## Printing
+9. Print the Label
 
-Since we configured the OnChange trigger, labels will print automatically when a Goods Receipt Purchase Order (GRPO) is updated.
+    Due to the `OnChange` trigger, the GRPO label will print automatically upon update.
 
-We can also print a label manually at any time. To print labels manually:
+    We can also print a label manually at any time. To print labels manually:
 
-1. Open SAP Business One.
-2. Navigate to File > Print Labels in the upper menu.
-3. Select Crystal printer from the drop-down list.
-4. Click Print.
+    1. Open SAP Business One.
+    2. Navigate to File > Print Labels in the upper menu.
+    3. Select Crystal printer from the drop-down list.
+    4. Click Print.
 
-    ![Print Labels](./media/scenario1-goods-receipt-po/print-labels.webp)
+        ![Print Labels](./media/scenario1-goods-receipt-po/print-labels.webp)
 
-Upon printing, the following message appears:
+    Upon printing, the following message appears:
 
-![System Message](./media/scenario1-goods-receipt-po/system-message.webp)
+    ![System Message](./media/scenario1-goods-receipt-po/system-message.webp)
 
-The label is printed and saved as a PDF in the default location: `Local Disk (C:)\ProgramData\CompuTec\CT Label Printing\Reports\Crystal`:
+    The label is printed and saved as a PDF in the default location: `Local Disk (C:)\ProgramData\CompuTec\CT Label Printing\Reports\Crystal`:
 
-![Printed Label](./media/scenario1-goods-receipt-po/printed-label.webp)
+    ![Printed Label](./media/scenario1-goods-receipt-po/printed-label.webp)
 
 ---
