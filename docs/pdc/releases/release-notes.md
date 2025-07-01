@@ -19,7 +19,7 @@ toc_max_heading_level: 2
 | Bug | CompuTec PDC | A bin allocation error occurs during issue to production. |
 | Bug | CompuTec PDC | Scanning by batch does not auto-fill the Item Code, Batch Number, or Bin Location. <br/>System does not validate locked batches. |
 | Bug | CompuTec PDC | In Quick Receipt, the system incorrectly handles the number of batches. |
-| Bug | Labels | Duplicate label print requests are generated in CT Labels after a Pick Receipt is created in CompuTec PDC. |
+| Bug | CompuTec Labels | Duplicate label print requests are generated in CompuTec Labels after a Pick Receipt is created in CompuTec PDC. |
 | Improvement | Pick and Pack | Add an "Auto Select All" button at the top of CompuTec PDC Receipt/Issue window. |
 
 ## CompuTec PDC 3.10.25.2
@@ -116,7 +116,7 @@ toc_max_heading_level: 2
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
 | Improvement | Barcodes | Scanning a MODocEntry + RscLineNum barcode adds a new Task (or opens a Task – when it is already added). | - |
-| Improvement | Labels | New Crystal Reports mechanism. Please check the related [SAP website](https://help.sap.com/docs/SAP_BUSINESS_ONE_VERSION_FOR_SAP_HANA/686100cb1bc34346b2bc6642685bab43/b1bbebd32ff940c786c76315a8dfa270.html). | SPDC-748|
+| Improvement | CompuTec Labels | New Crystal Reports mechanism. Please check the related [SAP website](https://help.sap.com/docs/SAP_BUSINESS_ONE_VERSION_FOR_SAP_HANA/686100cb1bc34346b2bc6642685bab43/b1bbebd32ff940c786c76315a8dfa270.html). | SPDC-748|
 | Improvement | CompuTec PDC | Pick Receipt, number of Batches set to more than one: a lack of warning message about the "Batch generated when Manufacturing Order is" is selected and hence cannot create multiple Batches. | - |
 | Improvement | Tasks | - More space for user-specific buttons that were added in CompuTec PDC. <br/>- Additional space in the tile for custom fields. <br/>- Highlighting of the CompuTec PDC buttons when additional information is available, for example, a drawing or instructions. | - |
 | Bug | Barcodes | Scanning a 22-sign barcode causes a crash of the application. | - |
@@ -389,9 +389,9 @@ toc_max_heading_level: 2
 
 | Issue Type | Component/s | Release Note | Fix Version/s | Linked issue/s\*\* |
 | --- | --- | --- | --- | --- |
-| Bug | Labels | The Company DB, User and Employee fields are missing from a label triggered from CompuTec PDC. | 3.93.13.1 (3.10.2.0) | SPDC-401 |
+| Bug | CompuTec Labels | The Company DB, User and Employee fields are missing from a label triggered from CompuTec PDC. | 3.93.13.1 (3.10.2.0) | SPDC-401 |
 | Bug | Other | Time remaining to automatic log out (due to inactivity) is not displayed on mobile devices. | 3.93.13.1 (3.10.2.0) | SPDC-402 |
-| Bug | Labels | Label Print error upon performing Pick Receipt in CompuTec PDC. | 3.93.13.1 <br/>(3.10.2.0) | SPDC-397 |
+| Bug | CompuTec Labels | Label Print error upon performing Pick Receipt in CompuTec PDC. | 3.93.13.1 <br/>(3.10.2.0) | SPDC-397 |
 | Bug | Other | Auto log out option: some actions are not registered on touchscreen devices which leads to auto log out regardless of activity. | 3.93.13.1 (3.10.2.0), <br/>2.93.13.1 (2.10.2.0) | SPDC-393 |
 | Improvement | Pick and Pack | Weight Wizard: choosing Items by sequence number added. | 3.93.13.1 (3.10.2.0), <br/>2.93.13.1 (2.10.2.0) | SPDC-343 |
 | Bug | Configuration | An error occurs upon changing Windows Language Preferences and running CompuTec PDC Plug-in application (the error also occurs when CompuTec AppEngine is installed on server other than CompuTec PDC and the servers have different Language Preferences set). <br/>Error message: <blockquote>Not Connected Current version of CompuTec PDC is to low</blockquote> | 3.93.13.1 (3.10.2.0) | SPDC-389 |

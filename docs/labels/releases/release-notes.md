@@ -81,7 +81,7 @@ Below are the release notes for CompuTec Labels SAP Addon, highlighting new feat
 
 | Issue Type | Reference Support | Release Note |
 | --- | --- | --- |
-| Improvement | - | New option has been added in the printer list in the Printer Preview window of CT Labels Add-on. It is now possible to send request to printers which are set in the query. |
+| Improvement | - | New option has been added in the printer list in the Printer Preview window of CompuTec Labels Add-on. It is now possible to send request to printers which are set in the query. |
 
 ## CompuTec Gateway
 

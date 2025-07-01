@@ -1,5 +1,5 @@
 ---
-sidebar_position: 14
+sidebar_position: 11
 ---
 
 # Reports tab
@@ -198,4 +198,4 @@ These checkboxes determine which types of documents are considered when calculat
 
 ---
 
-➡️ Learn more on how to configure the [Shortage Report](../../scheduling/gantt-chart/material-shortage.md)
+➡️ Learn more on how to configure the [Shortage Report](../../scheduling/gantt-chart/material-shortage.md#configuration-1).

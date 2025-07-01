@@ -73,6 +73,6 @@ You can see the below examples for configuration:
 - When using dynamic file names, you must explicitly include the .pdf extension. Example: `@RequestId_@CCNo.pdf` is valid, but `@RequestId_@CCNo` is not.
 - If a file name conflict occurs (duplicate names), the system will automatically append a suffix in the format: "_@CCNo" (e.g., 450_1.pdf).
 - The default save path is: C:\ProgramData\CompuTec\CT Label Printing\Reports\Crystal
-- This feature is available in CT Labels version 4.7.1.37 or newer.
+- This feature is available in CompuTec Labels version 4.7.1.37 or newer.
 
 ---

@@ -89,7 +89,7 @@ The Interface section allows you to customize the appearance and functionality o
 
 ![Other Settings](./media/setting-up-the-application/ctlabel.png)
 
-#### CT Labels Settings
+#### CompuTec Labels Settings
 
 CT Label Address - Specify the address for CT labels.
 

@@ -12,7 +12,7 @@ CompuTec AppEngine Custom Views are a powerful feature designed to simplify data
 - supports OData V4
 - supports SAP HANA and Microsoft SQL Server
 - supports CompuTec AppEngine Plugins
-- The <i>**CustomViews**</i> folder is available in the AppEngine installation directory, and ProgramData/CompuTec/AppEngine.
+- The <i>**CustomViews**</i> folder is available in the CompuTec AppEngine installation directory, and ProgramData/CompuTec/AppEngine.
 
 ![Custom View](./media/custom-views/core-odata.webp)
 
