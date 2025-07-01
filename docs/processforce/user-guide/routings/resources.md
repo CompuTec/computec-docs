@@ -305,7 +305,7 @@ Resource Calendar is used to define the availability of a Resource for productio
 
 ## Alternative Resource
 
-A Resource can have assigned a number of other Resources, to which a Manufacturing Order task can be switched, e.g. in case of downtime of an original Resource. 
+A Resource can have assigned a number of other Resources, to which a Manufacturing Order task can be switched, e.g. in case of downtime of an original Resource.
 
 ➡️ Learn more: About [Alternative Resources](/docs/processforce/user-guide/scheduling/gantt-chart/alternative-resources/).
 

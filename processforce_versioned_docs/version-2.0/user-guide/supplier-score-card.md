@@ -4,7 +4,7 @@ sidebar_position: 15
 
 # Supplier Score Card
 
-ProcessForce Supplier Score Card is a reporting function based on a weighted supplier scorecard. The ProcessForce Supplier Score Card is a powerful tool that enables businesses to assess and evaluate supplier performance in key areas, including quality, quantity accuracy, and delivery punctuality. By utilizing a weighted scorecard system, this feature allows organizations to track and measure supplier performance through a detailed, easy-to-read report. This process provides actionable insights, helping businesses foster stronger supplier relationships and optimize their procurement strategies.
+Supplier Score Card is a reporting function based on a weighted supplier scorecard. It is a powerful tool that enables businesses to assess and evaluate supplier performance in key areas, including quality, quantity accuracy, and delivery punctuality. By utilizing a weighted scorecard system, this feature allows organizations to track and measure supplier performance through a detailed, easy-to-read report. This process provides actionable insights, helping businesses foster stronger supplier relationships and optimize their procurement strategies.
 
 ---
 
