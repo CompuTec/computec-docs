@@ -5,7 +5,7 @@ import type { Config } from "@docusaurus/types";
 import type { NavbarItem } from "@docusaurus/theme-common";
 import type * as Preset from "@docusaurus/preset-classic";
 
-import docs from "../docs"
+import docsFactory from "../docs"
 import { getDocsPlugins } from "./plugins";
 import { getDocsNavbarItems, getDocsVersionDropdownNavbarItems } from "./navbar-items";
 import { getDocsFooterItems, getFooterItems } from "./footer-items";
@@ -16,6 +16,7 @@ const defaultLanguage = "en";
 const availableLanguages = ["en", "pl"];
 
 interface ConfigOptions {
+  production?: boolean;
   enableI18n?: boolean;
   enableAlgolia?: boolean;
 }
@@ -35,6 +36,7 @@ const algoliaConfig: Preset.ThemeConfig["algolia"] = {
 export default async function createBaseConfigAsync(
   options: ConfigOptions = {}
 ): Promise<Config> {
+  const docs = docsFactory(options.production);
   const docsPlugins = getDocsPlugins(docs);
   const docsNavbarItems = getDocsNavbarItems(docs);
   const docsVersionDropdownNavbarItems =

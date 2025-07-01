@@ -6,13 +6,18 @@ export interface DocConfig {
     includeCurrentVersion: boolean;
 }
 
-export default [
+export default (production?: boolean) => ([
     {
         label: "ProcessForce",
         pluginId: "processforce",
-        currentVersion: "3.0",
-        includeCurrentVersion: true,
-        lastVersion: "current",
+        ...(production ? {
+            includeCurrentVersion: false,
+            lastVersion: "2.0",
+        } : {
+            currentVersion: "3.0",
+            includeCurrentVersion: true,
+            lastVersion: "current",
+        }),
     },
     {
         label: "PDC",
@@ -45,4 +50,4 @@ export default [
         currentVersion: "1.0",
         includeCurrentVersion: true,
     }
-] as DocConfig[];
+] as DocConfig[]);

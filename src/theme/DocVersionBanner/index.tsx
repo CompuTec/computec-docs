@@ -125,7 +125,7 @@ function DocVersionBannerEnabled({
   const getVersionMainDoc = (version: GlobalVersion) =>
     version.docs.find((doc) => doc.id === version.mainDocId)!;
 
-  const docMetadata = docs.find((doc) => doc.pluginId === pluginId);
+  const docMetadata = docs().find((doc) => doc.pluginId === pluginId);
 
   const {savePreferredVersionName} = useDocsPreferredVersion(pluginId);
 
