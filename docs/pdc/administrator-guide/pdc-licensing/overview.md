@@ -22,7 +22,7 @@ This document provides step-by-step instructions on how to license the CompuTec 
 2. **Start the CompuTec License Server** - The CompuTec License Server service is typically set to run automatically upon installation. If it is not running, select the service from the drop-down list and click the "Start" button.
 
     ![PDC Licensing](./media/pdc-licensing/service-manager.webp)
-3. **Open theLicensing Window** - Click on the PDC/WMS Licensing buttonto open the licensing configuration window.
+3. **Open theLicensing Window** - Click on the CompuTec PDC/WMS Licensing button to open the licensing configuration window.
 4. **Request License File** - To obtain a license file, send the following details to CompuTec support as described on the [the CompuTec PDC license request page](./pdc-license-request.md):
 
     - **Full Server Name**: this is automatically displayed after the successful installation of the application and indicates the specific machine on which the application is installed.
@@ -37,7 +37,7 @@ This document provides step-by-step instructions on how to license the CompuTec 
     - **License is not invalid**: an invalid license file was loaded.
 8. **View License Details** - Once the license is successfully imported, information about the remaining validity of the license will be displayed.
 9. **Test the License** - Run CompuTec PDC and attempt to log in. If the license is applied correctly, you may see the message "Not Connected No License Assigned".
-10. **Reload Licensing Window** - Reload the PDC/WMS LICENSING window. A new terminal should now be visible under the License Management tab.
+10. **Reload Licensing Window** - Reload the CompuTec PDC/WMS LICENSING window. A new terminal should now be visible under the License Management tab.
 
     ![Not Assigned](./media/pdc-licensing/pdc-not-assigned.webp)
 11. **License Information** - Two values are communicated on this tab:

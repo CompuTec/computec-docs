@@ -41,9 +41,9 @@ To generate the license, the following information is required:
 - Full Server Name,
 - Terminal License Key (5 blocks of 8 characters, separated by a dash sign).
 
-This information can be found in the PDC/WMS Licensing window under the Import tab.
+This information can be found in the CompuTec PDC/WMS Licensing window under the Import tab.
 
-Access the PDC/WMS Licensing Window through the below path:
+Access the CompuTec PDC/WMS Licensing Window through the below path:
 
 :::info Path
     CompuTec Service Manager application → PDC/WMS Licensing button

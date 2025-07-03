@@ -22,7 +22,7 @@ sidebar_position: 1
 | Bug | CompuTec AppEngine WebClient | SAP OIDC entry is missing under "Required CSP Entries for WebClient" |
 | Bug | CompuTec AppEngine Installer | Setup fails when external address is not accessible from the CompuTec AppEngine server itself |
 | Bug | MRP | Due Date Filter in Order Recommendation is not functioning; Error Message: "this. DueDateForm.setHours is not a function." |
-| Improvement | WMS Plugin | Enable matching of Storage Category to the corresponding rule for better accuracy and control |
+| Improvement | CompuTec WMS Plugin | Enable matching of Storage Category to the corresponding rule for better accuracy and control |
 
 ## CompuTec AppEngine 3.2505.1
 

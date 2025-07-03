@@ -24,11 +24,11 @@ Only for Items (managed by Batches) with Serialization enabled = Yes are availab
 
 ![Serialization - Fields Description](./media/field-description/image2020-1-19-10-16-23.png)
 
-**Enable Serialization** – allows the use of serialization in WMS
+**Enable Serialization** – allows the use of serialization in CompuTec WMS
 
 **Reuse Storage Unit** – allows reusing the same packages (SSCC) in the reception process
 
-**Show button printing label Storage Unit** – allows you to print manually labels for the package (the button will be visible in WMS)
+**Show button printing label Storage Unit** – allows you to print manually labels for the package (the button will be visible in CompuTec WMS)
 
 **Possibility fill up SSCC code manually** – user can enter an SSCC code manually without using a scanner
 

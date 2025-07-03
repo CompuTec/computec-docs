@@ -24,7 +24,7 @@ The Stock Transfer module within SAP Business One offers comprehensive options f
 
     ![Remarks Window](./media/stock-transfer/gr-remarks.png) ![Remarks Window](./media/stock-transfer/gr-remarks-01.png)
 
-5. **Canceling document releases Transfer Request document** – Upon cancellation, closes the Inventory Transfer Request document if the “Dismiss” option is set to “Yes,” preventing further processing in WMS and reflecting a “Closed” status in SAP Business One.
+5. **Canceling document releases Transfer Request document** – Upon cancellation, closes the Inventory Transfer Request document if the “Dismiss” option is set to “Yes,” preventing further processing in CompuTec WMS and reflecting a “Closed” status in SAP Business One.
 
 6. **Block adding Items to base documents** – Prevents the addition of extra items not specified in the base document, ensuring inventory transfers remain consistent with the original request.
 

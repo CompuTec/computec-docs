@@ -43,7 +43,7 @@ In this case, a barcode for Delivery 180006 is (253)33 – GS1 prefix with DocEn
 
 ![Barcode](./media/barcode-01.PNG)
 
-If a related option in WMS Custom Configuration is chosen, then Barcode with Prefix + DocNum can be scanned too.
+If a related option in CompuTec WMS Custom Configuration is chosen, then Barcode with Prefix + DocNum can be scanned too.
 
 ![Barcode](./media/barcode-02.PNG)
 

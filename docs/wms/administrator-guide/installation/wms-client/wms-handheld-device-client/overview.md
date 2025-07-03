@@ -16,7 +16,7 @@ This guide provides instructions for installing the CompuTec WMS Handheld Device
 
 ### .NET Compact Framework
 
-The WMS client requires a specific version of the .NET Compact Framework depending on the operating system installed on your device:
+The CompuTec WMS client requires a specific version of the .NET Compact Framework depending on the operating system installed on your device:
 
     - **For Window CE** - Download the appropriate .NET Compact Framework for your version of Windows CE from [here](https://download.computec.one/software/wms/tools/NETCFv35.wce.armv4.cab)
     - **For Windows Mobile / Handheld Compact** - Download the corresponding .NET Compact Framework [here](https://download.computec.one/software/wms/tools/NETCFv35.wm.armv4i.cab).
@@ -32,7 +32,7 @@ Different device brands require specific libraries to support barcode scanning f
 ### DataWedge
 
 :::note
-If you are using Motorola or Symbol devices, the DataWedge service must be turned off for the WMS application to function correctly. Ensure that the service is disabled before running the application.
+If you are using Motorola or Symbol devices, the DataWedge service must be turned off for the CompuTec WMS application to function correctly. Ensure that the service is disabled before running the application.
 :::
 
 ## Installation

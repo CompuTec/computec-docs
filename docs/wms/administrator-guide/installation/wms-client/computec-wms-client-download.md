@@ -8,7 +8,7 @@ This guide will walk you through the steps to download and install the CompuTec 
 
 ---
 
-With the release of CompuTec WMS 2.10.8 R1 and later versions, downloading CompuTec WMS Client files has become easier and more accessible. Whether you're using a PC, handheld device, or Android device, the process is streamlined, making it faster to get your WMS Client files onto your preferred device. Here's how you can download the required files directly from your CompuTec WMS Server.
+With the release of CompuTec WMS 2.10.8 R1 and later versions, downloading CompuTec WMS Client files has become easier and more accessible. Whether you're using a PC, handheld device, or Android device, the process is streamlined, making it faster to get your CompuTec WMS Client files onto your preferred device. Here's how you can download the required files directly from your CompuTec WMS Server.
 
 ## Instructions
 

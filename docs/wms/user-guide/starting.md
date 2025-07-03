@@ -26,7 +26,7 @@ CompuTec WMS Client offers various startup options, including server configurati
 To ensure seamless communication between the CompuTec WMS Client and Server, follow the steps below:
 
 1. **Server Address & Port**: Ensure that the server address matches the location where the CompuTec WMS Server is installed. The port number must align with the one specified in the server settings. You can verify this in the server configuration.
-2. **Printer Setup**: Define the printer that will handle CompuTec Labels whenever WMS sends a new request. The printer's IP address can be configured in Custom Configuration under the Common tab. For more details, click [here](../administrator-guide/custom-configuration/custom-configuration-functions/common.md).
+2. **Printer Setup**: Define the printer that will handle CompuTec Labels whenever CompuTec WMS sends a new request. The printer's IP address can be configured in Custom Configuration under the Common tab. For more details, click [here](../administrator-guide/custom-configuration/custom-configuration-functions/common.md).
 3. **Scale Integration**: If the CompuTec WMS is intended for use with a scale, enable the Scale checkbox to activate this functionality. Please refer to [weight scale](../user-guide/weight-scales/overview.md) for more information.
 
 ### Info icon
@@ -71,7 +71,7 @@ Checking a specific checkbox displays the Warehouse Selection form of a particul
 
 ## Scanner tab
 
-This tab is specifically designed to manage barcode scanner-related settings within the WMS (Warehouse Management System) Client application.
+This tab is specifically designed to manage barcode scanner-related settings within the CompuTec WMS (Warehouse Management System) Client application.
 
 ![Scanner tab](./media/starting/scanner-tab.webp)
 
@@ -121,7 +121,7 @@ Note that opening the Settings form and clicking Save (even without changing any
 3. Click [here](../administrator-guide/installation/wms-licensing.md) to find out how to create a terminal user. Click a green icon or press Enter. If a terminal user has a barcode assigned, scanning the code logs in the user.
 
     ![WMS Users](./media/starting/wms-users.png)
-4. In WMS Settings, right-click on the database and select User Settings. Then, check the box next to the user(s) who will have access to this database.
+4. In CompuTec WMS Settings, right-click on the database and select User Settings. Then, check the box next to the user(s) who will have access to this database.
 
     ![User Settings](./media/starting/user-settings.png)
 

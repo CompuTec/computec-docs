@@ -33,8 +33,8 @@ Below are the release notes for CompuTec Labels Printing Manager, highlighting n
 
 | Issue Type | Component/s |Reference Support Ticket | Release Note |
 | --- | --- | --- | --- |
-| Improvement | Printing Manager Application | - | The following object has been added to print serial label through WMS application: CT_WMS_SERIALINFOSAP. |
-| Improvement | Printing Manager Application | SLABE-522 | Label printing for catch weight operations is now supported through the WMS. |
+| Improvement | Printing Manager Application | - | The following object has been added to print serial label through CompuTec WMS application: CT_WMS_SERIALINFOSAP. |
+| Improvement | Printing Manager Application | SLABE-522 | Label printing for catch weight operations is now supported through CompuTec WMS. |
 | Bug | Printing Manager Application | SLABE-1014 | It is now possible to conditionally set the NumberofCopies value in Mapping Table to zero. |
 | Bug | Printing Manager Application | - | Output File Name wasn't supporting network path. |
 | Bug | Printing Manager Application | - | The report rule could not be transferred using the Copy to Company function. |

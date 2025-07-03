@@ -14,9 +14,9 @@ The new Stock Counting is created based on an empty document created in CompuTec
 
 **Display message after adding batches** – Configures a message that will be displayed after adding a Batch. The message can be based on an SQL query.
 
-**Hide In Warehouse Quantity Information** – Hides the warehouse quantity information, preventing the WMS user from viewing the system quantity
+**Hide In Warehouse Quantity Information** – Hides the warehouse quantity information, preventing the CompuTec WMS user from viewing the system quantity
 
-**Mark updated rows as counted during Stock Counting** – Marks all rows added in the WMS as counted in SAP.
+**Mark updated rows as counted during Stock Counting** – Marks all rows added in the CompuTec WMS as counted in SAP.
 
 **Auto add SU content** – Enabling this option allows you to add an entire Storage Unit (along with its contents).
 

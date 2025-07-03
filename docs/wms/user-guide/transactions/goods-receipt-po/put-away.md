@@ -27,7 +27,7 @@ Before using the Put Away functionality, ensure the following prerequisites are 
 
 - CompuTec AppEngine 3.0
 - CompuTec WMS 3.0
-- CompuTec AppEngine Plugins: WMS and BusinessLogic
+- CompuTec AppEngine Plugins:  and BusinessLogic
 
 ### AppEngine and Plug-in Installation and Configuration
 

@@ -42,7 +42,7 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 | Bug | CompuTec AppEngine WebClient | SAP OIDC missing under "Required CSP Entries for WebClient" |
 | Bug | CompuTec AppEngine Installer | SAP OIDC was not listed under the "Required CSP Entries for WebClient" |
 | Bug | CompuTec AppEngine Installer | Setup fails when external address is not accessible from the CompuTec AppEngine server itself |
-| Improvement | WMS Plugin | Enable matching of Storage Category to the corresponding rule for better accuracy and control |
+| Improvement | CompuTec WMS Plugin | Enable matching of Storage Category to the corresponding rule for better accuracy and control |
 
 ## CompuTec.ProcessForce 3.2505.3
 

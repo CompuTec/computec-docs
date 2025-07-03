@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-An Inventory Transfer document in WMS can be generated from manually picked Items or Stock Transfer Requests. (An example Stock Transfer Request used in this guide is posted below).
+An Inventory Transfer document in CompuTec WMS can be generated from manually picked Items or Stock Transfer Requests. (An example Stock Transfer Request used in this guide is posted below).
 
 :::info
 Some forms' order and availability during a document's creation may vary depending on individual settings. Click [here](../../../administrator-guide/custom-configuration/overview.md) to find out more.

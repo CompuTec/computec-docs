@@ -61,7 +61,7 @@ Check the Enable Batch Management Manager checkbox to use the option:
 
 ## Additional information
 
-- It is not required to restart the WMS Server after changes were made in the Batch Management Manager
+- It is not required to restart the CompuTec WMS Server after changes were made in the Batch Management Manager
 - Double click left mouse button on a column name to check all the checkboxes in the column
 - Double-click the right mouse button on a column name to uncheck all the checkboxes in the column
 - SU FIFO settings are now in the SU tab:

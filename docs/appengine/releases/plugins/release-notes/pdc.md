@@ -21,4 +21,4 @@ Below are the release notes for CompuTec PDC Plugin, highlighting new features, 
 | Bug | PDC | Error "Sequence contains no matching element" when loading MO list |
 | Bug | PDC | Scanning by batch did not auto-fill item code, batch number, bin location, or allow quantity entry; also added validation for locked batches. |
 | Improvement | Pick and Pack | Added "Auto Select All" button at the top of the PDC Receipt/Issue window |
-| Improvement | WMS Plugin |  Refresh token mechanism to support seamless re-login |
+| Improvement | CompuTec WMS Plugin |  Refresh token mechanism to support seamless re-login |

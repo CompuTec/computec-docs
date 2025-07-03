@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-New Stock Counting transactions have been available since the WMS 2.10.15_R1 version.
+New Stock Counting transactions have been available since the CompuTec WMS 2.10.15_R1 version.
 
 ## Requirements
 

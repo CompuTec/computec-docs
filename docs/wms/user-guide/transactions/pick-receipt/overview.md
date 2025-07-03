@@ -4,9 +4,9 @@ sidebar_position: 1
 
 # Overview
 
-Pick Receipt transaction allows to generate a receipt from CompuTec ProcessForce production from a Pick Receipt. (Below an example Pick Receipt in SAP Business One, which can be used in WMS).
+Pick Receipt transaction allows to generate a receipt from CompuTec ProcessForce production from a Pick Receipt. (Below an example Pick Receipt in SAP Business One, which can be used in CompuTec WMS).
 
-This process is available in WMS only when CompuTec ProcessForce is installed.
+This process is available in CompuTec WMS only when CompuTec ProcessForce is installed.
     ![Pick Receipt](./media/pick-receipt-01.png)
 
 :::info
@@ -144,11 +144,11 @@ CompuTec WMS user can allocate Items to picked status during pick receipt proces
 
     1. **Production Goods Receipt in CompuTec WMS**
 
-    To create a Production Goods Receipt from the WMS level, the user must click the right arrow after turning back from the quantity allocation screen. On the Receipt Remarks screen, users must choose document series (or leave the default one) and can add remarks to the document. Click the save button after that.
+    To create a Production Goods Receipt from CompuTec WMS level, the user must click the right arrow after turning back from the quantity allocation screen. On the Receipt Remarks screen, users must choose document series (or leave the default one) and can add remarks to the document. Click the save button after that.
 
     ![Production Receipt Remarks](./media/production-receipt-remarks-01.png)
     2. **Production Goods Receipt in SAP Business One.**
-    After Picking Items without receipting in CompuTec WMS, another user can open the Pick Receipt document to finish receipting from the production process in SAP. Example situation is given – when one user is responsible for Batch/quantity allocating and the other for produced materials approval. In this scenario, on fulfilled in WMS Pick Receipt user have to use the "Production Goods Receipt" option in SAP.
+    After Picking Items without receipting in CompuTec WMS, another user can open the Pick Receipt document to finish receipting from the production process in SAP. Example situation is given – when one user is responsible for Batch/quantity allocating and the other for produced materials approval. In this scenario, on fulfilled in CompuTec WMS Pick Receipt user have to use the "Production Goods Receipt" option in SAP.
 
     ![Production Goods Receipt](./media/production-goods-receipt-02.png)
 
@@ -281,10 +281,10 @@ CompuTec WMS user can receipt from production items managed by batch numbers wit
     3. Batch master data and UDF Fields for created Batch Number
         After pressing (info) button user is moved to section which contains fields fields from Batch Master Data
         ![Batch UDF](./media/batch-udf-01.png)
-        Fields which have to be showed or required on this screens are selectable In WMS Custom Configuraton UDF Manager.
+        Fields which have to be showed or required on this screens are selectable In CompuTec WMS Custom Configuration UDF Manager.
         ![UDF Manager](./media/udf-manager.png)
     4. Result of optional query which can contain for example details of receipting method for selected item or manufacturing document.
-        WMS displays result from query placed in its Custom Configuration. Note that each value from right column could be use as a variable for query. Then result may vary depending on Item Code or other opened process properties.
+        CompuTec WMS displays result from query placed in its Custom Configuration. Note that each value from right column could be use as a variable for query. Then result may vary depending on Item Code or other opened process properties.
         ![Custom Configuration](./media/custom-configuration-01.png)
     5. UDF Fields for Pick Receipt document row.
         ![Batch Description](./media/batch-description.png)
@@ -338,7 +338,7 @@ CompuTec WMS user can receipt from production items managed by serial numbers or
 
     ![Serial Quantity](./media/serial-quantity.png)
 
-To show and edit UDF fields assigned to to Table Pick Receipt: Required Items user have to choose to show them in WMS Custom Configuration.
+To show and edit UDF fields assigned to to Table Pick Receipt: Required Items user have to choose to show them in CompuTec WMS Custom Configuration.
 
     ![UDF Pick Receipt](./media/udf-pick-receipt.png)
 
@@ -357,7 +357,7 @@ After receipting all required items and pressing "Right" arrow user is moved to 
 <summary>Click here to learn more about Production Goods Receipt document User Defined Fields...</summary>
 <div>
 
-    After pressing UDF button WMS opens window with UDF fields showed:
+    After pressing UDF button CompuTec WMS opens window with UDF fields showed:
 
     ![UDF](./media/remarks-udf.png)
 

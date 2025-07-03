@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# WMS Desktop Client
+# CompuTec WMS Desktop Client
 
 This guide provides a detailed, step-by-step process to help you install the CompuTec WMS Desktop Client on your computer.
 

@@ -18,7 +18,7 @@ Here you can download all required CompuTec WMS files.
     - You know the [upgrade instructions](../administrator-guide/upgrade.md).
 :::
 
-:::warning WMS CompuTec Server restart
+:::warning CompuTec WMS Server restart
     It is required to restart CompuTec Server WMS service at least once in 24 hours in order to make it work properly. Click [here](../administrator-guide/installation/wms-server/overview.md#computec-wms-server-automatic-restart) to find out how to set it up using Windows Task Scheduler.
 :::
 
@@ -31,14 +31,14 @@ Released on 12.05.2025
 :::
 
 :::warning
-    From WMS version 2.10.22_R1, the new WMS desktop client requires installation Microsoft Windows Desktop Runtime (v8.0.0).
+    From CompuTec WMS version 2.10.22_R1, the new WMS desktop client requires installation Microsoft Windows Desktop Runtime (v8.0.0).
     [https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.0-windows-x64-installer?cid=getdotnetcore](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.0-windows-x64-installer?cid=getdotnetcore)
 :::
 
 :::warning
-    From WMS version 2.10.23_R2, reselecting the user interface language is required.
+    From CompuTec WMS version 2.10.23_R2, reselecting the user interface language is required.
 
-    WMS Settings > User Settings
+    CompuTec WMS Settings > User Settings
 :::
 
 Click [here](/docs/appengine/2.0/releases/plugins/wms-stock-counting/download) to get CompuTec AppEngine plugin for Stock Counting and Compatibility Tools.

@@ -16,7 +16,7 @@ This document outlines the key forms available after the installation of CompuTe
     Main Menu → Stock Management → Storage Unit
 :::
 
-All storage units created using WMS can be viewed in this form, along with their details. It is a central place for managing and tracking all storage units within the system.
+All storage units created using CompuTec WMS can be viewed in this form, along with their details. It is a central place for managing and tracking all storage units within the system.
 
     ![Storage Unit Form](./media/storage-unit.png)
 

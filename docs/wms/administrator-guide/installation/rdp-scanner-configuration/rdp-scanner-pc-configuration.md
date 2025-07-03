@@ -31,23 +31,23 @@ Write down your IPv4 Address in the format presented on the screenshot, e.g., 19
 
 ![IP Address](./media/ipconfigadres.webp)
 
-### Add WMS Client to Startup
+### Add CompuTec WMS Client to Startup
 
 1. Press the Win key.
 2. Search for CompuTec WMS Client.
-3. Right-click on the WMS Client icon and select Open file location (Location 1).
+3. Right-click on the CompuTec WMS Client icon and select Open file location (Location 1).
 4. Do not close the window
 5. Press Win+R
 6. Type shell::startup and Enter (Location 2)
 7. This is location 2
-8. Copy the WMS Client icon from Location 1 (client) to Location 2 (start up).
-9. This ensures the WMS Client will start automatically when Windows boots.
+8. Copy the CompuTec WMS Client icon from Location 1 (client) to Location 2 (start up).
+9. This ensures the CompuTec WMS Client will start automatically when Windows boots.
 
     ![RDP](./media/RDP.webp)
 
 ## DataWedge Setup on Scanner
 
-You need to set up DataWedge to enable the WMS Client on the PC through an RDP connection.
+You need to set up DataWedge to enable the CompuTec WMS Client on the PC through an RDP connection.
 
 On your SYMBOL scanner, navigate to: Start → Settings → Control Panel → DataWedge.
 
@@ -125,4 +125,4 @@ If you encounter issues connecting to Windows Mobile 6.x systems or require addi
 
 [https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/mc65.html#pageandfilelist_7308](https://www.zebra.com/us/en/support-downloads/mobile-computers/handheld/mc65.html#pageandfilelist_7308)
 
-By following this guide, you are now ready to utilize your scanner with the WMS Client efficiently.
+By following this guide, you are now ready to utilize your scanner with the CompuTec WMS Client efficiently.

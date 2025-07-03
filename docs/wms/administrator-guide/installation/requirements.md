@@ -9,9 +9,9 @@ toc_max_heading_level: 2
 To ensure CompuTec WMS functions properly, certain requirements must be met. Below are the prerequisites and setup steps for optimal performance.
 
 :::warning
-    The WMS Server should not be installed on an RDP server or any server that hosts other applications accessing the SAP Business One DI API.
+    The CompuTec WMS Server should not be installed on an RDP server or any server that hosts other applications accessing the SAP Business One DI API.
 
-    Since the DI API is single-threaded, simultaneous access by multiple applications can lead to instability. For instance, the SAP Business One desktop client is one such application that uses the DI API. Therefore, it is strongly recommended to avoid installing the WMS Server on the same machine as the SAP Business One desktop client.
+    Since the DI API is single-threaded, simultaneous access by multiple applications can lead to instability. For instance, the SAP Business One desktop client is one such application that uses the DI API. Therefore, it is strongly recommended to avoid installing the CompuTec WMS Server on the same machine as the SAP Business One desktop client.
 :::
 
 ---
@@ -138,7 +138,7 @@ If CompuTec ProcessForce is installed, CompuTec WMS requires CompuTec ProcessFor
 ## Upgrade
 
 :::caution
-Before installing CompuTec WMS 2.0, manually uninstall the previous WMS Server from Programs and Features.
+Before installing CompuTec WMS 2.0, manually uninstall the previous CompuTec WMS Server from Programs and Features.
 :::
 
 ### Transferring Custom Configurations and Server Settings

@@ -199,7 +199,7 @@ The installer is available to download from [here](../../../releases/download.md
 
 **Service Manager**
 
-- An error on clicking the PDC/WMS Licensing button in case of permanent PDC/WMS license in some cases.
+- An error on clicking the CompuTec PDC/WMS Licensing button in case of permanent CompuTec PDC/WMS license in some cases.
 
 **Error message**
 

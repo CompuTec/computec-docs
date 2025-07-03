@@ -12,7 +12,7 @@ toc_max_heading_level: 2
 
 **1. Configuration**
 
-    In addition to installing the WMS components, you must configure the application, such as setting up a database connection. You can find more information about this [here](../administrator-guide/installation/wms-server/overview.md).
+    In addition to installing the CompuTec WMS components, you must configure the application, such as setting up a database connection. You can find more information about this [here](../administrator-guide/installation/wms-server/overview.md).
 
 **2. Windows firewall inbound rule**
 
@@ -52,7 +52,7 @@ toc_max_heading_level: 2
 
 ### <i>**I have purchased a license. How can I obtain the license file?**</i>
 
-You should create an issue on the WMS Support page on support.computec to get the license you purchased [here](https://support.computec.pl/projects/SWMS/welcome-guide). Providing accurate information to CompuTec Support will shorten the response time; thus, please check what data are required – check [here](../administrator-guide/installation/wms-licensing.md).
+You should create an issue on the CompuTec WMS Support page on support.computec to get the license you purchased [here](https://support.computec.pl/projects/SWMS/welcome-guide). Providing accurate information to CompuTec Support will shorten the response time; thus, please check what data are required – check [here](../administrator-guide/installation/wms-licensing.md).
 
 ## No bins defined in warehouses
 
@@ -129,7 +129,7 @@ A CompuTec WMS installation on a “fresh” database (without previous CompuTec
 ### Reproduction
 
 1. Try to open Custom Configuration.
-2. A system message: Error. Please install WMS objects first.
+2. A system message: Error. Please install CompuTec WMS objects first.
 3. Try to install CompuTec WMS error.
 4. Error message: Error when installing CompuTec WMS objects. Please check the logs for details.
 
@@ -186,11 +186,11 @@ In previous versions, please download this file, unpack it, and place (the whole
 
 ### Reproduction
 
-Click "Save" or "Refresh" on WMS Server Settings
+Click "Save" or "Refresh" on CompuTec WMS Server Settings
 
 ### Fix
 
-After pressing "Save" or "Refresh" on WMS Server Settings, it is checked whether SAP Business One DI API and ODBC Driver - respective to the selected server type, are installed.
+After pressing "Save" or "Refresh" on CompuTec WMS Server Settings, it is checked whether SAP Business One DI API and ODBC Driver - respective to the selected server type, are installed.
 
 | ODBC Driver Required | Download Link |
 | --- | ---|

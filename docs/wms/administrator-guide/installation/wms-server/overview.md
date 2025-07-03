@@ -32,12 +32,12 @@ If the CompuTec WMS Server is already installed on this computer, you can access
 4. In the Service Manager, select CompuTec WMS Server from the service dropdown.
 
     ![CompuTec WMS Server](./media/computec-wms-server.webp)
-5. Click "Settings" to open the WMS Settings screen. Alternatively, access this screen from the Start Menu.
+5. Click "Settings" to open the CompuTec WMS Settings screen. Alternatively, access this screen from the Start Menu.
 
     ![CompuTec WMS Settings](./media/start-menu-wms-settings.webp)
 
     :::caution
-       To access the WMS Settings screen via the Start menu, ensure you run it with Administrator privileges; otherwise, an error may occur when attempting to save changes.
+       To access the CompuTec WMS Settings screen via the Start menu, ensure you run it with Administrator privileges; otherwise, an error may occur when attempting to save changes.
     :::
 6. Enter the required details:
 
@@ -54,7 +54,7 @@ If the CompuTec WMS Server is already installed on this computer, you can access
         - **CompuTec** – CompuTec WMS adapted GS1 standard. Click [here](../../barcode-scanning/overview.md#gs1-barcode-standard---computec-decoder) to find out more
         - **Odette** – Odette standard. Click [here](../../barcode-scanning/overview.md#odette-standard) to find out more.
         - **Custom** – Barcode interpreter without prefixes and with custom ones.  Click [here](../../barcode-scanning/overview.md#gs1-barcode-standard---computec-decoder) to find out more.
-    7. Close inactive WMS session after (min) Time, after which a user is logged out from CompuTec WMS (in minutes).
+    7. Close inactive CompuTec WMS session after (min) Time, after which a user is logged out from CompuTec WMS (in minutes).
     8. SAP Business One Password - Enter the SAP Business One Password.
     9. WMS Server Port - Enter the server port.
     10. SSL Connection - Click [here](ssl-connection.md) to find out more about SSL connection.
@@ -65,9 +65,9 @@ If the CompuTec WMS Server is already installed on this computer, you can access
             Setting up an automatic CompuTec WMS Server restart in case of its crash:
 
             - Run Custom Configuration.
-            - Go to the Common tab and check the Stop WMS Server when the ‘Company/database connection is lost’ checkbox and save changes.
+            - Go to the Common tab and check the Stop CompuTec WMS Server when the ‘Company/database connection is lost’ checkbox and save changes.
             - Run Windows Services.
-            - Find CompuTEc WMS Server service, right-click, and choose Properties.
+            - Find CompuTec WMS Server service, right-click, and choose Properties.
             - Go to the Recovery tab.
             - Set ‘Restart the Service’ for the ‘First failure,’ ‘Second failure,’ and ‘Third failure’ fields.
             - Set ‘0’ for the ‘Restart fail count after’ and ‘Restart service after’ fields.
@@ -96,7 +96,7 @@ Restarting the CompuTec Server WMS service at least once every 24 hours is requi
 1. **Task 1** - Stop CompuTec WMS Server
     - Trigger set for a specific time every day.
 2. **Task 2** - Start CompuTec WMS Server
-   - Schedule this task to start the WMS server shortly after the stop task (e.g., 15 seconds later). Due to SAP Business One’s RAM usage, a daily restart is recommended.
+   - Schedule this task to start the CompuTec WMS server shortly after the stop task (e.g., 15 seconds later). Due to SAP Business One’s RAM usage, a daily restart is recommended.
 
 ---
 

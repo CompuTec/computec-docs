@@ -4,13 +4,13 @@ sidebar_position: 6
 
 # Implementation Notes
 
-When customizing CompuTec ProcessForce during implementation, it's important to follow a consistent naming convention for any User-Defined Fields (UDFs) added to ProcessForce objects. This avoids potential naming conflicts in future updates or support scenarios.
+When customizing CompuTec ProcessForce during implementation, it's important to follow a consistent naming convention for any User-Defined Fields (UDFs) added to CompuTec ProcessForce objects. This avoids potential naming conflicts in future updates or support scenarios.
 
 ---
 
 ## Why Use a Prefix?
 
-Adding a unique **prefix** to the UDF name - typically based on the partner or customer company code ensures:
+Adding a unique **prefix** to the User-Defined Fields (UDFs) name - typically based on the partner or customer company code ensures:
 
 - Field names are **distinct** from those delivered by CompuTec ProcessForce
 - You avoid **conflicts** during future upgrades, support cases, or patches
@@ -26,11 +26,7 @@ Adding a unique **prefix** to the UDF name - typically based on the partner or c
 
 2. **Create Your Field Name**  
    Append the field purpose after the prefix using an underscore (`_`) separator.  
-   Example:  
-
-    ```text
-    AB_weight
-    ```
+   Example: `AB_weight`
 
 3. **Resulting Database Field**
     SAP Business One will automatically store it in the database as: U_AB_weight

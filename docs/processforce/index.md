@@ -46,7 +46,7 @@ Administration → System Initialization → General Settings → ProcessForce
 
 Here you can define general CompuTec ProcessForce settings, e.g. set default values or time constraints for many of the add-on features.
 
-![General settings](./media/index/general-settings.webp)
+![General settings](./media/index/general-settings-general-tab.webp)
 
 [→ Learn more](./user-guide/system-initialization/general-settings/overview.md)
 

@@ -41,7 +41,7 @@ This fix was implemented in version 5.10.2.9 but not included in versions 5.11.0
 
 - Significant delay of SAP Business One client response during import (more than a minute) and selection (more than 20 seconds) of ProcessForce license
 
-**Server - WMS**
+**Server - CompuTec WMS**
 
 - Cannot license CompuTec WMS when defined SSL port only (without defining standard port) in CompuTec Service Manager, WMS SETTINGS window
 
@@ -58,8 +58,8 @@ This fix was implemented in version 5.10.2.9 but not included in versions 5.11.0
     **Error Message**
         - There has been an error accessing the configuration file. The system cannot find the file specified.
 
-- PDC/WMS LICENSING window, WMS Users tab: defined and not displayed records are deleted after updating a displayed record when using a filter
-- PDC/WMS LICENSING window, License Management tab: changing the option 'Assign available licenses for newly added terminal accounts automatically' is saved only after restarting CompuTec License Server service.
+- CompuTec PDC/WMS LICENSING window, WMS Users tab: defined and not displayed records are deleted after updating a displayed record when using a filter
+- CompuTec PDC/WMS LICENSING window, License Management tab: changing the option 'Assign available licenses for newly added terminal accounts automatically' is saved only after restarting CompuTec License Server service.
 
 :::info
 This fix was implemented in version 5.10.2.1 but not included in versions 5.10.2.9-5.11.0.3.
@@ -115,7 +115,7 @@ The defect is related to 5.11.0.2 version only.
 
 **Service Manager**
 
-- No application window (including PDC/WMS LICENSING, COMPUTEC LICENSE SERVER SETTINGS) can be opened except the main one.
+- No application window (including CompuTec PDC/WMS Licensing, CompuTec License Server Settings) can be opened except the main one.
 
 :::info
 The defect is related to 5.11.0.1 version only.
@@ -159,7 +159,7 @@ The installer is available to download from [here](../../../releases/download.md
 
 ### Changes and Improvements
 
-**Server – ProcessForce, Server – PDC/WMS (terminals), Server – Labels, Server – Premium**
+**Server – ProcessForce, Server – CompuTec PDC/WMS (terminals), Server – Labels, Server – Premium**
 
 - Possibility to generate the license Hardware Key (CompuTec Key / Terminal License Key / Labels Hardware Key / Premium Hardware Key) on Amazon Elastic Compute Cloud (EC2) Instance in Amazon Web Services (AWS) infrastructure in case of the inability to connect to IPv4 URI by the system
 
@@ -199,13 +199,13 @@ The installer is available to download from [here](../../../releases/download.md
 
 **Service Manager**
 
-- An error on clicking the PDC/WMS Licensing button in case of permanent PDC/WMS license in some cases.
+- An error on clicking the CompuTec PDC/WMS Licensing button in case of permanent CompuTec PDC/WMS license in some cases.
 
 **Error message**
 
 - Error connecting to the license server
 
-- PDC/WMS LICENSING window, License Management tab: changing the option 'Assign available licenses for newly added terminal accounts automatically' is saved only after restarting CompuTec License Server service
+- CompuTec PDC/WMS LICENSING window, License Management tab: changing the option 'Assign available licenses for newly added terminal accounts automatically' is saved only after restarting CompuTec License Server service
 
 ---
 

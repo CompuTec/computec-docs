@@ -59,7 +59,7 @@ Effective management of production processes and inventory is crucial for busine
 
 **Force manual quantity confirmation** – Disables the "Fast Scan" feature, requiring manual confirmation (e.g., pressing the save button) before adding scanned items.
 
-**Overwrite already picked batches** – When a batch is already picked for a line, selecting it again in WMS replaces the existing quantity instead of adding to it.
+**Overwrite already picked batches** – When a batch is already picked for a line, selecting it again in CompuTec WMS replaces the existing quantity instead of adding to it.
 
 **Receipt from production always to default Bin Location** – Automatically assigns the default bin for receipts in warehouses with bin locations, preventing selection of alternate bins.
 

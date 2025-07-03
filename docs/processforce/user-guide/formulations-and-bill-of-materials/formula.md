@@ -1,38 +1,52 @@
 ---
 sidebar_position: 5
+toc_min_heading_level: 2
+toc_max_heading_level: 5
 ---
 
 # Formula
 
 Formulas are a powerful yet straightforward method for calculating quantity relationships between an item and its parent in manufacturing processes. They are primarily used within the Bill of Materials (BOM) and Manufacturing Order (MO) to ensure precise material usage and production efficiency.
 
-A default formula is pre-installed in the General Settings under the ProcessForce/Bill of Materials and Manufacturing Tab. Users can modify this default formula to align with specific operational needs. These formulas support calculations involving standard fields, user-defined fields, and values from other tabs, enhancing flexibility and accuracy in production planning.
+To access
+A default formula is pre-installed in the General Settings. To access default formula, navigate to:
+
+:::info Path
+:::info Path
+Administration → System Initialization → General Settings → ProcessForce tab → Bill of Materials and Manufacturing Orders → Formulas
+:::
+
+![General Settings](./media/formula/general-settings-formula.webp)
+
+Users can modify this default formula to align with specific operational needs. These formulas support calculations involving standard fields, user-defined fields, and values from other tabs, enhancing flexibility and accuracy in production planning.
 
 Furthermore, all expressions that follow Microsoft Excel formula syntax can be used within these formulas, making them highly adaptable for various manufacturing requirements.
 
 ---
 
-![General Settings](./media/formula/general-settings-formula.webp)
-
 ## Default formulas
 
-Items:
+These default formulas are automatically applied unless customized.
+
+### Items
 
 ```sql
 =U_Quantity()*U_Factor()*Items.U_Factor(<sequence>)*Items.U_Quantity(<sequence>)*100/(100 - Items.U_ScrapPercentage(<sequence>))
 ```
 
-Coproducts:
+### Coproducts
 
 ```sql
 =U_Quantity()*U_Factor()*CoProducts.U_Factor(<sequence>)*CoProducts.U_Quantity(<sequence>)
 ```
 
-Phantom:
+### Phantom
 
 ```sql
 =U_Quantity()*U_Factor()*Phantoms.U_Factor(<sequence>)*Phantoms.U_Quantity(<sequence>)
 ```
+
+---
 
 ## Formula Nomenclature
 
@@ -53,9 +67,11 @@ Phantom:
 
 ![Elements](./media/formula/bill-of-materials-elements.webp)
 
+---
+
 ## Formula Functions
 
-The following functions can be used within formulas:
+The following Excel-compatible functions can be used in formulas:
 
 |        Syntax         |                                                                                                                                                          Description                                                                                                                                                           |    As in Excel     |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
@@ -81,9 +97,13 @@ The following functions can be used within formulas:
 |        TAN(x)         |                                                                                                                                          Returns the tangent of x, with x in radians.                                                                                                                                          | :heavy_check_mark: |
 | EQUALS(string;string) |                                                                                                                                               Returns true if strings are equal                                                                                                                                                | :heavy_check_mark: |
 
+>💡 To round down, use FLOOR(x;signif) where signif is the rounding base.
+
+---
+
 ## Using User-Defined Fields in Formulas
 
-It is possible to incorporate [User-Defined Fields (UDFs)](../../administrator-guide/udfs.md) into formulas, using both header or row UDFs.
+Formulas can include [User-Defined Fields (UDFs)](../../administrator-guide/udfs.md) from both the header and line levels.
 
 :::note
 
@@ -92,42 +112,48 @@ It is possible to incorporate [User-Defined Fields (UDFs)](../../administrator-g
 
 :::
 
+---
+
 ## Yield Formulas
 
-To be able to calculate Yield in the Bill Of Material and Manufacturing Order, you have to replace Default formulas in General Settings:
+To calculate yield in BOMs and MOs, update your default formulas in General Settings as shown below.
 
-- Items
+### Updated Formulas
+
+#### Items
 
   ```sql
   =U_Quantity()*U_Factor()*Items.U_Factor(<sequence>)*Items.U_Quantity(<sequence>)*100/(100 - Items.U_ScrapPercentage(<sequence>))*100/Items.U_Yield(<sequence>)
   ```
 
-- CoProducts
+#### CoProducts
 
   ```sql
   =U_Quantity()*U_Factor()*CoProducts.U_Factor(<sequence>)*CoProducts.U_Quantity(<sequence>)*100/CoProducts.U_Yield(<sequence>)
   ```
 
-- Scrap
+#### Scrap
 
   ```sql
   =U_Quantity()*U_Factor()*Scraps.U_Factor(<sequence>)*Scraps.U_Quantity(<sequence>)*100/Scraps.U_Yield(<sequence>)
   ```
 
-- Phantoms
+#### Phantoms
 
   ```sql
   =U_Quantity()*U_Factor()*Phantoms.U_Factor(<sequence>)*Phantoms.U_Quantity(<sequence>)
   ```
 
-Four new formula fields have been introduced to calculate the actual yield within a Manufacturing Order:
+### Yield Output Fields in MOs
 
-- **Yield**: represents the actual yield of the parent item.
-- **CoProduct**: represents the yield of coproducts (Coproduct Tab) generated during production.
-- **ByProduct**: represents the yield of byproducts (Scrap Tab) produced during production.
-- **Scrap**: represents the yield of scrap (Scrap Tab) generated during production.
+The following calculated fields are available in Manufacturing Orders:
 
-![Yield](./media/formula/general-settings-formula-yield.webp)
+- **Yield**: Represents the actual yield of the parent item.
+- **CoProduct**: Represents the yield of coproducts (Coproduct Tab) generated during production.
+- **ByProduct**: Represents the yield of byproducts (Scrap Tab) produced during production.
+- **Scrap**: Represents the yield of scrap (Scrap Tab) generated during production.
+
+  ![Yield](./media/formula/general-settings-formula-yield.webp)
 
 Following standard formula behavior, the predefined formula is automatically copied to the Bills of Materials form. You can view it by clicking the yellow button.
 

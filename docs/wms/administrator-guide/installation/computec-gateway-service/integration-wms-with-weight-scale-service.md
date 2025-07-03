@@ -2,14 +2,14 @@
 sidebar_position: 4
 ---
 
-# Integration WMS with Weight Scale Service
+# Integration CompuTec WMS with Weight Scale Service
 
 :::info
-    This document contains a step-by-step guide on installing the WMS server and Client with weight scale support.
+    This document contains a step-by-step guide on installing the CompuTec WMS server and Client with weight scale support.
 :::
 
 :::warning
-    If you already have WMS installed, please uninstall it. WMS client and server with support weight must be installed from scratch.
+    If you already have CompuTec WMS installed, please uninstall it. The CompuTec WMS client and server with support weight must be installed from scratch.
 
     Net Framework 4.7 is required.
 :::
@@ -28,12 +28,12 @@ sidebar_position: 4
 7. In the web address field type `http://localhost:8080` or `http://Your IP address:8080` and then click the Save button.
 
     ![Custom Configuration](./media/integration-wms-with-weight-scale/weight-service-web-address.png)
-8. Go to the WMS Client and click "Options".
+8. Go to the CompuTec WMS Client and click "Options".
 
     ![Settings](./media/integration-wms-with-weight-scale/wms-settings.png)
 9. Click the "Scale" checkbox, choose your scale, then click the save button.
 
     ![Settings](./media/settings-22.webp)
-10. Your WMS is ready to proceed with the weight scale.
+10. Your CompuTec WMS is ready to proceed with the weight scale.
 
 ---

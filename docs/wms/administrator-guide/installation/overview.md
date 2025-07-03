@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-CompuTec WMS is a robust Warehouse Management System designed to streamline warehouse operations and ensure seamless integration with SAP Business One. This guide outlines the step-by-step process for installing, configuring and validating the core components of the CompuTec WMS solution. The instructions provided here are crucial for ensuring optimal performance and compatibility of WMS with your business processes.
+CompuTec WMS is a robust Warehouse Management System designed to streamline warehouse operations and ensure seamless integration with SAP Business One. This guide outlines the step-by-step process for installing, configuring and validating the core components of the CompuTec WMS solution. The instructions provided here are crucial for ensuring optimal performance and compatibility of CompuTec WMS with your business processes.
 
 ---
 
@@ -48,8 +48,8 @@ Install CompuTec.ProcessForce.API for customers utilizing CompuTec ProcessForce.
 
 ### Install WMS Server
 
-Execute the installation process for the WMS Server.
-Learn how to install the WMS Client [here](../../administrator-guide/installation/wms-client/computec-wms-client-download.md)
+Execute the installation process for the CompuTec WMS Server.
+Learn how to install the CompuTec WMS Client [here](../../administrator-guide/installation/wms-client/computec-wms-client-download.md)
 
 ### Configuration
 
@@ -63,9 +63,9 @@ Learn how to install the WMS Client [here](../../administrator-guide/installatio
 
         ![Configure New Users](./media/overview/license-mngt.png)
     
-    - Set up WMS users and provide credentials for access
+    - Set up CompuTec WMS users and provide credentials for access
 
-**b. WMS Server**
+**b. CompuTec WMS Server**
 
     - Enter the address of the CompuTec AppEngine server, and provide the username and password for the SAP Business One system.
 
@@ -81,7 +81,7 @@ Learn how to install the WMS Client [here](../../administrator-guide/installatio
 
         ![Save config](./media/overview/save-config.png)
     
-    - Assign users to the appropriate database and configure the language of the WMS interface
+    - Assign users to the appropriate database and configure the language of the CompuTec WMS interface
 
         ![User Settings](./media/overview/user-settings.png)
     
@@ -105,15 +105,15 @@ Learn how to install the WMS Client [here](../../administrator-guide/installatio
 
 ### Important Changes
 
-**a. WMS Client**
+**a. CompuTec WMS Client**
 
 - Database selection requires entering a username and password first.
 
     ![Database](./media/overview/database.png)
 
-**b. WMS Server**
+**b. CompuTec WMS Server**
 
-- After selecting WMS Server in the CompuTec Service Manager, provide a username and password.
+- After selecting CompuTec WMS Server in the CompuTec Service Manager, provide a username and password.
 
     ![WMS Server](./media/overview/service-manager.webp)
 
@@ -123,7 +123,7 @@ Learn how to install the WMS Client [here](../../administrator-guide/installatio
 
     ![Database Name](./media/overview/database-name.png)
 
-- Installation of WMS objects has now been moved to CompuTec AppEngine under WMS.BusinessLogic.
+- Installation of CompuTec WMS objects has now been moved to CompuTec AppEngine under CompuTec WMS.BusinessLogic.
 
     ![WMS Business Logic](./media/overview/wms-business-logic-01.png)
 
@@ -135,7 +135,7 @@ Learn how to install the WMS Client [here](../../administrator-guide/installatio
 
     ![Login](./media/overview/login.png)
 
-- Verify CompuTec AppEngine connection by checking the connectivity to the CompuTec AppEngine server and confirm the accuracy of the data entered in the WMS Server configuration.
+- Verify CompuTec AppEngine connection by checking the connectivity to the CompuTec AppEngine server and confirm the accuracy of the data entered in the CompuTec WMS Server configuration.
 
     ![Connection](./media/overview/connection.png)
 
@@ -143,7 +143,7 @@ Learn how to install the WMS Client [here](../../administrator-guide/installatio
 
     ![ProcessForce API](./media/overview/pf-api-version.png)
 
-- Verify that the installed WMS version is compatible or update it directly via CompuTec AppEngine.
+- Verify that the installed CompuTec WMS version is compatible or update it directly via CompuTec AppEngine.
 
     ![WMS Version](./media/overview/install-wms.png)
 

@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # RDP Connection between Android System and WMS Client for ZEBRA MC330K
 
-In this guide, we'll walk you through the process of setting up a Remote Desktop Protocol (RDP) connection between an Android device and a Zebra MC330K device running the WMS Client. By following these steps, you will be able to access your WMS Client from your Zebra device remotely, providing you with seamless control and monitoring capabilities.
+In this guide, we'll walk you through the process of setting up a Remote Desktop Protocol (RDP) connection between an Android device and a Zebra MC330K device running the CompuTec WMS Client. By following these steps, you will be able to access your CompuTec WMS Client from your Zebra device remotely, providing you with seamless control and monitoring capabilities.
 
 ---
 
@@ -30,9 +30,9 @@ In this guide, we'll walk you through the process of setting up a Remote Desktop
 10. **Copy the APK to Download Folder** - Copy the APK file to the Download folder on your Zebra device.
 11. **Install APK** - On your Zebra device, go to MENU > Files > Download, Select APK File (Microsoft Remote Desktop) and Select Continue/Select Install/OK.
 12. **Add a New RDP Connection** - Go to Device/Menu/RD Client/Select Button "+" to add New Connection and Select Desktop Connection/Add Manually.
-13. **Enter PC Hostname or IP Address** - Enter the Hostname or IP address of your PC running the WMS Client.
+13. **Enter PC Hostname or IP Address** - Enter the Hostname or IP address of your PC running the CompuTec WMS Client.
 14. **Set up Credentials** - Enter the username and password to log in automatically each time.
 15. **Save** - Save the configuration.
-16. **Connect** - Select the "Connection" to begin using the WMS Client from your Zebra MC330K device.
+16. **Connect** - Select the "Connection" to begin using the CompuTec WMS Client from your Zebra MC330K device.
 
 ---

@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ## Generate warehouse transfer from pick list
 
-1. We create pickings from the WMS > Pick and Pack level and proceed to the Stock Transfer transaction
+1. We create pickings from CompuTec WMS > Pick and Pack level and proceed to the Stock Transfer transaction
 
     ![Pick List](./media/ST.png)
     ![Pick List](./media/ST2.png)

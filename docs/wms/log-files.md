@@ -35,7 +35,7 @@ Here is the detailed information on the locations of logs for CompuTec WMS:
 
 **4. Enabling additional logs**
 
-    To log additional execution details by WMS:
+    To log additional execution details by CompuTec WMS:
 
     - Navigate to:
     

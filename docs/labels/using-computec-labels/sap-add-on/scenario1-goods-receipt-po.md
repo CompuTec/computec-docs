@@ -87,7 +87,7 @@ Printing a Goods Receipt Purchase Order (GRPO) in SAP Business One requires prop
 
     Event Triggers set up used in this scenario:
 
-    | Employee | Employee Department |    Object Type   |    SAP   |    PDC   |    WMS   |    ProcessForce    |
+    | Employee | Employee Department |    Object Type   |    SAP   |    CompuTec PDC   |    CompuTec WMS   |    CompuTec ProcessForce    |
     |:--------:|:-------------------:|:----------------:|:--------:|:--------:|:--------:|:--------:|
     | All      | All                 | Goods Receipt PO | OnChange | NoAction | NoAction | NoAction |
 

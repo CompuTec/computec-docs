@@ -12,11 +12,11 @@ This guide provides an overview of the available settings in the Common tab, exp
 
 **CompuTec Weight Service web address** – This option enables CompuTec Weight integration. After enabling the checkbox, enter the CompuTec Weight web address (found in General options in CompuTec Weight). Test the connection using the "Test" button.
 
-**CompuTec Labels web address** – This option activates CompuTec Labels integration. Use the "Test" button to verify the connection. After enabling the checkbox, enter the CompuTec Labels web address (found in the WMS Client options).
+**CompuTec Labels web address** – This option activates CompuTec Labels integration. Use the "Test" button to verify the connection. After enabling the checkbox, enter the CompuTec Labels web address (found in the CompuTec WMS Client options).
 
 **Mandatory printer selection** – Checking this option prevents opening any CompuTec WMS transaction without previously choosing a printer in the client settings.
 
-**Select printer on CompuTec WMS client each time a new user logs in** – Each user is required to select a printer in the WMS options upon logging into the WMS client.
+**Select printer on CompuTec WMS client each time a new user logs in** – Each user is required to select a printer in the CompuTec WMS options upon logging into the WMS client.
 
 **Retrieve printer data for each user from SAP settings** – This option is related to CompuTec Labels and is available only when the 'CT Labels web address' option is enabled. By default, printers can be selected from the options provided in the CompuTec WMS client. However, if this checkbox is selected, printer information will be retrieved from SAP Business One settings.
 

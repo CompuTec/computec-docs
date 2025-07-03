@@ -18,7 +18,7 @@ CompuTec WMS offers limited support for the GS1 Barcode Standard, with adaptatio
 
 ### Barcodes Creation
 
-Barcodes created specifically for CompuTec WMS need particular prefixes to function correctly. Each prefix is designed to correspond with specific WMS screens, ensuring that a warehouse-specific barcode, for example, is recognized only in the WMS warehouse selection screen.
+Barcodes created specifically for CompuTec WMS need particular prefixes to function correctly. Each prefix is designed to correspond with specific CompuTec WMS screens, ensuring that a warehouse-specific barcode, for example, is recognized only in the CompuTec WMS warehouse selection screen.
 
 |   AI   | Char count |                                     Description                                     |                 GS1BarcodeDecoder AI                 |                    Supported AI                   |
 |:------:|:----------:|:-----------------------------------------------------------------------------------:|:----------------------------------------------------:|:-------------------------------------------------:|
@@ -214,6 +214,6 @@ The file contains a full programming barcode for plug-in Motorola scanners guide
 
 ## Barcode Scanner Simulator
 
-For testing barcode scanning, you can use a dedicated application: [WMS Scanning Simulator](./wms-scanning-simulator.md).
+For testing barcode scanning, you can use a dedicated application: [CompuTec WMS Scanning Simulator](./wms-scanning-simulator.md).
 
 ---

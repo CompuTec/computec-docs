@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Storage Unit Quick Transfer
 
-Efficient warehouse operations require tools that simplify complex tasks. SU Quick Transfer, available in the **WMS 2.10.23_R1 release** is designed to make stock transfers of Storage Units (SUs) fast and seamless. This tool allows you to complete the entire process in just a few seconds, enhancing productivity and accuracy in your warehouse. Here’s a step-by-step guide on how to use it:
+Efficient warehouse operations require tools that simplify complex tasks. SU Quick Transfer, available in the **CompuTec WMS 2.10.23_R1 release** is designed to make stock transfers of Storage Units (SUs) fast and seamless. This tool allows you to complete the entire process in just a few seconds, enhancing productivity and accuracy in your warehouse. Here’s a step-by-step guide on how to use it:
 
 ---
 

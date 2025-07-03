@@ -39,19 +39,19 @@ CompuTec WMS (Warehouse Management System) licensing is structured around server
 
 ## Setting Up Users for WMS
 
-To use the WMS system, terminal users must be set up and assigned to SAP Business One users. Follow these steps:
+To use the CompuTec WMS system, terminal users must be set up and assigned to SAP Business One users. Follow these steps:
 
 1. Go to the "WMS Users" tab.
 
     ![WMS Users Tab](./media/wms-users-tab.webp)
 2. To add a new terminal user, click the 'Add' button. A new row will appear.
 
-3. In the WMS Users tab, you can configure the following columns:
+3. In the CompuTec WMS Users tab, you can configure the following columns:
 
-    1. **Barcode** – Define a barcode for the user. Scanning this barcode will log the user into WMS.
-    2. **Employee** – Username for the terminal user, used to log in to WMS.
+    1. **Barcode** – Define a barcode for the user. Scanning this barcode will log the user into CompuTec WMS.
+    2. **Employee** – Username for the terminal user, used to log in to CompuTec WMS.
     3. **Password** – Password for the terminal user to log in.
-    4. **SAP User ID** – The SAP user associated with the terminal user (many terminal users can be assigned to the same SAP User). Changes made and recorded during work with WMS are recorded in the SAP database through this user. Ensure the SAP user has at least an **Indirect Access License**.
+    4. **SAP User ID** – The SAP user associated with the terminal user (many terminal users can be assigned to the same SAP User). Changes made and recorded during work with CompuTec WMS are recorded in the SAP database through this user. Ensure the SAP user has at least an **Indirect Access License**.
     5. **SAP Password** – The corresponding password for the SAP user.
     6. **Is Active check box** – Check this box to activate the terminal user account.
 
@@ -60,7 +60,7 @@ To use the WMS system, terminal users must be set up and assigned to SAP Busines
 5. To remove a user, click the corresponding row and then click "Remove".
 You can assign multiple terminal users to a single SAP user.
 
-6. Attempt to log in to the WMS client using the terminal user credentials. If the license is not yet assigned, you will receive the message: "Terminal not licensed".
+6. Attempt to log in to the CompuTec WMS client using the terminal user credentials. If the license is not yet assigned, you will receive the message: "Terminal not licensed".
 
 <Tabs groupId="os" defaultValue="android">
   <TabItem value="android" label="Android">
@@ -75,7 +75,7 @@ You can assign multiple terminal users to a single SAP user.
 
 ## Assigning Terminal Licenses
 
-To connect a terminal to the WMS client and license server, follow these steps:
+To connect a terminal to the CompuTec WMS client and license server, follow these steps:
 
 1. Restart CompuTec Service Manager. The terminal will appear under the Manage Licenses tab in Terminal Licensing.
 

@@ -13,7 +13,7 @@ When encountering performance issues in the CompuTec WMS application, timely and
 Follow these steps to create a support request:
 
 1. Go to [support.computec.pl](https://support.computec.pl/projects/SWMS/welcome-guide).
-2. Log in and create a ticket in the WMS Support space.
+2. Log in and create a ticket in the CompuTec WMS Support space.
 3. Provide the following key information:
    - CompuTec WMS Server and Client version
    - Date and time of the issue
@@ -54,7 +54,7 @@ Open the CompuTec WMS Client → Go to the menu indicated in the screenshot belo
 
 ## How to: Locate Log Files
 
-WMS logs are saved automatically and can be accessed on the server or client machine.  
+CompuTec WMS logs are saved automatically and can be accessed on the server or client machine.  
 Logs are stored in `.txt` format and named by date.
 
 For full log path details, see:  

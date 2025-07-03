@@ -54,6 +54,6 @@ To keep CompuTec WMS configuration available after a cold boot, perform the foll
         \application\app.config > \Program Files\CompuTec WMS 1.0.0\app.config
         ```
 
-This ensures that even after a cold boot, the WMS configuration will be preserved and automatically reapplied, preventing the loss of critical settings and data.
+This ensures that even after a cold boot, the CompuTec WMS configuration will be preserved and automatically reapplied, preventing the loss of critical settings and data.
 
 ---

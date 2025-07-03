@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Showing the Operation in WMS
+# Showing the Operation in CompuTec WMS
 
 - We create goods receipt PO
 - We choose a warehouse

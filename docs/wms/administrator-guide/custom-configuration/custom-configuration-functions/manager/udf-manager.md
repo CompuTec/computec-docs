@@ -56,7 +56,7 @@ SELECT "U_Code" AS "FldValue", "U_Code" AS "Desc" FROM "@CT_PF_IDT1" WHERE "U_Pa
 SELECT "U_Description" AS "FldValue", "U_Description" AS "Desc" FROM "@CT_PF_IDT1" WHERE "U_ParentItemCode" = @ItemCode
 ```
 
-Then, in WMS, the user will be able to choose a revision and its description that matches the item
+Then, in CompuTec WMS, the user will be able to choose a revision and its description that matches the item
 
 With this setup, the user can choose Revision and its description that matches the Item from CompuTec WMS level.
 
@@ -149,4 +149,4 @@ In Custom Configuration in the Manager tab, check "Enable UDF Manager," and then
 Click [here](../../../../user-guide/storage-units/su-udfs.md) to find out more about SU UDFs.
 
 ---
-The UDF Manager is a powerful tool in CompuTec WMS, allowing users to tailor documents and workflows to their unique requirements. By defining, displaying, and automating UDFs, businesses can enhance data accuracy and streamline their processes. Use this guide to make the most of the UDF Manager and customize your WMS experience efficiently.
+The UDF Manager is a powerful tool in CompuTec WMS, allowing users to tailor documents and workflows to their unique requirements. By defining, displaying, and automating UDFs, businesses can enhance data accuracy and streamline their processes. Use this guide to make the most of the UDF Manager and customize your CompuTec WMS experience efficiently.
