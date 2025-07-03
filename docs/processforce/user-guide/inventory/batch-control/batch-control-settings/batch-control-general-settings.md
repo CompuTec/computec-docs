@@ -12,7 +12,7 @@ Batch control settings define various batch-related functions, such as default b
 
 Click [here](/docs/processforce/user-guide/system-initialization/general-settings/inventory-tab/) to check detailed information about Batch configuration (based on the example of General Settings).
 
-![General Settings](./media/batch-control-general-settings/general-settings-batches.png)
+![General Settings](./media/batch-control-general-settings/general-settings-batches.webp)
 
 ---
 

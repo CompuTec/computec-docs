@@ -28,10 +28,10 @@ and the license purpose:
 
 The information needed for generating the license placed on:
 
-- About CompuTec ProcessForce form
+- About CompuTec Form
 
     :::info **Location**
-        The SAP Business One application (with CompuTec ProcessForce installed) → upper menu → Help → About CompuTec ProcessForce.
+        The SAP Business One application (with CompuTec ProcessForce installed) → upper menu → Help → About CompuTec.
     :::
 
   - **SAP Business One Major version** (9.3, 10.0, etc.)

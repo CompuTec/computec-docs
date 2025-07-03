@@ -39,7 +39,6 @@ sidebar_position: 1
 ## Step 2: Please check the documentation
 
 - [The documentation](../user-guide/overview.md)
-- [The Release Notes](../releases/10.0-release-notes.md)
 - General settings and configuration
 - Check with other colleagues
 

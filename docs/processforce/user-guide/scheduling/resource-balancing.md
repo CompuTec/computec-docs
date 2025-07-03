@@ -4,17 +4,21 @@ sidebar_position: 5
 
 # Resource Balancing
 
-This option allows choosing the most optimal Resource (defined in Production Process / Manufacturing Order / [Alternative Resources](./gantt-chart/alternative-resources.md)) for a specific task from a Manufacturing Order.
+Resource Balancing allows you to automatically select the most optimal resource for a specific task within a Manufacturing Order, improving efficiency by considering factors like operation quantity, resource availability, and calendar schedules.
+
+> This feature is applicable to resources defined in the **Production Process**, **Manufacturing Order**, or [Alternative Resources](./gantt-chart/alternative-resources.md).
 
 :::danger
-    Testing the option in a test environment before using it in a production environment is recommended.
+It is strongly recommended to test this option in a non-production environment before enabling it in a live system.
 :::
+
+---
 
 ## Description
 
 Resource Balancing allows you to select the most suitable resource for a task in a Manufacturing Order by evaluating multiple factors like operation quantities, related times, resource availability, and resource calendars. Instead of relying on a default resource, the system calculates the optimal resource that can complete the work in the least amount of time.
 
-**Example**
+Below is an **example** that illustrates how the system selects the most efficient resource based on predefined parameters such as run time and availability.
 
 **Quantity on Manufacturing Order**: 100
 
@@ -28,31 +32,35 @@ Resource Balancing allows you to select the most suitable resource for a task in
 
 **Scheduling Direction**: Forward (from date 01/01)
 
-(all machines work 24/7)
+(all machines are available 24/7)
 
-- M1 needs ten hours to run and is available from 10.01 to 10 a.m. Therefore, it would finish the work on 10.01 at 8 p.m.
-- M2 needs ten hours to run and is available from 11.01 to 5 p.m. Consequently, it would finish this work on 12.01 at 3 a.m.
-- M3 needs 20 hours to run and is available from 9.01 to 1 a.m. Consequently, it would finish this work on 9.01 at 9 p.m.
-- M4 needs 20 hours to run and is available from 10.01 to 5 a.m. and would finish this work on 10.01 at 1 a.m.
-- M5 needs ten hours to run and is available from 10.01 to 7 p.m. and would finish this work on 11.01 at 5 a.m.
+| Resource | Run Time | Available From | Finish Time         |
+|----------|----------|----------------|---------------------|
+| M1       | 10 hours   | 10.01 10:00 AM | 10.01 08:00 PM      |
+| M2       | 10 hours   | 11.01 05:00 PM | 12.01 03:00 AM      |
+| M3       | 20 hours   | 09.01 01:00 AM | **09.01 09:00 PM**  |
+| M4       | 20 hours   | 10.01 05:00 AM | 10.01 01:00 AM      |
+| M5       | 10 hours   | 10.01 07:00 PM | 11.01 05:00 AM      |
 
-**The system will choose M3 for this work**
+>Note: **The system will choose M3 for this work**
 
 ## Prerequisites
 
 ### Run Time
 
-For Resource Balancing to function correctly, all resources used in Production Processes and Manufacturing Orders must have a Run Time value greater than 0. You can configure this in the Production Process or Manufacturing Order settings to ensure optimal resource allocation.
+Ensure that all machine-type resources used in the Production Process and Manufacturing Orders have a **Run Time greater than 0**.
 
-[Production Process](../formulations-and-bill-of-materials/production-process/overview.md):
+- This setting can be configured either in the **Production Process** or the **Manufacturing Order**.
 
-![Production Process Runtime](./media/resource-balancing/production-process-runtime.webp)
+1. Production Process
 
-Manufacturing Order:
+    ![Production Process Runtime](./media/resource-balancing/production-process-runtime.webp)
 
-![Manufacturing Order Run Time](./media/resource-balancing/manufacturing-order-runtime.webp)
+2. Manufacturing Order
 
-### General Settings Option
+    ![Manufacturing Order Run Time](./media/resource-balancing/manufacturing-order-runtime.webp)
+
+### General Settings Options
 
 To activate Resource Balancing, navigate to:
 
@@ -64,23 +72,30 @@ Check the "Use Resource Balancing" check box to use the option.
 
 #### Resource Balancing Blockage
 
-If any Machine-type Resource in the system has a Run Time set to zero in any Production Process configuration, attempting to check the Use Resource Balancing checkbox will prompt the display of the Resource Balancing blockage form. This form contains information indicating these Resources. To activate the option, change their Run Time values.
+If any Machine-type Resource has a Run Time set to zero in any Production Process configuration, you’ll receive a **Resource Balancing Blockage** form when trying to enable the option.
+
+- This form displays the list of blocked resources.
+- Update their Run Time to proceed with activation.
 
 ![Resource Balancing Blockage](./media/resource-balancing/resource-balancing-blockage.webp)
 
 ## Usage
 
-Once enabled, Resource Balancing will automatically perform resource selection during Manufacturing Order scheduling or re-scheduling. This occurs when:
+Once enabled, **Resource Balancing** is automatically executed during:
 
-- opening the [Scheduling Board / Semi-finished Product Scheduling form](./scheduling-board.md#how-to-open-scheduling-board--semi-finished-product-scheduling)
-- changing the Planned Quantity or Manufacturing Order header's dates
+- Opening the [Scheduling Board / Semi-finished Product Scheduling form](./scheduling-board.md#how-to-open-scheduling-board--semi-finished-product-scheduling)
+- Changing the **Planned Quantity** or Manufacturing Order header **dates**
+
+The system dynamically re-evaluates and assigns the best resource based on the updated data.
+
+---
 
 ## Log files
 
-A feature is available to log all actions related to the Resource Balancing function, capturing detailed information on every scheduling or rescheduling action.
+You can activate a log feature to track all actions related to Resource Balancing, which includes detailed data on every scheduling and rescheduling action.
 
 :::danger
-    Please be aware that enabling this feature will generate detailed logs, which may impact the performance of ProcessForce.
+Enabling detailed logs may impact system performance.
 :::
 
 To activate the option, perform the following steps:
@@ -97,5 +112,23 @@ To activate the option, perform the following steps:
    `C:\ProgramData\CompuTec\ProcessForce\ResourceBalancing`.
 
    A separate file is saved for changes made for each Operation.
+
+---
+
+## Why Use Resource Balancing?
+
+- **Efficiency**: Automatically picks the fastest-available resource.
+- **Reduced Manual Planning**: No need to manually assign resources per operation.
+- **Improved Throughput**: Makes full use of available capacity across machines.
+- **Real-Time Adjustments**: Dynamically reacts to date or quantity changes.
+
+## When Not to Use
+
+- If resources don’t have proper calendars or defined run times.
+- If scheduling decisions must be manually controlled due to external constraints.
+
+:::danger
+Always test in a staging environment before enabling in production.
+:::
 
 ---

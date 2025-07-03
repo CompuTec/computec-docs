@@ -4,26 +4,61 @@ sidebar_position: 8
 
 # Subcontracting tab
 
-Subcontracting is a method of managing the “purchase of a service.” For example, items are sent to the subcontractor to perform a service, e.g., painting, heat treatment, or annealing.
+Subcontracting is a method of managing the “purchase of a service” within manufacturing operations. For example, raw or semi-finished items are sent to a subcontractor to perform specific services like painting, heat treatment, or annealing, after which the items are returned for further processing or final assembly.
 
----
+It allows configuration of procurement document types, numbering series, and automation logic related to these outsourced services. This ensures seamless integration of subcontracting into your production and procurement workflows, helping maintain traceability, compliance, and operational efficiency.
+
+To access Subcontracting, navigate to:
+
+:::info Path
+
+Administration → System Initialization → General Settings → ProcessForce tab → Subcontracting
+
+:::
 
 ![Subcontracting Tab](./media/subcontracting-tab/subcontracting-tab.webp)
 
+---
+
 ## Key Settings
 
-- **Procurement document type**: Purchase Request or Purchase Order can be picked as a default procurement document for External type Manufacturing Order.
+1. **Procurement Document Type**
 
-- **Default series for procurement documents**: this setting allows setting if Purchase Request or Order and Goods Receipt PO are created with an automatically assigned document numbering series or if this number is given manually. Document series can be chosen from the adrop-down list. Only series previously defined are available in the list. To check how to create a document numbering, click [here](../../system-initialization/document-numbering.md).
+    Defines the default document used to initiate subcontracting procurement: either an internal Purchase Request or a direct Purchase Order. Select one of the following:
 
-- **Create a Goods Receipt PO on Receipt from Production**: enables automatic creation of a Goods Receipt PO when production is marked as received.
+        - **Purchase Request**: An internal document used to request goods or services. Triggers an internal approval process before issuing a Purchase Order.
+        - **Purchase Order**: A formal order sent directly to the subcontractor. Directly creates an external PO to the subcontractor.
 
-- **Create procurement document after scheduling Manufacturing Order**: checking this option causes the automatic generation of Purchase Order or Purchase Order Request for subcontracting after posting Manufacturing Order. Click [here](../../subcontracting/subcontract-assembly-and-free-issue-materials/process-flow.md#create-a-purchase-order-for-the-service) for more information.
+        ➡️ Learn more on how to create [Purchase Order](../../subcontracting/subcontract-assembly-and-free-issue-materials/process-flow.md#create-a-purchase-order-for-the-service).
 
-- **Operation quantity**: if this field is checked, when creating a service Purchase Order, the quantity on the Purchase Order will be equal to the Manufacturing Order quantity. This setting is only valid when using the Resource as a Subcontractor method.
+2. **Default Series for Procurement Documents**
 
-- **Enable integration with Nota Fiscal (Brazil only)**: allows integration with Brazil’s Nota Fiscal tax system.
+    Controls the numbering series applied to procurement-related documents generated during subcontracting activities. ocument series can be chosen from the drop-down list. These fields determine the document numbering format based on existing series configurations in SAP Business One.
 
-- **Drop-Ship warehouse**: this option is related to Brazilian localization and can be used only within it. Click [here](../../subcontracting/brazil-localization-subcontracting-process.md) to find out more. Drop-ship Warehouse in the ProcessForce subcontracting context marks a virtual warehouse. Creating an Inventory Transfer document to this Warehouse represents sending materials to a Subcontractor. After that, it is possible to create Issues and Receipts from this warehouse.
+        - **Series for Purchase Requests**: Document series used when creating Purchase Requests.
+        - **Series for Purchase Orders**: Document series used when issuing Purchase Orders.
+        - **Series for Goods Receipt PO**: Document series used when posting Goods Receipt POs.
+
+    >Note: Proper series assignment ensures auditability and avoids document number conflicts. Ensure each series is uniquely identified within your SAP Business One setup.
+
+    ➡️ Learn more on how to create [Document Numbering](../../system-initialization/document-numbering.md).
+
+3. **Service Receipt Document**
+
+    These settings govern the automatic handling of Goods Receipt Purchase Orders (GRPOs) related to subcontracting operations.
+
+        - **Create a Goods Receipt PO on Receipt from Production**: Automatically generates a GRPO when subcontracted goods are received back into production.
+        - **Cancel Goods Receipt PO on Goods Receipt Rollback**: Automatically cancels or reverses the GRPO if the production receipt is rolled back.
+
+4. **Other Settings**
+
+    Additional automation and integration features to streamline subcontracting workflows and support specific regional or operational requirements.
+
+        - **Create a procurement document after scheduling Manufacturing Order**: Automatically triggers procurement after MO scheduling.
+        - **Operation Quantity**: Enables subcontracting logic based on specific operation quantities.
+        - **Enable integration with Nota Fiscal (Brazil only)**: Activates integration with Brazil’s fiscal system for legal compliance.
+        - **Drop-Ship Warehouse**: This option is specific to the Brazilian localization and should be used only in that context. It represents a virtual warehouse used to simulate material transfers to subcontractors. An Inventory Transfer to this warehouse reflects the dispatch of materials. Subsequent Issues and Receipts can then be posted from it to track subcontracting activity.
+
+            ➡️ Learn more about [Brazil localization subcontracting process](../../subcontracting/brazil-localization-subcontracting-process.md).
 
 ---
