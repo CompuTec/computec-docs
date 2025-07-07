@@ -61,7 +61,7 @@ Before configuring the Gateway Manager, ensure the following requirements are me
     </details>
 
     :::warning
-        The address and port in the [corresponding CompuTec PDC Setting](../setting-up-the-application/overview.md#ct-labels-settings) must be identical to those entered here.
+        The address and port in the [corresponding CompuTec PDC Setting](../setting-up-the-application/overview.md#computec-labels-settings) must be identical to those entered here.
     :::
 
     ![Manager](./media/computec-gateway-manager/manager-1.webp)

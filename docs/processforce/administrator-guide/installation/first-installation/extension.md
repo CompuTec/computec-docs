@@ -2,130 +2,139 @@
 sidebar_position: 2
 ---
 
-# Extension
+# Plugin
 
-## Installation Guide
-
-The ProcessForce Extension is a powerful tool that enhances the functionality of SAP Business One. This guide provides a step-by-step approach to installing the ProcessForce Extension efficiently. Ensure that you meet all system requirements before proceeding with the installation.
+The CompuTec ProcessForce Plugin enhances the capabilities of SAP Business One by enabling seamless integration and advanced manufacturing functionalities. This guide walks you through the installation process, prerequisites and key steps required to successfully deploy the plugin.
 
 ---
 
+## Installing the CompuTec ProcessForce Plugin
+
+Follow these steps to install the CompuTec ProcessForce Plugin properly.
+
+### 1. Review Prerequisites
+
+- Ensure you meet all CompuTec ProcessForce [**System Requirements**](../../system-requirements.md).
+- It is **recommended** to install the [**CompuTec License Server**](./license-server) before proceeding.
+- Restart the SAP Business One client **before installing** the CompuTec ProcessForce Plugin.
+
 :::note
-    If you only need to upgrade ProcessForce, refer to the [**ProcessForce Upgrade Guide**](../upgrade) here.
+    If you only need to upgrade CompuTec ProcessForce, refer to the [**CompuTec ProcessForce Upgrade Guide**](../upgrade) here.
 :::
 
-:::caution
-    - Be sure to acquaint yourself with the [ProcessForce System Requirements](../../system-requirements.md) before starting the installation.
-    - It is recommended to install [CompuTec License Server](./license-server) first.
-    - It is recommended to restart the SAP Business One client before the installation of the ProcessForce Extension.
-    - Due to technical limitations, it is required to execute a specific SQL query on the company database during the first installation of the Extension in the SAP HANA version. Additional information can be found in the eighth step of the installation description.
+### 2. Plugin Downloads
+
+There are **two core plugins** you must download from the Plugin Store:
+
+- CompuTec ProcessForce API
+- CompuTec ProcessForce Plugin
+
+You can find the installation guide for these plugins at the following link: [Plugin Installation Guide](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/plugins/overview)
+
+:::note Important
+The CompuTec ProcessForce API is a **prerequisite** for the CompuTec ProcessForce Plugin. When you download the CompuTec ProcessForce Plugin, the system will automatically include the API plugin.
+
+Additionally, if you're using CompuTec ProcessForce with the **SAP Business One desktop client**, or upgrading from **CompuTec ProcessForce 2.0 to 3.0**, you must also install:
+
+- `CompuTec ProcessForce UI`
+
 :::
 
-:::danger
-    Before upgrading the ProcessForce Extension, verify that the following SAP Business One stored procedures are in their default state and do not contain any custom queries:
+### 3. Install the Plugins
 
-    - SP_TransactionNotification
-    - SP_PostTransactionNotice
-:::
+- After downloading all plugins, log in to your SAP Business One client.
+- Upon login, the system will prompt you to install `CompuTec.ProcessForce.Gantt` on your local machine.
 
-:::danger
-    Before beginning the installation, ensure that the Serial Numbers and Batches, Production, and Units of Measure options are unchecked in General Settings → Hide Functions, as shown in the screenshot below:
+    ![Installation Prompt](./media/extension/installation-prompt.png)
 
-        ![Checkboxes](./media/extension/general-settings-unchecked.webp)
-:::
+    Click **Install** to proceed.
 
-:::danger
-    Please note that Copy Express, or the option Copy User-Defined Fields and Tables/Copy User-Defined Objects in the Create New Company wizard, cannot be used for copying ProcessForce objects and structures.
+- If you encounter a permissions error (like the one below):
 
-    <details>
-        <summary>Click here to find out more</summary>
-        <p>When a new ProcessForce database is created using Copy Express or the Copy User-Defined Fields and Tables/Copy User-Defined Objects option in the Create New Company wizard, SAP Business One does not properly assign values to the EditType fields in ProcessForce structures, leaving them as NULL. This issue arises due to an SAP Business One bug where newly created DateTime fields are not correctly initialized in the new database.</p>
-    </details>
+    ![Error Message](./media/extension/error-message.png)
 
-    To prevent this issue, create a new database, install ProcessForce, and transfer the required data using the ProcessForce API with [PowerShell scripts](../../../developer-guide/data-import/overview.md).
-:::
+    Close the application, right-click the shortcut, and choose **Run as administrator**. Alternatively, follow the instructions in the message box.
 
-### Installation
-
-:::danger
-    Please note that ProcessForce in 10.0 version is provided as a **Lightweight Deployment Extension only**. Please use **SAP Business One Extension Manager** to install it.
-    Download installation files for it [here](../../../releases/download.md).
-:::
-
-ProcessForce is a lightweight deployment extension for SAP Business One 10.0. Follow these steps to install it:
-
-1. You can access it directly by using a default URL `HTTPS://<SERVER_NAME>:40000/ExtensionManager` or by opening it from your SAP Business One client. Choose the highlighted option in SAP Business One:
-
-    ![Add-on Administration](./media/extension/addon-administration-extension.webp)
-
-2. Log in to System Landscape Directory.
-
-    ![Login](./media/extension/login.webp)
-
-3. Click the "Import" button and browse to the path with the extension installation file:
-
-    ![Import add-on](./media/extension/import-add-on.webp)
-
-4. Navigate to the Company Assignment tab, choose the required database from the Company List and click the "Assign" button:
-
-    ![Assing a database](./media/extension/assign-database.webp)
-
-5. Select the ProcessForce option and click "Next" to proceed with the Installation.
-
-    ![Assign ProcessForce](./media/extension/assign-processforce.webp)
-
-6. It is recommended to set up the Startup Mode as manual for the first run of the application (this can be changed later to Mandatory). Click "Next" to continue.
-
-7. Once done, re-login to the company database, run the extension manually and wait for the installation to finish.
-
-    :::caution
-        The first-time installation may take anywhere from several minutes to a few hours, depending on system performance.
-    :::
-
-8. If installing on SAP HANA, you must manually create a required SQL procedure. Click "Copy to Clipboard" in the System Message window, then paste and execute the query in SAP HANA Studio under the appropriate schema.
-
-    ![System Message - Procedure](./media/extension/system-message-procedure.webp)
-
-    :::caution Common query problem
-
-    <details>
-        <summary>Click here to expand</summary>
-        <div>
-            If a schema is not selected when opening the SQL Console from the root tree, the query window defaults to the SYSTEM schema. As a result, executing a query for the first time may create a procedure in the SYSTEM schema instead of the correct company schema where ProcessForce is installed.
-
-        To ensure the SQL procedure is installed in the correct company schema, open the SQL Console and run the following command before executing the copied query:
-
-        ```sql
-        SET SCHEMA "<COMPANY-DATABASE-SCHEMA-NAME>";
-        ```
-    ![I-1_SAP-HANA-Studio_SQL-Console1](./media/extension/I-1_SAP-HANA-Studio_SQL-Console1.png)
-    ![I-1_SAP-HANA-Studio_SQL-Console2](./media/extension/I-2_SAP-HANA-Studio_SQL-Console2.png)
-    </div>
-    </details>
-    :::
-9. After the installation is completed, a prompt will appear regarding database structure modifications - click "Yes" to proceed.
-
-10. A message recommending a restart of SAP Business One will be displayed: click OK.
-
-11. After installation, the ProcessForce main menu positions appear:
-
-    ![ProcessForce menu](./media/extension/processforce-menu.webp)
-
-### License Assignment
+### 4. Assigning the License
 
 :::info
-    This step is only required for new installations, not for upgrades.
+This step is **only required for new installations**, not for upgrades.
 :::
 
-You can find the License Import and Assignment guide [here](../../licensing/license-import-assignment.md).
+Refer to the [**License Import and Assignment**](../../licensing/license-import-assignment.md) guide for step-by-step instructions.
 
-### Data Preparation
+---
+
+## Reference – Required Configurations & Warnings
+
+### General Settings Check
+
+:::danger
+Before beginning the installation, **uncheck** the following in:
+
+**General Settings → Hide Functions**:
+
+![Checkboxes](./media/extension/general-settings-unchecked.webp)
+
+- Serial Numbers and Batches
+- Production
+- Units of Measure
+
+:::
+
+### Stored Procedures for Upgrade
+
+:::danger
+Before upgrading the CompuTec ProcessForce Extension, ensure that the following SAP Business One stored procedures are in their **default state** with **no custom queries**:
+
+- `SP_TransactionNotification`
+- `SP_PostTransactionNotice`
+
+:::
+
+### Important Database Creation Warning
+
+:::danger
+**Do not** use **Copy Express** or the options **Copy User-Defined Fields and Tables / Copy User-Defined Objects** in the **Create New Company** wizard to copy CompuTec ProcessForce objects.
+
+<details>
+<summary>Why this matters</summary>
+Using these methods results in improper assignment of `EditType` fields in CompuTec ProcessForce structures - leaving them as `NULL`. This is due to a bug in SAP Business One that affects DateTime fields when new databases are created using copy methods.
+</details>
+
+✅ **To prevent this issue**:
+
+- Create a **new database**
+- Install CompuTec ProcessForce
+- Transfer the required data using the **ProcessForce Integration (PFI)** tool (instead of PowerShell scripts).
+
+:::
+
+---
+
+## Why These Steps Matter
+
+The CompuTec ProcessForce plugin deeply integrates with SAP Business One’s production and costing modules. Because of this, proper configuration and installation are essential. Skipping prerequisite checks, using copy methods, or failing to assign licenses correctly can lead to malfunctioning UIs, corrupted metadata, or incorrect system behavior.
+
+The following distinctions are important:
+
+- **CompuTec ProcessForce API Plugin**: Enables backend integration and external communications.
+- **CompuTec ProcessForce Plugin**: Core functional layer enabling CompuTec ProcessForce logic.
+- **CompuTec ProcessForce UI Plugin**: Desktop interface for interaction within SAP Business One.
+
+---
+
+## How to Prepare and Restore Data
 
 :::caution
-    Before running restore procedures please determine whether the [**Manage Item Cost per Warehouse**](../../../user-guide/costing-material-and-resources/configuration/overview.md) setting is used. If you alter this setting after restoration, it will necessitate the removal and subsequent restoration of all Item Costing Details.
+Before restoring data, verify if the **Manage Item Cost per Warehouse** setting is used.
+
+Changing this setting **after** restoration will require **removal and re-restoration** of all Item Costing details.
 :::
 
-If installing ProcessForce on a database with existing data (especially Item Master Data), run the following data restoration procedures:
+If you are installing CompuTec ProcessForce on a database that already has **existing data** (such as item master records), you need to run the **data restoration procedures**:
+
+![Restore](./media/extension/restore.webp)
 
 - Restore Item Details
 - Restore Item Costing
@@ -133,8 +142,6 @@ If installing ProcessForce on a database with existing data (especially Item Mas
 - Restore Employee Calendars
 - Restore Batch Details
 
-![Restore](./media/extension/restore.webp)
-
-Click [here](../../../user-guide/system-initialization/data-restore.md) to find out more about the Restore function.
+➡️ Learn more about: [Data Restore](../../../user-guide/system-initialization/data-restore.md).
 
 ---

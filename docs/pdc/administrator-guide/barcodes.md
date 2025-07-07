@@ -21,7 +21,7 @@ CompuTec PDC supports USB scanners with the following default configuration:
 - The scanning device adds a start text sign (Ctrl + B).
 - The scanning device adds an end text sign (Ctrl + C).
 
-Custom prefixes, suffixes, and group separators can be configured in the application. For more information, click [here](./setting-up-the-application/overview.md#ct-labels-settings).
+Custom prefixes, suffixes, and group separators can be configured in the application. For more information, click [here](./setting-up-the-application/overview.md#computec-labels-settings).
 
 ## Barcode Simulator
 

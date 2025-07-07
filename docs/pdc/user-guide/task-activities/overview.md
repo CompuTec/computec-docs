@@ -188,7 +188,7 @@ Displays the default printing layout set for a specific SAP Business One user lo
         3. Open Bill of Materials (1), click the Layout Designer icon (2), select the required layout (3), then click Set as Default and confirm with OK:
 
             ![BOM Layout](./media/task-activities/bom-layout.webp)
-        4. A Bill of Materials preview, generated based on the default layout, will now be available in PDC under Task Tile > Bill of Materials preview icon.
+        4. A Bill of Materials preview, generated based on the default layout, will now be available in CompuTec PDC under Task Tile > Bill of Materials preview icon.
         5. To view the BOM preview, database credentials must be entered. To avoid entering them each time, you can save the credentials in the application settings.
     </div>
 </details>
@@ -217,7 +217,7 @@ Displays the default printing layout assigned to the logged-in SAP Business One 
         3. Open Manufacturing Order (1), click the Layout Designer icon (2), select the desired layout (3), then click Set as Default and confirm with OK:
 
             ![Default Manufacturing Order](./media/task-activities/default-manufacturing-order.webp)
-        4. A preview of the Manufacturing Order, generated based on the default layout, will now be available in PDC under Task Tile → Manufacturing Order preview icon.
+        4. A preview of the Manufacturing Order, generated based on the default layout, will now be available in CompuTec PDC under Task Tile → Manufacturing Order preview icon.
         5. To view the Manufacturing Order preview, database credentials must be entered. To avoid entering them each time, you can save the credentials in the  [application settings](../../administrator-guide/setting-up-the-application/overview.md).
     </div>
 </details>
@@ -297,7 +297,7 @@ Materials issued to production are automatically deducted from the warehouse, el
 - Receipt from production has to be confirmed from SAP Business One level by going to Production → Inventory Transactions → Pick Receipts. Pick the required document, click the right mouse button, and choose Receipt from production.
     Check also the [Quick Receipt](../customization/optional-functions/quick-receipt.md) option.
 
-**Auto Select All**: The "Auto Select All" button has been added at the top of the PDC Receipt/Issue window.
+**Auto Select All**: The "Auto Select All" button has been added at the top of the CompuTec PDC Receipt/Issue window.
 This button automatically assigns quantities for all items in the Pick and Pack window.
 
     ![Auto All Select](./media/task-activities/image-2025-04-17-15-18-15-502.png)

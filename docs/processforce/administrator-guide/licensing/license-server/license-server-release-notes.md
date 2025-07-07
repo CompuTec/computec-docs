@@ -58,8 +58,8 @@ This fix was implemented in version 5.10.2.9 but not included in versions 5.11.0
     **Error Message**
         - There has been an error accessing the configuration file. The system cannot find the file specified.
 
-- PDC/WMS LICENSING window, WMS Users tab: defined and not displayed records are deleted after updating a displayed record when using a filter
-- PDC/WMS LICENSING window, License Management tab: changing the option 'Assign available licenses for newly added terminal accounts automatically' is saved only after restarting CompuTec License Server service.
+- CompuTec PDC/WMS LICENSING window, WMS Users tab: defined and not displayed records are deleted after updating a displayed record when using a filter
+- CompuTec PDC/WMS LICENSING window, License Management tab: changing the option 'Assign available licenses for newly added terminal accounts automatically' is saved only after restarting CompuTec License Server service.
 
 :::info
 This fix was implemented in version 5.10.2.1 but not included in versions 5.10.2.9-5.11.0.3.

@@ -30,7 +30,7 @@ This checkbox determines whether a specific operation is subject to quality cont
 
 #### Force Order
 
-Enabling this option ensures that an operation cannot start until the previous operation is completed. This restriction applies to bookings made in both ProcessForce and CompuTec PDC. It is also available at the Manufacturing Order, Production Process, and Routing form levels.
+Enabling this option ensures that an operation cannot start until the previous operation is completed. This restriction applies to bookings made in both CompuTec ProcessForce and CompuTec PDC. It is also available at the Manufacturing Order, Production Process, and Routing form levels.
 
 #### Rounding
 

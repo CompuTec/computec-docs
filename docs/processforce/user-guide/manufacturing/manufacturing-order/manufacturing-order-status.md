@@ -17,7 +17,7 @@ Every Manufacturing Order (MO) must have a designated status, which defines the 
 - **Released**: dates are determined for Manufacturing Order; it is possible to issue to / receipt from production
 - **Started**: Manufacturing Order changes automatically to this status on any related issue to production or operation start. It is possible to adjust this status manually. Manufacturing Orders with this status should not be re-scheduled
 - **Finished**: blocks Manufacturing Order, but the status can still be changed if necessary.
-- **Closed**: details of the Manufacturing Order with this status cannot be changed anymore. Optionally changing to this status can also make journal entries based on Manufacturing Order variance (when option [Post variance on Manufacturing Order closure](../../system-initialization/general-settings/costing-tab.md) is set in General Settings).
+- **Closed**: details of the Manufacturing Order with this status cannot be changed anymore. Optionally changing to this status can also make journal entries based on Manufacturing Order variance (when option Post variance on Manufacturing Order closure is set in General Settings).
 
 :::info
 You can check possible status changes [here](mass-status-change.md).

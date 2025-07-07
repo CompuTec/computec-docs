@@ -68,7 +68,7 @@ Starting with this version, you need to perform the following preparation to sup
 - Install the SAP APIGateway Service within the System Landscape Directory (SLD) configuration.
 
   ![SLD configuration](./media/requirements/sld-configuration.webp)
-- Define the required address in [CompuTec PDC Settings](../setting-up-the-application/overview.md#ct-labels-settings).
+- Define the required address in [CompuTec PDC Settings](../setting-up-the-application/overview.md#computec-labels-settings).
 
   ![SAP B1 API Gateway](./media/requirements/pdc-settings.webp)
 

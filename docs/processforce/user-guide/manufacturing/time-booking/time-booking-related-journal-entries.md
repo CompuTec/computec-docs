@@ -10,7 +10,7 @@ To ensure that Journal Entries are correctly created for Resource work time, the
 
 **Post Resource Confirmation**
 
-The 'Post Resource Confirmation' checkbox in General Settings must be enabled. This setting ensures that time recorded for Resources is posted correctly. You can find more details on enabling this setting. You can find more details on enabling this setting [here](../../system-initialization/general-settings/costing-tab.md).
+The 'Post Resource Confirmation' checkbox in General Settings must be enabled. This setting ensures that time recorded for Resources is posted correctly. You can find more details on enabling this setting.
 
 **Resource Accounting**
 

@@ -35,7 +35,7 @@ If a Template is not specified for a specific level, a Template from a level abo
 ### General level
 
 :::note
-    Administration → System Initialization → General Settings → ProcessForce tab → Inventory tab
+    Administration → System Initialization → General Settings → ProcessForce tab → Inventory tab → Batch and Serial
 :::
 
 ![General Settings Template](./media/batch-serial-template-definition/general-settings-templates.webp)

@@ -22,7 +22,7 @@ Administration → System Initialization → General Settings → ProcessForce t
 
 ## Key Settings
 
-1. **Procurement Document Type**
+### 1. Procurement Document Type
 
     Defines the default document used to initiate subcontracting procurement: either an internal Purchase Request or a direct Purchase Order. Select one of the following:
 
@@ -31,7 +31,7 @@ Administration → System Initialization → General Settings → ProcessForce t
 
         ➡️ Learn more on how to create [Purchase Order](../../subcontracting/subcontract-assembly-and-free-issue-materials/process-flow.md#create-a-purchase-order-for-the-service).
 
-2. **Default Series for Procurement Documents**
+### 2. Default Series for Procurement Documents
 
     Controls the numbering series applied to procurement-related documents generated during subcontracting activities. ocument series can be chosen from the drop-down list. These fields determine the document numbering format based on existing series configurations in SAP Business One.
 
@@ -43,14 +43,14 @@ Administration → System Initialization → General Settings → ProcessForce t
 
     ➡️ Learn more on how to create [Document Numbering](../../system-initialization/document-numbering.md).
 
-3. **Service Receipt Document**
+### 3. Service Receipt Document
 
     These settings govern the automatic handling of Goods Receipt Purchase Orders (GRPOs) related to subcontracting operations.
 
         - **Create a Goods Receipt PO on Receipt from Production**: Automatically generates a GRPO when subcontracted goods are received back into production.
         - **Cancel Goods Receipt PO on Goods Receipt Rollback**: Automatically cancels or reverses the GRPO if the production receipt is rolled back.
 
-4. **Other Settings**
+### 4. Other Settings
 
     Additional automation and integration features to streamline subcontracting workflows and support specific regional or operational requirements.
 
