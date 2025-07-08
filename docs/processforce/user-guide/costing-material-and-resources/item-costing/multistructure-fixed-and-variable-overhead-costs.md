@@ -13,7 +13,7 @@ In ProcessForce, businesses can define and manage both simple and structured Fix
 ### General Settings
 
 :::info Path
-    Administration → System Initialization → General Settings → ProcessForce tab → Costing tab
+    Administration → System Initialization → General Settings → ProcessForce tab → Inventory tab → Costing
 :::
 
 You can enable Multi-structure Fixed and Variable Overhead Costs option by checking the checkbox in the General Settings form under the ProcessForce tab and the Costing section.
