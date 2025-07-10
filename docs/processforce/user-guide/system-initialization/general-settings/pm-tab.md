@@ -2,13 +2,13 @@
 sidebar_position: 9
 ---
 
-# Plant Maintenance tab
+# PM tab
 
-The PM tab in ProcessForce allows you to configure key settings that support streamlined and standardized Plant Maintenance (PM) operations. It helps enforce classification rules and maintain consistency across maintenance orders, equipment categories, and service records. These configurations are essential for organizing both preventive and corrective maintenance activities, optimizing the use of spare parts, and enhancing overall asset reliability.
+The PM tab allows you to configure key settings that support streamlined and standardized Plant Maintenance (PM) operations. It helps enforce classification rules and maintain consistency across maintenance orders, equipment categories, and service records. These configurations are essential for organizing both preventive and corrective maintenance activities, optimizing the use of spare parts, and enhancing overall asset reliability.
 
 To access the PM tab:
 
-:::info Navigation
+:::info Path
 Administration → System Initialization → General Settings → ProcessForce tab → PM tab
 :::
 

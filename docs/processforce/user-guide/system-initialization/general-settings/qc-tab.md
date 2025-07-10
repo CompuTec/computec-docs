@@ -2,50 +2,60 @@
 sidebar_position: 7
 ---
 
-# Quality Control tab
+# QC tab
 
-The Quality Control Tab in the system provides essential settings for managing quality control processes efficiently. It enables users to configure various parameters related to testing, batch release, and automated test creation. Below is an overview of the key settings and their functionalities.
+The QC (Quality Control) Tab in the system provides essential settings for managing quality control processes efficiently. It enables users to configure various parameters related to testing, batch release, and automated test creation. Below is an overview of the key settings and their functionalities.
 
-![Quality Control Tab](./media/qc-tab/general-settings-qc.webp)
+To access Quality Control tab, navigate to:
+
+:::info Path
+Administration → System Initialization → General Settings → ProcessForce tab →  Quality Control tab
+:::
+
+![Quality Control Tab](./media/qc-tab/qc-gen-settings.webp)
 
 ---
 
-- **QC Resource Group, QC Item**: in the Test Protocol and Quality Control Test Forms, users can define the resources and items required for testing activities, such as X-ray machines, microscopes, and tooling. The QC Resource Group and QC Item Group options allow users to select predefined groups for use in Quality Control Tests.
+## Key Settings
 
-Click [here](../../quality-control/quality-control-configuration.md) to learn about Items and Resources for Quality Control Test configuration.
+Below is a detailed breakdown of the key settings available in this tab.
 
-**Enable multiple test results**: select this option to record multiple results for a Test and Item Property.
+1. **Default Groups for Materials in Protocols**
 
->Note: When enabled, all Test and Item Property data entries will be managed using this method.
+    - **Quality Control Resource Group**: Defines the default resource group (e.g., QCResources) to be used in quality control protocols. Resources from this group are assigned to execute QC tests.
+    - **Quality Control Item Group**: Specifies the default item group (e.g., QCItems) used in QC-related protocols, streamlining the classification of QC-relevant inventory items.
 
-Click [here](../../quality-control/quality-control-test/multiple-test-result-record.md) to find out more about the Multiple Test Results function.
+    ➡️ Learn more about[Quality Control Configuration](../../quality-control/quality-control-configuration.md)
 
-- **Release Batches on Quality Control Test Pass**: when this checkbox is selected, if a QC Test status changes to "Passed" and the document status is set to "Closed," any assigned batches (from the Quality Control Test > Transaction tab) will be marked as "Released."
+2. **Batch and Serial Settings**
 
-- **Auto Create Quality Control Test Documents**: enabling this option allows Quality Control Tests to be generated automatically when predefined conditions are met. Click [here](../../quality-control/automatic-creation-of-quality-control-documents.md) to find out more.
+    These settings control how inventory batches interact with QC test outcomes.
 
-- **Create Quality Control Document on MOR state**: this setting controls whether a Quality Control document is generated when a Manufacturing Order (MOR) status changes. Users can configure it to trigger at a specific status change or disable it by selecting 'No' from the drop-down list.
+    - **Release Batches on QC Test Pass**: When this checkbox is enabled, if a QC Test status changes to "Passed" and the document status is set to "Closed," all batches assigned in the Transaction tab of the Quality Control Test will automatically be marked as "Released".
+    - **Block Batches on QC Test Fail**: Blocks batches from being used if they fail QC tests, preventing defective goods from entering production or sales.
+    - **Copy QC Test Results to Batch**: If checked, the results of the QC tests are stored in the batch master data for reference and traceability.
 
-- **Create QC Document for Operation on MOR state**: this setting determines whether a Quality Control document should be created for an operation when a Manufacturing Order status changes. Users can configure a specific status shift or disable the feature by selecting 'No' from the drop-down list. To enable this option for a particular operation, the [QC Active checkbox](../../routings/operations.md) must be selected.
+3. **Auto. QC Document Creation**
 
-- **Update Items Properties in QC Test Protocol by updating Item Details Properties**: when this checkbox is selected, any updates made to Item Details Properties will automatically reflect in the corresponding Quality Control Test Protocol.
+    These settings automate the generation of QC test documents under different circumstances.
 
-    ![Properties Update](./media/qc-tab/properties-update.webp)
+    - **Auto Create QC Test Documents**: When enabled, QC test documents are automatically created based on defined protocols when related inventory transactions occur.
+    - **Create QC Document on MOR Status Change**: Controls whether QC documents should be generated when a Manufacturing Order (MOR) changes status.
+    - **Create QC Document for Operation on MOR Start**: Determines if a QC document should be created when an operation within a Manufacturing Order starts.
+    - **Prevent auto. create QC document if already auto. created**: Prevents duplication of QC documents by avoiding regeneration when one has already been created automatically.
 
-- **Force Reason if Property Test Failed**: enabling this option prevents saving or updating a Quality Control Test document if a failed Test or Item Property does not have a designated Reason Code and Name.
+4. **Other Settings**
 
-- **Copy QCTest Results to Batch**: when a Quality Control Test is set to "Closed," the Tested Values and Tested Reference Codes of Item Properties are transferred to the associated Batch Master Data.
+    - **Enable Multiple Test Results**: Allows recording of multiple results for the same QC test, useful for cases where repeated tests are conducted.
+    - **Update QC Test Protocol Item Properties**: Automatically updates the properties in the protocol based on test results.
+        ![Update QC](./media/qc-tab/item-details-qc.webp)
+    - **Force user to enter Reason for Property Test Failure**: Enforces accountability by requiring users to input a reason whenever a QC property test fails.
 
-If an Item Property from the Quality Control Test is not already listed in the Properties Tab of the Batch Master Data, the system automatically adds it.
+5. **Default Test/Item Property Status**:
 
-- **Default state of Test / Item Properties**: users can set a default state (e.g., To be determined, Pass, Fail, Not Affected) for test and item properties within a Test Protocol or when adding properties to a Quality Control Test.
+    Defines the default status for item/test properties. Options include: To Be Determined, Pass, Fail and No Impact
 
-- **Enable Create Closed Quality Control Tests from Frequency Rules**: when a Quality Control Test is automatically generated based on the frequency settings in the Test Protocol’s Frequency tab, enabling this option ensures that QC Tests are created with a Closed status and a Pass result for the specified interim counts. For instance, if a QC Test is scheduled to be generated every five transactions, the system will create closed tests for the first four transactions, while a fully detailed QC Test will be generated on the fifth transaction.
-
-- **Ask for creating Quality Control Test from QC Pool Test Protocol**: when manually creating a test from a QC Pool Test Protocol, users can choose between a single QC Test or a QC Test Pool if this option is enabled. Otherwise, the system defaults to creating a QC Test Pool.
-
-    ![Properties Update](./media/qc-tab/qc-test-or-pool.webp)
-
-- **Block Batches on Quality Control Test Fail**: prevents batches from being used if a QC Test results in failure.
+    - **Enable Closed QC Test Creation**: Allows users to create QC test documents with a "closed" status directly, skipping the usual QC process cycle if necessary.
+    - **Offer QC Test/QC Test Pool creation from QC Test Pool Protocol**: Enables the system to prompt or offer creation of QC Test documents or pooled tests directly from the protocol level.
 
 ---

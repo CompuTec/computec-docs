@@ -127,97 +127,111 @@ Click [here](./rfid.md) to find out more about RFID settings.
 
 ## ProcessForce Settings
 
-In SAP Business One with ProcessForce installed, you can find CompuTec PDC Settings:
+In SAP Business One with CompuTec ProcessForce installed, you can find CompuTec PDC Settings:
 
 :::info Path
 SAP Business One → Administration → System Initialization → General Settings → ProcessForce tab → PDC tab
 :::
 
-![General Settings](./media/setting-up-the-application/general-settings.webp)
+![General Settings](./media/setting-up-the-application/pdc-gen-settings.webp)
 
-- **Automatically use left quantity as picked**: this option applies to Production Issue and Receipt within the application, enabling the automatic assignment of planned quantities for Pick Order, Pick Receipt, both, or neither. If not configured for automatic use, the quantity will default to zero.
-- **Activity**: a standard SAP Business One feature that can be created from the CompuTec PDC level. Here, you can specify the type of activity that will be automatically assigned upon creation from the CompuTec PDC level.
-- **Activity Type**: this setting allows you to define the activity type that will be automatically assigned upon creation from the CompuTec PDC level.here, you can determine the activity type that will be automatically assigned to it on creation from the CompuTec PDC level.
-- **Show not closed Task in future section**: when this option is enabled and the "Close Task" checkbox on the Confirmation Panel is unchecked, the task tile will remain on the main panel after registering a document.
+### Key Settings
 
-  ![Confirmation Panel](./media/setting-up-the-application/confirmation-panel.webp)
-- **Create a new task when Down Register**:
-  - set to 'Yes': A new time booking is created, and a new task tile appears in the main window.
-  - Set to 'No': The action will be determined by Action when Down Registration option (see below).
-- **Pause all tasks when Down Register**: defines whether all tasks are paused during downtime registration, especially when multiple employees are working on the resource.
-- **Action when Down Register** options:
+Below is a detailed breakdown of the key settings available in this tab.
 
-  - **Ask**: when downtime is registered, the user will be prompted to decide whether to register a time booking or just the quantity.
-  - **Create Time Booking**: a time booking will be created upon registering downtime.
-  - **Only Quantity Registration**: only the quantity will be registered upon downtime registration.
-- **Close All Labour when Closing Task**: this option defines whether the labor associated with the task is automatically marked as completed when the task is closed.
-- **Lock assigned and registered Manufacturing Orders on the Gantt chart**: this option determines whether assigned and registered manufacturing orders can be rescheduled on the Gantt chart.
-- **PDC Default View**: a predefined default SQL view required for personalization options.
+1. **General**
 
-  For example, **PDC Default View** = PDCVIEW for custom SQL View:
+    - **Populate remaining quantity automatically as selected activity**: This option applies to Production Issue and Production Receipt processes, allowing the system to automatically assign planned quantities for Pick Order, Pick Receipt, both, or neither. If automatic assignment is not configured, the quantity will default to zero.
+    - **Activity**: A standard SAP Business One feature that can be initiated directly from the CompuTec PDC interface. This setting lets you define whether an activity should be automatically created during relevant actions within PDC.
+    - **Activity Type**: Specifies the type of activity that will be automatically assigned when an activity is created from the CompuTec PDC level.
+    - **Show unclosed Tasks in future section**: When this option is enabled, and the "Close Task" checkbox on the Confirmation Panel is left unchecked, the task tile will remain visible on the main panel after the document is registered.
 
-      ```sql title="MySQL Example"
-      Create View [dbo].[PDCVIEW]
-      as
-      Select "DocEntry" ,"U_LineNum", U_RscCode+' | '+ U_RscType as "Description" from [@CT_PF_MOR16]
-      GO
-      ```
+        ![Confirmation Panel](./media/setting-up-the-application/confirmation-panel.webp)
+    - **PDC Settings Mode**: A predefined default SQL view required for personalization options.
+    - **Get Date and Time for operations from Database Server**: Ensures date and time entries are synchronized using the database server’s clock to avoid time zone discrepancies.
+    - **Lock assigned and registered Manufacturing Orders on Gantt chart**: Prevents changes to orders already scheduled and assigned, preserving planning integrity.
+    - **Close All Labour when Closing Task**: Automatically closes all related labor entries when the task is marked as completed.
+    - **Blocked time type, if the previous operation was**: Allows you to define blocked time logic based on the status of prior operations (e.g., All, Failed, or Skipped).
+    - **Show All Tasks**:Displays all tasks regardless of user-specific filters or assignments.
+    - **Synchronize team work**: Enables time and data synchronization across team members working on the same task.
 
-      ```sql title="HANA Example"
-      Create View "PDCVIEW"
-      as
-      Select "DocEntry" ,"U_LineNum", "U_RscCode", "U_RscType" as "Description" from "@CT_PF_MOR16"
-      ```
+2. **UI**
 
-      **How to use a View in PDC**:
+    - **PDC Default View / Task List**:a predefined default SQL view required for personalization options.
 
-        ![PDC View 1](./media/setting-up-the-application/pdc-view-1.webp)
+        For example, **PDC Default View** = PDCVIEW for custom SQL View:
 
-        ![PDC View 2](./media/setting-up-the-application/pdc-view-2.webp)
+        ```sql title="MySQL Example"
+        Create View [dbo].[PDCVIEW]
+        as
+        Select "DocEntry" ,"U_LineNum", U_RscCode+' | '+ U_RscType as "Description" from [@CT_PF_MOR16]
+        GO
+        ```
 
-        ![PDC View 3](./media/setting-up-the-application/pdc-view-3.webp)
+        ```sql title="HANA Example"
+        Create View "PDCVIEW"
+        as
+        Select "DocEntry" ,"U_LineNum", "U_RscCode", "U_RscType" as "Description" from "@CT_PF_MOR16"
+        ```
 
-- **PDC Way of Getting Settings** – A settings template (detailed below) can be assigned to either an employee or an installation of CompuTec PDC. This option allows you to choose whether the settings template is prioritized from the installation or employee settings.
-- **Task List** – This option allows customization of columns by adding "Task by Resource" through a database query, created using SAP Business One's Query Generator.
-- **Step-by-Step Issue From Production** – Enabling this option determines whether data entry for an issue from production (including Item, Batch, Localization, and Quantity) occurs step-by-step, with each type of data entered on a separate form, or if all data is entered in a single dialog box.
-- **Get Date and Time for Operations from Database Server** – Specifies whether the date and time are retrieved from the database server or from the terminal where CompuTec PDC is installed. This is particularly useful when SAP Business One is hosted on a server separate from CompuTec PDC, such as a mobile device or industrial PC, where time discrepancies between the two systems could cause inconsistencies in time bookings recorded through CompuTec PDC.
-- **Attachments from** – Specifies the source of attachments available through the Attachments option in the Task panel for related documents.
-- **Receipt mode**:
+        **How to use a View in PDC**:
 
-  - Add (Default) – Regular Receipt from production
-  - Add and Open Issue – Creates a Receipt from production and open Issue to production form.
-- **Issue mode**:
+          ![PDC View 1](./media/setting-up-the-application/pdc-view-1.webp)
 
-  - Add (Default) – Standard Issue to production.
-  - Add and Open Receipt – create an Issue to production and opens the Receipt from production window.
-- **Confirm every weighing**:
+          ![PDC View 2](./media/setting-up-the-application/pdc-view-2.webp)
 
-  - No (Default) – Standard process without confirmation messages.
-  - Yes – Displays a confirmation message after each weighing:
+          ![PDC View 3](./media/setting-up-the-application/pdc-view-3.webp)
 
-    ![Weighting Message](./media/setting-up-the-application/weighting-message.webp)
-- **Range from Mode**:
+    - **Notification after login**:Display custom messages to users upon logging into the PDC terminal – useful for shift updates or instructions.
+    - **Auto Logout Delay(s)**: Specifies the time (in seconds) of user inactivity after which the system automatically logs out for security purposes.
+    - **Disable automatically loading operation binding items**: Disables preloading of operation-related items, reducing initial loading time if not needed.
+    - **Disable Resource Occupied Warning**: Suppresses alerts that indicate the selected resource is currently occupied.
 
-  - **Batch available (default)**: the range specified in the weight scale parameter cannot exceed the available batch quantity (as shown in 1 in the image). For example, if the Range From is 1000 KG, the weight scale cannot be selected.
-  - **Planned Item Quantity**: the range specified in the weight scale parameter cannot exceed the planned quantity (as shown in 2 in the image). For instance, if the Range From is 110 KG, the weight scale cannot be selected.
-  - **Remaining Quantity**: the range specified in the weight scale parameter cannot exceed the remaining quantity (as shown in 3 in the image). For example, if the Range From is 100 KG, the weight scale cannot be selected.
+3. **Downtime**
 
-    ![Weight Range](./media/setting-up-the-application/weight-range.webp)
+      - **Action on Down Time Registration**: Defines what the system should do when downtime is logged (e.g., Ask, Skip, or Force End Task).
+          - **Ask**: When downtime is registered, the user will be prompted to choose between creating a time booking or registering only the quantity.
+          - **Create Time Booking**: Automatically creates a time booking when downtime is recorded.
+          - **Only Quantity Registration**: Only the quantity is recorded when downtime is registered, without creating a time booking.
+      - **Create new task on Downtime Registration**: Automatically generates a new task entry when downtime is registered.
+      - **Pause all tasks on Downtime Registration**: Determines whether all active tasks should be paused when downtime is registered, particularly in scenarios where multiple employees are working on the same resource.
 
-- **Show Not Finished Weight Documents**: if this option is selected, upon the next login by a user, a window displaying unfinished weight documents will appear:
+4. **Goods Transactions**
 
-  ![Select Weight Document](./media/setting-up-the-application/select-weight-document.webp)
+    - **Step by Step Issue From Production**: When enabled, this option controls the data entry method for issuing from production. It defines whether information such as Item, Batch, Localization, and Quantity is entered step-by-step across separate forms, or all at once in a single dialog window.
+    - **Receipt Mode / Issue Mode**: Defines default modes (e.g., Add) for issuing and receiving goods.
+        - Receipt mode:
 
-  From this interface, users can resume work on specific documents, close them, or access them later via the [Weight Management Board](../../user-guide/customization/optional-functions/weight-scale-module/weight-management-board.md).
+          - Add (Default): Regular Receipt from production
+          - Add and Open Issue: Creates a Receipt from production and open Issue to production form.
 
-- **Is Force Order Enabled for Weight Documents**: if enabled, this option enforces weighing in the sequence defined in [Operation Bind](/docs/processforce/user-guide/formulations-and-bill-of-materials/production-process/overview#operation-bind) for a related Manufacturing Order.
-- **Is Precision Weight Enabled for Weight Documents**: when activated, it ensures that you cannot issue more [weight](../../user-guide/customization/optional-functions/weight-scale-module/overview.md) than the Planned Quantity (within the weight scale precision range).
-- **Auto Logout Delay(s)**: define the number of seconds of inactivity before the system automatically logs out the user. A value of '0' disables this feature.
-- **Synchronize team works**: this is a [Team Log](../../user-guide/task-activities/overview.md) related option. This option syncs task times among team members. For example, when a Team Leader starts a task, the start time is applied to all related employees. Similarly, closing the task (booking time) synchronizes for the entire team.
-- **Blocked time type, if the previous operation was not closed**: choose between 'All' and 'Run':
-  -'All' -  Prevents starting a new operation unless the previous one is completed.
-  -'Run' - Allows starting 'Set Up' time even if the previous operation is still running.
-- **Force tare between each weighing**: when checked, Requires users to click 'Tare' before each weighing to ensure accuracy. Find out more about the [Weighing Module](../../user-guide/customization/optional-functions/weight-scale-module/overview.md).
-- **Show all Tasks**: this allows access to all of the users' Tasks on all Resources despite using the [Resource Code](./pdc-settings/overview.md#pdc-settings-templates) option. The user cannot add any new Task to Resources other than assigned.
+        - Issue mode:
+
+          - Add (Default) – Standard Issue to production.
+          - Add and Open Receipt – create an Issue to production and opens the Receipt from production window.
+    - **Allow multiple warehouses for issue/receipt**:Enables goods movement transactions across different warehouse locations.
+    - **Attachments from**: Specifies the source of attachments (Manufacturing Order, Bill of Materials, Item Details) available through the Attachments option in the Task panel for related documents.
+
+5. **Weight Wizard**
+
+    - **Confirm Every Weight**: Forces confirmation of each weighing transaction for precision.
+          - No (Default): Standard process without confirmation messages.
+          - Yes: Displays a confirmation message after each weighing:
+
+            ![Weighting Message](./media/setting-up-the-application/weighting-message.webp)
+    - **Range From Mode**:
+          - **Batch Available (Default)**: The "Range From" value in the weight scale settings must not exceed the available batch quantity (as indicated by point 1 in the image). For example, if the batch has only 1000 KG available and "Range From" is set to 1000 KG or more, the weight scale cannot be selected.
+          - **Planned Item Quantity**: The "Range From" value must not be greater than the planned item quantity (see point 2 in the image). For instance, if the planned quantity is 110 KG and "Range From" is set to 110 KG or higher, the weight scale option becomes unavailable.
+          - **Remaining Quantity**: The "Range From" setting must not exceed the remaining quantity (as shown in point 3 in the image). For example, if only 100 KG remain and "Range From" is 100 KG or above, the weight scale cannot be used.
+
+            ![Weight Range](./media/setting-up-the-application/weight-range.webp)
+    - **Show Unfinished Weight Documents**: When this option is selected, users will see a window displaying any unfinished weight documents upon their next login.
+
+        ![Select Weight Document](./media/setting-up-the-application/select-weight-document.webp)
+
+      From this window, they can choose to resume work on a document, close it, or access it later through the [Weight Management Board](../../user-guide/customization/optional-functions/weight-scale-module/weight-management-board.md).
+    - **Force Order Enabled for Weight Documents**: When enabled, this option enforces the weighing process to follow the sequence specified in the [Operation Bind](/docs/processforce/user-guide/formulations-and-bill-of-materials/production-process/overview#operation-bind) of the corresponding Manufacturing Order.
+    - **Precision Weight Enabled for Weight Documents**: When enabled, it prevents issuing a weight that exceeds the Planned Quantity, accounting for the defined [weight scale](../../user-guide/customization/optional-functions/weight-scale-module/overview.md) precision range.
+    - **Force tare between each weighing**:When enabled, users must click 'Tare' before each weighing to maintain measurement accuracy. Learn more in the [Weighing Module](../../user-guide/customization/optional-functions/weight-scale-module/overview.md).
 
 ---
