@@ -4,7 +4,13 @@ sidebar_position: 4
 
 # Multistructure Fixed and Variable Overhead Costs
 
-In ProcessForce, businesses can define and manage both simple and structured Fixed and Variable Overhead costs, offering greater flexibility in cost allocation. This multi-structure costing feature enables the differentiation and presentation of various overhead costs in a more organized manner, helping users to track and calculate costs with precision. This approach can significantly enhance the accuracy of cost roll-ups and provide more insightful financial data for better decision-making.
+The Multistructure Fixed and Variable Overhead Costs feature in CompuTec ProcessForce allows businesses to define structured overhead cost types - both fixed and variable - enabling more granular cost allocations. This setup improves the clarity and accuracy of cost calculations by allowing users to organize and apply different overhead structures across items and resources.
+
+By using this functionality, organizations can:
+
+- Enhance accuracy in cost roll-ups
+- Gain better visibility into overhead distribution
+- Simplify maintenance of cost structures for improved decision-making
 
 ---
 
@@ -12,27 +18,31 @@ In ProcessForce, businesses can define and manage both simple and structured Fix
 
 ### General Settings
 
+To access Costing, navigate to:
+
 :::info Path
     Administration → System Initialization → General Settings → ProcessForce tab → Inventory tab → Costing
 :::
 
-You can enable Multi-structure Fixed and Variable Overhead Costs option by checking the checkbox in the General Settings form under the ProcessForce tab and the Costing section.
+Check the box for Multistructure Fixed and Variable Overhead Costs
 
 ![Multi structure](./media/multistructure-fixed-and-variable-overhead-costs/multi-structure.webp)
 
 ### Overhead Types Definition
 
+To access Overhead Types, navigate to:
+
 :::info Path
     Administration → Setup → Financials → Overhead Types
 :::
 
-In this form, you can define cost types. Once defined, these cost types can be used in both the Item Costing and Resource Costing forms. The following parameters can be set:
+In this form, you can create and manage cost types, which can later be applied in both the Item Costing and Resource Costing forms. The following parameters can be configured:
 
 - Code
 - Name
-- Type – Fixed or Variable
+- Type: Fixed or Variable
 
-![Overhead variable](./media/multistructure-fixed-and-variable-overhead-costs/overhead-variable.webp)
+    ![Overhead variable](./media/multistructure-fixed-and-variable-overhead-costs/overhead-variable.webp)
 
 ## Usage of the Option
 
@@ -51,20 +61,21 @@ Predefined Overhead Types can be used on the Costing Details tab on the Item Cos
 - Variable O/H %
 - Variable O/H Other
 
-![Item Costing Overhead](./media/multistructure-fixed-and-variable-overhead-costs/item-costing-overheads-2.webp)
+    ![Item Costing Overhead](./media/multistructure-fixed-and-variable-overhead-costs/item-costing-overheads-2.webp)
 
 :::info
-Note that the option is available for entries related to any cost category other than the 000 category. Any changes made for other cost categories can be rolled over to the 000 cost category using the [roll-over](../cost-categories.md) procedure.
+Please note that this option is applicable to all cost categories except for the 000 category. However, any changes made to other cost categories can be transferred to the 000 category using the r[roll-over](../cost-categories.md) procedure.
 :::
 
-After selecting the option, you can choose the desired costs and assign a value to them (only costs marked as fixed can be selected for fixed costs):
+Once the option is selected, you can choose the relevant cost types and assign values to them.
+>**Note**: Only cost types marked as "Fixed" can be selected for fixed cost entries.
 
 ![Actual Overhead](./media/multistructure-fixed-and-variable-overhead-costs/actual-overheads.webp)
 
-Once you click the OK button, the total cost will be added to the corresponding grid:
+After clicking the "OK" button, the total cost will be automatically populated in the corresponding grid:
 
 ![Added Up](./media/multistructure-fixed-and-variable-overhead-costs/added-up-overheads.webp)
 
-When you choose the Multistructure Overhead Costs option again, previously saved costs and their values will be displayed, giving you the ability to modify them as needed.
+When you reopen the Multistructure Overhead Costs option, any previously saved costs and their values will be displayed, allowing you to review and modify them as needed.
 
 ---

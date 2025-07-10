@@ -6,8 +6,6 @@ sidebar_position: 10
 
 The PDC (Plant Data Capture) tab allows you to configure options for integrating **CompuTec PDC** with **CompuTec ProcessForce**. This module enables real-time recording of production tasks directly from the shop floor by generating **Time Bookings**.
 
-The **PDC (Plant Data Capture)** tab in General Settings allows you to configure options for integrating **CompuTec PDC** with **ProcessForce**. This module enables real-time recording of production tasks directly from the shop floor by generating **Time Bookings**.
-
 To access PDC tab, navigate to:
 
 :::info Path
