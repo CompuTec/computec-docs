@@ -8,7 +8,7 @@ This guide will walk you through the installation process for CompuTec AppEngine
 
 ---
 
-1. Run the installation file (CompuTec AppEngine) from the [Download](../../version-2.0/releases/plugins/processforce/download.md) section and click "Install" in the opened installation Wizard.
+1. Run the installation file (CompuTec AppEngine) from the [Download](https://learn.computec.one/docs/appengine/2.0/releases/appengine/download) section and click "Install" in the opened installation Wizard.
 2. Click "Close" after getting Installation Successfully Completed.
 3. The new service should now be running:
 

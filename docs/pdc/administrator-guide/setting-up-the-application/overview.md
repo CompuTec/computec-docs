@@ -40,7 +40,7 @@ Main Menu → Human Resources → Employee Master Data
 
 ## Setting up CompuTec PDC Application
 
-After launching the application, click the first icon in the top menu and select "Settings". The Settings tab is organised into three sections:
+After launching the application, click the first icon in the top menu and select "Settings". The Settings tab is organized into three sections:
 
 ![PDC Settings](./media/setting-up-the-application/pdc-settings.webp)
 
