@@ -7,7 +7,7 @@ sidebar_position: 2
 The CompuTec License Server is a crucial component for managing licenses in CompuTec solutions. This This guide walks you through the step-by-step installation of the CompuTec License Server on a Windows environment. It also includes firewall configuration to allow communication on the required port.
 
 :::info
-    You can check the available **ProcessForce user license types** [here](../license-chart.md).
+    Here, you can check the available [**ProcessForce user license types**](../license-chart.md).
 :::
 
 ---
@@ -36,7 +36,6 @@ The CompuTec License Server is a crucial component for managing licenses in Comp
 
 5. Confirm installation – click the "Install" button:
 
-    ![CompuTec License Server Setup](./media/license-server-installation/CTLicenseServerInstallerC.png)
     ![CompuTec License Server Setup](./media/license-server-installation/CTLicenseServerInstallerC.png)
 
 6. Once the installation is completed successfully, click "Finish".
