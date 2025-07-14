@@ -25,7 +25,7 @@ Custom prefixes, suffixes, and group separators can be configured in the applica
 
 ## Barcode Simulator
 
-PDC Barcode Simulator is a tool designed to:
+CompuTec PDC Barcode Simulator is a tool designed to:
 
 - create barcodes based on user input.
 - print generated barcodes.
@@ -48,7 +48,7 @@ PDC Barcode Simulator is a tool designed to:
 7. Print the generated barcode.
 8. Save the barcode as a .webp file by clicking the save button.
 
-In PDC Barcode Simulator, you can scan a ready barcode to check its validity and elements (in case it is a multi-prefix code) or to check if the scanning device works correctly.
+In CompuTec PDC Barcode Simulator, you can scan a ready barcode to check its validity and elements (in case it is a multi-prefix code) or to check if the scanning device works correctly.
 
 Check the information in the next section to get to know how to create barcodes for CompuTec PDC and where in the application to use it.
 

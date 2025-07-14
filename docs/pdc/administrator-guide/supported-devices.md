@@ -8,7 +8,7 @@ CompuTec PDC is designed to operate on a range of hardware devices that are comp
 
 ---
 
-PDC can operate on any hardware device that can handle SAP Business One DI API, which includes specific:
+CompuTec PDC can operate on any hardware device that can handle SAP Business One DI API, which includes specific:
 
 - PCs
 - industrial computers
@@ -19,7 +19,7 @@ Confirmed supported operating systems:
 - Windows 7, 8, 10.
 
 :::caution
-    PDC does not operate on devices with Windows RT operating system.
+    CompuTec PDC does not operate on devices with Windows RT operating system.
 :::
 
 ## Recommended Devices

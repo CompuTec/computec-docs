@@ -6,7 +6,7 @@ toc_max_heading_level: 5
 
 # Assignment Board
 
-The Assignment Board is a powerful feature in SAP Business One, particularly when used with CompuTec ProcessForce and PDC. It offers a real-time, visual interface to help production planners easily assign manufacturing tasks to teams or individual employees and manage their workload effectively.
+The Assignment Board is a powerful feature in SAP Business One, particularly when used with CompuTec ProcessForce and CompuTec PDC. It offers a real-time, visual interface to help production planners easily assign manufacturing tasks to teams or individual employees and manage their workload effectively.
 
 This guide will walk you through the key components of the Assignment Board, including how to configure teams, assign and unassign tasks, filter views, and explore manufacturing order details.
 

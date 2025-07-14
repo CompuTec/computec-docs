@@ -10,6 +10,5 @@ This updated page includes:
 
 - Step-by-step instructions for initial installation
 - Setting Windows Firewall rule
-- For instructions on using CompuTec Service Manager and configuring Direct Data Access mode
 
 ---

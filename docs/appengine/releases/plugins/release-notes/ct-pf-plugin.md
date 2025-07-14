@@ -33,7 +33,7 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 | Bug | Common functions | Encountered issues when using the "Support" user to perform operations in ProcessForce |
 | Bug | Manufacturing Order | [POLCOM] PFI import failed with error "Cannot update. Empty formula in Items." when item formulas were missing or not initialized |
 | Bug | PFI | Missing translation for the new column label addDefaultLinesLabel in PFI. |
-| Bug | CompuTec AppEngine WebClient | Issue occurs in PDC when OIDC is disabled |
+| Bug | CompuTec AppEngine WebClient | Issue occurs in CompuTec PDC when OIDC is disabled |
 | Bug | CompuTec AppEngine Core | Delete option next to server is not functional |
 | Bug | MRP | Due Date Filter in Order Recommendation is not functioning; Error Message: "this. DueDateForm.setHours is not a function." |
 | Bug | CompuTec AppEngine Core | Issues with plugin upgrade in CompuTec AppEngine - no error is displayed in the UI despite failure |
@@ -75,7 +75,7 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 | Bug | MRP 2.5 | Forecast Changes require CompuTec AppEngine Restart to reflect Updates |
 | Bug | Bill of Materials | BOM Component UoM (BOM1.Uom) Not Updated After Base Item (OITM) UoM Change |
 | Bug | MRP 2.5 | When using Forecast version 2.5, the system occasionally encounters a critical error which causes SAP to become unresponsive/inactive |
-| Bug | PDC | When performing an Issue for Production transaction, users are encountering a Bin Allocation error |
+| Bug | CompuTec PDC | When performing an Issue for Production transaction, users are encountering a Bin Allocation error |
 | Bug | MRP 2.5 |  issues reported with the calculation of cumulative lead times |
 | Bug | CompuTec AppEngine Administration Panel, CompuTec AppEngine Installer | Empty Administrator Panel in CompuTec.AppEngine 3.2505.1-rc-01 |
 | Bug | Cost Accounting | Error message occurred when executing a rollup operation: "Object reference not set to an instance of an object." |

@@ -276,7 +276,7 @@ A specific view can be also used in a standard SQL query.
 |PlannedStartDateTime|Planned start date/time for Resource|Planned Start Date Time|Attribute| |
 |PlannedTimeHHMMSS|Planned work time for Resource in HHMMSS format|Planned Time HHMMSS|Attribute| |
 |ActualTempo|U_Quantity"/"ActualTime"*3600|Actual Tempo [Uom/h]|Measure| |
-|ActualTime|Time Sum from Time Bookings / PDC in seconds|Actual Time [sec]|Measure| |
+|ActualTime|Time Sum from Time Bookings / CompuTec PDC in seconds|Actual Time [sec]|Measure| |
 |ActualTimeH|"ActualTime"/3600|Actual Time [H]|Measure| |
 |ActualVsPlannedTimePERC|"ActualTime"/"PlannedTime|Actual Vs Planned Time [perc]|Measure| |
 |DelayEnd|seconds_between("PlannedStartDateTime","ActualStartDateTime")|Delay End [sec]|Measure| |

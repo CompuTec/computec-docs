@@ -56,7 +56,7 @@ The SQL query must be saved in **Query Manager**:
 
 ![Query Manager](./media/customized-task-list/query-manager.webp)
 
-## PDC Settings
+## CompuTec PDC Settings
 
 Create a PDC Setting view and select the saved query in the **Task List** field.
 

@@ -25,7 +25,7 @@ Main Menu → Human Resources → Employee Master Data
 ![Setting Up The Application](./media/setting-up-the-application/employee-master-data-general.png)
 
 - **Active Employee Checkbox**: the "Active Employee" checkbox must be checked to use the employee in CompuTec PDC.
-- **Credentials**: PDC Login and Password must be defined.
+- **Credentials**: CompuTec PDC Login and Password must be defined.
 - **Management Board**: the "Management Board" checkbox is optional; when checked, it grants access to the [Manager Board](../../user-guide/management-board.md) and [Weight Management Board](../../user-guide/customization/optional-functions/weight-scale-module/weight-management-board.md) within CompuTec PDC.
 - **PDC Form Settings Enabled**: the "PDC Form Settings Enabled" checkbox is optional; when checked, it provides access to [Form Settings](../../user-guide/customization/overview.md#form-settings) for the employee, allowing the customization of columns and their order in PDC forms. Below is an example of Form Settings for Operation Properties:
 

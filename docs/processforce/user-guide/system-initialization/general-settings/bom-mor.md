@@ -1,12 +1,12 @@
 ---
 sidebar_position: 4
 toc_min_heading_level: 2
-toc_max_heading_level: 2
+toc_max_heading_level: 4
 ---
 
 # Bill of Materials and Manufacturing Orders tab
 
-This section provides detailed configuration options for managing Bills of Materials (BOM) and Manufacturing Orders (MOR) within ProcessForce. The tab allows users to define default calculation formulas, manage SAP synchronization, set manufacturing priorities, and optimize planning for semi-finished products.
+This section provides detailed configuration options for managing Bills of Materials (BOM) and Manufacturing Orders (MOR) within CompuTec ProcessForce. The tab allows users to define default calculation formulas, manage SAP synchronization, set manufacturing priorities and optimize planning for semi-finished products.
 
 This document outlines the key features and functionalities available in this tab to help users better understand and configure their manufacturing operations effectively.
 
@@ -16,90 +16,123 @@ To access Bill of Materials and Manufacturing Orders tab, navigate to:
 Administration → System Initialization → General Settings → ProcessForce tab → Bill of Materials and Manufacturing Orders tab
 :::
 
-![Bill of Materials and Manufacturing Orders tab](./media/bom-mor/general-settings-bill-of-materials-and-manufacturing-orders.webp)
+![Bill of Materials and Manufacturing Orders tab](./media/bom-mor/gen-settings-bom.webp)
 
 ---
 
-## Default Formula for Bill of Materials
+## Key Settings
 
-CompuTec ProcessForce offers a versatile approach for defining the relationships between parent items, coproducts, scrap, phantoms, scrap percentages, and factors.
+### General
 
-When a Bill of Material is created, these default formats are automatically assigned to each item. The formula, as shown, is included in this tab during the installation of ProcessForce.
+This option is related to synchronization between CompuTec ProcessForce and SAP Business One, along with additional manufacturing order behaviors.
 
-![Formulas](./media/bom-mor/general-settings-bill-of-materials-and-manufacturing-orders-formulas.webp)
+![Bill of Materials and Manufacturing Orders tab](./media/bom-mor/gen-bom.webp)
 
-### Default Formulas
+#### Synchronization Options
 
-Items:
+- SAP Business One references the Inventory Data tab in the Item Master Data to generate make-or-buy recommendations during MRP runs.
+- CompuTec ProcessForce integrates with SAP Business One through the MRP Wizard, allowing smooth and consistent data synchronization.
+- Additional information is available in the MRP tab.
 
-```sql
-=U_Quantity()*U_Factor()*Items.U_Factor(<sequence>)*Items.U_Quantity(<sequence>)*100/(100 - Items.U_ScrapPercentage(<sequence>))
-```
+1. **Bill of Materials**
 
-Coproducts:
+    - Enabling this option allows CompuTec ProcessForce's BOM data to sync with SAP Business One BOM objects.
+    - The key data synchronized includes values from the Result Column.
 
-```sql
-=U_Quantity()*U_Factor()*CoProducts.U_Factor(<sequence>)*CoProducts.U_Quantity(<sequence>)
-```
+        ![Result](./media/bom-mor/bill-of-materials-result.webp)
 
-Scrap:
+2. **Manufacturing Orders**
 
-```sql
-=U_Quantity()*U_Factor()*Scraps.U_Factor(<sequence>)*Scraps.U_Quantity(<sequence>)
-```
+    To synchronize Manufacturing Orders between CompuTec ProcessForce and SAP:
 
-Phantom
+    - Ensure both systems use the same document numbering series.
+    - The sync includes planned and actual quantities from CompuTec ProcessForce MOs to SAP Production Orders.
 
-```sql
-=U_Quantity()*U_Factor()*Phantoms.U_Factor(<sequence>)*Phantoms.U_Quantity(<sequence>)
-```
+    Ensure numbering series match in SAP and CompuTec ProcessForce before enabling synchronization.
 
-Naming:
+    ![Synchronization](./media/bom-mor/manufacturing-order-synchronization.webp)
 
-|                          Items Tab                          |                       Coproducts Tab                        |                        Scrap Tab                         |                       Phantoms Tab                       |
-| :---------------------------------------------------------: | :---------------------------------------------------------: | :------------------------------------------------------: | :------------------------------------------------------: |
-| ```U_Quantity = Quantity field value within the form header |  U_Quantity = Quantity field value within the form header   | U_Quantity = Quantity field value within the form header | U_Quantity = Quantity field value within the form header |
-|    U_Factor = Factor field value within the form header     |    U_Factor = Factor field value within the form header     |   U_Factor = Factor field value within the form header   |   U_Factor = Factor field value within the form header   |
-|             Items.U_Factor = Factor field value             |          CoProducts.U_Factor = Factor field value           |           Scrap.U_Factor = Factor field value            |          Phantom.U_Factor = Factor field value           |
-|           Items.U_Quantity = Quantity field value           |        CoProducts.U_Quantity = Quantity field value         |         Scrap.U_Quantity = Quantity field value          |        Phantom.U_Quantity = Quantity field value         |
-|   Items.U_ScrapPercentage = Scrap Percentage field value    | CoProducts.U_ScrapPercentage = Scrap Percentage field value |  Scrap.U_ScrapPercentage = Scrap Percentage field value  | Phantom.U_ScrapPercentage = Scrap Percentage field value |
-|      `<sequence>` = sequence number of the item master      |      `<sequence>` = sequence number of the item master      |    `<sequence>` = sequence number of the item master     |    `<sequence>` = sequence number of the item master     |
+3. **Due Date Synchronization**
 
-![Formulas](./media/bom-mor/bill-of-materials-formulas.webp)
+    - SAP Production Orders have a Due Date, while CompuTec ProcessForce Manufacturing Orders have Required Date and Planned Start Date.
+    - You can define whether the Required Date or the Planned Start Date from a ProcessForce MO should populate the Due Date field in SAP Production Orders.
 
-There are no default formulas set up for Yield. Click [here](../../formulations-and-bill-of-materials/formula.md#using-user-defined-fields-in-formulas) to find out more about defining formulas for Yield.
+        ![Date Synchronization](./media/bom-mor/manufacturing-order-sync-dates.webp)
 
-## Enable Synchronization
+#### Other Settings
 
-- SAP Business One utilizes data from the Item Master Data Inventory Data tab to determine MRP make-or-buy recommendations.
-- ProcessForce integrates with SAP Business One using the MRP Wizard, enabling seamless synchronization.
-- Further details can be found in the MRP Tab.
+- **Automatically Calculate Ratio on Operations**: When this is enabled, the system automatically distributes the ratio and binding quantity for items assigned to multiple operations.
 
-### Bill of Materials
+    Example: If an item is used in two operations, the system sets a ratio of 0.5 to each, automatically calculating the binding quantity.
 
-- Enabling this option allows CompuTec ProcessForce's BOM data to sync with SAP Business One BOM objects.
-- The key data synchronized includes values from the Result Column.
+- **Aggregate Duplicated Semi-Finish**: When checked, it consolidates repeated semi-finished items into a single Manufacturing Order. If the same semi-finished product appears multiple times within a BOM, the system will create only one Manufacturing Order instead of separate ones for each occurrence.
 
-![Result](./media/bom-mor/bill-of-materials-result.webp)
+### Formulas
 
-### Manufacturing Orders
+CompuTec ProcessForce provides a flexible method for configuring relationships among parent items, co-products, scrap, phantom items, scrap percentages, and calculation factors.
 
-:::caution
-    To enable synchronization, the same document numbering series must be set for SAP Production Orders and CompuTec ProcessForce Manufacturing Orders. You can check here how to do that.
-:::
+When a Bill of Materials (BOM) is created, default formulas are automatically applied to each item. These predefined formulas are made available in this tab as part of CompuTec ProcessForce installation.
 
-- Synchronizes CompuTec ProcessForce Manufacturing Orders with SAP Business One Production Orders.
-- The key data synchronized includes planned and actual quantities.
-- Ensure that SAP Production Orders and CompuTec ProcessForce Manufacturing Orders have the same document numbering series.
+![Formulas](./media/bom-mor/default-formula-bom.webp)
 
-![Synchronization](./media/bom-mor/manufacturing-order-synchronization.webp)
+#### Default Formulas
 
-### Due Date Synchronization
+- **Items**:
 
-- SAP Production Orders have a Due Date, while CompuTec ProcessForce Manufacturing Orders have Required Date and Planned Start Date.
-- Users can configure which date should sync with the SAP Production Order Due Date.
+    ```sql
+    =U_Quantity()*U_Factor()*Items.U_Factor(<sequence>)*Items.U_Quantity(<sequence>)*100/(100 - Items.U_ScrapPercentage(<sequence>))
+    ```
 
-![Date Synchronization](./media/bom-mor/manufacturing-order-sync-dates.webp)
+- **Coproducts**:
+
+    ```sql
+    =U_Quantity()*U_Factor()*CoProducts.U_Factor(<sequence>)*CoProducts.U_Quantity(<sequence>)
+    ```
+
+- **Scrap**:
+
+    ```sql
+    =U_Quantity()*U_Factor()*Scraps.U_Factor(<sequence>)*Scraps.U_Quantity(<sequence>)
+    ```
+
+- **Phantom**:
+
+    ```sql
+    =U_Quantity()*U_Factor()*Phantoms.U_Factor(<sequence>)*Phantoms.U_Quantity(<sequence>)
+    ```
+
+- **Naming**:
+
+    |                          Items Tab                          |                       Coproducts Tab                        |                        Scrap Tab                         |                       Phantoms Tab                       |
+    | :---------------------------------------------------------: | :---------------------------------------------------------: | :------------------------------------------------------: | :------------------------------------------------------: |
+    | ```U_Quantity = Quantity field value within the form header |  U_Quantity = Quantity field value within the form header   | U_Quantity = Quantity field value within the form header | U_Quantity = Quantity field value within the form header |
+    |    U_Factor = Factor field value within the form header     |    U_Factor = Factor field value within the form header     |   U_Factor = Factor field value within the form header   |   U_Factor = Factor field value within the form header   |
+    |             Items.U_Factor = Factor field value             |          CoProducts.U_Factor = Factor field value           |           Scrap.U_Factor = Factor field value            |          Phantom.U_Factor = Factor field value           |
+    |           Items.U_Quantity = Quantity field value           |        CoProducts.U_Quantity = Quantity field value         |         Scrap.U_Quantity = Quantity field value          |        Phantom.U_Quantity = Quantity field value         |
+    |   Items.U_ScrapPercentage = Scrap Percentage field value    | CoProducts.U_ScrapPercentage = Scrap Percentage field value |  Scrap.U_ScrapPercentage = Scrap Percentage field value  | Phantom.U_ScrapPercentage = Scrap Percentage field value |
+    |      `<sequence>` = sequence number of the item master      |      `<sequence>` = sequence number of the item master      |    `<sequence>` = sequence number of the item master     |    `<sequence>` = sequence number of the item master     |
+
+    ![Formulas](./media/bom-mor/bill-of-materials-formulas.webp)
+
+>**Note**: No default formula is provided for Yield. Learn how to [define custom formulas for Yield].(../../formulations-and-bill-of-materials/formula.md#using-user-defined-fields-in-formulas).
+
+### Goods Transactions
+
+Each checkbox enables or disables specific automation or behavior in production goods transactions:
+
+- **Automatically issue materials on Pick Order Add/Update**: When enabled, materials are automatically issued as soon as a Pick Order is added or updated.
+
+- **Automatically receive materials on Pick Receipt Add/Update**: Automatically receives materials into inventory upon adding or updating a Pick Receipt. Ideal for auto-posting goods receipts when the production output is confirmed.
+
+- **Issue Residual Quantity on next Goods Receipt when possible**: If there’s a shortfall in the previous Goods Receipt, the system will issue any remaining quantity in the next receipt when this option is enabled.
+
+- **Don’t use corrected Fixed Backflush**: Disables the use of the corrected fixed backflush logic.
+
+- **Use Header dimensions for backflushed inventory items**: When enabled, the system uses dimension values from the document header for inventory items backflushed during production.
+
+- **Copy Classification during Pick Receipt**: Automatically transfers classification codes from the Manufacturing Order to the Pick Receipt document.
+
+---
 
 ## Default Priority for Production
 
@@ -127,44 +160,5 @@ You can check (and change – if it is in any other than Finished status) Prior
 :::
 
 ![Manufacturing Order Priority](./media/bom-mor/manufacturing-order-priority.webp)
-
-## Use MRP Minimum Quantity and Order Multiple for Semi Manufacturing Order Quantities checkbox
-
-- This option considers Minimum and Maximum Quantity and Order Multiple when generating Manufacturing Orders.
-- Helps sales operators estimate arrival times more accurately.
-
-## Sum Semi Finished checkbox
-
-- By default, separate Manufacturing Orders are created for the same Semi-Finished Item used multiple times.
-- If checked, a single Manufacturing Order sums up all occurrences of the same Semi-Finished Item.
-
-**Example:**
-
-- When the same semi-finished material appears in two sequence steps within a Manufacturing Order to link different operation steps, two separate Manufacturing Orders are generated for the semi-finished product.
-- If the checkbox is unchecked, the default behavior applies.
-- If the checkbox is checked, a single Manufacturing Order is created for all identical items, combining the total quantity from all entries.
-
-## Use MRP Maximum Quantity for Semi Manufacturing Orders
-
-- Enables visualization of Manufacturing Order dependencies within a Gantt chart.
-
-## Use Resource Balancing
-
-- This option allows choosing the most optimal Resource (defined in Production Process / Manufacturing Order Alternative Resources) for a specific task from a Manufacturing Order.
-- Click [here](../../scheduling/resource-balancing.md) to find out more on Resource Balancing.
-
-## Show Manufacturing Order relations at Gantt
-
-- Enables visualization of Manufacturing Order dependencies within a Gantt chart.
-
-## Copy classification code from Manufacturing Order during the Pick Receipt creation
-
-- Automatically transfers classification codes when generating Pick Receipts.
-
-## Automatically Calculate Ratio on Operations
-
-You can enable the "Automatically Calculate Ratio on Operations" feature in General Settings under the ProcessForce, Bill of Materials, and Manufacturing Orders tab. When this feature is activated, the system automatically determines the Ratio and Quantity. For example, if an Item is assigned to two Operations, the ratio will be set to 0.5, and the Binding Quantity will be calculated based on the remaining balance and the corresponding Bill of Materials quantity.
-
-For more details, click [here](../../formulations-and-bill-of-materials/production-process/overview.md#operation-bind-ratio)
 
 ---

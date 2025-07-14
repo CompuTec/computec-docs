@@ -14,9 +14,9 @@ Downtime refers to a temporary break in work caused by unforeseen circumstances,
 
 [Technician / Is downtime Supervisor](../../administrator-guide/setting-up-the-application/overview.md)
 
-### General Settings, ProcessForce and PDC tab
+### General Settings, CompuTec ProcessForce and PDC tab
 
-Within the General Settings, several options in the ProcessForce and PDC tabs influence downtime registration behavior:
+Within the General Settings, several options in CompuTec ProcessForce and PDC tabs influence downtime registration behavior:
 
 - create a new task when downtime is registered.
 - pause all tasks when downtime is registered.

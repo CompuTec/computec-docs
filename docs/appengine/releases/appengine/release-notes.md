@@ -14,7 +14,7 @@ sidebar_position: 1
 | Bug | Manufacturing Order | [POLCOM] Error "Cannot update. Empty formula in Items." occurs during PFI import |
 | Bug | Common Functions | Selection combo in UDF is not working. User is not able to select any values |
 | Bug | WebAPI | Issues with item details PATCH call - missing or unclear error message |
-| Bug | CompuTec AppEngine WebClient | Issue occurs in PDC when OIDC is disabled |
+| Bug | CompuTec AppEngine WebClient | Issue occurs in CompuTec PDC when OIDC is disabled |
 | Bug | CompuTec AppEngine Core | Delete option next to server is not functional |
 | Bug | CompuTec AppEngine Core | Issues with plugin upgrade in CompuTec AppEngine - no error is displayed in the UI despite failure |
 | Bug | WebAPI | Incorrect error message during API calls – receiving 500 response with "Object reference not set to an instance of an object." |
