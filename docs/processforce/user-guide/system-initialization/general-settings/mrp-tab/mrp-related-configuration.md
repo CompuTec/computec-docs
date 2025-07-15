@@ -5,9 +5,9 @@ toc_max_heading_level: 2
 
 # MRP Related Configuration
 
-SAP Business One provides robust Material Requirements Planning (MRP) functionality to streamline manufacturing and supply chain processes. Proper configuration ensures seamless synchronization between ProcessForce and SAP Business One, allowing businesses to optimize inventory management, production planning, and order fulfillment.
+SAP Business One provides robust Material Requirements Planning (MRP) functionality to streamline manufacturing and supply chain processes. Proper configuration ensures seamless synchronization between CompuTec ProcessForce and SAP Business One, allowing businesses to optimize inventory management, production planning, and order fulfillment.
 
-This page displays options relevant to SAP Business One's MRP functionality.
+This guide displays options relevant to SAP Business One's MRP functionality.
 
 ---
 
@@ -15,28 +15,28 @@ This page displays options relevant to SAP Business One's MRP functionality.
 
 ### Configuration Fields
 
-**When running SAP Business One MRP please ensure the following**
+To ensure accurate MRP execution in SAP Business One, consider the following configuration steps:
 
-- Ensure synchronization between the ProcessForce Bill of Material (BOM) and Manufacturing Order with SAP Business One.
-- If the sync box is left unchecked, Bill of Materials created in ProcessForce will not synchronize with SAP Business One.
-- To synchronize a Bill of Material from ProcessForce to SAP Business One, simply modify any data element within the ProcessForce BOM and click update. This action triggers the synchronization.
-- Even if Coproducts are not being used, reviewing the Coproducts section below is still recommended.
-- Synchronization enables supply and demand details from ProcessForce Manufacturing Orders to update and integrate with SAP Business One features, including::
-  - Item Master Data -> Inventory Tab -> Committed and Ordered fields
-  - Forecasts
-  - MRP Wizard
-  - Order Recommendation
-  - Available to Promise
-  - BOM Relationship Maps
+- Verify that synchronization between the CompuTec ProcessForce Bill of Material (BOM) and Manufacturing Orders with SAP Business One is enabled.
+- If the synchronization checkbox is left unchecked, BOMs created in CompuTec ProcessForce will not sync with SAP Business One.
 
-![General BOM settings](./media/mrp-related-configuration/general-bom.webp)
+    ![General BOM settings](./media/mrp-related-configuration/general-bom.webp)
+- To trigger synchronization, make any change to the CompuTec ProcessForce BOM and click Update. This action will automatically push the data to SAP Business One.
+- Even if your manufacturing process does not involve coproducts, it's still advisable to review the Coproducts configuration section.
+- Enabling synchronization ensures that supply and demand data from ProcessForce Manufacturing Orders is reflected in SAP Business One, including:
+    Item Master Data → Inventory Tab: Committed and Ordered fields
+
+        - Forecasts
+        - MRP Wizard
+        - Order Recommendations
+        - Available to Promise (ATP)
+        - BOM Relationship Maps
 
 ## Documents Series
 
-- Ensure that the SAP Production Order and ProcessForce Manufacturing Order share the same starting and ending number for proper synchronization.
+Make sure the SAP Production Order and the CompuTec ProcessForce Manufacturing Order use the same starting and ending document number range to enable proper synchronization.
 
-    ![Documents Series 1](./media/mrp-related-configuration/numbering-pomo.webp)
-    ![Documents Series 2](./media/mrp-related-configuration/mor-num.webp)
+    ![Doc Series](./media/mrp-related-configuration/doc-series.webp)
 
 ### Example
 
@@ -45,6 +45,8 @@ The screenshot below illustrates an example of Manufacturing Order - Production 
 - 2017PF series (Manufacturing Order series) is synchronized with 2017SAP series (Production Order series).
 
 ![Example](./media/mrp-related-configuration/example.webp)
+
+{/*
 
 ## Multiple Manufacturing Order - Production Order Series Synchronization
 
@@ -69,6 +71,8 @@ Upon accessing this option, the following form will be displayed:
 Within this form, you can assign predefined Production Order document series to corresponding Manufacturing Order document series.
 
 For instructions on creating a document series, click [here](../../document-numbering.md).
+
+*/}
 
 ## Transactions
 
@@ -111,14 +115,6 @@ A Default Component should be configured with the following settings:
 To mark a warehouse as the default, select the first column of its row and click the Set Default Whse button:
 
 ![Default warehouse](./media/mrp-related-configuration/default-warehouse.webp)
-
-## Default Final Component
-
-Item set up as a Default Final Component is excluded from MRP runs.
-
-This option can be accessed via [General Settings > ProcessForce tab > MRP tab](./overview.md):
-
-![Default Final Component](./media/mrp-related-configuration/default-final-component.webp)
 
 ### Settings
 
