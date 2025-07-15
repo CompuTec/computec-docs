@@ -19,7 +19,7 @@ This guide provides comprehensive details to ensure the costing function operate
 - **Use Perpetual Inventory**: this field can be checked or unchecked based on regional practices. For instance, it is checked in the UK and unchecked in Italy.
 - **Manage Item Cost per Warehouse**: it is optional, but should be decided before recreating costings.
 
-![company Details](./media/overview/company-details.png)
+![company Details](./media/overview/company-details.webp)
 
 ### Document Settings
 

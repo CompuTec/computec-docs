@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # General tab
 
-The **General tab** provides configuration options that control core behaviors in production and resource-related processes within **SAP Business One** enhanced by **CompuTec ProcessForce**. These settings define defaults for visibility, automation, scheduling behavior, and data display preferences—impacting how production and resource information is managed and visualized.
+The **General tab** provides configuration options that control core behaviors in production and resource-related processes within **SAP Business One** enhanced by **CompuTec ProcessForce**. These settings define defaults for visibility, automation, scheduling behavior, and data display preferences - impacting how production and resource information is managed and visualized.
 
 To access General tab, navigate to:
 
@@ -18,65 +18,21 @@ Administration → System Initialization → General Settings → ProcessForce t
 
 ## Key Settings
 
-The following options are available in the General tab of the CompuTec ProcessForce General Settings. These settings control system behavior related to production, scheduling, automation, and user interface visibility within SAP Business One.
+1. **SAP Standard Modules**
 
-- **Enable standard functionality of SAP Business One's Production menu**: Displays all default SAP Business One production menu entries alongside ProcessForce menus.
-- **Enable the standard functionality of the Resources menu**: When enabled, standard SAP Business One resource menu options are visible (excluding the ProcessForce-specific Resource menu).
-- **Display on the Gantt chart**: Defines what information appears by default on the Gantt chart task bars. Options include Related Resource Code, Resource Remarks, Manufacturing Order Number, Item Code, Planned Quantity, Actual Quantity, Required Date, and Priority.
-    :::tip
-        Use the Resource Remarks field to add custom text labels to Gantt chart progress bars.
-    :::
-- **Default Revision Code, Default Revision Name**: Specifies default values to be used system-wide for Revision Code and Revision Name fields.
-- **Automatically issue materials on Pick Order Add/Update, Automatically receipt materials on Pick Receipt Add/Update**: Set up Auto Pick and Auto Receipt.
-    <details>
-        <summary>Click here to find out more</summary>
-        <div>
-            The process flow of picking and receiving materials has been simplified by checking one or both options.
+    This section includes options to enable or disable default SAP Business One features that may overlap with CompuTec ProcessForce capabilities:
 
-            For more details, click [here](../../manufacturing/auto-pick-issue-and-auto-pick-receipt.md)
-        
-            **Pick Issue**
-            - Pick non-trace and batch-traced Items.
-            - Click "Update "on the Pick Issue Form.
-            - The system automatically creates an **Issue to Production** transaction. 
-            - Pick Order is updated and set to "Close" status.
-            - Documents are visible within the Manufacturing Order > Document tab.
+    - **Enable standard functionality of SAP Business One's Production menu**: Activates the native SAP Business One Production menu, allowing users to access SAP’s built-in production functionalities. This may be necessary for scenarios where hybrid use of SAP B1 and ProcessForce production is needed.
+    - **Enable the standard functionality of the Resources menu**: Allows access to the default SAP Resources functionality. This is relevant if you’re managing machine or labor resources directly through SAP’s standard definitions and want them visible even when using ProcessForce.
 
-            **Pick Receipt**
-            - Record received quantities from production.  
-            - Click "Update".
-            - The system automatically creates a **Receipt from Production** transaction.
-            - The Pick Receipt is closed.
-            - Documents appear in the Manufacturing Order Document tab.
-        </div>
-    </details>
+2. **SAP Sales Order Controls**
 
-- **Add setup time to a new task when rescheduling**: When enabled, if a partially booked manufacturing task is rescheduled, the system re-applies the full setup time to the new task block.
-- **Start with Planning Board in Scheduling**: Selects whether the Scheduling module opens on the [Resource Planning Board](../../scheduling/gantt-chart/resource-planning-board.md).
-- **Default Gantt chart time scale**: Sets the default time scale used in Gantt views: Days, Weeks, or Months.
-- **Automatically check MORs in lists**: Enables automatic selection (checkbox) of Manufacturing Order Requests (MORs) in lists—such as on the Scheduling Board.
+    This section configures how Sales Orders interact with ProcessForce-specific functionalities, particularly Manufacturing Order Requests (MORs):
 
-    ![General Tab](./media/general-tab/scheduling-board-auto-create.jpg)
+    - **Hide ProcessForce related controls on the Sales Order form**: When enabled, this hides all ProcessForce-specific fields and controls from the standard Sales Order form, offering a cleaner interface for users who do not need those options.
 
-- **Automatically select linked children of MORs**: Automatically enables the Link Child MORs checkbox when creating manufacturing orders from Sales Orders.
-- **Disable copying of the revisions after duplicating the item**: Prevents associated revisions from being copied when duplicating an Item Master Data record.
-- **Hide ProcessForce-related controls on the Sales Order form**: Hides ProcessForce-specific fields from the Sales Order header area.
-
-    ![ProcessForce Fields](./media/general-tab/sales-order-processforce-fields.webp)
-
-- **Hide Resource Information on Resource Planning Board**: Hides the Resource Information panel in the Resource Planning Board to simplify the view.
-
-    ![ProcessForce Fields](./media/general-tab/resource-information.webp)
-
-- **HANA Reports limit: Date From, Date To**: Applies a global date filter to limit the output of specific reports based on the [Data Model](../../../administrator-guide/data-model/overview.md). Only records within the selected date range will be included in report results.
-
----
-
-## Tips & Best Practices
-
-- **Use Gantt chart labels wisely**: Choose the display field most relevant to your planners (e.g., MO Number for order-based production).
-- **Avoid clutter**: Hide ProcessForce fields on Sales Orders if not used regularly by your team.
-- **Default Gantt scale**: Set to Weeks or Months for long-term planning; use Days for short-run or batch-intensive operations.
-- **Enable auto transactions**: Reduces clicks for production operators and streamlines document generation.
+        ![ProcessForce Fields](./media/general-tab/sales-order-processforce-fields.webp)
+    - **Disable update of MOR references on Sales Order lines**: Prevents manual modification of the MOR linkage once it has been created, ensuring the integrity of the manufacturing planning process once a Sales Order is linked to a Manufacturing Order Request.
+    - **Forbid changing Sales Order line data if a Manufacturing Order is already assigned**: Ensures that no modifications are made to Sales Order lines that are already tied to a Manufacturing Order. This safeguards against accidental data inconsistency between Sales and Production processes.
 
 ---
