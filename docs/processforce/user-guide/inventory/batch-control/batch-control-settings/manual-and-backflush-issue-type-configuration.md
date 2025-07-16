@@ -30,7 +30,7 @@ The table below illustrates the interaction between Issue Type and Issue Behavio
 |                |       No       |                    |      :x:       |                      |                    |                    |
 |                |    Display     |                    |                | :information_source: |                    |                    |
 
-![General Settings Issue Type](./media/manual-and-backflush-issue-type-configuration/general-settings-issue-type.png)
+![General Settings Issue Type](./media/manual-and-backflush-issue-type-configuration/general-settings-issue-type.webp)
 
 ### Locked – Yes
 

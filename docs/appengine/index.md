@@ -16,33 +16,24 @@ The Computec.Core2 Ecosystem brings a suite of powerful features, specifically c
 
 ### For Administrators
 
-- **Unified Logging System** - - Track and debug activities across all extensions with a centralized logging approach.
-
-- **Plugin Delivery & Updates** - Use a centralized store to manage and deliver plugin updates, ensuring that all users have access to the latest features and fixes.
-
-- **Licensing Management** - Secure and manage application access efficiently through ongoing development of a comprehensive licensing module.
-
-- **Job Scheduling & Event-Driven Execution** - Configure scheduled tasks or trigger jobs based on specific events to automate and optimize operations.
-
-- **Single Sign-On (SSO) Support** - Provide a seamless authentication experience across multiple applications for users.
+- **Unified Logging System**: Track and debug activities across all extensions with a centralized logging approach.
+- **Plugin Delivery & Updates**: Use a centralized store to manage and deliver plugin updates, ensuring that all users have access to the latest features and fixes.
+- **Licensing Management**: Secure and manage application access efficiently through ongoing development of a 
+- **Job Scheduling & Event-Driven Execution**: Configure scheduled tasks or trigger jobs based on specific events to automate and optimize operations.
+- **Single Sign-On (SSO) Support**: Provide a seamless authentication experience across multiple applications for users.
 
 ### For Developers
 
-- **Abstracted SAP APIs** - Simplify integration with SAP by abstracting standard DI and SL APIs, allowing a greater focus on business logic.
-
-- **Rapid Development with .NET 8** - Enjoy faster development cycles with a streamlined codebase, boosting productivity without compromising quality.
-
-- **Custom API Development** - Create custom OData/API controllers with built-in authentication features, supporting a flexible and secure development process.
-
-- **Unified Business Logic Access** - Automatically integrate user-defined objects into both .NET Core assemblies and OData/CRUD controllers, enabling compatibility with third-party applications.
-
-- **Complete SAP UI5 Framework Support** - Leverage TypeScript and built-in libraries to develop SAP UI5 applications seamlessly, adhering to modern web standards.
-
-- **Extensions of Extensions** - Build extensions that depend on existing plugins, allowing modular development and fostering a dynamic, interconnected ecosystem.
+- **Abstracted SAP APIs**: Simplify integration with SAP by abstracting standard DI and SL APIs, allowing a greater focus on business logic.
+- **Rapid Development with .NET 8**: Enjoy faster development cycles with a streamlined codebase, boosting productivity without compromising quality.
+- **Custom API Development**: Create custom OData/API controllers with built-in authentication features, supporting a flexible and secure development process.
+- **Unified Business Logic Access**: Automatically integrate user-defined objects into both .NET Core assemblies and OData/CRUD controllers, enabling compatibility with third-party applications.
+- **Complete SAP UI5 Framework Support**: Leverage TypeScript and built-in libraries to develop SAP UI5 applications seamlessly, adhering to modern web standards.
+- **Extensions of Extensions**: Build extensions that depend on existing plugins, allowing modular development and fostering a dynamic, interconnected ecosystem.
 
 ## Why CompuTec AppEngine?
 
-CompuTec AppEngine is more than a tool—it’s a complete ecosystem that bridges the gap between management and development. It ensures that administrators have full control over application and plugin lifecycles while equipping developers with the flexibility to innovate and extend capabilities. With features like unified logging, abstracted SAP APIs, and seamless SSO, CompuTec AppEngine offers a comprehensive solution tailored for modern business needs.
+CompuTec AppEngine is more than a tool - it’s a complete ecosystem that bridges the gap between management and development. It ensures that administrators have full control over application and plugin lifecycles while equipping developers with the flexibility to innovate and extend capabilities. With features like unified logging, abstracted SAP APIs, and seamless SSO, CompuTec AppEngine offers a comprehensive solution tailored for modern business needs.
 
 Embrace the power of **CompuTec AppEngine** and the **Computec.Core2 Ecosystem** to elevate your organization's application management and development to new heights. Whether you're managing plugins or crafting advanced extensions, CompuTec AppEngine ensures a unified, scalable, and efficient experience for all.
 

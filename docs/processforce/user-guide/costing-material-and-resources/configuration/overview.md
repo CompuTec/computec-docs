@@ -71,7 +71,7 @@ Define and manage cost categories for streamlined cost calculations.
 
 Assign fixed and variable overhead rates by Item Group. When a new item is created as part of an Item Group, these values will be automatically added to the corresponding fields within the Item Costing form.
 
-![Overheads](./media/overview/overheads.png)
+![Overheads](./media/overview/overheads.webp)
 
 Default fixed and overhead values are automatically added to the item costing record for all defined cost categories, except 000
 

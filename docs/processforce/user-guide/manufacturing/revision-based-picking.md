@@ -13,8 +13,10 @@ Managing inventory efficiently is critical in manufacturing, and Revision-Based 
 To enable this functionality, navigate to:
 
 :::info Path
-    General Setting → ProcessForce → Inventory → Revision based picking (manual and backflushing)
+    Administration → System Initialization → General Settings → ProcessForce tab → Inventory tab → Batch and Serial
 :::
+
+![Batch and Serial](./media/revision-based-picking/batch-serial.webp)
 
 ## Item Details
 

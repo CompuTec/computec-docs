@@ -15,10 +15,10 @@ To enable automatic QC document creation, follow these steps:
 1. **Check the related checkbox in General Settings**: Navigate to the General Settings and check the option for automatic QC test document creation.
 
         :::info Path
-                Administration → System Initialization → General Settings → ProcessForce tab → QC tab → Auto Create QC Test Documents checkbox
+                Administration → System Initialization → General Settings → ProcessForce tab → QC tab
         :::
 
-        ![Automatic Creation of Quality Control Documents](./media/automatic-creation-of-quality-control-documents/auto-create-checkbox.jpg)
+        ![Automatic Creation of Quality Control Documents](./media/automatic-creation-of-quality-control-documents/auto-create-checkbox.webp)
 
 2. **Create a Counter Scheme**: Define a Counter Scheme to determine the frequency of QC document creation.
 
@@ -50,11 +50,11 @@ Create a Counter Scheme with a specific name and code. For instance, you can con
 
 3. In the QC Test/QC Pool Pr. tab, configure the system to automatically create tests based on the defined frequency:
 
-        ![Quality Control](./media/automatic-creation-of-quality-control-documents/auto-create-use-frequency.jpg)
+        ![Quality Control](./media/automatic-creation-of-quality-control-documents/auto-create-use-frequency.webp)
 
 4. Specify the transaction types that trigger the creation of QC Test documents:
 
-        ![Quality Control](./media/automatic-creation-of-quality-control-documents/test-protocol-transactions.jpg)
+        ![Quality Control](./media/automatic-creation-of-quality-control-documents/test-protocol-transactions.webp)
 
 **Creating QC Tests for Business Partners**
 
@@ -74,7 +74,7 @@ To tailor QC tests for specific business partners:
                 Administration → Setup → Quality Control → BP QC Qualifications
         :::
 
-        ![Quality Control](./media/automatic-creation-of-quality-control-documents/business-partner-qc-qualifications.jpg)
+        ![Quality Control](./media/automatic-creation-of-quality-control-documents/business-partner-qc-qualifications.webp)
 
 3. Connect the business partner qualifications to the relevant test protocols.
 
