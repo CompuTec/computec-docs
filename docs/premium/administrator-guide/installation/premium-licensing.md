@@ -25,7 +25,7 @@ A license file is provided to customers who have paid an annual maintenance fee.
 ### License Eligibility
 
 - Customers with an active annual maintenance payment receive a license file automatically.
-- Customers without an active maintenance plan (or those using other CompuTec products) must request an individual license offer based on the number of users.
+- Customers without an active maintenance plan (or those using other CompuTec solutions) must request an individual license offer based on the number of users.
 
 ### How to Request a License?
 

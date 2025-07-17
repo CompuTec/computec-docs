@@ -4,29 +4,34 @@ sidebar_position: 3
 
 # Revision and Routing Costing Defaults
 
-Setting costing defaults for specific Revisions and Routings ensures accurate cost calculations tailored to the unique configurations of each product. This guide explains how to define costing defaults at both the revision and routing levels.
+Defining costing defaults for specific **Revisions** and **Routings** ensures accurate and product-specific cost calculations. This guide explains how to define costing defaults at both the revision and routing levels.
+
+---
 
 ## Revisions
 
-ProcessForce can cost a product at a revision level.
+CompuTec ProcessForce allows you to calculate costs at the **revision level** of an item.
 
-Within the Item Details form:
+Within the **Item Details** form:
 
-1. Select the desired Revision for cost calculation.
-2. Check the field "Is Costing Default" to designate it as the default for costing.
+1. Select the appropriate Revision to be used for costing.
+2. Enable the **"Is Costing Default"** checkbox to set it as the default revision for cost calculation.
 
-![Costing Default Revision](./media/revision-and-routing-costing-defaults/costing-defualt-revision.png)
+![Costing Default Revision](./media/revision-and-routing-costing-defaults/costing-defualt-revision.webp)
 
-Click [here](../item-details/overview.md) to find out more about Item Details.
+➡️ Learn more about Item Details [Item Details](../item-details/overview.md).
 
 ## Production Process
 
-- Multiple routes can be defined for a product.
-- To include resource costs within a route, select the routing and check it as the default for cost calculation.
-- Even for a single route, it is still required to check the field.
+Each product can have **multiple production routings**. To include resource-related costs in the calculation:
 
-![Production Process Default Costing](./media/revision-and-routing-costing-defaults/production-process-costing-default.png)
+- Open the relevant **Routing** in the Production Process form.
+- Check it as the **default** for cost calculation.
 
-Click [here](../formulations-and-bill-of-materials/production-process/overview.md) to find out more about Production Process.
+>**Note**: Even if there's only a single routing defined, this checkbox must still be selected for the cost to be included.
+
+![Production Process Default Costing](./media/revision-and-routing-costing-defaults/production-process-costing-default.webp)
+
+➡️ Learn more about [Production Process](../formulations-and-bill-of-materials/production-process/overview.md).
 
 ---

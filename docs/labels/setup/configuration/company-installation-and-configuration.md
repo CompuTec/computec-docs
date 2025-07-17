@@ -119,7 +119,7 @@ These rules are called event triggers. To add a new one:
 5. Click "Update" to save changes.
 
 :::note
-    Event Triggers are considered in CompuTec products: SAP CompuTec Labels add-on, CompuTec WMS, CompuTec PDC, and ProcessForce. You can print only from objects defined in this table in these products.
+    Event Triggers are considered in CompuTec solutions: SAP CompuTec Labels add-on, CompuTec WMS, CompuTec PDC, and ProcessForce. You can print only from objects defined in this table in these solutions.
 :::
 
 ---

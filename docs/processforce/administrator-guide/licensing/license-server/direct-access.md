@@ -22,13 +22,13 @@ Clicking the shortcut will place the CT icon in the Windows notification area:
 
 ![CT shortcut](./media/direct-access/CT-shortcut.webp)
 
-Opening the Manager displays the COMPUTEC SERVICE MANAGER window, where you can start, stop, or restart a selected CompuTec service:To configure a specific service, click the Settings button. The Terminal Licensing section allows you to manage licenses for CompuTec PDC and CompuTec WMS products.
+Opening the Manager displays the COMPUTEC SERVICE MANAGER window, where you can start, stop, or restart a selected CompuTec service:To configure a specific service, click the Settings button. The Terminal Licensing section allows you to manage licenses for CompuTec PDC and CompuTec WMS solutions.
 
 ![CT Service Manager](./media/direct-access/CT-Service-Manager_1.webp)
 
 Configuring the settings of a selected service is possible after clicking the Settings button.
 
-Terminal Licensing is a section for managing the license of CompuTec PDC / CompuTec WMS products.
+Terminal Licensing is a section for managing the license of CompuTec PDC / CompuTec WMS solutions.
 
 ## CompuTec License Server Settings
 

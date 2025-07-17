@@ -4,38 +4,50 @@ sidebar_position: 1
 
 # Overview
 
-This guide provides comprehensive details to ensure the costing function operates correctly in ProcessForce. Both SAP Business One and ProcessForce settings must be properly configured for accurate and efficient costing calculations. The sections below outline the key configuration steps, paths, and considerations.
+This guide walks you through the essential setup steps to ensure accurate and efficient costing in **SAP Business One** with **CompuTec ProcessForce**. Both platforms need to be correctly configured for accurate and efficient costing calculations. The sections below outline the key configuration steps, paths, and considerations.
 
 ---
 
-## SAP Business One Setting
+## 1. SAP Business One Settings
+
+These foundational settings define how inventory and costing are managed at the system level, ensuring consistency across warehouses, documents, and item records.
 
 ### Company Details
+
+To access Company Details, navigate to:
 
 :::info Path
     Administration → System Initialization → Company Details
 :::
 
-- **Use Perpetual Inventory**: this field can be checked or unchecked based on regional practices. For instance, it is checked in the UK and unchecked in Italy.
-- **Manage Item Cost per Warehouse**: it is optional, but should be decided before recreating costings.
+- **Use Perpetual Inventory**: This field can be checked or unchecked based on regional practices. For instance, it is checked in the UK and unchecked in Italy.
+- **Manage Item Cost per Warehouse**: Optional, but must be decided before costing records are created or recalculated.
 
 ![company Details](./media/overview/company-details.webp)
 
 ### Document Settings
 
+To access Document Settings, navigate to:
+
 :::info Path
     Administration → System Initialization → Document Settings
 :::
 
-In a Standard Costing environment, WIP (Work-in-Progress) variances arise from differences between planned and actual quantities or costs of finished products. To accommodate this - ensure Parent Item WIP Accounts are checked.
+In a Standard Costing environment, WIP (Work-in-Progress) variances arise from differences between planned and actual quantities or costs of finished products. To accommodate this - ensure **Parent Item WIP Accounts** are checked.
 
 ### Warehouses
 
-- **New Warehouses**: automatically added to the Item Master record based on the SAP Business One configuration. In turn, each warehouse is added to each Item Costing record.
-- **Deleted Warehouses**: automatically removed from each Item Costing record.
-- **Drop Ship Warehouses**: excluded from Item Costing records.
+Warehouse configuration directly impacts how costing records behave:
 
-## ProcessForce Settings
+- **New Warehouses**: Automatically added to the Item Master record based on the SAP Business One configuration. In turn, each warehouse is added to each Item Costing record.
+- **Deleted Warehouses**: Automatically removed from each Item Costing record.
+- **Drop Ship Warehouses**: Excluded from Item Costing records.
+
+## 2. CompuTec ProcessForce Settings
+
+These configurations extend costing functionality with detailed control over cost categories, overhead rates, and restore actions, enabling precise and automated cost calculations.
+
+To access Costing tab, navigate to:
 
 :::info Path
     Administration → System Initialization → General Settings → ProcessForce tab → Costing tab
@@ -43,17 +55,26 @@ In a Standard Costing environment, WIP (Work-in-Progress) variances arise from d
 
 ### Costing Price Determination
 
-Refer to [Costing Price Determination](./costing-price-determination.md) for more information.
+You can define how item costing prices should be pulled (planned, actual, average, etc.).  
+
+➡️ Refer to [Costing Price Determination](./costing-price-determination.md) for more information.
 
 ### Restore Functions
 
-If items were added to the Item Master Data form when ProcessForce was not running, select Restore Item Costing and Resource Costing to populate the corresponding costing objects.
+If items or resources were created **before CompuTec ProcessForce was installed**, use the restore functions:
 
-![Restore Functions](./media/overview/restore-costing.png)
+- **Restore Item Costing**
+- **Restore Resource Costing**
 
-Click [here](../../system-initialization/data-restore.md) to find out more about Restore Function.
+This will populate missing costing data for previously added records.
+
+![Restore Functions](./media/overview/restore-costing.webp)
+
+➡️ Learn more about [Data Restore](../../system-initialization/data-restore.md).
 
 ### Cost Categories
+
+To access Cost Categories, navigate to:
 
 :::info Path
     Administration → Setup → Financials → Cost Categories
@@ -65,6 +86,8 @@ Define and manage cost categories for streamlined cost calculations.
 
 ### Default Overhead Rates
 
+To access Item Groups, navigate to:
+
 :::info Path
     Administration → Setup → Inventory → Item Groups
 :::
@@ -75,7 +98,7 @@ Assign fixed and variable overhead rates by Item Group. When a new item is creat
 
 Default fixed and overhead values are automatically added to the item costing record for all defined cost categories, except 000
 
-![Item Costing Overheads](./media/overview/item-costing-overheads.png)
+![Item Costing Overheads](./media/overview/item-costing-overheads.webp)
 
 ### Changing Default Overhead Values
 
