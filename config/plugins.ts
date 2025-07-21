@@ -4,12 +4,12 @@ import type { PluginConfig } from "@docusaurus/types";
 import type { DocConfig } from "../docs";
 
 export function getDocPlugin(doc: DocConfig): PluginConfig {
-    const versions = doc.currentVersion ? {
+    const versions = doc.version ?? (doc.currentVersion ? {
         current: {
             label: doc.currentVersion,
             badge: true,
         },
-    } : undefined;
+    } : undefined);
 
     return [
         "@docusaurus/plugin-content-docs",

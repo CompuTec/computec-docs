@@ -4,6 +4,7 @@ export interface DocConfig {
 	currentVersion?: string;
 	lastVersion?: string;
     includeCurrentVersion: boolean;
+    version?: any;
 }
 
 export default (production?: boolean) => ([
@@ -43,6 +44,18 @@ export default (production?: boolean) => ([
         currentVersion: "3.0",
 		includeCurrentVersion: true,
 		lastVersion: "current",
+        version: {
+            current: {
+                label: "3.0",
+                badge: true,
+                banner: "none"
+            },
+            "2.0": {
+                label: "2.0",
+                badge: true,
+                banner: "none"
+            }
+        }
     },
     {
         label: "Premium",
