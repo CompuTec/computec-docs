@@ -26,15 +26,13 @@ To enable automatic QC document creation, follow these steps:
                 Administration → Setup → Quality Control → Counter Schemes
         :::
 
-        ![Quality Control](./media/automatic-creation-of-quality-control-documents/counter-scheme.jpg)
-
 ## Usage Example
 
 **Setting the Counter Scheme**:
 
 Create a Counter Scheme with a specific name and code. For instance, you can configure the scheme to generate a QC document every 30 batches.
 
-    ![Quality Control](./media/automatic-creation-of-quality-control-documents/counter-scheme-01.jpg)
+    ![Quality Control](./media/automatic-creation-of-quality-control-documents/counter-scheme.webp)
 
 **Configuring the Test Protocol**:
 
@@ -46,7 +44,7 @@ Create a Counter Scheme with a specific name and code. For instance, you can con
                 Quality Control → Test Protocol
         :::
 
-        ![Quality Control](./media/automatic-creation-of-quality-control-documents/choosing-counter-scheme.jpg)
+        ![Quality Control](./media/automatic-creation-of-quality-control-documents/choosing-counter-scheme.webp)
 
 3. In the QC Test/QC Pool Pr. tab, configure the system to automatically create tests based on the defined frequency:
 
