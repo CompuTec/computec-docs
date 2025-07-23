@@ -44,13 +44,7 @@ The Gantt chart includes a Shortages checkbox in its header, allowing users to t
 
 ## Shortages Report
 
-To access the shortage report:
-
-- Click "Load" in the Gantt Chart Shortages tab.
-- Enter your SAP credentials and the SLD address (License server:port).
-- Review shortages by item and revision.
-
-![Shortage Report](./media/material-shortage/shortage-report.png)
+The Shortages Report helps identify and analyze material shortages across items and revisions, enabling proactive supply planning and decision-making.
 
 ### Configuration
 

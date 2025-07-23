@@ -4,15 +4,15 @@ sidebar_position: 12
 
 # Automatic Creation of Quality Control Documents
 
-Efficient quality control (QC) processes are essential for maintaining product standards and ensuring compliance. To simplify this, you can automate the creation of Quality Control documents based on predefined conditions. This guide outlines the prerequisites, setup, and usage of the automatic QC document creation feature.
+Efficient Quality Control (QC) processes are essential for maintaining product standards and ensuring compliance. To simplify this, you can automate the creation of Quality Control documents based on predefined conditions. This guide outlines the prerequisites, setup, and usage of the automatic QC document creation feature.
 
 ---
 
 ## Prerequisites
 
-To enable automatic QC document creation, follow these steps:
+To enable automatic Quality Control (QC) document creation, follow these steps:
 
-1. **Check the related checkbox in General Settings**: Navigate to the General Settings and check the option for automatic QC test document creation.
+1. **Check the related checkbox in General Settings**: Navigate to the General Settings and check the option for automatic Quality Control (QC) test document creation.
 
         :::info Path
                 Administration → System Initialization → General Settings → ProcessForce tab → QC tab
@@ -58,15 +58,15 @@ Create a Counter Scheme with a specific name and code. For instance, you can con
 
 To tailor QC tests for specific business partners:
 
-1. Create qualifications in the Test Protocol section.
+1. Create **Qualifications** in the Test Protocol section.
 
         :::info Path
                 Quality Control → Test Protocol
         :::
 
-        ![Quality Control](./media/automatic-creation-of-quality-control-documents/qc-qualifications.jpg)
+        ![Quality Control](./media/automatic-creation-of-quality-control-documents/qc-qualifications.webp)
 
-2. Assign the defined qualifications to specific business partners.
+2. Assign the defined qualifications to specific **Business Partners**.
 
         :::info Path
                 Administration → Setup → Quality Control → BP QC Qualifications
@@ -74,8 +74,8 @@ To tailor QC tests for specific business partners:
 
         ![Quality Control](./media/automatic-creation-of-quality-control-documents/business-partner-qc-qualifications.webp)
 
-3. Connect the business partner qualifications to the relevant test protocols.
+3. Connect the business partner qualifications to the relevant **Test Protocols**.
 
-        ![Quality Control](./media/automatic-creation-of-quality-control-documents/test-protocol-qc-qualification.jpg)
+        ![Quality Control](./media/automatic-creation-of-quality-control-documents/test-protocol-qc-qualification.webp)
 
 ---

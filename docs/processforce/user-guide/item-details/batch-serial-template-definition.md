@@ -4,7 +4,9 @@ sidebar_position: 3
 
 # Batch Template, Serial Template Definition
 
-You can configure the default format of the batch number generator to create batch and serial numbers during the receipt of Purchase and Production Orders. This setup enhances traceability and simplifies the batch and serial management process. The number-generating template can include essential details such as date, time, item number, or prefix.
+Batch and Serial Templates define the default format used to generate unique batch or serial numbers during the receipt of Purchase Orders and Production Orders. These templates help streamline tracking, ensure traceability, and simplify batch/serial number management across the system. The number-generating template can include essential details such as date, time, item number, or prefix.
+
+To access Batch Template Definition, navigate to:
 
 :::note Path
     Administration → Setup → Inventory → Batch Template Definition
@@ -26,21 +28,33 @@ The Batch Template form is used to define the Batch number for products that are
 
 Batch templates (as well as Serial templates) can be set on three different levels:
 
-- [general](#general-level) for all Batch-traced Items
-- [for Item Group](#item-group-level)
-- [for a specific Item](#item-level)
+- [general](#general-level): for all Batch-traced Items
+- [for Item Group](#item-group-level): applied to all items within a specific group
+- [for a specific Item](#item-level): defined for an individual item
 
-If a Template is not specified for a specific level, a Template from a level above is used.
+If a template is not specified at a lower level, the system will inherit the template from the next higher level in the hierarchy.
 
 ### General level
 
-:::note
+To access Batch and Serial, navigate to:
+
+:::info Path
     Administration → System Initialization → General Settings → ProcessForce tab → Inventory tab → Batch and Serial
 :::
 
 ![General Settings Template](./media/batch-serial-template-definition/general-settings-templates.webp)
 
-You can determine when a Batch number is created based on the status of the Manufacturing Order. To do this, check the "Batch Number Generated at MOR" checkbox and select one of the available options. Depending on the chosen status, the Batch will be generated either when the Manufacturing Order is created with the specified status or upon a status change.
+At the general level, you can control when and how batch numbers are generated in relation to the Manufacturing Order (MOR) process.
+
+To enable automatic batch number creation:
+
+- Check the “Batch Number Generated at MOR” option.
+- Select the desired triggering status from the dropdown list.
+
+The system will then generate a batch number either:
+
+- When the Manufacturing Order is created with the specified status, or
+- Upon status change to the selected value.
 
 :::caution
     Please remember that when the Batch Number generated at the MOR option is checked, it is impossible to use Classification options on a [Batch Template](#defining-batch-template).
@@ -48,37 +62,51 @@ You can determine when a Batch number is created based on the status of the Manu
 
 ## Item Group level
 
+To access Item Group level, navigate to:
+
 :::info path
     Administration → Setup → Inventory → Item Groups → ProcessForce tab
 :::
 
-- When checkboxes are unchecked, it is possible to set a Batch or Serial template for an Item Group.
-- When checkboxes are checked, General Settings Batch or Serial template is used.
+At the Item Group level, you can define default Batch or Serial templates that apply to all items within the group, depending on the inheritance settings.
 
-![Item Groups](./media/batch-serial-template-definition/item-groups.webp)
+- If the inheritance checkboxes are unchecked, you can assign a specific Batch or Serial template directly to the Item Group.
+- If the checkboxes are checked, the system will use the Batch or Serial template defined in General Settings instead.
+
+    ![Item Groups](./media/batch-serial-template-definition/item-groups.webp)
 
 ## Item Level
+
+To access Batch Details tab, navigate to:
 
 :::info
     Inventory → Item Details → Batch Details tab
 :::
 
-- If checkboxes are unchecked, a batch or serial template can be set for an item.
-- Item Group Settings Batch or Serial template is used when checkboxes are checked.
+At the item level, you can control whether a batch or serial template is inherited from the item group or defined individually for the item.
 
-![Item Group Inherit](./media/batch-serial-template-definition/item-details-batches-inherit.webp)
+- If the inheritance checkboxes are unchecked, you can assign a custom batch or serial template directly to the item.
+- If the checkboxes are checked, the item will inherit the batch or serial template defined at the Item Group level.
+
+    ![Item Group Inherit](./media/batch-serial-template-definition/item-details-batches-inherit.webp)
 
 ## Defining Batch Template
+
+To access Batch Template, navigate to:
 
 :::info Path
     Administration → Setup → Inventory → Batch Template Definition
 :::
 
-It is possible to define a Batch Template as a distribution number or a Batch Template assigned for suppliers. To do that, pick the desired category: Dist Number (for distribution Batches) or Suppl Batch (for Supplier Batches) tab.
+It is possible to define a Batch Template as a distribution number or a Batch Template assigned for suppliers. You can assign a batch template to one of two categories:
+    - Dist Number – for distribution batches
+    - Suppl Batch – for supplier-related batches
 
-![Batch Tempate](./media/batch-serial-template-definition/batch-template.webp)
+    ![Batch Tempate](./media/batch-serial-template-definition/batch-template.webp)
 
 It is possible to define a Serial Number Template as a distribution number, a number for manufacturing items, or a Lot Number. To do that, pick the desired category (Dist Number, Manufacturing, or Lot Number tab).
+
+To access Serial Template Definition, navigate to:
 
 :::info Path
     Administration → Setup → Inventory → Serial Template Definition
@@ -94,7 +122,7 @@ When adding a new Batch/Serial template, the date and counter fields have the fo
 - Maximum batch number = 32 characters, as per SAP Business One.
 
 :::caution
-    Please remember that the Formula field is planned for 255 signs. More extended formulas will not work correctly. You can use your database procedures and scalar-valued functions.
+    The Formula field supports a maximum of 255 characters. Longer formulas may not function as expected. For complex logic, consider using database procedures or scalar-valued functions instead.
 :::
 
 ![Batch Graph 2](./media/batch-serial-template-definition/batch-graf-2.webp)
@@ -108,6 +136,8 @@ When adding a new Batch/Serial template, the date and counter fields have the fo
 
 ### Example 1: Date and Counter
 
+To generate a batch number that includes the current date, a separator (such as a dash), and an incremental counter:
+
 - Select the date function
 - To string another element of data enter '+' sign for MS SQL version and '||' for HANA version
 - To enter text or other symbols, enter the value between ‘ and ', e.g. '-'
@@ -118,6 +148,8 @@ When adding a new Batch/Serial template, the date and counter fields have the fo
 ![Batch Template: Counter, Date](./media/batch-serial-template-definition/batch-template-date-counter.webp)
 
 ### Example 2: Date and Time
+
+To create a batch number that includes the current date, time (hours and minutes), and a counter, follow these steps:
 
 - Select the date function
 - To string another element of data enter '+' sign for MS SQL version and '||' for HANA version
@@ -142,13 +174,14 @@ When adding a new Batch/Serial template, the date and counter fields have the fo
 
 ### Example 4: Embedding Item number
 
-- To add the two first letters of the Item number:
-  - enter left,
-  - followed by (
-  - select the item code function
-  - followed by a ,
-  - followed by the number of item code digits
-  - followed by )
+To include the first two letters of the item number in your batch name, follow these steps:
+
+- enter left,
+- followed by (
+- select the item code function
+- followed by a ,
+- followed by the number of item code digits
+- followed by )
 - To string another element of data enter the + sign for MS SQL version and || for HANA version
 - Select the date function
 - To string another element of data enter the + sign for MS SQL version and || for HANA version
@@ -159,6 +192,8 @@ When adding a new Batch/Serial template, the date and counter fields have the fo
 ![Item Number](./media/batch-serial-template-definition/batch-template-item-number.webp)
 
 ### Example 5: Incremental Batch Number starting with five zeros, and a maximum length of 6
+
+To configure a batch number that includes an incremental counter starting with five leading zeros, follow these steps:
 
 - Select the date function
 - To string another element of data enter the + sign for MS SQL version and || for HANA version
@@ -180,7 +215,7 @@ To see related video content click [here](https://www.youtube.com/playlist?list=
 
 ### Example 6: Using a specific value from a document in the Batch generation template
 
-You can use others than specified in the Batch Template form fields to be incorporated in a Batch template. In this example, a Warehouse value is used. Batch template generation is unsuitable, but we can set User-Defined Values for the Classification field to incorporate a Warehouse value into a Batch name.
+Sometimes, you may want to include values in your batch number that aren’t directly supported in the Batch Template field list - such as a warehouse code. Although batch template formulas can’t pull such values directly, SAP Business One offers a workaround by using User-Defined Values (UDVs) to dynamically populate the Classification field with data like the warehouse code. This allows you to indirectly integrate the value into your batch naming logic.
 
 1. Create a new query in Query Generator (Tools → Queries → Query Generator), and type in $[PDN1,WhsCode] (the name of the warehouse field) in the Select field.
 
@@ -210,7 +245,7 @@ You can use others than specified in the Batch Template form fields to be incorp
 
 ### Example 7: Current date + shelf interval
 
-The following formula allows for generating a Batch name with the current date + shelf lifetime added.
+In manufacturing and inventory management, it’s common to generate batch numbers that reflect the product’s expiration or shelf life. This example demonstrates how to calculate a batch name by adding the shelf life interval to the current date dynamically, using SQL in SAP HANA.
 
 #### SAP HANA Studio – test
 
@@ -233,9 +268,16 @@ The result of the formula has to be a text value (NVARCHAR type, 36 characters; 
 
 ## Defining Serial Template
 
-Serial Template defining process looks the same as the Batch Template defining process shown in the examples above.
+A Serial Template defines how serial numbers are generated for manufactured items. Much like Batch Templates, Serial Templates use stored procedures to create structured serial number formats, incorporating fields like item codes, dates, and manufacturing details.
+
+Serial Templates are critical in production environments where traceability, compliance, and structured identification of products are required.
 
 ### Generate serial numbers using custom procedure
+
+To define a custom serial template:
+
+- Ensure the procedure accepts the required parameters in the correct order and type.
+- Verify that the procedure returns the expected output columns.
 
 #### <u>Requirements</u>
 
@@ -247,6 +289,6 @@ Serial Template defining process looks the same as the Batch Template defining p
 
 "SerialNumber" nvarchar(36) , "LotNumber" nvarchar(36), "ManufacturingSerialNumber" nvarchar(36)
 
-![Serial Template](./media/batch-serial-template-definition/serial-template.png)
+![Serial Template](./media/batch-serial-template-definition/serial-template.webp)
 
 ---

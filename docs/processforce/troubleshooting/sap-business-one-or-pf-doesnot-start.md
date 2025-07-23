@@ -37,9 +37,9 @@ WHERE T0.AStatus = 'Y'
 
 If the above query returns any results, log in as a super-user and set the add-ons to start manually.
 
-## Additional code in the SBO_SP_TransactionNotification and SBO_SP_PostTransacionNotice
+## Additional code in the SBO_SP_TransactionNotification and SBO_SP_PostTransactionNotice
 
-Comment the additional code in the *SBO_SP_TransactionNotification*  and *SBO_SP_PostTransacionNotice* (If any). Kindly refer to the SAP Note [2079411](https://me.sap.com/notes/2079411) for more details.
+Comment the additional code in the *SBO_SP_TransactionNotification*  and *SBO_SP_PostTransactionNotice* (If any). Kindly refer to the SAP Note [2079411](https://me.sap.com/notes/2079411) for more details.
 
 ## Windows user lacks power or admin privileges on workstation
 
@@ -93,8 +93,6 @@ Reinstall the SAP Business One client on the affected workstation. Please refer 
 ## Reinstall the SAP Business One client on the affected workstation
 
 Reinstall the SAP Business One client on the affected workstation. Please refer to SAP Note [1989534](https://me.sap.com/notes/1989534) for details.
-
-## Reinstall ProcessForce correctly
 
 How to reinstall ProcessForce add-on correctly (in case of any old ProcessForce API library is still stored in the system):
 
