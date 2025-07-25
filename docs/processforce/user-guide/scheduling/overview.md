@@ -4,40 +4,53 @@ sidebar_position: 1
 
 # Overview
 
-The ProcessForce scheduling solution enables effective management of Manufacturing Orders (MOs) within the plant. It facilitates production planning by accounting for factors such as resource availability, time constraints, and overlapping processes. The solution features an interactive and flexible Gantt chart that allows users to easily modify schedules as needed. Additionally, advanced filtering options—such as MO number, dates, planned start and end times, distribution rules, projects, Sales Order numbers, or Customer Codes—allow users to display specific data tailored to their requirements.
+CompuTec ProcessForce scheduling solution supports efficient management and real-time planning of Manufacturing Orders (MOs) through a visual and interactive Gantt chart. This system considers various production constraints - including resource availability, calendar setups, and overlapping operations - making it easier for planners to optimize schedules and respond dynamically to shop floor realities.
 
 ---
 
-## Master Data
+## What is the Scheduling Module?
+
+The scheduling module in CompuTec ProcessForce helps manufacturers coordinate production activities by offering a centralized and interactive tool to:
+
+- Visualize Manufacturing Orders across time and resources.
+- Identify resource bottlenecks or conflicts.
+- Adjust start/end times dynamically.
+- Filter and sort based on project, customer, sales order, MO number, and more.
+
+It serves as the central planning cockpit to monitor progress and modify workloads efficiently.
+
+---
+
+## Key Components of the Scheduling Setup
 
 ### Resources
 
-Resources are the backbone of production scheduling. Setting up and managing resources ensures efficient utilization within the plant.
+Resources are the backbone of production scheduling. Resources represent machines, labor, or work centers involved in production. Accurate resource definitions are crucial for effective scheduling and workload distribution.  Setting up and managing resources ensures efficient utilization within the plant.
 
-Click [here](../routings/resources.md) to find out more about resources and how to set them.
+![Resources](./media/overview/resource-main.webp)
 
-To view related videos on Resources, click [here](https://www.youtube.com/playlist?list=PLtT6kgaz5YneralBjyvyCSYXbTT0QRHYx).
+➡️ [Learn how to define and manage resources](../routings/resources.md)
 
-![Resources](./media/overview/resource-main.png)
+➡️ [Watch video tutorial](https://www.youtube.com/playlist?list=PLtT6kgaz5YneralBjyvyCSYXbTT0QRHYx)
 
 ### Calendars
 
-Properly configured Resource Calendars ensure accurate planning by considering working hours, holidays, and availability.
-
-Click [here](./resource-calendar.md)to find out more about setting up Resource Calendars.
-
-To view related videos, click [here](https://www.youtube.com/playlist?list=PLtT6kgaz5YneralBjyvyCSYXbTT0QRHYx).
+Resource calendars define working hours, shift patterns, weekends, and holidays. These directly impact schedule feasibility and capacity planning.
 
 ![Resource Calendar](./media/overview/resource-calendar.png)
 
+➡️ Learn how to [Set up resource calendars](./resource-calendar.md)
+
+➡️ [Watch video tutorial](https://www.youtube.com/playlist?list=PLtT6kgaz5YneralBjyvyCSYXbTT0QRHYx)
+
 ### Tooling
 
-Managing tooling is critical for achieving precise production schedules.
+Tooling resources refer to specific tools or machines that must be available and assigned for a given MO or operation. These need to be defined to prevent conflicts and ensure production precision.
 
-To view additional documentation, click [here](./resource-calendar.md).
+➡️ Explore [tooling configuration](./resource-calendar.md).
 
-![Resource Tooling](./media/overview/resource-tool.png)
+![Resource Tooling](./media/overview/resource-tool.webp)
 
-![Resource Tooling](./media/overview/machine-code.png)
+![Resource Tooling](./media/overview/machine-code.webp)
 
 ---

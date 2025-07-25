@@ -5,34 +5,32 @@ sidebar_position: 1
 # Basic Settings
 
 MRP 2.5 in SAP Business One brings enhanced Material Requirements Planning (MRP) capabilities, enabling businesses to optimize procurement, production, and inventory management. This upgraded version introduces advanced forecasting, improved stock visibility, and flexible procurement settings tailored for efficient resource planning.
-This guide covers the essential basic settings required to activate and configure MRP 2.5, ensuring a streamlined approach to demand forecasting, procurement, and production planning.
+
+MRP 2.5 supports:
+
+- Forecasting at the item and revision level
+- Precise lead time and internal lead time configurations
+- Inventory and order quantity controls
+
+It integrates with CompuTec AppEngine, allowing seamless operation within SAP Business One.
 
 ---
 
-To activate the MRP 2.5 function in the SAP Business One menu, you need to enable CompuTec AppEngine. This integration allows SAP Business One to display CompuTec AppEngine plugins within the application.
+## How-To: Set Up and Configure MRP 2.5
 
-You can access MRP 2.5 in two modes:
+### Step 1: Generate Forecasts Using Forecasts 2.5
 
-- **Form Mode**: works directly inside SAP Business One.
-- **Web Browser Mode**: opens the application in a separate browser window. (Note: Yellow arrows are not functional in this mode.)
-
-  ![Enable](./media/basic-settings/mrp-enable.webp)
-
-Once enabled, the MRP menu will display additional options:
-
-![Menus](./media/basic-settings/mrp-menu.webp)
-
-## Forecasts 2.5
-
-To generate forecasts for MRP 2.5, use Forecast 2.5, which allows defining forecasts per Item/Revision.
+To generate forecasts for MRP 2.5, use Forecasts 2.5, which allows forecast definition per Item/Revision.
 
 ![Forecasts](./media/basic-settings/forecasts-1.webp)
 
-Use the Create Forecast button to quickly add multiple forecast lines based on selection criteria.
+Use the **Create Forecast** button to quickly add multiple forecast lines based on selection criteria.
 
 ![Forecasts](./media/basic-settings/forecasts-2.webp)
 
-## Forecast Consumption in General Settings
+### Step 2: Forecast Consumption in General Settings
+
+Forecast consumption parameters are set in General Settings:
 
 ![General Settings](./media/basic-settings/mrp-general-settings.webp)
 
@@ -43,25 +41,27 @@ The General Settings define default parameters for MRP 2.5.
 
   ![Sales Order](./media/basic-settings/mrp-sales-order.webp)
 
-## Item/Revision Planning Data
+### Step 3: Configure Item/Revision Planning Data
 
 Planning data is defined in the Item Master Data and separately for each Item Revision under Item Details.
 
 ![Item Master Data](./media/basic-settings/mrp-item-master-data.webp)
 
-- **Planning Method**: functions similarly to standard SAP Business One MRP.
-- **Procurement Method**: supports both Make and Buy, working as in standard SAP Business One.
+- **Planning Method**: Functions similarly to standard SAP Business One MRP.
+- **Procurement Method**: Supports both Make and Buy, working as in standard SAP Business One.
 - **Component Warehouse**: Can be determined from the Bill of Materials (BOM) Line or Parent Item Document Line, similar to the standard version.
-- **Order Interval**: choose from predefined intervals or create a custom interval using the Order Interval - Setup window. The system groups recommended orders into defined periods, scheduling them on the first working day within that period.
-- **Checking Rule**: not ready for tests.
-- **Tolerance Days**: not ready for tests
-- **Lead Time (LT)**: enter the number of days from when the item is ordered to when the item is received or produced.
+- **Order Interval**: Choose from predefined intervals or create a custom interval using the Order Interval - Setup window. The system groups recommended orders into defined periods, scheduling them on the first working day within that period.
+- **Checking Rule**: Not ready for tests.
+- **Tolerance Days**: Not ready for tests
+- **Lead Time (LT)**: Enter the number of days from when the item is ordered to when the item is received or produced.
 
-### Example
+#### Example
 
 If the lead time is for three days, the MRP will issue the purchase or production order for the child items with a due date three days before the parent item's due date. In other words, we need three days to produce (Procurement Method = Make) or send the item by the supplier (Procurement Method = Buy).
 
 [**Example: Holidays, Lead Time, and Order Interval in MRP Calculations**](https://help.sap.com/docs/SAP_BUSINESS_ONE/68a2e87fb29941b5bf959a184d9c6727/6593f6fb14cb4f188859a2b0e6ba1e70.html?q=lead%20time)
+
+### Step 4: Configure Internal Lead Time (ILT)
 
 **Internal Lead Time (ILT)** – additional time calculated for documents/recommendations. The calculation depends on the Procurement Method and ILT Scope. For example, internal testing time.
 
@@ -69,8 +69,6 @@ If the lead time is for three days, the MRP will issue the purchase or productio
 
 - For Item with Procurement Method = Buy, ILT can be calculated for Sale document, Purchase document/recommendation, Purchase document/recommendation & Sale documents
 - For Item with Procurement Method = Make, ILT can be calculated for Sale document, Production document/recommendation, Production document/recommendation & Sale documents.
-
-Procurement MethodILT ScopeOutcome1aMakeSaleILT added to Sales document1bMakePurch. / Prod.ILT added to MOR document/recommendation (Supply)1cMakeBothILT added to Sales document and MOR document/recommendation (Secondary Demand)2aBuySaleILT added to Sales document2bBuyPurch. / Prod.ILT added to Purchase document/recommendation2cBuyBothILT added to Sales document and Purchase document/recommendation.
 
 |     | Procurement Method | ILT Scope      | Outcome                                                                        |
 | --- | ------------------ | -------------- | ------------------------------------------------------------------------------ |
@@ -105,10 +103,10 @@ Procurement MethodILT ScopeOutcome1aMakeSaleILT added to Sales document1bMakePur
 
 >**Note**: The sum of Lead Time and Internal Lead Time determines item availability for subsequent activities like production or sale.
 
-**Order Quantity Considerations**:
+### Step 5: Define Order Quantity Rules
 
-- **Order Multiple**: order recommendations are rounded up to the nearest multiple of the defined value.
-- **Minimum Order Qty**: if the recommended quantity is below this threshold, it is adjusted accordingly.
+- **Order Multiple**: Order recommendations are rounded up to the nearest multiple of the defined value.
+- **Minimum Order Qty**: If the recommended quantity is below this threshold, it is adjusted accordingly.
 - **Maximum Order Qty**: When demand exceeds the defined maximum, the system creates multiple recommendations equal to the Maximum Order Quantity. The remainder is adjusted using the Minimum Order Quantity.
 
 >**Note**: Maximum Order Should be used with Minimum Order Quantity.
@@ -144,7 +142,7 @@ Last (11) recommendation with quantity 5 (effect of Minimum Oder Quantity, Rest 
 
 Last (11) recommendation with quantity 6 (effect of Order Multiply, Rest of division < Minimum Order Qty)
 
-## Item/Revision Stock Data
+### Step 6: Configure Item/Revision Stock Data
 
 For batch-managed and serial-numbered items, MRP 2.5 provides enhanced visibility into stock levels. Inventory level parameters can be managed per revision and per item, allowing businesses to maintain precise inventory control.
 

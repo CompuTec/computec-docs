@@ -64,8 +64,6 @@ Yes. CompuTec WMS can operate on bins in the warehouse. However, defining bins i
 
 ### <i>**How do I fix it?**</i>
 
-![Illegal value entered](./media/Illegal_value_entered.webp)
-
 One reason may be a lack of Item Details defined for a specific Item Master Data. Perform the Restore Item Details procedure to fix it. Click [here](../administrator-guide/installation/sap-business-one-settings/item-details-restore.md) to find out more.
 
 ## WMS database not installed
@@ -86,15 +84,15 @@ You probably just installed the application, which is still not set up. Please c
 
 You should request CompuTec Support assistance by posting an issue within the Support WMS space at [support.computec.pl](https://support.computec.pl/projects/SWMS/welcome-guide). To shorten the problem-solving time needed by CompuTec consultants, you should follow the rules for creating an issue you can find [here](../administrator-guide/issue-reporting/overview.md).
 
-## Data is not displayed correctly
+## Complete data is not displayed
 
 ![WMS](./media/wms-decimals-places.webp)
 
 If any data record displayed on a screen is too long, it is 'cut' with the rest represented by '...'. In these cases, you can click and hold the row, and the full name will be displayed:
 
-![Storage Info](./media/CutIndex.webp)
+![Storage Info](./media/CutIndex.webp) ![Storage Info](./media/CutQuantity.webp)
 
-![Storage Info](./media/CutQuantity.webp)
+>**Note**: This behaviour is not seen in the new WMS User Interface
 
 ## Cannot Install CompuTec WMS objects to a database
 
