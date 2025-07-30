@@ -46,7 +46,7 @@ To ensure standardization, a Property Reference Library can be created. This lib
 
 ![Property Reference](./media/item-properties/property-reference-library.webp)
 
-## Propery Assigning
+## Property Assigning
 
 ### Item Details
 
