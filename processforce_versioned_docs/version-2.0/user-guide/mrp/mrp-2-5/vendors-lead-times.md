@@ -64,7 +64,7 @@ Each vendor can have several shipping types and addresses, but only one of each 
 When generating MRP recommendations, the system applies lead time rules in the following order:
 
 1. At first, MRP 2.5 will try to find a rule with a match of all three components of the rule to these defined as default: Vendor(default) & Shipping Type(default) & Shipping Address(default).
-2. If MRP 2.5 does not not find the above combination of Vendor(default) & Shipping Type(default) & Shipping Address(default), then we will try to find a match to Vendor(default) & Shipping Type(default).
+2. If MRP 2.5 does not find the above combination of Vendor(default) & Shipping Type(default) & Shipping Address(default), then it will try to find a match to Vendor(default) & Shipping Type(default).
 3. If MRP 2.5 does not find the above two combinations (pt. 1 & pt.2), then it will try to find a match to Vendor(default).
 4. If MRP 2.5 **does not find any of the above**, then it will use the Lead Time from Item Master Data (Item Details for revision).
 
