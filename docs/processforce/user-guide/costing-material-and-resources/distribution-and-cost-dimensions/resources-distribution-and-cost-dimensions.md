@@ -11,7 +11,7 @@ Managing resources and their associated costs is a crucial aspect of maintaining
 On the Resource form under the Accounting tab, users can select Cost Centers and Projects. The number of dimension fields displayed in CompuTec ProcessForce forms within SAP Business One is determined by the number of Cost Centers enabled in the SAP Business One General Settings.
 >Note: The Resource Accounting combo-box, has been moved to this tab for better accessibility
 
-    ![Distribution and Cost Dimensions](./media/resources-distribution-and-cost-dimensions/resource-details.png)
+    ![Distribution and Cost Dimensions](./media/resources-distribution-and-cost-dimensions/resource-details.webp)
 
 ## Operation Form
 
@@ -66,6 +66,6 @@ When a Time Booking or Time Correction document is saved, the associated Cost Ce
 - Cost centers are applied only to Sales and Expenditure accounts.
 - Projects are applied to all account types.
 
-![Distribution and Cost Dimensions](./media/resources-distribution-and-cost-dimensions/chart-of-accounts.png)
+![Distribution and Cost Dimensions](./media/resources-distribution-and-cost-dimensions/chart-of-accounts.webp)
 
 ---

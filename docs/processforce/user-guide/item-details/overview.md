@@ -16,6 +16,8 @@ To access Item Details, navigate to:
     Inventory → Item Details
 :::
 
+![Item Details](./media/overview/item-details.webp)
+
 ---
 
 ## Introduction
