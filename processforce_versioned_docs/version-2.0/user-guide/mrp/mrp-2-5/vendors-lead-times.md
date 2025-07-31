@@ -6,60 +6,73 @@ sidebar_position: 2
 
 Effective management of vendor lead times is crucial for optimizing procurement and ensuring smooth production planning. In MRP 2.5, vendor lead times can be defined with varying levels of accuracy, considering vendor defaults, shipping types, and shipping addresses. This article outlines how vendor lead times are determined, the hierarchy of rules applied, and the role of internal vendor lead times in material planning.
 
----
-
 ![Main Menu](./media/vendors-lead-times/mrp-main-menu.webp)
 
 ![Main Menu](./media/vendors-lead-times/mrp-main-menu-2.webp)
 
-Vendor lead times can be differentiated into three levels of precision:
+---
+
+## Overview of Lead Time Precision Levels
+
+MRP 2.5 allows vendor lead times to be defined at multiple levels, which are applied in a prioritized order:
 
 1. Vendor(default) & Shipping Type(default) & Shipping Address(default).
 2. Vendor(default) & Shipping Type(default).
 3. Vendor(default).
 
+This hierarchy ensures that MRP recommendations are based on the most granular available data, improving the accuracy of delivery estimates.
+
+---
+
 ## Default Vendor
 
-To apply vendor lead times correctly, a default vendor must be assigned in the Item Master Data under the Purchasing tab. Only one vendor from the list of preferred vendors can be selected as the default.
+A **default vendor** must be selected in the **Item Master Data** under the **Purchasing** tab to apply vendor-specific lead times.
+>**Note**:  Only one vendor from the preferred vendor list can be assigned as the default.
 
 **Key Considerations**
 
 If the default Vendor is not defined in Item Master Data, then:
 
-1. The first vendor in the database will be proposed for recommendations.
-2. Lead time will be taken from Item Master Data, and vendor-specific lead time rules will not be considered.Lead Time is taken from Item Master Data (Item Details for revisions). The rules for Vendor Lead Time are not considered in calculations.
+1. MRP will use the **first vendor in the database** for recommendations.
+2. Lead time will be taken from **Item Master Data** (under *Item Details* for revisions), and vendor-specific lead time rules will not be considered. The rules for Vendor Lead Time are not considered in calculations.
 
     ![Lead Time](./media/vendors-lead-times/mrp-main-menu-3.webp)
-3. To define a default vendor, enable the Split purchase documents between vendors option in General Settings > ProcessForce > MRP.
+3. To define a default vendor, enable the "Duplicate purchase documents for item vendors" option in:
+    :::info Path
+    Administration → System Initialization → General Settings → ProcessForce tab → MRP
+    :::
 
     ![Menu](./media/vendors-lead-times/mrp-main-menu-4.webp)
 
-## Shipping Type
+---
 
-A vendor may have multiple shipping types, but only one can be set as the default in BP Master Data.
+## Defining Shipping Types and Addresses
+
+Each vendor can have several shipping types and addresses, but only one of each can be marked as default:
+
+- **Shipping Type**: Defined in Business Partner Master Data.
+- **Shipping Address (Ship To)**: Also set in Business Partner Master Data.
 
   ![Menu](./media/vendors-lead-times/mrp-main-menu-5.webp)
 
-## Shipping Address
-
-Vendors can have multiple addresses (Ship To locations), but only one can be marked as the default.
-
   ![Menu](./media/vendors-lead-times/mrp-main-menu-6.webp)
 
-## Rules
+---
 
-When the recommendation is prepared, MRP 2.5 will seek the most suited rule with the value of Lead Time > 0.
+## Vendor Lead Time Rule Hierarchy
 
-1. At first, we will try to find a rule with a match of all three components of the rule to these defined as default: Vendor(default) & Shipping Type(default) & Shipping Address(default).
-2. If MRP 2.5 did not find Lead Time > 0 for the combination of Vendor(default) & Shipping Type(default) & Shipping Address(default), then we will try to find a match to Vendor(default) & Shipping Type(default).
-3. If he did not find will use Lead Time > 0 defined for Vendor (default).
-4. If he does not find it, he will use Lead Time from Item Master Data (Item Details for revision).
+When generating MRP recommendations, the system applies lead time rules in the following order:
+
+1. At first, MRP 2.5 will try to find a rule with a match of all three components of the rule to these defined as default: Vendor(default) & Shipping Type(default) & Shipping Address(default).
+2. If MRP 2.5 does not not find the above combination of Vendor(default) & Shipping Type(default) & Shipping Address(default), then we will try to find a match to Vendor(default) & Shipping Type(default).
+3. If MRP 2.5 does not find the above two combinations (pt. 1 & pt.2), then it will try to find a match to Vendor(default).
+4. If MRP 2.5 **does not find any of the above**, then it will use the Lead Time from Item Master Data (Item Details for revision).
 
 ![Menu](./media/vendors-lead-times/mrp-main-menu-7.webp)
 
-You can deactivate the rule by unselecting the checkbox Active. You can add Vendor Lead Time to Lead Time from Item Master Data by selecting Add.
+You can deactivate any rule by unchecking the **Active** box or choose to **add vendor lead time to item lead time** using the **Add** option.
 
-In the MRP scenario in the Item Selection tab, these rules can be edited per Item.
+In MRP scenarios, these rules can be modified on a per-item basis.
 
 ![Menu](./media/vendors-lead-times/mrp-main-menu-8.webp)
 
@@ -71,18 +84,20 @@ It is possible to add Custom Rules. You can do this by adding a new one or by co
 
 Custom Rules are overwritten Default Rules for the current scenario if they are identical. Edited rules/values are obligatory for the present scenario.
 
-**Note**
+**Important Notes**
 
-1. If the default Vendor is not defined in Item Master Data, then:
-    1. For recommendation, the first Vendor in the database is proposed.
+1. Without a default vendor in the item master:
+    1. The first Vendor in the database is proposed for recommendation.
     2. Lead Time is taken from Item Master Data (Item Details for revisions). The rules for Vendor Lead Time are not considered in calculations.
 2. Hierarchy of applying rules:
     1. Custom Rules
     2. Default Rules
 
+---
+
 ## Internal Vendor Lead Time
 
-Based on the data defined in BP (Business Partner) Master Data, a set of rules is established for Internal Vendor Lead Time.
+Based on the data defined in Business Partner Master Data, a set of rules is established for Internal Vendor Lead Time.
 
 ![Menu](./media/vendors-lead-times/mrp-main-menu-11.webp)
 

@@ -31,10 +31,10 @@ To access Resources, navigate to:
 
 ##### Types of Time
 
-- **Queue Time**: an initial time before setup. In calculations, it does not use a calendar or consume resources.
-- **Setup Time**: time for setting up a machine, uses a calendar, and occupies a resource.
-- **Run Time**: active usage time of the resource.
-- **Stock Time**: the last time, after the run. In calculations, In calculations, it does not use a calendar or consume resources.
+- **Queue Time**: An initial time before setup. In calculations, It does not use a calendar or consume any resource capacity in calculations.
+- **Setup Time**: The time required to prepare a machine for operation. It is calendar-dependent and consumes resource capacity.
+- **Run Time**: The actual time during which the resource is actively engaged in production.
+- **Stock Time**: The final time phase after production. Like Queue Time, it does not use a calendar or consume resources in calculations.
 
 ##### Rates
 
@@ -53,7 +53,7 @@ To access Resources, navigate to:
   - Pieces per minute
   - Pieces per second
 
-- When using cycles, only Fixed Rates can be used for Run Time.
+- When using cycles, only **Fixed Rates** can be used for Run Time.
   - Define the fixed and variable time elements of the resource.
   - This also includes the unit of rate for each time element.
   - Piece equates to the unit of measure of the item number being produced.
@@ -291,8 +291,8 @@ Resource Calendar is used to define the availability of a Resource for productio
 
   ![Holidays](./media/resources/resource-calendar-holidays.webp)
 - You Can Also button let you perform the following tasks automatically:
-  - Copying holidays from the holidays defined in SAP,
-  - Remove past exceptions – this will remove every exception before the actual date,
+  - Copying holidays from the holidays defined in SAP.
+  - Remove past exceptions – this will remove every exception before the actual date.
   - Create exceptions based on current working days till date. This one adds exceptions from actual date to date defined in the Till Date field for hours and days defined in the Working Hours tab.
 
   ![Resource Calendar](./media/resources/resource-calendar-you-can-also.webp)
@@ -302,6 +302,26 @@ Resource Calendar is used to define the availability of a Resource for productio
 - This will open a graphical presentation of resource availability. At the bottom of the window, you will find a legend for colors on the calendar.
 
   ![Resource Calendar](./media/resources/resource-calendar.webp)
+
+## Available Resource
+
+The Available Resource parameter is used by the system to calculate available capacity specifically in the Scheduling Board → Load Report tab. While it does not influence the actual planning and scheduling mechanisms, it plays a role in visualizing available capacity within this report.
+
+**Consider Nr. of Resources**
+
+When the Consider Nr. of Resources checkbox is enabled, the system multiplies the available capacity by the number specified in the Available Resource field. This allows for a more precise calculation of total available capacity in scenarios where multiple units of a resource are present.
+
+ℹ️ This setting references the resource definition in the Resource Master Data. For more information, visit the [Load Report section of the Scheduling Board guide](../scheduling/scheduling-board.md#load-report-tab).
+
+**Example Behavior**:
+
+When set to 1: The system uses the base available capacity of the resource.
+
+![When set to 1](./media/resources/set-to-1.png)
+
+When set to 2: The system doubles the available capacity by factoring in the defined number of resources.
+
+![When set to 1](./media/resources/set-to-1.png)
 
 ## Alternative Resource
 
