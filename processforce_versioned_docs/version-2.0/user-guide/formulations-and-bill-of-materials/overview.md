@@ -12,8 +12,7 @@ This functionality includes support for:
 - CoProducts,
 - ByProducts,
 - Scrap,
-- Intermediates (currently called Phantoms),
-- Phantoms (future release),
+- WIP Items also known as Phantoms and Intermediates,
 - Make vs. Buy,
 - Manual vs. Backflushing,
 - Factors, Yield values, and Scrap percentages,
@@ -22,3 +21,5 @@ This functionality includes support for:
 - Formulas.
 
 ![Chart](./media/overview/bill-of-materials-chart.webp)
+
+---

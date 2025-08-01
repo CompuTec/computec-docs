@@ -21,3 +21,5 @@ This functionality includes support for:
 - Formulas.
 
 ![Chart](./media/overview/bill-of-materials-chart.webp)
+
+---

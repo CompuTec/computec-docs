@@ -32,7 +32,8 @@ If the received quantity needs to be distributed across multiple bins, follow th
 
 - Click on the yellow arrow within the Bin Location Allocation field.
 - The Pick Receipt Batches - setup form will open.
-  ![Picked Receipt Batches](./media/pick-receipt-bin-locations-and-allocations/picked-receipt-batches.webp)
+    ![Picked Receipt Batches](./media/pick-receipt-bin-locations-and-allocations/picked-receipt-batches.webp)
+
 - Click on the yellow arrow within the Bin Location Allocation field again.
 - The Bin Location Allocation - Pick Receipt form opens.
 - Enter the desired Bin Location and Allocated quantity.
