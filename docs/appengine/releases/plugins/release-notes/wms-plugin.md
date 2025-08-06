@@ -10,7 +10,7 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 
 ## CompuTec WMS Plugin 3.2508.1
 
-**Release Date - 05 August 2025**
+**Release Date - 04 August 2025**
 
 | Issue Type | Component/s | Release Note |
 | - | - | - |
