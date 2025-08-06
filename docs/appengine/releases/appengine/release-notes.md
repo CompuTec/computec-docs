@@ -25,8 +25,6 @@ sidebar_position: 1
 | Bug | Core |  Bulk update operation fails with error: "unique constraint violation for table" |
 | Bug | AE Core | Installed plugins has a list of all the plugins installed over a period of time. |
 | Improvement | AE WebClient | Added `webClientExtension` support to the plugin. |
-| Improvement | WebUp | Organize libraries in proper order and add corresponding documentation. |
-| Improvement | WebUp | Created AE endpoints to support preview functionality in SAP WebClient. |
 | Bug | AE Plugins | Plugin Version tab displays duplicate entries. |
 | Bug | AE Configuration, AE Plugins | Border selection in Plugins Store is not working correctly. |
 | Improvement | AE Configuration | Admin Configuration Menu – After selecting a section, the system now automatically selects and displays the default subsection. |
