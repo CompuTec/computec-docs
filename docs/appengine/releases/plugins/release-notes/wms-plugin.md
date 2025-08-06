@@ -8,6 +8,52 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 
 ---
 
+## CompuTec WMS Plugin 3.2508.1
+
+**Release Date - 05 August 2025**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Bug | WMS Plugin | Unable to Add or Storage Categories (SC) after editing. |
+| Bug | WMS Plugin | Error encountered when creating new Inventory Counting document |
+| Bug | Client | Scanning error occurred in SAP Production Order process |
+| Bug | Client | When decreasing quantity in SU during Stock Transfer, the quantity in the SU remains unchanged, while the line quantity is updated. |
+| Bug | Service Manager | Permissions issue – users are unable to perform certain actions due to missing or incorrectly assigned authorizations. |
+| Improvement | Client Android | Inventory UoM not displayed in Pick Receipt when UoM type is set to Manual. |
+| Improvement | Client, Client Android | Added SU (Storage Unit) counter in Delivery to track the number of assigned SUs. |
+| Improvement | Client | Stock Transfer functionality successfully tested in Core version |
+| Bug | Client | Pick and Pack – System displays error message "Pick list exists and Bin locations information required." |
+| Bug | Client Android | (EMCM) Stock Transfer – "To Bin" filtering does not work correctly; error message appears, but bin locations are not filtered until the last character is removed. |
+| Bug | Client |  Inventory Transfer – negative batch/bin location quantities appear after scanning a batch. WMS merges batches into a single location, causing incorrect quantity display. |
+| Bug | Client | Catch Weight – unable to add a new row; system does not accept input or triggers no action. |
+| Bug | Client Android | MAUI – Scanning cannot be enabled on the Login screen; swipe-right gesture to activate scanning is not functioning. |
+| Bug | Server | (Ortho Solutions) Pick Order – Missing Order by `LineNum` clause in the query for the Document Details screen, causing lines to display in incorrect sequence. |
+| Bug | Client | (EMCM) "Hide SU" function does not work on Stock Transfer and Goods Issue screens – SU details remain visible despite the option being enabled. |
+| Bug | Server | (CORE) New Stock Counting – Error message occurred: ' ' is not a valid value for property 'U_MultiCounters'. The valid values are: 'Y' - 'Yes', 'N' - 'No' |
+| Bug | Client | Download installers are served over an insecure address `http://localhost:31002` instead of using HTTPS |
+| Bug | Client | Installer downloaded from the WMS server-hosted page does not include the version number in the file name. |
+| Bug | Server | No logs are generated when WMS Settings is opened directly from Start menu. |
+| Improvement | Client | Pick and Pack – No retry mechanism in place; operations fail without reattempt after errors or WMS restart, requiring manual intervention. |
+| Improvement | WMS Main | Added optional parameter to move completed items to the bottom of the list, enhancing clarity.|
+| Bug | Server | Old Stock Counting – Document not locked, allowing simultaneous edits. |
+| Bug | Server | Error message occurred: "This SU is already packed into another SU" appears when attempting to reuse an SSCC. |
+| Bug | Server | Delivery from Sales Order - "Forbid ordering greater quantities than on Order" function does not work with SU; CompuTec WMS allows over delivery without showing an error message. |
+| Bug | Client |  When "Use Sales UoM from based document" is enabled, the system displays batch quantity in Sales UoM but incorrectly auto-populates it into the Inventory UoM field. |
+| Bug | Client | Best Before Date functionality not working. |
+| Bug | Client | When Custom Config > Delivery > Use Sales UoM from based document is enabled, batch quantities are shown in Sales UoM but selecting a batch incorrectly fills Inventory UoM with the Sales UoM quantity. |
+| Bug | Client | Incorrect Available Quantity displayed in Catch Weight. |
+| Bug | Client |  Label print window does not close after clicking "Print Labels" |
+| Bug | Client Android | (VIANDES SEFICLO) GRPO - The scanned value goes to the logs after scanning and after pressing the Save button. |
+| Bug | Client | Blank error notification shown in Pick List when updating base document: "Pick list exists. Bin locations information required." |
+| Improvement | Client | Configure CompuTec WMS Settings to automatically run as Administrator to prevent permission-related issues during configuration and usage. |
+| Improvement | Server | Added option in Delivery: "Disable the transaction during save." |
+| Improvement | Client Android | Added option in the client to allow manual date entry. |
+| Improvement | Server | Enabled customization of queries retrieving `FirstLocation` |
+| Bug | Client | Put Away - Object reference not set to an instance of an object. |
+| Bug | Client | CompuTec WMS application crashes after closing the decoder window. |
+| Bug | Server | Unable to decrease quantity in SU in (CAPS) Stock Transfer. |
+| Improvement | Labels Integration, Server | Print Inventory Transfer Batches and Serials before post. |
+
 ## CompuTec WMS Plugin 3.2506.2
 
 **Release Date - 13 June 2025**

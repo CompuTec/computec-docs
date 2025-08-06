@@ -4,8 +4,23 @@ sidebar_position: 11
 
 # Yield Based Production
 
-Yield-Based Production ensures accurate planning and analysis of material usage and production output. By tracking planned and actual yields, manufacturers can optimize efficiency, reduce waste, and enhance overall productivity.
+Yield-Based Production enables manufacturers to accurately monitor and compare planned versus actual output. This helps in optimizing resource usage, reducing waste, and improving production efficiency.
 
-For more details on yield planning, click [here](../../user-guide/formulations-and-bill-of-materials/bill-of-materials/bom-planned-yield.md) and for yield analysis, click [here](../../user-guide/formulations-and-bill-of-materials/bill-of-materials/yield-analysis.md).
+![Yield](./media/yield-based-production/yield.webp)
 
-    ![Yield](./media/yield-based-production/yield.webp)
+---
+
+## How-to: Use Yield-Based Production
+
+To implement Yield-Based Production:
+
+1. Define planned yield in the Bill of Materials (BOM).
+2. Record actual yield during production.
+3. Analyze discrepancies between planned and actual results.
+
+:::info Related topics
+    - [Define Planned Yield in BOM](../../user-guide/formulations-and-bill-of-materials/bill-of-materials/bom-planned-yield.md)
+    - [Analyze Yield Variance](../../user-guide/formulations-and-bill-of-materials/bill-of-materials/yield-analysis.md)
+:::
+
+---

@@ -6,36 +6,42 @@ sidebar_position: 2
 
 Accurate Master Data setup is essential for efficient material management in manufacturing. This section outlines how to configure master data for Pick Issue and Receipt by Operation, ensuring smooth integration between Bill of Materials (BOM), Production Process, and Operation Binding.
 
-## Bill of Materials
+---
 
-- Define the Items, Coproducts, and Scrap within the bill of materials form as normal,
-- The Item Number and Description appear in "Grey", indicating they have been linked to an operation.
+## How-to: Configure Master Data for Pick Issue and Receipt
 
-    ![Bill of Materials](./media/master-data/bill-of-materials-2.webp)
+1. Define the Bill of Materials
 
-## Production Process
+    - Set up **Items**, **Coproducts**, and **Scrap** within the BOM form as usual.
+    - Once linked to operations, the **Item Number** and **Description** fields turn "Grey", indicating binding.
 
-Define the Production Process as usual. You can reach this form by Main Menu (Production → Bill of Materials → Production Process). Alternatively, access it via the context menu in the Bill of Materials form.
+        ![Bill of Materials](./media/master-data/bill-of-materials-2.webp)
 
-![Production Process](./media/master-data/production-process-main.webp)
+2. Define the Production Process
 
-## Operation Binding
+    - Navigate to:  
+    `Production → Bill of Materials → Production Process`  
+    or use the context menu from the BOM screen.
+    - Define the process flow as per your production requirements.
 
-The Operation Binding Form ensures that materials are linked correctly to their respective production steps:
+    ![Production Process](./media/master-data/production-process-main.webp)
 
-- The left side represents Inputs, while the right side represents Outputs.
-- Select the Routing and Operation to define the production flow.
-- Select the Items and link to Operation.
-- In this example, Active-Item-03 and Non-Active-04 are linked as an Input to the Prep operation.
+3. Bind Operations to Materials
 
-    ![Operation Bind](./media/master-data/operation-bind.png)
+    - Open the **Operation Binding** form.
+    - Select the **Routing** and relevant **Operation**.
+    - On the left, assign **Input Items**; on the right, assign **Output Items**.
 
-- In this example, Items Non-Active-03 and Active-Item-04 are linked as Input to the Mixing Operation
+    - **Example 1**:  
+    Inputs `Active-Item-03` and `Non-Active-04` are linked to the **Prep** operation.  
+    ![Operation Bind](./media/master-data/operation-bind-1.webp)
 
+    - **Example 2**:  
+    Inputs `Non-Active-03` and `Active-Item-04` are linked to the **Mixing** operation.  
     ![Operation Bind](./media/master-data/operation-bind.webp)
 
-In this example, CoProduct Item Co-Product-01 and Scrap Item Scrap-01 are linked as an Output from the Mixing operation.
+    - **Example 3**:
+    Output `Co-Product-01` and `Scrap-01` are also defined for the **Mixing** operation.  
+    ![Operation Bind](./media/master-data/operation-bind-2.webp)
 
-![Operation Bind](./media/master-data/operation-bind-2.webp)
-
----
+    ---
