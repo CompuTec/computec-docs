@@ -8,6 +8,49 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 
 ---
 
+## CompuTec.ProcessForce 3.2508.1
+
+**Release Date - 04 August 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Bug | PPF | Relationship Map for Forecast as Demand does not function correctly; linked documents or dependencies are not displayed. |
+| Bug | MRP | Issues with consumption of the existing stock in MRP 2.5 |
+| Bug | MOWizard | Error occurs when changing MO status: "Source column type 'System.Int32' and destination column type 'System.String' do not match", indicating a type mismatch in data mapping. |
+| Bug | Batches, Serial Numbers | Incorrect date format displayed in Batch and Serial Selection forms. |
+| Bug | MRP 2.5 |  Issues with cumulative lead time calculation. |
+| Bug | Manufacturing Order | Pick Order – Error: "Re-throwing 10000111 - On 'Contents' tab, enter item or items" occurs unexpectedly, even when items are present. |
+| Bug | Manufacturing Order | Goods Issue from Pick Order with serial item fails — error "Re-throwing: Couldn't issue to production" occurs. |
+| Bug | Performance | PATCH call to Item details takes longer to throw an error message. |
+| Bug | MRP, MRP 2.5 | In the Recommendation Form - Classification value is not copied to the created document. |
+| Bug | Routings | Not able to delete Resource from Routing form. |
+| Bug | Routings | Yellow navigation arrows are missing in the "Resource" tab of the "Routing" form, limiting the user's ability to navigate through linked records. |
+| Bug | Scheduling | Labor resource is incorrectly displayed in the Gantt chart along with times. |
+| Bug | API, Web API | Operation time recording shows NrOfResources as zero (U_NrOfResources = 0). |
+| Bug | .netCore, API | Error occurs during installation of PF Plugin, preventing successful setup and activation. |
+| Bug | Scheduling | Tasks cannot be moved, and setup time is displayed or calculated incorrectly in Scheduling Board. |
+| Bug | Manufacturing Order | Pick Order – "Auto Select All" incorrectly selects only one batch, when multiple batches are available. |
+| Bug | Manufacturing Order | Error "Exception of type 'CompuTec.Core2.Beans.UDOException' was thrown." and not able to update MO. |
+| Bug | Manufacturing Order |  Error "Exception of type 'CompuTec.Core2.Beans.UDOException' was thrown" occurs when attempting to update a Manufacturing Order (MO). |
+| Bug | Manufacturing Order | Manufacturing Order (MO) contains incorrect data – both default resources "Mix/Pack" and "Pack" are assigned simultaneously. |
+| Bug | Manufacturing Order | Item description is missing in both Pick Order and Pick Receipt, resulting in incomplete document details . |
+| Bug | Manufacturing Order | Error "Index was outside the bounds of the array." occurs when creating a Manufacturing Order (MO) from a Sales Order (SO). |
+| Bug | Manufacturing Order |  Exploded items of the phantom BOM do not consider the factor defined in the header of the phantom BOM. |
+| Bug | Manufacturing Order | Error "1306-0810-001000 - One or more errors occurred. (Manufacturing Order must have planned quantity higher than 0.)" is triggered during MO creation from Sales Order. |
+| Bug | Resources | Bin location disappears from the receipt warehouse after refresh and is incorrectly reassigned to the issue warehouse. |
+| Bug | API | BOM import fails with error "The given key 'Guid' was not present in the dictionary". |
+| Bug | Manufacturing Order | [POLCOM] Manufacturing Order header item is incorrect when created from Sales Order. |
+| Bug | Gantt Chart | Error "Object reference not set to an instance of an object." occurs when selecting an alternative resource. |
+| Bug | Gantt Chart | Changes made in the Gantt chart are not saved or reflected in the Manufacturing Order (MO) dates. |
+| Bug | Gantt Chart | User-Defined Field (UDF) is not visible in the sorting options of the Gantt chart. |
+| Bug | .netCore | Unable to synchronize Manufacturing Order that has not been added; `DocEntry=`. DocEntry is missing or undefined. |
+| Bug | Manufacturing Order | The quantity of the phantom item under the WIP tab is incorrect; it does not account for the factor specified in the header of the finished goods (FG) BOM. |
+| Bug | Quality Control | "Test Property Name" is not copied from the Test Protocol to the QC Test. |
+| Bug | Production Costing | "Refresh Planned Costs" function on MOR updates costs only for the first item in the list. |
+| Bug | Resources | Resource Calendar and Resource Costing are not created automatically upon resource setup, requiring manual creation. |
+| Bug | Production Costing |  Value in text column U_RscTimeInSec is recorded with a comma instead of a dot as the decimal separator. |
+| Bug | Production Costing |  Incorrect overhead cost is recorded in the TC columns of the Item Costing → Rolled Cost tab. |
+
 ## CompuTec.ProcessForce 3.2506.2
 
 **Release Date - 11 June 2025**
