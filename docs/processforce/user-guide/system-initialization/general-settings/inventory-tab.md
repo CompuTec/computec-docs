@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Inventory tab
 
- The Inventory tab in the General Settings window allows configuration of key behaviors related to item revisions, batch/serial management, and manufacturing costing in CompuTec ProcessForce. These options define the business rules for inventory allocation, quality control and compliance during the production process. It is divided into three subtabs: General, Batch and Serial, Costing
+ The Inventory tab allows configuration of key behaviors related to item revisions, batch/serial management, and manufacturing costing in CompuTec ProcessForce. These options define the business rules for inventory allocation, quality control and compliance during the production process. It is divided into three subtabs: General, Batch and Serial, Costing
 
 To access Inventory tab, navigate to:
 

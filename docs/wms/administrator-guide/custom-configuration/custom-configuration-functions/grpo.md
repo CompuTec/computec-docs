@@ -10,7 +10,7 @@ This guide provides an overview of recent updates to the Goods Receipt PO (GRPO)
 
 ![GRPO](./media/grpo/grpo-01.png)
 
-1. **After picking an item, auto return** – This option allows the system to redirect to a different window after confirming the quantity of an item during the picking process.
+1. **After picking an item, auto return**: This option allows the system to redirect to a different window after confirming the quantity of an item during the picking process.
 
     <details>
     <summary>Click here to expand</summary>
@@ -25,15 +25,15 @@ This guide provides an overview of recent updates to the Goods Receipt PO (GRPO)
     </div>
     </details>
 
-2. **Show Project Selection** – Enabling this option will display the Project Selection form before the Remarks form when creating a document that requires adding receiving items.
+2. **Show Project Selection**: Enabling this option will display the Project Selection form before the Remarks form when creating a document that requires adding receiving items.
 
     ![Project Selection](./media/grpo/project-selection.webp)
 
-3. **Default Project** – If a default project is selected, you can click the right arrow icon on the Project Selection form to automatically select the default project.
+3. **Default Project**: If a default project is selected, you can click the right arrow icon on the Project Selection form to automatically select the default project.
 
     ![Default Project](./media/grpo/default-project.png)
 
-4. **Enable saving to drafts** – This option allows you to save documents as drafts before finalizing them.
+4. **Enable saving to drafts**: This option allows you to save documents as drafts before finalizing them.
     - By default, the option is switched off, and the Remarks window looks like this:
 
         ![Remarks](./media/grpo/save-draft.png)
@@ -42,21 +42,21 @@ This guide provides an overview of recent updates to the Goods Receipt PO (GRPO)
 
         ![Remarks](./media/grpo/save-draft-on.png)
 
-5. **Enable saving documents when drafts ON** – With this option, you can choose to save a document as a draft or a finalized document on the Remarks form. When the option is checked, two options are available in the Remarks field:
+5. **Enable saving documents when drafts ON**: With this option, you can choose to save a document as a draft or a finalized document on the Remarks form. When the option is checked, two options are available in the Remarks field:
 
     ![Remarks](./media/grpo/drafts-on.png)
 
-6. **GRPO SU creator: Allow selection of only one item per SU** - When this option is enabled, selecting more than one item in the SU Wizard will trigger an error message: "Only one item per SU is allowed."
+6. **GRPO SU creator: Allow selection of only one item per SU**: When this option is enabled, selecting more than one item in the SU Wizard will trigger an error message: "Only one item per SU is allowed."
 
     ![Error Message](./media/grpo/error-message.png)
 
-7. **Scan DocNum on the Base Document selection window** – Enabling this option allows you to scan a document using the DocNum (document number) instead of DocEntry.
+7. **Scan DocNum on the Base Document selection window**: Enabling this option allows you to scan a document using the DocNum (document number) instead of DocEntry.
 
-8. **Force manual quantity confirmation** – With this option checked, you must manually confirm the quantity, even if a barcode is scanned (automatic confirmation is disabled).
+8. **Force manual quantity confirmation**: With this option checked, you must manually confirm the quantity, even if a barcode is scanned (automatic confirmation is disabled).
 
-9. **Enable adding Items with empty Bin Code field** – This option allows you to add items without a Bin Code to warehouses with Bin Locations. If enabled, items without a Bin Code will be assigned to the first available bin.
+9. **Enable adding Items with empty Bin Code field**: This option allows you to add items without a Bin Code to warehouses with Bin Locations. If enabled, items without a Bin Code will be assigned to the first available bin.
 
-10. **Enable negative quantities for Items not managed by batch/serial number** – This setting allows using negative quantities for items that are not managed by batch or serial numbers.
+10. **Enable negative quantities for Items not managed by batch/serial number**: This setting allows using negative quantities for items that are not managed by batch or serial numbers.
 
     <details>
     <summary>Click here to expand</summary>
@@ -69,9 +69,9 @@ This guide provides an overview of recent updates to the Goods Receipt PO (GRPO)
       </div>
     </details>
 
-11. **Enable adding attachments** – Allows you to add attachments to documents. If a scanner is used, this option automatically activates the camera to capture and attach a photo.
+11. **Enable adding attachments**: Allows you to add attachments to documents. If a scanner is used, this option automatically activates the camera to capture and attach a photo.
 
-12. **Enable setting Tax Date** – This option allows you to select a tax date on the Remarks form.
+12. **Enable setting Tax Date**: This option allows you to select a tax date on the Remarks form.
 
     <details>
     <summary>Click here to expand</summary>
@@ -86,35 +86,35 @@ This guide provides an overview of recent updates to the Goods Receipt PO (GRPO)
     </div>
     </details>
 
-13. **Show Cost Dimensions** – When enabled, a button will appear on the Quantity form (next to the Back button) leading to the Cost Dimensions form.
+13. **Show Cost Dimensions**: When enabled, a button will appear on the Quantity form (next to the Back button) leading to the Cost Dimensions form.
 
-14. **Keep selected Bin Location after adding an item** – This option ensures the Bin Location field is not cleared after selecting an item, keeping the same Bin Location.
+14. **Keep selected Bin Location after adding an item**: This option ensures the Bin Location field is not cleared after selecting an item, keeping the same Bin Location.
 
-15. **Hide Supplier Ref. No. for GRPO from the base document** – This option hides the Supplier Ref. No. field in the Remarks form for GRPO transactions created from a base document (such as Purchase Order or A/P Reserve Invoice). (On GRPO transactions, when a user creates a document from a base document, a Supplier Ref. No. on the document is filled in from the base documents. If more than one base document is used for a transaction, then the first non-empty Supplier Ref. No. is used).
+15. **Hide Supplier Ref. No. for GRPO from the base document**: This option hides the Supplier Ref. No. field in the Remarks form for GRPO transactions created from a base document (such as Purchase Order or A/P Reserve Invoice). (On GRPO transactions, when a user creates a document from a base document, a Supplier Ref. No. on the document is filled in from the base documents. If more than one base document is used for a transaction, then the first non-empty Supplier Ref. No. is used).
 
     ![Supplier Reference No.](./media/grpo/supplier-ref-no.png)
 
-16. **Use Purchase UoM from Base Document** – When checked, quantities will be displayed in the Unit of Measure from the Base Document, while still using the actual quantities. Drafts cannot be saved if this option is enabled. Click [here](../../../user-guide/managing-uom-in-computec-wms.md) to find out more.
+16. **Use Purchase UoM from Base Document**: When checked, quantities will be displayed in the Unit of Measure from the Base Document, while still using the actual quantities. Drafts cannot be saved if this option is enabled. Click [here](../../../user-guide/managing-uom-in-computec-wms.md) to find out more.
 
-17. **Skip Storage unit details** - The Storage Unit details screen will not appear if a warehouse has been selected.
+17. **Skip Storage unit details**: The Storage Unit details screen will not appear if a warehouse has been selected.
 
-18. **Hide SU** - This option hides the options related to creating a Storage Unit (SU).
+18. **Hide SU**: This option hides the options related to creating a Storage Unit (SU).
 
-19. **Do not clear batch** – When enabled, the application stays on the Quantity screen after adding a Batch.
+19. **Do not clear batch**: When enabled, the application stays on the Quantity screen after adding a Batch.
 
-20. **Automatically populate the Quantity field with the value from the base document** – When saving the batch, the system will automatically populate the Quantity field with the value from the base document and stay on the Quantity screen.
+20. **Automatically populate the Quantity field with the value from the base document**: When saving the batch, the system will automatically populate the Quantity field with the value from the base document and stay on the Quantity screen.
 
     ![Auto Quantity](./media/grpo/grpo-quantity.png)
 
-21. **PopUp Date from Base Doc with today's date** – A warning message appears if the receive date of the document is older than today's date.
+21. **PopUp Date from Base Doc with today's date**: A warning message appears if the receive date of the document is older than today's date.
 
-22. **PopUp adding new Item when using base document** – A warning message appears if you try to add a new item to a base document.
+22. **PopUp adding new Item when using base document**: A warning message appears if you try to add a new item to a base document.
 
-23. **Item Quantity PopUp from Base Document** – A warning appears if the item quantity exceeds the ordered quantity in the related Purchase Order. You can either continue or block the action (for A/P Reserve Invoice, the action can only be blocked).
+23. **Item Quantity PopUp from Base Document**: A warning appears if the item quantity exceeds the ordered quantity in the related Purchase Order. You can either continue or block the action (for A/P Reserve Invoice, the action can only be blocked).
 
-24. **PopUp validation Expiry Date Item** – A warning will appear if the item has an expiration date that needs validation. This is based on the ProcessForce Item Details or an MS SQL query.
+24. **PopUp validation Expiry Date Item**: A warning will appear if the item has an expiration date that needs validation. This is based on the ProcessForce Item Details or an MS SQL query.
 
-25. **Move CatchWeight quantity difference to** - This option saves any quantity differences in the specified field in SAP Business One.
+25. **Move CatchWeight quantity difference to**: This option saves any quantity differences in the specified field in SAP Business One.
     <details>
     <summary>Click here to expand</summary>
     <div>
@@ -130,6 +130,10 @@ This guide provides an overview of recent updates to the Goods Receipt PO (GRPO)
             ![Inventory Quantity](./media/grpo/inventory-quantity.png)
     </div>
     </details>
+
+26. **Do not set default Bin Code**: The Location field is left blank. The user must select it manually or scan the barcode.
+
+    ![Do not set default Bin Code](./media/grpo/screenshot-2.png)
 
 ## Changes
 
