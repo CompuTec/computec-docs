@@ -35,4 +35,14 @@ Click the 'SU Operations' option in the main menu to go to related options:
 
 ![SU](./media/storage-unit.webp)
 
+## Best Practice – Handling SUs Returned to the Warehouse After Production Consumption
+
+When creating an SU, you may replace the default SSCC number by entering or scanning a different one. As SSCC codes can be reused, an existing SSCC can also be scanned during SU creation.
+
+For returned SUs, it is recommended to:
+
+- Verify the physical content and quantity before reassigning an SSCC.
+- Reuse the original SSCC only if the SU content remains unchanged; otherwise, assign a new SSCC to ensure traceability.
+- Update system records promptly to maintain accurate stock and audit compliance.
+
 ---
