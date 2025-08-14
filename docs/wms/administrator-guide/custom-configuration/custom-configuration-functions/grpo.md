@@ -8,7 +8,7 @@ This guide provides an overview of recent updates to the Goods Receipt PO (GRPO)
 
 ---
 
-![GRPO](./media/grpo/grpo-01.png)
+![GRPO](./media/grpo/grpo-1.png)
 
 1. **After picking an item, auto return**: This option allows the system to redirect to a different window after confirming the quantity of an item during the picking process.
 
