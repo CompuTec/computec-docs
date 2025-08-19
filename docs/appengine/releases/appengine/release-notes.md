@@ -31,7 +31,7 @@ sidebar_position: 1
 | Bug | .netCore | Login error message is incorrect — displays "Incorrect Username or Password" |
 | Bug | MOWizard | Date filters are not functioning in Scheduling. |
 | Bug | PriceManagement | Price Management Plugin does not display all missing currencies. |
-| Bug | Installer | ProcessForce.Gantt installation fails due to improper handling of newline characters in the error message. |
+| Bug | Installer | CompuTec ProcessForce.Gantt installation fails due to improper handling of newline characters in the error message. |
 | Bug | .netCore | Unable to synchronize Manufacturing Order that has not been added; `DocEntry=`. DocEntry is missing or undefined. |
 | Bug | Manufacturing Order| When opening a Manufacturing Order (MOR) and selecting a BOM, the system throws an error:`CompuTec.Core2.UI.Notify.StatusBarMessageNotificationService. Calculating a Formula for U_ItemYield() failed with error: The input string '#ERR: Name' was not in a correct format`.... |
 | Bug | Manufacturing Order | MOR - Transfer Components action fails with "No matching records found" error. |
@@ -44,7 +44,7 @@ sidebar_position: 1
 
 | Issue Type | Component/s | Release Note |
 | --- | --- | --- |
-| Bug | Common Functions | Issues encountered when using the "Support" user to perform actions in ProcessForce |
+| Bug | Common Functions | Issues encountered when using the "Support" user to perform actions in CompuTec ProcessForce |
 | Bug | Manufacturing Order | [POLCOM] Error "Cannot update. Empty formula in Items." occurs during PFI import |
 | Bug | Common Functions | Selection combo in UDF is not working. User is not able to select any values |
 | Bug | WebAPI | Issues with item details PATCH call - missing or unclear error message |

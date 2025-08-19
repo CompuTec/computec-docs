@@ -4,7 +4,7 @@ sidebar_position: 11
 
 # Custom Controller that uses ProcessForce API
 
-This guide demonstrates how to create a custom API controller within your plugin that interacts with ProcessForce objects and logic. Specifically, we'll build a controller that schedules multiple Manufacturing Orders (MOs) using the ProcessForce API.
+This guide demonstrates how to create a custom API controller within your plugin that interacts with CompuTec ProcessForce objects and logic. Specifically, we'll build a controller that schedules multiple Manufacturing Orders (MOs) using the CompuTec ProcessForce API.
 
 ## Creating Custom Controller
 

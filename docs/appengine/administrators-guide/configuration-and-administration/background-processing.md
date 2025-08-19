@@ -50,7 +50,7 @@ Filters are used to ensure that the job is only triggered under specific conditi
 
 **Action Type**: U. This means that the job is triggered when an update occurs to the Manufacturing Order (U stands for Update).
 
-**Content Type**: CT_PF_ManufacOrd. This filter ensures that the job only applies to content related to ProcessForce Manufacturing Orders.
+**Content Type**: CT_PF_ManufacOrd. This filter ensures that the job only applies to content related to CompuTec ProcessForce Manufacturing Orders.
 
 **Content Subtype**: *, meaning that all subtypes of manufacturing orders are included.
 
@@ -58,9 +58,9 @@ Filters are used to ensure that the job is only triggered under specific conditi
 
 The job is executed using a specific plugin within the system:
 
-**Plugin Code**: CompuTec.ProcessForce.Plugin. This indicates that the plugin used is part of the ProcessForce suite by CompuTec.
+**Plugin Code**: CompuTec.ProcessForce.Plugin. This indicates that the plugin used is part of the CompuTec ProcessForce suite by CompuTec.
 
-**Plugin Name**: ProcessForce, which is the product handling manufacturing-related operations in this case.
+**Plugin Name**: CompuTecProcessForce, which is the product handling manufacturing-related operations in this case.
 
 **Plugin Version**: 3.0.0.351. This version information ensures compatibility and may be needed when troubleshooting or updating the system.
 

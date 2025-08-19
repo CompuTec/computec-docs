@@ -22,7 +22,7 @@ Do not proceed with installation unless all prerequisites are fulfilled. Skippin
 
 ## Download the Data Model
 
-To download the latest official version of the ProcessForce Data Model, click the link below:
+To download the latest official version of CompuTec ProcessForce Data Model, click the link below:
 
 👉 [Download CompuTec ProcessForce Data Model (v10.0.13)](https://download.computec.one/software/processforce/model/CompuTec_ProcessForce_Data_Model_10.0.13.zip)
 

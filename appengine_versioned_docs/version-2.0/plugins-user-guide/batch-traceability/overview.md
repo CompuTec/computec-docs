@@ -12,16 +12,16 @@ Watch the Guided Tour of [Batch Traceability](https://youtu.be/ZHUswSIKTu0)
 
 ### Prerequisites
 
-Ensure that ProcessForce and the CompuTec License Server are properly installed and configured. For guidance, refer to the [overview](https://learn.computec.one/docs/processforce/administrator-guide/licensing/license-server/overview).
+Ensure that CompuTec ProcessForce and the CompuTec License Server are properly installed and configured. For guidance, refer to the [overview](https://learn.computec.one/docs/processforce/administrator-guide/licensing/license-server/overview).
 
 ### CompuTec AppEngine and Plug-in Installation and Configuration
 
 - For CompuTec AppEngine installation please follow this link: [Installation](../../administrators-guide/installation.md)
 - For Plug-in installation please follow this link: [Configuration and Administration](../../administrators-guide/configuration-and-administration/overview.md).
 
-### ProcessForce
+### CompuTec ProcessForce
 
-Optionally, you can call the Serialization plug-in directly from within ProcessForce:
+Optionally, you can call the Serialization plug-in directly from within CompuTec ProcessForce:
 
 ![Batch Traceability 360](./media/overview/batch-traceability-360.png)
 
@@ -33,7 +33,7 @@ Enter CompuTec AppEngine url, e.g. `http://{host}:54000`, click "Update" and res
 
 ## Start Points for Function Opening
 
-You can reach ProcessForce Batch Traceability 360 by:
+You can reach CompuTec ProcessForce Batch Traceability 360 by:
 
 - CompuTec AppEngine launchpad
 - Modules Menu (check the path below)

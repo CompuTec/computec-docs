@@ -80,7 +80,7 @@ You can define MI as a stand-alone or associated object. In the second case, you
 
         - **Item defined as Fixed Asset**
 
-            - **Fixed Asset** – ProcessForce Fixed Asset Code
+            - **Fixed Asset** – CompuTec ProcessForce Fixed Asset Code
             - **Description** – description from Fixed Asset record
 
                 ![MI-EQ](./media/maintainable-item/mi-fa.webp)
@@ -131,7 +131,7 @@ For a specified class, you can define categories.
 - **Department**: the organizational unit to which the MI is assigned
 - **Assigned By**: a name of supervisor
 - **Assigned To**: a name of an employee responsible for it
-- **Fixed Asset No.**: ProcessForce Fixed Asset Code to which the MI is assigned, select from the list
+- **Fixed Asset No.**: CompuTec ProcessForce Fixed Asset Code to which the MI is assigned, select from the list
 - **Plant Maintenance Inactive** (only for information purposes)
         - **Inactive** – you can mark MI as inactive
         - **Inactive Start** – enter the date on which the inactive period starts
@@ -315,7 +315,7 @@ B – Maintainable Item Master Data header's (tab Effective Meters) lines with E
 - **Description**: describe the inspection point.
 - **Point Type**: inspection point type (please check [here](#point-type)) to associate with the MI. The system automatically populates the point type description, Class, and Class Description.
 - **Class, Description**: classification, please see [here](#classes).
-- **MES IP Code, MES IP Description, MES IP Class, MES IP Category**: agreed on the ID of the Inspection Point between MES and ProcessForce (during the integration process). Please check [here](#mes-inspection-point).
+- **MES IP Code, MES IP Description, MES IP Class, MES IP Category**: agreed on the ID of the Inspection Point between MES and CompuTec ProcessForce (during the integration process). Please check [here](#mes-inspection-point).
 
 #### Point Type
 
@@ -341,7 +341,7 @@ To access MES Inspection Point, navigate to:
 
 ![MES](./media/maintainable-item/mes.png)
 
-- **MES Inspection Point Code**: agreed on the ID of the Inspection Point between MES and ProcessForce (during the integration process)
+- **MES Inspection Point Code**: agreed on the ID of the Inspection Point between MES and CompuTec ProcessForce (during the integration process)
 - **Description**: descriptive information about MES IP
 - **Class**: allows grouping MES Inspection Points Codes
 - **Category**: allows grouping MES Inspection Points Codes

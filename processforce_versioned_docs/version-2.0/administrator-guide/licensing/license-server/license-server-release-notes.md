@@ -15,7 +15,7 @@ The installer is available to download from [here](../../../releases/download.md
 
 ### Changes and Improvements
 
-**Server – ProcessForce, Server – PDC/WMS (terminals), Server – Labels, Server – Premium**
+**Server – CompuTec ProcessForce, Server – PDC/WMS (terminals), Server – Labels, Server – Premium**
 
 - Possibility to generate the license Hardware Key (CompuTec Key / Terminal License Key / Labels Hardware Key / Premium Hardware Key) in HUAWEI Elastic Cloud Server (ECS) environment
 
@@ -37,9 +37,9 @@ The version that introduced the blue framing style: 5.11.0.1.
 This fix was implemented in version 5.10.2.9 but not included in versions 5.11.0.1-5.11.0.3.
 :::
 
-**Server - ProcessForce**
+**Server - CompuTec ProcessForce**
 
-- Significant delay of SAP Business One client response during import (more than a minute) and selection (more than 20 seconds) of ProcessForce license
+- Significant delay of SAP Business One client response during import (more than a minute) and selection (more than 20 seconds) of CompuTec ProcessForce license
 
 **Server - CompuTec WMS**
 
@@ -137,7 +137,7 @@ The defect is related to 5.11.0.1 version only.
 
 **Server, Direct Data Access**
 
-- Incorrect application behavior on systems with Microsoft SQL Server installed, causing errors in the log file and Windows Event Viewer, and possibly disabling the Direct Data Access mode in ProcessForce
+- Incorrect application behavior on systems with Microsoft SQL Server installed, causing errors in the log file and Windows Event Viewer, and possibly disabling the Direct Data Access mode in CompuTec ProcessForce
 
 **Log file content (XXXXX – 5-digit number)**
 
@@ -159,7 +159,7 @@ The installer is available to download from [here](../../../releases/download.md
 
 ### Changes and Improvements
 
-**Server – ProcessForce, Server – CompuTec PDC/WMS (terminals), Server – Labels, Server – Premium**
+**Server – CompuTec ProcessForce, Server – CompuTec PDC/WMS (terminals), Server – Labels, Server – Premium**
 
 - Possibility to generate the license Hardware Key (CompuTec Key / Terminal License Key / Labels Hardware Key / Premium Hardware Key) on Amazon Elastic Compute Cloud (EC2) Instance in Amazon Web Services (AWS) infrastructure in case of the inability to connect to IPv4 URI by the system
 

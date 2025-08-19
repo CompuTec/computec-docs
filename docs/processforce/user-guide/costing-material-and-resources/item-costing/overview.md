@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-ProcessForce employs a bottom-up approach to calculate the cost of semi-finished and finished products. Each Item Master, a part of a Bill of Materials, needs to be defined to calculate the cost of the semi and finished product for Standard Costing and an Estimated Moving Average.
+CompuTec ProcessForce employs a bottom-up approach to calculate the cost of semi-finished and finished products. Each Item Master, a part of a Bill of Materials, needs to be defined to calculate the cost of the semi and finished product for Standard Costing and an Estimated Moving Average.
 
 Key considerations include:
 

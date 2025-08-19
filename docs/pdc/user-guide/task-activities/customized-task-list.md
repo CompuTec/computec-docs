@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Customized Task List
 
-This function allows creating a customized table view when adding a task by Resource. This means that based on a few mandatory fields, it is possible to give information from other objects in SAP Business One or ProcessForce by creating an SQL code.
+This function allows creating a customized table view when adding a task by Resource. This means that based on a few mandatory fields, it is possible to give information from other objects in SAP Business One or CompuTec ProcessForce by creating an SQL code.
 
 :::caution
     Please be aware that all interactive icons will be unavailable when using this function.

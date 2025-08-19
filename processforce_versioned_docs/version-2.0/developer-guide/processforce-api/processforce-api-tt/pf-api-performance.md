@@ -4,17 +4,17 @@ sidebar_position: 2
 
 # ProcessForce API Performance Tips & Tricks
 
-Working with large objects like Manufacturing Orders or Bills of Materials (BOM) in ProcessForce can be challenging, especially when maintaining optimal performance. To help you get the most out of the ProcessForce API, we've compiled a set of best practices and performance-enhancing techniques. These strategies will help speed up data retrieval, optimize synchronization, and improve efficiency when handling bulk operations.
+Working with large objects like Manufacturing Orders or Bills of Materials (BOM) in CompuTec ProcessForce can be challenging, especially when maintaining optimal performance. To help you get the most out of the CompuTec ProcessForce API, we've compiled a set of best practices and performance-enhancing techniques. These strategies will help speed up data retrieval, optimize synchronization, and improve efficiency when handling bulk operations.
 
 ---
 
 ## Class QueryManager
 
-Instead of relying on SAP’s default QueryManager, consider using the ProcessForce QueryManager class for better performance. When no active transaction is running, our QueryManager provides faster database queries. If a transaction is active, it automatically switches to the SAP version, ensuring optimal speed while maintaining system stability.
+Instead of relying on SAP’s default QueryManager, consider using the CompuTec ProcessForce QueryManager class for better performance. When no active transaction is running, our QueryManager provides faster database queries. If a transaction is active, it automatically switches to the SAP version, ensuring optimal speed while maintaining system stability.
 
 ## Manufacturing Order and Bill of Materials Synchronization
 
-ProcessForce synchronizes Manufacturing Orders and Bill of Materials with their SAP Business One counterparts by default. While this ensures data consistency, it can slow down performance. If synchronization is not essential for your business logic, consider disabling it in General Settings to improve efficiency. However, evaluate the impact before making changes to avoid disruptions in your workflow.
+CompuTec ProcessForce synchronizes Manufacturing Orders and Bill of Materials with their SAP Business One counterparts by default. While this ensures data consistency, it can slow down performance. If synchronization is not essential for your business logic, consider disabling it in General Settings to improve efficiency. However, evaluate the impact before making changes to avoid disruptions in your workflow.
 
 ## Direct Data Access
 

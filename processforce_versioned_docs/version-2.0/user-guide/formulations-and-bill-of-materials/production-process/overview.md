@@ -74,7 +74,7 @@ To bind an Item to an Operation, first select a Routing and then choose the corr
 
 ![Production Routing](./media/overview/production-process-bind-routing.webp)
 
-In Operation Binding, users can modify the quantity used to calculate operation time. In ProcessForce, operation time is determined based on the planned quantity of the final product. The resulting quantity of the selected item is considered in this calculation.
+In Operation Binding, users can modify the quantity used to calculate operation time. In CompuTec ProcessForce, operation time is determined based on the planned quantity of the final product. The resulting quantity of the selected item is considered in this calculation.
 
 - To change the item used for time calculation, select the Time Calc checkbox.
 

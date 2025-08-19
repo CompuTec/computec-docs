@@ -14,7 +14,7 @@ CompuTec ProcessForce is fully compatible with the **Multiple Branches** functio
 
 - Branch support in CompuTec ProcessForce works identically to how it does in standard SAP Business One.
 - No additional configuration or setup is required within CompuTec ProcessForce to enable branch usage.
-- Branch assignment on ProcessForce documents is handled through the standard SAP Business One branch setup and selection mechanisms.
+- Branch assignment on CompuTec ProcessForce documents is handled through the standard SAP Business One branch setup and selection mechanisms.
 
 ### Requirements
 

@@ -83,7 +83,7 @@ For instructions on creating a document series, click [here](../../document-numb
 
 ## Coproducts
 
-For businesses that manufacture Coproducts, completing this configuration is essential for ProcessForce to integrate with SAP Business One MRP functions.
+For businesses that manufacture Coproducts, completing this configuration is essential for CompuTec ProcessForce to integrate with SAP Business One MRP functions.
 
 SAP Business One does not inherently support Coproducts within its Bill of Material (BOM) functionality. To address this, during the synchronization of the Bill of Manufacturing and Manufacturing Order, a dummy BOM is created. In this setup:
 

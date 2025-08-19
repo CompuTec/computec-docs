@@ -13,7 +13,7 @@ sidebar_position: 1
 
     **Note 2** If you take our scripts and modify them, which then causes an issue of any sort which requires our team to spend time reviewing your scripts etc., we will charge you for the time spent in fixing these issues on a time and material basis at an hourly rate of 150 EUR/USD, plus expenses if applicable. Before any work is started, an e-mail confirmation is required between both parties that these charges will be applied for and accepted.
 
-    **Note 3** If the support team spends time on a support ticket, and the issue is related to not following standard ProcessForce master data configuration, we will charge you for the time spent in fixing and reviewing these issues on a time and material basis at an hourly rate of 150 EUR/USD, plus expenses if applicable, and will be automatically invoiced.
+    **Note 3** If the support team spends time on a support ticket, and the issue is related to not following standard CompuTec ProcessForce master data configuration, we will charge you for the time spent in fixing and reviewing these issues on a time and material basis at an hourly rate of 150 EUR/USD, plus expenses if applicable, and will be automatically invoiced.
 :::
 
 ## Support Policy
@@ -21,7 +21,7 @@ sidebar_position: 1
 - A bug fix occurs within the current release as a hotfix (depending on release timing) or within a future patch level depending on the priority of a bug.
 - Bugs are not to be fixed in previous versions, and Patch Levels.
 - Product enhancement requests are placed in a separate queue and reviewed every month to determine their suitability for a future patch release (free of charge) or paid for by the partner/customer to speed up their release.
-- Please note product enhancement requests which fit the overall concepts of ProcessForce and general industry practices will be included.
+- Please note product enhancement requests which fit the overall concepts of CompuTec ProcessForce and general industry practices will be included.
 
 :::note
     A lack of the information mentioned below in a support ticket may delay a response from the support team.
@@ -33,7 +33,7 @@ sidebar_position: 1
 - CompuTec License Service version  
 - SAP DI API version (32-bit/64-bit)
 - SAP Business One client version
-- ProcessForce version check
+- CompuTec ProcessForce version check
 - Check with other colleagues
 
 ## Step 2: Please check the documentation
@@ -54,15 +54,15 @@ sidebar_position: 1
 | Contacting the help desk | Suggested Hot Link |
 | --- | --- |
 | Please contact the support desk via the support portal | [https://support.computec.pl/](https://support.computec.pl/) |
-| If you need a ProcessForce license, deliver the proper details | [Request for a license.](../administrator-guide/licensing/license-request.md) |
+| If you need a CompuTec ProcessForce license, deliver the proper details | [Request for a license.](../administrator-guide/licensing/license-request.md) |
 
 ## Step 5: Information required for completing a support ticket
 
-**Environment** - Version and Patch Level of SAP Business One Version of ProcessForce Database Management System vendor: Microsoft SQL Server / SAP HANA Database Management System version On-premises or Software as a service (hosted, terminal services, Citrix, etc.).  
+**Environment** - Version and Patch Level of SAP Business One Version of CompuTec ProcessForce Database Management System vendor: Microsoft SQL Server / SAP HANA Database Management System version On-premises or Software as a service (hosted, terminal services, Citrix, etc.).  
 **Full description** - Full description of the issue, keystrokes, warnings, and error messages.  
 **Attachments** - Screenshots and recorded movie.  
 **SAP Business One logs** - System logs from SAP Business One.  
-**ProcessForce logs** - Please check this documentation section: [Logging](./logging.md).  
+**CompuTec ProcessForce logs** - Please check this documentation section: [Logging](./logging.md).  
 **If a support request the database, please backup and compress it** - Support will provide a link for uploading the database.                                                                               |
 
 ## API Support

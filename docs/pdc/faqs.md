@@ -30,7 +30,7 @@ Please ensure that the installed CompuTec ProcessForce API is in the same versio
 
 ## Current user lacks CompuTec ProcessForce license
 
-- Check if a user has a ProcessForce license assigned.
+- Check if a user has CompuTec ProcessForce license assigned.
 - Check if a username in CompuTec PDC settings is the same as it is set up in SAP Business One. Upper and lower case letters are relevant.
 
 ## Databases unavailable at Settings level

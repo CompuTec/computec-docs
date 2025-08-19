@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Diagnostic Session
 
-The Diagnostic Session functionality lets you record all user activities (related to ProcessForce functionality) inside the SAP Business One desktop client.
+The Diagnostic Session functionality lets you record all user activities (related to CompuTec ProcessForce functionality) inside the SAP Business One desktop client.
 
 CompuTec Support Team can request an issue reproduction using this functionality during the support procedure.
 
@@ -42,15 +42,15 @@ If the Diagnostic Session is enabled, the blue indicator is the SAP Business One
 
 ![Message Bar](./media/diagnostic-session/message-bar.webp)
 
-### How to start Diagnostic Session when ProcessForce starts
+### How to start Diagnostic Session when CompuTec ProcessForce starts
 
-The Diagnostic Session can also be started automatically when ProcessForce starts, which might help in case of problems related to the installation or initial crashes.
+The Diagnostic Session can also be started automatically when CompuTec ProcessForce starts, which might help in case of problems related to the installation or initial crashes.
 
 Please remember to disable it if it is no longer needed.
 
 Please use these steps to enable it:
 
-1. Go to the ProcessForce.Exe file location and find ProcessForce.exe.config, and edit the file:
+1. Go to the ProcessForce.Exe file location and find CompuTec ProcessForce.exe.config, and edit the file:
 
     ![ProcessForce Folder](./media/diagnostic-session/processforce-folder.webp)
 2. Change StartupDiagnosticSession value to true:
@@ -81,10 +81,10 @@ Profiles
 |         Detailed          |                    Capture detailed report of all processes                     | Extreme Please do not use it unless requested by the CompuTec Support Team |
 |    Detailed Scheduling    |                 Captures detailed information about scheduling                  |                                    High                                    |
 |   Detailed Transactions   |                Capture information about Inventory transactions                 |                                    High                                    |
-|          Startup          | Capture information about ProcessForce starting and Database structure installation high. |                                    High                                    |
+|          Startup          | Capture information about CompuTec ProcessForce starting and Database structure installation high. |                                    High                                    |
 
 :::info Performance
-    Please be aware that debugging session is slowing down ProcessForce execution time.
+    Please be aware that debugging session is slowing down CompuTec ProcessForce execution time.
 
     This tool is still in a test phase, so unexpected issues might occur, and we recommend running it on a copy of the company database.
 :::

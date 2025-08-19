@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-The Pick Order transaction allows generating a ProcessForce Production Issue.
+The Pick Order transaction allows generating CompuTec ProcessForce Production Issue.
 
 :::info
 Some forms' order and availability during a document's creation may vary depending on individual settings. Click [here](../../../administrator-guide/custom-configuration/overview.md) to find out more about custom configuration

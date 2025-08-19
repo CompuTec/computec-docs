@@ -4,10 +4,10 @@ sidebar_position: 1
 
 # Overview
 
-ProcessForce enhances Material Requirements Planning (MRP) in SAP Business One, leveraging its built-in features for seamless production planning and order management.
+CompuTec ProcessForce enhances Material Requirements Planning (MRP) in SAP Business One, leveraging its built-in features for seamless production planning and order management.
 
 :::warning
-    If you experience delays when opening the MRP Wizard with ProcessForce enabled, consider setting up Direct Data Access mode. This can improve response time, especially in systems with a large number of Item Master Data records.
+    If you experience delays when opening the MRP Wizard with CompuTec ProcessForce enabled, consider setting up Direct Data Access mode. This can improve response time, especially in systems with a large number of Item Master Data records.
 
     Click [here](../../administrator-guide/licensing/license-server/direct-access.md) to learn how to set up Direct Access mode for a specific database.
 :::
@@ -16,10 +16,10 @@ ProcessForce enhances Material Requirements Planning (MRP) in SAP Business One, 
 
 ## Introduction
 
-ProcessForce integrates with the SAP Business One MRP Wizard and Order Recommendation forms, maintaining familiar workflows while adding advanced manufacturing functionality.
+CompuTec ProcessForce integrates with the SAP Business One MRP Wizard and Order Recommendation forms, maintaining familiar workflows while adding advanced manufacturing functionality.
 
 - The MRP Wizard runs as it would in SAP Business One.
-- The Order Recommendation form enables the creation of ProcessForce Manufacturing Orders.
+- The Order Recommendation form enables the creation of CompuTec ProcessForce Manufacturing Orders.
 - Manufacturing Orders are scheduled using backward scheduling, ensuring production aligns with required due dates.
 
 ## Configuration

@@ -14,7 +14,7 @@ For example, in the diagram below:
 
 ![Multi-level](./media/multi-level.webp)
 
-In ProcessForce, there are two ways of dealing with this situation:
+In CompuTec ProcessForce, there are two ways of dealing with this situation:
 
 1. **Semi-finished Items**:
   A semi-finished item is a component in the BOM that has its own Bill of Material and requires a separate Manufacturing Order (MO) before being used in the production of the final good. These items can also be produced independently and stored as inventory for future use.

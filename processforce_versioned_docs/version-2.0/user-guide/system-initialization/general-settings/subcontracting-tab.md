@@ -24,6 +24,6 @@ Subcontracting is a method of managing the “purchase of a service.” For exam
 
 - **Enable integration with Nota Fiscal (Brazil only)**: allows integration with Brazil’s Nota Fiscal tax system.
 
-- **Drop-Ship warehouse**: this option is related to Brazilian localization and can be used only within it. Click [here](../../subcontracting/brazil-localization-subcontracting-process.md) to find out more. Drop-ship Warehouse in the ProcessForce subcontracting context marks a virtual warehouse. Creating an Inventory Transfer document to this Warehouse represents sending materials to a Subcontractor. After that, it is possible to create Issues and Receipts from this warehouse.
+- **Drop-Ship warehouse**: this option is related to Brazilian localization and can be used only within it. Click [here](../../subcontracting/brazil-localization-subcontracting-process.md) to find out more. Drop-ship Warehouse in the CompuTec ProcessForce subcontracting context marks a virtual warehouse. Creating an Inventory Transfer document to this Warehouse represents sending materials to a Subcontractor. After that, it is possible to create Issues and Receipts from this warehouse.
 
 ---

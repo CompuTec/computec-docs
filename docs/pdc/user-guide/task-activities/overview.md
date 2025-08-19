@@ -103,7 +103,7 @@ In the screenshot below, you can see the recorded value from the above example:
 
 ![Resource Property](./media/task-activities/resource-property-pdc.webp)
 
-Resource Properties and their associated data are displayed here. These properties are defined in SAP Business One using ProcessForce and cannot be configured directly within CompuTec PDC. They can be assigned either to a Resource or to a specific Resource within a particular Manufacturing Order.
+Resource Properties and their associated data are displayed here. These properties are defined in SAP Business One using CompuTec ProcessForce and cannot be configured directly within CompuTec PDC. They can be assigned either to a Resource or to a specific Resource within a particular Manufacturing Order.
 
 <details>
 <summary>Click here to expand</summary>
@@ -338,7 +338,7 @@ After selecting all required employees, move them to the Assigned section and cl
 - Additionally, the team leader sets the produced quantity on the resource upon completion.
 - Instead of creating separate Time Booking entries for each employee, a One-Time Booking document is generated for the resource and the assigned employees.
 
-Click [here](/docs/processforce/user-guide/manufacturing/time-booking/teams) to find out more about related ProcessForce options.
+Click [here](/docs/processforce/user-guide/manufacturing/time-booking/teams) to find out more about related CompuTec ProcessForce options.
 
 **Independent Work Completion**
 
@@ -349,7 +349,7 @@ Each employee can finish work independently, for instance, to change resources o
 
 ### Activity
 
-This feature is part of the standard SAP Business One functionality. You can configure an Activity (e.g., Conversation, Note) and an Activity Type (e.g., General, Internal) in [ProcessForce General Settings](../../administrator-guide/setting-up-the-application/overview.md#processforce-settings).
+This feature is part of the standard SAP Business One functionality. You can configure an Activity (e.g., Conversation, Note) and an Activity Type (e.g., General, Internal) in [CompuTec ProcessForce General Settings](../../administrator-guide/setting-up-the-application/overview.md#processforce-settings).
 When selecting the Activity option from the CompuTec PDC interface, an activity is automatically created with predefined settings. This ensures the activity is linked to a specific Manufacturing Order, Operation, or Resource (depending on the Task tile from which it is initiated) and the employee currently logged into CompuTec PDC.
 
 ### Technical Instruction
@@ -451,7 +451,7 @@ Click [here](./downtime.md) to find out more.
 
     **Pass to other**: this option adds the task to a specified employee. After accepting the task, it is passed to the chosen employee. It has to be started manually from the chosen employee level.
 
-    **Pass to other Resource**: this option allows you to transfer a task to another resource when registering a time booking or downtime. Upon selecting this option, a drop-down list of alternative resources defined for the current resource will appear. You can only switch the task to an alternative resource with the same machine type as the current resource. Click [here](/docs/processforce/user-guide/scheduling/gantt-chart/alternative-resources) to learn more about defining alternative resources in ProcessForce.
+    **Pass to other Resource**: this option allows you to transfer a task to another resource when registering a time booking or downtime. Upon selecting this option, a drop-down list of alternative resources defined for the current resource will appear. You can only switch the task to an alternative resource with the same machine type as the current resource. Click [here](/docs/processforce/user-guide/scheduling/gantt-chart/alternative-resources) to learn more about defining alternative resources in CompuTec ProcessForce.
 
     To be able to pass a Task to another Resource it is required to check Is enabled Move to Other Resource in [Employee Master Data](../../administrator-guide/setting-up-the-application/overview.md#setting-up-computec-pdc-application).
 

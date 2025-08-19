@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Creating QC test from Batch Record
 
-Quality assurance is a critical component of maintaining product standards, and the ability to generate a Quality Control Test directly from the Batch Master Data form simplifies this process. This feature, integrated into ProcessForce and SAP Business One, ensures consistency and accuracy by utilizing predefined Test Protocols tied to specific items, revisions, and warehouses.
+Quality assurance is a critical component of maintaining product standards, and the ability to generate a Quality Control Test directly from the Batch Master Data form simplifies this process. This feature, integrated into CompuTec ProcessForce and SAP Business One, ensures consistency and accuracy by utilizing predefined Test Protocols tied to specific items, revisions, and warehouses.
 
 ---
 

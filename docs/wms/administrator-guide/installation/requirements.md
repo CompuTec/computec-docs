@@ -110,7 +110,7 @@ CompuTec WMS supports all database versions compatible with the currently suppor
 
 ## CompuTec ProcessForce API
 
-If CompuTec ProcessForce is installed, CompuTec WMS requires CompuTec ProcessForce API to work correctly. ProcessForce API has to be in the exact version as CompuTec ProcessForce installed on the database.
+If CompuTec ProcessForce is installed, CompuTec WMS requires CompuTec ProcessForce API to work correctly. CompuTec ProcessForce API has to be in the exact version as CompuTec ProcessForce installed on the database.
 
 ## Preparing the Environment: Installation Order
 

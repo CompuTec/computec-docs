@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# SAP Business One or ProcessForce does not Start
+# SAP Business One or CompuTec ProcessForce does not Start
 
 ---
 
@@ -94,16 +94,16 @@ Reinstall the SAP Business One client on the affected workstation. Please refer 
 
 Reinstall the SAP Business One client on the affected workstation. Please refer to SAP Note [1989534](https://me.sap.com/notes/1989534) for details.
 
-## Reinstall ProcessForce correctly
+## Reinstall CompuTec ProcessForce correctly
 
-How to reinstall ProcessForce add-on correctly (in case of any old ProcessForce API library is still stored in the system):
+How to reinstall CompuTec ProcessForce add-on correctly (in case of any old CompuTec ProcessForce API library is still stored in the system):
 
 1. Run SAP Business One client with administrative permissions (option available from right mouse click menu on SAP Business One icon).
-2. Unregister ProcessForce add-on from SAP Business One Client (Administration > Add-Ons > Add-On Administration).
-3. Restart SAP Business One Client to complete the ProcessForce dismounting process.
-4. Check the Task Manager on the server – there still can be some ProcessForce.exe processes (if are, please log off users and terminate these processes).
+2. Unregister CompuTec ProcessForce add-on from SAP Business One Client (Administration > Add-Ons > Add-On Administration).
+3. Restart SAP Business One Client to complete CompuTec ProcessForce dismounting process.
+4. Check the Task Manager on the server – there still can be some CompuTec ProcessForce.exe processes (if are, please log off users and terminate these processes).
 5. If you are using CompuTec WMS on this server, please stop CompuTec WMS Server and terminate all CompuTec.Client.Desktop.exe processes.
-6. Remove ProcessForce API from Windows Programs & features.
-7. Register ProcessForce add-on again.
+6. Remove CompuTec ProcessForce API from Windows Programs & features.
+7. Register CompuTec ProcessForce add-on again.
 
-**Note**: Above steps should be done when nobody is using SAP Business One client with ProcessForce add-on (out of working hours).
+**Note**: Above steps should be done when nobody is using SAP Business One client with CompuTec ProcessForce add-on (out of working hours).

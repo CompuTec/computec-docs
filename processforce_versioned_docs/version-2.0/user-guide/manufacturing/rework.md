@@ -4,7 +4,7 @@ sidebar_position: 14
 
 # Rework
 
-Rework is an essential part of manufacturing that ensures product quality and minimizes waste. ProcessForce offers multiple ways to handle rework, depending on the type of issue, the stage in production, and the required documentation. Choosing the right method helps maintain efficiency while ensuring traceability and compliance. Below are three key methods for managing rework in ProcessForce:
+Rework is an essential part of manufacturing that ensures product quality and minimizes waste. CompuTec ProcessForce offers multiple ways to handle rework, depending on the type of issue, the stage in production, and the required documentation. Choosing the right method helps maintain efficiency while ensuring traceability and compliance. Below are three key methods for managing rework in CompuTec ProcessForce:
 
 ## Rollback
 
@@ -24,7 +24,7 @@ To issue rework to production:
 
 1. Open the Manufacturing Order screen.
 2. Right-click an empty area and select 'Issue and Receipts' → 'Issue Rework to Production.'
-3. ProcessForce will generate a Pick Order with the Finished Good ItemCode—update the quantity and batch numbers as needed.
+3. CompuTec ProcessForce will generate a Pick Order with the Finished Good ItemCode—update the quantity and batch numbers as needed.
 
     ![Rework](./media/rework/rework-order-1.PNG)
 

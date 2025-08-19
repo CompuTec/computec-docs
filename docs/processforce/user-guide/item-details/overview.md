@@ -245,7 +245,7 @@ Additionally, users can also define the [expiry date or consume by date (or inhe
 
 During batch creation, the expiry date is automatically calculated based on the shelf life interval.
 
-Within the Batches tab of the Item Details form, users can configure the Batch Queue Type and set Default Batch / Quality Control Status for SAP and ProcessForce receipt documents.
+Within the Batches tab of the Item Details form, users can configure the Batch Queue Type and set Default Batch / Quality Control Status for SAP and CompuTec ProcessForce receipt documents.
 
 The Inspection Date is also auto-calculated and displayed in the Batch Master Data form, as shown below.
 

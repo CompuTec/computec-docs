@@ -2,12 +2,12 @@
 sidebar_position: 1
 ---
 
-# ProcessForce API Documentation
+# CompuTec ProcessForce API Documentation
 
-The ProcessForce API enables seamless integration with external software such as PowerShell scripts and third-party add-ons. This documentation provides essential details on available objects, their properties, and methods to facilitate smooth API usage.
+CompuTec ProcessForce API enables seamless integration with external software such as PowerShell scripts and third-party add-ons. This documentation provides essential details on available objects, their properties, and methods to facilitate smooth API usage.
 
 :::info
-    Download the ProcessForce API documentation file here: [Download](https://download.computec.one/media/processforce/CompuTec_ProcessForce_API.chm)
+    Download the CompuTec ProcessForce API documentation file here: [Download](https://download.computec.one/media/processforce/CompuTec_ProcessForce_API.chm)
 :::
 
 ---
@@ -18,7 +18,7 @@ The ProcessForce API enables seamless integration with external software such as
 
 ## Documents
 
-The Documents section contains a comprehensive list of all objects available through the ProcessForce API, including their properties and methods. Descriptions will be added progressively. The example below illustrates the path to a list of Cost Category properties and methods, with similar paths generated for other objects:
+The Documents section contains a comprehensive list of all objects available through CompuTec ProcessForce API, including their properties and methods. Descriptions will be added progressively. The example below illustrates the path to a list of Cost Category properties and methods, with similar paths generated for other objects:
 
 ![Documents](./media/processforce-api-doc/documents.webp)
 

@@ -16,11 +16,11 @@ sidebar_position: 8
 
 ## Plugins Configuration
 
-1. Install **ProcessForce** and the [MI360 plugin](/docs/appengine/2.0/releases/plugins/mi360/download).
+1. Install **CompuTec ProcessForce** and the [MI360 plugin](/docs/appengine/2.0/releases/plugins/mi360/download).
 
     ![Plugins Configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/Plugins.jpg)
 
-2. Activate both **ProcessForce** and **MI360** for your company.
+2. Activate both **CompuTec ProcessForce** and **MI360** for your company.
 
     ![Plugins Configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/image2021-4-27-14-45-43.png)
 

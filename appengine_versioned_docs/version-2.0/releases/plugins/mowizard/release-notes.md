@@ -29,7 +29,7 @@ sidebar_position: 1
 | Bug | Incorrect label of the form for creating a New Scenario. | SPROC-14723 |
 | Bug | It is not possible to generate a Manufacturing Order for a Bill of Materials containing a Phantom Bill of Materials. | - |
 | Bug | Planning tab: Document Numbering Series is not available from the drop-down list. | - |
-| Bug | The classification value is not copied to child MOs (the issue fixed in ProcessForce). | - |
+| Bug | The classification value is not copied to child MOs (the issue fixed in CompuTec ProcessForce). | - |
 
 ---
 

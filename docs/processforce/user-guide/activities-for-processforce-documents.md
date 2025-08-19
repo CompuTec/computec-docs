@@ -3,9 +3,9 @@ sidebar_position: 16
 toc_max_heading_level: 2
 ---
 
-# Activities for ProcessForce Documents
+# Activities for CompuTec ProcessForce Documents
 
-SAP Business One Activities provide a powerful tool to manage interactions and tasks related to various business processes. These activities allow users to record and track interactions with business partners, such as meetings, phone calls, or follow-up tasks. By integrating activities with ProcessForce documents, businesses can streamline their workflows and ensure efficient tracking of critical processes, such as Manufacturing Orders, Complaints, Quality Control tests, and more. This integration helps businesses improve communication, increase accountability, and maintain clear documentation of all relevant actions.
+SAP Business One Activities provide a powerful tool to manage interactions and tasks related to various business processes. These activities allow users to record and track interactions with business partners, such as meetings, phone calls, or follow-up tasks. By integrating activities with CompuTec ProcessForce documents, businesses can streamline their workflows and ensure efficient tracking of critical processes, such as Manufacturing Orders, Complaints, Quality Control tests, and more. This integration helps businesses improve communication, increase accountability, and maintain clear documentation of all relevant actions.
 
 ---
 

@@ -30,7 +30,7 @@ To manage user permissions:
 
 ## Authorization Levels
 
-Each ProcessForce-related function can be assigned one of the following access levels:
+Each CompuTec ProcessForce-related function can be assigned one of the following access levels:
 
 - **Full Authorization**: Create, modify, and post documents.
 - **Read Only**: View content without making changes.
@@ -55,7 +55,7 @@ To assign superuser status:
 
 ## Required Authorizations for Key Transactions
 
-To work with specific ProcessForce documents (e.g., production-related inventory transactions), users need the following permissions:
+To work with specific CompuTec ProcessForce documents (e.g., production-related inventory transactions), users need the following permissions:
 
 - **Goods Receipt and Goods Issue**: Authorizations form → Inventory → Inventory Transactions → Goods Receipt [and] Goods Issue
 - **Journal Entry**: This setting is required for Goods Receipt and Goods Issue to reflect on financials: Authorizations Form → Financials → Journal Entry

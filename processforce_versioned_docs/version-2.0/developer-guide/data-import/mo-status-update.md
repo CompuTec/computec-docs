@@ -6,7 +6,7 @@ sidebar_position: 3
 
 In this tutorial, we’ll walk through a PowerShell script designed to update the status of Manufacturing Orders (MOs) in CompuTec ProcessForce, an advanced manufacturing solution integrated with SAP Business One. The script fetches Manufacturing Orders based on an SQL query and updates their status accordingly.
 
-This guide explains each section of the script in detail, ensuring that users can modify and execute it confidently. The script leverages the ProcessForce API to connect to SAP Business One, retrieve MO data, and apply updates efficiently.
+This guide explains each section of the script in detail, ensuring that users can modify and execute it confidently. The script leverages CompuTec ProcessForce API to connect to SAP Business One, retrieve MO data, and apply updates efficiently.
 
 ---
 
@@ -32,15 +32,15 @@ $SCRIPT_VERSION = "3.0"
 Write-Host -backgroundcolor Yellow -foregroundcolor DarkBlue ("Script Version:" + $SCRIPT_VERSION)
 #endregion
  
-#region #ProcessForce API library usage
+#region #CompuTec ProcessForce API library usage
 # You need to check in what architecture PowerShell ISE is running (x64 or x86),
-# you need run PowerShell ISE in the same architecture like ProcessForce API is installed (check in Windows -> Programs & Features)
+# you need run PowerShell ISE in the same architecture like CompuTec ProcessForce API is installed (check in Windows -> Programs & Features)
 # Examples:
-#     SAP Client x64 + ProcessForce x64 installed on DB/Company => ProcessForce API x64 => Windows PowerShell ISE
-#     SAP Client x86 + ProcessForce x86 installed on DB/Company => ProcessForce API x86 => Windows PowerShell ISE x86
+#     SAP Client x64 + CompuTec ProcessForce x64 installed on DB/Company => CompuTec ProcessForce API x64 => Windows PowerShell ISE
+#     SAP Client x86 + CompuTec ProcessForce x86 installed on DB/Company => CompuTec ProcessForce API x86 => Windows PowerShell ISE x86
 ```
 
-To interact with SAP Business One and ProcessForce, the script loads the necessary API library:
+To interact with SAP Business One and CompuTec ProcessForce, the script loads the necessary API library:
 
 ```powershell
 [System.Reflection.Assembly]::LoadWithPartialName("CompuTec.ProcessForce.API")
@@ -97,7 +97,7 @@ $pfcCompany.UserName = $xmlConnection.UserName;
 $pfcCompany.Password = $xmlConnection.Password;
 ```
 
-This method allows checking the ProcessForce add-on version:
+This method allows checking CompuTec ProcessForce add-on version:
 
 ```powershell
 write-host -backgroundcolor yellow -foregroundcolor black  "Trying connect..."
@@ -153,7 +153,7 @@ This SQL query command is executed to retrieve information from the database. Yo
 $SQLQuery = "SELECT ""DocEntry"", ""DocNum"", 'CL' AS ""StatusCode"" FROM ""@CT_PF_OMOR"" WHERE ""U_RequiredDate"" < '2018-07-01' AND ""U_Status"" = 'FI' ";
 ```
 
-A QueryManager object is created using ProcessForce API. This object will be used for running the SQL query defined above:
+A QueryManager object is created using CompuTec ProcessForce API. This object will be used for running the SQL query defined above:
 
 ```powershell
 $queryManager = New-Object 'CompuTec.Core.DI.Database.QueryManager'
@@ -203,7 +203,7 @@ $DocNum = $recordSet.Fields.Item('DocNum').Value;
 $Status = $recordSet.Fields.Item('StatusCode').Value;
 ```
 
-Creation of Manufacturing Order Object is done by using `CreatePFObject` method on a Company object. It is possible to create different ProcessForce objects using this method. To create a different object, you will need to change ManufacturingOrder to desired object code. For example, for ItemDetails it will look like this: $pfcCompany.CreatePFObject([CompuTec.ProcessForce.API.Core.ObjectTypes]::ItemDetails):
+Creation of Manufacturing Order Object is done by using `CreatePFObject` method on a Company object. It is possible to create different CompuTec ProcessForce objects using this method. To create a different object, you will need to change ManufacturingOrder to desired object code. For example, for ItemDetails it will look like this: $pfcCompany.CreatePFObject([CompuTec.ProcessForce.API.Core.ObjectTypes]::ItemDetails):
 
 ```powershell
 $mo = $pfcCompany.CreatePFObject([CompuTec.ProcessForce.API.Core.ObjectTypes]::ManufacturingOrder)
@@ -224,7 +224,7 @@ if ($result -ne 0) {
 }
 ```
 
-This is a switch method. It allows us to set a correct status from ProcessForce API to the $MORStatus variable. This way, we can check if provided status code is correct. If not, an exception is thrown(140):
+This is a switch method. It allows us to set a correct status from CompuTec ProcessForce API to the $MORStatus variable. This way, we can check if provided status code is correct. If not, an exception is thrown(140):
 
 ```powershell
 switch ($Status) {

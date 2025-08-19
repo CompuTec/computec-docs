@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-The ProcessForce scheduling solution enables effective management of Manufacturing Orders (MOs) within the plant. It facilitates production planning by accounting for factors such as resource availability, time constraints, and overlapping processes. The solution features an interactive and flexible Gantt chart that allows users to easily modify schedules as needed. Additionally, advanced filtering options—such as MO number, dates, planned start and end times, distribution rules, projects, Sales Order numbers, or Customer Codes—allow users to display specific data tailored to their requirements.
+The CompuTec ProcessForce scheduling solution enables effective management of Manufacturing Orders (MOs) within the plant. It facilitates production planning by accounting for factors such as resource availability, time constraints, and overlapping processes. The solution features an interactive and flexible Gantt chart that allows users to easily modify schedules as needed. Additionally, advanced filtering options—such as MO number, dates, planned start and end times, distribution rules, projects, Sales Order numbers, or Customer Codes—allow users to display specific data tailored to their requirements.
 
 ---
 

@@ -33,14 +33,14 @@ Adding a unique **prefix** to the User-Defined Fields (UDFs) name - typically ba
 
 ## Example
 
-Let's say you want to add a custom field for weight to a ProcessForce Bill of Materials (BOM) form:
+Let's say you want to add a custom field for weight to CompuTec ProcessForce Bill of Materials (BOM) form:
 
 - Chosen Prefix: AB
 - Custom Field Name: weight
 - Resulting UDF Name: AB_weight
 - Stored in Database as: U_AB_weight
 
-This naming pattern will help future developers, support teams, and upgrade tools recognize and isolate custom content from standard ProcessForce logic.
+This naming pattern will help future developers, support teams, and upgrade tools recognize and isolate custom content from standard CompuTec ProcessForce logic.
 
 ---
 

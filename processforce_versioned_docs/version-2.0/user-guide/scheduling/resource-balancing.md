@@ -80,7 +80,7 @@ Once enabled, Resource Balancing will automatically perform resource selection d
 A feature is available to log all actions related to the Resource Balancing function, capturing detailed information on every scheduling or rescheduling action.
 
 :::danger
-    Please be aware that enabling this feature will generate detailed logs, which may impact the performance of ProcessForce.
+    Please be aware that enabling this feature will generate detailed logs, which may impact the performance of CompuTec ProcessForce.
 :::
 
 To activate the option, perform the following steps:

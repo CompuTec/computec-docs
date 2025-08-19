@@ -17,7 +17,7 @@ This page lists the available **CompuTec ProcessForce print layout files**, incl
 ## Update and Availability Notes
 
 > ℹ️ **Ongoing Updates**  
-Updated and corrected print layouts are published on this page until they are fully integrated into the ProcessForce installer.
+Updated and corrected print layouts are published on this page until they are fully integrated into CompuTec ProcessForce installer.
 
 > ℹ️ **Issue Reporting**  
 To report issues with any listed report, use the [CompuTec Support Portal](http://support.computec.pl/) (select the *Support ProcessForce* project, and the *Print Layouts or Reports* component).

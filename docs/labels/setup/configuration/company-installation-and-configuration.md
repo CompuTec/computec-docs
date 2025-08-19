@@ -110,7 +110,7 @@ These rules are called event triggers. To add a new one:
 1. Right-click on the table and choose "Add".
 2. Specify the employee and department for which the rule will be valid (you can select "All" for both values).
 3. Choose the Object Type for which the rule is set.
-4. In columns SAP, PDC, WMS, and ProcessForce, you can choose an action for a specific application with which CompuTec Labels is connected. You can choose the following actions:
+4. In columns SAP, CompuTec PDC, CompuTec WMS, and CompuTec ProcessForce, you can choose an action for a specific application with which CompuTec Labels is connected. You can choose the following actions:
 
     - **OnChange**: Printing starts on the update of a document.
     - **Add**: Printing starts with the addition of a document.
@@ -119,7 +119,7 @@ These rules are called event triggers. To add a new one:
 5. Click "Update" to save changes.
 
 :::note
-    Event Triggers are considered in CompuTec solutions: SAP CompuTec Labels add-on, CompuTec WMS, CompuTec PDC, and ProcessForce. You can print only from objects defined in this table in these solutions.
+    Event Triggers are considered in CompuTec solutions: SAP CompuTec Labels add-on, CompuTec WMS, CompuTec PDC, and CompuTec ProcessForce. You can print only from objects defined in this table in these solutions.
 :::
 
 ---

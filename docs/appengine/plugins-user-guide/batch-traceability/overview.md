@@ -14,7 +14,7 @@ Batch Traceability 360 plug-in allows to trace Item Batches through all its life
 
 Before using the Batch Traceability 360 plug-in, ensure that the prerequisites are met:
 
-ProcessForce and CompuTec Licence Server is installed and configured. For more details, refer to the installation documentation [here](/docs/processforce/administrator-guide/licensing/license-server/overview/)
+CompuTec ProcessForce and CompuTec Licence Server is installed and configured. For more details, refer to the installation documentation [here](/docs/processforce/administrator-guide/licensing/license-server/overview/)
 
 ### CompuTec AppEngine and Plug-in Installation and Configuration
 
@@ -22,15 +22,15 @@ For CompuTec AppEngine installation, follow the instructions outlined in the [In
 
 For configuring the plug-in, refer to the [Configuration and Administration](../../administrators-guide/configuration-and-administration/configuration.md) Guide.
 
-### ProcessForce
+### CompuTec ProcessForce
 
-Optionally, you can invoke the Serialization plug-in within the ProcessForce application. To enable this:
+Optionally, you can invoke the Serialization plug-in within the CompuTec ProcessForce application. To enable this:
 
 ![Batch Traceability 360](./media/overview/batch-traceability-360.png)
 
 ## Start points for function opening
 
-You can access ProcessForce Batch Traceability 360 by:
+You can access CompuTec ProcessForce Batch Traceability 360 by:
 
 - AppEngin launchpad
 - Modules Menu (check the path below)

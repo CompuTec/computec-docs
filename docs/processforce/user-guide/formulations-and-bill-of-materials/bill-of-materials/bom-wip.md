@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # WIP Items tab
 
-The WIP Items tab (Work in Process Items) in ProcessForce provides insights into the Phantom Items used in a specific Bill of Materials (BOM) or Manufacturing Order (MO). This tab helps manufacturers track intermediate products and their relationships with the parent product, ensuring accurate material usage and calculations.
+The WIP Items tab (Work in Process Items) in CompuTec ProcessForce provides insights into the Phantom Items used in a specific Bill of Materials (BOM) or Manufacturing Order (MO). This tab helps manufacturers track intermediate products and their relationships with the parent product, ensuring accurate material usage and calculations.
 
 To access WIP Items, navigate to:
 
@@ -14,7 +14,7 @@ To access WIP Items, navigate to:
     Production → Manufacturing Order → Manufacturing Order WIP Items
 :::
 
-WIP Item tab (Work in Process Item) in ProcessForce shows what [Phantom Items](../bill-of-materials/multi-level-bill-of-materials/phantom-item.md) were used on a specific Bill of Materials / Manufacturing Order.
+WIP Item tab (Work in Process Item) in CompuTec ProcessForce shows what [Phantom Items](../bill-of-materials/multi-level-bill-of-materials/phantom-item.md) were used on a specific Bill of Materials / Manufacturing Order.
 
 You can also:
 

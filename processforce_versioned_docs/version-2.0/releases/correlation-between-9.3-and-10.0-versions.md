@@ -8,7 +8,7 @@ sidebar_position: 4
 The 9.3 PL14 R10 HF1 version is the last one related to 9.3 SAP Business One version. The support for the 9.3 version is no longer continued.
 :::
 
-Here you can find a list of ProcessForce releases for SAP Business One 9.3 and 10.0 that has the same functionality*.
+Here you can find a list of CompuTec ProcessForce releases for SAP Business One 9.3 and 10.0 that has the same functionality*.
 
             | SAP Business One 9.30 | SAP Business One 10.0 |
             | --- | --- |

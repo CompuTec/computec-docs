@@ -16,12 +16,12 @@ Here you can download all CompuTec ProcessForce versions for SAP Business One 10
     Read more about the system requirements, first installation, and the upgrade of CompuTec ProcessForce extension.
 :::
 
-:::note ProcessForce and SAP Business One compatibility
-    It is possible to use any SAP Business One 10.0 version with any ProcessForce 10.0 version.
+:::note CompuTec ProcessForce and SAP Business One compatibility
+    It is possible to use any SAP Business One 10.0 version with any CompuTec ProcessForce 10.0 version.
 
     We always recommend using the latest available version.
 
-    If you decide to use any previous versions of SAP Business One, please avoid FP2105 HF1 and FP2108, as there is a DI API bug that does not allow synchronization of ProcessForce Manufacturing Orders to SAP Business One Production Orders: [3098465 - Error While Updating Production Orders Using the Data Interface (DI API)](https://launchpad.support.sap.com/#/notes/3098465)
+    If you decide to use any previous versions of SAP Business One, please avoid FP2105 HF1 and FP2108, as there is a DI API bug that does not allow synchronization of CompuTec ProcessForce Manufacturing Orders to SAP Business One Production Orders: [3098465 - Error While Updating Production Orders Using the Data Interface (DI API)](https://launchpad.support.sap.com/#/notes/3098465)
 
     It was fixed by SAP in FP2108 HF1.
 :::
@@ -78,7 +78,7 @@ Here you can download CompuTec ProcessForce API installers.
 
     CompuTec PDC 3.x and higher is based on CompuTec AppEngine and doesn't require local CompuTec ProcessForce API installation any more.
 
-    Please also note that if you use ProcessForce API on the same machine where ProcessForce extension is used, you need to first upgrade ProcessForce API to the same version as the new ProcessForce extension before you start its upgrade. Otherwise, the upgrade will fail.
+    Please also note that if you use CompuTec ProcessForce API on the same machine where ProcessForce extension is used, you need to first upgrade CompuTec ProcessForce API to the same version as the new ProcessForce extension before you start its upgrade. Otherwise, the upgrade will fail.
 :::
 
 ### Latest Release
@@ -127,9 +127,9 @@ Here you can download CompuTec License Server for CompuTec ProcessForce.
 :::
 
 :::danger
-    Remove previous version of ProcessForce License Server (1.0.0.0) and SAP COM License Bridge in case you used them (with ProcessForce 8.81 / 8.82 / 9.0 PL05 - PL08 HotFix) before installing the new version.
+    Remove previous version of CompuTec ProcessForce License Server (1.0.0.0) and SAP COM License Bridge in case you used them (with CompuTec ProcessForce 8.81 / 8.82 / 9.0 PL05 - PL08 HotFix) before installing the new version.
 
-    Remove previous version of ProcessForce, and ProcessForce API if it's lower than version 10.
+    Remove previous version of CompuTec ProcessForce, and CompuTec ProcessForce API if it's lower than version 10.
 :::
 
 :::info

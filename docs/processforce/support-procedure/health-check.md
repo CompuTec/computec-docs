@@ -35,7 +35,7 @@ When you run the Health Check, the results are displayed in a table with the fol
 
 ## What the Health Check does
 
-The Health Check in ProcessForce scans various system parameters, configuration settings, and data integrity rules to detect any anomalies. Its goal is to proactively catch issues before they affect daily operations.
+The Health Check in CompuTec ProcessForce scans various system parameters, configuration settings, and data integrity rules to detect any anomalies. Its goal is to proactively catch issues before they affect daily operations.
 
 Each test run checks for:
 

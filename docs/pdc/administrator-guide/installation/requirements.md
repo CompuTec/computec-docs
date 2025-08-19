@@ -35,7 +35,7 @@ For optimal performance, it is recommended to install the latest .NET Framework 
 - [Microsoft .NET Framework 4.7 (Web Installer)](https://support.microsoft.com/en-us/topic/the-net-framework-4-7-offline-installer-for-windows-f32bcb33-5f94-57ce-6120-62c9526a91f2)
 
 :::info
-CompuTec PDC requires a minimum version of SAP Business One, as specified for each CompuTec PDC version. You can find this information on the Download page under the column [Database / ProcessForce API Related Version](https://learn.computec.one/docs/pdc/releases/download#for-100).
+CompuTec PDC requires a minimum version of SAP Business One, as specified for each CompuTec PDC version. You can find this information on the Download page under the column [Database / CompuTec ProcessForce API Related Version](https://learn.computec.one/docs/pdc/releases/download#for-100).
 
 It is necessary to install same versions (32-bit or 64-bit) of the following components:
 

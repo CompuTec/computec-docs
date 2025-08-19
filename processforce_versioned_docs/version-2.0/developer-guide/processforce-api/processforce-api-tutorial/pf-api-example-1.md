@@ -4,11 +4,11 @@ sidebar_position: 2
 
 # Example 1: Connecting to Database
 
-To establish a connection to the database using the ProcessForce API, follow these steps:
+To establish a connection to the database using CompuTec ProcessForce API, follow these steps:
 
 - Add references to Computec.ProcessForce.API.dll and SAPbobsCOM.dll.
-- After installing ProcessForce on your computer, you can locate CompuTec.ProcessForce.API.dll. reference within the .NET references folder.
-- The base object in the API is IProcessForceCompany, found within CompuTec.ProcessForce.API namespace. This object facilitates the creation of SAP and ProcessForce entities.
+- After installing CompuTec ProcessForce on your computer, you can locate CompuTec.ProcessForce.API.dll. reference within the .NET references folder.
+- The base object in the API is IProcessForceCompany, found within CompuTec.ProcessForce.API namespace. This object facilitates the creation of SAP and CompuTec ProcessForce entities.
 - It must be created using ProcessForceCompanyInitializator.CreateCompany();
 
 ```csharp

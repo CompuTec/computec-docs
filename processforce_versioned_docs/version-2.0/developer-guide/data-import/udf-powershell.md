@@ -4,13 +4,13 @@ sidebar_position: 5
 
 # User Defined Fields in PowerShell Scripts
 
-When working with ProcessForce objects in PowerShell scripts, you may need to assign values to User Defined Fields (UDFs). This guide explains the correct syntax and best practices for setting UDF values, ensuring proper data handling and script execution.
+When working with CompuTec ProcessForce objects in PowerShell scripts, you may need to assign values to User Defined Fields (UDFs). This guide explains the correct syntax and best practices for setting UDF values, ensuring proper data handling and script execution.
 
 ---
 
 ## General Rule
 
-To assign a value to a User Defined Field in a ProcessForce object, use the following syntax:
+To assign a value to a User Defined Field in CompuTec ProcessForce object, use the following syntax:
 
 ```powershell
 $PFObject.UDFItems.Item("U_UDF1").Value =  'some value';

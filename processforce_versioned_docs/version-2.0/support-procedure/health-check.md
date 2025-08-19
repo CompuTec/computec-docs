@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Health Check
 
-ProcessForce Health Check is an option that can help diagnose some of the problems with ProcessForce. The information in this form suggests a resolution to be performed by a User. It can also be a clue for a support team consultant. Therefore, sending results from this form to a support ticket is good.
+CompuTec ProcessForce Health Check is an option that can help diagnose some of the problems with CompuTec ProcessForce. The information in this form suggests a resolution to be performed by a User. It can also be a clue for a support team consultant. Therefore, sending results from this form to a support ticket is good.
 
 :::info Path
     Upper menu → Help → Support Desk → Health Check.

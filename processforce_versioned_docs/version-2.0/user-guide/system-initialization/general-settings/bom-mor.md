@@ -6,7 +6,7 @@ toc_max_heading_level: 2
 
 # Bill of Materials and Manufacturing Orders tab
 
-This section provides detailed configuration options for managing Bills of Materials (BOM) and Manufacturing Orders (MOR) within ProcessForce. The tab allows users to define default calculation formulas, manage SAP synchronization, set manufacturing priorities, and optimize planning for semi-finished products.
+This section provides detailed configuration options for managing Bills of Materials (BOM) and Manufacturing Orders (MOR) within CompuTec ProcessForce. The tab allows users to define default calculation formulas, manage SAP synchronization, set manufacturing priorities, and optimize planning for semi-finished products.
 
 This document outlines the key features and functionalities available in this tab to help users better understand and configure their manufacturing operations effectively.
 
@@ -24,7 +24,7 @@ Administration → System Initialization → General Settings → ProcessForce t
 
 CompuTec ProcessForce offers a versatile approach for defining the relationships between parent items, coproducts, scrap, phantoms, scrap percentages, and factors.
 
-When a Bill of Material is created, these default formats are automatically assigned to each item. The formula, as shown, is included in this tab during the installation of ProcessForce.
+When a Bill of Material is created, these default formats are automatically assigned to each item. The formula, as shown, is included in this tab during the installation of CompuTec ProcessForce.
 
 ![Formulas](./media/bom-mor/general-settings-bill-of-materials-and-manufacturing-orders-formulas.webp)
 
@@ -72,7 +72,7 @@ There are no default formulas set up for Yield. Click [here](../../formulations-
 ## Enable Synchronization
 
 - SAP Business One utilizes data from the Item Master Data Inventory Data tab to determine MRP make-or-buy recommendations.
-- ProcessForce integrates with SAP Business One using the MRP Wizard, enabling seamless synchronization.
+- CompuTec ProcessForce integrates with SAP Business One using the MRP Wizard, enabling seamless synchronization.
 - Further details can be found in the MRP Tab.
 
 ### Bill of Materials
@@ -163,7 +163,7 @@ You can check (and change – if it is in any other than Finished status) Prior
 
 ## Automatically Calculate Ratio on Operations
 
-You can enable the "Automatically Calculate Ratio on Operations" feature in General Settings under the ProcessForce, Bill of Materials, and Manufacturing Orders tab. When this feature is activated, the system automatically determines the Ratio and Quantity. For example, if an Item is assigned to two Operations, the ratio will be set to 0.5, and the Binding Quantity will be calculated based on the remaining balance and the corresponding Bill of Materials quantity.
+You can enable the "Automatically Calculate Ratio on Operations" feature in General Settings under the CompuTec ProcessForce, Bill of Materials, and Manufacturing Orders tab. When this feature is activated, the system automatically determines the Ratio and Quantity. For example, if an Item is assigned to two Operations, the ratio will be set to 0.5, and the Binding Quantity will be calculated based on the remaining balance and the corresponding Bill of Materials quantity.
 
 For more details, click [here](../../formulations-and-bill-of-materials/production-process/overview.md#operation-bind-ratio)
 

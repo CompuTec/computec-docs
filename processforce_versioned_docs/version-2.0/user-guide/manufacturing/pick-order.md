@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Pick Order
 
-Efficient inventory management is critical for smooth manufacturing operations, and the Pick Order function in ProcessForce plays a key role in ensuring the right materials are available at the right time. This feature facilitates the picking process by offering both automatic and manual creation options, improving efficiency and accuracy in inventory handling.
+Efficient inventory management is critical for smooth manufacturing operations, and the Pick Order function in CompuTec ProcessForce plays a key role in ensuring the right materials are available at the right time. This feature facilitates the picking process by offering both automatic and manual creation options, improving efficiency and accuracy in inventory handling.
 
 ---
 

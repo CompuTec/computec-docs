@@ -4,8 +4,8 @@ sidebar_position: 2
 
 # Item Master Data Setup
 
-Item Master Data is a critical component in SAP Business One, enabling efficient inventory and production management. When using ProcessForce, specific fields within the Item Master Data setup influence manufacturing, procurement, and license plate functionality. This guide outlines the key fields and their roles in ProcessForce.
-
+Item Master Data is a critical component in SAP Business One, enabling efficient inventory and production management. When using CompuTec ProcessForce, specific fields within the Item Master Data setup influence manufacturing, procurement, and license plate functionality. This guide outlines the key fields and their roles in CompuTec ProcessForce.
+ 
 To access Item Master Data Setup, navigate to:
 
 :::note Path
@@ -14,7 +14,7 @@ To access Item Master Data Setup, navigate to:
 
 ---
 
-When setting up Item Master Data within SAP Business One, the following fields are used by ProcessForce:
+When setting up Item Master Data within SAP Business One, the following fields are used by CompuTec ProcessForce:
 
 ## Form Header
 
@@ -23,7 +23,7 @@ When setting up Item Master Data within SAP Business One, the following fields a
 - **Sales Item, Inventory Item, Purchase Item, Fixed Assets Item**: these fields should remain unchecked when Phantom Item is also unchecked for Co-Product production in General Settings.
 
   :::note
-      When using license plates, ProcessForce automatically generates a license plate number and assigns it to the Item Master, following the defined Item Group code.
+      When using license plates, CompuTec ProcessForce automatically generates a license plate number and assigns it to the Item Master, following the defined Item Group code.
   :::
 
 ## General tab

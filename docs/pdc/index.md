@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction to CompuTec PDC
 
-Welcome to the CompuTec PDC Documentation. CompuTec PDC stands for CompuTec Plant Data Capture. This application allows to record production tasks by using ProcessForce Time Bookings documents directly from the production floor.
+Welcome to the CompuTec PDC Documentation. CompuTec PDC stands for CompuTec Plant Data Capture. This application allows to record production tasks by using CompuTec ProcessForce Time Bookings documents directly from the production floor.
 
 This is a basic tutorial. You will be installing and starting the application, setting it up, and creating tasks for a specific resource.
 
@@ -17,7 +17,7 @@ To start working with CompuTec PDC you must:
 - [download](./releases/download.md) the CompuTec PDC installation file and install it according to the instructions. Be sure to fulfill the requirements
 - obtain a license file from CompuTec support and install it via CompuTec License Server. You can check how to do this here
 - run the application by clicking its icon on a program list or a shortcut and set it up.
-- log in using ProcessForce employee username and password (defined in SAP Business One with ProcessForce: Human Resources > Employee Master Data)
+- log in using CompuTec ProcessForce employee username and password (defined in SAP Business One with CompuTec ProcessForce: Human Resources > Employee Master Data)
 - CompuTec PDC is ready to work.
 
 ### Adding a New Task

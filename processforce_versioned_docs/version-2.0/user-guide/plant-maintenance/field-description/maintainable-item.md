@@ -315,7 +315,7 @@ B – Maintainable Item Master Data header's (tab Effective Meters) lines with E
 - **Description**: describe the inspection point.
 - **Point Type**: inspection point type (please check [here](#point-type)) to associate with the MI. The system automatically populates the point type description, Class, and Class Description.
 - **Class, Description**: classification, please see [here](#classes).
-- **MES IP Code, MES IP Description, MES IP Class, MES IP Category**: agreed on the ID of the Inspection Point between MES and ProcessForce (during the integration process). Please check [here](#mes-inspection-point).
+- **MES IP Code, MES IP Description, MES IP Class, MES IP Category**: agreed on the ID of the Inspection Point between MES and CompuTec ProcessForce (during the integration process). Please check [here](#mes-inspection-point).
 
 #### Point Type
 
@@ -341,7 +341,7 @@ To access MES Inspection Point, navigate to:
 
 ![MES](./media/maintainable-item/mes.png)
 
-- **MES Inspection Point Code**: agreed on the ID of the Inspection Point between MES and ProcessForce (during the integration process)
+- **MES Inspection Point Code**: agreed on the ID of the Inspection Point between MES and CompuTec ProcessForce (during the integration process)
 - **Description**: descriptive information about MES IP
 - **Class**: allows grouping MES Inspection Points Codes
 - **Category**: allows grouping MES Inspection Points Codes

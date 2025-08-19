@@ -4,9 +4,9 @@ sidebar_position: 4
 
 # Document Numbering
 
-Document Numbering is an essential feature in SAP Business One and ProcessForce, ensuring that all newly created documents receive a unique and sequential number. By default, the document series starts at 1, but it can be adjusted to any other starting value. Each new document is automatically assigned the next number in the predefined sequence, helping maintain order and consistency in transaction records.
+Document Numbering is an essential feature in SAP Business One and CompuTec ProcessForce, ensuring that all newly created documents receive a unique and sequential number. By default, the document series starts at 1, but it can be adjusted to any other starting value. Each new document is automatically assigned the next number in the predefined sequence, helping maintain order and consistency in transaction records.
 
-In SAP Business One, Document Numbering applies to both standard transactions and ProcessForce-specific documents, allowing businesses to organize their records efficiently.
+In SAP Business One, Document Numbering applies to both standard transactions and CompuTec ProcessForce-specific documents, allowing businesses to organize their records efficiently.
 
 :::info Path
     Administration → System Initialization → Document Numbering

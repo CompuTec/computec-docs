@@ -20,8 +20,8 @@ Administration → System Initialization → General Settings → ProcessForce t
 
 The following options are available in the General tab of the CompuTec ProcessForce General Settings. These settings control system behavior related to production, scheduling, automation, and user interface visibility within SAP Business One.
 
-- **Enable standard functionality of SAP Business One's Production menu**: Displays all default SAP Business One production menu entries alongside ProcessForce menus.
-- **Enable the standard functionality of the Resources menu**: When enabled, standard SAP Business One resource menu options are visible (excluding the ProcessForce-specific Resource menu).
+- **Enable standard functionality of SAP Business One's Production menu**: Displays all default SAP Business One production menu entries alongside CompuTec ProcessForce menus.
+- **Enable the standard functionality of the Resources menu**: When enabled, standard SAP Business One resource menu options are visible (excluding the CompuTec ProcessForce-specific Resource menu).
 - **Display on the Gantt chart**: Defines what information appears by default on the Gantt chart task bars. Options include Related Resource Code, Resource Remarks, Manufacturing Order Number, Item Code, Planned Quantity, Actual Quantity, Required Date, and Priority.
     :::tip
         Use the Resource Remarks field to add custom text labels to Gantt chart progress bars.
@@ -60,7 +60,7 @@ The following options are available in the General tab of the CompuTec ProcessFo
 
 - **Automatically select linked children of MORs**: Automatically enables the Link Child MORs checkbox when creating manufacturing orders from Sales Orders.
 - **Disable copying of the revisions after duplicating the item**: Prevents associated revisions from being copied when duplicating an Item Master Data record.
-- **Hide ProcessForce-related controls on the Sales Order form**: Hides ProcessForce-specific fields from the Sales Order header area.
+- **Hide ProcessForce-related controls on the Sales Order form**: Hides CompuTec ProcessForce-specific fields from the Sales Order header area.
 
     ![ProcessForce Fields](./media/general-tab/sales-order-processforce-fields.webp)
 
@@ -75,7 +75,7 @@ The following options are available in the General tab of the CompuTec ProcessFo
 ## Tips & Best Practices
 
 - **Use Gantt chart labels wisely**: Choose the display field most relevant to your planners (e.g., MO Number for order-based production).
-- **Avoid clutter**: Hide ProcessForce fields on Sales Orders if not used regularly by your team.
+- **Avoid clutter**: Hide CompuTec ProcessForce fields on Sales Orders if not used regularly by your team.
 - **Default Gantt scale**: Set to Weeks or Months for long-term planning; use Days for short-run or batch-intensive operations.
 - **Enable auto transactions**: Reduces clicks for production operators and streamlines document generation.
 

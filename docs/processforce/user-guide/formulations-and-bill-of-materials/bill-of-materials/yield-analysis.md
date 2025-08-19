@@ -4,7 +4,7 @@ sidebar_position: 9
 
 # Yield Analysis
 
-Yield Analysis is a crucial aspect of production monitoring in ProcessForce, helping manufacturers assess efficiency by comparing planned and actual production outcomes. The analysis can be simple, such as a basic Planned vs. Actual quantity comparison, or detailed, evaluating specific material usage across Parent Items, CoProducts, ByProducts, and Scrap.
+Yield Analysis is a crucial aspect of production monitoring in CompuTec ProcessForce, helping manufacturers assess efficiency by comparing planned and actual production outcomes. The analysis can be simple, such as a basic Planned vs. Actual quantity comparison, or detailed, evaluating specific material usage across Parent Items, CoProducts, ByProducts, and Scrap.
 
 ---
 

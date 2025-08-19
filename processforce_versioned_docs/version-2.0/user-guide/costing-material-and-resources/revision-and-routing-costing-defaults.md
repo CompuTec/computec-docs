@@ -8,7 +8,7 @@ Setting costing defaults for specific Revisions and Routings ensures accurate co
 
 ## Revisions
 
-ProcessForce can cost a product at a revision level.
+CompuTec ProcessForce can cost a product at a revision level.
 
 Within the Item Details form:
 

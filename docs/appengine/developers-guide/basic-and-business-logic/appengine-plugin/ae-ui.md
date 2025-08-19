@@ -136,7 +136,7 @@ In order to use [Message Translations](../framework/message-translations.md) tha
 
 ## Attaching Odata Endpoints to CompuTec AppEngine
 
-Adding an OData model to a plugin is straightforward. You can do this within the component by calling the attachSLOdataModel function. In the example below, we are attaching the OData ProcessForce endpoint with the alias ProcessForce. From this point on, you can bind controls using the path `PF>/.....` Multiple endpoints can be defined with different aliases. Note that the alias "AE" is reserved for the CompuTec AppEngine OData endpoint, which is already included in the application.
+Adding an OData model to a plugin is straightforward. You can do this within the component by calling the attachSLOdataModel function. In the example below, we are attaching the OData ProcessForce endpoint with the alias CompuTec ProcessForce. From this point on, you can bind controls using the path `PF>/.....` Multiple endpoints can be defined with different aliases. Note that the alias "AE" is reserved for the CompuTec AppEngine OData endpoint, which is already included in the application.
 
 ```typescript
 this.attachSLOdataModel("odata/ProcessForce/", "PF");

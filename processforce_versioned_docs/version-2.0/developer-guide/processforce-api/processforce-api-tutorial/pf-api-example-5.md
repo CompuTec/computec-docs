@@ -4,13 +4,13 @@ sidebar_position: 6
 
 # Example 5 Creating Actions
 
-The ProcessForce API provides a streamlined way to manage manufacturing actions, including pick orders, pick receipts, and production issues/receipts. Actions allow you to automate processes such as issuing and receiving materials, reducing manual effort, and improving production efficiency.
+CompuTec ProcessForce API provides a streamlined way to manage manufacturing actions, including pick orders, pick receipts, and production issues/receipts. Actions allow you to automate processes such as issuing and receiving materials, reducing manual effort, and improving production efficiency.
 
 This guide covers how to create different types of actions using the API.
 
 ---
 
-## How to work with Actions using ProcessForce API
+## How to work with Actions using CompuTec ProcessForce API
 
 An action is an object which gives you the possibility to:
 

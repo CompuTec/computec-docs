@@ -10,9 +10,9 @@ Effective logging is critical for troubleshooting and support. You may be asked 
 
 ## Log files directories
 
-### ProcessForce
+### CompuTec ProcessForce
 
-The ProcessForce log files are kept in the following location: `C:\ProgramData\CompuTec\CompuTec.Start`.
+CompuTec ProcessForce log files are kept in the following location: `C:\ProgramData\CompuTec\CompuTec.Start`.
 
 Choose the file that is related by time and date to the issue you are reporting:
 

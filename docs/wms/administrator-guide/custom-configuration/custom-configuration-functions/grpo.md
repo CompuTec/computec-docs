@@ -112,7 +112,7 @@ This guide provides an overview of recent updates to the Goods Receipt PO (GRPO)
 
 23. **Item Quantity PopUp from Base Document**: A warning appears if the item quantity exceeds the ordered quantity in the related Purchase Order. You can either continue or block the action (for A/P Reserve Invoice, the action can only be blocked).
 
-24. **PopUp validation Expiry Date Item**: A warning will appear if the item has an expiration date that needs validation. This is based on the ProcessForce Item Details or an MS SQL query.
+24. **PopUp validation Expiry Date Item**: A warning will appear if the item has an expiration date that needs validation. This is based on CompuTec ProcessForce Item Details or an MS SQL query.
 
 25. **Move CatchWeight quantity difference to**: This option saves any quantity differences in the specified field in SAP Business One.
     <details>

@@ -5,7 +5,7 @@ toc_max_heading_level: 2
 
 # MRP Related Configuration
 
-SAP Business One provides robust Material Requirements Planning (MRP) functionality to streamline manufacturing and supply chain processes. Proper configuration ensures seamless synchronization between ProcessForce and SAP Business One, allowing businesses to optimize inventory management, production planning, and order fulfillment.
+SAP Business One provides robust Material Requirements Planning (MRP) functionality to streamline manufacturing and supply chain processes. Proper configuration ensures seamless synchronization between CompuTec ProcessForce and SAP Business One, allowing businesses to optimize inventory management, production planning, and order fulfillment.
 
 This page displays options relevant to SAP Business One's MRP functionality.
 
@@ -17,11 +17,11 @@ This page displays options relevant to SAP Business One's MRP functionality.
 
 **When running SAP Business One MRP please ensure the following**
 
-- Ensure synchronization between the ProcessForce Bill of Material (BOM) and Manufacturing Order with SAP Business One.
-- If the sync box is left unchecked, Bill of Materials created in ProcessForce will not synchronize with SAP Business One.
-- To synchronize a Bill of Material from ProcessForce to SAP Business One, simply modify any data element within the ProcessForce BOM and click update. This action triggers the synchronization.
+- Ensure synchronization between the CompuTec ProcessForce Bill of Material (BOM) and Manufacturing Order with SAP Business One.
+- If the sync box is left unchecked, Bill of Materials created in CompuTec ProcessForce will not synchronize with SAP Business One.
+- To synchronize a Bill of Material from CompuTec ProcessForce to SAP Business One, simply modify any data element within the CompuTec ProcessForce BOM and click update. This action triggers the synchronization.
 - Even if Coproducts are not being used, reviewing the Coproducts section below is still recommended.
-- Synchronization enables supply and demand details from ProcessForce Manufacturing Orders to update and integrate with SAP Business One features, including::
+- Synchronization enables supply and demand details from CompuTec ProcessForce Manufacturing Orders to update and integrate with SAP Business One features, including::
   - Item Master Data -> Inventory Tab -> Committed and Ordered fields
   - Forecasts
   - MRP Wizard
@@ -33,7 +33,7 @@ This page displays options relevant to SAP Business One's MRP functionality.
 
 ## Documents Series
 
-- Ensure that the SAP Production Order and ProcessForce Manufacturing Order share the same starting and ending number for proper synchronization.
+- Ensure that the SAP Production Order and CompuTec ProcessForce Manufacturing Order share the same starting and ending number for proper synchronization.
 
     ![Documents Series 1](./media/mrp-related-configuration/numbering-pomo.webp)
     ![Documents Series 2](./media/mrp-related-configuration/mor-num.webp)
@@ -79,7 +79,7 @@ For instructions on creating a document series, click [here](../../document-numb
 
 ## Coproducts
 
-For businesses that manufacture Coproducts, completing this configuration is essential for ProcessForce to integrate with SAP Business One MRP functions.
+For businesses that manufacture Coproducts, completing this configuration is essential for CompuTec ProcessForce to integrate with SAP Business One MRP functions.
 
 SAP Business One does not inherently support Coproducts within its Bill of Material (BOM) functionality. To address this, during the synchronization of the Bill of Manufacturing and Manufacturing Order, a dummy BOM is created. In this setup:
 
@@ -143,7 +143,7 @@ To enable this option, follow these steps:
 1. In the SAP Business One Branches - Setup, ensure each branch has a designated default warehouse.
 2. Create a separate Default Component for each branch.
 3. Within each branch's Default Component, assign the relevant branch warehouses, ensuring at least one is set as default in the Item Master Data.
-4. In ProcessForce Branches: Components Configuration (accessible via General Settings > ProcessForce tab > MRP tab > Components Configuration for Branches), set a default warehouse. Carefully assign the appropriate warehouse to each branch.
+4. In CompuTec ProcessForce Branches: Components Configuration (accessible via General Settings > ProcessForce tab > MRP tab > Components Configuration for Branches), set a default warehouse. Carefully assign the appropriate warehouse to each branch.
 
 The same process applies to the Default Final Component. It is crucial to first define a Default Component for a specific branch before configuring the Default Final Component.
 

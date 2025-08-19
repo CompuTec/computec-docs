@@ -49,7 +49,7 @@ Response status code does not indicate success: 500 (The given key was not prese
     - `C:\ProgramData\CompuTec\License Server\CacheFolder\`
     - `C:\ProgramData\CompuTec\License Server\Licenses\`
 3. Start CompuTec License Server service.
-4. Import ProcessForce license in SAP Business One client again.
+4. Import CompuTec ProcessForce license in SAP Business One client again.
 
 ## Error message: Not authorized license assignment
 
@@ -77,21 +77,21 @@ In this example, we have a license file with 60 Professional Users loaded, 28 us
 
 ### Issue
 
-Similarly, as with SAP Business One user removal, it is necessary to unpin a ProcessForce license from the user first. Otherwise, the license will still be reserved for the removed user without the possibility to unpin it.
+Similarly, as with SAP Business One user removal, it is necessary to unpin CompuTec ProcessForce license from the user first. Otherwise, the license will still be reserved for the removed user without the possibility to unpin it.
 
 ### Solution {#solution_3}
 
-The issue will be fixed in one of the future ProcessForce releases. Until then, please contact CompuTec support in case of getting this problem.
+The issue will be fixed in one of the future CompuTec ProcessForce releases. Until then, please contact CompuTec support in case of getting this problem.
 
-## Closing SAP Business One client while trying to assign a user a ProcessForce license
+## Closing SAP Business One client while trying to assign a user CompuTec ProcessForce license
 
 ### Issue
 
-In the SAP Business One Cloud environment (managed by Cloud Control Center), the known defect is causing the closure of the SAP Business One client without any message when logged in as Partner Support User (`_PSU_1` or `_PSU_2` User Code) while trying to assign a user a ProcessForce license.
+In the SAP Business One Cloud environment (managed by Cloud Control Center), the known defect is causing the closure of the SAP Business One client without any message when logged in as Partner Support User (`_PSU_1` or `_PSU_2` User Code) while trying to assign a user a CompuTecProcessForce license.
 
 ### Investigating the cause of the problem
 
-Two aspects can cause the issue, and they can be identified by a related message (which is part of a more extensive section) in the ProcessForce log file.
+Two aspects can cause the issue, and they can be identified by a related message (which is part of a more extensive section) in the CompuTec ProcessForce log file.
 
 #### Reason 1
 
@@ -126,15 +126,15 @@ Please set the correct name of the corresponding SAP Business One License Server
 The request was aborted: Could not create SSL/TLS secure channel.
 ```
 
-The above message may occur when you try to assign a ProcessForce license to a user that does not have the required SAP Business One license – if you are sure it is not the case, please go to the Workaround section below.
+The above message may occur when you try to assign a CompuTec ProcessForce license to a user that does not have the required SAP Business One license – if you are sure it is not the case, please go to the Workaround section below.
 
 ##### Solution {#solution-05}
 
-The issue is being investigated and planned to be fixed in a future ProcessForce version.
+The issue is being investigated and planned to be fixed in a future CompuTec ProcessForce version.
 
 ##### Workaround
 
-You can assign ProcessForce licenses to users by manually preparing the content of the cache.xml file with the license assignments on the system where the connected CompuTec License Server is installed.
+You can assign CompuTec ProcessForce licenses to users by manually preparing the content of the cache.xml file with the license assignments on the system where the connected CompuTec License Server is installed.
 
 An exemplary content of the file is presented below:
 
@@ -177,7 +177,7 @@ An exemplary content of the file is presented below:
 
 `SAP-B1-LICENSE-INSTALLATION-NUMBER` you can find on About SAP Business One or About CompuTec ProcessForce window.
 
-`PF-LICENSE-UID` value you can read by copying the imported ProcessForce license file located in the following location:
+`PF-LICENSE-UID` value you can read by copying the imported CompuTec ProcessForce license file located in the following location:
 
 ```text
 C:\ProgramData\CompuTec\License Server\Licenses
@@ -193,4 +193,4 @@ The prepared cache.xml file should be saved in the following location:
 C:\ProgramData\CompuTec\License Server\CacheFolder
 ```
 
-After restarting the CompuTec License Server service and ProcessForce, you should see the license assignments in the ProcessForce License Administration window.
+After restarting the CompuTec License Server service and CompuTec ProcessForce, you should see the license assignments in the CompuTec ProcessForce License Administration window.

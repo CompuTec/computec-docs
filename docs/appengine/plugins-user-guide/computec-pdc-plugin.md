@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # CompuTec PDC Plugin
 
-PDC stands for Plant Data Capture. The CompuTec PDC Plugin integrates seamlessly with ProcessForce Time Bookings, offering an efficient way to capture production task data directly from the production floor using mobile touchscreen devices. It records time spent on specific tasks or operations, allows you to oversee the precise details about any given operation such as machine data, features, operational history and item details and using the management panel you can supervise your entire machine park and its operations as well as check resource status.CompuTec PDC on CompuTec AppEngine gives you more speed and makes work-time record more effective.
+PDC stands for Plant Data Capture. The CompuTec PDC Plugin integrates seamlessly with CompuTec ProcessForce Time Bookings, offering an efficient way to capture production task data directly from the production floor using mobile touchscreen devices. It records time spent on specific tasks or operations, allows you to oversee the precise details about any given operation such as machine data, features, operational history and item details and using the management panel you can supervise your entire machine park and its operations as well as check resource status.CompuTec PDC on CompuTec AppEngine gives you more speed and makes work-time record more effective.
 
 This guide provides comprehensive instructions on working with the CompuTec PDC Plugin and CompuTec AppEngine. It complements the main CompuTec PDC application manual, (which is available [here](/docs/pdc/)).
 
@@ -14,7 +14,7 @@ This guide provides comprehensive instructions on working with the CompuTec PDC 
 
 Before using the CompuTec PDC Plugin, ensure the following are installed and configured:
 
-1. ProcessForce and CompuTec Licence Server is installed and configured. Refer to the relevant installation guide [here](/docs/processforce/administrator-guide/licensing/license-server/overview/).
+1. CompuTec ProcessForce and CompuTec Licence Server is installed and configured. Refer to the relevant installation guide [here](/docs/processforce/administrator-guide/licensing/license-server/overview/).
 
 2. CompuTec PDC requirements have been fulfilled. Verify the system meets all requirements [here](/docs/pdc/administrator-guide/installation/requirements/).
 
@@ -33,7 +33,7 @@ Follow the individual installation guides for each required component:
 - [CompuTec PDC application](/docs/pdc/administrator-guide/installation/first-installation/)
 
 :::caution
-ProcessForce API needs to be installed on the same server as CompuTec AppEngine.
+CompuTec ProcessForce API needs to be installed on the same server as CompuTec AppEngine.
 :::
 
 ## Setting up the Application
@@ -69,7 +69,7 @@ To successfully upgrade the application, follow the steps outlined below:
 ## Additional Information
 
 1. CompuTec PDC details information can be found here.
-2. CompuTec AppEngine for CompuTec PDC is only available from web address, no reference in SAP Business One or ProcessForce functional objects.
+2. CompuTec AppEngine for CompuTec PDC is only available from web address, no reference in SAP Business One or CompuTec ProcessForce functional objects.
 3.Relevant CompuTec PDC installer to installed CompuTec PDC Plugin can be reached from CompuTec AppEngine Console level. Instruction below:
     a. Open Launchpad in Appengine Console:
 

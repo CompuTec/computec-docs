@@ -37,7 +37,7 @@ To view video content related to this topic, click [here](https://www.youtube.co
 
 ## Multiple Manufacturing Orders on Pick Receipt Warning
 
-Currently, a Pick Receipt can include up to five Manufacturing Orders. While it is possible to extend this number slightly by modifying ProcessForce translations (e.g., changing Based on **Manufacturing Order** to **Based on MOR**), it is not recommended to include more than five Manufacturing Orders due to:
+Currently, a Pick Receipt can include up to five Manufacturing Orders. While it is possible to extend this number slightly by modifying CompuTec ProcessForce translations (e.g., changing Based on **Manufacturing Order** to **Based on MOR**), it is not recommended to include more than five Manufacturing Orders due to:
 
 - **System Locking**: Large transactions may temporarily lock the production system, affecting other users.
 - **Execution Time**: Processing a high volume of Manufacturing Order lines increases execution time significantly due to SAP DI API speed limitations.

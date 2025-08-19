@@ -6,15 +6,15 @@ sidebar_position: 3
 
 ![Item Details](./media/data-restore/item-master-data-costing.webp)
 
-Data synchronization between SAP Business One and ProcessForce is crucial for maintaining system performance and data integrity. When users add, modify, or delete Item Master Data in SAP Business One, key data elements are automatically updated in ProcessForce, including:
+Data synchronization between SAP Business One and CompuTec ProcessForce is crucial for maintaining system performance and data integrity. When users add, modify, or delete Item Master Data in SAP Business One, key data elements are automatically updated in CompuTec ProcessForce, including:
 
 - [Item Details](../item-details/overview.md): a default revision code is created.
 - [Item Costing](../costing-material-and-resources/item-costing/overview.md): a cost record is generated for an item, revision, and warehouse.
 - [Cost Category](../costing-material-and-resources/configuration/overview.md): cost classification is updated accordingly.
 
-However, if data is added manually or via Data Transfer Workbench (DTW) while ProcessForce is not installed or running, Restore functions must be executed. Failing to run these functions may result in slow system performance and inconsistencies between SAP Business One and ProcessForce.
+However, if data is added manually or via Data Transfer Workbench (DTW) while CompuTec ProcessForce is not installed or running, Restore functions must be executed. Failing to run these functions may result in slow system performance and inconsistencies between SAP Business One and CompuTec ProcessForce.
 
-After installing ProcessForce, ensure that the following restore functions are run to synchronize data properly:
+After installing CompuTec ProcessForce, ensure that the following restore functions are run to synchronize data properly:
 
 - Batch Details
 - Bill of Materials
@@ -33,8 +33,8 @@ After installing ProcessForce, ensure that the following restore functions are r
 
 - To simplify batch information, the SAP Batch Details and ProcessForce Batch Master Data form have been consolidated into a single form.
 - Run the restore function to populate the combined data object.
-- If you add User-Defined Fields to the SAP Business One Batch Details tables, the same User Defined Fields need to be added to the ProcessForce Batch Master Data tables.
-- If, for any reason, SAP and ProcessForce Batch Master Data for a specific Batch become inconsistent, using the Restore function will will update the SAP Batch Details with the ProcessForce Batch Master Data.
+- If you add User-Defined Fields to the SAP Business One Batch Details tables, the same User Defined Fields need to be added to the CompuTec ProcessForce Batch Master Data tables.
+- If, for any reason, SAP and CompuTec ProcessForce Batch Master Data for a specific Batch become inconsistent, using the Restore function will will update the SAP Batch Details with the CompuTec ProcessForce Batch Master Data.
 
 ## Restore Bill of Materials
 
@@ -46,8 +46,8 @@ When changes are made to Item Descriptions—for example, through DTW or PowerSh
 
 **Key Considerations for BOM Synchronization**:
 
-- Synchronization always flows from ProcessForce to SAP Business One. Creating or updating a ProcessForce BOM will overwrite the corresponding SAP Business One Bill of Material.
-- The "Enable Bill of Materials synchronization between ProcessForce and SAP Business One" option must be enabled in General Settings (under ProcessForce → Bill of Materials and Manufacturing Orders section).
+- Synchronization always flows from CompuTec ProcessForce to SAP Business One. Creating or updating a CompuTec ProcessForce BOM will overwrite the corresponding SAP Business One Bill of Material.
+- The "Enable Bill of Materials synchronization between CompuTec ProcessForce and SAP Business One" option must be enabled in General Settings (under ProcessForce → Bill of Materials and Manufacturing Orders section).
 - Only Bill of Material variants with the "Is MRP Default" checkbox selected will be used for synchronization:
 
 Click [here](../system-initialization/general-settings/overview.md) to find out more about General Settings.
@@ -68,12 +68,12 @@ Please note that this functionality only updates the description in the Bill of 
 
 The Restore Item Details and Item Costing functions must be run in the following cases:
 
-- ProcessForce is installed in a database that already contains Item Master Data before the add-on installation.
-- Item Master Data records were created while ProcessForce was not running.
+- CompuTec ProcessForce is installed in a database that already contains Item Master Data before the add-on installation.
+- Item Master Data records were created while CompuTec ProcessForce was not running.
 
 ### Restore Item Details
 
-Every time an Item Master Data record is created in SAP Business One, a corresponding Item Details record is generated in ProcessForce. If this process does not occur (e.g., due to missing ProcessForce integration at the time of creation), running Restore Item Details ensures synchronization.
+Every time an Item Master Data record is created in SAP Business One, a corresponding Item Details record is generated in CompuTec ProcessForce. If this process does not occur (e.g., due to missing CompuTec ProcessForce integration at the time of creation), running Restore Item Details ensures synchronization.
 
 ### Restore Item Costing
 
@@ -93,7 +93,7 @@ When the Restore Item Costing function is executed, cost records are created for
     Help → Support Desk → Restore → Restore Resource Costing
 :::
 
-This function creates cost records for every resource in each cost category, ensuring financial consistency in ProcessForce.
+This function creates cost records for every resource in each cost category, ensuring financial consistency in CompuTec ProcessForce.
 
 ## Restore Resource Calendar and Employee Calendar
 
@@ -103,7 +103,7 @@ This function creates cost records for every resource in each cost category, ens
     Help → Support Desk → Restore → Restore Employee Calendars
 :::
 
-When a Resource or Employee Master Data record is created in ProcessForce, a corresponding Calendar is generated. If this does not happen (e.g., due to missing integration during data entry), running the Restore function will create the missing calendars.
+When a Resource or Employee Master Data record is created in CompuTec ProcessForce, a corresponding Calendar is generated. If this does not happen (e.g., due to missing integration during data entry), running the Restore function will create the missing calendars.
 
 ## Goods Issue and Goods Receipt Restore
 

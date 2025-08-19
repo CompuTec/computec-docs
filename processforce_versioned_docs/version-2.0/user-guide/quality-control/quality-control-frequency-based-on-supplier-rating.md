@@ -6,7 +6,7 @@ sidebar_position: 11
 
 This section outlines the Quality Control process based on the Supplier's rating, which evaluates the level of trust built through past collaborations. The generation of Quality Control Tests can be tied to and defined by this trust level.
 
-In business, collaboration is essential—very few tasks can be completed alone. Building strong cooperative relationships is key to efficient process management. Another crucial principle that brings immense value is "trust and control." ProcessForce enables you to integrate these principles by offering a supplier assessment card within the application, optimizing your business processes simultaneously.
+In business, collaboration is essential—very few tasks can be completed alone. Building strong cooperative relationships is key to efficient process management. Another crucial principle that brings immense value is "trust and control." CompuTec ProcessForce enables you to integrate these principles by offering a supplier assessment card within the application, optimizing your business processes simultaneously.
 
 Supplier scorecards are instrumental in tracking and evaluating a supplier's performance. These scorecards can range from simple to complex, with as many or as few criteria as necessary to achieve organizational goals. Proper use of supplier scorecards can strengthen relationships, reduce costs, and minimize errors. They also offer an objective method for assessing vendor performance.
 

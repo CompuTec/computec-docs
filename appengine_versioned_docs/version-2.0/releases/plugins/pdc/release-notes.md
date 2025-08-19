@@ -225,7 +225,7 @@ toc_max_heading_level: 2
 
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
-| General | - | From now on, the CompuTec PDC plugin will be released in version related to ProcessForce 10.0 only (support for the 9.30 version will no longer be provided). | - |
+| General | - | From now on, the CompuTec PDC plugin will be released in version related to CompuTec ProcessForce 10.0 only (support for the 9.30 version will no longer be provided). | - |
 | Improvement | Configuration | The Dutch language version improved. | SPDC-520 |
 | Improvement | Configuration, Tasks | It is now possible to filter Task by many Resources. | – |
 | Bug | Barcodes | Scanning a 30-sign barcode to activate a Task does not work. | – |
@@ -310,7 +310,7 @@ toc_max_heading_level: 2
 | Bug | Configuration | Cannot log in by using a barcode scanning for specific devices (tested and fixed for Zebra Symbol DS4308) | SPROC-11514 |
 | Bug | Configuration | Customization view's fields are not added to the application in some cases | – |
 | Bug | Pick and Pack | A Batch Status upon Receipt from Production made in CompuTec PDC is not updated in SAP Business One | SPDC-449 |
-| Bug | Pick and Pack  | The accounting columns are not filled in in ProcessForce upon Pick Receipt / Pick Order creation in CompuTec PDC | SPDC-462 |
+| Bug | Pick and Pack  | The accounting columns are not filled in CompuTec ProcessForce upon Pick Receipt / Pick Order creation in CompuTec PDC | SPDC-462 |
 | Bug | SAP | Manufacturing Order Layout does not work | – |
 | Bug | Tasks, Time Booking | A Labour code is not filled for a Team Time Booking | – |
 
@@ -326,7 +326,7 @@ toc_max_heading_level: 2
 | Improvement | Weighing Process | New settings: Range from mode, Confirm each weighting, Is precision Weight Enabled for Weighting. Click [here](https://learn.computec.one/docs/pdc/administrator-guide/setting-up-the-application/overview#processforce-settings) to find out more | – |
 | Bug | Configuration | Can not open Crystal Report - no connection to SYSTEM | - |
 | Bug | Pick and Pack | It is not possible to issue two or more Items with the same Item Code | – |
-| Bug | Pick and Pack, Weighing Process | ProcessForce Batches Status and logic supported in CompuTec PDC | SPDC-446 |
+| Bug | Pick and Pack, Weighing Process | CompuTec ProcessForce Batches Status and logic supported in CompuTec PDC | SPDC-446 |
 | Bug | SAP | Cannot create a Pick List | – |
 | Bug | SAP | Cannot display details on Pick Lists | – |
 | Bug | Tasks | Time Booking for multiple users option starts Time Booking for a one user only | SPDC-459 |
@@ -357,7 +357,7 @@ toc_max_heading_level: 2
 | --- | --- | --- | --- |
 | Improvement | Tasks, Time Booking | It is now possible to register time for a Resources of Subcontracting type | – |
 | Improvement | Tasks | Now when a Resource is in Downtime status, it is visible in the adding a Task panel with a note 'Is in downtime' (but not available to choose) | – |
-| Bug | Pick and Pack | Issue to production: copying Classification field value (if it is filled in ProcessForce) | – |
+| Bug | Pick and Pack | Issue to production: copying Classification field value (if it is filled in CompuTec ProcessForce) | – |
 | Bug | Pick and Pack | Receipt from production: cannot add a document when setting a serial number manually | – |
 | Bug | Tasks | Add task by Manufacturing Order: a Manufacturing Order  is not displayed if an Item description is not defined | – |
 | Bug | Tasks | Adding a Task by a Resource: it is possible to start Run Time for a Resource in Downtime | – |

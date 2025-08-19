@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Introduction
 
-The Quality Control Testing process is a seamlessly integrated solution that leverages ProcessForce and SAP Business One data, processes, and technologies. This functionality utilizes business events and triggers, along with SAP Business One Alert features, to notify users when a Quality Control Test needs to be conducted.
+The Quality Control Testing process is a seamlessly integrated solution that leverages CompuTec ProcessForce and SAP Business One data, processes, and technologies. This functionality utilizes business events and triggers, along with SAP Business One Alert features, to notify users when a Quality Control Test needs to be conducted.
 The Quality Control Test Form provides all the essential information required to carry out the necessary activities efficiently.
 
 ![Quality Control Test](./media/overview/quality-control-diagram.webp)

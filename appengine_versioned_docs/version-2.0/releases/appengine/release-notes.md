@@ -361,7 +361,7 @@ Content-Type: application/json
 | Bug | Configuration | Administration Panel, SLD Servers: SLD Addresses disappear after clicking the Discover button when a server is not working. | - |
 | Bug | Configuration | Errors occur after removing a company with plugins that have dependent plugins assigned. | - |
 | Bug | OData | The following OData expressions do not work: $top, $skip, $expand. | SPROC-13658 |
-| Bug | ProcessForce Plugin | It is impossible to upgrade plugins by clicking the Install plugin button. | SPROC-13050 |
+| Bug | CompuTec ProcessForce Plugin | It is impossible to upgrade plugins by clicking the Install plugin button. | SPROC-13050 |
 
 ---
 

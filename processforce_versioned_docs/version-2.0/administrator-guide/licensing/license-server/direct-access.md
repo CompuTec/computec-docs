@@ -93,7 +93,7 @@ To establish a connection between the CompuTec License Server and the SAP Busine
     ![Caution](./media/direct-access/license-server-settings_2_db-connection_5.webp)
 
     :::info
-        After this step, the warning: `Direct Data Access mode is disabled.` will no longer appear when launching ProcessForce, provided that the connection to CompuTec License Server is configured correctly in ProcessForce License Administration (see [Extension → License assignment section](../../installation/first-installation/extension)).
+        After this step, the warning: `Direct Data Access mode is disabled.` will no longer appear when launching CompuTec ProcessForce, provided that the connection to CompuTec License Server is configured correctly in CompuTec ProcessForce License Administration (see [Extension → License assignment section](../../installation/first-installation/extension)).
     :::
 
 6. Expand the database list to confirm that a particular SAP Business One company is using Direct Data Access:

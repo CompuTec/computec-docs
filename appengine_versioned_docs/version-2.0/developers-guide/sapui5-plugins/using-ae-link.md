@@ -32,7 +32,7 @@ CompuTec AppEngine enhances this experience by providing a custom control - comp
     - **objectType**: For SAP object, this needs to be BoFormObjectEnum (or ObjectType). BoFormObjectEnum can be found in SAP Business ne SDK. In this case this will be fo_Order:
 
         ![Order](./media/using-ae-link/fo-Order.webp)
-    - **objectSubType**: Required only for ProcessForce objects. Leave it empty in this case.
+    - **objectSubType**: Required only for CompuTec ProcessForce objects. Leave it empty in this case.
     - **key**: The unique identifier of the object to open. Here, use the DocEntry of the Sales Order.
 
             ```xml

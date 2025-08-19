@@ -17,13 +17,13 @@ The issues identified in previous versions have been resolved in CompuTec Proces
 
 ### [Updated on 28th of September, 2023]
 
-There are known issues with **SAP Business One SP2308** affecting ProcessForce. These are expected to be resolved in the upcoming ProcessForce 10.0.22 release. In the meantime, you can use the available [workarounds](../../troubleshooting/sap-business-one-sp2308.md).
+There are known issues with **SAP Business One SP2308** affecting CompuTec ProcessForce. These are expected to be resolved in the upcoming CompuTec ProcessForce 10.0.22 release. In the meantime, you can use the available [workarounds](../../troubleshooting/sap-business-one-sp2308.md).
 
 ### [Updated on 18th of August, 2023]
 
-We are pleased to announce that **SAP Business One FP2305** and **FP2305 HF01** are now officially supported with the latest ProcessForce release – 10.0 R21.
+We are pleased to announce that **SAP Business One FP2305** and **FP2305 HF01** are now officially supported with the latest CompuTec ProcessForce release – 10.0 R21.
 
-Please note that previous ProcessForce releases will not function with these SAP versions, as SAP has upgraded the TLS version to 1.2. To accommodate this change, we have updated our codebase. However, there are two known issues to be aware of:
+Please note that previous CompuTec ProcessForce releases will not function with these SAP versions, as SAP has upgraded the TLS version to 1.2. To accommodate this change, we have updated our codebase. However, there are two known issues to be aware of:
 
 - SAP modified the SAP Business One License API configuration, preventing proper API calls if there are incorrect settings in the b1-local-machine.xml file. This can be resolved by updating the **LicenseServerProtocol** value from **CORBA** to **HTTPS** and setting **LicenseServer** to the appropriate hostname or IP address where the SAP Business One License Server is installed. The required changes should be made in the following file: C:\Program Files\SAP\SAP Business One DI API\Conf\b1-local-machine.xml
 
@@ -36,9 +36,9 @@ Please note that previous ProcessForce releases will not function with these SAP
     </leaf>
     ```
 
-- If you use any UDVs (FMSs) linked to a UDO object (either custom or in ProcessForce forms), you will be unable to open the form. This issue has been reported to SAP, confirmed, and we are awaiting their resolution.
+- If you use any UDVs (FMSs) linked to a UDO object (either custom or in CompuTec ProcessForce forms), you will be unable to open the form. This issue has been reported to SAP, confirmed, and we are awaiting their resolution.
 
-If you decide to use any of the previous versions of SAP Business One, please do not use **FP2105 HF1** and **FP2108**, as there is a DI API bug that does not allow synchronization of ProcessForce Manufacturing Orders to SAP Business One Production Orders:
+If you decide to use any of the previous versions of SAP Business One, please do not use **FP2105 HF1** and **FP2108**, as there is a DI API bug that does not allow synchronization of CompuTec ProcessForce Manufacturing Orders to SAP Business One Production Orders:
 
 [3098465 - Error While Updating Production Orders Using the Data Interface (DI API)](https://launchpad.support.sap.com/#/notes/3098465)
 

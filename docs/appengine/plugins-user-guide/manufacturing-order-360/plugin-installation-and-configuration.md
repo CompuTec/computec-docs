@@ -6,7 +6,7 @@ sidebar_position: 2
 ## Prerequisites
 
 :::note
-Ensure that ProcessForce and CompuTec Licence Server is installed and configured.
+Ensure that CompuTec ProcessForce and CompuTec Licence Server is installed and configured.
 :::
 
 ## CompuTec AppEngine and plugin installation and configuration
@@ -17,9 +17,9 @@ Refer to the [Configuration and Administration](../../administrators-guide/confi
 
 Two plugins need to be installed: **MO360** and **PPF**.
 
-## ProcessForce
+## CompuTec ProcessForce
 
-The MO360 plugin can optionally be accessed directly from the ProcessForce level.
+The MO360 plugin can optionally be accessed directly from the CompuTec ProcessForce level.
 
     ![Manufacturing Order 360](../manufacturing-order-360/media/image2020-9-14-23-18-44.png)
 

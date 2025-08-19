@@ -37,7 +37,7 @@ The information needed for generating the license placed on:
   - **SAP Business One Major version** (9.3, 10.0, etc.)
 
     :::caution
-    Please note that each ProcessForce license is issued for a specific major SAP Business One version. Therefore, requesting a new file on the planned upgrade between these versions is required.
+    Please note that each CompuTec ProcessForce license is issued for a specific major SAP Business One version. Therefore, requesting a new file on the planned upgrade between these versions is required.
     :::
 
   - **SAP Business One Installation Number** (10 signs)

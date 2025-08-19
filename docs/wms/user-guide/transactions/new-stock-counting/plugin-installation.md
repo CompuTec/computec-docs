@@ -10,7 +10,7 @@ Please ensure the CompuTec AppEngine server name address is set in the [CompuTec
 
 ## CompuTec AppEngine
 
-Turn on CompuTec AppEngine on a database with ProcessForce:
+Turn on CompuTec AppEngine on a database with CompuTec ProcessForce:
 
 ![General Settings](./media/general-settings.webp)
 
@@ -88,7 +88,7 @@ This job is responsible for creating Storage Units and their edition during Inve
 
 ### The Result
 
-The CompuTec AppEngine plugin is required to use the New Stock Counting either with SAP Business One or ProcessForce.
+The CompuTec AppEngine plugin is required to use the New Stock Counting either with SAP Business One or CompuTec ProcessForce.
 
 If the plugin is unavailable, there will be information about it in CompuTec WMS.
 

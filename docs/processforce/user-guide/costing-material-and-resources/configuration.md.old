@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Configuration
 
-In this section, you will find all information needed for the costing function to work correctly. Note that both SAP Business One and ProcessForce settings must be set.
+In this section, you will find all information needed for the costing function to work correctly. Note that both SAP Business One and CompuTec ProcessForce settings must be set.
 
 ---
 
@@ -38,7 +38,7 @@ The standard production configuration is to check Parent Item WIP Accounts.
 - If a warehouse is deleted, this warehouse is deleted from each Item Costing record.
 - For Drop Ship warehouses, these are not added to the Item Costing record.
 
-## ProcessForce Settings
+## CompuTec ProcessForce Settings
 
 :::info Path
     Administration → System Initialization → General Settings → ProcessForce tab → Costing tab
@@ -50,7 +50,7 @@ Click [here](./costing-price-determination.md) to get more information.
 
 ### Restore Functions
 
-If you have added items to the Item Master Data form when ProcessForce is not installed and running, select Restore Item Costing and Resource Costing to populate the corresponding costing objects.
+If you have added items to the Item Master Data form when CompuTec ProcessForce is not installed and running, select Restore Item Costing and Resource Costing to populate the corresponding costing objects.
 
 ![Restore Functions](./media/configuration/restore-costing.webp)
 

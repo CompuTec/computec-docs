@@ -7,7 +7,7 @@ sidebar_position: 2
 The CompuTec License Server is a crucial component for managing licenses in CompuTec solutions. This This guide walks you through the step-by-step installation of the CompuTec License Server on a Windows environment. It also includes firewall configuration to allow communication on the required port.
 
 :::info
-    Here, you can check the available [**ProcessForce user license types**](../license-chart.md).
+    Here, you can check the available [**CompuTec ProcessForce user license types**](../license-chart.md).
 :::
 
 ---
@@ -15,7 +15,7 @@ The CompuTec License Server is a crucial component for managing licenses in Comp
 ## Installing CompuTec License Server
 
 :::danger
-  Before installing a new version, uninstall any previous versions of the ProcessForce License Server and SAP COM License Bridge if you have used them with ProcessForce 8.81, 8.82, or 9.0 PL05 - PL08 HotFix.
+  Before installing a new version, uninstall any previous versions of CompuTec ProcessForce License Server and SAP COM License Bridge if you have used them with CompuTec ProcessForce 8.81, 8.82, or 9.0 PL05 - PL08 HotFix.
 :::
 
 :::caution

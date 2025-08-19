@@ -4,11 +4,11 @@ sidebar_position: 6
 
 # SAP Business One SP2308
 
-There are two known issues with the SAP Business One FP 2308 that are planned to be fixed in the next ProcessForce release. For now we offer the following workarounds.
+There are two known issues with the SAP Business One FP 2308 that are planned to be fixed in the next CompuTec ProcessForce release. For now we offer the following workarounds.
 
 ---
 
-## Cannot open any ProcessForce form
+## Cannot open any CompuTec ProcessForce form
 
 1. Open Notepad (or any other text editor) as administrator.
 2. Open the following file: C:\Program Files\sap\SAP Business One DI API\Conf\b1-local-machine.xml.
@@ -32,6 +32,6 @@ However, when SAP HANA Database 059.09 and SAP HANA Client 2.17.22 are used, the
 
 After upgrading the SAP HANA Client to version **2.17.22**, please check if you don't have more folders with previous versions in the location: **C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Sap.Data.Hana.v4.5.** You should only have one folder with the versions in its name, e.g.: **v4.0_2.17.22.0**__0326b8ea63db4bc4.
 
-If there are more folders, please stop all ProcessForce or any other CompuTec software instances and remove these folders except v4.0_2.17.22.0__*.
+If there are more folders, please stop all CompuTec ProcessForce or any other CompuTec software instances and remove these folders except v4.0_2.17.22.0__*.
 
 After removing these folders, restart the machine.

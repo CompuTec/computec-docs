@@ -2,13 +2,13 @@
 sidebar_position: 7
 ---
 
-# Embedding Plugin Form in ProcessForce
+# Embedding Plugin Form in CompuTec ProcessForce
 
-ProcessForce allows starting CompuTec AppEngine Plugin directly inside SAP. This is done base on the manifest configuration of the Plugin. Base on this configuration new positions related to Plugins will appear inside SAP Menu. Opening such a position will open a new Form with a browser that will open the CompuTec AppEngine launchpad and inside it navigate to the correct plugin.
+CompuTec ProcessForce allows starting CompuTec AppEngine Plugin directly inside SAP. This is done base on the manifest configuration of the Plugin. Base on this configuration new positions related to Plugins will appear inside SAP Menu. Opening such a position will open a new Form with a browser that will open the CompuTec AppEngine launchpad and inside it navigate to the correct plugin.
 
-## ProcessForce CompuTec AppEngine Connection Configuration
+## CompuTec AppEngine Connection Configuration
 
-To make it work, ProcessForce needs to connect to CompuTec AppEngine. Connection configuration is described in the following article: [SAP Business One settings](../../../version-2.0/administrators-guide/configuration-and-administration/overview.md#sap-business-one-settings).
+To make it work, CompuTec ProcessForce needs to connect to CompuTec AppEngine. Connection configuration is described in the following article: [SAP Business One settings](../../../version-2.0/administrators-guide/configuration-and-administration/overview.md#sap-business-one-settings).
 
 ## Plugin Configuration
 

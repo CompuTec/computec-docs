@@ -4,10 +4,10 @@ sidebar_position: 1
 
 # Overview
 
-In SAP Business One integrated with ProcessForce, the Batch Details form and the ProcessForce Batch Master Data details have been unified into a single, comprehensive interface. This consolidation streamlines navigation, allowing users to access batch information directly from all SAP Business One and ProcessForce documents and reports.
+In SAP Business One integrated with CompuTec ProcessForce, the Batch Details form and the CompuTec ProcessForce Batch Master Data details have been unified into a single, comprehensive interface. This consolidation streamlines navigation, allowing users to access batch information directly from all SAP Business One and CompuTec ProcessForce documents and reports.
 
 :::note
-When adding User Defined Fields (UDFs) to the SAP Business One Batch Details Table, it's essential to replicate these UDFs - maintaining the same names and formats - in the ProcessForce Batch Master Data tables and the Pick Receipt: Picked Items table
+When adding User Defined Fields (UDFs) to the SAP Business One Batch Details Table, it's essential to replicate these UDFs - maintaining the same names and formats - in the CompuTec ProcessForce Batch Master Data tables and the Pick Receipt: Picked Items table
 :::
 
 ---

@@ -51,13 +51,13 @@ $PSVersionTable
 
     ![Restart](./media/ps-general-issues/restart.webp)
 
-**Solution steps - 02 - ProcessForce 10.0 & newer**
+**Solution steps - 02 - CompuTec ProcessForce 10.0 & newer**
 
 - Use PowerShell 5.1
 
 - [Refer to the installation part of the documentation](../ps-app-configuration.md#installation)
 
-## Exception: ProcessForce Database Version is not supported
+## Exception: CompuTec ProcessForce Database Version is not supported
 
 Please update the Database or Reinstall API.Setup
 
@@ -65,21 +65,21 @@ Please update the Database or Reinstall API.Setup
 
 **Reason**
 
-ProcessForce, PowerShell ISE, and PF.API versions vary.
+CompuTec ProcessForce, PowerShell ISE, and PF.API versions vary.
 
 **Diagnose Actions**
 
 ![Different Version](./media/ps-general-issues/ps-bit-versions.webp)
 
-- Verify the ProcessForce version and platform in SAP Client. To do this, navigate to: SAP Client → Administration → Add-On Manager (see a screenshot above).
+- Verify the CompuTec ProcessForce version and platform in SAP Client. To do this, navigate to: SAP Client → Administration → Add-On Manager (see a screenshot above).
 
-- Check the PowerShell ISE architecture: if running in 32-bit mode (x86), ensure if this platform is the same as ProcessForce one.
+- Check the PowerShell ISE architecture: if running in 32-bit mode (x86), ensure if this platform is the same as CompuTec ProcessForce one.
 
-- Check In Windows → Programs & Features and match the installed  ProcessForce API version with the ProcessForce version and platform in SAP Add-On Manager.
+- Check In Windows → Programs & Features and match the installed CompuTec ProcessForce API version with CompuTec ProcessForce version and platform in SAP Add-On Manager.
 
     ![Final](./media/ps-general-issues/pc-corresponding-versions.webp)
 
-- Confirm the correct ProcessForce API library version is being used in PowerShell ISE:
+- Confirm the correct CompuTec ProcessForce API library version is being used in PowerShell ISE:
 
     ```powershell
     # Check PF.API version used by current PowerShell ISE
@@ -92,8 +92,8 @@ ProcessForce, PowerShell ISE, and PF.API versions vary.
 
 **Solution**
 
-- Use PowerShell ISE 64-bit if ProcessForce add-on x64 is installed on your database.
-- Use PowerShell ISE 32-bit if ProcessForce add-on x86 is installed on your database.
+- Use PowerShell ISE 64-bit if CompuTec ProcessForce add-on x64 is installed on your database.
+- Use PowerShell ISE 32-bit if CompuTec ProcessForce add-on x86 is installed on your database.
 
 ## Exception: Unable to Access SBO-Common Database
 
@@ -129,8 +129,8 @@ Make sure the server, company, and user credentials are correct
 
 **Solution**
 
-- Check SQLServer & LicenceServer IP address or name.
-- Check SQLServer & LicenceServer port numbers (they should be used only for HANA connection).
+- Check SQLServer & License Server IP address or name.
+- Check SQLServer & License Server port numbers (they should be used only for HANA connection).
 - Be sure about lower & upper cases in login or password.
 - Check if SLD is working - try to log in using SAP Business One Client to the target database.
 

@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Serialization Plugin Installation and Configuration
 
-The Serialization Plugin is a powerful extension that enhances traceability and compliance by enabling detailed serialization workflows within CompuTec WMS and ProcessForce. To ensure a successful deployment and seamless functionality, follow this guide, which outlines both the standard installation process and additional steps specific to Serialization Plugin setup.
+The Serialization Plugin is a powerful extension that enhances traceability and compliance by enabling detailed serialization workflows within CompuTec WMS and CompuTec ProcessForce. To ensure a successful deployment and seamless functionality, follow this guide, which outlines both the standard installation process and additional steps specific to Serialization Plugin setup.
 
 :::info
 The standard plugin installation and configuration is described in the CompuTec AppEngine documentation [here](../../administrators-guide/configuration-and-administration/overview.md).
@@ -18,7 +18,7 @@ The standard plugin installation and configuration is described in the CompuTec 
 
 Before configuring the Serialization Plugin, make sure the following components are properly installed and configured:
 
-- Ensure that ProcessForce and the CompuTec License Server are installed and configured correctly.
+- Ensure that CompuTec ProcessForce and the CompuTec License Server are installed and configured correctly.
 For details, click [here](/docs/processforce/administrator-guide/licensing/license-server/overview).
 - Ensure that CompuTec WMS is installed and configured
 
@@ -35,7 +35,7 @@ For plugin installation please follow this link: [Configuration and Administrati
 
 ## Enabling Serialization
 
-Once the core components are set up, follow these steps to enable Serialization features in both CompuTec WMS and ProcessForce.
+Once the core components are set up, follow these steps to enable Serialization features in both CompuTec WMS and CompuTec ProcessForce.
 
 ### CompuTec WMS
 
@@ -51,15 +51,15 @@ Once the core components are set up, follow these steps to enable Serialization 
 
         ![Serialization](./media/serialization/image2020-1-14-16-51-11.png)
 
-### ProcessForce
+### CompuTec ProcessForce
 
-Serialization Plugin can also be accessed directly from within ProcessForce.
+Serialization Plugin can also be accessed directly from within CompuTec ProcessForce.
 
-![Serialization Plugin (from inside the ProcessForce)](./media/serialization/image2020-1-18-8-44-13.png)
+![Serialization Plugin (from inside the CompuTec ProcessForce)](./media/serialization/image2020-1-18-8-44-13.png)
 
 To do this, check the following checkbox:
 
-![Serialization Plugin (from inside the ProcessForce)](./media/serialization/image2020-1-18-8-33-41.png)
+![Serialization Plugin (from inside the CompuTec ProcessForce)](./media/serialization/image2020-1-18-8-33-41.png)
 
 Enter CompuTec AppEngine URL, e.g. `http://{host}:54000`, click "Update" and restart SAP Business One to apply the changes.
 

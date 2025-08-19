@@ -4,11 +4,11 @@ sidebar_position: 4
 
 # Example 3 Working with Technology
 
-This section explains how to add and manage hierarchical objects such as Operation Routing or Bill of Materials (BOM) using the ProcessForce API. Hierarchical data in ProcessForce follows a structured approach where objects like Operations, Resources, and Routing are interdependent.
+This section explains how to add and manage hierarchical objects such as Operation Routing or Bill of Materials (BOM) using CompuTec ProcessForce API. Hierarchical data in CompuTec ProcessForce follows a structured approach where objects like Operations, Resources, and Routing are interdependent.
 
 ---
 
-**Short Information about Hierarchical Data in ProcessForce Technology**
+**Short Information about Hierarchical Data in CompuTec ProcessForce Technology**
 
 When adding Operations to a Resource, follow these steps:
 

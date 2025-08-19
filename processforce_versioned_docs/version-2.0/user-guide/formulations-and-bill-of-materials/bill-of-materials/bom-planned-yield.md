@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # Planned Yield Percentage
 
-Planned Yield Percentage is a key concept in ProcessForce that helps manufacturers account for material loss and production efficiency. By setting a planned yield, companies can:
+Planned Yield Percentage is a key concept in CompuTec ProcessForce that helps manufacturers account for material loss and production efficiency. By setting a planned yield, companies can:
 
 - Increase the raw materials issued to compensate for expected material losses during production.
 - Adjust production time to ensure the required output quantity is achieved.

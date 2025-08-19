@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Phrases
 
-In inventory and compliance management, Item Phrases play a crucial role in conveying important safety, risk, and handling information. These phrases are often based on regulatory guidelines, such as EU Risk and Safety Phrases, and help ensure proper storage, transportation, and hazard communication. Additionally, the ProcessForce Item Phrases feature supports the creation of Material Safety Data Sheets (MSDS) for specific items, making it an essential tool for industries dealing with regulated materials.
+In inventory and compliance management, Item Phrases play a crucial role in conveying important safety, risk, and handling information. These phrases are often based on regulatory guidelines, such as EU Risk and Safety Phrases, and help ensure proper storage, transportation, and hazard communication. Additionally, CompuTec ProcessForce Item Phrases feature supports the creation of Material Safety Data Sheets (MSDS) for specific items, making it an essential tool for industries dealing with regulated materials.
 
 ---
 

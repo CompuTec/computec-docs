@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Quality Plan
 
-The Quality Control function reflects the ISO 2859-1 norm (Sampling procedures for inspection by attributes) in ProcessForce and and offers flexibility to customize it according to specific business needs. Therefore, it allows generating Quality Control Test Pool based on the norm's rules (Business Partners' ratings, Pass/Fail rules).
+The Quality Control function reflects the ISO 2859-1 norm (Sampling procedures for inspection by attributes) in CompuTec ProcessForce and and offers flexibility to customize it according to specific business needs. Therefore, it allows generating Quality Control Test Pool based on the norm's rules (Business Partners' ratings, Pass/Fail rules).
 
 Adopting the Quality Control function based on the ISO 2859-1 standard can be a valuable asset for ensuring quality between your company and a business partner supplying you with items.
 
@@ -16,7 +16,7 @@ Adopting the Quality Control function based on the ISO 2859-1 standard can be a 
 
 ## Business Impact
 
-The ISO 2859-1 standard includes tables with statistical data that determine the number of samples to test in a batch (whether received from production or purchased), based on factors such as batch size, inspection severity, and the Business Partner’s rating. For example, for a batch of 10,000 units, the norm may specify ten samples, with at least eight passing the Quality Control Test for the entire batch to be accepted. The Quality Plan set up in ProcessForce directly influences the Quality Control Test Pools.
+The ISO 2859-1 standard includes tables with statistical data that determine the number of samples to test in a batch (whether received from production or purchased), based on factors such as batch size, inspection severity, and the Business Partner’s rating. For example, for a batch of 10,000 units, the norm may specify ten samples, with at least eight passing the Quality Control Test for the entire batch to be accepted. The Quality Plan set up in CompuTec ProcessForce directly influences the Quality Control Test Pools.
 
 ## Quality Plan Preparation
 

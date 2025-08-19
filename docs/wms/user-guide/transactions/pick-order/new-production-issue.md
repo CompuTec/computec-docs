@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # New Production Issue
 
-The Pick Order transaction allows generating a ProcessForce Production Issue.
+The Pick Order transaction allows generating CompuTec ProcessForce Production Issue.
 
 :::note
     The order and availability of some of the forms during a document's creation may vary depending on individual settings. Click [here](../../../administrator-guide/custom-configuration/overview.md) to find out more.
@@ -92,7 +92,7 @@ The Pick Order transaction allows generating a ProcessForce Production Issue.
     ![Ready](./media/Done2.webp)
 9. Remarks form will appear.
 
-    Issue series can be chosen from the drop-down list. This value can be preset in ProcessForce form Document Numbering: Main Menu > Administration > System Initialization > Document Numbering. If the series is not picked, the default ones will be selected.
+    Issue series can be chosen from the drop-down list. This value can be preset in CompuTec ProcessForce form Document Numbering: Main Menu > Administration > System Initialization > Document Numbering. If the series is not picked, the default ones will be selected.
 
     Remarks can be added.
 

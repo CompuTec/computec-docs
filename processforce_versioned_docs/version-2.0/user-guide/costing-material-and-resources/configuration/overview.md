@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-This guide provides comprehensive details to ensure the costing function operates correctly in ProcessForce. Both SAP Business One and ProcessForce settings must be properly configured for accurate and efficient costing calculations. The sections below outline the key configuration steps, paths, and considerations.
+This guide provides comprehensive details to ensure the costing function operates correctly in CompuTec ProcessForce. Both SAP Business One and CompuTec ProcessForce settings must be properly configured for accurate and efficient costing calculations. The sections below outline the key configuration steps, paths, and considerations.
 
 ---
 
@@ -35,7 +35,7 @@ In a Standard Costing environment, WIP (Work-in-Progress) variances arise from d
 - **Deleted Warehouses**: automatically removed from each Item Costing record.
 - **Drop Ship Warehouses**: excluded from Item Costing records.
 
-## ProcessForce Settings
+## CompuTec ProcessForce Settings
 
 :::info Path
     Administration → System Initialization → General Settings → ProcessForce tab → Costing tab
@@ -47,7 +47,7 @@ Refer to [Costing Price Determination](./costing-price-determination.md) for mor
 
 ### Restore Functions
 
-If items were added to the Item Master Data form when ProcessForce was not running, select Restore Item Costing and Resource Costing to populate the corresponding costing objects.
+If items were added to the Item Master Data form when CompuTec ProcessForce was not running, select Restore Item Costing and Resource Costing to populate the corresponding costing objects.
 
 ![Restore Functions](./media/overview/restore-costing.png)
 

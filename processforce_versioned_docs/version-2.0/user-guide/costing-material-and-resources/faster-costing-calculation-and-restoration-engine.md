@@ -4,7 +4,7 @@ sidebar_position: 11
 
 # Faster Costing Calculation and Restoration Engine
 
-In today’s fast-paced business environment, accurate and efficient cost calculations are critical to maintaining profitability and competitiveness. ProcessForce introduces the Faster Costing Calculation and Restoration Engine, a breakthrough solution designed to optimize the Cost Roll-Up process. By leveraging advanced data-handling techniques, this feature reduces the time required for complex costing procedures while improving accuracy. In this guide, we’ll explore how the Faster Costing option works, its benefits, and the steps required to activate it.
+In today’s fast-paced business environment, accurate and efficient cost calculations are critical to maintaining profitability and competitiveness. CompuTec ProcessForce introduces the Faster Costing Calculation and Restoration Engine, a breakthrough solution designed to optimize the Cost Roll-Up process. By leveraging advanced data-handling techniques, this feature reduces the time required for complex costing procedures while improving accuracy. In this guide, we’ll explore how the Faster Costing option works, its benefits, and the steps required to activate it.
 
 :::caution
     To use the option, it is required to set up a Direct Data Access connection to a database. You can check how to do this [here](../../administrator-guide/licensing/license-server/direct-access.md).
@@ -46,7 +46,7 @@ In today’s fast-paced business environment, accurate and efficient cost calcul
 
 Loading, calculating, and saving data can take a lot of time in some cases.
 
-In the latest ProcessForce version, a new costing mechanism has been implemented. It changes the whole procedure significantly.
+In the latest CompuTec ProcessForce version, a new costing mechanism has been implemented. It changes the whole procedure significantly.
 
 ## Faster Costing Calculation and Restoration Engine
 
@@ -79,7 +79,7 @@ Unchecking the checkbox causes Costing calculations to be performed according to
 
 ### What do the activation changes?
 
-- ProcessForce Cost Roll-Up procedure is based on the new Faster Costing Calculation and Restoration Engine, significantly speeding up the whole procedure.
+- CompuTec ProcessForce Cost Roll-Up procedure is based on the new Faster Costing Calculation and Restoration Engine, significantly speeding up the whole procedure.
 - Two new options are available on the Cost Roll-Up form: Coproducts cost calculation and Scrap cost calculation.
 - A new form is available: Cost Comparison. It is available from the Bill of Materials context menu. It allows for comparison costs of production of a specific Bill of Materials with different batch size.
 - Update the Costing button on Item Costing works based on Faster Costing.

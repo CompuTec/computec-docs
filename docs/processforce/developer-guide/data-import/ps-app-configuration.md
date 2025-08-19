@@ -23,7 +23,7 @@ For easier script editing and debugging, install one of the following:
 - Windows PowerShell ISE
 - Visual Studio Code with the PowerShell extension
 
-Additionally, ensure that you are using the correct bit version (64-bit) of PowerShell to match your SAP Business One and ProcessForce environment.
+Additionally, ensure that you are using the correct bit version (64-bit) of PowerShell to match your SAP Business One and CompuTec ProcessForce environment.
 
 If you are using Windows Server, you can add Windows PowerShell ISE through Server Manager by following these steps:
 

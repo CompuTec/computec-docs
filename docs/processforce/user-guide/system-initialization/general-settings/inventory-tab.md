@@ -57,7 +57,7 @@ This section handles the configuration for generating and managing batches and s
         - **Warning Prior Consume Days**: Triggers a warning a few days before the “consume by” date is reached. It is only available when Consume Date check box is checked.
 - **Shelf Life Interval**: A period used to calculate the expiry date automatically. E.g., if Shelf Life Interval is set to 30 days and a Batch record is made on June 1st, the Expiry date will be automatically charged to June 30th.
 - **Inspection Interval**: Defines the recurring period after which inspection alerts are raised.
-- **Default Batch Status for SAP Business One and ProcessForce receipt documents**: Sets batch status (Released, Locked, Not Accessible) upon receipt in SAP Business One or CompuTec ProcessForce.
+- **Default Batch Status for SAP Business One and CompuTec ProcessForce receipt documents**: Sets batch status (Released, Locked, Not Accessible) upon receipt in SAP Business One or CompuTec ProcessForce.
         - If the status for a Batch is set to Not Accessible or Locked, a system message about this will be displayed before issuing this batch for production.
 
 #### Issue and Receipt Settings

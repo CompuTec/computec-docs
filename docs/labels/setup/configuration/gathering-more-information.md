@@ -10,7 +10,7 @@ There are two primary ways to retrieve additional information from the database 
 
 ## Using Attributes
 
-Attributes refer to additional columns collected by the application when initiating a print request from systems such as ProcessForce, CompuTec WMS, or SAP Business One. These attributes are determined before the print request is sent to the Label Manager.
+Attributes refer to additional columns collected by the application when initiating a print request from systems such as CompuTec ProcessForce, CompuTec WMS, or SAP Business One. These attributes are determined before the print request is sent to the Label Manager.
 
 Each document type configured in Label Manager has two embedded queries responsible for preparing printing requests. The queries’ results dictate the data sent to CT Label for processing. You can modify these queries to include additional information.
 

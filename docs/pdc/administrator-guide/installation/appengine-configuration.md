@@ -5,7 +5,7 @@ sidebar_position: 5
 # CompuTec AppEngine Configuration
 
 :::info
-    Starting with the following releases — **3.10.6.1** (compatible with ProcessForce version 10.0 Release 6 (R6)) and **3.93.15.1** (compatible with CompuTec ProcessForce version 9.3 PL14 Release 2 (R2)) — **CompuTec PDC is exclusively available as an CompuTec AppEngine plugin**.
+    Starting with the following releases — **3.10.6.1** (compatible with CompuTec ProcessForce version 10.0 Release 6 (R6)) and **3.93.15.1** (compatible with CompuTec ProcessForce version 9.3 PL14 Release 2 (R2)) — **CompuTec PDC is exclusively available as an CompuTec AppEngine plugin**.
 
     CompuTec PDC is now compatible with CompuTec AppEngine. For configuration details, please refer to the following link: [CompuTec AppEngine Plugin Configuration Manual](/docs/appengine/plugins-user-guide/computec-pdc-plugin).
 :::

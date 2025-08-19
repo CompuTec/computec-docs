@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # General
 
-ProcessForce provides a powerful API for managing manufacturing operations within SAP Business One. This guide outlines key best practices and techniques for working with ProcessForce objects using LINQ, handling data efficiently, managing exceptions, and optimizing manufacturing processes. Whether you are dealing with Bill of Materials (BOM), Manufacturing Orders (MOR), routing operations, or backflushing, these best practices will help ensure accuracy and performance in your implementations.
+CompuTec ProcessForce provides a powerful API for managing manufacturing operations within SAP Business One. This guide outlines key best practices and techniques for working with  CompuTec ProcessForce objects using LINQ, handling data efficiently, managing exceptions, and optimizing manufacturing processes. Whether you are dealing with Bill of Materials (BOM), Manufacturing Orders (MOR), routing operations, or backflushing, these best practices will help ensure accuracy and performance in your implementations.
 
 ---
 
-1. **ProcessForce Objects & LINQ**: all child objects in ProcessForce are fully compatible with LINQ syntax, making it easy to find specific data. For example, to retrieve all resources from a Bill of Materials used in a specific operation and routing:
+1. **CompuTec ProcessForce Objects & LINQ**: all child objects in CompuTec ProcessForce are fully compatible with LINQ syntax, making it easy to find specific data. For example, to retrieve all resources from a Bill of Materials used in a specific operation and routing:
 
     ```csharp
     IBillOfMaterial bom = company.CreatePFObject(CompuTec.ProcessForce.API.Core.ObjectTypes.BillOfMaterial);
@@ -103,7 +103,7 @@ ProcessForce provides a powerful API for managing manufacturing operations withi
     }
     ```
 
-5. **Exception Handling**: every exception from ProcessForce is saved in Event Viewer under CompuTec log as CompuTec ProcessForce source:
+5. **Exception Handling**: every exception from CompuTec ProcessForce is saved in Event Viewer under CompuTec log as CompuTec ProcessForce source:
 
     ![Event Viewer](./media/general/pf-api-tt-event-viewer.webp)
 
@@ -118,7 +118,7 @@ ProcessForce provides a powerful API for managing manufacturing operations withi
     item.U_ActualQty- Actual Quantity of backflush Itemitem.U_ResidualQty-Residual Quantity of backflush Item
     ```
 
-7. **Using Try-Catch Blocks**: ProcessForce creates exceptions when something is wrong. It is strongly recommended to use a try-catch block to handle these exceptions.
+7. **Using Try-Catch Blocks**: CompuTec ProcessForce creates exceptions when something is wrong. It is strongly recommended to use a try-catch block to handle these exceptions.
 
 8. **Replacing Items in Routing Operations**: when replacing an item with child items (e.g., routing operations), there is no need to manually remove all children; this is handled automatically when replacing the item code or removing the chosen line.
 
@@ -140,7 +140,7 @@ ProcessForce provides a powerful API for managing manufacturing operations withi
     To customize material selection in backflushing transactions, you need to manually modify the SQL functions CT_PF_GetFreeSerials and/or CT_PF_GetFreeBatches by adjusting the ORDER BY clause in the SQL code.
 
         :::caution
-            Keep in mind that after every ProcessForce upgrade, these functions will be automatically overwritten by the installer, requiring you to reapply your changes.
+            Keep in mind that after every CompuTec ProcessForce upgrade, these functions will be automatically overwritten by the installer, requiring you to reapply your changes.
         :::
 
 ---

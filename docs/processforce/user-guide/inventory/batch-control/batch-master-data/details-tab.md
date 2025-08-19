@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Date Details tab
 
-In SAP Business One integrated with ProcessForce, the Date Details tab within the Batch Master Data form allows users to manage critical batch-related dates, ensuring effective tracking and quality control throughout the product lifecycle.
+In SAP Business One integrated with CompuTec ProcessForce, the Date Details tab within the Batch Master Data form allows users to manage critical batch-related dates, ensuring effective tracking and quality control throughout the product lifecycle.
 
 ![Batch Master Data](./media/details-tab/batch-master-data.webp)
 

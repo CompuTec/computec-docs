@@ -58,7 +58,7 @@ This guide provides an overview of the available settings in the Common tab, exp
 
 **Open Telemetry Endpoint URL** – Specifies an address for sending diagnostic data from the Android application.
 
-**SAP Batch/Serial generators SP** - Enables administrators to define templates for batches or serials directly in the database without using ProcessForce.
+**SAP Batch/Serial generators SP** - Enables administrators to define templates for batches or serials directly in the database without using CompuTec ProcessForce.
 
     ![SAP Batch](./media/common/sap-batch.png)
 

@@ -2,9 +2,9 @@
 sidebar_position: 11
 ---
 
-# ProcessForce Plugin Related Jobs
+# CompuTec ProcessForce Plugin Related Jobs
 
-ProcessForce plugins provide a suite of automated jobs designed to enhance the efficiency and accuracy of manufacturing, quality control, and data synchronization processes in SAP Business One. Below, we outline the key jobs available and their functionalities, along with their configurable parameters.
+CompuTec ProcessForce plugins provide a suite of automated jobs designed to enhance the efficiency and accuracy of manufacturing, quality control, and data synchronization processes in SAP Business One. Below, we outline the key jobs available and their functionalities, along with their configurable parameters.
 
 ---
 
@@ -45,7 +45,7 @@ You can configure three different automation of this kind by using these job var
     - ContentType = "59"
     - ActionType = "A"
 
-    This job enhances ProcessForce performance by maintaining accurate and up-to-date Quality Control Test data.
+    This job enhances CompuTec ProcessForce performance by maintaining accurate and up-to-date Quality Control Test data.
 
 2. **QCTestDocumentsGeneratorJob**
 
@@ -58,7 +58,7 @@ You can configure three different automation of this kind by using these job var
     - PublisherApp = "SAPB1",
     - EventType = "SAPB1Object"
 
-    This job optimizes ProcessForce performance by streamlining test generation processes.
+    This job optimizes CompuTec ProcessForce performance by streamlining test generation processes.
 
 ## Restore Jobs
 
@@ -75,18 +75,18 @@ You can configure three different automation of this kind by using these job var
         - ContentType = "4", // OITM
         - ActionType = "U"
 
-    This job enhances ProcessForce performance by keeping item data synchronized and up-to-date
+    This job enhances CompuTec ProcessForce performance by keeping item data synchronized and up-to-date
 
 ## Synchronization Jobs
 
 1. SynchronizeBillOfMaterialsJob
 
-    This job synchronizes updates made to the ProcessForce Bill of Materials with the corresponding data in SAP Business One.
+    This job synchronizes updates made to CompuTec ProcessForce Bill of Materials with the corresponding data in SAP Business One.
     - Editable = true
     - ContentType = "CT_PF_OBOMCode"
     - ActionType = "*".
 
-    This job enhances ProcessForce performance by maintaining accurate and up-to-date Bill of Materials information.
+    This job enhances CompuTec ProcessForce performance by maintaining accurate and up-to-date Bill of Materials information.
 
 2. **SynchronizeManufacturingOrderJob**
 
@@ -95,7 +95,7 @@ You can configure three different automation of this kind by using these job var
         - ContentType = "CT_PF_ManufacOrd"
         - ActionType = "*"
 
-    This job improves ProcessForce performance by maintaining accurate and consistent order data.
+    This job improves CompuTec ProcessForce performance by maintaining accurate and consistent order data.
 
 3. **SynchronizeManufacturingOrdersRecursiveJob**
 
@@ -111,7 +111,7 @@ You can configure three different automation of this kind by using these job var
         - ContentType = "CT_PF_AdditonalBatch",
         - ActionType = "U",
         - Publisher = "AppEngine", PublisherApp = "SAPB1", EventType = "SAPB1Object".
-    This job enhances ProcessForce performance by maintaining accurate and consistent batch-related data across systems.
+    This job enhances CompuTec ProcessForce performance by maintaining accurate and consistent batch-related data across systems.
 
 2. **AdditionalBatchDetailsCreatorEB**
 
@@ -124,7 +124,7 @@ You can configure three different automation of this kind by using these job var
 
     If this job is enabled, Batch Synchronization is handled by CompuTec AppEngine. Otherwise, synchronization is managed by the CompuTec WMS service when using CompuTec WMS.
 
-    This job improves the performance and efficiency of both ProcessForce and CompuTec WMS by ensuring seamless and accurate batch data synchronization.
+    This job improves the performance and efficiency of both CompuTec ProcessForce and CompuTec WMS by ensuring seamless and accurate batch data synchronization.
 
 ## Manufacturing Order Management
 
@@ -133,4 +133,3 @@ You can configure three different automation of this kind by using these job var
 On CompuTec AppEngine startup, this job checks and processes unfinished Manufacturing Order Wizard tasks.
 
 ---
-ProcessForce background jobs play a vital role in automating key operational tasks, reducing manual errors, and boosting performance. By activating and fine-tuning these jobs, businesses can streamline operations and focus on strategic priorities.

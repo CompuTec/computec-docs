@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Multistructure Fixed and Variable Overhead Costs
 
-In ProcessForce, businesses can define and manage both simple and structured Fixed and Variable Overhead costs, offering greater flexibility in cost allocation. This multi-structure costing feature enables the differentiation and presentation of various overhead costs in a more organized manner, helping users to track and calculate costs with precision. This approach can significantly enhance the accuracy of cost roll-ups and provide more insightful financial data for better decision-making.
+In CompuTec ProcessForce, businesses can define and manage both simple and structured Fixed and Variable Overhead costs, offering greater flexibility in cost allocation. This multi-structure costing feature enables the differentiation and presentation of various overhead costs in a more organized manner, helping users to track and calculate costs with precision. This approach can significantly enhance the accuracy of cost roll-ups and provide more insightful financial data for better decision-making.
 
 ---
 

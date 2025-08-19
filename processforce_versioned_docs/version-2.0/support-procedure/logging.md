@@ -4,15 +4,15 @@ sidebar_position: 4
 
 # Logging
 
-You may be asked to send ProcessForce log files during the support procedure. Adding them to a support ticket (even without the request) may speed up the support procedure. On this page, you can find out where to find the files.
+You may be asked to send CompuTec ProcessForce log files during the support procedure. Adding them to a support ticket (even without the request) may speed up the support procedure. On this page, you can find out where to find the files.
 
 ---
 
 ## Log files directories
 
-### ProcessForce
+### CompuTec ProcessForce
 
-The ProcessForce log files are kept in the following location: `C:\ProgramData\CompuTec\ProcessForce\Logs`.
+The CompuTec ProcessForce log files are kept in the following location: `C:\ProgramData\CompuTec\ProcessForce\Logs`.
 
 Choose the file that is related by time and date to the issue you are reporting:
 

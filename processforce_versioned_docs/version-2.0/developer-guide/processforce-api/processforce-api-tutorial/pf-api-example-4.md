@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Example 4: Working with Manufacturing Orders
 
-The ProcessForce API allows you to efficiently create and update manufacturing orders (MOs) within your system. This section provides step-by-step guidance on how to work with manufacturing orders using the API.
+CompuTec ProcessForce API allows you to efficiently create and update manufacturing orders (MOs) within your system. This section provides step-by-step guidance on how to work with manufacturing orders using the API.
 
 ---
 

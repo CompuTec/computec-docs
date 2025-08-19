@@ -14,6 +14,6 @@ In the example below:
 
 ![Multi-level](./media/multi-level.webp)
 
-Semi-finished item Manufacturing Orders (linked to final product MOs) can be efficiently managed using the[Semi-finished Product Scheduling Board](../../../scheduling/scheduling-board.md) in ProcessForce.
+Semi-finished item Manufacturing Orders (linked to final product MOs) can be efficiently managed using the[Semi-finished Product Scheduling Board](../../../scheduling/scheduling-board.md) in CompuTec ProcessForce.
 
 ---

@@ -5,13 +5,13 @@ toc_max_heading_level: 2
 
 # Performance Issues
 
-On this page, you can check the most common performance problems while working with ProcessForce and ways of resolving these issues.
+On this page, you can check the most common performance problems while working with CompuTec ProcessForce and ways of resolving these issues.
 
 ---
 
-## Long delay in opening and browsing ProcessForce forms on SAP Business One for SAP HANA
+## Long delay in opening and browsing CompuTec ProcessForce forms on SAP Business One for SAP HANA
 
-In some cases, users can experience a long delay in opening some documents or switching to another one when operating ProcessForce on SAP Business One, a version of SAP HANA. Usually, the issue affects the Bill of Materials, Manufacturing Order, Item, or Business Partner Master Data, among others.
+In some cases, users can experience a long delay in opening some documents or switching to another one when operating CompuTec ProcessForce on SAP Business One, a version of SAP HANA. Usually, the issue affects the Bill of Materials, Manufacturing Order, Item, or Business Partner Master Data, among others.
 
 If you experience the described issue, please collect the following data, and raise a support ticket on support.computec.pl with the collected data.
 
@@ -57,7 +57,7 @@ Command: `tcping -t IP port`
     ![Results](./media/performance-issues/2019-09-27_18-03-13.png)
 
   - TCPing results should be on a stable level.
-  - We observed problems with performance and unexpected errors in ProcessForce when responses were above 1 ms.
+  - We observed problems with performance and unexpected errors in CompuTec ProcessForce when responses were above 1 ms.
 
 1. Go to SAP HANA Studio and take a screenshot of the NDB > Overview form.
 2. Check if CompuTec License Server is configured correctly. If you have an older version, please update it (you can check the latest version here).
@@ -71,15 +71,15 @@ Command: `tcping -t IP port`
   Search for the report with the name that is returned by the query. Change the report to active and save, Then change back to inactive and save again, Run the query again, there should be no result returned now.
 5. Please check the following SAP NOTE: 2113913 - DI API Log Files Slow Down the Connection Time - [https://launchpad.support.sap.com/#/notes/2113913](https://launchpad.support.sap.com/#/notes/2113913).
 
-## Long delay in opening ProcessForce forms, but browsing is fast
+## Long delay in opening CompuTec ProcessForce forms, but browsing is fast
 
 Symptoms:
 
-- Around 20-30 seconds delay on opening ProcessForce add-on forms/windows – each time
+- Around 20-30 seconds delay on opening CompuTec ProcessForce add-on forms/windows – each time
 - SAP Business One forms/windows open fast
-- ProcessForce add-on starts normally
-- After opening the ProcessForce add-on form/window browsing data / moving to the next record takes an average time (2-3s)
-- Updating the ProcessForce license for users takes much more time.
+- CompuTec ProcessForce add-on starts normally
+- After opening the CompuTec ProcessForce add-on form/window browsing data / moving to the next record takes an average time (2-3s)
+- Updating CompuTec ProcessForce license for users takes much more time.
 
 Reason:
 

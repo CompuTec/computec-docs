@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # From Pick Order
 
-The Pick Order transaction allows generating a ProcessForce Production issue from a Pick Order. (An example Pick Order used in this guide is posted below).
+The Pick Order transaction allows generating CompuTec ProcessForce Production issue from a Pick Order. (An example Pick Order used in this guide is posted below).
 
 ![Pick Order](./media/pick-order.png)
 
@@ -89,7 +89,7 @@ The Pick Order transaction allows generating a ProcessForce Production issue fro
     ![Items to pick order](./media/Done3.webp)
 9. Remarks form will appear.
 
-    Issue document numbering series can be chosen from the drop-down lists. This value can be preset in ProcessForce form Document Numbering: Main Menu > Administration > System Initialization> Document Numbering. If the series is not picked, the default ones will be selected.
+    Issue document numbering series can be chosen from the drop-down lists. This value can be preset in CompuTec ProcessForce form Document Numbering: Main Menu > Administration > System Initialization> Document Numbering. If the series is not picked, the default ones will be selected.
 
     Remarks can be added.
 

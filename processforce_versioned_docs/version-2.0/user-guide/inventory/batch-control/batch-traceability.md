@@ -4,13 +4,13 @@ sidebar_position: 9
 
 # Batch Traceability
 
-In industries where product quality and regulatory compliance are critical, batch traceability is an essential function. ProcessForce's Batch Traceability feature provides comprehensive tracking of item batches throughout their lifecycle - from production or purchase to their use in manufacturing and final delivery to customers. This function plays a crucial role in complaint management, product recalls, and overall quality assurance by offering instant access to batch records.
+In industries where product quality and regulatory compliance are critical, batch traceability is an essential function. CompuTec ProcessForce's Batch Traceability feature provides comprehensive tracking of item batches throughout their lifecycle - from production or purchase to their use in manufacturing and final delivery to customers. This function plays a crucial role in complaint management, product recalls, and overall quality assurance by offering instant access to batch records.
 
 ---
 
 ## Access
 
-Users can access the ProcessForce Batch Traceability feature through multiple navigation paths:
+Users can access CompuTec ProcessForce Batch Traceability feature through multiple navigation paths:
 
 - **Modules Menu**: navigate through Inventory → Item Management → Batches → Batch Traceability.
 - **From the Complaint Form**: right-click on a batch within the Transaction tab.

@@ -4,10 +4,10 @@ sidebar_position: 10
 
 # Certificate of Analysis
 
-A Certificate of Analysis (CoA) is a formal document that verifies that a product conforms to its specified standards. It typically includes the results of tests conducted during the quality control process for a particular batch of the product. CoAs are commonly requested by customers in industries such as food and chemicals, although any sector that requires product testing may request them. Different customers may request different information for the same product, depending on their individual requirements. ProcessForce offers a function to associate specific Test Properties and Item Properties with individual Business Partners, enabling the creation of customized CoAs that meet varying customer needs.
+A Certificate of Analysis (CoA) is a formal document that verifies that a product conforms to its specified standards. It typically includes the results of tests conducted during the quality control process for a particular batch of the product. CoAs are commonly requested by customers in industries such as food and chemicals, although any sector that requires product testing may request them. Different customers may request different information for the same product, depending on their individual requirements. CompuTec ProcessForce offers a function to associate specific Test Properties and Item Properties with individual Business Partners, enabling the creation of customized CoAs that meet varying customer needs.
 
 :::info
-    Currently, ProcessForce allows assigning Business Partners to specific Test Properties or Item Properties. The functionality for generating Crystal Reports based on this data is expected to be released in upcoming versions of ProcessForce.
+    Currently, CompuTec ProcessForce allows assigning Business Partners to specific Test Properties or Item Properties. The functionality for generating Crystal Reports based on this data is expected to be released in upcoming versions of CompuTec ProcessForce.
 :::
 
 ## Test Property Assigning

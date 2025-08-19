@@ -60,7 +60,7 @@ For example, a Quick Receipt action from the Receipt from Production panel can b
 For advanced customization, users can define SQL views to modify dropdown lists. To implement a custom view:
 
 1. Define the view in the database.
-2. Enter its name in the PDC Default View field within ProcessForce.
+2. Enter its name in the PDC Default View field within CompuTec ProcessForce.
 
 :::info Path
     Administration → System Initialization → General Settings → ProcessForce → PDC

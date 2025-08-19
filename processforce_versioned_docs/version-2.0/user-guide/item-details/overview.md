@@ -4,9 +4,9 @@ sidebar_position: 1
 
 # Overview
 
-The Item Details form is used to define and manage the product master data associated with an item. ProcessForce allows for an extended and detailed product definition, making item-related activities more efficient, such as ingredient and allergen declarations, batch tracking, and file attachments.
+The Item Details form is used to define and manage the product master data associated with an item. CompuTec ProcessForce allows for an extended and detailed product definition, making item-related activities more efficient, such as ingredient and allergen declarations, batch tracking, and file attachments.
 
-An Item Details record is automatically created when an Item Master Data entry is generated. However, if an Item Master Data was created before installing ProcessForce, a restore procedure must be performed to link the Item Details with the Item Master Data. You can find the restore procedure [here](../system-initialization/data-restore).
+An Item Details record is automatically created when an Item Master Data entry is generated. However, if an Item Master Data was created before installing CompuTec ProcessForce, a restore procedure must be performed to link the Item Details with the Item Master Data. You can find the restore procedure [here](../system-initialization/data-restore).
 
 :::note Path
     Inventory → Item Details
@@ -122,7 +122,7 @@ The "Default for MRP" field is set within the Bill of Materials form to designat
 
 If the "Default for MRP" field is grayed out, ensure that a Bill of Materials exists for the required Item Code and Revision. Then, reload the Item Details form.
 
-ProcessForce Revisions follow the same behavior as SAP:
+CompuTec ProcessForce Revisions follow the same behavior as SAP:
 
 - if both dates are empty – revision is valid all the time,
 - if Valid From date is set up – revision is valid from this data,
@@ -159,7 +159,7 @@ The user can also define the [expiry date or consume by date (or inherit from th
 
 When creating a batch record, the expiry date is auto-calculated based on the shelf life interval.
 
-Batch Queue Type and Default Batch / Quality Control Status for SAP / ProcessForce Receipt Documents options are available to set in the Batches tab in the Item Details form. Default batch and quality control status can be set for SAP Business One and ProcessForce receipt documents.
+Batch Queue Type and Default Batch / Quality Control Status for SAP / ProcessForce Receipt Documents options are available to set in the Batches tab in the Item Details form. Default batch and quality control status can be set for SAP Business One and CompuTec ProcessForce receipt documents.
 
 The Inspection date is also auto-calculated for the batch and is displayed within the Batch Master Data form (see below).
 

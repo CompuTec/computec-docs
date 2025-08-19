@@ -22,12 +22,12 @@ Administration → System Initialization → General Settings → ProcessForce t
 
     This section includes options to enable or disable default SAP Business One features that may overlap with CompuTec ProcessForce capabilities:
 
-    - **Enable standard functionality of SAP Business One's Production menu**: Activates the native SAP Business One Production menu, allowing users to access SAP’s built-in production functionalities. This may be necessary for scenarios where hybrid use of SAP B1 and ProcessForce production is needed.
-    - **Enable the standard functionality of the Resources menu**: Allows access to the default SAP Resources functionality. This is relevant if you’re managing machine or labor resources directly through SAP’s standard definitions and want them visible even when using ProcessForce.
+    - **Enable standard functionality of SAP Business One's Production menu**: Activates the native SAP Business One Production menu, allowing users to access SAP’s built-in production functionalities. This may be necessary for scenarios where hybrid use of SAP Business One and CompuTec ProcessForce production is needed.
+    - **Enable the standard functionality of the Resources menu**: Allows access to the default SAP Resources functionality. This is relevant if you’re managing machine or labor resources directly through SAP’s standard definitions and want them visible even when using CompuTec ProcessForce.
 
 2. **SAP Sales Order Controls**
 
-    This section configures how Sales Orders interact with ProcessForce-specific functionalities, particularly Manufacturing Order Requests (MORs):
+    This section configures how Sales Orders interact with CompuTec ProcessForce-specific functionalities, particularly Manufacturing Order Requests (MORs):
 
     - **Hide ProcessForce related controls on the Sales Order form**: When enabled, this hides all ProcessForce-specific fields and controls from the standard Sales Order form, offering a cleaner interface for users who do not need those options.
 

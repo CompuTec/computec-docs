@@ -7,7 +7,7 @@ sidebar_position: 2
 In certain production processes, yield can impact production time.
 
 - The yield value from the Bill of Materials (BOM) header is automatically factored into the planned resource quantity calculation.
-- If the Ignore Yield checkbox is selected, ProcessForce will assume a default yield of 100%, ignoring the actual yield value.
+- If the Ignore Yield checkbox is selected, CompuTec ProcessForce will assume a default yield of 100%, ignoring the actual yield value.
 
 Example Calculation:
 

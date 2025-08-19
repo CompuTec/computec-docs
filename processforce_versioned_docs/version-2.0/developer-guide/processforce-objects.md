@@ -2,17 +2,13 @@
 sidebar_position: 4
 ---
 
-# ProcessForce Objects (User-Defined Objects)
+# CompuTec ProcessForce Objects (User-Defined Objects)
 
-ProcessForce uses user-defined objects (UDOs) to manage various business processes, including master data and transactional documents. Understanding the underlying tables and fields within these objects is essential for reporting, customization, and data validation. Below are SQL queries that retrieve detailed information about ProcessForce objects, including header fields and matrix row fields.
+ CompuTecProcessForce uses user-defined objects (UDOs) to manage various business processes, including master data and transactional documents. Understanding the underlying tables and fields within these objects is essential for reporting, customization, and data validation. Below are SQL queries that retrieve detailed information about CompuTec ProcessForce objects, including header fields and matrix row fields.
 
 ---
 
-To list all header fields from master data or documents within ProcessForce, use the following SQL query:
-
-sql
-Copy
-Edit
+To list all header fields from master data or documents within CompuTec ProcessForce, use the following SQL query:
 
 ```sql
 -- Object title (header) fields
@@ -26,7 +22,7 @@ WHERE UTB."TableName" LIKE 'CT_PF_%'
 ORDER BY U."Code", F."FieldID";
 ```
 
-To extract all fields belonging to matrix rows within ProcessForce documents, use the query below:
+To extract all fields belonging to matrix rows within CompuTec ProcessForce documents, use the query below:
 
 ```sql
 -- Object row fields

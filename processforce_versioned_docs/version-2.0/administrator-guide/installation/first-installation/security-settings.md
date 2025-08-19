@@ -4,13 +4,13 @@ sidebar_position: 3
 
 # Security Settings
 
-ProcessForce requires specific folder-level permissions to operate correctly in environments with custom security configurations. This page includes a **tutorial** to apply those settings, a **how-to** checklist, and related **reference** information.
+CompuTec ProcessForce requires specific folder-level permissions to operate correctly in environments with custom security configurations. This page includes a **tutorial** to apply those settings, a **how-to** checklist, and related **reference** information.
 
 ---
 
-## Configuring Security Settings for ProcessForce
+## Configuring Security Settings for CompuTec ProcessForce
 
-If you're installing ProcessForce on a system with non-default security settings (e.g., corporate IT policies or hardened environments), follow this step-by-step guide to ensure the correct folder permissions are applied.
+If you're installing CompuTec ProcessForce on a system with non-default security settings (e.g., corporate IT policies or hardened environments), follow this step-by-step guide to ensure the correct folder permissions are applied.
 
 ### Step-by-Step Instructions
 
@@ -25,7 +25,7 @@ Follow the steps below to configure the necessary permissions:
 
    ![Edit security properties](./media/security-settings/edit-security-properties.webp)
 
-4. In the **Permissions for CompuTec** window, for each SAP Business One user who will use ProcessForce, ensure the following permissions are enabled:
+4. In the **Permissions for CompuTec** window, for each SAP Business One user who will use CompuTec ProcessForce, ensure the following permissions are enabled:
 
         - Read & execute
         - List folder contents
@@ -43,7 +43,7 @@ Follow the steps below to configure the necessary permissions:
 
 | Folder Path                     | Required For               | Permissions Needed                    |
 |--------------------------------|----------------------------|----------------------------------------|
-| `C:\ProgramData\CompuTec`      | All ProcessForce Users     | Read, List folder, Read & execute      |
+| `C:\ProgramData\CompuTec`      | All CompuTec ProcessForce Users     | Read, List folder, Read & execute      |
 | Subfolders of `CompuTec`       | Add-ons, Temp files, etc.  | Inherited from parent folder |
 
 ---

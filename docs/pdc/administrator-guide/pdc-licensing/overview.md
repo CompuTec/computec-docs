@@ -17,7 +17,7 @@ This document provides step-by-step instructions on how to license the CompuTec 
 1. **Launch CompuTec Service Manager** - Open the CompuTec Service Manager from the Windows program list. An icon will appear in the system tray. Click on it to access the application.
 
     :::info
-        CompuTec Service Manager is included with the CompuTec License Server. You can download the latest version from the ProcessForce Downloads page.
+        CompuTec Service Manager is included with the CompuTec License Server. You can download the latest version from CompuTec ProcessForce Downloads page.
     :::
 2. **Start the CompuTec License Server** - The CompuTec License Server service is typically set to run automatically upon installation. If it is not running, select the service from the drop-down list and click the "Start" button.
 

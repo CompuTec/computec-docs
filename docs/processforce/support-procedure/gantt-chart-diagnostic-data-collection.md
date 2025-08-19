@@ -10,7 +10,7 @@ In case any issues related to displaying data on the Gantt chart occur, it is po
 
 How to collect information on the Gantt chart
 
-1. Go to the ProcessForce installation directory and open to edit ProcessForce.exe.config file.
+1. Go to CompuTec ProcessForce installation directory and open to edit CompuTec ProcessForce.exe.config file.
     The default installation directory are:
 
     - `C:\Program Files\sap\SAP Business One\AddOns\CT\ProcessForce` – for the 64-bit version,
@@ -23,7 +23,9 @@ How to collect information on the Gantt chart
 
     and save the file.
 3. Create a new directory: `c:\Temp\`.
-4. Restart ProcessForce.
+4. Restart CompuTec ProcessForce.
 5. Open Gantt chart – the system generates the Gantt chart content file and places it in this directory: `c:\Temp\schdata.xml`.
 6. Compress this file and attach it to a related support ticket.
-7. Return to ProcessForce.exe.config and set the property to false.
+7. Return to CompuTec ProcessForce.exe.config and set the property to false.
+
+---

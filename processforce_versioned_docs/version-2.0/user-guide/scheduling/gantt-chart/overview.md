@@ -4,14 +4,14 @@ sidebar_position: 1
 
 # Overview
 
-The Gantt chart is a versatile bar chart used for project scheduling, providing a visual representation of tasks, timelines, and resources. In ProcessForce, the Gantt chart plays a crucial role in managing and modifying production processes. It allows users to visualize manufacturing orders, schedule operations, and adjust timelines while offering a host of features to streamline the production workflow.
+The Gantt chart is a versatile bar chart used for project scheduling, providing a visual representation of tasks, timelines, and resources. In CompuTec ProcessForce, the Gantt chart plays a crucial role in managing and modifying production processes. It allows users to visualize manufacturing orders, schedule operations, and adjust timelines while offering a host of features to streamline the production workflow.
 
 This guide details the options and functionalities available within the Gantt chart, ensuring you can maximize its potential to improve efficiency and resource allocation.
 
 ---
 
 :::info
-    Forward scheduling is the only method supported in the Gantt chart, and not backward (forward and backward scheduling is possible in other places in ProcessForce, e.g., on Manufacturing Order).
+    Forward scheduling is the only method supported in the Gantt chart, and not backward (forward and backward scheduling is possible in other places in CompuTec ProcessForce, e.g., on Manufacturing Order).
 :::
 
 :::caution
@@ -180,7 +180,7 @@ Right-clicking on a taskbar opens the Resource Context Menu, offering advanced o
     <summary>R6: Freeze a Resource from a Manufacturing order level</summary>
     <div>
     :::info
-    Since ProcessForce 10.0 R6 version, it is possible to freeze a specific Resource from the Manufacturing Order level
+    Since CompuTec ProcessForce 10.0 R6 version, it is possible to freeze a specific Resource from the Manufacturing Order level
     :::
 
     :::info Path

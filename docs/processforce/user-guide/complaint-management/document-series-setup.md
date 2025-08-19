@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Document Series Setup
 
-Configuring document series is essential for maintaining organized and efficient complaint tracking in ProcessForce.
+Configuring document series is essential for maintaining organized and efficient complaint tracking in CompuTec ProcessForce.
 
 ---
 

@@ -102,7 +102,7 @@ Using these methods results in improper assignment of `EditType` fields in Compu
 
 - Create a **new database**
 - Install CompuTec ProcessForce
-- Transfer the required data using the **ProcessForce Integration (PFI)** tool (instead of PowerShell scripts).
+- Transfer the required data using **CompuTec ProcessForce Integration (PFI)** tool (instead of PowerShell scripts).
 
 :::
 

@@ -4,31 +4,31 @@ sidebar_position: 4
 
 # License Import and Assignment
 
-Setting up ProcessForce for the first time requires importing and assigning the appropriate license. This process ensures that the add-on functions correctly within SAP Business One.
+Setting up CompuTec ProcessForce for the first time requires importing and assigning the appropriate license. This process ensures that the add-on functions correctly within SAP Business One.
 
 :::info
-    If you are upgrading ProcessForce rather than performing a fresh installation, you may skip these steps.
+    If you are upgrading CompuTec ProcessForce rather than performing a fresh installation, you may skip these steps.
 :::
 
 :::info
-    Assigning the ProcessForce license works similarly to the SAP Business One license assignment.
+    Assigning the CompuTec ProcessForce license works similarly to the SAP Business One license assignment.
 :::
 
 ---
 
-Follow the steps below to import and assign a ProcessForce license successfully.
+Follow the steps below to import and assign CompuTec ProcessForce license successfully.
 
 1. After successful installation, the system message appears:
 
     ![System Message](./media/license-import-assignment/system-message-installation.webp)
 
-2. Ask your ProcessForce provider for a license file.
+2. Ask your CompuTec ProcessForce provider for a license file.
 
     :::info
         All information required for generating a license key is described on the [Request for a license](./license-request.md) page.
     :::
 
-3. Open the ProcessForce License Administration form:
+3. Open CompuTec ProcessForce License Administration form:
 
     ![License Administration](./media/license-import-assignment/license-administration.webp)
 

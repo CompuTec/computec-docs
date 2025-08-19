@@ -13,7 +13,7 @@ The document outlines the setup and configuration process for the CompuTec PDC a
 To use the CompuTec PDC application, the following requirements must be met:
 
 - An SAP Business One user must be defined with at least an Indirect Access User license.
-- A ProcessForce license must be assigned to the SAP Business One user,
+- CompuTec ProcessForce license must be assigned to the SAP Business One user,
 - Employee Master Data must be defined for a specific employee, including CompuTec PDC information.
 
 To access Employee Master Data, navigate to:
@@ -31,7 +31,7 @@ Main Menu → Human Resources → Employee Master Data
 
   ![Form settings](./media/setting-up-the-application/form-settings.webp)
 - **Labour Code**: assign a Labour-type Resource (e.g., Press Operator) to track an employee’s work time. An Employee with a Labour Code can be [assigned to a Task](../../user-guide/task-activities/overview.md#adding-a-new-task).
-- **PDC Settings**: a set of individual CompuTec PDC and ProcessForce settings that can be assigned to a specific Employee or CompuTec PDC installation. Click [here](rfid.md) to learn more.
+- **PDC Settings**: a set of individual CompuTec PDC and CompuTec ProcessForce settings that can be assigned to a specific Employee or CompuTec PDC installation. Click [here](rfid.md) to learn more.
 - **PDC RFID UI**: an RFID identification code is assigned to an employee for logging in using RFID devices. Click here to learn more.
 - **PDC Barcode**: a barcode is assigned to the employee for login (if barcode scanning devices are used).
 - **Is Enabled Move to Other Resource**: this checkbox determines if the employee can move a Task to an [Alternative Resource](https://learn.computec.one/docs/processforce/user-guide/scheduling/gantt-chart/alternative-resources) during time or downtime registration on a Task.
@@ -59,7 +59,7 @@ In this section, enter the necessary information to establish a connection with 
 Fill in the required details in the provided window:
 
 1. Enter the CompuTec AppEngine server address to connect to CompuTec AppEngine. This address includes the server IP or machine name (or simply 'localhost' if CompuTec PDC and CT Engine are installed on the same machine) and the port number. By default, port 8080 is used, but it can be changed if needed. Click [here](../weight-scales-integration/computec-gateway-manager.md) for instructions on how to do this.
-2. Enter the SAP Business One user ID for the selected database. The user must have at least an Indirect Access SAP Business One license and a ProcessForce license.
+2. Enter the SAP Business One user ID for the selected database. The user must have at least an Indirect Access SAP Business One license and CompuTec ProcessForce license.
 3. Enter the SAP Business One password for the selected database.
 4. After entering the server address, the list of available companies (databases) will automatically populate. Select the required company from the drop-down list (click the Get All Databases button to refresh the list).
 5. Enter the database username (required only to view the Bill of Materials and Manufacturing Orders in the Crystal Report preview). If this information is not configured, the application will prompt for authentication to open the preview. Click [here](./sap-hana-database.md) for instructions on setting up a database user other than SYSTEM.
@@ -125,7 +125,7 @@ Click [here](./rfid.md) to find out more about RFID settings.
     - Switch to CompuTec WMS
     - Log out
 
-## ProcessForce Settings
+## CompuTec ProcessForce Settings
 
 In SAP Business One with CompuTec ProcessForce installed, you can find CompuTec PDC Settings:
 

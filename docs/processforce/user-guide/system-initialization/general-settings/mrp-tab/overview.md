@@ -18,7 +18,7 @@ Administration → System Initialization → General Settings → ProcessForce t
 
 ## Key Settings
 
-The MRP tab in ProcessForce provides system-wide controls for how MRP recommendations are generated and processed. The options available are grouped into two main sections:
+The MRP tab provides system-wide controls for how MRP recommendations are generated and processed. The options available are grouped into two main sections:
 
 1. **Recommendation Settings**
 

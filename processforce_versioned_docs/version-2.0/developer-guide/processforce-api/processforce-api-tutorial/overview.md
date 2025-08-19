@@ -9,7 +9,7 @@ All examples are written in C#. You can download the solution with all samples [
 - [Example 01](https://download.computec.one/media/processforce/CompuTec_ProcessForce_API_Example.zip)
 - [Example 02](https://download.computec.one/media/processforce/CompuTec_ProcessForce_API_Samples.zip)
 
-[An example application for ProcessForce API Training](https://download.computec.one/media/processforce/CompuTec_ProcessForce_API_Example.zip)
+[An example application for CompuTec ProcessForce API Training](https://download.computec.one/media/processforce/CompuTec_ProcessForce_API_Example.zip)
 
 :::info Demo Database Credentials
     - username: manager

@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## The 4 W's of Quality Control
 
-The Quality Control function within ProcessForce is designed to ensure thorough testing and inspection by covering the 4 Ws of Quality Control:
+The Quality Control function within CompuTec ProcessForce is designed to ensure thorough testing and inspection by covering the 4 Ws of Quality Control:
 
 - **What**: identifies the test and item properties to be evaluated.
 - **When**: specifies the frequency of the testing process.

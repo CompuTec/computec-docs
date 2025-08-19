@@ -23,7 +23,7 @@ Permission for the numbering series groups is not assigned to the specific user.
 Form - Invalid Form
 ```
 
-The error message is displayed on an attempt to open a standard SAP Business One form when ProcessForce is set up as mandatory or automatic.
+The error message is displayed on an attempt to open a standard SAP Business One form when CompuTec ProcessForce is set up as mandatory or automatic.
 
 ### Solution {#solution-2}
 
@@ -32,11 +32,11 @@ The problem can be solved in many ways, depending on the system, therefore pleas
 ### Scenario 01
 
 - Open SAP Business One client and go to Add-on Administration.
-- Change ProcessForce startup to manual.
+- Change CompuTec ProcessForce startup to manual.
 - Restart SAP Business One client.
-- Go to Add-on Manager and run ProcessForce.
+- Go to Add-on Manager and run CompuTecProcessForce.
 - Check, for example, SAP Business One forms by showing System Message Log or other.
-- Go to Add-On Administration and change ProcessForce startup to Mandatory/Automatic.
+- Go to Add-On Administration and change CompuTec ProcessForce startup to Mandatory/Automatic.
 - Restart SAP Business One client and check the result.
 
 ### Scenario 02
@@ -46,7 +46,7 @@ The problem can be solved in many ways, depending on the system, therefore pleas
 
 ### Scenario 03
 
-- Remove the ProcessForce add-on from the Add-on Administration level.
+- Remove the CompuTec ProcessForce add-on from the Add-on Administration level.
 - Log into the company again to the add-on uninstalling process finishes.
 - Close SAP Business One client.
 - Open Windows Programs and Features and remove CompuTec ProcessForce API.
@@ -110,7 +110,7 @@ Assign an Account to each of the Times on Resource Accounting. Click [here](../u
 Please open Windows Registry and find the following keys: `7B3C32C6-2876-4AB9-A132-CA5FBCC90113 CompuTec.ProcessForce.Gantt.GantXControl64`.
 Check the screenshot above and take the same in your environment. Also, please check if the file path is correct: find the `CompuTec.ProcessForce.Gantt.dll` file in your system, and then check if the file path in the registry is valid. Please take a screenshot too. Then create a support ticket on support.computec.pl with the problem description and the screenshots.
 
-## Closing SAP Business One client while opening a ProcessForce window after at least 15 minutes of inactivity or after re-logging into the company database
+## Closing SAP Business One client while opening CompuTec ProcessForce window after at least 15 minutes of inactivity or after re-logging into the company database
 
 ### Issue
 
@@ -127,13 +127,13 @@ Exception message: The remote procedure call failed. (Exception from HRESULT: 0x
 
 ### Solution {#solution-5}
 
-The issue is being investigated and planned to be fixed in a future ProcessForce version.
+The issue is being investigated and planned to be fixed in a future CompuTec ProcessForce version.
 
 ## Database Test Before Upgrade results with the following error: Undefined Table and Fields (@CT_PF_MOR5_OLD, @CT_PF_AMOR5_OLD)
 
 ### Prerequisite
 
-ProcessForce version equal to or later than 10.0 RL11.
+CompuTec ProcessForce version equal to or later than 10.0 RL11.
 
 ### Scenario
 
@@ -146,7 +146,7 @@ ProcessForce version equal to or later than 10.0 RL11.
 
 ### Reason
 
-Before the 10.0 RL11 version, ProcessForce used a child table (`@CT_PF_MOR5`) to register transaction details. It has been decided that ProcessForce will not register document details in the `@CT_PF_MOR5` table but will collect them from the same document by a view, resulting in performance improvement. The `@CT_PF_MOR5_OLD` table was created during this migration. All records in `@CT_PF_MOR5` have been moved to the `@CT_PF_MOR5_OLD` table in case of any future possible data requirement from a legacy table. The `@CT_PF_MOR5` table has been removed from the database. After version **10.0 RL11**, you have the `CT_PF_MOR5` view and `@CT_PF_MOR5_OLD` and `@CT_PF_AMOR5_OLD` tables.
+Before the 10.0 RL11 version, CompuTec ProcessForce used a child table (`@CT_PF_MOR5`) to register transaction details. It has been decided that CompuTec ProcessForce will not register document details in the `@CT_PF_MOR5` table but will collect them from the same document by a view, resulting in performance improvement. The `@CT_PF_MOR5_OLD` table was created during this migration. All records in `@CT_PF_MOR5` have been moved to the `@CT_PF_MOR5_OLD` table in case of any future possible data requirement from a legacy table. The `@CT_PF_MOR5` table has been removed from the database. After version **10.0 RL11**, you have the `CT_PF_MOR5` view and `@CT_PF_MOR5_OLD` and `@CT_PF_AMOR5_OLD` tables.
 
 ### Solution {#solution-6}
 
@@ -158,5 +158,5 @@ DROP TABLE "@CT_PF_AMOR5_OLD";
 ```
 
 :::danger
-    We recommend keeping the mentioned tables for some time (2-3 months) after upgrading ProcessForce to a version equal to or later than **10.0 RL11**.
+    We recommend keeping the mentioned tables for some time (2-3 months) after upgrading CompuTec ProcessForce to a version equal to or later than **10.0 RL11**.
 :::

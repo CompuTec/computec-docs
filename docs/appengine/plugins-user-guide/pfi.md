@@ -4,7 +4,7 @@ sidebar_position: 10
 
 # PFI
 
-CompuTec PFI (ProcessForce Import) is a powerful plugin designed to simplify and accelerate the process of importing and updating data within ProcessForce objects. As a flexible alternative to [PowerShell updates](/docs/processforce/developer-guide/data-import/overview/), PFI offers an intuitive interface and advanced features that cater to the unique needs of users managing ProcessForce data.
+CompuTec PFI (CompuTec ProcessForce Import) is a powerful plugin designed to simplify and accelerate the process of importing and updating data within CompuTec ProcessForce objects. As a flexible alternative to [PowerShell updates](/docs/processforce/developer-guide/data-import/overview/), PFI offers an intuitive interface and advanced features that cater to the unique needs of users managing CompuTec ProcessForce data.
 
 To know more about CompuTec PFI, Click [here](https://www.youtube.com/watch?v=MSreLSZC8DU).
 >**Note**: The video was recorded on a pre-release version and the interface differs slightly in the released version.
@@ -15,8 +15,8 @@ To know more about CompuTec PFI, Click [here](https://www.youtube.com/watch?v=MS
 
 Before using PFI, ensure the following:
 
-1. The ProcessForce plugin is installed and enabled for the relevant company.
-2. If a new UDF (User-Defined Field) is added to a ProcessForce object, restart the CompuTec AppEngine service to reflect the changes in PFI templates.
+1. The CompuTec ProcessForce plugin is installed and enabled for the relevant company.
+2. If a new UDF (User-Defined Field) is added to CompuTec ProcessForce object, restart the CompuTec AppEngine service to reflect the changes in PFI templates.
 
 ### Installation
 
@@ -24,7 +24,7 @@ For detailed instructions on installing the CompuTec AppEngine plugin, click [he
 
 ## Usage
 
-Once the plugin is installed, its tile becomes available in the [Launchpad](/docs/appengine/appengine-users-guide/launchpad/). Opening the plugin reveals tiles representing various ProcessForce objects. Scroll to find and select the object you wish to work with.
+Once the plugin is installed, its tile becomes available in the [Launchpad](/docs/appengine/appengine-users-guide/launchpad/). Opening the plugin reveals tiles representing various CompuTec ProcessForce objects. Scroll to find and select the object you wish to work with.
 
     ![PFI](./media/pfi/pfi-main.webp)
 
@@ -76,4 +76,4 @@ The table displays data associated with the object selected in the header, inclu
 - **Import Status** – Displays the success or failure of each line's import into SAP Business One.
 
 ---
-CompuTec PFI bridges the gap between user convenience and complex data management by providing a reliable, customizable, and efficient tool for ProcessForce data handling. Whether you're new to ProcessForce or an experienced user, PFI empowers you to optimize your operations with ease.
+CompuTec PFI bridges the gap between user convenience and complex data management by providing a reliable, customizable, and efficient tool for  data handling. Whether you're new to CompuTec ProcessForce or an experienced user, PFI empowers you to optimize your operations with ease.

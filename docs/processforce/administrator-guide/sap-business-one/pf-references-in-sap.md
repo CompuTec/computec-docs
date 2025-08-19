@@ -6,7 +6,7 @@ sidebar_position: 3
 
 This page serves as a **reference** guide to understand how CompuTec ProcessForce integrates with standard SAP Business One documents.
 
-Each section below lists the fields populated by ProcessForce in the respective documents, covering both **header** and **child** (line-level) details. These fields support traceability, automation, and audit requirements in manufacturing scenarios.
+Each section below lists the fields populated by CompuTec ProcessForce in the respective documents, covering both **header** and **child** (line-level) details. These fields support traceability, automation, and audit requirements in manufacturing scenarios.
 
 ---
 

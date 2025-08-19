@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Resources - Distribution and Cost Dimensions
 
-Managing resources and their associated costs is a crucial aspect of maintaining operational efficiency and financial accuracy in manufacturing and business operations. This document explains how cost centers and projects are distributed and tracked across various forms in SAP Business One ProcessForce, ensuring consistency and flexibility in managing resource-related data.
+Managing resources and their associated costs is a crucial aspect of maintaining operational efficiency and financial accuracy in manufacturing and business operations. This document explains how cost centers and projects are distributed and tracked across various forms in CompuTec ProcessForce, ensuring consistency and flexibility in managing resource-related data.
 
 ---
 

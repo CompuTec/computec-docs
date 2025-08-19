@@ -55,7 +55,7 @@ This option is related to synchronization between CompuTec ProcessForce and SAP 
 3. **Due Date Synchronization**
 
     - SAP Production Orders have a Due Date, while CompuTec ProcessForce Manufacturing Orders have Required Date and Planned Start Date.
-    - You can define whether the Required Date or the Planned Start Date from a ProcessForce MO should populate the Due Date field in SAP Production Orders.
+    - You can define whether the Required Date or the Planned Start Date from CompuTec ProcessForce MO should populate the Due Date field in SAP Production Orders.
 
         ![Date Synchronization](./media/bom-mor/manufacturing-order-sync-dates.webp)
 
