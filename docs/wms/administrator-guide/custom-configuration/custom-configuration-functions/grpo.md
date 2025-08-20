@@ -133,8 +133,6 @@ This guide provides an overview of recent updates to the Goods Receipt PO (GRPO)
 
 26. **Do not set default Bin Code**: The Location field is left blank. The user must select it manually or scan the barcode.
 
-    ![Do not set default Bin Code](./media/grpo/screenshot-2.png)
-
 ## Changes
 
 Old View of the Goods Receipt PO Tab
