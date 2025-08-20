@@ -35,7 +35,7 @@ The change is related to the Pick List from the following documents:
 3. Reserve Invoices
 4. Inventory Transfer Requests
 
-Support for both preallocation and without it (Custom Configuration: it is possible to block picking from different than assigned).
+Support for both pre-allocation and without it.
 
 ![WMS](./media/WMS.webp)
 
