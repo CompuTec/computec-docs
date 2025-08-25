@@ -10,27 +10,41 @@ The Stock Transfer module within SAP Business One offers comprehensive options f
 
 ![Stock Transfer](./media/stock-transfer/stock-transfer.png)
 
-1. **Show Project selection** – Displays the Project Selection form before the Remarks form, aiding in document creation and ensuring the accurate project is selected.
+## Configuration Options
+
+Below are the available settings and behaviors you can enable or disable in the Stock Transfer process:
+
+1. **Show Project selection**: Displays the Project Selection form before the Remarks form, ensuring the correct project is linked during document creation.  
 
     ![Document Details](./media/stock-transfer/show-project-selection.png)
 
-2. **Default Project** – If a default project is chosen, it can be automatically selected by clicking the right arrow on the Project Selection form, streamlining the process..
+2. **Default Project**: If a default project is set, it can be automatically applied by clicking the right arrow in the Project Selection form, speeding up document processing.  
 
     ![Default Project](./media/stock-transfer/default-project-stock-transfer.png)
 
-3. **Scan DocNum on the Base Document selection window** – This option allows scanning by document number (DocNum) instead of entry number (DocEntry), making it easier to retrieve documents based on familiar identifiers.
+3. **Move only indexes by default**: This option allows you to move indexes from Storage Unit to another location.
 
-4. **Enable dismiss Inventory Transfer Request before closing document** – Provides an option to dismiss an active document, accessible from the Remarks window.
+    - Move only indexes by default
+
+        ![Move only indexes by default](./media/stock-transfer/screenshot-3.png)
+
+    - Move only indexes by default X
+
+        ![Move only indexes by default](./media/stock-transfer/screenshot-4.png)
+
+4. **Scan DocNum on the Base Document selection window**: Enables scanning by **document number (DocNum)** instead of **entry number (DocEntry)**, simplifying document retrieval.
+
+5. **Enable dismiss Inventory Transfer Request before closing document**: Provides an option to dismiss an active document, accessible from the Remarks window.
 
     ![Remarks Window](./media/stock-transfer/gr-remarks.png) ![Remarks Window](./media/stock-transfer/gr-remarks-01.png)
 
-5. **Canceling document releases Transfer Request document** – Upon cancellation, closes the Inventory Transfer Request document if the “Dismiss” option is set to “Yes,” preventing further processing in CompuTec WMS and reflecting a “Closed” status in SAP Business One.
+6. **Canceling document releases Transfer Request document**: When cancellation occurs, the related Inventory Transfer Request document is also closed (if *Dismiss* is set to **Yes**). This prevents further processing in CompuTec WMS and updates the status to **Closed** in SAP Business One.
 
-6. **Block adding Items to base documents** – Prevents the addition of extra items not specified in the base document, ensuring inventory transfers remain consistent with the original request.
+7. **Block adding Items to base documents**:  Prevents adding items not listed in the base document, ensuring transfers remain aligned with original requests.
 
     ![Base Document](./media/stock-transfer/doc-details.png) ![Base Document](./media/stock-transfer/doc-details-01.png)
 
-7. **Skip destination Warehouse and Bin Location selection** – Uses the default destination specified in the base document, bypassing the manual selection of warehouse or bin locations.
+8. **Skip destination Warehouse and Bin Location selection**: Automatically uses the destination warehouse/bin defined in the base document, bypassing manual entry.  
     <details>
     <summary>Click here to expand</summary>
     <div>
@@ -44,21 +58,35 @@ The Stock Transfer module within SAP Business One offers comprehensive options f
     </div>
     </details>
 
-8. **Force manual quantity confirmation** – This option requires manual confirmation of quantities, rather than relying on barcode scanning, to avoid errors in quantity assignment.
+9. **Force manual quantity confirmation**: Requires users to confirm quantities manually instead of relying only on barcode scans, reducing errors in allocation.
 
-9. **Forbid picking more than is on Transfer Request** – It is not possible to assign a greater quantity of an item to a document than what's specified in the base document.
+10. **Forbid picking more than is on Transfer Request**: Prevents assigning a higher quantity than what is specified in the base Transfer Request.
 
-10. **Show Cost Dimensions** – Enabling this checkbox adds a Cost Dimensions button on the Quantity form for users who need to assign additional cost dimensions.
+11. **Show Cost Dimensions**: Adds a **Cost Dimensions** button to the Quantity form for users who need to assign extra cost dimensions.
 
-11. **Skip SAP Allocation Quantity, Skip CompuTec ProcessForce Allocation Quantity** – Disables batch and serial number allocations in SAP Business One if custom allocations are required.
+12. **Skip SAP Allocation Quantity, Skip CompuTec ProcessForce Allocation Quantity**: Disables batch and serial allocations in SAP Business One and CompuTec ProcessForce if custom allocations are required.
 
-12. **Use Sales UoM** – Click [here](../../../user-guide/managing-uom-in-computec-wms.md) to find out more on Managimg UoM in CompuTec WMS.
+13. **Use Sales UoM**: For details, see [Manging UoM in CompuTec WMS](../../../user-guide/managing-uom-in-computec-wms.md).
 
-13. **Ask to continue scanning when multiple items are over-picked** – When checked: it prompts a message when an item’s quantity exceeds its required amount across multiple lines, allowing users to manage quantity allocation.
+14. **Ask to continue scanning when multiple items are over-picked**: If an item’s picked quantity exceeds requirements across multiple lines, the system prompts users to confirm whether to continue scanning.
 
-14. **Disable auto "From Bin" assigment (when intentory exists in single bin) while adding item by scanning** - Disables automatic assignment of items from a single bin location when the item exists in an alternative bin location.
+15. **Disable auto "From Bin" assignment (when inventory exists in single bin) while adding item by scanning**: Stops automatic bin assignment when stock exists in a single bin, allowing users to choose manually.
 
-15. **Automatically populate the Quantity field with the value from the base document** - When the Quantity screen is opened, the quantity field is automatically populated with the quantity from the base document.
+16. **Automatically populate the Quantity field with the value from the base document**: When opening the Quantity screen, the value from the base document is prefilled automatically.
+
+17. **Quick SU Transfer - Select SU only by scanning**: Allows SU transfer only by scanning.
+
+        ![SU Trasnfer](./media/stock-transfer/screenshot-5.png)
+
+18. **Move fully picked lines to the bottom of the list**:  Lines that have been fully picked are automatically moved to the bottom of the list, keeping focus on pending lines.  
+
+    - Move fully picked lines to the bottom of the list:
+
+        ![Move fully picked lines to the bottom of the list](./media/stock-transfer/screenshot-6.png)
+
+    - Move fully picked lines to the bottom of the list X
+
+        ![Move fully picked lines to the bottom of the list X](./media/stock-transfer/screenshot-7.png)
 
 ## Changes
 
@@ -122,4 +150,3 @@ Fields marked according to the field layout in the Custom Query:
     ![Inventory Transfer](./media/stock-transfer/stock-transfer-01.webp)
 
 ---
-The Stock Transfer module in SAP Business One, combined with CompuTec WMS, provides robust tools for effective Warehouse and Inventory Management. The module’s enhanced configuration options, from project selection and document scanning to customized sorting and filters, ensure flexibility and streamlined processes.
