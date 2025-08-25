@@ -45,20 +45,21 @@ If the CompuTec WMS Server is already installed on this computer, you can access
     <details>
     <summary>Click here to check the required details</summary>
     <div>
-    1. Server Name - This should match the server name defined in the SAP Business One System Landscape Directory. (Default port for SAP HANA: 40000)
-    2. License Server Name/Address - Enter the license server name/address. (Default port for SAP HANA: 30002)
-    3. Cleanup connection pool every (min) - A connection pool is a cache of connections to a database. Set the interval (in minutes) for clearing the connection pool. It is created so that the connections can be reused during future requests to the database.
-    4. SAP Business One User Name - Enter the User Name.
-    5. Server Type - Select either HANA or MSSQL 20XX.
-    6. Barcode Decoding Type - Here. you can select the barcode decoding type:
-        - **CompuTec** – CompuTec WMS adapted GS1 standard. Click [here](../../barcode-scanning/overview.md#gs1-barcode-standard---computec-decoder) to find out more
-        - **Odette** – Odette standard. Click [here](../../barcode-scanning/overview.md#odette-standard) to find out more.
-        - **Custom** – Barcode interpreter without prefixes and with custom ones.  Click [here](../../barcode-scanning/overview.md#gs1-barcode-standard---computec-decoder) to find out more.
-    7. Close inactive CompuTec WMS session after (min) Time, after which a user is logged out from CompuTec WMS (in minutes).
-    8. SAP Business One Password - Enter the SAP Business One Password.
-    9. WMS Server Port - Enter the server port.
-    10. SSL Connection - Click [here](ssl-connection.md) to find out more about SSL connection.
-    11. Checking this option restarts a good service on losing CompuTec WMS to SAP Business One or a database connection. The option requires further setting up to be available to use.
+    1. Server Name: This should match the server name defined in the SAP Business One System Landscape Directory. (Default port for SAP HANA: 40000)
+    2. License Server Name/Address: Enter the license server name/address. (Default port for SAP HANA: 30002)
+    3. Cleanup connection pool every (min): A connection pool is a cache of connections to a database. Set the interval (in minutes) for clearing the connection pool. It is created so that the connections can be reused during future requests to the database.
+    4. Do not close SAP connection during cleanup: The connection to SAP will not be closed during cleanup.
+    5. SAP Business One User Name: Enter the User Name.
+    6. Server Type: Select either HANA or MSSQL 20XX.
+    7. Barcode Decoding Type: Here, you can select the barcode decoding type:
+        - **CompuTec**: CompuTec WMS adapted GS1 standard. Click [here](../../barcode-scanning/overview.md#gs1-barcode-standard---computec-decoder) to find out more
+        - **Odette**: Odette standard. Click [here](../../barcode-scanning/overview.md#odette-standard) to find out more.
+        - **Custom**: Barcode interpreter without prefixes and with custom ones.  Click [here](../../barcode-scanning/overview.md#gs1-barcode-standard---computec-decoder) to find out more.
+    8. Close inactive CompuTec WMS session after (min): Time after which a user is logged out from CompuTec WMS (in minutes).
+    9. SAP Business One Password: Enter the SAP Business One Password.
+    10. WMS Server Port: Enter the server port.
+    11. WMS Server Port SSL: Click [here](ssl-connection.md) to find out more about SSL connection.
+    12. Restart WMS Server automatically when SAP DI connection is lost: Checking this option restarts a good service on losing CompuTec WMS to SAP Business One or a database connection. The option requires further setting up to be available to use.
         <details>
         <summary>Click here to find out more</summary>
         <div>
@@ -74,8 +75,8 @@ If the CompuTec WMS Server is already installed on this computer, you can access
             - Click ‘Apply.’
         </div>
         </details>
-    12. CompuTec AppEngine address.
-    13. Company-Specific Configuration Options
+    13. CompuTec AppEngine address: Enter the CompuTec AppEngine Address.
+    14. Company-Specific Configuration Options:
     For each company on the server, right-click a company row to access additional configuration options
         1. **Install WMS Objects** - Select this option to install the CompuTec WMS objects (tables, fields) needed for the application to function correctly in the database. **This step must be completed before starting to use CompuTec WMS**. Click the option, enter the database credentials, and begin the installation process. Note: The process may vary slightly for new databases on HANA. For more details, check [here](../../../faq/faqs.md#cannot-install-computec-wms-objects-to-a-database).
         2. **Open Custom Config** - It leads to [Custom Configuration options](../../custom-configuration/overview.md).
@@ -84,7 +85,7 @@ If the CompuTec WMS Server is already installed on this computer, you can access
         5. **Reset CC to default** - Reverts all custom settings for the database to default.
         6. **Import CC Settings/Export CC Settings** - Export or import configuration settings to a file for easy transfer to another server.
         7. **Barcode Decoder - Export/Import Decoder Settings**. Export or import [Barcode Decoder settings](../../../user-guide/custom-decoder.md) as needed. Click [here](../../../user-guide/custom-decoder.md#decoder-definitions) to check the values set in Decoder Definition.
-    14. Multi-Tenant SAP Option - Check this option to operate with the SAP Multi-Tenant option. After checking the option, click Register Servers. In the new form, click the last (empty) row, enter the server's IP address in Multi-Tenant, check its checkbox, and click Save.
+    15. SAP Multi-Tenant: Check this option to operate with the SAP Multi-Tenant option. After checking the option, click Register Servers. In the new form, click the last (empty) row, enter the server's IP address in Multi-Tenant, check its checkbox, and click Save.
     </div>
     </details>
 7. Click the Update button to apply changes. The service will start, and the system will be ready for use.
