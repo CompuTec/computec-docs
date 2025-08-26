@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Manufacturing Order Statuses
 
-Every Manufacturing Order (MO) must have a designated status, which defines the actions that can be performed at each stage of production. The status is assigned in the Manufacturing Order header and plays a crucial role in managing production workflows.
+Each Manufacturing Order (MO) is assigned a status that defines what actions can be performed at different stages of production. The status, managed from the Manufacturing Order header, is critical for controlling and tracking production workflows.
 
     ![Statuses](./media/manufacturing-order-statuses/statuses.webp)
 
@@ -12,21 +12,21 @@ Every Manufacturing Order (MO) must have a designated status, which defines the 
 
 ## Available statuses
 
-- **Not Scheduled**: the manufacturing Order does not have a defined due date.
-- **Scheduled**: a due date is set, but materials cannot yet be issued or received from production.
-- **Released**: dates are determined for Manufacturing Order; it is possible to issue to / receipt from production
-- **Started**: Manufacturing Order changes automatically to this status on any related issue to production or operation start. It is possible to adjust this status manually. Manufacturing Orders with this status should not be re-scheduled
-- **Finished**: blocks Manufacturing Order, but the status can still be changed if necessary.
-- **Closed**: details of the Manufacturing Order with this status cannot be changed anymore. Optionally changing to this status can also make journal entries based on Manufacturing Order variance (when option Post variance on Manufacturing Order closure is set in General Settings).
+- **Not Scheduled**: The manufacturing Order has no defined due date.
+- **Scheduled**: A due date is set, but materials cannot yet be issued or received for production.
+- **Released**: The Manufacturing Order is prepared with defined dates. At this stage, it becomes possible to issue materials to production and record receipts.
+- **Started**: The status changes automatically when an issue to production is made or an operation is started. It can also be set manually. Manufacturing Orders in this status should not be re-scheduled.
+- **Finished**: The Manufacturing Order is blocked from further processing, though the status may still be changed if required.
+- **Closed**: The Manufacturing Order is fully locked from editing. Optionally, closing can trigger journal entries based on MO variance (if the **Post variance on Manufacturing Order closure** option is enabled in *General Settings*).
 
 :::info
-You can check possible status changes [here](mass-status-change.md).
+Refer to [Status Change Rules](mass-status-change.md) to see which transitions are possible.
 :::
 
-You can also use a [mass Manufacturing Order status change tool](mass-status-change.md) to change the status of multiple Manufacturing Orders at once.
+You can also use the [Mass Manufacturing Order Status Change Tool](mass-status-change.md) to update multiple orders simultaneously.
 
-## Manufacturing Order Status Change through CompuTec PDC
+## Status Updates through CompuTec PDC
 
-When an operation is started in [CompuTec PDC](/docs/pdc/), the Manufacturing Order status is automatically updated to Started on the Resource Planning Board and Scheduling if it was previously in Released status.
+When an operation is started in [CompuTec PDC](/docs/pdc/), the Manufacturing Order status automatically updates to **Started** in both the Resource Planning Board and Scheduling, if it was previously set to **Released**.
 
 ---

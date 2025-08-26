@@ -6,54 +6,63 @@ toc_max_heading_level: 4
 
 # Manufacturing Order Menus
 
-Manufacturing Order menus provide a range of essential functions to manage production processes efficiently. Right-clicking within a Manufacturing Order opens a context menu with several key options, allowing users to navigate through inventory management, scheduling, time recording, reports, and operation relationships. Below is an overview of the available menu options.
+The **Manufacturing Order (MO) menus** provide quick access to essential functions for managing production. Right-clicking on a Manufacturing Order opens a context menu with options for inventory handling, scheduling, time recording, reporting, and visualizing operation dependencies.  
+
+This section outlines the available menus and their functionality.
 
 ---
 
 ## Issues and Receipts
 
-This submenu provides access to all inventory-related functions, including material issues, receipts, and transfers. Note that the Manufacturing Order must be in Released or Started status to use these options.
+The **Issues and Receipts** submenu handles all inventory-related processes, including material issues, receipts, and transfers.  
+> **Note:** The Manufacturing Order must be in **Released** or **Started** status to use these functions.  
 
 ![Issues and Receipts](./media/manufacturing-order-menus/issues-and-receipts.webp)
 
 ## Scheduling
 
-The Scheduling menu offers tools to plan and manage production timelines effectively.
+The **Scheduling** menu provides tools to plan and manage production timelines, ensuring tasks are aligned with required dates.  
 
     ![Scheduling](./media/manufacturing-order-menus/scheduling.webp)
 
 ## Recording Time
 
-The Recording Time option allows users to track time spent on various manufacturing tasks.
+The **Recording Time** menu allows users to log time spent on manufacturing tasks directly against the MO.  
 
     ![Recording Time](./media/manufacturing-order-menus/recording-time.webp)
 
 ### Actual Tasks Progress Report
 
-This option opens a form displaying active CompuTec PDC tasks, providing real-time insights into ongoing work. It is accessible when the Manufacturing Order is in Released, Started, or Finished status.
+From this option, users can view a list of active CompuTec PDC tasks. It gives real-time insights into ongoing work and is available when the MO is in **Released**, **Started**, or **Finished** status.  
 
 ## Reports
 
-Users can generate detailed production-related reports from the Reports menu.
+The **Reports** menu provides access to detailed production-related reports, enabling better visibility and analysis of manufacturing performance.  
 
     ![Reports](./media/manufacturing-order-menus/reports.webp)
 
 ## Operation Relation Chart
 
-To access this option, select Operation Relation Map from the Manufacturing Order's context menu.
+Selecting **Operation Relation Map** from the context menu opens a graphical chart that displays how operations in a Manufacturing Order are connected.
 
 ![Operation Relation Chart](./media/manufacturing-order-menus/orm.webp)
 
-This chart provides a visual representation of the operations involved in a specific Manufacturing Order. It illustrates the sequence of tasks within the production process, where operations typically follow a linear progression - one operation completes before the next begins. However, the chart also supports more complex relationships where operations may run in parallel or follow customized dependencies.
+- Operations usually follow a linear sequence, where one step must be completed before the next begins.  
+- The chart also supports more advanced structures, where operations may run **in parallel** or follow **custom dependencies**.  
 
 ### Operation Tile
 
+Each operation is displayed as a tile containing essential details:
+
 ![Operation Tile](./media/manufacturing-order-menus/operation-tile.webp)
 
-Apart from the basic information (Operation Name, Sequence, Status), the Tile also holds information on the operation's times: start and end times of work (both planned and actual) and period of work.
+- Operation name and sequence number  
+- Current status  
+- Planned and actual start/end times  
+- Total work period  
 
 #### Operation Quantity
 
-In the latest application version, additional details on operation-related quantities have been included to enhance production tracking.
+The latest application version introduces additional fields for operation-related **quantities**, improving the accuracy of production tracking.  
 
 ---
