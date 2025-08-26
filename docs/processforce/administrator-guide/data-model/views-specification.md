@@ -55,6 +55,8 @@ A specific view can be also used in a standard SQL query.
 |Resource|Resource dictionary|Reuse Views|dimension|
 |Warehouse|Warehouse dictionary|Reuse Views|dimension|
 
+---
+
 ## Measures and Dimensions for Query Views
 
 ### ActualMaterialCostOnMorQuery

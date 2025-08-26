@@ -27,6 +27,8 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | U_PickLine       | U_LineNum in @CT_PF_PRE1 table              |                                                     |
 | U_PickType       | Pick UDO_Code                               |                                                     |
 
+---
+
 ## Issue to Production
 
 |   HEADER -OIGE   |                                            |                                                   |
@@ -43,6 +45,8 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | U_PickEntry      | Pick Entry                                 |                                                   |
 | U_PickLine       | U_LineNum in @CT_PF_POR1 table             |                                                   |
 | U_PickType       | Pick UDO_Code                              |                                                   |
+
+---
 
 ## Non-Stock Item
 
@@ -62,6 +66,8 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | Ref3         | Empty                                  |                                                   |
 | LineMemo     | Item Code                              |                                                   |
 
+---
+
 ## Subcontracting Procurement Document
 
 |   HEADER -OPOR   |                                                        |
@@ -77,6 +83,8 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | U_PickEntry      | empty                                                  |
 | U_PickLine       | empty                                                  |
 | U_PickType       | empty                                                  |
+
+---
 
 ## External Service Item (Goods Receipt PO)
 
@@ -94,6 +102,8 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | U_PickLine       | empty                                                  | U_LineNum in @CT_PF_PRE1 table |
 | U_PickType       | empty                                                  | Pick UDO_Code                  |
 
+---
+
 ## Stock Transfer
 
 | HEADER OWTR      |                                            |                                   |
@@ -110,6 +120,8 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | U_PickLine       | empty                                      |                                   |
 | U_PickType       | empty                                      |                                   |
 
+---
+
 ## Sales Order
 
 | HEADER ORDR      |               |
@@ -125,6 +137,8 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | U_PickEntry      | empty         |
 | U_PickLine       | empty         |
 | U_PickType       | empty         |
+
+---
 
 ## Receipt Adjustment
 
@@ -143,6 +157,8 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | U_PickLine       | empty                                      |                                              |
 | U_PickType       | empty                                      |                                              |
 
+---
+
 ## Issue Adjustment
 
 |   HEADER -OIGN   |                                            |                                                     |
@@ -159,6 +175,8 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | U_PickEntry      | empty                                      |                                                     |
 | U_PickLine       | empty                                      |                                                     |
 | U_PickType       | empty                                      |                                                     |
+
+---
 
 ## Non-Stock Item Adjustment
 
@@ -178,6 +196,8 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | Ref3         | Empty                             |
 | LineMemo     | Item Code                         |
 
+---
+
 ## Time Booking Journal Entry
 
 | HEADER -OJDT |                            |                                                   |                                |
@@ -195,6 +215,8 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | Ref2         | Empty                      |                                                   | Mor Doc Num                    |
 | Ref3         | Empty                      |                                                   |                                |
 | LineMemo     | Time Bookings              |                                                   | Time Bookings 7197             |
+
+---
 
 ## Time Booking Adjustment Journal Entry
 
@@ -214,6 +236,8 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | Ref3         | Empty                      |                                                   |                                |
 | LineMemo     | Time Corrections           |                                                   | Time Corrections 7197          |
 
+---
+
 ## Manufacturing Order Closing
 
 | HEADER -OJDT |                                 |                                 |
@@ -232,6 +256,8 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | Ref3         | Empty                           |                                 |
 | LineMemo     | Manufacturng Order Close- 7253. |                                 |
 
+---
+
 ## Receipt Correction Price Variance Journal
 
 | HEADER -OJDT     | | |
@@ -249,3 +275,5 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | Ref2             | ManufacturingOrder DocNum |  |
 | Ref3             | Empty |  |
 | LineMemo         | Manuf Rec variance 7253. | Mor Doc Num |
+
+---

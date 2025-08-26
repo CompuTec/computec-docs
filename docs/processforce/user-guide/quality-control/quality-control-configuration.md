@@ -24,7 +24,7 @@ The following Quality Control forms use **SAP Business One Document Numbering**:
 - [NCMR (Non-Conforming Materials Report)](./ncmr-non-conforming-materials-report.md)
 - [Quality Control Tests Pool](./test-protocols/quality-control-tests-pool.md)
 
-![Settings](./media/quality-control-configuration/quality-control-numbering.webp)
+    ![Settings](./media/quality-control-configuration/quality-control-numbering.webp)
 
 ## Resources
 
@@ -37,9 +37,9 @@ To define a resource:
 - Go to General Settings > ProcessForce Tab.
 - Set that Item Group under **QC Resource Group**.
 
-![General Settings QC Groups](./media/quality-control-configuration/general-settings-qc-groups.webp)
+    ![General Settings QC Groups](./media/quality-control-configuration/general-settings-qc-groups.webp)
 
-![Item Master Data Item Group](./media/quality-control-configuration/item-master-data-item-group.webp)
+    ![Item Master Data Item Group](./media/quality-control-configuration/item-master-data-item-group.webp)
 
 ## Items
 
@@ -49,6 +49,6 @@ The Test Protocol and Quality Control Test forms also allow users to define spec
 - Assign the item to a specific **Item Group** (e.g., “QC Consumables”).
 - In **General Settings > ProcessForce Tab**, assign this group to **QC Item Group**.
 
-![Item Master QC Item](./media/quality-control-configuration/item-master-qc-item.webp)
+    ![Item Master QC Item](./media/quality-control-configuration/item-master-qc-item.webp)
 
 ---

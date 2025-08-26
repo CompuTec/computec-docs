@@ -23,7 +23,7 @@ To access Company Details, navigate to:
 - **Use Perpetual Inventory**: This field can be checked or unchecked based on regional practices. For instance, it is checked in the UK and unchecked in Italy.
 - **Manage Item Cost per Warehouse**: Optional, but must be decided before costing records are created or recalculated.
 
-![company Details](./media/overview/company-details.webp)
+    ![company Details](./media/overview/company-details.webp)
 
 ### Document Settings
 
@@ -42,6 +42,8 @@ Warehouse configuration directly impacts how costing records behave:
 - **New Warehouses**: Automatically added to the Item Master record based on the SAP Business One configuration. In turn, each warehouse is added to each Item Costing record.
 - **Deleted Warehouses**: Automatically removed from each Item Costing record.
 - **Drop Ship Warehouses**: Excluded from Item Costing records.
+
+---
 
 ## 2. CompuTec ProcessForce Settings
 

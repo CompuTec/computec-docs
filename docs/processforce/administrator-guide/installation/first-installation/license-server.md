@@ -8,7 +8,7 @@ sidebar_position: 1
 
 This updated page includes:
 
-- Step-by-step instructions for initial installation
-- Setting Windows Firewall rule
+- step-by-step instructions for initial installation,
+- setting Windows Firewall rule.
 
 ---

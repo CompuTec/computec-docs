@@ -63,6 +63,8 @@ Refer to the [**License Import and Assignment**](../../licensing/license-import-
 
 ## Reference – Required Configurations & Warnings
 
+These configurations and precautions are critical to ensure a smooth installation or upgrade process, preventing conflicts with SAP Business One settings and avoiding data integrity issues.
+
 ### General Settings Check
 
 :::danger

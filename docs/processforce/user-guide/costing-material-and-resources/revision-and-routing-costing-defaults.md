@@ -17,7 +17,7 @@ Within the **Item Details** form:
 1. Select the appropriate Revision to be used for costing.
 2. Enable the **"Is Costing Default"** checkbox to set it as the default revision for cost calculation.
 
-![Costing Default Revision](./media/revision-and-routing-costing-defaults/costing-defualt-revision.webp)
+    ![Costing Default Revision](./media/revision-and-routing-costing-defaults/costing-defualt-revision.webp)
 
 ➡️ Learn more about Item Details [Item Details](../item-details/overview.md).
 

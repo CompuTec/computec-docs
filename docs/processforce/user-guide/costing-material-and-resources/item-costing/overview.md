@@ -63,6 +63,8 @@ For each purchased item, an item cost record is created. This record allows you 
 
     ![Item Costing Price Rolled Cost](./media/overview/item-costing-price-rolled-cost.webp)
 
+---
+
 ## Semi-Finished Products
 
 For each Make item, an item cost record will be created. This form allows you to define the source of the Item Cost value for calculation purposes, as well as manually add fixed and variable overhead values. It also enables the calculation of semi-finished and finished product costs by performing a cost roll-up through the "Update Costing" function.
@@ -85,12 +87,16 @@ For each Make item, an item cost record will be created. This form allows you to
 
     ![Semi Finished Products](./media/overview/semi-finished-products.png)
 
+---
+
 ## Finished Products
 
 Finished products are costed by aggregating the costs of all semi-finished products, raw materials, and associated overheads within their BOM.
 
 ![Finished Products](./media/overview/finished-products.png)
 ![Finished Products](./media/overview/finished-products-01.png)
+
+---
 
 ## Distribution Rules and Cost Dimensions
 

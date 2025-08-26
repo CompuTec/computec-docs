@@ -31,7 +31,7 @@ Adding a unique **prefix** to the User-Defined Fields (UDFs) name - typically ba
 3. **Resulting Database Field**
     SAP Business One will automatically store it in the database as: U_AB_weight
 
-## Example
+### Example
 
 Let's say you want to add a custom field for weight to CompuTec ProcessForce Bill of Materials (BOM) form:
 

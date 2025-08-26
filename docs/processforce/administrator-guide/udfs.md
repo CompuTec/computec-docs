@@ -98,15 +98,11 @@ Administration → System Initialization → Authorizations → General Authoriz
 
     ![Header UDFs](./media/udfs/udfs-header.webp)
 
----
-
 ### Row UDFs
 
 - Displayed as additional **columns** in the table grid on the form.
 
     ![Row UDF](./media/udfs/udf-row-test.webp)
-
----
 
 ### Flat Forms (e.g., Downtime Reason)
 

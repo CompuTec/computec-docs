@@ -44,6 +44,8 @@ In this form, you can create and manage cost types, which can later be applied i
 
     ![Overhead variable](./media/multistructure-fixed-and-variable-overhead-costs/overhead-variable.webp)
 
+---
+
 ## Usage of the Option
 
 Once defined, the overhead types can be used within the Item Costing and Resource Costing forms. To access these forms, navigate to:

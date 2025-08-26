@@ -13,6 +13,8 @@ You can download the latest version of the application from the [CompuTec Proces
 
 ## General Requirements
 
+These specifications ensure that CompuTec ProcessForce runs smoothly in day-to-day operations, with sufficient resources allocated for performance-intensive features.
+
 | Resource | Requirement |
 |----------|-------------|
 | **Memory (RAM)** | Minimum: 1–2 GB (light usage)<br/>Recommended: Up to 16 GB depending on feature usage (e.g., Gantt Chart, Cost Roll-Up) and data volume |
@@ -22,6 +24,8 @@ You can download the latest version of the application from the [CompuTec Proces
 ---
 
 ## Software Requirements
+
+Meeting these software prerequisites guarantees stable integration with SAP Business One and compatibility with the latest security and performance updates.
 
 | Component | Requirement |
 |----------|-------------|

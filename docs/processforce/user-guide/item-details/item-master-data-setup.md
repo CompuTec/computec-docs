@@ -5,7 +5,7 @@ sidebar_position: 2
 # Item Master Data Setup
 
 Item Master Data is a critical component in SAP Business One, enabling efficient inventory and production management. When using CompuTec ProcessForce, specific fields within the Item Master Data setup influence manufacturing, procurement, and license plate functionality. This guide outlines the key fields and their roles in CompuTec ProcessForce.
- 
+
 To access Item Master Data Setup, navigate to:
 
 :::note Path
@@ -18,9 +18,16 @@ When setting up Item Master Data within SAP Business One, the following fields a
 
 ## Form Header
 
-- **Unit Price**: this value is automatically applied to the Bill of Materials (BOM) and Manufacturing Orders and is used in financial transactions.
-- **Item Group**: required for License Plate functionality. A specific Item Group code must be configured under  [General Settings](../system-initialization/general-settings/overview.md) ProcessForce → License tab
-- **Sales Item, Inventory Item, Purchase Item, Fixed Assets Item**: these fields should remain unchecked when Phantom Item is also unchecked for Co-Product production in General Settings.
+- **Item No.**: The unique identifier/code of the item.
+- **Description**: The name or description of the item for easier identification.
+- **Foreign Name**: An alternate name of the item, often used for international customers/vendors.
+- **Item Type**: Specifies what type of item it is.
+- **Item Group**: Required for License Plate functionality. A specific Item Group code must be configured under  [General Settings](../system-initialization/general-settings/overview.md) ProcessForce → License tab
+- **UoM Group** (Unit of Measure Group): Defines how the item is measured and sold (e.g., Box, Manual).
+- **Bar Code**: Field for assigning a barcode to the item for scanning purposes.
+- **Price List**: Defines the default price list from which the item price will be derived.
+- **Unit Price**: This value is automatically applied to the Bill of Materials (BOM) and Manufacturing Orders and is used in financial transactions. The base selling price of the item in the primary currency.
+- **Sales Item, Inventory Item, Purchase Item, Fixed Asset Indicator**: These fields should remain unchecked when Phantom Item is also unchecked for Co-Product production in General Settings.
 
   :::note
       When using license plates, CompuTec ProcessForce automatically generates a license plate number and assigns it to the Item Master, following the defined Item Group code.
@@ -33,6 +40,20 @@ When setting up Item Master Data within SAP Business One, the following fields a
 ## Planning tab
 
 - **Procurement Method**: specifies whether an item is Make or Buy, impacting its use in the BOM and Manufacturing Orders.
+
+## Purchasing tab
+
+## Sales Data tab
+
+## Inventory Data tab
+
+## Planning Data tab
+
+## Production Data tab
+
+- **Properties**: This tab is designed to categorize and classify items based on predefined attributes. These classifications are useful for reporting, filtering, and analysis without the need to create custom fields.
+- **Remarks**: Additional notes related to the specification.
+- **Attachments**: Allows the user to upload relevant documents relating to Item Details.
 
 ## Production tab
 

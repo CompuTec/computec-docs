@@ -6,15 +6,17 @@ sidebar_position: 1
 
 CompuTec ProcessForce is a 64-bit .NET-based add-on built to extend the core functionalities of SAP Business One, with a specific focus on the needs of manufacturing and process industries. Its architecture is designed for deep integration, performance efficiency, and adaptability across both Microsoft SQL Server and SAP HANA environments.
 
+---
+
 ## Architectural Overview
 
 At its core, CompuTec ProcessForce functions as a **Windows-based .NET application** that launches from within SAP Business One. It operates via an executable process (`ProcessForce.exe`) and integrates seamlessly with the SAP Business One environment through its APIs and extension points.
 
 ![PF Architecture](./media/architecture/processforce-architecture.webp)
 
----
-
 ## Key Architectural Components
+
+The architecture of CompuTec ProcessForce is divided into several key layers, each responsible for specific aspects of functionality, integration, and performance.
 
 ### 1. CompuTec ProcessForce API
 
@@ -25,8 +27,6 @@ The business logic and data handling layer is encapsulated in a dynamic-link lib
 - Offers **Direct Access Mode**, which uses **ADO.NET** for efficient database communication.
 
 This separation of concerns ensures robust handling of both SAP-compliant data structures and custom logic.
-
----
 
 ### 2. User Interface (UI) Layer
 
@@ -41,8 +41,6 @@ The user interface is built using a combination of SAP-standard and modern web-b
 
 This hybrid approach supports both consistent user experience and enhanced usability for complex operations.
 
----
-
 ### 3. Data Management
 
 CompuTec ProcessForce relies on SAP Business One’s extensibility features to store and manage its data:
@@ -52,8 +50,6 @@ CompuTec ProcessForce relies on SAP Business One’s extensibility features to s
 - User-Defined Fields (UDFs)
 
 This ensures tight integration with the SAP data model while allowing CompuTec ProcessForce to manage industry-specific logic and traceability data.
-
----
 
 ### 4. Reporting and Analytics
 
