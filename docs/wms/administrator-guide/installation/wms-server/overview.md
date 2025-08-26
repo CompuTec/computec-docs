@@ -41,7 +41,7 @@ If the CompuTec WMS Server is already installed on this computer, you can access
     :::
 6. Enter the required details:
 
-    ![CompuTec WMS - All Settings](./media/wms-all-settings.webp)
+    ![CompuTec WMS - All Settings](./media/wms-all-settings.png)
     <details>
     <summary>Click here to check the required details</summary>
     <div>
