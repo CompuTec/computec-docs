@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Delivery from Base Document
 
-n SAP Business One, deliveries can be efficiently created by referencing existing base documents. This not only ensures consistency but also helps in streamlining the dispatch process by pulling in relevant data automatically. This guide walks you through the detailed process of creating a delivery document based on various source documents and managing item details effectively.
+In SAP Business One, deliveries can be efficiently created by referencing existing base documents. This not only ensures consistency but also helps in streamlining the dispatch process by pulling in relevant data automatically. This guide walks you through the detailed process of creating a delivery document based on various source documents and managing item details effectively.
 
 ---
 
