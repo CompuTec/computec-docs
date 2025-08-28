@@ -9,3 +9,5 @@ On this tab, CompuTec PDC options are available (Plant Data Capture: the applica
 The options are described in [CompuTec PDC Documentation](https://learn.computec.one/docs/pdc/administrator-guide/setting-up-the-application/overview)
 
 ![PDC tab](./media/pdc-tab/pdc-tab.webp)
+
+---

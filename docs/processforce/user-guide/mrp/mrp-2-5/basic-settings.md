@@ -67,9 +67,6 @@ If the lead time is for three days, the MRP will issue the purchase or productio
 
 **Internal Lead Time Scope** – determine how ILT is added to documents/recommendations.
 
-- For Item with Procurement Method = Buy, ILT can be calculated for Sale document, Purchase document/recommendation, Purchase document/recommendation & Sale documents
-- For Item with Procurement Method = Make, ILT can be calculated for Sale document, Production document/recommendation, Production document/recommendation & Sale documents.
-
 |     | Procurement Method | ILT Scope      | Outcome                                                                        |
 | --- | ------------------ | -------------- | ------------------------------------------------------------------------------ |
 | 1a  | Make               | Sale           | ILT added to Sales document                                                    |
