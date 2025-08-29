@@ -60,6 +60,8 @@ Please note that this functionality only updates the description in the Bill of 
 
 ## Restore Item Data
 
+To access the same, navigate to:
+
 :::info Path
     Help → Support Desk → Restore → Restore Item Details
 
@@ -89,6 +91,8 @@ When the Restore Item Costing function is executed, cost records are created for
 
 ## Restore Resource Costing
 
+To access Restore Resource Costing, navigate to:
+
 :::info Path
     Help → Support Desk → Restore → Restore Resource Costing
 :::
@@ -96,6 +100,8 @@ When the Restore Item Costing function is executed, cost records are created for
 This function creates cost records for every resource in each cost category, ensuring financial consistency in CompuTec ProcessForce.
 
 ## Restore Resource Calendar and Employee Calendar
+
+To access the same, navigate to:
 
 :::info Path
     Help → Support Desk → Restore → Restore Resource Calendars
@@ -110,6 +116,12 @@ When a Resource or Employee Master Data record is created in CompuTec ProcessFor
 This function restores all Goods Issue and Goods Receipt references within Manufacturing Orders.
 
 The purpose of this option is to address scenarios where a Goods Issue or Goods Receipt document has been deleted, yet the reference remains in the Manufacturing Order's Document tab. This situation can lead to errors when attempting to update the Manufacturing Order.
+
+---
+
+:::info
+Data Restore is also **automatable**, reducing manual effort for administrators.  
+:::
 
 ---
 

@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Packing Slip
+# Packing Slip on Delivery
 
 A Delivery document can be created directly or based on other SAP Business One documents. This guide explains how to create a delivery, customize its view, manage storage units (SUs), and use packing slips to track items.
 
