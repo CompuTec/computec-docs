@@ -60,6 +60,7 @@ This guide walks you through the process of setting up and debugging a project u
 ```
 
 After you save this file, you can start AppEngine from the console by running `CompuTec.AppEngine.Host.DevApp.core.exe` application ( please stop the AppEngine Service first).
+
 4. **Setting the Project Dev Environment variables**
     - Edit the `CT.VehOne/Properties/launchSettings.json` file, the variable CT_DEBUG is the absolute path to the DevAeConvig.config.json file that is also located in `CT.VehOne/Properties` folder.
     - Edit the `CT.VehOne/Properties/DevAeConvig.config.json` file. The variable Plugins is an array of all the plugins that will be launched when debugging the solution. They must lead to the CT.VehOne/dev.config.json file (absolute).
