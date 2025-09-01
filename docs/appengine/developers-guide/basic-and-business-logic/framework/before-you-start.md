@@ -52,7 +52,7 @@ This guide walks you through the process of setting up and debugging a project u
     }
   },
   "DevelopmentConfiguration": {
-    "Enabled": false
+    "Enabled": true
   },
   "AppEngineInstance": "e5aaf3d2-626c-4eea-a206-48979edee0e7",
   "DefaultAppEngineInstanceName": "Development From Sources"
