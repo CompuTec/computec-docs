@@ -61,14 +61,9 @@ Administration → System Initialization → Authorizations → General Authoriz
 
         ![Add UDF](./media/udfs/udf-add.webp)
 
-4. Fill in required UDF details like:
+4. Fill in required UDF details like: Title, Description, Data type, Field structure
 
-    - Title
-    - Description
-    - Data type
-    - Field structure
-
-    >Note: Title, Type, and Structure cannot be edited once the field is added. You must delete and recreate the UDF if needed.
+    >**Note**: Title, Type, and Structure cannot be edited once the field is added. You must delete and recreate the UDF if needed.
 
     ![Fields](./media/udfs/field-data-add.webp)
 
@@ -117,7 +112,7 @@ Administration → System Initialization → Authorizations → General Authoriz
 
 You can control the visibility and activity of row UDFs using: Form Settings → Table Columns
 
-> Note: Only **row UDFs** appear in the Form Settings window.
+> **Note**: Only **row UDFs** appear in the Form Settings window.
 
   ![Form Settings](./media/udfs/udfs-form-settings.webp)
 

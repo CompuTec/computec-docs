@@ -5,7 +5,7 @@ toc_max_heading_level: 2
 
 # Licensing Issues
 
-The most common issue connected to CompuTec ProcessForce licensing will be noted on this page.
+This page lists the most common licensing problems in **CompuTec ProcessForce** and provides step-by-step instructions to resolve them.
 
 ---
 

@@ -11,4 +11,6 @@ Here, you can check which functionalities are assigned to a specific CompuTec Pr
 
 All CompuTec ProcessForce users must possess CompuTec ProcessForce license type that is equivalent to or higher than their SAP Business One license. For instance, a user with an SAP Business One Limited Logistics license can be assigned either CompuTec ProcessForce Little Logistics license or CompuTec ProcessForce Professional license.
 
-[Download the Chart (PDF File)](https://download.computec.one/media/processforce/CompuTec_ProcessForce_License_Comparison_Chart.pdf)
+➡️ [Download the Chart (PDF File)](https://download.computec.one/media/processforce/CompuTec_ProcessForce_License_Comparison_Chart.pdf)
+
+---

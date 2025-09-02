@@ -4,9 +4,7 @@ sidebar_position: 3
 
 # Views Specification
 
-The model contains 17 calculation views, 8 of which are views that can be a direct source for analytics tools (like Dashboards, KPIs, or Microsoft Excel). The rest of the views are of the indirect type. Here you can find the list of all the views and a detailed description of the query views.
-
-A specific view can be also used in a standard SQL query.
+The model contains 17 calculation views, 8 of which are views that can be a direct source for analytics tools (like Dashboards, KPIs, or Microsoft Excel). The rest of the views are of the indirect type. Here you can find the list of all the views and a detailed description of the query views. A specific view can be also used in a standard SQL query.
 
 ---
 

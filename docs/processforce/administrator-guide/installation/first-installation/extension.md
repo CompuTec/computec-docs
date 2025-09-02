@@ -14,8 +14,8 @@ Follow these steps to install the CompuTec ProcessForce Plugin properly.
 
 ### 1. Review Prerequisites
 
-- Ensure you meet all CompuTec ProcessForce [**System Requirements**](../../system-requirements.md).
-- It is **recommended** to install the [**CompuTec License Server**](./license-server) before proceeding.
+- Ensure you meet all CompuTec ProcessForce [System Requirements](../../system-requirements.md).
+- It is **recommended** to install the [CompuTec License Server](./license-server) before proceeding.
 - Restart the SAP Business One client **before installing** the CompuTec ProcessForce Plugin.
 
 ### 2. Plugin Downloads
@@ -61,7 +61,7 @@ Refer to the [**License Import and Assignment**](../../licensing/license-import-
 
 ---
 
-## Reference – Required Configurations & Warnings
+## Reference: Required Configurations & Warnings
 
 These configurations and precautions are critical to ensure a smooth installation or upgrade process, preventing conflicts with SAP Business One settings and avoiding data integrity issues.
 

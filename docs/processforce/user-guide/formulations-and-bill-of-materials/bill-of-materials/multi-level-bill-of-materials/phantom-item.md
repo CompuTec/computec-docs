@@ -4,15 +4,22 @@ sidebar_position: 3
 
 # Phantom Item
 
-A Phantom Item is a Bill of Materials template that can be a part of another Bill of Materials. It is not an Inventory Item – any Warehouse never receives it. It serves only as a marking point in a master Bill of the Materials production process (Phantom Items do not create an inventory or financial transactions).
+A **Phantom Item** is a Bill of Materials (BOM) template that forms part of another BOM but is not treated as an inventory item.
 
-Phantom Item is an alternative to Semi-Finished products. You can use a Bill of Material Item on a master Bill of Materials, but in this case, a separate, linked Manufacturing Order is needed for each child BOM. Using Phantom on BOM does not create separate MOR: it explodes (adds its content) on Items Tab and Operations tab (adds operations defined in Phantom Production Process).
+- It is never received into a warehouse.  
+- It does not generate inventory or financial transactions.  
+- It acts as a **marker** in the master BOM, expanding its components and operations directly into a Manufacturing Order (MO).  
+
+Phantom Items are commonly used as an alternative to semi-finished products.
+
+- With semi-finished products, each child BOM requires its own Manufacturing Order.
+- With Phantom Items, no additional MO is created—the phantom BOM simply **explodes** into the parent MO.
 
 ---
 
 ## Phantom Item
 
-### Setting up
+### Setting up a Phantom Item
 
 :::info Path
     Inventory → Item Master Data → Production Data tab
@@ -22,70 +29,96 @@ Phantom Item is an alternative to Semi-Finished products. You can use a Bill of 
 
 To use a specific Item as Phantom, be sure to check the following settings:
 
-- Phantom Item check box checked,
-- Inventory, Sales, and Purchase Item fields un-checked,
-- Issue Method set up to Backflush.
+- ✅ Check **Phantom Item**.  
+- ❌ Uncheck **Inventory**, **Sales**, and **Purchase Item**.  
+- ⚙️ Set **Issue Method** = *Backflush*.  
+- 🚫 Phantom Items cannot be managed by **Batches or Serials** (General tab).
 
-Also, note that a Phantom (as every Non-Inventory Item) cannot be managed by Batches or Serials (Item Master Data → General tab).
+---
 
-### Example
+### Example: Beverage Production
 
-In a beverage production setup, consider Product-A, a finished beverage. Its Bill of Materials (BOM) consists of:
+For **Product-A** (finished beverage), the BOM includes:
 
-- Packaging materials – Bottle-01, Label-01, Top-01 (which can be purchased or stored in inventory).
-- The drink itself – Recipe-01 (a separate BOM that defines the beverage formulation).
+- **Packaging materials** (Bottle-01, Label-01, Top-01) → inventory items.
+- **Recipe-01** → Phantom Item (formulation of the drink).  
 
-While the packaging materials can be stocked and retrieved from inventory, the drink (Recipe-01) is a Phantom Item. This means:
+When an MO for Product-A is created:
 
-- It cannot be produced through a separate Manufacturing Order (MO).
-- It does not exist in inventory or get stored in a warehouse.
-- It is only created as part of the Product-A manufacturing process.
+- Packaging items are drawn from stock.  
+- Recipe-01 expands inline: all of its components and operations are added directly to the MO.  
+- No separate MO is required for Recipe-01.  
 
-When a Manufacturing Order for Product-A is generated, the Recipe-01 automatically expands, adding its components and production steps directly into the MO.
+    ![Manufacturing Order](./media/phantom-item/phantom-item-manufacturing-order.webp)
 
-![Manufacturing Order](./media/phantom-item/phantom-item-manufacturing-order.webp)
-
-In the screenshot above, the Phantom Item from the master Bill of Materials (BOM) has been expanded within the Manufacturing Order (MO). As a result, all components of Recipe-01 have been automatically added to the Items tab of the MO. This eliminates the need to create a separate Manufacturing Order for Recipe-01, as would be necessary for a Semi-finished Product. Additionally, any Operations defined for the Phantom in its Production Process are automatically included in the Operations tab.
-
-To review which Phantom Items were used in a particular Manufacturing Order, you can check the WIP Items tab:
+To review expanded phantoms in an MO, check the **WIP Items tab**:
 
 ![WIP Item](./media/phantom-item/phantom-item-WIP-tab.webp)
 
-You can also add a Phantom manually to a Manufacturing Order. On adding a document after this, a communication form will pop up with information about Phantoms being present on a record and that it will be expanded automatically. It is required to confirm the communication before adding a document.
+If you add a Phantom manually to an MO, the system prompts you to confirm expansion before the document is added.
 
-## Material Phantom
+---
 
-A Material Phantom is a hybrid between a standard inventory item and a phantom item. Unlike regular Phantom Items, which are never stocked, a Material Phantom can be an inventory item that is available for sale or purchase. It retains the flexibility of a Bill of Materials (BOM) component while also allowing for independent production and storage when needed. This approach enables manufacturers to avoid creating separate, linked Manufacturing Orders while still maintaining the option to produce and sell the item individually.
+### Bind Phantom Header Qty
 
-### Example
+The **Bind Phantom Header Qty** option ensures that a phantom’s header quantity scales automatically with the parent BOM quantity.  
 
-Consider a car manufacturing process where an engine is a critical component. Typically, the engine is assembled as part of the car production process, eliminating the need for a separate Engine Manufacturing Order. In this case, the engine is used as a Material Phantom in the car’s BOM, meaning it is not stored in inventory but is directly incorporated during production.
+- **Enabled** → The phantom header quantity is always tied to the parent’s order quantity.  
+- **Disabled** → The phantom header quantity can be edited independently (manual control).  
 
-However, in some cases, the company may want to sell the engine separately as an independent product. When this occurs, a separate Manufacturing Order for the engine can be created.
+This setting helps keep BOM proportions consistent and reduces errors when scaling production orders.  
 
-### Setting up
+---
+
+A **Material Phantom** is a hybrid between a Phantom Item and a standard inventory item.
+
+- It can be stocked, sold, or purchased like a normal item.
+- It can also expand into its BOM within a parent MO, avoiding the need for a separate linked MO.  
+
+### Example: Car Manufacturing
+
+- The **Engine** is defined as a Material Phantom in the car’s BOM.  
+- During car production, the engine’s BOM expands inline without needing its own MO.  
+- However, the company may also produce and sell engines separately—this is supported since it is a stock item.  
+
+---
+
+### Setting up a Material Phantom
 
 Material Phantom option can be set up for specific revisions in Item Details. To do so, navigate to:
 
 :::info
-    Inventory → Item Details
+    Inventory → Item Details → Revisions tab
 :::
 
 ![Material Phantom](./media/phantom-item/material-phantom.webp)
 
+Enable **Material Phantom** for the revision.
+
+---
+
 ### Usage
 
-When adding a Material Phantom Item to a Manufacturing Order, users can explode it via the context menu, breaking it down into its components.
+- Add the Material Phantom to an MO.  
+- Right-click to **explode** it into components.  
+- If not exploded, the system prompts:  
+  *“There are phantoms. All phantoms will expand automatically. Do you want to continue?”*  
+- The MO cannot be finalized until all phantoms are expanded.  
 
-If a Material Phantom Item has not been exploded, the system will prompt a message: "There are phantoms. All phantoms will expand automatically. Do you want to continue?" A Manufacturing Order cannot be finalized unless the Material Phantom Item is exploded.
-
-:::tip
-If an item needs to be used both as a regular inventory item (without a BOM) and as a Material Phantom (with an expandable BOM), two separate item revisions must be created:
-
-    - One without the Material Phantom setting (acting as a standard inventory item).
-    - One with the Material Phantom setting enabled (allowing BOM explosion on a master BOM).
+:::tip  
+If an item needs both behaviors—regular stock item *and* Material Phantom—create two revisions:  
+    - One **without** the Material Phantom setting (standard inventory).
+    - One **with** the Material Phantom setting (expandable BOM).
 :::
 
 ---
 
-Click [here](https://www.youtube.com/playlist?list=PLtT6kgaz5YncGTk3VHFvmdRqY6O9DE3F5) to see related videos.
+## Explanation (Why)
+
+- **Phantom Items** simplify production by embedding child BOMs directly into parent orders.  
+- **Material Phantoms** combine the benefits of phantom explosion with the flexibility of stocking and selling.  
+- **Bind Phantom Header Qty** guarantees consistent scaling of BOM quantities, reducing manual adjustments.
+
+---
+
+➡️ Click [here](https://www.youtube.com/playlist?list=PLtT6kgaz5YncGTk3VHFvmdRqY6O9DE3F5) to see related videos.

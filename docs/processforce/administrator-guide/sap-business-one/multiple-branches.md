@@ -22,6 +22,6 @@ CompuTec ProcessForce is fully compatible with the **Multiple Branches** functio
 
 ### Additional Resources
 
-Check the [SAP Business One How-to Guide](https://help.sap.com/http.svc/rc/b909432c59b242f8be0c2a5ac0316b94/9.3/en-US/How%20to%20Work%20with%20Multiple%20Branches%20in%20SAP%20Business%20One%209.3.pdf) to learn more about managing SAP Business One branches.
+➡️ Check the [SAP Business One How-to Guide](https://help.sap.com/http.svc/rc/b909432c59b242f8be0c2a5ac0316b94/9.3/en-US/How%20to%20Work%20with%20Multiple%20Branches%20in%20SAP%20Business%20One%209.3.pdf) to learn more about managing SAP Business One branches.
 
 ---

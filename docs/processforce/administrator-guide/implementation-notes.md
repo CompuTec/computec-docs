@@ -46,11 +46,9 @@ This naming pattern will help future developers, support teams, and upgrade tool
 
 ## Summary
 
-| Step | Action |
-| --- | --- |
-| 1 | Choose a short, unique prefix (e.g., your company abbreviation) |
-| 2 | Add UDFs using Prefix_FieldName format |
-| 3 | Verify the UDF appears in the database as U_Prefix_FieldName |
-| 4 | Maintain this standard for all future UDFs |
+- Choose a short, unique prefix (e.g., your company abbreviation)
+- Add UDFs using Prefix_FieldName format
+- Verify the UDF appears in the database as U_Prefix_FieldName
+- Maintain this standard for all future UDFs
 
 ---

@@ -4,24 +4,47 @@ sidebar_position: 1
 
 # Batch Controlled Items
 
-Effective batch management ensures accurate inventory tracking and optimized stock movement in a warehouse. In this guide, we explore two key methods for picking batch-controlled items: Manual Picking and Auto Select Picking.
+Effective Batch Management ensures accurate inventory tracking and optimized stock movement within a warehouse. This guide explains two methods for handling batch-controlled items during picking:  
+
+- **Manual Picking** (user-driven control)  
+- **Auto Select Picking** (system-driven allocation)  
 
 ---
 
 ## Manual Picking
 
-With manual picking, users can enter the required quantity and press the right arrow. The system then assigns bin allocation automatically, following predefined bin allocation rules.
+With manual picking, the user specifies the required quantity and confirms selection:
+
+1. Enter the **required quantity**.  
+2. Press the **right arrow**.  
+3. The system automatically assigns bin allocation based on predefined **bin allocation rules**.  
 
 ![Manual Picking](./media/batch-controlled-items/manual-selection.webp)
 
+This method offers flexibility—ideal when warehouse staff need to override system recommendations.
+
 ## Auto Select Picking
 
-The Auto Select function streamlines batch picking by automatically allocating stock based on batch allocation rules such as FIFO (First In, First Out), FEFO (First Expired, First Out), and FMFO (First Manufactured, First Out). When a user selects Auto Select, the system determines the required quantity and assigns the appropriate bin allocation accordingly.
+The **Auto Select** function streamlines picking by allowing SAP Business One to choose batches automatically. The system applies allocation rules such as:
+
+- **FIFO**: First In, First Out  
+- **FEFO**: First Expired, First Out  
+- **FMFO**: First Manufactured, First Out  
+
+When a user clicks **Auto Select**, the system:
+
+    - Calculates the required quantity.  
+    - Allocates bins and batches according to the selected rule.  
 
 ![Auto](./media/batch-controlled-items/auto-select.webp)
 
-However, if the Manual Issue Behavior setting in General Settings is configured to Display, the Auto Select function will not pick the batch, requiring users to manually confirm batch selection.
+>**Note**: If Manual Issue Behavior (General Settings → Inventory tab) is set to **Display**, the system does not complete the auto-pick. Instead, it prompts the user to confirm batches manually.
 
-![Manual issue behaviour](./media/batch-controlled-items/manual-issue-behaviour.webp)
+    ![Manual issue behavior](./media/batch-controlled-items/manual-issue-behaviour.webp)
+
+:::tip
+    - Use **Auto Select** for efficiency when allocation rules are well-defined.  
+    - Use **Manual Picking** when exceptions or special business cases require user judgment.  
+:::
 
 ---
