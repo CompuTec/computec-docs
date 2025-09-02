@@ -18,45 +18,45 @@ The Delivery process in SAP Business One allows you to move goods out of the war
 
 ## How to Use Packing Slip in Delivery
 
-- **Step 1: Enable Packing Slip**
+### Step 1: Enable Packing Slip
 
-        - Navigate to: Custom Configuration → Delivery tab
+- Navigate to: Custom Configuration → Delivery tab
 
-            ![Custom Config](./media/packing-slip/config-pic.png)
+    ![Custom Config](./media/packing-slip/config-pic.png)
 
-        - Enable the "Packing Slip" option.
-        - After saving the document, the Packing Slip becomes accessible directly from the Delivery document.
+- Enable the "Packing Slip" option.
+- After saving the document, the Packing Slip becomes accessible directly from the Delivery document.
 
-            ![Packing list](./media/packing-slip/packing-list.png)
+    ![Packing list](./media/packing-slip/packing-list.png)
 
-        - In the Packing Slip, you can view which items have been packed into each Storage Unit.
+- In the Packing Slip, you can view which items have been packed into each Storage Unit.
 
-            ![Packing Slip](./media/packing-slip/packing-slip-items.png)
+    ![Packing Slip](./media/packing-slip/packing-slip-items.png)
 
-- **Step 2: Create a Delivery**
+### Step 2: Create a Delivery
 
-        - You can create a Delivery document based on: Pick List, Sales Order, A/R Reserve Invoice, Draft.
+- You can create a Delivery document based on: Pick List, Sales Order, A/R Reserve Invoice, Draft.
 
-            ![Create Delivery](./media/packing-slip/create-delivery.png)
+    ![Create Delivery](./media/packing-slip/create-delivery.png)
 
-        - When you open or create a delivery, the **Document Details** screen displays the lines from the SAP base document.
+- When you open or create a delivery, the **Document Details** screen displays the lines from the SAP base document.
 
-            ![Document Details](./media/packing-slip/doc-det-screen.png)
+    ![Document Details](./media/packing-slip/doc-det-screen.png)
 
-**- Step 3: Manage Storage Units (SUs)**
+### Step 3: Manage Storage Units (SUs)
 
-        - Add a new "SU": its SU Code appears on the top bar.  
-        - Switch between SUs by:  
-        - Scanning the **SU Code/SSCC**, or  
-        - Clicking the **top bar** to stop adding, then selecting the SU you want to edit.  
+- Add a new "SU": its SU Code appears on the top bar.  
+- Switch between SUs by:  
+- Scanning the **SU Code/SSCC**, or  
+- Clicking the **top bar** to stop adding, then selecting the SU you want to edit.
 
-            ![New SU](./media/packing-slip/new-su.png) ![Add SU](./media/packing-slip/add-su.png) ![Searc SU](./media/packing-slip/search-su.png)
+    ![New SU](./media/packing-slip/new-su.png) ![Add SU](./media/packing-slip/add-su.png) ![Searc SU](./media/packing-slip/search-su.png)
 
-- **Step 4: Complete the Delivery**
+### Step 4: Complete the Delivery
 
-        - When the requested quantity is fully picked, the line turns "green".  
-        - Save the document to finalize the Delivery.
+- When the requested quantity is fully picked, the line turns "green".  
+- Save the document to finalize the Delivery.
 
-            ![Save Document](./media/packing-slip/save-doc.png)
+    ![Save Document](./media/packing-slip/save-doc.png)
 
 ---
