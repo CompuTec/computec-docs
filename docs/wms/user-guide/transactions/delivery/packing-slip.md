@@ -4,92 +4,59 @@ sidebar_position: 7
 
 # Packing Slip on Delivery
 
-A Delivery document can be created directly or based on other SAP Business One documents. This guide explains how to create a delivery, customize its view, manage storage units (SUs), and use packing slips to track items.
+The Delivery process in SAP Business One allows you to move goods out of the warehouse and record them against customer orders. With CompuTec WMS, you can enhance this process by enabling **Packing Slips** to trace Storage Units (SUs).
 
 ---
 
-## Prerequisites
+## Purpose
 
-Before creating a delivery, ensure that:
+- Record customer deliveries against base documents.  
+- Track which items were packed into which Storage Units (SUs).  
+- Provide transparency with **Packing Slips**, ensuring accurate logistics and traceability.
 
-- You have access to the relevant base documents (e.g., Sales Order, Pick List).
-- Any required custom configurations (extra fields, buttons, or packing slip options) are set up in the system.
-- Storage Units (SU) and SSCC codes are enabled if your process requires them.
+---
 
-## Steps to Create a Delivery Document
+## How to Use Packing Slip in Delivery
 
-- **Step 1. Start a Delivery Document**
+- **Step 1: Enable Packing Slip**
 
-    A delivery document can be created from the following sources: Sales Order, Pick List, A/R Reserve Invoice, Draft Document
+        - Navigate to: Custom Configuration → Delivery tab
 
-        ![create a delivery doc](./media/packing-slip/screenshot-1.png)
+            ![Custom Config](./media/packing-slip/config-pic.png)
 
-    Alternatively, you can start a new delivery from scratch.
+        - Enable the "Packing Slip" option.
+        - After saving the document, the Packing Slip becomes accessible directly from the Delivery document.
 
-    When you open the Delivery, the Document Details screen displays the item lines from the selected base document.
+            ![Packing list](./media/packing-slip/packing-list.png)
 
-        ![Document Details](./media/packing-slip/screenshot-2.png)
+        - In the Packing Slip, you can view which items have been packed into each Storage Unit.
 
-- **Step 2. Customize the Line View**
+            ![Packing Slip](./media/packing-slip/packing-slip-items.png)
 
-    You can personalize the Document Details screen to display additional information:
+- **Step 2: Create a Delivery**
 
-        - Go to Custom Configuration → Manager → Extra SQL fields on Main List Items.
+        - You can create a Delivery document based on: Pick List, Sales Order, A/R Reserve Invoice, Draft.
 
-            ![Custom Config](./media/packing-slip/screenshot-3.png)
+            ![Create Delivery](./media/packing-slip/create-delivery.png)
 
-        - Add up to two extra fields to display on each line.
+        - When you open or create a delivery, the **Document Details** screen displays the lines from the SAP base document.
 
-            ![Extra fields](./media/packing-slip/screenshot-4.png)
+            ![Document Details](./media/packing-slip/doc-det-screen.png)
 
-- **Step 3. Configure Available Actions**
+**- Step 3: Manage Storage Units (SUs)**
 
-    The action buttons at the bottom of the screen can be customized. For example, you can disable the option to add a Storage Unit if it is not needed in your process.
+        - Add a new "SU": its SU Code appears on the top bar.  
+        - Switch between SUs by:  
+        - Scanning the **SU Code/SSCC**, or  
+        - Clicking the **top bar** to stop adding, then selecting the SU you want to edit.  
 
-        ![Configure available actions](./media/packing-slip/screenshot-5.png)
+            ![New SU](./media/packing-slip/new-su.png) ![Add SU](./media/packing-slip/add-su.png) ![Searc SU](./media/packing-slip/search-su.png)
 
-- **Step 4. Manage Storage Units (SU)**
+- **Step 4: Complete the Delivery**
 
-        - When you create an SU, its SU Code is displayed on the top bar.
+        - When the requested quantity is fully picked, the line turns "green".  
+        - Save the document to finalize the Delivery.
 
-            ![SU Code](./media/packing-slip/screenshot-6.png)
-
-        - After scanning or selecting an item, you can choose the requested or allocated quantity. A list of available batches appears for selection.
-
-            ![Batches](./media/packing-slip/screenshot-7.png)
-
-        - You can add a new SU at any point. Its SU Code will appear on the top bar.To switch between Storage Units - Scan the SU Code/SSCC, or tap the top bar to stop adding to the current SU, then select the SU you want to edit.
-
-            ![SU Code](./media/packing-slip/screenshot-8.png) ![SU Code](./media/packing-slip/screenshot-9.png)
-
-- Step 5. **Enable and Use Packing Slips**
-
-    Packing Slips allow you to track which items are packed into which Storage Unit.
-
-        - Go to Custom Configuration → Delivery tab.
-
-            ![Delivery tab](./media/packing-slip/screenshot-10.png)
-
-        - Enable the Packing Slip option.
-
-    Once enabled, you can open the Packing Slip directly from the saved Delivery document.
-
-        ![Packing slip](./media/packing-slip/screenshot-11.png)
-
-    The Packing Slip displays the mapping between items and their assigned Storage Units.
-
-        ![Packing slip](./media/packing-slip/screenshot-12.png)
-
-- **Step 6. Finalize the Delivery**
-
-    When the requested quantity is fully entered, the line turns green.
-
-    You can then:
-
-        - Save the document as a Delivery document.
-        - Save it as a Draft.
-        - Attach additional files (if attachments are enabled in Custom Configuration).
-
-            ![Custom Config](./media/packing-slip/screenshot-13.png)![Save draft](./media/packing-slip/screenshot-14.png)
+            ![Save Document](./media/packing-slip/save-doc.png)
 
 ---
