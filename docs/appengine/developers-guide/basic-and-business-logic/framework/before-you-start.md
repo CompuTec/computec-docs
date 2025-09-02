@@ -15,7 +15,7 @@ This guide walks you through the process of setting up and debugging a project u
     - Install **CompuTec AppEngine** and configure it on your development company database.
     - Activate the target company within the CompuTec AppEngine interface.
     - Run the SAP Business One application on the same database and confirm that the **CompuTec.Start** add-on is installed.
-    - SAP WebClient development environment: Development Environment Setup | SAP Help Portal
+    - SAP WebClient development environment: [Development Environment Setup | SAP Help Portal](https://help.sap.com/docs/SAP_BUSINESS_ONE_WEB_CLIENT/e6ac71d18c7543828bd4463f77d67ff7/b121ab221f4044baaf6051bba14cc160.html)
     - Code Samples - https://github.com/CompuTec/appengine-examples 
 2. **Install CompuTec Templates** - CompuTec provides predefined templates to streamline your development process. To install these templates:
 
