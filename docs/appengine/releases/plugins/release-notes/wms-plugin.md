@@ -8,6 +8,51 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 
 ---
 
+## CompuTec WMS Plugin 3.2509.2
+
+**Release Date - 02 September 2025**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Improvement | Server | Fixed bug when using pre-allocation on Pick List. |
+
+## CompuTec WMS Plugin 3.2509.1
+
+**Release Date - 02 September 2025**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Improvement | Client | Pick and Pack – From Bin: Quantity does not consider allocated quantities. |
+
+## CompuTec WMS Plugin 3.2508.2
+
+**Release Date - 20 August 2025**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Bug | WMS Plugin | Request Details – 'Cancel' button does not work in edit mode. |
+| Improvement | Server | Integration of new AppEngine plugin functionality with CompuTec WMS Server. |
+| Improvement | Client | GRPO: Possibility to set empty Bin Location field. |
+| Bug | Server | Stock Transfer: allow entering serial numbers for items managed with empty serials. |
+| Bug | Server | Pick and Pack - Empty Serials: Unable to open Quantity screen. |
+| Bug | Server | Pick Order: error when adding an SU: "Input string was not in a correct format." |
+| Bug | Client | CompuTec WMS client error after TR translation failure. |
+| Bug | Server | Delivery: Catch Weight quantities split by line number from CompuTec WMS window instead of selected batches. |
+| Bug | Server | Sales BOM header displayed; error shown when attempting to change item quantity because it is part of a Sales BOM. |
+| Bug | Server | Stock Transfer from Pick List: quantities displayed incorrectly. |
+| Bug | Client | Pick List Error message occurred: "Pick list exists. Bin location information required." |
+| Improvement | Client, Custom Configuration | Delivery: Save as Draft not working when "Use Sales UoM" is enabled. |
+| Bug | Server | Fix PowerShell ImportSU and add additional messages |
+| Bug | Server | SU: displays quantity per line; quantity cannot exceed the base line quantity. |
+| Bug | Server | Warehouse Info: SU Info allows adding an item with quantity exceeding available stock. |
+| Bug | Server | SU Disassembly to Storage Unit: initial quantity is not removed from the SU, potentially causing desynchronization between SU and warehouse quantities. |
+| Bug | Server | TSL instead of SSL in WMS Settings |
+| Bug | Client | Link Storage Unit to document line ID. |
+| Bug | Client Android | Pick and Pack/Delivery – new SU data (weight) is not saved on any stage. |
+| Bug | Client Android | Stock Counting: Unable to scan QR code with barcoder; error message occurred: "Invalid barcode." |
+| Bug | Server | 6460 |
+
+
 ## CompuTec WMS Plugin 3.2508.1
 
 **Release Date - 04 August 2025**
