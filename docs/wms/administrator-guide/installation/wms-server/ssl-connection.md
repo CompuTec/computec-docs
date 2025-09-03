@@ -17,7 +17,7 @@ To use TSL with CompuTec WMS, the following are required:
     - **Clients Supported** - Windows WMS Client and Windows CE Client
     - **Port Addresses** - TSL and non-TSL connections (The default port for non-TSL usage is 30002)
 
-    ![WMS Server Port SSL](./media/ssl-connection.webp)
+    ![WMS Server Port SSL](./media/tsl-connection.webp)
 
 ## Usage
 
