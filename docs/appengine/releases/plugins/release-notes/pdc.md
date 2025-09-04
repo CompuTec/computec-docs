@@ -6,6 +6,18 @@ sidebar_position: 3
 
 Below are the release notes for CompuTec PDC Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec PDC 4.2509.1
+
+**Release Date - 03 September 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Improvement | Downtimes | End time should be equal to the time when downtime was added.
+| Bug | PDC |  Unable to edit dates in Quick Time Registration. |
+| Bug | PDC | PDC freezes on pop-up screen, preventing user action and ultimately causing the application to crash. |
+| Bug | PDC | Dropdown not functioning correctly when no custom values are defined. |
+| Bug | PDC | Substitutes validity is not considered in PDC. |
+
 ## CompuTec PDC 4.2506.1
 
 **Release Date - 9 June 2025**
