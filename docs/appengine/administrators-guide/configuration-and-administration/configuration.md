@@ -151,3 +151,39 @@ Once the initial configuration is complete, the advanced configuration stage all
 5. **Status** - Displays the operational status of the server (e.g., active/inactive).
 6. **Restart Required** - Indicates whether a server restart is necessary to apply any recent changes.
 7. **Profile** - Provides access to server-specific configuration or settings through an editable profile link.
+
+## CompuTec Early Access
+
+CompuTec Early Access is designed for partners who wish to contribute to pre-release testing (release candidate testing) of plugins and the CompuTec Framework. To apply for early access, please create a support ticket at [https://support.computec.pl](https://support.computec.pl) to obtain an Access token for the Early Access.
+
+### Prerequisites
+
+Before enabling the Early Access configuration, ensure the following:
+
+- Download and install the latest [CompuTec AppEngine](https://learn.computec.one/docs/appengine/releases/appengine/download).
+- Follow the installation steps provided in the [CompuTec AppEngine Installation Guide](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation).
+- The installation steps for the CompuTec WMS server can be found [here](https://learn.computec.one/docs/wms/administrator-guide/installation/overview).
+
+### How to Enable Early Access Plugins in CompuTec AppEngine Store
+
+In the Administration Panel, navigate to Configuration -> Advanced Configuration. In the Plugin Repository Tab, enable the repository with the address: `https://pkgs.dev.azure.com/computec-one/development/_packaging/dev/nuget/v3/index.json`.
+
+Create a file named `CtNugetConfig.config` with the content provided below, replacing APIKEY with your API key. Save this file in CompuTec AppEngine Installation Directory at C:\Program Files\CompuTec\AppEngine\.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+   
+  <packageSources>
+    <add key="DevatAzure" value="https://pkgs.dev.azure.com/computec-one/development/_packaging/dev/nuget/v3/index.json" />
+  </packageSources>
+  <packageSourceCredentials>
+    <DevatAzure>
+        <add key="Username" value="earlyaccess@computec.pl" />
+        <add key="ClearTextPassword" value="APIKEY"/>
+      </DevatAzure>
+  </packageSourceCredentials>
+</configuration>
+```
+
+Please ensure you replace `APIKEY` with the actual API key provided for early access.
