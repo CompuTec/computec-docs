@@ -13,7 +13,7 @@ This guide introduces you to **CompuTec ProcessForce**, an advanced manufacturin
 Before starting, make sure:
 
 - Your system meets the [minimum requirements](./administrator-guide/system-requirements.md).  
-- You have installation files for both the **CompuTec License Server** and the **ProcessForce add-on**. [Download them here](./releases/download.md).
+- You have installation files for both the **CompuTec License Server** and the **CompuTec ProcessForce add-on**. [Download them here](./releases/download.md).
 
 ## Step-by-Step Installation
 
@@ -36,7 +36,7 @@ Once installed, CompuTec ProcessForce modules are available under the SAP Busine
 
 ## Key Functional Modules
 
-Below is a summary of the most important ProcessForce modules:
+Below is a summary of the most important CompuTec ProcessForce modules:
 
 ### General Settings
 
@@ -45,7 +45,7 @@ Here you can define general CompuTec ProcessForce settings, e.g. set default val
 To access General Settings, navigate to:
 
 :::info Path
-Administration → System Initialization → General Settings → ProcessForce
+Administration → System Initialization → General Settings → ProcessForce tab
 :::
 
 ![General settings](./media/index/general-settings.webp)
@@ -177,6 +177,10 @@ Main Menu → Costing
 ➡️ Learn more about [Item Costing](./user-guide/costing-material-and-resources/item-costing/overview.md).
 
 ### Plant Maintenance
+
+CompuTec ProcessForce Plant Maintenance (PM) enables you to manage both **preventive** and **corrective** maintenance activities for equipment, machines, and production lines. It ensures higher asset reliability, reduced downtime, and improved operational efficiency.
+
+➡️ Learn more about [Plant Maintenance](../processforce/user-guide/plant-maintenance/overview.md)
 
 ### Quality Control
 
