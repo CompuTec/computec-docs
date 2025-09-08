@@ -29,7 +29,7 @@ Currently, there are a few AI clients that can connect to the MCP server:
 
 * **Claude** - Claude desktop version requires minimum:
   * *Pro Plan Subscription* - (only in Development Mode)
-  * *Team* Plan Subscription or *Claude for Work* (connectors)
+  * *Team* Plan Subscription or **Claude for Work** (connectors)
 * **ChatGPT** - requires at least one of the following:
   * Business Subscription
   * Enterprise Subscription
@@ -41,11 +41,10 @@ Note that this may change at any time. For the current situation, please refer t
 :::
 ## Build-in Tools
 
-
 * **Session Tools** - Allows you to get a list of companies and connect to the one the user chooses. It also allows you to get information about the connected SAP Business One user.
 * **Access to Service Layer Objects and Metadata** - Allows adding and retrieving all major business objects in SAP Business One.
 * **Access to AppEngine Plugin Information and Objects** - Allows AI to get information about the plugins installed for this company. It can also manipulate their business objects.
-* Opening documents and master data in SAP Business One and SAP Web Client.
+* **Opening** documents and master data in SAP Business One and SAP Web Client.
 * **Inventory Levels**
 * **Approval Procedures**
 
