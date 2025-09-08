@@ -2,7 +2,7 @@
 sidebar_position: 10
 toc_min_heading_level: 2
 toc_max_heading_level: 5
-unlisted: true
+unlisted: false
 ---
 
 # MCP Server for SAP Business One
@@ -49,6 +49,7 @@ Note that this may change at any time. For the current situation, please refer t
 * **Approval Procedures**
 
 If you have an idea for an MCP tool that would be useful, please share it with us and we will be happy to implement it in AppEngine as a standard tool. However, you can also write your own tools by creating an AppEngine Plugin.
+[How to create own tool example](../../developers-guide/basic-and-business-logic/appengine-plugin/ae-mcp-tool.md)
 
 ## Troubleshooting
 
