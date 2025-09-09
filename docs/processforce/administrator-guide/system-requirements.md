@@ -6,9 +6,6 @@ sidebar_position: 2
 
 This page outlines the minimum and recommended system environment requirements for running **CompuTec ProcessForce Plugin**.
 
-> ℹ️ **Note**  
-You can download the latest version of the application from the [CompuTec ProcessForce Downloads](../releases/download.md) page.
-
 ---
 
 ## General Requirements
