@@ -185,7 +185,7 @@ To process a company with our program:
 1. Click on the desired company and press Activate
 2. Click the Update button below the table.
 
-Click [here](company-installation-and-configuration.md) to find out more about company installation and configuration.
+➡️ Learn more: about [Company Installation and Configuration](company-installation-and-configuration.md).
 
 ![Active](./media/general-configuration/activate-company.webp)
 

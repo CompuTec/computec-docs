@@ -12,18 +12,21 @@ The CompuTec AppEngine is a robust solution designed to enhance your SAP Busines
 
 ## Prerequisites
 
-### For CompuTec AppEngine
+### AppEngine Application Machine
 
-- **ASP.NET Core Runtime** - Minimum required version: 8.0.4.
-- **Database** - If using SAP HANA, ensure that your HANA version is at least HANA Enterprise Edition 2.0 SPS 05, Revision 059.09 (minimal version - 2.17.22).
-- **Operating System** - A Windows x64 machine is required.
-- **SAP Business One** - The minimal required version is SAP Business One 10.0 FP 2408 and the minimal recommended is SAP Business One 10.0 FP 2502.
-- **SAP Business One DI API** - Ensure SAP Business One DI API is installed and properly configured.
-- **Supported Database Server** - SQL Server 2012 and higher.
-- **CompuTec License Server** - Verify that the CompuTec License Server is installed and accessible.
-[Download License Server](https://learn.computec.one/docs/processforce/releases/download#computec-license-service)
+| Resource/Application | Minimal Version | Note |
+| --- | --- | --- |
+| Memory (RAM) | 2GB | You may need to adjust the RAM based on the number of plugins and background processes running. For production environments, we recommend a minimum of **8GB**. |
+| Disc Space | 1GB | - |
+| ASP.NET Core Runtime | 8.0.4 | - |
+| HANA Server Version | SAP HANA Enterprise Edition 2.0 SPS 05, Revision 059.09 (minimum supported version: 2.17.22). | For SAP Business One version for HANA |
+| SQL Server Version | SQL Server 2012 | For SAP Business One |
+| Operating System | Windows x64 | - |
+| SAP Business One Version | SAP Business One 10.0 FP 2408 | We recommend installing latest version. |
+| SAP Business One DI API | According to SAP Business One version x64 | - |
+| CompuTec License Server | Recent version recommended | - |
 
-### Sap Business One - Users Machines
+### SAP Business One - Users Machines
 
 - **.NET Runtime** - the minimum required version is 8.0.4.
 
