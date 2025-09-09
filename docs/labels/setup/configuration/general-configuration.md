@@ -12,7 +12,7 @@ The following steps outline how to configure the service. The order of execution
 
 ![General](./media/general-configuration/ct-labels-general.webp)
 
-## Service Status
+## Initial Configurations
 
 - **Status**: displays whether the service is On or Off. Use the adjacent icon to toggle the status. Restarting the service is recommended after making changes such as adding a printer or modifying rules.
 
@@ -57,11 +57,16 @@ Addresses should auto-populate after a successful installation. If installed on 
 
 General settings you need to define:
 
-- **Computec Label Web Service Address**: Computec Label web service address (defines the connection between CompuTec Labels and SAP Business One) – default port value is 33006. **Make sure that the port is open**.
-- **Server Address**:  The SAP Server Address (including the port for HANA).
+- **Web Address**: CompuTec Labels web service address (defines the connection between CompuTec Labels and SAP Business One) – default port value is 33006. **Make sure that the port is open**.
+- **Web External Address**: Enter the external CT Labels Web Service address in this field when using the Gateway. On machines running the Gateway Service, the service is only accessible through a public IP.
+- **Server Address**: The SAP Server Address (including the port for HANA).
 - **License Server Address**: SAP License Server address (including port for HANA).
+- **API Gateway Service**: When the SAP API Gateway Service address is entered here, CT Labels generates reports directly through this service. The key advantage is faster report generation, independent of SAP Crystal runtime libraries.
 - **CT License Server Address**: CompuTec License Server address (including port for HANA).
-- **Refresh**: refresh rate in seconds indicating how often the service scans for new printing requests.
+Refresh: refresh rate in seconds indicating how often the service scans for new printing requests.
+- **Nr of agents consuming requests**: Defines how many requests the service processes per cycle.
+        -  Fewer agents reduce CPU and memory usage.
+        - More agents speed up request processing but may cause later print jobs to finish before earlier ones.
 
 ## Printer Types
 
