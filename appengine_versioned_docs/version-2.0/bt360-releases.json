@@ -1,5 +1,17 @@
 [
 	{
+		"version": "2.10.9",
+		"build": "2.10.9.5",
+		"release_date": "10 September 2025",
+		"minimal_ae_version": "2.10.16.6",
+		"requirements": [
+			"SAP Business One 10.0",
+			"ProcessForce and ProcessForce API 10.0 Release 15 (R15)HotFix1 (HF1)",
+			"ProcessForce plugin 10.0 Release 15 (R15) HotFix1 (HF1)"
+		],
+		"download_url": "https://download.computec.one/software/appengine/plugins/bt360/releases/CompuTec_BT360_2.10.9.5.zip"
+	},
+	{
 		"version": "2.10.8",
 		"build": "2.10.8.1",
 		"release_date": "30 August 2024",
