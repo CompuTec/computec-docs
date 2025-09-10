@@ -9,6 +9,16 @@ toc_max_heading_level: 2
 The latest Installer is available to download from [here](../../plugins/bt360/download.md).
 :::
 
+## BT360 2.10.9
+
+**Release Date - 09 September 2025**
+
+| Issue Type | Release Note | Related Support Ticket/s |
+| --- | --- | --- |
+| Improvement | BT360 | Add Supplier Batch fields to the Transactions tab. |
+| Improvement | BT360 | Add Supplier Batch field under Adapt Filters. |
+| Bug | BT360 |"CT_PF_BT360_CleanUp" not called anywhere, resulting in temp tables never being cleared.|
+
 ## BT360 2.10.8
 
 | Issue Type | Release Note | Related Support Ticket/s |
