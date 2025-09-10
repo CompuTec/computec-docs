@@ -13,13 +13,13 @@ The latest Installer is available to download from [here](../../plugins/mrp/down
 
 **Release Date – 09 September 2025**
 
-| Issue Type | Release Note | Related issue/s |
-| --- | --- | --- |
+| Issue Type | Component | Release Note | Related issue/s |
+| --- | --- | --- | --- |
 | Bug | MRP | Issues with the results tab in MRP 2.5 |
-| Bug | MRP | Error "Object reference not set to an instance of an object" occurs when updating custom lead time. |
-| Bug | MRP | Vendor lead time is not displayed in MRP scenario. |
-| Bug | MRP | Issues with adding multiple custom vendor lead times. |
-| Bug | MRP | Restrict Documents is not working in MRP 2.5; no action occurs after entering a document number. |
+| Bug | MRP | Error "Object reference not set to an instance of an object" occurs when updating custom lead time. | - |
+| Bug | MRP | Vendor lead time is not displayed in MRP scenario. | - |
+| Bug | MRP | Issues with adding multiple custom vendor lead times. | - |
+| Bug | MRP | Restrict Documents is not working in MRP 2.5; no action occurs after entering a document number. | - |
 
 ## CompuTec MRP 1.14.0
 
