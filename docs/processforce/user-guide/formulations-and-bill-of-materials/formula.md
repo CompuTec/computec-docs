@@ -8,10 +8,8 @@ toc_max_heading_level: 5
 
 Formulas are a powerful yet straightforward method for calculating quantity relationships between an item and its parent in manufacturing processes. They are primarily used within the Bill of Materials (BOM) and Manufacturing Order (MO) to ensure precise material usage and production efficiency.
 
-To access
-A default formula is pre-installed in the General Settings. To access default formula, navigate to:
+To access, a default formula is pre-installed in the General Settings. To access default formula, navigate to:
 
-:::info Path
 :::info Path
 Administration → System Initialization → General Settings → ProcessForce tab → Bill of Materials and Manufacturing Orders → Formulas
 :::
@@ -19,8 +17,6 @@ Administration → System Initialization → General Settings → ProcessForce t
 ![General Settings](./media/formula/general-settings-formula.webp)
 
 Users can modify this default formula to align with specific operational needs. These formulas support calculations involving standard fields, user-defined fields, and values from other tabs, enhancing flexibility and accuracy in production planning.
-
-Furthermore, all expressions that follow Microsoft Excel formula syntax can be used within these formulas, making them highly adaptable for various manufacturing requirements.
 
 ---
 

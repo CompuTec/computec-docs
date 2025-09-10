@@ -8,8 +8,6 @@ Formulas are a powerful yet straightforward method for calculating quantity rela
 
 A default formula is pre-installed in the General Settings under the ProcessForce/Bill of Materials and Manufacturing Tab. Users can modify this default formula to align with specific operational needs. These formulas support calculations involving standard fields, user-defined fields, and values from other tabs, enhancing flexibility and accuracy in production planning.
 
-Furthermore, all expressions that follow Microsoft Excel formula syntax can be used within these formulas, making them highly adaptable for various manufacturing requirements.
-
 ---
 
 ![General Settings](./media/formula/general-settings-formula.webp)
