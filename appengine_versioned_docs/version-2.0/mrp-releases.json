@@ -1,7 +1,7 @@
 [
 	{
 		"version": "1.10.15",
-		"build": "1.10.14.1",
+		"build": "1.10.15.1",
 		"release_date": "10 September 2025",
 		"requirements": [
 			"AppEngine 2.10.18.103",
