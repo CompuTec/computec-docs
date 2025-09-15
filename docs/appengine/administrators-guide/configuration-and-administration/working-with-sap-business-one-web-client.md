@@ -45,7 +45,6 @@ To manually install and activate CompuTec Web Client Start, follow these steps:
 
 To enable proper functionality of the Web Client, especially for embedded frames and cross-domain requests, you need to configure Content Security Policy (CSP) settings in SAP Web Client. Correct CSP configuration prevents security issues and ensures smooth integration.
 
-
 For detailed guidance, refer to the official SAP Help Portal: [Configuring CSP Settings for SAP Business One Web Client](https://help.sap.com/docs/SAP_BUSINESS_ONE_WEB_CLIENT/e6ac71d18c7543828bd4463f77d67ff7/1acda7a66c434b4e9dbc3b1f8ae21d6e.html)
 
 **Where to find ready-to-use CSP settings?**
@@ -62,9 +61,9 @@ Below is an example view of this section:
 
 **Key steps for configuring CSP**:
 
-1. Identify the domains that require access to the Web Client.
-2. Update the configuration file with the approved domains and the required CSP entries from the AppEngine panel.
-3. Test the integration to ensure everything works correctly.
+1. Identify the domains that requires access to the Web Client.
+2. Update the configuration file with the approved domains.
+3. Test the integration to ensure everything functions correctly.
 
 ---
 By following these guidelines, you can efficiently configure and manage the CompuTec Web Client Start and its associated plugins, ensuring seamless operation of your SAP Business One system. If you need further assistance, feel free to reach out!
