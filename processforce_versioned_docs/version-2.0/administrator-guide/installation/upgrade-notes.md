@@ -17,7 +17,7 @@ The issues identified in previous versions have been resolved in CompuTec Proces
 
 ### [Updated on 28th of September, 2023]
 
-There are known issues with **SAP Business One SP2308** affecting CompuTec ProcessForce. These are expected to be resolved in the upcoming CompuTec ProcessForce 10.0.22 release. In the meantime, you can use the available [workarounds](../../troubleshooting/sap-business-one-sp2308.md).
+There are known issues with **SAP Business One SP2308** affecting CompuTec ProcessForce. These are expected to be resolved in the upcoming CompuTec ProcessForce 10.0.22 release. In the meantime, you can use the available workarounds.
 
 ### [Updated on 18th of August, 2023]
 
