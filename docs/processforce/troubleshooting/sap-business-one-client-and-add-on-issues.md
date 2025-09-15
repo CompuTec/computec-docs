@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-SAP Business One Client and Add-On Issues
+# SAP Business One Client and Add-On Issues
 
 ---
 

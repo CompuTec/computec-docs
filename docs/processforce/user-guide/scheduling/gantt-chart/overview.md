@@ -158,19 +158,73 @@ Right-clicking on a taskbar opens the Resource Context Menu, offering advanced o
 
 - **Reschedule**: allows rescheduling the Task to another Resource. Rescheduling requires an adequately configured Production Process. Define the Resource and its Alternative. Click [here](../../scheduling/gantt-chart/alternative-resources.md) to check how to do this.
 
-- **Divide**: you can set to use more Resources to complete a Task.
+- **Divide**: The Divide function lets users split a task (resource line) into multiple smaller tasks/lines and schedule each one independently.
 
-    Choosing the option leads to a new form. Right-click on a Resource row and click Add Resource:
+    In the divide panel, each resource line includes three action buttons.
 
-    ![Divide](./media/overview/divide-add-resource.webp)
+    | Button | Function |
+    | --- | --- |
+    | x | Clearing: Sets Quantity to "Zero". |
+    | + | Duplicates the current line as a new one. If the resource is cycle-managed, the system automatically duplicates it with the defined Cycle Quantity. |
+    | - | Removes the lone. |
 
-    Use sliders to set the quantity for each of the Resources:
+    **Here’s a step-by-step explanation of the Divide functionality**:
 
-    ![Divide Sliders](./media/overview/divide-sliders.webp)
+        - **Step 01: Launching Divide**
 
-    :::caution
-        Please remember that the remaining quantity must be 0 (all sliders on the far right position) to proceed with the division.
-    :::
+            - In the Scheduling Board, right-click on a resource line (task).
+            - From the context menu, choose Divide.
+            - This opens the Divide Panel where the task can be split into multiple smaller tasks.
+                ![Divide-01](./media/overview/divide-01-launching.png)
+
+        - **Step 02: Divide Panel**
+
+            - The task is shown with its Resource Code and Total Quantity.
+            - Initially, the full quantity (e.g., 500) is assigned to a single line.
+            - From here, you can split the quantity across multiple lines.
+                ![Divide -02](./media/overview/divide-02-dividepanel.png)
+
+        - **Step 03: Clear Allocation**
+
+            - Use **Clear All** to reset the allocation.
+            - This sets the resource quantity back to 0/Total (e.g., 0/500).
+            - Now you can manually or automatically distribute the quantity into multiple lines.
+                ![Divide-03](./media/overview/divide-03-clear-allocation.png)
+
+        - **Step 04: Allocate by Cycle Capacity**
+
+            - If the resource is cycle-managed, the system can automatically allocate quantities based on Cycle Capacity.
+            - For example, if the cycle capacity is 75, the system will suggest splitting the total into multiples of 75.
+                ![Divide-04](./media/overview/divide-04-allocate-by-cycle-capacity.png)
+
+        - **Step 05: New Line per Cycle**
+
+            - Each cycle capacity allocation creates a new line.
+            - Example: from 500 units, you get multiple lines of 75 units each, until the total quantity is covered.
+            - You can also add or adjust lines manually if needed.
+                ![Divide-05](./media/overview/divide-05-new-line-per-cycle.png)
+
+        - **Step 06: Allocate All**
+
+            - Once the total (500/500) is fully distributed across the lines, the allocation is valid.
+            - You can now schedule each line separately on the planning board.
+            >**Note**: You must allocate **all quantity** in order to confirm the allocation.
+                ![Allocate All](./media/overview/divide-06-allocate-all.png)
+
+        - **Step 07: Review Allocations**
+
+            - After the task has been divided and allocated, the Scheduling Board now reflects these new, smaller tasks (represented by multiple blue blocks for "Grinding Machine 01").
+            - Each block corresponds to a smaller, divided task, and these can now be reviewed in the Scheduling Board.
+            - The **System Message Log** at the bottom helps track progress or any issues with the allocation or scheduling process.
+                ![After Dividing](./media/overview/divide-07-after-dividing.png)
+
+        - **Step 08: Comparison**
+
+            ![Comparison](./media/overview/divide-08-comparison.png)
+
+            | Before Divide | After Divide |
+            | --- | --- |
+            | - In the Scheduling Board, view the task before applying the "Divide" functionality. <br/>- The task is represented in a single entry, with operation details like time, equipment, and quantities grouped together. <br/>- At this point, the task is a larger unit, not yet split into smaller segments. | - After applying the Divide functionality, the task is split into multiple smaller units. <br/> - Each divided segment appears as a separate entry in the Scheduling Board, with adjusted quantities, times, and resources. <br/> - The divided tasks are now more granular, allowing for better resource management and scheduling flexibility. |
 
 - **Extend work** – Enables adding extra Run Time to a task, based on the Exceptions tab in the [Resource Calendar](../resource-calendar.md) form. For example, if a resource is scheduled to work Monday through Friday, 7:00 AM to 4:00 PM, and the task is set to finish on Monday at 9:00 AM, you can extend work hours on Friday to complete the task (provided a Resource Calendar exception is defined for Friday from 4:00 PM to 6:00 PM).
 

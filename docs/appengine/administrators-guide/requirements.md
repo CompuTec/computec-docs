@@ -12,6 +12,10 @@ The CompuTec AppEngine is a robust solution designed to enhance your SAP Busines
 
 ## Prerequisites
 
+:::info Warning
+If you are upgrading from **CompuTec AppEngine 2.0** to **CompuTec AppEngine 3.0**, ensure that you first uninstall AppEngine 2.0 and unassign the CompuTec ProcessForce extension from the Extension Manager for the company before continuing with the upgrade.
+:::
+
 ### AppEngine Application Machine
 
 | Resource/Application | Minimal Version | Note |

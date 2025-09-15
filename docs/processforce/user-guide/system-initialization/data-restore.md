@@ -19,7 +19,7 @@ After installing CompuTec ProcessForce, ensure that the following restore functi
 - Batch Details
 - Bill of Materials
 
-:::Note
+:::info Note
 You can automate some of data restoration task by using AppEngine Background Processes. Click on the [documentation](https://learn.computec.one/docs/processforce/user-guide/system-initialization/data-restore) to know more.
 :::
 

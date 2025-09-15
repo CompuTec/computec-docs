@@ -165,7 +165,7 @@ Alternatively, if an Inventory Revaluation document is created manually, the new
 
 Material Phantom is used to control how an item behaves in the Bill of Materials (BOM), specifically during the explosion of components in production and planning processes.
 
-➡️ Learn more about [Material Phantom](../formulations-and-bill-of-materials/bill-of-materials/multi-level-bill-of-materials/phantom-item.md#material-phantom) in detail.
+➡️ Learn more about [Material Phantom](../formulations-and-bill-of-materials/bill-of-materials/multi-level-bill-of-materials/phantom-item.md) in detail.
 
 ### Sync. Planning Info
 
