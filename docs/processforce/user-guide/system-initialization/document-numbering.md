@@ -14,9 +14,11 @@ In SAP Business One, Document Numbering applies to both standard transactions an
 
 ---
 
-The following objects are available for document numbering in CompuTec ProcessForce:
+The Document Numbering form allows users to configure numbering series for the following transactions:
 
-The following objects are available for document numbering in ProcessForce:
+![Document Numbering Transactions](./media/document-numbering/document-numbering-transctions.webp)
+
+Some CompuTec ProcessForce documents have been added with their table names. You can find their document names in the below table:
 
 | Object       | Document             |
 |--------------|----------------------|
@@ -24,10 +26,6 @@ The following objects are available for document numbering in ProcessForce:
 | CT_PF_OMTR   | Maintenance Order    |
 | CT_PF_OIRD   | Inspection Reading   |
 | CT_PF_OMRD   | Meter Reading        |
-
-The Document Numbering form allows users to configure numbering series for the following transactions:
-
-![Document Numbering Transactions](./media/document-numbering/document-numbering-transctions.webp)
 
 Users can define multiple numbering series for a specific document type by double-clicking on the first column of the respective document type, such as Complaints.
 

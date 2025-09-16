@@ -24,7 +24,7 @@ Follow the steps below to import and assign CompuTec ProcessForce license succes
 2. **Obtain a license file**: Request the license file from your CompuTec ProcessForce provider.  
 
    :::info
-   Details on how to request a license key are available on the [Request for a license](./license-request.md) page.
+   Details on how to request a license key are available on the [Request for a license](./request-for-a-license.md) page.
    :::
 
 3. **Open License Administration**: Navigate to the CompuTec ProcessForce **License Administration** form:

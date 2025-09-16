@@ -25,7 +25,7 @@ Follow the steps below to import and assign a ProcessForce license successfully.
 2. Ask your ProcessForce provider for a license file.
 
     :::info
-        All information required for generating a license key is described on the [Request for a license](./license-request.md) page.
+        All information required for generating a license key is described on the [Request for a license](./request-for-a-license.md) page.
     :::
 
 3. Open the ProcessForce License Administration form:

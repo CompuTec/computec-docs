@@ -7,7 +7,7 @@ sidebar_position: 3
 The **CompuTec Service Manager** is part of the CompuTec License Server suite. It provides a central interface to start, stop, and configure CompuTec solutions such as CompuTec PDC, CompuTec WMS, and licensing components. This guide provides step-by-step instructions for setting up and using the CompuTec Service Manager to ensure seamless operation and optimal performance.
 
 :::info
-For installation instructions, see the [CompuTec License Server Installation Guide](./license-server-installation.md).
+For installation instructions, see the [CompuTec License Server Installation Guide](./computec-license-server-installation.md).
 :::
 
 ---

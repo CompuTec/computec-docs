@@ -8,7 +8,7 @@ The **CompuTec License Server** is required to manage user licenses for CompuTec
 This tutorial guides you through installing the License Server on a Windows system and configuring the firewall so that it can communicate on the correct port.
 
 :::info
-For details about available license types, see [**CompuTec ProcessForce User License Types**](../license-chart.md).
+For details about available license types, see [**CompuTec ProcessForce User License Types**](../license-comparison-chart.md).
 :::
 
 ---

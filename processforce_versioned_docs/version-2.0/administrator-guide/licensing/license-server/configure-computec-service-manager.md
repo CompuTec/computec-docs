@@ -7,7 +7,7 @@ sidebar_position: 3
 CompuTec Service Manager is a crucial component of the CompuTec License Server suite, allowing users to manage and configure various CompuTec services efficiently. This guide provides step-by-step instructions for setting up and using the CompuTec Service Manager to ensure seamless operation and optimal performance.
 
 :::info
-    CompuTec Service Manager is a part of CompuTec License Server. For installation details, please refer to  [the CompuTec License Server Installation Guide](./license-server-installation.md).
+    CompuTec Service Manager is a part of CompuTec License Server. For installation details, please refer to  [the CompuTec License Server Installation Guide](./computec-license-server-installation.md).
 :::
 
 ---

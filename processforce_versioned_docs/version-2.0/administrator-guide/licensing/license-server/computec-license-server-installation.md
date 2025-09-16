@@ -7,7 +7,7 @@ sidebar_position: 2
 The CompuTec License Server is a crucial component for managing licenses in CompuTec solutions. This guide provides step-by-step instructions for installing and configuring the CompuTec License Server in a Windows environment. It also covers setting up necessary firewall rules to ensure proper functionality.
 
 :::info
-    You can check the available **CompuTec ProcessForce user license types** [here](../license-chart.md).
+    You can check the available **CompuTec ProcessForce user license types** [here](../license-comparison-chart.md).
 :::
 
 ---
@@ -79,6 +79,6 @@ The CompuTec License Server is a crucial component for managing licenses in Comp
 
 ## Using CompuTec Service Manager and Configuring Direct Data Access mode
 
-For instructions on using CompuTec Service Manager and configuring Direct Data Access mode, refer to the detailed guide [here](./direct-access.md).
+For instructions on using CompuTec Service Manager and configuring Direct Data Access mode, refer to the detailed guide [here](./configure-computec-service-manager.md).
 
 ---
