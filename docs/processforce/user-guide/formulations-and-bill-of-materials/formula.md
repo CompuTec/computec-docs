@@ -99,11 +99,11 @@ The following Excel-compatible functions can be used in formulas:
 
 ## Using User-Defined Fields in Formulas
 
-Formulas can include [User-Defined Fields (UDFs)](../../administrator-guide/udfs.md) from both the header and line levels.
+Formulas can include [User-Defined Fields (UDFs)](../../administrator-guide/working-with-user-defined-fields.md) from both the header and line levels.
 
 :::note
 
-- The formula result is a numeric value. Therefore any [User-Defined Fields](../../administrator-guide/udfs.md) used in the formula should be created with a Numeric data type.
+- The formula result is a numeric value. Therefore any [User-Defined Fields](../../administrator-guide/working-with-user-defined-fields.md) used in the formula should be created with a Numeric data type.
 - When a Bill of Materials is used to generate a Manufacturing Order, its structure is replicated in the order. To ensure UDFs function properly within formulas, identical UDFs must be created in both the Bill of Materials and the Manufacturing Order, maintaining consistency in headers and corresponding tables.
 
 :::

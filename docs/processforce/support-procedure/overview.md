@@ -53,7 +53,7 @@ sidebar_position: 1
 | Contacting the help desk | Suggested Hot Link |
 | --- | --- |
 | Please contact the support desk via the support portal | [https://support.computec.pl/](https://support.computec.pl/) |
-| If you need CompuTec ProcessForce license, deliver the proper details | [Request for a license.](../administrator-guide/licensing/license-request.md) |
+| If you need CompuTec ProcessForce license, deliver the proper details | [Request for a license.](../administrator-guide/licensing/request-for-a-license.md) |
 
 ## Step 5: Information required for completing a support ticket
 

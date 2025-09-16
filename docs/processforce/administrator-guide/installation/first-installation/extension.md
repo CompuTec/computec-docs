@@ -57,7 +57,7 @@ Additionally, if you're using CompuTec ProcessForce with the **SAP Business One 
 This step is **only required for new installations**, not for upgrades.
 :::
 
-Refer to the [**License Import and Assignment**](../../licensing/license-import-assignment.md) guide for step-by-step instructions.
+Refer to the [**License Import and Assignment**](../../licensing/license-import-and-assignment.md) guide for step-by-step instructions.
 
 ---
 

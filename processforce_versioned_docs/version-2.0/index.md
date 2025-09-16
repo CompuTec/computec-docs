@@ -22,7 +22,7 @@ Before you begin, ensure:
 1. Follow the [installation guide](./administrator-guide/installation/first-installation/license-server.md) to set up the CompuTec License Server.
 2. Use the standard SAP Business One Add-on Manager to install CompuTec ProcessForce.
 3. After installation, the add-on runs in **trial mode for 14 days**.
-4. Before the trial expires, request a valid license from your CompuTec ProcessForce provider. [Learn how here](./administrator-guide/licensing/license-request.md).
+4. Before the trial expires, request a valid license from your CompuTec ProcessForce provider. [Learn how here](./administrator-guide/licensing/request-for-a-license.md).
 5. Use SAP Business One’s standard navigation to manage the add-on:  
    `Main Menu → Administration → Add-ons`
 

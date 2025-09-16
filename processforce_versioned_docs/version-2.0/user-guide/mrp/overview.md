@@ -9,7 +9,7 @@ CompuTec ProcessForce enhances Material Requirements Planning (MRP) in SAP Busin
 :::warning
     If you experience delays when opening the MRP Wizard with CompuTec ProcessForce enabled, consider setting up Direct Data Access mode. This can improve response time, especially in systems with a large number of Item Master Data records.
 
-    Click [here](../../administrator-guide/licensing/license-server/direct-access.md) to learn how to set up Direct Access mode for a specific database.
+    Click [here](../../administrator-guide/licensing/license-server/configure-computec-service-manager.md) to learn how to set up Direct Access mode for a specific database.
 :::
 
 ---

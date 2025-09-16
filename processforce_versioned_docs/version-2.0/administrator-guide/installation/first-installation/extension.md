@@ -117,7 +117,7 @@ CompuTec ProcessForce is a lightweight deployment extension for SAP Business One
     This step is only required for new installations, not for upgrades.
 :::
 
-You can find the License Import and Assignment guide [here](../../licensing/license-import-assignment.md).
+You can find the License Import and Assignment guide [here](../../licensing/license-import-and-assignment.md).
 
 ### Data Preparation
 

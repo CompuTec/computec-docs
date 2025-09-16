@@ -67,7 +67,7 @@ The information needed for generating the license placed on:
         ![Localization](./media/license-request/localization.webp)
 
         :::info
-        Click [here](../licensing/license-import-assignment.md) to check how to load a license file after getting it from the CompuTec support.
+        Click [here](../licensing/license-import-and-assignment.md) to check how to load a license file after getting it from the CompuTec support.
 
 ---
   

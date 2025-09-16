@@ -12,7 +12,7 @@ This guide provides an overview of the UDF (User-Defined Field) Manager tool in 
 
 ### Prerequisites
 
-Before utilizing UDF Manager in CompuTec WMS, UDFs must be defined in the database. For guidance on adding and managing UDFs, refer to the [Administrator's Guide](/docs/processforce/administrator-guide/udfs).
+Before utilizing UDF Manager in CompuTec WMS, UDFs must be defined in the database. For guidance on adding and managing UDFs, refer to the Administrator's Guide.
 
 ### Setting up
 
@@ -118,7 +118,7 @@ UDFs from base documents are available on the following transactions:
 #### Prerequisites
 
 Choose a base document (one of the bold ones above), for example, **Sales Order**.
-Add a UDF to "Marketing Documents->Rows" in SAP Business One (click [here](/docs/processforce/administrator-guide/udfs) to find out more about working with UDFs).
+Add a UDF to "Marketing Documents->Rows" in SAP Business One.
 
 ![UDF choosing](./media/udf-choosing.webp)
 

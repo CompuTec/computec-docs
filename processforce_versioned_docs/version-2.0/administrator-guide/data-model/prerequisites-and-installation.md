@@ -51,7 +51,7 @@ More details can be found [here](https://download.computec.one/media/sap/SAP_HAN
 
 ## Installation
 
-Once the requirements from the previous section are met, import model.zip, which is available to download [here](../data-model/data-model-download.md). You can install it from the SAP Business One level, logged in to a required database:
+Once the requirements from the previous section are met, import model.zip, which is available to download [here](../data-model/computec-processforce-data-model-download.md). You can install it from the SAP Business One level, logged in to a required database:
 
 ![Prerequisites 5](./media/prerequisites-installation/prerequisites-5.webp)
 
