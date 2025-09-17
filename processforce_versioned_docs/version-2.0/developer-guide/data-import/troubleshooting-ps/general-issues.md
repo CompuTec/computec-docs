@@ -44,7 +44,7 @@ $PSVersionTable
 
 1. Upgrade CLRVersion to 4.0 (Requires .NET Framework 4.5/4.6 Full).
 2. Add a configuration file to PowerShell ISE.
-3. Refer to the Configuration Files section in [the PowerShell application configuration](../../data-import/ps-app-configuration.md).
+3. Refer to the Configuration Files section in [the PowerShell application configuration](../../data-import/powershell-application-configuration.md).
 
     ![Version compare](./media/ps-general-issues/clr-version-compare.webp)
 4. Restart PowerShell ISE and verify the updated CLRVersion.
@@ -55,7 +55,7 @@ $PSVersionTable
 
 - Use PowerShell 5.1
 
-- [Refer to the installation part of the documentation](../ps-app-configuration.md#installation)
+- [Refer to the installation part of the documentation](../powershell-application-configuration.md#installation)
 
 ## Exception: CompuTec ProcessForce Database Version is not supported
 

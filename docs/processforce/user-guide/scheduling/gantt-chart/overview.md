@@ -15,7 +15,7 @@ This guide details the options and functionalities available within the Gantt ch
 :::
 
 :::caution
-    The Gantt chart is available only in [Direct Data Access](/docs/processforce/administrator-guide/licensing/license-server/configure-computec-service-manager.md) mode.
+    The Gantt chart is available only in [Direct Data Access](/docs/processforce/administrators-guide/licensing/license-server/configure-computec-service-manager.md) mode.
 :::
 
 :::caution

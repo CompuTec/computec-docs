@@ -2,9 +2,9 @@
 sidebar_position: 4
 ---
 
-# CompuTec ProcessForce Objects (User-Defined Objects)
+# CompuTec ProcessForce Objects
 
-CompuTec ProcessForce uses user-defined objects (UDOs) to manage various business processes, including master data and transactional documents. Understanding the underlying tables and fields within these objects is essential for reporting, customization, and data validation. Below are SQL queries that retrieve detailed information about CompuTec ProcessForce objects, including header fields and matrix row fields.
+ CompuTecProcessForce uses user-defined objects (UDOs) to manage various business processes, including master data and transactional documents. Understanding the underlying tables and fields within these objects is essential for reporting, customization, and data validation. Below are SQL queries that retrieve detailed information about CompuTec ProcessForce objects, including header fields and matrix row fields.
 
 ---
 
