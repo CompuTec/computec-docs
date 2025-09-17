@@ -14,7 +14,7 @@ PDC stands for Plant Data Capture: the application allows to record production t
 
 ## Prerequisites
 
-CompuTec ProcessForce and CompuTec Licence Server is installed and configured. For more information click [here](/docs/processforce/administrators-guide/licensing/license-server/overview).
+CompuTec ProcessForce and CompuTec License Server is installed and configured.
 
 CompuTec PDC requirements have been fulfilled, for more information click [here](../administrators-guide/requirements.md).
 

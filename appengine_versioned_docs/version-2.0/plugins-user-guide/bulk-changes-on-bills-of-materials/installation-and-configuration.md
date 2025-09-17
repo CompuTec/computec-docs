@@ -15,7 +15,7 @@ Before proceeding, ensure the following components are installed and properly co
     - CompuTec ProcessForce
     - CompuTec License Server
 
-For detailed guidance on licensing setup, refer [here](/docs/processforce/administrators-guide/licensing/license-server/overview/).
+For detailed guidance on licensing setup, refer [here](/docs/processforce/administrators-guide/licensing/computec-license-server/overview.md).
 
 ## CompuTec AppEngine and Plugin Installation and Configuration
 

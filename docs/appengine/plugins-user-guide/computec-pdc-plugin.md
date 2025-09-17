@@ -14,7 +14,7 @@ This guide provides comprehensive instructions on working with the CompuTec PDC 
 
 Before using the CompuTec PDC Plugin, ensure the following are installed and configured:
 
-1. CompuTec ProcessForce and CompuTec Licence Server is installed and configured. Refer to the relevant installation guide [here](/docs/processforce/administrators-guide/licensing/license-server/overview/).
+1. CompuTec ProcessForce and CompuTec Licence Server is installed and configured. Refer to the relevant installation guide [here](/docs/processforce/administrators-guide/licensing/computec-license-server/overview/).
 
 2. CompuTec PDC requirements have been fulfilled. Verify the system meets all requirements [here](/docs/pdc/administrator-guide/installation/requirements/).
 
