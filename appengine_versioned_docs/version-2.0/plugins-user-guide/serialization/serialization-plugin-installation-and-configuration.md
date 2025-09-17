@@ -19,7 +19,7 @@ The standard plugin installation and configuration is described in the CompuTec 
 Before configuring the Serialization Plugin, make sure the following components are properly installed and configured:
 
 - Ensure that CompuTec ProcessForce and the CompuTec License Server are installed and configured correctly.
-For details, click [here](/docs/processforce/administrators-guide/licensing/computec-license-server/overview).
+For details, click [here](https://learn.computec.one/docs/processforce/administrator-guide/licensing/license-server/overview).
 - Ensure that CompuTec WMS is installed and configured
 
         - For installation please follow this link: [Installation](/docs/wms/administrator-guide/installation/overview/).
