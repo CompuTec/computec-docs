@@ -32,9 +32,9 @@ These tabs provide a structured way to configure and manage all aspects of Compu
 | --- | --- |
 | [General](general-tab.md) | Core system parameters, document numbering, date formats, default behaviors. |
 | [Inventory](inventory-tab.md) | Settings for inventory management, warehouse operations, item handling, and stock movements. |
-| [Bill of Materials and Manufacturing Orders](bom-mor.md) | Configure BOMs, manage manufacturing orders, and control production workflows. |
+| [Bill of Materials and Manufacturing Orders](bill-of-material-and-manufacturing-orders-tab.md) | Configure BOMs, manage manufacturing orders, and control production workflows. |
 | [MRP](./overview.md) | Parameters for material requirements planning, supply-demand balancing, and stock projections. |
-| [Scheduling and Gantt](scheduling-gantt.md)| Settings for production scheduling, capacity planning, and Gantt chart visualization. |
+| [Scheduling and Gantt](scheduling-and-gantt.md)| Settings for production scheduling, capacity planning, and Gantt chart visualization. |
 | [QC](qc-tab.md) | Quality control rules, inspection plans, checkpoints, and alerts for production and inventory. |
 | [Subcontracting](subcontracting-tab.md)| Manage subcontracting processes, supplier workflows, and outsourced production. |
 | [PM](pm-tab.md) | Maintenance planning, preventive maintenance schedules, and equipment management. |
