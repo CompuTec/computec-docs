@@ -2,7 +2,7 @@
 sidebar_position: 11
 ---
 
-# CompuTec MO Wizard
+# CompuTec MOWizard
 
 Below are the release notes for CompuTec MOWizard, highlighting new features, improvements, and bug fixes in this release.
 
