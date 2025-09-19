@@ -24,6 +24,7 @@ The Quality Control (QC) Test Report is designed to help businesses maintain pro
     The report can be filtered by multiple parameters to narrow down results:
 
     **1. Dates**: Define a time range for when QC tests were carried out. It allows users to filter and generate reports based on specific date-related fields. This is crucial for analyzing the timing and progress of quality control testing processes. The tab provides flexibility to track items and their associated tests through various stages using date filters.
+
             ![Dates](./media/quality-control-test-report/dates.webp)
         - Created Date (From – To): Filters reports based on when the item or batch was created.
         - Started Date (From – To): Filters reports based on the date when testing or production processes began.
@@ -33,13 +34,15 @@ The Quality Control (QC) Test Report is designed to help businesses maintain pro
         - Pass/Fail Date (From – To): Filters based on when the final test results were recorded, determining whether the item passed or failed the quality control process.
 
     **2. Batches**: The Batch tab allows users to filter and generate quality control test reports based on batch-related details. Batches are commonly used in industries like manufacturing, pharmaceuticals, food & beverages, and electronics, where products are produced in large quantities and tracked for quality assurance. This tab ensures that quality control tests are tied to specific batches, which is crucial for product traceability and compliance.
-        ![Batches](./media/quality-control-test-report/batches.webp)
+
+            ![Batches](./media/quality-control-test-report/batches.webp)
         - Batch (From – To): Filters the report based on a defined range of batch numbers.
         - Production Date (From – To): Allows filtering by the production date range of the batch.
         - Batch Status (From – To): Filters the report based on the status of the batch (e.g., tested, approved, rejected).
 
     **3. Serials**: The Serials tab allows users to filter and generate quality control test reports based on serial-related details. Since many industries (like pharmaceuticals, food & beverages, electronics, or life sciences) work with serialized products for compliance and traceability, this tab ensures that QC results can be tracked down to individual serials or lots.
-        ![Serials](./media/quality-control-test-report/serials.webp)
+
+            ![Serials](./media/quality-control-test-report/serials.webp)
         - Lot Number (From – To): Filters reports based on defined lot numbers.
         - Manufacturer Serial No. (From – To): Filters reports using the manufacturer’s assigned serial number range.
         - Serial Number (From – To): Allows filtering by the internal serial numbers maintained in SAP Business One.
