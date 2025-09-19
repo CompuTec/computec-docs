@@ -8,6 +8,15 @@ Below are the release notes for CompuTec MOWizard, highlighting new features, im
 
 ---
 
+## CompuTec MOWizard 3.2509.1
+
+**Release Date - 19 September 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Bug | MOWizard | Child MOR Status can not be modified in MOWizard. |
+| Bug | MOWizard | Created MORs do not follow Status indicated in MOWizard. |
+
 ## CompuTec MOWizard 3.2506.1
 
 **Release Date - 9 June 2025**
