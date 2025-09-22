@@ -8,6 +8,44 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 
 ---
 
+## CompuTec.ProcessForce 3.2509.1
+
+**Release Date - 19 September 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Improvement | Synchronization | Synchronize Sales Order details between Manufacturing Order and Work Order. |
+| Improvement | .netCore | Add Description to ProcessForce Object To for better Agent awareness. |
+| Improvement | Substitutes | Item Description in List of Substitutes is not appearing. |
+| Bug | MOWizard | Error message occurs when attempting to re-use a scenario in MOWizard: "Object reference not set to an instance of an object." |
+| Bug | MOWizard | Created MORs do not follow Status indicated in MOWizard. |
+| Bug | MRP | Create Documents – grouped documents (new logic) not working.. |
+| Bug | Bill of Materials | Revision description is not populated immediately in Bill of Materials. |
+| Bug | .netCore, Bill of Materials | Importing BOM with non-existent Routing is allowed in PFI. |
+| Bug | Resources | Error message: "Data Table – exceeds column data size `66000-148`" occurs during Resource Calendar update. |
+| Bug | Bill of Materials | Data is not saved when switching between routings in Production process. |
+| Bug | Manufacturing Order | Error message: "Cannot add row without complete selection of batch/serial numbers." occurs during Pick Receipt. |
+| Bug | Common Functions | Item Description missing in Mass Item Replace. |
+| Bug | Scheduling | Golden arrow next to Warehouse is not functional in Scheduling Board. |
+| Bug | Quality Control | Batch number filter is not working in Quality Control Test Report. |
+| Bug | Scheduling | Resource Planning Board – cannot move multiple operations at once, and alternative resource set is incorrect. |
+| Bug | Scheduling | Sorting is not displayed for some resources in Scheduling. |
+| Bug | Scheduling | Rescheduling causes more issues than it resolves, leading to a never-ending process. |
+| Bug | Manufacturing Order | Issues with Pick Order and Pick Receipt view from Manufacturing Order.|
+| Bug | .netCore, Manufacturing Order | System throws error in Orderless Production. |
+| Bug | Bill of Materials | Error while adding Bill of Materials. |
+| Bug | Bill of Materials, Web API | AppEngine 3.0 -  Adding Advanced Relations to Bill of Materials Routing Operation returns an error. |
+| Bug | Quality Control | Job "QC Test Serial/Batch Syncer" is not working. |
+| Bug | Quality Control | Error "Object reference not set to an instance of an object." on updating UDF value. |
+| Bug | Batches | Batch Fields in Automatic Batch Creation is overlapping while changing font size. |
+| Bug | Web API | Error "The given key was not present in the dictionary" occurs on orderless production creation. |
+| Bug | Quality Control | Itemcode validation missing in Test Protocol Import through PFI.|
+| Bug | Manufacturing Order | Issues with linking of pick receipt and goods receipt. |
+| Bug | .netCore, Manufacturing Order | Update Revision in MOR through WebAPI. |
+| Bug | Quality Control, Web API | Error:  `{“title”:”Unhandled exception”,”detail”:”Test Protocol invalid. Date validation.”}` occurs post Quality Control Test. |
+|
+
+
 ## CompuTec.ProcessForce 3.2508.1
 
 **Release Date - 04 August 2025**
