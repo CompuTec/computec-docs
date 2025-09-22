@@ -19,7 +19,7 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 | Improvement | Substitutes | Item Description in List of Substitutes is not appearing. |
 | Bug | MOWizard | Error message occurs when attempting to re-use a scenario in MOWizard: "Object reference not set to an instance of an object." |
 | Bug | MOWizard | Created MORs do not follow Status indicated in MOWizard. |
-| Bug | MRP | Create Documents – grouped documents (new logic) not working.. |
+| Bug | MRP | Create Documents – grouped documents (new logic) not working. |
 | Bug | Bill of Materials | Revision description is not populated immediately in Bill of Materials. |
 | Bug | .netCore, Bill of Materials | Importing BOM with non-existent Routing is allowed in PFI. |
 | Bug | Resources | Error message: "Data Table – exceeds column data size `66000-148`" occurs during Resource Calendar update. |
@@ -38,11 +38,11 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 | Bug | Quality Control | Job "QC Test Serial/Batch Syncer" is not working. |
 | Bug | Quality Control | Error "Object reference not set to an instance of an object." on updating UDF value. |
 | Bug | Batches | Batch Fields in Automatic Batch Creation is overlapping while changing font size. |
-| Bug | Web API | Error "The given key was not present in the dictionary" occurs on orderless production creation. |
+| Bug | WebAPI | Error "The given key was not present in the dictionary" occurs on orderless production creation. |
 | Bug | Quality Control | Itemcode validation missing in Test Protocol Import through PFI.|
 | Bug | Manufacturing Order | Issues with linking of pick receipt and goods receipt. |
 | Bug | .netCore, Manufacturing Order | Update Revision in MOR through WebAPI. |
-| Bug | Quality Control, Web API | Error:  `{“title”:”Unhandled exception”,”detail”:”Test Protocol invalid. Date validation.”}` occurs post Quality Control Test. |
+| Bug | Quality Control, WebAPI | Error:  `{“title”:”Unhandled exception”,”detail”:”Test Protocol invalid. Date validation.”}` occurs post Quality Control Test. |
 |
 
 

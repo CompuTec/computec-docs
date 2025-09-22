@@ -4,7 +4,36 @@ sidebar_position: 1
 
 # Release Notes
 
-## CompuTec AppEngine 3.2508.1
+## CompuTec AppEngine 3.2509.1
+
+**Release Date - 22 September 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Improvement | WebAPI |Display proper error message when logging in through Web Methods. |
+| Improvement | UI | Pick Receipt / Pick Order - UDF linked to table is not displayed as a combo box. |
+| Improvement | AE Common Library | Add options to MessageHelper exception method. |
+| Improvement | AE Core | Display "CompanyId" under Companies' details. |
+| Bug | MRP | Create Documents – grouped documents (new logic) not working. |
+| Bug | PFI | AppEngine PFI Template lacks necessary context for deletion. |
+| Bug | Core | Login does not work after session expiration. |
+| Bug | AE Core | Remove requirement for UDFItems property in UDO Models. |
+| Bug | AE Analytics | Update Data Source not working. |
+| Bug | Manufacturing Order | Pick Order and Pick Receipt view from MO not working correctly. |
+| Bug | .netCore, Manufacturing Order | System throws error in Orderless Production. |
+| Bug | AppEngine | Patching BOM routing operation relations and input/output gives an error. |
+| Bug | AE Core | Dialog always displays Cozy density class. |
+| Bug | MO360 | Analytics view is not saved in MO360. |
+| Bug | BT360 | MOR does not appear in Batch Overview. |
+| Bug | AE Configuration | Open Data Reader error: "There is already an open DataReader associated with this connection which must be closed first." |
+| Bug | AE Plugins | Unable to download plugins pack. |
+| Bug | AE WebClient | Authentication for opening AE plugin from web client does not work on version 2505. |
+| Bug | MCP | MCP server does not properly execute the patch and POST request with the WithDefault attribute. |
+| Bug | AE Core | Issue with token validation and system reconnection. |
+
+
+
+## CompuTec AppEngine 3.25.08.1
 
 **Release Date - 04 August 2025**
 
