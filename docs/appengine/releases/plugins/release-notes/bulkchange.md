@@ -8,6 +8,14 @@ Below are the release notes for CompuTec BulkChange, highlighting new features, 
 
 ---
 
+## CompuTec BulkChange 3.2509.1
+
+**Release Date - 019 September 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Bug | BulkChange | Bulk Change  - error message occurs: "Field value too long in field U_IsDefault; maximum is 1." |
+
 ## CompuTec BulkChange 3.2508.1
 
 **Release Date - 04 August 2025**

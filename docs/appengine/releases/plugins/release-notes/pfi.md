@@ -8,6 +8,14 @@ Below are the release notes for CompuTec PFI Plugin, highlighting new features, 
 
 ---
 
+## CompuTec PFI 4.3509.1
+
+**Release Date - 19 September 2025**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Bug | PFI | AppEngine PFI Template lacks necessary context for deletion. |
+
 ## CompuTec PFI 3.2506.1
 
 **Release Date - 12 June 2025**
