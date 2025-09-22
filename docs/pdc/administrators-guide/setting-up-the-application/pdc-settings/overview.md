@@ -32,7 +32,7 @@ The following options are specific to the PDC Settings form:
 
   ![Show Date Picker](./media/pdc-settings/show-date-picker.webp)
 - **Localizations**: this is a weighting module-related option. Only devices from the localizations listed here will appear in the [Weighting Wizard](../../weight-scales-integration/working-with-scales.md). The weighting device, along with its localization, can be configured in [CompuTec Gateway Manager](../../weight-scales-integration/computec-gateway-manager.md). If this field is left blank, all devices will be available.
-- **Resources view**: the purpose of this function is to filter tasks by multiple Resources. Click [here](./resource-view.md) to find out more.
+- **Resources view**: the purpose of this function is to filter tasks by multiple Resources. Click [here](./resources-view.md) to find out more.
 - **Delay of closing dialogs(s)**: here, you can specify the time (in seconds) for displaying dialog windows.
 
 ## Assigning PDC Settings Templates

@@ -23,7 +23,7 @@ In the Downtime form header, you can define the following:
 - Start and end date and time: duration of the downtime
 - Employees connected to the downtime:
   - Reporter: who logs the downtime.
-  - Technician: the person responsible for the defect removal. Click [here](/docs/pdc/administrator-guide/setting-up-the-application/overview#requirements) to find out more.
+  - Technician: the person responsible for the defect removal. Click [here](https://learn.computec.one/docs/pdc/administrators-guide/setting-up-the-application/overview#requirements) to find out more.
   - Employee who can check and end downtime
 - Document Series
 - Status:

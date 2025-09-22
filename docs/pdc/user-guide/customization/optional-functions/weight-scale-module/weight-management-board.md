@@ -7,7 +7,7 @@ sidebar_position: 2
 The Weight Management Board provides users with a centralized interface to manage all weight-related documents efficiently.
 
 :::note
-    Only users with [Management Board privileges](../../../../administrator-guide/setting-up-the-application/overview.md) can access this feature.
+    Only users with [Management Board privileges](../../../../administrators-guide/setting-up-the-application/overview.md) can access this feature.
 :::
 
 ## Access

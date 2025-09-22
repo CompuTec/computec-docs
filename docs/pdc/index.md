@@ -32,7 +32,7 @@ A form where all details of a new task can be set will appear:
 
 Choosing a specific Manufacturing Order allows choosing among Operations included in it. Choosing an Operation allows choosing a specific Resource to work with. If you will choose Sale Order you can choose from Manufacturing Orders connected to it.
 
-Click the Plus icon after setting all details. For further information, click [here](./user-guide/adding-new-task.md).
+Click the Plus icon after setting all details. For further information, click [here](./user-guide/adding-a-new-task.md).
 
 ### Task Panel
 

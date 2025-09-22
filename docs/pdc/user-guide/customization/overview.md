@@ -16,7 +16,7 @@ There are two primary ways to customize CompuTec PDC:
 ## Form Settings
 
 :::info
-    To enable this option, you must activate the feature for a specific employee within the Employee Master Data. For detailed instructions, click [here](../../administrator-guide/setting-up-the-application/overview.md#requirements).
+    To enable this option, you must activate the feature for a specific employee within the Employee Master Data. For detailed instructions, click [here](../../administrators-guide/setting-up-the-application/overview.md#requirements).
 :::
 
 Form settings allow users to control which columns appear on various CompuTec PDC forms, such as:

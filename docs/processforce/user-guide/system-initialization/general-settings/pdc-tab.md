@@ -16,6 +16,6 @@ Administration → System Initialization → General Settings → ProcessForce t
 
 ---
 
-➡️ For a detailed description of each option available on this tab, refer to the official [CompuTec PDC Documentation](https://learn.computec.one/docs/pdc/administrator-guide/setting-up-the-application/overview#processforce-settings).
+➡️ For a detailed description of each option available on this tab, refer to the official [CompuTec PDC Documentation](https://learn.computec.one/docs/pdc/administrators-guide/setting-up-the-application/overview#processforce-settings).
 
 ---

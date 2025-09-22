@@ -42,7 +42,7 @@ These applications communicate with **CompuTec Gateway Manager** through the Com
     - Remote or local label printing at various stages of the production process.
     - Efficient communication with peripheral devices such as printers and scales through the CompuTec AppEngine platform.
 
-    For detailed weight scale configuration in CompuTec PDC, refer to the Weight Scale Integration Guide. [Click here to navigate to the page](https://learn.computec.one/docs/pdc/administrator-guide/weight-scales-integration/overview/).
+    For detailed weight scale configuration in CompuTec PDC, refer to the Weight Scale Integration Guide. [Click here to navigate to the page](https://learn.computec.one/docs/pdc/administrators-guide/weight-scales-integration/overview/).
 
 ## Communication Flow Between Applications and Gateway
 

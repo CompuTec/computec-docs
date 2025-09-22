@@ -23,7 +23,7 @@ This document provides step-by-step instructions on how to license the CompuTec 
 
     ![PDC Licensing](./media/pdc-licensing/service-manager.webp)
 3. **Open theLicensing Window** - Click on the CompuTec PDC/WMS Licensing button to open the licensing configuration window.
-4. **Request License File** - To obtain a license file, send the following details to CompuTec support as described on the [the CompuTec PDC license request page](./pdc-license-request.md):
+4. **Request License File** - To obtain a license file, send the following details to CompuTec support as described on the [the CompuTec PDC license request page](./computec-pdc-license-request.md):
 
     - **Full Server Name**: this is automatically displayed after the successful installation of the application and indicates the specific machine on which the application is installed.
     - **Terminal License Key**: this key is generated automatically based on the internal system information.

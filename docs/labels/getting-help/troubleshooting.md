@@ -26,7 +26,7 @@ Please make sure that you applied the below steps.
 
         - [SAP](../using-computec-labels/sap-add-on/overview.md)
         - [WMS](https://learn.computec.one/docs/wms/user-guide/starting)
-        - [PDC](https://learn.computec.one/docs/pdc/administrator-guide/setting-up-the-application/overview#ct-labels-settings)
+        - [PDC](https://learn.computec.one/docs/pdc/administrators-guide/setting-up-the-application/overview#ct-labels-settings)
 
 - Update global data
 - Restart CompuTec Labels Service

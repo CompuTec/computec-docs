@@ -16,7 +16,7 @@ Before using the CompuTec PDC Plugin, ensure the following are installed and con
 
 1. CompuTec ProcessForce and CompuTec Licence Server is installed and configured. Refer to the relevant installation guide [here](https://learn.computec.one/docs/processforce/administrator-guide/licensing/license-server/overview).
 
-2. CompuTec PDC requirements have been fulfilled. Verify the system meets all requirements [here](/docs/pdc/administrator-guide/installation/requirements/).
+2. CompuTec PDC requirements have been fulfilled. Verify the system meets all requirements [here](/docs/pdc/administrators-guide/installation/requirements/).
 
 :::caution
 The CompuTec PDC Plugin is compatible only with the 64-bit version of CompuTec PDC.
@@ -30,7 +30,7 @@ Follow the individual installation guides for each required component:
 - [CompuTec PDC plugin](../administrators-guide/configuration-and-administration/configuration.md)
 - [CompuTec ProcessForce plugin](../plugins-user-guide/processforce.md)
 - [CompuTec ProcessForce API (on the same server as CompuTec AppEngine)](/docs/processforce/releases/download#computec-processforce-api)
-- [CompuTec PDC application](/docs/pdc/administrator-guide/installation/first-installation/)
+- [CompuTec PDC application](/docs/pdc/administrators-guide/installation/first-installation/)
 
 :::caution
 CompuTec ProcessForce API needs to be installed on the same server as CompuTec AppEngine.
