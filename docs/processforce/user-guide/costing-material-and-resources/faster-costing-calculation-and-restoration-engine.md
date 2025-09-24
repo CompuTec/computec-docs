@@ -7,7 +7,7 @@ sidebar_position: 11
 In today’s fast-paced business environment, accurate and efficient cost calculations are critical to maintaining profitability and competitiveness. CompuTec ProcessForce introduces the Faster Costing Calculation and Restoration Engine, a breakthrough solution designed to optimize the Cost Roll-Up process. By leveraging advanced data-handling techniques, this feature reduces the time required for complex costing procedures while improving accuracy. In this guide, we’ll explore how the Faster Costing option works, its benefits, and the steps required to activate it.
 
 :::caution
-    To use the option, it is required to set up a Direct Data Access connection to a database. You can check how to do this [here](../../administrators-guide/licensing/license-server/configure-computec-service-manager.md).
+    To use the option, it is required to set up a Direct Data Access connection to a database. You can check how to do this [here](../../administrator-guide/licensing/license-server/configure-computec-service-manager.md).
 :::
 
 ---

@@ -167,7 +167,7 @@ The Inspection date is also auto-calculated for the batch and is displayed withi
 
 ![Batch Master Data](./media/overview/batch-master-data.webp)
 
-To get more information on this subject, click [here](/docs/processforce/user-guide/quality-control/quality-control-test/creating-qc-test-from-batch/).
+To get more information on this subject, click [here](/docs/processforce/user-guide/quality-control/quality-control-test/creating-qc-test-from-batch-record/).
 
 ## Properties
 

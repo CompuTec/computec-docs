@@ -66,7 +66,7 @@ The Frequency tab allows users to specify 'When' a test will be conducted.
 - **Frequency**: select one method at a time to determine testing intervals.
 - **Time Between Tests**: define an interval for subsequent tests using 'd' (days), 'h' (hours), and 'm' (minutes), e.g., '14d', '13d23h', '20d22h15m', or '15d40m'. This value calculates the next test date.
 - **After No. of Batches**: you can define the number of Batches after the recording of which a test will be performed.
-- **Batch Record Inspection Date**: if checked, the Inspection Date in the [Batch Master Data form > Date Details tab](../../inventory/batch-control/batch-master-data/details-tab.md) is taken under consideration.
+- **Batch Record Inspection Date**: if checked, the Inspection Date in the [Batch Master Data form > Date Details tab](../../inventory/batch-control/batch-master-data/date-details-tab.md) is taken under consideration.
 - **Specific date**: put a specific date manually.
 - **Date of Last Test**: date of the last test performed.
 - **Date of Next Test**: a date calculated based on the chosen option.

@@ -102,4 +102,4 @@ For more advanced configuration topics related to batch expiry, issue logic, or 
 - 🔗 [Extended Batch Expiry Evaluation](../../inventory/batch-control/batch-control-settings/extended-batch-expiry-evaluation.md)  
 - 🔗 [Manual and Backflush Issue Type Configuration](../../inventory/batch-control/batch-control-settings/manual-and-backflush-issue-type-configuration.md)  
 - 🔗 [Batch & Quality Control Status Configuration](../../inventory/batch-control/batch-control-settings/configuration-batch-and-quality-control-status.md)  
-- 🔗 [Revision-Based Picking & Backflushing](../../manufacturing/revision-based-picking.md)
+- 🔗 [Revision-Based Picking & Backflushing](../../manufacturing/revision-based-picking-and-backflushing.md)

@@ -19,7 +19,7 @@ To implement Yield-Based Production:
 3. Analyze discrepancies between planned and actual results.
 
 :::info Related topics
-    - [Define Planned Yield in BOM](../../user-guide/formulations-and-bill-of-materials/bill-of-materials/bom-planned-yield.md)
+    - [Define Planned Yield in BOM](../../user-guide/formulations-and-bill-of-materials/bill-of-materials/planned-yield-percentage.md)
     - [Analyze Yield Variance](../../user-guide/formulations-and-bill-of-materials/bill-of-materials/yield-analysis.md)
 :::
 

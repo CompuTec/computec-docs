@@ -35,7 +35,7 @@ When creating a Pick Receipt, key details such as Items, Planned Quantity, Desti
 
 ➡️ For further details on completing the Pick Receipt to Production Goods Receipt cycle, refer to [Pick Receipt Bin Locations and Allocations](../inventory/pick-receipt-bin-locations-and-allocations.md).
 
-➡️ You can check how to create Pick Receipt for and Production Goods Receipt for Items managed by Batches, [follow this guide](../inventory/pick-receipt-for-a-batch-managed-items.md).
+➡️ You can check how to create Pick Receipt for and Production Goods Receipt for Items managed by Batches, [follow this guide](../inventory/pick-receipt-for-batch-managed-items.md).
 
 ➡️ Watch video tutorials on [Pick Receipt](https://www.youtube.com/playlist?list=PLtT6kgaz5Ync9BW5iceuweMlSu9E2D7Y2).
 

@@ -79,7 +79,7 @@ The Attachments Tab allows the user to upload relevant documents relating to the
 
 ## Creating an activity for a complaint
 
-The standard SAP Business One activity functionality is available to create and check within the Complaint form. To get more information on the subject, click [here](../activities-for-processforce-documents.md).
+The standard SAP Business One activity functionality is available to create and check within the Complaint form. To get more information on the subject, click [here](../activities-for-computec-processforce-documents.md).
 
 ## Complaint Status
 

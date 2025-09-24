@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Quality Control tab
+# QC tab
 
 The Quality Control Tab in the system provides essential settings for managing quality control processes efficiently. It enables users to configure various parameters related to testing, batch release, and automated test creation. Below is an overview of the key settings and their functionalities.
 

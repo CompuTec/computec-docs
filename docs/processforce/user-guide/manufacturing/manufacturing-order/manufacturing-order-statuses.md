@@ -20,10 +20,10 @@ Each Manufacturing Order (MO) is assigned a status that defines what actions can
 - **Closed**: The Manufacturing Order is fully locked from editing. Optionally, closing can trigger journal entries based on MO variance (if the **Post variance on Manufacturing Order closure** option is enabled in *General Settings*).
 
 :::info
-Refer to [Status Change Rules](mass-status-change.md) to see which transitions are possible.
+Refer to [Status Change Rules](mass-manufacturing-order-status-change.md.md) to see which transitions are possible.
 :::
 
-You can also use the [Mass Manufacturing Order Status Change Tool](mass-status-change.md) to update multiple orders simultaneously.
+You can also use the [Mass Manufacturing Order Status Change Tool](mass-manufacturing-order-status-change.md.md) to update multiple orders simultaneously.
 
 ## Status Updates through CompuTec PDC
 

@@ -75,11 +75,11 @@ The Attachments Tab allows the user to upload relevant documents relating to the
 
 - From the Action Tab, the user can check that the Complaint requires a [Quality Control Test](../quality-control/quality-control-test/overview.md) and create a Quality Control Test from the "You Can Also" button.
 - The user can also check that this Complaint was the source of a Product Recall activity.
-- To know more informarion, click the video: [Creating a Quality Control Test from a Complaint](https://www.youtube.com/watch?v=MtuKARV-QWM)
+- To know more information, click the video: [Creating a Quality Control Test from a Complaint](https://www.youtube.com/watch?v=MtuKARV-QWM)
 
 ## Creating an activity for a complaint
 
-The standard SAP Business One activity functionality is available to create and check within the Complaint form. To get more information on the subject, click [here](../activities-for-processforce-documents.md).
+The standard SAP Business One activity functionality is available to create and check within the Complaint form. To get more information on the subject, click [here](../.
 
 ## Complaint Status
 

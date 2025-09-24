@@ -47,7 +47,7 @@ Here, you can download CompuTec License Server for CompuTec ProcessForce.
 :::
 
 :::info
-    You can find a guide on how to set up CompuTec License Server here: [License Server Installation Guide](../administrators-guide/licensing/license-server/computec-license-server-installation.md).
+    You can find a guide on how to set up CompuTec License Server here: [License Server Installation Guide](../administrator-guide/licensing/license-server/computec-license-server-installation.md).
 :::
 
 <table>
