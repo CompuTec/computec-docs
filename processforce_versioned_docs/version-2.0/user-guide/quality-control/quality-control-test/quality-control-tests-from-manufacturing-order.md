@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Quality Control Tests from a Manufacturing Order
+# Quality Control Tests from Manufacturing Order
 
 The Quality Control Tests creation process can also be initiated directly from the Manufacturing Order context menu. This method allows users to either create new Quality Control Tests or view those that have already been generated for a Manufacturing Order.
 

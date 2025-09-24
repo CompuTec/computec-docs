@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Item's Test Protocols
+# Item Test Protocols
 
 The Item's Test Protocols form serves as a powerful tool for retrieving all Test Protocols associated with a selected Item or its Revision. This feature ensures streamlined access to relevant testing information for quality control purposes.
 

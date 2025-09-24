@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Properties
+# Item Properties
 
 Managing item properties effectively is crucial for ensuring consistency and accuracy in inventory management, quality control, and production processes. In SAP, item properties allow users to define specific characteristics - both physical and chemical - such as color, appearance, and scent. A list of valid values may also be defined from the reference library. For example, color has valid values of yellow, blue, red, and green. These properties help categorize items, improve traceability, and streamline operations.
 

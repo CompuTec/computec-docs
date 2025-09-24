@@ -20,7 +20,7 @@ To access the Batch Master Data form, navigate through:
 
 The Batch Master Data form comprises several tabs, each serving a specific function:
 
-- [Date Details](/docs/processforce/user-guide/inventory/batch-control/batch-master-data/date-details-tab/): Manages batch-related dates, such as admission, expiry, and inspection dates.
+- [Date Details](date-details-tab.md): Manages batch-related dates, such as admission, expiry, and inspection dates.
 - [Properties](/docs/processforce/user-guide/inventory/batch-control/batch-master-data/properties-tab/): Displays properties defined in the Item Details for the specific item.
 - Attachments: allows users to upload, view, or delete files associated with a specific batch. Users can also link a Business Partner to the file and include certificate numbers and dates, particularly for attaching certificate documents.
 - [Quality Control](/docs/processforce/user-guide/inventory/batch-control/batch-master-data/quality-control-tab/):  provides an overview of quality control status, actions, and a history of quality control tests related to the batch, including associated complaints and non-conforming materials reports.

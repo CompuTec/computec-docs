@@ -50,7 +50,7 @@ Below is a detailed breakdown of the key settings available in this tab.
 - **Default Quality Control Status for SAP Receipt Documents**: Sets the default Quality Control status for received items in SAP.
 - **Default Quality Control Status for ProcessForce Receipt Documents**: Specifies the default quality control status for received items in CompuTec ProcessForce.
 
-    [Revision Based Picking and Backflushing](../../manufacturing/revision-based-picking.md)
+    [Revision Based Picking and Backflushing](../../manufacturing/revision-based-picking-and-backflushing.md)
 
 - **Issue Residual Quantity on next Good Receipts when possible**: Automatically reissues all rows with the Backflush issue type where the Residual Quantity is greater than zero and there is a quantity to issue (because it was not available in stock during previous receipts).
 - **AutoAllocate Batches on Pick Order Include**: Selects which allocations to consider during batch auto-selection: None, Pick Orders, Sales Orders, or Both.
@@ -71,4 +71,4 @@ For more advanced configuration topics related to batch expiry, issue logic, or 
 - 🔗 [Extended Batch Expiry Evaluation](../../inventory/batch-control/batch-control-settings/extended-batch-expiry-evaluation.md)  
 - 🔗 [Manual and Backflush Issue Type Configuration](../../inventory/batch-control/batch-control-settings/manual-and-backflush-issue-type-configuration.md)  
 - 🔗 [Batch & Quality Control Status Configuration](../../inventory/batch-control/batch-control-settings/configuration-batch-and-quality-control-status.md)  
-- 🔗 [Revision-Based Picking & Backflushing](../../manufacturing/revision-based-picking.md)
+- 🔗 [Revision-Based Picking & Backflushing](../../manufacturing/revision-based-picking-and-backflushing.md)
