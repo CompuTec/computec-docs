@@ -12,8 +12,8 @@ The CompuTec WMS Android version is a robust solution designed to enhance wareho
 
 To run CompuTec WMS on Android, ensure the following prerequisites are met:
 
-- **Android device compatibility** - Requires Android 8 to 14.
-- Network Access: The device must connect to the network hosting the CompuTec WMS Server. Test connectivity by entering `http://[server address]:31002/api/Test/Get` in a browser and verifying the response. Replace [server address] with the actual address of the CompuTec WMS Server.
+- **Supported Android OS**: Minimal required android version is Android 8. For best performance we recommend using one of the latest available versions.
+- **Network Access**: The device must connect to the network hosting the CompuTec WMS Server. Test connectivity by entering `http://[server address]:31002/api/Test/Get` in a browser and verifying the response. Replace [server address] with the actual address of the CompuTec WMS Server.
 
     ![Check](./media/check-server-connection.webp)
 
