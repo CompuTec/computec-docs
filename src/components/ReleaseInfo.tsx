@@ -39,6 +39,7 @@ const ReleaseInfo = ({ url, name }) => {
 					<th>Version</th>
 					<th>Release Date</th>
 					<th>Installer</th>
+					<th>CompuTec Core Version</th>
 				</tr>
 				{releaseData.versions
 					.filter((data) => data.release_type === "stable")
@@ -56,6 +57,7 @@ const ReleaseInfo = ({ url, name }) => {
 									Download
 								</a>
 							</td>
+							<td>{data.CTVersion ?? "-"}</td>
 						</tr>
 					))}
 			</table>
@@ -66,6 +68,7 @@ const ReleaseInfo = ({ url, name }) => {
 					<th>Version</th>
 					<th>Release Date</th>
 					<th>Installer</th>
+					<th>CompuTec Core Version</th>
 				</tr>
 				{releaseData.versions
 					.filter((data) => data.release_type !== "stable")
@@ -83,6 +86,7 @@ const ReleaseInfo = ({ url, name }) => {
 									Download
 								</a>
 							</td>
+							<td>{data.CTVersion ?? "-"}</td>
 						</tr>
 					))}
 			</table>
