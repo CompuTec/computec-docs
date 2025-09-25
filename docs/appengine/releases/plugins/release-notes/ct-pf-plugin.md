@@ -8,6 +8,18 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 
 ---
 
+## CompuTec.ProcessForce 3.2509.2
+
+**Release Date - 25 September 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Improvement | .netCore | Some services are registered at the application level. |
+| Bug | MRP | Recommendation with selected quantity = 0 should not be included in consolidated recommendation. |
+| Bug | Gantt Chart | Gantt does not load orders. |
+| Bug | Manufacturing Order | Error on Goods Receipt: "Available quantity too low to issue backflushed items or actual backflush issue settings do not allow Production Goods Receipt for Item: 304.00006, Revision: code00, Line No. 16." |
+| Bug | Bill of Materials | Error during BOM synchronization: "Invalid column name: BOM0.U_PFDBVersion: line 7 col 4 (at pos 124) CompuTec.Core2.DI.Database.SQLQueryException." |
+
 ## CompuTec.ProcessForce 3.2509.1
 
 **Release Date - 19 September 2025**

@@ -4,6 +4,15 @@ sidebar_position: 1
 
 # Release Notes
 
+## CompuTec AppEngine 3.2509.2
+
+**Release Date - 24 September 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Bug | API | Error on new BOM creation: "Item Code VP340M1AluSan and Revision Code 4561 for sequence 0 not found in FinalGood tab." |
+| Bug | Bill of Materials | Error during BOM synchronization: "Invalid column name: BOM0.U_PFDBVersion: line 7 col 4 (at pos 124) | CompuTec.Core2.DI.Database.SQLQueryException." |
+
 ## CompuTec AppEngine 3.2509.1
 
 **Release Date - 22 September 2025**

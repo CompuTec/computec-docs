@@ -16,6 +16,7 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 ## CompuTec WMS 2.10.23 R4
 
 **Release Date - 12 September 2025**
+
 | Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Bug| Server | The SlpCode will be copied to the delivery document. | SWITK-406 |
