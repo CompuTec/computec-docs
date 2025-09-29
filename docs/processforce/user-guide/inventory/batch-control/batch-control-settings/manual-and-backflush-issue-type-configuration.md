@@ -2,9 +2,9 @@
 sidebar_position: 6
 ---
 
-# Manual and Backflush Issue type Configuration
+# Manual and Backflush Issue Type Configuration
 
-In inventory management, configuring issue types correctly ensures smooth material handling in production and warehouse operations. This document outlines the behavior of different issue types—Manual and Backflush—detailing how they impact batch selection and processing. Understanding these settings helps streamline operations and maintain accurate inventory tracking.
+Configuring issue types correctly in inventory management ensures smooth handling of materials in production and warehouse operations. This guide explains the behavior of different issue types - Manual and Backflush - and how they influence batch selection and processing. Understanding these settings helps streamline operations and maintain accurate inventory tracking.
 
 ---
 
@@ -12,9 +12,12 @@ In inventory management, configuring issue types correctly ensures smooth materi
 
 The table below illustrates the interaction between Issue Type and Issue Behavior:
 
-- **Yes**: the batch is listed within the Batch Number Selection form.
-- **No**: the batch is not listed within the Batch Number Selection form.
-- **Display**: the batch is visible but cannot be issued within the Batch Number Selection form.
+- **Locked**: Restricts access strictly based on rules.
+- **Non-Accessible**: Hides or blocks issue even when visible.
+- **Both**: Combines restrictions for stronger control.
+- **Yes**: The batch is listed within the Batch Number Selection form.
+- **No**: The batch is not listed within the Batch Number Selection form.
+- **Display**: The batch is visible but cannot be issued within the Batch Number Selection form.
 
 |   Issue Type   | Issue Behavior |   Issue Behavior   | Issue Behavior |    Issue Behavior    |     Issue Type     |     Issue Type     |
 | :------------: | :------------: | :----------------: | :------------: | :------------------: | :----------------: | :----------------: |
@@ -54,7 +57,7 @@ The table below illustrates the interaction between Issue Type and Issue Behavio
 
 ### Non-Accessible Display
 
-![Non-accesswible - Display](./media/manual-and-backflush-issue-type-configuration/non-accessible-display.webp)
+![Non-accessible - Display](./media/manual-and-backflush-issue-type-configuration/non-accessible-display.webp)
 
 ### Both - Yes
 
@@ -70,6 +73,10 @@ The table below illustrates the interaction between Issue Type and Issue Behavio
 
 ## Backflush Issue Method
 
-The same principles that apply to manual issue types also apply to batch back-flushing. Ensuring accurate backflush settings prevents material shortages and maintains production efficiency.
+The same principles that apply to manual issue types also apply to batch back-flushing.
+
+- **Yes**: The batch is included in backflush.
+- **No**: The batch is excluded from backflush.
+- **Display**: The batch is shown but cannot be consumed.
 
 ---
