@@ -8,13 +8,13 @@ import Releases93 from "../releases-93.json";
 # Download
 
 :::danger
-    Please be sure to check and fulfill [the requirements](../administrators-guide/installation/requirements.md) before installing CompuTec PDC.
+    Please be sure to check and fulfill [the requirements](../administrator-guide/installation/requirements.md) before installing CompuTec PDC.
 :::
 
 ## CompuTec License Server
 
 :::info
-    You can find a guide on how to license CompuTec PDC [here](../administrators-guide/pdc-licensing/overview.md).
+    You can find a guide on how to license CompuTec PDC [here](../administrator-guide/pdc-licensing/overview.md).
 :::
 
 ## CompuTec ProcessForce API
@@ -28,7 +28,7 @@ import Releases93 from "../releases-93.json";
 ## CompuTec PDC
 
 :::info
-    You can find a guide on how to install CompuTec PDC application [here](../administrators-guide/installation/first-installation.md).
+    You can find a guide on how to install CompuTec PDC application [here](../administrator-guide/installation/first-installation.md).
 :::
 
 :::danger

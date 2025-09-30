@@ -13,7 +13,7 @@ The color of the icon reflects the progress of the material issuance process. A 
 ---
 
 :::caution
-    Before using this module, ensure that the weighing device is properly configured. Follow the setup instructions [here](../../../../administrators-guide/weight-scales-integration/overview.md).
+    Before using this module, ensure that the weighing device is properly configured. Follow the setup instructions [here](../../../../administrator-guide/weight-scales-integration/overview.md).
 :::
 
 ## Step 1: Choosing an Item

@@ -323,7 +323,7 @@ toc_max_heading_level: 2
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
 | Improvement | Tasks | Add Task by Resource form: a possibility to multiselect  of Tasks | – |
-| Improvement | Weighing Process | New settings: Range from mode, Confirm each weighting, Is precision Weight Enabled for Weighting. Click [here](../administrators-guide/setting-up-the-application/overview.md#processforce-settings) to find out more | – |
+| Improvement | Weighing Process | New settings: Range from mode, Confirm each weighting, Is precision Weight Enabled for Weighting. Click [here](../administrator-guide/setting-up-the-application/overview.md#computec-processforce-settings) to find out more | – |
 | Bug | Configuration | Can not open Crystal Report - no connection to SYSTEM | - |
 | Bug | Pick and Pack | It is not possible to issue two or more Items with the same Item Code | – |
 | Bug | Pick and Pack, Weighing Process | CompuTec ProcessForce Batches Status and logic supported in CompuTec PDC | SPDC-446 |

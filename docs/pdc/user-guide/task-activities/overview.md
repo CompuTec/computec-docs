@@ -71,7 +71,7 @@ Operation properties and related data are displayed here. These properties can b
 </div>
 </details>
 
-Using form settings, you can customize which columns are displayed and their order. Click [here](../../administrators-guide/setting-up-the-application/overview.md) to find out more.
+Using form settings, you can customize which columns are displayed and their order. Click [here](../../administrator-guide/setting-up-the-application/overview.md) to find out more.
 
 A Specific Operation Property can have a predefined value assigned in the Manufacturing Order. This value can be numeric (e.g., greater than 10, equal to 10) or text-based (e.g., color: yellow, green, red). In the example below,  the property *Gluing type* has the value *advanced*.
 
@@ -132,7 +132,7 @@ Resource Properties and their associated data are displayed here. These properti
 </div>
 </details>
 
-You can customize which columns are displayed and their order using form settings. Click [here](../../administrators-guide/setting-up-the-application/overview.md) to find out more.
+You can customize which columns are displayed and their order using form settings. Click [here](../../administrator-guide/setting-up-the-application/overview.md) to find out more.
 
 A Specific Resource Property can have particular values assigned to it on a Manufacturing Order. These value can be numeric (e.,g. greater than 10, equal to 10) or text-based (e.g., for pressure: high, low). In the example below, the Pressure property is set to High:
 
@@ -218,7 +218,7 @@ Displays the default printing layout assigned to the logged-in SAP Business One 
 
             ![Default Manufacturing Order](./media/task-activities/default-manufacturing-order.webp)
         4. A preview of the Manufacturing Order, generated based on the default layout, will now be available in CompuTec PDC under Task Tile → Manufacturing Order preview icon.
-        5. To view the Manufacturing Order preview, database credentials must be entered. To avoid entering them each time, you can save the credentials in the  [application settings](../../administrators-guide/setting-up-the-application/overview.md).
+        5. To view the Manufacturing Order preview, database credentials must be entered. To avoid entering them each time, you can save the credentials in the  [application settings](../../administrator-guide/setting-up-the-application/overview.md).
     </div>
 </details>
 
@@ -309,7 +309,7 @@ This button automatically assigns quantities for all items in the Pick and Pack 
 A team leader can assign employees to a task, with no limit on the number of employees that can be assigned.
 
 :::caution
-    Please note that an Employee must have a [Labour](../../administrators-guide/setting-up-the-application/overview.md) assigned to be able to be chosen from the list.
+    Please note that an Employee must have a [Labour](../../administrator-guide/setting-up-the-application/overview.md) assigned to be able to be chosen from the list.
 :::
 
 To assign employees to a task, select the checkboxes next to the required employees and click the left arrow icon.
@@ -349,7 +349,7 @@ Each employee can finish work independently, for instance, to change resources o
 
 ### Activity
 
-This feature is part of the standard SAP Business One functionality. You can configure an Activity (e.g., Conversation, Note) and an Activity Type (e.g., General, Internal) in [CompuTec ProcessForce General Settings](../../administrators-guide/setting-up-the-application/overview.md#processforce-settings).
+This feature is part of the standard SAP Business One functionality. You can configure an Activity (e.g., Conversation, Note) and an Activity Type (e.g., General, Internal) in [CompuTec ProcessForce General Settings](../../administrator-guide/setting-up-the-application/overview.md#computec-processforce-settings).
 When selecting the Activity option from the CompuTec PDC interface, an activity is automatically created with predefined settings. This ensures the activity is linked to a specific Manufacturing Order, Operation, or Resource (depending on the Task tile from which it is initiated) and the employee currently logged into CompuTec PDC.
 
 ### Technical Instruction
@@ -453,7 +453,7 @@ Click [here](./downtime.md) to find out more.
 
     **Pass to other Resource**: this option allows you to transfer a task to another resource when registering a time booking or downtime. Upon selecting this option, a drop-down list of alternative resources defined for the current resource will appear. You can only switch the task to an alternative resource with the same machine type as the current resource. Click [here](/docs/processforce/user-guide/scheduling/gantt-chart/alternative-resources) to learn more about defining alternative resources in CompuTec ProcessForce.
 
-    To be able to pass a Task to another Resource it is required to check Is enabled Move to Other Resource in [Employee Master Data](../../administrators-guide/setting-up-the-application/overview.md#setting-up-computec-pdc-application).
+    To be able to pass a Task to another Resource it is required to check Is enabled Move to Other Resource in [Employee Master Data](../../administrator-guide/setting-up-the-application/overview.md#setting-up-computec-pdc-application).
 
     Click the confirmation icon to register work.
 3. Number of Resources: in this field, you can specify the number of resources of the same type for which work is to be recorded. For example, if you have a resource called "Oven," you can define how many units of this equipment were used, such as 5 ovens. By default, the value is set to 1. If a higher value is entered, the recorded duration represents the cumulative effort of each piece of equipment.
