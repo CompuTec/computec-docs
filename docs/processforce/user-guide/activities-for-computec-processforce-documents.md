@@ -11,6 +11,8 @@ SAP Business One Activities provide a powerful tool to manage interactions and t
 
 ## Manufacturing Orders
 
+Manufacturing Orders (MOs) are instructions to produce a specific product in a set quantity and timeframe. In CompuTec ProcessForce, you can link activities to each MO to keep track of progress, important details, and related business partners. This makes it easier to monitor production, stay organized, and ensure everything is documented correctly, helping your team work more efficiently.
+
 ### Create an Activity
 
 To create an activity for a manufacturing order:
