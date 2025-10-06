@@ -66,7 +66,7 @@ You can check the CompuTec License Server Address in SAP Business One with Compu
 
     ![Initial Configuration](./media/configuration-and-administration/initial-configuration-01.png)
 You will be prompted for the B1SiteUser password.
-[How to create an operator account for Cloud Control Center](CreateOperatorForCCC.md)
+[How to create an operator account for Cloud Control Center](operator-setup-and-iam-server-assignment-in-cloud-control-center.md)
 
 3. After connecting to the SLD server, you will be presented with a **list of companies** configured within the SAP landscape. You can run Discover at any time to refresh the list of available companies.
 

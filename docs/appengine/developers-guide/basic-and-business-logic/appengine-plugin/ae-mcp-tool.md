@@ -58,4 +58,4 @@ internal class MyQueryMCPTool
 
 ## How to Set Up MCP Server
 
-For instructions on how to set up AI with AppEngine MCP, please visit the [documentation](../../../administrators-guide/configuration-and-administration/McpUserGuide.md).
+For instructions on how to set up AI with AppEngine MCP, please visit the [documentation](../../../administrators-guide/configuration-and-administration/mcp-server-for-sap-business-one.md).
