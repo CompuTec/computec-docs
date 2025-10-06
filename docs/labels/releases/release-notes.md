@@ -71,6 +71,17 @@ Below are the release notes for CompuTec Labels Printing Manager, highlighting n
 | Bug | Printing Service | - |Goods Receipt created based on Pick Receipt doesn't create request in the application |
 | Bug | Printing Service | SLABE-972 |CT Labels report printing doesn't support using query parameters in the custom rule. |
 
+## CompuTec Labels Plugin
+
+### CompuTec Labels Plugin  3.2509.1
+
+**Release Date – 29 September 2025**
+
+| Issue Type | Component/s |Reference Support Ticket | Release Note |
+| --- | --- | --- | --- |
+| Improvement | AE Plugins | - | Integrate AE Plugins with Weblate. |
+| Bug | Core | - | Issue with ProcessForce Scheduling Module. |
+
 ## CompuTec Labels SAP Addon
 
 Below are the release notes for CompuTec Labels SAP Addon, highlighting new features, improvements, and bug fixes in this release.
