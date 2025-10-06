@@ -29,7 +29,7 @@ To create an activity for a manufacturing order:
     To use Activities related to Manufacturing Orders, it is required to create an internal or dummy Business Partner Code.
 :::
 
->Note: The document type and document number are copied into the activity form
+>**Note**: The document type and document number are copied into the activity form
 
 ![Activity Document Number](./media/activities-for-processforce-documents/activity-document-number.webp)
 
@@ -52,6 +52,8 @@ To create an Activity for a Complaint:
 - The Document Type and Document Number from the complaint will be copied into the Linked Documents tab (similar to the Manufacturing Order activity process).
 
 ## Quality Control
+
+Quality Control (QC) is a crucial process in ensuring that materials, products, and processes meet the required standards and specifications. By capturing QC test results and linking them to relevant documents or business partners, the system helps maintain traceability, reduce errors, and support compliance with internal and external quality standards.
 
 ### QC test with no BP Code
 
@@ -78,6 +80,6 @@ To create an Activity for Batch Master Data:
 2. The Activity form will open.
 3. Add a BP Code to the activity.
 
->Note: The Document Type will be set to Batch Master Data, and the Batch Number will be automatically copied into the Document Number field in the Linked Documents tab.
+>**Note**: The Document Type will be set to Batch Master Data, and the Batch Number will be automatically copied into the Document Number field in the Linked Documents tab.
 
 ---
