@@ -12,7 +12,7 @@ sidebar_position: 8
 
 2. If this is your first time setting it up, you may encounter an error requesting that you add a specific statement in the Post-transaction procedure. Once the required code is added, you can proceed to turn the "Background Processing Date" to **ON**.
 
-    ![SLD Servers Configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/image2021-4-27-14-37-52.png)
+    ![SLD Servers Configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/error-message.webp)
 
 ## Plugins Configuration
 
