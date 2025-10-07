@@ -9,6 +9,18 @@ toc_max_heading_level: 2
     Installer is ready to download from [here](../../plugins/pdc/download.md).
 :::
 
+## CompuTec PDC 3.10.27.1
+
+**Release Date – 07 October 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Bug | PDC | Customization not working in Confirmation Panel. |
+| Bug | PDC | Unable to edit the dates in quick time registration. |
+| Bug | PDC | Substitutes validity is not considered in PDC. |
+| Bug | PDC | Dropdown is not working properly when no custom values are defined. |
+| Bug | PDC | PDC hangs on the pop-up screen, preventing user action and eventually causing the application to crash. |
+
 ## CompuTec PDC 3.10.26.1
 
 **Release Date – 21 May 2025**
