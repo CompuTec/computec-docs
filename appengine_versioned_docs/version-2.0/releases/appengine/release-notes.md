@@ -9,6 +9,14 @@ toc_max_heading_level: 2
 The latest installer is available to download fom [here](/docs/appengine/releases/appengine/download)
 :::
 
+## CompuTec AppEngine 2.10.20.5
+
+**Release Date - 07 October 2025**
+
+| Issue Type | Component/s | Release Note | Related issue/s |
+| - | - | - | - |
+| Improvement | AE Core | Improvement related to transactional locks. | - |
+
 ## CompuTec AppEngine 2.10.19.2
 
 **Release Date - 01 April 2025**
