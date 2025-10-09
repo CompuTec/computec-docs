@@ -20,7 +20,6 @@ export default function ContentWrapper(props: Props): ReactNode {
     <>
       {activePlugin.pluginId === "appengine" && activeDocContext.activeVersion?.label === "3.0" && (
         <Admonition type="warning">
-          <p><b>WARNING</b></p>
           <p>You are viewing documentation for <b>CompuTec AppEngine 3.0 (.NET 8)</b>.</p>
           <p>If you are working with older environments, you may be looking for <b>CompuTec AppEngine 2.0</b> based on .NET Framework, which is still supported: <a href="https://learn.computec.one/docs/appengine/2.0/">https://learn.computec.one/docs/appengine/2.0/</a></p>
           <p>As <b>CompuTec AppEngine 3.0</b> introduces a new architecture, all CompuTec components must be updated together.</p>
@@ -29,7 +28,6 @@ export default function ContentWrapper(props: Props): ReactNode {
       )}
       {activePlugin.pluginId === "appengine" && activeDocContext.activeVersion?.label === "2.0" && (
         <Admonition type="warning">
-          <p><b>WARNING</b></p>
           <p>You are viewing documentation for <b>CompuTec AppEngine 2.0 (.NET Framework)</b>, which is still supported.</p>
           <p>We recommend upgrading to <b>CompuTec AppEngine 3.0</b> built on .NET 8, which provides better performance and a modern, centralized installation process for CompuTec ProcessForce and other CompuTec solutions.</p>
           <p>However, please note that <b>CompuTec AppEngine 3.0</b> has a different architecture, and all CompuTec components need to be updated together.</p>
