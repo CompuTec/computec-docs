@@ -17,6 +17,7 @@ CompuTec Premium extends the functionality of SAP Business One by offering advan
 - **Crystal Printing for UDOs**: supports printing documents related to UDOs using Crystal Reports.
 - **VAT Payers Whitelist Check**: verifies if a business partner is an active VAT payer and confirms the associated bank account number.
 - **User Fields Updater**: enables modifications to User Defined Fields (UDFs) in accounting sale and purchase document lines, even after document posting.
+- **Cost Accounting**: automatically generates accounting entries that allocate costs to cost centers according to predefined rules, based on previously entered documents (e.g., invoices, journal entries).
 
 Availability of these functions can be controlled from the General Settings level, by checking the right checkboxes. To access Premium tab, navigate to:
 
