@@ -4,46 +4,52 @@ sidebar_position: 8
 
 # Setting up CompuTec AppEngine for Preventive Maintenance Schedule
 
+This guide explains how to configure CompuTec AppEngine to enable Preventive Maintenance Scheduling within CompuTec ProcessForce.  
+You will learn how to activate the required settings in the SLD Server, install and enable the necessary plugins, and configure background processing jobs for time-based and meter-based maintenance.
+
+## Prerequisites
+
+Before you begin:
+
+- Ensure you have administrator access to the CompuTec AppEngine Administration Panel.
+- Confirm that CompuTec ProcessForce and Maintenance 360 (MI360) plugins are available.
+- Verify that your System Landscape Directory (SLD) is connected and configured properly.
+
 ## SLD Servers Configuration
 
-1. Enable the 'Background Processing Date' on your company's SLD Servers by switching it to **ON**.
+## Procedure
 
-    ![SLD Servers Configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/sld-server.jpg)
+### Step 1: Configure SLD Servers
 
-2. If this is your first time setting it up, you may encounter an error requesting that you add a specific statement in the Post-transaction procedure. Once the required code is added, you can proceed to turn the "Background Processing Date" to **ON**.
+1. Open your SLD Server configuration and enable the Background Processing Date option by switching it to **ON**.
 
-    ![SLD Servers Configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/error-message.webp)
+   ![SLD Server Configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/sld-server.webp)
 
-## Plugins Configuration
+2. If this is your first setup, you might encounter an error prompting you to add a specific statement in the **Post-transaction procedure**.  
+   Add the required code snippet as instructed in the message, then re-enable the Background Processing Date.
 
-1. Install **CompuTec ProcessForce** and the [MI360 plugin](/docs/appengine/2.0/releases/plugins/mi360/download).
+   ![SLD Server Error Message](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/error-message.webp)
 
-    ![Plugins Configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/Plugins.jpg)
+### Step 2: Install and Activate Plugins
 
-2. Activate both **CompuTec ProcessForce** and **MI360** for your company.
+1. Navigate to Plugins → Store and ensure both of the following are installed: CompuTec ProcessForce and MI360
 
-    ![Plugins Configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/image2021-4-27-14-45-43.png)
+        ![Install Plugins](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/plugins.webp)
 
-## Background Processing Configuration
+2. Once installed, go to Plugins → Downloaded and activate these plugins for your company.
 
-Preventive Maintenance Schedule based on **Time** set up:
+   ![Plugins Configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/activate.webp)
 
-    1. Go to the **PMScheduleTimeBasedJob** background processing and activate it for your company.
+### Step 3: Configure Background Processing
 
-    ![Background Processing configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/image2021-4-28-9-36-11.png)
+**Time-Based Preventive Maintenance**
 
-    ![Background Processing configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/image2021-4-28-9-38-42.png)
+1. Navigate to Background Processing → Configuration.
+2. Locate the job **PMScheduleTimeBasedJob** under the Maintenance 360 plugin.
+3. Enable this job for your company to allow time-based preventive maintenance scheduling.
 
-Preventive Maintenance Schedule based on **Meter** values set up.
+   ![Time-Based Background Job](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/pmscheduletimebasedjob.webp)
 
-    1. Go to the **PMScheduleMeterBasedJob**, **PMScheduleTimeBasedJob**, and **SEventJob** background processing and activate them for your company.
-
-        ![Background Processing configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/image2021-4-28-9-41-35.png)
-
-Preventive Maintenance Schedule based on **Time** and **Meter** values set up:
-
-    1. Go to the **PMScheduleMeterBasedJob**, **PMScheduleTimeBasedJob**, and **SEventJob** background processing and activate them for your company.
-
-    ![Background Processing configuration](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/image2021-4-28-9-44-34.png)
+   ![Time-Based Background Job Activate](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/activate-time-based.webp)
 
 ---
