@@ -6,6 +6,29 @@ toc_max_heading_level: 2
 
 # FAQs
 
+## Incorrect Field Population After Barcode Scan in WMS
+
+**Problem Description**
+
+When a user scans a barcode (for example, an Item Label) in WMS, the scanned data is incorrectly entered into the next input field (such as the Quantity field) instead of the intended barcode field.
+
+**Root Cause**
+
+This behavior occurs due to the handheld device’s DataWedge configuration, which controls how scanned data is transmitted to WMS. The issue is specifically caused by the Keystroke Output option being enabled.
+
+**Resolution**
+
+To resolve this issue, follow the steps below on the handheld device:
+
+- Open DataWedge.
+- Select the CompuTec profile (the name may differ depending on your configuration).
+- Locate Keystroke Output under the profile settings.
+- Disable the Keystroke Output option.
+
+    ![Disable Keystroke](./media/disable-keystroke.png)
+
+Once this setting is disabled, barcode data will correctly populate the designated barcode field in WMS.
+
 ## Installed WMS, not working
 
 ### <i>**What to do**</i>
