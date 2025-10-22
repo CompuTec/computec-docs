@@ -44,22 +44,23 @@ Before you begin:
 
 **Time-Based Preventive Maintenance**
 
-1. Navigate to Background Processing → Configuration.
-2. Locate the job **PMScheduleTimeBasedJob** under the Maintenance 360 plugin.
-3. Enable this job for your company to allow time-based preventive maintenance scheduling.
+1. In the same Background Processing configuration section, locate the following jobs:
+   - PMScheduleTimeBasedJob
+   - SEventJob
 
-   ![Time-Based Background Job](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/pmscheduletimebasedjob.webp)
+2. Activate both jobs for your company to support time-based scheduling.
 
-   ![Time-Based Background Job Activate](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/activate-time-based.webp)
+      ![Time-Based Background Job](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/pmscheduletimebasedjob.webp)
+
+      ![Time-Based Background Job Activate](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/activate-time-based.webp)
 
 **Meter-Based Preventive Maintenance**
 
 1. In the same Background Processing configuration section, locate the following jobs:
     - PMScheduleMeterBasedJob
-    - PMScheduleTimeBasedJob
     - SEventJob
 
-2. Activate all three jobs for your company to support meter-based scheduling.
+2. Activate both jobs for your company to support meter-based scheduling.
 
 **Combined Time and Meter-Based Preventive Maintenance**
 
