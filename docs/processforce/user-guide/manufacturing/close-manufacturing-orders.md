@@ -4,29 +4,71 @@ sidebar_position: 5
 
 # Close Manufacturing Orders
 
-The process of closing manufacturing orders is an essential step in managing production workflows within SAP Business One. It enables users to efficiently finalize and close multiple manufacturing orders in one go, streamlining the end-of-process tasks and ensuring accurate financial reporting. This function provides a convenient interface for managing and tracking the completion of manufacturing processes.
+Efficiently closing manufacturing orders is a key step in managing production workflows within SAP Business One. This process finalizes production activities, updates inventory and costing records, and ensures accurate financial reporting.  
+
+This guide explains how to close manufacturing orders, filter them using selection criteria, and understand how the system handles costing variances upon closure.
 
 ---
 
-To close Manufacturing Orders, navigate to:
+## Prerequisites
 
-:::info Path
-    Production → Manufacturing Order → Close Manufacturing Order
-:::
+Before closing manufacturing orders, ensure that:
 
-From here, users can apply multiple selection criteria to filter and select the required manufacturing orders.
+- All required production activities are completed and confirmed.
+- Material issues and receipts are posted.
+- Quality checks (if applicable) are completed.
+- You have appropriate authorization to close manufacturing orders.
 
-    ![Close Manufacturing Orders](./media/close-manufacturing-orders/close-manufacturing-orders.webp)
+---
 
-Once selected, you can check the Close column for each individual manufacturing order, or quickly select all orders by clicking the header of the Close column.
+## Steps to Close Manufacturing Orders
 
-For organizations using a Standard Costing System or Moving Average (instead of dynamic costing), the system calculates and posts any Work in Progress (WIP) variance if the option is enabled under General Settings → ProcessForce Tab → Costing Tab → Post Variance on Manufacturing Order Closure.
+**1. Navigate to the Close Manufacturing Orders Screen**
 
-    ![Close Manufacturing Orders](./media/close-manufacturing-orders/close-manufacturing-orders-close.webp)
+    To Close Manufacturing Orders, navigate to:
 
-Once a manufacturing order is marked as closed, the Close Date field is automatically populated with the current date. This helps track the exact closure time for each manufacturing order, ensuring accurate records for auditing and reporting purposes. Close Date is displayed on Manufacturing Order:
+        :::info Path
+            Production → Manufacturing Order → Close Manufacturing Order
+        :::
 
-![Close date](./media/close-manufacturing-orders/closed-date.webp)
+    This function provides an overview of open manufacturing orders that are ready to be closed.
+
+        ![Close Manufacturing Orders](./media/close-manufacturing-orders/close-manufacturing-orders.webp)
+
+**2. Apply Selection Criteria**
+
+    Use the available filters to narrow down which manufacturing orders should be displayed.  
+Filtering options align with standard SAP Business One selection criteria, allowing users to easily locate relevant orders based on status, date, item, or other parameters.
+
+**3. Select Manufacturing Orders to Close**
+
+    - In the results grid, tick the **Close** checkbox next to each order you want to finalize.  
+    - To close all listed orders at once, select the header checkbox above the Close column.  
+
+        ![Select Orders to Close](./media/close-manufacturing-orders/close-manufacturing-orders-close.webp)
+
+        Once confirmed, the selected manufacturing orders will be marked as closed.
+
+**4. Automatic Posting of Variances (If Applicable)**
+
+    If your company uses Standard Costing or Moving Average Costing, SAP Business One can automatically calculate and post Work in Progress (WIP) variances at the time of closure.
+
+    This behavior depends on the configuration under:
+
+    Administration → System Initialization → General Settings → ProcessForce Tab → Costing Tab → Post Variance on Manufacturing Order Closure
+
+    When enabled, the system posts variance entries automatically upon order closure, ensuring accurate cost reconciliation.
+
+**5. Review the Close Date**
+
+    After closure:
+
+    - The **Close Date** field is automatically populated with the current date.
+    - This helps track when each order was finalized for audit and reporting purposes.
+
+    You can view the Close Date directly on the Manufacturing Order document:
+
+    ![Close date](./media/close-manufacturing-orders/closed-date.webp)
 
 ## Filtering option
 

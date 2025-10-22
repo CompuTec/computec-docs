@@ -52,4 +52,22 @@ Before you begin:
 
    ![Time-Based Background Job Activate](./media/how-to-set-up-appengine-for-preventive-maintenance-schedule/activate-time-based.webp)
 
+**Meter-Based Preventive Maintenance**
+
+1. In the same Background Processing configuration section, locate the following jobs:
+    - PMScheduleMeterBasedJob
+    - PMScheduleTimeBasedJob
+    - SEventJob
+
+2. Activate all three jobs for your company to support meter-based scheduling.
+
+**Combined Time and Meter-Based Preventive Maintenance**
+
+1. To enable both time and meter-based maintenance schedules, activate the following jobs:
+    - PMScheduleMeterBasedJob
+    - PMScheduleTimeBasedJob
+    - SEventJob
+
+2. Ensure the cron expressions are properly configured for regular execution.
+
 ---
