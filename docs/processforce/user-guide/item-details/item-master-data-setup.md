@@ -60,6 +60,18 @@ When setting up Item Master Data within SAP Business One, the following fields a
 - **Phantom Item**: to be checked to define a phantom item within the Bill of Materials.
 - **Issue Method**: to define an Item as manual or backflush within the Bill of Materials and the Manufacturing Order
 
+The Properties tab in the Item Master Data window of SAP Business One allows users to classify and filter items using predefined attributes called Item Properties. These properties serve as user-defined flags or categories that can be assigned to items for easier grouping, reporting, and searching.
+
+## Properties tab
+
+The Properties tab in the Item Master Data window of SAP Business One allows users to classify and filter items using predefined attributes called Item Properties. These properties serve as user-defined flags or categories that can be assigned to items for easier grouping, reporting, and searching.
+
+Item properties help businesses organize and categorize their inventory beyond standard fields such as Item Group or Item Type. They can be used to:
+
+- Classify items based on functional or commercial characteristics (e.g., “Imported Item,” “Eco-friendly,” “High-value,” etc.)
+- Simplify searches and reporting by filtering items based on assigned properties.
+- Support business analytics, dashboards, and custom queries.
+
 ## Right-click navigation
 
 For quick access, navigate to:

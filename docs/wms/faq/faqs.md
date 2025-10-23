@@ -6,17 +6,40 @@ toc_max_heading_level: 2
 
 # FAQs
 
+## Installation Error: WMS Client - Entry Point Not Found
+
+**Problem Description:**
+
+When attempting to install the WMS Client for Windows – Android UI, the following error message appears:
+
+```text
+CompuTec.Client.Net.exe - Entry Point Not Found
+The procedure entry point IsWow64Process2 could not be located in the dynamic link library 
+C:\Program Files (x86)\CompuTec WMS Client\Microsoft.WindowsAppRuntime.dll.
+```
+
+**Root Cause:**
+
+This issue occurs due to a technical limitation from Microsoft. The .NET MAUI framework used by the WMS Client does not support Windows versions earlier than:
+
+- Windows 10, version 1709, or
+- Windows Server 2016, version 1709
+
+**Resolution:**
+
+Install the latest client in environment with version above or newer.
+
 ## Incorrect Field Population After Barcode Scan in WMS
 
-**Problem Description**
+**Problem Description:**
 
 When a user scans a barcode (for example, an Item Label) in WMS, the scanned data is incorrectly entered into the next input field (such as the Quantity field) instead of the intended barcode field.
 
-**Root Cause**
+**Root Cause:**
 
 This behavior occurs due to the handheld device’s DataWedge configuration, which controls how scanned data is transmitted to WMS. The issue is specifically caused by the Keystroke Output option being enabled.
 
-**Resolution**
+**Resolution:**
 
 To resolve this issue, follow the steps below on the handheld device:
 
