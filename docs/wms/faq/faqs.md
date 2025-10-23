@@ -12,6 +12,8 @@ toc_max_heading_level: 2
 
 When attempting to install the WMS Client for Windows – Android UI, the following error message appears:
 
+![Entry Point Not Found](./media/entry-point-not-found.png)
+
 ```text
 CompuTec.Client.Net.exe - Entry Point Not Found
 The procedure entry point IsWow64Process2 could not be located in the dynamic link library 
