@@ -84,7 +84,12 @@ If you use Comp uTecProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to i
     <td>CompuTec WMS Client Windows Desktop</td>
     <td>-</td>
     <td><a href="https://download.computec.one/software/wms/client/windows/releases/CompuTec_WMS_Client_2.10.23.4.msi">Download</a></td>
-    <td>-</td>
+    <td>
+      <ul>
+        <li>Windows 10, version 1709</li>
+        <li>Windows Server 2016, version 1709</li>
+      </ul>
+    </td>
   </tr>
   <tr>
     <td>CompuTec WMS Client Windows Desktop (legacy)</td>
