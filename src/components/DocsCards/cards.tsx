@@ -40,10 +40,10 @@ const docsCards: DocCardProps[] = [
         description="Homepage card description"
         id="homepage.cards.webup.description"
       >
-        A modern web-based business application platform that provides 
-        intuitive access to business processes through any web browser. 
-        Features responsive design, real-time data access, and seamless 
-        integration capabilities.
+        An easy-to-use web-based customisation and automation tool that allows you to
+        change and enhance the behaviour of the SAP Business One Web Client with ease.
+        CompuTec WebUp is designed exclusively for the SAP Business One Web Client in
+        combination with the CompuTec AppEngine extensibility framework.
       </Translate>
     ),
     image: "/img/cards/CDCTile-CompuTec-WebUp.svg",
