@@ -38,7 +38,7 @@ Yes, WebUp fully supports both database platforms.
 
 **What version of SAP Business One is required?**  
 The **minimum version is SAP Business One 10 FP 2502**, but we recommend using the **latest available release**.  
-See the CompuTec Documentation Center for up-to-date compatibility details.
+See the CompuTec [Documentation Center](../system-requirements.md) for up-to-date compatibility details.
 
 **Does CompuTec WebUp support on-premise and cloud deployment?**  
 Yes. It supports both **on-premise** and **cloud** environments, including **private** and **public cloud** deployments via the **SAP Customer Cloud Center (CCC)**.
@@ -48,11 +48,11 @@ Yes. It supports both **on-premise** and **cloud** environments, including **pri
 ## Installation & Configuration
 
 **How do I install CompuTec WebUp?**  
-1. Install [CompuTec AppEngine 3.0](https://learn.computec.one/docs/appengine/releases/appengine/download).  
-2. Download and install **CompuTec WebUp** from the **AppEngine App Store**.  
-3. Add the **CompuTec WebUp Manager** and **CompuTec WebUp Runtime** extensions from the Chrome Web Store or Microsoft Edge Add-ons Store.  
-Refer to the official installation guide for detailed steps.
 
+You need to [install](docs/appengine/administrators-guide/configuration-and-administration/installation) CompuTec AppEngine 3.0 and download the **CompuTec WebUp App** from the CompuTec AppEngine App Store. You will also need to install **CompuTec WebUp Manager** and **CompuTec WebUp Client** for Google Chrome and Microsoft Edge, respectively, from their extension stores. However, at the time of writing, publication of the extensions in the Google Chrome and Microsoft Edge stores is pending. In the meantime, you can install the browser extensions manually by following the steps in the [installation guide](./extension-manual-installation.md).
+:::info
+Refer to the official [installation guide](../installation-and-activation.md) for detailed steps.
+:::
 **Do I need CompuTec AppEngine to use CompuTec WebUp?**  
 Yes, **AppEngine 3.0** is required, but it is provided **free of charge**.
 
@@ -138,7 +138,7 @@ Yes — preview versions will include **bug fixes and feature enhancements**.
 Yes — the roadmap is published in the CompuTec Documentation Center.
 
 **Can I raise a support ticket or provide feedback?**  
-Yes — support and feedback tickets can be submitted through the CompuTec Helpdesk Portal.
+Yes — support and feedback tickets can be submitted through the [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp).
 
 **Will support and maintenance be available for the official release?**  
 Yes — they will be included as part of your **CompuTec WebUp license or subscription**.
