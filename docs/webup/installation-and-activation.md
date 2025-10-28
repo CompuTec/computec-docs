@@ -14,7 +14,7 @@ This section describes the **installation and activation workflow** for the **We
 
 - **CompuTec WebUp App** – handles all customization and automation logic and stores persistent configuration settings.  
 - **CompuTec WebUp Manager** – provides the user interface for creating, editing, and testing configurations.  
-- **CompuTec WebUp Client** – extends the SAP Business One Web Client where the standard extensibility framework is limited.  
+- **CompuTec WebUp Client** – extends the SAP Business One Web Client, where the standard extensibility framework is limited.  
 
 ---
 
@@ -24,7 +24,7 @@ This section describes the **installation and activation workflow** for the **We
 
 ## 2. Company and Web Client Activation
 
-Make sure that the company is active in AppEngine and Web Client is [configured](/docs/appengine/administrators-guide/configuration-and-administration/working-with-sap-business-one-web-client).
+Make sure that the company is active in AppEngine and the Web Client is [configured](/docs/appengine/administrators-guide/configuration-and-administration/working-with-sap-business-one-web-client).
 
 ## 3. WebUp App Installation
 
@@ -35,50 +35,42 @@ The installation process is fully automated and managed within AE. [App`s instal
 
 ### Chrome Browser
 
-For the Chrome browser please go to the extension [store](https://chromewebstore.google.com/) and install:
+For the Chrome browser, please go to the extension [store](https://chromewebstore.google.com/) and install:
 
 - **CompuTec WebUp Client** extension for end users.
 - **CompuTec WebUp Manager** extension for consultants and key users.
 
 :::info
-Currently those extensions are not available in the store. Please follow [this](./other/extension-manual-installation.md) to install them manually until the Google team validates the extension.
+Currently, those extensions are not available in the store. Please follow [this](./other/extension-manual-installation.md) to install them manually until the Google team validates the extension.
 :::
 
 ### Microsoft Edge Browser
 
-For the Microsoft Edge browser please go to the extension [store](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home) and install:
+For the Microsoft Edge browser, please go to the extension [store](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home) and install:
 
 - **CompuTec WebUp Client** extension for end users.
 - **CompuTec WebUp Manager** extension for consultants and key users.
 
 :::info
-Currently those extensions are not available in the store. Please follow [this](./other/extension-manual-installation.md) to install them manually until the Microsoft team validates the extension.
+Currently, those extensions are not available in the store. Please follow [this](./other/extension-manual-installation.md) to install them manually until the Microsoft team validates the extension.
 :::
 
-## 5. Important informations
+## 5. Important information
 
-### Validate if CORS are correct in SAP Web Client
+### Validate if CORS is correct in SAP Web Client
 
-During the activation of a compan in AppEngine system displays instructions how to set up the CORS in Web CLient. Please make sure that all is correctly configured.
+When activating a company in AppEngine, the system provides instructions on setting up CORS for the Web Client. Please make sure the configuration is correct.
 
-### Validate if Developer Mode is enabled SAP Web Client when Customizing User Interface
+### Validate if Developer Mode is enabled in SAP Web Client when Customizing User Interface
 
-When customizing user interface using **CompuTec WebUp Manager**, please make sure that in Web Client Developer Mode is Enabled.
+When customizing the user interface with CompuTec WebUp Manager, make sure **Developer Mode** is enabled in the Web Client.
 ![developer mode in SAP Web Client is enabled](./media/web_client_dev_mode.png)
 
 ## Plugin Update
 
 Updates are handled directly through the **AE Store**, following the same workflow as installation.  
 The process preserves **assignments** and **configuration profiles**.
-For the new versions of Browser extension you will be prompted after instalation.
-
----
-
-:::info
-Users are expected to follow their standard browser extension installation policies or consult official browser vendor documentation.
-:::
-
-*(Optional insert Fig. 4.4-1 — Conceptual diagram: Browser Extension ↔ AppEngine ↔ SAP Web Client)*
+For the new versions of the Browser extension, you will be prompted after installation.
 
 ---
 
