@@ -43,4 +43,4 @@ Each modification is **logged and timestamped**, and the **AppEngine** maintains
 *View version list*
 
 ![Activation](./media/Activation_dialog.png)
-*Activation dialog and version confirmation
+*Activation dialog and version confirmation*

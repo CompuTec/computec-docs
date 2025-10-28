@@ -44,7 +44,7 @@ The **Select Control** tool and context menu can be combined with the **Copy GUI
 - Moving the *Contact Person* control into a different section.  
 - Making *Posting Date* mandatory dynamically based on business logic.
 
-
+![View versions](./media/Versions_history.png)
 (Insert Fig. 5.1-1 — WebUp layout editing panel showing control selection)
 
 (Insert Fig. 5.1-2 — Property editor with Basic/Dynamic toggle)
