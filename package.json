@@ -5,6 +5,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start:dev": "docusaurus start --config=docusaurus.multi.preview.ts",
+     "start:devout": "docusaurus start --config=docusaurus.multi.preview.ts --host 0.0.0.0 --port 3000",
     "build:dev": "docusaurus build --config=docusaurus.multi.preview.ts",
     "start:prod": "docusaurus start --config=docusaurus.multi.production.ts",
     "build:prod": "docusaurus build --config=docusaurus.multi.production.ts",

@@ -49,7 +49,7 @@ export default function DocCard(props: DocCardProps) {
         ></Box>
         <Card sx={{ borderRadius: 2, width: "100%" }}>
           <CardMedia
-            sx={{ height: 130, backgroundPosition: "left" }}
+            sx={{ height: 110 }}
             image={useBaseUrl(props.image)}
             title={props.title}
           />
