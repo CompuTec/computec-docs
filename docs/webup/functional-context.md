@@ -60,6 +60,5 @@ The scope includes:
 - **Event-driven automation** – on-screen actions such as *OnUpdate* or *BeforeSave* can trigger interactive actions or validations defined in the active profile.  
 - **Dynamic data binding** – control values can be linked to live SAP data models (e.g., *Sales Quotation Total*) via the **AE Data API**.  
 - **Versioned configuration management** – each profile revision (e.g., 1.0.1 → 1.0.2) is stored, activated, and rolled back through the **AE Config Layer**, ensuring controlled lifecycle management.  
-- **Consistent security model** – all requests from the browser extension to AppEngine pass through the authenticated **API Gateway** (`/api/v1/*`), enforcing AuthN/AuthZ policies.  
-- **Modular evolution** – WebUp functional domains (Layouts, Actions, Profiles, Data Integration) can be extended independently without breaking existing configurations.  
+- **Modular evolution** – WebUp functional domains (Layouts, Actions, Data Integration) can be extended independently without breaking existing configurations.  
 - **Unified logging and observability** – actions, activations, and errors are tracked through AE’s standard **Logging Service**, ensuring transparent diagnostics and maintainability.
