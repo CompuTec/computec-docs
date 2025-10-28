@@ -2,6 +2,7 @@
 id: webup-controls-other-configurations
 title: Controls – Other Configurations
 slug: /webup/videos/controls-other-configurations
+sidebar_position: 4
 ---
 
 This tutorial explains advanced configuration options available for controls in the **SAP Business One Web Client** using **CompuTec WebUp**. It demonstrates how to modify additional control properties, apply dynamic bindings, and manage extended attributes through AppEngine.

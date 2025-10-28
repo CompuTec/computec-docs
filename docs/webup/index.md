@@ -17,3 +17,4 @@ sidebar_position: 1
 - **[Installation and Activation](./installation-and-activation.md)** — Step-by-step installation and activation guide  
 - **[Components and Functional Overview](./components/components-and-functional-overview.md)** — Available components and configuration capabilities  
 - **[FAQ](./other/faq.md)** — Common questions, compatibility, and licensing information
+- **[Video Tuttorials](./videos/webup-first-launch.md)**

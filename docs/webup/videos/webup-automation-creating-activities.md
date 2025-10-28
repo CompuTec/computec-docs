@@ -2,6 +2,7 @@
 id: webup-automation-creating-activities
 title: Automation – Creating Activities
 slug: /webup/videos/automation-creating-activities
+sidebar_position: 6
 ---
 
 This tutorial demonstrates how to create and automate activities using **CompuTec WebUp** within the **SAP Business One Web Client**. It shows how to define automation logic, configure triggers, and generate system activities through AppEngine.
