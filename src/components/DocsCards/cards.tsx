@@ -15,8 +15,39 @@ const docsCards: DocCardProps[] = [
         QC, production scheduling, costing, plant maintenance and more.
       </Translate>
     ),
-    image: "/img/cards/ProcessForce.svg",
+    image: "/img/cards/CDCTile-CompuTec-ProcessForce.svg",
     pluginId: "processforce",
+  },
+  {
+    title: "CompuTec AppEngine",
+    description: (
+      <Translate
+        description="Homepage card description"
+        id="homepage.cards.appengine.description"
+      >
+        A web application programming and runtime platform. Based on plugin
+        architecture, it allows developers to implement custom solutions for
+        specific and unique business scenarios.
+      </Translate>
+    ),
+    image: "/img/cards/CDCTile-CompuTec-AppEngine.svg",
+    pluginId: "appengine",
+  },
+   {
+    title: "CompuTec WebUp",
+    description: (
+      <Translate
+        description="Homepage card description"
+        id="homepage.cards.webup.description"
+      >
+        A modern web-based business application platform that provides 
+        intuitive access to business processes through any web browser. 
+        Features responsive design, real-time data access, and seamless 
+        integration capabilities.
+      </Translate>
+    ),
+    image: "/img/cards/CDCTile-CompuTec-WebUp.svg",
+    pluginId: "webup",
   },
   {
     title: "CompuTec PDC",
@@ -31,7 +62,7 @@ const docsCards: DocCardProps[] = [
         production data they need.
       </Translate>
     ),
-    image: "/img/cards/PDC.svg",
+    image: "/img/cards/CDCTile-CompuTec-PDC.svg",
     pluginId: "pdc",
   },
   {
@@ -47,7 +78,7 @@ const docsCards: DocCardProps[] = [
         logistics processes.
       </Translate>
     ),
-    image: "/img/cards/WMS.svg",
+    image: "/img/cards/CDCTile-CompuTec-WMS.svg",
     pluginId: "wms",
   },
   {
@@ -63,24 +94,10 @@ const docsCards: DocCardProps[] = [
         comprehensively by the right printer at the right time.
       </Translate>
     ),
-    image: "/img/cards/Labels.svg",
+    image: "/img/cards/CDCTile-CompuTec-Labels.svg",
     pluginId: "labels",
   },
-  {
-    title: "CompuTec AppEngine",
-    description: (
-      <Translate
-        description="Homepage card description"
-        id="homepage.cards.appengine.description"
-      >
-        A web application programming and runtime platform. Based on plugin
-        architecture, it allows developers to implement custom solutions for
-        specific and unique business scenarios.
-      </Translate>
-    ),
-    image: "/img/cards/AppEngine.svg",
-    pluginId: "appengine",
-  },
+  
   {
     title: "CompuTec Premium",
     description: (
@@ -93,7 +110,7 @@ const docsCards: DocCardProps[] = [
         required by Polish law.
       </Translate>
     ),
-    image: "/img/cards/Premium.svg",
+    image: "/img/cards/CDCTile-CompuTec-Premium.svg",
     pluginId: "premium",
   },
   // {
