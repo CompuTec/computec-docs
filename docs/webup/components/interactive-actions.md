@@ -76,10 +76,11 @@ The user’s response determines whether the transaction continues or is cancele
 Action parameters may reference **model attributes** (e.g., `BusinessPartner.CardCode`, `Document.Total`) or **specific UI controls** identified via **Copy GUID** from the editor.  
 This enables context-aware confirmations that adapt dynamically to the active record or form.
 
+![Action def](./media/Action_definition.png)
+*WebUp Action definition*
 
+![Side Panel Action](./media/Side_Panel_Actions.jpg)
+*WebUp Actions list showing configured logic events and their activation states*
 
-(Insert Fig. 5.2-1 — Action creation window with event selector)
-
-(Insert Fig. 5.2-2 — Template and parameter selection view)
-
-(Insert Fig. 5.2-3 — Execution preview and confirmation message example)
+![Message](./media/CompuTec-WebUp-Automation-Create-Activity.png)
+*Automation confirmation message after activity creation – AppEngine successfully triggered WebUp Action*
