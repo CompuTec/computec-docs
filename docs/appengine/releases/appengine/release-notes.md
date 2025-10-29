@@ -4,6 +4,49 @@ sidebar_position: 1
 
 # Release Notes
 
+## CompuTec AppEngine 3.2510.1
+
+**Release Date - 29 October 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Improvement | WebUp | WebUp AE Plugin - Saving Modifications in WebUp Manager |
+| Improvement | WebUp | Introduced WebClient Control Page with Actions |
+| Improvement | AE WebClient | Improved Dialog Handling in SAP Web Client Extension Generator |
+| Improvement | WebUp | Improved handling AppEngine Frame Definitions in WebUp Manager |
+| Improvement | AE UAA | Company name is missing in the login screen |
+| Improvement | AE Core | Enabled logs and traces to be filtered and displayed based on custom instance names in Grafana |
+| Improvement | WebUp, WebUpClient, WebUpManager | Added warning message when the Manager extension is used without the corresponding Client extension installed |
+| Improvement | WebUp | Added transactions for deleting WebupViews |
+| Improvement | .netCore | CompuTec Start Add-on default start mode is set to Automatic in SAP Extension Manager when activating a Company |
+| Bug | WebUpManager | Unable to create a View due to issues with enforcing unique name validation |
+| Bug | WebUpManager | Unable to save changes when editing a View (e.g., Description) |
+| Bug | Common Functions | Show History - unable to open old instances in .NET Core |
+| Bug | Common Functions | Crystal Reports are not available for ProcessForce forms - the report icon is disabled |
+| Bug | Inventory | WEB API fails to process Pick Receipt Transaction correctly |
+| Bug | Installer | Error occurs when installing tables that contain links to other tables being installed within the same process |
+| Bug | Bill of Materials | BOM update fails with message "Cannot change document revision code00 for item 2252-0263-001000 is obsolete." |
+| Bug | .netCore | Error occurred while installing authorizations |
+| Bug | Common Functions | Error occurred during CompuTec ProcessForce Installation |
+| Bug | Core | Issue when trying to save autoincrement object with string that contains "'" |
+| Bug | AE WebClient | Hidden plugins are not being hidden in AE WebClient |
+| Bug | AE Configuration | Validation table horizontal scrollbar is not visible |
+| Bug | WMS Plugin | Unable to Add Items to Storage Categories (SC) |
+| Bug | WebUp, WebUpManager | Delete WebUp view doesnt work |
+| Bug | AE Configuration | After running AppEngine, when a database update occurs, the system redirects in a continuous loop to index.html |
+| Bug | PFI | Error “The node count limit of '100' has been exceeded.” occurs during load in PFI |
+| Bug | BT360 | Selection and data is not refreshed in BT360 |
+| Bug | AE UAA | Username and password data are not retained, causing login failure |
+| Bug | AE UAA | Language change does not work |
+| Bug | WebUpManager | Activation does not  work on PurchaseOrder |
+| Bug | WebUpManager | On first login to AppEngine from WebUp Manager, `IS_WEB_UP_ACTIVE` check fails |
+| Bug | AE Plugins | Error message occurred: “The JSON value could not be converted to CompuTec.ProcessForce.API.Enumerators.BatchStatus” occurs when updating batch status through Batch Status Changer |
+| Bug | AE Administration Panel | Login screen freezes when a 404 error is received, preventing user interaction or retry |
+| Bug | WebUpClient | Disabled action is applied on preview mode |
+| Bug | WebUp | Both "Add" and "Update" events are triggered when updating a document instead of only the "Update" event. |
+| Bug | WebUp | Error message occurred: Fix TypeError: this._connect is not a function and “Extension context invalidated” |
+| Bug | Inventory | Inventory Data Mismatch for Certain Items |
+
 ## CompuTec AppEngine 3.2509.2
 
 **Release Date - 24 September 2025**
