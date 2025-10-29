@@ -20,7 +20,7 @@ This section defines the **minimum environment requirements** necessary for prop
 
 ### AppEngine
 
-- **Official release package:** [`CompuTec.AppEngine.3.2510.1.msi`](/docs/appengine/releases/appengine/download.md)  
+- **Official release package:** [`CompuTec.AppEngine.3.2510.1.msi`](/docs/appengine/releases/appengine/download)  
 - **SAP Business One Web Client (AE)** must be installed and properly configured
 
 ### Web Browsers Supported
