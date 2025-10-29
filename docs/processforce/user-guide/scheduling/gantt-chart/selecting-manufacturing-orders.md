@@ -4,28 +4,56 @@ sidebar_position: 2
 
 # Selecting Manufacturing Orders
 
-You can use the extended filter option to quickly pick Manufacturing Orders which will be presented on the Gantt chart.
+This guide explains how to select and deselect Manufacturing Orders (MOs) for scheduling visualization within the Gantt chart. You will learn how to use filters, apply criteria, and control which MOs appear in the chart.
+
+## Prerequisites
+
+Before you begin:
+
+- Ensure you have access to the Manufacturing Orders list within the scheduling interface.
+- Confirm that your user role allows viewing and modifying order selections.
 
 ---
 
-## Selecting Manufacturing Orders
+Follow these steps to filter, select and display Manufacturing Orders on the Gantt chart:
 
-There are multiple methods in selecting orders. In this example, it is by Required Date "From," "To."
+1. **Open the Extended Filter**
 
-![Scheduling Criteria](./media/selecting-manufacturing-orders/scheduling-criteria.webp)
+    Open the Extended Filter section in the scheduling interface.  
+    This feature allows you to define criteria for selecting Manufacturing Orders that will be displayed on the Gantt chart.
 
-You can also choose Manufacturing Orders by Status, Used Resources, Manufacturing Order Item, and Warehouse. You can also mix the criteria.
+2. **Apply Selection Criteria**
 
-## Deselecting Manufacturing Orders
+    You can filter and select Manufacturing Orders using one or multiple criteria.  
+    Common options include:
 
-- All Manufacturing Orders are automatically selected.
+    - **Required Date (From/To):** Filter orders based on their required completion date range.  
+    ![Scheduling Criteria](./media/selecting-manufacturing-orders/scheduling-criteria.webp)
 
-- To deselect a specific order, uncheck the line.
+    - **Status:** Choose orders based on their production stage or status (e.g., Released, Planned).  
+    - **Used Resources:** Filter by specific machines or work centers.  
+    - **Manufacturing Order Item:** Focus on particular items being produced.  
+    - **Warehouse:** Select orders linked to a specific storage or production location.
 
-- To deselect all the orders, click on the column heading "Show in Gantt."
+    You can mix multiple criteria to refine the results.
 
-- Press the Select button to display these orders within the Gantt display.
+3. **Deselect Manufacturing Orders**
 
+    By default, all Manufacturing Orders that meet your criteria are automatically selected.  
+    To refine which ones are displayed:
+
+    - **To deselect a specific order:** Uncheck the corresponding line in the list.  
+    - **To deselect all orders:** Click the column header **“Show in Gantt.”**  
+    - **To confirm your selection:** Click the **Select** button to display the chosen orders in the Gantt chart.  
     ![Deselecting Manufacturing Order](./media/selecting-manufacturing-orders/scheduling-show-in-gantt.webp)
 
-- Clicking the arrow down on the Select button allows you to go to [Scheduling Board](../scheduling-board.md).
+4. **Access the Scheduling Board**
+
+    If you wish to proceed directly to the Scheduling Board view:
+
+    - Click the arrow down on the Select button.  
+    - Choose Scheduling Board from the dropdown menu to navigate there immediately.  
+
+    For more details, see [Scheduling Board](../scheduling-board.md).
+
+---

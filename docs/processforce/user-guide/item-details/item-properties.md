@@ -15,7 +15,7 @@ This guide covers how to set up item properties, organize them into groups, refe
 To access Item Properties, navigate to:
 
 :::note Path
-    Administration → Setup → Item Details → Item Properties
+    Administration → Setup → Item Details → Item Property
 :::
 
 ![General](./media/item-properties/item-property-general.webp)
