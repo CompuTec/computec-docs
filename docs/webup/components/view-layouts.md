@@ -22,16 +22,17 @@ Before applying advanced layout changes, an editable view must be created for th
 - **Viewing and modifying control properties** in either *Basic* or *Dynamic* mode.
 
 ### Basic Mode
+
 Allows direct editing of control attributes (e.g., **label**, **visibility**, **mandatory**).  
 Useful for quick adjustments without data bindings.
 
 ### Dynamic Mode
+
 Binds a control’s value to a data source (e.g., *Sales Quotation Total*) using **AE Data API models**.  
 Ideal for context-sensitive UI behavior driven by underlying business logic.
 
 > **Note:**  
 > If a view is not supported by the SAP Web Client extensibility model, the panel displays **“Unsupported view”** and editing options are disabled.
-
 > In certain layouts, subsections may not have visible labels — these sections are referenced by **order index** (the internal GUID is not displayed).
 
 The **Select Control** tool and context menu can be combined with the **Copy GUID** helper for precise parameter references when defining actions.
@@ -45,10 +46,13 @@ The **Select Control** tool and context menu can be combined with the **Copy GUI
 - Making *Posting Date* mandatory dynamically based on business logic.
 
 ![Sowing control](./media/showing_control_selection.png)
+
 *WebUp layout editing panel showing control selection*
 
 ![Side Panel Controls Details](./media/Side_Panel_Controls_Details_02_MoreOptions.jpg)
+
 *Property editor with Basic/Dynamic toggle*
 
 ![SalesOrder_WebUp_ControlDetails_Configured](./media/SalesOrder_WebUp_ControlDetails_Configured.jpg)
+
 *Example of repositioned controls within SAP Web Client*

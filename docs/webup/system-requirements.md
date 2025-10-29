@@ -20,7 +20,7 @@ This section defines the **minimum environment requirements** necessary for prop
 
 ### AppEngine
 
-- **Official release package:** `CompuTec.AppEngine.3.2510.1.msi`  
+- **Official release package:** [`CompuTec.AppEngine.3.2510.1.msi`](/docs/appengine/releases/appengine/download.md)  
 - **SAP Business One Web Client (AE)** must be installed and properly configured
 
 ### Web Browsers Supported
@@ -46,19 +46,15 @@ Refer to the official AppEngine [requirements](https://learn.computec.one/docs/a
 
 ### Local Connectivity
 
-- WebUp communicates with the **AppEngine service** via **HTTP** on the **local machine**  
-  *(default port: `54001`)*
+- WebUp communicates with the **AppEngine service** via **HTTPS**
 
 ### Outbound Access
 
-- The **SAP Business One Web Client endpoint** and **AE API** must be reachable from the client environment.
+- The **SAP Business One Web Client endpoint** and **AppEngine** must be reachable from the client environment.
 
 ### Security
 
-- The add-on **inherits authentication and authorization mechanisms** from the **AppEngine Framework**, including:
-  - AE user session validation  
-  - Role-based access control (RBAC)  
-  - Secure REST API endpoints (`/api/v1/*`)
+- Authorization is seamless, you login to SAP Web Client and WebUp inherits the same authentication session
 
 ---
 

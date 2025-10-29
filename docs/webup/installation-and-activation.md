@@ -35,7 +35,7 @@ The installation process is fully automated and managed within AE. [App`s instal
 
 ### Chrome Browser
 
-For the Chrome browser, please go to the extension [store](https://chromewebstore.google.com/) and install:
+For the Chrome browser, please go to the [extensions store](https://chromewebstore.google.com/) and install:
 
 - **CompuTec WebUp Client** extension for end users.
 - **CompuTec WebUp Manager** extension for consultants and key users.
@@ -46,7 +46,7 @@ Currently, those extensions are not available in the store. Please follow [this]
 
 ### Microsoft Edge Browser
 
-For the Microsoft Edge browser, please go to the extension [store](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home) and install:
+For the Microsoft Edge browser, please go to the [extensions store](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home) and install:
 
 - **CompuTec WebUp Client** extension for end users.
 - **CompuTec WebUp Manager** extension for consultants and key users.
