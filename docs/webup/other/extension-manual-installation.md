@@ -5,10 +5,10 @@ sidebar_position: 2
 
 ## 1. Download
 
-Please download and extract below extensions on the hard drive.
+Please download and extract the extensions below on your hard drive.
 
-- [CompuTec WebUp Client](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpClient_3.0.0.zip)
-- [CompuTec WebUp Manager](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpManager_3.0.0.zip)
+- [CompuTec WebUp Client](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpClient_3.0.1.zip) 3.0.1
+- [CompuTec WebUp Manager](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpManager_3.0.1.zip) 3.0.1
 
 ## 2. Installation in Chrome browser
 
