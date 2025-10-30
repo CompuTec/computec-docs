@@ -10,7 +10,7 @@ Please download and extract the extensions below on your hard drive.
 |Extension Type|Chromium based (Edge,Chrome)|Firefox|
 |--------|-------|----------|
 |**CompuTec WebUp Client**|[3.0.1](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpClient_3.0.1.zip)|[3.0.1](https://download.computec.one/software/appengine/plugins/webup/extensions/firefox/CompuTecWebUpClient_3.0.1.zip)|
-|**CompuTec WebUp Manager**|[3.0.1](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpManager_3.0.1.zip)| -|
+|**CompuTec WebUp Manager**|[3.0.1](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpManager_3.0.2.zip)| -|
 
 ## 2. Installation in Chrome browser
 
