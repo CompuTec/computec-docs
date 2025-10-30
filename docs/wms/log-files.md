@@ -48,7 +48,7 @@ Here is the detailed information on the locations of logs for CompuTec WMS:
     - Add the following code to enable detailed query logging
 
         ```xml
-        <target xsi:type="File" name="fileEventLogForQueries" fileName="${specialfolder:folder=CommonApplicationData}\CompuTec\ProcessForce\Logs\queries ${shortdate}.log" layout=" ${time} ${message} ${stacktrace:format=DetailedFlat:topFrames=5}" />
+        <target xsi:type="File" name="fileEventLogForQueries" fileName="${specialfolder:folder=CommonApplicationData}\CompuTec\Computec WMS\Server\Logs\queries ${shortdate}.log" layout=" ${time} ${message} ${stacktrace:format=DetailedFlat:topFrames=5}" />
         ```
         ```xml
         <logger name="QueryNLogger" minlevel="Trace" writeTo="fileEventLogForQueries" />
@@ -60,7 +60,7 @@ Here is the detailed information on the locations of logs for CompuTec WMS:
 
     - Upload the log file from:
 
-        C:\ProgamData\CompuTec\ProcessForce\Logs\queries
+        C:\ProgamData\CompuTec\CompuTec WMS\Server\Logs\queries
 
             ![Log Files](./media/log-files/logs-06.png)
 
