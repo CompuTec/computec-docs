@@ -85,4 +85,4 @@ After installation, verify that both components — the **AppEngine plugin** and
 
 - Installation and updates within AE are **automated** and **controlled by AppEngine**.  
 - **Support procedures**: For support, please use our [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp)
-- Any feedback is truly welcomed via the Support desk or email at `webupsupport@computec.one`
+- Any feedback is truly welcomed via the [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp)
