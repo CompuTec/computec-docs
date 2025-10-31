@@ -8,7 +8,7 @@ Below are the release notes for CompuTec PDC Plugin, highlighting new features, 
 
 ## CompuTec PFI 4.2510.1
 
-**Release Date - 29 September 2025**
+**Release Date - 29 October 2025**
 
 | Issue Type | Component/s | Release Note |
 | --- | --- | --- |
