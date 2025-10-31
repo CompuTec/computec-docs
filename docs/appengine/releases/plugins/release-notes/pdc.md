@@ -6,6 +6,15 @@ sidebar_position: 3
 
 Below are the release notes for CompuTec PDC Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec PFI 4.2510.1
+
+**Release Date - 29 September 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Bug | PDC | Time synchronization issue occurs and is resolved only after restarting PDC (version 4.2506.1). |
+| Bug | PDC | Confirmation Panel customization is not functioning. |
+
 ## CompuTec PDC 4.2509.1
 
 **Release Date - 03 September 2025**

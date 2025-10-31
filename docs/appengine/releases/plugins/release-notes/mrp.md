@@ -8,6 +8,14 @@ Below are the release notes for CompuTec MRP Plugin, highlighting new features, 
 
 ---
 
+## CompuTec MRP 3.2510.1
+
+**Release Date - 29 September 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Bug | MRP | Issues with Order Recommendation |
+
 ## CompuTec MRP 3.2508.2
 
 **Release Date - 04 August 2025**
