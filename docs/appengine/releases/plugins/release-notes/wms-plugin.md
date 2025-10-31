@@ -14,8 +14,8 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 
 | Issue Type | Component/s | Release Note |
 | - | - | - |
-| Improvement | WMS Plugin | Add support for including Catch Weight Storage Units in the Storage Info section of SAP Business One.|
-| Improvement | Server | Add the option to save Deliveries created from Pick List as Draft documents. |
+| Improvement | WMS Plugin | Added support for including Catch Weight Storage Units in the Storage Info section of SAP Business One.|
+| Improvement | Server | Added the option to save Deliveries created from Pick List as Draft documents. |
 | Improvement | Server | Added a possibility to edit CardCode on SU Info. |
 | Bug | Custom Configuration | Template creation is not functioning correctly in the .net Core version. |
 | Bug | WMS Plugin | Unable to Add Items to Storage Categories (SC) |
