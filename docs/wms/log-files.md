@@ -50,16 +50,16 @@ Here is the detailed information on the locations of logs for CompuTec WMS:
         ```xml
         <target xsi:type="File" name="fileEventLogForQueries" fileName="${specialfolder:folder=CommonApplicationData}\CompuTec\Computec WMS\Server\Logs\queries ${shortdate}.log" layout=" ${time} ${message} ${stacktrace:format=DetailedFlat:topFrames=5}" />
         ```
+        WMS 2.0:
         ```xml
         <logger name="QueryNLogger" minlevel="Trace" writeTo="fileEventLogForQueries" />
         ```
-        
-    - When using **WMS 3.0 (Core)** version, use the following line instead:
-
+        WMS 3.0:
         ```xml
-        <logger name="CompuTec.Core2.DI.Database.*" minlevel="Trace" writeTo="fileEventLogForQueries" />
-        ```
-    - Add this in the configuration file as shown below:
+         <logger name="CompuTec.Core2.DI.Database.*" minlevel="Trace" writeTo="fileEventLogForQueries" />	
+         ```
+
+        in the specified `<target>` and `<logger>` sections of the above-mentioned file:
 
         ![Log Files](./media/log-files/logs-03.png)
 
