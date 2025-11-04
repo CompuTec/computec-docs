@@ -53,10 +53,15 @@ Here is the detailed information on the locations of logs for CompuTec WMS:
         ```xml
         <logger name="QueryNLogger" minlevel="Trace" writeTo="fileEventLogForQueries" />
         ```
+        
+    - When using **WMS 3.0 (Core)** version, use the following line instead:
 
-        in the below file:
+        ```xml
+        <logger name="CompuTec.Core2.DI.Database.*" minlevel="Trace" writeTo="fileEventLogForQueries" />
+        ```
+    - Add this in the configuration file as shown below:
 
-            ![Log Files](./media/log-files/logs-03.png)
+        ![Log Files](./media/log-files/logs-03.png)
 
     - Upload the log file from:
 
