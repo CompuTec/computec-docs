@@ -247,6 +247,35 @@ private _applyFilter() {
 }
 ```
 
+### Specifying key column
+
+For proper handling of of batch requests/responses (especially for pagination and multiselect capabilities) column *Key* is automatically added to the odata response. In $metadata this *Key* field is set as key and is automatically used by UI5. By default a sequential number assigned to each row in the result set, starting from 1. You can specify different column by using *Key* parameter in the request. Below is an example of how to specify 'ItemCode' as key column for Simple Endpoint. You can use same options for Custom Endpoint.
+
+Request URL
+
+```bash
+http://localhost:54000/odata/CustomViews/Views.Simple(DataSource='OITM',Parameters=null,paramType=null,DatePartsColumns=null,Key='ItemCode')?$select=ItemCode%2C%20ItemName%2C%20OnHand&$top=1
+```
+
+Response body
+
+```json
+{
+  "@odata.context": "https://localhost:54001/odata/$metadata#ViewExecutationResult",
+  "value": [
+    {
+      "Key": "1",
+      "No": 1,
+      "ItemCode": "Bottle-01",
+      "ItemName": "Bottle-01",
+      "OnHand": 980.0
+    }
+  ]
+}
+```
+
+In response you can also find *No* column. It is also sequential number assigned for each row. This column is left for backward compatibility. It is recommended to use *Key* column instead.
+
 ### Libraries provided by CompuTec AppEngine
 
 CompuTec AppEngine offers a set of libraries for use in UI5 applications. These libraries are already included in CompuTec AppEngine, so there's no need to add them to the build of your plugin. However, you can install them via npm to obtain the TypeScript definitions.
