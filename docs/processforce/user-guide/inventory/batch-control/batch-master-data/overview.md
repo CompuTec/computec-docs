@@ -30,4 +30,14 @@ The Batch Master Data form comprises several tabs, each serving a specific funct
 
     ![Batch Master Data](./media/overview/batch-master-data.webp)
 
+## Adding UDFs to Batch Master Data
+
+When adding User-Defined Fields (UDFs) to ProcessForce (PF) batch tables, ensure that the UDFs are created with the same name, data type, and length in all of the following locations:
+
+- SAP Batch Details (OBTN)
+- PF Additional Batch Details / Serial–Batch Number Object (@CT_PF_OABT)
+- PickReceipt: Picked Items
+
+Creating the UDFs consistently across these locations ensures that the data remains synchronized with the SAP Batch table at all times.
+
 ---
