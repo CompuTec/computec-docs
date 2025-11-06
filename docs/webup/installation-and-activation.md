@@ -20,16 +20,16 @@ This section describes the **installation and activation workflow** for the **We
 
 ## 1 Prerequisites
 
-**CompuTec AppEngine** must be installed and configured. [Installation](docs/appengine/administrators-guide/configuration-and-administration/installation) & [Configuration](docs/appengine/administrators-guide/configuration-and-administration/configuration) instructions.
+**CompuTec AppEngine** must be installed and configured. [Installation](/docs/appengine/administrators-guide/configuration-and-administration/installation) & [Configuration](/docs/appengine/administrators-guide/configuration-and-administration/configuration) instructions.
 
 ## 2. Company and Web Client Activation
 
-Make sure that the company is active in AppEngine and Web Client is [configured](docs/appengine/administrators-guide/configuration-and-administration/working-with-sap-business-one-web-client).
+Make sure that the company is active in AppEngine and Web Client is [configured](/docs/appengine/administrators-guide/configuration-and-administration/working-with-sap-business-one-web-client).
 
 ## 3. WebUp App Installation
 
 Please install the **WebUp App** via the **AppEngine Store**.  
-The installation process is fully automated and managed within AE. [App`s installation instructions](docs/appengine/administrators-guide/configuration-and-administration/plugins/plugin-installation-process)
+The installation process is fully automated and managed within AE. [App`s installation instructions](/docs/appengine/administrators-guide/configuration-and-administration/plugins/plugin-installation-process)
 
 ## 4. Browser Extension Installation
 

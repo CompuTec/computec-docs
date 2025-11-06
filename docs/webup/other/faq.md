@@ -49,7 +49,7 @@ Yes. It supports both **on-premise** and **cloud** environments, including **pri
 
 **How do I install CompuTec WebUp?**  
 
-You need to [install](docs/appengine/administrators-guide/configuration-and-administration/installation) CompuTec AppEngine 3.0 and download the **CompuTec WebUp App** from the CompuTec AppEngine App Store. You will also need to install **CompuTec WebUp Manager** and **CompuTec WebUp Client** for Google Chrome and Microsoft Edge, respectively, from their extension stores. However, at the time of writing, publication of the extensions in the Google Chrome and Microsoft Edge stores is pending. In the meantime, you can install the browser extensions manually by following the steps in the [installation guide](./extension-manual-installation.md).
+You need to [install](/docs/appengine/administrators-guide/configuration-and-administration/installation) CompuTec AppEngine 3.0 and download the **CompuTec WebUp App** from the CompuTec AppEngine App Store. You will also need to install **CompuTec WebUp Manager** and **CompuTec WebUp Client** for Google Chrome and Microsoft Edge, respectively, from their extension stores. However, at the time of writing, publication of the extensions in the Google Chrome and Microsoft Edge stores is pending. In the meantime, you can install the browser extensions manually by following the steps in the [installation guide](./extension-manual-installation.md).
 :::info
 Refer to the official [installation guide](../installation-and-activation.md) for detailed steps.
 :::
