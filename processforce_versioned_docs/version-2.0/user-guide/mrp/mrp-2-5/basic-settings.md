@@ -70,8 +70,6 @@ If the lead time is for three days, the MRP will issue the purchase or productio
 - For Item with Procurement Method = Buy, ILT can be calculated for Sale document, Purchase document/recommendation, Purchase document/recommendation & Sale documents
 - For Item with Procurement Method = Make, ILT can be calculated for Sale document, Production document/recommendation, Production document/recommendation & Sale documents.
 
-Procurement MethodILT ScopeOutcome1aMakeSaleILT added to Sales document1bMakePurch. / Prod.ILT added to MOR document/recommendation (Supply)1cMakeBothILT added to Sales document and MOR document/recommendation (Secondary Demand)2aBuySaleILT added to Sales document2bBuyPurch. / Prod.ILT added to Purchase document/recommendation2cBuyBothILT added to Sales document and Purchase document/recommendation.
-
 |     | Procurement Method | ILT Scope      | Outcome                                                                        |
 | --- | ------------------ | -------------- | ------------------------------------------------------------------------------ |
 | 1a  | Make               | Sale           | ILT added to Sales document                                                    |

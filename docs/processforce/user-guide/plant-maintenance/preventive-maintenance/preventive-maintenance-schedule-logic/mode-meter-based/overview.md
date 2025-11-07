@@ -23,3 +23,5 @@ Current Triggered Value(n)= Due by Meter Value(n) – Expedite by Meter Units
 This allows the user to define how much in advance the MO will be generated, based on the required meter value for the MO (n). The Expedite by Meter Units specifies how early the MO (in "Work Request" status) should be triggered in relation to the required value of the counter (Due by Meter Value) for the MO(n) run.
 
 Once an MO is generated, the next required meter value (Due by Meter Value (n+1)) for the next MO run is calculated based on the Meter Interval. The rules for calculating the Due by Meter Value and generating the MO depend on the chosen Schedule Type: Fixed, Variable, Fixed(Duplicate).
+
+---

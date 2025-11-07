@@ -15,29 +15,36 @@ This component allows consultants and administrators to extend standard SAP Web 
 ## Available Event Types
 
 ### **On Update**
+
 Executed during record update or validation.  
 Triggered after field values are modified and confirmed within the current object context.  
 Typical use cases include:
+
 - Data validation
 - Recalculation of dependent fields
 - Triggering updates to related objects
 
 ### **On Add**
+
 Executed when a new record is being added.  
 Triggered after mandatory fields are populated but before the object is committed to the database.  
 Common use cases:
+
 - Initializing default values  
 - Assigning numbering sequences  
 - Performing pre-save validations
 
 ### **On Cancel**
+
 Executed when the record creation or editing process is canceled.  
 Allows rollback of unsaved changes, clearing of temporary data, or restoring the interface to its previous state.  
 May also stop or revert custom actions executed within the current session.
 
 ### **On Close**
+
 Executed when the related form or panel is being closed.  
 Typically used for:
+
 - Session finalization  
 - Saving metadata (e.g., editing duration, user info)  
 - Releasing resources  
@@ -77,10 +84,13 @@ Action parameters may reference **model attributes** (e.g., `BusinessPartner.Car
 This enables context-aware confirmations that adapt dynamically to the active record or form.
 
 ![Action def](./media/Action_definition.png)
+
 *WebUp Action definition*
 
 ![Side Panel Action](./media/Side_Panel_Actions.jpg)
+
 *WebUp Actions list showing configured logic events and their activation states*
 
 ![Message](./media/CompuTec-WebUp-Automation-Create-Activity.png)
+
 *Automation confirmation message after activity creation – AppEngine successfully triggered WebUp Action*

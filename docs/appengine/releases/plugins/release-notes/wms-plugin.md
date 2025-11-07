@@ -8,6 +8,55 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 
 ---
 
+## CompuTec WMS Plugin 3.2510.1
+
+**Release Date - 29 October 2025**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Improvement | WMS Plugin | Added support for including Catch Weight Storage Units in the Storage Info section of SAP Business One.|
+| Improvement | Server | Added the option to save Deliveries created from Pick List as Draft documents. |
+| Improvement | Server | Added a possibility to edit CardCode on SU Info. |
+| Bug | Custom Configuration | Template creation is not functioning correctly in the .net Core version. |
+| Bug | WMS Plugin | Unable to Add Items to Storage Categories (SC) |
+| Bug | AE Plugins | WMS Plugin installation fails due to incorrect SQL syntax. |
+| Bug | Server | Info message “Production receipt 0 was successfully created” appears, but no corresponding document is actually created in SAP. |
+| Bug | Server | The default Inventory UoM for Catch Weight items is incorrectly set. |
+| Bug | Client | Values from Delivery Line Fields are not correctly transferred to WMS, and custom fields (UDFs) are not included in the synchronization. |
+| Bug | Server | Unable to modify data in the Storage Unit (SU) header within the Warehouse Info – SU Info screen. |
+| Bug | SAP AddOn | SlpCode is not copied to the Delivery document. |
+| Bug | Server | The CardCode field is missing when creating a New Storage Unit (SU) in Stock Transfer. |
+| Bug | Client Android | App crashes in Stock Counting caused by EmojiCompat initialization error. |
+| Bug | Server | Splitting a line into two (even with the same batch and location) prevents delivery creation and returns the error “Cannot add row (…).” |
+| Bug | Server | Receiving a batch from a different bin than selected leaves the batch available in the original bin, and the SU remains visible in SU Info. |
+| Bug | Server | Error message occurred in Delivery from Sales Order: "Packed item Active-Item-02 is not part of the delivery (UoM 9, items per unit 1.000000)" |
+| Bug | Client | GRPO scanning behavior does not function as expected. |
+| Bug | Server | Pick and Pack: Pick list generated from SAP Production Order appears empty in WMS. 
+| Bug | Server | WMS Settings fail to notify users that ODBC Driver 17 is required. |
+| Bug | Server | Error message occurred in Pick and Pack: "This SU is currently in production stage. Please complete the Production Receipt before proceeding." |
+| Bug | Server | Delivery from Pick List: Data entered in UDFs is not saved to database. |
+| Bug | Server | GRPO filter field displays all matching values using LIKE instead of showing only the exact entered value. |
+| Bug | Server | Delivery fails with error message: “Index was out of range. Must be non-negative and less than the size of the collection.” |
+| Bug | Client | Pick Receipt Batch Creation fails due to incorrect or missing MOR Number parameter. |
+| Bug | Client | Application freezes when attempting to create a document. |
+| Bug | Client Android | The quantity in the quantity field is not fully visible. |
+| Bug | Client Android | The Save button is missing on the Storage Unit (SU) screen when creating a Delivery from Pick List. |
+| Bug | Server | In WMS Stock Count, when the UoM is displayed as Box, the system incorrectly treats the counted quantity as Pieces. |
+| Bug | Client | Removing a Storage Unit (SU) from a Delivery created from Pick List unintentionally modifies data in internal tables. |
+| Bug | Client | In Delivery from Pick List, an incorrect window is displayed when selecting an existing Storage Unit (SU). |
+| Bug | Server | Data entered in Storage Unit (SU) fields is not saved in Pick and Pack. |
+| Bug | Server | Storage Unit (SU) additional fields are not visible in the interface. |
+| Bug | Client | The system does not copy all Address Field contents from the Sales Order to the Delivery document. |
+| Bug | Client | When releasing for production, the system does not display the window to select the index with the serial number. |
+| Bug | Server | Updating the CT License Server address in AppEngine is not reflected in the WMS configuration file. |
+| Bug | Client | Error message occurred in GRPO: "Illegal value entered." |
+| Bug | Client | Date field values disappear after selecting a Bin. |
+| Bug | Server | The ItemName field causes empty output in print layouts during document printing. |
+| Bug | Client | Incorrect quantities are displayed and saved in the Delivery from Pick List document. |
+| Bug | Client | In GRPO SU Wizard, the Bin Location filter is not functioning correctly. |
+| Bug | Client | Error message occurred while updating WMS Settings: "Access to the path'C:\ProgramData\CompuTec\CompuTecWMS\Server\WMSServerConfiguration.json' is denied. Please try again. |
+| Bug | Server | Incorrect Storage Unit (SU) quantity calculation. |
+
 ## CompuTec WMS Plugin 3.2509.2
 
 **Release Date - 02 September 2025**

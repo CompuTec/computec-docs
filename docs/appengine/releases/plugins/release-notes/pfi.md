@@ -8,6 +8,16 @@ Below are the release notes for CompuTec PFI Plugin, highlighting new features, 
 
 ---
 
+## CompuTec PFI 3.2510.1
+
+**Release Date - 29 October 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Improvement | PFI | Added display of success and failure counts during PFI import to SAP. |
+| Improvement | PFI | Enable automatic download of “ImportReport” in PFI when the remote desktop session disconnects or CompuTec AppEngine token expires. |
+| Bug | PFI | Fixed error "The node count limit of '100' has been exceeded" occurring during data load in PFI. |
+
 ## CompuTec PFI 4.3509.1
 
 **Release Date - 19 September 2025**

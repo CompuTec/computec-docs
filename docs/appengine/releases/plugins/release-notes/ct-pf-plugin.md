@@ -8,6 +8,41 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 
 ---
 
+## CompuTec.ProcessForce 3.2510.1
+
+**Release Date - 29 October 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Improvement | Scheduling | Schedule Manager – “Continue on Break” Functionality. |
+| Improvement | Manufacturing Order | Documents section and Actual Quantity in Manufacturing Order Header is refreshing automatically. |
+| Improvement | Common Functions | Item Details - Added Sorting by Active Status |
+| Improvement | Reports | An issue was identified where print layouts installed by PF .NET Core could not be opened correctly. Users encountered layout loading errors and inconsistencies in layout naming. |
+| Improvement | Common Functions | Added additional logging for Quality Control test creation. |
+| Bug | WMS Plugin | Unable to Add Items to Storage Categories (SC). |
+| Bug | PFI | Error message occurred: "Query:SELECT "Code" FROM "@CT_PF_OITC" WHERE "HasBOM" = false LIMIT 1 invalid column name: HasBOM: line 1 col 40 (at pos 39)" |
+| Bug | Production Costing | Unit Prices Not Returned in Local Currency for Serial/Batch Valuation Method. |
+| Bug | Batches | Batch status was always picked from General Settings, ignoring the defined configuration hierarchy. |
+| Bug | Reports | Unable to open Print Layout Report from Production Process Form. |
+| Bug | Scheduling | Move Task functionality is not Working. |
+| Bug | Routings | Unable to Select Operations in Advanced Operation Relations. |
+| Bug | Manufacturing Order | Error message occurred in Goods Receipt:  "1470000368 - The quantity allocated to bin locations must be positive" |
+| Bug | Manufacturing Order | Error message occurred: “Action stopped by add-on (UI_API -7780) [Message 66000-152]” on Maintenance Order Update |
+| Bug | Common Functions | Icon is disabled for Crystal Reports and hence it is not available in ProcessForce Forms. |
+| Bug | Manufacturing Order | Maintenance Order displays incorrect Operation Times. |
+| Bug | Inventory | Web API Issue with Pick Receipt Transaction. |
+| Bug | Manufacturing Order | MOR Update Error: “The conversion of a datetime2 data type to a datetime data type resulted in an out-of-range value” |
+| Bug | Bill of Materials | An issue was identified where the system displayed the following message during a Bill of Materials (BOM) update: “The update of Bill of Materials data has failed. One or more errors occurred. (Cannot change document revision code00 for item 2252-0263-001000 — it is obsolete.)” |
+| Bug | Batches | An issue was identified where the “Batch Status Changer” job displayed the error message: “This job does not have any configurable settings.” |
+| Bug | Manufacturing Order | Incorrect Quantity Issue during Backflush. |
+| Bug | Scheduling | Error message occurred in Manufacturing Order creation through scheduling board: "There are invalid dates at Manufacturing Order resource, in sense that start date is after end date. DocNum=0, U_RtgOprCode=1, U_RtgOprRscCode=1)" |
+| Bug | Scheduling | Title: Move Task function causes overlapping tasks on Scheduling Board. |
+| Bug | Synchronization | Synchronize MORs show Error message: "Error: 0xFFFFFFFF" |
+| Bug | Batches | Unable to delete Batch in Pick Receipt when reducing Picked Quantity. |
+| Bug | Manufacturing Order | Error “Data Table – Exceeds Column Data Size `[66000-148]`” on Batch Selection Screen |
+| Bug | Manufacturing Order | Orderless Production - Error “The input string '' was not in a correct format” |
+| Bug | Inventory | Inventory Data Mismatch for Certain Items |
+
 ## CompuTec.ProcessForce 3.2509.2
 
 **Release Date - 25 September 2025**

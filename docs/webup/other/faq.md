@@ -106,14 +106,15 @@ Both **perpetual** and **subscription** models are offered.
 
 **What is the price for the software?**  
 Pricing aligns with the **SAP Business One regional price list**.  
-Example for the **EMEA region**:  
+Example for the **EMEA region**:
+
 - Initial bundle (5 users): **1,350 EUR perpetual** or **46 EUR/month** subscription.  
 - Additional bundles (5 users): **675 EUR perpetual** or **23 EUR/month**.  
-For details, contact your SAP Partner or email **webup@computec.one**.
+For details, contact your SAP Partner or email [**webup@computec.one**](mailto:webup@computec.one).
 
 **Do I need to be a CompuTec Partner to sell WebUp?**  
 Yes. You must hold a valid **CompuTec Partnership Agreement**.  
-To apply, contact **partners@computec.one**.
+To apply, contact [**partners@computec.one**](mailto:partners@computec.one).
 
 **As a CompuTec Partner, do I need a license for demo or test environments?**  
 No. Partners may use WebUp **for free** in demo or testing environments.
@@ -135,7 +136,7 @@ No. Licensing is **per user**, not per database.
 Yes — preview versions will include **bug fixes and feature enhancements**.
 
 **Is a public product roadmap available?**  
-Yes — the roadmap is published in the CompuTec Documentation Center.
+Yes — the roadmap is published in the [CompuTec Documentation Center](https://trello.com/b/ePvajGq6/computec-webup-roadmap).
 
 **Can I raise a support ticket or provide feedback?**  
 Yes — support and feedback tickets can be submitted through the [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp).

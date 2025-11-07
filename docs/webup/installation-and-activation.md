@@ -10,7 +10,7 @@ This section describes the **installation and activation workflow** for the **We
 
 ## Overview
 
-**WebUp** Solution consists of a few components:  
+The **WebUp** solution consists of three components:  
 
 - **CompuTec WebUp App** – handles all customization and automation logic and stores persistent configuration settings.  
 - **CompuTec WebUp Manager** – provides the user interface for creating, editing, and testing configurations.  
@@ -18,67 +18,60 @@ This section describes the **installation and activation workflow** for the **We
 
 ---
 
-## 1 Prerequisites
+## 1. Prerequisites
 
-**CompuTec AppEngine** must be installed and configured. [Installation](/docs/appengine/administrators-guide/configuration-and-administration/installation) & [Configuration](/docs/appengine/administrators-guide/configuration-and-administration/configuration) instructions.
+**CompuTec AppEngine** must be installed and configured. Follow the [Installation](/docs/appengine/administrators-guide/configuration-and-administration/installation) & [Configuration](/docs/appengine/administrators-guide/configuration-and-administration/configuration) instructions.
 
 ## 2. Company and Web Client Activation
 
-Make sure that the company is active in AppEngine and Web Client is [configured](/docs/appengine/administrators-guide/configuration-and-administration/working-with-sap-business-one-web-client).
+Make sure that the company is active in AppEngine and the Web Client is [configured](/docs/appengine/administrators-guide/configuration-and-administration/working-with-sap-business-one-web-client).
 
 ## 3. WebUp App Installation
 
 Please install the **WebUp App** via the **AppEngine Store**.  
-The installation process is fully automated and managed within AE. [App`s installation instructions](/docs/appengine/administrators-guide/configuration-and-administration/plugins/plugin-installation-process)
+The installation process is fully automated and managed within AE. Follow the [app installation instructions](/docs/appengine/administrators-guide/configuration-and-administration/plugins/plugin-installation-process).
 
 ## 4. Browser Extension Installation
 
 ### Chrome Browser
 
-For the Chrome browser please go to the extension [store](https://chromewebstore.google.com/) and install:
+For the Chrome browser, please go to the [extensions store](https://chromewebstore.google.com/) and install:
 
 - **CompuTec WebUp Client** extension for end users.
 - **CompuTec WebUp Manager** extension for consultants and key users.
 
 :::info
-Currently those extensions are not available in the store. Please follow [this](./other/extension-manual-installation.md) to install them manually until the Google team validates the extension.
+Currently, these extensions are not available in the store. Please follow [this guide](./other/extension-manual-installation.md) to install them manually until the Google team validates the extensions.
 :::
 
 ### Microsoft Edge Browser
 
-For the Microsoft Edge browser please go to the extension [store](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home) and install:
+For the Microsoft Edge browser, please go to the [extensions store](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home) and install:
 
 - **CompuTec WebUp Client** extension for end users.
 - **CompuTec WebUp Manager** extension for consultants and key users.
 
 :::info
-Currently those extensions are not available in the store. Please follow [this](./other/extension-manual-installation.md) to install them manually until the Microsoft team validates the extension.
+Currently, these extensions are not available in the store. Please follow [this guide](./other/extension-manual-installation.md) to install them manually until the Microsoft team validates the extensions.
 :::
 
-## 5. Important informations
+## 5. Important Information
 
-### Validate if CORS are correct in SAP Web Client
+### Validate CORS Configuration in SAP Web Client
 
-During the activation of a compan in AppEngine system displays instructions how to set up the CORS in Web CLient. Please make sure that all is correctly configured.
+When activating a company in AppEngine, the system provides instructions for setting up CORS for the Web Client. Please ensure the configuration is correct and you have followed the **Content Security Policy** setup for the SAP Web Client.
+![Constent securit policy help screen in appengine activation process](./media/cors-setup-ae.png)
 
-### Validate if Developer Mode is enabled SAP Web Client when Customizing User Interface
+### Validate Developer Mode in SAP Web Client When Customizing User Interface
 
-When customizing user interface using **CompuTec WebUp Manager**, please make sure that in Web Client Developer Mode is Enabled.
+When customizing the user interface with CompuTec WebUp Manager, ensure **Developer Mode** is enabled in the Web Client.
 ![developer mode in SAP Web Client is enabled](./media/web_client_dev_mode.png)
 
 ## Plugin Update
 
 Updates are handled directly through the **AE Store**, following the same workflow as installation.  
 The process preserves **assignments** and **configuration profiles**.
-For the new versions of Browser extension you will be prompted after instalation.
-
----
-
-:::info
-Users are expected to follow their standard browser extension installation policies or consult official browser vendor documentation.
-:::
-
-*(Optional insert Fig. 4.4-1 — Conceptual diagram: Browser Extension ↔ AppEngine ↔ SAP Web Client)*
+For new versions of the browser extension, you will be prompted after installation.
 
 ---
 
@@ -86,21 +79,10 @@ Users are expected to follow their standard browser extension installation polic
 
 After installation, verify that both components — the **AppEngine plugin** and the **browser extension** — are active and communicating correctly.
 
-### Verification Checklist
-
-| Step | Action | Expected Result |
-|------|---------|----------------|
-| 1 | Launch SAP Business One Web Client | WebUp icon visible in the toolbar |
-| 2 | Launch SAP Business One Web Client | In the Extensions you can see the WebUp tile |
-| 3 | Open the WebUp panel | Connection indicator = **Active (green)** |
-| 4 | Apply a test configuration | Toast message **"Configuration applied"** |
-
-*(Insert Fig. 4.5-1 — WebUp connection status indicator in toolbar)*  
-*(Insert Fig. 4.5-2 — "Configuration applied" confirmation toast)*
-
 ---
 
 ## Notes and Responsibilities
 
 - Installation and updates within AE are **automated** and **controlled by AppEngine**.  
-- **Support procedures**: Registered CompuTec partners should follow the standard support procedures used for other CompuTec solutions. Users without access to our JIRA portal can request support via email at [support@computec.one](mailto:support@computec.one)
+- **Support procedures**: For support, please use our [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp)
+- Any feedback is truly welcomed via the [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp)
