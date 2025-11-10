@@ -22,7 +22,6 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 | Bug | Scheduling | SAP becomes unresponsive (frozen) after executing Recalculate Lead Time. |
 | Bug | Scheduling | The “Released” status is not updated in the Scheduling Board. |
 
-
 ## CompuTec.ProcessForce 3.2510.1
 
 **Release Date - 29 October 2025**
