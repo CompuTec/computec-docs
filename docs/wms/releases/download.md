@@ -66,7 +66,7 @@ If you use Comp uTecProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to i
           <p>For CompuTec WMS to work with SAP Business One and CompuTec ProcessForce:</p>
           <ul>
             <li>SAP Business One 10.0</li>
-            <li>CompuTec ProcessForce from 10.0 R1 to 10.0 (R32) </li>
+            <li>CompuTec ProcessForce from 10.0 R1 to 10.0 (R34) </li>
             <li>CompuTec ProcessForce API in related version</li>
           </ul>
         </li>
