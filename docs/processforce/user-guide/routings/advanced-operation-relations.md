@@ -4,11 +4,24 @@ sidebar_position: 5
 
 # Advanced Operation Relations
 
-In earlier versions, operations could only be set up in a strict sequential order. However, with the introduction of Advanced Operation Relations, it is now possible to establish more complex dependencies between operations, allowing for greater flexibility and efficiency in production planning.
+In earlier versions of CompuTec ProcessForce, operations within a routing could only follow a strict sequential order - one operation had to finish before the next could begin.
+The Advanced Operation Relations feature introduces more flexible and intelligent dependencies between operations, allowing multiple sequences, overlaps, and conditional starts. This enhances production planning, scheduling efficiency, and resource utilization.
 
 ---
 
-You can configure operation relations by right-clicking on an operation in the following locations:
+## When to Use
+
+Use Advanced Operation Relations when:
+
+- Multiple operations can run in parallel or partially overlap.
+- The start of an operation depends on specific conditions (e.g., another operation finishing or producing a certain quantity).
+- You want to optimize production flow and reduce idle time or bottlenecks.
+
+---
+
+## How to Configure
+
+You can define or edit operation relations directly from the following screens by right-clicking on an operation:
 
 :::note Path
     - Production → Routing → Routings → Operations tab
@@ -34,48 +47,35 @@ Standard sequence:
 
 Available options:
 
-**Relation Type**:
+## Relation Types
 
-- **None**: the option is not used.
-- **First Operation Finish**: a specified operation starts when the first chosen on Relation Operation form Operation is finished.
+Each relation type defines when a specific operation can begin.
 
-Example: Settings for Operation 04:
-
-![Example](./media/advanced-operation-relations/advanced-relations-example-1.webp)
-
-Result: Operation 04 starts when Operation 01 is finished
-
-- **Last Operation Finish**: a specified operation starts when the last of the chosen Relation Operation form Operation is finished.
-
-![Example](./media/advanced-operation-relations/advanced-relations-example-2.webp)
-
-Result: Operation 04 starts when Operation 02 is finished.
-
-**Is Starting Operation**: by selecting this option, an operation is designated as a starting operation, creating parallel sequences in the production process.
-
-Example: for Operation 03 **Is Starting Operation** checkbox is checked:
-
-![Is Starting Operation](./media/advanced-operation-relations/is-starting-operation.webp)
-
-**Overloading**: a specified Operation starts when the chosen on Operation Relation form Operation produces a specified quantity
+| Relation Type | Description | Example |
+| --- | --- | --- |
+| None | No dependency is defined. | The operation starts as per the standard sequence. |
+| First Operation Finish | The operation starts when the first of the selected operations is finished. | Operation 04 starts when Operation 01 finishes. <br/>![Example](./media/advanced-operation-relations/advanced-relations-example-1.webp) |
+| Last Operation Finish | The operation starts when the last of the selected operations is finished. | Operation 04 starts when Operation 02 finishes. <br/>![Example](./media/advanced-operation-relations/advanced-relations-example-2.webp) |
+| Is Starting Operation | Marks an operation as a starting point, creating a parallel production path. | Operation 03 is marked as a starting operation. <br/>![Is Starting Operation](./media/advanced-operation-relations/is-starting-operation.webp) |
+| Overloading | The operation starts once another operation has produced a defined quantity. | Useful when subsequent processes can begin as partial output becomes available. |
 
 ### Advance Operation Relations Indicator
 
-To check if an operation has advanced relations assigned, review the values in the following columns:
+To quickly identify whether an operation has advanced relations assigned, review the relation indicators in the operations list.
 
 ![Advance indication](./media/advanced-operation-relations/advance-relation-indication.webp)
 
-**Advance Relation Types**:
-
-- **SO** – Is Starting Operation
-- **FF** – First Operation Finish
-- **LF** – Last Operation Finish
+| Indicator | Meaning |
+| --- | --- |
+| SO | Is Starting Operation |
+| FF | First Operation Finish |
+| LF | Last Operation Finish |
 
 ## Operation Relation Map
 
-To better understand operation dependencies, you can visualize the connections through an Operation Relation Map.
+To get a graphical view of how operations are interconnected, use the Operation Relation Map.
 
-You can reach this feature by right-clicking on Routing in the following locations
+You can open the relation map by right-clicking on a routing in either of the following locations:
 
 :::info Path
     Production → Manufacturing Order → Manufacturing Orders → Operations tab → Operations tab

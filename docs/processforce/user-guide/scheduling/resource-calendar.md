@@ -14,13 +14,27 @@ To access the Resource Calendar, navigate through the following path:
     Production → Routings → Resource Calendar
 :::
 
+## Purpose
+
+Use the Resource Calendar to:
+
+- Define and track working hours for each resource.
+- Record exceptions such as overtime or added capacity.
+- Manage holidays and non-working days.
+- Apply and maintain consistent scheduling using calendar templates.
+
+---
+
 ## Resource Calendars
 
 A Resource Calendar is automatically created when a resource is added.
 
-You can access the Resource Calendar either through the path mentioned above or by clicking the yellow arrow next to the Resource Calendar field.
+You can open it:
 
-![Resource Calendar Yellow Arrow](./media/resource-calendar/resource-calendar-yellow-arrow.webp)
+- Through the navigation path above, or
+- By clicking the yellow arrow beside the Resource Calendar field.
+
+    ![Resource Calendar Yellow Arrow](./media/resource-calendar/resource-calendar-yellow-arrow.webp)
 
 ## Resource Calendar tabs
 
@@ -28,39 +42,65 @@ You can access the Resource Calendar either through the path mentioned above or 
 
 ![Resource Calendar Working Hours](./media/resource-calendar/resource-calendar-working-hours.webp)
 
-The Working Hours tab allows you to define the working hours for each day of the week. You can set multiple work periods within a single day. Once you set the "From Time and To Time", the Total Time is automatically calculated. The total working hours for the week are displayed in the Total Working Time field.
+The Working Hours tab defines the standard weekly schedule for the resource.
+
+- Set multiple work periods per day using From Time and To Time fields.
+- The system automatically calculates the Total Time for each period.
+- The total working time for the entire week appears in the Total Working Time field.
+
+This setup ensures accurate scheduling and prevents resource overloading.
 
 ### Exceptions
 
 ![Resource Calendar Exceptions](./media/resource-calendar/resource-calendar-exceptions.webp)
 
-Exceptions represent additional work or capacity that extends the resource's capabilities. This feature can be used to handle overwork situations, allowing you to increase a resource's capacity.
+Exceptions are used to extend a resource’s working capacity temporarily — for instance, during peak production or overtime scenarios.
 
-You can define the date and time for each exception, along with remarks explaining the reason for the exception.
+Each exception record includes:
 
-By clicking the "You Can Also" button and selecting Remove past exceptions, you can delete previously set exceptions.
+- Date and Time of the exception.
+- Remarks for context or justification.
 
-Alternatively, clicking the You Can Also button and choosing Create exceptions based on current working days till... will allow you to populate the Exceptions list with workdays (and specified hours) up until the date entered in the Till Date field.
+You can manage exceptions through the You Can Also button:
+
+- Remove past exceptions – Deletes previous entries automatically.
+- Create exceptions based on current working days till... 
+– Duplicates current workday settings until a specified Till Date.
+
+This flexibility helps manufacturers easily manage capacity adjustments.
 
 ### Holidays
 
 ![Resource Calendar Holidays](./media/resource-calendar/resource-calendar-holidays.webp)
 
-In this section, you can define one-day time-offs and add remarks related to them.
+The Holidays tab defines non-working days for a resource, such as company holidays or planned time-offs.
 
-By clicking the "You Can Also" button and selecting Copy a list of Holidays defined in the system, you can automatically populate the Holidays list with predefined holiday data.
+You can:
 
-![Resource Calendar Holidays Update](./media/resource-calendar/resource-calendar-holidays-update.webp)
+- Add holidays manually and include remarks.
+- Use the You Can Also → Copy a list of Holidays defined in the system option to import predefined holiday data.
 
-Holiday dates assigned to a company can be accessed through the following menu path: Administration → System Initialization → Company Details → Accounting tab → Holidays. From here, you can also define new dates that can be later assigned. This is a feature available in SAP Business One.
+    ![Resource Calendar Holidays Update](./media/resource-calendar/resource-calendar-holidays-update.webp)
+
+To access Holidays, navigate to:
+
+:::info Path
+Administration → System Initialization → Company Details → Accounting tab → Holidays
+:::
+
+Here, new holidays can also be created for assignment to resources.
 
 ## Resource Calendar Update Tool
+
+To access Calendar Updates, navigate to:
 
 :::info Path
     Production → Routings → Calendar Updates
 :::
 
-You can apply a predefined Resource Calendar Template to a specific resource, populating the corresponding Resource Calendar with the template's data. This allows you to assign a template to multiple Resource Calendars simultaneously.
+The Resource Calendar Update Tool allows you to assign a predefined calendar template to multiple resources simultaneously.
+
+This ensures scheduling consistency across machines or work centers.
 
 ### Resource Calendar Template
 
@@ -72,7 +112,13 @@ To create a template, go to:
 
 ![Resource Calendar Template](./media/resource-calendar/resource-calendar-template.png)
 
-You can create a Resource Calendar Template, which can later be assigned to a specific resource. Simply complete the required fields (similar to creating a Resource Calendar) and click the "Add" button.
+To Create a Template:
+
+1. Open the Resource Calendar Template window.
+2. Enter the required working hours, exceptions, and holidays (similar to a regular Resource Calendar).
+3. Click Add to save the template.
+
+These templates can later be applied to multiple resources through the Calendar Update Tool, ensuring uniform scheduling and reducing manual configuration.
 
 ### Update
 
