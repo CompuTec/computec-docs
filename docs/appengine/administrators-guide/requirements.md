@@ -20,13 +20,13 @@ If you are upgrading from **CompuTec AppEngine 2.0** to **CompuTec AppEngine 3.0
 
 | Resource/Application | Minimal Version | Note |
 | --- | --- | --- |
-| Memory (RAM) | 2GB | You may need to adjust the RAM based on the number of plugins and background processes running. For production environments, we recommend a minimum of **8GB**. |
-| Disc Space | 1GB | - |
+| Memory (RAM) | 2 GB | You may need to adjust the RAM based on the number of plugins and background processes running. For production environments, we recommend a minimum of **8 GB**. |
+| Disc Space | 1 GB | - |
 | ASP.NET Core Runtime | 8.0.4 | - |
 | HANA Server Version | SAP HANA Enterprise Edition 2.0 SPS 05, Revision 059.09 (minimum supported version: 2.17.22). | For SAP Business One version for HANA |
-| SQL Server Version | SQL Server 2012 | For SAP Business One |
-| Operating System | Windows x64 | - |
-| SAP Business One Version | SAP Business One 10.0 FP 2408 | We recommend installing latest version. |
+| SQL Server Version | SQL Server 2016 | For SAP Business One |
+| Operating System | Windows 10 x64 | - |
+| SAP Business One Version | SAP Business One 10.0 FP2408 | We recommend installing latest version. |
 | SAP Business One DI API | According to SAP Business One version x64 | - |
 | CompuTec License Server | Recent version recommended | - |
 
