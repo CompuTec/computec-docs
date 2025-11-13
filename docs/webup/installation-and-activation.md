@@ -1,89 +1,105 @@
----
-sidebar_position: 4
----
+--- 
+
+sidebar_position: 4 
+
+--- 
 
 # Installation and Activation
 
-This section describes the **installation and activation workflow** for the **WebUp extension** within the **CompuTec AppEngine Framework**.
-
----
+This guide walks you through installing and activating the **CompuTec WebUp extension** within the **CompuTec AppEngine Framework**.
 
 ## Overview
 
-The **WebUp** solution consists of three components:  
+The CompuTec WebUp solution is made up of three key components:
 
-- **CompuTec WebUp App** – handles all customization and automation logic and stores persistent configuration settings.  
-- **CompuTec WebUp Manager** – provides the user interface for creating, editing, and testing configurations.  
-- **CompuTec WebUp Client** – extends the SAP Business One Web Client where the standard extensibility framework is limited.  
+- **CompuTec WebUp App**: Handles customization ana automation logic, and it stores configuration settings.
+- **CompuTec WebUp Manager**: Provides a user interface for creating, editing, and testing configurations.
+- **CompuTec WebUp Client**: Extends the SAP Business One Web Client where the standard extensibility framework is limited.
 
----
+## Before you start
 
-## 1. Prerequisites
+Before installing CompuTec WebUp, make sure the following prerequisites are met:
 
-**CompuTec AppEngine** must be installed and configured. Follow the [Installation](/docs/appengine/administrators-guide/configuration-and-administration/installation) & [Configuration](/docs/appengine/administrators-guide/configuration-and-administration/configuration) instructions.
+- CompuTec AppEngine is installed and configured. Follow the [installation](/docs/appengine/administrators-guide/configuration-and-administration/installation) and [configuration](/docs/appengine/administrators-guide/configuration-and-administration/configuration) guides for detailed instructions.
+- The company is active in AppEngine, and the SAP Web Client is configured. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/working-with-sap-business-one-web-client).
 
-## 2. Company and Web Client Activation
+## Step 1: Install the WebUp App
 
-Make sure that the company is active in AppEngine and the Web Client is [configured](/docs/appengine/administrators-guide/configuration-and-administration/working-with-sap-business-one-web-client).
+To install the WebUp App directly from the AppEngine Store, follow the [app installation instructions](/docs/appengine/administrators-guide/configuration-and-administration/plugins/plugin-installation-process).  
+The installation process is fully automated and managed within AppEngine.
 
-## 3. WebUp App Installation
+## Step 2: Configure CORS in the SAP Web Client
 
-Please install the **WebUp App** via the **AppEngine Store**.  
-The installation process is fully automated and managed within AE. Follow the [app installation instructions](/docs/appengine/administrators-guide/configuration-and-administration/plugins/plugin-installation-process).
+When activating your company in AppEngine, set up CORS (Cross-Origin Resource Sharing) for the Web Client:
 
-## 4. Browser Extension Installation
+1. In the **AppEngine Administration Panel**, go to **Configuration** > **Advanced Configuration**.  
+![screen showing where to find advanced configuration when setting up CORS process](./media/1-webup-cors-config.png)  
+2. In the **CORS Allowed Origins** field, enter your **SAP Web Client address**.  
+![Advanced configuration help screen showing where to enter the web client CORS address](./media/2-webup-config-cors-address.png)
+3. Restart **AppEngine** to apply changes.
 
-### Chrome Browser
+## Step 3: Set up Content Security Policy
 
-For the Chrome browser, please go to the [extensions store](https://chromewebstore.google.com/) and install:
+Ensure that the Content Security Policy (CSP) configuration in the SAP Web Client includes all required entries.  
+It’s pre-filled with basic data, and you’ll have to add your own CSP entries:
 
-- **CompuTec WebUp Client** extension for end users.
-- **CompuTec WebUp Manager** extension for consultants and key users.
+1. In the **AppEngine Administration Panel**, navigate to **System** > **System Details**.  
+![System Details help screen in CSP configuration process](./media/3-webup-config-csp.png)  
+2. Click on the **Required CSP Entries for Web Client** link.  
+![A help screen showing where to find the link to the required CSP entries in CSP configuration process](./media/4-webup-config-csp-entries-link.png)
+3. Here, you can find all the required entries for your Consent Security Policy.  
+![A help screen showing where to find the required CSP entries in CSP configuration process](./media/5-webup-config-csp-entries.png)
+4. Copy the entries and close the window.
+5. Open **SAP Business One Web Client** and click on your profile icon in the upper right corner of the interface.  
+![A help screen showing where to find your profile icon in SAP Business One Web Client](./media/6-webup-profile-settings-sapb1-menu.png)
+6. Navigate to **Settings** > **General Settings**.  
+![A help screen showing where to find General Settings in SAP Business One Web Client](./media/7-webup-general-settings-sapb1-menu.png)
+7. Paste the copied entries to the **Content Security Policy** field.  
+![A help screen showing where to paste the required CSP entries in CSP configuration process](./media/8-webup-config-paste-csp-entries.png)
+8. Refresh the **SAP Business One Web Client** page to apply the changes.
 
-:::info
-Currently, these extensions are not available in the store. Please follow [this guide](./other/extension-manual-installation.md) to install them manually until the Google team validates the extensions.
-:::
+## Step 4: Enable Developer Mode
 
-### Microsoft Edge Browser
+If you plan to customize the user interface using **CompuTec WebUp Manager**, you must enable **Developer Mode** in the SAP Web Client.
 
-For the Microsoft Edge browser, please go to the [extensions store](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home) and install:
+1. Click on your profile icon in the upper right corner of the SAP Web Client interface and choose **Settings**.  
+![A help screen showing where to find Settings tab in SAP Business One Web Client](./media/9-webup-profile-settings-sapb1-menu.png)
+2. Go to **Extensibility**.  
+![A help screen showing where to find Extensibility tab in SAP Business One Web Client](./media/10-webup-profile-settings-extensibility-developer-mode.png)
+3. Turn on the **Developer Mode** toggle.  
+![A help screen showing where to find Developer Mode in SAP Business One Web Client](./media/11-webup-config-turn-on-developer-mode.png)
+4. Click **Save**.
 
-- **CompuTec WebUp Client** extension for end users.
-- **CompuTec WebUp Manager** extension for consultants and key users.
+## Step 5: Install browser extensions
 
-:::info
-Currently, these extensions are not available in the store. Please follow [this guide](./other/extension-manual-installation.md) to install them manually until the Microsoft team validates the extensions.
-:::
+You’ll need to install two extensions:
 
-## 5. Important Information
+- **CompuTec WebUp Client** – for end users
+- **CompuTec WebUp Manager** – for consultants and key users
 
-### Validate CORS Configuration in SAP Web Client
+::: info[Note]
+These extensions are currently **not available in public stores**.
+Install them manually using the provided installation package and this guide until they are validated by Google Chrome, Mozilla Firefox and Microsoft Edge. :::  
 
-When activating a company in AppEngine, the system provides instructions for setting up CORS for the Web Client. Please ensure the configuration is correct and you have followed the **Content Security Policy** setup for the SAP Web Client.
-![Constent securit policy help screen in appengine activation process](./media/cors-setup-ae.png)
+## Step 6: Verify integration
 
-### Validate Developer Mode in SAP Web Client When Customizing User Interface
+After installation, confirm that both the AppEngine plugin and the browser extension are active and communicating.
 
-When customizing the user interface with CompuTec WebUp Manager, ensure **Developer Mode** is enabled in the Web Client.
+1. Pin the WebUp extension to your browser toolbar for easy access.
+2. Navigate to the SAP Web Client page.
+3. Click the WebUp extension icon to activate the integration.
 
-![developer mode in SAP Web Client is enabled](./media/11-webup-config-turn-on-developer-mode.png)
+![A help screen showing where to find the WebUp extension in your browser toolbar](./media/12-webup-config-browser-extension.png)
 
-## Plugin Update
+::: info[Note]
+If you were already on the SAP Web Client page before installing the WebUp browser extension, refresh the page before activating the extension.:::
 
-Updates are handled directly through the **AE Store**, following the same workflow as installation.  
-The process preserves **assignments** and **configuration profiles**.
-For new versions of the browser extension, you will be prompted after installation.
+## Notes and responsibilities
 
----
+- Updates are delivered automatically via the AppEngine Store.  
+- All configuration profiles and assignments are preserved during updates.  
+- If a new version of the browser extension is available, you’ll be prompted after installation.
+- Maintain your AppEngine and WebUp versions up to date to ensure compatibility.
 
-## Integration Verification
-
-After installation, verify that both components — the **AppEngine plugin** and the **browser extension** — are active and communicating correctly.
-
----
-
-## Notes and Responsibilities
-
-- Installation and updates within AE are **automated** and **controlled by AppEngine**.  
-- **Support procedures**: For support, please use our [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp)
-- Any feedback is truly welcomed via the [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp)
+::: info[Note]
+For technical issues or feature requests, contact the CompuTec Helpdesk Portal. Feedback on usability and performance is always welcome. :::
