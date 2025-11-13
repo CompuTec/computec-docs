@@ -1,10 +1,11 @@
 [
+  
   {
     "version": "2.10.23",
-    "build": "2.10.23.4",
-    "release_date": "12 September 2025",
+    "build": "2.10.23.5",
+    "release_date": "10 November 2025",
     "minimal_ae_version": "2.10.15.2",
-    "download_url": "https://download.computec.one/software/appengine/plugins/wms/releases/CompuTec_WMS_2.10.23.4.zip"
+    "download_url": "https://download.computec.one/software/appengine/plugins/wms/releases/CompuTec_WMS_2.10.23.5.zip"
   },
   {
     "version": "2.10.22",

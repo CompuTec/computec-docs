@@ -4,7 +4,10 @@ sidebar_position: 3
 
 # Complaint
 
-The Complaint form allows you to input all the necessary details for creating and managing a complaint. This includes specifying the document type (Customer, Supplier, or Internal), Contact Person, Warehouse, and any required actions to address the complaint effectively.
+The Complaint form enables users to record, track, and resolve complaints efficiently - whether they originate from customers, suppliers, or internal teams.
+It centralizes all complaint-related data, helping maintain traceability and streamline corrective actions.
+
+To access Complaint, navigate to:
 
 :::info Path
     Complaints → Complaint
@@ -14,80 +17,109 @@ For a detailed overview, watch the video [Complaint Management](https://www.yout
 
 ---
 
+When to Use
+
+Use the Complaint form when:
+
+- You need to log and manage a customer, supplier, or internal complaint.
+- You want to track corrective actions, sample returns, or quality control tests linked to a complaint.
+- You require an integrated record for audits and reporting.
+
+---
+
 ## Complaint Header
 
-The Complaint form header provides a user-friendly interface to manage key details, including:
+The Header section captures the key complaint details for identification, responsibility and tracking.
+
+![Complaint](./media/complaint/complaint-1.webp)
 
 - **Complaint Number**: Select and enter a complaint number using the defined Document Series Number.
 - **Source of the Complaint**: Enter the source of the complaint: Customer, Supplier, or Internal.
 - **Business Partner Details**:
-        - Select and enter the Business Partner Code. The lookup table filters business partners based on the Complaint Type.
-        - If the Complaint Type is Internal, the fields for Business Partner Code, Business Partner Name, and Contact Person are disabled.
+        - Select the Business Partner Code (filtered based on the selected Complaint Type).
+        - If the Complaint Type is Internal, the Business Partner and Contact Person fields are disabled.
 - **Contact Person**: Enter the Contact Person, filtered based on the selected Business Partner Code.
-- **Additional Information**: Enter details such as the Warehouse and Project Code.
-- **Complaint Status**: Manage the complaint's progress by selecting a Status (Created, Started, On-Hold, or Closed) and setting the corresponding Date.
+- **Additional Information**: Specify Warehouse and Project Code if applicable.
+- **Complaint Status**: Track progress using statuses (Created, Started, On-Hold, Closed), with corresponding dates.
 - **originator and Owner**:
         - Enter an Originator, who started the Complaint.
         - Enter an Owner, responsible for managing the Complaint.
-- **Alerts**: Generate alerts to notify the Complaint Manager for assigning an Owner.
+- **Alerts**: Alerts can be generated to notify the Complaint Manager to assign or update an Owner.
 
-![Complaint](./media/complaint/complaint-1.webp)
+### Transaction tab
 
-## Transaction
+The Transaction tab records detailed information about item-related and non-item-related complaints.
 
 ![Transactions](./media/complaint/complaint-transactions.webp)
 
-The Transaction tab allows users to log both item-related and non-item-related complaints with detailed information:
-
 ![Complaint](./media/complaint/complaint-2.webp)
 
-- If the Complaint is Item related, the user enters the Item, and optionally, a Reason Code, indicating the cause of the Complaint.
-- The user can also enter the Transaction Type and the associated Document Number relating to the Complaint, along with Batch and Serial Numbers.
-- When a Transaction Type is selected, only data associated with the relevant Business Partner is displayed.
-- Batches and Serial Numbers can be added and deleted.
-- Multiple Reason Codes can be added and deleted for recording and analysis purposes. Reason Codes can be added and deleted.
-- A remark can also be added to provide further context or clarification.
+**Item-Related Complaints**
 
-## Action
+- Enter the Item Code, Reason Code, and Transaction Type (e.g., Delivery, Purchase Order).
+- Link the complaint to a Document Number, Batch or Serial Number.
+- When a Transaction Type is selected, the system filters data relevant to the selected Business Partner.
+- Batches, serial numbers, and multiple reason codes can be added or removed as required.
+- Add Remarks for contextual details or clarifications.
+
+**Non-Item-Related Complaints**
+
+- Record general service, process or communication issues not linked to specific items.
+
+### Action tab
+
+The Action tab helps manage any follow-up activity such as sample returns or warehouse inspections.
 
 ![Complaint Action](./media/complaint/complaint-action.webp)
 
-The Action tab is designed for situations requiring additional steps, such as managing sample returns:
+**Key Features**
 
-- If additional Action is required, the user can enter a sample quantity to be returned either from the Customer or to the Supplier.
-- The sample can be tracked by specifying the relevant Date and the location where the sample will be stored.
-- An alert is sent to Warehouse Managers to notify them of incoming samples.
-        To know more on "Alerts", click [here](https://www.youtube.com/watch?v=GFsTGB9Gc40).
+- Specify Sample Quantity and whether it is returned from the Customer or sent to the Supplier.
+- Define the storage location and date for received samples.
+- Automatic alerts notify Warehouse Managers about incoming samples.
 - The alert is based on the following query, Status = Started, Business Partner Code and Name, Item Number, Batch/Serial Number, Delivery Date, Warehouse Code, and Warehouse manager.
         - When the sample is received at the warehouse, based on a Return document, an alert is sent to the Complaint Owner.
-        - To know more, click [here](https://www.youtube.com/watch?v=GFsTGB9Gc40).
-- The alert is based on the following query, Status = Started, Complaint No, Business Partner Code and Name, Item Number, Batch/Serial Number, Received Date, Warehouse Code, and Complaint Owner.
 
-## Notes
+➡️ Learn more about [Alerts](https://www.youtube.com/watch?v=GFsTGB9Gc40).
 
-The Notes Tab is a text field for any Complaint related information.
+### Notes
 
-## Attachments
+Use the Notes tab to record any text-based comments or contextual details about the complaint.
 
-The Attachments Tab allows the user to upload relevant documents relating to the Complaint.
+### Attachments tab
+
+The Attachments tab allows users to upload supporting documents such as photographs, test results, delivery documents or inspection reports.
+
+---
 
 ## Creating a Quality Control Test
 
-- From the Action Tab, the user can check that the Complaint requires a [Quality Control Test](../quality-control/quality-control-test/overview.md) and create a Quality Control Test from the "You Can Also" button.
-- The user can also check that this Complaint was the source of a Product Recall activity.
-- To know more informarion, click the video: [Creating a Quality Control Test from a Complaint](https://www.youtube.com/watch?v=MtuKARV-QWM)
+From the Action tab, users can create a linked [Quality Control Test](../quality-control/quality-control-test/overview.md) when the complaint requires product evaluation.
 
-## Creating an activity for a complaint
+- Use the “You Can Also” button to generate a new test.
+- The system automatically links the complaint to the created QC Test.
+- You can also track if the complaint triggered a Product Recall.
 
-The standard SAP Business One activity functionality is available to create and check within the Complaint form. To get more information on the subject, click [here](../activities-for-computec-processforce-documents.md).
+➡️ Watch the video: [How to Create a Quality Control Test from a Complaint](https://www.youtube.com/watch?v=MtuKARV-QWM)
+
+## Creating an Activity for a complaint
+
+SAP Business One’s standard Activity Management is integrated into the Complaint form.
+You can create, assign, and monitor activities related to a specific complaint.
+
+➡️ Learn more: [Activities for CompuTec ProcessForce Documents](../activities-for-computec-processforce-documents.md).
+
+---
 
 ## Complaint Status
 
-Complaint statuses allow tracking the progress of each case:
+Each complaint follows a defined status flow for better tracking:
 
-- **Created** – a document is created but not yet started; create Date can be set up.
-- **Started** – a document is started, Started Date can be set up.
-- **On-Hold** – a document is on-hold (no action is taken on it), On-Hold Date can be set up.
-- **Closed** – a document is closed; **no further editing can be done**.
+| Status | Description |
+| --- | --- |
+| Created | The complaint record is created but not yet started. |
+| Started | Work on the complaint has begun. |
+| On-Hold | No further action is currently taken; the issue is paused. |
+| Closed | Complaint resolution is complete; no further editing is allowed. |
 
 ---

@@ -121,16 +121,15 @@ If CompuTec ProcessForce is installed, CompuTec WMS requires CompuTec ProcessFor
 ### For SQL Environments
 
 1. Microsoft ODBC Driver
-2. Microsoft SQL Native Client (version based on SQL version being used)
-3. SAP DI API
-4. CompuTec ProcessForce & CompuTec ProcessForce API (optional)
-5. CompuTec WMS Server
-6. CompuTec WMS Client
+2. SAP Business One DI API
+3. CompuTec ProcessForce & CompuTec ProcessForce API (optional)
+4. CompuTec WMS Server
+5. CompuTec WMS Client
 
 ### For HANA Environments
 
 1. HANA ODBC Driver
-2. SAP DI API
+2. SAP Business One DI API
 3. CompuTec ProcessForce & CompuTec ProcessForce API (optional)
 4. CompuTec WMS Server
 5. CompuTec WMS Client

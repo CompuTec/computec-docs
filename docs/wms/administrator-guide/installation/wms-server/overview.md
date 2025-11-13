@@ -58,7 +58,7 @@ If the CompuTec WMS Server is already installed on this computer, you can access
     8. Close inactive CompuTec WMS session after (min): Time after which a user is logged out from CompuTec WMS (in minutes).
     9. SAP Business One Password: Enter the SAP Business One Password.
     10. WMS Server Port: Enter the server port.
-    11. WMS Server Port TSL: Click [here](tsl-connection.md) to find out more about SSL connection.
+    11. WMS Server Port TLS: Click [here](tls-connection.md) to find out more about SSL connection.
     12. Restart WMS Server automatically when SAP DI connection is lost: Checking this option restarts a good service on losing CompuTec WMS to SAP Business One or a database connection. The option requires further setting up to be available to use.
         <details>
         <summary>Click here to find out more</summary>
