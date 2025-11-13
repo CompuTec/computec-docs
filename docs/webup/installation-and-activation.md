@@ -65,6 +65,7 @@ When activating a company in AppEngine, the system provides instructions for set
 ### Validate Developer Mode in SAP Web Client When Customizing User Interface
 
 When customizing the user interface with CompuTec WebUp Manager, ensure **Developer Mode** is enabled in the Web Client.
+
 ![developer mode in SAP Web Client is enabled](./media/11-webup-config-turn-on-developer-mode.png)
 
 ## Plugin Update
