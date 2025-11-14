@@ -20,12 +20,12 @@ The CompuTec WebUp solution is made up of three key components:
 
 Before installing CompuTec WebUp, make sure the following prerequisites are met:
 
-- CompuTec AppEngine is installed and configured. Follow the [installation](/docs/appengine/administrators-guide/configuration-and-administration/installation) and [configuration](/docs/appengine/administrators-guide/configuration-and-administration/configuration) guides for detailed instructions.
-- The company is active in AppEngine, and the SAP Web Client is configured. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/working-with-sap-business-one-web-client).
+- **CompuTec AppEngine** is installed and configured. Follow the [installation](/docs/appengine/administrators-guide/configuration-and-administration/installation) and [configuration](/docs/appengine/administrators-guide/configuration-and-administration/configuration) guides for detailed instructions.
+- The company is **active** in AppEngine, and the **SAP Web Client is configured**. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/working-with-sap-business-one-web-client).
 
 ## Step 1: Install the WebUp App
 
-To install the WebUp App directly from the AppEngine Store, follow the [app installation instructions](/docs/appengine/administrators-guide/configuration-and-administration/plugins/plugin-installation-process).  
+To install the **WebUp App** directly from the AppEngine Store, follow the [app installation instructions](/docs/appengine/administrators-guide/configuration-and-administration/plugins/plugin-installation-process).  
 The installation process is fully automated and managed within AppEngine.
 
 ## Step 2: Configure CORS in the SAP Web Client
@@ -79,7 +79,7 @@ You’ll need to install two extensions:
 
 :::info[note]
 These extensions are currently **not available in public stores**.
-Install them manually using the provided installation package and [this guide](./other/extension-manual-installation.md) until they are validated by Google Chrome, Mozilla Firefox and Microsoft Edge. 
+Install them manually using the provided installation package and [this guide](./other/extension-manual-installation.md) until they are validated by Google Chrome, Mozilla Firefox and Microsoft Edge.
 :::  
 
 ## Step 6: Verify integration
@@ -104,5 +104,5 @@ If you were already on the SAP Web Client page before installing the WebUp brows
 - Maintain your AppEngine and WebUp versions up to date to ensure compatibility.
 
 :::info[Note]
-For technical issues or feature requests, contact the CompuTec Helpdesk Portal. Feedback on usability and performance is always welcome.
+For technical issues or feature requests, contact the [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp). Feedback on usability and performance is always welcome.
 :::
