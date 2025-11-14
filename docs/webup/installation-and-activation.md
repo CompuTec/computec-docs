@@ -77,9 +77,9 @@ You’ll need to install two extensions:
 - **CompuTec WebUp Client** – for end users
 - **CompuTec WebUp Manager** – for consultants and key users
 
-::: info[Note]
+::: note
 These extensions are currently **not available in public stores**.
-Install them manually using the provided installation package and this guide until they are validated by Google Chrome, Mozilla Firefox and Microsoft Edge. :::  
+Install them manually using the provided installation package and [this guide](./other/extension-manual-installation.md) until they are validated by Google Chrome, Mozilla Firefox and Microsoft Edge. :::  
 
 ## Step 6: Verify integration
 
@@ -91,7 +91,7 @@ After installation, confirm that both the AppEngine plugin and the browser exten
 
 ![A help screen showing where to find the WebUp extension in your browser toolbar](./media/12-webup-config-browser-extension.png)
 
-::: info[Note]
+::: note
 If you were already on the SAP Web Client page before installing the WebUp browser extension, refresh the page before activating the extension.:::
 
 ## Notes and responsibilities
