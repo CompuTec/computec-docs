@@ -20,8 +20,8 @@ The CompuTec WebUp solution is made up of three key components:
 
 Before installing CompuTec WebUp, make sure the following prerequisites are met:
 
-- **CompuTec AppEngine** is installed and configured. Follow the [installation](/docs/appengine/administrators-guide/configuration-and-administration/installation) and [configuration](/docs/appengine/administrators-guide/configuration-and-administration/configuration) guides for detailed instructions.
-- The company is **active in AppEngine**, and the **SAP Web Client is configured**. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/working-with-sap-business-one-web-client).
+- Check if **CompuTec AppEngine** is installed and configured. Follow the [AppEngine installation guide](/docs/appengine/administrators-guide/configuration-and-administration/installation) and [AppEngine configuration guide](/docs/appengine/administrators-guide/configuration-and-administration/configuration) for detailed instructions.
+- Make sure that the company is **active in AppEngine**, and the **SAP Web Client is configured**. For full instructions, [see the configuration guide.](/docs/appengine/administrators-guide/configuration-and-administration/working-with-sap-business-one-web-client).
 
 ## Step 1: Install the WebUp App
 
@@ -47,10 +47,10 @@ It’s pre-filled with basic data, and you’ll have to add your own CSP entries
 ![System Details help screen in CSP configuration process](./media/3-webup-config-csp.png)  
 2. Click on the **Required CSP Entries for Web Client** link.  
 ![A help screen showing where to find the link to the required CSP entries in CSP configuration process](./media/4-webup-config-csp-entries-link.png)
-3. Here, you can find all the required entries for your Consent Security Policy.  
+3. Here, you can find all the required entries for SAP Web Client Content Security Policy.  
 ![A help screen showing where to find the required CSP entries in CSP configuration process](./media/5-webup-config-csp-entries.png)
 4. Copy the entries and close the window.
-5. Open **SAP Business One Web Client** and click on your profile icon in the upper right corner of the interface.  
+5. Open **SAP Business One Web Client** and click on your **profile** icon in the upper right corner of the interface.  
 ![A help screen showing where to find your profile icon in SAP Business One Web Client](./media/6-webup-profile-settings-sapb1-menu.png)
 6. Navigate to **Settings** > **General Settings**.  
 ![A help screen showing where to find General Settings in SAP Business One Web Client](./media/7-webup-general-settings-sapb1-menu.png)
@@ -88,8 +88,7 @@ After installation, confirm that both the AppEngine plugin and the browser exten
 
 1. Pin the **WebUp extension** to your browser toolbar for easy access.
 2. Navigate to the **SAP Web Client** page.
-3. Click the **WebUp extension** icon to activate the integration.
-
+3. Click the **WebUp extension** icon to activate the integration.  
 ![A help screen showing where to find the WebUp extension in your browser toolbar](./media/12-webup-config-browser-extension.png)
 
 :::info[Note]
