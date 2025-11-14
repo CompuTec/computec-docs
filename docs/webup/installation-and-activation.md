@@ -44,8 +44,7 @@ When activating your company in AppEngine, set up CORS (Cross-Origin Resource Sh
 
 ## Step 3: Set up Content Security Policy
 
-Ensure that the Content Security Policy (CSP) configuration in the SAP Web Client includes all required entries.  
-It’s pre-filled with basic data, and you’ll have to add your own CSP entries:
+Make sure that the Content Security Policy (CSP) configuration in the SAP Web Client includes all required entries. It’s pre-filled with basic data, and you’ll have to add your own CSP entries:
 
 1. In the **AppEngine Administration Panel**, navigate to **System** > **System Details**.  
 
