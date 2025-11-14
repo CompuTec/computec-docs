@@ -33,9 +33,13 @@ The installation process is fully automated and managed within AppEngine.
 When activating your company in AppEngine, set up CORS (Cross-Origin Resource Sharing) for the Web Client:
 
 1. In the **AppEngine Administration Panel**, go to **Configuration** > **Advanced Configuration**.  
+
 ![screen showing where to find advanced configuration when setting up CORS process](./media/1-webup-cors-config.png)  
+
 2. In the **CORS Allowed Origins** field, enter your **SAP Web Client address**.  
+
 ![Advanced configuration help screen showing where to enter the web client CORS address](./media/2-webup-config-cors-address.png)
+
 3. Restart **AppEngine** to apply changes.
 
 ## Step 3: Set up Content Security Policy
@@ -44,18 +48,30 @@ Ensure that the Content Security Policy (CSP) configuration in the SAP Web Clien
 It’s pre-filled with basic data, and you’ll have to add your own CSP entries:
 
 1. In the **AppEngine Administration Panel**, navigate to **System** > **System Details**.  
+
 ![System Details help screen in CSP configuration process](./media/3-webup-config-csp.png)  
+
 2. Click on the **Required CSP Entries for Web Client** link.  
+
 ![A help screen showing where to find the link to the required CSP entries in CSP configuration process](./media/4-webup-config-csp-entries-link.png)
+
 3. Here, you can find all the required entries for SAP Web Client Content Security Policy.  
+
 ![A help screen showing where to find the required CSP entries in CSP configuration process](./media/5-webup-config-csp-entries.png)
+
 4. Copy the entries and close the window.
 5. Open **SAP Business One Web Client** and click on your **profile** icon in the upper right corner of the interface.  
+
 ![A help screen showing where to find your profile icon in SAP Business One Web Client](./media/6-webup-profile-settings-sapb1-menu.png)
+
 6. Navigate to **Settings** > **General Settings**.  
+
 ![A help screen showing where to find General Settings in SAP Business One Web Client](./media/7-webup-general-settings-sapb1-menu.png)
+
 7. Paste the copied entries to the **Content Security Policy** field.  
+
 ![A help screen showing where to paste the required CSP entries in CSP configuration process](./media/8-webup-config-paste-csp-entries.png)
+
 8. Refresh the **SAP Business One Web Client** page to apply the changes.
 
 ## Step 4: Enable Developer Mode
@@ -63,11 +79,17 @@ It’s pre-filled with basic data, and you’ll have to add your own CSP entries
 If you plan to customize the user interface using **CompuTec WebUp Manager**, you must enable **Developer Mode** in the SAP Web Client.
 
 1. Click on your **profile icon** in the upper right corner of the SAP Web Client interface and choose **Settings**.  
+
 ![A help screen showing where to find Settings tab in SAP Business One Web Client](./media/9-webup-profile-settings-sapb1-menu.png)
+
 2. Go to **Extensibility**.  
+
 ![A help screen showing where to find Extensibility tab in SAP Business One Web Client](./media/10-webup-profile-settings-extensibility-developer-mode.png)
+
 3. Turn on the **Developer Mode** toggle.  
+
 ![A help screen showing where to find Developer Mode in SAP Business One Web Client](./media/11-webup-config-turn-on-developer-mode.png)
+
 4. Click **Save**.
 
 ## Step 5: Install browser extensions
@@ -89,6 +111,7 @@ After installation, confirm that both the AppEngine plugin and the browser exten
 1. Pin the **WebUp extension** to your browser toolbar for easy access.
 2. Navigate to the **SAP Web Client** page.
 3. Click the **WebUp extension** icon to activate the integration.  
+
 ![A help screen showing where to find the WebUp extension in your browser toolbar](./media/12-webup-config-browser-extension.png)
 
 :::info[Note]
