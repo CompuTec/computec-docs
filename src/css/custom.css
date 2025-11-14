@@ -109,12 +109,12 @@
   fill: var(--docsearch-logo-color);
 }
 
-img {
+img.medium-zoom-image {
   max-height: 40vh;
   max-height: 40lvh;
-  border-radius: 5%;
   width: auto;
   height: auto;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
 }
 
 .alert a {
