@@ -55,7 +55,8 @@ It’s pre-filled with basic data, and you’ll have to add your own CSP entries
 
     ![A help screen showing where to find the link to the required CSP entries in CSP configuration process](./media/4-webup-config-csp-entries-link.png)  
 
-3. Here, you can find all the required entries for SAP Web Client Content Security Policy.  
+3. Here, you can find all the required entries for SAP Web Client Content Security Policy.
+
     ![A help screen showing where to find the required CSP entries in CSP configuration process](./media/5-webup-config-csp-entries.png)  
 
 4. Copy the entries and close the window.  
