@@ -4,36 +4,43 @@ sidebar_position: 9
 
 # Batch Traceability
 
-In industries where product quality and regulatory compliance are critical, batch traceability is an essential function. CompuTec ProcessForce's Batch Traceability feature provides comprehensive tracking of item batches throughout their lifecycle - from production or purchase to their use in manufacturing and final delivery to customers. This function plays a crucial role in complaint management, product recalls, and overall quality assurance by offering instant access to batch records.
+Batch traceability is a critical requirement in industries where quality control, regulatory compliance, and full production transparency are essential. CompuTec ProcessForce provides a powerful Batch Traceability feature that enables end-to-end tracking of item batches - from purchase or production, through internal manufacturing usage, and finally to customer delivery.
+
+This functionality supports complaint handling, product recalls, audits, and overall quality assurance by giving users instant access to detailed batch histories.
 
 ---
 
 ## Access
 
-Users can access the ProcessForce Batch Traceability feature through multiple navigation paths:
+Users can access Batch Traceability feature through multiple navigation paths:
 
-- **Modules Menu**: navigate through Inventory → Item Management → Batches → Batch Traceability.
-- **From the Complaint Form**: right-click on a batch within the Transaction tab.
+- To access from **Modules Menu**, navigate to:
+
+  :::info Path
+  Inventory → Item Management → Batches → Batch Traceability
+  :::
+
+- To access from the **Complaint form**: Right-click on a batch within the Transaction tab.
 
   ![Complaint -> Batch Traceability](./media/batch-traceability/complaint-batch-traceability.webp)
 
-  Click [here](../../complaint-management/complaint.md) to find out more about the Complaint function.
+  ➡️ Learn more about [Complaints](../../complaint-management/complaint.md).
 
-- **From Batch Master Data**: Access Batch Traceability via the context menu.
+- To access from the **Batch Master Data**: Access Batch Traceability via the context menu.
 
-  ![Batch Master Data -> Batch Traceability](./media/batch-traceability/batch-master-data-batch-traceability.webp)
+    ![Batch Master Data -> Batch Traceability](./media/batch-traceability/batch-master-data-batch-traceability.webp)
 
-  Click [here](../batch-control/batch-master-data/overview.md) to find out more about Batch Master Data.
+  ➡️ Learn more about [Batch Master Data](../batch-control/batch-master-data/overview.md).
 
-## Opening Batch Trace Visualization Form
+## Opening the Batch Trace Visualization Form
 
 Upon opening the Batch Traceability function, the Selection Criteria window appears.
 
-1. Select an Item Code from the available list:
+1. Choose an Item Code from the available list:
 
     ![Selection Criteria 1](./media/batch-traceability/selection-criteria-1.webp)
 
-2. Choose a Batch associated with the selected item:
+2. Select a Batch related to the chosen item:
 
     ![Selection Criteria 2](./media/batch-traceability/selection-criteria-2.webp)
 
@@ -45,24 +52,30 @@ The Batch Trace Visualization form provides a graphical representation of batch 
 
 ![Trace Visualization](./media/batch-traceability/trace-visualization.webp)
 
-On this chart, specific Batches are represented by boxes with their details. Boxes can be moved by drag-and-drop.
-
-You can zoom in or out of the view using a mouse roll or a scroll bar.
+- Each Batch is displayed as a box containing key details.
+- Boxes can be rearranged using drag-and-drop.
+- Zoom in/out using the mouse wheel or scroll bar.
 
 Data included on Batch boxes:
 
 - Batch status icon:
-  - arrow – released,
-  - x – not accessible,
-  - exclamation mark – locked.
 
-- Description:
-  - Quantity – if it is negative, it indicates the quantity that was used in a production process,
-  - UoM – Unit of Measurement,
-  - Type – indicates if an item was produced or purchased,
-  - Manufacturing Date – if the Item was produced (not purchased),
-  - Expiry Date,
-  - Batch – Batch name.
+    | icon | Description |
+    | --- | --- |
+    | arrow | released |
+    | x | not accessible |
+    | exclamation mark | locked |
+
+- Details:
+
+  | Details | Meaning |
+  | --- | --- |
+  | Quantity | Negative quantities indicate consumption in production |
+  | UoM | Unit of Measurement |
+  | Type | Indicates if an item was produced or purchased |
+  | Manufacturing Date | Indicates if the Item was produced (not purchased) |
+  | Expiry Date | Date of Expiry |
+  | Batch | Name of the Batch |
 
 ## Transactions
 
@@ -70,18 +83,25 @@ Users can review all activities and transactions associated with a batch:
 
 1. Right-click on a specific box to see all activities and transactions connected to the Batch:
 
-    ![Transactions Details](./media/batch-traceability/transactions-details.webp)
+    ![Transactions Details](./media/batch-traceability/transaction-details.webp)
 
 2. Click the yellow arrow in a specific document row to get more information about it.
 
 ## Going Forward
 
-The visualization provides insight into the composition of a specific item by tracing back through all batches involved in its production process.
+Batch Trace Visualization supports both backward and forward tracking:
 
-To track where the items from a specific batch have been used, hold Control and right-click on the desired batch.
+- Backward tracing shows which batches were used to create an item.
+- Forward tracing shows where a batch has been used in subsequent production or sales.
 
-![Forward 1](./media/batch-traceability/forward-1.webp)
+To view forward usage:
 
-![Forward 2](./media/batch-traceability/forward-2.webp)
+- Hold Ctrl and right-click the selected batch.
+  
+  ![Forward 1](./media/batch-traceability/forward-1.webp)
+
+- The system will highlight all downstream batches or documents.
+
+  ![Forward 2](./media/batch-traceability/forward-2.webp)
 
 ---

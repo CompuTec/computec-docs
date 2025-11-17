@@ -4,40 +4,54 @@ sidebar_position: 1
 
 # Overview
 
-In SAP Business One integrated with CompuTec ProcessForce, the Batch Details form and the CompuTec ProcessForce Batch Master Data details have been unified into a single, comprehensive interface. This consolidation streamlines navigation, allowing users to access batch information directly from all SAP Business One and CompuTec ProcessForce documents and reports.
+In SAP Business One integrated with CompuTec ProcessForce, batch information is managed through a unified **Batch Master Data** form. This consolidated interface brings together the standard SAP Business One Batch Details and the CompuTec ProcessForce Batch Master Data, allowing users to access all batch-related information directly from SAP and CompuTec ProcessForce documents, transactions, and reports.
+
+This unified design improves navigation, reduces duplication and ensures that all batch details including dates, quality control, returns, complaints and attachments - are maintained in a single location.
 
 :::note
-When adding User Defined Fields (UDFs) to the SAP Business One Batch Details Table, it's essential to replicate these UDFs - maintaining the same names and formats - in the CompuTec ProcessForce Batch Master Data tables and the Pick Receipt: Picked Items table
+If you add User-Defined Fields (UDFs) to the SAP Business One Batch Details table, you must create the same UDFs using identical names, data types and lengths - in the corresponding CompuTec ProcessForce batch tables. This ensures consistent data flow and prevents synchronization issues.
 :::
 
 ---
 
-To access the Batch Master Data form, navigate through:
+To access the Batch Master Data form, navigate to:
 
 :::info Path
     Item Management → Batches → Batch Master Data
 :::
 
-The Batch Master Data form comprises several tabs, each serving a specific function:
+## Key Features
 
-- [Date Details](date-details-tab.md): Manages batch-related dates, such as admission, expiry, and inspection dates.
-- [Properties](/docs/processforce/user-guide/inventory/batch-control/batch-master-data/properties-tab/): Displays properties defined in the Item Details for the specific item.
-- Attachments: allows users to upload, view, or delete files associated with a specific batch. Users can also link a Business Partner to the file and include certificate numbers and dates, particularly for attaching certificate documents.
-- [Quality Control](/docs/processforce/user-guide/inventory/batch-control/batch-master-data/quality-control-tab/):  provides an overview of quality control status, actions, and a history of quality control tests related to the batch, including associated complaints and non-conforming materials reports.
-- [Returns](/docs/processforce/user-guide/inventory/batch-control/batch-master-data/returns-tab/): a list of return documents connected to a specific Batch Master Data record. Click [here](returns-tab.md) to find out more.
-- [Inventory](/docs/processforce/user-guide/inventory/batch-control/batch-master-data/batch-inventory-tab/): displays the total quantity of the batch along with all storage locations where items from the batch are stored.
-- Complaints: provides a list of all complaints recorded against the batch, along with pertinent information.
+The Batch Master Data window is divided into several tabs, each designed to present a specific aspect of batch information:
 
-    ![Batch Master Data](./media/overview/batch-master-data.webp)
+ ![Batch Master Data](./media/overview/batch-master-data.webp)
+
+- [Date Details](date-details-tab.md): Manages key batch-related dates such as admission, expiry, shelf life, quarantine and inspection dates.
+- [Properties](/docs/processforce/user-guide/inventory/batch-control/batch-master-data/properties-tab/): Displays item-specific properties defined in the SAP Item Master. These properties help categorize or classify batches.
+- Attachments: Allows users to upload, view, or remove documents related to the batch.
+  Common attachments include certificates, analysis documents, and regulatory records.
+  You can also associate Business Partners and record certificate numbers and validity dates.
+- [Quality Control](/docs/processforce/user-guide/inventory/batch-control/batch-master-data/quality-control-tab/): Shows the quality status of the batch, including test results, actions taken, linked complaints and non-conforming material reports.
+- [Returns](/docs/processforce/user-guide/inventory/batch-control/batch-master-data/returns-tab/): Lists all SAP return documents associated with the batch. This supports traceability and return-related analysis. Learn more about [Returns tab](returns-tab.md) to find out more.
+- [Inventory](/docs/processforce/user-guide/inventory/batch-control/batch-master-data/batch-inventory-tab/):  Displays total available batch quantity and all warehouse/bin locations where the batch is stored.
+- Complaints: Shows all complaints raised against the batch along with relevant tracking information.
+
+---
 
 ## Adding UDFs to Batch Master Data
 
-When adding User-Defined Fields (UDFs) to ProcessForce (PF) batch tables, ensure that the UDFs are created with the same name, data type, and length in all of the following locations:
+When extending batch data using UDFs, it is essential that the fields are replicated consistently across all relevant tables. Every UDF must have the same name, data type and length in the following locations:
 
 - SAP Batch Details (OBTN)
-- PF Additional Batch Details / Serial–Batch Number Object (@CT_PF_OABT)
+- CompuTec ProcessForce Additional Batch Details / Serial–Batch Number Object (@CT_PF_OABT)  
 - PickReceipt: Picked Items
 
-Creating the UDFs consistently across these locations ensures that the data remains synchronized with the SAP Batch table at all times.
+Maintaining identical UDF structures ensures:
+
+- seamless synchronization between SAP and CompuTec ProcessForce  
+- accurate data mappings during transactions  
+- consistency in batch‐level reporting and traceability  
+
+This is critical because CompuTec ProcessForce mirrors data from the SAP Batch table, and mismatched UDF definitions may result in data inconsistencies.
 
 ---
