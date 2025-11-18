@@ -27,7 +27,7 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 | Bug | Server | In Pick and Pack, UDFs linked to a Business Object are shown as text fields instead of dropdown lists. | - |
 | Bug | Server | In Pick and Pack, the system displays the error “Pick List is empty” even when items are available. | - |
 | Bug | Client | Date field values disappear after selecting a Bin. | - |
-| Bug | Server | In Delivery from Sales Order, the system shows an error: “Packed item Active-Item-02 is not part of the delivery (UoM 9, items per unit 1.000000).” | - |
+| Bug | Server | In Delivery from Sales Order, the system shows an error: “Packed item Active-Item-02 is not part of the delivery (UoM 9, items per unit 1.000000).” | WMSDEV-6472  |
 | Bug | Server | In Stock Transfer, the New SU screen is missing the CardCode field. | - |
 | Bug | Server | Pick and Pack: Data entered in UDFs is not saved. | WMSDEV-6505 |
 | Bug | Server | The ItemName field causes the printed document to generate empty output. | LPDEV-508 |
