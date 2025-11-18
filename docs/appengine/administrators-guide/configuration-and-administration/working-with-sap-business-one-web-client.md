@@ -34,8 +34,6 @@ To install the CompuTec WebClient Extension Package, follow these steps:
 
 6. Done! The installation of WebClient Extension Package was completed successfully.
 
-    ![A help screen showing a success message after installing WebClient Extension](./media/working-with-sap-business-one-web-client/10-appengine-success-webclient-extension-installation.png)
-
 :::info[note]
 Whenever you deactivate or activate a new company, repeat this process to install its updated CompuTec WebClient Extension Package.
 :::
