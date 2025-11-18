@@ -6,11 +6,11 @@ sidebar_position: 9
 
 The **CompuTec WebClient Start** is an essential tool for integrating CompuTec AppEngine plugins and extending the functionality of the SAP Business One Web Client. It connects the two systems so you can extend your ERP with more tools and features. The CompuTec WebClient Start is installed during the company activation.
 
-## Step 1: Install the plugin pack
+## Step 1: Install the CompuTec WebClient Extension Package
 
-The **WebClient Extension Package** contains all plugins enabled for a specific company. Each company has its own plugin pack, so you must install it separately for every company. Installing the WebClient Extension is required to use CompuTec plugins in the SAP Business One Web Client.
+The **CmpuTec WebClient Extension Package** contains all plugins enabled for a specific company. Each company has its own plugin pack, so you must install it separately for every company. Installing the WebClient Extension is required to use CompuTec plugins in the SAP Business One Web Client.
 
-To install the CompuTec WebClient Extension, follow these steps:
+To install the CompuTec WebClient Extension Package, follow these steps:
 
 1. Log in to the **CompuTec AppEngine Administration Panel**.
 
@@ -32,7 +32,7 @@ To install the CompuTec WebClient Extension, follow these steps:
 
     ![A help screen showing how to log in to install WebClient Extension](./media/working-with-sap-business-one-web-client/9-appengine-login-webclient-extension-installation.png)
 
-6. The installation of WebClient Extension Package is completed and you'll see a success message.
+6. Done! The installation of WebClient Extension Package was completed successfully.
 
     ![A help screen showing a success message after installing WebClient Extension](./media/working-with-sap-business-one-web-client/10-appengine-success-webclient-extension-installation.png)
 
