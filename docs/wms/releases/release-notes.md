@@ -27,7 +27,7 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 | Bug | Server | In Pick and Pack, UDFs linked to a Business Object are shown as text fields instead of dropdown lists. | - |
 | Bug | Server | In Pick and Pack, the system displays the error “Pick List is empty” even when items are available. | - |
 | Bug | Client | Date field values disappear after selecting a Bin. | - |
-| Bug | Server | In Delivery from Sales Order, the system shows an error: “Packed item Active-Item-02 is not part of the delivery (UoM 9, items per unit 1.000000).” | WMSDEV-6472  |
+| Bug | Server | In Delivery from Sales Order, when a UoM Name also exists in another UoM Group, the system shows an error: “Packed item X is not part of the delivery (UoM 9, items per unit 1.000000).”| WMSDEV-6472  |
 | Bug | Server | In Stock Transfer, the New SU screen is missing the CardCode field. | - |
 | Bug | Server | Pick and Pack: Data entered in UDFs is not saved. | WMSDEV-6505 |
 | Bug | Server | The ItemName field causes the printed document to generate empty output. | LPDEV-508 |
@@ -35,14 +35,14 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 | Bug | Server | In Stock Transfer, the Hide SU option does not work correctly. | - |
 | Bug | Server | In Delivery - Catch Weight in SU, saving the document triggers an error: “Cannot implicitly convert type 'long' to 'int'.” | - |
 | Bug | Server | Even when the UoM is displayed as Box, the counted quantity is incorrectly treated as Pieces. | - |
-| Bug | Server |After receiving the batch into a different Bin Location, the batch still appears in the original bin, and the SU remains visible in SU Info. | - |
-| Bug | Server | Pick and Pack: Error message occurred: "This SU is currently in the production stage. Please complete the Production Receipt before proceeding." | - |
+| Bug | Server |When creating a New SU in a bin location, you can now select a batch number from another bin location.| - |
+| Bug | Server | When scanning an SU created during Pick and Pack in Whse Info, the error message appears: "This SU is currently in the production stage. Please complete the Production Receipt before proceeding." | - |
 | Bug | Server | In Delivery from Pick List, data entered in UDFs is not saved to the database. | - |
 | Bug | Client Android | In Stock Counting, the calculator view cuts off the value, making the full quantity in the Qty field not visible. | - |
 | Bug | Client | Removing an SU from Delivery from Pick List incorrectly modifies data in internal tables. | - |
 | Bug | Server | In SU Disassembly to Warehouse, performing a partial quantity disassembly shows a success message, but the operation is not actually executed. | - |
 | Bug | Server | In GRPO, the filter applies correctly but displays multiple values instead of only the exact matched value. | - |
-| Bug | Server | Delivery Line Additional Info: Error message occurred: “Index was out of range. Must be non-negative and less than the size of the collection.” | - |
+| Bug | Server | When editing a UDF for an item on the Delivery from Pick List document: “Index was out of range. Must be non-negative and less than the size of the collection.”| - |
 | Bug | Client Android | The "Save" button is missing on the Storage Unit (SU) screen in Delivery from Pick List. | - |
 | Bug | Server | Not all values are saved on the Delivery from Pick List. | - |
 | Bug | Client | In Delivery from Pick List, an incorrect window is displayed when selecting an existing Storage Unit (SU). | WMSDEV-6518 |
