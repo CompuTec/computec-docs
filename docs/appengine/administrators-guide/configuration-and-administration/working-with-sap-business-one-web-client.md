@@ -54,7 +54,7 @@ To manually install and activate CompuTec WebClient Start, follow these steps:
 
     ![A help screen showing where to find a linkt to the CompuTec WebClient Start Installation Pack](./media/working-with-sap-business-one-web-client/2-3-appengine-admin-panel-install-webclient-manually.png)
 
-4. Open the **Extension Manager** in your browser usin this address: `https://<SAPExtensionHost>:<SAPExtensionPort>/ExtensionManager/` replacing the placeholders with your system values. For example: `https://hanadev:40000/ExtensionManager/.`
+4. Open the **Extension Manager** in your browser using this address: `https://<SAPExtensionHost>:<SAPExtensionPort>/ExtensionManager/.` Replace the placeholders with your system values, for example: `https://hanadev:40000/ExtensionManager/.`
 
 5. Import the downloaded installation pack into the **Extension Manager**.
 
