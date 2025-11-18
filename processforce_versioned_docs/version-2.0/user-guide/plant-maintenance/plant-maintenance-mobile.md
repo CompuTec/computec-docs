@@ -8,9 +8,11 @@ sidebar_position: 2
 
 ### Prerequisites
 
-    1. MI360 (CompuTec AppEngine plugin) has to be installed and available on the CompuTec AppEngine host.
+    1. The minimum Android version required for the Plant Maintenance Mobile Application is Android is **5.0**.
 
-    2. Mobile devices and servers have to be in the same Wi-Fi network.
+    2. MI360 (CompuTec AppEngine plugin) has to be installed and available on the CompuTec AppEngine host.
+
+    3. Mobile devices and servers have to be in the same Wi-Fi network.
 
 ### Installation
 

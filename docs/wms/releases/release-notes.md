@@ -48,7 +48,6 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 | Bug | Client | In Delivery from Pick List, an incorrect window is displayed when selecting an existing Storage Unit (SU). | WMSDEV-6518 |
 | Bug | Client | When scanning the SU Code twice, the system incorrectly opens the window associated with Existing SU. | - |
 
-
 ## CompuTec WMS 2.10.23 R4
 
 **Release Date - 12 September 2025**
@@ -1145,7 +1144,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
     - A possibility to add Cost Dimension during the following transactions: Goods Receipt Po, Goods Receipt, Stock Transfer, Delivery, Goods Issue, Return Delivery and Return Goods Receipt PO
     - A typo in the system message after disassembling a Storage Unit
     - Best Before Date prefix supported: (15)
-    - Cannot install CompuTec WMS object to clean database with SAP Business One and PrcocessForce 10 PL00, MS SQL version
+    - Cannot install CompuTec WMS object to clean database with SAP Business One and ProcessForce 10 PL00, MS SQL version
     - CompuTec WMS Settings: the application crashes on refreshing setting form in some cases
     - CompuTec WMS Client Settings: if system language is different than English, the Settings’ display language is changed to English after logging in to CompuTec WMS Server
     - Custom Configuration
