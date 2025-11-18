@@ -17,7 +17,36 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 
 **Release Date - 10 November 2025**
 
-Release notes will be available soon.
+| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| --- | --- | --- | --- |
+| Improvement | Client | Modify WMS Print Buttons to insert the print request without triggering Event Trigger controls. | - |
+| Improvement | Client | Enabled splitting SU quantities into separate lines in Delivery from Sales Order. | - |
+| Improvement | Server | Added the ability to edit the CardCode field in SU Info. | - |
+| Bug | Server | Pick and Pack: Storage Units - Additional fields are not visible on the first screen. | - |
+| Bug | Server | WMS Settings require ODBC Driver 17, but the system does not inform the user about this requirement. | - |
+| Bug | Server | In Pick and Pack, UDFs linked to a Business Object are shown as text fields instead of dropdown lists. | - |
+| Bug | Server | In Pick and Pack, the system displays the error “Pick List is empty” even when items are available. | - |
+| Bug | Client | Date field values disappear after selecting a Bin. | - |
+| Bug | Server | In Delivery from Sales Order, when a UoM Name also exists in another UoM Group, the system shows an error: “Packed item X is not part of the delivery (UoM 9, items per unit 1.000000).”| WMSDEV-6472  |
+| Bug | Server | In Stock Transfer, the New SU screen is missing the CardCode field. | - |
+| Bug | Server | Pick and Pack: Data entered in UDFs is not saved. | WMSDEV-6505 |
+| Bug | Server | The ItemName field causes the printed document to generate empty output. | LPDEV-508 |
+| Bug | Client | The system does not copy all Address Field values from the Sales Order to the Delivery document. | - |
+| Bug | Server | In Stock Transfer, the Hide SU option does not work correctly. | - |
+| Bug | Server | In Delivery - Catch Weight in SU, saving the document triggers an error: “Cannot implicitly convert type 'long' to 'int'.” | - |
+| Bug | Server | Even when the UoM is displayed as Box, the counted quantity is incorrectly treated as Pieces. | - |
+| Bug | Server |When creating a New SU in a bin location, you can now select a batch number from another bin location.| - |
+| Bug | Server | When scanning an SU created during Pick and Pack in Whse Info, the error message appears: "This SU is currently in the production stage. Please complete the Production Receipt before proceeding." | - |
+| Bug | Server | In Delivery from Pick List, data entered in UDFs is not saved to the database. | - |
+| Bug | Client Android | In Stock Counting, the calculator view cuts off the value, making the full quantity in the Qty field not visible. | - |
+| Bug | Client | Removing an SU from Delivery from Pick List incorrectly modifies data in internal tables. | - |
+| Bug | Server | In SU Disassembly to Warehouse, performing a partial quantity disassembly shows a success message, but the operation is not actually executed. | - |
+| Bug | Server | In GRPO, the filter applies correctly but displays multiple values instead of only the exact matched value. | - |
+| Bug | Server | When editing a UDF for an item on the Delivery from Pick List document: “Index was out of range. Must be non-negative and less than the size of the collection.”| - |
+| Bug | Client Android | The "Save" button is missing on the Storage Unit (SU) screen in Delivery from Pick List. | - |
+| Bug | Server | Not all values are saved on the Delivery from Pick List. | - |
+| Bug | Client | In Delivery from Pick List, an incorrect window is displayed when selecting an existing Storage Unit (SU). | WMSDEV-6518 |
+| Bug | Client | When scanning the SU Code twice, the system incorrectly opens the window associated with Existing SU. | - |
 
 ## CompuTec WMS 2.10.23 R4
 
@@ -1115,7 +1144,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
     - A possibility to add Cost Dimension during the following transactions: Goods Receipt Po, Goods Receipt, Stock Transfer, Delivery, Goods Issue, Return Delivery and Return Goods Receipt PO
     - A typo in the system message after disassembling a Storage Unit
     - Best Before Date prefix supported: (15)
-    - Cannot install CompuTec WMS object to clean database with SAP Business One and PrcocessForce 10 PL00, MS SQL version
+    - Cannot install CompuTec WMS object to clean database with SAP Business One and ProcessForce 10 PL00, MS SQL version
     - CompuTec WMS Settings: the application crashes on refreshing setting form in some cases
     - CompuTec WMS Client Settings: if system language is different than English, the Settings’ display language is changed to English after logging in to CompuTec WMS Server
     - Custom Configuration
