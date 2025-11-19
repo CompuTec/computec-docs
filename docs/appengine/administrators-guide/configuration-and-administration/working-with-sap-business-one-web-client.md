@@ -105,7 +105,5 @@ To enable proper functionality of the SAP Web Client, especially for embedded fr
 9. Done! You've successfully configured CSP in SAP Web Client.
 
 :::info[note]
-By following these steps, you can easily set up and manage CompuTec WebClient Start and its plugins, ensuring your SAP Business One Web Client runs smoothly.  
-
 If you need help at any point, feel free to reach out: [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp).
 :::
