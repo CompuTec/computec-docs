@@ -55,6 +55,8 @@ These extensions are currently not available in the public store. Install them m
 
     ![A help screen showing installed webup extensions in Chrome browser](./media/c4-webup-manual-inst-browser-extension-chrome-installed.png)
 
+8. You can now return to the [main installation guide](https://learn.computec.one/docs/webup/installation-and-activation#step-6-verify-the-integration) and continue with the next steps.
+
   </TabItem>
 
   <TabItem value="edge" label="Microsoft Edge">
@@ -98,6 +100,8 @@ These extensions are currently not available in the public store. Install them m
 8. Done! Now you can see both **CompuTec WebUp Client** and **CompuTec WebUp Manager** extensions on the **Installed extensions** list of your Microsoft Edge browser.
 
     ![A help screen showing installed webup extensions in Microsoft Edge browser](./media/e5-webup-manual-inst-browser-extension-edge-installed.png)
+
+9. You can now return to the [main installation guide](https://learn.computec.one/docs/webup/installation-and-activation#step-6-verify-the-integration) and continue with the next steps.
 
   </TabItem>
 
@@ -143,6 +147,8 @@ This extension is currently not available in the public store. Install it manual
 Firefox only supports **temporary loading** of unpacked extensions.  
 The extension must be reloaded each time you restart Firefox.
 :::
+
+8. You can now return to the [main installation guide](https://learn.computec.one/docs/webup/installation-and-activation#step-6-verify-the-integration) and continue with the next steps.
 
   </TabItem>
 </Tabs>
