@@ -12,10 +12,6 @@ You’ll need to install two extensions:
 - CompuTec WebUp Client – for end users
 - CompuTec WebUp Manager – for consultants and key users
 
-:::info[note]
-These extensions are currently not available in public stores. Install them manually using the provided installation package and this guide until they are validated by Google Chrome, Mozilla Firefox and Microsoft Edge.
-:::
-
 ## Browser Extension Installation
 
 Select your browser to see the installation steps:
@@ -30,6 +26,10 @@ Select your browser to see the installation steps:
 2. Click [**this link**](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpManager_3.0.2.zip) to dowload the **CompuTec WebUp Manager** extension.
 
 3. Extract both downloaded files.
+
+:::info[note]
+These extensions are currently not available in public store. Install them manually using the provided installation packages and this guide until they are validated by Google Chrome.
+:::
 
 ### Step 2: Install the extensions for the Google Chrome browser
 
@@ -67,6 +67,10 @@ Select your browser to see the installation steps:
 
 3. Extract both downloaded files.
 
+:::info[note]
+These extensions are currently not available in public store. Install them manually using the provided installation packages and this guide until they are validated by Microsoft Edge.
+:::
+
 ### Step 2: Install the extensions for Microsoft Edge browser
 
 1. Open the **Microsoft Edge** browser.
@@ -103,11 +107,11 @@ Select your browser to see the installation steps:
 
 1. Click [**this link**](https://download.computec.one/software/appengine/plugins/webup/extensions/firefox/CompuTecWebUpClient_3.0.1.zip) to download the **CompuTec WebUp Client** extension.
 
-    :::info[note]
-    Currently, the CompuTec WebUp Manager extension is not available for the Mozilla Firefox browser.
-    :::
-
 2. Extract the downloaded file.
+
+:::info[note]
+This extension is currently not available in public store. Install it manually using the provided installation package and this guide until it's validated by Mozilla Firefox.
+:::
 
 ### Step 2: Install the extension for the Mozilla Firefox browser
 
