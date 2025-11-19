@@ -50,19 +50,25 @@ To manually install and activate CompuTec WebClient Start, follow these steps:
 
 3. In **System Details** section, click **Download CompuTec WebClient CTStart** installation pack.
 
-    ![A help screen showing where to find a linkt to the CompuTec WebClient Start Installation Pack](./media/working-with-sap-business-one-web-client/2-3-appengine-admin-panel-install-webclient-manually.png)
+    ![A help screen showing where to find a link to the CompuTec WebClient Start Installation Pack](./media/working-with-sap-business-one-web-client/2-3-appengine-admin-panel-install-webclient-manually.png)
 
 4. Open the **Extension Manager** in your browser using this address: `https://<SAPExtensionHost>:<SAPExtensionPort>/ExtensionManager/.` Replace the placeholders with your system values, for example: `https://hanadev:40000/ExtensionManager/.`
 
-5. Import the downloaded installation pack into the **Extension Manager**.
+    :::info[note]
+    Make sure you have the necessary permissions to securely access the Extension Manager.
+    :::
 
-6. Activate **CompuTec WebClient Start** for the selected company.
+5. Click **Import**.
 
-7. Follow the instructions on the screen to finish the setup.
+    ![A help screen showing how to import the downloaded file to the extension manager](./media/working-with-sap-business-one-web-client/10-appengine-import-the-webclientstart-extension-to-sapb1.png)
 
-:::info[note]
-Make sure you have the necessary permissions to securely access the Extension Manager.
-:::
+6. Choose the downloaded installation pack file, and send it to the **Extension Manager**.
+
+    ![A help screen showing how to choose the file and send it to the extension manager](./media/working-with-sap-business-one-web-client/11-appengine-add-the-webclientstart-extension-to-sapb1.png)
+
+7. Activate **CompuTec WebClient Start** for the selected company.
+
+8. Follow the instructions on the screen to finish the setup.
 
 ## Step 3: Configure Content Security Policy (CSP) Settings
 
