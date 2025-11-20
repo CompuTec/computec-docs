@@ -7,10 +7,10 @@ import TabItem from '@theme/TabItem';
 
 # Manual CompuTec WebUp Extension Installation
 
-You’ll need to install two extensions:
+You’ll need to install two browser extensions:
 
-- CompuTec WebUp Client – for end users
-- CompuTec WebUp Manager – for consultants and key users
+- **CompuTec WebUp Client** – for end users
+- **CompuTec WebUp Manager** – for consultants and key users
 
 ## Browser Extension Installation
 
@@ -19,7 +19,7 @@ Select your browser to see the installation steps:
 <Tabs>
   <TabItem value="chrome" label="Google Chrome" default>
 
-### Step 1: Download the WebUp extensions for the Google Chrome browser
+### Step 1: Download the WebUp extensions for Google Chrome
 
 1. Click [**this link**](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpClient_3.0.1.zip) to download the **CompuTec WebUp Client** extension.
 
@@ -31,7 +31,7 @@ Select your browser to see the installation steps:
 These extensions are currently not available in the public store. Install them manually using the provided installation packages until they are validated by Google.
 :::
 
-### Step 2: Install the extensions for the Google Chrome browser
+### Step 2: Install the extensions for Google Chrome
 
 1. Open the **Google Chrome** browser.
 
@@ -61,7 +61,7 @@ These extensions are currently not available in the public store. Install them m
 
   <TabItem value="edge" label="Microsoft Edge">
 
-### Step 1: Download the WebUp extensions for the Microsoft Edge browser
+### Step 1: Download the WebUp extensions for Microsoft Edge
 
 1. Click [**this link**](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpClient_3.0.1.zip) to download the **CompuTec WebUp Client** extension.
 
@@ -73,7 +73,7 @@ These extensions are currently not available in the public store. Install them m
 These extensions are currently not available in the public store. Install them manually using the provided installation packages until they are validated by Microsoft.
 :::
 
-### Step 2: Install the extensions for Microsoft Edge browser
+### Step 2: Install the extensions for Microsoft Edge
 
 1. Open the **Microsoft Edge** browser.
 
@@ -107,9 +107,13 @@ These extensions are currently not available in the public store. Install them m
 
   <TabItem value="firefox" label="Mozilla Firefox">
 
-### Step 1: Download the extension for the Mozilla Firefox browser
+### Step 1: Download the extension for Mozilla Firefox
 
 1. Click [**this link**](https://download.computec.one/software/appengine/plugins/webup/extensions/firefox/CompuTecWebUpClient_3.0.1.zip) to download the **CompuTec WebUp Client** extension.
+
+    :::info[note]
+    The **CompuTec WebUp Manager** extension is not available for Mozilla Firefox. If you need consultant or key-user functionality, use Google Chrome or Microsoft Edge.
+    :::
 
 2. Extract the downloaded file.
 
@@ -117,7 +121,7 @@ These extensions are currently not available in the public store. Install them m
 This extension is currently not available in the public store. Install it manually using the provided installation package until it's validated by Mozilla.
 :::
 
-### Step 2: Install the extension for the Mozilla Firefox browser
+### Step 2: Install the extension for Mozilla Firefox
 
 1. Open the **Mozilla Firefox** browser.
 
@@ -143,10 +147,10 @@ This extension is currently not available in the public store. Install it manual
 
     ![A help screen showing installed webup extension in Firefox browser](./media/f4-webup-manual-inst-browser-extension-firefox-installed.png)
 
-:::info[note]  
-Firefox only supports **temporary loading** of unpacked extensions.  
-The extension must be reloaded each time you restart Firefox.
-:::
+    :::info[note]  
+    Firefox only supports **temporary loading** of unpacked extensions.  
+    The extension must be reloaded each time you restart Firefox.
+    :::
 
 8. You can now return to the [main installation guide](https://learn.computec.one/docs/webup/installation-and-activation#step-6-verify-the-integration) and continue with the next steps.
 
