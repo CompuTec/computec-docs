@@ -40,7 +40,7 @@ Whenever you deactivate or activate a new company, repeat this process to instal
 
 ## Step 2: Install and activate CompuTec WebClient Start manually using the Extension Manager
 
-Manual activation is mainly provided for SAP Business One Cloud Control Center (CCC).
+Sometimes, you have to install CompuTec WebClient Start extensions manually. This kind of activation is mainly provided for SAP Business One Cloud Control Center (CCC).
 
 To manually install and activate CompuTec WebClient Start, follow these steps:
 
@@ -62,13 +62,31 @@ To manually install and activate CompuTec WebClient Start, follow these steps:
 
     ![A help screen showing how to import the downloaded file to the extension manager](./media/working-with-sap-business-one-web-client/10-appengine-import-the-webclientstart-extension-to-sapb1.png)
 
-6. Choose the downloaded installation pack file, and send it to the **Extension Manager**.
+6. Choose the downloaded installation pack file, and click **Upload**.
 
     ![A help screen showing how to choose the file and send it to the extension manager](./media/working-with-sap-business-one-web-client/11-appengine-add-the-webclientstart-extension-to-sapb1.png)
 
-7. Activate **CompuTec WebClient Start** for the selected company.
+7. Click **Next**.
 
-8. Follow the instructions on the screen to finish the setup.
+8. (Optional) You can **Specify Shared Parameters**, and click **Finish**.
+
+9. Navigate to **Company Assignment**, and select the company on the list on the left.
+
+    ![A help screen showing how to choose the file and send it to the extension manager](./media/working-with-sap-business-one-web-client/12-appengine-company-assignment-tab.png)
+
+10. In **Extensions**, click **Assign**.
+
+    ![A help screen showing how to choose the file and send it to the extension manager](./media/working-with-sap-business-one-web-client/13-appengine-company-assignment-tab-assign.png)
+
+11. In **Extension Assignment Wizard**, choose the **CompuTec.Start** extension from the list and click **Next**.
+
+    ![A help screen showing how to choose the file and send it to the extension manager](./media/working-with-sap-business-one-web-client/14-appengine-company-assignment-tab-choose-extension.png)
+
+12. (Optional) In **User Preferences**, you can change the **Startup Mode** for each user, and click **Next**.
+
+13. Click **Finish** to complete the setup.
+
+14. Done! You've successfully installed and activated CompuTec WebClient Start extension.
 
 ## Step 3: Configure Content Security Policy (CSP) Settings
 
