@@ -37,7 +37,7 @@ CompuTec ProcessForce extends the capabilities of SAP Business One for advanced 
 
 Here, you can download CompuTec License Server for CompuTec ProcessForce.
 
-::caution
+:::caution
     CompuTec License Server can be installed in Windows environment only.
 :::
 
