@@ -4,11 +4,11 @@ sidebar_position: 9
 
 # Working with SAP Business One Web Client
 
-The **CompuTec WebClient Start** is an essential tool for integrating CompuTec AppEngine plugins and extending the functionality of the SAP Business One Web Client. It connects the two systems so you can extend your ERP with more tools and features. The CompuTec WebClient Start is installed during the company activation.
+**CompuTec WebClient Start** is an essential tool for integrating CompuTec AppEngine plugins and extending the functionality of the SAP Business One Web Client. It connects the two systems so you can extend your ERP with more tools and features. CompuTec WebClient Start is installed during the company activation.
 
 ## Step 1: Install the CompuTec WebClient Extension Package
 
-The **CmpuTec WebClient Extension Package** contains all plugins enabled for a specific company. Each company has its own plugin pack, so you must install it separately for every company. Installing the WebClient Extension is required to use CompuTec plugins in the SAP Business One Web Client.
+The **CompuTec WebClient Extension Package** contains all plugins enabled for a specific company. Each company has its own plugin pack, so you must install it separately for every company. Installing the WebClient Extension is required to use CompuTec plugins in the SAP Business One Web Client.
 
 To install the CompuTec WebClient Extension Package, follow these steps:
 
@@ -32,7 +32,7 @@ To install the CompuTec WebClient Extension Package, follow these steps:
 
     ![A help screen showing how to log in to install WebClient Extension](./media/working-with-sap-business-one-web-client/9-appengine-login-webclient-extension-installation.png)
 
-6. Done! The installation of WebClient Extension Package was completed successfully.
+6. Done! The installation of the WebClient Extension Package was completed successfully.
 
 :::info[note]
 Whenever you deactivate or activate a new company, repeat this process to install its updated CompuTec WebClient Extension Package.
@@ -40,22 +40,22 @@ Whenever you deactivate or activate a new company, repeat this process to instal
 
 ## Step 2: (Optional) Install and activate CompuTec WebClient Start manually using the Extension Manager
 
-Sometimes, you have to install CompuTec WebClient Start extensions manually. This kind of activation is mainly provided for SAP Business One Cloud Control Center (CCC).
+Sometimes, you need to install CompuTec WebClient Start extension manually. This kind of activation is mainly provided for SAP Business One Cloud Control Center (CCC).
 
 To manually install and activate CompuTec WebClient Start, follow these steps:
 
-1. Log in to **AppEngine Administration Panel**.
+1. Log in to **CompuTec AppEngine Administration Panel**.
 
 2. Navigate to **Administration Panel** > **System**.
 
-3. In **System Details** section, click **Download CompuTec WebClient CTStart** installation pack.
+3. In the **System Details** section, click **Download CompuTec WebClient CTStart** installation pack.
 
     ![A help screen showing where to find a link to the CompuTec WebClient Start Installation Pack](./media/working-with-sap-business-one-web-client/2-3-appengine-admin-panel-install-webclient-manually.png)
 
 4. Open the **Extension Manager** in your browser using this address: `https://<SAPExtensionHost>:<SAPExtensionPort>/ExtensionManager/.` Replace the placeholders with your system values, for example: `https://hanadev:40000/ExtensionManager/.`
 
     :::info[note]
-    Make sure you have the necessary permissions to securely access the Extension Manager.
+    Make sure you have the necessary permissions to access the Extension Manager.
     :::
 
 5. Click **Import**.
@@ -92,7 +92,7 @@ To manually install and activate CompuTec WebClient Start, follow these steps:
 
 To enable proper functionality of the SAP Web Client, especially for embedded frames and cross-domain requests, you need to configure Content Security Policy (CSP) settings in SAP Web Client. Correct CSP configuration prevents security issues and ensures smooth integration.
 
-1. In the **AppEngine Administration Panel**, navigate to **System** > **System Details**.  
+1. In the **CompuTec AppEngine Administration Panel**, navigate to **System** > **System Details**.  
 
     ![System Details help screen in CSP configuration process](./media/working-with-sap-business-one-web-client/3-appengine-config-csp.png)  
 
@@ -114,7 +114,7 @@ To enable proper functionality of the SAP Web Client, especially for embedded fr
 
     ![A help screen showing where to find General Settings in SAP Business One Web Client](./media/working-with-sap-business-one-web-client/7-appengine-general-settings-sapb1-menu.png)  
 
-7. Paste the copied entries to the **Content Security Policy** field.  
+7. Paste the copied entries into the **Content Security Policy** field.  
 
     ![A help screen showing where to paste the required CSP entries in CSP configuration process](./media/working-with-sap-business-one-web-client/8-appengine-config-paste-csp-entries.png)
 
@@ -123,5 +123,5 @@ To enable proper functionality of the SAP Web Client, especially for embedded fr
 9. Done! You've successfully configured CSP in SAP Web Client.
 
 :::info[note]
-If you need help at any point, feel free to reach out: [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp).
+If you need help at any point, feel free to reach out through the [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp).
 :::
