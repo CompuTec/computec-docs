@@ -12,7 +12,7 @@ This guide walks you through installing and activating the **CompuTec WebUp exte
 
 The **CompuTec WebUp** solution is made up of three key components:
 
-- **CompuTec WebUp App**: Handles customization and automation logic, and it stores configuration settings.
+- **CompuTec WebUp App**: Handles customization and automation logic, and stores configuration settings.
 - **CompuTec WebUp Manager**: Provides a user interface for creating, editing, and testing configurations.
 - **CompuTec WebUp Client**: Extends the SAP Business One Web Client where the standard extensibility framework is limited.
 
