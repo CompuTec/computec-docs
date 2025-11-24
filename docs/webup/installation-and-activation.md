@@ -10,7 +10,7 @@ This guide walks you through installing and activating the **CompuTec WebUp exte
 
 ## Overview
 
-The CompuTec WebUp solution is made up of three key components:
+The **CompuTec WebUp** solution is made up of three key components:
 
 - **CompuTec WebUp App**: Handles customization and automation logic, and it stores configuration settings.
 - **CompuTec WebUp Manager**: Provides a user interface for creating, editing, and testing configurations.
@@ -20,19 +20,19 @@ The CompuTec WebUp solution is made up of three key components:
 
 Before installing CompuTec WebUp, make sure the following prerequisites are met:
 
-- Check if **CompuTec AppEngine** is installed and configured. Follow the [AppEngine installation guide](/docs/appengine/administrators-guide/configuration-and-administration/installation) and [AppEngine configuration guide](/docs/appengine/administrators-guide/configuration-and-administration/configuration) for detailed instructions.
-- Make sure that the company is **active in AppEngine**, and the **SAP Web Client is configured**. For full instructions, [see the configuration guide.](/docs/appengine/administrators-guide/configuration-and-administration/working-with-sap-business-one-web-client).
+- Check if **CompuTec AppEngine** is installed and configured. Follow the [CompuTec AppEngine installation guide](/docs/appengine/administrators-guide/configuration-and-administration/installation) and [CompuTec AppEngine configuration guide](/docs/appengine/administrators-guide/configuration-and-administration/configuration) for detailed instructions.
+- Make sure that the company is **active in CompuTec AppEngine**, and the **SAP Web Client is configured**. For full instructions, [see the configuration guide.](/docs/appengine/administrators-guide/configuration-and-administration/working-with-sap-business-one-web-client).
 
-## Step 1: Install the WebUp App
+## Step 1: Install the CompuTec WebUp App
 
-To install the **WebUp App** directly from the AppEngine Store, follow the [app installation instructions](/docs/appengine/administrators-guide/configuration-and-administration/plugins/plugin-installation-process).  
-The installation process is fully automated and managed within AppEngine.
+To install the **CompuTec WebUp App** directly from the CompuTec AppEngine Store, follow the [installation instructions](/docs/appengine/administrators-guide/configuration-and-administration/plugins/plugin-installation-process).  
+The installation process is fully automated and managed within CompuTec AppEngine.
 
 ## Step 2: Configure CORS in the SAP Web Client
 
-When activating your company in AppEngine, set up CORS (Cross-Origin Resource Sharing) for the Web Client:
+When activating your company in CompuTec AppEngine, set up CORS (Cross-Origin Resource Sharing) for the SAP Business One Web Client:
 
-1. In the **AppEngine Administration Panel**, go to **Configuration** > **Advanced Configuration**.  
+1. In the **CompuTec AppEngine Administration Panel**, go to **Configuration** > **Advanced Configuration**.  
 
     ![screen showing where to find advanced configuration when setting up CORS process](./media/1-webup-cors-config.png)  
 
@@ -40,13 +40,13 @@ When activating your company in AppEngine, set up CORS (Cross-Origin Resource Sh
 
     ![Advanced configuration help screen showing where to enter the web client CORS address](./media/2-webup-config-cors-address.png)
 
-3. Restart **AppEngine** to apply changes.
+3. Restart **CompuTec AppEngine** to apply changes.
 
 ## Step 3: Set up Content Security Policy
 
 Make sure that the Content Security Policy (CSP) configuration in the SAP Web Client includes all required entries. It’s pre-filled with basic data, and you’ll have to add your own CSP entries:
 
-1. In the **AppEngine Administration Panel**, navigate to **System** > **System Details**.  
+1. In the **CompuTec AppEngine Administration Panel**, navigate to **System** > **System Details**.  
 
     ![System Details help screen in CSP configuration process](./media/3-webup-config-csp.png)  
 
@@ -101,29 +101,29 @@ You’ll need to install two extensions:
 
 :::info[note]
 These extensions are currently **not available in public stores**.
-Install them manually using the provided installation package and [this guide](./other/extension-manual-installation.md) until they are validated by Google Chrome, Mozilla Firefox and Microsoft Edge.
+Install them manually using the provided installation package and [this guide](./other/extension-manual-installation.md) until they are validated by Google, Mozilla and Microsoft.
 :::  
 
 ## Step 6: Verify the integration
 
-After installation, confirm that both the AppEngine plugin and the browser extension are active and communicating.
+After installation, confirm that both the CompuTec AppEngine plugin and the browser extension are active and communicating.
 
-1. Pin the **WebUp extension** to your browser toolbar for easy access.
+1. Pin the **CompuTec WebUp extension** to your browser toolbar for easy access.
 2. Navigate to the **SAP Web Client** page.
-3. Click the **WebUp extension** icon to activate the integration.  
+3. Click the **CompuTec WebUp extension** icon to activate the integration.  
 
-    ![A help screen showing where to find the WebUp extension in your browser toolbar](./media/12-webup-config-browser-extension.png)
+    ![A help screen showing where to find the CompuTec WebUp extension in your browser toolbar](./media/12-webup-config-browser-extension.png)
 
 :::info[Note]
-If you were already on the SAP Web Client page before installing the WebUp browser extension, refresh the page before activating the extension.
+If you were already on the SAP Web Client page before installing the CompuTec WebUp browser extension, refresh the page before activating the extension.
 :::
 
 ## Updates
 
-- Updates are delivered automatically via the AppEngine Store.  
+- Updates are delivered automatically via the CompuTec AppEngine Store.  
 - All configuration profiles and assignments are preserved during updates.  
 - If a new version of the browser extension is available, you’ll be prompted to update it after installation.
-- Maintain your AppEngine and WebUp versions up to date to ensure compatibility.
+- Maintain your CompuTec AppEngine and CompuTec WebUp versions up to date to ensure compatibility.
 
 :::info[Note]
 For technical issues or feature requests, contact the [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp). Feedback on usability and performance is always welcome.

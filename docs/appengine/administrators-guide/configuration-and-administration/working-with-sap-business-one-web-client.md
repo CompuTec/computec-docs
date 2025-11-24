@@ -8,23 +8,23 @@ sidebar_position: 9
 
 ## Step 1: Install the CompuTec WebClient Extension Package
 
-The **CompuTec WebClient Extension Package** contains all plugins enabled for a specific company. Each company has its own plugin pack, so you must install it separately for every company. Installing the WebClient Extension is required to use CompuTec plugins in the SAP Business One Web Client.
+The **CompuTec WebClient Extension Package** contains all plugins enabled for a specific company. Each company has its own plugin pack, so you must install it separately for every company. Installing the CompuTec WebClient Extension is required to use CompuTec plugins in the SAP Business One Web Client.
 
-To install the CompuTec WebClient Extension Package, follow these steps:
+To install the **CompuTec WebClient Extension Package**, follow these steps:
 
 1. Log in to the **CompuTec AppEngine Administration Panel**.
 
-    ![A help screen showing the AppEngine Administration Panel login screen](./media/working-with-sap-business-one-web-client/00-appengine-admin-panel-login-screen.png)
+    ![A help screen showing the CompuTec AppEngine Administration Panel login screen](./media/working-with-sap-business-one-web-client/00-appengine-admin-panel-login-screen.png)
 
 2. Navigate to **Configuration**.
 
-    ![A help screen showing where to find the Configuration in AppEngine Administration Panel](./media/working-with-sap-business-one-web-client/1-appengine-admin-panel-configuration.png)
+    ![A help screen showing where to find the Configuration in CompuTec AppEngine Administration Panel](./media/working-with-sap-business-one-web-client/1-appengine-admin-panel-configuration.png)
 
 3. Find your company in the **Companies** list.
 
-    ![A help screen showing where to find the company details in AppEngine Administration Panel](./media/working-with-sap-business-one-web-client/2-1-appengine-admin-panel-company-details.png)
+    ![A help screen showing where to find the company details in CompuTec AppEngine Administration Panel](./media/working-with-sap-business-one-web-client/2-1-appengine-admin-panel-company-details.png)
 
-4. Click **Install WebClient Extension**.
+4. Click **Install CompuTec WebClient Extension**.
 
     ![A help screen showing where to find an installation link for the CompuTec WebClient Extension](./media/working-with-sap-business-one-web-client/2-2-appengine-admin-panel-install-extension.png)
 
@@ -32,7 +32,7 @@ To install the CompuTec WebClient Extension Package, follow these steps:
 
     ![A help screen showing how to log in to install WebClient Extension](./media/working-with-sap-business-one-web-client/9-appengine-login-webclient-extension-installation.png)
 
-6. Done! The installation of the WebClient Extension Package was completed successfully.
+6. Done! The installation of the CompuTec WebClient Extension Package was completed successfully.
 
 :::info[note]
 Whenever you deactivate or activate a new company, repeat this process to install its updated CompuTec WebClient Extension Package.
