@@ -28,11 +28,11 @@ This user-friendly tool allows you to quickly and easily create custom reports a
 
 ## Variants
 
-Variants are preset report configurations. When you install the plugin, you automatically receive one standard Variant, which is set as the default. You can easily create your own Variants or customize the existing ones.
+Variants are preset report configurations. When you install the plugin, you automatically receive one standard variant, which is set as the default. You can easily create your own variants or customize the existing ones.
 
 To **create a new variant**, follow these steps:
 
-1. Click the arrow next to your Standard variant name.
+1. Click the **arrow** next to your standard variant name.
 
     ![Variants](./media/overview/03-appengine-analytics-variants1.png)
 
@@ -40,7 +40,7 @@ To **create a new variant**, follow these steps:
 
     ![Variants](./media/overview/04-appengine-analytics-variants2save.png)
 
-3. Choose the Variant name, decide if you want to set it as a default one and if you want to make it available for all users (Public).
+3. Choose the variant name, and decide if you want to set it as a default one. Here, you can also make it available for all users (Public) or leave it as a private one.
 
     ![Variants](./media/overview/05-appengine-analytics-variants-savenew.png)
 
@@ -48,7 +48,7 @@ To **create a new variant**, follow these steps:
 
 To **manage your existing variants**, follow these steps:
 
-1. Click the arrow next to your Standard variant name.
+1. Click the **arrow** next to your standard variant name.
 
     ![Variants](./media/overview/03-appengine-analytics-variants1.png)
 
@@ -62,7 +62,10 @@ To **manage your existing variants**, follow these steps:
 
 ## Main view
 
-Before you begin working with the analytics, it’s helpful to know how each dashboard is structured. It includes two main sections: **Filters**, where you define your criteria, and **Reports**, where the filtered results are displayed.
+Before you begin working with the analytics, it’s helpful to know how each dashboard is structured. It includes two main sections:
+
+- **Filters**, where you define your criteria
+- **Reports**, where the filtered results are displayed
 
 ![Report](./media/overview/01-appengine-analytics-overview.png)
 
