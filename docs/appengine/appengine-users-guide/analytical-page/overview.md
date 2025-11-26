@@ -111,7 +111,7 @@ To customize your filter, follow these steps:
 
 #### Visualization Filters
 
-Selected filters can also be displayed as micro charts. These visual summaries offer an interactive way to drill into your data and quickly understand key metrics. 
+Selected filters can also be displayed as micro charts. These visual summaries offer an interactive way to drill into your data and quickly understand key metrics.
 
 You can click on specific parts of the filter to see the detailed data on the metric.
 
@@ -120,7 +120,6 @@ You can click on specific parts of the filter to see the detailed data on the me
 ### Report
 
 Reports can be displayed as a Chart, a Table, or a combination of both. You can switch between these display modes at any time.
-
 
     ![Report](./media/overview/23-appengine-analytics-reports-overview.png)
 
