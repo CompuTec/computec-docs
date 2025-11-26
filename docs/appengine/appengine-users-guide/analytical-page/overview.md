@@ -18,7 +18,7 @@ This user-friendly tool allows you to quickly and easily create custom reports a
 
     ![Access](./media/overview/02a-appengine-analytics-view.png)
 
-2. Choose your data source by clicking the component name. In our example, we'll be analyzing Manufacturin Order transactions, so we choose MO360.
+2. Choose your data source by clicking the component name. In our example, we'll be analyzing Manufacturing Order transactions, so we choose MO360.
 
     ![Access](./media/overview/02b-appengine-analytics-view.png)
 
@@ -40,7 +40,7 @@ To **create a new variant**, follow these steps:
 
     ![Variants](./media/overview/04-appengine-analytics-variants2save.png)
 
-3. Choose the variant name, and decide if you want to set it as a default one. Here, you can also make it available for all users (Public) or leave it as a private one.
+3. Type the variant name and decide if you want to set it as a default one. Here, you can also make it available to all users (Public) or keep it private.
 
     ![Variants](./media/overview/05-appengine-analytics-variants-savenew.png)
 
