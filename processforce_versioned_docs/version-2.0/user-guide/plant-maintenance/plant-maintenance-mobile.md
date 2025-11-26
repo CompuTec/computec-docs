@@ -15,7 +15,7 @@ sidebar_position: 2
     3. Mobile devices and servers have to be in the same Wi-Fi network.
 
 ### Installation
-
+ 
 1. Enter the address in a browser on the mobile device:
 [Launchpad](/docs/appengine/appengine-users-guide/launchpad)
 2. Select Launchpad and log in.
