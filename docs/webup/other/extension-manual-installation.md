@@ -21,9 +21,9 @@ Select your browser to see the installation steps:
 
 ### Step 1: Download the CompuTec WebUp extensions for Google Chrome
 
-1. Click [**this link**](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpClient_3.0.1.zip) to download the **CompuTec WebUp Client** extension.
+1. Click [**this link**](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpClient_1.0.10.zip) to download the **CompuTec WebUp Client** extension.
 
-2. Click [**this link**](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpManager_3.0.2.zip) to download the **CompuTec WebUp Manager** extension.
+2. Click [**this link**](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpManager_1.0.8.zip) to download the **CompuTec WebUp Manager** extension.
 
 3. Extract both downloaded files.
 
@@ -63,9 +63,9 @@ These extensions are currently not available in the public store. Install them m
 
 ### Step 1: Download the CompuTec WebUp extensions for Microsoft Edge
 
-1. Click [**this link**](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpClient_3.0.1.zip) to download the **CompuTec WebUp Client** extension.
+1. Click [**this link**](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpClient_1.0.10.zip) to download the **CompuTec WebUp Client** extension.
 
-2. Click [**this link**](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpManager_3.0.2.zip) to download the **CompuTec WebUp Manager** extension.
+2. Click [**this link**](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpManager_1.0.8.zip) to download the **CompuTec WebUp Manager** extension.
 
 3. Extract both downloaded files.
 
@@ -109,7 +109,7 @@ These extensions are currently not available in the public store. Install them m
 
 ### Step 1: Download the extension for Mozilla Firefox
 
-1. Click [**this link**](https://download.computec.one/software/appengine/plugins/webup/extensions/firefox/CompuTecWebUpClient_3.0.1.zip) to download the **CompuTec WebUp Client** extension.
+1. Click [**this link**](https://download.computec.one/software/appengine/plugins/webup/extensions/firefox/CompuTecWebUpClient_1.0.10.zip) to download the **CompuTec WebUp Client** extension.
 
     :::info[note]
     The **CompuTec WebUp Manager** extension is not available for Mozilla Firefox. If you need consultant or key-user functionality, use Google Chrome or Microsoft Edge.
