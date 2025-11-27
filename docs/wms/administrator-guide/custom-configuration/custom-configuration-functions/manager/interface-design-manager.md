@@ -4,7 +4,9 @@ sidebar_position: 6
 
 # Interface Design Manager
 
-Workflow Designer Manager allows the creation of main menu layout templates and assigning them to a specific user. Thanks to it, it can be adjusted to individual needs, e.g., by putting main menu options into folders. Using Workflow Designer Manager to give a specific employee access only to particular options is also possible.
+The Interface Design Manager allows administrators to visually configure the layout of workflow screens used in CompuTec WMS. Through this tool, you can design the structure, appearance, and behavior of each transaction screen, ensuring that the user interface is optimized for operational efficiency.
+
+This manager provides the ability to merge or split containers, rename sections, assign functional areas and now, with the latest update, hide optional buttons and add custom icons for containers and transactions.
 
 ---
 
