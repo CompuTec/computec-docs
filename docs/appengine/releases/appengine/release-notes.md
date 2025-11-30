@@ -4,6 +4,32 @@ sidebar_position: 1
 
 # Release Notes
 
+## CompuTec AppEngine 3.2511.1
+
+**Release Date - 26 November 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Bug | AE Core | The PFI menu is not visible when logging in again with a different user. |
+| Bug | AE Administration | CompuTec AppEngine prompts to download the .rc version even when the official version is already installed. |
+| Bug | WebUpClient | Deactivate Action exhibits unexpected or inconsistent behavior. |
+| Bug | WebUpManager | In CompuTec WebUp, the view version always remains at 1.0.0.10 and does not update. |
+| Bug | AE Core | In Core, the Fake Schema Provider does not work for autoincrement objects, preventing proper testing. |
+| Bug | Manufacturing Order | TransNotification fails to block items in Revision Engineering, preventing the creation of Manufacturing Orders |
+| Bug | Manufacturing Order | Decimal quantities are not recognized correctly. |
+| Bug | Manufacturing Order | The DocNum is incorrect on multi-level Manufacturing Orders created from the Scheduling Board. |
+| Bug | Manufacturing Order | In Goods Receipt, an “Object reference” error occurs when there are set restrictions for Bin Location. |
+| Bug | AE Architecture | The header is not frozen, making it difficult to identify the meaning of each column. |
+| Bug | .netCore , AE Architecture | Swagger displays incorrect information when multiple objects or endpoints have the same name. |
+| Bug | MRP | Documents are not created from the grouping document. |
+| Bug | AE UAA | On the Login Page, when OIDC is disabled, the username and password input fields are not visible. |
+| Bug | WebUpClient | Switching to Preview Mode triggers the error: “Initialization of WebUp Client timed out. Please make sure it is installed in the browser.” |
+| Bug | WebUpManager | UDFs are missing when the corresponding field in parameters.DataModel is empty. |
+| Bug | WebUp | “Uncaught (in promise) Error: Failed to fetch Variables.” |
+| Bug | AE Plugins | Updating “DaysBeforeExpiry” triggers the error: “The JSON value could not be converted to System.Int32. Path: $.BatchStatusChangeSettings.DaysBeforeExpiry `LineNumber: 0` BytePositionInLine: 122.” |
+| Bug | AE Core | The Version class does not correctly handle revision numbers and suffixes. |
+| Bug | AE OData | Key and No fields are being selected even when they are not included in the select parameter. |
+
 ## CompuTec AppEngine 3.2510.1
 
 **Release Date - 29 October 2025**

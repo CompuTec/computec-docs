@@ -8,6 +8,36 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 
 ---
 
+## CompuTec WMS Plugin 3.2511.1
+
+**Release Date - 27 November 2025**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Improvement | Client | Interface Design Manager: Add the ability to hide options and include an icon for Container. |
+| Improvement | Client Android | Pick List: Add color differentiation for Pick Lists that have been updated. |
+| Improvement | Server | Document Details: Display a Preview List on the screen. |
+| Improvement | Server | Move Check Point Validation to the end of the validation queue. |
+| Improvement | Client | WMS Client Settings: Add options to set Default Warehouse and Bin for SU Operation creation. |
+| Bug | Client | Creating GRPO from Draft fails with error: “Cannot add or update document; Specify the UoM code.” |
+| Bug | Client, Client Android | Delivery from Sales Order – Allocated serial numbers are marked as 1/1 and incorrectly moved to the bottom of the list. |
+| Bug | Client | Delivery from Sales Order - Catch Weight allocation issue after scanning: system creates extra lines and shows incorrect total quantity. |
+| Bug | Client | Double-scanning an SU Code incorrectly opens the window assigned to an Existing SU. |
+| Bug | Client, Client Android | Unable to deliver orders when SU/Batch quantities exceed the entered delivery quantity. |
+| Bug | Server | SU Info: Additional SU fields are not displayed on the first screen in other transactions. |
+| Bug | Server | Pick and Pack: UDF linked to a Business Object is displayed as a text field instead of a dropdown list. |
+| Bug | Server | Pick List: SU UDFs on the main SU screen do not display values from the associated SU. |
+| Bug | Client | Editor control is not enabled on Android 14 devices. |
+| Bug | Server | GRPO: Cannot add items when the Bin Code field is empty. |
+| Bug | Server | Stock Transfer: Empty serials in SU trigger the error “Cannot add row (...)”. |
+| Bug | Server | Pick List and Delivery: Removing an SU causes an “Object reference” error. |
+| Bug | Server | SU: System does not allow decreasing quantity and fails to handle updates or additions when key fields are not properly filled. |
+| Bug | Server | Stock Transfer: The Hide SU option does not function correctly. |
+| Bug | Server | Sales Order from Pick List: Quantity displayed comes from the Sales Order instead of the Pick List. |
+| Bug | Client | Delivery Document: All serials appear empty, affecting both Sales Order and Pick List scenarios. |
+| Bug | Client | SU Disassembly: System does not allow scanning SU or SSCC codes without prefixes. |
+| Bug | Server | Delivery from Pick List: The same batch is displayed from three different locations. |
+
 ## CompuTec WMS Plugin 3.2510.1
 
 **Release Date - 29 October 2025**

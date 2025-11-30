@@ -31,7 +31,7 @@ In the new window on the left, there are available Templates; on the right, acti
 
 Clicking Load leads to Workflow Designer Manager, where it is possible to create a main menu template:
 
-![Workflow Editing](./media/workflow-designer-manager-editing.webp)
+![Workflow Editing](./media/workflow-designer-manager-editing.png)
 
 The form is divided into three panels:
 
@@ -61,7 +61,7 @@ Click the drop-down list next to Enable Interface Design Manager to choose a use
 
 Click Set Template, choose a template assigned to a user, and click Save.
 
-![Assigning Template](./media/assigning-template.webp)
+![Assigning Template](./media/assigning-template.png)
 
 :::warning
     Restarting the CompuTec WMS Server is required to apply the changes to a user.

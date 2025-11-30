@@ -34,6 +34,7 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 | Bug | Bill of Materials, Manufacturing Order | Advanced Operation Relations cannot be added in BOM and MO forms. |
 | Bug | AppEngine, Quality Control | Job 'QualityControlTestDocumentsGeneratorJob' does not create a Quality Control Test document. |
 | Bug | MRP | Documents are not created from grouping document. |
+| Bug | AE Administration Panel | AppEngine prompts to download the .rc version even when the official version is already installed. |
 
 ## CompuTec.ProcessForce 3.2511.1
 
