@@ -43,7 +43,7 @@ jobs:
           ENV=$([[ "$GITHUB_EVENT_NAME" =~ ^(workflow_dispatch|push)$ ]] && echo "PRODUCTION" || echo "DEVELOPMENT")
           echo "ENV=$ENV" >> $GITHUB_OUTPUT
       - name: Checkout the repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: ${{ github.event.pull_request.head.sha || github.ref }}
           submodules: true
