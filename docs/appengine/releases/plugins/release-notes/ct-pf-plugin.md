@@ -8,6 +8,34 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 
 ---
 
+## CompuTec.ProcessForce 3.2511.2
+
+**Release Date - 26 November 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Bug | MRP | The update time displayed in the MRP scenario list is incorrect. |
+| Bug | MRP | Documents are not created from the grouping document as expected. |
+| Bug | Quality Control | In Batch Master Data, the NCMR link is missing and the DocNum is always returned as 0 instead of the correct document reference. |
+| Bug | API | Validation on routing code is not available in PFI. |
+| Bug | Resources | It is not possible to add linked tools in the Resource Master Data. |
+| Bug | Routings | 'Machine code" is greyed out for tools in routing, preventing proper assignment. |
+| Bug | Bill of Materials | The Sequence field in the Routing form does not auto-increment as new operations are added. |
+| Bug | MRP 2.5 | Running MRP with “Recalculate Stock by Batch Expiry Date = Y” results in an unexpected system error.: Document with key 0 already exists in the collection. Document type: GoodsIssue, DocEntry:0, Draft:False." |
+| Bug | Manufacturing Order | PostTransaction does not save changes for MORs created via the Planning Panel. |
+| Bug | Synchronization | The system continuously shows 5 Manufacturing Orders pending for synchronization, but neither synchronizes them nor returns a meaningful error message. |
+| Bug | Bill of Materials | The system does not allow copying multiple Resources from Excel and pasting them into the Production Process. |
+| Bug | Manufacturing Order | Copy-paste from Excel does not work correctly in the Manufacturing Order form. |
+| Bug | Gantt Chart, Manufacturing Order | The pop-up message shown during MO updates in the Gantt chart appears once per MO, instead of displaying a single consolidated message. |
+| Bug | Calendar, Resources | The resource calendar is not updated completely. |
+| Bug | MRP 2.5 | MRP 2.5 (Core) produces no recommendations or results. |
+| Bug | Production Costing | Costed BOM displays incorrect quantities and costs for semi-finished items, resulting in inaccurate cost roll-ups. |
+| Bug | Synchronization | “Restore Item Details” does not synchronize the associated planning data. |
+| Bug | Bill of Materials, Manufacturing Order | Advanced Operation Relations cannot be added in BOM and MO forms. |
+| Bug | AppEngine, Quality Control | Job 'QualityControlTestDocumentsGeneratorJob' does not create a Quality Control Test document. |
+| Bug | MRP | Documents are not created from grouping document. |
+| Bug | AE Administration Panel | AppEngine prompts to download the .rc version even when the official version is already installed. |
+
 ## CompuTec.ProcessForce 3.2511.1
 
 **Release Date - 10 November 2025**
