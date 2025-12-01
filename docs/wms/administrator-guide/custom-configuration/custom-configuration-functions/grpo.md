@@ -133,6 +133,8 @@ This guide provides an overview of recent updates to the Goods Receipt PO (GRPO)
 
 26. **Do not set default Bin Code**: The Location field is left blank. The user must select it manually or scan the barcode.
 
+27. **Force updating batch udfs**: This option enables you to update and overwrite the UDF values for batches that already exist.
+
 ## Changes
 
 Old View of the Goods Receipt PO Tab
