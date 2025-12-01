@@ -64,7 +64,7 @@ When a default warehouse or bin location is configured in the WMS Options menu, 
 
     ![Open WMS Client](./media/su-settings/open-wms-client.png)![new su](./media/su-settings/su-operations.png)![SU wizard](./media/su-settings/su-wizard.png)![SU creation](./media/su-settings/su-creation.png)
 
-2. Enter the preferred warehouse/bin value and Save the configuration.
+2. Enter the preferred warehouse/bin value and Save.
 
     ![Warehous](./media/su-settings/warehouse.png)![Warehous](./media/su-settings/warehouse-selection.png)
 
