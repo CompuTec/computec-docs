@@ -21,27 +21,27 @@
   },
   "link.item.label.CompuTec ProcessForce": {
     "message": "CompuTec ProcessForce",
-    "description": "The label of footer link with label=CompuTec ProcessForce linking to docs/processforce"
+    "description": "The label of footer link with label=CompuTec ProcessForce linking to docs\\processforce"
   },
   "link.item.label.CompuTec PDC": {
     "message": "CompuTec PDC",
-    "description": "The label of footer link with label=CompuTec PDC linking to docs/pdc"
+    "description": "The label of footer link with label=CompuTec PDC linking to docs\\pdc"
   },
   "link.item.label.CompuTec WMS": {
     "message": "CompuTec WMS",
-    "description": "The label of footer link with label=CompuTec WMS linking to docs/wms"
+    "description": "The label of footer link with label=CompuTec WMS linking to docs\\wms"
   },
   "link.item.label.CompuTec Labels": {
     "message": "CompuTec Labels",
-    "description": "The label of footer link with label=CompuTec Labels linking to docs/labels"
+    "description": "The label of footer link with label=CompuTec Labels linking to docs\\labels"
   },
   "link.item.label.CompuTec AppEngine": {
     "message": "CompuTec AppEngine",
-    "description": "The label of footer link with label=CompuTec AppEngine linking to docs/appengine"
+    "description": "The label of footer link with label=CompuTec AppEngine linking to docs\\appengine"
   },
   "link.item.label.CompuTec Premium": {
     "message": "CompuTec Premium",
-    "description": "The label of footer link with label=CompuTec Premium linking to docs/premium"
+    "description": "The label of footer link with label=CompuTec Premium linking to docs\\premium"
   },
   "link.item.label.Support": {
     "message": "Wsparcie",
@@ -58,5 +58,9 @@
   "copyright": {
     "message": "Treść serwisu prawnie chroniona © 2025 CompuTec S.A.",
     "description": "The footer copyright"
+  },
+  "link.item.label.CompuTec WebUp": {
+    "message": "CompuTec WebUp",
+    "description": "The label of footer link with label=CompuTec WebUp linking to docs\\webup"
   }
 }

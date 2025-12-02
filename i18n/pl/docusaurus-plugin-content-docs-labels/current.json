@@ -5,30 +5,30 @@
   },
   "sidebar.defaultSidebar.category.Administrator's Guide": {
     "message": "Administrator's Guide",
-    "description": "The label for category Administrator's Guide in sidebar defaultSidebar"
+    "description": "The label for category 'Administrator's Guide' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Configuration": {
     "message": "Configuration",
-    "description": "The label for category Configuration in sidebar defaultSidebar"
+    "description": "The label for category 'Configuration' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.CompuTec Gateway - Printer": {
     "message": "CompuTec Gateway - Printer",
-    "description": "The label for category CompuTec Gateway - Printer in sidebar defaultSidebar"
+    "description": "The label for category 'CompuTec Gateway - Printer' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.User's Guide": {
     "message": "User's Guide",
-    "description": "The label for category User's Guide in sidebar defaultSidebar"
+    "description": "The label for category 'User's Guide' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.SAP Add-on": {
     "message": "SAP Add-on",
-    "description": "The label for category SAP Add-on in sidebar defaultSidebar"
+    "description": "The label for category 'SAP Add-on' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Releases": {
     "message": "Releases",
-    "description": "The label for category Releases in sidebar defaultSidebar"
+    "description": "The label for category 'Releases' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Getting Help": {
     "message": "Getting Help",
-    "description": "The label for category Getting Help in sidebar defaultSidebar"
+    "description": "The label for category 'Getting Help' in sidebar 'defaultSidebar'"
   }
 }

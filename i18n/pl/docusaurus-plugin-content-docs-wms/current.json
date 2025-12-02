@@ -5,19 +5,19 @@
   },
   "sidebar.defaultSidebar.category.Administrator's Guide": {
     "message": "Administrator's Guide",
-    "description": "The label for category Administrator's Guide in sidebar defaultSidebar"
+    "description": "The label for category 'Administrator's Guide' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Installation": {
     "message": "Installation",
-    "description": "The label for category Installation in sidebar defaultSidebar"
+    "description": "The label for category 'Installation' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.WMS Server": {
     "message": "WMS Server",
-    "description": "The label for category WMS Server in sidebar defaultSidebar"
+    "description": "The label for category 'WMS Server' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.WMS Client": {
     "message": "WMS Client",
-    "description": "The label for category WMS Client in sidebar defaultSidebar"
+    "description": "The label for category 'WMS Client' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.WMS Client for Windows CE and Windows Handheld Compact": {
     "message": "WMS Client for Windows CE and Windows Handheld Compact",
@@ -25,35 +25,35 @@
   },
   "sidebar.defaultSidebar.category.CompuTec Gateway Service (Weight Scale & Label)": {
     "message": "CompuTec Gateway Service (Weight Scale & Label)",
-    "description": "The label for category CompuTec Gateway Service (Weight Scale & Label) in sidebar defaultSidebar"
+    "description": "The label for category 'CompuTec Gateway Service (Weight Scale & Label)' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.RDP Scanner Configuration": {
     "message": "RDP Scanner Configuration",
-    "description": "The label for category RDP Scanner Configuration in sidebar defaultSidebar"
+    "description": "The label for category 'RDP Scanner Configuration' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Android RDP": {
     "message": "Android RDP",
-    "description": "The label for category Android RDP in sidebar defaultSidebar"
+    "description": "The label for category 'Android RDP' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.SAP Business One Settings": {
     "message": "SAP Business One Settings",
-    "description": "The label for category SAP Business One Settings in sidebar defaultSidebar"
+    "description": "The label for category 'SAP Business One Settings' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Custom Configuration": {
     "message": "Custom Configuration",
-    "description": "The label for category Custom Configuration in sidebar defaultSidebar"
+    "description": "The label for category 'Custom Configuration' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Custom Configuration Functions": {
     "message": "Custom Configuration Functions",
-    "description": "The label for category Custom Configuration Functions in sidebar defaultSidebar"
+    "description": "The label for category 'Custom Configuration Functions' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Manager": {
     "message": "Manager",
-    "description": "The label for category Manager in sidebar defaultSidebar"
+    "description": "The label for category 'Manager' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Custom Query Manager": {
     "message": "Custom Query Manager",
-    "description": "The label for category Custom Query Manager in sidebar defaultSidebar"
+    "description": "The label for category 'Custom Query Manager' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Documentation Query and Transaction": {
     "message": "Documentation Query and Transaction",
@@ -65,74 +65,82 @@
   },
   "sidebar.defaultSidebar.category.Check Point Validation": {
     "message": "Check Point Validation",
-    "description": "The label for category Check Point Validation in sidebar defaultSidebar"
+    "description": "The label for category 'Check Point Validation' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Barcode Scanning": {
     "message": "Barcode Scanning",
-    "description": "The label for category Barcode Scanning in sidebar defaultSidebar"
+    "description": "The label for category 'Barcode Scanning' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Issue Reporting": {
     "message": "Issue Reporting",
-    "description": "The label for category Issue Reporting in sidebar defaultSidebar"
+    "description": "The label for category 'Issue Reporting' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Client Settings (Warehouses)": {
     "message": "Client Settings (Warehouses)",
-    "description": "The label for category Client Settings (Warehouses) in sidebar defaultSidebar"
+    "description": "The label for category 'Client Settings (Warehouses)' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.User's Guide": {
     "message": "User's Guide",
-    "description": "The label for category User's Guide in sidebar defaultSidebar"
+    "description": "The label for category 'User's Guide' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Transactions": {
     "message": "Transactions",
-    "description": "The label for category Transactions in sidebar defaultSidebar"
+    "description": "The label for category 'Transactions' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Delivery": {
     "message": "Delivery",
-    "description": "The label for category Delivery in sidebar defaultSidebar"
+    "description": "The label for category 'Delivery' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Goods Receipt PO": {
     "message": "Goods Receipt PO",
-    "description": "The label for category Goods Receipt PO in sidebar defaultSidebar"
+    "description": "The label for category 'Goods Receipt PO' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Pick & Pack": {
     "message": "Pick & Pack",
-    "description": "The label for category Pick & Pack in sidebar defaultSidebar"
+    "description": "The label for category 'Pick & Pack' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Pick Order": {
     "message": "Pick Order",
-    "description": "The label for category Pick Order in sidebar defaultSidebar"
+    "description": "The label for category 'Pick Order' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Pick Receipt": {
     "message": "Pick Receipt",
-    "description": "The label for category Pick Receipt in sidebar defaultSidebar"
+    "description": "The label for category 'Pick Receipt' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Returns": {
     "message": "Returns",
-    "description": "The label for category Returns in sidebar defaultSidebar"
+    "description": "The label for category 'Returns' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.New Stock Counting": {
     "message": "New Stock Counting",
-    "description": "The label for category New Stock Counting in sidebar defaultSidebar"
+    "description": "The label for category 'New Stock Counting' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Stock Transfer": {
     "message": "Stock Transfer",
-    "description": "The label for category Stock Transfer in sidebar defaultSidebar"
+    "description": "The label for category 'Stock Transfer' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Storage Units": {
     "message": "Storage Units",
-    "description": "The label for category Storage Units in sidebar defaultSidebar"
+    "description": "The label for category 'Storage Units' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Weight Scales": {
     "message": "Weight Scales",
-    "description": "The label for category Weight Scales in sidebar defaultSidebar"
+    "description": "The label for category 'Weight Scales' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Releases": {
     "message": "Releases",
-    "description": "The label for category Releases in sidebar defaultSidebar"
+    "description": "The label for category 'Releases' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.FAQs": {
     "message": "FAQs",
-    "description": "The label for category FAQs in sidebar defaultSidebar"
+    "description": "The label for category 'FAQs' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.CompuTec WMS Client for Windows CE and Windows Handheld Compact": {
+    "message": "CompuTec WMS Client for Windows CE and Windows Handheld Compact",
+    "description": "The label for category 'CompuTec WMS Client for Windows CE and Windows Handheld Compact' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Use Cases": {
+    "message": "Use Cases",
+    "description": "The label for category 'Use Cases' in sidebar 'defaultSidebar'"
   }
 }

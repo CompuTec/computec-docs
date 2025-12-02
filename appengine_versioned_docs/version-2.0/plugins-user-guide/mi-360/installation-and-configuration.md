@@ -6,7 +6,7 @@ sidebar_position: 2
 
 MI360 is a standard AppEngine Plugin designed to work with CompuTec ProcessForce. This guide explains how to install the plugin, mobile application, and configure background jobs for preventive maintenance automation.
 
-:::Info
+:::info
 MI360 is not a standalone application - it requires CompuTec ProcessForce Plugin to function. Ensure that CompuTec ProcessForce Plugin is installed and enabled in your company database.
 :::
 
