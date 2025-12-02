@@ -10,7 +10,7 @@ This section provides comprehensive information on PDC Settings, outlining the o
 
 ## General Settings
 
-You can define the settings to be taken from CompuTec PDC installation (assign just to it) or predefined settings templates (assign to a specific Employee) [CompuTec PDC installation](overview.md) (assign just to it), or from predefined settings templates (assign to a particular Employee). The way of getting the settings can be set up in [CompuTec ProcessForce settings](../overview.md#processforce-settings) (PDC Way of Getting Settings field).
+You can define the settings to be taken from CompuTec PDC installation (assign just to it) or predefined settings templates (assign to a specific Employee) [CompuTec PDC installation](overview.md) (assign just to it), or from predefined settings templates (assign to a particular Employee). The way of getting the settings can be set up in [CompuTec ProcessForce settings](../overview.md#computec-processforce-settings) (PDC Way of Getting Settings field).
 
 ## PDC Settings templates
 
@@ -22,7 +22,7 @@ You can define the settings to be taken from CompuTec PDC installation (assign j
 
 Here, you can define and save a set of settings that can be assigned to either a specific employee or an installation of CompuTec PDC. For instructions on how to do this, proceed to the next section.
 
-Most options are available either at the [CompuTec ProcessForce](../overview.md#processforce-settings) or [PDC-level](../overview.md) level settings.
+Most options are available either at the [CompuTec ProcessForce](../overview.md#computec-processforce-settings) or [PDC-level](../overview.md) level settings.
 
 The following options are specific to the PDC Settings form:
 

@@ -5,11 +5,11 @@
   },
   "sidebar.defaultSidebar.category.Administrator's Guide": {
     "message": "Administrator's Guide",
-    "description": "The label for category Administrator's Guide in sidebar defaultSidebar"
+    "description": "The label for category 'Administrator's Guide' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Configuration and Administration": {
     "message": "Configuration and Administration",
-    "description": "The label for category Configuration and Administration in sidebar defaultSidebar"
+    "description": "The label for category 'Configuration and Administration' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Plugins": {
     "message": "Plugins",
@@ -17,82 +17,94 @@
   },
   "sidebar.defaultSidebar.category.Developer's Guide": {
     "message": "Developer's Guide",
-    "description": "The label for category Developer's Guide in sidebar defaultSidebar"
+    "description": "The label for category 'Developer's Guide' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Basic and Business Logic": {
     "message": "Basic and Business Logic",
-    "description": "The label for category Basic and Business Logic in sidebar defaultSidebar"
+    "description": "The label for category 'Basic and Business Logic' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Plugin Types": {
     "message": "Plugin Types",
-    "description": "The label for category Plugin Types in sidebar defaultSidebar"
+    "description": "The label for category 'Plugin Types' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Framework": {
     "message": "Framework",
-    "description": "The label for category Framework in sidebar defaultSidebar"
+    "description": "The label for category 'Framework' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.SAP User Interface": {
     "message": "SAP User Interface",
-    "description": "The label for category SAP User Interface in sidebar defaultSidebar"
+    "description": "The label for category 'SAP User Interface' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.AppEngine Plugin": {
     "message": "AppEngine Plugin",
-    "description": "The label for category AppEngine Plugin in sidebar defaultSidebar"
+    "description": "The label for category 'AppEngine Plugin' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Development Tools": {
     "message": "Development Tools",
-    "description": "The label for category Development Tools in sidebar defaultSidebar"
+    "description": "The label for category 'Development Tools' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Configuration": {
     "message": "Configuration",
-    "description": "The label for category Configuration in sidebar defaultSidebar"
+    "description": "The label for category 'Configuration' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.REST/OData API": {
     "message": "REST/OData API",
-    "description": "The label for category REST/OData API in sidebar defaultSidebar"
+    "description": "The label for category 'REST/OData API' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.User's Guide": {
     "message": "User's Guide",
-    "description": "The label for category User's Guide in sidebar defaultSidebar"
+    "description": "The label for category 'User's Guide' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Analytical Page": {
     "message": "Analytical Page",
-    "description": "The label for category Analytical Page in sidebar defaultSidebar"
+    "description": "The label for category 'Analytical Page' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Plugins User's Guide": {
     "message": "Plugins User's Guide",
-    "description": "The label for category Plugins User's Guide in sidebar defaultSidebar"
+    "description": "The label for category 'Plugins User's Guide' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Batch Traceability 360": {
     "message": "Batch Traceability 360",
-    "description": "The label for category Batch Traceability 360 in sidebar defaultSidebar"
+    "description": "The label for category 'Batch Traceability 360' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Bulk Changes on Bills of Materials": {
     "message": "Bulk Changes on Bills of Materials",
-    "description": "The label for category Bulk Changes on Bills of Materials in sidebar defaultSidebar"
+    "description": "The label for category 'Bulk Changes on Bills of Materials' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Example Usage": {
     "message": "Example Usage",
-    "description": "The label for category Example Usage in sidebar defaultSidebar"
+    "description": "The label for category 'Example Usage' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Manufacturing Order 360": {
     "message": "Manufacturing Order 360",
-    "description": "The label for category Manufacturing Order 360 in sidebar defaultSidebar"
+    "description": "The label for category 'Manufacturing Order 360' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.MO Wizard": {
     "message": "MO Wizard",
-    "description": "The label for category MO Wizard in sidebar defaultSidebar"
+    "description": "The label for category 'MO Wizard' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Releases": {
     "message": "Releases",
-    "description": "The label for category Releases in sidebar defaultSidebar"
+    "description": "The label for category 'Releases' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.AppEngine": {
     "message": "AppEngine",
-    "description": "The label for category AppEngine in sidebar defaultSidebar"
+    "description": "The label for category 'AppEngine' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Release Notes": {
     "message": "Release Notes",
-    "description": "The label for category Release Notes in sidebar defaultSidebar"
+    "description": "The label for category 'Release Notes' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.configuration-and-administration-plugins": {
+    "message": "Plugins",
+    "description": "The label for category 'Plugins' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.MI 360": {
+    "message": "MI 360",
+    "description": "The label for category 'MI 360' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.releases-plugins": {
+    "message": "Plugins",
+    "description": "The label for category 'Plugins' in sidebar 'defaultSidebar'"
   }
 }

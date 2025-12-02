@@ -26,5 +26,9 @@
   "item.label.Premium": {
     "message": "Premium",
     "description": "Navbar item with label Premium"
+  },
+  "item.label.WebUp": {
+    "message": "WebUp",
+    "description": "Navbar item with label WebUp"
   }
 }

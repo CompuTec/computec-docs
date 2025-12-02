@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "1.0",
+    "description": "The label for version current"
+  },
+  "sidebar.defaultSidebar.category.Functional Breakdown": {
+    "message": "Functional Breakdown",
+    "description": "The label for category 'Functional Breakdown' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Video Tutorials": {
+    "message": "Video Tutorials",
+    "description": "The label for category 'Video Tutorials' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.FAQ": {
+    "message": "FAQ",
+    "description": "The label for category 'FAQ' in sidebar 'defaultSidebar'"
+  }
+}
