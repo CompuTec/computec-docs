@@ -1,6 +1,6 @@
 import React from "react";
 
-import Grid, { Grid2Props } from "@mui/material/Grid2";
+import Grid, { GridProps } from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
@@ -15,7 +15,7 @@ function ColumnLinkItem({ item }: ColumnLinkItemProps) {
   return <LinkItem item={item} />;
 }
 
-interface ColumnProps extends Grid2Props {
+interface ColumnProps extends GridProps {
   column: MultiColumnFooterLinks[number];
 }
 
