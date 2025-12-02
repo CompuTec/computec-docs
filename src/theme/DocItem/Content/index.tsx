@@ -34,7 +34,7 @@ export default function ContentWrapper(props: Props): ReactNode {
         </Admonition>
       )}
       {activePlugin.pluginId === "appengine" && activeDocContext.activeVersion?.label === "2.0" && (
-        <Admonition type="INFO">
+        <Admonition type="info">
           <p>You are currently viewing documentation for <b>CompuTec AppEngine 2.0 (.NET Framework)</b>, which is still supported.</p>
           <p>We recommend upgrading to <b>CompuTec AppEngine 3.0</b> built on .NET 8, which provides better performance and a modern, centralized installation process for CompuTec ProcessForce and other CompuTec solutions.</p>
           <p>However, please note that <b>CompuTec AppEngine 3.0</b> has a different architecture, and all CompuTec components need to be updated together to ensure full compatibility.</p>
