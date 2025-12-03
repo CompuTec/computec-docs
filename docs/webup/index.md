@@ -20,11 +20,8 @@ It is offered in preview **from October 2025 to March 2026** under the **CompuTe
 ## Key benefits and features
 
 - **Quick and easy to use**: The intuitive interface makes it easy for consultants and end users to implement changes, saving both time and money.
-
 - **Simplified interface customization**: Easily move existing fields and UDFs (user-defined fields), change field properties, and rename their descriptions, hide fields, tabs, and action buttons to streamline form layouts and remove clutter.
-
 - **Validation and data control**: Implement custom validations and rules to ensure data accuracy and enforce business logic before a document is created or updated.
-
 - **Build process automations**: Create powerful JavaScript-based automations to trigger actions based on specific view events, such as creating documents via the Service Layer, or updating fields.
 
 ## User roles
@@ -46,7 +43,7 @@ Here is how **CompuTec WebUp** works:
 - It’s built on the **CompuTec AppEngine Framework**, so every change you make follows the same lifecycle, versioning, and security standards used by all CompuTec AppEngine extensions.  
 - It follows **SAP Fiori guidelines**, maintaining the native SAP Business One Web Client’s look and feel while enhancing flexibility.
 
-▶ Watch: [CompuTec WebUp - First Launch](https://www.youtube.com/watch?v=YO3jdjChS4k&list=PLtT6kgaz5YneoXw5aRFA-SxXwzzB-u4vl&index=1)
+▶ **Watch**: [CompuTec WebUp - First Launch](https://www.youtube.com/watch?v=YO3jdjChS4k&list=PLtT6kgaz5YneoXw5aRFA-SxXwzzB-u4vl&index=1)
 
 ## Components of CompuTec WebUp
 

@@ -4,25 +4,31 @@ sidebar_position: 1
 
 # Overview
 
-This section provides an overview of the **WebUp extension components** and their respective roles within the **AppEngine (AE)** environment.
+Here is an overview of the key **CompuTec WebUp** functions, along with examples of how they can be used in your daily work:
 
-Each component operates as part of the **WebUp configuration domain** and is managed through dedicated **AppEngine Views**.  
-The following subsections outline the practical functionality scope available in the current release.
+- **View Management**: Manage your configuration sets with full version control. You can add new views, activate them, or roll back to an older view at any time. Every time you edit a current view, its new version is automatically created and saved. Example: When you click Edit next to version 1.0.2, a new version 1.0.3 is created, while 1.0.2 remains active as a backup. [Read more](https://learn.computec.one/docs/webup/components/view-management)
 
-All components and functions are accessible directly from the **WebUp side panel** in the **SAP Business One Web Client**.  
-Each feature can be launched via the **WebUp toolbar icon**, operating within supported **SAP extensibility views**.
+- **Control Management**: Edit and reorganize UI controls in supported SAP Web Client screens. Adjust visibility, position, groupings, and labels to make the interface easier to use. Example: Reorder the Sales Quotation header, so the most important fields appear first. [Read more](https://learn.computec.one/docs/webup/components/control-management)
 
----
+- **View Actions**: Create event-based automations and validations that run before or after user actions, such as On Update, On Save. Example: Show a confirmation message before a user saves changes to a document. [Read more](https://learn.computec.one/docs/webup/components/view-actions)
 
-## Component Summary
+:::note[info]
+**CompuTec WebUp Roadmap** evolves over time. For the latest feature planning and prioritization, refer to our official [CompuTec WebUp Roadmap](https://trello.com/b/ePvajGq6/computec-webup-roadmap).  
+This document describes general functional capabilities and does not represent confirmed release dates.
+:::
 
-| Component | Primary Function | AE Layer | Current Status | Example Use Case |
-|------------|------------------|-----------|----------------|------------------|
-| **Layout Profiles** | Modify and rearrange UI controls; manage visibility and positioning of fields. | **UI + Config** | **Implemented** | Adjust *Sales Quotation* header layout to display key fields first. |
-| **Interactive Actions** | Event-based automation and validation logic (e.g., *On Update*, *On Save*). | **Logic Layer (Event & Action Processing)** | **In Development** | Display a confirmation dialog before saving a modified document. |
-| **Profile Management** | Store and version configuration sets; enable activation and rollback. | **Config** | **Implemented** | Create version *1.0.3* of a layout while keeping *1.0.2* active for rollback. |
+## Functional context
 
----
+CompuTec WebUp is built around a few guiding principles that help keep your configurations stable and easy to maintain:
 
-> **Note:**  
-> WebUp components are progressively integrated into the **AppEngine Config and Logic Layers**, allowing seamless interaction between UI customization, automation, and version-controlled deployment.
+1. **Browser-first design**: WebUp runs fully in the browser and extends the SAP Business One Web Client without SDK or local installations.
+2. **CompuTec AppEngine-integrated architecture**: All logic, data access, and configuration management run on the CompuTec AppEngine Framework.
+3. **Configurable UI layer**: You can inspect, reposition, and edit UI elements inside supported SAP Business One Web Client screens.
+4. **Event-driven behavior**: You can define what happens during on-screen actions such as OnUpdate, OnAdd, or BeforeSave.
+5. **Dynamic data connections**: You can link control values to live SAP data models, for example, Sales Quotation Total, using CompuTec AppEngine.  
+6. **Version configuration management**: Every change is versioned, activatable, and revertible.
+7. **Modular evolution**: Future CompuTec WebUp features (layouts, actions, data integrations) can be added without affecting your existing setups.
+
+:::note[info]
+CompuTec WebUp adheres to **SAP Fiori guidelines**, maintaining the native SAP Business One Web Client’s look and feel while improving flexibility and usability.
+:::
