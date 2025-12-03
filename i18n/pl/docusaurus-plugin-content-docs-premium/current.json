@@ -5,18 +5,18 @@
   },
   "sidebar.defaultSidebar.category.Administrator's Guide": {
     "message": "Przewodnik Administratora",
-    "description": "The label for category Administrator's Guide in sidebar defaultSidebar"
+    "description": "The label for category 'Administrator's Guide' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Installation": {
     "message": "Instalacja",
-    "description": "The label for category Installation in sidebar defaultSidebar"
+    "description": "The label for category 'Installation' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.Functions": {
     "message": "Funkcje",
-    "description": "The label for category Functions in sidebar defaultSidebar"
+    "description": "The label for category 'Functions' in sidebar 'defaultSidebar'"
   },
   "sidebar.defaultSidebar.category.White List": {
     "message": "Biała Lista",
-    "description": "The label for category White List in sidebar defaultSidebar"
+    "description": "The label for category 'White List' in sidebar 'defaultSidebar'"
   }
 }

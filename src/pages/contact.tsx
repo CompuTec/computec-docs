@@ -2,7 +2,7 @@ import Layout from "@theme/Layout";
 import Translate, { translate } from "@docusaurus/Translate";
 
 import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid";
 import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";

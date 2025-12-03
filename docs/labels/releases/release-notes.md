@@ -10,6 +10,20 @@ toc_max_heading_level: 4
 
 Below are the release notes for CompuTec Labels Printing Manager, highlighting new features, improvements, and bug fixes in this release.
 
+### CompuTec Labels Printing Manager 4.8.5
+
+**Release Date – 01 December 2025**
+
+| Issue Type | Component/s |Reference Support Ticket | Release Note |
+| --- | --- | --- | --- |
+| Improvement | Printing Manager Application | SLABE-1055 | The ‘Receipt from Production’ object has now been added to the Edit Settings/object list. |
+| Improvement | Printing Manager Application | SLABE-965 | The ‘Serial Number Details’ object has now been added to the Edit Settings/object list. |
+| Bug | Printing Manager Application | SWMS-3992 | Templates do not appear in WMS > Warehouse Info > Printing Options. |
+| Bug | Printing Manager Application | SLABE-1067 | The plus (+) sign in the value returned by the query is being replaced with a space character. |
+| Bug | Printing Manager Application | SLABE-1042 | When a user adds a new field to the query with the alias ItemName, the system returns this parameter as empty in the mapping table. |
+| Bug |Gateway, WebService | - | Connection stability between CompuTec Labels and CompuTec Gateway has been improved. |
+| Bug | Printing Manager Application | - | An unexpected duplication of parameters has occurred in the Mapping Table. |
+
 ### CompuTec Labels Printing Manager 4.8.4
 
 **Release Date – 26 June 2025**

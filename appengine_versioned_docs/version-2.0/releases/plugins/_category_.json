@@ -1,4 +1,5 @@
 {
-"label": "Plugins",
-"position": 2
+    "key": "releases-plugins",
+    "label": "Plugins",
+    "position": 2
 }
