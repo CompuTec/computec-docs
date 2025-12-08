@@ -17,7 +17,7 @@ On the Resource form under the Accounting tab, users can select Cost Centers and
 
 In the Operation form under the Resources tab, the selected Cost Centers and Projects for each resource are displayed. By default, these values are inherited from the Resource form but can be adjusted as needed.
 
-    ![Distribution and Cost Dimensions](./media/resources-distribution-and-cost-dimensions/operation.png)
+    ![Distribution and Cost Dimensions](./media/resources-distribution-and-cost-dimensions/operation.webp)
 
 ## Routing Form
 

@@ -25,13 +25,13 @@ Distribution Rules can be allocated as follows, and once set at this level will 
 
 - Select the Distribution rules for the appropriate dimensions.
 
-    ![Bill of Materials](./media/item-distribution-and-cost-dimensions/bill-of-materials-select-distribution-rule.png)
+    ![Bill of Materials](./media/item-distribution-and-cost-dimensions/bill-of-materials-select-distribution-rule.webp)
 
 - Using the Form Setting in Bills of Materials, select the dimensions to be displayed.
 
-    ![Bill of Materials](./media/item-distribution-and-cost-dimensions/bill-of-materials-form-settings.png)
+    ![Bill of Materials](./media/item-distribution-and-cost-dimensions/bill-of-materials-form-settings.webp)
 
-- For each line, select the distribution rule.
+- For each line, select the dimension.
 
     ![Bill of Materials](./media/item-distribution-and-cost-dimensions/bill-of-materials-list-of-distribution-rules.png)
 
@@ -41,9 +41,9 @@ Distribution Rules can be allocated as follows, and once set at this level will 
 
     ![Manufacturing Orders](./media/item-distribution-and-cost-dimensions/bill-of-materials.png)
 
-### Pick Issues
+### Pick Order
 
-- Based on the Manufacturing Order, the dimensions are copied into the Pick Issue Document.
+- Based on the Manufacturing Order, the dimensions are copied into the Pick Order Document.
 
     ![Pick Issues](./media/item-distribution-and-cost-dimensions/pick-issues.png)
 
@@ -51,18 +51,18 @@ Distribution Rules can be allocated as follows, and once set at this level will 
 
 - Based on the Pick Issue, the dimensions are copied into the SAP Business One Goods Issue Document.
 
-    ![Goods Issues](./media/item-distribution-and-cost-dimensions/goods-issues.png)
+    ![Goods Issues](./media/item-distribution-and-cost-dimensions/goods-issue.webp)
 
 ### Pick Receipt
 
 - Based on the Manufacturing Order header, the dimensions are copied into the Pick Receipt.
 
-    ![Pick Receipt](./media/item-distribution-and-cost-dimensions/pick-receipt.png)
+    ![Pick Receipt](./media/item-distribution-and-cost-dimensions/pick-receipt.webp)
 
 ### Goods Receipt
 
 - Based on the Pick Receipt, the dimensions are copied into the SAP Business One Goods Receipt.
 
-    ![SAP Business One Goods Receipt](./media/item-distribution-and-cost-dimensions/goods-receipt.png)
+    ![SAP Business One Goods Receipt](./media/item-distribution-and-cost-dimensions/goods-receipt.webp)
 
 ---
