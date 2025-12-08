@@ -36,9 +36,10 @@ If you are upgrading from **CompuTec AppEngine 2.0** to **CompuTec AppEngine 3.0
 CompuTec AppEngine requires .NET Runtime Applications as .NET platform is core of AppEngine. Install below runtime applications in client machine. Runtimes below might have been already installed in client machine by Windows Updates.
 
 | Resource/Application | Minimal Version | Note |
+| --- | --- | --- |
 | .NET Runtime |8.0.13 | We recommend installing recent version of .NET 8. [Microsoft .NET 8 (Web Installer)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0). |
 | ASP.NET Runtime | 8.0.13 | We recommend installing recent version of .NET 8. [Microsoft .NET 8 (Web Installer)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0). |
-| Browser Application | Please see supported device and platform matrix maintained by SAP under UI5: [Visit Page](https://help.sap.com/docs/SAP_NETWEAVER_AS_ABAP_751_IP/468a97775123488ab3345a0c48cadd8f/74b59efa0eef48988d3b716bd0ecc933.html?utm_source=chatgpt.com#browser-and-platform-support-matrix) |
+| Browser Application | - | Please see supported device and platform matrix maintained by SAP under UI5: [Visit Page](https://help.sap.com/docs/SAP_NETWEAVER_AS_ABAP_751_IP/468a97775123488ab3345a0c48cadd8f/74b59efa0eef48988d3b716bd0ecc933.html?utm_source=chatgpt.com#browser-and-platform-support-matrix) |
 
 <details>
 <summary>Click to see how to check .NET version</summary>
