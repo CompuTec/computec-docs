@@ -10,6 +10,7 @@ sidebar_position: 1
 
 | Issue Type | Component/s | Release Note |
 | --- | --- | --- |
+| Bug | Infrastructure | AppEngine supports SAP HANA version SPS 08 (Service Pack Stack 08) as of this release. |
 | Bug | AE Core | The PFI menu is not visible when logging in again with a different user. |
 | Bug | AE Administration | CompuTec AppEngine prompts to download the .rc version even when the official version is already installed. |
 | Bug | WebUpClient | Deactivate Action exhibits unexpected or inconsistent behavior. |
