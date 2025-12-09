@@ -62,9 +62,9 @@ CompuTec AppEngine **does not require** the SAP Business One desktop client to b
 
 ## Working with SAP Business One, version for SAP HANA
 
-- For correct database connectivity, you must run the **hdbsetup.exe** installer. This step ensures that SAP HANA database is accessible in the CompuTec AppEngine configuration.
+For correct database connectivity, you must run the **hdbsetup.exe** installer. This step ensures that SAP HANA database is accessible in the CompuTec AppEngine configuration.
 
-- You can find the installer in the **b1_shf\SAP_HANA_CLIENT_x64** folder on the machine where SAP Business One is installed.
+You can find the installer in the **b1_shf\SAP_HANA_CLIENT_x64** folder on the machine where SAP Business One is installed.
 
     ![Setup](./media/02-appengine-requirements.png)
 
