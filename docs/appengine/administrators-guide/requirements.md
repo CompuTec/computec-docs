@@ -20,7 +20,7 @@ If you are upgrading from **CompuTec AppEngine 2.0** to **CompuTec AppEngine 3.0
 | Memory (RAM) | 2 GB | Adjust RAM as needed based on the number of plugins and background processes. For production use, we recommend **8 GB or more**. |
 | Disk Space | 1 GB | - |
 | .NET Runtime | 8.0.13 | We recommend installing the latest version of .NET 8. [Microsoft .NET 8 (Web Installer)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0). |
-| ASP.NET Runtime | 8.0.13 |We recommend installing the latest version of .NET 8. [Microsoft .NET 8 (Web Installer)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) |
+| ASP.NET Runtime | 8.0.13 |We recommend installing the latest version of .NET 8. [Microsoft .NET 8 (Web Installer)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0). |
 | HANA Server Version | SAP HANA Enterprise Edition 2.0 SPS 05, Revision 059.09 (minimum supported version: 2.17.22). | SAP Business One, version for SAP HANA |
 | SQL Server Version | SQL Server 2016 | SAP Business One |
 | Operating System | Windows 10 x64 | - |
