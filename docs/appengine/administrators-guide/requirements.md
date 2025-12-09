@@ -30,7 +30,11 @@ If you are upgrading from **CompuTec AppEngine 2.0** to **CompuTec AppEngine 3.0
 
 ### SAP Business One - User Machine
 
-CompuTec AppEngine needs **.NET Runtime Applications** as it relies on **.NET platform**. These runtimes may already be present if they were installed through **Windows Update** but verify that the required versions are available **before continuing**.
+CompuTec AppEngine needs **.NET Runtime Applications** as it relies on the **.NET platform**. These runtimes may already be present if they were installed through **Windows Update**, but verify that the required versions are available **before continuing**.
+
+:::warning[important]
+**Before** installing CompuTec AppEngine, ensure that the **SAP Business One DI API (64-bit)** is installed on the user's machine.  
+:::
 
 | Resource/Application | Minimal Version | Note |
 | --- | --- | --- |
@@ -39,7 +43,7 @@ CompuTec AppEngine needs **.NET Runtime Applications** as it relies on **.NET pl
 | Browser Application | - | Please see [supported device and platform matrix](https://help.sap.com/docs/SAP_NETWEAVER_AS_ABAP_751_IP/468a97775123488ab3345a0c48cadd8f/74b59efa0eef48988d3b716bd0ecc933.html?utm_source=chatgpt.com#browser-and-platform-support-matrix) maintained by SAP under UI5 |
 
 <details>
-<summary>See how to check **.NET Runtime version**</summary>
+<summary>See how to check **.NET Runtime version**.</summary>
 <div>
     1. To check the installed .NET Runtime version, open **Command Prompt** on your computer.
     2. Enter: `dotnet --list-runtimes`, and press **Enter**.
@@ -54,9 +58,7 @@ CompuTec AppEngine needs **.NET Runtime Applications** as it relies on **.NET pl
 </div>
 </details>
 
-:::warning[important]
-**Before** installing CompuTec AppEngine, ensure that the **SAP Business One DI API (64-bit)** is installed on the user's machine.  
-
+:::note[info]
 CompuTec AppEngine **does not require** the SAP Business One desktop client to be installed on user machines.
 :::
 
