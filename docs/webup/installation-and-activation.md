@@ -80,7 +80,7 @@ If you plan to customize the user interface using **CompuTec WebUp Manager**, yo
 
 1. Click on your **profile icon** in the upper right corner of the SAP Web Client interface and choose **Settings**.  
 
-    ![A help screen showing where to find your profile icon in SAP Business One Web Client](./media/6-webup-profile-settings-sapb1-menu.png)
+    ![A help screen showing where to find settings in SAP Business One Web Client](./media/6-webup-profile-settings-sapb1-menu.png)
 
 2. Go to **Extensibility**.  
 
