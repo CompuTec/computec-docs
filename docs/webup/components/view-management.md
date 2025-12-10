@@ -20,7 +20,7 @@ Here's a list of View Management key functions:
 
 - **Add New View**: Starts a new view with default settings and gives you the basic structure for layouts, actions, and bindings.
 
-   ![screen showing how to add a new view version](.\media\001-webup-view-management-add-new-view.png)
+   ![screen showing how to add a new view version](./media/001-webup-view-management-add-new-view.png)
 
 - **Edit**: Lets you change the view's layout, actions, or bindings. All changes stay in a draft version until you decide to activate them.
 
