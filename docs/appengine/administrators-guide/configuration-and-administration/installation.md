@@ -138,7 +138,7 @@ To configure a connection to the SLD server, follow these steps:
     ![enter sld and computec server details](./media/installation/10-appengine-setup-after-restart-cofig.png)
 
     :::info[note]
-    You can find the **SLD Server Address** in **SAP Business One** > **License** > **License Administration**.
+    You can find the **SLD Server Address** in **SAP Business One** > **Administration** > **License** > **License Administration**.
 
     ![screen showing how to fing the sld server address](./media/installation/101-sap-b1-license1.png)
 
