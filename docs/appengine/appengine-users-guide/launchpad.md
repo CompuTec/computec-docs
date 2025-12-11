@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Launchpad
 
-The Launchpad serves as a central hub for accessing and managing plugins in your SAP Business One environment. After completing the necessary [Launchpad Configuration](../administrators-guide/configuration-and-administration/configuration.md), users can log in using their SAP Business One credentials to leverage the platform’s capabilities tailored to a specific scheme
+The Launchpad serves as a central hub for accessing and managing plugins in your SAP Business One environment. After completing the necessary [Launchpad Configuration](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation), users can log in using their SAP Business One credentials to leverage the platform’s capabilities tailored to a specific scheme
 
 ![Launchpad](./media/launchpad/launchpad-log-in.webp)
 

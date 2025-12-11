@@ -26,8 +26,8 @@ The CompuTec PDC Plugin is compatible only with the 64-bit version of CompuTec P
 
 Follow the individual installation guides for each required component:
 
-- [CompuTec AppEngine installation](../administrators-guide/configuration-and-administration/installation.md)
-- [CompuTec PDC plugin](../administrators-guide/configuration-and-administration/configuration.md)
+- [CompuTec AppEngine installation](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation)
+- [CompuTec PDC plugin](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation)
 - [CompuTec ProcessForce plugin](../plugins-user-guide/processforce.md)
 - [CompuTec ProcessForce API (on the same server as CompuTec AppEngine)](/docs/processforce/releases/download#computec-processforce-api)
 - [CompuTec PDC application](/docs/pdc/administrator-guide/installation/first-installation/)
@@ -42,7 +42,7 @@ After a successful installation choose the CompuTec AppEngine console which data
 
 ![Computec PDC Plugin Database](./media/computec-pdc-plugin/computec-pdc-plugin-database.png)
 
-Then open the CompuTec PDC application and fill in Settings with data (default CompuTec AppEngine server is `https://localhost:54000`. It is required to fill in the fields in the order marked on the following screenshot to refresh the application and download the data.
+Then open the CompuTec PDC application and fill in Settings with data default CompuTec AppEngine server is `https://localhost:54000`. It is required to fill in the fields in the order marked on the following screenshot to refresh the application and download the data.
 
 Filling in the fields marked with the red arrows automatically fills in the fields marked with the purple arrows (then, choose one option from the drop-down list).
 

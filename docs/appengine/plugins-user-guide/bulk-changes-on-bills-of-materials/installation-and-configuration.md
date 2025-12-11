@@ -18,9 +18,7 @@ If you need assistance with this setup, please refer to the relevant documentati
 
 ## CompuTec AppEngine and Plugin Installation and Configuration
 
-To install CompuTec AppEngine, follow the step-by-step instructions outlined in the [Installation Guide](../../administrators-guide/configuration-and-administration/installation.md).
-
-For the full configuration and administrative steps, refer to the [Configuration and Administration](docs/appengine/administrators-guide/configuration-and-administration/configuration.md) guide.
+To install and configure CompuTec AppEngine, follow the step-by-step instructions outlined in the [Installation Guide](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation).
 
 ## CompuTec ProcessForce
 

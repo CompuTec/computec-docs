@@ -18,9 +18,7 @@ CompuTec ProcessForce and CompuTec Licence Server is installed and configured. F
 
 ### CompuTec AppEngine and Plug-in Installation and Configuration
 
-For CompuTec AppEngine installation, follow the instructions outlined in the [Installation](../../administrators-guide/configuration-and-administration/installation.md) Guide.
-
-For configuring the plug-in, refer to the [Configuration and Administration](../../administrators-guide/configuration-and-administration/configuration.md) Guide.
+For CompuTec AppEngine installation and configuration, follow the instructions outlined in the [Installation and Configuration](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation) Guide.
 
 ### CompuTec ProcessForce
 
