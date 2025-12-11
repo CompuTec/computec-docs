@@ -20,7 +20,7 @@ The **CompuTec WebUp** solution is made up of three key components:
 
 Before installing CompuTec WebUp, make sure the following prerequisites are met:
 
-- Check if **CompuTec AppEngine** is installed and configured. Follow the [CompuTec AppEngine installation guide](/docs/appengine/administrators-guide/configuration-and-administration/installation) and [CompuTec AppEngine configuration guide](/docs/appengine/administrators-guide/configuration-and-administration/configuration) for detailed instructions.
+- Check if **CompuTec AppEngine** is installed and configured. Follow the [CompuTec AppEngine installation and configuration guide](/docs/appengine/administrators-guide/configuration-and-administration/installation) for detailed instructions.
 - Make sure that the company is **active in CompuTec AppEngine**, and the **SAP Web Client is configured**. For full instructions, [see the configuration guide.](/docs/appengine/administrators-guide/configuration-and-administration/working-with-sap-business-one-web-client)
 
 ## Step 1: Install the CompuTec WebUp App
