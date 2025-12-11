@@ -15,8 +15,8 @@ This section explains the minimum system requirements needed for WebUp to operat
 
 ### CompuTec AppEngine
 
-    - **Official release package:** [`CompuTec.AppEngine.3.2510.1.msi`](/docs/appengine/releases/appengine/download)  
-    - **SAP Business One Web Client** must be installed and correctly configured
+    - Download the **official release package** from the [**Download**](https://learn.computec.one/docs/appengine/releases/appengine/download) section of our guide. 
+    - **SAP Business One Web Client** must be installed and correctly configured.
 
 ### Web browsers
 
