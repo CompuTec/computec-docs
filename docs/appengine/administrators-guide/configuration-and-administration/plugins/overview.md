@@ -94,3 +94,10 @@ If the installation was not performed with activation on CompuTec AppEngine, you
 ![SAP Business One Settings](./media/plugins/ae-plugin-014.webp)
 
 Choose From opening mode: in form (within SAP Business One forms), in browser (in the system's default internet browser)
+
+## CompuTec Early Access Program
+
+You can participate in the **CompuTec Early Access Program**, which provides access to pre-release (release candidate) versions of plugins and the CompuTec Framework. This allows you to test upcoming features before they are publicly released.
+
+To join the program, follow our [CompuTec Early Accress Program guide](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/plugins/early-access-program).
+
