@@ -100,4 +100,3 @@ Choose From opening mode: in form (within SAP Business One forms), in browser (i
 You can participate in the **CompuTec Early Access Program**, which provides access to pre-release (release candidate) versions of plugins and the CompuTec Framework. This allows you to test upcoming features before they are publicly released.
 
 To join the program, follow our [CompuTec Early Accress Program guide](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/plugins/early-access-program).
-

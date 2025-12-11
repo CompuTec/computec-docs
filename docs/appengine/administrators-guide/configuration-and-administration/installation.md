@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Installation
+# Installation and configuration
 
 ## Before you start
 
@@ -63,6 +63,7 @@ To install CompuTec AppEngine, follow these steps:
     - It can’t connect to the database server storing the CompuTec AppEngine configuration.
     - The configuration database doesn’t exist.
     - The configuration database requires an upgrade.
+    - You've updated CompuTec AppEngine to the latest version and now you need to complete the database configuration and update connected companies.
 
     If the CompuTec AppEngine page does not open automatically, you can open it **manually** at [https://localhost:54001](https://localhost:54001).
     :::
@@ -251,6 +252,18 @@ To activate a company in CompuTec AppEngine, follow these steps:
     :::
 
 11. Click **Close**.
+
+12. Done! Now your company is activated.
+
+    ![a screen showing activation progress](./media/installation/99-after-update-additional-info2.png)
+
+    :::info[note]
+    After you **update** of CompuTec AppEngine to the latest version, you may see `Update required` label next to your company name.
+
+    ![a screen showing company list after the update](media/installation/99-after-update-additional-info.png)
+
+    Click the **Update required** label and complete the guided steps to finish the company update process.
+    :::
 
 ## Step 6: Configure background processing within the SAP environment
 
