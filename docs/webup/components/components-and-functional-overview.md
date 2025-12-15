@@ -21,7 +21,7 @@ This document describes general functional capabilities and does not represent c
 
 CompuTec WebUp is built around a few guiding principles that help keep your configurations stable and easy to maintain:
 
-1. **Browser-first design**: WebUp runs fully in the browser and extends the SAP Business One Web Client without SDK or local installations.
+1. **Browser-first design**: Computec WebUp runs fully in the browser and extends the SAP Business One Web Client without SDK or local installations.
 2. **CompuTec AppEngine-integrated architecture**: All logic, data access, and configuration management run on the CompuTec AppEngine Framework.
 3. **Configurable UI layer**: You can inspect, reposition, and edit UI elements inside supported SAP Business One Web Client screens.
 4. **Event-driven behavior**: You can define what happens during on-screen actions such as OnUpdate, OnAdd, or BeforeSave.

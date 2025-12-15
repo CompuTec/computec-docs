@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # System Requirements
 
-**CompuTec WebUp** is a certified extension built on the **CompuTec AppEngine framework**. It follows the same rules and configuration standards as all ComopuTec AppEngine plugins.
+**CompuTec WebUp** is a certified extension built on the **CompuTec AppEngine framework**. It follows the same rules and configuration standards as all CompuTec AppEngine plugins.
 
 This section describes the minimum system requirements needed for CompuTec WebUp to run correctly.
 
@@ -42,7 +42,7 @@ This section describes the minimum system requirements needed for CompuTec WebUp
 
 ### Local connectivity
 
-    - WebUp communicates with the CompuTec AppEngine service over **HTTPS**.
+    - CompuTec WebUp communicates with the CompuTec AppEngine service over **HTTPS**.
 
 ### Outbound access
 
