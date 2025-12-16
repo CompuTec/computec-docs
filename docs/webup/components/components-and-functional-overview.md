@@ -30,5 +30,5 @@ CompuTec WebUp is built around a few guiding principles that help keep your conf
 7. **Modular evolution**: Future CompuTec WebUp features (layouts, actions, data integrations) can be added without affecting your existing setups.
 
 :::note[info]
-CompuTec WebUp adheres to **SAP Fiori guidelines**, maintaining the native SAP Business One Web Client’s look and feel while improving flexibility and usability.
+CompuTec WebUp adheres to **SAP Fiori guidelines**, maintaining the native SAP Business One Web Client’s look and feel while improving flexibility and usability. Read more about [SAP Fiori guidelines](https://www.sap.com/design-system/fiori-design-web/) and the [SAPUI5 framework](https://www.sap.com/design-system/fiori-design-web/v1-136/discover/get-started/ui5).
 :::
