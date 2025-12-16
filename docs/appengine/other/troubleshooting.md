@@ -16,7 +16,7 @@ You may see one or more of the following symptoms:
 - **Log files** or **Windows Event Viewer** show messages such as: `Address already in use or Failed to bind to port 54001.`
 - No other visible application appears to be using **port 54001**.
 
-## Solution
+### Solution
 
 :::info[note]
 
@@ -33,7 +33,7 @@ You may see one or more of the following symptoms:
 6. Once restarted, Windows recalculates the reserved port ranges. In many cases, this frees port 54001 so CompuTec AppEngine can start normally.
 7. Done! Now you can start **CompuTec AppEngine** again.
 
-### If the problem persists
+#### If the problem persists
 
 If AppEngine still cannot start **after restarting WinNAT**:
 
