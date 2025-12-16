@@ -8,11 +8,11 @@ sidebar_position: 2
 
 This error indicates that the CompuTec WMS Server is unable to establish a stable connection to the SAP HANA database. In many cases, the issue is caused by conflicting or outdated `Sap.Data.Hana.v4.5.dll` assemblies on the Windows server.
 
-## Solution
+### Solution
 
 Here's how to resolve this problem:
 
-### Step 1: Verify the HDBADONET Environment Variable
+#### Step 1: Verify the HDBADONET Environment Variable
 
 1. Open the **Environment Variables** on your computer.
 2. Locate the variable named `HDBADONET`.
@@ -21,7 +21,7 @@ Here's how to resolve this problem:
 
 3. Note the directory path defined in this variable.
 
-### Step 2: Check the DLL file version in the HDBADONET directory
+#### Step 2: Check the DLL file version in the HDBADONET directory
 
 1. Navigate to the folder identified in the `HDBADONET` variable.
 2. Open the **v4.5** subfolder.
@@ -37,7 +37,7 @@ Here's how to resolve this problem:
     The version should be similar to 2.20.22.0 (your actual version may vary depending on the HANA client installed).
     :::
 
-### Step 3: Check the Global Assembly Cache (GAC) for conflicting versions
+#### Step 3: Check the Global Assembly Cache (GAC) for conflicting versions
 
 1. Go to: `C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Sap.Data.Hana.v4.5\`
 
@@ -57,7 +57,7 @@ These issues often appear as system errors, such as:
 - Error 10001153: `Insufficient quantity for item "X" with batch 'Y' in warehouse.`
 - Error: `Bin location 'X' does not belong to specified warehouse 'Y'.`
 
-## Solution
+### Solution
 
 :::info[note]
 For **full diagnostic queries and repair instructions**, refer to the dedicated article: [Storage Unit Allocation Issues](https://learn.computec.one/docs/wms/faq/storage-unit-allocation-issues).
