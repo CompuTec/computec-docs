@@ -32,7 +32,7 @@ Here's how to resolve this problem:
     ![a screen showing how to check the file version](./media/03-wms-troubleshooting-file-version.png)
 
     :::info[note]
-    The version should be similar to 2.17.22.0 (your actual version may vary depending on the HANA client installed).
+    The version should be similar to 2.20.22.0 (your actual version may vary depending on the HANA client installed).
     :::
 
 ### Step 3: Check the Global Assembly Cache (GAC) for conflicting versions
@@ -42,5 +42,5 @@ Here's how to resolve this problem:
     ![a screen showing how to check the file version in microsoft folder](./media/04-wms-troubleshooting-ms.png)
 
 2. Check whether multiple subfolders exist, each containing different versions of `Sap.Data.Hana.v4.5.dll` file.
-3. If you find versions that don't match the version in the `HDBADONET` directory, remove the mismatched folders. Only keep the version that matches the installed HANA client DLL.
+3. If you find versions that don't match the version in the `HDBADONET` directory, remove the mismatched folders. **Only keep the version that matches the installed HANA client DLL file**.
 4. Done!
