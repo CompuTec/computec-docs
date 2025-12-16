@@ -126,5 +126,5 @@ If you were already on the SAP Web Client page before installing the CompuTec We
 - Maintain your CompuTec AppEngine and CompuTec WebUp versions up to date to ensure compatibility.
 
 :::info[Note]
-For technical issues or feature requests, contact the [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp). Feedback on usability and performance is always welcome.
+For technical issues or feature requests, contact us via the [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp). Feedback on usability and performance is always welcome.
 :::

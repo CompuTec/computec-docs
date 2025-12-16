@@ -42,5 +42,5 @@ If AppEngine still cannot start **after restarting WinNAT**:
 - Consider changing the CompuTec AppEngine port (if supported in your configuration) to a port outside the reserved range.
 
 :::note[info]
-If you need help, or have any questions, contact us via [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp).
+If you need help, or have any questions, contact us via the [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp).
 :::
