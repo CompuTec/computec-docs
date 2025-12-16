@@ -1,12 +1,14 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # Troubleshooting
 
-## Problem: “DataLayerConnectionNotEstablischedException” error in WMS Server Logs (HANA Environments)
+## Problem: `DataLayerConnectionNotEstablischedException` error in WMS Server Logs (HANA Environments)
 
 This error indicates that the CompuTec WMS Server is unable to establish a stable connection to the SAP HANA database. In many cases, the issue is caused by conflicting or outdated `Sap.Data.Hana.v4.5.dll` assemblies on the Windows server.
+
+## Solution
 
 Here's how to resolve this problem:
 
@@ -44,3 +46,19 @@ Here's how to resolve this problem:
 2. Check whether multiple subfolders exist, each containing different versions of `Sap.Data.Hana.v4.5.dll` file.
 3. If you find versions that don't match the version in the `HDBADONET` directory, remove the mismatched folders. **Only keep the version that matches the installed HANA client DLL file**.
 4. Done!
+
+## Problem: Storage Unit Allocation Issues
+
+Incorrect use of **Storage Units**, for example, transfer **Items** that belong to a **Storage Unit** in **SAP Business One**, may result in quantity discrepancies or incorrect **Bin Location** assignments.  
+
+These issues often appear as system errors, such as:
+
+- Error 1470000336: `Bin location 'X' does not belong to specified warehouse 'Y'.`
+- Error 10001153: `Insufficient quantity for item "X" with batch 'Y' in warehouse.`
+- Error: `Bin location 'X' does not belong to specified warehouse 'Y'.`
+
+## Solution
+
+:::info[note]
+For **full diagnostic queries and repair instructions**, refer to the dedicated article: [Storage Unit Allocation Issues](https://learn.computec.one/docs/wms/faq/storage-unit-allocation-issues).
+:::
