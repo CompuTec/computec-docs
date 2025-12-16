@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 1
 ---
 
 # FAQs
@@ -8,13 +8,13 @@ sidebar_position: 7
 
 To obtain the company ID, navigate to the Administration Panel and hover over the company name.
 
-    ![Company Id](./media/troubleshooting/gcid.png)
+    ![Company Id](../media/troubleshooting/gcid.png)
 
 ## Features are Disabled after CompuTec AppEngine Upgrade
 
 Ensure all your companies are fully updated by clicking "Update Company" in the Administration Panel for each one. Features may remain unavailable until the update is completed.
 
-    ![Update Company](./media/troubleshooting/update-company.png)
+    ![Update Company](../media/troubleshooting/update-company.png)
 
 ## CompuTec AppEngine not Connecting to the Database
 
@@ -33,11 +33,11 @@ To resolve the issue, follow these steps:
 
 1. Open Environment Variables through: Windows->System->Environment Variables
 
-    ![System Variable](./media/troubleshooting/system-variable.png)
+    ![System Variable](../media/troubleshooting/system-variable.png)
 
 2. Locate the variable named HDBDOTNETCORE and open the path.
 3. Right click the libadonetHDB.dll file and check the Details for the Product version.
 
-    ![Product Version](./media/troubleshooting/product-version.png)
+    ![Product Version](../media/troubleshooting/product-version.png)
 
 It must match the [HANA Server Revision](https://help.sap.com/docs/SAP_BUSINESS_ONE_ADMIN_GUIDE_HANA/1a2fc202f7f64336abf9fbc957d9b9ba/13c43452877d4feaad4dbd661d15d9bb.html)
