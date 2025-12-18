@@ -10,80 +10,88 @@ This user-friendly tool allows you to quickly and easily create custom reports a
 
     ![Analytics](./media/overview/01-appengine-analytics-overview.png)
 
----
+## Access CompuTec AppEngine Analytics
 
-## Access
+1. In your browser, open **CompuTec AppEngine site** and choose **Launchpad**.
 
-1. After logging in to **CompuTec AppEngine**, click on the **Analytics** icon.
+    ![Screen showing appengine launchpad](./media/overview/00-appengine-analytics-login1.png)
 
-    ![Access](./media/overview/02a-appengine-analytics-view.png)
+2. Click **Login in with SAP Business One**.
 
-2. Choose your data source by clicking the component name. In our example, we'll be analyzing Manufacturing Order transactions, so we choose MO360.
+3. Log in using you credentials.
 
-    ![Access](./media/overview/02b-appengine-analytics-view.png)
+    ![screen showing logging in](./media/overview/00-appengine-analytics-login2.png)
 
-3. Done! Now, you can see your analytics dashboard.
+4. After logging in to **CompuTec AppEngine**, click on the **Analytics** icon.
 
-    ![Access](./media/overview/01-appengine-analytics-overview.png)
+    ![screen showing accessing analyics](./media/overview/02a-appengine-analytics-view.png)
 
-## Variants
+5. Choose your data source by clicking the component name. In our example, we'll be analyzing Manufacturing Order transactions, so we choose MO360.
 
-Variants are preset report configurations. When you install the plugin, you automatically receive one standard variant, which is set as the default. You can easily create your own variants or customize the existing ones.
+    ![screen showng choosing data source](./media/overview/02b-appengine-analytics-view.png)
 
-To **create a new variant**, follow these steps:
+6. Done! Now, you can see your analytics dashboard.
 
-1. Click the **arrow** next to your standard variant name.
+    ![scrren showing analytics dashboard](./media/overview/01-appengine-analytics-overview.png)
 
-    ![Variants](./media/overview/03-appengine-analytics-variants1.png)
+## About a View
+
+A **View** is a preset report configuration. When you install the CompuTec AppEngine plugin, you automatically receive one standard view, which is set as the default. You can easily create your own views or customize the existing ones.
+
+To **create a new view**, follow these steps:
+
+1. Click the **arrow** next to your extisting view name.
+
+    ![screen showing how to save a view](./media/overview/03-appengine-analytics-variants1.png)
 
 2. Click **Save As**.
 
-    ![Variants](./media/overview/04-appengine-analytics-variants2save.png)
+    ![screen showing saving a view](./media/overview/04-appengine-analytics-variants2save.png)
 
-3. Type the variant name and decide if you want to set it as a default one. Here, you can also make it available to all users (Public) or keep it private.
+3. Type the view name and decide if you want to set it as a default one. Here, you can also make it available to all users (Public) or keep it private.
 
-    ![Variants](./media/overview/05-appengine-analytics-variants-savenew.png)
+    ![screen showing view options](./media/overview/05-appengine-analytics-variants-savenew.png)
 
 4. Click **Save**.
 
-To **manage your existing variants**, follow these steps:
+To **manage your existing view**, follow these steps:
 
-1. Click the **arrow** next to your standard variant name.
+1. Click the **arrow** next to your extisting view name.
 
-    ![Variants](./media/overview/03-appengine-analytics-variants1.png)
+    ![screen showing how to manage a view](./media/overview/03-appengine-analytics-variants1.png)
 
 2. Click **Manage**.
 
-    ![Variants](./media/overview/04-appengine-analytics-variants34managepng.png)
+    ![screen showing where to click manage](./media/overview/04-appengine-analytics-variants34managepng.png)
 
-3. Here, you can manage all your existing variants. Dont't forget to click **Save** afterwards.
+3. Here, you can manage all your existing views. Dont't forget to click **Save** afterwards.
 
-    ![Variants](./media/overview/04-appengine-analytics-variants3manage.png)
+    ![screen showing all the existing views](./media/overview/04-appengine-analytics-variants3manage.png)
 
-## Main view
+## About a dashboard
 
 Before you begin working with the analytics, it’s helpful to know how each dashboard is structured. It includes two main sections:
 
 - **Filters**, where you define your criteria
 - **Reports**, where the filtered results are displayed
 
-![Report](./media/overview/01-appengine-analytics-overview.png)
+![screen showing a dashboard](./media/overview/01-appengine-analytics-overview.png)
 
-### Filter
+### About filters
 
 Filters help you narrow down the data shown in your report by entering specific values. Each filter type lets you refine your dataset based on different criteria.
 
-#### Filter Options
+#### Filter options
 
 You can use the following filter types:
 
 - **Text**: Allows you to filter data using text values. This is useful for searching for names, keywords, or phrases. Common operators include `Equal`, `Starts With`, `Contains`, and `Between`.
 
-    ![Text filter](./media/overview/07-appengine-analytics-filer-abc.png)
+    ![screen showng the Text filter](./media/overview/07-appengine-analytics-filer-abc.png)
 
 - **Number**: Enables filtering based on numeric values. Typical operators include `Greater Than`, `Less Than`, and `Equal`.
 
-    ![Number Filter](./media/overview/08-appengine-analytics-filer-123.png)
+    ![screen showng the Number Filter](./media/overview/08-appengine-analytics-filer-123.png)
 
 - **Collection**: Allows you to select values from predefined or dynamically loaded lists.
         - **Custom Collection**: A user-defined list of values.
@@ -93,90 +101,96 @@ You can use the following filter types:
 
 - **Date**: Lets you filter data by a specific date or date range. To select a single day, simply double-click on the date.
 
-    ![Date Filter](./media/overview/10-appengine-analytics-filter-date.png)
+    ![screen showng the Date Filter](./media/overview/10-appengine-analytics-filter-date.png)
 
-#### Editing filters
+#### Edit filters
 
 The Adapt Filter option lets you choose which filters are shown in the interface. This helps you keep only the filters that matter to you, improving clarity and ease of use.
 
-To customize your filter, follow these steps:
+To edit your filters, follow these steps:
 
 1. Click **Adapt Filter**.
 
-    ![Adapt Filter](./media/overview/11-appengine-analytics-filter-adapt.png)
+    ![screen showng how to Adapt a Filter](./media/overview/11-appengine-analytics-filter-adapt.png)
 
 2. Choose which filter options you want to see in your dashboard.
 
-    ![Adapt filter edit](./media/overview/12-appengine-analytics-filter-adapt-edit.png)
+    ![screen showng the Adapt filter edition](./media/overview/12-appengine-analytics-filter-adapt-edit.png)
 
 3. Click **Save**.
 
-#### Visualization Filters
+#### Use Microcharts
 
-Selected filters can also be displayed as micro charts. These visual summaries offer an interactive way to drill into your data and quickly understand key metrics.
+Selected filters can also be displayed as microcharts. These visual summaries offer an interactive way to drill into your data and quickly understand key metrics.
 
-You can click on specific parts of the filter to see the detailed data on the metric.
+1. To use microcharts as a filters in your view, click on the **microchart icon** in the **Filters** section of your view.
 
-    ![Visual chart](./media/overview/13-appengine-analytics-filter-micro.png)
+    ![screen showng the microcharts](./media/overview/13-appengine-analytics-filter-microoo.png)
 
-### Report
+2. Now, you can click on specific parts of the filter to see the detailed data on the metric.
 
-Reports can be displayed as a Chart, a Table, or a combination of both. You can switch between these display modes at any time.
+    ![screen showng how the microcharts work](./media/overview/13-appengine-analytics-filter-microoo2.png)
 
-    ![Report](./media/overview/23-appengine-analytics-reports-overview.png)
+### Use reports
 
-#### Table
+Reports can be displayed as a **Chart**, a **Table**, or a combination of both. You can switch between these display modes at any time.
 
-The table is the core component of the analytics view and provides powerful tools for interacting with your data.
+    ![screen showng how the Report looks like](./media/overview/23-appengine-analytics-reports-overview.png)
 
-    ![Report](./media/overview/14-appengine-analytics-reports-table.png)
+#### About a table
+
+A table is a core component of Analytics and a powerful tool for interacting with your data.
+
+    ![screen showng the the table report](./media/overview/14-appengine-analytics-reports-table.png)
 
 **Table features**:
 
 - **Direct links** – Some cells include yellow arrows that link directly to SAP Business One documents.
 
-    ![Report](./media/overview/25-appengine-analytics-table-links.png)
+    ![screen showng the table report direct links](./media/overview/25-appengine-analytics-table-links.png)
 
 - **Export to Excel** – In browser mode, you can export the table to Excel using the **Download Excel** option in the top-right corner.
 
-    ![Report](./media/overview/24-appengine-analytics-table-download.png)
+    ![screen showng how to download the table report](./media/overview/24-appengine-analytics-table-download.png)
 
 **Table options**
 
 Located in the top-right corner, these options let you customize how your table is displayed:
 
-    ![Table Options](./media/overview/15-appengine-analytics-reports-table-options.png)
+    ![screen showng the Table Options](./media/overview/15-appengine-analytics-reports-table-options.png)
 
-- **Sort**: Sort columns in ascending or descending order.
+- **Sort by**: Sort columns in ascending or descending order.
 
-    ![Table Options](./media/overview/16-appengine-analytics-reports-table-options-view.png)
+    ![screen showng the Table sorting Options](./media/overview/16-appengine-analytics-reports-table-options-view.png)
 
-- **Visible**: Choose which columns are shown.
+- **Column Visbility**: Choose which columns are shown.
 
-    ![Table Options](./media/overview/17-appengine-analytics-reports-table-options-column-visibility.png)
+    ![screen showng the Table visibility Options](./media/overview/17-appengine-analytics-reports-table-options-column-visibility.png)
 
-- **Freeze**: Lock selected columns for easier scrolling.
+- **Freeze Column**: Lock selected columns for easier scrolling.
 
-    ![Table Options](./media/overview/18-appengine-analytics-reports-table-options-column-freeze.png)
+    ![screen showng the column freeze Options](./media/overview/18-appengine-analytics-reports-table-options-column-freeze.png)
 
-- **Group**: Group rows based on selected columns.
+- **Group Column**: Group rows based on selected columns.
 
-    ![Table Options](./media/overview/19-appengine-analytics-reports-table-options-column-grouping.png)
+    ![screen showng the Table column grouping Options](./media/overview/19-appengine-analytics-reports-table-options-column-grouping.png)
 
-- **Other**:
+- **Other options**:
         - **Display Summaries**: Show totals or summaries for numeric columns.
         - **Auto Row Expand**: Automatically expand grouped results.
         - **Auto Refresh Data**: Refresh data automatically for real-time updates.
 
-    ![View Settings](./media/overview/20-appengine-analytics-reports-table-options-other.png)
+    ![screen showng the View Settings in table report](./media/overview/20-appengine-analytics-reports-table-options-other.png)
 
-#### Chart
+#### About a chart
 
 Charts offer a visual way to analyze your data.
 
-    ![Data Visualisation in Charts](./media/overview/23-appengine-analytics-reports-overview.png)
+    ![screen showng the Data Visualisation in Charts](./media/overview/23-appengine-analytics-reports-overview.png)
 
-The available chart types include line, bar, column, and pie. These options give you flexibility in how you represent your dataset.
+The available chart types include **Line Chart**, **Bar Chart**, **Column Chart**, and **Pie Chart**, giving you flexibility in how you visualize your dataset.
+
+    ![screen showng the pie chart](./media/overview/26-appengine-analytics-reports-chart-pie.png)
 
 **Chart Options**
 
@@ -187,10 +201,13 @@ You can adjust the chart using the following settings:
 - **Functions**: Apply operations such as `Count`, `Sum`, `Average`, `Minimum`, or `Maximum` (multiple functions allowed).
 - **Sort**: Options include: `Without Sort`, `Dimension Ascending`, `Dimension: Descending`, `Measures: Ascending`, `Measures: Descending`.
 
-    ![chart options](./media/overview/21-appengine-analytics-reports-chart-options.png)
+    ![screen showng the chart options](./media/overview/21-appengine-analytics-reports-chart-options.png)
 
 Users can also interact with chart elements to view summaries and download the data in XLSX format.
 
-    ![Download Excel](./media/overview/22-appengine-analytics-reports-chart-options-list.png)
+    ![screen showng how to Download charts in Excel](./media/overview/22-appengine-analytics-reports-chart-options-list.png)
 
----
+:::info[note]
+Note
+If you have any questions, contact us via the [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp). Feedback on usability and performance is always welcome.
+:::
