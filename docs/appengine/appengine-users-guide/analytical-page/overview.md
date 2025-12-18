@@ -6,11 +6,13 @@ toc_max_heading_level: 4
 
 # Overview
 
-This user-friendly tool allows you to quickly and easily create custom reports and analytics based on data from plugins. Designed to simplify data visualization, it provides flexibility and efficiency in managing and analyzing complex data sets.
+The **Analytics** module of **CompuTec AppEngine** enables you to quickly analyze your data and create custom reports using information from connected plugins. It is designed to simplify data visualization while giving you flexible and efficient tools for managing and evaluating complex data sets.
 
-    ![Analytics](./media/overview/01-appengine-analytics-overview.png)
+![Analytics](./media/overview/01-appengine-analytics-overview.png)
 
-## Access CompuTec AppEngine Analytics
+## Access CompuTec AppEngine Analtics
+
+To access the **Analytics** module of **CompuTec AppEngine**, follow these steps:
 
 1. In your browser, open **CompuTec AppEngine site** and choose **Launchpad**.
 
@@ -26,15 +28,15 @@ This user-friendly tool allows you to quickly and easily create custom reports a
 
     ![screen showing accessing analyics](./media/overview/02a-appengine-analytics-view.png)
 
-5. Choose your data source by clicking the component name. In our example, we'll be analyzing Manufacturing Order transactions, so we choose MO360.
+5. Choose your data source by clicking the component name. In our example, we'll be analyzing **Manufacturing Order** transactions, so we choose **MO360**.
 
     ![screen showng choosing data source](./media/overview/02b-appengine-analytics-view.png)
 
-6. Done! Now, you can see your analytics dashboard.
+6. Done! Now, you can see your **Analytics** dashboard.
 
     ![scrren showing analytics dashboard](./media/overview/01-appengine-analytics-overview.png)
 
-## About a View
+## About a view
 
 A **View** is a preset report configuration. When you install the CompuTec AppEngine plugin, you automatically receive one standard view, which is set as the default. You can easily create your own views or customize the existing ones.
 
@@ -77,7 +79,7 @@ Before you begin working with the analytics, it’s helpful to know how each das
 
 ![screen showing a dashboard](./media/overview/01-appengine-analytics-overview.png)
 
-### About filters
+### Filter your data
 
 Filters help you narrow down the data shown in your report by entering specific values. Each filter type lets you refine your dataset based on different criteria.
 
@@ -119,7 +121,7 @@ To edit your filters, follow these steps:
 
 3. Click **Save**.
 
-#### Use Microcharts
+#### Use microcharts
 
 Selected filters can also be displayed as microcharts. These visual summaries offer an interactive way to drill into your data and quickly understand key metrics.
 
@@ -131,13 +133,13 @@ Selected filters can also be displayed as microcharts. These visual summaries of
 
     ![screen showng how the microcharts work](./media/overview/13-appengine-analytics-filter-microoo2.png)
 
-### Use reports
+### See your data in reports
 
 Reports can be displayed as a **Chart**, a **Table**, or a combination of both. You can switch between these display modes at any time.
 
     ![screen showng how the Report looks like](./media/overview/23-appengine-analytics-reports-overview.png)
 
-#### About a table
+#### Use a table report
 
 A table is a core component of Analytics and a powerful tool for interacting with your data.
 
@@ -182,7 +184,7 @@ Located in the top-right corner, these options let you customize how your table 
 
     ![screen showng the View Settings in table report](./media/overview/20-appengine-analytics-reports-table-options-other.png)
 
-#### About a chart
+#### Use a chart report
 
 Charts offer a visual way to analyze your data.
 
