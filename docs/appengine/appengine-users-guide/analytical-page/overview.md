@@ -109,6 +109,8 @@ To customize your filter, follow these steps:
 
     ![Adapt filter edit](./media/overview/12-appengine-analytics-filter-adapt-edit.png)
 
+3. Click **Save**.
+
 #### Visualization Filters
 
 Selected filters can also be displayed as micro charts. These visual summaries offer an interactive way to drill into your data and quickly understand key metrics.
