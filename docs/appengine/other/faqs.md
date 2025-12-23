@@ -4,11 +4,16 @@ sidebar_position: 1
 
 # FAQs
 
-## How to get Company Id
+## How to find the Company ID
 
-To obtain the company ID, navigate to the Administration Panel and hover over the company name.
+Follow the steps below to obtain the `CompanyId` in **CompuTec AppEngine**:
 
-    ![Company Id](../media/troubleshooting/gcid.png)
+1. Open the **Administration Panel**.
+2. Navigate to **Configuration**.
+3. In the **Companies** section, find your company and hover over its name.
+4. The **Company ID** is displayed in the tooltip.
+
+    ![Company Id](../media\01scr-faq-company-name.png)
 
 ## How to configure CORS in the SAP Web Client manually
 
