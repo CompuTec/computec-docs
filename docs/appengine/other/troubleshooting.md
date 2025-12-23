@@ -44,3 +44,46 @@ If AppEngine still cannot start **after restarting WinNAT**:
 :::note[info]
 If you need help, or have any questions, contact us via the [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp).
 :::
+
+## Problem: CompuTec AppEngine doesn't connect to the database
+
+CompuTec AppEngine fails to connect to the SAP HANA database, and the following error is displayed:
+
+>`Could not load file or assembly 'Sap.Data.Hana.Core.v2.1, Version=2.7.26.0, Culture=neutral, PublicKeyToken=0326b8ea63db4bc4'. Could not find or load a specific file. (0x80131621).`
+
+### Solution
+
+You have to ensure that the **SAP HANA Database (HDB) Client** installed on the system where CompuTec AppEngine runs matches the **SAP HANA server revision**. It's important that the environment variable path is correctly pointing to the installation directory.
+
+To resolve the issue, follow these steps:
+
+1. Go to **Windows** > **System** > **Environment Variables**.
+
+    ![System Variable](../media/troubleshooting/system-variable.png)
+
+2. Locate the variable named **HDBDOTNETCORE** and open the path.
+3. Right click the **libadonetHDB.dll** file and check the **Product version**.
+
+    ![Product Version](../media/troubleshooting/product-version.png)
+
+It must match the [**HANA Server Revision**](https://help.sap.com/docs/SAP_BUSINESS_ONE_ADMIN_GUIDE_HANA/1a2fc202f7f64336abf9fbc957d9b9ba/13c43452877d4feaad4dbd661d15d9bb.html).
+
+## Problem: Some features are disabled after CompuTec AppEngine upgrade
+
+After upgrading CompuTec AppEngine, some or all CompuTec AppEngine features appear disabled or unavailable.
+
+### Solution
+
+To resolve this issue, follow these steps:
+
+1. Log in to **CompuTec AppEngine Administration Panel**.
+
+2. Navigate to **Configuration**.
+
+3. Review the list of your companies.
+
+4. Click the **Update required** label and complete the guided steps to finish the company update process.
+
+    ![Update Company](../media/troubleshooting/update-company.png)
+
+5. Done! Now all features are active.

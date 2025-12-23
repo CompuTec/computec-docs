@@ -10,34 +10,48 @@ To obtain the company ID, navigate to the Administration Panel and hover over th
 
     ![Company Id](../media/troubleshooting/gcid.png)
 
-## Features are Disabled after CompuTec AppEngine Upgrade
+## How to configure CORS in the SAP Web Client
 
-Ensure all your companies are fully updated by clicking "Update Company" in the Administration Panel for each one. Features may remain unavailable until the update is completed.
+Sometimes, when activating your company in CompuTec AppEngine, you may want to set up CORS (Cross-Origin Resource Sharing) for the SAP Business One Web Client manually:
 
-    ![Update Company](../media/troubleshooting/update-company.png)
+1. In the **CompuTec AppEngine Administration Panel**, go to **Configuration** > **Advanced Configuration**.  
 
-## CompuTec AppEngine not Connecting to the Database
+    ![screen showing where to find advanced configuration when setting up CORS process](../media/1-webup-cors-config.png)  
 
-CompuTec AppEngine fails to connect to the SAP HANA database, and the following error is displayed:
+2. In the **CORS Allowed Origins** field, enter your **SAP Web Client address**.  
 
->**Error Message**: Could not load file or assembly 'Sap.Data.Hana.Core.v2.1, Version=2.7.26.0, Culture=neutral, PublicKeyToken=0326b8ea63db4bc4'. Could not find or load a specific file. (0x80131621).
+    ![Advanced configuration help screen showing where to enter the web client CORS address](../media/2-webup-config-cors-address.png)
 
-**Solution**:
+3. Restart **CompuTec AppEngine** to apply changes.
 
-To resolve the issue, follow these steps:
+## How to set up Content Security Policy in the SAP Web Client
 
-1. Ensure that the SAP HANA Database (HDB) client installed on the system where CompuTec AppEngine runs matches the SAP HANA server revision.
-2. Make sure that the environment variable path are correctly pointing to the installation directory.
+It's important to make sure that the Content Security Policy (CSP) configuration in the SAP Web Client includes all required entries. It’s pre-filled with basic data, and you’ll have to add your own CSP entries:
 
-**How to check it**:
+1. In the **CompuTec AppEngine Administration Panel**, navigate to **System** > **System Details**.  
 
-1. Open Environment Variables through: Windows->System->Environment Variables
+    ![System Details help screen in CSP configuration process](../media/3-webup-config-csp.png)  
 
-    ![System Variable](../media/troubleshooting/system-variable.png)
+2. Click on the **Required CSP Entries for Web Client** link.  
 
-2. Locate the variable named HDBDOTNETCORE and open the path.
-3. Right click the libadonetHDB.dll file and check the Details for the Product version.
+    ![A help screen showing where to find the link to the required CSP entries in CSP configuration process](../media/4-webup-config-csp-entries-link.png)  
 
-    ![Product Version](../media/troubleshooting/product-version.png)
+3. Here, you can find all the required entries for SAP Web Client Content Security Policy.
 
-It must match the [HANA Server Revision](https://help.sap.com/docs/SAP_BUSINESS_ONE_ADMIN_GUIDE_HANA/1a2fc202f7f64336abf9fbc957d9b9ba/13c43452877d4feaad4dbd661d15d9bb.html)
+    ![A help screen showing where to find the required CSP entries in CSP configuration process](../media/5-webup-config-csp-entries.png)  
+
+4. Copy the entries and close the window.  
+
+5. Open **SAP Business One Web Client** and click on your **profile** icon in the upper right corner of the interface.  
+
+    ![A help screen showing where to find your profile icon in SAP Business One Web Client](../media/6-webup-profile-settings-sapb1-menu.png)  
+
+6. Navigate to **Settings** > **General Settings**.  
+
+    ![A help screen showing where to find General Settings in SAP Business One Web Client](../media/7-webup-general-settings-sapb1-menu.png)  
+
+7. Paste the copied entries to the **Content Security Policy** field.  
+
+    ![A help screen showing where to paste the required CSP entries in CSP configuration process](../media/8-webup-config-paste-csp-entries.png)
+
+8. Refresh the **SAP Business One Web Client** page to apply the changes.
