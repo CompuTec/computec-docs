@@ -10,7 +10,7 @@ To obtain the company ID, navigate to the Administration Panel and hover over th
 
     ![Company Id](../media/troubleshooting/gcid.png)
 
-## How to configure CORS in the SAP Web Client
+## How to configure CORS in the SAP Web Client manually
 
 Sometimes, when activating your company in CompuTec AppEngine, you may want to set up CORS (Cross-Origin Resource Sharing) for the SAP Business One Web Client manually:
 
@@ -24,9 +24,9 @@ Sometimes, when activating your company in CompuTec AppEngine, you may want to s
 
 3. Restart **CompuTec AppEngine** to apply changes.
 
-## How to set up Content Security Policy in the SAP Web Client
+## How to set up Content Security Policy in the SAP Web Client manually
 
-It's important to make sure that the Content Security Policy (CSP) configuration in the SAP Web Client includes all required entries. It’s pre-filled with basic data, and you’ll have to add your own CSP entries:
+Sometimes, you may want to set up the Content Security Policy (CSP) in the SAP Web Client manually. To make sure it's filled with the correct data (or add your own CSP entries), follow these steps:
 
 1. In the **CompuTec AppEngine Administration Panel**, navigate to **System** > **System Details**.  
 

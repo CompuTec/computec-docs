@@ -88,40 +88,6 @@ To manually install and activate CompuTec WebClient Start, follow these steps:
 
 14. Done! You've successfully installed and activated CompuTec WebClient Start extension.
 
-## Step 3: Configure Content Security Policy (CSP) Settings
-
-To enable proper functionality of the SAP Web Client, especially for embedded frames and cross-domain requests, you need to configure Content Security Policy (CSP) settings in SAP Web Client. Correct CSP configuration prevents security issues and ensures smooth integration.
-
-1. In the **CompuTec AppEngine Administration Panel**, navigate to **System** > **System Details**.  
-
-    ![System Details help screen in CSP configuration process](./media/working-with-sap-business-one-web-client/3-appengine-config-csp.png)  
-
-2. Click on the **Required CSP Entries for Web Client** link.  
-
-    ![A help screen showing where to find the link to the required CSP entries in CSP configuration process](./media//working-with-sap-business-one-web-client/4-appengine-config-csp-entries-link.png)  
-
-3. Here, you can find all the required entries for SAP Web Client Content Security Policy.
-
-    ![A help screen showing where to find the required CSP entries in CSP configuration process](./media//working-with-sap-business-one-web-client/5-appengine-config-csp-entries.png)  
-
-4. Copy the entries and close the window.  
-
-5. Open **SAP Business One Web Client** and click on your **profile** icon in the upper right corner of the interface.  
-
-    ![A help screen showing where to find your profile icon in SAP Business One Web Client](./media/working-with-sap-business-one-web-client/6-appengine-profile-settings-sapb1-menu.png)  
-
-6. Navigate to **Settings** > **General Settings**.  
-
-    ![A help screen showing where to find General Settings in SAP Business One Web Client](./media/working-with-sap-business-one-web-client/7-appengine-general-settings-sapb1-menu.png)  
-
-7. Paste the copied entries into the **Content Security Policy** field.  
-
-    ![A help screen showing where to paste the required CSP entries in CSP configuration process](./media/working-with-sap-business-one-web-client/8-appengine-config-paste-csp-entries.png)
-
-8. Refresh the **SAP Business One Web Client** page to apply the changes.
-
-9. Done! You've successfully configured CSP in SAP Web Client.
-
 :::info[note]
 If you need help at any point, feel free to reach out through the [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp).
 :::
