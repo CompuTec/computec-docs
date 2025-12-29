@@ -6,7 +6,6 @@ sidebar_position: 1
 
 Below are the release notes for CompuTec ProcessForce Plugin, highlighting new features, improvements, and bug fixes in this release.
 
-
 ## CompuTec.ProcessForce 3.2512.2
 
 **Release Date: 29 December 2025**
@@ -184,8 +183,6 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 | Bug | Manufacturing Order | Issues with linking of pick receipt and goods receipt. |
 | Bug | .netCore, Manufacturing Order | Update Revision in MOR through WebAPI. |
 | Bug | Quality Control, WebAPI | Error:  `{“title”:”Unhandled exception”,”detail”:”Test Protocol invalid. Date validation.”}` occurs post Quality Control Test. |
-|
-
 
 ## CompuTec.ProcessForce 3.2508.1
 
