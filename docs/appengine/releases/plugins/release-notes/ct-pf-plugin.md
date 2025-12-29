@@ -6,7 +6,23 @@ sidebar_position: 1
 
 Below are the release notes for CompuTec ProcessForce Plugin, highlighting new features, improvements, and bug fixes in this release.
 
----
+
+## CompuTec.ProcessForce 3.2512.2
+
+**Release Date: 29 December 2025**
+
+| Issue Type | Components | Release Note |
+| --- | --- | --- |
+| **New** | **Web API** | Added a new **OData controller** for shortages (`ShortageODataController`) that provides clearer stock information across all warehouses in the company.  |
+| **New** | **Items**, **Manufacturing Order** | Introduced new company-level shortage and stock fields:<ul><li>**ShortageQuantityOnCompany**: the company-level shortage quantity</li><li>**ActualInStockCompany**: the total stock on hand across all warehouses</li><li>**AvailableInStockCompany**: the available stock after deducting all demand documents</li></ul> |
+| **New** | **Web API**, **Manufacturing Order** | Added a new `ManufacturingBackflushLines` endpoint to retrieve consumed items for a Manufacturing Order based on the planned quantity, improving visibility of issued and remaining quantities. |
+| **New** | **Manufacturing Order**, **Time Bookings** | Introduced the following fields:<ul><li>**CalculatedQuantity** (replacing *PlannedQuantity*): the calculated quantity</li><li>**OriginalPlannedQuantity**: the original planned quantity</li><li>**ActualIssuedQuantity**: the quantity already issued</li><li>**OpenQuantity**: the remaining quantity to be issued (*OpenQuantity* = *OriginalPlannedQuantity* − *ActualIssuedQuantity*)</li></ul> |
+| **New** | **Web API**, **Time Bookings** | Added a new `ManufacturingRscTimeController` endpoint to calculate time based on quantities in manufacturing operations. |
+| **Improved** | **Items**, **Manufacturing Order** | Added new and renamed existing stock-related fields for improved clarity:<ul><li>**OnHandNoRev** (replacing *ActualInStock*): the on-hand quantity per warehouse</li><li>**OnHandCompanyNoRev** (replacing *ActualInStockCompany*): the total on-hand quantity sum for all warehouses</li><li>**CommittedOnWhsNoRevision**: the committed quantity per warehouse</li><li>**CommittedOnCompanyNoRevision**: the total committed quantity sum for all warehouses</li><li>**OrderedOnWhsNoRevision**: the ordered quantity per warehouse</li><li>**OrderedOnCompanyNoRevision**: the total ordered quantity sum for all warehouses</li></ul> |
+| **Improved** | **Manufacturing Order**, **Pick and Pack** | Improved the **Pick Order** and **Pick Receipt** closing mechanism during Manufacturing Order (MO) close and finish to ensure consistent document statuses for closed and finished MOs. |
+| **Fixed** | **Batches** | Fixed an issue where batch master data was not created during **Goods Receipt** and **Goods Receipt Purchase Order** for batch-managed items when the batch creation job was disabled. Batch-managed items now always have batch master data created correctly. |
+| **Fixed** | **Quality Control** | Fixed an issue where the system could not find the **Quality Control (QC)** test protocol when creating **QC** from a **Goods Receipt**. The system now automatically selects the correct test protocol. |
+| **Fixed** | **Web API** | Fixed an issue where updating an existing operation and adding a new operation through the Web API caused the `routingOperations.U_RtgOprCode is not nullable` error. Routing operations can now be updated and added in a single request without errors. |
 
 ## CompuTec.ProcessForce 3.2512.1
 
