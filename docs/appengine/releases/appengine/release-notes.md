@@ -4,6 +4,39 @@ sidebar_position: 1
 
 # Release Notes
 
+## CompuTec AppEngine 3.2512.1
+
+**Release Date - 18 December 2025**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Bug | AE Analytics | Cannot open a new view after activating the Date Parts feature. |
+| Bug | AE Core | Cannot load unmanaged native library when this one is referenced by the plugin. |
+| Bug | AE Plugin Generator | Filtering does not work when a fully annotated enum is provided. |
+| Bug | .netCore | In 2025, the system does not allow using 2024 series with a period indicator. |
+| Bug | Manufacturing Order | Issues with scrap and coproduct in Orderless Production. |
+| Bug | Formulas | Result/quantity is not recalculated automatically and only updates when the header quantity is changed. |
+| Bug | .netCore | Error occurs while creating Pick Receipt. |
+| Bug | Routings | Invalid records exist in the @CT_PF_RTG3 and @CT_PF_BOM16 tables. |
+| Bug | Core | GetDataFromDbDataSource causes System.InvalidCastException: invalid cast from System.String to System.Nullable. |
+| Bug | Bill of Materials, Common Functions | Issues occur when using Show History in the Production Process, preventing proper display of historical data. |
+| Bug | Core | Error in UDF Initializator while retrieving valid values for linked table UDF U_MOR_LT |
+| Bug | AE Common Library | Error occurs in View Variant when ui.table.Column includes a label property. |
+| Bug | AE Analytics | Defining a Custom Collection does not work. |
+| Bug | .netCore | Stale configuration entries in the JSON configuration file prevent AppEngine from starting the service or cause it to re-run configuration. |
+| Bug | AE Administration Panel | SAP user is unexpectedly prompted to be selected or added during the process. |
+| Bug | AE Administration | Company activation authentication error message is unclear and should clearly indicate whether Manager or B1SiteUser credentials are required. |
+| Bug | AE UAA | Company Select does not work correctly when a large number of companies are available. |
+| Bug | AE Administration Panel | When loading a plugin, the message “Some plugin failed to load” is displayed initially even though the plugin loads correctly afterward. |
+| Bug | MRP | In MRP Planning Horizon, entering a start or end date and leaving the field causes the system to replace it with an invalid -1 date. |
+| Bug | AE Analytics | Data export to Excel and CSV does not work in AE Analytics. |
+| Bug | WebUpManager | Two properties of the ChooseFromList control type are not translated: `WebClientControl_Property_multiSelection` and `WebClientControl_Property_showLinkButton`|
+| Bug | AE Analytics | Problem with adding authorization to variant. |
+| Bug | PFI | PFI is empty with no errors displayed. |
+| Bug | AE Core | Action refresh does not work. |
+| Bug | AE OData | BarFilter does not correctly serialize the EnumType filter property. |
+| Bug | AE Analytics | Empty filter does not work. |
+
 ## CompuTec AppEngine 3.2511.1
 
 **Release Date - 26 November 2025**
