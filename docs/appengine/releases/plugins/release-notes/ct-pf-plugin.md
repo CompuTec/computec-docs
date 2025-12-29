@@ -12,7 +12,7 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 
 | Issue Type | Components | Release Note |
 | --- | --- | --- |
-| **New** | **Web API** | Added a new **OData controller** for shortages (`ShortageODataController`) that provides clearer stock information across all warehouses in the company.  |
+| **New** | **Web API** | Added a new `ShortageODataController` that provides clearer shortages information across all warehouses in the company.  |
 | **New** | **Items**, **Manufacturing Order** | Introduced new company-level shortage and stock fields:<ul><li>**ShortageQuantityOnCompany**: the company-level shortage quantity</li><li>**ActualInStockCompany**: the total stock on hand across all warehouses</li><li>**AvailableInStockCompany**: the available stock after deducting all demand documents</li></ul> |
 | **New** | **Web API**, **Manufacturing Order** | Added a new `ManufacturingBackflushLines` endpoint to retrieve consumed items for a Manufacturing Order based on the planned quantity, improving visibility of issued and remaining quantities. |
 | **New** | **Manufacturing Order**, **Time Bookings** | Introduced the following fields:<ul><li>**CalculatedQuantity** (replacing *PlannedQuantity*): the calculated quantity</li><li>**OriginalPlannedQuantity**: the original planned quantity</li><li>**ActualIssuedQuantity**: the quantity already issued</li><li>**OpenQuantity**: the remaining quantity to be issued (*OpenQuantity* = *OriginalPlannedQuantity* − *ActualIssuedQuantity*)</li></ul> |
