@@ -613,7 +613,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 | Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
-| Highlight | - | Storage Units handling in Stock Transfer. Click [here](/docs/wms/user-guide/storage-units/su-in-stock-transfer/) to find out more. | - |
+| Highlight | - | Storage Units handling in Stock Transfer. Click [this link](/docs/wms/user-guide/storage-units/su-in-stock-transfer/) to find out more. | - |
 | Improvement | Client | An error occurs spontaneously upon clicking the Left Arrow icon in some cases. Error message: An application error occurred. If problem will occur again please report it to the system administrator. | SWMS-2730 |
 | Improvement | Client | Delivery: Allow/Block negative inventory (SAP Business One option) is now supported. | - |
 | Improvement | Client | It is now possible to display all Bin locations for Items managed by none when checkbox Block negative inventory is unmarked. | - |
@@ -667,7 +667,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 | Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
-| Improvement | Highlight | Now it is possible to download the CompuTec WMS client installers by connecting to a CompuTec WMS Server installation. Click [here](../administrator-guide/installation/wms-client/computec-wms-client-download.md) to find out more. | – |
+| Improvement | Highlight | Now it is possible to download the CompuTec WMS client installers by connecting to a CompuTec WMS Server installation. Click [this link](../administrator-guide/installation/wms-client/computec-wms-client-download.md) to find out more. | – |
 | Improvement | Client | Custom Query Manager: the Internal Batches screen added. | – |
 | Improvement | Client | It is now possible to scan an SSCC using the (00) prefix (in the forms where there is an SSCC field present). | SWMS-2737 |
 | Improvement | Client | Stock Transfer Request, Quantity form: dot is used instead of comma in quantities lower then 1000. | – |
