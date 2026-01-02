@@ -1,5 +1,11 @@
 [
   { 
+    "release_name": "CompuTec ProcessForce 10.0 Release 36 HF1",
+    "build": "10.0.36.4",
+    "version_number": "2.10.36.4",
+    "download_url": "https://download.computec.one/software/processforce/api/releases/CompuTec_ProcessForce_API_10.0.36.4.HF1.x64.msi"
+  },
+  { 
     "release_name": "CompuTec ProcessForce 10.0 Release 36",
     "build": "10.0.36.3",
     "version_number": "2.10.36.3",
