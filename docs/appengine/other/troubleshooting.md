@@ -55,18 +55,25 @@ CompuTec AppEngine fails to connect to the SAP HANA database, and the following 
 
 You have to ensure that the **SAP HANA Database (HDB) Client** installed on the system where CompuTec AppEngine runs matches the **SAP HANA server revision**. It's important that the environment variable path is correctly pointing to the installation directory.
 
-To resolve the issue, follow these steps:
+To check the environment variable path, follow these steps:
 
-1. Go to **Windows** > **System** > **Environment Variables**.
+1. Go to **Windows** > **System Properties** > **Environment Variables...**.
 
-    ![System Variable](../media/troubleshooting/system-variable.png)
+    ![System Variable](..\media\troubleshooting\01-ae-troubleshooting.png)
 
-2. Locate the variable named **HDBDOTNETCORE** and open the path.
-3. Right click the **libadonetHDB.dll** file and check the **Product version**.
+2. Locate the variable named **HDBDOTNETCORE** and note the path. In our example, it's `C:\Program Files\hdbclient\dotnetcore`.
 
-    ![Product Version](../media/troubleshooting/product-version.png)
+    ![screen showing how to locate the path to the file](../media/troubleshooting/02-ae-troubleshooting.png)
 
-It must match the [**HANA Server Revision**](https://help.sap.com/docs/SAP_BUSINESS_ONE_ADMIN_GUIDE_HANA/1a2fc202f7f64336abf9fbc957d9b9ba/13c43452877d4feaad4dbd661d15d9bb.html).
+3. Open the noted path on your computer.
+
+4. Find the **libadonetHDB.dll** file, right-click on it, and click **Properties**.
+
+5. Check its **Product version**. It must match the [**HANA Server Revision**](https://help.sap.com/docs/SAP_BUSINESS_ONE_ADMIN_GUIDE_HANA/1a2fc202f7f64336abf9fbc957d9b9ba/13c43452877d4feaad4dbd661d15d9bb.html).
+
+    ![Product Version](../media/troubleshooting/03-ae-troubleshooting.png)
+
+6. Done! Now you know if the environment variable path is correctly pointing to the installation directory.
 
 ## Problem: Some features are disabled after CompuTec AppEngine upgrade
 
