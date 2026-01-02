@@ -8,6 +8,32 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 
 ---
 
+## CompuTec WMS Plugin 3.2512.1
+
+**Release Date - 31 December 2025**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Improvement | Server | Added the ability to edit Storage Units on Delivery from Pick List that were packed during the Pick and Pack process. |
+| Improvement | Client | Added a button in Document Details to change the sorting of the product list across all documents. |
+| Improvement | Server | Added "remove batch" button in Delivery. |
+| Bug | WMS Plugin | Item Code is missing in the Storage Units grid. |
+| Bug | Client | In Pick Receipt batch generation, Revision fields are read-only and not available for editing. |
+| Bug | Server | The available quantity displayed in the Pick List is incorrect. |
+| Bug | Server | GRPO - Empty Bin Code function and Receiving Bin Locations. Error message: Bin location "0" does not belong to specific warehouse. |
+| Bug | Server | GRPO - Selecting Bin Code from Storage Unit details screen does not work. |
+| Bug | Server | Batches not assigned in warehouse without bin locations in Delivery from Sales Order. |
+| Bug | Client | Batch/serial items managed primarily by bin location do not appear in the Pick List. |
+| Bug | Client | Numeric UDF field does not take values. |
+| Bug | Server | In Delivery from Sales Order (Sales BOM), closed lines are not copied to the Delivery document. |
+| Bug | Server | GRPO - Quantity in SU is doubled. |
+| Bug | Server | On the DEV server, updating a Storage Unit is not possible due to the error “Cannot change the Status.” |
+| Bug | Server | In Pick Receipt, the Goods Receipt is not created even though the info message says “Goods Receipt/Production receipt no. 0 created.” |
+| Bug | Server | In Stock Transfer from Request with SU FIFO, adding a second Storage Unit for the same line does not update the line quantity. |
+| Bug | Server | Pick and Pack - Data not saved to UDF. |
+| Bug | Server | In Old Stock Counting, the quantity is not saved on the first attempt if the UoM Code is not selected. |
+| Bug | Server | Use TLS instead of SSL for secure communication. |
+
 ## CompuTec WMS Plugin 3.2511.1
 
 **Release Date - 27 November 2025**
