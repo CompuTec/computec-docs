@@ -2,7 +2,7 @@
 sidebar_position: 10
 ---
 
-# PFI
+# CompuTec ProcessForce Import (PFI)
 
 CompuTec PFI (CompuTec ProcessForce Import) is a powerful plugin designed to simplify and accelerate the process of importing and updating data within CompuTec ProcessForce objects. As a flexible alternative to PowerShell updates, PFI offers an intuitive interface and advanced features that cater to the unique needs of users managing CompuTec ProcessForce data.
 
@@ -20,7 +20,7 @@ Before using PFI, ensure the following:
 
 ### Installation
 
-For detailed instructions on installing the CompuTec AppEngine plugin, click [here](../administrators-guide/configuration-and-administration/plugins/overview.md).
+For detailed instructions on installing the CompuTec AppEngine plugin, click [here](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/plugins/overview).
 
 ## Usage
 
