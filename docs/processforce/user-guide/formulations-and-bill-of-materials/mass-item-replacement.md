@@ -31,7 +31,7 @@ This form allows the user to quickly search, change, and replace one Item with a
 **Update All or None**: When this parameter is selected, the system rolls back all updates if an error occurs in any of the BOMs. If it is not selected, the system updates each BOM individually and commits the changes one by one.
 
 :::info
-    For extensive modifications to Bills of Materials, consider using the Bulk Change feature available in CompuTec AppEngine: [Bulk Change](/docs/appengine/plugins-user-guide/bulk-changes-on-bills-of-materials/overview).
+    For extensive modifications to Bills of Materials, consider using the Bulk Change feature available in CompuTec AppEngine: [Bulk Change](https://learn.computec.one/docs/processforce/processforce-plugins/bulk-changes-on-bills-of-materials/overview).
 :::
 
 ---

@@ -7,7 +7,7 @@ sidebar_position: 1
 Managing and updating data in databases efficiently is crucial for ensuring smooth business operations. This guide provides a detailed overview of using PowerShell scripts to import and update data within CompuTec ProcessForce. With predefined scripts, you can streamline data handling, enhance flexibility, and reduce manual efforts. On related pages, you can find all the necessary information on PowerShell configuration, predefined scripts, and how to modify them.
 
 :::info
-    On the 4th of March 2022, [PFI (CompuTec ProcessForce Import) plugin for CompuTec AppEngine](/docs/appengine/plugins-user-guide/pfi) was released. PFI facilitates the import and updating of data to CompuTec ProcessForce objects, providing a streamlined, faster, and more flexible alternative to PowerShell updates.
+    On the 4th of March 2022, [PFI (CompuTec ProcessForce Import) plugin for CompuTec AppEngine](https://learn.computec.one/docs/processforce/plugins-user-guide/pfi) was released. PFI facilitates the import and updating of data to CompuTec ProcessForce objects, providing a streamlined, faster, and more flexible alternative to PowerShell updates.
 :::
 
 :::caution
