@@ -14,7 +14,7 @@ The MOWizard plugin is designed to streamline the creation of Manufacturing Orde
 Below are the steps to install the MOWizard Plugin for SAP Business One:
 
 1. Get the installation done.
-2. Follow the detailed instructions to install the plugin on your SAP Business One system [here](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/plugins/plugin-installation-process)
+2. Follow the detailed instructions to install the plugin on your SAP Business One system descibed in [this guide](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/plugins/plugin-installation-process)
 
 3. Once installed, go to the SAP Business One Launchpad and select the MOWizard plugin to begin using it.
 
@@ -72,7 +72,7 @@ Start by clicking the plus icon to create a new Job. You can create many of thes
 
 **Example usage**
 
-Click [here](https://www.youtube.com/watch?v=HdCU7PtdwPA) to know more about Example Usage.
+Click [this link](https://www.youtube.com/watch?v=HdCU7PtdwPA) to know more about Example Usage.
 
 ---
 The MOWizard plugin for SAP Business One is a powerful tool designed to simplify the creation and management of Manufacturing Orders. By enabling businesses to process large volumes of orders tied to Sales Order lines and view complex manufacturing trees, MOWizard increases efficiency and reduces the potential for errors. With its intuitive interface and structured workflow, this plugin streamlines manufacturing processes, allowing you to plan and execute orders more effectively. Whether you're handling simple or complex production requirements, MOWizard is a valuable addition to your SAP Business One system.

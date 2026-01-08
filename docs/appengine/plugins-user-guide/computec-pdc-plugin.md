@@ -6,7 +6,7 @@ sidebar_position: 4
 
 PDC stands for Plant Data Capture. The CompuTec PDC Plugin integrates seamlessly with CompuTec ProcessForce Time Bookings, offering an efficient way to capture production task data directly from the production floor using mobile touchscreen devices. It records time spent on specific tasks or operations, allows you to oversee the precise details about any given operation such as machine data, features, operational history and item details and using the management panel you can supervise your entire machine park and its operations as well as check resource status.CompuTec PDC on CompuTec AppEngine gives you more speed and makes work-time record more effective.
 
-This guide provides comprehensive instructions on working with the CompuTec PDC Plugin and CompuTec AppEngine. It complements the main CompuTec PDC application manual, (which is available [here](/docs/pdc/)).
+This guide provides comprehensive instructions on working with the CompuTec PDC Plugin and CompuTec AppEngine. It complements the main CompuTec PDC application manual, (which is available after clicking [this link](/docs/pdc/)).
 
 ---
 
@@ -14,9 +14,9 @@ This guide provides comprehensive instructions on working with the CompuTec PDC 
 
 Before using the CompuTec PDC Plugin, ensure the following are installed and configured:
 
-1. CompuTec ProcessForce and CompuTec Licence Server is installed and configured. Refer to the relevant installation guide [here](https://learn.computec.one/docs/processforce/administrator-guide/licensing/license-server/overview).
+1. CompuTec ProcessForce and CompuTec Licence Server is installed and configured. Refer to the relevant installation guide by clicking [this link](https://learn.computec.one/docs/processforce/administrator-guide/licensing/license-server/overview).
 
-2. CompuTec PDC requirements have been fulfilled. Verify the system meets all requirements [here](/docs/pdc/administrator-guide/installation/requirements/).
+2. CompuTec PDC requirements have been fulfilled. Verify the system meets all requirements descibed [in this guide](/docs/pdc/administrator-guide/installation/requirements/).
 
 :::caution
 The CompuTec PDC Plugin is compatible only with the 64-bit version of CompuTec PDC.
