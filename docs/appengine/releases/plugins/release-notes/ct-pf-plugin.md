@@ -16,6 +16,8 @@ Below are the release notes for CompuTec ProcessForce Plugin, highlighting new f
 | Improved | Bill of Materials | Copying multiple resources from Excel and pasting them into a specific operation now works correctly. Resources are pasted into the selected operation only, maintaining the correct structure and sequence. |
 | Fixed | Manufacturing Order | Fixed an issue where **Orderless Production** failed with a `Bin allocation is not completed` error, even when bin setup was correct. **Manufacturing Orders** can now be processed without unnecessary bin allocation errors. |
 | Fixed | Manufacturing Order | Resolved an error that occurred when changing a **Manufacturing Order** status from `Released` or `Started` to `Finished`. **Manufacturing Orders** now update successfully without save or data context errors. |
+| Fixed | Common functions | Replacing items in bulk now saves successfully. Previously, the process could fail with a `The update of Bill of Materials data has failed` error. |
+| Fixed | API | Updating an existing routing operation and adding a new one through the Web API no longer causes `routingOperations.U_RtgOprCode is not nullable` error. Operations are now saved correctly. |
 
 ## CompuTec.ProcessForce 3.2512.2
 
