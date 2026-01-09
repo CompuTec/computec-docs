@@ -4,6 +4,20 @@ sidebar_position: 1
 
 # Release Notes
 
+## CompuTec AppEngine 3.2601.1
+
+**Release Date: 8 January 2026**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Improved | AE Core | CompuTec AppEngine now checks the installed version correctly. You'll only see a `New version is available` message when a newer version is available, eliminating unnecessary alerts. |
+| Fixed | AE Analytics, AE Core | Analytics screens now open without errors. Previously, some users seen an unexpected system error `NullReferenceException` that blocked access. |
+| Fixed | AE UAA | After logging out of the **Administration Panel** and returning to the **Launchpad**, the **Login using SAP** option is now shown as expected. |
+| Fixed | AE Analytics | Refreshing the preview no longer causes configuration settings to disappear. Now, your setup remains intact after a refresh. |
+| Improved | .netCore | Document series determination has been improved to correctly respect the posting date and posting period. You can now select and use series from previous years, for example, from 2024, without problems. |
+| Fixed | Common functions | Replacing items in bulk now saves successfully. Previously, the process could fail with a `The update of Bill of Materials data has failed` error. |
+| Fixed | API | Updating an existing routing operation and adding a new one through the Web API no longer causes `routingOperations.U_RtgOprCode is not nullable` error. Operations are now saved correctly. |
+
 ## CompuTec AppEngine 3.2512.1
 
 **Release Date - 18 December 2025**
