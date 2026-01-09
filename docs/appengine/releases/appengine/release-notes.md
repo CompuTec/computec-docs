@@ -42,7 +42,7 @@ sidebar_position: 1
 | Bug | AE Administration Panel | When loading a plugin, the message “Some plugin failed to load” is displayed initially even though the plugin loads correctly afterward. |
 | Bug | MRP | In MRP Planning Horizon, entering a start or end date and leaving the field causes the system to replace it with an invalid -1 date. |
 | Bug | AE Analytics | Data export to Excel and CSV does not work in AE Analytics. |
-| Bug | WebUpManager | Two properties of the ChooseFromList control type are not translated: `WebClientControl_Property_multiSelection` and `WebClientControl_Property_showLinkButton`|
+| Bug | WebUpManager | Two properties of the ChooseFromList control type are not translated: `WebClientControl_Property_multiSelection` and `WebClientControl_Property_showLinkButton` |
 | Bug | AE Analytics | Problem with adding authorization to variant. |
 | Bug | PFI | PFI is empty with no errors displayed. |
 | Bug | AE Core | Action refresh does not work. |
@@ -126,7 +126,7 @@ sidebar_position: 1
 | Issue Type | Component/s | Release Note |
 | --- | --- | --- |
 | Bug | API | Error on new BOM creation: "Item Code VP340M1AluSan and Revision Code 4561 for sequence 0 not found in FinalGood tab." |
-| Bug | Bill of Materials | Error during BOM synchronization: "Invalid column name: BOM0.U_PFDBVersion: line 7 col 4 (at pos 124) | CompuTec.Core2.DI.Database.SQLQueryException." |
+| Bug | Bill of Materials | Error during BOM synchronization: "Invalid column name: BOM0.U_PFDBVersion: line 7 col 4 (at pos 124) - CompuTec.Core2.DI.Database.SQLQueryException." |
 
 ## CompuTec AppEngine 3.2509.1
 
@@ -134,7 +134,7 @@ sidebar_position: 1
 
 | Issue Type | Component/s | Release Note |
 | --- | --- | --- |
-| Improvement | WebAPI |Display proper error message when logging in through Web Methods. |
+| Improvement | WebAPI | Display proper error message when logging in through Web Methods. |
 | Improvement | UI | Pick Receipt / Pick Order - UDF linked to table is not displayed as a combo box. |
 | Improvement | AE Common Library | Add options to MessageHelper exception method. |
 | Improvement | AE Core | Display "CompanyId" under Companies' details. |
@@ -155,15 +155,13 @@ sidebar_position: 1
 | Bug | MCP | MCP server does not properly execute the patch and POST request with the WithDefault attribute. |
 | Bug | AE Core | Issue with token validation and system reconnection. |
 
-
-
 ## CompuTec AppEngine 3.2508.1
 
 **Release Date - 04 August 2025**
 
 | Issue Type | Component/s | Release Note |
 | --- | --- | --- |
-| Improvement | AE Core | Changed severity of the error from Fatal to Error: Cached collection disabled.|
+| Improvement | AE Core | Changed severity of the error from Fatal to Error: Cached collection disabled. |
 | Improvement | MOWizard | Enabled support for Form Settings and Column Freeze in Adjustment and Scheduling |
 | Bug | .netCore | Generated enum doesn't have EnumType Annotation in Core. |
 | Improvement | .netCore , AE Architecture | Added ability to define database setup configurations for the CompuTec AppEngine Plugin type |
@@ -175,7 +173,7 @@ sidebar_position: 1
 | Bug | .netCore, Bill of Materials | System allows successful BOM update even when Routing '0001' does not exist in the routing object. |
 | Bug | Core | Adding an int? (nullable integer) field to an AutoIncrementObject fails. |
 | Bug | Resources | Bin location disappears from the receipt warehouse after refresh and is incorrectly reassigned to the issue warehouse. |
-| Bug | Core |  Bulk update operation fails with error: "unique constraint violation for table" |
+| Bug | Core | Bulk update operation fails with error: "unique constraint violation for table" |
 | Bug | AE Core | Installed plugins has a list of all the plugins installed over a period of time. |
 | Improvement | AE WebClient | Added `webClientExtension` support to the plugin. |
 | Bug | AE Plugins | Plugin Version tab displays duplicate entries. |
@@ -186,7 +184,7 @@ sidebar_position: 1
 | Bug | PriceManagement | Price Management Plugin does not display all missing currencies. |
 | Bug | Installer | CompuTec ProcessForce.Gantt installation fails due to improper handling of newline characters in the error message. |
 | Bug | .netCore | Unable to synchronize Manufacturing Order that has not been added; `DocEntry=`. DocEntry is missing or undefined. |
-| Bug | Manufacturing Order| When opening a Manufacturing Order (MOR) and selecting a BOM, the system throws an error:`CompuTec.Core2.UI.Notify.StatusBarMessageNotificationService. Calculating a Formula for U_ItemYield() failed with error: The input string '#ERR: Name' was not in a correct format`.... |
+| Bug | Manufacturing Order | When opening a Manufacturing Order (MOR) and selecting a BOM, the system throws an error:`CompuTec.Core2.UI.Notify.StatusBarMessageNotificationService. Calculating a Formula for U_ItemYield() failed with error: The input string '#ERR: Name' was not in a correct format`.... |
 | Bug | Manufacturing Order | MOR - Transfer Components action fails with "No matching records found" error. |
 | Improvement | Synchronization | Sales Order (SO) details are not synced with the Work Order (WO); the SO field remains empty in the generated Production Order. |
 | Bug | Resources | Bin location disappears from the receipt warehouse after refresh and incorrectly appears in the issue warehouse. |
@@ -220,11 +218,11 @@ sidebar_position: 1
 | Bug | PFI | Missing Translation of addDefaultLinesLabel in PFI |
 | Bug | Administration Panel | Latest Build not visible in Download Tab |
 | Bug | MRP | Multiple Revisions in Order Recommendation |
-| Bug | Administration Panel, CompuTec AppEngine Installer |  Administrator Panel was appearing empty in version CompuTec.AppEngine.3.2505.1-rc-01 |
+| Bug | Administration Panel, CompuTec AppEngine Installer | Administrator Panel was appearing empty in version CompuTec.AppEngine.3.2505.1-rc-01 |
 | Improvement | .netCore | Enable OData key segmentation support |
 | Bug | CompuTec AppEngine Administration Panel | The “Assign to AE” option for the UI plugin has been disabled |
 | Bug | CompuTec AppEngine Common library | Revisions on the Items list are not visually distinguished: SC |
 | Bug | CompuTec AppEngine Administration Panel | Unable to remove company in CompuTec AppEngine |
 | Bug | CompuTec AppEngine DevelopmentMode | CompuTec AppEngine fails to start if the plugin manifest is missing required fields |
 | Bug | CompuTec AppEngine Core | In SAP 2502 HF1 Cloud, no entries are visible in transaction USR3 |
-| Improvement| .netCore | Compute.Start service is now set to start automatically upon Company Activation |
+| Improvement | .netCore | Compute.Start service is now set to start automatically upon Company Activation |
