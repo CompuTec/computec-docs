@@ -29,7 +29,7 @@ This form allows the user to quickly search, change, and replace one Item with a
 ![Mass Item Replace](./media/mass-item-replace/mass-item-replace.webp)
 
 :::info
-    For extensive modifications to Bills of Materials, consider using the Bulk Change feature available in CompuTec AppEngine: [Bulk Change](/docs/appengine/plugins-user-guide/bulk-changes-on-bills-of-materials/overview).
+    For extensive modifications to Bills of Materials, consider using the Bulk Change feature available in CompuTec AppEngine.
 :::
 
 ---
