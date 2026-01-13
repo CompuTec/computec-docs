@@ -46,13 +46,13 @@ On the view, you can find all employees – active and inactive. If you wish to 
 
 You can create a filter view template. It may differ depending on a group of employees.
 
-Click [here](https://www.youtube.com/watch?v=jQF-vpgacSI) to know more about filtering tasks.
+Click [this link](https://www.youtube.com/watch?v=jQF-vpgacSI) to know more about filtering tasks.
 
 #### Assign a Task to Employees
 
 You can select tasks manually or filter them with preconfigured filters. The list contains Manufacturing Orders that in Released or Started status. Manufacturing Orders are broken down into Operations and Resources. The list shows Machine, Tool and Subcontracting Resources. The list shows the same Tasks that can also be assigned from the CompuTec PDC level.
 
-Click [here](https://www.youtube.com/watch?v=35TLLMNabNE) to know more about assigning tasks.
+Click [this link](https://www.youtube.com/watch?v=35TLLMNabNE) to know more about assigning tasks.
 
 From the Team panel, you can choose one or more Employees or the entire Team.
 
