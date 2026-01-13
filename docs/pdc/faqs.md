@@ -10,7 +10,7 @@ The frequently Asked Questions section helps deal with minor problems while oper
 
 ---
 
-Many exceptions thrown by CompuTec PDC are caused by incorrect installation or configuration. Please check the following page first: [CompuTec PDC Plugin](/docs/appengine/plugins-user-guide/computec-pdc-plugin).
+Many exceptions thrown by CompuTec PDC are caused by incorrect installation or configuration. Please check the following page first: [CompuTec PDC Plugin](https://learn.computec.one/docs/pdc/pdc-plugin/computec-pdc-plugin).
 
 Here, you can also find a solution for the following issues:
 

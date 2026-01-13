@@ -10,7 +10,7 @@ The Resources View feature allows users to filter tasks based on multiple resour
 
 ## Requirements
 
-To use this feature, you need the CompuTec AppEngine's MO360 plugin. For more details on CompuTec AppEngine and the plugin installation process, click [here](/docs/appengine/plugins-user-guide/manufacturing-order-360/plugin-installation-and-configuration).
+To use this feature, you need the CompuTec AppEngine's MO360 plugin. For more details on CompuTec AppEngine and the plugin installation process, click [this link](https://learn.computec.one/docs/pdc/manufacturing-order-360/plugin-installation-and-configuration).
 
 **Minimal related versions**:
 
