@@ -35,15 +35,15 @@ Here you can find description of specific plugins' function and how-to manuals:
   <p>Upload & download data with MS Excel & CSV</p>
 </a>
 
-<a class="tile" href="https://learn.computec.one/docs/appengine/2.0/plugins-user-guide/qc-mob/qc360-mobile-app">
-  <h3>The Quality Testing Mobile (QC360) Plugin</h3>
-  <p>Employee assignment & Inspection test execution</p>
-</a>
-
 <a class="tile" href="https://learn.computec.one/docs/appengine/2.0/plugins-user-guide/processforce">
   <h3>CompuTec ProcessForce Plugin Related Jobs</h3>
   <p>An overview of the most commonly used CompuTec ProcessForce plugin jobs</p>
 </a>
 
-</div>
+<a class="tile" href="https://learn.computec.one/docs/appengine/2.0/plugins-user-guide/qc-mob/qc360-mobile-app">
+  <h3>The Quality Testing Mobile (QC360) Plugin</h3>
+  <p>Employee assignment & Inspection test execution  
+  <b>Note</b>: This plugin is available only in CompuTec AppEngine 3.0.</p>
+</a>
 
+</div>

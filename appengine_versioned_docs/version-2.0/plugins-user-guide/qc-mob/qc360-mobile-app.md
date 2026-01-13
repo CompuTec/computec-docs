@@ -8,7 +8,9 @@ The Quality Testing Mobile (QC360) Plugin is an extension to CompuTec ProcessFor
 
 This page explains the purpose of the QC 360 Mobile app, how it is accessed, what users can do with it and how data entry and updates occur behind the scenes.
 
----
+:::caution
+This plugin is available only in CompuTec AppEngine 3.0.
+:::
 
 ## Purpose
 
