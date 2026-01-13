@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-MI360 provides a mobile and Progressive Web App (PWA) interface designed to simplify and streamline maintenance operations. It enables users to efficiently manage Maintenance Orders (MOs), tasks, and checkpoints directly from their mobile devices.
+The Plant Maintenance Mobile (MI 360) Plugin provides a mobile and Progressive Web App (PWA) interface designed to simplify and streamline maintenance operations. It enables users to efficiently manage Maintenance Orders (MOs), tasks, and checkpoints directly from their mobile devices.
 
 With MI360, users can:
 

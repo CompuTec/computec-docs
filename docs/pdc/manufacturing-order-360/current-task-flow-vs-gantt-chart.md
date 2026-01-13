@@ -12,7 +12,7 @@ Managing manufacturing operations effectively requires tools that provide real-t
 
 The "Add New View" function allows users to define scenarios by filtering elements displayed on the Gantt chart. This feature enables targeted visualizations, such as segmenting resources by departments or machine types, for a clearer focus on specific operations.
 
-Click [here](https://www.youtube.com/watch?v=bGoJjbKHGg4) to know more about "Adding a New View".
+View [this video](https://www.youtube.com/watch?v=bGoJjbKHGg4) to know more about "Adding a New View".
 
 ## Change Scope Tabs
 

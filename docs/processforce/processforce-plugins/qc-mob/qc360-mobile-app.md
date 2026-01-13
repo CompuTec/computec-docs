@@ -2,9 +2,9 @@
 sidebar_position: 12
 ---
 
-# QC360 Mobile App
+# Overview
 
-The QC 360 Mobile App is an extension to CompuTec ProcessForce that enables quality control users to perform QC inspections quickly and efficiently using a tablet or mobile device. It is designed for shop-floor operators, QC technicians, and warehouse staff who need to record test results in real time - without returning to their desktop system.
+The Quality Testing Mobile (QC360) Plugin is an extension to CompuTec ProcessForce that enables quality control users to perform QC inspections quickly and efficiently using a tablet or mobile device. It is designed for shop-floor operators, QC technicians, and warehouse staff who need to record test results in real time - without returning to their desktop system.
 
 This page explains the purpose of the QC 360 Mobile app, how it is accessed, what users can do with it and how data entry and updates occur behind the scenes.
 

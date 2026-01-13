@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-Batch Traceability 360 plug-in allows to trace Item Batches through all its life in a company: from production (or purchase), being a part of a production process of other Item, to delivery to a client. Instant access to batches records is very useful, e.g. in complaint management or recall process.
+The CompuTec Batch Traceability (BT 360) Plugin allows to trace Item Batches through all its life in a company: from production (or purchase), being a part of a production process of other Item, to delivery to a client. Instant access to batches records is very useful, e.g. in complaint management or recall process.
 
 [Batch Traceability Scenario - A Guided Tour](https://youtu.be/ZHUswSIKTu0)
 
@@ -14,7 +14,7 @@ Batch Traceability 360 plug-in allows to trace Item Batches through all its life
 
 Before using the Batch Traceability 360 plug-in, ensure that the prerequisites are met:
 
-CompuTec ProcessForce and CompuTec Licence Server is installed and configured. For more details, refer to the installation documentation [here](https://learn.computec.one/docs/processforce/administrator-guide/licensing/license-server/overview)
+CompuTec ProcessForce and CompuTec Licence Server is installed and configured. For more details, refer to the [installation documentation](https://learn.computec.one/docs/processforce/administrator-guide/licensing/license-server/overview)
 
 ### CompuTec AppEngine and Plug-in Installation and Configuration
 
@@ -40,13 +40,13 @@ You can access CompuTec ProcessForce Batch Traceability 360 by:
 
         ![Complaint Form](./media/overview/complaint-form.png)
 
-Click [here](/docs/processforce/user-guide/complaint-management/complaint/) to find out more about Complaint function.
+Click [this link](/docs/processforce/user-guide/complaint-management/complaint/) to find out more about Complaint function.
 
 - Batch Master Data form context menu
 
         ![Batch Master Data](./media/overview/batch-master-data.png)
 
-Click [here](/docs/processforce/user-guide/inventory/batch-control/batch-master-data/overview/) to find out more about Batch Master Data.
+Click [this link](/docs/processforce/user-guide/inventory/batch-control/batch-master-data/overview/) to find out more about Batch Master Data.
 
 ## Batch List
 

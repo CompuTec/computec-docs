@@ -6,7 +6,7 @@ toc_max_heading_level: 4
 
 # Scheduling with Bottlenecks
 
-Scheduling in MOWizard begins with creating a scenario, which defines the structure for planning operations. This scenario incorporates demand, available production capacities, and planning constraints. Based on selected demand documents, the system generates Manufacturing Order Recommendations (MORs) that can be scheduled and refined.
+Scheduling in CompuTec Planning & Bottleneck Scheduling (MO Wizard) Plugin begins with creating a scenario, which defines the structure for planning operations. This scenario incorporates demand, available production capacities, and planning constraints. Based on selected demand documents, the system generates Manufacturing Order Recommendations (MORs) that can be scheduled and refined.
 
 A key element of this scheduling approach is the identification and handling of bottlenecks—critical points in the production process where limited capacity significantly affects throughput. These are typically operations with the lowest efficiency or the highest workload, and if not properly managed, they can delay the entire production process.
 
