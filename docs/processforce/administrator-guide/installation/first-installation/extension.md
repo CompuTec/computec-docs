@@ -2,56 +2,70 @@
 sidebar_position: 2
 ---
 
-# Plugin
+# CompuTec ProcessForce Plugins
 
-The CompuTec ProcessForce Plugin enhances the capabilities of SAP Business One by enabling seamless integration and advanced manufacturing functionalities. This guide walks you through the installation process, prerequisites and key steps required to successfully deploy the plugin.
+CompuTec ProcessForce Plugins enhance the capabilities of SAP Business One by enabling seamless integration and advanced manufacturing functionalities. This guide walks you through the installation process, prerequisites and key steps required to deploy plugins successfully.
 
----
+Follow these steps to install the CompuTec ProcessForce plugins properly.
 
-## Installing the CompuTec ProcessForce Plugin
-
-Follow these steps to install the CompuTec ProcessForce Plugin properly.
-
-### 1. Review Prerequisites
+## Before you start
 
 - Ensure you meet all CompuTec ProcessForce [System Requirements](../../system-requirements.md).
 - It is **recommended** to install the [CompuTec License Server](./license-server) before proceeding.
 - Restart the SAP Business One client **before installing** the CompuTec ProcessForce Plugin.
 
-### 2. Plugin Downloads
+## Step 1: Download CompuTec ProcessForce Plugins
 
-There are **two core plugins** you must download from the Plugin Store:
+1. Log in to CompuTec AppEngine **Administration Panel**.
+2. Navigate to **Plugins**.
 
-- CompuTec ProcessForce API
-- CompuTec ProcessForce Plugin
+    ![screen of plugins section in appengine plugin store](./media/extension/01-pf-installation-store.png)
 
-You can find the installation guide for these plugins at the following link: [Plugin Installation Guide](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/plugins/overview)
+3. Go to the **Store** tab.
 
-:::note Important
-The CompuTec ProcessForce API is a **prerequisite** for the CompuTec ProcessForce Plugin. When you download the CompuTec ProcessForce Plugin, the system will automatically include the API plugin.
+    ![screen showing where to find store tab in the plugins section](./media/extension/02-pf-installation-store-plugins.png)
 
-Additionally, if you're using CompuTec ProcessForce with the **SAP Business One desktop client**, or upgrading from **CompuTec ProcessForce 2.0 to 3.0**, you must also install:
+4. Locate the following two **CompuTec ProcessForce plugins**:
 
-- `CompuTec ProcessForce UI`
+- **CompuTec.ProcessForce.API**
+- **CompuTec.ProcessForce.Plugin**
+
+5. Install them by following the [**CompuTec AppEngine Plugin Installation Guide**](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/plugins/overview).
+
+:::caution[Important]
+
+- The CompuTec **ProcessForce API** is **required** for the CompuTec ProcessForce Plugin to work.
+- When you install **CompuTec.ProcessForce.Plugin**, the API plugin is added automatically.
+- If you use CompuTec ProcessForce with the **SAP Business One Desktop Client**, or want to upgrade from **CompuTec ProcessForce 2.0 to 3.0**, you must also install `CompuTec ProcessForce UI`.
 
 :::
 
-### 3. Install the Plugins
+## Step 2: Install the plugins
 
-- After downloading all plugins, log in to your SAP Business One client.
-- Upon login, the system will prompt you to install `CompuTec.ProcessForce.Gantt` on your local machine.
+After downloading all plugins, log in to your SAP Business One client. Upon login, the system will prompt you to install `CompuTec.ProcessForce.Gantt` on your local machine.
+
+Follow these steps to install CompuTec ProcessForce Gantt:
+
+1. Click **Install** to begin the installation.
 
     ![Installation Prompt](./media/extension/installation-prompt.png)
 
-    Click **Install** to proceed.
+:::info[note]
+If a permission error message appears:
 
-- If you encounter a permissions error (like the one below):
+1. Close SAP Business One.
 
-    ![Error Message](./media/extension/error-message.png)
+2. Right-click the SAP Business One shortcut.
 
-    Close the application, right-click the shortcut, and choose **Run as administrator**. Alternatively, follow the instructions in the message box.
+3. Select **Run as administrator**.
 
-### 4. Assigning the License
+4. Start SAP Business One again and repeat the installation
+
+   ![Error Message](./media/extension/error-message.png)
+
+:::
+
+## Step 3: Assigning the License
 
 :::info
 This step is **only required for new installations**, not for upgrades.

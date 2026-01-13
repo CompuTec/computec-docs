@@ -10,5 +10,3 @@ This updated page includes:
 
 - step-by-step instructions for initial installation,
 - setting Windows Firewall rule.
-
----

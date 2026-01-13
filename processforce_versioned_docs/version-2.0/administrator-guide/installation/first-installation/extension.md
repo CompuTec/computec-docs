@@ -117,7 +117,7 @@ CompuTec ProcessForce is a lightweight deployment extension for SAP Business One
     This step is only required for new installations, not for upgrades.
 :::
 
-You can find the License Import and Assignment guide [here](../../licensing/license-import-and-assignment.md).
+You can find the [License Import and Assignment guide](../../licensing/license-import-and-assignment.md).
 
 ### Data Preparation
 
@@ -135,6 +135,6 @@ If installing CompuTec ProcessForce on a database with existing data (especially
 
 ![Restore](./media/extension/restore.webp)
 
-Click [here](../../../user-guide/system-initialization/data-restore.md) to find out more about the Restore function.
+Click [this link](../../../user-guide/system-initialization/data-restore.md) to find out more about the Restore function.
 
 ---
