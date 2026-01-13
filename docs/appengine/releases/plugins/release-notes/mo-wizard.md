@@ -6,7 +6,14 @@ sidebar_position: 11
 
 Below are the release notes for CompuTec MOWizard, highlighting new features, improvements, and bug fixes in this release.
 
----
+## CompuTec MOWizard 3.2601.1
+
+**Release Date: 13 January 2026**
+
+| Issue Type | Components | Release Note |
+| --- | --- | --- |
+| Fixed | MOWizard | We've fixed an issue that caused values to blink or refresh unexpectedly in the MOWizard interface. Displayed values are now stable, improving data readability. |
+| Improved | MOWizard | You can now create custom variants for the Scheduling list, allowing you to tailor the view to your workflow. <br/> Each variant can define: <ul><li>Column order</li><li>Frozen (locked) columns</li><li>Column visibility</li><li>Filters</li><li>Sorting rules</li></ul> This makes it easier to focus on the most relevant information. |
 
 ## CompuTec MOWizard 3.2509.1
 
