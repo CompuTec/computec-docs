@@ -11,7 +11,7 @@ Follow these steps to install the CompuTec ProcessForce plugins properly.
 ## Before you start
 
 - Ensure you meet all CompuTec ProcessForce [System Requirements](../../system-requirements.md).
-- It is **recommended** to install the [CompuTec License Server](./license-server) before proceeding.
+- It is recommended to install the [CompuTec License Server](./license-server) before proceeding.
 - Restart the SAP Business One client **before installing** the CompuTec ProcessForce Plugin.
 
 ## Step 1: Download CompuTec ProcessForce Plugins
@@ -27,8 +27,8 @@ Follow these steps to install the CompuTec ProcessForce plugins properly.
 
 4. Locate the following two **CompuTec ProcessForce plugins**:
 
-- **CompuTec.ProcessForce.API**
-- **CompuTec.ProcessForce.Plugin**
+    - **CompuTec.ProcessForce.API**
+    - **CompuTec.ProcessForce.Plugin**
 
 5. Install them by following the [**CompuTec AppEngine Plugin Installation Guide**](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/plugins/overview).
 
@@ -50,69 +50,81 @@ Follow these steps to install CompuTec ProcessForce Gantt:
 
     ![Installation Prompt](./media/extension/installation-prompt.png)
 
-:::info[note]
-If a permission error message appears:
+    :::info[note]
+    If a permission error message appears:
 
-1. Close SAP Business One.
+    - Close **SAP Business One**.  
+    - Right-click the SAP Business One shortcut.  
+    - Select **Run as administrator**.  
+    - When prompted, install **CompuTec.ProcessForce.Gantt**.  
 
-2. Right-click the SAP Business One shortcut.
+    In most cases, this resolves the issue immediately.
 
-3. Select **Run as administrator**.
+    If the installation still fails, the system will display a system message with a command for manual installation.
 
-4. Start SAP Business One again and repeat the installation
+      ![error message screen](./media/extension/error-message.png)
 
-   ![Error Message](./media/extension/error-message.png)
+    To install the component manually:
 
-:::
+    - Open **Command Prompt** as Administrator.  
+    - Paste the command provided in the error message (it is automatically copied to the clipboard).  
+    - Press **Enter** and wait for the process to complete.  
+    - After the command finishes successfully, restart **SAP Business One**.
+
+    :::
 
 ## Step 3: Assigning the License
 
 :::info
-This step is **only required for new installations**, not for upgrades.
+This step is required only for new installations.
+You can skip it if you are upgrading.
 :::
 
-Refer to the [**License Import and Assignment**](../../licensing/license-import-and-assignment.md) guide for step-by-step instructions.
+Go to [**License Import and Assignment**](../../licensing/license-import-and-assignment.md) guide for step-by-step instructions.
 
----
-
-## Reference: Required Configurations & Warnings
+## Required Checks and Warnings
 
 These configurations and precautions are critical to ensure a smooth installation or upgrade process, preventing conflicts with SAP Business One settings and avoiding data integrity issues.
 
-### General Settings Check
+:::danger[very important]
 
-:::danger
-Before beginning the installation, **uncheck** the following in:
+### Check SAP Business One General Settings
 
-**General Settings → Hide Functions**:
+Before installing or upgrading, follow these steps:
 
-![Checkboxes](./media/extension/general-settings-unchecked.webp)
+1. Log in toSAP Business One.
+2. Go to **General Settings**.
+3. Navigate to **Hide Functions** tab.
 
-- Serial Numbers and Batches
-- Production
-- Units of Measure
+    ![Checkboxes](./media/extension/general-settings-unchecked.webp)
+
+4. Make sure the following options are unchecked:
+    - Serial Numbers and Batches
+    - Production
+    - Units of Measure
 
 :::
 
-### Stored Procedures for Upgrade
+:::danger[very important]
 
-:::danger
-Before upgrading the CompuTec ProcessForce Extension, ensure that the following SAP Business One stored procedures are in their **default state** with **no custom queries**:
+### Stored procedures (upgrade only)
+
+Before upgrading ProcessForce, ensure these SAP Business One stored procedures are unchanged (default state):
 
 - `SP_TransactionNotification`
 - `SP_PostTransactionNotice`
 
+Custom code in these procedures can break the upgrade process.
+
 :::
 
-### Important Database Creation Warning
+:::danger[very important]
 
-:::danger
-**Do not** use **Copy Express** or the options **Copy User-Defined Fields and Tables / Copy User-Defined Objects** in the **Create New Company** wizard to copy CompuTec ProcessForce objects.
+### Warning: Creating new databases
 
-<details>
-<summary>Why this matters</summary>
-Using these methods results in improper assignment of `EditType` fields in CompuTec ProcessForce structures - leaving them as `NULL`. This is due to a bug in SAP Business One that affects DateTime fields when new databases are created using copy methods.
-</details>
+**Do not** use **Copy Express** or the options **Copy User-Defined Fields and Tables** / **Copy User-Defined Objects** in the **Create New Company** wizard to copy CompuTec ProcessForce objects.
+
+Using these methods results in improper assignment of `EditType` fields in CompuTec ProcessForce structures - leaving them as `NULL`. This is due to a bug in SAP Business One that affects `DateTime` fields when new databases are created using copy methods.
 
 ✅ **To prevent this issue**:
 
@@ -122,38 +134,33 @@ Using these methods results in improper assignment of `EditType` fields in Compu
 
 :::
 
----
+## Why Following These Steps Is Important
 
-## Why These Steps Matter
+The CompuTec ProcessForce plugin is tightly connected with SAP Business One’s production and costing functions. Because of this, proper configuration and installation are essential. Skipping prerequisite checks, using copy methods, or failing to assign licenses correctly can lead to malfunctioning UIs, missing data, or incorrect system behavior.
 
-The CompuTec ProcessForce plugin deeply integrates with SAP Business One’s production and costing modules. Because of this, proper configuration and installation are essential. Skipping prerequisite checks, using copy methods, or failing to assign licenses correctly can lead to malfunctioning UIs, corrupted metadata, or incorrect system behavior.
-
-The following distinctions are important:
+Plugin overview:
 
 - **CompuTec ProcessForce API Plugin**: Enables backend integration and external communications.
 - **CompuTec ProcessForce Plugin**: Core functional layer enabling CompuTec ProcessForce logic.
 - **CompuTec ProcessForce UI Plugin**: Desktop interface for interaction within SAP Business One.
 
----
+## Restoring Existing Data (If Your Database Already Has Data)
 
-## How to Prepare and Restore Data
-
-:::caution
-Before restoring data, verify if the **Manage Item Cost per Warehouse** setting is used.
+:::caution[important]
+Before restoring data, verify if the **Manage Item Cost per Warehouse** setting is enabled.
 
 Changing this setting **after** restoration will require **removal and re-restoration** of all Item Costing details.
 :::
 
 If you are installing CompuTec ProcessForce on a database that already has **existing data** (such as item master records), you need to run the **data restoration procedures**:
+    - Restore Item Details
+    - Restore Item Costing
+    - Restore Resource Costing
+    - Restore Employee Calendars
+    - Restore Batch Details
 
-![Restore](./media/extension/restore.webp)
+    ![Restore](./media/extension/restore.webp)
 
-- Restore Item Details
-- Restore Item Costing
-- Restore Resource Costing
-- Restore Employee Calendars
-- Restore Batch Details
-
-➡️ Learn more about: [Data Restore](../../../user-guide/system-initialization/data-restore.md).
-
----
+:::note[info]
+➡️ Learn more about the Data Restore in [this guide](../../../user-guide/system-initialization/data-restore.md).
+:::
