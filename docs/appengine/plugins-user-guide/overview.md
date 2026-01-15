@@ -2,13 +2,14 @@
 sidebar_position: 1
 ---
 
+import plugins from "./plugins.json";
 import DocCardList from '@theme/DocCardList';
 
 # Overview
 
 Here you can find description of specific plugins' function and how-to manuals:
 
-<div class="tile-grid">
+<DocCardList items={plugins}></DocCardList>
 
 <a class="tile" href="https://learn.computec.one/docs/appengine/2.0/plugins-user-guide/batch-traceability/overview">
   <h3>The CompuTec Batch Traceability (BT 360) Plugin</h3>
@@ -45,5 +46,3 @@ Here you can find description of specific plugins' function and how-to manuals:
   <p>Employee assignment & Inspection test execution  
   <b>Note</b>: This plugin is available only in CompuTec AppEngine 3.0.</p>
 </a>
-
-</div>

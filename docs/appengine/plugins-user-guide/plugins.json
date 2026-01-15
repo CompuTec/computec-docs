@@ -1,0 +1,14 @@
+[
+    {
+        "type": "link",
+        "href": "https://learn.computec.one/docs/appengine/2.0/plugins-user-guide/batch-traceability/overview",
+        "label": "The CompuTec Batch Traceability (BT 360) Plugin",
+        "description": "End to End material traceability"
+    },
+    {
+        "type": "link",
+        "href": "https://learn.computec.one/docs/appengine/2.0/plugins-user-guide/bulk-changes-on-bills-of-materials/overview",
+        "label": "The CompuTec Mass Change (Bulk Changes on Bills of Materials) Plugin",
+        "description": "Change Recipes, BoM's & Routing Master Data"
+    }
+]
