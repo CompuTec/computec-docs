@@ -5,11 +5,12 @@ import React, {
   useState,
   type ReactNode,
 } from 'react';
-import { createPortal } from 'react-dom';
-import { DocSearchButton, useDocSearchKeyboardEvents } from '@docsearch/react';
+import {createPortal} from 'react-dom';
+import {DocSearchButton} from '@docsearch/react/button';
+import {useDocSearchKeyboardEvents} from '@docsearch/react/useDocSearchKeyboardEvents';
 import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
-import { useHistory } from '@docusaurus/router';
+import {useHistory} from '@docusaurus/router';
 import {
   isRegexpStringMatch,
   useSearchLinkCreator,
@@ -17,6 +18,8 @@ import {
 import {
   useAlgoliaContextualFacetFilters,
   useSearchResultUrlProcessor,
+  useAlgoliaAskAi,
+  mergeFacetFilters,
 } from '@docusaurus/theme-search-algolia/client';
 import Translate from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -28,10 +31,13 @@ import type {
   StoredDocSearchHit,
   DocSearchTransformClient,
   DocSearchHit,
+  DocSearchTranslations,
+  UseDocSearchKeyboardEventsProps,
 } from '@docsearch/react';
 
-import type { AutocompleteState } from '@algolia/autocomplete-core';
-import type { FacetFilters } from 'algoliasearch/lite';
+import type {AutocompleteState} from '@algolia/autocomplete-core';
+import type {FacetFilters} from 'algoliasearch/lite';
+import type {ThemeConfigAlgolia} from '@docusaurus/theme-search-algolia';
 
 type DocSearchProps = Omit<
   DocSearchModalProps,
@@ -40,7 +46,19 @@ type DocSearchProps = Omit<
   contextualSearch?: string;
   externalUrlRegex?: string;
   searchPagePath: boolean | string;
+  askAi?: Exclude<
+    (DocSearchModalProps & {askAi: unknown})['askAi'],
+    string | undefined
+  >;
 };
+
+// extend DocSearchProps for v4 features
+// TODO Docusaurus v4: cleanup after we drop support for DocSearch v3
+interface DocSearchV4Props extends DocSearchProps {
+  indexName: string;
+  askAi?: ThemeConfigAlgolia['askAi'];
+  translations?: DocSearchTranslations;
+}
 
 let DocSearchModal: typeof DocSearchModalType | null = null;
 
@@ -49,12 +67,10 @@ function importDocSearchModalIfNeeded() {
     return Promise.resolve();
   }
   return Promise.all([
-    import('@docsearch/react/modal') as Promise<
-      typeof import('@docsearch/react')
-    >,
+    import('@docsearch/react/modal'),
     import('@docsearch/react/style'),
     import('./styles.css'),
-  ]).then(([{ DocSearchModal: Modal }]) => {
+  ]).then(([{DocSearchModal: Modal}]) => {
     DocSearchModal = Modal;
   });
 }
@@ -81,7 +97,7 @@ function useNavigator({
 
 function useTransformSearchClient(): DocSearchModalProps['transformSearchClient'] {
   const {
-    siteMetadata: { docusaurusVersion },
+    siteMetadata: {docusaurusVersion},
   } = useDocusaurusContext();
   return useCallback(
     (searchClient: DocSearchTransformClient) => {
@@ -93,18 +109,19 @@ function useTransformSearchClient(): DocSearchModalProps['transformSearchClient'
 }
 
 function useTransformItems(props: Pick<DocSearchProps, 'transformItems'>) {
+  const processSearchResultUrl = useSearchResultUrlProcessor();
   const [transformItems] = useState<DocSearchModalProps['transformItems']>(
     () => {
       return (items: DocSearchHit[]) =>
         props.transformItems
           ? // Custom transformItems
-          props.transformItems(items)
+            props.transformItems(items)
           : // Default transformItems
-          items.map((item) => {
+            items.map((item) => {
 
             const url = item.url;
             // extract part after /docs/, ending with next /
-            const projectName = url.match(/\/docs\/([^\/]*)\//)?.[1];
+            const projectName = url.match(/\/docs\/([^\/]*)\//)?.[1] as keyof typeof projectNameMap | undefined;
 
             const projectNameMapWithoutCompuTec = {
               "processforce": "ProcessForce",
@@ -114,7 +131,7 @@ function useTransformItems(props: Pick<DocSearchProps, 'transformItems'>) {
               "appengine": "AppEngine",
               "premium": "Premium",
               "webup": "WebUp"
-            };
+            } as const;
 
             const projectNameMap = {
               "processforce": "CompuTec ProcessForce",
@@ -124,9 +141,9 @@ function useTransformItems(props: Pick<DocSearchProps, 'transformItems'>) {
               "appengine": "CompuTec AppEngine",
               "premium": "CompuTec Premium",
               "webup": "CompuTec WebUp"
-            }
+            } as const;
 
-            if (projectName && projectNameMap[projectName]) {
+            if (projectName && projectName in projectNameMap) {
               const projectDisplayName = projectNameMap[projectName];
               const currentValue = item._highlightResult.hierarchy.lvl0.value.replaceAll("<mark>", "").replaceAll("</mark>", "");
 
@@ -137,7 +154,10 @@ function useTransformItems(props: Pick<DocSearchProps, 'transformItems'>) {
               }
             }
 
-            return item;
+            return {
+              ...item,
+              url: processSearchResultUrl(item.url),
+            };
           });
     },
   );
@@ -151,7 +171,7 @@ function useResultsFooterComponent({
 }): DocSearchProps['resultsFooterComponent'] {
   return useMemo(
     () =>
-      ({ state }) =>
+      ({state}) =>
         <ResultsFooter state={state} onClose={closeModal} />,
     [closeModal],
   );
@@ -162,7 +182,7 @@ function Hit({
   children,
 }: {
   hit: InternalDocSearchHit | StoredDocSearchHit;
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return <Link to={hit.url}>{children}</Link>;
 }
@@ -172,14 +192,14 @@ type ResultsFooterProps = {
   onClose: () => void;
 };
 
-function ResultsFooter({ state, onClose }: ResultsFooterProps) {
+function ResultsFooter({state, onClose}: ResultsFooterProps) {
   const createSearchLink = useSearchLinkCreator();
 
   return (
     <Link to={createSearchLink(state.query)} onClick={onClose}>
       <Translate
         id="theme.SearchBar.seeAll"
-        values={{ count: state.context.nbHits }}>
+        values={{count: state.context.nbHits}}>
         {'See all {count} results'}
       </Translate>
     </Link>
@@ -190,23 +210,16 @@ function useSearchParameters({
   contextualSearch,
   ...props
 }: DocSearchProps): DocSearchProps['searchParameters'] {
-  function mergeFacetFilters(f1: FacetFilters, f2: FacetFilters): FacetFilters {
-    const normalize = (f: FacetFilters): FacetFilters =>
-      typeof f === 'string' ? [f] : f;
-    return [...normalize(f1), ...normalize(f2)];
-  }
-
-  const contextualSearchFacetFilters =
-    useAlgoliaContextualFacetFilters() as FacetFilters;
+  const contextualSearchFacetFilters = useAlgoliaContextualFacetFilters();
 
   const configFacetFilters: FacetFilters =
     props.searchParameters?.facetFilters ?? [];
 
   const facetFilters: FacetFilters = contextualSearch
     ? // Merge contextual search filters with config filters
-    mergeFacetFilters(contextualSearchFacetFilters, configFacetFilters)
+      mergeFacetFilters(contextualSearchFacetFilters, configFacetFilters)
     : // ... or use config facetFilters
-    configFacetFilters;
+      configFacetFilters;
 
   // We let users override default searchParameters if they want to
   return {
@@ -215,19 +228,21 @@ function useSearchParameters({
   };
 }
 
-function DocSearch({ externalUrlRegex, ...props }: DocSearchProps) {
-  const navigator = useNavigator({ externalUrlRegex });
-  const searchParameters = useSearchParameters({ ...props });
+function DocSearch({externalUrlRegex, ...props}: DocSearchV4Props) {
+  const navigator = useNavigator({externalUrlRegex});
+  const searchParameters = useSearchParameters({...props});
   const transformItems = useTransformItems(props);
   const transformSearchClient = useTransformSearchClient();
 
   const searchContainer = useRef<HTMLDivElement | null>(null);
-  // TODO remove "as any" after React 19 upgrade
-  const searchButtonRef = useRef<HTMLButtonElement>(null as any);
+  const searchButtonRef = useRef<HTMLButtonElement | null>(null);
   const [isOpen, setIsOpen] = useState(false);
   const [initialQuery, setInitialQuery] = useState<string | undefined>(
     undefined,
   );
+
+  const {isAskAiActive, currentPlaceholder, onAskAiToggle, extraAskAiProps} =
+    useAlgoliaAskAi(props);
 
   const prepareSearchContainer = useCallback(() => {
     if (!searchContainer.current) {
@@ -246,7 +261,8 @@ function DocSearch({ externalUrlRegex, ...props }: DocSearchProps) {
     setIsOpen(false);
     searchButtonRef.current?.focus();
     setInitialQuery(undefined);
-  }, []);
+    onAskAiToggle(false);
+  }, [onAskAiToggle]);
 
   const handleInput = useCallback(
     (event: KeyboardEvent) => {
@@ -262,7 +278,7 @@ function DocSearch({ externalUrlRegex, ...props }: DocSearchProps) {
     [openModal],
   );
 
-  const resultsFooterComponent = useResultsFooterComponent({ closeModal });
+  const resultsFooterComponent = useResultsFooterComponent({closeModal});
 
   useDocSearchKeyboardEvents({
     isOpen,
@@ -270,7 +286,13 @@ function DocSearch({ externalUrlRegex, ...props }: DocSearchProps) {
     onClose: closeModal,
     onInput: handleInput,
     searchButtonRef,
-  });
+    isAskAiActive: isAskAiActive ?? false,
+    onAskAiToggle: onAskAiToggle ?? (() => {}),
+  } satisfies UseDocSearchKeyboardEventsProps & {
+    // TODO Docusaurus v4: cleanup after we drop support for DocSearch v3
+    isAskAiActive: boolean;
+    onAskAiToggle: (askAiToggle: boolean) => void;
+  } as UseDocSearchKeyboardEventsProps);
 
   return (
     <>
@@ -296,8 +318,6 @@ function DocSearch({ externalUrlRegex, ...props }: DocSearchProps) {
 
       {isOpen &&
         DocSearchModal &&
-        // TODO need to fix this React Compiler lint error
-        // eslint-disable-next-line react-compiler/react-compiler
         searchContainer.current &&
         createPortal(
           <DocSearchModal
@@ -311,13 +331,12 @@ function DocSearch({ externalUrlRegex, ...props }: DocSearchProps) {
             {...(props.searchPagePath && {
               resultsFooterComponent,
             })}
-            placeholder={translations.placeholder}
+            placeholder={currentPlaceholder}
             {...props}
             translations={props.translations?.modal ?? translations.modal}
             searchParameters={searchParameters}
+            {...extraAskAiProps}
           />,
-          // TODO need to fix this React Compiler lint error
-          // eslint-disable-next-line react-compiler/react-compiler
           searchContainer.current,
         )}
     </>
@@ -325,6 +344,8 @@ function DocSearch({ externalUrlRegex, ...props }: DocSearchProps) {
 }
 
 export default function SearchBar(): ReactNode {
-  const { siteConfig } = useDocusaurusContext();
-  return <DocSearch {...(siteConfig.themeConfig.algolia as DocSearchProps)} />;
+  const {siteConfig} = useDocusaurusContext();
+  return (
+    <DocSearch {...(siteConfig.themeConfig.algolia as DocSearchV4Props)} />
+  );
 }

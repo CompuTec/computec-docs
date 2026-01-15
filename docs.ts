@@ -11,14 +11,21 @@ export default (production?: boolean) => ([
     {
         label: "ProcessForce",
         pluginId: "processforce",
-        ...(production ? {
-            includeCurrentVersion: false,
-            lastVersion: "2.0",
-        } : {
-            currentVersion: "3.0",
-            includeCurrentVersion: true,
-            lastVersion: "current",
-        }),
+        currentVersion: "3.0",
+        includeCurrentVersion: true,
+        lastVersion: "current",
+        version: {
+            current: {
+                label: "3.0",
+                badge: true,
+                banner: "none"
+            },
+            "2.0": {
+                label: "2.0",
+                badge: true,
+                banner: "none"
+            }
+        }
     },
     {
         label: "PDC",
