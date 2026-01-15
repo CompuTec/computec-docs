@@ -1,14 +1,68 @@
 [
     {
         "type": "link",
-        "href": "https://learn.computec.one/docs/appengine/2.0/plugins-user-guide/batch-traceability/overview",
+        "href": "https://learn.computec.one/docs/processforce/processforce-plugins/batch-traceability/overview",
         "label": "The CompuTec Batch Traceability (BT 360) Plugin",
         "description": "End to End material traceability"
     },
     {
         "type": "link",
-        "href": "https://learn.computec.one/docs/appengine/2.0/plugins-user-guide/bulk-changes-on-bills-of-materials/overview",
+        "href": "https://learn.computec.one/docs/processforce/processforce-plugins/bulk-changes-on-bills-of-materials/overview",
         "label": "The CompuTec Mass Change (Bulk Changes on Bills of Materials) Plugin",
         "description": "Change Recipes, BoM's & Routing Master Data"
+    },
+    {
+        "type": "link",
+        "href": "https://learn.computec.one/docs/processforce/processforce-plugins/mo-wizard/overview",
+        "label": "CompuTec Planning & Bottleneck Scheduling (MO Wizard) Plugin",
+        "description": "Create and schedule manufacturing orders"
+    },
+    {
+        "type": "link",
+        "href": "https://learn.computec.one/docs/processforce/processforce-plugins/qc-mob/qc360-mobile-app",
+        "label": "CompuTec Quality Testing Mobile (QC360) Plugin",
+        "description": "Employee assignment & Inspection test execution"
+    },
+    {
+        "type": "link",
+        "href": "https://learn.computec.one/docs/processforce/processforce-plugins/mi-360/overview",
+        "label": "CompuTec Plant Maintenance Mobile (MI 360) Plugin",
+        "description": "Employee assignment & maintenance order execution"
+    },
+    {
+        "type": "link",
+        "href": "https://learn.computec.one/docs/processforce/processforce-plugins/pfi",
+        "label": "CompuTec ProcessForce Import (PFI) Plugin",
+        "description": "Upload & download data with MS Excel & CSV"
+    },
+    {
+        "type": "link",
+        "href": "https://learn.computec.one/docs/processforce/processforce-plugins/processforce",
+        "label": "CompuTec ProcessForce Plugin Related Jobs",
+        "description": "An overview of the most commonly used CompuTec ProcessForce plugin jobs"
+    },
+    {
+        "type": "link",
+        "href": "https://learn.computec.one/docs/pdc/pdc-plugin/computec-pdc-plugin",
+        "label": "CompuTec Production Data Capture (PDC) Plugin",
+        "description": "Execute manufacturing orders on the shop floor"
+    },
+    {
+        "type": "link",
+        "href": "https://learn.computec.one/docs/pdc/manufacturing-order-360/overview",
+        "label": "CompuTec Manufacturing Cockpit (MO360) Plugin",
+        "description": "Dispatching, Employee assignment, WIP visibility & Analytics "
+    },
+    {
+        "type": "link",
+        "href": "https://learn.computec.one/docs/wms/plugin/ct-wms-plugin",
+        "label": "CompuTec Warehouse Management System (WMS) Plugin",
+        "description": "Inbound, outbound and internal logistics"
+    },
+    {
+        "type": "link",
+        "href": "https://learn.computec.one/docs/labels/ct-labels-plugin/ct-label",
+        "label": "CompuTec Docs (Labels) Plugin",
+        "description": "Print, Send & Save document's & label's layouts"
     }
 ]
