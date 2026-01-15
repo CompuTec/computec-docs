@@ -12,7 +12,7 @@ CompuTec ProcessForce is a 64-bit .NET-based add-on built to extend the core fun
 
 At its core, CompuTec ProcessForce functions as a **Windows-based .NET application** that launches from within SAP Business One. It operates via an executable process (`ProcessForce.exe`) and integrates seamlessly with the SAP Business One environment through its APIs and extension points.
 
-![PF Architecture](.\media\architecture\computec-pf-30-architecture.png)
+![computec processforce 3.0 Architecture screen](.\media\architecture\pf-30-architecture.jpg)
 
 ## Key Architectural Components
 
