@@ -2,13 +2,13 @@
     {
         "type": "link",
         "href": "https://learn.computec.one/docs/processforce/processforce-plugins/batch-traceability/overview",
-        "label": "The CompuTec Batch Traceability (BT 360) Plugin",
+        "label": "CompuTec Batch Traceability (BT 360) Plugin",
         "description": "End to End material traceability"
     },
     {
         "type": "link",
         "href": "https://learn.computec.one/docs/processforce/processforce-plugins/bulk-changes-on-bills-of-materials/overview",
-        "label": "The CompuTec Bulk Change Plugin",
+        "label": "CompuTec Mass Change Plugin",
         "description": "Change Recipes, BoM's & Routing Master Data"
     },
     {
