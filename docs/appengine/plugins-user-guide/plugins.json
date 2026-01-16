@@ -8,7 +8,7 @@
     {
         "type": "link",
         "href": "https://learn.computec.one/docs/processforce/processforce-plugins/bulk-changes-on-bills-of-materials/overview",
-        "label": "CompuTec Mass Change Plugin",
+        "label": "CompuTec Mass Change (Bulk Change) Plugin",
         "description": "Change Recipes, BoM's & Routing Master Data"
     },
     {

@@ -9,11 +9,7 @@ sidebar_position: 1
 Before installing CompuTec AppEngine, make sure the following prerequisites are completed:
 
 - **System requirements**: All hardware and software requirements are met. [Read more](https://learn.computec.one/docs/appengine/administrators-guide/requirements/)
-- **SAP server readiness**: Your SAP server is properly configured and running. For detailed configuration steps, refer to the **SAP Server Configuration Guides** for either [SAP HANA](https://help.sap.com/docs/SAP_BUSINESS_ONE_ADMIN_GUIDE_HANA/1a2fc202f7f64336abf9fbc957d9b9ba/6c8b59c7f2a44aa2b474e58b9732e0d4.html) or [Microsoft SQL Server](https://help.sap.com/docs/SAP_BUSINESS_ONE_ADMIN_GUIDE_SQL/f6fb230cc90949d8b66586a39189992b/c0038069e54b46368b9e73c7218834da.html).
-- **Operator credentials in SLD**: You've created and configured operator credentials in **System Landscape Directory (SLD)**. Keep the operator password handy – you’ll need it when adding your company during the CompuTec AppEngine configuration. If you are using Cloud Control Center (CCC) for SAP Business One, see the related [instructions for creating operator credentials in CCC](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/operator-setup-and-iam-server-assignment-in-cloud-control-center).
-- **Installation file**: You have downloaded the **CompuTec AppEngine installation file** from the [**Download**](https://learn.computec.one/docs/appengine/releases/appengine/download) section of our documentation.
-
-:::warning[important]
+    :::warning[important]
     After upgrading from **CompuTec AppEngine** version **2.00** to version **3.00**, please use the **Empty Cache and Hard Reload** option in your browser.
 
     <details>
@@ -29,7 +25,15 @@ Before installing CompuTec AppEngine, make sure the following prerequisites are 
         ![Empty Cache and Hard Reload](./media/installation/3333333-additional-info-after-upgrader.png)
     </div>
     </details>
-:::
+    :::
+- **SAP server readiness**: Your SAP server is properly configured and running. For detailed configuration steps, refer to the **SAP Server Configuration Guides** for either [SAP HANA](https://help.sap.com/docs/SAP_BUSINESS_ONE_ADMIN_GUIDE_HANA/1a2fc202f7f64336abf9fbc957d9b9ba/6c8b59c7f2a44aa2b474e58b9732e0d4.html) or [Microsoft SQL Server](https://help.sap.com/docs/SAP_BUSINESS_ONE_ADMIN_GUIDE_SQL/f6fb230cc90949d8b66586a39189992b/c0038069e54b46368b9e73c7218834da.html).
+- **Operator credentials in SLD**: You've created and configured operator credentials in **System Landscape Directory (SLD)**. Keep the operator password handy – you’ll need it when adding your company during the CompuTec AppEngine configuration. If you are using Cloud Control Center (CCC) for SAP Business One, see the related [instructions for creating operator credentials in CCC](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/operator-setup-and-iam-server-assignment-in-cloud-control-center).
+- **Installation file**: You have downloaded the **CompuTec AppEngine installation file** from the [**Download**](https://learn.computec.one/docs/appengine/releases/appengine/download) section of our documentation.
+
+:::note[Video (optional)]
+▶︎ **Watch**: [CompuTec AppEngine – Prerequisites and Installation video](https://www.youtube.com/watch?v=bUEkcdizCLY&list=PLtT6kgaz5YneoXw5aRFA-SxXwzzB-u4vl&index=3)  
+This short video will walk you through the required prerequisites and demonstrate the full installation process step by step.  
+ :::
 
 ## Step 1: Install CompuTec AppEngine
 
@@ -103,6 +107,11 @@ To set up a database, follow these steps:
     :::
 
 ## Step 3: Configure CompuTec AppEngine
+
+:::note[Video (optional)]
+▶︎ **Watch**: [CompuTec AppEngine Configuration](https://www.youtube.com/watch?v=CiSHJU2nSes&list=PLtT6kgaz5Ynf3ng3AKiiYoZ00_8eGH9_C&index=2)  
+This short video will walk you through the essential settings in the CompuTec AppEngine Administration Panel.
+:::
 
 Follow these steps to configure CompuTec AppEngine after the installation:
 
