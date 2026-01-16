@@ -4,9 +4,7 @@ sidebar_position: 1
 
 # Introduction to CompuTec ProcessForce
 
-This guide introduces you to **CompuTec ProcessForce**, an advanced manufacturing add-on for SAP Business One. You’ll learn how to install and activate it, explore the first navigation steps, and get a quick overview of the key functional modules.
-
----
+This guide introduces you to **CompuTec ProcessForce 3.0**, an advanced manufacturing plugin for SAP Business One. You’ll learn how to install and activate it, explore the first navigation steps, and get a quick overview of the key functional modules.
 
 ## Prerequisites
 
@@ -31,8 +29,6 @@ Before starting, make sure:
 Once installed, CompuTec ProcessForce modules are available under the SAP Business One **Main Menu**:
 
 ![Main menu modules](./media/index/modules.webp)
-
----
 
 ## Key Functional Modules
 
@@ -79,8 +75,6 @@ Inventory → Ingredients
 ![Ingredient Declaration](./media/index/ingredient-master-data.webp)
 
 ➡️ Learn more about [Ingredients](./user-guide/ingredient-declarations/overview.md).
-
----
 
 ### Batch Control
 
@@ -210,12 +204,8 @@ Main Menu → Complaint
 
 ➡️ Learn more about [Complaint](./user-guide/complaint-management/complaint.md).
 
----
-
 ## Next Steps
 
 - Explore individual module documentation for task-specific usage.
 - Learn how to configure initial settings in the Administrator Guide.
 - Need support? Write to [https://support.computec.pl](https://support.computec.pl)
-
----
