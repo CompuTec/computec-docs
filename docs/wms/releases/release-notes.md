@@ -6,11 +6,11 @@ toc_max_heading_level: 2
 # CompuTec WMS Release Notes
 
 :::info
-The release notes for CompuTec WMS 3.0 are available after clicking [this link](/docs/appengine/releases/plugins/release-notes/wms-plugin).
+The release notes for CompuTec WMS 3.0 are available after clicking [this link](https://learn.computec.one/docs/wms/releases/wms-plugin).
 :::
 
 :::info
-The latest Installer is available to download from [this link](/docs/wms/releases/download).
+The latest Installer is available to download from [this link](https://learn.computec.one/docs/wms/releases/download).
 :::
 
 ## CompuTec WMS 2.10.23 R5
