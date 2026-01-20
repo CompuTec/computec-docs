@@ -2,9 +2,9 @@
 sidebar_position: 13
 ---
 
-# CompuTec PFI
+# CompuTec Data Import & Export (PFI) Plugin
 
-Below are the release notes for CompuTec PFI Plugin, highlighting new features, improvements, and bug fixes in this release.
+Below are the release notes for CompuTec Data Import & Export (PFI) Plugin, highlighting new features, improvements, and bug fixes in this release.
 
 ---
 

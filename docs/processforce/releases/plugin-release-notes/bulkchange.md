@@ -2,9 +2,9 @@
 sidebar_position: 15
 ---
 
-# CompuTec BulkChange
+# CompuTec Mass Change Plugin
 
-Below are the release notes for CompuTec BulkChange, highlighting new features, improvements, and bug fixes in this release.
+Below are the release notes for CompuTec Mass Change (Bulk Change) Plugin, highlighting new features, improvements, and bug fixes in this release.
 
 ---
 

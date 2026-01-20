@@ -3,21 +3,21 @@ sidebar_position: 2
 toc_max_heading_level: 2
 ---
 
-# Release Notes
+# CompuTec WMS Release Notes
 
 :::info
-The release notes for CompuTec WMS 3.0 are available [here](/docs/appengine/releases/plugins/release-notes/wms-plugin).
+The release notes for CompuTec WMS 3.0 are available after clicking [this link](/docs/appengine/releases/plugins/release-notes/wms-plugin).
 :::
 
 :::info
-The latest Installer is available to download from [here](/docs/wms/releases/download).
+The latest Installer is available to download from [this link](/docs/wms/releases/download).
 :::
 
 ## CompuTec WMS 2.10.23 R5
 
 **Release Date - 10 November 2025**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Client | Modify WMS Print Buttons to insert the print request without triggering Event Trigger controls. | - |
 | Improvement | Client | Enabled splitting SU quantities into separate lines in Delivery from Sales Order. | - |
@@ -27,7 +27,7 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 | Bug | Server | In Pick and Pack, UDFs linked to a Business Object are shown as text fields instead of dropdown lists. | - |
 | Bug | Server | In Pick and Pack, the system displays the error “Pick List is empty” even when items are available. | - |
 | Bug | Client | Date field values disappear after selecting a Bin. | - |
-| Bug | Server | In Delivery from Sales Order, when a UoM Name also exists in another UoM Group, the system shows an error: “Packed item X is not part of the delivery (UoM 9, items per unit 1.000000).”| WMSDEV-6472  |
+| Bug | Server | In Delivery from Sales Order, when a UoM Name also exists in another UoM Group, the system shows an error: “Packed item X is not part of the delivery (UoM 9, items per unit 1.000000).” | WMSDEV-6472 |
 | Bug | Server | In Stock Transfer, the New SU screen is missing the CardCode field. | - |
 | Bug | Server | Pick and Pack: Data entered in UDFs is not saved. | WMSDEV-6505 |
 | Bug | Server | The ItemName field causes the printed document to generate empty output. | LPDEV-508 |
@@ -35,14 +35,14 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 | Bug | Server | In Stock Transfer, the Hide SU option does not work correctly. | - |
 | Bug | Server | In Delivery - Catch Weight in SU, saving the document triggers an error: “Cannot implicitly convert type 'long' to 'int'.” | - |
 | Bug | Server | Even when the UoM is displayed as Box, the counted quantity is incorrectly treated as Pieces. | - |
-| Bug | Server |When creating a New SU in a bin location, you can now select a batch number from another bin location.| - |
+| Bug | Server | When creating a New SU in a bin location, you can now select a batch number from another bin location. | - |
 | Bug | Server | When scanning an SU created during Pick and Pack in Whse Info, the error message appears: "This SU is currently in the production stage. Please complete the Production Receipt before proceeding." | - |
 | Bug | Server | In Delivery from Pick List, data entered in UDFs is not saved to the database. | - |
 | Bug | Client Android | In Stock Counting, the calculator view cuts off the value, making the full quantity in the Qty field not visible. | - |
 | Bug | Client | Removing an SU from Delivery from Pick List incorrectly modifies data in internal tables. | - |
 | Bug | Server | In SU Disassembly to Warehouse, performing a partial quantity disassembly shows a success message, but the operation is not actually executed. | - |
 | Bug | Server | In GRPO, the filter applies correctly but displays multiple values instead of only the exact matched value. | - |
-| Bug | Server | When editing a UDF for an item on the Delivery from Pick List document: “Index was out of range. Must be non-negative and less than the size of the collection.”| - |
+| Bug | Server | When editing a UDF for an item on the Delivery from Pick List document: “Index was out of range. Must be non-negative and less than the size of the collection.” | - |
 | Bug | Client Android | The "Save" button is missing on the Storage Unit (SU) screen in Delivery from Pick List. | - |
 | Bug | Server | Not all values are saved on the Delivery from Pick List. | - |
 | Bug | Client | In Delivery from Pick List, an incorrect window is displayed when selecting an existing Storage Unit (SU). | WMSDEV-6518 |
@@ -52,20 +52,20 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 
 **Release Date - 12 September 2025**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
-| Bug| Server | The SlpCode will be copied to the delivery document. | SWITK-406 |
-| Bug | Client | Additional delivery line fields will be copied correctly to the document.| SWMS-3871 |
-| Bug | Server| Adding a Catch Weight index that is not present in the base document causes the inventory unit of measure to be correctly completed in the SAP B1 system. | SWMS-3833 |
-| Bug | Client Android| Fixed bug - Android client unexpectedly closes in inventory counting document.| SWITK-487 |
-| Bug | Client | Warehouse information. Ability to change any data in the SU header.| SWMS-3867 |
+| Bug | Server | The SlpCode will be copied to the delivery document. | SWITK-406 |
+| Bug | Client | Additional delivery line fields will be copied correctly to the document. | SWMS-3871 |
+| Bug | Server | Adding a Catch Weight index that is not present in the base document causes the inventory unit of measure to be correctly completed in the SAP B1 system. | SWMS-3833 |
+| Bug | Client Android | Fixed bug - Android client unexpectedly closes in inventory counting document. | SWITK-487 |
+| Bug | Client | Warehouse information. Ability to change any data in the SU header. | SWMS-3867 |
 | Bug | Server | UDFs for Batch Master Data in SAP will be saved correctly in the GRPO document. | SWMS-3894 |
 
 ## CompuTec WMS 2.10.23 R3
 
 **Release Date - 01 September 2025**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Client Android | Pick Receipt: Inventory UoM not displayed when UoM type is set to Manual. | - |
 | Improvement | Client | Label printing window closes after clicking Print and returns to the previous page in CompuTec WMS. | - |
@@ -81,7 +81,7 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 | Bug | Server | The antivirus program incorrectly flags a WMS server file, even when project optimization is not disabled. | WMSDEV-6381 |
 | Bug | Server | Old Stock Counting causes locks. | WMSDEV-6414 |
 | Bug | Server | Reuse SSCC issue: error shown – "This SU is already packed into another SU." | - |
-| Bug | Server | Delivery from Sales Order – 'Forbid ordering greater quantities than on Order' function does not work with SU; CompuTec WMS does not display any error message.| - |
+| Bug | Server | Delivery from Sales Order – 'Forbid ordering greater quantities than on Order' function does not work with SU; CompuTec WMS does not display any error message. | - |
 | Bug | Client | Delivery - Catch Weight Item Batch Issue: for catch weight items, the system shows batch quantity in Sales UoM, but selecting it auto-populates the same Sales UoM quantity into Inventory UoM, causing incorrect values. | - |
 | Bug | Client | Best Before Date functionality not working. | - |
 | Bug | Client | Error occurs when creating SU using "SU Wizard" on CompuTec WMS. | - |
@@ -109,7 +109,7 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 
 **Release Date - 12 May 2025**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Client | All translation files have been renamed according to IETF language codes. After installing the new CompuTec WMS Server, the administrator must reselect the language in the  WMS Settings → User Settings submenu | - |
 | Improvement | Server | Delivery - all reference numbers are now copied from the base documents (up to the character limit of the target field) | - |
@@ -129,9 +129,9 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 | Bug | Server | GRPO - The batch number created from the timestamp was incorrectly formatted - this has been fixed | - |
 | Bug | Server | Stock Transfer – fixed an issue with selecting quantities for serial numbers of the "On release only" type | - |
 | Bug | Android Client | Custom Configuration – Interface Designer – fixed an issue where custom containers did not display defined icons | - |
-| Bug | Android Client| Quick SU Transfer - fixed an issue where SSCC codes without a prefix (e.g. in Code128 format) were not recognized. | - |
+| Bug | Android Client | Quick SU Transfer - fixed an issue where SSCC codes without a prefix (e.g. in Code128 format) were not recognized. | - |
 | Bug | Client | Return Delivery - blocked the option to create a Return from Request based on an AR Invoice, as it should result in an AR Credit Note instead of a Return document | SWMS-3672 |
-| Bug | Client |  Fixed an issue where barcodes containing 2-digit years were incorrectly interpreted due to Windows Regional Format settings, often resulting in dates saved as 19XX instead of 20XX | - |
+| Bug | Client | Fixed an issue where barcodes containing 2-digit years were incorrectly interpreted due to Windows Regional Format settings, often resulting in dates saved as 19XX instead of 20XX | - |
 | Bug | Client | SU Disassembly - fixed an issue where, after disassembling an SU, information about the parent SU incorrectly remained on the child SU | - |
 | Bug | Client | WMS Client and Server - fixed an issue where data could be lost when saving a transaction if the CompuTec WMS Server service stopped unexpectedly | - |
 | Bug | Client | SAP Production Issue - fixed an issue where quantities for items not managed by serial or batch numbers were doubled when in the SU | - |
@@ -159,7 +159,7 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 
 **Release Date - 13 February 2025**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Client | New Delivery Transaction - The Delivery transaction has been rebuilt | - |
 | Improvement | Client | New Transaction - Quick SU Transfer added | - |
@@ -186,12 +186,12 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 
 **Release Date - 12 December 2024**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Client | Stock Transfer: The selected item is now positioned at the top of the list instead of the bottom. | - |
 | Improvement | Custom Configuration | UDF Manager: Added the ability to change the order of fields. | - |
 | Improvement | Client Android | WMS Client (new): Added an option to enable larger labels for transactions, configurable in WMS Client Options. | - |
-| Improvement | Client Android | Android Client: Stock Transfer - bigger field for Quantity  | - |
+| Improvement | Client Android | Android Client: Stock Transfer - bigger field for Quantity | - |
 | Improvement | Client | Android Client: Barcode Decoder: Added the ability to change the order of rules. | - |
 | Improvement | Client | Barcodes for UoMs: Added the ability to scan barcodes for units of measure (UoM) on the Quantity screen for GRPO, Delivery, Stock Transfer, and Pick and Pack. | - |
 | Improvement | Server | WMS Server: Now supports SQL Server 2022. | - |
@@ -225,7 +225,7 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 
 **Release Date - 24 October 2024**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Custom Configuration | Stock Transfer from Request - Added option to auto-populate Quantity field with base document value | SWMS-3374 |
 | Improvement | Android | Android Client - added additional Polish translations | - |
@@ -246,7 +246,7 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 | Bug | Android | Android Client - Pick Order - fixed issue redirecting to menu after SU scan | - |
 | Bug | Android | Android Client - GRPO - resolved crash when scanning items without opening Quantity screen | - |
 | Bug | Client | Stock Transfer - fixed error message on scanning specific items. <br/><br/> The error message: <blockquote>Object reference not set to an instance of an object</blockquote> | - |
-| Bug | Server / Custom Configuration  | Stock Transfer - Define available quantity for Item/Batch in Quantity field option was not working | SFOON-244 |
+| Bug | Server / Custom Configuration | Stock Transfer - Define available quantity for Item/Batch in Quantity field option was not working | SFOON-244 |
 | Bug | Server | GRPO - UDFs in document row do not display default values | - |
 | Bug | Client | SU Wizard - fixed issue with selecting bin location after scanning | SWMS-3415 |
 | Bug | Server | Stock Transfer - Put Away - No Bardecoder connection with screen `[PutItem][PutToWhs]` | SWMS-3452 |
@@ -258,25 +258,25 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 
 **Release Date - 13 August 2024**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Android Client | Android client. Calculator. Added to allow quantity to be scanned into the quantity field. | - |
-| Improvement | Custom Configuration |  New option has been added in Custom Configuration > Pick and Pack. After scanning item, auto return to: Document Details | SKEAD-3032 |
+| Improvement | Custom Configuration | New option has been added in Custom Configuration > Pick and Pack. After scanning item, auto return to: Document Details | SKEAD-3032 |
 | Improvement | Android Client | Added an option in the Android client to not create or update a Data Wedge profile. After enabling this option, restart the WMS client to update the change. | SKEAD-3029 |
 | Improvement | Client | Print Buttons. A new window has been added when the print button is selected. Selecting the number of labels to print as well as the template. | SWMS-3426 |
-| Improvement | Client | Pick and Pack – Completely downloaded items move to the bottom of the list.| - |
+| Improvement | Client | Pick and Pack – Completely downloaded items move to the bottom of the list. | - |
 | Improvement | Custom Configuration | A new option has been added in Custom Configuration > Common > SAP Batch/Serial Generators SP. The option allows you to select your own CT_WMS_BatchGenerator and CT_WMS_SerialGenerator procedures. | - |
 | Improvement | Client | Allowed Purchase Unit of Measure when creating GRPO from Draft GRPO (does not apply to SU) | SWMS-3337 |
-| Improvement | Client | Pick Receipt - Added to allow Continue SU. This option is available even after exiting the document. Runs within the Pick Order update until Goods Receipt is created. The Storage Unit status changes from Created to Open. |  SWMS-2865 |
+| Improvement | Client | Pick Receipt - Added to allow Continue SU. This option is available even after exiting the document. Runs within the Pick Order update until Goods Receipt is created. The Storage Unit status changes from Created to Open. | SWMS-2865 |
 | Bug | Client | Fix scanning quantity without prefix | SKEAD-3025 |
 | Bug | Client | When changing the Date-Customer workflow in the Pick and Pack transaction, <br/><br/> The error message <blockquote>"Object reference not set to an instance of an object"</blockquote> | SKEAD-3026 |
-| Bug | Client | SU Operations > New SU. Added to allow adding a SU that is located in a different location. |  SWMS-3416 |
+| Bug | Client | SU Operations > New SU. Added to allow adding a SU that is located in a different location. | SWMS-3416 |
 
 ## CompuTec WMS 2.10.22 R4
 
 **Release Date - 31 July 2024**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Client | Pick Order - when aa component is fully dispensed or there is no need to add more of this component, the line turns green. | SPOLC-1840 |
 | Improvement | Client | Delivery / Pick and Pack - non-inventory items were excluded from the Delivery document if they were excluded from the Pick List, even if the Document Settings -> Picking List: Automatically Copy All Open Rows from Source Document option was selected | - |
@@ -292,11 +292,11 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 
 **Release Date - 04 July 2024**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Client | Pick Order - now data is saved in Pick Order after every pick or scan | - |
-| Improvement | Client | It is now possible to stay on the Quantity screen while scanning when using SU Operations (to be set in Custom Configuration -> SU) | -|
-| Improvement | Custom Configuration| Pick Receipt - new option has been added to Custom Configuration -> Production -> Pick Receipt - "Do not save every scan to Pick Receipt" | SMAFM-767 |
+| Improvement | Client | It is now possible to stay on the Quantity screen while scanning when using SU Operations (to be set in Custom Configuration -> SU) | - |
+| Improvement | Custom Configuration | Pick Receipt - new option has been added to Custom Configuration -> Production -> Pick Receipt - "Do not save every scan to Pick Receipt" | SMAFM-767 |
 | Improvement | Client | It is now possible to use large icons in WMS for Android. | SPOLC-1799 |
 | Improvement | Client | It is now possible to change the quantity on Returns from Delivery. | STLCR-2284 |
 | Improvement | Client | It is now possible to change the warehouse for GRPO based on the base document. | SWITK-173 |
@@ -313,7 +313,7 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 | Bug | Client | Pick List - doubled quantity required for Pick List in warehouse without bin location, for databases without CompuTec ProcessForce. | SWITK-198 |
 | Bug | Client | Scanning barcodes for Units of Measure only added the quantity of that UoM, without recognizing the UoM on the base document. | SWMS-3345 |
 | Bug | Client | The weight from the scale was not saved in WMS for Android. | SWMS-3358 |
-| Bug | Client | Pick Order - an error occurred when trying to change the warehouse from which components will be issued. <br/><br/> The error message: <blockquote>There is not enough quantity of bins, for item [ITEM] </blockquote>| SPOLC-1840 |
+| Bug | Client | Pick Order - an error occurred when trying to change the warehouse from which components will be issued. <br/><br/> The error message: <blockquote>There is not enough quantity of bins, for item [ITEM] </blockquote> | SPOLC-1840 |
 | Bug | Client | Pick List - An error occurred while trying to scan the barcode on the Storage Information screen. <br/><br/> The error message: <blockquote> Object reference not set to an instance of an object.</blockquote> | - |
 | Bug | Client | Delivery from Pick List - some lines remained open or some quantities were doubled in case of line doubling. | SWITK-194 |
 | Bug | Client | The system did not display any error if the value scanned/added to the UDF exceeded the allowed number of digits. | - |
@@ -327,7 +327,7 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 
 **Release Date - 30 April 2024**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Client | The location name button can now display more characters. | - |
 | Improvement | Client | Stock Transfer from Request - now items with completed quantities go to the bottom of the list. | - |
@@ -346,13 +346,13 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 | Bug | Client | Stock Transfer from Request - if there were more than 1 row with the same item, the quantity from SU only went to the first row (so the remaining rows were left open in the Transfer Request). | (SWMS-3051 |
 | Bug | Client | Stock Transfer - New SU - the system did not return an error that the value was invalid or too long for Gross Weight, Net Weight and SSCC. The system allowed SU to be added in the UI, but the data was not created in the OSTU table. | - |
 | Bug | Client | Delivery - SU - an error message appears when trying to add a SU from the Storage Information screen. The error message: SU not found. | SWMS-3201 |
-|Bug | Client | Delivery - when the user added a new line in the delivery document, "Ship-to Name"was NULL. This  can be now customized by query in UDF. | - |
+| Bug | Client | Delivery - when the user added a new line in the delivery document, "Ship-to Name"was NULL. This  can be now customized by query in UDF. | - |
 
 ## CompuTec WMS 2.10.22 R1, 2.9.22 R1
 
 **Release Date - 27 March 2024**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Client | Pick and Pack - Storage Units are now supported in Pick Lists. | - |
 | Improvement | - | CompuTec AppEngine - API - Storage Units object added | - |
@@ -386,7 +386,7 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 
 **Release Date- 23 November 2023**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Client | Good Receipt PO: a UDF enabled in Custom Configuration does not appear in the quantity window. | – |
 | Improvement | Client Desktop | Inventory transfer: the save process improved to avoid locks. | – |
@@ -409,7 +409,7 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 
 **Release Date - 27 September 2023**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Custom Configuration | Custom Configuration, Manager, Enable SQL Dimensions: the @Series parameter added to the Dimensions/Cost Centers. | - |
 
@@ -419,7 +419,7 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 
 **Release Date - 15 September 2023**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Bug | Client | Pick List for an Item without Batch and Serial Numbers in a Bin location, with a barcode in Item Master Data: scanning a barcode (without prefix) increases the quantity, but no Bin Location is entered. | SWMS-3132 |
 | Bug | Client | Pick List: scanning a barcode takes quantity from an incorrect Bin Location, and you cannot take it manually in specific cases. | SWMS-3132 |
@@ -431,7 +431,7 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 
 **Release Date - 13 September 2023**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Client | A possibility to trigger printing an SU label before Goods Receipt PO creation. | - |
 | Improvement | Client | Catch Weight: automatic quantity counting from the base document. | - |
@@ -448,7 +448,7 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 | Improvement | Custom Configuration | Custom decoder improvements. | – |
 | Bug | Client | Android version: the application crashes upon using the filter field when using the Extra SQL Field (a Custom Configuration option). | – |
 | Bug | Client | Delivery from Sales Order: an error occurs upon adding an existing SU to a list, scanning an SU and saving the document in specific cases. | – |
-| Bug | Client |Delivery: errors upon attempts to save a document with SU that contains Batches and Serial Number Items and the following Custom Configuration options are turned on: Pick only preselected batches and serials, Copy the packed items from the Pick List, Use Sales UoM. | – |
+| Bug | Client | Delivery: errors upon attempts to save a document with SU that contains Batches and Serial Number Items and the following Custom Configuration options are turned on: Pick only preselected batches and serials, Copy the packed items from the Pick List, Use Sales UoM. | – |
 | Bug | Client | Delivery: incorrect quantity calculation when the 'Pick only preselected batches and serials' and 'Use Sales UoM' Custom Configuration options are turned on. | – |
 | Bug | Client | GRPO from PO: Hide SU (Custom Configuration option) causes an error upon scanning an open SU. <br/>Error message: Invalid barcode | SWMS-3128 |
 | Bug | Client | Goods Receipt PO, SU Wizard: editing and saving SU created by SU Wizard creates a new SU. | – |
@@ -495,7 +495,7 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 
 **Release Date - 26 June 2023**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Client | Goods Receipt PO: it is now possible to choose to remain on the Quantity screen after adding a Batch. | - |
 | Improvement | Client | Pick Order: now it is possible to choose to remain in the Quantity form after scanning Item Code with Quantity. | - |
@@ -510,7 +510,7 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 
 **Release Date - 24 May 2023**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Client | Goods Receipt PO: when the UoM field is empty, a name from the Purchase field is not displayed. | – |
 | Improvement | Client | Issue to Production: a button name changed from New Production Issue to New Pick Order. | SWMS-3002 |
@@ -533,7 +533,7 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 
 **Release Date - 26 April 2023**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Android Client | Stock Transfer: receipt quantities counter display improved. | – |
 | Improvement | Client | New Custom Configuration option (Production, CompuTec ProcessForce Pick Receipt): Return to Remarks window after item receipt. | – |
@@ -546,10 +546,10 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 
 **Release Date - 12 April 2023**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Client | Android version: a bar indicating progress of a process added. | – |
-|Improvement | Client | Improvements of the built-in calculator in the version for handheld devices. | - |
+| Improvement | Client | Improvements of the built-in calculator in the version for handheld devices. | - |
 | Improvement | Client | Stock Counting: Items newly added to the inventory list are now added to the top of the list. | SWMS-2891 |
 | Improvement | Client | Stock Transfer: the application prompts resized. | – |
 | Improvement | Client | Windows CE - the Client-Server version compatibility error message does not appear on every related situation. | SWMS-2972 |
@@ -579,7 +579,7 @@ The latest Installer is available to download from [here](/docs/wms/releases/dow
 Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** version, it is required to reassign terminal licenses to terminals after the upgrade.
 :::
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Highlight | Server | Change of the way of generating and checking Terminal ID/Name. <br/><details><summary>Click here to find out more</summary><div>Change how the Terminal ID/Terminal name is generated. When CompuTec PDC/WMS application does not run on a terminal server, it will be just a terminal name without the user. In this case, the customer will need only one license per physical device, regardless of the Windows user logged in. <br/>When CompuTec PDC/WMS application runs on a terminal server, there won’t be any terminal name included, only a username, so the license will roam between terminal servers. However, this license model will be based on usernames and not terminals.</div></details> | - |
 | Improvement | Client | Improved performance of adding SU (with Serial Numbers Items) in Stock Counting. | – |
@@ -601,7 +601,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 2 February 2023**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Bug | Desktop Client | When a user picks Items manually with a decimal quantity and clicks the next arrow button, the system returns the following error: <br/><br/><blockquote>Input string was not in a correct format</blockquote> | - |
 
@@ -611,7 +611,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 24 January 2023**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Highlight | - | Storage Units handling in Stock Transfer. Click [this link](/docs/wms/user-guide/storage-units/su-in-stock-transfer/) to find out more. | - |
 | Improvement | Client | An error occurs spontaneously upon clicking the Left Arrow icon in some cases. Error message: An application error occurred. If problem will occur again please report it to the system administrator. | SWMS-2730 |
@@ -652,7 +652,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 26 October 2022**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Android Client | Android version: new option – Disable software keyboard. | - |
 | Bug | Client | Delivery: Allow/Block negative inventory (SAP Business One option) is now supported. | - |
@@ -665,7 +665,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 22 September 2022**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Highlight | Now it is possible to download the CompuTec WMS client installers by connecting to a CompuTec WMS Server installation. Click [this link](../administrator-guide/installation/wms-client/computec-wms-client-download.md) to find out more. | – |
 | Improvement | Client | Custom Query Manager: the Internal Batches screen added. | – |
@@ -683,18 +683,18 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 23 August 2022**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Custom Configuration | New Custom Configuration option: Stock Counting – Auto add SU content check box (checking this checkbox allows to scan a whole SU content, not specific lines). | SWMS-2731, SWMS-2694 |
 | Improvement | Client | Good Receipt PO: adding many Serial Numbers (e.g. more than 1000) sped up. | – |
 | Improvement | Client | Delivery: it is now possible to remove already added Items. | - |
-| Improvement | Client | New Stock Transfer, Stock Transfer from Request: Document Details form – now the Unit of Measurement is taken from the base document.  | SWMS-2501|
+| Improvement | Client | New Stock Transfer, Stock Transfer from Request: Document Details form – now the Unit of Measurement is taken from the base document. | SWMS-2501 |
 | Improvement | Client | Pick List from Stock Transfer: now quantities during the transaction are given with Unit of Measurement from the base document (not inventory Unit of Measurement). | SWMS-2704 |
 | Bug | Client | CompuTec WMS server service stops randomly without an automatic restart. | – |
 | Bug | Client | Delivery: saving a document with a big number of Serial Numbers Items chosen (e.g. 1000) takes too long (e.g. more than 20 minutes for 1000 Serial Numbers Items). | – |
 | Bug | Client | Goods Receipt: an error occurs upon opening a previously chosen Batch (choosing a warehouse, adding an Item with a Batch, opening the Batch). | - |
 | Bug | Client | Goods Receipt PO: an error occurs upon adding two SU to one document, adding two new SUs or using SU Wizard. | – |
-| Bug | Client| Inventory Transfer Request: an error occurs when putting Items to two different Bin Locations in the same Warehouse. | – |
+| Bug | Client | Inventory Transfer Request: an error occurs when putting Items to two different Bin Locations in the same Warehouse. | – |
 | Bug | Client | New Delivery: some of the selected Serial Numbers Items (Select all – the arrow down icon) are duplicated after exceeding 2000 Items. | – |
 | Bug | Client | Pick and Pack, Pick List: an error occurs upon scanning a Bin Location (when the following Custom Configuration options are checked: Pick and Pack: Update all picked content on transaction completion, Enable adding Item Details when Warehouse has Bin Locations). | – |
 | Bug | Client | Stock Transfer custom query: FROM Bin Location parameter does not seem to work. | – |
@@ -705,7 +705,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 12 July 2022**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Server, Client | Support of empty Serial Numbers in Stock Transfer, Transfer Request, Goods Receipt PO and Delivery. | – |
 
@@ -715,10 +715,10 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 6 July 2022**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Client | Serialization: now an empty Serialization document automatically changes its status to Closed. | – |
-| Improvement | Client | Delivery: it is now possible to decrease Quantity on Delivery. |SWMS-2564 |
+| Improvement | Client | Delivery: it is now possible to decrease Quantity on Delivery. | SWMS-2564 |
 | Improvement | Client, Custom Configuration | Now the Delivery transaction is added to Workflow Step Settings. | SWMS-2554 |
 | Improvement | Client, Custom Configuration | New Custom Configuration option: now it is possible to add attachments to Returns (from a PO and from a Delivery). | – |
 | Improvement | Client, Custom Configuration | Pick and Pack: the Printing button has been added to the Storage Unit details screen. | – |
@@ -728,7 +728,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 | Improvement | Serialization | Stock Transfer/Goods Issue/Delivery, Serials screen: a "select all Serial numbers from this batch" option added. | – |
 | Improvement | Serialization | Goods Receipt for Serialized Items. | SWMS-2507 |
 | Improvement | Serialization | Now a scanned Serial Numbers Item is saved to the database upon saving the whole document (thanks to this, a specific Serial Numbers Item can be chosen again after aborting the creation of a document). | – |
-| Improvement | Serialization | A possibility to receipt the same serials for different GTINs.| – |
+| Improvement | Serialization | A possibility to receipt the same serials for different GTINs. | – |
 | Improvement | Server | CompuTec WMS Settings shortcut is now available from the Start menu in the same folder as CompuTec WMS. | – |
 | Bug | Client | An error occurs upon attempts to save a Goods Issue on a database with Branches and a user assign to another Branch. <br/><br/>Error message:  <blockquote>Specify the active branch [OIGE.BPLId]</blockquote> <br/><br/>If the user changes the Branch, another error occurs. <br/><br/>Example error: <blockquote>Warehouse is not assigned to the same branch as the document `[IGE1.WhsCode][line: 1]` , 'CP-11'</blockquote> | SWMS-2642 |
 | Bug | Client | Date format in Whs.Info Batch Details is MM/dd/YYYY instead of dd/MM/yyyy. | – |
@@ -765,7 +765,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 1 March 2022**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Client | A field for Purchase/Sales UoM can now only be filled with an integer. | SWMS-2518 |
 | Improvement | Client | Catch Weight: Unit of Measurement quantity is displayed in Purchase Unit of Measurement and vice versa. | – |
@@ -778,7 +778,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 | Improvement | Client, Custom Configuration | It is now possible to scan a Supplier Batch Number using (240) prefix. | – |
 | Improvement | Client, Server | New Pick Order option: Complete Production Issue. | – |
 | Improvement | Custom Development | Storage Units – a Select All button added to the SU Creation, SU Pick and Pack from Sales Order and SU Pick and Pack From Transfer Request transactions. | – |
-| Improvement | Serialization  | A possibility to receipt the same serials for different GTINs. | – |
+| Improvement | Serialization | A possibility to receipt the same serials for different GTINs. | – |
 | Improvement | Service Manager | Pick Order: A possibility to define a print request for CompuTec Labels upon clicking the Save icon after setting up Quantity added. | – |
 | Bug | Client | Cannot create a Pick List visible for all of the users because the system considers the User field instead of the Picker field (the system should allow to Pick List to be available for all of the users when the Picker field is empty). | SWMS-2468, <br/>SWMS-2469 |
 | Bug | Client | Delivery from Sales Order: incorrect quantity in the Form Bin form after returning there after setting quantity for a Batch. | - |
@@ -791,9 +791,9 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 | Bug | Client | Pick Receipt: Status and QC Status UDFs set in the Batch form are empty (despite the fact of the values being present in a database). | SWMS-2514 |
 | Bug | Client | Polish diacritics in ItemCodes are not added when the related barcode is scanned. | – |
 | Bug | Client | Production Receipt: when a Batch is from production to SU by scanning, the U_SnOrBtnAds field in the CT_WMS_STU1 table is not filled. | – |
-| Bug | Client |SAP Production Issue: An error occurs upon scanning a multiblock barcode with Item Code and Quantity. Error message: Object reference not set to an instance of an object. | SWMS-2529 |
+| Bug | Client | SAP Production Issue: An error occurs upon scanning a multiblock barcode with Item Code and Quantity. Error message: Object reference not set to an instance of an object. | SWMS-2529 |
 | Bug | Client | Using the Use Sales UoM option (Custom Configuration) causes displaying Quantity in Sales UoM, instead of Inventory UoM in the Batches form. | SWMS-2518 |
-| Bug |Client, Custom Configuration | Delivery (from Sales Order or New Delivery): the system does not take under consideration the number of boxes, e.g. entering 10 boxes, 25 kg each results with adding only 1 box, 25 kg. | SWMS-2518 |
+| Bug | Client, Custom Configuration | Delivery (from Sales Order or New Delivery): the system does not take under consideration the number of boxes, e.g. entering 10 boxes, 25 kg each results with adding only 1 box, 25 kg. | SWMS-2518 |
 | Bug | Client, Custom Configuration | Purchase Order, Catch Weight, Quantity: positions of fields for weight and UoM are switched when the Use Purchase UoM option (Custom Configuration) is on. | SWMS-2518 |
 | Bug | Client, Serialization | CompuTec WMS Server stops when receiving serialized Items in Bin Location with restrictions (a Bin Location Master Data option). | – |
 | Bug | Client, Server | An error occurs upon entering a newly created line on a Delivery transaction (a new transaction based on a Sales Order). Error message: The best overloaded method match for 'string.IsNullOrEmpty(string)' has some invalid arguments. | – |
@@ -809,7 +809,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 12 October 2021**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Server | CompuTec AppEngine Batch synchronization supported. | – |
 | Improvement | Client | Catch Weight: Unit of Measurement quantity is displayed in Purchase Unit of Measurement and vice versa. | – |
@@ -821,7 +821,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 | Bug | Client | Cannot log in using a password that contains the '+' sign. Error message: Unrecognized user or invalid user/password. | – |
 | Bug | Client | Cannot read an Item that starts with 216.[...] or 218[...] with a barcode scanner (a device interprets it as a Serial Number prefix). | – |
 | Bug | Client | Goods Receipt PO: custom query for SU Wizard Bin location does not work in specific cases. | – |
-| Bug | Client | New Stock Transfer: the Skip destination Warehouse option does not work. |SWMS-2424 |
+| Bug | Client | New Stock Transfer: the Skip destination Warehouse option does not work. | SWMS-2424 |
 | Bug | Client | Scanning a Batch code in a specific Warehouse form causes an error in specific cases. <br/>Error message: Not enough stock quantity for batch. | SWMS-2403 |
 | Bug | Client | Stock Counting: the cursor is automatically set to the Quantity field. | – |
 | Bug | Client | Stock Transfer: Bin Locations disappear from the Bin list after choosing it around 20 times. | SWMS-2368 |
@@ -829,7 +829,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 | Bug | Client | The 21 prefix code does not work in serialization. | – |
 | Bug | Client | Whs Info: Warehouse Bin code (92) is not recognized in the Bins form. | – |
 | Bug | Client, Server | New Inventory Transfer, Document Details: after adding an Item, its line is highlighted (when Custom Configuration option 'Hide SU' is checked). | – |
-| Bug | Server | Scanning does not work with multi-block codes with date in yyMMdd format in specific cases.| – |
+| Bug | Server | Scanning does not work with multi-block codes with date in yyMMdd format in specific cases. | – |
 
 ---
 
@@ -837,7 +837,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 09 August 2021**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Bug | Client | Pick Order does not work after CompuTec ProcessForce upgrade to 10 R11 version. | – |
 | Bug | Client | Cannot read an Item that starts with 216.[…] or 218[…] with a barcode scanner (a device interprets it as a Serial Number prefix). | - |
@@ -848,7 +848,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 15 June 2021**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Custom Development | A new Custom Configuration option: Display Delivered Batches. | SWMS-2154 |
 | Improvement | Custom Development | Custom Configuration, Manager tab, Extra SQL Fields: the @SUCode parameter added for Goods Receipt PO and Delivery. | - |
@@ -856,8 +856,8 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 | Bug | Client | Custom Configuration form is not displayed properly in 1024x768 resolution. | SWMS-2154 |
 | Bug | Client | Custom Query SQL form (in Custom Configuration, Manager, Custom Query) is not displayed properly in 1280x720 resolution. | - |
 | Bug | Client | Stock Counting: a Unit of Measurement field is not present in the quantity form. | - |
-| Bug | Client, Server  | The application adds a Serial Numbers Item after clicking the Save icon in the Serial Numbers form, even though no Item was chosen (on the following transactions:  Delivery, New Delivery: Sales Order, AR,  Draft and Pick List; From Pick List, Goods Issue). | - |
-| Bug | Client, Server |Whs Info: an error occurs upon clicking an arrow back during the transaction in specific cases. | – |
+| Bug | Client, Server | The application adds a Serial Numbers Item after clicking the Save icon in the Serial Numbers form, even though no Item was chosen (on the following transactions:  Delivery, New Delivery: Sales Order, AR,  Draft and Pick List; From Pick List, Goods Issue). | - |
+| Bug | Client, Server | Whs Info: an error occurs upon clicking an arrow back during the transaction in specific cases. | – |
 
 ---
 
@@ -865,7 +865,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 28 April 2021**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Server | CompuTec WMS Settings, CompuTec AppEngine address: a 'http://' component is automatically added to the beginning of an address. | – |
 | Improvement | Server | Return Delivery and Return PO options are now available for Serialization. | – |
@@ -883,7 +883,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 17 March 2021**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Bug | Client | Stock Counting: after counting is finished for a specific line, the application goes back to the top of the list (instead of going to the first not counted line). | - |
 | Bug | Client | Stock Transfer: filtering Serial Numbers Items and clicking the arrow down button to pick them clears the filtering and selects all the Serial Numbers Items. | SWMS-222 |
@@ -894,7 +894,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 3 March 2021**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Bug | Custom Development | Pick and Pack: an error occurs upon saving a document with a Batch picked from more than one location. | - |
 
@@ -904,7 +904,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 26 February 2021**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Bug | Client, Server | Goods Receipt PO: An error occurs upon filling in and saving a document, re-logging. | - |
 | Bug | Client | New Pick Receipt: an error occurs upon saving a document in specific cases. Error message: COM object cannot be used. | - |
@@ -915,9 +915,9 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 24 February 2021**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
-| Improvement | Server | Delivery: new Custom Configuration option: Skip SAP allocation. |SWMS-2154 |
+| Improvement | Server | Delivery: new Custom Configuration option: Skip SAP allocation. | SWMS-2154 |
 | Bug | Client | Pick Order: an error occurs upon choosing an SU in the SU FIFO form. Error message: Item not found on the list. | – |
 | Bug | Custom Development | Pick and Pack: the Select All option (down arrow) does not work on Serials form. | SWMS-2223 |
 | Bug | Client | Stock Transfer: Items from another Warehouse are available on the list after choosing SU FIFO option. | - |
@@ -929,7 +929,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 17 February 2021**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Bug | Client | Goods Receipt PO: An error occurs upon filling in and saving a document, re-logging. | - |
 
@@ -939,9 +939,9 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 12 January 2021**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
-| Bug | Client | Goods Receipt PO: an error occurs upon saving a document draft in specific cases.  | - |
+| Bug | Client | Goods Receipt PO: an error occurs upon saving a document draft in specific cases. | - |
 | Bug | Client | Goods Receipt PO: primary series is not chosen automatically. | - |
 | Bug | Client | Pick Receipt: an error occurs upon saving documents in specific cases. Error message: User does not have set Receipt Series. | - |
 
@@ -951,7 +951,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 11 January 2021**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Client | CompuTec WMS version numbers (e.g. in Programs and Features) unified. | - |
 | Improvement | Client | Delivery, Return: Signature field added. | - |
@@ -971,7 +971,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date- 4 November 2020**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Improvement | Client | SSL connection supported. | - |
 
@@ -981,7 +981,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 21 October 2020**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Bug | Client | All Goods Return Operations: an error occurs upon deleting a Serial Numbers managed Item from the Item list. | - |
 | Bug | Client, Server | Catch Weight, Goods Issue: inconsistencies in display of the Catch Weight forms in different workflows. | - |
@@ -1044,7 +1044,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 29 July 2020**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Bug | Server | Creating Unit of Measurement (UoM) with the same name but different code, then creating separate UoM Group for each UoM causes UoM name to be the same in the two groups (although the base UoMs are different). This caused errors upon attempt to save transactions in CompuTec WMS. | SWMS-2017 |
 | Bug | Client, Server | Delivery, from Pick List: <li>quantity for a Batch does not match the related quantity of the document in SAP Business One in some cases</li><li>information that an Serial managed Item is not present on the given Warehouse (even though it is, based on information from SAP Business One).</li> | - |
@@ -1056,7 +1056,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 
 **Release Date - 16 July 2020**
 
-| Issue Type | Component/s |Release Note | Related Support Ticket(s)\* |
+| Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
 | Bug | | Changing decimal and thousand separator does not affect their display in CompuTec WMS. | SLBME-22 |
 | Bug | Client, Server | Delivery, From A/R Reserve Invoice: one of the Item's row is highlighted in yellow in some cases. An error occurs upon attempts to save the document. Error message: Not enough stock quantity. | - |
@@ -1067,7 +1067,7 @@ Due to changes in the licensing mechanism in the **2.10.19 R3/2.9.19 R3** versio
 | Bug | Custom Configuration | Pick Receipt: data set in User Defined Field in the application is not saved to the database (despite the fact of choosing the related Custom Configuration option: Custom Configuration/Manager/Enable UDF manager/Select CompuTec ProcessForce Pick Receipt Document/Enable created UDF) . | SWMS-1986 |
 | Improvement | Custom Configuration | Pick and Pack: It is now possible to add higher quantity that there is on a related base document. | SWMS-2002 |
 | Improvement | Custom Configuration | Pick and Pack: using "Set available quantity for Item/Batch in Workflow Quantity" (Custom Configuration option) does not result in automatic filling of Quantity based on requested quantity from a base document. | SWMS-2003 |
-| Bug | Client, Server  | SAP Production Issue: an error occurs upon adding a document in some cases. Error message: 10000111 “ On "Contents" tab, enter item or items. | - |
+| Bug | Client, Server | SAP Production Issue: an error occurs upon adding a document in some cases. Error message: 10000111 “ On "Contents" tab, enter item or items. | - |
 
 ---
 

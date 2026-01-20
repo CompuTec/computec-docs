@@ -2,9 +2,9 @@
 sidebar_position: 11
 ---
 
-# CompuTec MOWizard
+# CompuTec Planning & Bottleneck Scheduling (MO Wizard) Plugin
 
-Below are the release notes for CompuTec MOWizard, highlighting new features, improvements, and bug fixes in this release.
+Below are the release notes for CompuTec Planning & Bottleneck Scheduling (MO Wizard) Plugin, highlighting new features, improvements, and bug fixes in this release.
 
 ## CompuTec MOWizard 3.2601.1
 

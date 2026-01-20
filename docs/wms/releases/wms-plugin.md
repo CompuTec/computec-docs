@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# CompuTec WMS Plugin
+# CompuTec WMS Plugin Release Notes
 
 Below are the release notes for CompuTec WMS Plugin, highlighting new features, improvements, and bug fixes in this release.
 
@@ -70,7 +70,7 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 
 | Issue Type | Component/s | Release Note |
 | - | - | - |
-| Improvement | WMS Plugin | Added support for including Catch Weight Storage Units in the Storage Info section of SAP Business One.|
+| Improvement | WMS Plugin | Added support for including Catch Weight Storage Units in the Storage Info section of SAP Business One. |
 | Improvement | Server | Added the option to save Deliveries created from Pick List as Draft documents. |
 | Improvement | Server | Added a possibility to edit CardCode on SU Info. |
 | Bug | Custom Configuration | Template creation is not functioning correctly in the .net Core version. |
@@ -87,7 +87,7 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 | Bug | Server | Receiving a batch from a different bin than selected leaves the batch available in the original bin, and the SU remains visible in SU Info. |
 | Bug | Server | Error message occurred in Delivery from Sales Order: "Packed item Active-Item-02 is not part of the delivery (UoM 9, items per unit 1.000000)" |
 | Bug | Client | GRPO scanning behavior does not function as expected. |
-| Bug | Server | Pick and Pack: Pick list generated from SAP Production Order appears empty in WMS. 
+| Bug | Server | Pick and Pack: Pick list generated from SAP Production Order appears empty in WMS. |
 | Bug | Server | WMS Settings fail to notify users that ODBC Driver 17 is required. |
 | Bug | Server | Error message occurred in Pick and Pack: "This SU is currently in production stage. Please complete the Production Receipt before proceeding." |
 | Bug | Server | Delivery from Pick List: Data entered in UDFs is not saved to database. |
@@ -157,7 +157,6 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 | Bug | Client Android | Stock Counting: Unable to scan QR code with barcoder; error message occurred: "Invalid barcode." |
 | Bug | Server | 6460 |
 
-
 ## CompuTec WMS Plugin 3.2508.1
 
 **Release Date - 04 August 2025**
@@ -174,7 +173,7 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 | Improvement | Client | Stock Transfer functionality successfully tested in Core version |
 | Bug | Client | Pick and Pack – System displays error message "Pick list exists and Bin locations information required." |
 | Bug | Client Android | (EMCM) Stock Transfer – "To Bin" filtering does not work correctly; error message appears, but bin locations are not filtered until the last character is removed. |
-| Bug | Client |  Inventory Transfer – negative batch/bin location quantities appear after scanning a batch. WMS merges batches into a single location, causing incorrect quantity display. |
+| Bug | Client | Inventory Transfer – negative batch/bin location quantities appear after scanning a batch. WMS merges batches into a single location, causing incorrect quantity display. |
 | Bug | Client | Catch Weight – unable to add a new row; system does not accept input or triggers no action. |
 | Bug | Client Android | MAUI – Scanning cannot be enabled on the Login screen; swipe-right gesture to activate scanning is not functioning. |
 | Bug | Server | (Ortho Solutions) Pick Order – Missing Order by `LineNum` clause in the query for the Document Details screen, causing lines to display in incorrect sequence. |
@@ -184,15 +183,15 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 | Bug | Client | Installer downloaded from the WMS server-hosted page does not include the version number in the file name. |
 | Bug | Server | No logs are generated when WMS Settings is opened directly from Start menu. |
 | Improvement | Client | Pick and Pack – No retry mechanism in place; operations fail without reattempt after errors or WMS restart, requiring manual intervention. |
-| Improvement | WMS Main | Added optional parameter to move completed items to the bottom of the list, enhancing clarity.|
+| Improvement | WMS Main | Added optional parameter to move completed items to the bottom of the list, enhancing clarity. |
 | Bug | Server | Old Stock Counting – Document not locked, allowing simultaneous edits. |
 | Bug | Server | Error message occurred: "This SU is already packed into another SU" appears when attempting to reuse an SSCC. |
 | Bug | Server | Delivery from Sales Order - "Forbid ordering greater quantities than on Order" function does not work with SU; CompuTec WMS allows over delivery without showing an error message. |
-| Bug | Client |  When "Use Sales UoM from based document" is enabled, the system displays batch quantity in Sales UoM but incorrectly auto-populates it into the Inventory UoM field. |
+| Bug | Client | When "Use Sales UoM from based document" is enabled, the system displays batch quantity in Sales UoM but incorrectly auto-populates it into the Inventory UoM field. |
 | Bug | Client | Best Before Date functionality not working. |
 | Bug | Client | When Custom Config > Delivery > Use Sales UoM from based document is enabled, batch quantities are shown in Sales UoM but selecting a batch incorrectly fills Inventory UoM with the Sales UoM quantity. |
 | Bug | Client | Incorrect Available Quantity displayed in Catch Weight. |
-| Bug | Client |  Label print window does not close after clicking "Print Labels" |
+| Bug | Client | Label print window does not close after clicking "Print Labels" |
 | Bug | Client Android | (VIANDES SEFICLO) GRPO - The scanned value goes to the logs after scanning and after pressing the Save button. |
 | Bug | Client | Blank error notification shown in Pick List when updating base document: "Pick list exists. Bin locations information required." |
 | Improvement | Client | Configure CompuTec WMS Settings to automatically run as Administrator to prevent permission-related issues during configuration and usage. |
@@ -210,7 +209,7 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 
 | Issue Type | Component/s | Release Note |
 | - | - | - |
-| Bug | Server|  In some cases the quantity on the pick list was not picked by scanning. After re-entering the pick list in CompuTec WMS the quantity was picked partially. |
+| Bug | Server | In some cases the quantity on the pick list was not picked by scanning. After re-entering the pick list in CompuTec WMS the quantity was picked partially. |
 
 ## CompuTec WMS Plugin 3.2506.1
 
