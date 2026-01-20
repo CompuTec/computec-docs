@@ -15,7 +15,7 @@ The latest Installer is available to download from [this link](https://learn.com
 
 ## CompuTec WMS 2.10.23 R5
 
-**Release Date - 10 November 2025**
+**Release Date: 10 November 2025**
 
 | Issue Type | Component/s | Release Note | Related Support Ticket(s)\* |
 | --- | --- | --- | --- |
