@@ -2,7 +2,21 @@
 sidebar_position: 1
 ---
 
-# Release Notes
+# CompuTec AppEngine Release Notes
+
+## CompuTec AppEngine 3.2601.2
+
+**Release Date: 19 January 2026**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Improved | AE Analytics | Analytics now correctly use the language defined in the SAP Business One Web Client. Previously, the browser language was used instead, which caused inconsistent localization. |
+| Fixed | AE Analytics | Translation IDs provided by plugins are now correctly handled in Analytics actions. Previously, some translations were not resolved properly, resulting in incorrect or missing labels. |
+| Fixed | AE Analytics, AE Core | Updating a plugin with variants no longer fails when the variant source file does not contain a GUID. The system now correctly updates the existing variant instead of attempting to create a duplicate. |
+| Fixed | AE Installer | CompuTec AppEngine now starts correctly even when more than one CompuTec AppEngine menu is defined in a plugin. Previously, this configuration could prevent the system from starting. |
+| Fixed | Common functions | Company activation in CompuTec AppEngine no longer fails with the error `Ref count for this object is higher than 0`. Activation now completes successfully without errors. |
+| Fixed | Common functions | A post transaction notification error caused by null values is no longer reported in monitoring tools. Proper null handling has been implemented to prevent unnecessary exceptions. |
+| Fixed | AE UAA | Redirecting to `backUrl=uaa#authenticated` after authentication now works as expected. Users are correctly redirected to the login page instead of the launchpad. |
 
 ## CompuTec AppEngine 3.2601.1
 
@@ -11,10 +25,10 @@ sidebar_position: 1
 | Issue Type | Component/s | Release Note |
 | --- | --- | --- |
 | Improved | AE Core | CompuTec AppEngine now checks the installed version correctly. You'll only see a `New version is available` message when a newer version is available, eliminating unnecessary alerts. |
+| Improved | .netCore | Document series determination has been improved to correctly respect the posting date and posting period. You can now select and use series from previous years, for example, from 2024, without problems. |
 | Fixed | AE Analytics, AE Core | Analytics screens now open without errors. Previously, some users seen an unexpected system error `NullReferenceException` that blocked access. |
 | Fixed | AE UAA | After logging out of the **Administration Panel** and returning to the **Launchpad**, the **Login using SAP** option is now shown as expected. |
 | Fixed | AE Analytics | Refreshing the preview no longer causes configuration settings to disappear. Now, your setup remains intact after a refresh. |
-| Improved | .netCore | Document series determination has been improved to correctly respect the posting date and posting period. You can now select and use series from previous years, for example, from 2024, without problems. |
 
 ## CompuTec AppEngine 3.2512.1
 
