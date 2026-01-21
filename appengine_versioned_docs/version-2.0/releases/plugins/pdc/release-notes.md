@@ -93,7 +93,7 @@ toc_max_heading_level: 2
 
 **Release date - 29 May 2024**
 
-| Issue Type | Component/s | Release Note |  Linked issue/s\*\* |
+| Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
 | Bug | Downtimes | CompuTec PDC crashes on quick receipt | - |
 | Bug | CompuTec PDC | Issues with auto selection of bin location on pick receipt | SPDC - 854 |
@@ -128,7 +128,7 @@ toc_max_heading_level: 2
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
 | Improvement | Barcodes | Scanning a MODocEntry + RscLineNum barcode adds a new Task (or opens a Task – when it is already added). | - |
-| Improvement | CompuTec Labels | New Crystal Reports mechanism. Please check the related [SAP website](https://help.sap.com/docs/SAP_BUSINESS_ONE_VERSION_FOR_SAP_HANA/686100cb1bc34346b2bc6642685bab43/b1bbebd32ff940c786c76315a8dfa270.html). | SPDC-748|
+| Improvement | CompuTec Labels | New Crystal Reports mechanism. Please check the related [SAP website](https://help.sap.com/docs/SAP_BUSINESS_ONE_VERSION_FOR_SAP_HANA/686100cb1bc34346b2bc6642685bab43/b1bbebd32ff940c786c76315a8dfa270.html). | SPDC-748 |
 | Improvement | CompuTec PDC | Pick Receipt, number of Batches set to more than one: a lack of warning message about the "Batch generated when Manufacturing Order is" is selected and hence cannot create multiple Batches. | - |
 | Improvement | Tasks | - More space for user-specific buttons that were added in CompuTec PDC. <br/>- Additional space in the tile for custom fields. <br/>- Highlighting of the CompuTec PDC buttons when additional information is available, for example, a drawing or instructions. | - |
 | Bug | Barcodes | Scanning a 22-sign barcode causes a crash of the application. | - |
@@ -250,7 +250,7 @@ toc_max_heading_level: 2
 
 **Release Date - 28 February 2022**
 
-| Issue Type | Component | Release Note| Linked issue/s\*\* |
+| Issue Type | Component | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
 | Improvement | Configuration | The Dutch language version is now available | SPDC-520 |
 | Bug | Management Board | Planned Qty and Reported Quantity in the Management Board do not match values in the related Task form. | SPDC-578 |
@@ -263,7 +263,7 @@ toc_max_heading_level: 2
 
 **Release Date - 14 December 2021**
 
-| Issue Type | Component | Release Note| Linked issue/s\*\* |
+| Issue Type | Component | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
 | Improvement | Management Board | Item Code available when assigning Tasks in Management Board | – |
 | Bug | Configuration | CompuTec PDC Settings: all of the Resource are available to use in CompuTec PDC despite the fact of narrowing it down to one by Resource Code setting | – |
@@ -275,7 +275,7 @@ toc_max_heading_level: 2
 
 **Release Date - 17 November 2021**
 
-| Issue Type | Component | Release Note| Linked issue |
+| Issue Type | Component | Release Note | Linked issue |
 | --- | --- | --- | --- |
 | Bug | Barcodes | Cannot scan barcodes on remote desktops in specific cases | – |
 
@@ -283,7 +283,7 @@ toc_max_heading_level: 2
 
 **Release Date - 4 November 2021**
 
-| Issue Type | Component | Release Note| Linked issue/s\*\* |
+| Issue Type | Component | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
 | Improvement | Barcodes | Possibility to start/pause all Tasks added to one Resource at once | – |
 | Improvement | Pick and Pack | An error message added upon an attempt to create a Goods Issue related to a Manufacturing Order where at least one raw material is out of stock. | SPDC-515 |
@@ -322,7 +322,7 @@ toc_max_heading_level: 2
 | Bug | Configuration | Cannot log in by using a barcode scanning for specific devices (tested and fixed for Zebra Symbol DS4308) | SPROC-11514 |
 | Bug | Configuration | Customization view's fields are not added to the application in some cases | – |
 | Bug | Pick and Pack | A Batch Status upon Receipt from Production made in CompuTec PDC is not updated in SAP Business One | SPDC-449 |
-| Bug | Pick and Pack  | The accounting columns are not filled in CompuTec ProcessForce upon Pick Receipt / Pick Order creation in CompuTec PDC | SPDC-462 |
+| Bug | Pick and Pack | The accounting columns are not filled in CompuTec ProcessForce upon Pick Receipt / Pick Order creation in CompuTec PDC | SPDC-462 |
 | Bug | SAP | Manufacturing Order Layout does not work | – |
 | Bug | Tasks, Time Booking | A Labour code is not filled for a Team Time Booking | – |
 
@@ -335,7 +335,7 @@ toc_max_heading_level: 2
 | Issue Type | Component/s | Release Note | Linked issue/s\*\* |
 | --- | --- | --- | --- |
 | Improvement | Tasks | Add Task by Resource form: a possibility to multiselect  of Tasks | – |
-| Improvement | Weighing Process | New settings: Range from mode, Confirm each weighting, Is precision Weight Enabled for Weighting. Click [here](https://learn.computec.one/docs/pdc/administrator-guide/setting-up-the-application/overview#processforce-settings) to find out more | – |
+| Improvement | Weighing Process | New settings: Range from mode, Confirm each weighting, Is precision Weight Enabled for Weighting. Click [this link](https://learn.computec.one/docs/pdc/administrator-guide/setting-up-the-application/overview#processforce-settings) to find out more | – |
 | Bug | Configuration | Can not open Crystal Report - no connection to SYSTEM | - |
 | Bug | Pick and Pack | It is not possible to issue two or more Items with the same Item Code | – |
 | Bug | Pick and Pack, Weighing Process | CompuTec ProcessForce Batches Status and logic supported in CompuTec PDC | SPDC-446 |
@@ -419,12 +419,12 @@ toc_max_heading_level: 2
 
 **Release Date - 2 July 2020**
 
-| Issue Type | Component | Release Note| Fix Version/s | Linked issue/s\*\* |
+| Issue Type | Component | Release Note | Fix Version/s | Linked issue/s\*\* |
 | --- | --- | --- | --- | --- |
 | Bug | Pick and Pack | Weight Wizard do not fill in some of the fields, which leads to inability to create related Pick Order | 3.93.12.1 (3.10.1.0) | SPDC-381 |
 | Story | Configuration | Cannot open Weight Wizard in some cases | 3.93.12.1 (3.10.1.0) | SPDC-374 |
 | Bug | Configuration | Cannot save Customization changes in AppEnging plug-in version | 3.93.12.1 (3.10.1.0) | SPDC-373 |
-| Bug | Configuration, Tasks | Resources with specific characters in its name, e.g. '/', '(', not supported | 3.93.12.1 (3.10.1.0) | - |
+| Bug | Configuration, Tasks | Resources with specific characters in its name, e.g. '/', '()', not supported | 3.93.12.1 (3.10.1.0) | - |
 | Improvement | Pick and Pack | Items managed by Serial Numbers are now supported in Pick Receipt and Pick Order | 3.93.12.1 (3.10.1.0) | - |
 | Improvement | Management Board | Management Board: performance improvements in CompuTec AppEngine plug-in version (previously opening of the Board took a long time and took longer with every next opening) | 3.93.12.1 (3.10.1.0) | - |
 | Bug | Pick and Pack | Cannot create Goods Receipt for Items that is not managed either by Serial Numbers, or Batches | 2.93.12.1 (2.10.1.0), <br/>3.93.12.1 (3.10.1.0) | - |
@@ -432,7 +432,7 @@ toc_max_heading_level: 2
 | Improvement | Pick and Pack | New block barcode prefix supported: Sequence + Operation (for identifying an Operation if there the operation is present on a Manufacturing Order more than once) | 2.93.12.1 (2.10.1.0), <br/>3.93.12.1 (3.10.1.0) | - |
 | Bug | Other | Weight Wizard: when the same Item is present more than one time in a Manufacturing Order, the document line cannot be identified properly (identifying only by Item Code). Now each line is identified by Sequence and Item Code | 2.93.12.1 (2.10.1.0), <br/>3.93.12.1 (3.10.1.0) | SPDC-343 |
 | Improvement | Other | Weight Wizard: more information on an Item when choosing it in the first step. There were: Item Code, Quantity; there is now: Sequence, Item Code, Item Description, Quantity | 2.93.12.1 (2.10.1.0), <br/>3.93.11.1 | SPDC-341 |
-| Improvement | Tasks | Downtime 2.0. Click [here](https://learn.computec.one/docs/pdc/user-guide/task-activities/downtime) to find out more | 2.93.12.1 (2.10.1.0), <br/>3.93.12.1 (3.10.1.0) | - |
+| Improvement | Tasks | Downtime 2.0. Click [this link](https://learn.computec.one/docs/pdc/user-guide/task-activities/downtime) to find out more | 2.93.12.1 (2.10.1.0), <br/>3.93.12.1 (3.10.1.0) | - |
 | Improvement | Time Booking | New main panel (and barcode) option: closing all of the Tasks present on the panel | 3.93.12.1 (3.10.1.0) | - |
 | Improvement | Configuration | CompuTec AppEngine version: Confirmation Panel, new field: Total Quantity (total of Setup and Run Quantity) | 3.93.12.1 (3.10.1.0) | - |
 

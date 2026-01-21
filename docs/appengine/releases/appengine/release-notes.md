@@ -11,7 +11,7 @@ sidebar_position: 1
 | Issue Type | Component/s | Release Note |
 | --- | --- | --- |
 | Fixed | AE Analytics | Fixed an issue where analytics content originating from SAP Business One did not switch to the user’s selected language. |
-| Fixed | AE UAA | Fixed an authentication issue between CompuTec AppEngine and the SAP Business One Web Client. The CompuTec WebUp browser extension now opens consistently without login errors. |
+| Fixed | AE UAA | Fixed an authentication issue affecting CompuTec AppEngine plugins accessed from the SAP Business One Web Client. The CompuTec WebUp browser extension now opens consistently without authentication errors. |
 
 ## CompuTec AppEngine 3.2601.2
 

@@ -6,7 +6,7 @@ toc_max_heading_level: 2
 # Release Notes
 
 :::info
-The latest installer is available to download fom [here](/docs/appengine/releases/appengine/download)
+The latest installer is available to download fom [this link](/docs/appengine/releases/appengine/download)
 :::
 
 ## CompuTec AppEngine 2.10.20.5
@@ -23,7 +23,7 @@ The latest installer is available to download fom [here](/docs/appengine/release
 
 | Issue Type | Component/s | Release Note | Related issue/s |
 | - | - | - | - |
-| Improvement | CompuTec AppEngine Core | Modification to Plugin Upgrade Mechanism |
+| Improvement | CompuTec AppEngine Core | Modification to Plugin Upgrade Mechanism | - |
 
 ## CompuTec AppEngine 2.10.18.103
 
@@ -31,7 +31,7 @@ The latest installer is available to download fom [here](/docs/appengine/release
 
 | Issue Type | Component/s | Release Note | Related issue/s |
 | - | - | - | - |
-| Bug |  Analytics | Fixed issue with settings permissions for variants. | - |
+| Bug | Analytics | Fixed issue with settings permissions for variants. | - |
 | Bug | CompuTec AppEngine Analytics | Fixed for import. | - |
 | Bug | CompuTec AppEngine Analytics | Fixed empty list of aggregation functions for chars. | - |
 | Bug | CompuTec AppEngine Background Processing | Fix for long start of AppEngine Service where there are lots of jobs to process. | - |
@@ -121,7 +121,7 @@ The latest installer is available to download fom [here](/docs/appengine/release
 | Improvement | CompuTec AppEngine Analytics | A new option in the table settings: auto-expand rows in a table tree (grouping). |
 | Improvement | CompuTec AppEngine Analytics | A new table setting: auto-refresh - it is possible to set a period for refreshing Tables, Table Trees, and Charts. Also possible to add a refresh timer. |
 | Bug | CompuTec AppEngine Administration Panel | Trace: the Sort button does not work. |
-| Bug |  Analytics | A change of the name template of file when exporting variant to Excel: "name of variant_20CompuTec AppEngine23-01-01T12:00:00". |
+| Bug | Analytics | A change of the name template of file when exporting variant to Excel: "name of variant_20CompuTec AppEngine23-01-01T12:00:00". |
 | Bug | CompuTec AppEngine Analytics | Reports are not visible for users who previously had no assigned Groups. |
 | Bug | CompuTec AppEngine Configuration | Job configuration: a change of Cron Expression is not always saved after an CompuTec AppEngine restart. |
 
@@ -173,12 +173,12 @@ After upgrading to this version, user credentials for Background Processing need
 | Issue Type | Component/s | Release Note | Related issue/s |
 | - | - | - | - |
 | Improvement | Architecture | CompuTec AppEngine now allows for managing variants. Code below [1] | - |
-| Improvement | Architecture | Companies that require an update are now marked with Button Update Required. This is important, especially after upgrading CompuTec AppEngine. <br/><br/>This structure allows managing custom VariantQuerySources. Code below [2]| - |
+| Improvement | Architecture | Companies that require an update are now marked with Button Update Required. This is important, especially after upgrading CompuTec AppEngine. <br/><br/>This structure allows managing custom VariantQuerySources. Code below [2] | - |
 | Improvement | Configuration | It is now possible to define preinstalled Variants and their Sources inside the plugin. | - |
 | Improvement | Plugins | The User Authorizations for build-in standard analytical variants are now added during the plugin database update. | - |
 | Bug | Configuration | The Choose company option is shown while logging in to CompuTec AppEngine from SAP Business One. | - |
 | Bug | OData | String values in filter parameters are parsed as dates in some cases. | - |
-| Bug | Plugins| An error occurs upon the first installation of a plugin in specific cases. | - |
+| Bug | Plugins | An error occurs upon the first installation of a plugin in specific cases. | - |
 
 <details>
 <summary>Click here to view Code [1]</summary>
@@ -382,7 +382,7 @@ Content-Type: application/json
 | Improvement | Architecture | The CompuTec AppEngine plugins are now available for SAP Business One Web Client. | - |
 | Improvement | Architecture | A minimal required CompuTec AppEngine version is now checked (if specified inside plugin manifest). <br/><br/>Example manifest entry: <br/><blockquote>AEVersion:  minVersion: 2.0.7.0.</blockquote> | - |
 | Improvement | Configuration | Plugins, Companies: now a related database name is displayed in the table, along with a company name. | - |
-| Bug | Architecture | Restarting CompuTec AppEngine from the Administrator panel does not always work (the CompuTec AppEngine service cannot be stopped in specific cases).| - |
+| Bug | Architecture | Restarting CompuTec AppEngine from the Administrator panel does not always work (the CompuTec AppEngine service cannot be stopped in specific cases). | - |
 | Bug | Background Processing | Batch Background Processes (AdditionalBatchDetailsCreatorEB, RestoreAditionalBatchDetails) cannot be activated. <br/><br/>Error message: Hours: <br/><blockquote>Value must be a number between 1 and 23 (all inclusive).</blockquote> | SPROC-13253 |
 | Bug | Configuration | Unassigned plugins are still available in Launchpad in some cases. | - |
 | Bug | Configuration | Upon deleting a database in configuration (Administration Panel) related dummy entries are not deleted from the assigned plugins in some cases. | - |
