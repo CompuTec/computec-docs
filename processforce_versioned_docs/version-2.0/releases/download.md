@@ -10,7 +10,7 @@ import LicenseServerReleases from "../license-server-releases.json";
 
 ## CompuTec ProcessForce Extension
 
-Here you can download all CompuTec ProcessForce versions for SAP Business One 10.0.
+Here you can download all CompuTec ProcessForce 2.0 versions for SAP Business One 10.0.
 
 :::note
     Read more about the system requirements, first installation, and the upgrade of CompuTec ProcessForce extension.
@@ -69,7 +69,7 @@ Here you can download all CompuTec ProcessForce versions for SAP Business One 10
 
 ## CompuTec ProcessForce API
 
-Here you can download CompuTec ProcessForce API installers.
+Here you can download CompuTec ProcessForce 2.0 API installers.
 
 :::note
     CompuTec ProcessForce API is not installed automatically with CompuTec ProcessForce 10.0. CompuTec ProcessForce extension doesn't need it installed as it uses the API .dll directly from its folder.

@@ -9,6 +9,16 @@ toc_max_heading_level: 2
     Installer is ready to download from [here](../../plugins/pdc/download.md).
 :::
 
+## CompuTec PDC 3.10.28.1
+
+**Release Date: 21 January 2026**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Fixed | PDC | Fixed an issue where PDC profiles could not be loaded in a newly installed PDC environment. The application no longer closes unexpectedly when loading PDC settings. |
+| Fixed | PDC | Fixed an issue where the **Add Tile Barcode** function did not work. |
+| Fixed | PDC | Added automatic population of the BOM and MO revisions from the **Manufacturing Order** next to the item code in **Issue for Production** and **Receipt from Production** transactions. |
+
 ## CompuTec PDC 3.10.27.1
 
 **Release Date – 07 October 2025**
