@@ -11,8 +11,7 @@ sidebar_position: 1
 | Issue Type | Component/s | Release Note |
 | --- | --- | --- |
 | Fixed | AE Analytics | Fixed an issue where analytics content originating from SAP Business One did not switch to the user’s selected language. |
-| Improved | AE Analytics | Redesigned the analytics reports list by adding **Description**, **Create Date**, and **Update Date** columns to improve usability and report management. |
-| Fixed | AE UAA | Fixed an issue where OpenID Connect (OIDC) authentication failed due to an invalid redirect URL configuration. |
+| Fixed | AE UAA | Fixed an authentication issue between CompuTec AppEngine and the SAP Business One Web Client. The CompuTec WebUp browser extension now opens consistently without login errors. |
 
 ## CompuTec AppEngine 3.2601.2
 
