@@ -47,7 +47,7 @@ export default function ContentWrapper(props: Props): ReactNode {
           <p>You are currently viewing documentation for <b>CompuTec ProcessForce 2.0</b>, which is still supported.</p>
           <p>We recommend upgrading to <b>CompuTec ProcessForce 3.0</b>, which is a plugin installed and managed through <b>CompuTec AppEngine 3.0</b>, built on <b>.NET 8</b>.</p>
           <p>However, please note that <b>CompuTec AppEngine 3.0</b> has a different architecture, and all CompuTec components, including the <b>CompuTec ProcessForce 3.0 plugin</b>, need to be updated together to ensure full compatibility.</p>
-          <p><b>Before starting your installation or upgrade process</b>, we strongly recommend reviewing the <a href="https://learn.computec.one/docs/appengine">CompuTec AppEngine 3.0</a> and <a href="https://learn.computec.one/docs/processforce/">CompuTec ProcessForce 3.0</a> documentation before starting your installation or upgrade process.</p>
+          <p><b>Before starting your installation or upgrade process</b>, we strongly recommend reviewing the <a href="https://learn.computec.one/docs/appengine">CompuTec AppEngine 3.0</a> and <a href="https://learn.computec.one/docs/processforce/">CompuTec ProcessForce 3.0</a> documentation.</p>
         </Admonition>
       )}
       <Content {...props} />
