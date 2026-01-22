@@ -2,11 +2,16 @@
 sidebar_position: 3
 ---
 
-# CompuTec PDC Plugin Release Notes
+# CompuTec PDC 4.0 Plugin Release Notes
 
-Below are the release notes for CompuTec PDC Plugin, highlighting new features, improvements, and bug fixes in this release.
+Here you can find the release notes for CompuTec PDC 4.0 Plugin, highlighting new features, improvements, and bug fixes.
 
-## CompuTec PFI 4.2510.1
+:::note[info]
+You can find all [download links](https://learn.computec.one/docs/appengine/2.0/releases/plugins/pdc/download) and [release notes](https://learn.computec.one/docs/appengine/2.0/releases/plugins/pdc/release-notes) for the latest available CompuTec PDC 3.0 versions in CompuTec PDC 2.0 documentation.  
+However, we strongly recommend using CompuTec PDC 4.0 Plugin together with CompuTec AppEngine 3.0 to benefit from the latest features, performance improvements, and ongoing support.
+:::
+
+## CompuTec PDC 4.2510.1
 
 **Release Date - 29 October 2025**
 

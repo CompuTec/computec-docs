@@ -4,7 +4,12 @@ sidebar_position: 3
 
 # CompuTec ProcessForce Plugin
 
-Below are the release notes for CompuTec ProcessForce Plugin, highlighting new features, improvements, and bug fixes in this release.
+Here you can find the release notes for **CompuTec ProcessForce Plugin**, highlighting new features, improvements, and bug fixes.
+
+:::note[info]
+You can find all download links and release notes for the latest available **CompuTec ProcessForce 10.0** versions in [CompuTec ProcessForce 2.0 documentation](https://learn.computec.one/docs/processforce/2.0/releases/download).  
+However, we strongly recommend using **CompuTec ProcessForce Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
+:::
 
 ## CompuTec.ProcessForce 3.2601.1
 
