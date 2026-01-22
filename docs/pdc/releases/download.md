@@ -7,7 +7,7 @@ import Releases93 from "../releases-93.json";
 
 # Download
 
-:::danger
+:::danger[important]
     Please be sure to check and fulfill [the requirements](../administrator-guide/installation/requirements.md) before installing CompuTec PDC.
 :::
 
@@ -31,16 +31,27 @@ import Releases93 from "../releases-93.json";
     You can find a guide on how to install CompuTec PDC application [here](../administrator-guide/installation/first-installation.md).
 :::
 
-:::danger
+:::danger[important]
     Due to the major change in the new version of the application (1.2.2.1 version), please reload terminal licenses. You can do that by clicking Reset Terminals button in License Terminal window in **CompuTec License Server** application. Reassign terminal licenses after that.
 :::
 
 ## Releases
 
-:::danger
-    As of the following releases: **3.10.6.1** (related ProcessForce version: 10.0 Release 6 (R6)), **3.93.15.1** (related CompuTec ProcessForce version: 9.3 PL14 Release 2 (R2)) **CompuTec PDC is released as an CompuTec AppEngine plugin only**.
+:::danger[important]
+  Starting with **CompuTec PDC version 3.10.6.1** (for CompuTec ProcessForce 10.0 Release 6 (R6)) and version **3.93.15.1** (for CompuTec ProcessForce 9.3 PL14 Release 2 (R2)), CompuTec PDC is delivered **exclusively as a CompuTec AppEngine plugin**.  
 
-    Browse new versions [here](/docs/appengine/2.0/releases/plugins/pdc/download).
+  Depending on the **CompuTec AppEngine** version you are using, refer to the following documentation:
+  
+- **CompuTec AppEngine 2.0**
+  
+  - Download links for the **CompuTec PDC 3.0 Plugin** are available in [here](https://learn.computec.one/docs/appengine/2.0/releases/plugins/pdc/download).  
+  - Release notes for the **CompuTec PDC 3.0 Plugin (AppEngine 2.0)** are available [here](https://learn.computec.one/docs/appengine/2.0/releases/plugins/pdc/release-notes).  
+
+- **CompuTec AppEngine 3.0**
+  
+  - If you want to use the **CompuTec PDC 4.0 Plugin**, click [this link](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/plugins/overview).
+  - Release notes for the **CompuTec PDC 4.0 Plugin (AppEngine 3.0)** are available [here](https://learn.computec.one/docs/pdc/releases/pdc).
+
 :::
 
 ### For 10.0
