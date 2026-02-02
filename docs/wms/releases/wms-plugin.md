@@ -8,6 +8,44 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 
 ---
 
+## CompuTec WMS Plugin 3.2601.1
+
+**Release Date: 29 January 2026**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Improved | Client Android, Client Windows | You can now edit serial numbers during Goods Receipt Purchase Order (GRPO) creation across all WMS clients. Changes are saved correctly, giving users the same flexibility as in SAP. |
+| New | Client | Added the ability to move content between existing Storage Units (SU), not only to newly created ones, reducing unnecessary SU creation. |
+| Fixed | Client | Fixed delivery processing so scanning a SU no longer triggers a warehouse mismatch error when the SU belongs to the correct document warehouse. |
+| Fixed | Android Client | **Stock Transfer** scanning now behaves correctly when scanning batches outside FIFO. **Quantity** screen opens directly, speeding up transfers. |
+| New | Server | Added support for returns from **AR Invoice** to **Credit Note**, expanding return processing scenarios in WMS. |
+| Fixed | Client | Fixed errors when creating **Delivery** from **Pick List**, improving reliability in outbound processing. |
+| Improved | Server | GRPO from **Purchase Order** now allows changing the warehouse for the whole document using the top bar, avoiding item-by-item corrections. |
+| Improved | Server | **Stock Transfer** now skips the **Put Away** screen when destination warehouse selection is not required, reducing unnecessary steps. |
+| Improved | Server | **Inventory Counting** preview list now supports filtering by warehouse and bin, making large inventories easier to review. |
+| Fixed | Client | Fixed incorrect quantities when saving GRPO documents as drafts and reopening them later. |
+| Improved | Client | **Delivery** from **Sales Order** now displays allocated batches only once, even if they exist in multiple bins, improving clarity. |
+| Fixed | Server | **WMS Settings** screen no longer crashes when CompuTec AppEngine restarts or refresh is pressed during restart. |
+| Fixed | Server | Returns from GRPO with empty serial numbers now work correctly, allowing serial selection and saving without errors. |
+| Improved | Server | Added query logging for **WMS 3.0**, making troubleshooting and performance analysis easier for administrators. |  
+| Improved | Server | **Delivery Line UDFs** can now be shown directly in the main screen, improving data visibility for users. |
+| Improved | Client | Improved readability in **Sales BOM** screens by adjusting background colors for selected positions. |
+| Fixed | Android Client | Improved stability when using WMS over VPN, reducing unexpected disconnects. |
+| New | Client | Added an option to skip the final confirmation screen in **Quick SU Transfer**, speeding up repetitive transfers. |
+| New | Client | **Quick SU Transfer** now supports fixed destination selection and configurable scanning behavior, giving users more control and fewer mistakes. |
+| Improved | Server | Document saving performance in WMS 3.0 was significantly improved, reducing save times compared to earlier versions. |
+| Fixed | Client | Fixed **SU Info** so scanning the SU code correctly finds and adds the SU without errors. |
+| Fixed | Client | Validation during SU creation now works correctly when scanning item, barcode, and quantity together. |
+| Improved | Client | You can now set and save **Tax Date** on GRPO documents created from drafts, improving accounting accuracy. |
+| Fixed | Server | **Stock Transfer** with ``Hide SU`` enabled now correctly accepts SU and SSCC scans. |
+| Fixed | Server | When receiving from multiple **Purchase Orders**, WMS now always asks which PO line to use, preventing incorrect allocations. |
+| Fixed | Client | Fixed incorrect behavior in **Pick & Pack** where available quantities were miscalculated for multiple identical lines. |
+| Fixed | Client | Picking now validates scanned barcodes against the expected item, preventing accidental picking of wrong items. |
+| Fixed | Client | Searching by batch number now works correctly in **SU Disassembly** screens. |
+| Fixed | Client | Fixed errors when displaying or editing **Delivery** document UDFs. |
+| Fixed | Android Client | **Barcode Decoder** rules now work correctly in **Stock Transfer** for existing SU screens. |
+| Fixed | Server | Fixed UI issues in **Stock Counting** where checkboxes were overlapping, improving usability. |
+
 ## CompuTec WMS Plugin 3.2512.1
 
 **Release Date - 31 December 2025**
