@@ -4,6 +4,51 @@ sidebar_position: 1
 
 # CompuTec AppEngine Release Notes
 
+## CompuTec AppEngine 3.2601.4
+
+**Release Date: 28 January 2026**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Fixed | Core | Fixed an issue where updating the ViewVariant name using API not always save changes. Now the changes to a variant name are saved correctly and no longer revert. |
+| Fixed | Common Functions | **Form Settings** now open the correct section when working with batch-managed items, saving time and avoiding confusion. |
+| Improved | AE Analytics | Analytics labels were updated to be clearer and easier to understand, improving overall usability. |
+| Improved | MOWizard | You can now show, hide, and freeze columns in **Adjustment and Scheduling** screens for easier data review. |
+| Improved | PFI | Added a dedicated authorization to restrict import functionality, allowing some users to load samples only. |
+| Improved | AE Analytics | Added a **Refresh** button that lets you quickly reload analytics data without reopening the report. |
+| Improved | PDC | **Quantity and Time Registration** is easier to configure, with better scanner behavior options and cleaner filters. |
+| Fixed | AE Administration Panel | **Background jobs** are now reliable, with correct filters, accurate job status, and up-to-date information. |
+| Improved | AE Analytics | You can now turn analytics filters on or off, giving you more control over report behavior. |
+| Improved | AE Analytics | Analytics actions can now preview image and PDF results, so you can see files instantly without downloading them. |
+| Fixed | AE Configuration | Fixed a HANA configuration error that could block system checks, improving system stability. |
+| Improved | AE Analytics | You can now sort reports instantly by clicking column headers. |
+| Fixed | AE Analytics | Actions no longer auto-assign supported entities, giving you full control over action setup. |
+| Fixed | AE Analytics | Chart settings in variants now save and behave correctly, avoiding repeated reconfiguration. |
+| Improved | AE Analytics | Added support for filtering analytics data using the ``CURRENT_USER`` variable. |
+| Fixed | AE Analytics | You can now freely control aggregation settings for numeric fields without forced selections. |
+| Fixed | AE Analytics | All numeric field types (**Amount**, **Quantity**, **Percent**, etc.) now work correctly in analytics sources. |
+| Fixed | AE Configuration | Fixed an issue where refreshing the **Plugin Store** page resulted in a white screen and required re-login. |
+| Changed | AE Launchpad | Service worker activation was improved to provide more stable loading and updates. |
+| Improved | AE Analytics | Redesigned the analytics reports list and added **Description**, **Created Date**, and **Updated Date** columns. |
+| Improved | AE Analytics | **Printing actions** now use clearer names and descriptions, so it’s easier to choose the right action. |
+| Improved | AE Analytics | **Date filters*** now support both date and time, enabling more precise reporting. |
+| Fixed | AE Analytics | Translations from plugins are now handled correctly in analytics actions, improving multi-language support. |
+| Improved | AE Analytics | A new **Source Plugin** column helps you quickly see where each action originates. |
+| Improved | AE Analytics | Added support for filtering by the ``CURRENT_DATE`` variable in **Source Manager**. |
+| Fixed | BT360 | Returning from **Trace Analysis** now refreshes the list automatically, so you always see current data. |
+| Fixed | AE Analytics | Fixed an issue where the ComuTec AppEngine logo button did not work correctly in form mode. |
+| Improved | AE Analytics | Improved drill-down navigation, including better filter mapping, variant handling, and navigation behavior. |
+| Improved | AE Analytics | Variants can now be displayed as a list, making it easier to compare and select views. |
+| Fixed | AE Core | When activating a company, clear error messages are now shown if database credentials are incorrect. |
+| Fixed | AE Core | Fixed an issue preventing deletion of companies that were active but no longer available in configuration. |
+| Improved | AE Analytics | Filters now suggest values based on available data, helping you build reports faster and more accurately. |
+| Fixed | AE Analytics | The **Back** button in **Analytics** now returns you to the previous screen, instead of sending you to **Computec AppEngine Launchpad**. |
+| Fixed | AE Core | Fixed a login issue that could prevent users from signing in during high system activity. |
+| Fixed | AE Analytics | Saving a **View** now correctly stores all related settings, including variants and drill-downs. |
+| Improved | AE Analytics | You can now reorder filters, making complex reports easier to use. |
+| Fixed | AE Administration Panel | Fixed an error during system discovery, improving overall platform reliability. |
+| Fixed | AE Analytics | Fixed an error preventing variant name updates from being saved correctly. |
+
 ## CompuTec AppEngine 3.2601.3
 
 **Release Date: 21 January 2026**
