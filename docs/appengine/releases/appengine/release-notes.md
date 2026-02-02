@@ -28,7 +28,7 @@ sidebar_position: 1
 | Fixed | AE Analytics | You can now freely control aggregation settings for numeric fields without forced selections. |
 | Fixed | AE Analytics | All numeric field types (**Amount**, **Quantity**, **Percent**, etc.) now work correctly in analytics sources. |
 | Fixed | AE Configuration | Fixed an issue where refreshing the **Plugin Store** page resulted in a white screen and required re-login. |
-| Changed | AE Launchpad | Service worker activation was improved to provide more stable loading and updates. |
+| Changed | AE Launchpad | Fixed issues where new features or updates weren't visible immediately after Computec AppEngine or plugin update. Changes now refresh automatically, so you no longer need to clear your browser's cache. |
 | Improved | AE Analytics | Redesigned the analytics reports list and added **Description**, **Created Date**, and **Updated Date** columns. |
 | Improved | AE Analytics | **Printing actions** now use clearer names and descriptions, so it’s easier to choose the right action. |
 | Improved | AE Analytics | **Date filters*** now support both date and time, enabling more precise reporting. |
