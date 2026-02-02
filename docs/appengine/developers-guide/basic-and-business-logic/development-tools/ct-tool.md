@@ -141,7 +141,44 @@ Use:
 ```batch
 dotnet ct install -v hanadev:40000 -c SBO_DB  -u manager -p "password" -d"DEV@hanadev:30013" -t dst_HANADB "CT.VehOne\bin\Debug\net8.0\CT.VehOne.dll"
 ```
+## Checking the connection to the database 
+To check the connection to the database, please use
 
+```batch
+dotnet ct Connect
+```
+Options:
+
+- **-s** - Sld Server : Required.
+- **-c** - Company Name.
+- **-i** - Company Id.
+- **-u** - User Name : Required.
+- **-p** - Password : Required.
+- **-d** - Database Server : Required.
+- **-t** - ServerType dst_HANADB,dst_MSSQL2016,dst_MSSQL2019,dst_MSSQL2022,etc : Required.
+
+Use:
+
+```batch
+dotnet ct Connect -v hanadev:40000 -c SBO_DB  -u manager -p "password" -d"DEV@hanadev:30013" -t dst_HANADB
+```
+## Getting the information from SLD server
+To check the sld settings, please use the command below: 
+
+```batch
+dotnet ct Sld
+```
+Options:
+
+- **-s** - Sld Server address and port: Required.
+- **-u** - UserName eg B1SiteUser: Required.
+- **-p** - Password: Required.
+
+Use:
+
+```batch
+dotnet ct Sld -s hanadev:40000 -u B1SiteUser -p "password"
+```
 ## Creating NuGet Package for Plugin Repository
 
 To push a NuGet package to the plugin repository, use:
