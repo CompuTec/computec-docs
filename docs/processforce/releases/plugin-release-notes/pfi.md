@@ -8,6 +8,14 @@ Below are the release notes for CompuTec Data Import & Export (PFI) Plugin, high
 
 ---
 
+## CompuTec PFI 3.2601.1
+
+**Release Date - 29 January 2026**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Improvement | PFI | Added a dedicated authorization to restrict import functionality, allowing some users to load samples only. |
+
 ## CompuTec PFI 3.2510.1
 
 **Release Date - 29 October 2025**

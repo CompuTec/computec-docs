@@ -30,7 +30,7 @@ sidebar_position: 1
 | Fixed | AE Configuration | Fixed an issue where refreshing the **Plugin Store** page resulted in a white screen and required re-login. |
 | Changed | AE Launchpad | Fixed issues where new features or updates weren't visible immediately after Computec AppEngine or plugin update. Changes now refresh automatically, so you no longer need to clear your browser's cache. |
 | Improved | AE Analytics | Redesigned the analytics reports list and added **Description**, **Created Date**, and **Updated Date** columns. |
-| Improved | AE Analytics | **Printing actions** now use clearer names and descriptions, so it’s easier to choose the right action. |
+| Improved | AE Analytics, CTLabel | **Printing actions** now use clearer names and descriptions, so it’s easier to choose the right action. |
 | Improved | AE Analytics | **Date filters*** now support both date and time, enabling more precise reporting. |
 | Fixed | AE Analytics | Translations from plugins are now handled correctly in analytics actions, improving multi-language support. |
 | Improved | AE Analytics | A new **Source Plugin** column helps you quickly see where each action originates. |

@@ -6,6 +6,14 @@ sidebar_position: 11
 
 Below are the release notes for CompuTec Planning & Bottleneck Scheduling (MO Wizard) Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec MOWizard 3.2601.2
+
+**Release Date: 29 January 2026**
+
+| Issue Type | Components | Release Note |
+| --- | --- | --- |
+| Improved | MOWizard | You can now show, hide, and freeze columns in **Adjustment and Scheduling** screens for easier data review. |
+
 ## CompuTec MOWizard 3.2601.1
 
 **Release Date: 13 January 2026**
