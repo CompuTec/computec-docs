@@ -10,7 +10,7 @@ sidebar_position: 1
 
 | Issue Type | Component/s | Release Note |
 | --- | --- | --- |
-| Fixed | Core | Fixed an issue where updating the ViewVariant name using API not always save changes. Now the changes to a variant name are saved correctly and no longer revert. |
+| Fixed | Core | Fixed an issue where updating the **ViewVariant** name using API not always save changes. Now the changes to a variant name are saved correctly and no longer revert. |
 | Fixed | Common Functions | **Form Settings** now open the correct section when working with batch-managed items, saving time and avoiding confusion. |
 | Improved | AE Analytics | Analytics labels were updated to be clearer and easier to understand, improving overall usability. |
 | Improved | MOWizard | You can now show, hide, and freeze columns in **Adjustment and Scheduling** screens for easier data review. |
