@@ -11,6 +11,36 @@ You can find all download links and release notes for the latest available **Com
 However, we strongly recommend using **CompuTec ProcessForce Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec.ProcessForce 3.2601.2
+
+**Release Date: 29 January 2026**
+
+| Issue Type | Components | Release Note |
+| --- | --- | --- |
+| Fixed | MRP | You can now run MRP scenarios without system errors, making planning runs more reliable. |
+| Improved | MRP | MRP now includes past forecast data, resulting in more accurate demand planning and recommendations. |
+| Fixed | Bill of Materials, Manufacturing Order | Operation sequences are now consistent across **Operations** and **Scrap** tabs, reducing confusion and manual checks. |
+| Fixed | Production Costing | Costing history is now preserved correctly during roll-over, keeping previous records and removing only the oldest when limits are reached. |
+| Improved | Scheduling | Selecting multiple operations in the **Resource Planning Board** is now much faster, even with a large number of operations. |
+| Fixed | Bill of Materials | Fixed an error during **BOM** import that could block processing when operation codes were missing. |
+| Fixed | AppEngine, WMS | Batch status is now applied correctly based on **Item Details**, **Item Group**, or **General Settings**, ensuring consistent behavior across documents. |
+| Fixed | Gantt Chart | Fixed an error that could occur when quickly selecting or deselecting **Manufacturing Orders** in the **Gantt Chart**. |
+| Fixed | Quality Control | Fixed an error when searching test protocols by item code, allowing searches to work as expected. |
+| Improved | Quality Control | The system now records a message when a QC document is created automatically, improving visibility and audit tracking. |
+| Fixed | Quality Control | Test protocols now adapt correctly when batch or serial management changes, and automatic QC creation works as expected. |
+| Improved | API | **Material Shortage Snapshot** results are now cleaner. |
+| Improved | API, AppEngine | A new ``Material Shortage Projection`` endpoint helps planners anticipate future shortages earlier. |
+| Fixed | Manufacturing Order | You can now display the **Price** field when closing **Manufacturing Orders**, while still respecting user authorizations. |
+| Fixed | Items | **Available-to-Promise** now shows correct **Manufacturing Order** references and no longer assigns MO numbers to **Sales Orders**. |
+| Fixed | Manufacturing Order | Adding remarks to operations no longer triggers an unnecessary rescheduling pop-up. |
+| Fixed | API, PDC | **Open Quantity** values in the **Consumption Preview** endpoint are now calculated correctly and never display negative values. |
+| Fixed | Scheduling | Rescheduling one operation no longer unintentionally moves related operations, giving planners better control. |
+| Fixed | MRP | Fixed an issue where some MRP scenarios could run indefinitely and not complete. |
+| Fixed | Batches | **Additional Batch Details** are now created in the background, improving performance and user experience. |
+| Improved | Manufacturing Order | When a **Sales Order** delivery date changes, users are now prompted to update linked **Manufacturing Orders** to keep dates aligned. |
+| Improved | Manufacturing Order | Required and recommended dates are now updated even for finished or closed **Manufacturing Orders**. |
+| Fixed | Scheduling | **Scheduling Board** now displays correct document and Sales Order references, making production tracking clearer. |
+
 ## CompuTec.ProcessForce 3.2601.1
 
 **Release Date: 8 January 2026**
