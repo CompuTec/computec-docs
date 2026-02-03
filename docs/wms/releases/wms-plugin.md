@@ -16,7 +16,7 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 | - | - | - |
 | Improved | Client Android, Client Windows | You can now edit serial numbers during Goods Receipt Purchase Order (GRPO) creation across all WMS clients. Changes are saved correctly, giving users the same flexibility as in SAP. |
 | New | Client | Added the ability to move content between existing Storage Units (SU), not only to newly created ones, reducing unnecessary SU creation. |
-| Fixed | Client | Fixed delivery processing so scanning a SU no longer triggers a warehouse mismatch error when the SU belongs to the correct document warehouse. |
+| Fixed | Client | Fixed delivery processing so scanning a SU no longer triggers a warehouse mismatch error when the ``Hide scanned SU on the list`` option was enabled. |
 | Fixed | Android Client | **Stock Transfer** scanning now behaves correctly when scanning batches outside FIFO. **Quantity** screen opens directly, speeding up transfers. |
 | New | Server | Added support for returns from **AR Invoice** to **Credit Note**, expanding return processing scenarios in WMS. |
 | Fixed | Client | Fixed errors when creating **Delivery** from **Pick List**, improving reliability in outbound processing. |
@@ -24,17 +24,16 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 | Improved | Server | **Stock Transfer** now skips the **Put Away** screen when destination warehouse selection is not required, reducing unnecessary steps. |
 | Improved | Server | **Inventory Counting** preview list now supports filtering by warehouse and bin, making large inventories easier to review. |
 | Fixed | Client | Fixed incorrect quantities when saving GRPO documents as drafts and reopening them later. |
-| Improved | Client | **Delivery** from **Sales Order** now displays allocated batches only once, even if they exist in multiple bins, improving clarity. |
 | Fixed | Server | **WMS Settings** screen no longer crashes when CompuTec AppEngine restarts or refresh is pressed during restart. |
 | Fixed | Server | Returns from GRPO with empty serial numbers now work correctly, allowing serial selection and saving without errors. |
 | Improved | Server | Added query logging for **WMS 3.0**, making troubleshooting and performance analysis easier for administrators. |  
 | Improved | Server | **Delivery Line UDFs** can now be shown directly in the main screen, improving data visibility for users. |
-| Improved | Client | Improved readability in **Sales BOM** screens by adjusting background colors for selected positions. |
+| Improved | Client | **Sales BOM (Bill of Material)** headers are now greyed out, so warehouse users can easily see which items should be picked and which are informational only. |
 | Fixed | Android Client | Improved stability when using WMS over VPN, reducing unexpected disconnects. |
 | New | Client | Added an option to skip the final confirmation screen in **Quick SU Transfer**, speeding up repetitive transfers. |
 | New | Client | **Quick SU Transfer** now supports fixed destination selection and configurable scanning behavior, giving users more control and fewer mistakes. |
 | Improved | Server | Document saving performance in WMS 3.0 was significantly improved, reducing save times compared to earlier versions. |
-| Fixed | Client | Fixed **SU Info** so scanning the SU code correctly finds and adds the SU without errors. |
+| Fixed | Client | Fixed **SU Info** so warehouse users can scan an SU code to add one Storage Unit into another without errors. |
 | Fixed | Client | Validation during SU creation now works correctly when scanning item, barcode, and quantity together. |
 | Improved | Client | You can now set and save **Tax Date** on GRPO documents created from drafts, improving accounting accuracy. |
 | Fixed | Server | **Stock Transfer** with ``Hide SU`` enabled now correctly accepts SU and SSCC scans. |
