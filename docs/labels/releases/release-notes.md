@@ -14,21 +14,21 @@ Below are the release notes for CompuTec Labels Printing Manager, highlighting n
 
 **Release Date – 01 December 2025**
 
-| Issue Type | Component/s |Reference Support Ticket | Release Note |
+| Issue Type | Component/s | Reference Support Ticket | Release Note |
 | --- | --- | --- | --- |
 | Improvement | Printing Manager Application | SLABE-1055 | The ‘Receipt from Production’ object has now been added to the Edit Settings/object list. |
 | Improvement | Printing Manager Application | SLABE-965 | The ‘Serial Number Details’ object has now been added to the Edit Settings/object list. |
 | Bug | Printing Manager Application | SWMS-3992 | Templates do not appear in WMS > Warehouse Info > Printing Options. |
 | Bug | Printing Manager Application | SLABE-1067 | The plus (+) sign in the value returned by the query is being replaced with a space character. |
 | Bug | Printing Manager Application | SLABE-1042 | When a user adds a new field to the query with the alias ItemName, the system returns this parameter as empty in the mapping table. |
-| Bug |Gateway, WebService | - | Connection stability between CompuTec Labels and CompuTec Gateway has been improved. |
+| Bug | Gateway, WebService | - | Connection stability between CompuTec Labels and CompuTec Gateway has been improved. |
 | Bug | Printing Manager Application | - | An unexpected duplication of parameters has occurred in the Mapping Table. |
 
 ### CompuTec Labels Printing Manager 4.8.4
 
 **Release Date – 26 June 2025**
 
-| Issue Type | Component/s |Reference Support Ticket | Release Note |
+| Issue Type | Component/s | Reference Support Ticket | Release Note |
 | --- | --- | --- | --- |
 | Improvement | Printing Manager Application | - | Printing Rules and Mapping Tables windows have been significantly optimized for improved performance. |
 
@@ -36,7 +36,7 @@ Below are the release notes for CompuTec Labels Printing Manager, highlighting n
 
 **Release Date – 05 June 2025**
 
-| Issue Type | Component/s |Reference Support Ticket | Release Note |
+| Issue Type | Component/s | Reference Support Ticket | Release Note |
 | --- | --- | --- | --- |
 | Bug | Printing Manager Application | - | The performance of the PDF attachment process to SAP documents has been improved. |
 | Bug | Printing Manager Application | - | An error occurs during the installation of database objects. |
@@ -45,7 +45,7 @@ Below are the release notes for CompuTec Labels Printing Manager, highlighting n
 
 **Release Date – 14 May 2025**
 
-| Issue Type | Component/s |Reference Support Ticket | Release Note |
+| Issue Type | Component/s | Reference Support Ticket | Release Note |
 | --- | --- | --- | --- |
 | Improvement | Printing Manager Application | - | The following object has been added to print serial label through CompuTec WMS application: CT_WMS_SERIALINFOSAP. |
 | Improvement | Printing Manager Application | SLABE-522 | Label printing for catch weight operations is now supported through CompuTec WMS. |
@@ -57,10 +57,10 @@ Below are the release notes for CompuTec Labels Printing Manager, highlighting n
 
 **Release Date – 24 March 2025**
 
-| Issue Type | Component/s |Reference Support Ticket | Release Note |
+| Issue Type | Component/s | Reference Support Ticket | Release Note |
 | --- | --- | --- | --- |
 | Bug | Printing Manager Application | SLABE-987 | The document attached via the report rule does not appear in the SAP UI in certain instances. |
-| Bug | Printing Manager Application | SVILL-52 |Default query of Goods Receipt object isn't correct. |
+| Bug | Printing Manager Application | SVILL-52 | Default query of Goods Receipt object isn't correct. |
 | Bug | Printing Manager Application | - | A button has been added on Setup Wizard to auto-fill credential. |
 | Improvement | Printing Manager Application | - | Saving button in Printer Properties has been replaced. |
 | Improvement | Printing Manager Application | SLABE-992 | Dash char ![dash](./media/dash.png) in database name causes error exception. |
@@ -69,7 +69,7 @@ Below are the release notes for CompuTec Labels Printing Manager, highlighting n
 
 **Release Date – 26 February 2025**
 
-| Issue Type | Component/s |Reference Support Ticket | Release Note |
+| Issue Type | Component/s | Reference Support Ticket | Release Note |
 | --- | --- | --- | --- |
 | Improvement | Printing Service | SLABE-898 | Occasional misordering of request processing may occur. |
 | Improvement | Printing Service | SLABE-984 | The printing service seldom encounters the following error message: HRESULT: 0x8007045A. |
@@ -78,12 +78,12 @@ Below are the release notes for CompuTec Labels Printing Manager, highlighting n
 
 **Release Date – 21 February 2025**
 
-| Issue Type | Component/s |Reference Support Ticket | Release Note |
+| Issue Type | Component/s | Reference Support Ticket | Release Note |
 | --- | --- | --- | --- |
 | Bug | Printing Manager Application | SLABE-979 | Card Type filter parameter is not considered by the application while picking Reports to print. |
 | Bug | Printing Manager Application | - | The application does not account for the printer statically defined in the object query. |
-| Bug | Printing Service | - |Goods Receipt created based on Pick Receipt doesn't create request in the application |
-| Bug | Printing Service | SLABE-972 |CT Labels report printing doesn't support using query parameters in the custom rule. |
+| Bug | Printing Service | - | Goods Receipt created based on Pick Receipt doesn't create request in the application |
+| Bug | Printing Service | SLABE-972 | CT Labels report printing doesn't support using query parameters in the custom rule. |
 
 ## CompuTec Labels Plugin (PF 3.0)
 
@@ -91,7 +91,7 @@ Below are the release notes for CompuTec Labels Printing Manager, highlighting n
 
 **Release Date – 29 September 2025**
 
-| Issue Type | Component/s |Reference Support Ticket | Release Note |
+| Issue Type | Component/s | Reference Support Ticket | Release Note |
 | --- | --- | --- | --- |
 | Improvement | AE Plugins | - | Integrate AE Plugins with Weblate. |
 | Bug | Core | - | Issue with ProcessForce Scheduling Module. |
