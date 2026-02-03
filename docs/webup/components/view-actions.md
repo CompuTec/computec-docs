@@ -118,15 +118,15 @@ Here’s how to do this step by step:
 
 5. In **Details**, add the action name.
 
-   ![screen showing where to add the action name](./media/14-view-actions-automations-add-action.png)
+   ![screen showing where to add the action name](./media/15-view-actions-automations-name.png)
 
 6. In **Triggers**, choose `After` from the **On Update** list.
 
-    ![screen showing how to choose action triggers](./media/15-view-actions-automations-name.png)
+    ![screen showing how to choose action triggers](./media/16-view-actions-automations-trigger.png)
 
 7. In **Action Script**, paste your script.
 
-   ![screen showing how to add an action script](./media/14-view-actions-automations-add-action.png)
+   ![screen showing how to add an action script](./media/17-view-actions-automations-script.png)
 
 8. Done! Now you can **Preview** and **Activate** your action.
 
