@@ -4,6 +4,58 @@ sidebar_position: 2
 
 # Troubleshooting
 
+## Problem: CompuTec AppEngine Fails to Start – Event ID 7000 or 7009
+
+On some Windows systems, **CompuTec AppEngine** may fail to start and **Windows Event Viewer** logs ``Event ID 7000`` or ``Event ID 7009``. These errors usually indicate that the **Windows Service Control Manager** stopped waiting for the service to start because it exceeded the allowed startup time.
+
+You may see one or more of the following:
+
+- CompuTec AppEngine does not start automatically after a system reboot.
+- The service fails shortly after startup.
+- You can find the following logs in **Windows Event Viewer**:  
+  - **Event ID 7000**: ``The service failed to start.``  
+    ![System error](..\media\troubleshooting\01-ae-troubleshooting.png)  
+  - **Event ID 7009**: ``A timeout was reached while waiting for the service to connect.``  
+    ![System error](..\media\troubleshooting\01-ae-troubleshooting.png)
+
+## Solution
+
+One of the workable solutions is to increase **Windows Service Startup Timeout**.  
+
+:::warning[important]
+This change affects how Windows handles **all services during startup**. You must discuss and approve it with your system administrator before proceeding. Apply this solution **at your own risk**.
+:::
+
+Windows uses a registry value called **ServicesPipeTimeout** to determine how long it waits for a service to start. Increasing this timeout can allow **CompuTec AppEngine** enough time to initialize successfully.  
+
+Here’s a step-by-step guide on how to do it:
+
+1. Run **Registry Editor** as an administrator.
+
+    ![System error](..\media\troubleshooting\tr0-ae.png)
+
+2. Navigate to: ``HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control``
+
+    ![System error](..\media\troubleshooting\tr01-ae.png)
+
+3. Look for a **DWORD** value named: **ServicesPipeTimeout**.
+
+    :::info[NOTE]
+    If it doesn't exist, create it:
+    - **Right-click** > **New** > **DWORD (32-bit) Value**.
+        ![System error](..\media\troubleshooting\tr02-ae.png)
+    - Name it ``ServicesPipeTimeout``.
+    :::
+
+4. Double-click **ServicesPipeTimeout**.
+5. Enter the value: ``120000`` for 2 minutes, or ``180000`` for 3 minutes, and select **Decimal**.
+
+    ![System error](..\media\troubleshooting\tr03-ae.png)
+
+6. Click **OK** and close **Registry Editor**.
+7. Restart the system to apply the change.
+8. Done! Now you can start **CompuTec AppEngine** again.
+
 ## Problem: Hyper-V Reserving AppEngine Default Port 54001
 
 On some Windows systems, **Hyper-V** networking may reserve **TCP ports** that **CompuTec AppEngine** needs to start. When this happens, CompuTec AppEngine can't use its default **port 54001**, and the service doesn't start.
