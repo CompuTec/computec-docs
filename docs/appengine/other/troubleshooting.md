@@ -14,9 +14,9 @@ You may see one or more of the following:
 - The service fails shortly after startup.
 - You can find the following logs in **Windows Event Viewer**:  
   - **Event ID 7000**: ``The service failed to start.``  
-    ![System error](..\media\troubleshooting\01-ae-troubleshooting.png)  
+    ![System error](..\media\troubleshooting\tr-ae-e1.png)  
   - **Event ID 7009**: ``A timeout was reached while waiting for the service to connect.``  
-    ![System error](..\media\troubleshooting\01-ae-troubleshooting.png)
+    ![System error](..\media\troubleshooting\tr-ae-e2.png)
 
 ## Solution
 
