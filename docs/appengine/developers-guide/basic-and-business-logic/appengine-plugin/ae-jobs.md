@@ -14,6 +14,9 @@ Jobs are tasks that execute within the CompuTec AppEngine environment, designed 
 
 Event-based jobs react to specific SAP Business One events occurring within the company database. These jobs rely on SAP Business One event data and standard message information:
 
+- **JobId**: Unique job ID (required)
+- **JobName**: Job name
+- **Description**: Job description
 - **ActionType**: A, U, C, D
 - **ContentType**: SAP object type
 - **Key**: Key value
@@ -22,7 +25,7 @@ Event-based jobs react to specific SAP Business One events occurring within the 
 - **UserId**: User ID
 - **UseRegex**: Boolean inidcator if true then `ContentType` is RegexExpression eg:`^(20|59|60)$'`
 
-To create an Event-Based Job, use the `EventBusJob` attribute:
+To create an event-based job, use the `EventBusJob` attribute:
 (!) You can use multiple EventBusAttribite on signle implementation
 
 ```csharp
