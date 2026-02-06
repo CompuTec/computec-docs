@@ -40,21 +40,20 @@ Here’s a step-by-step guide on how to do it:
 
 3. Look for a **DWORD** value named: **ServicesPipeTimeout**.
 
-    :::info[NOTE]
-    If it doesn't exist, create it:
+4. (optional) If **ServicesPipeTimeout** doesn't exist, create it:
+
     - **Right-click** > **New** > **DWORD (32-bit) Value**.
         ![System error](..\media\troubleshooting\tr02-ae.png)
     - Name it ``ServicesPipeTimeout``.
-    :::
 
-4. Double-click **ServicesPipeTimeout**.
-5. Enter the value: ``120000`` for 2 minutes, or ``180000`` for 3 minutes, and select **Decimal**.
+5. Double-click **ServicesPipeTimeout**.
+6. Enter the value: ``120000`` for 2 minutes, or ``180000`` for 3 minutes, and select **Decimal**.
 
     ![System error](..\media\troubleshooting\tr03-ae.png)
 
-6. Click **OK** and close **Registry Editor**.
-7. Restart the system to apply the change.
-8. Done! Now you can start **CompuTec AppEngine** again.
+7. Click **OK** and close **Registry Editor**.
+8. Restart the system to apply the change.
+9. Done! Now you can start **CompuTec AppEngine** again.
 
 ## Problem: Hyper-V Reserving AppEngine Default Port 54001
 
