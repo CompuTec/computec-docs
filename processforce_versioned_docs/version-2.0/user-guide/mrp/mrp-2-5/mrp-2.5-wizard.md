@@ -84,9 +84,9 @@ The Item Selection tab allows you to add items to the scenario and edit their pl
     2. Planning parameters for individual items can be edited by selecting the checkbox next to the respective parameter. The edited values are valid only for the current scenario.
     3. To plan primary demands for coproducts and scraps, the procurement method must be set to "Make" (without BOM), and the items must be listed and active in the item list. The system will propose MOR recommendations for the produced items to cover the demands for coproducts and scraps. If multiple BOMs exist for coproducts or scraps, the most efficient BOM will be selected.
 
-- **Default Vendor** - click [here](/docs/processforce/user-guide/mrp/mrp-2-5/vendors-lead-times/) to find out more.
-- **Custom Vendor Lead Time**: click [here](/docs/processforce/user-guide/mrp/mrp-2-5/vendors-lead-times/) to find out more.
-- **Custom Vendor Internal Lead Time**: click [here](/docs/processforce/user-guide/mrp/mrp-2-5/vendors-lead-times/) to find out more.
+- **Default Vendor** - click [here](/docs/processforce/processforce-plugins/mrp/mrp-2-5/vendors-lead-times/) to find out more.
+- **Custom Vendor Lead Time**: click [here](/docs/processforce/processforce-plugins/mrp/mrp-2-5/vendors-lead-times/) to find out more.
+- **Custom Vendor Internal Lead Time**: click [here](/docs/processforce/processforce-plugins/mrp/mrp-2-5/vendors-lead-times/) to find out more.
 - **Vendor Selection Strategy**: the Default Vendor strategy is currently implemented. When preparing a recommendation, all planned quantities are assigned to the default vendor. Additionally, lead time rules are applied based on the default vendor selected in the Preferred Vendors list (Item Master Data > Purchasing Data tab).
 
 ## Inventory Data tab
