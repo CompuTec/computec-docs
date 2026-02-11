@@ -52,7 +52,7 @@ Here is an overview of the key CompuTec WebUp components:
 ### CompuTec WebUp App (Plugin)
 
 - Installed through the CompuTec AppEngine Plugin (App) Store.
-- Responsible for executing customization and automation logic and for storing all WebUp configuration settings. 
+- Responsible for executing customization and automation logic and for storing all CompuTec WebUp configuration settings.
 - Runs on CompuTec AppEngine 3.0 and acts as the backend foundation for the CompuTec WebUp solution.
 
 ### CompuTec WebUp Manager

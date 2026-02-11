@@ -22,10 +22,6 @@ CompuTec ProcessForce integrates with the SAP Business One MRP Wizard and Order 
 - The Order Recommendation form enables the creation of CompuTec ProcessForce Manufacturing Orders.
 - Manufacturing Orders are scheduled using backward scheduling, ensuring production aligns with required due dates.
 
-## Configuration
-
-To see configuration details, visit the [Enable Synchronization](/docs/processforce/user-guide/system-initialization/general-settings/bill-of-material-and-manufacturing-orders-tab.md#synchronization-options) and [MRP-related configuration](/docs/processforce/user-guide/system-initialization/general-settings/mrp-tab/mrp-related-configuration/) within [General Settings](../../user-guide/system-initialization/general-settings/general-tab.md).
-
 ## Operation
 
 - Run the MRP Wizard in the regular manner
