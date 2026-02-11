@@ -55,8 +55,8 @@ If you plan to customize the user interface using **CompuTec WebUp Manager**, yo
 
 You’ll need to install two extensions:
 
-- **CompuTec WebUp Client** – for end users
-- **CompuTec WebUp Manager** – for consultants and key users
+- **CompuTec WebUp Client**
+- **CompuTec WebUp Manager**
 
 :::info[note]
 These extensions are currently **not available in public stores**.
