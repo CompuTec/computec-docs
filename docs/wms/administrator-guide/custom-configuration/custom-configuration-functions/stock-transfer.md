@@ -78,7 +78,7 @@ Below are the available settings and behaviors you can enable or disable in the 
 
     ![SU Trasnfer](./media/stock-transfer/screenshot-5.png)
 
-18. **Quick SU Transfer - Skip Remarks**: Skips the **Remarks** window during Storage Unit transfer and automatically returns to the first **Stock Transfer** > **List of SUs** screen after saving. This allows users to immediately scan and transfer another SU without additional confirmation steps.
+18. **Quick SU Transfer - Skip remarks**: Skips the **Remarks** window during Storage Unit transfer and automatically returns to the first **Stock Transfer** > **List of SUs** screen after saving. This allows users to immediately scan and transfer another SU without additional confirmation steps.
 
     ![SU Trasnfer- Skip remarks- before and after screen](./media/stock-transfer/screenshot-7a.png)
 
