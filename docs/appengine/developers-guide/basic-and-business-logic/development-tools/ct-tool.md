@@ -139,7 +139,7 @@ Options:
 Use:
 
 ```batch
-dotnet ct install -v hanadev:40000 -c SBO_DB  -u manager -p "password" -d"DEV@hanadev:30013" -t dst_HANADB "CT.VehOne\bin\Debug\net8.0\CT.VehOne.dll"
+dotnet ct install -s hanadev:40000 -c SBO_DB  -u manager -p "password" -d"DEV@hanadev:30013" -t dst_HANADB "CT.VehOne\bin\Debug\net8.0\CT.VehOne.dll"
 ```
 ## Checking the connection to the database 
 To check the connection to the database, please use
