@@ -8,7 +8,7 @@ Here’s a rundown of the key settings available in the Manager module
 
 ---
 
-![Manager](./media/manager.png)
+![Manager](./media/screenshot-0.png)
 
 1. **Workflow Step Settings** – The Workflow Step Settings allow you to select a specific workflow for different types of transactions, helping to automate and standardize processes across the organization. To know more about "Workflow Step Settings", Click [here](../../../custom-configuration/custom-configuration-functions/manager/workflow-step-settings.md).
 
@@ -58,5 +58,7 @@ Here’s a rundown of the key settings available in the Manager module
 15. **Package Instruction Constant Count Layer** - This setting allows the configuration of package instructions with a constant count layer for specific inventory management needs. To know more about "Package Instruction Constant Count Layer", click [here](../../../custom-configuration/custom-configuration-functions/manager/package-instruction-constant-count-layer.md).
 
 16. **Enable Signing Documents** – This option enables document signing within the system, providing a secure way to authorize transactions. To know more about "Enabling Signing Documents", click [here](enable-signing-document.md).
+
+17. **Sort Order Definitions** - This option allows you to create and assign a template that defines custom sorting rules in the document details window. In the WMS client, users can select the required sorting template from a predefined list. To know more about Sorting Order Definitions, click [here](docs\wms\administrator-guide\custom-configuration\custom-configuration-functions\manager\sort-order-def.md).
 
 ---
