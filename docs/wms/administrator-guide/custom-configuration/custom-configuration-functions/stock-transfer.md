@@ -8,7 +8,7 @@ The Stock Transfer module within SAP Business One offers comprehensive options f
 
 ---
 
-![Stock Transfer](./media/stock-transfer/stock-transfer.png)
+![Stock Transfer](./media/stock-transfer/screenshot-0.png)
 
 ## Configuration Options
 
@@ -76,9 +76,13 @@ Below are the available settings and behaviors you can enable or disable in the 
 
 17. **Quick SU Transfer - Select SU only by scanning**: Allows SU transfer only by scanning.
 
-        ![SU Trasnfer](./media/stock-transfer/screenshot-5.png)
+    ![SU Trasnfer](./media/stock-transfer/screenshot-5.png)
 
-18. **Move fully picked lines to the bottom of the list**:  Lines that have been fully picked are automatically moved to the bottom of the list, keeping focus on pending lines.  
+18. **Quick SU Transfer - Skip Remarks**: Skips the **Remarks** window during Storage Unit transfer and automatically returns to the first **Stock Transfer** > **List of SUs** screen after saving. This allows users to immediately scan and transfer another SU without additional confirmation steps.
+
+    ![SU Trasnfer- Skip remarks- before and after screen](./media/stock-transfer/screenshot-7a.png)
+
+19. **Move fully picked lines to the bottom of the list**:  Lines that have been fully picked are automatically moved to the bottom of the list, keeping focus on pending lines.  
 
     - Move fully picked lines to the bottom of the list:
 
