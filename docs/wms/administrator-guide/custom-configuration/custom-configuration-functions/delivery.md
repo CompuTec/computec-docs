@@ -8,7 +8,7 @@ The Delivery Workflow in SAP Business One allows businesses to streamline the or
 
 ---
 
-![Delivery](./media/cc-delivery.webp)
+![Delivery](./media/screenshot-1batch.png)
 
 1. **Delivery workflow** - Allows you to choose one of three workflows for Pick Lists:Default Workflow, Customer-Date Workflow, and Date-Customer Workflow.
 
@@ -75,7 +75,7 @@ The Delivery Workflow in SAP Business One allows businesses to streamline the or
 
 19. **Hide Customer Ref. No. for Delivery from the base document** – Checking this option hides the Customer Ref. No. field in the Remarks form when creating a Delivery document from a base document. If multiple base documents are used, the first non-empty Customer Ref. No. is used.
 
-20. **Use Sales UoM from Base Document** – When enabled, this option displays quantities using the Unit of Measure from the Base Document, while still operating on the actual quantities. Document drafts cannot be saved when this option is activated. Click [here](../../../user-guide/managing-uom-in-computec-wms.md) to find out more.
+20. **Use Sales UoM from Base Document** – When enabled, this option displays quantities using the Unit of Measure from the Base Document, while still operating on the actual quantities. Document drafts cannot be saved when this option is activated. Click [this link](../../../user-guide/managing-uom-in-computec-wms.md) to find out more.
 
 21. **Display SU Only With Item From Base Document** – self-explanatory
 
@@ -83,11 +83,11 @@ The Delivery Workflow in SAP Business One allows businesses to streamline the or
 
 23. **Freight (Sales Order field) cost options**:
 
-- **Partial** - This is the default option for CompuTec WMS and SAP Business One when created from a Pick List.
+    - **Partial** - This is the default option for CompuTec WMS and SAP Business One when created from a Pick List.
+    - **Full freight for first Delivery only** - The total freight cost is applied only to the first Delivery, with no freight cost assigned to subsequent Deliveries (this follows SAP Business One's behavior when creating a Delivery from a Sales Order).
+    - **Always charge full freight** - The total freight cost from the base document is applied to all Deliveries.
 
-- **Full freight for first Delivery only** - The total freight cost is applied only to the first Delivery, with no freight cost assigned to subsequent Deliveries (this follows SAP Business One's behavior when creating a Delivery from a Sales Order).
-
-- **Always charge full freight** - The total freight cost from the base document is applied to all Deliveries.
+24. **Disable Auto Allocation Batch/Serial Items When Source Document is Pick List and Item Issue Primarily by = "Bin Location"** – When enabled, automatic batch and serial number allocation is disabled in the Delivery transaction created from a Pick List, if the item’s ``Issue Primarily By`` setting is configured as **Bin Location**. In this case, the user must manually select the required batch or serial numbers during the Delivery process.
 
 ## Changes
 
