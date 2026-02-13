@@ -4,17 +4,15 @@ sidebar_position: 12
 
 # Enable Signing Document
 
-The option allows input and save a signature for a number of documents created in CompuTec WMS.
-
----
+The option allows input and save two signatures for a number of documents created in CompuTec WMS.
 
 ## Requirements
 
 ### Set up the picture and attachment paths
 
-It is required to set the Pictures and Attachments path different than the default ones in SAP Business One (Both paths – Picture Folder and Attachments Folder – have to be the same to see the signature in the related UDF in the related documents in SAP Business One).
+It is required to set the **Pictures** and **Attachments** path different than the default ones in SAP Business One (Both paths – **Picture Folder** and **Attachments Folder** – have to be the same to see the signatures in the related UDF in the related documents in SAP Business One).
 
-You can do it in SAP Business One Main Menu → Administration → System Initialization → General Settings → Path tab:
+You can do it in **SAP Business One Main Menu** → **Administration** → **System Initialization** → **General Settings** → **Path** tab:
 
 ![Path](./media/signature-path.webp)
 
@@ -30,25 +28,25 @@ If you are using a custom menu view in Interface Design Manager, please uncheck 
 
 Open Custom Configuration, go to Manager tab and check the Enable Signing Document check box. Then click the Load button next to it to choose the required documents.
 
-![Enable signing document option](./media/enable-signing-document-option.webp)
+![enable signing in document with one or two signatures](./media/manager-sign.png)
 
-Checking the Display checkbox activates the option (it is then available in the Remarks form of the specific document):
+Checking the **Required** checkbox blocks saving of a document without a signature.
 
-![Remarks](./media/remarks-signature.webp)
+Checking the **Display** checkbox activates the option (it is then available in the Remarks form of the specific document):
 
-Checking the Required checkbox blocks saving of a document without a signature.
+![Remarks](./media/signing.png)
 
-Clicking the highlighted icon leads to the Document Signature form:
+Clicking the **highlighted icon** leads to the **Document Signature** form:
 
-![Document Signature Form](./media/document-signature-form.webp)
+![Document Signature Form](./media/sign.png)
 
 Use the three icons (from left) to:
 
 - go back without saving
 - erase already started signature
-- save a signature.
+- save a signature
 
-A saved signature is then available in SAP Business One in the related document's UDFs: open a specific form (e.g. Goods Receipt PO), find the document, click Ctrl + Shitf + U. The saved signature is available in the Signature Document fields. Click it to get the full view.
+Saved signatures are then available in SAP Business One in the related document's UDFs: open a specific form (e.g. Goods Receipt PO), find the document, click Ctrl + Shitf + U. The saved signatures are available in the Signature Document fields. Click it to get the full view.
 
 ### Document drafts
 
