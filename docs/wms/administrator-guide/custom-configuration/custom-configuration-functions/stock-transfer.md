@@ -8,7 +8,7 @@ The Stock Transfer module within SAP Business One offers comprehensive options f
 
 ---
 
-![Stock Transfer](./media/stock-transfer/screenshot-0.png)
+![Stock Transfer](./media/stock-transfer/screenshot-01.png)
 
 ## Configuration Options
 
@@ -91,6 +91,18 @@ Below are the available settings and behaviors you can enable or disable in the 
     - Move fully picked lines to the bottom of the list X
 
         ![Move fully picked lines to the bottom of the list X](./media/stock-transfer/screenshot-7.png)
+
+20. **Quick SU Tool Tip Fill strategy (scanning)**: Defines how the system automatically fills the **Source** and **Destination** warehouse and bin fields when scanning a **Storage Unit (SU)** during **Stock Transfer**.
+
+    ![Quick SU Tool Tip Fill strategy (scanning) options](./media/stock-transfer/screenshot-21.png)
+
+    Available values:
+    - **Set to Source**: Always updates the **Source** warehouse and bin fields.
+    - **Set to Destination**: Always updates the **Destination** warehouse and bin fields.
+    - **Set to First Empty then Source**: If either **Source** or **Destination** is empty, the system fills the empty one. If both are filled, the system updates the **Source** fields.
+    - **Set to First Empty then Destination**: If either **Source** or **Destination** is empty, the system fills the empty one. If both are filled, the system updates the **Destination** fields.  
+
+    ![Quick SU Tool Tip Fill strategy (scanning) options](./media/stock-transfer/screenshot-323.png)
 
 ## Changes
 
