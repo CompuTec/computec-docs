@@ -20,7 +20,7 @@
     "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download"
   },
   "dependencies": {
-    "@crowdin/cli": "4.11.0",
+    "@crowdin/cli": "4.13.0",
     "@docusaurus/core": "3.9.2",
     "@docusaurus/plugin-content-docs": "3.9.2",
     "@docusaurus/preset-classic": "3.9.2",
@@ -29,22 +29,22 @@
     "@emotion/styled": "11.14.1",
     "@giscus/react": "3.1.0",
     "@mdx-js/react": "3.1.1",
-    "@mui/material": "7.3.5",
-    "@mui/icons-material": "7.3.5",
+    "@mui/material": "7.3.8",
+    "@mui/icons-material": "7.3.8",
     "clsx": "2.1.1",
     "lodash": "4.17.21",
     "medium-zoom": "1.1.0",
     "prism-react-renderer": "2.4.1",
     "re-resizable": "6.11.2",
-    "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.9.2",
     "@docusaurus/tsconfig": "3.9.2",
     "@docusaurus/types": "3.9.2",
-    "@types/lodash": "4.17.21",
-    "dotenv": "17.2.3",
+    "@types/lodash": "4.17.23",
+    "dotenv": "17.2.4",
     "typescript": "5.9.3"
   },
   "browserslist": {
