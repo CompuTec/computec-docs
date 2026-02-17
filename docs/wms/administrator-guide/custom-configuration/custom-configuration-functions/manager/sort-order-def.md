@@ -30,7 +30,7 @@ To create a new **Sort Order Definition**, follow these steps:
 
 2. Click **Add**.
 
-    ![Sort order definitions - click add to create new sorting options](./media/screenshot-2.png)
+    ![Sort order definitions - click add to create new sorting options](./media/add-new-sort-order-def.png)
 
 3. In the **Definition Details** section enter **Name** (this is the name displayed in the **WMS client**).
 
