@@ -14,9 +14,9 @@ This document provides a step-by-step guide for installing the CompuTec WMS Serv
 
 To use the CompuTec WMS desktop version, you must install both the server and client modules.
 
-### Before you start:
+### Before you start
 
-- Download and run the **WMS Server installation file**. You can find it [here](../../../releases/download.md).
+- Download and run the **WMS Server installation file**. You can find it after clicking [this link](../../../releases/download.md).
 
 :::info
 If the **CompuTec WMS Server** is already installed on this computer, you can access the setup by running the **CompuTecWMSServer.msi** file. This allows you to change, repair, or remove the installation.
@@ -34,7 +34,7 @@ To install **CompuTec WMS Server**, follow these steps:
 
     ![Install Close](../wms-server/media/wms-server0choose-setup.png)
 
-3. An installation progress screen will appear, followed by a system message confirming successful setup. 
+3. An installation progress screen will appear, followed by a system message confirming successful setup.
 
 4. Click **Finish** to exit the installer.
 
@@ -93,13 +93,13 @@ To install **CompuTec WMS Server**, follow these steps:
     13. CompuTec AppEngine address: Enter the CompuTec AppEngine Address.
     14. Company-Specific Configuration Options:
     For each company on the server, right-click a company row to access additional configuration options
-        1. **Install WMS Objects** - Select this option to install the CompuTec WMS objects (tables, fields) needed for the application to function correctly in the database. **This step must be completed before starting to use CompuTec WMS**. Click the option, enter the database credentials, and begin the installation process. Note: The process may vary slightly for new databases on HANA. For more details, check [here](../../../faq/faqs.md#cannot-install-computec-wms-objects-to-a-database).
+        1. **Install WMS Objects** - Select this option to install the CompuTec WMS objects (tables, fields) needed for the application to function correctly in the database. **This step must be completed before starting to use CompuTec WMS**. Click the option, enter the database credentials, and begin the installation process. Note: The process may vary slightly for new databases on HANA. For more details, click [this link](../../../faq/faqs.md#cannot-install-computec-wms-objects-to-a-database).
         2. **Open Custom Config** - It leads to [Custom Configuration options](../../custom-configuration/overview.md).
         3. **User Settings** - In this section, you can enable a user for a specific database and set their language preference. This step is necessary for the user to work with CompuTec WMS.
         4. **Copy CC Settings to** - Copies configuration from one database to another in the same environment.
         5. **Reset CC to default** - Reverts all custom settings for the database to default.
         6. **Import CC Settings/Export CC Settings** - Export or import configuration settings to a file for easy transfer to another server.
-        7. **Barcode Decoder - Export/Import Decoder Settings**. Export or import [Barcode Decoder settings](../../../user-guide/custom-decoder.md) as needed. Click [here](../../../user-guide/custom-decoder.md#decoder-definitions) to check the values set in Decoder Definition.
+        7. **Barcode Decoder - Export/Import Decoder Settings**. Export or import [Barcode Decoder settings](../../../user-guide/custom-decoder.md) as needed. Click [this link](../../../user-guide/custom-decoder.md#decoder-definitions) to check the values set in Decoder Definition.
     15. SAP Multi-Tenant: Check this option to operate with the SAP Multi-Tenant option. After checking the option, click Register Servers. In the new form, click the last (empty) row, enter the server's IP address in Multi-Tenant, check its checkbox, and click Save.
     </div>
     </details>
@@ -139,7 +139,7 @@ To install **WMS Settings** only, follow these steps:
 
     ![Install WMS settings only](../wms-server/media/wms-server-custom-setup.png)
 
-4. An installation progress screen will appear, followed by a system message confirming successful setup. 
+4. An installation progress screen will appear, followed by a system message confirming successful setup.
 
 5. Click **Finish** to exit the installer.
 
