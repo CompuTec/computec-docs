@@ -4,7 +4,7 @@ sidebar_position: 12
 
 # Stock Counting
 
-The new Stock Counting is created based on an empty document created in CompuTec WMS. Next, it is sent to SAP Business One. 
+The new Stock Counting is created based on an empty document created in CompuTec WMS. Next, it is sent to SAP Business One.
 
 In the old Stock Counting, an SAP Business One user created a document based on which a list was displayed in CompuTec WMS. After enabling the old Stock Counting, you can use all of the checkboxes from this view - both for the old and new option versions.
 
