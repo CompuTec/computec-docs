@@ -4,6 +4,43 @@ sidebar_position: 1
 
 # CompuTec AppEngine Release Notes
 
+## CompuTec AppEngine 3.2602.1
+
+**Release Date: 26 February 2026**
+
+| Issue Type | Components | Release Note |
+| --- | --- | --- |
+| New | AE Analytics | Added **Collections** in **Source Manager**. You can now select predefined data collections (**Table/View**, **Custom**, **Dynamic**) instead of manually defining filters or remembering values. This makes report configuration faster and easier. |
+| New | AE Analytics | Introduced enhanced **Drill Down** navigation. You can now move between reports or variants, map filters automatically, and drill deeper into data with full control. |
+| New | AE Common Library | Added a new **Weight Input Control** that connects to physical scales. Users can select weight from a popup (similar to a date picker), reducing manual entry errors. |
+| New | MO360 | Added a new **Multiple Material Shortages** report built on **Manufacturing Order** data. This report gives planners a consolidated view of shortages across multiple production orders in one screen, helping them identify risks faster and prioritize actions more efficiently. |
+| New | MO360 | Added a new **Material Shortages** report that provides detailed shortage analysis for a single **Item**, including warehouse-level availability and simulation support, allowing planners to evaluate impact before applying changes. |
+| Improved | AE Core | Added a search field in **Administration** > **Configuration** > **Companies**, allowing administrators to quickly find databases or companies. |
+| Improved | AE Configuration | CompuTec AppEngine now automatically cleans up old installation and DB setup files after upgrades, reducing server disk usage and improving performance. |
+| Improved | AE Plugin Generator | Fixed errors in the plugin generator tool, allowing developers to generate plugins reliably without crashes. |
+| Improved | AE Core | It is now possible to install multiple variants per source, giving plugin developers more flexibility. |
+| Improved | AE Analytics | You can now duplicate existing variants and rename them, making report customization much faster. |
+| Improved | AE Analytics | Filters can now be reordered, giving a better control over report layout and usability. |
+| Improved | AE Analytics | Column headers automatically adjust to screen size, improving readability. |
+| Improved | AE Analytics | Number-based columns (**Amount**, **Price**, **Quantity**, **Percent**) are now right-aligned for better readability. |
+| Improved | AE Analytics | Added new **Time and Date** picker in filtering, and improved **Date** picker behavior. |
+| Improved | AE Analytics | Improved column positioning, filter behavior, text wrapping, and freeze column functionality for a smoother reporting experience. |
+| Fixed | AE Analytics | Fixed issue where hidden columns could appear after duplicating variants. |
+| Fixed | AE Analytics | Fixed error when saving changes after preview refresh. |
+| Fixed | AE Analytics | Fixed error when updating a variant name. |
+| Fixed | AE Analytics | Fixed issue where **Analytics** button was not working in SAP UI windows. |
+| Fixed | AE Administration Panel | Manual background jobs are now visible correctly in the statistics view. |
+| Fixed | AE Background Processing | CompuTec AppEngine now validates **JobId** during job creation, preventing service crashes after restart. |
+| Fixed | AE Installer | Fixed error durring CompuTec AppEngine setup when saving configuration changes. |
+| Fixed | AE Other | The message ``A new version of AppEngine is available`` now appears only when an update is actually available. |
+| Improved | WebUp Manager | Increased timeout handling for slow connections, improving stability when working over slower networks. |
+| Fixed | MRP | Fixed issue where **Planning Horizon** dates could shift by one day. |
+| Fixed | MRP | Fixed ``Internal error (-2040)`` during MRP scenario execution, ensuring smooth planning runs. |
+| Fixed | MRP | **Vendor Lead Time** now correctly displays addresses. |
+| Improved | MRP 2.5 | Forecast documents now provide clearer error messages, preserve data after errors, and support proper warehouse, revision, and branch selection. |
+| Fixed | Manufacturing Order | Fixed calculation issues when using formulas in **Yield** fields. |
+| Fixed | Quality Control | System now correctly checks CompuTec AppEngine job status before triggering QC document creation, preventing missing QC documents. |
+
 ## CompuTec AppEngine 3.2601.4
 
 **Release Date: 28 January 2026**
