@@ -12,7 +12,7 @@ sidebar_position: 1
 | --- | --- | --- |
 | New | AE Analytics | Added **Collections** in **Source Manager**. You can now select predefined data collections (**Table/View**, **Custom**, **Dynamic**) instead of manually defining filters or remembering values. This makes report configuration faster and easier. |
 | New | AE Analytics | Introduced enhanced **Drill Down** navigation. You can now move between reports or variants, map filters automatically, and drill deeper into data with full control. |
-| New | AE Common Library | Added a new **Weight Input Control** that connects to physical scales. Users can select weight from a popup (similar to a date picker), reducing manual entry errors. |
+| New | AE Common Library | Added a new **Weight** input control that connects to physical scales. Users can select weight from a popup (similar to a date picker), reducing manual entry errors. |
 | New | MO360 | Added a new **Multiple Material Shortages** report built on **Manufacturing Order** data. This report gives planners a consolidated view of shortages across multiple production orders in one screen, helping them identify risks faster and prioritize actions more efficiently. |
 | New | MO360 | Added a new **Material Shortages** report that provides detailed shortage analysis for a single **Item**, including warehouse-level availability and simulation support, allowing planners to evaluate impact before applying changes. |
 | Improved | AE Core | Added a search field in **Administration** > **Configuration** > **Companies**, allowing administrators to quickly find databases or companies. |
