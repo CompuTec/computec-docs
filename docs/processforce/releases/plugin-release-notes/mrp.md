@@ -6,6 +6,15 @@ sidebar_position: 12
 
 Below are the release notes for CompuTec MRP Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec MRP 3.2602.1
+
+**Release Date: 27 February 2026**
+
+| Issue Type | Components | Release Note |
+| --- | --- | --- |
+| Fixed | MRP | **Vendor Lead Time** now correctly displays available addresses after selecting vendor and shipping type. The address list no longer appears empty. |
+| Fixed | MRP | Fixed an issue where dates entered in the **MRP Planning Horizon** could automatically shift by one day after leaving the field. **Start** and **End** dates now remain exactly as entered by the user. |
+
 ## CompuTec MRP 3.2601.1
 
 **Release Date: 29 January 2026**
