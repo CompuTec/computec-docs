@@ -11,7 +11,35 @@ You can find all download links and release notes for the latest available **Com
 However, we strongly recommend using **CompuTec ProcessForce Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
-## CompuTec.ProcessForce 3.2601.2
+## CompuTec ProcessForce 3.2602.1
+
+**Release Date: 27 February 2026**
+
+| Issue Type | Components | Release Note |
+| --- | --- | --- |
+| New | Analytics, MO360 | Added **Material Shortages** and **Multiple Material Shortages** reports. These features (available via **Analytics Actions**) allow users to analyze material shortages both for single and across multiple **Manufacturing Orders** in one consolidated report. |
+| Fixed | Time Bookings | Fixed error when loading sample data in **Operation Time** Recording. The **Load Sample** function now works without database errors. |  
+| Improved | MRP 2.5 | Forecast documents now preserve data after errors, display accurate line numbers in error messages, and support proper filtering and selection for **Warehouse**, **Revision**, and **Branch**. |
+| Fixed | Common Functions | **Form Settings** in **Pick Receipt** for batch-managed items now open the correct section instead of defaulting to document rows. |
+| Fixed | Production Costing | New routing codes are now correctly added to costing tables during roll-up, ensuring accurate cost calculation. |
+| Fixed | Production Costing | Eliminated rounding inconsistencies between **ITC1**, **ITC5**, and **Costed BOM**. Total costs are now fully aligned across all costing tables. |
+| Fixed | Bill of Materials | Remarks edit window in **Production Process** now opens correctly on double-click. |
+| Fixed | Items | **Preferred Vendor UDF** values are now saved correctly, even when adding via keyboard without leaving the field. |
+| Fixed | Gantt Chart | Resolved stability issue that could cause **SAP** and **Gantt Chart** to crash when opening certain MOs. |
+| Fixed | Manufacturing Order | Fixed error when changing MO status to ``Finished`` that previously caused **Pick Receipt** save failures. |
+| Improved | Manufacturing Order | Added multi-select functionality in **Pick Order** and **Pick Receipt**, allowing users to select and remove multiple lines at once. |  
+| Fixed | Production Costing | **Rollup** and **Update Costing** now work correctly for items containing special characters, for example, Polish letters. |  
+| Fixed | Quality Control | **Auto QC** creation in **GRPO** now works reliably when conditions are met. |
+| Fixed | Items | Default revision selection in **GRPO** now correctly follows **Item Master** settings. |
+| Fixed | Manufacturing Order | Synchronization errors caused by missing planned quantity have been resolved. **Production Orders** are now created correctly and accessible after clicking yellow arrow. |
+| Fixed | Production Costing | **Time Booking** costs are now rounded according to defined decimal settings. If rounding results in zero, the line is skipped to prevent **Journal Entry** errors. |
+| Fixed | Manufacturing Order | Multi-select behavior in **Pick Order** no longer opens unexpected selection forms after update. |
+| Fixed | Quality Control | QC documents created automatically now correctly inherit **Revision** from the base document. |
+| Fixed | Quality Control | Series is now properly assigned in automatically created QC documents. |
+| Fixed | Scheduling | Resolved ``Invalid field value [66000-19]`` error when opening **Scheduling Board**. |
+| Fixed | Manufacturing Order | Creating MOR with changed **Operation Overlay Sequence** no longer causes dictionary key errors. |
+
+## CompuTec ProcessForce 3.2601.2
 
 **Release Date: 29 January 2026**
 
@@ -41,7 +69,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 | Improved | Manufacturing Order | Required and recommended dates are now updated even for finished or closed **Manufacturing Orders**. |
 | Fixed | Scheduling | **Scheduling Board** now displays correct document and Sales Order references, making production tracking clearer. |
 
-## CompuTec.ProcessForce 3.2601.1
+## CompuTec ProcessForce 3.2601.1
 
 **Release Date: 8 January 2026**
 
@@ -54,7 +82,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 | Fixed | Common functions | Replacing items in bulk now saves successfully. Previously, the process could fail with an error. |
 | Fixed | API | Updating an existing routing operation and adding a new one through the Web API no longer causes `routingOperations.U_RtgOprCode is not nullable` error. Operations are now saved correctly. |
 
-## CompuTec.ProcessForce 3.2512.2
+## CompuTec ProcessForce 3.2512.2
 
 **Release Date: 29 December 2025**
 
@@ -71,7 +99,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 | Fixed | Quality Control | Fixed an issue where the system could not find the **Quality Control (QC)** test protocol when creating **QC** from a **Goods Receipt**. The system now automatically selects the correct test protocol. |
 | Fixed | Web API | Fixed an issue where updating an existing operation and adding a new operation through the Web API caused the `routingOperations.U_RtgOprCode is not nullable` error. Routing operations can now be updated and added in a single request without errors. |
 
-## CompuTec.ProcessForce 3.2512.1
+## CompuTec ProcessForce 3.2512.1
 
 **Release Date - 22 December 2025**
 
@@ -107,7 +135,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 | Bug | Formulas | Functions "Max" and "Min" don't seem to work in formulas used in MOR header fields. |
 | Bug | Quality Control | Quality Control is not generated on automatic status change of Manufacturing Order. |
 
-## CompuTec.ProcessForce 3.2511.2
+## CompuTec ProcessForce 3.2511.2
 
 **Release Date - 26 November 2025**
 
@@ -135,7 +163,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 | Bug | MRP | Documents are not created from grouping document. |
 | Bug | AE Administration Panel | AppEngine prompts to download the .rc version even when the official version is already installed. |
 
-## CompuTec.ProcessForce 3.2511.1
+## CompuTec ProcessForce 3.2511.1
 
 **Release Date - 10 November 2025**
 
@@ -149,7 +177,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 | Bug | Scheduling | SAP becomes unresponsive (frozen) after executing Recalculate Lead Time. |
 | Bug | Scheduling | The “Released” status is not updated in the Scheduling Board. |
 
-## CompuTec.ProcessForce 3.2510.1
+## CompuTec ProcessForce 3.2510.1
 
 **Release Date - 29 October 2025**
 
@@ -184,7 +212,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 | Bug | Manufacturing Order | Orderless Production - Error “The input string '' was not in a correct format” |
 | Bug | Inventory | Inventory Data Mismatch for Certain Items |
 
-## CompuTec.ProcessForce 3.2509.2
+## CompuTec ProcessForce 3.2509.2
 
 **Release Date - 25 September 2025**
 
@@ -196,7 +224,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 | Bug | Manufacturing Order | Error on Goods Receipt: "Available quantity too low to issue backflushed items or actual backflush issue settings do not allow Production Goods Receipt for Item: 304.00006, Revision: code00, Line No. 16." |
 | Bug | Bill of Materials | Error during BOM synchronization: "Invalid column name: BOM0.U_PFDBVersion: line 7 col 4 (at pos 124) CompuTec.Core2.DI.Database.SQLQueryException." |
 
-## CompuTec.ProcessForce 3.2509.1
+## CompuTec ProcessForce 3.2509.1
 
 **Release Date - 19 September 2025**
 
@@ -232,7 +260,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 | Bug | .netCore, Manufacturing Order | Update Revision in MOR through WebAPI. |
 | Bug | Quality Control, WebAPI | Error:  `{“title”:”Unhandled exception”,”detail”:”Test Protocol invalid. Date validation.”}` occurs post Quality Control Test. |
 
-## CompuTec.ProcessForce 3.2508.1
+## CompuTec ProcessForce 3.2508.1
 
 **Release Date - 04 August 2025**
 
