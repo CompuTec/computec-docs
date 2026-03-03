@@ -18,7 +18,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 | Issue Type | Components | Release Note |
 | --- | --- | --- |
 | New | Analytics, MO360 | Added **Material Shortages** and **Multiple Material Shortages** reports. These features (available via **Analytics Actions**) allow users to analyze material shortages both for single and across multiple **Manufacturing Orders** in one consolidated report. |
-| Fixed | Time Bookings | Fixed error when loading sample data in **Operation Time** Recording. The **Load Sample** function now works without database errors. |  
+| Fixed | Time Bookings | Fixed error when loading sample data in **Operation Time Recording**. The **Load Sample** function now works without database errors. |  
 | Improved | MRP 2.5 | Forecast documents now preserve data after errors, display accurate line numbers in error messages, and support proper filtering and selection for **Warehouse**, **Revision**, and **Branch**. |
 | Fixed | Common Functions | **Form Settings** in **Pick Receipt** for batch-managed items now open the correct section instead of defaulting to document rows. |
 | Fixed | Production Costing | New routing codes are now correctly added to costing tables during roll-up, ensuring accurate cost calculation. |
