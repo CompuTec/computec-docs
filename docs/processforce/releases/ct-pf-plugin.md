@@ -32,6 +32,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 | Fixed | Quality Control | **Auto QC** creation in **GRPO** now works reliably when conditions are met. |
 | Fixed | Items | Default revision selection in **GRPO** now correctly follows **Item Master** settings. |
 | Fixed | Manufacturing Order | Synchronization errors caused by missing planned quantity have been resolved. **Production Orders** are now created correctly and accessible after clicking yellow arrow. |
+| Improved | API | Improved **Production Receipt** performance. |
 | Fixed | Production Costing | **Time Booking** costs are now rounded according to defined decimal settings. If rounding results in zero, the line is skipped to prevent **Journal Entry** errors. |
 | Fixed | Manufacturing Order | Multi-select behavior in **Pick Order** no longer opens unexpected selection forms after update. |
 | Fixed | Quality Control | QC documents created automatically now correctly inherit **Revision** from the base document. |
