@@ -11,6 +11,16 @@ You can find all download links and release notes for the latest available **Com
 However, we strongly recommend using **CompuTec ProcessForce Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec ProcessForce 3.2603.1
+
+**Release Date: 3 March 2026**
+
+| Issue Type | Components | Release Note |
+| --- | --- | --- |
+| Fixed | Quality Control | Fixed an issue where **Item Property** was visible in **Quality Control** definitions even when the option was not enabled. The field is now displayed only when the corresponding checkbox is selected, keeping QC configuration clearer and preventing incorrect settings. |
+| Fixed | Web API | Improved validation when linking **Sales Orders** to **Manufacturing Orders** via API (``POST``/``PATCH``). The system now checks item codes and line numbers before adding them to the **Manufacturing Order**. If incorrect values are provided, the API returns a clear error instead of creating invalid or incomplete links. |
+| Improved | API, Web API | Added validation to the ``CreateAdjustment`` API call. If outdated parameters (e.g., `OperationType`, replaced by `AdjustmentType` in CompuTec AppEngine 3.0) are used, the system returns a clear error instead of responding with success but creating no adjustment. This helps developers quickly identify integration issues and avoid silent failures. |
+
 ## CompuTec ProcessForce 3.2602.1
 
 **Release Date: 27 February 2026**
