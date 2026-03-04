@@ -1,5 +1,12 @@
 [
 	{
+		"version": "2.10.20.6",
+		"build": "2.10.20.6",
+		"release_date": "04.03.2026",
+		"pf_version": "10.0 R33",
+		"license_server_version": "5.12.1.1"
+	},
+	{
 		"version": "2.10.20.5",
 		"build": "2.10.20.5",
 		"release_date": "08.10.2025",
