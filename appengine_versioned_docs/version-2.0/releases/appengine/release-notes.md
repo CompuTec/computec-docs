@@ -9,13 +9,21 @@ toc_max_heading_level: 2
 The latest installer is available to download fom [this link](/docs/appengine/releases/appengine/download)
 :::
 
+## CompuTec AppEngine 2.10.20.6
+
+**Release Date: 4 March 2026**
+
+| Issue Type | Components | Release Note |
+| --- | --- | --- |
+| Fixed | AE Plugins, Custom, Plugins | Fixed an issue introduced after upgrading to **SAP Business One 10.0 FP 2602**, where documents created in custom plugins triggered a system error during creation. The system incorrectly reported that the document already existed, even though the document was successfully created. Documents are now created correctly without error messages. |
+
 ## CompuTec AppEngine 2.10.20.5
 
-**Release Date - 07 October 2025**
+**Release Date: 07 October 2025**
 
-| Issue Type | Component/s | Release Note | Related issue/s |
-| - | - | - | - |
-| Improvement | AE Core | Improvement related to transactional locks. | - |
+| Issue Type | Components | Release Note |
+| --- | --- | --- |
+| Improvement | AE Core | Improvement related to transactional locks. |
 
 ## CompuTec AppEngine 2.10.19.2
 
