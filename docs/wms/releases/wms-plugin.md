@@ -16,6 +16,7 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 | Fixed | Client, Server | Barcode scanning now works correctly in **GRPO from Draft** when editing quantity and bin location. |
 | Improved | Client | **Stock Transfer** screens are now faster. You can skip unnecessary **Storage Info** steps when no quantity has been picked yet. |
 | Fixed | Client | Fixed an issue in **Return from GRPO** where, after choosing not to select all SUs automatically, scanning additional SU or SSCC codes could fail. The second scanned pallet was not properly loaded, and WMS returned an “SU Code” error. Scanning multiple SUs now works correctly. |
+| Improved | Server | Added support for displaying **Inventory Transfer Header UDFs** in the **Quick SU Transfer** workflow. Fields configured in **UDF Manager** > **Inventory Transfer – Quick SU** can now be shown in the Remarks screen when saving a **Quick SU Transfer**. This allows users to capture additional information directly on the scanner before the document is saved. |
 | Fixed | Server | **Pick & Pack** now correctly allows negative quantities when the **Block negative quantity** option is disabled in company settings. |
 | Improved | Server | **Delivery from Sales Order** now handles allocated serial numbers more clearly and keeps users on the correct screen after selection. |
 | New | Android Client | Added the ability to attach photos directly from the camera in **Android WMS**. Users can now choose between file upload or camera capture. |  
