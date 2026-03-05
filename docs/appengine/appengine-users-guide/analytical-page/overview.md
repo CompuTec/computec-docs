@@ -10,7 +10,7 @@ The **Analytics** module of **CompuTec AppEngine** enables you to quickly analyz
 
 ![Analytics](./media/overview/01-appengine-analytics-overview.png)
 
-## Access CompuTec AppEngine Analtics
+## Access CompuTec AppEngine Analytics
 
 To access the **Analytics** module of **CompuTec AppEngine**, follow these steps:
 
@@ -20,11 +20,11 @@ To access the **Analytics** module of **CompuTec AppEngine**, follow these steps
 
 2. Click **Login in with SAP Business One**.
 
-3. Log in using you credentials.
+3. Log in using your credentials.
 
     ![screen showing logging in](./media/overview/00-appengine-analytics-login2.png)
 
-4. After logging in to **CompuTec AppEngine**, click on the **Analytics** icon.
+4. After logging into **CompuTec AppEngine**, click on the **Analytics** icon.
 
     ![screen showing accessing analyics](./media/overview/02a-appengine-analytics-view.png)
 
@@ -42,7 +42,7 @@ A **View** is a preset report configuration. When you install the CompuTec AppEn
 
 To **create a new view**, follow these steps:
 
-1. Click the **arrow** next to your extisting view name.
+1. Click the **arrow** next to your existing view name.
 
     ![screen showing how to save a view](./media/overview/03-appengine-analytics-variants1.png)
 
@@ -58,7 +58,7 @@ To **create a new view**, follow these steps:
 
 To **manage your existing view**, follow these steps:
 
-1. Click the **arrow** next to your extisting view name.
+1. Click the **arrow** next to your existing view name.
 
     ![screen showing how to manage a view](./media/overview/03-appengine-analytics-variants1.png)
 
@@ -66,13 +66,13 @@ To **manage your existing view**, follow these steps:
 
     ![screen showing where to click manage](./media/overview/04-appengine-analytics-variants34managepng.png)
 
-3. Here, you can manage all your existing views. Dont't forget to click **Save** afterwards.
+3. Here, you can manage all your existing views. Don't forget to click **Save** afterwards.
 
     ![screen showing all the existing views](./media/overview/04-appengine-analytics-variants3manage.png)
 
 ## About a dashboard
 
-Before you begin working with the analytics, it’s helpful to know how each dashboard is structured. It includes two main sections:
+Before you begin working with Analytics, it’s helpful to know how each dashboard is structured. It includes two main sections:
 
 - **Filters**, where you define your criteria
 - **Reports**, where the filtered results are displayed
@@ -98,10 +98,11 @@ You can use the following filter types:
 - **Collection**: Allows you to select values from predefined or dynamically loaded lists.
         - **Custom Collection**: A user-defined list of values.
         - **Table Collection**: Values pulled directly from a table field. Example: the `Item Group Name` field.
+        - **User Collection**: Available when the **Column Type** is set to **User** in the **Source Manager**. This option automatically provides a list of users in the report. For example, ``CURRENT_USER`` is a variable that always represents the user currently logged in.
 
             ![Collection Filter](./media/overview/09-appengine-analytics-filter-collections.png)
 
-- **Date**: Lets you filter data by a specific date or date range. To select a single day, simply double-click on the date.
+- **Date and Time**: Allows you to filter data by a specific date or a date range. To select a single day, double-click the desired date.
 
     ![screen showng the Date Filter](./media/overview/10-appengine-analytics-filter-date.png)
 
@@ -147,11 +148,11 @@ A table is a core component of Analytics and a powerful tool for interacting wit
 
 **Table features**:
 
-- **Direct links** – Some cells include yellow arrows that link directly to SAP Business One documents.
+- **SAP links**: Some cells include yellow arrows that link directly to SAP Business One documents.
 
     ![screen showng the table report direct links](./media/overview/25-appengine-analytics-table-links.png)
 
-- **Export to Excel** – In browser mode, you can export the table to Excel using the **Download Excel** option in the top-right corner.
+- **Export to Excel**: In browser mode, you can export the table to Excel using the **Download Excel** option in the top-right corner.
 
     ![screen showng how to download the table report](./media/overview/24-appengine-analytics-table-download.png)
 
