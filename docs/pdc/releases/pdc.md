@@ -17,8 +17,8 @@ However, we strongly recommend using CompuTec PDC 4.0 Plugin together with Compu
 
 | Issue Type | Components | Release Note |
 | --- | --- | --- |
-| New | PDC | Introduced **Quantity and Time Registration**, a new web-based module od CompuTec PDC Plugin. Users can now register time and produced quantities directly against **Operation–Resources**. While booking time, it is also possible to post related inventory transactions, making reporting faster and more integrated. |
-| Improved | AE Analytics, PDC | The **Production Data Capture (PDC)** plugin is now available directly in the **SAP UI menu**, making it easier for users to access PDC functionality from within SAP. |
+| New | PDC | Introduced **Quantity and Time Registration**, a new web-based module of CompuTec PDC Plugin. Users can now register time and produced quantities directly against **Operation–Resources**. While booking time, it is also possible to post related inventory transactions, making reporting faster and more integrated. |
+| Improved | AE Analytics, PDC | The **Production Data Capture (PDC)** plugin is now available directly in the **SAP UI menu**, making it easier for users to access CompuTec PDC functionalities from within SAP. |
 | Fixed | AE Analytics | Fixed an issue where posting returns during **Manufacturing Confirmation** could result in the error ``Transaction End No Lock Applied``. |
 | Improved | PDC | The **Revision from MO** is now displayed next to the **Item Code** in **Issue to Production** and **Receipt from Production**, helping users identify the correct item revision during the transactions. |
 | Fixed | PDC | Fixed an issue where **Add Tile Barcode** did not work correctly when scanning barcodes. |
