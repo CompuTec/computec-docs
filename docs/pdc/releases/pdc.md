@@ -11,6 +11,20 @@ You can find all [download links](https://learn.computec.one/docs/appengine/2.0/
 However, we strongly recommend using CompuTec PDC 4.0 Plugin together with CompuTec AppEngine 3.0 to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec PDC 4.2603.1
+
+**Release Date: 5 March 2026**
+
+| Issue Type | Components | Release Note |
+| --- | --- | --- |
+| New | PDC | Introduced **Quantity and Time Registration**, a new web-based module od CompuTec PDC Plugin. Users can now register time and produced quantities directly against **Operation–Resources**. While booking time, it is also possible to post related inventory transactions, making reporting faster and more integrated. |
+| Improved | AE Analytics, PDC | The **Production Data Capture (PDC)** plugin is now available directly in the **SAP UI menu**, making it easier for users to access PDC functionality from within SAP. |
+| Fixed | AE Analytics | Fixed an issue where posting returns during **Manufacturing Confirmation** could result in the error ``Transaction End No Lock Applied``. |
+| Improved | PDC | The **Revision from MO** is now displayed next to the **Item Code** in **Issue to Production** and **Receipt from Production**, helping users identify the correct item revision during the transactions. |
+| Fixed | PDC | Fixed an issue where **Add Tile Barcode** did not work correctly when scanning barcodes. |
+| Fixed | PDC | Fixed an issue where clicking the **Save (disk) icon** while editing **DownTime** appeared to revert changes. Edits are now saved and displayed correctly. |
+| Fixed | Login | Fixed an issue where users could encounter an ``Object reference not set to an instance of an object`` error during CompuTec PDC login. |
+
 ## CompuTec PDC 4.2510.1
 
 **Release Date - 29 October 2025**
