@@ -36,48 +36,64 @@ To access the **Analytics** module of **CompuTec AppEngine**, follow these steps
 
     ![scrren showing analytics dashboard](./media/overview/01-appengine-analytics-overview.png)
 
-## About a view
+## About Variants
 
-A **View** is a preset report configuration. When you install the CompuTec AppEngine plugin, you automatically receive one standard view, which is set as the default. You can easily create your own views or customize the existing ones.
+**Variant** is a preset report configuration. When you install the CompuTec AppEngine plugin, you automatically receive one **Standard Variant**, which is set as the default. You can easily create your own variants or customize the existing ones.
 
-To **create a new view**, follow these steps:
+### Create a new variant
 
-1. Click the **arrow** next to your existing view name.
+To **create a new variant**, follow these steps:
 
-    ![screen showing how to save a view](./media/overview/03-appengine-analytics-variants1.png)
+1. Click the **arrow** next to your existing variant name.
+
+    ![screen showing how to save a variant](./media/overview/03-appengine-analytics-variants1.png)
 
 2. Click **Save As**.
 
-    ![screen showing saving a view](./media/overview/04-appengine-analytics-variants2save.png)
+    ![screen showing saving a variant](./media/overview/04-appengine-analytics-variants2save.png)
 
-3. Type the view name and decide if you want to set it as a default one. Here, you can also make it available to all users (Public) or keep it private.
+3. Type the variant name and decide if you want to set it as a default one. Here, you can also make it available to all users (**Public**) or keep it private.
 
-    ![screen showing view options](./media/overview/05-appengine-analytics-variants-savenew.png)
+    ![screen showing variant options](./media/overview/05-appengine-analytics-variants-savenew.png)
 
 4. Click **Save**.
 
-To **manage your existing view**, follow these steps:
+### Edit a variant
 
-1. Click the **arrow** next to your existing view name.
+To **edit your existing variant**, follow these steps:
 
-    ![screen showing how to manage a view](./media/overview/03-appengine-analytics-variants1.png)
+1. Click the **arrow** next to your existing variant name.
+
+    ![screen showing how to manage a variant](./media/overview/03-appengine-analytics-variants1.png)
 
 2. Click **Manage**.
 
     ![screen showing where to click manage](./media/overview/04-appengine-analytics-variants34managepng.png)
 
-3. Here, you can manage all your existing views. Don't forget to click **Save** afterwards.
+3. Here, you can manage all your existing variants. Don't forget to click **Save** afterwards.
 
-    ![screen showing all the existing views](./media/overview/04-appengine-analytics-variants3manage.png)
+    ![screen showing all the existing variants](./media/overview/04-appengine-analytics-variants3manage.png)
 
 ## About a dashboard
 
-Before you begin working with Analytics, it’s helpful to know how each dashboard is structured. It includes two main sections:
+Before you begin working with **Analytics**, it’s helpful to know how each dashboard is structured. It includes two main sections:
 
 - **Filters**, where you define your criteria
 - **Reports**, where the filtered results are displayed
 
 ![screen showing a dashboard](./media/overview/01-appengine-analytics-overview.png)
+
+**Filters** can appear in different forms:
+
+- **Standard filters**, such as text inputs, or date pickers.
+- **Microchart filters**, which look like small charts but also function as interactive filters. By clicking elements within the microchart, you can quickly filter the data displayed in the report. [Read more](https://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/overview#use-microcharts)
+
+**Reports** can be presented in two formats:
+
+- **Tables**, which display detailed data in rows and columns.
+- **Charts**, which visualize the data for easier analysis.
+
+This structure allows you to interactively explore and analyze data directly within the dashboard.
 
 ### Filter your data
 
@@ -126,7 +142,7 @@ To edit your filters, follow these steps:
 
 Selected filters can also be displayed as microcharts. These visual summaries offer an interactive way to drill into your data and quickly understand key metrics.
 
-1. To use microcharts as a filters in your view, click on the **microchart icon** in the **Filters** section of your view.
+1. To use microcharts as filters in your variant, click on the **microchart icon** in the **Filters** section of your variant.
 
     ![screen showng the microcharts](./media/overview/13-appengine-analytics-filter-microoo.png)
 
