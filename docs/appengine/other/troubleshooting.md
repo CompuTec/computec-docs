@@ -4,20 +4,15 @@ sidebar_position: 2
 
 # Troubleshooting
 
-## Problem: No AppEngine Instance Available for Plugin Assignment
+## Problem: Cannot Activate Background Processing in CompuTec AppEngine
 
-In some CompuTec AppEngine installations, administrators may notice that no CompuTec AppEngine instances are available, even though plugins have been successfully installed. As a result, plugins cannot be assigned to any CompuTec AppEngine instance.
+In some CompuTec AppEngine installations, administrators may encounter an issue where **Background Processing** cannot be activated for a company. When attempting to enable it, the activation fails and you can see an error.
 
     ![System error](..\media\troubleshooting\2026-03-11_13-15-52.png)
 
-You may see one or more of the following symptoms:
+You may also see that the **CompuTec AppEngine log file** contains an error similar to: ``Invalid number: not a valid number string '###_SEVTVALIDCK####'``
 
-- Plugins install successfully but cannot be linked to any CompuTec AppEngine instance.
-- Background Processing cannot be activated for the CompuTec AppEngine company.
-- The activation process shows an error message without creating the instance.
-- The CompuTec AppEngine log file contains an error similar to: ``Invalid number: not a valid number string '###_SEVTVALIDCK####'``
-
-This issue is usually caused by custom code in ``SBO_SP_POSTTRANSACTIONNOTICE``, which blocks the CompuTec AppEngine activation process. Because the activation does not complete successfully, the CompuTec AppEngine plugin cannot be linked correctly to the CompuTec AppEngine instance.
+This issue is usually caused by incorrect custom code in ``SBO_SP_POSTTRANSACTIONNOTICE``, which blocks the CompuTec AppEngine configuration process.
 
 ### Solution
 
@@ -39,7 +34,7 @@ If the issue still occurs:
 - Temporarily disable or correct the problematic customization.
 - Activate the CompuTec AppEngine company again.
 
-After successful activation, the CompuTec AppEngine instance will be assigned correctly.
+After resolving the issue, you will be able to activate **Background Processing** without problems.
 
 ## Problem: CompuTec AppEngine Fails to Start – Event ID 7000 or 7009
 
