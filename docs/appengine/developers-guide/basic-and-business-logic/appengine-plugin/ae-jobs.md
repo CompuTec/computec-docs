@@ -57,7 +57,7 @@ To configure the job as one-time or recursive, add the appropriate attribute:
 
 ## Job Configuration
 
-You can add configuration to `Secure` and `Database` type jobs by using the `AdditionalJobConfiguration` attribute with a specified configuration type. In your job class, access the configuration by using the `Configuration` property. For more details on configurations, see [Configurations](../../basic-and-business-logic/development-tools/Configuration/dev-config-json.md)
+You can add configuration to `Secure` and `Database` type jobs by using the `AdditionalJobConfiguration` attribute with a specified configuration type. In your job class, access the configuration by using the `Configuration` property. For more details on configurations, see [Configurations](https://learn.computec.one/docs/appengine/developers-guide/basic-and-business-logic/framework/configurations)
 
 ```csharp
 [AdditionalJobConfiguration(Type = typeof(Adv))]
