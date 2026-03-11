@@ -4,6 +4,43 @@ sidebar_position: 2
 
 # Troubleshooting
 
+## Problem: No AppEngine Instance Available for Plugin Assignment
+
+In some CompuTec AppEngine installations, administrators may notice that no CompuTec AppEngine instances are available, even though plugins have been successfully installed. As a result, plugins cannot be assigned to any CompuTec AppEngine instance.
+
+    ![System error](..\media\troubleshooting\2026-03-11_13-15-52.png)
+
+You may see one or more of the following symptoms:
+
+- Plugins install successfully but cannot be linked to any CompuTec AppEngine instance.
+- Background Processing cannot be activated for the CompuTec AppEngine company.
+- The activation process shows an error message without creating the instance.
+- The CompuTec AppEngine log file contains an error similar to: ``Invalid number: not a valid number string '###_SEVTVALIDCK####'``
+
+This issue is usually caused by custom code in ``SBO_SP_POSTTRANSACTIONNOTICE``, which blocks the CompuTec AppEngine activation process. Because the activation does not complete successfully, the CompuTec AppEngine plugin cannot be linked correctly to the CompuTec AppEngine instance.
+
+### Solution
+
+One of the workable solutions is to check and correct the **Post Transaction Notification** procedure in the **SAP Business One company database**.
+
+:::warning[important]
+Custom logic in **Post Transaction Notification** can affect multiple system processes.
+Any changes should be reviewed and approved by your SAP Business One administrator or database administrator before proceeding.
+:::
+
+First, make sure the SAP environment configuration step was completed correctly.
+
+Follow the instructions in [our documentation](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation/#step-6-configure-background-processing-within-the-sap-environment) to configure background processing within the SAP environment.
+
+If the issue still occurs:
+
+- Check the ``SBO_SP_POSTTRANSACTIONNOTICE`` procedure in the company database.
+- Review any custom queries or validations added to the procedure.
+- Temporarily disable or correct the problematic customization.
+- Activate the CompuTec AppEngine company again.
+
+After successful activation, the CompuTec AppEngine instance will be assigned correctly.
+
 ## Problem: CompuTec AppEngine Fails to Start – Event ID 7000 or 7009
 
 On some Windows systems, **CompuTec AppEngine** may fail to start and **Windows Event Viewer** logs ``Event ID 7000`` or ``Event ID 7009``. These errors usually indicate that the **Windows Service Control Manager** stopped waiting for the service to start because it exceeded the allowed startup time.
@@ -21,7 +58,7 @@ You may see one or more of the following symptoms:
 
     ![System error](..\media\troubleshooting\tr-ae-e2.png)
 
-## Solution
+### Solution
 
 One of the workable solutions is to increase **Windows Service Startup Timeout**.  
 
