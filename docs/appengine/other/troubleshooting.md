@@ -23,9 +23,7 @@ Custom logic in **Post Transaction Notification** can affect multiple system pro
 Any changes should be reviewed and approved by your SAP Business One administrator or database administrator before proceeding.
 :::
 
-First, make sure the SAP environment configuration step was completed correctly.
-
-Follow the instructions in [our documentation](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation/#step-6-configure-background-processing-within-the-sap-environment) to configure background processing within the SAP environment.
+First, make sure the SAP environment configuration step was completed correctly: Follow the instructions in [our documentation](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation/#step-6-configure-background-processing-within-the-sap-environment) to configure background processing within the SAP environment.
 
 If the issue still occurs:
 
