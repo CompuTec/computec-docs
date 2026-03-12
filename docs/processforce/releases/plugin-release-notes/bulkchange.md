@@ -2,11 +2,11 @@
 sidebar_position: 15
 ---
 
-# CompuTec Mass Change Plugin
+# CompuTec Mass Change (BulkChange) Plugin
 
 Below are the release notes for CompuTec Mass Change (Bulk Change) Plugin, highlighting new features, improvements, and bug fixes in this release.
 
-## CompuTec BulkChange 3.2603.1
+## CompuTec Mass Change (BulkChange) Plugin 3.2603.1
 
 **Release Date: 11 March 2026**
 
