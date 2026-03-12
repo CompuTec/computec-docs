@@ -14,11 +14,11 @@ The **Analytics** module of **CompuTec AppEngine** enables you to quickly analyz
 
 To access the **Analytics** module of **CompuTec AppEngine**, follow these steps:
 
-1. In your browser, open **CompuTec AppEngine site** and choose **Launchpad**.
+1. In your browser, open the **CompuTec AppEngine site** and choose **Launchpad**.
 
     ![Screen showing appengine launchpad](./media/overview/00-appengine-analytics-login1.png)
 
-2. Click **Login in with SAP Business One**.
+2. Click **Log in with SAP Business One**.
 
 3. Log in using your credentials.
 
