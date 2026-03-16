@@ -16,13 +16,14 @@ Below CompuTec Labels Printing Manager and CompuTec Labels SAP Add-on versions a
 
 | Version | Build | Release Date | Required CT License Server Version | Download Link | Release Note |
 | --- | --- | --- | --- | --- | --- |
-| 4.8.5 | 4.8.5.0 | 01.12.2025 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.5.0_x64.msi) | [Navigate to the page](./release-notes.md#computec-labels-printing-manager-485) |
+| 4.8.6 | 4.8.6.0 | 16.03.2026 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.6.0_x64.msi) | [Navigate to the page](http://localhost:3000/docs/labels/releases/release-notes#computec-labels-printing-manager-486) |
 
 <details>
 <summary>Previous Releases</summary>
 <div>
 | Version | Build | Release Date | Required CT License Server Version | Download Link | Release Note |
 | --- | --- | --- | --- | --- | --- |
+| 4.8.5 | 4.8.5.0 | 01.12.2025 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.5.0_x64.msi) | [Navigate to the page](./release-notes.md#computec-labels-printing-manager-485) |
 | 4.8.4 | 4.8.4.0 | 26 June 2025 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.4.0_x64.msi) | [Navigate to the page](./release-notes.md#computec-labels-printing-manager-484) |
 | 4.8.3 HF1 | 4.8.3.2 | 05 June 2025 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.3.2_x64.msi) | [Navigate to the page](./release-notes.md#computec-labels-printing-manager-483-hf1) |
 | 4.8.3 | 4.8.3.1| 14 May 2025 | 5.10.1.1. or greater | ~Download~ | [Navigate to the page](./release-notes.md#computec-labels-printing-manager-483) |
@@ -52,8 +53,8 @@ Below CompuTec Labels Printing Manager and CompuTec Labels SAP Add-on versions a
 **Latest Release**:
 
 | Version | Release Date | Download Link | Release Notes |
-|---|---| ---| --- |
-| 2.10.300 | 21 February 2025 | [Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.300.zip) | [Navigate to the page](release-notes.md#computec-labels-sap-addon-210300)|
+| --- | --- | --- | --- |
+| 2.10.300 | 21 February 2025 | [Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.300.zip) | [Navigate to the page](release-notes.md#computec-labels-sap-addon-210300) |
 
 <details>
 <summary>Previous Releases</summary>
@@ -99,13 +100,14 @@ Below CompuTec Labels Printing Manager and CompuTec Labels SAP Add-on versions a
 
 | Version | Build | Release Date | Download Link | Release Notes | Compatible CompuTec AppEngine Version |
 | --- | --- | --- | --- | --- | --- |
-| 1.2.1 HF1| 1.2.1.1 | 10 April 2025 | [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.1.1.msi) | [Navigate to the page](release-notes.md#computec-gateway-manager-121-hf1) | CompuTec AppEngine 3.0 |
+| 1.2.2 | 1.2.2.0 | 16 March 2026 | [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.2.0.msi) | [Navigate to the page](http://localhost:3000/docs/labels/releases/release-notes#computec-gateway-manager-122) | CompuTec AppEngine 3.0 |
 
 <details>
 <summary>Previous Releases</summary>
 <div>
 | Version |  Build | Release Date | Download Link | Release Notes | Compatible CompuTec AppEngine Version |
 | --- | --- | --- | --- | --- | --- |
+| 1.2.1 HF1 | 1.2.1.1 | 10 April 2025 | [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.1.1.msi) | [Navigate to the page](release-notes.md#computec-gateway-manager-121-hf1) | CompuTec AppEngine 3.0 |
 | 1.2.1 | 1.2.1.0 | 11 March 2025 | [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.1.0.msi) | [Navigate to the page](release-notes.md#computec-gateway) | CompuTec AppEngine 2.0 |
 | 1.2.0.28 | 1.2.0.28| - | [Download](https://download/computec.one/software/gateway/releases/CompuTec_Gateway_1.2.0.28.msi) | CompuTec AppEngine 2.0 |
 |1.2.0.20 | 1.2.0.20 | - | [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.0.20.msi)| CompuTec AppEngine 2.0 |
@@ -119,7 +121,7 @@ Below CompuTec Labels Printing Manager and CompuTec Labels SAP Add-on versions a
 | Version | Build | Release Date | Package | Required CompuTec AppEngine Version | Required Gateway Manager Version | Release Notes |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1.10.6.0 R3 | 1.10.6.16 | 05 September 2023 | [Download](https://download.computec.one/software/appengine/plugins/gateway/releases/CompuTec_Gateway_1.10.6.16.zip) | 1.10.6.0 R1 or newer | 1.2.0.11 or newer | - |
-| 1.93.6.0 R3 (64-bit version) | 1.93.6.16 | 5 September 2023 | [Download](https://download.computec.one/software/appengine/plugins/gateway/releases/CompuTec_Gateway_1.93.6.16.zip) | 1.92.6.0 R1 or newer |1.2.0.11 or newer | - |
+| 1.93.6.0 R3 (64-bit version) | 1.93.6.16 | 5 September 2023 | [Download](https://download.computec.one/software/appengine/plugins/gateway/releases/CompuTec_Gateway_1.93.6.16.zip) | 1.92.6.0 R1 or newer | 1.2.0.11 or newer | - |
 
 <details>
 <summary>Previous Releases</summary>

@@ -10,6 +10,15 @@ toc_max_heading_level: 4
 
 Below are the release notes for CompuTec Labels Printing Manager, highlighting new features, improvements, and bug fixes in this release.
 
+### CompuTec Labels Printing Manager 4.8.6
+
+**Release Date: 16 March 2026**
+
+| Issue Type | Components | Release Note |
+| --- | --- | --- |
+| Improvement | Printing Manager Application | **WMS Serial Info** and **Batch Serial Info** queries have been revised. |
+| Improvement | Printing Manager Application | The **Enable Usage of Storage Procedure** functionality has been re-enabled. **Note**: SQL users need to drop the following function before installing the updated database objects: ``DROP FUNCTION CT_LP_SELECTPRINTTEMPLATE``. |
+
 ### CompuTec Labels Printing Manager 4.8.5
 
 **Release Date – 01 December 2025**
@@ -111,6 +120,14 @@ Below are the release notes for CompuTec Labels SAP Addon, highlighting new feat
 ## CompuTec Gateway
 
 Below are the release notes for CompuTec Gateway, highlighting new features, improvements, and bug fixes in this release.
+
+### CompuTec Gateway Manager 1.2.2
+
+**Release Date: 16 March 2026**
+
+| Issue Type | Component/s | Reference Support Ticket | Release Note |
+| --- | --- | --- | --- |
+| Improvement | Gateway | SLABE-1097 | Printing stability through **Gateway** has been improved. |
 
 ### CompuTec Gateway Manager 1.2.1 HF1
 
