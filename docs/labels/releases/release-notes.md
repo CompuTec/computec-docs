@@ -14,10 +14,10 @@ Below are the release notes for CompuTec Labels Printing Manager, highlighting n
 
 **Release Date: 16 March 2026**
 
-| Issue Type | Components | Release Note |
+| Issue Type | Components | Reference Support Ticket | Release Note |
 | --- | --- | --- |
-| Improvement | Printing Manager Application | **WMS Serial Info** and **Batch Serial Info** queries have been revised. |
-| Improvement | Printing Manager Application | The **Enable Usage of Storage Procedure** functionality has been re-enabled. **Note**: SQL users need to drop the following function before installing the updated database objects: ``DROP FUNCTION CT_LP_SELECTPRINTTEMPLATE``. |
+| Improvement | Printing Manager Application | SLABE-1081 | **WMS Serial Info** and **Batch Serial Info** queries have been revised. |
+| Improvement | Printing Manager Application | SLABE-1098 | The **Enable Usage of Storage Procedure** functionality has been re-enabled. **Note**: SQL users need to drop the following function before installing the updated database objects: ``DROP FUNCTION CT_LP_SELECTPRINTTEMPLATE``. |
 
 ### CompuTec Labels Printing Manager 4.8.5
 
