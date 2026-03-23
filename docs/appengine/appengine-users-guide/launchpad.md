@@ -4,20 +4,30 @@ sidebar_position: 2
 
 # Launchpad
 
-The Launchpad serves as a central hub for accessing and managing plugins in your SAP Business One environment. After completing the necessary [Launchpad Configuration](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation), users can log in using their SAP Business One credentials to leverage the platform’s capabilities tailored to a specific scheme
+The **Launchpad** is the central place where you access and work with plugins in your **CompuTec AppEngine** and **SAP Business One** environment.
 
-![Launchpad](./media/launchpad/launchpad-log-in.webp)
+After completing the [Launchpad configuration](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation), you can log in using your SAP Business One credentials.
 
----
+![Launchpad login](.\media\launchpad\main-menu1.png)
 
-Once configured, you can access the Launchpad interface.
+## Accessing the Launchpad
 
-After logging in, the Launchpad displays a panel organized into tiles, each representing an available plugin. For instance, a configuration might include three plugins, as shown below:
+Once you log in, the Launchpad displays a panel of tiles. Each tile represents a plugin available to you.
 
-![Launchpad](./media/launchpad/launchpad-main.webp)
+![Launchpad main view](.\media\launchpad\launchpad1.png)
 
-The availability of plugins for specific schemes is defined in the [Plugin Settings](../administrators-guide/configuration-and-administration/plugins/overview.md)
+The plugins you see depend on your assigned configuration (scheme). This setup is defined in the [Plugin Settings](../administrators-guide/configuration-and-administration/plugins/overview.md).
 
-Users can click on any plugin tile to start working with it. For detailed guidance on individual plugins, refer to the [Plugins User's Guide](../plugins-user-guide/overview.md).
+## Accessing the Analytics
 
----
+You can also access the **Analytics** module from the Launchpad, allowing you to create and analyze reports based on your data. [Read more](https://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/overview)
+
+![Launchpad main view](.\media\launchpad\launchpad3.png)
+
+## Working with Plugins
+
+To start working with a plugin, click its tile.
+
+![Launchpad main view](.\media\launchpad\launchpad2.png)
+
+For detailed instructions on how to use each plugin, see the [Plugins User's Guide](../plugins-user-guide/overview.md).
