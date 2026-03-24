@@ -99,7 +99,7 @@ If you want to edit or manage an existing Analytics Variants List view, follow t
 
     - **Search views**: Use the search bar to quickly find a specific view.
     - **Rename views**: Edit the name directly in the View column.
-    - **Control sharing**: Set whether the view is Private (visible only to you) or Public (available to other users). Read more
+    - **Control sharing**: Set whether the view is Private (visible only to you) or Public (available to other users). [Read more](http://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/permissions_in_analytics)
     - **Set a default view**: Select which view should be opened automatically by default.
     - **Delete views**: Remove views you no longer need using the X icon.
 
@@ -295,7 +295,7 @@ Located in the top-right corner, these options let you customize how your table 
 
     ![screen showng the View Settings in table report](./media/overview/an-tableopt-settings-other.png)
 
-#### Use a chart report
+#### Use a Chart Report
 
 Charts offer a visual way to analyze your data.
 
@@ -319,6 +319,14 @@ You can adjust the chart using the following settings:
 Users can also interact with chart elements to view summaries and download the data in XLSX format.
 
     ![screen showng how to Download charts in Excel](./media/overview/22-appengine-analytics-reports-chart-options-list.png)
+
+:::warning[important notes]
+
+- When the page is refreshed, all current report settings are saved automatically.
+- After configuring the report, you can save it as a new variant.
+- The new Variant will appear in the **Analytics Variants List**, where it can be opened and used later. [Read more](https://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/overview#analytics-variants-list)
+
+:::
 
 :::info[note]
 If you have any questions, contact us using [CompuTec Support Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp).

@@ -226,7 +226,7 @@ In the Basic Settings section, you can:
 ![alt text](media/table_chart_opt/an-sm-click-src-edit-mode-variants-edit-basic.png)
 
 :::note[info]
-For more information about managing permissions, see the [our article on Analytics permissions](http://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/permissions_in_analytics).
+For more information about managing permissions, see the [our article on Analytics permissions](https://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/permissions_in_analytics).
 :::
 
 ### Forms Definition
@@ -287,7 +287,7 @@ Available options include:
 
   - **Column Visibility**: Show or hide the column
   - **Column Freeze**: Keep the column fixed when scrolling
-  - **Width**: Set the column width. Supported units include: em, ex, rem, vw, vh, vmin, vmax, cm, mm, in, pc, pt, px. Read more
+  - **Width**: Set the column width. Supported units include: em, ex, rem, vw, vh, vmin, vmax, cm, mm, in, pc, pt, px. [Read more](https://ui5.sap.com/#/api/sap.ui.core.CSSSize)
   - **Position**: Default column order
   - **Filter Position**: Default position of the filter
   - **Filter Visible**: Show or hide the filter
