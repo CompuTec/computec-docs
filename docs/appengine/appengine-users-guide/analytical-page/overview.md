@@ -321,6 +321,5 @@ Users can also interact with chart elements to view summaries and download the d
     ![screen showng how to Download charts in Excel](./media/overview/22-appengine-analytics-reports-chart-options-list.png)
 
 :::info[note]
-Note
 If you have any questions, contact us using [CompuTec Support Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp).
 :::
