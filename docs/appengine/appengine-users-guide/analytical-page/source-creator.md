@@ -43,7 +43,7 @@ You can access **Source Manager**, following these steps:
 ## Add a source
 
 To add a new source, follow these steps:
- 
+
 1. Log in to **CompuTec AppEngine Launchpad**.
   
     ![screen showing custom data source in source manager](.\media\source-creator\aa-login-launchpad.png)
@@ -107,7 +107,7 @@ To add a new source, follow these steps:
 ## Import a source
 
 To import a new source from a Json file, follow these steps:
- 
+
 1. Log in to **CompuTec AppEngine Launchpad**.
 
     ![screen showing custom data source in source manager](.\media\source-creator\aa-login-launchpad.png)
