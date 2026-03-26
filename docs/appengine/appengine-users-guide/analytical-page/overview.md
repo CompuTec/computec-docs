@@ -73,7 +73,7 @@ To create your own view, follow these steps:
 
 5. Select **Save As**.
 
-    ![screen showng clicking save as](./media/overview/access-an2346-filter23.png)
+    ![screen showng clicking save as button](./media/overview/access-an2346-filter23.png)
 
 6. Enter a name for the new variant and decide whether it should be **Default** and/or **Public**.
 
@@ -81,7 +81,7 @@ To create your own view, follow these steps:
 
 7. Click **Save**. Your custom **view** of **Analytics Variants List** is now created and ready to use.
 
-    ![screen showng clicking save](./media/overview/access-an2346-filter2345.png)
+    ![screen showng clicking save button](./media/overview/access-an2346-filter2345.png)
 
 ### Edit your Analytics Variants List Views
 
@@ -129,7 +129,7 @@ To **create a new variant**, follow these steps:
 
 3. Type the variant name and decide if you want to set it as a default one. Here, you can also make it available to all users (**Public**) or keep it private.
 
-    ![screen showing variant options](./media/overview/05-appengine-analytics-variants-savenew.png)
+    ![screen showing variant settings options](./media/overview/05-appengine-analytics-variants-savenew.png)
 
     :::info[note]
     It is recommended to give your variant a clear and specific name, so it is easier to find later. A descriptive name also makes the variant more visible in lists, for example when configuring permissions in the SAP Business One interface.
@@ -194,7 +194,7 @@ Common operators include `Equal`, `Starts With`, `Contains`, and `Between`.
 
 - **Collection**: Allows you to select values from predefined or dynamically loaded lists.
 
-    ![Collection Filter](./media/overview/09-appengine-analytics-filter-collections.png)
+    ![screen showing the Collection Filter](./media/overview/09-appengine-analytics-filter-collections.png)
 
         - **Custom Collection**: A user-defined list of values.
         - **Table Collection**: Values pulled directly from a table field. Example: the `Item Group Name` field.
@@ -206,7 +206,7 @@ Common operators include `Equal`, `Starts With`, `Contains`, and `Between`.
 
 - **Date and Time**: Allows you to specify the exact date and time.
 
-    ![screen showng the Date Filter](./media\overview\aa-filters-dateandtime-and-number.png)
+    ![screen showng the Date and time Filter](./media\overview\aa-filters-dateandtime-and-number.png)
 
 #### Edit filters
 

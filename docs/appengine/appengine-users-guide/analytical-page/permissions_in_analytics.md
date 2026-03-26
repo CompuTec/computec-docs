@@ -43,11 +43,11 @@ To add permissions to an existing **Analytics** variant, follow these steps:
 
 6. Click **Update** to save the added permission.
 
-    ![screen showing updating the permission added](.\media\permissions\2026-02-25_12-21-52.png)
+    ![screen showing updating the added permission](.\media\permissions\2026-02-25_12-21-52.png)
 
 7. Click **Update** to save changes in the source.
 
-    ![screen showing updateing the changes in the source](.\media\permissions\perm-update.png)
+    ![screen showing updating the changes in the source](.\media\permissions\perm-update.png)
 
 8. Done. The variant is now visible only to ``Superusers`` and the user who created it.
 
@@ -107,11 +107,11 @@ To review the variant permissions in **SAP Business One Additional Authorization
 
 2. Navigate to **Menu** > **Administration** > **System Initialization** > **Authorizations** > **Additional Authorization Creator**.
 
-    ![screen showing where to find *Additional Authorization Creator in sap b1](.\media\permissions\an-additional-sap1.png)
+    ![screen showing where to find Additional Authorization Creator in sap b1](.\media\permissions\an-additional-sap1.png)
 
 3. In this window, a superuser can view all created additional authorizations related to **Analytics** variants. Use the previously noted **GUID** to find your variant in the list.
 
-    ![screen showing selecting a variant in sap b1](.\media\permissions\an-additional-sap12.png)
+    ![screen showing selecting a variant in Additional Authorization Creator in sap b1](.\media\permissions\an-additional-sap12.png)
 
 :::info[note]
 If you have any questions, contact us using [CompuTec Support Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp).

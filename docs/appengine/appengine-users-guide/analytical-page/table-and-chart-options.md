@@ -18,13 +18,13 @@ The **General** tab allows you to configure the data source and define how indiv
 
 Defines the name displayed in the column header in the report.
 
-![screen showing general tab](.\media\table_chart_opt\gen-tab1.png)
+![screen showing where to edit column display name](.\media\table_chart_opt\gen-tab1.png)
 
 ### Change Column Type
 
 Select the data type for the column.
 
-![screen showing general tab](.\media\table_chart_opt\gen-tab2.png)
+![screen showing where to change column type](.\media\table_chart_opt\gen-tab2.png)
 
 Available types include:
 
@@ -45,7 +45,7 @@ Available types include:
 
 Collections allow you to map values to additional information.
 
-![screen showing general tab](.\media\table_chart_opt\gen-tab3.png)
+![screen showing where to set a collection](.\media\table_chart_opt\gen-tab3.png)
 
 You can choose from three collection types:
 
@@ -69,16 +69,16 @@ To create a new collection, follow these steps:
 
         - **Table**/**View** collection: Provide **Collection** (the SAP table name that contains the data, for example, ``OWHS``), **Key** (the field used to match the data, for example, ``WhsCode``), and your custom name for the collection.
 
-            ![screen showing general tab](.\media\table_chart_opt\collection1.png)
+            ![screen showing table/view collection](.\media\table_chart_opt\collection1.png)
 
         - **Custom** collection: Provide the **Key** and **Name** pairs that match the current field values, for example: ``HR`` and ``Header``.
 
-            ![screen showing general tab](.\media\table_chart_opt\collection2.png)
+            ![screen showing custom collection](.\media\table_chart_opt\collection2.png)
 
         - **Dynamic** collection: Provide **Key** based on **Field** name. It limits selectable values based on the report results. 
         With a **Dynamic** collection, the system shows only values that exist in the report output, instead of all values from the source table. 
 
-            ![screen showing general tab](.\media\table_chart_opt\collection3.png)
+            ![screen showing dynamic collection](.\media\table_chart_opt\collection3.png)
 
 3. Click **Accept** to save the collection.
 
@@ -86,7 +86,7 @@ To create a new collection, follow these steps:
 
 Allows you to link the column directly to **SAP Business One** objects.
 
-![screen showing general tab](.\media\table_chart_opt\gen-tab4.png)
+![screen showing where to set a link to sap data](.\media\table_chart_opt\gen-tab4.png)
 
 You can configure:
 
@@ -95,7 +95,7 @@ You can configure:
   - **Object Type** – defines which SAP object to open (for example, ``Sales Order`` or ``Business Partner``)
   - **Key** – specifies which column value is used to identify the record
 
-  ![alt text](media/table_chart_opt/general-tab-link-settings.png)
+  ![a screen shoing how to configure object type lik to sap in the report](media/table_chart_opt/general-tab-link-settings.png)
 
     This option is best when you want to navigate directly to a specific type of document or master data.
 
@@ -103,7 +103,7 @@ You can configure:
   - **Field** – defines the target field used for navigation
   - **Key** – specifies which column value is used as the reference.
 
-  ![alt text](media/table_chart_opt/general-tab-link-settings2.png)
+  ![a screen shoing how to configure field link to sap in the report](media/table_chart_opt/general-tab-link-settings2.png)
 
     This option provides more flexibility when linking data that is not tied to a single object type.
 
@@ -115,7 +115,7 @@ Splits a date field **into additional components**, such as month number, or wee
 
 This option is available only for **Date** data types.
 
-![screen showing general tab](.\media\table_chart_opt\gen-tab5.png)
+![screen showing where to enable generating date parts](.\media\table_chart_opt\gen-tab5.png)
 
 ### Define Whether the Data is Aggregable
 
@@ -124,7 +124,7 @@ This option is available only for **Date** data types.
 - Chart calculations
 - Table summaries
 
-![screen showing general tab](.\media\table_chart_opt\gen-tab6.png)
+![screen showing where to enable aggregation](.\media\table_chart_opt\gen-tab6.png)
 
 This option is available only for **numeric data types**.
 
@@ -132,7 +132,7 @@ This option is available only for **numeric data types**.
 
 The **Filter Group** option assigns a column to a specific group of filters in the report.
 
-![screen showing general tab](.\media\table_chart_opt\gen-tab7.png)
+![screen showing where to configure filter group](.\media\table_chart_opt\gen-tab7.png)
 
 This grouping helps organize filters in the report interface. Columns assigned to the same group appear together in the **Adapt Filters** panel, making related filters easier to find and manage.
 
@@ -144,22 +144,22 @@ To see your filter groups, follow these steps:
 
 1. In the chosen **Variant**, click **Adapt Filter**.
 
-        ![screen showing general tab](.\media\table_chart_opt\filter-groups112.png)
+        ![screen showing where to click adapt filters](.\media\table_chart_opt\filter-groups112.png)
 
 2. Click the **Group View** icon.
 
-        ![screen showing general tab](.\media\table_chart_opt\filter-groups1123.png)
+        ![screen showing group view icon](.\media\table_chart_opt\filter-groups1123.png)
 
 3. You will now see the filters organized according to the **Filter Groups** defined in the configuration.
 
-        ![screen showing general tab](.\media\table_chart_opt\filter-groups11234.png)
+        ![screen showing filters organized accordning the filter groups in the report](.\media\table_chart_opt\filter-groups11234.png)
 
 You can then enable or disable individual filters within each group and choose which ones should be visible in the report.
 
 :::warning[important]
 After changing table settings, you may see a **warning** in the **Variants** tab.
 
-![screen showing general tab](.\media\table_chart_opt\warinig-after-changes.png)
+![screen showing a warning in variants tab](.\media\table_chart_opt\warinig-after-changes.png)
 
 This happens because changes in table configuration can affect existing variants.
 
@@ -171,11 +171,11 @@ To resolve this issue:
 
 3. Click **Fix All Variants**.
 
-        ![screen showing general tab](.\media\table_chart_opt\warinig-after-changes-fix.png)
+        ![screen showing where to click to fix all variants](.\media\table_chart_opt\warinig-after-changes-fix.png)
 
 4. **Update** the changes.
 
-        ![screen showing general tab](.\media\table_chart_opt\warinig-after-changes-fix2.png)
+        ![screen showing how to update the changes in variant](.\media\table_chart_opt\warinig-after-changes-fix2.png)
 
 :::
 
@@ -183,7 +183,7 @@ To resolve this issue:
 
 In the Actions tab, you can review Linked Objects associated with the selected data source. Actions allow users to trigger specific operations for a selected row directly from the report.
 
-![screen showing general tab](.\media\table_chart_opt\actions-tab.png)
+![screen showing actions tab](.\media\table_chart_opt\actions-tab.png)
 
 Actions are defined in plugins, so after installing plugins, additional actions become available for use in Analytics.
 
@@ -191,21 +191,21 @@ To use actions in a report:
 
 1. Click **edit icon** to enable edit mode in the chosen source.
 
-        ![screen showing general tab](.\media\table_chart_opt\actions-tab-edit.png)
+        ![screen showing how to enable edit mode](.\media\table_chart_opt\actions-tab-edit.png)
 
 2. In the **Actions** tab of the variant configuration, click the name of the  **Action** you want to edit.
 
-        ![screen showing general tab](.\media\table_chart_opt\actions-tab-edit2.png)
+        ![screen showing the actions tab](.\media\table_chart_opt\actions-tab-edit2.png)
 
 3. Once configured, you can enable or disable these actions to allow users to perform operations directly from the analytics report.
 
-        ![screen showing general tab](.\media\table_chart_opt\actions-tab-edit3.png)
+        ![screen showing the actions edit options](.\media\table_chart_opt\actions-tab-edit3.png)
 
 ## Variants Tab
 
 The **Variants** tab displays all variants created for the selected data source.
 
-![screen showing general tab](.\media\table_chart_opt\an-sm-click-src-edit-mode-variants.png)
+![screen showing variants tab](.\media\table_chart_opt\an-sm-click-src-edit-mode-variants.png)
 
 **Variants** allow you to save different report configurations, including filters, table layouts, and chart settings. In this tab, you can review existing variants, add new variants, or edit the existing existing ones.
 
@@ -215,7 +215,7 @@ You can read more about variants in [our article](http://learn.computec.one/docs
 
 ### Basic Settings
 
-In the Basic Settings section, you can:
+In the **Basic Settings** section, you can:
 
 - Edit the **Variant Name**
 - Add a **Description**
@@ -223,7 +223,7 @@ In the Basic Settings section, you can:
 - Make the variant **Public** or keep it private
 - Configure additional permissions
 
-![alt text](media/table_chart_opt/an-sm-click-src-edit-mode-variants-edit-basic.png)
+![screen showing basic settings section](media/table_chart_opt/an-sm-click-src-edit-mode-variants-edit-basic.png)
 
 :::note[info]
 For more information about managing permissions, see the [our article on Analytics permissions](https://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/permissions_in_analytics).
@@ -236,7 +236,7 @@ For more information about managing permissions, see the [our article on Analyti
 - in the **SAP Business One** main menu, or
 - as a **right-click** (context menu) option within a selected form (for example, a Manufacturing Order)
 
-![alt text](media/table_chart_opt/an-sm-click-src-edit-mode-variants-edit-forms.png)
+![screen showing forms definition](media/table_chart_opt/an-sm-click-src-edit-mode-variants-edit-forms.png)
 
 This enables users to open **CompuTec AppEngine Analytics** reports directly from **SAP Business One**, without switching applications. For example, users can launch the report through a dedicated SAP menu option or by using the right-click context menu, for example, from a Manufacturing Order.
 
@@ -262,13 +262,13 @@ To add a form definition:
 
 6. If the results are correct, click **Accept**, and then click **Update** in the **Form Definition** tab.
 
-        ![screen showing a form definitrion example](media/table_chart_opt/form-def4.png)
+        ![screen showing sabing changes in a form definitrion](media/table_chart_opt/form-def4.png)
 
 ### Table Settings
 
 The **Table Settings** section controls how the report table behaves and appears.
 
-![screen showing a form definitrion example](media/table_chart_opt/an-sm-click-src-edit-mode-variants-edit-table.png)
+![screen showing table setings view](media/table_chart_opt/an-sm-click-src-edit-mode-variants-edit-table.png)
 
 Available options include:
 
@@ -301,7 +301,7 @@ Available options include:
 
 The **Chart Settings** section controls how data is visualized.
 
-![screen showing a form definitrion example](media/table_chart_opt/an-sm-click-src-edit-mode-variants-edit-chart.png)
+![screen showing chart settings view](media/table_chart_opt/an-sm-click-src-edit-mode-variants-edit-chart.png)
 
 Available options:
 
@@ -317,7 +317,7 @@ Available options:
 
 This section allows you to configure **Visual Filters**.
 
-![screen showing a form definitrion example](./media/table_chart_opt/an-sm-click-src-edit-mode-variants-edit-visual.png)
+![screen showing visual filters section](./media/table_chart_opt/an-sm-click-src-edit-mode-variants-edit-visual.png)
 
 In this section, you can:
 
@@ -332,7 +332,7 @@ In this section, you can:
 
 In this section, you configure which actions are available for the selected report variant.
 
-![screen showing a form definitrion example](./media/table_chart_opt/an-sm-click-src-edit-mode-variants-edit-actons.png)
+![screen showing action settings section](./media/table_chart_opt/an-sm-click-src-edit-mode-variants-edit-actons.png)
 
 This allows you to control which operations users can perform directly from the report, depending on the variant they are using.
 
@@ -352,17 +352,17 @@ To activate an action, follow these steps:
 
 1. Go to the **Source** where you want to enable the Action and open the **Actions** tab.
 
-    ![screen showing a form definitrion example](./media\table_chart_opt\activate-action1.png)
+    ![screen showing where to find the actions tab](./media\table_chart_opt\activate-action1.png)
 
 2. Enter the edit mode by clicking the **edit icon**.
 
-    ![screen showing a form definitrion example](./media/table_chart_opt/activate-action12.png)
+    ![screen showing entering the edit mode](./media/table_chart_opt/activate-action12.png)
 
 3. Select **Action** you want to activate.
 
-    ![screen showing a form definitrion example](./media/table_chart_opt/activate-action123.png)
+    ![screen showing choosing an action for activation](./media/table_chart_opt/activate-action123.png)
 
-4. In the **Additional Information** section, configure how the Action should receive data from the report:
+4. In the **Additional Information** section, configure how the **Action** should receive data from the report:
 
     - (optional) **Object Type**: Defines how the Action should behave depending on the object it is applied to.  
     Example: if an Action can work with both the **Sales Orders** and **Manufacturing Orders** object types, you can specify the rules for the selected object type.
@@ -374,15 +374,15 @@ To activate an action, follow these steps:
 
     - **Value Source**: Select the column from the report that should be mapped to the Action parameter.
 
-    ![screen showing a form definitrion example](./media/table_chart_opt/activate-action1234.png)
+    ![screen showing additional information section](./media/table_chart_opt/activate-action1234.png)
 
 5. Click **Use in Source** to apply the mapping.
 
-    ![screen showing a form definitrion example](./media/table_chart_opt/activate-action123456.png)
+    ![screen showing how to apply mapping](./media/table_chart_opt/activate-action123456.png)
 
 6. Click **Update**.
 
-    ![screen showing a form definitrion example](./media/table_chart_opt/activate-action1234567.png)
+    ![screen showing how to update the changes](./media/table_chart_opt/activate-action1234567.png)
 
 7. Done! The **Action** is now activated and available in the report.
 
@@ -395,11 +395,11 @@ The **Drill Downs** section allows you to create connections between reports. He
 - Add new ones
 - Delete existing drill-downs
 
-![screen showing a form definitrion example](./media/table_chart_opt/dd1.png)
+![screen showing drill down section](./media/table_chart_opt/dd1.png)
 
 **Drill Down** connects one report to another. When a drill-down is configured, an arrow icon appears on the right side of the table. Users can click it to open a related report with additional details.
 
-![screen showing a form definitrion example](./media/table_chart_opt/drilldowns0.png)
+![screen showing how a drill-down looks in the reports](./media/table_chart_opt/drilldowns0.png)
 
 #### Add a new Drill Down
 
@@ -415,32 +415,32 @@ To add a new Drill Down:
 
 4. Click the **edit icon**.
 
-    ![screen showing a form definitrion example](./media/table_chart_opt/dd2.png)
+    ![screen showing clicking on edit icon](./media/table_chart_opt/dd2.png)
 
 5. Navigate to **Drill Downs**.
 
-    ![screen showing a form definitrion example](./media/table_chart_opt/dd3.png)
+    ![screen showing navigation to drill downs section](./media/table_chart_opt/dd3.png)
 
 6. Click **+ Add Drill Down**.
 
-    ![screen showing a form definitrion example](./media/table_chart_opt/drilldowns2.png)
+    ![screen showing how to add a drill down](./media/table_chart_opt/drilldowns2.png)
 
 7. Enter your **Drill Down Name**.
 
-    ![screen showing a form definitrion example](./media/table_chart_opt/drilldowns3.png)
+    ![screen showing entering a drill down name](./media/table_chart_opt/drilldowns3.png)
 
 8. Choose the **Target** for your **Drill Down**: The report that will open when the drill-down is used.
 
-    ![screen showing a form definitrion example](./media/table_chart_opt/drilldowns4.png)
+    ![screen showing choosing a target for a drill down](./media/table_chart_opt/drilldowns4.png)
 
 9. Choose the **Target Variant**: the variant of the target report.
 
-    ![screen showing a form definitrion example](./media/table_chart_opt/drilldowns5.png)
+    ![screen showing choosing a target variant for a drill down](./media/table_chart_opt/drilldowns5.png)
 
 10. (optional) You can filter drill-down results so that the target report displays only relevant data. To add a filter:
     - Click **+ Add Filter**.
 
-        ![screen showing a form definitrion example](./media/table_chart_opt/drilldowns6.png)
+        ![screen showing adding filters to drill downs](./media/table_chart_opt/drilldowns6.png)
 
     - Select **Current Field** and **Target Field**. These fields are used to map and connect the reports.
     - If you enable **Required**, the drill-down option will not appear when the **Current Field** value is empty.
@@ -449,20 +449,20 @@ To add a new Drill Down:
     :::info[note]
     If multiple drill-downs are configured, users will see several navigation options when clicking the Drill Down arrow in the report.
 
-    ![screen showing a form definitrion example](./media/table_chart_opt/drilldowns7.png)
+    ![screen showing a view with multiple drill downs configured in one table report](./media/table_chart_opt/drilldowns7.png)
     :::
 
 11. (optional) Click **Actions** to save the existing settings as a new variant.
 
-    ![screen showing a form definitrion example](./media/table_chart_opt/drilldowns-choose-variant-save1.png)
+    ![screen showing saving settings](./media/table_chart_opt/drilldowns-choose-variant-save1.png)
 
 12. Click **Update** to update the edited variant.
 
-    ![screen showing a form definitrion example](./media/table_chart_opt/drilldowns-choose-variant-save2.png)
+    ![screen showing updating changes in a variant](./media/table_chart_opt/drilldowns-choose-variant-save2.png)
 
 13. Click **Update** next to the source name to save your changes.
 
-    ![screen showing a form definitrion example](./media/table_chart_opt/drilldowns-choose-variant-update.png)
+    ![screen showing updateing changes in a source](./media/table_chart_opt/drilldowns-choose-variant-update.png)
 
 :::info[note]
 If you have any questions, contact us using [CompuTec Support Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp).
