@@ -11,7 +11,7 @@ While **View Actions** are tied to document-level triggers (such as ``On Add`` o
 Here are main differences between Smart and View Actions:
 
 - **View Actions**:  
-  - Run only on document events (such as On Add or On Update).  
+  - Run only on document events (such as ``On Add`` or ``On Update``).  
   - Best suited for document validation and background automation.
 
 - **Smart Actions**:  
@@ -20,7 +20,7 @@ Here are main differences between Smart and View Actions:
 
 ## Key functions of Smart Actions
 
-With **Smart Action**s in **Computec WebUp**, you define an action once and reuse it in multiple places.
+With **Smart Actions** in **Computec WebUp**, you define an action once and reuse it in multiple places.
 
 **Smart Actions** can be used in many scenarios. For example, they allow you to:
 
