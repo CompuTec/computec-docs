@@ -12,11 +12,11 @@ Here are main differences between Smart and View Actions:
 
 - **View Actions**:  
   - Run only on document events (such as ``On Add`` or ``On Update``).  
-  - Best suited for document validation and background automation.
+  - Best for document validation and background automation.
 
 - **Smart Actions**:  
   - Work on user interactions inside the UI.  
-  - Best suited for interactive user experience and dynamic logic.
+  - Best for interactive user experience and dynamic logic.
 
 ## Key functions of Smart Actions
 
