@@ -88,7 +88,7 @@ After the document is created, update it using a ``PATCH`` request to provide th
 
 #### Example: Create Pick Order for a Production Operation
 
-When creating a Pick Order for a specific operation, the request must include operation details. 
+When creating a Pick Order for a specific operation, the request must include operation details.
 
 Example request body:
 
@@ -106,12 +106,12 @@ Example request body:
 } 
 ```
 
-:::Info[note] 
+:::Info[note]
 The values in the example request are placeholders. Replace them with the correct values from your environment:
 
-- **IssueType**: Defines the issue type. For operations use "Operations" 
-- **LineNumbers**: Specifies the manufacturing order operation line 
-- **ManufacturingOrderDocEntries**: Manufacturing order document number 
+- **IssueType**: Defines the issue type. For operations use ``Operations``
+- **LineNumbers**: Specifies the manufacturing order operation line
+- **ManufacturingOrderDocEntries**: Manufacturing order document number
 
 The **operation line number** can be retrieved from the **@CT_PF_MOR12** table.
 
