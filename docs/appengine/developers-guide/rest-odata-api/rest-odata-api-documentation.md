@@ -8,6 +8,8 @@ sidebar_position: 1
 
 CompuTec AppEngine provides a **REST and OData API** that allows external systems and tools to communicate with **CompuTec** solutions such as **CompuTec ProcessForce** running on **SAP Business One**.
 
+![screen showing selecting a definiton for REST/ ODataAPI documentation](./media/rest-odata-api-documentation/2note-1.png)
+
 Using the API, you can automatically read data from the system, create documents, or update existing records without manually entering data in **SAP Business One**.
 
 Typical **REST/OData API** use cases include:
@@ -16,10 +18,6 @@ Typical **REST/OData API** use cases include:
 - Automating repetitive processes
 - Creating or updating documents programmatically
 - Retrieving operational data for reporting or monitoring
-
-:::note[info]
-All available **REST/OData API methods** are listed in [our documentation](http://learn.computec.one/docs/appengine/developers-guide/rest-odata-api/rest-odata-api-documentation#access-computec-restodata-api-documentation).
-:::
 
 ### About API
 
@@ -50,7 +48,7 @@ The general workflow for using the API is:
 - Test API calls
 - View example responses
 
-![screen showing selecting a definiton for REST/ ODataAPI documentation](./media/rest-odata-api-documentation/2note-1.png)
+![screen showing the REST/OData API documentation on Swagger site](./media/rest-odata-api-documentation/2api-login-start234.png)
 
 ## Access CompuTec REST/OData API documentation
 
@@ -171,7 +169,7 @@ To access the API through Swagger, follow these steps:
         ![screen showing the REST/OData API documentation on Swagger site](./media/rest-odata-api-documentation/2api-login-start234.png)
 
         :::info[note]
-        If Swagger is opened without an active Launchpad session (for example by opening the Swagger URL directly, using another browser, or an incognito session), you must authenticate using the /api/login API endpoint.  
+        If **Swagger** is opened without an active **Launchpad** session (for example by opening the Swagger URL directly, using another browser, or an incognito session), you must authenticate using the ``/api/login`` API endpoint.  
  
         To log in: 
 
