@@ -88,7 +88,7 @@ This method is typically used when building system integrations, testing API cal
 To log in using an **integration tool**, follow these steps:
 
 1. Open **Postman**, **Visual Studio Code integration** or any other **external tool**.
-2. Create a **new request** or **.http file**.
+2. Create a **new request** or **.rest file**.
 3. In the file, paste the **login request**.
 
 ![screen showing an example login request for an externam API tool](./media/rest-odata-api-documentation/vsc1.png)
@@ -233,6 +233,10 @@ Content-Type: application/json
 } 
 ```
 
+:::note[info]
+In our example, ``1799`` is **Manufacturing Order DocEntry**. Replace this value with the **DocEntry** from your own **Manufacturing Order**.
+:::
+
 Example with additional parameters:
 
 ```http
@@ -311,6 +315,14 @@ Pick Receipt creation also requires two steps.
 
 1. Create an empty **Pick Receipt**
 2. Add item details
+
+:::note[info]
+The system will automatically create related inventory documents in the background:
+
+- **Goods Issue** when adding or updating a **Pick Order** (Automatically issue materials on **Pick Order Add/Update**)
+- **Goods Receipt** when adding or updating a **Pick Receipt** (Automatically receipt materials on **Pick Receipt Add/Update**)
+
+:::
 
 #### Step 1: Create an empty Pick Receipt
 
