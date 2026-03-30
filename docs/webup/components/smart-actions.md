@@ -138,7 +138,7 @@ To assign the **Smart Action** to a control, follow these steps:
     ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-as5.png)
 
 8. Select the **Source** for your **Smart Action**:
-    - **Static**: A fixed value you enter manually 
+    - **Static**: A fixed value you enter manually
     - **Data Model**: A dynamic value from SAP Business One (e.g., ``DocNum``, ``CardCode``)
 
     ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-as6.png)
