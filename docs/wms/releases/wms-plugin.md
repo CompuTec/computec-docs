@@ -6,6 +6,47 @@ sidebar_position: 4
 
 Below are the release notes for CompuTec WMS Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec WMS 3.2603.2
+
+**Release Date: 31 March 2026**
+
+| Issue Type | Components | Release Note |
+| --- | --- | --- |
+| Fixed | WMS Plugin | Fixed an issue where **Put Away** rules with **Storage Categories** could not be saved due to validation errors. You can now apply rules and assign bins without interruptions. |
+| Improved | Client Desktop | Improved error messages for required UDFs – the system now shows clear field descriptions instead of technical codes, making issues easier to understand and fix. |
+| Improved | Client | Added quantity summaries (planned vs processed) in key screens, giving you better control and visibility during picking and packing. |
+| Improved | Client | Improved handling of **Catch Weight (CW)** items – pallet data now correctly includes package quantities after inventory posting. |
+| Improved | Client | Simplified handling of allocated batches across multiple bins – batches are now shown once, reducing duplicates and confusion during picking. |
+| Fixed | Client | Fixed incorrect quantity handling for **Catch Weight** items saved as draft, ensuring consistent and accurate data. |
+| Fixed | Client | Fixed issues with allocated picking, preventing incorrect line creation during processing. |
+| Improved | Server | Non-inventory items from **Sales Orders** are now correctly included in **Delivery** documents, even when using bin-managed warehouses. |
+| Fixed | Server | **Storage Category** limits are now respected – system prevents exceeding max bin quantities or handles them correctly. |
+| New | Server | Added a possibility to force picking only via scanning, blocking manual selection for more controlled warehouse processes. |
+| Fixed | Server | Fixed errors when handling **SUs** with incomplete item data, ensuring smooth processing and visibility. |
+| Improved | Client | Added total weight and quantity summary on **Delivery** documents, improving shipment verification. |
+| Fixed | Server | Fixed issues with empty serial numbers, ensuring correct visibility and processing in **Delivery** flows. |
+| New | Client | Added label printing option directly from **Stock Transfer** screens, speeding up warehouse operations. |
+| Improved | Client | Unified naming in **Custom Query Manager** for consistency. |
+| Fixed | Client | Fixed incorrect **UoM** conversions in returns – quantities are now consistent across all screens. |
+| Fixed | Client | Corrected **CW** quantity handling from **Sales Orders**, ensuring proper picking values. |
+| Improved | Server | Improved logic so partially processed **Pick Lists** are no longer closed automatically, giving users more control. |
+| Fixed | Client | Fixed issues with serial number handling, ensuring proper line updates and visibility. |
+| Fixed | Client, Server | Improved handling of **SAP** connection errors – background processes now stop correctly instead of looping. |
+| Fixed | Client | Fixed **UDF** visibility for **Quick SU Transfer**, allowing proper configuration per process. |
+| Fixed | Client | Fixed restriction when delivering batch-managed **CW** items, allowing correct quantities to be processed. |
+| Fixed | Client Android | Fixed issue where the first warehouse line could not be selected in **Quick Transfer**. |
+| Fixed | Client | Fixed issue where picked batches could not be removed for **Catch Weight** items. |
+| Improved | Service Manager | New **CompuTec WMS** users can now log in without restarting services, simplifying administration. |
+| Fixed | Server | Fixed incorrect negative inventory errors during **SU** processing. |
+| Improved | Server | Restored visibility of **SU** codes during bin selection, improving traceability. |
+| Fixed | Server | Fixed missing references when using **SU Wizard**, ensuring correct document linkage. |
+| Fixed | Client Android | Improved **Android Client** stability, reducing crashes during warehouse operations. |
+| Improved | Client | **Add New SU** button now creates a new **SU** instantly, speeding up pallet creation. |
+| Fixed | Client Android | Fixed issue where barcode scanning via **RDP** worked only in filters – scanning now works across the app. |
+| Fixed | Server | Fixed missing **ItemCode** parameter and query binding errors in bin selection. |
+| Fixed | Client | Fixed issue where items disappeared when navigating between steps, ensuring consistent workflow. |
+| Fixed | Client | Fixed errors when working with **Catch Weight** items and batch/serial selection. |
+
 ## CompuTec WMS Plugin 3.2602.1
 
 **Release Date: 26 February 2026**
