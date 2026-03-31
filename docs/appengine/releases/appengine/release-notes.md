@@ -4,6 +4,32 @@ sidebar_position: 1
 
 # CompuTec AppEngine Release Notes
 
+## CompuTec AppEngine 3.2603.1
+
+**Release Date: 31 March 2026**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Improved | AE Analytics | You can now edit predefined sources in **Debug** mode, giving developers more flexibility when testing and adjusting reports. |
+| Fixed | AE Analytics | Fixed an issue with **Form Definitions** without **Parameters**, preventing incorrect URLs and errors in production environments. |
+| Fixed | AE Core | Fixed an issue where Time-based filtering (**TimeSpan**) did not work correctly, ensuring accurate data filtering. |
+| Improved | AE Core | Improved variant installation process, ensuring correct structure and preventing issues with parent-child relationships. |
+| Improved | AE Core | Added support for nullable data types in **Query Manager**, improving stability when working with incomplete or optional data. |
+| Fixed | AE Core | Fixed an issue where failed plugin installations left incomplete folders, which could prevent **CompuTec AppEngine** from starting. System now cleans up properly after failed installations. |
+| Fixed | AE Analytics | Users with read-only access can no longer delete variants, improving data security and preventing accidental changes. |
+| Fixed | AE Authentication | Fixed an issue where API login using **B1SiteUser** failed with a system error. Authentication now works correctly for all supported users. |
+| Improved | AE Background Processing | Improved background job configuration and handling, ensuring more reliable execution and visibility. |
+| Improved | AE Administration Panel | Improved initial system setup and SLD registration, preventing endless loading when incorrect credentials are provided. |
+| Improved | AE Analytics | Improved column and filter management, making it easier to organize and adjust report layouts. |
+| Fixed | AE Analytics | Fixed issues with grouping and sorting in **Source Creator**, ensuring consistent report configuration. |
+| Fixed | AE Common | Improved handling of numeric types, ensuring better compatibility across components. |
+| Fixed | MRP | Fixed issues with selecting values in filters (e.g., scenario or item code), ensuring correct data selection. |
+| Fixed | AE Administration Panel | Removed non-existing background jobs from statistics, improving clarity and accuracy of job monitoring. |
+| Fixed | WebUp | Improved validation in **SelectInput** controls, preventing incorrect manual input and ensuring proper selection behavior. |
+| New | CLI | Introduced a new **CompuTec AppEngine CLI tool**, allowing administrators to manage companies, plugins, and jobs more efficiently (e.g., activate companies, install plugins, enable jobs). |
+| Improved | AE Core | Updated **CompuTec AppEngine icon**, improving visual consistency. |
+| Improved | Architecture | Added support for both 5-parameter and 6-parameter versions of **SBO_SP_TransactionNotification**, ensuring compatibility with newer **SAP Business One** versions and smoother installations. |
+
 ## CompuTec AppEngine 3.2602.1
 
 **Release Date: 26 February 2026**
