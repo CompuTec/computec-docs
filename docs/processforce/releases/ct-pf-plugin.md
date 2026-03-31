@@ -11,6 +11,30 @@ You can find all download links and release notes for the latest available **Com
 However, we strongly recommend using **CompuTec ProcessForce Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec ProcessForce 3.2603.3
+
+**Release Date: 31 March 2026**
+
+| Issue Type | Components | Release Note |
+| --- | --- | --- |
+| Fixed | Time Bookings | Fixed an issue where opening **Employee Time Recording** from a **Time Booking** could trigger an error and prevent the form from loading. You can now open and work with employee time records without interruptions. |
+| Fixed | Scheduling | Fixed an issue where recalculating lead time did not update dates in **Manufacturing Orders**. Scheduling now correctly updates dates or provides proper system feedback. |
+| Fixed | Bill of Materials | Fixed an issue where replacing a component in a **Manufacturing Order** did not calculate the correct planned quantity on first load. Quantities are now calculated immediately based on formulas. |
+| Fixed | Quality Control | Fixed an issue where creating a **Manufacturing Order** triggered incorrect QC error messages. QC documents are now created correctly without unnecessary errors. |
+| Fixed | Manufacturing Order | Fixed an issue where **Manufacturing Orders** did not refresh automatically after rollback, even when enabled in settings. Changes are now reflected immediately. |
+| Fixed | Quality Control | Fixed an issue with QC creation for external **Manufacturing Orders**. QC documents are now generated correctly based on defined test protocols. |
+| Improved | Performance | Improved performance of **Goods Receipt** based on **Pick Receipt**, especially in batch processing scenarios. |
+| Fixed | Production Costing | Fixed an issue where costing entries were removed after adding the first routing. Existing costing data is now preserved correctly. |
+| Fixed | Scheduling | Fixed multiple issues in the **Scheduling Board** from **Order Recommendation**, including incorrect levels, dates, directions, and sequencing. Planning results are now accurate and consistent. |
+| Fixed | Gantt Chart | Fixed an issue with **Additional Planning Information** not loading correctly due to query errors. |
+| Fixed | Manufacturing Order | Fixed an issue where using the golden arrow from **Stock Status Report** could crash **SAP** when opening a **Manufacturing Order**. |
+| Improved | Performance | Improved performance of **Manufacturing Order** creation and updates after upgrade, reducing delays in planning and execution processes. |
+| Fixed | Production Costing | Fixed an issue where **Journal Entry** series incorrectly depended on period indicators. |
+| Improved | Performance | Improved system performance by optimizing SQL queries and adding indexes, resulting in faster operations. |
+| Fixed | Manufacturing Order | Fixed an issue in the **Scrap** tab where the **Description** field showed incorrect data. The correct description is now displayed and saved. |
+| Fixed | Manufacturing Order | Fixed an issue where creating a **Goods Receipt** from **Pick Receipt** caused a form initialization error. |
+| Improved | Batches | Improved performance of batch creation during **Goods Receipt**, reducing time needed to generate multiple batches. |
+
 ## CompuTec ProcessForce 3.2603.1
 
 **Release Date: 3 March 2026**
