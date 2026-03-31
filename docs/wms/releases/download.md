@@ -57,9 +57,9 @@ If you use Comp uTecProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to i
   </tr>
   <tr>
     <td>CompuTec WMS Server</td>
-    <td>2.10.23 R5 64-bit version</td>
-    <td rowspan="5">2.10.23.5</td>
-    <td><a href="https://download.computec.one/software/wms/server/releases/CompuTec_WMS_Server_2.10.23.5_x64.exe">Download</a></td>
+    <td>2.10.23 R6 64-bit version</td>
+    <td rowspan="5">2.10.23.6</td>
+    <td><a href="https://download.computec.one/software/wms/server/releases/CompuTec_WMS_Server_2.10.23.6_x64.exe">Download</a></td>
     <td>
       <ul>
         <li>
@@ -83,7 +83,7 @@ If you use Comp uTecProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to i
   <tr>
     <td>CompuTec WMS Client Windows Desktop</td>
     <td>-</td>
-    <td><a href="https://download.computec.one/software/wms/client/windows/releases/CompuTec_WMS_Client_2.10.23.5.msi">Download</a></td>
+    <td><a href="https://download.computec.one/software/wms/client/windows/releases/CompuTec_WMS_Client_2.10.23.6.msi">Download</a></td>
     <td>
       <ul>
         <li>Windows 10, version 1709</li>
@@ -94,19 +94,19 @@ If you use Comp uTecProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to i
   <tr>
     <td>CompuTec WMS Client Windows Desktop (legacy)</td>
     <td>-</td>
-    <td><a href="https://download.computec.one/software/wms/client/windows/releases/CompuTec_WMS_Client_Legacy_2.10.23.5.msi">Download</a></td>
+    <td><a href="https://download.computec.one/software/wms/client/windows/releases/CompuTec_WMS_Client_Legacy_2.10.23.6.msi">Download</a></td>
     <td>-</td>
   </tr>
   <tr>
     <td>CompuTec WMS Client Windows CE</td>
     <td>-</td>
-    <td><a href="https://download.computec.one/software/wms/client/ce/releases/CompuTec_WMS_Client_2.10.23.5.cab">Download</a></td>
+    <td><a href="https://download.computec.one/software/wms/client/ce/releases/CompuTec_WMS_Client_2.10.23.6.cab">Download</a></td>
     <td>-</td>
   </tr>
   <tr>
     <td>CompuTec WMS Client Android</td>
     <td>-</td>
-    <td><a href="https://download.computec.one/software/wms/client/android/releases/CompuTec_WMS_Client_2.10.23.5.apk">Download</a></td>
+    <td><a href="https://download.computec.one/software/wms/client/android/releases/CompuTec_WMS_Client_2.10.23.6.apk">Download</a></td>
     <td>-</td>
   </tr>
 </table>
