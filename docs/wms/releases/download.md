@@ -24,7 +24,7 @@ Here you can download all required CompuTec WMS files.
 
 ## Current Releases
 
-Released on 10.11.2025
+Released on 31.03.2026
 
 :::warning
     Due to changes in the licensing mechanism in the 2.10.19 R3/2.9.19 R3 version, it is required to reassign terminal licenses to terminals after the upgrade.
@@ -123,9 +123,9 @@ If you use Comp uTecProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to i
   </tr>
   <tr>
     <td rowspan="2">CompuTec WMS Server</td>
-    <td>2.9.23 R5 32-bit version</td>
-    <td rowspan="5">2.9.23.5</td>
-    <td><a href="https://download.computec.one/software/wms/server/releases/CompuTec_WMS_Server_2.9.23.5_x86.exe">Download</a></td>
+    <td>2.9.23 R6 32-bit version</td>
+    <td rowspan="5">2.9.23.6</td>
+    <td><a href="https://download.computec.one/software/wms/server/releases/CompuTec_WMS_Server_2.9.23.6_x86.exe">Download</a></td>
     <td>
       <ul>
         <li>
@@ -147,8 +147,8 @@ If you use Comp uTecProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to i
     </td>
   </tr>
   <tr>
-    <td>2.9.23 R5 64-bit version</td>
-    <td><a href="https://download.computec.one/software/wms/server/releases/CompuTec_WMS_Server_2.9.23.5_x64.exe">Download</a></td>
+    <td>2.9.23 R6 64-bit version</td>
+    <td><a href="https://download.computec.one/software/wms/server/releases/CompuTec_WMS_Server_2.9.23.6_x64.exe">Download</a></td>
     <td>
       <ul>
         <li>
@@ -172,13 +172,13 @@ If you use Comp uTecProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to i
   <tr>
     <td>CompuTec WMS Client Windows</td>
     <td>-</td>
-    <td><a href="https://download.computec.one/software/wms/client/windows/releases/CompuTec_WMS_Client_2.9.23.5.msi">Download</a></td>
+    <td><a href="https://download.computec.one/software/wms/client/windows/releases/CompuTec_WMS_Client_2.9.23.6.msi">Download</a></td>
     <td>-</td>
   </tr>
   <tr>
     <td>CompuTec WMS Client Windows CE</td>
     <td>-</td>
-    <td><a href="https://download.computec.one/software/wms/client/ce/releases/CompuTec_WMS_Client_2.9.23.5.cab">Download</a></td>
+    <td><a href="https://download.computec.one/software/wms/client/ce/releases/CompuTec_WMS_Client_2.9.23.6.cab">Download</a></td>
     <td>-</td>
   </tr>
 </table>*/}

@@ -13,6 +13,12 @@ The release notes for CompuTec WMS 3.0 are available after clicking [this link](
 The latest Installer is available to download from [this link](https://learn.computec.one/docs/wms/releases/download).
 :::
 
+## CompuTec WMS 2.10.23 R6
+
+**Release Date: 31 March 2026**
+
+Release information will be released soon.
+
 ## CompuTec WMS 2.10.23 R5
 
 **Release Date: 10 November 2025**
