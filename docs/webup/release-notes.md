@@ -4,11 +4,19 @@ sidebar_position: 6
 
 # CompuTec WebUp Release Notes
 
+## CompuTec WebUp 1.2604.1
+
+**Release Date: 1 April 2026**
+
+| Issue Type | Components | Release Note |
+| --- | --- | --- |
+| Fixed | WebUp | Fixed an issue where **Smart Actions** were not always visible, ensuring your configured actions now appear reliably and work as expected. |
+
 ## CompuTec WebUp 1.2603.2
 
-**Release Date: 2026**
+**Release Date: 31 March 2026**
 
-| Issue Type | Component/s | Release Note |
+| Issue Type | Components | Release Note |
 | --- | --- | --- |
 | New | WebUp | Introduced [**Smart Actions**](https://learn.computec.one/docs/webup/components/smart-actions), extending the concept of **View Actions** by making your logic reusable, flexible, and applicable across multiple areas of the **SAP Business One Web Client**. [Read more](https://learn.computec.one/docs/webup/components/smart-actions) |
 | New | WebUp Manager | Added **Add Control** option, so you can now create your own controls instead of only editing existing ones, giving you full flexibility in UI design. |
