@@ -8,6 +8,8 @@ Below are the release notes for CompuTec Planning & Bottleneck Scheduling (MO Wi
 
 ## CompuTec MOWizard 3.2603.1
 
+**Release Date: 1 April 2026**
+
 | Issue Type | Components | Release Note |
 | --- | --- | --- |
 | Fixed | MOWizard | Fixed an issue where **MOWizard** scenarios did not load and the screen remained stuck on loading. You can now open and work with your scenarios smoothly in both SAP and in your browser. |
