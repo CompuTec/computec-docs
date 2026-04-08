@@ -17,7 +17,15 @@ The latest Installer is available to download from [this link](https://learn.com
 
 **Release Date: 31 March 2026**
 
-Release information will be released soon.
+| Issue Type | Components | Release Note |
+| --- | --- | --- |
+| Fixed | Server | Fixed an issue in **Old Stock Counting** where quantity was not saved on the first attempt for items with UoM but without a defined **Stock Counting UoM**. You can now enter quantity once and it is saved correctly. |
+| Fixed | Client | Fixed an issue where scanning **SU/SSCC** in GRPO-based **Returns** and **Return Requests** returned an ``Incorrect SU Code`` error. SU scanning now works as expected. |
+| Fixed | Client | Fixed an issue where users could not add a new row in **Stock Transfer**, restoring smooth document handling. |
+| Fixed | Server | Fixed an issue where picking was blocked with errors ``Cannot pick more than 0`` and ``Cannot pick more than -1``, even when negative quantities were allowed. You can now pick quantities without errors. |
+| Fixed | Server | Fixed missing **ItemCode** parameter in **SU Wizard** (**Bin Selection** > **Business Objects**), ensuring correct query handling and data context. |
+| Fixed | Server | Fixed an issue where items disappeared after navigating between steps in **SU Wizard**. Items now remain visible throughout the process. |
+| Fixed | Client | Fixed issues with **Goods Return Request** where required quantities were not handled correctly, improving return processing reliability. |
 
 ## CompuTec WMS 2.10.23 R5
 
