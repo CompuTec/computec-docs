@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 7
 ---
 
 # FAQs
@@ -38,7 +38,7 @@ Yes, CompuTec WebUp fully supports both database platforms.
 
 **What version of SAP Business One is required?**  
 The **minimum version is SAP Business One 10 FP 2502**, but we recommend using the **latest available release**.  
-See the CompuTec [Documentation Center](../system-requirements.md) for up-to-date compatibility details.
+See the CompuTec [Documentation Center](https://learn.computec.one/docs/webup/system-requirements) for up-to-date compatibility details.
 
 **Does CompuTec WebUp support on-premise and cloud deployment?**  
 Yes. It supports both **on-premise** and **cloud** environments, including **private** and **public cloud** deployments via the **SAP Customer Cloud Center (CCC)**.
@@ -47,9 +47,9 @@ Yes. It supports both **on-premise** and **cloud** environments, including **pri
 
 **How do I install CompuTec WebUp?**  
 
-You need to [install](/docs/appengine/administrators-guide/configuration-and-administration/installation) CompuTec AppEngine 3.0 and download the **CompuTec WebUp App** from the CompuTec AppEngine App Store. You will also need to install **CompuTec WebUp Manager** and **CompuTec WebUp Client** for Google Chrome and Microsoft Edge, respectively, from their extension stores. However, at the time of writing, publication of the extensions in the Google Chrome and Microsoft Edge stores is pending. In the meantime, you can install the browser extensions manually by following the steps in the [installation guide](./extension-manual-installation.md).
+You need to [install](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation) CompuTec AppEngine 3.0 and download the **CompuTec WebUp App** from the CompuTec AppEngine App Store. You will also need to install **CompuTec WebUp Manager** and **CompuTec WebUp Client** for Google Chrome and Microsoft Edge, respectively, from their extension stores. However, at the time of writing, publication of the extensions in the Google Chrome and Microsoft Edge stores is pending.
 :::info
-Refer to the official [installation guide](../installation-and-activation.md) for detailed steps.
+Refer to the official [installation guide](https://learn.computec.one/docs/webup/installation-and-activation) for detailed steps.
 :::
 **Do I need CompuTec AppEngine to use CompuTec WebUp?**  
 Yes, **CompuTec AppEngine 3.0** is required, but it is provided **free of charge**.
