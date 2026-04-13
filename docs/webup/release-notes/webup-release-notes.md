@@ -23,9 +23,6 @@ sidebar_position: 1
     ![smart actions](./media/releasenotes-webup2.png)
 
 - Added **+ New Control** option, so you can now add your own controls instead of only editing existing ones, giving you full flexibility in UI design.
-
-    ![add a control option](./media/releasenotes-webup1.png)
-
 - Added support for two new controls: [**MultiComboBox**](https://help.sap.com/docs/SAP_BUSINESS_ONE_WEB_CLIENT/e6ac71d18c7543828bd4463f77d67ff7/a8cd89ab240b4496b5b5b9bcdcb66731.html) and [**MultiInput**](https://help.sap.com/docs/SAP_BUSINESS_ONE_WEB_CLIENT/e6ac71d18c7543828bd4463f77d67ff7/63c7fb6ed1f04dd8b2f4625cede634ec.html), enabling more advanced user input scenarios.
 
 **Improved**
