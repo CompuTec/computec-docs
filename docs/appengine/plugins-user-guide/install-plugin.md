@@ -61,7 +61,7 @@ To install and activate a CompuTec AppEngine 3.0 plugin, follow these steps:
         ![filter by plugin type in the plugin store](./media/installation/plugin-install5.png)
 
     :::info[note]
-    Note: Business Logic plugins are typically installed automatically as dependencies when required by another plugin. You do not need to select or install them manually.
+    **Business Logic** plugins are typically installed automatically as dependencies when required by another plugin. You do not need to select or install them manually.
     :::
 
 5. Click **Get...** next to the plugin name on the list to install the latest plugin version.
@@ -98,7 +98,7 @@ To install and activate a CompuTec AppEngine 3.0 plugin, follow these steps:
 
     ![click perform installation to start installation](./media/installation/plugin-install15.png)
 
-11. Click **OK** to confirm CompuTec AppEngine actions.
+11. Click **OK** to confirm the plugin installation.
 
     ![click ok](./media/installation/plugin-install16.png)
 
