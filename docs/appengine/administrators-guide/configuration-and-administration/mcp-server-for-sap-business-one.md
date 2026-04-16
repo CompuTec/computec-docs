@@ -30,10 +30,6 @@ Currently, there are a few AI clients that can connect to the MCP server:
 * **Claude** - Claude desktop version requires minimum:
   * *Pro Plan Subscription* - (only in Development Mode)
   * *Team* Plan Subscription or **Claude for Work** (connectors)
-* **ChatGPT** - requires at least one of the following:
-  * Business Subscription
-  * Enterprise Subscription
-  * Edu Subscription
 * **GitHub Copilot** - Configure the `mcp.json` file. You can find the configuration in AppEngine under *Administration -> Advanced Settings -> MCP -> GitHub Copilot*.
 * **Claude Code**
 :::caution
