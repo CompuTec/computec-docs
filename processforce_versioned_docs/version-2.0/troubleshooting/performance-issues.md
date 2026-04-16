@@ -84,7 +84,7 @@ To enable **Snapshot Isolation**, follow these steps:
 
     ![screen showing clicking OK to apply the changes](./media/performance-issues/snapshot-isolation-level3.png)
 
-5. Restart the **SAP Business One Client**. If the **SAP Business One Client** is already open, close and reopen it. This ensures the new database session settings are applied.
+5. Restart the **SAP Business One Client** to ensure the new database session settings are applied.
 6. Done! The **Snapshot Isolation Level** is enabled.
 
 ## Long delay in opening and browsing CompuTec ProcessForce forms on SAP Business One for SAP HANA
