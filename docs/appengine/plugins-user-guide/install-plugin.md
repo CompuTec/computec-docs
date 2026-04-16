@@ -66,7 +66,7 @@ To install and activate a CompuTec AppEngine 3.0 plugin, follow these steps:
 
 5. Click **Get...** next to the plugin name on the list to install the latest plugin version.
 
-    ![search field in the plugin store](./media/installation/plugin-install6.png)
+    ![search field in the plugin store](./media/installation/plugin-install7.png)
 
 6. (optional) To install a different version of the plugin:
 
