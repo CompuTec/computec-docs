@@ -32,9 +32,11 @@ Currently, there are a few AI clients that can connect to the MCP server:
   * *Team* Plan Subscription or **Claude for Work** (connectors)
 * **GitHub Copilot** - Configure the `mcp.json` file. You can find the configuration in AppEngine under *Administration -> Advanced Settings -> MCP -> GitHub Copilot*.
 * **Claude Code**
+
 :::caution
 Note that this may change at any time. For the current situation, please refer to the AI documentation.
 :::
+
 ## Build-in Tools
 
 * **Session Tools** - Allows you to get a list of companies and connect to the one the user chooses. It also allows you to get information about the connected SAP Business One user.
@@ -64,7 +66,7 @@ If the indicator is still off, please go to Configuration and press the *Discove
 6. Go to the AppEngine Administration -> Advanced Settings page, and in the MCP tab, find the Claude for Code configuration and copy it.
 7. In the `claude_desktop_config.json`, in the `mcpServers` section, paste the previously copied content. It should be similar to the following:
 
-```  
+```
 {
   "mcpServers": {
     "computecAppengine": {
