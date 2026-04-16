@@ -72,7 +72,7 @@ To enable **Snapshot Isolation**, follow these steps:
     Enabling **Snapshot Isolation** on ``model`` ensures that ``tempdb`` automatically inherits the setting after every SQL Server restart. This prevents administrators from having to manually reapply the setting after a reboot.
     :::
 
-2. In **SAP Business One**, go to: **Administration** > **System Initialization** > **General Settings** > **ProcessForce** tab > **General** sub-tab.
+2. In **SAP Business One**, go to: **Administration** > **System Initialization** > **General Settings** > **ProcessForce** > **General**.
 
     ![screen showing General sub-tab opened.](./media/performance-issues/snapshot-isolation-level1.png)
 
