@@ -74,9 +74,16 @@ To enable **Snapshot Isolation**, follow these steps:
 
 2. In **SAP Business One**, go to: **Administration** > **System Initialization** > **General Settings** > **ProcessForce** tab > **General** sub-tab.
 
+    ![screen showing General sub-tab opened.](./media/performance-issues/snapshot-isolation-level1.png)
+
 3. Enable the following checkbox: **Accept Snapshot Isolation Level**.
 
+    ![screen showing snapshot isolation level turned on](./media/performance-issues/snapshot-isolation-level.png)
+
 4. Click **OK** to save the changes.
+
+    ![screen showing clicking OK to apply the changes](./media/performance-issues/snapshot-isolation-level3.png)
+
 5. Restart the **SAP Business One Client**. If the **SAP Business One Client** is already open, close and reopen it. This ensures the new database session settings are applied.
 6. Done! The **Snapshot Isolation Level** is enabled.
 
