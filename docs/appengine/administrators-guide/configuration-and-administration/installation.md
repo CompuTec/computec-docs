@@ -97,9 +97,9 @@ To set up a database, follow these steps:
 
     ![click restart](./media/installation/07-appengine-setup-database-restart.png)
 
-6. After restarting, CompuTec AppEngine will open in your browser in Production Mode at [https://localhost:54001](https://localhost:54001).
+6. After restarting, CompuTec AppEngine will open in your browser at [https://localhost:54001](https://localhost:54001). From there, you can access both the **CompuTec AppEngine Administration Panel**, where you can manage CompuTec AppEngine settings and plugin (app) configuration and installation, and the **CompuTec AppEngine Launchpad**, where you can access installed plugins (apps) and analytics.
 
-    ![comutec appengine page](./media/installation/04-appengine-install-localhost-Copy.png)
+    ![comuptec appengine page view](./media/installation/04-appengine-install-localhost-Copy.png)
 
     :::note[info]
     Port 54001 is the default one and can be changed in the **Administration Panel** > **Configuration** > **Advanced Configuration**.
