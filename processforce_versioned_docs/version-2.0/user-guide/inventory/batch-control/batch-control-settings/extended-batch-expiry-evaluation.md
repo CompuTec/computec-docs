@@ -63,7 +63,7 @@ The following SQL formula ensures that the expiry date of a Finished Item matche
      isnull(min(t4.ExpDate ),getdate())
     from
      [@CT_PF_OMOR] t0
-     left outer join [@CT_PF_MOR5] t1 on t0."DocEntry"=t1."DocEntry"
+     left outer join [CT_PF_MOR5] t1 on t0."DocEntry"=t1."DocEntry"
      left outer join oitl t2 on t1.U_OperEntry =t2.DocEntry and t1.U_OperType=t2.DocType
      left outer join itl1 t3 on t2.LogEntry=t3.LogEntry
      left outer join obtn t4 on t3.ItemCode=t4.ItemCode and t3.SysNumber=t4.SysNumber
@@ -76,7 +76,7 @@ The following SQL formula ensures that the expiry date of a Finished Item matche
     ```sql
     SELECT IFNULL(MIN(T4."ExpDate"), NOW())
      FROM "@CT_PF_OMOR" T0
-     LEFT JOIN "@CT_PF_MOR5" T1 on T0."DocEntry" = T1."DocEntry"
+     LEFT JOIN "CT_PF_MOR5" T1 on T0."DocEntry" = T1."DocEntry"
      LEFT JOIN OITL T2 ON T1."U_OperEntry" = T2."DocEntry" AND T1."U_OperType" = T2."DocType"
      LEFT JOIN ITL1 T3 ON T2."LogEntry" = T3."LogEntry"
      LEFT JOIN OBTN T4 ON T3."ItemCode" = T4."ItemCode" AND T3."SysNumber" = T4."SysNumber"
