@@ -89,5 +89,5 @@ To manually install and activate CompuTec WebClient Start, follow these steps:
 14. Done! You've successfully installed and activated CompuTec WebClient Start extension.
 
 :::info[note]
-If you need help at any point, feel free to reach out through the [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp).
+If you need help at any point, feel free to reach out through the [CompuTec Support Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp).
 :::

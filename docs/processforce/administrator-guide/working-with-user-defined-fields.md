@@ -21,7 +21,7 @@ This guide shows you how to add UDFs to CompuTec ProcessForce forms, along with 
 ## Limitations
 
 | Form or Area | UDF Support |
-|--------------|-------------|
+| -------------- | ------------- |
 | Costed Bill of Materials | ❌ Not Supported |
 | Item Costing & Resource Costing | ⚠️ May cause errors - avoid adding UDFs |
 | Downtime Reason (Flat Forms) | ✅ Supported but not displayed on the form - visible only via side panel |

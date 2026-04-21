@@ -71,5 +71,5 @@ You can find the installer in the **b1_shf\SAP_HANA_CLIENT_x64** folder on the m
     ![Setup](./media/02-appengine-requirements.png)
 
 :::note[info]
-For technical issues or feature requests, contact the [**CompuTec Helpdesk Portal**](https://support.computec.pl/servicedesk/customer/portals?q=webUp).
+For technical issues or feature requests, contact the [CompuTec Support Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp).
 :::

@@ -131,7 +131,7 @@ Yes — preview versions will include **bug fixes and feature enhancements**.
 Yes — the roadmap is published in the [CompuTec Documentation Center](https://trello.com/b/ePvajGq6/computec-webup-roadmap).
 
 **Can I raise a support ticket or provide feedback?**  
-Yes — support and feedback tickets can be submitted through the [CompuTec Helpdesk Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp).
+Yes — support and feedback tickets can be submitted through the [CompuTec Support Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp).
 
 **Will support and maintenance be available for the official release?**  
 Yes — they will be included as part of your **CompuTec WebUp license or subscription**.
