@@ -6,8 +6,6 @@ sidebar_position: 1
 
 In manufacturing, tracking and managing inventory movements accurately is crucial for efficient production processes. SAP Business One leverages Transaction Notification to ensure that every Production Goods Issue and Production Goods Receipt follows predefined business rules. This document outlines the key processes involved and how transaction notifications interact with these operations.
 
----
-
 ## Transaction Notification
 
 To effectively use Transaction Notification for Production Goods Issue/Receipt, it's important to understand the underlying processes. This page provides a detailed overview of the actions involved.
@@ -16,7 +14,7 @@ To effectively use Transaction Notification for Production Goods Issue/Receipt, 
 
     - Adding Goods issue with Field U_FromProduction set to "Y"
     - Creating additional Journal Entries if it is needed
-    - Updating Manufacturing Order (adding new Entries in Documents Tab [@CT_PF_MOR5])
+    - Updating Manufacturing Order
     - Updating Pick Order Document
 
 2) **Production Goods Receipt**
@@ -34,14 +32,14 @@ To effectively use Transaction Notification for Production Goods Issue/Receipt, 
 
     - Creating Goods Issue adjustment – new Goods Receipt document with field U_FromPoduction set to "Y"
     - Creating Additional Journal Entry (Settlement cost by type) adjustment if it's needed - new Journal Entry document
-    - Updating Manufacturing Order (adding new entries in Documents tab [@CT_PF_MOR5])
+    - Updating Manufacturing Order
 
 4) **Goods Receipt Adjustment (Issue Method: Manual)**
 
     - Creating Goods Receipt adjustment: new Goods Issue document with field U_FromProduction set to "Y"
     - Creating Supplementary Journal Entry if it is needed.
     - Creating Additional Journal Entry (Settlement cost by type) adjustment if it is needed – new Journal Entry document
-    - Updating Manufacturing Order (adding new entries in Documents tab [@CT_PF_MOR5])
+    - Updating Manufacturing Order
 
 5) **Goods Receipt (finished product)**
 
@@ -50,12 +48,10 @@ To effectively use Transaction Notification for Production Goods Issue/Receipt, 
     - Creating Goods Receipt adjustment (Issue Method: Backflush): new Goods Issue document with field U_FromProduction set to "Y"
     - Creating Supplementary Journal Entry if it is needed
     - Creating Additional Journal Entry (Settlement cost by type) adjustment if it is needed: new Journal Entry document
-    - Updating Manufacturing Order (adding new entries in Documents tab [@CT_PF_MOR5])
+    - Updating Manufacturing Order
 
 Every action fire SBO_SP_TransactionNotification, so look out for your Goods Issue and Receipt Validation.
 
 :::tip
     To manage Production Goods Receipt or Issue in Transaction Notification, use the ManufacturingOrder or PickReceipt object code.
 :::
-
----
