@@ -148,7 +148,7 @@ The table displays data associated with the object selected in the header, inclu
 - **Action** – Specifies the type of operation (Add/Update) for each row after uploading an Excel file.
 - **Import Status** – Displays the success or failure of each line's import into SAP Business One.
 
-## Additional setting of the Computec PFI plugin
+## Parallel import limit configuration
 
 **CompuTec PFI** plugin includes a feature that lets you control how many records are processed in parallel during import. This helps you balance performance and system stability.  
 
