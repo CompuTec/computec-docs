@@ -18,11 +18,13 @@ To access the **Analytics** module of **CompuTec AppEngine**, follow these steps
 
 1. In your browser, open the **CompuTec AppEngine site** and choose **Launchpad**.
 
-    ![Screen showing appengine launchpad](./media/overview/00-appengine-analytics-login1.png)
+    ![Screen showing appengine launchpad](./media/overview/pfi-art0.png)
 
 2. Click **Log in with SAP Business One**.
 
-3. Log in using your credentials.
+     ![screen showing logging in](./media/overview/pfi-art00.png)
+
+3. Log in using your **SAP Business One credentials**.
 
     ![screen showing logging in](./media/overview/00-appengine-analytics-login2.png)
 

@@ -4,65 +4,138 @@ sidebar_position: 10
 
 # CompuTec Data Import & Export (PFI) Plugin
 
-The CompuTec Data Import & Export (PFI) Plugin is a powerful plugin designed to simplify and accelerate the process of importing and updating data within CompuTec ProcessForce objects. As a flexible alternative to PowerShell updates, PFI offers an intuitive interface and advanced features that cater to the unique needs of users managing CompuTec ProcessForce data.
+The **CompuTec Data Import & Export (PFI)** plugin helps you quickly import, update, and manage data in **CompuTec ProcessForce**. It replaces manual or script-based updates (such as PowerShell) with a clear, user-friendly interface designed for everyday business users.
 
-To know more about CompuTec PFI, Click [this link](https://www.youtube.com/watch?v=MSreLSZC8DU).
->**Note**: The video was recorded on a pre-release version and the interface differs slightly in the released version.
+**CompuTec PFI** is ideal for mass data updates, structured imports, and maintaining consistency across your CompuTec ProcessForce objects.
 
----
+## Before you start
 
-## Prerequisites
+Before using CompuTec PFI, ensure the following:
 
-Before using PFI, ensure the following:
+1. The **CompuTec ProcessForce** plugin is installed and enabled for the relevant company.
+2. If a new **UDF (User-Defined Field)** is added to a **CompuTec ProcessForce** object, restart the **CompuTec AppEngine** service to reflect the changes in PFI templates.
 
-1. The CompuTec ProcessForce plugin is installed and enabled for the relevant company.
-2. If a new UDF (User-Defined Field) is added to CompuTec ProcessForce object, restart the CompuTec AppEngine service to reflect the changes in PFI templates.
+## Install the CompuTec PFI plugin
 
-### Installation
+Follow the standard CompuTec AppEngine plugin installation steps described in [our installation guide](https://learn.computec.one/docs/appengine/plugins-user-guide/install-plugin).
 
-For detailed instructions on installing the CompuTec AppEngine plugin, click [this link](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/plugins/overview).
+## Access the CompuTec PFI plugin
 
-## Usage
+To access the CompuTec PFI plugin, follow these steps:
 
-Once the plugin is installed, its tile becomes available in the [Launchpad](/docs/appengine/appengine-users-guide/launchpad/). Opening the plugin reveals tiles representing various CompuTec ProcessForce objects. Scroll to find and select the object you wish to work with.
+1. In your browser, open the **CompuTec AppEngine site** and choose **Launchpad**.
 
-    ![PFI](./media/pfi/pfi-main.webp)
+    ![Screen showing appengine launchpad](./media/pfi/pfi-art0.png)
 
-The example view (Bill of Materials in this case):
+2. Click **Log in with SAP Business One**.
 
-![PFI](./media/pfi/pfi-bill-of-materials.png)
+     ![Login screen](./media/pfi/pfi-art00.png)
 
-### Header
+3. Log in using your **SAP Business One credentials**.
 
-The Header section provides key details and functionalities related to the selected object. The object's name is displayed in the upper-left corner. On the right, you can find tiles representing all objects related to the main object. Clicking on these names displays the corresponding columns (database table properties) in the table below. The numbers in brackets indicate the object's hierarchy level, e.g., Bill of Materials 0 > Routing 1 > Routing Operations 2 > Routing Operations Properties 3.
+    ![Login screen – SAP Business One authentication](./media/pfi/00-appengine-analytics-login2.png)
 
-1. **Download Excel** – Export the table's content, including column names, to a Microsoft Excel file. If no sample data is loaded (see the Load Sample option below), this will download an empty file with only column headers. You can edit this file in Excel, save it, and upload it back into the plugin using the Upload Data from Excel option.
+4. Select the **PFI plugin tile**.
 
-2. **Download with Advanced Settings** – This option is available from the arrow down next to Download Excel option:
+    ![screen showing logging in](./media/pfi/pfi-art1.png)
 
-    ![PFI](./media/pfi/pfi-advanced-download.png)
+5. Choose the plugin with data import capability, for example, **CompuTec ProcessForce** plugin.
 
-    - **Include Error Messages**: Generates a downloadable file showing the import results along with error descriptions, if any.
+    ![screen showing logging in](./media/pfi/pfi-art2.png)
 
-3. **Upload Data from Excel** – Import data from an edited Excel file. Blank cells do not overwrite existing values. To explicitly set a property to blank, use a forward slash (/). Blank cells are otherwise skipped during the import process, retaining current values or allowing the system to populate them for new entries.
+6. Choose the **CompuTec ProcessForce** object you want to work with, for example, **Bill of Materials**.
 
-4. **Load Sample** – Load data from the database into the table for mass updates. Steps:
-    - Optionally filter data using specific field values.
-    - Choose the number of records to load.
-    - Click Load to populate the table with the selected object and its lower-level components (e.g., Bill of Materials with Items, CoProducts, Scraps, etc.).
-    - After editing, you can re-upload the data for updates.
+    ![screen showing logging in](./media/pfi/pfi-art3.png)
 
-5. **Import to SAP** – Transfer the data from the matrix to the SAP database.
+7. Done! Now you can start working with **CompuTec PFI** plugin.
 
-6. **Download Template CSV** – Download a CSV template for the currently displayed object (e.g., Bill of Materials' Items). Unlike the advanced download option, this exports templates for only the displayed object without including its lower-level components.
+## Using the CompuTec PFI plugin
 
-7. **Upload Data from CSV** – Similar to the Excel upload option, this allows importing data from a CSV file.
+### Header section
+
+The header section provides key details and functionalities related to the selected object:
+
+- **Object name**: Shows the name of the current object.
+
+    ![screen the object name in pfi](./media/pfi/pfi-art-plugin1.png)
+
+- **Related objects**: Helps you navigate between object levels. Clicking on a related object name displays the corresponding columns (database table properties) in the table below. The numbers in brackets indicate the object's hierarchy level, e.g., ``BillOfMaterial 0`` > ``Items 1``.
+
+    ![screen showing related objects](./media/pfi/pfi-art-plugin2.png)
+
+In the header section, you can:
+
+- **Download Excel**: Export the table's content, including column names, to a Microsoft Excel file. If no sample data is loaded (see the **Load Sample** option below), this will download an empty file with only column headers. You can edit this file in Excel, save it, and upload it back into the plugin using the **Upload Data from Excel** option.
+
+    ![screen showing where to click to download excel file](./media/pfi/pfi-art-plugin300.png)
+
+- **Download with advanced settings**: This option is available after clicking the **arrow** next to **Download Excel** option.
+
+    ![screen showing where to click to download excel file](./media/pfi/pfi-art-plugin31.png)
+
+    Select **Download with advanced settings** to see additional export settings.  
+
+    Here you can choose to:
+        - **Export successfully imported entries**
+        - **Export failed entries**
+        - **Export loaded entries**
+        - **Include read-only columns**
+        - **Include Error Messages**
+
+    And then decide if you want to **Export data to Excel file** and/or **Export data to CSV file**.
+
+    ![screen showing where to click to download excel file](./media/pfi/pfi-art-plugin32.png)
+
+- **Upload data from Excel**: Import data from an MS Excel file. Blank cells are ignored and don't overwrite existing values. To explicitly set a property to blank, use a forward slash (``/``).
+
+    ![screen showing where to click to download excel file](./media/pfi/pfi-art-plugin34.png)
+
+- **Load Sample**: Load data from the database into the table for mass updates.
+
+    ![screen showing where to click to load sample](./media/pfi/pfi-art-plugin35.png)
+
+    To load a sample, follow these steps:
+        - (Optional) Filter data using specific field values.
+
+            ![screen showing where to click to load sample- filtering](./media/pfi/pfi-art-plugin351.png)
+
+        - Choose the number of records to load.
+
+            ![screen showing where to click to load sample- choosing number of records](./media/pfi/pfi-art-plugin352.png)
+
+        - Click **Load** to populate the table with the selected object and its lower-level components, for example, Bill of Materials with Items, CoProducts, Scraps, etc.
+
+            ![screen showing where to click to load sample- clicking load](./media/pfi/pfi-art-plugin353.png)
+
+        - After editing, you can re-upload the data for updates.
+
+- **Import to SAP**: Transfer the data to the SAP database.
+
+    ![screen showing where to click to import data to sap](./media/pfi/pfi-art-plugin36.png)
+
+- **Download Template CSV**: Download a CSV template for the currently displayed object, for example, **Bill of Materials** > **Items**. Unlike the advanced download option, this exports templates for only the displayed object without including its lower-level components.
+
+    ![screen showing where to click to download template CSV](./media/pfi/pfi-art-plugin37.png)
+
+- **Upload Data from CSV**: Import data from a CSV file.
+
+    ![screen showing where to click to Upload data from a csv file](./media/pfi/pfi-art-plugin38.png)
+
+- **Read-only fields**: When you uncheck this option, you'll only see the editable fields. Checking the box will display all available fields.
+
+    ![screen showing where to click to include read-only fields in your table](./media/pfi/pfi-art-plugin39.png)
+
+    :::note[info]
+    **Read-only fields** are marked with a **padlock icon** for an easier identification.
+
+            ![screen showing a read-only field example](./media/pfi/pfi-art-plugin391.png)
+    :::
 
 ### Filters
 
-The result table can be refined by entering values in specific fields. Additionally, the filter section can be customized to display only the fields you wish to use.
+Use filters to narrow down your data. You can edit the filter section to display only the fields you wish to use.
 
-**Read-only fields** – When this option is unchecked, only editable fields are shown. Checking the box will display all fields. Read-only objects are marked with a padlock icon for easy identification. Example: ![PFI](./media/pfi/pfi-padlock.png)
+    ![screen showing the filters section](./media/pfi/pfi-art-plugin40.png)
 
 ### Table
 
@@ -75,5 +148,55 @@ The table displays data associated with the object selected in the header, inclu
 - **Action** – Specifies the type of operation (Add/Update) for each row after uploading an Excel file.
 - **Import Status** – Displays the success or failure of each line's import into SAP Business One.
 
----
-CompuTec PFI bridges the gap between user convenience and complex data management by providing a reliable, customizable, and efficient tool for  data handling. Whether you're new to CompuTec ProcessForce or an experienced user, PFI empowers you to optimize your operations with ease.
+## Additional setting of the Computec PFI plugin
+
+**CompuTec PFI** plugin includes a feature that lets you control how many records are processed in parallel during import. This helps you balance performance and system stability.  
+
+Here's what you need to know:
+
+- Higher values mean faster imports, but require stronger servers.
+- Lower values are safer for smaller environments.
+- Recommended values:
+  - Standard systems: 20–30
+  - High-performance servers: up to 100
+  - Maximum allowed: 100
+
+### Configure parallel import limit
+
+To configure parallel import limit, follow these steps:
+
+1. Log in to the **CompuTec AppEngine Administration Panel**.
+
+    ![screen showing logging into CompuTec AppEngine Administration Panel](./media/pfi/pfi-art-plugin41.png)
+
+2. Go to **Plugins** > **Downloaded**.
+
+        ![screen showing navigating to downloaded section of plugins tab](./media/pfi/pfi-art-plugin3.png)
+
+3. Locate the CompuTec **PFI** plugin, and click the **gear icon** next to it.
+
+    ![screen showing clicking the settings (gear) icon next to the plugin](./media/pfi/pfi-art-plugin4.png)
+
+4. Click **Additional Settings**.
+
+    ![screen showing entering additional settings of the plugin](./media/pfi/pfi-art-plugin5.png)
+
+5. In the **Settings** window, find **ImportBatchSize**, and enter your desired number of parallel records.
+
+    ![screen showing logging into CompuTec AppEngine Administration Panel](./media/pfi/pfi-art-plugin6.png)
+
+6. Click **Save & Close**.
+
+    ![screen showing logging into CompuTec AppEngine Administration Panel](./media/pfi/pfi-art-plugin7.png)
+
+:::note[Best Practices]
+
+- Start with 20–30 records and increase gradually
+- Monitor system performance during large imports
+- Use **Load Sample** before mass updates to reduce errors
+
+:::
+
+:::info[note]
+If you have any questions, contact us using [CompuTec Support Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp).
+:::
