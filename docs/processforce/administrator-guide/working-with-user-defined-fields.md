@@ -132,7 +132,7 @@ After installing CompuTec ProcessForce, some UDFs are automatically added to cor
 ## Summary
 
 | Task | Where | Notes |
-|------|-------|-------|
+| ------ | ------- | ------- |
 | Add Header UDFs | `Tools → Customization Tools` | Access via side panel |
 | Add Row UDFs | In table section | Visible as columns |
 | Manage Visibility | `Form Settings` | For row UDFs only |

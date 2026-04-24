@@ -20,11 +20,11 @@ If you are upgrading from **CompuTec AppEngine 2.0** to **CompuTec AppEngine 3.0
 | Memory (RAM) | 2 GB | Adjust RAM as needed based on the number of plugins and background processes. For production use, we recommend **8 GB or more**. |
 | Disk Space | 1 GB | - |
 | .NET Runtime | 8.0.13 | We recommend installing the latest version of .NET 8. [Microsoft .NET 8 (Web Installer)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0). |
-| ASP.NET Runtime | 8.0.13 |We recommend installing the latest version of .NET 8. [Microsoft .NET 8 (Web Installer)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0). |
+| ASP.NET Runtime | 8.0.13 | We recommend installing the latest version of .NET 8. [Microsoft .NET 8 (Web Installer)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0). |
 | HANA Server Version | SAP HANA Enterprise Edition 2.0 SPS 05, Revision 059.09 (minimum supported version: 2.17.22). | SAP Business One, version for SAP HANA |
 | SQL Server Version | SQL Server 2016 | SAP Business One |
 | Operating System | Windows 10 x64 | - |
-| SAP Business One Version | SAP Business One 10.0 FP2408 |We recommend installing the latest version. |
+| SAP Business One Version | SAP Business One 10.0 FP2408 | We recommend installing the latest version. |
 | SAP Business One DI API | Match the installed SAP Business One version (64-bit) | - |
 | CompuTec License Server | Latest version recommended | - |
 
@@ -38,7 +38,7 @@ CompuTec AppEngine needs **.NET Runtime Applications** as it relies on the **.NE
 
 | Resource/Application | Minimal Version | Note |
 | --- | --- | --- |
-| .NET Runtime |8.0.13 | We recommend installing the latest version of .NET 8. [Microsoft .NET 8 (Web Installer)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0). |
+| .NET Runtime | 8.0.13 | We recommend installing the latest version of .NET 8. [Microsoft .NET 8 (Web Installer)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0). |
 | ASP.NET Runtime | 8.0.13 | We recommend installing the latest version of .NET 8. [Microsoft .NET 8 (Web Installer)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0). |
 | Browser Application | - | Please see [supported device and platform matrix](https://help.sap.com/docs/SAP_NETWEAVER_AS_ABAP_751_IP/468a97775123488ab3345a0c48cadd8f/74b59efa0eef48988d3b716bd0ecc933.html?utm_source=chatgpt.com#browser-and-platform-support-matrix) maintained by SAP under UI5 |
 
