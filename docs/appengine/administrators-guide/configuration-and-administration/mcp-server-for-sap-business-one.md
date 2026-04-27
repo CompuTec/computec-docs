@@ -89,14 +89,14 @@ This information may change over time. For the most up-to-date details, refer to
 
 We recommend using **Claude** for most scenarios.
 
-**Why choose Claude?**
+**Why choose Claude:**
 
 * Native support for local MCP servers
 * Easier setup, especially in **Claude Desktop**
 * Suitable for business users and non-developers
 * Built-in configuration experience
 
-**When to use GitHub Copilot**
+**When to use GitHub Copilot:**
 
 Use **GitHub Copilot** if:
 
@@ -106,7 +106,7 @@ Use **GitHub Copilot** if:
 
 ## Built-in MCP Tools
 
-The MCP Server provides several ready-to-use tools:
+The **MCP Server** provides several ready-to-use tools:
 
 * **Session Tools**:
   * List companies and connect to one
@@ -127,9 +127,9 @@ The MCP Server provides several ready-to-use tools:
 * **Approval Procedures**
 
 :::note[info]
-If you have an idea for a useful **MCP** tool, feel free to share it with us—we’re happy to consider adding it as a standard feature in **CompuTec AppEngine**.
+If you have an idea for a useful **MCP** tool, feel free to share it with us - we'll consider adding it as a standard feature in **CompuTec AppEngine**.
 
-You can also create your own tools by developing a [custom CompuTec AppEngine plugin](../../developers-guide/basic-and-business-logic/appengine-plugin/ae-mcp-tool.md).
+You can also create **your own tools** by developing a [custom CompuTec AppEngine plugin](../../developers-guide/basic-and-business-logic/appengine-plugin/ae-mcp-tool.md).
 :::
 
 ### Troubleshooting MCP Activation
