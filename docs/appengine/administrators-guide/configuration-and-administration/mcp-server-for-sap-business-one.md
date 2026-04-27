@@ -65,59 +65,81 @@ To allow users to perform actions through **MCP**, follow these steps:
 6. Save the changes.
 
     :::info[Important]
-        Only users with this authorization can execute modification commands using the **MCP Server**.
+        Only users with the authorization assigned in **SAP Business One** can execute modification commands using the **MCP Server**.
     :::
 
 ## Supported AI Clients
 
 Currently, the **MCP Server** can be used with several AI tools:
 
-* **Claude** (recommended): Claude desktop version requires minimum:
-  * *Pro Plan Subscription* - (only in Development Mode)
-  * *Team* Plan Subscription or **Claude for Work** (connectors)
-* **GitHub Copilot** - Configure the `mcp.json` file. You can find the configuration in AppEngine under *Administration -> Advanced Settings -> MCP -> GitHub Copilot*.
+* **Claude** (recommended):  
+  The desktop version requires one of the following:
+  * **Pro Plan Subscription** (for **Development Mode**)
+  * **Team Plan Subscription** or **Claude for Work** (connectors)
+* **GitHub Copilot**:  
+  Requires manual configuration using the ``mcp.json`` file.  
+  You can find the required configuration in **CompuTec AppEngine** under: **CompuTec AppEngine Administration Panel** > **Advanced Settings** > **MCP** > **GitHub Copilot**.
 * **Claude Code**
 
 :::caution
-Note that this may change at any time. For the current situation, please refer to the AI documentation.
+This information may change over time. For the most up-to-date details, refer to the official AI tool documentation.
 :::
 
-### Recommended AI Client for MCP Server
+### Recommended AI Client
 
-When using the **CompuTec AppEngine MCP Server** with AI tools, we recommend **Claude** over **GitHub Copilot** for most scenarios:
+We recommend using **Claude** for most scenarios.
 
-* Use **Claude** if you want a simple, user-friendly setup
-* Use **Copilot** if you are comfortable working in **Visual Studio Code** and developer tools
+**Why choose Claude?**
 
-**Why Claude is recommended:**
+* Native support for local MCP servers
+* Easier setup, especially in **Claude Desktop**
+* Suitable for business users and non-developers
+* Built-in configuration experience
 
-* Designed with native support for local MCP servers
-* Offers a more user-friendly setup, especially in **Claude Desktop**
-* Suitable for non-technical users and business users
-* Provides built-in configuration flows for MCP connections
+**When to use GitHub Copilot**
 
-**About GitHub Copilot:**
+Use **GitHub Copilot** if:
 
-* MCP integration is supported, but requires manual configuration in **Visual Studio Code**
-* Managed by ``mcp.json`` and then used from **Copilot Chat** in **Agent** mode
-* More suitable for developers and technical users
+* You are comfortable working in **Visual Studio Code**
+* You prefer a developer-oriented workflow
+* You can manage configuration files like ``mcp.json``
 
-## Build-in Tools
+## Built-in MCP Tools
 
-* **Session Tools** - Allows you to get a list of companies and connect to the one the user chooses. It also allows you to get information about the connected SAP Business One user.
-* **Access to Service Layer Objects and Metadata** - Allows adding and retrieving all major business objects in SAP Business One.
-* **Access to AppEngine Plugin Information and Objects** - Allows AI to get information about the plugins installed for this company. It can also manipulate their business objects.
-* **Opening** documents and master data in SAP Business One and SAP Web Client.
+The MCP Server provides several ready-to-use tools:
+
+* **Session Tools**:
+  * List companies and connect to one
+  * Retrieve information about the logged-in SAP Business One user
+
+* **Service Layer Objects and Metadata**:
+  * Create and retrieve SAP Business One business objects
+
+* **CompuTec AppEngine Plugin Information and Objects**:
+  * Allows AI to get information about the plugins installed for this company
+  * Work with plugin business objects
+
+* **Document Access**:
+  * Open documents and master data in SAP Business One or Web Client
+
 * **Inventory Levels**
+
 * **Approval Procedures**
 
-If you have an idea for an MCP tool that would be useful, please share it with us and we will be happy to implement it in AppEngine as a standard tool. However, you can also write your own tools by creating an AppEngine Plugin.
-[How to create own tool example](../../developers-guide/basic-and-business-logic/appengine-plugin/ae-mcp-tool.md)
+:::note[info]
+If you have an idea for a useful **MCP** tool, feel free to share it with us—we’re happy to consider adding it as a standard feature in **CompuTec AppEngine**.
 
-### Troubleshooting
+You can also create your own tools by developing a [custom CompuTec AppEngine plugin](../../developers-guide/basic-and-business-logic/appengine-plugin/ae-mcp-tool.md).
+:::
+
+### Troubleshooting MCP Activation
+
+If the **MCP Server** is not working, follow these steps:
 
 1. In the **CompuTec AppEngine Administration Panel**, go to **Advanced Settings**.
-2. In the **MCP** section, you should see that the **MCP** server is ``active`` (toggle button is **green**) and the **Client ID** is filled with the ``OpenID Client ID``.
+2. In the **MCP** section, you should see that:
+    * **MCP Server** toggle is enabled (**green**)
+    * **Client ID** is filled with the ``OpenID Client ID``
 3. If the **MCP** indicator is disabled, please make sure that all requirements are met.
 4. If the indicator is still off, please go to **Configuration** and press the **Discover** button.
 
@@ -125,37 +147,39 @@ If you have an idea for an MCP tool that would be useful, please share it with u
 
 ### Pro Plan setup
 
-1. Install **Node.js**: [Download Node.js](https://nodejs.org/en/download/)
+1. Install [**Node.js**](https://nodejs.org/en/download/).
 2. Launch **Claude Desktop** on your computer.
-3. Open **Settings** by clicking on the **Claude menu** in your system's menu bar, and then selecting **Settings...**.
-4. Navigate to the **Developer** tab in the settings window that appears.
-5. Click the **Edit Config** button to open the `claude_desktop_config.json` file.
-6. Go to the **CompuTec AppEngine Administration Panel** > **Advanced Settings** page, and in the **MCP** tab, find the **Claude for Code configuration** and copy it.
-7. In the `claude_desktop_config.json`, in the `mcpServers` section, paste the previously copied content. It should be similar to the following:
+3. Click the **Claude menu** in your system's menu bar, and select **Settings**.
+4. Navigate to **Developer**.
+5. Click **Edit Config** to open the `claude_desktop_config.json` file.
+6. Go to the **CompuTec AppEngine Administration Panel** > **Advanced Settings**.
+7. In the **MCP** tab, find the **Claude for Code configuration** and copy it.
+8. In the `claude_desktop_config.json`, in the **mcpServers** section, paste the previously copied content.  
+    Example:
 
-    ```http
-    {
-      "mcpServers": {
-        "computecAppengine": {
-          "command": "npx",
-          "args": [
-            "-y",
-            "@computec/mcp-remote",
-            "https://localhost:54001/mcp",
-            "--static-oauth-client-info-base64",
-            "[some generated token]",
-            "--host",
-            "localhost",
-            "--force-refresh"
-          ],
-          "env": {
-            "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+      ```http
+      {
+        "mcpServers": {
+          "computecAppengine": {
+            "command": "npx",
+            "args": [
+              "-y",
+              "@computec/mcp-remote",
+              "https://localhost:54001/mcp",
+              "--static-oauth-client-info-base64",
+              "[some generated token]",
+              "--host",
+              "localhost",
+              "--force-refresh"
+            ],
+            "env": {
+              "NODE_TLS_REJECT_UNAUTHORIZED": "0"
+            }
           }
-        }
-      },
-      "isUsingBuiltInNodeForMcp": true
-    }
-    ```
+        },
+        "isUsingBuiltInNodeForMcp": true
+      }
+      ```
 
 ### Team Plan setup
 
@@ -165,21 +189,29 @@ If you have an idea for an MCP tool that would be useful, please share it with u
 
 ### Troubleshooting
 
-If you are connected but it seems there is a session problem:
+If authentication or session issues occur:
 
-1. Restart the application. For **Claude** and **ChatGPT**, please note that there is a process in the system tray, and closing the application window does not restart it. You must click the icon and select the close option.
-2. Go to the `c:\Users\[windowsUserAccountName]\.mcp-auth` folder and remove its contents.
-3. Open **Claude Desktop** or the **ChatGPT** application again. The browser should open, where you must authenticate with your **SAP B1 user**.
+1. Restart the application.
+
+    :::info[note]
+    Closing the application window does not fully restart it, as it may still be running in the system tray.  
+    To properly close it, click the **application icon**, for example, the Claude icon, in the system tray and select **Close**.
+    :::
+
+2. Navigate to the following folder: `c:\Users\[windowsUserAccountName]\.mcp-auth`.
+3. Delete all files in this folder.
+4. Reopen the application, for example, **Claude Desktop**.
+5. When the browser opens automatically, sign in again using your **SAP Business One** user credentials.
 
 ## Use GitHub Copilot with MCP Server (VS Code)
 
-If you prefer to use **GitHub Copilot**, follow these steps to configure the **MCP Server** in **Visual Studio Code**.
+If you prefer using **GitHub Copilot**, follow these steps:
 
 1. Open the following file: ``C:\Users\<USERNAME>\AppData\Roaming\Code\User\mcp.json``.
-2. Go to **CompuTec AppEngine Administration Panel** > **Advanced Settings** > **MCP**.
+2. In **Computec AppEngine**, to **CompuTec AppEngine Administration Panel** > **Advanced Settings** > **MCP**.
 3. Copy the **GitHub Copilot configuration**.
-4. Paste it into the ``mcp.json`` file.
-5. Your configuration should look similar to this:
+4. Paste it into the **mcp.json** file.  
+    Example:
 
     ```http
       {
@@ -205,15 +237,16 @@ If you prefer to use **GitHub Copilot**, follow these steps to configure the **M
       }
     ```
 
-6. Restart **Visual Studio Code**.
-7. Open **Copilot Chat** in **Agent** mode.
+5. Restart **Visual Studio Code**.
+6. Open **Copilot Chat**.
+7. Switch to **Agent** mode.
 8. Done! Now you can start interacting with the **MCP Server**.
 
-:::inof[note]
+:::info[note]
 
-If the **MCP Server** is enabled but not working as expected, verify:
+If MCP is not working as expected, check:
 
-* The correct AI client is configured (**Claude** vs **Copilot).
+* The correct AI client is configured (**Claude** vs **Copilot**).
 * **MCP** configuration is properly copied from **CompuTec AppEngine**.
 * The application (**Claude**, **VS Code**, **ChatGPT**) has been fully restarted (including background processes).
 
