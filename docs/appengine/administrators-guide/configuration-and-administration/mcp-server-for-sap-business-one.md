@@ -138,10 +138,15 @@ If the **MCP Server** is not working, follow these steps:
 
 1. In the **CompuTec AppEngine Administration Panel**, go to **Advanced Settings**.
 2. In the **MCP** section, you should see that:
-    * **MCP Server** toggle is enabled (**green**)
-    * **Client ID** is filled with the ``OpenID Client ID``
+    * **MCP Server Enabled** toggle is turned on and green.
+    * **Client Information** is filled with the ``Client ID`` and ``Client Secret``.
+
+    ![check if mpc server is enabled - a green toggle](media/mcp-server/mcp-serv-claude-00.png)
+
 3. If the **MCP** indicator is disabled, please make sure that all requirements are met.
-4. If the indicator is still off, please go to **Configuration** and press the **Discover** button.
+4. If the indicator is still off, please go to **CompuTec AppEngine Administration Panel** > **Configuration** and press the **Discover** button.
+
+   ![ the discover button in appengine adimistration panel > configuration](media/mcp-server/mcp-serv-claude-001.png)
 
 ## Connect Claude Desktop to SAP Business One by CompuTec AppEngine
 
@@ -153,8 +158,18 @@ If the **MCP Server** is not working, follow these steps:
 4. Navigate to **Developer**.
 5. Click **Edit Config** to open the `claude_desktop_config.json` file.
 6. Go to the **CompuTec AppEngine Administration Panel** > **Advanced Settings**.
-7. In the **MCP** tab, find the **Claude for Code configuration** and copy it.
-8. In the `claude_desktop_config.json`, in the **mcpServers** section, paste the previously copied content.  
+
+    ![go to Advanced Settings of CompuTec AppEngine Administration Panel](media/mcp-server/mcp-serv-claude-1.png)
+
+7. Navigate to the **MCP** tab.
+
+    ![mcp tab in CompuTec AppEngine Administration Panel](media/mcp-server/mcp-serv-claude-2.png)
+
+8. Find the **Claude for Code configuration** and copy it.
+
+    ![Claude for Code configuration in CompuTec AppEngine Administration Panel](media/mcp-server/mcp-serv-claude-3.png)
+
+9. In the `claude_desktop_config.json`, in the **mcpServers** section, paste the previously copied content.  
     Example:
 
       ```http
@@ -203,14 +218,24 @@ If authentication or session issues occur:
 4. Reopen the application, for example, **Claude Desktop**.
 5. When the browser opens automatically, sign in again using your **SAP Business One** user credentials.
 
-## Use GitHub Copilot with MCP Server (VS Code)
+## Use GitHub Copilot with CompuTec AppEngine MCP Server in VS Code
 
 If you prefer using **GitHub Copilot**, follow these steps:
 
-1. Open the following file: ``C:\Users\<USERNAME>\AppData\Roaming\Code\User\mcp.json``.
-2. In **Computec AppEngine**, to **CompuTec AppEngine Administration Panel** > **Advanced Settings** > **MCP**.
-3. Copy the **GitHub Copilot configuration**.
-4. Paste it into the **mcp.json** file.  
+1. Open the following file on your computer: ``C:\Users\<USERNAME>\AppData\Roaming\Code\User\mcp.json``.
+2. In **Computec AppEngine**, to **CompuTec AppEngine Administration Panel** > **Configuration** > **Advanced Configuration**.
+
+    ![go to CompuTec AppEngine Administration Panel > Configuration > Advanced Configuration](media/mcp-server/mcp-serv-001.png)
+
+3. Navigate to the **MCP** tab.
+
+    ![MCP tab](media/mcp-server/mcp-serv-002.png)
+
+4. Copy the **GitHub Copilot configuration**.
+
+    ![copy the configuration](media/mcp-server/mcp-serv-003.png)
+
+5. Paste it into the **mcp.json** file.  
     Example:
 
     ```http
@@ -237,14 +262,19 @@ If you prefer using **GitHub Copilot**, follow these steps:
       }
     ```
 
-5. Restart **Visual Studio Code**.
-6. Open **Copilot Chat**.
-7. Switch to **Agent** mode.
-8. Done! Now you can start interacting with the **MCP Server**.
+6. Restart **Visual Studio Code**.
+7. Open **Copilot Chat**.
+8. Switch to **Agent** mode.
+
+    ![switching to agent mode in vsc copilot chat](media/mcp-server/mcp-serv-004.png)
+
+9. Done! Now you can start interacting with the **MCP Server**.
+
+    ![using vcs copilot chat](media/mcp-server/mcp-serv-005.png)
 
 :::info[note]
 
-If MCP is not working as expected, check:
+If **CompuTec AppEngine MCP** is not working as expected, check:
 
 * The correct AI client is configured (**Claude** vs **Copilot**).
 * **MCP** configuration is properly copied from **CompuTec AppEngine**.
