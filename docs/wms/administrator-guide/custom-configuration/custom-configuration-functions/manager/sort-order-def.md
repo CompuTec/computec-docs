@@ -42,8 +42,33 @@ To create a new **Sort Order Definition**, follow these steps:
 
 5. In **Sort Order Block** window, select the following fields:
 
-    - **Block Type** – Defines the type of data used for sorting (for example, ``Completed``, ``IsStorageUnit``, or ``Custom``).
-    - **Property Name** – Specifies the property to sort by (if applicable).
+    - **Block Type**: Defines the type of data used for sorting (for example, ``Completed``, ``IsStorageUnit``, or ``Custom``).
+    - **Property Name**: Specifies the document field that the system uses for sorting. It determines which value from each document line is evaluated when applying the sort order. The value must match a field defined in the WMS workflow configuration.
+
+        :::note[info]
+        **Where to find Property Names?**
+
+        - Go to the **WMS server directory**: ``C:\Program Files\CompuTec\WMS Server\Workflows\Default``.
+        - Open the **XML file** that corresponds to your document type, for example: ``GoodsReceiptPO``, ``InventoryTransfer``, or ``PickAndPack``.
+        - Locate the **Document Details** section in the file.
+        - In this section, find the list of columns defined as **DisplayColumn**.
+
+            ![alt text](media/wms-property-names-screen.png)
+
+        - Look for the ``alias`` attribute. Its value in the **XML file** is the **Property Name** used in **Sort Order Definitions**.  
+
+            Example:
+
+                ```html
+                <DisplayColumn ... alias="ItemCode" />
+                ```
+
+                In this case: **Property Name** = ``ItemCode``
+
+        - When defining sorting rules, always copy the ``alias`` value exactly as shown in the XML.  
+        **Property Names** are case-sensitive.
+        :::
+
     - **Direction** – Select ``Ascending`` or ``Descending``.
 
     ![Sort order definitions - enter code and name in the form](./media/screenshot-4.png)
