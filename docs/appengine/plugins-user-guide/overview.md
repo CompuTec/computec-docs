@@ -31,6 +31,10 @@ In the **CompuTec AppEngine Administration Panel**, plugins are grouped into cat
 
 ![plugin store view](./media/store-overview.png)
 
+:::info[note]
+Plugin types are also defined at a technical level, for example, base classes and system identifiers. These details are intended for developers. For more information, see the **Plugin Types** section in our [Developer Guide](https://learn.computec.one/docs/appengine/developers-guide/basic-and-business-logic/plugin-types).
+:::
+
 ## Plugins page structure
 
 The Plugins page in CompuTec AppEngine Administration Panel consists of three main tabs:

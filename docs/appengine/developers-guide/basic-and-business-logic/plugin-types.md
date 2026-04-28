@@ -1,8 +1,8 @@
 ---
-sidebar_position: 12
+sidebar_position: 1
 ---
 
-# Overview
+# Plugin Types
 
 This document provides an in-depth understanding of various plugin types and their characteristics, including their classification, acceptable identifiers, associated core references, and base classes. These plugin types serve as key components in extending and customizing system functionality for diverse applications.
 
