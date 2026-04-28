@@ -75,7 +75,7 @@ To create a new **Sort Order Definition**, follow these steps:
 
 6. Click **OK** to confirm the block.
 
-7. Use **Move Up** or **Move Down** to adjust the priority of sorting blocks. The order of blocks determines sorting priority (top = highest priority).
+7. Use **Move Up** or **Move Down** to adjust the priority of sorting blocks. The order of blocks determines sorting priority (``top`` = highest priority).
 
 8. Click **Save**.
 

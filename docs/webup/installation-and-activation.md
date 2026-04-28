@@ -32,7 +32,7 @@ These short videos will walk you through the whole CompuTec AppEngine and CompuT
 
 ## Step 1: Install the CompuTec WebUp App
 
-To install the **CompuTec WebUp App** directly from the CompuTec AppEngine Store, follow the [installation instructions](/docs/appengine/administrators-guide/configuration-and-administration/plugins/plugin-installation-process).  
+To install the **CompuTec WebUp App** directly from the CompuTec AppEngine Store, follow the [installation instructions](http://learn.computec.one/docs/appengine/plugins-user-guide/install-plugin).  
 The installation process is fully automated and managed within CompuTec AppEngine.
 
 ## Step 2: Enable Developer Mode

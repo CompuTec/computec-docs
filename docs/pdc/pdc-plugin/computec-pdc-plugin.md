@@ -27,7 +27,7 @@ The CompuTec PDC Plugin is compatible only with the 64-bit version of CompuTec P
 Follow the individual installation guides for each required component:
 
 - [CompuTec AppEngine installation](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation)
-- [CompuTec PDC plugin](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation)
+- [CompuTec PDC plugin](http://learn.computec.one/docs/appengine/plugins-user-guide/install-plugin)
 - [CompuTec ProcessForce plugin](https://learn.computec.one/docs/processforce/processforce.md)
 - [CompuTec ProcessForce API (on the same server as CompuTec AppEngine)](https://learn.computec.one/docs/processforce/releases/download#computec-processforce-api)
 - [CompuTec PDC application](https://learn.computec.one/docs/pdc/administrator-guide/installation/first-installation/)

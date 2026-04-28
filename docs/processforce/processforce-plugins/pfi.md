@@ -17,7 +17,7 @@ Before using CompuTec PFI, ensure the following:
 
 ## Install the CompuTec PFI plugin
 
-Follow the standard CompuTec AppEngine plugin installation steps described in [our installation guide](https://learn.computec.one/docs/appengine/plugins-user-guide/install-plugin).
+Follow the standard CompuTec AppEngine plugin installation steps described in [our installation guide](http://learn.computec.one/docs/appengine/plugins-user-guide/install-plugin).
 
 ## Access the CompuTec PFI plugin
 

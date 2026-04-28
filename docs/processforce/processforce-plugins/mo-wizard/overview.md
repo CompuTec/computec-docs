@@ -14,7 +14,7 @@ The CompuTec Planning & Bottleneck Scheduling (MO Wizard) Plugin is designed to 
 Below are the steps to install the MOWizard Plugin for SAP Business One:
 
 1. Get the installation done.
-2. Follow the detailed instructions to install the plugin on your SAP Business One system descibed in [this guide](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/plugins/plugin-installation-process)
+2. Follow the detailed instructions to install the plugin on your SAP Business One system descibed in [this guide](http://learn.computec.one/docs/appengine/plugins-user-guide/install-plugin)
 
 3. Once installed, go to the SAP Business One Launchpad and select the MOWizard plugin to begin using it.
 
