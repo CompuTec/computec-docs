@@ -53,7 +53,7 @@ To create a new **Sort Order Definition**, follow these steps:
         - Locate the **Document Details** section in the file.
         - In this section, find the list of columns defined as **DisplayColumn**.
 
-            ![alt text](media/wms-property-names-screen.png)
+            ![an example of the xml file with document details and displaycolumn section](media/wms-property-names-screen.png)
 
         - Look for the ``alias`` attribute. Its value in the **XML file** is the **Property Name** used in **Sort Order Definitions**.  
 
