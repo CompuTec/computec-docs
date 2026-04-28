@@ -16,7 +16,7 @@ Once you log in, the Launchpad displays a panel of tiles. Each tile represents a
 
 ![Launchpad main view](.\media\launchpad\launchpad1.png)
 
-The plugins you see depend on your assigned configuration (scheme). This setup is defined in the [Plugin Settings](../administrators-guide/configuration-and-administration/plugins/overview.md).
+The plugins you see depend on your assigned configuration (scheme). This setup is defined in the [Plugin Settings](https://learn.computec.one/docs/appengine/plugins-user-guide/overview).
 
 ## Accessing the Analytics
 
@@ -30,4 +30,4 @@ To start working with a plugin, click its tile.
 
 ![Launchpad main view](.\media\launchpad\launchpad2.png)
 
-For detailed instructions on how to use each plugin, see the [Plugins User's Guide](../plugins-user-guide/overview.md).
+For detailed instructions on how to use each plugin, see the [Plugins User's Guide](https://learn.computec.one/docs/appengine/plugins-user-guide/overview).
