@@ -2,102 +2,163 @@
 sidebar_position: 3
 ---
 
-# Setting Up Telemetry with Grafana
+# OpenTelemetry Configuration
 
-Telemetry helps you monitor system behavior and identify issues in **CompuTec AppEngine** and **SAP Business One**. This guide explains how to connect your environment to **Grafana Cloud** and view logs, traces, and metrics.
+**OpenTelemetry** lets you monitor system behavior and troubleshoot issues in **CompuTec AppEngine** and **SAP Business One**.  
 
-## Configure Grafana
+This guide explains how to connect your environment to a telemetry backend (such as **Grafana Cloud**) using an **OpenTelemetry** profile, and how to view logs, traces, and metrics.
 
-To configure **Grafana**, follow these steps:
+## Configure OpenTelemetry Profile
+
+To configure **OpenTelemetry** in **OpenTelemetry-compatible backend**, for example, **Grafana Cloud**, follow these steps:
 
 1. Visit [**Grafana** website](https://grafana.com/) and create an account.
-2. After logging in to **Grafana**, create a new **Stack**.
+2. After logging in, create a new **Stack**.
 
     ![create stack](media/grafana/grafana1.png)
 
-3. Go to **Administration** > **Users and access** > **Service accounts**.
+3. Go to **My account**.
 
-    ![navigation to servixce accounts in grafana](media/grafana/grafana2.png)
+    ![navigation to servixce accounts in grafana](media/grafana/gr1.png)
 
-4. Click **Add service account**.
+4. Click your **stack name** to manage it.
 
-    ![add a service account button](media/grafana/grafana3.png)
+    ![add a service account button](media/grafana/gr12.png)
 
-5. Give it a **name** and set a **role**, for example, ``Viewer``, ``Editor``, or ``Admin``.
+5. Find **OpenTelemetry** integration and click **Configure**.
 
-    ![creating a service account](media/grafana/grafana4.png)
+    ![open telemetry configuration](media/grafana/gr2.png)
 
-6. Click **Add service account token**.
+6. In **Password / API Token**, click **Generate now**.
 
-    ![adding a service account token](media/grafana/grafana6.png)
+    ![generating new token](media/grafana/gr3.png)
 
-7. Name the token, set an **expiry** (or **no expiry**), and click **Generate token**.
+7. Name the token, set an **expiry** (or **no expiry**), and click **Create token**.
 
-    ![generating a token](media/grafana/grafana7.png)
+    ![creating a token](media/grafana/gr4.png)
 
-8. Copy the token immediately, because it won't be shown again.
+8. In **CompuTec AppEngine Administration Panel**, navigate to **System** > **Telemetry Profiles**.
 
-    ![token created and ready to be copied](media/grafana/grafana8.png)
+    ![navigate to telemetry profiles](media/grafana/gr88.png)
 
-9. In **CompuTec AppEngine Administration Panel**, navigate to **System** > **Telemetry Profiles**.
-
-10. Create a new profile by cloning the predefined `OpenTelemetry_All`
+9. Create a new profile by clicking the **copy icon** next to the predefined **OpenTelemetry_All** profile.
 
     ![clone profile](media/grafana/grafana89.png)
 
-11. Fill the ``Endpoint`` and ``Authorization Header`` by copying the details from your **Grafana** account.
+10. Copy **Endpoint for sending OLTP signals** from **Grafana.com**.
 
-    ![fill in the data](media/grafana/grafana99.png)
+    ![copy endpoints form grafana](media/grafana/gr9990.png)
 
-12. Click **Add** to save the profile.
-13. Done! Now you can see this profile on the list in **CompuTec AppEngine Administration Panel** > **System** > **Telemetry Profiles**.
+11. Paste it to all ``Endpoint`` fields in your new **CompuTec AppEngine Open Telemetry** profile.
 
-## Assigining the Profiles to CompuTec AppEngine
+    ![paste endpoints to appengine](media/grafana/gr999.png)
 
-To assign a profile to the CompuTec AppEngine instance:
+12. Copy **Environmental Variable OTLP Header** from **Grafana.com**.
+
+    ![copy headers from garfana](media/grafana/grafana990.png)
+
+13. Paste it to all ``Headers`` in your new **CompuTec AppEngine Open Telemetry** profile.
+
+    ![paste headers to appengine](media/grafana/gr99.png)
+
+14. In **CompuTec AppEngine Administration Panel**, click **Save**.
+
+    ![save the profile](media/grafana/gr6.png)
+
+15. Done! Now you can see this profile on the list in **CompuTec AppEngine Administration Panel** > **System** > **Telemetry Profiles**.
+
+## Assign OpenTelemetry Profile to CompuTec AppEngine
+
+To assign a profile to the **CompuTec AppEngine instance**, follow these steps:
 
 1. Navigate to **CompuTec AppEngine Administration Panel** > **Configuration** > **AppEngine Servers**.
 
     ![navigation to appengine servers tab](media/grafana/grafana999.png)
 
-2. Assign the profile to the relevant **CompuTec AppEngine** instance.
+2. Clcik the **edit icon** next to the chosen **CompuTec AppEngine** instance.
 
     ![assigning telemetry profile](media/grafana/grafana9999.png)
 
-3. Restart the **CompuTec AppEngine Service** to apply the changes.
+3. Click the **OpenTelemetry profile** you want to assign.
 
-## Assigning the Profiles to SAP Business One
+    ![assign telemetry profile](media/grafana/gr7.png)
 
-To assign the profile to the Company:
+4. Now you can see the **OpenTelemetry profile name** in the list.
 
-1. Go to CompuTec AppEngine Administration and select the active company.
-2. Assign profiles:
+    ![successfully assigned telemetry profile](media/grafana/gr7.png)
+
+5. Restart the **CompuTec AppEngine Service** to apply the changes.
+
+## Assign the OpenTelemetry Profile to SAP Business One
+
+To assign the **OpenTelemetry** profile to the **Computec AppEngine company**, follow these steps:
+
+1. Go to **CompuTec AppEngine Administration Panel** > **Configuration**.
+
+    ![alt text](media/grafana/gr-con1.png)
+
+2. Choose the **company name** from the list to see its details.
+
+    ![alt text](media/grafana/gr-con2.png)
+
+    :::info[note]
+    You can assign **OpenTelemetry Profiles**:
     - To all users in the company
-    - Or to specific users needing tailored configurations
-3. To assign the default profile, just specify the profile in the company details.
+    - To specific users needing tailored configurations
+    :::
 
-    ![Default Profile](./media/profile-company.png)
-4. To assign the profile for specific company, please select User profiles section and fill the necessary information:
+3. To assign the default profile to all users in the company, choose the **company name** from the list to see its details.
 
-    ![Company Profile](./media/profile-co-user.png)
+    ![alt text](media/grafana/gr-con2.png)
 
-The changes will take effect after restarting Sap Business One.
+4. Click the **edit icon** next to **Telemetry Profile**.
 
-## Viewing the Profiles and Logs
+    ![alt text](media/grafana/gr-con3.png)
 
-1. Clock launch in your stack
-2. Explore the telemetry by clicking the explore chose the exploration in the combo box ( yellow arrow)
+5. Choose the **OpenTelemetry profile** from the list.
 
-    ![Grafana Explorer](./media/grafana-explorer.png)
+    ![alt text](media/grafana/gr-con4.png)
 
-Choose an exploration method from:
+6. Done! Now you can see the **Telemetry Profile** name assigned to your company.
 
-- **Traces** - View time-based traces
-- **Logs**- Inspect logs
-- **Prometheus** - Analyze metrics
+    ![alt text](media/grafana/gr-con5.png)
 
-**Service Name** - Under the Resource section, locate and input the User Name and Database Id to ensure accurate telemetry tracking.
-    - Computec.AppEngine.Host – CompuTec AppEngine Service.
-    - Computec.Start – SAP Business One Plugin Activity.
+7. To assign the profile for a specific user, navigate to **Telemetry Profiles** in your company details.
 
----
+    ![alt text](media/grafana/gr-con6.png)
+
+8. Click **Assign profile**.
+
+    ![alt text](media/grafana/gr-co67.png)
+
+9. Type the **user name**, click the **edit icon** to assign the chosen **Telemetry Profile**, and click **Create Assignment**.
+
+    ![alt text](media/grafana/gr-con7.png)
+
+10. Restart **Sap Business One** to see the changes.
+
+## View the OpenTelemetry Profiles and Logs
+
+1. In Grafana, click **Launch Grafana Cloud**.
+
+    ![alt text](media/grafana/stack1.png)
+
+2. Navigate to **Explore**.
+
+    ![alt text](media/grafana/stack2.png)
+
+3. Choose the **exploration method** from the list:
+
+    - ``traces``: View time-based traces
+    - ``logs``: Inspect logs
+    - ``prom``: Analyze metrics
+
+    ![alt text](media/grafana/stack3.png)
+
+4. Done! Now you can explore telemetry.
+
+    ![grafana explorer](media/grafana/stack4.png)
+
+    **Service Name** - Under the Resource section, locate and input the User Name and Database Id to ensure accurate telemetry tracking.
+        - ``Computec.AppEngine.Host`` – CompuTec AppEngine Service
+        - ``Computec.Start`` – SAP Business One Plugin Activity
