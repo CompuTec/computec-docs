@@ -12,7 +12,7 @@ The framework provides a consistent structure for development, deployment, and m
 - Simplify integration with SAP
 - Support scalable and maintainable solutions
 
-## Key Capabilities
+## Key capabilities
 
 The **Computec.Core2** ecosystem includes the following capabilities:
 
@@ -64,7 +64,7 @@ The **Computec.Core2** ecosystem includes the following capabilities:
 
 The **Computec.Core2** ecosystem empowers developers to create robust extensions with minimal overhead, providing tools and features that enhance productivity while ensuring high standards of performance and security. Whether you're looking to streamline business processes or integrate new functionalities, Computec.Core2 is your go-to solution for modern business application development.
 
-## Environment Overview
+## Environment overview
 
 The core component of the **Computec.Core2** ecosystem is **CompuTec AppEngine Server**.
 
@@ -77,7 +77,7 @@ It acts as a central management hub that connects:
 
 This setup allows administrators to manage multiple SAP companies and their extensions from one place.
 
-## CompuTec AppEngine Server Responsibilities
+## CompuTec AppEngine Server responsibilities
 
 The **CompuTec AppEngine Server** serves as the backbone of the **Computec.Core2** ecosystem, providing centralized management and orchestration for **SAP Business One** installations and associated components.  
 
