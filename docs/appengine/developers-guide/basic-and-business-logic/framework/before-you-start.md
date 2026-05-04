@@ -16,8 +16,8 @@ Before you start, make sure the following components are available:
     - The **CompuTec.Start** extension is installed. By default, it is located at: ``C:\Program Files\sap\SAP Business One\AddOns\CT\CompuTec.Start\X64Client\``
 
   Optional:
-    - **SAP WebClient** development environment. [See SAP Help Portal](https://help.sap.com/docs/SAP_BUSINESS_ONE_WEB_CLIENT/e6ac71d18c7543828bd4463f77d67ff7/b121ab221f4044baaf6051bba14cc160.html)
-    - Example projects and code samples: https://github.com/CompuTec/appengine-examples
+    - **SAP WebClient** development environment. See [SAP Help Portal](https://help.sap.com/docs/SAP_BUSINESS_ONE_WEB_CLIENT/e6ac71d18c7543828bd4463f77d67ff7/b121ab221f4044baaf6051bba14cc160.html)
+    - [Example projects and code samples](https://github.com/CompuTec/appengine-examples)
 
 ## Install CompuTec templates
 
