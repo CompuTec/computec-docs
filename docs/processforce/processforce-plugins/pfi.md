@@ -49,7 +49,7 @@ To access the CompuTec PFI plugin, follow these steps:
 
 7. Done! Now you can start working with **CompuTec PFI** plugin.
 
-## Using the CompuTec PFI plugin
+## Use the CompuTec PFI plugin
 
 ### Header section
 
@@ -86,7 +86,7 @@ In the header section, you can:
 
     ![screen showing where to click to download excel file](./media/pfi/pfi-art-plugin32.png)
 
-- **Upload data from Excel**: Import data from an MS Excel file. Blank cells are ignored and don't overwrite existing values. To explicitly set a property to blank, use a forward slash (``/``).
+- **Upload data from Excel**: Import data from an MS Excel file. Blank cells are ignored and don't overwrite existing values. To explicitly set a property to blank, use a forward slash (``/``). [Read more](http://learn.computec.one/docs/processforce/processforce-plugins/pfi#upload-data)
 
     ![screen showing where to click to download excel file](./media/pfi/pfi-art-plugin34.png)
 
@@ -143,10 +143,108 @@ The table displays data associated with the object selected in the header, inclu
 
 **Key Features of the Table**:
 
-- **Import Key** – The first column in the PFI matrix, acting as a link for the template. For example, it connects the Bill of Materials to its subordinate components.
+- **Import Key** – The first column in the PFI table, acting as a link for the template. For example, it connects the **Bill of Materials** to its subordinate components.
 - **The key icon** – Indicates the primary field for the object. Leaving this field empty during editing will add a new record. If a value is present, the existing record will be updated.
 - **Action** – Specifies the type of operation (Add/Update) for each row after uploading an Excel file.
 - **Import Status** – Displays the success or failure of each line's import into SAP Business One.
+
+### Upload data
+
+To upload data from Excel file, follow these steps:
+
+1. Navigate to the CompuTec PFI object where you want to upload data, for example, **Bill of Materials**.
+2. Click **Upload data from Exacel**.
+
+    ![alt text](media/pfi/pfi-upload.png)
+
+3. Select the Excel file you want to import, then clik **Upload file**.
+
+    ![alt text](media/pfi/pfi-upload2.png)
+
+4. After the upload id completed, an **Add (+)** icon appears in the **Action** column.
+
+    ![alt text](media/pfi/pfi-upload3.png)
+
+5. Review the uploaded records to confirm they are correct, then click **Import to SAP**.
+
+    ![alt text](media/pfi/pfi-upload4.png)
+
+6. Choose whether you want to download the import report automatically, then click **Import to SAP**.
+
+    ![alt text](media/pfi/pfi-upload5.png)
+
+7. When the process is complete, the **Import Status** column will display ``Success``.
+
+    ![alt text](media/pfi/pfi-upload6.png)
+
+### Remove a record
+
+To remove a record, follow these steps:
+
+1. In the **CompuTec PFI object**, for example, **Bill of Materials**, upload the file you want to modify.
+2. Click **Download Excel** to export the current data.
+
+    ![alt text](media/pfi/pfi-remove0.png)
+
+3. Open the Excel file and go to the relevant worksheet, for example, **Items**.
+
+4. Locate the **Remove** column and enter ``Yes`` in the row for the record you want to delete.
+
+    ![alt text](media/pfi/pfi-remove1.png)
+
+5. Save the Excel file.
+6. Return to CompuTec PFI and click **Upload Data from Excel**.
+
+    ![alt text](media/pfi/pfi-remove2.png)
+
+7. Select the updated Excel file, then click **Upload file**.
+
+    ![alt text](media/pfi/pfi-remove3.png)
+
+    :::note[info]
+    After the upload of the modified file, the **Action** column in **CompuTec PFI** will change to ``Update``.
+
+    ![alt text](media/pfi/pfi-remove4.png)
+
+    :::
+
+8. Verify that the **Remove** column contains ``Yes`` for the correct record.
+
+    ![alt text](media/pfi/pfi-remove5.png)
+
+9. Click **Import to SAP**.
+
+    ![alt text](media/pfi/pfi-remove6.png)
+
+10. Choose whether you want to download the import report automatically, then click **Import to SAP**.
+
+    ![alt text](media/pfi/pfi-remove7.png)
+
+11. Wait for the import process to finish. When it is complete, click **Close**.
+
+    ![alt text](media/pfi/pfi-remove8.png)
+
+12. Verify the result in the **Import Status** column. A successful operation will display ``Success``.
+
+    ![alt text](media/pfi/pfi-remove9.png)
+
+    :::info[note]
+    To verify that the record was removed, follow these steps:
+
+    - Download the current Excel file again by clicking **Download Excel**.
+    - Click **Load Sample** and select the downloaded file.
+
+        ![alt text](media/pfi/pfi-remove10.png)
+
+    - In the **Load Sample** window, enter the code from the **Code** field of your table, then click **Load**.
+
+        ![alt text](media/pfi/pfi-remove12.png)
+
+    - Review the results. The deleted record should no longer appear in the list.
+
+        ![alt text](media/pfi/pfi-remove13.png)
+
+    :::
 
 ## Parallel import limit configuration
 
