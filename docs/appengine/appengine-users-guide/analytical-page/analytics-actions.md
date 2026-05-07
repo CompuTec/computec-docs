@@ -11,7 +11,7 @@ It works similarly to options in a right-click menu - when users select one or m
 **Actions** are available only when they are enabled for both the **Source** and the **Variant**.
 
 :::note[FOR DEVELOPERS]
-Plugin developers can create custom **CompuTec AppEngine Actions** that become available automatically in **Source** configuration after the plugin is installed. Read more
+Plugin developers can create custom **CompuTec AppEngine Actions** that become available automatically in **Source** configuration after the plugin is installed. [Read more](https://learn.computec.one/docs/appengine/developers-guide/basic-and-business-logic/appengine-plugin/ae-actions)
 :::
 
 ## How actions work in Analytics
