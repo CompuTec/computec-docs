@@ -181,25 +181,17 @@ To resolve this issue:
 
 ## Actions Tab
 
-In the Actions tab, you can review Linked Objects associated with the selected data source. Actions allow users to trigger specific operations for a selected row directly from the report.
+In the **Actions** tab, you can review **Linked Objects** associated with the selected data source.  
+
+**Actions** allow users to trigger specific operations for a selected row directly from the report.
 
 ![screen showing actions tab](.\media\table_chart_opt\actions-tab.png)
 
-Actions are defined in plugins, so after installing plugins, additional actions become available for use in Analytics.
+**Actions** are defined in plugins, so after installing plugins, additional actions become available for use in **Analytics**. 
 
-To use actions in a report:
-
-1. Click **edit icon** to enable edit mode in the chosen source.
-
-        ![screen showing how to enable edit mode](.\media\table_chart_opt\actions-tab-edit.png)
-
-2. In the **Actions** tab of the variant configuration, click the name of the  **Action** you want to edit.
-
-        ![screen showing the actions tab](.\media\table_chart_opt\actions-tab-edit2.png)
-
-3. Once configured, you can enable or disable these actions to allow users to perform operations directly from the analytics report.
-
-        ![screen showing the actions edit options](.\media\table_chart_opt\actions-tab-edit3.png)
+:::note[info]
+For more information about configuring and activating **Actions** in **Analytics**, see [our article](https://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/analytics-actions/).
+:::
 
 ## Variants Tab
 
@@ -330,61 +322,15 @@ In this section, you can:
 
 ### Action Settings
 
-In this section, you configure which actions are available for the selected report variant.
+In **Action Settings** section, you configure which actions are available for the selected report variant.
 
 ![screen showing action settings section](./media/table_chart_opt/an-sm-click-src-edit-mode-variants-edit-actons.png)
 
-This allows you to control which operations users can perform directly from the report, depending on the variant they are using.
-
-For example, you may have different variants such as **Sales**, **Warehouse**, or **Production**. Each variant can have its own permissions and therefore only the relevant actions should be enabled for that specific variant.
-
-By configuring **Action Settings**, you ensure that users see only the actions that are appropriate for their role and report context.
+This allows you to control which operations users can perform directly from the report, depending on the variant they are using. 
 
 :::note[info]
-You can read more about **Actions** in [our documentation](http://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/table-and-chart-options#actions-tab).
+For more information about configuring and activating **Actions** in **Analytics**, see [our article](https://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/analytics-actions/).
 :::
-
-#### Activate an Action
-
-To activate an Action, you must configure the connection between the report Source and the Action parameters by mapping the required values. These values are then passed to the Action as arguments when it is triggered.
-
-To activate an action, follow these steps:
-
-1. Go to the **Source** where you want to enable the Action and open the **Actions** tab.
-
-    ![screen showing where to find the actions tab](./media\table_chart_opt\activate-action1.png)
-
-2. Enter the edit mode by clicking the **edit icon**.
-
-    ![screen showing entering the edit mode](./media/table_chart_opt/activate-action12.png)
-
-3. Select **Action** you want to activate.
-
-    ![screen showing choosing an action for activation](./media/table_chart_opt/activate-action123.png)
-
-4. In the **Additional Information** section, configure how the **Action** should receive data from the report:
-
-    - (optional) **Object Type**: Defines how the Action should behave depending on the object it is applied to.  
-    Example: if an Action can work with both the **Sales Orders** and **Manufacturing Orders** object types, you can specify the rules for the selected object type.
-    - **Required**: If enabled, the Action will not be executed when the mapped value is empty.
-    - **Source Type**: Choose how the value will be provided:
-
-        - **Constant**: A fixed value defined manually
-        - **Field**: A value taken from a column in the report
-
-    - **Value Source**: Select the column from the report that should be mapped to the Action parameter.
-
-    ![screen showing additional information section](./media/table_chart_opt/activate-action1234.png)
-
-5. Click **Use in Source** to apply the mapping.
-
-    ![screen showing how to apply mapping](./media/table_chart_opt/activate-action123456.png)
-
-6. Click **Update**.
-
-    ![screen showing how to update the changes](./media/table_chart_opt/activate-action1234567.png)
-
-7. Done! The **Action** is now activated and available in the report.
 
 ### Drill Downs
 
