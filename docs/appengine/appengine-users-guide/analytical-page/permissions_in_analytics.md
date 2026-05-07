@@ -49,7 +49,7 @@ To add permissions to an existing **Analytics** variant, follow these steps:
 
     ![screen showing updating the changes in the source](.\media\permissions\perm-update.png)
 
-8. Done. The variant is now visible only to ``Superusers`` and the user who created it.
+8. The variant is now visible only to ``Superusers`` and the user who created it.
 
 :::info[note]
 Before configuring permissions in SAP Business One, note the variant **GUID**, which is displayed below the variant name. You will need this identifier in the next step.
@@ -97,7 +97,7 @@ To assign permissions to specific users or groups in **SAP Business One**, follo
 
     ![screen showing updating the changes in sap b1](.\media\permissions\an-permissions-sap1234567.png)
 
-10. Done! The permissions are now applied.
+10. The permissions are now applied.
 
 ## Review Variant Permissions in SAP Additional Authorization Creator
 

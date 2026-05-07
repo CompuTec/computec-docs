@@ -36,7 +36,7 @@ To access the **Analytics** module of **CompuTec AppEngine**, follow these steps
 
     ![screen showng Analytics Variants List view](./media/overview/access-an2.png)
 
-## Analytics Variants List  
+## About Analytics Variants List  
 
 The **Analytics Variants List** displays all available reports and their **views**.
 
@@ -85,7 +85,7 @@ To create your own view, follow these steps:
 
     ![screen showng clicking save button](./media/overview/access-an2346-filter2345.png)
 
-### Edit your Analytics Variants List Views
+### Edit your Analytics Variants List views
 
 If you want to edit or manage an existing Analytics Variants List view, follow these steps:
 
@@ -109,7 +109,7 @@ If you want to edit or manage an existing Analytics Variants List view, follow t
 
 4. After making your changes, click **Save** to apply them or **Cancel** to discard the changes.
 
-## About a Variant
+## About a variant
 
 **Variant** is a saved report configuration that defines how a report is displayed and used.
 

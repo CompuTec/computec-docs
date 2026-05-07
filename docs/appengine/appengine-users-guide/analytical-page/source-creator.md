@@ -188,4 +188,4 @@ To edit an existing data source, follow these steps:
 
     ![screen showing how to save changes after data source edits](media/source-creator/an-sm-click-src-edit-mode0-save.png)
 
-8. Done! Now you know how to edit your existing data sources.
+8. Your changes are now saved and available in Analytics reports that use this source.
