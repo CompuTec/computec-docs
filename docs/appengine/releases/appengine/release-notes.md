@@ -4,6 +4,49 @@ sidebar_position: 1
 
 # CompuTec AppEngine Release Notes
 
+## CompuTec AppEngine 3.2605.1
+
+**Release Date: 7 May 2026**
+
+| Issue Type | Components | Release Note |
+| --- | --- | --- |
+| Fixed | AE Analytics | Users with read-only access can no longer delete Analytics variants, improving permission control and preventing accidental changes. |
+| Improved | AE Analytics | Renamed the custom Analytics authorization group to **Custom Variants**, making permissions easier to identify in **SAP Business One**. |
+| Fixed | AE Administration Panel | Fixed trace level configuration so selected telemetry settings are correctly applied and logs are created as expected. |
+| Fixed | AE WebClient | Added required **SignalR** configuration support for **CompuTec WebClient** communication. |
+| Improved | AE Core | Improved error messages when **SAP DI API** is missing or configured incorrectly, helping administrators identify configuration issues faster. |
+| Fixed | AE Core | Fixed ``groupby`` support for **OData** endpoints, allowing grouped data queries to work correctly. |
+| Fixed | AE WebClient | Fixed an issue where **CompuTec WebClient** could not start because the **SAP UI5** component was not loaded. |
+| Fixed | AE Architecture | Fixed refresh token re-authentication for **API Gateway** and **Service Layer** when **OIDC** is enabled, preventing users from losing selections after token refresh. |
+| Fixed | AE Core | Fixed progress bar task handling so repeated requests no longer fail because of missing task IDs. |
+| Fixed | AE Core | Fixed company plugin validation so companies can be validated without errors. |
+| Fixed | AE Analytics | Fixed CSV and Excel export so downloaded files use the correct format and open correctly. |
+| Fixed | AE Launchpad | Fixed an **OIDC** logout issue where users could not log in to **CompuTec AppEngine Launchpad** after logging out from **Administration Panel**. |
+| Improved | AE Analytics | Added support for three **Drill Down** filter types: ``table field``, ``constant``, and ``top filter``. |
+| Fixed | AE Analytics | Fixed an error when saving changes for an existing Analytics variant. |
+| New | AE Analytics, Gateway | Added **API Gateway** action type support for Analytics, allowing layouts to be passed as action arguments. |
+| Improved | AE Analytics | Analytics actions can now be assigned multiple times with different parameters, giving more flexibility when configuring variants. |
+| New | AE Analytics | Added **Crystal Report** preview by action, including PDF preview, download, and print support. |
+| Improved | AE Analytics | Added **Download All** option for **Crystal Reports**. |
+| Improved | UI | **System Details** now shows the full **CompuTec AppEngine** build version and related **CompuTec Core** version. |
+| Fixed | AE Configuration | Fixed telemetry profile assignment on the **CompuTec AppEngine** server details page. |
+| Fixed | Price Management | Fixed price export so Excel files include all expected rows, currency values, and complete price data. |
+| Fixed | AE Administration Panel, AE Configuration | Fixed validation and CORS configuration issues, including support for empty values where allowed. |
+| Improved | AE Analytics | Improved **Preview & Print** parameter mapping, including mandatory parameters, multi-value handling, and constant/field mapping behavior. |
+| Fixed | AE Analytics | Fixed **Generate DateParts** so generated date parts correctly appear in reports. |
+| Improved | WebUpApp | Improved switching performance between **Basic** and **Dynamic** modes. |
+| Fixed | SAP UI5 | Fixed incorrect ``timestamp`` display in **KSeF Output Invoice Details**. |
+| Improved | AE Analytics | Improved print parameter dialog handling for ``required``, ``optional``, ``empty``, and ``mapped`` values. |
+| Fixed | WebUpApp | Fixed **B1SiteUser** login handling so incorrect credentials no longer require restarting server tools. |
+| Fixed | AE Common Library | Fixed custom validation triggering so validation events fire correctly. |
+| Fixed | Common Functions | Corrected spelling in the **Gantt** installation pop-up. |
+| Fixed | Core | Fixed incorrect ``WebClientEnabled`` naming in **SLD Server** configuration. |
+| Improved | Manufacturing Order | Improved transaction handling for **Manufacturing Orders** to reduce locks and deadlocks during journal entry creation, cost updates, time booking cost updates, and dynamic receipt costing. |
+| Fixed | Bill of Materials | Fixed warehouse selection in BOM definitions so valid warehouse codes are accepted correctly. |
+| Improved | Planning | Improved scheduling performance by using bulk insert, reducing processing time when creating **Manufacturing Orders** from **Sales Orders**. |
+| Improved | Manufacturing Order | Improved orderless production processing to reduce locking and better support transaction/post-transaction notification logic. |
+| Fixed | WMS Server | Fixed ``Cannot add row`` errors in **Pick and Pack** scenarios. |
+
 ## CompuTec AppEngine 3.2603.1
 
 **Release Date: 31 March 2026**
