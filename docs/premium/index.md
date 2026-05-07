@@ -12,6 +12,6 @@ Some of the features include:
 - **Business Partner Verification**: verification of Business Partner NIP (Taxpayer Identification Number) and confirms whether a business is an active taxpayer.
 - **VAT Payers Whitelist Verification**: ensures compliance by verifying businesses against the official VAT payers list.
 
-CompuTec Premium is a versatile, cross-industry solution suitable for all types of businesses registered in Poland. Recognized for its reliability, it has been recommended by the Association of Accountants in Poland since 2004.
+CompuTec Premium is a versatile, cross-industry solution suitable for all types of businesses registered in Poland.
 
 ---
