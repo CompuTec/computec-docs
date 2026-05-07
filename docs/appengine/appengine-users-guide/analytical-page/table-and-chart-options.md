@@ -187,7 +187,7 @@ In the **Actions** tab, you can review **Linked Objects** associated with the se
 
 ![screen showing actions tab](.\media\table_chart_opt\actions-tab.png)
 
-**Actions** are defined in plugins, so after installing plugins, additional actions become available for use in **Analytics**. 
+**Actions** are defined in plugins, so after installing plugins, additional actions become available for use in **Analytics**.
 
 :::note[info]
 For more information about configuring and activating **Actions** in **Analytics**, see [our article](https://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/analytics-actions/).
@@ -326,7 +326,7 @@ In **Action Settings** section, you configure which actions are available for th
 
 ![screen showing action settings section](./media/table_chart_opt/an-sm-click-src-edit-mode-variants-edit-actons.png)
 
-This allows you to control which operations users can perform directly from the report, depending on the variant they are using. 
+This allows you to control which operations users can perform directly from the report, depending on the variant they are using.
 
 :::note[info]
 For more information about configuring and activating **Actions** in **Analytics**, see [our article](https://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/analytics-actions/).
