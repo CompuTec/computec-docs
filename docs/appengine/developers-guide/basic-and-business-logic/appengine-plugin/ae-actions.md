@@ -92,7 +92,7 @@ When an action is defined, it declares which **Object Code(s)** it supports. The
 
 ## Action parameters
 
-Actions use parameters to receive data from selected records.
+Every action needs some information from the selected record to do its work, for example, the document's internal number `DocEntry` or its unique code `Code`.
 
 Typical parameters include:
 
@@ -305,7 +305,7 @@ This action:
 - prevents duplicate XML generation
 - returns generated file links
 
-## Register an Action
+## Register an action
 
 Actions must be registered in the plugin's ``Info.cs`` file.
 
@@ -342,7 +342,7 @@ public override void RegisterActions(ActionsBuilder builder)
 
 After registration and plugin installation, the action becomes available automatically in supported screens.
 
-## Builder Methods Reference
+## Builder methods reference
 
 | Method | Purpose |
 | --- | --- |
@@ -357,43 +357,43 @@ After registration and plugin installation, the action becomes available automat
 | ``.WithAuthorizationId()`` | Defines required authorization |
 | ``.WithHelpLink()`` | Adds a documentation link |
 
-## Real-world example: Warehouse management plugin
+## Use case: Warehouse Management plugin
 
 The following examples show how **CompuTec AppEngine** actions can support warehouse operations in **SAP Business One**.
 
-1. **Release Pick List**
+### Release pick list
 
-    | Property | Value |
-    | --- | --- |
-    | Object type | Pick List |
-    | Execution mode | Multi |
-    | Result | Message |
-    | Condition | Only available for pick lists with Open status |
+| Property | Value |
+| --- | --- |
+| Object type | Pick List |
+| Execution mode | Multi |
+| Result | Message |
+| Condition | Only available for pick lists with Open status |
 
-    **What it does**
+#### What it does
 
-    This action releases selected pick lists for warehouse processing. Warehouse employees can select multiple pick lists and release them in a single operation.
+This action releases selected pick lists for warehouse processing. Warehouse employees can select multiple pick lists and release them in a single operation.
 
-    **Why the condition matters**
+#### Why the condition matters
 
-    Pick lists that are already released or closed cannot be processed again.
+Pick lists that are already released or closed cannot be processed again.
 
-2. **Generate Shipping Labels**
+### Generate shipping labels
 
-    | Property | Value |
-    | --- | --- |
-    | Object type | Delivery |
-    | Execution mode | Multi |
-    | Result | File download |
-    | Condition | Only available for deliveries with a shipping address |
+| Property | Value |
+| --- | --- |
+| Object type | Delivery |
+| Execution mode | Multi |
+| Result | File download |
+| Condition | Only available for deliveries with a shipping address |
 
-    **What it does**
+#### What it does
 
-    This action generates printable shipping labels for selected deliveries.
+This action generates printable shipping labels for selected deliveries.
 
-    The action returns a ZIP archive containing PDF label files.
+The action returns a ZIP archive containing PDF label files.
 
-    **Why the condition matters**
+#### Why the condition matters
 
     A shipping label cannot be generated if the delivery document does not contain shipping information.
 
