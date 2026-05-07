@@ -11,6 +11,46 @@ You can find all download links and release notes for the latest available **Com
 However, we strongly recommend using **CompuTec ProcessForce Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec ProcessForce Plugin 3.2605.1
+
+**Release Date: 7 May 2026**
+
+| Issue Type | Components | Release Note |
+| --- | --- | --- |
+| Improved | BT360 | Added transaction **Time** to trace and multi-batch analysis, giving users more precise visibility into when transactions occurred. |
+| Improved | Quality Control | Added support for creating QC documents when a **Manufacturing Order** status is ``Finished``. Users can now create QC documents manually or automatically when the MO changes to ``Finished``. |
+| Improved | API | Added an option for selected actions, such as **Goods Receipt** and **Goods Issue**, to run without committing the transaction immediately. This gives integrations more control over transaction handling. |
+| Fixed | Quality Control | QC document creation now follows defined frequency rules, such as creating a QC test for every third received batch, instead of creating a document for every transaction. |
+| Improved | Bill of Materials | Yield formulas are now supported in **Bill of Materials**, so planned quantities can be calculated consistently before the **Manufacturing Order** is created. |
+| Fixed | Bill of Materials | Operation binding through **CompuTec PFI** now fills item names and default item details correctly. |
+| Fixed | MRP | Corrected supply, demand, document numbers, and quantities in MRP results, ensuring users open the expected documents and review reliable planning data. |
+| Fixed | Cost Accounting | Cost center names in **Production Process** now display correctly instead of repeating the first cost center name. |
+| Fixed | Gantt Chart | **Stock Transfer Requests** opened from the shortage report now point to the correct documents and items. |
+| Fixed | MRP | The **Default Due Time for SAP MRP** setting now supports the time format defined in **General Settings**, including 12-hour time format. |
+| Fixed | PM - Maintenance Order | Multi-select for task codes now works correctly in **Maintenance Order** task and checklist selection. |
+| Fixed | Manufacturing Order | UDF fields on **Manufacturing Order Operation Properties** are now visible again after upgrade and can be managed through **Form Settings**. |
+| Fixed | Items | Fixed an error when opening **Business Partner Relations** from **Item Details** properties. |
+| Fixed | Manufacturing Order | Fixed an issue where formatted search values in **Manufacturing Order** lines could be refreshed twice and overwritten. |
+| Fixed | Items | Remarks at line level in **Item Details** now open correctly in a text editor popup. |
+| Fixed | Production Costing | **Resource Accounting** can now be opened from the resource form and SAP menu without errors. |
+| Fixed | PM - Maintenance Order | Fixed an error when closing **Maintenance Recording** documents caused by unnecessary hidden fields. |
+| Improved | Maintenance | **Preventive Maintenance Schedule** is now available in **CompuTec PFI**, with field order handled correctly during import. |
+| Fixed | Scheduling | **Scheduling** now shows a clear message when a resource does not have a calendar instead of returning a system error. |
+| Fixed | Gantt Chart | Dates in **Resource Planning Board** now match the related **Manufacturing Order** dates. |
+| Fixed | Scheduling | Frozen resources are no longer rescheduled unexpectedly. |
+| Fixed | Common Functions | **Sales Order** quantities can no longer be changed when the option to block updates for lines linked to **Manufacturing Orders** is enabled. |
+| Improved | PM - Maintenance Order | Added **Maintenance Order Template** object in **CompuTec PFI**. |
+| Fixed | Common Functions | The **Expiration Date** checkbox in **Item Group** settings now works correctly in the user interface. |
+| Fixed | Web API | Create **Adjustment** and rollback-related actions now return a clear message when there is nothing to process instead of succeeding incorrectly. |
+| Fixed | Manufacturing Order | Fixed an error during **Pick Receipt** caused by QC test document creation logic. |
+| Fixed | Common Functions | **Manufacturing Synchronization Results** now open without column size errors. |
+| Fixed | Bill of Materials | **Operation Binding** now displays the correct item description in the **Item Name** field. |
+| Fixed | Bill of Materials | Removing one item from **Operation Binding** no longer removes all other bound items. |
+| Fixed | Manufacturing Order | Fixed backflush items no longer appear in **Pick Orders**. |
+| Fixed | Scheduling | Corrected scheduled dates for finished goods without routing when creating **Manufacturing Orders** from **SAP Order Recommendation**. |
+| Fixed | PM - Maintenance Order | **Maintenance Orders** created from templates can now be updated with remarks without database errors. |
+| Fixed | Common Functions | **Supplier Scorecard** total percentage now recalculates correctly when score values are changed. |
+
 ## CompuTec ProcessForce 3.2603.3
 
 **Release Date: 31 March 2026**
