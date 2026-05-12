@@ -43,7 +43,7 @@ To reinitialize the company, follow these steps:
 
 After the process is completed, open **CompuTec WebClient Start** again and verify that the application loads correctly.
 
-## Problem: Couldn't activate Background Processing in CompuTec AppEngine
+## Problem: Couldn't activate background processing in CompuTec AppEngine
 
 In some **CompuTec AppEngine** installations, administrators may encounter an issue where **Background Processing** cannot be activated for a company. When attempting to enable it, the activation fails and you can see an error.
 
