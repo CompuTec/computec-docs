@@ -4,9 +4,48 @@ sidebar_position: 2
 
 # Troubleshooting
 
-## Problem: Cannot Activate Background Processing in CompuTec AppEngine
+## Problem: CompuTec WebClient Start couldn't be opened
 
-In some CompuTec AppEngine installations, administrators may encounter an issue where **Background Processing** cannot be activated for a company. When attempting to enable it, the activation fails and you can see an error.
+In some environments, the **CompuTec WebClient Start** application may fail to open after updating or installing **CompuTec AppEngine**.
+
+The following error message may appear in **SAP Business One Web Client**: ``App could not be opened because the SAP UI5 component of the application could not be loaded.``
+
+This issue can occur when the company configuration was not fully refreshed after the update.
+
+### Solution
+
+One of the workable solutions is to reinitialize the company in the **CompuTec AppEngine Administration Panel**.
+
+:::info[note]
+Reinitializing a company refreshes the company configuration while keeping existing settings. During the process, the company may be temporarily unavailable for users.
+:::
+
+To reinitialize the company, follow these steps:
+
+1. Log in to the **CompuTec AppEngine Administration Panel**.
+2. Go to **Configuration**.
+3. In the **Companies** section, locate the company you want to reinitialize.
+4. Click the **Active** toggle next to the selected company.
+
+    ![alt text](media/reinitialize1.png)
+
+5. In the confirmation window, click **Reinitialize**.
+
+    ![alt text](media/reinitialize2.png)
+
+6. Enter the SLD Server user password, and click **OK**.
+
+    ![alt text](media/reinitialize3.png)
+
+7. Wait until the **Company Activation Progress** window shows all steps completed successfully, and click **Close**.
+
+    ![alt text](media/reinitialize4.png)
+
+After the process is completed, open **CompuTec WebClient Start** again and verify that the application loads correctly.
+
+## Problem: Couldn't activate Background Processing in CompuTec AppEngine
+
+In some **CompuTec AppEngine** installations, administrators may encounter an issue where **Background Processing** cannot be activated for a company. When attempting to enable it, the activation fails and you can see an error.
 
     ![System error](..\media\troubleshooting\2026-03-11_13-15-52.png)
 
@@ -34,7 +73,7 @@ If the issue still occurs:
 
 After resolving the issue, you will be able to activate **Background Processing** without problems.
 
-## Problem: CompuTec AppEngine Fails to Start – Event ID 7000 or 7009
+## Problem: CompuTec AppEngine fails to start – Event ID 7000 or 7009
 
 On some Windows systems, **CompuTec AppEngine** may fail to start and **Windows Event Viewer** logs ``Event ID 7000`` or ``Event ID 7009``. These errors usually indicate that the **Windows Service Control Manager** stopped waiting for the service to start because it exceeded the allowed startup time.
 
@@ -88,7 +127,7 @@ Here’s a step-by-step guide on how to do it:
 8. Restart the system to apply the change.
 9. Done! Now you can start **CompuTec AppEngine** again.
 
-## Problem: Hyper-V Reserving AppEngine Default Port 54001
+## Problem: Hyper-V reserving CompuTec AppEngine default port 54001
 
 On some Windows systems, **Hyper-V** networking may reserve **TCP ports** that **CompuTec AppEngine** needs to start. When this happens, CompuTec AppEngine can't use its default **port 54001**, and the service doesn't start.
 
@@ -129,7 +168,7 @@ If AppEngine still cannot start **after restarting WinNAT**:
 If you need help, or have any questions, contact us via the [CompuTec Support Portal](https://support.computec.pl/servicedesk/customer/portals?q=webUp).
 :::
 
-## Problem: CompuTec AppEngine doesn't connect to the database
+## Problem: CompuTec AppEngine couldn't connect to the database
 
 CompuTec AppEngine fails to connect to the SAP HANA database, and the following error is displayed:
 

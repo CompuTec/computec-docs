@@ -16,7 +16,6 @@ sidebar_position: 1
 | Fixed | AE WebClient | Added required **SignalR** configuration support for **CompuTec WebClient** communication. |
 | Improved | AE Core | Improved error messages when **SAP DI API** is missing or configured incorrectly, helping administrators identify configuration issues faster. |
 | Fixed | AE Core | Fixed ``groupby`` support for **OData** endpoints, allowing grouped data queries to work correctly. |
-| Fixed | AE WebClient | Fixed an issue where **CompuTec WebClient** could not start because the **SAP UI5** component was not loaded. |
 | Fixed | AE Architecture | Fixed refresh token re-authentication for **API Gateway** and **Service Layer** when **OIDC** is enabled, preventing users from losing selections after token refresh. |
 | Fixed | AE Core | Fixed progress bar task handling so repeated requests no longer fail because of missing task IDs. |
 | Fixed | AE Core | Fixed company plugin validation so companies can be validated without errors. |
@@ -46,6 +45,7 @@ sidebar_position: 1
 | Improved | Planning | Improved scheduling performance by using bulk insert, reducing processing time when creating **Manufacturing Orders** from **Sales Orders**. |
 | Improved | Manufacturing Order | Improved orderless production processing to reduce locking and better support transaction/post-transaction notification logic. |
 | Fixed | WMS Server | Fixed ``Cannot add row`` errors in **Pick and Pack** scenarios. |
+| Fixed | AE WebClient | Fixed an issue where **CompuTec WebClient Start** could not be opened because the **SAP UI5** component failed to load. **Important**: In some environments, company reinitialization may be required after the update to apply the fix correctly. [Read more](http://learn.computec.one/docs/appengine/other/troubleshooting#problem-computec-webclient-start-couldnt-be-opened) |
 
 ## CompuTec AppEngine 3.2603.1
 
