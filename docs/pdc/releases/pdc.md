@@ -11,6 +11,17 @@ You can find all [download links](https://learn.computec.one/docs/appengine/2.0/
 However, we strongly recommend using CompuTec PDC 4.0 Plugin together with CompuTec AppEngine 3.0 to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec PDC 4.2605.1
+
+**Release Date: 7 May 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Fixed | PDC | Fixed an issue where **QC tests** created for manufacturing operations were not visible in **CompuTec PDC** tasks. Users can now access operation QC documents correctly during production reporting. |
+| Fixed | PDC | Fixed an issue where closed tasks that were not started remained visible on the screen. Tasks are now removed correctly after closing, without requiring users to log out and back in. |
+| Fixed | Barcodes | Improved barcode handling in **Quick Issue**. Scanning item and batch barcodes now correctly selects the related batch information automatically. |
+| Fixed | Downtimes | Fixed downtime task handling in **CompuTec PDC**. Additional downtime reasons are now saved correctly, and closed downtime tasks are removed from the screen immediately. |
+
 ## CompuTec PDC 4.2603.1
 
 **Release Date: 5 March 2026**
