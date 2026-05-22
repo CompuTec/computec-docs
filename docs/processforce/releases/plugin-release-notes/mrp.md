@@ -6,7 +6,7 @@ sidebar_position: 12
 
 Below are the release notes for CompuTec Material Requirements Planning (MRP) Plugin, highlighting new features, improvements, and bug fixes in this release.
 
-## MRP 3.2605.3
+## CompuTec MRP 3.2605.3
 
 **Release Date: 20 May 2026**
 
@@ -17,7 +17,7 @@ Below are the release notes for CompuTec Material Requirements Planning (MRP) Pl
 | Fixed | MRP | Fixed issues with saving new **MRP scenarios**. Scenarios now open in the correct mode after saving. |
 | Fixed | MRP | Fixed filtering issues in **Order Recommendation**. Filters based on **scenario name** and **properties** now save and return results correctly. |
 
-## MRP 3.2605.1
+## CompuTec MRP 3.2605.1
 
 **Release Date: 8 May 2026**
 
