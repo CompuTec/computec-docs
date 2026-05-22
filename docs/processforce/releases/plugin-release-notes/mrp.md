@@ -2,9 +2,28 @@
 sidebar_position: 12
 ---
 
-# CompuTec MRP
+# CompuTec Material Requirements Planning (MRP) Plugin
 
-Below are the release notes for CompuTec MRP Plugin, highlighting new features, improvements, and bug fixes in this release.
+Below are the release notes for CompuTec Material Requirements Planning (MRP) Plugin, highlighting new features, improvements, and bug fixes in this release.
+
+## MRP 3.2605.3
+
+**Release Date: 20 May 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Fixed | MRP | Fixed **Planning Horizon** date handling issues that could cause entered dates to shift unexpectedly in some environments with different time zone or date format settings. |
+| Fixed | MRP | Fixed an error when saving scenarios: ``An item with the same key has already been added``. |
+| Fixed | MRP | Fixed issues with saving new **MRP scenarios**. Scenarios now open in the correct mode after saving. |
+| Fixed | MRP | Fixed filtering issues in **Order Recommendation**. Filters based on **scenario name** and **properties** now save and return results correctly. |
+
+## MRP 3.2605.1
+
+**Release Date: 8 May 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Fixed | MRP | Fixed screen refresh behavior in the **Order Recommendation Relationship Map**, preventing flickering when collapsing the header section. |
 
 ## CompuTec MRP 3.2602.1
 

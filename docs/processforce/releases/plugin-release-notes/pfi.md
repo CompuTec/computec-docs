@@ -6,11 +6,18 @@ sidebar_position: 13
 
 Below are the release notes for CompuTec Data Import & Export (PFI) Plugin, highlighting new features, improvements, and bug fixes in this release.
 
----
+## CompuTec PFI 3.2605.1
+
+**Release Date: 18 May 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Improved | PFI | Improved **CompuTec PFI** import performance for large datasets, reducing processing time for high-volume imports such as **BOM** imports. |
+| Improved | PFI | Added additional logging to help diagnose import and file processing issues more effectively. |
 
 ## CompuTec PFI 3.2601.1
 
-**Release Date - 29 January 2026**
+**Release Date: 29 January 2026**
 
 | Issue Type | Component/s | Release Note |
 | --- | --- | --- |
@@ -18,7 +25,7 @@ Below are the release notes for CompuTec Data Import & Export (PFI) Plugin, high
 
 ## CompuTec PFI 3.2510.1
 
-**Release Date - 29 October 2025**
+**Release Date: 29 October 2025**
 
 | Issue Type | Component/s | Release Note |
 | --- | --- | --- |

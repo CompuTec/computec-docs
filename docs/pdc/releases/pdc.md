@@ -11,6 +11,21 @@ You can find all [download links](https://learn.computec.one/docs/appengine/2.0/
 However, we strongly recommend using CompuTec PDC 4.0 Plugin together with CompuTec AppEngine 3.0 to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec PDC 4.2605.2
+
+**Release Date: 14 May 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Improved | PDC | Added weight capture control support in **Manufacturing Order Confirmation**. |
+| Improved | PDC | Added tooltips and text wrapping for **Operation and Quantity Registration** column headers, improving readability of longer labels. |
+| Improved | PDC | Corrected **Manufacturing Order Confirmation** header information and added **SAP navigation links** for **Manufacturing Order** and **Item Code** fields. |
+| Fixed | PDC | Fixed **ScannerTarget** handling for collection filters in **Quantity Registration** reports. |
+| Improved | PDC | Added validation to prevent opening **Manufacturing Confirmation** for operations configured with ``Backflush`` issue type. |
+| Fixed | PDC | Fixed an issue where **Manufacturing Confirmation** could become unresponsive after validation errors. |
+| Fixed | Management Board, PDC | Fixed an issue where managers could not see quantities registered by employees in task details. |
+| Fixed | PDC | Fixed intermittent issues with run time registration when using the **date picker**. |
+
 ## CompuTec PDC 4.2605.1
 
 **Release Date: 7 May 2026**
