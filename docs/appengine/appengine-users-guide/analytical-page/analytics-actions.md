@@ -6,7 +6,7 @@ sidebar_position: 4
 
 **Actions** allow users to perform business operations directly from selected rows in **CompuTec AppEngine Analytics** report.  
 
-It works similarly to options in a right-click menu - when users select one or more rows in a report, **CompuTec AppEngine** automatically displays the **Actions** available for that data. For example, users can release a production order, post a document, or run a custom plugin action without leaving the report.  
+When users select one or more rows in a table, **CompuTec AppEngine** automatically displays the **Actions** available for that data. For example, users can release a production order, post a document, or run a custom plugin action without leaving the report.  
 
 **Actions** are available only when they are enabled for both the **Source** and the **Variant**.
 
@@ -21,7 +21,7 @@ Plugin developers can create custom **CompuTec AppEngine Actions** that become a
 1. **Source**: defines which actions are available and how report values are mapped to action parameters
 2. **Variant**: defines which actions are visible
 
-Users then execute these configured actions directly from the Report. This separation allows you to reuse the same action across multiple report Variants while controlling how it appears in each one.
+Users then execute these configured actions directly from the report. This separation allows you to reuse the same action across multiple report variants while controlling how it appears in each one.
 
 For example:
 
@@ -31,7 +31,7 @@ For example:
 
 ## Configure actions in a source
 
-To configure an action in a **Source**:
+To configure an action in a source:
 
 1. Open **CompuTec AppEngine Launchpad**.
 

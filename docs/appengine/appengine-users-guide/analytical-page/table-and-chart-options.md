@@ -226,11 +226,11 @@ For more information about managing permissions, see the [our article on Analyti
 **Forms Definition** allows you to add an **Analytics** report to the **SAP Business One** interface. You can make the report available either:
 
 - in the **SAP Business One** main menu, or
-- as a **right-click** (context menu) option within a selected form (for example, a Manufacturing Order)
+- as a **right-click** (context menu) option within a selected form (for example, a **Manufacturing Order**)
 
 ![screen showing forms definition](media/table_chart_opt/an-sm-click-src-edit-mode-variants-edit-forms.png)
 
-This enables users to open **CompuTec AppEngine Analytics** reports directly from **SAP Business One**, without switching applications. For example, users can launch the report through a dedicated SAP menu option or by using the right-click context menu, for example, from a Manufacturing Order.
+This enables users to open **CompuTec AppEngine Analytics** reports directly from **SAP Business One**, without switching applications. For example, users can launch the report through a dedicated SAP menu option, for example, from a Manufacturing Order.
 
 ### Add a Forms Definition
 
