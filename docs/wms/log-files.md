@@ -4,46 +4,84 @@ sidebar_position: 6
 
 # Log Files
 
-Here is the detailed information on the locations of logs for CompuTec WMS:
+This guide explains how to collect diagnostic information for **CompuTec WMS**.
 
-1. **Server logs**
+You can use the sections below to:
 
-    - Logs: C:\ProgramData\CompuTec\CompuTec WMS\Server\Logs
-    - TimeLog: C:\ProgramData\CompuTec\CompuTec WMS\Server\TimeLog
+- find **CompuTec WMS** log file locations
+- collect server, client, and **Service Manager** logs
+- enable additional query logging
+- use **Microsoft Event Viewer**
+- enable advanced telemetry and diagnostics for deeper troubleshooting
 
-2. **Service manager**
+## Find Standard Logs
 
-    Here, you will find logs regarding the installation of CompuTec WMS objects.
+### Server Logs
 
-    - Logs: C:\ProgramData\CompuTec\ServiceManager\Logs
+The **WMS Server** stores standard logs and performance timing logs.
 
-3. **Client**
+#### Logs
 
-    **a. Client (legacy)**
+``C:\ProgramData\CompuTec\CompuTec WMS\Server\Logs``
 
-    - Logs: C:\Users\[USER_NAME]\AppData\Local\CompuTec\CompuTec WMS\Client\Logs
-    - TimeLog: C:\Users\[USER_NAME]\AppData\Local\CompuTec\CompuTec WMS\Client\TimeLog
+#### TimeLog
 
-    **b. Client Desktop or Android**
+``C:\ProgramData\CompuTec\CompuTec WMS\Server\TimeLog``
 
-    - Client Logs on Server: C:\ProgramData\CompuTec\CompuTec WMS\Server\Logs\ClientLogs
+### Service Manager Logs
 
-    You can send logs from the client to the server (does not apply to legacy version)
+**Service Manager** stores logs related to installation and deployment of **CompuTec WMS** objects.
+
+#### Logs
+
+``C:\ProgramData\CompuTec\ServiceManager\Logs``
+
+### Client Logs
+
+#### Client (legacy)
+
+Legacy client logs are stored locally for each Windows user.
+
+##### Logs
+
+``C:\Users\[USER_NAME]\AppData\Local\CompuTec\CompuTec WMS\Client\Logs``
+
+##### TimeLog
+
+``C:\Users\[USER_NAME]\AppData\Local\CompuTec\CompuTec WMS\Client\TimeLog``
+
+#### Desktop Client or Android Client Logs
+
+Desktop and Android client logs are stored on the server.
+
+##### Client Logs on Server
+
+``C:\ProgramData\CompuTec\CompuTec WMS\Server\Logs\ClientLogs``
+
+You can also send logs directly from the client to the server.
 
     ![Log Files](./media/log-files/logs.png) ![Log Files](./media/log-files/logs-01.png) ![Log Files](./media/log-files/logs-02.png)
     ![Log Files](./media/log-files/logs-04.png)
 
-4. **Enabling additional logs**
+:::info[note]
+This option is not available for the Legacy Client.
+:::
 
-    To log additional execution details by CompuTec WMS:
+## Collect Additional Diagnostics
 
-    - Navigate to ``C:\Program Files\CompuTec\CompuTec WMS Server`` or ``C:\Program Files (x86)\CompuTec\CompuTec WMS Server``
+### Enable Detailed Query Logging
 
-    - Open the configuration file:
+Use additional query logging when you need more detailed database execution information.
+
+To log additional execution details by CompuTec WMS, follow these steps:
+
+1. Navigate to ``C:\Program Files\CompuTec\CompuTec WMS Server`` or ``C:\Program Files (x86)\CompuTec\CompuTec WMS Server``
+
+2. Open the configuration file.
 
         ![Log Files](./media/log-files/logs-05.png)
 
-    - Add the following code to enable detailed query logging
+3. Add the following configuration to the ``<target>`` and ``<logger>`` sections:
 
         ```xml
         <target xsi:type="File" name="fileEventLogForQueries" fileName="${specialfolder:folder=CommonApplicationData}\CompuTec\Computec WMS\Server\Logs\queries ${shortdate}.log" layout=" ${time} ${message} ${stacktrace:format=DetailedFlat:topFrames=5}" />
@@ -61,35 +99,35 @@ Here is the detailed information on the locations of logs for CompuTec WMS:
          <logger name="CompuTec.Core2.DI.Database.*" minlevel="Trace" writeTo="fileEventLogForQueries" />
          ```
 
-        in the specified `<target>` and `<logger>` sections of the above-mentioned file:
-
         ![Log Files](./media/log-files/logs-03.png)
 
-    - Upload the log file from:
+4. Save the file and reproduce the issue.
 
-        C:\ProgamData\CompuTec\CompuTec WMS\Server\Logs\queries
+5. The generated query log file will be created here: ``C:\ProgamData\CompuTec\CompuTec WMS\Server\Logs\queries``. Upload this file when requested by CompuTec Support.
 
             ![Log Files](./media/log-files/logs-06.png)
 
-5. **Additionally, you can view the log from Microsoft Event Viewer**
+### Microsoft Event Viewer Logs
 
-    Logs can also be viewed using the Microsoft Event Viewer for more detailed system logs and diagnostics
+You can also review logs using **Microsoft Event Viewer**.
 
-6. **Enable additional Telemetry for CompuTec WMS Server**
+**MS Event Viewer** may provide additional system-level information that is not available in standard CompuTec WMS logs.
 
-    This section describes how to enable additional telemetry and diagnostic tracing for the **CompuTec WMS Server**.
+### Enable Additional Telemetry for CompuTec WMS Server
+
+This section describes how to enable additional telemetry and diagnostic tracing for the **CompuTec WMS Server**.
 
     :::warning[important]
     Before making any changes, create a backup copy of the following file:
     ``C:\Program Files\CompuTec\WMS Server\app.config.json``
     :::
 
-    To enable additional telemetry:
+To enable additional telemetry:
 
-    1. Navigate to: ``C:\Program Files\CompuTec\WMS Server``.
-    2. Locate the file: **app.config.json**.
-    3. Open the file in a text editor (for example, **Notepad** running as Administrator).
-    4. Add the following section to the file:
+1. Navigate to: ``C:\Program Files\CompuTec\WMS Server``.
+2. Locate the file: **app.config.json**.
+3. Open the file in a text editor (for example, **Notepad** running as Administrator).
+4. Add the following section to the file:
 
         ```xml
         "CoreDiagnostics": {
@@ -131,8 +169,8 @@ Here is the detailed information on the locations of logs for CompuTec WMS:
 
         Alternatively, you can replace the existing file with the [prepared version available for download here](https://support.computec.pl/secure/attachment/253804/app.config.json).
 
-    5. After saving the changes:
+5. After saving the changes:
         - Restart the **WMS Server service**.
         - Perform the required tests using the **WMS Client**.
 
-    6. After completing the tests, restore the original **app.config.json** file.
+6. After completing the tests, restore the original **app.config.json** file.
