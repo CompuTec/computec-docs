@@ -20,8 +20,6 @@ Actions are implemented by plugin developers and become available automatically 
 
 ## How actions work
 
-Actions work similarly to options in a context menu.
-
 When users select one or more records, **CompuTec AppEngine** automatically checks which Actions are available for the selected data.
 
 Before an action becomes available, the system verifies:
