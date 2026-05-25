@@ -52,16 +52,15 @@ Legacy client logs are stored locally for each Windows user.
 
 #### Desktop Client or Android Client Logs
 
-Desktop and Android client logs are stored on the server.
+You can send logs directly from the client to the server.
+
+    ![Log Files](./media/log-files/logs-new1.png)
 
 ##### Client Logs on Server
 
 ``C:\ProgramData\CompuTec\CompuTec WMS\Server\Logs\ClientLogs``
 
-You can also send logs directly from the client to the server.
-
-    ![Log Files](./media/log-files/logs.png) ![Log Files](./media/log-files/logs-01.png) ![Log Files](./media/log-files/logs-02.png)
-    ![Log Files](./media/log-files/logs-04.png)
+    ![Log Files](./media/log-files/logs-new2.png)
 
 :::info[note]
 This option is not available for the Legacy Client.
