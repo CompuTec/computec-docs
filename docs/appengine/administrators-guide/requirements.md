@@ -10,7 +10,9 @@ This section provides an overview of the components and preparatory steps needed
 ## Prerequisites
 
 :::warning[important]
-If you are upgrading from **CompuTec AppEngine 2.0** to **CompuTec AppEngine 3.0**, you must **uninstall CompuTec AppEngine 2.0** and **unassign the CompuTec ProcessForce extension** from the Extension Manager for the company **before** continuing with the upgrade.
+If you are upgrading from **CompuTec AppEngine 2.0** to **CompuTec AppEngine 3.0**, you must **uninstall CompuTec AppEngine 2.0** and **unassign the CompuTec ProcessForce extension** from the Extension Manager for the company **before** continuing with the upgrade.  
+
+Note that **CompuTec AppEngine 3.0** does not support **PowerShell** for data imports or other customizations. Ensure that any existing PowerShell-based solutions are replaced or adapted before upgrading to **CompuTec AppEngine 3.0**.
 :::
 
 ### CompuTec AppEngine - Application Machine
