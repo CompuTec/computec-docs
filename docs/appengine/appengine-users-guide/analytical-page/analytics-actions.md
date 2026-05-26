@@ -89,7 +89,7 @@ Actions require some information to know which data should be used when the acti
 
 For each parameter, you can define where the value should come from.
 
-![alt text](media/actions/aa-config-action-in-src-00.png)
+![alt text](media/actions/11.png)
 
 Available **Source Types** include:
 
@@ -100,7 +100,7 @@ Available **Source Types** include:
 
 Use **Constant** value when the action should always receive the same value.
 
-    ![alt text](media/actions/aa-config-action-in-src-constant.png)
+    ![alt text](media/actions/12.png)
 
 Example:
 
@@ -112,7 +112,7 @@ Example:
 
 Use **Field** value when the action should receive data from a selected row in the report.
 
-    ![alt text](media/actions/aa-config-action-in-src-field.png)
+    ![alt text](media/actions/13.png)
 
 When the user selects a row and runs the action, the system takes the value from the mapped column and passes it to the action automatically.
 
@@ -120,7 +120,7 @@ When the user selects a row and runs the action, the system takes the value from
 
 You can mark a parameter as **Required**.
 
-    ![alt text](media/actions/aa-config-action-in-src-required.png)
+    ![alt text](media/actions/14.png)
 
 If a required parameter is empty, the action cannot be executed.
 
