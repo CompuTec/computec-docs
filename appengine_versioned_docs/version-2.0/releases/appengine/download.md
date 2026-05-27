@@ -13,6 +13,10 @@ import Releases from "../../releases.json";
      If you plan to use plugins from inside SAP client then from CompuTec AppEngine version 2.10.16 you need to have minimal SAP Business One ver 10 SP 2308
 :::
 
+:::note[info]
+For **CompuTec License Service** downloads and installation details, see [CompuTec License Service](https://learn.computec.one/docs/processforce/2.0/releases/download#computec-license-service).
+:::
+
 ## Releases
 
 <table>
