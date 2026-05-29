@@ -14,17 +14,17 @@ Follow the steps from this guide to request your license.
 2. Navigate to **Support ProcessForce** > **Licensing**.
 3. Click **+ License request** to create a new ticket.
 
-    ![alt text](media/license-request/req-a-licen4.png)
+    ![CompuTec Support Portal page showing the Support ProcessForce section with the License request option highlighted by a large blue arrow and the text License request visible](media/license-request/req-a-licen4.png)
 
 4. Fill in the **Company Name** field.
 
-    ![alt text](media/license-request/req-a-licen6.png)
+    ![CompuTec Support Portal page showing the Support ProcessForce ticket with the Company Name field highlighted by a large blue arrow](media/license-request/req-a-licen6.png)
 
 ## Step 2: Find the required information
 
 1. In **SAP Business One**, go to: **Help** > **About CompuTec ProcessForce**.
 
-    ![alt text](media/license-request/req-a-licen1.png)
+    ![SAP Business One desktop application with the Help menu expanded and a large blue arrow pointing to the About CompuTec ProcessForce menu item in the menu list](media/license-request/req-a-licen1.png)
 
 2. From the **About CompuTec ProcessForce** window, copy these details:
 
@@ -32,7 +32,7 @@ Follow the steps from this guide to request your license.
     - **SAP Business One Installation Number**: This is a 10-character number.
     - **CompuTec Key**: This is a 40-character key.
 
-    ![alt text](media/license-request/req-a-licen2.png)
+    ![CompuTec ProcessForce About window within SAP Business One showing version, database server, SAP Business One version, installation number and CompuTec key fields](media/license-request/req-a-licen2.png)
 
     :::warning[important]
     Licenses are version-specific. When upgrading to another major version, request a new license.
@@ -42,27 +42,27 @@ Follow the steps from this guide to request your license.
 
 3. To avoid mistakes, copy the values directly from the window. You can use **Copy to Clipboard** option.
 
-    ![alt text](media/license-request/req-a-licen3.png)
+    ![CompuTec ProcessForce About window inside SAP Business One showing a details table and a blue arrow pointing to the Copy to Clipboard button near the bottom, with the OK button visible beside it](media/license-request/req-a-licen3.png)
 
 ## Step 3: Check the SAP license localization
 
 1. In **SAP Business One**, go to **Administration** > **License** > **License Administration**.
 
-    ![alt text](media/license-request/req-a-licen9.png)
+    ![SAP Business One application screen showing the left Administration menu with a large blue arrow pointing to the License Administration entry under License Administrationtext](media/license-request/req-a-licen9.png)
 
 2. Navigate to  **Components** tab.
 
-    ![alt text](media/license-request/req-a-licen10.png)
+    ![SAP Business One License Administration window showing the Components tab selected with a list of license components on the left and license details on the right](media/license-request/req-a-licen10.png)
 
 3. Find the **SAP Business One** license **Localization**.
 
-    ![alt text](media/license-request/req-a-licen11.png)
+    ![SAP Business One License Administration dialog in the Components tab, showing the license components list on the left and license details on the right, with a blue arrow pointing to the SAP Business One license Localization field set to Global and Version 10.0 visible](./media/license-request/req-a-licen11.png)
 
 ## Step 4: Add all the required information to the ticket
 
 1. In **CompuTec Support Portal**, add all the required information to the ticket.
 
-    ![alt text](media/license-request/req-a-licen12.png)
+    ![CompuTec Support Portal ticket form showing Environment text area, rich text Description editor, attachment drag and drop area and Database Server Type dropdown](media/license-request/req-a-licen12.png)
 
 2. In the **Description** field:
     - Specify where the license will be used:
@@ -83,7 +83,7 @@ Follow the steps from this guide to request your license.
 
 1. Click **Create** to submit the ticket to CompuTec Support.
 
-    ![alt text](media/license-request/req-a-licen13.png)
+    ![CompuTec Support Portal page showing the Support ProcessForce ticket with Create button highlighted by a large blue arrow](media/license-request/req-a-licen13.png)
 
 2. Wait for CompuTec Support to process your request and send you the license file.
 
