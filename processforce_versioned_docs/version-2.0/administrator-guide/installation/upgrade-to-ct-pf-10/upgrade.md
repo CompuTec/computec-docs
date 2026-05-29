@@ -2,9 +2,9 @@
 sidebar_position: 3
 ---
 
-# Upgrade
+# Upgrade to CompuTec ProcessForce 10.0 (2.0)
 
-Upgrading to CompuTec ProcessForce 10.0 ensures you have the latest features and enhancements while maintaining compatibility with SAP Business One. This guide provides detailed instructions on upgrading CompuTec ProcessForce, including transitioning from the MSI installer to the Lightweight Deployment version.
+Upgrading to CompuTec ProcessForce 10.0 ensures you have additional features and enhancements while maintaining compatibility with SAP Business One. This guide provides detailed instructions on upgrading CompuTec ProcessForce, including transitioning from the MSI installer to the Lightweight Deployment version.
 
 Before proceeding, ensure that your SAP Business One environment meets the prerequisites to avoid compatibility issues.
 
@@ -13,7 +13,7 @@ Before proceeding, ensure that your SAP Business One environment meets the prere
 ## CompuTec ProcessForce 10.0 upgrade
 
 :::info
-    If you are installing CompuTec ProcessForce on your database for the first time, refer to [CompuTec ProcessForce Installation Guide](./first-installation/license-server.md).
+    If you are installing CompuTec ProcessForce on your database for the first time, refer to [CompuTec ProcessForce Installation Guide](/processforce_versioned_docs/version-2.0/administrator-guide/installation/first-installation/license-server.md).
 :::
 
 :::danger
@@ -46,6 +46,6 @@ Any CompuTec ProcessForce 10.0 version is provided as a Lightweight Deployment e
     - When the user is not using any other software (CompuTec WMS Server, CompuTec AppEngine, or any custom code) on the same machine, there is no need to have the CompuTec ProcessForce API installed.
     - However, if it is installed, it takes precedence (due to how the GAC works) on the API we deploy in the Lightweight Deployment package. If they are in different versions, CompuTec ProcessForce will not work.
 
-4. Install the CompuTec ProcessForce LD extension (click [here](./first-installation/extension.md) to see how to do it).
+4. Install the CompuTec ProcessForce LD extension (click [this link](/processforce_versioned_docs/version-2.0/administrator-guide/installation/first-installation/extension.md) to see how to do it).
 
 ---
