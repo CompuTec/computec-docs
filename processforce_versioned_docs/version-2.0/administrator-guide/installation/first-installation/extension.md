@@ -11,7 +11,7 @@ CompuTec ProcessForce Extension is a powerful tool that enhances the functionali
 ---
 
 :::note
-    If you only need to upgrade CompuTec ProcessForce, refer to the [**CompuTec ProcessForce Upgrade Guide**](../upgrade) here.
+    If you only need to upgrade CompuTec ProcessForce, refer to the [**CompuTec ProcessForce Upgrade Guide**](/processforce_versioned_docs/version-2.0/administrator-guide/installation/upgrade-to-ct-pf-10/upgrade.md) here.
 :::
 
 :::caution
