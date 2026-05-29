@@ -2,55 +2,73 @@
 sidebar_position: 4
 ---
 
-# License Import and Assignment
+# Import and Assign Computec ProcessForce License
 
-Setting up CompuTec ProcessForce for the first time requires importing and assigning the appropriate license. This ensures that the add-on functions correctly within SAP Business One.
+After installing **CompuTec ProcessForce**, you must import and assign a valid license before users can use **CompuTec ProcessForce** plugin in **SAP Business One**.
 
-:::info
-    - If you are upgrading CompuTec ProcessForce rather than performing a fresh installation, you may skip these steps.
-    - Assigning the CompuTec ProcessForce license works in the same way as assigning an SAP Business One license.
+This guide explains how to import the license file, assign the license to your company database, and assign licenses to users.
+
+:::note[info]
+If you are upgrading an existing **CompuTec ProcessForce** installation, you may not need to repeat this procedure.
+
+The license assignment process is similar to assigning new **SAP Business One** license.
 :::
 
----
+Follow the steps below to import and assign the license:
 
-## Steps to Import and Assign a License
+## Step 1: Obtain the license file
 
-Follow the steps below to import and assign CompuTec ProcessForce license successfully.
+1. Before you can continue, obtain a valid license file from your **CompuTec ProcessForce** provider.
 
-1. **Verify installation success**: After installation, the following confirmation message will appear:  
+:::info[note]
+If you do not already have a license file, follow our [Request CompuTec ProcessForce License](https://learn.computec.one/docs/processforce/administrator-guide/licensing/request-for-a-license/) guide.
+:::
 
-   ![System Message](./media/license-import-assignment/system-message-installation.webp)
+## Step 2: Open License Administration
 
-2. **Obtain a license file**: Request the license file from your CompuTec ProcessForce provider.  
+1. In **SAP Business One**, go to **Administration** > **License** > **ProcessForce License Administration**.
 
-   :::info
-   Details on how to request a license key are available on the [Request for a license](./request-for-a-license.md) page.
+   ![alt text](media/license-import-assignment/import-a-lic1.png)
+
+2. Click **Test** to verify that the **CompuTec License Service** is running and available.
+
+   ![alt text](media/license-import-assignment/import-a-lic2.png)
+
+3. If the connection is successful, you will see a green success banner at the bottom of the screen.
+
+   ![System message in SAP Business One showing a green success banner with the text Test the connection to the CompuTec License Server completed successfully in the ProcessForce License Administration window](media/license-import-assignment/import-a-lic21.png)
+
+## Step 3: Import the license file
+
+1. Click **Import License File**.
+
+   ![alt text](media/license-import-assignment/import-a-lic3.png)
+
+2. Browse to the license file location.
+3. Select the license file and confirm the import.
+
+   ![alt text](media/license-import-assignment/import-a-lic4.png)
+
+   :::caution[important]
+   The license file must have a `.xml` extension.  
+   Some web browsers, such as Safari, may change the file type during download. If this happens, the import may fail.  
    :::
 
-3. **Open License Administration**: Navigate to the CompuTec ProcessForce **License Administration** form:
+## Step 4: Confirm the license import
 
-   ![License Administration](./media/license-import-assignment/license-administration.webp)
+After the import is completed successfully, a confirmation **System Message** appears.
 
-4. **Test License Service Connection**: To confirm that the CompuTec License Service is running, click **Test**:
+![alt text](media/license-import-assignment/import-a-lic5.png)
 
-   ![License connection](./media/license-import-assignment/license-connection-test.webp)
+## Step 5: Assign the licenses to users
 
-5. **Import the license file**: If the connection is valid, click **Import License File** and browse for the license file.  
+1. Choose the users form the list and assign them to the chosen license type.
 
-   :::caution
-   The license file must have a `.xml` extension. Some browsers (e.g., Safari) may change the file type during download, which can cause errors during import.  
-   :::
+   ![alt text](media/license-import-assignment/import-a-lic6.png)
 
-6. **Confirm license import**: After successful import, the following message will display:  
+2. Click **Update** to save the changes.
 
-   ![System Message](./media/license-import-assignment/license-assignment-message.webp)
+   ![alt text](media/license-import-assignment/import-a-lic7.png)
 
-7. **Assign license to company**: Click **Change** to assign the license. Select the appropriate row from the imported licenses and click **Select**:  
-
-   ![License change](./media/license-import-assignment/license-assignment.webp)
-
-8. **Assign users**: Map users to the appropriate license type and click **Update** to finalize:  
-
-   ![License assignment](./media/license-import-assignment/license-user-assign.webp)
-
----
+3. Click **OK**.
+4. The license assignment is now complete, and users can access **CompuTec ProcessForce** according to their assigned license type.
