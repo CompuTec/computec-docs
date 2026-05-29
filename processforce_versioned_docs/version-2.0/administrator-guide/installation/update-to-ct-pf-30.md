@@ -95,7 +95,7 @@ Before starting the update, contact your **CompuTec partner** or [**CompuTec Sup
 
 ## Update CompuTec ProcessForce 2.0 to CompuTec ProcessForce 3.0
 
-To update to CompuTec ProcessForce 3.0 for the [standard environment](https:learn.computec.one/docs/processforce/2.0/administrator-guide/installation/update-to-ct-pf-30#scenario-1-standard-environment), follow these steps:
+To update to CompuTec ProcessForce 3.0 for the [standard environment](https://learn.computec.one/docs/processforce/2.0/administrator-guide/installation/update-to-ct-pf-30#scenario-1-standard-environment), follow these steps:
 
 ### Step 1: Install and configure CompuTec AppEngine 3.0
 
