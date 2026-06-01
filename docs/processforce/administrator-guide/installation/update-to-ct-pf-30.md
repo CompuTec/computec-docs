@@ -28,8 +28,7 @@ This change does **not** affect:
 
 - supported **SAP Business One 10.0** versions,
 - **CompuTec ProcessForce 3.0**,
-- **CompuTec AppEngine 3.0**,
-- **CompuTec WMS**.
+- **CompuTec AppEngine 3.0**.
 
 ## Before You Start
 
