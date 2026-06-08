@@ -12,21 +12,24 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 
 | Issue Type | Component | Release Note |
 | --- | --- | --- |
-| Improved | WMS Plugin | Improved **Storage Category** matching for **Put Away** rules. The system now validates storage categories more accurately based on Warehouse (``Whs``), ``ABC class``, ``Item Code``, ``Item Group``, ``UoM Code``, ``UoM Group``, and Storage Unit (``SU``) rules. |
-| Improved | Client Android | Added support for **Android 14 and newer**, allowing CompuTec WMS to be installed and used on the latest supported Android devices. |
-| Improved | Server | Improved inventory register processing for **Stock Transfer** transactions involving multiple Storage Units, providing more consistent inventory records. |
-| Improved | Service Manager | **Stock Transfer from Transfer Request** now displays ``DocNum`` instead of ``DocEntry``, making documents easier to identify. |
-| Improved | Server | Improved validation of required fields during **GRPO** processing. Users now receive a clear message when mandatory fields are missing instead of a system error. |
-| Fixed | Client Android | Fixed an issue in **Stock Transfer** where scanning a Storage Unit containing ``None``/``None UoM`` items (or adding the SU manually) could cause an error. The Storage Unit is now added correctly to the document. |
-| Fixed | Client | Corrected available quantity display for **Catch Weight** items in **Stock Transfer from Transfer Request**. Available quantities are now shown in inventory quanities, making stock information easier to understand. |
-| Fixed | Server | Fixed quantity distribution for **Catch Weight** items in **Delivery from Sales Order** when multiple batches are selected. The system now uses the selected batches correctly during document creation. |
-| Fixed | Server | Improved **UoM barcode** handling in **Stock Transfer**. Scanning a UoM barcode now selects the correct unit of measure and quantity according to system settings. Example: **Use Sales UoM enabled** – the scanned item's UoM (for example, ``Box6``) is selected and the quantity remains **0** for user confirmation. **Use Sales UoM disabled** – the base unit of measure (for example, ``Pieces``) is selected and the quantity is automatically calculated as ``UoM quantity × pieces per UoM``. |
-| Fixed | Server | Fixed an issue where **Pick and Pack** could not read certain UoM barcodes. Supported barcodes are now recognized correctly during picking. |
-| Fixed | Client | Fixed item sorting in **Delivery from Pick List**. Items now remain sorted by storage location, helping warehouse users follow the picking sequence more easily. |
-| Fixed | Client Android | Fixed an issue where **Batch UDF** values entered during **GRPO** processing were not saved. User-defined batch information is now stored correctly. |
-| Fixed | Client Android | Improved **New Storage Unit** creation in **Stock Transfer**. The cursor is no longer automatically placed in the ``Gross Weight`` field when opening the screen. |
-| Fixed | Server | Fixed EAN barcode handling for codes starting with ``13``. The system now correctly recognizes both the item and quantity from the scanned barcode. |
-| Fixed | Server | ``SlpCode`` information is now copied correctly from the **Sales Order** to the created **Delivery** document. |
+| Fixed | Server | Improved **Pick List** quantity calculations for allocated and non-allocated items, ensuring more accurate available quantities across warehouses with and without bin locations. |
+| Improved | Server | Added a configurable data refresh interval for **Pick and Pack**, allowing better control over synchronization with SAP. |
+| Fixed | Server | Fixed an issue where **Extra SQL Fields** were not displayed correctly when adding existing **Storage Units (SU)** in **SU Operations** > **New SU**. |
+| Improved | Client | Added printer selection support when printing labels, allowing users to choose the target printer directly from the print window. |
+| Improved | Client Android | Improved performance when creating large **Storage Units (SU)** containing many items or nested SUs. |
+| Improved | Server | Added the ability to edit **Document Date** and **Delivery Date** in **Delivery** transactions. |
+| Improved | Server | Enhanced **Warehouse Info** scanning. Scanning a bin location now automatically opens the corresponding warehouse and bin location details. |
+| Improved | Client | Background notifications are now displayed as notification indicators instead of interrupting users with pop-up messages. |
+| Improved | Client Android | Added **SU Counter** and **Pick Number** information to **Delivery** transactions for improved document visibility. |
+| Improved | Server | Added dedicated **Custom Query Manager** settings for **Quick SU Transfer**, providing greater flexibility when configuring warehouses, bin locations, and document series. |
+| Fixed | Server | Improved **Check Point Validation** processing for **Pick Receipt** by validating data before it is posted to SAP. |
+| Improved | Client Android | Added support for automatic Windows user login and full-screen mode based on user profile settings. |
+| Fixed | Server | Fixed an issue where **Pick and Pack** could incorrectly block picking when negative inventory was allowed. |
+| Fixed | Server | Fixed an issue where **SSCC** values were not populated correctly during the first scan in **Pick Receipt** and **New Production Receipt** transactions. |
+| Fixed | Client | Fixed an issue where creating a **Stock Transfer** from a partially picked **Pick List** could incorrectly close the Pick List. |
+| Fixed | Client | Restricted destination bin locations can no longer be selected by barcode scanning when excluded by custom configuration rules. |
+| Improved | Server | Added **@ExistingSUCode** and **@ExistingSSCC** parameters for **SU Operations** > **New SU** validations, enabling more advanced custom validation scenarios. |
+| Improved | Client | Added support for the **NEW_LINE** parameter in custom queries with embedded scripts, making query formatting easier to configure. |
 
 ## CompuTec WMS Plugin 3.2604.1
 
