@@ -13,8 +13,8 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 | Issue Type | Component | Release Note |
 | --- | --- | --- |
 | Fixed | Server | Improved **Pick List** quantity calculations for allocated and non-allocated items, ensuring more accurate available quantities across warehouses with and without bin locations. |
-| Improved | Server | Added a configurable data refresh interval for **Pick and Pack**, allowing better control over synchronization with SAP. |
-| Fixed | Server | Fixed an issue where **Extra SQL Fields** were not displayed correctly when adding existing **Storage Units (SU)** in **SU Operations** > **New SU**. |
+| Improved | Server | Added a configurable data refresh interval for **Pick and Pack**, allowing better control over synchronization with SAP. You can set Pick List data sending interval in seconds in **Custom Configuration** > **Pick and Pack**. |
+| Fixed | Server | Fixed an issue where **Extra SQL Fields** in **Main List Items** were not displayed correctly when adding existing **Storage Units (SU)** in **SU Operations** > **New SU**. |
 | Improved | Client | Added printer selection support when printing labels, allowing users to choose the target printer directly from the print window. |
 | Improved | Client Android | Improved performance when creating large **Storage Units (SU)** containing many items or nested SUs. |
 | Improved | Server | Added the ability to edit **Document Date** and **Delivery Date** in **Delivery** transactions. |
@@ -28,8 +28,8 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 | Fixed | Server | Fixed an issue where **SSCC** values were not populated correctly during the first scan in **Pick Receipt** and **New Production Receipt** transactions. |
 | Fixed | Client | Fixed an issue where creating a **Stock Transfer** from a partially picked **Pick List** could incorrectly close the Pick List. |
 | Fixed | Client | Restricted destination bin locations can no longer be selected by barcode scanning when excluded by custom configuration rules. |
-| Improved | Server | Added **@ExistingSUCode** and **@ExistingSSCC** parameters for **SU Operations** > **New SU** validations, enabling more advanced custom validation scenarios. |
-| Improved | Client | Added support for the **NEW_LINE** parameter in custom queries with embedded scripts, making query formatting easier to configure. |
+| Improved | Server | Added ``@ExistingSUCode`` and ``@ExistingSSCC`` parameters for **SU Operations** > **New SU** validations, enabling more advanced custom validation scenarios. |
+| Improved | Client | Added support for the ``NEW_LINE`` parameter in custom queries with embedded scripts, making query formatting easier to configure. |
 
 ## CompuTec WMS Plugin 3.2604.1
 
