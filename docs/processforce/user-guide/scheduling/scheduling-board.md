@@ -188,21 +188,19 @@ Let's consider two scenarios - `Delivery date is possible to realize it` and `De
 
 1. Delivery date is possible to realize it.
 
-    If the delivery date can be met, the Scheduling Board copies the delivery date and verifies if production can be completed on time.
+    If the delivery date can be met, the **Scheduling Board** copies the delivery date and verifies if production can be completed on time.
 
         ![Possible](./media/scheduling-board/possible.webp)
 
-    In this example, the system determines that to meet the Delivery Date of 30.11.17, 0:00, production must finish by 28.11.17, 12:00. The green row on the Scheduling Board confirms that the Manufacturing Orders can be scheduled and delivered on time.
+    In this example, the system determines that to meet the Delivery Date of 30.11.17, 0:00, production must finish by 28.11.17, 12:00. The green row on the **Scheduling Board** confirms that the Manufacturing Orders can be scheduled and delivered on time.
 
 2. Delivery date is not possible to realize.
 
-    If meeting the Delivery Date is not feasible, the system automatically switches to Forward scheduling and calculates the earliest possible End Date.
+    If the required delivery date cannot be achieved, the system displays the Manufacturing Order data in red on the **Scheduling Board**, indicating that the order cannot be completed on time.
 
-    ![Not possible](./media/scheduling-board/not-possible.webp)
+    To determine the earliest possible completion date, click **Reschedule**. The system automatically switches to **Forward scheduling** and calculates the earliest possible **Start Date and Time**. Based on the manufacturing duration, it also calculates the corresponding **End Date and Time**.
 
-    As shown above, the system initially determines that production cannot be completed on time (indicated by the red row). It calculates the earliest possible End Date as 08.06, 00:00.
-
-    To reschedule, you can adjust the Delivery Date—for instance, changing it to 20.09 at 00:01—and switch the direction to Backward scheduling. After clicking Reschedule, the system recalculates the production timeline, and the row turns green, indicating that the Manufacturing Order can now be scheduled successfully.
+    Use the calculated **End Date and Time** to define a new feasible **Required Date and Time**. To do this, change the scheduling direction to **Backward** and enter the new **Required Date and Time**. After rescheduling, the system recalculates the production timeline. If the Manufacturing Order can now be completed within the required timeframe, the row changes from red to green, indicating that the order can be scheduled successfully.
 
 ## Sales Order Minimum Order Quantity
 
