@@ -6,6 +6,17 @@ sidebar_position: 4
 
 Below are the release notes for CompuTec WMS Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec WMS Plugin 3.2606.1
+
+**Release Date: 8 June 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Improved | Client, Server | Added support for **Storage Unit (SU) UDFs** in **Pick Receipt**, allowing users to capture and maintain SU-specific information during the receipt process. |
+| Improved | Client | **CompuTec WMS Client** no longer requires an active internet connection and can now operate using only the local network connection to the WMS environment. |
+| Fixed | Server | Improved **Storage Unit (SU)** import through the API. The system now validates batch numbers during import, helping prevent inconsistencies caused by importing SUs with incorrect or unavailable batch data. |
+| Improved | Server | Updated quantity validation in **SU Info** to support negative inventory scenarios. When **Block Negative Inventory** is disabled, users can now adjust quantities below available stock levels and continue managing items with zero or negative quantities. |
+
 ## CompuTec WMS Plugin 3.2605.1
 
 **Release Date: 28 May 2026**
