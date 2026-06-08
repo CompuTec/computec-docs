@@ -14,18 +14,18 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 | --- | --- | --- |
 | Improved | WMS Plugin | Improved **Storage Category** matching for **Put Away** rules. The system now validates storage categories more accurately based on Warehouse (``Whs``), ``ABC class``, ``Item Code``, ``Item Group``, ``UoM Code``, ``UoM Group``, and Storage Unit (``SU``) rules. |
 | Improved | Client Android | Added support for **Android 14 and newer**, allowing CompuTec WMS to be installed and used on the latest supported Android devices. |
+| Improved | Server | Improved inventory register processing for **Stock Transfer** transactions involving multiple Storage Units, providing more consistent inventory records. |
+| Improved | Service Manager | **Stock Transfer from Transfer Request** now displays ``DocNum`` instead of ``DocEntry``, making documents easier to identify. |
+| Improved | Server | Improved validation of required fields during **GRPO** processing. Users now receive a clear message when mandatory fields are missing instead of a system error. |
 | Fixed | Client Android | Fixed an issue in **Stock Transfer** where scanning a Storage Unit containing ``None``/``None UoM`` items (or adding the SU manually) could cause an error. The Storage Unit is now added correctly to the document. |
 | Fixed | Client | Corrected available quantity display for **Catch Weight** items in **Stock Transfer from Transfer Request**. Available quantities are now shown in inventory quanities, making stock information easier to understand. |
 | Fixed | Server | Fixed quantity distribution for **Catch Weight** items in **Delivery from Sales Order** when multiple batches are selected. The system now uses the selected batches correctly during document creation. |
 | Fixed | Server | Improved **UoM barcode** handling in **Stock Transfer**. Scanning a UoM barcode now selects the correct unit of measure and quantity according to system settings. Example: **Use Sales UoM enabled** – the scanned item's UoM (for example, ``Box6``) is selected and the quantity remains **0** for user confirmation. **Use Sales UoM disabled** – the base unit of measure (for example, ``Pieces``) is selected and the quantity is automatically calculated as ``UoM quantity × pieces per UoM``. |
-| Improved | Server | Improved inventory register processing for **Stock Transfer** transactions involving multiple Storage Units, providing more consistent inventory records. |
 | Fixed | Server | Fixed an issue where **Pick and Pack** could not read certain UoM barcodes. Supported barcodes are now recognized correctly during picking. |
-| Fixed | Client | Improved item sorting in **Delivery from Pick List**. Items now remain sorted by storage location, helping warehouse users follow the picking sequence more easily. |
+| Fixed | Client | Fixed item sorting in **Delivery from Pick List**. Items now remain sorted by storage location, helping warehouse users follow the picking sequence more easily. |
 | Fixed | Client Android | Fixed an issue where **Batch UDF** values entered during **GRPO** processing were not saved. User-defined batch information is now stored correctly. |
-| Improved | Service Manager | **Stock Transfer from Transfer Request** now displays ``DocNum`` instead of ``DocEntry``, making documents easier to identify. |
 | Fixed | Client Android | Improved **New Storage Unit** creation in **Stock Transfer**. The cursor is no longer automatically placed in the ``Gross Weight`` field when opening the screen. |
 | Fixed | Server | Fixed EAN barcode handling for codes starting with ``13``. The system now correctly recognizes both the item and quantity from the scanned barcode. |
-| Fixed | Server | Improved validation of required fields during **GRPO** processing. Users now receive a clear message when mandatory fields are missing instead of a system error. |
 | Fixed | Server | ``SlpCode`` information is now copied correctly from the **Sales Order** to the created **Delivery** document. |
 
 ## CompuTec WMS Plugin 3.2604.1
