@@ -168,7 +168,7 @@ Filtering options:
 
 To understand how the Scheduling Board operates, let’s walk through an example of creating a Sales Order and determining its Delivery Date.
 
-**Step 1: Create a Sales Order**
+### Step 1: Create a Sales Order
 
 Set up a Sales Order and specify its Delivery Date in the order header.
 
@@ -178,15 +178,17 @@ Set up a Sales Order and specify its Delivery Date in the order header.
 
     ![Scheduling Board](./media/scheduling-board/sales-order-delivery-date.png)
 
-**Step 2: Evaluate Manufacturing Possibilities**
+### Step 2: Evaluate Manufacturing Possibilities
 
 To assess whether the item can be produced in time, right-click on the item within the Sales Order and select Create Manufacturing Orders.
 
 The system automatically considers the Delivery Date, the Internal Lead Time, and plans the Start Date backward. If the calculated Start Date falls earlier than today, the system switches to Forward scheduling and calculates the earliest possible End Date instead.
 
-Let's consider two scenarios - `Delivery date is possible to realize it` and `Delivery date is not possible to realize`:
+### Scenarios
 
-1. Delivery date is possible to realize it.
+Let's consider two scenarios: delivery date is possible to realize, and delivery date is not possible to realize.
+
+#### Scenario 1: Delivery date is possible to realize it
 
     If the delivery date can be met, the **Scheduling Board** copies the delivery date and verifies if production can be completed on time.
 
@@ -194,13 +196,13 @@ Let's consider two scenarios - `Delivery date is possible to realize it` and `De
 
     In this example, the system determines that to meet the Delivery Date of 30.11.17, 0:00, production must finish by 28.11.17, 12:00. The green row on the **Scheduling Board** confirms that the Manufacturing Orders can be scheduled and delivered on time.
 
-2. Delivery date is not possible to realize.
+#### Scenario 2: Delivery date is not possible to realize
 
     If the required delivery date cannot be achieved, the system displays the Manufacturing Order data in red on the **Scheduling Board**, indicating that the order cannot be completed on time.
 
-    To determine the earliest possible completion date, click **Reschedule**. The system automatically switches to **Forward scheduling** and calculates the earliest possible **Start Date and Time**. Based on the manufacturing duration, it also calculates the corresponding **End Date and Time**.
+    To determine the earliest possible completion date, click **Reschedule**. The system automatically switches to ``Forward`` scheduling and calculates the earliest possible **Start Date and Time**. Based on the manufacturing duration, it also calculates the corresponding **End Date and Time**.
 
-    Use the calculated **End Date and Time** to define a new feasible **Required Date and Time**. To do this, change the scheduling direction to **Backward** and enter the new **Required Date and Time**. After rescheduling, the system recalculates the production timeline. If the Manufacturing Order can now be completed within the required timeframe, the row changes from red to green, indicating that the order can be scheduled successfully.
+    Use the calculated **End Date and Time** to define a new feasible **Required Date and Time**. To do this, change the scheduling direction to ``Backward`` and enter the new **Required Date and Time**. After rescheduling, the system recalculates the production timeline. If the Manufacturing Order can now be completed within the required timeframe, the row changes from red to green, indicating that the order can be scheduled successfully.
 
 ## Sales Order Minimum Order Quantity
 
