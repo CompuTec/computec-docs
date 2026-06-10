@@ -276,7 +276,7 @@ Response body
 
 In response you can also find *No* column. It is also sequential number assigned for each row. This column is left for backward compatibility. It is recommended to use *Key* column instead.
 
-### Libraries provided by CompuTec AppEngine
+## Libraries provided by CompuTec AppEngine
 
 CompuTec AppEngine offers a set of libraries for use in UI5 applications. These libraries are already included in CompuTec AppEngine, so there's no need to add them to the build of your plugin. However, you can install them via npm to obtain the TypeScript definitions.
 
@@ -326,8 +326,55 @@ The library includes highly useful types based on SAP Business One field types, 
 
 This library also includes several base classes that can be extended to simplify the creation of new controls, dialogs, services, view models, and more.
 
+### TypeScript Definitions (CompuTec AppEngine 3.1.0 and Higher)
+
+Starting with **CompuTec AppEngine version 3.1.0**, the following **npm** packages are distributed as **TypeScript** declaration packages (``.d.ts``) only:
+
+- ``@computec/uicore``
+- ``@computec/common``
+- ``@computec/templating``
+
+If your project uses custom path mappings in ``tsconfig.json``, update the paths from the ``src`` directory to the ``types`` directory.
+
+**Before**
+
+```json
+{
+  "paths": {
+    "@computec/uicore/*": [
+      "./node_modules/@computec/uicore/src/computec/appengine/uicore/*"
+    ]
+  }
+}
+```
+
+**After**
+
+```json
+{
+  "paths": {
+    "@computec/uicore/*": [
+      "./node_modules/@computec/uicore/types/computec/appengine/uicore/*"
+    ]
+  }
+}
+```
+
+Apply the same change to:
+
+- ``@computec/common``
+- ``@computec/templating``
+
+:::info[Note]
+This change is required only for development environments that use custom **TypeScript** path mappings.  
+
+No changes are required in deployed applications.
+:::
+
+## Additional Information
+
 For detailed information and examples, download the library and explore the example code and comments within.
 
 :::info Examples
-Refer to the [Example code](../../basic-and-business-logic/examples/examples.md) for guidance on using the CompuTec AppEngine UI5 Plugin.
+Refer to the [Example code](../../basic-and-business-logic/examples/examples.md) for guidance on using the **CompuTec AppEngine UI5 Plugin**.
 :::
