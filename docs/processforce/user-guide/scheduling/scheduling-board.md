@@ -81,7 +81,7 @@ This checkbox determines whether a Manufacturing Order for the Item will be sche
 
 #### Level
 
-Indicates the item's position in the production structure. For items with semi-finished components, the hierarchy level is shown here. Learn more about multi-level BOMs and semi-finished items [here](/docs/processforce/user-guide/formulations-and-bill-of-materials/bill-of-materials/multi-level-bill-of-materials/semi-finished-items/).
+Indicates the item's position in the production structure. For items with semi-finished components, the hierarchy level is shown here. Learn more about multi-level BOMs and semi-finished items after clicking [this link](/docs/processforce/user-guide/formulations-and-bill-of-materials/bill-of-materials/multi-level-bill-of-materials/semi-finished-items/).
 
 #### Quantity
 
@@ -198,11 +198,42 @@ Let's consider two scenarios: delivery date is possible to realize, and delivery
 
 #### Scenario 2: Delivery date is not possible to realize
 
-    If the required delivery date cannot be achieved, the system displays the Manufacturing Order data in red on the **Scheduling Board**, indicating that the order cannot be completed on time.
+If the Manufacturing Order cannot be completed by the required delivery date, the order is displayed in red on the Scheduling Board. This means the current schedule is not possible.
 
-    To determine the earliest possible completion date, click **Reschedule**. The system automatically switches to ``Forward`` scheduling and calculates the earliest possible **Start Date and Time**. Based on the manufacturing duration, it also calculates the corresponding **End Date and Time**.
+    ![scheduling board](./media/scheduling-board/sched_1.png)
 
-    Use the calculated **End Date and Time** to define a new feasible **Required Date and Time**. To do this, change the scheduling direction to ``Backward`` and enter the new **Required Date and Time**. After rescheduling, the system recalculates the production timeline. If the Manufacturing Order can now be completed within the required timeframe, the row changes from red to green, indicating that the order can be scheduled successfully.
+To find the earliest date when the order can be completed, follow these steps:
+
+1. Click **Reschedule**.
+2. The system automatically changes the scheduling direction to ``Forward``.
+
+    ![scheduling board with red data](media/scheduling-board/sched_20.png)
+
+3. The system calculates the earliest possible **Start Date and Time**.
+
+    ![Scheduling board application window showing a red highlighted manufacturing order row in a grid with columns such as Start Date End Date Required Date and Reschedule button indicating the earliest possible start date and time after switching to forward scheduling](./media/scheduling-board/sched_210.png)
+
+4. Based on the production time, the system also calculates the earliest possible **End Date and Time**.
+
+You can use the calculated **End Date and Time** as the new **Required Date and Time**.
+
+To reschedule the order, follow these steps:
+
+1. Change the scheduling direction to ``Backward``.
+
+    ![Scheduling Board screenshot showing a manufacturing order row with required date and required time fields in a production scheduling grid, with navigation controls and a reschedule button in the wider ERP scheduling interface](media/scheduling-board/sched_30.png)
+
+2. Enter a new **Required Date and Time**.
+
+    ![Scheduling Board screenshot showing a manufacturing order row with required date and required time fields in a production scheduling grid, with navigation controls and a reschedule button in the wider ERP scheduling interface](media/scheduling-board/sched_310.png)
+
+3. Click **Reschedule**.
+
+The system recalculates the schedule based on the new required date.
+
+**Result**
+
+If the Manufacturing Order can be completed within the new timeframe, the row changes from red to green. This indicates that the order can now be scheduled successfully.
 
 ## Sales Order Minimum Order Quantity
 
