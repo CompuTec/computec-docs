@@ -205,6 +205,9 @@ If the Manufacturing Order cannot be completed by the required delivery date, th
 To find the earliest date when the order can be completed, follow these steps:
 
 1. Click **Reschedule**.
+
+    ![scheduling board with reschedule button shown](media/scheduling-board/sched-board01.png)
+
 2. The system automatically changes the scheduling direction to ``Forward``.
 
     ![scheduling board with red data](media/scheduling-board/sched_20.png)
@@ -228,6 +231,8 @@ To reschedule the order, follow these steps:
     ![Scheduling Board screenshot showing a manufacturing order row with required date and required time fields in a production scheduling grid, with navigation controls and a reschedule button in the wider ERP scheduling interface](media/scheduling-board/sched_310.png)
 
 3. Click **Reschedule**.
+
+    ![Scheduling Board screenshot showing a reschedule button](media/scheduling-board/sched_211.png)
 
 The system recalculates the schedule based on the new required date.
 
