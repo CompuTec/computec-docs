@@ -4,30 +4,64 @@ sidebar_position: 3
 
 # Scheduling Board
 
-Scheduling Board is a production planning tool that allows scheduling (and rescheduling) several Manufacturing Orders (filtered by chosen criteria) quickly. It also allows managing Manufacturing Orders based on a multi-level Bill of Materials, considering the product structure. Due to the usage of product planning-relate-dated dates and times, the system can communicate situations when it is impossible to process a Manufacturing Order on time for the planned Delivery Date and suggest the first date available to do this.
+The **Scheduling Board** is a production planning tool that helps you schedule and reschedule **Manufacturing Orders**.
 
----
+You can use it to:
 
-## How to Open Scheduling Board / Semi-finished Product Scheduling
+- Schedule one or multiple **Manufacturing Orders**.
+- Plan production based on available capacity and lead times.
+- Manage multi-level production structures with semi-finished products.
+- Identify **Manufacturing Orders** that cannot be completed on time.
+- Calculate the earliest possible production completion date.
+- Recalculate schedules after changes to delivery requirements.
 
-The Scheduling Board can be accessed from the following areas in the system:
+The **Scheduling Board** uses production dates, times, and lead times to determine whether a **Manufacturing Order** can meet its required delivery date.
 
-### Scheduling
+## Open the Scheduling Board
 
-:::info
-    Production → Manufacturing Order → Scheduling
-:::
+You can open the **Scheduling Board** from several areas in the system.
 
-Here, you can select a single Manufacturing Order or multiple orders as needed.
+### From Manufacturing Orders
 
-![Scheduling Selection Criteria](./media/scheduling-board/scheduling-selection-criteria.webp)
+To open **Scheduling Board** from **Manufacturing Orders**, follow these steps:
 
-- You can select/deselect all the Warehouses by double-clicking on the top of the Select column.
-- To select or deselect all Warehouses, double-click the top of the Select column.
-- Use the Scheduling Selection Criteria to filter the Manufacturing Orders you want to display. After setting the criteria, click OK. If no criteria are specified, all Manufacturing Orders in the system are displayed by default.
-- A list of selected Manufacturing Orders will appear. To proceed, click on the Select button and choose the Scheduling Board option:
+1. Go to **Production** > **Manufacturing Order** > **Scheduling**.
 
-    ![Scheduling Select](./media/scheduling-board/scheduling-select.webp)
+    ![alt text](media/scheduling-board/sched_boa1.png)
+
+2. Use the **Scheduling Selection Criteria** to filter the Manufacturing Orders you want to display.
+
+3. Select one **Manufacturing Order** number or a range of **MO number**.
+
+    ![Scheduling Selection Criteria](./media/scheduling-board/sched_boa0111.png)
+
+    :::info[tips]
+
+    - To select or clear all warehouses, double-click the header of the **Select** column.
+
+        ![alt text](media/scheduling-board/sched_boa012.png)
+
+    - If no criteria are specified, the system will display all **Manufacturing Orders**.
+
+    :::
+
+4. Click **OK** to open a list of selected **Manufacturing Orders**.
+
+    ![alt text](media/scheduling-board/sched_boa3.png)
+
+5. Review the list of **Manufacturing Orders**.
+
+6. Click the arrow in the lower-right corner of the **Select** button to see the **Scheduling Board** option.
+
+    ![alt text](media/scheduling-board/sched_boa4.png)
+
+7. Click **Scheduling Board**.
+
+    ![alt text](media/scheduling-board/sched_boa5.png)
+
+8. The **Scheduling Board** opens and displays the selected **Manufacturing Orders**.
+
+    ![alt text](media/scheduling-board/sched_boa01112.png)
 
 ### Sales Order
 
@@ -178,67 +212,69 @@ Set up a Sales Order and specify its Delivery Date in the order header.
 
     ![Scheduling Board](./media/scheduling-board/sales-order-delivery-date.png)
 
-### Step 2: Evaluate Manufacturing Possibilities
+### Step 2: Check Manufacturing Possibilities
 
 To assess whether the item can be produced in time, right-click on the item within the Sales Order and select Create Manufacturing Orders.
 
 The system automatically considers the Delivery Date, the Internal Lead Time, and plans the Start Date backward. If the calculated Start Date falls earlier than today, the system switches to Forward scheduling and calculates the earliest possible End Date instead.
 
-### Scenarios
-
 Let's consider two scenarios: delivery date is possible to realize, and delivery date is not possible to realize.
 
-#### Scenario 1: Delivery date is possible to realize it
+#### Scenario 1: The delivery date can be met
 
-    If the delivery date can be met, the **Scheduling Board** copies the delivery date and verifies if production can be completed on time.
+If the required delivery date can be achieved, the system schedules the **Manufacturing Order** using ``Backward`` scheduling and calculates the required production start and end dates.
 
-        ![Possible](./media/scheduling-board/possible.webp)
+        ![scheduling board](./media/scheduling-board/sched_boa01112.png)
 
-    In this example, the system determines that to meet the Delivery Date of 30.11.17, 0:00, production must finish by 28.11.17, 12:00. The green row on the **Scheduling Board** confirms that the Manufacturing Orders can be scheduled and delivered on time.
+In this example, the **Manufacturing Order** has a **Required Date** of ``03.06.2026``. To meet this date, production must start on ``11.06.2026`` at ``14:12`` and finish on ``12.06.2026`` at ``00:42``.
+
+The **Manufacturing Order** row is displayed in ``green``, which indicates that the order can be completed within the required timeframe and does not require rescheduling.
 
 #### Scenario 2: Delivery date is not possible to realize
 
-If the Manufacturing Order cannot be completed by the required delivery date, the order is displayed in red on the Scheduling Board. This means the current schedule is not possible.
+If the Manufacturing Order can't be completed by the required delivery date, the order is displayed in ``red`` on the **Scheduling Board**.
 
-    ![scheduling board](./media/scheduling-board/sched_1.png)
+    ![scheduling board](./media/scheduling-board/s2-sched_boa1.png)
 
-To find the earliest date when the order can be completed, follow these steps:
+A red row indicates that the current schedule is not feasible. In this situation, the **Manufacturing Order** is scheduled using ``Backward`` scheduling, but the calculated production dates fall in the past. As a result, the order can't be completed by the **Required Date**.
+
+    ![scheduling board](./media/scheduling-board/s2-sched_boa2.png)
+
+To find the earliest possible completion date, follow these steps:
 
 1. Click **Reschedule**.
 
-    ![scheduling board with reschedule button shown](media/scheduling-board/sched-board01.png)
+    ![scheduling board with reschedule button shown](media/scheduling-board/s2-sched_boa2re.png)
 
-2. The system automatically changes the scheduling direction to ``Forward``.
+2. The system automatically changes the scheduling direction to ``Forward`` and calculates the earliest possible **Start Date and Time**.
 
-    ![scheduling board with red data](media/scheduling-board/sched_20.png)
+    ![scheduling board with red data](./media/scheduling-board/s2-sched_boa3.png)
 
-3. The system calculates the earliest possible **Start Date and Time**.
+3. Based on the production time, the system also calculates the earliest possible **End Date and Time**. You can use the calculated **End Date and Time** as the new **Required Date and Time**.
 
-    ![Scheduling board application window showing a red highlighted manufacturing order row in a grid with columns such as Start Date End Date Required Date and Reschedule button indicating the earliest possible start date and time after switching to forward scheduling](./media/scheduling-board/sched_210.png)
+4. Change the scheduling direction to ``Backward``.
 
-4. Based on the production time, the system also calculates the earliest possible **End Date and Time**.
+    ![Scheduling Board screenshot showing a manufacturing order row with required date and required time fields in a production scheduling grid, with navigation controls and a reschedule button in the wider ERP scheduling interface](./media/scheduling-board/s2-sched_boa4.png)
 
-You can use the calculated **End Date and Time** as the new **Required Date and Time**.
+5. Enter a new **Required Date and Time**.
 
-To reschedule the order, follow these steps:
+    ![Scheduling Board screenshot showing a manufacturing order row with required date and required time fields in a production scheduling grid, with navigation controls and a reschedule button in the wider ERP scheduling interface](./media/scheduling-board/s2-sched_boa5.png)
 
-1. Change the scheduling direction to ``Backward``.
+6. If the **Manufacturing Order** can be completed within the new timeframe, the row changes from ``red`` to ``green``.
 
-    ![Scheduling Board screenshot showing a manufacturing order row with required date and required time fields in a production scheduling grid, with navigation controls and a reschedule button in the wider ERP scheduling interface](media/scheduling-board/sched_30.png)
+    ![Scheduling Board with green row indicating successful order completion within required timeframe](media/scheduling-board/s2-sched_boa6.png)
 
-2. Enter a new **Required Date and Time**.
+7. Click **Update/Add**.
 
-    ![Scheduling Board screenshot showing a manufacturing order row with required date and required time fields in a production scheduling grid, with navigation controls and a reschedule button in the wider ERP scheduling interface](media/scheduling-board/sched_310.png)
+    ![Scheduling Board screenshot showing a reschedule button](./media/scheduling-board/s2-sched_boa51.png)
 
-3. Click **Reschedule**.
+8. Verify that the system displays the message ``Operation completed successfully``.
 
-    ![Scheduling Board screenshot showing a reschedule button](media/scheduling-board/sched_211.png)
+    ![Scheduling Board interface showing a scheduling grid with a manufacturing order row highlighted in green indicating the order meet the required date. A large blue arrow overlay points to the System Messages Log panel at the bottom. System Messages Log visible lines: 1 Operation completed successfully.](media/scheduling-board/s2-sched_boa7.png)
 
-The system recalculates the schedule based on the new required date.
+9. Done! Clik **Cancel** to close the **Scheduling Board**.
 
-**Result**
-
-If the Manufacturing Order can be completed within the new timeframe, the row changes from red to green. This indicates that the order can now be scheduled successfully.
+    ![Scheduling Board interface displaying a manufacturing order row in green, indicating successful scheduling within the required timeframe. the arrow is pointing on Cancel button.](media/scheduling-board/s2-sched_boa8.png)
 
 ## Sales Order Minimum Order Quantity
 
