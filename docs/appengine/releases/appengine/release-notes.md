@@ -4,6 +4,31 @@ sidebar_position: 1
 
 # CompuTec AppEngine Release Notes
 
+## CompuTec AppEngine 3.2606.1
+
+**Release Date: 10 June 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Improved | AE Core | Added a restart notification after company updates. Users are now prompted to restart **CompuTec AppEngine** to ensure newly installed or updated plugins are activated correctly. |
+| Fixed | MRP | Fixed an issue where the address list was not displayed in **Vendor Lead Time**. Vendor addresses are now loaded correctly when selecting a business partner and shipping type. |
+| Fixed | AE Administration Panel | Fixed an error that could occur when removing an **CompuTec AppEngine Server** instance from the **CompuTec AppEngine Administration Panel**. |
+| Improved | AE Analytics | Added column display names alongside database field names in **Column Positioning**, **Filter Positioning**, **Sorting**, and **Chart Dimensions** settings, making report configuration easier and more intuitive. |
+| Improved | AE Background Processing | Added more detailed logging during company activation and **Background Processing** setup, helping administrators identify configuration issues more quickly. |
+| Improved | AE Background Processing | Added a direct link to the relevant [troubleshooting guide](https://learn.computec.one/docs/appengine/other/troubleshooting/#problem-couldnt-activate-background-processing-in-computec-appengine) when background processing activation fails, simplifying issue resolution. |
+| Fixed | AE Analytics | Fixed an issue where the scrollbar size was not updated dynamically for reports containing large numbers of rows, improving navigation through report results. |
+| Improved | QC360 | Added support for saving and managing filter variants in **QC360**, allowing users to quickly switch between frequently used filter configurations. |
+| Fixed | AE Common Library | Fixed alignment of the **SAP Business Oneobject** navigation chevron (yellow arrow icon) in form headers and layouts. The icon is now displayed correctly next to linked values across supported themes. |
+| Fixed | AE Analytics | Fixed object navigation for **CT_PF_AdditionalBatch** links in analytics reports. Clicking the yellow arrow now opens the related **Batch Master Data** window correctly. |
+| Fixed | AE Analytics | Fixed collection value display in analytics reports. Fields configured with custom collections now display user-friendly descriptions instead of internal codes. |
+| Improved | AE MCP | Updated the **MCP Remote Client** installation configuration to use the latest published npm package version. |
+
+:::warning[Important for developers]
+Starting with **CompuTec AppEngine 3.1.0**, the `@computec/uicore`, `@computec/common`, and `@computec/templating` npm packages are distributed as TypeScript declaration packages (`.d.ts`) only.  
+
+If your development environment uses custom TypeScript path mappings, additional configuration changes may be required. [Read more](https://learn.computec.one/docs/appengine/developers-guide/basic-and-business-logic/appengine-plugin/ae-ui#typescript-definitions-computec-appengine-310-and-higher)
+:::
+
 ## CompuTec AppEngine 3.2605.1
 
 **Release Date: 7 May 2026**
