@@ -17,7 +17,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 
 | Issue Type | Component | Release Note |
 | --- | --- | --- |
-| New | PM - Maintenance Order | Added a report that helps identify preventive maintenance schedules where **Maintenance Orders** were not generated and explains which conditions prevented their creation. |
+| New | PM - Maintenance Order | Added a new **Maintenance Order** report that helps maintenance planners identify preventive maintenance schedules for which **Maintenance Orders** were not generated. The report shows the affected equipment, maintenance schedules, and the specific conditions that prevented order creation, making it easier to diagnose and resolve scheduling issues. |
 | Improved | Common Functions | Added an option to choose whether the warehouse on a newly created **Manufacturing Order** should be copied from the **Sales Order** or from the **Bill of Materials**. |
 | Improved | Quality Control | Added new ``Completed`` and ``Reopened`` statuses for **QC Tests**, including validation rules, permissions, controlled status transitions, and audit tracking. |
 | Improved | API, Formulas | Added support for the `<sequence>` placeholder when updating **Bills of Materials** and **Manufacturing Orders** through integrations, reducing manual maintenance of sequence numbers. |
