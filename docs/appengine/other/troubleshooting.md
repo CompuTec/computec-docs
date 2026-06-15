@@ -4,6 +4,53 @@ sidebar_position: 2
 
 # Troubleshooting
 
+## Troubleshooting
+
+### Problem: CompuTec AppEngine restarts during long-running operations
+
+In some environments, AppEngine may restart while processing long-running operations such as plugin installation, database setup, or other tasks that keep the SAP connection locked for an extended period.
+
+This can happen when the operation takes longer than the configured `MaxConnectLockTime` value in the `AppEngineLockDetectAndRestartOptions` configuration section.
+
+CompuTec AppEngine periodically checks how long the SAP connection has been locked. If the lock duration exceeds the configured `MaxConnectLockTime`, CompuTec AppEngine assumes the connection is stuck and automatically restarts the service.
+
+As a result, legitimate long-running operations may be interrupted before they can finish.
+
+:::note[info]
+This procedure must be performed by a system administrator or consultant with access to the CompuTec AppEngine server, configuration files, and Windows services.
+:::
+
+### Solution
+
+Increase the `MaxConnectLockTime` value in the `AppEngineLockDetectAndRestartOptions` section of the AppEngine configuration file.
+
+Example:
+
+```json
+"AppEngineLockDetectAndRestartOptions": {
+  "CheckInterval": "00:00:30",
+  "MaxConnectLockTime": "00:20:00",
+  "Disabled": false
+}
+```
+
+After updating the configuration restart the CompuTec AppEngine service.
+
+:::info[note]
+
+By default, CompuTec AppEngine uses the following values:
+
+```json
+"AppEngineLockDetectAndRestartOptions": {
+  "CheckInterval": "00:00:30",
+  "MaxConnectLockTime": "00:10:00",
+  "Disabled": false
+}
+```
+
+Increase `MaxConnectLockTime` only when legitimate operations require more time to complete. The value should be greater than the expected duration of the longest operation performed in your environment.
+:::
+
 ## Problem: CompuTec WebClient Start can't be opened when CompuTec AppEngine and SAP Business One Web Client use the same host name
 
 In some environments, **CompuTec AppEngine** and the **SAP Business One Web Client** may be configured to use the same host name.
