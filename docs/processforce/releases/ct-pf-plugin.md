@@ -43,7 +43,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 | Fixed | MRP | Fixed an issue where creating **Purchase Orders** from **Order Recommendations** could fail with the error `Transaction End No Lock Applied`. |
 | Fixed | Quality Control | QC test results are now correctly synchronized with **Batch Master Data**, ensuring batch QC status reflects the latest QC outcome. |
 
-## CompuTec ProcessForce Plugin 3.2605.1
+## CompuTec ProcessForce 3.2605.1
 
 **Release Date: 7 May 2026**
 
