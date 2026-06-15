@@ -11,6 +11,38 @@ You can find all download links and release notes for the latest available **Com
 However, we strongly recommend using **CompuTec ProcessForce Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec ProcessForce 3.2606.3
+
+**Release Date: 12 June 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| New | PM - Maintenance Order | Added a report that helps identify preventive maintenance schedules where **Maintenance Orders** were not generated and explains which conditions prevented their creation. |
+| Improved | Common Functions | Added an option to choose whether the warehouse on a newly created **Manufacturing Order** should be copied from the **Sales Order** or from the **Bill of Materials**. |
+| Improved | Quality Control | Added new ``Completed`` and ``Reopened`` statuses for **QC Tests**, including validation rules, permissions, controlled status transitions, and audit tracking. |
+| Improved | API, Formulas | Added support for the `<sequence>` placeholder when updating **Bills of Materials** and **Manufacturing Orders** through integrations, reducing manual maintenance of sequence numbers. |
+| Improved | Quality Control | The **Complaints** menu is now available for all **QC Test** statuses. |
+| Improved | MRP | Improved performance of **Forecast 2.5**, reducing loading and update times for large datasets. |
+| Improved | Scheduling | Improved scheduling board progress reporting and scheduling consistency when using ``Backward`` scheduling. |
+| Improved | Scheduling | Added a clearer error message when scheduling resources without a calendar, helping users identify missing resource calendar configurations more quickly. |
+| Fixed | MRP | Fixed an issue where the **Results** tab did not display demand and supply details for items that had recommendations. |
+| Fixed | MRP | Fixed due date handling when creating grouped **Purchase Requests** and **Purchase Orders**. Each document line now keeps the due date from the original recommendation. |
+| Fixed | MRP | Corrected **Available Quantity** and **Shortage/Excess** calculations to prevent shortages from being counted twice and improve planning accuracy. |
+| Fixed | Manufacturing Order | Fixed an issue where attachments could only be opened using the **Full Path** field. Attachments can now be opened from both **Path** and **Full Path** fields. |
+| Fixed | API | Fixed an issue where scrap and co-product quantities were not calculated correctly when creating **Orderless Production** documents through the API. |
+| Fixed | Quality Control | Fixed automatic QC creation for batch-managed items when batches are created after the QC process is triggered. |
+| Fixed | Quality Control | Revision numbers are now copied correctly from source documents when creating **QC Documents** manually. |
+| Fixed | Quality Control | Fixed issues when duplicating **Test Protocols**. Item code, revision, and usage counters are now reset correctly, and default revisions are refreshed when items change. |
+| Fixed | Common Functions | Fixed **Operation Relationship Map** visualization for operation overlays. Parallel operations are now displayed correctly. |
+| Fixed | Production Costing | Fixed an issue where **Goods Receipt Adjustment** journal entries could be created with doubled amounts when negative inventory scenarios were involved. |
+| Fixed | Items | Fixed an issue where **Business Partner Relations** entered for one row could incorrectly appear on another row in **Item Details**. |
+| Fixed | Bill of Materials | Improved navigation in **Production Process**. The selected routing and operation now remain in focus after deleting an alternative resource. |
+| Fixed | PM - Maintenance Order Template | Enabled multi-selection of task codes in **Maintenance Order Templates**. |
+| Fixed | Scheduling | Lead time calculations now correctly exclude weekends and company-defined holidays when calculating recommended start and end dates. |
+| Fixed | Bill of Materials | Fixed licensing validation for **Mass Item Replace**, allowing users with supported logistics licenses to access the feature. |
+| Fixed | MRP | Fixed an issue where creating **Purchase Orders** from **Order Recommendations** could fail with the error `Transaction End No Lock Applied`. |
+| Fixed | Quality Control | QC test results are now correctly synchronized with **Batch Master Data**, ensuring batch QC status reflects the latest QC outcome. |
+
 ## CompuTec ProcessForce Plugin 3.2605.1
 
 **Release Date: 7 May 2026**
