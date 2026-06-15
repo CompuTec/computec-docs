@@ -4,19 +4,19 @@ sidebar_position: 2
 
 # View Management
 
-CompuTec WebUp saves all your settings, such as layouts, actions, and bindings, inside **Views**. All your saved Views are kept in the company database, and if a setting is supported by the SAP Business One Web Client Extensibility Framework, it is automatically deployed as a standard SAP Business One Web Client extension using the SAP Business One Extension Manager.
+CompuTec WebUp saves all your settings, such as layouts, actions, and bindings, inside **Views**. All your saved views are kept in the company database, and if a setting is supported by the **SAP Business One Web Client Extensibility Framework**, it is automatically deployed as a standard **SAP Business One Web Client** extension using the **SAP Business One Extension Manager**.
 
 Each **View** can have several **Versions**. This lets you make changes safely, test them, and go back to older versions if needed.
 
 This setup keeps everything traceable, organized, and secure.
 
 :::info[Note]
-You can access each CompuTec WebUp function from the CompuTec WebUp Side Panel inside the SAP Business One Web Client. Features open only if the current SAP Business One screen supports extensibility.
+You can access each **CompuTec WebUp** function from the **CompuTec WebUp Side Panel** inside the **SAP Business One Web Client**. Features open only if the current **SAP Business One** screen supports extensibility.
 :::
 
-## Key functions of View Management
+## Key functions of view management
 
-Here's a list of View Management key functions:
+Here's a list of view management key functions:
 
 - **Add New View**: Starts a new view with default settings and gives you the basic structure for layouts, actions, and bindings.
 
@@ -41,7 +41,7 @@ Here's a list of View Management key functions:
 
 :::
 
-## View Management example
+## View management example
 
 You may need to edit a new version of a view while the current version remains active in production.
 Once testing and validation are complete, you can activate the new version.

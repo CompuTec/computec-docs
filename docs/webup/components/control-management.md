@@ -13,9 +13,12 @@ Before making advanced layout adjustments, you must first create an editable vie
 
 :::info[note]
 You can access each CompuTec WebUp function from the **CompuTec WebUp Manager Side Panel** inside the SAP Business One Web Client. Features open only if the current **SAP Business One** screen supports extensibility.
+
+If a view is not supported by the SAP Web Client Extensibility model, the system displays `Unsupported View`, and editing is disabled.
+Some view sections don't have visible titles. In these cases, they are identified by their order in the layout instead of a label.
 :::
 
-## Key functions of Control Management
+## Key functions of control management
 
 - **Select Control**: Precisely select specific controls
 
@@ -42,13 +45,13 @@ You can access each CompuTec WebUp function from the **CompuTec WebUp Manager Si
 
     ![screen showing basic and dynamic options](./media/04control-management-basic-dynamic.png)
 
-:::info[Note]
-If a view is not supported by the SAP Web Client Extensibility model, the system displays `Unsupported View`, and editing is disabled.
+    :::note[info]
 
-Some view sections don't have visible titles. In these cases, they are identified by their order in the layout instead of a label.
-:::
+    You can see the use of **Dynamic** mode in control management to highlight chosen fields with color:  
+    ▶ **Watch**: [CompuTec WebUp - Highlighting Fields with Colour](https://www.youtube.com/watch?v=ufN3qK_F1aY)
+    :::
 
-## Control Management use cases
+## Control management use cases
 
 ### Hide an unused control
 
