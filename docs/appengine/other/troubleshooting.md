@@ -4,7 +4,32 @@ sidebar_position: 2
 
 # Troubleshooting
 
-## Problem: CompuTec WebClient Start couldn't be opened
+## Problem: CompuTec WebClient Start can't be opened when CompuTec AppEngine and SAP Business One Web Client use the same host name
+
+In some environments, **CompuTec AppEngine** and the **SAP Business One Web Client** may be configured to use the same host name.
+
+After logging in to CompuTec AppEngine, users may be unable to open **CompuTec WebClient Start** or other applications within the **SAP Business One Web Client**.
+
+This happens because SAP Business One limits the size of HTTP request headers. When both applications use the same host name, authentication cookies created by CompuTec AppEngine are also included in requests sent to the SAP Business One Web Client. In some cases, this causes the request size to exceed SAP's limit and the request is rejected.
+
+### Solution
+
+Configure **CompuTec AppEngine** and the **SAP Business One Web Client** to use different host names.
+
+Using separate host names prevents **CompuTec AppEngine** authentication cookies from being sent with **SAP Business One Web Client** requests and helps avoid HTTP header size limitations enforced by SAP.
+
+For example:
+
+- **CompuTec AppEngine**: `appengine.company.com`
+- **SAP Business One Web Client**: `webclient.company.com`
+
+After updating the configuration:
+
+1. Clear the browser cache and cookies.
+2. Log in to both applications again.
+3. Verify that **CompuTec WebClient Start** opens correctly.
+
+## Problem: CompuTec WebClient Start can't be opened after the CompuTec AppEngine update
 
 In some environments, the **CompuTec WebClient Start** application may fail to open after updating or installing **CompuTec AppEngine**.
 
@@ -43,7 +68,7 @@ To reinitialize the company, follow these steps:
 
 After the process is completed, open **CompuTec WebClient Start** again and verify that the application loads correctly.
 
-## Problem: Couldn't activate background processing in CompuTec AppEngine
+## Problem: Background processing can't be activated in CompuTec AppEngine
 
 In some **CompuTec AppEngine** installations, administrators may encounter an issue where **Background Processing** cannot be activated for a company. When attempting to enable it, the activation fails and you can see an error.
 
