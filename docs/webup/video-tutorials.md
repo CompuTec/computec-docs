@@ -14,6 +14,8 @@ These videos introduce the basics of CompuTec WebUp and help you begin working w
 
 - [▶ **CompuTec WebUp - First Launch**](https://youtu.be/YO3jdjChS4k): In this video, you’ll see how to launch CompuTec WebUp for the first time.
 
+- [▶ **CompuTec WebUp - CompuTec WebUp Manager Help Icons**](http://youtube.com/watch?v=DBv20ifpcCY): Learn how to access SAP Business One Extensibility Help using direct links within the CompuTec WebUp Manager.
+
 ## Explore key features
 
 Here you’ll find videos that explain specific CompuTec WebUp features and show how to use them in everyday work.
@@ -27,3 +29,5 @@ Here you’ll find videos that explain specific CompuTec WebUp features and show
 - [▶ **CompuTec WebUp - Validation - Creating a Warning Prompt**](https://www.youtube.com/watch?v=2CcmJlgOAb8): See how to create a validation rule that displays a warning message when a required field is left empty.
 
 - [▶ **CompuTec WebUp - Automation - Creating Activities and Actions**](https://www.youtube.com/watch?v=VYICWbt62YY): Learn how to create automations, including an example where the system automatically generates a follow-up activity based on specific conditions.
+
+- [▶ **CompuTec WebUp - Highlighting Fields with Colour**](https://www.youtube.com/watch?v=ufN3qK_F1aY): Learn how to highlight chosen fields with color using dynamic control management mode.

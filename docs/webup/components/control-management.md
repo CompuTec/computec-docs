@@ -47,7 +47,7 @@ Some view sections don't have visible titles. In these cases, they are identifie
 
     :::note[info]
 
-    You can see the use of **Dynamic** mode in control management to highlight chosen fields with color:  
+    Watch our video to see how to use the **Dynamic** mode to highlight chosen fields with color:  
     ▶ **Watch**: [CompuTec WebUp - Highlighting Fields with Colour](https://www.youtube.com/watch?v=ufN3qK_F1aY)
     :::
 
