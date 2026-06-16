@@ -30,8 +30,8 @@ The following authorization groups are available:
 
 Additional permissions are created under these groups as needed. For example:
 
-- Analytics permissions use the `CTAN_` prefix.
-- Plugin permissions use the `CTPL_` prefix.
+- **Analytics** permissions use the `CTAN_` prefix.
+- **Plugin** permissions use the `CTPL_` prefix.
 
 ## Set the authorizations
 
@@ -46,7 +46,7 @@ If you want to set the authorizations, follow these steps:
 
     ![alt text](./media/authorizations/user-auth2.png)
 
-4. Choose the user you want to grant the authorizations to, and choose **AppEngine** from the list.
+4. On the left, choose the **user** you want to grant the authorizations to, and then choose **CompuTec AppEngine** from the list.
 
     ![alt text](./media/authorizations/user-auth3.png)
 
