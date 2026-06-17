@@ -165,7 +165,7 @@ To assign the **Smart Action** to a control, follow these steps:
 
 14. Done! You’ve added and activated your Smart Action.
 
-## Use cases
+## Smart Actions use cases
 
 - Prevent accidental data changes:  
     Sales teams may unintentionally update pricing fields. You can trigger a confirmation popup when a user changes a price field (for example: ``Are you sure you want to change the price?``).
@@ -179,7 +179,103 @@ To assign the **Smart Action** to a control, follow these steps:
 - Show context-aware confirmations:  
     Users may need additional clarity before saving important documents. You can use parameters to display dynamic confirmation messages (for example: ``Do you want to save changes for document 10567?``).
 
-## Best practices
+## Debug Smart Actions
+
+When developing or troubleshooting **Smart Actions**, you can use the standard **JavaScript** ``debugger`` statement to pause script execution and inspect the action in your browser's developer tools.
+
+The ``debugger`` statement tells the browser to stop execution at a specific line and allows you to examine variables, parameters, and script behavior step by step.
+
+### Use the debugger statement
+
+To debug a **Smart Action**, follow these steps:
+
+1. In **CompuTec WebUp Manager**, open your **Smart Action** **Script**.
+
+    ![smart action script](media/smart-actions/debug-sa-1.png)
+
+2. Navigate to action **Script** and add the following statement where you want execution to pause:
+
+    ```javascript
+    debugger;
+    ```
+
+    ![alt text](media/smart-actions/debug-sa-2.png)
+
+    :::note[info]
+    You can add a single or multiple ``debugger`` statements throughout the script.
+
+        Example:
+
+        ```javascript
+        {
+            debugger;
+        const result = await parameters.oEnv.showMessageBox( b1.sdk.MessageBoxType.Warning,
+            "Are you sure you want to save changes from document ${actionParameters.DocNum}",
+            {
+                title: "Confirm",
+                initialFocus: b1.sdk.MessageBoxAction.Cancel,
+                actions: [
+                    b1.sdk.MessageBoxAction.Ok,
+                    b1.sdk.MessageBoxAction.Cancel,
+                ],
+            })
+            if(result != b1.sdk.MessageBoxAction.Ok){
+                parameters.oEvent.preventDefault()
+            }
+            debugger;
+        }
+        ```
+    In this example, the script pauses twice, allowing you to inspect the execution flow at different stages.
+    :::
+
+3. Click **Save & Preview**.
+
+    ![alt text](media/smart-actions/debug-sa-3.png)
+
+4. (optional) Assign the **Smart Action** to a control or event if it is not already assigned, and then click **Save & Preview**.
+5. Open your browser's developer tools:
+    - Right-click anywhere in the **WebUp Preview Mode** screen.
+    - Select **Inspect**.
+
+    ![alt text](media/smart-actions/debug-sa-33.png)
+
+6. Go to the **Sources** tab in the developer tools.
+7. Trigger the **Smart Action**, for example, click a button or modify a field that runs the action.
+8. Done! When execution reaches a ``debugger`` statement, the browser automatically pauses the script.
+
+    ![alt text](media/smart-actions/debug-sa-4.png)
+
+    While the script is paused, you can:
+
+    - Review variable values.
+    - Inspect Smart Action parameters.
+    - Check the call stack.
+    - Evaluate expressions in the console.
+    - Step through the code line by line.
+    - Identify script errors and unexpected behavior.
+    - Continue execution
+
+9. After reviewing the paused state, click **Resume** script execution in the developer tools.
+
+    ![alt text](media/smart-actions/debug-sa-5.png)
+
+    :::info[note]
+    The script continues running until it finishes execution, or it reaches another ``debugger`` statement.
+
+    If multiple ``debugger`` statements are present, execution pauses at each location, allowing you to inspect the script step by step.
+    :::
+
+### Common debugging scenarios
+
+Use the ``debugger`` statement to:
+
+- Verify that parameter values are passed correctly.
+- Confirm that conditional logic behaves as expected.
+- Troubleshoot validation rules.
+- Inspect data returned from SAP Business One.
+- Identify the source of script errors.
+
+## Smart Actions best practices
 
 - Use **Global** scope for reusable business logic
 - Keep scripts modular and simple
