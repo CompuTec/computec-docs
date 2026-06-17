@@ -68,6 +68,13 @@ Starting with **CompuTec AppEngine 3.0**:
 - Existing authorizations under the **AppEngine** node are deprecated.
 - **CompuTec AppEngine 3.0** does not use permissions assigned under the `CT_AppEngine` node.
 
+:::info[Note]
+
+After upgrading to **CompuTec AppEngine 3.0**, administrators can remove the deprecated **AppEngine** authorization node (`CT_AppEngine`) from the **Additional Authorization Center** if it is no longer needed.
+
+CompuTec AppEngine 3.0 does not use authorizations stored under this node. All active CompuTec AppEngine authorizations are available under the **CompuTec AppEngine** authorization node (`AppEngine`).
+:::
+
 ## Important upgrade information
 
 When reviewing existing authorizations, note that the term **AppEngine** is used differently in the two authorization structures:
