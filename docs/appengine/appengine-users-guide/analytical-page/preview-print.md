@@ -79,9 +79,9 @@ To create a new instance:
 
     - Use **Constant** when the value should always stay the same. Example: ``CompanyCode`` = ``US01``
     - Use **Field** when the value should come from the Analytics data source. Example: Use the selected row’s **Document Number** column.
-    - Enable **Ask** to turn on **Ask at Print Time** feature if users should enter or select a value when generating the report. This is useful when the value changes between print runs.
+    - Check the field under the **Ask** option to turn on **Ask at Print Time** feature if users should enter or select a value when generating the report. This is useful when the value changes between print runs.
 
-        ![Preview and Print parameter configuration dialog showing options for Constant, Field, and Ask. The screen includes guidance that Constant keeps a fixed value such as CompanyCode = US01, Field uses a value from the selected row’s Document Number column, and Ask enables Ask at Print Time so users can enter or select a value when generating the report. The interface appears as a white panel inside the AppEngine Launchpad environment.](media/preview_print/prev-and-print10.png)
+    ![Preview and Print parameter configuration dialog showing options for Constant, Field, and Ask. The screen includes guidance that Constant keeps a fixed value such as CompanyCode = US01, Field uses a value from the selected row’s Document Number column, and Ask enables Ask at Print Time so users can enter or select a value when generating the report. The interface appears as a white panel inside the AppEngine Launchpad environment.](media/preview_print/prev-and-print10.png)
 
 6. Click **Save**.
 
