@@ -22,30 +22,30 @@ It integrates with CompuTec AppEngine, allowing seamless operation within SAP Bu
 
 To generate forecasts for MRP 2.5, use Forecasts 2.5, which allows forecast definition per Item/Revision.
 
-![Forecasts](./media/basic-settings/forecasts-1.webp)
+![alt text](mrp-2-5/media/basic-settings/forecasts-1.webp)
 
 Use the **Create Forecast** button to quickly add multiple forecast lines based on selection criteria.
 
-![Forecasts](./media/basic-settings/forecasts-2.webp)
+![Forecasts](mrp-2-5/media/basic-settings/forecasts-2.webp)
 
 ### Step 2: Forecast Consumption in General Settings
 
 Forecast consumption parameters are set in General Settings:
 
-![General Settings](./media/basic-settings/mrp-general-settings.webp)
+![General Settings](mrp-2-5/media/basic-settings/mrp-general-settings.webp)
 
 The General Settings define default parameters for MRP 2.5.
 
 - **Consumption Method**: Days Backward/Forward: Can be adjusted per scenario.
 - **Consume Forecast**: A global setting that determines forecast consumption in sales document lines under the Consume Forecast column.
 
-  ![Sales Order](./media/basic-settings/mrp-sales-order.webp)
+  ![Sales Order](mrp-2-5/media/basic-settings/mrp-sales-order.webp)
 
 ### Step 3: Configure Item/Revision Planning Data
 
 Planning data is defined in the Item Master Data and separately for each Item Revision under Item Details.
 
-![Item Master Data](./media/basic-settings/mrp-item-master-data.webp)
+![Item Master Data](mrp-2-5/media/basic-settings/mrp-item-master-data.webp)
 
 - **Planning Method**: Functions similarly to standard SAP Business One MRP.
 - **Procurement Method**: Supports both Make and Buy, working as in standard SAP Business One.
@@ -143,6 +143,6 @@ Last (11) recommendation with quantity 6 (effect of Order Multiply, Rest of divi
 
 For batch-managed and serial-numbered items, MRP 2.5 provides enhanced visibility into stock levels. Inventory level parameters can be managed per revision and per item, allowing businesses to maintain precise inventory control.
 
-![Example](./media/basic-settings/mrp-2-5-example.webp)
+![Example](mrp-2-5/media/basic-settings/mrp-2-5-example.webp)
 
 ---

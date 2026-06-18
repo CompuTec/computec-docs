@@ -29,6 +29,12 @@ For example:
 - In a **Warehouse** variant, you can hide that action and show only warehouse-related actions.
 - In a **Manager** variant, you can rename actions to use more business-friendly labels.
 
+::info[note]
+An action must be enabled in a source before it can be configured in a variant.
+
+Variants can't create actions. They can only control the visibility of actions that were previously configured in the source.
+:::
+
 ## Configure actions in a source
 
 To configure an action in a source:
@@ -194,6 +200,15 @@ If no actions are visible, the **Action** button is hidden.
 
     ![alt text](media/actions/aa-config-action-in-src-ap-1.png)
 
+    :::note[info]
+
+    Action availability is evaluated dynamically. 
+    
+    Depending on the selected rows, some actions may become unavailable when they require a specific document status, or a mandatory parameter value. They may also support only specific object types.
+
+    If these specific conditions are not met, you won't see the **Action** button.
+    :::
+
 ### Visible actions
 
 If one or more actions are visible, the report displays the **Action** button. Clicking it opens the list of available actions.
@@ -208,6 +223,15 @@ To execute an action:
 2. Select **one or more rows** in the **Table View** of the report.
 
     ![alt text](media/actions/aa-config-action-in-src-ap-23.png)
+
+    :::note[info]
+
+    Some actions can process multiple selected rows at the same time.
+
+    When a user selects multiple rows, the system passes data from each selected row to the action. Whether multiple-row processing is supported depends on the action implementation.
+
+    For example, users may release multiple production orders in a single operation.
+    :::
 
 3. Click **Actions**.
 
