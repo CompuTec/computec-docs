@@ -54,13 +54,15 @@ If you do not already have a license file, follow our [Request CompuTec ProcessF
    Some web browsers, such as Safari, may change the file type during download. If this happens, the import may fail.  
    :::
 
-## Step 4: Confirm the license import
+4. After the import is completed successfully, a confirmation **System Message** appears.
 
-After the import is completed successfully, a confirmation **System Message** appears.
+   ![SAP Business One ProcessForce License Administration window with a green system message banner confirming the license import completed successfully, showing license server and user license fields in the wider application interface](media/license-import-assignment/import-a-lic5.png)
 
-![SAP Business One ProcessForce License Administration window with a green system message banner confirming the license import completed successfully, showing license server and user license fields in the wider application interface](media/license-import-assignment/import-a-lic5.png)
+5. Click **Change** to assign/change the license for the company.
 
-## Step 5: Assign the licenses to users
+   ![ProcessForce License Administration dialog in SAP Business One showing a highlighted Change button next to the selected company license, with license server and port fields visible in the application window](media/license-import-assignment/import-a-lic11.png)
+
+## Step 4: Assign the licenses to users
 
 1. Choose the users form the list and assign them to the chosen license type.
 
