@@ -4,83 +4,105 @@ sidebar_position: 1
 
 # CompuTec ProcessForce Architecture
 
-CompuTec ProcessForce is a 64-bit .NET-based add-on built to extend the core functionalities of SAP Business One, with a specific focus on the needs of manufacturing and process industries. Its architecture is designed for deep integration, performance efficiency, and adaptability across both Microsoft SQL Server and SAP HANA environments.
+**CompuTec ProcessForce** extends **SAP Business One** with advanced manufacturing, quality control, traceability, costing, and planning functionality.
 
----
+The solution is built on **Microsoft .NET** technology and integrates directly with **SAP Business One**, allowing users to manage manufacturing processes without leaving the SAP environment.
 
-## Architectural Overview
+**CompuTec ProcessForce** supports both **Microsoft SQL Server** and **SAP HANA** deployments.
 
-At its core, CompuTec ProcessForce functions as a **Windows-based .NET application** that launches from within SAP Business One. It operates via an executable process (`ProcessForce.exe`) and integrates seamlessly with the SAP Business One environment through its APIs and extension points.
+## Architecture overview
+
+**CompuTec ProcessForce** consists of several components that work together to provide business functionality, user interfaces, data management, and reporting capabilities.
 
 ![computec processforce 3.0 Architecture screen](.\media\architecture\pf-30-architecture.jpg)
 
+The solution operates via an executable process ``ProcessForce.exe``, and integrates with **SAP Business One** through standard SAP APIs and database structures while adding manufacturing-specific functionality and data.
+
 ## Key Architectural Components
 
-The architecture of CompuTec ProcessForce is divided into several key layers, each responsible for specific aspects of functionality, integration, and performance.
+### CompuTec ProcessForce API
 
-### 1. CompuTec ProcessForce API
+The **CompuTec ProcessForce API** is responsible for processing business logic and communicating with **SAP Business One**. It handles manufacturing transactions, validations, calculations, and data processing required by **CompuTec ProcessForce** functionality.
 
-The business logic and data handling layer is encapsulated in a dynamic-link library (DLL) deployed with the add-on.
+The API communicates with **SAP Business One** using the **SAP Business One Data Interface (DI) API** and optimized database access with **Direct Access Mode** using **ADO.NET** mechanisms.
 
-- Written in **C#** and part of the installation directory.
-- Interfaces with SAP Business One using the **Data Interface (DI) API**.
-- Offers **Direct Access Mode**, which uses **ADO.NET** for efficient database communication.
+### User interface (UI)
 
-This separation of concerns ensures robust handling of both SAP-compliant data structures and custom logic.
+**CompuTec ProcessForce** provides user interfaces integrated directly into **SAP Business One**.
 
-### 2. User Interface (UI) Layer
+Most functionality uses the standard **SAP Business One** user interface framework, ensuring a consistent user experience.
 
-The user interface is built using a combination of SAP-standard and modern web-based technologies:
+Some features use **SAPUI5** technology to provide more advanced and interactive screens. Examples include:
 
-- **SAP Business One UI API** is used for most standard forms and interactions.
-- Select features leverage **SAPUI5** (HTML-based interface) for richer and more responsive UIs. Examples include:
-  - Serialization
-  - MRP 2.5
-  - Batch Traceability 360
-  - Mass BOM Change Tool
+- Batch Traceability 360
+- MRP 2.5
+- Serialization
+- Mass BOM Change
 
-This hybrid approach supports both consistent user experience and enhanced usability for complex operations.
+### Data storage
 
-### 3. Data Management
+**CompuTec ProcessForce** stores its configuration and manufacturing data within the **SAP Business One** database.
 
-CompuTec ProcessForce relies on SAP Business One’s extensibility features to store and manage its data:
+The solution uses standard **SAP Business One** extensibility objects, including:
 
-- User-Defined Objects (UDOs)
-- User-Defined Tables (UDTs)
-- User-Defined Fields (UDFs)
+- **User-Defined Tables** (**UDTs**)
+- **User-Defined Fields** (**UDFs**)
+- **User-Defined Objects** (**UDOs**)
 
-This ensures tight integration with the SAP data model while allowing CompuTec ProcessForce to manage industry-specific logic and traceability data.
+This approach ensures that manufacturing data remains fully integrated with the **SAP Business One** data model.
 
-### 4. Reporting and Analytics
+### Reporting and Analytics
 
-Reporting capabilities are database-aware and provide flexibility depending on the platform:
+**CompuTec ProcessForce** includes reporting and analytics capabilities for manufacturing, quality control, costing, and traceability processes.
 
-- **SAP HANA**:
-  - Uses **Calculation Views** and the **CompuTec Semantic Model** for performance-optimized analytics.
-- **Microsoft SQL Server**:
-  - Utilizes **Stored Procedures**, **Functions**, and **Views** for report generation.
+Depending on the database platform, different technologies are used to optimize performance:
 
-Across both platforms, data retrieval is also supported via **User Queries**, and reports are rendered using **Crystal Reports**.
+#### SAP HANA
 
----
+**SAP HANA** deployments use:
 
-## SAP HANA vs. Microsoft SQL Server Compatibility
+- **Calculation Views**
+- **CompuTec Semantic Model**
 
-CompuTec ProcessForce delivers feature parity across both database platforms. However, the **Semantic Model**, which leverages SAP HANA’s native calculation views, is **exclusive to SAP HANA**.
+These technologies provide optimized analytical performance and advanced reporting capabilities.
 
-This architectural distinction provides enhanced analytical capabilities and performance for HANA users, while still offering comprehensive functionality for SQL Server environments.
+#### Microsoft SQL Server
 
----
+**Microsoft SQL Server** deployments use:
 
-## Summary
+- **Views**
+- **Functions**
+- **Stored Procedures**
 
-CompuTec ProcessForce’s architecture is designed to:
+These objects support reporting and data retrieval for operational and analytical processes.
 
-- Extend SAP Business One with advanced manufacturing logic.
-- Provide flexible UI and reporting layers tailored to user needs.
-- Maintain performance across database platforms.
-- Enable deep traceability and real-time analytics.
+:::note[info]
+On both platforms, users can retrieve data using **User Queries** and generate reports with **Crystal Reports**.
+:::
 
-Its modular, API-driven design ensures scalability, maintainability, and compatibility with evolving SAP Business One standards.
+### Database platform support
 
----
+**CompuTec ProcessForce** supports both:
+
+- **SAP HANA**
+- **Microsoft SQL Server**
+
+Most features are available on both platforms.
+
+The primary difference is the availability of the **CompuTec Semantic Model**, which is supported only on **SAP HANA** and provides enhanced analytical capabilities.
+
+## Benefits of the CompuTec ProcessForce 3.0 architecture
+
+The **CompuTec ProcessForce** architecture is designed to:
+
+- Extend **SAP Business One** with advanced manufacturing functionality
+- Maintain tight integration with **SAP Business One** data and processes
+- Support both **SAP HANA** and **Microsoft SQL Server** environments
+- Provide scalable reporting and analytics capabilities
+- Enable future enhancements without modifying** SAP Business One** core functionality
+
+## Additional information
+
+- For installation instructions, see the [CompuTec ProcessForce installation documentation](https://learn.computec.one/docs/processforce/administrator-guide/installation/first-installation/extension).
+
+- For technical integration details, see the [developer documentation](https://learn.computec.one/docs/appengine/developers-guide/rest-odata-api/rest-odata-api-documentation/).
