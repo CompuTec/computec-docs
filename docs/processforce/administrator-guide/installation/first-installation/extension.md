@@ -13,6 +13,7 @@ Follow these steps to install the CompuTec ProcessForce plugins properly.
 - Ensure you meet all CompuTec ProcessForce [System Requirements](../../system-requirements.md).
 - It is recommended to install the [CompuTec License Server](./license-server) before proceeding.
 - Restart the SAP Business One client **before installing** the CompuTec ProcessForce Plugin.
+- Disable any custom code in the ``SP_TransactionNotification`` and ``SP_PostTransactionNotice`` stored procedures before installing the plugins. After the installation is completed successfully, you can re-enable your custom code.
 
 ## Step 1: Download CompuTec ProcessForce Plugins
 
