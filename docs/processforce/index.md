@@ -2,210 +2,242 @@
 sidebar_position: 1
 ---
 
-# Introduction to CompuTec ProcessForce
+# Introduction to CompuTec ProcessForce 3.0
 
-This guide introduces you to **CompuTec ProcessForce 3.0**, an advanced manufacturing plugin for SAP Business One. You’ll learn how to install and activate it, explore the first navigation steps, and get a quick overview of the key functional modules.
+**CompuTec ProcessForce 3.0** is a manufacturing execution and management solution for **SAP Business One**. It extends standard **SAP Business One** functionality with advanced tools for production planning, manufacturing execution, quality control, costing, traceability, plant maintenance, and product lifecycle management.
 
-## Prerequisites
+This guide introduces the main areas of **CompuTec ProcessForce** and helps you get started after installation.
 
-Before starting, make sure:
+## Before you start
 
-- Your system meets the [minimum requirements](./administrator-guide/system-requirements.md).  
-- You have installation files for both the **CompuTec License Server** and the **CompuTec ProcessForce add-on**. [Download them here](./releases/download.md).
+Before you can use **CompuTec ProcessForce 3.0**, you must complete the installation and licensing process.
 
-## Step-by-Step Installation
+Follow these guides:
 
-1. Follow the [installation guide](./administrator-guide/installation/first-installation/license-server.md) to set up the CompuTec License Server.
-2. Use the standard SAP Business One Add-on Manager to install CompuTec ProcessForce.
-3. After installation, the add-on runs in **trial mode for 14 days**.
-4. Before the trial expires, request a valid license from your CompuTec ProcessForce provider. [Learn how here](./administrator-guide/licensing/request-for-a-license.md).
-5. Access the add-on through the SAP Business One menu. To do so, navigate to:
-   :::info Path
-   Main Menu → Administration → Add-ons
-   :::
+- [System Requirements](./administrator-guide/system-requirements.md)
+- [Install CompuTec License Server](./administrator-guide/installation/first-installation/license-server.md)
+- [Install CompuTec ProcessForce Plugins](./administrator-guide/installation/first-installation/extension.md)
+- [Import and Assign Licenses](./administrator-guide/licensing/license-import-and-assignment.md)
 
-## Navigation Overview
+:::info[note]
+Use the [Upgrade CompuTec ProcessForce](./administrator-guide/installation/update-to-ct-pf-30.md) guide only if you already have **CompuTec ProcessForce 2.0** installed and want to update to **CompuTec ProcessForce 3.0**. For new installations, follow the installation guides instead.
+:::
 
-Once installed, CompuTec ProcessForce modules are available under the SAP Business One **Main Menu**:
+After completing the installation, log in to **SAP Business One** and verify that the **CompuTec ProcessForce** menus are available.
 
-![Main menu modules](./media/index/modules.webp)
+## Access CompuTec ProcessForce 3.0
 
-## Key Functional Modules
+After installation, **CompuTec ProcessForce** functions are integrated directly into the **SAP Business One** menu structure.
 
-Below is a summary of the most important CompuTec ProcessForce modules:
+![CompuTec ProcessForce menu structure integrated into SAP Business One, showing main functional modules including Administration, Financials, CRM, Opportunities, Sales, Purchasing, Business Partners, Banking, Inventory, Production, Costing, Quality Control, Complaints, Plant Maintenance, MRP, Service, Human Resources, Reports, and Excel Report and Interactive Analysis options](media/index/intro/pf-intro1.png)
+
+You can access most **CompuTec ProcessForce** features from the **SAP Business One** menu:
+
+- **Administration**
+- **Inventory**
+- **Production**
+- **Costing**
+- **Quality Control**
+- **Plant Maintenance**
+
+## Main CompuTec ProcessForce features
 
 ### General Settings
 
-Here you can define general CompuTec ProcessForce settings, e.g. set default values or time constraints for many of the add-on features.
+Configure global **CompuTec ProcessForce** settings, default values, and manufacturing parameters.
 
-To access General Settings, navigate to:
+Use this module to define system-wide settings such as default values, production parameters, planning options, costing settings, and validation rules that affect other CompuTec ProcessForce modules.
 
-:::info Path
-Administration → System Initialization → General Settings → ProcessForce tab
+To access **General Settings**, navigate to: **Modules** > **Administration** > **System Initialization** > **General Settings** > **ProcessForce**.
+
+![CompuTec ProcessForce general settings window inside SAP Business One with the ProcessForce General tab selected, showing options for SAP Standard Modules and SAP Sales Order Controls including enable standard functionality of SAP Business One's Production menu, enable the standard functionality of the Resources menu, hide ProcessForce related controls on the Sales Order form, disable update of MOR references on Sales Order lines, and forbid changing Sales Order line data if a Manufacturing Order is already assigned](media/index/intro/pf-intro2.png)
+
+:::note[info]
+For detailed configuration instructions, read the [General Settings](./user-guide/system-initialization/general-settings/overview.md) guide.
 :::
-
-![General settings](./media/index/general-settings.webp)
-
-➡️ Learn more more about [General Settings](./user-guide/system-initialization/general-settings/overview.md).
 
 ### Item Details
 
-Extended Item definition allows assigning much more information to an item. In the menu, you can assign revision, classifications, phrases, groups, texts, and attachments to a specific item.
+Manage manufacturing-specific information that extends the standard SAP Business One item master data.
 
-To access Item Details, navigate to:
+Use this module to maintain revisions, classifications, specifications, attachments, product texts, and other information required throughout the product lifecycle.
 
-:::info Path
-Inventory → Item Details
+To access **Item Details**, navigate to: **Modules** > **Inventory** > **Item Details**.
+
+![SAP Business One Item Details window showing Item Code Active-Item-01, Item Name Active-Item-01, UoM KG, Yield 100.00. Two checkboxes on the right labeled Allow Residual Qty and Ignore Yield. Main pane displays the Revisions tab with a table whose first row shows Revision Code code00, Revision Name default, Status Active, and the Default checkbox checked. Table column headers visible include Revision Code, Revision Name, Status, Valid From, Valid To, Default, Default for MRP, Default for Company, Material, Sync Planning, Remarks. Bottom left shows OK and Cancel buttons. The screen is a form inside the SAP Business One application window with a neutral, instructional tone.](media/index/intro/pf-intro3.png)
+
+:::note[info]
+For detailed configuration instructions, read the [Item Details](./user-guide/item-details/overview.md) guide.
 :::
 
-![Item details](./media/index/item-details.webp)
+### Ingredients
 
-➡️ Learn more about [Item Details](./user-guide/item-details/overview.md)
+Manage ingredient declarations and nutritional information for products.
 
-### Ingredient Declarations
+This module helps food, beverage, chemical, and life sciences companies create ingredient lists, allergen declarations, nutritional panels, and other data required for product labeling and regulatory compliance.
 
-CompuTec ProcessForce provides an extension to product master data. Nutrient and ingredient information can be used to create complex ingredient listings and declaration statements, thus are useful in the creation of product labels.
+To access Ingredients, navigate to **Modules** > **Inventory** > **Ingredients**.
 
-To access Ingredients, navigate to:
+![CompuTec ProcessForce menu integrated into SAP Business One with a large blue arrow pointing from the left-hand Inventory > Ingredients menu to an open Ingredient Master Data window; the Ingredient Master Data form title reads Ingredient Master Data and shows fields Code 120, Description Vitamin B12, Category 01 and tabs Allergens, Classification/Certificates, Specifications; the surrounding UI includes a vertical module list such as Administration, Financials, CRM, Inventory, Production, Costing, Quality Control and Plant Maintenance in a professional instructional software interface](media/index/intro/pf-intro4.png)
 
-:::info Path
-Inventory → Ingredients
+:::note[info]
+For detailed configuration instructions, read the [Ingredients](./user-guide/ingredient-declarations/overview.md) guide.
 :::
-
-![Ingredient Declaration](./media/index/ingredient-master-data.webp)
-
-➡️ Learn more about [Ingredients](./user-guide/ingredient-declarations/overview.md).
 
 ### Batch Control
 
-Batches are groups of the same products. Batch Master Data functionality allows to define of many values for a whole group of the same products.
+Manage additional information for batch-managed materials and products.
 
-To access Batches, navigate to:
+Use this module to maintain batch-specific attributes, quality information, production details, and other data required for traceability and compliance.
 
-:::info Path
-Inventory → Item Management → Batches
+To access Batches, navigate to: **Modules** > **Inventory** > **Item Management** > **Batches**.
+
+![SAP Business One interface showing the CompuTec ProcessForce menu navigation to Batch Management and the Batch Management Selection Criteria dialog with fields for Operation Update, Item No. From Active-Item-01, Group All, Properties/Ignore tabs, and checked posting options for Goods Receipt PO, Goods Return Request, Goods Return, A/P Invoices, and A/P Credit Memos in a neutral instructional software screen](media/index/intro/pf-intro5.png)
+
+:::note[info]
+For detailed configuration instructions, read the [Batch Control](./user-guide/inventory/batch-control/overview.md) guide.
 :::
-
-![Batch management](./media/index/batch-management.webp)
-
-➡️ Learn more about [Batch Control](./user-guide/inventory/batch-control/overview.md).
 
 ### Batch Traceability
 
-Batches are a base for traceability – a function that allows to track down a certain raw material on every level of production and a product in later distribution, which can be used e. g. in a fast and easy recall process. Batch Trace functionality allows tracing a whole track that a certain product passed.
+Track materials and finished goods throughout the production and distribution process.
 
-To access Batch Traceability, navigate to:
+Use this module to identify where a raw material was used, which finished products were produced from it, and where those products were distributed. This information is especially useful during audits, investigations, and product recalls.
 
-:::info Path
-Inventory → Item Management → Batches → Batch Traceability
+![Batch traceability node diagram showing four connected batch records arranged top left, top right, center, and bottom. Top left node labeled Active-Item-01 lists Description Active-Item-01, Revision, Quantity -5.556 KG, UoM KG, Type Buy, Manufacturing Date 30.12.99, Expiry Date 30.12.99, Batch 2012-04-18-4. Top right node labeled ByProduct-01 lists Description ByProduct-01, Quantity 1.2 KG, UoM KG, Type Make, Manufacturing Date 18.04.12, Expiry Date 30.12.99, Batch 2012-04-18-10. Center node labeled Product-A lists Description Product-A, Revision Product-A, Quantity 20 EA, UoM EA, Type Make, Manufacturing Date 18.04.12, Expiry Date 30.12.99, Batch 2012-04-18-8. Bottom node labeled Scrap-01 lists Description Scrap-01, Revision, Quantity 1.02 KG, UoM KG, Type Make, Manufacturing Date 18.04.12, Expiry Date 30.12.99, Batch 2012-04-18-9. Blue directional arrows run from Active-Item-01 to ByProduct-01, Product-A, and Scrap-01 indicating material flow. Displayed within a Batch Traceability visualization window inside the SAP Business One application, on a white canvas with application menus visible around it. Tone is neutral and informational.](media/index/intro/pf-intro66.png)
+
+To access **Batch Traceability**, navigate to: **Modules** > **Inventory** > **Item Management** > **Batches** > **Batch Traceability**.
+
+![Batch Traceability selection criteria dialog in SAP Business One showing title Batch Traceability - Selection Criteria, fields Item Code with value Active-Item-01 and empty Batch, and OK and Cancel buttons within a broader SAP Business One menu and window environment](media/index/intro/pf-intro6.png)
+
+:::note[info]
+For detailed configuration instructions, read the [Batch Traceability](./user-guide/inventory/batch-control/batch-traceability.md) guide.
 :::
-
-![Batch traceability](./media/index/batch-traceability.webp)
-
-➡️ Learn more about [Batch Traceability](./user-guide/inventory/batch-control/batch-traceability.md)
 
 ### Bill of Materials (BOM)
 
-To access Bill of Materials, navigate to:
+Define what is required to manufacture a product.
 
-:::info Path
-Production → Bill of Materials
+Bills of Materials (BOMs) specify the raw materials, semi-finished products, packaging components, and quantities required to produce a finished item.
+
+To access Bill of Materials, navigate to: **Modules** > **Production** > **Bill of Materials**.
+
+![Bill of Materials window in SAP Business One showing CompuTec ProcessForce BOM details for Product-A with fields Item Code Product-A, Description Product-A, Revision default, Quantity 1.000, Total 1.000, Factor 1.000, Yield 100.00, Warehouse 01; the table lists line items Bottle-01, Label-01, Top-01, Recipe-01 with quantities 1.000, scrap percentages 0.00 or 10.00, yields 100.00, and UoM values EA and KG in a neutral software interface](media/index/intro/pf-intro7.png)text](media/index/intro/pf-intro7.png)
+
+:::note[info]
+For detailed configuration instructions, read the [Bill of Materials](./user-guide/formulations-and-bill-of-materials/bill-of-materials/overview.md) guide.
 :::
 
-![Bill of materials](./media/index/bill-of-materials.webp)
+### Routings
 
-➡️ Learn more about [Bill of Materials](./user-guide/formulations-and-bill-of-materials/bill-of-materials/overview.md).
+Define how a product is manufactured.
 
-### Production Routings
+A routing describes the sequence of operations, resources, work centers, and production steps required to produce an item. It forms the basis for scheduling, capacity planning, and production execution.
 
-Routing determines the steps that are performed in the manufacturing process for a specific product. Resources required for production and Operations performed on it can be defined within Routing. CompuTec ProcessForce solution allows defining of many settings for Routing, Operation, and Resource.
+To access **Routings**, navigate to: **Modules** > **Production** > **Routings** > **Routing**.
 
-To access Routings, navigate to:
+![CompuTec ProcessForce Routing window in SAP Business One showing Routing Code 01 and Routing Name Integrated Process with Active checkbox checked and an Operations table listing sequence 10, operation code 01, and operation name Mix & Pack in a neutral instructional software interface](media/index/intro/pf-intro8.png)
 
-:::info Path
-Production → Routings
+:::note[info]
+For detailed configuration instructions, read the [Routings](./user-guide/routings/overview.md) guide.
 :::
-
-![Routing](./media/index/routing.webp)
-
-➡️ Learn more about [Routings](./user-guide/routings/overview.md).
 
 ### Manufacturing Order
 
-CompuTec ProcessForce Manufacturing Orders are used to plan, execute and record production activities.
+Manage the complete production process from planning to completion.
 
-:::info Path
-Production → Manufacturing Order
+Use Manufacturing Orders to issue materials, record production activities, report quantities, track progress, and receive finished goods into inventory.
+
+To access **Manufacturing Order**, navigate to: **Modules** > **Production** > **Manufacturing Order** > **Manufacturing Order**.
+
+![CompuTec ProcessForce Manufacturing Order window inside SAP Business One showing a manufacturing order for Product-A with fields for Item Code Product-A, Revision default, Warehouse 01, Planned Quantity 1.000, Actual Quantity 0.000, Recommended Start Date 19.06.26 12:25 and a lower grid listing bill of materials lines such as Bottle-01, Label-01, Top-01, Active-Item-Active-Item-01 and Non-Active items in a standard business software interface](media/index/intro/pf-intro9.png)
+
+:::note[info]
+For detailed configuration instructions, read the [Manufacturing Order](./user-guide/manufacturing/manufacturing-order/overview.md) guide.
 :::
 
-![Manufacturing order](./media/index/manufacturing-order.webp)
+### Scheduling
 
-➡️ Learn more about [Manufacturing Order](./user-guide/manufacturing/manufacturing-order/overview.md).
+Plan and optimize production activities across available resources.
 
-### Production Scheduling
+Use this module to schedule manufacturing orders, balance workloads, identify capacity conflicts, and adjust production plans using an interactive scheduling board.
 
-Based upon many resources and time constraints, CompuTec ProcessForce provides a simple but powerful scheduling solution to manage the Manufacturing Orders within the plant and to manually re-schedule via "drag and drop" means.
+To access **Scheduling**, navigate to: **Modules** > **Production** > **Manufacturing Order** > **Scheduling**.
 
-To access Scheduling, navigate to:
+![CompuTec ProcessForce Scheduling window in SAP Business One displaying a Manufacturing Orders table with columns for Show in Gantt, Status, Document Number, ItemCode, Description, Revision, Quantity, ActualQuantity, InventoryUoM, RequiredDate, Priority, SchedulingMethod, Warehouse, and Factor. Three rows show started and released manufacturing orders with product details including Product-B and Product-A, quantities ranging from 1.00 to 27.78, scheduled dates in May and October 2021, backward and forward scheduling methods, and priority level 1. The interface uses a professional blue-gray color scheme typical of enterprise business software.](media/index/intro/pf-intro10.png)
 
-:::info Path
-Manufacturing Order → Scheduling
+:::note[info]
+For detailed configuration instructions, read the [Scheduling](./user-guide/scheduling/overview.md) guide.
 :::
-
-![Scheduling](./media/index/scheduling.webp)
-
-➡️ Learn more about [Scheduling](./user-guide/scheduling/overview.md).
 
 ### Item Costing
 
-CompuTec ProcessForce Product Costing has been built to take advantage of all the costing methods provided by SAP Business One. Thus providing a solution that supports the costing, analysis, and finance controlling operations.
+Calculate and analyze the cost of manufactured products.
 
-To access Item Costing, navigate to:
+Use this module to estimate production costs, evaluate material and resource consumption, compare planned and actual costs, and support financial analysis.
 
-:::info Path
-Main Menu → Costing
+To access **Item Costing**, navigate to: **Modules** > **Costing** > **Item Costing**.
+
+![CompuTec ProcessForce Item Costing window inside SAP Business One showing Item Code Active-Item-01, Item Name Active-Item-01, Revision Code code00, Cost Category Code 000, Valuation Method Standard, MRP Type Buy, Item Type Item, and UoM KG with a table listing warehouse 01 Automatic type, item cost 0.00, fixed overhead 1.00, fixed overhead percent 1.00, and fixed overhead cost 0.00 in a neutral instructional software environment](media/index/intro/pf-intro11.png)
+
+:::note[info]
+For detailed configuration instructions, read the [Item Costing](./user-guide/costing-material-and-resources/item-costing/overview.md) guide.
 :::
-
-![Item Costing](./media/index/item-costing.webp)
-
-➡️ Learn more about [Item Costing](./user-guide/costing-material-and-resources/item-costing/overview.md).
 
 ### Plant Maintenance
 
-CompuTec ProcessForce Plant Maintenance (PM) enables you to manage both **preventive** and **corrective** maintenance activities for equipment, machines, and production lines. It ensures higher asset reliability, reduced downtime, and improved operational efficiency.
+Manage maintenance activities for machines, equipment, and production assets.
 
-➡️ Learn more about [Plant Maintenance](../processforce/user-guide/plant-maintenance/overview.md)
+Use this module to schedule preventive maintenance, record repairs, track maintenance history, and reduce unplanned downtime.
+
+To access **Plant Maintenance**, navigate to: **Modules** > **Plant Maintenance**.
+
+![CompuTec ProcessForce Plant Maintenance screen in SAP Business One showing the Plant Maintenance menu selected and a Maintainable Item form with fields MI Code, MI Name, MI Type Location, MI Status Awaiting purchase, assigned objects section with Resource Code and Resource Name, item details, apparatus type, equipment card, and fixed asset fields in a neutral instructional business application interface](media/index/intro/pf-intro12.png)
+
+:::note[info]
+For detailed configuration instructions, read the [Plant Maintenance](../processforce/user-guide/plant-maintenance/overview.md) guide.
+:::
 
 ### Quality Control
 
-A Quality Control Test can be generated using predefined test protocols, from Goods Receipt PO, Complaint, Manufacturing Order. A request for it can also be set up by an SAP Business One Business Alert. QC functionality allows to set a wide range of details for a quality test, e.g. test protocol templates, Resources and Items used to conduct a test, assigned Inspector, frequency of a test, defects, reasons along with additional instructions and attachments, and more.
+Manage quality inspections throughout the manufacturing process.
 
-To access Quality Control, navigate to:
+Use this module to create test plans, perform inspections, record results, track non-conformances, and ensure products meet internal and regulatory quality requirements. It supports test templates, inspectors, resources, materials, testing frequencies, defect tracking, instructions, and attachments.
 
-:::info Path
-Main Menu → Quality Control
+**Quality Control** tests can be triggered from business processes such as **Goods Receipt POs**, **Manufacturing Orders**, **Complaints**, or **SAP Business One Business Alerts**.
+
+To access **Quality Control**, navigate to: **Modules** > **Quality Control**.
+
+![CompuTec ProcessForce Quality Control Test screen inside SAP Business One showing a test protocol form with fields for Test Protocol No 02, Description Standard, Item Code Product-A, Item Name Product-A, Revision Code code00, QC Warehouse Code 01, and status Started. A lower grid displays test properties including sequence 10 with Test Property Code 01 Metal Test and sequence 20 with Test Property Code 02 Particle Size. The wider environment is a SAP Business One application window with menu navigation on the left and module details on the right, presented in a neutral instructional tone.text](media/index/intro/pf-intro13.png)
+
+:::note[info]
+For detailed configuration instructions, read the [Quality Control](./user-guide/quality-control/overview.md) guide.
 :::
-
-![Quality control test](./media/index/quality-control-test.webp)
-
-➡️ Learn more about [Quality Control](./user-guide/quality-control/overview.md)
 
 ### Complaint Management
 
-You can create and manage complaints from customers, suppliers, or internal departments. Functionality allows recording, analyzing and starting action upon complaints, among other things.
+Manage customer, supplier, and internal complaints from initial registration through resolution.
 
-To access Complaint, navigate to:
+Use this module to investigate issues, identify root causes, assign corrective actions, and monitor the effectiveness of resolutions.
 
-:::info Path
-Main Menu → Complaint
+To access **Complaints**, navigate to: **Modules** > **Complaints** > **Complaint**.
+
+![CompuTec ProcessForce Complaint entry screen inside SAP Business One showing a supplier complaint for Hanks Deliveries with header fields Series Supplier 2, Complaint Type Customer, Business Partner Code 00002, Started Date 19.06.26, and Status Started; Item Details section lists Item Code Active-Item-01, Item Name Active-Item-01, Transaction Type Purchasing: Goods Receipt PO; Batch detail shows batch 2026-05-04-5; Complaint Details table lists reason codes 01 Covered in Oil, 04 Covered in Paint, 02 Broken](media/index/intro/pf-intro14.png)
+
+:::note[info]
+For detailed configuration instructions, read the [Complaint](./user-guide/complaint-management/complaint.md) guide.
 :::
-
-![Complaint](./media/index/complaint.webp)
-
-➡️ Learn more about [Complaint](./user-guide/complaint-management/complaint.md).
 
 ## Next Steps
 
-- Explore individual module documentation for task-specific usage.
-- Learn how to configure initial settings in the Administrator Guide.
-- Need support? Write to [https://support.computec.pl](https://support.computec.pl)
+After becoming familiar with the available modules:
+
+- Configure [**General Settings**](./user-guide/system-initialization/general-settings/overview.md).
+- Set up [**Item Details**](./user-guide/item-details/overview.md), [**Bill of Materials**](./user-guide/formulations-and-bill-of-materials/bill-of-materials/overview.md), and [**Routings**](./user-guide/routings/overview.md).
+- Configure [**Manufacturing Orders**](./user-guide/manufacturing/manufacturing-order/overview.md) and [**Scheduling**](./user-guide/scheduling/overview.md).
+
+:::note[info]
+
+If you need any help, contact [CompuTec Support](https://support.computec.pl).
+
+:::
