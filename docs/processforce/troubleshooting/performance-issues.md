@@ -7,7 +7,85 @@ toc_max_heading_level: 2
 
 On this page, you can check the most common performance problems while working with ProcessForce and ways of resolving these issues.
 
----
+## Snapshot Isolation in SAP Business One (SQL Server)
+
+:::info[note]
+**Applies to**: **SAP Business One** on **Microsoft SQL Server** only. Not applicable to SAP Business One, version for SAP HANA.  
+**Available from**: **CompuTec ProcessForce 3.2604.1**.
+:::
+
+**Snapshot Isolation** is a **Microsoft SQL Server** isolation level that prevents read and write operations from blocking each other. Instead of waiting for locks to be released, SQL Server reads a consistent snapshot of the data stored in ``tempdb``.
+
+When **Snapshot Isolation** is enabled at the database level, core database **ADO** connections automatically use **Snapshot** scope. No additional connection string changes are required.
+
+The main consideration is a moderate increase in ``tempdb`` usage, because **MS SQL Server** stores row versions there. After enabling **Snapshot Isolation**, monitor ``tempdb`` size and growth regularly.
+
+:::note[info]
+
+You can read more about **Snapshot Isolation**, in the [SAP Knowledge Base Article](https://userapps.support.sap.com/sap/support/knowledge/en/3663007).
+
+:::
+
+### Symptoms
+
+Consider enabling **Snapshot Isolation** if users report any of the following issues:
+
+- Frequent blocking between users
+- Slow document posting during busy periods
+- Deadlocks during high transaction volume
+- Reports or queries hanging while documents are being added or updated
+- Reduced system performance when many users are connected at the same time
+
+### Benefits
+
+Enabling **Snapshot Isolation** can provide the following benefits:
+
+- Read operations no longer wait for write locks
+- Users running reports or browsing data are less likely to be blocked by users posting transactions
+- Deadlock frequency is significantly reduced
+- Concurrent user capacity improves on busy systems
+- ADO database connections automatically use Snapshot scope
+- No per-connection configuration changes are required
+
+### Activate Snaphot Isolation
+
+To enable **Snapshot Isolation**, follow these steps:
+
+1. Run the following SQL statements for each **SAP Business One** company database:
+
+    ```sql
+    ALTER DATABASE YourCompanyDB SET ALLOW_SNAPSHOT_ISOLATION ON;
+
+    -- One-time setup for tempdb and model to stay persistent across restarts
+    ALTER DATABASE model  SET ALLOW_SNAPSHOT_ISOLATION ON;
+    ALTER DATABASE tempdb SET ALLOW_SNAPSHOT_ISOLATION ON;
+    ```
+
+    :::note[Database Descriptions]
+
+    - ``YourCompanyDB`` - The SAP Business One company database where **Snapshot Isolation** will be enabled
+    - ``tempdb`` - SQL Server stores row versions here while *Snapshot Isolation* is active
+    - ``model`` - SQL Server recreates ``tempdb`` from the model database every time the **SQL Server** service restarts
+
+    Replace the ``YourCompanyDB`` placeholder value in the script with your actual **SAP Business One** database name.
+
+    Enabling **Snapshot Isolation** on ``model`` ensures that ``tempdb`` automatically inherits the setting after every SQL Server restart. This prevents administrators from having to manually reapply the setting after a reboot.
+    :::
+
+2. In **SAP Business One**, go to: **Administration** > **System Initialization** > **General Settings** > **ProcessForce** > **General**.
+
+    ![screen showing General sub-tab opened.](./media/performance-issues/snapshot-isolation-level1.png)
+
+3. Enable the following checkbox: **Accept Snapshot Isolation Level**.
+
+    ![screen showing snapshot isolation level turned on](./media/performance-issues/snapshot-isolation-level.png)
+
+4. Click **OK** to save the changes.
+
+    ![screen showing clicking OK to apply the changes](./media/performance-issues/snapshot-isolation-level3.png)
+
+5. Restart the **SAP Business One Client** to ensure the new database session settings are applied.
+6. Done! The **Snapshot Isolation Level** is enabled.
 
 ## Long delay in opening and browsing ProcessForce forms on SAP Business One for SAP HANA
 
