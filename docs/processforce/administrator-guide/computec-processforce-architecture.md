@@ -99,7 +99,7 @@ The **CompuTec ProcessForce** architecture is designed to:
 - Maintain tight integration with **SAP Business One** data and processes
 - Support both **SAP HANA** and **Microsoft SQL Server** environments
 - Provide scalable reporting and analytics capabilities
-- Enable future enhancements without modifying** SAP Business One** core functionality
+- Enable future enhancements without modifying **SAP Business One** core functionality
 
 ## Additional information
 

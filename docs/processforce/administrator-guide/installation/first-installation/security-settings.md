@@ -4,60 +4,78 @@ sidebar_position: 3
 
 # Security Settings
 
-CompuTec ProcessForce requires specific folder-level permissions to operate correctly in environments with custom security configurations. This page includes a **tutorial** to apply those settings, a **how-to** checklist, and related **reference** information.
+In environments with custom **Windows** security policies, users may need additional permissions to access **CompuTec ProcessForce** files stored in the ``ProgramData`` directory.
 
----
+This guide explains how to verify and configure the required folder permissions.
 
-## Configuring Security Settings for CompuTec ProcessForce
+## When is this required?
 
-If you're installing CompuTec ProcessForce on a system with non-default security settings (e.g., corporate IT policies or hardened environments), follow this step-by-step guide to ensure the correct folder permissions are applied.
+You may need to configure these permissions if:
 
-### Step-by-Step Instructions
+- Your organization uses custom security policies.
+- User access to system folders is restricted.
+- CompuTec ProcessForce users experience file access or permission-related errors.
 
-Follow the steps below to configure the necessary permissions:
+:::info[note]
 
-1. **Open File Explorer** and go to the following path: `C:\ProgramData\`  
-   > ⚠️ The **ProgramData** folder is hidden by default. You may need to enable “Show hidden items” in File Explorer.
+These changes are typically not required on systems that use the default Windows security settings.
+:::
 
-2. Locate the `CompuTec` folder, right-click on it, and choose **Properties**.
+## Configure folder permissions
 
-3. Go to the **Security** tab and click the **Edit...** button.
+To configure the required permissions:
 
-   ![Edit security properties](./media/security-settings/edit-security-properties.webp)
+1. Open **File Explorer**.
+2. Navigate to: ``C:\ProgramData\``.
 
-4. In the **Permissions for CompuTec** window, for each SAP Business One user who will use CompuTec ProcessForce, ensure the following permissions are enabled:
+   ![Windows File Explorer showing Local Disk C contents with the ProgramData folder visible among other system folders such as Program Files and Users](media/security-settings/pf-secur-1.png)
 
-        - Read & execute
-        - List folder contents
-        - Read
+   :::info[note]
 
-            ![Edit security properties set](./media/security-settings/edit-security-properties-set.webp)
+   If the folder is not visible, enable **Show** > **Hidden items** in **File Explorer**.
 
-   These permissions should apply to:
-   - The folder itself
-   - All subfolders and files (descendants)
+   ![Windows File Explorer view menu with hidden items option enabled so the ProgramData folder can be displayed](media/security-settings/pf-secur-2.png)
+   :::
 
----
+3. Right-click the **CompuTec** folder and select **Properties**.
 
-## Reference: Folder Permissions Matrix
+   ![Windows File Explorer showing the CompuTec folder selected with the context menu or properties dialog available for folder settings](media/security-settings/pf-secur-3.png)
 
-| Folder Path                     | Required For               | Permissions Needed                    |
-|--------------------------------|----------------------------|----------------------------------------|
-| `C:\ProgramData\CompuTec`      | All  Users     | Read, List folder, Read & execute      |
-| Subfolders of `CompuTec`       | Add-ons, Temp files, etc.  | Inherited from parent folder |
+4. Open the **Security** tab.
 
----
+   ![alt text](media/security-settings/pf-secur-4.png)
 
-## Why Are These Permissions Needed?
+5. Click **Edit...**.
 
-CompuTec ProcessForce stores critical configuration and temporary data under the `CompuTec` folder within `C:\ProgramData`. In locked-down environments, default system permissions may restrict user access to these paths, leading to errors or instability during operation.
+   ![alt text](media/security-settings/pf-secur-5.png)
 
-Setting the correct permissions ensures:
+6. For each **SAP Business One user** who will use **CompuTec ProcessForce**, grant the following permissions:
+   - **Read & execute**
+   - **List folder contents**
+   - **Read**
 
-- Add-ons can read configuration files
-- Runtime logs and temp files can be created
-- Updates and extensions work without permission errors
+   ![alt text](media/security-settings/pf-secur-6.png)
 
-These changes are **not required** on systems that use the default Windows security model, where users already have the necessary access.
+   These permissions should apply to this folder, all subfolders and files.
 
----
+7. Click **OK** to save the changes.
+
+## Required permissions
+
+| Folder Path | Required For | Permissions Needed |
+| --- | --- | --- |
+| `C:\ProgramData\CompuTec` | All  Users | Read, List folder, Read & execute |
+| Subfolders of `CompuTec` | Add-ons, Temp files, etc. | Inherited from parent folder |
+
+## Why are these permissions required?
+
+**CompuTec ProcessForce** stores configuration files, temporary files, and runtime data in the ``ProgramData`` directory.
+
+Without the required permissions, users may experience:
+
+- Errors when opening CompuTec ProcessForce windows
+- Problems loading configuration data
+- Failures when creating temporary files
+- Issues during updates or extensions installation
+
+Ensuring that users have the required access helps **CompuTec ProcessForce** operate correctly in restricted environments.

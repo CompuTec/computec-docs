@@ -4,9 +4,11 @@ sidebar_position: 1
 
 # License Server
 
-👉 Please refer to the updated guide here: [License Server Installation](../../licensing/license-server/computec-license-server-installation.md).
+For the latest installation and configuration instructions, see the [**CompuTec License Server Installation**](../../licensing/license-server/computec-license-server-installation.md) guide.
 
-This updated page includes:
+The updated guide includes:
 
-- step-by-step instructions for initial installation,
-- setting Windows Firewall rule.
+- Step-by-step installation instructions
+- Windows Firewall configuration
+- Post-installation verification steps
+- Licensing and activation information
