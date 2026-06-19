@@ -230,7 +230,7 @@ For detailed configuration instructions, read the [Complaint](./user-guide/compl
 
 ## Next Steps
 
-After becoming familiar with the available modules:
+After becoming familiar with the **CompuTec ProcessForce 3.0** key features:
 
 - Configure [**General Settings**](./user-guide/system-initialization/general-settings/overview.md).
 - Set up [**Item Details**](./user-guide/item-details/overview.md), [**Bill of Materials**](./user-guide/formulations-and-bill-of-materials/bill-of-materials/overview.md), and [**Routings**](./user-guide/routings/overview.md).
