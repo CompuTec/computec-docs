@@ -4,24 +4,66 @@ sidebar_position: 5
 
 # SAP Business One Cloud Environment
 
-CompuTec ProcessForce is a powerful extension for SAP Business One, designed to enhance manufacturing and process management. If you’re working in the SAP Business One Cloud environment, you’ll need to ensure that CompuTec ProcessForce is properly registered, deployed, and maintained. This guide provides key information on setting up CompuTec ProcessForce, resolving deployment issues, and handling known client behavior in the cloud environment.
+**CompuTec ProcessForce** can be deployed in **SAP Business One Cloud** environments using the standard SAP Business One extension management process.
 
----
+This article provides information about registering **CompuTec ProcessForce**, known deployment issues, and client behavior specific to **SAP Business One Cloud** installations.
 
-## Registering CompuTecProcessForce
+## Register CompuTec ProcessForce
 
-To register CompuTec ProcessForce in SAP Business One Cloud, refer to the Managing Extensions chapter in the  [SAP Business One Cloud Administrator's Guide](https://help.sap.com/docs/SAP_BUSINESS_ONE_CLOUD). This section outlines the process for registering add-ons, deploying them to Service Units, and assigning them to Tenants  using the Cloud Control Center.
+To register and deploy **CompuTec ProcessForce** in **SAP Business One Cloud**, follow the procedures described in the [SAP Business One Cloud Administrator's Guide](https://help.sap.com/docs/SAP_BUSINESS_ONE_CLOUD).
 
-## Error while Deploying CompuTec ProcessForce to Service Unit
+Use the **SAP Business One Cloud Control Center** to:
 
-If you encounter errors while deploying CompuTec ProcessForce to a Service Unit, particularly with older versions of SAP Business One Cloud or the Cloud Control Center, the issue may be related to the registration of the Microsoft COM DLL file (RegisterActiveX.dll). If this occurs, submit a ticket through our support portal to request a compatible version of CompuTec ProcessForce installer that supports proper deployment.
+- Register the **CompuTec ProcessForce** extension
+- Deploy the extension to a **Service Unit**
+- Assign the extension to tenants
 
-## Closure of the SAP Business One Client
+For detailed instructions, refer to the [Managing Extensions section of the SAP Business One Cloud Administrator's Guide](https://help.sap.com/docs/SAP_BUSINESS_ONE_CLOUD_GUIDES/cd6ee6810dbf4eda8f6a96a10285b852/717a1251caad4cb1b4c72490eb010fc6.html).
 
-There is a known issue in the SAP Business One Cloud environment where the SAP Business One client may close unexpectedly when working with CompuTec ProcessForce, especially when logged in as a Partner Support User (PSU_1 or PSU_2). This can occur in the following scenarios:
+## Deployment issues
 
-- **Assigning CompuTec ProcessForce Licenses**: The system may close unexpectedly while assigning user licenses. For more details, refer to the[Licensing Issues](../../troubleshooting/licensing-issues.md) page.
+### Error during deployment to a Service Unit
 
-- **Opening CompuTec ProcessForce Window**: If the client remains inactive for 15 minutes or after re-logging into the company database, CompuTec ProcessForce windows may not open correctly. Visit the [General Functions](../../troubleshooting/general-functions.md) page for more information.
+In some older **SAP Business One Cloud** environments, deployment may fail due to issues with **Microsoft COM DLL** ``RegisterActiveX.dll`` file registration.
 
----
+This issue is typically related to the registration of the **RegisterActiveX.dll** file during deployment.
+
+#### Solution
+
+If deployment fails:
+
+- Verify the **SAP Business One Cloud and Cloud Control Center** versions.
+- Contact **CompuTec Support**.
+- Request a **CompuTec ProcessForce** installer compatible with your **SAP Business One Cloud** environment.
+
+## Known limitations
+
+### SAP Business One client closes unexpectedly
+
+In some **SAP Business One Cloud** environments, the **SAP Business One** client may close unexpectedly while using **CompuTec ProcessForce**.
+
+This behavior has been observed most frequently when logged in using a **Partner Support User** account, such as:
+
+- PSU_1
+- PSU_2
+
+### License assignment
+
+The **SAP Business One** client may close unexpectedly while assigning **CompuTec ProcessForce** licenses.
+
+For more information, see the [**Licensing Issues** documentation](../../troubleshooting/licensing-issues.md).
+
+### Opening CompuTec ProcessForce windows
+
+After the **SAP Business One** client remains inactive for an extended period, or after reconnecting to the company database, some **CompuTec ProcessForce** windows may not open correctly.
+
+This issue may occur:
+
+- After approximately 15 minutes of inactivity
+- After logging out and logging back into the company database
+
+For more information, see the [**General Functions** documentation](../../troubleshooting/general-functions.md).
+
+## Additional information
+
+If you experience deployment or operational issues in **SAP Business One Cloud** environments, contact [**CompuTec Support**](https://support.computec.pl/servicedesk/customer/portals) for assistance.
