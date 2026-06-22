@@ -4,6 +4,14 @@ sidebar_position: 1
 
 # CompuTec WebUp Release Notes
 
+## CompuTec WebUp 1.2606.1
+
+**Release Date: 22 June 2026**
+
+| Issue Type | Release Note |
+| --- | --- |
+| Fixed | Added support for **Sales Opportunity** documents in **CompuTec WebUp Manager**. Opening the **CompuTec WebUp Manager** side panel on a **Sales Opportunity** now correctly displays the view designer instead of the ``Unsupported View`` or ``Layout Error`` message, allowing users to design and manage layouts for this document type. |
+
 ## CompuTec WebUp 1.2604.1
 
 **Release Date: 1 April 2026**
