@@ -4,99 +4,107 @@ sidebar_position: 2
 
 # CompuTec License Server Installation
 
-The **CompuTec License Server** is required to manage user licenses for CompuTec solutions.  
-This tutorial guides you through installing the License Server on a Windows system and configuring the firewall so that it can communicate on the correct port.
+The **CompuTec License Server** manages user licenses for CompuTec solutions.
 
-:::info
-For details about available license types, see [**CompuTec ProcessForce User License Types**](../license-comparison-chart.md).
+This guide explains how to install the **CompuTec License Server** and configure **Windows Firewall** to allow communication with client applications.
+
+:::info[Note]
+
+For information about available license types, see [**CompuTec ProcessForce User License Types**](../license-comparison-chart.md).
 :::
 
----
+## Before you start
 
-## Prerequisites
+Before you begin, make sure:
 
-Before you begin:
+- You have administrator rights on the Windows server.  
+- Any previous version of **CompuTec ProcessForce License Server** has been removed.
+- Any previous version of **SAP COM License Bridge** has been removed (required only for environments that previously used **CompuTec ProcessForce 8.81**, **8.82**, or **9.0 PL05–PL08 HotFix**).
+- You have downloaded the [latest **CompuTec License Server** installation package](../../../releases/download.md).
 
-- You must have administrator rights on the Windows system.  
-- Remove any previously installed versions of:
-  - **CompuTec ProcessForce License Server**  
-  - **SAP COM License Bridge** (if used with ProcessForce 8.81, 8.82, or 9.0 PL05–PL08 HotFix).  
-- Ensure you have downloaded the [latest CompuTec License Server package](../../../releases/download.md).
+:::caution[important]
 
-:::caution
-    CompuTec License Server can be installed in a **Windows environment** only.
+**CompuTec License Server** is supported only on **Windows** operating systems.
 :::
 
----
+## Install and congigure CompuTec License Server
 
-## Steps to Install CompuTec License Server
+### Step 1: Install CompuTec License Server
 
-### Step 1: Run the Installer
+1. Extract the **CompuTec License Server** installation package.
+2. Run **CompuTec.LicenseServer.Setup.msi**.
+3. Click **Next**.
 
-        - Extract the ZIP file.
-        - Run the `CompuTec.LicenseServer.Setup.msi` file and click "Next":
+    ![CompuTec License Server Setup Wizard welcome dialog with title CompuTec License Server Setup, instructions to change installation options, and Next and Cancel buttons on a Windows desktop background](media/license-server-installation/lic-serv-ins1.png)
 
-            ![CompuTec License Server Setup](./media/license-server-installation/CTLicenseServerInstallerA.png)
+4. Accept the default installation folder (recommended) or select a custom location.
+5. Click **Next**.  
 
-### Step 2: Choose Installation Location
+    ![CompuTec License Server installer destination folder screen showing installation path C:\Program Files (x86)\CompuTec\License Server\ with Next and Cancel buttons on a hexagonal patterned desktop background](media/license-server-installation/lic-serv-ins2.png)
 
-        - Accept the default folder (recommended) or choose a custom location.  
-        - Click **Next**.  
+6. Review the installation settings, and click **Install**.
 
-            ![CompuTec License Server Setup](./media/license-server-installation/CTLicenseServerInstallerB.png)
+    ![CompuTec License Server Setup wizard ready to install CompuTec License Server with Install and Cancel buttons visible on a hexagonal patterned desktop background](media/license-server-installation/lic-serv-ins3.png)
 
-### Step 3: Complete Installation
+7. Wait for the installation to finish.
+8. Click **Finish**.
 
-        - Confirm settings and click **Install**.  
-        - When the installation finishes successfully, click **Finish**. 
+    ![CompuTec License Server Setup Wizard completion dialog on a Windows desktop with dark hexagonal background showing the message Completed the CompuTec License Server Setup Wizard and instructions to click the Finish button to exit the Setup Wizard](media/license-server-installation/lic-serv-ins4.png)
 
-            ![CompuTec License Server Setup](./media/license-server-installation/CTLicenseServerInstallerC.png)
+### Step 2: Configure Windows Firewall
 
-            ![CompuTec License Server Setup](./media/license-server-installation/CTLicenseServerInstallerD.png)
+To allow communication with the **CompuTec License Server**, create an inbound firewall rule for **TCP** port ``30002``.
 
-### Step 4: Configure Windows Firewall
+1. Open **Windows Settings**.
+2. Navigate to **Windows Security** > **Firewall & network protection**.
+3. Click **Advanced settings**.
 
-1. Navigate to `Windows Settings → Network & Internet → Windows Firewall`:
+    ![Windows Security Firewall and network protection page showing domain private and public network status with Advanced settings link visible](media/license-server-installation/lic-serv-ins5.png)
 
-    ![Firewall rule](./media/license-server-installation/firewall-rule.webp)
+4. In **Windows Defender Firewall with Advanced Security**, select **Inbound Rules**.
 
-2. Click on **Advanced settings** option:
+    ![Windows Defender Firewall with Advanced Security window with Inbound Rules selected in the left pane and rule list area on the right](media/license-server-installation/lic-serv-ins6.png)
 
-    ![Firewall rule - advanced settings](./media/license-server-installation/firewall-rule-2.webp)
+5. Click **New Rule...**.
 
-3. In the Windows Firewall with Advanced Security window, select Inbound Rules and click New Rule... to open the New Inbound Rule Wizard.
+    ![Windows Defender Firewall with Advanced Security showing New Rule command in the Inbound Rules pane and the New Rule wizard available](media/license-server-installation/lic-serv-ins6-1.png)
 
-    ![New rule](./media/license-server-installation/new-rule.webp)
+6. Select **Port**, and click **Next**.
 
-4. Choose **Port** as the rule type:
+    ![New Inbound Rule wizard page with Port rule type selected and Next button available](media/license-server-installation/lic-serv-ins7.png)
 
-    ![Rule type](./media/license-server-installation/rule-type.webp)
+7. Select **TCP**.
+8. Enter ``30002`` in **Specific local ports**.
 
-5. Choose **TCP** protocol and specify **30002** as the local port:
+    ![New Inbound Rule wizard page with TCP selected and specific local ports field set to 30002](media/license-server-installation/lic-serv-ins8.png)
 
-    ![Local port](./media/license-server-installation/local-port.webp)
+9. Click **Next**.
+10. Choose **Allow the connection**, and click **Next**.
 
-6. Choose **Allow the connection**:
+    ![New Inbound Rule wizard page with Allow the connection option selected and Next button visible](media/license-server-installation/lic-serv-ins9.png)
 
-    ![Action](./media/license-server-installation/action.webp)
+11. Select all profiles: ``Domain``, ``Private`` and ``Public``, and click **Next**.
 
-7. Choose **all profiles**:
+    ![New Inbound Rule wizard page with Domain Private and Public profiles selected and Next button visible](media/license-server-installation/lic-serv-ins10.png)
 
-    ![Profiles](./media/license-server-installation/profiles.webp)
+12. Enter a name for the rule, and click **Finish**.
 
-8. Specify the rule name and click **Finish**:
+    ![New Inbound Rule wizard page prompting for the rule name with Finish button ready to complete the setup](media/license-server-installation/lic-serv-ins11.png)
 
-    ![Rule name](./media/license-server-installation/rule-name.webp)
+## Result
 
----
+After completing the installation:
 
-## Outcome
+- **CompuTec License Server** is installed and running.
+- **Windows Firewall** allows inbound **TCP** connections on port ``30002``.
+- CompuTec applications can connect to the **License Server** and validate user licenses.
 
-You have successfully:
+:::info[note]
+If client applications cannot connect to the **License Server** after installation:
 
-- Installed the CompuTec License Server.  
-- Configured Windows Firewall to allow inbound TCP connections on port 30002.  
+- Verify that the **License Server** service is running.
+- Confirm that **TCP** port ``30002`` is open.
+- Check local and network firewall settings.
+- Verify connectivity between the client workstation and the **License Server**.
 
-Your CompuTec solutions can now connect to the License Server and validate licenses.  
-
----
+:::
