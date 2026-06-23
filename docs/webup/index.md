@@ -47,30 +47,34 @@ Here is how **CompuTec WebUp** works:
 
 ## Components of CompuTec WebUp
 
-Here is an overview of the key CompuTec WebUp components:
+Here is an overview of the key **CompuTec WebUp** components:
 
 ### CompuTec WebUp App (Plugin)
 
-- Installed through the CompuTec AppEngine Plugin (App) Store.
-- Responsible for executing customization and automation logic and for storing all CompuTec WebUp configuration settings.
-- Runs on CompuTec AppEngine 3.0 and acts as the backend foundation for the CompuTec WebUp solution.
+- Installed through the **CompuTec AppEngine Plugin (App) Store**.
+- Responsible for executing customization and automation logic and for storing all **CompuTec WebUp** configuration settings.
+- Runs on **CompuTec AppEngine 3.0** and acts as the backend foundation for the **CompuTec WebUp** solution.
 
 ### CompuTec WebUp Manager
 
 - A browser extension that provides a side-panel user interface.
 - Allows administrators and consultants to create, edit, and test configuration settings and to preview changes before deployment.
-- Currently installed manually using the browser’s Developer Mode.
-- Where possible, it uses the SAP Business One Web Client Extensibility Framework for supported configuration options.
+- Includes a [built-in **Help Mode**](https://www.youtube.com/watch?v=DBv20ifpcCY) that provides direct access to **SAP Business One** documentation. When enabled, contextual help links are displayed next to supported controls, properties, and **SAP Business One** objects.
+- Where possible, it uses the **SAP Business One Web Client Extensibility Framework** for supported configuration options.
+
+:::info[note]
+**CompuTec WebUp Manager** is currently installed manually using the browser's **Developer Mode**.
+:::
 
 ### CompuTec WebUp Client
 
-- A browser extension that extends the SAP Business One Web Client beyond the limitations of the standard extensibility framework.
-- At present, operates mainly in the background as an additional authenticator for CompuTec AppEngine.
+- A browser extension that extends the **SAP Business One Web Client** beyond the limitations of the standard extensibility framework.
+- At present, operates mainly in the background as an additional authenticator for **CompuTec AppEngine**.
 - In future releases, it'll be used more broadly to enable advanced customization and extension scenarios.
-- Like the Manager, currently installed manually using the browser’s Developer Mode.
+- Like the **CompuTec WebUp Manager**, currently installed manually using the browser’s **Developer Mode**.
 
 :::info[Note]
 All CompuTec WebUp settings are saved **directly in your company database**.
 
-If a setting is supported by the **SAP Business One Web Client Extensibility Framework**, it is automatically deployed as a standard SAP Business One Web Client extension using the **SAP Business One Extension Manager**.
+If a setting is supported by the **SAP Business One Web Client Extensibility Framework**, it is automatically deployed as a standard **SAP Business One Web Client** extension using the **SAP Business One Extension Manager**.
 :::
