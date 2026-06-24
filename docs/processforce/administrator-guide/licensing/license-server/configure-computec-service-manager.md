@@ -4,70 +4,84 @@ sidebar_position: 3
 
 # Configure CompuTec Service Manager
 
-The **CompuTec Service Manager** is part of the CompuTec License Server suite. It provides a central interface to start, stop, and configure CompuTec solutions such as CompuTec PDC, CompuTec WMS, and licensing components. This guide provides step-by-step instructions for setting up and using the CompuTec Service Manager to ensure seamless operation and optimal performance.
+**CompuTec Service Manager** is part of the **CompuTec License Server** suite. It provides a central location for managing CompuTec services and licensing components.
 
-:::info
-For installation instructions, see the [CompuTec License Server Installation Guide](./computec-license-server-installation.md).
+Using **CompuTec Service Manager**, you can:
+
+- Start, stop, and restart CompuTec services.
+- Configure service settings.
+- Manage terminal licenses and licensing components for CompuTec solutions.
+- Review and update **License Server** settings.
+- Access service logs and diagnostic information.
+
+## Before you start
+
+Before you begin, make sure that:
+
+- CompuTec **License Server** is installed.
+- You have ``administrator`` permissions on the Windows server.
+
+:::note[info]
+
+For installation instructions, see the [**CompuTec License Server Installation**](computec-license-server-installation.md) guide.
 :::
 
----
+## Use CompuTec Service Manager
 
----
+1. Open the **Windows Start menu**.
+2. Locate and launch **CompuTec Service Manager**.
 
-## Prerequisites
+   ![alt text](media/lic-serv-config/lic-serv-config1.png)
 
-- CompuTec License Server must already be installed.  
-- You need administrator rights on the Windows system.  
+3. After the application starts, the CT icon appears in the Windows notification area.
 
----
+4. Click the **CT icon** to open the **CompuTec Service Manager** window.
 
-## Steps to Start CompuTec Service Manager
+   ![alt text](media/lic-serv-config/lic-serv-config2.png)
 
-### Step 1: Open CompuTec Service Manager
+5. The main **Service Manager** window displays all available CompuTec services.
 
-1. Go to the **Windows Start menu** → locate **CompuTec Service Manager** in the program list.  
+   ![alt text](media/lic-serv-config/lic-serv-config3.png)
 
-   ![CompuTec Service Manager](./media/direct-access/computec-service-manager.png)
+   From here, you can:
 
-2. When launched, the **CT icon** appears in the Windows notification area.  
+   - **Start** a service.
+   - **Stop** a service.
+   - **Refresh** a service.
+   - Open service-specific **Settings**.
+   - Manage licenses for **CompuTec PDC** (**Plant Data Capture**) and **CompuTec WMS** (**Warehouse Management System**).
 
-   ![CT shortcut](./media/direct-access/CT-shortcut.webp)
+6. To access service settings:
 
-3. Click the icon to open the **CompuTec Service Manager** window.  
+   - Select the service from the list.
 
-   ![CT Service Manager](./media/direct-access/CT-Service-Manager_1.webp)
+      ![alt text](media/lic-serv-config/lic-serv-config4.png)
 
-### Step 2: Manage Services
+   - Click **Settings**.
 
-Inside the **Service Manager** window you can:
+      ![alt text](media/lic-serv-config/lic-serv-config4-1.png)
 
-- **Start, stop, or restart** individual CompuTec services.  
-- Open service settings by selecting a service and clicking **Settings**.  
+7. You can use these options when troubleshooting services, applying configuration changes, or restarting services after updates.
 
-The **Terminal Licensing** section lets you manage licenses for:
+   ![alt text](media/lic-serv-config/lic-serv-config5.png)
 
-- **CompuTec PDC** (Plant Data Capture)  
-- **CompuTec WMS** (Warehouse Management System)
+   In the **Server Settings** tab, you can:
+   - View or update **Server Name**: The name of the **CompuTec License Server**.
+   - View or update **Port Number**: The communication port used by the **CompuTec License Server**. The default value is recommended unless your environment requires a different port.
+   - Test the server connection: Click **Test** next to the port number.
 
-### Step 3: Adjust License Server Settings
+      ![alt text](media/lic-serv-config/lic-serv-config6.png)
 
-1. In the **Server Settings** tab, you can view or update configuration values:  
-   - **Server Name**  
-   - **Port Number** (default recommended)  
+   - Configure additional parameters:  
+      - **Logging Level**: Controls the amount of information written to log files.
+      - **Log Location**: Displays the location where log files are stored.
 
-   ![CT Server Settings](./media/direct-access/CT-License-Server-Settings_1_Server-Settings1.webp)
+## Result
 
-2. (Optional) Configure additional parameters:  
-   - **Logging Level**: controls the detail of logs.  
-   - **Log File Location**: shows where log files are stored.  
+After completing these steps, you can:
 
----
-
-## Outcome
-
-After following these steps, you can:
-
-- Launch and access CompuTec Service Manager from Windows.  
-- Control the state (start/stop/restart) of CompuTec services.  
-- Manage licensing for PDC and WMS.  
-- Review or adjust License Server settings, including server name, port, and logging options.
+- Access and manage CompuTec services from a single location.
+- Start, stop, and restart CompuTec services.
+- Manage licensing for **CompuTec PDC** and **CompuTec WMS**.
+- Review and update **CompuTec License Server** settings.
+- Configure logging options for troubleshooting and diagnostics.
