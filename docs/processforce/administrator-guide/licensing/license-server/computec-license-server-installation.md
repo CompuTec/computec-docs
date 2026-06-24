@@ -97,14 +97,14 @@ After completing the installation:
 
 - **CompuTec License Server** is installed and running.
 - **Windows Firewall** allows inbound **TCP** connections on port ``30002``.
-- CompuTec applications can connect to the **License Server** and validate user licenses.
+- CompuTec applications can connect to the **CompuTec License Server** and validate user licenses.
 
 :::info[note]
-If client applications cannot connect to the **License Server** after installation:
+If client applications cannot connect to the **CompuTec License Server** after installation:
 
-- Verify that the **License Server** service is running.
+- Verify that the **CompuTec License Server** service is running.
 - Confirm that **TCP** port ``30002`` is open.
 - Check local and network firewall settings.
-- Verify connectivity between the client workstation and the **License Server**.
+- Verify connectivity between the client workstation and the **CompuTec License Server**.
 
 :::
