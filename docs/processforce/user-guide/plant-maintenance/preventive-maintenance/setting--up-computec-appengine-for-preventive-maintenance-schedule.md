@@ -16,18 +16,18 @@ This guide explains how to:
 
 Before you begin, make sure that:
 
-- You have ``administrator`` access to the **CompuTec AppEngine Administration Panel**.
+- You have administrator access to the **CompuTec AppEngine Administration Panel**.
 - **CompuTec AppEngine** is installed and configured.
-- **CompuTec ProcessForce** and **Plant Maintenance Mobile** (**MI 360**) plugins are available.
-- The **System Landscape Directory** (**SLD**) is configured and connected.
+- The **CompuTec ProcessForce** and **Plant Maintenance Mobile** (**MI 360**) plugins are available.
+- The **System Landscape Directory** (**SLD**) is configured correctly.
 
-## Configure CompuTec AppEngine for Preventive Maintenance Scheduling
+## Set up Preventive Maintenance Scheduling
 
 ### Step 1: Configure the SLD Server
 
 1. Open the **CompuTec AppEngine Administration Panel**.
 2. Go to **Configuration**.
-3. Enable **Background Processing Data** for the required company.
+3. Enable **Background Processing Data** for the company.
 
    ![CompuTec AppEngine Administration Panel configuration screen showing Background Processing Data option for the selected company](preventive-maintenance-schedule-logic/media/setting-up-ae-for-prev-sched/prev-sched-con1.png)
 
@@ -78,7 +78,7 @@ To enable time-based preventive maintenance schedules, follow these steps:
 
    ![Job list view highlighting PMScheduleTimeBasedJob entry in the Background Processing configuration](preventive-maintenance-schedule-logic/media/setting-up-ae-for-prev-sched/prev-sched-con5.png)
 
-2. Click **the toggle** to enable the job.
+2. Turn on the **Enabled** toggle.
 
    ![Detail view showing the toggle control to enable PMScheduleTimeBasedJob in Background Processing](preventive-maintenance-schedule-logic/media/setting-up-ae-for-prev-sched/prev-sched-con6.png)
 
@@ -88,13 +88,13 @@ To enable time-based preventive maintenance schedules, follow these steps:
   
 #### Meter-Based Preventive Maintenance
 
-To enable meter-based preventive maintenance schedules, , follow these steps:
+To enable meter-based preventive maintenance schedules, follow these steps:
 
 1. Find **PMScheduleMeterBasedJob** background processing job on the list and click it.
 
    ![Job list view highlighting PMScheduleMeterBasedJob entry in the Background Processing configuration](preventive-maintenance-schedule-logic/media/setting-up-ae-for-prev-sched/prev-sched-con7.png)
 
-2. Click **the toggle** to enable the job.
+2. Turn on the **Enabled** toggle.
 
    ![Detail view showing the toggle control to enable PMScheduleMeterBasedJob in Background Processing](preventive-maintenance-schedule-logic/media/setting-up-ae-for-prev-sched/prev-sched-con8.png)
 
@@ -102,7 +102,7 @@ To enable meter-based preventive maintenance schedules, , follow these steps:
 
    ![Confirmation dialog with Yes button to activate the meter based preventive maintenance job](preventive-maintenance-schedule-logic/media/setting-up-ae-for-prev-sched/prev-sched-con11.png)
 
-## Combined Time-Based and Meter-Based Preventive Maintenance
+#### Combined Time-Based and Meter-Based Preventive Maintenance
 
 If your company uses both scheduling methods, activate:
 
@@ -118,3 +118,13 @@ Make sure the **Cron Expression** for each job is configured according to how of
 ![alt text](preventive-maintenance-schedule-logic/media/setting-up-ae-for-prev-sched/prev-sched-con12.png)
 
 :::
+
+## Result
+
+After completing these steps, **CompuTec AppEngine** is configured to process **Preventive Maintenance Schedules**.
+
+**Maintenance Orders** can now be created automatically based on:
+
+- time-based schedules,
+- meter-based schedules, or
+- both scheduling methods, depending on your configuration.
