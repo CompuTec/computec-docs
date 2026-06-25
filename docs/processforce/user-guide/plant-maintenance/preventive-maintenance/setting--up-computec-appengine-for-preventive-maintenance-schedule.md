@@ -68,7 +68,7 @@ Depending on the type of preventive maintenance you use, enable the appropriate 
 
 You can do it in **CompuTec AppEngine Administration Panel** > **Background Processing** > **Cofiguration**.
 
-![Background Processing configuration list showing preventive maintenance jobs and navigation menu in CompuTec AppEngine](preventive-maintenance-schedule-logic/media/setting-up-ae-for-prev-sched/prev-sched-con4.png)
+   ![Background Processing configuration list showing preventive maintenance jobs and navigation menu in CompuTec AppEngine](preventive-maintenance-schedule-logic/media/setting-up-ae-for-prev-sched/prev-sched-con4.png)
 
 #### Time-Based Preventive Maintenance
 
