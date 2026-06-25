@@ -8,9 +8,9 @@ The **CompuTec ProcessForce Data Model** provides a set of calculation views tha
 
 The data model includes:
 
-- 40 calculation views in total.
-- 10 views designed as direct data sources for reporting and analytics tools.
-- Additional supporting views used as indirect data sources.
+- 40 calculation views in total
+- 10 views designed as direct data sources for reporting and analytics tools
+- Additional supporting views used as indirect data sources
 
 You can use these views with:
 
@@ -30,17 +30,34 @@ Before installing the data model, make sure the following requirements are met.
 
 To verify this:
 
-1. Open the following URL in a web browser: `https://<ServerAddress>:<Port>/Enablement`
+1. Open the following URL in a web browser: `https://<ServerAddress>:<Port>/Enablement`.
 2. Replace `<ServerAddress>` and `<Port>` with the values used in your environment.
-3. Confirm that analytics initialization has been completed for the required company database.
 
-![Prerequisites 1](./media/prerequisites-installation/prerequisites-1.webp)
+    ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod01.png)
 
-You can find more information on the subject in [Administrator's Guide for SAP Business One 10.0, version for SAP HANA](https://help.sap.com/doc/4e7c047f2c9e4cbe97800ffaf7b68f8e/10.0/en-US/B1_for_SAP_HANA_Admin_Guide.pdf), in the following chapters:
+    :::info[note]
 
-- 7.3 Initializing and Maintaining Company Schemas for Analytical Features
-- 7.3.1 Starting the Administration Console
-- 7.3.2 Initializing and Updating Company Schemas
+    If you don't know your **Server Address**, foolow these steps:
+    - Log in to the **CompuTec AppEngine Administration Panel**.
+    - Go to **Configuration** > **Advanced Configuration**.
+    - The server address is displayed in the **SLD Server Address** field.
+
+        ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-not1.png)
+
+    :::
+
+3. In **SAP Administration Console**, navigate to **Companies**.
+4. Verify that analytics have been initialized for the company database.
+
+    ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod2.png)
+
+    :::note[info]
+    For more information, see the [SAP Business One Administrator's Guide for SAP HANA](https://help.sap.com/doc/4e7c047f2c9e4cbe97800ffaf7b68f8e/10.0/en-US/B1_for_SAP_HANA_Admin_Guide.pdf):
+
+    - 7.3 Initializing and Maintaining Company Schemas for Analytical Features
+    - 7.3.1 Starting the Administration Console
+    - 7.3.2 Initializing and Updating Company Schemas
+    :::
 
 ### Microsoft Excel, Excel Report, and Interactive
 
