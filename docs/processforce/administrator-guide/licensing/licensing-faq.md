@@ -4,4 +4,4 @@ sidebar_position: 5
 
 # Licensing FAQ
 
-Check out the [License section in Troubleshooting](../../troubleshooting/licensing-issues.md) for the most frequently asked questions concerning CompuTec ProcessForce licensing.
+If you experience licensing issues, have questions about license assignment, or need help troubleshooting license-related errors, see the [**Licensing** section in our **Troubleshooting** guide](../../troubleshooting/licensing-issues.md).

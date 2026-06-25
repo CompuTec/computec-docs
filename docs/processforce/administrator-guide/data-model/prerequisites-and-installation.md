@@ -2,17 +2,37 @@
 sidebar_position: 2
 ---
 
-# Prerequisites and Installation
+# Install CompuTec ProcessForce Data Model
 
-This section provides essential prerequisites and installation guidelines for setting up and utilizing the data model effectively. Follow these steps to ensure a seamless configuration and integration with SAP Business One and analytics tools.
+The **CompuTec ProcessForce Data Model** provides a set of calculation views that can be used for reporting, analytics, and business intelligence scenarios.
 
----
+The data model includes:
 
-## Prerequisites
+- 40 calculation views in total.
+- 10 views designed as direct data sources for reporting and analytics tools.
+- Additional supporting views used as indirect data sources.
 
-### Initialize Analytics
+You can use these views with:
 
-To enable analytics for a specific database, ensure that initialization is completed through the administrator console. You can verify this by accessing the following URL: `https://<Server Address>:<Port>/Enablement` (swap `<Server Address>` and `<Port>` for your data). Follow the steps in the screenshot below:
+- Microsoft Excel
+- SAP Analytics Cloud
+- Dashboards and KPIs
+- Custom analytics solutions
+- SQL queries
+
+## Before you start
+
+Before installing the data model, make sure the following requirements are met.
+
+### Step 1: Enable Analytics for the Company Database
+
+**Analytics** must be initialized for the **SAP Business One** company database.
+
+To verify this:
+
+1. Open the following URL in a web browser: `https://<ServerAddress>:<Port>/Enablement`
+2. Replace `<ServerAddress>` and `<Port>` with the values used in your environment.
+3. Confirm that analytics initialization has been completed for the required company database.
 
 ![Prerequisites 1](./media/prerequisites-installation/prerequisites-1.webp)
 
