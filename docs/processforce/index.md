@@ -8,6 +8,10 @@ sidebar_position: 1
 
 This guide introduces the main areas of **CompuTec ProcessForce** and helps you get started after installation.
 
+:::warning[important]
+Currently, you can access **CompuTec ProcessForce 3.0** only from **SAP Business One Desktop Client**. It is not available in **SAP Business One Web Client**.
+:::
+
 ## Before you start
 
 Before you can use **CompuTec ProcessForce 3.0**, you must complete the installation and licensing process.
