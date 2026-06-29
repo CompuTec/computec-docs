@@ -14,13 +14,16 @@ Follow these steps to install the CompuTec ProcessForce plugins properly.
 - It is recommended to install the [CompuTec License Server](./license-server) before proceeding.
 - Restart the SAP Business One client **before installing** the CompuTec ProcessForce Plugin.
 - Disable any custom code in the ``SP_TransactionNotification`` and ``SP_PostTransactionNotice`` stored procedures before installing the plugins. After the installation is completed successfully, you can re-enable your custom code.
+- Before first installation of the CompuTec ProcessForce plugins, consider increasing **ConnectionTimeout** and **CommandTimeout** values. [Read more](http://learn.computec.one/docs/processforce/troubleshooting/general-functions#problem-computec-processforce-plugin-installation-stops-or-the-session-expires-during-the-first-installation)
 
 ## Step 1: Download CompuTec ProcessForce Plugins
+
+To download the CompuTec ProcessForce plugin, follow these steps:
 
 1. Log in to CompuTec AppEngine **Administration Panel**.
 2. Navigate to **Plugins**.
 
-    ![screen of plugins section in appengine plugin store](./media/extension/01-pf-installation-store.png)
+    ![Administration Panel showing left sidebar with a large blue arrow pointing to the Plugins menu; visible sidebar labels include Configuration, Plugins, Background Processing and the header text Administration Panel in the top bar; overall neutral, instructional tone](./media/extension/01-pf-installation-store.png)
 
 3. Go to the **Store** tab.
 

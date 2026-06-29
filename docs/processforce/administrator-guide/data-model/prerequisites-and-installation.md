@@ -59,46 +59,112 @@ To verify this:
     - 7.3.2 Initializing and Updating Company Schemas
     :::
 
-### Microsoft Excel, Excel Report, and Interactive
+### Step 2: Install the Required Microsoft Excel Components
 
-To fully use the features of the data model and to create own reports based on the provided views, it is required to have installed Microsoft Excel and Excel Report and Interactive, which is an addition to Excel Analysis. You can check these application requirements in the Administrator's Guide for SAP Business One 10.0, version for SAP HANA (chapters: 1. Introduction and 3.4 Installing Client Components).
+To create reports based on the calculation views, install:
 
-How to work with the features you can find in the [official SAP Business One How-to Guide](https://help.sap.com/http.svc/rc/d70ddaf3fc8341bbb7ea62d0742bdd88/9.3/en-US/How%20to%20Work%20with%20Excel%20Report%20and%20Interactive%20Analysis.pdf).
+- **Microsoft Excel**
+- **Excel Report and Interactive**
+- **SAP Analysis for Microsoft Office**
 
-**_SYS_BI"."M_TIME_DIMENSION table**
+:::note[info]
+For installation requirements, see the [SAP Business One Administrator's Guide for SAP HANA](https://help.sap.com/doc/4e7c047f2c9e4cbe97800ffaf7b68f8e/10.0/en-US/B1_for_SAP_HANA_Admin_Guide.pdf), Chapters 1. Introduction and 3.4 Installing Client Components.
 
-Some dates were joined with a time dictionary view ("DocumentDate"). This view uses the `_SYS_BI"."M_TIME_DIMENSION` table.
+For information about using these features, see the [SAP Business One How-to Guide](https://help.sap.com/http.svc/rc/d70ddaf3fc8341bbb7ea62d0742bdd88/9.3/en-US/How%20to%20Work%20with%20Excel%20Report%20and%20Interactive%20Analysis.pdf).
+:::
 
-![Prerequisites 2](./media/prerequisites-installation/prerequisites-2.webp)
+### Step 3: Verify the time dimension table
 
-You can check with the following query if the data in this table are initialized:
+Some calculation views use the ``DocumentDate`` time dictionary view, which depends on the ``_SYS_BI."M_TIME_DIMENSION`` **SAP HANA** table.
 
-```sql
-select *
-from _SYS_BI."M_TIME_DIMENSION"
-```
+To verify that the table contains data, follow these steps:
 
-![Prerequisites 3](./media/prerequisites-installation/prerequisites-3.webp)
+1. Open **SAP HANA Studio**.
+2. Expand the **_SYS_BI** schema.
+3. Locate the **M_TIME_DIMENSION** table.
 
-If data is not present there, we can initialize it:
+    ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod3.png)
 
-![Prerequisites 4](./media/prerequisites-installation/prerequisites-4.webp)
+4. Right-click **M_TIME_DIMENSION** and select **Open Content**.
 
-More details can be found [here](https://download.computec.one/media/sap/SAP_HANA_Modeling_for_SAP_Business_One_Time_Dimensions.pdf)
+    ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod4.png)
 
-## Installation
+5. Verify that the table contains records.
+6. To initialize the table:
 
-Once the requirements from the previous section are met, import model.zip, which is available to download [here](../data-model/computec-processforce-data-model-download.md). You can install it from the SAP Business One level, logged in to a required database:
+    - Right-click the **SYSTEM** folder.
+    - Select **SAP HANA Modeler** > **Generate Time Data**.
 
-![Prerequisites 5](./media/prerequisites-installation/prerequisites-5.webp)
+        ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod5.png)
 
-More information on data model import and available options can be found [here](https://download.computec.one/media/sap/How_to_Export_and_Package_SAP_HANA_Models_for_SAP_Business_One.pdf), Chapter 4. Importing and Deploying Model Packages in SAP Business One.
+    - Specify the required date range and granularity.
+    - Click **Finish** to generate the records in the **_SYS_BI.M_TIME_DIMENSION** table.
 
-After a successful installation, the views are available from the SAP main menu level:
+        ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod6.png)
 
-![Prerequisites 6](./media/prerequisites-installation/prerequisites-6.webp)
+7. Alternatively, you can verify whether the table contains data by running the following SQL query:
 
-From the Excel level:
+    ```sql
+    SELECT * FROM _SYS_BI."M_TIME_DIMENSION"
+    ```
+
+8. If no records are returned, initialize the table before installing the data model.
+
+:::note[info]
+
+For detailed instructions on generating and maintaining the M_TIME_DIMENSION table, see the [SAP HANA Modeling for SAP Business One – Time Dimensions guide](https://download.computec.one/media/sap/SAP_HANA_Modeling_for_SAP_Business_One_Time_Dimensions.pdf).
+
+:::
+
+## Install the Data Model
+
+To install the **CompuTec ProcessForce Data Model**, follow these steps:
+
+1. Download the [**CompuTec ProcessForce Data Model installation file**](../data-model/computec-processforce-data-model-download.md).
+2. Log in to **SAP Business One**.
+3. Go to **Administration** > **Setup** > **General** > **SAP HANA Model Management**.
+
+    ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst1.png)
+
+4. Click **Import**.
+
+    ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst2.png)
+
+5. Select the downloaded **model.zip** package.
+
+    ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst3.png)
+
+6. Seletct the imported data model, and click **Deploy**.
+
+    ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst4.png)
+
+    :::note[info]
+    For more information about importing model packages and available deployment options, see [Chapter 4 – Importing and Deploying Model Packages in SAP Business One](https://download.computec.one/media/sap/How_to_Export_and_Package_SAP_HANA_Models_for_SAP_Business_One.pdf).
+    :::
+
+7. Done! After the deployment is complete, you can access the calculation views from the SAP Business One menu.
+
+## Results
+
+### Access the calculation views from SAP Business One
+
+To access the calculation views from the **SAP Business One** menu, follow these steps:
+
+1. In **SAP Business One**, go to **Modules**.
+2. Click **Excel Report and Interactive Analysis**.
+3. Verify that the imported **CompuTec ProcessForce calculation views** are available.
+
+    ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst5.png)
+
+### Access the calculation views from Microsoft Excel
+
+To use the calculation views in **Microsoft Excel**, follow these steps:
+
+1. Open **Microsoft Excel**.
+2. Select the **Interactive Analysis Designer** tab.
+3. Click **New Pivot Table**.
+4. Select one of the **CompuTec ProcessForce calculation views**.
+5. Click **OK**.
 
 ![Prerequisites 7](./media/prerequisites-installation/prerequisites-7.webp)
 

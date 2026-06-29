@@ -5,6 +5,38 @@ toc_max_heading_level: 2
 
 # General Functions
 
+## Problem: CompuTec ProcessForce plugin installation stops or the session expires during the first installation
+
+The first installation of the CompuTec ProcessForce plugin may take considerably longer than subsequent updates because the company database is initialized and all required objects are created.
+
+If the installation exceeds the configured timeout values, the CompuTec AppEngine Administration Panel session may expire before the installation is complete.
+
+### Solution
+
+Increase the timeout values before starting the installation.
+
+Here's how to do it:
+
+1. Log in to the **CompuTec AppEngine Administration Panel**.
+2. Open the company where you want to install CompuTec ProcessForce.
+3. Click **Settings**.
+
+    ![alt text](media/general-functions/timeout1.png)
+
+4. Increase the following values:
+    - **ConnectionTimeout**
+    - **CommandTimeout**
+5. Set both values to:
+    - ``1200`` seconds (20 minutes) for most environments, or
+    - ``3600`` seconds (1 hour) for large company databases.
+
+    ![alt text](media/general-functions/timeout2.png)
+
+6. Save the changes.
+7. Start the plugin installation again.
+
+The default value for both settings is ``200`` seconds, which may not be sufficient for the initial installation. After the installation is complete, you can reduce the timeout values if required.
+
 ## Problem with document series
 
 ```text
