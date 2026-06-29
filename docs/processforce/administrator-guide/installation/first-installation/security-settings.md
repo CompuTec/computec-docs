@@ -8,8 +8,6 @@ In environments with custom **Windows** security policies, users may need additi
 
 This guide explains how to verify and configure the required folder permissions.
 
-## When is this required?
-
 You may need to configure these permissions if:
 
 - Your organization uses custom security policies.
@@ -67,7 +65,7 @@ To configure the required permissions:
 | `C:\ProgramData\CompuTec` | All  Users | Read, List folder, Read & execute |
 | Subfolders of `CompuTec` | Add-ons, Temp files, etc. | Inherited from parent folder |
 
-## Why are these permissions required?
+## Results
 
 **CompuTec ProcessForce** stores configuration files, temporary files, and runtime data in the ``ProgramData`` directory.
 

@@ -61,7 +61,7 @@ CompuTec AppEngine needs **.NET Runtime Applications** as it relies on the **.NE
 </details>
 
 :::note[info]
-CompuTec AppEngine **does not require** the SAP Business One desktop client to be installed on user machines.
+CompuTec AppEngine **does not require** the **SAP Business One Desktop Client** to be installed on user machines.
 :::
 
 ## Working with SAP Business One, version for SAP HANA

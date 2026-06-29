@@ -29,6 +29,13 @@ Before installing CompuTec AppEngine, make sure the following prerequisites are 
 - **SAP server readiness**: Your SAP server is properly configured and running. For detailed configuration steps, refer to the **SAP Server Configuration Guides** for either [SAP HANA](https://help.sap.com/docs/SAP_BUSINESS_ONE_ADMIN_GUIDE_HANA/1a2fc202f7f64336abf9fbc957d9b9ba/6c8b59c7f2a44aa2b474e58b9732e0d4.html) or [Microsoft SQL Server](https://help.sap.com/docs/SAP_BUSINESS_ONE_ADMIN_GUIDE_SQL/f6fb230cc90949d8b66586a39189992b/c0038069e54b46368b9e73c7218834da.html).
 - **Operator credentials in SLD**: You've created and configured operator credentials in **System Landscape Directory (SLD)**. Keep the operator password handy – you’ll need it when adding your company during the CompuTec AppEngine configuration. If you are using Cloud Control Center (CCC) for SAP Business One, see the related [instructions for creating operator credentials in CCC](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/operator-setup-and-iam-server-assignment-in-cloud-control-center).
 - **Installation file**: You have downloaded the **CompuTec AppEngine installation file** from the [**Download**](https://learn.computec.one/docs/appengine/releases/appengine/download) section of our documentation.
+- Make sure to disable **Enable Query Validation** for both the **UI API** and **DI API** in **SAP Business One** > **Administration** > **System Initialization** > **General Settings** > **Services**.
+
+    ![SAP Business One General Settings Services tab showing UI API Configuration and DI API Configuration sections. On the left, under UI API Configuration, checkboxes read: Enable Default Connection String, Enable Path Validation, Enable Query Validation, Enable XML Filtered with the Enable Default Connection String checked. On the right, under DI API Configuration, a single checkbox reads Enable Query Validation which is unchecked. The surrounding interface shows the Administration panel sidebar with General Settings selected and other system initialization options visible. The tone is instructional and neutral.](media/installation/pf-inst-plug5.png)
+
+    :::info[note]
+    **CompuTec AppEngine** plugins do not currently support the **Enable Query Validation** option. If either setting is enabled, you may see an error durings the **CompuTec AppEgnine** installation.
+    :::
 
 :::note[Video (optional)]
 ▶︎ **Watch**: [CompuTec AppEngine – Prerequisites and Installation video](https://www.youtube.com/watch?v=bUEkcdizCLY&list=PLtT6kgaz5YneoXw5aRFA-SxXwzzB-u4vl&index=3)  
