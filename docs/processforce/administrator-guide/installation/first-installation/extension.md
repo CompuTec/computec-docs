@@ -33,6 +33,14 @@ Before installing the plugins, make sure that:
 
         ![SAP Business One Administration window showing the General Settings page with the Hide Functions tab open. Checkboxes for Serial Numbers and Batches, Production, and Units of Measure are displayed and should remain unchecked for ProcessForce installation.](media/extension/pf-inst-plug1.png)
 
+- In **SAP Business One** > **Administration** > **System Initialization** > **General Settings** > **Services**, disable **Enable Query Validation** for both the **UI API** and **DI API**.
+
+    ![SAP Business One General Settings Services tab showing UI API Configuration and DI API Configuration sections. On the left, under UI API Configuration, checkboxes read: Enable Default Connection String, Enable Path Validation, Enable Query Validation, Enable XML Filtered with the Enable Default Connection String checked. On the right, under DI API Configuration, a single checkbox reads Enable Query Validation which is unchecked. The surrounding interface shows the Administration panel sidebar with General Settings selected and other system initialization options visible. The tone is instructional and neutral.](media/extension/pf-inst-plug5.png)
+
+    :::info[note]
+    **CompuTec ProcessForce** does not currently support the **Enable Query Validation** option. If either setting is enabled, some **CompuTec ProcessForce** features may not work correctly.
+    :::
+
 - You restart the **SAP Business One** client before beginning the installation.
 
 ## Step 1: Install the plugins
