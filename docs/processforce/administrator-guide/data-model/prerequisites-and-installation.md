@@ -33,7 +33,7 @@ To verify this:
 1. Open the following URL in a web browser: `https://<ServerAddress>:<Port>/Enablement`.
 2. Replace `<ServerAddress>` and `<Port>` with the values used in your environment.
 
-    ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod01.png)
+    ![SAP Business One Analytics Enablement web page in browser showing server address and port fields](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod01.png)
 
     :::info[note]
 
@@ -42,14 +42,14 @@ To verify this:
     - Go to **Configuration** > **Advanced Configuration**.
     - The server address is displayed in the **SLD Server Address** field.
 
-        ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-not1.png)
+        ![CompuTec AppEngine Administration Panel advanced configuration page showing SLD Server Address field](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-not1.png)
 
     :::
 
 3. In **SAP Administration Console**, navigate to **Companies**.
 4. Verify that analytics have been initialized for the company database.
 
-    ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod2.png)
+    ![SAP Administration Console Companies list showing analytics status for the company database](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod2.png)
 
     :::note[info]
     For more information, see the [SAP Business One Administrator's Guide for SAP HANA](https://help.sap.com/doc/4e7c047f2c9e4cbe97800ffaf7b68f8e/10.0/en-US/B1_for_SAP_HANA_Admin_Guide.pdf):
@@ -83,11 +83,11 @@ To verify that the table contains data, follow these steps:
 2. Expand the **_SYS_BI** schema.
 3. Locate the **M_TIME_DIMENSION** table.
 
-    ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod3.png)
+    ![SAP HANA Studio navigator pane displaying expanded _SYS_BI schema and M_TIME_DIMENSION table](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod3.png)
 
 4. Right-click **M_TIME_DIMENSION** and select **Open Content**.
 
-    ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod4.png)
+    ![SAP HANA Studio context menu on M_TIME_DIMENSION table with Open Content option selected](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod4.png)
 
 5. Verify that the table contains records.
 6. To initialize the table:
@@ -95,12 +95,12 @@ To verify that the table contains data, follow these steps:
     - Right-click the **SYSTEM** folder.
     - Select **SAP HANA Modeler** > **Generate Time Data**.
 
-        ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod5.png)
+        ![SAP HANA Modeler Generate Time Data wizard shown after right clicking SYSTEM folder](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod5.png)
 
     - Specify the required date range and granularity.
     - Click **Finish** to generate the records in the **_SYS_BI.M_TIME_DIMENSION** table.
 
-        ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod6.png)
+        ![Generate Time Data wizard page with date range and granularity settings ready to finish creating M_TIME_DIMENSION records](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod6.png)
 
 7. Alternatively, you can verify whether the table contains data by running the following SQL query:
 
@@ -124,19 +124,19 @@ To install the **CompuTec ProcessForce Data Model**, follow these steps:
 2. Log in to **SAP Business One**.
 3. Go to **Administration** > **Setup** > **General** > **SAP HANA Model Management**.
 
-    ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst1.png)
+    ![SAP Business One Administration menu showing SAP HANA Model Management option](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst1.png)
 
 4. Click **Import**.
 
-    ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst2.png)
+    ![SAP HANA Model Management window in SAP Business One with Import button highlighted](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst2.png)
 
 5. Select the downloaded **model.zip** package.
 
-    ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst3.png)
+    ![File selection dialog in SAP Business One for choosing downloaded model.zip package](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst3.png)
 
 6. Seletct the imported data model, and click **Deploy**.
 
-    ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst4.png)
+    ![SAP HANA Model Management page displaying imported CompuTec ProcessForce data model with Deploy action](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst4.png)
 
     :::note[info]
     For more information about importing model packages and available deployment options, see [Chapter 4 – Importing and Deploying Model Packages in SAP Business One](https://download.computec.one/media/sap/How_to_Export_and_Package_SAP_HANA_Models_for_SAP_Business_One.pdf).
@@ -154,22 +154,37 @@ To access the calculation views from the **SAP Business One** menu, follow these
 2. Click **Excel Report and Interactive Analysis**.
 3. Verify that the imported **CompuTec ProcessForce calculation views** are available.
 
-    ![alt text](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst5.png)
+    ![SAP Business One Modules menu showing Excel Report and Interactive Analysis option and imported CompuTec ProcessForce calculation views](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst5.png)
 
 ### Access the calculation views from Microsoft Excel
 
 To use the calculation views in **Microsoft Excel**, follow these steps:
 
 1. Open **Microsoft Excel**.
-2. Select the **Interactive Analysis Designer** tab.
-3. Click **New Pivot Table**.
-4. Select one of the **CompuTec ProcessForce calculation views**.
-5. Click **OK**.
+2. Navigate to **Tools**.
 
-![Prerequisites 7](./media/prerequisites-installation/prerequisites-7.webp)
+    ![Microsoft Excel window with Tools menu open and Excel Report and Interactive Analysis Designer tab option visible](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst6.png)
 
-![Prerequisites 8](./media/prerequisites-installation/prerequisites-8.webp)
+3. Select the **Excel Report and Interactive Analysis Designer** tab.
 
-![Prerequisites 9](./media/prerequisites-installation/prerequisites-9.webp)
+    ![Microsoft Excel Interactive Analysis ribbon tab showing Excel Report and Interactive Analysis Designer controls](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst7.png)
 
----
+4. Navigate to **Interactive Analysis**.
+
+    ![Microsoft Excel ribbon showing Interactive Analysis option under the Excel Report and Interactive Analysis tab](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst8.png)
+
+5. Click **New Pivot Table**.
+
+    ![Excel Report and Interactive Analysis ribbon showing New Pivot Table button on the Interactive Analysis tab](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst9.png)
+
+6. Select one of the **CompuTec ProcessForce calculation views**.
+
+    ![Interactive Analysis dialog in Excel listing CompuTec ProcessForce calculation views for selection](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst11.png)
+
+7. Click **OK**.
+
+    ![Interactive Analysis dialog with OK button selected to confirm the chosen calculation view](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst12.png)
+
+8. Done! Now you can see your calculation view.
+
+    ![Microsoft Excel worksheet displaying the selected CompuTec ProcessForce calculation view results](media/prerequisites-installation/install-ct-pf-dm/pf-dat-mod-inst13.png)
