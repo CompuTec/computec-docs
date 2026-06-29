@@ -47,7 +47,7 @@ In an attempt to open Manufacturing Order, some users get an error communication
 
 ### Solution {#solution-1}
 
-Permission for the numbering series groups is not assigned to the specific user. Check if authorization for the numbering series group is set for a particular user. Click [here](../user-guide/system-initialization/authorizations.md) to find out more.
+Permission for the numbering series groups is not assigned to the specific user. Check if authorization for the numbering series group is set for a particular user. Click [this link](../user-guide/system-initialization/authorizations.md) to find out more.
 
 ## Form - Invalid Form
 
@@ -133,7 +133,7 @@ Not all Times for a given Resource have Accounts assigned in Resources Accountin
 
 ### Solution {#solution-4}
 
-Assign an Account to each of the Times on Resource Accounting. Click [here](../user-guide/costing-material-and-resources/resource-costing.md#resource-accounting) to find out more.
+Assign an Account to each of the Times on Resource Accounting. Click [this link](../user-guide/costing-material-and-resources/resource-costing.md#resource-accounting) to find out more.
 
 ## Gantt chart does not open
 
