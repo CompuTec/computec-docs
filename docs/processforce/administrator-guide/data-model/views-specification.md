@@ -4,21 +4,21 @@ sidebar_position: 3
 
 # Views Specification
 
-The model contains 17 calculation views, 8 of which are views that can be a direct source for analytics tools (like Dashboards, KPIs, or Microsoft Excel). The rest of the views are of the indirect type. Here you can find the list of all the views and a detailed description of the query views. A specific view can be also used in a standard SQL query.
+The data model includes 17 calculation views. Of these, 8 query views can be used directly as data sources for analytics tools such as Dashboards, KPIs, and Microsoft Excel. The remaining views are supporting (indirect) views used internally by the model.
 
----
+This section provides an overview of all calculation views, followed by detailed descriptions of the query views. All views can also be accessed through standard SQL queries if needed.
 
 ## The Views List
 
 |Name|Description|Type|Data category|
 |:----|:----|:----|:----|
-|ActualMaterialCostOnMorFact|Actual Issues and Receipts for a Manufacturing Order|Reuse Views| |
+|ActualMaterialCostOnMorFact|Actual Issues and Receipts for a Manufacturing Order|Reuse Views||
 |[ActualMaterialCostOnMorQuery](#actualmaterialcostonmorquery)|Actual Issues and Receipt for a Manufacturing Order – a Query available for analytics tools|Query Views|cube|
-|ActualResourceCostOnMorFact|Actual work time records for Resources|Reuse Views| |
-|[ActualResourceCostOnMorQuery](#actualmaterialcostonmorquery|Actual work time records for Resources – a Query available for analytics tools|Query Views|cube|
+|ActualResourceCostOnMorFact|Actual work time records for Resources|Reuse Views||
+|[ActualResourceCostOnMorQuery](#actualmaterialcostonmorquery)|Actual work time records for Resources – a Query available for analytics tools|Query Views|cube|
 |DocumentDate|Time table – a copy from SAP Business One model|Reuse Views|dimension|
 |EmpEndDate|Time table – a copy from SAP Business One model|Reuse Views|dimension|
-|EmpFact|Time and registered quantity for an Employee assign to a Resource on a Manufacturing Order (in cases of many log ins, start data is a date of the first log in and end date is a date of the last log in)|Reuse Views| |
+|EmpFact|Time and registered quantity for an Employee assign to a Resource on a Manufacturing Order (in cases of many log ins, start data is a date of the first log in and end date is a date of the last log in)|Reuse Views||
 |Employee|Employee dictionary|Reuse Views|dimension|
 |[EmpQuery](#empquery)|Time and registered quantity for an Employee assign to a Resource on a Manufacturing Order (in cases of many log ins, start data is a date of the first log in and end date is a date of the last log in) – a Query available for analytics tools|Query Views|cube|
 |EmpStartDate|Time table - a copy from SAP Business One model|Reuse Views|dimension|
@@ -26,12 +26,12 @@ The model contains 17 calculation views, 8 of which are views that can be a dire
 |MorItem|Item dictionary for Manufacturing Order|Reuse Views|dimension|
 |MorItemAndResource|Item and Resource's dictionary for Manufacturing Order|Reuse Views|dimension|
 |MorResource|Resource dictionary for Manufacturing Order|Reuse Views|dimension|
-|MorResourceOverviewFact|Key Performance Indicators describing Recourse for Manufacturing Order|Reuse Views| |
+|MorResourceOverviewFact|Key Performance Indicators describing Recourse for Manufacturing Order|Reuse Views||
 |[MorResourceOverviewQuery](#morresourceoverviewquery)|Key Performance Indicators describing Recourse for Manufacturing Order – a Query, available for analytics tools|Query Views|cube|
 |Operation|Operation dictionary|Reuse Views|dimension|
-|PlannedMaterialCostOnMorFact|Planned Issues and Receipts for Manufacturing Order|Reuse Views| |
+|PlannedMaterialCostOnMorFact|Planned Issues and Receipts for Manufacturing Order|Reuse Views||
 |[PlannedMaterialCostOnMorQuery](#plannedmaterialcostonmorquery)|Planned Issues and Receipts for Manufacturing Order – a Query, available for analytics tools|Query Views|cube|
-|PlannedResourceCostOnMorFact|Planned work time for Resources on Manufacturing Order|Reuse Views| |
+|PlannedResourceCostOnMorFact|Planned work time for Resources on Manufacturing Order|Reuse Views||
 |[PlannedResourceCostOnMorQuery](#plannedresourcecostonmorquery)|Planned work time for Resources on Manufacturing Order – a Query, available for analytics tools|Query Views|cube|
 |[PlannedVsActualCostOnMorQuery](#plannedvsactualcostonmorquery)|Planned vs. actual work time costs for Resources and Issues and Receipts for Manufacturing Order – a Query, available for analytics tools|Query Views|cube|
 |[PlannedVsActualMaterialCostOnMorQuery](#plannedvsactualmaterialcostonmorquery)|Planned vs. actual Issues and Receipts for Manufacturing Order – a Query, available for analytics tools|Query Views|cube|
@@ -53,23 +53,21 @@ The model contains 17 calculation views, 8 of which are views that can be a dire
 |Resource|Resource dictionary|Reuse Views|dimension|
 |Warehouse|Warehouse dictionary|Reuse Views|dimension|
 
----
-
 ## Measures and Dimensions for Query Views
 
 ### ActualMaterialCostOnMorQuery
 
 |COLUMN_NAME|Description|COLUMN_CAPTION|DIMENSION_TYPE|SHARED|
 |:----|:----|:----|:----|:----|
-|OINMItemCode|Issue or Receipt Item Code|Item Code|Attribute| |
-|OINMTransType|Transaction type (Issue/Receipt)|Trans Type|Attribute| |
-|Quantity|Issue/Receipt Quantity|Quantity|Measure| |
-|TotalValue|Issue/Receipt Value|Total Value|Measure| |
-|IGE_IGNU_Revision|Revision|Revision|Attribute| |
-|OINMBASE_REF|Document Number|Document Number|Attribute| |
-|OINMCreatedBy|Document Entry|Document Entry|Attribute| |
-|OINMDocLineNum|Document Line|Document Line|Attribute| |
-|OINMWarehouse|Warehouse|Warehouse|Attribute| |
+|OINMItemCode|Issue or Receipt Item Code|Item Code|Attribute||
+|OINMTransType|Transaction type (Issue/Receipt)|Trans Type|Attribute||
+|Quantity|Issue/Receipt Quantity|Quantity|Measure||
+|TotalValue|Issue/Receipt Value|Total Value|Measure||
+|IGE_IGNU_Revision|Revision|Revision|Attribute||
+|OINMBASE_REF|Document Number|Document Number|Attribute||
+|OINMCreatedBy|Document Entry|Document Entry|Attribute||
+|OINMDocLineNum|Document Line|Document Line|Attribute||
+|OINMWarehouse|Warehouse|Warehouse|Attribute||
 |DocumentDate|Issue/Receipt date – Issue/Receipt date – date|Document Date|Attribute|DocumentDate|
 |DocumentMonth|Issue/Receipt date – month|Document Month|Attribute|DocumentDate|
 |DocumentQuarter|Issue/Receipt date – quarter|Document Quarter|Attribute|DocumentDate|
@@ -137,15 +135,15 @@ The model contains 17 calculation views, 8 of which are views that can be a dire
 
 |COLUMN_NAME|Description|COLUMN_CAPTION|DIMENSION_TYPE|SHARED|
 |:----|:----|:----|:----|:----|
-|TBFixedCost|Actual Cost Sum for Resource – Fixed Cost|Fixed Value|Measure| |
-|TBTimeCost|Actual Cost Sum for Resource - Time Cost|Time Value|Measure| |
-|TBVariableCost|Actual Cost Sum for Resource - Variable Value|Variable Value|Measure| |
-|TBWorkingHours|Actual Time Sum for Resource|Quantity|Measure| |
-|TotalValue|Actual Cost Sum for Resource - Total Time|Total Value|Measure| |
-|TBDocEntry|Document Entry|Document Entry|Attribute| |
-|TBDocNum|Document Number|Document Number|Attribute| |
-|TBLineNum|Document Line|Document Line|Attribute| |
-|TBObject|Document Type|Document Type|Attribute| |
+|TBFixedCost|Actual Cost Sum for Resource – Fixed Cost|Fixed Value|Measure||
+|TBTimeCost|Actual Cost Sum for Resource - Time Cost|Time Value|Measure||
+|TBVariableCost|Actual Cost Sum for Resource - Variable Value|Variable Value|Measure||
+|TBWorkingHours|Actual Time Sum for Resource|Quantity|Measure||
+|TotalValue|Actual Cost Sum for Resource - Total Time|Total Value|Measure||
+|TBDocEntry|Document Entry|Document Entry|Attribute||
+|TBDocNum|Document Number|Document Number|Attribute||
+|TBLineNum|Document Line|Document Line|Attribute||
+|TBObject|Document Type|Document Type|Attribute||
 |DocumentDate|Time booking date – date|Document Date|Attribute|DocumentDate|
 |DocumentMonth|Time booking date – month|Document Month|Attribute|DocumentDate|
 |DocumentQuarter|Time booking date – quarter|Document Quarter|Attribute|DocumentDate|
@@ -193,12 +191,12 @@ The model contains 17 calculation views, 8 of which are views that can be a dire
 
 |COLUMN_NAME|Description|COLUMN_CAPTION|DIMENSION_TYPE|SHARED|
 |:----|:----|:----|:----|:----|
-|ActualTempo|Actual Tempo [Uom/h]|Actual Tempo [Uom/h]|Measure| |
-|ActualTimeH|Actual Time [H]|Actual Time [H]|Measure| |
-|QtyRW|Rework Qty|Rework Qty|Measure| |
-|QtySC|Scrap Qty|Scrap Qty|Measure| |
-|Time|Actual Time [sec]|Actual Time [sec]|Measure| |
-|U_Quantity|Actual Qty|Actual Qty|Measure| |
+|ActualTempo|Actual Tempo [Uom/h]|Actual Tempo [Uom/h]|Measure||
+|ActualTimeH|Actual Time [H]|Actual Time [H]|Measure||
+|QtyRW|Rework Qty|Rework Qty|Measure||
+|QtySC|Scrap Qty|Scrap Qty|Measure||
+|Time|Actual Time [sec]|Actual Time [sec]|Measure||
+|U_Quantity|Actual Qty|Actual Qty|Measure||
 |EmpEndDate|Emp End Date|Emp End Date|Attribute|EmpEndDate|
 |EmpEndDay|Emp End Day|Emp End Day|Attribute|EmpEndDate|
 |EmpEndDayINT|Emp End Day INT|Emp End Day INT|Attribute|EmpEndDate|
@@ -272,34 +270,34 @@ The model contains 17 calculation views, 8 of which are views that can be a dire
 
 |COLUMN_NAME|Description|COLUMN_CAPTION|DIMENSION_TYPE|SHARED|
 |:----|:----|:----|:----|:----|
-|PlannedEndDateTime|Planned finish date/time for Resource|Planned End Date Time|Attribute| |
-|PlannedStartDateTime|Planned start date/time for Resource|Planned Start Date Time|Attribute| |
-|PlannedTimeHHMMSS|Planned work time for Resource in HHMMSS format|Planned Time HHMMSS|Attribute| |
-|ActualTempo|U_Quantity"/"ActualTime"*3600|Actual Tempo [Uom/h]|Measure| |
-|ActualTime|Time Sum from Time Bookings / CompuTec PDC in seconds|Actual Time [sec]|Measure| |
-|ActualTimeH|"ActualTime"/3600|Actual Time [H]|Measure| |
-|ActualVsPlannedTimePERC|"ActualTime"/"PlannedTime|Actual Vs Planned Time [perc]|Measure| |
-|DelayEnd|seconds_between("PlannedStartDateTime","ActualStartDateTime")|Delay End [sec]|Measure| |
-|DelayStart|seconds_between("PlannedEndDateTime","ActualEndDateTime")|Delay Start [sec]|Measure| |
-|PlannedQty|Planned Quantity for Resource|Planned Qty|Measure| |
-|PlannedTempo|PlannedQty"/"PlannedTime"*3600|Planned Tempo [Uom/h]|Measure| |
-|PlannedTime|Planned work time for Resource in seconds|Planned Time [sec]|Measure| |
-|QtyRW|Registered Rework Quantity|Rework Qty|Measure| |
-|QtySC|Registered Scrap Quantity|Scrap Qty|Measure| |
-|ShouldBeQty|"ActualTimeH"*"PlannedTempo|Should be Qty|Measure| |
-|U_Quantity|Actual registered Quantity for Resource|Actual Qty|Measure| |
-|ActualEndDate|Actual End Date|Actual End Date|Attribute| |
-|ActualStartDate|Actual Start Date|Actual Start Date|Attribute| |
-|ActualFixedCostValue|Actual Fixed Cost Value|Actual Fixed Cost Value|Measure| |
-|ActualTimeCostValue|Actual Time Cost Value|Actual Time Cost Value|Measure| |
-|ActualTotalCostValue|Actual Total Cost Value|Actual Total Cost Value|Measure| |
-|ActualVariableCostValue|Actual Variable Cost Value|Actual Variable Cost Value|Measure| |
-|ActualVsPlannedTotalCostValueDIFF|Actual Vs Planned Total Cost Value [diff]|Actual Vs Planned Total Cost Value [diff]|Measure| |
-|ActualVsPlannedTotalCostValuePERC|Actual Vs Planned Total Cost Value [perc]|Actual Vs Planned Total Cost Value [perc]|Measure| |
-|PlannedFixedCostValue|Planned Fixed Cost Value|Planned Fixed Cost Value|Measure| |
-|PlannedTimeCostValue|Planned Time Cost Value|Planned Time Cost Value|Measure| |
-|PlannedTotalCostValue|Planned Total Cost Value|Planned Total Cost Value|Measure| |
-|PlannedVariableCostValue|Planned Variable Cost Value|Planned Variable Cost Value|Measure| |
+|PlannedEndDateTime|Planned finish date/time for Resource|Planned End Date Time|Attribute||
+|PlannedStartDateTime|Planned start date/time for Resource|Planned Start Date Time|Attribute||
+|PlannedTimeHHMMSS|Planned work time for Resource in HHMMSS format|Planned Time HHMMSS|Attribute||
+|ActualTempo|U_Quantity"/"ActualTime"*3600|Actual Tempo [Uom/h]|Measure||
+|ActualTime|Time Sum from Time Bookings / CompuTec PDC in seconds|Actual Time [sec]|Measure||
+|ActualTimeH|"ActualTime"/3600|Actual Time [H]|Measure||
+|ActualVsPlannedTimePERC|"ActualTime"/"PlannedTime|Actual Vs Planned Time [perc]|Measure||
+|DelayEnd|seconds_between("PlannedStartDateTime","ActualStartDateTime")|Delay End [sec]|Measure||
+|DelayStart|seconds_between("PlannedEndDateTime","ActualEndDateTime")|Delay Start [sec]|Measure||
+|PlannedQty|Planned Quantity for Resource|Planned Qty|Measure||
+|PlannedTempo|PlannedQty"/"PlannedTime"*3600|Planned Tempo [Uom/h]|Measure||
+|PlannedTime|Planned work time for Resource in seconds|Planned Time [sec]|Measure||
+|QtyRW|Registered Rework Quantity|Rework Qty|Measure||
+|QtySC|Registered Scrap Quantity|Scrap Qty|Measure||
+|ShouldBeQty|"ActualTimeH"*"PlannedTempo|Should be Qty|Measure||
+|U_Quantity|Actual registered Quantity for Resource|Actual Qty|Measure||
+|ActualEndDate|Actual End Date|Actual End Date|Attribute||
+|ActualStartDate|Actual Start Date|Actual Start Date|Attribute||
+|ActualFixedCostValue|Actual Fixed Cost Value|Actual Fixed Cost Value|Measure||
+|ActualTimeCostValue|Actual Time Cost Value|Actual Time Cost Value|Measure||
+|ActualTotalCostValue|Actual Total Cost Value|Actual Total Cost Value|Measure||
+|ActualVariableCostValue|Actual Variable Cost Value|Actual Variable Cost Value|Measure||
+|ActualVsPlannedTotalCostValueDIFF|Actual Vs Planned Total Cost Value [diff]|Actual Vs Planned Total Cost Value [diff]|Measure||
+|ActualVsPlannedTotalCostValuePERC|Actual Vs Planned Total Cost Value [perc]|Actual Vs Planned Total Cost Value [perc]|Measure||
+|PlannedFixedCostValue|Planned Fixed Cost Value|Planned Fixed Cost Value|Measure||
+|PlannedTimeCostValue|Planned Time Cost Value|Planned Time Cost Value|Measure||
+|PlannedTotalCostValue|Planned Total Cost Value|Planned Total Cost Value|Measure||
+|PlannedVariableCostValue|Planned Variable Cost Value|Planned Variable Cost Value|Measure||
 |InternalKey|Internal Key|InternalKey|Attribute|MorResource|
 |MOR12U_OprCode|Operation Code for Manufacturing Order|Operation Code|Attribute|MorResource|
 |MOR12U_Status|Operation Status Code for Manufacturing Order|Operation Status|Attribute|MorResource|
@@ -342,14 +340,14 @@ The model contains 17 calculation views, 8 of which are views that can be a dire
 
 |COLUMN_NAME|Description|COLUMN_CAPTION|DIMENSION_TYPE|SHARED|
 |:----|:----|:----|:----|:----|
-|FixedValue|Planned Issue/Receipt value – Fixed Cost|Fixed Value|Measure| |
-|ItemValue|Planned Issue/Receipt value – Material Cost|Item Value|Measure| |
-|Quantity|Planned Issue/Receipt Quantity|Quantity|Measure| |
-|TotalValue|Planned Issue/Receipt value – Total Time|Total Value|Measure| |
-|VariableValue|Planned Issue/Receipt value – Variable Value|Variable Value|Measure| |
-|MORXU_ItemCode_1|Item Code|Item Code|Attribute| |
-|MORXU_Revision_1|Revision|Revision|Attribute| |
-|MORXU_WhsCode|Warehouse|Warehouse|Attribute| |
+|FixedValue|Planned Issue/Receipt value – Fixed Cost|Fixed Value|Measure||
+|ItemValue|Planned Issue/Receipt value – Material Cost|Item Value|Measure||
+|Quantity|Planned Issue/Receipt Quantity|Quantity|Measure||
+|TotalValue|Planned Issue/Receipt value – Total Time|Total Value|Measure||
+|VariableValue|Planned Issue/Receipt value – Variable Value|Variable Value|Measure||
+|MORXU_ItemCode_1|Item Code|Item Code|Attribute||
+|MORXU_Revision_1|Revision|Revision|Attribute||
+|MORXU_WhsCode|Warehouse|Warehouse|Attribute||
 |InternalKeyRevision|InternalKeyRevision|InternalKeyRevision|Attribute|ItemDetailsRevisions|
 |U_Code|Revision Code|Revision Code|Attribute|ItemDetailsRevisions|
 |U_Default|Default|Default|Attribute|ItemDetailsRevisions|
@@ -406,17 +404,17 @@ The model contains 17 calculation views, 8 of which are views that can be a dire
 |WarehouseIsActive|Is Active Warehouse|Is Active Warehouse|Attribute|Warehouse|
 |WarehouseLocation|Warehouse Location|Warehouse Location|Attribute|Warehouse|
 |WarehouseName|Warehouse Name|Warehouse Name|Attribute|Warehouse|
-|WarehouseNameAndCode|Warehouse Name & Code|Warehouse Name & Code|Attribute| |
+|WarehouseNameAndCode|Warehouse Name & Code|Warehouse Name & Code|Attribute||
 
 ### PlannedResourceCostOnMorQuery
 
 |COLUMN_NAME|Description|COLUMN_CAPTION|DIMENSION_TYPE|SHARED|
 |:----|:----|:----|:----|:----|
-|FixedValue|Planned Cost Sum for Resource – Fixed Cost|Fixed Value|Measure| |
-|Quantity|Planned Time Sum for Resource|Quantity|Measure| |
-|TimeValue|Planned Cost Sum for Resource – Fixed Cost|Time Value|Measure| |
-|TotalValue|Planned Cost Sum for Resource – Total Value|Total Value|Measure| |
-|VariableValue|Planned Cost Sum for Resource – Variable Cost|Variable Value|Measure| |
+|FixedValue|Planned Cost Sum for Resource – Fixed Cost|Fixed Value|Measure||
+|Quantity|Planned Time Sum for Resource|Quantity|Measure||
+|TimeValue|Planned Cost Sum for Resource – Fixed Cost|Time Value|Measure||
+|TotalValue|Planned Cost Sum for Resource – Total Value|Total Value|Measure||
+|VariableValue|Planned Cost Sum for Resource – Variable Cost|Variable Value|Measure||
 |InternalKey|Internal Key|InternalKey|Attribute|MorResource|
 |MOR12U_OprCode|Operation Code for Manufacturing Order|Operation Code|Attribute|MorResource|
 |MOR12U_Status|Operation Status Code for Manufacturing Order|Operation Status|Attribute|MorResource|
@@ -459,29 +457,29 @@ The model contains 17 calculation views, 8 of which are views that can be a dire
 
 |COLUMN_NAME|Description|COLUMN_CAPTION|DIMENSION_TYPE|SHARED|
 |:----|:----|:----|:----|:----|
-|ActualCost|Actual Cost Sum for Resource/Material - Cost of Time/Material|Actual Cost|Measure| |
-|ActualFixedCost|Actual Cost Sum for Resource/Material - Fixed Cost|Actual Fixed Cost|Measure| |
-|ActualQuantity|Actual Time Sum for Resource / Quantity for Material|Actual Quantity|Measure| |
-|ActualTotalCost|Actual Cost Sum for Resource/Material - Total Time|Actual Total Cost|Measure| |
-|ActualVariableCost|Actual Cost Sum for Resource/Material - Variable Value|Actual Variable Cost|Measure| |
-|ActualVsPlannedQuantityDIFF|PlannedQuantity-"ActualQuantity"|Actual Vs Planned Quantity [diff]|Measure| |
-|ActualVsPlannedQuantityPERC|ActualQuantity"/"PlannedQuantity|Actual Vs Planned Quantity [perc]|Measure| |
-|ActualVsPlannedTotalCostDIFF|PlannedTotalCost" - "ActualTotalCost|Actual Vs Planned Total Cost [diff]|Measure| |
-|ActualVsPlannedTotalCostPERC|ActualTotalCost"/"PlannedTotalCost|Actual Vs Planned Total Cost [perc]|Measure| |
-|PlannedCost|Planned Cost Sum for Resource/Material – TimeCost/Material|Planned Cost|Measure| |
-|PlannedFixedCost|Planned Cost Sum for Resource/Material – Fixed Cost|Planned Fixed Cost|Measure| |
-|PlannedQuantity|Planned Time Sum for Resource / Material Quantity|Planned Quantity|Measure| |
-|PlannedTotalCost|Planned Time Sum for Resource/Material – Total Time|Planned Total Cost|Measure| |
-|PlannedVariableCost|Planned Time Sum for Resource/Material – Variable Value|Planned Variable Cost|Measure| |
-|IGE_IGNU_Revision|Revision|Revision|Attribute| |
-|MOR12U_OprCode_1|Operation Code|Operation Code|Attribute| |
-|MOR16U_RscCode_1|Resource Code|Resource Code|Attribute| |
-|MORXU_ItemCode_1|Item Code|Item Code|Attribute| |
-|MORXU_WhsCode|Warehouse|Warehouse|Attribute| |
-|OperationType|Document Type|Document Type|Attribute| |
-|TBDocEntry|Document Entry|Document Entry|Attribute| |
-|TBDocNum|Document Number|Document Number|Attribute| |
-|TBLineNum|Document Line|Document Line|Attribute| |
+|ActualCost|Actual Cost Sum for Resource/Material - Cost of Time/Material|Actual Cost|Measure||
+|ActualFixedCost|Actual Cost Sum for Resource/Material - Fixed Cost|Actual Fixed Cost|Measure||
+|ActualQuantity|Actual Time Sum for Resource / Quantity for Material|Actual Quantity|Measure||
+|ActualTotalCost|Actual Cost Sum for Resource/Material - Total Time|Actual Total Cost|Measure||
+|ActualVariableCost|Actual Cost Sum for Resource/Material - Variable Value|Actual Variable Cost|Measure||
+|ActualVsPlannedQuantityDIFF|PlannedQuantity-"ActualQuantity"|Actual Vs Planned Quantity [diff]|Measure||
+|ActualVsPlannedQuantityPERC|ActualQuantity"/"PlannedQuantity|Actual Vs Planned Quantity [perc]|Measure||
+|ActualVsPlannedTotalCostDIFF|PlannedTotalCost" - "ActualTotalCost|Actual Vs Planned Total Cost [diff]|Measure||
+|ActualVsPlannedTotalCostPERC|ActualTotalCost"/"PlannedTotalCost|Actual Vs Planned Total Cost [perc]|Measure||
+|PlannedCost|Planned Cost Sum for Resource/Material – TimeCost/Material|Planned Cost|Measure||
+|PlannedFixedCost|Planned Cost Sum for Resource/Material – Fixed Cost|Planned Fixed Cost|Measure||
+|PlannedQuantity|Planned Time Sum for Resource / Material Quantity|Planned Quantity|Measure||
+|PlannedTotalCost|Planned Time Sum for Resource/Material – Total Time|Planned Total Cost|Measure||
+|PlannedVariableCost|Planned Time Sum for Resource/Material – Variable Value|Planned Variable Cost|Measure||
+|IGE_IGNU_Revision|Revision|Revision|Attribute||
+|MOR12U_OprCode_1|Operation Code|Operation Code|Attribute||
+|MOR16U_RscCode_1|Resource Code|Resource Code|Attribute||
+|MORXU_ItemCode_1|Item Code|Item Code|Attribute||
+|MORXU_WhsCode|Warehouse|Warehouse|Attribute||
+|OperationType|Document Type|Document Type|Attribute||
+|TBDocEntry|Document Entry|Document Entry|Attribute||
+|TBDocNum|Document Number|Document Number|Attribute||
+|TBLineNum|Document Line|Document Line|Attribute||
 |InternalKeyRevision|InternalKeyRevision|InternalKeyRevision|Attribute|ItemDetailsRevisions|
 |U_Code|Revision Code|Revision Code|Attribute|ItemDetailsRevisions|
 |U_Default|Default|Default|Attribute|ItemDetailsRevisions|
@@ -568,20 +566,20 @@ The model contains 17 calculation views, 8 of which are views that can be a dire
 
 |COLUMN_NAME|Description|COLUMN_CAPTION|DIMENSION_TYPE|SHARED|
 |:----|:----|:----|:----|:----|
-|ActualQuantity|Quantity from Issue/Receipt document|Actual Quantity|Measure| |
-|ActualTotalValue|Value from Issue/Receipt document|Actual Total Value|Measure| |
-|PlannedFixedValue|Planned Issue/Receipt value – Fixed Cost|Planned Fixed Value|Measure| |
-|PlannedItemValue|Planned Issue/Receipt value – Material Cost|Planned Item Value|Measure| |
-|PlannedQuantity|Planned Issue/Receipt Quantity|Planned Quantity|Measure| |
-|PlannedTotalValue|Planned Issue/Receipt value – Total Time|Planned Total Value|Measure| |
-|PlannedVariableValue|Planned Issue/Receipt value – Variable Value|Planned Variable Value|Measure| |
-|MORXU_ItemCode_1|Item Code|Item Code|Attribute| |
-|MORXU_Revision_1|Revision|Revision|Attribute| |
-|MORXU_WhsCode|Warehouse|Warehouse|Attribute| |
-|OINMBASE_REF|Document Number|Document Number|Attribute| |
-|OINMCreatedBy|Document Entry|Document Entry|Attribute| |
-|OINMDocLineNum|Document Line|Document Line|Attribute| |
-|OINMTransType|Document Type|Document Type|Attribute| |
+|ActualQuantity|Quantity from Issue/Receipt document|Actual Quantity|Measure||
+|ActualTotalValue|Value from Issue/Receipt document|Actual Total Value|Measure||
+|PlannedFixedValue|Planned Issue/Receipt value – Fixed Cost|Planned Fixed Value|Measure||
+|PlannedItemValue|Planned Issue/Receipt value – Material Cost|Planned Item Value|Measure||
+|PlannedQuantity|Planned Issue/Receipt Quantity|Planned Quantity|Measure||
+|PlannedTotalValue|Planned Issue/Receipt value – Total Time|Planned Total Value|Measure||
+|PlannedVariableValue|Planned Issue/Receipt value – Variable Value|Planned Variable Value|Measure||
+|MORXU_ItemCode_1|Item Code|Item Code|Attribute||
+|MORXU_Revision_1|Revision|Revision|Attribute||
+|MORXU_WhsCode|Warehouse|Warehouse|Attribute||
+|OINMBASE_REF|Document Number|Document Number|Attribute||
+|OINMCreatedBy|Document Entry|Document Entry|Attribute||
+|OINMDocLineNum|Document Line|Document Line|Attribute||
+|OINMTransType|Document Type|Document Type|Attribute||
 |InternalKeyRevision|InternalKeyRevision|InternalKeyRevision|Attribute|ItemDetailsRevisions|
 |U_Code|Revision Code|Revision Code|Attribute|ItemDetailsRevisions|
 |U_Default|Default|Default|Attribute|ItemDetailsRevisions|
@@ -644,24 +642,24 @@ The model contains 17 calculation views, 8 of which are views that can be a dire
 
 |COLUMN_NAME|Description|COLUMN_CAPTION|DIMENSION_TYPE|SHARED|
 |:----|:----|:----|:----|:----|
-|ActualFixedValue|Actual Cost Sum for Resource – Fixed Cost|Actual Fixed Value|Measure| |
-|ActualQuantity|Actual Time Sum for Resource|Actual Quantity|Measure| |
-|ActualTimeValue|Actual Cost Sum for Resource - Time Cost|Actual Time Value|Measure| |
-|ActualTotalValue|Actual Cost Sum for Resource - Total Time|Actual Total Value|Measure| |
-|ActualVariableValue|Actual Cost Sum for Resource - Variable Value|Actual Variable Value|Measure| |
-|ActualVsPlannedQuantityDIFF|PlannedQuantity-"ActualQuantity"|Actual Vs Planned Quantity [diff]|Measure| |
-|ActualVsPlannedQuantityPERC|ActualQuantity/"PlannedQuantity"|Actual Vs Planned Quantity [perc]|Measure| |
-|ActualVsPlannedTotalValueDIFF|PlannedTotalValue - "ActualTotalValue"|Actual Vs Planned Total Value [diff]|Measure| |
-|ActualVsPlannedTotalValuePERC|ActualTotalValue/"PlannedTotalValue"|Actual Vs Planned Total Value [perc]|Measure| |
-|PlannedFixedValue|Planned Cost Sum for Resource – Fixed Cost|Planned Fixed Value|Measure| |
-|PlannedQuantity|Planned Time Sum for Resource|Planned Quantity|Measure| |
-|PlannedTimeValue|Planned Cost Sum for Resource – Fixed Cost|Planned Time Value|Measure| |
-|PlannedTotalValue|Planned Cost Sum for Resource – Total Value|Planned Total Value|Measure| |
-|PlannedVariableValue|Planned Cost Sum for Resource – Variable Cost|Planned Variable Value|Measure| |
-|TBDocEntry|Document Entry|Document Entry|Attribute| |
-|TBDocNum|Document Number|Document Number|Attribute| |
-|TBLineNum|Document Line|Document Line|Attribute| |
-|TBObject|Document Type|Document Type|Attribute| |
+|ActualFixedValue|Actual Cost Sum for Resource – Fixed Cost|Actual Fixed Value|Measure||
+|ActualQuantity|Actual Time Sum for Resource|Actual Quantity|Measure||
+|ActualTimeValue|Actual Cost Sum for Resource - Time Cost|Actual Time Value|Measure||
+|ActualTotalValue|Actual Cost Sum for Resource - Total Time|Actual Total Value|Measure||
+|ActualVariableValue|Actual Cost Sum for Resource - Variable Value|Actual Variable Value|Measure||
+|ActualVsPlannedQuantityDIFF|PlannedQuantity-"ActualQuantity"|Actual Vs Planned Quantity [diff]|Measure||
+|ActualVsPlannedQuantityPERC|ActualQuantity/"PlannedQuantity"|Actual Vs Planned Quantity [perc]|Measure||
+|ActualVsPlannedTotalValueDIFF|PlannedTotalValue - "ActualTotalValue"|Actual Vs Planned Total Value [diff]|Measure||
+|ActualVsPlannedTotalValuePERC|ActualTotalValue/"PlannedTotalValue"|Actual Vs Planned Total Value [perc]|Measure||
+|PlannedFixedValue|Planned Cost Sum for Resource – Fixed Cost|Planned Fixed Value|Measure||
+|PlannedQuantity|Planned Time Sum for Resource|Planned Quantity|Measure||
+|PlannedTimeValue|Planned Cost Sum for Resource – Fixed Cost|Planned Time Value|Measure||
+|PlannedTotalValue|Planned Cost Sum for Resource – Total Value|Planned Total Value|Measure||
+|PlannedVariableValue|Planned Cost Sum for Resource – Variable Cost|Planned Variable Value|Measure||
+|TBDocEntry|Document Entry|Document Entry|Attribute||
+|TBDocNum|Document Number|Document Number|Attribute||
+|TBLineNum|Document Line|Document Line|Attribute||
+|TBObject|Document Type|Document Type|Attribute||
 |InternalKey|Internal Key|InternalKey|Attribute|MorResource|
 |MOR12U_OprCode|Operation Code for Manufacturing Order|Operation Code|Attribute|MorResource|
 |MOR12U_Status|Operation Status Code for Manufacturing Order|Operation Status|Attribute|MorResource|
@@ -704,16 +702,16 @@ The model contains 17 calculation views, 8 of which are views that can be a dire
 
 |COLUMN_NAME|Description|COLUMN_CAPTION|DIMENSION_TYPE|SHARED|
 |:----|:----|:----|:----|:----|
-|NbrOfBatches|NbrOfBatches|NbrOfBatches|Measure| |
-|NbrOfComplaints|NbrOfComplaints|NbrOfComplaints|Measure| |
-|NbrOfDefects|NbrOfDefects|NbrOfDefects|Measure| |
-|NbrOfNcmrs|NbrOfNcmrs|NbrOfNcmrs|Measure| |
-|NbrOfPools|NbrOfPools|NbrOfPools|Measure| |
-|NbrOfResources|NbrOfResources|NbrOfResources|Measure| |
-|NbrOfSerialNumbers|NbrOfSerialNumbers|NbrOfSerialNumbers|Measure| |
-|NbrOfTests|NbrOfTests|NbrOfTests|Measure| |
-|NbrOfUniqueBatches|NbrOfUniqueBatches|NbrOfUniqueBatches|Measure| |
-|NbrOfUniqueDefects|NbrOfUniqueDefects|NbrOfUniqueDefects|Measure| |
+|NbrOfBatches|NbrOfBatches|NbrOfBatches|Measure||
+|NbrOfComplaints|NbrOfComplaints|NbrOfComplaints|Measure||
+|NbrOfDefects|NbrOfDefects|NbrOfDefects|Measure||
+|NbrOfNcmrs|NbrOfNcmrs|NbrOfNcmrs|Measure||
+|NbrOfPools|NbrOfPools|NbrOfPools|Measure||
+|NbrOfResources|NbrOfResources|NbrOfResources|Measure||
+|NbrOfSerialNumbers|NbrOfSerialNumbers|NbrOfSerialNumbers|Measure||
+|NbrOfTests|NbrOfTests|NbrOfTests|Measure||
+|NbrOfUniqueBatches|NbrOfUniqueBatches|NbrOfUniqueBatches|Measure||
+|NbrOfUniqueDefects|NbrOfUniqueDefects|NbrOfUniqueDefects|Measure||
 |Batch_ABTU_AdmDate|Batch Admission Date|Batch Admission Date|Attribute|QctBatch|
 |Batch_ABTU_BestBefDate|Batch Best Before Date|Batch Best Before Date|Attribute|QctBatch|
 |Batch_ABTU_ExpiryDate|Batch Expiry Date|Batch Expiry Date|Attribute|QctBatch|
