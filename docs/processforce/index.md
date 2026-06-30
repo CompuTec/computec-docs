@@ -24,7 +24,7 @@ Follow these guides:
 - [Import and Assign Licenses](./administrator-guide/licensing/license-import-and-assignment.md)
 
 :::info[note]
-Use the [Upgrade CompuTec ProcessForce](./administrator-guide/installation/update-to-ct-pf-30.md) guide only if you already have **CompuTec ProcessForce 2.0** installed and want to update to **CompuTec ProcessForce 3.0**. For new installations, follow the installation guides instead.
+Use the [**Upgrade CompuTec ProcessForce**](./administrator-guide/installation/update-to-ct-pf-30.md) guide only if you already have **CompuTec ProcessForce 2.0** installed and want to update to **CompuTec ProcessForce 3.0**. For new installations, follow the installation guides instead.
 :::
 
 After completing the installation, log in to **SAP Business One** and verify that the **CompuTec ProcessForce** menus are available.
@@ -57,7 +57,7 @@ To access **General Settings**, navigate to: **Modules** > **Administration** > 
 ![CompuTec ProcessForce general settings window inside SAP Business One with the ProcessForce General tab selected, showing options for SAP Standard Modules and SAP Sales Order Controls including enable standard functionality of SAP Business One's Production menu, enable the standard functionality of the Resources menu, hide ProcessForce related controls on the Sales Order form, disable update of MOR references on Sales Order lines, and forbid changing Sales Order line data if a Manufacturing Order is already assigned](media/index/intro/pf-intro2.png)
 
 :::note[info]
-For detailed configuration instructions, read the [General Settings](./user-guide/system-initialization/general-settings/overview.md) guide.
+For detailed configuration instructions, read the [**General Settings**](./user-guide/system-initialization/general-settings/overview.md) guide.
 :::
 
 ### Item Details

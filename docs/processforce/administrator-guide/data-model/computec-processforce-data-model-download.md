@@ -10,7 +10,7 @@ sidebar_position: 4
 
 Before downloading or installing the **CompuTec ProcessForce Data Model**, make sure that your environment meets all installation requirements.
 
-For details, see [Installation Prerequisites](./prerequisites-and-installation.md).
+For details, see [**Installation Prerequisites**](./prerequisites-and-installation.md).
 
 :::danger[very important]
 Do not continue with the installation until all prerequisites have been completed. Missing prerequisites may cause installation failures or unexpected system behavior.
