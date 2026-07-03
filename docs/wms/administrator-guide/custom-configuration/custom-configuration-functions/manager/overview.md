@@ -9,6 +9,7 @@ Here’s a rundown of the key settings available in the Manager module
 ---
 
 ![Manager](./media/screenshot-0.png)
+![alt text](media/wms-config-manager.png)
 
 1. **Workflow Step Settings** – The Workflow Step Settings allow you to select a specific workflow for different types of transactions, helping to automate and standardize processes across the organization. To know more about "Workflow Step Settings", Click [this link](../../../custom-configuration/custom-configuration-functions/manager/workflow-step-settings.md).
 

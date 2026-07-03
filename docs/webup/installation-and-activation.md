@@ -41,15 +41,15 @@ If you plan to customize the user interface using **CompuTec WebUp Manager**, yo
 
 1. Click on your **profile icon** in the upper right corner of the SAP Web Client interface and choose **Settings**.  
 
-    ![A help screen showing where to find settings in SAP Business One Web Client](./media/6-webup-profile-settings-sapb1-menu.png)
+    ![SAP Web Client interface with profile menu open and Settings option highlighted in the top right corner](./media/6-webup-profile-settings-sapb1-menu.png)
 
 2. Go to **Extensibility**.  
 
-    ![A help screen showing where to find Extensibility tab in SAP Business One Web Client](./media/10-webup-profile-settings-extensibility-developer-mode.png)
+    ![SAP Web Client settings page with Extensibility tab selected and developer options visible](./media/10-webup-profile-settings-extensibility-developer-mode.png)
 
 3. Turn on the **Developer Mode** toggle.  
 
-    ![A help screen showing where to find Developer Mode in SAP Business One Web Client](./media/11-webup-config-turn-on-developer-mode.png)
+    ![SAP Web Client Extensibility settings showing Developer Mode toggle switched on](./media/11-webup-config-turn-on-developer-mode.png)
 
 4. Click **Save**.
 
@@ -84,15 +84,15 @@ Select your browser to see the installation steps:
 
 2. Click the **menu icon** and choose **Extensions** > **Manage Extensions**.
 
-    ![A help screen showing where to find extensions when installing the CompuTec webup extension in Chrome browser](./media/c1-webup-manual-inst-browser-extension-chrome-menu.png)
+    ![Google Chrome browser with Extensions menu item visible and the CompuTec WebUp installation page in the background](./media/c1-webup-manual-inst-browser-extension-chrome-menu.png)
 
 3. Turn on the **Developer mode** toggle.
 
-    ![A help screen showing where to find dev mode when installing the CompuTec webup extension in Chrome browser](./media/c2-webup-manual-inst-browser-extension-chrome-dev-mode.png)
+    ![Google Chrome Extensions page showing Developer mode toggle in the top right of the extensions manager](./media/c2-webup-manual-inst-browser-extension-chrome-dev-mode.png)
 
 4. Click **Load unpacked**.
 
-    ![A help screen showing how to unpack files when installing the CompuTec webup extension in Chrome browser](./media/c3-webup-manual-inst-browser-extension-chrome-load-file.png)
+    ![Google Chrome Extensions page showing Load unpacked button highlighted for loading unpacked extension folders](./media/c3-webup-manual-inst-browser-extension-chrome-load-file.png)
 
 5. Select your extracted **CompuTec WebUp Client** folder and click **Select Folder**.
 
@@ -100,7 +100,7 @@ Select your browser to see the installation steps:
 
 7. Done! Now you can see both **CompuTec WebUp Client** and **CompuTec WebUp Manager** extensions on the **All Extensions** list of your Google Chrome browser.
 
-    ![A help screen showing installed CompuTec webup extensions in Chrome browser](./media/c4-webup-manual-inst-browser-extension-chrome-installed.png)
+    ![Google Chrome Extensions page listing CompuTec WebUp Client and CompuTec WebUp Manager as installed extensions](./media/c4-webup-manual-inst-browser-extension-chrome-installed.png)
 
   </TabItem>
 
@@ -120,7 +120,7 @@ Select your browser to see the installation steps:
 
 2. Click the **menu icon** and choose **Extensions**.
 
-    ![A help screen showing where to find extensions when installing the CompuTec webup extension in Microsoft Edge browser](./media/e1-webup-manual-inst-browser-extension-edge-menu.png)
+    ![Microsoft Edge browser menu with Extensions highlighted and the CompuTec WebUp introduction page visible behind the menu](./media/e1-webup-manual-inst-browser-extension-edge-menu.png)
 
 3. Click **Manage extensions**.
 
@@ -128,7 +128,7 @@ Select your browser to see the installation steps:
 
 4. Turn on the **Developer mode** toggle.
 
-    ![A help screen showing where to find dev mode when installing the CompuTec webup extension in Microsoft Edge browser](./media/e3-webup-manual-inst-browser-extension-edge-dev-mode.png)
+    ![Microsoft Edge Extensions page with Developer mode toggle and Manage extensions settings visible](./media/e2-webup-manual-inst-browser-extension-edge-manage.png)
 
 5. Click **Load unpacked**.
 
@@ -140,7 +140,7 @@ Select your browser to see the installation steps:
 
 8. Done! Now you can see both **CompuTec WebUp Client** and **CompuTec WebUp Manager** extensions on the **Installed extensions** list of your Microsoft Edge browser.
 
-    ![A help screen showing installed CompuTec webup extensions in Microsoft Edge browser](./media/e5-webup-manual-inst-browser-extension-edge-installed.png)
+    ![Google Chrome Extensions page listing CompuTec WebUp Client and CompuTec WebUp Manager as installed extensions](./media/c4-webup-manual-inst-browser-extension-chrome-installed.png)
 
   </TabItem>
 
@@ -162,25 +162,25 @@ Select your browser to see the installation steps:
 
 2. Click the **menu icon** and choose **Extensions and themes**.
 
-    ![A help screen showing where to find extensions and themes section when installing the CompuTec webup extension in Firefox browser](./media/f1-webup-manual-inst-browser-extension-firefox-menu.png)
+    ![Mozilla Firefox browser menu open with Extensions and themes highlighted for extension setup](./media/f1-webup-manual-inst-browser-extension-firefox-menu.png)
 
 3. Navigate to **Extensions**.
 
-    ![A help screen showing where to find extension section when installing the CompuTec webup extension in Firefox browser](./media/f2-webup-manual-inst-browser-extension-firefox-menu-extensions.png)
+    ![Mozilla Firefox add-ons page with Extensions section selected in the sidebar](./media/f2-webup-manual-inst-browser-extension-firefox-menu-extensions.png)
 
 4. Click the **gear icon** and select **Debug Add-ons**.
 
-    ![A help screen showing where to find debug section when installing the CompuTec webup extension in Firefox browser](./media/f3-webup-manual-inst-browser-extension-firefox-debug.png)
+    ![Mozilla Firefox Extensions page with gear icon menu open and Debug Add-ons option selected](./media/f3-webup-manual-inst-browser-extension-firefox-debug.png)
 
 5. Click **Load Temporary Add-on**.
 
-    ![A help screen showing where to find extension installation section when installing the CompuTec webup extension in Firefox browser](./media/f3-webup-manual-inst-browser-extension-firefox-load-file.png)
+    ![Mozilla Firefox Debug Add-ons page showing Load Temporary Add-on option for installing the unpacked extension folder](./media/f3-webup-manual-inst-browser-extension-firefox-load-file.png)
 
 6. Select your extracted folder and click **Open**.
 
 7. Done! Now you can see the **CompuTec WebUp Client** on the extension list of your Mozilla Firefox browser.
 
-    ![A help screen showing installed CompuTec webup extension in Firefox browser](./media/f4-webup-manual-inst-browser-extension-firefox-installed.png)
+    ![Mozilla Firefox Extensions list showing CompuTec WebUp Client as installed](./media/f4-webup-manual-inst-browser-extension-firefox-installed.png)
 
     :::info[note]  
     Firefox only supports **temporary loading** of unpacked extensions.  
@@ -198,7 +198,7 @@ After installation, confirm that both the CompuTec AppEngine plugin and the brow
 2. Navigate to the **SAP Web Client** page.
 3. Click the **CompuTec WebUp extension** icon to activate the integration.  
 
-    ![A help screen showing where to find the CompuTec WebUp extension in your browser toolbar](./media/12-webup-config-browser-extension.png)
+    ![Browser toolbar with CompuTec WebUp extension icon highlighted next to the address bar on the SAP Web Client page](./media/12-webup-config-browser-extension.png)
 
 :::info[Note]
 If you were already on the SAP Web Client page before installing the CompuTec WebUp browser extension, refresh the page before activating the extension.

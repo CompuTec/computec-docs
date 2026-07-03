@@ -4,100 +4,224 @@ sidebar_position: 6
 
 # Workflow Design Manager
 
-The Interface Design Manager allows administrators to visually configure the layout of workflow screens used in CompuTec WMS. Through this tool, you can design the structure, appearance, and behavior of each transaction screen, ensuring that the user interface is optimized for operational efficiency.
+The **Workflow Designer Manager** allows administrators to customize the layout and appearance of the **CompuTec WMS** client.
 
-This manager enables you to:
+Using workflow templates, you can configure how the application's main menu is organized, control which transactions are available to users, group transactions into containers, customize line colors, and simplify the interface for warehouse operators.
 
-- Create menu templates
-- Add, remove, or reorganize transactions
-- Merge and configure layout grids
-- Create multi-level containers
-- Hide optional system buttons
-- Assign custom icons to containers or transactions
+With the **Workflow Design Manager**, you can:
 
----
+- create workflow templates,
+- organize transactions,
+- create multi-level menus,
+- merge layout cells,
+- assign custom icons,
+- customize document line colors,
+- hide selected interface buttons,
+- assign templates to SAP Business One users.
 
-## Activating the Option
+## Enable the Workflow Design Manager
 
-Before creating or assigning templates, enable the feature:
+Before creating or assigning templates, enable the feature.
 
-- Navigate to [Custom Configuration](../../../custom-configuration/overview.md) → Manager tab.
-- Select Enable Workflow Designer Manager.
+1. Go to **Custom Configuration > Manager**.
+2. Select **Enable Interface Design Manager**.
+3. Select **Save**.
 
-This unlocks access to the template creator and layout designer.
+The **Workflow Designer Manager** becomes available.
 
-## Creating a Template
+## Create a template
 
-Clicking Load Designer leads to the Select Template form. Choose a template on the left side of the form and click Delete to delete it or Load to open it.
+1. Click **Load Designer**.
 
-![Load Design Manager](./media/load-design-manager.webp)
+    ![alt text](media/wms-config-manager3.png)
 
-In the new window on the left, there are available Templates; on the right, actions we can take:
+2. The **Select Template** window opens.
+    From here, you can:
+    - create a new template,
+    - copy an existing template,
+    - load a template for editing,
+    - delete a template.
 
-- **New Template**: Create a new Template from scratch
-- **Copy template**: Highlight a Template and click Copy template to create a copy
-- **Load**: Highlight a Template and click Load to start editing it
-- **Delete**: Highlight a Template and click Delete to remove it from the list.
+    ![alt text](media/wms-config-manager4.png)
 
-## Editing
+3. After selecting or creating a template, the **Workflow Design Manager** opens.
 
-Clicking Load leads to Workflow Designer Manager, where it is possible to create a main menu template:
+## Design the workflow
 
-![Workflow Editing](./media/workflow-designer-manager-editing.png)
+The **Workflow Designer Manager** contains three working areas.
 
-The form is divided into three panels:
+    ![alt text](media/wms-config-manager6.png)
 
-- **The one on the left** is a mock-up of the application's main menu. Use the right-click context menu to add rows and columns. Doing so creates grids.
-- **the center one** lists all of the transactions available from the application's main menu. Drag and drop it to the mock-up to fill a specific grid. You can drag and drop it back to the center panel to use it in another place.
-  
-    This panel also contains a Container element: it allows storing many transactions in one folder. Clicking a container on a main menu leads to another form with the container's content. It is possible to use container elements multiple times. It is also possible to create a multilevel menu using it. You can change a container's name using a context menu option.
-- **the right one** contains general options: saving or canceling changes and saving and quitting the manager.
+### Layout
+
+The left panel displays the application's main menu.
+
+Click **Options** to open the context menu, and then you can:
+
+- add rows,
+- add columns,
+- merge rows and columns
+- assign icons.
+
+![alt text](media/wms-config-manager15.png)
+
+Drag transactions or containers into the layout to build the menu structure.
+
+### Transactions
+
+The center panel contains all available transactions.
+
+Drag a transaction into the layout to make it available from the main menu.
+
+To remove a transaction, drag it back to the transaction list.
+
+### Containers
+
+Containers allow you to group multiple transactions into a single menu item.
+
+You can:
+
+- create folders,
+- rename containers,
+- build multi-level menus by nesting containers.
+
+### Configuration
+
+The right panel contains options for saving the template and customizing the interface.
+
+From here, you can:
+
+- save changes,
+- save and exit,
+- cancel changes,
+- hide selected buttons,
+- customize document line colors.
 
 After adding some transactions to grids, it is possible to merge rows or columns. You can reach the option from a right-click context menu.
 
-### Hide Options and Barcoder Setup Buttons
+## Hide interface buttons
 
-A new enhancement has been added to the configuration panel:
+To simplify the interface for warehouse operators, you can hide selected buttons.
 
-Settings:
+Available options:
 
-- Hide barcoder setup button
-- Hide options button
+- **Hide barcoder setup button**
+- **Hide options button**
 
-These settings appear on the right-side of the Interface Design Manager screen. Selecting these checkboxes allows administrators to:
+![alt text](media/wms-config-manager10.png)
 
-- Remove advanced configuration buttons from the user interface
-- Prevent operators from accessing setup-level screens
-- Simplify the handheld user interface for operational clarity
+When enabled, the selected buttons are not displayed in the **CompuTec WMS** client.
 
-![Hide Options](./media/hide-options.webp)
+![alt text](media/wms-config-manager7.png)
 
-Once enabled, the selected buttons will not be visible on the WMS client.
+## Customize document line colors
 
-### Example
+You can customize the colors displayed for document lines in the **CompuTec WMS** client.
 
-In the following example, we created a main menu template for users using Goods Issue and Stock Transfer transactions. We also use a container to group some of the informational options.
+This makes it easier for warehouse operators to identify document statuses at a glance.
 
-![Example](./media/example.webp)
+Available statuses include:
 
-### Default Template
+- **Normal**
+- **Partially picked**
+- **Completed**
+- **Overpicked**
+- **Non-clickable**
 
-Workflow Designer Manager comes with one predefined template. If Interface Design Manager is not used, this template will be used by default. You cannot load it for editing. It can be copied and then edit the copy.
+By default, each status uses the application's theme colors.
 
-## Assigning a Template to a User
+![alt text](media/before.png)
 
-A template must be assigned to a specific SAP Business One user to work on.
+To use custom colors:
 
-Click the drop-down list next to Enable Interface Design Manager to choose a user to whom a template will be assigned. This action requires logging in to a database to download a list of users. After this, select a required user from a drop-down list.
+1. Select **Use list row colors**.
 
-Click Set Template, choose a template assigned to a user, and click Save.
+    ![alt text](media/wms-config-manager9.png)
 
-![Assigning Template](./media/assigning-template.png)
+2. Select the background or text color for the required status.
+3. Choose a color from the color picker.
 
-You can now assign an icon to any container or transaction tile, making the interface more visual and easier to navigate.
+    ![alt text](media/wms-config-manager8.png)
 
-![Icons](./media/icons.png)
+4. Select **OK**.
+5. Save the template.
 
-:::warning
-    Restarting the CompuTec WMS Server is required to apply the changes to a user.
+6. After assigning the template to a user, document lines are displayed using the selected colors in the **CompuTec WMS** client.
+
+    For example:
+
+    - completed lines can be displayed with a green background,
+    - partially picked lines with a yellow background,
+    - overpicked lines with a red background.
+
+    ![alt text](media/after.png)
+
+    :::info[note]
+    Choose high-contrast colors to improve readability on handheld devices, especially in warehouse environments.
+    :::
+
+## Assign an icon
+
+Icons make navigation easier by helping users quickly identify menu items.
+
+You can assign custom icons to:
+
+- transactions,
+- containers.
+
+To assign a custom icon, follow these steps:
+
+1. Click **Options** in **Workflow Designer Manager**.
+2. Click **Set Image**.
+
+    ![alt text](media/wms-config-manager14.png)
+
+3. Select an image.
+
+    ![alt text](media/wms-config-manager16.png)
+
+4. Click **OK**.
+5. Save the template.
+
+## Assign a template
+
+A template becomes active only after it is assigned to a SAP Business One user.
+
+1. In **WMS Custom Configuration** window, click the **drop-down list** next to **Enable Interface Design Manager**.
+
+    ![alt text](media/wms-config-manager12.png)
+
+2. Select a user.
+3. Click **Set Template**.
+
+    ![alt text](media/wms-config-manager13.png)
+
+4. Choose the required template.
+5. Select **Save**.
+
+:::warning[important]
+
+Restart the **CompuTec WMS Server** to apply the changes.
 :::
+
+## Default template
+
+The **Workflow Designer Manager** includes one predefined template.
+
+If no custom template is assigned, the default template is used automatically.
+
+The default template cannot be edited directly.
+
+To customize it:
+
+1. Copy the default template.
+2. Modify the copy.
+3. Assign the copied template to users.
+
+## Example
+
+The following example shows a workflow template configured for warehouse operators working with **Goods Issue** and **Stock Transfer** transactions.
+
+Informational functions are grouped into a separate container to keep the main menu simple and focused on daily operations.
+
+![alt text](media/wms-config-manager17.png)

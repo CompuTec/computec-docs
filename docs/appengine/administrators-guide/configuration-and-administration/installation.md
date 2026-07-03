@@ -20,7 +20,7 @@ Before installing CompuTec AppEngine, make sure the following prerequisites are 
         1. Open **Google Chrome** or **Microsoft Edge** browser.
         2. Click **F12** to open **Developers Tools**.
         3. Right-click on the **Refresh** button.
-        4. Choose the **Empty Cach and Hard Reload** option.
+        4. Choose the **Empty Cache and Hard Reload** option.
 
         ![Empty Cache and Hard Reload](./media/installation/3333333-additional-info-after-upgrader.png)
     </div>
@@ -34,7 +34,7 @@ Before installing CompuTec AppEngine, make sure the following prerequisites are 
     ![SAP Business One General Settings Services tab showing UI API Configuration and DI API Configuration sections. On the left, under UI API Configuration, checkboxes read: Enable Default Connection String, Enable Path Validation, Enable Query Validation, Enable XML Filtered with the Enable Default Connection String checked. On the right, under DI API Configuration, a single checkbox reads Enable Query Validation which is unchecked. The surrounding interface shows the Administration panel sidebar with General Settings selected and other system initialization options visible. The tone is instructional and neutral.](media/installation/pf-inst-plug5.png)
 
     :::info[note]
-    **CompuTec AppEngine** do not currently support the **Enable Query Validation** option. If either setting is enabled, you may see an error during the **CompuTec AppEgnine** installation.
+    **CompuTec AppEngine** does not currently support the **Enable Query Validation** option. If either setting is enabled, you may see an error during the **CompuTec AppEngine** installation.
     :::
 
 :::note[Video (optional)]
@@ -159,7 +159,7 @@ To configure a connection to the SLD server, follow these steps:
     :::info[note]
     You can find the **SLD Server Address** in **SAP Business One** > **Administration** > **License** > **License Administration**.
 
-    ![screen showing how to fing the sld server address](./media/installation/101-sap-b1-license1.png)
+    ![screen showing how to find the sld server address](./media/installation/101-sap-b1-license1.png)
 
     You can check your **CompuTec License Server Address** in two ways:
 
@@ -173,7 +173,7 @@ To configure a connection to the SLD server, follow these steps:
 
             ![screen showing how to find the server address](./media/installation/1022-sap-b1-license2.png)
 
-        - Now, run **CompuTec Service Manager** on your computer and click **Settings.
+        - Now, run **CompuTec Service Manager** on your computer and click **Settings**.
 
             ![screen showing where to find settings in ct service manager](./media/installation/1021-appengine-requirements-sld.png)
 
@@ -200,7 +200,7 @@ To configure a connection to the SLD server, follow these steps:
 
 4. Click **Save and Discover**.
 
-    ![a screen shoing where to click after entering server address](./media/installation/11-appengine-setup-config-sld.png)
+    ![a screen showing where to click after entering server address](./media/installation/11-appengine-setup-config-sld.png)
 
 5. When prompted, enter the **B1SiteUser** password. This is the password you created for the operator in the **System Landscape Directory (SLD)**.
 
@@ -276,7 +276,7 @@ To activate a company in CompuTec AppEngine, follow these steps:
     ![a screen showing activation progress](./media/installation/99-after-update-additional-info2.png)
 
     :::info[note]
-    After you **update** of CompuTec AppEngine to the latest version, you may see `Update required` label next to your company name.
+    After you **update** CompuTec AppEngine to the latest version, you may see `Update required` label next to your company name.
 
     ![a screen showing company list after the update](media/installation/99-after-update-additional-info.png)
 
@@ -330,7 +330,7 @@ To configure background processing within the SAP environment, follow these step
 
             ![a screen showing code snippet](./media/installation/23-appengine-setup-activation-sbo.png)
 
-        - In **Sap Hana Studio**, paste the code under the **-- ADD YOUR CODE HERE** line. If there are other pieces of code there, add the code at the end of the section.
+        - In **SAP Hana Studio**, paste the code under the **-- ADD YOUR CODE HERE** line. If there are other pieces of code there, add the code at the end of the section.
 
             ![a screen showing pasting code snippet](./media/installation/30-appengine-setup-activation-sap-hana-studio-sql-console-code.png)
 
@@ -351,7 +351,7 @@ To configure background processing within the SAP environment, follow these step
         <div>
         <u></u>
 
-        - Open **Microsoft SQL Server Mangement Studio** on your computer and log in.
+        - Open **Microsoft SQL Server Management Studio** on your computer and log in.
         - Look for the **Programmability** folder, right-click on it and use filtering to find the **SBO_SP_PostTransactionNotice** procedure in your database.
 
             ![a screen showing where to find the procedure in ms sql](./media/installation/2444-appengine-setup-activation-mssql-filtering.png)

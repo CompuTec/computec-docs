@@ -80,7 +80,7 @@ Manage ingredient declarations and nutritional information for products.
 
 This module helps food, beverage, chemical, and life sciences companies create ingredient lists, allergen declarations, nutritional panels, and other data required for product labeling and regulatory compliance.
 
-To access Ingredients, navigate to **Modules** > **Inventory** > **Ingredients**.
+To access **Ingredients**, navigate to **Modules** > **Inventory** > **Ingredients**.
 
 ![CompuTec ProcessForce menu integrated into SAP Business One with a large blue arrow pointing from the left-hand Inventory > Ingredients menu to an open Ingredient Master Data window; the Ingredient Master Data form title reads Ingredient Master Data and shows fields Code 120, Description Vitamin B12, Category 01 and tabs Allergens, Classification/Certificates, Specifications; the surrounding UI includes a vertical module list such as Administration, Financials, CRM, Inventory, Production, Costing, Quality Control and Plant Maintenance in a professional instructional software interface](media/index/intro/pf-intro4.png)
 
@@ -94,7 +94,7 @@ Manage additional information for batch-managed materials and products.
 
 Use this module to maintain batch-specific attributes, quality information, production details, and other data required for traceability and compliance.
 
-To access Batches, navigate to: **Modules** > **Inventory** > **Item Management** > **Batches**.
+To access **Batches**, navigate to: **Modules** > **Inventory** > **Item Management** > **Batches**.
 
 ![SAP Business One interface showing the CompuTec ProcessForce menu navigation to Batch Management and the Batch Management Selection Criteria dialog with fields for Operation Update, Item No. From Active-Item-01, Group All, Properties/Ignore tabs, and checked posting options for Goods Receipt PO, Goods Return Request, Goods Return, A/P Invoices, and A/P Credit Memos in a neutral instructional software screen](media/index/intro/pf-intro5.png)
 
@@ -124,9 +124,9 @@ Define what is required to manufacture a product.
 
 Bills of Materials (BOMs) specify the raw materials, semi-finished products, packaging components, and quantities required to produce a finished item.
 
-To access Bill of Materials, navigate to: **Modules** > **Production** > **Bill of Materials**.
+To access **Bill of Materials**, navigate to: **Modules** > **Production** > **Bill of Materials**.
 
-![Bill of Materials window in SAP Business One showing CompuTec ProcessForce BOM details for Product-A with fields Item Code Product-A, Description Product-A, Revision default, Quantity 1.000, Total 1.000, Factor 1.000, Yield 100.00, Warehouse 01; the table lists line items Bottle-01, Label-01, Top-01, Recipe-01 with quantities 1.000, scrap percentages 0.00 or 10.00, yields 100.00, and UoM values EA and KG in a neutral software interface](media/index/intro/pf-intro7.png)text](media/index/intro/pf-intro7.png)
+![Bill of Materials window in SAP Business One showing CompuTec ProcessForce BOM details for Product-A with fields Item Code Product-A, Description Product-A, Revision default, Quantity 1.000, Total 1.000, Factor 1.000, Yield 100.00, Warehouse 01; the table lists line items Bottle-01, Label-01, Top-01, Recipe-01 with quantities 1.000, scrap percentages 0.00 or 10.00, yields 100.00, and UoM values EA and KG in a neutral software interface](media/index/intro/pf-intro7.png)
 
 :::note[info]
 For detailed configuration instructions, read the [Bill of Materials](./user-guide/formulations-and-bill-of-materials/bill-of-materials/overview.md) guide.
