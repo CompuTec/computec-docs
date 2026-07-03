@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Workflow Design Manager
+# Workflow Designer Manager
 
 The **Workflow Designer Manager** allows administrators to customize the layout and appearance of the **CompuTec WMS** client.
 
