@@ -19,7 +19,7 @@ With the **Workflow Design Manager**, you can:
 - hide selected interface buttons,
 - assign templates to SAP Business One users.
 
-## Enable the Workflow Design Manager
+## Enable the Workflow Designer Manager
 
 Before creating or assigning templates, enable the feature.
 
