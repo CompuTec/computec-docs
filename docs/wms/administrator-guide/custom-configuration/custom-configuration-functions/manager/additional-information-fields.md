@@ -41,8 +41,6 @@ Each field is populated using an SQL query, making it possible to display additi
         Available variables depend on the selected transaction.
         :::
 
-    - Save the configuration.  
-
 5. Click **Save**.
 
 ## Example
