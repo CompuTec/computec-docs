@@ -2,9 +2,9 @@
 sidebar_position: 7
 ---
 
-# Additional Information Fields
+# Additional Information Fields Line Details
 
-**Additional Information Fields** allows you to display custom SQL-based information in selected **CompuTec WMS** screens.
+**Additional Information Fields Line Details** allows you to display custom SQL-based information in selected **CompuTec WMS** screens.
 
 ![alt text](media/wms-additional-info-fields1.png)
 

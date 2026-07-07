@@ -14,7 +14,7 @@ Here’s a rundown of the key settings available in the Manager module
 
 3. **Extra SQL fields on Main List Items** – This setting allows you to display two additional SQL-based values in the item rows of select transactions, offering enhanced visibility for important data at a glance. [Read more](../../../custom-configuration/custom-configuration-functions/manager/extra-fields-sql-in-main-list.md)
 
-4. **Additional Information Fields** - This feature allows you to display custom SQL-based values in selected transaction screens. You can configure additional fields for **Main List Items** (up to two custom fields), and **Delivery** > **Line Details** (up to two custom fields).
+4. **Additional Information Fields Line Details** - This feature allows you to display custom SQL-based values in selected transaction screens. You can configure additional fields for **Main List Items** (up to two custom fields), and **Delivery** > **Line Details** (up to two custom fields).
 
     Each field is populated using an SQL query, allowing you to display information relevant to your warehouse processes without modifying the standard interface. [Read more](../../../custom-configuration/custom-configuration-functions/manager/additional-information-fields)
 
