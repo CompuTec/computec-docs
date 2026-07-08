@@ -4,9 +4,13 @@ sidebar_position: 4
 
 # Delivery
 
-The **Delivery** workflow in **SAP Business One** allows businesses to streamline the order fulfillment process by offering various options.
+The **Delivery** settings allow you to configure how the **Delivery** transaction behaves in **CompuTec WMS**. You can customize document creation workflows, scanning behavior, batch and serial number handling, Storage Unit processing, document dates, and other transaction options.
 
 ![Screenshot showing delivery configuration workflow options and related controls in the WMS settings screen](media/delivery/delivery11.png)
+
+## Available settings
+
+The following sections describe each available setting and its effect on the **Delivery** process.
 
 1. **Delivery workflow**: Select the workflow used when creating **Delivery** documents from **Pick Lists**.
 
@@ -111,7 +115,19 @@ The **Delivery** workflow in **SAP Business One** allows businesses to streamlin
     </div>
     </details>
 
-## Changes
+## Legacy configuration (version 1.00)
+
+:::info[Note]
+
+The information below applies only to customers migrating from **CompuTec WMS 1.00**.
+
+Starting with **version 2.00**, the **Delivery** configuration was redesigned. Most options from version 1.00 were removed and can now be implemented using the **Custom Query Manager**.
+
+Expand the section below to see how to recreate the previous functionality.
+:::
+
+<details>
+<summary>Show migration examples</summary>
 
 Old View of the Delivery tab:
 
@@ -208,5 +224,4 @@ The result:
 
 This checkbox has been removed because the option to choose document drafts is now integrated directly into the application interface.
 
----
-In summary, this guide outlines essential changes and customization options in the Delivery Tab of CompuTec WMS. users can achieve greater control and efficiency, ensuring a smooth transition to the updated system functionality.
+</details>
