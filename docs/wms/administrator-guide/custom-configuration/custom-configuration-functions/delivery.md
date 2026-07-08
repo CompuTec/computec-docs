@@ -4,96 +4,118 @@ sidebar_position: 4
 
 # Delivery
 
-The Delivery Workflow in SAP Business One allows businesses to streamline the order fulfillment process by offering various options.
+The **Delivery** workflow in **SAP Business One** allows businesses to streamline the order fulfillment process by offering various options.
 
----
+![Screenshot showing delivery configuration workflow options and related controls in the WMS settings screen](media/delivery/delivery11.png)
 
-![Delivery](./media/screenshot-1batch.png)
-
-1. **Delivery workflow** - Allows you to choose one of three workflows for Pick Lists:Default Workflow, Customer-Date Workflow, and Date-Customer Workflow.
+1. **Delivery workflow**: Select the workflow used when creating **Delivery** documents from **Pick Lists**.
 
     <details>
-    <summary>Click here to expand</summary>
+    <summary> Available options</summary>
     <div>
-    1. Default Workflow
+    - **Default Workflow**
 
-        ![Default Workflow](./media/delivery/default-workflow.png)
+        ![Screenshot showing default workflow selection option in delivery workflow settings](./media/delivery/default-workflow.png)
 
-    2. Customer-Date Workflow
+    - **Customer-Date Workflow**
 
-        ![Customer Date Workflow](./media/delivery/customer-selection.png) ![Customer Date Workflow](./media/delivery/pick-date.png)
+        ![Delivery workflow customer date option showing customer selection screen](./media/delivery/customer-selection.png) ![Delivery workflow customer date option showing date picker screen](./media/delivery/pick-date.png)
 
-    3. Date-Customer Workflow
+    - **Date-Customer Workflow**
 
-        ![Date Customer Workflow](./media/delivery/pick-date.png) ![Date Customer Workflow](./media/delivery/customer-selection.png)
+        ![Delivery workflow date customer option showing date picker screen](./media/delivery/pick-date.png) ![Delivery workflow date customer option showing customer selection screen](./media/delivery/customer-selection.png)
     </div>
     </details>
 
-2. **Scanned SU validation** – There are three options available: 'Match selected Warehouse,' 'Match any base document, Line,' and 'No validation.'
+2. **Scanned SU validation**: Controls how scanned **Storage Units** (**SUs**) are validated.
 
-    When the "Match selected warehouse" option is chosen, it will prevent the addition of Storage Units (SUs) from a different warehouse than the one specified in the document. For instance, if a new Delivery document is created and a warehouse is selected, only SUs from that warehouse will be allowed.
+     <details>
+    <summary> Available options</summary>
+    <div>
+    - **Match selected Warehouse** – Only Storage Units from the selected warehouse can be scanned.
+    - **Match any base document Line** – Allows scanning only Storage Units that belong to the base document.
+    - **No validation** – No validation is performed.
 
-    However, when a Delivery document is generated from a base document, such as a Sales Order, there is no warehouse selection, meaning this option will not have any effect in that case.
+    :::info[Note]
+    When creating a **Delivery** from a base document (for example, a **Sales Order**), the warehouse is inherited from the base document. In this case, the **Match** selected **Warehouse** option has no effect.
+    :::
+     </div>
+    </details>
 
-3. **Show Project selection** – Choosing this option causes displaying a window with Project selection before proceeding to the Remarks window during the transaction.
+3. **Display SU Only With Item From Base Document**: Displays only **Storage Units** that contain items included in the selected base document.
 
-4. **Default project** – Select a project to be automatically assigned to the document.
+4. **Skip Storage unit details**: Skips the **Storage Unit Details** screen after scanning a **Storage Unit** and proceeds directly to the next step.
 
-5. **Enable saving to drafts** – Enable the ability to save transactions as draft documents before finalizing.
+5. **Hide scanned SU on Item list**: By default, scanning a **Storage Unit** adds both the item quantity and a separate **Storage Unit** line to the item list. When enabled, only the item quantity is updated and the **Storage Unit** line is hidden.
 
-    ![Delivery Remarks](./media/delivery/delivery-drafts.png)
+6. **Hide SU**: Hides **Storage Unit** information in the **Delivery** transaction.
 
-6. **Enable saving documents when drafts ON** – Selecting this option allows the transaction to be saved as either a document or a draft document.
+7. **Show Project selection**: Displays the **Project Selection** window before the **Remarks** window.
 
-    ![Delivery Remarks](./media/delivery/delivery-drafts-on.png)
+8. **Default Project**: Selects the project automatically assigned to newly created **Delivery** documents.
 
-7. **Scan DocNum on Base Document select workflow** – When enabled, this option allows scanning the DocNum on the Base Document selection form (instead of using DocEntry).
+9. **Enable saving to drafts**: Allows users to save **Delivery** transactions as draft documents.
 
-8. **Pick only preselected Batches and Serials** – This option restricts the selection of Batches and Serial Number items to those preselected in the Delivery transaction. Preselection only applies to Pick Lists, so users can select these items only when creating a Delivery document from a Pick List (or from a Sales Order where Batches/Serial numbers are assigned).
+    ![Delivery remarks screen with save draft button visible on a mobile style interface](media/1.png)
 
-9. **Pick only preselected Batches when using Pick List** – When checked, only the Batches and Serial Numbers preselected for the Pick List will be displayed.
+10. **Enable saving documents when drafts ON**: When drafts are enabled, allows users to choose whether to save the transaction as a draft or as a final document.
 
-10. **Copy the packed Items from the Pick List** – This option copies the packed items directly from the Pick List.
+    ![Delivery save options screen with choice to save as draft or final document](media/2.png)
 
-11. **Forbid ordering greater quantities than on Order** – Enabling this option prevents issuing a quantity that exceeds the amount specified in the base document.
+11. **Scan DocNum on Base Document selection window**: Allows scanning the document number (**DocNum**) on the **Base Document** selection window instead of scanning the internal document entry (**DocEntry**).
 
-    ![Error Message](./media/delivery/error-message.png)
+12. **Pick only preselected Batches and Serials**: Restricts batch and serial number selection to values already assigned in the source document. This option applies only when creating a **Delivery from a Pick List** or from a **Sales Order** with preassigned batches or serial numbers.
 
-12. **Hide scanned SU on Item list** – By default, scanning a Storage Unit (SU) adds its quantity to the respective item line and includes the SU as a separate line in the list. When this option is checked, the item quantities are added to the corresponding item lines, but the SU itself is not added as a separate line.
+13. **Pick only preselected Batches when using Pick List**: Displays only batches preselected in the **Pick List**.
 
-13. **Block item adding with scanning** – This option prevents adding an item by scanning its barcode, allowing only manual picking of the item.
+14. **Forbid ordering greater quantities than on Order**: Prevents issuing a quantity greater than the quantity defined in the base document.
 
-14. **Force manual quantity confirmation** – When enabled, this option requires users to manually confirm the quantity entered, as barcode scanning will not automatically confirm the quantity.
+    ![Delivery settings screenshot showing restriction on issuing larger quantities than ordered](media/3.png)
 
-15. **Enable scanning and adding Items from distinct Warehouses** – This setting defines whether items for a single Delivery document can be picked from multiple warehouses.
+15. **Enable adding attachments**: Allows users to attach files to **Delivery** documents.
 
-16. **Stay on Existing SU List after picking/scanning a SU** – When unchecked, scanning an SU barcode in the List of SUs screen will navigate to the Document Details screen, highlighting the scanned SU. If checked, scanning remains on the List of SUs screen.
+16. **Block item adding by scanning**: Prevents adding new item lines by scanning item barcodes. Items must be selected manually.
 
-17. **New Delivery: Customer-Warehouse workflow** – Enabling this option requires the user to first select the Customer, which then leads to the Warehouse selection form (instead of the default Warehouse-Customer workflow). With this setting, scanning a Serial or Batch number during the Warehouse selection will trigger a "Fast Scan," automatically selecting the warehouse, item, and serial/batch with the quantity, adding it to the document.
+17. **Force manual quantity confirmation**: Requires users to manually confirm the entered quantity. Scanning a barcode does not automatically confirm the quantity.
 
-18. **Show Cost Dimensions** – This option adds a button next to the "Back" button on the Quantity form, leading to the Cost Dimensions form.
+18. **Enable Packing Slip**: Enables **Packing Slip** support for **Delivery** documents.
 
-19. **Hide Customer Ref. No. for Delivery from the base document** – Checking this option hides the Customer Ref. No. field in the Remarks form when creating a Delivery document from a base document. If multiple base documents are used, the first non-empty Customer Ref. No. is used.
+19. **Disable Auto Allocation Batch/Serial Items When Source Document is Pick List and Item Issue Primarily by = "Bin Location"**: Disables automatic batch and serial number allocation when the source document is a **Pick List**, and the item is configured with ``Issue Primarily By = Bin Location``. Users must manually select the required batches or serial numbers during Delivery creation.
 
-20. **Use Sales UoM from Base Document** – When enabled, this option displays quantities using the Unit of Measure from the Base Document, while still operating on the actual quantities. Document drafts cannot be saved when this option is activated. Click [this link](../../../user-guide/managing-uom-in-computec-wms.md) to find out more.
+20. **Allow to change Document date**: Allows users to modify the **Document Date** before saving the Delivery document. When disabled, the **Document Date** cannot be changed in the **Delivery** transaction.
 
-21. **Display SU Only With Item From Base Document** – self-explanatory
+21. **Allow to change Delivery date**: Allows users to modify the **Delivery Date** before saving the **Delivery** document. When disabled, the **Delivery Dat**e cannot be changed in the **Delivery** transaction.
 
-22. **Skip SAP Allocation Quantity** – allows disabling SAP Business One Batch/Serial Numbers allocation (if needed for some custom changes). The Delivery works within a Warehouse with Bin locations for allocated Batches and Serial Numbers Items.
+22. **Show Cost Dimensions**: Displays a **Cost Dimensions** button on the **Quantity** screen, allowing users to assign cost dimensions during the transaction.
 
-23. **Freight (Sales Order field) cost options**:
+23. **Hide Customer Ref. No. for Delivery from base document**: Hides the **Customer Ref. No. field** on the **Remarks** screen when creating a **Delivery** from a base document. If multiple base documents are used, the first available **Customer Reference Number** is still copied to the document.
 
-    - **Partial** - This is the default option for CompuTec WMS and SAP Business One when created from a Pick List.
-    - **Full freight for first Delivery only** - The total freight cost is applied only to the first Delivery, with no freight cost assigned to subsequent Deliveries (this follows SAP Business One's behavior when creating a Delivery from a Sales Order).
-    - **Always charge full freight** - The total freight cost from the base document is applied to all Deliveries.
+24. **Use Sales UoM from Base Document**: Displays quantities using the **Sales Unit of Measure** defined in the base document while processing actual inventory quantities.
 
-24. **Disable Auto Allocation Batch/Serial Items When Source Document is Pick List and Item Issue Primarily by = "Bin Location"** – When enabled, automatic batch and serial number allocation is disabled in the Delivery transaction created from a Pick List, if the item’s ``Issue Primarily By`` setting is configured as **Bin Location**. In this case, the user must manually select the required batch or serial numbers during the Delivery process.
+    :::info[Note]
+    Saving **Delivery** drafts is not supported when this option is enabled.
+    :::
+
+25. **Skip SAP Allocation Quantity**: Disables **SAP Business One** automatic **Batch and Serial Number** allocation. This option is intended for custom allocation scenarios.
+
+26. **Disable transaction during save**: Locks the transaction while it is being saved to prevent additional user actions until the save process is complete.
+
+27. **Freight cost handling**: Defines how freight costs are copied from the base document.
+
+    <details>
+    <summary> Available options</summary>
+    <div>
+    - **Partial Freight** – Copies freight proportionally. This is the default behavior.
+    - **Full freight for first Delivery only** – Applies the full freight amount only to the first Delivery.
+    - **Always charge full freight** – Applies the full freight amount to every Delivery created from the base document.
+    </div>
+    </details>
 
 ## Changes
 
 Old View of the Delivery tab:
 
-    ![Delivery Tab Old](./media/delivery/delivery-tab.png)
+    ![Screenshot of the old delivery tab layout with removed checkboxes](./media/delivery/delivery-tab.png)
 
 The following checkboxes have been removed from the Delivery tab:
     - Show document drafts
@@ -104,21 +126,21 @@ The following checkboxes have been removed from the Delivery tab:
 
 To access the previously available options, you now need to create a custom SQL query using the Custom Query Manager.
 
-    ![Enable Custom Query Manager Delivery](./media/delivery/enable-custom-query-manager-delivery.png)
+    ![Screenshot showing enable custom query manager option within delivery settings](./media/delivery/enable-custom-query-manager-delivery.png)
 
 Below is an overview of how to replace the removed functions (refer to the numbered points in the screenshots):
 
-    ![Custom Query Manager Delivery](./media/delivery/custom-query-manager-delivery.png)
+    ![Screenshot showing custom query manager delivery configuration interface with numbered explanation markers](./media/delivery/custom-query-manager-delivery.png)
 
-    ![WMS Custom Configuration](./media/delivery/wms-custom-configuration.png)
+    ![Screenshot of the WMS custom configuration menu highlighting delivery custom query access](./media/delivery/wms-custom-configuration.png)
 
 **Example for Show document drafts option (1)**
 
 Changing T0."CardName" AS "Field4" line to T0."DocStatus" AS "Field4" (instead of customer name there will be a document status - if it is open or closed).
 
-    ![Custom Query SQL](./media/delivery/custom-query-sql-form.png)
+    ![Screenshot of custom query SQL form with SQL editor and delivery query fields](./media/delivery/custom-query-sql-form.png)
 
-    ![SQL Query](./media/delivery/sql-query.png)
+    ![Screenshot of SQL query editor showing document status field change example](./media/delivery/sql-query.png)
 
 **Examples for Sales Orders sorting order and Extra field in Orders query options (2, 3)**
 
@@ -133,7 +155,7 @@ It is possible to use the option in four ways:
 
 To adjust the sorting order, modifications are needed in the ORDER BY line. In the example below, the sorting was changed from creation date to document number (changing T0."DocDueDate" to T0."DocNum"). You can view the previous state and the outcome of this change here:
 
-    ![Document Number](./media/delivery/doc-number-desc.png)
+    ![Screenshot showing document number sorting order change in SQL query example](./media/delivery/doc-number-desc.png)
 
 **Example for Issue only Batches from MOR for selected BPs option (4)**
 
@@ -144,7 +166,7 @@ A line must be included to ensure the filter functions correctly:
     ```
     AND (((@BaseDocEntry <= 0 AND @BaseDocLineNum < 0) AND ''='') OR ((@BaseDocEntry > 0  AND @BaseDocLineNum >= 0) AND (T0."U_MnfDocEntry" = (SELECT "U_DocEntry" FROM RDR1 WHERE "DocEntry" = @BaseDocEntry and "LineNum" = @BaseDocLineNum))))
     ```
-![Custom Query SQL Form](./media/delivery/custom-query-sql-form.png)
+![Screenshot of custom query SQL form highlighting batch filter entries for selected BPs example](./media/delivery/custom-query-sql-form.png)
 
 **Example usage scenario**
 
@@ -164,7 +186,7 @@ Here you can check the process on screenshots:
 
 Going to Delivery > From Sales Order, choosing the required document number (757 in this case). In Item details we add Batches assigned to the Manufacturing Order:
 
-    ![Batches](./media/delivery/batches-01.png)
+    ![Delivery item details screen showing batches assigned to a manufacturing order](./media/delivery/batches-01.png)
 
 The only Batches available are the ones that were generated on receiving from Manufacturing Order.
 
@@ -174,15 +196,15 @@ In the default query it is required to find this line: `T0."Status" <> 'C'  and 
 
 The following screenshots illustrate an example query, the necessary changes, and the resulting output in CompuTec WMS:
 
-    ![Delivery](./media/delivery/delivery.png)
+    ![Delivery query example screenshot showing pick list status filter change](./media/delivery/delivery.png)
 
 `T0."Status" <> 'C' changed to T0."Status" = 'Y'`
 
-    ![Status](./media/delivery/status.png)
+    ![Screenshot highlighting status line change in SQL query for picked pick lists](./media/delivery/status.png)
 
 The result:
 
-![Pick List](./media/delivery/pick-list.png)
+![Resulting pick list screen showing only documents with picked status](./media/delivery/pick-list.png)
 
 This checkbox has been removed because the option to choose document drafts is now integrated directly into the application interface.
 
