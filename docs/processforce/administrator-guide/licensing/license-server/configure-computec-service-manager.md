@@ -26,7 +26,9 @@ Before you begin, make sure that:
 For installation instructions, see the [**CompuTec License Server Installation**](computec-license-server-installation.md) guide.
 :::
 
-## Use CompuTec Service Manager
+## Open CompuTec Service Manager
+
+To use **CompuTec Service Manager**, follow these steps:
 
 1. Open the **Windows Start menu**.
 2. Locate and launch **CompuTec Service Manager**.
@@ -51,17 +53,19 @@ For installation instructions, see the [**CompuTec License Server Installation**
    - Open service-specific **Settings**.
    - Manage licenses for **CompuTec PDC** (**Plant Data Capture**) and **CompuTec WMS** (**Warehouse Management System**).
 
-6. To access service settings:
+## Configure Service Settings
 
-   - Select the service from the list.
+To configure service settings, follow these steps:
+
+1. Select the service from the list.
 
       ![alt text](media/lic-serv-config/lic-serv-config4.png)
 
-   - Click **Settings**.
+2. Click **Settings**.
 
       ![alt text](media/lic-serv-config/lic-serv-config4-1.png)
 
-7. You can use these options when troubleshooting services, applying configuration changes, or restarting services after updates.
+3. The **Server Settings** tab allows you to configure the **License Server**.
 
    ![alt text](media/lic-serv-config/lic-serv-config5.png)
 
@@ -75,6 +79,117 @@ For installation instructions, see the [**CompuTec License Server Installation**
    - Configure additional parameters:  
       - **Logging Level**: Controls the amount of information written to log files.
       - **Log Location**: Displays the location where log files are stored.
+
+## Configure CompuTec License Server Database Connection
+
+To allow the **CompuTec License Server** to communicate with **SAP Business One** company databases, configure a database connection.
+
+### Step 1: Add a database server
+
+To establish a connection between the **CompuTec License Server** and the **SAP Business One** database, follow these steps:
+
+1. Click the **Database Connection** tab.
+
+   ![alt text](media/lic-serv-config/congif-db-con1.png)
+
+2. Enter the database server details, and click **Add**.
+
+   ![alt text](media/lic-serv-config/congif-db-con3.png)
+
+   :::note[info]
+
+   Depending on a database server type, specify the server name in the below format:
+
+      | Database Server Type | Server Name Format | Example |
+      | --- | --- | --- |
+      | Microsoft SQL Server (default instance) | ``ServerName`` | ``Test-System`` |
+      | Microsoft SQL (named instance) | ``ServerName\InstanceName`` | ``Test System\Production`` |
+      | SAP HANA | ``ServerName:Port`` | ``10.0.0.199:30015`` |
+
+   <details>
+   <summary>For **SAP HANA Server** users</summary>
+
+   The method of obtaining the database server name depends on your **SAP Business One** authentication method.
+
+      - **Classic SAP Business One login**: The database server name is displayed in the **Current Server** field of the **SAP Business One menu** > **Admistration** > **Choose Company** window.
+
+         ![alt text](media/lic-serv-config/congif-db-con6.png)
+
+      - **SAP Business One Authentication Server or Active Directory Domain Services**: You can find the database server information in one of the following locations:
+         - the **Choose Company** window displayed during sign-in, where the server is shown in the format: ``TenantName@DatabaseServer:Port``. Example: ``DEV@hanadev:30013``.
+         - **System Landscape Directory(SLD)** > **DB Instances and Companies**, where the **Server Name** column displays the connection in the same format.
+
+            ![alt text](media/lic-serv-config/congif-db-con2.png)
+   </details>
+
+   <details>
+   <summary>For **Microsoft SQL Server** users</summary>
+
+   For **Microsoft SQL Server**, you can also verify the server and instance name in **SQL Server Management Studio**:
+
+      - Click **Connect** in **Object Explorer**, and then select **Browse for more...** in the **Server name** field.
+
+         ![alt text](media/lic-serv-config/congif-db-con70.png)
+
+      - You will find the server details in the **Browse for Servers** window.
+
+         ![alt text](media/lic-serv-config/congif-db-con7.png)
+   </details>
+
+   :::
+
+3. Select the Database Server Type.
+  
+   ![alt text](media/lic-serv-config/congif-db-con4.png)
+
+4. Enter the database user name and password, and click **Save**.
+
+   ![alt text](media/lic-serv-config/congif-db-con5.png)
+
+   :::info[note]
+   You can configure connections to multiple database servers.
+
+   ![alt text](media/lic-serv-config/congif-db-con70more.png)
+
+   :::
+
+5. If the connection is successful, a confirmation message appears and the number of company databases available on the server is displayed next to the server entry.
+
+    :::caution[important]
+      To see a newly restored/imported company database, refresh the company list before refreshing the database list in **CompuTec License Server**.
+
+      ![alt text](media/lic-serv-config/congif-db-con70refresh.png)
+    :::
+
+### Step 2: Verify the connection
+
+1. Click on the database name to expand its server node.
+
+   ![alt text](media/lic-serv-config/congif-db-con70number.png)
+
+    :::info
+        After this step, the warning: `Direct Data Access mode is disabled.` will no longer appear when launching CompuTec ProcessForce, provided that the connection to CompuTec License Server is configured correctly in CompuTec ProcessForce License Administration (see [Extension → License assignment section](../../installation/first-installation/extension)).
+    :::
+
+2. Verify that the required SAP Business One company databases are available.
+
+   ![alt text](media/lic-serv-config/congif-db-con70full.png)
+
+   :::info[note]
+   When you select a configured database server, the stored credentials are masked for security reasons.
+
+   ![alt text](media/lic-serv-config/congif-db-con70creden.png)
+
+   :::
+
+### Additional information
+
+To use **CompuTec ProcessForce** with **CompuTec License Server**, make sure that:
+
+- the database connection is configured in **CompuTec License Server**, and
+- a valid **CompuTec ProcessForce** license is imported and assigned. [Read more](http://learn.computec.one/docs/processforce/administrator-guide/licensing/license-import-and-assignment)
+
+When both configurations are complete, the ``Direct Data Access mode is disabled`` warning no longer appears when starting **CompuTec ProcessForce**.
 
 ## Result
 
