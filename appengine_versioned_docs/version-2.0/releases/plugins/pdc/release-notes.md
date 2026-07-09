@@ -9,6 +9,14 @@ toc_max_heading_level: 2
     Installer is ready to download from [here](../../plugins/pdc/download.md).
 :::
 
+## CompuTec PDC 3.10.28.2
+
+**Release Date: 9 June 2026**
+
+| Issue Type | Component/s | Release Note |
+| --- | --- | --- |
+| Fixed | PDC | Fixed an issue in **SAP HANA** environments where the **PDCVIEW** customization view could fail to load after employee login, causing its columns to be unavailable. The login process now waits until the application is fully initialized before loading the view. |
+
 ## CompuTec PDC 3.10.28.1
 
 **Release Date: 21 January 2026**
