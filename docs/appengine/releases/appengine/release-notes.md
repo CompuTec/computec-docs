@@ -4,6 +4,31 @@ sidebar_position: 1
 
 # CompuTec AppEngine Release Notes
 
+## CompuTec AppEngine 3.2607.1
+
+**Release Date: 9 July 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| New | AE Administration Panel | Added an **Additional settings** section to the **SLD Discovery** and **Company Activation** dialogs. Administrators can now optionally use **Force Old Authentication** and choose between ``Named User`` and ``System User`` legacy logon methods when connecting to an SLD server. |
+| New | AE Analytics | Added support for the **Time** data type, making it possible to use time values independently of dates in **Analytics** reports. |
+| Improved | AE Analytics | Improved error handling for dynamic lists and **Analytics** data sources. Errors are now displayed directly in the application instead of failing silently. |
+| Improved | AE Authentication | Improved **OpenID Connect (OIDC)** authentication diagnostics. Login failures now display the detailed error returned by the identity provider, helping administrators troubleshoot authentication issues more quickly. |
+| Improved | AE Analytics | **Visual Filters** now display a message when a chart contains no data instead of disappearing without explanation. |
+| Improved | AE Analytics | Added Super User permission checks for **Source Creator** variant management. |
+| Improved | Common Functions | Added the ability to copy version information for all installed plugins directly from the **About** window. |
+| Fixed | AE Authentication | Fixed an issue that prevented users from signing in to the **Launchpad** in **SAP Cloud Control Center (CCC)** environments. |
+| Fixed | AE Analytics | Fixed action execution for data sources that expose only a single available action. |
+| Fixed | AE Analytics | Fixed the **QC Test Status** action so it now correctly applies the selected status (``Start``, ``Hold``, or ``Resume``) instead of always closing the test. |
+| Fixed | WebUp | Fixed the **Script Editor** so it is correctly displayed as read-only for active (non-draft) views. |
+| Fixed | AE Common Library | Fixed an issue where empty ``SapLink`` fields displayed an unnecessary yellow chevron. |
+| Fixed | WMS Plugin | Fixed **Storage Categories** so SAP weight units (such as **kg**) are recognized and converted correctly. |
+| Fixed | AE Core | Improved API validation messages. Invalid requests now return clear validation errors instead of the generic ``The input was not valid`` message. |
+| Fixed | Common Functions | Fixed the ``Ref count for this object is higher than 0`` error that could occur while activating a company in **CompuTec AppEngine**. |
+| Fixed | AE Core | Fixed a transaction handling issue that could incorrectly trigger ``Concurrent update conflict detected`` errors when updating the same object within a transaction. |
+| Fixed | PFI | Improved **Bill of Materials (BOM)** import validation. If an invalid sequence number is detected, **CompuTec PFI** now identifies the exact line containing the error instead of returning a generic save failure. |
+| Fixed | Gantt Chart | Fixed the ``Data Table - invalid column Unique Id [66000-135]`` error that occurred when **Enable Query Validation** was turned on in **SAP Business One**. |
+
 ## CompuTec AppEngine 3.2606.1
 
 **Release Date: 10 June 2026**
