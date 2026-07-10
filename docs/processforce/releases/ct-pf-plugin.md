@@ -11,6 +11,45 @@ You can find all download links and release notes for the latest available **Com
 However, we strongly recommend using **CompuTec ProcessForce Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec ProcessForce 3.2607.1
+
+**Realease Date: 9 July 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| New | Production Costing | Added **Product Revaluation** when closing a **Manufacturing Order Receipt (MOR)**. Product costs are now automatically recalculated based on the selected costing method, including ``Moving Average``, ``FIFO``, and ``Serial & Batch Valuation``. **Manufacturing Orders** and **Inventory Revaluation** documents now reference each other, making cost changes easier to track. |
+| New | Resources | Added **Resource Efficiency**, allowing scheduling to automatically extend a resource's run time when its effective availability is below 100%. |
+| New | Quality Control | Added a wizard that lets you create multiple **Test Protocols** from a **Quality Control Template**, reducing manual setup. |
+| New | Quality Control | Added **CompuTec AppEngine** background jobs that automatically synchronize **Test Protocols** with their templates, ensuring they stay up to date. |
+| New | Scheduling | Added the ability to save **Scheduling Selection Criteria** as reusable templates, making it easier to reuse frequently used scheduling settings. |
+| New | Scheduling | Added a **General Settings** option to control how remaining quantities are handled on the **Scheduling Board**. You can choose to create a new sublist, add to an existing one, or let the system ask you each time. |
+| New | Planning | Added a **General Settings** option that allows resources within the same **Manufacturing Order** to overlap during scheduling. |
+| Improved | Resources | Resource balancing can now be enabled for individual resources or resource groups instead of applying globally to all resources. |
+| Improved | Manufacturing Order | Changing an operation's status now automatically updates the active state of its assigned resources and validates the change based on existing production activity. Finished operations are no longer scheduled. |
+| Improved | Scheduling | Added support for default scheduling methods at the **Item Group** and **Item Revision** levels. New **Manufacturing Orders** now inherit scheduling settings automatically. |
+| Improved | Scheduling | Added the ability to reschedule **Manufacturing Orders** to an alternative resource during an emergency resource shutdown, helping production continue when resources become unavailable. |
+| Improved | Scheduling | Scheduling can now continue even if some **Manufacturing Orders** cannot be scheduled. Orders that fail to schedule are identified together with the reason for the failure, while the remaining orders continue to be scheduled. |
+| Improved | Scheduling | Improved **Manufacturing Order** proposals on the **Scheduling Board** to correctly respect minimum and maximum quantities and automatically update child **Manufacturing Orders** when quantities change. |
+| Improved | Planning | Improved scheduling performance, resulting in faster scheduling operations and Manufacturing Order creation. |
+| Improved | Manufacturing Order | Improved Manufacturing Order management by automatically re-exploding **Material Phantoms** when they are changed on the **WIP** tab, displaying **Scrap %** in **WIP** calculations, synchronizing revision changes with linked **Sales Orders**, and allowing you to create **Manufacturing Orders** only for selected Sales Order lines. |
+| Improved | Manufacturing Order | Added a **General Settings** option that lets you choose whether automatically created **Goods Issues** and **Goods Receipts** use the linked **Pick Order/Pick Receipt** date or the document creation date. |
+| Improved | Quality Control | Added a **General Settings** option to automatically validate or create **Quality Control Tests** when an operation status changes. |
+| Improved | Production Costing | Added configurable default **Roll-up Selection Criteria**, making it easier to reuse the same costing configuration across roll-up calculations. |
+| Improved | Common Functions | Added a health check that detects produced items whose default revision has no **Bill of Materials** while an **SAP Bill of Materials** exists, with an option to remove orphaned** SAP BOMs** automatically. |
+| Improved | Common Functions | Improved yellow arrow navigation. Depending on your settings, it now opens **Item Master Data** directly when appropriate. |
+| Fixed | Scheduling | Fixed multiple issues on the **Scheduling Board**, including parent-child relationships after sorting, scheduling direction, invalid date calculations, remaining quantity handling, locked Manufacturing Orders, interval validation, automatic scheduling from **Sales Orders**, and overall performance and stability. |
+| Fixed | Manufacturing Order | Fixed several **Manufacturing Order** issues related to **Goods Receipt** creation, operation binding, bin allocation, setup and run-time calculations, rollback documents, and **Manufacturing Order** creation through the **Scheduling Board**. |
+| Fixed | MRP | Improved **MRP** calculations and stability by fixing internal lead time calculations, revision planning behavior, warehouse-specific results, reserved quantity display, **Order Recommendation** filtering, and additional scenarios using **Run by Warehouse** mode. |
+| Fixed | Production Costing | Fixed several **Production Costing** issues related to roll-over processing, **Costed BOM** refresh, **Time Correction** journal entries, **Inventory Revaluation** creation, and **Manufacturing Order** references. |
+| Fixed | Quality Control | Fixed automatic creation of **Quality Control** documents for **Goods Receipt PO (GRPO)** when using the **QC Test Creator** background job. |
+| Fixed | Resources | Fixed navigation from **Resource Master Data** so the yellow arrow now opens the correct **Resource Group**. |
+| Fixed | Operation Time Recording | Fixed an issue where recording operation time did not correctly update the assigned resource. |
+| Fixed | API | Fixed an ``HTTP 500 Index out of range`` error that could occur when creating **Manufacturing Orders** through the **CompuTec AppEngine OData API**. |
+| Fixed | Licensing | Users with a **Limited Logistics** license can now open the **Time and Cost** details of a **Manufacturing Order**. |
+| Fixed | BT360 | Fixed document-based batch filtering so **Delivery** documents now display the correct batches. |
+| Fixed | Common Functions | **Item Details** are now created automatically for assets, preventing the ``No active revisions`` error when creating Purchase Orders. |
+| Fixed | .NET Core | Fixed document series selection so period-controlled series are determined using the document posting date, ensuring the correct series is selected automatically. |
+
 ## CompuTec ProcessForce 3.2606.3
 
 **Release Date: 12 June 2026**
@@ -99,7 +138,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 | Fixed | Production Costing | Fixed an issue where costing entries were removed after adding the first routing. Existing costing data is now preserved correctly. |
 | Fixed | Scheduling | Fixed multiple issues in the **Scheduling Board** from **Order Recommendation**, including incorrect levels, dates, directions, and sequencing. Planning results are now accurate and consistent. |
 | Fixed | Gantt Chart | Fixed an issue with **Additional Planning Information** not loading correctly due to query errors. |
-| Fixed | Manufacturing Order | Fixed an issue where using the golden arrow from **Stock Status Report** could crash **SAP** when opening a **Manufacturing Order**. |
+| Fixed | Manufacturing Order | Fixed an issue where using the yellow arrow from **Stock Status Report** could crash **SAP** when opening a **Manufacturing Order**. |
 | Improved | Performance | Improved performance of **Manufacturing Order** creation and updates after upgrade, reducing delays in planning and execution processes. |
 | Fixed | Production Costing | Fixed an issue where **Journal Entry** series incorrectly depended on period indicators. |
 | Improved | Performance | Improved system performance by optimizing SQL queries and adding indexes, resulting in faster operations. |
