@@ -6,6 +6,19 @@ sidebar_position: 12
 
 Below are the release notes for CompuTec Material Requirements Planning (MRP) Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec MRP 3.2607.1
+
+**Release Date: 10 July 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | Capable-to-Promise (CTP) | Added a **Capable-to-Promise (CTP)** extension for the **SAP Business One Web Client**. You can now open **CTP** directly from a **Sales Order** and view **CTP** information in a dedicated section of the document. |
+| Improved | Capable-to-Promise (CTP) | Added an informational message indicating when a **Sales Order** has already been processed in a **CTP MRP** scenario, helping prevent duplicate planning. |
+| Improved | MRP | Added a confirmation message when leaving the **Vendor Lead Times** window with unsaved changes. If you choose to leave, any pending changes are discarded automatically. |
+| Fixed | MRP | Fixed an issue where the document series was left empty when creating documents from **Order Recommendation**. The default document series is now selected automatically. |
+| Fixed | MRP | Fixed the ``The report doesn't have any variants`` error that could occur when opening **MRP** reports. |
+| Fixed | MRP | Fixed the **Inventory Data** view so the warehouse is populated automatically instead of requiring manual selection. |
+
 ## CompuTec MRP 3.2605.3
 
 **Release Date: 20 May 2026**
