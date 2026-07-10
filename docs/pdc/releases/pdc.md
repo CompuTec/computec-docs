@@ -11,6 +11,21 @@ You can find all [download links](https://learn.computec.one/docs/appengine/2.0/
 However, we strongly recommend using CompuTec PDC 4.0 Plugin together with CompuTec AppEngine 3.0 to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec PDC 4.2607.1
+
+**Release Date: 10 July 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | Quality Control | You can now update both the **Quality Control Document Status** and **QC Test Status** directly from **CompuTec PDC**, eliminating the need to switch to another application. |
+| Improved | Issue to Production | **Issue to Production** now displays the issued quantity for each batch, making it easier to verify issued materials during production. |
+| Improved | Downtimes | When ending a downtime, the previously selected downtime reason is now filled in automatically, reducing manual data entry. |
+| Fixed | Goods Issue, Goods Receipt | Fixed an error that could occur during **Goods Issue** and **Goods Receipt** when both an **Item Description Function** and an **Issue/Receipt Function** were configured. |
+| Fixed | Quality Control | Fixed an issue that prevented saving **QC Test Properties** when reference codes were used, allowing **Quality Control** documents to be updated successfully. |
+| Fixed | Instructions | Fixed an issue where **Instructions** or **Technical Instructions** with no content could cause **CompuTec PDC** to close unexpectedly when opened. |
+| Fixed | Downtimes | Fixed the downtime timer so it now updates correctly during screen refreshes. |
+| Fixed | Instructions | Fixed the display of special characters, including accented characters used in languages such as French, in production instructions. |
+
 ## CompuTec PDC 4.2605.2
 
 **Release Date: 14 May 2026**
