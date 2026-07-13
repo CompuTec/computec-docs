@@ -38,7 +38,7 @@ sidebar_position: 1
 
 ## Step 2: Please check the documentation
 
-- [The documentation](../user-guide/overview.md)
+- [The documentation](../administrator-guide/installation/best-practices.md)
 - General settings and configuration
 - Check with other colleagues
 
