@@ -4,10 +4,8 @@ sidebar_position: 9
 
 # Data Import
 
-The CompuTec ProcessForce Import (PFI) Plugin is a robust and intuitive tool that streamlines the process of importing and updating data within CompuTec ProcessForce objects in SAP Business One.
+The **CompuTec ProcessForce Import (PFI)** plugin lets you import, update, and synchronize data in **CompuTec ProcessForce** quickly and efficiently.
 
-With PFI, administrators and power users can efficiently manipulate ProcessForce objects, reducing manual work and minimizing errors. The plugin is designed to accelerate data handling processes, making it easier to keep information accurate and up to date.
+You can use **PFI** to manage **CompuTec ProcessForce** objects in bulk, reducing manual data entry, minimizing errors, and speeding up implementation, migration, and ongoing maintenance tasks.
 
-For additional details and advanced usage guidance, please visit the dedicated [documentation](https://learn.computec.one/docs/appengine/plugins-user-guide/pfi/) page.
-
----
+To learn how to use the plugin, see the [**CompuTec ProcessForce Import (PFI)**](https://learn.computec.one/docs/appengine/plugins-user-guide/pfi/) documentation.
