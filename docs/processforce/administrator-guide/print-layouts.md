@@ -4,7 +4,6 @@ sidebar_position: 8
 
 # Print Layouts
 
-
 This page contains **CompuTec ProcessForce** print layouts for supported document types.
 
 The layouts are available for both **Microsoft SQL Server** and **SAP HANA** environments and are provided in English.

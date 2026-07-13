@@ -4,24 +4,23 @@ sidebar_position: 1
 
 # Multiple Branches
 
-**Feature:** Support for SAP Business One Multiple Branches in CompuTec ProcessForce
+**CompuTec ProcessForce** fully supports the **Multiple Branches** functionality available in **SAP Business One**.
 
-CompuTec ProcessForce is fully compatible with the **Multiple Branches** functionality available in SAP Business One. This feature allows users to manage and assign branches to transactions and documents across the system.
+If your company uses multiple branches, you can continue working with **CompuTec ProcessForce** documents in the same way as you do with standard SAP Business One documents.
 
----
+## How it works
 
-## Behavior in CompuTec ProcessForce
+Branch management in **CompuTec ProcessForce** follows the standard **SAP Business One** behavior.
 
-- Branch support in CompuTec ProcessForce works identically to how it does in standard SAP Business One.
-- No additional configuration or setup is required within CompuTec ProcessForce to enable branch usage.
-- Branch assignment on CompuTec ProcessForce documents is handled through the standard SAP Business One branch setup and selection mechanisms.
+- No additional configuration is required in **CompuTec ProcessForce**.
+- Branches are assigned to documents using the standard **SAP Business One** branch functionality.
+- Branch availability and assignment are controlled by your **SAP Business One** configuration and authorizations.
 
-### Requirements
+## Before you start
 
-- Branches must be configured in SAP Business One using its native **Multiple Branches** functionality.
+Make sure **Multiple Branches** is configured and enabled in **SAP Business One** before using it with **CompuTec ProcessForce**.
 
-### Additional Resources
+:::info[note]
 
-➡️ Check the [SAP Business One How-to Guide](https://help.sap.com/http.svc/rc/b909432c59b242f8be0c2a5ac0316b94/9.3/en-US/How%20to%20Work%20with%20Multiple%20Branches%20in%20SAP%20Business%20One%209.3.pdf) to learn more about managing SAP Business One branches.
-
----
+For information about configuring and managing branches, see the [**SAP Business One How-to Guide**](https://help.sap.com/http.svc/rc/b909432c59b242f8be0c2a5ac0316b94/9.3/en-US/How%20to%20Work%20with%20Multiple%20Branches%20in%20SAP%20Business%20One%209.3.pdf) for **Multiple Branches**.
+:::

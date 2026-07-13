@@ -4,11 +4,9 @@ sidebar_position: 3
 
 # CompuTec ProcessForce References on SAP Business One Documents
 
-This page serves as a **reference** guide to understand how CompuTec ProcessForce integrates with standard SAP Business One documents.
+This page describes the **CompuTec ProcessForce** fields added to standard **SAP Business One** documents.
 
-Each section below lists the fields populated by CompuTec ProcessForce in the respective documents, covering both **header** and **child** (line-level) details. These fields support traceability, automation, and audit requirements in manufacturing scenarios.
-
----
+Use this reference to identify the header- and line-level fields populated by **CompuTec ProcessForce** for manufacturing, traceability, reporting, and integration purposes.
 
 ## Receipt from Production
 
@@ -27,8 +25,6 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | U_PickLine       | U_LineNum in @CT_PF_PRE1 table              |                                                     |
 | U_PickType       | Pick UDO_Code                               |                                                     |
 
----
-
 ## Issue to Production
 
 |   HEADER -OIGE   |                                            |                                                   |
@@ -45,8 +41,6 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | U_PickEntry      | Pick Entry                                 |                                                   |
 | U_PickLine       | U_LineNum in @CT_PF_POR1 table             |                                                   |
 | U_PickType       | Pick UDO_Code                              |                                                   |
-
----
 
 ## Non-Stock Item
 
@@ -66,8 +60,6 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | Ref3         | Empty                                  |                                                   |
 | LineMemo     | Item Code                              |                                                   |
 
----
-
 ## Subcontracting Procurement Document
 
 |   HEADER -OPOR   |                                                        |
@@ -83,8 +75,6 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | U_PickEntry      | empty                                                  |
 | U_PickLine       | empty                                                  |
 | U_PickType       | empty                                                  |
-
----
 
 ## External Service Item (Goods Receipt PO)
 
@@ -102,8 +92,6 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | U_PickLine       | empty                                                  | U_LineNum in @CT_PF_PRE1 table |
 | U_PickType       | empty                                                  | Pick UDO_Code                  |
 
----
-
 ## Stock Transfer
 
 | HEADER OWTR      |                                            |                                   |
@@ -120,8 +108,6 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | U_PickLine       | empty                                      |                                   |
 | U_PickType       | empty                                      |                                   |
 
----
-
 ## Sales Order
 
 | HEADER ORDR      |               |
@@ -137,8 +123,6 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | U_PickEntry      | empty         |
 | U_PickLine       | empty         |
 | U_PickType       | empty         |
-
----
 
 ## Receipt Adjustment
 
@@ -157,8 +141,6 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | U_PickLine       | empty                                      |                                              |
 | U_PickType       | empty                                      |                                              |
 
----
-
 ## Issue Adjustment
 
 |   HEADER -OIGN   |                                            |                                                     |
@@ -175,8 +157,6 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | U_PickEntry      | empty                                      |                                                     |
 | U_PickLine       | empty                                      |                                                     |
 | U_PickType       | empty                                      |                                                     |
-
----
 
 ## Non-Stock Item Adjustment
 
@@ -196,8 +176,6 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | Ref3         | Empty                             |
 | LineMemo     | Item Code                         |
 
----
-
 ## Time Booking Journal Entry
 
 | HEADER -OJDT |                            |                                                   |                                |
@@ -215,8 +193,6 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | Ref2         | Empty                      |                                                   | Mor Doc Num                    |
 | Ref3         | Empty                      |                                                   |                                |
 | LineMemo     | Time Bookings              |                                                   | Time Bookings 7197             |
-
----
 
 ## Time Booking Adjustment Journal Entry
 
@@ -236,14 +212,12 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | Ref3         | Empty                      |                                                   |                                |
 | LineMemo     | Time Corrections           |                                                   | Time Corrections 7197          |
 
----
-
 ## Manufacturing Order Closing
 
 | HEADER -OJDT |                                 |                                 |
 |:------------:|:-------------------------------:|:-------------------------------:|
 | Reference 2  | ManufacturingOrder DocNum       |                                 |
-| Remarks      | empty                           | Manufacturing Order Close- 7253. |
+| Remarks      | empty                           | Manufacturing Order Close- 7253.|
 | Journal Memo | empty                           |                                 |
 | U_TransType  | empty                           | 'close'                         |
 | U_BaseRef    | empty                           |                                 |
@@ -256,24 +230,20 @@ Each section below lists the fields populated by CompuTec ProcessForce in the re
 | Ref3         | Empty                           |                                 |
 | LineMemo     | Manufacturng Order Close- 7253. |                                 |
 
----
-
 ## Receipt Correction Price Variance Journal
 
-| HEADER -OJDT     | | |
+| HEADER -OJDT | | |
 | :--------------: | :-: | :-: |
-| Reference 2      | ManufacturingOrder DocNum |  |
-| Remarks          | empty |  |
-| Journal Memo     | Goods Receipt Adjustment Sup. |  |
-| U_TransType      | empty | '60' |
-| U_BaseRef        | empty | Goods Issue DocEntry |
+| Reference 2 | ManufacturingOrder DocNum | |
+| Remarks | empty | |
+| Journal Memo | Goods Receipt Adjustment Sup. | |
+| U_TransType | empty | '60' |
+| U_BaseRef | empty | Goods Issue DocEntry |
 | **CHILDS -JDT1** | | |
-| U_LineNumRef     | empty | Goods Issue LineNum |
-| U_MOREntry       | empty | mor Entry |
-| U_MORDocNum      | empty | mor DocNum |
-| Ref1             | Empty |  |
-| Ref2             | ManufacturingOrder DocNum |  |
-| Ref3             | Empty |  |
-| LineMemo         | Manuf Rec variance 7253. | Mor Doc Num |
-
----
+| U_LineNumRef | empty | Goods Issue LineNum |
+| U_MOREntry | empty | mor Entry |
+| U_MORDocNum | empty | mor DocNum |
+| Ref1 | Empty | |
+| Ref2 | ManufacturingOrder DocNum | |
+| Ref3 | Empty | |
+| LineMemo | Manuf Rec variance 7253. | Mor Doc Num |
