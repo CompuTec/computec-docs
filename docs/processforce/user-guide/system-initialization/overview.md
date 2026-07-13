@@ -4,54 +4,33 @@ sidebar_position: 1
 
 # Overview
 
-System Initialization in SAP Business One refers to the foundational setup required before using the system for day-to-day operations. It governs the system-wide behavior, default values, and configurations that influence company-wide settings, user roles, data handling, and document management.
+**System Initialization** contains the SAP Business One settings that define how **CompuTec ProcessForce** behaves across your company.
 
----
+Use this section to configure system-wide settings before deploying or using **CompuTec ProcessForce**.
 
-## Major components under System Initialization
+## Available components
 
-1. **Authorizations**
+### Authorizations
 
-    This section is used to define and manage user permissions across modules. You can:
+Manage user permissions for **CompuTec ProcessForce** features and control access to forms, reports, and other functionality. [Read more](authorizations.md)
 
-        - Assign role-based access to specific forms, reports, and transactions.
-        - Control what actions (Read, Update, Create, Delete, etc.) each user or user group can perform.
-        - Create authorization templates for easier management of multiple users.
-        - Enhance data security and ensure compliance by restricting sensitive modules to only authorized users.
+### Data Restore
 
-2. **Data Restore**
+Restore or rebuild **CompuTec ProcessForce** data after installation, migration, or changes to existing company data. [Read more](data-restore.md)
 
-    This option is related to restoring backed-up company data into SAP Business One. It allows administrators to:
+### Document Numbering
 
-        - Restore previous versions of company databases from backup.
-        - Test database recoveries in non-production environments.
-        - Use as part of disaster recovery planning or data migration.
+Configure document series and numbering for **CompuTec ProcessForce** documents. [Read more](document-numbering.md)
 
-3. **Document Numbering**
+### General Settings
 
-    SAP Business One allows businesses to configure custom document numbering for all transactional and master data documents, including:
+Configure global **CompuTec ProcessForce** settings, including production, planning, costing, Quality Control, and other application preferences. [Read more](general-settings/overview.md)
 
-        - Sales and Purchase documents, Inventory, Finance, and Production modules.
-        - Series assignment by branch or department.
-        - Prefixes and suffixes for better identification (e.g., FY2025/INV/0001).
-        - Automatic number assignment ensures consistency, traceability, and avoids duplication.
+## Why configure System Initialization?
 
-4. **General Settings**
+Proper configuration helps ensure that:
 
-    This is the central configuration area that determines default behaviors and formats for various functionalities. You can set up:
-
-        - Display preferences (date format, decimal places, currency, etc.).
-        - Company defaults like tax settings, address formats, and reporting preferences.
-        - User-specific defaults (e.g., language, form settings).
-        - System messages, auto-logout settings, and more.
-
-**Why System Initialization Matters**
-
-Proper configuration of System Initialization ensures:
-
-- Smooth day-to-day operations.
-- Accurate data management and reporting.
-- Improved user experience and security.
-- Scalability and compliance with company policies.
-
----
+- **CompuTec ProcessForce** works as expected.
+- Users have the appropriate permissions.
+- Documents are numbered correctly.
+- Production, planning, and costing processes follow your company's requirements.
