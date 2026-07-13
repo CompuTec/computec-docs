@@ -4,30 +4,41 @@ sidebar_position: 8
 
 # Print Layouts
 
-This page lists the available **CompuTec ProcessForce print layout files**, including versions for both Microsoft SQL Server and SAP HANA environments. These layouts are provided in English and are updated periodically with bug fixes, layout improvements and additional support for SAP HANA.
 
----
+This page contains **CompuTec ProcessForce** print layouts for supported document types.
 
-## Scope
+The layouts are available for both **Microsoft SQL Server** and **SAP HANA** environments and are provided in English.
 
-- Includes standard print layouts used in CompuTec ProcessForce modules.
-- Contains layout files with header, detail, and properties sections for documents like Routing and Bill of Materials.
-- Provides both SQL Server (`.rpt`) and SAP HANA-compatible versions (`.zip` or `.rpt` with procedures).
+:::info[note]
+Updated print layouts are published on this page as they become available. They are later included in future **CompuTec ProcessForce** releases.
+:::
 
-## Update and Availability Notes
+## Available layouts
 
-> ℹ️ **Ongoing Updates**  
-Updated and corrected print layouts are published on this page until they are fully integrated into CompuTec ProcessForce installer.
+The downloadable files include standard **CompuTec ProcessForce** print layouts for documents such as:
 
-> ℹ️ **Issue Reporting**  
-To report issues with any listed report, use the [CompuTec Support Portal](http://support.computec.pl/) (select the *Support ProcessForce* project, and the *Print Layouts or Reports* component).
+- **Bill of Materials**
+- **Routing**
+- Manufacturing documents
+- Other supported **CompuTec ProcessForce** documents
 
-> ⚠️ **Custom Modifications**  
-If you plan to customize any layout or report, ensure that you **create a backup**. Default layout files (with "ProcessForce" in their name) may be **overwritten during updates**, potentially resulting in the loss of changes.
+:::warning[important]
 
-## Compatibility
+If you customize a print layout, create a backup before applying updates.
 
-> ⚠️ **For SAP HANA Users**  
-To use these layouts in SAP Business One for SAP HANA, you must **execute the included SQL procedures** on the appropriate HANA database.
+Standard layouts (identified by **ProcessForce** in the file name) may be replaced during an upgrade, causing your custom changes to be lost.
 
----
+:::
+
+Depending on the database platform, layouts are provided as:
+
+- **Microsoft SQL Server** (`.rpt`)
+- **SAP HANA** (`.rpt` or `.zip` with the required SQL procedures)
+
+    :::info[note]
+    If you use **SAP Business One for SAP HANA**, execute the SQL procedures included with the download before importing the print layouts.
+    :::
+
+## Report an issue
+
+If you find a problem with a print layout, contact [**CompuTec Support**](http://support.computec.pl/) through the **Support ProcessForce** project and select the **Print Layouts or Reports** component.
