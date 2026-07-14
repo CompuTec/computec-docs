@@ -4,6 +4,14 @@ sidebar_position: 1
 
 # CompuTec AppEngine Release Notes
 
+## CompuTec AppEngine 3.2607.2
+
+**Release Date: 14 July 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Fixed | Plugins | Fixed an issue that prevented plugins from being added manually. The **plugin upload** dialog now opens correctly, allowing administrators to upload and install plugins as expected. |
+
 ## CompuTec AppEngine 3.2607.1
 
 **Release Date: 9 July 2026**
