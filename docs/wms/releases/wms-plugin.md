@@ -6,6 +6,41 @@ sidebar_position: 4
 
 Below are the release notes for CompuTec WMS Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec WMS Plugin 4.2607.1
+
+**Release Date: 14 July 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| New | Client Android | The **CompuTec WMS** mobile client now updates itself automatically whenever a newer version is available on the server, reducing maintenance and ensuring users always run the latest version. |
+| New | Client | You can now fully customize document line colors, including highlighting overpicked lines, using the **Interface Design Manager**. [Read more](https://learn.computec.one/docs/wms/administrator-guide/custom-configuration/custom-configuration-functions/manager/interface-design-manager/) |
+| New | Server | The **Storage Unit Wizard** now allows you to create multiple child **Storage Units** under a single parent during **Goods Receipt PO (GRPO)**. |
+| New | Client | You can now allow users to edit the **Posting Date** on WMS documents through **Custom Configuration**, alongside the existing **Document Date** and **Delivery Date** options. |
+| New | Server | Added API support for creating and retrieving **Inventory Register** lines, making it easier to integrate inventory transactions with external systems. |
+| Improved | Server | Improved performance when loading **Storage Units**, significantly reducing loading times in environments with large numbers of Storage Units. |
+| Improved | Client | WMS client settings have been reorganized into a dedicated **Options** tab, making configuration easier to navigate. |
+| Improved | Server | You can now display two additional custom SQL information fields on the **Delivery Line Details** screen. [Read more](http://learn.computec.one/docs/wms/administrator-guide/custom-configuration/custom-configuration-functions/manager/overview) |
+| Improved | Client Android | The **Barcode Decoder** now displays the definition name when saving and asks for confirmation before deleting rules or definitions. |
+| Improved | Server | The Inventory Register API now validates **Storage Unit** codes before processing requests, improving data consistency. |
+| Improved | Client Adroid | The **@PickNumber** parameter is now supported when picking with **Storage Units**. |
+| Improved | Client | After updating a document line, the previously edited or scanned line is now highlighted when returning to the document, making it easier to continue scanning. |
+| Improved | Client | **Template BOMs** are now displayed more clearly and their components are shown correctly throughout WMS documents. |
+| Improved | Client | During **GRPO**, the quantity entry screen now stays open while there are remaining quantities to receive and returns to the document only after the full ordered quantity has been processed. |
+| Improved | Service Manager | **WMS Settings** now displays the full language name for each user instead of only the language code. |
+| Improved | Custom Configuration | SQL editors in **WMS Settings** now include syntax highlighting and a **Beautify** option for easier query editing. |
+| Fixed | Server | You can now create **Return Requests** for invoiced serial-managed and batch-managed items even when the return is not based on the original purchasing document. |
+| Fixed | Server | Deliveries created from **Pick Lists** containing multiple **Sales Orders** now use the correct delivery address from each **Sales Order**. |
+| Fixed | Client | Scanning supplier barcodes for items that exist on multiple Purchase Orders now correctly displays the document selection window. |
+| Fixed | Server | Improved **Storage Unit Wizard** validation by preventing duplicate **SSCC** numbers and validating company prefix and serial reference lengths. |
+| Fixed | Server | **Storage Units** counted to zero are now closed automatically after stock posting, keeping Storage Unit status synchronized with inventory. |
+| Fixed | Server | Fixed issues affecting the **Inventory Register** APIs and improved the accuracy of transaction history, including bin locations and transaction references. |
+| Fixed | Server | Warehouse information now displays bin locations for the correct warehouse when warehouse and bin codes have similar names. |
+| Fixed | Server | **Pick Order** allocations are now included when calculating allocated quantities, preventing incorrect batch availability during production. |
+| Fixed | Server | Scanning a GS1 barcode containing both item and batch information now opens the quantity screen immediately, eliminating the need to scan twice. |
+| Fixed | Server | **Delivery Storage Unit** validation no longer incorrectly affects **Goods Receipt PO** transactions. |
+| Fixed | Client | The default bin location is now assigned automatically during **Production Receipt** when configured. |
+| Fixed | Client | Improved **Pick Receipt** processing with **Storage Units** and **Auto Receipt** enabled. Success and error messages are now displayed consistently, duplicate **SSCC** numbers are detected correctly, and documents are created only when validation succeeds. |
+
 ## CompuTec WMS Plugin 3.2606.1
 
 **Release Date: 8 June 2026**
