@@ -4,58 +4,81 @@ sidebar_position: 2
 
 # Authorizations
 
-User authorizations in **CompuTec ProcessForce** determine who can access, view, and perform operations on various documents and functions. Properly configuring authorizations ensures operational control, data security, and compliance with company policies.
+Use **Authorizations** to control which **CompuTec ProcessForce** features and documents users can access.
 
----
+You configure **CompuTec ProcessForce** authorizations using the standard **SAP Business One** authorization framework.
 
-## Setting Authorizations for Users
+## Before you start
 
-To manage user permissions:
+Make sure you have the **Professional** license so you can modify user authorizations.
 
-1. Go to:
-    :::info Path
-   Administration → System Initialization → Authorizations → General Authorizations
-   :::
+## Configure User Authorizations
 
-   ![Authorizations Navigation](./media/authorizations/authorizations-main.webp)
+To manage user permissions, follow these steps:
 
-2. Click a username to open the authorization settings for that user.
+1. In **SAP Business One**, go to **Administration** > **System Initialization** > **Authorizations** > **General Authorizations**.
 
-3. Navigate to:
-    :::info Path
-   Authorizations Form → Users → ProcessForce
-   :::
+    ![alt text](media/authorizations/auth-ug-1.png)
+
+2. Select a user (or a group) whose permissions you want to configure.
+
+    ![alt text](media/authorizations/auth-ug-2.png)
+
+3. Navigate to **User Authorization** > **ProcessForce**.
+
+    ![alt text](media/authorizations/auth-ug-3.png)
+
+4. Choose the appropriate authorization level from the list for each feature.
+
+    ![alt text](media/authorizations/auth-ug-4.png)
+
+5. Click **Update**.
+
+    ![alt text](media/authorizations/auth-ug-5.png)
 
 ## Authorization Levels
 
-Each CompuTec ProcessForce-related function can be assigned one of the following access levels:
+You can assign one of the following authorization levels:
 
-- **Full Authorization**: Create, modify, and post documents.
-- **Read Only**: View content without making changes.
-- **No Authorization**: Access is completely restricted.
+- **Full Authorization**: The user can view, create, modify, and process documents.
+- **Read Only**: The user can view information but cannot make changes.
+- **No Authorization**: The user cannot access the feature.
 
-    ![Authorization Options](./media/authorizations/authorizations-options.webp)
+![alt text](media/authorizations/auth-ug-6.png)
 
-    > If options are grayed out, the user has **superuser privileges**.
+:::note[info]
+If the authorization options are unavailable (grayed out), the user has **Superuser** authorization level.
 
-To assign superuser status, navigate to:
+![alt text](media/authorizations/auth-ug-7superuser.png)
+:::
 
-    :::info Path
-    Administration → Setup → General → Users
-    :::
+### Assign Superuser authorization
 
-    ![Superuser Setting](./media/authorizations/super-user.webp)
+To assign **Superuser** atuthorization, follow these steps:
 
-> ⚠️ Only users with a **Professional license** can modify authorizations.
+1. Go to **Administration** > **Setup** > **General** > **Users**.
 
-## Required Authorizations for Key Transactions
+    ![alt text](media/authorizations/auth-ug-8.png)
 
-To work with specific CompuTec ProcessForce documents (e.g., production-related inventory transactions), users need the following permissions:
+2. Enter the **User Code** or **User Name** to choose the user.
+3. Check the **Superuser** box.
 
-- **Goods Receipt and Goods Issue**: Authorizations form → Inventory → Inventory Transactions → Goods Receipt [and] Goods Issue
-- **Journal Entry**: This setting is required for Goods Receipt and Goods Issue to reflect on financials: Authorizations Form → Financials → Journal Entry
-- **Pick Receipt and Pick Order**: User Authorization → ProcessForce → Production → Inventory Transaction → Pick Receipt [and] Pick Issue
-- **Numbering Series**: This is needed for documents series management: Authorizations form → Administration → Numbering Series.
+    ![alt text](media/authorizations/auth-ug-9.png)
+
+4. Click **Update**.
+
+    ![alt text](media/authorizations/auth-ug-10.png)
+
+## Additional SAP Business One authorizations
+
+Some **CompuTec ProcessForce** functions also require standard **SAP Business One** authorizations.
+
+- **Goods Receipt:** **Inventory** > **Inventory Transactions** > **Goods Receipt**
+- **Goods Issue:** **Inventory** > **Inventory Transactions** > **Goods Issue**
+- **Journal Entry:** **Financials** > **Journal Entry**
+- **Pick Receipt:** **ProcessForce** > **Production** > **Inventory Transactions** > **Pick Receipt**
+- **Pick Order:** **ProcessForce** > **Production** > **Inventory Transactions** > **Pick Order**
+- **Document Series:** **Administration** > **Numbering Series**
 
 ## Understanding User Authorization Behavior
 
@@ -64,16 +87,14 @@ To work with specific CompuTec ProcessForce documents (e.g., production-related 
 - **Dependency on License Type**: Only users with a **Professional license** can be granted or edit authorizations.
 - **Integration with SAP Business One**: CompuTec ProcessForce leverages SAP's built-in authorization framework to control access uniformly across modules.
 
-## Troubleshooting Access Issues
+## Troubleshooting
 
-If a user:
+If a user cannot perform an action:
 
-- Cannot access or modify a document: Ensure they have **Full Authorization** for the relevant transaction type.
-- Can’t see any CompuTec ProcessForce options: Verify the user has been assigned CompuTec ProcessForce authorizations under their user profile.
-- Sees all settings grayed out: Check if they are set as a **superuser** (which overrides manual configuration).
+- Verify that the user has **Full Authorization** for the required **CompuTec ProcessForce** feature.
+- Verify that any required **SAP Business One** authorizations are also assigned.
+- If the user is a **Superuser**, authorization settings cannot be modified because Superusers always have full access.
 
----
+## Result
 
-For additional guidance, contact CompuTec Support.
-
----
+After you configure the required authorizations, the user can access and work only with the **CompuTec ProcessForce** features and documents permitted by their assigned permissions.
