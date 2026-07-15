@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Recommended Start/End Date
+# Manufacturing Order Recommended Start/End Date
 
 In manufacturing planning, accurately defining order timelines is crucial to ensure smooth operations and resource management. The Recommended Start Date and Recommended End Date fields help users set expected completion timelines for manufacturing orders. These fields provide flexibility in scheduling without impacting Material Requirements Planning (MRP) calculations.
 

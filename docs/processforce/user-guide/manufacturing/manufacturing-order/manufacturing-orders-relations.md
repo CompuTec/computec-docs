@@ -4,7 +4,7 @@ toc_min_heading_level: 2
 toc_max_heading_level: 5
 ---
 
-# Manufacturing Orders Relations
+# Manufacturing Order Relations
 
 In a complex manufacturing environment, managing relationships between different Manufacturing Orders (MOs) is crucial for efficiency and traceability. The Manufacturing Orders Relations feature enables users to create advanced MO connections, linking a Child Manufacturing Order with multiple Parent Manufacturing Orders to streamline production workflows.
 

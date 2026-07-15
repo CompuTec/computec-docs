@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Document Date
+# Manufacturing Order Document Date
 
 The **Document Date** defines the posting date of a **CompuTec ProcessForce** document. It is used to determine the appropriate posting period and the document series available in **SAP Business One**.
 
