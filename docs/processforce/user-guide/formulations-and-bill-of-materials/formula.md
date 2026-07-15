@@ -108,11 +108,26 @@ Formulas can include [User-Defined Fields (UDFs)](https://learn.computec.one/doc
 
 :::
 
----
+## Using ``<sequence>`` in custom formulas
+
+When creating or updating **Bills of Materials (BOMs)** or **Manufacturing Orders (MOs)**, you can use the ``<sequence>`` placeholder in custom formulas.
+
+During processing, **CompuTec ProcessForce** automatically replaces ``<sequence>`` with the sequence number of the current row.
+
+**Example**: ``Items.U_Quantity(<sequence>)`` is automatically converted to the correct sequence for each component.
+
+### PFI imports
+
+When importing existing **BOMs** or **Manufacturing Orders** through **CompuTec ProcessForce Import (PFI)**:
+
+If the **Formula** field is left empty, the default formula from **General Settings** is applied.
+If you provide a custom formula, you can use ``<sequence>`` instead of manually entering the sequence number for every row.
+
+This makes it much easier to update existing **BOMs** and **Manufacturing Orders** without modifying formulas for each component individually.
 
 ## Yield Formulas
 
-To calculate yield in BOMs and MOs, update your default formulas in General Settings as shown below.
+To calculate yield in **BOMs** and **MOs**, update your default formulas in **General Settings** as shown below.
 
 ### Updated Formulas
 

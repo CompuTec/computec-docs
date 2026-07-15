@@ -75,6 +75,12 @@ When a Bill of Materials (BOM) is created, default formulas are automatically ap
 
 ![Formulas](./media/bom-mor/default-formula-bom.webp)
 
+:::note[Tip]
+
+When creating custom formulas, you can use the ``<sequence>`` placeholder. It is automatically replaced with the current row sequence in Bills of Materials, Manufacturing Orders, and during PFI imports.
+
+:::
+
 #### Default Formulas
 
 - **Items**:
