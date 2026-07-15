@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Extra Fields SQL in Main List Item on Transaction
+# Extra SQL Fields on Document Details
 
 Adding up to two customized values on the Item row on CompuTec WMS transactions is possible. It is possible to choose different values for different transactions. The values are based on SQL queries. The option is available from Custom Configuration.
 
@@ -12,11 +12,11 @@ Using the Filter field, you can filter records on the lists in Main and Document
 
 ## Settings
 
-- To activate the option, go to [Custom Configuration](../../../custom-configuration/overview.md) > Manager tab > and check Extra Fields SQL in Main List Item on Transaction checkbox.
+- To activate the option, go to [Custom Configuration](../../../custom-configuration/overview.md) > Manager tab > and check **Extra SQL Fields on Document Details** checkbox.
 
     ![Extra SQL](./media/extra-sql.webp)
-- Click the down arrow and a field next to the checkbox to open a drop-down list to choose a required transaction. It is necessary to log in to a database upon this action.
-- Click Load One to set up the value for the first field (it will be displayed on the spot of Query result 1 from the example screenshot above), click Load Two to set up the value for the second field (it will be displayed on the spot of Query result 2 from the example screenshot above). This leads to the SQL Query form:
+- Click the **down arrow** and a **field next to the checkbox** to open a drop-down list to choose a required transaction. It is necessary to log in to a database upon this action.
+- Click **Load One** to set up the value for the first field (it will be displayed on the spot of Query result 1 from the example screenshot above), click **Load Two** to set up the value for the second field (it will be displayed on the spot of Query result 2 from the example screenshot above). This leads to the SQL Query form:
 
     ![Query Example](./media/query-example.webp)
 
@@ -27,7 +27,7 @@ Using the Filter field, you can filter records on the lists in Main and Document
 
 ### UDF
 
-In this example, we want to add ItmsGrpCod (Item Group Code) where the value is 105 to the first extra field on the Item list on Delivery Transaction:
+In this example, we want to add ``ItmsGrpCod`` (**Item Group Code**) where the value is ``105`` to the first extra field on the **Item** list on **Delivery Transaction**:
 
 The SQL query:
 

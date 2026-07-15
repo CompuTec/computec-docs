@@ -1,10 +1,10 @@
 ---
-sidebar_position: 7
+sidebar_position: 5
 ---
 
-# Additional Information Fields Line Details
+# Extra SQL Fields on Line Details
 
-**Additional Information Fields Line Details** allows you to display custom SQL-based information in selected **CompuTec WMS** screens.
+**Extra SQL Fields on Line Details** allows you to display custom SQL-based information in selected **CompuTec WMS** screens.
 
 ![alt text](media/wms-additional-info-fields1.png)
 
@@ -13,7 +13,7 @@ Each field is populated using an SQL query, making it possible to display additi
 ## Enable the feature
 
 1. Go to **Manager**.
-2. Select **Additional Information Fields Line Details**.
+2. Select **Extra SQL Fields on Line Details**.
 
     ![alt text](media/wms-additional-info-fields5.png)
 

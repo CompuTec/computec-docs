@@ -2,13 +2,13 @@
 sidebar_position: 6
 ---
 
-# Workflow Designer Manager
+# Interface Design Manager
 
-The **Workflow Designer Manager** allows administrators to customize the layout and appearance of the **CompuTec WMS** client.
+The **Interface Design Manager** allows administrators to customize the layout and appearance of the **CompuTec WMS** client.
 
 Using workflow templates, you can configure how the application's main menu is organized, control which transactions are available to users, group transactions into containers, customize line colors, and simplify the interface for warehouse operators.
 
-With the **Workflow Design Manager**, you can:
+With the **Interface Design Manager**, you can:
 
 - create workflow templates,
 - organize transactions,
@@ -19,7 +19,7 @@ With the **Workflow Design Manager**, you can:
 - hide selected interface buttons,
 - assign templates to SAP Business One users.
 
-## Enable the Workflow Designer Manager
+## Enable the Interface Design Manager
 
 Before creating or assigning templates, enable the feature.
 
@@ -27,7 +27,7 @@ Before creating or assigning templates, enable the feature.
 2. Select **Enable Interface Design Manager**.
 3. Select **Save**.
 
-The **Workflow Designer Manager** becomes available.
+The **Interface Design Manager** becomes available.
 
 ## Create a template
 
@@ -44,11 +44,11 @@ The **Workflow Designer Manager** becomes available.
 
     ![alt text](media/wms-config-manager4.png)
 
-3. After selecting or creating a template, the **Workflow Design Manager** opens.
+3. After selecting or creating a template, the **Interface Design Manager** opens.
 
 ## Design the workflow
 
-The **Workflow Designer Manager** contains three working areas.
+The **Interface Design Manager** contains three working areas.
 
     ![alt text](media/wms-config-manager6.png)
 
@@ -171,7 +171,7 @@ You can assign custom icons to:
 
 To assign a custom icon, follow these steps:
 
-1. Click **Options** in **Workflow Designer Manager**.
+1. Click **Options** in **Interface Design Manager**.
 2. Click **Set Image**.
 
     ![alt text](media/wms-config-manager14.png)
@@ -206,7 +206,7 @@ Restart the **CompuTec WMS Server** to apply the changes.
 
 ## Default template
 
-The **Workflow Designer Manager** includes one predefined template.
+The **Interface Design Manager** includes one predefined template.
 
 If no custom template is assigned, the default template is used automatically.
 
