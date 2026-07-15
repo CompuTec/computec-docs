@@ -48,7 +48,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 | Fixed | Licensing | Users with a **Limited Logistics** license can now open the **Time and Cost** details of a **Manufacturing Order**. |
 | Fixed | BT360 | Fixed document-based batch filtering so **Delivery** documents now display the correct batches. |
 | Fixed | Common Functions | **Item Details** are now created automatically for assets, preventing the ``No active revisions`` error when creating Purchase Orders. |
-| Fixed | .NET Core | Fixed document series selection so period-controlled series are determined using the document posting date, ensuring the correct series is selected automatically. |
+| Fixed | .NET Core | Added support for **Document Date**-based document series selection. CompuTec ProcessForce now automatically selects the correct document series based on the document posting date, matching SAP Business One behavior. [Read more](https://learn.computec.one/docs/processforce/user-guide/manufacturing/manufacturing-order/document-date) |
 
 ## CompuTec ProcessForce 3.2606.3
 

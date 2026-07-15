@@ -4,6 +4,14 @@ sidebar_position: 1
 
 # CompuTec AppEngine Release Notes
 
+## CompuTec AppEngine 3.2607.4
+
+**Release Date: 15 July 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Fixed | AE Analytics | Fixed an issue that prevented **Analytics reports** from being generated. Users can now create and view reports successfully. |
+
 ## CompuTec AppEngine 3.2607.2
 
 **Release Date: 14 July 2026**
