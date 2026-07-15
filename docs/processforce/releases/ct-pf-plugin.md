@@ -18,7 +18,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 | Issue Type | Component | Release Note |
 | --- | --- | --- |
 | New | Production Costing | Added **Product Revaluation** when closing a **Manufacturing Order Receipt (MOR)**. Product costs are now automatically recalculated based on the selected costing method, including ``Moving Average``, ``FIFO``, and ``Serial & Batch Valuation``. **Manufacturing Orders** and **Inventory Revaluation** documents now reference each other, making cost changes easier to track. |
-| New | Resources | Added **Resource Efficiency**, allowing scheduling to automatically extend a resource's run time when its effective availability is below 100%. |
+| New | Resources | Added **Resource Efficiency**, allowing scheduling to automatically extend a resource's run time when its effective availability is below 100%. [Read more](http://learn.computec.one/docs/processforce/user-guide/scheduling/resource-efficiency) |
 | New | Quality Control | Added a wizard that lets you create multiple **Test Protocols** from a **Quality Control Template**, reducing manual setup. |
 | New | Quality Control | Added **CompuTec AppEngine** background jobs that automatically synchronize **Test Protocols** with their templates, ensuring they stay up to date. |
 | New | Scheduling | Added the ability to save **Scheduling Selection Criteria** as reusable templates, making it easier to reuse frequently used scheduling settings. |
