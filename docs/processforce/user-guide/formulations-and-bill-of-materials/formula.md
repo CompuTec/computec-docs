@@ -108,7 +108,7 @@ Formulas can include [User-Defined Fields (UDFs)](https://learn.computec.one/doc
 
 :::
 
-## Using ``<sequence>`` in custom formulas
+## Using ``<sequence>`` in Custom Formulas
 
 When creating or updating **Bills of Materials (BOMs)** or **Manufacturing Orders (MOs)**, you can use the ``<sequence>`` placeholder in custom formulas.
 
