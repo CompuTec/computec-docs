@@ -64,7 +64,7 @@ Each exception record includes:
 You can manage exceptions through the You Can Also button:
 
 - Remove past exceptions – Deletes previous entries automatically.
-- Create exceptions based on current working days till... 
+- Create exceptions based on current working days till...
 – Duplicates current workday settings until a specified Till Date.
 
 This flexibility helps manufacturers easily manage capacity adjustments.

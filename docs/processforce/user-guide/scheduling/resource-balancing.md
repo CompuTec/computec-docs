@@ -36,13 +36,13 @@ Below is an **example** that illustrates how the system selects the most efficie
 - **Scheduling Direction**: Forward (from date 01/01)
 - All machines are available **24/7**
 
-| Resource | Run Rate | Run Time | Available From | Finish Time         |
-|----------|----------|----------------|---------------------| ----------|
-| M1       | 10 pcs/h | 10 hours   | 10.01 10:00 AM | 10.01 08:00 PM      |
-| M2       | 10 pcs/h | 10 hours   | 11.01 05:00 PM | 12.01 03:00 AM      |
-| M3       | 5 pcs/h | 20 hours   | 09.01 01:00 AM | **09.01 09:00 PM**  |
-| M4       | 5 pcs/h | 20 hours   | 10.01 05:00 AM | 10.01 01:00 AM      |
-| M5       | 10 pcs/h | 10 hours   | 10.01 07:00 PM | 11.01 05:00 AM      |
+| Resource | Run Rate | Run Time | Available From | Finish Time |
+| --- | --- | --- | --- | --- |
+| M1 | 10 pcs/h | 10 hours | 10.01 10:00 AM | 10.01 08:00 PM |
+| M2 | 10 pcs/h | 10 hours | 11.01 05:00 PM | 12.01 03:00 AM |
+| M3 | 5 pcs/h | 20 hours | 09.01 01:00 AM | **09.01 09:00 PM** |
+| M4 | 5 pcs/h | 20 hours | 10.01 05:00 AM | 10.01 01:00 AM |
+| M5 | 10 pcs/h | 10 hours | 10.01 07:00 PM | 11.01 05:00 AM |
 
 >Note: **The system will choose M3 for this work**
 
