@@ -410,10 +410,13 @@ In the **AppEngine Servers** section of CompuTec AppEngine **Administration Pane
 - **Address**: Indicates the network address or host name of the server
 
     :::warning[Important]
-    Always use the **server's host name** or **fully qualified domain name (FQDN)**, for example:
-    ``https://appserver.company.com:50000``
+    Specify the **AppEngine Server** **Address** using its **host name** or **fully qualified domain name (FQDN)**.
 
-    Do not use ``localhost`` in production environments. ``localhost`` refers to the local machine, so remote clients and integrated applications cannot use it to connect to the **CompuTec AppEngine service**.
+    Do not use ``localhost``. ``localhost`` refers to the local machine, so client applications and other servers cannot use it to connect to the **CompuTec AppEngine service**.
+
+    Examples:
+        - ``https://APPSERVER:50000``
+        - ``https://appserver.company.com:50000``
     :::
 
 - **Status**: Displays the operational status of the server (e.g., active/inactive)
