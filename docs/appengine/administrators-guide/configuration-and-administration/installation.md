@@ -407,7 +407,15 @@ In the **AppEngine Servers** section of CompuTec AppEngine **Administration Pane
 - **Id**: Numeric identifier of the server instance
 - **Instance Name**: The name assigned to the server instance (e.g., default)
 - **GUID**: A globally unique identifier for each server instance
-- **Address**: Indicates the network address or hostname of the server
+- **Address**: Indicates the network address or host name of the server
+
+    :::warning[Important]
+    Always use the **server's host name** or **fully qualified domain name (FQDN)**, for example:
+    ``https://appserver.company.com:50000``
+
+    Do not use ``localhost`` in production environments. ``localhost`` refers to the local machine, so remote clients and integrated applications cannot use it to connect to the **CompuTec AppEngine service**.
+    :::
+
 - **Status**: Displays the operational status of the server (e.g., active/inactive)
 - **Restart Required**: Shows if a restart is needed
 - **Telemetry Profile**: Access server-specific settings
