@@ -178,3 +178,29 @@ Now you have to connect the relevant qualifications to the appropriate **Test Pr
 
 4. Click **Update**.
 5. Done! The assigned qualification will be used when applying frequency-based QC rules during **Goods Receipt PO** processing.
+
+## Validate or create Quality Control Tests on operation status change
+
+You can configure how the system handles **Quality Control Tests** when the status of a manufacturing operation changes.
+To configure this behavior:
+
+1. Go to **Administration** > **System Initialization** > **General Settings**.
+2. Navigate to **ProcessForce** tab > **QC** tab.
+
+        ![alt text](media/automatic-creation-of-quality-control-documents/pf-general-block3.png)
+
+3. Find **Block operation status change based on QC document setting** field, and click the **arrow to see your options.
+
+        ![alt text](media/automatic-creation-of-quality-control-documents/pf-general-block.png)
+
+4. Choose one option from the list:
+
+        - **No Validation**: The system does not validate the related **Quality Control Test** when the operation status changes.
+        - **Started**: The system requires the related **Quality Control Test** to be in the ``Started`` status when the operation status changes.
+        - **Finished**: The system requires the related **Quality Control Test** to be in the ``Finished`` status when the operation status changes.
+
+        ![alt text](media/automatic-creation-of-quality-control-documents/pf-general-block2.png)
+
+5. Click **Update**.
+
+This setting works together with the automatic **Quality Control Test** creation options and allows you to control how **Quality Control Tests** are processed when an operation status changes.
