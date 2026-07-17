@@ -4,6 +4,15 @@ sidebar_position: 1
 
 # CompuTec AppEngine Release Notes
 
+## CompuTec AppEngine 3.2607.5
+
+**Release Date: 16 July 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Improved | OData API | Improved the way the **OData API** processes incoming requests, making integrations more reliable when working with string values. |
+| Fixed | OData API | Fixed an issue where the **OData API** returned the generic ``The input was not valid`` message. Validation errors now provide clearer information, making it easier to identify and resolve invalid requests. |
+
 ## CompuTec AppEngine 3.2607.4
 
 **Release Date: 15 July 2026**
