@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # CompuTec Labels Plugin Release Notes
 
-## CompuTec Labels Plugin 
+## CompuTec Labels Plugin
 
 Below are the release notes for CompuTec Labels Plugin. This Plugin can be used and instlled using CompuTec Appngine. [Read more](https://learn.computec.one/docs/labels/ct-labels-plugin/ct-label/)
 
