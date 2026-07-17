@@ -2,9 +2,9 @@
 sidebar_position: 5
 ---
 
-# Configure a Barcode Scanner
+# Configure a USB Barcode Scanner
 
-Before using a barcode scanner with **CompuTec WMS**, you must configure it with the required settings. The following sections provide model-specific configuration instructions.
+Before using a USB barcode scanner with **CompuTec WMS**, you must configure it with the required settings. The following sections provide model-specific configuration instructions.
 
 ## Configure Honeywell MS5145 LS USB Scanner
 
