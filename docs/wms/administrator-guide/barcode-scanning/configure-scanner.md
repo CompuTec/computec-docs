@@ -13,15 +13,15 @@ To work correctly with **CompuTec WMS**, the **Honeywell MS5145 LS USB** scanner
 - **Prefix:** `002`
 - **Suffix:** `003`
 
-Follow the steps below to configure the scanner.
+Follow the steps below to configure the USB scanner.
 
 ### Before you start
 
 Make sure you have access to the configuration barcodes for the **Honeywell MS5145 LS USB** scanner.
 
-### Configure the scanner
+### Configure the USB scanner
 
-To configure the scanner, follow these steps:
+To configure the USB scanner, follow these steps:
 
 1. Scan the **Enable Factory Defaults** barcode.
 
@@ -65,7 +65,7 @@ To configure the scanner, follow these steps:
 
 ### Result
 
-The scanner is now configured to send:
+The USB barcode scanner is now configured to send:
 
 - **Prefix:** `002`
 - **Suffix:** `003`
