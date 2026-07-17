@@ -86,9 +86,9 @@ Assume a resource normally produces 100 units per hour.
 
 If an operation normally requires 10 hours:
 
-- CAF = 1.0 > scheduled for 10 hours
-- CAF = 0.8 > scheduled for 12.5 hours
-- CAF = 1.2 > scheduled for approximately 8.3 hours
+- CAF = 1.0 - scheduled for 10 hours
+- CAF = 0.8 - scheduled for 12.5 hours
+- CAF = 1.2 - scheduled for approximately 8.3 hours
 
 :::
 
