@@ -10,14 +10,23 @@ toc_max_heading_level: 4
 
 Below are the release notes for CompuTec Labels Printing Manager, highlighting new features, improvements, and bug fixes in this release.
 
+### CompuTec Labels Printing Manager 4.8.7
+
+**Release Date: 16 July 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Improved | Printing Manager Application | Improved the SQL editor in **Company Object Types** with syntax highlighting, automatic formatting, and query testing. You can now write, format, and validate SQL queries against the connected SAP Business One company database before saving them. [Read more](http://learn.computec.one/docs/labels/using-computec-labels/sql-queries) |
+| Fixed | Printing Manager Application | Fixed support for custom SQL Server procedures used to select label templates and printers during printing. **Important:** If your environment uses the `CT_LP_SELECTPRINTTEMPLATE` database function, remove it before updating the CompuTec Labels database structure. The update installs `CT_LP_SELECTPRINTTEMPLATE` as a stored procedure. |
+
 ### CompuTec Labels Printing Manager 4.8.6
 
 **Release Date: 16 March 2026**
 
-| Issue Type | Components | Reference Support Ticket | Release Note |
-| --- | --- | --- | --- |
-| Improvement | Printing Manager Application | SLABE-1081 | **WMS Serial Info** and **Batch Serial Info** queries have been revised. |
-| Improvement | Printing Manager Application | SLABE-1098 | The **Enable Usage of Storage Procedure** functionality has been re-enabled. **Note**: SQL users need to drop the following function before installing the updated database objects: ``DROP FUNCTION CT_LP_SELECTPRINTTEMPLATE``. |
+| Issue Type | Components | Release Note |
+| --- | --- | --- |
+| Improved | Printing Manager Application | **WMS Serial Info** and **Batch Serial Info** queries have been revised. |
+| Improved | Printing Manager Application | The **Enable Usage of Storage Procedure** functionality has been re-enabled. **Note**: SQL users need to drop the following function before installing the updated database objects: ``DROP FUNCTION CT_LP_SELECTPRINTTEMPLATE``. |
 
 ### CompuTec Labels Printing Manager 4.8.5
 
