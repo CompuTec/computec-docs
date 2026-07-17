@@ -16,7 +16,7 @@ Below are the release notes for CompuTec Labels Printing Manager, highlighting n
 
 | Issue Type | Component | Release Note |
 | --- | --- | --- |
-| Improved | Printing Manager Application | Improved the **SQL editor** in **Company Object Types** with syntax highlighting, automatic formatting, and query testing. You can now write, format, and validate SQL queries against the connected SAP Business One company database before saving them. [Read more](http://learn.computec.one/docs/labels/using-computec-labels/sql-queries) |
+| Improved | Printing Manager Application | Improved the **SQL editor** in **Company Object Types** with syntax highlighting, automatic formatting, and query testing. You can now write, format, and validate SQL queries against the connected SAP Business One company database before saving them. [Read more](https://learn.computec.one/docs/labels/using-computec-labels/sql-queries-test) |
 | Fixed | Printing Manager Application | Fixed support for custom **SQL Server** procedures used to select label templates and printers during printing. **Important:** If your environment uses the `CT_LP_SELECTPRINTTEMPLATE` database function, remove it before updating the CompuTec Labels database structure. The update installs `CT_LP_SELECTPRINTTEMPLATE` as a stored procedure. |
 
 ### CompuTec Labels Printing Manager 4.8.6
