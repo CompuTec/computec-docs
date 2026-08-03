@@ -20,7 +20,7 @@ Below are the release notes for CompuTec Planning & Bottleneck Scheduling (MO Wi
 
 | Issue Type | Components | Release Note |
 | --- | --- | --- |
-| Fixed | MOWizard | Fixed an issue where **MOWizard** scenarios did not load and the screen remained stuck on loading. You can now open and work with your scenarios smoothly in both SAP and in your browser. |
+| Fixed | MO Wizard | Fixed an issue where **MOWizard** scenarios did not load and the screen remained stuck on loading. You can now open and work with your scenarios smoothly in both SAP and in your browser. |
 
 ## CompuTec MO Wizard 3.2601.2
 
@@ -28,7 +28,7 @@ Below are the release notes for CompuTec Planning & Bottleneck Scheduling (MO Wi
 
 | Issue Type | Components | Release Note |
 | --- | --- | --- |
-| Improved | MOWizard | You can now show, hide, and freeze columns in **Adjustment and Scheduling** screens for easier data review. |
+| Improved | MO Wizard | You can now show, hide, and freeze columns in **Adjustment and Scheduling** screens for easier data review. |
 
 ## CompuTec MO Wizard 3.2601.1
 
@@ -36,8 +36,8 @@ Below are the release notes for CompuTec Planning & Bottleneck Scheduling (MO Wi
 
 | Issue Type | Components | Release Note |
 | --- | --- | --- |
-| Fixed | MOWizard | We've fixed an issue that caused values to blink or refresh unexpectedly in the MOWizard interface. Displayed values are now stable, improving data readability. |
-| Improved | MOWizard | You can now create custom variants for the Scheduling list, allowing you to tailor the view to your workflow. <br/> Each variant can define: <ul><li>Column order</li><li>Frozen (locked) columns</li><li>Column visibility</li><li>Filters</li><li>Sorting rules</li></ul> This makes it easier to focus on the most relevant information. |
+| Fixed | MO Wizard | We've fixed an issue that caused values to blink or refresh unexpectedly in the MOWizard interface. Displayed values are now stable, improving data readability. |
+| Improved | MO Wizard | You can now create custom variants for the Scheduling list, allowing you to tailor the view to your workflow. <br/> Each variant can define: <ul><li>Column order</li><li>Frozen (locked) columns</li><li>Column visibility</li><li>Filters</li><li>Sorting rules</li></ul> This makes it easier to focus on the most relevant information. |
 
 ## CompuTec MOWizard 3.2509.1
 
