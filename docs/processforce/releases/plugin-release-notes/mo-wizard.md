@@ -6,6 +6,14 @@ sidebar_position: 11
 
 Below are the release notes for CompuTec Planning & Bottleneck Scheduling (MO Wizard) Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec MO Wizard 3.2607.1
+
+**Release Date: 30 July 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Fixed | Scheduling | Fixed an issue where the **Bottleneck Declaration** button was not displayed during the **Scheduling** step of the **Manufacturing Order Wizard**. |
+
 ## CompuTec MOWizard 3.2603.1
 
 **Release Date: 1 April 2026**
