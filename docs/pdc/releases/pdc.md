@@ -11,6 +11,15 @@ You can find all [download links](https://learn.computec.one/docs/appengine/2.0/
 However, we strongly recommend using CompuTec PDC 4.0 Plugin together with CompuTec AppEngine 3.0 to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec PDC 4.2607.2
+
+**Release Date: 23 July 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Fixed | Goods Issue | Fixed an issue where the bin location and warehouse quantity were not displayed immediately for the resource's default bin-managed warehouse. The correct values are now shown without having to reselect the warehouse. |
+| Fixed | Issue to Production | Fixed an SQL syntax error that could occur when opening the **Item Substitutes** window during **Issue to Production**. The substitute items list now opens correctly, and item descriptions are retrieved only when a custom **Item Description Function** is configured. |
+
 ## CompuTec PDC 4.2607.1
 
 **Release Date: 10 July 2026**
