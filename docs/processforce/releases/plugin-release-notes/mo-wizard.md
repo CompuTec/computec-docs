@@ -14,7 +14,7 @@ Below are the release notes for CompuTec Planning & Bottleneck Scheduling (MO Wi
 | --- | --- | --- |
 | Fixed | Scheduling | Fixed an issue where the **Bottleneck Declaration** button was not displayed during the **Scheduling** step of the **Manufacturing Order Wizard**. |
 
-## CompuTec MOWizard 3.2603.1
+## CompuTec MO Wizard 3.2603.1
 
 **Release Date: 1 April 2026**
 
@@ -22,7 +22,7 @@ Below are the release notes for CompuTec Planning & Bottleneck Scheduling (MO Wi
 | --- | --- | --- |
 | Fixed | MOWizard | Fixed an issue where **MOWizard** scenarios did not load and the screen remained stuck on loading. You can now open and work with your scenarios smoothly in both SAP and in your browser. |
 
-## CompuTec MOWizard 3.2601.2
+## CompuTec MO Wizard 3.2601.2
 
 **Release Date: 29 January 2026**
 
@@ -30,7 +30,7 @@ Below are the release notes for CompuTec Planning & Bottleneck Scheduling (MO Wi
 | --- | --- | --- |
 | Improved | MOWizard | You can now show, hide, and freeze columns in **Adjustment and Scheduling** screens for easier data review. |
 
-## CompuTec MOWizard 3.2601.1
+## CompuTec MO Wizard 3.2601.1
 
 **Release Date: 13 January 2026**
 
