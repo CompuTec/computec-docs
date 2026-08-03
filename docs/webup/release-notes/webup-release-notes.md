@@ -4,6 +4,14 @@ sidebar_position: 1
 
 # CompuTec WebUp Release Notes
 
+## CompuTec WebUp 1.2607.1
+
+**Release Date: 24 July 2026**
+
+| Issue Type | Release Note |
+| --- | --- |
+| Fixed | Fixed an issue where **Save & Preview** could display an outdated version of a view. Changes to **View Actions** and **View Events** are now applied immediately on the first preview. |
+
 ## CompuTec WebUp 1.2606.1
 
 **Release Date: 22 June 2026**
