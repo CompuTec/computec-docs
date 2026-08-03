@@ -11,6 +11,25 @@ You can find all download links and release notes for the latest available **Com
 However, we strongly recommend using **CompuTec ProcessForce Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec ProcessForce 3.2607.2
+
+**Release Date: 22 July 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Improved | Scheduling | The **Scheduling Board** now displays the total **In Stock**, **Committed**, **Available**, and **Ordered** quantities across all warehouses alongside the values for the default warehouse. |
+| Fixed | Manufacturing Order | Fixed an ``Index was out of range`` error that could occur when selecting a bin location during **Pick Receipt** for non-batch and non-serial items in bin-managed warehouses. |
+| Fixed | Manufacturing Order | **Backflush** goods issues now correctly include the item's revision code instead of leaving it blank. |
+| Fixed | API | Fixed a synchronization issue where a failed **Manufacturing Order > Production Order** update could leave related processes, such as **Goods Receipt from Pick Receipt**, in an inconsistent state. |
+| Fixed | Scheduling | Fixed an ``un-representable DateTime`` error that could occur when scheduling a **Manufacturing Order**. |
+| Fixed | Gantt Chart | The **Extend Work** action in the **Gantt Chart** now correctly calculates additional run time based on resource calendar exceptions. |
+| Fixed | MRP | The **SAP Order Recommendation** now refreshes automatically after documents are created, and the results window reports the status of every processed document. |
+| Fixed | Gantt Chart, Scheduling | The **Load Report** and **Resource Planning Board** now display the resource's actual working hours instead of overstated occupied time. |
+| Fixed | SAP Business One | Moving an operation to an alternative resource no longer clears the **Info** fields on the destination resource. |
+| Fixed | Scheduling | The **Sales Order** column on the **Scheduling Board** is now read-only and is populated automatically after creating or updating a **Manufacturing Order**. |
+| Fixed | MRP | Creating an **MRP Scenario** with a custom **Code** and **Description** now preserves those values instead of replacing them. |
+| Fixed | API | Updating a **Bill of Materials (BOM)** through the API with an invalid item code now returns a clear error message indicating that the item does not exist. |
+
 ## CompuTec ProcessForce 3.2607.1
 
 **Realease Date: 9 July 2026**
