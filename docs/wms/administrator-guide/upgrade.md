@@ -36,7 +36,7 @@ This significantly reduces the time required to upgrade multiple devices. Instea
 
 ### Update Computec WMS Android or CompuTec WMS Desktop app
 
-To update your CompuTec WMS app, follow these steps:
+To update your **CompuTec WMS Android** or **Desktop** app, follow these steps:
 
 1. Start **CompuTec** **WMS Android** or **Desktop app**.  
 
