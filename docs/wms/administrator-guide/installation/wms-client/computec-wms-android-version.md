@@ -57,6 +57,10 @@ To modify the version number, go to the CompuTec WMS client information section.
 
 ![General Tab](./media/general-tab-info.webp) ![Version](./media/about-ct-client-1.webp) ![Save](./media/about-ct-client-2.webp)
 
+:::info[note]
+Starting with **CompuTec WMS 3.2607.1**, automatic client upgrade is available for **CompuTec WMS Android** and **CompuTec WMS Desktop**. Manual client replacement is only required for **CompuTec WMS Legacy Client** and **CompuTec WMS CE**, or in scenarios where automatic upgrade cannot be used. [Read more](http://learn.computec.one/docs/wms/administrator-guide/upgrade#update-computec-wms-android-or-computec-wms-desktop-app)
+:::
+
 ## Connection Testing
 
 The Android version of the CompuTec WMS client includes tools to test the connection and its quality to the server. These tools can be found in the General tab, under the Connection Test button.
