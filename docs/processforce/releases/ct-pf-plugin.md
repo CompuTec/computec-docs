@@ -11,6 +11,20 @@ You can find all download links and release notes for the latest available **Com
 However, we strongly recommend using **CompuTec ProcessForce Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec ProcessForce 3.2608.2
+
+**Release Date: 4 August 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | Pick Receipt | Added a new **General Settings** option that always displays the **Batch Generation** window during **Pick Receipt** for batch-managed items, even when a batch number has already been generated automatically. |
+| Improved | Batch Management | Improved batch number generation to support concurrent processing more efficiently, reducing delays when multiple users generate batch numbers at the same time. |
+| Fixed | Time Booking | Fixed an issue where **Time Booking** could calculate incorrect resource costs after editing the start and end dates. Resource costs are now always recalculated based on the recorded duration. |
+| Fixed | Scheduling | Fixed automatic selection of child operations on the **Scheduling Board**. Selecting or clearing a parent operation now correctly updates all related child operations. |
+| Fixed | Manufacturing Order | Fixed the warehouse assigned when creating a **Manufacturing Order** from a **Sales Order**. The warehouse is now determined according to the **Manufacturing Order warehouse source (from Sales Order)** setting. |
+| Fixed | Pick Order | Fixed a display issue where resizing the **Batch Selection** window could hide the selected batches section. |
+| Fixed | ProcessForce API | Fixed an issue where the **.NET Core ProcessForce API** installer was displayed in Polish instead of the selected application language. |
+
 ## CompuTec ProcessForce 3.2607.2
 
 **Release Date: 22 July 2026**
