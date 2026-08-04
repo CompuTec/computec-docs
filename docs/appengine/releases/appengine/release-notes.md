@@ -4,6 +4,16 @@ sidebar_position: 1
 
 # CompuTec AppEngine Release Notes
 
+## CompuTec AppEngine 3.2608.1
+
+**Release Date: 3 August 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Fixed | AE UI | Fixed an issue where the **CompuTec AppEngine** login screen and launchpad were displayed in the light theme instead of the selected dark theme when opened from the **SAP Business One Web Client**. |
+| Fixed | AE Core | Fixed an issue that prevented users with limited logistics authorizations from creating **Manufacturing Orders** from **Sales Orders** using the **Scheduling Board**. |
+| Improved | AE Core | Installation errors detected when **Enable query validation** is enabled now identify the table that caused the validation failure, making installation issues easier to troubleshoot. |
+
 ## CompuTec AppEngine 3.2607.5
 
 **Release Date: 16 July 2026**
