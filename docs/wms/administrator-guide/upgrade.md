@@ -58,14 +58,12 @@ Automatic client upgrade replaces the previous recommendation to manually overwr
 
 ### Supported clients
 
-Automatic client upgrade is available for:
+Automatic client upgrade is **available** for:
 
 - **CompuTec WMS Android**  
-
 - **CompuTec WMS Desktop**  
 
-The following clients do not support automatic upgrade and must still be updated manually: 
+The following clients **do not support automatic upgrade** and must still be updated manually:
 
 - **CompuTec WMS Legacy Client**
-
 - **CompuTec WMS CE**
