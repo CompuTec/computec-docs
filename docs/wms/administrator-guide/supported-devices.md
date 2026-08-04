@@ -40,12 +40,13 @@ CompuTec WMS 2.0 is compatible with the following Operating Systems:
         - Windows Embedded Handheld 6.5
         - Windows Embedded Compact 7
 
-Before setting up CompuTec WMS ensure that the devices you are using meet the basic system specifications. (applies to legacy devices)
-|       | Minimal                                                  | Recommended                                              |
-|-------|----------------------------------------------------------|----------------------------------------------------------|
-| RAM   | 512MB                                                    | 1GB                                                       |
-| CPU   | 800Mhz                                                   | more than 800Mhz, multiple cores                         |
-| Sstem | Windows CE 6.0 or higher or Windows Mobile 5.0 or higher | Windows CE 6.0 or higher or Windows Mobile 5.0 or higher |
+Before setting up CompuTec WMS ensure that the devices you are using meet the basic system specifications (applies to legacy devices)
+
+| | Minimal | Recommended |
+| --- | --- | --- |
+| RAM | 512MB | 1GB |
+| CPU | 800Mhz | more than 800Mhz, multiple cores |
+| Sytem | Windows CE 6.0 or higher or Windows Mobile 5.0 or higher | Windows CE 6.0 or higher or Windows Mobile 5.0 or higher |
 
 :::note
 CompuTec WMS supports devices with touchscreen functionality. It is essential that the minimum screen size on the shortest side of the device is 240px.
@@ -59,6 +60,7 @@ This list is not exhaustive. Any device meeting the requirements outlined above 
 - Zebra MC930B
 - Zebra MC330L-GJ3EG4RW
 - Zebra MC330L-GE4EG4RW
+- Zebra TC21 / TC26 / TC22
 - Zebra WCMTB-T27B8CBD8-A6
 - Samsung A202F/DS (barcode scanning using the device's camera)
 - Samsung SM-J415x, Samsung Note 20
