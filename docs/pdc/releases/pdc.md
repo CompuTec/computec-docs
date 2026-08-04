@@ -44,11 +44,11 @@ However, we strongly recommend using CompuTec PDC 4.0 Plugin together with Compu
 | Improved | PDC | Added weight capture control support in **Manufacturing Order Confirmation**. |
 | Improved | PDC | Added tooltips and text wrapping for **Operation and Quantity Registration** column headers, improving readability of longer labels. |
 | Improved | PDC | Corrected **Manufacturing Order Confirmation** header information and added **SAP navigation links** for **Manufacturing Order** and **Item Code** fields. |
-| Fixed | PDC | Fixed **ScannerTarget** handling for collection filters in **Quantity Registration** reports. |
 | Improved | PDC | Added validation to prevent opening **Manufacturing Confirmation** for operations configured with ``Backflush`` issue type. |
 | Fixed | PDC | Fixed an issue where **Manufacturing Confirmation** could become unresponsive after validation errors. |
 | Fixed | Management Board, PDC | Fixed an issue where managers could not see quantities registered by employees in task details. |
 | Fixed | PDC | Fixed intermittent issues with run time registration when using the **date picker**. |
+| Fixed | PDC | Fixed **ScannerTarget** handling for collection filters in **Quantity Registration** reports. |
 
 ## CompuTec PDC 4.2605.1
 
@@ -67,48 +67,49 @@ However, we strongly recommend using CompuTec PDC 4.0 Plugin together with Compu
 
 | Issue Type | Components | Release Note |
 | --- | --- | --- |
-| New | PDC | Introduced **Quantity and Time Registration**, a new web-based module of CompuTec PDC Plugin. Users can now register time and produced quantities directly against **Operation–Resources**. While booking time, it is also possible to post related inventory transactions, making reporting faster and more integrated. |
+| Added | PDC | Introduced **Quantity and Time Registration**, a new web-based module of CompuTec PDC Plugin. Users can now register time and produced quantities directly against **Operation–Resources**. While booking time, it is also possible to post related inventory transactions, making reporting faster and more integrated. |
 | Improved | AE Analytics, PDC | The **Production Data Capture (PDC)** plugin is now available directly in the **SAP UI menu**, making it easier for users to access CompuTec PDC functionalities from within SAP. |
-| Fixed | AE Analytics | Fixed an issue where posting returns during **Manufacturing Confirmation** could result in the error ``Transaction End No Lock Applied``. |
 | Improved | PDC | The **Revision from MO** is now displayed next to the **Item Code** in **Issue to Production** and **Receipt from Production**, helping users identify the correct item revision during the transactions. |
 | Fixed | PDC | Fixed an issue where **Add Tile Barcode** did not work correctly when scanning barcodes. |
 | Fixed | PDC | Fixed an issue where clicking the **Save (disk) icon** while editing **DownTime** appeared to revert changes. Edits are now saved and displayed correctly. |
 | Fixed | Login | Fixed an issue where users could encounter an ``Object reference not set to an instance of an object`` error during CompuTec PDC login. |
+| Fixed | AE Analytics | Fixed an issue where posting returns during **Manufacturing Confirmation** could result in the error ``Transaction End No Lock Applied``. |
 
 ## CompuTec PDC 4.2510.1
 
-**Release Date - 29 October 2025**
+**Release Date: 29 October 2025**
 
-| Issue Type | Component/s | Release Note |
+| Issue Type | Component | Release Note |
 | --- | --- | --- |
-| Bug | PDC | Time synchronization issue occurs and is resolved only after restarting PDC (version 4.2506.1). |
-| Bug | PDC | Confirmation Panel customization is not functioning. |
+| Fixed | PDC | Fixed a time synchronization issue that could occur after prolonged use. The application now remains synchronized without requiring a restart. |
+| Fixed | Confirmation Panel | Fixed an issue where **Confirmation Panel** customizations were not applied correctly. |
 
 ## CompuTec PDC 4.2509.1
 
-**Release Date - 03 September 2025**
+**Release Date: 03 September 2025**
 
-| Issue Type | Component/s | Release Note |
+| Issue Type | Component | Release Note |
 | --- | --- | --- |
-| Improvement | Downtimes | End time should be equal to the time when downtime was added. |
-| Bug | PDC | Unable to edit dates in Quick Time Registration. |
-| Bug | PDC | PDC freezes on pop-up screen, preventing user action and ultimately causing the application to crash. |
-| Bug | PDC | Dropdown not functioning correctly when no custom values are defined. |
-| Bug | PDC | Substitutes validity is not considered in PDC. |
+| Improved | Downtimes | The **End Time** of a downtime is now automatically set to the time when the downtime is completed. |
+| Fixed | Quick Time Registration | Fixed an issue that prevented editing dates in **Quick Time Registration**. |
+| Fixed | PDC | Fixed an issue where PDC could become unresponsive after displaying a pop-up window, causing the application to freeze. |
+| Fixed | User Interface | Fixed an issue where drop-down lists did not work correctly when no custom values were configured. |
+| Fixed | Item Substitutes | Fixed an issue where substitute item validity dates were not considered during production. |
 
 ## CompuTec PDC 4.2506.1
 
 **Release Date - 9 June 2025**
 
-| Issue Type | Component/s | Release Note |
+| Issue Type | Component | Release Note |
 | --- | --- | --- |
-| Bug | Tasks | Issue with duplicated date-time picker components appearing in the UI |
-| Bug | CompuTec PDC | Quick receipt process failed with error "Nullable object must have a value" |
-| Bug | Barcodes | Barcode Simulator is not available in .netCore |
-| Bug | CompuTec PDC | Error "Problem with token SESSION" occurred during Bill of Materials/Manufacturing Order |
-| Bug | Tasks | CompuTec PDC failed to load or display pictures correctly due to image handling issues |
-| Improvement | CompuTec PDC | Sort Items based on sequence during issue and receipt processes |
-| Bug | CompuTec PDC | Error "Sequence contains no matching element" when loading MO list |
-| Bug | CompuTec PDC | Scanning by batch did not auto-fill item code, batch number, bin location, or allow quantity entry; also added validation for locked batches. |
-| Improvement | Pick and Pack | Added "Auto Select All" button at the top of the CompuTec PDC Receipt/Issue window |
-| Improvement | CompuTec WMS Plugin | Refresh token mechanism to support seamless re-login |
+| Added | User-Defined Fields | Added support for displaying **User-Defined Fields (UDFs)** in item selection and **Issue/Receipt** screens. **[Read more](https://learn.computec.one/docs/pdc/administrator-guide/setting-up-the-application/pdc-settings/display-udfs/)** |
+| Improved | Issue & Receipt | Items are now sorted according to their sequence during **Issue to Production** and **Receipt from Production**. |
+| Improved | Pick and Pack | Added an **Auto Select All** button to the **Issue** and **Receipt** screens to simplify item selection. |
+| Improved | Authentication | Improved the refresh token mechanism to provide a more reliable automatic sign-in experience. |
+| Fixed | Tasks | Fixed an issue where duplicate date and time picker controls were displayed. |
+| Fixed | Goods Receipt | Fixed an error that could occur during **Quick Receipt**, preventing the document from being created. |
+| Fixed | Barcode Simulator | Added support for the **Barcode Simulator** in the .NET Core version of PDC. |
+| Fixed | Session Management | Fixed an issue that could display the **"Problem with token SESSION"** error when working with Bills of Materials or Manufacturing Orders. |
+| Fixed | Tasks | Fixed an issue that prevented images from loading or displaying correctly. |
+| Fixed | Manufacturing Orders | Fixed an issue that could cause the **"Sequence contains no matching element"** error when loading the Manufacturing Order list. |
+| Fixed | Barcode Scanning | Scanning a batch barcode now automatically fills the item, batch, and bin location fields, supports quantity entry, and validates locked batches. |
