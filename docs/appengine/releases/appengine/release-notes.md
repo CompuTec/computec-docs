@@ -4,6 +4,14 @@ sidebar_position: 1
 
 # CompuTec AppEngine Release Notes
 
+## CompuTec AppEngine 3.2608.6
+
+**Release Date: 4 August 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Fixed | Analytics | Fixed an issue where values in **golden-arrow** columns disappeared from custom Analytics reports after performing an action and returning to the report using the **Back** button. |
+
 ## CompuTec AppEngine 3.2608.1
 
 **Release Date: 3 August 2026**
