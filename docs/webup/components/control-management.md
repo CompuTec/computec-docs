@@ -47,7 +47,9 @@ Some view sections don't have visible titles. In these cases, they are identifie
 
     :::note[info]
 
-    Watch our video to see how to use the **Dynamic** mode to highlight chosen fields with color:  
+    Watch our videos to see how to use the **Dynamic** mode:  
+
+    ▶ **Watch**: [CompuTec WebUp - Dynamic Control Configuration](https://www.youtube.com/watch?v=ugpA8rHT2P8)  
     ▶ **Watch**: [CompuTec WebUp - Highlighting Fields with Colour](https://www.youtube.com/watch?v=ufN3qK_F1aY)
     :::
 
@@ -113,6 +115,10 @@ If you want to add a new control, follow these steps:
     ![CompuTec WebUp Manager side panel showing the Activate button to enable the new control view](media/add-control/11-wu-add-new-control-activate.png)
 
 13. Done! You've successfully added a control.
+
+#### Video walkthrough
+
+▶ **Watch**: [CompuTec WebUp - How to Add Controls](https://www.youtube.com/watch?v=1Veo7yo7pFU)
 
 ### Hide an unused control
 

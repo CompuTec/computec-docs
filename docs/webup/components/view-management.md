@@ -41,7 +41,7 @@ Here's a list of view management key functions:
 
 :::
 
-## View management example
+### View management example
 
 You may need to edit a new version of a view while the current version remains active in production.
 Once testing and validation are complete, you can activate the new version.
@@ -68,3 +68,7 @@ To **activate** the previously saved view, follow these steps:
    ![screen showing how to activate a view version](./media/03view-management-confirmation.png)
 
 5. Done! Now your selected view is active.
+
+#### Video walkthrough
+
+▶ **Watch**: [CompuTec WebUp - Views & Versioning](https://youtu.be/bPbxhZFqdh4)

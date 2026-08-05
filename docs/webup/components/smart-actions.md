@@ -165,6 +165,10 @@ To assign the **Smart Action** to a control, follow these steps:
 
 14. Done! You’ve added and activated your Smart Action.
 
+#### Video walkthrough
+
+▶ **Watch**: [CompuTec WebUp - Smart Actions](https://youtu.be/iAWFLTRgvGk)
+
 ## Smart Actions use cases
 
 - Prevent accidental data changes:  
