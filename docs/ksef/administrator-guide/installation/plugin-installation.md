@@ -115,7 +115,6 @@ After successful installation:
 - it is active on the selected **CompuTec AppEngine Instance**
 - the plugin is available in the **CompuTec AppEngine Launchpad**
 
-
 :::info[Note]
 
 To learn about new features or changes, refer to the plugin’s [release notes](http://learn.computec.one/docs/appengine/plugins-user-guide/overview#available-plugins).
