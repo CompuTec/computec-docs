@@ -62,5 +62,9 @@
   "link.item.label.CompuTec WebUp": {
     "message": "CompuTec WebUp",
     "description": "The label of footer link with label=CompuTec WebUp linking to docs\\webup"
+  },
+  "link.item.label.CompuTec KSEF": {
+    "message": "CompuTec KSEF",
+    "description": "The label of footer link with label=CompuTec KSEF linking to docs\\ksef"
   }
 }

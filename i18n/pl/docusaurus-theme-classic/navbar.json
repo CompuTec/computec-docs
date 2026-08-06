@@ -30,5 +30,9 @@
   "item.label.WebUp": {
     "message": "WebUp",
     "description": "Navbar item with label WebUp"
+  },
+  "item.label.KSEF": {
+    "message": "KSEF",
+    "description": "Navbar item with label KSEF"
   }
 }

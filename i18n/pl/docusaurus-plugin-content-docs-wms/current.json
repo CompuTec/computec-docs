@@ -142,5 +142,9 @@
   "sidebar.defaultSidebar.category.Use Cases": {
     "message": "Use Cases",
     "description": "The label for category 'Use Cases' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.CompuTec Warehouse Management System (WMS) Plugin": {
+    "message": "CompuTec Warehouse Management System (WMS) Plugin",
+    "description": "The label for category 'CompuTec Warehouse Management System (WMS) Plugin' in sidebar 'defaultSidebar'"
   }
 }

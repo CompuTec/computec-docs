@@ -54,5 +54,13 @@
   "sidebar.defaultSidebar.category.Releases": {
     "message": "Releases",
     "description": "The label for category 'Releases' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.CompuTec Production Data Capture (PDC) Plugin": {
+    "message": "CompuTec Production Data Capture (PDC) Plugin",
+    "description": "The label for category 'CompuTec Production Data Capture (PDC) Plugin' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.CompuTec Manufacturing Cockpit (MO360) Plugin": {
+    "message": "CompuTec Manufacturing Cockpit (MO360) Plugin",
+    "description": "The label for category 'CompuTec Manufacturing Cockpit (MO360) Plugin' in sidebar 'defaultSidebar'"
   }
 }

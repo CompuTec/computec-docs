@@ -274,5 +274,9 @@
   "sidebar.defaultSidebar.category.CompuTec ProcessForce API Tips & Tricks": {
     "message": "CompuTec ProcessForce API Tips & Tricks",
     "description": "The label for category 'CompuTec ProcessForce API Tips & Tricks' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Upgrade to CompuTec ProcessForce 10.0 (2.0)": {
+    "message": "Upgrade to CompuTec ProcessForce 10.0 (2.0)",
+    "description": "The label for category 'Upgrade to CompuTec ProcessForce 10.0 (2.0)' in sidebar 'defaultSidebar'"
   }
 }

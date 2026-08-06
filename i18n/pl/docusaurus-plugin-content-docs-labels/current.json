@@ -30,5 +30,9 @@
   "sidebar.defaultSidebar.category.Getting Help": {
     "message": "Getting Help",
     "description": "The label for category 'Getting Help' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.CompuTec Docs (Labels) Plugin": {
+    "message": "CompuTec Docs (Labels) Plugin",
+    "description": "The label for category 'CompuTec Docs (Labels) Plugin' in sidebar 'defaultSidebar'"
   }
 }

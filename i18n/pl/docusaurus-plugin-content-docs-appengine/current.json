@@ -106,5 +106,17 @@
   "sidebar.defaultSidebar.category.releases-plugins": {
     "message": "Plugins",
     "description": "The label for category 'Plugins' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Analytics": {
+    "message": "Analytics",
+    "description": "The label for category 'Analytics' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.CompuTec AppEngine Plugins": {
+    "message": "CompuTec AppEngine Plugins",
+    "description": "The label for category 'CompuTec AppEngine Plugins' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.FAQs": {
+    "message": "FAQs",
+    "description": "The label for category 'FAQs' in sidebar 'defaultSidebar'"
   }
 }

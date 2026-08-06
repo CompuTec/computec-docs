@@ -71,6 +71,12 @@ export default (production?: boolean) => ([
         includeCurrentVersion: true,
     },
     {
+        label: "KSeF",
+        pluginId: "ksef",
+        currentVersion: "1.0",
+        includeCurrentVersion: true,
+    },
+    {
         label: "WebUp",
         pluginId: "webup",
         currentVersion: "1.0",

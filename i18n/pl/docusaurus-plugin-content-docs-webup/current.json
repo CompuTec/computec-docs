@@ -14,5 +14,13 @@
   "sidebar.defaultSidebar.category.FAQ": {
     "message": "FAQ",
     "description": "The label for category 'FAQ' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Key Features of CompuTec WebUp": {
+    "message": "Key Features of CompuTec WebUp",
+    "description": "The label for category 'Key Features of CompuTec WebUp' in sidebar 'defaultSidebar'"
+  },
+  "sidebar.defaultSidebar.category.Release Notes": {
+    "message": "Release Notes",
+    "description": "The label for category 'Release Notes' in sidebar 'defaultSidebar'"
   }
 }
