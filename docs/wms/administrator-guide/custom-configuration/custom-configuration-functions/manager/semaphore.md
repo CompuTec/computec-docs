@@ -2,7 +2,7 @@
 sidebar_position: 13
 ---
 
-# Semaphore
+# Enable Semaphore
 
 When the option is activated, a document one user chooses is unavailable for another.
 
