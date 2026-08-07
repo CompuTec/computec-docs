@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction to KSeF
 
-**compuTec KSeF** extends **SAP Business One** with integration to the **National e-Invoicing System (KSeF)**, enabling you to receive, process, and manage electronic invoices directly within **SAP Business One**.
+**CompuTec KSeF** extends **SAP Business One** with integration to the **National e-Invoicing System (KSeF)**, enabling you to receive, process, and manage electronic invoices directly within **SAP Business One**.
 
 The solution automates invoice retrieval from KSeF and supports the complete processing workflow, from reviewing incoming invoices and matching them to purchasing documents to creating purchase invoices and handling correction invoices.
 
