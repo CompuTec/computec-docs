@@ -4,20 +4,18 @@ sidebar_position: 1
 
 # Install CompuTec KSeF Plugin
 
-**Computec KSeF Plugin** in **CompuTec AppEngine** are installed using the **Plugins** page in the **CompuTec AppEngine Administration Panel**.
+The **CompuTec KSeF** plugin runs in **CompuTec AppEngine** and must be installed and activated for each **SAP Business One** company that will use the KSeF integration.
 
-The installation and configuration process includes:
+You install the plugin from the **Plugins** page in the **CompuTec AppEngine Administration Panel**.
 
-- **Download the plugin**: The plugin is added to the CompuTec AppEngine repository.
+The setup consists of three steps:
 
-- **Install the plugin**: Installation prepares the plugin for use in a specific company. It assigns the plugin to the company, and applies any required database changes.
-
-- **Activate it on the Computec AppEngine instance**: Activation makes the plugin available for use in the system. It assigns the plugin to an AppEngine instance, and  enables its functionality at runtime.
-
-The system automatically handles dependencies and version compatibility.
+1. **Download the CompuTec KSeF Plugin** – Adds the required plugin version to the CompuTec AppEngine repository.
+2. **Install the CompuTec KSeF Plugin for a company** – Assigns the plugin to the selected SAP Business One company and applies any required database changes.
+3. **Activate the CompuTec KSeF Plugin on a CompuTec AppEngine instance** – Assigns the plugin to an instance and makes the KSeF functionality available at runtime.
 
 :::info[Note]
-Only one version of a plugin can be active on a single CompuTec AppEngine instance at a time.
+Only one version of the **CompuTec KSeF Plugin** can be active on a single **CompuTec AppEngine** instance at a time.
 :::
 
 ## Before you start
@@ -97,26 +95,26 @@ To install and activate **CompuTec KSeF** follow these steps:
 
 :::info[Note]
 
-You don’t need to manage dependencies manually. During the installation, the system automatically:
+You do not need to manage dependencies for the **CompuTec KSeF** plugin manually. During installation, **CompuTec AppEngine** automatically:
 
-- installs all required plugins
-- ensures compatible versions are used
-- includes any missing components
+- Installs any required plugins and components.
+- Selects compatible versions.
+- Adds any missing dependencies.
 
-This allows you to continue with the setup without additional configuration steps.
+No additional dependency configuration is required.
 :::
 
 ## After installation
 
-After successful installation:
+After you successfully install and activate the **CompuTec KSeF** plugin:
 
-- the plugin appears in the **Downloaded** tab
-- it is assigned to the selected **Company**
-- it is active on the selected **CompuTec AppEngine Instance**
-- the plugin is available in the **CompuTec AppEngine Launchpad**
+- The plugin appears on the **Downloaded** tab.
+- The plugin is assigned to the selected **SAP Business One** company.
+- The plugin is active on the selected **CompuTec AppEngine** instance.
+- **CompuTec KSeF** is available from the **CompuTec AppEngine Launchpad**.
 
 :::info[Note]
 
-To learn about new features or changes, refer to the plugin’s [release notes](http://learn.computec.one/docs/appengine/plugins-user-guide/overview#available-plugins).
+For information about new **CompuTec KSeF** features, improvements, fixes, and other changes, see the [CompuTec KSeF Release Notes](http://learn.computec.one/docs/ksef/releases/release-notes).
 
 :::

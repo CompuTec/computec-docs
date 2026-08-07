@@ -265,7 +265,8 @@ To activate a company in CompuTec AppEngine, follow these steps:
     ![a screen showing activation progress](./media/installation/22-appengine-setup-activation-progress.png)
 
     :::note[info]
-    This process may install necessary SAP extensions such as **CompuTec Start**.  
+    During company activation, **CompuTec AppEngine** automatically installs required SAP extensions, such as **CompuTec Start**, when supported by the **SAP Business One** environment.
+
     In **Cloud Control Center** for SAP Business One environments, **CompuTec Start** must be installed manually.
     :::
 
