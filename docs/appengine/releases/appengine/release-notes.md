@@ -4,6 +4,14 @@ sidebar_position: 1
 
 # CompuTec AppEngine Release Notes
 
+## CompuTec AppEngine 3.2608.7
+
+**Release Date: 7 August 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Fixed | WebUp | Fixed an issue where the **CompuTec WebUp Manager** side panel could occasionally appear blank when opening a plugin from the **CompuTec AppEngine Launchpad**. Plugins now open correctly without requiring a page refresh. |
+
 ## CompuTec AppEngine 3.2608.6
 
 **Release Date: 4 August 2026**
