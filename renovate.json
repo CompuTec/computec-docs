@@ -21,5 +21,18 @@
     "preview:dockerVersions",
     "workarounds:all"
   ],
-  "baseBranches": ["main"]
+  "baseBranches": ["main"],
+  "packageRules": [
+    {
+      "description": "Docusaurus is incompatible with TypeScript 7: @docusaurus/tsconfig still uses baseUrl, which TS 7 removed. Lift this cap once Docusaurus supports TS 7.",
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "<7.0.0"
+    },
+    {
+      "description": "The uuid override exists only to patch GHSA-w5hq-g745-h8pq under sockjs (webpack-dev-server). Stay on 11.x, which sockjs works with; drop the override and this rule when upstream updates.",
+      "matchPackageNames": ["uuid"],
+      "matchDepTypes": ["overrides"],
+      "allowedVersions": "<12.0.0"
+    }
+  ]
 }
