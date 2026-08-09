@@ -16,12 +16,14 @@
     "docker:pinDigests",
     "group:recommended",
     "group:allNonMajor",
-    "npm:unpublishSafe",
+    "security:minimumReleaseAgeNpm",
     "preview:dockerCompose",
     "preview:dockerVersions",
     "workarounds:all"
   ],
-  "baseBranches": ["main"],
+  "baseBranchPatterns": [
+    "main"
+  ],
   "packageRules": [
     {
       "description": "Docusaurus is incompatible with TypeScript 7: @docusaurus/tsconfig still uses baseUrl, which TS 7 removed. Lift this cap once Docusaurus supports TS 7.",
