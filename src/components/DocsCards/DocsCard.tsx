@@ -22,7 +22,11 @@ export default function DocCard(props: DocCardProps) {
   const { path } = useLayoutDoc("index", props.pluginId);
 
   return (
-    <Grid key={props.title} size={{ xs: 12, sm: 6, md: 4 }} display="flex">
+    <Grid
+      key={props.title}
+      size={{ xs: 12, sm: 6, md: 4 }}
+      sx={{ display: "flex" }}
+    >
       <Link
         to={path}
         style={{
@@ -57,7 +61,7 @@ export default function DocCard(props: DocCardProps) {
             <Typography gutterBottom variant="h5" component="div">
               {props.title}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" sx={{ color: "text.secondary" }}>
               {props.description}
             </Typography>
           </CardContent>

@@ -1,3 +1,4 @@
+import { type ReactNode } from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import { translate } from "@docusaurus/Translate";
@@ -5,7 +6,7 @@ import { translate } from "@docusaurus/Translate";
 import DocsHeader from "../components/DocsHeader";
 import DocsCards from "../components/DocsCards";
 
-export default function Docs(): JSX.Element {
+export default function Docs(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
 
   return (

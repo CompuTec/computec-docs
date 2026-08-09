@@ -20,18 +20,20 @@ export default function CookieBanner() {
       <Container>
         <Paper elevation={4}>
           <Box
-            padding={4}
-            display="flex"
-            flexDirection="row"
-            alignItems="center"
+            sx={{
+              padding: 4,
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+            }}
           >
-            <Box flexGrow={1}>
+            <Box sx={{ flexGrow: 1 }}>
               <Typography variant="body2">
                 Our website uses cookies to give you a better experience.{" "}
                 <Link to="/policy">Learn more</Link>
               </Typography>
             </Box>
-            <Box display="flex" flexDirection="row" gap={2}>
+            <Box sx={{ display: "flex", flexDirection: "row", gap: 2 }}>
               <Button
                 variant="contained"
                 onClick={() => updateConsent(CookiesConsent.ALLOWED)}

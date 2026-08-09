@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {type ReactNode} from 'react';
 import clsx from 'clsx';
 import {translate} from '@docusaurus/Translate';
 import {useThemeConfig} from '@docusaurus/theme-common';
@@ -8,7 +8,7 @@ import type {Props} from '@theme/Heading';
 
 import styles from './styles.module.css';
 
-export default function Heading({as: As, id, ...props}: Props): JSX.Element {
+export default function Heading({as: As, id, ...props}: Props): ReactNode {
   const brokenLinks = useBrokenLinks();
   const {
     navbar: {hideOnScroll},

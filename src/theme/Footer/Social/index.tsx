@@ -35,10 +35,9 @@ export default function FooterSocial(props: FooterSocialProps) {
     <Stack
       direction="row"
       spacing={2}
-      justifyContent="space-between"
-      alignItems="center"
+      sx={{ justifyContent: "space-between", alignItems: "center" }}
     >
-      <Box display={{ xs: "none", sm: "flex" }}>
+      <Box sx={{ display: { xs: "none", sm: "flex" } }}>
         <Logo width={200} overflow="visible" />
       </Box>
 

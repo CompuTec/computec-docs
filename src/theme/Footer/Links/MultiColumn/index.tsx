@@ -22,8 +22,8 @@ interface ColumnProps extends GridProps {
 function Column({ column, ...rest }: ColumnProps) {
   return (
     <Grid key={column.title} {...rest}>
-      <Stack direction="column" spacing={0} alignItems="flex-start">
-        <Typography variant="subtitle2" fontWeight={600}>
+      <Stack direction="column" spacing={0} sx={{ alignItems: "flex-start" }}>
+        <Typography variant="subtitle2" sx={{ fontWeight: 600 }}>
           {column.title}
         </Typography>
         {column.items.map((item) => (

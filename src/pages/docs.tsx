@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {type ReactNode} from 'react';
 import {Redirect} from '@docusaurus/router';
 
-export default function Docs(): JSX.Element {
+export default function Docs(): ReactNode {
   return <Redirect to={"/"} />;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {type ReactNode} from 'react';
 import {
   useVersions,
   useActiveDocContext,
@@ -42,7 +42,7 @@ export default function DocsVersionDropdownNavbarItem({
   dropdownItemsBefore,
   dropdownItemsAfter,
   ...props
-}: Props): JSX.Element {
+}: Props): ReactNode {
   const {search, hash} = useLocation();
   const activeDocContext = useActiveDocContext(docsPluginId);
   const versions = useVersions(docsPluginId);

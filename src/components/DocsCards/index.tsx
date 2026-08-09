@@ -8,7 +8,7 @@ import docsCards from "./cards";
 export default function DocsCards() {
   return (
     <Container>
-      <Grid container spacing={3} py={8} alignItems="stretch">
+      <Grid container spacing={3} sx={{ py: 8, alignItems: "stretch" }}>
         {docsCards.map((card) => (
           <DocCard {...card} key={card.pluginId} />
         ))}

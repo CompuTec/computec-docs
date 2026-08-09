@@ -178,10 +178,12 @@ export default function Contact() {
             </FormControl>
           </Grid>
           <Grid
-            display="flex"
-            flexGrow={1}
-            justifyContent="flex-end"
-            alignSelf="center"
+            sx={{
+              display: "flex",
+              flexGrow: 1,
+              justifyContent: "flex-end",
+              alignSelf: "center",
+            }}
           >
             <Button variant="contained" size="large" endIcon={<SendIcon />}>
               <Translate description="Contact -> Send" id="contact.send">

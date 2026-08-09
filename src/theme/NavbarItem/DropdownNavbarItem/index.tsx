@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from 'react';
+import React, {useState, useRef, useEffect, type ReactNode} from 'react';
 import clsx from 'clsx';
 import {
   isRegexpStringMatch,
@@ -171,7 +171,7 @@ function DropdownNavbarItemMobile({
 export default function DropdownNavbarItem({
   mobile = false,
   ...props
-}: Props): JSX.Element {
+}: Props): ReactNode {
   const Comp = mobile ? DropdownNavbarItemMobile : DropdownNavbarItemDesktop;
   return <Comp {...props} />;
 }

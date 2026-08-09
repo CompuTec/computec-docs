@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 
 export default function FooterNewsletter() {
   return (
-    <Grid container spacing={2} alignItems="center">
+    <Grid container spacing={2} sx={{ alignItems: "center" }}>
       <Grid size={{ xs: 12, md: 6 }}>
         <Typography variant="h5" component="h2">
           Sign up for our monthly updates

@@ -2,6 +2,10 @@
   // This file is not used in compilation. It is here just for a nice editor experience.
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
-    "baseUrl": "."
+    "baseUrl": ".",
+    // TODO remove when @docusaurus/tsconfig drops the deprecated baseUrl option
+    "ignoreDeprecations": "6.0",
+    // TypeScript 6.0 defaults strict to true; this codebase predates that
+    "strict": false
   }
 }
