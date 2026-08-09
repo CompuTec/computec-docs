@@ -12,19 +12,19 @@ This article explains the available table and chart configuration options and ho
 
 The **General** tab allows you to configure the data source and define how individual columns behave in the analytics table.
 
-![screen showing general tab](.\media\table_chart_opt\gen-tab00.png)
+![screen showing general tab](./media/table_chart_opt/gen-tab00.png)
 
 ### Edit Column Display Name
 
 Defines the name displayed in the column header in the report.
 
-![screen showing where to edit column display name](.\media\table_chart_opt\gen-tab1.png)
+![screen showing where to edit column display name](./media/table_chart_opt/gen-tab1.png)
 
 ### Change Column Type
 
 Select the data type for the column.
 
-![screen showing where to change column type](.\media\table_chart_opt\gen-tab2.png)
+![screen showing where to change column type](./media/table_chart_opt/gen-tab2.png)
 
 Available types include:
 
@@ -45,7 +45,7 @@ Available types include:
 
 Collections allow you to map values to additional information.
 
-![screen showing where to set a collection](.\media\table_chart_opt\gen-tab3.png)
+![screen showing where to set a collection](./media/table_chart_opt/gen-tab3.png)
 
 You can choose from three collection types:
 
@@ -69,16 +69,16 @@ To create a new collection, follow these steps:
 
         - **Table**/**View** collection: Provide **Collection** (the SAP table name that contains the data, for example, ``OWHS``), **Key** (the field used to match the data, for example, ``WhsCode``), and your custom name for the collection.
 
-            ![screen showing table/view collection](.\media\table_chart_opt\collection1.png)
+            ![screen showing table/view collection](./media/table_chart_opt/collection1.png)
 
         - **Custom** collection: Provide the **Key** and **Name** pairs that match the current field values, for example: ``HR`` and ``Header``.
 
-            ![screen showing custom collection](.\media\table_chart_opt\collection2.png)
+            ![screen showing custom collection](./media/table_chart_opt/collection2.png)
 
         - **Dynamic** collection: Provide **Key** based on **Field** name. It limits selectable values based on the report results. 
         With a **Dynamic** collection, the system shows only values that exist in the report output, instead of all values from the source table. 
 
-            ![screen showing dynamic collection](.\media\table_chart_opt\collection3.png)
+            ![screen showing dynamic collection](./media/table_chart_opt/collection3.png)
 
 3. Click **Accept** to save the collection.
 
@@ -86,7 +86,7 @@ To create a new collection, follow these steps:
 
 Allows you to link the column directly to **SAP Business One** objects.
 
-![screen showing where to set a link to sap data](.\media\table_chart_opt\gen-tab4.png)
+![screen showing where to set a link to sap data](./media/table_chart_opt/gen-tab4.png)
 
 You can configure:
 
@@ -115,7 +115,7 @@ Splits a date field **into additional components**, such as month number, or wee
 
 This option is available only for **Date** data types.
 
-![screen showing where to enable generating date parts](.\media\table_chart_opt\gen-tab5.png)
+![screen showing where to enable generating date parts](./media/table_chart_opt/gen-tab5.png)
 
 ### Define Whether the Data is Aggregable
 
@@ -124,7 +124,7 @@ This option is available only for **Date** data types.
 - Chart calculations
 - Table summaries
 
-![screen showing where to enable aggregation](.\media\table_chart_opt\gen-tab6.png)
+![screen showing where to enable aggregation](./media/table_chart_opt/gen-tab6.png)
 
 This option is available only for **numeric data types**.
 
@@ -132,7 +132,7 @@ This option is available only for **numeric data types**.
 
 The **Filter Group** option assigns a column to a specific group of filters in the report.
 
-![screen showing where to configure filter group](.\media\table_chart_opt\gen-tab7.png)
+![screen showing where to configure filter group](./media/table_chart_opt/gen-tab7.png)
 
 This grouping helps organize filters in the report interface. Columns assigned to the same group appear together in the **Adapt Filters** panel, making related filters easier to find and manage.
 
@@ -144,22 +144,22 @@ To see your filter groups, follow these steps:
 
 1. In the chosen **Variant**, click **Adapt Filter**.
 
-        ![screen showing where to click adapt filters](.\media\table_chart_opt\filter-groups112.png)
+        ![screen showing where to click adapt filters](./media/table_chart_opt/filter-groups112.png)
 
 2. Click the **Group View** icon.
 
-        ![screen showing group view icon](.\media\table_chart_opt\filter-groups1123.png)
+        ![screen showing group view icon](./media/table_chart_opt/filter-groups1123.png)
 
 3. You will now see the filters organized according to the **Filter Groups** defined in the configuration.
 
-        ![screen showing filters organized accordning the filter groups in the report](.\media\table_chart_opt\filter-groups11234.png)
+        ![screen showing filters organized accordning the filter groups in the report](./media/table_chart_opt/filter-groups11234.png)
 
 You can then enable or disable individual filters within each group and choose which ones should be visible in the report.
 
 :::warning[important]
 After changing table settings, you may see a **warning** in the **Variants** tab.
 
-![screen showing a warning in variants tab](.\media\table_chart_opt\warinig-after-changes.png)
+![screen showing a warning in variants tab](./media/table_chart_opt/warinig-after-changes.png)
 
 This happens because changes in table configuration can affect existing variants.
 
@@ -171,11 +171,11 @@ To resolve this issue:
 
 3. Click **Fix All Variants**.
 
-        ![screen showing where to click to fix all variants](.\media\table_chart_opt\warinig-after-changes-fix.png)
+        ![screen showing where to click to fix all variants](./media/table_chart_opt/warinig-after-changes-fix.png)
 
 4. **Update** the changes.
 
-        ![screen showing how to update the changes in variant](.\media\table_chart_opt\warinig-after-changes-fix2.png)
+        ![screen showing how to update the changes in variant](./media/table_chart_opt/warinig-after-changes-fix2.png)
 
 :::
 
@@ -185,7 +185,7 @@ In the **Actions** tab, you can review **Linked Objects** associated with the se
 
 **Actions** allow users to trigger specific operations for a selected row directly from the report.
 
-![screen showing actions tab](.\media\table_chart_opt\actions-tab.png)
+![screen showing actions tab](./media/table_chart_opt/actions-tab.png)
 
 **Actions** are defined in plugins, so after installing plugins, additional actions become available for use in **Analytics**.
 
@@ -197,7 +197,7 @@ For more information about configuring and activating **Actions** in **Analytics
 
 The **Variants** tab displays all variants created for the selected data source.
 
-![screen showing variants tab](.\media\table_chart_opt\an-sm-click-src-edit-mode-variants.png)
+![screen showing variants tab](./media/table_chart_opt/an-sm-click-src-edit-mode-variants.png)
 
 **Variants** allow you to save different report configurations, including filters, table layouts, and chart settings. In this tab, you can review existing variants, add new variants, or edit the existing existing ones.
 

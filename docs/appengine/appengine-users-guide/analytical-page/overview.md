@@ -204,11 +204,11 @@ Common operators include `Equal`, `Starts With`, `Contains`, and `Between`.
 
 - **Date**: Allows you to filter data by a specific date or a date range.
 
-    ![screen showng the Date Filter](./media\overview\aa-filters-date.png)
+    ![screen showng the Date Filter](./media/overview/aa-filters-date.png)
 
 - **Date and Time**: Allows you to specify the exact date and time.
 
-    ![screen showng the Date and time Filter](./media\overview\aa-filters-dateandtime-and-number.png)
+    ![screen showng the Date and time Filter](./media/overview/aa-filters-dateandtime-and-number.png)
 
 #### Edit filters
 
@@ -268,7 +268,7 @@ Located in the top-right corner, these options let you customize how your table 
 
 - **Sort by**: Sort columns in ascending or descending order.
 
-    ![screen showng the Table sorting Options](.\media\overview\an-tableopt-settings-sortby.png)
+    ![screen showng the Table sorting Options](./media/overview/an-tableopt-settings-sortby.png)
 
 - **Column Visbility**: Choose which columns are shown.
 

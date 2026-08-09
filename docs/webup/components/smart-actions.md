@@ -48,15 +48,15 @@ To create a Smart Action, follow these steps:
 1. Open **Computec WebUp Manager**.
 2. Navigate to **Smart Actions** tab.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-1.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-1.png)
 
 3. Click **Edit** to enable the edit mode.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-2.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-2.png)
 
 4. Click **Add Smart Action**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-3.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-3.png)
 
 5. Define the **Action** scope. You can choose from:
 
@@ -64,48 +64,48 @@ To create a Smart Action, follow these steps:
     - **Object**: Available for all **CompuTec WebUp** views (e.g., **Sales Order**), across all its view versions.
     - **Local**: Available only in the current view version. Use **Local** for temporary or highly customized behavior.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-4.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-4.png)
 
 6. Enter the action **Name**. Optionally, you can also change the action **Code**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-4a.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-4a.png)
 
 7. (Optional) Add a **Description** of the action.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-4b.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-4b.png)
 
 8. In **Action Parameters**, use the **plus (+)** icon to add new parameters.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-5.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-5.png)
 
     :::note[info]
     In this step, enter only the **Parameter Names**. You will assign their values later when attaching a **Smart Action** to an **Event** for the selected control.  
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-6.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-6.png)
     :::
 
 9. Enter your **Script**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-7.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-7.png)
 
     :::note[info]
     You can **right-click inside the script** editor to insert ready-made snippets such as ``show confirmation``, ``create activity``, or ``get table row by key``.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-9.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-9.png)
 
     :::
 
 10. Add parameters to your script using the following syntax: ``${action.Parameters.parameter_name}``. Replace ``parameter_name`` with the name of your parameter. In our example, we use ``DocNum`` as the **Parameter Name**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-911.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-911.png)
 
 11. Click **Add Smart Action**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-9112.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-9112.png)
 
 12. Done! Now you can see your **Smart Action** on the list.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-91123.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-91123.png)
 
 ### Step 2: Assign the Smart Action to a Control
 
@@ -115,53 +115,53 @@ To assign the **Smart Action** to a control, follow these steps:
 
 2. In the **Computec WebUp Manager** side panel, click **Select Control**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-as1.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as1.png)
 
 3. In **SAP Business One Web Client**, click a field, button, or UI element to select it.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-as2.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as2.png)
 
 4. In **CompuTec WebUp Manager** side panel on the right, go to **Control Details** > **More Options** > **Events**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-as-gotoevents.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as-gotoevents.png)
 
 5. Click on **Select Smart Action** field to open the list of available **Smart Actions**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-as3.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as3.png)
 
 6. Choose your **Smart Action** from the list.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-as4.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as4.png)
 
 7. In **Triggers**, choose when your action should run: ``No Trigger``, ``After``, or ``Before`` the event occurs.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-as5.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as5.png)
 
 8. Select the **Source** for your **Smart Action**:
     - **Static**: A fixed value you enter manually
     - **Data Model**: A dynamic value from SAP Business One (e.g., ``DocNum``, ``CardCode``)
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-as6.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as6.png)
 
 9. Click the **collection icon** to see the list of available values.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-as7.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as7.png)
 
 10. Choose your value from the list and click **Confirm**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-as8.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as8.png)
 
 11. Click **Save & Preview**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-as9.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as9.png)
 
 12. In preview mode, test your action.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-as911.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as911.png)
 
 13. If you like the results, click **Activate**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions\smart-actions-as912.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as912.png)
 
 14. Done! You’ve added and activated your Smart Action.
 

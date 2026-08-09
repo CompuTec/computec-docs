@@ -41,19 +41,19 @@ To add a new Storage Category, follow these steps:
 
 1. Log in to **CompuTec AppEngine Launchpad**.
 
-    ![screen showing logging in to CompuTec AppEngine Launchpad](./media\storage-category-login1.png)
+    ![screen showing logging in to CompuTec AppEngine Launchpad](./media/storage-category-login1.png)
 
 2. Open the **WMS Plugin**.
 
-    ![screen showing logging in to CompuTec AppEngine Launchpad](./media\storage-category-login2.png)
+    ![screen showing logging in to CompuTec AppEngine Launchpad](./media/storage-category-login2.png)
 
 3. Go to **Storage Categories**.
 
-    ![screen showing logging in to CompuTec AppEngine Launchpad](./media\storage-category-login3.png)
+    ![screen showing logging in to CompuTec AppEngine Launchpad](./media/storage-category-login3.png)
 
 4. Click the **+ (Add) icon**.
 
-    ![screen showing logging in to CompuTec AppEngine Launchpad](./media\storage-category-login4.png)
+    ![screen showing logging in to CompuTec AppEngine Launchpad](./media/storage-category-login4.png)
 
 5. Enter the required details:
 
@@ -80,15 +80,15 @@ To add a new Storage Category, follow these steps:
         - **Yes**: Goods must be stored within a Storage Unit (for example pallet or container).
         - **No**: Items can be stored without a Storage Unit.
 
-    ![screen showing logging in to CompuTec AppEngine Launchpad](./media\storage-category-login5.png)
+    ![screen showing logging in to CompuTec AppEngine Launchpad](./media/storage-category-login5.png)
 
 6. Click **Add** to save.
 
-    ![screen showing logging in to CompuTec AppEngine Launchpad](./media\storage-category-login6.png)
+    ![screen showing logging in to CompuTec AppEngine Launchpad](./media/storage-category-login6.png)
 
 7. Done! You've added a new **Storage Category**.
 
-    ![screen showing logging in to CompuTec AppEngine Launchpad](./media\storage-category-login7.png)
+    ![screen showing logging in to CompuTec AppEngine Launchpad](./media/storage-category-login7.png)
 
 ## Use case
 

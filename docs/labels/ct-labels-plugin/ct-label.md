@@ -146,7 +146,7 @@ The following steps outline the process for request details:
 
 - If there was an error we will get a pop-up telling us that there was an error trying to retry printing the label.
 
-        ![CompuTec Labels](./media\error.png)
+        ![CompuTec Labels](./media/error.png)
 
 ## Request Run Parameters
 

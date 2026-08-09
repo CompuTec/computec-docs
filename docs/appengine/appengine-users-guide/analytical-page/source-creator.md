@@ -10,11 +10,11 @@ There are two types of data sources:
 
 - **Custom  Data Sources**: You create these yourself by importing a JSON file, entering your own SQL statement, or adding an OData endpoint (a web service URL that provides data).
 
-  ![screen showing custom data source in source manager](.\media\source-creator\an-sm-custom-src.png)
+  ![screen showing custom data source in source manager](./media/source-creator/an-sm-custom-src.png)
 
 - **Predefined Data Sources**: These are added automatically when you install a plugin. They are ready to use, but you can’t edit them. You can easily identify them by spotting a plugin icon next to the source name.
 
-  ![screen showing Predefined Data Sources in source manager](.\media\source-creator\an-sm-predef-src.png)
+  ![screen showing Predefined Data Sources in source manager](./media/source-creator/an-sm-predef-src.png)
 
 ## Access Source Manager
 
@@ -22,11 +22,11 @@ You can access **Source Manager**, following these steps:
 
 1. Log in to **CompuTec AppEngine Launchpad**.
   
-    ![screen showing Logging into CompuTec AppEngine Launchpad](.\media\source-creator\aa-login-launchpad.png)
+    ![screen showing Logging into CompuTec AppEngine Launchpad](./media/source-creator/aa-login-launchpad.png)
 
 2. Click the **Analytics** icon.
 
-    ![screen showing entering Analytics module in CompuTec AppEngine](.\media\source-creator\aa-go-to-analitics.png)
+    ![screen showing entering Analytics module in CompuTec AppEngine](./media/source-creator/aa-go-to-analitics.png)
 
 3. Click **Go to Source Manager**.
 
@@ -46,11 +46,11 @@ To add a new source, follow these steps:
 
 1. Log in to **CompuTec AppEngine Launchpad**.
   
-    ![screen showing logging into CompuTec AppEngine Launchpad](.\media\source-creator\aa-login-launchpad.png)
+    ![screen showing logging into CompuTec AppEngine Launchpad](./media/source-creator/aa-login-launchpad.png)
 
 2. Click the **Analytics** icon.
 
-    ![screen showing entering the Analytics Module of the CompuTec AppEngine Launchpad](.\media\source-creator\aa-go-to-analitics.png)
+    ![screen showing entering the Analytics Module of the CompuTec AppEngine Launchpad](./media/source-creator/aa-go-to-analitics.png)
 
 3. Click **Go to Source Manager**.
 
@@ -110,11 +110,11 @@ To import a new source from a Json file, follow these steps:
 
 1. Log in to **CompuTec AppEngine Launchpad**.
 
-    ![screen showing logging into CompuTec AppEngine Launchpad](.\media\source-creator\aa-login-launchpad.png)
+    ![screen showing logging into CompuTec AppEngine Launchpad](./media/source-creator/aa-login-launchpad.png)
 
 2. Click the **Analytics** icon.
 
-    ![screen showing entering analytics module in CompuTec AppEngine](.\media\source-creator\aa-go-to-analitics.png)
+    ![screen showing entering analytics module in CompuTec AppEngine](./media/source-creator/aa-go-to-analitics.png)
 
 3. Click **Go to Source Manager**.
 
@@ -162,11 +162,11 @@ To edit an existing data source, follow these steps:
 
 1. Log in to **CompuTec AppEngine Launchpad**.
 
-    ![screen showing logging into compuTec appengine launchpad](.\media\source-creator\aa-login-launchpad.png)
+    ![screen showing logging into compuTec appengine launchpad](./media/source-creator/aa-login-launchpad.png)
 
 2. Click the **Analytics** icon.
 
-    ![screen showing entering analytics module](.\media\source-creator\aa-go-to-analitics.png)
+    ![screen showing entering analytics module](./media/source-creator/aa-go-to-analitics.png)
 
 3. Click **Go to Source Manager**.
 

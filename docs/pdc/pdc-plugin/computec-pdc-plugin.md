@@ -40,7 +40,7 @@ CompuTec ProcessForce API needs to be installed on the same server as CompuTec A
 
 After a successful installation choose the CompuTec AppEngine console which database would you like to bind in :
 
-![Computec PDC Plugin Database](.\media\computec-pdc-plugin-database.png)
+![Computec PDC Plugin Database](./media/computec-pdc-plugin-database.png)
 
 Then open the CompuTec PDC application and fill in Settings with data default CompuTec AppEngine server is `https://localhost:54000`. It is required to fill in the fields in the order marked on the following screenshot to refresh the application and download the data.
 

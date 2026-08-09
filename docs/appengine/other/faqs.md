@@ -13,7 +13,7 @@ Follow the steps below to obtain the `CompanyId` in **CompuTec AppEngine**:
 3. In the **Companies** section, find your company and hover over its name.
 4. The **Company ID** is displayed in the tooltip.
 
-    ![Company Id](../media\01scr-faq-company-name.png)
+    ![Company Id](../media/01scr-faq-company-name.png)
 
 ## How to configure CORS in the SAP Web Client manually
 

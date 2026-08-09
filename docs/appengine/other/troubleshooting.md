@@ -119,7 +119,7 @@ After the process is completed, open **CompuTec WebClient Start** again and veri
 
 In some **CompuTec AppEngine** installations, administrators may encounter an issue where **Background Processing** cannot be activated for a company. When attempting to enable it, the activation fails and you can see an error.
 
-    ![System error](..\media\troubleshooting\2026-03-11_13-15-52.png)
+    ![System error](../media/troubleshooting/2026-03-11_13-15-52.png)
 
 You may also see that the **CompuTec AppEngine log file** contains an error similar to: ``Invalid number: not a valid number string '###_SEVTVALIDCK####'``
 
@@ -156,11 +156,11 @@ You may see one or more of the following symptoms:
 - You can find the following logs in **Windows Event Viewer**:
   - **Event ID 7000**: ``The service failed to start.``
 
-    ![System error](..\media\troubleshooting\tr-ae-e1.png)
+    ![System error](../media/troubleshooting/tr-ae-e1.png)
 
   - **Event ID 7009**: ``A timeout was reached while waiting for the service to connect.``
 
-    ![System error](..\media\troubleshooting\tr-ae-e2.png)
+    ![System error](../media/troubleshooting/tr-ae-e2.png)
 
 ### Solution
 
@@ -176,24 +176,24 @@ Here’s a step-by-step guide on how to do it:
 
 1. Run **Registry Editor** as an administrator.
 
-    ![System error](..\media\troubleshooting\tr0-ae.png)
+    ![System error](../media/troubleshooting/tr0-ae.png)
 
 2. Navigate to: ``HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control``
 
-    ![System error](..\media\troubleshooting\tr01-ae.png)
+    ![System error](../media/troubleshooting/tr01-ae.png)
 
 3. Look for a **DWORD** value named: **ServicesPipeTimeout**.
 
 4. (optional) If **ServicesPipeTimeout** doesn't exist, create it:
 
     - **Right-click** > **New** > **DWORD (32-bit) Value**.
-        ![System error](..\media\troubleshooting\tr02-ae.png)
+        ![System error](../media/troubleshooting/tr02-ae.png)
     - Name it ``ServicesPipeTimeout``.
 
 5. Double-click **ServicesPipeTimeout**.
 6. Enter the value: ``120000`` for 2 minutes, or ``180000`` for 3 minutes, and select **Decimal**.
 
-    ![System error](..\media\troubleshooting\tr03-ae.png)
+    ![System error](../media/troubleshooting/tr03-ae.png)
 
 7. Click **OK** and close **Registry Editor**.
 8. Restart the system to apply the change.
@@ -254,7 +254,7 @@ To check the environment variable path, follow these steps:
 
 1. Go to **Windows** > **System Properties** > **Environment Variables...**.
 
-    ![System Variable](..\media\troubleshooting\01-ae-troubleshooting.png)
+    ![System Variable](../media/troubleshooting/01-ae-troubleshooting.png)
 
 2. Locate the variable named **HDBDOTNETCORE** and note the path. In our example, it's `C:\Program Files\hdbclient\dotnetcore`.
 

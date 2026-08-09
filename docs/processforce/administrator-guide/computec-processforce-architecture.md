@@ -14,7 +14,7 @@ The solution is built on **Microsoft .NET** technology and integrates directly w
 
 **CompuTec ProcessForce** consists of several components that work together to provide business functionality, user interfaces, data management, and reporting capabilities.
 
-![computec processforce 3.0 Architecture screen](.\media\architecture\pf-30-architecture.jpg)
+![computec processforce 3.0 Architecture screen](./media/architecture/pf-30-architecture.jpg)
 
 The solution operates via an executable process ``ProcessForce.exe``, and integrates with **SAP Business One** through standard SAP APIs and database structures while adding manufacturing-specific functionality and data.
 
