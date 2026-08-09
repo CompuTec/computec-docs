@@ -45,7 +45,7 @@
     "@docusaurus/types": "3.10.2",
     "@types/lodash": "4.17.25",
     "dotenv": "17.4.2",
-    "typescript": "6.0.3"
+    "typescript": "7.0.2"
   },
   "overrides": {
     "serialize-javascript": "^7.1.0",
