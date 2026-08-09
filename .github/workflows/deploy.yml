@@ -43,12 +43,12 @@ jobs:
           ENV=$([[ "$GITHUB_EVENT_NAME" =~ ^(workflow_dispatch|push)$ ]] && echo "PRODUCTION" || echo "DEVELOPMENT")
           echo "ENV=$ENV" >> $GITHUB_OUTPUT
       - name: Checkout the repository
-        uses: actions/checkout@v7
+        uses: actions/checkout@v7.0.1
         with:
           ref: ${{ github.event.pull_request.head.sha || github.ref }}
       - name: Create GitHub deployment
         id: github-deployment
-        uses: actions/github-script@v9
+        uses: actions/github-script@v9.0.0
         with:
           result-encoding: string
           script: |
@@ -74,7 +74,7 @@ jobs:
 
             return deployment.data.id;
       - name: Set GitHub 'in_progress' deployment status
-        uses: actions/github-script@v9
+        uses: actions/github-script@v9.0.0
         env:
           DEPLOYMENT_ID: ${{ steps.github-deployment.outputs.result }}
         with:
@@ -86,7 +86,7 @@ jobs:
               state: 'in_progress',
             });
       - name: Setup Node
-        uses: actions/setup-node@v7
+        uses: actions/setup-node@v7.0.0
         with:
           node-version: 24.19.0
           cache: npm
@@ -106,7 +106,7 @@ jobs:
         run: npm run build:dev
       - name: Create Cloudflare Pages deployment
         id: cloudflare-pages-deployment
-        uses: actions/github-script@v9
+        uses: actions/github-script@v9.0.0
         with:
           result-encoding: string
           script: |
@@ -144,7 +144,7 @@ jobs:
             '. + {index_name: $ALGOLIA_INDEX_NAME, start_urls: [$PRODUCTION_URL], sitemap_urls: [$SITEMAP_URL]} | tostring'`
           docker run -e API_KEY -e APPLICATION_ID -e CONFIG algolia/docsearch-scraper
       - name: Set GitHub 'success' deployment status
-        uses: actions/github-script@v9
+        uses: actions/github-script@v9.0.0
         env:
           DEPLOYMENT_ID: ${{ steps.github-deployment.outputs.result }}
           CLOUDFLARE_DEPLOYMENT_URL: ${{ steps.cloudflare-pages-deployment.outputs.result }}
@@ -159,7 +159,7 @@ jobs:
               environment_url: process.env.CLOUDFLARE_DEPLOYMENT_URL,
             });
       - name: Set Github 'error' deployment status if build failed
-        uses: actions/github-script@v9
+        uses: actions/github-script@v9.0.0
         if: ${{ failure() && steps.github-deployment.conclusion == 'success' }}
         env:
           DEPLOYMENT_ID: ${{ steps.github-deployment.outputs.result }}
