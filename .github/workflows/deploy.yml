@@ -46,7 +46,6 @@ jobs:
         uses: actions/checkout@v6
         with:
           ref: ${{ github.event.pull_request.head.sha || github.ref }}
-          submodules: true
       - name: Create GitHub deployment
         id: github-deployment
         uses: actions/github-script@v8
