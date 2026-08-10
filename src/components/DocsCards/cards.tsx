@@ -97,7 +97,19 @@ const docsCards: DocCardProps[] = [
     image: "/img/cards/CDCTile-CompuTec-Labels.svg",
     pluginId: "labels",
   },
-  
+  {
+    title: "CompuTec KSeF",
+    description: (
+      <Translate
+        description="Homepage card description"
+        id="homepage.cards.ksef.description"
+      >
+        CompuTec KSeF provides SAP Business One integration for Poland’s National e-Invoicing System (KSeF), covering structured invoice generation, scheduled submission, incoming invoice processing, and real-time status monitoring, without a separate portal or parallel system.
+      </Translate>
+    ),
+    image: "/img/cards/CDCTile-CompuTec-KSeF.svg",
+    pluginId: "ksef",
+  },
   {
     title: "CompuTec Premium",
     description: (
