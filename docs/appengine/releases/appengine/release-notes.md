@@ -4,6 +4,14 @@ sidebar_position: 1
 
 # CompuTec AppEngine Release Notes
 
+## CompuTec AppEngine 3.2608.9
+
+**Release Date:** 12 August 2026
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Improved | Analytics | **Analytics variants** can now use **CustomView** as a data source, allowing views based on custom views to be displayed and handled correctly in the **CompuTec AppEngine Launchpad**. |
+
 ## CompuTec AppEngine 3.2608.7
 
 **Release Date: 7 August 2026**
