@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## CompuTec AppEngine 3.2608.9
 
-**Release Date:** 12 August 2026
+**Release Date: 12 August 2026**
 
 | Issue Type | Component | Release Note |
 | --- | --- | --- |
