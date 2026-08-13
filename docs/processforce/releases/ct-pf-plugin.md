@@ -11,6 +11,29 @@ You can find all download links and release notes for the latest available **Com
 However, we strongly recommend using **CompuTec ProcessForce Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec ProcessForce 3.2608.3
+
+**Release Date: 12 August 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | API | Added a new **ReceiptProduction** API endpoint for posting production receipts and updating the actual quantity of a **Manufacturing Order**. Attempts to update read-only fields now return an error instead of reporting a successful update. |
+| Added | AE Reports | Added new base database views for **AE Reports** on both **Microsoft SQL Server** and **SAP HANA**, providing additional **Manufacturing Order** and document data for reporting. |
+| Improved | Batch 360 | **Trace Analysis** and **Multi-Batch Analysis** now display the transaction time in addition to the transaction date. |
+| Improved | Licensing | Newly imported **ProcessForce licenses** are now automatically selected for the current company database, removing the need to select them manually on the **Allocation** tab. |
+| Improved | MRP 2.5 | Documents created from **MRP 2.5** now include **Origin: MRP 2.5** in the remarks, making their source easier to identify. |
+| Fixed | Batch Transactions Report | Fixed an issue where opening the **Batch Transactions Report** for an item that is not batch-managed could cause an endless report loop and make **SAP Business One** unresponsive. |
+| Fixed | Pick Receipt | Fixed an issue that could display an add-on restart prompt when creating a **Pick Receipt** from a **Manufacturing Order**. |
+| Fixed | Batch 360 | Fixed an SQL error that could occur when opening a batch in **Batch 360**. Batch data now loads correctly. |
+| Fixed | Manufacturing Order | Switching a **Manufacturing Order** from **Add** mode to **Find** mode no longer displays an unnecessary ``Unsaved data will be lost`` message when no data has been entered. |
+| Fixed | Production Documents | Fixed remarks generated for documents created through **Orderless Production** and **Pick Receipt**. **Manufacturing Order** numbers are now displayed correctly without placeholders or duplicated text. |
+| Fixed | PFI | Fixed an API error when replacing a phantom item or its revision on a **Manufacturing Order** through PFI. |
+| Fixed | Test Protocols | Fixed duplicated **Test Protocols** so that the protocol name is cleared and the template name is correctly populated in the copy. |
+| Fixed | Manufacturing Order | The rescheduling prompt is now displayed correctly when a **Manufacturing Order** is changed to **Scheduled** after its required date has been updated. |
+| Fixed | Goods Receipt | Fixed an issue where using the link arrow next to an item on a **Goods Receipt** could result in an error. The link now opens the corresponding **ProcessForce Bill of Materials** correctly. |
+| Fixed | PFI | Improved the import of operation input/output bindings when only ``U_BaseLine`` is provided. PFI now resolves the corresponding item code automatically or returns a clear error when it cannot be resolved. |
+| Fixed | Routings | **Routing codes** and related fields now support up to **50 characters**, preventing longer routing and item codes from being truncated or rejected. |
+
 ## CompuTec ProcessForce 3.2608.2
 
 **Release Date: 4 August 2026**
