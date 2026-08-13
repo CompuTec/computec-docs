@@ -6,6 +6,14 @@ sidebar_position: 13
 
 Below are the release notes for CompuTec Data Import & Export (PFI) Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec PFI 3.2608.1
+
+**Release Date: 13 August 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Fixed | Import Keys | Fixed an error that could occur when loading document numbers copied from **Excel** or other sources. Values containing regular or non-breaking spaces are now recognized and processed correctly. |
+
 ## CompuTec PFI 3.2605.1
 
 **Release Date: 18 May 2026**

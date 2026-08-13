@@ -6,6 +6,14 @@ sidebar_position: 12
 
 Below are the release notes for CompuTec Material Requirements Planning (MRP) Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec MRP 3.2608.1
+
+**Release Date: 13 August 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Fixed | MRP | Fixed an issue with multi-select filters on the **Inventory Data** tab of the **MRP Wizard** and the **Vendors Lead Times** screen. Filter drop-downs now display the correct options when the filter bar is refreshed. |
+
 ## CompuTec MRP 3.2607.1
 
 **Release Date: 10 July 2026**
