@@ -72,20 +72,26 @@ To enable **Snapshot Isolation**, follow these steps:
     Enabling **Snapshot Isolation** on ``model`` ensures that ``tempdb`` automatically inherits the setting after every SQL Server restart. This prevents administrators from having to manually reapply the setting after a reboot.
     :::
 
-2. In **SAP Business One**, go to: **Administration** > **System Initialization** > **General Settings** > **ProcessForce** > **General**.
+2. In **CompuTec AppEngine Administration Panel**, go to: **Configuration**.
 
-    ![screen showing General sub-tab opened.](./media/performance-issues/snapshot-isolation-level1.png)
+3. Click the name of the company.
 
-3. Enable the following checkbox: **Accept Snapshot Isolation Level**.
+    ![CompuTec AppEngine Administration Panel Configuration page showing a list of companies with PF Demo company highlighted](media/performance-issues/snapshot1.png)
 
-    ![screen showing snapshot isolation level turned on](./media/performance-issues/snapshot-isolation-level.png)
+4. Click **Settings**.
 
-4. Click **OK** to save the changes.
+    ![CompuTec AppEngine Administration Panel showing Configuration page for PF Demo company with Settings button highlighted in top right corner](media/performance-issues/snapshot12.png)
 
-    ![screen showing clicking OK to apply the changes](./media/performance-issues/snapshot-isolation-level3.png)
+5. In **CoreGeneralSettingsModel**, set **AcceptSnapshotIsolation** to ``Yes``.
 
-5. Restart the **SAP Business One Client** to ensure the new database session settings are applied.
-6. Done! The **Snapshot Isolation Level** is enabled.
+    ![alt text](media/performance-issues/snapshot123.png)
+
+6. Click **Save & Close**.
+
+    ![CompuTec AppEngine Administration Panel Settings page showing the Save & Close button highlighted in green in the top right corner next to a Cancel button](media/performance-issues/snapshot1234.png)
+
+7. Restart the **SAP Business One Client** to ensure the new database session settings are applied.
+8. Done! The **Snapshot Isolation Level** is enabled.
 
 ## Long delay in opening and browsing ProcessForce forms on SAP Business One for SAP HANA
 
