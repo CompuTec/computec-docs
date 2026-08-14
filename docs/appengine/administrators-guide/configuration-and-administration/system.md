@@ -12,9 +12,9 @@ System Details provides information about CompuTec AppEngine that we are current
 
 ## Profiles
 
-Profiles are used to store different configurations for the OpenTelemetry Exporter settings (OTLP Exporter). You can define many different configuration and than attach them when needed to CompuTec AppEngine or Company.
+Profiles are used to store different configurations for the **OpenTelemetry Exporter settings (OTLP Exporter)**. You can define many different configuration and than attach them when needed to CompuTec AppEngine or Company.
 
- This functionality sends logs, metrics and traces to OLTP server based on this configuration. You can copy the standard templates provided with CompuTec AppEngine (listed below) and set your Endpoint and Header Values. For more please check [Support for Open Telemetry](https://learn.computec.one/docs/Help/OpenTelemetrySupport)
+ This functionality sends logs, metrics and traces to OLTP server based on this configuration. You can copy the standard templates provided with CompuTec AppEngine (listed below) and set your Endpoint and Header Values. For more, check [Open Telemetry Configuration Guide](/docs/appengine/administrators-guide/setup-telemetry.md).
 
 ![System Profiles](./media/system/system-profiles.webp)
 

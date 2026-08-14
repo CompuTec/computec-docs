@@ -27,12 +27,12 @@ Before using the Put Away functionality, ensure the following prerequisites are 
 
 - CompuTec AppEngine 3.0
 - CompuTec WMS 3.0
-- CompuTec AppEngine Plugins:  and BusinessLogic
+- CompuTec AppEngine Plugin and BusinessLogic
 
-### AppEngine and Plug-in Installation and Configuration
+### CompuTec AppEngine and WMS Plugin Installation and Configuration
 
-- For AppEngine installation, follow the instructions outlined in the [Installation](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation) Guide.
-- For configuring the plug-in, refer to the [Configuration and Administration](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/configuration) Guide.
+- For CompuTec AppEngine installation and configuration, follow the instructions described in the [CompuTec AppEngine Installation and Configuration Guide](/docs/appengine/administrators-guide/configuration-and-administration/installation).
+- For the WMS plugin installation, follow the instructions described in the [Plugin Installation Guide](/docs/appengine/plugins-user-guide/install-plugin).
 
 ## Usage
 

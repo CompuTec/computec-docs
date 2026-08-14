@@ -67,7 +67,7 @@ To install the **CompuTec ProcessForce** plugins, follow these steps:
     - **CompuTec.ProcessForce.API**
     - **CompuTec.ProcessForce.Plugin**
 
-5. Install them by following the [**CompuTec AppEngine Plugin Installation Guide**](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/plugins/overview) instructions.
+5. Install them by following the [**CompuTec AppEngine Plugin Installation Guide**](/docs/appengine/plugins-user-guide/install-plugin) instructions.
 
     :::caution[Important]
 

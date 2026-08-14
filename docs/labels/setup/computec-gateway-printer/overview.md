@@ -22,7 +22,7 @@ These applications communicate with **CompuTec Gateway Manager** through the Com
         - The ability to define and configure logical printers, which are linked to physical printing devices.
         - Print jobs can be routed through the CompuTec Gateway Manager if the printer is not directly accessible.
 
-    For more information on printer configuration, please refer to the Printer Integration Guide. [Click here to navigate to the page](https://learn.computec.one/docs/labels/setup/computec-gateway-printer/configuration/).
+    For more information on printer configuration, please refer to the Printer Integration Guide. [Click here to navigate to the page](/docs/labels/setup/computec-gateway-printer/configuration/).
 
 2. **CompuTec WMS**
 
@@ -32,7 +32,7 @@ These applications communicate with **CompuTec Gateway Manager** through the Com
     - Automated workflows, reducing the need for manual data entry and improving accuracy in warehouse operations.
     - Seamless communication between warehouse systems and peripheral devices such as printers and scales.
 
-    For detailed weight scale configuration in WMS, refer to the Weight Scale Integration Guide. [Click here to navigate to the page](https://learn.computec.one/docs/wms/user-guide/weight-scales/overview/).
+    For detailed weight scale configuration in WMS, refer to the Weight Scale Integration Guide. [Click here to navigate to the page](/docs/wms/user-guide/weight-scales/overview/).
 
 3. **CompuTec PDC**
 
@@ -42,7 +42,7 @@ These applications communicate with **CompuTec Gateway Manager** through the Com
     - Remote or local label printing at various stages of the production process.
     - Efficient communication with peripheral devices such as printers and scales through the CompuTec AppEngine platform.
 
-    For detailed weight scale configuration in CompuTec PDC, refer to the Weight Scale Integration Guide. [Click here to navigate to the page](https://learn.computec.one/docs/pdc/administrators-guide/weight-scales-integration/overview/).
+    For detailed weight scale configuration in CompuTec PDC, refer to the Weight Scale Integration Guide. [Click here to navigate to the page](/docs/pdc/administrator-guide/weight-scales-integration/overview).
 
 ## Communication Flow Between Applications and Gateway
 

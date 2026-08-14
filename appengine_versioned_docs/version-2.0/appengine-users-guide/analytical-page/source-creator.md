@@ -16,7 +16,7 @@ This leads to the Source List:
 
 ![AppEngine User's Guide](./media/source-creator/source-list.png)
 
-This is a list of sources currently used in the [Variants](/docs/appengine/appengine-users-guide/analytical-page/overview#variants) used in Analytical views.
+This is a list of sources currently used in the [Variants](/docs/appengine/appengine-users-guide/analytical-page/overview.md#about-a-variant) used in Analytical views.
 
 You can add a new Variant by clicking the Add New Source button:
 

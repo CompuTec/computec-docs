@@ -17,7 +17,7 @@ CompuTec ProcessForce extends the capabilities of SAP Business One for advanced 
 
     - The core engine that runs background services, scheduled tasks, and automated processes in CompuTec ProcessForce.
     - Handles calculations, data synchronization and other system-level operations.
-    - Directly available for download from the **AppEngine Store**. ➡️ Learn how to [install Plugins](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/plugins/overview)
+    - Directly available for download from the **AppEngine Store**. ➡️ Learn how to [install Plugins](/docs/appengine/plugins-user-guide/install-plugin)
 
 ### CompuTec ProcessForce API
 

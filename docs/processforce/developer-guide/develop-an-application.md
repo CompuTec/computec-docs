@@ -12,6 +12,6 @@ The CompuTec AppEngine Framework provides a flexible foundation for extending Pr
 
 This framework ensures that extensions are consistent, scalable, and maintainable while still allowing developers to adapt CompuTec ProcessForce to specific business needs.
 
-For step-by-step guidance, best practices, and examples, please refer to the official documentation on [Developing Plugins](https://learn.computec.one/docs/appengine/developers-guide/basic-and-business-logic/plugin-types/overview/).
+For step-by-step guidance, best practices, and examples, please refer to the official documentation on [Developing Plugins](/docs/appengine/2.0/developers-guide/sapui5-plugins/development-prerequisites).
 
 ---

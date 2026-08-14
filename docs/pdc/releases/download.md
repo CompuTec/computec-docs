@@ -44,13 +44,13 @@ import Releases93 from "../releases-93.json";
   
 - **CompuTec AppEngine 2.0**
   
-  - Download links for the **CompuTec PDC 3.0 Plugin** are available in [here](https://learn.computec.one/docs/appengine/2.0/releases/plugins/pdc/download).  
-  - Release notes for the **CompuTec PDC 3.0 Plugin (AppEngine 2.0)** are available [here](https://learn.computec.one/docs/appengine/2.0/releases/plugins/pdc/release-notes).  
+  - Download links for the **CompuTec PDC 3.0 Plugin** are available in [here](/docs/appengine/2.0/releases/plugins/pdc/download).  
+  - Release notes for the **CompuTec PDC 3.0 Plugin (AppEngine 2.0)** are available [here](/docs/appengine/2.0/releases/plugins/pdc/release-notes).  
 
 - **CompuTec AppEngine 3.0**
   
-  - If you want to use the **CompuTec PDC 4.0 Plugin**, click [this link](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/plugins/overview).
-  - Release notes for the **CompuTec PDC 4.0 Plugin (AppEngine 3.0)** are available [here](https://learn.computec.one/docs/pdc/releases/pdc).
+  - If you want to use the **CompuTec PDC 4.0 Plugin**, click [this link](/docs/appengine/plugins-user-guide/install-plugin).
+  - Release notes for the **CompuTec PDC 4.0 Plugin (AppEngine 3.0)** are available [here](/docs/pdc/releases/pdc).
 
 :::
 

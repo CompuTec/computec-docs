@@ -24,8 +24,6 @@ Rather than relying on a default resource, the system calculates which resource 
 It is strongly recommended to test this option in a **non-production environment** before enabling it in a live system.
 :::
 
----
-
 ## How-to Guide
 
 Resource Balancing allows you to select the most suitable resource for a task in a Manufacturing Order by evaluating multiple factors like operation quantities, related times, resource availability, and resource calendars. Instead of relying on a default resource, the system calculates the optimal resource that can complete the work in the least amount of time.
@@ -91,12 +89,10 @@ If any machine-type resource has a **Run Time = 0**, the system will block the a
 
 Once enabled, the system automatically executes Resource Balancing when you:
 
-- Open the [Scheduling Board / Semi-finished Product Scheduling form](./scheduling-board.md#how-to-open-scheduling-board--semi-finished-product-scheduling)
+- Open the [Scheduling Board / Semi-finished Product Scheduling form](./scheduling-board.md#open-the-scheduling-board)
 - Change the Planned Quantity or Header Dates in the Manufacturing OrderChanging the **Planned Quantity** or Manufacturing Order header **dates**
 
 The system re-evaluates the best available resource dynamically, ensuring optimized scheduling.
-
----
 
 ## Log files
 
@@ -121,8 +117,6 @@ To activate the option, perform the following steps:
 
    A separate file is saved for changes made for each Operation.
 
----
-
 ## Why Use Resource Balancing?
 
 | Benefit | Description |
@@ -141,5 +135,3 @@ Avoid enabling Resource Balancing if:
 - You are in a production environment without prior testing.
 
 ⚠️ Recommendation: Always test in a staging or sandbox environment before applying to live systems.
-
----

@@ -32,7 +32,7 @@ Make sure the following components are installed and active:
 - **WMS Business Logic**
 
 :::note[info]
-To learn how to install CompuTec AppEngine plugins, see the [plugin installation guide](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/plugins/plugin-installation-process).
+To learn how to install CompuTec AppEngine plugins, see the [plugin installation guide](/docs/appengine/plugins-user-guide/install-plugin).
 :::
 
 ## Add a Storage Category

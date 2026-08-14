@@ -12,9 +12,9 @@ MI360 is not a standalone application - it requires CompuTec ProcessForce Plugin
 
 References:
 
-- [AppEngine 2.0 Plugin Installation Guide](https://learn.computec.one/docs/appengine/2.0/administrators-guide/configuration-and-administration/overview)
+- [AppEngine 2.0 Plugin Installation Guide](/docs/appengine/2.0/administrators-guide/configuration-and-administration/overview)
 
-- [AppEngine 3.0 Plugin Installation Guide](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/plugins/overview)
+- [AppEngine 3.0 Plugin Installation Guide](/docs/appengine/plugins-user-guide/install-plugin)
 
 ---
 

@@ -6,8 +6,6 @@ sidebar_position: 2
 
 To ensure the proper functioning of CompuTec Gateway Manager, follow the prerequisites and installation steps outlined below.
 
----
-
 ## Prerequisites
 
 Before installing the required applications, make sure to:
@@ -26,17 +24,16 @@ You need to install the following applications:
 
 1. **CompuTec Gateway Plugin**:
 
-    - **For CompuTec AppEngine v2**
-        - Download: [Click here to navigate to the page](https://learn.computec.one/docs/labels/releases/download/#appengine-computec-labels-plugin).
-        - Installation guide: [Click here to navigate to the page](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/overview/#plugins).
+    - **For CompuTec AppEngine 2.0**
+        - Download: [Click here to navigate to the page](/docs/labels/releases/download/#appengine-computec-labels-plugin).
+        - Installation guide: [Click here to navigate to the page](/docs/appengine/2.0/administrators-guide/configuration-and-administration/overview#plugins).
 
-    - **For CompuTec AppEngine v3**
-        - Download and Installation Guide: [Click here to navigate to the page](https://learn.computec.one/docs/appengine/next/administrators-guide/configuration-and-administration/plugins/overview/).
+    - **For CompuTec AppEngine 3.0**
+        - Download and Installation Guide: [Click here to navigate to the page](/docs/appengine/plugins-user-guide/install-plugin).
 
 2. **CompuTec Gateway Manager**
 
-    - Download: [Click here to navigate to the page](https://learn.computec.one/docs/labels/releases/download/#computec-gateway-service).
+    - Download: [Click here to navigate to the page](/docs/labels/releases/download/#computec-gateway-service).
 
         ![Installation](./media/installation.png)
 
----

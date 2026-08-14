@@ -8,7 +8,7 @@ Należy pamiętać, że w Polsce RODO jest określane jako GDPR.
 
 2. Zebrane dane mogą być przetwarzane w celach marketingowych CompuTec S.A.
 
-3. Dane osobowe mogły zostać pozyskane z ogólnodostępnych źródeł w Internecie, w tym ze stron internetowych podmiotów, dla których Pani/Pan pracuje lub świadczy usługi. Pani/Pana dane osobowe mogły zostać również pozyskane bezpośrednio od Pani/Pana, poprzez udział w targach i konferencjach - dane te zostały podane dobrowolnie. Ewentualnie Twoje dane osobowe mogły zostać pozyskane za pośrednictwem naszych stron internetowych [https://processforce.eu](https://processforce.eu) / [https://processforce.world](https://processforce.world), jeśli przesłałeś nasz formularz subskrypcji e-mail.
+3. Dane osobowe mogły zostać pozyskane z ogólnodostępnych źródeł w Internecie, w tym ze stron internetowych podmiotów, dla których Pani/Pan pracuje lub świadczy usługi. Pani/Pana dane osobowe mogły zostać również pozyskane bezpośrednio od Pani/Pana, poprzez udział w targach i konferencjach - dane te zostały podane dobrowolnie. Ewentualnie Twoje dane osobowe mogły zostać pozyskane za pośrednictwem naszych stron internetowych [https://computec.one](https://computec.one) / [https://processforce.world](https://processforce.world), jeśli przesłałeś nasz formularz subskrypcji e-mail.
 
 4. Podstawą prawną przetwarzania danych osobowych użytkownika jest art. 6 ust. 1 lit. f) RODO, czyli prawnie uzasadnione interesy administratora, którymi są usługi marketingu bezpośredniego.
 

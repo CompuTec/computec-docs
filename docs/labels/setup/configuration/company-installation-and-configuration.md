@@ -36,7 +36,7 @@ By right-clicking, you can navigate to Printing Rules, Mapping Parameters, Event
 
 ![Objects](./media/company-installation-and-configuration/ct-labels-settings.webp)
 
-Here, you can check a list of Object that can be chosen for Transaction. If you want to add new objects to the list for your CompuTec Labels installation, please contact [CompuTec Support](http://support.computec.pl/).
+Here, you can check a list of Object that can be chosen for Transaction. If you want to add new objects to the list for your CompuTec Labels installation, please contact [CompuTec Support](https://support.computec.pl/).
 
 The Specific Settings tab allows you to enable the Usage of Storage Procedures. This option allows you to find templates that are not defined in the printing rules. It is useful for implementing custom logic in template identification. The procedure name for this is:
 

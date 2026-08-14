@@ -40,4 +40,4 @@ Depending on the database platform, layouts are provided as:
 
 ## Report an issue
 
-If you find a problem with a print layout, contact [**CompuTec Support**](http://support.computec.pl/) through the **Support ProcessForce** project and select the **Print Layouts or Reports** component.
+If you find a problem with a print layout, contact [**CompuTec Support**](https://support.computec.pl/) through the **Support ProcessForce** project and select the **Print Layouts or Reports** component.

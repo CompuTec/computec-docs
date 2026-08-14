@@ -8,7 +8,7 @@ Please note that in Poland GDPR is referred to as RODO.
 
 2. Collected data may be processed for the marketing purposes of CompuTec S.A.
 
-3. Personal data may have been obtained from public sources on the Internet including websites of entities for which you work or provide service. Your personal data may have also been obtained directly from you, by participating in fairs and conferences - such data was provided on a voluntary basis. Alternatively your personal data may be have been obtained via our websites [https://processforce.eu](https://processforce.eu) / [https://processforce.world](https://processforce.world) if you have submitted our email subscription form.
+3. Personal data may have been obtained from public sources on the Internet including websites of entities for which you work or provide service. Your personal data may have also been obtained directly from you, by participating in fairs and conferences - such data was provided on a voluntary basis. Alternatively your personal data may be have been obtained via our websites [https://computec.one](https://computec.one) / [https://processforce.world](https://processforce.world) if you have submitted our email subscription form.
 
 4. The legal basis for the processing of your personal data is art. 6 paragraph 1 letter (f) RODO that is, the legitimate interests of the administrator which are  direct marketing services.
 
