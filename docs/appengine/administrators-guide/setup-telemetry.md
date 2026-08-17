@@ -53,6 +53,16 @@ To configure **OpenTelemetry** in **OpenTelemetry-compatible backend**, for exam
 
     ![paste endpoints to appengine](media/grafana/gr999.png)
 
+    :::warning[important]
+    When replacing the **OpenTelemetry** endpoint, replace only the URL up to and including ``/otlp``. Keep the endpoint suffix for each telemetry type:
+
+    - ``/v1/logs`` for logs
+    - ``/v1/traces`` for traces
+    - ``/v1/metrics`` for metrics
+
+    For example, if your **OpenTelemetry** endpoint is ``https://example.com/otlp``, use ``https://example.com/otlp/v1/logs``, ``https://example.com/otlp/v1/traces``, and ``https://example.com/otlp/v1/metrics`` in the corresponding configuration entries.
+    :::
+
 12. Copy **Environmental Variable OTLP Header** from **Grafana.com**.
 
     ![copy headers from garfana](media/grafana/grafana990.png)
