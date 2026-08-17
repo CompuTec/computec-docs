@@ -9,20 +9,23 @@ For detailed setup instructions, guides, and contribution guidelines, please vis
 ## 🚀 Quick Start
 
 1. Clone the repository:
-```bash
-git clone https://github.com/CompuTec/computec-docs.git
-cd computec-docs
-```
+
+    ```bash
+    git clone https://github.com/CompuTec/computec-docs.git
+    cd computec-docs
+    ```
 
 2. Install dependencies:
-```bash
-npm install
-```
+
+    ```bash
+    npm install
+    ```
 
 3. Start the local development server:
-```bash
-npm run start:dev
-```
+
+    ```bash
+    npm run start:dev
+    ```
 
 4. Open `http://localhost:3000` in your browser to view the site.
 
@@ -33,7 +36,5 @@ We welcome contributions! Please refer to [our wiki](https://github.com/CompuTec
 ## 📬 Support & Community
 
 If you need help, feel free to reach out via our support page or join the discussion on GitHub.
-
----
 
 Licensed under the Creative Commons Attribution 4.0 and MIT License.

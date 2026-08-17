@@ -89,7 +89,7 @@ To add a new source, follow these steps:
     ![screen showing cthe preview mode](media/source-creator/aa-sc-add-new-sc2-preview2.png)
 
     :::note[info]
-    In [this article](http://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/table-and-chart-options), you can learn more about how to edit your table and chart settings.
+    In [this article](/docs/appengine/appengine-users-guide/analytical-page/table-and-chart-options), you can learn more about how to edit your table and chart settings.
     :::
 
 9. If all the data is correct, click **Add Source**.
@@ -141,7 +141,7 @@ To import a new source from a Json file, follow these steps:
     ![screen showing enabling preview mode of the report](media/source-creator/aa-sc-add-new-sc2-preview-smaller.png)
 
     :::note[info]
-    In [this article](http://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/table-and-chart-options), you can learn more about how to edit your table and chart settings.  
+    In [this article](/docs/appengine/appengine-users-guide/analytical-page/table-and-chart-options), you can learn more about how to edit your table and chart settings.  
     :::
 
 9. If all the data is correct, click **Add Source**.
@@ -180,7 +180,7 @@ To edit an existing data source, follow these steps:
 
     ![screen showing where to click to edit your data source in analytics ource manager](media/source-creator/an-sm-click-src-edit.png)
 
-6. In edit mode, you can modify the table and chart settings, and manage analytics actions and variants. [Read more](http://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/table-and-chart-options)
+6. In edit mode, you can modify the table and chart settings, and manage analytics actions and variants. [Read more](/docs/appengine/appengine-users-guide/analytical-page/table-and-chart-options)
 
     ![screen showing the edit mode in source manager](media/source-creator/an-sm-click-src-edit-mode0.png)
 

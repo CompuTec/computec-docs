@@ -191,7 +191,7 @@ To establish a connection between the **CompuTec License Server** and the **SAP 
 To use **CompuTec ProcessForce** with **CompuTec License Server**, make sure that:
 
 - the database connection is configured in **CompuTec License Server**, and
-- a valid **CompuTec ProcessForce** license is imported and assigned. [Read more](http://learn.computec.one/docs/processforce/administrator-guide/licensing/license-import-and-assignment)
+- a valid **CompuTec ProcessForce** license is imported and assigned. [Read more](/docs/processforce/administrator-guide/licensing/license-import-and-assignment)
 
 When both configurations are complete, the ``Direct Data Access mode is disabled`` warning no longer appears when starting **CompuTec ProcessForce**.
 :::

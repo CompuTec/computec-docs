@@ -13,7 +13,7 @@ To request access, submit a support ticket at [https://support.computec.pl](http
 Before you configure Early Access on your system, make sure the following requirements are met:
 
 1. **Download and install the latest CompuTec AppEngine**:  
-Follow the steps outlined in the [CompuTec AppEngine Installation Guide](http://localhost:3000/docs/appengine/administrators-guide/configuration-and-administration/installation).
+Follow the steps outlined in the [CompuTec AppEngine Installation Guide](/docs/appengine/administrators-guide/configuration-and-administration/installation).
 
 2. **Install the CompuTec WMS server, if required for your environment**:  
 Installation instructions are available in the [CompuTec WMS documentation](/docs/wms/administrator-guide/installation/overview/).

@@ -89,6 +89,6 @@ After the successful update:
 
 :::info[Note]
 
-To learn about new features or changes, refer to the plugin’s [documentation](http://learn.computec.one/docs/appengine/plugins-user-guide/overview#available-plugins).
+To learn about new features or changes, refer to the plugin’s [documentation](/docs/appengine/plugins-user-guide/overview#available-plugins).
 
 :::

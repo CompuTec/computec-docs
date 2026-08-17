@@ -14,7 +14,7 @@ These videos introduce the basics of CompuTec WebUp and help you begin working w
 
 - [▶ **CompuTec WebUp - First Launch**](https://youtu.be/YO3jdjChS4k): In this video, you’ll see how to launch CompuTec WebUp for the first time.
 
-- [▶ **CompuTec WebUp - CompuTec WebUp Manager Help Icons**](http://youtube.com/watch?v=DBv20ifpcCY): Learn how to access SAP Business One Extensibility Help using direct links within the CompuTec WebUp Manager.
+- [▶ **CompuTec WebUp - CompuTec WebUp Manager Help Icons**](https://youtube.com/watch?v=DBv20ifpcCY): Learn how to access SAP Business One Extensibility Help using direct links within the CompuTec WebUp Manager.
 
 ## Explore key features
 

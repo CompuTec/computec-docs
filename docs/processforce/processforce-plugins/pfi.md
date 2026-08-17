@@ -17,7 +17,7 @@ Before using CompuTec PFI, ensure the following:
 
 ## Install the CompuTec PFI plugin
 
-Follow the standard CompuTec AppEngine plugin installation steps described in [our installation guide](http://learn.computec.one/docs/appengine/plugins-user-guide/install-plugin).
+Follow the standard CompuTec AppEngine plugin installation steps described in [our installation guide](/docs/appengine/plugins-user-guide/install-plugin).
 
 ## Access the CompuTec PFI plugin
 
@@ -86,7 +86,7 @@ In the header section, you can:
 
     ![screen showing where to click to download excel file](./media/pfi/pfi-art-plugin32.png)
 
-- **Upload data from Excel**: Import data from an MS Excel file. Blank cells are ignored and don't overwrite existing values. To explicitly set a property to blank, use a forward slash (``/``). [Read more](http://learn.computec.one/docs/processforce/processforce-plugins/pfi#upload-data)
+- **Upload data from Excel**: Import data from an MS Excel file. Blank cells are ignored and don't overwrite existing values. To explicitly set a property to blank, use a forward slash (``/``). [Read more](/docs/processforce/processforce-plugins/pfi#upload-data)
 
     ![screen showing where to click to download excel file](./media/pfi/pfi-art-plugin34.png)
 

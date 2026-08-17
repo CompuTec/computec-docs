@@ -72,7 +72,7 @@ If any Machine-type Resource in the system has a Run Time set to zero in any Pro
 
 Once enabled, Resource Balancing will automatically perform resource selection during Manufacturing Order scheduling or re-scheduling. This occurs when:
 
-- opening the [Scheduling Board / Semi-finished Product Scheduling form](./scheduling-board.md#how-to-open-scheduling-board--semi-finished-product-scheduling)
+- opening the [Scheduling Board / Semi-finished Product Scheduling form](/docs/processforce/user-guide/scheduling/scheduling-board#scheduling-board--semi-finished-product-scheduling)
 - changing the Planned Quantity or Manufacturing Order header's dates
 
 ## Log files
@@ -85,16 +85,16 @@ A feature is available to log all actions related to the Resource Balancing func
 
 To activate the option, perform the following steps:
 
-1. Navigate to: C:\Program Files\sap\SAP Business One\AddOns\CT\ProcessForce.
+1. Navigate to: ``C:\Program Files\sap\SAP Business One\AddOns\CT\ProcessForce``.
 2. Open the ProcessForce.exe.config file with a text editor.
-3. Change the value from "false" to "true" in the following line:
+3. Change the value from ``false`` to ``true`` in the following line:
 
         ```config
         <add key="SchedulingBalancingEnabled" value="false" />
         ```
 
    After enabling the feature, log files will be saved in the default directory:
-   `C:\ProgramData\CompuTec\ProcessForce\ResourceBalancing`.
+   ``C:\ProgramData\CompuTec\ProcessForce\ResourceBalancing``.
 
    A separate file is saved for changes made for each Operation.
 

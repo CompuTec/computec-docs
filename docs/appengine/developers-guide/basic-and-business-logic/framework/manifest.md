@@ -39,7 +39,7 @@ The JSON manifest for a plugin provides all necessary information about the plug
 
 | Field | Field Description | Validation Rules |
 | --- | --- | --- |
-| PluginCode | The unique code for the plugin. Must be a non-empty string.| Required |
+| PluginCode | The unique code for the plugin. Must be a non-empty string. | Required |
 | PluginName | The name of the plugin. Must be a non-empty string. | Required |
 | Icon | Specifies the icon for the plugin, often as a URI or a reference to an icon library. | Optional |
 | Assembly | The filename of the assembly containing the plugin. Must be a non-empty string. | Required |

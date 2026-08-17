@@ -138,7 +138,7 @@ Revisions can have one of four statuses:
 
 ### Default for Costing
 
-This setting is relevant only for Items with the Standard Valuation method and is used for Cost Roll-Over. When you perform Cost Roll-Over on an Item with the Standard Valuation method on Revision that has the 'Default for Costing' checkbox checked, [Inventory Revaluation](http://localhost:3000/docs/processforce/user-guide/costing-material-and-resources/cost-categories#inventory-revaluation--standard-costing/) is created on a price change.
+This setting is relevant only for Items with the Standard Valuation method and is used for Cost Roll-Over. When you perform Cost Roll-Over on an Item with the Standard Valuation method on Revision that has the 'Default for Costing' checkbox checked, [Inventory Revaluation](/docs/processforce/user-guide/costing-material-and-resources/cost-categories#inventory-revaluation--standard-costing/) is created on a price change.
 
 For these items, the Inventory Item Cost is automatically synchronized with the Item Costing of the selected Revision. If multiple Routings exist for this Revision, the Routing marked as "Roll-up default" in the Production Process will be used for synchronization.
 

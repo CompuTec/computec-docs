@@ -101,7 +101,7 @@ If you want to edit or manage an existing Analytics Variants List view, follow t
 
     - **Search views**: Use the search bar to quickly find a specific view.
     - **Rename views**: Edit the name directly in the View column.
-    - **Control sharing**: Set whether the view is Private (visible only to you) or Public (available to other users). [Read more](http://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/permissions_in_analytics)
+    - **Control sharing**: Set whether the view is Private (visible only to you) or Public (available to other users). [Read more](/docs/appengine/appengine-users-guide/analytical-page/permissions_in_analytics)
     - **Set a default view**: Select which view should be opened automatically by default.
     - **Delete views**: Remove views you no longer need using the X icon.
 

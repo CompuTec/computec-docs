@@ -120,7 +120,7 @@ After CompuTec AppEngine 3.0 is installed and configured:
 4. Assign the plugin to the required companies.  
 
 :::note[info]
-For detailed instructions, see: [CompuTec Plugin Installation guide](http://localhost:3000/docs/appengine/plugins-user-guide/install-plugin).
+For detailed instructions, see: [CompuTec Plugin Installation guide](/docs/appengine/plugins-user-guide/install-plugin).
 :::
 
 ### Step 3. Check the environment

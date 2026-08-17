@@ -63,4 +63,4 @@ Here’s a rundown of the key settings available in the **Manager** tab.
 
 18. **Sort Order Definitions** - This option allows you to create and assign a template that defines custom sorting rules in the document details window. In the WMS client, users can select the required sorting template from a predefined list. [Read more](./sort-order-def.md)
 
-19. **Enable Row Color Customization** - This setting allows you to customize the appearance of document rows by applying background and text colors based on SQL query results. This helps users quickly identify specific rows during warehouse operations. [Read more](http://learn.computec.one/docs/wms/administrator-guide/custom-configuration/custom-configuration-functions/manager/row-color-cust)
+19. **Enable Row Color Customization** - This setting allows you to customize the appearance of document rows by applying background and text colors based on SQL query results. This helps users quickly identify specific rows during warehouse operations. [Read more](/docs/wms/administrator-guide/custom-configuration/custom-configuration-functions/manager/row-color-cust)

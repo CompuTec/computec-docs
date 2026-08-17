@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Table and Chart Options
 
-When you [create a new data source](http://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/source-creator#add-a-source) or [edit an existing one](http://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/source-creator#edit-a-source), you can customize many aspects of the analytics report to match your business needs. These settings allow you to control how data is displayed, filtered, summarized, and visualized in tables and charts.
+When you [create a new data source](/docs/appengine/appengine-users-guide/analytical-page/source-creator#add-a-source) or [edit an existing one](/docs/appengine/appengine-users-guide/analytical-page/source-creator#edit-a-source), you can customize many aspects of the analytics report to match your business needs. These settings allow you to control how data is displayed, filtered, summarized, and visualized in tables and charts.
 
 This article explains the available table and chart configuration options and how to manage variants, actions, and drill-down navigation.
 
