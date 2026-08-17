@@ -27,7 +27,7 @@ This section provides an overview of CompuTec AppEngine’s Administration Panel
 
 ---
 
-1. Download the installer from [here](/appengine_versioned_docs/version-2.0/administrators-guide/installation) and run it.
+1. Download the installer from [here](/docs/appengine/2.0/releases/appengine/download) and run it.
 2. Open a web browser and go to `localhost:54000` - 54000 is the default connection port; you can change it in the [Settings section](#settings).
 3. After logging in, click the Administration Panel button and log in using the default log in details:
 

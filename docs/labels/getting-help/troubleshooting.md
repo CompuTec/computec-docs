@@ -24,9 +24,9 @@ Please make sure that you applied the below steps.
 
 - Make sure that when the request is created by auto-trigger, a printer is defined in the corresponding application. Check below references:
 
-        - [SAP](../using-computec-labels/sap-add-on/overview.md)
+        - [SAP](/docs/labels/setup/computec-labels-sap-addon)
         - [WMS](/docs/wms/user-guide/starting)
-        - [PDC](/docs/pdc/administrators-guide/setting-up-the-application/overview#ct-labels-settings)
+        - [PDC](/docs/pdc/administrator-guide/setting-up-the-application/overview)
 
 - Update global data
 - Restart CompuTec Labels Service
