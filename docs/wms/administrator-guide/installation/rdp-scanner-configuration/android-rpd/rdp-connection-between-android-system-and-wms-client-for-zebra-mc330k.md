@@ -14,11 +14,11 @@ In this guide, we'll walk you through the process of setting up a Remote Desktop
 
     ![Bluestacks](./media/bluestacks.webp)
 2. **Access Google Play Store** - Open the [Google Play Store](https://play.google.com/store) on your PC to search for the necessary apps.
-3. **Search for Microsoft Remote Desktop** - Find the [Microsoft Remote Desktop](https://play.google.com/store/apps/details?id=com.microsoft.rdc.android) in the store.
+3. **Search for Microsoft Remote Desktop** - Find the [Microsoft Remote Desktop](https://play.google.com/store/apps/details/?hl=en-US&id=com.microsoft.rdc.androidx) in the store.
 
     ![Microsoft](./media/play_microsft.webp)
 4. **Download the APK File** - Open the link to download the APK file(Android Instalator Package) [https://apps.evozi.com/apk-downloader/](https://apps.evozi.com/apk-downloader/).
-5. Copy the link [https://play.google.com/store/apps/details?id=com.microsoft.rdc.android](https://play.google.com/store/apps/details?id=com.microsoft.rdc.android) and paste it to APK Downloader to generate the download link.
+5. Copy the link [https://play.google.com/store/apps/details/?hl=en-US&id=com.microsoft.rdc.androidx](https://play.google.com/store/apps/details/?hl=en-US&id=com.microsoft.rdc.androidx) and paste it to APK Downloader to generate the download link.
 6. **Download Microsoft Remote Desktop APK** - After generating the link, download the Microsoft Remote Desktop APK file to your PC.
 
     ![Package](./media/microsoft-package.webp)
