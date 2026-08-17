@@ -55,7 +55,7 @@ To update an installed plugin, follow these steps:
     ![select the company and click accept](./media/update/plugin-update-8.png)
 
 9. Select **CompuTec AppEngine Instance** for installation and click **Accept**.
- 
+
     ![select the instance and click accept](./media/update/plugin-update-9.png)
 
 10. Review the installation details and click **Perform Installation**.

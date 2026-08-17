@@ -62,12 +62,12 @@ The `PluginType` field categorizes the plugin, determining how it’s deployed, 
 Conversion between string representations and `ApplicationTypes` enum values ensures compatibility across different environments. Below is the table with the supported plugin types, descriptions, and acceptable string representations:
 
 | Plugin Type Description | `ApplicationTypes` Enum Value | Acceptable String Representations |
-|-------------------------|-------------------------------|-----------------------------------|
-| Business Logic          | BusinessLogic                 | "BusinessLogic", "DiAPI", "Di"    |
-| SAP User Interface      | SapUserInterface              | "SapUserInterface", "SapUI", "UI" |
-| Standalone              | Standalone                    | "Standalone", "exe", "app"        |
-| AppEngine Plugin        | AppEnginePlugin               | "AePlugin", "plugin", "AEComponent", "AppEnginePlugin" |
-| Other                   | Other                         | "Other"                           |
+| --- | --- | --- |
+| Business Logic | BusinessLogic | "BusinessLogic", "DiAPI", "Di" |
+| SAP User Interface | SapUserInterface | "SapUserInterface", "SapUI", "UI" |
+| Standalone | Standalone | "Standalone", "exe", "app" |
+| AppEngine Plugin | AppEnginePlugin | "AePlugin", "plugin", "AEComponent", "AppEnginePlugin" |
+| Other | Other | "Other" |
 
 ## Validation Logic
 

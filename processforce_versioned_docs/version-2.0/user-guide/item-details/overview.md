@@ -6,7 +6,7 @@ sidebar_position: 1
 
 The Item Details form is used to define and manage the product master data associated with an item. CompuTec ProcessForce allows for an extended and detailed product definition, making item-related activities more efficient, such as ingredient and allergen declarations, batch tracking, and file attachments.
 
-An Item Details record is automatically created when an Item Master Data entry is generated. However, if an Item Master Data was created before installing CompuTec ProcessForce, a restore procedure must be performed to link the Item Details with the Item Master Data. You can find the restore procedure [here](../system-initialization/data-restore).
+An Item Details record is automatically created when an Item Master Data entry is generated. However, if an Item Master Data was created before installing CompuTec ProcessForce, a restore procedure must be performed to link the Item Details with the Item Master Data. You can find the restore procedure [under this link](../system-initialization/data-restore).
 
 :::note Path
     Inventory → Item Details
@@ -47,7 +47,7 @@ In the header, you can find the Item Code, Item Name, Unit of Measurement, and Y
 
 Please also check the following option to use it: [Issue Residual Quantity on the following Goods Receipt when possible](/docs/processforce/user-guide/system-initialization/general-settings/inventory-tab/)
 
-**Ignore Yield** – click [here](/docs/processforce/user-guide/item-details/yield-master-data/) to find out more.
+**Ignore Yield** – click [this link](/docs/processforce/user-guide/item-details/yield-master-data/) to find out more.
 
 ## Revisions
 
@@ -167,7 +167,7 @@ The Inspection date is also auto-calculated for the batch and is displayed withi
 
 ![Batch Master Data](./media/overview/batch-master-data.webp)
 
-To get more information on this subject, click [here](/docs/processforce/user-guide/quality-control/quality-control-test/creating-qc-test-from-batch-record/).
+To get more information on this subject, click [this link](/docs/processforce/user-guide/quality-control/quality-control-test/creating-qc-test-from-batch-record/).
 
 ## Properties
 
@@ -206,7 +206,7 @@ Item Phrases refer to [safety or risk phrases](#phrases) used to generate a Mate
 
 The Country of Origin refers to the country where a product is manufactured, produced, or grown. This information is critical for Country of Origin Labeling (COOL), traceability, and determining specific ingredients in a customer’s rec
 
-Click [here](/docs/processforce/user-guide/item-details/country-of-origin) to find out more.
+Click [this link](/docs/processforce/user-guide/item-details/country-of-origin) to find out more.
 
 ![Origins](./media/overview/item-details-origins.webp)
 
