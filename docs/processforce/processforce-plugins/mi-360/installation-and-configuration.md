@@ -12,9 +12,9 @@ MI360 is not a standalone application - it requires CompuTec ProcessForce Plugin
 
 References:
 
-- [AppEngine 2.0 Plugin Installation Guide](https://learn.computec.one/docs/appengine/2.0/administrators-guide/configuration-and-administration/overview)
+- [AppEngine 2.0 Plugin Installation Guide](/docs/appengine/2.0/administrators-guide/configuration-and-administration/overview)
 
-- [AppEngine 3.0 Plugin Installation Guide](http://learn.computec.one/docs/appengine/plugins-user-guide/install-plugin)
+- [AppEngine 3.0 Plugin Installation Guide](/docs/appengine/plugins-user-guide/install-plugin)
 
 ---
 
@@ -46,8 +46,8 @@ MI360 integrates with CompuTec AppEngine background jobs to automate the creatio
 
 You can find detailed information on managing background jobs in the following documentation:
 
-- [CompuTec AppEngine 2.0 Background Jobs Guide](https://learn.computec.one/docs/appengine/2.0/administrators-guide/configuration-and-administration/overview)
+- [CompuTec AppEngine 2.0 Background Jobs Guide](/docs/appengine/2.0/administrators-guide/configuration-and-administration/overview)
 
-- [CompuTec AppEngine 3.0 Background Processing Guide](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/background-processing)
+- [CompuTec AppEngine 3.0 Background Processing Guide](/docs/appengine/administrators-guide/configuration-and-administration/background-processing)
 
 ---

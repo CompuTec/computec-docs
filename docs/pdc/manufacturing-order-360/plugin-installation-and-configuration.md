@@ -11,7 +11,7 @@ Ensure that CompuTec ProcessForce and CompuTec Licence Server is installed and c
 
 ## CompuTec AppEngine and plugin installation and configuration
 
-For CompuTec AppEngine installation and configuration, follow the step-by-step instructions provided in [our manual](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation).
+For CompuTec AppEngine installation and configuration, follow the step-by-step instructions provided in [our guide](/docs/appengine/administrators-guide/configuration-and-administration/installation).
 
 Two plugins need to be installed: **MO360** and **PPF**.
 

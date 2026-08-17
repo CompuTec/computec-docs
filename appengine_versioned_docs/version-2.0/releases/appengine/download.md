@@ -14,7 +14,7 @@ import Releases from "../../releases.json";
 :::
 
 :::note[info]
-For **CompuTec License Service** downloads and installation details, see [CompuTec License Service](https://learn.computec.one/docs/processforce/2.0/releases/download#computec-license-service).
+For **CompuTec License Service** downloads and installation details, see [CompuTec License Service](/docs/processforce/2.0/releases/download#computec-license-service).
 :::
 
 ## Releases

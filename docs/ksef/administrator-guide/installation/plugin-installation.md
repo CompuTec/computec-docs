@@ -22,9 +22,9 @@ Only one version of the **CompuTec KSeF Plugin** can be active on a single **Com
 
 Before you start, make sure that:
 
-- **CompuTec AppEngine** is installed and activated. [Read more](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation)
+- **CompuTec AppEngine** is installed and activated. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/installation)
 - You have access to the **CompuTec Administration Panel**.
-- At least one **CompuTec AppEngine** instance is configured and active. [Read more](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation#step-5-activate-a-company-in-computec-appengine)
+- At least one **CompuTec AppEngine** instance is configured and active. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/installation#step-5-activate-a-company-in-computec-appengine)
 - Disable any custom code in the ``SP_TransactionNotification`` and ``SP_PostTransactionNotice`` stored procedures before installing the plugins. After the installation is completed successfully, you can re-enable your custom code.
 
 ## Install and activate CompuTec KSeF
@@ -51,7 +51,7 @@ To install and activate **CompuTec KSeF** follow these steps:
     (optional) To install a different version of the plugin:
 
     - Click the plugin name or the arrow next to the version number and click **Find different version**.
-    - You will see the plugin details with all the available versions. [Read more](http://learn.computec.one/docs/appengine/plugins-user-guide/overview#plugin-versions)
+    - You will see the plugin details with all the available versions. [Read more](/docs/appengine/plugins-user-guide/overview#plugin-versions)
     - Find the version you want to install and click **Get**.
     :::
 
@@ -115,6 +115,6 @@ After you successfully install and activate the **CompuTec KSeF** plugin:
 
 :::info[Note]
 
-For information about new **CompuTec KSeF** features, improvements, fixes, and other changes, see the [CompuTec KSeF Release Notes](http://learn.computec.one/docs/ksef/releases/release-notes).
+For information about new **CompuTec KSeF** features, improvements, fixes, and other changes, see the [CompuTec KSeF Release Notes](/docs/ksef/releases/release-notes).
 
 :::

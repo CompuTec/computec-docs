@@ -26,6 +26,6 @@ Meeting these software prerequisites guarantees stable integration with SAP Busi
 
 ## Compatibility
 
-- CompuTec ProcessForce is a 64-bit .NET Core plugin and runs only on **Windows Operating Systems** and with [CompuTec AppEngine](https://learn.computec.one/docs/appengine/administrators-guide/requirements).
+- CompuTec ProcessForce is a 64-bit .NET Core plugin and runs only on **Windows Operating Systems** and with [CompuTec AppEngine](/docs/appengine/administrators-guide/requirements).
 - It operates as an **CompuTec AppEngine Plugin**, and being loaded by **CompuTec Start** add-on.
 - Supports both **SAP HANA** and **Microsoft SQL Server** environments.

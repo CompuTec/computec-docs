@@ -60,5 +60,5 @@ These issues often appear as system errors, such as:
 ### Solution
 
 :::info[note]
-For **full diagnostic queries and repair instructions**, refer to the dedicated article: [Storage Unit Allocation Issues](https://learn.computec.one/docs/wms/faq/storage-unit-allocation-issues).
+For **full diagnostic queries and repair instructions**, refer to the dedicated article: [Storage Unit Allocation Issues](/docs/wms/faq/storage-unit-allocation-issues).
 :::

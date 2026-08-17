@@ -17,7 +17,7 @@ This section describes the minimum system requirements needed for CompuTec WebUp
 
 ### CompuTec AppEngine
 
-    - Download and install the **official release package** from the [**Download**](https://learn.computec.one/docs/appengine/releases/appengine/download) section of our guide. [Read more](https://learn.computec.one/pl/docs/appengine/administrators-guide/configuration-and-administration/installation)
+    - Download and install the **official release package** from the [**Download**](/docs/appengine/releases/appengine/download) section of our guide. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/installation)
 
 ### Web browsers
 
@@ -35,7 +35,7 @@ This section describes the minimum system requirements needed for CompuTec WebUp
 ## Hardware requirements
 
     :::warning[important]
-    For detailed **server and client hardware requirements**, refer to the official [**CompuTec AppEngine documentation**](https://learn.computec.one/docs/appengine/administrators-guide/requirements).
+    For detailed **server and client hardware requirements**, refer to the official [**CompuTec AppEngine documentation**](/docs/appengine/administrators-guide/requirements).
     :::
 
 ## Network and security requirements
@@ -53,5 +53,5 @@ This section describes the minimum system requirements needed for CompuTec WebUp
     - Authorization is seamless. After signing in to the SAP Business One Web Client, CompuTec WebUp uses the same active session for authentication and authorization.
 
 :::note[info]
-For detailed information on **CompuTec AppEngine** installation and configuration, read the official [CompuTec AppEngine Installation Guide](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation).
+For detailed information on **CompuTec AppEngine** installation and configuration, read the official [CompuTec AppEngine Installation Guide](/docs/appengine/administrators-guide/configuration-and-administration/installation).
 :::

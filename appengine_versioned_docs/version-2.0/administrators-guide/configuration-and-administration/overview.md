@@ -27,7 +27,7 @@ This section provides an overview of CompuTec AppEngine’s Administration Panel
 
 ---
 
-1. Download the installer from [here](../../releases/appengine/download.md) and run it.
+1. Download the installer from [here](/appengine_versioned_docs/version-2.0/administrators-guide/installation) and run it.
 2. Open a web browser and go to `localhost:54000` - 54000 is the default connection port; you can change it in the [Settings section](#settings).
 3. After logging in, click the Administration Panel button and log in using the default log in details:
 
@@ -69,7 +69,7 @@ Click "Save" to store the settings. Click the added line in the SLD Servers sect
 
 ![AppEngine Main View](./media/configuration-and-administration/appengine-main-view.webp)
 
-Once the configuration is completed, log in to the [Launchpad](../../appengine-users-guide/launchpad.md)
+Once the configuration is completed, log in to the [Launchpad](/docs/appengine/appengine-users-guide/launchpad)
 
 ## Background Processing
 
@@ -114,7 +114,7 @@ In the User column, specify the user responsible for running background processi
 Clicking on a job tile provides detailed insights, including:
 
 - **Recent calls**: start/end date and time, company and user, exceptions (if there are any). Jobs other than SEventJob have an additional column: EventBus message. It holds information on what was sent to the specific job (what event).
-- **Companies**: lists databases where the job is active, along with the associated user (default is the user set in the [SLD Servers tab](overview.md#sld-servers)), but this can be customized per job.
+- **Companies**: lists databases where the job is active, along with the associated user (default is the user set in the [SLD Servers tab](/docs/processforce/user-guide/plant-maintenance/preventive-maintenance/setting--up-computec-appengine-for-preventive-maintenance-schedule/#step-1-configure-the-sld-server)), but this can be customized per job.
 - **Logs**: log files, also available in the [Trace tab](#trace-1).
 
 ![Send Events Job](./media/configuration-and-administration/send-events-job.webp)
@@ -153,13 +153,13 @@ The EventBus Live Preview displays real-time events from all connected databases
 
 ![Administration](./media/configuration-and-administration/administration-panel-plugins.webp)
 
-To install a new plugin, click the Install Plugin button in the upper-right corner and upload the plugin file. You can explore available plugins on the [Plugins page](../../releases/appengine/download.md).
+To install a new plugin, click the Install Plugin button in the upper-right corner and upload the plugin file. You can explore available plugins on the [Plugins page](/docs/appengine/plugins-user-guide/overview).
 >Note: Plugin files are provided in ZIP format—upload them as-is without extracting.
 
 - After uploading, a system message will prompt you to restart CompuTec AppEngine. You can restart immediately or later, but the plugin will only become available after a restart.
 - Once installed, click the plugin tile to configure it as needed.
 
-For more details on the Download SAP WebClient Extension function, click [here](working-with-sap-business-one-web-client.md)
+For more details on the Download SAP WebClient Extension function, click [here](/docs/appengine/administrators-guide/configuration-and-administration/working-with-sap-business-one-web-client).
 
 ### Companies
 

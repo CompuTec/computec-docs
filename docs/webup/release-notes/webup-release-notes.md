@@ -42,7 +42,7 @@ sidebar_position: 1
 
 | Type | Component | Release Note |
 | --- | --- | --- |
-| New | Smart Actions | Introduced [**Smart Actions**](https://learn.computec.one/docs/webup/components/smart-actions), extending the concept of **View Actions** by making your logic reusable, flexible, and applicable across multiple areas of the **SAP Business One Web Client**. [Read more](https://learn.computec.one/docs/webup/components/smart-actions) |
+| New | Smart Actions | Introduced [**Smart Actions**](/docs/webup/components/smart-actions), extending the concept of **View Actions** by making your logic reusable, flexible, and applicable across multiple areas of the **SAP Business One Web Client**. [Read more](/docs/webup/components/smart-actions) |
 | New | Control Management | Added **+ New Control** option, so you can now add your own controls instead of only editing existing ones, giving you full flexibility in UI design. |
 | New | Control Management | Added support for two new controls: [**MultiComboBox**](https://help.sap.com/docs/SAP_BUSINESS_ONE_WEB_CLIENT/e6ac71d18c7543828bd4463f77d67ff7/a8cd89ab240b4496b5b5b9bcdcb66731.html) and [**MultiInput**](https://help.sap.com/docs/SAP_BUSINESS_ONE_WEB_CLIENT/e6ac71d18c7543828bd4463f77d67ff7/63c7fb6ed1f04dd8b2f4625cede634ec.html), enabling more advanced user input scenarios. |
 | Improved | CSP | Improved **Content Security Policy (CSP)** handling for **SAP Business One Web Client** environments. |

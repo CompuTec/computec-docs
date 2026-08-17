@@ -103,6 +103,6 @@ The **CompuTec ProcessForce** architecture is designed to:
 
 ## Additional information
 
-- For installation instructions, see the [CompuTec ProcessForce installation documentation](https://learn.computec.one/docs/processforce/administrator-guide/installation/first-installation/extension).
+- For installation instructions, see the [CompuTec ProcessForce installation documentation](/docs/processforce/administrator-guide/installation/first-installation/extension).
 
-- For technical integration details, see the [developer documentation](https://learn.computec.one/docs/appengine/developers-guide/rest-odata-api/rest-odata-api-documentation/).
+- For technical integration details, see the [developer documentation](/docs/appengine/developers-guide/rest-odata-api/rest-odata-api-documentation/).

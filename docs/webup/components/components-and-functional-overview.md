@@ -6,13 +6,13 @@ sidebar_position: 1
 
 Here is an overview of the key **CompuTec WebUp** functions, along with examples of how they can be used in your daily work:
 
-- **View Management**: Manage your configuration sets with full version control. You can add new views, activate them, or roll back to an older view at any time. Every time you edit a current view, its new version is automatically created and saved. Example: When you click Edit next to version 1.0.2, a new version 1.0.3 is created, while 1.0.2 remains active as a backup. [Read more](https://learn.computec.one/docs/webup/components/view-management)
+- **View Management**: Manage your configuration sets with full version control. You can add new views, activate them, or roll back to an older view at any time. Every time you edit a current view, its new version is automatically created and saved. Example: When you click Edit next to version 1.0.2, a new version 1.0.3 is created, while 1.0.2 remains active as a backup. [Read more](/docs/webup/components/view-management)
 
-- **Control Management**: Edit and reorganize UI controls in supported SAP Web Client screens. Adjust visibility, position, groupings, and labels to make the interface easier to use. Example: Reorder the Sales Quotation header, so the most important fields appear first. [Read more](https://learn.computec.one/docs/webup/components/control-management)
+- **Control Management**: Edit and reorganize UI controls in supported SAP Web Client screens. Adjust visibility, position, groupings, and labels to make the interface easier to use. Example: Reorder the Sales Quotation header, so the most important fields appear first. [Read more](/docs/webup/components/control-management)
 
-- **View Actions**: Create event-based automations and validations that run before or after user actions, such as On Update, On Save. Example: Show a confirmation message before a user saves changes to a document. [Read more](https://learn.computec.one/docs/webup/components/view-actions)
+- **View Actions**: Create event-based automations and validations that run before or after user actions, such as On Update, On Save. Example: Show a confirmation message before a user saves changes to a document. [Read more](/docs/webup/components/view-actions)
 
-- **Smart Actions**: Make your logic reusable, flexible, and applicable across multiple areas of the SAP Business One Web Client extending the concept of View Actions. Example: Trigger a confirmation popup ``Are you sure you want to change the price?`` when a user changes a price field. [Read more](https://learn.computec.one/docs/webup/components/smart-actions)
+- **Smart Actions**: Make your logic reusable, flexible, and applicable across multiple areas of the SAP Business One Web Client extending the concept of View Actions. Example: Trigger a confirmation popup ``Are you sure you want to change the price?`` when a user changes a price field. [Read more](/docs/webup/components/smart-actions)
 
 :::note[info]
 **CompuTec WebUp Roadmap** evolves over time. For the latest feature planning and prioritization, refer to our official [CompuTec WebUp Roadmap](https://trello.com/b/ePvajGq6/computec-webup-roadmap).  

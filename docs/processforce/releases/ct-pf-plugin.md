@@ -7,7 +7,7 @@ sidebar_position: 3
 Here you can find the release notes for **CompuTec ProcessForce Plugin**, highlighting new features, improvements, and bug fixes.
 
 :::note[info]
-You can find all download links and release notes for the latest available **CompuTec ProcessForce 10.0** versions in [CompuTec ProcessForce 2.0 documentation](https://learn.computec.one/docs/processforce/2.0/releases/download).  
+You can find all download links and release notes for the latest available **CompuTec ProcessForce 10.0** versions in [CompuTec ProcessForce 2.0 documentation](/docs/processforce/2.0/releases/download).  
 However, we strongly recommend using **CompuTec ProcessForce Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
@@ -104,7 +104,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 | Fixed | Licensing | Users with a **Limited Logistics** license can now open the **Time and Cost** details of a **Manufacturing Order**. |
 | Fixed | BT360 | Fixed document-based batch filtering so **Delivery** documents now display the correct batches. |
 | Fixed | Common Functions | **Item Details** are now created automatically for assets, preventing the ``No active revisions`` error when creating Purchase Orders. |
-| Fixed | .NET Core | Added support for **Document Date**-based document series selection. CompuTec ProcessForce now automatically selects the correct document series based on the document posting date, matching SAP Business One behavior. [Read more](https://learn.computec.one/docs/processforce/user-guide/manufacturing/manufacturing-order/document-date) |
+| Fixed | .NET Core | Added support for **Document Date**-based document series selection. CompuTec ProcessForce now automatically selects the correct document series based on the document posting date, matching SAP Business One behavior. [Read more](/docs/processforce/user-guide/manufacturing/manufacturing-order/document-date) |
 
 ## CompuTec ProcessForce 3.2606.3
 

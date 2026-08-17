@@ -9,7 +9,7 @@ Here you can find the release notes for CompuTec PDC 4.0 Plugin, highlighting ne
 :::note[info]
 You are currently viewing documentation for **CompuTec PDC 4.0**.
 
-You can find all [download links](https://learn.computec.one/docs/appengine/2.0/releases/plugins/pdc/download) and [release notes](https://learn.computec.one/docs/appengine/2.0/releases/plugins/pdc/release-notes) for the **CompuTec PDC 3.0** versions in **CompuTec AppEngine 2.0** documentation.
+You can find all [download links](/docs/appengine/2.0/releases/plugins/pdc/download) and [release notes](/docs/appengine/2.0/releases/plugins/pdc/release-notes) for the **CompuTec PDC 3.0** versions in **CompuTec AppEngine 2.0** documentation.
 
 However, we strongly recommend using **CompuTec PDC 4.0 Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
@@ -105,7 +105,7 @@ However, we strongly recommend using **CompuTec PDC 4.0 Plugin** together with *
 
 | Issue Type | Component | Release Note |
 | --- | --- | --- |
-| Added | User-Defined Fields | Added support for displaying **User-Defined Fields (UDFs)** in item selection and **Issue/Receipt** screens. **[Read more](https://learn.computec.one/docs/pdc/administrator-guide/setting-up-the-application/pdc-settings/display-udfs/)** |
+| Added | User-Defined Fields | Added support for displaying **User-Defined Fields (UDFs)** in item selection and **Issue/Receipt** screens. **[Read more](/docs/pdc/administrator-guide/setting-up-the-application/pdc-settings/display-udfs/)** |
 | Improved | Issue & Receipt | Items are now sorted according to their sequence during **Issue to Production** and **Receipt from Production**. |
 | Improved | Pick and Pack | Added an **Auto Select All** button to the **Issue** and **Receipt** screens to simplify item selection. |
 | Improved | Authentication | Improved the refresh token mechanism to provide a more reliable automatic sign-in experience. |

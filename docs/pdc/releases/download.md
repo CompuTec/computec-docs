@@ -100,6 +100,6 @@ These versions require CompuTec License Server in 5.10.1.1 version.
 
 ## CompuTec Gateway Manager
 
-To download the latest version of CompuTec Gateway Manager, click [this link](https://learn.computec.one/docs/labels/releases/download/#computec-gateway-manager).
+To download the latest version of CompuTec Gateway Manager, click [this link](/docs/labels/releases/download/#computec-gateway-manager).
 
 ---

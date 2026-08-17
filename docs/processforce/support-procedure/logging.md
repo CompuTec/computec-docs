@@ -32,6 +32,6 @@ The CompuTec License Server log files are kept in the following location: `C:\Pr
 
 Telemetry is vital for monitoring and analyzing the performance of your systems, ensuring they operate optimally. By leveraging Grafana's robust tools, you can streamline monitoring and gain valuable insights into your CompuTec AppEngine and SAP Business One environments.
 
-➡️ Learn how to set up [Telemetry with Grafana.com](https://learn.computec.one/docs/appengine/administrators-guide/setup-telemetry/)
+➡️ Learn how to set up [Telemetry with Grafana.com](/docs/appengine/administrators-guide/setup-telemetry/)
 
 ---

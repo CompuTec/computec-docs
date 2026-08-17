@@ -38,7 +38,7 @@ Before you begin, make sure that:
 
    If this happens:
 
-   - Update the **Post Transaction Notification Procedure** as described in [our configuration guide](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation#step-6-configure-background-processing-within-the-sap-environment).
+   - Update the **Post Transaction Notification Procedure** as described in [our configuration guide](/docs/appengine/administrators-guide/configuration-and-administration/installation#step-6-configure-background-processing-within-the-sap-environment).
    - Return to the **CompuTec AppEngine Administration Panel**.
    - Click **Confirm**.
    - Enable **Background Processing Data** again.

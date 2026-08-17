@@ -10,8 +10,8 @@ This guide explains how to prepare a development environment and run a project i
 
 Before you start, make sure the following components are available:
 
-    - **CompuTec AppEngine** is installed and connected to your development database. [Read more](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation)
-    - The target company is activated in **CompuTec AppEngine Administration Panel**. [Read more](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation#step-5-activate-a-company-in-computec-appengine)
+    - **CompuTec AppEngine** is installed and connected to your development database. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/installation)
+    - The target company is activated in **CompuTec AppEngine Administration Panel**. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/installation#step-5-activate-a-company-in-computec-appengine)
     - **SAP Business One** is running on the same database. 
     - The **CompuTec.Start** extension is installed. By default, it is located at: ``C:\Program Files\sap\SAP Business One\AddOns\CT\CompuTec.Start\X64Client\``
 

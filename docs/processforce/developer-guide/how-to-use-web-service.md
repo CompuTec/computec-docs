@@ -8,6 +8,6 @@ The CompuTec ProcessForce Web Service (REST/OData API) enables seamless integrat
 
 The web service follows REST/OData standards, making it flexible, scalable, and easy to adopt for developers already familiar with modern API practices.
 
-For detailed information, examples, and technical guidance, please visit the dedicated [documentation](https://learn.computec.one/docs/appengine/developers-guide/rest-odata-api/rest-odata-api-documentation/) page.
+For detailed information, examples, and technical guidance, please visit the dedicated [documentation](/docs/appengine/developers-guide/rest-odata-api/rest-odata-api-documentation/) page.
 
 ---

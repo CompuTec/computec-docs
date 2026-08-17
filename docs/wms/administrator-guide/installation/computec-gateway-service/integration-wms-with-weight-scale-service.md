@@ -15,7 +15,7 @@ sidebar_position: 4
 :::
 
 1. To run the CompuTec WMS desktop version, you must install a server and a client unit.
-2. To install the server, download and run its installation file. You can find it [here](https://learn.computec.one/docs/wms/releases/download/)
+2. To install the server, download and run its installation file. You can find it [here](/docs/wms/releases/download/)
 3. In the window that will appear, click the "Install" button:
 
     ![Installation](./media/integration-wms-with-weight-scale/wms-install.png)

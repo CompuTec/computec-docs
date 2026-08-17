@@ -273,6 +273,6 @@ If you use Comp uTecProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to i
 
 ## CompuTec Gateway Manager
 
-To download the latest version of CompuTec Gateway Manager, click [here](https://learn.computec.one/docs/labels/releases/download/#computec-gateway-manager).
+To download the latest version of CompuTec Gateway Manager, click [here](/docs/labels/releases/download/#computec-gateway-manager).
 
 ---

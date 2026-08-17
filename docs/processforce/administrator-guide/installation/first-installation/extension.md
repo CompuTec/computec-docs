@@ -21,11 +21,11 @@ Complete the following checks before installing or upgrading **CompuTec ProcessF
 
 Before installing the plugins, make sure that:
 
-- Your environment meets the [**CompuTec ProcessForce System Requirements**](../../system-requirements.md).
-- [**CompuTec AppEngine**](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation)  is installed and configured.
-- [**CompuTec License Server**](./license-server) is installed.
+- Your environment meets the [**CompuTec ProcessForce System Requirements**](/docs/processforce/administrator-guide/installation/first-installation/extension).
+- [**CompuTec AppEngine**](/docs/appengine/administrators-guide/configuration-and-administration/installation)  is installed and configured.
+- [**CompuTec License Server**](/docs/processforce/administrator-guide/licensing/license-server/computec-license-server-installation) is installed.
 - Any custom code in the ``SP_TransactionNotification`` and ``SP_PostTransactionNotice`` stored procedures is temporarily disabled. Custom code in these procedures can break the upgrade process.
-- You increased the ``ConnectionTimeout`` and ``CommandTimeout`` values in **CompuTec AppEngine Administration Panel** before the first installation of the **CompuTec ProcessForce** plugins. [Read more](http://learn.computec.one/docs/processforce/troubleshooting/general-functions#problem-computec-processforce-plugin-installation-stops-or-the-session-expires-during-the-first-installation)
+- You increased the ``ConnectionTimeout`` and ``CommandTimeout`` values in **CompuTec AppEngine Administration Panel** before the first installation of the **CompuTec ProcessForce** plugins. [Read more](/docs/processforce/troubleshooting/general-functions#problem-computec-processforce-plugin-installation-stops-or-the-session-expires-during-the-first-installation)
 - In **SAP Business One**, the following options are unchecked under **SAP Business One** > **Administration** > **System Initialization** > **General Settings** > **Hide Functions** tab:
         - ``Serial Numbers and Batches``
         - ``Production``
@@ -115,7 +115,7 @@ This step is required only for new installations.
 If you are upgrading an existing installation, continue to the next section.
 :::
 
-To assign the license, follow the [**License Import and Assignment**](../../licensing/license-import-and-assignment.md) guide.
+To assign the license, follow the [**License Import and Assignment**](/docs/processforce/administrator-guide/licensing/license-import-and-assignment) guide.
 
 ## After the installation
 
@@ -140,7 +140,7 @@ To restore the existing data, follow these steps:
 
         ![SAP Business One Support Desk Restore menu showing the list of available restoration procedures. Visible options include Restore Item Details, Restore Item Costing, Restore Resource Costing, Restore Employee Calendars, and Restore Batch Details.](media/extension/pf-inst-plug4.png)
 
-For detailed instructions, see [**Restore Existing Data**](../../../user-guide/system-initialization/data-restore.md).
+For detailed instructions, see [**Restore Existing Data**](/docs/processforce/user-guide/system-initialization/data-restore).
 
 ### Creating new company databases
 

@@ -100,7 +100,7 @@ The Resources tab allows users to view and record the resources and quantities u
 
 ![Resources](./media/overview/quality-control-test-resources.webp)
 
-On the Resources tab, only items assigned to the QCResources item group can be added, as this group is set by default for Quality Control Resources. You can find instructions on how to configure this Item Group [here](https://learn.computec.one/docs/processforce/user-guide/system-initialization/general-settings/qc-tab). By default, the QCResources group is used for this purpose.
+On the Resources tab, only items assigned to the QCResources item group can be added, as this group is set by default for Quality Control Resources. You can find instructions on how to configure this Item Group [here](/docs/processforce/user-guide/system-initialization/general-settings/qc-tab). By default, the QCResources group is used for this purpose.
 
 ## Items
 

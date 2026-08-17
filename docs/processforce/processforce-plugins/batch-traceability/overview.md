@@ -14,11 +14,11 @@ The CompuTec Batch Traceability (BT 360) Plugin allows to trace Item Batches thr
 
 Before using the Batch Traceability 360 plug-in, ensure that the prerequisites are met:
 
-CompuTec ProcessForce and CompuTec Licence Server is installed and configured. For more details, refer to the [installation documentation](https://learn.computec.one/docs/processforce/administrator-guide/licensing/license-server/overview)
+CompuTec ProcessForce and CompuTec Licence Server is installed and configured. For more details, refer to the [installation documentation](/docs/processforce/administrator-guide/licensing/license-server/computec-license-server-installation)
 
 ### CompuTec AppEngine and Plug-in Installation and Configuration
 
-For CompuTec AppEngine installation and configuration, follow the instructions outlined in the [Installation and Configuration](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation) Guide.
+For CompuTec AppEngine installation and configuration, follow the instructions outlined in the [Installation and Configuration Guide](/docs/appengine/administrators-guide/configuration-and-administration/installation).
 
 ### CompuTec ProcessForce
 

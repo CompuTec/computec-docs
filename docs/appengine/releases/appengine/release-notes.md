@@ -97,7 +97,7 @@ sidebar_position: 1
 | Improved | AE Core | Added a restart notification after company updates. Users are now prompted to restart **CompuTec AppEngine** to ensure newly installed or updated plugins are activated correctly. |
 | Improved | AE Analytics | Added column display names alongside database field names in **Column Positioning**, **Filter Positioning**, **Sorting**, and **Chart Dimensions** settings, making report configuration easier and more intuitive. |
 | Improved | AE Background Processing | Added more detailed logging during company activation and **Background Processing** setup, helping administrators identify configuration issues more quickly. |
-| Improved | AE Background Processing | Added a direct link to the relevant [troubleshooting guide](https://learn.computec.one/docs/appengine/other/troubleshooting/#problem-couldnt-activate-background-processing-in-computec-appengine) when background processing activation fails, simplifying issue resolution. |
+| Improved | AE Background Processing | Added a direct link to the relevant [troubleshooting guide](/docs/appengine/other/troubleshooting/#problem-couldnt-activate-background-processing-in-computec-appengine) when background processing activation fails, simplifying issue resolution. |
 | Improved | QC360 | Added support for saving and managing filter variants in **QC360**, allowing users to quickly switch between frequently used filter configurations. |
 | Improved | AE MCP | Updated the **MCP Remote Client** installation configuration to use the latest published npm package version. |
 | Fixed | MRP | Fixed an issue where the address list was not displayed in **Vendor Lead Time**. Vendor addresses are now loaded correctly when selecting a business partner and shipping type. |
@@ -110,7 +110,7 @@ sidebar_position: 1
 :::warning[Important for developers]
 Starting with **CompuTec AppEngine 3.1.0**, the `@computec/uicore`, `@computec/common`, and `@computec/templating` npm packages are distributed as TypeScript declaration packages (`.d.ts`) only.  
 
-If your development environment uses custom TypeScript path mappings, additional configuration changes may be required. [Read more](https://learn.computec.one/docs/appengine/developers-guide/basic-and-business-logic/appengine-plugin/ae-ui#typescript-definitions-computec-appengine-310-and-higher)
+If your development environment uses custom TypeScript path mappings, additional configuration changes may be required. [Read more](/docs/appengine/developers-guide/basic-and-business-logic/appengine-plugin/ae-ui#typescript-definitions-computec-appengine-310-and-higher)
 :::
 
 ## CompuTec AppEngine 3.2605.1
@@ -119,7 +119,7 @@ If your development environment uses custom TypeScript path mappings, additional
 
 | Issue Type | Components | Release Note |
 | --- | --- | --- |
-| New | AE Analytics | Added **Preview & Print** for Analytics sources, enabling users to generate, preview, download, and print report PDFs directly from selected Analytics records. Administrators can configure multiple print options, map report parameters to Analytics data, and generate either separate or combined PDFs for multiple selected records. [Read more](https://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/preview-print/) |
+| New | AE Analytics | Added **Preview & Print** for Analytics sources, enabling users to generate, preview, download, and print report PDFs directly from selected Analytics records. Administrators can configure multiple print options, map report parameters to Analytics data, and generate either separate or combined PDFs for multiple selected records. [Read more](/docs/appengine/appengine-users-guide/analytical-page/preview-print/) |
 | New | AE Analytics, Gateway | Added **API Gateway** action type support for Analytics, allowing layouts to be passed as action arguments. |
 | Improved | AE Analytics | Renamed the custom Analytics authorization group to **Custom Variants**, making permissions easier to identify in **SAP Business One**. |
 | Improved | AE Core | Improved error messages when **SAP DI API** is missing or configured incorrectly, helping administrators identify configuration issues faster. |
@@ -152,7 +152,7 @@ If your development environment uses custom TypeScript path mappings, additional
 | Fixed | Core | Fixed incorrect ``WebClientEnabled`` naming in **SLD Server** configuration. |
 | Fixed | Bill of Materials | Fixed warehouse selection in BOM definitions so valid warehouse codes are accepted correctly. |
 | Fixed | WMS Server | Fixed ``Cannot add row`` errors in **Pick and Pack** scenarios. |
-| Fixed | AE WebClient | Fixed an issue where **CompuTec WebClient Start** could not be opened because the **SAP UI5** component failed to load. **Important**: In some environments, company reinitialization may be required after the update to apply the fix correctly. [Read more](http://learn.computec.one/docs/appengine/other/troubleshooting#problem-computec-webclient-start-couldnt-be-opened) |
+| Fixed | AE WebClient | Fixed an issue where **CompuTec WebClient Start** could not be opened because the **SAP UI5** component failed to load. **Important**: In some environments, company reinitialization may be required after the update to apply the fix correctly. [Read more](/docs/appengine/other/troubleshooting#problem-computec-webclient-start-couldnt-be-opened) |
 
 ## CompuTec AppEngine 3.2603.1
 

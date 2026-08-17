@@ -167,7 +167,7 @@ Before you begin working with **Analytics**, it’s helpful to know how each das
 **Filters** can appear in different forms:
 
 - **Standard filters**, such as text inputs, or date pickers.
-- **Microchart filters**, which look like small charts but also function as interactive filters. By clicking elements within the microchart, you can quickly filter the data displayed in the report. [Read more](https://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/overview#use-microcharts)
+- **Microchart filters**, which look like small charts but also function as interactive filters. By clicking elements within the microchart, you can quickly filter the data displayed in the report. [Read more](/docs/appengine/appengine-users-guide/analytical-page/overview#use-microcharts)
 
 **Reports** can be presented in three formats:
 
@@ -326,7 +326,7 @@ Users can also interact with chart elements to view summaries and download the d
 
 - When the page is refreshed, all current report settings are saved automatically.
 - After configuring the report, you can save it as a new variant.
-- The new Variant will appear in the **Analytics Variants List**, where it can be opened and used later. [Read more](https://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/overview#analytics-variants-list)
+- The new Variant will appear in the **Analytics Variants List**, where it can be opened and used later. [Read more](/docs/appengine/appengine-users-guide/analytical-page/overview#analytics-variants-list)
 
 :::
 

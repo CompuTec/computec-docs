@@ -14,7 +14,7 @@ This guide provides comprehensive instructions on working with the CompuTec PDC 
 
 Before using the CompuTec PDC Plugin, ensure the following are installed and configured:
 
-1. CompuTec ProcessForce and CompuTec Licence Server is installed and configured. Refer to the relevant installation guide by clicking [this link](https://learn.computec.one/docs/processforce/administrator-guide/licensing/license-server/overview).
+1. CompuTec ProcessForce and CompuTec Licence Server is installed and configured. Refer to the relevant installation guide by clicking [this link](/docs/processforce/administrator-guide/licensing/license-server/computec-license-server-installation).
 
 2. CompuTec PDC requirements have been fulfilled. Verify the system meets all requirements descibed [in this guide](/docs/pdc/administrator-guide/installation/requirements/).
 
@@ -26,11 +26,11 @@ The CompuTec PDC Plugin is compatible only with the 64-bit version of CompuTec P
 
 Follow the individual installation guides for each required component:
 
-- [CompuTec AppEngine installation](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation)
-- [CompuTec PDC plugin](http://learn.computec.one/docs/appengine/plugins-user-guide/install-plugin)
-- [CompuTec ProcessForce plugin](https://learn.computec.one/docs/processforce/processforce.md)
-- [CompuTec ProcessForce API (on the same server as CompuTec AppEngine)](https://learn.computec.one/docs/processforce/releases/download#computec-processforce-api)
-- [CompuTec PDC application](https://learn.computec.one/docs/pdc/administrator-guide/installation/first-installation/)
+- [CompuTec AppEngine installation](/docs/appengine/administrators-guide/configuration-and-administration/installation)
+- [CompuTec PDC plugin](/docs/appengine/plugins-user-guide/install-plugin)
+- [CompuTec ProcessForce plugin](/docs/processforce/administrator-guide/installation/first-installation/extension)
+- [CompuTec ProcessForce API (on the same server as CompuTec AppEngine)](/docs/processforce/releases/download#computec-processforce-api)
+- [CompuTec PDC application](/docs/pdc/administrator-guide/installation/first-installation/)
 
 :::caution
 CompuTec ProcessForce API needs to be installed on the same server as CompuTec AppEngine.

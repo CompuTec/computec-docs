@@ -34,7 +34,7 @@ Main Menu → Human Resources → Employee Master Data
 - **PDC Settings**: a set of individual CompuTec PDC and CompuTec ProcessForce settings that can be assigned to a specific Employee or CompuTec PDC installation. Click [this link](rfid.md) to learn more.
 - **PDC RFID UI**: an RFID identification code is assigned to an employee for logging in using RFID devices. Click here to learn more.
 - **PDC Barcode**: a barcode is assigned to the employee for login (if barcode scanning devices are used).
-- **Is Enabled Move to Other Resource**: this checkbox determines if the employee can move a Task to an [Alternative Resource](https://learn.computec.one/docs/processforce/user-guide/scheduling/gantt-chart/alternative-resources) during time or downtime registration on a Task.
+- **Is Enabled Move to Other Resource**: this checkbox determines if the employee can move a Task to an [Alternative Resource](/docs/processforce/user-guide/scheduling/gantt-chart/alternative-resources) during time or downtime registration on a Task.
 - **Is Technician**: a user with this checkbox checked can access and modify all unclosed Downtime documents assigned to them, including changing the Downtime Reason and closing the documents.
 - **Is DownTime Supervisor**: a user with this checkbox checked has the same privileges as a Technician but for all Downtime documents in the system. The supervisor can also reassign any Downtime document to a different Technician.
 
@@ -49,7 +49,7 @@ After launching the application, click the first icon in the top menu and select
 The Connection section allows you to configure the necessary settings to connect CompuTec PDC with SAP Business One and other related services.
 
 :::caution
-    For a detailed description of the configuration for the CompuTec AppEngine plugin version, click [here](https://learn.computec.one/docs/pdc/pdc-plugin/computec-pdc-plugin).
+    For a detailed description of the configuration for the CompuTec AppEngine plugin version, click [here](/docs/pdc/pdc-plugin/computec-pdc-plugin).
 :::
 
 ![PDC Connection](./media/setting-up-the-application/pdc-connection.webp)

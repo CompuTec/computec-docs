@@ -15,7 +15,7 @@ This guide details the options and functionalities available within the Gantt ch
 :::
 
 :::caution
-    The Gantt chart is available only in [Direct Data Access](https://learn.computec.one/docs/processforce/user-guide/scheduling/gantt-chart/configure-computec-service-manager.md) mode.
+    The Gantt chart is available only in Direct Data Access.[Read more](/docs/processforce/user-guide/scheduling/gantt-chart/overview)
 :::
 
 :::caution

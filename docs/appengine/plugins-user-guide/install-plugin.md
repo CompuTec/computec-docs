@@ -30,9 +30,9 @@ Only one version of a plugin can be active on a single CompuTec AppEngine instan
 
 Before you start, make sure that:
 
-- **CompuTec AppEngine** is installed and activated. [Read more](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation)
+- **CompuTec AppEngine** is installed and activated. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/installation)
 - You have access to the **CompuTec Administration Panel**
-- At least one **CompuTec AppEngine** instance is configured and active. [Read more](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation#step-5-activate-a-company-in-computec-appengine)
+- At least one **CompuTec AppEngine** instance is configured and active. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/installation#step-5-activate-a-company-in-computec-appengine)
 - Disable any custom code in the ``SP_TransactionNotification`` and ``SP_PostTransactionNotice`` stored procedures before installing the plugins. After the installation is completed successfully, you can re-enable your custom code.
 
 ## Install and activate a plugin
@@ -75,7 +75,7 @@ To install and activate a CompuTec AppEngine 3.0 plugin, follow these steps:
 
         ![click find different version to see a list of different plugin versions](./media/installation/plugin-install8.png)
 
-    - You will see the plugin details with all the available versions. [Read more](http://learn.computec.one/docs/appengine/plugins-user-guide/overview#plugin-versions)
+    - You will see the plugin details with all the available versions. [Read more](/docs/appengine/plugins-user-guide/overview#plugin-versions)
 
         ![a list of different plugin versions](./media/installation/plugin-install9.png)
 
@@ -141,6 +141,6 @@ After successful installation:
 
 :::info[Note]
 
-To learn about new features or changes, refer to the plugin’s [documentation](http://learn.computec.one/docs/appengine/plugins-user-guide/overview#available-plugins).
+To learn about new features or changes, refer to the plugin’s [documentation](/docs/appengine/plugins-user-guide/overview#available-plugins).
 
 :::

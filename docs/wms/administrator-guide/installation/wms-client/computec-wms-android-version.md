@@ -27,7 +27,7 @@ The image above shows the expected response. If you encounter a different respon
 
 ## Download and Installation
 
-Download the installation file from [this link](../../../releases/download.md) and then extract and transfer it to the device.
+Download the installation file from [this link](/docs/wms/releases/download) and then extract and transfer it to the device.
 
 Using a file manager app, navigate to the download folder and tap the file to begin the installation, provided all necessary permissions are properly configured.
 
@@ -52,7 +52,7 @@ Using a file manager app, navigate to the download folder and tap the file to be
 ## Overwriting a Client Version
 
 :::info[note]
-Starting with **CompuTec WMS 3.2607.1**, automatic client upgrade is available for **CompuTec WMS Android** and **CompuTec WMS Desktop**. Manual client replacement is only required for **CompuTec WMS Legacy Client** and **CompuTec WMS CE**, or in scenarios where automatic upgrade cannot be used. [Read more](https://learn.computec.one/docs/wms/administrator-guide/upgrade/#automatic-client-update)
+Starting with **CompuTec WMS 3.2607.1**, automatic client upgrade is available for **CompuTec WMS Android** and **CompuTec WMS Desktop**. Manual client replacement is only required for **CompuTec WMS Legacy Client** and **CompuTec WMS CE**, or in scenarios where automatic upgrade cannot be used. [Read more](/docs/wms/administrator-guide/upgrade/#automatic-client-update)
 :::
 
 A manual option is available to change the client version, making the testing process easier. This helps prevent issues caused by mismatched versions between the CompuTec server and client, which can arise when testing the Android client with different CompuTec server versions.

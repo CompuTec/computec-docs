@@ -10,8 +10,8 @@ This function allows propagating changes made on a particular Bill of Materials 
 
 ## Installation
 
-This feature is built on CompuTec AppEngine job, which is automatically installed during the [BulkChange plugin installation](../bulk-changes-on-bills-of-materials/installation-and-configuration.md). o enable the BOM to MOR update, ensure:
-    - Send Events Job is active for a specific company. Click [here](https://learn.computec.one/docs/appengine/administrators-guide/configuration-and-administration/installation) to find out more.
+This feature is built on CompuTec AppEngine job, which is automatically installed during the [BulkChange plugin installation](/docs/appengine/2.0/plugins-user-guide/bulk-changes-on-bills-of-materials/installation-and-configuration/). o enable the BOM to MOR update, ensure:
+    - Send Events Job is active for a specific company. Click [here](/docs/appengine/administrators-guide/configuration-and-administration/installation) to find out more.
     - Background processing is configured for the specific company.
 
 ## Configuration

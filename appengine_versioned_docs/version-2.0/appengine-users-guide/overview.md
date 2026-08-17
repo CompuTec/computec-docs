@@ -6,8 +6,8 @@ sidebar_position: 1
 
 The platform main window allows to go to three main sections:
 
-- [Launchpad](../appengine-users-guide/launchpad.md)
-- [Configuration and Administration](../../version-2.0/administrators-guide/configuration-and-administration/overview.md).
-- [REST/OData API Documentation](../developers-guide/rest-odata-api/rest-odata-api-documentation.md)
+- [Launchpad](/docs/appengine/appengine-users-guide/launchpad)
+- [Configuration and Administration](/docs/webup/components/components-and-functional-overview/).
+- [REST/OData API Documentation](/docs/appengine/developers-guide/rest-odata-api/rest-odata-api-documentation)
 
     ![CompuTec AppEngine User's Guide](./media/overview/image2019-6-4-17-55-9.png)

@@ -19,7 +19,7 @@ Default Cron Expression: `0 0 1 * * *` (Daily at 1 AM)
 
 These jobs automatically perform Cost Roll-Up operations for selected items based on predefined parameters in specific time (defined in Cron Expressions). Key steps to configure:
 
-1. Navigate to Plugins → ProcessForce Plugin → Settings to define parameters (that reflects options available in the [Cost Roll-Up form](https://learn.computec.one/docs/processforce/user-guide/costing-material-and-resources/cost-categories#cost-roll-up)).
+1. Navigate to Plugins → ProcessForce Plugin → Settings to define parameters (that reflects options available in the [Cost Roll-Up form](/docs/processforce/user-guide/costing-material-and-resources/cost-categories#cost-roll-up)).
 2. Use the Perform the roll-up over structure checkbox to enable advanced options like batch-based calculations and BOM data saving.
 
 :::caution

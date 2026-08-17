@@ -21,7 +21,7 @@ Follow the steps below to import and assign the license:
 1. Before you can continue, obtain a valid license file from your **CompuTec ProcessForce** provider.
 
 :::info[note]
-If you do not already have a license file, follow our [Request CompuTec ProcessForce License](https://learn.computec.one/docs/processforce/administrator-guide/licensing/request-for-a-license/) guide.
+If you do not already have a license file, follow our [Request CompuTec ProcessForce License](/docs/processforce/administrator-guide/licensing/request-for-a-license/) guide.
 :::
 
 ## Step 2: Open License Administration

@@ -6,8 +6,6 @@ sidebar_position: 2
 
 The Bulk Change Plugin for CompuTec ProcessForce simplifies the mass updating of Bills of Materials (BoMs) by allowing centralized modifications to production processes. This guide provides step-by-step instructions for installing and configuring the plugin, ensuring seamless integration with your existing CompuTec ProcessForce environment.
 
----
-
 ## Prerequisites
 
 Before proceeding, ensure the following components are installed and properly configured:
@@ -15,14 +13,14 @@ Before proceeding, ensure the following components are installed and properly co
     - CompuTec ProcessForce
     - CompuTec License Server
 
-For detailed guidance on licensing setup, refer [here](https://learn.computec.one/docs/processforce/administrator-guide/licensing/license-server/overview)
+For detailed guidance on licensing setup, refer [here](/docs/processforce/administrator-guide/licensing/license-server/computec-license-server-installation)
 
 ## CompuTec AppEngine and Plugin Installation and Configuration
 
 To use the Bulk Change plugin, you’ll need to install both the CompuTec AppEngine and the plugin itself.
 
-- CompuTec AppEngine Installation: Follow the instructions available [here](../../administrators-guide/installation.md).
-- Plugin Installation and Configuration: Detailed steps can be found [here](../../../version-2.0/administrators-guide/configuration-and-administration/overview.md).
+- CompuTec AppEngine Installation: Follow the instructions available [here](/docs/appengine/administrators-guide/configuration-and-administration/installation).
+- Plugin Installation and Configuration: Detailed steps can be found [here](/docs/appengine/plugins-user-guide/install-plugin).
 
 ## CompuTec ProcessForce
 
@@ -35,5 +33,3 @@ To do this, check the following checkbox:
 ![Bulk Change](./media/bulk-changes-of-bom/image2020-1-18-8-33-41.png)
 
 Enter CompuTec AppEngine url, e.g. `http://{host}:54000`, click "Update" and restart SAP Business One.
-
----

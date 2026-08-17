@@ -8,7 +8,7 @@ sidebar_position: 12
 
 CompuTec AppEngine Jobs are a powerful feature in the CompuTec AppEngine framework that allow developers to execute background logic in response to specific events in SAP Business One. This tutorial demonstrates how to build a custom job that listens for the creation of a new, unapproved Sales Order and automatically generates a To-Do task for follow-up. This kind of automation enhances operational efficiency and ensures timely review of business documents.
 
-Before you begin, ensure background processing is properly configured in your environment. You can refer to the setup guide here: [Configuration and Administration → Background processing](../../../version-2.0/administrators-guide/configuration-and-administration/overview.md).
+Before you begin, ensure background processing is properly configured in your environment. You can refer to the setup guide here: [Configuration and Administration → Background processing](/docs/appengine/administrators-guide/configuration-and-administration/background-processing/).
 
 ---
 
@@ -89,7 +89,7 @@ Before you begin, ensure background processing is properly configured in your en
     }
     ```
 
-8. After rebuilding, our action will be available in the background processing section of the Administration Panel, and it can be activated. (If you're unsure how to do this, please refer to the [Configuration and Administration](../../../version-2.0/administrators-guide/configuration-and-administration/overview.md#background-processing) guide. When you open the Job configuration, you will see all the details from our annotation, as well as the plugin ID from the plugin manifest.)
+8. After rebuilding, our action will be available in the background processing section of the Administration Panel, and it can be activated. (If you're unsure how to do this, please refer to the [Configuration and Administration](/docs/appengine/administrators-guide/configuration-and-administration/background-processing/) guide. When you open the Job configuration, you will see all the details from our annotation, as well as the plugin ID from the plugin manifest.)
 
     ![Event Job](./media/appengine-jobs/event-job-activation.webp)
 

@@ -13,13 +13,13 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 | Issue Type | Component | Release Note |
 | --- | --- | --- |
 | New | Client Android | The **CompuTec WMS** mobile client now updates itself automatically whenever a newer version is available on the server, reducing maintenance and ensuring users always run the latest version. |
-| New | Client | You can now fully customize document line colors, including highlighting overpicked lines, using the **Interface Design Manager**. [Read more](https://learn.computec.one/docs/wms/administrator-guide/custom-configuration/custom-configuration-functions/manager/interface-design-manager/) |
+| New | Client | You can now fully customize document line colors, including highlighting overpicked lines, using the **Interface Design Manager**. [Read more](/docs/wms/administrator-guide/custom-configuration/custom-configuration-functions/manager/interface-design-manager/) |
 | New | Server | The **Storage Unit Wizard** now allows you to create multiple child **Storage Units** under a single parent during **Goods Receipt PO (GRPO)**. |
 | New | Client | You can now allow users to edit the **Posting Date** on WMS documents through **Custom Configuration**, alongside the existing **Document Date** and **Delivery Date** options. |
 | New | Server | Added API support for creating and retrieving **Inventory Register** lines, making it easier to integrate inventory transactions with external systems. |
 | Improved | Server | Improved performance when loading **Storage Units**, significantly reducing loading times in environments with large numbers of Storage Units. |
 | Improved | Client | WMS client settings have been reorganized into a dedicated **Options** tab, making configuration easier to navigate. |
-| Improved | Server | You can now display two additional custom SQL information fields on the **Delivery Line Details** screen. [Read more](http://learn.computec.one/docs/wms/administrator-guide/custom-configuration/custom-configuration-functions/manager/overview) |
+| Improved | Server | You can now display two additional custom SQL information fields on the **Delivery Line Details** screen. [Read more](/docs/wms/administrator-guide/custom-configuration/custom-configuration-functions/manager/overview) |
 | Improved | Client Android | The **Barcode Decoder** now displays the definition name when saving and asks for confirmation before deleting rules or definitions. |
 | Improved | Server | The Inventory Register API now validates **Storage Unit** codes before processing requests, improving data consistency. |
 | Improved | Client Adroid | The **@PickNumber** parameter is now supported when picking with **Storage Units**. |
@@ -177,7 +177,7 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 | Improved | Server | **Delivery from Sales Order** now handles allocated serial numbers more clearly and keeps users on the correct screen after selection. |
 | New | Android Client | Added the ability to attach photos directly from the camera in **Android WMS**. Users can now choose between file upload or camera capture. |  
 | Fixed | Server | **Return Requests from Delivery** now allow proper selection and saving of serial numbers, including empty serial scenarios. |  
-| Improved | Server | **WMS Settings** can now be installed separately, making configuration access easier in terminal server environments. [Read more](https://learn.computec.one/docs/wms/administrator-guide/installation/wms-server/overview#install-wms-settings-only) |  
+| Improved | Server | **WMS Settings** can now be installed separately, making configuration access easier in terminal server environments. [Read more](/docs/wms/administrator-guide/installation/wms-server/overview#install-wms-settings-only) |  
 | Improved | Client | Long item names no longer block warehouse selection. Text wrapping improves usability on smaller scanner screens. |  
 | Fixed | Server | **GRPO** now uses the actual posting date when saving drafts instead of the original draft date. |
 | Fixed | Client | Fixed quantity editing errors in **Delivery** documents. |

@@ -190,7 +190,7 @@ In the **Actions** tab, you can review **Linked Objects** associated with the se
 **Actions** are defined in plugins, so after installing plugins, additional actions become available for use in **Analytics**.
 
 :::note[info]
-For more information about configuring and activating **Actions** in **Analytics**, see [our article](https://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/analytics-actions/).
+For more information about configuring and activating **Actions** in **Analytics**, see [our article](/docs/appengine/appengine-users-guide/analytical-page/analytics-actions/).
 :::
 
 ## Variants Tab
@@ -202,7 +202,7 @@ The **Variants** tab displays all variants created for the selected data source.
 **Variants** allow you to save different report configurations, including filters, table layouts, and chart settings. In this tab, you can review existing variants, add new variants, or edit the existing existing ones.
 
 :::note[info]
-You can read more about variants in [our article](http://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/overview#about-a-variant).
+You can read more about variants in [our article](/docs/appengine/appengine-users-guide/analytical-page/overview#about-a-variant).
 :::
 
 ### Basic Settings
@@ -218,7 +218,7 @@ In the **Basic Settings** section, you can:
 ![screen showing basic settings section](media/table_chart_opt/an-sm-click-src-edit-mode-variants-edit-basic.png)
 
 :::note[info]
-For more information about managing permissions, see the [our article on Analytics permissions](https://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/permissions_in_analytics).
+For more information about managing permissions, see the [our article on Analytics permissions](/docs/appengine/appengine-users-guide/analytical-page/permissions_in_analytics).
 :::
 
 ### Forms Definition
@@ -318,7 +318,7 @@ In this section, you can:
 - Add new visual filters
 - Remove existing filters
 
-**Visual Filters** provide a quick, interactive way to filter report data. They are displayed as **microcharts** directly within your analytics reports. [Read more](https://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/overview/#use-microcharts)
+**Visual Filters** provide a quick, interactive way to filter report data. They are displayed as **microcharts** directly within your analytics reports. [Read more](/docs/appengine/appengine-users-guide/analytical-page/overview/#use-microcharts)
 
 ### Action Settings
 
@@ -329,7 +329,7 @@ In **Action Settings** section, you configure which actions are available for th
 This allows you to control which operations users can perform directly from the report, depending on the variant they are using.
 
 :::note[info]
-For more information about configuring and activating **Actions** in **Analytics**, see [our article](https://learn.computec.one/docs/appengine/appengine-users-guide/analytical-page/analytics-actions/).
+For more information about configuring and activating **Actions** in **Analytics**, see [our article](/docs/appengine/appengine-users-guide/analytical-page/analytics-actions/).
 :::
 
 ### Drill Downs

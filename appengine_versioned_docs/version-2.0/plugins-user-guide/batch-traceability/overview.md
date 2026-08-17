@@ -12,12 +12,12 @@ Watch the Guided Tour of [Batch Traceability](https://youtu.be/ZHUswSIKTu0)
 
 ### Prerequisites
 
-Ensure that CompuTec ProcessForce and the CompuTec License Server are properly installed and configured. For guidance, refer to the [overview](https://learn.computec.one/docs/processforce/administrator-guide/licensing/license-server/overview).
+Ensure that CompuTec ProcessForce and the CompuTec License Server are properly installed and configured. For guidance, refer to [this guide](/docs/processforce/administrator-guide/licensing/license-server/computec-license-server-installation).
 
 ### CompuTec AppEngine and Plug-in Installation and Configuration
 
-- For CompuTec AppEngine installation please follow this link: [Installation](../../administrators-guide/installation.md)
-- For Plug-in installation please follow this link: [Configuration and Administration](../../administrators-guide/configuration-and-administration/overview.md).
+- For CompuTec AppEngine installation please follow this link: [Installation](/docs/appengine/administrators-guide/configuration-and-administration/installation)
+- For Plug-in installation please follow this link: [Configuration and Administration](/docs/appengine/plugins-user-guide/install-plugin).
 
 ### CompuTec ProcessForce
 

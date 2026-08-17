@@ -9,11 +9,11 @@ This guide provides a detailed, step-by-step process for installing the CompuTec
 :::info
     Starting with the releases **3.10.6.1** (associated with CompuTec ProcessForce version 10.0 Release 6 (R6)) and **3.93.15.1** (corresponding to CompuTec ProcessForce version 9.3 PL14 Release 2 (R2)), **CompuTec PDC is exclusively available as an CompuTec AppEngine plugin**.
 
-    Follow the [CompuTec AppEngine plugin configuration manual](https://learn.computec.one/docs/pdc/pdc-plugin/computec-pdc-plugin) to ensure that the installation process is carried out correctly and that the application is set up for use in your system.
+    Follow the [CompuTec AppEngine plugin configuration manual](/docs/pdc/pdc-plugin/computec-pdc-plugin) to ensure that the installation process is carried out correctly and that the application is set up for use in your system.
 :::
 
 :::warning
-    Be sure to fulfill the requirements described in [this guide](https://learn.computec.one/docs/pdc/administrator-guide/installation/requirements) before starting the installation process.
+    Be sure to fulfill the requirements described in [this guide](/docs/pdc/administrator-guide/installation/requirements) before starting the installation process.
 :::
 
 1. **Download the Installation File**: begin by downloading the CompuTec PDC [installation file](/docs/pdc/releases/download). Once downloaded, run the file to begin the installation process.

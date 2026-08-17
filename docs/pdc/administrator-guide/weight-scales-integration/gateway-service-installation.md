@@ -18,7 +18,7 @@ Before installing the CompuTec Gateway Service, ensure the following requirement
 
 ## Installation
 
-1. To install CompuTec Gateway Service, download and run its installation file. For version 1.2.0.14 version, you can download it [here](https://learn.computec.one/docs/labels/releases/download#computec-gateway).
+1. To install CompuTec Gateway Service, download and run its installation file. For version 1.2.0.14 version, you can download it [here](/docs/labels/releases/download#computec-gateway).
 2. Once the installation is complete, the Gateway Service service will start automatically.
 
     ![Proxy setup](./media/gateway-service-installation/proxy-setup.webp)
