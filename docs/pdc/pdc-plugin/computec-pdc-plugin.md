@@ -4,11 +4,13 @@ sidebar_position: 4
 
 # Overview
 
-The **CompuTec PDC Plugin** provides **Production Data Capture** functionality through **CompuTec AppEngine**. It offers a faster and more convenient way for production operators to perform shop floor activities using a web-based interface.
+The **CompuTec Production Data Capture (PDC) Plugin** provides a fast and convenient way to manage production activities directly from the shop floor using mobile touchscreen devices.
 
-The plugin supports production activities such as recording time, working with **Manufacturing Orders** and operations, and accessing relevant production, item, and resource information.
+Operators can record time spent on production tasks and operations and access relevant information about operations, machines, resources, items, and production history. The management view also provides an overview of production resources and their current status.
 
-The plugin works together with **ProcessForce Time Bookings** to provide production data directly from the shop floor.
+Running on **CompuTec AppEngine**, the **PDC Plugin** provides a faster, web-based alternative for recording and managing shop floor activities.
+
+This guide explains how to install, configure, and start using the **CompuTec PDC Plugin** with **CompuTec AppEngine**.
 
 :::info[note]
 This guide provides comprehensive instructions on working with the **CompuTec PDC Plugin** and **CompuTec AppEngine**. It complements the main **CompuTec PDC** application manual, which is available after clicking [this link](/docs/pdc/).
