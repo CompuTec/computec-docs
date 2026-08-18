@@ -10,6 +10,15 @@ toc_max_heading_level: 4
 
 Below are the release notes for CompuTec Labels Printing Manager, highlighting new features, improvements, and bug fixes in this release.
 
+### CompuTec Labels Printing Manager 4.8.8
+
+**Release Date: 13 August 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Improved | Printing Manager Application | Emails can now be sent to multiple **To** and **CC** recipients. Recipients can be entered manually or provided by an SQL query, and parameters such as `@DocEntry` can be used in the **To**, **CC**, **Subject**, and **Body** fields. |
+| Improved | Printing Manager Application | Email bodies can now include **HTML formatting and tables returned by SQL queries**, making it easier to create clear, structured email content. The email configuration fields have also been aligned for a more consistent layout. |
+
 ### CompuTec Labels Printing Manager 4.8.7
 
 **Release Date: 16 July 2026**
