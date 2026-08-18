@@ -41,7 +41,7 @@ There are three base classes your job class must implement:
 ### One-Time and Recursive Jobs
 
 - **One-Time Jobs**: Execute on demand via the REST API.
-- **Recursive Jobs**: Execute periodically according to a Cron expression (see [Quartz Cron Generator](https://www.freeformatter.com/cron-expression-generator-quartz.html)).
+- **Recursive Jobs**: Execute periodically according to a Cron expression.
 
 Classes for creating these jobs:
 

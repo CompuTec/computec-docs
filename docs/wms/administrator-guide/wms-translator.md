@@ -14,7 +14,7 @@ This guide explains how to use the CompuTec WMS Translator, an essential IT solu
 
 ## CompuTec WMS Translator Address
 
-You can access the CompuTec WMS Translator by navigating to [https://translate.processforce.eu:4433](https://translate.processforce.eu:4433) in your web browser.
+You can access the CompuTec WMS Translator by navigating to [https://translate.computec.one](https://translate.computec.one/) in your web browser.
 
 ## Logging in
 

@@ -13,13 +13,13 @@ To access CompuTec WMS remotely, a reliable remote desktop application is essent
 **Installing via Google Play Store**
 
 1. Open the Google Play Store on your device.
-2. Download and install the Microsoft Remote Desktop app: [download](https://play.google.com/store/apps/details?id=com.microsoft.rdc.android).
+2. Download and install the Microsoft Remote Desktop app: [download](https://play.google.com/store/apps/details?id=com.microsoft.rdc.androidx).
 
 **Manual Installation via APK File**
 
 If your device does not support the Google Play Store, follow these steps to install the app manually:
 
-1. Open this link: [https://play.google.com/store/apps/details?id=com.microsoft.rdc.android](https://play.google.com/store/apps/details?id=com.microsoft.rdc.android).
+1. Open this link: [https://play.google.com/store/apps/details?id=com.microsoft.rdc.androidx](https://play.google.com/store/apps/details?id=com.microsoft.rdc.androidx).
 2. Use the website to generate and download the APK file.
 
     ![Download](./media/apk-download-click.webp)

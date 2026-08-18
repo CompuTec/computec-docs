@@ -36,8 +36,8 @@ CompuTec WMS requires a minimum of .NET Framework version 4.7. You can verify yo
 
 For best results, update to the latest version of .NET Framework using Windows Update or download the installer directly from Microsoft:
 
-- [Microsoft .NET Framework 4.7 (Web Installer)](https://www.microsoft.com/en-us/download/details.aspx?id=55170)
-- [Microsoft .NET Framework 4.7 (Offline Installer)](https://www.microsoft.com/en-us/download/details.aspx?id=55167)
+- [Microsoft .NET Framework 4.7 (Web Installer)](https://support.microsoft.com/en-us/servicing/dotnetframework/2017/05/the-net-framework-4-7-web-installer-for-windows)
+- [Microsoft .NET Framework 4.7 (Offline Installer)](https://support.microsoft.com/en-us/servicing/dotnetframework/2017/06/the-net-framework-4-7-offline-installer-for-windows)
 
 ## SAP Business One User
 
