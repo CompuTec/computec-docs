@@ -83,4 +83,3 @@ For instructions, see [Update a Plugin](/docs/appengine/plugins-user-guide/updat
 After updating the plugin, make sure that the installed CompuTec PDC application and any required ProcessForce API components are compatible with the new version.
 
 If a newer PDC application version is required, install the corresponding version before continuing to use CompuTec PDC.
-
