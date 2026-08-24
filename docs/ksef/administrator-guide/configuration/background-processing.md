@@ -222,7 +222,7 @@ If you use CompuTec KSeF only for outgoing invoices, you do not need to enable t
 
 After configuring the required background processing jobs:
 
-- If you use CompuTec KSeF to retrieve and process incoming documents, configure the incoming document categories. See **Configure CompuTec KSeF Incoming Document Categories**.
+- If you use CompuTec KSeF to retrieve and process incoming documents, configure the incoming document categories. See [**Configure CompuTec KSeF Incoming Document Categories**](/docs/ksef/administrator-guide/configuration/config-doc-cat).
 - Configure the required SAP Business One authorizations for CompuTec KSeF users. See **Configure SAP Business One Authorizations for CompuTec KSeF**.
 
 :::info[note]

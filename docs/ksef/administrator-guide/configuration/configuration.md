@@ -82,7 +82,7 @@ Complete this configuration if you use CompuTec KSeF to retrieve and process inc
 Incoming document categories define how documents are downloaded, matched, and converted into SAP Business One drafts.
 
 :::note[info]
-See **Configure CompuTec KSeF Incoming Document Categories**.
+See [**Configure CompuTec KSeF Incoming Document Categories**](/docs/ksef/administrator-guide/configuration/config-doc-cat).
 :::
 
 ### Note
