@@ -258,7 +258,7 @@ Choose the documentation according to what you need to do:
 
 Use the [**Install CompuTec KSeF Guide**](/docs/ksef/administrator-guide/installation/plugin-installation) if you want to install CompuTec KSeF.
 
-Continue with [**Configure CompuTec KSeF**](/docs/ksef/administrator-guide/configuration/configuration) for an overview of the complete configuration process.
+Continue with [**Configure CompuTec KSeF**](/docs/ksef/administrator-guide/configuration) for an overview of the complete configuration process.
 
 The Administrator Guide covers:
 

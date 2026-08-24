@@ -22,7 +22,7 @@ Before you send outgoing invoices, make sure:
 
 - **CompuTec AppEngine** is installed and configured. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/installation)
 - CompuTec KSeF plugin is installed. [Read more](/docs/ksef/administrator-guide/installation/plugin-installation)
-- CompuTec KSeF is configured for your company. [Read more](/docs/ksef/administrator-guide/configuration/configuration)
+- CompuTec KSeF is configured for your company. [Read more](/docs/ksef/administrator-guide/configuration)
 - Make sure you have access to **Output Invoices** in CompuTec KSeF. [Read more](/docs/ksef/administrator-guide/configuration/config-sap-auth)
 - Create a supported outgoing document in SAP Business One.
 

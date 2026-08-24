@@ -262,6 +262,6 @@ The page brings together the invoice status, KSeF information, verification QR c
 Depending on the invoice result:
 
 - If the invoice was processed successfully, no further action is required.
-- To review the KSeF session used to process the invoice, select the session in **Session History**. See [**View and Monitor KSeF Sessions**](/docs/ksef/user-guide/outgoing-invoices/view-ksef-sessions).
+- To review the KSeF session used to process the invoice, select the session in **Session History**. See **View and Monitor KSeF Sessions**.
 - If the invoice was not processed successfully, use **Error Description**, **Parsed Invoice**, **Session History**, and, if necessary, **XML Document** to investigate the problem.
 - To learn more about sending and monitoring outgoing invoices, see [**Send Outgoing Invoices to KSeF**](/docs/ksef/user-guide/outgoing-invoices/send-outgoing-inv).
