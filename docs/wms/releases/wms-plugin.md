@@ -6,6 +6,53 @@ sidebar_position: 4
 
 Below are the release notes for CompuTec WMS Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec WMS 3.2608.1
+
+**Release Date: 25 August 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | Delivery | Added support for assigning serial numbers on release in **Delivery from Pick List** for items allocated during **Pick and Pack**. |
+| Added | Row Coloring | Added support for custom SQL conditions in row coloring, allowing document lines to be colored based on user-defined query conditions. [Read more](/docs/wms/administrator-guide/custom-configuration/custom-configuration-functions/manager/row-color-cust) |
+| Added | Inventory Register API | The **Inventory Register API** now validates document, item, batch/serial, warehouse, and bin data and automatically completes the remaining information when it can be determined from the provided values. |
+| Improved | Quick Storage Unit Transfer | A confirmation message can now be displayed after a **Quick Storage Unit Transfer** is completed. The message can be enabled in **WMS Custom Configuration**. |
+| Improved | Stock Transfer | Stock Transfer no longer requests a bin location when the destination does not require one. |
+| Improved | Goods Receipt | Simplified and standardized navigation in **Goods Receipt**, including the handling of remarks and user-defined fields when adding items. |
+| Improved | Goods Receipt PO | Simplified and standardized navigation in **Goods Receipt PO** for a more consistent workflow. |
+| Improved | Goods Receipt | Added a combined **accept and save** action when adding an item, reducing the number of steps required. |
+| Improved | Handheld Client | Improved the performance and responsiveness of the **WMS handheld client**, reducing delays and freezes when loading or switching screens. |
+| Improved | Handheld Client | Improved highlighting of selected elements for a clearer and more consistent interface across WMS screens. |
+| Improved | Delivery | **Extra SQL Fields** in **Delivery** can now use the selected batch number to display additional batch information. |
+| Improved | Stock Transfer | A `Selected location` confirmation is now displayed after scanning the destination warehouse or bin when **Put Away** is skipped. |
+| Improved | Storage Units | Storage Unit details in AppEngine now display the creation date from the Storage Unit record. |
+| Improved | CT Labels | **WMS Custom Configuration** now displays the number of **CT Labels printers** in relation to the available licenses. |
+| Improved | Stock Counting | Removed an unnecessary button from the **New Stock Counting** screen. |
+| Fixed | Pick List | Fixed an error when scanning a non-UoM item into a second Storage Unit during picking. |
+| Fixed | Stock Counting | Fixed an issue where items with zero quantity could be excluded from **New Stock Counting** even when the option to exclude them was not selected. |
+| Fixed | Pick and Pack | Fixed quantity information and list refreshing when packing items into multiple Storage Units. Each Storage Unit can now be opened and displays the correct counted quantity. |
+| Fixed | Delivery | Fixed several issues with **Delivery drafts**, including restoring units, validating mandatory fields, and posting drafts containing batch or serial number selections. |
+| Fixed | Goods Receipt PO | Fixed an issue that prevented users from removing a selected batch for **Catch Weight** items. |
+| Fixed | Item Info | Fixed a server error that could occur when opening an item's batch numbers. |
+| Fixed | Stock Counting | Fixed an error when opening a **Catch Weight** item in a Stock Counting document created in SAP Business One. |
+| Fixed | Goods Receipt PO | Fixed an error that could occur when adding a new item to a Goods Receipt PO. |
+| Fixed | Goods Receipt PO | Fixed missing Storage Units when using the new **Storage Unit wizard**. |
+| Fixed | Goods Receipt PO | Fixed an issue where **distribution rules** were not applied to **Goods Receipt PO** documents. |
+| Fixed | Goods Receipt PO | Fixed bin location and user-defined field handling in **Goods Receipt PO** and **Delivery**. |
+| Fixed | Delivery | Fixed an issue with closing a Storage Unit when multiple **Storage Units** are used in a **Delivery**. |
+| Fixed | Delivery | Fixed the **Storage Unit wizard** appearing in **Delivery** when it was not applicable. |
+| Fixed | Delivery | Fixed filtering on the **Delivery** document list. |
+| Fixed | Pick Receipt | Fixed the picking flow so that after an item is picked, the changes are saved and the user returns to the previous screen. |
+| Fixed | Production Receipt | Fixed incorrect business property information on **SAP Business One Production Receipt** lines. |
+| Fixed | Batch Management | Fixed an issue where the corresponding document sub-line could not be found when processing batch numbers. |
+| Fixed | Stock Transfer | Fixed warehouse and bin selection in **New Stock Transfer**, including cases where only the warehouse was scanned or multiple document lines were processed. |
+| Fixed | Stock Transfer | Fixed base document references when creating a Stock Transfer from Request using a Storage Unit selected through **SU FIFO**. |
+| Fixed | Storage Unit Info | Fixed the `Cannot pick more than 0` message so quantities of non-managed items can be changed when negative quantities are allowed. |
+| Fixed | Storage Units | Fixed the creation time displayed in Storage Unit details. |
+| Fixed | Barcode Decoder | Fixed Barcode Decoder rule definitions. |
+| Fixed | Barcode Decoder | Fixed the default field focus on the Barcode Decoder screen in the handheld client. |
+| Fixed | Handheld Client | Fixed an issue that could cause the WMS handheld application to become unresponsive on Android devices using a TCP/REST connection. |
+| Fixed | Scanner Simulator | Fixed an `Incorrect bin code` error when pasting a bin location into the Scanner Simulator when the WMS server uses a different language. |
+
 ## CompuTec WMS Plugin 3.2607.1
 
 **Release Date: 14 July 2026**

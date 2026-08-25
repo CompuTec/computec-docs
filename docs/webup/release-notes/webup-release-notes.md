@@ -4,6 +4,15 @@ sidebar_position: 1
 
 # CompuTec WebUp Release Notes
 
+## CompuTec WebUp 1.2608.6
+
+**Release Date: 25 August 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | Web Client | Added support for additional **SAP Business One Web Client** views introduced in **SAP Business One 10.0 FP 2608**, allowing them to be customized using the **CompuTec WebUp Manager** side panel. This includes Checks for Payment, Inventory Opening Balances, Inventory Revaluation, Employees, Projects, Campaigns, Forecasts, MRP Runs, Resources, Pick Lists, Reconciliations, and related detail and draft views. |
+| Fixed | Web Client | Extended CompuTec WebUp support to additional SAP Business One Web Client screens that previously displayed `Layout error - Unsupported view`. These screens can now be opened and customized using the **CompuTec WebUp Manager** side panel. |
+
 ## CompuTec WebUp 1.2608.1
 
 **Release Date: 3 August 2026**
