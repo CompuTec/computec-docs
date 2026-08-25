@@ -8,7 +8,7 @@ Once the [Launchpad Configuration](/docs/appengine/2.0/administrators-guide/conf
 
 ![Launchpad](./media/launchpad/launchpad-log-in.png)
 
-If the user has access to more than one scheme, you have to choose one to work with from the list (by clicking the icon in the Choose Company field):
+If the user has access to more than one scheme, you have to choose one to work with from the list (by clicking the icon in the **Choose Company** field):
 
 ![Launchpad](./media/launchpad/launchpad-companies.png)
 

@@ -111,12 +111,12 @@ To establish a connection between the **CompuTec License Server** and the **SAP 
 
    The method of obtaining the database server name depends on your **SAP Business One** authentication method.
 
-      - **Classic SAP Business One login**: The database server name is displayed in the **Current Server** field of the **SAP Business One menu** > **Admistration** > **Choose Company** window.
+      - **Classic SAP Business One login**: The database server name is displayed in the **Current Server** field of the **SAP Business One menu** > **Administration** > **Choose Company** window.
 
          ![SAP Business One Choose Company dialog window displaying the Current Server field with database server name information highlighted](media/lic-serv-config/congif-db-con6.png)
 
       - **SAP Business One Authentication Server or Active Directory Domain Services**: You can find the database server information in one of the following locations:
-         - the **Choose Company** window displayed during sign-in, where the server is shown in the format: ``TenantName@DatabaseServer:Port``. Example: ``DEV@hanadev:30013``.
+         - **Choose Company** window displayed during sign-in, where the server is shown in the format: ``TenantName@DatabaseServer:Port``. Example: ``DEV@hanadev:30013``.
          - **System Landscape Directory(SLD)** > **DB Instances and Companies**, where the **Server Name** column displays the connection in the same format.
 
             ![System Landscape Directory interface showing DB Instances and Companies section with Server Name column displaying database connection details in TenantName@DatabaseServer:Port format](media/lic-serv-config/congif-db-con2.png)
