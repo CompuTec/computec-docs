@@ -24,17 +24,17 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 | Improved | Handheld Client | Improved highlighting of selected elements for a clearer and more consistent interface across WMS screens. |
 | Improved | Delivery | **Extra SQL Fields** in **Delivery** can now use the selected batch number to display additional batch information. |
 | Improved | Stock Transfer | A `Selected location` confirmation is now displayed after scanning the destination warehouse or bin when **Put Away** is skipped. |
-| Improved | Storage Units | Storage Unit details in AppEngine now display the creation date from the Storage Unit record. |
+| Improved | Storage Units | **Storage Unit** details in **CompuTec AppEngine** now display the creation date from the **Storage Unit** record. |
 | Improved | CT Labels | **WMS Custom Configuration** now displays the number of **CT Labels printers** in relation to the available licenses. |
 | Improved | Stock Counting | Removed an unnecessary button from the **New Stock Counting** screen. |
-| Fixed | Pick List | Fixed an error when scanning a non-UoM item into a second Storage Unit during picking. |
+| Fixed | Pick List | Fixed an error when scanning a non-UoM item into a second **Storage Unit** during picking. |
 | Fixed | Stock Counting | Fixed an issue where items with zero quantity could be excluded from **New Stock Counting** even when the option to exclude them was not selected. |
-| Fixed | Pick and Pack | Fixed quantity information and list refreshing when packing items into multiple Storage Units. Each Storage Unit can now be opened and displays the correct counted quantity. |
+| Fixed | Pick and Pack | Fixed quantity information and list refreshing when packing items into multiple **Storage Units**. Each **Storage Unit** can now be opened and displays the correct counted quantity. |
 | Fixed | Delivery | Fixed several issues with **Delivery drafts**, including restoring units, validating mandatory fields, and posting drafts containing batch or serial number selections. |
 | Fixed | Goods Receipt PO | Fixed an issue that prevented users from removing a selected batch for **Catch Weight** items. |
 | Fixed | Item Info | Fixed a server error that could occur when opening an item's batch numbers. |
-| Fixed | Stock Counting | Fixed an error when opening a **Catch Weight** item in a Stock Counting document created in SAP Business One. |
-| Fixed | Goods Receipt PO | Fixed an error that could occur when adding a new item to a Goods Receipt PO. |
+| Fixed | Stock Counting | Fixed an error when opening a **Catch Weight** item in a **Stock Counting** document created in SAP Business One. |
+| Fixed | Goods Receipt PO | Fixed an error that could occur when adding a new item to a **Goods Receipt PO**. |
 | Fixed | Goods Receipt PO | Fixed missing Storage Units when using the new **Storage Unit wizard**. |
 | Fixed | Goods Receipt PO | Fixed an issue where **distribution rules** were not applied to **Goods Receipt PO** documents. |
 | Fixed | Goods Receipt PO | Fixed bin location and user-defined field handling in **Goods Receipt PO** and **Delivery**. |
@@ -47,11 +47,11 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 | Fixed | Stock Transfer | Fixed warehouse and bin selection in **New Stock Transfer**, including cases where only the warehouse was scanned or multiple document lines were processed. |
 | Fixed | Stock Transfer | Fixed base document references when creating a Stock Transfer from Request using a Storage Unit selected through **SU FIFO**. |
 | Fixed | Storage Unit Info | Fixed the `Cannot pick more than 0` message so quantities of non-managed items can be changed when negative quantities are allowed. |
-| Fixed | Storage Units | Fixed the creation time displayed in Storage Unit details. |
-| Fixed | Barcode Decoder | Fixed Barcode Decoder rule definitions. |
-| Fixed | Barcode Decoder | Fixed the default field focus on the Barcode Decoder screen in the handheld client. |
+| Fixed | Storage Units | Fixed the creation time displayed in **Storage Unit** details. |
+| Fixed | Barcode Decoder | Fixed **Barcode Decoder** rule definitions. |
+| Fixed | Barcode Decoder | Fixed the default field focus on the **Barcode Decoder** screen in the handheld client. |
 | Fixed | Handheld Client | Fixed an issue that could cause the WMS handheld application to become unresponsive on Android devices using a TCP/REST connection. |
-| Fixed | Scanner Simulator | Fixed an `Incorrect bin code` error when pasting a bin location into the Scanner Simulator when the WMS server uses a different language. |
+| Fixed | Scanner Simulator | Fixed an `Incorrect bin code` error when pasting a bin location into the **Scanner Simulator** when the WMS server uses a different language. |
 
 ## CompuTec WMS Plugin 3.2607.1
 
