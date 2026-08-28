@@ -113,6 +113,12 @@ After you successfully install and activate the **CompuTec KSeF** plugin:
 - The plugin is active on the selected **CompuTec AppEngine** instance.
 - **CompuTec KSeF** is available from the **CompuTec AppEngine Launchpad**.
 
+## Next steps
+
+After installing and activating CompuTec KSeF, configure it for the selected SAP Business One company.
+
+See [**Configure CompuTec KSeF**](/docs/ksef/administrator-guide/configuration/) for the complete configuration process, including certificates, CompuTec KSeF Core, background processing, incoming document categories, if required, and SAP Business One authorizations.
+
 :::info[Note]
 
 For information about new **CompuTec KSeF** features, improvements, fixes, and other changes, see the [CompuTec KSeF Release Notes](/docs/ksef/releases/release-notes).
