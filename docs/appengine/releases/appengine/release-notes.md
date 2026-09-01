@@ -4,6 +4,27 @@ sidebar_position: 1
 
 # CompuTec AppEngine Release Notes
 
+## CompuTec AppEngine 3.2608.10
+
+**Release Date: 31 August 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | AE Analytics | You can now assign layouts to Analytics objects and views and choose a default layout for each object. Layout assignments can be easily managed from the new **Object Type Layouts** view. |
+| Added | AE Analytics | Writing SQL queries is now easier with **IntelliSense** in the Analytics source editor. As you type, the editor suggests available tables, views, and columns from your SAP Business One company database. This is supported for both **Microsoft SQL Server** and **SAP HANA**. |
+| Improved | AE Analytics | You can now add descriptions to visual filter tiles and chart tabs, making it easier for users to understand what a KPI represents or how it is calculated. |
+| Improved | AE Analytics | Analytics columns now show the field description when you hover over the column header, helping users understand the displayed data. Descriptions are also available when choosing which columns to display in **View Settings**. |
+| Improved | AE Analytics | Creating and editing SQL sources is now easier with improved SQL syntax highlighting and code completion in the source editor. |
+| Fixed | AE Analytics | Fixed an issue where text entered in the SQL editor could be lost, preventing RawSql sources from being created. |
+| Fixed | AE Analytics | **Golden arrows** in Analytics now correctly open the related SAP Business One form when Analytics is used from within the SAP Business One client. |
+| Fixed | Administration | Restarting **CompuTec AppEngine** from the **Administration Panel** no longer causes the service to terminate unexpectedly. |
+| Fixed | AE Analytics | Visual filter tiles now remain visible and clearly indicate when no data is available for the selected filters. |
+| Fixed | AE Analytics | Dynamic collection columns now display the expected value. You can also choose whether a column should display its value or description. |
+| Fixed | AE Analytics | Fixed an issue when printing the **QC Test Crystal** layout through the **SAP Business One API Gateway**. The Analytics printing experience has also been improved with clearer layout selection, print prompts, and PDF preview. |
+| Fixed | WebUp | Fixed an issue that could cause **CompuTec WebUp** actions to be triggered multiple times during the same session. |
+| Fixed | AE Analytics | Values in **golden-arrow columns** now remain visible after opening an action from an Analytics report and returning to the report. |
+| Fixed | ProcessForce | Fixed an error that could occur when replacing multiple items at once. |
+
 ## CompuTec AppEngine 3.2608.9
 
 **Release Date: 12 August 2026**
