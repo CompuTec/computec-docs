@@ -6,7 +6,7 @@ sidebar_position: 4
 
 Below are the release notes for CompuTec WMS Plugin, highlighting new features, improvements, and bug fixes in this release.
 
-## CompuTec WMS 3.2608.1
+## CompuTec WMS Plugin 3.2608.1
 
 **Release Date: 25 August 2026**
 
