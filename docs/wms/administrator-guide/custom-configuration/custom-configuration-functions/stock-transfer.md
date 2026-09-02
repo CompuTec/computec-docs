@@ -4,15 +4,22 @@ sidebar_position: 3
 
 # Stock Transfer
 
-The Stock Transfer module within SAP Business One offers comprehensive options for managing Inventory Transfer and stock movement between warehouses. This overview walks through key configuration options, changes, and customization capabilities, helping ensure seamless and efficient inventory handling.
+The **Stock Transfer** settings allow you to configure how CompuTec WMS handles Inventory Transfer and Inventory Transfer Request processes.
 
----
+You can use these settings to control document selection, quantity confirmation, warehouse and bin selection, Storage Unit (SU) transfers, and other Stock Transfer behavior.
 
 ![Stock Transfer](./media/stock-transfer/screenshot-01.png)
 
-## Configuration Options
+## Configuration options
 
-Below are the available settings and behaviors you can enable or disable in the Stock Transfer process:
+To configure Stock Transfer:
+
+1. Open **WMS Custom Configuration**.
+2. Go to the **Stock Transfer** tab.
+3. Configure the required options.
+4. Click **Save**.
+
+The following options are available:
 
 1. **Show Project selection**: Displays the Project Selection form before the Remarks form, ensuring the correct project is linked during document creation.  
 
@@ -104,7 +111,12 @@ Below are the available settings and behaviors you can enable or disable in the 
 
     ![Quick SU Tool Tip Fill strategy (scanning) options](./media/stock-transfer/screenshot-323.png)
 
-## Changes
+21. **Quick SU Transfer - Show message after document creation**: Displays a confirmation message after an Inventory Transfer document is successfully created using Quick SU Transfer. By default, this option is disabled.
+
+<details>
+<summary>**Legacy configuration reference**</summary>
+
+The following information applies to configurations migrated from **older versions of CompuTec WMS**. It is not required for a standard Stock Transfer configuration.
 
 In the updated Stock Transfer tab, some previous features have been removed or adjusted to streamline processes. Here’s a look at these adjustments and custom query options available for advanced users.
 
@@ -165,4 +177,4 @@ Fields marked according to the field layout in the Custom Query:
 
     ![Inventory Transfer](./media/stock-transfer/stock-transfer-01.webp)
 
----
+</details>
