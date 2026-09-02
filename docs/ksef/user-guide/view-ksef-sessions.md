@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# View and Monitor KSeF Sessions
+# KSeF Sessions
 
 Use **KSeF Sessions** in **CompuTec KSeF** to monitor the sending of outgoing invoices to KSeF.
 
@@ -10,13 +10,13 @@ A session contains one or more outgoing invoices sent to KSeF as part of the sam
 
 Use the session information to:
 
-- Check whether the sending process completed successfully.
-- See how many invoices were included in the session.
-- Check how many invoices were processed successfully or failed.
-- Review the invoices included in a session.
-- Identify errors that occurred during processing.
-- Monitor a session that is still being processed.
-- Reprocess a session when this action is available.
+- Check whether the sending process completed successfully
+- See how many invoices were included in the session
+- Check how many invoices were processed successfully or failed
+- Review the invoices included in a session
+- Identify errors that occurred during processing
+- Monitor a session that is still being processed
+- Reprocess a session when this action is available
 
 :::info[note]
 
@@ -312,7 +312,7 @@ You can also access session information when reviewing an outgoing invoice.
     ![alt text](media/view-sessions/sessions13.png)
 
 :::note[Info]
-See [**View Outgoing Invoices** guide](/docs/ksef/user-guide/outgoing-invoices/view-outgoing-invo) for more information.
+See [**View Outgoing Invoices**](/docs/ksef/user-guide/outgoing-invoices/view-outgoing-invo) for more information.
 :::
 
 ## Result
@@ -325,6 +325,6 @@ If a session contains errors, use the session details and invoice list to identi
 
 If all invoices in the session were processed successfully, no further action is required.
 
-To review the **KSeF information** assigned to a specific invoice, including its KSeF number, QR code, XML document, and processing history, see [**View Outgoing Invoices** guide](/docs/ksef/user-guide/outgoing-invoices/view-outgoing-invo).
+To review the **KSeF information** assigned to a specific invoice, including its KSeF number, QR code, XML document, and processing history, see [**View Outgoing Invoices**](/docs/ksef/user-guide/outgoing-invoices/view-outgoing-invo).
 
 If a session or invoice contains an error, review the available error information before retrying the process.
