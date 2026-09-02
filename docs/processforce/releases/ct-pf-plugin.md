@@ -11,6 +11,37 @@ You can find all download links and release notes for the latest available **Com
 However, we strongly recommend using **CompuTec ProcessForce Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec ProcessForce 3.2609.1
+
+**Release Date: 2 September 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | Quality Control | Improved the **QC Test** and **NCMR** workflow to ensure that required quality processes cannot be bypassed. When an NCMR is created from a QC Test, the test automatically moves to `Awaiting NCMR` and cannot be continued until the NCMR is closed. A QC Test can no longer be manually changed from `Started` to `Awaiting NCMR`. |
+| Added | Production Process | The **Operation Bind** window now shows the **Total Quantity** from the **Bill of Materials** and the **Remaining Quantity** available to bind, making it easier to allocate quantities to operations. |
+| Added | Reporting | Added database views required for **CompuTec AppEngine reports** on both Microsoft SQL Server and SAP HANA. |
+| Improved | General Settings | Reorganized the **General Settings** form for a clearer and more consistent layout across supported languages. |
+| Improved | Scheduling | The **Scheduling Board** now highlights overdue manufacturing orders in red when their Required Date has passed and they are not yet `Finished` or `Closed`. |
+| Improved | Resource Accounting | Unsupported resource variance account fields are now hidden from the **Resource Accounting** form to avoid confusion. |
+| Improved | ProcessForce API | The **ReceiptProduction API** now provides clearer responses when a receipt cannot be created, including when the manufacturing order is already closed. |
+| Improved | Plant Maintenance | Improved handling of dependent maintenance orders so a parent maintenance order remains open until its dependent orders are completed. |
+| Improved | Batch Traceability | The **Trace** tab in multi-batch trace analysis now displays the item name and description, making traced items easier to identify. |
+| Improved | MRP | Improved the performance and responsiveness of saving large **MRP recommendation** results. Progress is now displayed while recommendations are being saved. |
+| Fixed | Supplier Score Card | Corrected several **Supplier Score Card** calculations so supplier ratings accurately reflect goods receipts, QC tests, complaints, delivery performance, and quantity tolerance. Cancelled documents and incomplete delivery data are now handled correctly. |
+| Fixed | Quality Control | Complaints created from **QC Tests** now use the correct complaint type based on the test transaction, ensuring supplier complaints are correctly included in the **Supplier Score Card**. |
+| Fixed | Item Details | Fixed issues with opening or creating a **Bill of Materials** from an item revision in **Item Details**. Link arrows now also respect the setting for opening **Item Master Data** instead of the **Bill of Materials**. |
+| Fixed | Batch Management | Fixed batch expiry and inspection date calculation when **evaluation templates** are used. Expiry dates returned by a template are no longer extended again, and templates that return no result no longer prevent batch generation. |
+| Fixed | Vehicle Inspection | Improved **Vehicle Inspection** data handling for reporting and API operations, including temperature reason codes and `Clean` category remarks. Vehicle inspections can also be deleted correctly. |
+| Fixed | Plant Maintenance | Fixed the **MO Dependent** setting on maintenance order lines so it is retained correctly and dependent maintenance orders follow the expected closing logic. |
+| Fixed | Reporting | Fixed an error that could occur when installing the **CT_PF_Documents** database view. |
+| Fixed | Batch Traceability | Fixed a database error that could occur when opening a batch in **Batch Traceability**. |
+| Fixed | Planning & Bottleneck Scheduling | Fixed an error that could occur when opening bottleneck planning for a scenario. |
+| Fixed | MRP | **Phantom items** are now handled correctly during MRP calculations. MRP no longer creates recommendations for phantom item/revision paths, preventing unnecessary component quantities from being ordered. |
+| Fixed | Costed Manufacturing Order | Corrected planned cost calculations for semi-finished items and added **Planned Resource Cost** information to the **Items** and **Subtotals** tables. |
+| Fixed | Plant Maintenance | The **Parent MI Code** list on **Maintainable Item** now filters its results based on the code entered, making it easier to find the required item. |
+| Fixed | Operation Time Recording | Fixed resource handling when recording time and closing a task for a manufacturing order operation. |
+| Fixed | Quality Control | Fixed the layout of controls on the **Transaction** tab of the QC Test form when the window is enlarged. |
+
 ## CompuTec ProcessForce 3.2608.3
 
 **Release Date: 12 August 2026**
