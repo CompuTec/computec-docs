@@ -4,9 +4,17 @@ sidebar_position: 4
 
 # View Actions
 
-The **View Actions** function of CompuTec WebUp lets you create event-driven logic that runs before or after user actions in the SAP Business One Web Client. Each action is linked to a specific event and processed by CompuTec AppEngine.  
+**View Actions** in **CompuTec WebUp Manager** let you define logic that runs when specific document events occur in the **SAP Business One Web Client**, such as when a document is added or updated.
 
-This function allows key users and administrators to extend the standard behavior of the SAP Web Client **without modifying core SAP objects or source code**.
+A View Action can run before or after the document event and is processed by CompuTec AppEngine. This makes View Actions useful for document-level processes, such as validation or automation.
+
+For example, you can use a View Action to check whether required information is provided before a user updates a Sales Order.
+
+With View Actions, key users and administrators can extend standard SAP Business One Web Client behavior without modifying SAP core objects or source code.
+
+:::note[info]
+**View Actions** respond to document events, such as adding or updating a document. **Smart Actions** respond to interactions with UI controls, such as changing a field or clicking a button. [Read more](/docs/webup/components/smart-actions)
+:::
 
 :::info[Note]
 You can access each CompuTec WebUp function from the **CompuTec WebUp Side Panel inside the SAP Business One Web Client**. Features open only if the current SAP Business One screen supports extensibility.
@@ -18,24 +26,21 @@ The **View Actions** interface in **CompuTec WebUp Manager** has three main sect
 
 - **Details**: Here you’ll find the unique code of your action and a place to type its name. Here you can also make your action active or deactivate it.
 
-  ![screen showing details section of view actions](./media/08-01-interactive-actions-details.png)
+    ![alt text](media/view-act1.png)
 
 - **Triggers**: You can choose to activate your action `Before` or `After` following triggers: `On Update`, `On Add`, `On Cancel` or `On Close`.
 
-  ![screen showing triggers section of view actions](./media/08-02-interactive-actions-triggers.png)
+    ![alt text](media/view-act2.png)
 
-- **Action Script**: It’s the place where you can enter or paste your own JavaScript code. In this section, you can find some helpful elements:
-  - **Templates**: Ready-made logic patterns for common tasks like confirmations, validations, or data retrieval. They give you a quick starting point, so you don’t have to build everything from scratch.
-  - **Parameters**: Values passed during each action to SAP Business One, for example, an event field name. They help to dynamically link action logic with the user interface or underlying database context.
-  - **Snippets**: Small pieces of reusable code that handle simple tasks, like single-line validations, data formatting, or conditional checks. You can use them to customize or extend the default logic.
+- **Action Script**: Use this area to enter or paste JavaScript code that defines the action logic. The **Parameter Helper** provides information about the parameters available for the action, helping you use data from the current SAP Business One context in your script.
 
-  ![screen showing action script section of view actions](media/08-03-interactive-actions-script.png)
+    ![alt text](media/view-act3.png)
 
 :::note[info]
 Each control in SAP Business One Web Client has its **Global Unique Identifier (GUID)**. You can copy it and use it in the script during the **View Actions** creation to precisely reference a control in your SAP Business One interface.  
 To reference controls precisely when building actions, you can use the **Select Control** tool, the right-click **Inspect Element** or **Copy GUID** options.
 
-![screen showing how to copy guid](./media/00-webup-functions-copy-guid.png)
+![alt text](media/ctrl-mgnmt/webup-control-mgmt4.png)
 :::
 
 ## Key features of CompuTec WebUp View Actions
@@ -64,29 +69,31 @@ You can create a warning prompt when a user doesn’t add a project name when up
 
 4. Click **Add Action**.
 
-    ![screen showing how to add a view action](./media/09-interactive-actions-validation-add-action.png)
+    ![alt text](media/add-view-act/add-view-action1.png)
 
-5. Enter the action name.
+5. Enter the action details.
 
-    ![screen showing where to enter the action name](./media/10-interactive-actions-validation-add-action-name.png)
+    ![alt text](media/add-view-act/add-view-action2.png)
 
-6. Choose the trigger for your action. In our case, we choose `Before` in the **On Update** trigger field, because we want to make sure the user won’t save the document without the project name.
+6. Choose the trigger for your action. In our case, we choose `Before` in the **On Update** trigger field, because we want to make sure the user won’t save the document without the contact person.
 
-    ![screen showing how to choose the action trigger](./media/11-interactive-actions-validation-trigger.png)
+    ![alt text](media/add-view-act/add-view-action3.png)
 
-7. Now, it’s time to add our script to the **Action Script** field. In our example, we have a script showing a warning message if a `BP Project` field is empty. If our user clicks `Ok`, then they’ll continue anyway, but if they click `Cancel`, the further processing will be stopped.
+7. Now, it’s time to add our script to the **Action Script** field. In our example, we have a script showing a warning message if a `Contact Person` field is empty.
 
-    ![screen showing the action script field](./media/12-interactive-actions-validation-action-script.png)
+    ![alt text](media/add-view-act/add-view-action4.png)
 
-8. Click **Add Action** to confirm.
+8. Click **Save & Preview** to confirm.
 
-9. Done! Now you can **Preview** and **Activate** it.
+    ![alt text](media/add-view-act/add-view-action4b.png)
 
-      :::note[info]
-      After creating your action, you can test it using **Preview**. This interactive tool lets you validate your logic in real time directly within the SAP Business One Web Client. It helps you check results, confirm parameter values, and fine-tune your action before clicking **Activate** and deploying it.
+9. Now you can test your action in the preview mode.
 
-      ![screen showing preview the view action](./media/08-04-interactive-actions-preview.png)
-      :::
+    ![alt text](media/add-view-act/add-view-action5.png)
+
+10. If you like how it works, **Activate** the action.
+
+    ![alt text](media/add-view-act/add-view-action6.png)
 
 ### Automations
 
@@ -95,43 +102,3 @@ You can build **JavaScript-based automations** that run when specific `View` eve
 The automations can perform tasks such as creating documents through the Service Layer, updating field values, or reacting dynamically to changes on the screen.
 
 ▶ **Watch**: [CompuTec WebUp - Automation - Creating Activities and Actions](https://www.youtube.com/watch?v=VYICWbt62YY&list=PLtT6kgaz5YneoXw5aRFA-SxXwzzB-u4vl&index=6)
-
-#### Automations use case
-
-You can set up an action to automatically post an activity document when the user assigns a project name in the Sales Order document.
-
-Here’s how to do this step by step:
-
-1. Log in to your **SAP Business One Web Client account**.
-
-2. Enter the document you want to work with. In our example it’s `Sales Oder`.
-
-3. In **CompuTec WebUp Manager** extension panel, navigate to **View Details**.
-
-    :::info[note]
-    You must be logged in to your CompuTec AppEngine account to access the CompuTec WebUp browser extension.
-    :::
-
-4. Click **Add Action**.
-
-    ![screen showing how to add an action](./media/14-view-actions-automations-add-action.png)
-
-5. In **Details**, add the action name.
-
-   ![screen showing where to add the action name](./media/15-view-actions-automations-name.png)
-
-6. In **Triggers**, choose `After` from the **On Update** list.
-
-    ![screen showing how to choose action triggers](./media/16-view-actions-automations-trigger.png)
-
-7. In **Action Script**, paste your script.
-
-   ![screen showing how to add an action script](./media/17-view-actions-automations-script.png)
-
-8. Done! Now you can **Preview** and **Activate** your action.
-
-    :::note[info]
-      After creating your action, you can test it using **Preview**. This interactive tool lets you validate your logic in real time directly within the SAP Business One Web Client. It helps you check results, confirm parameter values, and fine-tune your action before clicking **Activate** and deploying it.
-
-      ![screen showing preview the view action](./media/08-04-interactive-actions-preview2.png)
-      :::
