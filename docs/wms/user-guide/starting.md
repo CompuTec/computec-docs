@@ -6,8 +6,6 @@ sidebar_position: 1
 
 CompuTec WMS Client offers various startup options, including server configuration, logging level, and user interface settings, to customize and optimize warehouse management workflows.
 
----
-
 ## Starting CompuTec WMS Settings
 
 1. To run the desktop version of the CompuTec WMS Client, an installation and configuration of the CompuTec WMS Server is required. For further information, click [here](../administrator-guide/installation/wms-server/overview.md).
@@ -128,4 +126,22 @@ Note that opening the Settings form and clicking Save (even without changing any
 5. The main menu window appears.
 The desktop version of CompuTec WMS Client is ready to work with.
 
----
+## Review Pick List notifications
+
+The **Notification Center** displays informational messages and errors related to Pick Lists. Messages are displayed in the Notification Center instead of interrupting users while they work with Pick Lists.
+
+To review notifications:
+
+1. Go to the main screen of **CompuTec WMS Client**.
+2. Click the **Notification Center** icon in the upper-right corner.
+
+    ![alt text](media/notification-center.png)
+
+3. Review the available messages and errors.
+
+:::info[note]
+
+The **Notification Center** icon is available on the main screen of CompuTec WMS Client. It is not displayed when you open a Pick List.
+
+Notifications displayed in the Notification Center are based on entries in the `CT_WMS_ONOT` table related to Pick Lists.
+:::
