@@ -143,5 +143,5 @@ To review notifications:
 
 The **Notification Center icon** is available on the main screen of CompuTec WMS Client. It is not displayed when you open a Pick List.
 
-Notifications displayed in the Notification Center are based on entries in the `CT_WMS_ONOT` table related to Pick Lists.
+Notifications displayed in the Notification Center are based on entries in the `@CT_WMS_ONOT` table related to Pick Lists.
 :::
