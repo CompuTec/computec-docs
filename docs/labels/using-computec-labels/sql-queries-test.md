@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Write and Test SQL Queries
+# SQL Queries Editor
 
 The SQL editor in **Company Object Types** helps you create, format, and test SQL queries used to retrieve data for label printing.
 
