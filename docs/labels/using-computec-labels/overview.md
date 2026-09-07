@@ -31,7 +31,9 @@ CompuTec Labels integrates with **SAP Business One** to support label and report
 
 Depending on the configured scenario, reports can be generated automatically when an applicable event occurs or manually from **SAP Business One**.
 
+:::note[info]
 For examples of supported workflows and instructions for working with labels from **SAP Business One**, see [**SAP Add-on**](/docs/labels/setup/computec-labels-sap-addon).
+:::
 
 ## Work with report rules
 
@@ -42,11 +44,14 @@ Depending on the rule configuration, CompuTec Labels can select the appropriate 
 - Sending the generated report by email.
 - Attaching the generated PDF to the requested document.
 
+:::note[info]
 For more information, see:
 
 - **Configure custom rules in CompuTec Labels**
 - **Send reports by email**
 - **Attach generated PDF reports to requested documents**
+
+:::
 
 ## Work with SQL queries
 
@@ -54,7 +59,9 @@ SQL queries can be used to retrieve data dynamically for label and report proces
 
 CompuTec Labels provides tools for writing, formatting, and testing queries before they are used in your configuration.
 
+:::note[info]
 For more information, see [**Write and Test SQL Queries**](/docs/labels/using-computec-labels/sql-queries-test).
+:::
 
 ## Review and manage requests
 
@@ -67,19 +74,26 @@ You can use it to:
 - Access additional information about individual requests.
 - Remove old requests from the CTLABEL database when they are no longer required.
 
+:::note[info]
 For more information, see:
 
-- **Review label requests**
-- **Clean up old requests in CompuTec Labels**
+- [**Review label requests**](/docs/labels/using-computec-labels/requests/review-requests)
+- [**Clean up old requests in CompuTec Labels**](/docs/labels/using-computec-labels/requests/cleanup-old-requests)
+
+:::
 
 ## Troubleshoot request processing
 
 If a request does not produce the expected result, use **Requests** to identify the request and **Logs** to review its processing information.
 
+:::note[info]
 For more information, see **Troubleshoot request processing with logs**.
+:::
 
 ## Before you start
 
 CompuTec Labels must be installed and configured before you can use the features described in this guide.
 
+:::note[info]
 For information about system configuration, printers, reports, templates, and other administrative settings, see the [**Administrator Guide**](/docs/labels/setup/overview).
+:::

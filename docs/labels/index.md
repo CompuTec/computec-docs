@@ -4,60 +4,55 @@ sidebar_position: 1
 
 # Introduction to CompuTec Labels
 
-Welcome to the CompuTec Labels documentation space. This page provides an overview of the application, including what it does, how it works, and where to go next depending on your needs.
+CompuTec Labels is a label and report printing solution for SAP Business One. It provides centralized tools for configuring printers, reports, templates, and rules that determine how printing requests are processed.
 
-Whether you're getting started for the first time or configuring advanced printing rules, this documentation is organized to support every stage of your journey.
-
----
-
-## What is CompuTec Labels?
-
-CompuTec Labels is a powerful SAP Business One add-on designed to manage label printing across your organization. It allows you to centrally control printing templates, configure printer settings, and automate label generation from within SAP Business One and other CompuTec solutions, including:
+CompuTec Labels can be used with SAP Business One and other CompuTec products, including:
 
 - **CompuTec ProcessForce**
 - **CompuTec WMS**
 - **CompuTec PDC**
 
-CompuTec Labels helps ensure every item is accurately labeled according to your business requirements.
+This guide explains how to install and configure CompuTec Labels and how to use it to process and manage label and report requests.
 
-### Key Capabilities
+## What you can do with CompuTec Labels
 
-- Manage multiple printer types (Crystal, Zebra, Bixolon)
-- Assign templates to specific printers and printing triggers
-- Print labels manually or automatically (e.g., on document add/update)
-- Pull real-time data from SAP Business One and CompuTec applications
-- Set detailed rules for where, when, and by whom labels are printed
-- Maintain consistent labeling standards across the organization
+Depending on your configuration, you can use CompuTec Labels to:
 
-Highly customizable, CompuTec Labels adapts to your specific industry processes.
+- Configure printers and printer types
+- Configure reports and label templates
+- Define rules that determine which report and printer are used for a request
+- Generate and print labels and reports manually or automatically
+- Retrieve data from SAP Business One for use in labels and reports
+- Send generated reports by email
+- Attach generated PDF reports to requested documents
+- Review label requests and their processing status
+- Use logs to investigate request processing
 
----
+## How CompuTec Labels works
 
-## How It Works (Conceptual Overview)
+CompuTec Labels processes requests according to the configuration defined for an SAP Business One company database.
 
-Here’s a simplified breakdown of how the system operates:
+A typical configuration includes:
 
-- **Choose a Company**: Configure settings per SAP Business One company database.
-- **Define Printing Rules**: Specify when and how labels should be printed.
-- **Assign Templates**: Link templates to rules and printer types.
-- **Set Trigger Events**: Choose to print manually or on system events like document updates.
-- **Map Label Content**: Use mapping tables to define what data appears on each label.
-- **Track and Audit**: Monitor operations via logs and print request history.
+1. **Configure a company** – Add and configure the SAP Business One company database that will use CompuTec Labels.
+2. **Configure printers** – Define the printer types and printers available for processing requests.
+3. **Configure reports and templates** – Prepare the reports and templates used to generate labels and other output.
+4. **Configure report rules** – Define which reports and printers should be used for specific requests and conditions.
+5. **Process requests** – Generate labels or reports manually or automatically, depending on the configured scenario.
+6. **Review processing** – Use **Requests** and **Logs** to review processing information and investigate unexpected results.
 
-👉 Learn more about the setup: [Installation and Configuration](./setup/overview.md)
+## Get started
 
----
+If you are installing or configuring CompuTec Labels, start with the [**Administrator Guide**](/docs/labels/setup/overview).
 
-## Quick Start (Tutorial)
+If CompuTec Labels is already configured and you want to learn how to work with labels, reports, rules, and requests, see the [**User Guide**](/docs/labels/using-computec-labels/overview).
 
-New to CompuTec Labels? Start here:
+:::note[Info]
 
-🎥 [Watch a video overview of installation and setup](https://www.youtube.com/watch?v=S5urmvsi-M0)
+Watch the video to see how CompuTec Labels works: [CompuTec Labels video](https://www.youtube.com/watch?v=S5urmvsi-M0).
 
-This is the best place to begin your journey with the application, especially if you're installing or configuring it for the first time.
+:::
 
----
+## Getting help
 
-Need help or something missing? Reach out to your system administrator or CompuTec Support for further assistance.
-
----
+If you experience a problem with CompuTec Labels, contact your system administrator or visit [**CompuTec Support Portal**](https://support.computec.pl/servicedesk/customer/portals).
