@@ -86,7 +86,7 @@ To create a Smart Action, follow these steps:
 
 9. Enter your **Script**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-7.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](media/smart-actions/smart-action2.png)
 
     :::note[info]
     You can **right-click inside the script** editor to insert ready-made snippets such as ``show confirmation``, ``create activity``, or ``get table row by key``.
@@ -95,9 +95,9 @@ To create a Smart Action, follow these steps:
 
     :::
 
-10. Add parameters to your script using the following syntax: ``${action.Parameters.parameter_name}``. Replace ``parameter_name`` with the name of your parameter. In our example, we use ``DocNum`` as the **Parameter Name**.
+10. Add parameters to your script using the following syntax: `actionParameters.<parameter_name>`. Replace ``parameter_name`` with the name of your parameter. In our example, we use ``DocNum`` as the **Parameter Name**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-911.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](media/smart-actions/smart-action3.png)
 
 11. Click **Add Smart Action**.
 

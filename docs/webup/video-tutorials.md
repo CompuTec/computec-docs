@@ -31,3 +31,7 @@ Here you’ll find videos that explain specific CompuTec WebUp features and show
 - [▶ **CompuTec WebUp - Automation - Creating Activities and Actions**](https://www.youtube.com/watch?v=VYICWbt62YY): Learn how to create automations, including an example where the system automatically generates a follow-up activity based on specific conditions.
 
 - [▶ **CompuTec WebUp - Highlighting Fields with Colour**](https://www.youtube.com/watch?v=ufN3qK_F1aY): Learn how to highlight chosen fields with color using dynamic control management mode.
+
+- [▶ **CompuTec WebUp - Preventing Duplicate VAT Numbers in SAP Business One Business Partner Master Data**](https://www.youtube.com/watch?v=mdtg99BfHvc): Learn how to use a CompuTec WebUp **Smart Action** to detect duplicate VAT numbers and prevent users from saving a Business Partner with an existing VAT number.
+
+- [▶ **CompuTec WebUp - Navigating to other Views & Reports**](https://www.youtube.com/watch?v=L4jY3st069Q): Learn how to use CompuTec WebUp to add a custom Reports menu that opens reports for the current item using dynamic Item Code values and **Smart Actions**.
