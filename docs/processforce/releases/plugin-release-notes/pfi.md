@@ -6,6 +6,14 @@ sidebar_position: 13
 
 Below are the release notes for CompuTec Data Import & Export (PFI) Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec PFI 3.2609.1
+
+**Release Date: 7 September 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Fixed | Bill of Materials | Fixed an issue when uploading multiple **Bills of Materials** from a single Excel file. The upload now completes correctly without incorrectly reporting that an item revision does not exist. |
+
 ## CompuTec PFI 3.2608.1
 
 **Release Date: 13 August 2026**
