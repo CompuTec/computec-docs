@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Start and Configure CompuTec WMS Client
+# Configure CompuTec WMS Client
 
 **CompuTec WMS Client** connects warehouse users to **CompuTec WMS Server** and provides access to warehouse operations.
 
@@ -32,7 +32,7 @@ For more information, see [CompuTec WMS Server](/docs/wms/administrator-guide/in
     When you start CompuTec WMS Client **for the first time**, configure the connection to CompuTec WMS Server **before logging in**. [Read more](/docs/wms/administrator-guide/installation/wms-server/overview).
     :::
 
-3.Configure the required settings using the following tabs
+3. Configure the required settings using the following tabs
 
     - **General**
     - **Options**

@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 ---
 
-# CompuTec WMS Client Download
+# Download CompuTec WMS Client
 
 This guide will walk you through the steps to download and install the CompuTec WMS Client on your preferred device.
 
@@ -23,7 +23,7 @@ This will redirect you to the download page where you can easily download the re
         ![Download](./media/download.png)
 
     :::note
-    You can download a required Client file directly to the device from [here](/docs/wms/releases/download).
+    You can download a required Client file directly to the device from [this link](/docs/wms/releases/download).
     :::
 
 3. Alternatively locate the installation files directly on the machine where the CompuTec WMS Server is installed.
