@@ -39,7 +39,7 @@ Once the core components are set up, follow these steps to enable Serialization 
 
 ### CompuTec WMS
 
-    1. Enter (10) Computec AppEngine address in [WMS Server](/docs/wms/administrator-guide/installation/wms-server/overview/) settings:
+    1. Enter (10) Computec AppEngine address in [WMS Server](/docs/wms/administrator-guide/installation/wms-server/overview) settings:
 
         ![CompuTec AppEngine Address (in WMS server settings)](./media/serialization/wms-settings.png)
 

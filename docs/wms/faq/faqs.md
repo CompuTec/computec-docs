@@ -100,7 +100,7 @@ Once this setting is disabled, barcode data will correctly populate the designat
 
 ### <i>**I have purchased a license. How can I obtain the license file?**</i>
 
-You should create an issue on the CompuTec WMS Support page on support.computec to get the license you purchased [here](https://support.computec.pl/projects/SWMS/welcome-guide). Providing accurate information to CompuTec Support will shorten the response time; thus, please check what data are required – check [here](../administrator-guide/installation/wms-licensing.md).
+You should create an issue on the CompuTec WMS Support page on support.computec to get the license you purchased [here](https://support.computec.pl/projects/SWMS/welcome-guide). Providing accurate information to CompuTec Support will shorten the response time; thus, please check what data are required – check [here](/docs/wms/administrator-guide/installation/wms-licensing).
 
 ## No bins defined in warehouses
 

@@ -15,7 +15,7 @@ In **CompuTec WMS Client**, you can configure connection details, printers, scal
 Make sure **CompuTec WMS Server** is installed and configured.
 
 :::note[info]
-For more information, see [CompuTec WMS Server](/docs/wms/administrator-guide/installation/wms-server/overview.).
+For more information, see [CompuTec WMS Server](/docs/wms/administrator-guide/installation/wms-server/overview).
 :::
 
 ## Start CompuTec WMS Client
@@ -223,7 +223,7 @@ Select the checkbox for a transaction if users should select a warehouse when pr
 If you want to use a default warehouse instead, clear the checkbox for the required transaction and specify the warehouse.
 
 :::note[info]
-For more information, see [Client Settings – Warehouses](../user-guide/client-settings-warehouses/overview).
+For more information, see [Client Settings – Warehouses](/docs/wms/user-guide/client-settings-warehouses/overview).
 :::
 
 ## Configure scanner settings
@@ -280,7 +280,7 @@ After configuring the client, log in to start working with CompuTec WMS.
     If a barcode is assigned to the terminal user, you can scan the barcode to log in.
 
     :::note[info]
-    For information about creating terminal users and licensing, see [CompuTec WMS Licensing](../administrator-guide/installation/wms-licensing).
+    For information about creating terminal users and licensing, see [CompuTec WMS Licensing](/docs/wms/administrator-guide/installation/wms-licensing).
     :::
 
 3. Click **Log in**.
