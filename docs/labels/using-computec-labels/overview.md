@@ -47,9 +47,9 @@ Depending on the rule configuration, CompuTec Labels can select the appropriate 
 :::note[info]
 For more information, see:
 
-- **Configure custom rules in CompuTec Labels**
-- **Send reports by email**
-- **Attach generated PDF reports to requested documents**
+- [**Configure report rules in CompuTec Labels**](/docs/labels/using-computec-labels/reports/config-report-rules)
+- [**Send reports by email**](/docs/labels/using-computec-labels/reports/send-reports)
+- [**Attach generated PDF reports to requested documents**](/docs/labels/using-computec-labels/reports/attach-reports-to-docs)
 
 :::
 

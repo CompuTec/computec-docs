@@ -68,14 +68,11 @@ To install CompuTec AppEngine, follow these steps:
     ![opened appengine page](./media/installation/04-appengine-install-page.png)
 
     :::note[info]
-    CompuTec AppEngine starts in either **production mode** or **installation mode**, depending on the system state.  
-    CompuTec AppEngine enters **installation mode** when:
-    - It can’t connect to the database server storing the CompuTec AppEngine configuration.
-    - The configuration database doesn’t exist.
-    - The configuration database requires an upgrade.
-    - You've updated CompuTec AppEngine to the latest version and now you need to complete the database configuration and update connected companies.
+        If the CompuTec AppEngine page does not open automatically, you can open it **manually** at [https://localhost:54001](https://localhost:54001).
 
-    If the CompuTec AppEngine page does not open automatically, you can open it **manually** at [https://localhost:54001](https://localhost:54001).
+        Your browser may show a warning that the connection is not secure. If you see this warning, can safely continue to `localhost` because CompuTec AppEngine is running locally on your computer.
+
+        ![alt text](media/safety1.png)
     :::
 
 ## Step 2: Set up CompuTec AppEngine database
