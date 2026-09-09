@@ -46,8 +46,8 @@ Below are the release notes for CompuTec Data Import & Export (PFI) Plugin, high
 | Issue Type | Component/s | Release Note |
 | --- | --- | --- |
 | Improvement | PFI | Added display of success and failure counts during PFI import to SAP. |
-| Improvement | PFI | Enable automatic download of “ImportReport” in PFI when the remote desktop session disconnects or CompuTec AppEngine token expires. |
-| Bug | PFI | Fixed error "The node count limit of '100' has been exceeded" occurring during data load in PFI. |
+| Improvement | PFI | Enable automatic download of **ImportReport** in PFI when the remote desktop session disconnects or CompuTec AppEngine token expires. |
+| Bug | PFI | Fixed error `The node count limit of '100' has been exceeded` occurring during data load in PFI. |
 
 ## CompuTec PFI 4.3509.1
 
@@ -65,7 +65,7 @@ Below are the release notes for CompuTec Data Import & Export (PFI) Plugin, high
 | - | - | - |
 | Bug | .netCore | Deleting a specific key in PFI Import Keys does not work |
 | Bug | CompuTec AppEngine Core, PFI | Failure message does not appear in red color |
-| Improvement | PFI | Provide possibility to explicitly mention "Withdefaults" in PFI |
+| Improvement | PFI | Provide possibility to explicitly mention **Withdefaults** in PFI |
 | Bug | PFI | Missing translation for the new column label addDefaultLinesLabel in PFI |
 
 ## CompuTec PFI 3.2504.2
