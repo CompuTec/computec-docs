@@ -147,7 +147,7 @@ To assign the **OpenTelemetry** profile to the **Computec AppEngine company**, f
 
 10. Restart **Sap Business One** to see the changes.
 
-## View the OpenTelemetry Profiles and Logs
+## Explore the OpenTelemetry Profiles and Logs
 
 1. In Grafana, click **Launch Grafana Cloud**.
 
@@ -165,10 +165,19 @@ To assign the **OpenTelemetry** profile to the **Computec AppEngine company**, f
 
     ![alt text](media/grafana/stack3.png)
 
-4. Done! Now you can explore telemetry.
+4. When viewing traces, use **Service Name** to filter the results by service.  
+    Available service names depend on your environment and configuration.
 
     ![grafana explorer](media/grafana/stack4.png)
 
-    **Service Name** - Under the Resource section, locate and input the User Name and Database Id to ensure accurate telemetry tracking.
-        - ``Computec.AppEngine.Host`` – CompuTec AppEngine Service
-        - ``Computec.Start`` – SAP Business One Plugin Activity
+:::note[info]
+To further narrow the results by **User Name** or **Database ID**, use the **Tags** filter. Select resource, then select the required attribute and value.
+:::
+
+## Export log data from Grafana
+
+You can export log data from Grafana when needed, for example, for further analysis or troubleshooting.
+
+:::note[info]
+For instructions, see the [Grafana documentation](https://grafana.com/docs/grafana/latest/visualizations/explore/logs-integration/#download-log-lines).
+:::
