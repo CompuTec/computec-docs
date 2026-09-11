@@ -20,15 +20,15 @@ Review which requests you want to remove before starting the cleanup.
 
 1. In **CompuTec Labels Printing Manager**, go to **Requests**.
 
-    ![alt text](media/labels-requests-cleanup1.png)
+    ![CompuTec Labels Printing Manager with Requests selected and the request list displayed](media/labels-requests-cleanup1.png)
 
 2. Right-click inside the area of the **Requests** window and select **Request Cleanup Wizard**.
 
-    ![alt text](media/labels-requests-cleanup2.png)
+    ![Requests window context menu with Request Cleanup Wizard selected](media/labels-requests-cleanup2.png)
 
 3. In the **Request Cleanup Wizard**, define the filters for the requests that you want to remove.
 
-    ![alt text](media/labels-requests-cleanup3.png)
+    ![Request Cleanup Wizard filter screen with fields for request dates, IDs, company database, requester, printer, status, and report status](media/labels-requests-cleanup3.png)
 
     You can filter requests by:
 
@@ -46,11 +46,11 @@ Review which requests you want to remove before starting the cleanup.
 
 4. Click **Preview**.
 
-    ![alt text](media/labels-requests-cleanup4.png)
+    ![Request Cleanup Wizard filter screen with the Preview button](media/labels-requests-cleanup4.png)
 
 5. The **Records to be deleted** section displays the requests that match the specified filters.
 
-    ![alt text](media/labels-requests-cleanup5.png)
+    ![Request Cleanup Wizard preview showing matching requests in the Records to be deleted section](media/labels-requests-cleanup5.png)
 
     :::info[Note]
     The preview displays a maximum of 2,000 records. If more than 2,000 requests match the filters, the cleanup operation still applies to all matching records.
@@ -58,21 +58,21 @@ Review which requests you want to remove before starting the cleanup.
 
 6. Review the records and click **Next**.
 
-    ![alt text](media/labels-requests-cleanup6.png)
+    ![Request Cleanup Wizard preview with matching requests listed and the Next button](media/labels-requests-cleanup6.png)
 
 7. Review the cleanup confirmation. The wizard displays the number of requests that will be permanently deleted.
 
 8. Enter `CONFIRMED` in the confirmation field.
 
-    ![alt text](media/labels-requests-cleanup7.png)
+    ![Request Cleanup Wizard confirmation screen with the deletion count and confirmation field](media/labels-requests-cleanup7.png)
 
 9. Click **CLEANUP**.
 
-    ![alt text](media/labels-requests-cleanup8.png)
+    ![Request Cleanup Wizard confirmation screen with confirmation entered and the CLEANUP button](media/labels-requests-cleanup8.png)
 
 10. When the cleanup is complete, click **OK**.
 
-    ![alt text](media/labels-requests-cleanup9.png)
+    ![Cleanup completion dialog showing the number of deleted requests, the CSV backup file location, and the OK button](media/labels-requests-cleanup9.png)
 
 ## Result
 

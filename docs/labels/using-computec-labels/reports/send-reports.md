@@ -24,23 +24,23 @@ To enable email sending, follow these steps:
 1. In **CompuTec Labels Printing Manager**, go to **Companies**.
 2. Select the company that you want to configure and click **Edit Report Rules**.
 
-    ![alt text](../media/send-email/labels-edit-rule19.png)
+    ![Companies screen with the selected company context menu open and Edit Report Rules highlighted](../media/send-email/labels-edit-rule19.png)
 
 3. Select an existing rule and click **Edit**, or add a new rule. [Read more](/docs/labels/using-computec-labels/reports/config-report-rules)
 
-    ![alt text](../media/send-email/labels-edit-rule20.png)
+    ![Report Rules window with an existing rule selected](../media/send-email/labels-edit-rule20.png)
 
 4. Enable **Send PDF to Email Recipient**.
 
-    ![alt text](../media/send-email/labels-edit-rule21.png)
+    ![Report rule settings with Send PDF to Email Recipient enabled](../media/send-email/labels-edit-rule21.png)
 
 5. Click **Edit** to configure the email settings.
 
-    ![alt text](../media/send-email/labels-edit-rule22.png)
+    ![Report rule window with the email settings Edit button highlighted](../media/send-email/labels-edit-rule22.png)
 
 6. Select the email account that you want to use.
 
-    ![alt text](../media/send-email/labels-edit-rule23.png)
+    ![Email settings window with an email account selected](../media/send-email/labels-edit-rule23.png)
 
 7. Configure the following fields:
 
@@ -56,15 +56,15 @@ To enable email sending, follow these steps:
 
 8. Click **Update** to save the configuration.
 
-    ![alt text](../media/send-email/labels-edit-rule24.png)
+    ![Email settings window with the Update button available to save changes](../media/send-email/labels-edit-rule24.png)
 
 9. Click **Close**.
 
-    ![alt text](../media/send-email/labels-edit-rule25.png)
+    ![Email settings window with the Close button available](../media/send-email/labels-edit-rule25.png)
 
 10. Click the **save icon** to save your configuration.
 
-    ![alt text](../media/send-email/labels-edit-rule26.png)
+    ![Report Rules window with the save icon highlighted](../media/send-email/labels-edit-rule26.png)
 
 ### Configure multiple recipients
 
@@ -84,14 +84,14 @@ You can also retrieve recipients using an SQL query:
 
 1. Click the **three-dot icon** next to the chosen field.
 
-    ![alt text](../media/send-email/labels-edit-rule27.png)
+    ![Email recipient field with the three-dot query button highlighted](../media/send-email/labels-edit-rule27.png)
 
 2. Enter an SQL query returning multiple email addresses as a single semicolon-separated value:
 
     ``SELECT 'e-mail-01@domain.com; e-mail-02@domain.com' FROM DUMMY``
 3. Click **Update**.
 
-    ![alt text](../media/send-email/labels-edit-rule27.png)
+    ![Query editor for entering a recipient SQL query](../media/send-email/labels-edit-rule27.png)
 
 :::note[info]  
 
@@ -127,7 +127,7 @@ To add a document parameter to an SQL query, follow these steps:
 
 1. Click the **three-dot icon** to open the query editor for the required field, for example, **To**.
 
-    ![alt text](../media/send-email/labels-edit-rule27.png)
+    ![Email recipient field with the three-dot query button highlighted](../media/send-email/labels-edit-rule27.png)
 
 2. Enter your SQL query.
 3. Use the required document parameter in the query, for example, `@DocEntry`.
@@ -144,19 +144,19 @@ To check the available parameters for an object type, follow these steps:
 1. Go to **Companies**.  
 2. Right-click the required company and select **Edit Settings**.
 
-    ![alt text](../media/send-email/labels-edit-rule30.png)
+    ![Companies screen context menu with Edit Settings selected](../media/send-email/labels-edit-rule30.png)
 
 3. Find the required object type in the list.
 
-    ![alt text](../media/send-email/labels-edit-rule31.png)
+    ![Company settings window showing the list of object types](../media/send-email/labels-edit-rule31.png)
 
 4. Right-click the object type and select **Edit Queries**.
 
-    ![alt text](../media/send-email/labels-edit-rule32.png)
+    ![Object type context menu with Edit Queries selected](../media/send-email/labels-edit-rule32.png)
 
 5. Review the available queries and parameters for the selected object type.
 
-    ![alt text](../media/send-email/labels-edit-rule33.png)
+    ![Queries window showing available queries and document parameters](../media/send-email/labels-edit-rule33.png)
 
 You can use the listed parameters when creating SQL queries for email recipients and content.
 

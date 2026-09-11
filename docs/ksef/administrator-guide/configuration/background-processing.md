@@ -20,16 +20,16 @@ Before you configure background processing:
 
 1. In the **CompuTec AppEngine Administration Panel**, go to **Background Processing** > **Configuration**.
 
-    ![alt text](media/backgr-process/ksef-config-29.png)
+    ![CompuTec AppEngine Administration Panel with Background Processing selected in the left navigation and Configuration selected beneath it](media/backgr-process/ksef-config-29.png)
 
 2. In **Job ID**, enter `ksef`.
 
-    ![alt text](media/backgr-process/ksef-config-30a.png)
+    ![Background Processing configuration page with the Job ID filter field ready for entering ksef](media/backgr-process/ksef-config-30a.png)
 
 3. Select **Contains**.
 4. Click **Go**.
 
-    ![alt text](media/backgr-process/ksef-config-30b.png)
+    ![Background Processing job list filtered for KSeF jobs after selecting Contains and clicking Go](media/backgr-process/ksef-config-30b.png)
 
 The list displays KSeF-related background processing jobs.
 
@@ -63,7 +63,9 @@ We recommend enabling this job.
 
 Automatically sends documents with successfully generated XML files to KSeF according to the configured schedule.
 
+:::note[info]
 Enable this job if you want to send documents automatically.
+:::
 
 ### CT Ksef Send Documents To KSeF
 
@@ -71,9 +73,11 @@ Enable this job if you want to send documents automatically.
 
 Sends documents to KSeF manually.
 
+:::note[info]
 Use this job when an administrator needs to start the sending process manually.
 
 You normally do not need this job for regular processing when **Send Documents To KSeF (Cron)** is configured.
+:::
 
 ### ComputecKseF-Re-GeneracjaXML
 
@@ -81,7 +85,9 @@ You normally do not need this job for regular processing when **Send Documents T
 
 Regenerates XML files manually.
 
+:::note[info]
 Use this job when an XML file was not generated as expected and you need to generate it again.
+:::
 
 ## Configure recovery jobs
 
@@ -123,7 +129,9 @@ Complete this section if you use CompuTec KSeF to retrieve incoming documents.
 
 Retrieves incoming documents from KSeF manually.
 
+:::note[info]
 Use this job when an administrator needs to retrieve documents without waiting for the scheduled process.
+:::
 
 ### Get Documents from Ksef (recurrency)
 
@@ -131,7 +139,9 @@ Use this job when an administrator needs to retrieve documents without waiting f
 
 Automatically retrieves incoming documents from KSeF according to a configured schedule.
 
+:::note[info]
 Enable this job if you want CompuTec KSeF to retrieve incoming documents automatically.
+:::
 
 ### KSeF Draft Document Detector
 
@@ -141,7 +151,9 @@ Monitors changes to SAP Business One draft documents created from incoming KSeF 
 
 When a draft changes, the job updates the related incoming document when required.
 
+:::note[info]
 We recommend enabling this job when you process incoming KSeF documents.
+:::
 
 ### KSeF Target Document Detector
 
@@ -151,7 +163,9 @@ Detects when a final SAP Business One document is created from a KSeF draft.
 
 The job updates the related incoming document, including its status and link to the final SAP Business One document.
 
+:::note[info]
 We recommend enabling this job when you process incoming KSeF documents.
+:::
 
 ### KSeF Target Document Scanner
 
@@ -161,7 +175,9 @@ Periodically checks for final SAP Business One documents created from KSeF draft
 
 This job provides an additional check if **KSeF Target Document Detector** does not detect a document.
 
+:::note[info]
 We recommend enabling this job. In the example configuration, it runs every 30 minutes.
+:::
 
 ## Enable a background processing job
 
@@ -169,17 +185,17 @@ Enable each required **Event** and **Time** job for the company:
 
 1. Click the job name.
 
-    ![alt text](media/backgr-process/ksef-config-35.png)
+    ![Background Processing jobs list with a job name selected to open its configuration](media/backgr-process/ksef-config-35.png)
 
 2. In **Assignments**, find the company.
 
 3. Turn on **Enabled** for the company.
 
-    ![alt text](media/backgr-process/ksef-config-31.png)
+    ![Job configuration Assignments section showing a company row and its Enabled control](media/backgr-process/ksef-config-31.png)
 
 4. Click **Yes** to confirm.
 
-    ![alt text](media/backgr-process/ksef-config-37.png)
+    ![Confirmation dialog asking whether to enable the background processing job with a Yes option](media/backgr-process/ksef-config-37.png)
 
 :::info[Note]  
 You do not need to restart CompuTec AppEngine after changing background processing settings. Changes to enabled jobs and schedules take effect without restarting the service.
@@ -195,15 +211,15 @@ To change a schedule:
 
 1. In **Assignments**, click the arrow next to the company.
 
-    ![alt text](media/backgr-process/ksef-config-38.png)
+    ![Job configuration Assignments section with the arrow next to a company row for expanding company settings](media/backgr-process/ksef-config-38.png)
 
 2. Click **Cron Expression**.
 
-    ![alt text](media/backgr-process/ksef-config-39.png)
+    ![Expanded company assignment settings with the Cron Expression option visible](media/backgr-process/ksef-config-39.png)
 
 3. Enter the required Quartz cron expression.
 
-    ![alt text](media/backgr-process/ksef-config-40.png)
+    ![Cron Expression field in the company assignment settings for entering a Quartz cron schedule](media/backgr-process/ksef-config-40.png)
 
 4. Optionally, enter a **Cron Description**.
 5. Click **OK**.

@@ -20,12 +20,12 @@ To review the requests, follow these steps:
 
 2. Go to **Requests**.
 
-    ![alt text](media/labels-requests-2.png)
+    ![CompuTec Labels Printing Manager with Requests selected in the left navigation. The main pane displays a request table with Result Limit, Date, and Request Details filters, plus columns including Request Id, CompanyDatabase, Requester, Status, ReportSt, TransactionType, Printer, Employee, User, and Doc Type.](media/labels-requests-2.png)
 
 3. Find the request that you want to review.  
     You can use the available filters to narrow down the displayed requests.
 
-    ![alt text](media/labels-requests-3.png)
+    ![CompuTec Label Printing Manager displays the Requests page. A large blue arrow points to the Requests item in the left navigation. The main pane shows filters for Result Limit, Date, and Request Details, followed by a request table with columns Request Id, CompanyDatabase, Requester, Status, ReportSt, TransactionType, Printer, Employee, User, and Doc Type. The table lists requests 191537 through 191541, with statuses Finished and Zero results.](media/labels-requests-3.png)
 
 4. Review the information available for the request.
 

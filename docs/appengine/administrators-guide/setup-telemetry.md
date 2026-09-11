@@ -143,7 +143,7 @@ To assign the **OpenTelemetry** profile to the **Computec AppEngine company**, f
 
 9. Type the **user name**, click the **edit icon** to assign the chosen **Telemetry Profile**, and click **Create Assignment**.
 
-    ![alt text](media/grafana/gr-con7.png)
+    ![Assign User Telemetry Profile dialog showing the username manager and the grafana.com_all telemetry profile; the Create Assignment button is highlighted by a large blue arrow, with the company details and Telemetry Profiles section visible in the background](media/grafana/gr-con7.png)
 
 10. Restart **Sap Business One** to see the changes.
 

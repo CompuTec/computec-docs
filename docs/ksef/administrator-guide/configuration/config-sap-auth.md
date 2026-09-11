@@ -22,11 +22,11 @@ To open KSeF authorizations, follow these steps:
 
 1. In **SAP Business One**, go to **Administration** > **System Initialization** > **Authorizations** > **General Authorizations**.
 
-   ![alt text](media/config-sap-auth/ksef-config-41.png)
+   ![SAP Business One General Authorizations window open from Administration > System Initialization > Authorizations, with the General Authorizations menu item highlighted in the left navigation. The window shows Users and Groups tabs, a Find Next search field, and a Subject list containing General, Customization Tools, Administration, Financials, Sales - A/R, Purchasing - A/P, Analytics, and other authorization categories.](media/config-sap-auth/ksef-config-41.png)
 
 2. Search for KSeF.
 
-   ![alt text](media/config-sap-auth/ksef-config-42.png)
+   ![SAP Business One Authorizations window with ksef entered in the Find Next search field and the matching CompuTec.KSeF subject highlighted. The authorization list also shows Plugins, KSeF Output Invoice, KSeF Input Invoice, and KSeF Category. The Administration navigation pane is visible on the left with General Authorizations selected.](media/config-sap-auth/ksef-config-42.png)
 
 SAP Business One displays the KSeF-related authorizations.
 
@@ -91,6 +91,6 @@ Depending on your company's process, users can now:
 - Send outgoing invoices to KSeF.
 - Retrieve and process incoming KSeF documents, if incoming document processing is configured.
 
-See **Send Outgoing Invoices to KSeF** for information about sending sales invoices.
+See [**Send Outgoing Invoices to KSeF**](/docs/ksef/user-guide/outgoing-invoices/send-outgoing-inv) for information about sending sales invoices.
 
 If your company uses incoming document processing, see the CompuTec KSeF documentation for working with incoming invoices.

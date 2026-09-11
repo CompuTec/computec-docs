@@ -30,21 +30,21 @@ To view KSeF sessions, follow these steps:
 
 1. Log in to the **CompuTec AppEngine Launchpad**.
 
-    ![alt text](media/view-sessions/ksef-launchpad1.png)
+    ![CompuTec AppEngine login screen with the Launchpad workspace selected and a Log in with SAP Business One button](media/view-sessions/ksef-launchpad1.png)
 
 2. Choose the company and log in.
 
 3. Open **CompuTec KSeF**.
 
-    ![alt text](media/view-sessions/ksef-launchpad5.png)
+    ![CompuTec AppEngine Launchpad with the CompuTec KSeF application tile highlighted](media/view-sessions/ksef-launchpad5.png)
 
 4. Select **Sessions**.
 
-    ![alt text](media/view-sessions/sessions1.png)
+    ![CompuTec KSeF Launchpad with the Sessions tile highlighted alongside the Output Invoices, Input Invoices, and Categories tiles](media/view-sessions/sessions1.png)
 
 5. The **Sessions** list displays the KSeF sessions created when outgoing invoices are sent.
 
-    ![alt text](media/view-sessions/sessions2.png)
+    ![Sessions page displaying the list of KSeF sessions](media/view-sessions/sessions2.png)
 
 ## Find a session
 
@@ -59,7 +59,7 @@ To add date filters or change which filters are displayed:
 
 1. Click **Adapt Filters**.
 
-    ![alt text](media/view-sessions/sessions3.png)
+    ![Sessions page with the Adapt Filters control](media/view-sessions/sessions3.png)
 
 2. Select the filters you want to display.
 
@@ -69,7 +69,7 @@ To add date filters or change which filters are displayed:
     - **Date From**
     - **Date To**
 
-    ![alt text](media/view-sessions/sessions4.png)
+    ![Filter selection dialog with Session Reference, Session Status, Date From, and Date To options](media/view-sessions/sessions4.png)
 
     :::note[Info]
     **Date From** and **Date To** filters are useful when you want to review sessions created or processed during a particular period.
@@ -82,7 +82,7 @@ To add date filters or change which filters are displayed:
     :::note[info]
     Use **Clear** to remove the entered filter values and display the sessions without the applied criteria.
 
-        ![alt text](media/view-sessions/sessions6.png)
+        ![Sessions page with the Clear control for removing filter values](media/view-sessions/sessions6.png)
     :::
 
 ## Review the Sessions list
@@ -127,13 +127,13 @@ To review a session. follow these steps:
 
 1. Open **Sessions**.
 
-    ![alt text](media/view-sessions/sessions1.png)
+    ![CompuTec KSeF Launchpad with the Sessions tile highlighted](media/view-sessions/sessions1.png)
 
 2. Find the session you want to review.
 
 3. Click the session to open its details.
 
-    ![alt text](media/view-sessions/sessions7.png)
+    ![Sessions list with a KSeF session selected to open its details](media/view-sessions/sessions7.png)
 
 At the top of the page, you can quickly check:
 
@@ -204,7 +204,7 @@ Use this section to review general session information, including:
     - **Processing Status**
     - Whether the **session was closed**.
 
-    ![alt text](media/view-sessions/sessions8.png)
+    ![Session details Basic Information section showing the session identifiers, status, stage, type, and processing information](media/view-sessions/sessions8.png)
 
 ### Session Information
 
@@ -214,13 +214,13 @@ Use this section to review information assigned to the KSeF session, including:
     - **KSeF UPO**
     - **Invoice counts**
 
-    ![alt text](media/view-sessions/sessions9.png)
+    ![Session details Session Information section showing the reference number, correlation ID, KSeF UPO, and invoice counts](media/view-sessions/sessions9.png)
 
 ### Timestamps
 
 Use this section to review when different session events occurred.
 
-    ![alt text](media/view-sessions/sessions10.png)
+    ![Session details Timestamps section showing dates for session processing events](media/view-sessions/sessions10.png)
 
 Depending on the processing stage, the available dates can include:
 
@@ -236,7 +236,7 @@ These timestamps can help you determine when the session was sent and when it wa
 
 Use the **Invoices** section to review the outgoing invoices included in the session.
 
-    ![alt text](media/view-sessions/sessions11.png)
+    ![Session details Invoices section listing the outgoing invoices included in the session](media/view-sessions/sessions11.png)
 
 For each invoice, you can check information such as:
 
@@ -297,7 +297,7 @@ You can also access session information when reviewing an outgoing invoice.
 
 1. Open **Output Invoices**.
 
-    ![alt text](media/view-sessions/ksef-launchpad7.png)
+    ![CompuTec KSeF Launchpad with the Output Invoices tile](media/view-sessions/ksef-launchpad7.png)
 
 2. Open the required invoice.
 
@@ -305,11 +305,11 @@ You can also access session information when reviewing an outgoing invoice.
 
 4. Open the related session to review the complete sending process.
 
-    ![alt text](media/view-sessions/sessions12.png)
+    ![Outgoing invoice details showing the related KSeF session information](media/view-sessions/sessions12.png)
 
 5. An invoice also contains **Session History**, which lets you review its session assignments. This is useful when an invoice was included in more than one sending attempt.
 
-    ![alt text](media/view-sessions/sessions13.png)
+    ![Outgoing invoice details showing the invoice's Session History](media/view-sessions/sessions13.png)
 
 :::note[Info]
 See [**View Outgoing Invoices**](/docs/ksef/user-guide/outgoing-invoices/view-outgoing-invo) for more information.

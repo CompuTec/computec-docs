@@ -22,25 +22,25 @@ Before you configure incoming document categories:
 
 1. In SAP Business One, go to **Purchasing A/P** > **KSeF – Incoming Documents**.
 
-   ![alt text](media/doc-categ-config/ksef-config-43.png)
+   ![SAP Business One Purchasing A/P menu open with Ksef - dokumenty przychodzące highlighted near the bottom of the submenu. The desktop interface shows the Purchasing A/P navigation menu over a blue welcome screen, with a large blue arrow pointing toward the highlighted menu option.](media/doc-categ-config/ksef-config-43.png)
 
 2. Open **Categories**.
 
-   ![alt text](media/doc-categ-config/ksef-config-44.png)
+   ![KSeF Home dashboard showing tiles for Output Invoices, Input Invoices, Sessions, and Categories; a large blue left-pointing arrow highlights the Categories tile in the lower-left area, which is labeled Manage invoice categories](media/doc-categ-config/ksef-config-44.png)
 
 3. Click the category you want to configure.
 
-   ![alt text](media/doc-categ-config/ksef-config-45.png)
+   ![KSeF Categories screen listing two categories, PURCHASE_SERVICE and PURCHASE_ITEMS, with columns for Code, Description, Active, Card Type, Default Doc Type, Default Doc Sub Type, and Auto Create BP; a large blue arrow points to the PURCHASE_SERVICE row in the category table](media/doc-categ-config/ksef-config-45.png)
 
 4. Click **Edit**.
 
-   ![alt text](media/doc-categ-config/ksef-config-46.png)
+   ![KSeF Category Details page for PURCHASE_SERVICE - Zakup - Usługi, showing the Edit button highlighted by a large blue arrow in the upper-right corner. The page displays Active: Yes, Card Type: Supplier, and Default Document Type: A/P Invoice in a clean white SAP Business One interface.](media/doc-categ-config/ksef-config-46.png)
 
 ## Configure basic information
 
 Use **Basic Information** to define the general processing settings for the category.
 
-![alt text](media/doc-categ-config/ksef-config-47.png)
+![Basic Information configuration form for the PURCHASE_SERVICE category. The SAP Business One interface shows Code PURCHASE_SERVICE, Description Zakup - Usługi, Active Yes, Card Type Supplier, Auto Create BP No, an empty Default Bank Code field, Default Document Type Invoice, Default Document Sub Type Service, Require All Lines No, Allow Partial Draft No, and Manual Draft Creation Yes. The form is arranged in Basic Information and General Settings panels in a clean administration interface.](media/doc-categ-config/ksef-config-47.png)
 
 ### Code
 
@@ -120,7 +120,7 @@ This prevents CompuTec KSeF from creating the draft automatically before the inc
 
 Use **Incoming Download Filter** to define which documents CompuTec KSeF retrieves from KSeF and how it determines the download range.
 
-![alt text](media/doc-categ-config/ksef-config-48.png)
+![Incoming Download Filter panel in the KSeF configuration screen. The Download Mode section shows Use HWM incremental set to Yes, Date Type set to Permanent Storage, and empty Date From and Date To fields. The Filter Criteria section shows Subject Type set to Subject 2 Buyer, Form Type set to All, empty Seller NIP and Buyer Identifier Value fields, Buyer Identifier Type set to None, Self Invoicing set to No, and Invoice Types containing Vat, Roz, KorZal, VatPeFSp, VatRr, and KorVatRr.](media/doc-categ-config/ksef-config-48.png)
 
 ### Use HWM (incremental)
 
@@ -183,7 +183,7 @@ Apply additional filter criteria only when you need to restrict which KSeF docum
 
 Use **Processing Settings** to define how CompuTec KSeF groups, matches, and converts downloaded documents into SAP Business One drafts.
 
-![alt text](media/doc-categ-config/ksef-config-49.png)
+![Processing Settings configuration screen showing Processing Settings and Post Processors sections in a neutral administrative interface. The Processing Settings section shows Process Per CardCode set to Yes, Allow Partial Base Qty set to Yes, Draft Creation Mode set to SqlProcessor, SQL Procedure: Header set to CT_KSEF_INC_GetSL_Header, and SQL Procedure: Lines set to CT_KSEF_INC_GetSL_Rows. The Post Processors section shows Download set to CT_KSEF_INC_PP_DOWN, two additional download-related fields containing CT_KSEF_INC_PP_LINES and CT_KSEF_INC_PP_DOWN, Document Type blank, Document Lines set to CT_KSEF_INC_PP_LINES, and Draft and Target blank.](media/doc-categ-config/ksef-config-49.png)
 
 ### Process Per CardCode
 
@@ -229,7 +229,7 @@ Do not modify standard procedures directly. Plugin updates may overwrite your ch
 
 Use **CardCode Determination Rules** to define how CompuTec KSeF matches an incoming document to an existing SAP Business One Business Partner.
 
-![alt text](media/doc-categ-config/ksef-config-50.png)
+![CardCode Determination Rules configuration screen showing NIP and name matching enabled. The left panel displays By NIP: Yes, NIP Field: LicTradNum, By Name: Yes, Name Field: CardName, and Name Match Mode: Exact. The right panel displays By Email: No with Email Field: E_Mail, By REGON: No, By KRS: No, and blank REGON Field, KRS Field, Custom Procedure, and Custom Fields fields. The interface is presented in a neutral administrative configuration layout.](media/doc-categ-config/ksef-config-50.png)
 
 You can enable matching based on:
 
@@ -249,7 +249,7 @@ In the example configuration, matching by **NIP** and **Name** is enabled.
 
 Use **Document Type Determination Rules** to define which SAP Business One document type and subtype CompuTec KSeF should use for an incoming document.
 
-![alt text](media/doc-categ-config/ksef-config-51a.png)
+![Document Type Determination Rules configuration screen in an administrative interface. A table contains one rule row: Order 10, Source Field Invoice Type, Operator Equal, blank Value, Result Doc Type Invoice, Result Doc Sub Type Item, blank Custom Procedure and Comment, and Active set to Yes. Above the table are Add Row and Column Settings controls. The table headers are Order, Source Field, Operator, Value, Result Doc Type, Result Doc Sub Type, Custom Procedure, Comment, and Active.](media/doc-categ-config/ksef-config-51a.png)
 
 A rule can include:
 
@@ -269,7 +269,7 @@ Enable only the rules required for your document processing scenario.
 
 Use **Item Code Determination Rules** to define how CompuTec KSeF matches incoming invoice lines to SAP Business One item codes.
 
-![alt text](media/doc-categ-config/ksef-config-51b.png)
+![Item Code Determination Rules configuration screen in an administrative interface. The table shows two rules with columns for Order, Rule Type, Source Field, Match Table, Match Field, Result Column, Match Mode, Fallback Item Code, Allow Multiple, Custom Procedure, Comment, and Active. The first row has order 10, rule type truncated as Stata w..., match table OITM, result column ItemCode, match mode Exact, fallback item code Domyslny, and Allow Multiple set to No. The second row has order 20, rule type EAN, result column ItemCode, match mode Exact, and Allow Multiple set to No. Add Row and Column Settings controls appear above the table, with a scrollbar at the right.](media/doc-categ-config/ksef-config-51b.png)
 
 You can use different matching methods, such as EAN, and configure a fallback item code when required.
 
@@ -281,7 +281,7 @@ Configure document and item determination rules according to your SAP Business O
 
 Use **Base Document Configuration** to define how CompuTec KSeF matches incoming invoices to existing SAP Business One base documents.
 
-![alt text](media/doc-categ-config/ksef-config-52a.png)
+![Base Document Configuration screen in an administrative interface. A table defines how target documents are matched to existing base documents, with Add Row and Column Settings controls above it. The column headings are Target Doc Type, Base Doc Type, Match By, Date Range (Days), Require Exact Qty, Allow Partial Qty, Priority, Comment, and Active. One row shows Target Doc Type Invoice, a blank Base Doc Type, Match By Document Number, Date Range 30, Require Exact Qty No, Allow Partial Qty Yes, blank Comment, and Active Yes. The clean, neutral interface supports administrative configuration.](media/doc-categ-config/ksef-config-52a.png)
 
 For each rule, you can define:
 
@@ -301,7 +301,7 @@ For example, **Match By: Document Number** instructs CompuTec KSeF to use the do
 
 Use **Field Mappings** when CompuTec KSeF needs to transfer data from an incoming KSeF document to specific SAP Business One fields.
 
-![alt text](media/doc-categ-config/ksef-config-52b.png)
+![Field Mappings configuration panel in a clean administrative interface. The panel has Add Row and Column Settings controls and a table with the headings Source Type, Source Path, Target Table, Target Field Type, Target Field, Transform, Default Value, Condition, Comment, and Active. The first row shows XPath as the source type, Header as the target table, UDF as the target field type, blank input fields, and a Yes value truncated in the Active dropdown.](media/doc-categ-config/ksef-config-52b.png)
 
 A mapping can define:
 
@@ -321,7 +321,7 @@ Base document rules and field mappings are implementation-specific. Add or chang
 1. Review the category settings.
 2. Click **Save**.
 
-![alt text](media/doc-categ-config/ksef-config-53.png)
+![Category Details screen for the ksef configuration in a clean administrative interface. The page is titled PURCHASE_SERVICE - Zakup - Usługi and shows Active: Yes, Card Type: Supplier, and Default Document Type: A/P Invoice. A large blue arrow points to the Save button in the upper-right corner, beside Cancel and Back controls.](media/doc-categ-config/ksef-config-53.png)
 
 ## Result
 
@@ -341,4 +341,4 @@ After configuring incoming document categories, configure the required SAP Busin
 
 Assign access according to each user's responsibilities, such as working with incoming invoices, outgoing invoices, or administrative configuration.
 
-See **Configure SAP Business One Authorizations for CompuTec KSeF**.
+See [**Configure SAP Business One Authorizations for CompuTec KSeF**](/docs/ksef/administrator-guide/configuration/config-sap-auth).

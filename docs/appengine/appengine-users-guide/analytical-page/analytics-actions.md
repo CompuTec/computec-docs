@@ -81,11 +81,11 @@ To configure an action in a source:
 
 9. Click **Use in Source** to apply the mapping.
 
-    ![alt text](media/actions/aa-config-action-in-src-9.png)
+    ![Analytics action parameter mapping panel showing Use in Source Active set to No, an empty Object Type field, and a Code parameter row. The row shows type System.Int32, Required checked, Source Type set to Field, and Value Source set to DocEntry. A blue arrow points to the Use in Source button on the right. The wider environment is a functional configuration screen with a table of action parameters.](media/actions/aa-config-action-in-src-9.png)
 
 10. Click **Update**.
 
-    ![alt text](media/actions/aa-config-action-in-src-10.png)
+    ![Sales Orders source configuration screen with the Actions tab selected and a large blue arrow pointing to the Update button. The page shows the breadcrumb Sources list / Sales Orders, the Sales Orders heading, tabs for General, Actions, Preview & Print, and Variants, plus the Actions section with filter controls and an action list. The interface is functional and instructional.](media/actions/aa-config-action-in-src-10.png)
 
 11. The action is now activated and available in the report.
 
@@ -95,7 +95,7 @@ Actions require some information to know which data should be used when the acti
 
 For each parameter, you can define where the value should come from.
 
-![alt text](media/actions/11.png)
+![Action parameter mapping table with an Object Type field and two rows. The DocEntry parameter has type System.Int32, Source Type set to Field, and Value Source set to DocEntry. The RscLineNum parameter has type System.Int32, Source Type set to Constant, and value 1. The table columns are Name, Type, Description, Required, Source Type, and Value Source. The wider environment is a functional analytics configuration interface for mapping action values in a clear instructional layout.](media/actions/11.png)
 
 Available **Source Types** include:
 
@@ -106,7 +106,7 @@ Available **Source Types** include:
 
 Use **Constant** value when the action should always receive the same value.
 
-    ![alt text](media/actions/12.png)
+    ![Action parameter mapping table showing Object Type and the Source Type setting for two parameters. The table includes DocEntry with type System.Int32, Source Type Field, and an empty Required checkbox, and RscLineNum with type System.Int32, Source Type Constant, and value 1. Column headings read Name, Type, Description, Required, Source Type, and Value Source. A large blue arrow points to the Constant selection. The wider environment is a clean analytics configuration interface for mapping action parameters.](media/actions/12.png)
 
 Example:
 
@@ -118,7 +118,7 @@ Example:
 
 Use **Field** value when the action should receive data from a selected row in the report.
 
-    ![alt text](media/actions/13.png)
+![Action parameter mapping table showing Object Type and columns Name, Type, Description, Required, Source Type, and Value Source. The DocEntry row has type System.Int32, Source Type Field, and Value Source DocEntry. The RscLineNum row has type System.Int32, Source Type Constant, and value 1. A blue arrow points to the Field selection for DocEntry in the analytics configuration interface.](media/actions/13.png)
 
 When the user selects a row and runs the action, the system takes the value from the mapped column and passes it to the action automatically.
 
@@ -126,7 +126,7 @@ When the user selects a row and runs the action, the system takes the value from
 
 You can mark a parameter as **Required**.
 
-    ![alt text](media/actions/14.png)
+![Analytics action parameter table showing the DocEntry parameter marked as Required with a checked checkbox. The table lists DocEntry and RscLineNum, both with type System.Int32; DocEntry uses Source Type Field with value source DocEntry, while RscLineNum uses Source Type Constant with value 1. Save and Deactivate buttons appear below. The screenshot shows a clear configuration interface with a blue arrow highlighting the required checkbox.](media/actions/14.png)
 
 If a required parameter is empty, the action cannot be executed.
 
@@ -144,47 +144,47 @@ To configure **Action Settings** in a variant:
 
 1. Open **CompuTec AppEngine Launchpad**.
 
-    ![alt text](media/actions/aa-config-action-in-src-v1.png)
+    ![CompuTec AppEngine workspace selection screen in SAP Business One. The right-side panel displays the CompuTec AppEngine logo, the heading Choose your workspace, Launchpad selected, an additional workspace option partially obscured by a large blue arrow, and the button Log in with SAP Business One. The left side shows the SAP Business One interface over a bright blue mountain landscape. The screen has a clean, neutral setup interface.](media/actions/aa-config-action-in-src-v1.png)
 
 2. Go to **Analytics**.
 
-    ![alt text](media/actions/aa-config-action-in-src-v2.png)
+    ![CompuTec AppEngine Launchpad navigation bar with the Analytics icon highlighted by a large blue arrow. The bar includes the Launchpad label and icons for Analytics, display or workspace options, a globe, and settings. Below it, a light gray workspace contains tiles labeled WebUp, MRP, and MO360.](media/actions/aa-config-action-in-src-v2.png)
 
 3. Navigate to **Source Manager**.
 
-    ![alt text](media/actions/aa-config-action-in-src-v3.png)
+    ![CompuTec AppEngine Launchpad Analytics Variants List screen with a large blue arrow pointing to the Go To Source Manager button in the upper-right corner. The page shows the Standard variant, search and plugin filters, and report groups including Available Components, MOR_Transactions, and test.](media/actions/aa-config-action-in-src-v3.png)
 
 4. Click the **Source** you want to edit.
 
-    ![alt text](media/actions/aa-config-action-in-src-v4.png)
+    ![CompuTec AppEngine Launchpad Source List displays available sources in a table. The header reads Source List, with Generate Date Parts and Add New Source controls on the right. A large blue arrow points to the Sales Orders row, which shows SQL from ORDR. Other visible rows are test, showing select ItemCode from OITM, and Sales items, showing Select DocEntry, LineNum, ItemCode, Quantity from RDR1. The clean interface has a neutral tone.](media/actions/aa-config-action-in-src-v4.png)
 
 5. Click the **edit icon**.
 
-    ![alt text](media/actions/aa-config-action-in-src-v5.png)
+    ![CompuTec AppEngine Analytics Creator displays the Sales Orders source with the breadcrumb Sources list / Sales Orders, an Open Analytics button, and an edit pencil icon highlighted by a large blue arrow. The General tab is selected, with Actions, Preview & Print, and Variants tabs visible above the SQL Statement editor containing select * from ORDR. The interface has a clean, neutral layout.](media/actions/aa-config-action-in-src-v5.png)
 
 6. Open the **Variants** tab.
 
-    ![alt text](media/actions/aa-config-action-in-src-v6.png)
+    ![Analytics Creator Sales Orders source with the Variants tab selected and highlighted by a large blue left-pointing arrow. The page shows the breadcrumb Sources list / Sales Orders, the source title Sales Orders, Update and Cancel buttons, and tabs labeled General, Actions, Preview & Print, and Variants. A Variants panel below contains an Add Variant button and a table with Standard and New Variant entries, plus Description, Create Date, and Update Date columns. The interface is clean and neutral.](media/actions/aa-config-action-in-src-v6.png)
 
 7. Select the **variant** you want to edit.
 
-    ![alt text](media/actions/aa-config-action-in-src-v7.png)
+    ![Analytics Creator Variants page for Sales Orders showing the Standard and New Variant rows in the Variants table. A large blue left-pointing arrow highlights the New Variant row. The page also shows the Sources list / Sales Orders breadcrumb, Update and Cancel buttons, and a clean neutral interface.](media/actions/aa-config-action-in-src-v7.png)
 
 8. Open **Action Settings**.
 
-    ![alt text](media/actions/aa-config-action-in-src-v8.png)
+    ![Analytics Creator Variants settings panel for Sales Orders, with the Actions Settings tab selected and highlighted by a large blue arrow. The panel lists an action named CompuTec.AppEnginePlugins.PDCPlugin.Actions.ManufacturingConfirmationAction and shows its Visible checkbox selected. The surrounding interface has a clean, neutral layout with tabs for Basic Settings, Forms Definition, Table Settings, Chart Settings, and Visual Filters.](media/actions/aa-config-action-in-src-v8.png)
 
 9. Set **Visibility** to show or hide an **Action** in a specific **Variant**.
 
-    ![alt text](media/actions/aa-config-action-in-src-v9.png)
+    ![Analytics Creator Variants page for Sales Orders showing the Actions Settings tab. The table lists the action CompuTec.AppEnginePlugins.PDCPlugin.Actions.ManufacturingConfirmationAction, and its Visible checkbox is selected. The page header shows Sales Orders with Update and Cancel buttons, and the surrounding interface has a clean, neutral administrative layout.](media/actions/aa-config-action-in-src-v9.png)
 
 10. Click **Update** to save changes in the **Variant**.
 
-    ![alt text](media/actions/aa-config-action-in-src-v10.png)
+    ![Analytics Creator shows the Sales Orders variant with the Actions Settings tab selected. The action CompuTec.AppEnginePlugins.PDCPlugin.Actions.ManufacturingConfirmationAction has its Visible checkbox selected. A large blue arrow points to the Update button at the bottom right of the settings panel, indicating where to save the variant changes. The surrounding interface includes the Sources list / Sales Orders breadcrumb, Update and Cancel controls, and tabs for General, Actions, Preview & Print, and Variants in a clean administrative workspace.](media/actions/aa-config-action-in-src-v10.png)
 
 11. Click **Update** to save the **Source** changes.
 
-    ![alt text](media/actions/aa-config-action-in-src-v11.png)
+    ![Analytics Creator shows the Sales Orders source on the Variants tab. The page displays the breadcrumb Sources list / Sales Orders, the title Sales Orders, the identifier e0b3f0c9-e557-42b9-a9a4-4a53934ac1d0, and the Update, Cancel, and More controls. A large blue arrow points to the Update button, indicating where to save source changes. The General, Actions, Preview & Print, and Variants tabs appear below in a clean administrative interface.](media/actions/aa-config-action-in-src-v11.png)
 
 12. The action is now available in the report.
 
@@ -198,22 +198,22 @@ If a required value is missing, the related action may be hidden or unavailable.
 
 If no actions are visible, the **Action** button is hidden.
 
-    ![alt text](media/actions/aa-config-action-in-src-ap-1.png)
+![Analytics report for the New Variant with no visible Actions button. The report toolbar shows Open Manager, Adapt Filter, view controls, a refresh message reading The data will be refreshed in: 9:44 min., Download Excel, and settings. The table below includes columns for Doc ID, Document Type, CANCELED, Handwritten, Printed, InventSttus, Transfered, ObjType, and CardC. The clean administrative interface indicates that no report actions are currently available.](media/actions/aa-config-action-in-src-ap-1.png)
 
-    :::note[info]
+:::note[info]
 
-    Action availability is evaluated dynamically. 
-    
-    Depending on the selected rows, some actions may become unavailable when they require a specific document status, or a mandatory parameter value. They may also support only specific object types.
+Action availability is evaluated dynamically.
 
-    If these specific conditions are not met, you won't see the **Action** button.
-    :::
+Depending on the selected rows, some actions may become unavailable when they require a specific document status, or a mandatory parameter value. They may also support only specific object types.
+
+If these specific conditions are not met, you won't see the **Action** button.
+:::
 
 ### Visible actions
 
 If one or more actions are visible, the report displays the **Action** button. Clicking it opens the list of available actions.
 
-    ![alt text](media/actions/aa-config-action-in-src-ap-2.png)
+![Analytics report in the Standard variant showing the Actions menu expanded above a data table. The Actions button is highlighted by a large blue arrow, and the menu lists Quantity Registration and Manufacturing Confirmation. The toolbar also includes Open Manager, Adapt Filter, and Download Excel. A selected row is highlighted in blue in the clean administrative report interface.](media/actions/aa-config-action-in-src-ap-2.png)
 
 ## Execute actions in a report
 
@@ -222,7 +222,7 @@ To execute an action:
 1. Open the chosen **Variant**.
 2. Select **one or more rows** in the **Table View** of the report.
 
-    ![alt text](media/actions/aa-config-action-in-src-ap-23.png)
+    ![Analytics report in the Standard2 variant with one table row selected. A large blue arrow points to the selected row checkbox on the left side of the table. The report header shows Open Manager and Adapt Filter, and the toolbar includes The data will be refreshed in: 8:02 min., Actions, Download Excel, and settings. Visible table headers include Doc ID, Document Type, CANCELED, Handwrt ten, Printed, InvntSttus, Transfered, ObjType, and CardCode. The clean administrative interface has a neutral tone.](media/actions/aa-config-action-in-src-ap-23.png)
 
     :::note[info]
 
@@ -235,7 +235,7 @@ To execute an action:
 
 3. Click **Actions**.
 
-    ![alt text](media/actions/aa-config-action-in-src-ap-3.png)
+    ![Analytics report in the Standard variant with the Actions menu expanded above the table. A large blue arrow points to the Actions button, which is next to Download Excel. The menu lists Quantity Registration and Manufacturing Confirmation. One table row is selected, and the administrative toolbar also shows Open Manager and Adapt Filter.](media/actions/aa-config-action-in-src-ap-3.png)
 
 4. Choose the **action** you want to run.
 

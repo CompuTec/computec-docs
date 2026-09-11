@@ -40,19 +40,19 @@ If you want to set the authorizations, follow these steps:
 1. Log in to **SAP Business One**.
 2. In menu, go to **Administration** > **System Initialization** > **Authorizations**.
 
-    ![alt text](./media/authorizations/user-auth1.png)
+    ![SAP Business One Administration menu with Authorizations highlighted under System Initialization. The left navigation shows Modules, Drag & Relate, Look Up Menus, Administration, Choose/Create Company, Web Client, Exchange Rates and Indexes, System Initialization, Company Details, General Settings, Posting Periods, Authorizations, Document Numbering, and Series Synchronization Configuration. The wider screen displays dashboard charts including Top 5 Customers by Receivables Overdue, Top 5 Vendors by Payables Overdue, Net Sales Revenue, My Sales Orders Not Delivered, and My Open AP Invoices.](./media/authorizations/user-auth1.png)
 
 3. Navigate to **General Authorizations**.
 
-    ![alt text](./media/authorizations/user-auth2.png)
+    ![SAP Business One General Authorizations screen with General Authorizations selected in the System Initialization menu. The Authorizations window shows user and group tabs, a list of users including AlertSvc, B1i, EDSUser, manager, Support, Worker, and Workflow, and authorization categories such as General, Customization Tools, Administration, Financials, Opportunities, Sales - A/R, Purchasing - A/P, Business Partners, Banking, Inventory, Resources, Production, and MRP.](./media/authorizations/user-auth2.png)
 
 4. On the left, choose the **user** you want to grant the authorizations to, and then choose **CompuTec AppEngine** from the list.
 
-    ![alt text](./media/authorizations/user-auth3.png)
+    ![SAP Business One Authorizations window with the manager user selected and the CompuTec AppEngine authorization node highlighted in the authorization tree. The tree lists Service, Human Resources, Project Management, Reports, Analytics, Fiori-Style Cockpit Management, Service Layer SQL View, Service Layer SQL Query, Report Layout API, User-Defined Tables, User-Defined Objects, User Authorization, Process Force, and CompuTec AppEngine. Authorization and Effective Authorization columns show Full Authorization, and the lower pane contains authorization controls including Expand, Collapse, Full Authorization, Read Only, No Authorization, OK, Cancel, and Apply Auth. to Back End. The blue arrow draws attention to CompuTec AppEngine in the General Authorizations interface.](./media/authorizations/user-auth3.png)
 
 5. Here you can choose the authorizations for each CompuTec AppEngine authorization group.
 
-    ![alt text](media/authorizations/user-auth4.png)
+    ![SAP Business One Authorizations window showing the manager user and the CompuTec AppEngine authorization tree. The Analytics group is expanded and includes CT_AE_Custom with permissions for Source Creator and Variant Manager, CompuTec.ProcessForce.Plugin, WebUp, PPF, MO360, MRP, PDC, WMS.Plugin, BT360, PFI, and MI360; the Plugins group is collapsed. The Authorization and Effective Authorization columns show Full Authorization. The surrounding SAP Business One interface includes the Authorizations navigation menu and controls for Expand, Collapse, Full Authorization, Read Only, No Authorization, OK, Cancel, and Apply Auth. to Back End. The screen presents a clear administrative permissions-management interface.](media/authorizations/user-auth4.png)
 
 ## Deprecated authorization structure
 

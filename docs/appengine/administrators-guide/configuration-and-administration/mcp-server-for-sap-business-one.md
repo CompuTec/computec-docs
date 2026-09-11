@@ -37,7 +37,7 @@ To allow **MCP Server** access for a specific **CompuTec AppEngine company**, fo
 
 6. Choose ``Yes`` in the **EnableMcpServer** field.
 
-    ![alt text](media/mcp-server/mcp-serv-4.png)
+    ![CompuTec AppEngine Settings dialog showing the CoreGeneralSettingsModel configuration. The EnableMcpServer dropdown is set to Yes and a blue arrow points to this field. Other visible fields include CommandTimeout, ConnectionTimeout, MaxPoolSize, MinPoolSize, AnalysisStartDate, AnalysisEndDate, OpeningMode, GoogleMapsAPI, and AcceptSnapshotIsolation. Save & Close and Cancel buttons are visible at the bottom of the dialog.](media/mcp-server/mcp-serv-4.png)
 
 7. Click **Save & Close** to save your changes.
 

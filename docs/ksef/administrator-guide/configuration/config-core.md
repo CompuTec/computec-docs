@@ -25,21 +25,21 @@ To configure CompuTec KSeF Core Plugin in CompuTec AppEngine, follow these steps
 2. Go to **Plugins** > **Downloaded**.
 3. Find **CompuTec.KSeF.Core** and click the **gear icon** next to it.
 
-    ![alt text](media/core-config/ksef-config-20.png)
+    ![Plugins page in the CompuTec AppEngine Administration Panel showing the Downloaded list, with the CompuTec.KSeF.Core plugin row and its gear-shaped configuration button highlighted on the right](media/core-config/ksef-config-20.png)
 
     :::info[note]
     If **CompuTec.KSeF.Core** is not displayed in the **Downloaded** list, make sure **Business Logic** is selected in the filters.
 
-    ![alt text](media/core-config/ksef-config-21.png)
+    ![Plugins page with the Business Logic filter selected, showing the filter controls and the downloaded plugins list in the CompuTec AppEngine Administration Panel](media/core-config/ksef-config-21.png)
     :::
 
 4. Select the company you want to configure and click **Advanced Settings**.
 
-    ![alt text](media/core-config/ksef-config-22.png)
+    ![CompuTec KSeF Core configuration dialog showing the company selection area and the Advanced Settings button](media/core-config/ksef-config-22.png)
 
 5. Go to the **CtkSefConfiguration** section. Here, you can configure the KSeF environment and authentication method, define how invoice XML files are generated and sent, and specify where generated files are stored.
 
-    ![alt text](media/core-config/ksef-config-23.png)
+    ![Advanced Settings page for CompuTec KSeF Core showing the CtkSefConfiguration section and fields for KSeF connection, authentication, XML generation, and file storage](media/core-config/ksef-config-23.png)
 
 ## Configure general KSeF settings
 
@@ -102,7 +102,9 @@ We recommend keeping the default value.
 
 Choose whether CompuTec KSeF should generate an offline QR code when an invoice cannot be sent to KSeF.
 
+:::note[info]
 When enabled, CompuTec KSeF handles the invoice as an offline document and generates the appropriate QR code.
+:::
 
 ## Configure XML generation
 
@@ -217,7 +219,7 @@ If you use certificate authentication, you also need to configure the certificat
 
 1. Open the **Authentication** tab.
 
-    ![:::note\[Info\] ](media/core-config/ksef-config-24.png)
+    ![CompuTec KSeF Core configuration window with the Authentication tab open and certificate authentication settings displayed](media/core-config/ksef-config-24.png)
 
 2. Configure the following settings.
 
@@ -239,11 +241,11 @@ Enter the authentication certificate thumbprint in uppercase.
 
 ### CertificateStoreLocation
 
-If you installed the certificate according to the certificate configuration guide, keep the default value: **LocalMachine.**
+If you installed the certificate according to the certificate configuration guide, keep the default value: `LocalMachine`.
 
 ### CertificateStoreName
 
-If you installed the certificate in the **Personal** certificate store, keep the default value: **My.**
+If you installed the certificate in the **Personal** certificate store, keep the default value: `My`.
 
 If you use another certificate store, change the value accordingly.
 
@@ -257,7 +259,7 @@ Configure the offline certificate if your company plans to use offline processin
 
 1. Open the **OfflineAuthorization** tab.
 
-    ![alt text](media/core-config/ksef-config-25.png)
+    ![CompuTec KSeF Core configuration window with the OfflineAuthorization tab open, showing certificate provider, thumbprint, and certificate store settings](media/core-config/ksef-config-25.png)
 
 2. Configure **CertificateProviderName:** Select how the offline certificate is provided: **File**, **Base64**, or **WindowsCertStore**.
 
@@ -288,7 +290,7 @@ In the **IncomingSettings** tab, configure how CompuTec KSeF retrieves incoming 
 Complete this section if you use CompuTec KSeF to **retrieve incoming documents**.
 :::
 
-![alt text](media/core-config/ksef-config-26.png)
+![CompuTec KSeF Core configuration window with the IncomingSettings tab open, showing options for retrieving and saving incoming KSeF XML documents](media/core-config/ksef-config-26.png)
 
 Configure the following settings:
 
@@ -316,7 +318,7 @@ We recommend: `4`.
 
 Use the **IncomingFilters** tab to define which categories of KSeF documents CompuTec KSeF should retrieve.
 
-![alt text](media/core-config/ksef-config-27.png)
+![CompuTec KSeF Core configuration window with the IncomingFilters tab open, showing a table for document category codes and enabled status](media/core-config/ksef-config-27.png)
 
 The main category for incoming purchase invoices is `PURCHASE_SERVICE`. It covers purchase invoices issued to your company where your company is the invoice recipient.
 
@@ -337,7 +339,7 @@ If you do not use CompuTec KSeF to retrieve incoming invoices, do not enable an 
 
 Click **Save & Close**.
 
-![alt text](media/core-config/ksef-config-28.png)
+![CompuTec KSeF Core configuration window with the Save & Close button available at the bottom, in the CompuTec AppEngine Administration Panel](media/core-config/ksef-config-28.png)
 
 ## Result
 

@@ -34,23 +34,23 @@ To open outgoing invoices, follow these steps:
 
 1. Log in to the **CompuTec AppEngine Launchpad**.
 
-   ![alt text](media/send-outgoing-invo/ksef-launchpad1.png)
+   ![CompuTec AppEngine welcome screen showing the Launchpad option in the sign-in panel; a blue arrow points to Launchpad.](media/send-outgoing-invo/ksef-launchpad1.png)
 
 2. Choose the company.
 
-   ![alt text](media/send-outgoing-invo/ksef-launchpad4.png)
+   ![CompuTec AppEngine Choose Company screen with the company drop-down field highlighted by a blue arrow.](media/send-outgoing-invo/ksef-launchpad4.png)
 
 3. Open **CompuTec KSeF**.
 
-   ![alt text](media/send-outgoing-invo/ksef-launchpad5.png)
+   ![CompuTec AppEngine Launchpad showing the CompuTec KSeF application.](media/send-outgoing-invo/ksef-launchpad5.png)
 
 4. Select **Output Invoices**.
 
-   ![alt text](media/send-outgoing-invo/ksef-launchpad7.png)
+   ![CompuTec KSeF menu showing the Output Invoices option.](media/send-outgoing-invo/ksef-launchpad7.png)
 
 5. The **Output Invoices** list displays outgoing invoices and their current KSeF processing status.
 
-    ![alt text](media/send-outgoing-invo/ksef-launchpad8.png)
+   ![CompuTec KSeF Output Invoices list showing outgoing invoices and their processing statuses.](media/send-outgoing-invo/ksef-launchpad8.png)
 
 :::info[note]
 
@@ -79,35 +79,35 @@ Use manual sending when you want to send an individual invoice without waiting f
 
 1. In **CompuTec KSeF plugin**, open **Output Invoices**.
 
-   ![alt text](media/send-outgoing-invo/ksef-launchpad7.png)
+   ![CompuTec KSeF menu showing the Output Invoices option.](media/send-outgoing-invo/ksef-launchpad7.png)
 
 2. Click the invoice to open its details.
 
-   ![image](media/send-outgoing-invo/ksef-invoice-sent-fromapp1.png)
+   ![CompuTec KSeF outgoing invoice details page.](media/send-outgoing-invo/ksef-invoice-sent-fromapp1.png)
 
 3. Make sure:
 
    - **Integration Status** is **Open**.
    - **XML Generation Status** is **Success**.
 
-   ![alt text](media/send-outgoing-invo/ksef-invoice-sent-fromapp2a.png)
+   ![Outgoing invoice details showing Open integration status and successful XML generation.](media/send-outgoing-invo/ksef-invoice-sent-fromapp2a.png)
 
 4. Click **Send to KSeF**.
 
-   ![image](media/send-outgoing-invo/ksef-invoice-sent-fromapp2b.png)
+   ![Outgoing invoice details with the Send to KSeF button highlighted.](media/send-outgoing-invo/ksef-invoice-sent-fromapp2b.png)
 
 5. CompuTec KSeF starts the sending process.
 
-   ![image](media/send-outgoing-invo/ksef-invoice-sent-fromapp3.png)
+   ![CompuTec KSeF outgoing invoice showing the sending process in progress.](media/send-outgoing-invo/ksef-invoice-sent-fromapp3.png)
 
 6. When CompuTec KSeF finishes sending the invoice, you will see **Success** in **Integration Status**.
 
-   ![image](media/send-outgoing-invo/ksef-invoice-sent-fromapp4.png)
+   ![Outgoing invoice details showing Success in Integration Status.](media/send-outgoing-invo/ksef-invoice-sent-fromapp4.png)
 
 7. Now you can go back to **Output Invoices**
 8. Click **Refresh** to display the latest information.
 
-   ![image](media/send-outgoing-invo/ksef-invoice-sent-fromapp5.png)
+   ![Output Invoices list with the Refresh button available to update invoice information.](media/send-outgoing-invo/ksef-invoice-sent-fromapp5.png)
 
 ## Send an invoice from SAP Business One
 
@@ -117,13 +117,13 @@ To send an invoice from SAP Business One, follow these steps:
 
 1. Open or create the outgoing invoice in **SAP Business One**.
 
-   ![image](media/send-outgoing-invo/ksef-invoice-send1.png)
+   ![Outgoing invoice opened in SAP Business One.](media/send-outgoing-invo/ksef-invoice-send1.png)
 
    :::info[note]
 
    Make sure the **UDF Fields** panel is displayed on the right. If the panel is not visible, select **View > UDF Fields**.
 
-   ![alt text](media/send-outgoing-invo/ksef-invoice-send2.png)
+   ![SAP Business One View menu with the UDF Fields option selected.](media/send-outgoing-invo/ksef-invoice-send2.png)
 
    :::
 
@@ -131,7 +131,7 @@ To send an invoice from SAP Business One, follow these steps:
 
     For a document that follows the standard configured sending behavior, the initial status is **NO – Domyślne**.
 
-    ![alt text](media/send-outgoing-invo/ksef-invoice-send4.png)
+   ![SAP Business One invoice UDF Fields panel showing the default KSeF status NO - Domyślne.](media/send-outgoing-invo/ksef-invoice-send4.png)
 
     :::info[note]
 
@@ -149,41 +149,41 @@ To send an invoice from SAP Business One, follow these steps:
 
 3. Add the document in SAP Business One.
 
-   ![image](media/send-outgoing-invo/ksef-invoice-send5.png)
+   ![SAP Business One Add mode for the outgoing invoice.](media/send-outgoing-invo/ksef-invoice-send5.png)
 
 4. Refresh the document until the status changes to **XO – XML wygenerowane**.
 
-   ![alt text](media/send-outgoing-invo/ksef-invoice-send6.png)
+   ![SAP Business One invoice UDF Fields panel showing XO - XML wygenerowane.](media/send-outgoing-invo/ksef-invoice-send6.png)
 
 5. The invoice is now ready to be sent to KSeF.
 
-   ![image](media/send-outgoing-invo/ksef-invoice-send7.png)
+   ![SAP Business One invoice ready to be sent to KSeF.](media/send-outgoing-invo/ksef-invoice-send7.png)
 
 6. Right-click anywhere in the invoice and select **KSeF Communication**.
 
-   ![image](media/send-outgoing-invo/ksef-invoice-send8.png)
+   ![SAP Business One invoice context menu with KSeF Communication selected.](media/send-outgoing-invo/ksef-invoice-send8.png)
 
 7. Select **Send to KSeF**.
 
-   ![image](media/send-outgoing-invo/ksef-invoice-send9.png)
+   ![KSeF Communication menu with Send to KSeF selected.](media/send-outgoing-invo/ksef-invoice-send9.png)
 
 8. Wait for the sending process to complete.
 
 9. When **Integration Status** shows **Success**, close the window.
 
-   ![image](media/send-outgoing-invo/ksef-invoice-send10a.png)
+   ![KSeF Communication window showing Success in Integration Status.](media/send-outgoing-invo/ksef-invoice-send10a.png)
 
 10. Refresh the SAP Business One document and check its KSeF status.
 
     After a successful operation, you should see **SO - Przesłane do KSeF** status.
 
-    ![image](media/send-outgoing-invo/ksef-invoice-send11.png)
+   ![SAP Business One invoice UDF Fields panel showing SO - Przesłane do KSeF.](media/send-outgoing-invo/ksef-invoice-send11.png)
 
 ## About Integration Status
 
 The **Integration Status** field in CompuTec KSeF lets you monitor the progress of an invoice during KSeF processing.
 
-![alt text](media/send-outgoing-invo/ksef-invoice-sent8.png)
+![CompuTec KSeF invoice details showing the Integration Status field.](media/send-outgoing-invo/ksef-invoice-sent8.png)
 
 The main processing flow is: **Open** > **Processing** > **Submitted** > **Success**.
 
@@ -240,6 +240,4 @@ If an invoice exists in SAP Business One but does not immediately appear in **Ou
 
 ## Next steps
 
-After KSeF successfully processes the invoice, you can review its KSeF information, invoice data, QR code, processing dates, and session history in CompuTec KSeF.
-
-See [**View outgoing invoice details**](/docs/ksef/user-guide/outgoing-invoices/view-outgoing-invo).
+After KSeF successfully processes the invoice, you can review its KSeF information, invoice data, QR code, processing dates, and session history in CompuTec KSeF. [Read more](/docs/ksef/user-guide/outgoing-invoices/view-outgoing-invo).

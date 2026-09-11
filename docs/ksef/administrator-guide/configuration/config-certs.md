@@ -30,44 +30,44 @@ To import a certificate, follow these steps:
 
 1. Open **Manage computer certificates** as an administrator.
 
-    ![alt text](media/cert-config/ksef-config-1.png)
+    ![Windows search results show Manage computer certificates as the best match under Control panel, with a blue arrow pointing to the result. The search field contains cert, and other results include Microsoft Bing web suggestions, Manage user certificates, and Manage file encryption certificates.](media/cert-config/ksef-config-1.png)
 
 2. Select the certificate store where you want to install the certificate. In our example, we select **Personal**.
 
-    ![alt text](media/cert-config/ksef-config-2.png)
+    ![Certificates management window for the local computer. The left navigation tree lists Personal, Trusted Root Certification Authorities, Enterprise Trust, Intermediate Certification Authorities, Trusted Publishers, Untrusted Certificates, and Third-Party Root Certification Authorities. The main pane is titled Logical Store Name and lists the same certificate stores, with a blue arrow pointing to Personal.](media/cert-config/ksef-config-2.png)
 
 3. Right-click inside the chosen store and click **All Tasks** > **Import...**.
 
-    ![alt text](media/cert-config/ksef-config-3.png)
+    ![Certificates management window for the local computer with the Personal\Certificates store selected. A context menu is open in the certificate list, and the All Tasks submenu is expanded to show Request New Certificate, Import..., and Advanced Operations; a blue arrow points to Import....](media/cert-config/ksef-config-3.png)
 
 4. In the **Certificate Import Wizard**, click **Next**.
 
-    ![alt text](media/cert-config/ksef-config-4.png)
+    ![Certificate Import Wizard welcome screen with Local Machine selected as the store location. The wizard explains that it copies certificates, certificate trust lists, and certificate revocation lists from disk to a certificate store. A blue arrow points to the Next button at the bottom of the calm, instructional dialog.](media/cert-config/ksef-config-4.png)
 
 5. Click **Browse...** and select the certificate file you want to import.
 
-    ![alt text](media/cert-config/ksef-config-5.png)
+    ![Certificate Import Wizard File to Import page with a File name field and Browse button highlighted by a large blue arrow. The page explains that the wizard can import certificates stored in Personal Information Exchange PKCS number 12 files with PFX or P12 extensions, Cryptographic Message Syntax Standard PKCS number 7 files with P7B extension, and Microsoft Serialized Certificate Store SST files. The Windows certificate management console is visible in the background.](media/cert-config/ksef-config-5.png)
 
    :::info[note]
    If your certificate is not displayed, change the file type filter to **All Files**.
 
-   ![alt text](media/cert-config/ksef-config-6.png)
+    ![Windows certificate file picker open to the Downloads folder with the file type menu expanded. The menu lists X.509 Certificate, Personal Information Exchange, Certificate Trust List, Certificate Revocation List, Microsoft Serialized Certificate Store, PKCS number 7 Certificate, and All Files, with All Files highlighted by a large blue arrow. The dialog is calm and instructional, and the certificate management window is visible behind it.](media/cert-config/ksef-config-6.png)
 
    :::
 
 6. Click **Next**.
 
-    ![alt text](media/cert-config/ksef-config-7.png)
+    ![Certificate Import Wizard File to Import page showing a selected PFX certificate file path, supported formats including Personal Information Exchange PKCS number 12 PFX and P12, Cryptographic Message Syntax Standard PKCS number 7 P7B, and Microsoft Serialized Certificate Store SST, with a blue arrow pointing to the Next button. The Windows certificate management console is visible in the background, creating a clear and instructional setup scene.](media/cert-config/ksef-config-7.png)
 
 7. Enter the password for the certificate's private key.
 
 8. Select **Mark this key as exportable** and make sure **Include all extended properties** is selected.
 
-    ![alt text](media/cert-config/ksef-config-8.png)
+    ![Certificate Import Wizard Private key protection page showing a masked password field, the Mark this key as exportable and Include all extended properties options selected, and the Next and Cancel buttons. A blue arrow highlights the exportable option. The calm instructional dialog appears over the Windows certificate management console.](media/cert-config/ksef-config-8.png)
 
 9. Click **Next**.
 
-    ![alt text](media/cert-config/ksef-config-9.png)
+    ![Certificate Import Wizard Certificate Store page showing Place all certificates in the following store selected, with Personal entered as the certificate store, and a blue arrow pointing to the Next button. The wizard explains that certificate stores are system areas where certificates are kept and that Windows can automatically select a store or let the user specify one. The Windows certificate management console is visible in the background, creating a clear, instructional setup scene.](media/cert-config/ksef-config-9.png)
 
 10. Make sure the correct certificate store is selected. In our example, this is **Personal**.
 
@@ -75,11 +75,11 @@ To import a certificate, follow these steps:
 
 12. Review the import settings and click **Finish**.
 
-    ![alt text](media/cert-config/ksef-config-10.png)
+    ![Certificate Import Wizard Completing the Certificate Import Wizard screen summarizes the selected Personal certificate store, PFX content, and certificate file path, with a Finish button highlighted by a blue arrow. The wizard is open over the Windows certificate management console in a clear, instructional setup environment.](media/cert-config/ksef-config-10.png)
 
 13. Repeat these steps for each KSeF certificate you need to import.
 
-    ![alt text](media/cert-config/ksef-config-11.png)
+    ![Certificate Import Wizard displays the message The import was successful with an OK button. The Windows certificate management console is visible in the background with certificate store entries in the left navigation pane, creating a clear and reassuring confirmation scene.](media/cert-config/ksef-config-11.png)
 
 ## Grant CompuTec AppEngine access to the private key
 
@@ -89,20 +89,20 @@ To set up the permissions, follow these steps:
 
 1. In **Manage computer certificates**, right-click the certificate and choose **All Tasks** > **Manage Private Keys...**.
 
-    ![alt text](media/cert-config/ksef-config-12.png)
+    ![Windows Certificates console for the local computer shows a certificate selected in Personal\Certificates. The certificate context menu is open with All Tasks expanded, and Manage Private Keys is highlighted by a large blue arrow. The console displays certificate columns including Issued To, Issued By, Expiration Date, Intended Purposes, Friendly Name, Status, and Certificate Template in a clear instructional setup environment.](media/cert-config/ksef-config-12.png)
 
 2. Click **Add...**.
 
-    ![alt text](media/cert-config/ksef-config-13.png)
+    ![Windows Permissions dialog for a certificate private key, showing the Group or user names list with SYSTEM selected and an Add button highlighted by a blue arrow. The dialog includes Allow permissions for Full control and Read, plus Advanced, OK, Cancel, and Apply buttons. The Windows certificate store tree is visible in the background, creating a clear instructional setup scene.](media/cert-config/ksef-config-13.png)
 
 3. Enter the user, computer, service account, or group that requires access to the certificate, and click **OK**.
 
-    ![alt text](media/cert-config/ksef-config-14.png)
+    ![Select Users, Computers, Service Accounts, or Groups dialog with a user or group entered in the object name field and the OK button highlighted by a blue arrow. The dialog shows the object type Users, Groups, or Built-in security principals, the From this location field, the Check Names button, and the Advanced button. A permissions window for the certificate private keys is visible in the background, creating a clear instructional setup scene.](media/cert-config/ksef-config-14.png)
 
 4. Make sure the required permissions are granted.
 5. Click **Apply**, and then click **OK**.
 
-    ![alt text](media/cert-config/ksef-config-15.png)
+    ![Permissions for a certificate private keys dialog on the Security tab. The Group or user names list includes SYSTEM and additional blurred entries. Under Permissions for SYSTEM, Allow is selected for Full control and Read, while Deny is unselected. The dialog has OK, Cancel, Apply, and Advanced buttons, with a blue arrow pointing to Apply. The Windows certificate store tree is visible in the background, creating a clear and instructional setup scene.](media/cert-config/ksef-config-15.png)
 
 6. Repeat these steps for each KSeF certificate.
 
@@ -119,19 +119,19 @@ To copy the thumbprint, follow these steps:
 1. Double-click the certificate to open it.
 2. Go to the **Details** tab.
 
-    ![alt text](media/cert-config/ksef-config-16.png)
+    ![Certificate dialog open on the Details tab, highlighted by a large blue arrow. The dialog displays Certificate Information, the message Windows does not have enough information to verify this certificate, certificate issuer and validity details, and a notice that a private key corresponds to the certificate. The Windows certificate store tree is visible in the background, creating a clear instructional setup.](media/cert-config/ksef-config-16.png)
 
 3. Find and select **Thumbprint**.
 
-    ![alt text](media/cert-config/ksef-config-17.png)
+    ![Certificate dialog on the Details tab with the Thumbprint field selected and its certificate value displayed below; a large blue arrow points to the Thumbprint entry, while the Windows Certificate Store navigation tree is visible in the background.](media/cert-config/ksef-config-17.png)
 
 4. Select the thumbprint value and press **Ctrl+C** to copy it.
 
-    ![alt text](media/cert-config/ksef-config-18.png)
+    ![Windows Certificate dialog on the Details tab with the Thumbprint field selected and its certificate value highlighted in the lower pane. A large blue arrow points to the selected thumbprint value. The certificate store navigation tree is visible on the left, creating a clear instructional setup.](media/cert-config/ksef-config-18.png)
 
 5. Convert all letters in the thumbprint to uppercase. For example, you can paste the value into Microsoft Excel and use the `=UPPER()` function.
 
-    ![alt text](media/cert-config/ksef-config-19.png)
+    ![Microsoft Excel workbook showing a certificate thumbprint in cell A1 and the uppercase result in cell A2. The formula bar displays =UPPER(A1), and the Home tab is active in the Excel ribbon. The worksheet provides a calm, instructional example of converting a thumbprint to uppercase.](media/cert-config/ksef-config-19.png)
 
 6. Save the uppercase thumbprint. You will enter it in **CertificateThumbprint** when configuring the plugin.
 7. Repeat these steps for each certificate.

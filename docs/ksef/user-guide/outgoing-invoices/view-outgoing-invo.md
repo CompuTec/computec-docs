@@ -24,23 +24,23 @@ The information available on the page depends on the invoice's current processin
 
 1. Log in to the **CompuTec AppEngine Launchpad**.
 
-   ![alt text](media/send-outgoing-invo/ksef-launchpad1.png)
+   ![CompuTec AppEngine workspace selection screen with Launchpad selected and the Log in with SAP Business One button](media/send-outgoing-invo/ksef-launchpad1.png)
 
 2. Choose the company.
 
-   ![alt text](media/send-outgoing-invo/ksef-launchpad4.png)
+   ![CompuTec AppEngine company selection screen](media/send-outgoing-invo/ksef-launchpad4.png)
 
 3. Open **CompuTec KSeF**.
 
-   ![alt text](media/send-outgoing-invo/ksef-launchpad5.png)
+   ![CompuTec AppEngine Launchpad with the CompuTec KSeF application tile](media/send-outgoing-invo/ksef-launchpad5.png)
 
 4. Select **Output Invoices**.
 
-   ![alt text](media/send-outgoing-invo/ksef-launchpad7.png)
+   ![CompuTec KSeF navigation screen with the Output Invoices option](media/send-outgoing-invo/ksef-launchpad7.png)
 
 5. Select the invoice you want to review.
 
-    ![alt text](media/view-outgoing-invo/ksef-invoice-sent0.png)
+   ![CompuTec KSeF Output Invoices list with an outgoing invoice selected](media/view-outgoing-invo/ksef-invoice-sent0.png)
 
 6. The **KSeF Output Invoice Details** page opens.
 
@@ -48,7 +48,7 @@ The information available on the page depends on the invoice's current processin
 
 The top of the page provides a quick overview of the invoice and its current processing state.
 
-![alt text](media/view-outgoing-invo/ksef-invoice-sent1.png)
+![KSeF Output Invoice Details page showing Integration Status, XML Generation Status, Offline Mode, and Refresh](media/view-outgoing-invo/ksef-invoice-sent1.png)
 
 You can see:
 
@@ -72,7 +72,7 @@ The **General** tab contains the main processing and KSeF information for the in
 
 Use **Basic Information** to identify the invoice, its source SAP Business One document, and the KSeF session used to process it.
 
-![alt text](media/view-outgoing-invo/ksef-invoice-sent1a.png)
+![General tab showing the Basic Information section with invoice, source document, session, and error details](media/view-outgoing-invo/ksef-invoice-sent1a.png)
 
 The section includes:
 
@@ -90,7 +90,7 @@ If an invoice was not processed successfully, check **Error Description** for in
 
 The **KSeF Information** section contains information related to the invoice's processing in KSeF.
 
-![image](media/view-outgoing-invo/ksef-invoice-sent2.png)
+![KSeF Information section showing the KSeF number, reference number, invoice hash, ordinal number, invoicing date, XML type, and portal link](media/view-outgoing-invo/ksef-invoice-sent2.png)
 
 After successful processing, you can find:
 
@@ -106,7 +106,7 @@ After successful processing, you can find:
 
 After successful processing, **QR Code I – Invoice Verification** displays the QR code used to verify the invoice in KSeF.
 
-![image](media/view-outgoing-invo/ksef-invoice-sent2b.png)
+![QR Code I – Invoice Verification section showing the invoice verification QR code](media/view-outgoing-invo/ksef-invoice-sent2b.png)
 
 Users can scan the QR code to access the invoice verification information.
 
@@ -116,7 +116,7 @@ For invoices processed in offline mode, additional QR code information can be av
 
 The **Timestamps** section shows when the main KSeF processing steps took place.
 
-![image](media/view-outgoing-invo/ksef-invoice-sent3a.png)
+![Timestamps section showing the XML generation, submission, and processing dates](media/view-outgoing-invo/ksef-invoice-sent3a.png)
 
 You can check:
 
@@ -130,7 +130,7 @@ These timestamps can help you track the invoice through the sending process.
 
 The **Session History** section shows the KSeF sessions associated with the invoice.
 
-![alt text](media/view-outgoing-invo/ksef-invoice-sent3b.png)
+![Session History section listing the KSeF sessions associated with the invoice and marking the latest session](media/view-outgoing-invo/ksef-invoice-sent3b.png)
 
 Select a session to open its details.
 
@@ -150,13 +150,13 @@ This view lets you check invoice data without reading the XML document.
 
 The **Seller Information** section displays information about the seller, such as the seller name, NIP, and contact information.
 
-![image](media/view-outgoing-invo/ksef-invoice-sent4a.png)
+![Parsed Invoice Seller Information section showing the seller name, NIP, and contact details](media/view-outgoing-invo/ksef-invoice-sent4a.png)
 
 ### Buyer Information
 
 The **Buyer Information** section displays the buyer information included in the invoice, such as the buyer name, NIP, and address.
 
-![alt text](media/view-outgoing-invo/ksef-invoice-sent4b.png)
+![Parsed Invoice Buyer Information section showing the buyer name, NIP, address, and other available details](media/view-outgoing-invo/ksef-invoice-sent4b.png)
 
 Additional buyer information can be displayed depending on the invoice data.
 
@@ -164,7 +164,7 @@ Additional buyer information can be displayed depending on the invoice data.
 
 The **Invoice Line Items** section shows the individual items included in the invoice.
 
-![image](media/view-outgoing-invo/ksef-invoice-sent5a.png)
+![Parsed Invoice Line Items section showing item or account details, quantities, prices, net values, VAT rates, and VAT amounts](media/view-outgoing-invo/ksef-invoice-sent5a.png)
 
 For each line, you can review information such as:
 
@@ -183,7 +183,7 @@ Use this section to check what items and amounts are included in the invoice pre
 
 The **Invoice Summary & Totals** section provides the financial summary of the invoice.
 
-![image](media/view-outgoing-invo/ksef-invoice-sent5b.png)
+![Parsed Invoice Summary and Totals section showing the VAT breakdown and total gross amount](media/view-outgoing-invo/ksef-invoice-sent5b.png)
 
 The **VAT Breakdown** shows the net and VAT amounts for each VAT rate included in the invoice.
 
@@ -195,7 +195,7 @@ Together with the invoice lines, this section provides a quick way to verify the
 
 Use **Doc. Visualization** when you want to view the invoice as a formatted document instead of reviewing individual fields.
 
-![image](media/view-outgoing-invo/ksef-invoice-sent6.png)
+![Doc. Visualization tab showing a Ministry of Finance-style invoice generated from the XML](media/view-outgoing-invo/ksef-invoice-sent6.png)
 
 Click **Generate doc. Visualization** to create a Ministry of Finance-style PDF representation based on the invoice XML.
 
@@ -211,7 +211,7 @@ The visualization is generated from the invoice XML. It represents the informati
 
 Use **XML Document** to view the XML document generated for KSeF.
 
-![image](media/view-outgoing-invo/ksef-invoice-sent7.png)
+![XML Document tab showing the invoice XML in a code view with the Download XML option](media/view-outgoing-invo/ksef-invoice-sent7.png)
 
 The XML contains the invoice data in the format used for KSeF processing.
 
@@ -264,4 +264,7 @@ Depending on the invoice result:
 - If the invoice was processed successfully, no further action is required.
 - To review the KSeF session used to process the invoice, select the session in **Session History**. See **View and Monitor KSeF Sessions**.
 - If the invoice was not processed successfully, use **Error Description**, **Parsed Invoice**, **Session History**, and, if necessary, **XML Document** to investigate the problem.
-- To learn more about sending and monitoring outgoing invoices, see [**Send Outgoing Invoices to KSeF**](/docs/ksef/user-guide/outgoing-invoices/send-outgoing-inv).
+
+:::note[info]
+To learn more about sending and monitoring outgoing invoices, see [**Send Outgoing Invoices to KSeF**](/docs/ksef/user-guide/outgoing-invoices/send-outgoing-inv).
+:::

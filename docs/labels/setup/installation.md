@@ -24,15 +24,15 @@ You may need assistance from your system or database administrator to obtain the
 
 1. Run the **CompuTec Labels Printing Manager installation file**.
 
-    ![alt text](configuration/media/company-installation-and-configuration/labels-install1.png)
+    ![CompuTec Labels Printing Manager Setup Wizard welcome screen with Next and Cancel buttons](configuration/media/company-installation-and-configuration/labels-install1.png)
 
 2. Select the installation path.
 
-    ![alt text](configuration/media/company-installation-and-configuration/labels-install2.png)
+    ![Setup Wizard screen for selecting the CompuTec Labels Printing Manager installation folder](configuration/media/company-installation-and-configuration/labels-install2.png)
 
 3. Continue the installation until the database configuration screen appears.
 
-    ![alt text](configuration/media/company-installation-and-configuration/labels-install3.png)
+    ![Setup Wizard screen shown before database configuration](configuration/media/company-installation-and-configuration/labels-install3.png)
 
 ## Step 2: Configure the database connection
 
@@ -43,7 +43,7 @@ To configure the database connection, follow these steps:
     - Microsoft SQL Server
     - SAP HANA
 
-    ![alt text](configuration/media/company-installation-and-configuration/labels-install6b.png)
+    ![Database configuration screen with Microsoft SQL Server and SAP HANA options](configuration/media/company-installation-and-configuration/labels-install6b.png)
 
 2. In **Server Address**, enter the address of your database server. 
 
@@ -55,11 +55,11 @@ To configure the database connection, follow these steps:
 
     - Go to **Administration** > **Choose/Create Company**.
 
-        ![alt text](configuration/media/company-installation-and-configuration/labels-install4.png)
+        ![SAP Business One Choose or Create Company window showing the server selection](configuration/media/company-installation-and-configuration/labels-install4.png)
 
     - After logging in, you will find the server address in the upper part of the screen.
 
-        ![alt text](configuration/media/company-installation-and-configuration/labels-install5.png)
+        ![SAP Business One login screen showing the server address at the top](configuration/media/company-installation-and-configuration/labels-install5.png)
 
     :::
 
@@ -70,7 +70,7 @@ To configure the database connection, follow these steps:
     :::info[note]
     You can find the License Server address and port in SAP Business One under **Administration** > **License** > **License Administration**.
 
-    ![alt text](configuration/media/company-installation-and-configuration/labels-install5b.png)
+    ![SAP Business One License Administration screen showing the License Server address and port](configuration/media/company-installation-and-configuration/labels-install5b.png)
 
     If you cannot access **License Administration** or do not know which **License Server** to use, contact your SAP Business One administrator.
     :::
@@ -83,21 +83,21 @@ To configure the database connection, follow these steps:
 
 5. Click **Connect**.
 
-    ![alt text](configuration/media/company-installation-and-configuration/labels-install7.png)
+    ![Database configuration screen with the Connect button](configuration/media/company-installation-and-configuration/labels-install7.png)
 
 6. CompuTec Labels Printing Manager validates the database connection. You can continue the installation after the connection is successfully established.
 
-    ![SCREENSHOT: Successful database connection](configuration/media/company-installation-and-configuration/labels-install7b.png)
+    ![Database configuration screen showing a successful connection](configuration/media/company-installation-and-configuration/labels-install7b.png)
 
 ## Step 3: Complete the installation
 
 1. Continue through the remaining installation steps.
 
-    ![alt text](configuration/media/company-installation-and-configuration/labels-install8.png)
+    ![Setup Wizard screen for continuing the CompuTec Labels Printing Manager installation](configuration/media/company-installation-and-configuration/labels-install8.png)
 
 2. Complete the installation.
 
-    ![alt text](configuration/media/company-installation-and-configuration/labels-install9.png)
+    ![Setup Wizard screen confirming completion of the CompuTec Labels Printing Manager installation](configuration/media/company-installation-and-configuration/labels-install9.png)
 
 ## Result
 

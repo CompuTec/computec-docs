@@ -72,7 +72,7 @@ To install CompuTec AppEngine, follow these steps:
 
         Your browser may show a warning that the connection is not secure. If you see this warning, can safely continue to `localhost` because CompuTec AppEngine is running locally on your computer.
 
-        ![alt text](media/safety1.png)
+        ![Browser privacy warning for localhost showing Your connection is not private, NET::ERR_CERT_AUTHORITY_INVALID, and a Continue to localhost unsafe link](media/safety1.png)
     :::
 
 ## Step 2: Set up CompuTec AppEngine database
