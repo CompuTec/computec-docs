@@ -16,6 +16,20 @@ When you create a supported outgoing document in SAP Business One, CompuTec KSeF
 
 After KSeF successfully processes the invoice, CompuTec KSeF stores the assigned KSeF number and makes the invoice verification QR code available.
 
+### How outgoing invoice processing works
+
+A typical outgoing invoice follows this process:
+
+**SAP Business One invoice > XML generation and validation > Sending to KSeF > KSeF processing > Successful KSeF invoice**
+
+1. You create the supported outgoing document in SAP Business One.
+2. CompuTec KSeF generates and validates the required XML.
+3. The invoice is sent to KSeF automatically or manually.
+4. KSeF processes the invoice.
+5. After successful processing, CompuTec KSeF stores the KSeF number and makes the invoice verification information available.
+
+You can monitor the process from the **SAP Business One** document or from **Output Invoices** in **CompuTec KSeF**.
+
 ## Before you start
 
 Before you send outgoing invoices, make sure:
@@ -133,23 +147,27 @@ To send an invoice from SAP Business One, follow these steps:
 
    ![SAP Business One invoice UDF Fields panel showing the default KSeF status NO - Domyślne.](media/send-outgoing-invo/ksef-invoice-send4.png)
 
-    :::info[note]
+   The following statuses can appear during KSeF processing in **SAP Business One**:
 
-    The following statuses can appear during KSeF processing:
-
-    - **ND - Nie dotyczy**: The document is not intended to be sent to KSeF.
-    - **NO - Domyślne**: The document follows the default sending behavior defined in the company configuration. Whether the document is sent depends on that configuration.
-    - **FO - Wymuś wysłanie**: Forces the document to be sent to KSeF regardless of the default configured behavior.
-    - **XE - Błąd generowania**: XML generation failed, for example because required document data is incorrect or incomplete.
-    - **XO - XML wygenerowane**: The XML file was generated successfully and the document is waiting to be sent.
-    - **SE - Błąd przesyłania**: An error occurred while sending the document to KSeF.
-    - **SO - Przesłane do KSeF**: The document was successfully sent to KSeF.
-
-    :::
+      - **ND - Nie dotyczy**: The document is not intended to be sent to KSeF.
+      - **NO - Domyślne**: The document follows the default sending behavior defined in the company configuration. Whether the document is sent depends on that configuration.
+      - **FO - Wymuś wysłanie**: Forces the document to be sent to KSeF regardless of the default configured behavior.
+      - **XE - Błąd generowania**: XML generation failed, for example because required document data is incorrect or incomplete.
+      - **XO - XML wygenerowane**: The XML file was generated successfully and the document is waiting to be sent.
+      - **SE - Błąd przesyłania**: An error occurred while sending the document to KSeF.
+      - **SO - Przesłane do KSeF**: The document was successfully sent to KSeF.  
 
 3. Add the document in SAP Business One.
 
    ![SAP Business One Add mode for the outgoing invoice.](media/send-outgoing-invo/ksef-invoice-send5.png)
+
+   :::info[note]
+
+   XML generation runs asynchronously after the SAP Business One document is saved. The corresponding record may therefore not appear immediately in **Output Invoices**, and the KSeF status in SAP Business One may take a short time to update.
+
+   Refresh the document or **Output Invoices** to display the latest processing information.
+
+   :::
 
 4. Refresh the document until the status changes to **XO – XML wygenerowane**.
 
@@ -177,7 +195,7 @@ To send an invoice from SAP Business One, follow these steps:
 
     After a successful operation, you should see **SO - Przesłane do KSeF** status.
 
-   ![SAP Business One invoice UDF Fields panel showing SO - Przesłane do KSeF.](media/send-outgoing-invo/ksef-invoice-send11.png)
+      ![SAP Business One invoice UDF Fields panel showing SO - Przesłane do KSeF.](media/send-outgoing-invo/ksef-invoice-send11.png)
 
 ## About Integration Status
 
@@ -188,6 +206,12 @@ The **Integration Status** field in CompuTec KSeF lets you monitor the progress 
 The main processing flow is: **Open** > **Processing** > **Submitted** > **Success**.
 
 Processing can also end with **Error** or **Received Error**.
+
+:::info[note]
+The **KSeF status** displayed in the **SAP Business One UDF** and **Integration Status** displayed in **CompuTec KSeF** provide information from different parts of the processing workflow:  
+      - Use the **SAP Business One KSeF status** for a quick indication of the document's KSeF processing state from the source document.
+      - Use **Integration Status** in **CompuTec KSeF** when you need to monitor the KSeF processing workflow in more detail.
+:::
 
 ### Open
 

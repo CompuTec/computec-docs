@@ -96,7 +96,7 @@ Assign the required KSeF authorizations according to each user's responsibilitie
 For example, users can have access to outgoing invoices, incoming invoices, or administrative configuration.
 
 :::note[info]
-See **Configure SAP Business One Authorizations for CompuTec KSeF**.
+See [**Configure SAP Business One Authorizations for CompuTec KSeF**](/docs/ksef/administrator-guide/configuration/config-sap-auth).
 :::
 
 ## Result

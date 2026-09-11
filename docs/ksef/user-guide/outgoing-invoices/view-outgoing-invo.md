@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # View Outgoing Invoices
 
-Use **KSeF Output Invoice Details** in CompuTec KSeF to review an outgoing invoice and its KSeF processing information.
+Use **KSeF Output Invoice Details** in **CompuTec KSeF** to review an outgoing invoice and its KSeF processing information.
 
 From this page, you can:
 
@@ -20,7 +20,7 @@ From this page, you can:
 
 The information available on the page depends on the invoice's current processing status.
 
-## Open the invoice details
+## Open the invoice details in CompuTec KSeF
 
 1. Log in to the **CompuTec AppEngine Launchpad**.
 
@@ -44,6 +44,17 @@ The information available on the page depends on the invoice's current processin
 
 6. The **KSeF Output Invoice Details** page opens.
 
+:::note[info]
+You can also open the **CompuTec KSeF** details for an outgoing invoice directly from the related **SAP Business One** document.
+
+1. Open the outgoing document in **SAP Business One**.
+2. Right-click anywhere in the document.
+3. Select **KSeF Communication**.
+4. Open the KSeF invoice details.
+5. The **KSeF Output Invoice Details** page opens for the selected SAP Business One document.
+
+:::
+
 ## Check the invoice status
 
 The top of the page provides a quick overview of the invoice and its current processing state.
@@ -58,10 +69,15 @@ You can see:
 
 You can also select **Refresh** to display the latest information.
 
-:::info[note]
-
 Some information, such as the KSeF number and verification QR code, becomes available only after the invoice reaches the appropriate processing stage.
 
+:::info[note]
+**XML Generation Status** and **Integration Status** represent different stages of invoice processing.
+
+- **XML Generation Status** indicates whether CompuTec KSeF successfully prepared and validated the XML document required by KSeF.
+- **Integration Status** indicates the progress of the invoice during communication with KSeF.
+
+A successfully generated XML document does not mean that the invoice has already been accepted by KSeF. For example, **XML Generation Status** can be **Success** while the invoice is still waiting to be sent or processed by KSeF.
 :::
 
 ## General
