@@ -105,11 +105,11 @@ To assign the **OpenTelemetry** profile to the **Computec AppEngine company**, f
 
 1. Go to **CompuTec AppEngine Administration Panel** > **Configuration**.
 
-    ![alt text](media/grafana/gr-con1.png)
+    ![CompuTec AppEngine Administration Panel Configuration page showing the Configuration section selected in the left navigation and a Companies table with PF Demo (GB), company schema PFDEMOGB, active status, background processing, and one AppEngine](media/grafana/gr-con1.png)
 
 2. Choose the **company name** from the list to see its details.
 
-    ![alt text](media/grafana/gr-con2.png)
+    ![CompuTec AppEngine Administration Panel Configuration page showing the PF Demo GB company row with company schema PFDEMOGB, active status, background processing status, and one AppEngine; expanded details below show Database User SYSTEM and SAP User manager](media/grafana/gr-con2.png)
 
     :::info[note]
     You can assign **OpenTelemetry Profiles**:
@@ -119,27 +119,27 @@ To assign the **OpenTelemetry** profile to the **Computec AppEngine company**, f
 
 3. To assign the default profile to all users in the company, choose the **company name** from the list to see its details.
 
-    ![alt text](media/grafana/gr-con2.png)
+    ![CompuTec AppEngine Administration Panel Configuration page showing the PF Demo GB company row with company schema PFDEMOGB, active status, background processing status, and one AppEngine; expanded details below show Database User SYSTEM and SAP User manager](media/grafana/gr-con2.png)
 
 4. Click the **edit icon** next to **Telemetry Profile**.
 
-    ![alt text](media/grafana/gr-con3.png)
+    ![CompuTec AppEngine Administration Panel Configuration page for PF Demo (GB), with the Telemetry Profile edit button highlighted by a large blue arrow](media/grafana/gr-con3.png)
 
 5. Choose the **OpenTelemetry profile** from the list.
 
-    ![alt text](media/grafana/gr-con4.png)
+    ![OpenTelemetry profile selection dialog showing the grafana.com_all profile and its configuration description, including text about sending logs, metrics, and traces to an OTLP server and replacing the endpoint and header values; a blue arrow points to the profile settings in the JSON editor](media/grafana/gr-con4.png)
 
 6. Done! Now you can see the **Telemetry Profile** name assigned to your company.
 
-    ![alt text](media/grafana/gr-con5.png)
+    ![CompuTec AppEngine Administration Panel Configuration page for PF Demo (GB), showing the assigned Telemetry Profile grafana.com_all; a large blue arrow points to the profile name in the company details](media/grafana/gr-con5.png)
 
 7. To assign the profile for a specific user, navigate to **Telemetry Profiles** in your company details.
 
-    ![alt text](media/grafana/gr-con6.png)
+    ![CompuTec AppEngine Configuration page for PF Demo (GB), with the Telemetry Profiles tab selected; the page shows an empty Telemetry Profiles table and an Assign profile link](media/grafana/gr-con6.png)
 
 8. Click **Assign profile**.
 
-    ![alt text](media/grafana/gr-co67.png)
+    ![CompuTec AppEngine Configuration page for PF Demo (GB) with the Telemetry Profiles tab selected; an empty Telemetry Profiles table is shown, and the Assign profile link at the upper right is highlighted by a large blue arrow](media/grafana/gr-co67.png)
 
 9. Type the **user name**, click the **edit icon** to assign the chosen **Telemetry Profile**, and click **Create Assignment**.
 
@@ -151,11 +151,11 @@ To assign the **OpenTelemetry** profile to the **Computec AppEngine company**, f
 
 1. In Grafana, click **Launch Grafana Cloud**.
 
-    ![alt text](media/grafana/stack1.png)
+    ![Grafana Manage Stack page for my-stack, showing the Grafana Cloud section and a Launch Grafana Cloud button highlighted by a large blue arrow](media/grafana/stack1.png)
 
 2. Navigate to **Explore**.
 
-    ![alt text](media/grafana/stack2.png)
+    ![Grafana Cloud Explore page with Explore selected in the left navigation; the dark interface shows a traces query panel with Search, TraceQL, and Service Graph tabs, a Service Name filter, and navigation and query controls across the top](media/grafana/stack2.png)
 
 3. Choose the **exploration method** from the list:
 
@@ -163,7 +163,7 @@ To assign the **OpenTelemetry** profile to the **Computec AppEngine company**, f
     - ``logs``: Inspect logs
     - ``prom``: Analyze metrics
 
-    ![alt text](media/grafana/stack3.png)
+    ![Grafana Explore interface showing the grafanacloud data source selected for traces; the dark page has Explore highlighted in the left navigation, a query panel with Search, TraceQL, and Service Graph tabs, a Service Name filter, and a blue arrow pointing to the selected traces data source](media/grafana/stack3.png)
 
 4. When viewing traces, use **Service Name** to filter the results by service.  
     Available service names depend on your environment and configuration.
