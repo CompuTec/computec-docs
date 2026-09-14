@@ -14,6 +14,14 @@ You can find all [download links](/docs/appengine/2.0/releases/plugins/pdc/downl
 However, we strongly recommend using **CompuTec PDC 4.0 Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec PDC 4.2609.2
+
+**Release Date: 14 September 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Fixed | Tasks | Fixed an issue where CompuTec PDC could freeze when closing a task with no recorded time using **Thumbs up**. The task now closes and is removed correctly. |
+
 ## CompuTec PDC 4.2607.2
 
 **Release Date: 23 July 2026**

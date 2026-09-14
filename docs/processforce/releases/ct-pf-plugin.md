@@ -11,6 +11,28 @@ You can find all download links and release notes for the latest available **Com
 However, we strongly recommend using **CompuTec ProcessForce Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec ProcessForce 3.2609.2
+
+**Release Date: 14 September 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | Pick Order | Added an option to use the started batch first when consuming components. When enabled, **CompuTec ProcessForce** finishes the batch already used for the **Manufacturing Order** before selecting the next batch according to **FEFO**. |
+| Added | Orderless Production | You can now enter finished goods batch numbers manually, and **Manufacturing Orders** created through **Orderless Production** include a reference to their source document for easier tracking. |
+| Improved | Orderless Production | Improved **Orderless Production** processing, API handling, and error reporting. Processing is more reliable and reduces database locking, quantities and batch numbers provided through the API are handled correctly, and error messages identify the affected item, Bill of Materials, or missing serial template. |
+| Improved | Orderless Production | Improved item handling in **Orderless Production**. Multiple items can now be selected when creating a template, and related co-products and scrap are included with the correct quantities when applicable. |
+| Improved | Quality Control | Improved the **QC Test** and **NCMR workflow** to keep related documents synchronized and prevent invalid status changes. QC Tests move to `Waiting NCMR` when an NCMR is created and can continue after it is closed, with additional validation to prevent tests from becoming stuck. |
+| Improved | Pick Receipt | Improved **Pick Receipt** performance, including faster processing of item and batch information. |
+| Improved | Routings | **Remarks** in Routings and Production Processes can now contain up to 500 characters. |
+| Improved | Bill of Materials | Improved item costing data retrieval and handling of **Bills of Materials** that cannot be used as **Manufacturing Order headers**. |
+| Fixed | Batch Management | Improved batch generation and template handling. Expiry and inspection dates from evaluation templates are now calculated correctly, missing template results no longer stop batch generation, and default batch and serial templates are validated to prevent configuration-related errors. |
+| Fixed | Quality Control | Complaints created from **Pick Receipt QC Tests** now show the correct **Production: Pick Receipt** transaction type. |
+| Fixed | Manufacturing Orders | Fixed issues that could prevent **Manufacturing Orders** from being found or processed correctly, including item selection for items with an active **BOM revision** and empty lists in the **Document Status Change Wizard** and **Close Manufacturing Orders**. |
+| Fixed | Pick Order | Improved **Pick Order** processing by preventing unexpected item selection windows, correctly retaining entered quantities, and allowing Pick Orders containing Maintenance Order lines to be updated without errors or rollbacks. |
+| Fixed | Scheduling | The **Scheduling Board** now correctly handles **Sales Orders** containing text lines when opening the board and creating **Manufacturing Orders**. |
+| Fixed | Operations | The operation relationship map now shows the planned and actual quantity for each individual operation instead of combining quantities from multiple operations. |
+| Fixed | ProcessForce Import | **Bill of Materials** imports now identify the specific line with an incorrect sequence, making import errors easier to find and correct. |
+
 ## CompuTec ProcessForce 3.2609.1
 
 **Release Date: 2 September 2026**
