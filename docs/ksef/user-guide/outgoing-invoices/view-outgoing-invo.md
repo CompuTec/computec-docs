@@ -50,8 +50,12 @@ You can also open the **CompuTec KSeF** details for an outgoing invoice directly
 1. Open the outgoing document in **SAP Business One**.
 2. Right-click anywhere in the document.
 3. Select **KSeF Communication**.
-4. Open the KSeF invoice details.
-5. The **KSeF Output Invoice Details** page opens for the selected SAP Business One document.
+
+   ![SAP Business One sales invoice with the context menu open and Komunikacja KSeF selected; the invoice shows customer, document number, status, posting date, and KSeF user-defined fields including KSEF - Numer, KSEF - dokument wych., KSEF - dokument przych., KSEF - Błąd, KSEF - Status, KSEF - Plik XML, and KSEF - QR kod](media/view-outgoing-invo/ksef-out1.png)
+
+4. The **KSeF Output Invoice Details** page opens for the selected SAP Business One document.
+
+   ![CompuTec KSeF Output Invoice Details screen in the General tab. The central invoice panel shows Integration Status Otwarty, XML Generation Status Sukces, and Offline Mode Nie, with buttons Generuj Kody Offline, Wyślij do KSeF, Odśwież, and Wstecz. The SAP Business One UDF panel on the right lists KSEF - Numer, KSEF - dokument wych., KSEF - dokument przych., KSEF - Błąd, KSEF - Status, KSEF - Plik XML, and KSEF - QR kod.](media/view-outgoing-invo/ksef-out2.png)
 
 :::
 
