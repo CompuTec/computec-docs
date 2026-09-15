@@ -1,37 +1,8 @@
 ---
-sidebar_position: 5
+sidebar_position: 9
 ---
 
-# Other Functions
-
-This section provides an overview of additional utilities that enhance the application's functionality. By leveraging these features, users can streamline workflows, troubleshoot issues, and optimize document storage.
-
----
-
-## Logs tab
-
-![Log](./media/other-functions/ct-labels-logs.webp)
-
-The Logs tab provides a log viewer for tracking system events. Users can select a specific date and logging source (service, installation, or manager) to review relevant logs. On the right side, there are quick options for exporting logs to a file for further analysis.
-
-## Requests tab
-
-![Requests](./media/other-functions/ct-labels-requests.webp)
-
-The Requests tab displays database requests from `CT_LP_Requests`. Users can filter requests by date (up to 100 entries), company, requester, status, transaction type, and printer.
-
-Right-clicking on a request provides additional options:
-
-- **Resend Request**: Creates a new request.
-- **Retry Request**: Attempts to re-run the exact request, changing its status to "C."
-
-    ![Retry](./media/other-functions/ct-labels-retry.webp)
-
-Users can also view detailed request parameters, information, and error logs by dragging the upper strip to the right-hand side.
-
-    ![Request Details](./media/other-functions/ct-labels-request-details.webp)
-
-## Customizing Output Path and File Name
+# Customize Output Path and File Name
 
 Crystal Printer offers a flexible way to generate and save print outputs as PDF files. By leveraging dynamic parameters and customizable paths, users can streamline their label printing process, ensuring efficient organization and easy retrieval of files.
 
@@ -45,7 +16,7 @@ By default, PDF files are saved to: `C:\ProgramData\CompuTec\CT Label Printing\R
 
 However, you can customize both the file path and the file name by entering a custom value in the designated field. The application supports parameters (defined in the mapping table) and special placeholders for dynamic customization.
 
-### Supported Special Parameters
+## Supported Special Parameters
 
 You can use the following parameters to define dynamic file paths and names:
 
@@ -57,7 +28,7 @@ You can use the following parameters to define dynamic file paths and names:
 | @PrinterCode | Printer Code |
 | @CCNo | Current number of label |
 
-### Configuration Examples
+## Configuration Examples
 
 You can see the below examples for configuration:
 
@@ -74,5 +45,3 @@ You can see the below examples for configuration:
 - If a file name conflict occurs (duplicate names), the system will automatically append a suffix in the format: "_@CCNo" (e.g., 450_1.pdf).
 - The default save path is: C:\ProgramData\CompuTec\CT Label Printing\Reports\Crystal
 - This feature is available in CompuTec Labels version 4.7.1.37 or newer.
-
----

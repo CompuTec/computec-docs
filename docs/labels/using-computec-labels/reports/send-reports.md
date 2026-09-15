@@ -14,7 +14,7 @@ The email body can also contain HTML content, including tables returned by SQL q
 
 Before configuring email sending:
 
-- Configure an email account in CompuTec Labels. Read more
+- Configure an email account in CompuTec Labels. [Read more](/docs/labels/setup/configuration/email-config)
 - Make sure the email account can send messages successfully.
 
 ## Enable email sending
