@@ -326,7 +326,7 @@ Users can also interact with chart elements to view summaries and download the d
 
 - When the page is refreshed, all current report settings are saved automatically.
 - After configuring the report, you can save it as a new variant.
-- The new Variant will appear in the **Analytics Variants List**, where it can be opened and used later. [Read more](/docs/appengine/appengine-users-guide/analytical-page/overview#analytics-variants-list)
+- The new Variant will appear in the **Analytics Variants List**, where it can be opened and used later. [Read more](/docs/appengine/appengine-users-guide/analytical-page/overview)
 
 :::
 

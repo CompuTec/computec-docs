@@ -25,7 +25,7 @@ You need to install the following applications:
 1. **CompuTec Gateway Plugin**:
 
     - **For CompuTec AppEngine 2.0**
-        - Download: [Click here to navigate to the page](/docs/labels/releases/download/#appengine-computec-labels-plugin).
+        - Download: [Click here to navigate to the page](/docs/labels/releases/download).
         - Installation guide: [Click here to navigate to the page](/docs/appengine/2.0/administrators-guide/configuration-and-administration/overview#plugins).
 
     - **For CompuTec AppEngine 3.0**
@@ -33,7 +33,6 @@ You need to install the following applications:
 
 2. **CompuTec Gateway Manager**
 
-    - Download: [Click here to navigate to the page](/docs/labels/releases/download/#computec-gateway-service).
+    - Download: [Click here to navigate to the page](/docs/labels/releases/download).
 
         ![Installation](./media/installation.png)
-

@@ -17,7 +17,7 @@ Backflush automatically calculates and issues component quantities based on the 
 
 Backflush is **not recommended** for production processes that require manual quantity adjustments or rounding—for example, when raw materials must always be issued in full boxes, bags, or packages. In these cases, use the **Manual** issue method instead.
 
-For technical details about the backflush calculation algorithm and the underlying formula, see the [Developer Guide](/docs/processforce/2.0/developer-guide/processforce-api/processforce-api-tt/general/#:~:text=Caution%20when%20Using%20Backflushing%3A).
+For technical details about the backflush calculation algorithm and the underlying formula, see the [Developer Guide](/docs/processforce/2.0/developer-guide/processforce-api/processforce-api-tt/general).
 :::
 
 Before enabling backflushing, verify that:

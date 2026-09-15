@@ -164,7 +164,7 @@ To configure a connection to the SLD server, follow these steps:
     <summary>Using **CompuTec Service Manager**</summary>
     <div>
     <u></u>
-        If you have [**CompuTec Service Manager**](/docs/processforce/administrator-guide/licensing/license-server/configure-computec-service-manager/#starting-computec-service-manager) installed:
+        If you have [**CompuTec Service Manager**](/docs/processforce/administrator-guide/licensing/license-server/configure-computec-service-manager) installed:
         - Run **Command Prompt** on your computer, type: `hostname`, and press **Enter**.
         - Here you’ll find the first part of your server address. In our example, it’s `CTL000`.
 
