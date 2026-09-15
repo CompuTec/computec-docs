@@ -87,7 +87,7 @@ For more information, see:
 If a request does not produce the expected result, use **Requests** to identify the request and **Logs** to review its processing information.
 
 :::note[info]
-For more information, see [**Troubleshoot request processing with logs**](/docs/labels/setup/logs/logs).
+For more information, see [**Troubleshoot request processing with logs**](/docs/labels/setup/logs/).
 :::
 
 ## Before you start
