@@ -77,8 +77,8 @@ You can use it to:
 :::note[info]
 For more information, see:
 
-- [**Review label requests**](/docs/labels/using-computec-labels/requests/review-requests)
-- [**Clean up old requests in CompuTec Labels**](/docs/labels/using-computec-labels/requests/cleanup-old-requests)
+- [**Review label requests**](/docs/labels/setup/requests/review-requests)
+- [**Clean up old requests in CompuTec Labels**](/docs/labels/setup/requests/cleanup-old-requests)
 
 :::
 

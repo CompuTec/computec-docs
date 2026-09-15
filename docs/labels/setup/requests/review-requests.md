@@ -39,4 +39,4 @@ If you need more information about request processing, review the related logs.
 
 If you need to investigate how a request was processed, see **Troubleshoot request processing with logs**.
 
-To permanently remove old requests and their related data from the **CTLABEL** database, use the **Request Cleanup Wizard**. For more information, see [**Clean up old requests in CompuTec Labels**](/docs/labels/using-computec-labels/requests/cleanup-old-requests).
+To permanently remove old requests and their related data from the **CTLABEL** database, use the **Request Cleanup Wizard**. For more information, see [**Clean up old requests in CompuTec Labels**](/docs/labels/setup/requests/cleanup-old-requests).
