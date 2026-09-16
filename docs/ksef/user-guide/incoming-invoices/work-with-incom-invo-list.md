@@ -12,7 +12,7 @@ You can receive new invoices, find specific documents using filters, customize t
 
 Before you work with incoming invoices, make sure that:
 
-- [CompuTec KSeF is configured](/docs/ksef/administrator-guide/configuration/configuration) to retrieve incoming documents.
+- [CompuTec KSeF is configured](/docs/ksef/administrator-guide/configuration) to retrieve incoming documents.
 - The required incoming document category is active.
 - The required incoming-document [background processing jobs](/docs/ksef/administrator-guide/configuration/background-processing) are enabled.
 - You have the required [SAP Business One authorizations](/docs/ksef/administrator-guide/configuration/config-sap-auth) for incoming KSeF invoices.
@@ -72,7 +72,7 @@ Retrieving an invoice does not automatically create or post an SAP Business One 
 
     :::
 
-2. (Optional) Use the available filters to find a specific document. [Read more](/docs/ksef/user-guide/incoming-invoices/process-incoming-inv#filter-the-incoming-invoice-list)
+2. (Optional) Use the available filters to find a specific document. [Read more](/docs/ksef/user-guide/incoming-invoices/work-with-incom-invo-list#filter-incoming-invoices)
 
 3. Select the invoice.
 
