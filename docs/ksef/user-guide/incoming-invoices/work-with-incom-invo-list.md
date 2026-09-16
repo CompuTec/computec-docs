@@ -270,5 +270,4 @@ After you select an invoice, you can open its details and continue with Business
 
 ## Next steps
 
-- See **Prepare an incoming invoice for processing** to review the processing state, assign the Business Partner, and verify the document information.
-- See **Match incoming invoice lines** to review and assign SAP Business One item codes or G/L accounts.
+- See [**Prepare an incoming invoice for processing**](/docs/ksef/user-guide/incoming-invoices/prepare-for-process) to review the processing state, assign the Business Partner, and verify the document information.
