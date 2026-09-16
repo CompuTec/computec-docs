@@ -1,0 +1,395 @@
+---
+sidebar_position: 1
+---
+
+# Process Incoming Invoices
+
+Use **CompuTec KSeF** to process invoices received from KSeF and create the corresponding documents in **SAP Business One**.
+
+CompuTec KSeF retrieves incoming invoices from KSeF and processes them according to the configured incoming document category. During processing, the system can determine the Business Partner, document type, invoice lines, and related SAP Business One data.
+
+You can review the processing result before completing the document workflow in SAP Business One.
+
+## Before you start
+
+Before you process incoming invoices, make sure that:
+
+- [CompuTec KSeF is configured](/docs/ksef/administrator-guide/configuration/configuration) to retrieve incoming documents.
+- The required incoming document category is active.
+- The required incoming-document [background processing jobs](/docs/ksef/administrator-guide/configuration/background-processing) are enabled.
+- You have the required [SAP Business One authorizations](/docs/ksef/administrator-guide/configuration/config-sap-auth) for incoming KSeF invoices.
+
+:::info[note]
+
+How an incoming invoice is processed depends on your company's CompuTec KSeF configuration. Some processing steps can be performed automatically, while others may require user action.
+
+:::
+
+## How incoming invoice processing works
+
+A typical incoming invoice follows this process:
+
+**KSeF > CompuTec KSeF > SAP Business One draft > SAP Business One document**
+
+CompuTec KSeF retrieves the invoice from KSeF and uses the configured processing rules to prepare it for SAP Business One.
+
+Depending on the configuration, this can include:
+
+- Determining the Business Partner.
+- Determining the SAP Business One document type.
+- Processing invoice lines.
+- Matching items.
+- Matching base documents.
+- Applying configured field mappings.
+- Creating a SAP Business One draft.
+
+After the draft is created, you can review it and continue the standard SAP Business One document process.
+
+## Open incoming invoices
+
+1. In SAP Business One, go to **Purchasing A/P** > **KSeF – Incoming Documents**.
+
+    ![alt text](media/process/ksef-inc1e.png)
+
+2. Open **Input Invoices**.
+
+    ![alt text](media/process/ksef-inc2e.png)
+
+3. You will see a list of incoming invoices.
+
+    ![alt text](media/process/ksef-inc14e.png)
+
+    :::info[Note]
+    If you do not see the expected invoices, click **Receive Invoices**. CompuTec KSeF checks when invoices were last retrieved and downloads any new invoices available since that time.
+
+    ![alt text](media/process/ksef-inc3e.png)
+
+    At this stage, the retrieved invoices are stored in CompuTec KSeF for further processing. No SAP Business One document, including a draft or other temporary document, is created or posted automatically when the invoices are retrieved.
+    :::
+
+## Select an invoice to process
+
+1. Find the invoice you want to process in the **Input Invoices** list.
+
+    :::note[info]
+    The incoming documents list is automatically sorted with the most recent documents at the top. You can use **Sort** option to choose your sorting.
+
+    ![alt text](media/process/ksef-inc17e.png)
+
+    :::
+
+2. (Optional) Use the available filters to find a specific document. [Read more](/docs/ksef/user-guide/incoming-invoices/process-incoming-inv#filter-the-incoming-invoice-list)
+
+3. Select the invoice.
+
+   ![alt text](media/process/ksef-inc4e.png)
+
+4. The invoice details open.
+
+   ![alt text](media/process/ksef-inc5e.png)
+
+## Filter and organize the incoming invoice list
+
+Use the filtering, column visibility, sorting, and saved view options to control which incoming invoices and information are displayed in the **Input Invoices** list.
+
+This can help you focus on invoices that require your attention and keep the list suitable for your regular workflow.
+
+### Filter incoming invoices
+
+Use the filters above the **Input Invoices** list to find the documents you want to work with.
+
+You can filter the list by:
+
+- **Reference Number** – The invoice number assigned by the supplier.
+- **KSeF Number** – The unique invoice number assigned by KSeF.
+- **Integration Status** – The current stage of invoice processing.
+- **NIP** – The supplier's tax identification number (NIP).
+- **Doc. Type** – The KSeF document type, for example **VAT**, **KOR**, **ZAL**, **ROZ**, **UPR**, **KOR_ZAL**, or **KOR_ROZ**.
+- **Category** – The processing category assigned to the invoice, for example **PURCHASE_ITEMS** or **PURCHASE_SERVICE**.
+- **BP Name** – The name of the **Business Partner** associated with the invoice.
+- **Invoice Date Range** – The invoice date or date range.
+
+![alt text](media/process/ksef-inc6e.png)
+
+After entering or selecting the required filter values, click **Go** to apply them.
+
+Click **Clear** to remove the current filter values.
+
+#### Integration statuses
+
+You can use **Integration Status** to find invoices at a specific stage of processing.
+
+The following statuses are available:
+
+- **Received** – The invoice has been retrieved and is available in CompuTec KSeF. No SAP Business One document has been created yet.
+- **Processed** – The invoice has been initially processed. CompuTec KSeF has determined the relevant items or accounts, and the invoice can continue to the next processing steps.
+- **Matched** – The invoice has been matched.
+- **Error** – An error occurred during processing.
+- **Cancelled** – Processing of the invoice was cancelled.
+- **Draft** – A draft document has been created in SAP Business One, but the final document has not yet been posted.
+- **Finished** – The final document created from the imported invoice has been posted in SAP Business One.
+- **Partially Processed** – Some invoice information was matched successfully, but additional information requires manual processing.
+
+#### Adapt the available filters
+
+You can choose which filters are displayed above the invoice list.
+
+1. Click **Adapt Filters**.
+
+    ![alt text](media/process/ksef-inc12e.png)
+
+2. Select the filters you want to display.
+
+    ![alt text](media/process/ksef-inc13e.png)
+
+3. Click **OK**.
+
+This lets you keep only the filters that are useful for your regular work.
+
+### Choose which columns are displayed
+
+You can customize the **Input Invoices** list by choosing which columns are visible.
+
+1. Click the **Column Visibility** icon above the invoice list.
+
+    ![alt text](media/process/ksef-inc15e.png)
+
+2. In **Column Visibility**, select the columns you want to display.
+
+    ![alt text](media/process/ksef-inc16e.png)
+
+3. Click **Accept**.
+
+Use this option to keep the information most relevant to your work visible in the invoice list.
+
+### Sort incoming invoices
+
+You can change the order in which invoices are displayed.
+
+1. Click **Sort** above the invoice list.
+
+    ![alt text](media/process/ksef-inc17e.png)
+
+2. In **Sort by**, select the field you want to use for sorting.
+
+3. In **Sort order**, select **Ascending** or **Descending**.
+
+   ![Sort settings](media/process/ksef-inc18e.png)
+
+4. Click **Accept**.
+
+The invoice list is displayed using the selected sorting order.
+
+### Save and manage filtered views
+
+#### Save a filtered view
+
+If you regularly work with the same group of incoming invoices, you can save the current list configuration as a view.
+
+For example, you can create a **Received** view that displays only invoices with the **Received** integration status. This lets you focus on newly retrieved invoices without displaying invoices that have already progressed to statuses such as **Finished**.
+
+To create a saved view:
+
+1. Configure the filters you want to use.
+
+   For example, set **Integration Status** to **Received**.
+
+2. Click **Go** to apply the filters.
+
+3. Click the arrow next to the current view name, for example **Standard**.
+
+   ![alt text](media/process/ksef-inc7e.png)
+
+4. Click **Save As**.
+
+   ![alt text](media/process/ksef-inc8e.png)
+
+5. Enter a name for the view, for example **Received**.
+
+6. To use this view automatically when you open the list, select **Set as Default**.
+
+7. Click **Save**.
+
+![alt text](media/process/ksef-inc9e.png)
+
+If you set the view as default, CompuTec KSeF opens the incoming invoice list using that view. For example, a default **Received** view can show invoices that still need to be processed without displaying invoices that have already reached **Finished**.
+
+:::info[note]
+
+A saved view changes how the invoice list is displayed. It does not change an invoice, its integration status, or its processing state.
+
+:::
+
+#### Switch between views
+
+To display the list using another saved view:
+
+1. Click the arrow next to the current view name.
+2. Select the required view.
+
+For example, select **Received** to display the list using the filters saved in that view.
+
+Select **Standard** to return to the standard view.
+
+#### Manage saved views
+
+To manage your saved views:
+
+1. Click the arrow next to the current view name.
+2. Click **Manage**.
+
+    ![alt text](media/process/ksef-inc10epl.png)
+
+3. Review or modify the available views.
+
+    ![alt text](media/process/ksef-inc11epl.png)
+
+4. Save your changes.
+
+Use view management when you want to change your saved views or select a different default view.
+
+## Work with selected incoming invoices
+
+Select one or more invoices on the **Input Invoices** list to perform an action on the selected documents.
+
+![alt text](media/process/ksef-inc19e.png)
+
+After you select at least one invoice, the following options become available:
+
+- **Preview PDF** – Opens a PDF preview of the selected invoice.
+- **Process Selected** – Processes the selected invoices according to the configured incoming document processing rules.
+- **Cancel Selected** – Cancels further processing of the selected invoices. Use this option, for example, for invoices that have already been posted in SAP Business One, contain incorrect data, or should not be processed because they are not recognized as legitimate business documents.
+
+:::info[note]
+
+After you cancel an invoice, its **Integration Status** changes to **Cancelled**, indicating that the invoice is not intended for further processing in CompuTec KSeF.
+
+:::
+
+## Check the processing state
+
+Before taking action, review the processing information displayed for the invoice.
+
+The incoming invoice details show the current processing state and the result of the individual processing stages.
+
+[image]
+
+Use this information to determine whether the invoice is ready for the next step or requires attention.
+
+## Review Business Partner determination
+
+CompuTec KSeF attempts to match the seller from the KSeF invoice to a Business Partner in SAP Business One.
+
+Open the Business Partner information and verify that the correct Business Partner was determined.
+
+[image]
+
+The matching method depends on the incoming document category configuration.
+
+:::info[note]
+
+Business Partner determination rules are configured by an administrator. For more information, see **Configure CompuTec KSeF Incoming Document Categories**.
+
+:::
+
+## Review the document information
+
+Review the information determined for the SAP Business One document.
+
+Depending on the invoice and configuration, the page provides information such as:
+
+- SAP Business One document type.
+- Document subtype.
+- Document number.
+- Issue date.
+- Currency.
+- Net amount.
+- VAT amount.
+- Gross amount.
+
+[image]
+
+Verify that the determined document information corresponds to the incoming KSeF invoice.
+
+## Review invoice lines
+
+Open **Invoice Items** to review the lines retrieved from the KSeF invoice.
+
+[image]
+
+Depending on the configuration and processing result, you can review the KSeF line information together with the SAP Business One data determined for the line.
+
+Check that the required lines have been processed correctly before continuing.
+
+## Review base document matching
+
+If your incoming-document configuration uses base document matching, review the SAP Business One documents matched to the incoming invoice.
+
+[image]
+
+CompuTec KSeF uses the configured matching rules to identify possible base documents.
+
+Verify the proposed relationship before continuing with the SAP Business One document process.
+
+:::info[note]
+
+The method used to find base documents depends on the **Base Document Configuration** of the incoming document category.
+
+:::
+
+## Create or review the SAP Business One draft
+
+Depending on the incoming document category configuration, CompuTec KSeF can prepare a SAP Business One draft for the incoming invoice.
+
+When a draft is available, open it and verify the document before creating the final SAP Business One document.
+
+Check:
+
+- Business Partner.
+- Document type.
+- Document dates.
+- Invoice lines.
+- Quantities.
+- Prices and amounts.
+- VAT information.
+- Base-document references, when applicable.
+
+[image]
+
+## Create the final SAP Business One document
+
+After verifying the draft, create the final SAP Business One document according to your standard business process.
+
+CompuTec KSeF tracks the processing relationship between the incoming KSeF invoice and the related SAP Business One document.
+
+## Check the result
+
+Return to the incoming invoice details and refresh the information.
+
+Verify that the invoice reflects the latest processing state and that the related SAP Business One document information is available.
+
+## If the invoice cannot be processed
+
+If processing does not complete as expected:
+
+1. Open the incoming invoice details.
+2. Check the current processing information.
+3. Review Business Partner determination.
+4. Review the determined document information.
+5. Check the invoice lines.
+6. Review base document matching, if applicable.
+7. Correct the relevant SAP Business One data or contact the administrator responsible for the incoming document category configuration.
+
+For more detailed processing information, see **View Incoming Invoice Details**.
+
+## Result
+
+The incoming KSeF invoice is processed according to the configured incoming document category.
+
+After processing is complete, you can continue working with the corresponding document in SAP Business One.
+
+## Next steps
+
+- See **View Incoming Invoice Details** to learn how to review KSeF data and processing information for an incoming invoice.
+- Open the related SAP Business One document to continue your standard purchasing process.
+- If documents are not processed as expected, contact the administrator responsible for **CompuTec KSeF Incoming Document Categories**.
