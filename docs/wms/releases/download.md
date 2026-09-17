@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 import Tabs from "@theme/Tabs";
@@ -7,7 +7,7 @@ import TabItem from "@theme/TabItem";
 
 import Releases10 from "../releases-10.json";
 
-# Download
+# Download CompuTec WMS
 
 Here you can download all required CompuTec WMS files.
 
@@ -19,7 +19,7 @@ Here you can download all required CompuTec WMS files.
 :::
 
 :::warning CompuTec WMS Server restart
-    It is required to restart CompuTec Server WMS service at least once in 24 hours in order to make it work properly. Click [here](../administrator-guide/installation/wms-server/overview.md#computec-wms-server-automatic-restart) to find out how to set it up using Windows Task Scheduler.
+    It is required to restart CompuTec Server WMS service at least once in 24 hours in order to make it work properly. Click [this link](../administrator-guide/installation/wms-server/overview.md#computec-wms-server-automatic-restart) to find out how to set it up using Windows Task Scheduler.
 :::
 
 ## Current Releases
@@ -41,7 +41,7 @@ Released on 31.03.2026
     CompuTec WMS Settings > User Settings
 :::
 
-Click [here](/docs/appengine/2.0/releases/plugins/wms-stock-counting/download) to get CompuTec AppEngine plugin for Stock Counting and Compatibility Tools.
+Click [this link](/docs/appengine/2.0/releases/plugins/wms-stock-counting/download) to get CompuTec AppEngine plugin for Stock Counting and Compatibility Tools.
 
 If you use Comp uTecProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to install CompuTec License Server in 5.11.0.1 or later version and CompuTec WMS in the latest version.
 
@@ -201,6 +201,6 @@ If you use Comp uTecProcessForce 9.3 PL14 R10 / 10.0 R14 or later, you have to i
 
 ## CompuTec Gateway Manager
 
-To download the latest version of CompuTec Gateway Manager, click [here](/docs/labels/releases/download/#computec-gateway-manager).
+To download the latest version of CompuTec Gateway Manager, click [this link](/docs/labels/releases/download/#computec-gateway-manager).
 
 ---

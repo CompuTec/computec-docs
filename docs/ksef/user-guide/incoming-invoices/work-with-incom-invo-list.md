@@ -85,7 +85,7 @@ Retrieving an invoice does not automatically create or post an SAP Business One 
 You can now review and process the selected invoice.
 
 :::note[info]
-For information about reviewing the invoice and preparing it for processing, see **Prepare an incoming invoice for processing**.
+For information about reviewing the invoice and preparing it for processing, see [**Prepare an incoming invoice for processing**](/docs/ksef/user-guide/incoming-invoices/prepare-for-process).
 :::
 
 ## Filter incoming invoices
@@ -258,7 +258,7 @@ After you select at least one invoice, the following options become available:
 
 :::info[note]
 
-After you cancel an invoice, its **Integration Status** changes to **Cancelled**, indicating that the invoice is not intended for further processing in CompuTec KSeF.
+After you cancel an invoice, its **Integration Status** changes to `Cancelled`, indicating that the invoice is not intended for further processing in CompuTec KSeF.
 
 :::
 
