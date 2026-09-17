@@ -6,6 +6,33 @@ sidebar_position: 4
 
 Below are the release notes for CompuTec WMS Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec WMS Plugin 3.2609.1
+
+**Release Date: 16 September 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | Custom Configuration | **Custom Configuration** is now available in the **CompuTec AppEngine Launchpad**, with settings organized into sections for easier management. Settings can be configured globally or for specific users and groups, and configurations can be imported and exported. |
+| Added | Stock Counting | Added **Multiple Counters** to **Stock Counting**. In `Individual` mode, each counter counts all items and WMS shows the differences between their results. In `Team` mode, multiple counters can share the counting work. |
+| Added | Document Totals | Document header totals can now be calculated using custom SQL queries, allowing you to display information such as the total picked or requested quantity according to your business requirements. |
+| Added | WMS Client | You can now adjust the font size in the **WMS Client** from the new **Appearance** settings, making information easier to read on different devices. [Read more](/docs/wms/administrator-guide/installation/wms-client/configuration/#configure-appearance-settings) |
+| Added | Scanners | Added support for **Bluebird** scanners. The scanner input mode can be selected in the **Scanner** settings. |
+| Improved | User-Defined Fields | User-defined fields can now be displayed directly on the main screen for **Inventory Transfer**, **Inventory Transfer Request**, and **Inventory Transfer MOR Request** using the **Show in Main** option. |
+| Improved | Goods Receipt | You can now view and change the warehouse and bin location directly in **Goods Receipt**. A warehouse can also be applied to all items at once, providing a workflow consistent with **Goods Receipt PO**. |
+| Improved | Pick Receipt | Improved **Pick Receipt** performance for faster processing. |
+| Improved | Pick and Pack | Improved the **Pick and Pack** scanning workflow. You can now scan directly from the line selection screen, while manually selecting a line opens the quantity entry for the matching bin. |
+| Improved | Storage Unit Quick Transfer | A confirmation can now be displayed after a **Storage Unit Quick Transfer**, including the number of the created **Stock Transfer**. This behavior can be enabled in **Custom Configuration**. [Read more](/docs/wms/administrator-guide/installation/wms-client/configuration/#configure-computec-wms-client-options) |
+| Improved | Inventory Register API | Improved **Inventory Register API** validation and automatic completion of document identification data. |
+| Fixed | Pick Receipt | Fixed an issue that could prevent another **Manufacturing Order** from being added to a **Pick Receipt**. |
+| Fixed | Goods Receipt PO | Fixed **Storage Unit** quantities created during **Goods Receipt PO** and improved item barcode handling so scanning an existing item opens its document line instead of creating another one. |
+| Fixed | Pick and Pack | Serial numbers can now be scanned from any **Pick and Pack** screen without first selecting the corresponding line or bin. |
+| Fixed | Delivery | Improved **Delivery** creation from **Sales Orders** and **Pick Lists**, including **Ship To** addresses, batch availability for warehouses without bin locations, permissions on SAP HANA, and quantities for items packed into multiple **Storage Units**. |
+| Fixed | Delivery | Delivery drafts now keep batches from different bin locations on separate lines when the draft is reopened. |
+| Fixed | User-Defined Fields | Improved UDF handling in **Goods Receipt PO**, **Delivery**, and **Goods Issue**. Automatic SQL queries now run correctly for UDFs displayed on the main screen, and required UDFs no longer interfere with serial number selection. |
+| Fixed | Stock Transfer | The selected **To Bin Code** is now applied only to the intended **Stock Transfer** line instead of all lines. Sorting by additional fields has also been corrected. |
+| Fixed | Stock Counting | Corrected the quantity displayed for serial-managed items in the **Inventory Counting** live preview. |
+| Fixed | Inventory Register | **Inventory Register** validation messages are now translated correctly. |
+
 ## CompuTec WMS Plugin 3.2608.1
 
 **Release Date: 25 August 2026**
