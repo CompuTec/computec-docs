@@ -6,8 +6,6 @@ sidebar_position: 3
 
 The CompuTec WMS Android version is a robust solution designed to enhance warehouse operations through seamless integration with Android devices. This guide provides step-by-step instructions for installing, configuring, and utilizing the Android client to streamline warehouse management processes. Whether you're a first-time user or upgrading to the latest version, this manual ensures a smooth setup and operational experience.
 
----
-
 ## Requirements
 
 To run CompuTec WMS on Android, ensure the following prerequisites are met:
@@ -89,31 +87,161 @@ Direct access to the CompuTec WMS log files directory is not available on Androi
 
 **Share log** – Use this option to send the selected log file via text message or save it as a file.
 
-**Send to server** – This option allows you to send the selected log file to the associated server. The default location for the server is: c:\programdata\CompuTec\CompuTec WMS\Server\Logs\ClientLogs\XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX.
+**Send to server** – This option allows you to send the selected log file to the associated server. The default location for the server is: `c:\programdata\CompuTec\CompuTec WMS\Server\Logs\ClientLogs\XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`.
 
-This section XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX refers to the device's unique identification number.
+This section `XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX` refers to the device's unique identification number.
 
 ## Configure Scanning on Android Handheld Decoders
 
-To enable proper barcode scanning functionality, you need to activate **Intent Output** in the scanner settings of your device. Following this, configure the **Intent Action** and **Intent Extra Key Data**(if available).
+CompuTec WMS supports several methods for receiving barcode data from Android handheld scanners. The correct scanner input mode depends on the device and its scanner configuration.
 
-Set the Intent Action to: **barcodescanner.RECVR** – This action allows CompuTec WMS to receive data from the scanner.
+To configure scanning, go to **Options** > **Scanner**. Scanner settings on Android take effect after you save the changes. You do not need to restart CompuTec WMS.
 
-For the Intent Extra Key Data, set it to: **com.motorolasolutions.emdk.datawedge.data_string** – This is the default key used by CompuTec WMS to extract barcode data from the Intent.
+### Scanner input mode
+
+Use **Scanner input mode** to select how CompuTec WMS receives scanned barcodes.
+
+| Mode | Description |
+| --- | --- |
+| **Auto** (default) | Automatically detects the device. Supported Bluebird devices use the Bluebird scanner service. All other devices use DataWedge. |
+| **DataWedge** | Creates a DataWedge profile named CompuTecDataWedge and receives scanned barcodes through its intent output. Use this mode on Zebra, Motorola, and Symbol devices. |
+| **CustomIntent** | Receives scanned barcodes through the configured intent action. Use this mode when the device has its own scanner application that can broadcast an intent, for example, Honeywell, Newland, Urovo, and Chainway devices. |
+| **Bluebird** | Uses the Bluebird native scanner service (BBApi). Use this mode on supported Bluebird EF, VX, and RG series devices running Android 10 or later. No additional scanner configuration is required. |
+| **KeyboardWedge** | Receives the barcode as keyboard input. Use this mode when the device cannot send an intent or when using an external Bluetooth or USB HID scanner. |
+
+On devices that are not recognized as Bluebird devices, **Auto** works in the same way as in previous versions of CompuTec WMS, so existing installations are not affected by an upgrade.
+
+If a supported Bluebird device is not detected automatically, select **Bluebird** manually.
+
+### Scanner settings
+
+#### - Intent action
+
+**Intent** action is available when Scanner input mode is set to **Auto**, **DataWedge**, or **CustomIntent**.
+
+Set the **Intent Action** to: `barcodescanner.RECVR` – This action allows CompuTec WMS to receive data from the scanner. In **DataWedge** mode, this value is also written to the **DataWedge** profile created by CompuTec WMS. In **CustomIntent** mode, the value must match the intent action configured in the scanner application on the device.
+
+#### - Intent data string
+
+**Intent data string** is available when Scanner input mode is set to **Auto**, **DataWedge**, or **CustomIntent**.
+
+For the **Intent Extra Key Data**, set it to: `com.motorolasolutions.emdk.datawedge.data_string` – This is the default key used by CompuTec WMS to extract barcode data from the Intent.
 
 ![Scanner](./media/android-scanner-01.webp) ![Scanner](./media/android-scanner-02.webp)
 
-On certain Zebra devices, such as the MC330K, these settings are automatically configured because CompuTec WMS creates a DataWedge profile.
+On certain Zebra devices, such as the MC330K, these settings are automatically configured because CompuTec WMS creates a **DataWedge** profile.
 
-If your device does not provide an option to define the Intent Data key, refer to your device's documentation to identify the key used for sending barcode data. Once identified, enter this key in the CompuTec WMS Scanner settings under **Intent data string**. If you're unable to locate the key, you can enable logging in the CompuTec WMS scanner settings after activating the Intent action. This will allow you to check the log files for the correct barcode data key being sent to CompuTec WMS.
+:::info[note]
+If your device does not provide an option to define the **Intent Data** key, refer to your device's documentation to identify the key used for sending barcode data.
+
+Once identified, enter this key in the CompuTec WMS Scanner settings under **Intent data string**.
+
+If you're unable to locate the key, you can enable logging in the CompuTec WMS scanner settings after activating the Intent action. This will allow you to check the log files for the correct barcode data key being sent to CompuTec WMS.
 
 ![Scanner](./media/android-scanner-03.webp)
+:::
 
-## CipherLab  RS38 Scanner Configuration
+#### - Do not create DataWedgeProfile
+
+**Do not create DataWedgeProfile** is available when Scanner input mode is set to **Auto** or **DataWedge**.
+
+By default, CompuTec WMS creates and activates a DataWedge profile named `CompuTecDataWedge`. The profile includes barcode input, common 1D and 2D decoders, and intent output using the configured **Intent action**.
+
+Select **Do not create DataWedgeProfile** when the DataWedge profile is managed externally, for example, through MDM, StageNow, or manually on the device. This prevents CompuTec WMS from overwriting the externally managed profile.
+
+The external profile must broadcast the same intent action configured in CompuTec WMS and have the required barcode decoders enabled.
+
+#### - Scanner Prefix and Scanner Suffix
+
+On Android, **Scanner Prefix** and **Scanner Suffix** are available when Scanner input mode is set to **KeyboardWedge**.
+
+These settings define the characters that mark the beginning and end of a barcode when the scanner sends barcode data as keyboard input. Enter the values as decimal character codes. The prefix and suffix must match the scanner configuration and cannot use the same character.
+
+| Code | Character |
+| --- | --- |
+| 2 | STX (default prefix) |
+| 3 | ETX (default suffix) |
+| 9 | Tab |
+| 10 | LF |
+| 13 | CR |
+
+If the scanner cannot send the configured prefix character, CompuTec WMS recognizes the barcode by its terminating character instead. In this case, the scanned text is also entered into the currently selected field. Configure a prefix that the scanner can send to avoid this behavior.
+
+#### - Scanner Group Separator
+
+The default **Scanner Group Separator** is `29 (GS)`.
+
+This setting specifies the decimal character code used to separate fields in GS1 barcodes. The value is also sent to the CompuTec WMS server, which uses it to split composite barcodes.
+
+Change this setting only if your barcode labels use a different separator.
+
+#### - Enable scanner log
+
+Enable **Enable scanner log** to record detailed information about barcode scanning, including:
+
+- The received intent
+- Intent parameters and their names
+- Scanned barcode data
+- The scanner input method used
+
+You can view scanner logs under **Options** > **Logs**.
+
+Use this option when configuring a scanner or troubleshooting scanning problems. Disable it after troubleshooting is complete.
+
+:::info[Note]
+Scanner logging is verbose and records the content of scanned barcodes.
+:::
+
+### Configure scanning on Bluebird devices
+
+CompuTec WMS supports the native scanner service available on supported Bluebird Android handheld devices. Use the **Bluebird** scanner input mode to enable barcode scanning through the Bluebird BBApi service.
+
+This configuration applies to supported Bluebird EF, VX, and RG series devices running Android 10 or later.
+
+:::info[Note]
+Before you begin:
+
+- Make sure you are using a supported Bluebird device with Android 10 or later.
+- Make sure the device firmware supports the Bluebird BBApi scanner service.
+- Close other applications that may be using the scanner.
+
+No additional scanner configuration is required on the Bluebird device when the BBApi service is available.
+:::
+To configure scanning on Bluebird devices, follow these steps:
+
+1. Open **CompuTec WMS** on the Bluebird device.
+2. Go to **Options > Scanner**.
+3. In **Scanner input mode**, select one of the following:
+   - **Auto**: Recommended. CompuTec WMS automatically detects supported Bluebird devices and uses the Bluebird scanner service.
+   - **Bluebird**: Select this option manually if the device is not detected automatically.
+4. Configure **Scanner Group Separator** if required. The default value is `29 (GS)`.
+5. Click **Save**.
+6. Scan a barcode to verify that the scanner is working.
+
+CompuTec WMS receives scanned barcodes directly through the Bluebird native scanner service. You do not need to restart the application after saving the scanner settings.
+
+:::info[note]
+
+If scanning does not work:
+
+1. Go to **Options > Scanner**.
+2. Enable **Enable scanner log**.
+3. Click **Save**.
+4. Scan a barcode again.
+5. Go to **Options > Logs** and review the scanner log.
+
+If the log contains `BARCODE_CALLBACK_REQUEST_FAILED`, check whether another application is currently using the scanner. This error can also indicate that the device firmware does not support BBApi.
+
+If **Auto** does not detect the device as a Bluebird scanner, set **Scanner input mode** to **Bluebird** manually.
+
+Disable **Enable scanner log** after troubleshooting. Scanner logging is verbose and records the content of scanned barcodes.
+:::
+
+### Configure CipherLab RS38 Scanner
 
 After reinstalling the CompuTec WMS Client, the DataWedge (ReaderConfig) profile was not created automatically. To resolve this, a new profile was configured manually with the correct settings to ensure smooth barcode scanning integration.
 
-### Step-by-Step Configuration Process
+To configure CipherLab RS38 scanner, follow these steps:
 
 1. Create a New DataWedge Profile:
 
@@ -163,7 +291,7 @@ After reinstalling the CompuTec WMS Client, the DataWedge (ReaderConfig) profile
     - Relaunch or restart the CompuTec WMS Client app.
     - Perform a test scan to ensure barcode data is received correctly in the app via the Decoder_Data intent.
 
-## Configuration (Barcode Scanner Settings) for Denso Android Device
+### Configure barcode scanner settings for Denso Android device
 
 ![Barcode Scanner Settings](./media/screenshot-1.png) ![Single Symbol Scan](./media/screenshot-2.png) ![Notification Settings](./media/screenshot-3.png)
 
@@ -177,4 +305,26 @@ Enter `com.densowave.bhtsdk.barcode.outputsettings.intent.extra.BARCODE_DATA` in
 
     ![Intent data string](./media/screenshot-8.png)
 
----
+### Troubleshooting
+
+| Problem | Solution |
+| --- | --- |
+| Nothing happens after scanning a barcode. | Enable **Enable scanner log**, scan again, and check the log. If a different intent action appears, enter it in **Intent action** and select **CustomIntent**. If nothing is logged, configure the device to broadcast an intent or use **KeyboardWedge**. |
+| The scan is received, but the barcode value is empty. | Check **Intent data string**. The scanner log shows the parameter name sent by the device. |
+| The barcode is entered into a field instead of being processed. | The scanner is operating as a keyboard. Configure intent output on the device, or select **KeyboardWedge** and configure **Scanner Prefix** and **Scanner Suffix**. |
+| A Bluebird device does not scan. | Check the scanner log for `BARCODE_CALLBACK_REQUEST_FAILED`. Another application may be using the scanner, or the device firmware may not support BBApi. If **Auto** does not detect the device, select **Bluebird** manually. |
+| The DataWedge profile is overwritten. | Select **Do not create DataWedgeProfile**. |
+| A GS1 barcode is not split into fields. | Make sure **Scanner Group Separator** matches the separator used by the barcode labels. |
+
+### Default scanner settings
+
+| Setting | Default |
+| --- | --- |
+| **Scanner input mode** | Auto |
+| **Scanner Prefix** | 2 (STX) |
+| **Scanner Suffix** | 3 (ETX) |
+| **Scanner Group Separator** | 29 (GS) |
+| **Enable scanner log** | Off |
+| **Intent action** | `barcodescanner.RECVR` |
+| **Intent data string** | `com.motorolasolutions.emdk.datawedge.data_string` |
+| **Do not create DataWedgeProfile** | Off |
