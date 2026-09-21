@@ -21,11 +21,11 @@ Before you start, make sure that:
 1. Open **Input Invoices**.
 2. Find the invoice you want to process.
 
-    ![alt text](media/prep-process/ksef-incom-5e.png)
+    ![Input Invoices list showing an incoming invoice](media/prep-process/ksef-incom-5e.png)
 
 3. Open the invoice details.
 
-    ![alt text](media/prep-process/ksef-incom-6e.png)
+    ![Incoming invoice details page](media/prep-process/ksef-incom-6e.png)
 
     :::note[info]
     The upper part of the page shows the current **Integration Status**, KSeF number, assigned Business Partner code, and processing stages.
@@ -43,17 +43,17 @@ If the supplier does not yet have an assigned Business Partner code:
 
 1. Click the Business Partner creation icon next to **Card Code**.
 
-    ![alt text](media/prep-process/ksef-incom-7e.png)
+    ![Business Partner creation icon next to the Card Code field](media/prep-process/ksef-incom-7e.png)
 
 2. Select the required **Business Partner Series**, and click **Create**.
 
-    ![alt text](media/prep-process/ksef-incom-8e.png)
+    ![Business Partner Series selection dialog with the Create button](media/prep-process/ksef-incom-8e.png)
 
 3. CompuTec KSeF creates the Business Partner in SAP Business One and assigns its **Card Code** to the incoming invoice.
 
 4. After the Business Partner is assigned, click its **Card Code** to open the Business Partner master data when you need to review or maintain additional information.
 
-    ![alt text](media/prep-process/ksef-incom-24e.png)
+    ![Incoming invoice showing the assigned Business Partner Card Code](media/prep-process/ksef-incom-24e.png)
 
 ### Review the KSeF document type
 
@@ -63,7 +63,7 @@ In the **Document Information** section, review how the incoming KSeF document w
 - **Document Type (SAP)** – Shows the SAP Business One document type determined for the incoming invoice.
 - **Document Sub Type** – Indicates whether the document will be processed as an Item or Service document.
 
-![alt text](media/prep-process/ksef-incom-10e.png)
+![Document Information section showing the KSeF and SAP document types](media/prep-process/ksef-incom-10e.png)
 
 Additional information available on the KSeF invoice can also be displayed in this section. For example, a delivery note number can be available for an item-related document when it was provided on the source invoice.
 
@@ -73,16 +73,16 @@ If the automatically determined SAP Business One document type or subtype is not
 
 1. Click **Change Document Type**.
 
-    ![alt text](media/prep-process/ksef-incom-11e.png)
+    ![Change Document Type button](media/prep-process/ksef-incom-11e.png)
 
 2. Select the required **Document Type (SAP)** and **Document Sub Type**. For example, if an invoice was determined as a service document but represents purchased items, change **Document Sub Type** from **Service** to **Item**.
 
-    ![alt text](media/prep-process/ksef-incom-12e.png)
+    ![Change Document Type dialog with Document Type and Document Sub Type fields](media/prep-process/ksef-incom-12e.png)
 
 3. Click **Save Document Type**.
 4. In our example, we changed `Service` to `Item`.
 
-    ![alt text](media/prep-process/ksef-incom-12zme.png)
+    ![Document Information section showing the changed Service to Item subtype](media/prep-process/ksef-incom-12zme.png)
 
     :::info[Note]
 
@@ -96,7 +96,7 @@ In **Document Information**, you can review the **Bank Account** section.
 
 When applicable, this section displays bank account information associated with the invoice and Business Partner.
 
-![alt text](media/prep-process/ksef-incom-23e.png)
+![Bank Account section in Document Information](media/prep-process/ksef-incom-23e.png)
 
 The **Account assigned to BP** field indicates whether the account is assigned to the Business Partner.
 
@@ -113,7 +113,7 @@ Review the result before continuing with base document matching.
 
 1. In the **Invoice Lines** section of the invoice, review the information retrieved for each invoice line, including the description, quantity, prices, tax information, and other available line data.
 
-    ![alt text](media/prep-process/ksef-incom-13e.png)
+    ![Invoice Lines section showing incoming invoice line details](media/prep-process/ksef-incom-13e.png)
 
 2. Check **Item Code / Account** and **Line Status**.
 
@@ -134,11 +134,11 @@ To let CompuTec KSeF process the invoice automatically:
 
 1. Click **Process**.
 
-    ![alt text](media/prep-process/ksef-incom-16e.png)
+    ![Process button for processing the incoming invoice](media/prep-process/ksef-incom-16e.png)
 
 2. Wait for the processing steps to complete.
 
-    ![alt text](media/prep-process/ksef-incom-17e.png)
+    ![Invoice processing steps in progress](media/prep-process/ksef-incom-17e.png)
 
 3. Review the processing result.
 
@@ -146,7 +146,7 @@ To let CompuTec KSeF process the invoice automatically:
 
 5. Return to **Invoice Lines** and check the values assigned to the lines.
 
-    ![alt text](media/prep-process/ksef-incom-21e.png)
+    ![Invoice Lines section showing assigned item codes or G/L accounts](media/prep-process/ksef-incom-21e.png)
 
 ### Assign an Item Code or G/L Account manually
 
@@ -156,11 +156,11 @@ If a line has not been matched automatically, or you want to change the assigned
 
 2. Click the selection icon in **Item Code / Account**.
 
-    ![alt text](media/prep-process/ksef-incom-14e.png)
+    ![Selection icon in the Item Code or Account field](media/prep-process/ksef-incom-14e.png)
 
 3. Select the required SAP Business One item or G/L account.
 
-    ![alt text](media/prep-process/ksef-incom-15e.png)
+    ![Dialog for selecting an SAP Business One item or G/L account](media/prep-process/ksef-incom-15e.png)
 
 The available selection depends on the document subtype.
 
@@ -172,15 +172,15 @@ To review the available mappings:
 
 1. In **BP Information** section of the invoice, click the Business Partner **Card Code**.
 
-    ![alt text](media/prep-process/ksef-incom-18e.png)
+    ![BP Information section showing the supplier Card Code](media/prep-process/ksef-incom-18e.png)
 
 2. In the SAP Business One Business Partner master data, right-click and select **BP Catalog Numbers**.
 
-    ![alt text](media/prep-process/ksef-incom-19.png)
+    ![Business Partner master data context menu with BP Catalog Numbers](media/prep-process/ksef-incom-19.png)
 
 3. Review the supplier catalog numbers and their corresponding SAP Business One item codes.
 
-    ![alt text](media/prep-process/ksef-incom-20.png)
+    ![BP Catalog Numbers window showing supplier catalog numbers and item codes](media/prep-process/ksef-incom-20.png)
 
 4. Add missing mappings when required.
 
@@ -192,11 +192,11 @@ To review the available mappings:
 
 After an item code has been assigned, you can click the code to open the corresponding SAP Business One item master data.
 
-![alt text](media/prep-process/ksef-incom-22e.png)
+![SAP Business One item master data opened from an assigned item code](media/prep-process/ksef-incom-22e.png)
 
 When required, maintain additional identification information used for item matching. For example, you can maintain an EAN in the **Bar Code** field of the item master data.
 
-![alt text](media/prep-process/ksef-incom-22b.png)
+![Item master data showing the Bar Code field](media/prep-process/ksef-incom-22b.png)
 
 ## Match base documents
 
@@ -204,7 +204,7 @@ CompuTec KSeF can match an incoming invoice with the corresponding base document
 
 The type of base document and the information used for matching depend on the incoming invoice type and subtype.
 
-CompuTec KSeF attempts to find the appropriate base documents automatically. Review the result before continuing. If the proposed match is not appropriate or no base document was found, you can select the base documents and match individual lines manually.
+![BP Information section showing supplier details and the Card Code](media/prep-process/ksef-incom-18e.png)
 
 ### How base document matching works
 
@@ -229,7 +229,7 @@ To review or change the base document matching:
 
 2. Click **Match Base Documents** at the top of the page.
 
-   ![Match Base Documents](media/prep-process/ksef-incom-27e.png)
+    ![Incoming invoice page with the Match Base Documents button](media/prep-process/ksef-incom-27e.png)
 
 3. In **Select Base Documents**, review the documents available under **Candidate Base Documents**.
 
@@ -239,7 +239,7 @@ To review or change the base document matching:
 
 4. Select the **SAP Business One document** that you want to use as the base document.
 
-    ![Select Base Documents](media/prep-process/ksef-incom-28e.png)
+    ![Select Base Documents dialog showing candidate SAP Business One documents](media/prep-process/ksef-incom-28e.png)
 
    :::note[info]
    You can use the available filters and search options to find the required document when necessary.
@@ -249,7 +249,7 @@ To review or change the base document matching:
 
 6. In **Match Lines**, review the proposed mappings between **Base Document Lines** and **Incoming Invoice Lines**.
 
-   ![Match Base Document Lines](media/prep-process/ksef-incom-29e.png)
+    ![Match Lines step showing base document lines and incoming invoice lines](media/prep-process/ksef-incom-29e.png)
 
    The left side displays the lines from the selected SAP Business One base document. The right side displays the incoming KSeF invoice lines and their current mappings.
 
@@ -267,7 +267,7 @@ After applying the matching, return to **Invoice Lines**.
 
 The **Base Document** column displays the SAP Business One document matched with each invoice line.
 
-![Matched Base Documents](media/prep-process/ksef-incom-30e.png)
+![Invoice Lines section showing matched base documents](media/prep-process/ksef-incom-30e.png)
 
 Review the following information:
 
@@ -299,4 +299,4 @@ When the invoice information and base document mappings are correct, you can con
 
 Click **Create Draft** to create the corresponding SAP Business One draft.
 
-The next processing steps are described in **Create and process an SAP Business One draft**.
+The next processing steps are described in [**Create and review an SAP Business One draft**](/docs/ksef/user-guide/incoming-invoices/create-draft-inco).

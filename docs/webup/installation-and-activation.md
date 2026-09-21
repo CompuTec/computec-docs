@@ -55,92 +55,72 @@ If you plan to customize the user interface using **CompuTec WebUp Manager**, yo
 
 ## Step 3: Install browser extensions
 
-You’ll need to install two extensions:
+To use CompuTec WebUp, install the following browser extensions:
 
-- **CompuTec WebUp Client**
-- **CompuTec WebUp Manager**
+- **CompuTec WebUp Manager** – a browser extension used to create, edit, and test CompuTec WebUp configurations.
+- **CompuTec WebUp Client** – a browser extension that extends the SAP Business One Web Client where the standard extensibility framework is limited.
 
 :::info[note]
-These extensions are currently **not available in public stores**.
-Install them manually using the provided installation package until they are validated by Google, Mozilla and Microsoft.
+The **CompuTec WebUp browser extensions** are available in the **Chrome Web Store**.
+
+For **Google Chrome** and other Chromium-based browsers, such as **Microsoft Edge**, we recommend installing the extensions directly from the Chrome Web Store. This is the **recommended installation method** and does not require enabling Developer mode or loading the extensions manually.
+
+**CompuTec WebUp Manager** is **not available** for **Mozilla Firefox**. For consultant or key-user functionality, use **Google Chrome** or **Microsoft Edge**.
+
+Manual installation using CompuTec installation packages is still available when required. For instructions, see [**Manual Browser Extension Installation**](/docs/webup/other/extension-manual-installation).
+
 :::
 
-Select your browser to see the installation steps:
+To install CompuTec WebUp browser extensions from the Chrome Web Store, follow these steps:
 
 <Tabs>
   <TabItem value="chrome" label="Google Chrome" default>
 
-### Step 1: Download the CompuTec WebUp extensions for Google Chrome
+1. Open the CompuTec WebUp extensions in the **Chrome Web Store**:
+    - [**CompuTec WebUp Manager**](https://chromewebstore.google.com/detail/computec-webup-manager/agdmmdghpkllidfeajciepkcchlijpmf)
+    - [**CompuTec WebUp Client**](https://chromewebstore.google.com/detail/computec-webup-client/mgglbjhibagmkneodlhinpelnpdedfgi)
 
-1. Click [**this link**](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpClient_1.0.14.zip) to download the **CompuTec WebUp Client** extension.
+2. Click **Add to Chrome**.
 
-2. Click [**this link**](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpManager_1.0.17.zip) to download the **CompuTec WebUp Manager** extension.
+    ![alt text](media/addtochhrome1.png)
 
-3. Extract both downloaded files.
+3. Review the requested permissions and confirm the installation.
 
-### Step 2: Install the extensions for Google Chrome
+    ![alt text](media/addtochhrome2.png)
 
-1. Open the **Google Chrome** browser.
+4. Repeat these steps for both the **CompuTec WebUp Client** and **CompuTec WebUp Manager** extensions.
 
-2. Click the **menu icon** and choose **Extensions** > **Manage Extensions**.
+5. Click the **Extensions icon** and verify that both **CompuTec WebUp Manager** and **CompuTec WebUp Client** are installed and enabled.
 
-    ![Google Chrome browser with Extensions menu item visible and the CompuTec WebUp installation page in the background](./media/c1-webup-manual-inst-browser-extension-chrome-menu.png)
-
-3. Turn on the **Developer mode** toggle.
-
-    ![Google Chrome Extensions page showing Developer mode toggle in the top right of the extensions manager](./media/c2-webup-manual-inst-browser-extension-chrome-dev-mode.png)
-
-4. Click **Load unpacked**.
-
-    ![Google Chrome Extensions page showing Load unpacked button highlighted for loading unpacked extension folders](./media/c3-webup-manual-inst-browser-extension-chrome-load-file.png)
-
-5. Select your extracted **CompuTec WebUp Client** folder and click **Select Folder**.
-
-6. Select your extracted **CompuTec WebUp Manager** folder and click **Select Folder**.
-
-7. Done! Now you can see both **CompuTec WebUp Client** and **CompuTec WebUp Manager** extensions on the **All Extensions** list of your Google Chrome browser.
-
-    ![Google Chrome Extensions page listing CompuTec WebUp Client and CompuTec WebUp Manager as installed extensions](./media/c4-webup-manual-inst-browser-extension-chrome-installed.png)
+    ![alt text](media/addtochhrome3.png)
 
   </TabItem>
 
   <TabItem value="edge" label="Microsoft Edge">
 
-### Step 1: Download the CompuTec WebUp extensions for Microsoft Edge
+1. Open the CompuTec WebUp extensions in the **Chrome Web Store**:
+    - [**CompuTec WebUp Manager**](https://chromewebstore.google.com/detail/computec-webup-manager/agdmmdghpkllidfeajciepkcchlijpmf)
+    - [**CompuTec WebUp Client**](https://chromewebstore.google.com/detail/computec-webup-client/mgglbjhibagmkneodlhinpelnpdedfgi)
 
-1. Click [**this link**](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpClient_1.0.14.zip) to download the **CompuTec WebUp Client** extension.
+2. Click **Get**.
 
-2. Click [**this link**](https://download.computec.one/software/appengine/plugins/webup/extensions/chromium/CompuTecWebUpManager_1.0.17.zip) to download the **CompuTec WebUp Manager** extension.
+    ![alt text](media/addtochhrome1b.png)
 
-3. Extract both downloaded files.
+3. Review the requested permissions and confirm the installation.
 
-### Step 2: Install the extensions for Microsoft Edge
+    ![alt text](media/addtochhrome5.png)
 
-1. Open the **Microsoft Edge** browser.
+    :::info[note]
+    Microsoft Edge supports extensions from the Chrome Web Store. If prompted, allow extensions from other stores before installing the WebUp extensions.
 
-2. Click the **menu icon** and choose **Extensions**.
+    ![alt text](media/addtochhrome4.png)
+    :::
 
-    ![Microsoft Edge browser menu with Extensions highlighted and the CompuTec WebUp introduction page visible behind the menu](./media/e1-webup-manual-inst-browser-extension-edge-menu.png)
+4. Repeat these steps for both the **CompuTec WebUp Client** and **CompuTec WebUp Manager** extensions.
 
-3. Click **Manage extensions**.
+5. Click the **Extensions icon** and verify that both **CompuTec WebUp Manager** and **CompuTec WebUp Client** are installed and enabled.
 
-    ![A help screen showing where to find extensions manager when installing the CompuTec webup extension in Microsoft Edge browser](./media/e2-webup-manual-inst-browser-extension-edge-manage.png)
-
-4. Turn on the **Developer mode** toggle.
-
-    ![Microsoft Edge Extensions page with Developer mode toggle and Manage extensions settings visible](./media/e2-webup-manual-inst-browser-extension-edge-manage.png)
-
-5. Click **Load unpacked**.
-
-    ![A help screen showing how to unpack files when installing the CompuTec webup extension in Microsoft Edge browser](./media/e4-webup-manual-inst-browser-extension-edge-load-files.png)
-
-6. Select your extracted **CompuTec WebUp Client** folder and click **Select Folder**.
-
-7. Select your extracted **CompuTec WebUp Manager** folder and click **Select Folder**.
-
-8. Done! Now you can see both **CompuTec WebUp Client** and **CompuTec WebUp Manager** extensions on the **Installed extensions** list of your Microsoft Edge browser.
-
-    ![Google Chrome Extensions page listing CompuTec WebUp Client and CompuTec WebUp Manager as installed extensions](./media/c4-webup-manual-inst-browser-extension-chrome-installed.png)
+    ![alt text](media/addtochhrome6.png)
 
   </TabItem>
 
@@ -194,7 +174,7 @@ Select your browser to see the installation steps:
 
 After installation, confirm that both the CompuTec AppEngine plugin and the browser extension are active and communicating.
 
-1. Pin the **CompuTec WebUp extension** to your browser toolbar for easy access.
+1. Pin the **CompuTec WebUp Manager extension** to your browser toolbar for easy access.
 2. Navigate to the **SAP Web Client** page.
 3. Click the **CompuTec WebUp extension** icon to activate the integration.  
 
