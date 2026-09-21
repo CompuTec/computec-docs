@@ -299,4 +299,4 @@ When the invoice information and base document mappings are correct, you can con
 
 Click **Create Draft** to create the corresponding SAP Business One draft.
 
-The next processing steps are described in [**Create and review an SAP Business One draft**](/docs/ksef/user-guide/incoming-invoices/create-draft-inco).
+The next processing steps are described in **Create and review an SAP Business One draft**.
