@@ -145,6 +145,23 @@ Use the log level setting to control how much information the Printing Service w
 The service log itself has not changed. It continues to use the same content and format. The log level setting only controls the level of information written to the service log.
 :::
 
+:::note[For developers]
+
+Process log data is available through the **Printing Service API**:
+
+`GET /api/LabelPrint/GetRequestSteps?requestId=<id>`
+
+The endpoint uses the same authentication as the existing `LabelPrint` endpoints. The Printing Service automatically resolves the request date.
+
+The following optional parameters are available:
+
+- `date` – Overrides the request date.
+- `format=csv` – Returns the process log as a CSV file.
+
+Example: `GET http://localhost:33006/api/LabelPrint/GetRequestSteps?requestId=16595`
+
+:::
+
 ## Correct the configuration
 
 If the logs indicate that the result is related to the configuration:
