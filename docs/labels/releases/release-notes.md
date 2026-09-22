@@ -10,6 +10,20 @@ toc_max_heading_level: 4
 
 Below are the release notes for CompuTec Labels Printing Manager, highlighting new features, improvements, and bug fixes in this release.
 
+### CompuTec Labels Printing Manager 4.8.9
+
+**Release Date: 22 September 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Improved | Printing Manager Application | Added a **Cleanup** wizard for removing old requests from the CTLABEL database. Users can preview the requests before deletion, and a CSV backup is automatically saved to the **Logs** folder. [Read more](/docs/labels/setup/requests/cleanup-old-requests) |
+| Improved | Printing Manager Application, Printing Service | Added detailed process logging for print requests. Each processing step is recorded in a daily CSV file. Process logs can be opened from **Logs** > **Open process logs**, where users can filter and export the data. The **Printing Service** log level can also be changed from this screen. [Read more](/docs/labels/setup/logs/#process-logs) |
+| Improved | Printing Manager Application | Improved **Request Details** performance and usability. SAP Business One company credentials are no longer required when opening request details, and the details pane is now docked at the bottom of the screen. |
+| Fixed | Printing Manager Application | Fixed an issue where **Label Reports** were omitted from the global export, resulting in an incomplete exported configuration. |
+| Fixed | Printing Service | Fixed an issue where email messages were not sent when the **Remarks** field contained a line break. Invisible characters are now removed from the email subject to help ensure messages are sent correctly. |
+| Fixed | Printing Service | Fixed an issue where the same print/run parameter could appear twice for a single request. |
+| Fixed | Printing Service | Fixed an installation issue that caused database authentication to fail when the database user password contained a semicolon (`;`). |
+
 ### CompuTec Labels Printing Manager 4.8.8
 
 **Release Date: 13 August 2026**
