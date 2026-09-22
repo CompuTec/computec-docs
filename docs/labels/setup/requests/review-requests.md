@@ -20,14 +20,38 @@ To review the requests, follow these steps:
 
 2. Go to **Requests**.
 
-    ![CompuTec Labels Printing Manager with Requests selected in the left navigation. The main pane displays a request table with Result Limit, Date, and Request Details filters, plus columns including Request Id, CompanyDatabase, Requester, Status, ReportSt, TransactionType, Printer, Employee, User, and Doc Type.](media/labels-requests-2.png)
+    ![alt text](media/req1.png)
 
-3. Find the request that you want to review.  
-    You can use the available filters to narrow down the displayed requests.
+3. Find the request that you want to review.
 
-    ![CompuTec Label Printing Manager displays the Requests page. A large blue arrow points to the Requests item in the left navigation. The main pane shows filters for Result Limit, Date, and Request Details, followed by a request table with columns Request Id, CompanyDatabase, Requester, Status, ReportSt, TransactionType, Printer, Employee, User, and Doc Type. The table lists requests 191537 through 191541, with statuses Finished and Zero results.](media/labels-requests-3.png)
+    To narrow down the displayed requests, you can:
 
-4. Review the information available for the request.
+    - Set the maximum number of displayed requests in **Result Limit**.
+    - Select a date range in **Date**.
+    - Use the filter icons in the column headers to filter individual columns.
+
+    ![alt text](media/req12.png)
+
+4. Click **Apply Filter** to apply the selected filters.
+
+    ![alt text](media/req123.png)
+
+    :::note[info]
+    To remove the applied filters, click **Clear all filters**.
+
+    ![alt text](media/req1234.png)
+
+    :::
+
+5. To display additional information about a request, enable **Request Details** and select a request.
+
+    ![alt text](media/req12345.png)
+
+   The details pane is displayed at the bottom of the **Requests** screen and contains information about used templates, print parameters, and errors.
+
+    :::note[info]
+    SAP Business One company credentials are not required to display request details.
+    :::
 
 ## Result
 
