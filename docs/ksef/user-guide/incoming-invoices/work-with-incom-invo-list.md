@@ -253,6 +253,7 @@ After you select at least one invoice, the following options become available:
 - **Preview PDF** – Opens a PDF preview of the selected invoice.
 - **Process Selected** – Processes the selected invoices according to the configured incoming document processing rules.
 - **Cancel Selected** – Cancels further processing of the selected invoices. Use this option, for example, for invoices that have already been posted in SAP Business One, contain incorrect data, or should not be processed because they are not recognized as legitimate business documents.
+- **Finish Selected** – Marks the selected invoices as finished.   
 
 ![alt text](media/work-list/ksef-incom-4e.png)
 

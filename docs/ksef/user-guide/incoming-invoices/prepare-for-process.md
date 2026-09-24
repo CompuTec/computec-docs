@@ -33,6 +33,16 @@ Before you start, make sure that:
     For a newly retrieved invoice, the **Integration Status** can be **Received**. At this stage, information required for further processing may still need to be determined or assigned.
     :::
 
+### Review the source invoice
+
+Before processing the invoice, you can review its original KSeF data and document visualization.
+
+Use the available invoice tabs to compare the information retrieved by CompuTec KSeF with the source invoice.
+
+For example, **Doc. Visualization** provides a readable representation of the KSeF invoice that can help you verify supplier, document, amount, and invoice-line information.
+
+![KSeF Input Invoice Details page showing invoice 519 - 7811771290-20260813-5D7F77C00000-D3 with Integration Status Received and Card Code V00006; the BP Information, Document Information, Invoice Lines, KSeF Information, Doc. Visualization, and XML Document tabs are visible, and a blue arrow points to the Doc. Visualization tab](media/prep-process/ksef-incom-49e.png)
+
 ### Assign or create the Business Partner
 
 CompuTec KSeF uses the supplier information from the KSeF invoice when determining the corresponding SAP Business One Business Partner.
@@ -55,6 +65,30 @@ If the supplier does not yet have an assigned Business Partner code:
 
     ![Incoming invoice showing the assigned Business Partner Card Code](media/prep-process/ksef-incom-24e.png)
 
+#### Maintain Business Partner catalog numbers
+
+For item documents, Business Partner catalog numbers can be used to associate supplier item information with SAP Business One items.
+
+To review the available mappings:
+
+1. In **BP Information** section of the invoice, click the Business Partner **Card Code**.
+
+    ![BP Information section showing the supplier Card Code](media/prep-process/ksef-incom-18e.png)
+
+2. In the SAP Business One Business Partner master data, right-click and select **BP Catalog Numbers**.
+
+    ![Business Partner master data context menu with BP Catalog Numbers](media/prep-process/ksef-incom-19.png)
+
+3. Review the supplier catalog numbers and their corresponding SAP Business One item codes.
+
+    ![BP Catalog Numbers window showing supplier catalog numbers and item codes](media/prep-process/ksef-incom-20.png)
+
+4. Add missing mappings when required.
+
+5. Confirm the update and return to CompuTec KSeF plugin screen.
+
+6. Return to the incoming invoice and process or review the invoice lines again.
+
 ### Review the KSeF document type
 
 In the **Document Information** section, review how the incoming KSeF document will be processed in SAP Business One:
@@ -65,9 +99,25 @@ In the **Document Information** section, review how the incoming KSeF document w
 
 ![Document Information section showing the KSeF and SAP document types](media/prep-process/ksef-incom-10e.png)
 
-Additional information available on the KSeF invoice can also be displayed in this section. For example, a delivery note number can be available for an item-related document when it was provided on the source invoice.
+Additional information retrieved from the KSeF invoice can also be displayed in this section, depending on the data provided on the source invoice. This can include references, delivery information, payment information, and other document details.
 
-### Change the document type or subtype
+#### KSeF document types
+
+The **Doc. Type (KSeF)** field identifies the type of invoice received from KSeF.
+
+CompuTec KSeF supports the following incoming document types:
+
+- **VAT** – A standard VAT invoice or a settlelemt invoice. Both are processed as an A/P invoice in SAP Business One.
+- **ZAL** – An advance invoice. It is based on a corresponding down payment request in SAP Business One.
+- **KOR** – A correction invoice. It refers to an existing invoice that is being corrected.
+
+:::info[note]
+For a settlement invoice, CompuTec KSeF does not automatically assign the related down payment because it cannot be matched automatically.
+
+After the A/P invoice draft is created, open the draft in SAP Business One and assign the appropriate down payment manually.
+:::
+
+#### Change the document type or subtype
 
 If the automatically determined SAP Business One document type or subtype is not appropriate for the invoice:
 
@@ -100,7 +150,7 @@ When applicable, this section displays bank account information associated with 
 
 The **Account assigned to BP** field indicates whether the account is assigned to the Business Partner.
 
-## Match incoming invoice lines
+### Match incoming invoice lines
 
 CompuTec KSeF processes the lines of an incoming invoice and attempts to assign the SAP Business One data required for each line.
 
@@ -109,7 +159,7 @@ CompuTec KSeF processes the lines of an incoming invoice and attempts to assign 
 
 Review the result before continuing with base document matching.
 
-### Review invoice lines
+#### Review invoice lines
 
 1. In the **Invoice Lines** section of the invoice, review the information retrieved for each invoice line, including the description, quantity, prices, tax information, and other available line data.
 
@@ -128,17 +178,85 @@ Review the result before continuing with base document matching.
     - You can also manually change a value assigned during automatic processing.
     :::
 
-## Process the invoice automatically
+#### Adjust invoice lines
+
+You can adjust invoice lines when a single KSeF invoice line needs to be processed as multiple SAP Business One document lines.
+
+For example, the quantity from one incoming invoice line may relate to more than one base document. In this case, you can split the incoming line and match each resulting line separately.
+
+:::note[info]
+![Invoice line split and matched with different base documents](media/prep-process/ksef-incom-47e.png)
+
+In this example, the original invoice line was split into two lines:
+
+- One line contains a quantity of **4** and is matched with one purchase order.
+- The other line contains a quantity of **6** and is matched with another purchase order.
+
+Both lines use the same SAP Business One item code, but each line can be matched with the appropriate base document.
+:::
+
+To adjust invoice lines, use the available actions in **Invoice Lines**, such as **Group Selected**, **Split selected**, and **Edit lines**.
+
+##### Split an invoice line
+
+To split an invoice line:
+
+1. In **Invoice Lines**, select the line that you want to split.
+
+2. Click **Split selected**.
+
+   ![Select an invoice line and click Split selected](media/prep-process/ksef-incom-50e.png)
+
+3. Specify the number of lines that you want to create and click **Next**.
+
+   ![Select the number of lines](media/prep-process/ksef-incom-51e.png)
+
+   :::info[note]
+
+   Splitting a line removes its existing base document match. If you undo the split later, the previous match is not restored and the line must be matched again.
+
+   :::
+
+4. Review the resulting lines and adjust the **Quantity** and **Unit Price** for each line as required.
+
+   The total quantity of the split lines should correspond to the quantity of the original invoice line.
+
+   ![Specify quantities for the split lines](media/prep-process/ksef-incom-52e.png)
+
+5. Click **Split selected** to confirm.
+
+   The original line is replaced in the standard view by the newly created lines. The **Kind** column identifies the source line, for example, **Split from #2**.
+
+   ![Invoice Lines showing the split lines](media/prep-process/ksef-incom-53e.png)
+
+6. To view the original line together with its split lines, click **Show Grouped/Split**.
+
+   ![Show Grouped Split action](media/prep-process/ksef-incom-54e.png)
+
+##### Undo a line split
+
+If the line was split incorrectly, you can restore the original line.
+
+1. Click **Show Grouped/Split** to display the original and split lines.
+
+2. Find the split lines and click the undo split icon next to **Split from #...**.
+
+   ![Undo a line split](media/prep-process/ksef-incom-55e.png)
+
+The split lines are removed and the original invoice line becomes available for processing again.
+
+:::info[note]
+
+If the original line was previously matched with a base document, undoing the split does not restore that match. Match the line with the required base document again.
+
+:::
+
+### Process the invoice
 
 You can process the incoming invoice using one of the following actions:
 
-- **Process** – Processes the incoming invoice and attempts to determine the required SAP Business One data. After reviewing the result, you can create the draft separately by clicking **Create Draft**.
-- **Process (Force)** – Processes the incoming invoice and attempts to create the SAP Business One draft in the same operation.
-
-:::info[note]
-    - Use **Process (Force)** when you expect the invoice to be processed without manual changes, for example, for recurring invoices with a known structure that CompuTec KSeF can process automatically.
-    - Use **Process** when you want to review or change the processing results before creating the SAP Business One draft.
-:::
+- **Process** – Processes the invoice and determines the required SAP Business One data. Use this option when you want to review or change the results before creating a draft.
+- **Process (Force)** – Processes the invoice and attempts to create the SAP Business One draft in the same operation. Use this option for invoices that you expect CompuTec KSeF to process without manual changes.
 
 To let CompuTec KSeF process the invoice, follow these steps:
 
@@ -158,7 +276,7 @@ To let CompuTec KSeF process the invoice, follow these steps:
 
     ![Invoice Lines section showing assigned item codes or G/L accounts](media/prep-process/ksef-incom-21e.png)
 
-## Assign an Item Code or G/L Account manually
+#### Assign an Item Code or G/L Account manually
 
 If a line has not been matched automatically during processing, or you want to change the assigned value:
 
@@ -172,33 +290,13 @@ If a line has not been matched automatically during processing, or you want to c
 
     ![Dialog for selecting an SAP Business One item or G/L account](media/prep-process/ksef-incom-15e.png)
 
-The available selection depends on the document subtype.
+    :::note[info]
+    The available selection depends on the document subtype.
+    :::
 
-### Maintain Business Partner catalog numbers
+When multiple invoice lines require the same adjustment, use the available line actions to update the required lines together when applicable.
 
-For item documents, Business Partner catalog numbers can be used to associate supplier item information with SAP Business One items.
-
-To review the available mappings:
-
-1. In **BP Information** section of the invoice, click the Business Partner **Card Code**.
-
-    ![BP Information section showing the supplier Card Code](media/prep-process/ksef-incom-18e.png)
-
-2. In the SAP Business One Business Partner master data, right-click and select **BP Catalog Numbers**.
-
-    ![Business Partner master data context menu with BP Catalog Numbers](media/prep-process/ksef-incom-19.png)
-
-3. Review the supplier catalog numbers and their corresponding SAP Business One item codes.
-
-    ![BP Catalog Numbers window showing supplier catalog numbers and item codes](media/prep-process/ksef-incom-20.png)
-
-4. Add missing mappings when required.
-
-5. Confirm the update and return to CompuTec KSeF plugin screen.
-
-6. Return to the incoming invoice and process or review the invoice lines again.
-
-### Review item master data
+#### Review item master data
 
 After an item code has been assigned, you can click the code to open the corresponding SAP Business One item master data.
 
@@ -208,15 +306,15 @@ When required, maintain additional identification information used for item matc
 
 ![Item master data showing the Bar Code field](media/prep-process/ksef-incom-22b.png)
 
-## Match base documents
+### Match base documents
 
 CompuTec KSeF can match an incoming invoice with the corresponding base documents in **SAP Business One**.
 
 The type of base document and the information used for matching depend on the incoming invoice type and subtype.
 
-![BP Information section showing supplier details and the Card Code](media/prep-process/ksef-incom-18e.png)
+![KSeF Input Invoice Details screen on the Invoice Lines tab, showing two invoice lines with item codes, quantities, prices, tax amounts, and resolved base documents; a large blue arrow highlights the Base Document column in the invoice table](media/prep-process/ksef-incom-48e.png)
 
-### How base document matching works
+#### How base document matching works
 
 CompuTec KSeF searches for base documents based on the incoming invoice type:
 
@@ -231,7 +329,7 @@ If CompuTec KSeF does not find the required base document automatically, or the 
 
 :::
 
-### Match base documents manually
+#### Match base documents manually
 
 To review or change the base document matching:
 
@@ -263,6 +361,10 @@ To review or change the base document matching:
 
    The left side displays the lines from the selected SAP Business One base document. The right side displays the incoming KSeF invoice lines and their current mappings.
 
+   :::info[note]
+   A single incoming invoice can contain lines that correspond to different SAP Business One base document lines. Review the proposed line mappings and adjust them when required.
+   :::
+
 7. If the proposed mappings are correct, click **Apply**.
 
 8. If you want to change a mapping, drag the required line from **Base Document Lines** on the left and drop it onto the corresponding **Incoming Invoice Line** on the right.
@@ -271,7 +373,7 @@ To review or change the base document matching:
 
 10. The selected base documents and line mappings are applied to the incoming invoice.
 
-### Review the matched base documents
+#### Review the matched base documents
 
 After applying the matching, return to **Invoice Lines**.
 
@@ -297,16 +399,12 @@ Review the base document assignments before continuing, especially if you change
 
 ## Result
 
-The required SAP Business One item codes or G/L accounts are assigned to the incoming invoice lines.
+The incoming invoice is prepared for SAP Business One draft creation.
 
-The incoming invoice lines are matched with the appropriate SAP Business One base documents.
+The required invoice-line data is assigned, and any applicable base documents are matched. Review the invoice and make sure the processing results are correct before continuing.
 
-The matched documents are displayed in the **Base Document** column in **Invoice Lines**, and successfully processed lines have the **Resolved** status.
-
-When the invoice information and base document mappings are correct, you can continue with SAP Business One draft creation.
+If you used **Process (Force)** and processing was successful, CompuTec KSeF may have already created the SAP Business One draft.
 
 ## Next step
 
-Click **Create Draft** to create the corresponding SAP Business One draft.
-
-The next processing steps are described in [**Create and review an SAP Business One draft**](/docs/ksef/user-guide/incoming-invoices/create-draft-inco).
+The next processing steps are described in [**Create and review an SAP Business One draft**]\(/docs/ksef/user-guide/incoming-invoices/create-draft-inco).
