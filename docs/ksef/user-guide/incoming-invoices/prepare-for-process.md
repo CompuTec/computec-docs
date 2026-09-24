@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Prepare an incoming invoice for processing
+# Prepare an Incoming Invoice for Processing
 
 After an invoice is retrieved from KSeF, review its processing state and verify the information required to create the corresponding SAP Business One document.
 
@@ -128,9 +128,19 @@ Review the result before continuing with base document matching.
     - You can also manually change a value assigned during automatic processing.
     :::
 
-### Process the invoice automatically
+## Process the invoice automatically
 
-To let CompuTec KSeF process the invoice automatically:
+You can process the incoming invoice using one of the following actions:
+
+- **Process** – Processes the incoming invoice and attempts to determine the required SAP Business One data. After reviewing the result, you can create the draft separately by clicking **Create Draft**.
+- **Process (Force)** – Processes the incoming invoice and attempts to create the SAP Business One draft in the same operation.
+
+:::info[note]
+    - Use **Process (Force)** when you expect the invoice to be processed without manual changes, for example, for recurring invoices with a known structure that CompuTec KSeF can process automatically.
+    - Use **Process** when you want to review or change the processing results before creating the SAP Business One draft.
+:::
+
+To let CompuTec KSeF process the invoice, follow these steps:
 
 1. Click **Process**.
 
@@ -148,9 +158,9 @@ To let CompuTec KSeF process the invoice automatically:
 
     ![Invoice Lines section showing assigned item codes or G/L accounts](media/prep-process/ksef-incom-21e.png)
 
-### Assign an Item Code or G/L Account manually
+## Assign an Item Code or G/L Account manually
 
-If a line has not been matched automatically, or you want to change the assigned value:
+If a line has not been matched automatically during processing, or you want to change the assigned value:
 
 1. Find the required line.
 
@@ -299,4 +309,4 @@ When the invoice information and base document mappings are correct, you can con
 
 Click **Create Draft** to create the corresponding SAP Business One draft.
 
-The next processing steps are described in **Create and review an SAP Business One draft**.
+The next processing steps are described in [**Create and review an SAP Business One draft**](/docs/ksef/user-guide/incoming-invoices/create-draft-inco).

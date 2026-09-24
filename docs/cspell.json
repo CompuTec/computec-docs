@@ -5,9 +5,11 @@
     "AppEngine",
     "CardCode",
     "CompuTec",
+    "CTLABEL",
     "HANA",
     "KSeF",
     "ProcessForce",
+    "SELECTPRINTTEMPLATE",
     "WebUp"
   ]
 }

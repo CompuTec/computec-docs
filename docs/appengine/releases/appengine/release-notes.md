@@ -4,6 +4,40 @@ sidebar_position: 1
 
 # CompuTec AppEngine Release Notes
 
+## CompuTec AppEngine 3.2609.2
+
+**Release Date: 23 September 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | Smart Actions | Navigation **Smart Actions** can now open links in the current window or a new browser tab, giving you more control over how users navigate between pages. |
+| Added | Web Client | SAP Business One Web Client extensions can now respond automatically when field values change and access the variants available on the current list view. |
+| Improved | Plugin Actions | Plugin actions now display their result in the interface, so you can immediately see whether an action was completed successfully. |
+| Improved | Background Processing | Invalid job schedules are now detected when a job is activated or its schedule is changed, helping you identify configuration errors before the job runs. |
+| Fixed | Logging | Trace and debug logs are now recorded correctly when enabled for a company or CompuTec AppEngine server. AppEngine also notifies you when a restart is required after changing a telemetry profile. |
+| Fixed | Stability | Fixed an issue that could cause timeouts and connection failures after AppEngine had been running for an extended period. Database connections are now released correctly, improving long-running system stability. |
+| Fixed | Stability | Improved the reliability of long-running API integrations, reducing unexpected AppEngine interruptions during communication with SAP Business One. |
+| Fixed | Web Client | **Yellow arrow icons** used from plugins in the SAP Business One Web Client now correctly open the related SAP Business One object. |
+| Fixed | Web Client | Changes to bound field values are now detected automatically, including values recalculated by SAP Business One, such as document totals. |
+| Fixed | Language Settings | The **language mismatch notification** now appears correctly when your session language differs from your SAP Business One profile language. Your selected login language is also retained after reloading. |
+| Fixed | Administration | You can now activate multiple **background processing jobs** without being unexpectedly logged out of CompuTec AppEngine. |
+| Fixed | Authentication | Login is prevented when required credentials are missing, and authentication problems during company discovery now display an appropriate error instead of **Company not found**. |
+| Fixed | Certificates | Custom certificates are now loaded correctly from their configured location. Existing custom certificate configurations may need to be entered again. |
+| Fixed | AE Analytics | Analytics reports, including **MOR_Transactions**, now load their filters, charts, and results correctly instead of remaining on the loading screen. |
+| Fixed | AE Analytics | Analytics totals now match the data currently displayed after you apply a chart or visual filter. |
+| Fixed | AE Analytics | Improved variant management so only one variant can be set as the default. You can also manage the Default and Public settings directly from the variants list. |
+| Fixed | AE Analytics | When an Analytics action cannot be completed, you now receive a clear **error message** instead of the action failing without feedback. |
+| Fixed | AE Analytics | Unavailable **Analytics actions** are now correctly disabled, including when only one action is available. |
+| Fixed | AE Analytics | Analytics configuration problems now display **clearer validation messages**, making issues such as invalid SQL easier to identify and correct. |
+| Fixed | MRP | When you leave the **Vendor Lead Time** screen with unsaved changes, you are now prompted to save them, preventing accidental loss of your changes. |
+| Fixed | Plugins | CompuTec AppEngine plugins can now be installed on **additional company databases** after the first installation without requiring an uninstall and reinstall. |
+| Fixed | Plugins | Plugins can now be reinstalled correctly when multiple parent variants exist for the same view. |
+| Fixed | WebUp | When you delete a **WebUp View**, its customizations are removed immediately without requiring an AppEngine restart. |
+| Fixed | Authorization | The **CT_AE_Custom** authorization group is now named **Custom Variants**, making its purpose easier to understand. |
+| Fixed | SAP Business One Integration | **About CompuTec** is available again from the SAP Business One Help menu. |
+| Fixed | Reporting | Plugin upgrades no longer create duplicate report types when report names change, and the correct document layouts remain available. |
+| Fixed | ProcessForce | Replacing a phantom item or revision in a **Manufacturing Order** no longer results in a `Not found` API error. |
+
 ## CompuTec AppEngine 3.2608.10
 
 **Release Date: 31 August 2026**
