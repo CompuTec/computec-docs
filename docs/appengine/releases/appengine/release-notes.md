@@ -25,14 +25,14 @@ sidebar_position: 1
 | Fixed | Certificates | Custom certificates are now loaded correctly from their configured location. Existing custom certificate configurations may need to be entered again. |
 | Fixed | AE Analytics | Analytics reports, including **MOR_Transactions**, now load their filters, charts, and results correctly instead of remaining on the loading screen. |
 | Fixed | AE Analytics | Analytics totals now match the data currently displayed after you apply a chart or visual filter. |
-| Fixed | AE Analytics | Improved variant management so only one variant can be set as the default. You can also manage the Default and Public settings directly from the variants list. |
+| Fixed | AE Analytics | Improved variant management so only one variant can be set as the default. You can also manage the **Default** and **Public** settings directly from the variants list. |
 | Fixed | AE Analytics | When an Analytics action cannot be completed, you now receive a clear **error message** instead of the action failing without feedback. |
 | Fixed | AE Analytics | Unavailable **Analytics actions** are now correctly disabled, including when only one action is available. |
 | Fixed | AE Analytics | Analytics configuration problems now display **clearer validation messages**, making issues such as invalid SQL easier to identify and correct. |
 | Fixed | MRP | When you leave the **Vendor Lead Time** screen with unsaved changes, you are now prompted to save them, preventing accidental loss of your changes. |
 | Fixed | Plugins | CompuTec AppEngine plugins can now be installed on **additional company databases** after the first installation without requiring an uninstall and reinstall. |
 | Fixed | Plugins | Plugins can now be reinstalled correctly when multiple parent variants exist for the same view. |
-| Fixed | WebUp | When you delete a **WebUp View**, its customizations are removed immediately without requiring an AppEngine restart. |
+| Fixed | WebUp | When you delete a **CompuTec WebUp View**, its customizations are removed immediately without requiring Computec AppEngine restart. |
 | Fixed | Authorization | The **CT_AE_Custom** authorization group is now named **Custom Variants**, making its purpose easier to understand. |
 | Fixed | SAP Business One Integration | **About CompuTec** is available again from the SAP Business One Help menu. |
 | Fixed | Reporting | Plugin upgrades no longer create duplicate report types when report names change, and the correct document layouts remain available. |
