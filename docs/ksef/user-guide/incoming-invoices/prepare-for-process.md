@@ -4,13 +4,13 @@ sidebar_position: 3
 
 # Prepare an Incoming Invoice for Processing
 
-After an invoice is retrieved from KSeF, review its processing state and verify the information required to create the corresponding SAP Business One document.
+After an invoice is retrieved from KSeF, review and prepare the information required to create the corresponding SAP Business One document.
 
-At this stage, you can assign or create the Business Partner, review the detected document type and subtype, and correct the SAP Business One document type when required.
+You can verify the Business Partner and document type, process and adjust invoice lines, and review or change base document matching before creating the SAP Business One draft.
 
 ## Before you start
 
-Before you start, make sure that:
+Before you begin, make sure that:
 
 - The invoice is available in **CompuTec KSeF** > **Input Invoices**. [Read more](/docs/ksef/user-guide/incoming-invoices/work-with-incom-invo-list)
 
@@ -107,7 +107,7 @@ The **Doc. Type (KSeF)** field identifies the type of invoice received from KSeF
 
 CompuTec KSeF supports the following incoming document types:
 
-- **VAT** – A standard VAT invoice or a settlelemt invoice. Both are processed as an A/P invoice in SAP Business One.
+- **VAT** – A standard VAT invoice or a settlement invoice. Both are processed as an A/P invoice in SAP Business One.
 - **ZAL** – An advance invoice. It is based on a corresponding down payment request in SAP Business One.
 - **KOR** – A correction invoice. It refers to an existing invoice that is being corrected.
 
@@ -150,107 +150,6 @@ When applicable, this section displays bank account information associated with 
 
 The **Account assigned to BP** field indicates whether the account is assigned to the Business Partner.
 
-### Match incoming invoice lines
-
-CompuTec KSeF processes the lines of an incoming invoice and attempts to assign the SAP Business One data required for each line.
-
-    - For `Item` documents, invoice lines are matched with **SAP Business One item codes**.
-    - For `Service` documents, the corresponding **G/L accounts** are determined.
-
-Review the result before continuing with base document matching.
-
-#### Review invoice lines
-
-1. In the **Invoice Lines** section of the invoice, review the information retrieved for each invoice line, including the description, quantity, prices, tax information, and other available line data.
-
-    ![Invoice Lines section showing incoming invoice line details](media/prep-process/ksef-incom-13e.png)
-
-2. Check **Item Code / Account** and **Line Status**.
-
-    :::info[note]
-
-    If no corresponding SAP Business One **Item Code** or **G/L Account** has been determined, the line remains pending.
-
-    You can assign the required value in one of the following ways:
-
-    - Click **Process** to let CompuTec KSeF determine the value automatically. For `Item` documents, CompuTec KSeF attempts to match an **Item Code**. For `Service` documents, it attempts to determine a **G/L Account**.
-    - Assign an **Item Code** or **G/L Account** manually in **Item Code / Account**.  
-    - You can also manually change a value assigned during automatic processing.
-    :::
-
-#### Adjust invoice lines
-
-You can adjust invoice lines when a single KSeF invoice line needs to be processed as multiple SAP Business One document lines.
-
-For example, the quantity from one incoming invoice line may relate to more than one base document. In this case, you can split the incoming line and match each resulting line separately.
-
-:::note[info]
-![Invoice line split and matched with different base documents](media/prep-process/ksef-incom-47e.png)
-
-In this example, the original invoice line was split into two lines:
-
-- One line contains a quantity of **4** and is matched with one purchase order.
-- The other line contains a quantity of **6** and is matched with another purchase order.
-
-Both lines use the same SAP Business One item code, but each line can be matched with the appropriate base document.
-:::
-
-To adjust invoice lines, use the available actions in **Invoice Lines**, such as **Group Selected**, **Split selected**, and **Edit lines**.
-
-##### Split an invoice line
-
-To split an invoice line:
-
-1. In **Invoice Lines**, select the line that you want to split.
-
-2. Click **Split selected**.
-
-   ![Select an invoice line and click Split selected](media/prep-process/ksef-incom-50e.png)
-
-3. Specify the number of lines that you want to create and click **Next**.
-
-   ![Select the number of lines](media/prep-process/ksef-incom-51e.png)
-
-   :::info[note]
-
-   Splitting a line removes its existing base document match. If you undo the split later, the previous match is not restored and the line must be matched again.
-
-   :::
-
-4. Review the resulting lines and adjust the **Quantity** and **Unit Price** for each line as required.
-
-   The total quantity of the split lines should correspond to the quantity of the original invoice line.
-
-   ![Specify quantities for the split lines](media/prep-process/ksef-incom-52e.png)
-
-5. Click **Split selected** to confirm.
-
-   The original line is replaced in the standard view by the newly created lines. The **Kind** column identifies the source line, for example, **Split from #2**.
-
-   ![Invoice Lines showing the split lines](media/prep-process/ksef-incom-53e.png)
-
-6. To view the original line together with its split lines, click **Show Grouped/Split**.
-
-   ![Show Grouped Split action](media/prep-process/ksef-incom-54e.png)
-
-##### Undo a line split
-
-If the line was split incorrectly, you can restore the original line.
-
-1. Click **Show Grouped/Split** to display the original and split lines.
-
-2. Find the split lines and click the undo split icon next to **Split from #...**.
-
-   ![Undo a line split](media/prep-process/ksef-incom-55e.png)
-
-The split lines are removed and the original invoice line becomes available for processing again.
-
-:::info[note]
-
-If the original line was previously matched with a base document, undoing the split does not restore that match. Match the line with the required base document again.
-
-:::
-
 ### Process the invoice
 
 You can process the incoming invoice using one of the following actions:
@@ -275,6 +174,8 @@ To let CompuTec KSeF process the invoice, follow these steps:
 5. Return to **Invoice Lines** and check the values assigned to the lines.
 
     ![Invoice Lines section showing assigned item codes or G/L accounts](media/prep-process/ksef-incom-21e.png)
+
+### Correct unmatched or incorrect data
 
 #### Assign an Item Code or G/L Account manually
 
@@ -305,6 +206,125 @@ After an item code has been assigned, you can click the code to open the corresp
 When required, maintain additional identification information used for item matching. For example, you can maintain an EAN in the **Bar Code** field of the item master data.
 
 ![Item master data showing the Bar Code field](media/prep-process/ksef-incom-22b.png)
+
+### Review invoice lines
+
+1. In the **Invoice Lines** section of the invoice, review the information retrieved for each invoice line, including the description, quantity, prices, tax information, and other available line data.
+
+    ![Invoice Lines section showing incoming invoice line details](media/prep-process/ksef-incom-13e.png)
+
+2. Check **Item Code / Account** and **Line Status**.
+
+    :::info[note]
+
+    If no corresponding SAP Business One **Item Code** or **G/L Account** has been determined, the line remains pending.
+
+    You can assign the required value in one of the following ways:
+
+    - Click **Process** to let CompuTec KSeF determine the value automatically. For `Item` documents, CompuTec KSeF attempts to match an **Item Code**. For `Service` documents, it attempts to determine a **G/L Account**.
+    - Assign an **Item Code** or **G/L Account** manually in **Item Code / Account**.  
+    - You can also manually change a value assigned during automatic processing.
+    :::
+
+#### Adjust invoice lines
+
+You can adjust the structure of the incoming invoice lines before creating the SAP Business One draft.
+
+For example, you can split an invoice line when different quantities from the same KSeF invoice line need to be matched with different SAP Business One base documents.
+
+![Invoice line split and matched with different base documents](media/prep-process/ksef-incom-47e.png)
+
+To adjust invoice lines, use the available actions in **Invoice Lines**, such as **Group Selected**, **Split selected**, and **Edit lines**.
+
+##### Split an invoice line
+
+To split an invoice line:
+
+1. In **Invoice Lines**, select the line that you want to split.
+
+2. Click **Split selected**.
+
+   ![Select an invoice line and click Split selected](media/prep-process/ksef-incom-50e.png)
+
+3. Specify the number of lines that you want to create and click **Next**.
+
+   ![Select the number of lines](media/prep-process/ksef-incom-51e.png)
+
+   :::info[note]
+
+   Splitting a line removes its existing base document match. If you undo the split later, the previous match is not restored and the line must be matched again.
+
+   :::
+
+4. Review the resulting lines and enter the **Quantity** for each line. Make sure that the total quantity of the split lines corresponds to the quantity of the original invoice line.
+
+    ![Specify quantities for the split lines](media/prep-process/ksef-incom-52e.png)
+
+    :::note[info]
+    Adjust the **Unit Price** when required.
+    :::
+
+5. Click **Split selected** to confirm.
+
+   The original line is replaced in the standard view by the newly created lines. The **Kind** column identifies the source line, for example, **Split from #2**.
+
+      ![Invoice Lines showing the split lines](media/prep-process/ksef-incom-53e.png)
+
+      :::info[note]
+      The new lines may have the **Pending** status and require processing and base document matching before you continue.
+      :::
+
+6. To view the original line together with its split lines, click **Show Grouped/Split**.
+
+   ![Show Grouped Split action](media/prep-process/ksef-incom-54e.png)
+
+##### Undo a line split
+
+If the line was split incorrectly, you can restore the original line.
+
+1. Click **Show Grouped/Split** to display the original and split lines.
+
+2. Find the split lines and click the undo split icon next to **Split from #...**.
+
+   ![Undo a line split](media/prep-process/ksef-incom-55e.png)
+
+The split lines are removed and the original invoice line becomes available for processing again.
+
+:::info[note]
+
+If the original line was previously matched with a base document, undoing the split does not restore that match. Match the line with the required base document again.
+
+:::
+
+##### Group invoice lines
+
+You can group multiple incoming invoice lines when they should be processed as a single SAP Business One document line.
+
+1. In **Invoice Lines**, select the lines that you want to combine.
+
+2. Click **Group Selected**.
+
+    ![Invoice Lines screen in the KSeF invoice details page, where two invoice lines are selected and the Group Selected toolbar action is highlighted by a large blue arrow. The toolbar also shows Dimensions / project, Split selected, Edit lines, and Show Grouped/Split; the table displays item codes A00001 and A00002 with quantities, prices, tax details, line statuses, and base document columns.](media/prep-process/ksef-incom-56e.png)
+
+3. Review the grouped line and confirm the operation.
+
+Use **Show Grouped/Split** to review the original KSeF lines included in the grouped line.
+
+##### Edit invoice lines
+
+Click **Edit lines** when you need to adjust editable values on the incoming invoice lines before continuing with processing.
+
+![Invoice Lines tab in the KSeF invoice details screen. The toolbar shows Dimensions / project for all lines, Group Selected, Edit lines, and Show Grouped/Split; a large blue arrow points to Edit lines. Below, two selected invoice lines display item codes A00001 and A00002, descriptions, quantities, prices, tax details, line status, and base document columns.](media/prep-process/ksef-incom-57e.png)
+
+Review the changes before creating the SAP Business One draft.
+
+##### Assign dimensions or a project
+
+Use **Dimensions / project for all lines** to assign dimensions or project information to the invoice lines when required.
+
+![Invoice Lines tab with the Dimensions / project for all lines action highlighted by a large blue arrow. The toolbar also shows Group Selected, Split selected, Edit lines, and Show Grouped/Split. Two selected invoice lines with item codes A00001 and A00002 are visible in the table, including quantities, prices, tax details, line status, and Dimensions / Project columns.](media/prep-process/ksef-incom-58e.png)
+
+You can also use the action available for an individual line to maintain dimensions or project information for that line only.
 
 ### Match base documents
 
@@ -397,6 +417,33 @@ Review the base document assignments before continuing, especially if you change
 
 :::
 
+### Redownload the invoice from KSeF
+
+Use **Redownload from KSeF** when you need to remove the current invoice data from CompuTec KSeF and retrieve the invoice again from KSeF.
+
+:::warning[Important]
+This permanently deletes the local invoice record and downloads it from KSeF as a completely new record. Any local changes, including the assigned category, invoice-line edits, and links to the draft or target document, are discarded and can't be restored.
+:::
+
+1. Click **Redownload from KSeF**.
+
+    ![KSeF Input Invoice Details screen showing the Invoice Lines tab and a prominent blue arrow pointing to the Redownload from KSeF button in the top toolbar](media/prep-process/ksef-incom-60e.png)
+
+    :::info[note]
+
+    Unlike resetting the invoice to `Received`, downloading it again replaces the local record itself. Use **Reset to Received** when you only want to redo processing, and **Redownload from KSeF** when the local record no longer matches what you need from KSeF.
+    :::
+
+2. Confirm the action.
+
+    ![Redownload Invoice confirmation dialog warning that the local invoice record will be permanently deleted and downloaded again from KSeF as a brand new record, discarding local changes including category, line edits, and draft or target links. The dialog offers OK and Cancel buttons and appears over the invoice lines table; the tone is cautionary.](media/prep-process/ksef-incom-61e.png)
+
+   CompuTec KSeF removes the invoice from its database and downloads it again from KSeF.
+
+3. Wait for the invoice to be retrieved.
+
+4. Open the invoice and process it again as required.
+
 ## Result
 
 The incoming invoice is prepared for SAP Business One draft creation.
@@ -407,4 +454,4 @@ If you used **Process (Force)** and processing was successful, CompuTec KSeF may
 
 ## Next step
 
-The next processing steps are described in [**Create and review an SAP Business One draft**]\(/docs/ksef/user-guide/incoming-invoices/create-draft-inco).
+The next processing steps are described in [**Create and review an SAP Business One draft**](/docs/ksef/user-guide/incoming-invoices/create-draft-inco).
