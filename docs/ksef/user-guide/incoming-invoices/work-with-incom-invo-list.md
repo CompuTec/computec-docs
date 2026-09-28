@@ -248,20 +248,16 @@ Use view management when you want to change your saved views or select a differe
 
 You can select one or more invoices in the **Input Invoices** list and perform an action on the selected documents.
 
+![alt text](media/work-list/ksef-incom-4e.png)
+
 After you select at least one invoice, the following options become available:
 
 - **Preview PDF** – Opens a PDF preview of the selected invoice.
 - **Process Selected** – Processes the selected invoices according to the configured incoming document processing rules.
-- **Cancel Selected** – Cancels further processing of the selected invoices. Use this option, for example, for invoices that have already been posted in SAP Business One, contain incorrect data, or should not be processed because they are not recognized as legitimate business documents.
-- **Finish Selected** – Marks the selected invoices as finished.   
-
-![alt text](media/work-list/ksef-incom-4e.png)
-
-:::info[note]
-
-After you cancel an invoice, its **Integration Status** changes to `Cancelled`, indicating that the invoice is not intended for further processing in CompuTec KSeF.
-
-:::
+- **Cancel Selected** – Cancels further processing of the selected invoices. Use this option for invoices that have already been posted in SAP Business One, contain incorrect data, or should not be processed because they are not recognized as legitimate business documents.  
+    After you cancel an invoice, its **Integration Status** changes to `Cancelled`, indicating that the invoice is not intended for further processing in CompuTec KSeF.
+- **Finish Selected** – Use it for invoices that do not require further processing in CompuTec KSeF. This allows you to complete their processing workflow without creating another SAP Business One document from CompuTec KSeF.
+    For example, use this option when the invoice has already been entered manually in SAP Business One outside CompuTec KSeF.
 
 ## Result
 

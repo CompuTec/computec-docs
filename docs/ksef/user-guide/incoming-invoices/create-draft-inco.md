@@ -148,10 +148,6 @@ Whenever possible, verify the Business Partner, document type, invoice lines, an
 
 ## Result
 
-An SAP Business One draft is created from the incoming KSeF invoice and linked to the invoice in CompuTec KSeF.
+The SAP Business One draft is created and can be reviewed and posted by the accountant.
 
-You can open the draft from CompuTec KSeF to review its details before creating the final SAP Business One document.
-
-## Next step
-
-After reviewing the draft, create the final SAP Business One document according to your standard purchasing process.
+After the document is posted in **SAP Business One**, **CompuTec KSeF** automatically changes the corresponding incoming invoice status to `Finished`. No additional action is required in CompuTec KSeF.

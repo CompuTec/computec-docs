@@ -417,7 +417,23 @@ Review the base document assignments before continuing, especially if you change
 
 :::
 
-### Redownload the invoice from KSeF
+### Troubleshooting
+
+#### Debug invoice processing
+
+The **Debug Pipeline** action is intended for administrators who need to troubleshoot invoice processing.
+
+![KSeF Input Invoice Details screen with the invoice number and status details; a large blue arrow points to the Debug Pipeline action in the top toolbar. Other toolbar actions include Create Draft and Reset to Received.](media/prep-process/ksef-incom-62e.png)
+
+It provides detailed information about the processing steps and messages involved in creating the SAP Business One draft. Use this information to identify the stage at which processing failed and review the related message.
+
+:::info[note]
+
+**Debug Pipeline** is a diagnostic action and is not required during standard incoming invoice processing.
+
+:::
+
+#### Redownload the invoice from KSeF
 
 Use **Redownload from KSeF** when you need to remove the current invoice data from CompuTec KSeF and retrieve the invoice again from KSeF.
 
