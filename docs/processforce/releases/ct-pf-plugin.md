@@ -11,6 +11,35 @@ You can find all download links and release notes for the latest available **Com
 However, we strongly recommend using **CompuTec ProcessForce Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec ProcessForce 3.2609.3
+
+**Release Date: 28 September 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | Quality Control | **Batch status** can now be updated automatically based on QC results. Depending on your configuration, batches can be set to `Released`, `On Hold`, or `Blocked` when related QC Tests or QC Test Pools are updated. |
+| Added | Quality Control | Improved the **QC Test** and **NCMR** workflow. When an NCMR is created, the related QC Test moves to Awaiting NCMR and remains blocked until the NCMR is closed. Invalid status changes are prevented to keep the documents synchronized. |
+| Added | Manufacturing Orders | You can now return over-issued components partially or in full from a **Manufacturing Order** without reversing the entire issue. |
+| Added | MRP | You can now delete an MRP scenario that already contains saved order recommendations. Archived scenarios are also protected from status changes. |
+| Improved | Orderless Production | Improved **Orderless Production** reliability and processing. Large transactions hold fewer database locks, notifications can be processed correctly, and a production process is reported as successful only after all required postings have completed. |
+| Improved | Authorization | **Ingredient Classification** now follows the same authorization structure as other **Ingredients** functions, making permissions easier to manage consistently. |
+| Improved | Performance | Improved the time required to open **Bills of Materials**, **Production Processes**, and **Manufacturing Orders**, particularly in environments where records previously took several seconds to load. |
+| Fixed | Quality Control | Improved **QC** and **NCMR** handling, including batch status updates, deletion checks, and opening existing complaints on SAP HANA. **QC Tests** are no longer incorrectly treated as being in use, and NCMRs cannot be deleted while they are still linked to a QC Test. |
+| Fixed | Quality Control | Duplicated **Test Protocols** now retain the names of test properties, item properties, resources, and items correctly. |
+| Fixed | Product Costing | Improved the accuracy and consistency of **planned and rolled costs**. Costs are now calculated correctly across cost categories, routings, and warehouses, Manufacturing Order header costs are populated correctly, and obsolete rolled-cost records are removed. |
+| Fixed | Batch Traceability | Corrected batch consumption quantities on SAP HANA so returns and rollbacks are included when calculating traced quantities. |
+| Fixed | Installation | Improved **CompuTec ProcessForce** installation and database updates, preventing repeated object-update messages, false Health Check warnings, and failures during the initial restoration of Item Details on large databases. |
+| Fixed | Reporting | Fixed **Crystal Report PDF export** on SAP HANA for **Manufacturing Order**, **Manufacturing Order End**, and **Quality Control Test** layouts. **Pick Order** and **Pick Receipt** layouts have also been aligned with the current ProcessForce data structure. |
+| Fixed | Pick Order | Improved **Pick Order** creation and updates. Orders containing Maintenance Order lines can now be saved correctly, and Pick Orders using batches can be created or updated through the API without incorrect quantity mismatch errors. |
+| Fixed | Manufacturing Orders | Changing a **Manufacturing Order** to an alternative routing no longer removes its operation overlay. |
+| Fixed | Time Booking | The **Actual Tasks Progress Report** now shows current run and setup times that match recorded time bookings. Time bookings with a damaged quantity can also be posted without an index error. |
+| Fixed | Bill of Materials | The **Default for MRP** value is now displayed correctly for revisions in **Bill of Materials**, **Production Process**, and **Manufacturing Order** search windows. |
+| Fixed | Bill of Materials | The **Next** and **Previous Record** buttons now navigate through all **Bill of Materials** revisions correctly instead of skipping later revisions. |
+| Fixed | Navigation | Corrected link arrow navigation across **Item Details**, **Bills of Materials**, **Goods Receipts**, and **Purchase Orders** so item links open the appropriate **Item Master Data** instead of an incorrect CompuTec ProcessForce or SAP Business One form. |
+| Fixed | Sales Orders | **Sales Orders** now show the correct **Manufacturing Order references** for multi-level Bills of Materials and combined Manufacturing Orders. |
+| Fixed | Item Details | Fixed an error that could occur when creating a new **Item Details revision**. |
+| Fixed | Vehicle Inspection | **Vehicle Inspection** temperature reason codes can now be used consistently in queries and reports, in the same way as the other reason-code fields. |
+
 ## CompuTec ProcessForce 3.2609.2
 
 **Release Date: 14 September 2026**
