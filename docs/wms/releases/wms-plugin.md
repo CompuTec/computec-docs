@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# CompuTec WMS Plugin Release Notes
+# CompuTec WMS 3.0 Plugin Release Notes
 
 Below are the release notes for CompuTec WMS Plugin, highlighting new features, improvements, and bug fixes in this release.
 

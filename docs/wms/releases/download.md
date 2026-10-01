@@ -7,7 +7,7 @@ import TabItem from "@theme/TabItem";
 
 import Releases10 from "../releases-10.json";
 
-# Download CompuTec WMS
+# Download CompuTec WMS 2.0
 
 Here you can download all required CompuTec WMS files.
 

@@ -2,25 +2,184 @@
 sidebar_position: 1
 ---
 
-# Overview
+# Installation Overview
 
-CompuTec WMS is a robust Warehouse Management System designed to streamline warehouse operations and ensure seamless integration with SAP Business One. This guide outlines the step-by-step process for installing, configuring and validating the core components of the CompuTec WMS solution. The instructions provided here are crucial for ensuring optimal performance and compatibility of CompuTec WMS with your business processes.
+This guide explains the installation and configuration process for **CompuTec WMS**.
+
+CompuTec WMS consists of several components that work together. Complete the installation in the order described below to make sure that all required components are available and configured correctly.
+
+## Before you start
+
+Before installing CompuTec WMS:
+
+- Review the [CompuTec WMS requirements](./requirements).
+- Make sure **CompuTec AppEngine** is installed and configured.
+- Make sure you have access to the **CompuTec AppEngine Administration Panel**.
+- Make sure at least one CompuTec AppEngine instance is configured and active.
+- Make sure you have the required SAP Business One and system administrator permissions.
+
+If you use **CompuTec ProcessForce**, additional components may be required. See the relevant installation instructions before continuing.
+
+## Installation process
+
+Install and configure CompuTec WMS in the following order.
+
+### Step 1: Install the CompuTec WMS plugin
+
+To install and activate a CompuTec AppEngine WMS 3.0 plugin, follow these steps:
+
+1. Log in to **CompuTec AppEngine Administration Panel**.
+
+    ![log into computec appengine administration panel](media/plugin-installation/plugin-install1.png)
+
+2. Go to **Plugins**.
+
+    ![go to plugins section](media/plugin-installation/plugin-install2.png)
+
+3. Navigate to **Store**.
+
+    ![go to store section](media/plugin-installation/plugin-install3.png)
+
+4. Find the plugin you want to install:
+
+    - Use the **Search** field
+
+        ![search field in the plugin store](media/plugin-installation/plugin-install4.png)
+
+    - or filter by plugin type : **AppEngine Plugins**, **Business Logic**, or **SAP User Interface** plugins
+
+        ![filter by plugin type in the plugin store](media/plugin-installation/plugin-install5.png)
+
+    :::info[note]
+    **Business Logic** plugins are typically installed automatically as dependencies when required by another plugin. You do not need to select or install them manually.
+    :::
+
+5. Click **Get...** next to the plugin name on the list to install the latest plugin version.
+
+    ![search field in the plugin store](media/plugin-installation/plugin-install7.png)
+
+6. (optional) To install a different version of the plugin:
+
+    - Click the plugin name or the arrow next to the version number and click **Find different version**.
+
+        ![click find different version to see a list of different plugin versions](media/plugin-installation/plugin-install8.png)
+
+    - You will see the plugin details with all the available versions. [Read more](/docs/appengine/plugins-user-guide/overview#plugin-versions)
+
+        ![a list of different plugin versions](media/plugin-installation/plugin-install9.png)
+
+    - Find the version you want to install and click **Get**.
+
+        ![click get next to a chosen plugin version](media/plugin-installation/plugin-install11.png)
+
+7. Click **Get & Install** next to the chosen plugin version.
+
+    ![click get & install next to a chosen plugin version](media/plugin-installation/plugin-install12.png)
+
+8. Select **Company** for installation and click **Accept**.
+
+    ![select company and click accept to install the plugin](media/plugin-installation/plugin-install13.png)
+
+9. Select **CompuTec AppEngine Instance** for installation and click **Accept**.
+
+    ![select instance and click accept to install the plugin](media/plugin-installation/plugin-install14.png)
+
+10. Review the installation details and click **Perform Installation**.
+
+    ![click perform installation to start installation](media/plugin-installation/plugin-install15.png)
+
+11. Click **OK** to confirm the plugin installation.
+
+    ![click ok](media/plugin-installation/plugin-install16.png)
+
+12. You can now track the installation progress. Once the installation is complete, click **Close**.
+
+    ![click close after the installation is finished](media/plugin-installation/plugin-install17.png)
+
+13. Click **Yes** to restart the **CompuTec AppEngine**.
+
+    ![click yes to restart appengine](media/plugin-installation/plugin-install18.png)
+
+14. Once the restart is complete, click **OK**.
+
+    ![after restart of appengine, click ok](media/plugin-installation/plugin-install19.png)
+
+15. Done! The CompuTec WMS 3.0 plugin is now installed and ready to use.
+
+:::info[Note]
+
+You don’t need to manage dependencies manually. During the installation, the system automatically:
+
+- installs all required plugins
+- ensures compatible versions are used
+- includes any missing components
+
+This allows you to continue with the setup without additional configuration steps.
+:::
+
+#### After installation
+
+After successful installation:
+
+- the plugin appears in the **Downloaded** tab
+- it is assigned to the selected **Company**
+- it is active on the selected **CompuTec AppEngine Instance**
+- the plugin is available in the **CompuTec AppEngine Launchpad**
+
+    ![you can find your plugin in computec appengine launchpad after installation](media/plugin-installation/plugin-install20.png)
+
+### Step 2: Download the CompuTec WMS Server installer
+
+After the CompuTec WMS 3.0 plugin is installed:
+
+1. Open the installed **CompuTec WMS plugin** in CompuTec AppEngine.
+
+    ![alt text](media/plugin-installation/wms-serv-instal1.png)
+
+2. Locate the link to the **CompuTec WMS Server installer**.
+
+    ![alt text](media/plugin-installation/wms-serv-instal2.png)
+
+3. Download the installer.
+
+You will use this package to install CompuTec WMS Server in the next step.
+
+### Step 3: Install and configure CompuTec WMS Server
+
+Install **CompuTec WMS Server** using the installer downloaded from the CompuTec WMS plugin.
+
+After installation, configure the server connection and the SAP Business One companies that will use CompuTec WMS.
+
+:::note[info]
+For detailed instructions, see [WMS Server Installation Guide](/docs/wms/administrator-guide/installation/wms-server/overview).
+:::
+
+### Step 4: Configure CompuTec WMS licensing
+
+Configure the required CompuTec WMS licenses and assign them according to your environment.
+
+For detailed instructions, see [WMS Licensing](/docs/wms/administrator-guide/installation/wms-licensing).
+
+### Step 5: Install and configure CompuTec WMS Client
+
+Install **CompuTec WMS Client** on the devices that will be used for warehouse operations.
+
+Connect the client to the WMS Server and configure the required application settings.
+
+For detailed instructions, see [WMS Client](/docs/wms/administrator-guide/installation/wms-client/computec-wms-client-download).
+
+### Step 6: Configure additional components
+
+Depending on your environment and warehouse processes, you may also need to configure additional components, including:
+
+- **CompuTec Gateway Service** for weight scales and label printing
+- **RDP scanner configuration**
+- **SAP Business One settings**
+- **CompuTec ProcessForce integration**
+
+These components are not required in every environment. Configure only the components relevant to your implementation.
 
 ---
-
-## Step-by-Step Installation and Configuration
-
-### Download WMS.BusinessLogic and WMS.Plugin
-
-Obtain the latest versions of WMS.BusinessLogic and WMS.Plugin.
-
-    ![Store](./media/overview/store.png)
-
-    ![Plugins Name](./media/overview/plugin-01.png)
-
-    ![Get plugin](./media/overview/get-plugin.png)
-
-    ![Other versions](./media/overview/other-versions.png)
 
 ### Activate WMS.BusinessLogic and WMS.Plugin
 
@@ -29,14 +188,6 @@ Obtain the latest versions of WMS.BusinessLogic and WMS.Plugin.
 ### Activate WMS.Plugin Job
 
     ![Activate WMS Plugin](./media/overview/activate-wms-plugin.png)
-
-### Download the WMS Server Installer
-
-Download the installer for the WMS Server application
-
-    ![Plugin](./media/overview/plugin.png)
-
-    ![WMS Plugin](./media/overview/wms-plugin.png)
 
 ### Install CompuTec.ProcessForce.API *
 
