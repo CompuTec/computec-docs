@@ -22,11 +22,11 @@ For more information, see [CompuTec WMS Server](/docs/wms/administrator-guide/in
 
 1. Start the desktop version of **CompuTec WMS Client** from the Windows program list or run `CompuTec.Client.Desktop.exe` from the CompuTec WMS Client installation folder.
 
-    ![alt text](../media/start-and-config-wms-client/wms-intro0.png)
+    ![CompuTec WMS Client startup screen](../media/start-and-config-wms-client/wms-intro0.png)
 
 2. On the login screen, click the **settings icon**.
 
-    ![alt text](../media/start-and-config-wms-client/wms-intro1.png)
+    ![Login screen with the settings icon](../media/start-and-config-wms-client/wms-intro1.png)
 
     :::info[note]
     When you start CompuTec WMS Client **for the first time**, configure the connection to CompuTec WMS Server **before logging in**. [Read more](/docs/wms/administrator-guide/installation/wms-server/overview).
@@ -41,13 +41,13 @@ For more information, see [CompuTec WMS Server](/docs/wms/administrator-guide/in
     - **Scanner**
     - **Logs**
 
-    ![alt text](../media/start-and-config-wms-client/wms-intro2.png)
+    ![CompuTec WMS Client settings tabs](../media/start-and-config-wms-client/wms-intro2.png)
 
 ## Configure CompuTec WMS Client general settings
 
 Use the **General** tab to configure the connection to CompuTec WMS Server and select the company, printer, and weight scale.
 
-![alt text](../media/start-and-config-wms-client/wms-settings7.png)
+![General settings tab with server, company, printer, and scale fields](../media/start-and-config-wms-client/wms-settings7.png)
 
 Configure the following settings as required:
 
@@ -60,7 +60,7 @@ Configure the following settings as required:
 
 Click the **information (i) icon** on the **General** tab to review information about the current client and server configuration.
 
-![alt text](../media/start-and-config-wms-client/wms-settings5.png)
+![Client and server information dialog](../media/start-and-config-wms-client/wms-settings5.png)
 
 The displayed information includes:
 
@@ -79,13 +79,13 @@ On **Android**, tapping **Client Version** twice can also be used when overwriti
 
 Click **Connection test** to verify the connection between CompuTec WMS Client and CompuTec WMS Server.
 
-![alt text](../media/start-and-config-wms-client/wms-settings6.png)
+![Connection test control on the General settings tab](../media/start-and-config-wms-client/wms-settings6.png)
 
 ## Configure CompuTec WMS Client options
 
 Use the **Options** tab to configure the behavior and appearance of CompuTec WMS Client.
 
-![alt text](../media/start-and-config-wms-client/wms-options1.png)
+![Options tab with client behavior settings](../media/start-and-config-wms-client/wms-options1.png)
 
 Depending on the client, the following options are available:
 
@@ -113,20 +113,20 @@ Available options can differ between the desktop and Android versions of CompuTe
 
 By default, CompuTec WMS Client displays a standard confirmation message after a document is created successfully.
 
-![alt text](../media/start-and-config-wms-client/wms-options2a.png)
+![Standard success message displayed after document creation](../media/start-and-config-wms-client/wms-options2a.png)
 
 To configure a new full-screen success message, follow these steps:
 
 1. On the **Options** tab, select **Show new Success message**.
 2. In **Visible for (seconds)**, enter how long the message should remain on the screen.
 
-    ![alt text](../media/start-and-config-wms-client/wms-options1a.png)
+    ![Options tab with the full-screen success message setting](../media/start-and-config-wms-client/wms-options1a.png)
 
 3. Click **Save**.
 
 After a document is created successfully, the full-screen confirmation displays the document type and document number.
 
-![alt text](../media/start-and-config-wms-client/wms-options2.png)
+![Full-screen success confirmation showing the document type and number](../media/start-and-config-wms-client/wms-options2.png)
 
 The message closes automatically after the configured time. To close it earlier, tap or click anywhere on the screen.
 
@@ -150,7 +150,73 @@ Full screen for login panel – full screen mode for the login panel (even if th
 
 Use the **Appearance** tab to adjust text sizes in CompuTec WMS Client. You can scale all text in the application or set a specific size for individual types of text.
 
-![alt text](../media/start-and-config-wms-client/wms-apper1.png)
+![Appearance tab with font scaling and template settings](media/wms-apper1.png)
+
+### Save font settings as a template
+
+You can save your current font settings as a template and reuse them when needed. Templates include the general font scale and any individual font sizes you have configured.
+
+Font templates are shared with all users.
+
+To create a template:
+
+1. On the **Appearance** tab, configure the required font sizes.
+2. Click **Templates**.
+
+    ![Templates control on the Appearance tab](media/wms-apper-tampl1.png)
+
+3. In **Template name**, enter a name for the template.
+
+    ![Template name field](media/wms-apper-tampl2.png)
+
+4. Click **Save current settings as template**.
+
+    ![Save current settings as template button](media/wms-apper-tampl3.png)
+
+5. The new template is added to the list of available templates.
+
+    ![Available font templates list](media/wms-apper-tampl4.png)
+
+#### Apply a font template
+
+To apply previously saved font settings:
+
+1. On the **Appearance** tab, click **Templates**.
+2. Select the required template from the list.
+
+    ![Font template selected from the templates list](media/wms-apper-tampl6.png)
+
+3. The selected template name and its font settings are displayed on the **Appearance** tab.
+
+    ![Appearance tab showing the selected template and font settings](media/wms-apper-tampl5.png)
+
+#### Modify font settings based on a template
+
+After applying a template, you can adjust the font settings without changing the saved template.
+
+When you change the general font scale or an individual font size, the template indicator changes to **Custom**. This indicates that the current settings no longer match the selected template.
+
+    ![Appearance tab showing the Custom template indicator](media/wms-apper-tampl8.png)
+
+To save these settings as a new template:
+
+1. Click **Template**.
+2. Enter a new **Template name**.
+3. Click **Save current settings as template**.
+
+    ![Save current settings as template button](media/wms-apper-tampl3.png)
+
+#### Delete a font template
+
+To delete a saved template:
+
+1. On the **Appearance** tab, click **Templates**.
+2. Find the template that you want to remove.
+3. Click the **X** icon next to the template.
+
+    ![Delete icon next to a saved font template](media/wms-apper-tampl7.png)
+
+The template is removed from the list.
 
 ### Scale all text
 
@@ -160,17 +226,17 @@ Use **Font size** to scale text throughout CompuTec WMS Client.
 
    The available range is from **75%** to **500%**.
 
-   ![alt text](../media/start-and-config-wms-client/wms-apper2.png)
+    ![Font size slider, preview panel, and Restore default sizes button](media/wms-apper2.png)
 
 2. Review the **Preview** to see how the selected scale affects text.
 
 3. Click **Save** to apply the changes.
 
-    ![alt text](../media/start-and-config-wms-client/wms-apper9.png)
+    ![Font settings screen with the Save, Back, and Cancel buttons](../media/start-and-config-wms-client/wms-apper9.png)
 
 4. The selected scale is applied to text throughout the application.
 
-    ![alt text](../media/start-and-config-wms-client/wms-apper3.png)
+    ![Client screen displaying text at the selected scale](../media/start-and-config-wms-client/wms-apper3.png)
 
 ### Set individual font sizes
 
@@ -181,28 +247,28 @@ The following text types can be configured individually:
 - **Normal text**
 - **Message title**
 - **Small title**
-    ![alt text](../media/start-and-config-wms-client/wms-apper4.png)
+    ![Small title font size setting](../media/start-and-config-wms-client/wms-apper4.png)
 - **Buttons description**
-    ![alt text](../media/start-and-config-wms-client/wms-apper5.png)
+    ![Buttons description font size setting](../media/start-and-config-wms-client/wms-apper5.png)
 - **Grid highlight**
-    ![alt text](../media/start-and-config-wms-client/wms-apper6.png)
+    ![Grid highlight font size setting](../media/start-and-config-wms-client/wms-apper6.png)
 - **Menu item**
-    ![alt text](../media/start-and-config-wms-client/wms-apper7.png)
+    ![Menu item font size setting](../media/start-and-config-wms-client/wms-apper7.png)
 - **Calculator and large text**
 - **Date picker text**
-    ![alt text](../media/start-and-config-wms-client/wms-apper8.png)
+    ![Date picker text font size setting](../media/start-and-config-wms-client/wms-apper8.png)
 - **Large quantity field**
 
 To set an individual font size:
 
 1. Select the checkbox next to the text type that you want to configure.
 
-    ![alt text](../media/start-and-config-wms-client/wms-apper10.png)
+    ![Checkbox for enabling an individual font size](../media/start-and-config-wms-client/wms-apper10.png)
 
 2. Use the **minus (-)** or **plus (+)** button to adjust its font size.
 3. Click **Save**.
 
-    ![alt text](../media/start-and-config-wms-client/wms-apper9.png)
+    ![Save button for individual font size settings](../media/start-and-config-wms-client/wms-apper9.png)
 
 The selected text type uses the specified font size instead of the general font scaling.
 
@@ -210,13 +276,13 @@ The selected text type uses the specified font size instead of the general font 
 
 Click **Restore default sizes** to restore the default font size settings.
 
-![alt text](../media/start-and-config-wms-client/wms-apper11.png)
+![Restore default sizes button](../media/start-and-config-wms-client/wms-apper11.png)
 
 ## Configure document settings
 
 Use the **Documents** tab to configure warehouse selection for individual transaction types.
 
-![alt text](../media/start-and-config-wms-client/wms-document0.png)
+![Documents tab with transaction warehouse selection checkboxes](../media/start-and-config-wms-client/wms-document0.png)
 
 Select the checkbox for a transaction if users should select a warehouse when processing that transaction.
 
@@ -230,7 +296,7 @@ For more information, see [Client Settings – Warehouses](/docs/wms/user-guide/
 
 Use the **Scanner** tab to configure barcode scanner behavior in CompuTec WMS Client.
 
-![alt text](../media/start-and-config-wms-client/wms-scanner.png)
+![Scanner tab with barcode scanner settings](../media/start-and-config-wms-client/wms-scanner.png)
 
 The following settings are available:
 
@@ -243,7 +309,7 @@ The following settings are available:
 
 Use the **Logs** tab to access and manage log files generated by CompuTec WMS Client.
 
-![alt text](../media/start-and-config-wms-client/wms-log.png)
+![Logs tab with client log file actions](../media/start-and-config-wms-client/wms-log.png)
 
 The following actions are available:
 
@@ -260,7 +326,7 @@ By default, client logs sent to the server are stored in:
 
 After configuring the required settings, click **Save** to save the configuration and return to the login screen.
 
-![alt text](../media/start-and-config-wms-client/wms-save.png)
+![Save and Cancel buttons for client settings](../media/start-and-config-wms-client/wms-save.png)
 
 To return without saving your changes, click **Cancel**.
 
@@ -274,7 +340,7 @@ After configuring the client, log in to start working with CompuTec WMS.
 
 1. On the login screen, select the required **Company name**.
 
-    ![alt text](../media/start-and-config-wms-client/wms-intro0.png)
+    ![Login screen with the company selection field](../media/start-and-config-wms-client/wms-intro0.png)
 
 2. Enter the terminal username and password.
     If a barcode is assigned to the terminal user, you can scan the barcode to log in.
@@ -291,15 +357,15 @@ Users must have access to the required company database. To grant an access, fol
 
 1. Open **CompuTec WMS Settings**.
 
-    ![alt text](../media/start-and-config-wms-client/wms-set1.png)
+    ![CompuTec WMS Settings window](../media/start-and-config-wms-client/wms-set1.png)
 
 2. Right-click the required database and select **User Settings**.
 
-    ![alt text](../media/start-and-config-wms-client/wms-set3.png)
+    ![Database context menu with User Settings selected](../media/start-and-config-wms-client/wms-set3.png)
 
 3. Select the users who should have access to the database.
 
-    ![alt text](../media/start-and-config-wms-client/wms-set4.png)
+    ![User access selection for a company database](../media/start-and-config-wms-client/wms-set4.png)
 
 After a successful login, the CompuTec WMS Client main menu appears.
 
@@ -312,7 +378,7 @@ To review notifications:
 1. Go to the main screen of **CompuTec WMS Client**.
 2. Click the **Notification Center** icon in the upper-right corner.
 
-    ![alt text](../media/start-and-config-wms-client/notification-center.png)
+    ![Notification Center icon on the client main screen](../media/start-and-config-wms-client/notification-center.png)
 
 3. Review the available messages and errors.
 
