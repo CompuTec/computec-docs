@@ -8,8 +8,21 @@ declare global {
   }
 }
 
+const MEASUREMENT_ID = "G-K8LGYW3WB4";
+
 function gtag(...args: any[]) {
   window.dataLayer.push(arguments);
+}
+
+export function grantConsent() {
+  if (!ExecutionEnvironment.canUseDOM) return;
+
+  gtag("consent", "update", {
+    ad_storage: "granted",
+    ad_user_data: "granted",
+    ad_personalization: "granted",
+    analytics_storage: "granted",
+  });
 }
 
 if (ExecutionEnvironment.canUseDOM) {
@@ -23,14 +36,7 @@ if (ExecutionEnvironment.canUseDOM) {
   });
 
   gtag("js", new Date());
-  gtag("config", "G-3R37W5WZXR");
+  gtag("config", MEASUREMENT_ID);
 
-  if (window.localStorage.getItem(COOKIES_KEY) === "allowed") {
-    gtag("consent", "update", {
-      ad_storage: "allowed",
-      ad_user_data: "allowed",
-      ad_personalization: "allowed",
-      analytics_storage: "allowed",
-    });
-  }
+  if (window.localStorage.getItem(COOKIES_KEY) === "allowed") grantConsent();
 }

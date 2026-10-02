@@ -9,6 +9,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
 import useCookies, { CookiesConsent } from "@site/src/hooks/useCookies";
+import { grantConsent } from "@site/src/modules/gtag";
 
 export default function CookieBanner() {
   const [consent, updateConsent] = useCookies();
@@ -36,7 +37,10 @@ export default function CookieBanner() {
             <Box sx={{ display: "flex", flexDirection: "row", gap: 2 }}>
               <Button
                 variant="contained"
-                onClick={() => updateConsent(CookiesConsent.ALLOWED)}
+                onClick={() => {
+                  updateConsent(CookiesConsent.ALLOWED);
+                  grantConsent();
+                }}
               >
                 Accept
               </Button>
