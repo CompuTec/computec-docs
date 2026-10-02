@@ -4,32 +4,54 @@ sidebar_position: 1
 
 # Download CompuTec WMS Client
 
-This guide will walk you through the steps to download and install the CompuTec WMS Client on your preferred device.
+This guide explains how to download the **CompuTec WMS Client** installation files to the device where you want to install the application.
 
----
+## Before you start
 
-With the release of CompuTec WMS 2.10.8 R1 and later versions, downloading CompuTec WMS Client files has become easier and more accessible. Whether you're using a PC, handheld device, or Android device, the process is streamlined, making it faster to get your CompuTec WMS Client files onto your preferred device. Here's how you can download the required files directly from your CompuTec WMS Server.
+Make sure that **CompuTec WMS Server** is installed and running. [Read more](/docs/wms/administrator-guide/installation/wms-server/overview)
 
-## Instructions
+## Download the WMS Client from WMS Server
 
-To begin, ensure that you have CompuTec WMS Server installed on your system, version 2.10.8 R1 or later. Once installed, follow these simple steps:
+You can download the required WMS Client installation files directly from your CompuTec WMS Server.
 
-1. On the end device (e.g., PC, handheld device, Android device), open an internet browser.
-2. Enter the following URL in the address bar: `https://[CompuTec WMS server address]:56001`. Make sure to replace [CompuTec WMS server address] with the actual address of your CompuTec WMS Server.
-This will redirect you to the download page where you can easily download the required client files directly to your device.
+1. On the device where you want to install CompuTec WMS Client, open a web browser.
 
-    >**Note**: We recommend using HTTPS Protocol.
+2. Enter the following address: `https://[WMS Server address]:56001`
 
-        ![Download](./media/download.png)
+   Replace `[WMS Server address]` with the address of your CompuTec WMS Server.
 
-    :::note
-    You can download a required Client file directly to the device from [this link](/docs/wms/releases/download).
-    :::
+   :::info[Note]
+   We recommend using the **HTTPS** protocol.
+   :::
 
-3. Alternatively locate the installation files directly on the machine where the CompuTec WMS Server is installed.
+3. You will be redirected to the download page.
 
-    :::note Path
-        C:\Program Files\CompuTec\WMS Server\wwwroot\Builds
-    :::
+4. On the download page, select and download the installation package required for your device.
 
----
+   ![CompuTec WMS Client download page](./media/download.png)
+
+5. After the download is complete, continue with the installation instructions for your device. [Read more](/docs/wms/administrator-guide/installation/wms-client/configuration)
+
+## Other ways to access the installation files
+
+You can also obtain the WMS Client installation files using one of the following methods.
+
+### Download from CompuTec Learn
+
+You can download the available WMS Client installation packages from [CompuTec WMS Downloads](/docs/wms/releases/download).
+
+### Access the files on the WMS Server machine
+
+If you have access to the machine where CompuTec WMS Server is installed, you can find the client installation files in the following directory:
+
+`C:\Program Files\CompuTec\WMS Server\wwwroot\Builds`
+
+## Next Steps
+
+After downloading the required CompuTec WMS Client installation package:
+
+1. **Install CompuTec WMS Client** on your device.
+2. **Configure CompuTec WMS Client** and connect it to your CompuTec WMS Server.
+3. Review the available client settings and adjust them to your requirements.
+
+For detailed instructions, see [Install and Configure CompuTec WMS Client](/docs/wms/administrator-guide/installation/wms-client/configuration).

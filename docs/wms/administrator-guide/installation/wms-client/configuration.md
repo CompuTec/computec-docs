@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Configure CompuTec WMS Client
+# Install and Configure CompuTec WMS Client
 
 **CompuTec WMS Client** connects warehouse users to **CompuTec WMS Server** and provides access to warehouse operations.
 
@@ -12,11 +12,25 @@ In **CompuTec WMS Client**, you can configure connection details, printers, scal
 
 ## Before you start
 
-Make sure **CompuTec WMS Server** is installed and configured.
+Before you start, make sure:
+
+- **CompuTec WMS Server** is installed and configured. [Read more](/docs/wms/administrator-guide/installation/wms-server/overview)
+- You have downloaded **CompuTec WMS Client** installation file from the [**Downloads**](/docs/wms/releases/download).
 
 :::note[info]
 For more information, see [CompuTec WMS Server](/docs/wms/administrator-guide/installation/wms-server/overview).
 :::
+
+## Install CompuTec WMS Client
+
+1. Download **CompuTec WMS Client** installation file from the [**Downloads**](/docs/wms/releases/download).
+2. Run the installation file and click **Next**.
+
+    ![alt text](media/wms-client-install1.png)
+
+3. Follow the installation steps, and click **Finish**.
+
+    ![alt text](media/wms-client-install2.png)
 
 ## Start CompuTec WMS Client
 
