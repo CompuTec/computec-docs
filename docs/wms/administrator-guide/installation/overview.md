@@ -34,7 +34,7 @@ Complete the following steps to install and configure **CompuTec WMS 2.0**.
 
 If **CompuTec ProcessForce** is installed in the SAP Business One environment, you must also install the **CompuTec ProcessForce API**.
 
-CompuTec WMS detects that ProcessForce is installed and requires the ProcessForce API to communicate with it correctly.
+CompuTec WMS detects that CompuTec ProcessForce is installed and requires the CompuTec ProcessForce API to communicate with it correctly.
 
 Download the appropriate API installation package from [CompuTec ProcessForce 2.0 Downloads](/docs/processforce/2.0/releases/download#computec-processforce-api).
 
