@@ -198,7 +198,7 @@ If a required value is missing, the related action may be hidden or unavailable.
 
 If no actions are visible, the **Action** button is hidden.
 
-![Analytics report for the New Variant with no visible Actions button. The report toolbar shows Open Manager, Adapt Filter, view controls, a refresh message reading The data will be refreshed in: 9:44 min., Download Excel, and settings. The table below includes columns for Doc ID, Document Type, CANCELED, Handwritten, Printed, InventSttus, Transfered, ObjType, and CardC. The clean administrative interface indicates that no report actions are currently available.](media/actions/aa-config-action-in-src-ap-1.png)
+![Analytics report for the New Variant with no visible Actions button. The report toolbar shows Open Manager, Adapt Filter, view controls, a refresh message reading The data will be refreshed in: 9:44 min., Download Excel, and settings. The clean administrative interface indicates that no report actions are currently available.](media/actions/aa-config-action-in-src-ap-1.png)
 
 :::note[info]
 
@@ -222,7 +222,7 @@ To execute an action:
 1. Open the chosen **Variant**.
 2. Select **one or more rows** in the **Table View** of the report.
 
-    ![Analytics report in the Standard2 variant with one table row selected. A large blue arrow points to the selected row checkbox on the left side of the table. The report header shows Open Manager and Adapt Filter, and the toolbar includes The data will be refreshed in: 8:02 min., Actions, Download Excel, and settings. Visible table headers include Doc ID, Document Type, CANCELED, Handwrt ten, Printed, InvntSttus, Transfered, ObjType, and CardCode. The clean administrative interface has a neutral tone.](media/actions/aa-config-action-in-src-ap-23.png)
+    ![Analytics report in the Standard2 variant with one table row selected. A large blue arrow points to the selected row checkbox on the left side of the table. The report header shows Open Manager and Adapt Filter, and the toolbar includes The data will be refreshed in: 8:02 min., Actions, Download Excel, and settings.](media/actions/aa-config-action-in-src-ap-23.png)
 
     :::note[info]
 
