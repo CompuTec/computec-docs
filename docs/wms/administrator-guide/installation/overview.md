@@ -14,6 +14,10 @@ The installation process differs depending on the version you are using. Select 
 Before you start, review the [CompuTec WMS requirements](/docs/wms/administrator-guide/installation/requirements) and make sure your environment meets the requirements for your WMS version.
 :::
 
+:::info[note]
+Support for **CompuTec WMS 2.0** will end soon. We recommend planning your upgrade to **CompuTec WMS 3.0 Plugin** to continue receiving regular support and maintenance updates.
+:::
+
 <Tabs>
   <TabItem value="2.0" label="CompuTec WMS 2.0" default>
 
