@@ -10,11 +10,7 @@ This guide provides an overview of the installation process for **CompuTec WMS 2
 
 The installation process differs depending on the version you are using. Select your version below and complete the steps in the order shown.
 
-:::caution[Important]
-Before you start, review the [CompuTec WMS requirements](/docs/wms/administrator-guide/installation/requirements) and make sure your environment meets the requirements for your WMS version.
-:::
-
-:::info[note]
+:::warning[important]
 Support for **CompuTec WMS 2.0** will end soon. We recommend planning your upgrade to **CompuTec WMS 3.0 Plugin** to continue receiving regular support and maintenance updates.
 :::
 
@@ -24,6 +20,10 @@ Support for **CompuTec WMS 2.0** will end soon. We recommend planning your upgra
 ## CompuTec WMS 2.0
 
 Complete the following steps to install and configure **CompuTec WMS 2.0**.
+
+### Before you start
+
+Before you start, review the [CompuTec WMS requirements](/docs/wms/administrator-guide/installation/requirements) and make sure your environment meets the requirements for your WMS version.
 
 ### Step 1: Download and install CompuTec WMS Server
 
@@ -78,7 +78,9 @@ For detailed instructions, see [Configure CompuTec WMS Client](/docs/wms/adminis
 
 CompuTec WMS 3.0 uses **CompuTec AppEngine** for its plugin-based components.
 
-Before continuing:
+### Before you start
+
+Before start:
 
 - Review the [CompuTec WMS requirements](/docs/wms/administrator-guide/installation/requirements)
 - Make sure **CompuTec AppEngine** is installed and configured. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/installation)
@@ -87,10 +89,6 @@ Before continuing:
 - Make sure you have the required SAP Business One and system administrator permissions.
 
 If you use **CompuTec ProcessForce**, additional components may be required. See the relevant installation instructions before continuing.
-
-## Installation process
-
-Install and configure CompuTec WMS in the following order.
 
 ### Step 1: Install the CompuTec WMS 3.0 Plugin
 
