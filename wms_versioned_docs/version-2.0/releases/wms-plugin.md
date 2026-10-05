@@ -1,0 +1,536 @@
+---
+sidebar_position: 4
+---
+
+# CompuTec WMS 3.0 Plugin Release Notes
+
+Below are the release notes for CompuTec WMS Plugin, highlighting new features, improvements, and bug fixes in this release.
+
+## CompuTec WMS Plugin 3.2609.1
+
+**Release Date: 16 September 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | Stock Counting | Added **Multiple Counters** to **Stock Counting**. In `Individual` mode, each counter counts all items and WMS shows the differences between their results. In `Team` mode, multiple counters can share the counting work. |
+| Added | Document Totals | Document header totals can now be calculated using custom SQL queries, allowing you to display information such as the total picked or requested quantity according to your business requirements. |
+| Added | WMS Client | You can now adjust the font size in the **WMS Client** from the new **Appearance** settings, making information easier to read on different devices. [Read more](/docs/wms/2.0/administrator-guide/installation/wms-client/configuration/#configure-appearance-settings) |
+| Added | Scanners | Added support for **Bluebird** scanners. The scanner input mode can be selected in the **Scanner** settings. [Read more](/docs/wms/2.0/administrator-guide/installation/wms-client/computec-wms-android-version#configure-scanning-on-bluebird-devices) |
+| Improved | User-Defined Fields | User-defined fields can now be displayed directly on the main screen for **Inventory Transfer**, **Inventory Transfer Request**, and **Inventory Transfer MOR Request** using the **Show in Main** option. |
+| Improved | Goods Receipt | You can now view and change the warehouse and bin location directly in **Goods Receipt**. A warehouse can also be applied to all items at once, providing a workflow consistent with **Goods Receipt PO**. |
+| Improved | Pick Receipt | Improved **Pick Receipt** performance for faster processing. |
+| Improved | Pick and Pack | Improved the **Pick and Pack** scanning workflow. You can now scan directly from the line selection screen, while manually selecting a line opens the quantity entry for the matching bin. |
+| Improved | Inventory Register API | Improved **Inventory Register API** validation and automatic completion of document identification data. |
+| Fixed | Pick Receipt | Fixed an issue that could prevent another **Manufacturing Order** from being added to a **Pick Receipt**. |
+| Fixed | Goods Receipt PO | Fixed **Storage Unit** quantities created during **Goods Receipt PO** and improved item barcode handling so scanning an existing item opens its document line instead of creating another one. |
+| Fixed | Pick and Pack | Serial numbers can now be scanned from any **Pick and Pack** screen without first selecting the corresponding line or bin. |
+| Fixed | Delivery | Improved **Delivery** creation from **Sales Orders** and **Pick Lists**, including **Ship To** addresses, batch availability for warehouses without bin locations, permissions on SAP HANA, and quantities for items packed into multiple **Storage Units**. |
+| Fixed | Delivery | Delivery drafts now keep batches from different bin locations on separate lines when the draft is reopened. |
+| Fixed | User-Defined Fields | Improved UDF handling in **Goods Receipt PO**, **Delivery**, and **Goods Issue**. Automatic SQL queries now run correctly for UDFs displayed on the main screen, and required UDFs no longer interfere with serial number selection. |
+| Fixed | Stock Transfer | The selected **To Bin Code** is now applied only to the intended **Stock Transfer** line instead of all lines. Sorting by additional fields has also been corrected. |
+| Fixed | Stock Counting | Corrected the quantity displayed for serial-managed items in the **Inventory Counting** live preview. |
+| Fixed | Inventory Register | **Inventory Register** validation messages are now translated correctly. |
+
+## CompuTec WMS Plugin 3.2608.1
+
+**Release Date: 25 August 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | Delivery | Added support for assigning serial numbers on release in **Delivery from Pick List** for items allocated during **Pick and Pack**. |
+| Added | Row Coloring | Added support for custom SQL conditions in row coloring, allowing document lines to be colored based on user-defined query conditions. [Read more](/docs/wms/2.0/administrator-guide/custom-configuration/custom-configuration-functions/manager/row-color-cust) |
+| Added | Inventory Register API | The **Inventory Register API** now validates document, item, batch/serial, warehouse, and bin data and automatically completes the remaining information when it can be determined from the provided values. |
+| Improved | Quick Storage Unit Transfer | A confirmation message can now be displayed after a **Quick Storage Unit Transfer** is completed. The message can be enabled in **WMS Custom Configuration**. |
+| Improved | Stock Transfer | Stock Transfer no longer requests a bin location when the destination does not require one. |
+| Improved | Goods Receipt | Simplified and standardized navigation in **Goods Receipt**, including the handling of remarks and user-defined fields when adding items. |
+| Improved | Goods Receipt PO | Simplified and standardized navigation in **Goods Receipt PO** for a more consistent workflow. |
+| Improved | Goods Receipt | Added a combined **accept and save** action when adding an item, reducing the number of steps required. |
+| Improved | Handheld Client | Improved the performance and responsiveness of the **WMS handheld client**, reducing delays and freezes when loading or switching screens. |
+| Improved | Handheld Client | Improved highlighting of selected elements for a clearer and more consistent interface across WMS screens. |
+| Improved | Delivery | **Extra SQL Fields** in **Delivery** can now use the selected batch number to display additional batch information. |
+| Improved | Stock Transfer | A `Selected location` confirmation is now displayed after scanning the destination warehouse or bin when **Put Away** is skipped. |
+| Improved | Storage Units | **Storage Unit** details in **CompuTec AppEngine** now display the creation date from the **Storage Unit** record. |
+| Improved | CT Labels | **WMS Custom Configuration** now displays the number of **CT Labels printers** in relation to the available licenses. |
+| Improved | Stock Counting | Removed an unnecessary button from the **New Stock Counting** screen. |
+| Fixed | Pick List | Fixed an error when scanning a non-UoM item into a second **Storage Unit** during picking. |
+| Fixed | Stock Counting | Fixed an issue where items with zero quantity could be excluded from **New Stock Counting** even when the option to exclude them was not selected. |
+| Fixed | Pick and Pack | Fixed quantity information and list refreshing when packing items into multiple **Storage Units**. Each **Storage Unit** can now be opened and displays the correct counted quantity. |
+| Fixed | Delivery | Fixed several issues with **Delivery drafts**, including restoring units, validating mandatory fields, and posting drafts containing batch or serial number selections. |
+| Fixed | Goods Receipt PO | Fixed an issue that prevented users from removing a selected batch for **Catch Weight** items. |
+| Fixed | Item Info | Fixed a server error that could occur when opening an item's batch numbers. |
+| Fixed | Stock Counting | Fixed an error when opening a **Catch Weight** item in a **Stock Counting** document created in SAP Business One. |
+| Fixed | Goods Receipt PO | Fixed an error that could occur when adding a new item to a **Goods Receipt PO**. |
+| Fixed | Goods Receipt PO | Fixed missing Storage Units when using the new **Storage Unit wizard**. |
+| Fixed | Goods Receipt PO | Fixed an issue where **distribution rules** were not applied to **Goods Receipt PO** documents. |
+| Fixed | Goods Receipt PO | Fixed bin location and user-defined field handling in **Goods Receipt PO** and **Delivery**. |
+| Fixed | Delivery | Fixed an issue with closing a Storage Unit when multiple **Storage Units** are used in a **Delivery**. |
+| Fixed | Delivery | Fixed the **Storage Unit wizard** appearing in **Delivery** when it was not applicable. |
+| Fixed | Delivery | Fixed filtering on the **Delivery** document list. |
+| Fixed | Pick Receipt | Fixed the picking flow so that after an item is picked, the changes are saved and the user returns to the previous screen. |
+| Fixed | Production Receipt | Fixed incorrect business property information on **SAP Business One Production Receipt** lines. |
+| Fixed | Batch Management | Fixed an issue where the corresponding document sub-line could not be found when processing batch numbers. |
+| Fixed | Stock Transfer | Fixed warehouse and bin selection in **New Stock Transfer**, including cases where only the warehouse was scanned or multiple document lines were processed. |
+| Fixed | Stock Transfer | Fixed base document references when creating a Stock Transfer from Request using a Storage Unit selected through **SU FIFO**. |
+| Fixed | Storage Unit Info | Fixed the `Cannot pick more than 0` message so quantities of non-managed items can be changed when negative quantities are allowed. |
+| Fixed | Storage Units | Fixed the creation time displayed in **Storage Unit** details. |
+| Fixed | Barcode Decoder | Fixed **Barcode Decoder** rule definitions. |
+| Fixed | Barcode Decoder | Fixed the default field focus on the **Barcode Decoder** screen in the handheld client. |
+| Fixed | Handheld Client | Fixed an issue that could cause the WMS handheld application to become unresponsive on Android devices using a TCP/REST connection. |
+| Fixed | Scanner Simulator | Fixed an `Incorrect bin code` error when pasting a bin location into the **Scanner Simulator** when the WMS server uses a different language. |
+
+## CompuTec WMS Plugin 3.2607.1
+
+**Release Date: 14 July 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| New | Client Android | The **CompuTec WMS** mobile client now updates itself automatically whenever a newer version is available on the server, reducing maintenance and ensuring users always run the latest version. |
+| New | Client | You can now fully customize document line colors, including highlighting overpicked lines, using the **Interface Design Manager**. [Read more](/docs/wms/2.0/administrator-guide/custom-configuration/custom-configuration-functions/manager/interface-design-manager/) |
+| New | Server | The **Storage Unit Wizard** now allows you to create multiple child **Storage Units** under a single parent during **Goods Receipt PO (GRPO)**. |
+| New | Client | You can now allow users to edit the **Posting Date** on WMS documents through **Custom Configuration**, alongside the existing **Document Date** and **Delivery Date** options. |
+| New | Server | Added API support for creating and retrieving **Inventory Register** lines, making it easier to integrate inventory transactions with external systems. |
+| Improved | Server | Improved performance when loading **Storage Units**, significantly reducing loading times in environments with large numbers of Storage Units. |
+| Improved | Client | WMS client settings have been reorganized into a dedicated **Options** tab, making configuration easier to navigate. |
+| Improved | Server | You can now display two additional custom SQL information fields on the **Delivery Line Details** screen. [Read more](/docs/wms/2.0/administrator-guide/custom-configuration/custom-configuration-functions/manager/overview) |
+| Improved | Client Android | The **Barcode Decoder** now displays the definition name when saving and asks for confirmation before deleting rules or definitions. |
+| Improved | Server | The Inventory Register API now validates **Storage Unit** codes before processing requests, improving data consistency. |
+| Improved | Client Adroid | The **@PickNumber** parameter is now supported when picking with **Storage Units**. |
+| Improved | Client | After updating a document line, the previously edited or scanned line is now highlighted when returning to the document, making it easier to continue scanning. |
+| Improved | Client | **Template BOMs** are now displayed more clearly and their components are shown correctly throughout WMS documents. |
+| Improved | Client | During **GRPO**, the quantity entry screen now stays open while there are remaining quantities to receive and returns to the document only after the full ordered quantity has been processed. |
+| Improved | Service Manager | **WMS Settings** now displays the full language name for each user instead of only the language code. |
+| Improved | Custom Configuration | SQL editors in **WMS Settings** now include syntax highlighting and a **Beautify** option for easier query editing. |
+| Fixed | Server | You can now create **Return Requests** for invoiced serial-managed and batch-managed items even when the return is not based on the original purchasing document. |
+| Fixed | Server | Deliveries created from **Pick Lists** containing multiple **Sales Orders** now use the correct delivery address from each **Sales Order**. |
+| Fixed | Client | Scanning supplier barcodes for items that exist on multiple Purchase Orders now correctly displays the document selection window. |
+| Fixed | Server | Improved **Storage Unit Wizard** validation by preventing duplicate **SSCC** numbers and validating company prefix and serial reference lengths. |
+| Fixed | Server | **Storage Units** counted to zero are now closed automatically after stock posting, keeping Storage Unit status synchronized with inventory. |
+| Fixed | Server | Fixed issues affecting the **Inventory Register** APIs and improved the accuracy of transaction history, including bin locations and transaction references. |
+| Fixed | Server | Warehouse information now displays bin locations for the correct warehouse when warehouse and bin codes have similar names. |
+| Fixed | Server | **Pick Order** allocations are now included when calculating allocated quantities, preventing incorrect batch availability during production. |
+| Fixed | Server | Scanning a GS1 barcode containing both item and batch information now opens the quantity screen immediately, eliminating the need to scan twice. |
+| Fixed | Server | **Delivery Storage Unit** validation no longer incorrectly affects **Goods Receipt PO** transactions. |
+| Fixed | Client | The default bin location is now assigned automatically during **Production Receipt** when configured. |
+| Fixed | Client | Improved **Pick Receipt** processing with **Storage Units** and **Auto Receipt** enabled. Success and error messages are now displayed consistently, duplicate **SSCC** numbers are detected correctly, and documents are created only when validation succeeds. |
+
+## CompuTec WMS Plugin 3.2606.1
+
+**Release Date: 8 June 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Improved | Client, Server | Added support for **Storage Unit (SU) UDFs** in **Pick Receipt**, allowing users to capture and maintain SU-specific information during the receipt process. |
+| Improved | Client | **CompuTec WMS Client** no longer requires an active internet connection and can now operate using only the local network connection to the WMS environment. |
+| Fixed | Server | Improved **Storage Unit (SU)** import through the API. The system now validates batch numbers during import, helping prevent inconsistencies caused by importing SUs with incorrect or unavailable batch data. |
+| Improved | Server | Updated quantity validation in **SU Info** to support negative inventory scenarios. When **Block Negative Inventory** is disabled, users can now adjust quantities below available stock levels and continue managing items with zero or negative quantities. |
+
+## CompuTec WMS Plugin 3.2605.1
+
+**Release Date: 28 May 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Fixed | Server | Improved **Pick List** quantity calculations for allocated and non-allocated items, ensuring more accurate available quantities across warehouses with and without bin locations. |
+| Improved | Server | Added a configurable data refresh interval for **Pick and Pack**, allowing better control over synchronization with SAP. You can set Pick List data sending interval in seconds in **Custom Configuration** > **Pick and Pack**. |
+| Fixed | Server | Fixed an issue where **Extra SQL Fields** in **Main List Items** were not displayed correctly when adding existing **Storage Units (SU)** in **SU Operations** > **New SU**. |
+| Improved | Client | Added printer selection support when printing labels, allowing users to choose the target printer directly from the print window. |
+| Improved | Client Android | Improved performance when creating large **Storage Units (SU)** containing many items or nested SUs. |
+| Improved | Server | Added the ability to edit **Document Date** and **Delivery Date** in **Delivery** transactions. |
+| Improved | Server | Enhanced **Warehouse Info** scanning. Scanning a bin location now automatically opens the corresponding warehouse and bin location details. |
+| Improved | Client | Background notifications are now displayed as notification indicators instead of interrupting users with pop-up messages. |
+| Improved | Client Android | Added **SU Counter** and **Pick Number** information to **Delivery** transactions for improved document visibility. |
+| Improved | Server | Added dedicated **Custom Query Manager** settings for **Quick SU Transfer**, providing greater flexibility when configuring warehouses, bin locations, and document series. |
+| Fixed | Server | Improved **Check Point Validation** processing for **Pick Receipt** by validating data before it is posted to SAP. |
+| Improved | Client Android | Added support for automatic Windows user login and full-screen mode based on user profile settings. |
+| Fixed | Server | Fixed an issue where **Pick and Pack** could incorrectly block picking when negative inventory was allowed. |
+| Fixed | Server | Fixed an issue where **SSCC** values were not populated correctly during the first scan in **Pick Receipt** and **New Production Receipt** transactions. |
+| Fixed | Client | Fixed an issue where creating a **Stock Transfer** from a partially picked **Pick List** could incorrectly close the Pick List. |
+| Fixed | Client | Restricted destination bin locations can no longer be selected by barcode scanning when excluded by custom configuration rules. |
+| Improved | Server | Added ``@ExistingSUCode`` and ``@ExistingSSCC`` parameters for **SU Operations** > **New SU** validations, enabling more advanced custom validation scenarios. |
+| Improved | Client | Added support for the ``NEW_LINE`` parameter in custom queries with embedded scripts, making query formatting easier to configure. |
+
+## CompuTec WMS Plugin 3.2604.1
+
+**Release Date: 30 April 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Fixed | Client | Fixed returning delivered **Storage Units (SU)**. Delivered SUs can now be returned correctly and made available for further warehouse processing. |
+| Fixed | Server | SU numbers are now visible when working with allocated batches and serial numbers in **Delivery** from **Sales Order**. |
+| Fixed | Client | Improved available quantity calculations across **Delivery** and **Pick List** flows, helping prevent users from picking more than the available warehouse stock. |
+| Fixed | Server | Fixed an issue where quantity could not be added for non-managed items and the system showed ``Cannot pick more than 0`` error. |
+| Fixed | Client | Fixed **Barcode Decoder** assignment for **SU Operations** > **New SU**, so the assigned decoder is kept and works after reopening the workflow. |
+| Fixed | Client, Server | Fixed WMS licensing behavior on terminal servers. The **Windows Client** now correctly supports user-based licensing in RDP environments. |
+| Fixed | Client | Fixed incorrect order selection when scrolling through multiple selected orders in **Delivery**. |
+| Fixed | Client | Fixed SU handling for GRPO-based returns saved as drafts. SUs are now loaded and closed correctly after return processing. |
+| Improved | Server | **SU Wizard** now creates one **OIRG** entry for all SUs created in one **GRPO** document, improving document traceability. |
+| Fixed | Client | Fixed quantity handling when using the serial number generator from tooltip actions. |
+| Fixed | Client | Allocated serial numbers are now visible correctly in **Sales Order** based flows. |
+| Fixed | Server | Fixed ``Cannot add row`` errors in selected **Pick List** scenarios. |
+| Fixed | Server | Dropdown **UDF** fields marked as **Show in Remarks** now display their value lists correctly. |
+| Fixed | Client Android | Fixed an error that occurred when logging out from the **Android Client**. |
+| Improved | Server | Added **Before Saving SU** for check point validation in **PF Pick Receipt** scenarios. |
+| Fixed | Client Desktop | The **Catch Weight** item calculator now fills the correct field, based on the field from which it was opened. |
+| Fixed | Server | Fixed **SSCC** scanning when creating a new SU in **Stock Transfer** from **Transfer Request**. |
+| Fixed | Client | Fixed an issue where the **From Bin** list was empty even after selecting multiple **Sales Orders**. |
+| Fixed | Server | Fixed **SSCC** scanning for newly created SUs after quantity changes. |
+| Fixed | Server | Fixed quantity adjustment in **SU Info**. Users can now increase quantity again when available stock allows it. |
+| Fixed | Server | Clicking **Cancel** in automatic UDF configuration now correctly discards changes. |
+| Fixed | Server | Fixed valid value and automatic query handling when saving SU data in **SU Info**. |
+| Fixed | Server | Fixed check point validation errors during **Stock Transfer** creation. |
+| Improved | Server | Delivery lines are now sorted by **VisOrder** field, providing a more consistent line order from **Sales Orders**. |
+| Fixed | Server | Added confirmation when canceling after scanning an SU, matching standard document close behavior. |
+| Fixed | Client | Fixed required **Supplier Batch** validation. The system no longer shows an error when the value is filled in. |
+| Fixed | Server | Fixed destination warehouse and bin selection in **Stock Transfer from Request** for multi-line documents. |
+| Improved | DBInstall | Added indexes for **WMS Storage Unit** tables to improve performance when working with SUs and item data. |
+| Fixed | Client | Fixed allocation handling for non-managed items in **Return** > **Delivery** > **Request** scenarios. |
+| Fixed | Server | Fixed quantity validation for **None UoM** items, preventing incorrect ``picked quantity exceeds allowed quantity`` errors. |
+| Fixed | Client | Improved behavior when **Skip Storage Unit** and **Hide scanned SU on Item list** options are enabled. |
+| Improved | Client | Added support for scanning warehouse code and bin location during **New SU** creation. |
+| Improved | Client | Added **Show in Remarks** support for **SAP Production Receipt** fields. |
+| Fixed | Client | Fixed an issue where saving **Delivery from Pick List** as draft for **UoM items** could result in incorrect full allocation after reopening the document. |
+| Fixed | Server | Receiving **Bin Location** is now preserved when saving GRPO documents as drafts and reopening them. |
+| Fixed | Delivery | Fixed an error that occurred after selecting serial numbers in **Delivery**. |
+| Fixed | Client Android | Fixed an issue where changing **Bin Location** in **GRPO** was not saved. |
+
+## CompuTec WMS Plugin 3.2603.2
+
+**Release Date: 31 March 2026**
+
+| Issue Type | Components | Release Note |
+| --- | --- | --- |
+| Fixed | WMS Plugin | Fixed an issue where **Put Away** rules with **Storage Categories** could not be saved due to validation errors. You can now apply rules and assign bins without interruptions. |
+| Improved | Client Desktop | Improved error messages for required UDFs – the system now shows clear field descriptions instead of technical codes, making issues easier to understand and fix. |
+| Improved | Client | Added quantity summaries (planned vs processed) in key screens, giving you better control and visibility during picking and packing. |
+| Improved | Client | Improved handling of **Catch Weight (CW)** items – pallet data now correctly includes package quantities after inventory posting. |
+| Improved | Client | Simplified handling of allocated batches across multiple bins – batches are now shown once, reducing duplicates and confusion during picking. |
+| Fixed | Client | Fixed incorrect quantity handling for **Catch Weight** items saved as draft, ensuring consistent and accurate data. |
+| Fixed | Client | Fixed issues with allocated picking, preventing incorrect line creation during processing. |
+| Improved | Server | Non-inventory items from **Sales Orders** are now correctly included in **Delivery** documents, even when using bin-managed warehouses. |
+| Fixed | Server | **Storage Category** limits are now respected – system prevents exceeding max bin quantities or handles them correctly. |
+| New | Server | Added a possibility to force picking only via scanning, blocking manual selection for more controlled warehouse processes. |
+| Fixed | Server | Fixed errors when handling **SUs** with incomplete item data, ensuring smooth processing and visibility. |
+| Improved | Client | Added total weight and quantity summary on **Delivery** documents, improving shipment verification. |
+| Fixed | Server | Fixed issues with empty serial numbers, ensuring correct visibility and processing in **Delivery** flows. |
+| New | Client | Added label printing option directly from **Stock Transfer** screens, speeding up warehouse operations. |
+| Improved | Client | Unified naming in **Custom Query Manager** for consistency. |
+| Fixed | Client | Fixed incorrect **UoM** conversions in returns – quantities are now consistent across all screens. |
+| Fixed | Client | Corrected **CW** quantity handling from **Sales Orders**, ensuring proper picking values. |
+| Improved | Server | Improved logic so partially processed **Pick Lists** are no longer closed automatically, giving users more control. |
+| Fixed | Client | Fixed issues with serial number handling, ensuring proper line updates and visibility. |
+| Fixed | Client, Server | Improved handling of **SAP** connection errors – background processes now stop correctly instead of looping. |
+| Fixed | Client | Fixed **UDF** visibility for **Quick SU Transfer**, allowing proper configuration per process. |
+| Fixed | Client | Fixed restriction when delivering batch-managed **CW** items, allowing correct quantities to be processed. |
+| Fixed | Client Android | Fixed issue where the first warehouse line could not be selected in **Quick Transfer**. |
+| Fixed | Client | Fixed issue where picked batches could not be removed for **Catch Weight** items. |
+| Improved | Service Manager | New **CompuTec WMS** users can now log in without restarting services, simplifying administration. |
+| Fixed | Server | Fixed incorrect negative inventory errors during **SU** processing. |
+| Improved | Server | Restored visibility of **SU** codes during bin selection, improving traceability. |
+| Fixed | Server | Fixed missing references when using **SU Wizard**, ensuring correct document linkage. |
+| Fixed | Client Android | Improved **Android Client** stability, reducing crashes during warehouse operations. |
+| Improved | Client | **Add New SU** button now creates a new **SU** instantly, speeding up pallet creation. |
+| Fixed | Client Android | Fixed issue where barcode scanning via **RDP** worked only in filters – scanning now works across the app. |
+| Fixed | Server | Fixed missing **ItemCode** parameter and query binding errors in bin selection. |
+| Fixed | Client | Fixed issue where items disappeared when navigating between steps, ensuring consistent workflow. |
+| Fixed | Client | Fixed errors when working with **Catch Weight** items and batch/serial selection. |
+
+## CompuTec WMS Plugin 3.2602.1
+
+**Release Date: 26 February 2026**
+
+| Issue Type | Components | Release Note |
+| --- | --- | --- |  
+| Fixed | Client | Fixed **SU Wizard** so scanning in **Single SU Content** correctly reads item, batch, and quantity in one scan. |  
+| Fixed | Client, Server | Barcode scanning now works correctly in **GRPO from Draft** when editing quantity and bin location. |
+| Improved | Client | **Stock Transfer** screens are now faster. You can skip unnecessary **Storage Info** steps when no quantity has been picked yet. |
+| Fixed | Client | Fixed an issue in **Return from GRPO** where, after choosing not to select all SUs automatically, scanning additional SU or SSCC codes could fail. The second scanned pallet was not properly loaded, and WMS returned an “SU Code” error. Scanning multiple SUs now works correctly. |
+| Improved | Server | Added support for displaying **Inventory Transfer Header UDFs** in the **Quick SU Transfer** workflow. Fields configured in **UDF Manager** > **Inventory Transfer – Quick SU** can now be shown in the Remarks screen when saving a **Quick SU Transfer**. This allows users to capture additional information directly on the scanner before the document is saved. |
+| Fixed | Server | **Pick & Pack** now correctly allows negative quantities when the **Block negative quantity** option is disabled in company settings. |
+| Improved | Server | **Delivery from Sales Order** now handles allocated serial numbers more clearly and keeps users on the correct screen after selection. |
+| New | Android Client | Added the ability to attach photos directly from the camera in **Android WMS**. Users can now choose between file upload or camera capture. |  
+| Fixed | Server | **Return Requests from Delivery** now allow proper selection and saving of serial numbers, including empty serial scenarios. |  
+| Improved | Server | **WMS Settings** can now be installed separately, making configuration access easier in terminal server environments. [Read more](/docs/wms/2.0/administrator-guide/installation/wms-server/overview#install-wms-settings-only) |  
+| Improved | Client | Long item names no longer block warehouse selection. Text wrapping improves usability on smaller scanner screens. |  
+| Fixed | Server | **GRPO** now uses the actual posting date when saving drafts instead of the original draft date. |
+| Fixed | Client | Fixed quantity editing errors in **Delivery** documents. |
+| Improved | Service Manager | Batch fields in **Quantity** screen can now be reordered using drag-and-drop in **Workflow Settings**. |  
+| Improved | Client | Additional fields in **SU Operations** now refresh dynamically after picking quantity. |
+| Fixed | Client | Fixed duplicated quantities when creating **Delivery SU** into draft documents. |  
+| Fixed | Server | **Stock Transfer** now allows correct selection of empty serial numbers. |
+| Fixed | Client | Fixed errors in **SU Quick Transfer** workflow. |  
+| New | Server | Added new validation variable ``NoOfUniqueBatches`` (Number of Unique Batches) for **Check Point Validation** in **SU Operations**. |  
+| Fixed | Server | **SU Quick Transfer** now shows an error if **Bin Abs Entry** is invalid (``0``), preventing silent failures. |  
+| Improved | Android Client | Added translation support when choosing attachment source (file or camera). |
+| Fixed | Server | **New Production Receipt** now correctly saves both batch number and quantity during scanning. |
+| Fixed | Server | **Stock Transfer from Request** now correctly updates line quantities and keeps bin selections after returning from detail screen. |
+| Fixed | Server | Enabled UDFs for **Transfer Request** lines now appear correctly on the **Quantity** screen. |
+| New | Server | Added ``@CardCode`` variable for **Delivery** validation in **Check Point Validation**. |
+| Fixed | Server | **Delivery** now validates **SU CardCode** properly and blocks scanning SU assigned to another customer. |  
+| Fixed | Client | **Best Before Date** is now correctly saved in **GRPO** and **Batch Master Data** (**Windows CE**). |  
+| Fixed | Client | **Stock Transfer** batch selection no longer incorrectly shows not enough quantity errors. |  
+| Fixed | Client | **Pick Receipt** now calculates quantities correctly when **PF Auto Receipt** is enabled. |  
+| Fixed | Server | After saving **Pick Receipt from Production**, bin locations are cleared correctly and document numbers are displayed properly. |
+| Fixed | Server | **Delivery ShipToCode** now works correctly with alphanumeric **CardCodes**. |  
+| Improved | Client | Added label printing button to **Delivery (WZ)** documents, similar to **GRPO**. |
+| Fixed | Android Client | **Back** button in **Stock Transfer** **from Request** now works correctly. |
+| Fixed | Android Client | Adding empty serial to SU now opens the quantity screen instead of auto-assigning quantity ``1``. |
+| Improved | Client | Serial-managed items with ``Management Method = “On Release Only”`` now follow SAP logic correctly. WMS allows receipt without serial and respects **Automatic Serial Number Creation** settings. |
+| New | Server | Added support for picking items with ``Issue Primarily By = Bin Location`` in **Pick Lists**, aligned with SAP behavior. |
+| New | Server | Added a parameter in **Custom Configuration** to auto-allocate **Batch/Serial** numbers during **Delivery** when source is **Pick List** and item is issued primarily by **Bin Location** (default: ``enabled``). |  
+| New | Server | Added configurable workflow for **Serial Selection** and **Issue Primary** logic based on **Item Master Data** settings. |
+
+## CompuTec WMS Plugin 3.2601.1
+
+**Release Date: 29 January 2026**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Improved | Client Android, Client Windows | You can now edit serial numbers during Goods Receipt Purchase Order (GRPO) creation across all WMS clients. Changes are saved correctly, giving users the same flexibility as in SAP. |
+| New | Client | Added the ability to move content between existing Storage Units (SU), not only to newly created ones, reducing unnecessary SU creation. |
+| Fixed | Client | Fixed delivery processing so scanning a SU no longer triggers a warehouse mismatch error when the ``Hide scanned SU on the list`` option was enabled. |
+| Fixed | Android Client | **Stock Transfer** scanning now behaves correctly when scanning batches outside FIFO. **Quantity** screen opens directly, speeding up transfers. |
+| New | Server | Added support for returns from **AR Invoice** to **Credit Note**, expanding return processing scenarios in WMS. |
+| Fixed | Client | Fixed errors when creating **Delivery** from **Pick List**, improving reliability in outbound processing. |
+| Improved | Server | GRPO from **Purchase Order** now allows changing the warehouse for the whole document using the top bar, avoiding item-by-item corrections. |
+| Improved | Server | **Stock Transfer** now skips the **Put Away** screen when destination warehouse selection is not required, reducing unnecessary steps. |
+| Improved | Server | **Inventory Counting** preview list now supports filtering by warehouse and bin, making large inventories easier to review. |
+| Fixed | Client | Fixed incorrect quantities when saving GRPO documents as drafts and reopening them later. |
+| Fixed | Server | **WMS Settings** screen no longer crashes when CompuTec AppEngine restarts or refresh is pressed during restart. |
+| Fixed | Server | Returns from GRPO with empty serial numbers now work correctly, allowing serial selection and saving without errors. |
+| Improved | Server | Added query logging for **WMS 3.0**, making troubleshooting and performance analysis easier for administrators. |  
+| Improved | Server | **Delivery Line UDFs** can now be shown directly in the main screen, improving data visibility for users. |
+| Improved | Client | **Sales BOM (Bill of Material)** headers are now greyed out, so warehouse users can easily see which items should be picked and which are informational only. |
+| Fixed | Android Client | Improved stability when using WMS over VPN, reducing unexpected disconnects. |
+| New | Client | Added an option to skip the final confirmation screen in **Quick SU Transfer**, speeding up repetitive transfers. |
+| New | Client | **Quick SU Transfer** now supports fixed destination selection and configurable scanning behavior, giving users more control and fewer mistakes. |
+| Improved | Server | Document saving performance in WMS 3.0 was significantly improved, reducing save times compared to earlier versions. |
+| Fixed | Client | Fixed **SU Info** so warehouse users can scan an SU code to add one Storage Unit into another without errors. |
+| Fixed | Client | Validation during SU creation now works correctly when scanning item, barcode, and quantity together. |
+| Improved | Client | You can now set and save **Tax Date** on GRPO documents created from drafts, improving accounting accuracy. |
+| Fixed | Server | **Stock Transfer** with ``Hide SU`` enabled now correctly accepts SU and SSCC scans. |
+| Fixed | Server | When receiving from multiple **Purchase Orders**, WMS now always asks which PO line to use, preventing incorrect allocations. |
+| Fixed | Client | Fixed incorrect behavior in **Pick & Pack** where available quantities were miscalculated for multiple identical lines. |
+| Fixed | Client | Picking now validates scanned barcodes against the expected item, preventing accidental picking of wrong items. |
+| Fixed | Client | Searching by batch number now works correctly in **SU Disassembly** screens. |
+| Fixed | Client | Fixed errors when displaying or editing **Delivery** document UDFs. |
+| Fixed | Android Client | **Barcode Decoder** rules now work correctly in **Stock Transfer** for existing SU screens. |
+| Fixed | Server | Fixed UI issues in **Stock Counting** where checkboxes were overlapping, improving usability. |
+
+## CompuTec WMS Plugin 3.2512.1
+
+**Release Date - 31 December 2025**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Improvement | Server | Added the ability to edit Storage Units on Delivery from Pick List that were packed during the Pick and Pack process. |
+| Improvement | Client | Added a button in Document Details to change the sorting of the product list across all documents. |
+| Improvement | Server | Added "remove batch" button in Delivery. |
+| Bug | WMS Plugin | Item Code is missing in the Storage Units grid. |
+| Bug | Client | In Pick Receipt batch generation, Revision fields are read-only and not available for editing. |
+| Bug | Server | The available quantity displayed in the Pick List is incorrect. |
+| Bug | Server | GRPO - Empty Bin Code function and Receiving Bin Locations. Error message: Bin location "0" does not belong to specific warehouse. |
+| Bug | Server | GRPO - Selecting Bin Code from Storage Unit details screen does not work. |
+| Bug | Server | Batches not assigned in warehouse without bin locations in Delivery from Sales Order. |
+| Bug | Client | Batch/serial items managed primarily by bin location do not appear in the Pick List. |
+| Bug | Client | Numeric UDF field does not take values. |
+| Bug | Server | In Delivery from Sales Order (Sales BOM), closed lines are not copied to the Delivery document. |
+| Bug | Server | GRPO - Quantity in SU is doubled. |
+| Bug | Server | On the DEV server, updating a Storage Unit is not possible due to the error “Cannot change the Status.” |
+| Bug | Server | In Pick Receipt, the Goods Receipt is not created even though the info message says “Goods Receipt/Production receipt no. 0 created.” |
+| Bug | Server | In Stock Transfer from Request with SU FIFO, adding a second Storage Unit for the same line does not update the line quantity. |
+| Bug | Server | Pick and Pack - Data not saved to UDF. |
+| Bug | Server | In Old Stock Counting, the quantity is not saved on the first attempt if the UoM Code is not selected. |
+| Bug | Server | Use TLS instead of SSL for secure communication. |
+
+## CompuTec WMS Plugin 3.2511.1
+
+**Release Date - 27 November 2025**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Improvement | Client | Interface Design Manager: Add the ability to hide options and include an icon for Container. |
+| Improvement | Client Android | Pick List: Add color differentiation for Pick Lists that have been updated. |
+| Improvement | Server | Document Details: Display a Preview List on the screen. |
+| Improvement | Server | Move Check Point Validation to the end of the validation queue. |
+| Improvement | Client | WMS Client Settings: Add options to set Default Warehouse and Bin for SU Operation creation. |
+| Bug | Client | Creating GRPO from Draft fails with error: “Cannot add or update document; Specify the UoM code.” |
+| Bug | Client, Client Android | Delivery from Sales Order – Allocated serial numbers are marked as 1/1 and incorrectly moved to the bottom of the list. |
+| Bug | Client | Delivery from Sales Order - Catch Weight allocation issue after scanning: system creates extra lines and shows incorrect total quantity. |
+| Bug | Client | Double-scanning an SU Code incorrectly opens the window assigned to an Existing SU. |
+| Bug | Client, Client Android | Unable to deliver orders when SU/Batch quantities exceed the entered delivery quantity. |
+| Bug | Server | SU Info: Additional SU fields are not displayed on the first screen in other transactions. |
+| Bug | Server | Pick and Pack: UDF linked to a Business Object is displayed as a text field instead of a dropdown list. |
+| Bug | Server | Pick List: SU UDFs on the main SU screen do not display values from the associated SU. |
+| Bug | Client | Editor control is not enabled on Android 14 devices. |
+| Bug | Server | GRPO: Cannot add items when the Bin Code field is empty. |
+| Bug | Server | Stock Transfer: Empty serials in SU trigger the error “Cannot add row (...)”. |
+| Bug | Server | Pick List and Delivery: Removing an SU causes an “Object reference” error. |
+| Bug | Server | SU: System does not allow decreasing quantity and fails to handle updates or additions when key fields are not properly filled. |
+| Bug | Server | Stock Transfer: The Hide SU option does not function correctly. |
+| Bug | Server | Sales Order from Pick List: Quantity displayed comes from the Sales Order instead of the Pick List. |
+| Bug | Client | Delivery Document: All serials appear empty, affecting both Sales Order and Pick List scenarios. |
+| Bug | Client | SU Disassembly: System does not allow scanning SU or SSCC codes without prefixes. |
+| Bug | Server | Delivery from Pick List: The same batch is displayed from three different locations. |
+
+## CompuTec WMS Plugin 3.2510.1
+
+**Release Date - 29 October 2025**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Improvement | WMS Plugin | Added support for including Catch Weight Storage Units in the Storage Info section of SAP Business One. |
+| Improvement | Server | Added the option to save Deliveries created from Pick List as Draft documents. |
+| Improvement | Server | Added a possibility to edit CardCode on SU Info. |
+| Bug | Custom Configuration | Template creation is not functioning correctly in the .net Core version. |
+| Bug | WMS Plugin | Unable to Add Items to Storage Categories (SC) |
+| Bug | AE Plugins | WMS Plugin installation fails due to incorrect SQL syntax. |
+| Bug | Server | Info message “Production receipt 0 was successfully created” appears, but no corresponding document is actually created in SAP. |
+| Bug | Server | The default Inventory UoM for Catch Weight items is incorrectly set. |
+| Bug | Client | Values from Delivery Line Fields are not correctly transferred to WMS, and custom fields (UDFs) are not included in the synchronization. |
+| Bug | Server | Unable to modify data in the Storage Unit (SU) header within the Warehouse Info – SU Info screen. |
+| Bug | SAP AddOn | SlpCode is not copied to the Delivery document. |
+| Bug | Server | The CardCode field is missing when creating a New Storage Unit (SU) in Stock Transfer. |
+| Bug | Client Android | App crashes in Stock Counting caused by EmojiCompat initialization error. |
+| Bug | Server | Splitting a line into two (even with the same batch and location) prevents delivery creation and returns the error “Cannot add row (…).” |
+| Bug | Server | Receiving a batch from a different bin than selected leaves the batch available in the original bin, and the SU remains visible in SU Info. |
+| Bug | Server | Error message occurred in Delivery from Sales Order: "Packed item Active-Item-02 is not part of the delivery (UoM 9, items per unit 1.000000)" |
+| Bug | Client | GRPO scanning behavior does not function as expected. |
+| Bug | Server | Pick and Pack: Pick list generated from SAP Production Order appears empty in WMS. |
+| Bug | Server | WMS Settings fail to notify users that ODBC Driver 17 is required. |
+| Bug | Server | Error message occurred in Pick and Pack: "This SU is currently in production stage. Please complete the Production Receipt before proceeding." |
+| Bug | Server | Delivery from Pick List: Data entered in UDFs is not saved to database. |
+| Bug | Server | GRPO filter field displays all matching values using LIKE instead of showing only the exact entered value. |
+| Bug | Server | Delivery fails with error message: “Index was out of range. Must be non-negative and less than the size of the collection.” |
+| Bug | Client | Pick Receipt Batch Creation fails due to incorrect or missing MOR Number parameter. |
+| Bug | Client | Application freezes when attempting to create a document. |
+| Bug | Client Android | The quantity in the quantity field is not fully visible. |
+| Bug | Client Android | The Save button is missing on the Storage Unit (SU) screen when creating a Delivery from Pick List. |
+| Bug | Server | In WMS Stock Count, when the UoM is displayed as Box, the system incorrectly treats the counted quantity as Pieces. |
+| Bug | Client | Removing a Storage Unit (SU) from a Delivery created from Pick List unintentionally modifies data in internal tables. |
+| Bug | Client | In Delivery from Pick List, an incorrect window is displayed when selecting an existing Storage Unit (SU). |
+| Bug | Server | Data entered in Storage Unit (SU) fields is not saved in Pick and Pack. |
+| Bug | Server | Storage Unit (SU) additional fields are not visible in the interface. |
+| Bug | Client | The system does not copy all Address Field contents from the Sales Order to the Delivery document. |
+| Bug | Client | When releasing for production, the system does not display the window to select the index with the serial number. |
+| Bug | Server | Updating the CT License Server address in AppEngine is not reflected in the WMS configuration file. |
+| Bug | Client | Error message occurred in GRPO: "Illegal value entered." |
+| Bug | Client | Date field values disappear after selecting a Bin. |
+| Bug | Server | The ItemName field causes empty output in print layouts during document printing. |
+| Bug | Client | Incorrect quantities are displayed and saved in the Delivery from Pick List document. |
+| Bug | Client | In GRPO SU Wizard, the Bin Location filter is not functioning correctly. |
+| Bug | Client | Error message occurred while updating WMS Settings: "Access to the path'C:\ProgramData\CompuTec\CompuTecWMS\Server\WMSServerConfiguration.json' is denied. Please try again. |
+| Bug | Server | Incorrect Storage Unit (SU) quantity calculation. |
+
+## CompuTec WMS Plugin 3.2509.2
+
+**Release Date - 02 September 2025**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Improvement | Server | Fixed bug when using pre-allocation on Pick List. |
+
+## CompuTec WMS Plugin 3.2509.1
+
+**Release Date - 02 September 2025**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Improvement | Client | Pick and Pack – From Bin: Quantity does not consider allocated quantities. |
+
+## CompuTec WMS Plugin 3.2508.2
+
+**Release Date - 20 August 2025**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Bug | WMS Plugin | Request Details – 'Cancel' button does not work in edit mode. |
+| Improvement | Server | Integration of new AppEngine plugin functionality with CompuTec WMS Server. |
+| Improvement | Client | GRPO: Possibility to set empty Bin Location field. |
+| Bug | Server | Stock Transfer: allow entering serial numbers for items managed with empty serials. |
+| Bug | Server | Pick and Pack - Empty Serials: Unable to open Quantity screen. |
+| Bug | Server | Pick Order: error when adding an SU: "Input string was not in a correct format." |
+| Bug | Client | CompuTec WMS client error after TR translation failure. |
+| Bug | Server | Delivery: Catch Weight quantities split by line number from CompuTec WMS window instead of selected batches. |
+| Bug | Server | Sales BOM header displayed; error shown when attempting to change item quantity because it is part of a Sales BOM. |
+| Bug | Server | Stock Transfer from Pick List: quantities displayed incorrectly. |
+| Bug | Client | Pick List Error message occurred: "Pick list exists. Bin location information required." |
+| Improvement | Client, Custom Configuration | Delivery: Save as Draft not working when "Use Sales UoM" is enabled. |
+| Bug | Server | Fix PowerShell ImportSU and add additional messages |
+| Bug | Server | SU: displays quantity per line; quantity cannot exceed the base line quantity. |
+| Bug | Server | Warehouse Info: SU Info allows adding an item with quantity exceeding available stock. |
+| Bug | Server | SU Disassembly to Storage Unit: initial quantity is not removed from the SU, potentially causing desynchronization between SU and warehouse quantities. |
+| Bug | Server | TSL instead of SSL in WMS Settings |
+| Bug | Client | Link Storage Unit to document line ID. |
+| Bug | Client Android | Pick and Pack/Delivery – new SU data (weight) is not saved on any stage. |
+| Bug | Client Android | Stock Counting: Unable to scan QR code with barcoder; error message occurred: "Invalid barcode." |
+| Bug | Server | 6460 |
+
+## CompuTec WMS Plugin 3.2508.1
+
+**Release Date - 04 August 2025**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Bug | WMS Plugin | Unable to Add or Storage Categories (SC) after editing. |
+| Bug | WMS Plugin | Error encountered when creating new Inventory Counting document |
+| Bug | Client | Scanning error occurred in SAP Production Order process |
+| Bug | Client | When decreasing quantity in SU during Stock Transfer, the quantity in the SU remains unchanged, while the line quantity is updated. |
+| Bug | Service Manager | Permissions issue – users are unable to perform certain actions due to missing or incorrectly assigned authorizations. |
+| Improvement | Client Android | Inventory UoM not displayed in Pick Receipt when UoM type is set to Manual. |
+| Improvement | Client, Client Android | Added SU (Storage Unit) counter in Delivery to track the number of assigned SUs. |
+| Improvement | Client | Stock Transfer functionality successfully tested in Core version |
+| Bug | Client | Pick and Pack – System displays error message "Pick list exists and Bin locations information required." |
+| Bug | Client Android | (EMCM) Stock Transfer – "To Bin" filtering does not work correctly; error message appears, but bin locations are not filtered until the last character is removed. |
+| Bug | Client | Inventory Transfer – negative batch/bin location quantities appear after scanning a batch. WMS merges batches into a single location, causing incorrect quantity display. |
+| Bug | Client | Catch Weight – unable to add a new row; system does not accept input or triggers no action. |
+| Bug | Client Android | MAUI – Scanning cannot be enabled on the Login screen; swipe-right gesture to activate scanning is not functioning. |
+| Bug | Server | (Ortho Solutions) Pick Order – Missing Order by `LineNum` clause in the query for the Document Details screen, causing lines to display in incorrect sequence. |
+| Bug | Client | (EMCM) "Hide SU" function does not work on Stock Transfer and Goods Issue screens – SU details remain visible despite the option being enabled. |
+| Bug | Server | (CORE) New Stock Counting – Error message occurred: ' ' is not a valid value for property 'U_MultiCounters'. The valid values are: 'Y' - 'Yes', 'N' - 'No' |
+| Bug | Client | Download installers are served over an insecure address `http://localhost:31002` instead of using HTTPS |
+| Bug | Client | Installer downloaded from the WMS server-hosted page does not include the version number in the file name. |
+| Bug | Server | No logs are generated when WMS Settings is opened directly from Start menu. |
+| Improvement | Client | Pick and Pack – No retry mechanism in place; operations fail without reattempt after errors or WMS restart, requiring manual intervention. |
+| Improvement | WMS Main | Added optional parameter to move completed items to the bottom of the list, enhancing clarity. |
+| Bug | Server | Old Stock Counting – Document not locked, allowing simultaneous edits. |
+| Bug | Server | Error message occurred: "This SU is already packed into another SU" appears when attempting to reuse an SSCC. |
+| Bug | Server | Delivery from Sales Order - "Forbid ordering greater quantities than on Order" function does not work with SU; CompuTec WMS allows over delivery without showing an error message. |
+| Bug | Client | When "Use Sales UoM from based document" is enabled, the system displays batch quantity in Sales UoM but incorrectly auto-populates it into the Inventory UoM field. |
+| Bug | Client | Best Before Date functionality not working. |
+| Bug | Client | When Custom Config > Delivery > Use Sales UoM from based document is enabled, batch quantities are shown in Sales UoM but selecting a batch incorrectly fills Inventory UoM with the Sales UoM quantity. |
+| Bug | Client | Incorrect Available Quantity displayed in Catch Weight. |
+| Bug | Client | Label print window does not close after clicking "Print Labels" |
+| Bug | Client Android | (VIANDES SEFICLO) GRPO - The scanned value goes to the logs after scanning and after pressing the Save button. |
+| Bug | Client | Blank error notification shown in Pick List when updating base document: "Pick list exists. Bin locations information required." |
+| Improvement | Client | Configure CompuTec WMS Settings to automatically run as Administrator to prevent permission-related issues during configuration and usage. |
+| Improvement | Server | Added option in Delivery: "Disable the transaction during save." |
+| Improvement | Client Android | Added option in the client to allow manual date entry. |
+| Improvement | Server | Enabled customization of queries retrieving `FirstLocation` |
+| Bug | Client | Put Away - Object reference not set to an instance of an object. |
+| Bug | Client | CompuTec WMS application crashes after closing the decoder window. |
+| Bug | Server | Unable to decrease quantity in SU in (CAPS) Stock Transfer. |
+| Improvement | Labels Integration, Server | Print Inventory Transfer Batches and Serials before post. |
+
+## CompuTec WMS Plugin 3.2506.2
+
+**Release Date - 13 June 2025**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Bug | Server | In some cases the quantity on the pick list was not picked by scanning. After re-entering the pick list in CompuTec WMS the quantity was picked partially. |
+
+## CompuTec WMS Plugin 3.2506.1
+
+**Release Date - 11 June 2025**
+
+| Issue Type | Component/s | Release Note |
+| - | - | - |
+| Bug | PFI | Missing translation for the new column label addDefaultLinesLabel in PFI. |
+| Bug | Client Android | Users encountered the following error message while attempting to install the application: <br/>"The application can't be installed because it is incompatible with the device (0xC7D24FBC)" |
+| Bug | Client Android | In CORE - VIANDES SEFICLO, during GRPO creation, the data entered in Batch UDFs is not being saved or updated. |
+| Bug | Server | (INNOV) In GRPO, scanning EAN codes starting with "13" recognizes the item but does not increment the quantity—this issue occurs specifically with UoMs having the "13" prefix, while other prefixes function correctly. |
+| Bug | Server | (INNOV) In Pick and Pack, CompuTec WMS is unable to read barcodes. |
+| Bug | Server | (INNOV) In Stock Transfer, when scanning a UoM barcode, the correct item and UoM are selected, but the quantity is incorrectly entered into the Quantity field or directly added to the Document Details screen. |
+| Bug | Server | (VIANDES SEFICLO) In Delivery, Catch Weight quantities are incorrectly split based on the line number from the CompuTec WMS window rather than the selected batches. |
+| Bug | Server | In Inventory Register, for Stock Transfer transactions, the LineNum and LplLine fields are either incorrect or not aligned. |
+| Improvement | CompuTec WMS Plugin | Enable matching of Storage Category to the corresponding rule for better accuracy and control |
