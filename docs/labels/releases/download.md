@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 1
 ---
 
 import Releases from "../gateway-releases.json";
@@ -57,7 +57,7 @@ Below CompuTec Labels Printing Manager and CompuTec Labels SAP Add-on versions a
 
 | Version | Release Date | Download Link | Release Notes |
 | --- | --- | --- | --- |
-| 2.10.300 | 21 February 2025 | [Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.300.zip) | [Navigate to the page](release-notes.md#computec-labels-sap-addon-210300) |
+| 2.10.300 | 21 February 2025 | [Download](https://download.computec.one/software/labels/extension/releases/CompuTec_Labels_2.10.300.zip) | [Navigate to the page](/docs/labels/releases/sap-addon-release-notes) |
 
 <details>
 <summary>Previous Releases</summary>
@@ -103,15 +103,15 @@ Below CompuTec Labels Printing Manager and CompuTec Labels SAP Add-on versions a
 
 | Version | Build | Release Date | Download Link | Release Notes | Compatible CompuTec AppEngine Version |
 | --- | --- | --- | --- | --- | --- |
-| 1.2.2 | 1.2.2.0 | 16 March 2026 | [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.2.0.msi) | [Navigate to the page](/docs/labels/releases/release-notes#computec-gateway-manager-122) | CompuTec AppEngine 3.0 |
+| 1.2.2 | 1.2.2.0 | 16 March 2026 | [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.2.0.msi) | [Navigate to the page](/docs/labels/releases/gateway-release-notes) | CompuTec AppEngine 3.0 |
 
 <details>
 <summary>Previous Releases</summary>
 <div>
 | Version |  Build | Release Date | Download Link | Release Notes | Compatible CompuTec AppEngine Version |
 | --- | --- | --- | --- | --- | --- |
-| 1.2.1 HF1 | 1.2.1.1 | 10 April 2025 | [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.1.1.msi) | [Navigate to the page](release-notes.md#computec-gateway-manager-121-hf1) | CompuTec AppEngine 3.0 |
-| 1.2.1 | 1.2.1.0 | 11 March 2025 | [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.1.0.msi) | [Navigate to the page](release-notes.md#computec-gateway) | CompuTec AppEngine 2.0 |
+| 1.2.1 HF1 | 1.2.1.1 | 10 April 2025 | [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.1.1.msi) | [Navigate to the page](/docs/labels/releases/gateway-release-notes) | CompuTec AppEngine 3.0 |
+| 1.2.1 | 1.2.1.0 | 11 March 2025 | [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.1.0.msi) | [Navigate to the page](/docs/labels/releases/gateway-release-notes) | CompuTec AppEngine 2.0 |
 | 1.2.0.28 | 1.2.0.28| --- | [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.0.28.msi) | --- | CompuTec AppEngine 2.0 |
 |1.2.0.20 | 1.2.0.20 | --- |  [Download](https://download.computec.one/software/gateway/releases/CompuTec_Gateway_1.2.0.20.msi)| --- | CompuTec AppEngine 2.0 |
 </div>
