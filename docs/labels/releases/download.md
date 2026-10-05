@@ -16,23 +16,23 @@ Below CompuTec Labels Printing Manager and CompuTec Labels SAP Add-on versions a
 
 | Version | Build | Release Date | Required CT License Server Version | Download Link | Release Note |
 | --- | --- | --- | --- | --- | --- |
-| 4.8.9 | 4.8.9.0 | 22.09.2026 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.9.0_x64.msi) | [Release Notes](https://learn.computec.one/docs/labels/releases/release-notes) |
+| 4.8.9 | 4.8.9.0 | 22.09.2026 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.9.0_x64.msi) | [Release Notes](/docs/labels/releases/printing-manager-release-notes) |
 
 <details>
 <summary>Previous Releases</summary>
 <div>
 | Version | Build | Release Date | Required CT License Server Version | Download Link | Release Note |
 | --- | --- | --- | --- | --- | --- |
-| 4.8.8 | 4.8.8.0 | 13.08.2026 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.8.0_x64.msi) | [Release Notes](/docs/labels/releases/release-notes) |
-| 4.8.7 | 4.8.7.0 | 16.07.2026 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.7_x64.msi) | [Release Notes](/docs/labels/releases/release-notes) |
-| 4.8.6 | 4.8.6.0 | 16.03.2026 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.6.0_x64.msi) | [Navigate to the page](/docs/labels/releases/release-notes#computec-labels-printing-manager-486) |
-| 4.8.5 | 4.8.5.0 | 01.12.2025 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.5.0_x64.msi) | [Navigate to the page](./release-notes.md#computec-labels-printing-manager-485) |
-| 4.8.4 | 4.8.4.0 | 26 June 2025 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.4.0_x64.msi) | [Navigate to the page](./release-notes.md#computec-labels-printing-manager-484) |
-| 4.8.3 HF1 | 4.8.3.2 | 05 June 2025 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.3.2_x64.msi) | [Navigate to the page](./release-notes.md#computec-labels-printing-manager-483-hf1) |
-| 4.8.3 | 4.8.3.1| 14 May 2025 | 5.10.1.1. or greater | ~Download~ | [Navigate to the page](./release-notes.md#computec-labels-printing-manager-483) |
-| 4.8.2 | 4.8.2.1 | 24 March 2025 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.2_x64.msi) | [Navigate to the page](./release-notes.md#computec-labels-printing-manager-482) |
-| 4.8.1 | 4.8.1.1 | 26 February 2025 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.1.1_x64.msi) | [Navigate to the page](./release-notes.md#computec-labels-printing-manager-481) |
-| 4.8.0 | 4.8.0.1 | 21 February 2025 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.0.1_x64.msi) | [Navigate to the page](./release-notes.md#computec-labels-printing-manager-480) |
+| 4.8.8 | 4.8.8.0 | 13.08.2026 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.8.0_x64.msi) | [Release Notes](/docs/labels/releases/printing-manager-release-notes) |
+| 4.8.7 | 4.8.7.0 | 16.07.2026 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.7_x64.msi) | [Release Notes](/docs/labels/releases/printing-manager-release-notes) |
+| 4.8.6 | 4.8.6.0 | 16.03.2026 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.6.0_x64.msi) | [Navigate to the page](/docs/labels/releases/printing-manager-release-notes) |
+| 4.8.5 | 4.8.5.0 | 01.12.2025 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.5.0_x64.msi) | [Navigate to the page](/docs/labels/releases/printing-manager-release-notes) |
+| 4.8.4 | 4.8.4.0 | 26 June 2025 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.4.0_x64.msi) | [Navigate to the page](/docs/labels/releases/printing-manager-release-notes) |
+| 4.8.3 HF1 | 4.8.3.2 | 05 June 2025 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.3.2_x64.msi) | [Navigate to the page](/docs/labels/releases/printing-manager-release-notes) |
+| 4.8.3 | 4.8.3.1| 14 May 2025 | 5.10.1.1. or greater | ~Download~ | [Navigate to the page](/docs/labels/releases/printing-manager-release-notes) |
+| 4.8.2 | 4.8.2.1 | 24 March 2025 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.2_x64.msi) | [Navigate to the page](/docs/labels/releases/printing-manager-release-notes) |
+| 4.8.1 | 4.8.1.1 | 26 February 2025 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.1.1_x64.msi) | [Navigate to the page](/docs/labels/releases/printing-manager-release-notes) |
+| 4.8.0 | 4.8.0.1 | 21 February 2025 | 5.10.1.1. or greater | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.8.0.1_x64.msi) | [Navigate to the page](/docs/labels/releases/printing-manager-release-notes) |
 | 4.7.1.137 | - | - | - | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.137_x64.msi)| - |
 | 4.7.1.135 | - | - | - | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.135_x64.msi) | This version is fully compatible with .NET Core 3.0. Maintains full compatibility with previous systems |
 |4.7.1.134| - | - | - | [Download](https://download.computec.one/software/labels/releases/CompuTec_Labels_4.7.1.134_x64.msi)| - |
