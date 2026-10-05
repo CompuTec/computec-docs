@@ -16,7 +16,7 @@ To use the CompuTec WMS desktop version, you must install both the server and cl
 
 ### Before you start
 
-- Download and run the **WMS Server installation file**. You can find it after clicking [this link](/wms_versioned_docs/version-2.0/releases/download).
+- Download and run the **WMS Server installation file**. You can find it after clicking [this link](/docs/wms/2.0/releases/download).
 
 :::info
 If the **CompuTec WMS Server** is already installed on this computer, you can access the setup by running the **CompuTecWMSServer.msi** file. This allows you to change, repair, or remove the installation.
@@ -165,52 +165,6 @@ To access them, open **Custom Configuration** for the required company.
 For detailed information about the available settings and how to configure them, see [Custom Configuration](/docs/wms/2.0/administrator-guide/custom-configuration/overview).
 
 After completing the required configuration, make sure the **CompuTec WMS Server** service is running.
-
-## Install WMS Settings Only
-
-From version **3.2602 (Core)**, it is possible to install **WMS Settings** only, without installing the **WMS Server** service.
-
-This option is useful when:
-
-- You need access to **WMS Settings** and **Custom Configuration**
-- The **WMS Server** is installed on a different machine
-- You want administrative access without running the server locally
-
-:::info[note]
-
-- This installation is possible only for **Core** version, available **from version 3.2602**.  
-- During installation, select the appropriate option to install only the **WMS Settings** component.  
-- The installed **WMS Settings** version must match the version of the **WMS Server**.
-
-:::
-
-To install **WMS Settings** only, follow these steps:
-
-1. After downloading and running [**the installation file**](/wms_versioned_docs/version-2.0/releases/download), click **Next** in the setup window.
-
-    ![Install](../wms-server/media/wms-server-install.png)
-
-2. Choose the **Custom** setup type, and click **Next**.
-
-    ![Installation types](../wms-server/media/wms-server0choose-setup-custom.png)
-
-3. By default, all installation components are selected. To install only the **WMS Settings**, clear all checkboxes and leave only **WMS Settings** selected.
-
-    ![Install WMS settings only](../wms-server/media/wms-server-custom-setup.png)
-
-4. An installation progress screen will appear, followed by a system message confirming successful setup.
-
-5. Click **Finish** to exit the installer.
-
-    ![CompuTec WMS Server](./media/wms-server-finish-installation.png)
-
-6. Done! Now you can find **WMS Settings** in the list of installed programs.
-
-    ![CompuTec WMS Server](./media/wms-server-place.png)
-
-     :::caution[important]
-       To access **WMS Settings** from the **Start Menu**, run it **as Administrator**. Otherwise, saving changes may result in an error.
-    :::
 
 ## CompuTec WMS Server Automatic Restart
 

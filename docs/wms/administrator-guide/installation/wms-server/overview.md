@@ -16,7 +16,7 @@ To use the CompuTec WMS desktop version, you must install both the server and cl
 
 ### Before you start
 
-- Download and run the **WMS Server installation file**. You can find it after clicking [this link](/wms_versioned_docs/version-2.0/releases/download).
+- Download and run the **WMS Server installation file**. You can find it after clicking [this link](/docs/wms/2.0/releases/download).
 
 :::info
 If the **CompuTec WMS Server** is already installed on this computer, you can access the setup by running the **CompuTecWMSServer.msi** file. This allows you to change, repair, or remove the installation.
@@ -183,7 +183,7 @@ This option is useful when:
 
 To install **WMS Settings** only, follow these steps:
 
-1. After downloading and running [**the installation file**](/wms_versioned_docs/version-2.0/releases/download), click **Next** in the setup window.
+1. After downloading and running [**the installation file**](/docs/wms/2.0/releases/download), click **Next** in the setup window.
 
     ![Install](../wms-server/media/wms-server-install.png)
 

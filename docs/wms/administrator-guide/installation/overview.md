@@ -192,7 +192,7 @@ Configure the required **CompuTec WMS licenses** and assign them according to yo
 For detailed instructions, see [WMS Licensing](/docs/wms/administrator-guide/installation/wms-licensing).
 :::
 
-### Step 6: Install CompuTec WMS Client
+## Step 6: Install CompuTec WMS Client
 
 Download and install **CompuTec WMS Client** on the devices that will be used for warehouse operations.
 

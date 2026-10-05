@@ -15,7 +15,7 @@ In **CompuTec WMS Client**, you can configure connection details, printers, scal
 Before you start, make sure:
 
 - **CompuTec WMS Server** is installed and configured. [Read more](/docs/wms/administrator-guide/installation/wms-server/overview)
-- You have downloaded **CompuTec WMS Client** installation file from the [**Downloads**](/wms_versioned_docs/version-2.0/releases/download).
+- You have downloaded **CompuTec WMS Client** installation file from the [**Downloads**](/docs/wms/2.0/releases/download).
 
 :::note[info]
 For more information, see [CompuTec WMS Server](/docs/wms/administrator-guide/installation/wms-server/overview).
@@ -23,7 +23,7 @@ For more information, see [CompuTec WMS Server](/docs/wms/administrator-guide/in
 
 ## Install CompuTec WMS Client
 
-1. Download **CompuTec WMS Client** installation file from the [**Downloads**](/wms_versioned_docs/version-2.0/releases/download).
+1. Download **CompuTec WMS Client** installation file from the [**Downloads**](/docs/wms/2.0/releases/download).
 2. Run the installation file and click **Next**.
 
     ![alt text](media/wms-client-install1.png)
