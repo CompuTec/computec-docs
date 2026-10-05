@@ -11,13 +11,15 @@ This guide provides an overview of the installation process for **CompuTec WMS 2
 The installation process differs depending on the version you are using. Select your version below and complete the steps in the order shown.
 
 :::warning[important]
-Support for **CompuTec WMS 2.0** will end soon. We recommend planning your upgrade to **CompuTec WMS 3.0 Plugin** to continue receiving regular support and maintenance updates.
+Please note that **CompuTec WMS 2.0** will be supported only **until the end of 2026**. After this time, WMS 2.0 will no longer receive regular support or maintenance updates.
+
+We recommend planning your upgrade to **CompuTec WMS 3.0**.
 :::
 
 <Tabs>
   <TabItem value="2.0" label="CompuTec WMS 2.0" default>
 
-## CompuTec WMS 2.0
+## Install CompuTec WMS 2.0
 
 Complete the following steps to install and configure **CompuTec WMS 2.0**.
 
@@ -74,7 +76,7 @@ For detailed instructions, see [Configure CompuTec WMS Client](/docs/wms/adminis
 
   <TabItem value="3.0" label="CompuTec WMS 3.0 Plugin" default>
 
-## CompuTec WMS 3.0
+## Install CompuTec WMS 3.0
 
 CompuTec WMS 3.0 uses **CompuTec AppEngine** for its plugin-based components.
 
@@ -202,7 +204,7 @@ This step applies to **CompuTec WMS 3.0** only.
 
 ### Step 3: Download and install CompuTec WMS Server
 
-After installing the WMS 3.0 Plugin:
+To download and install **CompuTec WMS Server**, follow these steps:
 
 1. Open the installed **CompuTec WMS plugin** in CompuTec AppEngine.
 
@@ -226,11 +228,21 @@ After installing the WMS 3.0 Plugin:
 
 If **CompuTec ProcessForce** is installed in the SAP Business One environment, you must also install the **CompuTec ProcessForce API Plugin**.
 
-CompuTec WMS detects that ProcessForce is installed and requires the ProcessForce API to communicate with it correctly.
+CompuTec WMS detects that ProcessForce is installed and requires the **ProcessForce API** to communicate with it correctly.
 
-For CompuTec WMS 3.0, install the **CompuTec ProcessForce API** from the **CompuTec AppEngine Plugin Store**, following the same plugin installation process used for the CompuTec WMS 3.0 Plugin.
+1. Go to **CompuTec Administration Panel** > **Plugins** > **Store**.
 
-![alt text](media/overview/pfapi-install1.png)
+2. Install the **CompuTec ProcessForce API** following the same plugin installation process used for the CompuTec WMS 3.0 Plugin.
+
+    ![alt text](media/overview/pfapi-install1.png)
+
+3. Go to CompuTec.API Plugin **Description**, and click the link to download CompuTec ProcessForce API for WMS.
+
+    ![alt text](media/pfapiwms.png)
+
+4. Follow the installation steps.
+
+    ![alt text](media/pfapiwms2.png)
 
 :::info[Note]
 If CompuTec ProcessForce is not installed in your environment, you can skip this step.
@@ -288,21 +300,6 @@ If you are **upgrading from CompuTec WMS 2.0 to 3.0**, be aware of several chang
 If you have previously installed or administered **CompuTec WMS 2.0**, review these changes before configuring WMS 3.0. They describe differences in the installation and configuration process that may affect an existing WMS environment.
 :::
 
-  </TabItem>
-</Tabs>
-
-## Additional Configuration
-
-Depending on your environment and warehouse processes, additional configuration may be required, such as:
-
-- CompuTec Gateway Service for weight scales and label printing
-- RDP scanner configuration
-- SAP Business One settings
-- Barcode configuration
-- Company-specific WMS settings
-
-For company-specific application settings, see [Custom Configuration](/docs/wms/administrator-guide/custom-configuration/overview).
-
 ### Validations
 
     To ensure a seamless and error-free experience with CompuTec WMS, verify the following during installation and configuration:
@@ -326,3 +323,18 @@ For company-specific application settings, see [Custom Configuration](/docs/wms/
 5. If WMS.BusinessLogic is not linked to the selected database, assign it and ensure the correct CompuTec AppEngine instance is chosen.
 
     ![WMS Business Logic](./media/overview/wms-business-logic.png)
+
+  </TabItem>
+</Tabs>
+
+## Additional Configuration
+
+Depending on your environment and warehouse processes, additional configuration may be required, such as:
+
+- CompuTec Gateway Service for weight scales and label printing
+- RDP scanner configuration
+- SAP Business One settings
+- Barcode configuration
+- Company-specific WMS settings
+
+For company-specific application settings, see [Custom Configuration](/docs/wms/administrator-guide/custom-configuration/overview).
