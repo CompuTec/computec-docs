@@ -25,7 +25,7 @@ The image above shows the expected response. If you encounter a different respon
 
 ## Download and Installation
 
-Download the installation file from [this link](/docs/wms/releases/download) and then extract and transfer it to the device.
+Download the installation file from [this link](/docs/wms/2.0/releases/download) and then extract and transfer it to the device.
 
 Using a file manager app, navigate to the download folder and tap the file to begin the installation, provided all necessary permissions are properly configured.
 

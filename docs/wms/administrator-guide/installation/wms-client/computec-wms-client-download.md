@@ -38,7 +38,7 @@ You can also obtain the WMS Client installation files using one of the following
 
 ### Download from CompuTec Learn
 
-You can download the available WMS Client installation packages from [CompuTec WMS Downloads](/docs/wms/releases/download).
+You can download the available WMS Client installation packages from [CompuTec WMS Downloads](/docs/wms/2.0/releases/download).
 
 ### Access the files on the WMS Server machine
 

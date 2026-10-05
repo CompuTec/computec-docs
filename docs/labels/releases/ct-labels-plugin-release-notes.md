@@ -3,7 +3,7 @@ sidebar_position: 2
 ---
 
 
-# CompuTec Labels Plugin Release Notes
+# CompuTec Label.Plugin Release Notes
 
 ## CompuTec Labels Plugin
 
@@ -25,3 +25,12 @@ Below are the release notes for **CompuTec Labels Plugin**. This Plugin can be u
 | Issue Type | Components | Release Note |
 | --- | --- | --- |
 | Improved | Printing Actions | **Printing actions** now use clearer names and descriptions, so it’s easier to choose the right action. |
+
+### CompuTec Labels Plugin 3.2509.1
+
+**Release Date: 29 September 2025**
+
+| Issue Type | Component/s | Reference Support Ticket | Release Note |
+| --- | --- | --- | --- |
+| Improvement | AE Plugins | - | Integrate AE Plugins with Weblate. |
+| Bug | Core | - | Issue with ProcessForce Scheduling Module. |
