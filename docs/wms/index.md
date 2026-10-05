@@ -2,69 +2,72 @@
 sidebar_position: 1
 ---
 
-# Introduction to CompuTec WMS
+# Introduction to CompuTec WMS 3.0
 
-**CompuTec WMS** (Warehouse Management System) is an advanced warehousing solution integrated with **SAP Business One**, designed to digitize and streamline all key warehouse operations. Built to run on mobile devices, including GS1 barcode scanners and Android-based devices, CompuTec WMS enables warehouse users to conduct operations in real time - directly from the shop floor.
+**CompuTec WMS 3.0** is a warehouse management solution for **SAP Business One**. It supports warehouse operations performed on mobile devices, including Android-based devices and barcode scanners.
 
-Whether managing inbound goods, outbound shipments, or internal warehouse movements, CompuTec WMS provides powerful tools that improve accuracy, traceability, and efficiency.
+CompuTec WMS allows warehouse users to process transactions directly from the warehouse floor. The data is transferred to SAP Business One, helping keep warehouse and inventory information up to date.
 
----
+CompuTec WMS 3.0 is based on the **CompuTec AppEngine Framework**.
 
-## Why Use CompuTec WMS?
+## How CompuTec WMS Works
 
-Warehouse operations are a critical part of your supply chain. Manual, paper-based processes are often error-prone, slow, and hard to track. CompuTec WMS addresses these challenges by offering:
+Warehouse users work with the **CompuTec WMS Client**, which provides access to warehouse processes through a tile-based interface.
 
-- Real-time warehouse visibility
-- Integration with SAP Business One
-- Automation of core warehousing tasks
-- Detailed traceability via batch and serial numbers
-- Enhanced support for manufacturing operations with CompuTec ProcessForce
+Each tile represents a specific process or function, such as:
 
----
+- Goods Receipt
+- Pick List
+- Stock Transfer
+- Stock Counting
+- Packing
 
-## How It Works
+Users can scan items, enter the required information, and complete the selected process directly on their mobile device.
 
-CompuTec WMS is fully integrated into the SAP Business One ecosystem. It connects mobile devices and barcode scanners to your ERP system, allowing users to perform tasks that immediately reflect in SAP.
+Depending on the process, CompuTec WMS can handle information such as:
 
-The application is tile-based, with each tile representing a warehouse transaction or function. When a user selects a tile - such as *Goods Receipt*, *Pick List*, or *Stock Transfer* - the system prompts them to scan items, enter details, and complete the transaction. The result is a transaction document stored directly in SAP Business One.
-
-![WMS Main Menu](./media/index/wmsmenu.webp)
-
-Each transaction records:
-
-- Item details
-- Batch/Serial data (if enabled)
-- Quantities
-- Warehouse bins or storage locations
+- Items and quantities
+- Batch and serial numbers
+- Warehouses and storage bins
+- Handling units
 - Dates and remarks
-- Users and timestamps
+- User and transaction information
 
----
+## Main Features
 
-## Key Capabilities
+CompuTec WMS provides functionality for managing common warehouse processes in SAP Business One.
 
-Here are some of the most important features offered by CompuTec WMS:
+| **Feature** | **Description** |
+| --- | --- |
+| **Warehouse Transactions** | Receive, issue, transfer, and return goods. |
+| **Barcode Scanning** | Scan items and other warehouse information using supported mobile devices. |
+| **Batch and Serial Number Management** | Process and track items managed by batch or serial numbers. |
+| **Storage Bin Management** | Manage inventory stored in warehouse bins. |
+| **Handling Units** | Group and manage items using handling units. |
+| **Stock Counting** | Perform inventory counting directly from the WMS Client. |
+| **Packing** | Support packing processes as part of warehouse operations. |
+| **Catch Weight** | Manage items for which the actual weight can vary between individual units. |
+| **CompuTec ProcessForce Integration** | Support warehouse processes related to CompuTec ProcessForce manufacturing operations. |
+| **Configuration and Customization** | Adjust WMS behavior to meet specific warehouse requirements. |
 
-| Feature | Description |
-|--------|-------------|
-| **Core Warehouse Transactions** | Perform standard activities like receiving, issuing, transferring, and returning goods. |
-| **Batch and Serial Number Tracking** | Manage traceability across your inventory lifecycle. |
-| **Manufacturing Integration** | Seamless functionality with CompuTec ProcessForce for advanced manufacturing operations. |
-| **Catch Weight Management** | Especially useful for industries dealing with variable weight items (e.g., meat, fish, dairy). [Learn more](./user-guide/catch-weight.md). |
-| **Handling Unit and Storage Bin Management** | Organize items into units and track their bin locations. |
-| **Stock Counting** | Perform periodic or ad-hoc cycle counts using barcode scanners. |
-| **Packing Process Support** | Record packaging operations and link packing data with orders. |
-| **Customization and Extensibility** | Use UDFs, SQL query fields, task queues, and data validations to match your business needs. |
+## CompuTec WMS 3.0 Components
 
----
+CompuTec WMS 3.0 uses several components that work together:
 
-## Who Should Use It?
+- **CompuTec WMS Plugin** – installed and managed in CompuTec AppEngine.
+- **CompuTec WMS Server** – provides the server-side services required by WMS.
+- **CompuTec WMS Client** – the application used to perform warehouse operations on supported devices.
+- **CompuTec AppEngine** – provides the framework used to install and manage WMS plugin components.
 
-CompuTec WMS is built for:
+If **CompuTec ProcessForce** is installed in your SAP Business One environment, the **CompuTec ProcessForce API** is also required.
 
-- Warehouse operators who need to perform mobile transactions
-- Inventory managers tracking batches, serial numbers, or catch weight
-- Manufacturers using CompuTec ProcessForce and SAP Business One
-- Businesses needing barcode-based real-time inventory control
+## Next Steps
 
----
+Before installing CompuTec WMS 3.0, review the system requirements and installation process:
+
+- [**Requirements**](/docs/wms/administrator-guide/installation/requirements)
+- [**Installation Overview**](/docs/wms/administrator-guide/installation/overview)
+
+:::warning[important]
+If you are upgrading from **CompuTec WMS 2.0**, review the WMS 3.0 installation instructions before starting the upgrade. The installation and component management process differs between WMS 2.0 and WMS 3.0.
+:::

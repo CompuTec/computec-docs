@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Upgrade
+# Upgrade to WMS 2.0
 
 This document provides information on upgrading the CompuTec WMS application to a newer version.
 

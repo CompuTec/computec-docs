@@ -1,98 +1,34 @@
 ---
 sidebar_position: 1
 ---
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
-# Installation Overview
+# Install CompuTec WMS 3.0
 
 This guide provides an overview of the installation process for **CompuTec WMS 2.0** and **CompuTec WMS 3.0**.
 
 The installation process differs depending on the version you are using. Select your version below and complete the steps in the order shown.
 
-:::warning[important]
+:::info[note]
 Please note that **CompuTec WMS 2.0** will be supported only **until the end of 2026**. After this time, WMS 2.0 will no longer receive regular support or maintenance updates.
 
 We recommend planning your upgrade to **CompuTec WMS 3.0**.
 :::
 
-<Tabs>
-  <TabItem value="2.0" label="CompuTec WMS 2.0" default>
-
-## Install CompuTec WMS 2.0
-
-Complete the following steps to install and configure **CompuTec WMS 2.0**.
-
-### Before you start
-
-Before you start, review the [CompuTec WMS requirements](/docs/wms/administrator-guide/installation/requirements) and make sure your environment meets the requirements for your WMS version.
-
-### Step 1: Download and install CompuTec WMS Server
-
-1. Download the **CompuTec WMS Server** installation package from [CompuTec WMS Downloads](/docs/wms/releases/download).
-
-2. Install and configure the **CompuTec WMS Server**.
-    :::note[info]
-    For detailed instructions, see the [WMS Server Installation Guide](/docs/wms/administrator-guide/installation/wms-server/overview)
-    :::
-
-### Step 2: Install CompuTec ProcessForce API, if required
-
-If **CompuTec ProcessForce** is installed in the SAP Business One environment, you must also install the **CompuTec ProcessForce API**.
-
-CompuTec WMS detects that CompuTec ProcessForce is installed and requires the CompuTec ProcessForce API to communicate with it correctly.
-
-Download the appropriate API installation package from [CompuTec ProcessForce 2.0 Downloads](/docs/processforce/2.0/releases/download#computec-processforce-api).
-
-:::info[Note]
-If CompuTec ProcessForce is not installed in your environment, you can skip this step.
-:::
-
-### Step 3: Configure CompuTec WMS licensing
-
-Configure the required **CompuTec WMS licenses** and assign them according to your environment.
-
-:::note[info]
-For detailed instructions, see [WMS Licensing](/docs/wms/administrator-guide/installation/wms-licensing).
-:::
-
-### Step 4: Install CompuTec WMS Client
-
-Download and install **CompuTec WMS Client** on the devices that will be used for warehouse operations.
-
-:::note[info]
-For detailed instructions, see [Download CompuTec WMS Client](/docs/wms/administrator-guide/installation/wms-client/computec-wms-client-download).
-:::
-
-### Step 5: Configure CompuTec WMS Client
-
-Connect the **CompuTec WMS Client** to the **CompuTec WMS Server** and configure the required client settings.
-
-:::note[info]
-For detailed instructions, see [Configure CompuTec WMS Client](/docs/wms/administrator-guide/installation/wms-client/configuration).
-:::
-
-  </TabItem>
-
-  <TabItem value="3.0" label="CompuTec WMS 3.0 Plugin" default>
-
-## Install CompuTec WMS 3.0
-
 CompuTec WMS 3.0 uses **CompuTec AppEngine** for its plugin-based components.
 
-### Before you start
+## Before you start
 
-Before start:
+Before you start, make sure:
 
-- Review the [CompuTec WMS requirements](/docs/wms/administrator-guide/installation/requirements)
-- Make sure **CompuTec AppEngine** is installed and configured. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/installation)
-- Make sure you have access to the **CompuTec AppEngine Administration Panel**.
-- Make sure at least one CompuTec AppEngine instance is configured and active.
-- Make sure you have the required SAP Business One and system administrator permissions.
+- You have reviewed the [CompuTec WMS requirements](/docs/wms/administrator-guide/installation/requirements)
+- **CompuTec AppEngine** is installed and configured. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/installation)
+- You have access to the **CompuTec AppEngine Administration Panel**.
+- At least one **CompuTec AppEngine instance** is configured and active.
+- You have the required **SAP Business One and system administrator permissions**.
 
 If you use **CompuTec ProcessForce**, additional components may be required. See the relevant installation instructions before continuing.
 
-### Step 1: Install the CompuTec WMS 3.0 Plugin
+## Step 1: Install the CompuTec WMS 3.0 Plugin
 
 To install and activate a CompuTec AppEngine WMS 3.0 plugin, follow these steps:
 
@@ -174,7 +110,7 @@ You don’t need to manage dependencies manually. During the installation, the s
 This allows you to continue with the setup without additional configuration steps.
 :::
 
-### Step 2: Activate the WMS background processing job
+## Step 2: Activate the WMS background processing job
 
 After installing and activating the CompuTec WMS 3.0 Plugin, activate the required **WMS background processing job** in CompuTec AppEngine.
 
@@ -202,7 +138,7 @@ After installing and activating the CompuTec WMS 3.0 Plugin, activate the requir
 This step applies to **CompuTec WMS 3.0** only.
 :::
 
-### Step 3: Download and install CompuTec WMS Server
+## Step 3: Download and install CompuTec WMS Server
 
 To download and install **CompuTec WMS Server**, follow these steps:
 
@@ -224,7 +160,7 @@ To download and install **CompuTec WMS Server**, follow these steps:
     For detailed instructions, see [WMS Server Installation and Configuration Guide](/docs/wms/administrator-guide/installation/wms-server/overview).
     :::
 
-### Step 4: Install CompuTec ProcessForce API, if ProcessForce is installed
+## Step 4: Install CompuTec ProcessForce API, if ProcessForce is installed
 
 If **CompuTec ProcessForce** is installed in the SAP Business One environment, you must also install the **CompuTec ProcessForce API Plugin**.
 
@@ -248,7 +184,7 @@ CompuTec WMS detects that ProcessForce is installed and requires the **ProcessFo
 If CompuTec ProcessForce is not installed in your environment, you can skip this step.
 :::
 
-### Step 5: Configure CompuTec WMS licensing
+## Step 5: Configure CompuTec WMS licensing
 
 Configure the required **CompuTec WMS licenses** and assign them according to your environment.
 
@@ -264,7 +200,7 @@ Download and install **CompuTec WMS Client** on the devices that will be used fo
 For detailed instructions, see [Download CompuTec WMS Client](/docs/wms/administrator-guide/installation/wms-client/computec-wms-client-download).
 :::
 
-### Step 7: Configure CompuTec WMS Client
+## Step 7: Configure CompuTec WMS Client
 
 Connect the **WMS Client** to the **WMS Server** and configure the required client settings.
 
@@ -272,35 +208,7 @@ Connect the **WMS Client** to the **WMS Server** and configure the required clie
 For detailed instructions, see [Configure CompuTec WMS Client](/docs/wms/administrator-guide/installation/wms-client/configuration).
 :::
 
-### Important Changes in CompuTec WMS 3.0
-
-If you are **upgrading from CompuTec WMS 2.0 to 3.0**, be aware of several changes to the installation and configuration process:
-
-- CompuTec WMS 3.0 uses CompuTec AppEngine for plugin installation and management.
-- Only databases configured in CompuTec AppEngine are available to CompuTec WMS Server.
-
-    ![Data Config](./media/overview/data-config.png)
-
-    ![Database Name](./media/overview/database-name.png)
-
-- WMS plugin components and their dependencies are managed through CompuTec AppEngine.
-- WMS background processing jobs must be activated in CompuTec AppEngine.
-- The WMS Server installer is available from the installed WMS Plugin in the CompuTec AppEngine Administration Panel.
-- In CompuTec WMS CLient, database selection requires entering a username and password first.
-
-    ![Database](./media/overview/database.png)
-
-- In CompuTec WMS Server, after selecting CompuTec WMS Server in the CompuTec Service Manager, provide a username and password.
-
-    ![WMS Server](./media/overview/service-manager.webp)
-
-- Installation of CompuTec WMS objects has now been moved to CompuTec AppEngine under CompuTec WMS.BusinessLogic.
-
-:::info[Upgrading from WMS 2.0?]
-If you have previously installed or administered **CompuTec WMS 2.0**, review these changes before configuring WMS 3.0. They describe differences in the installation and configuration process that may affect an existing WMS environment.
-:::
-
-### Validations
+## Validations
 
     To ensure a seamless and error-free experience with CompuTec WMS, verify the following during installation and configuration:
 
@@ -324,9 +232,6 @@ If you have previously installed or administered **CompuTec WMS 2.0**, review th
 
     ![WMS Business Logic](./media/overview/wms-business-logic.png)
 
-  </TabItem>
-</Tabs>
-
 ## Additional Configuration
 
 Depending on your environment and warehouse processes, additional configuration may be required, such as:
@@ -338,3 +243,31 @@ Depending on your environment and warehouse processes, additional configuration 
 - Company-specific WMS settings
 
 For company-specific application settings, see [Custom Configuration](/docs/wms/administrator-guide/custom-configuration/overview).
+
+## Important Changes in CompuTec WMS 3.0
+
+:::info[Upgrading from WMS 2.0?]
+If you have previously installed or administered **CompuTec WMS 2.0**, review these changes before configuring WMS 3.0. They describe differences in the installation and configuration process that may affect an existing WMS environment.
+:::
+
+If you are **upgrading from CompuTec WMS 2.0 to 3.0**, be aware of several changes to the installation and configuration process:
+
+- **CompuTec WMS 3.0** uses **CompuTec AppEngine** for plugin installation and management.
+- Only databases configured in **CompuTec AppEngine** are available to **CompuTec WMS Server**.
+
+    ![Data Config](./media/overview/data-config.png)
+
+    ![Database Name](./media/overview/database-name.png)
+
+- WMS plugin components and their dependencies are managed through **CompuTec AppEngine**.
+- WMS background processing jobs must be activated in **CompuTec AppEngine**.
+- The WMS Server installer is available from the installed WMS Plugin in the **CompuTec AppEngine Administration Panel**.
+- In **CompuTec WMS Client**, database selection requires entering a username and password first.
+
+    ![Database](./media/overview/database.png)
+
+- In **CompuTec WMS Server**, after selecting **CompuTec WMS Server** in the **CompuTec Service Manager**, provide a username and password.
+
+    ![WMS Server](./media/overview/service-manager.webp)
+
+- Installation of **CompuTec WMS** objects has now been moved to **CompuTec AppEngine** under **CompuTec WMS.BusinessLogic**.

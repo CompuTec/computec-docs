@@ -5,12 +5,12 @@ toc_max_heading_level: 2
 
 # CompuTec WMS 2.0 Release Notes
 
-:::info
-The release notes for CompuTec WMS 3.0 are available after clicking [this link](/docs/wms/2.0/releases/wms-plugin).
-:::
+:::info[CompuTec WMS 2.0]
+You are viewing the release notes for **CompuTec WMS 2.0**.
 
-:::info
-The latest CompuTec WMS 2.0 Installer is available to download from [this link](/docs/wms/2.0/releases/download).
+- For the **CompuTec WMS 3.0 Release Notes**, see [CompuTec WMS 3.0 Release Notes](/docs/wms/releases/wms-plugin).
+- To download the latest **CompuTec WMS 2.0 Installer**, see [CompuTec WMS 2.0 Downloads](/docs/wms/2.0/releases/download).
+
 :::
 
 ## CompuTec WMS 2.10.23 R6
