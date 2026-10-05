@@ -183,7 +183,7 @@ This option is useful when:
 
 To install **WMS Settings** only, follow these steps:
 
-1. After downloading and running [**the installation file**](../../../releases/download.md), click **Next** in the setup window.
+1. After downloading and running [**the installation file**](/wms_versioned_docs/version-2.0/releases/download), click **Next** in the setup window.
 
     ![Install](../wms-server/media/wms-server-install.png)
 
