@@ -7,7 +7,7 @@ sidebar_position: 1
 This document provides a step-by-step guide for installing and configuring the CompuTec WMS Server and (from version 3.2602 Core) the WMS Settings module only, along with the required system environment.
 
 :::caution[important]
-    Please ensure all system [requirements](../../installation/requirements.md) are met before starting the installation process.
+    Please ensure all system [requirements](/docs/wms/administrator-guide/installation/requirements) are met before starting the installation process.
 :::
 
 ## CompuTec WMS Installation Requirements
@@ -16,7 +16,7 @@ To use the CompuTec WMS desktop version, you must install both the server and cl
 
 ### Before you start
 
-- Download and run the **WMS Server installation file**. You can find it after clicking [this link](../../../releases/download.md).
+- Download and run the **WMS Server installation file**. You can find it after clicking [this link](/wms_versioned_docs/version-2.0/releases/download).
 
 :::info
 If the **CompuTec WMS Server** is already installed on this computer, you can access the setup by running the **CompuTecWMSServer.msi** file. This allows you to change, repair, or remove the installation.
@@ -26,34 +26,31 @@ If the **CompuTec WMS Server** is already installed on this computer, you can ac
 
 To install **CompuTec WMS Server**, follow these steps:
 
-1. Download the **CompuTec WMS Server installation file** for your WMS version:
-
-   - **CompuTec WMS 2.0:** Download the WMS Server installation file from [**Downloads**](/docs/wms/releases/download).
-
-   - **CompuTec WMS 3.0 Plugin:** In the **CompuTec AppEngine Administration Panel**, go to **Plugins > Downloaded**, open the installed **WMS.Plugin**, and click **Download WMS Server**.
+1. In the **CompuTec AppEngine Administration Panel**, go to **Plugins > Downloaded**.
+2. Open the installed **WMS.Plugin**, and click **Download WMS Server**.
     ![alt text](media/wms-serv-instal2.png)
 
-2. Run the file and click **Next** in the setup window.
+3. Run the file and click **Next** in the setup window.
 
     ![Install](../wms-server/media/wms-server-install.png)
 
-3. Choose the setup type. You can choose **Typical**, **Custom** or **Complete** installation type, and click **Next**.
+4. Choose the setup type. You can choose **Typical**, **Custom** or **Complete** installation type, and click **Next**.
 
     ![Install Close](../wms-server/media/wms-server0choose-setup.png)
 
-4. An installation progress screen will appear, followed by a system message confirming successful setup.
+5. An installation progress screen will appear, followed by a system message confirming successful setup.
 
-5. Click **Finish** to exit the installer.
+6. Click **Finish** to exit the installer.
 
     ![CompuTec WMS Server](./media/wms-server-finish-installation.png)
 
-6. From the Windows Start menu, open "CompuTec Service Manager". The CT icon will appear in the system tray.
+7. From the Windows Start menu, open "CompuTec Service Manager". The CT icon will appear in the system tray.
 
-7. In the Service Manager, select CompuTec WMS Server from the service dropdown.
+8. In the Service Manager, select CompuTec WMS Server from the service dropdown.
 
     ![alt text](media/download.webp)
 
-8. Click **Settings** to open the CompuTec WMS Settings screen. Alternatively, access this screen from the Start Menu.
+9. Click **Settings** to open the CompuTec WMS Settings screen. Alternatively, access this screen from the Start Menu.
 
     ![CompuTec WMS Settings](./media/wms-server-place.png)
 
@@ -61,7 +58,7 @@ To install **CompuTec WMS Server**, follow these steps:
        To access **WMS Settings** from the **Start Menu**, run it **as Administrator**. Otherwise, saving changes may result in an error.
     :::
 
-9. Enter the required details:
+10. Enter the required details:
 
     ![CompuTec WMS - All Settings](./media/wms-all-settings.png)
     <details>
@@ -110,9 +107,9 @@ To install **CompuTec WMS Server**, follow these steps:
     - **SAP Multi-Tenant**: Check this option to operate with the SAP Multi-Tenant option. After checking the option, click Register Servers. In the new form, click the last (empty) row, enter the server's IP address in Multi-Tenant, check its checkbox, and click Save.
     </div>
     </details>
-10. Click **Update** to apply changes. The service will start, and the system will be ready for use.
+11. Click **Update** to apply changes. The service will start, and the system will be ready for use.
 
-11. You've successfully installed **CompuTec WMS Server**.
+12. You've successfully installed **CompuTec WMS Server**.
 
 ## Configure WMS Server
 
