@@ -8,7 +8,7 @@ declare global {
   }
 }
 
-const MEASUREMENT_ID = "G-K8LGYW3WB4";
+const MEASUREMENT_ID = "G-RN8XXN2E6V";
 
 function gtag(...args: any[]) {
   window.dataLayer.push(arguments);

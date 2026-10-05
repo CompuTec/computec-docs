@@ -36,8 +36,21 @@ export default (production?: boolean) => ([
     {
         label: "WMS",
         pluginId: "wms",
-        currentVersion: "2.0",
+        currentVersion: "3.0",
         includeCurrentVersion: true,
+        lastVersion: "current",
+        version: {
+            current: {
+                label: "3.0",
+                badge: true,
+                banner: "none"
+            },
+            "2.0": {
+                label: "2.0",
+                badge: true,
+                banner: "none"
+            }
+        }
     },
     {
         label: "Labels",

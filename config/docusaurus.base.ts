@@ -68,7 +68,7 @@ export default async function createBaseConfigAsync(
 
     scripts: [
       {
-        src: "https://www.googletagmanager.com/gtag/js?id=G-K8LGYW3WB4",
+        src: "https://www.googletagmanager.com/gtag/js?id=G-RN8XXN2E6V",
         async: true,
       },
     ],
