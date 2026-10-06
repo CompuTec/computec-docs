@@ -4,9 +4,56 @@ toc_min_heading_level: 2
 toc_max_heading_level: 2
 ---
 
-# Requirements
+# System Requirements
 
-To ensure CompuTec WMS functions properly, certain requirements must be met. Below are the prerequisites and setup steps for optimal performance.
+**CompuTec WMS 3.0 Plugin** is a certified extension built on the **CompuTec AppEngine framework**. It follows the same rules and configuration standards as all CompuTec AppEngine plugins.
+
+This section describes the minimum system requirements needed for CompuTec WMS 3.0 Plugin to run correctly.
+
+## Software requirements
+
+### SAP Business One
+
+    - **Minimum supported version:** 10.0 FP 2502 (or higher)
+    - **SAP Business One Web Client**: Must be installed and properly configured.
+
+### CompuTec ProcessForce License Requirements
+
+When using CompuTec ProcessForce, the SAP Business One user must have a CompuTec ProcessForce license matching their SAP Business One license (e.g., Limited Logistics or Indirect Access for both SAP Business One and CompuTec ProcessForce).
+
+### Unique Serial Numbers in SAP Business One General Settings
+
+To prevent duplicate serial numbers, set the **Serial Number** option in **Unique Serial Numbers** under I**nventory** tab in **SAP Business One General Settings**.
+
+    ![General Settings](./media/general-settings.png)
+
+### CompuTec AppEngine
+
+    - Download and install the **official release package** from the [**Download**](/docs/appengine/releases/appengine/download) section of our guide. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/installation)
+
+## Hardware requirements
+
+    :::warning[important]
+    For detailed **server and client hardware requirements**, refer to the official [**CompuTec AppEngine documentation**](/docs/appengine/administrators-guide/requirements).
+    :::
+
+## Network and security requirements
+
+### Local connectivity
+
+    - CompuTec WMS 3.0 Plugin communicates with the CompuTec AppEngine service over **HTTPS**.
+
+### Outbound access
+
+    - Both the **SAP Business One Web Client endpoint** and **CompuTec AppEngine** must be reachable from the client environment.
+
+### Security
+
+    - Authorization is seamless. After signing in to the SAP Business One Web Client, CompuTec WMS 3.0 Plugin uses the same active session for authentication and authorization.
+
+:::note[info]
+For detailed information on **CompuTec AppEngine** installation and configuration, read the official [CompuTec AppEngine Installation Guide](/docs/appengine/administrators-guide/configuration-and-administration/installation).
+:::
 
 :::warning
     The CompuTec WMS Server should not be installed on an RDP server or any server that hosts other applications accessing the SAP Business One DI API.
@@ -14,48 +61,7 @@ To ensure CompuTec WMS functions properly, certain requirements must be met. Bel
     Since the DI API is single-threaded, simultaneous access by multiple applications can lead to instability. For instance, the SAP Business One desktop client is one such application that uses the DI API. Therefore, it is strongly recommended to avoid installing the CompuTec WMS Server on the same machine as the SAP Business One desktop client.
 :::
 
----
-
-## .NET Framework
-
-CompuTec WMS requires a minimum of .NET Framework version 4.7. You can verify your .NET Framework version by running this command in Command Prompt:
-
-1. Type in the following command in Command Prompt from Windows applications:
-
-    ```text
-    reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\full" /v version
-    ```
-
-        ![.Net version](./media/dotnet-framework-01.png)
-
-    and click enter.
-
-2. The result will show the .NET Framework version:
-
-    ![Result](./media/dotnet-framework.png)
-
-For best results, update to the latest version of .NET Framework using Windows Update or download the installer directly from Microsoft:
-
-- [Microsoft .NET Framework 4.7 (Web Installer)](https://support.microsoft.com/en-us/servicing/dotnetframework/2017/05/the-net-framework-4-7-web-installer-for-windows)
-- [Microsoft .NET Framework 4.7 (Offline Installer)](https://support.microsoft.com/en-us/servicing/dotnetframework/2017/06/the-net-framework-4-7-offline-installer-for-windows)
-
-## SAP Business One User
-
-When using CompuTec WMS with an SAP Business One user, log in to SAP Business One to accept or decline the 'SAP Business One Improvement Programme' message prompt.
-
-    ![obtn](./media/prerequisites/sap-message.png)
-
-### CompuTec ProcessForce License Requirements
-
-When using CompuTec ProcessForce, the SAP Business One user must have a CompuTec ProcessForce license matching their SAP Business One license (e.g., Limited Logistics or Indirect Access for both SAP Business One and CompuTec ProcessForce).
-
-## Unique Serial Numbers in SAP Business One General Settings
-
-To prevent duplicate serial numbers, set the “Serial Number” option in "Unique Serial Numbers" under Inventory tab in SAP Business One General Settings.
-
-    ![General Settings](./media/general-settings.png)
-
-## Firewall Configuration
+### Firewall Configuration
 
 Create an inbound rule in Windows Firewall for the required port to ensure CompuTec WMS Server functionality.
 
@@ -110,39 +116,17 @@ CompuTec WMS supports all database versions compatible with the currently suppor
 
 ## CompuTec ProcessForce API
 
-If CompuTec ProcessForce is installed, CompuTec WMS requires CompuTec ProcessForce API to work correctly. CompuTec ProcessForce API has to be in the exact version as CompuTec ProcessForce installed on the database.
-
-## Preparing the Environment: Installation Order
-
-:::danger
-    Make sure to follow the installation order below precisely, as installing in a different order may cause issues with CompuTec WMS operation.
-:::
-
-### For SQL Environments
-
-1. Microsoft ODBC Driver
-2. SAP Business One DI API
-3. CompuTec ProcessForce & CompuTec ProcessForce API (optional)
-4. CompuTec WMS Server
-5. CompuTec WMS Client
-
-### For HANA Environments
-
-1. HANA ODBC Driver
-2. SAP Business One DI API
-3. CompuTec ProcessForce & CompuTec ProcessForce API (optional)
-4. CompuTec WMS Server
-5. CompuTec WMS Client
+If CompuTec ProcessForce is installed, CompuTec WMS requires CompuTec ProcessForce API to work correctly. CompuTec ProcessForce API has to be in the exact version as CompuTec ProcessForce installed on the database. [Read more](/docs/wms/administrator-guide/installation/overview)
 
 ## Upgrade
 
-:::caution
-Before installing CompuTec WMS 2.0, manually uninstall the previous CompuTec WMS Server from Programs and Features.
+:::warning[important]
+Before installing CompuTec WMS 3.0, manually uninstall the previous CompuTec WMS Server from Programs and Features.
 :::
 
 ### Transferring Custom Configurations and Server Settings
 
-When upgrading to version 2.0 from any previous version, you need to manually transfer the Custom Config and Server Settings. To do this, follow the below steps:
+When upgrading to version 3.0 from any previous version, you need to manually transfer the Custom Config and Server Settings. To do this, follow the below steps:
 
 1. Locate your previous settings in the default directory:
 
@@ -165,5 +149,3 @@ When upgrading to version 2.0 from any previous version, you need to manually tr
 4. Repeat these steps for "Custom Config" options to ensure all settings are correctly transferred.
 
     ![Custom Change](./media/custom-change.webp)
-
----
