@@ -21,6 +21,14 @@ This section describes the minimum system requirements needed for CompuTec WMS 3
 
 When using CompuTec ProcessForce, the SAP Business One user must have a CompuTec ProcessForce license matching their SAP Business One license (e.g., Limited Logistics or Indirect Access for both SAP Business One and CompuTec ProcessForce).
 
+### CompuTec ProcessForce API
+
+If **CompuTec ProcessForce** is installed, CompuTec WMS requires **CompuTec ProcessForce API** to work correctly. [Read more](/docs/wms/administrator-guide/installation/overview#step-4-install-computec-processforce-api-if-processforce-is-installed)
+
+    :::info[note]
+    **CompuTec ProcessForce API** has to be in the exact version as **CompuTec ProcessForce** installed on the database.
+    :::
+
 ### Unique Serial Numbers in SAP Business One General Settings
 
 To prevent duplicate serial numbers, set the **Serial Number** option in **Unique Serial Numbers** under I**nventory** tab in **SAP Business One General Settings**.
@@ -29,7 +37,11 @@ To prevent duplicate serial numbers, set the **Serial Number** option in **Uniqu
 
 ### CompuTec AppEngine
 
-    - Download and install the **official release package** from the [**Download**](/docs/appengine/releases/appengine/download) section of our guide. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/installation)
+Download and install the **official release package** from the [**Download**](/docs/appengine/releases/appengine/download) section of our guide. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/installation)
+
+    :::note[info]
+    For detailed information on **CompuTec AppEngine** installation and configuration, read the official [CompuTec AppEngine Installation Guide](/docs/appengine/administrators-guide/configuration-and-administration/installation).
+    :::
 
 ## Hardware requirements
 
@@ -51,9 +63,7 @@ To prevent duplicate serial numbers, set the **Serial Number** option in **Uniqu
 
     - Authorization is seamless. After signing in to the SAP Business One Web Client, CompuTec WMS 3.0 Plugin uses the same active session for authentication and authorization.
 
-:::note[info]
-For detailed information on **CompuTec AppEngine** installation and configuration, read the official [CompuTec AppEngine Installation Guide](/docs/appengine/administrators-guide/configuration-and-administration/installation).
-:::
+## CompuTec WMS Server requirements
 
 :::warning
     The CompuTec WMS Server should not be installed on an RDP server or any server that hosts other applications accessing the SAP Business One DI API.
@@ -113,10 +123,6 @@ CompuTec WMS supports all database versions compatible with the currently suppor
 - Microsoft SQL Server 2019
 - Microsoft SQL Server 2017
 - Microsoft SQL Server 2016
-
-## CompuTec ProcessForce API
-
-If CompuTec ProcessForce is installed, CompuTec WMS requires CompuTec ProcessForce API to work correctly. CompuTec ProcessForce API has to be in the exact version as CompuTec ProcessForce installed on the database. [Read more](/docs/wms/administrator-guide/installation/overview)
 
 ## Upgrade
 
