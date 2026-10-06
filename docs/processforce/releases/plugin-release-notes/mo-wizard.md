@@ -6,6 +6,19 @@ sidebar_position: 11
 
 Below are the release notes for CompuTec Planning & Bottleneck Scheduling (MO Wizard) Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec MO Wizard 3.2610.1
+
+**Release Date: 6 October 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Improved | Planning Scenarios | Improved **scenario loading and refresh behavior**, so planning data is updated consistently when you open, refresh, or switch between scenarios. |
+| Fixed | Add Positions | **Add Positions** now shows only **Sales Orders**, **Sales Quotations**, and **Forecasts** containing items that can be used to create Manufacturing Orders, making it easier to select valid source documents. |
+| Fixed | Planning Scenarios | Proposed documents and Manufacturing Orders are now reloaded when you reopen a scenario or change the selection, preventing data from a previously opened scenario from remaining on screen. |
+| Fixed | Add Job | The **Add Job** dialog now retains a job name entered while the dialog is loading. If its configuration cannot be loaded, you also receive an error message instead of the dialog closing without explanation. |
+| Fixed | MRP Recommendations | Filters on the **MRP Recommendation** tab now work independently, so your filter selections no longer affect other source tabs. |
+| Fixed | Availability | The **availability status indicator** now reflects the correct availability value, providing more reliable information when reviewing planning data. |
+
 ## CompuTec MO Wizard 3.2607.1
 
 **Release Date: 30 July 2026**

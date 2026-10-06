@@ -6,6 +6,17 @@ sidebar_position: 12
 
 Below are the release notes for CompuTec Material Requirements Planning (MRP) Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec MRP 3.2610.3
+
+**Release Date: 6 October 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | MRP Scenarios | You can now archive **MRP scenarios** that contain saved order recommendations, keeping completed or no longer needed scenarios without losing their planning data. Archived scenarios are hidden from the default list and available from the dedicated **Archived** tab or filter, helping you focus on active scenarios. When you copy an archived scenario, the new scenario is created as active. **Note**: This functionality requires the corresponding ProcessForce archive API. |
+| Improved | Inventory Data | Warehouse columns on the **Inventory Data** tab now adjust their width to the displayed content, making warehouse information easier to read. |
+| Fixed | Web Client | Fixed the `Installation of WebClient Extension Package failed` error that could occur when installing SAP Business One Web Client extensions with the ProcessForce and MRP plugins. |
+| Fixed | Order Recommendations | **Item descriptions** are displayed again on order recommendation lines, making it easier to identify and review the items included in your planning results. |
+
 ## CompuTec MRP 3.2608.1
 
 **Release Date: 13 August 2026**
