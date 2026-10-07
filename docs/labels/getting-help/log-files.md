@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Log Files
 
-Use log files to investigate issues with CompuTec Labels and provide diagnostic information to CompuTec Support.
+Use log files to investigate issues with **CompuTec Labels** and provide diagnostic information to CompuTec Support.
 
 ## Service, manager, and installation logs
 
@@ -30,7 +30,7 @@ The `ProgramData` folder is hidden by default. You can open it by pasting the pa
 
 ## SAP Business One add-on logs
 
-The Label Printing SAP Business One add-on (`Label.Plugin.UI`) runs in the CompuTec.Start add-on host. By default, the host logs only errors. Enable detailed logging to record additional information when troubleshooting the add-on.
+The **CompuTec Label.Plugin.UI** runs in the **CompuTec.Start** add-on host. By default, the host logs only errors. Enable detailed logging to record additional information when troubleshooting the add-on.
 
 :::info[note]
 The following procedure applies to the current Windows user. It does not require administrator rights or changes to installed files.
