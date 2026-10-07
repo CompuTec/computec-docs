@@ -6,9 +6,13 @@ toc_max_heading_level: 2
 
 # System Requirements
 
-**CompuTec WMS 3.0 Plugin** is a certified extension built on the **CompuTec AppEngine framework**. It follows the same rules and configuration standards as all CompuTec AppEngine plugins.
+Before installing **CompuTec WMS 3.0 Plugin**, check the software, hardware, and network requirements below.
 
-This section describes the minimum system requirements needed for CompuTec WMS 3.0 Plugin to run correctly.
+**CompuTec WMS 3.0 Plugin** runs on **CompuTec AppEngine** and follows its configuration requirements.
+
+:::warning[Upgrading from an earlier version]
+**Before** installing **CompuTec WMS 3.0 Plugin**, manually uninstall the previous **CompuTec WMS Server** through **Windows Start** > **Apps** > **Installed Apps**.
+:::
 
 ## Software requirements
 
@@ -17,96 +21,24 @@ This section describes the minimum system requirements needed for CompuTec WMS 3
     - **Minimum supported version:** 10.0 FP 2502 (or higher)
     - **SAP Business One Web Client**: Must be installed and properly configured.
 
-### CompuTec ProcessForce License Requirements
-
-When using CompuTec ProcessForce, the SAP Business One user must have a CompuTec ProcessForce license matching their SAP Business One license (e.g., Limited Logistics or Indirect Access for both SAP Business One and CompuTec ProcessForce).
-
-### CompuTec ProcessForce API
-
-If **CompuTec ProcessForce** is installed, CompuTec WMS requires **CompuTec ProcessForce API** to work correctly. [Read more](/docs/wms/administrator-guide/installation/overview#step-4-install-computec-processforce-api-if-processforce-is-installed)
-
-    :::info[note]
-    **CompuTec ProcessForce API** has to be in the exact version as **CompuTec ProcessForce** installed on the database.
-    :::
-
 ### CompuTec AppEngine
 
-Download and install the **official release package** from the [**Download**](/docs/appengine/releases/appengine/download) section of our guide. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/installation)
+Download the official release package from the [CompuTec AppEngine download page](/docs/appengine/releases/appengine/download).
 
-    :::note[info]
-    For detailed information on **CompuTec AppEngine** installation and configuration, read the official [CompuTec AppEngine Installation Guide](/docs/appengine/administrators-guide/configuration-and-administration/installation).
-    :::
+For installation and configuration instructions, see the [CompuTec AppEngine Installation Guide](/docs/appengine/administrators-guide/configuration-and-administration/installation).
 
-## Hardware requirements
+### CompuTec ProcessForce
 
-    :::warning[important]
-    For detailed **server and client hardware requirements**, refer to the official [**CompuTec AppEngine documentation**](/docs/appengine/administrators-guide/requirements).
-    :::
+The following requirements apply only if CompuTec ProcessForce is installed in the company database:
 
-## Network and security requirements
+- **License:** The SAP Business One user must have a CompuTec ProcessForce license that matches their SAP Business One license type. For example, a user with a SAP Business One Limited Logistics license must also have a CompuTec ProcessForce Limited Logistics license.
+- **API:** Install CompuTec ProcessForce API. Its version must exactly match the version of CompuTec ProcessForce installed in the company database.
 
-### Local connectivity
+For instructions, see [Install CompuTec ProcessForce API](/docs/wms/administrator-guide/installation/overview#step-4-install-computec-processforce-api-if-processforce-is-installed).
 
-    - CompuTec WMS 3.0 Plugin communicates with the CompuTec AppEngine service over **HTTPS**.
+### Database servers
 
-### Outbound access
-
-    - Both the **SAP Business One Web Client endpoint** and **CompuTec AppEngine** must be reachable from the client environment.
-
-### Security
-
-    - Authorization is seamless. After signing in to the SAP Business One Web Client, CompuTec WMS 3.0 Plugin uses the same active session for authentication and authorization.
-
-## CompuTec WMS Server requirements
-
-:::warning
-    The CompuTec WMS Server should not be installed on an RDP server or any server that hosts other applications accessing the SAP Business One DI API.
-
-    Since the DI API is single-threaded, simultaneous access by multiple applications can lead to instability. For instance, the SAP Business One desktop client is one such application that uses the DI API. Therefore, it is strongly recommended to avoid installing the CompuTec WMS Server on the same machine as the SAP Business One desktop client.
-:::
-
-### Firewall Configuration
-
-Create an inbound rule in Windows Firewall for the required port to ensure CompuTec WMS Server functionality.
-
-<details>
-<summary>To get more information, see below.</summary>
-<div>
-    1. Open: Control Panel > Windows Defender Firewall:
-
-        ![Firewall](./media/control-panel.png)
-
-    2. Click Advanced settings:
-
-        ![Firewall - settings](./media/advanced-settings.png)
-    3. Select Inbound Rules and choose New Rule... in the "Actions" window - this runs New Inbound Rule Wizard:
-
-        ![Inbound rule](./media/inbound-rule.png)
-    4. Choose "Port" as the rule type:
-
-        ![Port](./media/port.png)
-    5. Choose "TCP" protocol and specify "31002" as the local port:
-
-        ![TCP](./media/protocol-port.png)
-    6. Choose the "Allow the connection" action:
-
-        ![Allow the connection](./media/action-allow-connection.png)
-    7. Choose all profiles:
-
-        ![All Profiles](./media/profiles.png)
-    8. Specify the rule name and click "Finish":
-
-        ![CompuTec License Server](./media/computec-wms.png)
-</div>
-</details>
-
-### Anti-malware Software
-
-Some anti-malware software may block the installation. In such cases, add an exception in the anti-malware software settings.
-
-## Supported Database Servers
-
-CompuTec WMS supports all database versions compatible with the currently supported version of SAP Business One by SAP, which is used together with CompuTec WMS. So, these databases are supported:
+CompuTec WMS supports the following database platforms, provided that the database version is supported by SAP for the SAP Business One version you use:
 
 - SAP HANA 2.0
 - Microsoft SQL Server 2022
@@ -114,8 +46,64 @@ CompuTec WMS supports all database versions compatible with the currently suppor
 - Microsoft SQL Server 2017
 - Microsoft SQL Server 2016
 
-## Upgrade
+## Hardware requirements
+
+For server and client hardware requirements, see [CompuTec AppEngine System Requirements](/docs/appengine/administrators-guide/requirements).
+
+## Network and authentication requirements
+
+The devices used to access CompuTec WMS 3.0 Plugin must be able to reach both:
+
+- The SAP Business One Web Client endpoint.
+- The CompuTec AppEngine service over HTTPS.
+
+After the user signs in to SAP Business One Web Client, CompuTec WMS 3.0 Plugin uses the same active session for authentication and authorization.
+
+## CompuTec WMS Server requirements
+
+### Server placement
 
 :::warning[important]
-Before installing CompuTec WMS 3.0, manually uninstall the previous CompuTec WMS Server from Programs and Features.
+Avoid installing CompuTec WMS Server on a Remote Desktop (RDP) server or a server that hosts other applications using the SAP Business One DI API, including the SAP Business One desktop client.
+
+Concurrent DI API use by these applications can cause instability.
 :::
+
+### Windows Firewall
+
+Allow inbound connections on **TCP port 31002** on the computer hosting CompuTec WMS Server.
+
+<details>
+<summary>Configure the Windows Firewall rule</summary>
+<div>
+    1. Open **Control Panel** > **Windows Defender Firewall**.
+
+        ![Firewall](./media/control-panel.png)
+
+    2. Click **Advanced settings**.
+
+        ![Firewall - settings](./media/advanced-settings.png)
+    3. Select **Inbound Rules** and choose **New Rule...** in the **Actions** window. This runs **New Inbound Rule Wizard**.
+
+        ![Inbound rule](./media/inbound-rule.png)
+    4. Choose **Port** as the rule type.
+
+        ![Port](./media/port.png)
+    5. Choose **TCP** protocol and specify `31002` as the local port.
+
+        ![TCP](./media/protocol-port.png)
+    6. Choose the **Allow the connection** action.
+
+        ![Allow the connection](./media/action-allow-connection.png)
+    7. Choose all profiles.
+
+        ![All Profiles](./media/profiles.png)
+    8.  Enter a descriptive rule name, such as **CompuTec WMS Server**, and click **Finish**.
+
+        ![CompuTec License Server](./media/computec-wms.png)
+</div>
+</details>
+
+### Anti-malware software
+
+If anti-malware software blocks the installation, add an exception for the CompuTec WMS Server installer in its settings.
