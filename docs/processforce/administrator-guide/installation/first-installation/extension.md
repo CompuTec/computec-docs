@@ -24,6 +24,7 @@ Before installing the plugins, make sure that:
 - Your environment meets the [**CompuTec ProcessForce System Requirements**](/docs/processforce/administrator-guide/installation/first-installation/extension).
 - [**CompuTec AppEngine**](/docs/appengine/administrators-guide/configuration-and-administration/installation)  is installed and configured.
 - [**CompuTec License Server**](/docs/processforce/administrator-guide/licensing/license-server/computec-license-server-installation) is installed.
+- If the old **CompuTec ProcessForce** extension is assigned to the SAP Business One company, remove it from that company before installing CompuTec ProcessForce 3.0.
 - Any custom code in the ``SP_TransactionNotification`` and ``SP_PostTransactionNotice`` stored procedures is temporarily disabled. Custom code in these procedures can break the upgrade process.
 - You increased the ``ConnectionTimeout`` and ``CommandTimeout`` values in **CompuTec AppEngine Administration Panel** before the first installation of the **CompuTec ProcessForce** plugins. [Read more](/docs/processforce/troubleshooting/general-functions#problem-computec-processforce-plugin-installation-stops-or-the-session-expires-during-the-first-installation)
 - In **SAP Business One**, the following options are unchecked under **SAP Business One** > **Administration** > **System Initialization** > **General Settings** > **Hide Functions** tab:
