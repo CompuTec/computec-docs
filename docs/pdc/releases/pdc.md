@@ -14,6 +14,19 @@ You can find all [download links](/docs/appengine/2.0/releases/plugins/pdc/downl
 However, we strongly recommend using **CompuTec PDC 4.0 Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec PDC 4.2610.1
+
+**Release Date: 7 October 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | User Sessions | **CompuTec PDC** can now automatically log users out at the end of a shift and close any time entries they left running, helping keep time records accurate without requiring users to close them manually. |
+| Improved | Attachments | You can now access **Item Master Data** attachments regardless of the selected item revision, so the documents you need remain available when working with revision-controlled items. |
+| Improved | Tile View | You can now sort tiles by **planned start date/time**, **planned end date/time**, and **priority**, making it easier to organize and find production tasks in the order you need. |
+| Improved | User Interface | Updated the **CompuTec PDC icon and logo** for better visibility on dark taskbars and in the information window. |
+| Fixed | User Interface | **Start/Stop** actions no longer open duplicate date dialogs when clicked several times in quick succession, preventing PDC from becoming unresponsive. |
+| Improved | Manufacturing Orders | **Manufacturing Order confirmation posting** now responds faster under multi-user load, reducing waiting time when multiple users are working in CompuTec PDC. |
+
 ## CompuTec PDC 4.2609.2
 
 **Release Date: 14 September 2026**
