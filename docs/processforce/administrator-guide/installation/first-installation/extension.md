@@ -79,7 +79,7 @@ To install the **CompuTec ProcessForce** plugins, follow these steps:
 
 ## Step 2: Install the CompuTec ProcessForce Gantt component
 
-After the installation, follow thses steps:
+After the installation, follow these steps:
 
 1. Log in to your **SAP Business One client**.
 2. The system will prompt you to install **CompuTec.ProcessForce.Gantt** on your local machine.

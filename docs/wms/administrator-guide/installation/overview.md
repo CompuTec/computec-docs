@@ -4,9 +4,7 @@ sidebar_position: 1
 
 # Install CompuTec WMS 3.0
 
-This guide provides an overview of the installation process for **CompuTec WMS 2.0** and **CompuTec WMS 3.0**.
-
-The installation process differs depending on the version you are using. Select your version below and complete the steps in the order shown.
+This guide explains how to set up **CompuTec WMS 3.0**, including plugin installation, server and client configuration, licensing, and user access.
 
 :::info[note]
 Please note that **CompuTec WMS 2.0** will be supported only **until the end of 2026**. After this time, WMS 2.0 will no longer receive regular support or maintenance updates.
@@ -44,13 +42,7 @@ To install and activate a CompuTec AppEngine WMS 3.0 plugin, follow these steps:
 
     ![go to store section](media/plugin-installation/plugin-install3.png)
 
-4. Find the **WMS.Plugin** in the Plugin Store.
-
-   The required **Business Logic** plugin is installed automatically as a dependency of **WMS.Plugin**. You do not need to install it separately.
-
-    :::info[note]
-    **Business Logic** plugins are typically installed automatically as dependencies when required by another plugin. You do not need to select or install them manually.
-    :::
+4. Install and activate `WMS.Plugin` in CompuTec AppEngine. The required `WMS.BusinessLogic` plugin is installed automatically as a dependency.
 
 5. Click **Get...** next to the plugin name on the list to install the latest plugin version.
 
@@ -88,7 +80,7 @@ To install and activate a CompuTec AppEngine WMS 3.0 plugin, follow these steps:
 
     ![after restart of appengine, click ok](media/plugin-installation/plugin-install19.png)
 
-14. The CompuTec WMS 3.0 plugin is now installed and ready to use.
+14. The CompuTec WMS 3.0 Plugin is now installed. Continue with the setup steps below.
 
     After successful installation:
 
@@ -98,17 +90,6 @@ To install and activate a CompuTec AppEngine WMS 3.0 plugin, follow these steps:
     - the plugin is available in the **CompuTec AppEngine Launchpad**
 
     ![you can find your plugin in computec appengine launchpad after installation](media/plugin-installation/plugin-install20.png)
-
-:::info[Note]
-
-You don’t need to manage dependencies manually. During the installation, the system automatically:
-
-- installs all required plugins
-- ensures compatible versions are used
-- includes any missing components
-
-This allows you to continue with the setup without additional configuration steps.
-:::
 
 ## Step 2: Activate the WMS background processing job
 
@@ -271,3 +252,86 @@ If you are **upgrading from CompuTec WMS 2.0 to 3.0**, be aware of several chang
     ![WMS Server](./media/overview/service-manager.webp)
 
 - Installation of **CompuTec WMS** objects has now been moved to **CompuTec AppEngine** under **CompuTec WMS.BusinessLogic**.
+
+## Quick start
+
+Follow these steps to set up CompuTec WMS 3.0 and prepare it for use.
+
+### Install the components
+
+1. Install **CompuTec License Server**.
+2. Install and activate `WMS.Plugin` and `WMS.BusinessLogic` in CompuTec AppEngine.
+3. Install **CompuTec WMS Server**.
+
+### Request and import a license
+
+1. Open **CompuTec Service Manager**.
+2. Select **CompuTec License Server** from the **Service** list.
+3. Click **PDC/WMS Licensing**.
+
+   ![PDC/WMS Licensing in CompuTec Service Manager](media/overview/wms-qs1.png)
+
+4. On the **Import** tab, click **Copy to Clipboard** to copy the terminal license key.
+
+   ![Copying the terminal license key](media/overview/wms-qs2.png)
+
+5. Create a license request in the [CompuTec Support Portal](https://support.computec.pl/). Include the following information:
+
+   - Full server name.
+   - Terminal license key.
+   - Required number of terminal licenses.
+   - Intended use, such as customer use or partner testing.
+
+6. After you receive the license file, return to the **Import** tab.
+7. Click **Browse** and select the license file.
+
+    ![clicking browse next to the license file location field](media/overview/wms-qs23.png)
+
+8. Click **Import**.
+
+### Add and activate users
+
+1. Open the **WMS Users** tab.
+2. Click **Add**.
+
+   ![Adding users on the WMS Users tab](media/overview/wms-qs3.png)
+
+3. Enter the CompuTec WMS user credentials and the associated SAP Business One user credentials.
+4. Select **Is Active** for the user.
+5. Click **Update**.
+6. Repeat these steps for each user.
+
+### Configure license assignment
+
+1. Open the **License Management** tab.
+2. Select **Assign available licenses for newly added terminal accounts automatically**.
+
+   Available licenses will be assigned automatically to new terminals.
+
+   ![Automatic terminal license assignment](media/overview/wms-qs4.png)
+
+3. Open the **Plugins** tab.
+4. Select **Used** for the CompuTec WMS Server entry.
+5. Click **Update**.
+
+   ![Assigning a license to CompuTec WMS Server](media/overview/wms-qs6.png)
+
+:::note
+The **CompuTec WMS Server** entry may appear only after the first attempt to log in to **CompuTec WMS Client**. If the entry is missing, attempt to log in, then return to the **Plugins** tab to assign the server license.
+:::
+
+### Enable users for a company
+
+1. Run **WMS Settings** as an administrator.
+2. Right-click the company and select **Users Settings**.
+3. Select **Enable** for each user who needs access to the company.
+4. Select a **Language** for each enabled user.
+
+   ![Enabling users and selecting their interface language](media/overview/wms-qs7.png)
+
+5. Click **Save** in the **User Settings** window.
+
+### Log in
+
+1. Open **CompuTec WMS Client**.
+2. Log in with the **CompuTec WMS user credentials**.
