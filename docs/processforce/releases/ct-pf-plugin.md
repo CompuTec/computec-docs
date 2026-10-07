@@ -11,6 +11,49 @@ You can find all download links and release notes for the latest available **Com
 However, we strongly recommend using **CompuTec ProcessForce Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec ProcessForce 3.2610.1
+
+**Release Date: 6 October 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | Pick Order | **Classification** from the Manufacturing Order is now copied to the Pick Order and carried through to the related **Goods Issue**, helping maintain consistent classification information throughout material issuing. |
+| Added | Scheduling Board | You can now enter a batch number directly in the **Scheduling Board** when creating Manufacturing Orders for batch-managed finished goods without a batch template. |
+| Added | Orderless Production | You can now enter the finished goods batch number manually in **Orderless Production** instead of requiring it to be generated from a batch template. The ProcessForce API also uses a batch number supplied in the request when no batch template is available. |
+| Added | Scheduling Board | You can now customize the **Scheduling Board** column layout and add **Manufacturing Order user-defined fields (UDFs)**, giving you more control over the information displayed during planning. |
+| Added | Test Protocols | You can now remove unwanted rows while creating **Test Protocols** using the **Delete Row** option in the context menu. |
+| Added | Manufacturing Orders | Manufacturing Orders created through **Orderless Production** now include a reference to their source Orderless Production document, making it easier to trace how the order was created. |
+| Improved | Item Details | **Business Partner** properties in **Item Details** now allow you to select from **both customers and suppliers**, instead of customers only. |
+| Improved | Batch Management | Improved **batch number generation for concurrent processes**, reducing locking when multiple batch numbers are generated at the same time. Generated numbers are not reused if a transaction is rolled back, so gaps in the sequence may occur. |
+| Improved | Pick Order / Pick Receipt | Improved the **batch and serial number selection windows** in **Pick Order** and **Pick Receipt** for smoother keyboard navigation and data entry. |
+| Improved | Bill of Materials | CompuTec ProcessForce now asks for confirmation before deleting a **Bill of Materials**, helping prevent accidental deletion. |
+| Improved | Authorization | Reorganized **ProcessForce authorizations** so **Ingredient Classification**, **Help Configurator**, **Resource Costing**, **QC Qualifications**, and **Counter Schemes** are located under permission groups that match their corresponding functions and menu locations. |
+| Fixed | Manufacturing Order Costing | Improved the accuracy and consistency of **Manufacturing Order planned costs**. Header and line costs now use the appropriate routing, warehouse, and cost category consistently, including when a Bill of Materials has no default routing or the company uses a cost category other than `000`. |
+| Fixed | Product Costing | Improved cost refresh and roll-up reliability. Missing rolled costs are now reported instead of being silently replaced with zero, obsolete cost rows are removed, and roll-up no longer fails when an item cost row has an empty routing code. |
+| Fixed | Manufacturing Orders | Changing the routing of a Manufacturing Order containing **phantom items** now retains the phantom operations, operation names, and bindings. Operation binding quantities are also calculated correctly when phantom components are distributed across multiple operations. |
+| Fixed | MRP | **Custom lead time rules** now take precedence over vendor lead times. If all applicable custom lead times are `0`, CompuTec ProcessForce uses the lead time from **Item Master Data** or **Item Details**. |
+| Fixed | MRP | MRP now generates **results and recommendations for raw materials of finished goods with multiple revisions**, improving material planning for revision-controlled products. |
+| Fixed | MRP | Creating Manufacturing Orders from **MRP Order Recommendations** now uses the correct numbering series instead of failing with a `Wrong series for this document type` error. Errors encountered when creating SAP Production Orders from recommendations also provide a more useful description of the actual problem. |
+| Fixed | MRP | When **Duplicate purchase documents for item vendors** is enabled, the preferred vendor percentage remains available and MRP no longer incorrectly reports a `0%` vendor split. |
+| Fixed | Scheduling | Fixed a `BackwardLessThanMinimalInterval` error that could prevent backward scheduling of Manufacturing Orders after upgrading CompuTec AppEngine and ProcessForce plugins. |
+| Fixed | Pick Order / Time Booking | **Project information from the Manufacturing Order** is now retained correctly in **Pick Orders** and **Time Bookings** when no project is specified at the component level. |
+| Fixed | Print Layouts | Corrected the built-in **Pick Order** and **Pick Receipt Crystal Reports**. The layouts now use the current CompuTec ProcessForce **data source on MS SQL Server**, while the **SAP HANA Pick Receipt** correctly displays Manufacturing Order, batch, expiry date, and issued quantity information. |
+| Fixed | Reporting | Report layouts added during a plugin upgrade are now assigned to the correct existing report type, preventing duplicate report types and ensuring the new layout is available from the relevant CompuTec ProcessForce form. |
+| Fixed | Quality Control | Improved **Quality Control reliability on SAP HANA**. QC Test Pools now load their counts, results, and member tests correctly, and QC Tests can be deleted when they are not referenced by another document. |
+| Fixed | Quality Control | Improved **NCMR deletion validation** so CompuTec ProcessForce correctly determines whether an **NCMR Transaction** can be deleted based on its actual document reference. |
+| Fixed | Quality Control | New **QC Test Pools** now select the correct numbering series based on the **Test Protocol** and transaction type. QC frequency counters on SAP HANA also store creation and update times correctly. |
+| Fixed | Ingredients | Improved **Ingredients master data validation** to prevent records that are still referenced from being deleted and to prevent duplicate **Classification** codes in **Ingredient Master Data** and **Item Ingredient Data**. |
+| Fixed | Ingredients | **Ingredient roll-up calculations** now correctly account for component quantity when calculating energy values. If the item quantity is zero, CompuTec ProcessForce displays a clear message instead of leaving the operation without feedback. |
+| Fixed | Manufacturing Orders | Changing the **Document Date** on a new Manufacturing Order now refreshes the numbering series for the appropriate warehouse branch instead of displaying series from all branches. |
+| Fixed | Manufacturing Orders | **Manufacturing Order synchronization errors** are now recorded correctly on SAP HANA, including errors with longer messages, making synchronization problems easier to diagnose. |
+| Fixed | Inventory Transactions | When rolling back a **Goods Receipt or Goods Issue**, CompuTec ProcessForce now uses the **Posting Date** and **Document Date** entered in the rollback dialog instead of the current date. |
+| Fixed | Item Management | **Mass Item Replace** now completes correctly and provides a summary of the items that were replaced instead of failing with an error. |
+| Fixed | General Settings | The **OK** and **Cancel** buttons remain accessible in **General Settings** when using larger font sizes or display scaling. |
+| Fixed | PDC | PDC now respects the **Block operation status change based on QC document** setting correctly, so time recording is not blocked when QC validation has not been configured. |
+| Fixed | ProcessForce API | `CreateAdjustment` requests no longer require `DocMemo` or `JrnlMemo`; both properties can be omitted when no memo is needed. |
+| Fixed | ProcessForce API | The published ProcessForce API NuGet package now contains the **correct version information**, preventing external plugins using `RegisterPlugin` from failing with a `PluginNotInitializedException`. |
+| Fixed | Batch Traceability | Batch transaction quantities now retain the correct decimal precision, providing more accurate quantities when reviewing batch traceability data. |
+
 ## CompuTec ProcessForce 3.2609.3
 
 **Release Date: 28 September 2026**
