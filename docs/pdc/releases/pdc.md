@@ -20,7 +20,7 @@ However, we strongly recommend using **CompuTec PDC 4.0 Plugin** together with *
 
 | Issue Type | Component | Release Note |
 | --- | --- | --- |
-| Added | User Sessions | **CompuTec PDC** can now automatically log users out at the end of a shift and close any time entries they left running, helping keep time records accurate without requiring users to close them manually. |
+| Added | User Sessions | When you **log out**, **close** CompuTec PDC, or **you are logged out automatically** after a period of inactivity, **CompuTec PDC now asks whether to stop all running work and setup tasks**, helping prevent time entries from being left running by mistake. |
 | Improved | Attachments | You can now access **Item Master Data** attachments regardless of the selected item revision, so the documents you need remain available when working with revision-controlled items. |
 | Improved | Tile View | You can now sort tiles by **planned start date/time**, **planned end date/time**, and **priority**, making it easier to organize and find production tasks in the order you need. |
 | Improved | User Interface | Updated the CompuTec PDC **icon** and **logo** for better visibility on dark taskbars and in the information window. |
