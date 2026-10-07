@@ -11,7 +11,7 @@ Before installing **CompuTec WMS 3.0 Plugin**, check the software, hardware, and
 **CompuTec WMS 3.0 Plugin** runs on **CompuTec AppEngine** and follows its configuration requirements.
 
 :::warning[Upgrading from an earlier version]
-**Before** installing **CompuTec WMS 3.0 Plugin**, manually uninstall the previous **CompuTec WMS Server** through **Windows Start** > **Apps** > **Installed Apps**.
+**Before installing CompuTec WMS 3.0 Plugin**, manually uninstall the previous **CompuTec WMS Server** through **Windows Start** > **Apps** > **Installed Apps**.
 :::
 
 ## Software requirements
