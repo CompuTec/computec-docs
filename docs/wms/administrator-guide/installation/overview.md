@@ -26,7 +26,9 @@ Before you start, make sure:
 
 If you use **CompuTec ProcessForce**, additional components may be required. See the relevant installation instructions before continuing.
 
-## Step 1: Install the CompuTec WMS 3.0 Plugin
+## Install CompuTec WMS 3.0
+
+### Step 1: Install the CompuTec WMS 3.0 Plugin
 
 To install and activate a CompuTec AppEngine WMS 3.0 plugin, follow these steps:
 
@@ -91,7 +93,7 @@ To install and activate a CompuTec AppEngine WMS 3.0 plugin, follow these steps:
 
     ![you can find your plugin in computec appengine launchpad after installation](media/plugin-installation/plugin-install20.png)
 
-## Step 2: Activate the WMS background processing job
+### Step 2: Activate the WMS background processing job
 
 After installing and activating the CompuTec WMS 3.0 Plugin, activate the required **WMS background processing job** in CompuTec AppEngine.
 
@@ -119,7 +121,7 @@ After installing and activating the CompuTec WMS 3.0 Plugin, activate the requir
 This step applies to **CompuTec WMS 3.0** only.
 :::
 
-## Step 3: Download and install CompuTec WMS Server
+### Step 3: Download and install CompuTec WMS Server
 
 To download and install **CompuTec WMS Server**, follow these steps:
 
@@ -141,7 +143,7 @@ To download and install **CompuTec WMS Server**, follow these steps:
     For detailed instructions, see [WMS Server Installation and Configuration Guide](/docs/wms/administrator-guide/installation/wms-server/overview).
     :::
 
-## Step 4: Install CompuTec ProcessForce API, if ProcessForce is installed
+### Step 4: Install CompuTec ProcessForce API, if ProcessForce is installed
 
 If **CompuTec ProcessForce** is installed in the SAP Business One environment, you must also install the **CompuTec ProcessForce API Plugin**.
 
@@ -165,7 +167,7 @@ CompuTec WMS detects that ProcessForce is installed and requires the **ProcessFo
 If CompuTec ProcessForce is not installed in your environment, you can skip this step.
 :::
 
-## Step 5: Configure CompuTec WMS licensing
+### Step 5: Configure CompuTec WMS licensing
 
 Configure the required **CompuTec WMS licenses** and assign them according to your environment.
 
@@ -173,7 +175,7 @@ Configure the required **CompuTec WMS licenses** and assign them according to yo
 For detailed instructions, see [WMS Licensing](/docs/wms/administrator-guide/installation/wms-licensing).
 :::
 
-## Step 6: Install CompuTec WMS Client
+### Step 6: Install CompuTec WMS Client
 
 Download and install **CompuTec WMS Client** on the devices that will be used for warehouse operations.
 
@@ -181,7 +183,7 @@ Download and install **CompuTec WMS Client** on the devices that will be used fo
 For detailed instructions, see [Download CompuTec WMS Client](/docs/wms/administrator-guide/installation/wms-client/computec-wms-client-download).
 :::
 
-## Step 7: Configure CompuTec WMS Client
+### Step 7: Configure CompuTec WMS Client
 
 Connect the **WMS Client** to the **WMS Server** and configure the required client settings.
 
@@ -189,7 +191,7 @@ Connect the **WMS Client** to the **WMS Server** and configure the required clie
 For detailed instructions, see [Configure CompuTec WMS Client](/docs/wms/administrator-guide/installation/wms-client/configuration).
 :::
 
-## Validations
+### Validations
 
     To ensure a seamless and error-free experience with CompuTec WMS, verify the following during installation and configuration:
 
@@ -213,7 +215,7 @@ For detailed instructions, see [Configure CompuTec WMS Client](/docs/wms/adminis
 
     ![WMS Business Logic](./media/overview/wms-business-logic.png)
 
-## Additional Configuration
+### Additional Configuration
 
 Depending on your environment and warehouse processes, additional configuration may be required, such as:
 
