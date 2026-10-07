@@ -10,13 +10,13 @@ New Stock Counting transactions have been available since the CompuTec WMS 2.10.
 
 ### CompuTec WMS database objects installation
 
-Click [here](../../../administrator-guide/installation/wms-server/overview.md) to find out more.
+Click [this link](../../../administrator-guide/installation/wms-server/overview.md) to find out more.
 
 ### CompuTec AppEngine plugin installation
 
-Click [here](/docs/appengine/2.0/releases/plugins/wms-stock-counting/download) to download the installation file.
+Click [this link](/docs/appengine/2.0/releases/plugins/wms-stock-counting/download) to download the installation file.
 
-Click [here](./plugin-installation.md) to find out more about the installation.
+Click [this link](./plugin-installation.md) to find out more about the installation.
 
 ### Stock Counting Document
 
@@ -44,7 +44,32 @@ Stock Counting: automatically choose Bin Location on Batch scanning – automati
 
 Mark updated rows as counted during Stock Counting – self-explanatory
 
-Hide In Warehouse Quantity Information – hides quantities on the Item lines (click [here](#information-on-the-item-lines) to learn more).
+Hide In Warehouse Quantity Information – hides quantities on the Item lines (click [this link](#information-on-the-item-lines) to learn more).
+
+### Multiple Counters
+
+CompuTec WMS supports **multiple counters** for **New Stock Counting**. You can configure this option only in an **Inventory Counting Request** in CompuTec AppEngine.
+
+To configure multiple counters, follow these steps:
+
+1. In **CompuTec AppEngine Launchpad**, go to **Warehouse Management System (WMS) Plugin** > **Stock Counting**.
+
+    ![alt text](../media/overview/multiple-count0.png)
+
+2. Add a new **Inventory Counting Request**.
+3. Select **Multiple counters**.
+
+    ![alt text](../media/overview/multiple-count1.png)
+
+4. Add the **SAP Business One users** linked to the CompuTec WMS users on the **Counters** tab.
+
+    ![alt text](../media/overview/multiple-count2.png)
+
+    :::info[note]
+    Only the CompuTec WMS users linked to the selected SAP Business One users can see the counting request in CompuTec WMS.
+    :::
+
+5. Save the settings.
 
 ## Usage
 
