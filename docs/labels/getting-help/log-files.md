@@ -14,7 +14,7 @@ These log files are stored in the following folder:
 C:\ProgramData\CompuTec\CT Label Printing\Logs
 ```
 
-![Log Files](media/log-files/labels-logs0.png)
+![File Explorer showing the CompuTec Labels log files in the Logs folder](media/log-files/labels-logs0.png)
 
 The file names identify the component:
 
@@ -25,12 +25,14 @@ The file names identify the component:
 | `WixSetup` | Installation |
 
 :::info
-The `ProgramData` folder is hidden by default. You can open it by pasting the path into the File Explorer address bar or the **Run** dialog (**Win+R**).
+The `ProgramData` folder is hidden by default. You can open it by pasting the path into the **File Explorer** address bar or the **Run** dialog (**Win+R**).
 :::
 
-## SAP Business One add-on logs
+## Detailed logging for the CompuTec Labels UI Plugin
 
-The **CompuTec Label.Plugin.UI** runs in the **CompuTec.Start** add-on host. By default, the host logs only errors. Enable detailed logging to record additional information when troubleshooting the add-on.
+The **CompuTec Labels UI Plugin** (`Label.Plugin.UI`) runs in the **SAP Business One desktop client** through **CompuTec.Start**.
+
+By default, CompuTec.Start logs only errors. Enable detailed logging to record plugin activity when troubleshooting an issue.
 
 :::info[note]
 The following procedure applies to the current Windows user. It does not require administrator rights or changes to installed files.
@@ -43,7 +45,7 @@ The following procedure applies to the current Windows user. It does not require
 1. Create a folder for the logging configuration, for example `C:\CompuTec\Logging`.
 2. Create a file named `ct_debug_logging.json` in this folder.
 
-    ![alt text](media/log-files/labels-logs1.png)
+    ![File Explorer showing the Logging folder and the new ct_debug_logging.json file](media/log-files/labels-logs1.png)
 
 3. Add the following content to the file:
 
@@ -81,13 +83,13 @@ The following procedure applies to the current Windows user. It does not require
 
 4. Save the file.
 
-    ![alt text](media/log-files/labels-logs2.png)
+    ![The ct_debug_logging.json file with the detailed logging configuration](media/log-files/labels-logs2.png)
 
 Keep the file in this location while detailed logging is enabled.
 
 #### Step 2: Set the environment variable
 
-1. Open Windows PowerShell.
+1. Open **Windows PowerShell**.
 2. Run the following command:
 
    ```powershell
@@ -98,15 +100,18 @@ Keep the file in this location while detailed logging is enabled.
 
 The command creates a persistent `CT_DEBUG` environment variable for the current Windows user.
 
-Alternatively, create the variable in Windows Settings:
+:::note[info]
+Alternatively, you can create the variable in **Windows Settings**:
 
-1. Search for **Edit environment variables for your account** in Windows Settings.
+1. Search for **Edit environment variables for your account** in **Windows Settings**.
 2. Open the matching result.
 3. Under **User variables**, click **New**.
 4. Enter `CT_DEBUG` in **Variable name**.
 5. Enter the full path to `ct_debug_logging.json` in **Variable value**.
 6. Click **OK** to save the variable.
 7. Click **OK** to close the environment variables window.
+
+:::
 
 #### Step 3: Restart SAP Business One
 
@@ -128,7 +133,7 @@ Restarting only the add-on is not enough. **CompuTec.Start** inherits environmen
    ```
 
     :::info
-    The `ProgramData` folder is hidden by default. You can open it by pasting the path into the File Explorer address bar or the **Run** dialog (**Win+R**).
+    The `ProgramData` folder is hidden by default. You can open it by pasting the path into the **File Explorer** address bar or the **Run** dialog (**Win+R**).
     :::
 
 4. Find the log file for the Windows user and the date when you reproduced the issue. The file name uses the following format:
@@ -174,11 +179,60 @@ If logging was enabled through a **CompuTec.Start** profile, ask your **CompuTec
 
 ### Configure logging centrally
 
-Administrators can enable detailed logging through a **CompuTec.Start profile** in the **CompuTec AppEngine** administration panel. This option is useful when logging is needed on multiple workstations or when a user cannot change their environment variables.
+Administrators can enable detailed logging for the **CompuTec Labels UI Plugin** through a **telemetry profile** in the **CompuTec AppEngine Administration Panel**. It does not require users to create a local configuration file or set the `CT_DEBUG` environment variable.
 
-Store the same JSON configuration in the profile and assign it to a specific user or the whole company.
+This option is useful when logging is needed on multiple workstations or when a user cannot change their environment variables.
 
-**CompuTec.Start** downloads the assigned profile each time it starts and applies it over the local configuration. No workstation configuration changes are required.
+#### Create a telemetry profile
+
+1. Open the **CompuTec AppEngine Administration Panel**.
+2. Go to **System** > **Telemetry Profiles**.
+
+    ![CompuTec AppEngine Administration Panel with System navigation expanded](media/log-files/labels-logs3.png)
+
+3. Click **Add**.
+
+    ![Telemetry Profiles page in the CompuTec Administration Panel, with the Add control highlighted by a blue arrow. The page includes a left navigation menu and a table with Name, Description, Content, and Action columns, showing OpenTelemetry_All and OpenTelemetry_logs profiles.](media/log-files/labels-logs4.png)
+
+4. Enter a name and description that identify the profile as a detailed logging configuration for the CompuTec Labels UI Plugin.
+5. Paste the JSON configuration from [**Create the configuration file**](/docs/labels/getting-help/log-files#step-1-create-the-configuration-file) into the profile content.
+
+    ![Telemetry profile form with the detailed logging configuration entered in the content field](media/log-files/labels-logs5.png)
+
+6. Click **Add** to save the profile.
+
+#### Assign the profile to a user
+
+1. Go to **Configuration**.
+2. Open the company for which you want to enable logging.
+
+    ![CompuTec AppEngine Configuration page showing the company to configure](media/log-files/labels-logs6.png)
+
+3. Open the **Telemetry Profiles** tab.
+4. Click **Assign profile**.
+
+    ![Company Telemetry Profiles tab with the Assign profile control](media/log-files/labels-logs7.png)
+
+5. Enter the user's name in **Username**.
+6. Click the edit icon under **Telemetry Profile**.
+
+    ![click the edit icon under the Telemetry Profile](media/log-files/labels-logs8.png)
+
+7. Select the profile you created.
+8. Click **Create Assignment**.
+
+#### Apply the configuration
+
+1. Close the SAP Business One desktop client completely.
+2. Start SAP Business One again.
+3. Reproduce the issue.
+4. Collect the log file as described in **Reproduce the issue and collect the log**.
+
+**CompuTec.Start** downloads the assigned profile each time it starts. Settings in this profile override matching settings in the local configuration, including the file referenced by `CT_DEBUG`.
+
+:::warning[important]
+Detailed logging can generate large files. Disable it in the assigned profile when troubleshooting is complete, then restart the SAP Business One client.
+:::
 
 ### Configuration priority
 
