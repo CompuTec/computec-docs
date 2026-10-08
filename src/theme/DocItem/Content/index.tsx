@@ -51,6 +51,22 @@ export default function ContentWrapper(props: Props): ReactNode {
           <p><b>Before starting your installation or upgrade process</b>, we strongly recommend reviewing the <a href="https://learn.computec.one/docs/appengine">CompuTec AppEngine 3.0</a> and <a href="https://learn.computec.one/docs/processforce/">CompuTec ProcessForce 3.0</a> documentation.</p>
         </Admonition>
       )}
+      {activePlugin.pluginId === "wms" && activeDocContext.activeVersion?.label === "3.0" && (
+        <Admonition type="info">
+          <p>You are viewing documentation for <b>CompuTec WMS 3.0</b>, which runs on <b>CompuTec AppEngine 3.0 (.NET 8)</b>.</p>
+          <p>If you use <b>CompuTec WMS 2.0</b>, see the <a href="https://learn.computec.one/docs/wms/2.0/">CompuTec WMS 2.0 documentation</a>.</p>
+          <p>When upgrading to <b>CompuTec WMS 3.0</b>, update all required CompuTec components together to ensure compatibility.</p>
+          <p>Before installing or upgrading, review the <a href="/docs/wms/administrator-guide/installation/overview">CompuTec WMS Installation Guide</a> and the system requirements.</p>
+        </Admonition>
+      )}
+      {activePlugin.pluginId === "wms" && activeDocContext.activeVersion?.label === "2.0" && (
+        <Admonition type="warning">
+          <p>You are viewing documentation for <b>CompuTec WMS 2.0</b>, which is supported until <b>December 31, 2026</b>. After this date, it will no longer receive regular support or maintenance updates.</p>
+          <p>We recommend upgrading to <b>CompuTec WMS 3.0</b>, which runs on <b>CompuTec AppEngine 3.0 (.NET 8)</b>.</p>
+          <p>When upgrading, update all required CompuTec components together to ensure compatibility.</p>
+          <p>Review the <a href="https://learn.computec.one/docs/wms/">CompuTec WMS 3.0 documentation</a> before starting the upgrade.</p>
+        </Admonition>
+      )}
       <Content {...props} />
     </>
   );
