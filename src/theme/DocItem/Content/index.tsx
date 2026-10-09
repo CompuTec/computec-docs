@@ -63,8 +63,7 @@ export default function ContentWrapper(props: Props): ReactNode {
         <Admonition type="warning">
           <p>You are viewing documentation for <b>CompuTec WMS 2.0</b>, which is supported until <b>December 31, 2026</b>. After this date, it will no longer receive regular support or maintenance updates.</p>
           <p>We recommend <a href="https://learn.computec.one/docs/wms/administrator-guide/installation/update-to-30">upgrading to <b>CompuTec WMS 3.0</b></a>, which runs on <b>CompuTec AppEngine 3.0 (.NET 8)</b>.</p>
-          <p>When upgrading, update all required CompuTec components together to ensure compatibility.</p>
-          <p>Review the <a href="https://learn.computec.one/docs/wms/">CompuTec WMS 3.0 documentation</a> before starting the upgrade.</p>
+          <p>When upgrading, update all required CompuTec components together to ensure compatibility. <a href="https://learn.computec.one/docs/wms/">Read more</a></p>
         </Admonition>
       )}
       <Content {...props} />
