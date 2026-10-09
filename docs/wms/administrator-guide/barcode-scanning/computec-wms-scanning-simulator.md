@@ -4,33 +4,36 @@ sidebar_position: 3
 
 # CompuTec WMS Scanning Simulator
 
-The CompuTec WMS Scanning Simulator is a straightforward yet invaluable tool designed to mimic the behavior of CompuTec WMS when scanning barcodes. It serves as an essential resource during the testing phase of CompuTec WMS, enabling users to simulate barcode scanning processes without needing access to the live system.
+Use the **CompuTec WMS Scanning Simulator** to test barcode scanning behavior without access to a live **CompuTec WMS** system. You can enter item names, single barcodes, or multi-part barcodes.
 
----
+The simulator supports **GS1** and **Odette** barcode standards. For more information, see [**Barcode Scanning**](../barcode-scanning/overview.md).
 
-## Download
+## Download and run the simulator
 
-You can easily download and run the CompuTec WMS Scanning Simulator on your system. It’s a standalone tool that requires no installation, allowing you to quickly start simulating barcode scans. Simply download the [CompuTec WMS Scanning Simulator](https://download.computec.one/software/wms/tools/WMS_Scanning_Simulator.exe) and launch it directly on your machine.
+The simulator is a standalone tool and does not require installation.
 
-## Usage
+1. Download the [**CompuTec WMS Scanning Simulator**](https://download.computec.one/software/wms/tools/ScanningSimulator/v_3.0.2.1/WMSScannerSimulator.exe).
+2. Run the downloaded file.
 
-- The CompuTec WMS Scanning Simulator is designed to be used by a single user at a time. It can be accessed through a remote desktop, although unlike CompuTec WMS, which supports multi-user simultaneous access, only one user can operate the simulator at once.
-- The simulator supports the barcode standards commonly used by CompuTec WMS, including GS1 and Odette. This allows for testing a wide range of barcode types, ensuring compatibility with your system. To know more about "Barcode Scanning", click [here](../barcode-scanning/overview.md).
-- You can scan an item by entering its name or barcode. The simulator also allows you to test multi-part barcodes.
+:::note
+Only one user can use the simulator at a time, including through Remote Desktop.
+:::
 
-    ![Item Name](./media/item-name-scan.png)
-- You can scan a single code or use a multi-part barcode by scanning each code in a separate line:
+## Test scanning
 
-    ![Multiple Elements](./media/multi-part.png)
+### Item name or single barcode
 
-## Resources
+Enter an item name or barcode in the simulator to simulate a scan.
 
-- **Example of Multi-part Codes**:
+![Item name entered in the CompuTec WMS Scanning Simulator](./media/item-name-scan.png)
 
-    To learn more, watch the video: [An example usage of multi-part codes](https://www.youtube.com/watch?v=yOKS1kHo3h0).
+### Multi-part barcode
 
-- **An example usage of single and multi-part codes in GS1 standard**:
+Enter each part of the barcode on a separate line to simulate scanning the parts one after another.
 
-    To learn more, watch the video: [An example usage of single and multi-part codes in GS1 standard](https://www.youtube.com/watch?v=utDZYiQYdoI).
+![Multi-part barcode entered on separate lines](./media/multi-part.png)
 
----
+## Video examples
+
+- [Scanning multi-part barcodes](https://www.youtube.com/watch?v=yOKS1kHo3h0)
+- [Scanning single and multi-part GS1 barcodes](https://www.youtube.com/watch?v=utDZYiQYdoI)
