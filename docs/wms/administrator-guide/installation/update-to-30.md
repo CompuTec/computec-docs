@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Upgrade from CompuTec WMS 2.0 to CompuTec WMS 3.0
+# Upgrade to CompuTec WMS 3.0
 
 This guide describes how to upgrade **from CompuTec WMS 2.0 to CompuTec WMS 3.0 Plugin**.
 
