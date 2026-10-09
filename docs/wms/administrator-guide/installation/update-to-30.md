@@ -6,9 +6,9 @@ sidebar_position: 3
 
 This guide describes how to upgrade **from CompuTec WMS 2.0 to CompuTec WMS 3.0 Plugin**.
 
-## Before you begin
+## Before you start
 
-Review the [system requirements](/docs/wms/administrator-guide/installation/requirements) and make sure that:
+Before you begin, review the [**CompuTec WMS 3.0 System Requirements**](/docs/wms/administrator-guide/installation/requirements) and make sure that:
 
 - **SAP Business One 10.0 FP 2502** or later is installed.
 - **SAP Business One Web Client** is installed and configured.
