@@ -6,7 +6,7 @@ sidebar_position: 5
 
 **Capable to Promise (CTP)** helps you check whether a sales order line can be delivered on the requested date. If the date cannot be met, it calculates when the item can be ready based on material availability, lead times, and safety buffers.
 
-Use CTP to review shortages, identify components that delay an order, and update the sales order line with the calculated ship date. Administrators set up the CTP scenario and background processing. Sales and planning teams then review individual order lines.
+Use CTP to review shortages, identify components that delay an order, and update the sales order line with the calculated ship date. Administrators set up the CTP scenario and background processing, sales and planning teams then review individual order lines.
 
 :::info
 This guide describes **CTP** in **CompuTec MRP Plugin**. The calculated date is shown as **CTP Static Date**.
