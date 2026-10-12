@@ -67,8 +67,6 @@ Before you begin, make sure that:
 - You can access the relevant CompuTec MRP pages and SAP Business One documents.
 - You have permission to update sales orders if you want to apply the calculated ship date.
 
-An administrator must [set up CTP](#set-up-ctp-functionality) before users can calculate delivery dates.
-
 :::warning[important]
 CTP uses the linked MRP scenario's planning settings and latest run. During setup, review the planning horizon, included inventory, demand, supply, and handling of expired stock, as these affect the results.
 :::
@@ -109,8 +107,12 @@ Complete this section as an administrator responsible for the company configurat
 7. Review the remaining scenario settings, including the planning horizon and document sources.
 8. Save the scenario.
 
-:::important
+:::warning[important]
 Add items and warehouses explicitly to the scenario's lists. Selecting **All Items** or **All Warehouses** alone does not populate the scope used by CTP.
+:::
+
+:::info[note]
+Before opening a CTP analysis, make sure the linked scenario includes the relevant items and warehouses and that the CTP scenario run has completed successfully.
 :::
 
 ### Step 2: Select the CTP scenario and company safety buffer
