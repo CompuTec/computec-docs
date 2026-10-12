@@ -155,7 +155,7 @@ CompuTec WMS detects that ProcessForce is installed and requires the **ProcessFo
 
     ![alt text](media/overview/pfapi-install1.png)
 
-3. Go to CompuTec.API Plugin **Description**, and click the link to download CompuTec ProcessForce API for WMS.
+3. Go to CompuTec.Processforce.API Plugin **Description**, and click the link to download **CompuTec ProcessForce API** for WMS.
 
     ![alt text](media/pfapiwms.png)
 
