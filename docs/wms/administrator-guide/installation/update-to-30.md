@@ -103,6 +103,30 @@ Check that:
 - A representative warehouse transaction can be completed and produces the expected document in SAP Business One.
 - Any custom settings or integrations work as expected.
 
+## Important Changes in CompuTec WMS 3.0
+
+If you are **upgrading from CompuTec WMS 2.0 to 3.0**, be aware of several changes to the installation and configuration process:
+
+- **CompuTec WMS 3.0** uses **CompuTec AppEngine** for plugin installation and management.
+- Only databases configured in **CompuTec AppEngine** are available to **CompuTec WMS Server**.
+
+    ![Data Config](./media/overview/data-config.png)
+
+    ![Database Name](./media/overview/database-name.png)
+
+- WMS plugin components and their dependencies are managed through **CompuTec AppEngine**.
+- WMS background processing jobs must be activated in **CompuTec AppEngine**.
+- The WMS Server installer is available from the installed WMS Plugin in the **CompuTec AppEngine Administration Panel**.
+- In **CompuTec WMS Client**, database selection requires entering a username and password first.
+
+    ![Database](./media/overview/database.png)
+
+- In **CompuTec WMS Server**, after selecting **CompuTec WMS Server** in the **CompuTec Service Manager**, provide a username and password.
+
+    ![WMS Server](./media/overview/service-manager.webp)
+
+- Installation of **CompuTec WMS** objects has now been moved to **CompuTec AppEngine** under **CompuTec WMS.BusinessLogic**.
+
 ## Troubleshooting
 
 ### The CompuTec WMS Client does not open
