@@ -29,6 +29,8 @@ The next CTP scenario run replaces individual analyses with the scenario's plann
 
 ### What determines the date
 
+The **CTP Static Date is** based on material availability, lead times, and safety buffers. In this version, the calculation does not include resource-capacity scheduling.
+
 For an individual analysis, CTP checks the finished item and the components required at each level of its bill of materials (BOM). It uses the scenario's availability and planning information to determine what is available and what must be purchased or produced.
 
 Dates are calculated from the lowest BOM level upwards:
@@ -37,7 +39,7 @@ Dates are calculated from the lowest BOM level upwards:
 - A manufactured component can be ready when its components are available, plus its own lead time and safety buffer.
 - The finished item's result is shown as **CTP Static Date**.
 
-A shortage does not automatically mean that the requested date will be missed. CTP also checks when the missing quantity can be ready. Review both **Shortage / Excess** and **Deviation** to understand the result.
+A shortage does not automatically mean that the requested date will be missed. CTP also checks when the missing quantity can be ready. Review both **Shortage** / **Excess** and **Deviation** to understand the result.
 
 :::note
 A safety buffer is applied at each BOM level involved in the date calculation. A company buffer of 3 days is not a single 3-day allowance added only to the finished item's date.
@@ -57,17 +59,19 @@ A safety buffer is applied at each BOM level involved in the date calculation. A
 
 ## Before you start
 
-Make sure that:
+Before you begin, make sure that:
 
 - The [required CompuTec components](#required-components) are installed.
 - The items and revisions have the BOMs and planning data needed for the calculation.
 - Lead times reflect the time needed to purchase or produce the items.
-- The CTP scenario includes the relevant items and warehouses.
-- The scenario's end date is today or later.
-- The CTP scenario has been run successfully.
-- You can access the relevant CompuTec MRP pages and SAP Business One documents. Users who update ship dates also need permission to update sales orders.
+- You can access the relevant CompuTec MRP pages and SAP Business One documents.
+- You have permission to update sales orders if you want to apply the calculated ship date.
 
-CTP results depend on the scenario's planning settings and latest run. Review the planning horizon, included inventory, demand, supply, and handling of expired stock before using the results to confirm dates.
+An administrator must [set up CTP](#set-up-ctp-functionality) before users can calculate delivery dates.
+
+:::warning[important]
+CTP uses the linked MRP scenario's planning settings and latest run. During setup, review the planning horizon, included inventory, demand, supply, and handling of expired stock, as these affect the results.
+:::
 
 ### Required components
 
@@ -123,7 +127,7 @@ Add items and warehouses explicitly to the scenario's lists. Selecting **All Ite
 7. Save the settings.
 
 :::info[note]
-You can also assign the scenario in the **CompuTec AppEngine Launchpad** > **CompuTec MRP** by selecting **Capable To Promise (CTP)** in the scenario header. When another scenario is already assigned, confirm the change when prompted. Only one scenario can have the CTP role at a time.
+You can also assign the scenario in the **CompuTec AppEngine Launchpad** > **MRP II** > **MRP Wizard**. by selecting **Capable To Promise (CTP)** in the scenario header. When another scenario is already assigned, confirm the change when prompted. Only one scenario can have the CTP role at a time.
 
 ![Capable To Promise checkbox and CTP badge in the MRP scenario](media/ctp/04-mrp-scenario-ctp-checkbox.png)
 
@@ -157,7 +161,7 @@ Use **background processing** in **CompuTec AppEngine** to keep the scenario's p
 
 1. Open the **CompuTec AppEngine Administration Panel**.
 2. Go to **Background Processing** > **Configuration**.
-3. Find **CTP Scenario Runner** background processing job.
+3. Find the **CTP Scenario Runner** job.
 4. Activate the job for the company.
 
     ![CTP Scenario Runner and its one-time variant in Background Processing](media/ctp/15-administration-background-processing-ctp-runner.png)
@@ -166,6 +170,8 @@ Use **background processing** in **CompuTec AppEngine** to keep the scenario's p
 
 :::note[info]
 The default schedule runs the job every day at midnight. To run the CTP scenario once, use **CTP Scenario Runner One Time Job**.
+
+To start using CTP **before** the next scheduled run, run **CTP Scenario Runner One Time Job** and wait for it to finish.
 :::
 
 Wait for the run to finish before opening CTP analyses. Use **Background Processing** > **Jobs statistics** to check job execution when troubleshooting.
@@ -316,7 +322,7 @@ After reviewing an individual result, you can write its **CTP Static Date** to t
 
     ![Confirmation before updating the sales order line ship date](media/ctp/13-update-sales-order-confirm.png)
 
-5. The page confirms that the sales order ship date was updated successfully.
+The page confirms that the sales order ship date was updated successfully.
 
     ![Confirmation that the sales order ship date was updated](media/ctp/14-update-sales-order-done.png)
 
