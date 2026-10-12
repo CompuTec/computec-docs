@@ -24,8 +24,6 @@ Here’s a rundown of the key settings available in the **Manager** tab.
 
 - **Enable Interface Design Manager** – With the Interface Designer Manager, users can customize main menu options, allowing a more personalized navigation experience within the SAP interface. [Read more](../../../custom-configuration/custom-configuration-functions/manager/interface-design-manager.md)
 
-- **Enable Long Press Actions** - Choose which actions appear in the Item and Storage Unit row menus for each transaction and set their display order. [Read more](/docs/wms/administrator-guide/custom-configuration/custom-configuration-functions/manager/long-press-actions)
-
 - **Enable SQL Dimensions** – This setting automates the choice of dimensions in transactions based on an SQL query, removing the need for manual dimension selection. It’s available for transactions like Goods Receipt PO, Stock Transfer, and Delivery.
     <details>
     <summary>Click here to find out more</summary>
