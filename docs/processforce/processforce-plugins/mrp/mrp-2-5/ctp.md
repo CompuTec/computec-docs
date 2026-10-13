@@ -164,7 +164,6 @@ To set a safety buffer for a specific item revision, open **Item Details**, go t
 CTP uses the **Safety Buffer (CTP)** value when planning the item. If it is `0`, CTP uses the company’s **Safety Buffer** instead. You can override these settings on the **CTP Results** page. Enter `0` there to apply no additional safety buffer to the item.
 :::
 
-
 ### Step 4: Set up the CTP scenario run
 
 Use **background processing** in **CompuTec AppEngine** to keep the scenario's planning state up to date.
