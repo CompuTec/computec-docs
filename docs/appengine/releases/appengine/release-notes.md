@@ -4,6 +4,36 @@ sidebar_position: 1
 
 # CompuTec AppEngine Release Notes
 
+## CompuTec AppEngine 3.2610.1
+
+**Release Date: 13 October 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Improved | Code Editor | You can now use the **Computec WebUp script editor** in full-screen mode, giving you more space to work with scripts and SQL queries. The editor fills the available screen, and you can easily return to the standard view. |
+| Improved | Administration | When you change the **external address** in **Advanced Configuration**, the related settings, including **CORS** and **Content Security Policy (CSP)**, are now updated automatically, helping keep the configuration consistent. |
+| Fixed | Code Editor | **Save** and **Save & Preview** buttons now become available as soon as you edit content in the script editor, so you can save your changes without modifying another field first. |
+| Fixed | SQL Editor | SQL column suggestions now insert quotation marks correctly, preventing duplicate quotes when you accept a suggestion after typing an opening quotation mark. |
+| Fixed | WebUp | The **Computec WebUp script editor** now displays the full editing area when maximized, giving you more space to work with scripts. |
+| Fixed | Error Messages | **Error dialogs** now display the actual server error message instead of appearing empty, making it easier to understand and troubleshoot problems, including errors in **CompuTec ProcessForce General Settings** and **Stock Counting**. |
+| Fixed | Analytics Creator | When you use **Create automatically** to add an **Analytics Source**, the first **Standard** variant is now set as the default, allowing subsequent variant configurations to be saved correctly. |
+| Fixed | Analytics Creator | Saving an analytics variant now preserves its actions and visual filter order, preventing unintended changes to your configuration. |
+| Fixed | Analytics | Invalid analytics configuration inputs now produce clearer validation messages instead of a generic `Unhandled exception` error, making configuration problems easier to resolve. |
+| Fixed | Analytics | Analytics context menus remain available when one plugin contains an invalid menu definition. The affected definition is also identified in the logs to help administrators troubleshoot the problem. |
+| Fixed | Assignment Board / Gantt Chart | Filtering resources by name now works correctly with all search characters, helping you find the resources you need. |
+| Fixed | Selection Dialogs | Selecting multiple records from a filtered table now respects the active filter, preventing unnecessary loading of unrelated records and improving responsiveness. |
+| Fixed | Background Jobs | Scheduled jobs can no longer start overlapping runs for the same company when you trigger a job manually while its scheduled execution is still in progress, helping prevent duplicate processing. |
+| Fixed | Background Jobs | Job statistics are now consistent between **Job Assignment** and **Job Statistics**, and jobs that are still running are no longer incorrectly counted as exceptions. |
+| Fixed | Plugin Configuration | Temporary database read errors no longer reset saved plugin configurations to their default values, helping protect existing settings. |
+| Fixed | Plugin Installation | Plugin installation errors now provide more detailed information about what went wrong, making failed installations easier to troubleshoot. |
+| Fixed | Plugin Installation | Reinstalling a **CompuTec AppEngine** plugin no longer fails when multiple parent variants reference the same view. |
+| Fixed | Plugin Information | The **About CompuTec** window now opens correctly instead of displaying a `Cant Retrive plugins data` error, allowing you to review plugin information and installation history. |
+| Fixed | CompuTec.Start | **CompuTec.Start** now retries the**SAP Business One DI API connection** if the initial connection fails because another DI API add-on is starting at the same time, improving startup reliability. |
+| Fixed | PFI | Importing multiple **Bills of Materials** through PFI no longer fails with a `Concurrent update conflict detected` error. |
+| Fixed | Bill of Materials | Creating **Bills of Materials** no longer fails with an `Exclusive code already exists` error caused by code generation. |
+| Fixed | Item Management | **Mass Item Replace** now completes without the previously reported processing error, allowing you to replace items successfully. |
+| Fixed | Manufacturing Orders | Operation binding quantities for exploded phantom items now match the planned quantities after changing a **Manufacturing Order routing**, improving the accuracy of production data. |
+
 ## CompuTec AppEngine 3.2609.2
 
 **Release Date: 23 September 2026**
