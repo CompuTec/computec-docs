@@ -20,12 +20,12 @@ The **CTP Scenario Runner** runs the scenario and plans open sales order lines w
 
 | Sales order line state | What happens when you open CTP |
 | --- | --- |
-| `The line was included in the last CTP scenario run.` | The page shows **CTP Scenario Analysis**. Review the scenario's order recommendations for the supply planned for this line. |
+| `The line was included in the last CTP scenario run.` | The page shows **CTP Scenario Analysis**. Review the scenario results and any relevant order recommendations. |
 | `The line is in scope but was not included in the last run.` | CTP calculates an individual result using the scenario's planning state. The page shows a CTP date, component quantities, and dates. |
 | `An individual result has already been calculated.` | CTP displays the stored result. You can change safety buffers and recalculate it. |
-| `The item is outside the scenario's scope.` | The page shows `Item Not Included in CTP Scenario`. |
+| `The item is outside the scenario's scope.` | The item has no CTP entry from the latest scenario run. This can happen when the item is outside the scenario's item scope or the scenario has not been run since the item was added. Check the scenario's **Item Selection** and run the **CTP Scenario Runner**. |
 
-The next CTP scenario run replaces individual analyses with the scenario's planning. A line that previously showed a component table can therefore show **CTP Scenario Analysis** after the next run.
+The next CTP scenario run removes the previous individual CTP results. Lines included in the run are then handled by the scenario's planning process and show **CTP Scenario Analysis**. Other lines can be analyzed again when opened, provided their items remain covered by the CTP scenario.
 
 ### What determines the date
 
@@ -42,7 +42,7 @@ Dates are calculated from the lowest BOM level upwards:
 A shortage does not automatically mean that the requested date will be missed. CTP also checks when the missing quantity can be ready. Review both **Shortage** / **Excess** and **Deviation** to understand the result.
 
 :::note
-A safety buffer is applied at each BOM level involved in the date calculation. A company buffer of 3 days is not a single 3-day allowance added only to the finished item's date.
+A safety buffer is added to the lead time of each item that requires additional supply during the CTP calculation. This can include the finished item and components at different BOM levels. Items fully covered by available stock do not have their availability dates extended by the safety buffer.
 :::
 
 ### What CTP takes into account
@@ -75,13 +75,13 @@ CTP uses the linked MRP scenario's planning settings and latest run. During setu
 
 | Component | Minimum version |
 | --- | --- |
-| CompuTec AppEngine | 3.2608.9 |
+| CompuTec AppEngine | 3.2609.2 |
 | CompuTec ProcessForce | 3.2609.3 |
 | CompuTec MRP | 3.2610.3 |
 | CompuTec MRP Business Logic | 3.2610.3 |
 | Production Process Flow (PPF) plugin | 3.2605.1 |
 
-To open CTP from the SAP Business One Web Client, the CompuTec WebUp extensions for CompuTec MRP must also be deployed.
+To use **CTP** in the **SAP Business One Web Client**, the relevant **CompuTec AppEngine Web Client** extension must be installed and activated for the company.
 
 ## Set up CTP functionality
 
@@ -95,11 +95,18 @@ Complete this section as an administrator responsible for the company configurat
 
 2. Open the scenario you want to use for CTP.
 3. Check that **End Date** is today or later.
-4. On the **Item Selection** tab, add the items and revisions to include in CTP.
+
+    :::info[note]
+    The scenario's **End Date** must be today or later. An End Date in the past prevents new CTP calculations.
+    :::
+
+4. On the **Item Selection** tab, select **All Items** to plan all item revisions with **Planning Method** set to `MRP`, or select specific items to plan.
 
     ![Items included in the CTP scenario](media/ctp/05a-mrp-scenario-item-selection.png)
 
-5. On the **Inventory Data** tab, add the warehouses to include in CTP.
+5. On the **Inventory Data** tab, add the warehouses you want to include in CTP to the scenario’s warehouse list.
+
+    CTP uses the items and warehouses selected in this scenario.
 
     ![Warehouses and inventory settings included in the CTP scenario](media/ctp/05b-mrp-scenario-inventory-data.png)
 
@@ -108,7 +115,7 @@ Complete this section as an administrator responsible for the company configurat
 8. Save the scenario.
 
 :::warning[important]
-Add items and warehouses explicitly to the scenario's lists. Selecting **All Items** or **All Warehouses** alone does not populate the scope used by CTP.
+Add items and warehouses explicitly to the scenario's lists. Select **All Items** to include all item revisions with **Planning Method** set to `MRP`, or explicitly select the items to be planned. Add the required warehouses to the scenario's warehouse list. CTP uses the resulting item and warehouse selection.
 :::
 
 :::info[note]
@@ -150,12 +157,13 @@ Use an item safety buffer when an item needs a different allowance from the comp
 5. Save the changes.
 
 :::info[note]
-For revision-specific planning data, open **Item Details**, select the relevant revision on the **Planning Data** tab, and set **Safety Buffer (CTP)**.
+To set a safety buffer for a specific item revision, open **Item Details**, go to the **Planning Data** tab, select the revision, and set **Safety Buffer (CTP)**.
 
 ![Safety buffer for an item revision in Item Details](media/ctp/03-item-details-safety-buffer.png)
+
+CTP uses the **Safety Buffer (CTP)** value when planning the item. If it is `0`, CTP uses the company’s **Safety Buffer** instead. You can override these settings on the **CTP Results** page. Enter `0` there to apply no additional safety buffer to the item.
 :::
 
-When no item buffer is defined, CTP uses the company buffer. You can review the buffer actually used in the **Safety Buffer** column of an individual CTP result.
 
 ### Step 4: Set up the CTP scenario run
 
@@ -182,7 +190,7 @@ After the first successful run, check that sales order lines within the scenario
 
 ## Open CTP for a sales order line
 
-You can open **CTP** from **SAP Business One** or the **CompuTec AppEngine Launchpad**. If the required **CompuTec WebUp** extensions are deployed, you can also open it from the **SAP Business One Web Client**.
+You can open **CTP** from **SAP Business One** or the **CompuTec AppEngine Launchpad**. If the the required **CompuTec AppEngine Web Client** extension is deployed, you can also open it from the **SAP Business One Web Client**.
 
 ### From SAP Business One
 
@@ -220,7 +228,7 @@ You can also open the list through **CompuTec AppEngine Launchpad** > **Analytic
 To view CTP lines for the whole order, select **CTP** on the sales order form.
 
 :::info[note]
-These actions depend on the deployed CompuTec WebUp extensions and existing CTP documents for the order's items. If they are unavailable, use the **CompuTec AppEngine Launchpad** or ask the administrator to check the deployment and scenario run.
+These actions depend on the **CompuTec AppEngine Web Client** extension installed and activated for the company and existing CTP documents for the order's items. If they are unavailable, use the **CompuTec AppEngine Launchpad** or ask the administrator to check the deployment and scenario run.
 :::
 
 ## Review an individual CTP result
@@ -341,9 +349,9 @@ Sales Order processed in the CTP MRP scenario
 
 ![Sales order line already processed by the CTP scenario](media/ctp/10-ctp-results-scenario-planned.png)
 
-This is an expected planning state. The scenario has already planned supply for the line in its order recommendations, so the page does not show a separate component analysis or individual CTP date.
+This is an expected planning state. The sales order line was included in the CTP scenario run, so its requirements were considered by the scenario's planning process. The page therefore does not show a separate component analysis or individual CTP date.
 
-To review the planned supply, open the linked scenario's order recommendations in CompuTec MRP. An empty individual CTP date for this state does not mean that the scenario run failed.
+Review the scenario results and any relevant order recommendations. An empty individual CTP date for this state does not mean that the scenario run failed.
 
 ## Use the CTP List
 
@@ -364,14 +372,14 @@ Use the filters to find the relevant order or item. Select its row and click **R
 
 | What you see | Meaning and next step |
 | --- | --- |
-| **Item Not Included in CTP Scenario** | The item is outside the scenario's item scope. Add it to the linked scenario's item list, check the warehouse scope, and run the CTP scenario. |
+| **Item Not Included in CTP Scenario** | The item has no CTP entry from the latest scenario run. This can happen when the item is outside the scenario's item scope or the scenario has not been run since the item was added. Check the scenario's **Item Selection** and run the **CTP Scenario Runner**. |
 | **CTP Scenario Analysis** | The line was planned by the scenario. Review the scenario's order recommendations. A separate component analysis is not shown for this state. |
 | **CTP Run Failed** | Read the accompanying message. Correct the reported cause and retry the calculation. If it persists, provide the message and order-line details to your administrator or Support. |
 | A message says no CTP scenario was found. | Select **Linked-MRP Scenario** in General Settings or assign **Capable To Promise (CTP)** in the MRP Wizard. Verify the assignment and run the scenario. |
 | **CTP Scenario is already running.** | Wait for the current run to finish before retrying. If it does not finish, ask the administrator to check the background job execution. |
-| A message says the end date must be today or later. | Update the scenario's **End Date** before assigning it to CTP. |
+| A message says the end date must be today or later. | The scenario's **End Date** must be today or later. An **End Date** in the past prevents new CTP calculations. |
 | **CTP Analysis** is missing in SAP Business One. | Check that the item and revision are in scope and that a CTP document exists for them. Verify that the CTP scenario job has run successfully. |
-| The Web Client CTP actions are missing. | Check the CompuTec WebUp extension deployment, open the order in view mode, and verify that CTP documents exist for its items. |
+| The Web Client CTP actions are missing. | Check if the **CompuTec AppEngine Web Client** extension is installed and activated for the company, open the order in view mode, and verify that CTP documents exist for its items. |
 | A component table disappeared after a scenario run. | The line may now be planned by the scenario. Check for **CTP Scenario Analysis** and review the scenario recommendations. |
 | The calculated date is unexpectedly early or late. | Review item lead times, row safety buffers, and the scenario's inventory, demand, supply, and planning-horizon settings. Check when the CTP scenario last ran. |
 
@@ -385,4 +393,4 @@ For reliable day-to-day use:
 - Update item and warehouse lists when the CTP scope changes.
 - Maintain BOMs, revisions, and lead times as products and supply conditions change.
 - Check the buffers used in the analysis before updating a ship date.
-- Expect individual results to be replaced by scenario planning after the next CTP scenario run.
+- The next CTP scenario run removes the previous individual CTP results. Lines included in the run are then handled by the scenario's planning process and show **CTP Scenario Analysis**. Other lines can be analyzed again when opened, provided their items remain covered by the CTP scenario.
