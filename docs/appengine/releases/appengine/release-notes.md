@@ -27,7 +27,7 @@ sidebar_position: 1
 | Fixed | Plugin Configuration | Temporary database read errors no longer reset saved plugin configurations to their default values, helping protect existing settings. |
 | Fixed | Plugin Installation | Plugin installation errors now provide more detailed information about what went wrong, making failed installations easier to troubleshoot. |
 | Fixed | Plugin Installation | Reinstalling a **CompuTec AppEngine** plugin no longer fails when multiple parent variants reference the same view. |
-| Fixed | Plugin Information | The **About CompuTec** window now opens correctly instead of displaying a `Cant Retrive plugins data` error, allowing you to review plugin information and installation history. |
+| Fixed | Plugin Information | The **About CompuTec** window now opens correctly instead of displaying a `Can't retrieve plugins data` error, allowing you to review plugin information and installation history. |
 | Fixed | CompuTec.Start | **CompuTec.Start** now retries the**SAP Business One DI API connection** if the initial connection fails because another DI API add-on is starting at the same time, improving startup reliability. |
 | Fixed | PFI | Importing multiple **Bills of Materials** through PFI no longer fails with a `Concurrent update conflict detected` error. |
 | Fixed | Bill of Materials | Creating **Bills of Materials** no longer fails with an `Exclusive code already exists` error caused by code generation. |
@@ -188,7 +188,7 @@ sidebar_position: 1
 | Fixed | MRP | Fixed an issue where the address list was not displayed in **Vendor Lead Time**. Vendor addresses are now loaded correctly when selecting a business partner and shipping type. |
 | Fixed | AE Administration Panel | Fixed an error that could occur when removing an **CompuTec AppEngine Server** instance from the **CompuTec AppEngine Administration Panel**. |
 | Fixed | AE Analytics | Fixed an issue where the scrollbar size was not updated dynamically for reports containing large numbers of rows, improving navigation through report results. |
-| Fixed | AE Common Library | Fixed alignment of the **SAP Business Oneobject** navigation chevron (yellow arrow icon) in form headers and layouts. The icon is now displayed correctly next to linked values across supported themes. |
+| Fixed | AE Common Library | Fixed alignment of the **SAP Business One** object navigation chevron (yellow arrow icon) in form headers and layouts. The icon is now displayed correctly next to linked values across supported themes. |
 | Fixed | AE Analytics | Fixed object navigation for **CT_PF_AdditionalBatch** links in analytics reports. Clicking the yellow arrow now opens the related **Batch Master Data** window correctly. |
 | Fixed | AE Analytics | Fixed collection value display in analytics reports. Fields configured with custom collections now display user-friendly descriptions instead of internal codes. |
 
@@ -292,7 +292,7 @@ If your development environment uses custom TypeScript path mappings, additional
 | Fixed | AE Analytics | Fixed issue where **Analytics** button was not working in SAP UI windows. |
 | Fixed | AE Administration Panel | Manual background jobs are now visible correctly in the statistics view. |
 | Fixed | AE Background Processing | CompuTec AppEngine now validates **JobId** during job creation, preventing service crashes after restart. |
-| Fixed | AE Installer | Fixed error durring CompuTec AppEngine setup when saving configuration changes. |
+| Fixed | AE Installer | Fixed error during CompuTec AppEngine setup when saving configuration changes. |
 | Fixed | AE Other | The message ``A new version of AppEngine is available`` now appears only when an update is actually available. |
 | Improved | WebUp Manager | Increased timeout handling for slow connections, improving stability when working over slower networks. |
 | Fixed | MRP | Fixed issue where **Planning Horizon** dates could shift by one day. |
@@ -334,7 +334,7 @@ If your development environment uses custom TypeScript path mappings, additional
 | Improved | AE Analytics | A new **Source Plugin** column helps you quickly see where each action originates. |
 | Improved | AE Analytics | Added support for filtering by the ``CURRENT_DATE`` variable in **Source Manager**. |
 | Fixed | BT360 | Returning from **Trace Analysis** now refreshes the list automatically, so you always see current data. |
-| Fixed | AE Analytics | Fixed an issue where the ComuTec AppEngine logo button did not work correctly in form mode. |
+| Fixed | AE Analytics | Fixed an issue where the CompuTec AppEngine logo button did not work correctly in form mode. |
 | Improved | AE Analytics | Improved drill-down navigation, including better filter mapping, variant handling, and navigation behavior. |
 | Improved | AE Analytics | Variants can now be displayed as a list, making it easier to compare and select views. |
 | Fixed | AE Core | When activating a company, clear error messages are now shown if database credentials are incorrect. |
@@ -398,7 +398,7 @@ If your development environment uses custom TypeScript path mappings, additional
 | Bug | Routings | Invalid records exist in the @CT_PF_RTG3 and @CT_PF_BOM16 tables. |
 | Bug | Core | GetDataFromDbDataSource causes System.InvalidCastException: invalid cast from System.String to System.Nullable. |
 | Bug | Bill of Materials, Common Functions | Issues occur when using Show History in the Production Process, preventing proper display of historical data. |
-| Bug | Core | Error in UDF Initializator while retrieving valid values for linked table UDF U_MOR_LT |
+| Bug | Core | Error in UDF initialization while retrieving valid values for linked table UDF U_MOR_LT |
 | Bug | AE Common Library | Error occurs in View Variant when ui.table.Column includes a label property. |
 | Bug | AE Analytics | Defining a Custom Collection does not work. |
 | Bug | .netCore | Stale configuration entries in the JSON configuration file prevent AppEngine from starting the service or cause it to re-run configuration. |
@@ -426,7 +426,7 @@ If your development environment uses custom TypeScript path mappings, additional
 | Bug | AE Administration | CompuTec AppEngine prompts to download the .rc version even when the official version is already installed. |
 | Bug | WebUpClient | Deactivate Action exhibits unexpected or inconsistent behavior. |
 | Bug | WebUpManager | In CompuTec WebUp, the view version always remains at 1.0.0.10 and does not update. |
-| Bug | AE Core | In Core, the Fake Schema Provider does not work for autoincrement objects, preventing proper testing. |
+| Bug | AE Core | In Core, the Fake Schema Provider does not work for auto-increment objects, preventing proper testing. |
 | Bug | Manufacturing Order | TransNotification fails to block items in Revision Engineering, preventing the creation of Manufacturing Orders |
 | Bug | Manufacturing Order | Decimal quantities are not recognized correctly. |
 | Bug | Manufacturing Order | The DocNum is incorrect on multi-level Manufacturing Orders created from the Scheduling Board. |
@@ -466,11 +466,11 @@ If your development environment uses custom TypeScript path mappings, additional
 | Bug | Bill of Materials | BOM update fails with message "Cannot change document revision code00 for item 2252-0263-001000 is obsolete." |
 | Bug | .netCore | Error occurred while installing authorizations |
 | Bug | Common Functions | Error occurred during CompuTec ProcessForce Installation |
-| Bug | Core | Issue when trying to save autoincrement object with string that contains "'" |
+| Bug | Core | Issue when trying to save auto-increment object with string that contains "'" |
 | Bug | AE WebClient | Hidden plugins are not being hidden in AE WebClient |
 | Bug | AE Configuration | Validation table horizontal scrollbar is not visible |
 | Bug | WMS Plugin | Unable to Add Items to Storage Categories (SC) |
-| Bug | WebUp, WebUpManager | Delete WebUp view doesnt work |
+| Bug | WebUp, WebUpManager | Delete WebUp view doesn't work |
 | Bug | AE Configuration | After running AppEngine, when a database update occurs, the system redirects in a continuous loop to index.html |
 | Bug | PFI | Error “The node count limit of '100' has been exceeded.” occurs during load in PFI |
 | Bug | BT360 | Selection and data is not refreshed in BT360 |
@@ -532,7 +532,7 @@ If your development environment uses custom TypeScript path mappings, additional
 | Bug | .netCore | Generated enum doesn't have EnumType Annotation in Core. |
 | Improvement | .netCore , AE Architecture | Added ability to define database setup configurations for the CompuTec AppEngine Plugin type |
 | Improvement | AE Core, AE DevelopmentMode | Defined a schema for plugin manifests |
-| Bug | AE Core | Post on Autoincrement  object doesn't return @@identity |
+| Bug | AE Core | Post on auto-increment  object doesn't return @@identity |
 | Bug | .netCore , AE Plugins | Issue occurred while activating the company and installing plugins. |
 | Bug | .netCore | AE service fails to start after installing a lower version of PF UI and API. |
 | Bug | Performance | PATCH call to Item details takes longer to throw an error message. |
@@ -562,7 +562,7 @@ If your development environment uses custom TypeScript path mappings, additional
 | Issue Type | Component/s | Release Note |
 | --- | --- | --- |
 | Bug | Common Functions | Issues encountered when using the "Support" user to perform actions in CompuTec ProcessForce |
-| Bug | Manufacturing Order | [POLCOM] Error "Cannot update. Empty formula in Items." occurs during PFI import |
+| Bug | Manufacturing Order | Error "Cannot update. Empty formula in Items." occurs during PFI import |
 | Bug | Common Functions | Selection combo in UDF is not working. User is not able to select any values |
 | Bug | WebAPI | Issues with item details PATCH call - missing or unclear error message |
 | Bug | CompuTec AppEngine WebClient | Issue occurs in CompuTec PDC when OIDC is disabled |
