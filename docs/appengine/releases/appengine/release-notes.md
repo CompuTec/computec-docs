@@ -4,17 +4,31 @@ sidebar_position: 1
 
 # CompuTec AppEngine Release Notes
 
+## CompuTec AppEngine 3.2610.2
+
+**Release Date: 15 October 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Fixed | Search and Filtering | Searches and filters now work correctly with values containing apostrophes, such as `O'Brien`, so matching records are returned without errors. For developers, the new `FilterHelper.prepareStringForFilter` helper handles apostrophes in manually constructed OData `$filter` expressions. Existing workarounds that double apostrophes must be removed to avoid incorrect search results. |
+| Fixed | Analytics | Missing **Analytics Sources** now return a clear error identifying the source instead of an `HTTP 500` error, making configuration problems easier to diagnose. The API returns `HTTP 404` when a source cannot be found. |
+| Fixed | Plugin Administration | You can now download the **CompuTec ProcessForce API** installer from the plugin details page and the plugin store in **CompuTec AppEngine Administration Panel**, restoring access to the installer. |
+| Fixed | Installation | Silent CompuTec AppEngine installations now handle missing .NET 8 prerequisites correctly, preventing installation failures with errors `1920` or `1603` on machines without the required runtime. This improves reliability when deploying AppEngine through `msiexec /qn`, SCCM, or Group Policy. |
+| Fixed | Pick Receipt | You can now create a **Goods Receipt** from a **Pick Receipt** containing two **Manufacturing Orders** with serial-managed items without the previously reported error. |
+| Fixed | Report Layouts | Missing **Crystal Reports** (`.rpt`) files no longer interrupt installation or leave incomplete layout records, improving installation reliability. |
+| Fixed | Report Layouts | New document layouts are now assigned to the correct report types, preventing duplicate report types and making the layouts available from the corresponding add-on forms. |
+| Fixed | Translations | Newly added form text is now included in translation updates, ensuring translations added after the initial import are available in subsequent builds. |
+| Improved | Item Details | **Default Distribution Rules** and **Project** values can now be configured for **Item Details revision lines** through **General Settings**, helping maintain consistent accounting information. |
+| Added | Revision Statuses | You can now define **custom descriptions for revision statuses** using a new translation overrides form, allowing status labels to better match your organization's terminology. |
+
 ## CompuTec AppEngine 3.2610.1
 
 **Release Date: 13 October 2026**
 
 | Issue Type | Component | Release Note |
 | --- | --- | --- |
-| Improved | Code Editor | You can now use the **Computec WebUp script editor** in full-screen mode, giving you more space to work with scripts and SQL queries. The editor fills the available screen, and you can easily return to the standard view. |
 | Improved | Administration | When you change the **external address** in **Advanced Configuration**, the related settings, including **CORS** and **Content Security Policy (CSP)**, are now updated automatically, helping keep the configuration consistent. |
-| Fixed | Code Editor | **Save** and **Save & Preview** buttons now become available as soon as you edit content in the script editor, so you can save your changes without modifying another field first. |
 | Fixed | SQL Editor | SQL column suggestions now insert quotation marks correctly, preventing duplicate quotes when you accept a suggestion after typing an opening quotation mark. |
-| Fixed | WebUp | The **Computec WebUp script editor** now displays the full editing area when maximized, giving you more space to work with scripts. |
 | Fixed | Error Messages | **Error dialogs** now display the actual server error message instead of appearing empty, making it easier to understand and troubleshoot problems, including errors in **CompuTec ProcessForce General Settings** and **Stock Counting**. |
 | Fixed | Analytics Creator | When you use **Create automatically** to add an **Analytics Source**, the first **Standard** variant is now set as the default, allowing subsequent variant configurations to be saved correctly. |
 | Fixed | Analytics Creator | Saving an analytics variant now preserves its actions and visual filter order, preventing unintended changes to your configuration. |
@@ -29,10 +43,6 @@ sidebar_position: 1
 | Fixed | Plugin Installation | Reinstalling a **CompuTec AppEngine** plugin no longer fails when multiple parent variants reference the same view. |
 | Fixed | Plugin Information | The **About CompuTec** window now opens correctly instead of displaying a `Can't retrieve plugins data` error, allowing you to review plugin information and installation history. |
 | Fixed | CompuTec.Start | **CompuTec.Start** now retries the**SAP Business One DI API connection** if the initial connection fails because another DI API add-on is starting at the same time, improving startup reliability. |
-| Fixed | PFI | Importing multiple **Bills of Materials** through PFI no longer fails with a `Concurrent update conflict detected` error. |
-| Fixed | Bill of Materials | Creating **Bills of Materials** no longer fails with an `Exclusive code already exists` error caused by code generation. |
-| Fixed | Item Management | **Mass Item Replace** now completes without the previously reported processing error, allowing you to replace items successfully. |
-| Fixed | Manufacturing Orders | Operation binding quantities for exploded phantom items now match the planned quantities after changing a **Manufacturing Order routing**, improving the accuracy of production data. |
 
 ## CompuTec AppEngine 3.2609.2
 
