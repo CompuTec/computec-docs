@@ -62,7 +62,6 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 | --- | --- | --- |
 | Added | Quality Control | **Batch status** can now be updated automatically based on QC results. Depending on your configuration, batches can be set to `Released`, `On Hold`, or `Blocked` when related QC Tests or QC Test Pools are updated. |
 | Added | Quality Control | Improved the **QC Test** and **NCMR** workflow. When an NCMR is created, the related QC Test moves to Awaiting NCMR and remains blocked until the NCMR is closed. Invalid status changes are prevented to keep the documents synchronized. |
-| Added | Manufacturing Orders | You can now return over-issued components partially or in full from a **Manufacturing Order** without reversing the entire issue. |
 | Added | MRP | You can now delete an MRP scenario that already contains saved order recommendations. Archived scenarios are also protected from status changes. |
 | Improved | Orderless Production | Improved **Orderless Production** reliability and processing. Large transactions hold fewer database locks, notifications can be processed correctly, and a production process is reported as successful only after all required postings have completed. |
 | Improved | Authorization | **Ingredient Classification** now follows the same authorization structure as other **Ingredients** functions, making permissions easier to manage consistently. |
