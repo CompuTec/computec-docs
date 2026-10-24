@@ -13,7 +13,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 
 ## CompuTec ProcessForce 3.2610.2
 
-**Release Date: 24 October 2026**
+**Release Date: 21 October 2026**
 
 | Issue Type | Component | Release Note |
 | --- | --- | --- |
@@ -227,7 +227,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 
 ## CompuTec ProcessForce 3.2607.1
 
-**Realease Date: 9 July 2026**
+**Release Date: 9 July 2026**
 
 | Issue Type | Component | Release Note |
 | --- | --- | --- |
