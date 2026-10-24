@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## CompuTec WebUp Client 1.2610.2
 
-**Release Date: 24 October 2026**
+**Release Date: 21 October 2026**
 
 | Issue Type | Component | Release Note |
 | --- | --- | --- |
