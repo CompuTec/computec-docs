@@ -11,6 +11,40 @@ You can find all download links and release notes for the latest available **Com
 However, we strongly recommend using **CompuTec ProcessForce Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec ProcessForce 3.2610.2
+
+**Release Date: 24 October 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | Ingredients | You can now retrieve a **Bill of Materials ingredient declaration through OData** for a specified quantity, including energy, ingredients, nutrients, and allergens. The new read-only function does not require or overwrite an **Item Ingredient Data** record. The OData `Rollup` action also returns the complete record with its lines, using the same normalization rules. |
+| Added | MRP | You can now run MRP scenarios and save order recommendations using **bound OData actions**. The `Run` and `SaveRecommendations` actions are available alongside the existing REST endpoints, providing more integration options. |
+| Added | Quality Control | You can now disable color coding of **Quality Control** results using the new **Disable color coding of Quality Control results** option in **General Settings**. This removes row colors from QC Tests, QC Test Pools, and Record Multiple Test Results without changing Passed/Failed results or test-blocking behavior. |
+| Added | Pick Order | You can now configure automatic material issuing separately for **Manufacturing Orders** and **Maintenance Orders**, giving you more control over each process. The existing **Automatically issue materials on Pick Order Add/Update** setting has been split into two options in **General Settings**. During an upgrade, the new Maintenance Order setting inherits the existing value. |
+| Added | Scheduling | You can now hide weekends and non-working resource days in the **Schedule Results load report**, making it easier to focus on available production capacity. |
+| Improved | Batch and Serial Number Management | You can now save **Item Details**, **Item Groups**, and **General Settings** without specifying a batch or serial number template. Instead of blocking the save, CompuTec ProcessForce displays a confirmation prompt. **Item Details** are also created automatically for new items again. |
+| Improved | Manufacturing Order Costing | You can now identify missing rolled costs when refreshing **Manufacturing Order planned costs** through the **REST API**. The `RefreshPlannedCosts` endpoint returns the Manufacturing Order together with the header, line, and resource entries that could not be refreshed because their rolled costs are missing. |
+| Improved | Material Shortages | The **Material Shortages OData service** now supports all shortage calculation parameters from **General Settings**, providing results that reflect your configured shortage calculation options. |
+| Improved | Quality Control | You can now select operations from alternative routings in **Test Protocols**, allowing you to create QC Tests for Manufacturing Orders that use an alternative routing. |
+| Improved | ProcessForce API | Updated **Web API field descriptions** for **Pick Orders**, **Pick Receipts**, **Bills of Materials**, **Routings**, **Manufacturing Orders**, and **Item Details**. The documentation now correctly identifies editable fields and removes misleading restrictions, making integrations easier to configure. |
+| Fixed | Item Details | You can now open **Item Details** for newly created batch-managed items without a batch template without encountering an error. |
+| Fixed | Orderless Production | You can now post **Orderless Production documents through the ProcessForce API** using a manually supplied batch number, even when the item has no batch template. This prevents the `Batch Template not found` error. |
+| Fixed | Manufacturing Order Costing | **Manufacturing Order planned costs** now refresh when a **Goods Issue** or **Goods Receipt** changes the order status to `Started`, keeping planned costs up to date as production begins. |
+| Fixed | Manufacturing Order Costing | Automatic planned-cost refresh no longer replaces missing rolled costs with zero. Missing cost entries, including missing header entries, are reported so you can identify and correct incomplete costing data. |
+| Fixed | Time Booking | **Time Booking** now determines the correct **WIP account** when **Advanced G/L Account Determination** uses user-defined fields (UDFs), preventing the `-5011 Code undefined [JDT1.Account]` error and missing account codes in manual bookings. |
+| Fixed | Pick Order / Goods Issue | **Manufacturing Order project information** is now carried through to **Pick Order** lines and **backflushed Goods Issues** when the component does not have its own project, helping maintain consistent project assignments across production transactions. |
+| Fixed | Material Shortages | **The Gantt Shortages Report** and **CompuTec AppEngine Material Shortage Projection** now include **Manufacturing Orders with zero production time**, providing a more complete view of material requirements. |
+| Fixed | Material Shortages | **The Gantt Shortages Report** now returns results when **Calculate Shortage** separating by warehouse is disabled, allowing you to review shortages regardless of this setting. |
+| Fixed | Scheduling Board | You can now **open the Scheduling Board from a Sales Order** without encountering the `Sequence contains no elements` error. |
+| Fixed | Item Revisions | **Item revisions** can now be updated concurrently without duplicate-key errors, improving reliability during operations such as PFI imports on both MS SQL Server and SAP HANA. |
+| Fixed | Quality Control | **QC sample inventory transfers** now handle decimal quantities correctly when the decimal separator is a comma, preventing the `Invalid field value [66000-19]` error. Related number-format issues in routing operation relations and Manufacturing Order operation-to-component bindings have also been corrected. |
+| Fixed | Ingredients | **Ingredient roll-up calculations** now correctly account for component quantities when calculating energy values. Records with zero or negative quantities are no longer silently skipped, making calculation problems easier to identify. |
+| Fixed | Maintenance Recording | **Maintenance checkpoints** now display only the fields relevant to their type. Fields such as **Aspect Point**, **Value**, **Confirm zero**, and **Unit of Measure** are no longer offered for checkpoint types that do not use them, such as **Checklist Item**. |
+| Fixed | Certificate of Analysis | **The Certificate of Analysis** print layout now includes the customer address on **MS SQL Server**, providing more complete information on printed certificates. |
+| Fixed | Quality Control | `Completed` and `Reopened` statuses and their date labels are now translated correctly on the **Quality Control Test** form across supported languages. |
+| Fixed | Authorization | **Help Configurator**, **Resource Costing**, **QC Qualifications**, **Counter Schemes**, and **Ingredient Classification** authorizations are now located under the correct permission groups. **Ingredient Classification** is available under **Setup** > **Ingredients**. Existing authorizations are migrated during the upgrade. **Note**: Administrators should review user permissions for these functions after upgrading. |
+| Fixed | ProcessForce API | You can now download the **CompuTec ProcessForce API installer** from its plugin page in **Computec AppEngine Administration Panel**, restoring access to the installer. |
+
 ## CompuTec ProcessForce 3.2610.1
 
 **Release Date: 6 October 2026**
