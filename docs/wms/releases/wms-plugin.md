@@ -6,7 +6,7 @@ sidebar_position: 4
 
 Below are the release notes for CompuTec WMS Plugin, highlighting new features, improvements, and bug fixes in this release.
 
-## CompuTec WMS 3.2610.1
+## CompuTec WMS Plugin 3.2610.1
 
 **Release Date: 24 October 2026**
 
@@ -39,7 +39,7 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 | Fixed | Delivery | **Line-level user-defined fields**, including required fields, are now available when a **Delivery** contains **Storage Units**, allowing the document to be completed correctly. |
 | Fixed | Delivery / Pick and Pack | Available stock quantities now account for stock already committed, picked, or packed into Storage Units, preventing quantities from being picked or delivered more than once. |
 | Fixed | Delivery from Pick List | Processing a **Delivery from one Pick List** no longer closes another **Pick List** for the same Sales Order line, allowing separate Pick Lists to be processed independently. |
-| Fixed | Delivery from Pick List | **Serial-managed items with empty serial numbers** no longer produce doubled quantities when packed into Storage Units and processed through **Delivery from Pick List**. |
+| Fixed | Delivery from Pick List | Quantities are no longer doubled for **items with serial numbers managed on release** when the items are packed into Storage Units and processed through Delivery from Pick List. |
 | Fixed | Pick and Pack | Picking into negative stock now works when negative inventory is allowed, including in warehouses without bin locations. This resolves incorrect errors such as `Cannot pick more than 0` and `Cannot pick more than -1`. |
 | Fixed | Pick and Pack | Available quantities are now calculated correctly when several Pick List lines contain the same item, preventing incorrect picking limits. |
 | Fixed | Pick and Pack | The **Existing SU list** now displays eligible Storage Units when picking by scanning, while excluding SUs already allocated to another Pick List. |
@@ -59,12 +59,10 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 | Fixed | Goods Issue | **Goods Issue** and similar transactions can now be saved after entering line-level UDFs from the **Quantity** screen, without encountering an object reference error. |
 | Fixed | SAP Production Receipt | **Save & Return** now saves the pending document line correctly, preventing entered information from being lost when returning to the previous screen. |
 | Fixed | SAP Production Receipt | **Receipts from Production** created in CompuTec WMS now generate print requests through **Event Triggers**, allowing configured printing processes to run. |
-| Fixed | Dispatch Control | The previous dispatch log functionality remains available alongside the new **Dispatch Control** process, under the **Dispatch Logs** menu entry. |
 | Fixed | WMS Client | **CompuTec WMS Client** now maintains a more reliable login session after SAP connection errors, preventing repeated login prompts. |
 | Fixed | WMS Client | Main menu buttons now respond correctly after returning from a transaction when **CompuTec WMS Client** runs through **Remote Desktop (RDP)**. |
 | Fixed | WMS Client | List text and status colors now meet WCAG 2.1 AA contrast requirements, making selected rows and completed or partially processed lines easier to distinguish. |
 | Fixed | WMS Client | **CompuTec WMS Scanning Simulator** and **CompuTec WMS Settings** icons are now visible in **Windows dark mode**, and minor button styling issues have been corrected. |
-| Fixed | WMS Server | Updating **CompuTec WMS Server** no longer resets the configured SSL certificate setting, preserving the existing configuration during upgrades. |
 | Fixed | Barcoder Settings | The test query result is now displayed in **Barcoder Settings**, making it easier to verify the query configuration. |
 
 ## CompuTec WMS Plugin 3.2609.1
