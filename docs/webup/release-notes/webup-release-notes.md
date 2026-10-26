@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # CompuTec WebUp Release Notes
 
-## CompuTec WebUp 1.2610.1
+## CompuTec WebUp 1.2610.2
 
 **Release Date: 24 October 2026**
 
@@ -24,6 +24,7 @@ sidebar_position: 1
 | Improved | Save & Preview | **Save & Preview** now refreshes the preview without reloading the entire **SAP Business One Web Client**, making preview updates faster while preserving the current Web Client state. Changes also take effect on the first preview after saving. |
 | Improved | Web Client Integration | **CompuTec WebUp extensions on SAP Business One Web Client 2602 and later** can use the **Web Client's authentication** to communicate with CompuTec AppEngine, removing the need for the CompuTec WebUp Client browser extension for these requests. |
 | Improved | Binding Expression Editor | The **Binding Expression editor** now supports enumerations, improved drag-and-drop behavior, and more convenient searching. You can move existing expressions between template slots, find matching items more easily, and use corrected empty-value checks for `null` and `undefined`. |
+| Improved | Smart Actions | The unavailable **During** event trigger has been removed from Smart Action configuration, so you can select only supported trigger options. |
 | Improved | Control Properties | **Required control properties** are now clearly marked and validated before saving. Missing values appear under **Basic Options**, helping you identify incomplete configurations and preventing invalid controls from being saved. |
 | Improved | Parameters | You can now create a parameter directly from a control property and link it automatically. A parameter preview is also available, with an option to remove the binding when it is no longer needed. |
 | Improved | Dot Actions | **Dot Action** categories and icons are now easier to configure using saved category suggestions and predefined SAPUI5 icons, helping ensure actions appear in the correct command palette group. |
