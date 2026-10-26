@@ -31,12 +31,11 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 | Improved | Delivery | **Delivery** now retrieves **Pick List** allocations more efficiently, improving performance when processing deliveries based on Pick Lists. |
 | Improved | Stock Counting | You can now freeze items during **Stock Counting** according to the configured rule, providing more control over inventory counting. |
 | Improved | WMS Client | The **bottom navigation bar** is easier to use on smaller screens. The middle button is more prominent, and button labels remain centered without being cut off. |
-| Improved | WMS Options | The **progress indicator and activity indicator** can no longer be enabled at the same time. Enabling one automatically disables the other, preventing conflicting settings. |
+| Improved | WMS Options | The progress indicator is now enabled by default, while the activity indicator is disabled by default. This displays the progress bar at the bottom of the screen instead of the spinning indicator in the center. You can change these settings in **WMS Options**. |
 | Improved | Item Information | **Item and Batch/Serial information screens** now provide more space for item codes, item names, and batch numbers, reducing unnecessary text wrapping. |
 | Improved | WMS Client | **Menu labels** and **Storage Unit actions** are clearer and more consistent. Menu text alignment has been improved, return transactions are labeled **Return from Sales** and **Return from Purchasing**, and missing translations for Storage Unit actions have been added. |
 | Fixed | Delivery | **Delivery** no longer fails with input string conversion errors when processing documents or adding existing Storage Units to a new Delivery. |
 | Fixed | Delivery | Partial quantities entered for a new Storage Unit are now allocated correctly, preventing the full quantity from being allocated when only part was specified. Newly created SUs can also be removed from a Delivery. |
-| Fixed | Delivery | **Catch-weight items packed in Storage Units** now retain the correct quantities and weights when a **Delivery** is saved as a draft. Weight is calculated correctly for individual lines and sublines, price rescaling is applied correctly, and **Deliveries based on A/R Reserve Invoices** recognize catch-weight items. |
 | Fixed | Delivery | **Line-level user-defined fields**, including required fields, are now available when a **Delivery** contains **Storage Units**, allowing the document to be completed correctly. |
 | Fixed | Delivery / Pick and Pack | Available stock quantities now account for stock already committed, picked, or packed into Storage Units, preventing quantities from being picked or delivered more than once. |
 | Fixed | Delivery from Pick List | Processing a **Delivery from one Pick List** no longer closes another **Pick List** for the same Sales Order line, allowing separate Pick Lists to be processed independently. |
@@ -60,7 +59,6 @@ Below are the release notes for CompuTec WMS Plugin, highlighting new features, 
 | Fixed | Goods Issue | **Goods Issue** and similar transactions can now be saved after entering line-level UDFs from the **Quantity** screen, without encountering an object reference error. |
 | Fixed | SAP Production Receipt | **Save & Return** now saves the pending document line correctly, preventing entered information from being lost when returning to the previous screen. |
 | Fixed | SAP Production Receipt | **Receipts from Production** created in CompuTec WMS now generate print requests through **Event Triggers**, allowing configured printing processes to run. |
-| Fixed | Dispatch Control | **Dispatch Control** now handles deliveries that have been removed without failing, improving reliability when processing dispatch records. |
 | Fixed | Dispatch Control | The previous dispatch log functionality remains available alongside the new **Dispatch Control** process, under the **Dispatch Logs** menu entry. |
 | Fixed | WMS Client | **CompuTec WMS Client** now maintains a more reliable login session after SAP connection errors, preventing repeated login prompts. |
 | Fixed | WMS Client | Main menu buttons now respond correctly after returning from a transaction when **CompuTec WMS Client** runs through **Remote Desktop (RDP)**. |
