@@ -6,6 +6,70 @@ sidebar_position: 4
 
 Below are the release notes for CompuTec WMS Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec WMS 3.2610.1
+
+**Release Date: 24 October 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | Dispatch Control | You can now verify dispatched goods using the new **Dispatch Control** process. Scan goods against configurable rules for Storage Unit codes, quantities, and SSCC verification codes. Rules assigned to a specific Business Partner take priority over general rules. Items are verified one row at a time, each step is logged, and the **Reset** option releases a locked row when necessary. |
+| Added | Pick and Pack | You can now scan a bin location to filter **Pick List** lines. Items available in or allocated from the scanned bin appear first, followed by the remaining items, helping you locate and pick stock more efficiently. |
+| Added | Delivery | You can now create a **parent Storage Unit (SU)** when processing a **Delivery from a Pick List** and pack existing Storage Units into it without specifying a bin location. |
+| Added | Delivery | You can now change item quantities inside an existing Storage Unit or remove an item from the SU by setting its quantity to `0`. Removed items remain available in **Document Details**. |
+| Added | Stock Transfer | You can now select all **Storage Units** at once using the new **Select All** button, reducing manual selection when transferring multiple SUs. |
+| Added | Storage Units | **Storage Unit** codes are now generated automatically when an SU is posted through the API, including the `Code`, `U_Code`, and `U_SSCC` fields. |
+| Added | WMS Client | You can now configure font-size templates for all **WMS Clients** or individual clients, making it easier to adjust text size for different devices and users. |
+| Added | WMS Client | You can now open context actions by long-pressing a list item on mobile devices or right-clicking it on desktop. For example, **Storage Units in Goods Receipt PO** provide actions such as **Pin SU**, **Add a Child SU**, **Add a New Item**, **Clear Out**, and **Delete SU**. |
+| Improved | Warehouse and Bin Selection | **Warehouse and bin location selection** is now more consistent across warehouse transactions, including **Goods Receipt PO**, **Delivery**, **Stock Transfer**, **Pick and Pack**, and **SU Quick Transfer**. The warehouse/bin area bar and its tooltip behave consistently, and scanning a warehouse or bin updates the default location more reliably. |
+| Improved | Goods Receipt | **Goods Receipt** now uses the standardized WMS navigation, making its workflow consistent with other warehouse transactions. User-defined fields (UDFs) configured with **Show in Main** are displayed on the main screen, and the warehouse/bin area bar is available on the **Document Lines** step. |
+| Improved | Goods Receipt PO | **Goods Receipt PO labels and translations** have been updated to align with the standardized WMS navigation. |
+| Improved | Goods Issue | **Goods Issue** now uses the standardized WMS navigation, with clearer feedback when scanning Storage Units. Existing SU scan issues display warnings, closed SUs show why they cannot be used, and bin and serial number scanning are handled more reliably. |
+| Improved | Stock Transfer | **Stock Transfer** screens, labels, and translations have been aligned with the standardized WMS navigation, providing a more consistent experience across transactions. |
+| Improved | User-Defined Fields | You can now display header and line UDFs on the main screen for **Inventory Transfer**, **Inventory Transfer Request**, and **MOR Request** using the **Show in Main** option. |
+| Improved | Pick and Pack | **Pick List** scanning is now faster, as fully picked lines are skipped when the system selects a line after scanning. Pick Lists in warehouses without bin locations also load faster. |
+| Improved | Pick and Pack | **Pick and Pack** performance and error reporting have been improved, making warehouse operations more responsive and easier to troubleshoot. |
+| Improved | Pick and Pack | Available quantities for batch- and serial-managed items are now determined after the relevant batch or serial number is selected, preventing unselected stock from being included in picking quantities. |
+| Improved | Delivery | **Delivery** now retrieves **Pick List** allocations more efficiently, improving performance when processing deliveries based on Pick Lists. |
+| Improved | Stock Counting | You can now freeze items during **Stock Counting** according to the configured rule, providing more control over inventory counting. |
+| Improved | WMS Client | The **bottom navigation bar** is easier to use on smaller screens. The middle button is more prominent, and button labels remain centered without being cut off. |
+| Improved | WMS Options | The **progress indicator and activity indicator** can no longer be enabled at the same time. Enabling one automatically disables the other, preventing conflicting settings. |
+| Improved | Item Information | **Item and Batch/Serial information screens** now provide more space for item codes, item names, and batch numbers, reducing unnecessary text wrapping. |
+| Improved | WMS Client | **Menu labels** and **Storage Unit actions** are clearer and more consistent. Menu text alignment has been improved, return transactions are labeled **Return from Sales** and **Return from Purchasing**, and missing translations for Storage Unit actions have been added. |
+| Fixed | Delivery | **Delivery** no longer fails with input string conversion errors when processing documents or adding existing Storage Units to a new Delivery. |
+| Fixed | Delivery | Partial quantities entered for a new Storage Unit are now allocated correctly, preventing the full quantity from being allocated when only part was specified. Newly created SUs can also be removed from a Delivery. |
+| Fixed | Delivery | **Catch-weight items packed in Storage Units** now retain the correct quantities and weights when a **Delivery** is saved as a draft. Weight is calculated correctly for individual lines and sublines, price rescaling is applied correctly, and **Deliveries based on A/R Reserve Invoices** recognize catch-weight items. |
+| Fixed | Delivery | **Line-level user-defined fields**, including required fields, are now available when a **Delivery** contains **Storage Units**, allowing the document to be completed correctly. |
+| Fixed | Delivery / Pick and Pack | Available stock quantities now account for stock already committed, picked, or packed into Storage Units, preventing quantities from being picked or delivered more than once. |
+| Fixed | Delivery from Pick List | Processing a **Delivery from one Pick List** no longer closes another **Pick List** for the same Sales Order line, allowing separate Pick Lists to be processed independently. |
+| Fixed | Delivery from Pick List | **Serial-managed items with empty serial numbers** no longer produce doubled quantities when packed into Storage Units and processed through **Delivery from Pick List**. |
+| Fixed | Pick and Pack | Picking into negative stock now works when negative inventory is allowed, including in warehouses without bin locations. This resolves incorrect errors such as `Cannot pick more than 0` and `Cannot pick more than -1`. |
+| Fixed | Pick and Pack | Available quantities are now calculated correctly when several Pick List lines contain the same item, preventing incorrect picking limits. |
+| Fixed | Pick and Pack | The **Existing SU list** now displays eligible Storage Units when picking by scanning, while excluding SUs already allocated to another Pick List. |
+| Fixed | Pick and Pack | Scanning a Storage Unit from a different warehouse now displays a clear message, helping users identify why the SU cannot be used. |
+| Fixed | Pick and Pack | You can now pick the same batch from stock inside and outside Storage Units in the same bin location, without encountering reference or insufficient-stock errors. |
+| Fixed | Stock Transfer | All scanned Storage Units now move to the selected destination bin, preventing individual SUs from being incorrectly assigned to `SYSTEM-BIN-LOCATION`. |
+| Fixed | Stock Transfer from Request | Scanned Storage Units are now assigned to the correct request line based on the required bin location, instead of being assigned to the next line. The selected sort order is also restored after returning from the SU FIFO list. |
+| Fixed | Stock Transfer | **Storage Units selected from the SU FIFO list** are now removed from the available selection list, preventing repeated selection. |
+| Fixed | Stock Transfer | You can now select the correct bin location when transferring a batch stored in multiple bins using the **Batch & Bin** workflow. |
+| Fixed | Stock Transfer | **Numeric warehouse codes**, such as `92`, are now recognized correctly, preventing the `Incorrect WhseCode` error when scanning or selecting a warehouse. |
+| Fixed | Stock Transfer | **Inventory Transfers based on requests** now display the additional document list fields correctly, making the relevant information available during transaction selection. |
+| Fixed | Storage Units | Existing Storage Units can now be added to a new parent SU when **Extra SQL Fields** on **Document Details** is enabled, without causing an error. |
+| Fixed | Goods Receipt PO | UDFs linked to tables now appear as dropdown lists instead of free-text fields, allowing users to select valid values in Goods Receipt PO and other supported transactions. |
+| Fixed | Goods Receipt PO | **Serial-managed items** no longer display duplicate **Remove** buttons. |
+| Fixed | Goods Receipt PO / Delivery | **Picked batches of catch-weight items** can now be removed correctly, allowing users to adjust batch selections in **Goods Receipt PO** and **Delivery**. |
+| Fixed | Goods Receipt PO | **Goods Receipt PO** now handles item selection and bin locations more reliably, resolving reference errors and bin-selection problems that could also affect **Delivery** and **Stock Transfer**. |
+| Fixed | Goods Issue | **Goods Issue** and similar transactions can now be saved after entering line-level UDFs from the **Quantity** screen, without encountering an object reference error. |
+| Fixed | SAP Production Receipt | **Save & Return** now saves the pending document line correctly, preventing entered information from being lost when returning to the previous screen. |
+| Fixed | SAP Production Receipt | **Receipts from Production** created in CompuTec WMS now generate print requests through **Event Triggers**, allowing configured printing processes to run. |
+| Fixed | Dispatch Control | **Dispatch Control** now handles deliveries that have been removed without failing, improving reliability when processing dispatch records. |
+| Fixed | Dispatch Control | The previous dispatch log functionality remains available alongside the new **Dispatch Control** process, under the **Dispatch Logs** menu entry. |
+| Fixed | WMS Client | **CompuTec WMS Client** now maintains a more reliable login session after SAP connection errors, preventing repeated login prompts. |
+| Fixed | WMS Client | Main menu buttons now respond correctly after returning from a transaction when **CompuTec WMS Client** runs through **Remote Desktop (RDP)**. |
+| Fixed | WMS Client | List text and status colors now meet WCAG 2.1 AA contrast requirements, making selected rows and completed or partially processed lines easier to distinguish. |
+| Fixed | WMS Client | **CompuTec WMS Scanning Simulator** and **CompuTec WMS Settings** icons are now visible in **Windows dark mode**, and minor button styling issues have been corrected. |
+| Fixed | WMS Server | Updating **CompuTec WMS Server** no longer resets the configured SSL certificate setting, preserving the existing configuration during upgrades. |
+| Fixed | Barcoder Settings | The test query result is now displayed in **Barcoder Settings**, making it easier to verify the query configuration. |
+
 ## CompuTec WMS Plugin 3.2609.1
 
 **Release Date: 16 September 2026**
