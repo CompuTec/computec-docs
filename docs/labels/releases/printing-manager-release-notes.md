@@ -8,21 +8,6 @@ toc_max_heading_level: 4
 
 Below are the release notes for CompuTec Labels Printing Manager, highlighting new features, improvements, and bug fixes in this release.
 
-## CompuTec Labels Printing Manager 4.9.0
-
-**Release Date: 20 October 2026**
-
-| Issue Type | Component | Release Note |
-| --- | --- | --- |
-| Added | Monitoring | You can now monitor printing activity from the new dashboard, which displays print request statistics for today, the last 7 days, or the last 30 days. Review completed requests, requests with no output, errors, success rates, daily trends, printing activity by transaction, printer usage, recent errors, and the status of Labels Service, License Server, and printer licenses. |
-| Added | Request Flow | You can now view the processing flow of a print request as a diagram, with separate paths for labels and reports, branches for matched printing rules, processing durations, and a timeline. If a request produces no output, the diagram suggests checking printing rules or Auto Event Triggers. |
-| Improved | Print Requests | You can now manage print requests directly from the request list using the three-dot menu or right-click. Available actions include **Details**, **Request Flow**, **Process Log**, **Retry**, **Mirror**, and **Mirror to Printer**. Request details open in a resizable side panel, and the list updates automatically when requests are added or their statuses change, without losing your selection. |
-| Improved | Print Requests | Requests that produce no output because no printing rule or template matches now have the `Nothing` status instead of `Zero Result`. These requests are not treated as errors and do not reduce the printing success rate. |
-| Improved | Label Layouts | **Label Templates** and **Label Reports** are now managed from a single screen, making layout configuration easier. You can assign a default layout file for each driver type, which is used when a printer has no specific layout file. The new **Assign / Remove Printers** wizard replaces the previous **Layout Manager**. |
-| Improved | Company Configuration | **Printing Rules**, **Parameter Mappings**, **Auto Event Triggers**, **Report Rules**, and **Settings** are now available in a single configuration view, reducing the need to open separate windows. You can also group Printing Rules and edit **Parameter Mapping SQL** queries using a multiline editor. |
-| Improved | Printer Management | **Printer configuration** now provides clearer information about licenses and printing capabilities. The printer list includes a license summary and a new **Scenario** column showing whether a printer supports labels, reports, or both. Changes are saved immediately, and Printer Settings combine printer definitions and driver parameters with options to print test labels and reports. |
-| Improved | User Interface | **CompuTec Labels Printing Manager** now features a redesigned interface with light and dark themes, accent colors, adjustable font sizes, consistent icons, and navigation grouped into **Operations**, **Print Setup**, and **Settings**. A **Back** button makes navigation easier, while **General** has been renamed to **Service & Connections** and **Event Triggers** to **Auto Event Triggers**. |
-
 ## CompuTec Labels Printing Manager 4.8.9
 
 **Release Date: 22 September 2026**
