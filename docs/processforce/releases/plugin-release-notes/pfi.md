@@ -6,6 +6,15 @@ sidebar_position: 13
 
 Below are the release notes for CompuTec Data Import & Export (PFI) Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec PFI 3.2610.1
+
+**Release Date: 24 October 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Improved | Import to SAP | **Import to SAP now processes each import batch as a single unit of work**, improving import reliability and preventing concurrent update conflicts. Records with duplicate keys within the same batch are rejected with a clear error message instead of causing a `Concurrent update conflict detected` error. |
+| Improved | Import File Validation | **Records with duplicate keys are now identified as soon as the import file is loaded**, allowing you to identify and correct duplicates before starting the import. |
+
 ## CompuTec PFI 3.2609.1
 
 **Release Date: 7 September 2026**
