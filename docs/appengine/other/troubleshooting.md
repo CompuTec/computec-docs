@@ -4,9 +4,7 @@ sidebar_position: 2
 
 # Troubleshooting
 
-## Troubleshooting
-
-### Problem: CompuTec AppEngine restarts during long-running operations
+## Problem: CompuTec AppEngine restarts during long-running operations
 
 In some environments, AppEngine may restart while processing long-running operations such as plugin installation, database setup, or other tasks that keep the SAP connection locked for an extended period.
 
