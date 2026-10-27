@@ -158,7 +158,7 @@ There are tow types of CustomViews endpoints:
 
     `/odata/CustomViews/Custom(Id={Id})`
 
-### Crating Custom View in Plugin
+### Creating Custom View in Plugin
 
 Custom views are highly useful when there is a need to display data from multiple tables or views. To create a Custom View, you must add a JSON file named `{anyName}.customview.json` inside the CustomViews directory. This file needs to be set to be copied to the output directory in the project file. To apply this for all `CustomViews` files, add the following code to the project file:
 
