@@ -14,6 +14,15 @@ You can find all [download links](/docs/appengine/2.0/releases/plugins/pdc/downl
 However, we strongly recommend using **CompuTec PDC 4.0 Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec PDC 4.2610.2
+
+**Release Date: 29 October 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Improved | Task Tile | The four additional custom buttons on the **Task Tile** are now larger, providing more space to display custom information. |
+| Fixed | Goods Issue / Goods Receipt | When the **Allow multiple warehouses for issue/receipt** option is disabled, **Goods Issue** and **Goods Receipt** now use only the warehouse assigned in the resource master data. Users can no longer select other warehouses. |
+
 ## CompuTec PDC 4.2610.1
 
 **Release Date: 7 October 2026**

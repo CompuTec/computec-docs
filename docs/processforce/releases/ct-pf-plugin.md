@@ -11,6 +11,56 @@ You can find all download links and release notes for the latest available **Com
 However, we strongly recommend using **CompuTec ProcessForce Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec ProcessForce 3.2610.4
+
+**Release Date: 30 October 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | Manufacturing Orders | **You can now return over-issued components directly from a Manufacturing Order**, either fully or partially, using the context menu. Components can be returned individually without rolling back the entire Goods Issue. The **Documents** tab also displays the returned quantities. |
+| Added | Manufacturing Order API | New API endpoints provide information about returnable component issues, components, and batches, allowing web clients to support component returns. |
+| Added | Manufacturing Orders | **Residual component quantities can now be issued through a standard Goods Issue** using the Manufacturing Order context menu. A new CompuTec AppEngine job also allows residual quantities to be issued for all open Manufacturing Orders. |
+| Added | License Assignment | A new read-only matrix in the **CompuTec ProcessForce License Assignment** window displays users and their license modules, making it easier to review license assignments. |
+| Added | Plant Maintenance | **Material List grids now support selecting and deleting multiple rows at once.** You can also select multiple items from the **Choose From List** in Maintenance Orders, Maintenance Order Templates, and Material Lists. |
+| Improved | Manufacturing Orders | Changing the revision of a Manufacturing Order now preserves its planned header quantity instead of resetting it to `1`. |
+| Improved | Manufacturing Orders | The **Documents** tab now includes an **Item Description** column, making it easier to identify items associated with production documents. |
+| Improved | Resource Planning Board | Item descriptions are now displayed alongside the corresponding items. |
+| Improved | Quality Control | Test protocols are now created by the CompuTec ProcessForce plugin for items whose item group has a defined test protocol, in addition to creation through the background job. |
+| Improved | BOM Synchronization | Synchronized SAP Bills of Materials now store the original CompuTec ProcessForce item code, revision, and BOM code in dedicated user-defined fields (UDFs). |
+| Improved | License Management | Newly imported CompuTec ProcessForce licenses are automatically selected for the current company database. |
+| Improved | Manufacturing Order Operations | **Operation status changes are now validated and associated resources are updated accordingly.** For example, an operation cannot be changed back to **Not Started** after time has been recorded. |
+| Improved | Item Master Data | **MSDS** labels have been renamed to **SDS** (Safety Data Sheet) in **Item Details** and related master data forms. |
+| Improved | Manufacturing Order API | Component return requests now provide clearer validation errors, returning `HTTP 400` instead of `HTTP 500` when a business rule prevents the return. |
+| Improved | Plant Maintenance | The **Position** field has been removed from the updated Plant Maintenance layouts. |
+| Improved | User Interface | **Supplier Score Card** has been renamed to **Supplier Scorecard** in English interface labels and menus. |
+| Fixed | Scheduling Board | **Splitting a Manufacturing Order with Clone Sales Order reference enabled now preserves the correct Sales Order line, item, and warehouse.** Linked quantities are distributed proportionally between the resulting orders instead of being duplicated. |
+| Fixed | Manufacturing Orders | Phantom item quantities now preserve the correct decimal precision on Manufacturing Orders. |
+| Fixed | Resource Management Board | Freezing a task no longer resets its setup time to zero. |
+| Fixed | MRP 2.5 | **Warehouse internal lead time is now applied only to inventory transfer recommendations**, preventing unintended date changes in purchase and production recommendations. |
+| Fixed | MRP | Recommendations now use the warehouse specified in the MRP scenario settings, including the **Generate to Default Warehouse for Item** option. |
+| Fixed | MRP 2.5 | Items configured with **Minimum - Maximum** inventory levels now appear correctly in **Order Recommendations**. |
+| Fixed | Bill of Materials | A Bill of Materials can now be created for an item already used as a co-product in another Bill of Materials. |
+| Fixed | Ingredient Master Data | Saved certificates are now displayed correctly in the **Certificates** grid. |
+| Fixed | Item Revisions | Item revisions referenced by a Bill of Materials can no longer be deleted. An appropriate validation message is displayed instead of an `Object reference` error. |
+| Fixed | Master Data | Deleting the last remaining business partner relation or ingredient certificate now removes the record from the database correctly. |
+| Fixed | Health Check | The orphaned Ingredient references check no longer crashes and now lists the orphaned references it detects. |
+| Fixed | Goods Issue Corrections | **Goods Issue corrections and component returns now preserve the offset account, dimensions, and batch costs** of the original document. |
+| Fixed | Manufacturing Orders | Duplicating a Manufacturing Order no longer copies operation statuses, rescheduling flags, recommended dates, or progress information from the source order. Duplicated Manufacturing Orders no longer retain links to documents belonging to the source order, including closing journal entries. |
+| Fixed | Manufacturing Order Closing | **Resolved duplicate journal entries and duplicate row ID errors** when closing Manufacturing Orders. Health Check can now identify orphaned closing journal entries. |
+| Fixed | Goods Receipt / GRPO | Batch and serial numbers are now generated using the configured template hierarchy when creating Goods Receipts and Goods Receipt POs: **Item Details**, **Item Group**, then **General Settings**. |
+| Fixed | Pick Receipt / Pick Order | The batch selection window no longer opens twice when you select **Add** directly. |
+| Fixed | Manufacturing Orders | Creating semi-finished products for a Manufacturing Order with existing child orders no longer causes a `UserDataSource` error. |
+| Fixed | Semi-Finished Product Scheduling | The prompt to add the remaining quantity now appears only when the quantity has changed. |
+| Fixed | Manufacturing Order Operations | Assigning a word code to operation properties no longer causes SAP Business One to freeze or crash. |
+| Fixed | Resource Groups | Creating a Resource Group no longer fails with a Form Data Event exception. |
+| Fixed | Resource Groups | Resource balancing cannot be enabled when any resource in the group has a run time of zero, preventing invalid configurations. |
+| Fixed | Goods Receipts | **Co-product and scrap lines now inherit the project** from the Manufacturing Order line or header, as applicable. |
+| Fixed | Goods Issue / Goods Receipt Corrections | Rolling back Goods Issues and Goods Receipts now preserves the classification of the original documents. |
+| Fixed | Pick Receipt | Creating a Goods Receipt from a Pick Receipt covering two Manufacturing Orders with serial-managed items no longer fails. |
+| Fixed | Resource Calendars | The calendar selection list now displays the resource name in the **Name** column instead of an internal code. Existing records are corrected during installation. |
+| Fixed | License Assignment | Corrected the scaling of the **License Type** column in the **CompuTec ProcessForce License Assignment** window. |
+| Fixed | Plant Maintenance | Layout previews now work correctly for Maintenance Orders, Maintenance Order Templates, and Maintainable Items on both SAP HANA and Microsoft SQL Server. |
+
 ## CompuTec ProcessForce 3.2610.2
 
 **Release Date: 21 October 2026**
