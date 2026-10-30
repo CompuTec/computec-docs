@@ -2,8 +2,6 @@
 sidebar_position: 6
 ---
 
-
-
 # Creating Custom MCP Tools/Resources
 
 CompuTec AppEngine uses the [Model Context Protocol](https://modelcontextprotocol.github.io/csharp-sdk/index.html) library to create and expose the MCP protocol. Creating an MCP tool is straightforward. We have injected the `ICoreCompany` session support for authorization and access to SAP B1 and AppEngine features.

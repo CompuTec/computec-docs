@@ -15,7 +15,10 @@ Before you begin, make sure the following prerequisites are met:
 * **OIDC authentication** is enabled in **SAP Business One**.  
 Here's how to check it:
   * In the **SAP SLD server**, open the **Identity Providers** tab.
-  * Make sure that **SAP Business One Authentication Server** is enabled.
+
+    ![alt text](media/mcp-server/mcp-ident-prov.png)
+
+  * Make sure that **SAP Business One Authentication Server** is active.
 
 ## Enable MCP for a company in CompuTec AppEngine
 
