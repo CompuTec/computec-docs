@@ -18,7 +18,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 | Issue Type | Component | Release Note |
 | --- | --- | --- |
 | Added | Manufacturing Orders | **You can now return over-issued components directly from a Manufacturing Order**, either fully or partially, using the context menu. Components can be returned individually without rolling back the entire Goods Issue. The **Documents** tab also displays the returned quantities. |
-| Added | Manufacturing Order API | New API endpoints provide information about returnable component issues, components, and batches, allowing web clients to support component returns. |
+| Added | Manufacturing Order API | The new `ReturnComponents` action allows components to be returned fully or partially through the API. Additional endpoints provide information about returnable issues, components, and batches. Requests rejected by business rules return `HTTP 400` with a clear error message. |
 | Added | Manufacturing Orders | **Residual component quantities can now be issued through a standard Goods Issue** using the Manufacturing Order context menu. A new CompuTec AppEngine job also allows residual quantities to be issued for all open Manufacturing Orders. |
 | Added | License Assignment | A new read-only matrix in the **CompuTec ProcessForce License Assignment** window displays users and their license modules, making it easier to review license assignments. |
 | Added | Plant Maintenance | **Material List grids now support selecting and deleting multiple rows at once.** You can also select multiple items from the **Choose From List** in Maintenance Orders, Maintenance Order Templates, and Material Lists. |
@@ -30,11 +30,9 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 | Improved | License Management | Newly imported CompuTec ProcessForce licenses are automatically selected for the current company database. |
 | Improved | Manufacturing Order Operations | **Operation status changes are now validated and associated resources are updated accordingly.** For example, an operation cannot be changed back to **Not Started** after time has been recorded. |
 | Improved | Item Master Data | **MSDS** labels have been renamed to **SDS** (Safety Data Sheet) in **Item Details** and related master data forms. |
-| Improved | Manufacturing Order API | Component return requests now provide clearer validation errors, returning `HTTP 400` instead of `HTTP 500` when a business rule prevents the return. |
-| Improved | Plant Maintenance | The **Position** field has been removed from the updated Plant Maintenance layouts. |
 | Improved | User Interface | **Supplier Score Card** has been renamed to **Supplier Scorecard** in English interface labels and menus. |
 | Fixed | Scheduling Board | **Splitting a Manufacturing Order with Clone Sales Order reference enabled now preserves the correct Sales Order line, item, and warehouse.** Linked quantities are distributed proportionally between the resulting orders instead of being duplicated. |
-| Fixed | Manufacturing Orders | Phantom item quantities now preserve the correct decimal precision on Manufacturing Orders. |
+| Fixed | Manufacturing Orders | **Manufacturing Orders created concurrently from the same Bill of Materials now receive the correct phantom component quantities**, preventing inflated quantities when multiple orders are generated at the same time, for example from a Sales Order. Quantities calculated by BOM explosion for phantom components, co-products, and scrap are rounded to six decimal places, ensuring consistent planned quantities whether orders are created through the form or API. |
 | Fixed | Resource Management Board | Freezing a task no longer resets its setup time to zero. |
 | Fixed | MRP 2.5 | **Warehouse internal lead time is now applied only to inventory transfer recommendations**, preventing unintended date changes in purchase and production recommendations. |
 | Fixed | MRP | Recommendations now use the warehouse specified in the MRP scenario settings, including the **Generate to Default Warehouse for Item** option. |
@@ -59,7 +57,7 @@ However, we strongly recommend using **CompuTec ProcessForce Plugin** together w
 | Fixed | Pick Receipt | Creating a Goods Receipt from a Pick Receipt covering two Manufacturing Orders with serial-managed items no longer fails. |
 | Fixed | Resource Calendars | The calendar selection list now displays the resource name in the **Name** column instead of an internal code. Existing records are corrected during installation. |
 | Fixed | License Assignment | Corrected the scaling of the **License Type** column in the **CompuTec ProcessForce License Assignment** window. |
-| Fixed | Plant Maintenance | Layout previews now work correctly for Maintenance Orders, Maintenance Order Templates, and Maintainable Items on both SAP HANA and Microsoft SQL Server. |
+| Fixed | Plant Maintenance | Layout previews now work correctly for **Maintenance Orders**, **Maintenance Order Templates**, and **Maintainable Items** on both SAP HANA and Microsoft SQL Server. The obsolete **Location** field has also been removed from the **Maintainable Item** layout. |
 
 ## CompuTec ProcessForce 3.2610.2
 
