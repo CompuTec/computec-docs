@@ -39,6 +39,10 @@
     "message": "CompuTec AppEngine",
     "description": "The label of footer link with label=CompuTec AppEngine linking to docs\\appengine"
   },
+  "link.item.label.CompuTec AI": {
+    "message": "CompuTec AI",
+    "description": "The label of footer link with label=CompuTec AI linking to docs\ai"
+  },
   "link.item.label.CompuTec Premium": {
     "message": "CompuTec Premium",
     "description": "The label of footer link with label=CompuTec Premium linking to docs\\premium"

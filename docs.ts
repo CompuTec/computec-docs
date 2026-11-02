@@ -94,5 +94,11 @@ export default (production?: boolean) => ([
         pluginId: "premium",
         currentVersion: "1.0",
         includeCurrentVersion: true,
+    },
+    {
+        label: "AI",
+        pluginId: "ai",
+        currentVersion: "1.0",
+        includeCurrentVersion: true,
     }
 ] as DocConfig[]);

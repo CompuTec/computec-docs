@@ -23,6 +23,10 @@
     "message": "AppEngine",
     "description": "Navbar item with label AppEngine"
   },
+  "item.label.AI": {
+    "message": "AI",
+    "description": "Navbar item with label AI"
+  },
   "item.label.Premium": {
     "message": "Premium",
     "description": "Navbar item with label Premium"
