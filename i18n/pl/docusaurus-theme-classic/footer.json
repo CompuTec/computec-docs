@@ -41,7 +41,7 @@
   },
   "link.item.label.CompuTec AI": {
     "message": "CompuTec AI",
-    "description": "The label of footer link with label=CompuTec AI linking to docs\ai"
+    "description": "The label of footer link with label=CompuTec AI linking to docs\\ai"
   },
   "link.item.label.CompuTec Premium": {
     "message": "CompuTec Premium",
