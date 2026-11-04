@@ -46,11 +46,11 @@ To allow users to perform actions through **MCP**, follow these steps:
 
 4. Use **Find Next** field to locate the ``Allow MCP Server to execute modification commands`` authorization.
 
-    ![Allow MCP Server to execute modification commands authorization in sap budiness one](media/mcp-server/mcp-serv-7.png)
+    ![Allow MCP Server to execute modification commands authorization in sap business one](media/mcp-server/mcp-serv-7.png)
 
 5. Assign it to the required users or groups.
 
-    ![assigning authorizations to chosen users or gorups in sap b1](media/mcp-server/mcp-serv-8.png)
+    ![assigning authorizations to chosen users or groups in sap b1](media/mcp-server/mcp-serv-8.png)
 
 6. Save the changes.
 
@@ -119,7 +119,7 @@ The **MCP Server** provides several ready-to-use tools:
 :::note[info]
 If you have an idea for a useful **MCP** tool, feel free to share it with us - we'll consider adding it as a standard feature in **CompuTec AppEngine**.
 
-You can also create **your own tools** by developing a [custom CompuTec AppEngine plugin](/docs/appengine/administrators-guide/configuration-and-administration/mcp-server-for-sap-b1/ae-mcp-tool).
+You can also create **your own tools** by developing a [custom CompuTec AppEngine plugin](/docs/appengine/developers-guide/basic-and-business-logic/appengine-plugin/ae-mcp-tool).
 :::
 
 ### Troubleshooting MCP Activation
@@ -136,7 +136,7 @@ If the **MCP Server** is not working, follow these steps:
 3. If the **MCP** indicator is disabled, please make sure that all requirements are met.
 4. If the indicator is still off, please go to **CompuTec AppEngine Administration Panel** > **Configuration** and press the **Discover** button.
 
-   ![ the discover button in appengine adimistration panel > configuration](media/mcp-server/mcp-serv-claude-001.png)
+   ![the discover button in appengine administration panel > configuration](media/mcp-server/mcp-serv-claude-001.png)
 
 ## Connect Claude Desktop to SAP Business One by CompuTec AppEngine
 

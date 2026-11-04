@@ -33,13 +33,12 @@ You ask a question in an AI client, **CompuTec MCP Server** gets the data from S
 With **CompuTec MCP Server**, you can:
 
 - **Read SAP Business One data** – Ask about business partners, items, orders, invoices, Production Orders, batches, and more.
+- **Work with CompuTec applications** – Read, and with permission create and change, the objects of the applications that run in **CompuTec AppEngine**, for example **CompuTec ProcessForce**.
 - **Combine data from several areas** – Ask one question that uses sales, purchasing, production, and finance data together.
 - **Create and update data** – Create documents and update master data, but only for users who have the required authorization.
 - **Open records in SAP Business One** – Ask the AI client to open a document or master data record in SAP Business One or in the web client.
 - **Check inventory levels and approval procedures** – Get the current stock and the status of approvals.
-- **Add your own tools** – Build custom MCP tools for your business workflows in a **CompuTec AppEngine** plugin.
-
-For the complete list of tools, see the **CompuTec MCP Server built-in tools** article.
+- **Add your own tools** – Build custom MCP tools for your business workflows in a **CompuTec AppEngine** plugin. For the complete list of tools, see the **CompuTec MCP Server built-in tools** article.
 
 ## Security and authorizations
 
@@ -51,9 +50,7 @@ For the complete list of tools, see the **CompuTec MCP Server built-in tools** a
 - AI clients show the tool they are about to run. <!-- TODO: verify with developers whether approval before a tool runs depends on the AI client and its settings, and reword if so. -->
 
 :::warning[Important]
-
 Start with read-only users and a test company. Assign the modification authorization only after you have checked the results on test data.
-
 :::
 
 For the steps, see **Security and authorizations**.
