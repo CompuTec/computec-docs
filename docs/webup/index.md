@@ -7,12 +7,6 @@ sidebar_position: 1
 **Version:** 1.0  
 **Platform:** CompuTec AppEngine (AE) Framework for SAP Business One Web Client
 
-:::info[note]
-**CompuTec WebUp** is part of the **CompuTec AppEngine** ecosystem.  
-
-It is offered in preview **from October 2025 to March 2026** under the **CompuTec WebUp Preview Program**, allowing you to explore its customization and automation capabilities within the SAP Business One Web Client.
-:::
-
 ## About CompuTec WebUp
 
 **CompuTec WebUp** is a browser-based customisation and automation toolkit that lets you shape the SAP Business One Web Client interface. Instead of working with complex customization layers or coding, you can edit the screens, add helpful interactions, and apply business rules directly in your browser.

@@ -60,23 +60,24 @@ To use CompuTec WebUp, install the following browser extensions:
 - **CompuTec WebUp Manager** – a browser extension used to create, edit, and test CompuTec WebUp configurations.
 - **CompuTec WebUp Client** – a browser extension that extends the SAP Business One Web Client where the standard extensibility framework is limited.
 
-:::info[note]
-The **CompuTec WebUp browser extensions** are available in the **Chrome Web Store**.
+:::info[Note]
+On SAP Business One Web Client 2602 and later, CompuTec WebUp extensions use the Web Client's authentication to communicate with CompuTec AppEngine. For these requests, you don't need the **CompuTec WebUp Client** browser extension. The extension is still required for other scenarios.
+:::
 
-For **Google Chrome** and other Chromium-based browsers, such as **Microsoft Edge**, we recommend installing the extensions directly from the Chrome Web Store. This is the **recommended installation method** and does not require enabling Developer mode or loading the extensions manually.
+:::info[note]
+The extensions are available in the **Chrome Web Store** and **Firefox Browser ADD-ONS** store under the **CompuTec S.A.** publisher. This is the recommended method for Firefox, Google Chrome and Chromium-based browsers, such as Microsoft Edge. Developer mode is not needed for this method. Before you install an extension, check that the publisher is **CompuTec S.A.**
 
 **CompuTec WebUp Manager** is **not available** for **Mozilla Firefox**. For consultant or key-user functionality, use **Google Chrome** or **Microsoft Edge**.
 
 Manual installation using CompuTec installation packages is still available when required. For instructions, see [**Manual Browser Extension Installation**](/docs/webup/other/extension-manual-installation).
-
 :::
 
-To install CompuTec WebUp browser extensions from the Chrome Web Store, follow these steps:
+To install CompuTec WebUp browser extensions, follow these steps:
 
 <Tabs>
   <TabItem value="chrome" label="Google Chrome" default>
 
-1. Open the CompuTec WebUp extensions in the **Chrome Web Store**:
+1. Open the **CompuTec WebUp Manager** and **CompuTec WebUp Client** listings in the **Chrome Web Store**, and check that the publisher is **CompuTec S.A.**:
     - [**CompuTec WebUp Manager**](https://chromewebstore.google.com/detail/computec-webup-manager/agdmmdghpkllidfeajciepkcchlijpmf)
     - [**CompuTec WebUp Client**](https://chromewebstore.google.com/detail/computec-webup-client/mgglbjhibagmkneodlhinpelnpdedfgi)
 
@@ -98,7 +99,7 @@ To install CompuTec WebUp browser extensions from the Chrome Web Store, follow t
 
   <TabItem value="edge" label="Microsoft Edge">
 
-1. Open the CompuTec WebUp extensions in the **Chrome Web Store**:
+1. Open the **CompuTec WebUp Manager** and **CompuTec WebUp Client** listings in the **Chrome Web Store**, and check that the publisher is **CompuTec S.A.**:
     - [**CompuTec WebUp Manager**](https://chromewebstore.google.com/detail/computec-webup-manager/agdmmdghpkllidfeajciepkcchlijpmf)
     - [**CompuTec WebUp Client**](https://chromewebstore.google.com/detail/computec-webup-client/mgglbjhibagmkneodlhinpelnpdedfgi)
 
@@ -111,7 +112,7 @@ To install CompuTec WebUp browser extensions from the Chrome Web Store, follow t
     ![alt text](media/addtochhrome5.png)
 
     :::info[note]
-    Microsoft Edge supports extensions from the Chrome Web Store. If prompted, allow extensions from other stores before installing the WebUp extensions.
+    Microsoft Edge supports extensions from the **Chrome Web Store**. If prompted, allow extensions from other stores before installing the WebUp extensions.
 
     ![alt text](media/addtochhrome4.png)
     :::
@@ -126,45 +127,28 @@ To install CompuTec WebUp browser extensions from the Chrome Web Store, follow t
 
   <TabItem value="firefox" label="Mozilla Firefox">
 
-### Step 1: Download the extension for Mozilla Firefox
+    1. In **Mozilla Firefox**, open the Firefox Add-ons page for [**CompuTec WebUp Client**](https://addons.mozilla.org/en-US/firefox/addon/computec-webup-client/). 
+    2. Check that the author is **CompuTec S.A.**
+    3. Click **Add to Firefox**.
 
-1. Click [**this link**](https://download.computec.one/software/appengine/plugins/webup/extensions/firefox/CompuTecWebUpClient_1.0.14.zip) to download the **CompuTec WebUp Client** extension.
+        ![alt text](media/installation/firefox1.png)
 
-    :::info[note]
-    The **CompuTec WebUp Manager** extension is not available for Mozilla Firefox. If you need consultant or key-user functionality, use Google Chrome or Microsoft Edge.
-    :::
+    4. Review the requested permissions, and then click **Add**.
 
-2. Extract the downloaded file.
+        ![alt text](media/installation/firefox2.png)
 
-### Step 2: Install the extension for Mozilla Firefox
+    5. Check **Pin extension to toolbar** option, and then click **OK**.
 
-1. Open the **Mozilla Firefox** browser.
+        ![alt text](media/installation/firefox3.png)
 
-2. Click the **menu icon** and choose **Extensions and themes**.
+    6. Click the extensions icon and verify that **CompuTec WebUp Client** is in the list and enabled.
 
-    ![Mozilla Firefox browser menu open with Extensions and themes highlighted for extension setup](./media/f1-webup-manual-inst-browser-extension-firefox-menu.png)
+        ![alt text](media/installation/firefox4.png)  
 
-3. Navigate to **Extensions**.
+    7. Done! **CompuTec WebUp Client** is installed in Mozilla Firefox.
 
-    ![Mozilla Firefox add-ons page with Extensions section selected in the sidebar](./media/f2-webup-manual-inst-browser-extension-firefox-menu-extensions.png)
-
-4. Click the **gear icon** and select **Debug Add-ons**.
-
-    ![Mozilla Firefox Extensions page with gear icon menu open and Debug Add-ons option selected](./media/f3-webup-manual-inst-browser-extension-firefox-debug.png)
-
-5. Click **Load Temporary Add-on**.
-
-    ![Mozilla Firefox Debug Add-ons page showing Load Temporary Add-on option for installing the unpacked extension folder](./media/f3-webup-manual-inst-browser-extension-firefox-load-file.png)
-
-6. Select your extracted folder and click **Open**.
-
-7. Done! Now you can see the **CompuTec WebUp Client** on the extension list of your Mozilla Firefox browser.
-
-    ![Mozilla Firefox Extensions list showing CompuTec WebUp Client as installed](./media/f4-webup-manual-inst-browser-extension-firefox-installed.png)
-
-    :::info[note]  
-    Firefox only supports **temporary loading** of unpacked extensions.  
-    The extension must be reloaded each time you restart Firefox.
+    :::info[Note]
+    **CompuTec WebUp Manager** is not available for Mozilla Firefox. Use Google Chrome or Microsoft Edge to create and edit configurations.
     :::
 
   </TabItem>
@@ -184,11 +168,18 @@ After installation, confirm that both the CompuTec AppEngine plugin and the brow
 If you were already on the SAP Web Client page before installing the CompuTec WebUp browser extension, refresh the page before activating the extension.
 :::
 
+:::note[Info]
+
+When you click **Save & Preview** in **CompuTec WebUp Manager**, only the preview refreshes. The SAP Business One Web Client doesn't reload, so your current Web Client state is preserved.
+
+:::
+
 ## Updates
 
 - Updates are delivered automatically via the CompuTec AppEngine Store.  
 - All configuration profiles and assignments are preserved during updates.  
 - If a new version of the browser extension is available, you’ll be prompted to update it after installation.
+- Browser extensions installed from the Chrome Web Store or the Firefox Add-ons store are updated through the store.
 - Maintain your CompuTec AppEngine and CompuTec WebUp versions up to date to ensure compatibility.
 
 :::info[Note]

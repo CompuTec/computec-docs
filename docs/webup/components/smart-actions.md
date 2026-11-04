@@ -4,29 +4,26 @@ sidebar_position: 5
 
 # Smart Actions
 
-**Smart Actions** feature in **CompuTec WebUp** extends the concept of **View Actions** by making your logic reusable, flexible, and applicable across multiple areas of the **SAP Business One Web Client**.
+**Smart Actions** in **CompuTec WebUp** add reusable logic to the **SAP Business One Web Client**. You define a **Smart Action** once and run it in many places: when a form or data loads, when a user changes a field, or when a user clicks a button.
 
-While **View Actions** are tied to document-level triggers (such as ``On Add`` or ``On Update``), **Smart Actions** solve a key limitation of traditional **View Action** allowing you to attach logic directly to UI elements like buttons, fields, or controls.  
+**Smart Actions** replace **View Actions**, which are not supported in **CompuTec WebUp 1.2610.2 and later**. You link a **Smart Action** to a **View Event**, such as form loading or data loading, or to the event of a control. Each link is called a binding. For each binding, you choose when the **Smart Action** runs, turn the binding on or off, and set the order in which actions run.
 
-Here are main differences between Smart and View Actions:
-
-- **View Actions**:  
-  - Run only on document events (such as ``On Add`` or ``On Update``).  
-  - Best for document validation and background automation.
-
-- **Smart Actions**:  
-  - Work on user interactions inside the UI.  
-  - Best for interactive user experience and dynamic logic.
+:::info[Note]
+If you already use **View Actions**, you can convert them to **Smart Actions**. The conversion creates **Local** **Smart Actions** and their bindings for you. See [Convert View Actions to Smart Actions](/docs/webup/components/view-actions).
+:::
 
 ## Key functions of Smart Actions
 
-With **Smart Actions** in **Computec WebUp**, you define an action once and reuse it in multiple places.
+With **Smart Actions** in **CompuTec WebUp**, you define an action once and reuse it in multiple places.
 
 **Smart Actions** can be used in many scenarios. For example, they allow you to:
 
 - Trigger logic when a user edits a field
 - Run actions when a button is pressed
 - Display confirmations or validations at the exact moment of interaction
+- Run logic when a form or data loads
+- Validate a document with a read-only SQL query before it is saved
+- Open a document, a document list, or a CompuTec AppEngine application from a **Smart Action**
 - Improve user experience without modifying SAP core functionality
 
 This results in faster processes, fewer user errors, and better control over how users interact with business data.
@@ -35,7 +32,7 @@ This results in faster processes, fewer user errors, and better control over how
 
 You can create a **Smart Action** that shows a confirmation message: ``Do you want to save changes for document number 234?``
 
-Instead of hardcoding ``234``, you define a Parameter (e.g., ``DocNum``). This parameter can dynamically pull the current document number from SAP Business One.
+Instead of hardcoding ``234``, you define an Action Parameter (e.g., ``DocNum``). This Action Parameter can dynamically pull the current document number from SAP Business One.
 
 ## Add and activate Smart Action
 
@@ -66,6 +63,10 @@ To create a Smart Action, follow these steps:
 
     ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-4.png)
 
+    :::note[Info]
+    When you convert **View Actions** to **Smart Actions**, **CompuTec WebUp** creates them with the **Local** scope.
+    :::
+
 6. Enter the action **Name**. Optionally, you can also change the action **Code**.
 
     ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-4a.png)
@@ -74,36 +75,39 @@ To create a Smart Action, follow these steps:
 
     ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-4b.png)
 
-8. In **Action Parameters**, use the **plus (+)** icon to add new parameters.
+8. In **Action Parameters**, click the **plus (+)** icon to add an **Action Parameter**, and then:
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-5.png)
+    - In **Parameter Name**, enter the name.
+    - (Optional) Select **Required**.
+    - In **Default**, select **None** or **Static**.
+    - If you selected **Static**, enter the value in **Default Value**.
+
+    ![Action Parameters table with the Parameter Name, Required, Default, and Default Value columns](media/smart-actions/parameters1.png)
 
     :::note[info]
-    In this step, enter only the **Parameter Names**. You will assign their values later when attaching a **Smart Action** to an **Event** for the selected control.  
+        If you select **Required** and the **Action Parameter** has no value, **CompuTec WebUp** doesn't activate the **Smart Action**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-6.png)
+        If you select **None** in **Default**, the value is empty. You enter it when you assign the **Smart Action** to an event. If you select **Static**, the value from **Default Value** is used.
+
+    An **Action Parameter** is not the same as a **Parameter** in the **Parameters** tab. For more information, see Parameters. <!-- TODO: add a link -->
+
+    ![a screen showing navigation to smart actions tab in computec webup manager](media/smart-actions/parameters2.png)
     :::
 
 9. Enter your **Script**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](media/smart-actions/smart-action2.png)
+    You can add Action Parameters to your script using the following syntax: `actionParameters.<parameter_name>`. Replace ``parameter_name`` with the name of your Action Parameter.
 
     :::note[info]
-    You can **right-click inside the script** editor to insert ready-made snippets such as ``show confirmation``, ``create activity``, or ``get table row by key``.
+    You can use the **Parameter Helper** or **right-click inside the script** editor to insert ready-made snippets such as ``Show confirmation``, ``Create activity``, or ``Get table row by key``.
 
     ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-9.png)
 
     :::
 
-10. Add parameters to your script using the following syntax: `actionParameters.<parameter_name>`. Replace ``parameter_name`` with the name of your parameter. In our example, we use ``DocNum`` as the **Parameter Name**.
+10. Click **Add**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](media/smart-actions/smart-action3.png)
-
-11. Click **Add Smart Action**.
-
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-9112.png)
-
-12. Done! Now you can see your **Smart Action** on the list.
+11. Done! Now you can see your **Smart Action** on the list.
 
     ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-91123.png)
 
@@ -111,63 +115,98 @@ To create a Smart Action, follow these steps:
 
 To assign the **Smart Action** to a control, follow these steps:
 
-1. Open your screen in **SAP Business One Web Client**. In our example, we want our Smart Action to trigger a confirmation window after making changes in ``Contact Person`` field of the **Sales Orders**, so we open **Sales Order 4** in SAP Business One Web Client.
+1. Open your screen in **SAP Business One Web Client**. In our example, we want our Smart Action to trigger a confirmation window after making changes in ``Contact Person`` field of the **Sales Orders**, so we open **Sales Order 8** in SAP Business One Web Client.
 
 2. In the **Computec WebUp Manager** side panel, click **Select Control**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as1.png)
+    ![alt text](media/smart-actions/controldet1.png)
 
 3. In **SAP Business One Web Client**, click a field, button, or UI element to select it.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as2.png)
-
 4. In **CompuTec WebUp Manager** side panel on the right, go to **Control Details** > **More Options** > **Events**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as-gotoevents.png)
+5. Next to the event your **Smart Action** should react to, for example **Press**, click the **Select Smart Action** field to open the list of available **Smart Actions**.
 
-5. Click on **Select Smart Action** field to open the list of available **Smart Actions**.
-
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as3.png)
+    ![alt text](media/smart-actions/controldet2.png)
 
 6. Choose your **Smart Action** from the list.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as4.png)
+    ![alt text](media/smart-actions/controldet31.png)
 
-7. In **Triggers**, choose when your action should run: ``No Trigger``, ``After``, or ``Before`` the event occurs.
+7. In the drop-down list next to the **Smart Action** name, choose when your action runs: ``No Trigger``, ``After``, or ``Before`` the event occurs.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as5.png)
+    ![alt text](media/smart-actions/controldet32.png)
 
-8. Select the **Source** for your **Smart Action**:
-    - **Static**: A fixed value you enter manually
-    - **Data Model**: A dynamic value from SAP Business One (e.g., ``DocNum``, ``CardCode``)
+8. In the **Source** column of the Smart Action Parameters, select the source for each **Action Parameter**:
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as6.png)
+    - **Static**: A fixed value. Enter the static value in **Value**.
+    - **Data Model**: A dynamic value from SAP Business One, for example ``DocEntry`` or ``CardCode`` as in our example. You can choose any element that the document has. Click the **collection icon** to see the list of available values, and choose your value from the list, for example ``CardCode``, and click **Confirm**.
+    - **Parameter**: A **Parameter** from the **Parameters** tab. Select it from the list. For details, see Parameters. <!-- TODO: add a link -->
 
-9. Click the **collection icon** to see the list of available values.
+    :::info[Note]
+    You can't use every **Parameter** type as a **Source**. For example, a **Binding Expression** **Parameter** isn't supported here, and **CompuTec WebUp** shows an error that says you can use only a **Data Model**.
+    :::
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as7.png)
+    :::note[info]
+    ![alt text](media/smart-actions/controldet3.png)
 
-10. Choose your value from the list and click **Confirm**.
+    In our example, we added Smart Action to the **Press** **Event** and selected **Data Model** as a **Source** with `CardCode` value.  Now the **Action Parameter** is now linked dynamically to the document.
+    :::
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as8.png)
+9. Click **Save & Preview** to save your changes.
 
-11. Click **Save & Preview**.
-
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as9.png)
-
-12. In preview mode, test your action.
-
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as911.png)
-
-13. If you like the results, click **Activate**.
+10. In preview mode, test your action, and if you like the results, click **Activate**.
 
     ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as912.png)
 
-14. Done! You’ve added and activated your Smart Action.
+11. Done! You’ve added and activated your Smart Action.
 
 #### Video walkthrough
 
 ▶ **Watch**: [CompuTec WebUp - Smart Actions](https://youtu.be/iAWFLTRgvGk)
+
+### Create a Smart Action from a control event
+
+You can create a **Smart Action** directly from an event. The new **Smart Action** is linked to the event when you save it.
+
+To create a **Smart Action** from a control event, follow these steps:
+
+1. In the **CompuTec WebUp Manager** side panel, go to **Control Details**.
+
+    ![alt text](media/smart-actions/sa-from-ce1.png)
+
+2. Select the control from the list, or click **Select Control** and select it in **SAP Business One Web Client**.
+3. Scroll down to **Events**.
+
+    ![alt text](media/smart-actions/sa-from-ce2.png)
+
+4. Next to the event, for example **Press**, click the **+** button.
+
+    ![alt text](media/smart-actions/sa-from-ce3.png)
+
+5. Define the **Smart Action**: choose the scope, enter the name, add the **Action Parameters**, and enter the script. For details, see [Step 1: Create a new Smart Action](#step-1-create-a-new-smart-action).
+
+    ![alt text](media/smart-actions/sa-from-ce4.png)
+
+6. Save the **Smart Action**.
+7. Done! **CompuTec WebUp** links the new **Smart Action** to the event.
+
+:::note[Info]
+If you leave the editor with unsaved changes, **CompuTec WebUp** warns you. You can keep editing or discard the changes. If you discard them, the connection to the original control is not lost.
+:::
+
+## Event bindings
+
+When you select a **Smart Action** for an event, **CompuTec WebUp** creates a binding between them. A binding connects one **Smart Action** to one event, for example **Press** on a button.
+
+For each binding, you can:
+
+- **Choose when the Smart Action runs** – In the drop-down list next to the **Smart Action** name, select ``No Trigger``, ``After``, or ``Before``.
+- **Enable or disable the binding** – Use the **ON/OFF** toggle. A disabled binding stays in your configuration but doesn't run.
+- **Set the execution order** – Click **+ Add Smart Action** to link more than one **Smart Action** to the same event. Drag the handle to change the order in which they run.
+- **Remove the binding** – Click the red unlink icon.
+
+    ![alt text](media/smart-actions/controldet4.png)
 
 ## Smart Actions use cases
 
@@ -181,7 +220,7 @@ To assign the **Smart Action** to a control, follow these steps:
     Companies may need a quick way to log activities directly from a document. You can create a custom button and attach a Smart Action to trigger an action on button press (for example, ``create an activity via Service Layer``).
 
 - Show context-aware confirmations:  
-    Users may need additional clarity before saving important documents. You can use parameters to display dynamic confirmation messages (for example: ``Do you want to save changes for document 10567?``).
+    Users may need additional clarity before saving important documents. You can use Action Parameters to display dynamic confirmation messages (for example: ``Do you want to save changes for document 10567?``).
 
 ## Debug Smart Actions
 
@@ -273,7 +312,7 @@ To debug a **Smart Action**, follow these steps:
 
 Use the ``debugger`` statement to:
 
-- Verify that parameter values are passed correctly.
+- Verify that Action Parameter values are passed correctly.
 - Confirm that conditional logic behaves as expected.
 - Troubleshoot validation rules.
 - Inspect data returned from SAP Business One.
@@ -283,7 +322,7 @@ Use the ``debugger`` statement to:
 
 - Use **Global** scope for reusable business logic
 - Keep scripts modular and simple
-- Use **Parameters** instead of hardcoding values
+- Use **Action Parameters** instead of hardcoding values
 - Always test using **Preview** before activation
 
 **Smart Actions** in **Computec WebUp** give you precise control over user interactions, helping you build more intuitive, reliable, and efficient processes in **SAP Business One Web Client**.
