@@ -42,18 +42,18 @@ To add and activate a new **Smart Action**, follow these steps:
 
 To create a Smart Action, follow these steps:
 
-1. Open **Computec WebUp Manager**.
+1. Open **CompuTec WebUp Manager**.
 2. Navigate to **Smart Actions** tab.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-1.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](media/smart-actions/smart-actions-1.png)
 
 3. Click **Edit** to enable the edit mode.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-2.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](media/smart-actions/smart-actions-2.png)
 
 4. Click **Add Smart Action**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-3.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](media/smart-actions/smart-actions-3.png)
 
 5. Define the **Action** scope. You can choose from:
 
@@ -61,7 +61,7 @@ To create a Smart Action, follow these steps:
     - **Object**: Available for all **CompuTec WebUp** views (e.g., **Sales Order**), across all its view versions.
     - **Local**: Available only in the current view version. Use **Local** for temporary or highly customized behavior.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-4.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](media/smart-actions/smart-actions-4.png)
 
     :::note[Info]
     When you convert **View Actions** to **Smart Actions**, **CompuTec WebUp** creates them with the **Local** scope.
@@ -69,11 +69,11 @@ To create a Smart Action, follow these steps:
 
 6. Enter the action **Name**. Optionally, you can also change the action **Code**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-4a.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](media/smart-actions/smart-actions-4a.png)
 
 7. (Optional) Add a **Description** of the action.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-4b.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](media/smart-actions/smart-actions-4b.png)
 
 8. In **Action Parameters**, click the **plus (+)** icon to add an **Action Parameter**, and then:
 
@@ -96,12 +96,12 @@ To create a Smart Action, follow these steps:
 
 9. Enter your **Script**.
 
-    You can add Action Parameters to your script using the following syntax: `actionParameters.<parameter_name>`. Replace ``parameter_name`` with the name of your Action Parameter.
+    Click a line in the script editor, type `actionParameters.`, and select your Action Parameter from the list.
 
     :::note[info]
     You can use the **Parameter Helper** or **right-click inside the script** editor to insert ready-made snippets such as ``Show confirmation``, ``Create activity``, or ``Get table row by key``.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-9.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](media/smart-actions/smart-actions-9.png)
 
     :::
 
@@ -109,7 +109,7 @@ To create a Smart Action, follow these steps:
 
 11. Done! Now you can see your **Smart Action** on the list.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-91123.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](media/smart-actions/smart-actions-91123.png)
 
 ### Step 2: Assign the Smart Action to a Control
 
@@ -117,9 +117,9 @@ To assign the **Smart Action** to a control, follow these steps:
 
 1. Open your screen in **SAP Business One Web Client**. In our example, we want our Smart Action to trigger a confirmation window after making changes in ``Contact Person`` field of the **Sales Orders**, so we open **Sales Order 8** in SAP Business One Web Client.
 
-2. In the **Computec WebUp Manager** side panel, click **Select Control**.
+2. In the **CompuTec WebUp Manager** side panel, click **Select Control**.
 
-    ![alt text](media/smart-actions/controldet1.png)
+    ![SAP Business One Sales Order 8 is open beside the CompuTec WebUp Manager. A large blue arrow points to the Select Control button in the manager panel. The panel shows the Control Details tab and a controls list.](media/smart-actions/controldet1.png)
 
 3. In **SAP Business One Web Client**, click a field, button, or UI element to select it.
 
@@ -127,15 +127,15 @@ To assign the **Smart Action** to a control, follow these steps:
 
 5. Next to the event your **Smart Action** should react to, for example **Press**, click the **Select Smart Action** field to open the list of available **Smart Actions**.
 
-    ![alt text](media/smart-actions/controldet2.png)
+    ![Control Details panel with the event's Select Smart Action field open](media/smart-actions/controldet2.png)
 
 6. Choose your **Smart Action** from the list.
 
-    ![alt text](media/smart-actions/controldet31.png)
+    ![Available Smart Actions in the Select Smart Action list](media/smart-actions/controldet31.png)
 
 7. In the drop-down list next to the **Smart Action** name, choose when your action runs: ``No Trigger``, ``After``, or ``Before`` the event occurs.
 
-    ![alt text](media/smart-actions/controldet32.png)
+    ![Trigger options for a Smart Action: No Trigger, After, and Before](media/smart-actions/controldet32.png)
 
 8. In the **Source** column of the Smart Action Parameters, select the source for each **Action Parameter**:
 
@@ -148,18 +148,19 @@ To assign the **Smart Action** to a control, follow these steps:
     :::
 
     :::note[info]
-    ![alt text](media/smart-actions/controldet3.png)
+    ![Smart Action parameter configuration with Data Model selected as the source](media/smart-actions/controldet3.png)
 
     In our example, we added Smart Action to the **Press** **Event** and selected **Data Model** as a **Source** with `CardCode` value.  Now the **Action Parameter** is now linked dynamically to the document.
     :::
 
 9. Click **Save & Preview** to save your changes.
 
-10. In preview mode, test your action, and if you like the results, click **Activate**.
+10. In preview mode, test your action.
+11. If you like the results, click **Activate**.
 
-    ![a screen showing navigation to smart actions tab in computec webup manager](./media/smart-actions/smart-actions-as912.png)
+    ![a screen showing navigation to smart actions tab in computec webup manager](media/smart-actions/smart-actions-as912.png)
 
-11. Done! You’ve added and activated your Smart Action.
+12. Done! You’ve added and activated your Smart Action.
 
 #### Video walkthrough
 
@@ -173,20 +174,20 @@ To create a **Smart Action** from a control event, follow these steps:
 
 1. In the **CompuTec WebUp Manager** side panel, go to **Control Details**.
 
-    ![alt text](media/smart-actions/sa-from-ce1.png)
+    ![WebUp Manager Control Details panel with the controls list](media/smart-actions/sa-from-ce1.png)
 
 2. Select the control from the list, or click **Select Control** and select it in **SAP Business One Web Client**.
 3. Scroll down to **Events**.
 
-    ![alt text](media/smart-actions/sa-from-ce2.png)
+    ![Control Details panel scrolled to the Events section](media/smart-actions/sa-from-ce2.png)
 
 4. Next to the event, for example **Press**, click the **+** button.
 
-    ![alt text](media/smart-actions/sa-from-ce3.png)
+    ![Events section with the plus button beside an event](media/smart-actions/sa-from-ce3.png)
 
 5. Define the **Smart Action**: choose the scope, enter the name, add the **Action Parameters**, and enter the script. For details, see [Step 1: Create a new Smart Action](#step-1-create-a-new-smart-action).
 
-    ![alt text](media/smart-actions/sa-from-ce4.png)
+    ![Form for defining a Smart Action from a control event](media/smart-actions/sa-from-ce4.png)
 
 6. Save the **Smart Action**.
 7. Done! **CompuTec WebUp** links the new **Smart Action** to the event.
@@ -206,7 +207,7 @@ For each binding, you can:
 - **Set the execution order** – Click **+ Add Smart Action** to link more than one **Smart Action** to the same event. Drag the handle to change the order in which they run.
 - **Remove the binding** – Click the red unlink icon.
 
-    ![alt text](media/smart-actions/controldet4.png)
+    ![Event binding controls for enabling, ordering, and unlinking Smart Actions](media/smart-actions/controldet4.png)
 
 ## Smart Actions use cases
 
@@ -242,7 +243,7 @@ To debug a **Smart Action**, follow these steps:
     debugger;
     ```
 
-    ![alt text](media/smart-actions/debug-sa-2.png)
+    ![Smart Action script editor with a debugger statement](media/smart-actions/debug-sa-2.png)
 
     :::note[info]
     You can add a single or multiple ``debugger`` statements throughout the script.
@@ -273,20 +274,20 @@ To debug a **Smart Action**, follow these steps:
 
 3. Click **Save & Preview**.
 
-    ![alt text](media/smart-actions/debug-sa-3.png)
+    ![WebUp Manager with Save & Preview selected](media/smart-actions/debug-sa-3.png)
 
 4. (optional) Assign the **Smart Action** to a control or event if it is not already assigned, and then click **Save & Preview**.
 5. Open your browser's developer tools:
     - Right-click anywhere in the **WebUp Preview Mode** screen.
     - Select **Inspect**.
 
-    ![alt text](media/smart-actions/debug-sa-33.png)
+    ![Browser context menu with Inspect selected in WebUp Preview Mode](media/smart-actions/debug-sa-33.png)
 
 6. Go to the **Sources** tab in the developer tools.
 7. Trigger the **Smart Action**, for example, click a button or modify a field that runs the action.
 8. Done! When execution reaches a ``debugger`` statement, the browser automatically pauses the script.
 
-    ![alt text](media/smart-actions/debug-sa-4.png)
+    ![Browser developer tools paused at a debugger statement](media/smart-actions/debug-sa-4.png)
 
     While the script is paused, you can:
 
@@ -300,7 +301,7 @@ To debug a **Smart Action**, follow these steps:
 
 9. After reviewing the paused state, click **Resume** script execution in the developer tools.
 
-    ![alt text](media/smart-actions/debug-sa-5.png)
+    ![Browser developer tools with the Resume script execution control](media/smart-actions/debug-sa-5.png)
 
     :::info[note]
     The script continues running until it finishes execution, or it reaches another ``debugger`` statement.
@@ -325,4 +326,4 @@ Use the ``debugger`` statement to:
 - Use **Action Parameters** instead of hardcoding values
 - Always test using **Preview** before activation
 
-**Smart Actions** in **Computec WebUp** give you precise control over user interactions, helping you build more intuitive, reliable, and efficient processes in **SAP Business One Web Client**.
+**Smart Actions** in **CompuTec WebUp** give you precise control over user interactions, helping you build more intuitive, reliable, and efficient processes in **SAP Business One Web Client**.
