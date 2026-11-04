@@ -7,19 +7,6 @@ unlisted: false
 
 # MCP Server for SAP Business One
 
-## Requirements
-
-Before you begin, make sure the following prerequisites are met:
-
-* **CompuTec AppEngine** is installed. Minimum version `3.2509.1-rc-02`.
-* **OIDC authentication** is enabled in **SAP Business One**.  
-Here's how to check it:
-  * In the **SAP SLD server**, open the **Identity Providers** tab.
-
-    ![alt text](media/mcp-server/mcp-ident-prov.png)
-
-  * Make sure that **SAP Business One Authentication Server** is active.
-
 ## Enable MCP for a company in CompuTec AppEngine
 
 To allow **MCP Server** access for a specific **CompuTec AppEngine company**, follow these steps:
@@ -132,7 +119,7 @@ The **MCP Server** provides several ready-to-use tools:
 :::note[info]
 If you have an idea for a useful **MCP** tool, feel free to share it with us - we'll consider adding it as a standard feature in **CompuTec AppEngine**.
 
-You can also create **your own tools** by developing a [custom CompuTec AppEngine plugin](../../developers-guide/basic-and-business-logic/appengine-plugin/ae-mcp-tool.md).
+You can also create **your own tools** by developing a [custom CompuTec AppEngine plugin](/docs/appengine/administrators-guide/configuration-and-administration/mcp-server-for-sap-b1/ae-mcp-tool).
 :::
 
 ### Troubleshooting MCP Activation
