@@ -9,7 +9,7 @@ sidebar_position: 1
 
 ## About CompuTec WebUp
 
-**CompuTec WebUp** is a browser-based customisation and automation toolkit that lets you shape the SAP Business One Web Client interface. Instead of working with complex customization layers or coding, you can edit the screens, add helpful interactions, and apply business rules directly in your browser.
+**CompuTec WebUp** is a browser-based customization and automation toolkit that lets you shape the SAP Business One Web Client interface. Instead of working with complex customization layers or coding, you can edit the screens, add helpful interactions, and apply business rules directly in your browser.
 
 ## Key benefits and features
 
