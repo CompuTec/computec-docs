@@ -9,7 +9,7 @@ A custom MCP tool is a C# method in a **CompuTec AppEngine** plugin that AI clie
 **CompuTec AppEngine** uses the [Model Context Protocol C# SDK](https://modelcontextprotocol.github.io/csharp-sdk/index.html) to create and expose the MCP protocol. In your tool class, you can use the session of the signed-in user for authorization and to access SAP Business One and **CompuTec AppEngine** features.
 
 :::info[Note]
-This article is for developers who write C# and build **CompuTec AppEngine** plugins. To use the built-in tools, you don't need to write code. See [**Get Started with CompuTec MCP Server**](/docs/ai/mcp-server/getting-started) instead.
+This article is for developers who write C# and build **CompuTec AppEngine** plugins. To use the built-in tools, you don't need to write code. See [**Get Started with CompuTec MCP Server**](/docs/ai/mcp-server-for-sap-b1/mcp-server-for-sap-business-one) instead.
 :::
 
 ## Before you start
@@ -106,7 +106,6 @@ using System.ComponentModel;
 using CompuTec.Core2.AE.Utils.Extensions;
 using Microsoft.Extensions.Logging;
 using ModelContextProtocol.Server;
-// TODO: add the namespace of ICoreConnection
 
 namespace MyCompany.MyPlugin.Mcp;
 
