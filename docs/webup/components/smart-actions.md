@@ -102,7 +102,7 @@ To create a Smart Action, follow these steps:
 
 9. Enter your **Script**.
 
-    To add an **Action Parameter** to the script, click the **{·}** icon in its row in the **Action Parameters** table. **CompuTec WebUp** inserts the parameter into the script automatically.
+    To add an **Action Parameter** to the script, click the `{·}` icon in its row in the **Action Parameters** table. **CompuTec WebUp** inserts the parameter into the script automatically.
 
     You can also click a line in the script editor, type `actionParameters.`, and select your **Action Parameter** from the list.
 
