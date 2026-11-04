@@ -63,15 +63,15 @@ To use CompuTec WebUp, install the following browser extensions:
 
 :::info[Note]
 
-On SAP Business One Web Client 2602 and later, CompuTec WebUp extensions use the Web Client's authentication to communicate with CompuTec AppEngine. For these requests, you don't need the **CompuTec WebUp Client** browser extension. The extension is still required for other scenarios.
+On **SAP Business One Web Client 2602 and later**, CompuTec WebUp extensions use the Web Client's authentication to communicate with CompuTec AppEngine. For these requests, you don't need the **CompuTec WebUp Client** browser extension. The extension is still required for other scenarios.
 
 :::
 
 To install CompuTec WebUp browser extensions, follow these steps:
 
-:::info[note]
+:::note[info]
 
-The extensions are available in the **Chrome Web Store** and **Firefox Add-ons store** under the **CompuTec S.A.** publisher. This is the recommended method for Firefox, Google Chrome and Chromium-based browsers, such as Microsoft Edge. You don’t need to turn on **Developer mode** in your browser or load the extensions manually.
+The extensions are available in the **Chrome Web Store** and **Firefox Add-ons store** under the **CompuTec S.A.** publisher. This is the recommended method for Firefox, Google Chrome and Chromium-based browsers, such as Microsoft Edge. 
 
 **CompuTec WebUp Manager** is **not available** for **Mozilla Firefox**. For consultant or key-user functionality, use **Google Chrome** or **Microsoft Edge**.
 
@@ -90,11 +90,11 @@ Manual installation using CompuTec installation packages is still available when
 
     ![Google Chrome Web Store page for the CompuTec WebUp Manager extension with the publisher set to CompuTec S.A. and the Add to Chrome button visible](media/addtochhrome1.png)
 
-3. Review the requested permissions and confirm the installation.
+3. Review the requested permissions and click **Add extension**.
 
     ![Google Chrome permission dialog for the CompuTec WebUp extension showing the requested access and the Add extension button](media/addtochhrome2.png)
 
-4. Repeat these steps for both the **CompuTec WebUp Client** and **CompuTec WebUp Manager** extensions.
+4. Repeat steps 2 and 3 for the other extension.
 
 5. Click the **Extensions icon** and verify that both **CompuTec WebUp Manager** and **CompuTec WebUp Client** are installed and enabled.
 
@@ -112,7 +112,7 @@ Manual installation using CompuTec installation packages is still available when
 
     ![Microsoft Edge Chrome Web Store page for the CompuTec WebUp extension with the Get button visible](media/addtochhrome1b.png)
 
-3. Review the requested permissions and confirm the installation.
+3. Review the requested permissions and click **Add extension**.
 
     ![Microsoft Edge permission dialog for the CompuTec WebUp extension showing the requested access and the Add extension button](media/addtochhrome5.png)
 
@@ -122,7 +122,7 @@ Manual installation using CompuTec installation packages is still available when
     ![Microsoft Edge prompt to allow extensions from other stores before installing the CompuTec WebUp extension](media/addtochhrome4.png)
     :::
 
-4. Repeat these steps for both the **CompuTec WebUp Client** and **CompuTec WebUp Manager** extensions.
+4. Repeat steps 2 and 3 for the other extension.
 
 5. Click the **Extensions icon** and verify that both **CompuTec WebUp Manager** and **CompuTec WebUp Client** are installed and enabled.
 
@@ -148,7 +148,7 @@ Manual installation using CompuTec installation packages is still available when
 
     6. Click the extensions icon and verify that **CompuTec WebUp Client** is in the list and enabled.
 
-        ![Firefox extensions panel showing CompuTec WebUp Client installed, enabled, and pinned to the toolbar](media/installation/firefox.png)
+        ![Firefox extensions panel showing CompuTec WebUp Client installed, enabled, and pinned to the toolbar](media/installation/firefox4.png)
 
     7. Done! **CompuTec WebUp Client** is installed in Mozilla Firefox.
 
