@@ -94,7 +94,7 @@ To create a Smart Action, follow these steps:
 
         If you select **None** in **Default**, the value is empty. You enter it when you assign the **Smart Action** to an event. If you select **Static**, the value from **Default Value** is used.
 
-    An **Action Parameter** is not the same as a **Parameter** in the **Parameters** tab. For more information, see Parameters. <!-- TODO: add a link -->
+    An **Action Parameter** is not the same as a **Parameter** in the **Parameters** tab. For more information, see [**Parameters**](/docs/webup/components/parameters).
 
     ![a screen showing navigation to smart actions tab in computec webup manager](media/smart-actions/parameters2.png)
 
@@ -150,7 +150,7 @@ To assign the **Smart Action** to a control, follow these steps:
 
     - **Static**: A fixed value. Enter the static value in **Value**.
     - **Data Model**: A dynamic value from SAP Business One, for example ``DocEntry`` or ``CardCode`` as in our example. You can choose any element that the document has. Click the **collection icon** to see the list of available values, and choose your value from the list, for example ``CardCode``, and click **Confirm**.
-    - **Parameter**: A **Parameter** from the **Parameters** tab. Select it from the list. For details, see Parameters. <!-- TODO: add a link -->
+    - **Parameter**: A **Parameter** from the **Parameters** tab. Select it from the list. For details, see [**Parameters**](/docs/webup/components/parameters).
 
     :::info[Note]
 
@@ -188,6 +188,14 @@ To create a **Smart Action** from a control event, follow these steps:
 1. In the **CompuTec WebUp Manager** side panel, go to **Control Details**.
 
     ![Control Details tab highlighted in the CompuTec WebUp Manager side panel](media/smart-actions/sa-from-ce1.png)
+
+    :::info[Note]
+
+    You must be in edit mode. If the view is **Active**, click **Edit** first.
+
+    ![SAP Business One Sales Order 8 is open beside the CompuTec WebUp Manager for view 3. The manager shows Active, VW-00016 - Version 24, and Short Name: view 3; a large blue arrow highlights the Edit button, with Deactivate and Select Control nearby.](media/parameters/edit-mode.png)
+
+    :::
 
 2. Select the control from the list, or click **Select Control** and select it in **SAP Business One Web Client**.
 3. Scroll down to **Events**.
@@ -251,6 +259,14 @@ To debug a **Smart Action**, follow these steps:
 1. In **CompuTec WebUp Manager**, open your **Smart Action** **Script**.
 
     ![smart action script](media/smart-actions/debug-sa-1.png)
+
+    :::info[Note]
+
+    You must be in edit mode. If the view is **Active**, click **Edit** first.
+
+    ![SAP Business One Sales Order 8 appears beside CompuTec WebUp Manager view 3. A blue arrow highlights the Edit button above the Active status.](media/parameters/edit-mode.png)
+
+    :::
 
 2. Navigate to action **Script** and add the following statement where you want execution to pause:
 
