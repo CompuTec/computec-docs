@@ -12,7 +12,11 @@ Here is an overview of the key **CompuTec WebUp** functions, along with examples
 
 - **View Actions**: Create event-based automations and validations that run before or after user actions, such as On Update, On Save. Example: Show a confirmation message before a user saves changes to a document. [Read more](/docs/webup/components/view-actions)
 
-- **Smart Actions**: Make your logic reusable, flexible, and applicable across multiple areas of the SAP Business One Web Client extending the concept of View Actions. Example: Trigger a confirmation popup ``Are you sure you want to change the price?`` when a user changes a price field. [Read more](/docs/webup/components/smart-actions)
+- **Smart Actions**: Reusable logic that you link to View Events, such as form loading or data loading, or to the events of controls. Smart Actions replace View Actions, which are not supported in CompuTec WebUp 1.2610.2 and later. You can show confirmations, validate documents with SQL, and open documents or CompuTec AppEngine applications. For example, a popup asks "Are you sure you want to change the price?" when a user changes a price field. [Read more](/docs/webup/components/smart-actions)
+
+- **Parameters**: Reusable values that you define once and use in control properties and Smart Actions. For example, a button shows the document key of the open Sales Order, and the text changes when the user opens another order. [Read more](/docs/webup/components/parameters)
+
+- **Dot Actions**: Your own actions in the "." command palette of the SAP Business One Web Client. Each Dot Action runs a Smart Action. For example, a user presses the **.** key and selects your action. [Read more](/docs/webup/components/dot-actions)
 
 :::note[info]
 **CompuTec WebUp Roadmap** evolves over time. For the latest feature planning and prioritization, refer to our official [CompuTec WebUp Roadmap](https://trello.com/b/ePvajGq6/computec-webup-roadmap).  
@@ -26,9 +30,9 @@ CompuTec WebUp is built around a few guiding principles that help keep your conf
 1. **Browser-first design**: Computec WebUp runs fully in the browser and extends the SAP Business One Web Client without SDK or local installations.
 2. **CompuTec AppEngine-integrated architecture**: All logic, data access, and configuration management run on the CompuTec AppEngine Framework.
 3. **Configurable UI layer**: You can inspect, reposition, and edit UI elements inside supported SAP Business One Web Client screens.
-4. **Event-driven behavior**: You can define what happens during on-screen actions such as OnUpdate, OnAdd, or BeforeSave.
-5. **Dynamic data connections**: You can link control values to live SAP data models, for example, Sales Quotation Total, using CompuTec AppEngine.  
-6. **Version configuration management**: Every change is versioned, activatable, and revertible.
+4. **Event-driven behavior**: Link Smart Actions to View Events, such as form loading or data loading, or to control events, such as pressing a button or changing a field.
+5. **Dynamic data connections**: You can link control values to live SAP data models, for example, Sales Quotation Total, using CompuTec AppEngine through Parameters.  
+6. **Version configuration management**: Every change is versioned, activable, and revertible.
 7. **Modular evolution**: Future CompuTec WebUp features (layouts, actions, data integrations) can be added without affecting your existing setups.
 
 :::note[info]

@@ -5,7 +5,7 @@ sidebar_position: 1
 # Introduction to CompuTec WebUp
 
 **Version:** 1.0  
-**Platform:** CompuTec AppEngine (AE) Framework for SAP Business One Web Client
+**Platform:** CompuTec AppEngine Framework for SAP Business One Web Client
 
 ## About CompuTec WebUp
 
@@ -16,7 +16,10 @@ sidebar_position: 1
 - **Quick and easy to use**: The intuitive interface makes it easy for consultants and end users to implement changes, saving both time and money.
 - **Simplified interface customization**: Easily move existing fields and UDFs (user-defined fields), change field properties, and rename their descriptions, hide fields, tabs, and action buttons to streamline form layouts and remove clutter.
 - **Validation and data control**: Implement custom validations and rules to ensure data accuracy and enforce business logic before a document is created or updated.
-- **Build process automations**: Create powerful JavaScript-based automations to trigger actions based on specific view events, such as creating documents via the Service Layer, or updating fields.
+- **Validation and data control**: Implement custom validations and rules to ensure data accuracy and enforce business logic before a document is created or updated. You can also validate documents with read-only SQL queries.
+- **Process automations**: Create Smart Actions that run when a form or data loads, when a user changes a field, or when a user clicks a button. Smart Actions can show confirmations, open SAP Business One documents, document lists, and CompuTec AppEngine applications, create documents through the Service Layer, and update fields.
+- **Reusable values**: Create Parameters once and use them in many controls and Smart Actions, for example to show the document number as the text of a button.
+- **Command palette actions**: Add your own actions to the `.` (dot or full stop key) command palette of the SAP Business One Web Client with Dot Actions.
 
 ## User roles
 
@@ -37,6 +40,13 @@ Here is how **CompuTec WebUp** works:
 - It’s built on the **CompuTec AppEngine Framework**, so every change you make follows the same lifecycle, versioning, and security standards used by all CompuTec AppEngine extensions.  
 - It follows **SAP Fiori guidelines**, maintaining the native SAP Business One Web Client’s look and feel while enhancing flexibility.
 
+:::info[Note]
+
+All CompuTec WebUp settings are saved **directly in your company database**.
+
+If a setting is supported by the **SAP Business One Web Client Extensibility Framework**, it is automatically deployed as a standard **SAP Business One Web Client** extension using the **SAP Business One Extension Manager**.
+:::
+
 ▶ **Watch**: [CompuTec WebUp - First Launch](https://www.youtube.com/watch?v=YO3jdjChS4k&list=PLtT6kgaz5YneoXw5aRFA-SxXwzzB-u4vl&index=1)
 
 ## Components of CompuTec WebUp
@@ -56,8 +66,10 @@ Here is an overview of the key **CompuTec WebUp** components:
 - Includes a [built-in **Help Mode**](https://www.youtube.com/watch?v=DBv20ifpcCY) that provides direct access to **SAP Business One** documentation. When enabled, contextual help links are displayed next to supported controls, properties, and **SAP Business One** objects.
 - Where possible, it uses the **SAP Business One Web Client Extensibility Framework** for supported configuration options.
 
-:::info[note]
-**CompuTec WebUp Manager** is currently installed manually using the browser's **Developer Mode**.
+:::info[Note]
+
+**CompuTec WebUp Manager** is available in the Chrome Web Store under the CompuTec S.A. publisher. It is not available for Mozilla Firefox. For installation steps, see [Installation and Activation](/docs/webup/installation-and-activation).
+
 :::
 
 ### CompuTec WebUp Client
@@ -68,7 +80,8 @@ Here is an overview of the key **CompuTec WebUp** components:
 - Like the **CompuTec WebUp Manager**, currently installed manually using the browser’s **Developer Mode**.
 
 :::info[Note]
-All CompuTec WebUp settings are saved **directly in your company database**.
 
-If a setting is supported by the **SAP Business One Web Client Extensibility Framework**, it is automatically deployed as a standard **SAP Business One Web Client** extension using the **SAP Business One Extension Manager**.
+- On **SAP Business One Web Client 2602 and later**, CompuTec WebUp extensions use the Web Client's authentication to communicate with CompuTec AppEngine. For these requests, you don't need this extension.
+- CompuTec WebUp Client is available in the Chrome Web Store and in the Firefox Add-ons store under the CompuTec S.A. publisher.
+
 :::

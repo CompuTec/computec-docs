@@ -4,6 +4,14 @@ sidebar_position: 4
 
 # View Actions
 
+:::warning[Important]
+
+**View Actions** are not supported in **CompuTec WebUp** 1.2610.2 and later. This page describes View Actions in earlier versions.
+
+In **CompuTec WebUp version 1.2610.2 and later**, use [Smart Actions](/docs/webup/components/smart-actions).
+
+:::
+
 **View Actions** in **CompuTec WebUp Manager** let you define logic that runs when specific document events occur in the **SAP Business One Web Client**, such as when a document is added or updated.
 
 A View Action can run before or after the document event and is processed by CompuTec AppEngine. This makes View Actions useful for document-level processes, such as validation or automation.
