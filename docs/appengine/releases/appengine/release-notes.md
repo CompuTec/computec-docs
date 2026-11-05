@@ -4,6 +4,66 @@ sidebar_position: 1
 
 # CompuTec AppEngine Release Notes
 
+## CompuTec AppEngine 3.2611.1
+
+**Release Date: 4 November 2026**
+
+**AppEngine Core Version: 3.0.1.638**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | Analytics – Drill-Downs | **Drill-down reports now open as additional levels on the same page**, below the source report. Selecting rows updates subsequent levels, multiple values can be passed to drill-downs, and the drill-down hierarchy is preserved after refreshing the page. |
+| Added | Analytics – Actions | **Analytics actions can now prompt users to enter or select parameter values** when an action runs. Supported inputs include value help and dictionary selection lists, allowing actions such as assigning an inspector or changing a status without creating separate buttons for each value. |
+| Added | Analytics – Printing | **Print layouts can now be linked directly to Analytics reports**, including the option to define a default layout. Users can print documents from a report and provide additional parameter values when prompted. |
+| Added | Analytics – Actions | Analytics actions can now request confirmation before execution. This also supports bulk actions such as locking all impacted batches, with individual success or failure results for each batch. |
+| Added | Analytics – Field Descriptions | Field descriptions are now available as column header tooltips and in **View Settings**, making it easier to understand the information displayed in reports. |
+| Added | Analytics – Visual Filters | Visual-filter tiles and chart tabs can now display descriptions, helping users understand what a KPI measures or how it is calculated. |
+| Improved | Analytics – Tables | Columns configured with the Percent field type now display a percentage sign (%), making percentage values easier to identify. |
+| Improved | Analytics – Drill-Downs | Drill-down targets that require a plugin that is not installed are now disabled or display a message identifying the missing plugin. |
+| Improved | Analytics – Visual Filters | Visual-filter tiles now support up to five elements and remain visible when their associated dimension filter is hidden. Tile widths can also be configured, with automatic widths filling the available filter bar space. |
+| Improved | Plugin Settings | Properties with predefined values in collection rows now use a selection list instead of a free-text field, making configuration easier and reducing invalid entries. |
+| Improved | Analytics – Variants | Custom variants can now be created using the definition of the currently selected variant. |
+| Improved | Analytics – Date Filters | Date-part generation now suggests a date range based on the report data, respects the dialog limits, and prevents repeated generation requests. |
+| Improved | Analytics – SAP Menu Integration | The **Add to SAP Menu** wizard has been simplified, making it easier to configure Analytics reports in the SAP Business One menu. |
+| Fixed | Plugin Installation | Plugin installation no longer fails with the `Unable to end SQL transaction` error when configuring authorizations. |
+| Fixed | Company Management | **The Update Company operation no longer fails with the `Company cannot be activated. Validation failed` error.** |
+| Fixed | AppEngine Installation | AppEngine can now be upgraded using winget. Previously, the MSI installer was incorrectly registered as an executable installer. |
+| Fixed | MO360 | Searching and selecting records on the assignment board now work correctly. MO360 Analytics context menus also work when AppEngine is installed on a non-default port. |
+| Fixed | Analytics – Value Help | Selecting a value from value help no longer displays duplicate tokens in selection fields. |
+| Fixed | QC360 | The **QC Reporting** menu now opens the correct form on the first attempt instead of displaying an empty form. |
+| Fixed | BT360 | The **Back** button is now available when BT360 is opened from SAP Business One. |
+| Fixed | WebUp Client | WebUp Client now works correctly in Firefox without the `chrome is not defined` error. |
+| Fixed | WebUp – Smart Actions | Event bindings now display the updated name after a Smart Action is renamed. |
+| Fixed | Plugin Settings | The **+** button now works correctly when adding values to a list of strings in the Administration plugin settings dialog. |
+| Fixed | Data Formatting | Price, Amount, Quantity, and Unit fields now display correctly when the thousands separator is empty, instead of failing or showing `null`. |
+| Fixed | Analytics – SAP Menu Integration | Filters created through **Add to SAP Menu** are now applied correctly when the bound column is a collection. |
+| Fixed | Crystal Reports | The MANOrderPL, ManOrderEN, and Quality Control Test Crystal layouts now render correctly on SAP HANA. |
+| Fixed | Analytics – Printing | **Printing from Analytics now handles parameters and errors more reliably.** Users are prompted for required layout parameters that cannot be supplied by the report, failed print requests display readable error messages, and merged printing passes field values instead of field names. |
+| Fixed | Analytics – Actions | **Analytics actions now handle missing configuration and parameter values correctly**, preventing report errors and incorrect values in documents. Actions that create documents also display a confirmation to help prevent duplicate submissions. |
+| Fixed | Analytics – Data Loading and Export | **Analytics reports now load rows beyond the first batch, and Excel exports are no longer limited to 500 rows.** |
+| Fixed | Analytics – Variants | **Analytics variants can now be saved and managed more reliably.** This resolves errors when saving variants, prevents empty user filters from disrupting the variants list, and fixes duplicate variants that could not be deleted. The sharing indicator is also displayed correctly. |
+| Fixed | Analytics – Import and Export | Analytics data sources now retain their correct types after export and import instead of being converted to Custom View sources. |
+| Fixed | Analytics – Data Sources | Table and View sources now retain and support their configured parameters. |
+| Fixed | Analytics – Configuration | Invalid configurations now display appropriate validation messages, and selection lists in the source and variant editors match the supported values. |
+| Fixed | Analytics – SQL Editor | The SQL editor no longer reloads unexpectedly and overwrites entered text, allowing SQL-based data sources to be created correctly. |
+| Fixed | Analytics – Dictionary Filters | **Dictionary filters now display and select values correctly.** Value help searches the server, allowing users to find values beyond the first 500 results. Selecting a value from an OData-bound dictionary no longer causes an error or leaves the filter empty. |
+| Fixed | Analytics – Date Filters | **Date filters now display the correct available values and apply them reliably.** This resolves missing month and weekday values, incorrect date-part identification, errors when filtering by generated date parts, and filters being ignored when an unrecognized date value is entered. |
+| Fixed | Analytics – Translations | Corrected the Polish translation of **Day of Week** and improved month and weekday names in date-part dictionaries. |
+| Fixed | Analytics – Filters | Numeric filter values passed through a report URL no longer prevent filters from being configured. Configured labels for empty values are also displayed correctly in filters and visual-filter tiles. |
+| Fixed | Analytics – Visual Filters | **Visual-filter tiles now display available data correctly**, including values that were previously missing. Empty (NULL) groups no longer appear as unlabeled bars. |
+| Fixed | Analytics – Visual Filters | Bar tiles with more than four elements now filter reports correctly. The **Average** visual filter can also be saved without errors. |
+| Fixed | Analytics – Charts | **Charts now apply the configured sorting correctly**, including ascending order for measures. The **Sort** dropdown also displays **Without Sort** when no sorting is selected. |
+| Fixed | Analytics – Charts | Donut charts now work correctly with count-only data, and the **Donut** chart type is preserved when editing variants. |
+| Fixed | Analytics – Grouped Tables | Grouped tables now preserve row selection, colors, and automatic expansion while scrolling. Grouped drill-down tables are also readable in dark mode, and grouped variants retain their row navigation. |
+| Fixed | Analytics – Navigation | The row navigation counter now matches the list displayed under the navigation arrow. |
+| Fixed | Analytics – Drill-Downs | **Drill-down reports now display the correct data based on the source report's filters and selected rows.** Text keys use exact matching, and drill-downs with multiple keys work even when only one key is available. |
+| Fixed | Analytics – Drill-Downs | Drill-down panels now display available table data correctly. Clearing a parent selection shows **Waiting for a selection**, while records excluded by a target report's default filter display an explanatory message instead of **No data**. |
+| Fixed | Analytics – Printing | The hint in the **Print & Preview** layout picker is now displayed correctly. |
+| Fixed | Analytics – Charts | Chart export errors are now displayed to users, and the chart's empty state updates correctly when the view changes. |
+| Fixed | Manufacturing Orders | Improved the reliability of ProcessForce operations executed through AppEngine, reducing timeouts, update conflicts, and connection errors. |
+| Fixed | Manufacturing Orders | **Updating large Manufacturing Orders is now faster**, and document numbering works correctly when the document date changes. |
+| Fixed | Document Numbering | **Document numbering on SAP HANA now respects the configured numbering series**, preventing duplicate document numbers. |
+
 ## CompuTec AppEngine 3.2610.2
 
 **Release Date: 15 October 2026**
