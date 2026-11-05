@@ -4,37 +4,72 @@ sidebar_position: 1
 
 # Overview
 
-Here is an overview of the key **CompuTec WebUp** functions, along with examples of how they can be used in your daily work:
+This page shows you what you can do with **CompuTec WebUp**, where to do it, and how a typical customization works from start to finish. For background on how **CompuTec WebUp** is built, see the [**Introduction**](/docs/webup).
 
-- **View Management**: Manage your configuration sets with full version control. You can add new views, activate them, or roll back to an older view at any time. Every time you edit a current view, its new version is automatically created and saved. Example: When you click Edit next to version 1.0.2, a new version 1.0.3 is created, while 1.0.2 remains active as a backup. [Read more](/docs/webup/components/view-management)
+## What do you want to do?
 
-- **Control Management**: Edit and reorganize UI controls in supported SAP Web Client screens. Adjust visibility, position, groupings, and labels to make the interface easier to use. Example: Reorder the Sales Quotation header, so the most important fields appear first. [Read more](/docs/webup/components/control-management)
+| I want to… | Use | Example |
+| --- | --- | --- |
+| Create a view, keep its versions, or go back to an earlier version | [**View Management**](/docs/webup/components/view-management) | Activate version 2 of a view again after version 3 causes problems. |
+| Hide, move, or rename fields, tabs, and buttons, or add a new control | [**Control Management**](/docs/webup/components/control-management) | Move the most important fields to the top of the **Sales Quotation** header. |
+| Run logic when a user changes a field, clicks a button, or adds, updates, cancels, or closes a document | [**Smart Actions**](/docs/webup/components/smart-actions) | Show "Are you sure you want to change the price?" when a user changes a price field. |
+| Show a changing value, such as the document number, in a control | [**Parameters**](/docs/webup/components/parameters) | A button shows the document key of the open **Sales Order**. The text changes when the user opens another order. |
+| Start an action from the keyboard | [**Dot Actions**](/docs/webup/components/dot-actions) | A user presses the **.** key and selects your action. |
 
-- **View Actions**: Create event-based automations and validations that run before or after user actions, such as On Update, On Save. Example: Show a confirmation message before a user saves changes to a document. [Read more](/docs/webup/components/view-actions)
+:::warning[Important]
 
-- **Smart Actions**: Reusable logic that you link to View Events, such as form loading or data loading, or to the events of controls. Smart Actions replace View Actions, which are not supported in CompuTec WebUp 1.2610.2 and later. You can show confirmations, validate documents with SQL, and open documents or CompuTec AppEngine applications. For example, a popup asks "Are you sure you want to change the price?" when a user changes a price field. [Read more](/docs/webup/components/smart-actions)
+**View Actions** are not supported in **CompuTec WebUp** 1.2610.2 and later. Use [**Smart Actions**](/docs/webup/components/smart-actions) instead.
 
-- **Parameters**: Reusable values that you define once and use in control properties and Smart Actions. For example, a button shows the document key of the open Sales Order, and the text changes when the user opens another order. [Read more](/docs/webup/components/parameters)
-
-- **Dot Actions**: Your own actions in the "." command palette of the SAP Business One Web Client. Each Dot Action runs a Smart Action. For example, a user presses the **.** key and selects your action. [Read more](/docs/webup/components/dot-actions)
-
-:::note[info]
-**CompuTec WebUp Roadmap** evolves over time. For the latest feature planning and prioritization, refer to our official [CompuTec WebUp Roadmap](https://trello.com/b/ePvajGq6/computec-webup-roadmap).  
-This document describes general functional capabilities and does not represent confirmed release dates.
 :::
 
-## Functional context
+## CompuTec WebUp Manager panel
 
-CompuTec WebUp is built around a few guiding principles that help keep your configurations stable and easy to maintain:
+The top of the **CompuTec WebUp Manager** side panel shows the view you work on and the buttons that control it. The buttons you see depend on the status of the view.
 
-1. **Browser-first design**: Computec WebUp runs fully in the browser and extends the SAP Business One Web Client without SDK or local installations.
-2. **CompuTec AppEngine-integrated architecture**: All logic, data access, and configuration management run on the CompuTec AppEngine Framework.
-3. **Configurable UI layer**: You can inspect, reposition, and edit UI elements inside supported SAP Business One Web Client screens.
-4. **Event-driven behavior**: Link Smart Actions to View Events, such as form loading or data loading, or to control events, such as pressing a button or changing a field.
-5. **Dynamic data connections**: You can link control values to live SAP data models, for example, Sales Quotation Total, using CompuTec AppEngine through Parameters.  
-6. **Version configuration management**: Every change is versioned, activable, and revertible.
-7. **Modular evolution**: Future CompuTec WebUp features (layouts, actions, data integrations) can be added without affecting your existing setups.
+![CompuTec WebUp Manager header of a draft view with the Draft status, Preview, Activate, Select Control, and New Control buttons](media/view-mngmt/view-mngmt0.png)
 
-:::note[info]
-CompuTec WebUp adheres to **SAP Fiori guidelines**, maintaining the native SAP Business One Web Client’s look and feel while improving flexibility and usability. Read more about [SAP Fiori guidelines](https://www.sap.com/design-system/fiori-design-web/) and the [SAPUI5 framework](https://www.sap.com/design-system/fiori-design-web/v1-136/discover/get-started/ui5).
+- **View name and status** – The name of the view, for example **view 3**, and its status: **Draft** or **Active**. The view code and version number are displayed next to the status.
+- **Edit** – Appears when the view is **Active**. Click it to start editing.
+- **Activate** – Appears when the view is a **Draft**. Click it to make the draft the active version.
+- **Deactivate** – Appears when the view is **Active**. Click it to deactivate the view.
+- **Preview** – Appears when the view is a **Draft**. Click it to see your changes in **WebUp Preview Mode**. To leave preview mode, click **Close Preview**.
+- **Select Control** – Click it, and then click a control in **SAP Business One Web Client** to select it.
+- **New Control** – Click it to add a new control to the screen.
+- **Help icon (question mark)** – Click it to show or hide help links next to supported controls and properties.
+
+### Edit mode
+
+:::info[Note]
+
+To create or change views, controls, Smart Actions, Parameters, or Dot Actions, the view must be in edit mode. If the view is **Active**, click **Edit** first. **CompuTec WebUp** creates a new draft version, and the active version stays in use until you click **Activate**.
+
+![CompuTec WebUp Manager header of an active view with the Edit button highlighted](media/parameters/edit-mode.png)
+
+If the view shows **Draft**, you are already in edit mode.
+
 :::
+
+### Tabs
+
+Below the header, the panel has five tabs:
+
+- **View Details** – Add, duplicate, edit, and delete views, browse their versions, and add Smart Actions to View Events. [Read more](/docs/webup/components/view-management)
+- **Control Details** – Select a control and set its properties. [Read more](/docs/webup/components/control-management)
+- **Smart Actions** – Create the logic that runs on events of views and controls. [Read more](/docs/webup/components/smart-actions)
+- **Dot Actions** – Add your own actions to the command palette that opens when you press the **.** key (dot or full stop). [Read more](/docs/webup/components/dot-actions)
+- **Parameters** – Define reusable values and use them in control properties and Smart Actions. [Read more](/docs/webup/components/parameters)
+
+## How a typical customization works
+
+1. Open the screen in **SAP Business One Web Client**.
+2. Make sure the view is in edit mode. If the view is **Active**, click **Edit**.
+3. Make your changes: add or change controls, Smart Actions, Parameters, or Dot Actions.
+4. Click **Save & Preview**, and then check your changes in **CompuTec WebUp Preview Mode**.
+5. If you like the results, click **Activate**.
+6. Done! Users see your customized view.
+
+If something goes wrong, you can go back to an earlier version of the view. For more information, see [**View Management**](/docs/webup/components/view-management).
+
+## Next steps
+
+See [**View Management**](/docs/webup/components/view-management) to create and manage views, [**Control Management**](/docs/webup/components/control-management) to customize controls, and [**Smart Actions**](/docs/webup/components/smart-actions) to add logic.

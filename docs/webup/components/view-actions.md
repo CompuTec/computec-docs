@@ -6,9 +6,9 @@ sidebar_position: 4
 
 :::warning[Important]
 
-**View Actions** are not supported in **CompuTec WebUp** 1.2610.2 and later. This page describes View Actions in earlier versions.
+**View Actions** are not supported in **CompuTec WebUp 1.2610.2 and later**. This page describes View Actions in earlier versions.
 
-In **CompuTec WebUp version 1.2610.2 and later**, use [Smart Actions](/docs/webup/components/smart-actions).
+In version 1.2610.2 and later, use [**Smart Actions**](/docs/webup/components/smart-actions).
 
 :::
 

@@ -31,6 +31,8 @@ Some view sections don't have visible titles. In these cases, they are identifie
     ![alt text](media/ctrl-mgnmt/webup-control-mgmt4.png)
     :::
 
+- **Add New Control**:
+
 - **Position**: Move or reorder controls within a section or between different sections
 
     ![alt text](media/ctrl-mgnmt/webup-control-mgmt1.png)
@@ -50,7 +52,7 @@ Some view sections don't have visible titles. In these cases, they are identifie
     Watch our videos to see how to use the **Dynamic** mode:  
 
     ▶ **Watch**: [CompuTec WebUp - Dynamic Control Configuration](https://www.youtube.com/watch?v=ugpA8rHT2P8)  
-    ▶ **Watch**: [CompuTec WebUp - Highlighting Fields with Colour](https://www.youtube.com/watch?v=ufN3qK_F1aY)
+    ▶ **Watch**: [CompuTec WebUp - Highlighting Fields with Color](https://www.youtube.com/watch?v=ufN3qK_F1aY)
     :::
 
 ## Control management use cases
@@ -62,6 +64,17 @@ If you want to add a new control, follow these steps:
 1. Log in to **SAP Business One Web Client**.
 2. Navigate to the screen where you want to add a control. In our example, it's **Sales Order 4**.
 3. Open **CompuTec WebUp Manager** by clicking on its browser extension icon.
+
+    :::info[Note]
+
+    To create or change views, controls, Smart Actions, Parameters, or Dot Actions, the view must be in edit mode. If the view is **Active**, click **Edit** in **CompuTec WebUp Manager** first. **CompuTec WebUp** creates a new draft version, and the active version stays in use until you click **Activate**.
+
+    ![alt text](media/parameters/edit-mode.png)
+
+    If the view shows **Draft**, you are already in edit mode.
+
+    :::
+
 4. Click **+ Add New Control**.
 
     ![alt text](media/add-control/add-a-control1.png)
@@ -74,7 +87,7 @@ If you want to add a new control, follow these steps:
 
     ![alt text](media/add-control/add-a-control3.png)
 
-7. In **SAP Business One Web Cient**, click the place where you want to add the control.
+7. In **SAP Business One Web Client**, click the place where you want to add the control.
 
 8. In **CompuTec WebUp Manager** side panel, choose the **Relative Position** of the control. In our example, we want to add our control ``After`` the **Accounting** section.
 
