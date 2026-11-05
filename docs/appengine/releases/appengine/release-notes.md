@@ -8,8 +8,6 @@ sidebar_position: 1
 
 **Release Date: 4 November 2026**
 
-**AppEngine Core Version: 3.0.1.638**
-
 | Issue Type | Component | Release Note |
 | --- | --- | --- |
 | Added | Analytics – Drill-Downs | **Drill-down reports now open as additional levels on the same page**, below the source report. Selecting rows updates subsequent levels, multiple values can be passed to drill-downs, and the drill-down hierarchy is preserved after refreshing the page. |
