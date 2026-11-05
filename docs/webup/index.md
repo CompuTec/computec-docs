@@ -99,7 +99,7 @@ Here is an overview of the key **CompuTec WebUp** components:
 
 ### CompuTec WebUp Manager
 
-- A browser extension that provides a side-panel user interface. For a description of the panel, see the [Overview](/docs/webup/components/overview).
+- A browser extension that provides a side-panel user interface. For a description of the panel, see the [Overview](/docs/webup/components/components-and-functional-overview).
 - Allows administrators and consultants to create, edit, and test configuration settings and to preview changes before deployment.
 - Includes a [built-in **Help Mode**](https://www.youtube.com/watch?v=DBv20ifpcCY) that provides direct access to **SAP Business One** documentation. When enabled, contextual help links are displayed next to supported controls, properties, and **SAP Business One** objects.
 - Where possible, it uses the **SAP Business One Web Client Extensibility Framework** for supported configuration options.
