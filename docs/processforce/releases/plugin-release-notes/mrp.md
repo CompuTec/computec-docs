@@ -6,6 +6,17 @@ sidebar_position: 12
 
 Below are the release notes for CompuTec Material Requirements Planning (MRP) Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec MRP 3.2611.2
+
+**Release Date: 5 November 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | MRP Wizard | **You can now select From Bill of Material as the target warehouse option** on the **Forecast & Recom.** tab of the **MRP Wizard**. This allows MRP recommendations to use the warehouse defined in the Bill of Materials, alongside the existing **Default** and **Demand** options. |
+| Fixed | MRP Wizard / Order Recommendations | **The Display Selected Items Only filter now correctly limits results to items selected in the planning scenario.** This applies to the **Results** and **Recommendations** tabs in the MRP Wizard and the standalone **Order Recommendations** view in MRP 2.5. The related toolbar filters also work correctly. |
+| Fixed | Order Recommendations | **Saving recommendations now creates documents for the selected rows.** Creating Manufacturing Orders no longer automatically changes the **Recommendations Status** filter to **Failed**. |
+| Fixed | CTP Results | The **CTP Results** page now displays the **Item Name** for Sales Order lines planned by a CTP scenario. |
+
 ## CompuTec MRP 3.2610.3
 
 **Release Date: 6 October 2026**

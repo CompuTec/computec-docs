@@ -6,6 +6,18 @@ sidebar_position: 15
 
 Below are the release notes for CompuTec Mass Change (Bulk Change) Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec Mass Change (BulkChange) Plugin 3.2611.1
+
+**Release Date: 5 November 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Fixed | BOM to Manufacturing Order Updates | **Updating Manufacturing Orders after Bill of Materials changes is now more reliable.** Update jobs no longer remain stuck in `Processing` because of conflicting or overlapping executions. Conflicting updates are retried automatically, and a new **MORUpdateRecoveryJob** can restart updates that remain in `Start Update` or `Processing` beyond the configured timeout (120 minutes by default). **To enable automatic recovery, assign MORUpdateRecoveryJob to the company.** The recovery job runs every 10 minutes by default. |
+| Fixed | Manufacturing Order Updates | Applying Bill of Materials changes to Manufacturing Orders no longer fails with the `Exception has been thrown by the target of an invocation` error, including when an item is replaced on a Manufacturing Order line. |
+| Fixed | Operation Bindings | **Item replacements now preserve operation bindings and their settings.** This also fixes the handling of imported operation bindings without an item code and ensures that binding quantities and operation input/output values are updated correctly when an item code changes in a Bill of Materials. |
+| Fixed | Bulk Change Scenarios | Creating a new Bulk Change scenario no longer leaves the screen loading indefinitely. If an error occurs, the application now displays the error message. |
+| Fixed | Item Selection | Item and revision selection lists now open correctly when filtering in the **What** section of the **Items** tab or in the item replacement dialog. |
+
 ## CompuTec Mass Change (BulkChange) Plugin 3.2603.1
 
 **Release Date: 11 March 2026**
