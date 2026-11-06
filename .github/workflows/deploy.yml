@@ -19,6 +19,12 @@ jobs:
   build-and-deploy:
     name: Build and deploy site
     runs-on: ubuntu-latest
+    # Production: a single shared queue; never cancel a run in progress
+    # (DocSearch scraper uses a shared <index>_tmp index, so parallel crawls overwrite each other).
+    # Pull requests: a separate group per PR; a new push cancels the previous build.
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && format('pr-{0}', github.event.number) || 'production' }}
+      cancel-in-progress: ${{ github.event_name == 'pull_request' }}
     if: ${{
       github.event_name == 'workflow_dispatch' ||
       github.event_name == 'push' ||
@@ -158,9 +164,9 @@ jobs:
               log_url: `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
               environment_url: process.env.CLOUDFLARE_DEPLOYMENT_URL,
             });
-      - name: Set Github 'error' deployment status if build failed
+      - name: Set Github 'error' deployment status if build failed or was cancelled
         uses: actions/github-script@v9.0.0
-        if: ${{ failure() && steps.github-deployment.conclusion == 'success' }}
+        if: ${{ (failure() || cancelled()) && steps.github-deployment.conclusion == 'success' }}
         env:
           DEPLOYMENT_ID: ${{ steps.github-deployment.outputs.result }}
         with:
