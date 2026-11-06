@@ -21,11 +21,15 @@ For example, you can use a View Action to check whether required information is 
 With View Actions, key users and administrators can extend standard SAP Business One Web Client behavior without modifying SAP core objects or source code.
 
 :::note[info]
-**View Actions** respond to document events, such as adding or updating a document. **Smart Actions** respond to interactions with UI controls, such as changing a field or clicking a button. [Read more](/docs/webup/components/smart-actions)
+
+**View Actions** are not supported in **CompuTec WebUp 1.2610.2 and later**. When you update to this version, **CompuTec WebUp** automatically converts your **View Actions** to [**Smart Actions**](/docs/webup/components/smart-actions) and connects them to the same events. This page describes View Actions in earlier versions.
+
 :::
 
 :::info[Note]
+
 You can access each CompuTec WebUp function from the **CompuTec WebUp Side Panel inside the SAP Business One Web Client**. Features open only if the current SAP Business One screen supports extensibility.
+
 :::
 
 ## Main sections of CompuTec WebUp View Actions
