@@ -4,15 +4,9 @@ sidebar_position: 5
 
 # Smart Actions
 
-**Smart Actions** in **CompuTec WebUp** add reusable logic to the **SAP Business One Web Client**. You define a **Smart Action** once and run it in many places: when a form or data loads, when a user changes a field, or when a user clicks a button.
+**Smart Actions** in **CompuTec WebUp** add reusable logic to the **SAP Business One Web Client**. You define a **Smart Action** once and run it in many places: when a user adds, updates, cancels, or closes a document, when a user changes a field, or when a user clicks a button.
 
-**Smart Actions** replace **View Actions**, which are not supported in **CompuTec WebUp 1.2610.2 and later**. You link a **Smart Action** to a **View Event**, such as form loading or data loading, or to the event of a control. Each link is called a binding. For each binding, you choose when the **Smart Action** runs, turn the binding on or off, and set the order in which actions run.
-
-:::info[Note]
-
-If you already use **View Actions**, you can convert them to **Smart Actions**. The conversion creates **Local** **Smart Actions** and their bindings for you. See [Convert View Actions to Smart Actions](/docs/webup/components/view-actions).
-
-:::
+**Smart Actions** replace **View Actions**, which are not supported in **CompuTec WebUp 1.2610.2 and later**. You link a **Smart Action** to a **View Event** (`On Add`, `On Update`, `On Cancel`, or `On Close`) or to the event of a control. Each link is called a binding. For each binding, you choose when the **Smart Action** runs, turn the binding on or off, and set the order in which actions run.
 
 ## Key functions of Smart Actions
 
@@ -23,7 +17,7 @@ With **Smart Actions** in **CompuTec WebUp**, you define an action once and reus
 - Trigger logic when a user edits a field
 - Run actions when a button is pressed
 - Display confirmations or validations at the exact moment of interaction
-- Run logic when a form or data loads
+- Run logic when a user adds, updates, cancels, or closes a document
 - Validate a document with a read-only SQL query before it is saved
 - Open a document, a document list, or a CompuTec AppEngine application from a **Smart Action**
 - Improve user experience without modifying SAP core functionality
@@ -67,7 +61,7 @@ To create a Smart Action, follow these steps:
 
     :::note[Info]
 
-    When you convert **View Actions** to **Smart Actions**, **CompuTec WebUp** creates them with the **Local** scope.
+    After the **CompuTec WebUp 1.2610.2 update**, when **View Actions** were automatically converted to **Smart Actions**, **CompuTec WebUp** created them with the **Local** scope.
 
     :::
 

@@ -55,7 +55,7 @@ Yes. It supports both **on-premise** and **cloud** environments, including **pri
 
 ### How do I install CompuTec WebUp?
 
-You need to [install](/docs/appengine/administrators-guide/configuration-and-administration/installation) CompuTec AppEngine 3.0 and download the **CompuTec WebUp App** from the CompuTec AppEngine App Store. You will also need to install **CompuTec WebUp Manager** and **CompuTec WebUp Client** for Google Chrome and Microsoft Edge, respectively, from their extension stores. However, at the time of writing, publication of the extensions in the Google Chrome and Microsoft Edge stores is pending.
+[Install CompuTec AppEngine 3.0](/docs/appengine/administrators-guide/configuration-and-administration/installation) and the CompuTec WebUp App from the CompuTec AppEngine Plugin (App) Store. Then install the browser extensions published by CompuTec S.A.: CompuTec WebUp Manager from the Chrome Web Store (for Google Chrome and Microsoft Edge), and CompuTec WebUp Client from the Chrome Web Store or the Firefox Add-ons store. For detailed steps, see [Installation and Activation](/docs/webup/installation-and-activation).
 
 :::info
 
@@ -90,6 +90,10 @@ Not yet, but this functionality is planned for a future release.
 
 We recommend **Google Chrome**.  
 **Microsoft Edge** is also supported, although due to a known issue (reported to Microsoft), the CompuTec WebUp panel may disappear when switching tabs.
+
+### Is Mozilla Firefox supported?
+
+Partly. **CompuTec WebUp Client** is available for Mozilla Firefox in the Firefox Add-ons store, under the CompuTec S.A. publisher. **CompuTec WebUp Manager** is not available for Mozilla Firefox. To create customizations, use Google Chrome or Microsoft Edge.
 
 ### Which browsers can I use to run customized SAP Business One Web Client views?
 
