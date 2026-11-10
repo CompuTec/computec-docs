@@ -38,21 +38,21 @@ The **View Actions** interface in **CompuTec WebUp Manager** has three main sect
 
 - **Details**: Here you’ll find the unique code of your action and a place to type its name. Here you can also make your action active or deactivate it.
 
-    ![alt text](media/view-act1.png)
+    ![CompuTec WebUp Manager Details panel showing an active View Action named “Warning- Contact Person is empty” with code AC-00006.](media/view-act1.png)
 
 - **Triggers**: You can choose to activate your action `Before` or `After` following triggers: `On Update`, `On Add`, `On Cancel` or `On Close`.
 
-    ![alt text](media/view-act2.png)
+    ![View Action trigger settings for choosing whether an action runs before or after a document event.](media/view-act2.png)
 
 - **Action Script**: Use this area to enter or paste JavaScript code that defines the action logic. The **Parameter Helper** provides information about the parameters available for the action, helping you use data from the current SAP Business One context in your script.
 
-    ![alt text](media/view-act3.png)
+    ![View Action script editor with the Parameter Helper for referencing SAP Business One context data.](media/view-act3.png)
 
 :::note[info]
 Each control in SAP Business One Web Client has its **Global Unique Identifier (GUID)**. You can copy it and use it in the script during the **View Actions** creation to precisely reference a control in your SAP Business One interface.  
 To reference controls precisely when building actions, you can use the **Select Control** tool, the right-click **Inspect Element** or **Copy GUID** options.
 
-![alt text](media/ctrl-mgnmt/webup-control-mgmt4.png)
+![CompuTec WebUp control management interface showing options for selecting a control and copying its GUID.](media/ctrl-mgnmt/webup-control-mgmt4.png)
 :::
 
 ## Key features of CompuTec WebUp View Actions
@@ -81,31 +81,31 @@ You can create a warning prompt when a user doesn’t add a project name when up
 
 4. Click **Add Action**.
 
-    ![alt text](media/add-view-act/add-view-action1.png)
+    ![CompuTec WebUp Manager with the Add Action option for creating a View Action.](media/add-view-act/add-view-action1.png)
 
 5. Enter the action details.
 
-    ![alt text](media/add-view-act/add-view-action2.png)
+    ![View Action details form for entering the action name and settings.](media/add-view-act/add-view-action2.png)
 
 6. Choose the trigger for your action. In our case, we choose `Before` in the **On Update** trigger field, because we want to make sure the user won’t save the document without the contact person.
 
-    ![alt text](media/add-view-act/add-view-action3.png)
+    ![View Action trigger settings with Before selected for the On Update event.](media/add-view-act/add-view-action3.png)
 
 7. Now, it’s time to add our script to the **Action Script** field. In our example, we have a script showing a warning message if a `Contact Person` field is empty.
 
-    ![alt text](media/add-view-act/add-view-action4.png)
+    ![View Action script editor containing a validation for an empty Contact Person field.](media/add-view-act/add-view-action4.png)
 
 8. Click **Save & Preview** to confirm.
 
-    ![alt text](media/add-view-act/add-view-action4b.png)
+    ![View Action setup screen with the Save & Preview option.](media/add-view-act/add-view-action4b.png)
 
 9. Now you can test your action in the preview mode.
 
-    ![alt text](media/add-view-act/add-view-action5.png)
+    ![Preview of the View Action validation warning in the SAP Business One Web Client.](media/add-view-act/add-view-action5.png)
 
 10. If you like how it works, **Activate** the action.
 
-    ![alt text](media/add-view-act/add-view-action6.png)
+    ![View Action screen with the Activate option for enabling the action.](media/add-view-act/add-view-action6.png)
 
 ### Automations
 
