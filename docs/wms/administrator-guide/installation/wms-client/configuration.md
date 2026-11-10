@@ -350,20 +350,27 @@ After the first installation of CompuTec WMS Client, open the settings and click
 
 ## Log in to CompuTec WMS Client
 
-After configuring the client, log in to start working with CompuTec WMS.
+In CompuTec WMS 3.0, you must enter your username and password before you can see your companies. The company list shows only the companies (databases) that your terminal user is assigned to.
 
-1. On the login screen, select the required **Company name**.
+1. On the login screen, enter the terminal user's **Username** and **Password**. If a barcode is assigned to the terminal user, you can scan it instead.
 
     ![Login screen with the company selection field](../media/start-and-config-wms-client/wms-intro0.png)
 
-2. Enter the terminal username and password.
-    If a barcode is assigned to the terminal user, you can scan the barcode to log in.
+2. In the company list, select the company you want to log in to.
 
-    :::note[info]
-    For information about creating terminal users and licensing, see [CompuTec WMS Licensing](/docs/wms/administrator-guide/installation/wms-licensing).
+    :::info[Note]
+
+    In **CompuTec WMS 3.0**, the company list stays empty until you enter a username and password. If the company you need is missing from the list, ask an administrator to [grant your user access to the company database](#grant-a-user-access-to-a-company-database).
+
     :::
 
 3. Click **Log in**.
+
+:::note[info]
+
+For information about creating terminal users and licensing, see [CompuTec WMS Licensing](/docs/wms/administrator-guide/installation/wms-licensing).
+
+:::
 
 ### Grant a user access to a company database
 
