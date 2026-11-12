@@ -30,8 +30,21 @@ export default (production?: boolean) => ([
     {
         label: "PDC",
         pluginId: "pdc",
-        currentVersion: "3.0",
+        currentVersion: "4.0",
         includeCurrentVersion: true,
+        lastVersion: "current",
+        version: {
+            current: {
+                label: "4.0",
+                badge: true,
+                banner: "none"
+            },
+            "3.0": {
+                label: "3.0",
+                badge: true,
+                banner: "none"
+            }
+        }
     },
     {
         label: "WMS",

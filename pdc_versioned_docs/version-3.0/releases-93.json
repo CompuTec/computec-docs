@@ -1,0 +1,23 @@
+[
+  {
+    "build": "3.93.14.1",
+    "installer_url": "https://download.computec.one/software/pdc/releases/CompuTec_PDC_3.93.14.1_x64.msi",
+    "plugin_url": "https://download.computec.one/software/appengine/plugins/pdc/releases/CompuTec_PDC_3.93.14.1.zip",
+    "related_version": "PL14 R1 HF1 and later*",
+    "release_date": "17 November 2020"
+  },
+  {
+    "build": "3.93.13.1",
+    "installer_url": "https://download.computec.one/software/pdc/releases/CompuTec_PDC_3.93.13.1_x64.msi",
+    "plugin_url": "https://download.computec.one/software/appengine/plugins/pdc/releases/CompuTec_PDC_3.93.13.1.zip",
+    "related_version": "PL13 R1 and later*",
+    "release_date": ""
+  },
+  {
+    "build": "3.93.12.1",
+    "installer_url": "https://download.computec.one/software/pdc/releases/CompuTec_PDC_3.93.12.1_x64.msi",
+    "plugin_url": "https://download.computec.one/software/appengine/plugins/pdc/releases/CompuTec_PDC_3.93.12.1.zip",
+    "related_version": "PL12 R1 and later*",
+    "release_date": ""
+  }
+]
