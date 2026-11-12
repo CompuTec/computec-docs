@@ -2,7 +2,7 @@
 sidebar_position: 9
 ---
 
-# Antivirus Configuration for CompuTec AppEngine
+# Antivirus Configuration
 
 Antivirus software can sometimes interfere with **CompuTec AppEngine** operations. Real-time scanning of application files, temporary folders, or installation packages may cause issues such as:
 
