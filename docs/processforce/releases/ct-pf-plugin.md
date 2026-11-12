@@ -11,6 +11,42 @@ You can find all download links and release notes for the latest available **Com
 However, we strongly recommend using **CompuTec ProcessForce Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec ProcessForce 3.2611.1
+
+**Release Date: 12 November 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | Costed BOM Snapshots | **Cost Roll-Up and Cost Rollover now create versioned Costed BOM Snapshots**, which Manufacturing Orders use as the basis for their planned and standard costs. This allows users to retain historical BOM cost information and analyze manufacturing costs against the corresponding snapshot. |
+| Added | Costed BOM Snapshots – Analytics | **Four new Analytics reports are available:** **Costed BOM Snapshots**, **Costed BOM Tree**, **Costed BOM Snapshot for MOR**, and **Costed BOM Snapshot vs MOR**. Users can also open the comparison report directly from the Manufacturing Order form using the right-click context menu. |
+| Added | Cost Roll-Up / Cost Rollover | Cost Roll-Up and Cost Rollover can now be executed through the AppEngine API. Settings are validated before execution, and clear error messages explain why an operation cannot be started. |
+| Added | Manufacturing Orders | The Manufacturing Order form now includes an **Add and View** option, allowing users to open the newly created Manufacturing Order immediately instead of opening a new empty form. |
+| Added | MRP 2.5 | MRP calculations now take tolerance days into account. |
+| Improved | Manufacturing Orders – Sales Order Linking | **Linking Sales Orders to Manufacturing Orders is now more flexible and provides better visibility of allocated quantities.** The selection window displays allocated and remaining quantities, uses the remaining quantity by default, and allows users to exclude fully allocated or closed lines. A new option in **General Settings** also allows users to select entire Sales Orders instead of individual lines. |
+| Improved | Item Details | **Default Distribution Rules and Project can now be defined for individual Item Details revisions** and copied to Bill of Materials and Manufacturing Order lines. Users can configure whether these values come from Item Master Data or Item Details in **General Settings**. |
+| Improved | Manufacturing Orders – Performance | **Saving large Manufacturing Orders is now significantly faster**, especially when changing header information such as **Remarks**. Unchanged lines in the linked Production Order are no longer recreated, reducing unnecessary inventory and change log entries. Manufacturing Order saves have also been optimized on both Microsoft SQL Server and SAP HANA to prevent performance degradation as user login history grows. |
+| Improved | Forecasts – MRP 2.5 | **Saving large forecasts is now significantly faster**, as only modified rows are saved. Existing forecast data is migrated automatically during the upgrade, with improved migration performance and progress information. Individual forecast row changes are no longer recorded in the change log. |
+| Improved | Production Order Synchronization | Creating SAP Business One Production Orders from Manufacturing Orders now works even when the corresponding SAP Bill of Materials contains inactive items. |
+| Improved | Document Navigation | A link arrow is now available next to the Manufacturing Order number on Goods Receipt, Goods Issue, Sales Order, and Inventory Transfer documents, providing direct access to the related Manufacturing Order. |
+| Improved | Pick Receipt | When entering a batch number manually in the batch setup window, the remaining quantity to receive is now filled in automatically. |
+| Improved | Bill of Materials / Manufacturing Orders | Revision information in the document header now displays both the revision code and description, making it easier to identify the selected revision. |
+| Fixed | Gantt Chart | Changing the time in the date and time editor on the **Manufacturing Orders** tab of the Gantt chart no longer causes SAP Business One to crash. |
+| Fixed | Scheduling Board | **Scheduling Manufacturing Orders with frozen resources now handles invalid operation durations correctly.** Orders with invalid durations are reported as failed instead of being saved with incorrect values. The Scheduling Board displays an error when an order cannot be saved, and previously stored invalid operation times are cleared. |
+| Fixed | Manufacturing Orders – Scheduling | Rescheduling a Manufacturing Order no longer fails with the `invalid dates at Manufacturing Order resource` error when a finished operation has no registered quantity. |
+| Fixed | Manufacturing Orders / Operation Time Recording | Improved the reliability of operations executed through AppEngine, reducing SQL timeouts and concurrent update conflicts when recording operation times or updating Manufacturing Orders. |
+| Fixed | Pick Receipt – API | Posting a Pick Receipt through the API no longer returns an HTTP 500 error after the receipt documents have already been created if the subsequent Production Order synchronization fails. |
+| Fixed | Pick Order / Pick Receipt – API | **A single API request no longer creates duplicate Pick Receipts or Pick Orders** when **Auto Receipt** or **Auto Issue** is enabled, respectively. |
+| Fixed | Pick Order / Pick Receipt – API | Issued or picked lines can no longer be deleted through the API. Deleting an eligible line also removes its related picked items and bin allocations. Deleting the last remaining row of a Pick Order or Pick Receipt child collection now correctly removes it from the database. Related form messages are also translated. |
+| Fixed | Manufacturing Orders – Component Transfers | The **Transfer Components** action now works correctly when the available stock exactly matches the remaining demand, instead of displaying the `Qty (Inventory UoM) cannot be zero` error. |
+| Fixed | Bill of Materials – Routing | A routing can no longer be removed from a Production Process while it is used by an open Manufacturing Order. |
+| Fixed | Sales Orders | Changing the receive date on an existing Sales Order line no longer causes the `Form - Bad Value` error. |
+| Fixed | Restore Item Details | The **Restore Item Details** operation now displays a single progress bar with descriptive progress messages. The **Restoration finished** message appears only after the entire operation is complete. |
+| Fixed | Quality Control – Test Protocols | Automatically generated Test Protocols now correctly inherit item properties, including business partner relations, from the item group's base Test Protocol. |
+| Fixed | Quality Control – Quality Plans | **Quality Plan sampling settings are now validated** to ensure that the sum of the **Acceptance Number** and **Rejection Number** does not exceed the **Number of Samples**. This prevents invalid sampling configurations from leaving QC Test Pools permanently in the **To Be Determined** status. |
+| Fixed | Cost Roll-Up | Scheduled Cost Roll-Up jobs no longer fail silently when no cost categories are configured for the job. |
+| Fixed | Manufacturing Orders – User Interface | The **Add** button now remains visible on the Manufacturing Order form when display scaling is applied. |
+| Fixed | Manufacturing Orders / Routing | Restored the correct **Overlay Quantity** field label on the Manufacturing Order and Routing forms instead of **Operation Quantity**. |
+
 ## CompuTec ProcessForce 3.2610.4
 
 **Release Date: 30 October 2026**
