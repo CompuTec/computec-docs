@@ -27,7 +27,7 @@ export function getFooterItems(
             items: [
                 {
                     label: "Visit our website",
-                    href: "https://processforce.world",
+                    href: "https://www.computec.one",
                 },
                 {
                     label: "Roadmap",
@@ -52,7 +52,7 @@ export function getFooterItems(
                 },
                 {
                     label: "Contact",
-                    to: "/contact",
+                    href: "https://www.computec.one/about/contact",
                 },
             ],
         },

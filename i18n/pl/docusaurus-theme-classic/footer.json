@@ -13,7 +13,7 @@
   },
   "link.item.label.Visit our website": {
     "message": "Odwiedź naszą stronę",
-    "description": "The label of footer link with label=Visit our website linking to https://processforce.world"
+    "description": "The label of footer link with label=Visit our website linking to https://www.computec.one"
   },
   "link.item.label.Roadmap": {
     "message": "Roadmap",
@@ -57,7 +57,7 @@
   },
   "link.item.label.Contact": {
     "message": "Kontakt",
-    "description": "The label of footer link with label=Contact linking to /contact"
+    "description": "The label of footer link with label=Contact linking to https://www.computec.one/about/contact"
   },
   "copyright": {
     "message": "Treść serwisu prawnie chroniona © 2025 CompuTec S.A.",

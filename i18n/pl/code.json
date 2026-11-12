@@ -1,24 +1,4 @@
 {
-  "contact.how_can_we_help": {
-    "message": "Jak możemy pomóc?",
-    "description": "Contact -> How can we help?"
-  },
-  "contact.send_us_a_message": {
-    "message": "Wyślij nam wiadomość!",
-    "description": "Contact -> Send us a message!"
-  },
-  "contact.partner_support": {
-    "message": "Jeśli jesteś partnerem CompuTec i potrzebujesz wsparcia, skorzystaj z",
-    "description": "Contact -> Partner support"
-  },
-  "contact.support_portal": {
-    "message": "naszego portalu wsparcia",
-    "description": "Contact -> Support portal"
-  },
-  "contact.email_us_directly": {
-    "message": "Możesz również wysłać do nas wiadomość e-mail bezpośrednio na adres",
-    "description": "Contact -> Email us directly"
-  },
   "homepage.cards.processforce.description": {
     "message": "Zaawansowane rozwiązanie produkcyjne dla SAP Business One. Obejmuje zarządzanie inwentarzem i procesami produkcyjnymi, śledzeniem partii, MRP, QC, planowaniem produkcji, kalkulacją kosztów, obsługą zakładu i nie tylko.",
     "description": "Homepage card description"
@@ -357,38 +337,6 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tagi",
     "description": "The title of the tag list page"
-  },
-  "contact.what_can_we_help_you_with": {
-    "message": "Z czym możemy Ci pomóc?",
-    "description": "Contact -> What can we help you with?"
-  },
-  "contact.topic.other": {
-    "message": "Inne",
-    "description": "Contact -> Topic -> Other"
-  },
-  "contact.your_name": {
-    "message": "Imię i nazwisko",
-    "description": "Contact -> Your Name"
-  },
-  "contact.company_name": {
-    "message": "Firma",
-    "description": "Contact -> Company Name"
-  },
-  "contact.email": {
-    "message": "Email",
-    "description": "Contact -> Email"
-  },
-  "contact.phone": {
-    "message": "Telefon",
-    "description": "Contact -> Phone"
-  },
-  "contact.preferred_contact_method": {
-    "message": "Preferowana metoda kontaktu",
-    "description": "Contact -> Preferred contact method"
-  },
-  "contact.send": {
-    "message": "Wyślij",
-    "description": "Contact -> Send"
   },
   "layout.title": {
     "message": "Centrum Dokumentacji"
