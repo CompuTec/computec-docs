@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Installation and configuration
+# Installation and Configuration
 
 ## Before you start
 

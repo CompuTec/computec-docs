@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# CompuTec AppEngine Release Notes
+# Release Notes
 
 ## CompuTec AppEngine 3.2611.2
 
