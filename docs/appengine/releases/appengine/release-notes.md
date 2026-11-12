@@ -4,6 +4,20 @@ sidebar_position: 1
 
 # CompuTec AppEngine Release Notes
 
+## CompuTec AppEngine 3.2611.2
+
+**Release Date: 10 November 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Improved | OData | **Document lists now load faster**, particularly for documents with many lines, such as Forecasts. Child collection data is loaded only when explicitly requested, reducing the amount of data retrieved. |
+| Fixed | Master Data | **Saving multiple new master data records in a single batch now works correctly**, including when using **Restore Item Details** under **Help → Support Desk**. Duplicate codes within a batch now display a clear error message instead of leaving the progress bar stuck. |
+| Fixed | API / OData | Creating master data records through the API or OData now preserves the supplied **Code** and **Name** values instead of replacing them with automatically generated keys. |
+| Fixed | Data Management | Deleting the last row of a child collection now correctly removes it from the database. This includes deleting the only business partner relation in **Item Details**. |
+| Fixed | OData | Updating a field that clears related child records using an OData PATCH request no longer fails with an `HTTP 500` error. This includes clearing the routing code of a Manufacturing Order. |
+| Fixed | Analytics – Date Filters | Filtering reports by generated date parts, such as **Day of Week**, **Month**, or **Year**, no longer fails with an `invalid column name` error. |
+| Fixed | Data Management | Save operations now correctly report unsuccessful record creation or updates instead of incorrectly indicating that the records were saved successfully. |
+
 ## CompuTec AppEngine 3.2611.1
 
 **Release Date: 4 November 2026**

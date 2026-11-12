@@ -12,10 +12,7 @@ import Releases10 from "../releases-10.json";
 Here you can download all required CompuTec WMS files.
 
 :::note
-    Before installation please be sure that you:
-
-    - Checked and fulfilled [the requirements](../administrator-guide/installation/requirements.md) before installing CompuTec WMS Server.
-    - You know the [upgrade instructions](../administrator-guide/upgrade.md).
+    Before installation please be sure that you checked and fulfilled [the requirements](../administrator-guide/installation/requirements.md) before installing CompuTec WMS Server.
 :::
 
 :::warning CompuTec WMS Server restart
