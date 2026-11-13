@@ -18,16 +18,35 @@ export function getDocsFooterItems(
     return docs.map(getDocFooterItem);
 }
 
+// Links to www.computec.one, per site locale. Docusaurus sets
+// DOCUSAURUS_CURRENT_LOCALE before it loads the config for each locale.
+const companySiteLinks = {
+    en: {
+        website: "https://www.computec.one",
+        contact: "https://www.computec.one/about/contact",
+    },
+    pl: {
+        website: "https://www.computec.one/pl",
+        contact: "https://www.computec.one/pl/o-nas/kontakt",
+    },
+};
+
+function getCompanySiteLinks() {
+    const locale = process.env.DOCUSAURUS_CURRENT_LOCALE;
+    return locale === "pl" ? companySiteLinks.pl : companySiteLinks.en;
+}
+
 export function getFooterItems(
     docsFooterItems: ReturnType<typeof getDocsFooterItems>
 ): Preset.ThemeConfig["footer"]["links"] {
+    const companySite = getCompanySiteLinks();
     return [
         {
             title: "FIND US ONLINE",
             items: [
                 {
                     label: "Visit our website",
-                    href: "https://processforce.world",
+                    href: companySite.website,
                 },
                 {
                     label: "Roadmap",
@@ -52,7 +71,7 @@ export function getFooterItems(
                 },
                 {
                     label: "Contact",
-                    to: "/contact",
+                    href: companySite.contact,
                 },
             ],
         },

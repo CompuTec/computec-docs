@@ -3,3 +3,7 @@
 /docs/appengine/administrators-guide/configuration-and-administration/McpUserGuide/ /docs/appengine/administrators-guide/configuration-and-administration/mcp-server-for-sap-business-one/ 301
 /docs/appengine/administrators-guide/configuration-and-administration/CreateOperatorForCCC/ /docs/appengine/administrators-guide/configuration-and-administration/operator-setup-and-iam-server-assignment-in-cloud-control-center/ 301
 /solutions/computec-webup/* /docs/webup/:splat 301
+/contact https://www.computec.one/about/contact 301
+/contact/ https://www.computec.one/about/contact 301
+/pl/contact https://www.computec.one/pl/o-nas/kontakt 301
+/pl/contact/ https://www.computec.one/pl/o-nas/kontakt 301
