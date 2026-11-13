@@ -66,6 +66,21 @@ export default function ContentWrapper(props: Props): ReactNode {
           <p>When upgrading, update all required CompuTec components together to ensure compatibility. <a href="https://learn.computec.one/docs/wms/">Read more</a></p>
         </Admonition>
       )}
+            {activePlugin.pluginId === "pdc" && activeDocContext.activeVersion?.label === "3.0" && (
+        <Admonition type="warning">
+          <p>You are viewing documentation for <b>CompuTec PDC 3.0</b>, which is supported until <b>December 31, 2026</b>. After this date, it will no longer receive regular support or maintenance updates.</p>
+          <p>We recommend <a href="https://learn.computec.one/docs/pdc/administrator-guide/installation/application-upgrade">upgrading to <b>CompuTec PDC 4.0</b></a>, which runs on <b>CompuTec AppEngine 3.0 (.NET 8)</b>.</p>
+          <p>When upgrading, update all required CompuTec components together to ensure compatibility. <a href="https://learn.computec.one/docs/pdc/administrator-guide/installation/overview">Read more</a></p>
+        </Admonition>
+      )}
+      {activePlugin.pluginId === "pdc" && activeDocContext.activeVersion?.label === "4.0" && (
+        <Admonition type="info">
+          <p>You are viewing documentation for <b>CompuTec PDC 4.0</b>, which runs on <b>CompuTec AppEngine 3.0 (.NET 8)</b>.</p>
+          <p>If you use <b>CompuTec PDC 3.0</b>, see the <a href="https://learn.computec.one/docs/pdc/3.0/administrator-guide/installation/overview">CompuTec PDC 3.0 documentation</a>.</p>
+          <p>When upgrading to <b>CompuTec PDC 4.0</b>, update all required CompuTec components together to ensure compatibility.</p>
+          <p>Before installing or upgrading, review the <a href="https://learn.computec.one/docs/pdc/administrator-guide/installation/overview">CompuTec PDC Installation Guide</a> and the system requirements.</p>
+        </Admonition>
+      )}
       <Content {...props} />
     </>
   );
