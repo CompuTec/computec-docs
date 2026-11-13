@@ -28,7 +28,7 @@ Before you begin, make sure that:
 
 :::warning[Important]
 
-You must uninstall the old **CompuTec PDC** client before you install the new plugin version. 
+You must uninstall the old **CompuTec PDC** client before you install the new plugin version.
 
 :::
 
