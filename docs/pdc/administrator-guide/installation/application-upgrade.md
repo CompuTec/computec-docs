@@ -4,12 +4,6 @@ sidebar_position: 4
 
 # Update CompuTec PDC
 
-:::info[Note]
-
-This documentation applies to **CompuTec PDC 4.0**. For earlier versions, see the [CompuTec PDC 3.0 documentation](/docs/pdc/3.0/)
-
-:::
-
 This guide describes how to upgrade CompuTec PDC when a new version is available. The **CompuTec PDC** plugin and the **CompuTec PDC** client must have the same version, so you upgrade both.
 
 The upgrade consists of three steps:

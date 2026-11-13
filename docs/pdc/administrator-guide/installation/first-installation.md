@@ -4,12 +4,6 @@ sidebar_position: 3
 
 # First Installation
 
-:::info[Note]
-
-This documentation applies to **CompuTec PDC 4.0**. For earlier versions, see the [CompuTec PDC 3.0 documentation](/docs/pdc/3.0/).
-
-:::
-
 This guide describes how to install CompuTec PDC for the first time. CompuTec PDC consists of two parts: the **CompuTec PDC** plugin, which runs in **CompuTec AppEngine**, and the **CompuTec PDC** client, which you install on the devices where operators register production data.
 
 The setup consists of two steps:
