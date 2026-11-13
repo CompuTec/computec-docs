@@ -11,7 +11,11 @@ The setup consists of two steps:
 1. **Install the CompuTec PDC plugin** – Installs the plugin for an SAP Business One company and activates it on a CompuTec AppEngine instance.
 2. **Download and install the CompuTec PDC client** – Installs the client application on a device from the **CompuTec AppEngine Launchpad**.
 
-To upgrade an existing installation, read the [CompuTec PDC upgrade guide](/docs/pdc/administrator-guide/installation/application-upgrade).
+:::info[note]
+
+To upgrade an existing installation, read the [**Update CompuTec PDC guide**](/docs/pdc/administrator-guide/installation/application-upgrade).
+
+:::
 
 ## Before you start
 

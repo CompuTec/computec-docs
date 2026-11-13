@@ -47,15 +47,15 @@ To install the new plugin version, follow these steps:
 2. Go to **Plugins** > **Store**.
 3. Find **PDC** and click **Get** next to it.
 
-   ![alt text](media/first-installation/install-pdc1.png)
+      ![CompuTec AppEngine Administration Panel showing the PDC plugin in the Store and its Get button.](media/first-installation/install-pdc1.png)
 
 4. Select the company, and then select the CompuTec AppEngine instance.
 
-   ![alt text](media/first-installation/install-pdc2.png)
+      ![Select Company for installation dialog with the PF Demo company selected.](media/first-installation/install-pdc2.png)
 
 5. In the **Installing Plugin PDC on Company** window, click **Perform Installation**.
 
-   ![alt text](media/first-installation/install-pdc12.png)
+      ![Installing Plugin PDC on Company window with the Perform Installation button.](media/first-installation/install-pdc12.png)
 
 6. Wait until the installation is complete, and then click **Close**.
 
@@ -75,29 +75,28 @@ To download and install the new **CompuTec PDC** client, follow these steps:
 
 1. Open the **CompuTec AppEngine Launchpad** in your browser, and log in with SAP Business One.
 
-   ![alt text](media/first-installation/install-pdc6.png)
+      ![CompuTec AppEngine Launchpad open in a browser.](media/first-installation/install-pdc6.png)
 
 2. Click the **Production Data Capture (PDC)** tile.
 
-      ![alt text](media/first-installation/install-pdc7.png)
+      ![Production Data Capture (PDC) tile on the AppEngine Launchpad.](media/first-installation/install-pdc7.png)
 
 3. Click the **Download** tile.
 
-      ![alt text](media/first-installation/install-pdc8.png)
+      ![Download tile for Production Data Capture (PDC).](media/first-installation/install-pdc8.png)
 
 4. In **Available Files**, click the `CompuTec.PDC.Setup` installation file with the `.msi` extension to download it.
 
-      ![alt text](media/first-installation/install-pdc9.png)
+      ![Available Files list showing the CompuTec.PDC.Setup MSI installer.](media/first-installation/install-pdc9.png)
 
 5. Run the downloaded file.
 6. In the **Install CompuTec PDC?** window, click **Install**.
 
-      ![alt text](media/first-installation/install-pdc10.png)
+      ![Install CompuTec PDC confirmation window with the Install button.](media/first-installation/install-pdc10.png)
 
 7. Wait until the installation is complete.
 
-      ![alt text](media/first-installation/install-pdc11.png)
-
+      ![CompuTec PDC client installation in progress.](media/first-installation/install-pdc11.png)
 
 Done! The new **CompuTec PDC** client is installed on the device.
 
