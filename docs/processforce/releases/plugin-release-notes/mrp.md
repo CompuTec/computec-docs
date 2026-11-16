@@ -6,6 +6,16 @@ sidebar_position: 12
 
 Below are the release notes for CompuTec Material Requirements Planning (MRP) Plugin, highlighting new features, improvements, and bug fixes in this release.
 
+## CompuTec MRP 3.2611.3
+
+**Release Date: 13 November 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | Forecast 2.5 | **The new web-based Forecast 2.5 application is now available in the MRP plugin, replacing the SAP Business One forecast form.** Users can create, view, edit, duplicate, and delete forecasts directly in CompuTec AppEngine. The application provides a dedicated forecast list and detail view, supports filtering and pagination for large forecasts, and allows users to delete multiple selected forecasts. Users can generate forecast lines using **Generate Lines**, paste quantities directly from Excel, and change the forecast period using the **View** field. **Opening, editing, and saving large forecasts is now significantly faster**, providing a more efficient forecasting experience. Forecast links in the MRP Wizard, including **Consumed Forecasts**, **Documents Data**, **Forecast Recommendations**, and result details, now open the new web-based forecast view. |
+| Improved | Analytics Reports | Reports now support manual refresh, allowing users to reload the latest data without closing and reopening the report. |
+| Fixed | MRP Wizard | Creating or copying MRP scenarios now automatically removes leading and trailing spaces from the **Code** field, preventing the `Scenario … not found` error when opening a saved scenario. |
+
 ## CompuTec MRP 3.2611.2
 
 **Release Date: 5 November 2026**
