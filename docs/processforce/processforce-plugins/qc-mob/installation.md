@@ -40,11 +40,9 @@ The installation restarts **CompuTec AppEngine**. Plan the installation for a ti
 To install the **CompuTec Quality Testing Mobile (QC 360)** plugin, follow the steps in [**Install a plugin**](/docs/appengine/plugins-user-guide/install-plugin). When you follow the guide, use these plugin-specific values:
 
 - Plugins to find in **Plugins** > **Store**:
-  - **QC 360 Plugin**
-  - **ProcessForce Plugin API**
-  - **Item Background Plugin**
-  - **QC 360 App Plugin**
-- **Plugin type filter**: **AppEngine Plugin** <!-- TODO: verify filter name; check whether the four plugins install together or separately -->
+  - **QC360** Plugin
+  - **CompuTec.ProcessForce.API** Plugin
+- **Plugin type filter**: **AppEngine Plugin**
 - **Company**: the SAP Business One company in which you use **CompuTec ProcessForce**.
 - **CompuTec AppEngine instance**: the instance that serves this company.
 
@@ -52,17 +50,13 @@ To install the **CompuTec Quality Testing Mobile (QC 360)** plugin, follow the s
 
 **CompuTec AppEngine** installs Business Logic plugins automatically when another plugin requires them. You don't need to install them manually.
 
+If you need a version other than the latest, use **Find different version** in the store. The [**Install a plugin**](/docs/appengine/plugins-user-guide/install-plugin) guide describes this option.
+
 :::
 
 :::warning[Important]
 
-Use compatible versions of all four plugins. A version mismatch causes an installation error. We recommend using official released versions.
-
-:::
-
-:::note[Info]
-
-If you need a version other than the latest, use **Find different version** in the store. The [**Install a plugin**](/docs/appengine/plugins-user-guide/install-plugin) guide describes this option.
+Use compatible versions of all plugins. A version mismatch causes an installation error. We recommend using latest released versions.
 
 :::
 
