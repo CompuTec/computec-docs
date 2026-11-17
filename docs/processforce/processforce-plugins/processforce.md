@@ -4,132 +4,162 @@ sidebar_position: 13
 
 # CompuTec ProcessForce Plugin Related Jobs
 
-CompuTec ProcessForce plugins provide a suite of automated jobs designed to enhance the efficiency and accuracy of manufacturing, quality control, and data synchronization processes in SAP Business One. Below, we outline the key jobs available and their functionalities, along with their configurable parameters.
+CompuTec ProcessForce plugins provide background jobs that automate Cost Roll-Up, quality control, and data synchronization in SAP Business One. This article describes each job, when it runs, and which parameters you can configure.
 
----
+## Before you start
 
-:::info
-To use these jobs, you need to enable Background Processing for the specific company.
+Before you begin, make sure that **Background Processing** is enabled for the company. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/background-processing)
+
+## Jobs at a glance
+
+| Job | What it does | When it runs |
+| --- | --- | --- |
+| `CostRollUpScheduledRecurringJob_01`, `_02`, `_03` | Performs Cost Roll-Up for selected items | Daily at 1 AM by default |
+| `QCRefillBatchesAndSerialNumbersJob` | Adds new Batches and Serial Numbers to existing Quality Control Tests | When a Goods Receipt is added |
+| `QCTestDocumentsGeneratorJob` | Generates Quality Control Tests | When a document is added |
+| `RestoreAditionalBatchDetails` | Creates missing Batch Master Data | Every two hours |
+| `RestoreItemDetailsJob` | Synchronizes the `ItemDetails` object | When item data in the `OITM` table is updated |
+| `SynchronizeBillOfMaterialsJob` | Synchronizes Bill of Materials changes with SAP Business One | When a CompuTec ProcessForce Bill of Materials is updated |
+| `SynchronizeManufacturingOrderJob` | Synchronizes Manufacturing Orders with Production Orders | When a Manufacturing Order is updated |
+| `SynchronizeManufacturingOrdersRecursiveJob` | Synchronizes all Manufacturing Orders with Production Orders | Every 12 hours |
+| `AdditionalBatchDetailsSynchronizerEB` | Synchronizes Batch Master Data updates with Additional Batch details | When Batch Master Data is updated |
+| `AdditionalBatchDetailsCreatorEB` | Creates Batch Master Data for new Batches | When a Batch is created in SAP Business One |
+| `ManufacturingOrderWizardRecoverJob` | Processes unfinished Manufacturing Order Wizard tasks | When CompuTec AppEngine starts |
+
+## Cost Roll-Up scheduled recurring jobs
+
+The `CostRollUpScheduledRecurringJob_01`, `CostRollUpScheduledRecurringJob_02`, and `CostRollUpScheduledRecurringJob_03` jobs perform Cost Roll-Up for selected items at a scheduled time. You can configure up to three separate schedules, one for each job.
+
+- **Default cron expression**: `0 0 1 * * *` (daily at 1 AM)
+
+### Configure the Cost Roll-Up parameters
+
+To define the parameters of the Cost Roll-Up jobs, follow these steps:
+
+1. Go to **Plugins** > **ProcessForce Plugin** > **Settings**.
+2. Set the parameters. They match the options in the [Cost Roll-Up form](/docs/processforce/user-guide/costing-material-and-resources/cost-categories#cost-roll-up).
+3. (optional) To use advanced options, such as batch-based calculations and saving Bill of Materials data, select **Perform the roll-up over structure**.
+
+   ![ProcessForce Plugin settings in the CompuTec AppEngine Administration Panel showing the Cost Roll-Up job parameters](./media/processforce/pf-jobs.png) <!-- TODO: verify alt text against the screenshot -->
+
+:::warning[Important]
+
+The four options from **Use final-goods' batch[…]** to **Calculate and Save Costed BOM data** work only when **Perform the roll-up over structure** is selected. CompuTec AppEngine shows these options even when the checkbox is cleared. Select **Perform the roll-up over structure** before you use them.
+
 :::
 
-## Cost Roll-Up Scheduled Recurring Jobs
+### Change the schedule of a Cost Roll-Up job
 
-Jobs: CostRollUpScheduledRecurringJob_01, 02, 03
-Default Cron Expression: `0 0 1 * * *` (Daily at 1 AM)
+To change when a Cost Roll-Up job runs, follow these steps:
 
-These jobs automatically perform Cost Roll-Up operations for selected items based on predefined parameters in specific time (defined in Cron Expressions). Key steps to configure:
+1. Go to **Background Processing** > **Configuration**, and then select the job.
+2. Enter a [cron expression](https://docs.oracle.com/cd/E12058_01/doc/doc.1014/e12030/cron_expressions.htm) that defines when the job runs.
 
-1. Navigate to Plugins → ProcessForce Plugin → Settings to define parameters (that reflects options available in the [Cost Roll-Up form](/docs/processforce/user-guide/costing-material-and-resources/cost-categories#cost-roll-up)).
-2. Use the Perform the roll-up over structure checkbox to enable advanced options like batch-based calculations and BOM data saving.
+   ![Job details in Background Processing showing the cron expression for a Cost Roll-Up job](./media/processforce/pf-cron.png) <!-- TODO: verify alt text and the exact field name -->
 
-:::caution
-The four checkboxes on the Cost Roll-Up form (ranging from “Use final-goods’ batch[…]” to “Calculate and Save Costed BOM data”) become usable only after the Perform the roll-up over structure checkbox is selected. Although these options are visible in CompuTec AppEngine even without selecting this checkbox in the CompuTec AppEngine settings, they should still be utilized in alignment with the Perform the roll-up over structure configuration due to CompuTec AppEngine limitations.
+## Quality Control jobs
+
+### QCRefillBatchesAndSerialNumbersJob
+
+This job adds Batches and Serial Numbers to existing Quality Control Tests. When you add a Goods Receipt, the new Batches and Serial Numbers are added to Quality Control Tests that were created before this data existed in the database. Quality Control Test data stays accurate and up to date.
+
+Details:
+
+- **ContentType**: `59`
+- **ActionType**: `A`
+
+### QCTestDocumentsGeneratorJob
+
+This job generates Quality Control Tests automatically when you add documents. The generation depends on your Quality Control settings.
+
+Details:
+
+- **ContentType**: `*`
+- **ActionType**: `A`
+- **Publisher**: `AppEngine`
+- **PublisherApp**: `SAPB1`
+- **EventType**: `SAPB1Object`
+
+## Restore jobs
+
+### RestoreAditionalBatchDetails
+
+This job creates Batch Master Data for any missing Batches, so Batch data stays complete. <!-- TODO: verify job name spelling "Aditional" -->
+
+- **Default cron expression**: `0 */2 * * *` (every two hours)
+
+### RestoreItemDetailsJob
+
+This job synchronizes the `ItemDetails` object when item data in the `OITM` table is updated. Item-related data stays consistent.
+
+Details:
+
+- **Editable**: `true`
+- **ContentType**: `4` (`OITM`)
+- **ActionType**: `U`
+
+## Synchronization jobs
+
+### SynchronizeBillOfMaterialsJob
+
+This job synchronizes updates in CompuTec ProcessForce Bill of Materials with the matching data in SAP Business One. Bill of Materials information stays accurate and up to date.
+
+Details:
+
+- **Editable**: `true`
+- **ContentType**: `CT_PF_OBOMCode`
+- **ActionType**: `*`
+
+### SynchronizeManufacturingOrderJob
+
+This job synchronizes updates in Manufacturing Orders with the matching Production Orders. Order data stays accurate and consistent.
+
+Details:
+
+- **Editable**: `true`
+- **ContentType**: `CT_PF_ManufacOrd`
+- **ActionType**: `*`
+
+### SynchronizeManufacturingOrdersRecursiveJob
+
+This job synchronizes Manufacturing Orders with Production Orders on a schedule, so the data stays consistent even if a single update was missed. <!-- TODO: confirm the purpose with developers -->
+
+- **Default cron expression**: `0 */12 * * *` (every 12 hours)
+
+## Additional Batch Details jobs
+
+### AdditionalBatchDetailsSynchronizerEB
+
+This job synchronizes updates in Batch Master Data with the Additional Batch details in SAP Business One. Batch data stays consistent across both systems.
+
+Details:
+
+- **ContentType**: `CT_PF_AdditonalBatch` <!-- TODO: verify spelling "Additonal" -->
+- **ActionType**: `U`
+- **Publisher**: `AppEngine`
+- **PublisherApp**: `SAPB1`
+- **EventType**: `SAPB1Object`
+
+### AdditionalBatchDetailsCreatorEB
+
+This job creates the related Batch Master Data when you create a new Batch in SAP Business One.
+
+Details:
+
+- **ContentType**: `10000044`
+- **ActionType**: `*`
+- **Publisher**: `AppEngine`
+- **PublisherApp**: `SAPB1`
+- **EventType**: `SAPB1Object`
+
+:::info[Note]
+
+If you enable this job, CompuTec AppEngine handles Batch synchronization. If you don't enable it and you use CompuTec WMS, the CompuTec WMS service handles Batch synchronization.
+
 :::
 
-![ProcessForce](./media/processforce/pf-jobs.png)
+## Manufacturing Order management
 
-You can set up the occurance of the automatic Roll-Up by using [Cron Expressions](https://docs.oracle.com/cd/E12058_01/doc/doc.1014/e12030/cron_expressions.htm) in the job's details: Background Processing → Configuration → [name of a job]:
+### ManufacturingOrderWizardRecoverJob
 
-![ProcessForce](./media/processforce/pf-cron.png)
-
-You can configure three different automation of this kind by using these job variatins (CostRollUpScheduledRecurringJob_01, CostRollUpScheduledRecurringJob_02, and CostRollUpScheduledRecurringJob_03 job).
-
-## Quality Control-Related Jobs
-
-1. **QCRefillBatchesAndSerialNumbersJob**
-
-    This job automatically populates Batches and Serial Numbers into the appropriate Quality Control Tests. It ensures that when a Goods Receipt is added, the newly created Batches and Serial Numbers are incorporated into any existing Quality Control Tests that were initially created before these data entries were available in the database.
-
-    Following are the Details:
-
-    - ContentType = "59"
-    - ActionType = "A"
-
-    This job enhances CompuTec ProcessForce performance by maintaining accurate and up-to-date Quality Control Test data.
-
-2. **QCTestDocumentsGeneratorJob**
-
-    Based on specific settings, this job automatically generates Quality Control Test when adding documents.
-    Following are the Details:
-
-    - ContentType = "*",
-    - ActionType = "A",
-    - Publisher = "AppEngine",
-    - PublisherApp = "SAPB1",
-    - EventType = "SAPB1Object"
-
-    This job optimizes CompuTec ProcessForce performance by streamlining test generation processes.
-
-## Restore Jobs
-
-1. **RestoreAditionalBatchDetails**
-
-    This job runs every two hours to invoke a method that creates Batch Master Data for any missing batches in the system, ensuring data completeness.
-
-        Default Cron Expression Description = "0 */2 * * *"
-
-2. **RestoreItemDetailsJob**
-
-    This job synchronizes the ItemDetails object whenever there are updates in the OITM table, ensuring that item-related data remains consistent. Following are the details:
-        - Editable = true
-        - ContentType = "4", // OITM
-        - ActionType = "U"
-
-    This job enhances CompuTec ProcessForce performance by keeping item data synchronized and up-to-date
-
-## Synchronization Jobs
-
-1. SynchronizeBillOfMaterialsJob
-
-    This job synchronizes updates made to CompuTec ProcessForce Bill of Materials with the corresponding data in SAP Business One.
-    - Editable = true
-    - ContentType = "CT_PF_OBOMCode"
-    - ActionType = "*".
-
-    This job enhances CompuTec ProcessForce performance by maintaining accurate and up-to-date Bill of Materials information.
-
-2. **SynchronizeManufacturingOrderJob**
-
-    This job ensures that updates made to Manufacturing Orders are synchronized with the corresponding Production Orders. Following are the details:
-        - Editable = true
-        - ContentType = "CT_PF_ManufacOrd"
-        - ActionType = "*"
-
-    This job improves CompuTec ProcessForce performance by maintaining accurate and consistent order data.
-
-3. **SynchronizeManufacturingOrdersRecursiveJob**
-
-    This job performs a scheduled synchronization between Manufacturing Orders and Production Orders every twelve hours, ensuring data consistency. Followingare the details:
-        - Default Cron Expression = `"0 */12 * * *"` (Every 12 hours)
-
-## Additional Batch Details Job
-
-1. **AdditionalBatchDetailsSynchronizerEB**
-
-    This job synchronizes updates to Batch Master Data with the Additional Batch details in SAP Business One.
-    Following are the details:
-        - ContentType = "CT_PF_AdditonalBatch",
-        - ActionType = "U",
-        - Publisher = "AppEngine", PublisherApp = "SAPB1", EventType = "SAPB1Object".
-    This job enhances CompuTec ProcessForce performance by maintaining accurate and consistent batch-related data across systems.
-
-2. **AdditionalBatchDetailsCreatorEB**
-
-    This job automatically creates related Batch Master Data when a new Batch is created in SAP Business One.
-    Following are the details:
-        - ContentType = "10000044",
-        - ActionType = "*", Publisher = "AppEngine",
-        - PublisherApp = "SAPB1",
-        - EventType = "SAPB1Object"
-
-    If this job is enabled, Batch Synchronization is handled by CompuTec AppEngine. Otherwise, synchronization is managed by the CompuTec WMS service when using CompuTec WMS.
-
-    This job improves the performance and efficiency of both CompuTec ProcessForce and CompuTec WMS by ensuring seamless and accurate batch data synchronization.
-
-## Manufacturing Order Management
-
-**ManufacturingOrderWizardRecoverJob**
-
-On CompuTec AppEngine startup, this job checks and processes unfinished Manufacturing Order Wizard tasks.
-
----
+When CompuTec AppEngine starts, this job checks and processes unfinished Manufacturing Order Wizard tasks.

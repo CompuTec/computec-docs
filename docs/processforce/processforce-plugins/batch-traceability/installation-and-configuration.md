@@ -1,0 +1,69 @@
+---
+sidebar_position: 2
+---
+
+# Installation
+
+The **CompuTec Batch Traceability (BT 360)** plugin extends **CompuTec ProcessForce** with the option to track batches from creation, through their use in production, to delivery to customers. You install it from the **CompuTec AppEngine Administration Panel**, in the same way as every other CompuTec AppEngine plugin.
+
+The installation has three phases:
+
+1. Download the plugin to the CompuTec AppEngine repository.
+2. Install it for a company.
+3. Activate it on a CompuTec AppEngine instance.
+
+The installation wizard performs all three phases in one procedure.
+
+:::info[Note]
+
+Only one version of the plugin can be active on a single CompuTec AppEngine instance at a time.
+
+:::
+
+## Before you start
+
+Before you begin, make sure that:
+
+- [**CompuTec AppEngine**](/docs/appengine/administrators-guide/configuration-and-administration/installation) is installed and activated, with at least one active instance and an activated company.
+- [**CompuTec ProcessForce**](/docs/processforce/administrator-guide/installation/first-installation/extension) and the [**CompuTec License Server**](/docs/processforce/administrator-guide/licensing/license-server/computec-license-server-installation) are installed and configured.
+- You have access to the **CompuTec AppEngine Administration Panel**.
+- Custom code in the `SP_TransactionNotification` and `SP_PostTransactionNotice` stored procedures is disabled. After the installation is complete, you can enable your custom code again.
+
+:::warning[Important]
+
+The installation restarts **CompuTec AppEngine**. Plan the installation for a time when no users depend on **CompuTec AppEngine**.
+
+:::
+
+## Install the plugin
+
+To install the **CompuTec Batch Traceability (BT 360)** plugin, follow the steps in [**Install a plugin**](/docs/appengine/plugins-user-guide/install-plugin). When you follow the guide, use these plugin-specific values:
+
+- Plugin to find in **Plugins** > **Store**: **BT360**
+- **Plugin type filter**: **AppEngine Plugin**
+- **Company**: the SAP Business One company in which you use **CompuTec ProcessForce**.
+- **CompuTec AppEngine instance**: the instance that serves this company.
+
+:::note[Info]
+
+**CompuTec AppEngine** installs Business Logic plugins automatically when another plugin requires them. You don't need to install them manually.
+
+:::
+
+:::note[Info]
+
+If you need a version other than the latest, use **Find different version** in the store. The [**Install a plugin**](/docs/appengine/plugins-user-guide/install-plugin) guide describes this option.
+
+:::
+
+## Verify the installation
+
+To verify that the plugin is installed, check that:
+
+- The plugin appears on the **Plugins** > **Downloaded** tab.
+- The plugin is assigned to the selected company and active on the selected instance.
+- The **CompuTec Batch Traceability (BT 360)** functionality is available in **CompuTec ProcessForce**.
+
+## Update the plugin
+
+To install a newer version of the plugin, follow the steps in [**Update a plugin**](/docs/appengine/plugins-user-guide/update-plugin).

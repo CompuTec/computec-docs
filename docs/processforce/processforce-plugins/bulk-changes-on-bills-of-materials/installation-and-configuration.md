@@ -2,29 +2,69 @@
 sidebar_position: 2
 ---
 
-# Installation and Configuration
+# Installation
 
-This guide outlines the necessary steps for the installation and configuration to ensure seamless integration and optimal functionality within your SAP Business One environment.
+The **Bulk Changes on Bills of Materials** plugin extends **CompuTec ProcessForce** with the option to change many bills of materials at once. You install it from the **CompuTec AppEngine Administration Panel**, in the same way as every other CompuTec AppEngine plugin.
 
----
+The installation has three phases:
 
-## Prerequisites
+1. Download the plugin to the CompuTec AppEngine repository.
+2. Install it for a company.
+3. Activate it on a CompuTec AppEngine instance.
 
-:::note
-Before proceeding, ensure that CompuTec ProcessForce and CompuTec License Server are installed and properly configured.
+The installation wizard performs all three phases in one procedure.
+
+:::info[Note]
+
+Only one version of the plugin can be active on a single CompuTec AppEngine instance at a time.
+
 :::
 
-If you need assistance with this setup, please refer to the relevant documentation or click the [link](/docs/processforce/administrator-guide/licensing/license-server/computec-license-server-installation).provided for more details.
+## Before you start
 
-## CompuTec AppEngine and Plugin Installation and Configuration
+Before you begin, make sure that:
 
-To install and configure CompuTec AppEngine, follow the step-by-step instructions outlined in the [Installation Guide](/docs/appengine/administrators-guide/configuration-and-administration/installation).
+- [**CompuTec AppEngine**](/docs/appengine/administrators-guide/configuration-and-administration/installation) is installed and activated, with at least one active instance and an activated company.
+- [**CompuTec ProcessForce**](/docs/processforce/administrator-guide/installation/first-installation/extension) and the [**CompuTec License Server**](/docs/processforce/administrator-guide/licensing/license-server/computec-license-server-installation) are installed and configured.
+- You have access to the **CompuTec AppEngine Administration Panel**.
+- Custom code in the `SP_TransactionNotification` and `SP_PostTransactionNotice` stored procedures is disabled. After the installation is complete, you can enable your custom code again.
 
-## CompuTec ProcessForce
+:::warning[Important]
 
-As an optional enhancement, the Bulk Change Plug-in can be activated from within CompuTec ProcessForce.
+The installation restarts **CompuTec AppEngine**. Plan the installation for a time when no users depend on **CompuTec AppEngine**.
 
-![Bulk Change Plugin](./media/bulk-changes-of-bom/image2020-3-25-16-40-30.png)
+:::
 
----
-Should you need further assistance, please refer to the provided links or contact support for additional guidance.
+## Install the plugin
+
+To install the **Bulk Changes on Bills of Materials** plugin, follow the steps in [**Install a plugin**](/docs/appengine/plugins-user-guide/install-plugin). When you follow the guide, use these plugin-specific values:
+
+- Plugin to find in **Plugins > Store**: **BulkChange**.
+- **Plugin type filter**: **AppEngine Plugin**.
+
+:::note[Info]
+
+**CompuTec AppEngine** installs Business Logic plugins automatically when another plugin requires them. In this case, **BulkChange.BusinessLogic** is installed together with **BulkChange**. You don't need to install it manually.
+
+:::
+
+- **Company**: the SAP Business One company in which you use **CompuTec ProcessForce**.
+- **CompuTec AppEngine instance**: the instance that serves this company.
+
+:::note[Info]
+
+If you need a version other than the latest, use **Find different version** in the store. The [**Install a plugin**](/docs/appengine/plugins-user-guide/install-plugin) guide describes this option.
+
+:::
+
+## Verify the installation
+
+To verify that the plugin is installed, check that:
+
+- The plugin appears on the **Plugins** > **Downloaded** tab.
+- The plugin is assigned to the selected company and active on the selected instance.
+- The **Bulk Changes on Bills of Materials** functionality is available in **CompuTec ProcessForce**.
+
+## Update the plugin
+
+To install a newer version of the plugin, follow the steps in [**Update a plugin**](/docs/appengine/plugins-user-guide/update-plugin).

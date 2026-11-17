@@ -4,19 +4,61 @@ sidebar_position: 2
 
 # Installation and Configuration
 
-This guide describes the prerequisites and configuration steps required before using **CompuTec MRP Plugin**.
+The **CompuTec Material Requirements Planning (MRP)** plugin extends **CompuTec ProcessForce** with material requirements planning. You install it from the **CompuTec AppEngine Administration Panel**, in the same way as every other CompuTec AppEngine plugin.
+
+The installation has three phases:
+
+1. Download the plugin to the CompuTec AppEngine repository.
+2. Install it for a company.
+3. Activate it on a CompuTec AppEngine instance.
+
+The installation wizard performs all three phases in one procedure.
+
+:::info[Note]
+
+Only one version of the plugin can be active on a single CompuTec AppEngine instance at a time.
+
+:::
 
 ## Before you start
 
-Before you begin, ensure that the following components are installed and configured:
+Before you begin, make sure that:
 
-- [CompuTec ProcessForce](/docs/processforce/administrator-guide/installation/first-installation/extension)
-- [CompuTec License Server](/docs/processforce/administrator-guide/licensing/license-server/computec-license-server-installation)
-- [CompuTec AppEngine](/docs/appengine/administrators-guide/configuration-and-administration/installation)
+- [**CompuTec AppEngine**](/docs/appengine/administrators-guide/configuration-and-administration/installation) is installed and activated, with at least one active instance and an activated company.
+- [**CompuTec ProcessForce**](/docs/processforce/administrator-guide/installation/first-installation/extension) and the [**CompuTec License Server**](/docs/processforce/administrator-guide/licensing/license-server/computec-license-server-installation) are installed and configured.
+- You have access to the **CompuTec AppEngine Administration Panel**.
+- Custom code in the `SP_TransactionNotification` and `SP_PostTransactionNotice` stored procedures is disabled. After the installation is complete, you can enable your custom code again.
+
+:::warning[Important]
+
+The installation restarts **CompuTec AppEngine**. Plan the installation for a time when no users depend on **CompuTec AppEngine**.
+
+:::
 
 ## Install CompuTec MRP Plugin
 
-Plugins are installed using the standard **CompuTec AppEngine** plugin installation process. [Read more](/docs/appengine/plugins-user-guide/install-plugin)
+To install the **CompuTec Material Requirements Planning (MRP)** plugin, follow the steps in [**Install a plugin**](/docs/appengine/plugins-user-guide/install-plugin). When you follow the guide, use these plugin-specific values:
+
+- Plugin to find in **Plugins** > **Store**: **MRP**
+- **Plugin type filter**: **AppEngine Plugin**
+- **Company**: the SAP Business One company in which you use **CompuTec ProcessForce**.
+- **CompuTec AppEngine instance**: the instance that serves this company.
+
+:::note[Info]
+
+**CompuTec AppEngine** installs Business Logic plugins automatically when another plugin requires them. You don't need to install them manually.
+
+:::
+
+:::note[Info]
+
+If you need a version other than the latest, use **Find different version** in the store. The [**Install a plugin**](/docs/appengine/plugins-user-guide/install-plugin) guide describes this option.
+
+:::
+
+## Update the plugin
+
+To install a newer version of the plugin, follow the steps in [**Update a plugin**](/docs/appengine/plugins-user-guide/update-plugin).
 
 ## Configure CompuTec ProcessForce and MRP
 
@@ -28,6 +70,12 @@ After installing the plugin, configure the required **CompuTec ProcessForce** an
 Make sure all required synchronization and MRP parameters are configured before using the functionality.
 
 ## Next Steps
+
+To verify that the plugin is installed, check that:
+
+- The plugin appears on the **Plugins** > **Downloaded** tab.
+- The plugin is assigned to the selected company and active on the selected instance.
+- The **CompuTec MRP** functionality is available in **CompuTec ProcessForce**. <!-- TODO: verify menu path -->
 
 After completing the installation and configuration:
 
