@@ -4,6 +4,29 @@ sidebar_position: 1
 
 # Release Notes
 
+## CompuTec AppEngine 3.2611.5
+
+**Release Date: 19 November 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Improved | Analytics – Report Navigation | **Report and variant descriptions are now available directly from the navigation breadcrumb.** Hover over a report or variant name to see its description, or click the current breadcrumb item to display the full description. Descriptions are no longer repeated in the report header. |
+| Improved | Analytics – Variants | Analytics variants provided by a plugin are now correctly associated with that plugin. This ensures that variants are managed under the appropriate plugin in **Source Manager** and retain the correct authorization settings when saved. |
+| Improved | Analytics – Tables | Table columns can now be excluded from variant sorting, allowing users to control which columns are available for sorting. |
+| Improved | Item and Revision Selection | Item and revision selection now works correctly with item codes containing underscores (`_`). Selecting a revision also retrieves its complete details. |
+| Improved | SAP Business One Integration | Additional SAP Business One object types are now available in object selection lists, including Blanket Agreements and Additional Batch Details. |
+| Fixed | Analytics – Variants | **Existing Analytics variants can now be updated using Save instead of requiring Save As.** Users also retain their access permissions after saving, and temporary authorization lookup errors no longer prevent variants from being saved. |
+| Fixed | Analytics – Value Help | **Clearing selections in a multi-select value-help dialog now works correctly.** Previously selected values no longer reappear when users click **Select** after clearing them. |
+| Fixed | OData | OData batch requests no longer fail with an HTTP 500 error when the browser includes cookies containing special characters, such as quotation marks or commas. |
+| Fixed | MRP 2.5 – Order Recommendations | The **MO Series** selection list now displays the available numbering series correctly at both the document header and line levels. |
+| Fixed | PFI – Data Import | **Failed imports now display the relevant error message** when users click **Failure**, making it easier to identify why an import was unsuccessful. |
+| Fixed | WebUp – Validation | Validation queries in the SAP Business One Web Client now work correctly when adding a new document, even if a referenced field has not yet been filled in. Previously, this could cause an `invalid column name` error. |
+| Fixed | WebUp – Code Editor | **Code suggestions, tooltips, and parameter hints are now displayed correctly** without being cut off at the edge of the editor. This applies to the WebUp **Smart Action Script** and **SQL Validation** editors, as well as the Analytics SQL editor. |
+| Fixed | Language Support | **Improved language recognition for SAP Business One and browser settings.** Ukrainian and English (Singapore) are now supported, and additional regional language codes are mapped correctly, including Chinese, Norwegian, Spanish, and English variants. |
+| Fixed | Analytics – SQL Editor | Invalid SQL statements now display clearer validation messages that identify the error location. SQL statements ending with a line comment are also handled correctly. |
+| Fixed | PDC – Label Printing | **Label printing for Pick Receipts now works correctly in PDC.** Print requests are passed to CompuTec Labels as expected. |
+| Fixed | API / OData | Error messages now identify the relevant entity correctly instead of displaying an incorrect placeholder. |
+
 ## CompuTec AppEngine 3.2611.2
 
 **Release Date: 10 November 2026**
