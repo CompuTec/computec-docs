@@ -242,7 +242,7 @@ If you need help, or have any questions, contact us via the [CompuTec Support Po
 
 CompuTec AppEngine fails to connect to the SAP HANA database, and the following error is displayed:
 
->`Could not load file or assembly 'Sap.Data.Hana.Core.v2.1, Version=2.7.26.0, Culture=neutral, PublicKeyToken=0326b8ea63db4bc4'. Could not find or load a specific file. (0x80131621).`
+`Could not load file or assembly 'Sap.Data.Hana.Core.v2.1, Version=2.7.26.0, Culture=neutral, PublicKeyToken=0326b8ea63db4bc4'. Could not find or load a specific file. (0x80131621).`
 
 ### Solution
 
@@ -258,15 +258,27 @@ To check the environment variable path, follow these steps:
 
     ![screen showing how to locate the path to the file](../media/troubleshooting/02-ae-troubleshooting.png)
 
-3. Open the noted path on your computer.
+3. If both the 64-bit and the 32-bit SAP HANA Database Client 2.28.20 are installed on the server, make sure **HDBDOTNETCORE** points to the 64-bit client. 
 
-4. Find the **libadonetHDB.dll** file, right-click on it, and click **Properties**.
+    In our example, the 64-bit client is installed in `C:\Program Files`, and the 32-bit client is installed in `C:\Program Files (x86)`. If the path points to `C:\Program Files (x86)`, we need to select **HDBDOTNETCORE**, click **Edit...**, and enter the path to the `dotnetcore` folder of the 64-bit client.
 
-5. Check its **Product version**. It must match the [**HANA Server Revision**](https://help.sap.com/docs/SAP_BUSINESS_ONE_ADMIN_GUIDE_HANA/1a2fc202f7f64336abf9fbc957d9b9ba/13c43452877d4feaad4dbd661d15d9bb.html).
+4. Open the folder that **HDBDOTNETCORE** points to.
+
+5. Right-click **libadonetHDB.dll**, and then select **Properties**.
+
+6. Check its **Product version**. It must match the [**HANA Server Revision**](https://help.sap.com/docs/SAP_BUSINESS_ONE_ADMIN_GUIDE_HANA/1a2fc202f7f64336abf9fbc957d9b9ba/13c43452877d4feaad4dbd661d15d9bb.html).
 
     ![Product Version](../media/troubleshooting/03-ae-troubleshooting.png)
 
-6. Done! Now you know if the environment variable path is correctly pointing to the installation directory.
+7. If the versions match, **HDBDOTNETCORE** points to the correct installation folder.
+
+    :::warning[Important]
+
+    After you change **HDBDOTNETCORE**, restart CompuTec AppEngine so that it reads the new value. <!-- TODO: verify that a restart is required -->
+
+    :::
+
+8. Done! Now you know if the environment variable path is correctly pointing to the installation directory.
 
 ## Problem: Some features are disabled after CompuTec AppEngine upgrade
 
