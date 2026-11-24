@@ -4,162 +4,300 @@ sidebar_position: 13
 
 # CompuTec ProcessForce Plugin Related Jobs
 
-CompuTec ProcessForce plugins provide background jobs that automate Cost Roll-Up, quality control, and data synchronization in SAP Business One. This article describes each job, when it runs, and which parameters you can configure.
+CompuTec ProcessForce plugins provide background jobs that automate Cost Roll-Up, quality control, batch handling, and data synchronization in SAP Business One. You manage all jobs in **Background Processing** > **Configuration** in the **CompuTec AppEngine Administration Panel**. This article explains how to find the jobs, how to configure them, and what each job does.
 
 ## Before you start
 
-Before you begin, make sure that **Background Processing** is enabled for the company. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/background-processing)
+Before you begin, make sure that:
 
-## Jobs at a glance
+- **Background Processing** is enabled for the company. [Read more](/docs/appengine/administrators-guide/configuration-and-administration/background-processing)
+- You have access to the **CompuTec AppEngine Administration Panel**.
 
-| Job | What it does | When it runs |
-| --- | --- | --- |
-| `CostRollUpScheduledRecurringJob_01`, `_02`, `_03` | Performs Cost Roll-Up for selected items | Daily at 1 AM by default |
-| `QCRefillBatchesAndSerialNumbersJob` | Adds new Batches and Serial Numbers to existing Quality Control Tests | When a Goods Receipt is added |
-| `QCTestDocumentsGeneratorJob` | Generates Quality Control Tests | When a document is added |
-| `RestoreAditionalBatchDetails` | Creates missing Batch Master Data | Every two hours |
-| `RestoreItemDetailsJob` | Synchronizes the `ItemDetails` object | When item data in the `OITM` table is updated |
-| `SynchronizeBillOfMaterialsJob` | Synchronizes Bill of Materials changes with SAP Business One | When a CompuTec ProcessForce Bill of Materials is updated |
-| `SynchronizeManufacturingOrderJob` | Synchronizes Manufacturing Orders with Production Orders | When a Manufacturing Order is updated |
-| `SynchronizeManufacturingOrdersRecursiveJob` | Synchronizes all Manufacturing Orders with Production Orders | Every 12 hours |
-| `AdditionalBatchDetailsSynchronizerEB` | Synchronizes Batch Master Data updates with Additional Batch details | When Batch Master Data is updated |
-| `AdditionalBatchDetailsCreatorEB` | Creates Batch Master Data for new Batches | When a Batch is created in SAP Business One |
-| `ManufacturingOrderWizardRecoverJob` | Processes unfinished Manufacturing Order Wizard tasks | When CompuTec AppEngine starts |
+## Find the ProcessForce jobs
 
-## Cost Roll-Up scheduled recurring jobs
+To display the jobs of the CompuTec ProcessForce plugin, follow these steps:
 
-The `CostRollUpScheduledRecurringJob_01`, `CostRollUpScheduledRecurringJob_02`, and `CostRollUpScheduledRecurringJob_03` jobs perform Cost Roll-Up for selected items at a scheduled time. You can configure up to three separate schedules, one for each job.
+1. Log in to the **CompuTec AppEngine Administration Panel**.
+2. Go to **Background Processing** > **Configuration**.
 
-- **Default cron expression**: `0 0 1 * * *` (daily at 1 AM)
+   ![alt text](media/processforce/pf-backgr1.png)
 
-### Configure the Cost Roll-Up parameters
+3. In the **Plugin Code** filter, select `CompuTec.ProcessForce.Plugin`, and click **Go**.
 
-To define the parameters of the Cost Roll-Up jobs, follow these steps:
+   ![alt text](media/processforce/pf-backgr3.png)
 
-1. Go to **Plugins** > **ProcessForce Plugin** > **Settings**.
-2. Set the parameters. They match the options in the [Cost Roll-Up form](/docs/processforce/user-guide/costing-material-and-resources/cost-categories#cost-roll-up).
-3. (optional) To use advanced options, such as batch-based calculations and saving Bill of Materials data, select **Perform the roll-up over structure**.
+4. Done! The list shows all jobs of the CompuTec ProcessForce plugin.
 
-   ![ProcessForce Plugin settings in the CompuTec AppEngine Administration Panel showing the Cost Roll-Up job parameters](./media/processforce/pf-jobs.png) <!-- TODO: verify alt text against the screenshot -->
+For each job, the list shows the job name, the job ID, a short description, the plugin version, and the trigger type. 
+
+The **Trigger Type** can be:
+
+- **Time** – The job runs on a schedule that you define with a cron expression.
+- **Event** – The job runs when a matching event occurs in SAP Business One or CompuTec AppEngine.
+- **Manual** – The job runs only when you start it.
+
+## Job details
+
+To open the details of a job, click the job in the list.
+
+![Details of the Cost Rollup Runner 1 job showing the Job, Filters, Plugin, and Assignments sections](./media/processforce/pf-backgr6.png)
+
+The job details page has four sections:
+
+| Section | What it shows |
+| --- | --- |
+| **Job** | The job's **ID**, **Job ID**, **Job Type**, **Cron Expression**, and **Cron Description**. |
+| **Filters** | The conditions that start an event job: **Publisher**, **Use Regex**, **Action Type**, **Content Type**, **Content Type Description**, and **Content Subtype**. |
+| **Plugin** | The plugin that provides the job: **Plugin Code**, **Plugin Name**, and **Plugin Version**. |
+| **Assignments** | The companies the job is assigned to, with the **User**, **Enabled**, **Suspended**, **Suspension Date**, **Cron Expression**, and **Status** of the job for each company. |
+
+## Configure a job for a company
+
+You configure a job separately for each company. The settings of a job for one company don't change the same job in another company.
+
+### Open the company page of a job
+
+To open the company page of a job, follow these steps:
+
+1. Go to **Background Processing** > **Configuration**, and then click the job.
+2. In **Assignments**, find the company, and click the arrow at the end of its row.
+
+   ![alt text](media/processforce/pf-backgr11.png)
+
+3. The company page of the job opens.
+
+   ![alt text](media/processforce/pf-backgr12.png)
+
+The company page has these sections:
+
+| Section | What it shows |
+| --- | --- |
+| **Assign** | The assignment's **ID**, **Status**, **Enabled**, **Suspended**, **Suspended Date**, and **User** (the default user of the job for the company). |
+| **Job** | The job's **ID**, **Job ID**, **Job Type**, **Cron Expression**, and **Cron Description**. |
+| **Company** | The company's **ID**, **Company name**, **Company database name**, and **Description**. |
+| **Statistics** | **Started at**, **Last execution**, **Last success execution**, **Number of executions**, **Number of exceptions**, and **Number of connection errors**. |
+| **Executions** | A list of job runs with the **Id**, **Start Time**, **End Time**, **Duration**, **Finished**, **Success**, and **Message** of each run. |
+
+In the upper-right corner, the page has three buttons: **Settings**, **Run**, and **Refresh**.
+
+Click **Refresh** to update the statistics and the list of executions.
+
+![alt text](media/processforce/pf-backgr21.png)
+
+### Assign a default user to a job
+
+To assign the default user of a job for a company, follow these steps:
+
+1. Go to **Background Processing** > **Configuration**, and then click the job.
+2. In **Assignments**, click the **pencil icon** in the **User** column of the company row.
+
+   ![alt text](media/processforce/pf-backgr18.png)
+
+3. In the **Assign Default User for Job** dialog, find the user you want to assign the job to.
+
+   ![alt text](media/processforce/pf-backgr19.png)
+
+   :::info[note]
+
+   If the user isn’t listed, enter their name in the **Search** field. Find the matching user, then click **Add User** to add them to the list.
+
+   :::
+
+4. Select a user and click **Assign**.
+5. Done! The selected user is the default user of the job for the company.
+
+The dialog lists the users with their **User Name**, **Company Id**, and **Multi Company** values. To add a user that isn't on the list, click **Add User**.
+
+### Enable a job for a company
+
+To enable a job for a company, follow these steps:
+
+1. Go to **Background Processing** > **Configuration**, and then click the job.
+2. In **Assignments**, find the company.
+3. Switch **Enabled** to ON.
+
+   ![alt text](media/processforce/pf-backgr7.png)
+
+4. Confirm the job activation.
+
+   ![alt text](media/processforce/pf-backgr8.png)
+
+:::note[info]
+
+You can also switch **Enabled** in the company row of the **Assignments** table on the job details page.
+
+:::
+
+### Change the schedule of a job
+
+To change when a Time job runs for a company, follow these steps:
+
+1. Go to **Background Processing** > **Configuration**, and then click the job.
+2. In **Assignments**, click the cron expression in the company row.
+
+   ![alt text](media/processforce/pf-backgr9.png)
+
+3. Enter a [cron expression](https://www.freeformatter.com/cron-expression-generator-quartz.html) that defines when the job runs.
+
+   ![alt text](media/processforce/pf-backgr10.png)
+
+4. Click **Ok**.
+
+### Run a job manually
+
+To run a job for a company manually, follow these steps:
+
+1. Open the company page of the job.
+2. Click the **Run** icon (double arrow) in the upper-right corner.
+
+   ![alt text](media/processforce/pf-backgr20.png)
+
+   :::note[info]
+
+   A message confirms that the job started: "The job was started manually on company: PF Demo (GB)."
+
+   ![alt text](media/processforce/pf-backgr22.png)
+
+   :::
+
+3. Click the **Refresh** icon.
+
+   ![alt text](media/processforce/pf-backgr21.png)
+
+4. Done! **Statistics** shows when the job ran, and **Executions** lists the run with its **Start Time**, **End Time**, **Duration**, **Finished**, and **Success** values.
+
+   ![alt text](media/processforce/pf-backgr23.png)
+
+A manual run doesn't change the schedule of the job. A Time job still runs at the time defined by its cron expression.
+
+### Define the settings of a job
+
+Some jobs have settings that you define for each company. To open them, follow these steps:
+
+1. Go to **Background Processing** > **Configuration**, and then click the job.
+2. In **Assignments**, find the company, and click the arrow at the end of its row.
+
+   ![alt text](media/processforce/pf-backgr11.png)
+
+   The company page of the job opens.
+
+3. Click **Settings**.
+
+   ![alt text](media/processforce/pf-backgr24.png)
+
+4. The **Settings** dialog opens.
+
+   ![alt text](media/processforce/pf-backgr14.png)
+
+   Here you can define additional settings specific for the chosen job.
+
+## About Cost Roll-Up jobs
+
+The **Cost Rollup Runner 1**, **Cost Rollup Runner 2**, and **Cost Rollup Runner 3** jobs perform Cost Roll-Up for selected items on a schedule. You can configure up to three separate schedules, one for each job. By default, **Cost Rollup Runner 1** runs every day at 1 AM (cron expression `0 0 1 ? * * *`). Each runner also has a **One Time Job** variant with the trigger type **Manual**.
+
+### Configure the Cost Roll-Up settings
+
+To define which items and costs a Cost Roll-Up job processes, follow these steps:
+
+1. Open the **Settings** dialog of the job for the company as described in [**Define the settings of a job**](#define-the-settings-of-a-job).
+2. In **RollUpSettings**, set the values.
+
+   ![alt text](media/processforce/pf-backgr15.png)
+
+3. Click **Save & Close**.
+4. Done! The job uses the new settings the next time it runs.
+
+The **RollUpSettings** section has these settings. They match the options in the [Cost Roll-Up form](/docs/processforce/user-guide/costing-material-and-resources/cost-categories#cost-roll-up).
+
+| Setting | Type | Default | What it controls |
+| --- | --- | --- | --- |
+| `ItemCodeFrom` | Text | Empty | The first item code of the range of items to roll up. |
+| `ItemCodeTo` | Text | Empty | The last item code of the range of items to roll up. |
+| `CostCategories` | Collection of text | No values | The cost categories to include. |
+| `Warehouses` | Collection of text | No values | The warehouses to include. |
+| `IsOverStructureEnabled` | Yes/No | No | Whether the roll-up runs over the product structure. |
+| `UseFinalGoodBatchSize` | Yes/No | No | Whether the roll-up uses the batch size of the final good. |
+| `UseOwnCoproductsCosts` | Yes/No | No | Whether the roll-up uses the item's own co-product costs. |
+| `UseOwnScrapCosts` | Yes/No | No | Whether the roll-up uses the item's own scrap costs. |
+| `RunRollOver` | Yes/No | No | Whether the job also runs a cost roll-over. |
+| `RollOverCostCategoryFrom` | Text | Empty | The cost category to roll over from. |
+| `RollOverCostCategoryTo` | Text | Empty | The cost category to roll over to. |
+| `RollOverTheCostsOfResources` | Yes/No | No | Whether the roll-over includes the costs of resources. |
 
 :::warning[Important]
 
-The four options from **Use final-goods' batch[…]** to **Calculate and Save Costed BOM data** work only when **Perform the roll-up over structure** is selected. CompuTec AppEngine shows these options even when the checkbox is cleared. Select **Perform the roll-up over structure** before you use them.
+Set **IsOverStructureEnabled** to **Yes** before you use the advanced options, such as **UseFinalGoodBatchSize**.
 
 :::
 
-### Change the schedule of a Cost Roll-Up job
+## Job reference
 
-To change when a Cost Roll-Up job runs, follow these steps:
+### Cost Roll-Up, costing, and planning jobs
 
-1. Go to **Background Processing** > **Configuration**, and then select the job.
-2. Enter a [cron expression](https://docs.oracle.com/cd/E12058_01/doc/doc.1014/e12030/cron_expressions.htm) that defines when the job runs.
+| Job name | Job ID | Trigger type | What it does |
+| --- | --- | --- | --- |
+| Cost Rollup Runner 1 | `CostRollUp1` | Time | Runs CompuTec ProcessForce Cost Roll-Up. Runs daily at 1 AM by default. |
+| Cost Rollup Runner 1 One Time Job | `CostRollUp1OneTimeJob` | Manual | Runs CompuTec ProcessForce Cost Roll-Up when you run it. |
+| Cost Rollup Runner 2 | `CostRollUp2` | Time | Runs CompuTec ProcessForce Cost Roll-Up on its own schedule. |
+| Cost Rollup Runner 2 One Time Job | `CostRollUp2OneTimeJob` | Manual | Runs CompuTec ProcessForce Cost Roll-Up when you run it. |
+| Cost Rollup Runner 3 | `CostRollUp3` | Time | Runs CompuTec ProcessForce Cost Roll-Up on its own schedule. |
+| Cost Rollup Runner 3 One Time Job | `CostRollUp3OneTimeJob` | Manual | Runs CompuTec ProcessForce Cost Roll-Up when you run it. |
+| Item Cost in Item Costing Syncer | `UpdateStandardPriceInItemCostingAfterInventoryRevaluationJob` | Event | Synchronizes the item cost in Item Costing. |
+| Item Costing Restorer | `RestoreItemCostingEventBusJob` | Event | Creates item costing entries. |
+| Item Costing Restorer | `RestoreItemCostingRecurringJob` | Time | Creates missing item costing entries. |
+| CTP Scenario Runner | `RunCTPScenarioRecurringJob` | Time | Runs CompuTec ProcessForce CTP scenarios. |
+| CTP Scenario Runner One Time Job | `RunCTPScenarioRecurringJobOneTimeJob` | Manual | Runs CompuTec ProcessForce CTP scenarios when you run it. |
 
-   ![Job details in Background Processing showing the cron expression for a Cost Roll-Up job](./media/processforce/pf-cron.png) <!-- TODO: verify alt text and the exact field name -->
+### Batch jobs
 
-## Quality Control jobs
-
-### QCRefillBatchesAndSerialNumbersJob
-
-This job adds Batches and Serial Numbers to existing Quality Control Tests. When you add a Goods Receipt, the new Batches and Serial Numbers are added to Quality Control Tests that were created before this data existed in the database. Quality Control Test data stays accurate and up to date.
-
-Details:
-
-- **ContentType**: `59`
-- **ActionType**: `A`
-
-### QCTestDocumentsGeneratorJob
-
-This job generates Quality Control Tests automatically when you add documents. The generation depends on your Quality Control settings.
-
-Details:
-
-- **ContentType**: `*`
-- **ActionType**: `A`
-- **Publisher**: `AppEngine`
-- **PublisherApp**: `SAPB1`
-- **EventType**: `SAPB1Object`
-
-## Restore jobs
-
-### RestoreAditionalBatchDetails
-
-This job creates Batch Master Data for any missing Batches, so Batch data stays complete. <!-- TODO: verify job name spelling "Aditional" -->
-
-- **Default cron expression**: `0 */2 * * *` (every two hours)
-
-### RestoreItemDetailsJob
-
-This job synchronizes the `ItemDetails` object when item data in the `OITM` table is updated. Item-related data stays consistent.
-
-Details:
-
-- **Editable**: `true`
-- **ContentType**: `4` (`OITM`)
-- **ActionType**: `U`
-
-## Synchronization jobs
-
-### SynchronizeBillOfMaterialsJob
-
-This job synchronizes updates in CompuTec ProcessForce Bill of Materials with the matching data in SAP Business One. Bill of Materials information stays accurate and up to date.
-
-Details:
-
-- **Editable**: `true`
-- **ContentType**: `CT_PF_OBOMCode`
-- **ActionType**: `*`
-
-### SynchronizeManufacturingOrderJob
-
-This job synchronizes updates in Manufacturing Orders with the matching Production Orders. Order data stays accurate and consistent.
-
-Details:
-
-- **Editable**: `true`
-- **ContentType**: `CT_PF_ManufacOrd`
-- **ActionType**: `*`
-
-### SynchronizeManufacturingOrdersRecursiveJob
-
-This job synchronizes Manufacturing Orders with Production Orders on a schedule, so the data stays consistent even if a single update was missed. <!-- TODO: confirm the purpose with developers -->
-
-- **Default cron expression**: `0 */12 * * *` (every 12 hours)
-
-## Additional Batch Details jobs
-
-### AdditionalBatchDetailsSynchronizerEB
-
-This job synchronizes updates in Batch Master Data with the Additional Batch details in SAP Business One. Batch data stays consistent across both systems.
-
-Details:
-
-- **ContentType**: `CT_PF_AdditonalBatch` <!-- TODO: verify spelling "Additonal" -->
-- **ActionType**: `U`
-- **Publisher**: `AppEngine`
-- **PublisherApp**: `SAPB1`
-- **EventType**: `SAPB1Object`
-
-### AdditionalBatchDetailsCreatorEB
-
-This job creates the related Batch Master Data when you create a new Batch in SAP Business One.
-
-Details:
-
-- **ContentType**: `10000044`
-- **ActionType**: `*`
-- **Publisher**: `AppEngine`
-- **PublisherApp**: `SAPB1`
-- **EventType**: `SAPB1Object`
+| Job name | Job ID | Trigger type | What it does |
+| --- | --- | --- | --- |
+| Additional Batch Details Creator | `AdditionalBatchDetailsCreatorEB` | Event | Creates the related Batch Master Data when you create a new Batch in SAP Business One. |
+| Additional Batch Details Restorer | `RestoreAditionalBatchDetails` | Time | Creates missing Batch Master Data. Runs every two hours by default. |
+| Batch Details Syncer | `AdditionalBatchDetailsSynchronizerEB` | Event | Synchronizes updates in Batch Master Data with the Additional Batch details in SAP Business One. |
+| Batch Status Changer | `ChangeBatchStatusWhenItIsExpiredRecurringJob` | Time | Changes the status of a Batch when it expires. |
 
 :::info[Note]
 
-If you enable this job, CompuTec AppEngine handles Batch synchronization. If you don't enable it and you use CompuTec WMS, the CompuTec WMS service handles Batch synchronization.
+If you enable **Additional Batch Details Creator**, CompuTec AppEngine handles Batch synchronization. If you don't enable it and you use CompuTec WMS, the CompuTec WMS service handles Batch synchronization.
 
 :::
 
-## Manufacturing Order management
+### Item data and synchronization jobs
 
-### ManufacturingOrderWizardRecoverJob
+| Job name | Job ID | Trigger type | What it does |
+| --- | --- | --- | --- |
+| Item Master Data Consolidator | `ItemMasterDataSynchJob` | Event | Performs a series of actions on item master data. |
+| (no job name) | `ItemMasterDataSynchronizationAllJob` | Time | Synchronizes item master data. |
+| (no job name) | `ItemMasterDataSynchronizationAllJobManual` | Manual | Synchronizes item master data when you run it. |
+| Bill of Material Syncer | `SynchronizeBillOfMaterialsJob` | Event | Synchronizes updates in CompuTec ProcessForce Bills of Materials with the matching data in SAP Business One. |
+| Bill of Material Time Based Syncer | `SynchronizeBillOfMaterialsRecurringJob` | Time | Synchronizes Bills of Materials on a schedule. |
+| Manufacturing Order Syncer | `SynchronizeManufacturingOrderJob` | Event | Synchronizes updates in Manufacturing Orders with the matching Production Orders. |
+| Manufacturing Order Syncer | `SynchronizeManufacturingOrdersRecursiveJob` | Time | Synchronizes all Manufacturing Orders with Production Orders. Runs every 12 hours by default. |
+| Manufacturing Order Status Update | `ManufacturingOrderChangeStatusByQuantityRecurringJob` | Time | Updates the Manufacturing Order status. |
+| Manufacturing Order Status Update | `ManufacturingOrderChangeStatusByQuantityEventBusJob` | Event | Updates the Manufacturing Order status. |
+| SAP marketing document revision synchronizer | `SapMarketingDocumentLinesRevisionUpdaterJob` | Event | Keeps the revision in SAP Business One marketing documents up to date. |
+| Orderless Production Saga Invoker | `OrderlessProductionSagaEventBusJob` | Event | Invokes the steps of the orderless production process. |
 
-When CompuTec AppEngine starts, this job checks and processes unfinished Manufacturing Order Wizard tasks.
+### Quality Control jobs
+
+| Job name | Job ID | Trigger type | What it does |
+| --- | --- | --- | --- |
+| QC Test Creator | `QualityControlTestDocumentsGeneratorJob` | Event | Creates Quality Control Tests when you add documents, based on your Quality Control settings. |
+| QC Test Protocol Creator | `QualityControlTestProtocolsGeneratorJob` | Event | Creates Quality Control Test Protocols. |
+| QC Test Serial/Batch Syncer | `RefillBatchesAndSerialNumbersInQualityControlTestDocumentsJob` | Event | Adds new Batches and Serial Numbers to existing Quality Control Tests when you add a Goods Receipt. |
+| Protocol Template to Test Protocols Synchronizer (Event-Based) | `QualityControlSyncTestProtocolWithProtocolTemplateEventBasedJob` | Event | Synchronizes updates of Quality Control Protocol Templates with Test Protocols. |
+| Protocol Templates to Test Protocols Synchronizer (Recurring) | `QualityControlSyncTestProtocolWithProtocolTemplateRecurringJob` | Time | Synchronizes all Quality Control Protocol Templates with Test Protocols. |
+
+## Filter values of event jobs
+
+Event jobs start when an event matches the values in the **Filters** section of the job. These are the values of the main event jobs.
+
+| Job ID | Action Type | Content Type | Publisher | PublisherApp | EventType |
+| --- | --- | --- | --- | --- | --- |
+| `RefillBatchesAndSerialNumbersInQualityControlTestDocumentsJob` | `A` | `59` | – | – | – |
+| `QualityControlTestDocumentsGeneratorJob` | `A` | `*` | `AppEngine` | `SAPB1` | `SAPB1Object` |
+| `SynchronizeBillOfMaterialsJob` | `*` | `CT_PF_OBOMCode` | – | – | – |
+| `SynchronizeManufacturingOrderJob` | `*` | `CT_PF_ManufacOrd` | – | – | – |
+| `AdditionalBatchDetailsSynchronizerEB` | `U` | `CT_PF_AdditonalBatch` | `AppEngine` | `SAPB1` | `SAPB1Object` |
+| `AdditionalBatchDetailsCreatorEB` | `*` | `10000044` | `AppEngine` | `SAPB1` | `SAPB1Object` |

@@ -274,7 +274,7 @@ To check the environment variable path, follow these steps:
 
     :::warning[Important]
 
-    After you change **HDBDOTNETCORE**, restart CompuTec AppEngine so that it reads the new value. <!-- TODO: verify that a restart is required -->
+    After you change **HDBDOTNETCORE**, restart CompuTec AppEngine so that it reads the new value.
 
     :::
 
