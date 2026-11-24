@@ -28,8 +28,17 @@ Before you begin, make sure that:
 
 - [**CompuTec AppEngine**](/docs/appengine/administrators-guide/configuration-and-administration/installation) is installed and activated, with at least one active instance and an activated company.
 - [**CompuTec ProcessForce**](/docs/processforce/administrator-guide/installation/first-installation/extension) and the [**CompuTec License Server**](/docs/processforce/administrator-guide/licensing/license-server/computec-license-server-installation) are installed and configured.
+- The following plugins are installed for the company in **CompuTec AppEngine**. For the steps, read [**Install a plugin**](/docs/appengine/plugins-user-guide/install-plugin).
+  - **CompuTec.ProcessForce.Plugin**
+  - **CompuTec.ProcessForce.UI**
 - You have access to the **CompuTec AppEngine Administration Panel**.
 - Custom code in the `SP_TransactionNotification` and `SP_PostTransactionNotice` stored procedures is disabled. After the installation is complete, you can enable your custom code again.
+
+:::note[Info]
+
+**CompuTec AppEngine** installs the required Business Logic plugins and the **CompuTec.ProcessForce.API** plugin automatically together with the plugin. You don't need to install them manually.
+
+:::
 
 :::warning[Important]
 
