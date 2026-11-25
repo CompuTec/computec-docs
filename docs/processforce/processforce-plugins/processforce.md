@@ -28,7 +28,7 @@ To display the jobs of the CompuTec ProcessForce plugin, follow these steps:
 
 4. Done! The list shows all jobs of the CompuTec ProcessForce plugin.
 
-For each job, the list shows the job name, the job ID, a short description, the plugin version, and the trigger type. 
+For each job, the list shows the job name, the job ID, a short description, the plugin version, and the trigger type.
 
 The **Trigger Type** can be:
 

@@ -14,6 +14,16 @@ You can find all [download links](/docs/appengine/2.0/releases/plugins/pdc/downl
 However, we strongly recommend using **CompuTec PDC 4.0 Plugin** together with **CompuTec AppEngine 3.0** to benefit from the latest features, performance improvements, and ongoing support.
 :::
 
+## CompuTec PDC 4.2611.1
+
+**Release Date: 23 November 2026**
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Fixed | Task Tile / Main Board | Custom fields now remain visible on the **Task Tile** and the main board for both regular users and managers. |
+| Fixed | Label Printing | Label printing for Pick Receipts now works correctly. Print requests are sent to CompuTec Labels according to the configured label printing settings. |
+| Fixed | Resource History | The resource history now correctly displays the duration of each recorded delay. |
+
 ## CompuTec PDC 4.2610.2
 
 **Release Date: 29 October 2026**
