@@ -10,7 +10,6 @@ sidebar_position: 1
 
 | Issue Type | Component | Release Note |
 | --- | --- | --- |
-| Improved | System Requirements | **CompuTec AppEngine now requires Core version 3.0.1.648 or later.** |
 | Fixed | Data Selection | Multiple selection in data selection windows now works correctly when using **Ctrl+click** or **Shift+click** directly on table cells. Previously selected rows are no longer lost when selecting additional rows. |
 
 ## CompuTec AppEngine 3.2611.5
