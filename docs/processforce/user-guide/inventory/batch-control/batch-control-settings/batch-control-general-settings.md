@@ -4,54 +4,46 @@ sidebar_position: 2
 
 # Batch Control General Settings
 
-Batch control settings define how batches are managed within the system, including default batch statuses for various document types and batch templates. These settings offer flexibility and can be configured at three levels, depending on how broadly or specifically you want to apply them:
+Batch control settings define how **CompuTec ProcessForce** manages batches. They include the default batch statuses for document types and batch templates. You can configure the settings at three levels:
 
-- **General Settings**: Applies system-wide to all new batches.
-- **Item Group Settings**: Applies to specific item groups unless overridden.
-- **Item Details Settings**: Applies to individual items when customized.
+- **General Settings** – Apply to all new batches in the company.
+- **Item group settings** – Apply to the items of one item group. They replace the General Settings when you clear the **Inherit from General Settings** checkbox.
+- **Item details settings** – Apply to one item. They replace the item group settings when you clear the **Inherit from Item Group** checkbox.
 
-➡️ Learn more about [Batch configuration](/docs/processforce/user-guide/system-initialization/general-settings/inventory-tab/) based on the example of General Settings.
+:::note[Info]
 
-![General Settings](./media/batch-control-general-settings/batch-and-serial.webp)
+For an example of batch configuration in General Settings, read [**Batch configuration**](/docs/processforce/user-guide/system-initialization/general-settings/inventory-tab/).
 
----
+:::
+
+![The Batch and Serial settings in General Settings](./media/batch-control-general-settings/batch-and-serial.png)
 
 ## General Settings
 
-These settings apply globally to all newly created batches.
+The General Settings apply to all newly created batches.
 
-➡️ Learn more about [General Settings](/docs/processforce/user-guide/system-initialization/general-settings/inventory-tab/).
+To access the **Inventory** tab, navigate to: **Administration** > **System Initialization** > **General Settings** > **ProcessForce** > **Inventory**.
 
-To access Inventory tab, navigate to:
+![The Inventory tab in the ProcessForce section of General Settings](./media/batch-control-general-settings/inventory-tab.png)
 
-:::info Path
-    Administration → System Initialization → General Settings → ProcessForce tab → Inventory tab
+:::note[Info]
+
+For details about all settings on this tab, read [**General Settings: Inventory tab**](/docs/processforce/user-guide/system-initialization/general-settings/inventory-tab/).
+
 :::
 
-![General Settings](./media/batch-control-general-settings/inventory-tab.webp)
+## Item group settings
 
-## Item Groups Settings
+To define batch control settings for one item group, clear the **Inherit from General Settings** checkbox. The item group then uses its own settings instead of the General Settings. This gives you more control over batch behavior for each product category.
 
-When the **Inherit from General Settings** checkbox is unchecked, the system allows you to define batch control settings specific to that item group. This provides more granular control over batch behavior by product category.
+To access item groups, navigate to: **Administration** > **Setup** > **Inventory** > **Item Groups** > **ProcessForce** > **Batch and Serial**.
 
-To access Item Groups, navigate to:
+![The Inherit from General Settings checkbox on the Batch and Serial section of an item group](./media/batch-control-general-settings/inherit-gen-settings.webp) 
 
-:::info Path
-    Administration → Setup → Inventory → Item Groups → ProcessForce tab → Batch and Serial
-:::
+## Item details settings
 
-![Inherit from General Settings](./media/batch-control-general-settings/inherit-gen-settings.webp)
+To configure batch settings for one item, clear the **Inherit from Item Group** checkbox. This is the most detailed level of configuration. Use it for items that have unique batch control requirements.
 
-## Item Details Settings
+To access the **Batches** tab, navigate to: **Inventory** > **Item Details** > **Batches**.
 
-Unchecking the **Inherit from Item Group** checkbox enables you to configure batch settings at the individual item level. This is the most detailed level of customization, ideal for products with unique batch control requirements.
-
-To access Batches tab, navigate to:
-
-:::info Path
-    Inventory → Item Details → Batches tab
-:::
-
-![Inherit from Item Group](./media/batch-control-general-settings/inherit-item-group.webp)
-
----
+![The Inherit from Item Group checkbox on the Batches tab of the Item Details window](./media/batch-control-general-settings/inherit-item-group.png) 

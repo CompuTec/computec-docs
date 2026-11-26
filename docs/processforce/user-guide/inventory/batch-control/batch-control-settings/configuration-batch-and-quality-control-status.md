@@ -4,45 +4,45 @@ sidebar_position: 4
 
 # Configuration Batch and Quality Control Status
 
-Managing Batch and Quality Control status is crucial in SAP to ensure accurate tracking and compliance across various receipt documents. The configuration allows businesses to define default Batch and Quality Control (QC) statuses during the receipt process, improving efficiency and consistency. While batch statuses impact inventory and operations, QC statuses provide additional insights for informational purposes.
+You can define the default batch status and the default quality control (QC) status that **CompuTec ProcessForce** assigns when it generates a batch in a receipt document. The defaults keep batch management consistent and let you track quality from the moment items are received. The batch status affects inventory and operations. The QC status is for information only.
 
----
+## What are batch and QC statuses?
 
-## What are Batch and QC Statuses?
+- **Batch status** – Shows whether you can use and process a batch. The batch status directly affects inventory availability and operational workflows.
+- **QC status** – Shows the quality condition of a batch. The QC status does not affect inventory processing. You use it as an information flag for reporting and analysis.
 
-- **Batch Status**: Indicates the usability or processing status of an inventory batch. It directly impacts inventory availability and operational workflows.
-- **Quality Control (QC) Status**: Represents the quality condition of the batch. It does not affect inventory processing but serves as an informational flag for reporting and analysis.
+The default statuses apply when CompuTec ProcessForce generates batches automatically in receipt documents.
 
-**Purpose of Configuration**
+:::note[Info]
 
-This configuration enables setting default batch and QC statuses when batches are automatically generated during receipt processes. It ensures consistency in batch management and facilitates better quality tracking from the moment items are received.
+For information about how CompuTec ProcessForce changes the batch status after QC tests exist for a batch, read [**Batch Status Resolution**](/docs/processforce/user-guide/inventory/batch-control/batch-control-settings/batch-status-resolution).
 
----
+:::
 
-## How-To
+## Configure default batch and QC statuses
 
-**Configure Default Batch & QC Statuses**: You can define default statuses that will automatically apply to system-generated batches in receipt documents.
+You can define default statuses that apply automatically to system-generated batches in receipt documents.
 
-1. **Navigate to General Settings**:
+To configure the default statuses, follow these steps:
 
-    :::info Path
-    Administration → System Initialization → General Settings → Inventory → Batch & Serial No.
-    :::
+1. Go to **Administration** > **System Initialization** > **General Settings** > **Inventory** > **Batch & Serial No.**
+2. Select the default batch status for new system-generated batches.
+3. Select the default QC status.
 
-2. **Set Defaults**:
+   ![The Batch & Serial No. tab in General Settings with the default batch status and default QC status fields](./media/configuration-batch-and-quality-control-status/general-settings-batch.webp)
 
-    - Choose the default Batch Status for new system-generated batches.
-    - Choose the default Quality Control Status for informational tracking.
+4. Click **Update**.
+5. Done! CompuTec ProcessForce applies the defaults to new system-generated batches.
 
-    ![General Settings](./media/configuration-batch-and-quality-control-status/general-settings-batch.webp)
+:::info[Note]
 
-3. **Save your settings**.
+The defaults apply only to system-generated batches. Manually created batches do not inherit these settings.
 
->**Note**: ⚠️ These defaults apply only to system-generated batches. Manually created batches will not inherit these settings.
+:::
 
-## SAP Receipt Documents
+## Receipt documents that use the defaults
 
-The batch and QC status settings affect the following document types:
+The default statuses apply to batches that CompuTec ProcessForce generates in the following documents:
 
 - Goods Receipt PO
 - Goods Receipt
@@ -50,33 +50,21 @@ The batch and QC status settings affect the following document types:
 - A/R Invoice
 - A/R Credit Memo
 - Reverse Invoice
-
-The following receipt documents are supported:
-
 - Pick Receipt
 
-These follow the same configuration rules as SAP receipt documents.
+Pick Receipt follows the same rules as the SAP Business One receipt documents.
 
-![Batch and Quality status](./media/configuration-batch-and-quality-control-status/batch-quality-status.webp)
+![A batch with its batch status and QC status after the receipt document is processed](./media/configuration-batch-and-quality-control-status/batch-quality-status.webp)
 
----
+## View batch and QC statuses
 
-## Viewing Batch and QC Statuses
+After CompuTec ProcessForce generates batches, you can check their statuses in the following places:
 
-Once batches are generated during document processing, their statuses can be monitored:
+- **Batch Number Transaction Report** – The report shows both the batch status and the QC status. Click the yellow arrow icon to open the batch in **Batch Master Data**.
 
-1. Batch Number Transaction Report
+  ![The Batch Number Transaction Report with the batch status and QC status columns](./media/configuration-batch-and-quality-control-status/qc-status.webp)
 
-    - Displays both Batch and QC statuses in the report output.
-    - Use the yellow arrow to navigate directly to Batch Master Data.
+- **Batch Master Data** – The batch status is in the header of the window. The QC status is on the **Quality Control** tab.
 
-    ![QC Status](./media/configuration-batch-and-quality-control-status/qc-status.webp)
-
-2. Batch Master Data Form
-
-    - The Batch Status is displayed in the header.
-    - The Quality Control Status appears under the new Quality Control tab.
-
-    ![Batch status](./media/configuration-batch-and-quality-control-status/batch-status.webp)
-
----
+  ![The Batch Master Data window with the batch status in the header and the Quality Control tab](./media/configuration-batch-and-quality-control-status/batch-status.webp)
+  
