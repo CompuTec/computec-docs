@@ -9,7 +9,7 @@ sidebar_position: 5
 A batch can have one of three statuses:
 
 | Status in the user interface | Meaning |
-| --- | --- | --- |
+| --- | --- |
 | **Released** | The batch passed quality control and is available. |
 | **Not Accessible** | Quality control is not finished or has no clear result. The batch is on hold. |
 | **Locked** | The batch failed qua
