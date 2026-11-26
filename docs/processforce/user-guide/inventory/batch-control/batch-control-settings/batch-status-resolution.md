@@ -61,17 +61,21 @@ The following settings are available:
 
 - **Copy QC Test Results to Batch** - Choose whether ProcessForce copies the QC test results to the batch when you close a QC test document. This setting does not decide whether the batch is available. The QC status and the availability status of a batch can be different. For example, when both **Release Batches on QC Test Pass** and **Block Batches On QC Test Fail** are cleared and **Copy QC Test Results to Batch** is selected, the batch gets the QC result, but its availability does not change.
 
-    :::warning[Important]
-
-    Do not rely on the tooltips of Release Batches on QC Test Pass and Block Batches On QC Test Fail to learn how these settings work. The tooltips describe the previous behavior.  
-
-    :::
-
     :::info[Note]
 
-    The captions of the first two settings depend on the SAP Business One user interface language. This article uses the English (US) captions, Release Batches on QC Test Pass and Block Batches On QC Test Fail. In English (UK), the captions are Release batch when QC Test passed and closed and Block batch when QC Test failed and closed. Other languages show translated captions.
+    The captions of the first two settings depend on the SAP Business One user interface language.
+
+    This article uses the English (US) captions, **Release Batches on QC Test Pass** and **Block Batches On QC Test Fail**.
+
+    In English (UK), the captions are **Release batch when QC Test passed** and closed and **Block batch when QC Test failed and closed**. Other languages show translated captions.
 
     :::
+
+:::warning[Important]
+
+Do not rely on the tooltips of **Release Batches on QC Test Pass** and **Block Batches On QC Test Fail** to learn how these settings work. The tooltips describe the previous behavior.  
+
+:::
 
 ## How the settings allow a status
 
@@ -110,9 +114,15 @@ CompuTec ProcessForce derives the status again at every status change of a QC te
 
 Before this feature, creating a QC test did not change the batch status. This change applies only if CompuTec ProcessForce is allowed to change the batch status.
 
+:::info[note]
+
+The upgrade adds the setting **Pool has precedence for sampling batches** with the usual structure update. You do not need to migrate data or perform manual steps. After the upgrade, your company uses **Legacy** mode.
+
+:::
+
 ### Current limitation: a failed test stays in the history
 
-In Legacy mode, a closed failed QC test keeps the batch out of **Released**. A later passed test does not release the batch.  
+In **Legacy** mode, a closed failed QC test keeps the batch out of **Released**. A later passed test does not release the batch.  
 
 To release it, reopen the failed test and correct its result. While the test is reopened, the batch is **Not Accessible**. After you close the test with the result **Passed**, the batch changes to **Released**, if all other tests for the batch are **Closed** and **Passed**.
 
@@ -120,13 +130,13 @@ If your process needs to release a batch after a failed sample, use **Pool Prece
 
 ## How CompuTec ProcessForce derives the status in Pool Precedence mode
 
-In Pool Precedence mode, the result of the QC test pool alone decides the status of a batch that the pool covers. The individual sampling tests do not change the batch, even when a test fails. The settings in How the settings allow a status apply in the same way as in Legacy mode.
+In **Pool Precedence** mode, the result of the QC test pool alone decides the status of a batch that the pool covers. The individual sampling tests do not change the batch, even when a test fails. The settings in How the settings allow a status apply in the same way as in Legacy mode.
 
 | Pool result | Derived status |
 | --- | --- |
-| Fail | Locked |
-| To Be Determined | Not Accessible |
-| Pass | Released |
+| **Fail** | Locked |
+| **To Be Determined** | Not Accessible |
+| **Pass** | Released |
 
 CompuTec ProcessForce derives the status again when you add the QC test pool and when you close it. The sample tests are created together with the pool, so a new pool has the result **To Be Determined**, and the batch changes to **Not Accessible**. The batch changes again only when someone closes the pool. If the pool calculates its own result (**Pass** or **Fail**) but stays open, the batch does not change. Reopening a pool does not change the batch either.
 
@@ -164,10 +174,6 @@ CompuTec ProcessForce changes the batch status only when something happens to a 
 CompuTec ProcessForce does not recalculate all batches at once. After an upgrade, batches whose QC documents you do not touch keep their current status. CompuTec ProcessForce updates a batch when its QC documents change. A batch that has no QC tests keeps its current status.
 
 For serial numbers, CompuTec ProcessForce copies QC data only when a QC test is closed, or, in **Pool Precedence** mode, when a QC test pool is closed. It does not update serial numbers at intermediate status changes.
-
-## Upgrade
-
-The upgrade adds the setting **Pool has precedence for sampling batches** with the usual structure update. You do not need to migrate data or perform manual steps. After the upgrade, your company uses **Legacy** mode.
 
 ## Next steps
 
