@@ -4,6 +4,51 @@ sidebar_position: 1
 
 # CompuTec WebUp Release Notes
 
+## CompuTec WebUp 1.2611.1
+
+**Release Date: 26 November 2026**
+
+**Requirements**: CompuTec AppEngine 3.2611.6 or later
+
+| Issue Type | Component | Release Note |
+| --- | --- | --- |
+| Added | Auto Mode – Live Preview | **The new Auto Mode lets you customize views and see your changes automatically in the SAP Business One Web Client.** **CompuTec WebUp** saves changes in the background as you work, and the open preview refreshes to show the latest saved configuration. You can continue editing while a save or a preview refresh is in progress. A **Preview updated** notification confirms that the preview is current. The **Autosave** option in the side panel footer is on by default, and **CompuTec WebUp** remembers your choice in the browser. You can switch back to manual saving and previewing at any time. |
+| Added | Simple Validation | **The new Simple Validation Smart Action lets you configure field validation rules without writing scripts or SQL queries.** You can define rules for text, numbers, dates, and unique values. Date rules can use the company holiday calendar. Each rule has its own severity and message. **CompuTec WebUp** sets the value state of the field, shows the configured message, and can optionally cancel the document or object action. |
+| Added | Custom SQL Parameters | **You can now get data from the database with Custom SQL parameters.** Write a `SELECT` query with declared parameters in an SQL editor that suggests database schema objects as you type. Query results can be used in control properties, binding expressions, and grids. You can access individual result rows with the **First**, **Last**, and **At** templates. Only authorized users can create, edit, or delete Custom SQL definitions. |
+| Added | Smart Action Events | You can now feed Smart Action parameters on control events and view events from a **Custom Model** parameter. In the parameter mapping, select the new **Parameter** source. |
+| Added | WebUp Management View | **You can now open CompuTec WebUp as a standalone, full-page view** from the **CompuTec AppEngine Launchpad** or from the side panel. The view shows a read-only overview of the Web Client views and their versions, including the active version. |
+| Improved | Smart Actions – View Events | Smart Actions can now also run when a user leaves a document. In addition to the existing form and data loading events, you can run business logic at more points in the document lifecycle. |
+| Improved | Parameters – Automatic Refresh | **Custom Model, Custom SQL, and OData parameter values now refresh automatically when the data they depend on changes.** You don't need to reload the view to see current values. |
+| Improved | Parameter Builder | In the **Parameter Builder**, you can now link **Custom Model** and **Custom SQL** parameters to control properties. You can search their properties and result columns and drag them into binding expressions. |
+| Improved | Smart Action Scripts | Smart Action scripts can now read a **Custom Model** by name. The script editor suggests model names and their properties as you type. |
+| Improved | Smart Actions – Navigation | Smart Actions attached to a control, and their parameters, now have a **Go to Definition** link that opens the Smart Action definition. |
+| Improved | Configuration Scope | New Parameters, Actions, and Smart Actions now use the **Object** scope by default. Existing definitions keep their scope. |
+| Improved | SQL Validation | **SQL Validation** now uses the same SQL editor, `@Name` parameter syntax, and on-demand schema loading as Custom SQL parameters. The options have clearer names: **Prevent Default** now states that it blocks the document or object action, and **Set Value** is now **Set Value State**. |
+| Improved | Auto Mode | In **Auto Mode**, adding an item shows a single **Add** button instead of **Add & Preview**, because the preview refreshes automatically. The same single **Add** button now appears when you add a Smart Action or parameter from its list. |
+| Improved | Script Editor | **The script editor now shows type errors in addition to syntax errors**, such as unknown names and wrong argument types. |
+| Improved | Dot Actions | The icon picker for **Dot Actions** now shows a preview of the selected icon. |
+| Improved | Supported Views | You can now select fields of user-defined tables (UDTs) in the **CompuTec WebUp** selection mode. |
+| Improved | Performance | **CompuTec WebUp is faster and more reliable** when you edit customizations, select controls, generate previews, and navigate between records. The side panel, the view generator, and the Web Client runtime now cause fewer layout rebuilds and data reloads. Saving the placement of a control is also faster. |
+| Fixed | SQL Validation | Validation queries in the SAP Business One Web Client **Add** mode no longer fail with the error `invalid column name` when they reference fields that are not filled in yet. If a validation query cannot run, **CompuTec WebUp** reports the problem and blocks the user only when the validation is set to block. |
+| Fixed | Date Picker Controls | An invalid **Minimum Date** or **Maximum Date** value on a Date Picker control, such as **Posting Date**, no longer breaks the whole Web Client form. |
+| Fixed | Grid Controls | You can add **Grid** controls through the side panel again. A column added to a Grid is now placed in that Grid, so the Grid no longer renders without columns. |
+| Fixed | Control Configuration | New columns and multi-selection inputs can now be selected from the side panel. A second new control of the same type now gets its control type and can be placed in **Control Details**. |
+| Fixed | Smart Action Bindings | A control no longer stays marked as changed after you unlink its last Smart Action from an event. Event bindings show the current name of a Smart Action after you rename it. A Smart Action that cannot be deleted keeps its bindings. |
+| Fixed | Navigation Smart Actions | **Navigation Smart Actions** can now be saved when the target application is the first or the only one in the list. |
+| Fixed | Binding Expressions | **Global-scope Binding Expression parameters can no longer use document data that exists only in a specific view.** **CompuTec WebUp** flags invalid references and blocks saving. Long expressions now wrap inside the editor, and template chips stay readable in the dark theme. |
+| Fixed | Script and SQL Editors | Code suggestions and hover tooltips are no longer cut off at the edge of the editor. The **Dot Action** script editor now suggests the namespaces and enumerations of the SAP Business One UI API. |
+| Fixed | Control List | **Object Number** controls now show their description in the control list instead of the raw dynamic number expression. |
+| Fixed | View Versions | **Copying a view version now copies the complete configuration, including the action mappings.** If the copy fails, **CompuTec WebUp** creates no incomplete version. |
+| Fixed | View Versions | **Activating a view version now either succeeds completely or leaves every version as it was.** A failed activation no longer leaves views partly updated. |
+| Fixed | View Versions | A missing Smart Action no longer prevents the view tree from loading, and failed deletions of definitions are now reported. A removed pinned version no longer breaks layout builds. |
+| Fixed | Editor State | Open forms in the side panel now stay open after a layout rebuild of the same version. Discarding changes clears the changed flag. |
+| Fixed | Preview Generation | Preview generation no longer hangs, and busy dialogs no longer close each other. |
+| Fixed | Control Selection | Ending control selection without a pick, or pressing **Esc**, now cancels selection cleanly. The data model dialog behaves the same way. |
+| Fixed | Smart Action Parameters | Updating **CompuTec WebUp** no longer resets the required flag of existing Smart Action parameters. |
+| Fixed | Generated Extensions | Generated Web Client extensions are more reliable. Names no longer collide, navigation is escaped safely, and Smart Action handlers stay in place when a parameter fails. |
+| Fixed | Numbering | **CompuTec WebUp** no longer leaves a sequence row missing when you use a code prefix for the first time. |
+| Fixed | Side Panel | Tables and validation results are no longer limited to 100 rows. The parameter search keeps its filter when you press **Enter**. Script editor suggestions now match the runtime, and several translations are corrected. |
+
 ## CompuTec WebUp 1.2610.2
 
 **Release Date: 24 October 2026**
